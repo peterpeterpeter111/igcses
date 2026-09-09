@@ -10,6 +10,7 @@
     "build": "vinext build",
     "public:check": "node scripts/validate-public-build.mjs",
     "start": "wrangler dev --config dist/server/wrangler.json",
+    "db:check": "node --experimental-strip-types scripts/check-d1-runtime.ts",
     "lint": "oxlint",
     "format": "oxfmt",
     "db:generate": "drizzle-kit generate",

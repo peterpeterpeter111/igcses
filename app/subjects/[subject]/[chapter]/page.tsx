@@ -86,6 +86,47 @@ export default async function ChapterPage({
                     {section.paragraphs.map((x, i) => (
                       <p key={i}>{x}</p>
                     ))}
+                    {section.diagram && (
+                      <figure className="note-diagram">
+                        <img
+                          src={section.diagram.src}
+                          alt={section.diagram.alt}
+                          width={600}
+                          height={350}
+                        />
+                        <figcaption>{section.diagram.caption}</figcaption>
+                      </figure>
+                    )}
+                    {section.practical && (
+                      <div className="practical-guide">
+                        {(
+                          [
+                            ['apparatus', 'Apparatus'],
+                            ['method', 'Method'],
+                            ['variables', 'Variables'],
+                            ['safety', 'Safety'],
+                            ['quality', 'Quality of measurements'],
+                          ] as const
+                        ).map(([key, label]) => (
+                          <div key={key}>
+                            <h3>{label}</h3>
+                            {key === 'method' ? (
+                              <ol>
+                                {section.practical![key].map((item) => (
+                                  <li key={item}>{item}</li>
+                                ))}
+                              </ol>
+                            ) : (
+                              <ul>
+                                {section.practical![key].map((item) => (
+                                  <li key={item}>{item}</li>
+                                ))}
+                              </ul>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    )}
                     {section.example && (
                       <div className="worked-example">
                         <h3>Worked example</h3>
@@ -101,7 +142,38 @@ export default async function ChapterPage({
                         </details>
                       </div>
                     )}
-                    {section.practice && <div className="worked-example"><h3>Try it yourself</h3><p>{section.practice.question}</p><details><summary>Show practice answer</summary><p>{section.practice.answer}</p><p>{section.practice.explanation}</p></details></div>}
+                    {section.practice && (
+                      <div className="worked-example">
+                        <h3>Try it yourself</h3>
+                        <p>{section.practice.question}</p>
+                        <details>
+                          <summary>Show practice answer</summary>
+                          <p>{section.practice.answer}</p>
+                          <p>{section.practice.explanation}</p>
+                        </details>
+                      </div>
+                    )}
+                    {section.answerGuide && (
+                      <div className="worked-example">
+                        <h3>Answer guide: {section.answerGuide.command}</h3>
+                        <ol>
+                          {section.answerGuide.steps.map((step) => (
+                            <li key={step}>{step}</li>
+                          ))}
+                        </ol>
+                        <p>{section.answerGuide.caution}</p>
+                      </div>
+                    )}
+                    {section.commonMistakes?.length ? (
+                      <div className="note">
+                        <h3>Common mistakes to avoid</h3>
+                        <ul>
+                          {section.commonMistakes.map((mistake) => (
+                            <li key={mistake}>{mistake}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    ) : null}
                     {section.points?.length ? (
                       <p className="status">
                         Specification references: {section.points.join(', ')}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" role="img" aria-labelledby="title desc">
+<title id="title">Off-centre load on a light beam</title><desc id="desc">A 2.0 metre beam has a 100 newton downward load 0.50 metres from the left end. The left support pushes up with 75 newtons and the right support with 25 newtons.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6" fill="#7b2e35"/></marker></defs>
+<rect width="600" height="350" fill="#fffdf7"/>
+<g fill="#252621" font-family="Arial,sans-serif" font-size="16">
+<text x="300" y="30" text-anchor="middle">Light beam in equilibrium</text>
+<path d="M100 170 H500" stroke="#252621" stroke-width="8"/>
+<path d="M200 65 V163 M100 260 V177 M500 220 V177" stroke="#7b2e35" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="214" y="92">100 N</text><text x="66" y="248" text-anchor="end">75 N</text><text x="515" y="215">25 N</text>
+<path d="M100 282 H200 M100 274 V290 M200 274 V290 M100 321 H500 M100 313 V329 M500 313 V329" stroke="#62635d" fill="none"/>
+<text x="150" y="272" text-anchor="middle">0.50 m</text><text x="300" y="313" text-anchor="middle">2.0 m</text>
+</g></svg>

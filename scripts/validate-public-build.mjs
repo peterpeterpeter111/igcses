@@ -1,11 +1,14 @@
-import { readdirSync, readFileSync, statSync } from 'node:fs';
+import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const root = 'dist/client';
 const forbidden = [
   ['OpenAI API key environment name', /OPENAI_API_KEY/],
   ['OpenAI secret token pattern', /\bsk-(?:proj-)?[A-Za-z0-9_-]{20,}\b/],
-  ['synthetic private solution fixture', /(?:SECRET_SOLUTION|SECRET_RUBRIC|PRIVATE_SOLUTION)/],
+  [
+    'synthetic private solution fixture',
+    /(?:SECRET_SOLUTION|SECRET_RUBRIC|PRIVATE_SOLUTION)/,
+  ],
 ];
 
 function filesIn(directory) {
@@ -25,8 +28,12 @@ for (const file of files) {
 }
 
 if (findings.length) {
-  console.error(JSON.stringify({ checkedFiles: files.length, findings }, null, 2));
+  console.error(
+    JSON.stringify({ checkedFiles: files.length, findings }, null, 2),
+  );
   process.exitCode = 1;
 } else {
-  console.log(JSON.stringify({ checkedFiles: files.length, findings: [] }, null, 2));
+  console.log(
+    JSON.stringify({ checkedFiles: files.length, findings: [] }, null, 2),
+  );
 }

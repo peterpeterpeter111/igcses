@@ -154,37 +154,121 @@ test('lost draft acknowledgements retry the same revision before saving subseque
   client.dispose();
   sqlite.close();
 });
-test('remount ignores stale responses and account failures clear cached quiz data', async () => {
-  const { transport, sqlite } = await fixture();
-  let release!: () => void;
-  let first = true;
-  let forbidden = false;
-  const gate = new Promise<void>((resolve) => {
-    release = resolve;
-  });
-  const client = new QuizClient('/session', async (path, body) => {
-    if (forbidden) throw new RequestError('No account', 401);
-    const r = await transport(path, body);
-    if (first) {
+test(
+  'remount ignores stale responses and account failures clear cached quiz data',
+  { timeout: 5000 },
+  async (t) => {
+    const { transport, sqlite } = await fixture();
+    let release!: () => void;
+    let first = true;
+    let forbidden = false;
+    const gate = new Promise<void>((resolve) => {
+      release = resolve;
+    });
+    const client = new QuizClient('/session', async (path, body) => {
+      if (forbidden) throw new RequestError('No account', 401);
+      // Claim the first invocation before awaiting a response: responses can race.
+      const hold = first;
       first = false;
-      await gate;
-    }
-    return r;
-  });
-  const initial = client.load();
-  client.dispose();
-  client.resume();
-  await client.load();
-  release();
-  await initial;
-  assert.equal(client.snapshot().view?.question?.id, 'q0');
-  assert.equal(client.snapshot().busy, false);
-  client.edit('private text');
-  forbidden = true;
-  await client.load();
-  assert.equal(client.snapshot().view, null);
-  assert.equal(client.snapshot().answer, '');
-  assert.equal(client.snapshot().recovery, null);
-  client.dispose();
-  sqlite.close();
-});
+      const r = await transport(path, body);
+      if (hold) await gate;
+      return r;
+    });
+    t.after(() => {
+      release();
+      client.dispose();
+      sqlite.close();
+    });
+    const initial = client.load();
+    client.dispose();
+    client.resume();
+    await client.load();
+    release();
+    await initial;
+    assert.equal(client.snapshot().view?.question?.id, 'q0');
+    assert.equal(client.snapshot().busy, false);
+    client.edit('private text');
+    forbidden = true;
+    await client.load();
+    assert.equal(client.snapshot().view, null);
+    assert.equal(client.snapshot().answer, '');
+    assert.equal(client.snapshot().recovery, null);
+  },
+);
+
+test(
+  'disposing during a draft save prevents the old submit from dispatching',
+  { timeout: 5000 },
+  async (t) => {
+    const { transport, store, sqlite } = await fixture();
+    let release!: () => void;
+    const gate = new Promise<void>((resolve) => {
+      release = resolve;
+    });
+    let submits = 0;
+    const client = new QuizClient('/session', async (path, body) => {
+      if (body?.action === 'draft') await gate;
+      if (body?.action === 'submit') submits++;
+      return transport(path, body);
+    });
+    t.after(() => {
+      release();
+      client.dispose();
+      sqlite.close();
+    });
+    await client.load();
+    client.edit('keep this as a draft');
+    const submission = client.submit();
+    client.dispose();
+    client.resume();
+    const reload = client.load();
+    release();
+    await Promise.all([submission, reload]);
+    assert.equal(submits, 0);
+    assert.equal(client.snapshot().view?.position, 0);
+    assert.equal(
+      (await store.current('attempt', 'owner')).draft,
+      'keep this as a draft',
+    );
+  },
+);
+
+test(
+  'restoring while a reload is busy preserves the recovery copy',
+  { timeout: 5000 },
+  async (t) => {
+    const { transport, sqlite } = await fixture();
+    let release!: () => void;
+    let hold = false;
+    const gate = new Promise<void>((resolve) => {
+      release = resolve;
+    });
+    const first = new QuizClient('/session', transport);
+    const second = new QuizClient('/session', async (path, body) => {
+      if (hold && !body) await gate;
+      return transport(path, body);
+    });
+    t.after(() => {
+      release();
+      first.dispose();
+      second.dispose();
+      sqlite.close();
+    });
+    await Promise.all([first.load(), second.load()]);
+    first.edit('server copy');
+    await first.save();
+    second.edit('local copy');
+    await second.save();
+    await second.load();
+    assert.equal(second.snapshot().recovery?.text, 'local copy');
+    hold = true;
+    const reload = second.load();
+    second.restoreRecovery();
+    assert.equal(second.snapshot().recovery?.text, 'local copy');
+    release();
+    await reload;
+    second.restoreRecovery();
+    assert.equal(second.snapshot().answer, 'local copy');
+    assert.equal(second.snapshot().dirty, true);
+  },
+);

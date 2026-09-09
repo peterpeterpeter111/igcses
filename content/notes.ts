@@ -12,6 +12,16 @@ export type NoteSection = {
   points?: string[];
   example?: { question: string; steps: string[]; explanation: string };
   practice?: { question: string; answer: string; explanation: string };
+  diagram?: { src: string; alt: string; caption: string };
+  commonMistakes?: string[];
+  practical?: {
+    apparatus: string[];
+    method: string[];
+    variables: string[];
+    safety: string[];
+    quality: string[];
+  };
+  answerGuide?: { command: string; steps: string[]; caution: string };
 };
 export type ChapterNotes = {
   subjectId: string;
@@ -26,6 +36,13 @@ export type ChapterNotes = {
   sections: NoteSection[];
 };
 // Teaching content is added only after its relevant specification pages are reviewed.
-export const notes: ChapterNotes[] = [humanBiology,biology,chemistry,physics,english,mathematics] as ChapterNotes[];
+export const notes: ChapterNotes[] = [
+  humanBiology,
+  biology,
+  chemistry,
+  physics,
+  english,
+  mathematics,
+] as ChapterNotes[];
 export const getNotes = (subjectId: string, chapterId: string) =>
   notes.find((n) => n.subjectId === subjectId && n.chapterId === chapterId);

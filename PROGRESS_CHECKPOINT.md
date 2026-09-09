@@ -1,3 +1,11 @@
+# Latest checkpoint — Physics teaching expansion
+
+Read `research/checkpoints/2026-09-09-PHYSICS-TEACHING.md` first, then `2026-09-09-RESUMED-REPAIRS.md`. Six partial note documents now contain 24 teaching sections (18 in Physics), with 33 Physics statements linked to partial notes. 35 tests, typecheck, build and public scan pass. Zero complete chapters/points, fully processed papers and active templates. Earlier counts and test-hang claims below are historical. Work is resumed; pause at 5% remaining Astra allowance.
+
+# Latest checkpoint — path stability fix, 9 September 2026
+
+Read `research/checkpoints/2026-09-09-PATH-FIX.md` first. The chapter route flare was softened and stopped, moved into a dedicated gutter, and layered beneath the chapter cards so it cannot cover their labels. The change is ready to commit with the checkpoint. No subject, syllabus, paper, template, quiz or deployment counts changed. Primary Codex usage is currently exhausted; do not start broader work until the next available Astra window.
+
 # Latest checkpoint - source sync and reviewed Physics inventory
 
 Read `research/checkpoints/2026-09-09-SOURCE-SYNC.md` first. It supersedes historical GitHub, testing and concurrency statements below. 32 application tests and production build pass. Full source is on GitHub; local history preserved. Physics has 33 reviewed statement identities, but teaching/paper completion totals remain zero. Sites version/deployment remain pending.

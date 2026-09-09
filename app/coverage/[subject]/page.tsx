@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { SiteFrame } from '@/components/site-frame';
 import { getSubject } from '@/content/catalog';
+import { getNotes } from '@/content/notes';
 import {
   subjectEvidence,
   pointCandidates,
@@ -85,6 +86,15 @@ export default async function SubjectCoverage({
               auditing and teaching coverage remain incomplete; no human review
               has been performed.
             </p>
+            <p>
+              {
+                physicsInventory.points.filter(
+                  (point) => point.noteSectionIds.length > 0,
+                ).length
+              }{' '}
+              statements have linked partial explanations. No statement is
+              counted as complete teaching coverage.
+            </p>
             <details>
               <summary>Inspect the reviewed statements</summary>
               <ul className="plain-list">
@@ -102,9 +112,32 @@ export default async function SubjectCoverage({
                     {' · Papers: '}
                     {point.components.join(', ')}
                     {' · '}
-                    {point.noteSectionIds.length
-                      ? 'Partial notes available'
-                      : 'Notes not written'}
+                    {point.noteSectionIds.length ? (
+                      <>
+                        Partial notes:{' '}
+                        {point.noteSectionIds.map((heading, i) => (
+                          <span key={heading}>
+                            {i > 0 ? ' · ' : ''}
+                            <Link
+                              href={
+                                '/subjects/' +
+                                s.id +
+                                '/' +
+                                point.chapterId +
+                                '#' +
+                                heading
+                              }
+                            >
+                              {getNotes(s.id, point.chapterId)?.sections.find(
+                                (section) => section.id === heading,
+                              )?.title ?? heading}
+                            </Link>
+                          </span>
+                        ))}
+                      </>
+                    ) : (
+                      'Notes not written'
+                    )}
                   </li>
                 ))}
               </ul>

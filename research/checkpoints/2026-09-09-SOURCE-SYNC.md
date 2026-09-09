@@ -20,6 +20,10 @@ Template schema/contracts and one provisional English family exist; zero active 
 
 ## Not saved or not finished
 
+## Reserve-safe maintenance follow-up
+
+Commit `e752a33` adds a `db:check` package command for the already-tested isolated D1 runtime, removes an unused public-build import, and makes seed SQL quoting safe for structured values. The full application test suite (32), typecheck, production build, public-build scan and elevated local D1 check all pass. This maintenance does not change syllabus, paper, template, AI or deployment counts.
+
 An attempted larger Physics notes write timed out before creating its file. Therefore none of the proposed six additional sections or graph assets exist. The existing two Physics sections are unchanged. Only the 33-statement inventory and coverage display were saved.
 
 All-subject curriculum completion, substatement breakdowns, detailed paper extraction/mapping, Mathematics B paper acquisition, runtime generators, rubric/marking review, final server-side AI, telemetry/privacy/export requirements, browser end-to-end checks and production migration remain unfinished. Client SPA navigation away with unsaved text and recovery-panel editing deserve another review; beforeunload alone does not cover every internal link. The synthetic D1 runtime script uses the installed transitive Miniflare dependency.

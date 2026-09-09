@@ -21,9 +21,13 @@ test('catalog contains six uniquely addressable subjects and chapters', () => {
 test('partial notes point to catalog chapters and retain incomplete status', () => {
   assert.equal(notes.length, 6);
   for (const note of notes) {
-    const subject = subjects.find((candidate) => candidate.id === note.subjectId);
+    const subject = subjects.find(
+      (candidate) => candidate.id === note.subjectId,
+    );
     assert.ok(subject);
-    assert.ok(subject.chapters.some((chapter) => chapter.id === note.chapterId));
+    assert.ok(
+      subject.chapters.some((chapter) => chapter.id === note.chapterId),
+    );
     assert.equal(note.complete, false);
     assert.equal(note.humanReviewed, false);
     assert.ok(note.sections.length > 0);
@@ -36,7 +40,9 @@ test('partial notes point to catalog chapters and retain incomplete status', () 
 
 test('cross-subject search returns each matching subject without mutating content', () => {
   const results = searchAll('mitochondria');
-  const subjectsFound = new Set(results.map((result) => result.href.split('/')[2]));
+  const subjectsFound = new Set(
+    results.map((result) => result.href.split('/')[2]),
+  );
   assert.ok(subjectsFound.has('human-biology'));
   assert.ok(subjectsFound.has('biology'));
   assert.ok(
@@ -44,4 +50,29 @@ test('cross-subject search returns each matching subject without mutating conten
       /chapter incomplete|notes not written/.test(result.status),
     ),
   );
+});
+
+test('teaching diagrams and nested material have valid searchable chapter targets', async () => {
+  const { existsSync } = await import('node:fs');
+  for (const note of notes) {
+    for (const section of note.sections) {
+      assert.match(section.id, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);
+      if (section.diagram) {
+        assert.match(section.diagram.src, /^\/diagrams\/[a-z0-9-]+\.svg$/);
+        assert.ok(existsSync('public' + section.diagram.src));
+        assert.ok(section.diagram.alt && section.diagram.caption);
+      }
+    }
+  }
+  for (const [query, heading] of [
+    ['light gates', 'investigating-motion'],
+    ['systematic calibration', 'investigating-motion'],
+    ['crumple', 'momentum-and-safety'],
+    ['parallax', 'force-extension'],
+  ]) {
+    assert.ok(
+      searchAll(query).some((result) => result.href.endsWith('#' + heading)),
+      query,
+    );
+  }
 });

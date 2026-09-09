@@ -211,6 +211,7 @@ export class QuizClient {
   }
   edit(answer: string) {
     if (
+      this.closed ||
       this.state.busy ||
       this.state.uncertain ||
       this.state.conflict ||
@@ -280,7 +281,13 @@ export class QuizClient {
     }
   }
   async submit(skipConfirmed = false) {
-    if (this.state.busy || this.state.conflict || !this.state.view?.question)
+    if (
+      this.closed ||
+      this.state.busy ||
+      this.state.conflict ||
+      this.state.recovery ||
+      !this.state.view?.question
+    )
       return;
     if (!this.state.answer.trim() && !skipConfirmed && !this.pendingSubmission)
       return;
@@ -291,6 +298,8 @@ export class QuizClient {
       if (!this.pendingSubmission) {
         await this.save();
         if (
+          epoch !== this.epoch ||
+          this.closed ||
           this.state.dirty ||
           this.state.conflict ||
           !this.state.view?.question
@@ -335,6 +344,10 @@ export class QuizClient {
   }
   restoreRecovery() {
     if (
+      !this.closed &&
+      !this.state.busy &&
+      !this.state.uncertain &&
+      !this.state.conflict &&
       this.state.recovery &&
       this.state.view?.question?.id === this.state.recovery.questionId
     ) {
