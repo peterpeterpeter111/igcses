@@ -45,9 +45,29 @@ export default async function SubjectCoverage({
               {s.code}/{r.review?.observedComponent} · {r.review?.printedDate}
             </h3>
             <p>
-              Indexed-only · covers checked by AI · full task/scheme matching
-              pending
+              {r.extraction
+                ? 'Partial detailed extraction · whole paper incomplete'
+                : 'Indexed-only · covers checked by AI · full task/scheme matching pending'}
             </p>
+            {r.extraction && (
+              <div>
+                <p>
+                  {r.extraction.detailedTasks} question parts (
+                  {r.extraction.originalMarks} original marks) reviewed across
+                  Questions {r.extraction.reviewedQuestions.join(' and ')}.
+                  Whole-paper task inventory incomplete; zero fully processed
+                  papers.
+                </p>
+                <details>
+                  <summary>Remaining processing gaps</summary>
+                  <ul className="plain-list">
+                    {r.extraction.blockers.map((blocker) => (
+                      <li key={blocker}>{blocker}</li>
+                    ))}
+                  </ul>
+                </details>
+              </div>
+            )}
             <p>
               <a href={r.questionPaper.url} target="_blank" rel="noreferrer">
                 Question paper ({r.questionPaper.pageCount} pages) ↗

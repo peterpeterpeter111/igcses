@@ -1,0 +1,618 @@
+{
+  "schemaVersion": 1,
+  "paperId": "4PH1-2024-June-1-standard",
+  "qualification": "4PH1",
+  "canonicalIdentity": {
+    "year": 2024,
+    "series": "Summer",
+    "component": "1P",
+    "variant": "standard",
+    "printedDate": "2024-05-22",
+    "legacyPaperIdPreserved": true
+  },
+  "reviewDate": "2026-09-10",
+  "reviewer": "Codex Astra",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "status": "partially-extracted",
+  "fullyProcessed": false,
+  "wholePaperMarks": 110,
+  "wholePaperLeafCount": null,
+  "detailedLeafTasks": 7,
+  "detailedOriginalMarks": 23,
+  "reviewedQuestionTotals": {
+    "5": 11,
+    "12": 12
+  },
+  "documents": [
+    {
+      "id": "4PH1-2024-June-1-standard-qp",
+      "type": "question-paper",
+      "url": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Physics/2017/Exam-materials/4ph1-1p-que-20240523.pdf",
+      "sha256": "3c1e2eea09258259ce0ae86d6adf24da26a1320e297317c60f64c272839b8454",
+      "pageCount": 36,
+      "enclosureNote": "32 numbered paper pages plus four equation-booklet pages; enclosure audit remains pending."
+    },
+    {
+      "id": "4PH1-2024-June-1-standard-ms",
+      "type": "mark-scheme",
+      "url": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Physics/2017/Exam-materials/4ph1-1p-rms-20240822.pdf",
+      "sha256": "9ca559f719b9603c62ebb2a293c5174c7082c1cf6b13aa412fc5d59fd09c181f",
+      "pageCount": 17
+    }
+  ],
+  "pageAudit": {
+    "questionPaper": {
+      "visuallyReviewedPages": [11, 12, 13, 30, 31],
+      "wholeDocumentReviewed": false
+    },
+    "markScheme": {
+      "visuallyReviewedPages": [8, 16, 17],
+      "page17": "Publisher footer only.",
+      "wholeDocumentReviewed": false
+    }
+  },
+  "examinerReportStatus": "not-obtained-for-this-paper",
+  "currentSpecification": {
+    "documentId": "4PH1-spec",
+    "issue": "4",
+    "reviewedPages": [17, 18, 19],
+    "wholeHistoricalAmendmentReconciliation": "pending"
+  },
+  "tasks": [
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q5.a",
+      "paperId": "4PH1-2024-June-1-standard",
+      "questionPath": "5.a",
+      "recordKind": "leaf",
+      "originalMarks": 3,
+      "questionPaperPages": [11],
+      "markSchemePages": [8],
+      "commandWord": "Sketch",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "requiredKnowledge": [
+        "Direct proportionality",
+        "Extension versus total length",
+        "Axes and origin"
+      ],
+      "contextSummary": "A helical spring within its Hooke-law region; blank axes supplied.",
+      "solutionStructure": [
+        "Label force/load and extension.",
+        "Draw a straight positive-gradient line through the origin."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "axes",
+          "marks": 1,
+          "rule": "Appropriate paired physical quantities on axes; orientation does not matter."
+        },
+        {
+          "id": "line",
+          "marks": 1,
+          "rule": "Straight increasing line over the Hooke-law region."
+        },
+        {
+          "id": "origin",
+          "marks": 1,
+          "rule": "Extension-versus-force line through the origin."
+        }
+      ],
+      "acceptableAlternatives": [
+        "The scheme permits elongation or distance/length stretched for extension, and force/load/weight for the loading quantity.",
+        "A total-length axis can receive full credit with the correct non-zero length intercept.",
+        "A curve beyond a clearly identified proportional limit is permitted. Units are ignored for this sketch."
+      ],
+      "dependencies": [
+        "Interpret the origin criterion with the chosen axis quantity: total length is not extension."
+      ],
+      "commonErrors": [
+        {
+          "description": "Putting total length through the origin",
+          "origin": "editorial"
+        },
+        {
+          "description": "Substituting elastic limit for an identified proportional limit",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:1.23",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages."
+        }
+      ],
+      "proposedFamilyId": "4PH1.hooke-graph",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "Quiz currently accepts typed text, not submitted graph drawings; sketch adaptation needs a suitable response contract."
+      ]
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q5.b.i",
+      "paperId": "4PH1-2024-June-1-standard",
+      "questionPath": "5.b.i",
+      "recordKind": "leaf",
+      "originalMarks": 2,
+      "questionPaperPages": [12],
+      "markSchemePages": [8],
+      "commandWord": "Determine",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "requiredKnowledge": ["One-dimensional vector resultant"],
+      "contextSummary": "Two opposed forces act on the released object: 3.2 N upwards and 2.0 N downwards.",
+      "solutionStructure": [
+        "Subtract opposing force magnitudes: 3.2 − 2.0 = 1.2 N.",
+        "Direction is upwards."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "magnitude",
+          "marks": 1,
+          "rule": "Resultant magnitude 1.2 N."
+        },
+        {
+          "id": "direction",
+          "marks": 1,
+          "rule": "Upwards direction."
+        }
+      ],
+      "acceptableAlternatives": [
+        "An upward arrow can express the direction.",
+        "Unqualified compass north is not accepted as upwards in this diagram."
+      ],
+      "dependencies": [
+        "Treat magnitude and direction as separate credit criteria."
+      ],
+      "commonErrors": [
+        {
+          "description": "Adding the opposed magnitudes",
+          "origin": "editorial"
+        },
+        {
+          "description": "Giving no direction",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:1.14",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages."
+        },
+        {
+          "pointId": "4PH1:issue4:1.15",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages."
+        }
+      ],
+      "proposedFamilyId": "4PH1.collinear-resultant",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q5.b.ii",
+      "paperId": "4PH1-2024-June-1-standard",
+      "questionPath": "5.b.ii",
+      "recordKind": "leaf",
+      "originalMarks": 3,
+      "questionPaperPages": [12, 13],
+      "markSchemePages": [8],
+      "commandWord": "Calculate",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "requiredKnowledge": ["Resultant force equals mass times acceleration"],
+      "contextSummary": "Same released object; mass 0.20 kg; uses resultant from the preceding part.",
+      "solutionStructure": [
+        "Substitute F = ma using 1.2 N and 0.20 kg.",
+        "Rearrange a = F/m.",
+        "Evaluate a = 6.0 m/s²."
+      ],
+      "markingMethod": "method-marks",
+      "criteria": [
+        {
+          "id": "substitution",
+          "marks": 1,
+          "rule": "Substitution into resultant force = mass × acceleration."
+        },
+        {
+          "id": "rearrangement",
+          "marks": 1,
+          "rule": "Valid rearrangement for acceleration."
+        },
+        {
+          "id": "evaluation",
+          "marks": 1,
+          "rule": "Consistent numerical evaluation, 6.0 m/s² for the correct previous value."
+        }
+      ],
+      "acceptableAlternatives": [
+        "6 and 6.0 are equivalent here.",
+        "The scheme permits error carried forward from 5.b.i."
+      ],
+      "dependencies": [
+        "Evaluate the working using the candidate’s earlier resultant where the scheme allows ECF.",
+        "The scheme specifies a one-mark loss for a power-of-ten error; do not multiply penalties across repeated use of that error."
+      ],
+      "commonErrors": [
+        {
+          "description": "Using the spring force alone as resultant",
+          "origin": "editorial"
+        },
+        {
+          "description": "Dividing by weight instead of mass",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:1.17",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages."
+        }
+      ],
+      "proposedFamilyId": "4PH1.resultant-to-acceleration",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q5.b.iii",
+      "paperId": "4PH1-2024-June-1-standard",
+      "questionPath": "5.b.iii",
+      "recordKind": "leaf",
+      "originalMarks": 3,
+      "questionPaperPages": [12, 13],
+      "markSchemePages": [8],
+      "commandWord": "Explain",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "requiredKnowledge": [
+        "Spring force depends on extension",
+        "Weight stays constant",
+        "Resultant force controls acceleration"
+      ],
+      "contextSummary": "From release below equilibrium until the first return to the initial equilibrium position.",
+      "solutionStructure": [
+        "Acceleration magnitude falls to zero.",
+        "Spring extension and upward spring force decrease while weight stays constant.",
+        "The upward resultant therefore falls to zero at equilibrium."
+      ],
+      "markingMethod": "linked-reasoning",
+      "criteria": [
+        {
+          "id": "conclusion",
+          "marks": 1,
+          "rule": "Acceleration decreases to zero; “decelerates” is not the requested statement."
+        },
+        {
+          "id": "support",
+          "marks": 2,
+          "rule": "Any two distinct valid supports: reduced extension, reduced upward spring force, unchanged weight, reduced resultant reaching zero."
+        }
+      ],
+      "acceptableAlternatives": [
+        "Less stretched can express reduced extension.",
+        "Balanced forces is suitable if clearly limited to the equilibrium endpoint."
+      ],
+      "dependencies": [
+        "The support alternatives have a two-mark group cap, not four available marks.",
+        "Do not equate falling acceleration magnitude with falling speed during this interval."
+      ],
+      "commonErrors": [
+        {
+          "description": "Calling the upward-moving object slower because its acceleration falls",
+          "origin": "editorial"
+        },
+        {
+          "description": "Claiming forces balance throughout the path",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:1.17",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages."
+        },
+        {
+          "pointId": "4PH1:issue4:1.18",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages."
+        },
+        {
+          "pointId": "4PH1:issue4:1.23",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages."
+        }
+      ],
+      "proposedFamilyId": "4PH1.changing-spring-resultant",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q12.a",
+      "paperId": "4PH1-2024-June-1-standard",
+      "questionPath": "12.a",
+      "recordKind": "leaf",
+      "originalMarks": 4,
+      "questionPaperPages": [30],
+      "markSchemePages": [16],
+      "commandWord": "Determine",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "requiredKnowledge": [
+        "Instantaneous gradient of a curved velocity-time graph"
+      ],
+      "contextSummary": "A car accelerates with constant driving force; draw a tangent at 20 s.",
+      "solutionStructure": [
+        "Draw a local tangent at 20 s.",
+        "Calculate change in velocity / change in time using the tangent.",
+        "Approximately 1.1 m/s² is expected."
+      ],
+      "markingMethod": "method-marks",
+      "criteria": [
+        {
+          "id": "tangent",
+          "marks": 1,
+          "rule": "Appropriate tangent attempt at the requested point."
+        },
+        {
+          "id": "gradient",
+          "marks": 1,
+          "rule": "Acceleration identified or used as graph gradient."
+        },
+        {
+          "id": "accuracy",
+          "marks": 2,
+          "rule": "Official total-score bands: 1.00–1.20 m/s² scores 3 total; narrower 1.05–1.15 scores 4 total. These totals are not extra marks to add."
+        }
+      ],
+      "acceptableAlternatives": [
+        "Clear gradient working can imply the gradient relationship."
+      ],
+      "dependencies": [
+        "Bands are total-score guidance; preserve preceding construction/method context.",
+        "Rendering precision matters. Do not reuse these fixed numeric bands for a different generated graph."
+      ],
+      "commonErrors": [
+        {
+          "description": "Using a chord from the origin instead of a tangent",
+          "origin": "editorial"
+        },
+        {
+          "description": "Using velocity at 20 s divided by 20 s as instantaneous acceleration",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:1.7",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages."
+        },
+        {
+          "pointId": "4PH1:issue4:1.8",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages."
+        }
+      ],
+      "proposedFamilyId": "4PH1.curved-velocity-gradient",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "Browser needs a drawing/coordinate response convention before this source task can be faithfully adapted."
+      ]
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q12.b",
+      "paperId": "4PH1-2024-June-1-standard",
+      "questionPath": "12.b",
+      "recordKind": "leaf",
+      "originalMarks": 5,
+      "questionPaperPages": [30, 31],
+      "markSchemePages": [16],
+      "commandWord": "Determine",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "requiredKnowledge": [
+        "Distance as area under a positive velocity-time graph",
+        "Numerical graphical estimation"
+      ],
+      "contextSummary": "Estimate distance during the first 80 s of the same car journey.",
+      "solutionStructure": [
+        "Use area between graph and time axis up to 80 s.",
+        "Estimate by strips, shapes or grid squares.",
+        "Approximate distance 3750 m; precise source acceptance is banded."
+      ],
+      "markingMethod": "method-marks",
+      "criteria": [
+        {
+          "id": "area",
+          "marks": 1,
+          "rule": "Distance as area stated or evident in working."
+        },
+        {
+          "id": "method",
+          "marks": 1,
+          "rule": "Suitable graphical area method."
+        },
+        {
+          "id": "accuracy",
+          "marks": 3,
+          "rule": "Official total-score bands: 3200–4200 m gives 3 total, 3500–4000 gives 4 total, 3700–3800 gives 5 total. Do not add the totals as independent credits."
+        }
+      ],
+      "acceptableAlternatives": [
+        "Trapezia, rectangles/triangles and counting squares are allowed."
+      ],
+      "dependencies": [
+        "Use the graph from page 30; the page 31 prompt alone is insufficient.",
+        "The native 5-mark task cannot be served under the custom even-mark rule without a separately reviewed adaptation."
+      ],
+      "commonErrors": [
+        {
+          "description": "Approximating the entire nonlinear region with one unjustified triangle",
+          "origin": "editorial"
+        },
+        {
+          "description": "Integrating to 100 s instead of 80 s",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:1.9",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages."
+        }
+      ],
+      "proposedFamilyId": "4PH1.curved-velocity-area",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q12.c",
+      "paperId": "4PH1-2024-June-1-standard",
+      "questionPath": "12.c",
+      "recordKind": "leaf",
+      "originalMarks": 3,
+      "questionPaperPages": [30, 31],
+      "markSchemePages": [16],
+      "commandWord": "Explain",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "requiredKnowledge": [
+        "Balanced forces",
+        "Zero resultant and acceleration",
+        "Constant velocity"
+      ],
+      "contextSummary": "Explain the constant part of the car’s motion after 80 s.",
+      "solutionStructure": [
+        "Speed/velocity is constant.",
+        "Driving force balances air resistance.",
+        "Resultant and acceleration are zero."
+      ],
+      "markingMethod": "linked-reasoning",
+      "criteria": [
+        {
+          "id": "motion",
+          "marks": 1,
+          "rule": "Constant speed/velocity."
+        },
+        {
+          "id": "balance",
+          "marks": 1,
+          "rule": "Driving force and air resistance balance."
+        },
+        {
+          "id": "resultant",
+          "marks": 1,
+          "rule": "Zero resultant force or zero acceleration."
+        }
+      ],
+      "acceptableAlternatives": [
+        "Terminal velocity is accepted for this constant-speed state.",
+        "Balanced forces may express equality of driving force and resistance."
+      ],
+      "dependencies": [
+        "The third criterion credits either zero resultant or zero acceleration, not both separately."
+      ],
+      "commonErrors": [
+        {
+          "description": "Calling constant velocity rest",
+          "origin": "editorial"
+        },
+        {
+          "description": "Claiming constant driving force implies constant acceleration despite increasing drag",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:1.7",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages."
+        },
+        {
+          "pointId": "4PH1:issue4:1.17",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages."
+        }
+      ],
+      "proposedFamilyId": "4PH1.balanced-motion",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": []
+    }
+  ],
+  "blockers": [
+    "Remaining ten top-level questions not detailed in this extraction",
+    "Whole-paper leaf-task and marks reconciliation incomplete",
+    "Full page audit incomplete",
+    "Source-task to validated-template links incomplete",
+    "No examiner report checked for this paper"
+  ],
+  "graphCrossCheck": {
+    "provenanceKind": "editorial-inference",
+    "sourcePage": 30,
+    "description": "Approximate visual readings used as a sanity check; not an exact digitisation of the original curve.",
+    "timeSeconds": [0, 10, 20, 30, 40, 50, 60, 70, 80],
+    "approxVelocity": [0, 24, 38, 47, 54, 58.5, 61.5, 63.3, 64],
+    "trapeziumDistance": 3783,
+    "withinHighestSourceBand": true
+  },
+  "paperStage": "indexed"
+}

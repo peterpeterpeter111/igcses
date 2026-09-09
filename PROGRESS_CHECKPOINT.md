@@ -1,3 +1,7 @@
+# Latest checkpoint — Physics extraction and generator prototype
+
+Read `research/checkpoints/2026-09-10-PHYSICS-EXTRACTION.md` first. Six partial note documents/24 sections, 33 partially taught Physics parents, 7 detailed Physics paper parts (23 original marks), two provisional template definitions and one experimental generator. Zero complete chapters/points, fully processed papers or active templates. 40 tests, 13 research checks, typecheck, build and public scan pass. Earlier checkpoint counts below are historical.
+
 # Latest checkpoint — Physics teaching expansion
 
 Read `research/checkpoints/2026-09-09-PHYSICS-TEACHING.md` first, then `2026-09-09-RESUMED-REPAIRS.md`. Six partial note documents now contain 24 teaching sections (18 in Physics), with 33 Physics statements linked to partial notes. 35 tests, typecheck, build and public scan pass. Zero complete chapters/points, fully processed papers and active templates. Earlier counts and test-hang claims below are historical. Work is resumed; pause at 5% remaining Astra allowance.

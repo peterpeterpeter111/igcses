@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 1,
+  "id": "4PH1.collinear-resultant",
+  "version": "0.1.0",
+  "status": "provisional",
+  "subject": "4PH1",
+  "origin": "exam-derived",
+  "syllabusRefs": [
+    {
+      "pointId": "4PH1:issue4:1.14",
+      "documentId": "4PH1-spec",
+      "issue": "4",
+      "pdfPages": [18],
+      "mappingStatus": "verified"
+    },
+    {
+      "pointId": "4PH1:issue4:1.15",
+      "documentId": "4PH1-spec",
+      "issue": "4",
+      "pdfPages": [18],
+      "mappingStatus": "verified"
+    }
+  ],
+  "sourceTasks": [
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q5.b.i",
+      "paperId": "4PH1-2024-June-1-standard",
+      "questionPaper": {
+        "documentId": "4PH1-2024-June-1-standard-qp",
+        "pdfPages": [12]
+      },
+      "markScheme": {
+        "documentId": "4PH1-2024-June-1-standard-ms",
+        "pdfPages": [8]
+      },
+      "originalMarks": 2
+    }
+  ],
+  "answerGuideId": "4PH1.collinear-resultant",
+  "commandWord": "Determine",
+  "skill": "Solve a one-dimensional force balance with signed directions; direct resultant and separately proposed inverse-force adaptations.",
+  "assessmentObjectives": ["unassigned-pending-official-AO-review"],
+  "originalMarks": [2],
+  "customQuiz": {
+    "candidateMarks": [2],
+    "validatedMarks": [],
+    "adaptationStatus": "pending",
+    "rationale": "The original uses separate magnitude and direction credit. Three-force and inverse tasks broaden the original demand and still require marking calibration before acceptance."
+  },
+  "stimulus": {
+    "types": ["scenario", "table"],
+    "originality": "original-generated-content",
+    "requirements": [
+      "An original one-axis scenario with two or three labelled forces and all required magnitudes/directions.",
+      "Either all forces are supplied and resultant requested, or force A is omitted and resultant plus all other forces supplied.",
+      "Force values expressed to one decimal place in N. Other-axis forces explicitly balance."
+    ],
+    "evidenceContract": [
+      "Store the signed integer-tenths parameter vector privately.",
+      "Validate the actual displayed force readings against the signed physical model.",
+      "Keep magnitude, direction, working and rubric outside the public question projection."
+    ]
+  },
+  "parameters": [
+    {
+      "id": "forceMagnitudeTenths",
+      "type": "integer",
+      "domain": {
+        "minimum": 5,
+        "maximum": 250,
+        "step": 1
+      },
+      "constraints": [
+        "Applies independently to each force magnitude; multiply by a sampled sign.",
+        "At least one force each way; resultant must not be zero."
+      ]
+    },
+    {
+      "id": "forceCount",
+      "type": "integer",
+      "domain": {
+        "minimum": 2,
+        "maximum": 3,
+        "step": 1
+      },
+      "constraints": ["All force labels are distinct."]
+    },
+    {
+      "id": "task",
+      "type": "enum",
+      "domain": {
+        "values": ["resultant", "missing-force"]
+      },
+      "constraints": ["For missing-force, omit exactly A and supply resultant."]
+    },
+    {
+      "id": "representation",
+      "type": "enum",
+      "domain": {
+        "values": ["prose", "table"]
+      },
+      "constraints": [
+        "The same complete physical data is available in either form."
+      ]
+    },
+    {
+      "id": "axis",
+      "type": "enum",
+      "domain": {
+        "values": ["horizontal", "vertical"]
+      },
+      "constraints": ["Use right/left or upwards/downwards consistently."]
+    },
+    {
+      "id": "context",
+      "type": "integer",
+      "domain": {
+        "minimum": 0,
+        "maximum": 2,
+        "step": 1
+      },
+      "constraints": ["Select from three axis-appropriate apparatus contexts."]
+    }
+  ],
+  "constraints": [
+    "No zero-resultant case: it needs a separate direction rubric.",
+    "No forces outside 0.5–25.0 N individually, including after sign inversion.",
+    "Missing-force and three-force variants remain provisional despite successful algebra tests."
+  ],
+  "relationships": [
+    "resultant_signed = sum(force_i_signed)",
+    "unknown_force_A = resultant_signed - sum(other_force_i_signed)",
+    "magnitude = absolute(signed_target); sign determines the axis direction"
+  ],
+  "difficultyControls": [
+    "Change direct to inverse demand, representation and number of contributors.",
+    "Do not equate a two-mark maximum with difficulty."
+  ],
+  "transformations": [
+    {
+      "id": "new-context",
+      "status": "candidate",
+      "conditions": "Use one of three coherent scenarios per axis."
+    },
+    {
+      "id": "third-force",
+      "status": "candidate",
+      "conditions": "All three contributions explicitly provided or included in the inverse equation."
+    },
+    {
+      "id": "inverse-target",
+      "status": "candidate",
+      "conditions": "A single unknown and a complete net force are supplied."
+    },
+    {
+      "id": "prose-to-table",
+      "status": "candidate",
+      "conditions": "Readings and labels reconcile exactly."
+    },
+    {
+      "id": "zero-resultant",
+      "status": "forbidden",
+      "conditions": "Direction credit requires a different question and scheme."
+    }
+  ],
+  "solutionProcedure": [
+    "Choose a positive axis direction.",
+    "Convert each force to a signed contribution.",
+    "Sum contributions or rearrange the balance for the omitted force.",
+    "Return the absolute magnitude in N with its sign-derived direction."
+  ],
+  "marking": {
+    "method": "discrete-points",
+    "maximum": 2,
+    "criteria": [
+      {
+        "id": "magnitude",
+        "credit": 1,
+        "rule": "Correct non-negative magnitude of the requested target, in the requested N unit."
+      },
+      {
+        "id": "direction",
+        "credit": 1,
+        "rule": "Correct unambiguous direction along the stated axis."
+      }
+    ],
+    "acceptableAlternatives": [
+      "Equivalent decimal values and equivalent directional wording.",
+      "A signed value is acceptable only when its sign convention is unambiguous."
+    ],
+    "dependencies": [
+      "Magnitude and direction are separate credit points.",
+      "Inverse-task responses must identify force A, not merely repeat the supplied resultant."
+    ],
+    "contradictionRules": [
+      "Contradictory direction claims cannot receive direction credit without resolution; calibration pending.",
+      "Do not double-credit multiple descriptions of the same magnitude or direction."
+    ],
+    "units": "N",
+    "tolerance": {
+      "absolute": 0,
+      "relative": 0,
+      "roundingRule": "Exact tenths generated; equivalent decimal representations accepted. No rounding required."
+    },
+    "levelRubric": []
+  },
+  "commonErrors": [
+    {
+      "description": "Adding opposed forces instead of signed contributions.",
+      "origin": "editorial",
+      "sourceRefs": []
+    },
+    {
+      "description": "Omitting a physical direction or using an unqualified compass term for a vertical diagram.",
+      "origin": "scheme",
+      "sourceRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-ms",
+          "pdfPages": [8]
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ruleIds": [
+      "force-domain",
+      "force-balance",
+      "displayed-readings",
+      "solution-direction",
+      "criterion-total",
+      "public-projection",
+      "deterministic-seed",
+      "structural-variation"
+    ],
+    "testPlan": [
+      "200 deterministic seeds, all 16 structural combinations and 96 explicit boundary/context cases.",
+      "Reject out-of-range, zero-resultant and same-direction-only input.",
+      "Detect altered private solutions or public readings.",
+      "Before promotion, calibrate free-text marking, alternatives, contradictions and inverse/three-force demands against reviewed exemplars."
+    ],
+    "testedSeeds": [
+      0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38,
+      39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56,
+      57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74,
+      75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92,
+      93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108,
+      109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123,
+      124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138,
+      139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153,
+      154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168,
+      169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183,
+      184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198,
+      199
+    ],
+    "boundaryCoverage": "complete",
+    "status": "not-run",
+    "runRefs": ["research/validation/2026-09-10-resultant-prototype.json"]
+  },
+  "runtime": {
+    "implemented": true,
+    "generatorId": "collinear-resultant-prototype-v1",
+    "seedPolicy": "Unsigned 32-bit seed, deterministic integer-tenths sampling; persist the complete validated package before any future serving. Current output is experimental and cannot start a quiz.",
+    "maxRetries": 0,
+    "publicFields": ["prompt", "stimulus", "maximumMarks"],
+    "privateFields": [
+      "seed",
+      "parameters",
+      "sourceTasks",
+      "solution",
+      "rubric",
+      "validationResults"
+    ],
+    "freezeBeforeAnswer": true,
+    "releaseSchemeAfter": "session-completed"
+  },
+  "review": {
+    "pedagogyStatus": "pending",
+    "reviewer": "Codex Astra",
+    "reviewerType": "agent",
+    "humanReviewed": false,
+    "blockers": [
+      "Only mathematical/representation tests passed; full pedagogical validation has not run.",
+      "Free-text marking, equivalent responses and contradiction calibration pending.",
+      "Inverse and three-force adaptations need assessment-demand review.",
+      "Per-task assessment objective allocation remains unassigned.",
+      "Not registered for live sessions; zero active templates."
+    ]
+  }
+}

@@ -21,7 +21,13 @@ export type NoteSection = {
     safety: string[];
     quality: string[];
   };
-  answerGuide?: { command: string; steps: string[]; caution: string };
+  answerGuide?: {
+    id?: string;
+    sourceTaskId?: string;
+    command: string;
+    steps: string[];
+    caution: string;
+  };
 };
 export type ChapterNotes = {
   subjectId: string;
