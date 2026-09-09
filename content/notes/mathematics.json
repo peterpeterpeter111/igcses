@@ -1,0 +1,79 @@
+{
+  "subjectId": "mathematics",
+  "chapterId": "number-and-algebra",
+  "sourceId": "4MB1-spec",
+  "sourcePages": [
+    17,
+    18
+  ],
+  "prerequisites": [
+    "Understand multiplication, division and place value."
+  ],
+  "goals": [
+    "Use index laws while stating their conditions.",
+    "Convert to standard form and check the coefficient."
+  ],
+  "sections": [
+    {
+      "id": "index-laws",
+      "title": "Indices and powers",
+      "terms": [
+        "indices",
+        "powers",
+        "negative powers",
+        "fractional powers",
+        "index laws"
+      ],
+      "points": [
+        "1C"
+      ],
+      "paragraphs": [
+        "An index tells you how a base is used as a power. For positive integers, aⁿ means n factors of a multiplied together. When multiplying powers with the same base, add the indices: aᵐ × aⁿ = aᵐ⁺ⁿ. When dividing, subtract them: aᵐ ÷ aⁿ = aᵐ⁻ⁿ, provided a is not zero.",
+        "A zero power equals 1 for a non-zero base. A negative power describes a reciprocal: a⁻ⁿ = 1/aⁿ. It does not make a positive number negative. A fractional power combines a root and a power; for a positive base, a^(m/n) = (ⁿ√a)ᵐ.",
+        "Read the whole expression before applying a rule. Index laws combine products or quotients with the same base; they do not let you add the indices in a² + a³. Brackets also matter: (−3)² = 9, while −3² = −9 because the power is applied before the leading minus."
+      ],
+      "example": {
+        "question": "Simplify 2⁻³ × 2⁵.",
+        "steps": [
+          "The bases match, so add the indices: −3 + 5 = 2.",
+          "The expression is 2² = 4.",
+          "Check using the reciprocal: (1/8) × 32 = 4."
+        ],
+        "explanation": "The independent reciprocal check supports the result and shows why the negative index does not produce a negative value."
+      }
+    },
+    {
+      "id": "standard-form",
+      "title": "Standard form",
+      "terms": [
+        "standard form",
+        "scientific notation",
+        "powers of ten"
+      ],
+      "points": [
+        "1K"
+      ],
+      "paragraphs": [
+        "For a positive number, standard form is a × 10ⁿ, where 1 ≤ a < 10 and n is an integer. The coefficient condition makes the representation consistent: 42 × 10³ has the correct value but is not in standard form; 4.2 × 10⁴ is.",
+        "A negative index on 10 represents a small positive number. Count place-value changes carefully and check the size of the answer. In calculations, work with coefficients and powers separately, then adjust the coefficient back into the required interval."
+      ],
+      "example": {
+        "question": "Write 0.00072 in standard form.",
+        "steps": [
+          "Move the decimal point four places to obtain the coefficient 7.2.",
+          "Moving it back requires multiplying by 10⁻⁴.",
+          "Therefore 0.00072 = 7.2 × 10⁻⁴."
+        ],
+        "explanation": "The coefficient is between 1 and 10. The original number is smaller than 1, consistent with a negative power of ten."
+      },
+      "practice": {
+        "question": "Calculate (3 × 10⁵) × (4 × 10⁻²), giving your answer in standard form.",
+        "answer": "Multiply the coefficients to get 12 and add the indices to get 3: 12 × 10³. Normalise this to 1.2 × 10⁴.",
+        "explanation": "The last step is essential because a coefficient of 12 is outside the standard-form interval."
+      }
+    }
+  ],
+  "status": "source-checked",
+  "complete": false,
+  "humanReviewed": false
+}

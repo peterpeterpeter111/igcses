@@ -1,0 +1,2675 @@
+{
+  "schemaVersion": 1,
+  "batchId": "2026-09-08-cross-subject-lower-01",
+  "executionMethod": "Deterministic Python script; no model inference used for extraction",
+  "extractionEnvironment": {
+    "pypdf": "6.18.0",
+    "fonttools": "4.60.2",
+    "offline": true
+  },
+  "scope": "five cross-subject recent question-paper/mark-scheme pairs; one pair per available subject, 4MB1 excluded because no pair is catalogued",
+  "sourcePolicy": "Original five ledger pairs only; explicit Pearson alternative URLs discovered through Save My Exams; no archive crawl. Alternative identity and scheme pairing remain candidates.",
+  "status": "indexed-only",
+  "records": [
+    {
+      "paperId": "4HB1-2024-May-01-standard",
+      "qualification": "4HB1",
+      "year": 2024,
+      "series": "May",
+      "component": "01",
+      "variant": "standard",
+      "stage": "indexed",
+      "processingStatus": "indexed-only",
+      "fullyProcessed": false,
+      "indexed": true,
+      "qpLegacyLinkId": "086280071a38d1f2",
+      "msLegacyLinkId": "0e2d95328bf9ba43",
+      "downloadErrors": [],
+      "priorDownloadErrors": [],
+      "questionPaper": {
+        "url": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Human-Biology/2017/Exam-materials/4hb1-01-que-20240515.pdf",
+        "filename": "4hb1-01-que-20240515.pdf",
+        "sha256": "6f65e16f7752630e632eb16ae6cf481252154fbdd187854a30c3a4ca75d72ef1",
+        "pageCount": 24,
+        "accessStatus": "obtained",
+        "accessDate": "2026-09-09",
+        "cacheReused": true,
+        "lastVerifiedDate": "2026-09-09",
+        "originalLedgerUrl": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Human-Biology/2017/Exam-materials/4hb1-01-que-20240515.pdf"
+      },
+      "markScheme": {
+        "url": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Human-Biology/2017/Exam-materials/4hb1-01-rms-20240822.pdf",
+        "filename": "4hb1-01-rms-20240822.pdf",
+        "sha256": "226c87f3b1a1a212cd2c1d4e3b8ec1f77a571b3032a830118e352f66757c5a0c",
+        "pageCount": 12,
+        "accessStatus": "obtained",
+        "accessDate": "2026-09-09",
+        "cacheReused": true,
+        "lastVerifiedDate": "2026-09-09",
+        "originalLedgerUrl": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Human-Biology/2017/Exam-materials/4hb1-01-rms-20240822.pdf"
+      },
+      "questionPaperPages": [
+        {
+          "pdfPage": 1,
+          "textChars": 1154,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 2,
+          "textChars": 1118,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 3,
+          "textChars": 2251,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 4,
+          "textChars": 1394,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 5,
+          "textChars": 3066,
+          "questionLabelCandidates": [
+            {
+              "number": 1,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 6,
+          "textChars": 571,
+          "questionLabelCandidates": [],
+          "markCandidates": [
+            4
+          ],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 7,
+          "textChars": 1758,
+          "questionLabelCandidates": [
+            {
+              "number": 2,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 8,
+          "textChars": 2171,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 9,
+          "textChars": 3089,
+          "questionLabelCandidates": [
+            {
+              "number": 3,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 10,
+          "textChars": 488,
+          "questionLabelCandidates": [],
+          "markCandidates": [
+            3
+          ],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 11,
+          "textChars": 4399,
+          "questionLabelCandidates": [
+            {
+              "number": 4,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 12,
+          "textChars": 4793,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 13,
+          "textChars": 2884,
+          "questionLabelCandidates": [
+            {
+              "number": 5,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 14,
+          "textChars": 215,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 15,
+          "textChars": 907,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 16,
+          "textChars": 6824,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 17,
+          "textChars": 1880,
+          "questionLabelCandidates": [
+            {
+              "number": 6,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 18,
+          "textChars": 4877,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 19,
+          "textChars": 1456,
+          "questionLabelCandidates": [
+            {
+              "number": 7,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 20,
+          "textChars": 1755,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 21,
+          "textChars": 3796,
+          "questionLabelCandidates": [
+            {
+              "number": 8,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 22,
+          "textChars": 5183,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 23,
+          "textChars": 2423,
+          "questionLabelCandidates": [
+            {
+              "number": 9,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 24,
+          "textChars": 127,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        }
+      ],
+      "markSchemePages": [
+        {
+          "pdfPage": 1,
+          "textChars": 142,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 2,
+          "textChars": 1265,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 3,
+          "textChars": 1255,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 4,
+          "textChars": 1113,
+          "questionLabelCandidates": [
+            {
+              "number": 1,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [
+            1
+          ],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 5,
+          "textChars": 511,
+          "questionLabelCandidates": [
+            {
+              "number": 2,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 6,
+          "textChars": 682,
+          "questionLabelCandidates": [
+            {
+              "number": 3,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 7,
+          "textChars": 832,
+          "questionLabelCandidates": [
+            {
+              "number": 4,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 8,
+          "textChars": 920,
+          "questionLabelCandidates": [
+            {
+              "number": 5,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 9,
+          "textChars": 924,
+          "questionLabelCandidates": [
+            {
+              "number": 6,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 10,
+          "textChars": 625,
+          "questionLabelCandidates": [
+            {
+              "number": 7,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 11,
+          "textChars": 1313,
+          "questionLabelCandidates": [
+            {
+              "number": 8,
+              "subpart": null
+            },
+            {
+              "number": 9,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 12,
+          "textChars": 198,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        }
+      ],
+      "candidateQuestionLabels": 9,
+      "pageWarnings": {
+        "questionPaper": [
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "markScheme": []
+      },
+      "identityStatus": "cover-review-required",
+      "schemeMatchStatus": "ledger-pair-candidate",
+      "reviewedPages": [],
+      "extractedTaskCount": 0,
+      "blockers": [
+        "Cover identity, printed dates and component/variant require visual review.",
+        "Question/subpart labels, diagrams, tables and level grids are candidate-only.",
+        "No exact task extraction, scheme interpretation, syllabus mapping or template validation has run.",
+        "Page flags are only heuristics and cannot establish completeness of text, diagrams or tables."
+      ]
+    },
+    {
+      "paperId": "4BI1-2024-June-1-standard",
+      "qualification": "4BI1",
+      "year": 2024,
+      "series": "June",
+      "component": "1",
+      "variant": "standard",
+      "stage": "indexed",
+      "processingStatus": "indexed-only",
+      "fullyProcessed": false,
+      "indexed": true,
+      "qpLegacyLinkId": "3779bd1a4426e2a2",
+      "msLegacyLinkId": "8d8b3145b28f2227",
+      "downloadErrors": [],
+      "priorDownloadErrors": [
+        {
+          "documentType": "qp",
+          "url": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/QP/June 2024 QP.pdf",
+          "error": "HTTPSConnectionPool(host='pmt.physicsandmathstutor.com', port=443): Max retries exceeded with url: /download/Biology/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/QP/June%202024%20QP.pdf (Caused by NewConnectionError(\"HTTPSConnection(host='pmt.physicsandmathstutor.com', port=443): Failed to establish a new connection: [Errno 61] Connection refused\"))"
+        },
+        {
+          "documentType": "ms",
+          "url": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/MS/June 2024 MS.pdf",
+          "error": "HTTPSConnectionPool(host='pmt.physicsandmathstutor.com', port=443): Max retries exceeded with url: /download/Biology/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/MS/June%202024%20MS.pdf (Caused by NewConnectionError(\"HTTPSConnection(host='pmt.physicsandmathstutor.com', port=443): Failed to establish a new connection: [Errno 61] Connection refused\"))"
+        },
+        {
+          "documentType": "qp",
+          "url": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/QP/June 2024 QP.pdf",
+          "error": "HTTPSConnectionPool(host='pmt.physicsandmathstutor.com', port=443): Max retries exceeded with url: /download/Biology/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/QP/June%202024%20QP.pdf (Caused by NewConnectionError(\"HTTPSConnection(host='pmt.physicsandmathstutor.com', port=443): Failed to establish a new connection: [Errno 61] Connection refused\"))",
+          "attemptDate": "2026-09-09"
+        },
+        {
+          "documentType": "ms",
+          "url": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/MS/June 2024 MS.pdf",
+          "error": "HTTPSConnectionPool(host='pmt.physicsandmathstutor.com', port=443): Max retries exceeded with url: /download/Biology/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/MS/June%202024%20MS.pdf (Caused by NewConnectionError(\"HTTPSConnection(host='pmt.physicsandmathstutor.com', port=443): Failed to establish a new connection: [Errno 61] Connection refused\"))",
+          "attemptDate": "2026-09-09"
+        }
+      ],
+      "questionPaper": {
+        "url": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Biology/2017/Exam-materials/4bi1-1b-que-20240511.pdf",
+        "filename": "4bi1-1b-que-20240511.pdf",
+        "sha256": "5d4a76b9c961f83179706c753c95b56efc4e0cb792452c3307a0029454a54337",
+        "pageCount": 32,
+        "accessStatus": "obtained",
+        "accessDate": "2026-09-09",
+        "cacheReused": true,
+        "lastVerifiedDate": "2026-09-09",
+        "originalLedgerUrl": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/QP/June 2024 QP.pdf",
+        "alternateSource": {
+          "discoveryUrl": "https://www.savemyexams.com/igcse/biology/edexcel/past-papers/",
+          "discoveryDate": "2026-09-09",
+          "publisher": "Pearson",
+          "linkedBy": "Save My Exams",
+          "identityStatus": "cover-review-required",
+          "qp": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Biology/2017/Exam-materials/4bi1-1b-que-20240511.pdf",
+          "ms": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Biology/2017/Exam-materials/4bi1-1b-rms-20240822.pdf"
+        }
+      },
+      "markScheme": {
+        "url": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Biology/2017/Exam-materials/4bi1-1b-rms-20240822.pdf",
+        "filename": "4bi1-1b-rms-20240822.pdf",
+        "sha256": "50e93a23131b5ad5642423d2db2ff40f6276c35b15b7f0fb3210b5765423d104",
+        "pageCount": 24,
+        "accessStatus": "obtained",
+        "accessDate": "2026-09-09",
+        "cacheReused": true,
+        "lastVerifiedDate": "2026-09-09",
+        "originalLedgerUrl": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/MS/June 2024 MS.pdf",
+        "alternateSource": {
+          "discoveryUrl": "https://www.savemyexams.com/igcse/biology/edexcel/past-papers/",
+          "discoveryDate": "2026-09-09",
+          "publisher": "Pearson",
+          "linkedBy": "Save My Exams",
+          "identityStatus": "cover-review-required",
+          "qp": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Biology/2017/Exam-materials/4bi1-1b-que-20240511.pdf",
+          "ms": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Biology/2017/Exam-materials/4bi1-1b-rms-20240822.pdf"
+        }
+      },
+      "questionPaperPages": [
+        {
+          "pdfPage": 1,
+          "textChars": 1120,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 2,
+          "textChars": 522,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 3,
+          "textChars": 554,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 4,
+          "textChars": 609,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 5,
+          "textChars": 5538,
+          "questionLabelCandidates": [
+            {
+              "number": 1,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 6,
+          "textChars": 486,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 7,
+          "textChars": 5895,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 8,
+          "textChars": 3327,
+          "questionLabelCandidates": [
+            {
+              "number": 2,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 9,
+          "textChars": 1227,
+          "questionLabelCandidates": [
+            {
+              "number": 3,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 10,
+          "textChars": 2481,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 11,
+          "textChars": 3806,
+          "questionLabelCandidates": [
+            {
+              "number": 4,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 12,
+          "textChars": 214,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 13,
+          "textChars": 2183,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 14,
+          "textChars": 686,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 15,
+          "textChars": 4590,
+          "questionLabelCandidates": [
+            {
+              "number": 5,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 16,
+          "textChars": 214,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 17,
+          "textChars": 1402,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 18,
+          "textChars": 635,
+          "questionLabelCandidates": [],
+          "markCandidates": [
+            5
+          ],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 19,
+          "textChars": 3161,
+          "questionLabelCandidates": [
+            {
+              "number": 6,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 20,
+          "textChars": 214,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 21,
+          "textChars": 2860,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 22,
+          "textChars": 1287,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 23,
+          "textChars": 6591,
+          "questionLabelCandidates": [
+            {
+              "number": 7,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 24,
+          "textChars": 2320,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 25,
+          "textChars": 3955,
+          "questionLabelCandidates": [
+            {
+              "number": 8,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 26,
+          "textChars": 1834,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 27,
+          "textChars": 3534,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 28,
+          "textChars": 1647,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 29,
+          "textChars": 5364,
+          "questionLabelCandidates": [
+            {
+              "number": 9,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 30,
+          "textChars": 6069,
+          "questionLabelCandidates": [
+            {
+              "number": 10,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 31,
+          "textChars": 214,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 32,
+          "textChars": 126,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        }
+      ],
+      "markSchemePages": [
+        {
+          "pdfPage": 1,
+          "textChars": 154,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 2,
+          "textChars": 1278,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 3,
+          "textChars": 1256,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 4,
+          "textChars": 1152,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 5,
+          "textChars": 1064,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 6,
+          "textChars": 501,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 7,
+          "textChars": 774,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 8,
+          "textChars": 617,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 9,
+          "textChars": 1228,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 10,
+          "textChars": 841,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 11,
+          "textChars": 989,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 12,
+          "textChars": 1178,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 13,
+          "textChars": 961,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 14,
+          "textChars": 708,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 15,
+          "textChars": 1076,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 16,
+          "textChars": 1004,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 17,
+          "textChars": 1075,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 18,
+          "textChars": 1060,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 19,
+          "textChars": 1078,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 20,
+          "textChars": 961,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 21,
+          "textChars": 731,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 22,
+          "textChars": 1052,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 23,
+          "textChars": 816,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 24,
+          "textChars": 238,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        }
+      ],
+      "candidateQuestionLabels": 10,
+      "pageWarnings": {
+        "questionPaper": [
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          14,
+          15,
+          17,
+          19,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "markScheme": []
+      },
+      "identityStatus": "cover-review-required",
+      "schemeMatchStatus": "ledger-pair-candidate",
+      "reviewedPages": [],
+      "extractedTaskCount": 0,
+      "blockers": [
+        "Cover identity, printed dates and component/variant require visual review.",
+        "Question/subpart labels, diagrams, tables and level grids are candidate-only.",
+        "No exact task extraction, scheme interpretation, syllabus mapping or template validation has run.",
+        "Page flags are only heuristics and cannot establish completeness of text, diagrams or tables."
+      ]
+    },
+    {
+      "paperId": "4CH1-2024-June-1-standard",
+      "qualification": "4CH1",
+      "year": 2024,
+      "series": "June",
+      "component": "1",
+      "variant": "standard",
+      "stage": "indexed",
+      "processingStatus": "indexed-only",
+      "fullyProcessed": false,
+      "indexed": true,
+      "qpLegacyLinkId": "fac78a14a592366d",
+      "msLegacyLinkId": "acf062368ae2a175",
+      "downloadErrors": [],
+      "priorDownloadErrors": [
+        {
+          "documentType": "qp",
+          "url": "https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/QP/June 2024 QP.pdf",
+          "error": "HTTPSConnectionPool(host='pmt.physicsandmathstutor.com', port=443): Max retries exceeded with url: /download/Chemistry/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/QP/June%202024%20QP.pdf (Caused by NewConnectionError(\"HTTPSConnection(host='pmt.physicsandmathstutor.com', port=443): Failed to establish a new connection: [Errno 61] Connection refused\"))"
+        },
+        {
+          "documentType": "ms",
+          "url": "https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/MS/June 2024 MS.pdf",
+          "error": "HTTPSConnectionPool(host='pmt.physicsandmathstutor.com', port=443): Max retries exceeded with url: /download/Chemistry/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/MS/June%202024%20MS.pdf (Caused by NewConnectionError(\"HTTPSConnection(host='pmt.physicsandmathstutor.com', port=443): Failed to establish a new connection: [Errno 61] Connection refused\"))"
+        },
+        {
+          "documentType": "qp",
+          "url": "https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/QP/June 2024 QP.pdf",
+          "error": "HTTPSConnectionPool(host='pmt.physicsandmathstutor.com', port=443): Max retries exceeded with url: /download/Chemistry/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/QP/June%202024%20QP.pdf (Caused by ConnectTimeoutError(<HTTPSConnection(host='pmt.physicsandmathstutor.com', port=443) at 0x106fe4c40>, 'Connection to pmt.physicsandmathstutor.com timed out. (connect timeout=60)'))",
+          "attemptDate": "2026-09-09"
+        },
+        {
+          "documentType": "ms",
+          "url": "https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/MS/June 2024 MS.pdf",
+          "error": "HTTPSConnectionPool(host='pmt.physicsandmathstutor.com', port=443): Max retries exceeded with url: /download/Chemistry/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/MS/June%202024%20MS.pdf (Caused by NewConnectionError(\"HTTPSConnection(host='pmt.physicsandmathstutor.com', port=443): Failed to establish a new connection: [Errno 61] Connection refused\"))",
+          "attemptDate": "2026-09-09"
+        }
+      ],
+      "questionPaper": {
+        "url": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Chemistry/2017/Exam-materials/4ch1-1c-que-20240518.pdf",
+        "filename": "4ch1-1c-que-20240518.pdf",
+        "sha256": "1aec3bb887bbfaa925f35e9dd20bcb9e0890474467b43385fa37628d0efc96eb",
+        "pageCount": 24,
+        "accessStatus": "obtained",
+        "accessDate": "2026-09-09",
+        "cacheReused": true,
+        "lastVerifiedDate": "2026-09-09",
+        "originalLedgerUrl": "https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/QP/June 2024 QP.pdf",
+        "alternateSource": {
+          "discoveryUrl": "https://www.savemyexams.com/igcse/chemistry/edexcel/past-papers/",
+          "discoveryDate": "2026-09-09",
+          "publisher": "Pearson",
+          "linkedBy": "Save My Exams",
+          "identityStatus": "cover-review-required",
+          "qp": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Chemistry/2017/Exam-materials/4ch1-1c-que-20240518.pdf",
+          "ms": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Chemistry/2017/Exam-materials/4ch1-1c-rms-20240822.pdf"
+        }
+      },
+      "markScheme": {
+        "url": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Chemistry/2017/Exam-materials/4ch1-1c-rms-20240822.pdf",
+        "filename": "4ch1-1c-rms-20240822.pdf",
+        "sha256": "204e6528094f3cd69b0eb8e06943fe5c73f7dd581943d62c57be7383d5c4a10b",
+        "pageCount": 18,
+        "accessStatus": "obtained",
+        "accessDate": "2026-09-09",
+        "cacheReused": true,
+        "lastVerifiedDate": "2026-09-09",
+        "originalLedgerUrl": "https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/MS/June 2024 MS.pdf",
+        "alternateSource": {
+          "discoveryUrl": "https://www.savemyexams.com/igcse/chemistry/edexcel/past-papers/",
+          "discoveryDate": "2026-09-09",
+          "publisher": "Pearson",
+          "linkedBy": "Save My Exams",
+          "identityStatus": "cover-review-required",
+          "qp": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Chemistry/2017/Exam-materials/4ch1-1c-que-20240518.pdf",
+          "ms": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Chemistry/2017/Exam-materials/4ch1-1c-rms-20240822.pdf"
+        }
+      },
+      "questionPaperPages": [
+        {
+          "pdfPage": 1,
+          "textChars": 1159,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 2,
+          "textChars": 2370,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 3,
+          "textChars": 2182,
+          "questionLabelCandidates": [
+            {
+              "number": 1,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 4,
+          "textChars": 2627,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 5,
+          "textChars": 2965,
+          "questionLabelCandidates": [
+            {
+              "number": 2,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 6,
+          "textChars": 1595,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 7,
+          "textChars": 1056,
+          "questionLabelCandidates": [
+            {
+              "number": 3,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 8,
+          "textChars": 2810,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 9,
+          "textChars": 4523,
+          "questionLabelCandidates": [
+            {
+              "number": 4,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 10,
+          "textChars": 2902,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 11,
+          "textChars": 1661,
+          "questionLabelCandidates": [
+            {
+              "number": 5,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 12,
+          "textChars": 4001,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 13,
+          "textChars": 1719,
+          "questionLabelCandidates": [
+            {
+              "number": 6,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 14,
+          "textChars": 1721,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 15,
+          "textChars": 5746,
+          "questionLabelCandidates": [
+            {
+              "number": 7,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 16,
+          "textChars": 1911,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 17,
+          "textChars": 1742,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 18,
+          "textChars": 2217,
+          "questionLabelCandidates": [
+            {
+              "number": 8,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 19,
+          "textChars": 1802,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 20,
+          "textChars": 3979,
+          "questionLabelCandidates": [],
+          "markCandidates": [
+            2
+          ],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 21,
+          "textChars": 3036,
+          "questionLabelCandidates": [
+            {
+              "number": 9,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 22,
+          "textChars": 1033,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 23,
+          "textChars": 2025,
+          "questionLabelCandidates": [
+            {
+              "number": 10,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 24,
+          "textChars": 126,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        }
+      ],
+      "markSchemePages": [
+        {
+          "pdfPage": 1,
+          "textChars": 166,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 2,
+          "textChars": 1271,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 3,
+          "textChars": 1277,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 4,
+          "textChars": 950,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 5,
+          "textChars": 1453,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 6,
+          "textChars": 1109,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 7,
+          "textChars": 1262,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 8,
+          "textChars": 1147,
+          "questionLabelCandidates": [
+            {
+              "number": 5,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 9,
+          "textChars": 1368,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 10,
+          "textChars": 479,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 11,
+          "textChars": 1286,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 12,
+          "textChars": 1076,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 13,
+          "textChars": 985,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 14,
+          "textChars": 870,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 15,
+          "textChars": 1406,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 16,
+          "textChars": 1186,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 17,
+          "textChars": 342,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 18,
+          "textChars": 234,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        }
+      ],
+      "candidateQuestionLabels": 10,
+      "pageWarnings": {
+        "questionPaper": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "markScheme": []
+      },
+      "identityStatus": "cover-review-required",
+      "schemeMatchStatus": "ledger-pair-candidate",
+      "reviewedPages": [],
+      "extractedTaskCount": 0,
+      "blockers": [
+        "Cover identity, printed dates and component/variant require visual review.",
+        "Question/subpart labels, diagrams, tables and level grids are candidate-only.",
+        "No exact task extraction, scheme interpretation, syllabus mapping or template validation has run.",
+        "Page flags are only heuristics and cannot establish completeness of text, diagrams or tables."
+      ]
+    },
+    {
+      "paperId": "4PH1-2024-June-1-standard",
+      "qualification": "4PH1",
+      "year": 2024,
+      "series": "June",
+      "component": "1",
+      "variant": "standard",
+      "stage": "indexed",
+      "processingStatus": "indexed-only",
+      "fullyProcessed": false,
+      "indexed": true,
+      "qpLegacyLinkId": "79a578cbff6bb178",
+      "msLegacyLinkId": "9e0d0365cbda7361",
+      "downloadErrors": [],
+      "priorDownloadErrors": [
+        {
+          "documentType": "qp",
+          "url": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/QP/June 2024 QP.pdf",
+          "error": "HTTPSConnectionPool(host='pmt.physicsandmathstutor.com', port=443): Max retries exceeded with url: /download/Physics/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/QP/June%202024%20QP.pdf (Caused by NewConnectionError(\"HTTPSConnection(host='pmt.physicsandmathstutor.com', port=443): Failed to establish a new connection: [Errno 61] Connection refused\"))"
+        },
+        {
+          "documentType": "ms",
+          "url": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/MS/June 2024 MS.pdf",
+          "error": "HTTPSConnectionPool(host='pmt.physicsandmathstutor.com', port=443): Max retries exceeded with url: /download/Physics/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/MS/June%202024%20MS.pdf (Caused by NewConnectionError(\"HTTPSConnection(host='pmt.physicsandmathstutor.com', port=443): Failed to establish a new connection: [Errno 61] Connection refused\"))"
+        },
+        {
+          "documentType": "qp",
+          "url": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/QP/June 2024 QP.pdf",
+          "error": "HTTPSConnectionPool(host='pmt.physicsandmathstutor.com', port=443): Max retries exceeded with url: /download/Physics/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/QP/June%202024%20QP.pdf (Caused by NewConnectionError(\"HTTPSConnection(host='pmt.physicsandmathstutor.com', port=443): Failed to establish a new connection: [Errno 61] Connection refused\"))",
+          "attemptDate": "2026-09-09"
+        },
+        {
+          "documentType": "ms",
+          "url": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/MS/June 2024 MS.pdf",
+          "error": "HTTPSConnectionPool(host='pmt.physicsandmathstutor.com', port=443): Max retries exceeded with url: /download/Physics/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/MS/June%202024%20MS.pdf (Caused by NewConnectionError(\"HTTPSConnection(host='pmt.physicsandmathstutor.com', port=443): Failed to establish a new connection: [Errno 61] Connection refused\"))",
+          "attemptDate": "2026-09-09"
+        }
+      ],
+      "questionPaper": {
+        "url": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Physics/2017/Exam-materials/4ph1-1p-que-20240523.pdf",
+        "filename": "4ph1-1p-que-20240523.pdf",
+        "sha256": "3c1e2eea09258259ce0ae86d6adf24da26a1320e297317c60f64c272839b8454",
+        "pageCount": 36,
+        "accessStatus": "obtained",
+        "accessDate": "2026-09-09",
+        "cacheReused": true,
+        "lastVerifiedDate": "2026-09-09",
+        "originalLedgerUrl": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/QP/June 2024 QP.pdf",
+        "alternateSource": {
+          "discoveryUrl": "https://www.savemyexams.com/igcse/physics/edexcel/past-papers/",
+          "discoveryDate": "2026-09-09",
+          "publisher": "Pearson",
+          "linkedBy": "Save My Exams",
+          "identityStatus": "cover-review-required",
+          "qp": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Physics/2017/Exam-materials/4ph1-1p-que-20240523.pdf",
+          "ms": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Physics/2017/Exam-materials/4ph1-1p-rms-20240822.pdf"
+        }
+      },
+      "markScheme": {
+        "url": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Physics/2017/Exam-materials/4ph1-1p-rms-20240822.pdf",
+        "filename": "4ph1-1p-rms-20240822.pdf",
+        "sha256": "9ca559f719b9603c62ebb2a293c5174c7082c1cf6b13aa412fc5d59fd09c181f",
+        "pageCount": 17,
+        "accessStatus": "obtained",
+        "accessDate": "2026-09-09",
+        "cacheReused": true,
+        "lastVerifiedDate": "2026-09-09",
+        "originalLedgerUrl": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/MS/June 2024 MS.pdf",
+        "alternateSource": {
+          "discoveryUrl": "https://www.savemyexams.com/igcse/physics/edexcel/past-papers/",
+          "discoveryDate": "2026-09-09",
+          "publisher": "Pearson",
+          "linkedBy": "Save My Exams",
+          "identityStatus": "cover-review-required",
+          "qp": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Physics/2017/Exam-materials/4ph1-1p-que-20240523.pdf",
+          "ms": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Physics/2017/Exam-materials/4ph1-1p-rms-20240822.pdf"
+        }
+      },
+      "questionPaperPages": [
+        {
+          "pdfPage": 1,
+          "textChars": 1193,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 2,
+          "textChars": 778,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 3,
+          "textChars": 1970,
+          "questionLabelCandidates": [
+            {
+              "number": 1,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 4,
+          "textChars": 784,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 5,
+          "textChars": 677,
+          "questionLabelCandidates": [
+            {
+              "number": 2,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 6,
+          "textChars": 3445,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 7,
+          "textChars": 2404,
+          "questionLabelCandidates": [
+            {
+              "number": 3,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 8,
+          "textChars": 1500,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 9,
+          "textChars": 2607,
+          "questionLabelCandidates": [
+            {
+              "number": 4,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 10,
+          "textChars": 214,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 11,
+          "textChars": 416,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 12,
+          "textChars": 800,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 13,
+          "textChars": 2392,
+          "questionLabelCandidates": [
+            {
+              "number": 5,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 14,
+          "textChars": 1794,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 15,
+          "textChars": 2927,
+          "questionLabelCandidates": [
+            {
+              "number": 6,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 16,
+          "textChars": 1950,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 17,
+          "textChars": 1385,
+          "questionLabelCandidates": [
+            {
+              "number": 7,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 18,
+          "textChars": 343,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 19,
+          "textChars": 3801,
+          "questionLabelCandidates": [
+            {
+              "number": 8,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 20,
+          "textChars": 651,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 21,
+          "textChars": 3374,
+          "questionLabelCandidates": [
+            {
+              "number": 9,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 22,
+          "textChars": 989,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 23,
+          "textChars": 3510,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 24,
+          "textChars": 640,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 25,
+          "textChars": 2155,
+          "questionLabelCandidates": [
+            {
+              "number": 10,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 26,
+          "textChars": 691,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 27,
+          "textChars": 2463,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 28,
+          "textChars": 3132,
+          "questionLabelCandidates": [
+            {
+              "number": 11,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 29,
+          "textChars": 230,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 30,
+          "textChars": 615,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 31,
+          "textChars": 2704,
+          "questionLabelCandidates": [
+            {
+              "number": 12,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 32,
+          "textChars": 126,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 33,
+          "textChars": 325,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 34,
+          "textChars": 1018,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 35,
+          "textChars": 867,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 36,
+          "textChars": 844,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        }
+      ],
+      "markSchemePages": [
+        {
+          "pdfPage": 1,
+          "textChars": 119,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 2,
+          "textChars": 1262,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 3,
+          "textChars": 1250,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 4,
+          "textChars": 1003,
+          "questionLabelCandidates": [
+            {
+              "number": 1,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 5,
+          "textChars": 1281,
+          "questionLabelCandidates": [
+            {
+              "number": 2,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 6,
+          "textChars": 1425,
+          "questionLabelCandidates": [
+            {
+              "number": 3,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 7,
+          "textChars": 936,
+          "questionLabelCandidates": [
+            {
+              "number": 4,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 8,
+          "textChars": 1557,
+          "questionLabelCandidates": [
+            {
+              "number": 5,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 9,
+          "textChars": 1310,
+          "questionLabelCandidates": [
+            {
+              "number": 6,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 10,
+          "textChars": 1482,
+          "questionLabelCandidates": [
+            {
+              "number": 7,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 11,
+          "textChars": 1069,
+          "questionLabelCandidates": [
+            {
+              "number": 8,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 12,
+          "textChars": 830,
+          "questionLabelCandidates": [
+            {
+              "number": 9,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 13,
+          "textChars": 1292,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 14,
+          "textChars": 1161,
+          "questionLabelCandidates": [
+            {
+              "number": 10,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 15,
+          "textChars": 1554,
+          "questionLabelCandidates": [
+            {
+              "number": 11,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 16,
+          "textChars": 1081,
+          "questionLabelCandidates": [
+            {
+              "number": 12,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 17,
+          "textChars": 252,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        }
+      ],
+      "candidateQuestionLabels": 12,
+      "pageWarnings": {
+        "questionPaper": [
+          3,
+          6,
+          7,
+          8,
+          9,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          30,
+          31
+        ],
+        "markScheme": []
+      },
+      "identityStatus": "cover-review-required",
+      "schemeMatchStatus": "ledger-pair-candidate",
+      "reviewedPages": [],
+      "extractedTaskCount": 0,
+      "blockers": [
+        "Cover identity, printed dates and component/variant require visual review.",
+        "Question/subpart labels, diagrams, tables and level grids are candidate-only.",
+        "No exact task extraction, scheme interpretation, syllabus mapping or template validation has run.",
+        "Page flags are only heuristics and cannot establish completeness of text, diagrams or tables."
+      ]
+    },
+    {
+      "paperId": "4EB1-2024-May-01-standard",
+      "qualification": "4EB1",
+      "year": 2024,
+      "series": "May",
+      "component": "01",
+      "variant": "standard",
+      "stage": "indexed",
+      "processingStatus": "indexed-only",
+      "fullyProcessed": false,
+      "indexed": true,
+      "qpLegacyLinkId": "455221364139fa57",
+      "msLegacyLinkId": "86ff319223f528f4",
+      "downloadErrors": [],
+      "priorDownloadErrors": [],
+      "questionPaper": {
+        "url": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/English-Language-B/2016/Exam-materials/4eb1-01-que-20240524.pdf",
+        "filename": "4eb1-01-que-20240524.pdf",
+        "sha256": "e6942bac9d1b08d61a60e500410dff2be7300f6ea27dd55305189126ff637cce",
+        "pageCount": 36,
+        "accessStatus": "obtained",
+        "accessDate": "2026-09-09",
+        "cacheReused": true,
+        "lastVerifiedDate": "2026-09-09",
+        "originalLedgerUrl": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/English-Language-B/2016/Exam-materials/4eb1-01-que-20240524.pdf"
+      },
+      "markScheme": {
+        "url": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/English-Language-B/2016/Exam-materials/4eb1-01-rms-20240822.pdf",
+        "filename": "4eb1-01-rms-20240822.pdf",
+        "sha256": "583690c8f13acb4af1d75e155e4418a24178d481fe1159f26ae420900d018443",
+        "pageCount": 21,
+        "accessStatus": "obtained",
+        "accessDate": "2026-09-09",
+        "cacheReused": true,
+        "lastVerifiedDate": "2026-09-09",
+        "originalLedgerUrl": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/English-Language-B/2016/Exam-materials/4eb1-01-rms-20240822.pdf"
+      },
+      "questionPaperPages": [
+        {
+          "pdfPage": 1,
+          "textChars": 1193,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 2,
+          "textChars": 1845,
+          "questionLabelCandidates": [
+            {
+              "number": 1,
+              "subpart": null
+            },
+            {
+              "number": 2,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 3,
+          "textChars": 6513,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 4,
+          "textChars": 7403,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 5,
+          "textChars": 7176,
+          "questionLabelCandidates": [
+            {
+              "number": 3,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 6,
+          "textChars": 2187,
+          "questionLabelCandidates": [
+            {
+              "number": 4,
+              "subpart": null
+            },
+            {
+              "number": 5,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 7,
+          "textChars": 6754,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 8,
+          "textChars": 7403,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 9,
+          "textChars": 7176,
+          "questionLabelCandidates": [
+            {
+              "number": 6,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 10,
+          "textChars": 6537,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 11,
+          "textChars": 7421,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 12,
+          "textChars": 7405,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 13,
+          "textChars": 7421,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 14,
+          "textChars": 6916,
+          "questionLabelCandidates": [
+            {
+              "number": 7,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 15,
+          "textChars": 5210,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 16,
+          "textChars": 7405,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 17,
+          "textChars": 7421,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 18,
+          "textChars": 7405,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 19,
+          "textChars": 7421,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 20,
+          "textChars": 6916,
+          "questionLabelCandidates": [
+            {
+              "number": 8,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 21,
+          "textChars": 3513,
+          "questionLabelCandidates": [
+            {
+              "number": 9,
+              "subpart": null
+            },
+            {
+              "number": 10,
+              "subpart": null
+            },
+            {
+              "number": 11,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 22,
+          "textChars": 7405,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 23,
+          "textChars": 7421,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 24,
+          "textChars": 7405,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 25,
+          "textChars": 7421,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 26,
+          "textChars": 7405,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 27,
+          "textChars": 7421,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 28,
+          "textChars": 7101,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 29,
+          "textChars": 279,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 30,
+          "textChars": 1679,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 31,
+          "textChars": 3388,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 32,
+          "textChars": 731,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 33,
+          "textChars": 1485,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 34,
+          "textChars": 3504,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 35,
+          "textChars": 30,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": true
+        },
+        {
+          "pdfPage": 36,
+          "textChars": 388,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        }
+      ],
+      "markSchemePages": [
+        {
+          "pdfPage": 1,
+          "textChars": 134,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 2,
+          "textChars": 1299,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 3,
+          "textChars": 2463,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 4,
+          "textChars": 1508,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 5,
+          "textChars": 853,
+          "questionLabelCandidates": [],
+          "markCandidates": [
+            1
+          ],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 6,
+          "textChars": 2178,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 7,
+          "textChars": 1740,
+          "questionLabelCandidates": [
+            {
+              "number": 3,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 8,
+          "textChars": 1256,
+          "questionLabelCandidates": [],
+          "markCandidates": [
+            2
+          ],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 9,
+          "textChars": 2082,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 10,
+          "textChars": 2107,
+          "questionLabelCandidates": [
+            {
+              "number": 6,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 11,
+          "textChars": 1970,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 12,
+          "textChars": 708,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 13,
+          "textChars": 1596,
+          "questionLabelCandidates": [
+            {
+              "number": 7,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 14,
+          "textChars": 1655,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 15,
+          "textChars": 1312,
+          "questionLabelCandidates": [
+            {
+              "number": 8,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 16,
+          "textChars": 1170,
+          "questionLabelCandidates": [
+            {
+              "number": 8,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 17,
+          "textChars": 1596,
+          "questionLabelCandidates": [
+            {
+              "number": 8,
+              "subpart": null
+            }
+          ],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 18,
+          "textChars": 1742,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 19,
+          "textChars": 1183,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 20,
+          "textChars": 1918,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        },
+        {
+          "pdfPage": 21,
+          "textChars": 280,
+          "questionLabelCandidates": [],
+          "markCandidates": [],
+          "extractionWarning": false
+        }
+      ],
+      "candidateQuestionLabels": 11,
+      "pageWarnings": {
+        "questionPaper": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          35
+        ],
+        "markScheme": []
+      },
+      "identityStatus": "cover-review-required",
+      "schemeMatchStatus": "ledger-pair-candidate",
+      "reviewedPages": [],
+      "extractedTaskCount": 0,
+      "blockers": [
+        "Cover identity, printed dates and component/variant require visual review.",
+        "Question/subpart labels, diagrams, tables and level grids are candidate-only.",
+        "No exact task extraction, scheme interpretation, syllabus mapping or template validation has run.",
+        "Page flags are only heuristics and cannot establish completeness of text, diagrams or tables."
+      ]
+    }
+  ],
+  "counts": {
+    "pairsAttempted": 5,
+    "pairsObtained": 5,
+    "pairsIndexed": 5,
+    "pairsBlocked": 0,
+    "pairsFullyProcessed": 0,
+    "additionalLinksDiscovered": 6,
+    "additionalPairsDiscovered": 0,
+    "paperDocumentsObtained": 5,
+    "markSchemeDocumentsObtained": 5
+  },
+  "nextCursor": "Retry only records with indexed=false; once all five are indexed, stop for Astra review. Download-error history does not mean a recovered pair remains blocked.",
+  "blockers": [
+    "This batch is mechanical indexing only; Astra review is required before any record can become processed.",
+    "4MB1 remains a source-discovery gap."
+  ]
+}

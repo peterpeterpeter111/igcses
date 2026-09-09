@@ -1,0 +1,80 @@
+{
+  "subjectId": "physics",
+  "chapterId": "forces-and-motion",
+  "sourceId": "4PH1-spec",
+  "sourcePages": [
+    17
+  ],
+  "prerequisites": [
+    "Divide a quantity by a time interval.",
+    "Convert minutes to seconds and kilometres to metres."
+  ],
+  "goals": [
+    "Calculate average speed using a whole journey.",
+    "Calculate acceleration from a change in velocity.",
+    "State units and distinguish speed from velocity."
+  ],
+  "sections": [
+    {
+      "id": "average-speed",
+      "title": "Average speed",
+      "terms": [
+        "average speed",
+        "distance",
+        "time",
+        "m/s",
+        "distance divided by time"
+      ],
+      "points": [
+        "1.4"
+      ],
+      "paragraphs": [
+        "Average speed tells you the distance travelled per unit time over a chosen interval. Divide the total distance travelled by the total time taken: average speed = distance ÷ time. Include stops if they occur within the interval described in the question.",
+        "Distance is the length of the route travelled; it does not become zero just because an object returns to its starting point. Speed is a scalar quantity. Velocity includes direction, so an object can change velocity by changing direction even when its speed stays constant.",
+        "Choose compatible units before substituting. Metres divided by seconds gives metres per second (m/s). To rearrange, multiply speed by time to find distance, or divide distance by speed to find time. A result without its unit leaves the physical quantity incomplete."
+      ],
+      "example": {
+        "question": "A cyclist travels 540 m, stops briefly, then travels another 360 m. The whole journey, including the stop, takes 150 s. Find the average speed.",
+        "steps": [
+          "Total distance = 540 + 360 = 900 m.",
+          "Total time for the specified journey = 150 s.",
+          "Average speed = 900 ÷ 150 = 6.0 m/s."
+        ],
+        "explanation": "The calculation uses the totals for the same interval. Averaging the speeds of two unequal-duration stages would not generally give the journey’s average speed."
+      },
+      "practice": {
+        "question": "A runner covers 1.2 km in 5 minutes. Calculate the average speed in m/s.",
+        "answer": "1.2 km = 1200 m and 5 min = 300 s. Average speed = 1200 ÷ 300 = 4.0 m/s.",
+        "explanation": "Converting both quantities first prevents mixing kilometres and seconds."
+      }
+    },
+    {
+      "id": "acceleration",
+      "title": "Acceleration is a rate of change",
+      "terms": [
+        "acceleration",
+        "velocity",
+        "m/s²",
+        "change in velocity"
+      ],
+      "points": [
+        "1.6"
+      ],
+      "paragraphs": [
+        "Acceleration is change in velocity divided by time taken: a = (v − u) ÷ t, where u is initial velocity and v is final velocity. Its SI unit is m/s². An acceleration of 3 m/s² means velocity changes by 3 m/s each second when acceleration is constant.",
+        "Choose a positive direction and keep it throughout the calculation. A negative acceleration means acceleration in the negative direction; it does not always mean the object is slowing down. For example, an object moving in the negative direction speeds up if its acceleration is also negative."
+      ],
+      "example": {
+        "question": "A trolley’s velocity changes from 2 m/s to 14 m/s in the same direction over 4 s. Calculate its average acceleration.",
+        "steps": [
+          "Change in velocity = 14 − 2 = 12 m/s.",
+          "Average acceleration = 12 ÷ 4 = 3 m/s²."
+        ],
+        "explanation": "Use the change in velocity, not just the final velocity. The direction is unchanged, so both velocities use the same sign."
+      }
+    }
+  ],
+  "status": "source-checked",
+  "complete": false,
+  "humanReviewed": false
+}

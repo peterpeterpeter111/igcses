@@ -1,0 +1,54 @@
+{
+  "scope": "research design only; no API calls, bulk processing or application tests",
+  "checks": 11,
+  "results": [
+    {
+      "name": "JSON schema and provisional family are valid",
+      "passed": true
+    },
+    {
+      "name": "Untested family cannot be promoted to active",
+      "passed": true
+    },
+    {
+      "name": "Custom maximum of three is rejected; source marks are preserved separately",
+      "passed": true
+    },
+    {
+      "name": "Public field contract cannot include a rubric",
+      "passed": true
+    },
+    {
+      "name": "Every pilot task has a unique number, matching AO marks and valid evidence pages",
+      "passed": true
+    },
+    {
+      "name": "All three permitted candidate paths total 100, while all alternatives total 160",
+      "passed": true
+    },
+    {
+      "name": "Partial extraction cannot be counted as a processed paper",
+      "passed": true
+    },
+    {
+      "name": "Q5, template and exact scheme references agree",
+      "passed": true
+    },
+    {
+      "name": "Raw counts remain discoveries and are not silently replaced by pilot counts",
+      "passed": true
+    },
+    {
+      "name": "CSV contracts contain unique headers and cover each normalized table",
+      "passed": true
+    },
+    {
+      "name": "Custom blueprint arithmetic: 22 tasks, 80 marks, only allowed maxima",
+      "passed": true
+    }
+  ],
+  "pilotDocumentHashesVerified": 3,
+  "missingLocalEvidence": 0,
+  "activeTemplates": 0,
+  "fullyProcessedPapers": 0
+}

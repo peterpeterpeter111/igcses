@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "batchId": "2026-09-08-cross-subject-lower-01",
+  "status": "blocked-before-download",
+  "model": "Luna reserve / lower model",
+  "createdAt": "2026-09-08",
+  "scope": "Five recent paper/mark-scheme pairs, one each from available 4HB1, 4BI1, 4CH1, 4PH1 and 4EB1 inventories",
+  "selectionRule": "Most recent identifiable standard Paper 1 pair in each selected subject; 4EB1 November 2024 pilot excluded; 4MB1 remains a discovery gap",
+  "pairs": [
+    {"paperId": "4HB1-2024-May-01-standard", "qualification": "4HB1", "year": 2024, "series": "May", "component": "01", "variant": "standard", "qpLegacyLinkId": "086280071a38d1f2", "msLegacyLinkId": "0e2d95328bf9ba43", "stage": "planned"},
+    {"paperId": "4BI1-2024-June-1-standard", "qualification": "4BI1", "year": 2024, "series": "June", "component": "1", "variant": "standard", "qpLegacyLinkId": "3779bd1a4426e2a2", "msLegacyLinkId": "8d8b3145b28f2227", "stage": "planned"},
+    {"paperId": "4CH1-2024-June-1-standard", "qualification": "4CH1", "year": 2024, "series": "June", "component": "1", "variant": "standard", "qpLegacyLinkId": "fac78a14a592366d", "msLegacyLinkId": "acf062368ae2a175", "stage": "planned"},
+    {"paperId": "4PH1-2024-June-1-standard", "qualification": "4PH1", "year": 2024, "series": "June", "component": "1", "variant": "standard", "qpLegacyLinkId": "79a578cbff6bb178", "msLegacyLinkId": "9e0d0365cbda7361", "stage": "planned"},
+    {"paperId": "4EB1-2024-May-01-standard", "qualification": "4EB1", "year": 2024, "series": "May", "component": "01", "variant": "standard", "qpLegacyLinkId": "455221364139fa57", "msLegacyLinkId": "86ff319223f528f4", "stage": "planned"}
+  ],
+  "counts": {"pairsPlanned": 5, "paperDocumentsObtained": 0, "markSchemeDocumentsObtained": 0, "pairsIndexed": 0, "pairsFullyProcessed": 0, "additionalLinksDiscovered": 0},
+  "blocker": "The sandbox approval layer rejected the download command because the Codex usage limit was exhausted. Luna reserve is available for model inference, but the privileged download execution path remains blocked until reset.",
+  "nextAction": "Run scripts/index-cross-subject-batch.py after the limit resets; do not mark any pair processed before Astra review."
+}

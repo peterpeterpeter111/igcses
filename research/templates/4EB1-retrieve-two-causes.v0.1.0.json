@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "4EB1.retrieve-two-causes",
+  "version": "0.1.0",
+  "status": "provisional",
+  "subject": "4EB1",
+  "origin": "exam-derived",
+  "syllabusRefs": [{"pointId": "4EB1.issue4.AO1.retrieve-explicit-information", "documentId": "4EB1-spec", "issue": "4", "pdfPages": [10, 18], "mappingStatus": "verified"}],
+  "sourceTasks": [{"taskId": "4EB1-2024-November-01.Q5", "paperId": "4EB1-2024-November-01", "questionPaper": {"documentId": "pilot-4EB1-2024-November-01-qp", "pdfPages": [6, 33]}, "markScheme": {"documentId": "pilot-4EB1-2024-November-01-ms", "pdfPages": [8]}, "originalMarks": 2}],
+  "answerGuideId": "4EB1.retrieve-two-causes",
+  "commandWord": "Identify",
+  "skill": "Retrieve two distinct explicitly supported causes while preserving their positive or negative meaning.",
+  "assessmentObjectives": ["AO1"],
+  "originalMarks": [2],
+  "customQuiz": {"candidateMarks": [2], "validatedMarks": [], "adaptationStatus": "pending", "rationale": "The two-point structure is suitable in principle. Original generated passages, acceptable paraphrases and polarity checks still need validation before quiz use."},
+  "stimulus": {
+    "types": ["passage"],
+    "originality": "original-generated-content",
+    "requirements": ["One original 70–120-word passage with one clearly identified target paragraph.", "At least two distinct causes explicitly related to the named outcome; one or two remedies provide contrast.", "All information needed is in the supplied passage; no outside subject knowledge is needed."],
+    "evidenceContract": ["Save exact character spans for every acceptable cause in the final frozen passage.", "Distinguish cause entities from actions that remove those causes.", "Each proposed answer must remain supported after any wording or context transformation."]
+  },
+  "parameters": [
+    {"id": "context", "type": "original-text", "domain": {"minWords": 70, "maxWords": 120, "semanticRule": "Coherent, age-appropriate original account of an event with stated causes and remedies."}, "constraints": ["Do not reproduce or paraphrase the source passage sentence by sentence.", "No unstated causal inference required."]},
+    {"id": "causeCount", "type": "integer", "domain": {"minimum": 2, "maximum": 4, "step": 1}, "constraints": ["All causes are distinct semantic groups with separate evidence spans."]},
+    {"id": "remedyCount", "type": "integer", "domain": {"minimum": 1, "maximum": 2, "step": 1}, "constraints": ["A remedy must not itself be described as causing the target outcome."]},
+    {"id": "evidenceOrder", "type": "enum", "domain": {"values": ["causes-before-remedies", "interleaved"]}, "constraints": ["Preserve causal meaning and unambiguous antecedents."]}
+  ],
+  "constraints": ["Question requests exactly two causes from the named paragraph.", "Every valid cause is eligible, but maximum credit is two.", "No answer appears in the public metadata or pre-completion response.", "Reject unsupported or contradictory causal relationships rather than repairing the frozen question after an answer."],
+  "relationships": ["cause_i contributes_to target_outcome", "remedy_i reduces cause_i or target_outcome", "cause equivalence groups determine distinct credit; synonyms do not create additional marks"],
+  "difficultyControls": ["Change number of competing details and distance between evidence spans within the validated bounds.", "Increase paraphrase distance only after evidence-equivalence tests; mark maximum remains two."],
+  "transformations": [
+    {"id": "new-context-and-causes", "status": "candidate", "conditions": "Generate new causal content and evidence, then independently check every accepted answer."},
+    {"id": "reorder-evidence", "status": "candidate", "conditions": "Resolve all pronouns and recompute evidence spans."},
+    {"id": "ask-for-remedies", "status": "forbidden", "conditions": "Requires a separate family/rubric, because the target relation changes."}
+  ],
+  "solutionProcedure": ["Read the requested outcome and target paragraph.", "Locate explicit causes and preserve their polarity.", "Group equivalent mentions into distinct causes; select any two.", "Check each selected cause against its evidence span and reject remedies presented as causes."],
+  "marking": {
+    "method": "discrete-points",
+    "maximum": 2,
+    "criteria": [{"id": "distinct-cause-1", "credit": 1, "rule": "One supported cause from the target paragraph."}, {"id": "distinct-cause-2", "credit": 1, "rule": "A second supported cause from a different semantic group."}],
+    "acceptableAlternatives": ["Any explicitly supported cause, expressed verbatim or with equivalent meaning."],
+    "dependencies": ["Do not double-credit repeated or synonymous references to the same cause."],
+    "contradictionRules": ["For this original adaptation, a remedy described as causing the outcome receives no credit for that claim; independently correct causes remain eligible. Ambiguous combined claims require review."],
+    "units": null,
+    "tolerance": null,
+    "levelRubric": []
+  },
+  "commonErrors": [{"description": "Confusing a harmful cause with the action that removes it.", "origin": "examiner-report", "sourceRefs": [{"documentId": "pilot-4EB1-2024-November-01-er", "pdfPages": [6]}]}, {"description": "Repeating a single cause in different words.", "origin": "editorial", "sourceRefs": []}],
+  "validation": {
+    "ruleIds": ["stimulus-word-range", "cause-count-range", "evidence-span-exists", "cause-remedy-polarity", "semantic-distinctness", "all-valid-alternatives-enumerated", "criterion-credit-total", "public-private-separation", "near-duplicate-rejection"],
+    "testPlan": ["At least 20 seeds before activation, with every parameter boundary and both evidence orders represented.", "Positive answers, equivalent paraphrases, duplicate answers, remedies, mixed contradictions and unsupported answers.", "Reject passages with fewer than two valid causes, ambiguous references, false relations or missing evidence.", "Same stored instance remains unchanged after retries, refresh and model-version changes; seed alone is not an exact reproduction guarantee for model-generated text."],
+    "testedSeeds": [],
+    "boundaryCoverage": "not-run",
+    "status": "not-run",
+    "runRefs": []
+  },
+  "runtime": {"implemented": false, "generatorId": null, "seedPolicy": "Record a server-selected seed, template version, sampled parameters, model settings and the complete frozen generated package. Store a content hash and never regenerate a served instance.", "maxRetries": 3, "publicFields": ["instanceId", "position", "prompt", "stimulus", "maximumMarks", "progress"], "privateFields": ["templateId", "templateVersion", "seed", "sourceTasks", "solution", "rubric", "evidenceSpans", "validationResults"], "freezeBeforeAnswer": true, "releaseSchemeAfter": "session-completed"},
+  "review": {"pedagogyStatus": "pending", "reviewer": "Codex pilot design", "reviewerType": "agent", "humanReviewed": false, "blockers": ["Generator and rule implementations do not exist.", "No multi-seed or independent grading calibration has run.", "Student-facing answer guide is not written."]}
+}

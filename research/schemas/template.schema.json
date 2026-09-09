@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:igcses:template:1",
+  "title": "IGCSE generative template contract v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "version", "status", "subject", "origin", "syllabusRefs", "sourceTasks", "answerGuideId", "commandWord", "skill", "assessmentObjectives", "originalMarks", "customQuiz", "stimulus", "parameters", "constraints", "relationships", "difficultyControls", "transformations", "solutionProcedure", "marking", "commonErrors", "validation", "runtime", "review"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "id": {"type": "string", "minLength": 3},
+    "version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "status": {"enum": ["provisional", "validated", "active", "retired"]},
+    "subject": {"enum": ["4HB1", "4BI1", "4CH1", "4PH1", "4EB1", "4MB1"]},
+    "origin": {"enum": ["exam-derived", "syllabus-derived"]},
+    "syllabusRefs": {"type": "array", "minItems": 1, "items": {"$ref": "#/definitions/syllabusRef"}},
+    "sourceTasks": {"type": "array", "items": {"$ref": "#/definitions/sourceTask"}},
+    "answerGuideId": {"type": "string", "minLength": 1},
+    "commandWord": {"type": "string", "minLength": 1},
+    "skill": {"type": "string", "minLength": 1},
+    "assessmentObjectives": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "originalMarks": {"type": "array", "uniqueItems": true, "items": {"type": "integer", "minimum": 1}},
+    "customQuiz": {
+      "type": "object", "additionalProperties": false,
+      "required": ["candidateMarks", "validatedMarks", "adaptationStatus", "rationale"],
+      "properties": {
+        "candidateMarks": {"type": "array", "uniqueItems": true, "items": {"enum": [2, 4, 6]}},
+        "validatedMarks": {"type": "array", "uniqueItems": true, "items": {"enum": [2, 4, 6]}},
+        "adaptationStatus": {"enum": ["pending", "validated", "not-applicable"]},
+        "rationale": {"type": "string", "minLength": 1}
+      }
+    },
+    "stimulus": {
+      "type": "object", "additionalProperties": false,
+      "required": ["types", "originality", "requirements", "evidenceContract"],
+      "properties": {
+        "types": {"type": "array", "minItems": 1, "items": {"enum": ["passage", "diagram", "table", "graph", "experiment", "equation", "scenario", "none"]}},
+        "originality": {"const": "original-generated-content"},
+        "requirements": {"$ref": "#/definitions/stringList"},
+        "evidenceContract": {"$ref": "#/definitions/stringList"}
+      }
+    },
+    "parameters": {"type": "array", "minItems": 1, "items": {"$ref": "#/definitions/parameter"}},
+    "constraints": {"$ref": "#/definitions/stringList"},
+    "relationships": {"$ref": "#/definitions/stringList"},
+    "difficultyControls": {"$ref": "#/definitions/stringList"},
+    "transformations": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["id", "status", "conditions"], "properties": {"id": {"type": "string"}, "status": {"enum": ["candidate", "validated", "forbidden"]}, "conditions": {"type": "string"}}}},
+    "solutionProcedure": {"$ref": "#/definitions/stringList"},
+    "marking": {
+      "type": "object", "additionalProperties": false,
+      "required": ["method", "maximum", "criteria", "acceptableAlternatives", "dependencies", "contradictionRules", "units", "tolerance", "levelRubric"],
+      "properties": {
+        "method": {"enum": ["discrete-points", "linked-reasoning", "method-marks", "levels"]},
+        "maximum": {"type": "integer", "minimum": 1},
+        "criteria": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["id", "credit", "rule"], "properties": {"id": {"type": "string"}, "credit": {"type": "integer", "minimum": 1}, "rule": {"type": "string"}}}},
+        "acceptableAlternatives": {"type": "array", "items": {"type": "string"}},
+        "dependencies": {"type": "array", "items": {"type": "string"}},
+        "contradictionRules": {"type": "array", "items": {"type": "string"}},
+        "units": {"type": ["string", "null"]},
+        "tolerance": {"type": ["object", "null"], "additionalProperties": false, "required": ["absolute", "relative", "roundingRule"], "properties": {"absolute": {"type": "number", "minimum": 0}, "relative": {"type": "number", "minimum": 0}, "roundingRule": {"type": "string"}}},
+        "levelRubric": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["level", "minMarks", "maxMarks", "descriptor"], "properties": {"level": {"type": "integer", "minimum": 0}, "minMarks": {"type": "integer", "minimum": 0}, "maxMarks": {"type": "integer", "minimum": 0}, "descriptor": {"type": "string"}}}}
+      }
+    },
+    "commonErrors": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["description", "origin", "sourceRefs"], "properties": {"description": {"type": "string"}, "origin": {"enum": ["examiner-report", "scheme", "editorial"]}, "sourceRefs": {"type": "array", "items": {"$ref": "#/definitions/pageRef"}}}}},
+    "validation": {
+      "type": "object", "additionalProperties": false,
+      "required": ["ruleIds", "testPlan", "testedSeeds", "boundaryCoverage", "status", "runRefs"],
+      "properties": {
+        "ruleIds": {"$ref": "#/definitions/stringList"},
+        "testPlan": {"$ref": "#/definitions/stringList"},
+        "testedSeeds": {"type": "array", "uniqueItems": true, "items": {"type": "integer", "minimum": 0}},
+        "boundaryCoverage": {"enum": ["not-run", "partial", "complete"]},
+        "status": {"enum": ["not-run", "failed", "passed"]},
+        "runRefs": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "runtime": {
+      "type": "object", "additionalProperties": false,
+      "required": ["implemented", "generatorId", "seedPolicy", "maxRetries", "publicFields", "privateFields", "freezeBeforeAnswer", "releaseSchemeAfter"],
+      "properties": {
+        "implemented": {"type": "boolean"},
+        "generatorId": {"type": ["string", "null"]},
+        "seedPolicy": {"type": "string", "minLength": 1},
+        "maxRetries": {"type": "integer", "minimum": 0, "maximum": 5},
+        "publicFields": {"type": "array", "uniqueItems": true, "items": {"enum": ["instanceId", "position", "prompt", "stimulus", "maximumMarks", "progress"]}},
+        "privateFields": {"$ref": "#/definitions/stringList"},
+        "freezeBeforeAnswer": {"const": true},
+        "releaseSchemeAfter": {"const": "session-completed"}
+      }
+    },
+    "review": {"type": "object", "additionalProperties": false, "required": ["pedagogyStatus", "reviewer", "reviewerType", "humanReviewed", "blockers"], "properties": {"pedagogyStatus": {"enum": ["pending", "agent-reviewed", "human-reviewed", "rejected"]}, "reviewer": {"type": ["string", "null"]}, "reviewerType": {"enum": ["agent", "human", "none"]}, "humanReviewed": {"type": "boolean"}, "blockers": {"type": "array", "items": {"type": "string"}}}}
+  },
+  "allOf": [
+    {"if": {"properties": {"origin": {"const": "exam-derived"}}}, "then": {"properties": {"sourceTasks": {"minItems": 1}, "originalMarks": {"minItems": 1}}}},
+    {"if": {"properties": {"status": {"enum": ["validated", "active"]}}}, "then": {"properties": {"validation": {"properties": {"status": {"const": "passed"}, "boundaryCoverage": {"const": "complete"}, "testedSeeds": {"minItems": 20}, "runRefs": {"minItems": 1}}}, "review": {"properties": {"pedagogyStatus": {"enum": ["agent-reviewed", "human-reviewed"]}, "blockers": {"maxItems": 0}}}}}},
+    {"if": {"properties": {"status": {"const": "active"}}}, "then": {"properties": {"runtime": {"properties": {"implemented": {"const": true}, "generatorId": {"type": "string", "minLength": 1}}}}}},
+    {"if": {"properties": {"marking": {"properties": {"method": {"const": "levels"}}}}}, "then": {"properties": {"marking": {"properties": {"levelRubric": {"minItems": 2}}}}}, "else": {"properties": {"marking": {"properties": {"criteria": {"minItems": 1}}}}}}
+  ],
+  "definitions": {
+    "stringList": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+    "pageRef": {"type": "object", "additionalProperties": false, "required": ["documentId", "pdfPages"], "properties": {"documentId": {"type": "string"}, "pdfPages": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "integer", "minimum": 1}}}},
+    "syllabusRef": {"type": "object", "additionalProperties": false, "required": ["pointId", "documentId", "issue", "pdfPages", "mappingStatus"], "properties": {"pointId": {"type": "string"}, "documentId": {"type": "string"}, "issue": {"type": "string"}, "pdfPages": {"type": "array", "minItems": 1, "items": {"type": "integer", "minimum": 1}}, "mappingStatus": {"enum": ["provisional", "verified", "historical-only"]}}},
+    "sourceTask": {"type": "object", "additionalProperties": false, "required": ["taskId", "paperId", "questionPaper", "markScheme", "originalMarks"], "properties": {"taskId": {"type": "string"}, "paperId": {"type": "string"}, "questionPaper": {"$ref": "#/definitions/pageRef"}, "markScheme": {"$ref": "#/definitions/pageRef"}, "originalMarks": {"type": "integer", "minimum": 1}}},
+    "parameter": {"type": "object", "additionalProperties": false, "required": ["id", "type", "domain", "constraints"], "properties": {"id": {"type": "string"}, "type": {"enum": ["integer", "number", "enum", "original-text", "representation", "boolean"]}, "domain": {"type": "object", "additionalProperties": false, "properties": {"minimum": {"type": "number"}, "maximum": {"type": "number"}, "step": {"type": "number", "exclusiveMinimum": 0}, "values": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}}, "minWords": {"type": "integer", "minimum": 0}, "maxWords": {"type": "integer", "minimum": 1}, "semanticRule": {"type": "string"}}}, "constraints": {"$ref": "#/definitions/stringList"}}, "allOf": [{"if": {"properties": {"type": {"enum": ["integer", "number"]}}}, "then": {"properties": {"domain": {"required": ["minimum", "maximum", "step"]}}}}, {"if": {"properties": {"type": {"const": "enum"}}}, "then": {"properties": {"domain": {"required": ["values"]}}}}, {"if": {"properties": {"type": {"const": "original-text"}}}, "then": {"properties": {"domain": {"required": ["minWords", "maxWords", "semanticRule"]}}}}]}
+  }
+}

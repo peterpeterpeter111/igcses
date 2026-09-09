@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-08",
+  "legacyLedger": "research/paper-ledger.json",
+  "legacyRecordsRetained": 390,
+  "rawLabelCounts": {"question-paper": 188, "mark-scheme": 186, "examiner-report": 16},
+  "classificationFlags": [
+    {"legacyLinkId": "9ea8bb7db60ce8aa", "observedLabel": "Extract", "suggestedType": "insert", "status": "needs-document-verification", "countAsDistinctQuestionPaper": false},
+    {"legacyLinkId": "1693dd7a1fd34f1e", "observedLabel": "Extract", "suggestedType": "insert", "status": "needs-document-verification", "countAsDistinctQuestionPaper": false}
+  ],
+  "canonicalPilotRecord": "research/pilot/4EB1-2024-November-01.json",
+  "obtainedLegacyLinkIds": ["a5cab3360d7c39ea", "b019ccdb602c3e6d", "9751df06624564d3"],
+  "remainingCanonicalInventoryStatus": "unreconciled",
+  "fullyProcessedPapers": 0,
+  "notes": "390 records are discovery links, not 390 papers. Pilot access/review status is an explicit additive overlay; do not re-count its files as new discoveries. Two Extract labels cannot be counted as question papers. No bulk migration or additional link collection was run in this checkpoint."
+}
