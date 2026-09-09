@@ -1,3 +1,7 @@
+# Latest checkpoint - source sync and reviewed Physics inventory
+
+Read `research/checkpoints/2026-09-09-SOURCE-SYNC.md` first. It supersedes historical GitHub, testing and concurrency statements below. 32 application tests and production build pass. Full source is on GitHub; local history preserved. Physics has 33 reviewed statement identities, but teaching/paper completion totals remain zero. Sites version/deployment remain pending.
+
 # Latest checkpoint — Astra resumed, 9 September 2026
 
 Read `research/checkpoints/2026-09-09-RECOVERY.md` first. It supersedes the recovery/testing section below. Concurrency and uncertain-response recovery are implemented and verified with 31 tests and isolated local Cloudflare D1. Research counts remain unchanged; full-source GitHub sync and Sites version/deployment remain pending. Continue from the latest commit, without resetting historical work.

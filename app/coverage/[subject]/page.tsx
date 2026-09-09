@@ -8,6 +8,7 @@ import {
   discoveryLinks,
 } from '@/lib/coverage';
 import sources from '@/research/sources.json';
+import physicsInventory from '@/research/syllabus/4PH1-forces-and-motion.json';
 export default async function SubjectCoverage({
   params,
 }: {
@@ -74,9 +75,46 @@ export default async function SubjectCoverage({
             remains open.
           </p>
         )}
-        <h2>Specification references</h2>
+        {s.code === physicsInventory.qualification && (
+          <section>
+            <h2>Reviewed statement inventory</h2>
+            <p>
+              {physicsInventory.points.length} Forces and motion statements
+              checked against the official PDF on 9 September 2026. This
+              verifies their references and paper applicability. Substatement
+              auditing and teaching coverage remain incomplete; no human review
+              has been performed.
+            </p>
+            <details>
+              <summary>Inspect the reviewed statements</summary>
+              <ul className="plain-list">
+                {physicsInventory.points.map((point) => (
+                  <li key={point.id}>
+                    <a
+                      href={source.url + '#page=' + point.pdfPage}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {point.reference}
+                    </a>
+                    {' · '}
+                    {point.summary}
+                    {' · Papers: '}
+                    {point.components.join(', ')}
+                    {' · '}
+                    {point.noteSectionIds.length
+                      ? 'Partial notes available'
+                      : 'Notes not written'}
+                  </li>
+                ))}
+              </ul>
+            </details>
+          </section>
+        )}
+        <h2>Raw specification candidates</h2>
         <p>
-          No reference below is represented as complete teaching coverage.
+          The original extraction below is retained for comparison with reviewed
+          records. No reference is represented as complete teaching coverage.
           Numbered references may contain several substatements that still need
           separate auditing.
         </p>
@@ -93,7 +131,7 @@ export default async function SubjectCoverage({
                   target="_blank"
                   rel="noreferrer"
                 >
-                  {p.reference} · p.{p.pdfPage} · unverified
+                  {p.reference} · p.{p.pdfPage} · raw candidate
                 </a>
               ))}
             </div>

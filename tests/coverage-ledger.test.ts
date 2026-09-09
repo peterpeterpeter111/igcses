@@ -2,9 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import paperLedger from '../research/paper-ledger.json' with { type: 'json' };
 import coverage from '../research/coverage.json' with { type: 'json' };
-import batch from '../research/batches/2026-09-08-cross-subject-lower-01.manifest.json' with {
-  type: 'json',
-};
+import batch from '../research/batches/2026-09-08-cross-subject-lower-01.manifest.json' with { type: 'json' };
 
 test('raw paper ledger keeps discovery and processing states separate', () => {
   assert.equal(paperLedger.length, 390);
@@ -35,15 +33,60 @@ test('candidate syllabus rows remain explicitly unverified', () => {
   assert.ok(coverage.every((row) => row.sourceChecked === false));
   assert.ok(coverage.every((row) => row.humanReviewed === false));
   assert.ok(
-    coverage.every((row) => row.extractionStatus === 'candidate-needs-page-verification'),
+    coverage.every(
+      (row) => row.extractionStatus === 'candidate-needs-page-verification',
+    ),
   );
 });
 
 test('the bounded five-pair batch is indexed-only', () => {
   assert.equal(batch.status, 'indexed-only');
   assert.equal(batch.records.length, 5);
-  assert.ok(batch.records.every((row) => row.processingStatus === 'indexed-only'));
+  assert.ok(
+    batch.records.every((row) => row.processingStatus === 'indexed-only'),
+  );
   assert.ok(batch.records.every((row) => row.fullyProcessed === false));
   assert.equal(batch.counts.pairsFullyProcessed, 0);
   assert.equal(batch.counts.pairsObtained, 5);
+});
+
+// A reviewed statement inventory must not silently become teaching completion.
+test('reviewed Physics statement identities agree with the raw source inventory', async () => {
+  const { default: inventory } = await import(
+    '../research/syllabus/4PH1-forces-and-motion.json',
+    { with: { type: 'json' } }
+  );
+  const { default: note } = await import('../content/notes/physics.json', {
+    with: { type: 'json' },
+  });
+  assert.equal(inventory.points.length, 33);
+  assert.equal(
+    new Set(inventory.points.map((p) => p.id)).size,
+    inventory.points.length,
+  );
+  for (const point of inventory.points) {
+    const raw = coverage.find(
+      (p) =>
+        p.qualification === inventory.qualification &&
+        p.reference === point.reference,
+    );
+    assert.ok(raw);
+    assert.equal(raw.pdfPage, point.pdfPage);
+    assert.equal(point.printedPage, point.pdfPage - 6);
+    assert.deepEqual(
+      point.components,
+      point.reference.endsWith('P') ? ['2P'] : ['1P', '2P'],
+    );
+    assert.equal(point.humanReviewed, false);
+    assert.equal(point.substatementAuditComplete, false);
+    assert.notEqual(point.teachingCoverage, 'complete');
+    for (const id of point.noteSectionIds) {
+      assert.ok(
+        note.sections.some(
+          (section) =>
+            section.id === id && section.points.includes(point.reference),
+        ),
+      );
+    }
+  }
 });
