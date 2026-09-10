@@ -12,7 +12,7 @@ export default function CoveragePage() {
         </nav>
         <h1>Sources & coverage</h1>
         <p className="intro">
-          Research cutoff: 9 September 2026. Downloaded, indexed and fully
+          Evidence updated: 10 September 2026. Downloaded, indexed and fully
           processed are separate stages.
         </p>
         <div className="note">
@@ -93,15 +93,20 @@ export default function CoveragePage() {
           </li>
           <li>
             The English November 2024 pilot has 11 tasks indexed and one
-            detailed extraction. It is not a fully processed paper.
+            detailed extraction. It is not a fully processed paper. Physics
+            Summer 2024 Paper 1P has seven detailed question parts (23 original
+            marks) across Questions 5 and 12; the whole paper remains
+            incomplete.
           </li>
           <li>
             Text extraction and cover review cannot certify diagrams, tables,
             every subpart or scheme contents.
           </li>
           <li>
-            Active generative templates: 0. One provisional English family
-            exists; live AI generation and marking remain deferred.
+            Active generative templates: 0. Two provisional families exist:
+            English retrieval and Physics resultant force. The Physics generator
+            has passed mathematical checks; assessment review and marking
+            calibration are pending. Live AI remains deferred.
           </li>
         </ul>
       </main>

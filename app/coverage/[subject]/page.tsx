@@ -9,7 +9,7 @@ import {
   discoveryLinks,
 } from '@/lib/coverage';
 import sources from '@/research/sources.json';
-import physicsInventory from '@/research/syllabus/4PH1-forces-and-motion.json';
+import { reviewedInventories } from '@/lib/syllabus';
 export default async function SubjectCoverage({
   params,
 }: {
@@ -96,74 +96,76 @@ export default async function SubjectCoverage({
             remains open.
           </p>
         )}
-        {s.code === physicsInventory.qualification && (
-          <section>
-            <h2>Reviewed statement inventory</h2>
-            <p>
-              {physicsInventory.points.length} Forces and motion statements
-              checked against the official PDF on 9 September 2026. This
-              verifies their references and paper applicability. Substatement
-              auditing and teaching coverage remain incomplete; no human review
-              has been performed.
-            </p>
-            <p>
-              {
-                physicsInventory.points.filter(
-                  (point) => point.noteSectionIds.length > 0,
-                ).length
-              }{' '}
-              statements have linked partial explanations. No statement is
-              counted as complete teaching coverage.
-            </p>
-            <details>
-              <summary>Inspect the reviewed statements</summary>
-              <ul className="plain-list">
-                {physicsInventory.points.map((point) => (
-                  <li key={point.id}>
-                    <a
-                      href={source.url + '#page=' + point.pdfPage}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {point.reference}
-                    </a>
-                    {' · '}
-                    {point.summary}
-                    {' · Papers: '}
-                    {point.components.join(', ')}
-                    {' · '}
-                    {point.noteSectionIds.length ? (
-                      <>
-                        Partial notes:{' '}
-                        {point.noteSectionIds.map((heading, i) => (
-                          <span key={heading}>
-                            {i > 0 ? ' · ' : ''}
-                            <Link
-                              href={
-                                '/subjects/' +
-                                s.id +
-                                '/' +
-                                point.chapterId +
-                                '#' +
-                                heading
-                              }
-                            >
-                              {getNotes(s.id, point.chapterId)?.sections.find(
-                                (section) => section.id === heading,
-                              )?.title ?? heading}
-                            </Link>
-                          </span>
-                        ))}
-                      </>
-                    ) : (
-                      'Notes not written'
-                    )}
-                  </li>
-                ))}
-              </ul>
-            </details>
-          </section>
-        )}
+        {reviewedInventories
+          .filter((inventory) => inventory.qualification === s.code)
+          .map((inventory) => (
+            <section key={inventory.title}>
+              <h2>Reviewed statements: {inventory.title}</h2>
+              <p>
+                {inventory.points.length} statements checked against the
+                official PDF on {inventory.reviewDate}. This verifies their
+                references and paper applicability. Substatement auditing and
+                teaching coverage remain incomplete; no human review has been
+                performed.
+              </p>
+              <p>
+                {
+                  inventory.points.filter(
+                    (point) => point.noteSectionIds.length > 0,
+                  ).length
+                }{' '}
+                statements have linked partial explanations. No statement is
+                counted as complete teaching coverage.
+              </p>
+              <details>
+                <summary>Inspect the reviewed statements</summary>
+                <ul className="plain-list">
+                  {inventory.points.map((point) => (
+                    <li key={point.id}>
+                      <a
+                        href={source.url + '#page=' + point.pdfPage}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {point.reference}
+                      </a>
+                      {' · '}
+                      {point.summary}
+                      {' · Papers: '}
+                      {point.components.join(', ')}
+                      {' · '}
+                      {point.noteSectionIds.length ? (
+                        <>
+                          Partial notes:{' '}
+                          {point.noteSectionIds.map((heading, i) => (
+                            <span key={heading}>
+                              {i > 0 ? ' · ' : ''}
+                              <Link
+                                href={
+                                  '/subjects/' +
+                                  s.id +
+                                  '/' +
+                                  point.chapterId +
+                                  '#' +
+                                  heading
+                                }
+                              >
+                                {getNotes(s.id, point.chapterId)?.sections.find(
+                                  (section) => section.id === heading,
+                                )?.title ?? heading}
+                              </Link>
+                            </span>
+                          ))}
+                        </>
+                      ) : (
+                        'Notes not written'
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            </section>
+          ))}
         <h2>Raw specification candidates</h2>
         <p>
           The original extraction below is retained for comparison with reviewed

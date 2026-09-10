@@ -2,6 +2,7 @@ import humanBiology from './notes/human-biology.json' with { type: 'json' };
 import biology from './notes/biology.json' with { type: 'json' };
 import chemistry from './notes/chemistry.json' with { type: 'json' };
 import physics from './notes/physics.json' with { type: 'json' };
+import physicsWaves from './notes/physics-waves.json' with { type: 'json' };
 import english from './notes/english.json' with { type: 'json' };
 import mathematics from './notes/mathematics.json' with { type: 'json' };
 export type NoteSection = {
@@ -47,6 +48,7 @@ export const notes: ChapterNotes[] = [
   biology,
   chemistry,
   physics,
+  physicsWaves,
   english,
   mathematics,
 ] as ChapterNotes[];

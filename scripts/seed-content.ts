@@ -1,5 +1,6 @@
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { subjects } from '../content/catalog.ts';
+import { getNotes } from '../content/notes.ts';
 const read = (p: string) => JSON.parse(readFileSync(p, 'utf8'));
 const quote = (v: unknown) =>
   v === null || v === undefined
@@ -46,11 +47,7 @@ for (const s of read('research/sources.json'))
   });
 for (const s of subjects)
   for (const [i, c] of s.chapters.entries()) {
-    let note = null;
-    try {
-      const candidate = read('content/notes/' + s.id + '.json');
-      if (candidate.chapterId === c.id) note = candidate;
-    } catch {}
+    const note = getNotes(s.id, c.id);
     upsert('chapters', {
       id: s.code + ':' + c.id,
       subject_id: s.id,

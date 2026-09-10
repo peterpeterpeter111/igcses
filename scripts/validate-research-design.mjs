@@ -35,7 +35,11 @@ check(
         validateTemplate(family),
         family.id + ': ' + JSON.stringify(validateTemplate.errors),
       );
-      if (family.review.pedagogyStatus !== 'passed')
+      if (
+        !['agent-reviewed', 'human-reviewed'].includes(
+          family.review.pedagogyStatus,
+        )
+      )
         assert.notEqual(family.status, 'active');
       for (const ref of family.validation.runRefs)
         assert(existsSync(root + ref), ref);

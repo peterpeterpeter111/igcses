@@ -1,3 +1,7 @@
+# Latest checkpoint — Waves teaching expansion
+
+Read `research/checkpoints/2026-09-10-WAVES-TEACHING.md` and `2026-09-10-PATH-VERIFIED.md` first. Seven partial notes/40 sections, 62 reviewed Physics parent statements and 78 partial teaching links. Zero completed chapters/points/papers or active templates. Forty tests, 13 research checks, typecheck and production build pass. Earlier pause messages below are historical; work resumed after both allowances became available.
+
 # Latest status — weekly pause threshold still reached
 
 Read `research/checkpoints/2026-09-10-RESUME-GATE.md` first. Five-hour allowance reset (98% remaining), but weekly allowance is at 5% remaining. No application changes on this resume attempt; previous verified implementation and counts remain current.

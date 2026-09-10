@@ -177,7 +177,8 @@
   stroke-linecap: round;
   opacity: 0.62;
   filter: drop-shadow(0 0 3px #d2a75d66) !important;
-  transition: stroke-dashoffset 0.5s ease;
+  /* Layout changes must not animate an outdated progress length. */
+  transition: none;
 }
 .path-tree {
   position: absolute;
@@ -237,7 +238,8 @@
     box-shadow 0.25s ease;
 }
 .chapter-stop.is-selected {
-  transform: translateX(14px) !important;
+  /* Highlight in place: translating a full-width card clips its text. */
+  transform: none !important;
 }
 .chapter-stop.is-selected::before {
   background: #7b2e35;
@@ -362,4 +364,33 @@
 }
 .note h3:first-child {
   margin-top: 0;
+}
+
+@media (max-width: 480px) {
+  .chapter-path {
+    padding-left: 44px;
+  }
+  .chapter-route {
+    width: 38px;
+  }
+  .chapter-stop::before {
+    left: -27px;
+  }
+  .chapter-card {
+    grid-template-columns: 26px minmax(0, 1fr) 16px;
+    gap: 8px;
+  }
+  .chapter-card .house-mark {
+    display: none;
+  }
+  .chapter-card-copy strong {
+    font-size: 17px;
+  }
+  .chapter-book {
+    margin-left: 0;
+    padding: 16px 12px;
+  }
+  .path-tree {
+    font-size: 22px;
+  }
 }

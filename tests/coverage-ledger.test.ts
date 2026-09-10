@@ -50,43 +50,46 @@ test('the bounded five-pair batch is indexed-only', () => {
   assert.equal(batch.counts.pairsObtained, 5);
 });
 
-// A reviewed statement inventory must not silently become teaching completion.
-test('reviewed Physics statement identities agree with the raw source inventory', async () => {
-  const { default: inventory } = await import(
-    '../research/syllabus/4PH1-forces-and-motion.json',
-    { with: { type: 'json' } }
-  );
-  const { default: note } = await import('../content/notes/physics.json', {
-    with: { type: 'json' },
-  });
-  assert.equal(inventory.points.length, 33);
+// Reviewed identities and linked notes do not imply chapter completion.
+test('reviewed Physics inventories agree with source candidates and registered notes', async () => {
+  const { reviewedInventories } = await import('../lib/syllabus.ts');
+  const { getNotes } = await import('../content/notes.ts');
   assert.equal(
-    new Set(inventory.points.map((p) => p.id)).size,
-    inventory.points.length,
+    reviewedInventories.reduce(
+      (n, inventory) => n + inventory.points.length,
+      0,
+    ),
+    62,
   );
-  for (const point of inventory.points) {
-    const raw = coverage.find(
-      (p) =>
-        p.qualification === inventory.qualification &&
-        p.reference === point.reference,
-    );
-    assert.ok(raw);
-    assert.equal(raw.pdfPage, point.pdfPage);
-    assert.equal(point.printedPage, point.pdfPage - 6);
-    assert.deepEqual(
-      point.components,
-      point.reference.endsWith('P') ? ['2P'] : ['1P', '2P'],
-    );
-    assert.equal(point.humanReviewed, false);
-    assert.equal(point.substatementAuditComplete, false);
-    assert.notEqual(point.teachingCoverage, 'complete');
-    for (const id of point.noteSectionIds) {
-      assert.ok(
-        note.sections.some(
-          (section) =>
-            section.id === id && section.points.includes(point.reference),
-        ),
+  const allIds = reviewedInventories.flatMap((i) => i.points.map((p) => p.id));
+  assert.equal(new Set(allIds).size, allIds.length);
+  for (const inventory of reviewedInventories)
+    for (const point of inventory.points) {
+      const raw = coverage.find(
+        (p) =>
+          p.qualification === inventory.qualification &&
+          p.reference === point.reference,
       );
+      assert.ok(raw);
+      assert.equal(raw.pdfPage, point.pdfPage);
+      assert.equal(point.printedPage, point.pdfPage - 6);
+      assert.deepEqual(
+        point.components,
+        point.reference.endsWith('P') ? ['2P'] : ['1P', '2P'],
+      );
+      assert.equal(point.humanReviewed, false);
+      assert.equal(point.substatementAuditComplete, false);
+      assert.equal(point.teachingCoverage, 'partial');
+      const note = getNotes('physics', point.chapterId);
+      assert.ok(note);
+      assert.ok(note.sourcePages.includes(point.pdfPage));
+      assert.ok(point.noteSectionIds.length > 0);
+      for (const id of point.noteSectionIds)
+        assert.ok(
+          note.sections.some(
+            (section) =>
+              section.id === id && section.points?.includes(point.reference),
+          ),
+        );
     }
-  }
 });

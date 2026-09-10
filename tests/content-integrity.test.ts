@@ -19,7 +19,11 @@ test('catalog contains six uniquely addressable subjects and chapters', () => {
 });
 
 test('partial notes point to catalog chapters and retain incomplete status', () => {
-  assert.equal(notes.length, 6);
+  assert.equal(notes.length, 7);
+  assert.equal(
+    new Set(notes.map((note) => note.subjectId + ':' + note.chapterId)).size,
+    notes.length,
+  );
   for (const note of notes) {
     const subject = subjects.find(
       (candidate) => candidate.id === note.subjectId,
@@ -69,6 +73,8 @@ test('teaching diagrams and nested material have valid searchable chapter target
     ['systematic calibration', 'investigating-motion'],
     ['crumple', 'momentum-and-safety'],
     ['parallax', 'force-extension'],
+    ['time-base', 'oscilloscope-frequency'],
+    ['critical angle', 'critical-angle'],
   ]) {
     assert.ok(
       searchAll(query).some((result) => result.href.endsWith('#' + heading)),

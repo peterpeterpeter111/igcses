@@ -1,0 +1,529 @@
+{
+  "subjectId": "physics",
+  "chapterId": "waves",
+  "status": "source-checked",
+  "complete": false,
+  "humanReviewed": false,
+  "sourceId": "4PH1-spec",
+  "sourcePages": [22, 23, 24],
+  "prerequisites": [
+    "Convert metric prefixes and rearrange simple equations.",
+    "Read graph axes, measure angles from a normal and use sine/inverse sine in degree mode."
+  ],
+  "goals": [
+    "Define wave quantities and connect speed, wavelength, frequency and period.",
+    "Explain propagation, Doppler shift, reflection and refraction.",
+    "Order the electromagnetic spectrum and explain its specified uses and hazards.",
+    "Construct light-ray diagrams, measure refractive index and explain total internal reflection.",
+    "For Paper 2, investigate sound speed and frequency and compare pitch with loudness."
+  ],
+  "sections": [
+    {
+      "id": "wave-quantities",
+      "title": "Wave quantities and units",
+      "points": ["3.1", "3.3"],
+      "paragraphs": [
+        "A wave is a travelling disturbance. Amplitude is the greatest displacement from the undisturbed position. Wavelength λ is the distance between neighbouring points at the same stage of vibration, such as crest to crest or compression to compression. A wavefront joins points at the same stage of vibration, or phase.",
+        "Frequency f is the number of complete oscillations per second, measured in hertz (Hz). Period T is the time for one complete oscillation, measured in seconds (s). Wave speed is the speed at which a disturbance travels, in m/s. Use metres for wavelength and degrees for the angles in this chapter.",
+        "Check what a graph’s horizontal axis represents. A displacement–distance snapshot shows wavelength, not period. A displacement–time record at one position shows period, not wavelength. The vertical distance from crest to trough is twice the amplitude."
+      ],
+      "example": {
+        "question": "On the distance snapshot shown, crests occur at 1 m and 5 m. The maximum displacement is +2 cm and the minimum −2 cm. Find wavelength and amplitude.",
+        "steps": [
+          "Wavelength = 5 − 1 = 4 m.",
+          "Amplitude = 2 cm = 0.020 m.",
+          "Crest-to-trough height = 4 cm; this is not the amplitude."
+        ],
+        "explanation": "The crests are equivalent points one cycle apart. Amplitude is measured from the central undisturbed line."
+      },
+      "practice": {
+        "question": "Four complete vibrations take 0.020 s. What is the period?",
+        "answer": "T = 0.020 ÷ 4 = 0.0050 s.",
+        "explanation": "Use the number of complete intervals, not the number of peaks counted."
+      },
+      "terms": ["amplitude", "wavefront", "frequency", "wavelength", "period"],
+      "diagram": {
+        "src": "/diagrams/physics-wave-snapshot.svg",
+        "alt": "Displacement-distance snapshot with crests at 1 and 5 metres and amplitude 2 centimetres.",
+        "caption": "A snapshot in space: wavelength is 4 m and amplitude is 2 cm. This graph does not give the period."
+      }
+    },
+    {
+      "id": "transverse-longitudinal",
+      "title": "Transverse and longitudinal waves",
+      "points": ["3.2", "3.4", "3.14", "3.23"],
+      "paragraphs": [
+        "Compare the direction of vibration with the direction of energy transfer. In a transverse wave the vibration is perpendicular to the direction the wave travels. A wave along a stretched string is transverse. Light is also transverse: its electric and magnetic fields oscillate, so it does not require vibrating material particles.",
+        "In a longitudinal wave the vibration is parallel to the direction the wave travels. Sound in air consists of successive compressions and rarefactions: regions of greater and lower pressure. Air particles oscillate back and forth locally; they do not travel all the way from a speaker to your ear.",
+        "Waves carry energy and can carry information without an overall transfer of the medium’s matter along the wave. A ribbon on a string vibrates near its original position as a pulse passes. Sound needs a medium and cannot cross a vacuum. Electromagnetic waves can travel through a vacuum."
+      ],
+      "example": {
+        "question": "A pulse travels right along a string while a ribbon tied to it moves up and down. Explain the wave type and what is transferred.",
+        "steps": [
+          "The ribbon’s vibration is perpendicular to the rightward travel of the pulse.",
+          "The wave is transverse.",
+          "Energy travels right; the ribbon oscillates locally rather than travelling with the pulse."
+        ],
+        "explanation": "The definition depends on two directions. Merely saying “up and down” is incomplete without the wave’s travel direction."
+      },
+      "practice": {
+        "question": "Compressions move right through air. In which direction do air particles vibrate?",
+        "answer": "Back and forth parallel to the right–left line of propagation.",
+        "explanation": "The sound pattern moves forwards while individual particles oscillate about their local positions."
+      },
+      "commonMistakes": [
+        "Do not call the curved oscilloscope trace a transverse sound wave; it is a graph of a longitudinal wave’s signal."
+      ]
+    },
+    {
+      "id": "wave-equations",
+      "title": "Speed, wavelength, frequency and period",
+      "points": ["3.1", "3.5", "3.6", "3.7"],
+      "paragraphs": [
+        "In one period a wave travels one wavelength. Therefore v = fλ and f = 1/T. Rearrange to λ = v/f, f = v/λ or T = 1/f. Use the same physical wave and medium throughout a calculation.",
+        "Convert prefixes before substituting: 1 kHz = 1000 Hz, 1 MHz = 1 000 000 Hz, 1 ms = 0.001 s and 1 nm = 10⁻⁹ m. Sound and electromagnetic waves obey these same relationships, although their speeds differ greatly. Use the wave speed supplied in the question."
+      ],
+      "example": {
+        "question": "A sound wave travels at 340 m/s and has frequency 850 Hz. Calculate its wavelength and period.",
+        "steps": [
+          "λ = v/f = 340/850 = 0.400 m.",
+          "T = 1/f = 1/850 = 0.001176… s.",
+          "Period ≈ 1.18 ms."
+        ],
+        "explanation": "The speed relation connects distance with time, while reciprocal frequency gives the duration of one cycle."
+      },
+      "practice": {
+        "question": "A radio wave travels at 3.00 × 10⁸ m/s with frequency 100 MHz. Find its wavelength.",
+        "answer": "100 MHz = 1.00 × 10⁸ Hz; λ = 3.00 × 10⁸ / 1.00 × 10⁸ = 3.00 m.",
+        "explanation": "Using 100 as a frequency in Hz would give an answer a million times too large."
+      },
+      "answerGuide": {
+        "command": "Calculate a wave quantity",
+        "steps": [
+          "Identify the unknown and select v = fλ or f = 1/T.",
+          "Convert all prefixes and write the rearranged relationship.",
+          "Substitute values, carry precision through the calculation, and give a unit.",
+          "Check whether the result describes wavelength, period, frequency or speed."
+        ],
+        "caution": "This is an original teaching scaffold. It has no fixed exam mark allocation and is not an active generative template."
+      }
+    },
+    {
+      "id": "doppler-effect",
+      "title": "Moving sources and the Doppler effect",
+      "points": ["3.8"],
+      "paragraphs": [
+        "A moving source emits successive wavefronts from different positions. In front of an approaching source the fronts are closer together: the wavelength is shorter and a stationary observer receives more fronts each second, so the observed frequency is higher. Behind a receding source the fronts are farther apart, giving a longer wavelength and lower observed frequency.",
+        "For sound with source and observer in the same still air, source motion does not by itself change the speed of sound through that air. It changes the spacing of the fronts and their arrival rate. The source’s own vibration frequency can stay constant while the observer hears a changing pitch.",
+        "A moving observer can also change the rate of encountering wavefronts; in that case do not claim the source necessarily changes the fronts’ spacing in the medium. For light, approaching and receding motion can shift observed wavelengths towards shorter (blue) and longer (red) wavelengths. No numerical Doppler formula is required by this statement."
+      ],
+      "example": {
+        "question": "A siren keeps emitting the same note while its vehicle approaches and then passes a stationary listener. Explain the pitch change.",
+        "steps": [
+          "Approaching: wavefronts ahead of the source are closer together.",
+          "More wavefronts reach the listener per second, so the heard frequency and pitch are higher.",
+          "Receding: fronts reaching the listener are more widely spaced, so frequency and pitch are lower."
+        ],
+        "explanation": "The listener receives a different frequency even though the siren itself need not change its vibration."
+      },
+      "practice": {
+        "question": "Does a higher heard pitch prove that the siren emitted a higher frequency?",
+        "answer": "No. Relative motion can raise the observed frequency without changing the emitted frequency.",
+        "explanation": "Distinguish the source frequency from the observed frequency."
+      },
+      "commonMistakes": [
+        "Do not explain Doppler shift by saying an approaching source makes sound travel faster in the same air."
+      ]
+    },
+    {
+      "id": "reflection-refraction",
+      "title": "What reflection and refraction change",
+      "points": ["3.9", "3.14", "3.23"],
+      "paragraphs": [
+        "Reflection returns a wave into the medium it came from at a boundary. Refraction involves a change of wave speed on entering a different medium or region; it usually changes direction when incidence is oblique. Both transverse and longitudinal waves can be reflected and refracted.",
+        "The frequency remains set by the source when a wave crosses a stationary boundary. If speed changes, wavelength changes with it because v = fλ. At normal incidence the direction can stay unchanged even though speed and wavelength change.",
+        "Water waves entering shallower water slow down and shorten in wavelength. Sound can refract through regions where its speed differs, such as air layers at different temperatures. Light slows on entering ordinary glass from air. Do not use the everyday word “denser” alone to decide refraction: use the wave speed or optical refractive index."
+      ],
+      "example": {
+        "question": "A wave crosses a stationary boundary. Its speed falls from 12 m/s to 8 m/s while its frequency is 4 Hz. Find its wavelength on each side.",
+        "steps": [
+          "Before: λ = 12/4 = 3 m.",
+          "After: λ = 8/4 = 2 m.",
+          "Frequency stays 4 Hz; the slower wave has a shorter wavelength."
+        ],
+        "explanation": "Wavefronts must cross the boundary at the rate at which the source supplies them."
+      },
+      "practice": {
+        "question": "A ray enters glass exactly along the normal. Must its direction change?",
+        "answer": "No. It continues straight along the normal, although its speed and wavelength change.",
+        "explanation": "Refraction does not always produce visible bending."
+      }
+    },
+    {
+      "id": "electromagnetic-spectrum",
+      "title": "Ordering the electromagnetic spectrum",
+      "points": ["3.10", "3.11"],
+      "paragraphs": [
+        "All electromagnetic waves are transverse and belong to a continuous spectrum. In free space they have the same speed, approximately 3.00 × 10⁸ m/s. Their wavelengths and frequencies vary. Regions are useful names along a continuum, not separate substances.",
+        "From longest wavelength and lowest frequency to shortest wavelength and highest frequency: radio waves, microwaves, infrared, visible light, ultraviolet, X-rays, gamma rays. For the same free-space speed, increasing frequency means decreasing wavelength.",
+        "Within visible light, the order from longer to shorter wavelength is red, orange, yellow, green, blue, indigo and violet. Red has a lower frequency than violet. Electromagnetic waves can travel without matter; their common free-space speed must not be assumed to be their speed in glass."
+      ],
+      "example": {
+        "question": "Compare infrared and ultraviolet radiation in free space.",
+        "steps": [
+          "Infrared has a longer wavelength than ultraviolet.",
+          "Infrared therefore has a lower frequency.",
+          "Both travel at the same speed in free space."
+        ],
+        "explanation": "The spectrum order compares wavelength and frequency, not free-space speed."
+      },
+      "practice": {
+        "question": "Arrange gamma rays, visible light and microwaves in increasing frequency.",
+        "answer": "Microwaves → visible light → gamma rays.",
+        "explanation": "This is the reverse of their wavelength order."
+      },
+      "terms": [
+        "radio",
+        "microwave",
+        "infrared",
+        "visible",
+        "ultraviolet",
+        "x-ray",
+        "gamma",
+        "red",
+        "violet"
+      ]
+    },
+    {
+      "id": "electromagnetic-uses",
+      "title": "Explaining uses across the spectrum",
+      "points": ["3.12"],
+      "paragraphs": [
+        "Radio waves carry information for broadcasting and communication. A varying signal can be encoded onto a wave and detected by a receiver. Microwaves are used in satellite links because suitable frequencies pass through the atmosphere and can be directed between dishes; in cooking, absorbed microwave energy heats food.",
+        "Infrared heaters transfer energy by radiation. Night-vision or thermal-imaging equipment detects infrared emitted by warm objects, allowing temperature differences to form an image even without visible illumination. Visible light can carry information in optical fibres and form images in photography.",
+        "In a fluorescent lamp, ultraviolet produced inside the lamp is absorbed by a coating that emits visible light. X-rays penetrate materials and are absorbed by different amounts, revealing internal structures; this contrast is useful in imaging objects and in medical imaging.",
+        "Gamma radiation can sterilise food and medical equipment by killing microorganisms. Its penetration can allow treatment through suitable packaging. A useful exam explanation links the radiation’s relevant property to the application instead of listing a name alone."
+      ],
+      "example": {
+        "question": "Explain why a thermal camera can help locate a warm object in darkness.",
+        "steps": [
+          "A warm object emits infrared radiation.",
+          "The detector senses differences in infrared emission and forms an image.",
+          "Visible light from the scene is not required."
+        ],
+        "explanation": "The answer links a property, a detector and a useful result. It does not say that darkness itself creates infrared."
+      },
+      "practice": {
+        "question": "Why can X-rays reveal the position of structures inside an object?",
+        "answer": "They penetrate the object but are absorbed differently by different materials, producing contrast at the detector.",
+        "explanation": "Penetration alone is insufficient to explain how the image distinguishes structures."
+      },
+      "commonMistakes": [
+        "A night-vision example should state the mechanism being used; this section describes thermal infrared detection.",
+        "Do not claim that microwave cooking heats every part of food evenly or from the inside out."
+      ]
+    },
+    {
+      "id": "electromagnetic-hazards",
+      "title": "Exposure risks and protective measures",
+      "points": ["3.13"],
+      "paragraphs": [
+        "Risk depends on radiation type, intensity and exposure time. Excessive microwave exposure can heat internal body tissue; infrared can cause skin burns. Ultraviolet can damage surface cells and eyes, potentially causing blindness. Gamma radiation can damage cells and DNA, leading to mutations and cancer.",
+        "Protection must match the hazard: microwave equipment uses shielding and interlocks; infrared heaters need suitable separation and limited exposure; UV exposure can be reduced by shade, covering clothing and suitable eye protection. Gamma sources require controlled exposure time, distance and appropriate shielding such as lead or thick concrete.",
+        "These are curriculum examples of controls, not instructions to handle radiation sources. In an explanation, identify the radiation, state how it harms tissue, then link a suitable barrier or exposure reduction to the risk. Do not treat all radiation as ionising: microwave and infrared heating hazards do not require ionisation."
+      ],
+      "example": {
+        "question": "Explain why shielding and short exposure times are used near a gamma source.",
+        "steps": [
+          "Gamma radiation can damage cells and cause mutations.",
+          "Appropriate shielding reduces the radiation reaching a person.",
+          "Reducing time near the source reduces exposure."
+        ],
+        "explanation": "The protective actions are connected to a named hazard and how exposure is reduced."
+      },
+      "practice": {
+        "question": "An answer says “infrared is dangerous because it causes mutations”. Give the expected hazard for this part of the specification.",
+        "answer": "Excessive infrared can heat the skin and cause burns.",
+        "explanation": "Use the named effect appropriate to that radiation rather than swapping hazards between regions."
+      }
+    },
+    {
+      "id": "ray-reflection",
+      "title": "Ray diagrams and the law of reflection",
+      "points": ["3.15", "3.16"],
+      "paragraphs": [
+        "A ray indicates the direction of light travel. Draw a normal perpendicular to the reflecting surface at the point where the ray meets it. The angle of incidence i is between the incoming ray and the normal; the angle of reflection r is between the outgoing ray and the normal. The law of reflection is i = r.",
+        "Draw incident and reflected rays as straight lines with arrowheads. Use a ruler, mark the surface and normal, and label the angles. An angle measured to the surface is complementary to the angle measured to the normal: they add to 90°."
+      ],
+      "example": {
+        "question": "A light ray arrives at a flat mirror at 35° to the surface. Find its angle of reflection.",
+        "steps": [
+          "Incidence angle to the normal = 90° − 35° = 55°.",
+          "By the law of reflection, reflection angle = 55°."
+        ],
+        "explanation": "Changing the reference line from the surface to the normal is essential before applying the law."
+      },
+      "practice": {
+        "question": "A ray arrives along the normal. What are the incidence and reflection angles?",
+        "answer": "Both are 0°; it retraces its path in the opposite direction.",
+        "explanation": "An angle of 90° to the surface is 0° to the normal."
+      }
+    },
+    {
+      "id": "light-refraction",
+      "title": "Light refraction and refractive index",
+      "points": ["3.14", "3.16", "3.18"],
+      "paragraphs": [
+        "For light entering glass from air, the wave slows and an oblique ray bends towards the normal: r is smaller than i. On leaving glass for air it speeds up and bends away from the normal. Angles are always measured from the normal to the boundary.",
+        "For entry from air into a material, its refractive index is n = sin i / sin r (taking the refractive index of air as approximately 1). Refractive index has no unit. Rearrange to sin r = sin i/n; use inverse sine to find r. Keep your calculator in degree mode.",
+        "A ray through a rectangular glass block emerges parallel to the incident ray when the outside medium is the same on both sides and the faces are parallel. Its position is shifted sideways. A triangular prism has nonparallel faces, so this parallel-emergence conclusion does not generally apply."
+      ],
+      "example": {
+        "question": "A ray enters glass from air at i = 45°. The glass has refractive index 1.50. Find r.",
+        "steps": [
+          "sin r = sin 45° / 1.50 = 0.471404…",
+          "r = sin⁻¹(0.471404…) ≈ 28.1°.",
+          "The ray has bent towards the normal, as expected when entering this glass."
+        ],
+        "explanation": "Divide the sine values, not the angle values. A result smaller than 45° is consistent with the direction of refraction."
+      },
+      "practice": {
+        "question": "For entry from air, i = 30° and r = 20°. Calculate the refractive index.",
+        "answer": "n = sin 30° / sin 20° ≈ 1.46.",
+        "explanation": "The ratio 30/20 is not the ratio of the sines."
+      },
+      "diagram": {
+        "src": "/diagrams/physics-refraction-block.svg",
+        "alt": "Ray entering a rectangular glass block at 45 degrees to the normal, bending to approximately 28.1 degrees, then emerging parallel to the incident ray.",
+        "caption": "Air to glass with n = 1.50: the ray bends towards the normal. At the parallel exit face it bends away again."
+      }
+    },
+    {
+      "id": "refraction-practical",
+      "title": "Practical: tracing rays and measuring refractive index",
+      "points": ["3.17", "3.19", "3.18"],
+      "paragraphs": [
+        "Trace the outline of a rectangular block on paper and send a narrow ray into a chosen point on one face. Mark the incoming and outgoing ray positions with the block undisturbed. After removing the block, join the entry and exit points to reconstruct the ray inside. Draw the normal at entry and measure i and r.",
+        "Repeat for several incidence angles. Calculate sin i and sin r; plotting sin i vertically against sin r horizontally gives a gradient equal to n for air-to-glass entry. Use a best-fit line and a large gradient triangle. Near-zero angles give tiny deflections with large percentage angle uncertainties.",
+        "Compare shapes: a semicircular block lets a ray enter the curved face along a radius without bending there, isolating the flat-face boundary. A triangular prism lets you trace refraction at two nonparallel faces and observe deviation; white light can also spread into colours. Keep identifying the local normal at each surface."
+      ],
+      "example": {
+        "question": "A best-fit plot of sin i against sin r includes points (0.20, 0.30) and (0.50, 0.75). Estimate n.",
+        "steps": [
+          "Gradient = (0.75 − 0.30)/(0.50 − 0.20).",
+          "n = 0.45/0.30 = 1.50."
+        ],
+        "explanation": "The chosen axes make the gradient the ratio sin i/sin r. Reversing axes would give its reciprocal."
+      },
+      "practice": {
+        "question": "Why should the glass block not move while you mark the rays?",
+        "answer": "Movement makes the ray marks inconsistent with the traced boundary, producing incorrect reconstructed angles.",
+        "explanation": "The outline, entry point and exit point must describe the same setup."
+      },
+      "practical": {
+        "apparatus": [
+          "Low-voltage ray box with single slit and suitable supply",
+          "Rectangular and semicircular blocks, triangular prism",
+          "Paper, sharp pencil, ruler and protractor"
+        ],
+        "method": [
+          "Trace the block outline and mark the entry point and normal.",
+          "Direct a narrow ray at the point; mark at least two well-separated positions along each external ray.",
+          "Remove the block, connect entry and exit positions, and measure i and r from the normal.",
+          "Repeat at several angles without changing the entry medium; calculate sine values and a graph gradient.",
+          "Trace additional rays through the semicircular block and triangular prism, drawing each local normal."
+        ],
+        "variables": [
+          "Change angle of incidence; measure angle of refraction.",
+          "Keep block material, light colour and entry medium fixed when estimating one refractive index."
+        ],
+        "safety": [
+          "Do not look into the ray box beam or aim it at another person.",
+          "Allow a hot lamp to cool and keep leads out of walkways."
+        ],
+        "quality": [
+          "Use thin pencil marks and a narrow ray; measure angles at the correct entry point.",
+          "Space ray marks well apart and use a best-fit gradient rather than one rounded pair.",
+          "Repeat readings; report sensible precision given the protractor and ray width."
+        ]
+      }
+    },
+    {
+      "id": "critical-angle",
+      "title": "Critical angle and total internal reflection",
+      "points": ["3.20", "3.21", "3.22"],
+      "paragraphs": [
+        "When light passes from higher refractive index to lower refractive index, increasing the incidence angle increases the refraction angle. At the critical angle c, the refracted ray lies along the boundary: r = 90°. The critical angle is an angle inside the higher-index material, measured to the normal.",
+        "Total internal reflection occurs when light is travelling towards a lower-index medium and its incidence angle exceeds c. All of the incident ray’s energy is reflected in the ideal lossless ray model. Below c there can be both a transmitted ray and a reflected ray. At c the refracted ray is along the surface; use “greater than c” for TIR.",
+        "For a material-to-air boundary, sin c = 1/n, so c = sin⁻¹(1/n). A larger refractive index gives a smaller critical angle. In an optical fibre, rays can undergo repeated TIR at the higher-index core/lower-index cladding boundary, guiding information along the fibre. The material-to-air formula must not be applied unchanged to a core–cladding boundary.",
+        "Prisms can use TIR to turn light through a chosen direction. For example, a ray at 45° to a glass–air normal undergoes TIR when the glass critical angle is less than 45°. Refraction at entry or exit must still be checked separately."
+      ],
+      "example": {
+        "question": "Glass has refractive index 1.50. Find its critical angle at an air boundary and decide whether a 45° internal ray is totally reflected.",
+        "steps": [
+          "sin c = 1/1.50 = 0.666667…",
+          "c = sin⁻¹(0.666667…) ≈ 41.8°.",
+          "45° exceeds c and the ray travels from glass towards air, so TIR occurs."
+        ],
+        "explanation": "Both the medium direction and the angle condition are needed."
+      },
+      "practice": {
+        "question": "Can light travelling from air into glass undergo total internal reflection at that entry surface?",
+        "answer": "No. It is entering a higher-index medium, so the required medium condition is not met.",
+        "explanation": "A large angle alone is not sufficient for TIR."
+      },
+      "commonMistakes": [
+        "Do not measure the critical angle in air or to the surface.",
+        "Optical fibres use total internal reflection, not repeated ordinary refraction, to confine suitable rays."
+      ]
+    },
+    {
+      "id": "sound-and-echoes",
+      "title": "Sound, echoes and the hearing range",
+      "points": ["3.23", "3.24P"],
+      "paragraphs": [
+        "Sound in air is longitudinal: pressure compressions and rarefactions travel while the air oscillates parallel to propagation. A microphone responds to the changing pressure and converts it into an electrical signal. A reflected sound can be heard as an echo if the time separation is sufficient.",
+        "For an echo returning from a single distant wall, the sound travels to the wall and back. If the total echo time is t, the one-way distance is d = vt/2. Do not divide by two when a question instead measures direct travel between two different positions.",
+        "Paper 2 specifies an approximate human hearing range of 20 Hz to 20 000 Hz. The limits vary with the listener and conditions. Below that range is infrasound and above it ultrasound. Frequency must be distinguished from wave speed and loudness."
+      ],
+      "example": {
+        "question": "An echo returns 0.40 s after a sound is made. Taking sound speed as 340 m/s, calculate the distance to the wall.",
+        "steps": [
+          "Round-trip distance = 340 × 0.40 = 136 m.",
+          "One-way wall distance = 136/2 = 68 m."
+        ],
+        "explanation": "The recorded time includes both legs of the journey."
+      },
+      "practice": {
+        "question": "Is a sound of 25 kHz within the specified human hearing range?",
+        "answer": "No: 25 kHz = 25 000 Hz, above 20 000 Hz.",
+        "explanation": "It is ultrasound relative to the approximate human range."
+      },
+      "terms": ["echo", "ultrasound", "infrasound", "hearing"]
+    },
+    {
+      "id": "sound-speed-practical",
+      "title": "Paper 2 practical: measuring the speed of sound",
+      "points": ["3.25P"],
+      "paragraphs": [
+        "Place two microphones a measured distance apart along the direction of a short sound pulse. Record their signals on two channels with a shared time base. The delay between corresponding parts of the signals is the extra travel time between the microphones. Calculate v = separation/delay.",
+        "Place the pulse source beyond the nearer microphone along the same line, so the difference in path length is the microphone separation. A source between the microphones would require a different path calculation. Increasing separation makes the delay easier to resolve. Reflections can produce later pulses; identify the same direct arrival in both signals.",
+        "An alternative echo method measures the return time from a sufficiently distant flat wall and uses 2d/t. Repeated echoes or electronic timing reduce the relative effect of reaction time; a single very short interval is unsuitable for hand timing. State which distance and time are actually measured."
+      ],
+      "example": {
+        "question": "Two microphones 1.70 m apart record the same pulse 5.00 ms apart. Estimate sound speed.",
+        "steps": [
+          "Delay = 5.00 ms = 0.00500 s.",
+          "v = 1.70/0.00500 = 340 m/s."
+        ],
+        "explanation": "This is a direct path difference, so there is no extra factor of two."
+      },
+      "practice": {
+        "question": "Why does repeating the measurement not necessarily remove an incorrect microphone spacing?",
+        "answer": "That is a systematic distance error; repeating the same wrong spacing does not correct it.",
+        "explanation": "Repetition helps assess random scatter, while calibration and alignment address systematic error."
+      },
+      "practical": {
+        "apparatus": [
+          "Two microphones and a two-channel recorder/oscilloscope with common time base",
+          "Metre rule or tape measure",
+          "Short, moderate-volume sound source"
+        ],
+        "method": [
+          "Align source and microphones with the source beyond the nearer microphone.",
+          "Measure separation between the sensing positions.",
+          "Produce a short pulse and record both signals; measure the delay between matching direct arrivals.",
+          "Repeat and vary separation; compare distance divided by delay, or plot separation against delay."
+        ],
+        "variables": [
+          "Change microphone separation; measure the arrival-time delay.",
+          "Keep medium and approximate air temperature the same; use consistent signal features."
+        ],
+        "safety": [
+          "Keep sound at a comfortable level; do not make loud impulses close to ears.",
+          "Keep microphone cables clear of feet."
+        ],
+        "quality": [
+          "Use electronic timing and enough separation to give a resolvable delay.",
+          "Avoid strong reflections or identify the earliest direct arrival.",
+          "Measure to the sensing positions, record repeats and retain unrounded timing values."
+        ]
+      }
+    },
+    {
+      "id": "oscilloscope-frequency",
+      "title": "Paper 2 practical: sound traces and frequency",
+      "points": ["3.26P", "3.27P"],
+      "paragraphs": [
+        "Connect a microphone to an oscilloscope or equivalent time-based recorder. The horizontal axis represents time; the vertical axis represents the microphone’s electrical output, which follows pressure variation. This trace is not a picture of sound particles moving up and down.",
+        "Period equals the number of horizontal divisions for one complete cycle multiplied by the time-base setting (time per division). Improve precision by measuring several full cycles between equivalent points and dividing the total time by the number of cycles. Then f = 1/T.",
+        "Adjust the time base to show several stable cycles. A trigger helps keep a repeated waveform steady. Read the scale actually selected; if the time base changes, the number of divisions occupied by a cycle can change even though the source frequency stays the same."
+      ],
+      "example": {
+        "question": "Five complete cycles occupy 20 horizontal divisions at 0.50 ms per division. Calculate frequency.",
+        "steps": [
+          "Total time for five cycles = 20 × 0.50 = 10.0 ms.",
+          "T = 10.0/5 = 2.00 ms = 0.00200 s.",
+          "f = 1/0.00200 = 500 Hz."
+        ],
+        "explanation": "Count cycles as complete intervals; six successive crests enclose five cycles."
+      },
+      "practice": {
+        "question": "A trace has a period of 4 divisions at 0.20 ms/division. Find f.",
+        "answer": "T = 0.80 ms = 0.00080 s; f = 1250 Hz.",
+        "explanation": "The time-base scale is part of the measurement."
+      },
+      "practical": {
+        "apparatus": [
+          "Microphone and oscilloscope or time-calibrated recorder",
+          "Tuning fork or steady-tone sound source"
+        ],
+        "method": [
+          "Connect the microphone and display a stable repeated signal.",
+          "Read and record the time-base setting.",
+          "Measure several complete cycles using equivalent points and count the intervals.",
+          "Convert the total time to seconds, divide by cycles and calculate reciprocal period.",
+          "Repeat at another time-base setting to check that the calculated frequency is consistent."
+        ],
+        "variables": [
+          "Measure period for a chosen source; repeat with different source frequencies if comparing pitch.",
+          "Keep the source steady while taking each reading."
+        ],
+        "safety": ["Use moderate sound levels and keep electrical leads tidy."],
+        "quality": [
+          "Use multiple cycles and a well-spread trace to reduce reading uncertainty.",
+          "Do not confuse a time-base adjustment with a real change in frequency.",
+          "Record the units displayed by the instrument and avoid distorted/clipped signals."
+        ]
+      }
+    },
+    {
+      "id": "pitch-and-loudness",
+      "title": "Paper 2: pitch and loudness",
+      "points": ["3.28P", "3.29P"],
+      "paragraphs": [
+        "Pitch increases as the source’s vibration frequency increases; higher frequency means shorter period. Loudness is related to vibration amplitude: for a similar source and listening conditions, greater amplitude produces a louder sound. Increasing amplitude does not by itself increase frequency.",
+        "Compare oscilloscope traces only after checking their scales. At the same horizontal time base, more cycles across the screen indicate higher frequency. At the same vertical sensitivity and with the microphone position and gain unchanged, a larger signal amplitude can indicate a larger sound-pressure variation.",
+        "Actual perceived loudness also depends on frequency and the listener. Moving the microphone, changing gain or changing vertical sensitivity can alter displayed height without the source vibrating more strongly. State the controlled conditions in a comparison."
+      ],
+      "example": {
+        "question": "Trace A has period 2 ms; trace B has period 1 ms at the same settings. Trace B also has twice A’s amplitude. Compare the sounds.",
+        "steps": [
+          "A: f = 1/0.002 = 500 Hz; B: f = 1/0.001 = 1000 Hz.",
+          "B has higher pitch because its frequency is greater.",
+          "With microphone position and gain unchanged, B’s larger amplitude indicates a louder sound under comparable conditions."
+        ],
+        "explanation": "The horizontal measurement answers the pitch question and the vertical measurement addresses amplitude."
+      },
+      "practice": {
+        "question": "A student doubles the oscilloscope’s displayed trace height by changing vertical sensitivity. Has the sound necessarily become louder?",
+        "answer": "No. The display scale changed; the source amplitude may be unchanged.",
+        "explanation": "Use the scale and measurement conditions before interpreting trace appearance."
+      },
+      "commonMistakes": [
+        "A louder sound is not necessarily higher-pitched.",
+        "More cycles only show higher frequency when time scales are comparable."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "date": "2026-09-10",
+  "scope": "Independent recalculation of 17 displayed Waves numerical answers and isolated SQLite seed application. Does not certify full pedagogy, substatement coverage or live D1 deployment.",
+  "checkedCalculations": 17,
+  "results": [
+    {
+      "label": "four-cycle period / s",
+      "result": 0.005,
+      "expected": 0.005,
+      "tolerance": 1e-10
+    },
+    {
+      "label": "sound wavelength / m",
+      "result": 0.4,
+      "expected": 0.4,
+      "tolerance": 1e-10
+    },
+    {
+      "label": "sound period / ms",
+      "result": 1.1764705882352942,
+      "expected": 1.1764705882352942,
+      "tolerance": 1e-10
+    },
+    {
+      "label": "radio wavelength / m",
+      "result": 3.0,
+      "expected": 3,
+      "tolerance": 1e-10
+    },
+    {
+      "label": "before-boundary wavelength / m",
+      "result": 3.0,
+      "expected": 3,
+      "tolerance": 1e-10
+    },
+    {
+      "label": "after-boundary wavelength / m",
+      "result": 2.0,
+      "expected": 2,
+      "tolerance": 1e-10
+    },
+    {
+      "label": "reflection angle / degrees",
+      "result": 55,
+      "expected": 55,
+      "tolerance": 1e-10
+    },
+    {
+      "label": "refraction angle / degrees",
+      "result": 28.125505702055705,
+      "expected": 28.1255057020557,
+      "tolerance": 1e-10
+    },
+    {
+      "label": "refractive index from angles",
+      "result": 1.4619022000815436,
+      "expected": 1.46190220008154,
+      "tolerance": 1e-10
+    },
+    {
+      "label": "refractive-index gradient",
+      "result": 1.5,
+      "expected": 1.5,
+      "tolerance": 1e-10
+    },
+    {
+      "label": "critical angle / degrees",
+      "result": 41.810314895778596,
+      "expected": 41.8103148957786,
+      "tolerance": 1e-10
+    },
+    {
+      "label": "echo wall distance / m",
+      "result": 68.0,
+      "expected": 68,
+      "tolerance": 1e-10
+    },
+    {
+      "label": "microphone sound speed / m/s",
+      "result": 340.0,
+      "expected": 340,
+      "tolerance": 1e-10
+    },
+    {
+      "label": "oscilloscope frequency / Hz",
+      "result": 500.0,
+      "expected": 500,
+      "tolerance": 1e-10
+    },
+    {
+      "label": "oscilloscope practice / Hz",
+      "result": 1250.0,
+      "expected": 1250,
+      "tolerance": 1e-10
+    },
+    {
+      "label": "pitch trace A / Hz",
+      "result": 500.0,
+      "expected": 500,
+      "tolerance": 1e-10
+    },
+    {
+      "label": "pitch trace B / Hz",
+      "result": 1000.0,
+      "expected": 1000,
+      "tolerance": 1e-10
+    }
+  ],
+  "seed": {
+    "rows": 758,
+    "noteDocuments": 7,
+    "noteSections": 40,
+    "wavesSections": 16,
+    "database": "isolated in-memory SQLite"
+  },
+  "sourcePdfSha256": "bac4b8312d4fbfc84672f909100d66b2b3cda0b25e98c0d11bbc7366dae482b2",
+  "sourcePagesVisuallyReviewed": [
+    22,
+    23,
+    24
+  ],
+  "completeChapters": 0
+}
