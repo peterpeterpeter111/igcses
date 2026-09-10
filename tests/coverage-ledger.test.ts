@@ -4,7 +4,7 @@ import paperLedger from '../research/paper-ledger.json' with { type: 'json' };
 import coverage from '../research/coverage.json' with { type: 'json' };
 import batch from '../research/batches/2026-09-08-cross-subject-lower-01.manifest.json' with { type: 'json' };
 
-test('raw paper ledger keeps discovery and processing states separate', () => {
+void test('raw paper ledger keeps discovery and processing states separate', () => {
   assert.equal(paperLedger.length, 390);
   assert.equal(new Set(paperLedger.map((row) => row.id)).size, 390);
   assert.ok(paperLedger.every((row) => row.accessStatus === 'discovered'));
@@ -27,7 +27,7 @@ test('raw paper ledger keeps discovery and processing states separate', () => {
   );
 });
 
-test('candidate syllabus rows remain explicitly unverified', () => {
+void test('candidate syllabus rows remain explicitly unverified', () => {
   assert.equal(coverage.length, 710);
   assert.ok(coverage.every((row) => row.drafted === false));
   assert.ok(coverage.every((row) => row.sourceChecked === false));
@@ -39,7 +39,7 @@ test('candidate syllabus rows remain explicitly unverified', () => {
   );
 });
 
-test('the bounded five-pair batch is indexed-only', () => {
+void test('the bounded five-pair batch is indexed-only', () => {
   assert.equal(batch.status, 'indexed-only');
   assert.equal(batch.records.length, 5);
   assert.ok(
@@ -51,7 +51,7 @@ test('the bounded five-pair batch is indexed-only', () => {
 });
 
 // Reviewed identities and linked notes do not imply chapter completion.
-test('reviewed Physics inventories agree with source candidates and registered notes', async () => {
+void test('reviewed Physics inventories agree with source candidates and registered notes', async () => {
   const { reviewedInventories } = await import('../lib/syllabus.ts');
   const { getNotes } = await import('../content/notes.ts');
   assert.equal(

@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { SessionStore } from '../server/session-store.ts';
 import { setup } from './quiz-fixture.ts';
-test('D1 migration and store preserve owner isolation and private packages', async () => {
+void test('D1 migration and store preserve owner isolation and private packages', async () => {
   const { store, sqlite } = await setup();
   await assert.rejects(() => store.current('attempt', 'other'));
   await assert.rejects(() => store.results('attempt', 'owner'));
@@ -12,7 +12,7 @@ test('D1 migration and store preserve owner isolation and private packages', asy
   );
   sqlite.close();
 });
-test('drafts survive store recreation; old draft versions cannot overwrite newer text', async () => {
+void test('drafts survive store recreation; old draft versions cannot overwrite newer text', async () => {
   const { db, store, sqlite } = await setup();
   await store.draft('attempt', 'owner', 'q0', 'first', 1);
   assert.deepEqual(await store.draft('attempt', 'owner', 'q0', 'new', 2), {
@@ -37,7 +37,7 @@ test('drafts survive store recreation; old draft versions cannot overwrite newer
   );
   sqlite.close();
 });
-test('simultaneous drafts use compare-and-swap and retries acknowledge only identical text', async () => {
+void test('simultaneous drafts use compare-and-swap and retries acknowledge only identical text', async () => {
   const { store, sqlite } = await setup();
   const responses = await Promise.all(
     ['one', 'two'].map((text) =>
@@ -57,7 +57,7 @@ test('simultaneous drafts use compare-and-swap and retries acknowledge only iden
   );
   sqlite.close();
 });
-test('simultaneous identical submissions advance once; conflicting submissions cannot replace the winner', async () => {
+void test('simultaneous identical submissions advance once; conflicting submissions cannot replace the winner', async () => {
   const { store, sqlite } = await setup();
   const responses = await Promise.all(
     Array.from({ length: 8 }, () =>
@@ -81,7 +81,7 @@ test('simultaneous identical submissions advance once; conflicting submissions c
   );
   sqlite.close();
 });
-test('a racing draft cannot overwrite a submitted answer', async () => {
+void test('a racing draft cannot overwrite a submitted answer', async () => {
   const { store, sqlite } = await setup();
   await Promise.allSettled([
     store.draft('attempt', 'owner', 'q0', 'draft', 1),
@@ -95,7 +95,7 @@ test('a racing draft cannot overwrite a submitted answer', async () => {
   assert.equal((await store.current('attempt', 'owner')).position, 1);
   sqlite.close();
 });
-test('a failed answer write rolls the session position back', async () => {
+void test('a failed answer write rolls the session position back', async () => {
   const { store, sqlite } = await setup();
   sqlite.exec(
     "CREATE TRIGGER fail_answer BEFORE INSERT ON answers BEGIN SELECT RAISE(ABORT,'fixture failure'); END;",
@@ -107,7 +107,7 @@ test('a failed answer write rolls the session position back', async () => {
   assert.equal(sqlite.prepare('SELECT COUNT(*) n FROM answers').get()?.n, 0);
   sqlite.close();
 });
-test('retry after reload does not advance or overwrite twice', async () => {
+void test('retry after reload does not advance or overwrite twice', async () => {
   const { db, store, sqlite } = await setup();
   await store.submit('attempt', 'owner', 'q0', 'answer', 'key');
   const retry = await new SessionStore(db).submit(
@@ -123,7 +123,7 @@ test('retry after reload does not advance or overwrite twice', async () => {
   );
   sqlite.close();
 });
-test('all answers and marking persist before schemes become accessible', async () => {
+void test('all answers and marking persist before schemes become accessible', async () => {
   const { store, q, sqlite } = await setup();
   for (let i = 0; i < 22; i++)
     await store.submit('attempt', 'owner', 'q' + i, 'answer', 'k' + i);
@@ -146,7 +146,7 @@ test('all answers and marking persist before schemes become accessible', async (
   );
   sqlite.close();
 });
-test('tampering with a stored question is detected', async () => {
+void test('tampering with a stored question is detected', async () => {
   const { store, sqlite } = await setup();
   sqlite
     .prepare(

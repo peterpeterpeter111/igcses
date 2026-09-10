@@ -88,6 +88,8 @@ export default async function ChapterPage({
                     ))}
                     {section.diagram && (
                       <figure className="note-diagram">
+                        {/* Original local SVGs: no raster optimisation is needed. */}
+                        {/* eslint-disable-next-line next/no-img-element */}
                         <img
                           src={section.diagram.src}
                           alt={section.diagram.alt}

@@ -234,6 +234,8 @@ header::after {
 }
 
 .bookshelf {
+  perspective: 1200px;
+  transform-style: preserve-3d;
   overflow: hidden;
   background:
     linear-gradient(110deg, #171112e8, #321a1de8 52%, #171112e8),
@@ -286,6 +288,8 @@ header::after {
 }
 
 .bookshelf .subject-row {
+  transform-origin: center;
+  transform-style: preserve-3d;
   background-image:
     linear-gradient(90deg, #382020, #241818),
     repeating-linear-gradient(90deg, #ffffff03 0 1px, transparent 1px 6px);
@@ -320,6 +324,8 @@ header::after {
 
 .bookshelf .subject-row:hover,
 .bookshelf .subject-row:focus-visible {
+  transform: perspective(900px) translateY(-10px) translateZ(18px)
+    rotateY(-4deg) rotateX(2deg);
   border-color: #c8784677;
   box-shadow:
     inset 3px 0 0 #dda04d55,
@@ -522,6 +528,7 @@ summary::marker {
   perspective: 1200px;
   transform-style: preserve-3d;
   overflow: visible;
+  padding: 0;
   border: 0;
   background: transparent;
   box-shadow: none;
@@ -562,7 +569,7 @@ summary::marker {
   z-index: 5;
   top: 3px;
   bottom: 3px;
-  left: 50%;
+  left: 12px;
   width: 2px;
   pointer-events: none;
   background: linear-gradient(180deg, #6c2b32, #b56b37 46%, #6c2b32);
@@ -577,17 +584,10 @@ summary::marker {
   position: relative;
   z-index: 4;
   min-height: 82px;
-  padding: 18px 20px 19px;
+  padding: 18px 24px 19px 30px;
   border: 1px solid #c9ad9c;
   border-radius: 4px;
-  background: linear-gradient(
-    90deg,
-    #fff8ec 0%,
-    #fffdf8 46%,
-    #d7bba7 49.5%,
-    #fffdf8 52%,
-    #fff8ec 100%
-  );
+  background: linear-gradient(90deg, #f0dfcc, #fffdf8 24px, #fff8ec);
   box-shadow:
     5px 7px 0 #6c2b3212,
     0 14px 22px #3c202018;
@@ -599,6 +599,43 @@ summary::marker {
 .chapter-book-content p {
   position: relative;
   z-index: 2;
+}
+
+.chapter-book[data-transitioning='true'] {
+  z-index: 10;
+  pointer-events: none;
+}
+
+.chapter-book[data-transitioning='true'] .chapter-book-page-left {
+  animation: chapter-book-page-exit-left 0.9s cubic-bezier(0.2, 0.78, 0.22, 1)
+    both;
+}
+
+.chapter-book[data-transitioning='true'] .chapter-book-page-right {
+  animation: chapter-book-page-exit-right 0.9s cubic-bezier(0.2, 0.78, 0.22, 1)
+    both;
+}
+
+@keyframes chapter-book-page-exit-left {
+  from {
+    opacity: 0.18;
+    transform: rotateY(0) translateZ(4px);
+  }
+  to {
+    opacity: 0.92;
+    transform: rotateY(-86deg) translateZ(36px);
+  }
+}
+
+@keyframes chapter-book-page-exit-right {
+  from {
+    opacity: 0.18;
+    transform: rotateY(0) translateZ(4px);
+  }
+  to {
+    opacity: 0.92;
+    transform: rotateY(86deg) translateZ(36px);
+  }
 }
 
 @keyframes chapter-book-settle {
@@ -665,25 +702,28 @@ summary::marker {
 }
 
 .chapter-reader {
+  perspective: 1400px;
   transform-style: preserve-3d;
   transform-origin: left center;
-  animation: chapter-reader-open 0.68s cubic-bezier(0.22, 0.72, 0.24, 1) both;
+  animation: chapter-reader-open 0.9s cubic-bezier(0.22, 0.72, 0.24, 1) both;
 }
 
 @keyframes chapter-reader-open {
   from {
     opacity: 0;
-    transform: perspective(1400px) rotateY(-9deg) translateX(-12px);
+    transform: perspective(1400px) rotateY(-16deg) translateZ(-70px)
+      translateX(-18px) rotateX(2deg);
   }
   to {
     opacity: 1;
-    transform: perspective(1400px) rotateY(0) translateX(0);
+    transform: perspective(1400px) rotateY(0) translateZ(0) translateX(0)
+      rotateX(0);
   }
 }
 
 @media (max-width: 700px) {
   .chapter-book-content {
-    padding: 16px 14px 17px;
+    padding: 16px 22px 17px 28px;
   }
 }
 
@@ -711,57 +751,66 @@ summary::marker {
   }
 }
 
-/* The invisible anchor mirrors the route marker so the progress measurement
-   follows the selected stop itself rather than the variable-height card. */
+/* Measure the real marker. The golden road is clipped at this marker's height,
+   independent of SVG stretch, card wrapping or the opening panel's height. */
+.chapter-stop::before {
+  content: none;
+}
 .chapter-stop-anchor {
   position: absolute;
-  z-index: 0;
+  z-index: 1;
   top: 25px;
   left: -59px;
-  width: 17px;
-  height: 17px;
+  width: 13px;
+  height: 13px;
+  border: 2px solid #7b2e35;
+  border-radius: 50%;
+  background: #fffdf7;
   pointer-events: none;
-  opacity: 0;
+}
+.is-selected > .chapter-stop-anchor {
+  background: #7b2e35;
+  box-shadow: 0 0 0 4px #7b2e3520;
+}
+.chapter-route .chapter-route-glow {
+  stroke-dasharray: none !important;
+  filter: none !important;
 }
 
-/* Enter a subject as a tall book column, revealing the lower edge first and
-   letting the chapter contents settle in after the shell lands. */
+/* The shelf book supplies the bottom-to-top exit; the new contents fade in. */
 .subject-reader {
+  perspective: 1400px;
+  transform-style: preserve-3d;
   transform-origin: center bottom;
-  animation: subject-reader-in 0.9s cubic-bezier(0.22, 0.72, 0.24, 1) both;
+  animation: subject-reader-in 0.82s cubic-bezier(0.22, 0.72, 0.24, 1);
 }
 
 .subject-reader .subject-contents {
-  animation: subject-contents-in 0.64s 0.34s cubic-bezier(0.22, 0.72, 0.24, 1)
+  animation: subject-contents-in 0.4s 0.12s cubic-bezier(0.22, 0.72, 0.24, 1)
     both;
 }
 
 @keyframes subject-reader-in {
   0% {
     opacity: 0;
-    clip-path: inset(0 0 100% 0);
-    transform: perspective(1400px) translateY(22px) scale(0.93);
-  }
-  58% {
-    opacity: 1;
-    clip-path: inset(0 0 18% 0);
-    transform: perspective(1400px) translateY(0) scale(1.01);
+    transform: perspective(1400px) translateY(18px) translateZ(-70px)
+      rotateX(4deg) rotateY(-10deg);
   }
   100% {
     opacity: 1;
-    clip-path: inset(0);
-    transform: perspective(1400px) translateY(0) scale(1);
+    transform: perspective(1400px) translateY(0) translateZ(0) rotateX(0)
+      rotateY(0);
   }
 }
 
 @keyframes subject-contents-in {
   from {
     opacity: 0;
-    transform: translateY(24px) scale(0.985);
+    transform: translateY(8px);
   }
   to {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: none;
   }
 }
 

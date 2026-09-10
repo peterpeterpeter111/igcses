@@ -39,7 +39,7 @@ async function fixture() {
   };
   return { store, sqlite, transport };
 }
-test('a lost submission response is retried with the same frozen answer and key', async () => {
+void test('a lost submission response is retried with the same frozen answer and key', async () => {
   const { transport, store, sqlite } = await fixture();
   let dropped = false;
   const keys: string[] = [];
@@ -70,7 +70,7 @@ test('a lost submission response is retried with the same frozen answer and key'
   client.dispose();
   sqlite.close();
 });
-test('editing during a dispatched save queues the newest text without overlapping draft writes', async () => {
+void test('editing during a dispatched save queues the newest text without overlapping draft writes', async () => {
   const { transport, store, sqlite } = await fixture();
   let release!: () => void;
   let count = 0;
@@ -93,7 +93,7 @@ test('editing during a dispatched save queues the newest text without overlappin
   client.dispose();
   sqlite.close();
 });
-test('two tabs cannot silently overwrite each other; reload preserves conflicting local text', async () => {
+void test('two tabs cannot silently overwrite each other; reload preserves conflicting local text', async () => {
   const { transport, store, sqlite } = await fixture();
   const first = new QuizClient('/session', transport),
     second = new QuizClient('/session', transport);
@@ -113,7 +113,7 @@ test('two tabs cannot silently overwrite each other; reload preserves conflictin
   second.dispose();
   sqlite.close();
 });
-test('reload after an uncertain submission keeps local text away from the next question', async () => {
+void test('reload after an uncertain submission keeps local text away from the next question', async () => {
   const { transport, sqlite } = await fixture();
   const client = new QuizClient('/session', async (path, body) => {
     const r = await transport(path, body);
@@ -132,7 +132,7 @@ test('reload after an uncertain submission keeps local text away from the next q
   client.dispose();
   sqlite.close();
 });
-test('lost draft acknowledgements retry the same revision before saving subsequent edits', async () => {
+void test('lost draft acknowledgements retry the same revision before saving subsequent edits', async () => {
   const { transport, store, sqlite } = await fixture();
   let dropped = false;
   const client = new QuizClient('/session', async (path, body) => {
@@ -154,7 +154,7 @@ test('lost draft acknowledgements retry the same revision before saving subseque
   client.dispose();
   sqlite.close();
 });
-test(
+void test(
   'remount ignores stale responses and account failures clear cached quiz data',
   { timeout: 5000 },
   async (t) => {
@@ -196,7 +196,7 @@ test(
   },
 );
 
-test(
+void test(
   'disposing during a draft save prevents the old submit from dispatching',
   { timeout: 5000 },
   async (t) => {
@@ -233,7 +233,7 @@ test(
   },
 );
 
-test(
+void test(
   'restoring while a reload is busy preserves the recovery copy',
   { timeout: 5000 },
   async (t) => {

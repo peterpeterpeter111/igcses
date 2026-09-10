@@ -49,6 +49,10 @@ function InputGroupAddon({
   ...props
 }: React.ComponentProps<'div'> & VariantProps<typeof inputGroupAddonVariants>) {
   return (
+    // Optional pointer convenience: the associated input is already keyboard
+    // reachable. Do not turn this container (which may contain buttons) into
+    // another nested interactive control.
+    // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions
     <div
       role="group"
       data-slot="input-group-addon"

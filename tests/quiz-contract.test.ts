@@ -32,11 +32,11 @@ function fixture() {
   }));
   return createAttempt('a', 'owner', 'physics', questions);
 }
-test('blueprint is exactly 80 with the approved mark distribution', () => {
+void test('blueprint is exactly 80 with the approved mark distribution', () => {
   validateBlueprint(BLUEPRINT);
   assert.throws(() => validateBlueprint(Array(20).fill(4)));
 });
-test('pre-completion response contains no private package fields', () => {
+void test('pre-completion response contains no private package fields', () => {
   const value = JSON.stringify(publicAttempt(fixture(), 'owner'));
   for (const term of [
     'PRIVATE',
@@ -48,11 +48,11 @@ test('pre-completion response contains no private package fields', () => {
   ])
     assert.ok(!value.includes(term));
 });
-test('other users cannot see a question or release results', () => {
+void test('other users cannot see a question or release results', () => {
   assert.throws(() => publicAttempt(fixture(), 'other'));
   assert.throws(() => releaseResults(fixture(), 'other'));
 });
-test('blank answer requires confirmation; out-of-order answers are rejected', () => {
+void test('blank answer requires confirmation; out-of-order answers are rejected', () => {
   assert.throws(() => submitAnswer(fixture(), 'owner', 'q0', '', 'k'));
   assert.throws(() => submitAnswer(fixture(), 'owner', 'q1', 'answer', 'k'));
   assert.equal(
@@ -60,12 +60,12 @@ test('blank answer requires confirmation; out-of-order answers are rejected', ()
     1,
   );
 });
-test('identical retries are idempotent; changed repeats conflict', () => {
+void test('identical retries are idempotent; changed repeats conflict', () => {
   const a = submitAnswer(fixture(), 'owner', 'q0', 'hello', 'key');
   assert.equal(submitAnswer(a, 'owner', 'q0', 'hello', 'key').position, 1);
   assert.throws(() => submitAnswer(a, 'owner', 'q0', 'changed', 'key'));
 });
-test('marking begins only after all 22 answers; schemes stay locked until completed marking', () => {
+void test('marking begins only after all 22 answers; schemes stay locked until completed marking', () => {
   let a = fixture();
   assert.throws(() => releaseResults(a, 'owner'));
   for (let i = 0; i < 22; i++)
@@ -91,7 +91,7 @@ test('marking begins only after all 22 answers; schemes stay locked until comple
     ),
   );
 });
-test('unvalidated packages and unreconciled rubrics cannot start a session', () => {
+void test('unvalidated packages and unreconciled rubrics cannot start a session', () => {
   const a = fixture();
   a.questions[0].validation.passed = false;
   assert.throws(() => createAttempt('b', 'owner', 'physics', a.questions));

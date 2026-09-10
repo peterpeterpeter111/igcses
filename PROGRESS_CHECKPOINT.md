@@ -1,4 +1,20 @@
-# Latest checkpoint — visual polish
+# Latest checkpoint — smooth 3D navigation transitions
+
+Luna visual follow-up is saved locally after `36af240`. The subject bookshelf now has a visible perspective lift and rotation while its smooth bottom-to-top alpha fade runs; the grain texture/mask remains removed. Each chapter `Open` link now closes the paper layers in 3D, rotates the chapter book and fades it before navigation. Subject and chapter reader entrances also use a deeper perspective move. Modified clicks and reduced-motion preferences keep native accessible behavior. Forty-one application tests, typecheck, lint, 13 research checks, production build and public-build scan pass. No syllabus, paper, template or AI counts changed; no Sites version or deployment was attempted. The newest local source is still ahead of GitHub `3c2b6ed`.
+
+Read `CONTINUE_ASTRA.md` first when resuming the research phase. No reset consumed.
+
+# Previous checkpoint — grain dissolve and Physics text leaf index (historical)
+
+PAUSED after final usage read: 2% five-hour / 69% weekly. Implementation 4a4e42b saved. Latest user correction supersedes grain: smooth fade-away with 3D for subjects AND chapter Open clicks is queued first for next session. It has not yet been applied. No reset consumed. Newest local source remains unsynced beyond GitHub 3c2b6ed.
+
+Read `research/checkpoints/2026-09-10-GRAIN-AND-LEAF-INDEX.md` first. 41 tests, lint and Sites build pass. Shelf grain/3D effect implemented; 51 text-indexed Physics leaves reconcile to 110 marks, with whole visual/detail audit still pending. Completion counts unchanged. Save/sync remaining local delta and pause at the 5% allowance threshold. No reset consumed.
+
+# Previous checkpoint — resumed UI audit
+
+Read `research/checkpoints/2026-09-10-RESUMED-UI-AUDIT.md` first. Actual shelf exit animation, measured road clipping and book text overlap are repaired. Lint, 40 tests, 13 research checks, isolated D1 runtime and Sites build pass. Prior saved source 35d8bc5 is mirrored on GitHub 3c2b6ed; this repair delta needs syncing. Counts unchanged. Continue the Physics leaf inventory before marking any whole paper processed. AI remains last; no reset consumed.
+
+# Previous checkpoint — visual polish
 
 Read `research/checkpoints/2026-09-10-VISUAL-POLISH.md` first. Local visual update `aa16add` passes 40 tests, typecheck, production build and public scan. GitHub sync was blocked by the platform usage limit; deployment remains pending. Counts are unchanged.
 

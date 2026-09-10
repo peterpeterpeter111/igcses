@@ -1,7 +1,7 @@
 'use client';
 
-import Link from 'next/link';
-import { useEffect, useRef, useState } from 'react';
+import { useId, useLayoutEffect, useRef, useState } from 'react';
+import { ChapterOpenLink } from '@/components/subject-book-link';
 
 type Chapter = {
   id: string;
@@ -20,43 +20,31 @@ export function ChapterPath({
 }) {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
-  const routeRef = useRef<SVGPathElement>(null);
+  const clipId = useId();
   const [progress, setProgress] = useState(0);
-  useEffect(() => {
+  useLayoutEffect(() => {
     const container = containerRef.current;
-    const route = routeRef.current;
-    if (!container || !route) return;
+    if (!container) return;
     const measure = () => {
-      const target = container.querySelector(
-        '.is-selected .chapter-stop-anchor, .is-selected .chapter-card',
+      const target = container.querySelector<HTMLElement>(
+        '.is-selected .chapter-stop-anchor',
       );
-      const svg = route.ownerSVGElement;
-      if (!target || !svg) {
+      const stop = target?.offsetParent as HTMLElement | null;
+      if (!target || !stop || !container.clientHeight) {
         setProgress(0);
         return;
       }
-      const bounds = svg.getBoundingClientRect();
-      const targetBounds = target.getBoundingClientRect();
-      if (!bounds.height) return;
-      const targetY =
-        ((targetBounds.top + targetBounds.height / 2 - bounds.top) /
-          bounds.height) *
-        1000;
-      const length = route.getTotalLength();
-      let low = 0,
-        high = length;
-      // The curve moves monotonically downwards. Locate the selected card's
-      // actual height along it, including wrapped text and expanded panels.
-      for (let i = 0; i < 24; i++) {
-        const mid = (low + high) / 2;
-        if (route.getPointAtLength(mid).y < targetY) low = mid;
-        else high = mid;
-      }
-      setProgress(length ? (low + high) / (2 * length) : 0);
+      // Layout coordinates avoid entrance transforms. Clip by height rather
+      // than arc length: non-scaling SVG dashes drift when the road stretches.
+      const y = stop.offsetTop + target.offsetTop + target.offsetHeight / 2;
+      setProgress(Math.max(0, Math.min(1, y / container.clientHeight)));
     };
     measure();
     const observer = new ResizeObserver(measure);
     observer.observe(container);
+    container
+      .querySelectorAll('.chapter-card')
+      .forEach((card) => observer.observe(card));
     return () => observer.disconnect();
   }, [selectedId]);
   return (
@@ -71,17 +59,19 @@ export function ChapterPath({
         preserveAspectRatio="none"
         aria-hidden="true"
       >
+        <defs>
+          <clipPath id={clipId} clipPathUnits="userSpaceOnUse">
+            <rect x="-10" y="0" width="140" height={progress * 1000} />
+          </clipPath>
+        </defs>
         <path
-          ref={routeRef}
           vectorEffect="non-scaling-stroke"
           d="M42 0 C95 90 16 160 58 250 S18 420 67 510 S17 680 59 770 S25 930 52 1000"
         />
         <path
           className="chapter-route-glow"
           vectorEffect="non-scaling-stroke"
-          pathLength="1"
-          strokeDasharray="1"
-          strokeDashoffset={1 - progress}
+          clipPath={'url(#' + clipId + ')'}
           d="M42 0 C95 90 16 160 58 250 S18 420 67 510 S17 680 59 770 S25 930 52 1000"
         />
       </svg>
@@ -147,13 +137,10 @@ export function ChapterPath({
                     ✿
                   </span>
                   <p>{chapter.terms.join(' · ')}</p>
-                  <Link
-                    className="action primary"
-                    aria-label={'Open ' + chapter.title + ' chapter'}
+                  <ChapterOpenLink
+                    chapterTitle={chapter.title}
                     href={'/subjects/' + subjectId + '/' + chapter.id}
-                  >
-                    Open
-                  </Link>
+                  />
                 </div>
               </div>
             )}

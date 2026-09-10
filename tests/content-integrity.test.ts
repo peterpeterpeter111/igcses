@@ -4,7 +4,7 @@ import { subjects } from '../content/catalog.ts';
 import { notes } from '../content/notes.ts';
 import { searchAll } from '../lib/library.ts';
 
-test('catalog contains six uniquely addressable subjects and chapters', () => {
+void test('catalog contains six uniquely addressable subjects and chapters', () => {
   assert.equal(subjects.length, 6);
   assert.equal(new Set(subjects.map((subject) => subject.id)).size, 6);
   assert.equal(new Set(subjects.map((subject) => subject.code)).size, 6);
@@ -18,7 +18,7 @@ test('catalog contains six uniquely addressable subjects and chapters', () => {
   }
 });
 
-test('partial notes point to catalog chapters and retain incomplete status', () => {
+void test('partial notes point to catalog chapters and retain incomplete status', () => {
   assert.equal(notes.length, 7);
   assert.equal(
     new Set(notes.map((note) => note.subjectId + ':' + note.chapterId)).size,
@@ -42,7 +42,7 @@ test('partial notes point to catalog chapters and retain incomplete status', () 
   }
 });
 
-test('cross-subject search returns each matching subject without mutating content', () => {
+void test('cross-subject search returns each matching subject without mutating content', () => {
   const results = searchAll('mitochondria');
   const subjectsFound = new Set(
     results.map((result) => result.href.split('/')[2]),
@@ -56,7 +56,7 @@ test('cross-subject search returns each matching subject without mutating conten
   );
 });
 
-test('teaching diagrams and nested material have valid searchable chapter targets', async () => {
+void test('teaching diagrams and nested material have valid searchable chapter targets', async () => {
   const { existsSync } = await import('node:fs');
   for (const note of notes) {
     for (const section of note.sections) {

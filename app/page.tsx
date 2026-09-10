@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { SubjectBookLink } from '@/components/subject-book-link';
 const subjects = [
   ['human-biology', 'Human Biology', '4HB1'],
   ['biology', 'Biology', '4BI1'],
@@ -41,14 +42,14 @@ export default function Home() {
           </div>
           <nav className="subject-list" aria-label="Subjects">
             {subjects.map(([id, name, code], i) => (
-              <Link className="subject-row" href={'/subjects/' + id} key={id}>
+              <SubjectBookLink href={'/subjects/' + id} key={id}>
                 <span className="index">0{i + 1}</span>
                 <span className="subject-name">{name}</span>
                 <span className="subject-code">{code}</span>
                 <span className="subject-arrow" aria-hidden="true">
                   ↗
                 </span>
-              </Link>
+              </SubjectBookLink>
             ))}
           </nav>
           <div className="shelf-base" aria-hidden="true" />

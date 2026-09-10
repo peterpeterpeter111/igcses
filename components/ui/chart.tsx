@@ -152,7 +152,7 @@ function ChartTooltipContent({
     }
 
     const [item] = payload;
-    const key = `${labelKey ?? item?.dataKey ?? item?.name ?? 'value'}`;
+    const key = payloadKey(labelKey, item?.dataKey, item?.name);
     const itemConfig = getPayloadConfigFromPayload(config, item, key);
     const value =
       !labelKey && typeof label === 'string'
@@ -200,7 +200,7 @@ function ChartTooltipContent({
         {payload
           .filter((item) => item.type !== 'none')
           .map((item, index) => {
-            const key = `${nameKey ?? item.name ?? item.dataKey ?? 'value'}`;
+            const key = payloadKey(nameKey, item.name, item.dataKey);
             const itemConfig = getPayloadConfigFromPayload(config, item, key);
             const indicatorColor = color ?? item.payload?.fill ?? item.color;
 
@@ -299,7 +299,7 @@ function ChartLegendContent({
       {payload
         .filter((item) => item.type !== 'none')
         .map((item, index) => {
-          const key = `${nameKey ?? item.dataKey ?? 'value'}`;
+          const key = payloadKey(nameKey, item.dataKey);
           const itemConfig = getPayloadConfigFromPayload(config, item, key);
 
           return (
@@ -325,6 +325,15 @@ function ChartLegendContent({
         })}
     </div>
   );
+}
+
+// Recharts also permits a function dataKey. It is an accessor, not a config
+// identifier; never stringify its source into a lookup key.
+function payloadKey(...candidates: unknown[]) {
+  const key = candidates.find(
+    (value) => typeof value === 'string' || typeof value === 'number',
+  );
+  return key === undefined ? 'value' : String(key);
 }
 
 function getPayloadConfigFromPayload(

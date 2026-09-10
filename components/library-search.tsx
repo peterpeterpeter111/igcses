@@ -34,10 +34,10 @@ export function LibrarySearch({ subjectId }: { subjectId: string }) {
       />
       {query.trim() && (
         <div className="search-results">
-          <p role="status">
+          <output className="search-count" htmlFor="chapter-search">
             {results.length} matching{' '}
             {results.length === 1 ? 'section' : 'sections'}
-          </p>
+          </output>
           {results.map((r) => (
             <Link className="search-result" href={r.href} key={r.href}>
               <strong>

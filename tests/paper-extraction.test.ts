@@ -3,8 +3,34 @@ import assert from 'node:assert/strict';
 import extracted from '../research/extractions/4PH1-2024-June-1-standard.json' with { type: 'json' };
 import batch from '../research/batches/2026-09-08-cross-subject-lower-01.manifest.json' with { type: 'json' };
 import syllabus from '../research/syllabus/4PH1-forces-and-motion.json' with { type: 'json' };
+import leafIndex from '../research/reviews/2026-09-10-physics-leaf-index.json' with { type: 'json' };
 
-test('Physics extraction keeps source pages, documents, task marks and raw index distinct', () => {
+void test('text leaf index reconciles all 110 marks without promoting processing status', () => {
+  assert.equal(leafIndex.indexedLeafCount, leafIndex.tasks.length);
+  assert.equal(new Set(leafIndex.tasks.map((t) => t.taskId)).size, 51);
+  assert.equal(
+    leafIndex.tasks.reduce((n, t) => n + t.originalMarks, 0),
+    110,
+  );
+  for (const group of leafIndex.questionTotals) {
+    assert.equal(
+      leafIndex.tasks
+        .filter((t) => t.questionPath.split('.')[0] === String(group.question))
+        .reduce((n, t) => n + t.originalMarks, 0),
+      group.marks,
+    );
+  }
+  for (const task of extracted.tasks) {
+    const indexed = leafIndex.tasks.find((t) => t.taskId === task.taskId);
+    assert.equal(indexed?.originalMarks, task.originalMarks);
+  }
+  assert.equal(leafIndex.questionPaperSha256, extracted.documents[0].sha256);
+  assert.equal(leafIndex.markSchemeSha256, extracted.documents[1].sha256);
+  assert.equal(leafIndex.fullyProcessed, false);
+  assert.equal(leafIndex.visualPageAuditComplete, false);
+});
+
+void test('Physics extraction keeps source pages, documents, task marks and raw index distinct', () => {
   const raw = batch.records.find((row) => row.paperId === extracted.paperId)!;
   assert.equal(raw.processingStatus, 'indexed-only');
   assert.equal(extracted.fullyProcessed, false);

@@ -7,7 +7,7 @@ import {
   type ForceParameters,
 } from '../server/generators/collinear-resultant.ts';
 
-test('seeded force prototypes vary structure and remain deterministic and ineligible for live quizzes', () => {
+void test('seeded force prototypes vary structure and remain deterministic and ineligible for live quizzes', () => {
   const signatures = new Set<string>(),
     questions = new Set<string>();
   for (let seed = 0; seed < 200; seed++) {
@@ -32,7 +32,7 @@ test('seeded force prototypes vary structure and remain deterministic and inelig
   assert.equal(questions.size, 200);
 });
 
-test('force prototypes solve direct and inverse boundary cases in every supported structure', () => {
+void test('force prototypes solve direct and inverse boundary cases in every supported structure', () => {
   for (const task of ['resultant', 'missing-force'] as const)
     for (const representation of ['prose', 'table'] as const)
       for (const axis of ['horizontal', 'vertical'] as const)
@@ -59,7 +59,7 @@ test('force prototypes solve direct and inverse boundary cases in every supporte
           }
 });
 
-test('force prototypes reject singular or out-of-domain inputs and corrupted solutions', () => {
+void test('force prototypes reject singular or out-of-domain inputs and corrupted solutions', () => {
   const p: ForceParameters = {
     task: 'resultant',
     representation: 'prose',
@@ -88,7 +88,7 @@ test('force prototypes reject singular or out-of-domain inputs and corrupted sol
   assert.equal(validateResultantPrototype(wrongDirection), false);
 });
 
-test('force prototype validation rejects changed public data in both representations', () => {
+void test('force prototype validation rejects changed public data in both representations', () => {
   for (const representation of ['prose', 'table'] as const) {
     const q = buildResultantPrototype(0, {
       task: 'resultant',
