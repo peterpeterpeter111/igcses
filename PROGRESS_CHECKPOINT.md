@@ -1,3 +1,11 @@
+# Latest status — weekly pause threshold still reached
+
+Read `research/checkpoints/2026-09-10-RESUME-GATE.md` first. Five-hour allowance reset (98% remaining), but weekly allowance is at 5% remaining. No application changes on this resume attempt; previous verified implementation and counts remain current.
+
+# Paused — 5% five-hour allowance remaining
+
+Latest implementation: local `3db7c60`, exact-tree GitHub mirror `617f809`. Read `research/checkpoints/2026-09-10-PHYSICS-EXTRACTION.md`, including its final pause section. Forty tests pass and production build succeeds. This checkpoint-only update is newer locally than the verified GitHub mirror. No reset credit consumed. Resume using CONTINUE_ASTRA.md.
+
 # Latest checkpoint — Physics extraction and generator prototype
 
 Read `research/checkpoints/2026-09-10-PHYSICS-EXTRACTION.md` first. Six partial note documents/24 sections, 33 partially taught Physics parents, 7 detailed Physics paper parts (23 original marks), two provisional template definitions and one experimental generator. Zero complete chapters/points, fully processed papers or active templates. 40 tests, 13 research checks, typecheck, build and public scan pass. Earlier checkpoint counts below are historical.

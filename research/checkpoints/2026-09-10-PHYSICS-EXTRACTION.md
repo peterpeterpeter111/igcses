@@ -35,3 +35,11 @@ research/extractions/4PH1-2024-June-1-standard.json; research/templates/4PH1-col
 3. Review Physics force-family inverse/three-force adaptations, original AO mapping and marking alternatives/contradictions. Add calibration exemplars and robust validators before any activation. Sketch/tangent/area families need an input design decision; typed answers cannot reproduce graph drawing marks. Do not treat successful algebra tests as assessment validation.
 4. Continue exact substatement inventories and curriculum across all six subjects. All-subject completion is the largest remaining body of work. Obtain Mathematics B source evidence before claiming its paper coverage.
 5. Keep AI last. Complete privacy/export/telemetry, navigation-loss review, browser end-to-end/authentication, production D1 migration and deployment verification. Build/test before a Sites version or deployment; only present a verified live URL.
+
+## Paused at the requested threshold
+
+Final usage reading: five-hour Codex allowance 95% used (5% remaining), weekly 94% used (6% remaining). Paused immediately after this reading; no reset consumed.
+
+Implementation commit 3db7c60bd82fa4456be7c38169c8c29ed3de867d is backed up on GitHub main as 617f80991bbbb85017eec717909ef775a16c2853. Branch fetched and verified: both trees equal be043a72000219d962a93dd2c94e7a51db381e29. Connector text reads must preserve CRLF bytes (use git show bytes.decode, not Path.read_text) to reproduce exact CSV blob hashes. No force update or local history replacement used. This final checkpoint-only commit will be newer locally and needs a small sync on resume.
+
+Final local browser screenshot confirms Physics coverage displays seven parts/23 marks and explicitly incomplete whole-paper status. One remaining wording hole was found at app/coverage/page.tsx:103: global coverage still mentions only the English provisional family. On resume update it to two provisional definitions, one experimental generator, zero active templates; also mention the partial Physics extraction. This was recorded rather than changing application code after the pause threshold. The final path-progress endpoint after the ResizeObserver fix still needs a browser check at chapter four, including narrow viewport and reduced-motion behavior. No claim of comprehensive visual or production QA.
