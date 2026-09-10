@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-10",
+  "paperId": "4PH1-2024-June-1-standard",
+  "scope": "Top-level totals in existing text extraction only; not leaf/subpart reconciliation or full visual review.",
+  "questionTotals": [
+    {
+      "question": 1,
+      "marks": 5
+    },
+    {
+      "question": 2,
+      "marks": 5
+    },
+    {
+      "question": 3,
+      "marks": 10
+    },
+    {
+      "question": 4,
+      "marks": 9
+    },
+    {
+      "question": 5,
+      "marks": 11
+    },
+    {
+      "question": 6,
+      "marks": 8
+    },
+    {
+      "question": 7,
+      "marks": 12
+    },
+    {
+      "question": 8,
+      "marks": 6
+    },
+    {
+      "question": 9,
+      "marks": 6
+    },
+    {
+      "question": 10,
+      "marks": 15
+    },
+    {
+      "question": 11,
+      "marks": 11
+    },
+    {
+      "question": 12,
+      "marks": 12
+    }
+  ],
+  "sum": 110,
+  "declaredPaperMarks": 110,
+  "sourceSha256": "3c1e2eea09258259ce0ae86d6adf24da26a1320e297317c60f64c272839b8454",
+  "textExtractionAnomaly": "Question 7 total appears as otal for Question 7 = 12 marks; missing leading T. The explicit number 12 was read, not inferred by subtraction.",
+  "fullyProcessed": false,
+  "leafCount": null,
+  "blockers": [
+    "Reconcile all subpart paths and original maxima with source pages and mark scheme.",
+    "Audit all visual stimuli and the equation enclosure.",
+    "Complete solutions, current-syllabus mappings and template links."
+  ]
+}

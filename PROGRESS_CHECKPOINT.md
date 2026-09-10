@@ -1,3 +1,11 @@
+# Latest checkpoint — visual polish
+
+Read `research/checkpoints/2026-09-10-VISUAL-POLISH.md` first. Local visual update `aa16add` passes 40 tests, typecheck, production build and public scan. GitHub sync was blocked by the platform usage limit; deployment remains pending. Counts are unchanged.
+
+# Paused after Waves — allowance threshold crossed
+
+Read `research/checkpoints/2026-09-10-WAVES-PAUSED.md` first. Latest five-hour allowance is 3% remaining, weekly 85%. Waves implementation is committed and exactly mirrored on GitHub. Subsequent README/question-total review and this checkpoint are local-only pending sync. No further application work until both allowances exceed 5%.
+
 # Latest checkpoint — Waves teaching expansion
 
 Read `research/checkpoints/2026-09-10-WAVES-TEACHING.md` and `2026-09-10-PATH-VERIFIED.md` first. Seven partial notes/40 sections, 62 reviewed Physics parent statements and 78 partial teaching links. Zero completed chapters/points/papers or active templates. Forty tests, 13 research checks, typecheck and production build pass. Earlier pause messages below are historical; work resumed after both allowances became available.

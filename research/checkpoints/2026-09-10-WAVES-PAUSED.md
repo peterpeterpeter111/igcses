@@ -1,0 +1,11 @@
+# Paused after Waves — 10 September 2026
+
+Latest usage check: five-hour 97% used (3% remaining), weekly 15% used (85% remaining). Prior check was five-hour 91% used; the threshold was crossed during bounded README/paper-total work. Paused immediately when the new reading arrived. This agent did not consume a reset credit.
+
+Verified implementation: local 5bde089d97af84c2f3276d472a63e649a86ed0e5, GitHub main mirror f0d3ef5dbc7a64326d43d4bbcf78ab99a9f68399. Exact tree verified: 9832679238d9aeae36a12e92c4fd3cde6fb30049. Later local 5b9227b updates README counts and adds a bounded text-only question-total report; it and this pause checkpoint still need syncing. Preserve both histories and verify current GitHub main before a non-force delta sync.
+
+Read 2026-09-10-WAVES-TEACHING.md and PATH-VERIFIED.md for implementation and checks: seven partial note documents/40 sections; 62 reviewed Physics parent identities/78 partial teaching links; six diagrams. Forty tests, 13 research checks, typecheck, final production build and public scan passed. Seed tested in isolated SQLite. Browser checked chapter-four path at 390/1280 widths and both Waves figures. Temporary viewport restored.
+
+Paper totals review: research/reviews/2026-09-10-physics-question-totals.json records all 12 top-level question totals summing to 110 from existing extracted text. Q7 has a truncated leading T in its total label. This is not leaf inventory or whole-paper processing; leaf count stays unknown. Detailed Physics parts remain seven/23 marks. Six obtained pairs, zero fully processed papers. Two provisional templates, one experimental runtime, zero active templates. No completed chapters/points, AI integration, Sites version or deployed URL.
+
+Next: sync local documentation/review delta; finish Physics whole-paper leaf/page inventory and scheme reconciliation, detailed extraction/mapping and calibrated source-derived families. Continue full curriculum/substatement auditing across all subjects; Mathematics acquisition remains open. Keep AI last and counts honest. No further confirmation needed for authorised work. Check both allowances at resume and between small phases, pausing at 5% remaining in either; do not consume a reset.

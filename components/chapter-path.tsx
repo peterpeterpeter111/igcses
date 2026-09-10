@@ -27,17 +27,21 @@ export function ChapterPath({
     const route = routeRef.current;
     if (!container || !route) return;
     const measure = () => {
-      const card = container.querySelector('.is-selected .chapter-card');
+      const target = container.querySelector(
+        '.is-selected .chapter-stop-anchor, .is-selected .chapter-card',
+      );
       const svg = route.ownerSVGElement;
-      if (!card || !svg) {
+      if (!target || !svg) {
         setProgress(0);
         return;
       }
       const bounds = svg.getBoundingClientRect();
-      const target = card.getBoundingClientRect();
+      const targetBounds = target.getBoundingClientRect();
       if (!bounds.height) return;
       const targetY =
-        ((target.top + target.height / 2 - bounds.top) / bounds.height) * 1000;
+        ((targetBounds.top + targetBounds.height / 2 - bounds.top) /
+          bounds.height) *
+        1000;
       const length = route.getTotalLength();
       let low = 0,
         high = length;
@@ -101,6 +105,7 @@ export function ChapterPath({
             className={'chapter-stop' + (selected ? ' is-selected' : '')}
             key={chapter.id}
           >
+            <span className="chapter-stop-anchor" aria-hidden="true" />
             <button
               type="button"
               className="chapter-card"
@@ -128,16 +133,28 @@ export function ChapterPath({
             </button>
             {selected && (
               <div className="chapter-book" id={panelId}>
-                <span className="chapter-book-petal" aria-hidden="true">
-                  ✿
-                </span>
-                <p>{chapter.terms.join(' · ')}</p>
-                <Link
-                  className="action primary"
-                  href={'/subjects/' + subjectId + '/' + chapter.id}
-                >
-                  Open chapter like a book ↗
-                </Link>
+                <span
+                  className="chapter-book-page chapter-book-page-left"
+                  aria-hidden="true"
+                />
+                <span
+                  className="chapter-book-page chapter-book-page-right"
+                  aria-hidden="true"
+                />
+                <span className="chapter-book-spine" aria-hidden="true" />
+                <div className="chapter-book-content">
+                  <span className="chapter-book-petal" aria-hidden="true">
+                    ✿
+                  </span>
+                  <p>{chapter.terms.join(' · ')}</p>
+                  <Link
+                    className="action primary"
+                    aria-label={'Open ' + chapter.title + ' chapter'}
+                    href={'/subjects/' + subjectId + '/' + chapter.id}
+                  >
+                    Open
+                  </Link>
+                </div>
               </div>
             )}
           </div>

@@ -30,7 +30,7 @@ export default async function SubjectPage({
         <div className="eyebrow">{s.code} · LINEAR QUALIFICATION</div>
         <h1>{s.title}</h1>
         <p className="intro">{s.overview}</p>
-        <div className="book-shell">
+        <div className="book-shell subject-reader">
           <div className="book-spine" aria-hidden="true" />
           <div className="reading-layout">
             <aside className="left-book">
@@ -45,12 +45,14 @@ export default async function SubjectPage({
             </aside>
             <article>
               <LibrarySearch subjectId={s.id} />
-              <h2>Contents</h2>
-              <p className="status">
-                This chapter structure is in place. Each chapter shows which
-                notes are written and which coverage checks remain.
-              </p>
-              <ChapterPath subjectId={s.id} chapters={s.chapters} />
+              <div className="subject-contents">
+                <h2>Contents</h2>
+                <p className="status">
+                  This chapter structure is in place. Each chapter shows which
+                  notes are written and which coverage checks remain.
+                </p>
+                <ChapterPath subjectId={s.id} chapters={s.chapters} />
+              </div>
             </article>
           </div>
         </div>

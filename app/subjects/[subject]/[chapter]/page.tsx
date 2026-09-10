@@ -37,7 +37,7 @@ export default async function ChapterPage({
             <a href="#sources">Sources & status</a>
             <Link href={'/subjects/' + s.id}>← All chapters</Link>
           </aside>
-          <article>
+          <article className="chapter-reader">
             <div className="eyebrow">
               {s.code} · {c.section}
             </div>
