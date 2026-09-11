@@ -1,4 +1,8 @@
-# Latest checkpoint — Navigation recovery
+# Latest checkpoint — paused after navigation recovery
+
+Read research/checkpoints/2026-09-11-PAUSED-AFTER-NAVIGATION.md first. Paused at 0% five-hour / 21% weekly remaining; no reset. Local `5a42d90` is clean; GitHub `74dec545` exactly mirrors the prior code commit `4237cf2`, while this documentation-only pause is pending sync. Browser smoke for Physics Electricity returned HTTP 200 and showed the new sections; full animation click-through remains unverified. Current counts: nine partial notes / 74 sections, 113 reviewed Physics parents / 135 partial links, 24 detailed Physics leaves / 59 marks, six obtained pairs, zero fully processed papers or complete chapters/points, zero validated/active templates. 57 tests, typecheck, lint, production build and public scan pass. No AI integration, Sites version or deployment. Resume only after both allowances exceed 5%.
+
+# Previous checkpoint — Navigation recovery
 
 Read research/checkpoints/2026-09-11-NAVIGATION-RECOVERY.md first. Fixed invisible chapter cards after stalled navigation, with retained animation cleanup and bounded recovery for both chapter and shelf links. 57 tests, typecheck, lint, production build and public scan pass. Current content: nine partial notes/74 sections, 113 reviewed Physics parents/135 partial links; Physics 24 detailed leaves/59 marks; zero complete chapters/points/papers or validated/active templates. GitHub b23f255 exactly mirrors ec90ddc; this later repair/checkpoint delta needs syncing. No reset, AI integration, Sites version or deployment. Earlier entries are historical.
 

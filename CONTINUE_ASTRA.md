@@ -1,4 +1,8 @@
-# Latest resume — Navigation recovery
+# Latest resume — paused after navigation recovery
+
+When allowance returns, read PROGRESS_CHECKPOINT.md and research/checkpoints/2026-09-11-PAUSED-AFTER-NAVIGATION.md first. Check both allowances; continue only above 5%, never consume a reset. Preserve local `4237cf2` and remote mirror `74dec545`; verify the ref before syncing anything. Current counts: nine partial notes/74 sections, 113 reviewed Physics parents/135 partial links, Physics 24 detailed leaves/59 marks, six obtained pairs, zero complete chapters/points/papers or validated/active templates. 57 tests, typecheck, lint, production build and public scan pass. Full animation click-through is still unverified. Continue Q1/Q2/Q4/Q9/Q10/Q11 extraction, curriculum/substatement audits and calibrated templates; keep AI last and defer Sites version/deployment until final verification. Save/pause at 5%.
+
+# Previous resume — Navigation recovery
 
 Continue the latest local commit. Read PROGRESS_CHECKPOINT.md and research/checkpoints/2026-09-11-NAVIGATION-RECOVERY.md first. Preserve the repaired navigation lifecycle and all content/history. 57 tests and production build pass; counts remain nine partial notes/74 sections, 113 reviewed Physics parents/135 partial links, Physics 24 detailed leaves/59 marks, zero complete chapters/points/papers or validated/active templates. Finish any GitHub delta from b23f255 (ec90ddc mirror), verify navigation in the browser, then continue extraction, curriculum/substatement audits and calibrated templates. Keep AI last, no reset, no Sites version/deployment yet. Continue only if both allowances exceed 5%, and checkpoint/pause at 5%. Below is historical.
 
