@@ -1,4 +1,8 @@
-# Latest checkpoint — Electricity teaching
+# Latest checkpoint — Navigation recovery
+
+Read research/checkpoints/2026-09-11-NAVIGATION-RECOVERY.md first. Fixed invisible chapter cards after stalled navigation, with retained animation cleanup and bounded recovery for both chapter and shelf links. 57 tests, typecheck, lint, production build and public scan pass. Current content: nine partial notes/74 sections, 113 reviewed Physics parents/135 partial links; Physics 24 detailed leaves/59 marks; zero complete chapters/points/papers or validated/active templates. GitHub b23f255 exactly mirrors ec90ddc; this later repair/checkpoint delta needs syncing. No reset, AI integration, Sites version or deployment. Earlier entries are historical.
+
+# Previous checkpoint — Electricity teaching
 
 Read research/checkpoints/2026-09-11-ELECTRICITY.md first. Nine partial notes / 74 sections; 113 reviewed Physics parents / 135 partial teaching links. Physics detail remains 24 leaves / 59 marks. Six obtained pairs; zero complete chapters/points/papers or validated/active templates. 52 tests, typecheck, lint, research checks, production build and public scan pass. GitHub 8847d99 mirrors 450edbf; later gate/Q6/Electricity work needs syncing. No AI integration, reset, Sites version or deployment. Earlier entries are historical.
 

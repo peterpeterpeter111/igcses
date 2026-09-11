@@ -1,4 +1,8 @@
-# Latest resume — Electricity teaching
+# Latest resume — Navigation recovery
+
+Continue the latest local commit. Read PROGRESS_CHECKPOINT.md and research/checkpoints/2026-09-11-NAVIGATION-RECOVERY.md first. Preserve the repaired navigation lifecycle and all content/history. 57 tests and production build pass; counts remain nine partial notes/74 sections, 113 reviewed Physics parents/135 partial links, Physics 24 detailed leaves/59 marks, zero complete chapters/points/papers or validated/active templates. Finish any GitHub delta from b23f255 (ec90ddc mirror), verify navigation in the browser, then continue extraction, curriculum/substatement audits and calibrated templates. Keep AI last, no reset, no Sites version/deployment yet. Continue only if both allowances exceed 5%, and checkpoint/pause at 5%. Below is historical.
+
+# Previous resume — Electricity teaching
 
 Resume the latest local commit and read PROGRESS_CHECKPOINT.md plus research/checkpoints/2026-09-11-ELECTRICITY.md first. Preserve history and existing UI. Nine partial notes/74 sections, 113 reviewed Physics parents/135 partial links, Physics 24 detailed leaves/59 marks, six obtained pairs; zero complete chapters/points/papers or validated/active templates. 52 tests and production build pass. Finish pending non-force GitHub delta from 8847d99 (450edbf mirror), then continue remaining extraction, curriculum/substatement audits and calibrated templates. Navigation-failure recovery review remains queued. Keep AI integration last; no Sites version or deployment. Both allowances must exceed 5%; checkpoint/pause at 5% and never consume a reset. All entries below are historical.
 
