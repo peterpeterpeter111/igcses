@@ -1,3 +1,9 @@
+# Latest resume — paused after Physics and force calibration
+
+Resume the latest local commit and CONTINUE_ASTRA.md. Read PROGRESS_CHECKPOINT.md and research/checkpoints/2026-09-11-PAUSED-AFTER-PHYSICS.md first. Check both allowances; continue only when both exceed 5%, and pause/checkpoint at 5%. Preserve all history and consume no reset. Verify or finish the pending non-force GitHub sync. Physics has 195 reviewed parent identities and 51 detailed paper records covering 110 marks, but zero fully processed papers. Continue the Q10 experimental/mathematical-skills audit, curriculum substatements and template assessment-demand calibration. Keep all counts honest, the existing UI intact and AI integration last. Build/test before any Sites save or deployment.
+
+Latest implementation bd8e75f follows ff5e9c6. Read the newest pause checkpoint for exact totals, source discrepancies and the inspected-but-unsaved Q10 skills audit. The following entries are historical.
+
 # Latest resume — Physics detailed records
 
 Read PROGRESS_CHECKPOINT.md and research/checkpoints/2026-09-11-PHYSICS-DETAILED-RECORDS.md first; preserve the latest local descendant. Check both allowances and continue only above 5%; checkpoint/pause at 5%, no reset. Sync any new checkpoint delta non-force from GitHub ce1fe19. Physics has 195 reviewed parent identities and 51 detailed leaf records / 110 marks, but zero fully processed papers or complete chapters/points. Nine partial notes / 74 sections; two provisional families, zero validated/active. Next: curriculum substatements, explicit practical-skill applicability, calibrated templates and remaining paper gates. Preserve the three source inconsistencies and provisional status; AI last. All earlier entries are historical.

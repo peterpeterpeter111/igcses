@@ -1,0 +1,803 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-09-11",
+  "reviewer": "Codex Astra",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Eight independently solved force setups, each shown in prose and table form: 16 structural fixtures with 96 synthetic final-answer outcomes. Expected answers are authored constants, not obtained from the generator. This is arithmetic and bounded rubric calibration, not real-student or difficulty validation.",
+  "sourceTaskId": "4PH1-2024-June-1-standard.Q5.b.i",
+  "fixtures": [
+    {
+      "id": "resultant-horizontal-2-prose",
+      "parameters": {
+        "task": "resultant",
+        "axis": "horizontal",
+        "forces": [
+          45,
+          -20
+        ],
+        "representation": "prose",
+        "context": 0
+      },
+      "independentAnswer": {
+        "magnitude": "2.5",
+        "direction": "right"
+      },
+      "responses": [
+        {
+          "magnitude": "2.5",
+          "direction": "right",
+          "expectedScore": 2
+        },
+        {
+          "magnitude": "999",
+          "direction": "right",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "2.5",
+          "direction": "left",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "999",
+          "direction": "left",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "",
+          "direction": "",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "two competing answers",
+          "direction": "right",
+          "expectedScore": null
+        }
+      ]
+    },
+    {
+      "id": "resultant-horizontal-2-table",
+      "parameters": {
+        "task": "resultant",
+        "axis": "horizontal",
+        "forces": [
+          45,
+          -20
+        ],
+        "representation": "table",
+        "context": 0
+      },
+      "independentAnswer": {
+        "magnitude": "2.5",
+        "direction": "right"
+      },
+      "responses": [
+        {
+          "magnitude": "2.5",
+          "direction": "right",
+          "expectedScore": 2
+        },
+        {
+          "magnitude": "999",
+          "direction": "right",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "2.5",
+          "direction": "left",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "999",
+          "direction": "left",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "",
+          "direction": "",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "two competing answers",
+          "direction": "right",
+          "expectedScore": null
+        }
+      ]
+    },
+    {
+      "id": "resultant-vertical-2-prose",
+      "parameters": {
+        "task": "resultant",
+        "axis": "vertical",
+        "forces": [
+          20,
+          -32
+        ],
+        "representation": "prose",
+        "context": 0
+      },
+      "independentAnswer": {
+        "magnitude": "1.2",
+        "direction": "downwards"
+      },
+      "responses": [
+        {
+          "magnitude": "1.2",
+          "direction": "downwards",
+          "expectedScore": 2
+        },
+        {
+          "magnitude": "999",
+          "direction": "downwards",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "1.2",
+          "direction": "upwards",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "999",
+          "direction": "upwards",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "",
+          "direction": "",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "two competing answers",
+          "direction": "downwards",
+          "expectedScore": null
+        }
+      ]
+    },
+    {
+      "id": "resultant-vertical-2-table",
+      "parameters": {
+        "task": "resultant",
+        "axis": "vertical",
+        "forces": [
+          20,
+          -32
+        ],
+        "representation": "table",
+        "context": 0
+      },
+      "independentAnswer": {
+        "magnitude": "1.2",
+        "direction": "downwards"
+      },
+      "responses": [
+        {
+          "magnitude": "1.2",
+          "direction": "downwards",
+          "expectedScore": 2
+        },
+        {
+          "magnitude": "999",
+          "direction": "downwards",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "1.2",
+          "direction": "upwards",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "999",
+          "direction": "upwards",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "",
+          "direction": "",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "two competing answers",
+          "direction": "downwards",
+          "expectedScore": null
+        }
+      ]
+    },
+    {
+      "id": "resultant-horizontal-3-prose",
+      "parameters": {
+        "task": "resultant",
+        "axis": "horizontal",
+        "forces": [
+          -50,
+          15,
+          10
+        ],
+        "representation": "prose",
+        "context": 0
+      },
+      "independentAnswer": {
+        "magnitude": "2.5",
+        "direction": "left"
+      },
+      "responses": [
+        {
+          "magnitude": "2.5",
+          "direction": "left",
+          "expectedScore": 2
+        },
+        {
+          "magnitude": "999",
+          "direction": "left",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "2.5",
+          "direction": "right",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "999",
+          "direction": "right",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "",
+          "direction": "",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "two competing answers",
+          "direction": "left",
+          "expectedScore": null
+        }
+      ]
+    },
+    {
+      "id": "resultant-horizontal-3-table",
+      "parameters": {
+        "task": "resultant",
+        "axis": "horizontal",
+        "forces": [
+          -50,
+          15,
+          10
+        ],
+        "representation": "table",
+        "context": 0
+      },
+      "independentAnswer": {
+        "magnitude": "2.5",
+        "direction": "left"
+      },
+      "responses": [
+        {
+          "magnitude": "2.5",
+          "direction": "left",
+          "expectedScore": 2
+        },
+        {
+          "magnitude": "999",
+          "direction": "left",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "2.5",
+          "direction": "right",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "999",
+          "direction": "right",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "",
+          "direction": "",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "two competing answers",
+          "direction": "left",
+          "expectedScore": null
+        }
+      ]
+    },
+    {
+      "id": "resultant-vertical-3-prose",
+      "parameters": {
+        "task": "resultant",
+        "axis": "vertical",
+        "forces": [
+          40,
+          -15,
+          -10
+        ],
+        "representation": "prose",
+        "context": 0
+      },
+      "independentAnswer": {
+        "magnitude": "1.5",
+        "direction": "upwards"
+      },
+      "responses": [
+        {
+          "magnitude": "1.5",
+          "direction": "upwards",
+          "expectedScore": 2
+        },
+        {
+          "magnitude": "999",
+          "direction": "upwards",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "1.5",
+          "direction": "downwards",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "999",
+          "direction": "downwards",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "",
+          "direction": "",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "two competing answers",
+          "direction": "upwards",
+          "expectedScore": null
+        }
+      ]
+    },
+    {
+      "id": "resultant-vertical-3-table",
+      "parameters": {
+        "task": "resultant",
+        "axis": "vertical",
+        "forces": [
+          40,
+          -15,
+          -10
+        ],
+        "representation": "table",
+        "context": 0
+      },
+      "independentAnswer": {
+        "magnitude": "1.5",
+        "direction": "upwards"
+      },
+      "responses": [
+        {
+          "magnitude": "1.5",
+          "direction": "upwards",
+          "expectedScore": 2
+        },
+        {
+          "magnitude": "999",
+          "direction": "upwards",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "1.5",
+          "direction": "downwards",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "999",
+          "direction": "downwards",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "",
+          "direction": "",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "two competing answers",
+          "direction": "upwards",
+          "expectedScore": null
+        }
+      ]
+    },
+    {
+      "id": "missing-force-horizontal-2-prose",
+      "parameters": {
+        "task": "missing-force",
+        "axis": "horizontal",
+        "forces": [
+          -45,
+          20
+        ],
+        "representation": "prose",
+        "context": 0
+      },
+      "independentAnswer": {
+        "magnitude": "4.5",
+        "direction": "left"
+      },
+      "responses": [
+        {
+          "magnitude": "4.5",
+          "direction": "left",
+          "expectedScore": 2
+        },
+        {
+          "magnitude": "999",
+          "direction": "left",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "4.5",
+          "direction": "right",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "999",
+          "direction": "right",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "",
+          "direction": "",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "two competing answers",
+          "direction": "left",
+          "expectedScore": null
+        }
+      ]
+    },
+    {
+      "id": "missing-force-horizontal-2-table",
+      "parameters": {
+        "task": "missing-force",
+        "axis": "horizontal",
+        "forces": [
+          -45,
+          20
+        ],
+        "representation": "table",
+        "context": 0
+      },
+      "independentAnswer": {
+        "magnitude": "4.5",
+        "direction": "left"
+      },
+      "responses": [
+        {
+          "magnitude": "4.5",
+          "direction": "left",
+          "expectedScore": 2
+        },
+        {
+          "magnitude": "999",
+          "direction": "left",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "4.5",
+          "direction": "right",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "999",
+          "direction": "right",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "",
+          "direction": "",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "two competing answers",
+          "direction": "left",
+          "expectedScore": null
+        }
+      ]
+    },
+    {
+      "id": "missing-force-vertical-2-prose",
+      "parameters": {
+        "task": "missing-force",
+        "axis": "vertical",
+        "forces": [
+          32,
+          -20
+        ],
+        "representation": "prose",
+        "context": 0
+      },
+      "independentAnswer": {
+        "magnitude": "3.2",
+        "direction": "upwards"
+      },
+      "responses": [
+        {
+          "magnitude": "3.2",
+          "direction": "upwards",
+          "expectedScore": 2
+        },
+        {
+          "magnitude": "999",
+          "direction": "upwards",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "3.2",
+          "direction": "downwards",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "999",
+          "direction": "downwards",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "",
+          "direction": "",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "two competing answers",
+          "direction": "upwards",
+          "expectedScore": null
+        }
+      ]
+    },
+    {
+      "id": "missing-force-vertical-2-table",
+      "parameters": {
+        "task": "missing-force",
+        "axis": "vertical",
+        "forces": [
+          32,
+          -20
+        ],
+        "representation": "table",
+        "context": 0
+      },
+      "independentAnswer": {
+        "magnitude": "3.2",
+        "direction": "upwards"
+      },
+      "responses": [
+        {
+          "magnitude": "3.2",
+          "direction": "upwards",
+          "expectedScore": 2
+        },
+        {
+          "magnitude": "999",
+          "direction": "upwards",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "3.2",
+          "direction": "downwards",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "999",
+          "direction": "downwards",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "",
+          "direction": "",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "two competing answers",
+          "direction": "upwards",
+          "expectedScore": null
+        }
+      ]
+    },
+    {
+      "id": "missing-force-horizontal-3-prose",
+      "parameters": {
+        "task": "missing-force",
+        "axis": "horizontal",
+        "forces": [
+          45,
+          -20,
+          10
+        ],
+        "representation": "prose",
+        "context": 0
+      },
+      "independentAnswer": {
+        "magnitude": "4.5",
+        "direction": "right"
+      },
+      "responses": [
+        {
+          "magnitude": "4.5",
+          "direction": "right",
+          "expectedScore": 2
+        },
+        {
+          "magnitude": "999",
+          "direction": "right",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "4.5",
+          "direction": "left",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "999",
+          "direction": "left",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "",
+          "direction": "",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "two competing answers",
+          "direction": "right",
+          "expectedScore": null
+        }
+      ]
+    },
+    {
+      "id": "missing-force-horizontal-3-table",
+      "parameters": {
+        "task": "missing-force",
+        "axis": "horizontal",
+        "forces": [
+          45,
+          -20,
+          10
+        ],
+        "representation": "table",
+        "context": 0
+      },
+      "independentAnswer": {
+        "magnitude": "4.5",
+        "direction": "right"
+      },
+      "responses": [
+        {
+          "magnitude": "4.5",
+          "direction": "right",
+          "expectedScore": 2
+        },
+        {
+          "magnitude": "999",
+          "direction": "right",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "4.5",
+          "direction": "left",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "999",
+          "direction": "left",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "",
+          "direction": "",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "two competing answers",
+          "direction": "right",
+          "expectedScore": null
+        }
+      ]
+    },
+    {
+      "id": "missing-force-vertical-3-prose",
+      "parameters": {
+        "task": "missing-force",
+        "axis": "vertical",
+        "forces": [
+          -40,
+          20,
+          10
+        ],
+        "representation": "prose",
+        "context": 0
+      },
+      "independentAnswer": {
+        "magnitude": "4.0",
+        "direction": "downwards"
+      },
+      "responses": [
+        {
+          "magnitude": "4.0",
+          "direction": "downwards",
+          "expectedScore": 2
+        },
+        {
+          "magnitude": "999",
+          "direction": "downwards",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "4.0",
+          "direction": "upwards",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "999",
+          "direction": "upwards",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "",
+          "direction": "",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "two competing answers",
+          "direction": "downwards",
+          "expectedScore": null
+        }
+      ]
+    },
+    {
+      "id": "missing-force-vertical-3-table",
+      "parameters": {
+        "task": "missing-force",
+        "axis": "vertical",
+        "forces": [
+          -40,
+          20,
+          10
+        ],
+        "representation": "table",
+        "context": 0
+      },
+      "independentAnswer": {
+        "magnitude": "4.0",
+        "direction": "downwards"
+      },
+      "responses": [
+        {
+          "magnitude": "4.0",
+          "direction": "downwards",
+          "expectedScore": 2
+        },
+        {
+          "magnitude": "999",
+          "direction": "downwards",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "4.0",
+          "direction": "upwards",
+          "expectedScore": 1
+        },
+        {
+          "magnitude": "999",
+          "direction": "upwards",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "",
+          "direction": "",
+          "expectedScore": 0
+        },
+        {
+          "magnitude": "two competing answers",
+          "direction": "downwards",
+          "expectedScore": null
+        }
+      ]
+    }
+  ]
+}

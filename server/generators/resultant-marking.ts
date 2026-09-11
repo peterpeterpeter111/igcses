@@ -66,16 +66,21 @@ export function markResultantResponse(
       return review(
         'Magnitude has unresolved notation, units, a signed value or multiple claims.',
       );
-    const factor = match[2] === 'mN' ? 0.001 : match[2] === 'kN' ? 1000 : 1;
-    const value = Number(match[1]) * factor;
-    if (!Number.isFinite(value))
+    const [mantissa, exponentText = '0'] = match[1].split(/[eE]/);
+    const exponent = Number(exponentText);
+    // Bound exponentiation before building integers. Preserve every entered
+    // decimal digit: Number/EPSILON could credit a subtly incorrect response.
+    if (!Number.isSafeInteger(exponent) || Math.abs(exponent) > 400)
       return review('Magnitude is outside the numeric range.');
-    const expected = question.privateSolution.magnitudeN;
-    // Conversion round-off only, not a tolerance permitting rounded wrong answers.
-    magnitude =
-      Math.abs(value - expected) <= Number.EPSILON * Math.max(1, expected) * 4
-        ? 1
-        : 0;
+    const fractionDigits = mantissa.split('.')[1]?.length ?? 0;
+    const coefficient = BigInt(mantissa.replace(/[+.]/g, ''));
+    const unitExponent = match[2] === 'mN' ? -3 : match[2] === 'kN' ? 3 : 0;
+    const tenthsExponent = exponent - fractionDigits + unitExponent + 1;
+    const expectedTenths = BigInt(Math.abs(question.privateSolution.signedTenths));
+    const correct = tenthsExponent >= 0
+      ? coefficient * BigInt(10) ** BigInt(tenthsExponent) === expectedTenths
+      : coefficient === expectedTenths * BigInt(10) ** BigInt(-tenthsExponent);
+    magnitude = correct ? 1 : 0;
   }
   const normalDirection = response.direction
     .trim()
@@ -83,7 +88,9 @@ export function markResultantResponse(
     .replace(/\s+/g, ' ');
   let direction: 0 | 1 = 0;
   if (directionText) {
-    const value = aliases[normalDirection];
+    const value = Object.hasOwn(aliases, normalDirection)
+      ? aliases[normalDirection]
+      : undefined;
     if (
       !value &&
       !['north', 'south', 'east', 'west', 'n', 's', 'e', 'w'].includes(

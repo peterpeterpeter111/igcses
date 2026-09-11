@@ -1,3 +1,7 @@
+# Latest checkpoint — paused at user request
+
+Read research/checkpoints/2026-09-11-PAUSED-AFTER-PHYSICS.md first. Latest implementation bd8e75f; Physics ff5e9c6 is synced at GitHub 95fcd39, later calibration/documentation pending verification of sync. Last allowance read: 9% five-hour / 6% weekly. No reset. Physics now has 195 reviewed parent identities and all 51 detailed leaves / 110 marks; zero fully processed papers, complete chapters/points or active templates. Nine partial notes / 74 sections unchanged. Calibration has 36 final-answer cases plus 96 outcomes across 16 structures. 62 tests, typecheck, lint, research checks, production build and public scan pass. No AI, Sites version or deployment. Q10 skills mapping and further curriculum/calibration remain open. Earlier entries are historical.
+
 # Latest checkpoint — Physics detailed records
 
 Read research/checkpoints/2026-09-11-PHYSICS-DETAILED-RECORDS.md first. All 195 Physics numbered parent identities reviewed; all 51 paper leaves / 110 marks have detailed records, with 83 parent mappings. Still zero fully processed papers, complete chapters/points or validated/active templates. Nine partial notes / 74 sections and 135 partial teaching links unchanged. 61 tests, typecheck, lint, 13 research checks, production build and public scan pass. The two requested documentation commits are synced at GitHub ce1fe19; this newer phase needs sync after commit. No reset, AI integration, Sites version or deployment. Entries below are historical.

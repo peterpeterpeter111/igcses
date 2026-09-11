@@ -13,7 +13,7 @@
       8
     ]
   },
-  "scope": "28 hand-specified final-answer calibration cases. Direct vertical source relationship plus labelled editorial adaptations. Not real student responses or general free-text examiner calibration.",
+  "scope": "36 hand-specified final-answer calibration cases, including exact-decimal and unsupported-direction regressions. Direct vertical source relationship plus labelled editorial adaptations. Not real student responses or general free-text examiner calibration.",
   "cases": [
     {
       "id": "source-correct",
@@ -548,6 +548,158 @@
       },
       "expectedScore": null,
       "rationale": "Unsupported response remains data, not instructions."
+    },
+    {
+      "id": "decimal-beyond-double-precision",
+      "parameters": {
+        "axis": "vertical",
+        "task": "resultant",
+        "forces": [
+          32,
+          -20
+        ],
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "magnitude": "1.20000000000000001",
+        "direction": "up"
+      },
+      "expectedScore": 1,
+      "rationale": "The typed decimal is not exactly 1.2; binary rounding must not turn it into full credit."
+    },
+    {
+      "id": "decimal-just-below",
+      "parameters": {
+        "axis": "vertical",
+        "task": "resultant",
+        "forces": [
+          32,
+          -20
+        ],
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "magnitude": "1.19999999999999999",
+        "direction": "up"
+      },
+      "expectedScore": 1,
+      "rationale": "Preserve all decimal digits on the lower side of the target too."
+    },
+    {
+      "id": "many-trailing-zeroes",
+      "parameters": {
+        "axis": "vertical",
+        "task": "resultant",
+        "forces": [
+          32,
+          -20
+        ],
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "magnitude": "1.20000000000000000 N",
+        "direction": "up"
+      },
+      "expectedScore": 2,
+      "rationale": "Trailing zeroes do not change the exact decimal value."
+    },
+    {
+      "id": "exponent-with-prefix",
+      "parameters": {
+        "axis": "vertical",
+        "task": "resultant",
+        "forces": [
+          32,
+          -20
+        ],
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "magnitude": "12e-4 kN",
+        "direction": "up"
+      },
+      "expectedScore": 2,
+      "rationale": "0.0012 kN equals 1.2 N exactly."
+    },
+    {
+      "id": "subnormal-notation",
+      "parameters": {
+        "axis": "vertical",
+        "task": "resultant",
+        "forces": [
+          32,
+          -20
+        ],
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "magnitude": "1e-999 N",
+        "direction": "up"
+      },
+      "expectedScore": null,
+      "rationale": "An exponent outside the bounded final-answer range requires review."
+    },
+    {
+      "id": "inherited-constructor",
+      "parameters": {
+        "axis": "vertical",
+        "task": "resultant",
+        "forces": [
+          32,
+          -20
+        ],
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "magnitude": "1.2 N",
+        "direction": "constructor"
+      },
+      "expectedScore": null,
+      "rationale": "An object-prototype property is unsupported direction text, not a directional answer."
+    },
+    {
+      "id": "inherited-prototype",
+      "parameters": {
+        "axis": "vertical",
+        "task": "resultant",
+        "forces": [
+          32,
+          -20
+        ],
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "magnitude": "1.2 N",
+        "direction": "__proto__"
+      },
+      "expectedScore": null,
+      "rationale": "Unrecognised direction text must be deferred."
+    },
+    {
+      "id": "exponent-leading-plus",
+      "parameters": {
+        "axis": "vertical",
+        "task": "resultant",
+        "forces": [
+          32,
+          -20
+        ],
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "magnitude": "+12e-1 N",
+        "direction": " UPWARDS "
+      },
+      "expectedScore": 2,
+      "rationale": "Explicit positive magnitude and surrounding whitespace are unambiguous."
     }
   ]
 }
