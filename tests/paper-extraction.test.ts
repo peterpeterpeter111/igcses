@@ -2,7 +2,8 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import extracted from '../research/extractions/4PH1-2024-June-1-standard.json' with { type: 'json' };
 import batch from '../research/batches/2026-09-08-cross-subject-lower-01.manifest.json' with { type: 'json' };
-import syllabus from '../research/syllabus/4PH1-forces-and-motion.json' with { type: 'json' };
+import { reviewedInventories } from '../lib/syllabus.ts';
+import visualAudit from '../research/reviews/2026-09-10-physics-visual-audit.json' with { type: 'json' };
 import leafIndex from '../research/reviews/2026-09-10-physics-leaf-index.json' with { type: 'json' };
 
 void test('text leaf index reconciles all 110 marks without promoting processing status', () => {
@@ -34,7 +35,7 @@ void test('Physics extraction keeps source pages, documents, task marks and raw 
   const raw = batch.records.find((row) => row.paperId === extracted.paperId)!;
   assert.equal(raw.processingStatus, 'indexed-only');
   assert.equal(extracted.fullyProcessed, false);
-  assert.equal(extracted.wholePaperLeafCount, null);
+  assert.equal(extracted.wholePaperLeafCount, visualAudit.verifiedLeafCount);
   assert.ok(extracted.blockers.length);
   assert.equal(extracted.detailedLeafTasks, extracted.tasks.length);
   assert.equal(
@@ -80,10 +81,101 @@ void test('Physics extraction keeps source pages, documents, task marks and raw 
     );
     assert.ok(
       task.syllabusMappings.every((mapping) =>
-        syllabus.points.some((point) => point.id === mapping.pointId),
+        reviewedInventories.some((inventory) =>
+          inventory.points.some((point) => point.id === mapping.pointId),
+        ),
       ),
     );
     assert.equal(task.humanReviewed, false);
     assert.equal(task.templateLinkStatus, 'candidate-only');
   }
+});
+
+void test('visual inventory covers every source page but cannot promote paper or template completion', () => {
+  for (const [pages, document] of [
+    [visualAudit.questionPaper, extracted.documents[0]],
+    [visualAudit.markScheme, extracted.documents[1]],
+  ] as const) {
+    assert.deepEqual(
+      pages.map((p) => p.page),
+      Array.from({ length: document.pageCount }, (_, i) => i + 1),
+    );
+    assert.ok(
+      pages.every((p) => p.mode === 'visual-and-text' && p.observation),
+    );
+  }
+  assert.equal(visualAudit.verifiedLeafCount, leafIndex.tasks.length);
+  assert.equal(
+    visualAudit.reconciledMarks,
+    leafIndex.tasks.reduce((n, t) => n + t.originalMarks, 0),
+  );
+  assert.equal(visualAudit.fullyProcessed, false);
+  assert.equal(visualAudit.humanReviewed, false);
+  assert.ok(visualAudit.sourceDiscrepancies.length > 0);
+  assert.equal(extracted.detailedLeafTasks, 12);
+  assert.equal(extracted.detailedOriginalMarks, 33);
+});
+
+void test('detailed export retains stimulus pages and exact cross-topic syllabus references', async () => {
+  const { readFileSync } = await import('node:fs');
+  const { execFileSync } = await import('node:child_process');
+  const report = JSON.parse(
+    execFileSync(
+      'python3',
+      [
+        '-c',
+        `import csv,json
+from pathlib import Path
+p=Path('research/ledger/v1')
+print(json.dumps({name:list(csv.DictReader((p/(name+'.csv')).open())) for name in ['tasks','task-mappings']}))`,
+      ],
+      { encoding: 'utf8' },
+    ),
+  );
+  for (const task of extracted.tasks) {
+    const row = report.tasks.find(
+      (r: Record<string, string>) => r.task_id === task.taskId,
+    );
+    assert.deepEqual(JSON.parse(row.stimulus_refs_json), task.stimulusRefs);
+    assert.deepEqual(JSON.parse(row.stimulus_types_json), task.stimulusTypes);
+    for (const mapping of task.syllabusMappings) {
+      const row = report['task-mappings'].find(
+        (r: Record<string, string>) =>
+          r.mapping_id === task.taskId + ':' + mapping.pointId,
+      );
+      assert.deepEqual(
+        JSON.parse(row.evidence_refs_json),
+        mapping.evidenceRefs,
+      );
+      const point = reviewedInventories
+        .flatMap((i) => i.points)
+        .find((p) => p.id === mapping.pointId)!;
+      assert.ok(
+        mapping.evidenceRefs.some(
+          (r) =>
+            r.documentId === '4PH1-spec' &&
+            r.pdfPages.length === 1 &&
+            r.pdfPages[0] === point.pdfPage,
+        ),
+      );
+    }
+  }
+  const time = extracted.tasks.find(
+    (t) => t.questionPath === '3.c',
+  )!.numericCrossCheck!;
+  assert.equal(
+    time.distanceMetres / time.speedMetresPerSecond,
+    time.timeSeconds,
+  );
+  assert.equal(Number(time.correctDecimal), time.timeSeconds);
+  // The untouched lower-model manifest remains historical evidence.
+  assert.equal(
+    JSON.parse(
+      readFileSync(
+        'research/batches/2026-09-08-cross-subject-lower-01.manifest.json',
+        'utf8',
+      ),
+    ).status,
+    'indexed-only',
+  );
 });

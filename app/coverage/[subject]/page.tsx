@@ -55,8 +55,9 @@ export default async function SubjectCoverage({
                   {r.extraction.detailedTasks} question parts (
                   {r.extraction.originalMarks} original marks) reviewed across
                   Questions {r.extraction.reviewedQuestions.join(' and ')}.
-                  Whole-paper task inventory incomplete; zero fully processed
-                  papers.
+                  Detailed extraction: {r.extraction.detailedTasks} of{' '}
+                  {r.extraction.expectedTasks ?? 'an unconfirmed number of'}{' '}
+                  parts. Zero fully processed papers.
                 </p>
                 <details>
                   <summary>Remaining processing gaps</summary>
@@ -67,6 +68,18 @@ export default async function SubjectCoverage({
                   </ul>
                 </details>
               </div>
+            )}
+            {r.index && (
+              <p className="status">
+                Text index: {r.index.textTasks} numbered parts. Visual
+                inventory: {r.index.visualTasks} parts and{' '}
+                {r.index.reconciledMarks} marks reconciled across all{' '}
+                {r.index.questionPaperPages} paper pages (including the equation
+                booklet) and {r.index.markSchemePages} scheme pages.{' '}
+                {r.index.sourceDiscrepancies} source discrepancies recorded for
+                review. This page audit does not mean all parts have detailed
+                solutions or validated templates. AI review; no human review.
+              </p>
             )}
             <p>
               <a href={r.questionPaper.url} target="_blank" rel="noreferrer">

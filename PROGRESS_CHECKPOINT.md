@@ -1,4 +1,8 @@
-# Latest checkpoint — smooth 3D navigation transitions
+# Latest checkpoint — Physics visual audit, Q3 extraction and Energy foundation
+
+Read research/checkpoints/2026-09-10-Q3-COVERAGE.md first. All 36 Physics QP and 17 scheme pages visually audited: 51 leaves / 110 marks reconciled. Q3/Q5/Q12 detailed: 12 leaves / 33 marks. Eight partial notes / 42 sections, 72 reviewed Physics parent identities / 81 partial teaching links. Zero complete chapters/points, fully processed papers or active templates. Two source discrepancies recorded. Coverage UI and explicit-reference ledger exporter updated. 43 tests, typecheck, lint, 13 research checks, Sites build and public scan pass. No AI calls, reset, Sites version or deployment. Earlier entries below are historical.
+
+# Previous checkpoint — smooth 3D navigation transitions
 
 Luna visual follow-up is saved locally after `36af240`. The subject bookshelf now has a visible perspective lift and rotation while its smooth bottom-to-top alpha fade runs; the grain texture/mask remains removed. Each chapter `Open` link now closes the paper layers in 3D, rotates the chapter book and fades it before navigation. Subject and chapter reader entrances also use a deeper perspective move. Modified clicks and reduced-motion preferences keep native accessible behavior. Forty-one application tests, typecheck, lint, 13 research checks, production build and public-build scan pass. No syllabus, paper, template or AI counts changed; no Sites version or deployment was attempted. The newest local source is still ahead of GitHub `3c2b6ed`.
 

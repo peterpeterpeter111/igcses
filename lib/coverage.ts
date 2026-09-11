@@ -3,6 +3,8 @@ import candidates from '../research/coverage.json' with { type: 'json' };
 import batch from '../research/batches/2026-09-08-cross-subject-lower-01.manifest.json' with { type: 'json' };
 import covers from '../research/reviews/2026-09-09-cover-review.json' with { type: 'json' };
 import physicsExtraction from '../research/extractions/4PH1-2024-June-1-standard.json' with { type: 'json' };
+import physicsIndex from '../research/reviews/2026-09-10-physics-leaf-index.json' with { type: 'json' };
+import physicsVisualAudit from '../research/reviews/2026-09-10-physics-visual-audit.json' with { type: 'json' };
 import { subjects } from '../content/catalog';
 import { notes } from '../content/notes';
 export function coverageSummary() {
@@ -36,6 +38,18 @@ export function subjectEvidence(code: string) {
       questionPaper: r.questionPaper,
       markScheme: r.markScheme,
       review: covers.records.find((c) => c.paperId === r.paperId),
+      index:
+        r.paperId === physicsIndex.paperId
+          ? {
+              textTasks: physicsIndex.indexedLeafCount,
+              visualTasks: physicsVisualAudit.verifiedLeafCount,
+              reconciledMarks: physicsVisualAudit.reconciledMarks,
+              questionPaperPages: physicsVisualAudit.questionPaper.length,
+              markSchemePages: physicsVisualAudit.markScheme.length,
+              sourceDiscrepancies:
+                physicsVisualAudit.sourceDiscrepancies.length,
+            }
+          : null,
       extraction:
         r.paperId === physicsExtraction.paperId
           ? {

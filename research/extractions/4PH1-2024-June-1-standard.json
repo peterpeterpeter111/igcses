@@ -17,10 +17,11 @@
   "status": "partially-extracted",
   "fullyProcessed": false,
   "wholePaperMarks": 110,
-  "wholePaperLeafCount": null,
-  "detailedLeafTasks": 7,
-  "detailedOriginalMarks": 23,
+  "wholePaperLeafCount": 51,
+  "detailedLeafTasks": 12,
+  "detailedOriginalMarks": 33,
   "reviewedQuestionTotals": {
+    "3": 10,
     "5": 11,
     "12": 12
   },
@@ -31,7 +32,7 @@
       "url": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Physics/2017/Exam-materials/4ph1-1p-que-20240523.pdf",
       "sha256": "3c1e2eea09258259ce0ae86d6adf24da26a1320e297317c60f64c272839b8454",
       "pageCount": 36,
-      "enclosureNote": "32 numbered paper pages plus four equation-booklet pages; enclosure audit remains pending."
+      "enclosureNote": "32 numbered paper pages plus four equation-booklet pages, all visually reviewed. Booklet is enclosed in this PDF, not a separate paper."
     },
     {
       "id": "4PH1-2024-June-1-standard-ms",
@@ -43,31 +44,690 @@
   ],
   "pageAudit": {
     "questionPaper": {
-      "visuallyReviewedPages": [11, 12, 13, 30, 31],
-      "wholeDocumentReviewed": false
+      "visuallyReviewedPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "wholeDocumentReviewed": true
     },
     "markScheme": {
-      "visuallyReviewedPages": [8, 16, 17],
+      "visuallyReviewedPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
       "page17": "Publisher footer only.",
-      "wholeDocumentReviewed": false
+      "wholeDocumentReviewed": true
     }
   },
   "examinerReportStatus": "not-obtained-for-this-paper",
   "currentSpecification": {
     "documentId": "4PH1-spec",
     "issue": "4",
-    "reviewedPages": [17, 18, 19],
+    "reviewedPages": [
+      17,
+      18,
+      19,
+      22,
+      23,
+      25
+    ],
     "wholeHistoricalAmendmentReconciliation": "pending"
   },
   "tasks": [
+    {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "markSchemePages": [
+        6
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [],
+      "stimulusTypes": [
+        "photograph",
+        "scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            6
+          ]
+        }
+      ],
+      "questionPath": "3.a",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        6
+      ],
+      "commandWord": "Give",
+      "requiredKnowledge": [
+        "Thermal harm from excessive infrared exposure"
+      ],
+      "contextSummary": "Infrared lamps used on vehicle paint.",
+      "solutionStructure": [
+        "Name a thermal injury: skin, eye or tissue burns."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "thermal-harm",
+          "marks": 1,
+          "rule": "Skin, eye or tissue burns, or damage to skin/surface cells caused by infrared heating."
+        }
+      ],
+      "acceptableAlternatives": [
+        "The scheme accepts skin damage or surface-cell damage.",
+        "The scheme rejects skin cancer, cell mutation and sunburn."
+      ],
+      "dependencies": [
+        "Do not substitute ultraviolet or ionising-radiation mechanisms."
+      ],
+      "commonErrors": [
+        {
+          "description": "Confusing infrared heating with mutation/cancer or ultraviolet sunburn.",
+          "origin": "scheme-explicit"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:3.13",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "The infrared hazard bullet explicitly identifies skin burns.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                23
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                6
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedFamilyId": "4PH1.em-hazard",
+      "taskId": "4PH1-2024-June-1-standard.Q3.a"
+    },
+    {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "markSchemePages": [
+        6
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [],
+      "stimulusTypes": [
+        "photograph",
+        "scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            6
+          ]
+        }
+      ],
+      "questionPath": "3.b.i",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        6
+      ],
+      "commandWord": "Give",
+      "requiredKnowledge": [
+        "Shared electromagnetic wave properties"
+      ],
+      "contextSummary": "Compare infrared radiation and visible light from the lamps.",
+      "solutionStructure": [
+        "Choose two distinct shared physical properties and state that each applies to both waves."
+      ],
+      "markingMethod": "any-two-distinct",
+      "criteria": [
+        {
+          "id": "shared-property-1",
+          "marks": 1,
+          "rule": "One valid common property from the accepted pool."
+        },
+        {
+          "id": "shared-property-2",
+          "marks": 1,
+          "rule": "A second distinct valid property; cap total at two."
+        }
+      ],
+      "acceptableAlternatives": [
+        "Both are electromagnetic (or belong to the electromagnetic spectrum), transfer energy, are transverse, are non-ionising, can travel through a vacuum, or share the same speed in a vacuum.",
+        "The scheme also accepts reflection, refraction or diffraction as shared behaviors."
+      ],
+      "dependencies": [
+        "Different wording for the same property receives credit once. Stating both EM and both part of the EM spectrum is one idea.",
+        "Same-speed comparison must specify a vacuum."
+      ],
+      "commonErrors": [
+        {
+          "description": "Using two synonymous statements rather than two distinct properties.",
+          "origin": "editorial"
+        },
+        {
+          "description": "Claiming the waves always have the same speed in every material.",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:3.10",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "EM membership and common free-space speed.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                23
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4PH1:issue4:3.4",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Both waves transfer energy.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                22
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4PH1:issue4:3.9",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Shared reflection/refraction behavior.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                22
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4PH1:issue4:3.14",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Transverse nature of light waves.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                23
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                6
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedFamilyId": "4PH1.em-shared-properties",
+      "taskId": "4PH1-2024-June-1-standard.Q3.b.i"
+    },
+    {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "markSchemePages": [
+        6
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [],
+      "stimulusTypes": [
+        "photograph",
+        "scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            6
+          ]
+        }
+      ],
+      "questionPath": "3.b.ii",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        6
+      ],
+      "commandWord": "Give",
+      "requiredKnowledge": [
+        "Relative frequency and wavelength in the electromagnetic spectrum"
+      ],
+      "contextSummary": "Compare properties of infrared and visible radiation.",
+      "solutionStructure": [
+        "Infrared has a longer wavelength than visible light.",
+        "Infrared has a lower frequency than visible light."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "wavelength",
+          "marks": 1,
+          "rule": "Infrared wavelength is longer than visible wavelength (or reverse comparison)."
+        },
+        {
+          "id": "frequency",
+          "marks": 1,
+          "rule": "Infrared frequency is lower than visible frequency (or reverse comparison); retain the scheme's lower-energy concession."
+        }
+      ],
+      "acceptableAlternatives": [
+        "Reverse comparisons for visible light are accepted.",
+        "The scheme condones saying infrared has lower energy; this is recorded as a source concession, not a claim that a lamp must transfer less total energy."
+      ],
+      "dependencies": [
+        "Do not award a third mark for restating frequency as photon energy.",
+        "Comparisons must distinguish the two waves."
+      ],
+      "commonErrors": [
+        {
+          "description": "Describing different speeds in a vacuum.",
+          "origin": "editorial"
+        },
+        {
+          "description": "Confusing the energy of an individual photon with total heater power.",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:3.11",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Spectrum ordering by decreasing wavelength and increasing frequency.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                23
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                6
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedFamilyId": "4PH1.em-order-comparison",
+      "taskId": "4PH1-2024-June-1-standard.Q3.b.ii"
+    },
+    {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "markSchemePages": [
+        6
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "Source decimal alternative inconsistency must be explicitly resolved before activating a marking template."
+      ],
+      "stimulusTypes": [
+        "photograph",
+        "scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            6
+          ]
+        }
+      ],
+      "questionPath": "3.c",
+      "originalMarks": 3,
+      "questionPaperPages": [
+        7
+      ],
+      "commandWord": "Calculate",
+      "requiredKnowledge": [
+        "Rearrange speed=distance/time",
+        "Scientific notation and seconds"
+      ],
+      "contextSummary": "Infrared travels 1.5 m at the supplied speed 3.0 × 10^8 m/s.",
+      "solutionStructure": [
+        "Substitute: 3.0 × 10^8 = 1.5 / t.",
+        "Rearrange: t = 1.5 / (3.0 × 10^8).",
+        "Evaluate: t = 5.0 × 10^-9 s = 0.000000005 s."
+      ],
+      "markingMethod": "method-marks",
+      "criteria": [
+        {
+          "id": "substitution",
+          "marks": 1,
+          "rule": "Correct substitution into speed=distance/time."
+        },
+        {
+          "id": "rearrangement",
+          "marks": 1,
+          "rule": "Rearrangement to isolate time."
+        },
+        {
+          "id": "evaluation",
+          "marks": 1,
+          "rule": "Evaluation giving 5.0 × 10^-9 s."
+        }
+      ],
+      "acceptableAlternatives": [
+        "5 × 10^-9 seconds is accepted. Correct decimal equivalent is 0.000000005 seconds."
+      ],
+      "dependencies": [
+        "Scheme specifies a one-mark deduction for a power-of-ten error; do not repeatedly penalise the same POT mistake.",
+        "The scheme's listed decimal 0.00000005 conflicts with its scientific answer. Preserve this discrepancy, never infer that both numerical values are physically correct."
+      ],
+      "commonErrors": [
+        {
+          "description": "Dividing speed by distance, or mishandling 10^8 in a denominator.",
+          "origin": "editorial"
+        },
+        {
+          "description": "Power-of-ten error.",
+          "origin": "scheme-explicit"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:1.4",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Distance/speed/time relation applies to this constant-speed wave transit.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                17
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4PH1:issue4:3.10",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Context is electromagnetic travel speed; numeric value is supplied.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                23
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                6
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedFamilyId": "4PH1.em-transit-time",
+      "numericCrossCheck": {
+        "distanceMetres": 1.5,
+        "speedMetresPerSecond": 300000000,
+        "timeSeconds": 5e-09,
+        "correctDecimal": "0.000000005"
+      },
+      "taskId": "4PH1-2024-June-1-standard.Q3.c"
+    },
+    {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "markSchemePages": [
+        6
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [],
+      "stimulusTypes": [
+        "photograph",
+        "scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            6
+          ]
+        }
+      ],
+      "questionPath": "3.d",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        7
+      ],
+      "commandWord": "Explain",
+      "requiredKnowledge": [
+        "Infrared absorption and surface color",
+        "Energy transfer over equal time"
+      ],
+      "contextSummary": "White paint takes longer than black paint to harden under the heating lamps.",
+      "solutionStructure": [
+        "Black paint absorbs infrared more strongly than white paint.",
+        "More energy reaches black paint in the same time, so it warms/hardens sooner under the stated conditions."
+      ],
+      "markingMethod": "linked-reasoning",
+      "criteria": [
+        {
+          "id": "absorption",
+          "marks": 1,
+          "rule": "Black is the better infrared absorber, or white the poorer absorber/better reflector."
+        },
+        {
+          "id": "energy-transfer",
+          "marks": 1,
+          "rule": "Black receives more energy in equal time (or white receives less), or black warms faster."
+        }
+      ],
+      "acceptableAlternatives": [
+        "Reverse explanations in terms of white paint are accepted.",
+        "The scheme explicitly awards both marks for saying black absorbs more energy/heat; two separately written sentences are not required."
+      ],
+      "dependencies": [
+        "Credit physical ideas, not the number of sentences.",
+        "Do not confuse absorption of incident radiation with stronger emission from the surface."
+      ],
+      "commonErrors": [
+        {
+          "description": "Only stating that black hardens faster without explaining absorption.",
+          "origin": "editorial"
+        },
+        {
+          "description": "Explaining the observation solely by black paint emitting more infrared.",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:4.8",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Surface properties determine emission and absorption of thermal radiation.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                25
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4PH1:issue4:4.6",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Thermal energy transfer by radiation supplies the heating context.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                25
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                6
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedFamilyId": "4PH1.radiation-surface-comparison",
+      "taskId": "4PH1-2024-June-1-standard.Q3.d"
+    },
     {
       "taskId": "4PH1-2024-June-1-standard.Q5.a",
       "paperId": "4PH1-2024-June-1-standard",
       "questionPath": "5.a",
       "recordKind": "leaf",
       "originalMarks": 3,
-      "questionPaperPages": [11],
-      "markSchemePages": [8],
+      "questionPaperPages": [
+        11
+      ],
+      "markSchemePages": [
+        8
+      ],
       "commandWord": "Sketch",
       "assessmentObjectives": [],
       "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
@@ -123,7 +783,21 @@
           "kind": "primary",
           "currentApplicability": "current-specification",
           "reviewStatus": "agent-reviewed",
-          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages."
+          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                18
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                8
+              ]
+            }
+          ]
         }
       ],
       "proposedFamilyId": "4PH1.hooke-graph",
@@ -134,6 +808,17 @@
       "humanReviewed": false,
       "blockers": [
         "Quiz currently accepts typed text, not submitted graph drawings; sketch adaptation needs a suitable response contract."
+      ],
+      "stimulusTypes": [
+        "blank-graph-axes"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            11
+          ]
+        }
       ]
     },
     {
@@ -142,12 +827,18 @@
       "questionPath": "5.b.i",
       "recordKind": "leaf",
       "originalMarks": 2,
-      "questionPaperPages": [12],
-      "markSchemePages": [8],
+      "questionPaperPages": [
+        12
+      ],
+      "markSchemePages": [
+        8
+      ],
       "commandWord": "Determine",
       "assessmentObjectives": [],
       "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
-      "requiredKnowledge": ["One-dimensional vector resultant"],
+      "requiredKnowledge": [
+        "One-dimensional vector resultant"
+      ],
       "contextSummary": "Two opposed forces act on the released object: 3.2 N upwards and 2.0 N downwards.",
       "solutionStructure": [
         "Subtract opposing force magnitudes: 3.2 − 2.0 = 1.2 N.",
@@ -189,14 +880,42 @@
           "kind": "primary",
           "currentApplicability": "current-specification",
           "reviewStatus": "agent-reviewed",
-          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages."
+          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                18
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                8
+              ]
+            }
+          ]
         },
         {
           "pointId": "4PH1:issue4:1.15",
           "kind": "primary",
           "currentApplicability": "current-specification",
           "reviewStatus": "agent-reviewed",
-          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages."
+          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                18
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                8
+              ]
+            }
+          ]
         }
       ],
       "proposedFamilyId": "4PH1.collinear-resultant",
@@ -205,7 +924,19 @@
       "reviewer": "Codex Astra",
       "reviewerType": "agent",
       "humanReviewed": false,
-      "blockers": []
+      "blockers": [],
+      "stimulusTypes": [
+        "diagram",
+        "scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            12
+          ]
+        }
+      ]
     },
     {
       "taskId": "4PH1-2024-June-1-standard.Q5.b.ii",
@@ -213,12 +944,19 @@
       "questionPath": "5.b.ii",
       "recordKind": "leaf",
       "originalMarks": 3,
-      "questionPaperPages": [12, 13],
-      "markSchemePages": [8],
+      "questionPaperPages": [
+        12,
+        13
+      ],
+      "markSchemePages": [
+        8
+      ],
       "commandWord": "Calculate",
       "assessmentObjectives": [],
       "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
-      "requiredKnowledge": ["Resultant force equals mass times acceleration"],
+      "requiredKnowledge": [
+        "Resultant force equals mass times acceleration"
+      ],
       "contextSummary": "Same released object; mass 0.20 kg; uses resultant from the preceding part.",
       "solutionStructure": [
         "Substitute F = ma using 1.2 N and 0.20 kg.",
@@ -267,7 +1005,21 @@
           "kind": "primary",
           "currentApplicability": "current-specification",
           "reviewStatus": "agent-reviewed",
-          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages."
+          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                18
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                8
+              ]
+            }
+          ]
         }
       ],
       "proposedFamilyId": "4PH1.resultant-to-acceleration",
@@ -276,7 +1028,19 @@
       "reviewer": "Codex Astra",
       "reviewerType": "agent",
       "humanReviewed": false,
-      "blockers": []
+      "blockers": [],
+      "stimulusTypes": [
+        "diagram",
+        "scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            12
+          ]
+        }
+      ]
     },
     {
       "taskId": "4PH1-2024-June-1-standard.Q5.b.iii",
@@ -284,8 +1048,13 @@
       "questionPath": "5.b.iii",
       "recordKind": "leaf",
       "originalMarks": 3,
-      "questionPaperPages": [12, 13],
-      "markSchemePages": [8],
+      "questionPaperPages": [
+        12,
+        13
+      ],
+      "markSchemePages": [
+        8
+      ],
       "commandWord": "Explain",
       "assessmentObjectives": [],
       "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
@@ -337,21 +1106,63 @@
           "kind": "primary",
           "currentApplicability": "current-specification",
           "reviewStatus": "agent-reviewed",
-          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages."
+          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                18
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                8
+              ]
+            }
+          ]
         },
         {
           "pointId": "4PH1:issue4:1.18",
           "kind": "primary",
           "currentApplicability": "current-specification",
           "reviewStatus": "agent-reviewed",
-          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages."
+          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                18
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                8
+              ]
+            }
+          ]
         },
         {
           "pointId": "4PH1:issue4:1.23",
           "kind": "primary",
           "currentApplicability": "current-specification",
           "reviewStatus": "agent-reviewed",
-          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages."
+          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                18
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                8
+              ]
+            }
+          ]
         }
       ],
       "proposedFamilyId": "4PH1.changing-spring-resultant",
@@ -360,7 +1171,19 @@
       "reviewer": "Codex Astra",
       "reviewerType": "agent",
       "humanReviewed": false,
-      "blockers": []
+      "blockers": [],
+      "stimulusTypes": [
+        "diagram",
+        "scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            12
+          ]
+        }
+      ]
     },
     {
       "taskId": "4PH1-2024-June-1-standard.Q12.a",
@@ -368,8 +1191,12 @@
       "questionPath": "12.a",
       "recordKind": "leaf",
       "originalMarks": 4,
-      "questionPaperPages": [30],
-      "markSchemePages": [16],
+      "questionPaperPages": [
+        30
+      ],
+      "markSchemePages": [
+        16
+      ],
       "commandWord": "Determine",
       "assessmentObjectives": [],
       "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
@@ -423,14 +1250,42 @@
           "kind": "primary",
           "currentApplicability": "current-specification",
           "reviewStatus": "agent-reviewed",
-          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages."
+          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                17
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                16
+              ]
+            }
+          ]
         },
         {
           "pointId": "4PH1:issue4:1.8",
           "kind": "primary",
           "currentApplicability": "current-specification",
           "reviewStatus": "agent-reviewed",
-          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages."
+          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                17
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                16
+              ]
+            }
+          ]
         }
       ],
       "proposedFamilyId": "4PH1.curved-velocity-gradient",
@@ -441,6 +1296,18 @@
       "humanReviewed": false,
       "blockers": [
         "Browser needs a drawing/coordinate response convention before this source task can be faithfully adapted."
+      ],
+      "stimulusTypes": [
+        "graph",
+        "scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            30
+          ]
+        }
       ]
     },
     {
@@ -449,8 +1316,13 @@
       "questionPath": "12.b",
       "recordKind": "leaf",
       "originalMarks": 5,
-      "questionPaperPages": [30, 31],
-      "markSchemePages": [16],
+      "questionPaperPages": [
+        30,
+        31
+      ],
+      "markSchemePages": [
+        16
+      ],
       "commandWord": "Determine",
       "assessmentObjectives": [],
       "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
@@ -505,7 +1377,21 @@
           "kind": "primary",
           "currentApplicability": "current-specification",
           "reviewStatus": "agent-reviewed",
-          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages."
+          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                17
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                16
+              ]
+            }
+          ]
         }
       ],
       "proposedFamilyId": "4PH1.curved-velocity-area",
@@ -514,7 +1400,19 @@
       "reviewer": "Codex Astra",
       "reviewerType": "agent",
       "humanReviewed": false,
-      "blockers": []
+      "blockers": [],
+      "stimulusTypes": [
+        "graph",
+        "scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            30
+          ]
+        }
+      ]
     },
     {
       "taskId": "4PH1-2024-June-1-standard.Q12.c",
@@ -522,8 +1420,13 @@
       "questionPath": "12.c",
       "recordKind": "leaf",
       "originalMarks": 3,
-      "questionPaperPages": [30, 31],
-      "markSchemePages": [16],
+      "questionPaperPages": [
+        30,
+        31
+      ],
+      "markSchemePages": [
+        16
+      ],
       "commandWord": "Explain",
       "assessmentObjectives": [],
       "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
@@ -579,14 +1482,42 @@
           "kind": "primary",
           "currentApplicability": "current-specification",
           "reviewStatus": "agent-reviewed",
-          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages."
+          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                17
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                16
+              ]
+            }
+          ]
         },
         {
           "pointId": "4PH1:issue4:1.17",
           "kind": "primary",
           "currentApplicability": "current-specification",
           "reviewStatus": "agent-reviewed",
-          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages."
+          "rationale": "Required relationship/skill is explicitly listed on the reviewed Issue 4 Forces and motion pages.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                18
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                16
+              ]
+            }
+          ]
         }
       ],
       "proposedFamilyId": "4PH1.balanced-motion",
@@ -595,24 +1526,74 @@
       "reviewer": "Codex Astra",
       "reviewerType": "agent",
       "humanReviewed": false,
-      "blockers": []
+      "blockers": [],
+      "stimulusTypes": [
+        "graph",
+        "scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            30
+          ]
+        }
+      ]
     }
   ],
   "blockers": [
-    "Remaining ten top-level questions not detailed in this extraction",
-    "Whole-paper leaf-task and marks reconciliation incomplete",
-    "Full page audit incomplete",
-    "Source-task to validated-template links incomplete",
-    "No examiner report checked for this paper"
+    "39 of 51 numbered parts (77 of 110 marks) still lack detailed extraction.",
+    "Source-task to validated-template links incomplete.",
+    "No examiner report checked for this paper.",
+    "Two official-scheme inconsistencies recorded for review; no affected template activated.",
+    "Whole-paper current-syllabus and assessment-objective mapping remains incomplete."
   ],
   "graphCrossCheck": {
     "provenanceKind": "editorial-inference",
     "sourcePage": 30,
     "description": "Approximate visual readings used as a sanity check; not an exact digitisation of the original curve.",
-    "timeSeconds": [0, 10, 20, 30, 40, 50, 60, 70, 80],
-    "approxVelocity": [0, 24, 38, 47, 54, 58.5, 61.5, 63.3, 64],
+    "timeSeconds": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80
+    ],
+    "approxVelocity": [
+      0,
+      24,
+      38,
+      47,
+      54,
+      58.5,
+      61.5,
+      63.3,
+      64
+    ],
     "trapeziumDistance": 3783,
     "withinHighestSourceBand": true
   },
-  "paperStage": "indexed"
+  "paperStage": "indexed",
+  "visualAuditRef": "research/reviews/2026-09-10-physics-visual-audit.json",
+  "sourceDiscrepancies": [
+    {
+      "id": "Q3.c-decimal-alternative",
+      "schemePage": 6,
+      "status": "source-inconsistency-unresolved",
+      "observation": "Scheme gives 5.0 × 10^-9 s but also permits decimal 0.00000005 s (=5 × 10^-8 s). Independent 1.5/(3.0e8)=5e-9 s. Correct decimal is 0.000000005 s.",
+      "handling": "Preserve the published discrepancy for review. Generated solutions must use the verified arithmetic; do not teach the inconsistent decimal."
+    },
+    {
+      "id": "Q8-optical-density-concession",
+      "schemePage": 11,
+      "status": "source-inconsistency-unresolved",
+      "observation": "MP5 allows different optical densities; its note condones air having higher optical density than water, while MP6/7 correctly state slower travel in water and denser water.",
+      "handling": "Preserve as a historical marking concession; never promote reversed optical density to correct physics in a template."
+    }
+  ],
+  "marksReconciled": true
 }

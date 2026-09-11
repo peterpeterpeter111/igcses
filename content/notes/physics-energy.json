@@ -1,0 +1,107 @@
+{
+  "subjectId": "physics",
+  "chapterId": "energy",
+  "status": "source-checked",
+  "complete": false,
+  "humanReviewed": false,
+  "sourceId": "4PH1-spec",
+  "sourcePages": [
+    25
+  ],
+  "prerequisites": [
+    "Distinguish infrared from visible radiation.",
+    "Describe a comparison while keeping exposure time and other conditions the same."
+  ],
+  "goals": [
+    "Distinguish an energy store from a transfer pathway.",
+    "Explain infrared heating using surface absorption and energy transfer.",
+    "Recognise the limits of a simple black-versus-white comparison."
+  ],
+  "sections": [
+    {
+      "id": "energy-stores-and-radiation",
+      "title": "Energy stores and transfer pathways",
+      "points": [
+        "4.2",
+        "4.6"
+      ],
+      "terms": [
+        "thermal store",
+        "energy transfer",
+        "infrared",
+        "radiation",
+        "conduction",
+        "convection"
+      ],
+      "paragraphs": [
+        "An energy store describes where energy is associated with a system. The specification names chemical, kinetic, gravitational, elastic, thermal, magnetic, electrostatic and nuclear stores. A transfer describes how energy moves between systems: mechanically, electrically, by heating or by radiation. Avoid describing heat as a substance stored inside an object.",
+        "In an electric infrared heater, energy is supplied electrically to the heating element. The hot element emits electromagnetic radiation. When another surface absorbs some of that radiation, energy enters its thermal store. Infrared can travel through a vacuum; no stream of warm air between heater and surface is required.",
+        "Conduction transfers energy through interactions between neighbouring particles, with mobile electrons also important in metals. Convection transfers energy by the bulk movement of a fluid. These mechanisms can occur alongside radiation, so identify the mechanism asked about rather than assuming there is only one transfer in an actual room. Detailed conduction, convection and insulation teaching is still pending."
+      ],
+      "example": {
+        "question": "A lamp heats a metal panel across an air gap. Describe the energy transfer to the panel.",
+        "steps": [
+          "The powered lamp emits infrared radiation.",
+          "The panel absorbs some incident radiation.",
+          "Its thermal store increases and it usually warms."
+        ],
+        "explanation": "Radiation is the transfer pathway; thermal is the store. An air gap does not mean heating must occur by convection."
+      },
+      "practice": {
+        "question": "Could the same radiation transfer occur across a vacuum gap?",
+        "answer": "Yes. Electromagnetic radiation needs no material medium.",
+        "explanation": "Conduction and convection need matter, whereas infrared radiation can propagate through empty space."
+      }
+    },
+    {
+      "id": "surface-absorption",
+      "title": "Why surfaces absorb infrared differently",
+      "points": [
+        "4.8"
+      ],
+      "terms": [
+        "absorber",
+        "emitter",
+        "reflector",
+        "black paint",
+        "white paint"
+      ],
+      "paragraphs": [
+        "In the usual IGCSE comparison, a dull black surface is a better absorber and emitter of thermal radiation than a light or shiny surface under comparable conditions. A shiny surface is a poor absorber and a good reflector. Real surfaces have wavelength-dependent properties; visible colour alone does not precisely determine every material's infrared behaviour.",
+        "Under the same incident infrared intensity and over the same time, the better absorber receives more energy. If the objects have the same mass, material and relevant heat losses, the better absorber warms faster. Keep those conditions explicit: a colour comparison alone cannot determine the exact temperature change of two different objects.",
+        "For the paint-heating observation, explain a chain: the black coating absorbs infrared more effectively, so more energy is transferred to it in the same time, helping the paint harden sooner. A reverse explanation using the white coating is equally clear. Greater emission is a cooling pathway and does not, by itself, explain faster warming under an external lamp.",
+        "An object both emits and absorbs radiation. Net warming depends on incoming and outgoing energy together. A good absorber can also be a good emitter; those properties are compatible. Surface temperature matters too, so do not claim that a cooler black object must emit more than every hotter light-coloured object."
+      ],
+      "example": {
+        "question": "Two identical panels receive 120 J of infrared energy each. One absorbs 90 J and the other 30 J. Compare energy transferred into the panels by absorption.",
+        "steps": [
+          "The first panel absorbs 90 J; the second absorbs 30 J.",
+          "The first receives 60 J more by absorption.",
+          "Its absorbed energy is three times as large."
+        ],
+        "explanation": "These invented figures illustrate absorption, not a universal percentage for black or white paint. Heat losses would also be needed to predict net warming."
+      },
+      "practice": {
+        "question": "A student says a black panel heats faster because it emits more infrared. Improve the explanation.",
+        "answer": "Under equal incident radiation, the black panel is the better absorber, so it receives more energy in the same time.",
+        "explanation": "Emission removes energy from the panel. The explanation needs absorption of energy from the heater."
+      },
+      "answerGuide": {
+        "id": "infrared-absorption-explanation",
+        "sourceTaskId": "4PH1-2024-June-1-standard.Q3.d",
+        "command": "Explain a surface-heating comparison",
+        "steps": [
+          "Identify which surface absorbs more of the incident infrared.",
+          "Link this to greater energy transfer during equal exposure.",
+          "Connect that transfer to the observed faster warming or hardening."
+        ],
+        "caution": "State the two physical ideas clearly. They can appear in one sentence; do not invent a requirement for two separate sentences. Keep absorption distinct from emission."
+      },
+      "commonMistakes": [
+        "Treating absorption and emission as synonyms.",
+        "Claiming white reflects all infrared.",
+        "Predicting exact temperature changes from surface colour without mass, material and heat-loss information."
+      ]
+    }
+  ]
+}

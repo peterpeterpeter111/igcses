@@ -59,7 +59,7 @@ void test('reviewed Physics inventories agree with source candidates and registe
       (n, inventory) => n + inventory.points.length,
       0,
     ),
-    62,
+    72,
   );
   const allIds = reviewedInventories.flatMap((i) => i.points.map((p) => p.id));
   assert.equal(new Set(allIds).size, allIds.length);
@@ -79,7 +79,11 @@ void test('reviewed Physics inventories agree with source candidates and registe
       );
       assert.equal(point.humanReviewed, false);
       assert.equal(point.substatementAuditComplete, false);
-      assert.equal(point.teachingCoverage, 'partial');
+      assert.equal(
+        point.teachingCoverage,
+        point.noteSectionIds.length ? 'partial' : 'not-started',
+      );
+      if (!point.noteSectionIds.length) continue;
       const note = getNotes('physics', point.chapterId);
       assert.ok(note);
       assert.ok(note.sourcePages.includes(point.pdfPage));
