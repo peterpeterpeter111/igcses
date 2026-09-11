@@ -1,3 +1,7 @@
+# Latest checkpoint — Physics detailed records
+
+Read research/checkpoints/2026-09-11-PHYSICS-DETAILED-RECORDS.md first. All 195 Physics numbered parent identities reviewed; all 51 paper leaves / 110 marks have detailed records, with 83 parent mappings. Still zero fully processed papers, complete chapters/points or validated/active templates. Nine partial notes / 74 sections and 135 partial teaching links unchanged. 61 tests, typecheck, lint, 13 research checks, production build and public scan pass. The two requested documentation commits are synced at GitHub ce1fe19; this newer phase needs sync after commit. No reset, AI integration, Sites version or deployment. Entries below are historical.
+
 # Latest checkpoint — paused after navigation recovery
 
 Read research/checkpoints/2026-09-11-PAUSED-AFTER-NAVIGATION.md first. Paused at 0% five-hour / 21% weekly remaining; no reset. Local `5a42d90` is clean; GitHub `74dec545` exactly mirrors the prior code commit `4237cf2`, while this documentation-only pause is pending sync. Browser smoke for Physics Electricity returned HTTP 200 and showed the new sections; full animation click-through remains unverified. Current counts: nine partial notes / 74 sections, 113 reviewed Physics parents / 135 partial links, 24 detailed Physics leaves / 59 marks, six obtained pairs, zero fully processed papers or complete chapters/points, zero validated/active templates. 57 tests, typecheck, lint, production build and public scan pass. No AI integration, Sites version or deployment. Resume only after both allowances exceed 5%.

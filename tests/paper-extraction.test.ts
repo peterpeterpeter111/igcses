@@ -112,8 +112,12 @@ void test('visual inventory covers every source page but cannot promote paper or
   assert.equal(visualAudit.fullyProcessed, false);
   assert.equal(visualAudit.humanReviewed, false);
   assert.ok(visualAudit.sourceDiscrepancies.length > 0);
-  assert.equal(extracted.detailedLeafTasks, 24);
-  assert.equal(extracted.detailedOriginalMarks, 59);
+  assert.equal(extracted.detailedLeafTasks, 51);
+  assert.equal(extracted.detailedOriginalMarks, 110);
+  assert.deepEqual(
+    extracted.tasks.map((t) => t.taskId).sort(),
+    leafIndex.tasks.map((t) => t.taskId).sort(),
+  );
 });
 
 void test('Q8 retains the six-mark cap, seven-point pool and correct refraction physics', () => {
@@ -217,7 +221,7 @@ print(json.dumps({name:list(csv.DictReader((p/(name+'.csv')).open())) for name i
     (t) => t.questionPath === '3.c',
   )!.numericCrossCheck!;
   assert.equal(
-    time.distanceMetres / time.speedMetresPerSecond,
+    time.distanceMetres! / time.speedMetresPerSecond!,
     time.timeSeconds,
   );
   assert.equal(Number(time.correctDecimal), time.timeSeconds);
@@ -231,4 +235,56 @@ print(json.dumps({name:list(csv.DictReader((p/(name+'.csv')).open())) for name i
     ).status,
     'indexed-only',
   );
+});
+
+void test('distinct-point pools retain their caps and have no duplicate credit identities', () => {
+  for (const task of extracted.tasks) {
+    if (!task.markingPointPool) continue;
+    const ids = task.markingPointPool.map((point) => point.id);
+    assert.equal(new Set(ids).size, ids.length);
+    assert.equal(task.markingConstraints!.maximum, task.originalMarks);
+    assert.ok(task.markingPointPool.reduce((n, point) => n + point.credit, 0) >= task.originalMarks);
+    for (const cap of task.markingConstraints!.jointCaps) {
+      assert.ok(cap.pointIds.every((id) => ids.includes(id)));
+      assert.ok(cap.maximum < cap.pointIds.length);
+    }
+  }
+});
+
+void test('nuclear source checks conserve charge and apply two half-lives', () => {
+  const ion = extracted.tasks.find((t) => t.questionPath === '2.d')!.nuclearCrossCheck!;
+  assert.equal(ion.massNumber! - ion.protons!, ion.neutrons);
+  assert.equal(ion.protons! - ion.electrons!, ion.netChargeInElementaryUnits);
+  const decay = extracted.tasks.find((t) => t.questionPath === '2.e')!.nuclearCrossCheck!;
+  assert.equal(decay.elapsedHours! / decay.halfLifeHours!, decay.halfLives);
+  assert.equal(decay.initialActivityBq! * 2 ** -decay.halfLives!, decay.remainingActivityBq);
+});
+
+void test('charge calculations preserve time conversions and seven daily recharges', () => {
+  const unit = extracted.tasks.find((t) => t.questionPath === '11.a')!.chargeCrossCheck!;
+  assert.equal(unit.timeHours! * 3600, unit.timeSeconds);
+  assert.equal(unit.currentAmperes! * unit.timeSeconds!, unit.chargeCoulombs);
+  const time = extracted.tasks.find((t) => t.questionPath === '11.b.i')!.chargeCrossCheck!;
+  assert.equal(time.chargeCoulombs! / time.currentAmperes!, time.timeSeconds);
+  assert.equal(time.timeSeconds! / 60, time.timeMinutes);
+  const budget = extracted.tasks.find((t) => t.questionPath === '11.c')!.chargeCrossCheck!;
+  const required = budget.deviceChargeAh!.reduce((n, charge, i) => n + charge * budget.rechargeCounts![i], 0);
+  assert.ok(Math.abs(required - budget.totalRequiredAh!) < 1e-12);
+  assert.equal(budget.totalRequiredAh! * 3600, budget.totalRequiredCoulombs);
+  assert.ok(Math.abs(required - budget.bankCapacityAh! - budget.shortfallAh!) < 1e-12);
+});
+
+void test('graph extraction retains scale dependence, ECF and unresolved tolerance wording', () => {
+  const scale = extracted.tasks.find((t) => t.questionPath === '10.c.i')!.scaleCrossCheck!;
+  assert.equal(scale.diagramMeasurementCm * scale.scaleFactor, scale.physicalHeightCm);
+  assert.deepEqual(scale.diagramRangeCm.map((value) => value * scale.scaleFactor), scale.acceptedHeightRangeCm);
+  const plot = extracted.tasks.find((t) => t.questionPath === '10.c.ii')!.dataCrossCheck!;
+  assert.equal(plot.heightsCm[plot.dependentPointIndex], scale.physicalHeightCm);
+  const curve = extracted.tasks.find((t) => t.questionPath === '10.c.iii')!;
+  assert.equal(curve.sourceDiscrepancy!.sourceWording, 'at least 1 small square');
+  assert.ok(curve.blockers.length);
+  assert.equal(curve.templateLinkStatus, 'candidate-only');
+  const proportionality = extracted.tasks.find((t) => t.questionPath === '10.c.iv')!;
+  assert.deepEqual(proportionality.markingConstraints!.requires, [{ criterionId: 'conclusion', prerequisiteCriterionId: 'criterion' }]);
+  assert.ok(proportionality.markingConstraints!.zeroOverride);
 });

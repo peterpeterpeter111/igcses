@@ -59,10 +59,15 @@ void test('reviewed Physics inventories agree with source candidates and registe
       (n, inventory) => n + inventory.points.length,
       0,
     ),
-    113,
+    195,
   );
   const allIds = reviewedInventories.flatMap((i) => i.points.map((p) => p.id));
   assert.equal(new Set(allIds).size, allIds.length);
+  assert.deepEqual(
+    reviewedInventories.flatMap((i) => i.points.map((p) => p.reference)).sort(),
+    coverage.filter((p) => p.qualification === '4PH1').map((p) => p.reference).sort(),
+    'All Physics parent identities must reconcile to the preserved candidate inventory',
+  );
   for (const inventory of reviewedInventories)
     for (const point of inventory.points) {
       const raw = coverage.find(

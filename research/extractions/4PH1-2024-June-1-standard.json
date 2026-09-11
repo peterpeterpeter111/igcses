@@ -18,14 +18,20 @@
   "fullyProcessed": false,
   "wholePaperMarks": 110,
   "wholePaperLeafCount": 51,
-  "detailedLeafTasks": 24,
-  "detailedOriginalMarks": 59,
+  "detailedLeafTasks": 51,
+  "detailedOriginalMarks": 110,
   "reviewedQuestionTotals": {
+    "1": 5,
+    "2": 5,
     "3": 10,
+    "4": 9,
     "5": 11,
     "6": 8,
     "7": 12,
     "8": 6,
+    "9": 6,
+    "10": 15,
+    "11": 11,
     "12": 12
   },
   "documents": [
@@ -129,6 +135,842 @@
     "wholeHistoricalAmendmentReconciliation": "pending"
   },
   "tasks": [
+    {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4PH1-2024-June-1-standard.Q1.a.i",
+      "questionPath": "1.a.i",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        3
+      ],
+      "markSchemePages": [
+        4
+      ],
+      "commandWord": "Draw",
+      "requiredKnowledge": [
+        "Orbit geometry"
+      ],
+      "contextSummary": "Draw a labelled Moon–Earth orbital diagram.",
+      "solutionStructure": [
+        "Show a labelled Moon following an approximately circular path around Earth.",
+        "Place Earth approximately at the centre."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "labelled-orbit",
+          "marks": 1,
+          "rule": "Label the Moon and Earth and show a circular Moon orbit around Earth."
+        },
+        {
+          "id": "central-earth",
+          "marks": 1,
+          "rule": "Earth is approximately at the centre of the orbital path."
+        }
+      ],
+      "acceptableAlternatives": [
+        "Planet may substitute for Earth in labels; circularity judged by eye."
+      ],
+      "dependencies": [
+        "Ignore attempts at 3D drawing; retain the source's circular-orbit approximation."
+      ],
+      "commonErrors": [
+        {
+          "description": "Omitting the orbit or placing Earth on its edge.",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:8.4",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Represent the Moon orbiting Earth.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                33
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4PH1:issue4:8.5",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Use the intended approximately circular lunar orbit.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                33
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                4
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "drawing-prompt"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            3
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.orbit-diagram",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "Drawing recognition and label/geometry calibration are pending."
+      ]
+    },
+    {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4PH1-2024-June-1-standard.Q1.a.ii",
+      "questionPath": "1.a.ii",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        3
+      ],
+      "markSchemePages": [
+        4
+      ],
+      "commandWord": "Name",
+      "requiredKnowledge": [
+        "Gravitational orbital force"
+      ],
+      "contextSummary": "Name the force maintaining the Moon's Earth orbit.",
+      "solutionStructure": [
+        "State gravitational force."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "gravity",
+          "marks": 1,
+          "rule": "Gravitational force or gravity."
+        }
+      ],
+      "acceptableAlternatives": [
+        "Gravity accepted."
+      ],
+      "dependencies": [
+        "Ignore weight, centripetal and centrifugal as standalone names; reject gravitational potential or gravitational field strength."
+      ],
+      "commonErrors": [
+        {
+          "description": "Naming a quantity or the generic centripetal role instead of the physical interaction.",
+          "origin": "scheme-explicit"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:8.4",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Identify gravitational force as the orbital interaction.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                33
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                4
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            3
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.orbital-gravity",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": []
+    },
+    {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4PH1-2024-June-1-standard.Q1.a.iii",
+      "questionPath": "1.a.iii",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        3
+      ],
+      "markSchemePages": [
+        4
+      ],
+      "commandWord": "Name",
+      "requiredKnowledge": [
+        "Earth-orbiting objects"
+      ],
+      "contextSummary": "Give another object orbiting Earth.",
+      "solutionStructure": [
+        "Name an artificial satellite or space station."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "earth-orbiter",
+          "marks": 1,
+          "rule": "Satellite or space station; another suitable Earth-orbiting object also allowed."
+        }
+      ],
+      "acceptableAlternatives": [
+        "Suitable orbital rocket debris accepted."
+      ],
+      "dependencies": [
+        "Reject comet in this Earth-orbit context."
+      ],
+      "commonErrors": [
+        {
+          "description": "Choosing a comet that orbits the Sun rather than an Earth orbiter.",
+          "origin": "scheme-explicit"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:8.4",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Recognise artificial satellites in Earth orbit.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                33
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                4
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            3
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.earth-orbit-examples",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": []
+    },
+    {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4PH1-2024-June-1-standard.Q1.b",
+      "questionPath": "1.b",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        3
+      ],
+      "markSchemePages": [
+        4
+      ],
+      "commandWord": "Compare",
+      "requiredKnowledge": [
+        "Planet and comet orbital differences"
+      ],
+      "contextSummary": "Compare planet and comet orbits around a star.",
+      "solutionStructure": [
+        "Compare a nearly circular planetary orbit with a more elongated comet orbit."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "clear-comparison",
+          "marks": 1,
+          "rule": "Clear comparison: planet circular/slightly elliptical versus comet more elliptical; or constant versus variable orbital speed in the source's simplified model."
+        }
+      ],
+      "acceptableAlternatives": [
+        "Planet constant orbital radius versus comet variable radius is accepted."
+      ],
+      "dependencies": [
+        "An explicit comparison is needed; ignore orbital period or path-length claims. Speed/radius constancy is the near-circular model, not a universal claim about all real planets."
+      ],
+      "commonErrors": [
+        {
+          "description": "Giving only one object's property or comparing orbital periods without support.",
+          "origin": "scheme-explicit"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:8.5",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Contrast the orbit shapes and corresponding motion in the intended school model.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                33
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                4
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            3
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.planet-comet-comparison",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": []
+    },
+    {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4PH1-2024-June-1-standard.Q2.a",
+      "questionPath": "2.a",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        4
+      ],
+      "markSchemePages": [
+        5
+      ],
+      "commandWord": "Select",
+      "requiredKnowledge": [
+        "Isotopes share proton number"
+      ],
+      "contextSummary": "Compare carbon with 6 protons/8 neutrons against rows (6,6), (6,8), (8,6), (8,8).",
+      "solutionStructure": [
+        "Keep 6 protons but change the neutron count: A, 6 neutrons."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "isotope-choice",
+          "marks": 1,
+          "rule": "A: 6 protons, 6 neutrons."
+        }
+      ],
+      "acceptableAlternatives": [],
+      "dependencies": [
+        "Single-choice task. B is the same isotope; C/D are a different element."
+      ],
+      "commonErrors": [
+        {
+          "description": "Changing proton number rather than neutron number.",
+          "origin": "scheme-explicit"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:7.3",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Distinguish isotopes of the same element.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                31
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                5
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4PH1:issue4:7.2",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Interpret nuclear particle counts.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                31
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "table",
+        "multiple-choice-options"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            4
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.isotope-identification",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": []
+    },
+    {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4PH1-2024-June-1-standard.Q2.b",
+      "questionPath": "2.b",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        4
+      ],
+      "markSchemePages": [
+        5
+      ],
+      "commandWord": "Select",
+      "requiredKnowledge": [
+        "Beta-minus particle identity"
+      ],
+      "contextSummary": "Choose the radiation consisting of a high-energy electron.",
+      "solutionStructure": [
+        "Select B, beta."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "beta-choice",
+          "marks": 1,
+          "rule": "B: beta (beta-minus electron in this question)."
+        }
+      ],
+      "acceptableAlternatives": [],
+      "dependencies": [
+        "Alpha is a helium nucleus; gamma an electromagnetic wave; a neutron is not an electron."
+      ],
+      "commonErrors": [
+        {
+          "description": "Confusing beta-minus particles with gamma rays.",
+          "origin": "scheme-explicit"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:7.5",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Identify the nature of beta-minus radiation.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                31
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "multiple-choice-options"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            4
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.radiation-identity",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": []
+    },
+    {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4PH1-2024-June-1-standard.Q2.c",
+      "questionPath": "2.c",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        4
+      ],
+      "markSchemePages": [
+        5
+      ],
+      "commandWord": "Select",
+      "requiredKnowledge": [
+        "Effects of nuclear emissions"
+      ],
+      "contextSummary": "Mass number drops by one and proton number is unchanged.",
+      "solutionStructure": [
+        "Select D, neutron radiation."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "neutron-choice",
+          "marks": 1,
+          "rule": "D: neutron."
+        }
+      ],
+      "acceptableAlternatives": [],
+      "dependencies": [
+        "Alpha reduces mass number by four and atomic number by two; beta-minus raises atomic number without changing mass number; gamma changes neither."
+      ],
+      "commonErrors": [
+        {
+          "description": "Choosing gamma because proton number is unchanged while overlooking the mass change.",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:7.7",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Track the mass/proton-number signature of neutron emission.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                31
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "multiple-choice-options"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            4
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.nuclear-emission-signature",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": []
+    },
+    {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4PH1-2024-June-1-standard.Q2.d",
+      "questionPath": "2.d",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        5
+      ],
+      "markSchemePages": [
+        5
+      ],
+      "commandWord": "Select",
+      "requiredKnowledge": [
+        "Nuclear notation and ionic charge"
+      ],
+      "contextSummary": "Uranium-238 has proton number 92; choose an electron count consistent with a positive ion.",
+      "solutionStructure": [
+        "Positive charge requires fewer electrons than the 92 protons.",
+        "Only option A, 90 electrons, meets this condition."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "positive-ion",
+          "marks": 1,
+          "rule": "A: 90 electrons."
+        }
+      ],
+      "acceptableAlternatives": [],
+      "dependencies": [
+        "92 is neutral; 146 and 238 imply negative net charge. The question asks a possible count, not an inferred universal uranium ion charge."
+      ],
+      "commonErrors": [
+        {
+          "description": "Using nucleon or neutron number as the electron count.",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:7.2",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Interpret proton number and electron count in an atomic/ionic model.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                31
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "nuclear-symbol",
+        "multiple-choice-options"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            5
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.ion-electron-count",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [],
+      "nuclearCrossCheck": {
+        "protons": 92,
+        "massNumber": 238,
+        "electrons": 90,
+        "neutrons": 146,
+        "netChargeInElementaryUnits": 2
+      }
+    },
+    {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4PH1-2024-June-1-standard.Q2.e",
+      "questionPath": "2.e",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        5
+      ],
+      "markSchemePages": [
+        5
+      ],
+      "commandWord": "Select",
+      "requiredKnowledge": [
+        "Half-life activity calculation"
+      ],
+      "contextSummary": "Activity starts at 400 Bq with half-life 8 hours; find activity after 16 hours.",
+      "solutionStructure": [
+        "16/8 = 2 half-lives.",
+        "400 → 200 → 100 Bq; choose C."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "activity-choice",
+          "marks": 1,
+          "rule": "C: 100 Bq."
+        }
+      ],
+      "acceptableAlternatives": [],
+      "dependencies": [
+        "A/B correspond to four/three half-lives and D to one half-life."
+      ],
+      "commonErrors": [
+        {
+          "description": "Dividing activity by the number of half-lives instead of halving repeatedly.",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:7.13",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Calculate activity after two half-lives.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                31
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                5
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4PH1:issue4:7.12",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Interpret the stated half-life.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                31
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "numerical-data",
+        "multiple-choice-options"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            5
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.half-life-activity",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [],
+      "nuclearCrossCheck": {
+        "initialActivityBq": 400,
+        "halfLifeHours": 8,
+        "elapsedHours": 16,
+        "halfLives": 2,
+        "remainingActivityBq": 100
+      }
+    },
     {
       "paperId": "4PH1-2024-June-1-standard",
       "recordKind": "leaf",
@@ -723,6 +1565,388 @@
       "taskId": "4PH1-2024-June-1-standard.Q3.d"
     },
     {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4PH1-2024-June-1-standard.Q4.a",
+      "questionPath": "4.a",
+      "originalMarks": 4,
+      "questionPaperPages": [
+        8
+      ],
+      "markSchemePages": [
+        7
+      ],
+      "commandWord": "Complete",
+      "requiredKnowledge": [
+        "Energy stores during gravitational collapse",
+        "Scope ends before the main-sequence stage"
+      ],
+      "contextSummary": "Identify changes in four energy stores as a nebula collapses before the main-sequence star forms.",
+      "solutionStructure": [
+        "Judge each row independently within the stated pre-main-sequence interval."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "chemical",
+          "marks": 1,
+          "rule": "Chemical store unchanged."
+        },
+        {
+          "id": "gravitational",
+          "marks": 1,
+          "rule": "Gravitational potential store decreases."
+        },
+        {
+          "id": "nuclear",
+          "marks": 1,
+          "rule": "Nuclear store unchanged in the paper's stated interval/model."
+        },
+        {
+          "id": "thermal",
+          "marks": 1,
+          "rule": "Thermal store increases."
+        }
+      ],
+      "acceptableAlternatives": [],
+      "dependencies": [
+        "Reject credit for a row containing more than one tick."
+      ],
+      "commonErrors": [
+        {
+          "description": "Changing the nuclear store by answering for the later main-sequence stage.",
+          "origin": "agent-inferred"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:8.9",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Nebula collapse is the early Sun-like evolution stage.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                34
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                7
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4PH1:issue4:4.2",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Compare energy stores during collapse.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                25
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                7
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "table"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            8
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.stellar-collapse.energy-stores",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [],
+      "responseFormat": "one-choice-per-row",
+      "rowChoices": [
+        "increases",
+        "decreases",
+        "unchanged"
+      ]
+    },
+    {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4PH1-2024-June-1-standard.Q4.b",
+      "questionPath": "4.b",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        8
+      ],
+      "markSchemePages": [
+        7
+      ],
+      "commandWord": "Give",
+      "requiredKnowledge": [
+        "Initial stellar mass controls the evolutionary branch"
+      ],
+      "contextSummary": "Identify the property determining a red-giant or red-supergiant evolution route.",
+      "solutionStructure": [
+        "Name mass."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "mass",
+          "marks": 1,
+          "rule": "Mass."
+        }
+      ],
+      "acceptableAlternatives": [],
+      "dependencies": [
+        "Ignore size or weight."
+      ],
+      "commonErrors": [
+        {
+          "description": "Naming size instead of mass.",
+          "origin": "scheme-reject-or-ignore"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:8.10",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Evolution of more massive stars is distinguished by mass.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                34
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                7
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4PH1:issue4:8.9",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Contrast the Sun-like evolution route.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                34
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                7
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            8
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.stellar-evolution.mass-branch",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": []
+    },
+    {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4PH1-2024-June-1-standard.Q4.c",
+      "questionPath": "4.c",
+      "originalMarks": 4,
+      "questionPaperPages": [
+        9
+      ],
+      "markSchemePages": [
+        7
+      ],
+      "commandWord": "Discuss",
+      "requiredKnowledge": [
+        "Compare red giants and white dwarfs",
+        "Stellar brightness, temperature, size, fusion and density"
+      ],
+      "contextSummary": "Compare a red giant with the white dwarf in its subsequent evolution.",
+      "solutionStructure": [
+        "Credit up to four distinct source comparison points; reversed comparisons are acceptable.",
+        "Retain the historical scheme allowances separately from future scientifically qualified teaching."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "distinct-comparisons",
+          "marks": 4,
+          "rule": "Award any four distinct points from the six-point source pool."
+        }
+      ],
+      "acceptableAlternatives": [
+        "Reverse arguments accepted for every pool point.",
+        "Brightness: allow luminosity, power, emitted light or absolute magnitude.",
+        "For the source fusion point, allow the red giant having more hydrogen.",
+        "For size, the source condones a greater-mass comparison.",
+        "For surface temperature, allow the red giant being cooler."
+      ],
+      "dependencies": [
+        "Maximum four marks; do not credit synonyms for the same comparison twice."
+      ],
+      "commonErrors": [
+        {
+          "description": "Giving two labels without an explicit comparison.",
+          "origin": "agent-inferred"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:8.9",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Evolution links the red-giant and white-dwarf stages.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                34
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                7
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4PH1:issue4:8.8",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Surface-temperature comparison is one permitted answer.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                34
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                7
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            9
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.stellar-evolution.giant-dwarf-comparison",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "Future comparison-family calibration needs explicit evolutionary-stage and planetary-nebula lifetime scope; historical source allowances are recorded but not activated."
+      ],
+      "markingPointPool": [
+        {
+          "id": "MP1",
+          "credit": 1,
+          "rule": "Red giant has greater intrinsic brightness than white dwarf."
+        },
+        {
+          "id": "MP2",
+          "credit": 1,
+          "rule": "Source accepts fusion in the red giant, including a core reference, but not in the white dwarf."
+        },
+        {
+          "id": "MP3",
+          "credit": 1,
+          "rule": "Red giant is larger."
+        },
+        {
+          "id": "MP4",
+          "credit": 1,
+          "rule": "Red giant has lower surface temperature."
+        },
+        {
+          "id": "MP5",
+          "credit": 1,
+          "rule": "White dwarf is denser."
+        },
+        {
+          "id": "MP6",
+          "credit": 1,
+          "rule": "Source accepts a planetary nebula around the white dwarf but not the red giant."
+        }
+      ],
+      "markingConstraints": {
+        "maximum": 4,
+        "jointCaps": []
+      },
+      "scopeCautions": [
+        "Do not make the source's optional core reference a universal requirement for every red-giant phase.",
+        "Do not turn the source's planetary-nebula comparison into a claim that every white dwarf always has a visible nebula.",
+        "Absolute magnitude is an allowed alternative here, not evidence that the compulsory 1P question requires a 2P-only point."
+      ]
+    },
+    {
       "taskId": "4PH1-2024-June-1-standard.Q5.a",
       "paperId": "4PH1-2024-June-1-standard",
       "questionPath": "5.a",
@@ -1192,88 +2416,493 @@
       ]
     },
     {
-      "taskId":"4PH1-2024-June-1-standard.Q6.a","paperId":"4PH1-2024-June-1-standard","recordKind":"leaf","questionPath":"6.a","originalMarks":1,
-      "questionPaperPages":[14],"markSchemePages":[9],"commandWord":"Draw",
-      "requiredKnowledge":["Direction of external magnetic field lines into a south pole"],
-      "contextSummary":"Add arrows to the given field lines outside the south end of a bar magnet.",
-      "solutionStructure":["Place at least two arrows directed towards the south pole."],
-      "markingMethod":"discrete-points",
-      "criteria":[{"id":"field-arrows","marks":1,"rule":"At least two arrows towards the south pole, with no arrow pointing away from it."}],
-      "acceptableAlternatives":["The source condones arrows not on existing field lines."],
-      "dependencies":["Reject this mark if any arrow points away from the south pole; one correct arrow is insufficient."],
-      "commonErrors":[{"description":"Reversing the external field direction at a south pole.","origin":"scheme-explicit"}],
-      "syllabusMappings":[{"pointId":"4PH1:issue4:6.4","kind":"primary","currentApplicability":"current-specification","reviewStatus":"agent-reviewed","rationale":"Interpret and mark field-line direction at a south pole.","evidenceRefs":[{"documentId":"4PH1-spec","pdfPages":[29]},{"documentId":"4PH1-2024-June-1-standard-ms","pdfPages":[9]}]}],
-      "stimulusTypes":["magnetic-field-diagram"],"stimulusRefs":[{"documentId":"4PH1-2024-June-1-standard-qp","pdfPages":[14]}],
-      "assessmentObjectives":[],"assessmentObjectiveStatus":"No official per-leaf AO allocation inspected; not inferred as authoritative.",
-      "proposedFamilyId":"4PH1.magnetic-field-direction","templateLinkStatus":"candidate-only","extractionStatus":"source-checked","reviewer":"Codex Astra","reviewerType":"agent","humanReviewed":false,
-      "blockers":["Drawing-response recognition and contradictory-arrow calibration are not implemented."]
-    },
-    {
-      "taskId":"4PH1-2024-June-1-standard.Q6.b","paperId":"4PH1-2024-June-1-standard","recordKind":"leaf","questionPath":"6.b","originalMarks":1,
-      "questionPaperPages":[14],"markSchemePages":[9],"commandWord":"Select",
-      "requiredKnowledge":["Recognition of a magnetic substance"],
-      "contextSummary":"Choose which of copper, nickel, plastic and zinc is attracted to the bar magnet in the school-level classification.",
-      "solutionStructure":["Select B, nickel."],"markingMethod":"discrete-points",
-      "criteria":[{"id":"nickel","marks":1,"rule":"B (nickel)."}],
-      "acceptableAlternatives":[],"dependencies":["Single-choice response; preserve the original one-mark demand separately from the custom 2/4/6-mark blueprint."],
-      "commonErrors":[{"description":"Choosing copper, plastic or zinc instead of nickel.","origin":"scheme-explicit"}],
-      "syllabusMappings":[{"pointId":"4PH1:issue4:6.2","kind":"primary","currentApplicability":"current-specification","reviewStatus":"agent-reviewed","rationale":"Recognise a substance attracted to a magnet.","evidenceRefs":[{"documentId":"4PH1-spec","pdfPages":[29]},{"documentId":"4PH1-2024-June-1-standard-ms","pdfPages":[9]}]}],
-      "stimulusTypes":["multiple-choice-options"],"stimulusRefs":[{"documentId":"4PH1-2024-June-1-standard-qp","pdfPages":[14]}],
-      "assessmentObjectives":[],"assessmentObjectiveStatus":"No official per-leaf AO allocation inspected; not inferred as authoritative.",
-      "proposedFamilyId":"4PH1.magnetic-materials","templateLinkStatus":"candidate-only","extractionStatus":"source-checked","reviewer":"Codex Astra","reviewerType":"agent","humanReviewed":false,"blockers":[]
-    },
-    {
-      "taskId":"4PH1-2024-June-1-standard.Q6.c","paperId":"4PH1-2024-June-1-standard","recordKind":"leaf","questionPath":"6.c","originalMarks":2,
-      "questionPaperPages":[14],"markSchemePages":[9],"commandWord":"Explain",
-      "requiredKnowledge":["Magnetic field-line spacing represents relative field strength"],
-      "contextSummary":"Use the spreading field-line pattern to explain how strength changes away from the south pole.",
-      "solutionStructure":["Line spacing increases with distance from the pole.","More widely spaced field lines represent a weaker magnetic field."],
-      "markingMethod":"discrete-points",
-      "criteria":[{"id":"spacing-change","marks":1,"rule":"Field-line spacing or density changes with distance from the pole."},{"id":"strength-link","marks":1,"rule":"Larger spacing represents a weaker field."}],
-      "acceptableAlternatives":["Reverse argument accepted.","For this particular diagram the source permits 'field lines are not parallel' for both marks; this shortcut is not a complete general definition of field strength."],
-      "dependencies":["Ignore references to forces. Use the line-spacing/strength explanation in original teaching."],
-      "commonErrors":[{"description":"Describing the spacing without linking it to field strength.","origin":"editorial"}],
-      "syllabusMappings":[{"pointId":"4PH1:issue4:6.4","kind":"primary","currentApplicability":"current-specification","reviewStatus":"agent-reviewed","rationale":"Read relative field strength from the supplied field-line pattern.","evidenceRefs":[{"documentId":"4PH1-spec","pdfPages":[29]},{"documentId":"4PH1-2024-June-1-standard-ms","pdfPages":[9]}]}],
-      "stimulusTypes":["magnetic-field-diagram"],"stimulusRefs":[{"documentId":"4PH1-2024-June-1-standard-qp","pdfPages":[14]}],
-      "assessmentObjectives":[],"assessmentObjectiveStatus":"No official per-leaf AO allocation inspected; not inferred as authoritative.",
-      "proposedFamilyId":"4PH1.field-spacing-explanation","templateLinkStatus":"candidate-only","extractionStatus":"source-checked","reviewer":"Codex Astra","reviewerType":"agent","humanReviewed":false,"blockers":[]
-    },
-    {
-      "taskId":"4PH1-2024-June-1-standard.Q6.d.i","paperId":"4PH1-2024-June-1-standard","recordKind":"leaf","questionPath":"6.d.i","originalMarks":2,
-      "questionPaperPages":[14,15],"markSchemePages":[9],"commandWord":"Explain",
-      "requiredKnowledge":["Induced magnetism","Unlike poles attract"],
-      "contextSummary":"Explain attraction of an initially unmagnetised iron piece placed near the bar magnet's south pole.",
-      "solutionStructure":["A north pole is induced at the end of the iron nearest the south pole.","The adjacent unlike poles attract."],"markingMethod":"discrete-points",
-      "criteria":[{"id":"induced-near-north","marks":1,"rule":"North pole induced on the iron side nearest the bar magnet."},{"id":"unlike-attraction","marks":1,"rule":"Unlike poles attract."}],
-      "acceptableAlternatives":["Induced north pole may be shown on the diagram.","North is attracted to south is accepted."],
-      "dependencies":["Ignore references to charge; magnetic poles are required, not electrostatic charge labels."],
-      "commonErrors":[{"description":"Putting the induced south pole at the end nearest the bar magnet's south pole.","origin":"editorial"}],
-      "syllabusMappings":[
-        {"pointId":"4PH1:issue4:6.5","kind":"primary","currentApplicability":"current-specification","reviewStatus":"agent-reviewed","rationale":"Identify the polarity induced by the external magnet.","evidenceRefs":[{"documentId":"4PH1-spec","pdfPages":[29]},{"documentId":"4PH1-2024-June-1-standard-ms","pdfPages":[9]}]},
-        {"pointId":"4PH1:issue4:6.2","kind":"supporting","currentApplicability":"current-specification","reviewStatus":"agent-reviewed","rationale":"Explain the resulting attraction of unlike poles.","evidenceRefs":[{"documentId":"4PH1-spec","pdfPages":[29]},{"documentId":"4PH1-2024-June-1-standard-ms","pdfPages":[9]}]}
+      "taskId": "4PH1-2024-June-1-standard.Q6.a",
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "questionPath": "6.a",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        14
       ],
-      "stimulusTypes":["magnetic-field-diagram"],"stimulusRefs":[{"documentId":"4PH1-2024-June-1-standard-qp","pdfPages":[14,15]}],
-      "assessmentObjectives":[],"assessmentObjectiveStatus":"No official per-leaf AO allocation inspected; not inferred as authoritative.",
-      "proposedFamilyId":"4PH1.induced-magnetism","templateLinkStatus":"candidate-only","extractionStatus":"source-checked","reviewer":"Codex Astra","reviewerType":"agent","humanReviewed":false,
-      "blockers":["Combined diagram/text response marking remains uncalibrated."]
+      "markSchemePages": [
+        9
+      ],
+      "commandWord": "Draw",
+      "requiredKnowledge": [
+        "Direction of external magnetic field lines into a south pole"
+      ],
+      "contextSummary": "Add arrows to the given field lines outside the south end of a bar magnet.",
+      "solutionStructure": [
+        "Place at least two arrows directed towards the south pole."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "field-arrows",
+          "marks": 1,
+          "rule": "At least two arrows towards the south pole, with no arrow pointing away from it."
+        }
+      ],
+      "acceptableAlternatives": [
+        "The source condones arrows not on existing field lines."
+      ],
+      "dependencies": [
+        "Reject this mark if any arrow points away from the south pole; one correct arrow is insufficient."
+      ],
+      "commonErrors": [
+        {
+          "description": "Reversing the external field direction at a south pole.",
+          "origin": "scheme-explicit"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:6.4",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Interpret and mark field-line direction at a south pole.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                29
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                9
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "magnetic-field-diagram"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            14
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.magnetic-field-direction",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "Drawing-response recognition and contradictory-arrow calibration are not implemented."
+      ]
     },
     {
-      "taskId":"4PH1-2024-June-1-standard.Q6.d.ii","paperId":"4PH1-2024-June-1-standard","recordKind":"leaf","questionPath":"6.d.ii","originalMarks":2,
-      "questionPaperPages":[15],"markSchemePages":[9],"commandWord":"Explain",
-      "requiredKnowledge":["Magnetically soft materials do not retain strong induced magnetism"],
-      "contextSummary":"Explain why the iron piece should not be described as a permanent magnet.",
-      "solutionStructure":["Iron is magnetically soft.","It loses its induced magnetism when removed from the external field."],"markingMethod":"discrete-points",
-      "criteria":[{"id":"soft-material","marks":1,"rule":"Iron is a magnetically soft material."},{"id":"loss-on-removal","marks":1,"rule":"Iron loses its magnetism when removed from the field."}],
-      "acceptableAlternatives":["Iron is easily demagnetised is accepted.","Iron is magnetic only in an external field is accepted by this source."],
-      "dependencies":["The source ignores merely saying 'soft magnet' or 'temporary magnet'; describe the material property and loss of magnetism."],
-      "commonErrors":[{"description":"Naming a temporary magnet without explaining its material property or behaviour on removal.","origin":"scheme-explicit"}],
-      "syllabusMappings":[
-        {"pointId":"4PH1:issue4:6.3","kind":"primary","currentApplicability":"current-specification","reviewStatus":"agent-reviewed","rationale":"Use the behaviour of a magnetically soft material.","evidenceRefs":[{"documentId":"4PH1-spec","pdfPages":[29]},{"documentId":"4PH1-2024-June-1-standard-ms","pdfPages":[9]}]},
-        {"pointId":"4PH1:issue4:6.5","kind":"supporting","currentApplicability":"current-specification","reviewStatus":"agent-reviewed","rationale":"Relate removal of the external field to the induced magnetism.","evidenceRefs":[{"documentId":"4PH1-spec","pdfPages":[29]},{"documentId":"4PH1-2024-June-1-standard-ms","pdfPages":[9]}]}
+      "taskId": "4PH1-2024-June-1-standard.Q6.b",
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "questionPath": "6.b",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        14
       ],
-      "stimulusTypes":["magnetic-field-diagram","scenario"],"stimulusRefs":[{"documentId":"4PH1-2024-June-1-standard-qp","pdfPages":[15]}],
-      "assessmentObjectives":[],"assessmentObjectiveStatus":"No official per-leaf AO allocation inspected; not inferred as authoritative.",
-      "proposedFamilyId":"4PH1.magnetic-material-properties","templateLinkStatus":"candidate-only","extractionStatus":"source-checked","reviewer":"Codex Astra","reviewerType":"agent","humanReviewed":false,"blockers":[]
+      "markSchemePages": [
+        9
+      ],
+      "commandWord": "Select",
+      "requiredKnowledge": [
+        "Recognition of a magnetic substance"
+      ],
+      "contextSummary": "Choose which of copper, nickel, plastic and zinc is attracted to the bar magnet in the school-level classification.",
+      "solutionStructure": [
+        "Select B, nickel."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "nickel",
+          "marks": 1,
+          "rule": "B (nickel)."
+        }
+      ],
+      "acceptableAlternatives": [],
+      "dependencies": [
+        "Single-choice response; preserve the original one-mark demand separately from the custom 2/4/6-mark blueprint."
+      ],
+      "commonErrors": [
+        {
+          "description": "Choosing copper, plastic or zinc instead of nickel.",
+          "origin": "scheme-explicit"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:6.2",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Recognise a substance attracted to a magnet.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                29
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                9
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "multiple-choice-options"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            14
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.magnetic-materials",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q6.c",
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "questionPath": "6.c",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        14
+      ],
+      "markSchemePages": [
+        9
+      ],
+      "commandWord": "Explain",
+      "requiredKnowledge": [
+        "Magnetic field-line spacing represents relative field strength"
+      ],
+      "contextSummary": "Use the spreading field-line pattern to explain how strength changes away from the south pole.",
+      "solutionStructure": [
+        "Line spacing increases with distance from the pole.",
+        "More widely spaced field lines represent a weaker magnetic field."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "spacing-change",
+          "marks": 1,
+          "rule": "Field-line spacing or density changes with distance from the pole."
+        },
+        {
+          "id": "strength-link",
+          "marks": 1,
+          "rule": "Larger spacing represents a weaker field."
+        }
+      ],
+      "acceptableAlternatives": [
+        "Reverse argument accepted.",
+        "For this particular diagram the source permits 'field lines are not parallel' for both marks; this shortcut is not a complete general definition of field strength."
+      ],
+      "dependencies": [
+        "Ignore references to forces. Use the line-spacing/strength explanation in original teaching."
+      ],
+      "commonErrors": [
+        {
+          "description": "Describing the spacing without linking it to field strength.",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:6.4",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Read relative field strength from the supplied field-line pattern.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                29
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                9
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "magnetic-field-diagram"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            14
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.field-spacing-explanation",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q6.d.i",
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "questionPath": "6.d.i",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        14,
+        15
+      ],
+      "markSchemePages": [
+        9
+      ],
+      "commandWord": "Explain",
+      "requiredKnowledge": [
+        "Induced magnetism",
+        "Unlike poles attract"
+      ],
+      "contextSummary": "Explain attraction of an initially unmagnetised iron piece placed near the bar magnet's south pole.",
+      "solutionStructure": [
+        "A north pole is induced at the end of the iron nearest the south pole.",
+        "The adjacent unlike poles attract."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "induced-near-north",
+          "marks": 1,
+          "rule": "North pole induced on the iron side nearest the bar magnet."
+        },
+        {
+          "id": "unlike-attraction",
+          "marks": 1,
+          "rule": "Unlike poles attract."
+        }
+      ],
+      "acceptableAlternatives": [
+        "Induced north pole may be shown on the diagram.",
+        "North is attracted to south is accepted."
+      ],
+      "dependencies": [
+        "Ignore references to charge; magnetic poles are required, not electrostatic charge labels."
+      ],
+      "commonErrors": [
+        {
+          "description": "Putting the induced south pole at the end nearest the bar magnet's south pole.",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:6.5",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Identify the polarity induced by the external magnet.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                29
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                9
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4PH1:issue4:6.2",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Explain the resulting attraction of unlike poles.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                29
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                9
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "magnetic-field-diagram"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            14,
+            15
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.induced-magnetism",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "Combined diagram/text response marking remains uncalibrated."
+      ]
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q6.d.ii",
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "questionPath": "6.d.ii",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        15
+      ],
+      "markSchemePages": [
+        9
+      ],
+      "commandWord": "Explain",
+      "requiredKnowledge": [
+        "Magnetically soft materials do not retain strong induced magnetism"
+      ],
+      "contextSummary": "Explain why the iron piece should not be described as a permanent magnet.",
+      "solutionStructure": [
+        "Iron is magnetically soft.",
+        "It loses its induced magnetism when removed from the external field."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "soft-material",
+          "marks": 1,
+          "rule": "Iron is a magnetically soft material."
+        },
+        {
+          "id": "loss-on-removal",
+          "marks": 1,
+          "rule": "Iron loses its magnetism when removed from the field."
+        }
+      ],
+      "acceptableAlternatives": [
+        "Iron is easily demagnetised is accepted.",
+        "Iron is magnetic only in an external field is accepted by this source."
+      ],
+      "dependencies": [
+        "The source ignores merely saying 'soft magnet' or 'temporary magnet'; describe the material property and loss of magnetism."
+      ],
+      "commonErrors": [
+        {
+          "description": "Naming a temporary magnet without explaining its material property or behaviour on removal.",
+          "origin": "scheme-explicit"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:6.3",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Use the behaviour of a magnetically soft material.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                29
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                9
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4PH1:issue4:6.5",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Relate removal of the external field to the induced magnetism.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                29
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                9
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "magnetic-field-diagram",
+        "scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            15
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.magnetic-material-properties",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": []
     },
     {
       "taskId": "4PH1-2024-June-1-standard.Q7.a",
@@ -2215,6 +3844,1815 @@
       }
     },
     {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4PH1-2024-June-1-standard.Q9.a",
+      "questionPath": "9.a",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        20
+      ],
+      "markSchemePages": [
+        12
+      ],
+      "commandWord": "State",
+      "requiredKnowledge": [
+        "Gas pressure at initial sealing"
+      ],
+      "contextSummary": "A bottle is sealed in cabin air at 80 kPa; find its pressure immediately after sealing.",
+      "solutionStructure": [
+        "Before sealing, the bottle air is in contact with cabin air.",
+        "The initial trapped-air pressure is 80 kPa."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "initial-pressure",
+          "marks": 1,
+          "rule": "80 kPa."
+        }
+      ],
+      "acceptableAlternatives": [],
+      "dependencies": [
+        "Use the instant of sealing, before subsequent cabin-pressure changes."
+      ],
+      "commonErrors": [
+        {
+          "description": "Substituting sea-level pressure for the given cabin pressure.",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:5.6",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Contextual application of static-fluid pressure to the air admitted before sealing; the task does not demand a molecular explanation.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                27
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                12
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "photograph",
+        "numerical-data"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            20
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.sealed-bottle-pressure",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": []
+    },
+    {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4PH1-2024-June-1-standard.Q9.b",
+      "questionPath": "9.b",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        20,
+        21
+      ],
+      "markSchemePages": [
+        12
+      ],
+      "commandWord": "Explain",
+      "requiredKnowledge": [
+        "Pressure difference causes resultant force",
+        "Gas compression"
+      ],
+      "contextSummary": "The sealed bottle collapses as cabin pressure rises during descent.",
+      "solutionStructure": [
+        "External pressure becomes greater than the internal pressure, causing an inward resultant force.",
+        "Compression decreases volume and increases the trapped gas pressure."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "distinct-source-points",
+          "marks": 2,
+          "rule": "Award any two distinct points from the three-point source pool."
+        }
+      ],
+      "acceptableAlternatives": [
+        "External pressure exceeds internal pressure is accepted for the pressure-increase point."
+      ],
+      "dependencies": [
+        "Each source point earns at most one mark; maximum two. A future gas-law model must specify thermal conditions rather than assume Boyle's law always applies."
+      ],
+      "commonErrors": [
+        {
+          "description": "Claiming gas is sucked out through a sealed lid.",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:5.5",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Relate pressure imbalance to force on the bottle surface.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                27
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                12
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4PH1:issue4:5.20",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Explain pressure increase during gas compression qualitatively, with model conditions explicit in future teaching.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                28
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                12
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "photograph",
+        "scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            20,
+            21
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.bottle-compression",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [],
+      "markingPointPool": [
+        {
+          "id": "MP1",
+          "credit": 1,
+          "rule": "Cabin pressure increases, or outside pressure exceeds inside pressure."
+        },
+        {
+          "id": "MP2",
+          "credit": 1,
+          "rule": "There is an inward resultant force on the bottle."
+        },
+        {
+          "id": "MP3",
+          "credit": 1,
+          "rule": "Decreasing bottle volume increases its internal pressure."
+        }
+      ],
+      "markingConstraints": {
+        "maximum": 2,
+        "jointCaps": []
+      }
+    },
+    {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4PH1-2024-June-1-standard.Q9.c",
+      "questionPath": "9.c",
+      "originalMarks": 3,
+      "questionPaperPages": [
+        21
+      ],
+      "markSchemePages": [
+        12
+      ],
+      "commandWord": "Explain",
+      "requiredKnowledge": [
+        "Molecular origin of pressure"
+      ],
+      "contextSummary": "Explain gas pressure on a bottle surface.",
+      "solutionStructure": [
+        "Molecules move randomly and collide with the wall.",
+        "Wall collisions exert force; pressure is that force per area."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "distinct-source-points",
+          "marks": 3,
+          "rule": "Award any three distinct points from the four-point source pool."
+        }
+      ],
+      "acceptableAlternatives": [
+        "Particles/atoms allowed for molecules.",
+        "Bounce or hit allowed for collide.",
+        "p = F/A accepted for the pressure definition."
+      ],
+      "dependencies": [
+        "Ignore collisions described only between molecules; the credited collisions involve the bottle surface."
+      ],
+      "commonErrors": [
+        {
+          "description": "Mentioning molecular collisions without identifying the container wall.",
+          "origin": "scheme-explicit"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:5.15",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Explain random gas motion and molecular force on container walls.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                28
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                12
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4PH1:issue4:5.5",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Relate force on a surface to pressure per unit area.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                27
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                12
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            21
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.gas-pressure-explanation",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [],
+      "markingPointPool": [
+        {
+          "id": "MP1",
+          "credit": 1,
+          "rule": "Molecular motion has random direction."
+        },
+        {
+          "id": "MP2",
+          "credit": 1,
+          "rule": "Molecules collide with the bottle surface."
+        },
+        {
+          "id": "MP3",
+          "credit": 1,
+          "rule": "Collisions exert force on the surface."
+        },
+        {
+          "id": "MP4",
+          "credit": 1,
+          "rule": "Pressure equals force per unit area."
+        }
+      ],
+      "markingConstraints": {
+        "maximum": 3,
+        "jointCaps": []
+      }
+    },
+    {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4PH1-2024-June-1-standard.Q10.a",
+      "questionPath": "10.a",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        22
+      ],
+      "markSchemePages": [
+        13
+      ],
+      "commandWord": "Calculate",
+      "requiredKnowledge": [
+        "Weight equation",
+        "Grams to kilograms"
+      ],
+      "contextSummary": "Find the weight of a 250 g load using the supplied weight formula.",
+      "solutionStructure": [
+        "Convert 250 g to 0.250 kg.",
+        "Substitute into W=mg and evaluate."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "substitution",
+          "marks": 1,
+          "rule": "Substitute into W=mg."
+        },
+        {
+          "id": "evaluation",
+          "marks": 1,
+          "rule": "2.5 N with g=10 N/kg."
+        }
+      ],
+      "acceptableAlternatives": [
+        "Allow g=9.8 or 9.81, giving 2.45 or 2.4525 N."
+      ],
+      "dependencies": [
+        "Ignore units; deduct one mark for a clear power-of-ten mass conversion error."
+      ],
+      "commonErrors": [
+        {
+          "description": "Treating 250 g as 250 kg.",
+          "origin": "scheme-reject-or-ignore"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:1.18",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Use the weight–mass–field-strength relation.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                18
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                13
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4PH1:issue4:1.1",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Convert the given mass to kilograms.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                17
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                13
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            22
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.weight.convert-mass",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [],
+      "numericCrossCheck": {
+        "massGrams": 250,
+        "massKilograms": 0.25,
+        "fieldStrengthChoices": [
+          10,
+          9.8,
+          9.81
+        ],
+        "weightChoicesNewtons": [
+          2.5,
+          2.45,
+          2.4525
+        ]
+      },
+      "markingConstraints": {
+        "maximum": 2,
+        "jointCaps": [],
+        "powerOfTenMassErrorDeduction": 1
+      }
+    },
+    {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4PH1-2024-June-1-standard.Q10.b.i",
+      "questionPath": "10.b.i",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        22,
+        23
+      ],
+      "markSchemePages": [
+        13
+      ],
+      "commandWord": "Give",
+      "requiredKnowledge": [
+        "Independent and dependent experimental variables"
+      ],
+      "contextSummary": "Identify variables when overhanging strip length is changed and its downward displacement measured.",
+      "solutionStructure": [
+        "Identify length L as independent and height h as dependent."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "independent",
+          "marks": 1,
+          "rule": "Overhanging length L."
+        },
+        {
+          "id": "dependent",
+          "marks": 1,
+          "rule": "Downward height/displacement h."
+        }
+      ],
+      "acceptableAlternatives": [
+        "Allow L/l and H/h.",
+        "Condone length of the wooden strip for the independent variable."
+      ],
+      "dependencies": [],
+      "commonErrors": [
+        {
+          "description": "Reversing the changed and measured quantities.",
+          "origin": "agent-inferred"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:1.11",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "The experiment concerns force changing a strip's shape. This is contextual support only, not a claim that the numbered point enumerates the assessed investigation/graph skill.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                18
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                13
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "apparatus-diagram",
+        "method"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            22,
+            23
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.cantilever.variables",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [],
+      "experimentalSkills": [
+        "Identify independent and dependent variables"
+      ],
+      "mappingLimitations": [
+        "Experimental/mathematical skill demand is explicit in the source but is not yet linked to a separately audited specification skills statement; the 1.11 link supplies physical context only."
+      ]
+    },
+    {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4PH1-2024-June-1-standard.Q10.b.ii",
+      "questionPath": "10.b.ii",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        22,
+        23
+      ],
+      "markSchemePages": [
+        13
+      ],
+      "commandWord": "Give",
+      "requiredKnowledge": [
+        "Control variables"
+      ],
+      "contextSummary": "Name two quantities to hold constant in the strip bending investigation.",
+      "solutionStructure": [
+        "Select two distinct valid controls from the source pool."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "distinct-controls",
+          "marks": 2,
+          "rule": "Any two of load mass/weight, load position, strip thickness, strip material/type."
+        }
+      ],
+      "acceptableAlternatives": [
+        "Allow same wooden strip for one of thickness/material when neither corresponding mark is otherwise earned; do not turn one vague phrase into two credits."
+      ],
+      "dependencies": [
+        "Ignore same load on its own."
+      ],
+      "commonErrors": [
+        {
+          "description": "Naming the changed length as a control.",
+          "origin": "agent-inferred"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:1.11",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "The experiment concerns force changing a strip's shape. This is contextual support only, not a claim that the numbered point enumerates the assessed investigation/graph skill.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                18
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                13
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "apparatus-diagram",
+        "method"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            22,
+            23
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.cantilever.controls",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [],
+      "experimentalSkills": [
+        "Select control variables"
+      ],
+      "mappingLimitations": [
+        "Experimental/mathematical skill demand is explicit in the source but is not yet linked to a separately audited specification skills statement; the 1.11 link supplies physical context only."
+      ],
+      "markingPointPool": [
+        {
+          "id": "MP1",
+          "credit": 1,
+          "rule": "Mass or weight of load."
+        },
+        {
+          "id": "MP2",
+          "credit": 1,
+          "rule": "Position of load on strip."
+        },
+        {
+          "id": "MP3",
+          "credit": 1,
+          "rule": "Strip thickness."
+        },
+        {
+          "id": "MP4",
+          "credit": 1,
+          "rule": "Strip material/type."
+        }
+      ],
+      "markingConstraints": {
+        "maximum": 2,
+        "jointCaps": []
+      }
+    },
+    {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4PH1-2024-June-1-standard.Q10.b.iii",
+      "questionPath": "10.b.iii",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        22,
+        23
+      ],
+      "markSchemePages": [
+        13
+      ],
+      "commandWord": "Suggest",
+      "requiredKnowledge": [
+        "Measure vertical displacement accurately"
+      ],
+      "contextSummary": "Suggest how to measure the strip-end drop h accurately.",
+      "solutionStructure": [
+        "Choose two suitable measurement details; alternative valid methods may earn credit."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "measurement-details",
+          "marks": 2,
+          "rule": "Any two distinct details from the five-point pool or equivalent valid method."
+        }
+      ],
+      "acceptableAlternatives": [
+        "Tape measure allowed; metre stick condoned.",
+        "An alternative may subtract loaded/unloaded heights measured from the ground."
+      ],
+      "dependencies": [
+        "Ignore unqualified reference to parallax error."
+      ],
+      "commonErrors": [
+        {
+          "description": "Only saying avoid parallax without explaining eye level or alignment.",
+          "origin": "scheme-reject-or-ignore"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:1.11",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "The experiment concerns force changing a strip's shape. This is contextual support only, not a claim that the numbered point enumerates the assessed investigation/graph skill.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                18
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                13
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "apparatus-diagram",
+        "method"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            22,
+            23
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.cantilever.measurement",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [],
+      "experimentalSkills": [
+        "Choose and position measuring apparatus",
+        "Reduce measurement error"
+      ],
+      "mappingLimitations": [
+        "Experimental/mathematical skill demand is explicit in the source but is not yet linked to a separately audited specification skills statement; the 1.11 link supplies physical context only."
+      ],
+      "markingPointPool": [
+        {
+          "id": "MP1",
+          "credit": 1,
+          "rule": "Use a metre rule."
+        },
+        {
+          "id": "MP2",
+          "credit": 1,
+          "rule": "Fix rule at the strip end."
+        },
+        {
+          "id": "MP3",
+          "credit": 1,
+          "rule": "Place rule zero at the original strip height."
+        },
+        {
+          "id": "MP4",
+          "credit": 1,
+          "rule": "Ensure vertical measurement, for example by plumb line or set square."
+        },
+        {
+          "id": "MP5",
+          "credit": 1,
+          "rule": "Read at eye level."
+        }
+      ],
+      "markingConstraints": {
+        "maximum": 2,
+        "jointCaps": []
+      }
+    },
+    {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4PH1-2024-June-1-standard.Q10.c.i",
+      "questionPath": "10.c.i",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        24
+      ],
+      "markSchemePages": [
+        14
+      ],
+      "commandWord": "Determine",
+      "requiredKnowledge": [
+        "Measure a scale diagram",
+        "Apply a scale factor"
+      ],
+      "contextSummary": "Measure the vertical displacement on the supplied scale diagram when L=80 cm; 1 cm represents 10 cm.",
+      "solutionStructure": [
+        "Measure 3.1 cm on the original-size diagram, within 3.0–3.2 cm.",
+        "Multiply by 10 to obtain 31 cm."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "measurement",
+          "marks": 1,
+          "rule": "Original-page measurement 3.1 cm, allowing 3.0–3.2 cm."
+        },
+        {
+          "id": "scale",
+          "marks": 1,
+          "rule": "Apply the factor 10 to give 31 cm."
+        }
+      ],
+      "acceptableAlternatives": [
+        "A final answer 30–32 cm scores both marks.",
+        "Allow ×10 shown in working."
+      ],
+      "dependencies": [
+        "The measurement depends on the original printed dimensions; screen pixels and resized screenshots are not centimetres."
+      ],
+      "commonErrors": [
+        {
+          "description": "Using the sloping strip length instead of vertical height.",
+          "origin": "agent-inferred"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:1.11",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "The experiment concerns force changing a strip's shape. This is contextual support only, not a claim that the numbered point enumerates the assessed investigation/graph skill.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                18
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                14
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "scale-diagram",
+        "table"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            24
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.cantilever.scale-reading",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "Calibrated physical-scale rendering or an equivalent explicit numerical stimulus is required before generation/marking."
+      ],
+      "experimentalSkills": [
+        "Read a scale diagram",
+        "Convert using a scale factor"
+      ],
+      "mappingLimitations": [
+        "Experimental/mathematical skill demand is explicit in the source but is not yet linked to a separately audited specification skills statement; the 1.11 link supplies physical context only."
+      ],
+      "scaleCrossCheck": {
+        "diagramMeasurementCm": 3.1,
+        "diagramRangeCm": [
+          3,
+          3.2
+        ],
+        "scaleFactor": 10,
+        "physicalHeightCm": 31,
+        "acceptedHeightRangeCm": [
+          30,
+          32
+        ]
+      }
+    },
+    {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4PH1-2024-June-1-standard.Q10.c.ii",
+      "questionPath": "10.c.ii",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        24,
+        25
+      ],
+      "markSchemePages": [
+        14
+      ],
+      "commandWord": "Plot",
+      "requiredKnowledge": [
+        "Choose graph scales",
+        "Plot experimental data"
+      ],
+      "contextSummary": "Plot the six strip-length/height data pairs, using the height obtained in part c.i.",
+      "solutionStructure": [
+        "Choose suitable linear axes using more than half the grid.",
+        "Plot all points to the nearest half small square."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "scales",
+          "marks": 1,
+          "rule": "Suitable linear scale with more than 50% of grid used."
+        },
+        {
+          "id": "plotting",
+          "marks": 1,
+          "rule": "Points correct to the nearest half small square."
+        }
+      ],
+      "acceptableAlternatives": [
+        "False origin allowed.",
+        "Apply error carried forward from c.i for the 80 cm point."
+      ],
+      "dependencies": [
+        "Reject if a non-linear scale is used."
+      ],
+      "commonErrors": [
+        {
+          "description": "Treating a non-linear relation as permission to use non-linear axis scales.",
+          "origin": "agent-inferred"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:1.11",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "The experiment concerns force changing a strip's shape. This is contextual support only, not a claim that the numbered point enumerates the assessed investigation/graph skill.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                18
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                14
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "table",
+        "graph-grid"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            24,
+            25
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.cantilever.plot-data",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "Graph input and geometric plotting-tolerance marking have not been implemented or calibrated."
+      ],
+      "experimentalSkills": [
+        "Select graph scales",
+        "Plot measurements"
+      ],
+      "mappingLimitations": [
+        "Experimental/mathematical skill demand is explicit in the source but is not yet linked to a separately audited specification skills statement; the 1.11 link supplies physical context only."
+      ],
+      "dataCrossCheck": {
+        "lengthsCm": [
+          20,
+          40,
+          60,
+          80,
+          100,
+          120
+        ],
+        "heightsCm": [
+          2,
+          8,
+          18,
+          31,
+          53,
+          71
+        ],
+        "dependentSourceTask": "4PH1-2024-June-1-standard.Q10.c.i",
+        "dependentPointIndex": 3
+      }
+    },
+    {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4PH1-2024-June-1-standard.Q10.c.iii",
+      "questionPath": "10.c.iii",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        24,
+        25
+      ],
+      "markSchemePages": [
+        14
+      ],
+      "commandWord": "Draw",
+      "requiredKnowledge": [
+        "Curve of best fit"
+      ],
+      "contextSummary": "Draw a best-fit curve for the plotted strip data from L=20 to 120 cm.",
+      "solutionStructure": [
+        "Draw a smooth curve balancing points on either side across the measured interval."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "best-fit",
+          "marks": 1,
+          "rule": "Acceptable smooth best-fit curve over 20–120 cm with points distributed equally on either side, subject to the unresolved source tolerance wording."
+        }
+      ],
+      "acceptableAlternatives": [
+        "Error carried forward can apply to c.ii plotting or c.i measurement errors."
+      ],
+      "dependencies": [
+        "Do not silently replace the source's stated minimum-distance wording with a maximum tolerance."
+      ],
+      "commonErrors": [
+        {
+          "description": "Joining data points with straight segments instead of a smooth best-fit curve.",
+          "origin": "agent-inferred"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:1.11",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "The experiment concerns force changing a strip's shape. This is contextual support only, not a claim that the numbered point enumerates the assessed investigation/graph skill.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                18
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                14
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "table",
+        "graph-grid"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            24,
+            25
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.cantilever.best-fit",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "Official scheme's minimum-distance note is unresolved; no automated curve-tolerance rule may be activated.",
+        "Graph drawing input and calibration remain unimplemented."
+      ],
+      "experimentalSkills": [
+        "Fit a smooth curve to data"
+      ],
+      "mappingLimitations": [
+        "Experimental/mathematical skill demand is explicit in the source but is not yet linked to a separately audited specification skills statement; the 1.11 link supplies physical context only."
+      ],
+      "sourceDiscrepancy": {
+        "documentId": "4PH1-2024-June-1-standard-ms",
+        "pdfPages": [
+          14
+        ],
+        "field": "distance-from-curve note",
+        "sourceWording": "at least 1 small square",
+        "issue": "A minimum separation conflicts with the smooth best-fit instruction and does not define the expected upper tolerance; no publisher correction has been obtained.",
+        "resolution": "Unresolved. Preserve wording in evidence; prohibit automated tolerance scoring and template activation."
+      }
+    },
+    {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4PH1-2024-June-1-standard.Q10.c.iv",
+      "questionPath": "10.c.iv",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        24,
+        25
+      ],
+      "markSchemePages": [
+        14
+      ],
+      "commandWord": "Evaluate",
+      "requiredKnowledge": [
+        "Direct proportionality tests"
+      ],
+      "contextSummary": "Evaluate the claim that h is directly proportional to L using the results or graph.",
+      "solutionStructure": [
+        "Explain direct proportionality requires a straight line through the origin or constant h/L.",
+        "Reject the student's conclusion using the non-linear results."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "criterion",
+          "marks": 1,
+          "rule": "Direct proportionality requires a straight line through the origin; accept non-linearity/non-constant gradient or the constant h/L test."
+        },
+        {
+          "id": "conclusion",
+          "marks": 1,
+          "rule": "Student's direct-proportionality conclusion is incorrect."
+        }
+      ],
+      "acceptableAlternatives": [
+        "Allow the ratio h/L argument."
+      ],
+      "dependencies": [
+        "Dependent-on-previous (DOP): conclusion credit depends on the preceding explanatory criterion.",
+        "Score zero if the response indicates the relationship is proportional or directly proportional."
+      ],
+      "commonErrors": [
+        {
+          "description": "Claiming direct proportionality merely because both quantities increase.",
+          "origin": "agent-inferred"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:1.11",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "The experiment concerns force changing a strip's shape. This is contextual support only, not a claim that the numbered point enumerates the assessed investigation/graph skill.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                18
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                14
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "table",
+        "graph-grid"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            24,
+            25
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.cantilever.proportionality",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [],
+      "experimentalSkills": [
+        "Evaluate a proposed relationship using data"
+      ],
+      "mappingLimitations": [
+        "Experimental/mathematical skill demand is explicit in the source but is not yet linked to a separately audited specification skills statement; the 1.11 link supplies physical context only."
+      ],
+      "markingConstraints": {
+        "maximum": 2,
+        "jointCaps": [],
+        "requires": [
+          {
+            "criterionId": "conclusion",
+            "prerequisiteCriterionId": "criterion"
+          }
+        ],
+        "zeroOverride": "Any indication that the relationship is proportional or directly proportional."
+      }
+    },
+    {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4PH1-2024-June-1-standard.Q11.a",
+      "questionPath": "11.a",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        26
+      ],
+      "markSchemePages": [
+        15
+      ],
+      "commandWord": "Calculate",
+      "requiredKnowledge": [
+        "Q=It",
+        "Ampere-hour to coulomb conversion"
+      ],
+      "contextSummary": "Convert the explicitly defined 1 Ah charge into coulombs.",
+      "solutionStructure": [
+        "Convert one hour to 3600 seconds.",
+        "Evaluate Q=1×3600=3600 C."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "time-conversion",
+          "marks": 1,
+          "rule": "3600 or 60×60 shown."
+        },
+        {
+          "id": "evaluation",
+          "marks": 1,
+          "rule": "3600 C."
+        }
+      ],
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [
+        {
+          "description": "Multiplying 1 A by 1 hour and reporting 1 coulomb.",
+          "origin": "agent-inferred"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:2.15",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Use Q=It.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                21
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                15
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4PH1:issue4:2.1",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Use seconds and coulombs.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                15
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "photo",
+        "definition"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            26
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.charge.ampere-hours",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [],
+      "chargeCrossCheck": {
+        "currentAmperes": 1,
+        "timeHours": 1,
+        "timeSeconds": 3600,
+        "chargeCoulombs": 3600
+      }
+    },
+    {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4PH1-2024-June-1-standard.Q11.b.i",
+      "questionPath": "11.b.i",
+      "originalMarks": 3,
+      "questionPaperPages": [
+        27
+      ],
+      "markSchemePages": [
+        15
+      ],
+      "commandWord": "Calculate",
+      "requiredKnowledge": [
+        "Rearrange Q=It",
+        "Convert seconds to minutes"
+      ],
+      "contextSummary": "Find charging time for 3800 C transferred at a constant 2.4 A; answer in minutes.",
+      "solutionStructure": [
+        "Substitute or rearrange t=Q/I.",
+        "Evaluate seconds, then divide by 60."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "substitution",
+          "marks": 1,
+          "rule": "Substitute 3800=2.4t or rearrange t=Q/I."
+        },
+        {
+          "id": "seconds",
+          "marks": 1,
+          "rule": "Evaluate approximately 1583.33 s."
+        },
+        {
+          "id": "minutes",
+          "marks": 1,
+          "rule": "Convert to approximately 26.39 minutes."
+        }
+      ],
+      "acceptableAlternatives": [
+        "Scheme permits 1600, 1580 or 1583… seconds and 26–27 minutes."
+      ],
+      "dependencies": [
+        "Mark steps independently and apply error carried forward."
+      ],
+      "commonErrors": [
+        {
+          "description": "Leaving the result in seconds although minutes are requested.",
+          "origin": "scheme-reject-or-ignore"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:2.15",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Rearrange Q=It for time.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                21
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                15
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4PH1:issue4:2.1",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Convert time units after evaluation.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                15
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            27
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.charge.solve-time",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [],
+      "chargeCrossCheck": {
+        "currentAmperes": 2.4,
+        "chargeCoulombs": 3800,
+        "timeSeconds": 1583.3333333333335,
+        "timeMinutes": 26.388888888888893,
+        "acceptedMinutes": [
+          26,
+          27
+        ]
+      }
+    },
+    {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4PH1-2024-June-1-standard.Q11.b.ii",
+      "questionPath": "11.b.ii",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        27
+      ],
+      "markSchemePages": [
+        15
+      ],
+      "commandWord": "Suggest",
+      "requiredKnowledge": [
+        "Resistance affects current",
+        "Charging time for a fixed charge"
+      ],
+      "contextSummary": "Predict the effect of a longer connecting cable compared with a short cable in the source's simple resistance model.",
+      "solutionStructure": [
+        "Longer comparable cable has greater resistance.",
+        "Current decreases and time to transfer the required charge increases."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "resistance",
+          "marks": 1,
+          "rule": "Longer cable has greater resistance."
+        },
+        {
+          "id": "current-and-time",
+          "marks": 1,
+          "rule": "Charging current is smaller AND charging time increases; both ideas needed for this mark."
+        }
+      ],
+      "acceptableAlternatives": [],
+      "dependencies": [
+        "Ignore longer distance alone.",
+        "This is a comparison scenario; do not carry the earlier fixed 2.4 A condition into a claim that cable current is simultaneously unchanged and reduced."
+      ],
+      "commonErrors": [
+        {
+          "description": "Only saying electrons have further to travel.",
+          "origin": "scheme-reject-or-ignore"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:2.10",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Qualitative effect of resistance on current.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                21
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                15
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4PH1:issue4:2.15",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "At fixed charge, reduced current increases charging time.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                21
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                15
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            27
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.charge.cable-resistance",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "Cable-model assumptions and two-idea marking criterion need calibration before activation."
+      ],
+      "scopeCautions": [
+        "Generated variants must specify comparable conductor material/cross-section and a source/load model in which added resistance reduces current; real regulated chargers may behave differently."
+      ]
+    },
+    {
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4PH1-2024-June-1-standard.Q11.c",
+      "questionPath": "11.c",
+      "originalMarks": 4,
+      "questionPaperPages": [
+        28
+      ],
+      "markSchemePages": [
+        15
+      ],
+      "commandWord": "Determine",
+      "requiredKnowledge": [
+        "Charge budgeting",
+        "Frequency-weighted totals",
+        "Evaluate assumptions"
+      ],
+      "contextSummary": "Compare a 26.8 Ah bank with three devices requiring 2.4 Ah daily, 4.2 Ah once, and 6.8 Ah once over one week.",
+      "solutionStructure": [
+        "Calculate seven daily charges plus the two weekly charges: 27.8 Ah.",
+        "Compare with 26.8 Ah: short by 1.0 Ah for complete-flat recharging.",
+        "State insufficiency under that model; source also credits three practical qualifications."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "distinct-evaluation-points",
+          "marks": 4,
+          "rule": "Any four distinct points from the six-point source pool."
+        }
+      ],
+      "acceptableAlternatives": [
+        "27.8 Ah or 100080 C accepted for total charge.",
+        "Allow 27.8>26.8 or a 1 Ah shortfall.",
+        "Allow partially charged devices, reduced use, or recharging the bank during the trip."
+      ],
+      "dependencies": [
+        "Source explicitly allows error carried forward from the total into the insufficiency conclusion."
+      ],
+      "commonErrors": [
+        {
+          "description": "Counting only one recharge of daily-use device A.",
+          "origin": "agent-inferred"
+        },
+        {
+          "description": "Treating practical caveats as proof that full empty-device recharge is possible with the given charge budget.",
+          "origin": "agent-inferred"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:2.15",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Use current-time charge units to total the provided recharge budget.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                21
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                15
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4PH1:issue4:2.14",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "The source defines Ah via charge transferred by current over time.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                21
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                15
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "table",
+        "scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            28
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.charge.weekly-budget",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "Evaluation caveats, ECF and the ideal charge-budget assumptions need calibration before activation."
+      ],
+      "markingPointPool": [
+        {
+          "id": "MP1",
+          "credit": 1,
+          "rule": "Determine 27.8 Ah (100080 C) required over the week."
+        },
+        {
+          "id": "MP2",
+          "credit": 1,
+          "rule": "Quantitatively compare with 26.8 Ah capacity."
+        },
+        {
+          "id": "MP3",
+          "credit": 1,
+          "rule": "Bank cannot recharge all devices from completely flat; allow ECF from MP1."
+        },
+        {
+          "id": "MP4",
+          "credit": 1,
+          "rule": "Devices may retain charge at recharge time."
+        },
+        {
+          "id": "MP5",
+          "credit": 1,
+          "rule": "Reduced device use may extend time between charges."
+        },
+        {
+          "id": "MP6",
+          "credit": 1,
+          "rule": "Other charging facilities, including bank recharge, may be available."
+        }
+      ],
+      "markingConstraints": {
+        "maximum": 4,
+        "jointCaps": []
+      },
+      "chargeCrossCheck": {
+        "deviceChargeAh": [
+          2.4,
+          4.2,
+          6.8
+        ],
+        "rechargeCounts": [
+          7,
+          1,
+          1
+        ],
+        "totalRequiredAh": 27.8,
+        "totalRequiredCoulombs": 100080,
+        "bankCapacityAh": 26.8,
+        "shortfallAh": 1
+      },
+      "scopeCautions": [
+        "Preserve the exam's ideal charge-budget model. Future physical battery comparisons must specify compatible voltage reference and conversion efficiency; Ah alone is not generally an energy-capacity comparison."
+      ]
+    },
+    {
       "taskId": "4PH1-2024-June-1-standard.Q12.a",
       "paperId": "4PH1-2024-June-1-standard",
       "questionPath": "12.a",
@@ -2571,11 +6009,12 @@
     }
   ],
   "blockers": [
-    "27 of 51 numbered parts (51 of 110 marks) still lack detailed extraction.",
+    "All 51 numbered leaves (110 marks) have agent source-checked detailed records, but paper promotion gates below remain incomplete.",
     "Source-task to validated-template links incomplete.",
     "No examiner report checked for this paper.",
-    "Two official-scheme inconsistencies recorded for review; no affected template activated.",
-    "Whole-paper current-syllabus and assessment-objective mapping remains incomplete."
+    "Three official-scheme inconsistencies are recorded (Q3.c decimal, Q8 optical density, Q10.c.iii curve-distance wording); affected templates remain inactive.",
+    "Numbered Physics parent identities are reviewed, but experimental-skills, whole-paper current-syllabus applicability and official assessment-objective allocation remain incomplete.",
+    "Q4.c stellar-stage and Q11 charge/cable model scope require calibration before generative reuse."
   ],
   "graphCrossCheck": {
     "provenanceKind": "editorial-inference",
