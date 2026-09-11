@@ -3,6 +3,7 @@ import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import Ajv from 'ajv';
+import { templateContractErrors } from './template-contract.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const read = (name) => JSON.parse(readFileSync(root + name, 'utf8'));
@@ -35,6 +36,7 @@ check(
         validateTemplate(family),
         family.id + ': ' + JSON.stringify(validateTemplate.errors),
       );
+      assert.deepEqual(templateContractErrors(family), [], family.id);
       if (
         !['agent-reviewed', 'human-reviewed'].includes(
           family.review.pedagogyStatus,

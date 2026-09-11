@@ -59,7 +59,7 @@ void test('reviewed Physics inventories agree with source candidates and registe
       (n, inventory) => n + inventory.points.length,
       0,
     ),
-    89,
+    113,
   );
   const allIds = reviewedInventories.flatMap((i) => i.points.map((p) => p.id));
   assert.equal(new Set(allIds).size, allIds.length);

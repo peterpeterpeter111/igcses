@@ -18,11 +18,12 @@
   "fullyProcessed": false,
   "wholePaperMarks": 110,
   "wholePaperLeafCount": 51,
-  "detailedLeafTasks": 19,
-  "detailedOriginalMarks": 51,
+  "detailedLeafTasks": 24,
+  "detailedOriginalMarks": 59,
   "reviewedQuestionTotals": {
     "3": 10,
     "5": 11,
+    "6": 8,
     "7": 12,
     "8": 6,
     "12": 12
@@ -1189,6 +1190,90 @@
           ]
         }
       ]
+    },
+    {
+      "taskId":"4PH1-2024-June-1-standard.Q6.a","paperId":"4PH1-2024-June-1-standard","recordKind":"leaf","questionPath":"6.a","originalMarks":1,
+      "questionPaperPages":[14],"markSchemePages":[9],"commandWord":"Draw",
+      "requiredKnowledge":["Direction of external magnetic field lines into a south pole"],
+      "contextSummary":"Add arrows to the given field lines outside the south end of a bar magnet.",
+      "solutionStructure":["Place at least two arrows directed towards the south pole."],
+      "markingMethod":"discrete-points",
+      "criteria":[{"id":"field-arrows","marks":1,"rule":"At least two arrows towards the south pole, with no arrow pointing away from it."}],
+      "acceptableAlternatives":["The source condones arrows not on existing field lines."],
+      "dependencies":["Reject this mark if any arrow points away from the south pole; one correct arrow is insufficient."],
+      "commonErrors":[{"description":"Reversing the external field direction at a south pole.","origin":"scheme-explicit"}],
+      "syllabusMappings":[{"pointId":"4PH1:issue4:6.4","kind":"primary","currentApplicability":"current-specification","reviewStatus":"agent-reviewed","rationale":"Interpret and mark field-line direction at a south pole.","evidenceRefs":[{"documentId":"4PH1-spec","pdfPages":[29]},{"documentId":"4PH1-2024-June-1-standard-ms","pdfPages":[9]}]}],
+      "stimulusTypes":["magnetic-field-diagram"],"stimulusRefs":[{"documentId":"4PH1-2024-June-1-standard-qp","pdfPages":[14]}],
+      "assessmentObjectives":[],"assessmentObjectiveStatus":"No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId":"4PH1.magnetic-field-direction","templateLinkStatus":"candidate-only","extractionStatus":"source-checked","reviewer":"Codex Astra","reviewerType":"agent","humanReviewed":false,
+      "blockers":["Drawing-response recognition and contradictory-arrow calibration are not implemented."]
+    },
+    {
+      "taskId":"4PH1-2024-June-1-standard.Q6.b","paperId":"4PH1-2024-June-1-standard","recordKind":"leaf","questionPath":"6.b","originalMarks":1,
+      "questionPaperPages":[14],"markSchemePages":[9],"commandWord":"Select",
+      "requiredKnowledge":["Recognition of a magnetic substance"],
+      "contextSummary":"Choose which of copper, nickel, plastic and zinc is attracted to the bar magnet in the school-level classification.",
+      "solutionStructure":["Select B, nickel."],"markingMethod":"discrete-points",
+      "criteria":[{"id":"nickel","marks":1,"rule":"B (nickel)."}],
+      "acceptableAlternatives":[],"dependencies":["Single-choice response; preserve the original one-mark demand separately from the custom 2/4/6-mark blueprint."],
+      "commonErrors":[{"description":"Choosing copper, plastic or zinc instead of nickel.","origin":"scheme-explicit"}],
+      "syllabusMappings":[{"pointId":"4PH1:issue4:6.2","kind":"primary","currentApplicability":"current-specification","reviewStatus":"agent-reviewed","rationale":"Recognise a substance attracted to a magnet.","evidenceRefs":[{"documentId":"4PH1-spec","pdfPages":[29]},{"documentId":"4PH1-2024-June-1-standard-ms","pdfPages":[9]}]}],
+      "stimulusTypes":["multiple-choice-options"],"stimulusRefs":[{"documentId":"4PH1-2024-June-1-standard-qp","pdfPages":[14]}],
+      "assessmentObjectives":[],"assessmentObjectiveStatus":"No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId":"4PH1.magnetic-materials","templateLinkStatus":"candidate-only","extractionStatus":"source-checked","reviewer":"Codex Astra","reviewerType":"agent","humanReviewed":false,"blockers":[]
+    },
+    {
+      "taskId":"4PH1-2024-June-1-standard.Q6.c","paperId":"4PH1-2024-June-1-standard","recordKind":"leaf","questionPath":"6.c","originalMarks":2,
+      "questionPaperPages":[14],"markSchemePages":[9],"commandWord":"Explain",
+      "requiredKnowledge":["Magnetic field-line spacing represents relative field strength"],
+      "contextSummary":"Use the spreading field-line pattern to explain how strength changes away from the south pole.",
+      "solutionStructure":["Line spacing increases with distance from the pole.","More widely spaced field lines represent a weaker magnetic field."],
+      "markingMethod":"discrete-points",
+      "criteria":[{"id":"spacing-change","marks":1,"rule":"Field-line spacing or density changes with distance from the pole."},{"id":"strength-link","marks":1,"rule":"Larger spacing represents a weaker field."}],
+      "acceptableAlternatives":["Reverse argument accepted.","For this particular diagram the source permits 'field lines are not parallel' for both marks; this shortcut is not a complete general definition of field strength."],
+      "dependencies":["Ignore references to forces. Use the line-spacing/strength explanation in original teaching."],
+      "commonErrors":[{"description":"Describing the spacing without linking it to field strength.","origin":"editorial"}],
+      "syllabusMappings":[{"pointId":"4PH1:issue4:6.4","kind":"primary","currentApplicability":"current-specification","reviewStatus":"agent-reviewed","rationale":"Read relative field strength from the supplied field-line pattern.","evidenceRefs":[{"documentId":"4PH1-spec","pdfPages":[29]},{"documentId":"4PH1-2024-June-1-standard-ms","pdfPages":[9]}]}],
+      "stimulusTypes":["magnetic-field-diagram"],"stimulusRefs":[{"documentId":"4PH1-2024-June-1-standard-qp","pdfPages":[14]}],
+      "assessmentObjectives":[],"assessmentObjectiveStatus":"No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId":"4PH1.field-spacing-explanation","templateLinkStatus":"candidate-only","extractionStatus":"source-checked","reviewer":"Codex Astra","reviewerType":"agent","humanReviewed":false,"blockers":[]
+    },
+    {
+      "taskId":"4PH1-2024-June-1-standard.Q6.d.i","paperId":"4PH1-2024-June-1-standard","recordKind":"leaf","questionPath":"6.d.i","originalMarks":2,
+      "questionPaperPages":[14,15],"markSchemePages":[9],"commandWord":"Explain",
+      "requiredKnowledge":["Induced magnetism","Unlike poles attract"],
+      "contextSummary":"Explain attraction of an initially unmagnetised iron piece placed near the bar magnet's south pole.",
+      "solutionStructure":["A north pole is induced at the end of the iron nearest the south pole.","The adjacent unlike poles attract."],"markingMethod":"discrete-points",
+      "criteria":[{"id":"induced-near-north","marks":1,"rule":"North pole induced on the iron side nearest the bar magnet."},{"id":"unlike-attraction","marks":1,"rule":"Unlike poles attract."}],
+      "acceptableAlternatives":["Induced north pole may be shown on the diagram.","North is attracted to south is accepted."],
+      "dependencies":["Ignore references to charge; magnetic poles are required, not electrostatic charge labels."],
+      "commonErrors":[{"description":"Putting the induced south pole at the end nearest the bar magnet's south pole.","origin":"editorial"}],
+      "syllabusMappings":[
+        {"pointId":"4PH1:issue4:6.5","kind":"primary","currentApplicability":"current-specification","reviewStatus":"agent-reviewed","rationale":"Identify the polarity induced by the external magnet.","evidenceRefs":[{"documentId":"4PH1-spec","pdfPages":[29]},{"documentId":"4PH1-2024-June-1-standard-ms","pdfPages":[9]}]},
+        {"pointId":"4PH1:issue4:6.2","kind":"supporting","currentApplicability":"current-specification","reviewStatus":"agent-reviewed","rationale":"Explain the resulting attraction of unlike poles.","evidenceRefs":[{"documentId":"4PH1-spec","pdfPages":[29]},{"documentId":"4PH1-2024-June-1-standard-ms","pdfPages":[9]}]}
+      ],
+      "stimulusTypes":["magnetic-field-diagram"],"stimulusRefs":[{"documentId":"4PH1-2024-June-1-standard-qp","pdfPages":[14,15]}],
+      "assessmentObjectives":[],"assessmentObjectiveStatus":"No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId":"4PH1.induced-magnetism","templateLinkStatus":"candidate-only","extractionStatus":"source-checked","reviewer":"Codex Astra","reviewerType":"agent","humanReviewed":false,
+      "blockers":["Combined diagram/text response marking remains uncalibrated."]
+    },
+    {
+      "taskId":"4PH1-2024-June-1-standard.Q6.d.ii","paperId":"4PH1-2024-June-1-standard","recordKind":"leaf","questionPath":"6.d.ii","originalMarks":2,
+      "questionPaperPages":[15],"markSchemePages":[9],"commandWord":"Explain",
+      "requiredKnowledge":["Magnetically soft materials do not retain strong induced magnetism"],
+      "contextSummary":"Explain why the iron piece should not be described as a permanent magnet.",
+      "solutionStructure":["Iron is magnetically soft.","It loses its induced magnetism when removed from the external field."],"markingMethod":"discrete-points",
+      "criteria":[{"id":"soft-material","marks":1,"rule":"Iron is a magnetically soft material."},{"id":"loss-on-removal","marks":1,"rule":"Iron loses its magnetism when removed from the field."}],
+      "acceptableAlternatives":["Iron is easily demagnetised is accepted.","Iron is magnetic only in an external field is accepted by this source."],
+      "dependencies":["The source ignores merely saying 'soft magnet' or 'temporary magnet'; describe the material property and loss of magnetism."],
+      "commonErrors":[{"description":"Naming a temporary magnet without explaining its material property or behaviour on removal.","origin":"scheme-explicit"}],
+      "syllabusMappings":[
+        {"pointId":"4PH1:issue4:6.3","kind":"primary","currentApplicability":"current-specification","reviewStatus":"agent-reviewed","rationale":"Use the behaviour of a magnetically soft material.","evidenceRefs":[{"documentId":"4PH1-spec","pdfPages":[29]},{"documentId":"4PH1-2024-June-1-standard-ms","pdfPages":[9]}]},
+        {"pointId":"4PH1:issue4:6.5","kind":"supporting","currentApplicability":"current-specification","reviewStatus":"agent-reviewed","rationale":"Relate removal of the external field to the induced magnetism.","evidenceRefs":[{"documentId":"4PH1-spec","pdfPages":[29]},{"documentId":"4PH1-2024-June-1-standard-ms","pdfPages":[9]}]}
+      ],
+      "stimulusTypes":["magnetic-field-diagram","scenario"],"stimulusRefs":[{"documentId":"4PH1-2024-June-1-standard-qp","pdfPages":[15]}],
+      "assessmentObjectives":[],"assessmentObjectiveStatus":"No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId":"4PH1.magnetic-material-properties","templateLinkStatus":"candidate-only","extractionStatus":"source-checked","reviewer":"Codex Astra","reviewerType":"agent","humanReviewed":false,"blockers":[]
     },
     {
       "taskId": "4PH1-2024-June-1-standard.Q7.a",
@@ -2486,7 +2571,7 @@
     }
   ],
   "blockers": [
-    "32 of 51 numbered parts (59 of 110 marks) still lack detailed extraction.",
+    "27 of 51 numbered parts (51 of 110 marks) still lack detailed extraction.",
     "Source-task to validated-template links incomplete.",
     "No examiner report checked for this paper.",
     "Two official-scheme inconsistencies recorded for review; no affected template activated.",

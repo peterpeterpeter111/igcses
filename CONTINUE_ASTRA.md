@@ -1,4 +1,12 @@
-# Latest resume — 11 September 2026
+# Latest resume — Electricity teaching
+
+Resume the latest local commit and read PROGRESS_CHECKPOINT.md plus research/checkpoints/2026-09-11-ELECTRICITY.md first. Preserve history and existing UI. Nine partial notes/74 sections, 113 reviewed Physics parents/135 partial links, Physics 24 detailed leaves/59 marks, six obtained pairs; zero complete chapters/points/papers or validated/active templates. 52 tests and production build pass. Finish pending non-force GitHub delta from 8847d99 (450edbf mirror), then continue remaining extraction, curriculum/substatement audits and calibrated templates. Navigation-failure recovery review remains queued. Keep AI integration last; no Sites version or deployment. Both allowances must exceed 5%; checkpoint/pause at 5% and never consume a reset. All entries below are historical.
+
+# Previous resume — Q6 and template gates
+
+Continue the latest local descendant. Read PROGRESS_CHECKPOINT.md and research/checkpoints/2026-09-11-Q6.md first, then 2026-09-11-TEMPLATE-GATE.md. Preserve all history, no reset, both allowances above 5% before continuing and save/pause at 5%. Finish any GitHub delta from 8847d99 (exact mirror of 450edbf). Counts: eight partial notes/55 sections, 93 reviewed Physics parents/103 partial links; 24 detailed Physics leaves/59 marks with 27 leaves/51 marks pending. Zero complete chapters/points/papers or validated/active templates. 52 tests and production build pass. Expand Electricity teaching, finish paper detail and calibrated templates. Keep AI last and existing search/grain-free UI. No Sites version or deployment. Below is historical.
+
+# Previous resume — 11 September 2026
 
 Resume the latest local commit, preserving ec41382 and all descendants. Read PROGRESS_CHECKPOINT.md and research/checkpoints/2026-09-11-Q7-HANDOFF.md first. Check both allowances; continue only above 5%, pause/save at 5%, consume no reset. Verify or finish the non-force GitHub sync before new work. Current counts: eight partial note documents/55 sections; 89 reviewed Physics parents/103 partial links; six obtained pairs; Physics 19 detailed leaves/51 marks and a separate complete 51-leaf/110-mark visual inventory; zero complete chapters/points or fully processed papers. Two provisional families, one experimental generator, 28 bounded final-answer calibration cases, zero validated/active templates. 48 tests plus typecheck, lint, research checks and production build pass. Continue remaining extraction, curriculum/substatement audits and template calibration. Preserve search and grain-free UI. AI integration last; no Sites version or deployment yet. All entries below are historical.
 

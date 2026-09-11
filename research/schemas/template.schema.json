@@ -90,6 +90,7 @@
     "review": {"type": "object", "additionalProperties": false, "required": ["pedagogyStatus", "reviewer", "reviewerType", "humanReviewed", "blockers"], "properties": {"pedagogyStatus": {"enum": ["pending", "agent-reviewed", "human-reviewed", "rejected"]}, "reviewer": {"type": ["string", "null"]}, "reviewerType": {"enum": ["agent", "human", "none"]}, "humanReviewed": {"type": "boolean"}, "blockers": {"type": "array", "items": {"type": "string"}}}}
   },
   "allOf": [
+    {"if": {"properties": {"status": {"enum": ["validated", "active"]}}}, "then": {"properties": {"customQuiz": {"properties": {"validatedMarks": {"minItems": 1}, "adaptationStatus": {"const": "validated"}}}, "review": {"properties": {"reviewer": {"type": "string", "minLength": 1}, "reviewerType": {"enum": ["agent", "human"]}}}}}},
     {"if": {"properties": {"origin": {"const": "exam-derived"}}}, "then": {"properties": {"sourceTasks": {"minItems": 1}, "originalMarks": {"minItems": 1}}}},
     {"if": {"properties": {"status": {"enum": ["validated", "active"]}}}, "then": {"properties": {"validation": {"properties": {"status": {"const": "passed"}, "boundaryCoverage": {"const": "complete"}, "testedSeeds": {"minItems": 20}, "runRefs": {"minItems": 1}}}, "review": {"properties": {"pedagogyStatus": {"enum": ["agent-reviewed", "human-reviewed"]}, "blockers": {"maxItems": 0}}}}}},
     {"if": {"properties": {"status": {"const": "active"}}}, "then": {"properties": {"runtime": {"properties": {"implemented": {"const": true}, "generatorId": {"type": "string", "minLength": 1}}}}}},

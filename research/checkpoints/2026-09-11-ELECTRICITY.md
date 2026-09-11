@@ -1,0 +1,11 @@
+# Electricity teaching — 11 September 2026
+
+Preserved 1912863 and all earlier work. Added 19 original Electricity sections, two practical guides, three source-task answer guides and a qualitative current–voltage diagram. Reviewed specification pp20–21 visually and against text. Extended the existing Electricity inventory from eight selected identities to all 28 parents (2.1–2.28P); retained its existing filename and references. The seven 2.22P–2.28P entries are Paper 2 only. Teaching includes charge/current, voltage/energy, resistance, series/parallel circuits, power/fuses, electrical heating, protection, a.c./d.c., I–V characteristics, sensors, indicators and electrostatics. The diagram was rendered and visually inspected.
+
+Counts: nine partial note documents / 74 sections. 113 reviewed Physics parent identities; 135 partial teaching links reaching 109 parents. The four selected Magnetism parents still have no notes. No complete substatement audits, chapters or points. Paper counts unchanged: six obtained pairs, Physics 24 detailed leaves / 59 marks; zero fully processed papers. Two provisional templates, one experimental generator, zero validated/active templates. Source-derived teaching and worked examples are not an activated quiz bank.
+
+Validation: 52 tests, typecheck, lint, 13 research checks, production build and public scan (39 files, zero findings) pass. New notes are registered in the common collection used by chapter routes, search and database seeding. No schema changes, new HTTP/browser verification, AI integration, reset, Sites version or deployment.
+
+GitHub 8847d99 mirrors 450edbf. Gate/Q6/Electricity changes remain a local delta until the next verified non-force sync. Last allowance read before this save: 36% five-hour / 27% weekly remaining; this is historical once a newer read exists.
+
+Next: finish remaining Physics detailed tasks and source-specific nuances, curriculum/substatement reviews and calibrated families. Q4 QP pp8–9/MS p7 have been reopened but not extracted; its stellar-stage and planetary-nebula wording needs careful scope review before transfer to original teaching. Navigation-failure recovery review is still queued. Keep AI last; check both allowances and save/pause at 5%.

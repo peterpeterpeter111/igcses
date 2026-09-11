@@ -12,7 +12,7 @@
     20,
     21
   ],
-  "scope": "Eight Electricity parents selected for detailed Q7 mapping. Not the whole Electricity inventory; no Electricity teaching or substatement completion claimed.",
+  "scope": "All 28 Electricity parent identities (2.1–2.28P) reviewed against PDF pp20–21. Original teaching is partial; individual substatement and assessment-family audits remain pending. The original selected-inventory filename is retained to preserve its existing references.",
   "points": [
     {
       "id": "4PH1:issue4:2.1",
@@ -27,8 +27,48 @@
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "electricity",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
+      "noteSectionIds": [
+        "charge-current-units"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false
+    },
+    {
+      "id": "4PH1:issue4:2.2",
+      "reference": "2.2",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "summary": "Explain protection by insulation, double insulation, earthing, fuses and circuit breakers in domestic appliances.",
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "electricity",
+      "noteSectionIds": [
+        "domestic-electrical-protection"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false
+    },
+    {
+      "id": "4PH1:issue4:2.3",
+      "reference": "2.3",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "summary": "Explain resistive heating and its domestic applications.",
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "electricity",
+      "noteSectionIds": [
+        "resistor-heating"
+      ],
+      "teachingCoverage": "partial",
       "humanReviewed": false
     },
     {
@@ -36,7 +76,7 @@
       "reference": "2.4",
       "pdfPage": 20,
       "printedPage": 14,
-      "summary": "Calculate power from current and voltage, including application to fuse selection.",
+      "summary": "Use P = IV, including selecting an appropriate fuse.",
       "components": [
         "1P",
         "2P"
@@ -44,8 +84,10 @@
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "electricity",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
+      "noteSectionIds": [
+        "power-and-fuse-selection"
+      ],
+      "teachingCoverage": "partial",
       "humanReviewed": false
     },
     {
@@ -53,7 +95,7 @@
       "reference": "2.5",
       "pdfPage": 20,
       "printedPage": 14,
-      "summary": "Calculate electrical energy transfer using current × voltage × time.",
+      "summary": "Calculate electrical energy transfer using E = IVt.",
       "components": [
         "1P",
         "2P"
@@ -61,8 +103,29 @@
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "electricity",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
+      "noteSectionIds": [
+        "electrical-energy-time"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false
+    },
+    {
+      "id": "4PH1:issue4:2.6",
+      "reference": "2.6",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "summary": "Distinguish mains alternating current from direct current supplied by cells and batteries.",
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "electricity",
+      "noteSectionIds": [
+        "alternating-and-direct-current"
+      ],
+      "teachingCoverage": "partial",
       "humanReviewed": false
     },
     {
@@ -70,7 +133,7 @@
       "reference": "2.7",
       "pdfPage": 20,
       "printedPage": 14,
-      "summary": "Explain when series or parallel circuits suit applications, including domestic lighting.",
+      "summary": "Explain suitable series and parallel applications, including domestic lighting.",
       "components": [
         "1P",
         "2P"
@@ -78,8 +141,163 @@
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "electricity",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
+      "noteSectionIds": [
+        "parallel-branches"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false
+    },
+    {
+      "id": "4PH1:issue4:2.8",
+      "reference": "2.8",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "summary": "Relate series current to applied voltage and the number and nature of components.",
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "electricity",
+      "noteSectionIds": [
+        "series-circuit-calculations"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false
+    },
+    {
+      "id": "4PH1:issue4:2.9",
+      "reference": "2.9",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "summary": "Describe and investigate current–voltage behaviour of wires, resistors, filament lamps and diodes.",
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "electricity",
+      "noteSectionIds": [
+        "current-voltage-characteristics",
+        "investigate-current-voltage"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false
+    },
+    {
+      "id": "4PH1:issue4:2.10",
+      "reference": "2.10",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "summary": "Explain qualitatively the effect of resistance changes on circuit current.",
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "electricity",
+      "noteSectionIds": [
+        "resistance-and-ohms-law"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false
+    },
+    {
+      "id": "4PH1:issue4:2.11",
+      "reference": "2.11",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "summary": "Describe resistance trends for LDR illumination and thermistor temperature.",
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "electricity",
+      "noteSectionIds": [
+        "ldr-and-thermistor"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false
+    },
+    {
+      "id": "4PH1:issue4:2.12",
+      "reference": "2.12",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "summary": "Use lamps and LEDs to indicate current.",
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "electricity",
+      "noteSectionIds": [
+        "lamps-and-led-indicators"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false
+    },
+    {
+      "id": "4PH1:issue4:2.13",
+      "reference": "2.13",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "summary": "Calculate voltage, current and resistance using V = IR.",
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "electricity",
+      "noteSectionIds": [
+        "resistance-and-ohms-law"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false
+    },
+    {
+      "id": "4PH1:issue4:2.14",
+      "reference": "2.14",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "summary": "Define current as charge flow per unit time.",
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "electricity",
+      "noteSectionIds": [
+        "charge-current-units"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false
+    },
+    {
+      "id": "4PH1:issue4:2.15",
+      "reference": "2.15",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "summary": "Calculate charge using Q = It.",
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "electricity",
+      "noteSectionIds": [
+        "charge-current-units"
+      ],
+      "teachingCoverage": "partial",
       "humanReviewed": false
     },
     {
@@ -95,8 +313,10 @@
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "electricity",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
+      "noteSectionIds": [
+        "charge-current-units"
+      ],
+      "teachingCoverage": "partial",
       "humanReviewed": false
     },
     {
@@ -104,7 +324,7 @@
       "reference": "2.17",
       "pdfPage": 21,
       "printedPage": 15,
-      "summary": "Apply conservation of current at a junction.",
+      "summary": "Explain conservation of current at a junction.",
       "components": [
         "1P",
         "2P"
@@ -112,8 +332,10 @@
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "electricity",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
+      "noteSectionIds": [
+        "parallel-branches"
+      ],
+      "teachingCoverage": "partial",
       "humanReviewed": false
     },
     {
@@ -129,16 +351,18 @@
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "electricity",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
+      "noteSectionIds": [
+        "parallel-branches"
+      ],
+      "teachingCoverage": "partial",
       "humanReviewed": false
     },
     {
-      "id": "4PH1:issue4:2.20",
-      "reference": "2.20",
+      "id": "4PH1:issue4:2.19",
+      "reference": "2.19",
       "pdfPage": 21,
       "printedPage": 15,
-      "summary": "Define voltage as energy transferred per unit charge; one volt is one joule per coulomb.",
+      "summary": "Calculate currents, voltages and resistances for two resistive components in series.",
       "components": [
         "1P",
         "2P"
@@ -146,8 +370,177 @@
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "electricity",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
+      "noteSectionIds": [
+        "series-circuit-calculations"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false
+    },
+    {
+      "id": "4PH1:issue4:2.20",
+      "reference": "2.20",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "summary": "Define voltage as energy transferred per charge and the volt as a joule per coulomb.",
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "electricity",
+      "noteSectionIds": [
+        "voltage-energy-charge"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false
+    },
+    {
+      "id": "4PH1:issue4:2.21",
+      "reference": "2.21",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "summary": "Calculate electrical energy transfer using E = QV.",
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "electricity",
+      "noteSectionIds": [
+        "voltage-energy-charge"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false
+    },
+    {
+      "id": "4PH1:issue4:2.22P",
+      "reference": "2.22P",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "summary": "Identify common conductors and insulators, including metals and plastics.",
+      "components": [
+        "2P"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "electricity",
+      "noteSectionIds": [
+        "electrostatic-charge-transfer"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false
+    },
+    {
+      "id": "4PH1:issue4:2.23P",
+      "reference": "2.23P",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "summary": "Investigate charging insulating materials by friction.",
+      "components": [
+        "2P"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "electricity",
+      "noteSectionIds": [
+        "investigate-friction-charging"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false
+    },
+    {
+      "id": "4PH1:issue4:2.24P",
+      "reference": "2.24P",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "summary": "Explain positive and negative charging by electron loss and gain.",
+      "components": [
+        "2P"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "electricity",
+      "noteSectionIds": [
+        "electrostatic-charge-transfer",
+        "investigate-friction-charging"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false
+    },
+    {
+      "id": "4PH1:issue4:2.25P",
+      "reference": "2.25P",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "summary": "Describe attraction between unlike charges and repulsion between like charges.",
+      "components": [
+        "2P"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "electricity",
+      "noteSectionIds": [
+        "electrostatic-forces",
+        "investigate-friction-charging"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false
+    },
+    {
+      "id": "4PH1:issue4:2.26P",
+      "reference": "2.26P",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "summary": "Explain electrostatic phenomena through electron movement.",
+      "components": [
+        "2P"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "electricity",
+      "noteSectionIds": [
+        "electrostatic-charge-transfer",
+        "electrostatic-forces"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false
+    },
+    {
+      "id": "4PH1:issue4:2.27P",
+      "reference": "2.27P",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "summary": "Explain dangers from electrostatic charge, including aircraft and tanker fuelling.",
+      "components": [
+        "2P"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "electricity",
+      "noteSectionIds": [
+        "electrostatic-fuelling-hazards"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false
+    },
+    {
+      "id": "4PH1:issue4:2.28P",
+      "reference": "2.28P",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "summary": "Explain applications of electrostatic charge, including photocopiers and inkjet printers.",
+      "components": [
+        "2P"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "electricity",
+      "noteSectionIds": [
+        "electrostatic-printing"
+      ],
+      "teachingCoverage": "partial",
       "humanReviewed": false
     }
   ]

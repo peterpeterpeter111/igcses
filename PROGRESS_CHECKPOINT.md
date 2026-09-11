@@ -1,4 +1,12 @@
-# Latest checkpoint — Q7/Q8, Energy teaching and force calibration
+# Latest checkpoint — Electricity teaching
+
+Read research/checkpoints/2026-09-11-ELECTRICITY.md first. Nine partial notes / 74 sections; 113 reviewed Physics parents / 135 partial teaching links. Physics detail remains 24 leaves / 59 marks. Six obtained pairs; zero complete chapters/points/papers or validated/active templates. 52 tests, typecheck, lint, research checks, production build and public scan pass. GitHub 8847d99 mirrors 450edbf; later gate/Q6/Electricity work needs syncing. No AI integration, reset, Sites version or deployment. Earlier entries are historical.
+
+# Previous checkpoint — Q6 extraction and template gates
+
+Read research/checkpoints/2026-09-11-Q6.md and 2026-09-11-TEMPLATE-GATE.md first. Eight partial notes / 55 sections; 93 reviewed Physics parents / 103 partial links; Physics 24 detailed leaves / 59 marks. Six obtained pairs, zero fully processed papers or complete chapters/points, two provisional templates, zero validated/active. 52 tests, typecheck, lint, 13 research checks, production build and public scan pass. GitHub 8847d99 mirrors local 450edbf; newer gate/Q6 work is local pending sync. No reset, AI integration, Sites version or deployment. Entries below are historical.
+
+# Previous checkpoint — Q7/Q8, Energy teaching and force calibration
 
 Read research/checkpoints/2026-09-11-Q7-HANDOFF.md first. Preserved ec41382 and all later search/visual work. Eight partial notes / 55 sections; 89 reviewed Physics parents / 103 partial teaching links. Physics 19 detailed leaves / 51 marks; complete visual inventory remains 51 leaves / 110 marks. Six obtained pairs, zero processed papers; two provisional templates, one experimental generator, 28 bounded marking calibration cases, zero validated/active templates. 48 tests, typecheck, lint, 13 research checks, Sites build and public scan pass. No AI calls, reset, Sites version or deployment. Earlier entries are historical.
 

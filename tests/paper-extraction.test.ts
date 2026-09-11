@@ -112,8 +112,8 @@ void test('visual inventory covers every source page but cannot promote paper or
   assert.equal(visualAudit.fullyProcessed, false);
   assert.equal(visualAudit.humanReviewed, false);
   assert.ok(visualAudit.sourceDiscrepancies.length > 0);
-  assert.equal(extracted.detailedLeafTasks, 19);
-  assert.equal(extracted.detailedOriginalMarks, 51);
+  assert.equal(extracted.detailedLeafTasks, 24);
+  assert.equal(extracted.detailedOriginalMarks, 59);
 });
 
 void test('Q8 retains the six-mark cap, seven-point pool and correct refraction physics', () => {

@@ -4,6 +4,7 @@ import chemistry from './notes/chemistry.json' with { type: 'json' };
 import physics from './notes/physics.json' with { type: 'json' };
 import physicsWaves from './notes/physics-waves.json' with { type: 'json' };
 import physicsEnergy from './notes/physics-energy.json' with { type: 'json' };
+import physicsElectricity from './notes/physics-electricity.json' with { type: 'json' };
 import english from './notes/english.json' with { type: 'json' };
 import mathematics from './notes/mathematics.json' with { type: 'json' };
 export type NoteSection = {
@@ -51,6 +52,7 @@ export const notes: ChapterNotes[] = [
   physics,
   physicsWaves,
   physicsEnergy,
+  physicsElectricity,
   english,
   mathematics,
 ] as ChapterNotes[];

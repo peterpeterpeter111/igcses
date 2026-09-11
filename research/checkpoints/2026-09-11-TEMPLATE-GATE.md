@@ -1,0 +1,9 @@
+# Template contract gate and source sync — 11 September 2026
+
+Resumed local 450edbf. Both allowances available (92% five-hour / 35% weekly initially); no reset consumed. GitHub main 8847d99cfd31f9b546c816fde0475302083d57f6 now exactly mirrors 450edbf, tree 08e6886ae4432ad2f68556032e5af58935d5e65d, as a non-force descendant of 32cb849. The preceding usage-limit rejection is resolved by this successful post-reset sync; local history is unchanged.
+
+Added research-only schema/semantic gates: promotion needs a validated matching maximum, reviewed mappings, assigned AO metadata, identified consistent review and no candidate transformations. Numeric parameter bounds, integer domains, unique identifiers, criterion totals and level-band coverage are checked. One scheme cannot certify multiple different maxima. Existing provisional families remain accepted without claiming their pedagogy is validated.
+
+Four focused tests pass, including adversarial promotion mutations and malformed marking ranges. Typecheck and all 13 research checks pass. These are metadata/structural checks, not proof that evidence reports are current or that answers have been independently calibrated. Before activation, still verify implementation/report hashes, test outcomes, full boundary coverage and assessment demand. The active registry remains empty. No application/UI or curriculum counts changed: eight partial notes / 55 sections; 89 reviewed Physics parents / 103 partial teaching links; 19 detailed Physics leaves / 51 marks. Zero complete points/chapters/papers or validated/active templates. No AI integration, Sites version or deployment.
+
+Next: Q6 detailed extraction and selected Magnetism mapping, then remaining curriculum and calibration. Full suite/build will be rerun after that content change; the preceding full saved baseline is 48 passing tests and a successful production build.
