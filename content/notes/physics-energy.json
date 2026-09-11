@@ -5,9 +5,7 @@
   "complete": false,
   "humanReviewed": false,
   "sourceId": "4PH1-spec",
-  "sourcePages": [
-    25
-  ],
+  "sourcePages": [25, 26],
   "prerequisites": [
     "Distinguish infrared from visible radiation.",
     "Describe a comparison while keeping exposure time and other conditions the same."
@@ -15,16 +13,16 @@
   "goals": [
     "Distinguish an energy store from a transfer pathway.",
     "Explain infrared heating using surface absorption and energy transfer.",
-    "Recognise the limits of a simple black-versus-white comparison."
+    "Recognise the limits of a simple black-versus-white comparison.",
+    "Apply conservation of energy and calculate efficiency, work, kinetic energy, gravitational potential energy and power.",
+    "Explain thermal transfer and compare insulation investigations.",
+    "Trace electricity-generation pathways and compare resources (4.18P–4.19P: Paper 2 only)."
   ],
   "sections": [
     {
       "id": "energy-stores-and-radiation",
       "title": "Energy stores and transfer pathways",
-      "points": [
-        "4.2",
-        "4.6"
-      ],
+      "points": ["4.2", "4.6"],
       "terms": [
         "thermal store",
         "energy transfer",
@@ -36,7 +34,7 @@
       "paragraphs": [
         "An energy store describes where energy is associated with a system. The specification names chemical, kinetic, gravitational, elastic, thermal, magnetic, electrostatic and nuclear stores. A transfer describes how energy moves between systems: mechanically, electrically, by heating or by radiation. Avoid describing heat as a substance stored inside an object.",
         "In an electric infrared heater, energy is supplied electrically to the heating element. The hot element emits electromagnetic radiation. When another surface absorbs some of that radiation, energy enters its thermal store. Infrared can travel through a vacuum; no stream of warm air between heater and surface is required.",
-        "Conduction transfers energy through interactions between neighbouring particles, with mobile electrons also important in metals. Convection transfers energy by the bulk movement of a fluid. These mechanisms can occur alongside radiation, so identify the mechanism asked about rather than assuming there is only one transfer in an actual room. Detailed conduction, convection and insulation teaching is still pending."
+        "Conduction transfers energy through interactions between neighbouring particles, with mobile electrons also important in metals. Convection transfers energy by the bulk movement of a fluid. These mechanisms can occur alongside radiation, so identify the mechanism asked about rather than assuming there is only one transfer in an actual room."
       ],
       "example": {
         "question": "A lamp heats a metal panel across an air gap. Describe the energy transfer to the panel.",
@@ -56,9 +54,7 @@
     {
       "id": "surface-absorption",
       "title": "Why surfaces absorb infrared differently",
-      "points": [
-        "4.8"
-      ],
+      "points": ["4.8"],
       "terms": [
         "absorber",
         "emitter",
@@ -102,6 +98,391 @@
         "Claiming white reflects all infrared.",
         "Predicting exact temperature changes from surface colour without mass, material and heat-loss information."
       ]
+    },
+    {
+      "id": "energy-units",
+      "title": "Energy, force and power units",
+      "points": ["4.1"],
+      "terms": ["joule", "watt", "kilogram", "newton", "unit conversion"],
+      "paragraphs": [
+        "Use kilograms for mass, metres for distance or height, metres per second for speed, metres per second squared for acceleration, newtons for force, seconds for time, joules for energy or work, and watts for power. A joule is equivalent to one newton metre; one watt means one joule transferred each second.",
+        "Convert quantities before substitution: 250 g = 0.250 kg, 80 cm = 0.80 m and 2 minutes = 120 s. A kilowatt is 1000 W. Energy and power are different quantities: a power rating describes a transfer rate, so energy also depends on operating time."
+      ],
+      "example": {
+        "question": "A motor transfers 900 J in 0.5 minutes. Convert the time and calculate its average power.",
+        "steps": ["0.5 × 60 = 30 s.", "Power = 900/30 = 30 W."],
+        "explanation": "Dividing by 0.5 without converting minutes gives a value in J/min, not watts."
+      },
+      "commonMistakes": [
+        "Using grams in an equation requiring kilograms.",
+        "Calling a joule a unit of power."
+      ]
+    },
+    {
+      "id": "conservation-efficiency-sankey",
+      "title": "Conservation, efficiency and Sankey diagrams",
+      "points": ["4.3", "4.4", "4.5"],
+      "terms": [
+        "conservation of energy",
+        "efficiency",
+        "Sankey",
+        "useful",
+        "dissipated"
+      ],
+      "paragraphs": [
+        "Energy is conserved: it cannot be created or destroyed. Define the system and follow transfers across its boundary. In a steady device with no accumulating store, total energy supplied equals all energy outputs. Energy described as wasted still exists; it is less useful for the chosen purpose, often dispersed into the surroundings' thermal stores.",
+        "Efficiency = useful energy output / total energy output × 100%. For a steady device over the same time interval, total output equals input, so the input can be used as the denominator. Decide what useful means: heating is useful for a heater but usually unwanted from a motor.",
+        "In a Sankey diagram, arrow width is proportional to energy. Incoming width must equal the combined outgoing widths when energy is not accumulating. A broad outgoing arrow is a large transfer, not necessarily a useful one. Label quantities and the purpose of the device."
+      ],
+      "example": {
+        "question": "A motor receives 500 J. It transfers 300 J mechanically to a load and the rest by heating. Find the unwanted transfer and efficiency.",
+        "steps": [
+          "Energy conserved: unwanted transfer = 500 − 300 = 200 J.",
+          "Efficiency = 300/500 × 100 = 60%.",
+          "A Sankey drawn at 1 mm per 10 J has input width 50 mm, useful width 30 mm and unwanted width 20 mm."
+        ],
+        "explanation": "Use total energy in the denominator. Dividing by only the wasted energy is not efficiency."
+      },
+      "diagram": {
+        "src": "/diagrams/physics-energy-sankey.svg",
+        "alt": "Motor Sankey: 500 joules supplied splits into 300 joules of useful mechanical transfer and 200 joules of unwanted heating; widths in ratio five to three to two.",
+        "caption": "Arrow widths show the energy balance for this motor. The 200 J is transferred to surroundings, not destroyed."
+      },
+      "practice": {
+        "question": "A lamp receives 800 J and transfers 120 J as useful light. Find its efficiency and unwanted output.",
+        "answer": "15% efficient; 680 J unwanted output.",
+        "explanation": "120/800 × 100 = 15; 800 − 120 = 680. Useful and unwanted outputs add to the input."
+      }
+    },
+    {
+      "id": "conduction-and-convection",
+      "title": "Conduction and convection",
+      "points": ["4.6", "4.7"],
+      "terms": [
+        "conduction",
+        "convection",
+        "density",
+        "free electrons",
+        "fluid"
+      ],
+      "paragraphs": [
+        "In a solid, particles near a hotter region have more random kinetic energy and transfer energy to neighbours by interactions. The particles vibrate about their positions; they do not flow from the hot end to the cold end. Mobile electrons also transfer energy in metals, making metals effective thermal conductors.",
+        "Convection involves bulk movement of a fluid: a liquid or gas. A heated region usually expands and becomes less dense than the surrounding cooler fluid. It rises under the resulting buoyant effect; cooler, denser fluid moves in to replace it. Continued heating and cooling can maintain circulation.",
+        "A heater near the floor warms nearby air. The warmer air rises and cooler air moves towards the heater, helping transfer energy around the room. A convection current does not occur inside a rigid solid. Say that warm fluid rises, rather than that heat itself rises: energy can transfer downwards by conduction or radiation."
+      ],
+      "example": {
+        "question": "Explain why water heated near the bottom of a beaker can circulate.",
+        "steps": [
+          "Water near the heat source warms, expands and becomes less dense.",
+          "This warmer water rises while cooler, denser water moves down to replace it.",
+          "The moving water carries energy, forming a convection current."
+        ],
+        "explanation": "Link temperature to density and density to movement. Saying only 'hot water rises' leaves out the cause."
+      },
+      "commonMistakes": [
+        "Saying heated particles become individually larger.",
+        "Claiming every transfer is upwards.",
+        "Describing convection in a metal rod."
+      ]
+    },
+    {
+      "id": "insulation",
+      "title": "Reducing unwanted transfers",
+      "points": ["4.10"],
+      "terms": [
+        "insulation",
+        "double glazing",
+        "vacuum flask",
+        "draught",
+        "loft insulation"
+      ],
+      "paragraphs": [
+        "Match each insulation feature to a transfer mechanism. Fibres or foam trap small pockets of air: air is a poor conductor and small enclosed pockets limit bulk convection. Thick loft insulation reduces unwanted energy transfer through a roof.",
+        "Double glazing uses two panes and a narrow enclosed gas gap. The gas conducts poorly and the narrow gap limits convection; it is not generally a vacuum. Draught proofing reduces the exchange of warmed indoor air with cooler outdoor air.",
+        "A vacuum flask uses a vacuum between its walls to prevent conduction and convection across that gap. Shiny facing surfaces reduce radiation across the gap. A stopper reduces transfer through the opening; conduction through supports and the stopper means the flask is not perfectly insulated."
+      ],
+      "example": {
+        "question": "Why does a vacuum alone not make a flask a perfect insulator?",
+        "steps": [
+          "A vacuum blocks conduction and convection across the gap.",
+          "Radiation can cross a vacuum.",
+          "There can also be conduction through the stopper and supports."
+        ],
+        "explanation": "Identify the remaining pathways instead of treating a vacuum as a barrier to all energy transfer."
+      }
+    },
+    {
+      "id": "thermal-practical-conduction",
+      "title": "Investigating conduction",
+      "points": ["4.9"],
+      "terms": [
+        "conduction practical",
+        "metal rods",
+        "temperature probe",
+        "fair test"
+      ],
+      "paragraphs": [
+        "Compare equal-sized rods of different materials heated in the same way. Measure temperature at the same distance from the heated end after equal times. This school comparison indicates thermal response; without controlling heat capacity and losses it is not a precise measurement of thermal conductivity."
+      ],
+      "practical": {
+        "apparatus": [
+          "Equal-length, equal-diameter rods of different materials",
+          "Controlled hot-water bath, clamps, temperature probes, ruler and timer"
+        ],
+        "method": [
+          "Clamp the rods with equal lengths immersed in the bath; attach probes at equal distances from the waterline.",
+          "Record initial temperatures, heat using the same bath conditions, and record temperature at fixed time intervals.",
+          "Repeat from the same starting temperature and compare temperature-time patterns."
+        ],
+        "variables": [
+          "Change rod material.",
+          "Measure temperature at a fixed position over time.",
+          "Control dimensions, immersion depth, probe position, starting temperature and bath temperature."
+        ],
+        "safety": [
+          "Use teacher supervision for hot water and rods; clamp securely and allow cooling before handling.",
+          "Keep electrical probe equipment dry."
+        ],
+        "quality": [
+          "Ensure the probes make equivalent thermal contact.",
+          "Repeat measurements and report scatter; do not infer conductivity from a single unreplicated reading."
+        ]
+      },
+      "commonMistakes": [
+        "Comparing rods of different thickness without accounting for geometry.",
+        "Treating the time to warm as a measurement of heat alone."
+      ]
+    },
+    {
+      "id": "thermal-practical-convection",
+      "title": "Seeing a convection current",
+      "points": ["4.7", "4.9"],
+      "terms": ["convection practical", "dye", "water circulation"],
+      "paragraphs": [
+        "A small amount of visible dye can trace water movement. Heating gently near one lower side of a water-filled vessel can reveal a rising coloured stream and a return flow away from the heat source. The dye is a tracer: its motion shows water movement rather than displaying energy itself."
+      ],
+      "practical": {
+        "apparatus": [
+          "Heat-resistant transparent vessel with water",
+          "Teacher-approved tracer dye, pipette, supported low-power heat source"
+        ],
+        "method": [
+          "Let the water settle and introduce a small amount of tracer near the lower heated region without stirring.",
+          "Apply gentle local heating and observe the tracer's path from the side.",
+          "Record the direction of circulation; repeat after allowing the water to settle."
+        ],
+        "variables": [
+          "Change whether local heating is applied.",
+          "Observe tracer path rather than treating colour intensity as temperature.",
+          "Keep vessel shape, water depth and tracer placement similar."
+        ],
+        "safety": [
+          "Use a supported heat-resistant vessel and teacher-supervised heating; avoid boiling or handling hot glass.",
+          "Use only the teacher-approved tracer and follow its handling instructions."
+        ],
+        "quality": [
+          "Avoid stirring when adding dye.",
+          "Compare with unheated water: spreading by diffusion alone is not evidence of the same bulk circulation."
+        ]
+      }
+    },
+    {
+      "id": "thermal-practical-radiation",
+      "title": "Comparing radiation absorption",
+      "points": ["4.8", "4.9"],
+      "terms": [
+        "radiation practical",
+        "black surface",
+        "shiny surface",
+        "temperature rise"
+      ],
+      "paragraphs": [
+        "Expose otherwise matched dull-black and shiny surfaces to the same infrared source and compare temperature rise over a fixed time. Keep mass, material and position the same, because these also affect the temperature response. This arrangement compares absorption under external illumination; a cooling experiment instead investigates emission."
+      ],
+      "practical": {
+        "apparatus": [
+          "Matched metal plates with dull-black and shiny finishes",
+          "Infrared lamp, two temperature probes, ruler and timer"
+        ],
+        "method": [
+          "Start the plates at the same temperature and place them at equal distances and orientations to the lamp.",
+          "Record both temperatures at equal time intervals during the same exposure.",
+          "Repeat from equal starting temperatures, swapping positions to check unequal illumination."
+        ],
+        "variables": [
+          "Change surface finish.",
+          "Measure temperature rise over the same interval.",
+          "Control plate material, mass, area, probe contact, lamp power, distance and starting temperature."
+        ],
+        "safety": [
+          "Avoid looking directly into the lamp; keep skin away from hot plates.",
+          "Keep flammable items clear and switch off before repositioning hot equipment."
+        ],
+        "quality": [
+          "Compare temperature changes rather than final temperatures alone.",
+          "Repeat and swap positions; recognise that conduction, convection and emission also affect net warming."
+        ]
+      },
+      "commonMistakes": [
+        "Calling a higher starting temperature evidence of better absorption.",
+        "Explaining faster heating by greater emission."
+      ]
+    },
+    {
+      "id": "work-and-energy",
+      "title": "Work done by a force",
+      "points": ["4.11", "4.12"],
+      "terms": ["work done", "force", "distance", "W = Fd"],
+      "paragraphs": [
+        "Work done is energy transferred by a force. For a constant force acting along the displacement, W = F × d. Use force in newtons and distance moved in the direction of that force in metres, giving work in joules.",
+        "Identify the force whose work is requested. For a load pulled at constant speed against resistance, the pulling force transfers energy even though the resultant force and change in kinetic energy are zero. If there is no displacement, the work on the object by that force is zero in this model."
+      ],
+      "example": {
+        "question": "A 35 N horizontal force pulls a crate 4.0 m in its direction. Calculate the work done.",
+        "steps": ["W = F × d.", "W = 35 × 4.0 = 140 J."],
+        "explanation": "The relevant distance is along the force. Work is an energy transfer, not a force."
+      },
+      "practice": {
+        "question": "A constant force transfers 180 J while moving an object 6.0 m along its direction. Find the force.",
+        "answer": "30 N.",
+        "explanation": "Rearrange F = W/d = 180/6.0."
+      }
+    },
+    {
+      "id": "kinetic-and-gravitational-energy",
+      "title": "Kinetic and gravitational potential energy",
+      "points": ["4.13", "4.14"],
+      "terms": [
+        "kinetic energy",
+        "gravitational potential",
+        "GPE",
+        "KE",
+        "squared speed"
+      ],
+      "paragraphs": [
+        "Near Earth's surface, the increase in gravitational potential energy is m × g × h, where h is the vertical rise, mass is in kg and g is in N/kg. State or use the supplied value of g. Potential energy is measured relative to a chosen level; the change is what matters.",
+        "Kinetic energy = ½ × m × v². Square the speed, not the mass and not the entire product. Doubling speed at fixed mass gives four times the kinetic energy; doubling mass at fixed speed gives twice the kinetic energy."
+      ],
+      "example": {
+        "question": "A 2.0 kg trolley moves at 3.0 m/s and is then raised by 0.80 m. Calculate its initial kinetic energy and the gain in gravitational potential energy, using g = 10 N/kg.",
+        "steps": [
+          "Initial KE = ½ × 2.0 × 3.0² = 9.0 J.",
+          "Gain in GPE = 2.0 × 10 × 0.80 = 16 J."
+        ],
+        "explanation": "These are two separate calculations. They do not imply the initial motion alone can lift the trolley that high."
+      },
+      "practice": {
+        "question": "A 0.50 kg object has 16 J of kinetic energy. Find its speed.",
+        "answer": "8.0 m/s.",
+        "explanation": "v² = 2KE/m = 32/0.50 = 64; v = √64 = 8.0."
+      }
+    },
+    {
+      "id": "energy-balance-motion",
+      "title": "Linking energy stores and motion",
+      "points": ["4.3", "4.15"],
+      "terms": [
+        "energy conservation",
+        "falling",
+        "friction",
+        "air resistance",
+        "energy balance"
+      ],
+      "paragraphs": [
+        "When a falling object starts from rest and resistance is negligible, the decrease in gravitational potential energy equals the increase in kinetic energy: mgh = ½mv². The mass cancels, giving v² = 2gh under those assumptions.",
+        "If resistance acts, some energy is transferred to thermal stores, so the kinetic-energy gain is smaller. Write a balance that includes these transfers instead of setting all lost gravitational potential energy equal to kinetic energy. For a rising object or an externally driven system, also include its initial stores and any energy supplied by forces."
+      ],
+      "example": {
+        "question": "A 1.0 kg object falls from rest through 5.0 m. During the fall 18 J is transferred to thermal stores. Find its speed, using g = 10 N/kg.",
+        "steps": [
+          "Decrease in GPE = 1.0 × 10 × 5.0 = 50 J.",
+          "Gain in KE = 50 − 18 = 32 J.",
+          "½ × 1.0 × v² = 32, so v = 8.0 m/s."
+        ],
+        "explanation": "The resistance transfer is included before solving for speed. Ignoring it would predict too high a speed."
+      },
+      "commonMistakes": [
+        "Cancelling the mass before checking every term in the balance.",
+        "Using height travelled along a slope instead of the vertical change."
+      ]
+    },
+    {
+      "id": "power",
+      "title": "Power is a transfer rate",
+      "points": ["4.16", "4.17"],
+      "terms": ["power", "watt", "rate", "P = W/t"],
+      "paragraphs": [
+        "Power is the rate of energy transfer or work done. Average power = energy transferred / time taken = W/t. A higher-power device transfers more energy in the same time, or the same energy in less time.",
+        "Use seconds for time and joules for work to obtain watts. Rearrange to W = Pt or t = W/P as required. Be clear whether a power value is the total input or useful output: an inefficient motor's useful lifting power is below its electrical input power."
+      ],
+      "example": {
+        "question": "A motor raises a 12 kg load vertically by 2.0 m in 3.0 s. Find its average useful power, using g = 10 N/kg.",
+        "steps": [
+          "Useful work = mgh = 12 × 10 × 2.0 = 240 J.",
+          "Useful power = 240/3.0 = 80 W."
+        ],
+        "explanation": "80 W is useful output power; input power would require efficiency information."
+      },
+      "practice": {
+        "question": "A 250 W device transfers energy steadily for 40 s. How much does it transfer?",
+        "answer": "10 000 J.",
+        "explanation": "Energy = power × time = 250 × 40."
+      }
+    },
+    {
+      "id": "electricity-generation",
+      "title": "Electricity generation · Paper 2 only",
+      "points": ["4.18P"],
+      "terms": [
+        "wind",
+        "hydroelectric",
+        "tidal",
+        "wave",
+        "geothermal",
+        "solar heating",
+        "solar cells",
+        "fossil fuels",
+        "nuclear"
+      ],
+      "paragraphs": [
+        "Wind transfers energy from moving air mechanically to a turbine, which drives a generator. In hydroelectric generation, water loses gravitational potential energy as it moves to a lower level and drives turbines. Tidal flow and water waves can also transfer energy mechanically to generating equipment; the details of the machinery differ.",
+        "In a fossil-fuel station, burning fuel transfers energy from its chemical store by heating water and producing steam. Steam drives a turbine connected to a generator. In a nuclear station, fission releases energy from nuclear stores to heat a working fluid; fuel is not burned in a chemical combustion reaction.",
+        "Geothermal resources use energy from hot underground rock or fluid. Where conditions allow electricity generation, hot fluid or steam drives a turbine-generator system. Do not describe geothermal as energy created by the generator.",
+        "Solar heating systems absorb radiation to warm a fluid. A domestic solar water heater supplies thermal energy directly and does not by itself generate electricity; a solar thermal power station can use a heated fluid to drive a turbine-generator. Solar cells instead transfer energy from radiation electrically, without a turbine."
+      ],
+      "example": {
+        "question": "Explain the difference between a solar cell and a solar water-heating panel.",
+        "steps": [
+          "Both absorb energy from solar radiation.",
+          "A solar cell supplies energy electrically.",
+          "A water-heating panel transfers energy to the thermal store of water; electricity generation would need additional equipment."
+        ],
+        "explanation": "Solar cell and solar heater are different technologies, even though both use sunlight."
+      }
+    },
+    {
+      "id": "comparing-energy-resources",
+      "title": "Comparing electricity resources · Paper 2 only",
+      "points": ["4.19P"],
+      "terms": [
+        "renewable",
+        "non-renewable",
+        "reliability",
+        "carbon emissions",
+        "storage",
+        "nuclear waste"
+      ],
+      "paragraphs": [
+        "Renewable resources are replenished on a human timescale. Wind, moving water, solar and geothermal resources can be renewable; fossil fuels and uranium are finite fuel resources. Renewable does not mean continuously available or environmentally impact-free.",
+        "Wind and solar have no fuel combustion during operation, but output depends on conditions. A supply system may need storage, other generators or interconnection when output is low. Tidal timing is predictable but output varies over the tidal cycle. Reservoir hydroelectricity can respond rapidly but depends on stored water and suitable geography; dams may flood habitats.",
+        "Fossil-fuel generation can supply controllable output but releases carbon dioxide during combustion and can release other pollutants. Nuclear generation has low operational carbon dioxide emissions and can provide sustained output, but radioactive waste, construction costs and decommissioning require management. Neither technology should be described as having no environmental cost.",
+        "Geothermal output can be steady at suitable sites, but appropriate geology and drilling limit deployment. In comparisons, connect a stated advantage or disadvantage to the location and supply need. Distinguish operational emissions from emissions associated with manufacture, construction and fuel supply."
+      ],
+      "practice": {
+        "question": "A sunny region wants to rely entirely on solar cells. Give a supply limitation and a way to address it.",
+        "answer": "Output falls at night and can fall in cloudy conditions. Storage or another supply source can provide energy during low-output periods.",
+        "explanation": "Being renewable does not make solar output constant. A response should connect variability to a practical supply measure."
+      }
     }
   ]
 }

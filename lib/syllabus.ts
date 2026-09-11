@@ -6,5 +6,5 @@ import energy from '../research/syllabus/4PH1-energy-transfers.json' with { type
 export const reviewedInventories = [
   { title: 'Forces and motion', ...forces },
   { title: 'Waves', ...waves },
-  { title: 'Energy units and thermal transfers (4.1–4.10)', ...energy },
+  { title: 'Energy resources and transfers (4.1–4.19P)', ...energy },
 ];

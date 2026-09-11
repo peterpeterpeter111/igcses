@@ -4,14 +4,12 @@
   "specificationIssue": "Issue 4 - September 2024",
   "specificationDocumentId": "4PH1-spec",
   "specificationSha256": "bac4b8312d4fbfc84672f909100d66b2b3cda0b25e98c0d11bbc7366dae482b2",
-  "reviewDate": "2026-09-10",
+  "reviewDate": "2026-09-11",
   "reviewedBy": "Codex Astra",
   "reviewerType": "agent",
   "reviewMethod": "Visual inspection plus text comparison",
-  "reviewedPages": [
-    25
-  ],
-  "scope": "Energy units and thermal transfers only: statements 4.1-4.10 on PDF page 25. Remaining Energy statements, substatements and teaching completeness are not claimed.",
+  "reviewedPages": [25, 26],
+  "scope": "Energy parent statements 4.1–4.19P on PDF pages 25–26 visually inspected and linked to partial teaching. 4.18P/4.19P apply to Paper 2 only. Full substatement and assessment-family audits are still pending.",
   "points": [
     {
       "id": "4PH1:issue4:4.1",
@@ -19,15 +17,12 @@
       "pdfPage": 25,
       "printedPage": 19,
       "summary": "Use kg, J, m, m/s, m/s², N, s and W.",
-      "components": [
-        "1P",
-        "2P"
-      ],
+      "components": ["1P", "2P"],
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "energy",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
+      "noteSectionIds": ["energy-units"],
+      "teachingCoverage": "partial",
       "humanReviewed": false
     },
     {
@@ -36,16 +31,11 @@
       "pdfPage": 25,
       "printedPage": 19,
       "summary": "Describe named energy stores and transfers by mechanical work, electricity, heating and radiation.",
-      "components": [
-        "1P",
-        "2P"
-      ],
+      "components": ["1P", "2P"],
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "energy",
-      "noteSectionIds": [
-        "energy-stores-and-radiation"
-      ],
+      "noteSectionIds": ["energy-stores-and-radiation"],
       "teachingCoverage": "partial",
       "humanReviewed": false
     },
@@ -55,15 +45,15 @@
       "pdfPage": 25,
       "printedPage": 19,
       "summary": "Apply conservation of energy.",
-      "components": [
-        "1P",
-        "2P"
-      ],
+      "components": ["1P", "2P"],
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "energy",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
+      "noteSectionIds": [
+        "conservation-efficiency-sankey",
+        "energy-balance-motion"
+      ],
+      "teachingCoverage": "partial",
       "humanReviewed": false
     },
     {
@@ -72,15 +62,12 @@
       "pdfPage": 25,
       "printedPage": 19,
       "summary": "Calculate efficiency as useful output divided by total output.",
-      "components": [
-        "1P",
-        "2P"
-      ],
+      "components": ["1P", "2P"],
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "energy",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
+      "noteSectionIds": ["conservation-efficiency-sankey"],
+      "teachingCoverage": "partial",
       "humanReviewed": false
     },
     {
@@ -89,15 +76,12 @@
       "pdfPage": 25,
       "printedPage": 19,
       "summary": "Explain energy transfers in devices, including Sankey diagrams.",
-      "components": [
-        "1P",
-        "2P"
-      ],
+      "components": ["1P", "2P"],
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "energy",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
+      "noteSectionIds": ["conservation-efficiency-sankey"],
+      "teachingCoverage": "partial",
       "humanReviewed": false
     },
     {
@@ -106,15 +90,13 @@
       "pdfPage": 25,
       "printedPage": 19,
       "summary": "Describe conduction, convection and radiation.",
-      "components": [
-        "1P",
-        "2P"
-      ],
+      "components": ["1P", "2P"],
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "energy",
       "noteSectionIds": [
-        "energy-stores-and-radiation"
+        "energy-stores-and-radiation",
+        "conduction-and-convection"
       ],
       "teachingCoverage": "partial",
       "humanReviewed": false
@@ -125,15 +107,15 @@
       "pdfPage": 25,
       "printedPage": 19,
       "summary": "Explain everyday convection phenomena.",
-      "components": [
-        "1P",
-        "2P"
-      ],
+      "components": ["1P", "2P"],
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "energy",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
+      "noteSectionIds": [
+        "conduction-and-convection",
+        "thermal-practical-convection"
+      ],
+      "teachingCoverage": "partial",
       "humanReviewed": false
     },
     {
@@ -142,16 +124,11 @@
       "pdfPage": 25,
       "printedPage": 19,
       "summary": "Relate radiation emission and absorption to surface and temperature.",
-      "components": [
-        "1P",
-        "2P"
-      ],
+      "components": ["1P", "2P"],
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "energy",
-      "noteSectionIds": [
-        "surface-absorption"
-      ],
+      "noteSectionIds": ["surface-absorption", "thermal-practical-radiation"],
       "teachingCoverage": "partial",
       "humanReviewed": false
     },
@@ -161,15 +138,16 @@
       "pdfPage": 25,
       "printedPage": 19,
       "summary": "Investigate thermal transfer by conduction, convection and radiation.",
-      "components": [
-        "1P",
-        "2P"
-      ],
+      "components": ["1P", "2P"],
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "energy",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
+      "noteSectionIds": [
+        "thermal-practical-conduction",
+        "thermal-practical-convection",
+        "thermal-practical-radiation"
+      ],
+      "teachingCoverage": "partial",
       "humanReviewed": false
     },
     {
@@ -178,15 +156,138 @@
       "pdfPage": 25,
       "printedPage": 19,
       "summary": "Explain how insulation reduces unwanted energy transfers.",
-      "components": [
-        "1P",
-        "2P"
-      ],
+      "components": ["1P", "2P"],
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "energy",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
+      "noteSectionIds": ["insulation"],
+      "teachingCoverage": "partial",
+      "humanReviewed": false
+    },
+    {
+      "id": "4PH1:issue4:4.11",
+      "reference": "4.11",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "summary": "Use work done = force × distance moved in the force direction.",
+      "components": ["1P", "2P"],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "energy",
+      "noteSectionIds": ["work-and-energy"],
+      "teachingCoverage": "partial",
+      "humanReviewed": false
+    },
+    {
+      "id": "4PH1:issue4:4.12",
+      "reference": "4.12",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "summary": "Identify work done as energy transferred.",
+      "components": ["1P", "2P"],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "energy",
+      "noteSectionIds": ["work-and-energy"],
+      "teachingCoverage": "partial",
+      "humanReviewed": false
+    },
+    {
+      "id": "4PH1:issue4:4.13",
+      "reference": "4.13",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "summary": "Calculate gravitational potential energy using mgh.",
+      "components": ["1P", "2P"],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "energy",
+      "noteSectionIds": ["kinetic-and-gravitational-energy"],
+      "teachingCoverage": "partial",
+      "humanReviewed": false
+    },
+    {
+      "id": "4PH1:issue4:4.14",
+      "reference": "4.14",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "summary": "Calculate kinetic energy using ½mv².",
+      "components": ["1P", "2P"],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "energy",
+      "noteSectionIds": ["kinetic-and-gravitational-energy"],
+      "teachingCoverage": "partial",
+      "humanReviewed": false
+    },
+    {
+      "id": "4PH1:issue4:4.15",
+      "reference": "4.15",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "summary": "Link gravitational potential energy, kinetic energy and work through conservation.",
+      "components": ["1P", "2P"],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "energy",
+      "noteSectionIds": ["energy-balance-motion"],
+      "teachingCoverage": "partial",
+      "humanReviewed": false
+    },
+    {
+      "id": "4PH1:issue4:4.16",
+      "reference": "4.16",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "summary": "Describe power as the rate of transferring energy or doing work.",
+      "components": ["1P", "2P"],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "energy",
+      "noteSectionIds": ["power"],
+      "teachingCoverage": "partial",
+      "humanReviewed": false
+    },
+    {
+      "id": "4PH1:issue4:4.17",
+      "reference": "4.17",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "summary": "Calculate power from energy or work divided by time.",
+      "components": ["1P", "2P"],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "energy",
+      "noteSectionIds": ["power"],
+      "teachingCoverage": "partial",
+      "humanReviewed": false
+    },
+    {
+      "id": "4PH1:issue4:4.18P",
+      "reference": "4.18P",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "summary": "Trace electricity-generation transfers for wind, water, geothermal, solar heating, solar cells, fossil fuels and nuclear resources.",
+      "components": ["2P"],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "energy",
+      "noteSectionIds": ["electricity-generation"],
+      "teachingCoverage": "partial",
+      "humanReviewed": false
+    },
+    {
+      "id": "4PH1:issue4:4.19P",
+      "reference": "4.19P",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "summary": "Compare advantages and disadvantages of large-scale renewable and non-renewable electricity generation.",
+      "components": ["2P"],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "energy",
+      "noteSectionIds": ["comparing-energy-resources"],
+      "teachingCoverage": "partial",
       "humanReviewed": false
     }
   ]

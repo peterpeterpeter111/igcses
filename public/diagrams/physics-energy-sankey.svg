@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" role="img" aria-labelledby="title desc">
+  <title id="title">Energy balance of a motor</title>
+  <desc id="desc">500 joules input splits into 300 joules of useful mechanical output and 200 joules of unwanted heating. Arrow widths are 100, 60 and 40 units respectively.</desc>
+  <rect width="600" height="350" fill="#fffaf2"/>
+  <g font-family="system-ui, sans-serif" font-size="17" fill="#302525">
+    <text x="24" y="38">500 J input</text>
+    <text x="300" y="38">300 J useful mechanical output</text>
+    <text x="130" y="302">200 J unwanted heating</text>
+    <text x="130" y="329" font-size="15">Total output = 300 + 200 = 500 J</text>
+  </g>
+  <path d="M24 80 H220 V180 H24 Z" fill="#8d3438"/>
+  <path d="M220 80 H510 V60 L566 110 L510 160 V140 H220 Z" fill="#8d3438"/>
+  <path d="M180 140 H220 V225 H244 L200 268 L156 225 H180 Z" fill="#986b32"/>
+</svg>

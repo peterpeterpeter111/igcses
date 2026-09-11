@@ -10,7 +10,7 @@
     "printedDate": "2024-05-22",
     "legacyPaperIdPreserved": true
   },
-  "reviewDate": "2026-09-10",
+  "reviewDate": "2026-09-11",
   "reviewer": "Codex Astra",
   "reviewerType": "agent",
   "humanReviewed": false,
@@ -18,11 +18,12 @@
   "fullyProcessed": false,
   "wholePaperMarks": 110,
   "wholePaperLeafCount": 51,
-  "detailedLeafTasks": 12,
-  "detailedOriginalMarks": 33,
+  "detailedLeafTasks": 13,
+  "detailedOriginalMarks": 39,
   "reviewedQuestionTotals": {
     "3": 10,
     "5": 11,
+    "8": 6,
     "12": 12
   },
   "documents": [
@@ -592,7 +593,7 @@
       "numericCrossCheck": {
         "distanceMetres": 1.5,
         "speedMetresPerSecond": 300000000,
-        "timeSeconds": 5e-09,
+        "timeSeconds": 5e-9,
         "correctDecimal": "0.000000005"
       },
       "taskId": "4PH1-2024-June-1-standard.Q3.c"
@@ -1186,6 +1187,275 @@
       ]
     },
     {
+      "taskId": "4PH1-2024-June-1-standard.Q8",
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "questionPath": "8",
+      "originalMarks": 6,
+      "questionPaperPages": [
+        18,
+        19
+      ],
+      "markSchemePages": [
+        11
+      ],
+      "commandWord": "Explain",
+      "requiredKnowledge": [
+        "Refraction from air into water",
+        "Angles measured from the normal",
+        "Refractive index n = sin(i)/sin(r)",
+        "Speed and optical density",
+        "Conditions for total internal reflection"
+      ],
+      "contextSummary": "Two incident rays from air meet a water boundary on a scale diagram; explain, calculate and draw their paths.",
+      "stimulusTypes": [
+        "ray-diagram",
+        "scale-diagram",
+        "numerical-data"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            18,
+            19
+          ]
+        }
+      ],
+      "solutionStructure": [
+        "Draw a perpendicular normal at each point of incidence. Read angles to the normal, approximately 36° for A and 60° for B.",
+        "Use sin(r) = sin(i)/1.33 in degree mode: r_A ≈ 26.2° and r_B ≈ 40.6°.",
+        "Extend both rays into the water towards their normals, at the calculated angles, with arrows showing travel into water.",
+        "Water is optically denser than air; light travels more slowly in water, explaining the change in direction.",
+        "Total internal reflection cannot occur for this air-to-water direction. A critical-angle calculation does not answer this question."
+      ],
+      "markingMethod": "any-six-of-seven-with-joint-cap",
+      "criteria": [
+        {
+          "id": "distinct-source-points",
+          "marks": 6,
+          "rule": "Award up to six distinct points from markingPointPool. Apply the joint MP1/MP2 cap if either ray bends in the wrong direction; MP3 and MP4 each earn at most one mark across both rays. Do not treat this aggregate cap as a single six-mark holistic criterion."
+        }
+      ],
+      "markingPointPool": [
+        {
+          "id": "MP1",
+          "credit": 1,
+          "rule": "Ray A is refracted and changes direction; may be demonstrated by a ray drawn through the boundary."
+        },
+        {
+          "id": "MP2",
+          "credit": 1,
+          "rule": "Ray B is refracted and changes direction; may be demonstrated by a ray drawn through the boundary."
+        },
+        {
+          "id": "MP3",
+          "credit": 1,
+          "rule": "A correctly measured incidence angle for either ray: A 34°–38° or B 58°–62°."
+        },
+        {
+          "id": "MP4",
+          "credit": 1,
+          "rule": "Correct refraction-angle calculation for either ray; allow error carried forward from the incidence reading. Scheme expects A 24°–28° or B 39°–42°; may be shown on diagram."
+        },
+        {
+          "id": "MP5",
+          "credit": 1,
+          "rule": "Air and water have different optical densities. The historical note condones reversed density; preserve only in historical-source marking, not as correct teaching."
+        },
+        {
+          "id": "MP6",
+          "credit": 1,
+          "rule": "Light travels more slowly in water than in air; reverse comparison accepted."
+        },
+        {
+          "id": "MP7",
+          "credit": 1,
+          "rule": "No total internal reflection because light is entering optically denser water from air; ignore critical-angle values as irrelevant."
+        }
+      ],
+      "markingConstraints": {
+        "maximum": 6,
+        "distinctPointIds": [
+          "MP1",
+          "MP2",
+          "MP3",
+          "MP4",
+          "MP5",
+          "MP6",
+          "MP7"
+        ],
+        "jointCaps": [
+          {
+            "pointIds": [
+              "MP1",
+              "MP2"
+            ],
+            "condition": "Either refracted ray is drawn bending in the wrong direction.",
+            "maximum": 1
+          }
+        ],
+        "countBothRaysSeparatelyForAngleCredit": false
+      },
+      "acceptableAlternatives": [
+        "Ray paths and angles can be evidenced on the diagram rather than repeated in prose.",
+        "MP4 allows error carried forward from the measured incidence angle; a measured-angle error does not automatically lose both angle marks.",
+        "Ignore reflected rays in this source scheme.",
+        "The scheme's reversed optical-density concession applies to historical MP5 only; no publisher correction has been obtained."
+      ],
+      "dependencies": [
+        "Angles are measured relative to the normal, not the surface.",
+        "Apply the MP1/MP2 joint cap before the six-mark total cap.",
+        "Credit MP3 once and MP4 once even if both rays are measured and calculated.",
+        "A text-only adaptation cannot silently retain the original drawing demand."
+      ],
+      "commonErrors": [
+        {
+          "description": "Measuring the incidence angle from the boundary.",
+          "origin": "editorial"
+        },
+        {
+          "description": "Drawing refraction away from the normal when light enters water.",
+          "origin": "scheme-explicit"
+        },
+        {
+          "description": "Calculating a critical angle despite travel from lower to higher optical density.",
+          "origin": "scheme-explicit"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:3.14",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Light can be refracted.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                23
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                11
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4PH1:issue4:3.16",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Draw ray diagrams for refraction.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                23
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                11
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4PH1:issue4:3.18",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Calculate refraction angles using refractive index.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                23
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                11
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4PH1:issue4:3.21",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Critical-angle reasoning must respect the direction of travel; no critical-angle calculation is needed here.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                23
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                11
+              ]
+            }
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.air-water-refraction",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "Original drawing response has no implemented calibrated capture/marking interface.",
+        "Historical optical-density concession retained; an original generated rubric must explicitly use physically correct density."
+      ],
+      "refractionCrossCheck": {
+        "provenanceKind": "editorial-calculation-from-approximate-diagram-readings",
+        "refractiveIndex": 1.33,
+        "angleUnit": "degrees",
+        "rays": [
+          {
+            "label": "A",
+            "approxIncidence": 36,
+            "calculatedRefraction": 26.22796905433394,
+            "sourceIncidenceRange": [
+              34,
+              38
+            ],
+            "sourceRefractionRange": [
+              24,
+              28
+            ]
+          },
+          {
+            "label": "B",
+            "approxIncidence": 60,
+            "calculatedRefraction": 40.62813065148205,
+            "sourceIncidenceRange": [
+              58,
+              62
+            ],
+            "sourceRefractionRange": [
+              39,
+              42
+            ]
+          }
+        ]
+      }
+    },
+    {
       "taskId": "4PH1-2024-June-1-standard.Q12.a",
       "paperId": "4PH1-2024-June-1-standard",
       "questionPath": "12.a",
@@ -1542,7 +1812,7 @@
     }
   ],
   "blockers": [
-    "39 of 51 numbered parts (77 of 110 marks) still lack detailed extraction.",
+    "38 of 51 numbered parts (71 of 110 marks) still lack detailed extraction.",
     "Source-task to validated-template links incomplete.",
     "No examiner report checked for this paper.",
     "Two official-scheme inconsistencies recorded for review; no affected template activated.",
@@ -1592,7 +1862,7 @@
       "schemePage": 11,
       "status": "source-inconsistency-unresolved",
       "observation": "MP5 allows different optical densities; its note condones air having higher optical density than water, while MP6/7 correctly state slower travel in water and denser water.",
-      "handling": "Preserve as a historical marking concession; never promote reversed optical density to correct physics in a template."
+      "handling": "Historical MP5 concession retained in Q8 extraction. Editorial teaching and future generated rubrics use water as optically denser than air; no publisher clarification obtained. Drawing-response calibration still blocks this family."
     }
   ],
   "marksReconciled": true

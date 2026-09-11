@@ -112,8 +112,32 @@ void test('visual inventory covers every source page but cannot promote paper or
   assert.equal(visualAudit.fullyProcessed, false);
   assert.equal(visualAudit.humanReviewed, false);
   assert.ok(visualAudit.sourceDiscrepancies.length > 0);
-  assert.equal(extracted.detailedLeafTasks, 12);
-  assert.equal(extracted.detailedOriginalMarks, 33);
+  assert.equal(extracted.detailedLeafTasks, 13);
+  assert.equal(extracted.detailedOriginalMarks, 39);
+});
+
+void test('Q8 retains the six-mark cap, seven-point pool and correct refraction physics', () => {
+  const task = extracted.tasks.find((t) => t.questionPath === '8')!;
+  assert.equal(task.originalMarks, 6);
+  assert.equal(task.markingPointPool!.length, 7);
+  assert.equal(task.markingConstraints!.maximum, 6);
+  assert.deepEqual(task.markingConstraints!.jointCaps[0].pointIds, [
+    'MP1',
+    'MP2',
+  ]);
+  assert.equal(task.markingConstraints!.jointCaps[0].maximum, 1);
+  const check = task.refractionCrossCheck!;
+  for (const ray of check.rays) {
+    const ratio =
+      Math.sin((ray.approxIncidence * Math.PI) / 180) /
+      Math.sin((ray.calculatedRefraction * Math.PI) / 180);
+    assert.ok(Math.abs(ratio - check.refractiveIndex) < 1e-10);
+    assert.ok(ray.calculatedRefraction < ray.approxIncidence);
+    assert.ok(ray.calculatedRefraction >= ray.sourceRefractionRange[0]);
+    assert.ok(ray.calculatedRefraction <= ray.sourceRefractionRange[1]);
+  }
+  assert.equal(task.templateLinkStatus, 'candidate-only');
+  assert.ok(task.blockers.some((b) => b.includes('drawing')));
 });
 
 void test('detailed export retains stimulus pages and exact cross-topic syllabus references', async () => {
