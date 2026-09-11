@@ -104,3 +104,53 @@ void test('force prototype validation rejects changed public data in both repres
     assert.equal(validateResultantPrototype(q), false);
   }
 });
+
+void test('force validation rejects altered context, provenance, rubric, working and leaked fields', () => {
+  const original = buildResultantPrototype(0, {
+    task: 'resultant',
+    representation: 'table',
+    axis: 'vertical',
+    context: 0,
+    forces: [32, -20],
+  });
+  const changes = [
+    (q: typeof original) => {
+      q.privateSolution.working[1] = '3.2 + 2.0 = 1.2 N';
+    },
+    (q: typeof original) => {
+      q.privateSolution.criteria[0].id = 'direction';
+    },
+    (q: typeof original) => {
+      q.privateSolution.criteria[1].description = 'Credit downwards';
+    },
+    (q: typeof original) => {
+      q.publicQuestion.stimulus = q.publicQuestion.stimulus.replace(
+        'Any forces in other directions balance.',
+        'Other forces are unknown.',
+      );
+    },
+    (q: typeof original) => {
+      q.publicQuestion.stimulus = q.publicQuestion.stimulus.replace(
+        'Quantity | Magnitude | Direction',
+        'Quantity | Energy | Direction',
+      );
+    },
+    (q: typeof original) => {
+      q.seed = -1;
+    },
+    (q: typeof original) => {
+      q.structuralSignature = 'different-family';
+    },
+    (q: typeof original) => {
+      Object.assign(q.family, { status: 'active' });
+    },
+    (q: typeof original) => {
+      Object.assign(q.publicQuestion, { solution: '1.2 N upwards' });
+    },
+  ];
+  for (const change of changes) {
+    const q = structuredClone(original);
+    change(q);
+    assert.equal(validateResultantPrototype(q), false);
+  }
+});

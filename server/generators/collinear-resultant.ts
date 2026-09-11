@@ -1,11 +1,11 @@
 // Experimental source-derived generation. No API route serves this prototype.
 // It deliberately does not produce a PrivateQuestion that can start a quiz.
-export const RESULTANT_FAMILY = {
+export const RESULTANT_FAMILY = Object.freeze({
   id: '4PH1.collinear-resultant',
   version: '0.1.0',
   status: 'provisional',
   sourceTaskId: '4PH1-2024-June-1-standard.Q5.b.i',
-} as const;
+} as const);
 export type ForceParameters = {
   task: 'resultant' | 'missing-force';
   representation: 'prose' | 'table';
@@ -45,6 +45,20 @@ const directions = {
   vertical: ['upwards', 'downwards'],
 } as const;
 const decimal = (tenths: number) => (tenths / 10).toFixed(1);
+function workedSolution(p: ForceParameters, total: number, answer: number) {
+  const target =
+    p.task === 'resultant' ? 'the resultant force' : 'the unknown force A';
+  return [
+    `Take ${directions[p.axis][0]} as positive.`,
+    p.task === 'resultant'
+      ? `Signed resultant = ${p.forces.map((f) => decimal(f)).join(' + ')} = ${decimal(total)} N.`
+      : `Signed force A = signed resultant − other signed forces = ${decimal(total)} − (${p.forces
+          .slice(1)
+          .map((f) => decimal(f))
+          .join(' + ')}) = ${decimal(answer)} N.`,
+    `${target[0].toUpperCase() + target.slice(1)} has magnitude ${decimal(Math.abs(answer))} N and acts ${direction(answer, p.axis)}.`,
+  ];
+}
 function direction(value: number, axis: ForceParameters['axis']) {
   return directions[axis][value > 0 ? 0 : 1];
 }
@@ -106,20 +120,7 @@ export function buildResultantPrototype(
   const target =
     p.task === 'resultant' ? 'the resultant force' : 'the unknown force A';
   const stimulus = `In a test, ${p.forces.length} forces labelled ${labels.slice(0, p.forces.length).join(', ')} act on ${contexts[p.axis][p.context]} along one ${p.axis} line. These are all forces along this line. Any forces in other directions balance.\n\n${data}`;
-  const working = [
-    `Take ${directions[p.axis][0]} as positive.`,
-    ...(p.task === 'resultant'
-      ? [
-          `Signed resultant = ${p.forces.map((f) => decimal(f)).join(' + ')} = ${decimal(total)} N.`,
-        ]
-      : [
-          `Signed force A = signed resultant − other signed forces = ${decimal(total)} − (${p.forces
-            .slice(1)
-            .map((f) => decimal(f))
-            .join(' + ')}) = ${decimal(answer)} N.`,
-        ]),
-    `${target[0].toUpperCase() + target.slice(1)} has magnitude ${decimal(Math.abs(answer))} N and acts ${direction(answer, p.axis)}.`,
-  ];
+  const working = workedSolution(p, total, answer);
   const instance: ResultantPrototype = {
     family: RESULTANT_FAMILY,
     seed,
@@ -200,11 +201,32 @@ export function validateResultantPrototype(
   } catch {
     return false;
   }
+  if (
+    !Number.isInteger(instance.seed) ||
+    instance.seed < 0 ||
+    instance.seed > 0xffffffff ||
+    instance.family.id !== RESULTANT_FAMILY.id ||
+    instance.family.version !== RESULTANT_FAMILY.version ||
+    instance.family.status !== RESULTANT_FAMILY.status ||
+    instance.family.sourceTaskId !== RESULTANT_FAMILY.sourceTaskId ||
+    instance.structuralSignature !==
+      [p.task, p.representation, p.axis, p.forces.length].join(':') ||
+    Object.keys(instance.publicQuestion).sort().join(',') !==
+      'maximumMarks,prompt,stimulus'
+  )
+    return false;
   const forward = p.forces.filter((f) => f > 0).reduce((sum, f) => sum + f, 0);
   const backward = p.forces.filter((f) => f < 0).reduce((sum, f) => sum - f, 0);
   const net = forward - backward;
   const parts = instance.publicQuestion.stimulus.split('\n\n');
-  if (parts.length !== 2 || !parts[0].includes(`one ${p.axis} line`))
+  const labels = ['A', 'B', 'C'].slice(0, p.forces.length).join(', ');
+  const introduction = `In a test, ${p.forces.length} forces labelled ${labels} act on ${contexts[p.axis][p.context]} along one ${p.axis} line. These are all forces along this line. Any forces in other directions balance.`;
+  if (
+    parts.length !== 2 ||
+    parts[0] !== introduction ||
+    (p.representation === 'table' &&
+      parts[1].split('\n')[0] !== 'Quantity | Magnitude | Direction')
+  )
     return false;
   const rows =
     p.representation === 'table'
@@ -251,6 +273,7 @@ export function validateResultantPrototype(
   )
     return false;
   const value = instance.privateSolution.signedTenths;
+  const expectedValue = p.task === 'resultant' ? net : p.forces[0];
   const balance =
     p.task === 'resultant'
       ? value === net
@@ -270,6 +293,14 @@ export function validateResultantPrototype(
     instance.publicQuestion.maximumMarks === 2 &&
     instance.privateSolution.criteria.length === 2 &&
     instance.privateSolution.criteria.every((c) => c.marks === 1) &&
+    instance.privateSolution.criteria[0].id === 'magnitude' &&
+    instance.privateSolution.criteria[0].description ===
+      `Correct magnitude: ${decimal(Math.abs(expectedValue))} N. Exact decimal equivalent accepted.` &&
+    instance.privateSolution.criteria[1].id === 'direction' &&
+    instance.privateSolution.criteria[1].description ===
+      `Correct direction: ${expectedDirection}; equivalent unambiguous wording accepted.` &&
+    JSON.stringify(instance.privateSolution.working) ===
+      JSON.stringify(workedSolution(p, net, expectedValue)) &&
     instance.validation.liveEligible === false
   );
 }

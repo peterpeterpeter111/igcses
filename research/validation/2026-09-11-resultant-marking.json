@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-09-11T05:30:14.025Z",
+  "familyId": "4PH1.collinear-resultant",
+  "version": "0.1.0",
+  "command": "node --experimental-strip-types scripts/check-resultant-marking.ts",
+  "sourceHashes": {
+    "server/generators/collinear-resultant.ts": "871f67962900fa6e93d2375cd17d27c49403aae6bff8d6ac8c49079c95cc6853",
+    "server/generators/resultant-marking.ts": "e730e2f2efef899eb626df66edc3a3a2d2b91144a4c165b1c8f514e846227bd8",
+    "research/validation/resultant-marking-cases.json": "5c5b77b7353e1c501d16cc09fcbf64e4946b6c9a9aa2e7732022d597abd66a3a"
+  },
+  "deterministicSeeds": 200,
+  "structuralCombinations": 16,
+  "calibration": {
+    "cases": 28,
+    "passed": 28,
+    "deferred": 7,
+    "scope": "Separate final magnitude and direction fields only. Hand-authored synthetic examples; no real student-response calibration or general free-text grading.",
+    "results": [
+      {
+        "id": "source-correct",
+        "passed": true,
+        "expectedScore": 2,
+        "actualScore": 2,
+        "status": "scored"
+      },
+      {
+        "id": "equivalent-decimal",
+        "passed": true,
+        "expectedScore": 2,
+        "actualScore": 2,
+        "status": "scored"
+      },
+      {
+        "id": "arrow",
+        "passed": true,
+        "expectedScore": 2,
+        "actualScore": 2,
+        "status": "scored"
+      },
+      {
+        "id": "scientific-notation",
+        "passed": true,
+        "expectedScore": 2,
+        "actualScore": 2,
+        "status": "scored"
+      },
+      {
+        "id": "converted-millinewton",
+        "passed": true,
+        "expectedScore": 2,
+        "actualScore": 2,
+        "status": "scored"
+      },
+      {
+        "id": "converted-kilonewton",
+        "passed": true,
+        "expectedScore": 2,
+        "actualScore": 2,
+        "status": "scored"
+      },
+      {
+        "id": "source-no-north",
+        "passed": true,
+        "expectedScore": 1,
+        "actualScore": 1,
+        "status": "scored"
+      },
+      {
+        "id": "wrong-magnitude",
+        "passed": true,
+        "expectedScore": 1,
+        "actualScore": 1,
+        "status": "scored"
+      },
+      {
+        "id": "wrong-direction",
+        "passed": true,
+        "expectedScore": 1,
+        "actualScore": 1,
+        "status": "scored"
+      },
+      {
+        "id": "both-wrong",
+        "passed": true,
+        "expectedScore": 0,
+        "actualScore": 0,
+        "status": "scored"
+      },
+      {
+        "id": "blank",
+        "passed": true,
+        "expectedScore": 0,
+        "actualScore": 0,
+        "status": "scored"
+      },
+      {
+        "id": "magnitude-only",
+        "passed": true,
+        "expectedScore": 1,
+        "actualScore": 1,
+        "status": "scored"
+      },
+      {
+        "id": "direction-only",
+        "passed": true,
+        "expectedScore": 1,
+        "actualScore": 1,
+        "status": "scored"
+      },
+      {
+        "id": "downward-resultant",
+        "passed": true,
+        "expectedScore": 2,
+        "actualScore": 2,
+        "status": "scored"
+      },
+      {
+        "id": "horizontal-resultant",
+        "passed": true,
+        "expectedScore": 2,
+        "actualScore": 2,
+        "status": "scored"
+      },
+      {
+        "id": "horizontal-reversed",
+        "passed": true,
+        "expectedScore": 2,
+        "actualScore": 2,
+        "status": "scored"
+      },
+      {
+        "id": "inverse-target",
+        "passed": true,
+        "expectedScore": 2,
+        "actualScore": 2,
+        "status": "scored"
+      },
+      {
+        "id": "inverse-net-mistake",
+        "passed": true,
+        "expectedScore": 1,
+        "actualScore": 1,
+        "status": "scored"
+      },
+      {
+        "id": "three-forces",
+        "passed": true,
+        "expectedScore": 2,
+        "actualScore": 2,
+        "status": "scored"
+      },
+      {
+        "id": "three-inverse",
+        "passed": true,
+        "expectedScore": 2,
+        "actualScore": 2,
+        "status": "scored"
+      },
+      {
+        "id": "extra-digit-error",
+        "passed": true,
+        "expectedScore": 1,
+        "actualScore": 1,
+        "status": "scored"
+      },
+      {
+        "id": "competing-magnitudes",
+        "passed": true,
+        "expectedScore": null,
+        "actualScore": null,
+        "status": "needs-review"
+      },
+      {
+        "id": "competing-directions",
+        "passed": true,
+        "expectedScore": null,
+        "actualScore": null,
+        "status": "needs-review"
+      },
+      {
+        "id": "signed-magnitude",
+        "passed": true,
+        "expectedScore": null,
+        "actualScore": null,
+        "status": "needs-review"
+      },
+      {
+        "id": "explanation-in-field",
+        "passed": true,
+        "expectedScore": null,
+        "actualScore": null,
+        "status": "needs-review"
+      },
+      {
+        "id": "wrong-unit",
+        "passed": true,
+        "expectedScore": null,
+        "actualScore": null,
+        "status": "needs-review"
+      },
+      {
+        "id": "nonfinite",
+        "passed": true,
+        "expectedScore": null,
+        "actualScore": null,
+        "status": "needs-review"
+      },
+      {
+        "id": "prompt-injection",
+        "passed": true,
+        "expectedScore": null,
+        "actualScore": null,
+        "status": "needs-review"
+      }
+    ]
+  },
+  "reviewer": "Codex Astra",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "fullPedagogicalValidation": "partial",
+  "liveEligible": false,
+  "activeTemplates": 0,
+  "blockers": [
+    "Free-text explanation, signed-convention and contradiction interpretation remains deferred.",
+    "Inverse and three-force assessment-demand calibration still needs broader review.",
+    "No live blueprint or final provider integration."
+  ]
+}

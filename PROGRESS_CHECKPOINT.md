@@ -1,4 +1,8 @@
-# Latest checkpoint — subject-wide search
+# Latest checkpoint — Q7/Q8, Energy teaching and force calibration
+
+Read research/checkpoints/2026-09-11-Q7-HANDOFF.md first. Preserved ec41382 and all later search/visual work. Eight partial notes / 55 sections; 89 reviewed Physics parents / 103 partial teaching links. Physics 19 detailed leaves / 51 marks; complete visual inventory remains 51 leaves / 110 marks. Six obtained pairs, zero processed papers; two provisional templates, one experimental generator, 28 bounded marking calibration cases, zero validated/active templates. 48 tests, typecheck, lint, 13 research checks, Sites build and public scan pass. No AI calls, reset, Sites version or deployment. Earlier entries are historical.
+
+# Previous checkpoint — subject-wide search
 
 Local implementation `5340bfb` adds the Maths B-style subject search consistently across all six subject landing pages and every chapter reader. Each search field now has a subject-specific accessible ID, searches only the current subject, highlights matches and links to the matching chapter or note section. No syllabus, paper, template or AI coverage counts changed. The 43 application tests, typecheck, lint, research checks, production build and public-build scan pass. GitHub remains pending from the earlier allowance pause; no Sites version or deployment exists.
 

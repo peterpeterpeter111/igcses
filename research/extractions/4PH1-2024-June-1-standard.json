@@ -18,11 +18,12 @@
   "fullyProcessed": false,
   "wholePaperMarks": 110,
   "wholePaperLeafCount": 51,
-  "detailedLeafTasks": 13,
-  "detailedOriginalMarks": 39,
+  "detailedLeafTasks": 19,
+  "detailedOriginalMarks": 51,
   "reviewedQuestionTotals": {
     "3": 10,
     "5": 11,
+    "7": 12,
     "8": 6,
     "12": 12
   },
@@ -117,9 +118,12 @@
       17,
       18,
       19,
+      20,
+      21,
       22,
       23,
-      25
+      25,
+      26
     ],
     "wholeHistoricalAmendmentReconciliation": "pending"
   },
@@ -1187,6 +1191,676 @@
       ]
     },
     {
+      "taskId": "4PH1-2024-June-1-standard.Q7.a",
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "questionPath": "7.a",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        16
+      ],
+      "markSchemePages": [
+        10
+      ],
+      "commandWord": "Explain",
+      "requiredKnowledge": [
+        "Parallel domestic lighting"
+      ],
+      "contextSummary": "Three independently switched lamps share the supply.",
+      "solutionStructure": [
+        "Lamps can be controlled independently.",
+        "Each lamp has its own parallel branch."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "advantage",
+          "marks": 1,
+          "rule": "Independent control; also accept other lamps working if one fails, or all lamps receiving full 230 V."
+        },
+        {
+          "id": "parallel-reason",
+          "marks": 1,
+          "rule": "Parallel circuit or separate branches/paths."
+        }
+      ],
+      "acceptableAlternatives": [
+        "One lamp on while others off is accepted.",
+        "The full-voltage alternative also earns the advantage mark."
+      ],
+      "dependencies": [
+        "Connect the advantage to the parallel arrangement."
+      ],
+      "commonErrors": [
+        {
+          "description": "Naming parallel without explaining its useful consequence.",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:2.7",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Parallel domestic lighting; source task 7.a.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4PH1:issue4:2.18",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Parallel domestic lighting; source task 7.a.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                21
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "circuit-diagram",
+        "numerical-data"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            16
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.parallel-lighting",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q7.b.i",
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "questionPath": "7.b.i",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        16
+      ],
+      "markSchemePages": [
+        10
+      ],
+      "commandWord": "Give",
+      "requiredKnowledge": [
+        "Charge carriers in a metallic circuit"
+      ],
+      "contextSummary": "Identify the moving charged particle.",
+      "solutionStructure": [
+        "Electrons move in solid metal wires."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "charge-carrier",
+          "marks": 1,
+          "rule": "Electron(s). Historical scheme also accepts ion(s), cation(s), anion(s)."
+        }
+      ],
+      "acceptableAlternatives": [
+        "Retain ions only as a historical allowance; current-specification metal-conduction teaching uses electrons."
+      ],
+      "dependencies": [
+        "Do not teach ions as moving carriers inside solid metal wires."
+      ],
+      "commonErrors": [
+        {
+          "description": "Treating ions as the mobile carriers in solid metal wires.",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:2.16",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Charge carriers in a metallic circuit; source task 7.b.i.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                21
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "circuit-diagram",
+        "numerical-data"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            16
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.charge-carriers",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "Historical ion allowance is kept separate from correct metal-conduction teaching."
+      ]
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q7.b.ii",
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "questionPath": "7.b.ii",
+      "originalMarks": 3,
+      "questionPaperPages": [
+        17
+      ],
+      "markSchemePages": [
+        10
+      ],
+      "commandWord": "Show that",
+      "requiredKnowledge": [
+        "P = IV; mA conversion; significant figures"
+      ],
+      "contextSummary": "Show about 5 W for lamp 1 at 230 V and 22 mA.",
+      "solutionStructure": [
+        "22 mA = 0.022 A.",
+        "P = 230 × 0.022.",
+        "P = 5.06 W or 5.1 W, consistent with about 5 W."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "substitution",
+          "marks": 1,
+          "rule": "Substitute into P = IV."
+        },
+        {
+          "id": "conversion",
+          "marks": 1,
+          "rule": "Convert mA to A; allow 0.022 or division by 1000 anywhere in working."
+        },
+        {
+          "id": "evaluation",
+          "marks": 1,
+          "rule": "Evaluate to at least two significant figures; 5.1 or 5.06 W."
+        }
+      ],
+      "acceptableAlternatives": [
+        "Ignore units in this source task.",
+        "The scheme condones a reverse calculation of current or voltage from 5 W to at least three significant figures for full marks."
+      ],
+      "dependencies": [
+        "A bare 5 W only repeats the target.",
+        "Preserve the reverse-calculation concession separately when designing an original forward-task rubric."
+      ],
+      "commonErrors": [
+        {
+          "description": "Using 22 A rather than converting 22 mA to 0.022 A.",
+          "origin": "scheme-explicit"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:2.4",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "P = IV; mA conversion; significant figures; source task 7.b.ii.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4PH1:issue4:2.1",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "P = IV; mA conversion; significant figures; source task 7.b.ii.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "circuit-diagram",
+        "numerical-data"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            16,
+            17
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.electrical-power-show-that",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [],
+      "electricalCrossCheck": {
+        "voltageVolts": 230,
+        "currentAmperes": 0.022,
+        "powerWatts": 5.06
+      }
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q7.b.iii",
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "questionPath": "7.b.iii",
+      "originalMarks": 3,
+      "questionPaperPages": [
+        17
+      ],
+      "markSchemePages": [
+        10
+      ],
+      "commandWord": "Calculate",
+      "requiredKnowledge": [
+        "P = E/t; electrical energy; earlier-answer dependency"
+      ],
+      "contextSummary": "Find energy from lamp 1 over 30 s.",
+      "solutionStructure": [
+        "Rearrange E = Pt.",
+        "Use the approximate 5 W or the previously calculated power.",
+        "5 × 30 = 150 J; 5.06 × 30 = 151.8 J."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "substitution",
+          "marks": 1,
+          "rule": "Substitute into P = E/t or an equivalent valid method."
+        },
+        {
+          "id": "rearrangement",
+          "marks": 1,
+          "rule": "Rearrange to E = Pt; direct use of E = IVt or another valid method is allowed."
+        },
+        {
+          "id": "evaluation",
+          "marks": 1,
+          "rule": "Correct evaluation; 150 J or permitted earlier-value alternatives."
+        }
+      ],
+      "acceptableAlternatives": [
+        "Allow 151.8, 152 or 153 J.",
+        "Allow error carried forward from (b.ii).",
+        "Deduct one mark for a power-of-ten error as stated in the scheme."
+      ],
+      "dependencies": [
+        "Preserve the learner's earlier power when applying error carried forward.",
+        "Apply any deduction without allowing a negative score."
+      ],
+      "commonErrors": [
+        {
+          "description": "Power-of-ten error in the energy calculation.",
+          "origin": "scheme-explicit"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:2.5",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "P = E/t; electrical energy; earlier-answer dependency; source task 7.b.iii.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4PH1:issue4:4.17",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "P = E/t; electrical energy; earlier-answer dependency; source task 7.b.iii.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                26
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "circuit-diagram",
+        "numerical-data"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            16,
+            17
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.electrical-energy",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [],
+      "electricalCrossCheck": {
+        "powerChoicesWatts": [
+          5,
+          5.06,
+          5.1
+        ],
+        "timeSeconds": 30,
+        "energyChoicesJoules": [
+          150,
+          151.8,
+          153
+        ]
+      }
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q7.c.i",
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "questionPath": "7.c.i",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        17
+      ],
+      "markSchemePages": [
+        10
+      ],
+      "commandWord": "State",
+      "requiredKnowledge": [
+        "Voltage as energy per charge"
+      ],
+      "contextSummary": "Define voltage.",
+      "solutionStructure": [
+        "Voltage is energy transferred per unit charge passed."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "definition",
+          "marks": 1,
+          "rule": "Energy transferred or work done per unit charge; per coulomb accepted."
+        }
+      ],
+      "acceptableAlternatives": [
+        "V = E/Q only accepted if all terms are defined.",
+        "Work done and energy transferred are equivalent here."
+      ],
+      "dependencies": [
+        "An undefined equation alone does not meet the source definition rule."
+      ],
+      "commonErrors": [
+        {
+          "description": "Giving an undefined equation instead of explaining energy per charge.",
+          "origin": "scheme-explicit"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:2.20",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Voltage as energy per charge; source task 7.c.i.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                21
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "circuit-diagram",
+        "numerical-data"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            16,
+            17
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.voltage-definition",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q7.c.ii",
+      "paperId": "4PH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "questionPath": "7.c.ii",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        17
+      ],
+      "markSchemePages": [
+        10
+      ],
+      "commandWord": "Calculate",
+      "requiredKnowledge": [
+        "Current conservation; open branches"
+      ],
+      "contextSummary": "Lamps 1 and 3 on, lamp 2 switch open; find supply current in mA.",
+      "solutionStructure": [
+        "Exclude lamp 2's open branch.",
+        "22 + 17 = 39 mA."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "addition-method",
+          "marks": 1,
+          "rule": "Any attempt to add any currents together earns one source method mark."
+        },
+        {
+          "id": "correct-current",
+          "marks": 1,
+          "rule": "39 mA."
+        }
+      ],
+      "acceptableAlternatives": [
+        "60, 65 or 82 mA earns one mark under the source scheme."
+      ],
+      "dependencies": [
+        "Answer line is in mA; no conversion is required.",
+        "Parallel branches share voltage, not necessarily current."
+      ],
+      "commonErrors": [
+        {
+          "description": "Adding the open branch's 43 mA to the supply total.",
+          "origin": "scheme-explicit"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4PH1:issue4:2.17",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Current conservation; open branches; source task 7.c.ii.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                21
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4PH1:issue4:2.7",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Current conservation; open branches; source task 7.c.ii.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "circuit-diagram",
+        "numerical-data"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-qp",
+          "pdfPages": [
+            16,
+            17
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; not inferred as authoritative.",
+      "proposedFamilyId": "4PH1.parallel-current",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex Astra",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [],
+      "electricalCrossCheck": {
+        "activeBranchMilliampere": [
+          22,
+          17
+        ],
+        "openBranchMilliampere": 43,
+        "supplyMilliampere": 39
+      }
+    },
+    {
       "taskId": "4PH1-2024-June-1-standard.Q8",
       "paperId": "4PH1-2024-June-1-standard",
       "recordKind": "leaf",
@@ -1812,7 +2486,7 @@
     }
   ],
   "blockers": [
-    "38 of 51 numbered parts (71 of 110 marks) still lack detailed extraction.",
+    "32 of 51 numbered parts (59 of 110 marks) still lack detailed extraction.",
     "Source-task to validated-template links incomplete.",
     "No examiner report checked for this paper.",
     "Two official-scheme inconsistencies recorded for review; no affected template activated.",

@@ -1,4 +1,8 @@
-# Latest UI checkpoint
+# Latest resume — 11 September 2026
+
+Resume the latest local commit, preserving ec41382 and all descendants. Read PROGRESS_CHECKPOINT.md and research/checkpoints/2026-09-11-Q7-HANDOFF.md first. Check both allowances; continue only above 5%, pause/save at 5%, consume no reset. Verify or finish the non-force GitHub sync before new work. Current counts: eight partial note documents/55 sections; 89 reviewed Physics parents/103 partial links; six obtained pairs; Physics 19 detailed leaves/51 marks and a separate complete 51-leaf/110-mark visual inventory; zero complete chapters/points or fully processed papers. Two provisional families, one experimental generator, 28 bounded final-answer calibration cases, zero validated/active templates. 48 tests plus typecheck, lint, research checks and production build pass. Continue remaining extraction, curriculum/substatement audits and template calibration. Preserve search and grain-free UI. AI integration last; no Sites version or deployment yet. All entries below are historical.
+
+# Historical UI checkpoint
 
 Latest local commit `5340bfb` adds subject-wide search to every subject landing page and every chapter reader. Preserve this UI change. The search fields use unique subject IDs and remain scoped to the current subject. The current validation suite passes; no research coverage counts changed. Resume the pending GitHub sync and curriculum/extraction/template work from the checkpoint below when allowance permits. No Sites version or deployment exists.
 

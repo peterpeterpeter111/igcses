@@ -112,8 +112,8 @@ void test('visual inventory covers every source page but cannot promote paper or
   assert.equal(visualAudit.fullyProcessed, false);
   assert.equal(visualAudit.humanReviewed, false);
   assert.ok(visualAudit.sourceDiscrepancies.length > 0);
-  assert.equal(extracted.detailedLeafTasks, 13);
-  assert.equal(extracted.detailedOriginalMarks, 39);
+  assert.equal(extracted.detailedLeafTasks, 19);
+  assert.equal(extracted.detailedOriginalMarks, 51);
 });
 
 void test('Q8 retains the six-mark cap, seven-point pool and correct refraction physics', () => {
@@ -138,6 +138,35 @@ void test('Q8 retains the six-mark cap, seven-point pool and correct refraction 
   }
   assert.equal(task.templateLinkStatus, 'candidate-only');
   assert.ok(task.blockers.some((b) => b.includes('drawing')));
+});
+
+void test('Q7 electrical calculations preserve unit conversion, rounding alternatives and active branches', () => {
+  const power = extracted.tasks.find(
+    (t) => t.questionPath === '7.b.ii',
+  )!.electricalCrossCheck!;
+  assert.ok(
+    Math.abs(power.voltageVolts! * power.currentAmperes! - power.powerWatts!) <
+      1e-12,
+  );
+  const energy = extracted.tasks.find(
+    (t) => t.questionPath === '7.b.iii',
+  )!.electricalCrossCheck!;
+  energy.powerChoicesWatts!.forEach((p, i) => {
+    assert.ok(
+      Math.abs(p * energy.timeSeconds! - energy.energyChoicesJoules![i]) <
+        1e-10,
+    );
+  });
+  const current = extracted.tasks.find(
+    (t) => t.questionPath === '7.c.ii',
+  )!.electricalCrossCheck!;
+  assert.equal(
+    current.activeBranchMilliampere!.reduce((a, b) => a + b, 0),
+    current.supplyMilliampere,
+  );
+  assert.ok(
+    !current.activeBranchMilliampere!.includes(current.openBranchMilliampere!),
+  );
 });
 
 void test('detailed export retains stimulus pages and exact cross-topic syllabus references', async () => {
