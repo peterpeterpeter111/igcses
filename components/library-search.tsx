@@ -16,15 +16,28 @@ function Highlight({ text, term }: { text: string; term: string }) {
     </>
   );
 }
-export function LibrarySearch({ subjectId }: { subjectId: string }) {
+export function LibrarySearch({
+  subjectId,
+  className,
+}: {
+  subjectId: string;
+  className?: string;
+}) {
   const [query, setQuery] = useState('');
   const subject = getSubject(subjectId)!;
+  const inputId = 'subject-search-' + subject.id;
+  const labelId = inputId + '-label';
   const results = searchLibrary(subject, query);
   return (
-    <section aria-label="Search this subject">
-      <label htmlFor="chapter-search">Search {subject.title}</label>
+    <section
+      className={className ? 'library-search ' + className : 'library-search'}
+      aria-labelledby={labelId}
+    >
+      <label id={labelId} htmlFor={inputId}>
+        Search {subject.title}
+      </label>
       <Input
-        id="chapter-search"
+        id={inputId}
         type="search"
         className="search-input"
         placeholder="A chapter, term or formula…"
@@ -34,7 +47,7 @@ export function LibrarySearch({ subjectId }: { subjectId: string }) {
       />
       {query.trim() && (
         <div className="search-results">
-          <output className="search-count" htmlFor="chapter-search">
+          <output className="search-count" htmlFor={inputId} aria-live="polite">
             {results.length} matching{' '}
             {results.length === 1 ? 'section' : 'sections'}
           </output>

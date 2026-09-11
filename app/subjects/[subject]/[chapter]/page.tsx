@@ -4,6 +4,7 @@ import { getSubject, getChapter } from '@/content/catalog';
 import { getNotes } from '@/content/notes';
 import sources from '@/research/sources.json';
 import { SiteFrame } from '@/components/site-frame';
+import { LibrarySearch } from '@/components/library-search';
 export default async function ChapterPage({
   params,
 }: {
@@ -26,6 +27,7 @@ export default async function ChapterPage({
           <span>/</span>
           <span>{c.title}</span>
         </nav>
+        <LibrarySearch subjectId={s.id} className="chapter-library-search" />
         <div className="reading-layout">
           <aside>
             <p className="aside-label">In this chapter</p>

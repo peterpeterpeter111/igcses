@@ -1,4 +1,10 @@
+# Latest checkpoint — subject-wide search
+
+Local implementation `5340bfb` adds the Maths B-style subject search consistently across all six subject landing pages and every chapter reader. Each search field now has a subject-specific accessible ID, searches only the current subject, highlights matches and links to the matching chapter or note section. No syllabus, paper, template or AI coverage counts changed. The 43 application tests, typecheck, lint, research checks, production build and public-build scan pass. GitHub remains pending from the earlier allowance pause; no Sites version or deployment exists.
+
 # Latest checkpoint — Physics visual audit, Q3 extraction and Energy foundation
+
+PAUSED at 3% five-hour / 53% weekly on final check. Implementation c5fcee9 is committed locally; exact GitHub tree uploaded but branch update is pending. Main remains 1a43e5d, mirroring b2c08fc. See the Final pause section of research/checkpoints/2026-09-10-Q3-COVERAGE.md for the exact resume state. No reset used.
 
 Read research/checkpoints/2026-09-10-Q3-COVERAGE.md first. All 36 Physics QP and 17 scheme pages visually audited: 51 leaves / 110 marks reconciled. Q3/Q5/Q12 detailed: 12 leaves / 33 marks. Eight partial notes / 42 sections, 72 reviewed Physics parent identities / 81 partial teaching links. Zero complete chapters/points, fully processed papers or active templates. Two source discrepancies recorded. Coverage UI and explicit-reference ledger exporter updated. 43 tests, typecheck, lint, 13 research checks, Sites build and public scan pass. No AI calls, reset, Sites version or deployment. Earlier entries below are historical.
 

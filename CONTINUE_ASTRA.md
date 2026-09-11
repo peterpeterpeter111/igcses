@@ -1,4 +1,10 @@
+# Latest UI checkpoint
+
+Latest local commit `5340bfb` adds subject-wide search to every subject landing page and every chapter reader. Preserve this UI change. The search fields use unique subject IDs and remain scoped to the current subject. The current validation suite passes; no research coverage counts changed. Resume the pending GitHub sync and curriculum/extraction/template work from the checkpoint below when allowance permits. No Sites version or deployment exists.
+
 # Continue with Astra
+
+PAUSED: 3% five-hour / 53% weekly. Latest implementation c5fcee9 is saved locally. Read research/checkpoints/2026-09-10-Q3-COVERAGE.md, including Final pause. GitHub has uploaded tree 71f33ddb47fccb5f92d994ff42f08b529934ee75, but main still mirrors b2c08fc at 1a43e5d8d2aacc2d8746cae1dab9941418bca826; commit/ref update and this checkpoint delta remain. Check both allowances before resuming; no reset.
 
 LATEST RESUME: read PROGRESS_CHECKPOINT.md and research/checkpoints/2026-09-10-Q3-COVERAGE.md first. Resume the latest local commit, preserve all history and the grain-free UI; consume no reset. Continue only when both allowances exceed 5%, and checkpoint/pause at 5%. Physics visual inventory is COMPLETE (36 QP + 17 MS pages; 51 leaves / 110 marks); do not redo it. Detailed extraction is still PARTIAL (Q3/Q5/Q12, 12 leaves / 33 marks); next process remaining 39 leaves, expand Energy and other curriculum, then independently calibrate templates. Eight partial notes / 42 sections; 72 reviewed Physics parents / 81 partial teaching links; zero complete chapters/points, processed papers or active templates. Q3(c) decimal and Q8 optical-density source inconsistencies remain recorded. 43 tests, lint, typecheck, 13 research checks and Sites build pass. Keep AI integration last. Source sync and verification details are in the newest checkpoint. All resume text below is historical.
 
