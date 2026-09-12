@@ -1,0 +1,943 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4PH1",
+  "specificationIssue": "Issue 4 - September 2024",
+  "documentId": "4PH1-spec",
+  "documentSha256": "bac4b8312d4fbfc84672f909100d66b2b3cda0b25e98c0d11bbc7366dae482b2",
+  "reviewDate": "2026-09-12",
+  "reviewer": "Codex Astra",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "reviewMethod": "Visual page inspection plus text comparison; images inspected in the preceding session and preserved at the same source hash.",
+  "reviewedPdfPages": [
+    36,
+    37,
+    51,
+    52
+  ],
+  "scope": "Separate qualification-wide skills inventory and bounded Q10 mapping. These 35 skill rows do not increase the 195 numbered content-parent count or complete any teaching/substatement audit.",
+  "identifierPolicy": "Experimental IDs use local one-based bullet ordinals, not publisher-assigned numbers. Mathematical IDs retain the printed category number and row letter. All IDs are local versioned references.",
+  "excludedMathematicalRows": [
+    {
+      "row": "2E",
+      "reason": "Sampling row has no Physics applicability tick."
+    },
+    {
+      "row": "2G",
+      "reason": "Mode/median row has no Physics applicability tick."
+    }
+  ],
+  "skills": [
+    {
+      "id": "4PH1:issue4:experimental:01",
+      "kind": "experimental",
+      "sourceLocator": {
+        "heading": "Experimental skills",
+        "bulletOrdinal": 1,
+        "pdfPage": 36,
+        "printedPage": 30
+      },
+      "summary": "Solve problems within practical situations.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:experimental:02",
+      "kind": "experimental",
+      "sourceLocator": {
+        "heading": "Experimental skills",
+        "bulletOrdinal": 2,
+        "pdfPage": 36,
+        "printedPage": 30
+      },
+      "summary": "Apply physical knowledge in practical contexts.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:experimental:03",
+      "kind": "experimental",
+      "sourceLocator": {
+        "heading": "Experimental skills",
+        "bulletOrdinal": 3,
+        "pdfPage": 36,
+        "printedPage": 30
+      },
+      "summary": "Plan investigations and choose techniques using scientific understanding.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:experimental:04",
+      "kind": "experimental",
+      "sourceLocator": {
+        "heading": "Experimental skills",
+        "bulletOrdinal": 4,
+        "pdfPage": 36,
+        "printedPage": 30
+      },
+      "summary": "Describe appropriate investigative methods, including safe and skilful techniques.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:experimental:05",
+      "kind": "experimental",
+      "sourceLocator": {
+        "heading": "Experimental skills",
+        "bulletOrdinal": 5,
+        "pdfPage": 36,
+        "printedPage": 30
+      },
+      "summary": "Observe and measure with suitable precision, recording and presenting results systematically.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:experimental:06",
+      "kind": "experimental",
+      "sourceLocator": {
+        "heading": "Experimental skills",
+        "bulletOrdinal": 6,
+        "pdfPage": 36,
+        "printedPage": 30
+      },
+      "summary": "Identify independent, dependent and control variables.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:experimental:07",
+      "kind": "experimental",
+      "sourceLocator": {
+        "heading": "Experimental skills",
+        "bulletOrdinal": 7,
+        "pdfPage": 36,
+        "printedPage": 30
+      },
+      "summary": "Interpret experimental data and draw conclusions supported by evidence.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:experimental:08",
+      "kind": "experimental",
+      "sourceLocator": {
+        "heading": "Experimental skills",
+        "bulletOrdinal": 8,
+        "pdfPage": 36,
+        "printedPage": 30
+      },
+      "summary": "Communicate experimental findings using technical language, calculations and graphs.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:experimental:09",
+      "kind": "experimental",
+      "sourceLocator": {
+        "heading": "Experimental skills",
+        "bulletOrdinal": 9,
+        "pdfPage": 36,
+        "printedPage": 30
+      },
+      "summary": "Assess experimental reliability.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:experimental:10",
+      "kind": "experimental",
+      "sourceLocator": {
+        "heading": "Experimental skills",
+        "bulletOrdinal": 10,
+        "pdfPage": 36,
+        "printedPage": 30
+      },
+      "summary": "Evaluate data and methods for factors affecting accuracy and validity.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:mathematical:1A",
+      "kind": "mathematical",
+      "sourceLocator": {
+        "heading": "Appendix 4: Mathematical skills",
+        "tableCategory": 1,
+        "tableRow": "A",
+        "pdfPage": 51,
+        "printedPage": 45
+      },
+      "summary": "Use decimal numbers.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:mathematical:1B",
+      "kind": "mathematical",
+      "sourceLocator": {
+        "heading": "Appendix 4: Mathematical skills",
+        "tableCategory": 1,
+        "tableRow": "B",
+        "pdfPage": 51,
+        "printedPage": 45
+      },
+      "summary": "Use standard-form numbers.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:mathematical:1C",
+      "kind": "mathematical",
+      "sourceLocator": {
+        "heading": "Appendix 4: Mathematical skills",
+        "tableCategory": 1,
+        "tableRow": "C",
+        "pdfPage": 51,
+        "printedPage": 45
+      },
+      "summary": "Use ratios, fractions, percentages, powers and roots.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:mathematical:1D",
+      "kind": "mathematical",
+      "sourceLocator": {
+        "heading": "Appendix 4: Mathematical skills",
+        "tableCategory": 1,
+        "tableRow": "D",
+        "pdfPage": 51,
+        "printedPage": 45
+      },
+      "summary": "Estimate simple calculations without a calculator.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:mathematical:1E",
+      "kind": "mathematical",
+      "sourceLocator": {
+        "heading": "Appendix 4: Mathematical skills",
+        "tableCategory": 1,
+        "tableRow": "E",
+        "pdfPage": 51,
+        "printedPage": 45
+      },
+      "summary": "Use sine and inverse sine with degree angles.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:mathematical:2A",
+      "kind": "mathematical",
+      "sourceLocator": {
+        "heading": "Appendix 4: Mathematical skills",
+        "tableCategory": 2,
+        "tableRow": "A",
+        "pdfPage": 51,
+        "printedPage": 45
+      },
+      "summary": "Choose suitable significant figures.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:mathematical:2B",
+      "kind": "mathematical",
+      "sourceLocator": {
+        "heading": "Appendix 4: Mathematical skills",
+        "tableCategory": 2,
+        "tableRow": "B",
+        "pdfPage": 51,
+        "printedPage": 45
+      },
+      "summary": "Calculate and interpret an arithmetic mean.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:mathematical:2C",
+      "kind": "mathematical",
+      "sourceLocator": {
+        "heading": "Appendix 4: Mathematical skills",
+        "tableCategory": 2,
+        "tableRow": "C",
+        "pdfPage": 51,
+        "printedPage": 45
+      },
+      "summary": "Construct and interpret bar charts.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:mathematical:2D",
+      "kind": "mathematical",
+      "sourceLocator": {
+        "heading": "Appendix 4: Mathematical skills",
+        "tableCategory": 2,
+        "tableRow": "D",
+        "pdfPage": 51,
+        "printedPage": 45
+      },
+      "summary": "Construct and interpret frequency tables, diagrams and histograms.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:mathematical:2F",
+      "kind": "mathematical",
+      "sourceLocator": {
+        "heading": "Appendix 4: Mathematical skills",
+        "tableCategory": 2,
+        "tableRow": "F",
+        "pdfPage": 51,
+        "printedPage": 45
+      },
+      "summary": "Use simple probability.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:mathematical:2H",
+      "kind": "mathematical",
+      "sourceLocator": {
+        "heading": "Appendix 4: Mathematical skills",
+        "tableCategory": 2,
+        "tableRow": "H",
+        "pdfPage": 51,
+        "printedPage": 45
+      },
+      "summary": "Use scatter plots to recognise relationships between two variables.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:mathematical:2I",
+      "kind": "mathematical",
+      "sourceLocator": {
+        "heading": "Appendix 4: Mathematical skills",
+        "tableCategory": 2,
+        "tableRow": "I",
+        "pdfPage": 51,
+        "printedPage": 45
+      },
+      "summary": "Calculate orders of magnitude.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:mathematical:3A",
+      "kind": "mathematical",
+      "sourceLocator": {
+        "heading": "Appendix 4: Mathematical skills",
+        "tableCategory": 3,
+        "tableRow": "A",
+        "pdfPage": 51,
+        "printedPage": 45
+      },
+      "summary": "Use inequality, proportionality and approximation symbols.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:mathematical:3B",
+      "kind": "mathematical",
+      "sourceLocator": {
+        "heading": "Appendix 4: Mathematical skills",
+        "tableCategory": 3,
+        "tableRow": "B",
+        "pdfPage": 51,
+        "printedPage": 45
+      },
+      "summary": "Rearrange equations.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:mathematical:3C",
+      "kind": "mathematical",
+      "sourceLocator": {
+        "heading": "Appendix 4: Mathematical skills",
+        "tableCategory": 3,
+        "tableRow": "C",
+        "pdfPage": 51,
+        "printedPage": 45
+      },
+      "summary": "Substitute values with appropriate physical units into equations.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:mathematical:3D",
+      "kind": "mathematical",
+      "sourceLocator": {
+        "heading": "Appendix 4: Mathematical skills",
+        "tableCategory": 3,
+        "tableRow": "D",
+        "pdfPage": 51,
+        "printedPage": 45
+      },
+      "summary": "Solve simple algebraic equations.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:mathematical:4A",
+      "kind": "mathematical",
+      "sourceLocator": {
+        "heading": "Appendix 4: Mathematical skills",
+        "tableCategory": 4,
+        "tableRow": "A",
+        "pdfPage": 51,
+        "printedPage": 45
+      },
+      "summary": "Translate between graphs and numerical information.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:mathematical:4B",
+      "kind": "mathematical",
+      "sourceLocator": {
+        "heading": "Appendix 4: Mathematical skills",
+        "tableCategory": 4,
+        "tableRow": "B",
+        "pdfPage": 51,
+        "printedPage": 45
+      },
+      "summary": "Recognise the linear relation y = mx + c.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:mathematical:4C",
+      "kind": "mathematical",
+      "sourceLocator": {
+        "heading": "Appendix 4: Mathematical skills",
+        "tableCategory": 4,
+        "tableRow": "C",
+        "pdfPage": 51,
+        "printedPage": 45
+      },
+      "summary": "Plot two variables from experimental or other data.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:mathematical:4D",
+      "kind": "mathematical",
+      "sourceLocator": {
+        "heading": "Appendix 4: Mathematical skills",
+        "tableCategory": 4,
+        "tableRow": "D",
+        "pdfPage": 51,
+        "printedPage": 45
+      },
+      "summary": "Determine linear-graph gradient and intercept.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:mathematical:4E",
+      "kind": "mathematical",
+      "sourceLocator": {
+        "heading": "Appendix 4: Mathematical skills",
+        "tableCategory": 4,
+        "tableRow": "E",
+        "pdfPage": 51,
+        "printedPage": 45
+      },
+      "summary": "Draw and use a tangent gradient as a rate of change.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:mathematical:4F",
+      "kind": "mathematical",
+      "sourceLocator": {
+        "heading": "Appendix 4: Mathematical skills",
+        "tableCategory": 4,
+        "tableRow": "F",
+        "pdfPage": 51,
+        "printedPage": 45
+      },
+      "summary": "Interpret area between a curve and the horizontal axis, including square-counting measurement.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:mathematical:5A",
+      "kind": "mathematical",
+      "sourceLocator": {
+        "heading": "Appendix 4: Mathematical skills",
+        "tableCategory": 5,
+        "tableRow": "A",
+        "pdfPage": 52,
+        "printedPage": 46
+      },
+      "summary": "Use angles measured in degrees.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:mathematical:5B",
+      "kind": "mathematical",
+      "sourceLocator": {
+        "heading": "Appendix 4: Mathematical skills",
+        "tableCategory": 5,
+        "tableRow": "B",
+        "pdfPage": 52,
+        "printedPage": 46
+      },
+      "summary": "Visualise two- and three-dimensional objects and their representations.",
+      "physicsApplicable": true
+    },
+    {
+      "id": "4PH1:issue4:mathematical:5C",
+      "kind": "mathematical",
+      "sourceLocator": {
+        "heading": "Appendix 4: Mathematical skills",
+        "tableCategory": 5,
+        "tableRow": "C",
+        "pdfPage": 52,
+        "printedPage": 46
+      },
+      "summary": "Calculate triangle and rectangle areas and cube surface areas and volumes.",
+      "physicsApplicable": true
+    }
+  ],
+  "assessmentObjectiveCaution": {
+    "pdfPage": 37,
+    "observation": "The specification defines qualification-level AO categories and weightings. These do not establish the official mark allocation of an individual paper task.",
+    "officialTaskAllocationVerified": false
+  },
+  "taskMappings": [
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q10.a",
+      "reviewStatus": "agent-reviewed",
+      "humanReviewed": false,
+      "mappings": [
+        {
+          "skillId": "4PH1:issue4:mathematical:3C",
+          "rationale": "Substitute converted mass and g into W=mg.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                22
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                13
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:mathematical:1C",
+          "rationale": "Convert mass by the grams-to-kilograms ratio.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                22
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                13
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q10.b.i",
+      "reviewStatus": "agent-reviewed",
+      "humanReviewed": false,
+      "mappings": [
+        {
+          "skillId": "4PH1:issue4:experimental:06",
+          "rationale": "Name independent L and dependent h.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                36
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                22,
+                23
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                13
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q10.b.ii",
+      "reviewStatus": "agent-reviewed",
+      "humanReviewed": false,
+      "mappings": [
+        {
+          "skillId": "4PH1:issue4:experimental:06",
+          "rationale": "Identify two valid control variables.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                36
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                22,
+                23
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                13
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q10.b.iii",
+      "reviewStatus": "agent-reviewed",
+      "humanReviewed": false,
+      "mappings": [
+        {
+          "skillId": "4PH1:issue4:experimental:04",
+          "rationale": "Describe a suitable method to measure vertical drop.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                36
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                22,
+                23
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                13
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:experimental:05",
+          "rationale": "Position and read a measuring scale accurately.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                36
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                22,
+                23
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                13
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q10.c.i",
+      "reviewStatus": "agent-reviewed",
+      "humanReviewed": false,
+      "mappings": [
+        {
+          "skillId": "4PH1:issue4:experimental:05",
+          "rationale": "Read the original-dimension scale diagram within source tolerance.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                36
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                24
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                14
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:mathematical:1C",
+          "rationale": "Apply the 10:1 laboratory-to-diagram ratio.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                24
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                14
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q10.c.ii",
+      "reviewStatus": "agent-reviewed",
+      "humanReviewed": false,
+      "mappings": [
+        {
+          "skillId": "4PH1:issue4:mathematical:4C",
+          "rationale": "Plot L against h from the measurement table.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                24,
+                25
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                14
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:mathematical:4A",
+          "rationale": "Represent numerical results graphically.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                24,
+                25
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                14
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:experimental:08",
+          "rationale": "Communicate measured results using a graph.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                36
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                24,
+                25
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                14
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q10.c.iii",
+      "reviewStatus": "agent-reviewed",
+      "humanReviewed": false,
+      "mappings": [
+        {
+          "skillId": "4PH1:issue4:mathematical:2H",
+          "rationale": "Identify the data trend to draw a best-fit curve.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                24,
+                25
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                14
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:experimental:08",
+          "rationale": "Represent experimental findings with a fitted graph.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                36
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                24,
+                25
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                14
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q10.c.iv",
+      "reviewStatus": "agent-reviewed",
+      "humanReviewed": false,
+      "mappings": [
+        {
+          "skillId": "4PH1:issue4:mathematical:4B",
+          "rationale": "Test linearity and the zero-intercept condition for direct proportionality.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                24,
+                25
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                14
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:mathematical:3A",
+          "rationale": "Interpret the proposed proportionality relationship.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                24,
+                25
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                14
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:experimental:07",
+          "rationale": "Evaluate the student's conclusion against the observed data.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                36
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                24,
+                25
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                14
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "fullyProcessedPaper": false,
+  "teachingCompletionAssessed": false,
+  "blockers": [
+    "Only Q10 skill demands are mapped; remaining Physics tasks and other subjects need review.",
+    "Source Q10.c.iii curve-distance wording remains unresolved; this mapping does not validate its tolerance or activate a template.",
+    "No official task-level AO allocation or teaching-completion claim."
+  ]
+}

@@ -47,7 +47,12 @@ export function subjectEvidence(code: string) {
               questionPaperPages: physicsVisualAudit.questionPaper.length,
               markSchemePages: physicsVisualAudit.markScheme.length,
               sourceDiscrepancies:
-                physicsVisualAudit.sourceDiscrepancies.length,
+                new Set([
+                  ...physicsVisualAudit.sourceDiscrepancies.map((d) => d.id),
+                  ...physicsExtraction.tasks.flatMap((t) =>
+                    t.sourceDiscrepancy ? [t.sourceDiscrepancy.id] : [],
+                  ),
+                ]).size,
             }
           : null,
       extraction:

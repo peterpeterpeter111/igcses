@@ -1,3 +1,11 @@
+# Latest checkpoint — Q10 skills audit
+
+Read research/checkpoints/2026-09-12-Q10-SKILLS.md first. The user authorised using the remaining weekly allowance after the 5% gate. Saved 35 separate Physics skills (10 experimental / 25 mathematical), with 16 source-linked mappings across all eight Q10 parts. Coverage counts and discrepancy wording updated. 64 tests, typecheck, lint, research checks, production build and public scan pass. Local preview was not running, so rendered-page verification remains open. Content totals stay 195 parents, 51 detailed leaves/110 marks, nine partial notes/74 sections; zero complete chapters/points/papers or active templates. No reset, AI, Sites version or deployment. Latest delta requires verification of non-force sync from remote d30fbe9. Earlier entries are historical.
+
+# Latest checkpoint — resume gated on weekly allowance
+
+Read research/checkpoints/2026-09-12-RESUME-GATE.md first. Checked 12 September: 98% five-hour / 5% weekly remaining. Development remains paused because both must exceed 5%. No reset. Source 018f8a6 was already synced at GitHub d30fbe9 in the preceding session; this documentation-only delta is local pending sync. Content and previous 62-test/build results are unchanged. Resume the Q10 skills audit only after the allowance gate passes. Earlier entries below are historical.
+
 # Latest checkpoint — paused at user request
 
 Read research/checkpoints/2026-09-11-PAUSED-AFTER-PHYSICS.md first. Latest implementation bd8e75f; Physics ff5e9c6 is synced at GitHub 95fcd39, later calibration/documentation pending verification of sync. Last allowance read: 9% five-hour / 6% weekly. No reset. Physics now has 195 reviewed parent identities and all 51 detailed leaves / 110 marks; zero fully processed papers, complete chapters/points or active templates. Nine partial notes / 74 sections unchanged. Calibration has 36 final-answer cases plus 96 outcomes across 16 structures. 62 tests, typecheck, lint, research checks, production build and public scan pass. No AI, Sites version or deployment. Q10 skills mapping and further curriculum/calibration remain open. Earlier entries are historical.

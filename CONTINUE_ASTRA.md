@@ -1,3 +1,11 @@
+# Latest checkpoint — Q10 skills audit
+
+Read research/checkpoints/2026-09-12-Q10-SKILLS.md first. The user authorised using the remaining weekly allowance after the 5% gate. Saved 35 separate Physics skills (10 experimental / 25 mathematical), with 16 source-linked mappings across all eight Q10 parts. Coverage counts and discrepancy wording updated. 64 tests, typecheck, lint, research checks, production build and public scan pass. Local preview was not running, so rendered-page verification remains open. Content totals stay 195 parents, 51 detailed leaves/110 marks, nine partial notes/74 sections; zero complete chapters/points/papers or active templates. No reset, AI, Sites version or deployment. Latest delta requires verification of non-force sync from remote d30fbe9. Earlier entries are historical.
+
+# Latest checkpoint — resume gated on weekly allowance
+
+Read research/checkpoints/2026-09-12-RESUME-GATE.md first. Checked 12 September: 98% five-hour / 5% weekly remaining. Development remains paused because both must exceed 5%. No reset. Source 018f8a6 was already synced at GitHub d30fbe9 in the preceding session; this documentation-only delta is local pending sync. Content and previous 62-test/build results are unchanged. Resume the Q10 skills audit only after the allowance gate passes. Earlier entries below are historical.
+
 # Latest resume — paused after Physics and force calibration
 
 Resume the latest local commit and CONTINUE_ASTRA.md. Read PROGRESS_CHECKPOINT.md and research/checkpoints/2026-09-11-PAUSED-AFTER-PHYSICS.md first. Check both allowances; continue only when both exceed 5%, and pause/checkpoint at 5%. Preserve all history and consume no reset. Verify or finish the pending non-force GitHub sync. Physics has 195 reviewed parent identities and 51 detailed paper records covering 110 marks, but zero fully processed papers. Continue the Q10 experimental/mathematical-skills audit, curriculum substatements and template assessment-demand calibration. Keep all counts honest, the existing UI intact and AI integration last. Build/test before any Sites save or deployment.

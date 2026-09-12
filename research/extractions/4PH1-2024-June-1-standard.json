@@ -4321,7 +4321,57 @@
         "maximum": 2,
         "jointCaps": [],
         "powerOfTenMassErrorDeduction": 1
-      }
+      },
+      "skillMappings": [
+        {
+          "skillId": "4PH1:issue4:mathematical:3C",
+          "rationale": "Substitute converted mass and g into W=mg.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                22
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                13
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:mathematical:1C",
+          "rationale": "Convert mass by the grams-to-kilograms ratio.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                22
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                13
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "paperId": "4PH1-2024-June-1-standard",
@@ -4417,7 +4467,34 @@
         "Identify independent and dependent variables"
       ],
       "mappingLimitations": [
-        "Experimental/mathematical skill demand is explicit in the source but is not yet linked to a separately audited specification skills statement; the 1.11 link supplies physical context only."
+        "Experimental/mathematical skill links were agent-reviewed on 2026-09-12 in the separate skills inventory; the 1.11 content link remains contextual. Official per-task AO allocation is still unverified."
+      ],
+      "skillMappings": [
+        {
+          "skillId": "4PH1:issue4:experimental:06",
+          "rationale": "Name independent L and dependent h.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                36
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                22,
+                23
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                13
+              ]
+            }
+          ]
+        }
       ]
     },
     {
@@ -4510,7 +4587,7 @@
         "Select control variables"
       ],
       "mappingLimitations": [
-        "Experimental/mathematical skill demand is explicit in the source but is not yet linked to a separately audited specification skills statement; the 1.11 link supplies physical context only."
+        "Experimental/mathematical skill links were agent-reviewed on 2026-09-12 in the separate skills inventory; the 1.11 content link remains contextual. Official per-task AO allocation is still unverified."
       ],
       "markingPointPool": [
         {
@@ -4537,7 +4614,34 @@
       "markingConstraints": {
         "maximum": 2,
         "jointCaps": []
-      }
+      },
+      "skillMappings": [
+        {
+          "skillId": "4PH1:issue4:experimental:06",
+          "rationale": "Identify two valid control variables.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                36
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                22,
+                23
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                13
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "paperId": "4PH1-2024-June-1-standard",
@@ -4631,7 +4735,7 @@
         "Reduce measurement error"
       ],
       "mappingLimitations": [
-        "Experimental/mathematical skill demand is explicit in the source but is not yet linked to a separately audited specification skills statement; the 1.11 link supplies physical context only."
+        "Experimental/mathematical skill links were agent-reviewed on 2026-09-12 in the separate skills inventory; the 1.11 content link remains contextual. Official per-task AO allocation is still unverified."
       ],
       "markingPointPool": [
         {
@@ -4663,7 +4767,59 @@
       "markingConstraints": {
         "maximum": 2,
         "jointCaps": []
-      }
+      },
+      "skillMappings": [
+        {
+          "skillId": "4PH1:issue4:experimental:04",
+          "rationale": "Describe a suitable method to measure vertical drop.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                36
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                22,
+                23
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                13
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:experimental:05",
+          "rationale": "Position and read a measuring scale accurately.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                36
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                22,
+                23
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                13
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "paperId": "4PH1-2024-June-1-standard",
@@ -4764,7 +4920,7 @@
         "Convert using a scale factor"
       ],
       "mappingLimitations": [
-        "Experimental/mathematical skill demand is explicit in the source but is not yet linked to a separately audited specification skills statement; the 1.11 link supplies physical context only."
+        "Experimental/mathematical skill links were agent-reviewed on 2026-09-12 in the separate skills inventory; the 1.11 content link remains contextual. Official per-task AO allocation is still unverified."
       ],
       "scaleCrossCheck": {
         "diagramMeasurementCm": 3.1,
@@ -4778,7 +4934,57 @@
           30,
           32
         ]
-      }
+      },
+      "skillMappings": [
+        {
+          "skillId": "4PH1:issue4:experimental:05",
+          "rationale": "Read the original-dimension scale diagram within source tolerance.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                36
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                24
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                14
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:mathematical:1C",
+          "rationale": "Apply the 10:1 laboratory-to-diagram ratio.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                24
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                14
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "paperId": "4PH1-2024-June-1-standard",
@@ -4881,7 +5087,7 @@
         "Plot measurements"
       ],
       "mappingLimitations": [
-        "Experimental/mathematical skill demand is explicit in the source but is not yet linked to a separately audited specification skills statement; the 1.11 link supplies physical context only."
+        "Experimental/mathematical skill links were agent-reviewed on 2026-09-12 in the separate skills inventory; the 1.11 content link remains contextual. Official per-task AO allocation is still unverified."
       ],
       "dataCrossCheck": {
         "lengthsCm": [
@@ -4902,7 +5108,84 @@
         ],
         "dependentSourceTask": "4PH1-2024-June-1-standard.Q10.c.i",
         "dependentPointIndex": 3
-      }
+      },
+      "skillMappings": [
+        {
+          "skillId": "4PH1:issue4:mathematical:4C",
+          "rationale": "Plot L against h from the measurement table.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                24,
+                25
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                14
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:mathematical:4A",
+          "rationale": "Represent numerical results graphically.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                24,
+                25
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                14
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:experimental:08",
+          "rationale": "Communicate measured results using a graph.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                36
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                24,
+                25
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                14
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "paperId": "4PH1-2024-June-1-standard",
@@ -4997,9 +5280,10 @@
         "Fit a smooth curve to data"
       ],
       "mappingLimitations": [
-        "Experimental/mathematical skill demand is explicit in the source but is not yet linked to a separately audited specification skills statement; the 1.11 link supplies physical context only."
+        "Experimental/mathematical skill links were agent-reviewed on 2026-09-12 in the separate skills inventory; the 1.11 content link remains contextual. Official per-task AO allocation is still unverified."
       ],
       "sourceDiscrepancy": {
+        "id": "Q10.c.iii-curve-distance",
         "documentId": "4PH1-2024-June-1-standard-ms",
         "pdfPages": [
           14
@@ -5008,7 +5292,59 @@
         "sourceWording": "at least 1 small square",
         "issue": "A minimum separation conflicts with the smooth best-fit instruction and does not define the expected upper tolerance; no publisher correction has been obtained.",
         "resolution": "Unresolved. Preserve wording in evidence; prohibit automated tolerance scoring and template activation."
-      }
+      },
+      "skillMappings": [
+        {
+          "skillId": "4PH1:issue4:mathematical:2H",
+          "rationale": "Identify the data trend to draw a best-fit curve.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                24,
+                25
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                14
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:experimental:08",
+          "rationale": "Represent experimental findings with a fitted graph.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                36
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                24,
+                25
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                14
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "paperId": "4PH1-2024-June-1-standard",
@@ -5107,7 +5443,7 @@
         "Evaluate a proposed relationship using data"
       ],
       "mappingLimitations": [
-        "Experimental/mathematical skill demand is explicit in the source but is not yet linked to a separately audited specification skills statement; the 1.11 link supplies physical context only."
+        "Experimental/mathematical skill links were agent-reviewed on 2026-09-12 in the separate skills inventory; the 1.11 content link remains contextual. Official per-task AO allocation is still unverified."
       ],
       "markingConstraints": {
         "maximum": 2,
@@ -5119,7 +5455,84 @@
           }
         ],
         "zeroOverride": "Any indication that the relationship is proportional or directly proportional."
-      }
+      },
+      "skillMappings": [
+        {
+          "skillId": "4PH1:issue4:mathematical:4B",
+          "rationale": "Test linearity and the zero-intercept condition for direct proportionality.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                24,
+                25
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                14
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:mathematical:3A",
+          "rationale": "Interpret the proposed proportionality relationship.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                24,
+                25
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                14
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:experimental:07",
+          "rationale": "Evaluate the student's conclusion against the observed data.",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                36
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                24,
+                25
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                14
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "paperId": "4PH1-2024-June-1-standard",
@@ -6013,7 +6426,7 @@
     "Source-task to validated-template links incomplete.",
     "No examiner report checked for this paper.",
     "Three official-scheme inconsistencies are recorded (Q3.c decimal, Q8 optical density, Q10.c.iii curve-distance wording); affected templates remain inactive.",
-    "Numbered Physics parent identities are reviewed, but experimental-skills, whole-paper current-syllabus applicability and official assessment-objective allocation remain incomplete.",
+    "Numbered Physics parents and Q10 experimental/mathematical skill links are reviewed; whole-paper skill/current-syllabus applicability and official task AO allocation remain incomplete.",
     "Q4.c stellar-stage and Q11 charge/cable model scope require calibration before generative reuse."
   ],
   "graphCrossCheck": {
@@ -6063,5 +6476,7 @@
       "handling": "Historical MP5 concession retained in Q8 extraction. Editorial teaching and future generated rubrics use water as optically denser than air; no publisher clarification obtained. Drawing-response calibration still blocks this family."
     }
   ],
-  "marksReconciled": true
+  "marksReconciled": true,
+  "skillAuditRef": "research/syllabus-skills/4PH1-issue4.json",
+  "skillAuditReviewDate": "2026-09-12"
 }

@@ -10,6 +10,7 @@ import {
 } from '@/lib/coverage';
 import sources from '@/research/sources.json';
 import { reviewedInventories } from '@/lib/syllabus';
+import physicsSkills from '@/research/syllabus-skills/4PH1-issue4.json';
 export default async function SubjectCoverage({
   params,
 }: {
@@ -46,7 +47,7 @@ export default async function SubjectCoverage({
             </h3>
             <p>
               {r.extraction
-                ? 'Partial detailed extraction · whole paper incomplete'
+                ? 'Detailed records available · processing checks incomplete'
                 : 'Indexed-only · covers checked by AI · full task/scheme matching pending'}
             </p>
             {r.extraction && (
@@ -102,6 +103,23 @@ export default async function SubjectCoverage({
             report. Eleven tasks indexed; Q5 detailed; whole-paper processing
             incomplete.
           </p>
+        )}
+        {s.code === physicsSkills.qualification && (
+          <section>
+            <h2>Practical and mathematical skills</h2>
+            <p>
+              {physicsSkills.skills.filter((skill) => skill.kind === 'experimental').length}
+              {' '}experimental skills and{' '}
+              {physicsSkills.skills.filter((skill) => skill.kind === 'mathematical').length}
+              {' '}mathematical skills checked against the specification.
+              These are separate from the numbered content statements below.
+            </p>
+            <p>
+              Question 10 has skill links for all {physicsSkills.taskMappings.length} parts.
+              Other questions still need this review. These links do not establish
+              official assessment-objective marks or complete teaching coverage.
+            </p>
+          </section>
         )}
         {s.code === '4MB1' && (
           <p>
