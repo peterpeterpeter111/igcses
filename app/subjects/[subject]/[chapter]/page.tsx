@@ -205,6 +205,20 @@ export default async function ChapterPage({
                 . The complete statement inventory and all teaching coverage
                 remain under review.
               </p>
+              {n?.supportingSources?.length ? (
+                <>
+                  <h3>Further reading</h3>
+                  <ul>
+                    {n.supportingSources.map((reference) => (
+                      <li key={reference.url}>
+                        <a href={reference.url} target="_blank" rel="noreferrer">
+                          {reference.title} ↗
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              ) : null}
               <Link href={'/coverage/' + s.id}>
                 See the subject coverage ledger →
               </Link>

@@ -1,0 +1,436 @@
+{
+  "subjectId": "physics",
+  "chapterId": "radioactivity",
+  "sourceId": "4PH1-spec",
+  "sourcePages": [
+    31,
+    32
+  ],
+  "status": "source-checked",
+  "complete": false,
+  "humanReviewed": false,
+  "prerequisites": [
+    "Interpret ratios, powers of two and graph axes.",
+    "Distinguish electric charge, particles and energy."
+  ],
+  "goals": [
+    "Describe nuclear structure and radiation, with balanced nuclear equations.",
+    "Use activity and half-life, including background-corrected graph readings.",
+    "Explain applications, risks and the principles of fission and fusion."
+  ],
+  "sections": [
+    {
+      "id": "atoms-and-isotopes",
+      "title": "Atoms, nuclei and isotopes",
+      "points": [
+        "7.2",
+        "7.3"
+      ],
+      "paragraphs": [
+        "An atom has a very small nucleus containing protons and neutrons, with electrons outside it. Protons carry positive charge, electrons equal-magnitude negative charge and neutrons no charge. Almost all the atom’s mass is in the nucleus. A neutral atom has equal numbers of protons and electrons.",
+        "In a nuclear symbol, the upper number A is the mass (nucleon) number: protons plus neutrons. The lower number Z is the atomic (proton) number. The number of neutrons is A − Z. Changing electron number makes an ion but does not change the nucleus or the element.",
+        "Isotopes of an element have the same proton number but different neutron numbers, hence different mass numbers. A mass number is a count of nucleons, not a mass measured in grams. Not every isotope is radioactive."
+      ],
+      "example": {
+        "question": "Compare neutral carbon-12 and carbon-14 atoms; carbon has proton number 6.",
+        "steps": [
+          "Both have 6 protons and 6 electrons.",
+          "Carbon-12 has 12 − 6 = 6 neutrons; carbon-14 has 14 − 6 = 8."
+        ],
+        "explanation": "Same element and proton number, different neutron numbers."
+      },
+      "practice": {
+        "question": "A nucleus has A = 23 and Z = 11. How many neutrons does it contain?",
+        "answer": "12 neutrons.",
+        "explanation": "Subtract proton number from nucleon number: 23 − 11 = 12."
+      },
+      "terms": [
+        "proton",
+        "neutron",
+        "electron",
+        "nucleus",
+        "isotope",
+        "atomic number",
+        "mass number"
+      ]
+    },
+    {
+      "id": "types-of-nuclear-radiation",
+      "title": "Alpha, beta-minus and gamma",
+      "points": [
+        "7.4",
+        "7.5"
+      ],
+      "paragraphs": [
+        "Unstable nuclei can decay spontaneously, emitting radiation. The decay of a particular nucleus is random: its exact decay time cannot be predicted. A large sample nevertheless has a predictable statistical decay pattern. Ionising radiation can remove electrons from atoms or molecules, making ions.",
+        "An alpha particle is a helium nucleus containing two protons and two neutrons, with charge +2e. It is strongly ionising but has low penetration: paper or a few centimetres of air can stop typical alpha radiation. Beta-minus radiation consists of fast electrons created during nuclear decay, not electrons falling out of the surrounding shells. It has charge −e, moderate ionisation and greater penetration; a few millimetres of aluminium can stop typical beta radiation.",
+        "Gamma radiation is high-frequency electromagnetic radiation from the nucleus. It has no charge or rest mass. It is less strongly ionising along its path and more penetrating than typical alpha or beta radiation. Thick lead or concrete reduces its intensity; a finite shield does not guarantee that every gamma photon is stopped. These comparisons describe typical school-level sources; penetration also depends on radiation energy and absorber thickness."
+      ],
+      "example": {
+        "question": "A source’s corrected count falls nearly to zero with paper. Which radiation does this support?",
+        "steps": [
+          "Alpha is consistent with very low penetration.",
+          "The inference assumes the radiation can reach a suitable detector before the paper is inserted."
+        ],
+        "explanation": "A detector’s sensitivity and geometry affect what is measured."
+      },
+      "practice": {
+        "question": "Why can alpha radiation be dangerous inside the body despite low penetration?",
+        "answer": "It can deposit energy through strong ionisation in nearby living tissue.",
+        "explanation": "Low penetration does not mean no biological damage."
+      },
+      "commonMistakes": [
+        "Beta-minus electrons are produced in the nucleus during decay; they are not ordinary orbital electrons being ejected.",
+        "Gamma rays are not charged particles."
+      ]
+    },
+    {
+      "id": "balancing-nuclear-equations",
+      "title": "Nuclear changes and balanced equations",
+      "points": [
+        "7.7",
+        "7.8"
+      ],
+      "paragraphs": [
+        "Conserve the total mass number and total charge number on each side of a nuclear equation. Alpha emission reduces the parent A by 4 and Z by 2. Beta-minus emission leaves A unchanged and increases Z by 1: a neutron becomes a proton while an electron and an antineutrino are emitted.",
+        "Gamma emission changes neither A nor Z: the nucleus loses excess energy. Emission of one neutron reduces A by 1 and leaves Z unchanged. In A/Z notation, alpha has 4/2, beta-minus 0/−1, gamma 0/0 and a neutron 1/0. The beta particle’s mass number is zero because it contains no nucleons; this does not mean the electron has zero mass.",
+        "For example, ¹⁴₆C → ¹⁴₇N + ⁰₋₁e conserves 14 = 14 + 0 and 6 = 7 − 1. The antineutrino is often omitted from school mass/charge bookkeeping; it also has A = 0 and charge number 0. Actual daughter identity is determined by Z, not by the remaining mass number alone."
+      ],
+      "example": {
+        "question": "An unspecified nucleus with A = 210 and Z = 84 emits an alpha particle. Find the daughter numbers.",
+        "steps": [
+          "A = 210 − 4 = 206.",
+          "Z = 84 − 2 = 82.",
+          "Check totals: 206 + 4 = 210 and 82 + 2 = 84."
+        ],
+        "explanation": "The daughter is a different element because its proton number changes."
+      },
+      "practice": {
+        "question": "A nucleus with A = 60, Z = 27 emits gamma only. What are its new numbers?",
+        "answer": "A = 60 and Z = 27.",
+        "explanation": "Gamma emission releases energy without removing nucleons or changing charge."
+      }
+    },
+    {
+      "id": "detecting-background-radiation",
+      "title": "Detection and background correction",
+      "points": [
+        "7.1",
+        "7.9",
+        "7.10"
+      ],
+      "paragraphs": [
+        "A Geiger–Müller detector produces electrical pulses when suitable ionising radiation is detected; a counter records these pulses. Photographic film darkens when exposed to ionising radiation and can be used in a monitored film badge. Neither a raw count nor film darkening automatically identifies the radiation type or the source’s total activity.",
+        "Background radiation includes emissions from naturally radioactive rocks, soil and building materials, radon gas and radioactive material in food and living organisms. Cosmic radiation arrives from space; its contribution tends to increase with altitude. A detector can therefore record counts even with the investigated source absent.",
+        "Measure background over a suitable interval without the investigated source, calculate a rate, then subtract it from the measured source-plus-background rate. Rates must have the same units: 1 minute = 60 seconds and 1 hour = 3600 seconds. A distance of 5 cm is 0.05 m. In a detector comparison, keep source–detector distance and orientation fixed."
+      ],
+      "example": {
+        "question": "Background gives 90 counts in 3 min. The source plus background gives 330 counts in 1 min. Find the corrected rate.",
+        "steps": [
+          "Background = 90/3 = 30 counts/min.",
+          "Corrected rate = 330 − 30 = 300 counts/min = 5 counts/s."
+        ],
+        "explanation": "Subtract rates rather than totals measured for unequal times."
+      },
+      "practice": {
+        "question": "A detector records 600 counts over 2 min. What is the measured count rate in counts/s?",
+        "answer": "5 counts/s.",
+        "explanation": "Convert 2 min to 120 s, then divide 600 by 120."
+      }
+    },
+    {
+      "id": "radiation-penetration-practical",
+      "title": "Investigating penetration",
+      "points": [
+        "7.6"
+      ],
+      "paragraphs": [
+        "A penetration investigation compares count rates with different absorbers between a source and a suitable detector. A simulation is an appropriate way to learn the method. A real-source version requires the school’s approved equipment and trained supervision; learners should not obtain or handle their own sources.",
+        "Use the same source–detector separation, alignment and counting interval for each absorber. Subtract background consistently. A large reduction with paper is consistent with alpha, a further reduction with thin aluminium with beta, and more penetrating radiation attenuated by thick lead with gamma. A mixture may show several reductions rather than one all-or-nothing result.",
+        "Radiation counts fluctuate randomly. Repeat measurements and compare mean corrected rates; longer counting intervals reduce the relative effect of fluctuations. A remaining rate consistent with background does not prove zero radiation. Keep absorber thickness and material separately recorded so a change can be interpreted."
+      ],
+      "example": {
+        "question": "A simulated corrected rate is 240 counts/min without an absorber, 235 with paper and 12 with a suitable aluminium sheet. What is the main inference?",
+        "steps": [
+          "Paper has little effect but aluminium greatly reduces the signal.",
+          "This is consistent with predominantly beta radiation for this setup, rather than alpha alone."
+        ],
+        "explanation": "The conclusion is conditional on source energies, detector response and the remaining uncertainty."
+      },
+      "practice": {
+        "question": "Why must source–detector distance stay constant while absorber thickness changes?",
+        "answer": "Distance also changes the detected rate, so varying it would confound the absorber comparison.",
+        "explanation": "Change one intended variable while controlling other influences."
+      },
+      "practical": {
+        "apparatus": [
+          "A radiation-penetration simulation, or a school-approved source and suitable GM detector operated under trained supervision.",
+          "Counter/timer, fixed supports and measured paper/aluminium/lead absorbers where approved."
+        ],
+        "method": [
+          "Measure background without the test source over a known time.",
+          "Establish a fixed geometry and measure the unshielded count for the chosen interval.",
+          "Insert each approved absorber without changing source or detector positions; record material, thickness and count.",
+          "Repeat each condition; calculate mean count rates and subtract background rate.",
+          "Compare corrected rates and identify patterns consistent with alpha, beta and gamma."
+        ],
+        "variables": [
+          "Independent: absorber material or thickness, investigated systematically.",
+          "Dependent: background-corrected count rate.",
+          "Controls: source, source–detector distance/orientation, detector settings and counting interval."
+        ],
+        "safety": [
+          "Prefer a simulation for unsupervised learning.",
+          "Real sources remain subject to school procedures: trained handling, minimal exposure time, suitable distance, shielding and secure storage."
+        ],
+        "quality": [
+          "Repeat measurements to assess random fluctuations.",
+          "Use rates if counting intervals differ; do not subtract unmatched count totals.",
+          "Record detector limitations and avoid interpreting background-level results as proof of zero emission."
+        ]
+      }
+    },
+    {
+      "id": "activity-and-decay",
+      "title": "Activity and becquerels",
+      "points": [
+        "7.1",
+        "7.11"
+      ],
+      "paragraphs": [
+        "Activity is the number of nuclear decays per second, measured in becquerels (Bq). An activity of 800 Bq means an average of 800 decays each second. This is a property of the source; it is not automatically the rate recorded by a detector.",
+        "As unstable nuclei decay, fewer remain available to decay, so a single-isotope source’s activity decreases over time. This is a statistical trend rather than a perfectly smooth sequence of individual counts. The total decay rate depends on both how many unstable nuclei remain and the isotope’s probability of decay.",
+        "A detector usually receives only a fraction of the emitted radiation. Geometry, absorption and detector efficiency affect its count rate. With an unchanged setup and corrected background, count rate can track relative activity, but an absolute conversion to Bq requires more information."
+      ],
+      "example": {
+        "question": "A hypothetical source has activity 1200 Bq, while a nearby detector records 120 counts/s. Is the activity necessarily wrong?",
+        "steps": [
+          "No. The detector may register only part of the source’s emitted radiation.",
+          "Its count rate is not an all-decays-per-second measurement without efficiency and geometry information."
+        ],
+        "explanation": "Bq and counts/s describe different quantities even though both involve per-second rates."
+      },
+      "practice": {
+        "question": "Convert 2.5 kBq to Bq.",
+        "answer": "2500 Bq.",
+        "explanation": "The prefix kilo means 1000; this is an average of 2500 decays per second."
+      }
+    },
+    {
+      "id": "half-life-calculations",
+      "title": "Half-life calculations",
+      "points": [
+        "7.1",
+        "7.12",
+        "7.13"
+      ],
+      "paragraphs": [
+        "Half-life is the time for the number of undecayed nuclei of a particular isotope in a large sample, or its activity, to fall to half its initial value. Different radioactive isotopes have different half-lives. For a given isotope the same time is needed for each successive halving, although the absolute decrease gets smaller.",
+        "After one, two and three half-lives the remaining fraction is 1/2, 1/4 and 1/8. For n complete half-lives, remaining activity = initial activity × (1/2)ⁿ. Work backwards by doubling for each earlier half-life. Use consistent time units before finding how many half-lives have elapsed.",
+        "Half-life does not mean that every nucleus waits that time before decaying. Individual decay remains random, and a large sample is not completely inactive after two half-lives. Use background-corrected count rates when count rate is the measured proxy for activity."
+      ],
+      "example": {
+        "question": "A source starts at 960 Bq and has a half-life of 2 h. Find its activity after 360 min.",
+        "steps": [
+          "360 min = 6 h, so 6/2 = 3 half-lives.",
+          "960 → 480 → 240 → 120 Bq."
+        ],
+        "explanation": "Each 2 h interval halves the activity, rather than subtracting a fixed 480 Bq."
+      },
+      "practice": {
+        "question": "A sample has 75 Bq after two half-lives. What was its initial activity?",
+        "answer": "300 Bq.",
+        "explanation": "Reverse the two halvings: 75 × 2 × 2 = 300."
+      }
+    },
+    {
+      "id": "half-life-from-graphs",
+      "title": "Reading half-life from a graph",
+      "points": [
+        "7.13"
+      ],
+      "paragraphs": [
+        "On an activity–time graph, choose an activity, find its time, then find the later time at half that activity. The difference between the times is the half-life. The first chosen time need not be zero. Repeat with another pair of values to check consistency within reading uncertainty.",
+        "For measured count rate, remove background before halving. Alternatively, on a raw total-rate graph, halve the height above the background baseline, not above zero. If background is 20 counts/s, a total of 180 corresponds to a net 160; half the net activity corresponds to a total of 100, not 90.",
+        "The example curve is an idealised teaching model with half-life 2 h, not experimental observations. Real readings fluctuate and graph estimates have uncertainty. Include units in the final time interval and show how the two readings were selected."
+      ],
+      "example": {
+        "question": "On a corrected activity curve, 400 Bq occurs at 2 h and 200 Bq at 4 h. Estimate the half-life.",
+        "steps": [
+          "200 is half of 400.",
+          "Half-life = 4 − 2 = 2 h."
+        ],
+        "explanation": "Use the interval between paired readings, not the later time alone."
+      },
+      "practice": {
+        "question": "With background 10 counts/s, what total rate corresponds to half the activity represented by a total of 90 counts/s?",
+        "answer": "50 counts/s.",
+        "explanation": "Net initial rate is 80; half is 40; add background 10 to give 50."
+      },
+      "diagram": {
+        "src": "/diagrams/physics-half-life.svg",
+        "alt": "Idealised activity curve with values 800 Bq at zero hours, 400 at two hours, 200 at four hours and 100 at six hours. Each halving takes two hours.",
+        "caption": "Original model curve, not measured data. Equal 2 h intervals halve the remaining activity."
+      }
+    },
+    {
+      "id": "uses-of-radioactivity",
+      "title": "Choosing radiation for a purpose",
+      "points": [
+        "7.14"
+      ],
+      "paragraphs": [
+        "In industrial thickness monitoring, a source and detector are on opposite sides of a sheet. For a suitable beta source and sheet, a thicker sheet absorbs more radiation and the detector count falls. A thinner sheet gives a higher count. The chosen radiation must be partly absorbed: a radiation that always stops completely, or barely interacts, gives poor sensitivity.",
+        "A medical tracer must be detectable outside the body, so an appropriate gamma-emitting radionuclide can help track where it goes. Its half-life needs to be long enough for the investigation and short enough to limit continued exposure. This is a physical design trade-off, not advice for choosing a clinical tracer.",
+        "Radiotherapy uses ionising radiation to damage target tumour cells, while treatment planning limits dose to surrounding healthy tissue. Gamma irradiation can sterilise appropriate equipment by damaging microorganisms. Each use depends on penetration, ionisation, exposure and source properties; no radiation type is universally best."
+      ],
+      "example": {
+        "question": "A paper-production thickness gauge normally records 500 counts/s. With source and geometry fixed, the corrected count rises. What change is suggested?",
+        "steps": [
+          "The paper may have become thinner.",
+          "Less radiation is absorbed, so more reaches the detector."
+        ],
+        "explanation": "The inference assumes the source, detector and other conditions have not changed."
+      },
+      "practice": {
+        "question": "Why is an external gamma detector unsuitable for tracking an alpha-only tracer deep inside the body?",
+        "answer": "Alpha radiation has too little penetration to escape from that depth and reach the external detector.",
+        "explanation": "Choose radiation properties that fit the detection geometry."
+      }
+    },
+    {
+      "id": "contamination-and-irradiation",
+      "title": "Contamination and irradiation",
+      "points": [
+        "7.15"
+      ],
+      "paragraphs": [
+        "Irradiation means exposure to radiation from a source. Contamination means unwanted radioactive material is present on or inside something. Removing an external source ends that source’s irradiation, but radioactive contamination can continue to emit until the material is removed or decays.",
+        "A sealed source outside an object can irradiate it without transferring radioactive material. Conversely, radioactive dust on clothing is contamination and can also irradiate nearby tissue. In the usual school examples, exposure to alpha, beta or gamma alone does not make an object radioactive; nuclear activation in other contexts is a separate process.",
+        "Contamination can spread through transferred material and may enter the body. Keeping sources contained and preventing leakage are therefore different precautions from using shielding against external irradiation."
+      ],
+      "example": {
+        "question": "A worker stands near a sealed source, then moves away without any leak. Which term describes the exposure?",
+        "steps": [
+          "Irradiation, because radiation reached the worker.",
+          "Contamination is not established: there is no evidence that radioactive material was transferred."
+        ],
+        "explanation": "Identify whether radioactive material moved, rather than just whether radiation was present."
+      },
+      "practice": {
+        "question": "Radioactive liquid spills onto a glove. Has contamination occurred?",
+        "answer": "Yes: radioactive material is now on the glove.",
+        "explanation": "It can continue to irradiate nearby material while it remains there."
+      }
+    },
+    {
+      "id": "radiation-risks-and-waste",
+      "title": "Cell damage and radioactive waste",
+      "points": [
+        "7.16"
+      ],
+      "paragraphs": [
+        "Ionisation can damage molecules in living cells, including DNA. This may kill cells, damage tissue or cause mutations; some mutations can contribute to cancer. The effect depends on radiation type, dose, exposure and which tissue is irradiated. A small exposure does not imply certain illness, and penetrating power alone is not a measure of risk.",
+        "Radioactive waste may continue emitting for long periods, especially when it contains long-lived isotopes. A leak can spread contamination into soil or water. Waste is therefore contained, appropriately shielded, labelled, monitored and kept secure; a suitable disposal system must limit release and exposure over the relevant timescale.",
+        "Reducing time near a source, increasing distance where practicable and using appropriate shielding can reduce external exposure. Preventing contamination also requires containment and controlled handling. Shielding attenuates radiation; it does not make the nuclei decay faster or remove the waste’s radioactivity."
+      ],
+      "example": {
+        "question": "Why is shielding alone not a complete plan for storing radioactive waste?",
+        "steps": [
+          "It reduces radiation reaching outside but does not necessarily prevent radioactive material leaking.",
+          "Long-term containment, security and monitoring are also needed."
+        ],
+        "explanation": "Exposure and contamination are distinct routes of harm."
+      },
+      "practice": {
+        "question": "Does putting waste in a lead container shorten its half-life?",
+        "answer": "No.",
+        "explanation": "The shield reduces escaping radiation, not the isotope’s decay probability."
+      }
+    },
+    {
+      "id": "fission-and-chain-reactions",
+      "title": "Fission and chain reactions",
+      "points": [
+        "7.17",
+        "7.18",
+        "7.19",
+        "7.20",
+        "7.23"
+      ],
+      "paragraphs": [
+        "Nuclear reactions can transfer energy, including radioactive decay, fission and fusion. In induced fission, a uranium-235 nucleus absorbs a neutron and becomes unstable, then splits into two smaller, usually radioactive daughter nuclei and emits a small number of neutrons. Much of the released energy is kinetic energy of the fission products, transferred to surrounding material through interactions.",
+        "The daughter nuclei and number of emitted neutrons can vary. One example is ²³⁵₉₂U + ¹₀n → ¹⁴¹₅₆Ba + ⁹²₃₆Kr + 3¹₀n. It conserves nucleon number 236 = 141 + 92 + 3 and charge number 92 = 56 + 36. The daughter nuclei are not just the protons and neutrons of the parent separated individually.",
+        "A chain reaction occurs when some emitted neutrons cause further fissions in other suitable nuclei, which release further neutrons. Some neutrons may escape or be absorbed without causing fission. A steady controlled chain reaction requires, on average, one neutron from each fission to cause a further fission; multiplying every emitted neutron into a new fission would imply growth."
+      ],
+      "example": {
+        "question": "A fission releases three neutrons but only one causes another fission. Is sustained steady operation possible in the idealised model?",
+        "steps": [
+          "Yes, if that average of one further fission per fission continues.",
+          "The other neutrons may escape or be absorbed without fission."
+        ],
+        "explanation": "Count neutrons causing subsequent fission, not simply all neutrons emitted."
+      },
+      "practice": {
+        "question": "How is fission different from fusion?",
+        "answer": "Fission splits a heavy nucleus; fusion combines light nuclei into larger nuclei.",
+        "explanation": "Both can release energy, but the nuclear changes are different."
+      }
+    },
+    {
+      "id": "controlling-a-reactor",
+      "title": "Moderator, control rods and shielding",
+      "points": [
+        "7.21",
+        "7.22"
+      ],
+      "paragraphs": [
+        "In a thermal-neutron fission reactor, the moderator slows fast neutrons through collisions so they are more likely to cause further fission in uranium-235. Slowing neutrons and absorbing them are different functions.",
+        "Control rods absorb neutrons. Inserting them further reduces the neutrons available to continue the chain reaction; withdrawing them can increase the reaction rate. They do not control the reaction mainly by cooling the fuel or by reflecting gamma rays.",
+        "Shielding around the reactor attenuates ionising radiation and protects people outside. Suitable thick materials, including concrete, reduce escaping radiation. Shielding is not the same as control rods: one primarily limits external exposure, while the other regulates the neutron chain reaction."
+      ],
+      "example": {
+        "question": "Which component slows neutrons, and which removes some from the chain reaction?",
+        "steps": [
+          "The moderator slows them.",
+          "Control rods absorb them."
+        ],
+        "explanation": "Both affect neutrons but in different ways."
+      },
+      "practice": {
+        "question": "Why is shielding needed even with a controlled chain reaction?",
+        "answer": "A controlled reactor still produces ionising radiation that could harm nearby people.",
+        "explanation": "Keeping power steady does not eliminate radiation."
+      }
+    },
+    {
+      "id": "fusion-in-stars",
+      "title": "Fusion and stellar energy",
+      "points": [
+        "7.17",
+        "7.23",
+        "7.24",
+        "7.25",
+        "7.26"
+      ],
+      "paragraphs": [
+        "In fusion, light nuclei combine to form larger nuclei. In an energy-releasing fusion reaction, the total rest mass of the products is less than that of the reacting particles; the difference corresponds to released energy. Mass–energy is conserved. Fusion is not chemical burning and does not require oxygen as a fuel reactant.",
+        "Fusion is the energy source of stars during their fusion-powered stages. Positively charged nuclei repel electrically, so low-temperature collisions generally do not bring them close enough for the strong nuclear interaction to bind them. Very high temperature gives nuclei high kinetic energies; high pressure in a stellar core keeps matter dense and supports frequent close encounters.",
+        "High pressure is not itself a replacement for high temperature, and not every collision fuses. A sustained stellar reaction needs suitable physical conditions and fuel. The Sun’s energy comes mainly from reactions that ultimately convert hydrogen nuclei into helium, with energy released."
+      ],
+      "example": {
+        "question": "Explain why cool hydrogen gas does not readily undergo fusion.",
+        "steps": [
+          "Its positively charged nuclei repel.",
+          "At low temperature, typical nuclei lack enough kinetic energy to approach closely enough for fusion."
+        ],
+        "explanation": "The obstacle is electrostatic repulsion, not the absence of oxygen."
+      },
+      "practice": {
+        "question": "Why can fusion release energy when the products have less total rest mass?",
+        "answer": "The lost rest mass corresponds to released energy.",
+        "explanation": "Do not describe the missing mass as disappearing without an energy transfer."
+      }
+    }
+  ]
+}

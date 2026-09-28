@@ -1,0 +1,563 @@
+{
+  "subjectId": "physics",
+  "chapterId": "matter",
+  "sourceId": "4PH1-spec",
+  "sourcePages": [
+    27,
+    28
+  ],
+  "status": "source-checked",
+  "complete": false,
+  "humanReviewed": false,
+  "prerequisites": [
+    "Convert mass, area and volume units.",
+    "Use force, energy and particle-motion ideas."
+  ],
+  "goals": [
+    "Calculate and investigate density, pressure and liquid pressure differences.",
+    "Explain state changes and investigate thermal energy and specific heat capacity (Paper 2).",
+    "Explain gas pressure using particles and use gas laws with absolute pressure and kelvin temperature."
+  ],
+  "sections": [
+    {
+      "id": "matter-units",
+      "title": "Units, areas and volumes",
+      "points": [
+        "5.1",
+        "5.2P"
+      ],
+      "terms": [
+        "pascal",
+        "kelvin",
+        "density units",
+        "square centimetre",
+        "cubic centimetre",
+        "specific heat capacity units"
+      ],
+      "paragraphs": [
+        "Use °C or K for temperature as appropriate, J for energy, kg for mass, kg/m³ for density, m for length, m² for area, m³ for volume, m/s for speed, m/s² for acceleration, N for force and Pa for pressure. One pascal means one newton per square metre. Gravitational field strength in N/kg is numerically equal to the corresponding gravitational acceleration in m/s².",
+        "Area and volume conversions must be squared or cubed. Since 1 cm = 0.01 m, 1 cm² = 0.0001 m² and 1 cm³ = 0.000001 m³. A millilitre equals one cubic centimetre. One g/cm³ equals 1000 kg/m³; convert both mass and volume, not just one.",
+        "Paper 2 uses J/(kg °C) for specific heat capacity: energy per kilogram per degree temperature change. A change of 1 °C equals a change of 1 K, but the temperature readings themselves have different zero points."
+      ],
+      "example": {
+        "question": "Convert a contact area of 25 cm² and a volume of 25 cm³ into SI units.",
+        "steps": [
+          "Area = 25 × 0.0001 = 0.0025 m².",
+          "Volume = 25 × 0.000001 = 0.000025 m³."
+        ],
+        "explanation": "The same number 25 has different conversion factors because area and volume have different dimensions."
+      },
+      "practice": {
+        "question": "A material has density 2.7 g/cm³. Express this in kg/m³.",
+        "answer": "2700 kg/m³.",
+        "explanation": "2.7 g/cm³ = 0.0027 kg / 0.000001 m³ = 2700 kg/m³."
+      },
+      "commonMistakes": [
+        "Do not use the linear centimetre conversion unchanged for area or volume.",
+        "Kelvin uses the symbol K, without a degree sign."
+      ]
+    },
+    {
+      "id": "density",
+      "title": "Density, mass and volume",
+      "points": [
+        "5.1",
+        "5.3"
+      ],
+      "terms": [
+        "density",
+        "mass",
+        "volume",
+        "rho",
+        "density rearrangement"
+      ],
+      "paragraphs": [
+        "Density is mass per unit volume: ρ = m/V. Rearrange to m = ρV or V = m/ρ. The density describes a material under stated conditions; objects made from it can have different masses and volumes but the same density.",
+        "Choose consistent units. Kilograms divided by cubic metres gives kg/m³; grams divided by cubic centimetres gives g/cm³. For a uniform rectangular block, volume = length × width × height. For a hollow object, distinguish the material’s volume from the overall external volume before interpreting an average density."
+      ],
+      "example": {
+        "question": "A solid block has mass 150 g and volume 50.0 cm³. Find its density in g/cm³ and kg/m³.",
+        "steps": [
+          "Density = 150/50.0 = 3.00 g/cm³.",
+          "In SI units: mass = 0.150 kg and volume = 0.0000500 m³.",
+          "Density = 0.150/0.0000500 = 3000 kg/m³."
+        ],
+        "explanation": "Both calculations describe the same material. A large density value in SI units is not evidence that a conversion is wrong."
+      },
+      "practice": {
+        "question": "A liquid has density 800 kg/m³. What is the mass of 0.0020 m³?",
+        "answer": "1.6 kg.",
+        "explanation": "m = ρV = 800 × 0.0020."
+      }
+    },
+    {
+      "id": "density-practical",
+      "title": "Practical: measuring density",
+      "points": [
+        "5.4"
+      ],
+      "terms": [
+        "balance",
+        "displacement",
+        "measuring cylinder",
+        "regular solid",
+        "irregular solid",
+        "liquid density"
+      ],
+      "paragraphs": [
+        "Measure mass with a zeroed balance. For a regular solid, measure its dimensions and calculate volume. For an irregular solid that sinks and does not dissolve or absorb water, submerge it fully and use the increase in water volume. Remove trapped air bubbles; the rise must be due to the specimen rather than a large support or your fingers.",
+        "For a liquid, measure the mass of a dry empty container, add a measured volume and weigh again. Subtract the empty mass. For transparent water in a measuring cylinder, read the bottom of the meniscus at eye level on a level surface. Select apparatus with a scale suitable for the volume being measured."
+      ],
+      "example": {
+        "question": "An irregular solid has mass 54.0 g. Water rises from 20.0 cm³ to 40.0 cm³ when it is fully submerged. Find density.",
+        "steps": [
+          "Specimen volume = 40.0 − 20.0 = 20.0 cm³.",
+          "Density = 54.0/20.0 = 2.70 g/cm³."
+        ],
+        "explanation": "The solid’s volume is the increase in reading, not the final water reading."
+      },
+      "practice": {
+        "question": "Why would trapped air bubbles give an underestimated density?",
+        "answer": "They increase the apparent displaced volume while the measured mass stays the same, so m/V is too small.",
+        "explanation": "State the direction of the volume error before inferring the density error."
+      },
+      "practical": {
+        "apparatus": [
+          "Zeroable balance",
+          "Ruler or calipers for regular solids; measuring cylinder and water for suitable irregular solids",
+          "Container and measured liquid sample"
+        ],
+        "method": [
+          "Record mass and the relevant dimensions or initial water volume.",
+          "Measure regular-solid dimensions at several positions where appropriate; calculate the volume.",
+          "For a suitable irregular solid, lower it gently until fully submerged; record the new volume and subtract.",
+          "For liquid, subtract empty-container mass from filled-container mass and record liquid volume.",
+          "Calculate m/V with compatible units, repeat readings and compare scatter."
+        ],
+        "variables": [
+          "Measure mass and volume of each specimen.",
+          "Keep material conditions and measurement method consistent when comparing repeat specimens."
+        ],
+        "safety": [
+          "Lower solids gently to avoid breaking glass or splashing.",
+          "Keep the balance dry and clean up spilled liquid."
+        ],
+        "quality": [
+          "Zero the balance and check its resolution.",
+          "Avoid parallax, trapped air and partially submerged specimens.",
+          "Use a larger measurable sample where appropriate to reduce fractional volume uncertainty; do not use water displacement for absorbent or soluble materials."
+        ]
+      }
+    },
+    {
+      "id": "pressure-and-area",
+      "title": "Pressure and contact area",
+      "points": [
+        "5.1",
+        "5.5"
+      ],
+      "terms": [
+        "pressure",
+        "pascal",
+        "force per area",
+        "contact area"
+      ],
+      "paragraphs": [
+        "Pressure is normal force per unit area: p = F/A. Use the force perpendicular to the surface and the actual contact area. The same force spread over a larger area produces lower pressure; a smaller area produces higher pressure.",
+        "In SI units use N and m², giving Pa. Rearrange F = pA or A = F/p. Pressure is not itself a force: a large area under moderate pressure can experience a large total force."
+      ],
+      "example": {
+        "question": "A person exerts a downward force of 600 N through two soles with total contact area 0.030 m². Find average pressure.",
+        "steps": [
+          "p = F/A = 600/0.030 = 20 000 Pa.",
+          "20 000 Pa = 20 kPa."
+        ],
+        "explanation": "The area already includes both soles, so do not double it again."
+      },
+      "practice": {
+        "question": "The same force acts on one sole of area 0.015 m². What is the new average pressure?",
+        "answer": "40 000 Pa.",
+        "explanation": "Halving contact area doubles pressure for the same force."
+      },
+      "commonMistakes": [
+        "Convert cm² using a factor of 10⁻⁴, not 10⁻².",
+        "Check whether an area is per contact or the combined area."
+      ]
+    },
+    {
+      "id": "pressure-in-fluids",
+      "title": "Pressure in a stationary fluid",
+      "points": [
+        "5.6",
+        "5.7"
+      ],
+      "terms": [
+        "fluid pressure",
+        "depth",
+        "hydrostatic pressure",
+        "pressure difference",
+        "absolute pressure"
+      ],
+      "paragraphs": [
+        "At a point in a gas or liquid at rest, pressure acts equally in all directions. The force on a boundary acts perpendicular to that boundary. Equal pressure does not require equal forces on different-sized areas.",
+        "For a liquid of uniform density, the pressure difference between levels is Δp = hρg, where h is the vertical depth difference. Pressure increases with depth. Container shape does not change pressure at a given depth in a connected stationary liquid of the same density.",
+        "The formula gives a difference. To find total pressure at depth below an open surface, add the pressure acting at the surface. A pressure measured relative to the atmosphere is a gauge pressure; do not silently treat that as absolute pressure."
+      ],
+      "example": {
+        "question": "Find the pressure increase 2.0 m below a water surface. Use density 1000 kg/m³ and g = 10 N/kg. Surface pressure is 100 kPa; find total pressure too.",
+        "steps": [
+          "Pressure increase = 2.0 × 1000 × 10 = 20 000 Pa = 20 kPa.",
+          "Total pressure = 100 + 20 = 120 kPa."
+        ],
+        "explanation": "The added 20 kPa is due to the water above the point, not the whole pressure."
+      },
+      "practice": {
+        "question": "At equal depths below equally pressurised surfaces, compare water of density 1000 kg/m³ with oil of density 800 kg/m³.",
+        "answer": "The water produces the larger pressure increase: 1.25 times the oil’s increase at the same h and g.",
+        "explanation": "Depth, density and g determine the hydrostatic difference; shape and total liquid volume do not."
+      }
+    },
+    {
+      "id": "states-and-particles",
+      "title": "Paper 2: particles and changes of state",
+      "points": [
+        "5.9P",
+        "5.10P"
+      ],
+      "terms": [
+        "solid",
+        "liquid",
+        "gas",
+        "melting",
+        "evaporation",
+        "boiling",
+        "particle model"
+      ],
+      "paragraphs": [
+        "In a solid, particles are close together and vibrate about fixed positions. In a liquid they remain close but move past each other, so the liquid changes shape. In a gas they are far apart compared with their size and move rapidly and randomly between collisions. A material does not gain new kinds of particles merely because it changes state.",
+        "Melting changes a solid to a liquid: particles can move past one another rather than staying around fixed positions. Evaporation occurs at a liquid surface over a range of temperatures as particles escape into the gas. Faster particles are more likely to escape, so evaporation can cool the liquid left behind.",
+        "Boiling occurs throughout a liquid, with vapour bubbles forming when conditions allow them to persist. For a pure substance at fixed pressure it occurs at its boiling temperature. Evaporation is not restricted to that temperature, and boiling-point statements must specify pressure."
+      ],
+      "example": {
+        "question": "A puddle dries on a day when its temperature is well below 100 °C. Explain why this does not require boiling.",
+        "steps": [
+          "Some water particles escape from the surface into the air by evaporation.",
+          "Evaporation can occur below the boiling temperature; bubbles throughout the liquid are not required."
+        ],
+        "explanation": "The liquid can lose particles and mass without the whole liquid reaching its boiling point."
+      },
+      "practice": {
+        "question": "Do individual particles expand when a solid melts?",
+        "answer": "No. Changes in arrangement, separation and motion explain the state change; particles themselves are not described as growing larger.",
+        "explanation": "Distinguish particle size from the space and arrangement between particles."
+      }
+    },
+    {
+      "id": "heating-and-changing-state",
+      "title": "Paper 2: heating and temperature–time graphs",
+      "points": [
+        "5.8P",
+        "5.11P"
+      ],
+      "terms": [
+        "heating curve",
+        "melting plateau",
+        "internal energy",
+        "constant temperature",
+        "change of state"
+      ],
+      "paragraphs": [
+        "Heating transfers energy into a system. It can raise temperature by increasing average particle kinetic energy, or change state by changing particle interactions and arrangement. Stored energy can therefore increase while temperature remains constant during a state change.",
+        "For a pure substance changing state at constant pressure, a temperature–time graph can have a horizontal region while energy continues to be supplied. The flat region does not show that the heater is off. Before and after the change, temperature can rise again. Impurities, heat losses and measurement lag can blur the pattern in real data.",
+        "A schematic melting curve shows warming solid, a melting region with solid and liquid together, then warming liquid. The source requires a practical graph: a supplied diagram is not evidence that you have collected experimental data."
+      ],
+      "example": {
+        "question": "During gentle heating, a pure substance remains at its melting temperature for several readings. Explain where the supplied energy goes.",
+        "steps": [
+          "Energy continues to enter the substance.",
+          "It changes the particle arrangement/interactions as solid becomes liquid, rather than increasing average particle kinetic energy.",
+          "Temperature remains at the melting value while the phase change proceeds under the stated conditions."
+        ],
+        "explanation": "Constant temperature does not imply constant stored energy during a phase change."
+      },
+      "practice": {
+        "question": "What must be on the axes of the requested temperature–time graph?",
+        "answer": "Time on the horizontal axis and temperature on the vertical axis, each labelled with units.",
+        "explanation": "A graph of energy against time answers a different question."
+      },
+      "practical": {
+        "apparatus": [
+          "Small ice sample, temperature probe, timer and suitable vessel",
+          "Teacher-supervised controlled gentle heating and a secure support"
+        ],
+        "method": [
+          "Place the probe in good thermal contact with the sample, avoiding direct contact with the heater or vessel base.",
+          "Record temperature at regular time intervals as the ice warms and melts; observe which phases are present.",
+          "Continue briefly after melting to identify the liquid-warming region.",
+          "Plot temperature against time and annotate the region where melting occurs."
+        ],
+        "variables": [
+          "Measure temperature as heating time changes.",
+          "Keep heater setting, sample mass, apparatus and probe position consistent during one run."
+        ],
+        "safety": [
+          "Use supervised gentle heating and handle hot containers with suitable protection.",
+          "Keep electrical parts dry; do not heat a sealed container or heat to dryness."
+        ],
+        "quality": [
+          "Use small enough time intervals to resolve changes and keep observation notes about the phases.",
+          "Account for probe lag and uneven sample temperature; do not force measured data to be perfectly horizontal."
+        ]
+      },
+      "diagram": {
+        "src": "/diagrams/physics-melting-curve.svg",
+        "alt": "Schematic temperature–time melting curve: warming solid, horizontal melting region, then warming liquid. Energy is still supplied through the horizontal region.",
+        "caption": "Schematic only: no experimental data or quantitative phase durations are claimed. At fixed pressure a pure substance can melt while temperature stays constant."
+      }
+    },
+    {
+      "id": "specific-heat-capacity",
+      "title": "Paper 2: specific heat capacity",
+      "points": [
+        "5.2P",
+        "5.12P",
+        "5.13P"
+      ],
+      "terms": [
+        "specific heat capacity",
+        "thermal energy",
+        "temperature change",
+        "delta Q"
+      ],
+      "paragraphs": [
+        "Specific heat capacity c is the energy needed per kilogram for a 1 °C temperature increase without a change of state. Its unit is J/(kg °C). A large c means more energy is needed for the same mass and temperature rise.",
+        "Use ΔQ = mcΔT, where ΔT is final temperature minus initial temperature. Use kg for mass. This relation describes temperature change within a phase; do not apply it unchanged across a melting or boiling plateau.",
+        "Rearrange for c, mass or temperature change as required. A temperature difference in K is numerically equal to the difference in °C, so no 273 offset is added to ΔT."
+      ],
+      "example": {
+        "question": "A 0.50 kg water sample warms from 20 °C to 35 °C. Use c = 4200 J/(kg °C). Find the increase in thermal energy.",
+        "steps": [
+          "Temperature increase = 35 − 20 = 15 °C.",
+          "ΔQ = 0.50 × 4200 × 15 = 31 500 J."
+        ],
+        "explanation": "Use the 15-degree change, not the final temperature of 35 degrees."
+      },
+      "practice": {
+        "question": "A 0.20 kg solid receives 1800 J and warms by 10 °C without changing state. Find c.",
+        "answer": "900 J/(kg °C).",
+        "explanation": "c = ΔQ/(mΔT) = 1800/(0.20 × 10)."
+      }
+    },
+    {
+      "id": "heat-capacity-water-practical",
+      "title": "Paper 2 practical: heat capacity of water",
+      "points": [
+        "5.14P"
+      ],
+      "terms": [
+        "water calorimetry",
+        "joulemeter",
+        "immersion heater",
+        "heat loss"
+      ],
+      "paragraphs": [
+        "Supply a measured amount of electrical energy to a known water mass and measure its temperature rise. A joulemeter measures input energy; alternatively use voltage × current × time for a steady heater. Estimate c = E/(mΔT).",
+        "Electrical input is not automatically all absorbed by the water. The vessel, heater and surroundings also receive energy. Insulation and a lid reduce losses; stirring gently improves temperature uniformity. Using total input as water energy usually overestimates c if unaccounted energy leaves the water system."
+      ],
+      "example": {
+        "question": "An insulated vessel holds 0.30 kg water. A joulemeter records 12 600 J and the water warms by 9.0 °C. Calculate the uncorrected estimate of c.",
+        "steps": [
+          "c = 12 600/(0.30 × 9.0).",
+          "c ≈ 4670 J/(kg °C)."
+        ],
+        "explanation": "This is an estimate from the stated measurements. Its difference from a reference value may reflect energy heating the vessel or being lost, rather than a new material property."
+      },
+      "practical": {
+        "apparatus": [
+          "Balance, water, insulated vessel with suitable lid",
+          "Low-voltage immersion heater, supply and joulemeter",
+          "Temperature probe, timer and stirrer"
+        ],
+        "method": [
+          "Determine water mass by weighing the empty vessel and the vessel with water.",
+          "Place the heater safely below the water surface and the probe away from direct heater contact; record initial temperature.",
+          "Supply measured energy, stirring gently and recording energy input and temperature readings.",
+          "Find the temperature change and calculate E/(mΔT); repeat and compare results, noting heat losses."
+        ],
+        "variables": [
+          "Measure temperature change for recorded energy input and known water mass.",
+          "Keep heater position, insulation, stirring and measurement procedure consistent."
+        ],
+        "safety": [
+          "Use a teacher-approved low-voltage heater; disconnect before moving it.",
+          "Keep the heating element immersed as instructed and never run it dry; keep electrical connections dry."
+        ],
+        "quality": [
+          "Use a lid/insulation and avoid a large unnecessary temperature rise that increases losses.",
+          "Consider heat capacity of the vessel and heater; repeatability alone does not remove this systematic contribution."
+        ]
+      }
+    },
+    {
+      "id": "heat-capacity-solid-practical",
+      "title": "Paper 2 practical: heat capacity of a solid",
+      "points": [
+        "5.14P"
+      ],
+      "terms": [
+        "metal block",
+        "specific heat capacity practical",
+        "thermal contact"
+      ],
+      "paragraphs": [
+        "Use a solid block of measured mass with a heater and temperature probe fitted in suitable holes. Insulate the block and supply measured electrical energy. Good thermal contact and sufficient time for temperature to become reasonably uniform matter.",
+        "Estimate c = E/(mΔT) for that block. Repeat with suitable solids using the same measurement principles, while recognising their different heat capacities and heat-loss rates. Do not infer that identical input energy gives identical temperature rises for different materials."
+      ],
+      "example": {
+        "question": "A 1.0 kg block receives 4500 J and warms by 10 °C. Ignoring losses, estimate c.",
+        "steps": [
+          "c = 4500/(1.0 × 10).",
+          "c = 450 J/(kg °C)."
+        ],
+        "explanation": "The assumption is that the recorded energy increases the block’s thermal store; losses or heater energy would need correction for a more accurate result."
+      },
+      "practical": {
+        "apparatus": [
+          "Suitable drilled solid block and balance",
+          "Low-voltage heater, joulemeter and supply",
+          "Temperature probe and insulation"
+        ],
+        "method": [
+          "Measure block mass and establish good contact for the heater and probe using the approved apparatus method.",
+          "Insulate and record initial temperature.",
+          "Supply measured energy and monitor temperature; allow for the delay between heater warming and the probe response.",
+          "Calculate E/(mΔT), repeat and compare a second suitable solid."
+        ],
+        "variables": [
+          "Record input energy, block mass and temperature rise.",
+          "Keep apparatus contact, insulation and timing procedures consistent when comparing runs."
+        ],
+        "safety": [
+          "Use supervised low-voltage equipment and do not touch a hot block or heater.",
+          "Secure the heavy block and switch off before adjusting the apparatus."
+        ],
+        "quality": [
+          "Poor contact creates temperature gradients and delayed readings.",
+          "Include heat loss and energy stored in the heater/probe among systematic limitations; do not report excessive precision."
+        ]
+      }
+    },
+    {
+      "id": "gas-pressure-and-temperature",
+      "title": "Gas particles, pressure and absolute temperature",
+      "points": [
+        "5.15",
+        "5.16",
+        "5.17",
+        "5.18",
+        "5.19"
+      ],
+      "terms": [
+        "gas collisions",
+        "random motion",
+        "absolute zero",
+        "Kelvin",
+        "molecular kinetic energy"
+      ],
+      "paragraphs": [
+        "Gas molecules move randomly and collide with the container walls. Their momentum changes during collisions, so they exert forces on the walls. The total normal force per unit area is gas pressure. Pressure is an average effect of many collisions, not evidence that all molecules move in one direction.",
+        "Temperature in kelvin is an absolute scale. For these calculations use T(K) = temperature(°C) + 273, and reverse by subtracting 273. Absolute zero is 0 K, approximately −273 °C. The ideal-gas model extrapolates to vanishing random translational kinetic energy there; real gases may condense before such an extrapolation is reached.",
+        "Higher temperature means higher average kinetic energy and higher average molecular speed for the same gas. Molecules still have a distribution of speeds; not every molecule has the same speed. Average kinetic energy is proportional to kelvin temperature, not Celsius temperature. Doubling kelvin temperature doubles average kinetic energy, but does not double average speed."
+      ],
+      "example": {
+        "question": "A fixed gas sample warms from 27 °C to 327 °C. Compare its absolute temperature and average molecular kinetic energy.",
+        "steps": [
+          "Initial T = 27 + 273 = 300 K.",
+          "Final T = 327 + 273 = 600 K.",
+          "Kelvin temperature doubles, so average molecular kinetic energy doubles."
+        ],
+        "explanation": "The ratio 327/27 is not the relevant ratio. The model connects energy to absolute temperature."
+      },
+      "practice": {
+        "question": "A gas is at 250 K. What is its Celsius temperature?",
+        "answer": "−23 °C.",
+        "explanation": "250 − 273 = −23; a temperature below 0 °C can still be far above absolute zero."
+      },
+      "commonMistakes": [
+        "Do not write °K.",
+        "Do not claim all molecules have identical speeds.",
+        "The classroom −273 °C value is approximate; use the precision supplied in a question."
+      ]
+    },
+    {
+      "id": "gas-pressure-volume",
+      "title": "Pressure and volume at constant temperature",
+      "points": [
+        "5.20",
+        "5.22"
+      ],
+      "terms": [
+        "Boyle law",
+        "constant temperature",
+        "fixed gas mass",
+        "absolute pressure",
+        "compression"
+      ],
+      "paragraphs": [
+        "For a fixed amount of gas at constant temperature, reducing volume increases pressure. The average molecular kinetic energy stays the same, but collisions with the walls occur more frequently per unit area in the smaller volume.",
+        "Use p₁V₁ = p₂V₂. The pressures must be absolute, not gauge readings unless atmospheric pressure has first been added. Both volumes can be in the same non-SI unit because the conversion factor cancels; do not mix units between sides.",
+        "The amount of gas and temperature must remain constant. A rapid compression can raise temperature, so Boyle’s law does not automatically describe the instant just after compression."
+      ],
+      "example": {
+        "question": "A sealed sample has volume 80 cm³ at absolute pressure 100 kPa. It is compressed at constant temperature to 50 cm³. Find the new pressure.",
+        "steps": [
+          "p₂ = p₁V₁/V₂ = 100 × 80/50.",
+          "p₂ = 160 kPa absolute."
+        ],
+        "explanation": "The reduced volume leads to increased pressure. No unit conversion is needed because both volumes use cm³."
+      },
+      "practice": {
+        "question": "At constant temperature, what happens to volume if the same gas’s absolute pressure doubles?",
+        "answer": "Volume halves.",
+        "explanation": "pV stays constant for the fixed gas amount; pressure and volume are inversely proportional."
+      }
+    },
+    {
+      "id": "gas-pressure-kelvin",
+      "title": "Pressure and kelvin temperature at constant volume",
+      "points": [
+        "5.20",
+        "5.21"
+      ],
+      "terms": [
+        "pressure temperature law",
+        "rigid container",
+        "Kelvin conversion",
+        "sealed gas"
+      ],
+      "paragraphs": [
+        "For a fixed amount of gas at constant volume, heating increases average molecular speed. Molecules collide more frequently with the walls and their momentum changes are larger on average, so the pressure increases.",
+        "Use p₁/T₁ = p₂/T₂ with absolute pressures and kelvin temperatures. The container must hold the same amount of gas and remain at the same volume. A flexible expanding balloon does not automatically meet the constant-volume condition.",
+        "Choose the law from what stays fixed. Constant temperature suggests pV is constant; constant volume suggests p/T is constant. Neither law removes the requirement for a fixed gas amount."
+      ],
+      "example": {
+        "question": "A sealed rigid vessel holds gas at 100 kPa absolute and 27 °C. It warms to 87 °C. Find the new pressure.",
+        "steps": [
+          "T₁ = 27 + 273 = 300 K; T₂ = 87 + 273 = 360 K.",
+          "p₂ = p₁T₂/T₁ = 100 × 360/300.",
+          "p₂ = 120 kPa absolute."
+        ],
+        "explanation": "A 60 °C temperature rise is a 60 K rise, but the pressure ratio uses the actual kelvin temperatures."
+      },
+      "practice": {
+        "question": "A fixed sample in a rigid container falls from 400 K to 300 K. What happens to its absolute pressure?",
+        "answer": "It becomes 300/400 = 0.75 of its original value.",
+        "explanation": "Pressure is proportional to kelvin temperature under these fixed-mass, fixed-volume conditions."
+      },
+      "commonMistakes": [
+        "Never divide two Celsius temperatures in the gas law.",
+        "Check fixed mass and volume before using the pressure–temperature relationship."
+      ]
+    }
+  ]
+}

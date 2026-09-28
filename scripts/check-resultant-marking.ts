@@ -37,7 +37,7 @@ const structuralResults = structuralFixture.fixtures.map((item) => {
   assert.equal(question.privateSolution.magnitudeN, Number(item.independentAnswer.magnitude), item.id);
   assert.equal(question.privateSolution.direction, item.independentAnswer.direction, item.id);
   const outcomes = item.responses.map((response) => {
-    const actual = markResultantResponse(question, response);
+    const actual = markResultantResponse(question, { magnitude: response.magnitude, direction: response.direction });
     assert.equal(actual.score, response.expectedScore, item.id);
     assert.equal(actual.status, response.expectedScore === null ? 'needs-review' : 'scored', item.id);
     return { expectedScore: response.expectedScore, actualScore: actual.score, status: actual.status, passed: true };
@@ -100,7 +100,7 @@ const report = {
   ],
 };
 writeFileSync(
-  'research/validation/2026-09-11-resultant-marking.json',
+  'research/validation/2026-09-20-resultant-marking.json',
   JSON.stringify(report, null, 2) + '\n',
 );
 console.log(

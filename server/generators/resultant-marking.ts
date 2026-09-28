@@ -50,6 +50,8 @@ export function markResultantResponse(
     typeof response?.direction !== 'string'
   )
     return review('Both final-answer fields must be text.');
+  if (Object.keys(response).some((key) => !['magnitude', 'direction'].includes(key)))
+    return review('Unexpected response fields may contain unresolved evidence.');
   if (response.magnitude.length > 200 || response.direction.length > 100)
     return review('Response exceeds the bounded final-answer format.');
   const magnitudeText = response.magnitude.trim().replaceAll('−', '-');

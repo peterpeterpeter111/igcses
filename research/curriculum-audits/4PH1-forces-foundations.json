@@ -1,0 +1,485 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4PH1",
+  "chapterId": "forces-and-motion",
+  "documentId": "4PH1-spec",
+  "specificationIssue": "Issue 4 - September 2024",
+  "documentSha256": "bac4b8312d4fbfc84672f909100d66b2b3cda0b25e98c0d11bbc7366dae482b2",
+  "reviewDate": "2026-09-19",
+  "reviewer": "Codex Astra",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Bounded source-clause decomposition of references 1.11–1.21, checked visually on specification PDF page 18 / printed 12. Original teaching evidence and unresolved assessment checks remain partial.",
+  "identifierPolicy": "Requirement suffixes r1, r2, etc. are local editorial audit identifiers; only the parent reference is publisher-numbered.",
+  "notePath": "content/notes/physics.json",
+  "parents": [
+    {
+      "parentId": "4PH1:issue4:1.11",
+      "officialReference": "1.11",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "The source's changes of speed, shape and direction are illustrative examples, not three separately numbered obligations.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.11:r1",
+          "origin": "source-clause",
+          "summary": "Describe how forces between bodies can change their motion or shape.",
+          "teachingEvidence": [
+            {
+              "sectionId": "identifying-force-effects",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check independent explanations of shape change with balanced external forces and direction change at constant speed.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:1.12",
+      "officialReference": "1.12",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Gravitational and electrostatic forces are source examples; broader force names support identification rather than add official subnumbers.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.12:r1",
+          "origin": "source-clause",
+          "summary": "Identify force types from the interacting bodies.",
+          "teachingEvidence": [
+            {
+              "sectionId": "identifying-force-effects",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate unfamiliar contact/non-contact scenarios without treating electrostatic attraction as proof of net charge.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:1.13",
+      "officialReference": "1.13",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "The distinction requires direction as well as magnitude for vectors; examples remain original teaching content.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.13:r1",
+          "origin": "source-clause",
+          "summary": "Distinguish scalar quantities from vector quantities.",
+          "teachingEvidence": [
+            {
+              "sectionId": "identifying-force-effects",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independently assess scalar/vector classification and same-speed direction changes.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:1.14",
+      "officialReference": "1.14",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "One force-vector demand is retained as one local requirement.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.14:r1",
+          "origin": "source-clause",
+          "summary": "Explain why a force needs magnitude and direction.",
+          "teachingEvidence": [
+            {
+              "sectionId": "forces-and-vectors",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate complete vector answers and direction-only versus magnitude-only partial responses.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:1.15",
+      "officialReference": "1.15",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "The source restricts this calculation to a line; no two-dimensional component requirement is inferred.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.15:r1",
+          "origin": "source-clause",
+          "summary": "Calculate a resultant of collinear forces.",
+          "teachingEvidence": [
+            {
+              "sectionId": "forces-and-vectors",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "The experimental force family remains provisional; calibrate diagram-reading, inverse and three-force adaptations before promotion.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:1.16",
+      "officialReference": "1.16",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "The source gives the elementary opposing-motion statement; relative sliding is an original clarification preventing an overgeneralised friction rule.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.16:r1",
+          "origin": "source-clause",
+          "summary": "Identify friction as a force opposing motion in the relevant contact situation.",
+          "teachingEvidence": [
+            {
+              "sectionId": "identifying-force-effects",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate identification of the body, contact and relative sliding direction in unfamiliar examples.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:1.17",
+      "officialReference": "1.17",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Know and use are distinct source demands; inverse forms and zero-acceleration caveats support accurate application.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.17:r1",
+          "origin": "source-clause",
+          "summary": "Know the relationship between resultant force, mass and acceleration.",
+          "teachingEvidence": [
+            {
+              "sectionId": "force-mass-weight",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent recall and identification of resultant rather than individual applied force remain unvalidated.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:1.17:r2",
+          "origin": "source-clause",
+          "summary": "Use F = ma with the relevant resultant and consistent units.",
+          "teachingEvidence": [
+            {
+              "sectionId": "choosing-force-equations",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate inverse choices, gram conversion, zero-acceleration cases and linked method/error-carried-forward marking.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:1.18",
+      "officialReference": "1.18",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Know and use are retained separately. The question's stated gravitational field strength controls numerical work.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.18:r1",
+          "origin": "source-clause",
+          "summary": "Know how weight relates to mass and gravitational field strength.",
+          "teachingEvidence": [
+            {
+              "sectionId": "force-mass-weight",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independently assess weight versus mass and N/kg versus m/s² in their respective contexts.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:1.18:r2",
+          "origin": "source-clause",
+          "summary": "Use W = mg and its rearrangements.",
+          "teachingEvidence": [
+            {
+              "sectionId": "choosing-force-equations",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate inverse g and mass calculations and unit-conversion cases.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:1.19",
+      "officialReference": "1.19",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Thinking and braking distances are parts of one sum relationship, not two additional official reference numbers.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.19:r1",
+          "origin": "source-clause",
+          "summary": "Recognise stopping distance as thinking distance plus braking distance.",
+          "teachingEvidence": [
+            {
+              "sectionId": "stopping-distances",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate matching each distance to its interval and distinguishing stopping time from stopping distance.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:1.20",
+      "officialReference": "1.20",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "All four factors follow 'including' in the specification and are separately tracked. Fixed-force and fixed-deceleration qualifications are original modelling support.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.20:r1",
+          "origin": "source-clause",
+          "summary": "Describe how initial speed affects stopping distance.",
+          "teachingEvidence": [
+            {
+              "sectionId": "stopping-distances",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independently assess linear thinking-distance versus quadratic braking-distance comparisons under the stated assumptions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:1.20:r2",
+          "origin": "source-clause",
+          "summary": "Describe how mass affects stopping distance.",
+          "teachingEvidence": [
+            {
+              "sectionId": "stopping-distances",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate reasoning for fixed braking force versus a changed available friction force; do not assume one universal mass scaling.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:1.20:r3",
+          "origin": "source-clause",
+          "summary": "Describe how road condition affects stopping distance.",
+          "teachingEvidence": [
+            {
+              "sectionId": "stopping-distances",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate complete causal chains from available friction to deceleration to braking distance.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:1.20:r4",
+          "origin": "source-clause",
+          "summary": "Describe how reaction time affects stopping distance.",
+          "teachingEvidence": [
+            {
+              "sectionId": "stopping-distances",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess thinking-distance changes independently while holding braking conditions fixed.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:1.21",
+      "officialReference": "1.21",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Describing forces and explaining attainment of terminal velocity are separately tracked; buoyancy and vacuum notes clarify the model.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.21:r1",
+          "origin": "source-clause",
+          "summary": "Describe forces acting on a falling object.",
+          "teachingEvidence": [
+            {
+              "sectionId": "terminal-velocity",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate labelled force diagrams, resultant directions and the limits of the weight/drag-only model.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:1.21:r2",
+          "origin": "source-clause",
+          "summary": "Explain why a falling object can reach terminal velocity.",
+          "teachingEvidence": [
+            {
+              "sectionId": "terminal-velocity",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate the speed-drag-resultant-acceleration chain, including a parachute opening without an instantaneous direction reversal.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    }
+  ],
+  "completeTeachingPoints": 0,
+  "completeChapters": 0,
+  "teachingUpdatedAt": "2026-09-19"
+}

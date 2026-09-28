@@ -1,0 +1,961 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4PH1",
+  "chapterId": "electricity",
+  "documentId": "4PH1-spec",
+  "specificationIssue": "Issue 4 - September 2024",
+  "documentSha256": "bac4b8312d4fbfc84672f909100d66b2b3cda0b25e98c0d11bbc7366dae482b2",
+  "reviewDate": "2026-09-20",
+  "reviewer": "Codex Astra",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Bounded source-clause audit of 2.9–2.28P, visually checked on official Physics specification PDF pages 20–21 / printed 14–15. Continues the separate 2.1–2.8 audit. Practical descriptions and schematic graphs are not evidence of collected experimental results or validated assessment.",
+  "identifierPolicy": "Requirement suffixes r1, r2, etc. are local editorial audit identifiers; only the parent reference is publisher-numbered.",
+  "notePath": "content/notes/physics-electricity.json",
+  "parents": [
+    {
+      "parentId": "4PH1:issue4:2.9",
+      "officialReference": "2.9",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Four component types and their investigation are retained; no measurements were performed.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:2.9:r1",
+          "origin": "source-clause",
+          "summary": "Describe current–voltage behaviour of a wire.",
+          "teachingEvidence": [
+            {
+              "sectionId": "current-voltage-characteristics",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess temperature-controlled wire behaviour and resistance from I/V axes.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.9:r2",
+          "origin": "source-clause",
+          "summary": "Describe current–voltage behaviour of a resistor.",
+          "teachingEvidence": [
+            {
+              "sectionId": "current-voltage-characteristics",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess straight-line gradients with reversed axis conventions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.9:r3",
+          "origin": "source-clause",
+          "summary": "Describe current–voltage behaviour of a metal filament lamp.",
+          "teachingEvidence": [
+            {
+              "sectionId": "current-voltage-characteristics",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate changing temperature, curvature and operating-point resistance.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.9:r4",
+          "origin": "source-clause",
+          "summary": "Describe current–voltage behaviour of a diode.",
+          "teachingEvidence": [
+            {
+              "sectionId": "current-voltage-characteristics",
+              "field": "diagram"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess forward/reverse operation without a universal threshold voltage.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.9:r5",
+          "origin": "source-clause",
+          "summary": "Investigate current–voltage behaviour experimentally.",
+          "teachingEvidence": [
+            {
+              "sectionId": "investigate-current-voltage",
+              "field": "practical"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Complete measured or independently reviewed simulated datasets, circuit diagrams, graph quality and uncertainty tasks.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:2.10",
+      "officialReference": "2.10",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Fixed applied voltage is made explicit.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:2.10:r1",
+          "origin": "source-clause",
+          "summary": "Describe how resistance changes affect circuit current.",
+          "teachingEvidence": [
+            {
+              "sectionId": "resistance-and-ohms-law",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess qualitative changes while distinguishing fixed-voltage and other circuit constraints.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:2.11",
+      "officialReference": "2.11",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Illumination and temperature effects are separate sensor demands.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:2.11:r1",
+          "origin": "source-clause",
+          "summary": "Describe LDR resistance changes with illumination.",
+          "teachingEvidence": [
+            {
+              "sectionId": "ldr-and-thermistor",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess dimmer as well as brighter conditions and series-circuit interpretations.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.11:r2",
+          "origin": "source-clause",
+          "summary": "Describe thermistor resistance changes with temperature.",
+          "teachingEvidence": [
+            {
+              "sectionId": "ldr-and-thermistor",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Specify the usual NTC type and assess heating/cooling graphs.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:2.12",
+      "officialReference": "2.12",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Lamp and LED indication retain operating-condition caveats.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:2.12:r1",
+          "origin": "source-clause",
+          "summary": "Recognise lamps as current indicators.",
+          "teachingEvidence": [
+            {
+              "sectionId": "lamps-and-led-indicators",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess a dark or broken lamp without inferring universal zero current.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.12:r2",
+          "origin": "source-clause",
+          "summary": "Recognise LEDs as current indicators.",
+          "teachingEvidence": [
+            {
+              "sectionId": "lamps-and-led-indicators",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess polarity and current-limiting requirements.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:2.13",
+      "officialReference": "2.13",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Recall and use of the relationship are separate.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:2.13:r1",
+          "origin": "source-clause",
+          "summary": "Know V = IR.",
+          "teachingEvidence": [
+            {
+              "sectionId": "resistance-and-ohms-law",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess quantity and unit identification.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.13:r2",
+          "origin": "source-clause",
+          "summary": "Use V = IR and its rearrangements.",
+          "teachingEvidence": [
+            {
+              "sectionId": "resistance-and-ohms-law",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate inverse problems, prefixes and non-ohmic operating points.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:2.14",
+      "officialReference": "2.14",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "A rate is distinguished from an accumulated quantity.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:2.14:r1",
+          "origin": "source-clause",
+          "summary": "Describe current as the rate of charge flow.",
+          "teachingEvidence": [
+            {
+              "sectionId": "charge-current-units",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess current versus charge language and time dependence.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:2.15",
+      "officialReference": "2.15",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Formula and calculations are both retained.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:2.15:r1",
+          "origin": "source-clause",
+          "summary": "Know Q = It.",
+          "teachingEvidence": [
+            {
+              "sectionId": "charge-current-units",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess quantity symbols and coherent units.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.15:r2",
+          "origin": "source-clause",
+          "summary": "Use Q = It and its rearrangements.",
+          "teachingEvidence": [
+            {
+              "sectionId": "charge-current-units",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate inverse time/current questions, daily totals and prefixes.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:2.16",
+      "officialReference": "2.16",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Charge carriers and conventional current are distinguished.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:2.16:r1",
+          "origin": "source-clause",
+          "summary": "Describe current in a solid metal as electron flow.",
+          "teachingEvidence": [
+            {
+              "sectionId": "charge-current-units",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess carrier sign, lattice ions and direction convention.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:2.17",
+      "officialReference": "2.17",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "A junction rule is linked to charge conservation.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:2.17:r1",
+          "origin": "source-clause",
+          "summary": "Explain current conservation at a junction.",
+          "teachingEvidence": [
+            {
+              "sectionId": "parallel-branches",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess several incoming/outgoing paths and open branches.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:2.18",
+      "officialReference": "2.18",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Equal voltage does not imply equal branch currents.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:2.18:r1",
+          "origin": "source-clause",
+          "summary": "Recognise equal potential difference across parallel components.",
+          "teachingEvidence": [
+            {
+              "sectionId": "parallel-branches",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add annotated two-component parallel voltage tasks.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:2.19",
+      "officialReference": "2.19",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Current, voltage and resistance are each tracked for two series components.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:2.19:r1",
+          "origin": "source-clause",
+          "summary": "Calculate current through two components in series.",
+          "teachingEvidence": [
+            {
+              "sectionId": "series-circuit-calculations",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess changed supply and missing-component scenarios.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.19:r2",
+          "origin": "source-clause",
+          "summary": "Calculate voltages across two series components.",
+          "teachingEvidence": [
+            {
+              "sectionId": "series-circuit-calculations",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate voltage sharing without assuming equal drops.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.19:r3",
+          "origin": "source-clause",
+          "summary": "Calculate resistance in a two-component series circuit.",
+          "teachingEvidence": [
+            {
+              "sectionId": "series-circuit-calculations",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add inverse missing-resistance tasks and assess physical constraints.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:2.20",
+      "officialReference": "2.20",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Both explicit source bullets are retained.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:2.20:r1",
+          "origin": "source-clause",
+          "summary": "Define voltage as transferred energy per unit charge.",
+          "teachingEvidence": [
+            {
+              "sectionId": "voltage-energy-charge",
+              "field": "answerGuide"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate definitions including equivalent ratios with defined quantities.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.20:r2",
+          "origin": "source-clause",
+          "summary": "Identify one volt as one joule per coulomb.",
+          "teachingEvidence": [
+            {
+              "sectionId": "voltage-energy-charge",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess unit interpretation separately from charge per second.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:2.21",
+      "officialReference": "2.21",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Recall and use of the relationship are separate.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:2.21:r1",
+          "origin": "source-clause",
+          "summary": "Know E = QV.",
+          "teachingEvidence": [
+            {
+              "sectionId": "voltage-energy-charge",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess quantity and unit identification.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.21:r2",
+          "origin": "source-clause",
+          "summary": "Use E = QV and its rearrangements.",
+          "teachingEvidence": [
+            {
+              "sectionId": "voltage-energy-charge",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate inverse values, prefixes and acceptable numerical representations.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:2.22P",
+      "officialReference": "2.22P",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Paper 2: both material classes and named examples are preserved.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:2.22P:r1",
+          "origin": "source-clause",
+          "summary": "Identify common conductors, including metals.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electrostatic-charge-transfer",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess material selection and mobile carriers.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.22P:r2",
+          "origin": "source-clause",
+          "summary": "Identify common insulators, including plastics.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electrostatic-charge-transfer",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess local charge retention without claiming insulators contain no electrons.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:2.23P",
+      "officialReference": "2.23P",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Paper 2: practical method only, not a completed investigation.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:2.23P:r1",
+          "origin": "source-clause",
+          "summary": "Investigate frictional charging of insulating materials.",
+          "teachingEvidence": [
+            {
+              "sectionId": "investigate-friction-charging",
+              "field": "practical"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Complete controlled observations, humidity/contact limitations and repeatability evaluation.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:2.24P",
+      "officialReference": "2.24P",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Paper 2: positive and negative charging have distinct transfer directions.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:2.24P:r1",
+          "origin": "source-clause",
+          "summary": "Explain positive charge by electron loss.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electrostatic-charge-transfer",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess transfer direction and immobile protons.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.24P:r2",
+          "origin": "source-clause",
+          "summary": "Explain negative charge by electron gain.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electrostatic-charge-transfer",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess paired-object charge conservation with a neutral starting state.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:2.25P",
+      "officialReference": "2.25P",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Paper 2: attraction and repulsion are separate claims.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:2.25P:r1",
+          "origin": "source-clause",
+          "summary": "Recognise attraction between unlike charges.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electrostatic-forces",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess charged-neutral attraction without wrongly inferring unlike net signs.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.25P:r2",
+          "origin": "source-clause",
+          "summary": "Recognise repulsion between like charges.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electrostatic-forces",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess what repulsion establishes and what it cannot identify.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:2.26P",
+      "officialReference": "2.26P",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Paper 2: representative transfer and redistribution mechanisms, not every phenomenon.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:2.26P:r1",
+          "origin": "source-clause",
+          "summary": "Explain electrostatic effects through electron movement.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electrostatic-charge-transfer",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate rubbed-material explanations and conservation.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.26P:r2",
+          "origin": "source-clause",
+          "summary": "Apply electron redistribution to a neutral conductor near charge.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electrostatic-forces",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess no-contact induction, total neutrality and force explanations.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:2.27P",
+      "officialReference": "2.27P",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Paper 2: fuelling examples are physical explanations, not operating instructions.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:2.27P:r1",
+          "origin": "source-clause",
+          "summary": "Explain electrostatic spark danger during fuelling.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electrostatic-fuelling-hazards",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess charge accumulation, potential difference, spark and ignition chain for aircraft/tankers.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:2.28P",
+      "officialReference": "2.28P",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Paper 2: both named printing examples are explained with design caveats.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:2.28P:r1",
+          "origin": "source-clause",
+          "summary": "Explain electrostatic attraction in photocopying.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electrostatic-printing",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess charge pattern, toner attraction, transfer and fixing.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.28P:r2",
+          "origin": "source-clause",
+          "summary": "Explain charged-droplet deflection in an inkjet design.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electrostatic-printing",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate charge/field/force direction without generalising to all inkjet designs.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    }
+  ],
+  "completeTeachingPoints": 0,
+  "completeChapters": 0
+}

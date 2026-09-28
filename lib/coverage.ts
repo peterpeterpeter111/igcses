@@ -7,6 +7,21 @@ import physicsIndex from '../research/reviews/2026-09-10-physics-leaf-index.json
 import physicsVisualAudit from '../research/reviews/2026-09-10-physics-visual-audit.json' with { type: 'json' };
 import { subjects } from '../content/catalog';
 import { notes } from '../content/notes';
+import retrievalFamily from '../research/templates/4EB1-retrieve-two-causes.v0.1.0.json' with { type: 'json' };
+import resultantFamily from '../research/templates/4PH1-collinear-resultant.v0.1.0.json' with { type: 'json' };
+import weightFamily from '../research/templates/4PH1-weight-convert-mass.v0.1.0.json' with { type: 'json' };
+import { activeFamilies } from '../server/template-registry';
+import { latestDiscoveryDate, obtainedPaperCandidates } from './paper-discovery';
+
+const researchFamilies = [retrievalFamily, resultantFamily, weightFamily];
+export const evidenceHighlights = {
+  updatedAt: [physicsExtraction.paperStageReviewedAt, latestDiscoveryDate].sort().at(-1),
+  physicsDetailedParts: physicsExtraction.detailedLeafTasks,
+  physicsDetailedMarks: physicsExtraction.detailedOriginalMarks,
+  provisionalFamilies: researchFamilies.filter((f) => f.status === 'provisional').length,
+  experimentalGenerators: researchFamilies.filter((f) => f.status === 'provisional' && f.runtime.implemented).length,
+  activeFamilies: activeFamilies.length,
+};
 export function coverageSummary() {
   return subjects.map((s) => {
     const raw = rawLinks.filter((x) => x.qualification === s.code),
@@ -20,7 +35,9 @@ export function coverageSummary() {
       rawReportLinks: raw.filter((x) => x.documentType === 'examiner-report')
         .length,
       obtained:
-        indexed.filter((x) => x.indexed).length + (s.code === '4EB1' ? 1 : 0),
+        indexed.filter((x) => x.indexed).length + (s.code === '4EB1' ? 1 : 0)
+        + obtainedPaperCandidates(s.code).length,
+      candidatePairs: obtainedPaperCandidates(s.code).length,
       fullyProcessed: 0,
       candidatePoints: candidates.filter((x) => x.qualification === s.code)
         .length,
@@ -65,6 +82,7 @@ export function subjectEvidence(code: string) {
                 physicsExtraction.reviewedQuestionTotals,
               ),
               blockers: physicsExtraction.blockers,
+              notes: physicsExtraction.processingNotes,
             }
           : null,
     }));

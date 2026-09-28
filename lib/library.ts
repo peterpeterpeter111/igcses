@@ -76,6 +76,7 @@ export function searchLibrary(subject: Subject, query: string): SearchResult[] {
       const score =
         (title === q ? 100 : 0) +
         (title.includes(q) ? 40 : 0) +
+        (e.terms.some((term) => normalise(term) === q) ? 30 : 0) +
         (tags.includes(q) ? 20 : 0) +
         (text.includes(q) ? 10 : 0) +
         (e.id ? 5 : 0);

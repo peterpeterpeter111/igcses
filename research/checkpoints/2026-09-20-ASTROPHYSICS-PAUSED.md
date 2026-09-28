@@ -1,0 +1,23 @@
+# Paused after Astrophysics — 20 September 2026
+
+Last allowance: 4% five-hour / 54% weekly remaining. Implementation stopped immediately after that read. No reset consumed. Preserve d82d718, 5a948d0 and this descendant; older pause entries are historical.
+
+Added 14 Astrophysics sections for all 18 numbered parents, after visual review of Pearson Issue 4 PDF pages 33–34 (printed 27–28). Topics: cosmic hierarchy; g, mass and weight; gravity and orbits; comet/moon/planet comparison; circular orbital calculations; stellar colour; Sun-like and high-mass evolution; Paper 2 absolute magnitude, H–R regions, Doppler/red-shift, expansion and CMB. Added an original H–R schematic. No observational data or assessed mastery is claimed. The circular-orbit and red-shift examples are original exercises, not extracted paper tasks.
+
+Added the 18-parent / 39-local-requirement Astrophysics audit. Combined Physics curriculum audit: all 195 reviewed numbered parent identities have bounded partial audits / 404 local requirements. This is not full syllabus completion: each audit explicitly preserves remaining teaching, practical and independent assessment checks. All completion counts remain zero.
+
+Supporting factual cross-checks were made against NASA Stars, ESA Gaia H–R explanation, SDSS absolute-magnitude guidance and ESA Planck/CMB guidance. Their URLs and section associations are stored in the Astrophysics note and audit. The reader now supports optional Further reading links; Pearson remains the curriculum/assessment authority. No third-party prose or graphics copied.
+
+Current totals: 13 partial note documents / 139 sections across six subjects; Physics has eight partial chapters, 262 teaching links across 195 numbered parents. The other five subjects remain at their earlier partial-note coverage. Six obtained paper/scheme pairs; Physics 51 detailed records / 110 marks but zero fully processed papers. Three provisional families, two experimental generators and two bounded offline markers; zero active/validated templates. Physics has only two versioned family source links; 49 remain unversioned. Raw indexed-only batches unchanged.
+
+Verification: 79 application tests, typecheck, lint, 13 research checks, production build and public scan (46 public files, no findings) passed for the Astrophysics implementation and Further reading UI. Browser verified the H–R diagram and source links; the coverage page displayed 195 parents / 404 requirements and zero processed papers, with no warnings/errors in the bounded log. Previous Magnetism, Radioactivity and Matter visual blockers were resolved in 5a948d0.
+
+Last small change after that production build: coverage now calls the 404 decompositions “local teaching requirements”, replaces the stale “Teaching added after these checks” phrase with “Examples of linked teaching”, and gates Physics examples to Physics. Typecheck and lint pass after this wording change. A fresh production build/public scan and bounded rendered wording check remain queued; do not report the final copy change as already build/browser verified.
+
+GitHub sync remains blocked at last verified remote bfd2ed317aeebc81629ddf6bec670c5b1e146745 (local 7746684 mirror). Automatic approval review rejected the prior oversized upload (>200000 bytes). The specific safe-sync approval for lossless whitespace compaction and individually reviewed file uploads is still pending. No remote retry/write/bypass occurred. All new work is saved locally. No Sites version or deployment; no verified live URL. AI remains last.
+
+Local preview retained at http://localhost:3000/ (server session 26610 if still alive), browser 1 tab 2. Current build helper: /Users/peterstudymac/.codex/plugins/cache/openai-bundled/sites/0.1.66/scripts/build-site.mjs. Preserve the normal project scripts and all history. The earlier tab 1 held a connection-refused error page; no security setting was changed.
+
+Resume prompt:
+
+Resume the latest local commit and CONTINUE_ASTRA.md. Read PROGRESS_CHECKPOINT.md and research/checkpoints/2026-09-20-ASTROPHYSICS-PAUSED.md first. Check both allowances and continue only above 5%; save/pause at 5%, no reset. Preserve all work and UI. First build/public-scan and verify the final coverage wording. Physics now has partial teaching and bounded audits across all 195 numbered parents, not completed syllabus coverage. Continue the other five subjects’ curriculum and source-derived template calibration; keep paper counts honest and AI integration last. Resolve GitHub sync only through an approved route without bypassing the recorded pending approval blocker. Test/build before any Sites version or deployment.

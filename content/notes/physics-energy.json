@@ -5,7 +5,10 @@
   "complete": false,
   "humanReviewed": false,
   "sourceId": "4PH1-spec",
-  "sourcePages": [25, 26],
+  "sourcePages": [
+    25,
+    26
+  ],
   "prerequisites": [
     "Distinguish infrared from visible radiation.",
     "Describe a comparison while keeping exposure time and other conditions the same."
@@ -22,7 +25,10 @@
     {
       "id": "energy-stores-and-radiation",
       "title": "Energy stores and transfer pathways",
-      "points": ["4.2", "4.6"],
+      "points": [
+        "4.2",
+        "4.6"
+      ],
       "terms": [
         "thermal store",
         "energy transfer",
@@ -54,7 +60,9 @@
     {
       "id": "surface-absorption",
       "title": "Why surfaces absorb infrared differently",
-      "points": ["4.8"],
+      "points": [
+        "4.8"
+      ],
       "terms": [
         "absorber",
         "emitter",
@@ -66,7 +74,8 @@
         "In the usual IGCSE comparison, a dull black surface is a better absorber and emitter of thermal radiation than a light or shiny surface under comparable conditions. A shiny surface is a poor absorber and a good reflector. Real surfaces have wavelength-dependent properties; visible colour alone does not precisely determine every material's infrared behaviour.",
         "Under the same incident infrared intensity and over the same time, the better absorber receives more energy. If the objects have the same mass, material and relevant heat losses, the better absorber warms faster. Keep those conditions explicit: a colour comparison alone cannot determine the exact temperature change of two different objects.",
         "For the paint-heating observation, explain a chain: the black coating absorbs infrared more effectively, so more energy is transferred to it in the same time, helping the paint harden sooner. A reverse explanation using the white coating is equally clear. Greater emission is a cooling pathway and does not, by itself, explain faster warming under an external lamp.",
-        "An object both emits and absorbs radiation. Net warming depends on incoming and outgoing energy together. A good absorber can also be a good emitter; those properties are compatible. Surface temperature matters too, so do not claim that a cooler black object must emit more than every hotter light-coloured object."
+        "An object both emits and absorbs radiation. Net warming depends on incoming and outgoing energy together. A good absorber can also be a good emitter; those properties are compatible. Surface temperature matters too, so do not claim that a cooler black object must emit more than every hotter light-coloured object.",
+        "For the same surface area and finish, a hotter object emits thermal radiation at a greater rate. Net transfer also depends on radiation absorbed from the surroundings. At thermal equilibrium, absorption and emission continue but balance; constant temperature does not mean neither process occurs."
       ],
       "example": {
         "question": "Two identical panels receive 120 J of infrared energy each. One absorbs 90 J and the other 30 J. Compare energy transferred into the panels by absorption.",
@@ -102,15 +111,26 @@
     {
       "id": "energy-units",
       "title": "Energy, force and power units",
-      "points": ["4.1"],
-      "terms": ["joule", "watt", "kilogram", "newton", "unit conversion"],
+      "points": [
+        "4.1"
+      ],
+      "terms": [
+        "joule",
+        "watt",
+        "kilogram",
+        "newton",
+        "unit conversion"
+      ],
       "paragraphs": [
         "Use kilograms for mass, metres for distance or height, metres per second for speed, metres per second squared for acceleration, newtons for force, seconds for time, joules for energy or work, and watts for power. A joule is equivalent to one newton metre; one watt means one joule transferred each second.",
         "Convert quantities before substitution: 250 g = 0.250 kg, 80 cm = 0.80 m and 2 minutes = 120 s. A kilowatt is 1000 W. Energy and power are different quantities: a power rating describes a transfer rate, so energy also depends on operating time."
       ],
       "example": {
         "question": "A motor transfers 900 J in 0.5 minutes. Convert the time and calculate its average power.",
-        "steps": ["0.5 × 60 = 30 s.", "Power = 900/30 = 30 W."],
+        "steps": [
+          "0.5 × 60 = 30 s.",
+          "Power = 900/30 = 30 W."
+        ],
         "explanation": "Dividing by 0.5 without converting minutes gives a value in J/min, not watts."
       },
       "commonMistakes": [
@@ -121,7 +141,11 @@
     {
       "id": "conservation-efficiency-sankey",
       "title": "Conservation, efficiency and Sankey diagrams",
-      "points": ["4.3", "4.4", "4.5"],
+      "points": [
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
       "terms": [
         "conservation of energy",
         "efficiency",
@@ -157,7 +181,10 @@
     {
       "id": "conduction-and-convection",
       "title": "Conduction and convection",
-      "points": ["4.6", "4.7"],
+      "points": [
+        "4.6",
+        "4.7"
+      ],
       "terms": [
         "conduction",
         "convection",
@@ -168,7 +195,8 @@
       "paragraphs": [
         "In a solid, particles near a hotter region have more random kinetic energy and transfer energy to neighbours by interactions. The particles vibrate about their positions; they do not flow from the hot end to the cold end. Mobile electrons also transfer energy in metals, making metals effective thermal conductors.",
         "Convection involves bulk movement of a fluid: a liquid or gas. A heated region usually expands and becomes less dense than the surrounding cooler fluid. It rises under the resulting buoyant effect; cooler, denser fluid moves in to replace it. Continued heating and cooling can maintain circulation.",
-        "A heater near the floor warms nearby air. The warmer air rises and cooler air moves towards the heater, helping transfer energy around the room. A convection current does not occur inside a rigid solid. Say that warm fluid rises, rather than that heat itself rises: energy can transfer downwards by conduction or radiation."
+        "A heater near the floor warms nearby air. The warmer air rises and cooler air moves towards the heater, helping transfer energy around the room. A convection current does not occur inside a rigid solid. Say that warm fluid rises, rather than that heat itself rises: energy can transfer downwards by conduction or radiation.",
+        "In a room, air warmed beside a heater can expand, become less dense and rise. Cooler, denser air moves in below to replace it, creating circulation. Near a cold window, air can cool and descend. The route depends on heater/window position and obstructions; convection is bulk air motion, not a rule that all energy always travels upwards."
       ],
       "example": {
         "question": "Explain why water heated near the bottom of a beaker can circulate.",
@@ -188,7 +216,9 @@
     {
       "id": "insulation",
       "title": "Reducing unwanted transfers",
-      "points": ["4.10"],
+      "points": [
+        "4.10"
+      ],
       "terms": [
         "insulation",
         "double glazing",
@@ -214,7 +244,9 @@
     {
       "id": "thermal-practical-conduction",
       "title": "Investigating conduction",
-      "points": ["4.9"],
+      "points": [
+        "4.9"
+      ],
       "terms": [
         "conduction practical",
         "metal rods",
@@ -256,8 +288,15 @@
     {
       "id": "thermal-practical-convection",
       "title": "Seeing a convection current",
-      "points": ["4.7", "4.9"],
-      "terms": ["convection practical", "dye", "water circulation"],
+      "points": [
+        "4.7",
+        "4.9"
+      ],
+      "terms": [
+        "convection practical",
+        "dye",
+        "water circulation"
+      ],
       "paragraphs": [
         "A small amount of visible dye can trace water movement. Heating gently near one lower side of a water-filled vessel can reveal a rising coloured stream and a return flow away from the heat source. The dye is a tracer: its motion shows water movement rather than displaying energy itself."
       ],
@@ -289,7 +328,10 @@
     {
       "id": "thermal-practical-radiation",
       "title": "Comparing radiation absorption",
-      "points": ["4.8", "4.9"],
+      "points": [
+        "4.8",
+        "4.9"
+      ],
       "terms": [
         "radiation practical",
         "black surface",
@@ -331,15 +373,26 @@
     {
       "id": "work-and-energy",
       "title": "Work done by a force",
-      "points": ["4.11", "4.12"],
-      "terms": ["work done", "force", "distance", "W = Fd"],
+      "points": [
+        "4.11",
+        "4.12"
+      ],
+      "terms": [
+        "work done",
+        "force",
+        "distance",
+        "W = Fd"
+      ],
       "paragraphs": [
         "Work done is energy transferred by a force. For a constant force acting along the displacement, W = F × d. Use force in newtons and distance moved in the direction of that force in metres, giving work in joules.",
         "Identify the force whose work is requested. For a load pulled at constant speed against resistance, the pulling force transfers energy even though the resultant force and change in kinetic energy are zero. If there is no displacement, the work on the object by that force is zero in this model."
       ],
       "example": {
         "question": "A 35 N horizontal force pulls a crate 4.0 m in its direction. Calculate the work done.",
-        "steps": ["W = F × d.", "W = 35 × 4.0 = 140 J."],
+        "steps": [
+          "W = F × d.",
+          "W = 35 × 4.0 = 140 J."
+        ],
         "explanation": "The relevant distance is along the force. Work is an energy transfer, not a force."
       },
       "practice": {
@@ -351,7 +404,10 @@
     {
       "id": "kinetic-and-gravitational-energy",
       "title": "Kinetic and gravitational potential energy",
-      "points": ["4.13", "4.14"],
+      "points": [
+        "4.13",
+        "4.14"
+      ],
       "terms": [
         "kinetic energy",
         "gravitational potential",
@@ -380,7 +436,10 @@
     {
       "id": "energy-balance-motion",
       "title": "Linking energy stores and motion",
-      "points": ["4.3", "4.15"],
+      "points": [
+        "4.3",
+        "4.15"
+      ],
       "terms": [
         "energy conservation",
         "falling",
@@ -409,8 +468,16 @@
     {
       "id": "power",
       "title": "Power is a transfer rate",
-      "points": ["4.16", "4.17"],
-      "terms": ["power", "watt", "rate", "P = W/t"],
+      "points": [
+        "4.16",
+        "4.17"
+      ],
+      "terms": [
+        "power",
+        "watt",
+        "rate",
+        "P = W/t"
+      ],
       "paragraphs": [
         "Power is the rate of energy transfer or work done. Average power = energy transferred / time taken = W/t. A higher-power device transfers more energy in the same time, or the same energy in less time.",
         "Use seconds for time and joules for work to obtain watts. Rearrange to W = Pt or t = W/P as required. Be clear whether a power value is the total input or useful output: an inefficient motor's useful lifting power is below its electrical input power."
@@ -432,7 +499,9 @@
     {
       "id": "electricity-generation",
       "title": "Electricity generation · Paper 2 only",
-      "points": ["4.18P"],
+      "points": [
+        "4.18P"
+      ],
       "terms": [
         "wind",
         "hydroelectric",
@@ -463,7 +532,9 @@
     {
       "id": "comparing-energy-resources",
       "title": "Comparing electricity resources · Paper 2 only",
-      "points": ["4.19P"],
+      "points": [
+        "4.19P"
+      ],
       "terms": [
         "renewable",
         "non-renewable",
@@ -483,6 +554,89 @@
         "answer": "Output falls at night and can fall in cloudy conditions. Storage or another supply source can provide energy during low-output periods.",
         "explanation": "Being renewable does not make solar output constant. A response should connect variability to a practical supply measure."
       }
+    },
+    {
+      "id": "tracking-energy-stores",
+      "title": "Following energy through a system",
+      "points": [
+        "4.2",
+        "4.3"
+      ],
+      "terms": [
+        "chemical",
+        "kinetic",
+        "gravitational",
+        "elastic",
+        "thermal",
+        "magnetic",
+        "electrostatic",
+        "nuclear",
+        "system boundary"
+      ],
+      "paragraphs": [
+        "Start by choosing the system and identifying the store that decreases. In a battery-powered torch, the battery’s chemical store decreases as energy is transferred electrically to the lamp. The lamp transfers energy by light and heating; the surroundings’ thermal stores increase. Electrical transfer is a pathway, not a store named in this specification.",
+        "As a trolley rolls downhill, the gravitational store of the Earth–trolley system decreases. The trolley’s kinetic store increases if it speeds up, while friction can also increase thermal stores. Stretching a spring transfers energy mechanically into its elastic store; release can transfer energy mechanically to a moving toy.",
+        "Work is needed to push two like magnetic poles closer together. Energy is stored in their magnetic interaction; releasing them can increase their kinetic stores as they move apart. Similarly, work done bringing two like electric charges closer increases the electrostatic store of the system. The interaction involves both objects, so name the system rather than claiming a force itself is a store.",
+        "A hot cup has a thermal store. It transfers energy to cooler surroundings by heating and radiation as it cools. In nuclear fission, energy released from the nuclear store can increase the thermal store of a reactor’s working fluid. The fuel is not undergoing chemical combustion.",
+        "The specification groups emitted light and sound as radiation transfer examples. Light can carry energy through a vacuum; sound carries energy through vibrations in a material medium and cannot cross a vacuum. The shared transfer label does not make sound electromagnetic."
+      ],
+      "example": {
+        "question": "A spring launches a toy across a rough horizontal floor. Describe the energy changes from release until the toy stops.",
+        "steps": [
+          "During release, the spring’s elastic store decreases as energy is transferred mechanically to the toy.",
+          "The toy gains kinetic energy. Some energy may already be transferred to thermal stores and sound during launch.",
+          "As the toy slows, its kinetic store decreases while friction transfers energy to thermal stores of the floor, toy and surroundings.",
+          "For the complete chosen system, total energy is conserved even though the original store is no longer useful for moving the toy."
+        ],
+        "explanation": "Energy is transferred and becomes more spread out; it is not used up or destroyed."
+      },
+      "practice": {
+        "question": "A student says a falling object creates kinetic energy. Improve the statement for a fall from rest with negligible air resistance.",
+        "answer": "Its kinetic energy increases as the gravitational store of the Earth–object system decreases by the same amount.",
+        "explanation": "The increase is balanced by a decrease in another store; choosing the system makes conservation explicit."
+      }
+    },
+    {
+      "id": "energy-on-a-slope",
+      "title": "Work along a slope and vertical height",
+      "points": [
+        "4.11",
+        "4.12",
+        "4.13",
+        "4.15"
+      ],
+      "terms": [
+        "slope",
+        "vertical height",
+        "distance along force",
+        "constant speed",
+        "friction work"
+      ],
+      "paragraphs": [
+        "Work uses the distance moved in the direction of the force. Gravitational potential energy uses vertical height. For a pull parallel to a slope, these are different distances: use the length travelled along the slope in W = Fd, and the vertical rise in ΔGPE = mgh.",
+        "At constant speed the kinetic store is unchanged. Work supplied by a pulling force can still increase gravitational potential energy and overcome friction. Zero resultant work means zero change in kinetic energy; it does not mean every individual force does zero work.",
+        "State the model before making the balance. Here the load is rigid, the pull is parallel to a fixed slope, speed is constant, and friction is the only dissipative force. Work supplied = gain in gravitational potential energy + energy transferred by friction."
+      ],
+      "example": {
+        "question": "A 2.0 kg load is pulled 1.5 m up a slope, rising vertically by 0.60 m. A steady 12 N pull acts parallel to the slope and keeps the speed constant. Use g = 10 N/kg. Find the pulling work, gain in gravitational potential energy and energy transferred by friction.",
+        "steps": [
+          "Pulling work = 12 × 1.5 = 18 J.",
+          "Gain in GPE = 2.0 × 10 × 0.60 = 12 J.",
+          "Kinetic energy is unchanged because speed is constant.",
+          "Energy transferred by friction = 18 − 12 = 6.0 J."
+        ],
+        "explanation": "The 18 J input is accounted for by 12 J in gravitational potential energy and 6 J transferred to thermal stores. Using 0.60 m in the pulling-work calculation mixes two different distances."
+      },
+      "practice": {
+        "question": "For the same 2.0 kg load and slope, neglect friction. What constant pull parallel to the slope would keep the speed constant?",
+        "answer": "Required work = 12 J, so F = 12/1.5 = 8.0 N.",
+        "explanation": "The pull supplies the gravitational energy gain only. This is less than the 12 N required in the frictional example."
+      },
+      "commonMistakes": [
+        "Do not put the distance along the slope into mgh.",
+        "Constant speed does not mean no energy transfer.",
+        "Do not set useful output equal to total supplied work when energy is dissipated."
+      ]
     }
   ]
 }

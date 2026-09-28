@@ -1,0 +1,345 @@
+{
+  "generatedAt": "2026-09-28T15:42:02.801078+00:00",
+  "manifest": "research/discovery/2026-09-28-mathematics-b.json",
+  "extractor": {
+    "name": "pypdf",
+    "version": "6.10.0"
+  },
+  "scope": "Mechanical text preparation only; no task, mark or syllabus interpretation.",
+  "limitations": [
+    "Extractable text does not establish correct reading order or mathematical notation.",
+    "Diagrams, tables, fraction layout and symbols still require visual inspection.",
+    "Sparse text may be intentional. No warning is not evidence of correctness."
+  ],
+  "records": [
+    {
+      "candidateId": "4MB1-2024-summer-01-candidate",
+      "documents": [
+        {
+          "kind": "questionPaper",
+          "sha256": "05e2896c96a92fe76d588bef9bfcef6ec6b5ee6cd95a5bed2404176caba9b0fb",
+          "pageCount": 24,
+          "pages": [
+            {
+              "pdfPage": 1,
+              "textChars": 1189,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 2,
+              "textChars": 737,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 3,
+              "textChars": 517,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 4,
+              "textChars": 623,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 5,
+              "textChars": 711,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 6,
+              "textChars": 816,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 7,
+              "textChars": 577,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 8,
+              "textChars": 444,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 9,
+              "textChars": 540,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 10,
+              "textChars": 612,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 11,
+              "textChars": 716,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 12,
+              "textChars": 725,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 13,
+              "textChars": 566,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 14,
+              "textChars": 508,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 15,
+              "textChars": 629,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 16,
+              "textChars": 747,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 17,
+              "textChars": 499,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 18,
+              "textChars": 1028,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 19,
+              "textChars": 597,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 20,
+              "textChars": 474,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 21,
+              "textChars": 345,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 22,
+              "textChars": 703,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 23,
+              "textChars": 453,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 24,
+              "textChars": 407,
+              "warnings": [],
+              "error": null
+            }
+          ],
+          "textOutput": "work/discovery/2026-09-28-mathematics-b/text-preflight/4MB1-2024-summer-01-candidate-questionPaper-pages.json",
+          "warningPages": [],
+          "extractionErrorPages": []
+        },
+        {
+          "kind": "markScheme",
+          "sha256": "5e57bd1855d44ac575ba380b1b35f34039f62825259e94e173a064909c21bbf9",
+          "pageCount": 26,
+          "pages": [
+            {
+              "pdfPage": 1,
+              "textChars": 125,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 2,
+              "textChars": 1278,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 3,
+              "textChars": 1544,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 4,
+              "textChars": 1560,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 5,
+              "textChars": 295,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 6,
+              "textChars": 504,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 7,
+              "textChars": 1054,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 8,
+              "textChars": 1203,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 9,
+              "textChars": 934,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 10,
+              "textChars": 1077,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 11,
+              "textChars": 540,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 12,
+              "textChars": 967,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 13,
+              "textChars": 1261,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 14,
+              "textChars": 557,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 15,
+              "textChars": 1023,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 16,
+              "textChars": 696,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 17,
+              "textChars": 1178,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 18,
+              "textChars": 1067,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 19,
+              "textChars": 797,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 20,
+              "textChars": 1051,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 21,
+              "textChars": 778,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 22,
+              "textChars": 943,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 23,
+              "textChars": 1369,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 24,
+              "textChars": 1281,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 25,
+              "textChars": 645,
+              "warnings": [],
+              "error": null
+            },
+            {
+              "pdfPage": 26,
+              "textChars": 192,
+              "warnings": [],
+              "error": null
+            }
+          ],
+          "textOutput": "work/discovery/2026-09-28-mathematics-b/text-preflight/4MB1-2024-summer-01-candidate-markScheme-pages.json",
+          "warningPages": [],
+          "extractionErrorPages": []
+        }
+      ],
+      "taskIndexCreated": false,
+      "identityReviewed": false,
+      "markSchemeReviewed": false,
+      "fullyProcessed": false
+    }
+  ]
+}

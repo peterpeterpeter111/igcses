@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { SiteFrame } from '@/components/site-frame';
-import { coverageSummary } from '@/lib/coverage';
+import { coverageSummary, evidenceHighlights } from '@/lib/coverage';
 export default function CoveragePage() {
   const rows = coverageSummary();
   return (
@@ -12,7 +12,7 @@ export default function CoveragePage() {
         </nav>
         <h1>Sources & coverage</h1>
         <p className="intro">
-          Evidence updated: 10 September 2026. Downloaded, indexed and fully
+          Summary updated: {evidenceHighlights.updatedAt}. Downloaded, indexed and fully
           processed are separate stages.
         </p>
         <div className="note">
@@ -46,7 +46,12 @@ export default function CoveragePage() {
                     </Link>
                   </th>
                   <td>{r.rawQuestionLinks}</td>
-                  <td>{r.obtained}</td>
+                  <td>
+                    {r.obtained}
+                    {r.candidatePairs > 0 && (
+                      <span> (includes {r.candidatePairs} candidate pending review)</span>
+                    )}
+                  </td>
                   <td>{r.fullyProcessed}</td>
                   <td>{r.candidatePoints || 'Inventory pending'}</td>
                   <td>
@@ -67,12 +72,13 @@ export default function CoveragePage() {
           <dt>Obtained</dt>
           <dd>
             A readable PDF was downloaded and hashed. This does not mean its
-            questions have been analysed.
+            questions have been analysed. Candidate pairs still need identity
+            and pairing review.
           </dd>
           <dt>Indexed-only</dt>
           <dd>
-            Pages and candidate labels were recorded. Five pairs have now had
-            their covers checked, but full task extraction is pending.
+            Pages and candidate labels were recorded. Later detailed analysis
+            is recorded separately; it does not rewrite the original index.
           </dd>
           <dt>Fully processed</dt>
           <dd>
@@ -88,25 +94,28 @@ export default function CoveragePage() {
             Two English “Extract” links must not count as separate papers.
           </li>
           <li>
-            Mathematics B paper discovery remains incomplete. Zero catalogued
-            links does not mean no papers exist.
+            Mathematics B has one newly downloaded candidate paper/scheme pair,
+            separate from the original raw-link inventory. Identity review and
+            question indexing are pending; wider archive discovery is incomplete.
           </li>
           <li>
             The English November 2024 pilot has 11 tasks indexed and one
             detailed extraction. It is not a fully processed paper. Physics
-            Summer 2024 Paper 1P has seven detailed question parts (23 original
-            marks) across Questions 5 and 12; the whole paper remains
-            incomplete.
+            Summer 2024 Paper 1P has {evidenceHighlights.physicsDetailedParts}{' '}
+            detailed question parts ({evidenceHighlights.physicsDetailedMarks}{' '}
+            original marks); whole-paper processing remains incomplete.
           </li>
           <li>
             Text extraction and cover review cannot certify diagrams, tables,
             every subpart or scheme contents.
           </li>
           <li>
-            Active generative templates: 0. Two provisional families exist:
-            English retrieval and Physics resultant force. The Physics generator
-            has passed mathematical checks; assessment review and marking
-            calibration are pending. Live AI remains deferred.
+            Active generative templates: {evidenceHighlights.activeFamilies}.{' '}
+            Provisional families: {evidenceHighlights.provisionalFamilies} (English
+            retrieval, Physics resultant force and Physics weight calculation).{' '}
+            Experimental generators: {evidenceHighlights.experimentalGenerators}.
+            Mathematical checks do not establish assessment or marking readiness.
+            Live AI remains deferred.
           </li>
         </ul>
       </main>

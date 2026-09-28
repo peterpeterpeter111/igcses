@@ -1,0 +1,538 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4PH1",
+  "chapterId": "electricity",
+  "documentId": "4PH1-spec",
+  "specificationIssue": "Issue 4 - September 2024",
+  "documentSha256": "bac4b8312d4fbfc84672f909100d66b2b3cda0b25e98c0d11bbc7366dae482b2",
+  "reviewDate": "2026-09-20",
+  "reviewer": "Codex Astra",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Bounded audit of 2.1–2.8 only, visually checked against official Physics specification PDF page 20 / printed 14. Requirements from 2.9 onward are not audited here.",
+  "identifierPolicy": "Requirement suffixes r1, r2, etc. are local editorial audit identifiers; only the parent reference is publisher-numbered.",
+  "notePath": "content/notes/physics-electricity.json",
+  "parents": [
+    {
+      "parentId": "4PH1:issue4:2.1",
+      "officialReference": "2.1",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "All seven named units are tracked; unit listing is partial evidence, not assessed use.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:2.1:r1",
+          "origin": "source-clause",
+          "summary": "Use amperes.",
+          "teachingEvidence": [
+            {
+              "sectionId": "charge-current-units",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate independent numerical tasks using amperes, with prefixes and consistent units.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.1:r2",
+          "origin": "source-clause",
+          "summary": "Use coulombs.",
+          "teachingEvidence": [
+            {
+              "sectionId": "charge-current-units",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate independent numerical tasks using coulombs, with prefixes and consistent units.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.1:r3",
+          "origin": "source-clause",
+          "summary": "Use joules.",
+          "teachingEvidence": [
+            {
+              "sectionId": "charge-current-units",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate independent numerical tasks using joules, with prefixes and consistent units.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.1:r4",
+          "origin": "source-clause",
+          "summary": "Use ohms.",
+          "teachingEvidence": [
+            {
+              "sectionId": "charge-current-units",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate independent numerical tasks using ohms, with prefixes and consistent units.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.1:r5",
+          "origin": "source-clause",
+          "summary": "Use seconds.",
+          "teachingEvidence": [
+            {
+              "sectionId": "charge-current-units",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate independent numerical tasks using seconds, with prefixes and consistent units.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.1:r6",
+          "origin": "source-clause",
+          "summary": "Use volts.",
+          "teachingEvidence": [
+            {
+              "sectionId": "charge-current-units",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate independent numerical tasks using volts, with prefixes and consistent units.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.1:r7",
+          "origin": "source-clause",
+          "summary": "Use watts.",
+          "teachingEvidence": [
+            {
+              "sectionId": "charge-current-units",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate independent numerical tasks using watts, with prefixes and consistent units.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:2.2",
+      "officialReference": "2.2",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "All five protection methods are explicitly separated.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:2.2:r1",
+          "origin": "source-clause",
+          "summary": "Explain insulation as protection from live conductors.",
+          "teachingEvidence": [
+            {
+              "sectionId": "domestic-electrical-protection",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess insulation-failure scenarios.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.2:r2",
+          "origin": "source-clause",
+          "summary": "Explain double insulation in domestic appliances.",
+          "teachingEvidence": [
+            {
+              "sectionId": "domestic-electrical-protection",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess appliance designs without relying on an earth conductor.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.2:r3",
+          "origin": "source-clause",
+          "summary": "Explain earthing and the fault-current path.",
+          "teachingEvidence": [
+            {
+              "sectionId": "domestic-electrical-protection",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate linked fault path and disconnection explanations.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.2:r4",
+          "origin": "source-clause",
+          "summary": "Explain fuse operation.",
+          "teachingEvidence": [
+            {
+              "sectionId": "domestic-electrical-protection",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess heating, melting and breaking the live supply.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.2:r5",
+          "origin": "source-clause",
+          "summary": "Explain circuit-breaker operation.",
+          "teachingEvidence": [
+            {
+              "sectionId": "domestic-electrical-protection",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Distinguish overcurrent and residual-current mechanisms in suitably specified questions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:2.3",
+      "officialReference": "2.3",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Energy transfer, temperature increase and applications remain linked.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:2.3:r1",
+          "origin": "source-clause",
+          "summary": "Explain electrical energy transfer and temperature rise in a resistor.",
+          "teachingEvidence": [
+            {
+              "sectionId": "resistor-heating",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess energy transfer versus charge/current being used up.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.3:r2",
+          "origin": "source-clause",
+          "summary": "Explain useful domestic heating applications.",
+          "teachingEvidence": [
+            {
+              "sectionId": "resistor-heating",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess kettle, toaster and heater explanations, including steady temperature.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:2.4",
+      "officialReference": "2.4",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Formula and fuse-selection application are distinct.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:2.4:r1",
+          "origin": "source-clause",
+          "summary": "Know and use P = IV.",
+          "teachingEvidence": [
+            {
+              "sectionId": "power-and-fuse-selection",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess inverse quantities, prefixes and allowed rounding.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.4:r2",
+          "origin": "source-clause",
+          "summary": "Use power and voltage to select an appropriate fuse in a stated exercise.",
+          "teachingEvidence": [
+            {
+              "sectionId": "power-and-fuse-selection",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate normal-current and listed-rating cases without generalising into real-installation advice.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:2.5",
+      "officialReference": "2.5",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Energy calculation requires coherent time units.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:2.5:r1",
+          "origin": "source-clause",
+          "summary": "Use E = IVt.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electrical-energy-time",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess inverse problems, time conversion and carried-forward values.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:2.6",
+      "officialReference": "2.6",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Direction reversal is not confused with any varying magnitude.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:2.6:r1",
+          "origin": "source-clause",
+          "summary": "Identify mains electricity as alternating current.",
+          "teachingEvidence": [
+            {
+              "sectionId": "alternating-and-direct-current",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add calibrated current–time graph classification.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.6:r2",
+          "origin": "source-clause",
+          "summary": "Identify cell and battery supply as direct current.",
+          "teachingEvidence": [
+            {
+              "sectionId": "alternating-and-direct-current",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess variable-magnitude one-direction current.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:2.7",
+      "officialReference": "2.7",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Both circuit choices and the named domestic-lighting application are retained.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:2.7:r1",
+          "origin": "source-clause",
+          "summary": "Explain an appropriate series or parallel arrangement for an application.",
+          "teachingEvidence": [
+            {
+              "sectionId": "parallel-branches",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add independent switch/failure diagrams and calibrated selection tasks.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.7:r2",
+          "origin": "source-clause",
+          "summary": "Explain parallel connections for domestic lighting.",
+          "teachingEvidence": [
+            {
+              "sectionId": "parallel-branches",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess same supply voltage and independent switching separately.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:2.8",
+      "officialReference": "2.8",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Applied voltage and component number/nature are separate dependencies.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:2.8:r1",
+          "origin": "source-clause",
+          "summary": "Explain series current dependence on applied voltage.",
+          "teachingEvidence": [
+            {
+              "sectionId": "series-circuit-calculations",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess changed voltage at fixed component conditions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:2.8:r2",
+          "origin": "source-clause",
+          "summary": "Explain series current dependence on the number and nature of components.",
+          "teachingEvidence": [
+            {
+              "sectionId": "series-circuit-calculations",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess added resistors and non-ohmic components without assuming fixed resistance.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    }
+  ],
+  "completeTeachingPoints": 0,
+  "completeChapters": 0
+}

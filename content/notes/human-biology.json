@@ -3,16 +3,61 @@
   "chapterId": "cells-and-tissues",
   "sourceId": "4HB1-spec",
   "sourcePages": [
-    17
+    17,
+    18
   ],
   "prerequisites": [
     "A cell is a small, organised living unit. An organ contains many cells working together."
   ],
   "goals": [
     "Connect the functions of six cell structures to the needs of a human cell.",
-    "Explain why a cell’s activity affects the organelles it needs."
+    "Explain why a cell’s activity affects the organelles it needs.",
+    "Explain complementary base pairing in DNA replication and transcription.",
+    "Trace information from a gene through mRNA to a polypeptide.",
+    "Explain why a mutation may, but need not, alter phenotype.",
+    "Explain the main stages and outcomes of mitosis.",
+    "Connect tissue and gamete structures to their functions.",
+    "Evaluate stem-cell applications using biological evidence and ethical reasoning."
   ],
   "sections": [
+    {
+      "id": "recognising-cell-structures",
+      "title": "Recognising structures in cell images",
+      "points": [
+        "1.1"
+      ],
+      "paragraphs": [
+        "A light microscope can show the overall cell outline and, with suitable preparation, a nucleus. Condensed chromosomes can be visible in dividing cells. Small structures such as ribosomes and the internal membrane detail of mitochondria cannot be resolved by an ordinary school light microscope. Making a blurred image bigger does not create new detail.",
+        "A transmission electron microscope (TEM) shows a thin section through a specimen. Look for a large nucleus, mitochondria with internal folded membranes, and networks of endoplasmic reticulum. Ribosomes appear as small dense dots, either free or attached to rough endoplasmic reticulum. The cell membrane marks the boundary, while chromosomes should not be imagined as permanently visible X shapes inside every nucleus.",
+        "Use several clues, including the scale and surrounding structures. A section can cut the same kind of organelle at different angles, giving different apparent shapes. Identify what is visible rather than inventing structures hidden by the cut. These notes give recognition clues; an independently checked set of real light and TEM micrographs is still needed for complete image practice."
+      ],
+      "example": {
+        "question": "A student enlarges a light-microscope photograph and labels tiny dots as ribosomes. Why is this unreliable?",
+        "steps": [
+          "Ribosomes are below the resolving power of an ordinary light microscope.",
+          "Enlarging the photograph increases its displayed size but not the detail originally recorded.",
+          "The dots could be image artefacts rather than resolved ribosomes."
+        ],
+        "explanation": "Resolution is the ability to distinguish nearby detail; it is different from magnification."
+      },
+      "practice": {
+        "question": "In a TEM image, an oval organelle has a double boundary and folded internal membranes. Which structure is a reasonable identification?",
+        "answer": "A mitochondrion; the internal folds are supporting evidence, although the full image and scale should also be considered.",
+        "explanation": "A tentative identification should be justified with visible structure."
+      },
+      "terms": [
+        "light microscope",
+        "TEM",
+        "resolution",
+        "magnification",
+        "cristae",
+        "micrograph"
+      ],
+      "commonMistakes": [
+        "Do not claim that every organelle is visible with a light microscope.",
+        "A schematic drawing is not a substitute for micrograph interpretation."
+      ]
+    },
     {
       "id": "cell-structures",
       "title": "What the cell structures do",
@@ -44,11 +89,626 @@
       "practice": {
         "question": "A cell makes and exports large quantities of protein. Name two structures likely to be well developed and explain each choice.",
         "answer": "Ribosomes synthesise the protein. Rough endoplasmic reticulum supports the processing and movement of proteins made by its attached ribosomes.",
-        "explanation": "Both choices are linked to protein production. The chapter’s microscopy, DNA, protein-synthesis and tissue coverage is still unfinished."
+        "explanation": "Both choices are linked to protein production. Independent micrograph assessment and whole-chapter review remain unfinished."
       }
+    },
+    {
+      "id": "dna-structure",
+      "title": "DNA: paired strands and a base sequence",
+      "points": [
+        "1.3"
+      ],
+      "paragraphs": [
+        "DNA consists of two nucleotide chains coiled together into a double helix. Each nucleotide contains a sugar, a phosphate group and one base. The sugar in DNA is deoxyribose. Repeated sugar and phosphate groups form the outside of each strand, while bases project towards the other strand.",
+        "The bases pair specifically: adenine (A) with thymine (T), and cytosine (C) with guanine (G). Hydrogen bonds between complementary bases link the strands. The order of bases can vary along a strand, allowing DNA to carry information; complementary pairing means that the sequence of one strand determines the matching sequence on the other.",
+        "Keep different structures separate: a base is part of a nucleotide; many nucleotides form a DNA strand; a gene is a particular length of DNA. A chromosome contains a long DNA molecule associated with proteins. DNA is not itself a protein."
+      ],
+      "example": {
+        "question": "Write the complementary bases directly opposite the DNA sequence A C G T T A.",
+        "steps": [
+          "Match each A to T, each T to A, each C to G and each G to C.",
+          "The paired row is T G C A A T, directly opposite the supplied row.",
+          "Check that the two rows have equal lengths."
+        ],
+        "explanation": "The rows are aligned base pairs; this exercise does not ask for a strand rewritten in a specified 5′ to 3′ direction."
+      },
+      "practice": {
+        "question": "Which bonds link complementary bases, and which base pairs with cytosine?",
+        "answer": "Hydrogen bonds link the paired bases; guanine pairs with cytosine.",
+        "explanation": "Do not confuse the bonds between strands with the sugar–phosphate backbone."
+      },
+      "terms": [
+        "DNA",
+        "nucleotide",
+        "double helix",
+        "adenine",
+        "thymine",
+        "cytosine",
+        "guanine",
+        "hydrogen bonds"
+      ],
+      "commonMistakes": [
+        "A pairs with T in DNA, not with C.",
+        "Hydrogen bonds join complementary bases across the two strands."
+      ]
+    },
+    {
+      "id": "dna-replication",
+      "title": "Copying DNA before cell division",
+      "points": [
+        "1.4"
+      ],
+      "paragraphs": [
+        "Before a cell divides, its DNA must be copied so that the genetic information can be passed on. The two original strands separate as the hydrogen bonds between their paired bases are broken. Each original strand acts as a template.",
+        "Free DNA nucleotides pair with exposed bases according to the A–T and C–G rules. DNA polymerase helps build each new strand by joining the added nucleotides into a continuous chain. It does not choose a random sequence: the existing template determines the complementary sequence.",
+        "The result is two DNA molecules with the same base sequence information, provided copying is accurate. Each has one original strand and one newly made strand. This is called semi-conservative replication. Replication copies DNA; it is not the production of a protein or the division of the entire cell."
+      ],
+      "example": {
+        "question": "Explain why complementary base pairing helps preserve information during DNA replication.",
+        "steps": [
+          "The original strands provide templates.",
+          "Only the complementary base pairs with each exposed base.",
+          "DNA polymerase joins nucleotides into new strands.",
+          "The resulting molecules retain the original sequence information if no copying error occurs."
+        ],
+        "explanation": "Include both the pairing rule and formation of the new strand."
+      },
+      "practice": {
+        "question": "After one round of replication, how many original strands are present in each new double-stranded molecule?",
+        "answer": "One original strand and one newly synthesised strand.",
+        "explanation": "The original molecule has two strands, which separate into different daughter molecules."
+      },
+      "terms": [
+        "DNA polymerase",
+        "template",
+        "semi-conservative replication"
+      ],
+      "commonMistakes": [
+        "Replication is different from transcription.",
+        "Do not describe DNA polymerase as converting DNA into amino acids."
+      ]
+    },
+    {
+      "id": "genes-and-triplets",
+      "title": "From a gene to an amino-acid sequence",
+      "points": [
+        "1.5"
+      ],
+      "paragraphs": [
+        "For this syllabus, a gene is a length of DNA whose base sequence provides the instructions for a specific protein. The order of bases determines the order of amino acids in the resulting chain. A protein’s amino-acid sequence affects how it folds and works.",
+        "The code is read in groups of three bases. A triplet specifies an amino acid in the coding model used here. In actual protein synthesis, mRNA codons are read at ribosomes; some codons signal stopping rather than an amino acid. When a simple calculation excludes start/stop complications and non-coding DNA, three coding bases are needed per amino acid.",
+        "Genes contain instructions for making proteins; they do not contain ready-made proteins or amino acids. Use a supplied code table if asked to name amino acids. A bare sequence of letters without a defined strand or code key is not enough for an unambiguous translation exercise."
+      ],
+      "example": {
+        "question": "A simplified coding segment specifies a chain of 24 amino acids. Ignore the stop signal and non-coding regions. How many coding bases are needed?",
+        "steps": [
+          "Each amino acid corresponds to three coding bases.",
+          "24 × 3 = 72 bases.",
+          "The result counts one coding sequence, not both DNA strands together."
+        ],
+        "explanation": "The assumptions are part of the question; do not add a stop triplet when it has been excluded."
+      },
+      "practice": {
+        "question": "Why can changing the order of bases in a gene affect a protein?",
+        "answer": "It can change the order of amino acids, which may change protein folding and function.",
+        "explanation": "A sequence determines an ordered chain, not just the total number of amino acids."
+      },
+      "terms": [
+        "gene",
+        "triplet",
+        "amino acid",
+        "protein",
+        "codon"
+      ],
+      "commonMistakes": [
+        "Do not count the complementary DNA strand as extra instructions for the same chain.",
+        "Three bases form a triplet; three amino acids do not form a base."
+      ]
+    },
+    {
+      "id": "rna-and-transcription",
+      "title": "RNA and transcription in the nucleus",
+      "points": [
+        "1.6",
+        "1.8"
+      ],
+      "paragraphs": [
+        "RNA is a second nucleic acid. It is usually single-stranded, contains the sugar ribose and uses uracil (U) in place of thymine. Messenger RNA (mRNA) carries a copy of a gene’s information from DNA in the nucleus to ribosomes in the cytoplasm.",
+        "During transcription, part of the DNA is opened and a complementary mRNA strand is formed using one DNA strand as the template. RNA nucleotides pair with the template: DNA A pairs with RNA U, DNA T with RNA A, C with G and G with C. The mRNA then leaves the nucleus; the DNA stays there.",
+        "Be clear which sequence is supplied. A DNA template sequence must be complemented to obtain the mRNA. A DNA coding-strand sequence matches the mRNA base order except that RNA has U instead of T. These are different instructions, so an examiner-style question should identify the strand."
+      ],
+      "example": {
+        "question": "An aligned DNA template segment is T A C G G A. Write the mRNA bases formed directly opposite it.",
+        "steps": [
+          "Use RNA complementary pairing, including U opposite DNA A.",
+          "The aligned mRNA row is A U G C C U.",
+          "Keep the sequence in the supplied alignment; no reversal is requested."
+        ],
+        "explanation": "Replacing every T with U in the template would be wrong because the template must first be complemented."
+      },
+      "practice": {
+        "question": "State two structural differences between DNA and RNA.",
+        "answer": "DNA is double-stranded and contains deoxyribose and thymine; RNA is usually single-stranded and contains ribose and uracil.",
+        "explanation": "Any two correctly paired structural comparisons address the question."
+      },
+      "terms": [
+        "RNA",
+        "ribose",
+        "uracil",
+        "mRNA",
+        "transcription",
+        "template strand",
+        "coding strand"
+      ],
+      "commonMistakes": [
+        "mRNA leaves the nucleus; the DNA molecule does not travel to the ribosome.",
+        "Transcription produces RNA, not a polypeptide."
+      ]
+    },
+    {
+      "id": "translation-at-ribosomes",
+      "title": "Translation: assembling the polypeptide",
+      "points": [
+        "1.8"
+      ],
+      "paragraphs": [
+        "At a ribosome, the mRNA sequence is read in codons, each consisting of three bases. Transfer RNA (tRNA) molecules carry amino acids. A tRNA has an anticodon that pairs with the appropriate mRNA codon, bringing the matching amino acid into position.",
+        "The ribosome links the amino acids in the specified order, forming a polypeptide chain. As it moves along the mRNA, different tRNAs bring the next amino acids. The polypeptide can then fold into a functional protein. The sequence of events is transcription in the nucleus, mRNA transfer to the cytoplasm, then translation at a ribosome.",
+        "For short sequence exercises, follow the supplied codon key and count complete triplets. A codon belongs to mRNA; an anticodon belongs to tRNA. The tRNA is a carrier and matching molecule, not the amino acid itself."
+      ],
+      "example": {
+        "question": "A supplied key says AUG = methionine and GCU = alanine. What ordered amino-acid sequence is specified by AUG GCU GCU?",
+        "steps": [
+          "Divide the mRNA into AUG, GCU and GCU.",
+          "Use the key for each complete codon.",
+          "The sequence is methionine–alanine–alanine."
+        ],
+        "explanation": "This is a short fragment, not a claim that a three-amino-acid chain is a complete functional protein."
+      },
+      "practice": {
+        "question": "Explain the role of tRNA in translation.",
+        "answer": "A tRNA carries an amino acid and pairs its anticodon with the matching mRNA codon at the ribosome, helping place amino acids in the correct order.",
+        "explanation": "A complete explanation links transport, matching and the growing chain."
+      },
+      "terms": [
+        "translation",
+        "tRNA",
+        "anticodon",
+        "polypeptide",
+        "ribosome"
+      ],
+      "commonMistakes": [
+        "Do not interchange codon and anticodon.",
+        "The ribosome joins amino acids; it does not join DNA bases into a protein."
+      ]
+    },
+    {
+      "id": "mutations-and-phenotype",
+      "title": "Why a mutation may change a characteristic",
+      "points": [
+        "1.7"
+      ],
+      "paragraphs": [
+        "A DNA mutation is a change in the base sequence. A changed sequence may alter a codon and therefore an amino acid in a protein. The altered amino-acid sequence can affect folding or function, which may change the organism’s phenotype: its observable characteristics.",
+        "The word may is essential. Different codons can specify the same amino acid, so some sequence changes leave the amino-acid sequence unchanged. Even a changed amino acid may not noticeably affect a protein’s function. A mutation is not automatically harmful, useful or visibly expressed.",
+        "Build a causal chain rather than jumping straight from a changed base to a disease or trait. When a question supplies a code key or functional evidence, use that information and state the limits of what it shows."
+      ],
+      "example": {
+        "question": "A provided mRNA key says GCU and GCC both code for alanine. A DNA change makes one mRNA codon change from GCU to GCC. Must the protein’s amino-acid sequence change?",
+        "steps": [
+          "Both codons specify alanine according to the key.",
+          "The amino acid at that position is unchanged.",
+          "A base-sequence change therefore need not alter the amino-acid sequence or phenotype."
+        ],
+        "explanation": "The conclusion follows from the supplied key; it does not mean all mutations are silent."
+      },
+      "practice": {
+        "question": "Outline how a mutation could change an observable characteristic.",
+        "answer": "A changed DNA base sequence may change the amino-acid sequence, affecting protein folding or function and hence a characteristic.",
+        "explanation": "Each link is conditional; do not claim every mutation changes phenotype."
+      },
+      "terms": [
+        "mutation",
+        "phenotype",
+        "base sequence",
+        "silent mutation"
+      ],
+      "commonMistakes": [
+        "A mutation changes a base sequence, not an amino acid directly.",
+        "Do not describe all mutations as harmful."
+      ]
+    },
+    {
+      "id": "engineering-bacteria",
+      "title": "Using engineered bacteria to make insulin",
+      "points": [
+        "1.9"
+      ],
+      "paragraphs": [
+        "Genetic engineering changes an organism’s genetic material to give it a desired property. To produce human insulin using bacteria, DNA coding for the human protein is introduced into bacterial cells so that they can express it. The bacteria make the protein; the gene itself is not insulin.",
+        "In a simplified method, the required DNA sequence and a bacterial plasmid are cut using suitable restriction enzymes. DNA ligase joins the sequence into the plasmid, producing recombinant DNA. The plasmid acts as a vector to carry the sequence into bacteria. Cells that successfully take up the required construct are selected and grown in controlled culture.",
+        "The bacteria copy the inserted DNA as they reproduce and use its information to produce the protein. Insulin is collected and purified before it can be used as a medicine. A working construct needs appropriate control sequences and a sequence the bacterial cells can express; this school-level outline does not imply that inserting any piece of human DNA automatically produces active insulin."
+      ],
+      "example": {
+        "question": "Explain why a bacterial plasmid is useful in a simplified insulin-production method.",
+        "steps": [
+          "It can carry the DNA sequence for insulin into a bacterial cell.",
+          "The recombinant plasmid can be copied in the bacterial population.",
+          "Expression of the inserted sequence allows the bacteria to produce the protein."
+        ],
+        "explanation": "Distinguish carrying a gene from producing its protein product."
+      },
+      "practice": {
+        "question": "What is the role of DNA ligase in the simplified method?",
+        "answer": "It joins the required DNA sequence to the opened plasmid DNA.",
+        "explanation": "Restriction enzymes cut DNA; ligase joins it."
+      },
+      "terms": [
+        "genetic engineering",
+        "insulin",
+        "restriction enzyme",
+        "DNA ligase",
+        "vector",
+        "recombinant DNA"
+      ],
+      "commonMistakes": [
+        "Bacteria receive DNA instructions, not ready-made insulin.",
+        "A useful protein must be collected and purified; bacteria are not administered as insulin."
+      ]
+    },
+    {
+      "id": "engineering-plants",
+      "title": "Engineered plants: two different health aims",
+      "points": [
+        "1.9"
+      ],
+      "paragraphs": [
+        "Engineered plants can be used to produce a desired protein or to alter a biochemical pathway. These are different aims, even though both depend on changed genetic instructions.",
+        "In the vaccine example specified by the syllabus, a plant is engineered to make a pathogen antigen, such as a hepatitis B protein. The intended use is to stimulate an immune response against that antigen. This is a production concept and research application; it does not mean that an ordinary crop is a vaccine or that eating an engineered plant is automatically a safe, effective vaccination.",
+        "Golden Rice is designed to produce beta-carotene in the grain’s edible endosperm. Beta-carotene is a precursor that the body can convert into vitamin A. The aim is improved vitamin A nutrition. Do not describe the rice as containing human insulin or as a vaccine: the engineered product and intended benefit are different.",
+        "An explanation should connect the introduced genetic information to the product and then to the intended benefit. Evidence of successful gene insertion alone does not establish the amount produced, nutritional benefit or vaccine effectiveness."
+      ],
+      "example": {
+        "question": "Compare the intended products of a plant engineered for a hepatitis B vaccine and Golden Rice.",
+        "steps": [
+          "The vaccine plant produces an antigenic protein associated with the pathogen.",
+          "Golden Rice produces beta-carotene, a vitamin A precursor, in the edible grain.",
+          "The first aims to support an immune response; the second aims to improve nutrition."
+        ],
+        "explanation": "Keep the molecular product separate from its intended benefit."
+      },
+      "practice": {
+        "question": "Why is “Golden Rice produces vitamin A directly” imprecise?",
+        "answer": "The engineered grain produces beta-carotene, which the body can convert to vitamin A.",
+        "explanation": "Identify the precursor rather than skipping the conversion step."
+      },
+      "terms": [
+        "Golden Rice",
+        "beta-carotene",
+        "vitamin A",
+        "antigen",
+        "plant-produced vaccine"
+      ],
+      "commonMistakes": [
+        "A vaccine antigen is not the whole disease-causing organism.",
+        "Do not claim research applications are established treatments solely because they appear in a syllabus."
+      ]
+    },
+    {
+      "id": "mitosis-and-its-uses",
+      "title": "Mitosis: preserving the chromosome set",
+      "points": [
+        "1.10",
+        "1.11"
+      ],
+      "paragraphs": [
+        "Mitosis produces genetically identical nuclei and is used in growth, repair, cloning and asexual reproduction. In the human diploid-cell example, division produces two diploid daughter cells with the same chromosome number and genetic information as the parent, provided no mutation occurs. Meiosis, which produces gametes, has a different outcome.",
+        "Growth can increase cell number through mitosis; repair replaces lost or damaged cells. Cloning uses divisions that preserve the genetic information of the starting cell. In organisms reproducing asexually by mitotic division, offspring can retain the parent’s genetic information without fusion of gametes. These are uses of the same copying-and-separation process, not four different types of mitosis.",
+        "DNA is copied before mitosis. Each replicated chromosome then consists of two sister chromatids joined at a centromere. Copying the DNA does not by itself double the number of chromosome sets: the sister chromatids are copies of the same chromosome.",
+        "In prophase, chromosomes condense, the spindle forms and the nuclear envelope breaks down. In metaphase, the duplicated chromosomes line up at the cell’s equator. In anaphase, sister chromatids separate and move to opposite poles. In telophase, new nuclear envelopes form around the chromosome sets and the chromosomes become less condensed.",
+        "Division of the cytoplasm, called cytokinesis, separates the cell into two daughter cells. Keep nuclear division and cytoplasmic division distinct while explaining the overall result. If a human body cell begins with 46 chromosomes, each daughter nucleus normally has 46; it does not receive just 23."
+      ],
+      "example": {
+        "question": "A diploid cell has six chromosomes before DNA replication. State the chromosome number in each daughter cell after mitosis and explain.",
+        "steps": [
+          "The DNA is copied before the chromosomes are separated.",
+          "Sister chromatids are distributed so that each daughter receives a copy of every chromosome.",
+          "Each daughter cell has six chromosomes and remains diploid."
+        ],
+        "explanation": "Count chromosomes in each resulting cell, not the total across both daughters."
+      },
+      "practice": {
+        "question": "At which stage do sister chromatids move to opposite poles?",
+        "answer": "Anaphase.",
+        "explanation": "Metaphase is alignment at the equator; anaphase is separation."
+      },
+      "terms": [
+        "mitosis",
+        "prophase",
+        "metaphase",
+        "anaphase",
+        "telophase",
+        "chromatid",
+        "diploid",
+        "cytokinesis"
+      ],
+      "commonMistakes": [
+        "DNA replication occurs before mitosis.",
+        "Mitosis does not halve the chromosome number."
+      ],
+      "diagram": {
+        "src": "/diagrams/human-biology-mitosis.svg",
+        "alt": "Four mitotic stages in a model cell: four duplicated chromosomes align, sister chromatids separate, and two nuclei receive four chromosomes each.",
+        "caption": "Original schematic for a model diploid cell with four chromosomes. Replication occurs beforehand; cytokinesis separates the cells after nuclear division. The chromosome set is retained. Not a microscopy image."
+      }
+    },
+    {
+      "id": "stem-cells-and-evidence",
+      "title": "Stem cells: potential, limits and ethical arguments",
+      "points": [
+        "1.12",
+        "1.13"
+      ],
+      "paragraphs": [
+        "Stem cells can divide to make more stem cells and can differentiate into specialised cells. Embryonic stem cells have a broad ability to form body-cell types. Adult stem cells maintain or repair particular tissues and generally have a more restricted range of cell types they can produce.",
+        "Potential benefits include studying development, testing how cells respond to medicines and replacing damaged cells in suitable, validated applications. The ability to differentiate in a laboratory does not by itself prove that a transplant will restore a working tissue in a person.",
+        "Biological difficulties include controlling differentiation and growth, ensuring that cells function correctly, and possible immune rejection. Cells from the same patient may reduce some matching problems, but this does not remove every risk or make every proposed use effective.",
+        "Ethical evaluation considers the source of cells, informed donor consent, embryo moral status, expected benefits, welfare and fair access. Obtaining embryonic cells may involve destroying an embryo, which some people consider unacceptable; others weigh this concern against potential benefit. Adult-cell research can avoid that particular embryo issue but still requires consent and evidence of safety. State the argument and its reasoning rather than presenting one value judgement as a biological fact."
+      ],
+      "example": {
+        "question": "A proposal claims a stem-cell procedure is ready because the cells made the desired cell type in a dish. Evaluate the evidence.",
+        "steps": [
+          "Successful differentiation is relevant evidence of potential.",
+          "It does not show that the cells integrate, function long-term or grow safely in a recipient.",
+          "Further controlled evidence is needed before claiming the procedure is effective."
+        ],
+        "explanation": "Separate a promising laboratory result from an established application."
+      },
+      "practice": {
+        "question": "Give one biological difference and one ethical distinction between embryonic and adult stem-cell research.",
+        "answer": "Embryonic cells generally have a broader differentiation range; adult stem cells are usually more restricted. Adult-cell collection can avoid embryo destruction, although consent and welfare still matter.",
+        "explanation": "Compare both types on the same biological and ethical dimensions."
+      },
+      "terms": [
+        "stem cell",
+        "differentiation",
+        "embryonic",
+        "adult stem cell",
+        "consent",
+        "ethics"
+      ],
+      "commonMistakes": [
+        "Potential to form a cell type is not proof of a cure.",
+        "Adult stem-cell use is not automatically free of ethical questions or risks."
+      ]
+    },
+    {
+      "id": "cells-tissues-organs",
+      "title": "From specialised cells to organs",
+      "points": [
+        "1.14"
+      ],
+      "paragraphs": [
+        "Cells with related structures and functions work together in tissues. Several tissues cooperate in an organ. A tissue may include cells and material outside cells, so do not assume every tissue is a tightly packed sheet of identical cells.",
+        "The heart is an organ containing cardiac muscle, nervous tissue, blood and other supporting tissues. Its pumping function depends on their cooperation: muscle contracts, coordination controls activity, and the blood supply supports living cells. Naming one cell type is not a complete description of the organ.",
+        "Use the hierarchy in the correct direction: cell → tissue → organ. Later chapters extend this to organ systems and the whole organism. The level of organisation tells you how structures work together, rather than simply how large an object is."
+      ],
+      "example": {
+        "question": "Explain why the heart is described as an organ rather than just a muscle tissue.",
+        "steps": [
+          "It contains several tissues.",
+          "These tissues perform different but coordinated roles.",
+          "Together they enable the heart to pump blood."
+        ],
+        "explanation": "The defining idea is cooperation between tissues, not size alone."
+      },
+      "practice": {
+        "question": "Put these in order from simpler to more complex: muscle tissue, heart, cardiac muscle cell.",
+        "answer": "Cardiac muscle cell → muscle tissue → heart.",
+        "explanation": "A group of cooperating cells forms tissue; tissues cooperate within an organ."
+      },
+      "terms": [
+        "cell",
+        "tissue",
+        "organ",
+        "organisation"
+      ],
+      "commonMistakes": [
+        "An organ contains more than one type of tissue.",
+        "Blood is a tissue even though it is fluid."
+      ]
+    },
+    {
+      "id": "bone-and-blood-tissues",
+      "title": "Bone and blood: different supporting materials",
+      "points": [
+        "1.15"
+      ],
+      "paragraphs": [
+        "Bone is a living tissue. Its cells lie within a hard extracellular matrix containing collagen and mineral salts. Compact bone can show rings of matrix around central canals containing blood vessels and nerves; small spaces contain bone cells. Spongy bone has a lattice of struts with spaces between them. The hard matrix provides support, but bone is not an inert solid block.",
+        "Blood consists of cells and cell fragments suspended in liquid plasma. Red blood cells are small biconcave discs, normally without nuclei in mature human blood. White blood cells have nuclei and show different shapes. Platelets are much smaller cell fragments. Their contrasting appearances help distinguish them in a stained blood smear.",
+        "Relate structure to recognition before adding function: pale-centred discs suggest red blood cells; a visible nucleus supports a white blood cell; tiny fragments may be platelets. Colour and apparent size depend on preparation and magnification. A verified set of bone sections and blood-smear images is still needed for complete microscopy practice."
+      ],
+      "example": {
+        "question": "A stained human blood smear shows many discs without nuclei and a few larger nucleated cells. Identify the two main cell types.",
+        "steps": [
+          "The numerous anucleate discs are red blood cells.",
+          "The larger nucleated cells are white blood cells.",
+          "Use the nucleus and shape together, rather than stain colour alone."
+        ],
+        "explanation": "The identification links visible features to the tissue description."
+      },
+      "practice": {
+        "question": "Why is bone described as living tissue despite its hard matrix?",
+        "answer": "It contains living cells and is supplied by blood vessels; its matrix is produced and maintained by cells.",
+        "explanation": "Hardness does not imply that the whole tissue is non-living."
+      },
+      "terms": [
+        "bone",
+        "matrix",
+        "collagen",
+        "compact bone",
+        "spongy bone",
+        "plasma",
+        "red blood cell",
+        "white blood cell",
+        "platelet"
+      ],
+      "commonMistakes": [
+        "Mature human red blood cells normally lack a nucleus; white blood cells do not.",
+        "Bone contains cells and extracellular matrix."
+      ]
+    },
+    {
+      "id": "three-muscle-types",
+      "title": "Recognising three types of muscle",
+      "points": [
+        "1.15"
+      ],
+      "paragraphs": [
+        "Voluntary skeletal muscle consists of long fibres that show alternating bands, or striations, under a suitable light microscope. Each fibre contains many nuclei, often near its edge. Its contraction moves the skeleton under voluntary control, although reflex actions can also use it.",
+        "Involuntary smooth muscle has elongated, tapering cells, usually with one central nucleus and no visible striations. It occurs in walls of structures such as the intestine. Its appearance differs from skeletal muscle even though both can contract.",
+        "Cardiac muscle is striated but consists of branching cells, generally with central nuclei. Connections between cells, including intercalated discs visible in suitable sections, help distinguish it from skeletal muscle. It contracts without conscious control in the heart. Do not classify a tissue from striations alone: both skeletal and cardiac muscle can show them.",
+        "The apparent shape depends on how the tissue was cut. Longitudinal and transverse sections look different. These recognition rules need practice with genuine light micrographs; the chapter does not yet include a complete checked image set."
+      ],
+      "example": {
+        "question": "A muscle image shows branching, striated cells with central nuclei. Which muscle type fits best?",
+        "steps": [
+          "Striations fit skeletal or cardiac muscle.",
+          "Branching cells and central nuclei support cardiac muscle.",
+          "Use the combination to distinguish it from long skeletal fibres."
+        ],
+        "explanation": "One shared feature rarely separates all three types."
+      },
+      "practice": {
+        "question": "Give two structural differences between skeletal and smooth muscle.",
+        "answer": "Skeletal fibres are striated and have many nuclei; smooth muscle cells are not visibly striated and usually have one nucleus.",
+        "explanation": "Compare the same properties in each tissue."
+      },
+      "terms": [
+        "skeletal muscle",
+        "smooth muscle",
+        "cardiac muscle",
+        "striations",
+        "intercalated discs"
+      ],
+      "commonMistakes": [
+        "Cardiac muscle is involuntary despite being striated.",
+        "Smooth muscle is not simply unlabelled skeletal muscle."
+      ]
+    },
+    {
+      "id": "nerves-and-epithelia",
+      "title": "Nervous tissue and epithelial sheets",
+      "points": [
+        "1.15"
+      ],
+      "paragraphs": [
+        "Nervous tissue contains neurones and supporting cells. A neurone has a cell body with a nucleus and processes that connect to other cells. Dendrites receive input, while a long axon carries impulses away from the cell body. Some axons are surrounded by a myelin sheath. In a thin section, the whole length of a neurone is unlikely to be visible.",
+        "Epithelial tissue forms sheets of closely arranged cells covering surfaces and lining spaces. Squamous epithelial cells are thin and flattened. Cells from the lining of the cheek can appear broad and irregular when separated on a slide, with a membrane, cytoplasm and nucleus. The intact cheek lining has layers; an isolated cheek cell does not show the full tissue arrangement.",
+        "The trachea has ciliated epithelial cells with hair-like cilia on their exposed surface. Their coordinated beating moves mucus and trapped material towards the throat. Mucus-producing goblet cells occur among them. Distinguish moving cilia from mucus: cilia provide movement, while mucus traps particles.",
+        "For a tissue image, describe the visible cell arrangement and structures before naming a function. Close packing supports an epithelial sheet; a ciliated surface supports a role in moving material. The function is inferred from structure, not directly photographed."
+      ],
+      "example": {
+        "question": "Explain how the ciliated lining of the trachea helps clear trapped particles.",
+        "steps": [
+          "Particles become trapped in mucus.",
+          "Cilia beat to move the mucus towards the throat.",
+          "The particles are carried with the mucus away from the deeper airways."
+        ],
+        "explanation": "Link trapping and movement to the correct structures."
+      },
+      "practice": {
+        "question": "What does “squamous” describe, and which syllabus example illustrates it?",
+        "answer": "It describes thin, flattened epithelial cells; cells lining the cheek provide the specified example.",
+        "explanation": "It describes cell shape, not the presence of cilia."
+      },
+      "terms": [
+        "neurone",
+        "axon",
+        "dendrite",
+        "myelin",
+        "squamous",
+        "ciliated epithelium",
+        "trachea",
+        "goblet cell"
+      ],
+      "commonMistakes": [
+        "Cilia move mucus; they do not secrete it.",
+        "A separated cheek cell is not a complete view of the layered lining."
+      ]
+    },
+    {
+      "id": "egg-and-sperm",
+      "title": "Egg and sperm: different structures, shared role",
+      "points": [
+        "1.16"
+      ],
+      "paragraphs": [
+        "A sperm cell is specialised to reach and fuse with an egg. Its head contains a haploid nucleus and an acrosome with enzymes involved in penetration of the egg’s surrounding layers. The midpiece contains many mitochondria, supporting energy transfer for movement. The tail, or flagellum, propels the cell.",
+        "An egg is much larger and contains a haploid nucleus within a large volume of cytoplasm. Its cytoplasm contains materials and organelles that support the earliest stages of development. The surrounding layers and cell membrane participate in sperm recognition and the changes following fertilisation that help prevent entry of additional sperm.",
+        "Both gametes carry one set of chromosomes. Their nuclei combine at fertilisation, restoring the diploid number. Human eggs do not have the very large yolk store found in bird eggs: explain their cytoplasmic resources without describing them as the embryo’s food supply for the whole pregnancy.",
+        "For structure–function questions, give a specific link: mitochondria support movement by transferring energy; the acrosome supplies enzymes; the haploid nucleus contributes one chromosome set. Avoid saying that every feature merely “helps reproduction”."
+      ],
+      "example": {
+        "question": "Explain two ways in which a sperm cell is adapted for reaching and entering an egg.",
+        "steps": [
+          "Its tail provides propulsion towards the egg.",
+          "Mitochondria transfer energy to support movement.",
+          "Its acrosome contains enzymes involved in penetrating the surrounding layers."
+        ],
+        "explanation": "Any requested pair should link the named structure to its specific role."
+      },
+      "practice": {
+        "question": "Why do the egg and sperm need haploid nuclei?",
+        "answer": "Fusion of their nuclei combines one chromosome set from each, restoring the diploid number rather than doubling it each generation.",
+        "explanation": "The explanation links the cell adaptation to the outcome of fertilisation."
+      },
+      "terms": [
+        "ovum",
+        "sperm",
+        "haploid",
+        "acrosome",
+        "flagellum",
+        "fertilisation"
+      ],
+      "commonMistakes": [
+        "Mitochondria transfer energy; they do not create it.",
+        "The egg’s cytoplasm does not supply food for an entire human pregnancy."
+      ]
     }
   ],
   "status": "source-checked",
   "complete": false,
-  "humanReviewed": false
+  "humanReviewed": false,
+  "supportingSources": [
+    {
+      "title": "NHGRI: recombinant DNA technology",
+      "url": "https://www.genome.gov/genetics-glossary/Recombinant-DNA-Technology",
+      "sectionIds": [
+        "engineering-bacteria"
+      ]
+    },
+    {
+      "title": "NIH: stem-cell basics",
+      "url": "https://stemcells.nih.gov/node/16",
+      "sectionIds": [
+        "stem-cells-and-evidence"
+      ]
+    },
+    {
+      "title": "Golden Rice project: beta-carotene in the grain",
+      "url": "https://www.goldenrice.org/Content3-Why/why3_FAQ.php",
+      "sectionIds": [
+        "engineering-plants"
+      ]
+    },
+    {
+      "title": "PNAS research: hepatitis B antigen produced in potatoes",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15728371/",
+      "sectionIds": [
+        "engineering-plants"
+      ]
+    }
+  ]
 }

@@ -1,8 +1,14 @@
 import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import assert from 'node:assert/strict';
+// Read-only by default. An explicit output creates a new report and must never
+// replace historical evidence, even when a caller reuses an old filename.
+const args = process.argv.slice(2);
+assert(args.length === 0 || (args.length === 2 && args[0] === '--output'),
+  'Usage: node scripts/validate-content.mjs [--output NEW_REPORT_PATH]');
 const sources = JSON.parse(readFileSync('research/sources.json', 'utf8'));
 const rows = readdirSync('content/notes')
   .filter((x) => x.endsWith('.json'))
+  .sort()
   .map((f) => JSON.parse(readFileSync('content/notes/' + f, 'utf8')));
 const checks = [];
 for (const n of rows) {
@@ -28,7 +34,8 @@ for (const n of rows) {
   });
 }
 const report = {
-  date: '2026-09-09',
+  date: new Date().toISOString().slice(0, 10),
+  generatedAt: new Date().toISOString(),
   scope:
     'Content shape and provenance references. Educational review is separately recorded; this check does not certify full chapters.',
   chaptersWithPartialNotes: rows.length,
@@ -37,8 +44,5 @@ const report = {
   fullyCoveredSpecificationPoints: 0,
   checks,
 };
-writeFileSync(
-  'research/reviews/2026-09-09-note-check.json',
-  JSON.stringify(report, null, 2) + '\n',
-);
+if (args.length) writeFileSync(args[1], JSON.stringify(report, null, 2) + '\n', { flag: 'wx' });
 console.log(JSON.stringify(report, null, 2));

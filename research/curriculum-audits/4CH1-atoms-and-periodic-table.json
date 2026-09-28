@@ -1,0 +1,537 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4CH1",
+  "chapterId": "principles",
+  "documentId": "4CH1-spec",
+  "specificationIssue": "Issue 3 - September 2024",
+  "documentSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "reviewDate": "2026-09-21",
+  "reviewer": "Codex Astra",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Bounded audit of 1.14–1.22, visually checked on Pearson Issue 3 PDF page 18 / printed 12. Explanations and calculations present; first-20 table/diagram and independent assessment validation remain unfinished.",
+  "identifierPolicy": "Requirement suffixes r1, r2, etc. are local editorial audit identifiers; only the parent reference is publisher-numbered.",
+  "notePath": "content/notes/chemistry.json",
+  "parents": [
+    {
+      "parentId": "4CH1:issue3:1.14",
+      "officialReference": "1.14",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Definitions and worked reasoning exist, but independent assessment and visual-interpretation review remain partial.",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.14:r1",
+          "origin": "source-clause",
+          "summary": "Define an atom while recognising internal subatomic structure.",
+          "teachingEvidence": [
+            {
+              "sectionId": "atoms-and-molecules",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add independently checked particle-diagram classification.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:1.14:r2",
+          "origin": "source-clause",
+          "summary": "Define a molecule without treating all molecules as compounds.",
+          "teachingEvidence": [
+            {
+              "sectionId": "atoms-and-molecules",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add independently checked particle-diagram classification.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4CH1:issue3:1.15",
+      "officialReference": "1.15",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Definitions and worked reasoning exist, but independent assessment and visual-interpretation review remain partial.",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.15:r1",
+          "origin": "source-clause",
+          "summary": "Describe nuclear protons with relative mass 1 and charge +1.",
+          "teachingEvidence": [
+            {
+              "sectionId": "subatomic-particles",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess all three properties for each particle using an independent representation.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:1.15:r2",
+          "origin": "source-clause",
+          "summary": "Describe nuclear neutrons with relative mass 1 and zero charge.",
+          "teachingEvidence": [
+            {
+              "sectionId": "subatomic-particles",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess all three properties for each particle using an independent representation.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:1.15:r3",
+          "origin": "source-clause",
+          "summary": "Describe surrounding electrons with very small relative mass and charge −1.",
+          "teachingEvidence": [
+            {
+              "sectionId": "subatomic-particles",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess all three properties for each particle using an independent representation.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4CH1:issue3:1.16",
+      "officialReference": "1.16",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Definitions and worked reasoning exist, but independent assessment and visual-interpretation review remain partial.",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.16:r1",
+          "origin": "source-clause",
+          "summary": "Define atomic number by proton count.",
+          "teachingEvidence": [
+            {
+              "sectionId": "atomic-number-and-isotopes",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess the distinction between an individual isotope and an abundance-weighted atomic mass.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:1.16:r2",
+          "origin": "source-clause",
+          "summary": "Define mass number by proton-plus-neutron count.",
+          "teachingEvidence": [
+            {
+              "sectionId": "atomic-number-and-isotopes",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess the distinction between an individual isotope and an abundance-weighted atomic mass.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:1.16:r3",
+          "origin": "source-clause",
+          "summary": "Define isotopes by same proton and different neutron numbers.",
+          "teachingEvidence": [
+            {
+              "sectionId": "atomic-number-and-isotopes",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess the distinction between an individual isotope and an abundance-weighted atomic mass.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:1.16:r4",
+          "origin": "source-clause",
+          "summary": "Define relative atomic mass against one twelfth of carbon-12.",
+          "teachingEvidence": [
+            {
+              "sectionId": "relative-atomic-mass",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess the distinction between an individual isotope and an abundance-weighted atomic mass.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4CH1:issue3:1.17",
+      "officialReference": "1.17",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Definitions and worked reasoning exist, but independent assessment and visual-interpretation review remain partial.",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.17:r1",
+          "origin": "source-clause",
+          "summary": "Calculate a weighted mean from percentage abundances.",
+          "teachingEvidence": [
+            {
+              "sectionId": "relative-atomic-mass",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate independently checked percentage, ratio and reverse-abundance tasks.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:1.17:r2",
+          "origin": "source-clause",
+          "summary": "Calculate a weighted mean from non-percentage relative abundances.",
+          "teachingEvidence": [
+            {
+              "sectionId": "relative-atomic-mass",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate independently checked percentage, ratio and reverse-abundance tasks.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4CH1:issue3:1.18",
+      "officialReference": "1.18",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Definitions and worked reasoning exist, but independent assessment and visual-interpretation review remain partial.",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.18:r1",
+          "origin": "source-clause",
+          "summary": "Use increasing atomic number for element ordering.",
+          "teachingEvidence": [
+            {
+              "sectionId": "periodic-table-and-shells",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add an accessible Periodic Table and independently checked lookup questions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:1.18:r2",
+          "origin": "source-clause",
+          "summary": "Identify vertical groups.",
+          "teachingEvidence": [
+            {
+              "sectionId": "periodic-table-and-shells",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add an accessible Periodic Table and independently checked lookup questions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:1.18:r3",
+          "origin": "source-clause",
+          "summary": "Identify horizontal periods.",
+          "teachingEvidence": [
+            {
+              "sectionId": "periodic-table-and-shells",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add an accessible Periodic Table and independently checked lookup questions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4CH1:issue3:1.19",
+      "officialReference": "1.19",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Definitions and worked reasoning exist, but independent assessment and visual-interpretation review remain partial.",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.19:r1",
+          "origin": "source-clause",
+          "summary": "Use atomic number and the limited first-20 shell model to determine electron configurations.",
+          "teachingEvidence": [
+            {
+              "sectionId": "periodic-table-and-shells",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check individual configurations across all first 20 elements and varied table representations.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4CH1:issue3:1.20",
+      "officialReference": "1.20",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Definitions and worked reasoning exist, but independent assessment and visual-interpretation review remain partial.",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.20:r1",
+          "origin": "source-clause",
+          "summary": "Use electrical conductivity as classification evidence with appropriate exceptions.",
+          "teachingEvidence": [
+            {
+              "sectionId": "metals-and-non-metals",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess conflicting evidence and amphoteric/neutral exceptions without unsupported absolute rules.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:1.20:r2",
+          "origin": "source-clause",
+          "summary": "Use acid-base character of oxides as classification evidence.",
+          "teachingEvidence": [
+            {
+              "sectionId": "metals-and-non-metals",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess conflicting evidence and amphoteric/neutral exceptions without unsupported absolute rules.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4CH1:issue3:1.21",
+      "officialReference": "1.21",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Definitions and worked reasoning exist, but independent assessment and visual-interpretation review remain partial.",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.21:r1",
+          "origin": "source-clause",
+          "summary": "Identify typical metal and non-metal regions.",
+          "teachingEvidence": [
+            {
+              "sectionId": "metals-and-non-metals",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add independent element-location tasks using the supplied table.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:1.21:r2",
+          "origin": "source-clause",
+          "summary": "Recognise hydrogen as a left-positioned non-metal.",
+          "teachingEvidence": [
+            {
+              "sectionId": "metals-and-non-metals",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add independent element-location tasks using the supplied table.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4CH1:issue3:1.22",
+      "officialReference": "1.22",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Definitions and worked reasoning exist, but independent assessment and visual-interpretation review remain partial.",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.22:r1",
+          "origin": "source-clause",
+          "summary": "Relate occupied shells to period.",
+          "teachingEvidence": [
+            {
+              "sectionId": "periodic-table-and-shells",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess both course and modern group labels and prevent extension of the rule to transition metals.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:1.22:r2",
+          "origin": "source-clause",
+          "summary": "Relate outer electrons to the main-group label.",
+          "teachingEvidence": [
+            {
+              "sectionId": "periodic-table-and-shells",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess both course and modern group labels and prevent extension of the rule to transition metals.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:1.22:r3",
+          "origin": "source-clause",
+          "summary": "Explain noble-gas full shells including helium.",
+          "teachingEvidence": [
+            {
+              "sectionId": "periodic-table-and-shells",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess both course and modern group labels and prevent extension of the rule to transition metals.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    }
+  ],
+  "completeTeachingPoints": 0,
+  "completeChapters": 0
+}

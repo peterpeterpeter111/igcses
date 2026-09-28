@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { templateContractErrors } from '../scripts/template-contract.mjs';
 import physics from '../research/templates/4PH1-collinear-resultant.v0.1.0.json' with { type: 'json' };
 import english from '../research/templates/4EB1-retrieve-two-causes.v0.1.0.json' with { type: 'json' };
+import weight from '../research/templates/4PH1-weight-convert-mass.v0.1.0.json' with { type: 'json' };
 
 // Hypothetical metadata fixture tests the gate; it is never saved as evidence,
 // imported by the registry, or counted as an actually validated family.
@@ -19,7 +20,7 @@ function promotionFixture() {
 }
 
 void test('saved families remain valid provisional contracts', () => {
-  for (const f of [physics, english]) {
+  for (const f of [physics, english, weight]) {
     assert.deepEqual(templateContractErrors(f), []);
     assert.equal(f.status, 'provisional');
     assert.deepEqual(f.customQuiz.validatedMarks, []);

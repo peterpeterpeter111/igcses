@@ -1,0 +1,806 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4HB1",
+  "chapterId": "cells-and-tissues",
+  "documentId": "4HB1-spec",
+  "specificationIssue": "Issue 2 - September 2024",
+  "documentSha256": "989c6536fa946f1361e45e3c1e0ebced240a9f4666a2c835ce9cf9724a38e30f",
+  "reviewDate": "2026-09-21",
+  "reviewer": "Codex Astra",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Bounded audit of 1.9–1.16, visually checked against Pearson Issue 2 PDF page 18 / printed 12. Microscopy and representation assessments remain unfinished; all teaching remains partial.",
+  "identifierPolicy": "Requirement suffixes r1, r2, etc. are local editorial audit identifiers; only the parent reference is publisher-numbered.",
+  "notePath": "content/notes/human-biology.json",
+  "parents": [
+    {
+      "parentId": "4HB1:issue2:1.9",
+      "officialReference": "1.9",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Textual teaching exists; missing imagery, assessment calibration and independent review prevent completion.",
+      "requirements": [
+        {
+          "id": "4HB1:issue2:1.9:r1",
+          "origin": "source-clause",
+          "summary": "Outline insertion of an expressible DNA sequence using a plasmid vector.",
+          "teachingEvidence": [
+            {
+              "sectionId": "engineering-bacteria",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess the roles of restriction enzymes, ligase, selection and expression in an unfamiliar diagram.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.9:r2",
+          "origin": "source-clause",
+          "summary": "Explain engineered bacteria producing human insulin.",
+          "teachingEvidence": [
+            {
+              "sectionId": "engineering-bacteria",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess DNA instruction versus protein product and purification.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.9:r3",
+          "origin": "source-clause",
+          "summary": "Explain engineered plants producing vaccine antigens, including hepatitis B.",
+          "teachingEvidence": [
+            {
+              "sectionId": "engineering-plants",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess the production concept without making unsupported claims of routine clinical use.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.9:r4",
+          "origin": "source-clause",
+          "summary": "Explain Golden Rice as a dietary vitamin A intervention via beta-carotene.",
+          "teachingEvidence": [
+            {
+              "sectionId": "engineering-plants",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess the precursor-to-vitamin relationship independently.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4HB1:issue2:1.10",
+      "officialReference": "1.10",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Textual teaching exists; missing imagery, assessment calibration and independent review prevent completion.",
+      "requirements": [
+        {
+          "id": "4HB1:issue2:1.10:r1",
+          "origin": "source-clause",
+          "summary": "Relate mitosis to growth.",
+          "teachingEvidence": [
+            {
+              "sectionId": "mitosis-and-its-uses",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add an independent context-specific explanation rather than recall of the list.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.10:r2",
+          "origin": "source-clause",
+          "summary": "Relate mitosis to repair.",
+          "teachingEvidence": [
+            {
+              "sectionId": "mitosis-and-its-uses",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add an independent context-specific explanation rather than recall of the list.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.10:r3",
+          "origin": "source-clause",
+          "summary": "Relate mitosis to cloning.",
+          "teachingEvidence": [
+            {
+              "sectionId": "mitosis-and-its-uses",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add an independent context-specific explanation rather than recall of the list.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.10:r4",
+          "origin": "source-clause",
+          "summary": "Relate mitosis to asexual reproduction.",
+          "teachingEvidence": [
+            {
+              "sectionId": "mitosis-and-its-uses",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add an independent context-specific explanation rather than recall of the list.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4HB1:issue2:1.11",
+      "officialReference": "1.11",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Textual teaching exists; missing imagery, assessment calibration and independent review prevent completion.",
+      "requirements": [
+        {
+          "id": "4HB1:issue2:1.11:r1",
+          "origin": "source-clause",
+          "summary": "Describe chromosome condensation and spindle formation in prophase.",
+          "teachingEvidence": [
+            {
+              "sectionId": "mitosis-and-its-uses",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add checked diagrams and blind stage/chromosome-count interpretation.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.11:r2",
+          "origin": "source-clause",
+          "summary": "Describe chromosome alignment in metaphase.",
+          "teachingEvidence": [
+            {
+              "sectionId": "mitosis-and-its-uses",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add checked diagrams and blind stage/chromosome-count interpretation.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.11:r3",
+          "origin": "source-clause",
+          "summary": "Describe sister-chromatid separation in anaphase.",
+          "teachingEvidence": [
+            {
+              "sectionId": "mitosis-and-its-uses",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add checked diagrams and blind stage/chromosome-count interpretation.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.11:r4",
+          "origin": "source-clause",
+          "summary": "Describe formation of daughter nuclei in telophase.",
+          "teachingEvidence": [
+            {
+              "sectionId": "mitosis-and-its-uses",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add checked diagrams and blind stage/chromosome-count interpretation.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.11:r5",
+          "origin": "source-clause",
+          "summary": "Explain two genetically identical diploid daughter cells after division.",
+          "teachingEvidence": [
+            {
+              "sectionId": "mitosis-and-its-uses",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add checked diagrams and blind stage/chromosome-count interpretation.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4HB1:issue2:1.12",
+      "officialReference": "1.12",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Textual teaching exists; missing imagery, assessment calibration and independent review prevent completion.",
+      "requirements": [
+        {
+          "id": "4HB1:issue2:1.12:r1",
+          "origin": "source-clause",
+          "summary": "Describe embryonic stem cells and their broad body-cell potential.",
+          "teachingEvidence": [
+            {
+              "sectionId": "stem-cells-and-evidence",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess stem-cell type and differentiation potential using evidence, not a guaranteed-treatment claim.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.12:r2",
+          "origin": "source-clause",
+          "summary": "Describe adult stem cells and their more restricted potential.",
+          "teachingEvidence": [
+            {
+              "sectionId": "stem-cells-and-evidence",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess stem-cell type and differentiation potential using evidence, not a guaranteed-treatment claim.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4HB1:issue2:1.13",
+      "officialReference": "1.13",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Textual teaching exists; missing imagery, assessment calibration and independent review prevent completion.",
+      "requirements": [
+        {
+          "id": "4HB1:issue2:1.13:r1",
+          "origin": "source-clause",
+          "summary": "Explain potential advantages of embryonic stem-cell research.",
+          "teachingEvidence": [
+            {
+              "sectionId": "stem-cells-and-evidence",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add balanced scenario-based evaluation with independent rubric review.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.13:r2",
+          "origin": "source-clause",
+          "summary": "Explain possible disadvantages of embryonic stem-cell use.",
+          "teachingEvidence": [
+            {
+              "sectionId": "stem-cells-and-evidence",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add balanced scenario-based evaluation with independent rubric review.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.13:r3",
+          "origin": "source-clause",
+          "summary": "Evaluate ethical concerns associated with embryonic sources.",
+          "teachingEvidence": [
+            {
+              "sectionId": "stem-cells-and-evidence",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add balanced scenario-based evaluation with independent rubric review.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.13:r4",
+          "origin": "source-clause",
+          "summary": "Explain potential advantages of adult stem-cell research.",
+          "teachingEvidence": [
+            {
+              "sectionId": "stem-cells-and-evidence",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add balanced scenario-based evaluation with independent rubric review.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.13:r5",
+          "origin": "source-clause",
+          "summary": "Explain possible limitations of adult stem-cell use.",
+          "teachingEvidence": [
+            {
+              "sectionId": "stem-cells-and-evidence",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add balanced scenario-based evaluation with independent rubric review.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.13:r6",
+          "origin": "source-clause",
+          "summary": "Evaluate consent and welfare in adult stem-cell research.",
+          "teachingEvidence": [
+            {
+              "sectionId": "stem-cells-and-evidence",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add balanced scenario-based evaluation with independent rubric review.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4HB1:issue2:1.14",
+      "officialReference": "1.14",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Textual teaching exists; missing imagery, assessment calibration and independent review prevent completion.",
+      "requirements": [
+        {
+          "id": "4HB1:issue2:1.14:r1",
+          "origin": "source-clause",
+          "summary": "Explain grouping of cells into tissues.",
+          "teachingEvidence": [
+            {
+              "sectionId": "cells-tissues-organs",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess the hierarchy using an organ other than the worked heart example.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.14:r2",
+          "origin": "source-clause",
+          "summary": "Explain cooperation of tissues within an organ.",
+          "teachingEvidence": [
+            {
+              "sectionId": "cells-tissues-organs",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess the hierarchy using an organ other than the worked heart example.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4HB1:issue2:1.15",
+      "officialReference": "1.15",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Textual teaching exists; missing imagery, assessment calibration and independent review prevent completion.",
+      "requirements": [
+        {
+          "id": "4HB1:issue2:1.15:r1",
+          "origin": "source-clause",
+          "summary": "Describe living cells within the bone matrix.",
+          "teachingEvidence": [
+            {
+              "sectionId": "bone-and-blood-tissues",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add verified compact/spongy bone light-microscope images.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.15:r2",
+          "origin": "source-clause",
+          "summary": "Describe plasma, red cells, white cells and platelets in blood.",
+          "teachingEvidence": [
+            {
+              "sectionId": "bone-and-blood-tissues",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add verified blood-smear images at a stated scale.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.15:r3",
+          "origin": "source-clause",
+          "summary": "Describe voluntary skeletal-muscle fibre structure.",
+          "teachingEvidence": [
+            {
+              "sectionId": "three-muscle-types",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add independently labelled longitudinal and transverse light micrographs.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.15:r4",
+          "origin": "source-clause",
+          "summary": "Describe involuntary smooth-muscle cell structure.",
+          "teachingEvidence": [
+            {
+              "sectionId": "three-muscle-types",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add blind comparison against cardiac and skeletal samples.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.15:r5",
+          "origin": "source-clause",
+          "summary": "Describe cardiac-muscle cell structure.",
+          "teachingEvidence": [
+            {
+              "sectionId": "three-muscle-types",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Verify image visibility of branching, striations, nuclei and intercalated discs.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.15:r6",
+          "origin": "source-clause",
+          "summary": "Describe the cellular organisation of nervous tissue.",
+          "teachingEvidence": [
+            {
+              "sectionId": "nerves-and-epithelia",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add verified nervous-tissue images rather than just a whole-neurone schematic.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.15:r7",
+          "origin": "source-clause",
+          "summary": "Describe squamous epithelium with reference to cheek cells.",
+          "teachingEvidence": [
+            {
+              "sectionId": "nerves-and-epithelia",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Compare isolated cheek cells with intact layered tissue in verified images.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.15:r8",
+          "origin": "source-clause",
+          "summary": "Describe ciliated epithelium with reference to the trachea.",
+          "teachingEvidence": [
+            {
+              "sectionId": "nerves-and-epithelia",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add verified tracheal sections and blind cilia/goblet-cell recognition.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4HB1:issue2:1.16",
+      "officialReference": "1.16",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Textual teaching exists; missing imagery, assessment calibration and independent review prevent completion.",
+      "requirements": [
+        {
+          "id": "4HB1:issue2:1.16:r1",
+          "origin": "source-clause",
+          "summary": "Relate a sperm tail to propulsion.",
+          "teachingEvidence": [
+            {
+              "sectionId": "egg-and-sperm",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add independently checked labelled gamete diagrams and structure–function assessment.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.16:r2",
+          "origin": "source-clause",
+          "summary": "Relate sperm mitochondria to energy transfer for movement.",
+          "teachingEvidence": [
+            {
+              "sectionId": "egg-and-sperm",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add independently checked labelled gamete diagrams and structure–function assessment.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.16:r3",
+          "origin": "source-clause",
+          "summary": "Relate the acrosome to penetration of surrounding layers.",
+          "teachingEvidence": [
+            {
+              "sectionId": "egg-and-sperm",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add independently checked labelled gamete diagrams and structure–function assessment.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.16:r4",
+          "origin": "source-clause",
+          "summary": "Relate egg cytoplasm and resources to early development.",
+          "teachingEvidence": [
+            {
+              "sectionId": "egg-and-sperm",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add independently checked labelled gamete diagrams and structure–function assessment.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.16:r5",
+          "origin": "source-clause",
+          "summary": "Relate egg surface changes to controlling sperm entry.",
+          "teachingEvidence": [
+            {
+              "sectionId": "egg-and-sperm",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add independently checked labelled gamete diagrams and structure–function assessment.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.16:r6",
+          "origin": "source-clause",
+          "summary": "Relate haploid gamete nuclei to restoration of diploidy at fertilisation.",
+          "teachingEvidence": [
+            {
+              "sectionId": "egg-and-sperm",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add independently checked labelled gamete diagrams and structure–function assessment.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    }
+  ],
+  "completeTeachingPoints": 0,
+  "completeChapters": 0,
+  "supportingSources": [
+    {
+      "title": "NHGRI: recombinant DNA technology",
+      "url": "https://www.genome.gov/genetics-glossary/Recombinant-DNA-Technology",
+      "sectionIds": [
+        "engineering-bacteria"
+      ]
+    },
+    {
+      "title": "NIH: stem-cell basics",
+      "url": "https://stemcells.nih.gov/node/16",
+      "sectionIds": [
+        "stem-cells-and-evidence"
+      ]
+    },
+    {
+      "title": "Golden Rice project: beta-carotene in the grain",
+      "url": "https://www.goldenrice.org/Content3-Why/why3_FAQ.php",
+      "sectionIds": [
+        "engineering-plants"
+      ]
+    },
+    {
+      "title": "PNAS research: hepatitis B antigen produced in potatoes",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15728371/",
+      "sectionIds": [
+        "engineering-plants"
+      ]
+    }
+  ]
+}

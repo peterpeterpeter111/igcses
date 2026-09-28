@@ -1,0 +1,13 @@
+# Electricity audit and visual verification — 20 September 2026
+
+Resumed d82d718 after allowance reset: 100% five-hour / 69% weekly initially, last check 45% / 60%. No reset credit consumed. The earlier 4% pause is historical.
+
+The local preview was stopped; its retained browser tab contained a connection-refused error page that the browser tool could not inspect. Restarted the same local server with approved network escalation and used a fresh preview tab in the same browser. No security setting or browser restriction was bypassed. Magnetism now loads. Verified both field diagrams, including corrected current-direction arrows, in the rendered chapter. Matter’s melting-curve label now sits clear of the line. Radioactivity’s guide paths had an actual SVG default-fill bug (black triangles); added fill="none" to the guide group and verified the corrected rendered graph. The bounded warning/error log was empty. Previous visual blockers are resolved for these checks; this is not exhaustive browser coverage.
+
+Added the 20-parent / 37-requirement Electricity audit for 2.9–2.28P after visual review of source PDF pages 20–21. Combined with 2.1–2.8: all 28 Electricity parents have bounded partial audits (60 requirements). Removed misleading inherited teachingUpdatedAt fields from the two Electricity audit documents because this phase audited existing notes without updating their teaching. Combined curriculum: 177 parents / 365 partial local requirements. Assessment and practical-data checks remain open.
+
+Counts otherwise unchanged: 12 partial note documents / 125 sections; 242 Physics teaching links across 177 parents; 195 reviewed Physics parent identities. Six obtained paper/scheme pairs, Physics 51 detailed leaves / 110 marks but zero processed papers; three provisional families, two experimental generators/two bounded markers, zero active templates or complete chapters/points.
+
+79 tests, typecheck, lint, final production build and public scan pass (45 files, no findings). The unchanged paper/template research contracts retain their earlier 13-check pass. Sites plugin updated from 0.1.65 to 0.1.66; current build helper is under openai-bundled/sites/0.1.66. Existing package scripts, dependencies, hosting manifest and architecture preserved.
+
+Next: Astrophysics teaching/audit, then wider subject curriculum and source-derived calibrated template families. GitHub safe-sync approval remains pending after the oversized automatic-review rejection; no remote upload attempted. AI last; no Sites version or deployment. Both allowances must exceed 5%; checkpoint/pause at 5%, no reset.

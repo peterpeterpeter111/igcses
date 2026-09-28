@@ -1,7 +1,10 @@
 // Isolated local Miniflare D1: never points at development or production data.
 import { Miniflare } from 'miniflare';
 import { readdirSync, readFileSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
 import assert from 'node:assert/strict';
+import { subjects } from '../content/catalog.ts';
+import { notes } from '../content/notes.ts';
 import { SessionStore } from '../server/session-store.ts';
 import { freezeQuestion } from '../server/question-package.ts';
 import { BLUEPRINT } from '../server/quiz-contract.ts';
@@ -27,6 +30,22 @@ try {
     .prepare('INSERT INTO subjects(id,code,title) VALUES (?,?,?)')
     .bind('physics', '4PH1', 'Physics')
     .run();
+  const seed = execFileSync(process.execPath,
+    ['--experimental-strip-types', 'scripts/seed-content.ts', '--stdout'], { encoding: 'utf8' });
+  const seedStatements = seed.trim().split('\n');
+  for (let i = 0; i < seedStatements.length; i += 25)
+    await db.batch(seedStatements.slice(i, i + 25).map((sql) => db.prepare(sql)));
+  assert.equal((await db.prepare('SELECT COUNT(*) AS n FROM subjects').first<{ n: number }>())?.n, subjects.length);
+  const seededChapters = await db.prepare('SELECT subject_id, slug, content_json, status FROM chapters')
+    .all<{ subject_id: string; slug: string; content_json: string | null; status: string }>();
+  assert.equal(seededChapters.results.length, subjects.reduce((sum, subject) => sum + subject.chapters.length, 0));
+  assert.equal(seededChapters.results.filter((row) => row.content_json !== null).length, notes.length);
+  for (const note of notes) {
+    const row = seededChapters.results.find((chapter) => chapter.subject_id === note.subjectId && chapter.slug === note.chapterId);
+    assert.ok(row?.content_json);
+    assert.deepEqual(JSON.parse(row.content_json), note);
+    assert.equal(row.status, 'partial-source-checked');
+  }
   const store = new SessionStore(db as unknown as D1Database);
   const questions = await Promise.all(
     BLUEPRINT.map((maxMarks, position) =>
@@ -106,7 +125,7 @@ try {
     0,
   );
   console.log(
-    'PASS: local Cloudflare D1 migrations, concurrent drafts/submissions/marking, ownership, private results and cascade deletion. Synthetic data only; no production calls.',
+    'PASS: local Cloudflare D1 migrations, exact content seeding, concurrent drafts/submissions/marking, ownership, private results and cascade deletion. Saved teaching content and synthetic quiz data in a nonpersistent database only; no production calls.',
   );
 } finally {
   await runtime.dispose();

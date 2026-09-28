@@ -1,0 +1,1515 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4PH1",
+  "chapterId": "waves",
+  "documentId": "4PH1-spec",
+  "specificationIssue": "Issue 4 - September 2024",
+  "documentSha256": "bac4b8312d4fbfc84672f909100d66b2b3cda0b25e98c0d11bbc7366dae482b2",
+  "reviewDate": "2026-09-19",
+  "reviewer": "Codex Astra",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Bounded source-clause and named-bullet decomposition of Waves references 3.1–3.29P, visually checked on specification PDF pages 22–24 / printed 16–18. Linked teaching and assessment checks remain partial.",
+  "identifierPolicy": "Requirement suffixes r1, r2, etc. are local editorial audit identifiers; only the parent reference is publisher-numbered.",
+  "notePath": "content/notes/physics-waves.json",
+  "parents": [
+    {
+      "parentId": "4PH1:issue4:3.1",
+      "officialReference": "3.1",
+      "pdfPage": 22,
+      "printedPage": 16,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "All five named units are tracked; conversions and selected examples do not establish complete unit fluency.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:3.1:r1",
+          "origin": "source-clause",
+          "summary": "Use degrees for wave and ray angles.",
+          "teachingEvidence": [
+            {
+              "sectionId": "ray-reflection",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check angle-unit reading and normal-versus-surface references independently.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.1:r2",
+          "origin": "source-clause",
+          "summary": "Use hertz for frequency.",
+          "teachingEvidence": [
+            {
+              "sectionId": "reading-wave-records",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate Hz/kHz/MHz conversions without confusing frequency and period.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.1:r3",
+          "origin": "source-clause",
+          "summary": "Use metres for wave distances.",
+          "teachingEvidence": [
+            {
+              "sectionId": "wave-quantities",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check distance and wavelength prefixes in unfamiliar graph scales.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.1:r4",
+          "origin": "source-clause",
+          "summary": "Use metres per second for wave speed.",
+          "teachingEvidence": [
+            {
+              "sectionId": "reading-wave-records",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate speed calculations with mixed distance/time prefixes.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.1:r5",
+          "origin": "source-clause",
+          "summary": "Use seconds for wave timing.",
+          "teachingEvidence": [
+            {
+              "sectionId": "reading-wave-records",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate ms-to-s conversion and several-cycle measurements.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:3.2",
+      "officialReference": "3.2",
+      "pdfPage": 22,
+      "printedPage": 16,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Classification compares vibration with energy-transfer direction, not the shape of a plotted trace.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:3.2:r1",
+          "origin": "source-clause",
+          "summary": "Explain transverse versus longitudinal vibration directions.",
+          "teachingEvidence": [
+            {
+              "sectionId": "transverse-longitudinal",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess both wave types from unfamiliar diagrams and reject classification by trace shape.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:3.3",
+      "officialReference": "3.3",
+      "pdfPage": 22,
+      "printedPage": 16,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "The five named quantities are separate local requirements under one publisher parent.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:3.3:r1",
+          "origin": "source-clause",
+          "summary": "Define amplitude.",
+          "teachingEvidence": [
+            {
+              "sectionId": "wave-quantities",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check equilibrium-to-maximum distance rather than crest-to-trough height.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.3:r2",
+          "origin": "source-clause",
+          "summary": "Define a wavefront.",
+          "teachingEvidence": [
+            {
+              "sectionId": "wave-quantities",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add and validate a wavefront/propagation-direction diagram task.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.3:r3",
+          "origin": "source-clause",
+          "summary": "Define frequency.",
+          "teachingEvidence": [
+            {
+              "sectionId": "wave-quantities",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess complete oscillations per second independently of wavelength.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.3:r4",
+          "origin": "source-clause",
+          "summary": "Define wavelength.",
+          "teachingEvidence": [
+            {
+              "sectionId": "reading-wave-records",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check equivalent spatial points for longitudinal and transverse representations.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.3:r5",
+          "origin": "source-clause",
+          "summary": "Define period.",
+          "teachingEvidence": [
+            {
+              "sectionId": "wave-quantities",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess one-cycle duration versus elapsed time for multiple cycles.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:3.4",
+      "officialReference": "3.4",
+      "pdfPage": 22,
+      "printedPage": 16,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Energy and information transfer are both named; absence of net matter transfer is an explicit condition.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:3.4:r1",
+          "origin": "source-clause",
+          "summary": "Recognise that waves transfer energy and information.",
+          "teachingEvidence": [
+            {
+              "sectionId": "transverse-longitudinal",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate an explanation linking a changing signal to transmitted information.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.4:r2",
+          "origin": "source-clause",
+          "summary": "Distinguish wave transfer from overall transfer of matter.",
+          "teachingEvidence": [
+            {
+              "sectionId": "transverse-longitudinal",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess local particle oscillation versus propagation in both wave types.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:3.5",
+      "officialReference": "3.5",
+      "pdfPage": 22,
+      "printedPage": 16,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Know/use are local demand subdivisions of the supplied source relationship.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:3.5:r1",
+          "origin": "source-clause",
+          "summary": "Know v = fλ.",
+          "teachingEvidence": [
+            {
+              "sectionId": "wave-equations",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate independent equation recall and quantity identification.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.5:r2",
+          "origin": "source-clause",
+          "summary": "Use v = fλ.",
+          "teachingEvidence": [
+            {
+              "sectionId": "reading-wave-records",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate forward/inverse targets and prefix conversions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:3.6",
+      "officialReference": "3.6",
+      "pdfPage": 22,
+      "printedPage": 16,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "The source asks use of frequency = 1/period.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:3.6:r1",
+          "origin": "source-clause",
+          "summary": "Calculate frequency or period using their reciprocal relationship.",
+          "teachingEvidence": [
+            {
+              "sectionId": "wave-equations",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate inverse targets, scientific notation and multiple-cycle timing.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:3.7",
+      "officialReference": "3.7",
+      "pdfPage": 22,
+      "printedPage": 16,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Sound and electromagnetic waves are explicit included contexts, not interchangeable source speeds.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:3.7:r1",
+          "origin": "source-clause",
+          "summary": "Apply wave relationships to sound.",
+          "teachingEvidence": [
+            {
+              "sectionId": "reading-wave-records",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Review unfamiliar sound media and avoid assuming air speed universally.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.7:r2",
+          "origin": "source-clause",
+          "summary": "Apply wave relationships to electromagnetic waves.",
+          "teachingEvidence": [
+            {
+              "sectionId": "wave-equations",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate wavelength/frequency targets over realistic spectrum scales.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:3.8",
+      "officialReference": "3.8",
+      "pdfPage": 22,
+      "printedPage": 16,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Source motion relative to the observer is required; the numerical Doppler formula is not specified.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:3.8:r1",
+          "origin": "source-clause",
+          "summary": "Explain observed frequency/wavelength changes from source motion as the Doppler effect.",
+          "teachingEvidence": [
+            {
+              "sectionId": "doppler-effect",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add wavefront-spacing diagrams for approach/recession and distinguish emitted from observed frequency.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:3.9",
+      "officialReference": "3.9",
+      "pdfPage": 22,
+      "printedPage": 16,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Both reflection and refraction apply to all wave types in this statement.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:3.9:r1",
+          "origin": "source-clause",
+          "summary": "Explain that waves can reflect.",
+          "teachingEvidence": [
+            {
+              "sectionId": "reflection-refraction",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate longitudinal and transverse reflection examples.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.9:r2",
+          "origin": "source-clause",
+          "summary": "Explain that waves can refract.",
+          "teachingEvidence": [
+            {
+              "sectionId": "reflection-refraction",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess changing speed/wavelength with unchanged frequency, including normal incidence.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:3.10",
+      "officialReference": "3.10",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "The named spectrum regions and common free-space speed are explicit parts of the statement.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:3.10:r1",
+          "origin": "source-clause",
+          "summary": "Recognise light as part of the continuous spectrum including all seven named electromagnetic regions.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electromagnetic-spectrum",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check all named regions without inventing physical gaps between bands.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.10:r2",
+          "origin": "source-clause",
+          "summary": "Recognise their equal speed in free space.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electromagnetic-spectrum",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check that the common vacuum speed is not applied unchanged inside materials.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:3.11",
+      "officialReference": "3.11",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Full-spectrum order and visible-colour order are both explicitly included.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:3.11:r1",
+          "origin": "source-clause",
+          "summary": "Order electromagnetic regions by decreasing wavelength and increasing frequency.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electromagnetic-spectrum",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate both order directions and comparisons across every region.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.11:r2",
+          "origin": "source-clause",
+          "summary": "Order the visible colours consistently with wavelength and frequency.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electromagnetic-spectrum",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add an independent colour-order/comparison task.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:3.12",
+      "officialReference": "3.12",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "All seven source bullets are tracked; paired applications stay named within their bullet requirement.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:3.12:r1",
+          "origin": "source-clause",
+          "summary": "Explain radio waves in broadcasting and communication.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electromagnetic-uses",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate property-to-use explanations for both broadcast and communication contexts.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.12:r2",
+          "origin": "source-clause",
+          "summary": "Explain microwaves in cooking and satellite links.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electromagnetic-uses",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate absorption/heating and atmosphere/directional-link explanations separately.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.12:r3",
+          "origin": "source-clause",
+          "summary": "Explain infrared in heaters and night-vision equipment.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electromagnetic-uses",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate energy absorption versus thermal detection; identify the night-vision mechanism.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.12:r4",
+          "origin": "source-clause",
+          "summary": "Explain visible light in optical fibres and photography.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electromagnetic-uses",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate information pulses/TIR and image formation as separate applications.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.12:r5",
+          "origin": "source-clause",
+          "summary": "Explain ultraviolet in fluorescent lamps.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electromagnetic-uses",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess absorption by the coating and emission of visible light without swapping wavelengths.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.12:r6",
+          "origin": "source-clause",
+          "summary": "Explain X-rays for internal imaging, including medical imaging.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electromagnetic-uses",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate differential absorption/contrast as well as penetration.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.12:r7",
+          "origin": "source-clause",
+          "summary": "Explain gamma rays for sterilising food and medical equipment.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electromagnetic-uses",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess microorganism damage and penetration through suitable packaging in both contexts.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:3.13",
+      "officialReference": "3.13",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Four named hazard bullets plus protective measures are tracked; these are curriculum explanations, not handling instructions.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:3.13:r1",
+          "origin": "source-clause",
+          "summary": "Explain excessive microwave exposure causing internal tissue heating.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electromagnetic-hazards",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate the heating mechanism without wrongly requiring ionisation.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.13:r2",
+          "origin": "source-clause",
+          "summary": "Explain excessive infrared exposure causing skin burns.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electromagnetic-hazards",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate the radiation-to-heating link rather than a generic mutation claim.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.13:r3",
+          "origin": "source-clause",
+          "summary": "Explain ultraviolet damage to surface cells and eyes, including blindness.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electromagnetic-hazards",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess both surface-cell and eye hazards with appropriate protection.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.13:r4",
+          "origin": "source-clause",
+          "summary": "Explain gamma exposure causing mutations and cancer.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electromagnetic-hazards",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate cell/DNA damage explanations without implying every exposure causes cancer.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.13:r5",
+          "origin": "source-clause",
+          "summary": "Describe simple protective measures matched to these risks.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electromagnetic-hazards",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate radiation-specific shielding, time and distance or exposure barriers; not one universal shield.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:3.14",
+      "officialReference": "3.14",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Light’s transverse nature and boundary behaviours are distinct source demands.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:3.14:r1",
+          "origin": "source-clause",
+          "summary": "Recognise light as transverse.",
+          "teachingEvidence": [
+            {
+              "sectionId": "transverse-longitudinal",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate classification without inventing a vibrating material medium.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.14:r2",
+          "origin": "source-clause",
+          "summary": "Recognise that light reflects and refracts.",
+          "teachingEvidence": [
+            {
+              "sectionId": "reflection-refraction",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate ray behaviour at normal and oblique incidence.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:3.15",
+      "officialReference": "3.15",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Angles are measured to the normal.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:3.15:r1",
+          "origin": "source-clause",
+          "summary": "Apply equal incidence and reflection angles.",
+          "teachingEvidence": [
+            {
+              "sectionId": "ray-reflection",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate diagram construction and surface-angle conversions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:3.16",
+      "officialReference": "3.16",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Actual drawing skill cannot be demonstrated by reading a finished diagram alone.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:3.16:r1",
+          "origin": "source-clause",
+          "summary": "Draw labelled reflection ray diagrams.",
+          "teachingEvidence": [
+            {
+              "sectionId": "ray-reflection",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Provide a drawing task and validate normal, angles and ray directions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.16:r2",
+          "origin": "source-clause",
+          "summary": "Draw labelled refraction ray diagrams.",
+          "teachingEvidence": [
+            {
+              "sectionId": "light-refraction",
+              "field": "diagram"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate learner-drawn paths across both boundaries and their local normals.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:3.17",
+      "officialReference": "3.17",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Rectangular, semicircular and triangular shapes are all named practical contexts.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:3.17:r1",
+          "origin": "source-clause",
+          "summary": "Investigate refraction with a rectangular block.",
+          "teachingEvidence": [
+            {
+              "sectionId": "refraction-practical",
+              "field": "practical"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate full plan, observations and reconstructed ray angles.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.17:r2",
+          "origin": "source-clause",
+          "summary": "Investigate refraction with a semicircular block.",
+          "teachingEvidence": [
+            {
+              "sectionId": "refraction-practical",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add an independently checked radial-entry/flat-face ray diagram and practical results task.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.17:r3",
+          "origin": "source-clause",
+          "summary": "Investigate refraction with a triangular prism.",
+          "teachingEvidence": [
+            {
+              "sectionId": "refraction-practical",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add a two-face prism ray diagram and checked angle/deviation observations.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:3.18",
+      "officialReference": "3.18",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Know/use are local subdivisions; the notes specify entry from air for the displayed index relation.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:3.18:r1",
+          "origin": "source-clause",
+          "summary": "Know refractive index as sin i / sin r.",
+          "teachingEvidence": [
+            {
+              "sectionId": "light-refraction",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate equation recall and conditions/angle definitions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.18:r2",
+          "origin": "source-clause",
+          "summary": "Use n = sin i / sin r.",
+          "teachingEvidence": [
+            {
+              "sectionId": "light-refraction",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate inverse sine, degree mode and refractive-index targets.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:3.19",
+      "officialReference": "3.19",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "This practical specifically investigates glass index using a glass block.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:3.19:r1",
+          "origin": "source-clause",
+          "summary": "Investigate glass refractive index experimentally.",
+          "teachingEvidence": [
+            {
+              "sectionId": "refraction-practical",
+              "field": "practical"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate measured data, best-fit sine graph, uncertainty and axis choice.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:3.20",
+      "officialReference": "3.20",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Optical fibres and prisms are both named applications of total internal reflection.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:3.20:r1",
+          "origin": "source-clause",
+          "summary": "Explain total internal reflection guiding information through optical fibres.",
+          "teachingEvidence": [
+            {
+              "sectionId": "critical-angle",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate core/cladding and incidence conditions without applying the material-to-air formula unchanged.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.20:r2",
+          "origin": "source-clause",
+          "summary": "Explain total internal reflection in prisms.",
+          "teachingEvidence": [
+            {
+              "sectionId": "critical-angle",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add a ray-diagram task checking entry/exit and internal incidence separately.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:3.21",
+      "officialReference": "3.21",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Critical angle is measured inside the higher-index medium at refraction angle 90 degrees.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:3.21:r1",
+          "origin": "source-clause",
+          "summary": "Explain the meaning of critical angle.",
+          "teachingEvidence": [
+            {
+              "sectionId": "critical-angle",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess a diagram at, below and above the critical angle.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:3.22",
+      "officialReference": "3.22",
+      "pdfPage": 24,
+      "printedPage": 18,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Know/use local subdivisions; material-to-air condition is explicit in teaching.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:3.22:r1",
+          "origin": "source-clause",
+          "summary": "Know sin c = 1/n.",
+          "teachingEvidence": [
+            {
+              "sectionId": "critical-angle",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate recall and boundary conditions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.22:r2",
+          "origin": "source-clause",
+          "summary": "Use sin c = 1/n.",
+          "teachingEvidence": [
+            {
+              "sectionId": "critical-angle",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate both critical-angle and refractive-index targets.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:3.23",
+      "officialReference": "3.23",
+      "pdfPage": 24,
+      "printedPage": 18,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Sound’s longitudinal nature and both boundary behaviours are included.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:3.23:r1",
+          "origin": "source-clause",
+          "summary": "Recognise sound as longitudinal.",
+          "teachingEvidence": [
+            {
+              "sectionId": "transverse-longitudinal",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess particle vibration versus wave propagation using a sound representation.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:3.23:r2",
+          "origin": "source-clause",
+          "summary": "Recognise sound reflection and refraction.",
+          "teachingEvidence": [
+            {
+              "sectionId": "reflection-refraction",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate sound-specific examples of both reflection and speed-gradient refraction.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:3.24P",
+      "officialReference": "3.24P",
+      "pdfPage": 24,
+      "printedPage": 18,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Paper 2-only numerical hearing-range statement, not a guarantee for every listener.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:3.24P:r1",
+          "origin": "source-clause",
+          "summary": "Know the approximate 20–20 000 Hz human hearing range.",
+          "teachingEvidence": [
+            {
+              "sectionId": "sound-and-echoes",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check both boundaries and kHz conversion in independent tasks.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:3.25P",
+      "officialReference": "3.25P",
+      "pdfPage": 24,
+      "printedPage": 18,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Paper 2 practical; the source does not mandate one particular apparatus method.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:3.25P:r1",
+          "origin": "source-clause",
+          "summary": "Investigate the speed of sound in air.",
+          "teachingEvidence": [
+            {
+              "sectionId": "sound-speed-practical",
+              "field": "practical"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate an independent plan/results task, path difference, timing and reflections.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:3.26P",
+      "officialReference": "3.26P",
+      "pdfPage": 24,
+      "printedPage": 18,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Paper 2 display principle, distinct from measuring frequency in 3.27P.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:3.26P:r1",
+          "origin": "source-clause",
+          "summary": "Explain how microphone and oscilloscope display a sound signal.",
+          "teachingEvidence": [
+            {
+              "sectionId": "oscilloscope-frequency",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check pressure-to-electrical conversion, time base and that the trace is not particle motion.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:3.27P",
+      "officialReference": "3.27P",
+      "pdfPage": 24,
+      "printedPage": 18,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Paper 2 practical; timing and frequency calculation both matter.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:3.27P:r1",
+          "origin": "source-clause",
+          "summary": "Investigate sound frequency using an oscilloscope.",
+          "teachingEvidence": [
+            {
+              "sectionId": "oscilloscope-frequency",
+              "field": "practical"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate scaled trace reading, several-cycle intervals and repeated measurements.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:3.28P",
+      "officialReference": "3.28P",
+      "pdfPage": 24,
+      "printedPage": 18,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Paper 2 pitch/frequency relation; amplitude is a different variable.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:3.28P:r1",
+          "origin": "source-clause",
+          "summary": "Relate pitch to vibration frequency.",
+          "teachingEvidence": [
+            {
+              "sectionId": "pitch-and-loudness",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate unequal-time-base trace comparisons without judging by raw cycle count.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:3.29P",
+      "officialReference": "3.29P",
+      "pdfPage": 24,
+      "printedPage": 18,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Paper 2 loudness/amplitude relation; measurement and listening conditions require care.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:3.29P:r1",
+          "origin": "source-clause",
+          "summary": "Relate loudness to vibration amplitude.",
+          "teachingEvidence": [
+            {
+              "sectionId": "pitch-and-loudness",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate gain/scale controls and avoid inferring changed source amplitude from display height alone.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    }
+  ],
+  "completeTeachingPoints": 0,
+  "completeChapters": 0,
+  "teachingUpdatedAt": "2026-09-19"
+}

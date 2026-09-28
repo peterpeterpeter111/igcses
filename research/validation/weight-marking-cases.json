@@ -1,0 +1,631 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-09-19",
+  "reviewer": "Codex Astra",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "sourceRefs": [
+    {
+      "documentId": "4PH1-2024-June-1-standard-ms",
+      "pdfPages": [
+        3,
+        13
+      ]
+    }
+  ],
+  "scope": "Synthetic offline explicit-product response fixtures, not real student calibration or general free-text grading. Other working is never silently discarded.",
+  "cases": [
+    {
+      "id": "exact",
+      "parameters": {
+        "massGrams": 250,
+        "fieldHundredths": 1000,
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "massKg": "0.25",
+        "fieldNPerKg": "10",
+        "finalAnswer": "2.5",
+        "otherWorking": ""
+      },
+      "expectedScore": 2,
+      "rationale": "Correct explicit substitution and evaluation."
+    },
+    {
+      "id": "equivalent-decimals",
+      "parameters": {
+        "massGrams": 250,
+        "fieldHundredths": 1000,
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "massKg": "0.2500",
+        "fieldNPerKg": "10.0",
+        "finalAnswer": "2.500 N",
+        "otherWorking": ""
+      },
+      "expectedScore": 2,
+      "rationale": "Trailing zeroes preserve the exact quantities."
+    },
+    {
+      "id": "scientific-notation",
+      "parameters": {
+        "massGrams": 250,
+        "fieldHundredths": 1000,
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "massKg": "2.5e-1",
+        "fieldNPerKg": "1e1",
+        "finalAnswer": "25e-1 N",
+        "otherWorking": ""
+      },
+      "expectedScore": 2,
+      "rationale": "Equivalent decimal exponent notation."
+    },
+    {
+      "id": "units-omitted",
+      "parameters": {
+        "massGrams": 250,
+        "fieldHundredths": 1000,
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "massKg": "0.25",
+        "fieldNPerKg": "10",
+        "finalAnswer": "2.5",
+        "otherWorking": ""
+      },
+      "expectedScore": 2,
+      "rationale": "The source says units are ignored."
+    },
+    {
+      "id": "wrong-unscaled-unit",
+      "parameters": {
+        "massGrams": 250,
+        "fieldHundredths": 1000,
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "massKg": "0.25",
+        "fieldNPerKg": "10",
+        "finalAnswer": "2.5 kg",
+        "otherWorking": ""
+      },
+      "expectedScore": 2,
+      "rationale": "Source ignore-units rule applied to explicit unscaled label; no extra unit penalty."
+    },
+    {
+      "id": "method-without-answer",
+      "parameters": {
+        "massGrams": 250,
+        "fieldHundredths": 1000,
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "massKg": "0.25",
+        "fieldNPerKg": "10",
+        "finalAnswer": "",
+        "otherWorking": ""
+      },
+      "expectedScore": 1,
+      "rationale": "Substitution supplied, evaluation absent."
+    },
+    {
+      "id": "all-blank",
+      "parameters": {
+        "massGrams": 250,
+        "fieldHundredths": 1000,
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "massKg": "",
+        "fieldNPerKg": "",
+        "finalAnswer": "",
+        "otherWorking": ""
+      },
+      "expectedScore": 0,
+      "rationale": "No evidence supplied."
+    },
+    {
+      "id": "gram-as-kilogram",
+      "parameters": {
+        "massGrams": 250,
+        "fieldHundredths": 1000,
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "massKg": "250",
+        "fieldNPerKg": "10",
+        "finalAnswer": "2500 N",
+        "otherWorking": ""
+      },
+      "expectedScore": 1,
+      "rationale": "Correct product with clear x1000 mass error; one deduction total."
+    },
+    {
+      "id": "divide-by-100",
+      "parameters": {
+        "massGrams": 250,
+        "fieldHundredths": 1000,
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "massKg": "2.5",
+        "fieldNPerKg": "10",
+        "finalAnswer": "25",
+        "otherWorking": ""
+      },
+      "expectedScore": 1,
+      "rationale": "Correct product with clear x10 mass error; one deduction total."
+    },
+    {
+      "id": "extra-division",
+      "parameters": {
+        "massGrams": 250,
+        "fieldHundredths": 1000,
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "massKg": "0.00025",
+        "fieldNPerKg": "10",
+        "finalAnswer": "0.0025",
+        "otherWorking": ""
+      },
+      "expectedScore": 1,
+      "rationale": "Correct product with clear /1000 mass error; one deduction total."
+    },
+    {
+      "id": "mass-error-no-evaluation",
+      "parameters": {
+        "massGrams": 250,
+        "fieldHundredths": 1000,
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "massKg": "250",
+        "fieldNPerKg": "10",
+        "finalAnswer": "",
+        "otherWorking": ""
+      },
+      "expectedScore": null,
+      "rationale": "Missing evaluation and conversion error together require judgement."
+    },
+    {
+      "id": "answer-only-correct",
+      "parameters": {
+        "massGrams": 250,
+        "fieldHundredths": 1000,
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "massKg": "",
+        "fieldNPerKg": "",
+        "finalAnswer": "2.5",
+        "otherWorking": ""
+      },
+      "expectedScore": null,
+      "rationale": "Implied method policy remains uncalibrated, not scored zero."
+    },
+    {
+      "id": "answer-only-power-error",
+      "parameters": {
+        "massGrams": 250,
+        "fieldHundredths": 1000,
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "massKg": "",
+        "fieldNPerKg": "",
+        "finalAnswer": "2500",
+        "otherWorking": ""
+      },
+      "expectedScore": null,
+      "rationale": "No inference of a mass error from the final number alone."
+    },
+    {
+      "id": "partial-working",
+      "parameters": {
+        "massGrams": 250,
+        "fieldHundredths": 1000,
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "massKg": "0.25",
+        "fieldNPerKg": "",
+        "finalAnswer": "2.5",
+        "otherWorking": ""
+      },
+      "expectedScore": null,
+      "rationale": "Missing multiplicand may require implied-method interpretation."
+    },
+    {
+      "id": "different-g",
+      "parameters": {
+        "massGrams": 250,
+        "fieldHundredths": 1000,
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "massKg": "0.25",
+        "fieldNPerKg": "9.8",
+        "finalAnswer": "2.45",
+        "otherWorking": ""
+      },
+      "expectedScore": null,
+      "rationale": "Original source permits this g; generated prompt explicitly gives 10. Adaptation review needed."
+    },
+    {
+      "id": "working-final-conflict",
+      "parameters": {
+        "massGrams": 250,
+        "fieldHundredths": 1000,
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "massKg": "250",
+        "fieldNPerKg": "10",
+        "finalAnswer": "2.5",
+        "otherWorking": ""
+      },
+      "expectedScore": null,
+      "rationale": "Correct final answer conflicts with explicit working."
+    },
+    {
+      "id": "arithmetic-error",
+      "parameters": {
+        "massGrams": 250,
+        "fieldHundredths": 1000,
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "massKg": "0.25",
+        "fieldNPerKg": "10",
+        "finalAnswer": "2.6",
+        "otherWorking": ""
+      },
+      "expectedScore": null,
+      "rationale": "No automatic choice between arithmetic error and a conflicting answer."
+    },
+    {
+      "id": "plausible-rounding",
+      "parameters": {
+        "massGrams": 250,
+        "fieldHundredths": 1000,
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "massKg": "0.25",
+        "fieldNPerKg": "10",
+        "finalAnswer": "3",
+        "otherWorking": ""
+      },
+      "expectedScore": null,
+      "rationale": "Rounding policy not guessed."
+    },
+    {
+      "id": "non-power-mass",
+      "parameters": {
+        "massGrams": 250,
+        "fieldHundredths": 1000,
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "massKg": "0.20",
+        "fieldNPerKg": "10",
+        "finalAnswer": "2",
+        "otherWorking": ""
+      },
+      "expectedScore": null,
+      "rationale": "Not a pure mass unit power-of-ten error."
+    },
+    {
+      "id": "negative-mass",
+      "parameters": {
+        "massGrams": 250,
+        "fieldHundredths": 1000,
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "massKg": "-0.25",
+        "fieldNPerKg": "10",
+        "finalAnswer": "-2.5",
+        "otherWorking": ""
+      },
+      "expectedScore": null,
+      "rationale": "Outside the supported positive-mass response format."
+    },
+    {
+      "id": "multiple-final-answers",
+      "parameters": {
+        "massGrams": 250,
+        "fieldHundredths": 1000,
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "massKg": "0.25",
+        "fieldNPerKg": "10",
+        "finalAnswer": "2.5 or 25",
+        "otherWorking": ""
+      },
+      "expectedScore": null,
+      "rationale": "Competing answers require interpretation."
+    },
+    {
+      "id": "extra-working",
+      "parameters": {
+        "massGrams": 250,
+        "fieldHundredths": 1000,
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "massKg": "0.25",
+        "fieldNPerKg": "10",
+        "finalAnswer": "2.5",
+        "otherWorking": "I also obtained 25 N."
+      },
+      "expectedScore": null,
+      "rationale": "All other working retained and escalated rather than ignored."
+    },
+    {
+      "id": "algebra-in-field",
+      "parameters": {
+        "massGrams": 250,
+        "fieldHundredths": 1000,
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "massKg": "250/1000",
+        "fieldNPerKg": "10",
+        "finalAnswer": "2.5",
+        "otherWorking": ""
+      },
+      "expectedScore": null,
+      "rationale": "Equivalent algebra is not rejected as wrong; parser deliberately defers it."
+    },
+    {
+      "id": "scaled-unit",
+      "parameters": {
+        "massGrams": 250,
+        "fieldHundredths": 1000,
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "massKg": "0.25",
+        "fieldNPerKg": "10",
+        "finalAnswer": "2500 mN",
+        "otherWorking": ""
+      },
+      "expectedScore": null,
+      "rationale": "Potential scale conversion is outside the bounded unit parser."
+    },
+    {
+      "id": "subtle-decimal-error",
+      "parameters": {
+        "massGrams": 250,
+        "fieldHundredths": 1000,
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "massKg": "0.25",
+        "fieldNPerKg": "10",
+        "finalAnswer": "2.50000000000000001",
+        "otherWorking": ""
+      },
+      "expectedScore": null,
+      "rationale": "Exact decimal comparison must not erase supplied digits."
+    },
+    {
+      "id": "huge-exponent",
+      "parameters": {
+        "massGrams": 250,
+        "fieldHundredths": 1000,
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "massKg": "0.25",
+        "fieldNPerKg": "10",
+        "finalAnswer": "2.5e1000000",
+        "otherWorking": ""
+      },
+      "expectedScore": null,
+      "rationale": "Bounded numeric format rejects unbounded exponents."
+    },
+    {
+      "id": "5-980-prose",
+      "parameters": {
+        "massGrams": 5,
+        "fieldHundredths": 980,
+        "representation": "prose",
+        "context": 1
+      },
+      "response": {
+        "massKg": "0.005",
+        "fieldNPerKg": "9.8",
+        "finalAnswer": "0.049",
+        "otherWorking": ""
+      },
+      "expectedScore": 2,
+      "rationale": "Hand-calculated expected exact product; representation does not alter scoring."
+    },
+    {
+      "id": "5-980-table",
+      "parameters": {
+        "massGrams": 5,
+        "fieldHundredths": 980,
+        "representation": "table",
+        "context": 1
+      },
+      "response": {
+        "massKg": "0.005",
+        "fieldNPerKg": "9.8",
+        "finalAnswer": "0.049",
+        "otherWorking": ""
+      },
+      "expectedScore": 2,
+      "rationale": "Hand-calculated expected exact product; representation does not alter scoring."
+    },
+    {
+      "id": "375-980-prose",
+      "parameters": {
+        "massGrams": 375,
+        "fieldHundredths": 980,
+        "representation": "prose",
+        "context": 1
+      },
+      "response": {
+        "massKg": "0.375",
+        "fieldNPerKg": "9.8",
+        "finalAnswer": "3.675",
+        "otherWorking": ""
+      },
+      "expectedScore": 2,
+      "rationale": "Hand-calculated expected exact product; representation does not alter scoring."
+    },
+    {
+      "id": "375-980-table",
+      "parameters": {
+        "massGrams": 375,
+        "fieldHundredths": 980,
+        "representation": "table",
+        "context": 1
+      },
+      "response": {
+        "massKg": "0.375",
+        "fieldNPerKg": "9.8",
+        "finalAnswer": "3.675",
+        "otherWorking": ""
+      },
+      "expectedScore": 2,
+      "rationale": "Hand-calculated expected exact product; representation does not alter scoring."
+    },
+    {
+      "id": "250-981-prose",
+      "parameters": {
+        "massGrams": 250,
+        "fieldHundredths": 981,
+        "representation": "prose",
+        "context": 1
+      },
+      "response": {
+        "massKg": "0.25",
+        "fieldNPerKg": "9.81",
+        "finalAnswer": "2.4525",
+        "otherWorking": ""
+      },
+      "expectedScore": 2,
+      "rationale": "Hand-calculated expected exact product; representation does not alter scoring."
+    },
+    {
+      "id": "250-981-table",
+      "parameters": {
+        "massGrams": 250,
+        "fieldHundredths": 981,
+        "representation": "table",
+        "context": 1
+      },
+      "response": {
+        "massKg": "0.25",
+        "fieldNPerKg": "9.81",
+        "finalAnswer": "2.4525",
+        "otherWorking": ""
+      },
+      "expectedScore": 2,
+      "rationale": "Hand-calculated expected exact product; representation does not alter scoring."
+    },
+    {
+      "id": "5000-1000-prose",
+      "parameters": {
+        "massGrams": 5000,
+        "fieldHundredths": 1000,
+        "representation": "prose",
+        "context": 1
+      },
+      "response": {
+        "massKg": "5",
+        "fieldNPerKg": "10",
+        "finalAnswer": "50",
+        "otherWorking": ""
+      },
+      "expectedScore": 2,
+      "rationale": "Hand-calculated expected exact product; representation does not alter scoring."
+    },
+    {
+      "id": "5000-1000-table",
+      "parameters": {
+        "massGrams": 5000,
+        "fieldHundredths": 1000,
+        "representation": "table",
+        "context": 1
+      },
+      "response": {
+        "massKg": "5",
+        "fieldNPerKg": "10",
+        "finalAnswer": "50",
+        "otherWorking": ""
+      },
+      "expectedScore": 2,
+      "rationale": "Hand-calculated expected exact product; representation does not alter scoring."
+    },
+    {
+      "id": "5000-981-prose",
+      "parameters": {
+        "massGrams": 5000,
+        "fieldHundredths": 981,
+        "representation": "prose",
+        "context": 1
+      },
+      "response": {
+        "massKg": "5",
+        "fieldNPerKg": "9.81",
+        "finalAnswer": "49.05",
+        "otherWorking": ""
+      },
+      "expectedScore": 2,
+      "rationale": "Hand-calculated expected exact product; representation does not alter scoring."
+    },
+    {
+      "id": "5000-981-table",
+      "parameters": {
+        "massGrams": 5000,
+        "fieldHundredths": 981,
+        "representation": "table",
+        "context": 1
+      },
+      "response": {
+        "massKg": "5",
+        "fieldNPerKg": "9.81",
+        "finalAnswer": "49.05",
+        "otherWorking": ""
+      },
+      "expectedScore": 2,
+      "rationale": "Hand-calculated expected exact product; representation does not alter scoring."
+    }
+  ]
+}

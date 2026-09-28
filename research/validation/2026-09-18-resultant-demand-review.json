@@ -1,0 +1,481 @@
+{
+  "schemaVersion": 1,
+  "familyId": "4PH1.collinear-resultant",
+  "familyVersion": "0.1.0",
+  "reviewDate": "2026-09-18",
+  "reviewer": "Codex Astra",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "status": "bounded-demand-review",
+  "sourceTaskId": "4PH1-2024-June-1-standard.Q5.b.i",
+  "sourceEvidence": {
+    "questionPaper": {
+      "documentId": "4PH1-2024-June-1-standard-qp",
+      "pdfPages": [
+        12
+      ]
+    },
+    "markScheme": {
+      "documentId": "4PH1-2024-June-1-standard-ms",
+      "pdfPages": [
+        8
+      ]
+    },
+    "documents": [
+      {
+        "id": "4PH1-2024-June-1-standard-qp",
+        "type": "question-paper",
+        "url": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Physics/2017/Exam-materials/4ph1-1p-que-20240523.pdf",
+        "sha256": "3c1e2eea09258259ce0ae86d6adf24da26a1320e297317c60f64c272839b8454",
+        "pageCount": 36,
+        "enclosureNote": "32 numbered paper pages plus four equation-booklet pages, all visually reviewed. Booklet is enclosed in this PDF, not a separate paper."
+      },
+      {
+        "id": "4PH1-2024-June-1-standard-ms",
+        "type": "mark-scheme",
+        "url": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Physics/2017/Exam-materials/4ph1-1p-rms-20240822.pdf",
+        "sha256": "9ca559f719b9603c62ebb2a293c5174c7082c1cf6b13aa412fc5d59fd09c181f",
+        "pageCount": 17
+      }
+    ]
+  },
+  "sourceDemand": {
+    "forces": 2,
+    "axis": "vertical",
+    "representation": "labelled-arrow-diagram",
+    "target": "resultant",
+    "operations": [
+      "Read two opposed forces and their directions from arrows.",
+      "Find the difference of two decimal magnitudes.",
+      "State the direction of the larger force."
+    ],
+    "marks": 2,
+    "creditBasis": [
+      "One correct magnitude.",
+      "One correct upwards direction; upward arrow accepted; unqualified north ignored."
+    ],
+    "notEstablished": [
+      "Official per-leaf AO allocation.",
+      "Difficulty equivalence of new contexts, representations or inverse tasks.",
+      "A method mark for showing working in this two-mark part."
+    ]
+  },
+  "structures": [
+    {
+      "fixtureId": "resultant-horizontal-2-prose",
+      "signature": "resultant:prose:horizontal:2",
+      "classification": "direct-two-force",
+      "reviewStatus": "agent-reviewed",
+      "sourceRelation": "same-core-operations-with-representation-adaptation",
+      "operations": [
+        "Read 2 labelled forces and their stated directions.",
+        "Subtract the smaller opposed magnitude from the larger.",
+        "State the resultant magnitude and physical direction."
+      ],
+      "representationChange": "Explicit direction words replace arrow reading; all required readings are in prose.",
+      "axisChange": "Left/right replaces up/down; no compass orientation is supplied.",
+      "proposedMarkBasis": {
+        "maximum": 2,
+        "magnitude": 1,
+        "direction": 1,
+        "origin": "source-derived-separate-credit",
+        "methodCredit": 0,
+        "validated": false
+      },
+      "independentArithmeticFixture": "resultant-horizontal-2-prose",
+      "requiresSeparateDifficultyCalibration": true,
+      "notes": "Direction is computed from opposed forces; treating the largest magnitude as the resultant is incorrect. Changed representation remains an adaptation."
+    },
+    {
+      "fixtureId": "resultant-horizontal-2-table",
+      "signature": "resultant:table:horizontal:2",
+      "classification": "direct-two-force",
+      "reviewStatus": "agent-reviewed",
+      "sourceRelation": "same-core-operations-with-representation-adaptation",
+      "operations": [
+        "Read 2 labelled forces and their stated directions.",
+        "Subtract the smaller opposed magnitude from the larger.",
+        "State the resultant magnitude and physical direction."
+      ],
+      "representationChange": "A labelled table replaces arrow reading; magnitude and direction are separate columns.",
+      "axisChange": "Left/right replaces up/down; no compass orientation is supplied.",
+      "proposedMarkBasis": {
+        "maximum": 2,
+        "magnitude": 1,
+        "direction": 1,
+        "origin": "source-derived-separate-credit",
+        "methodCredit": 0,
+        "validated": false
+      },
+      "independentArithmeticFixture": "resultant-horizontal-2-table",
+      "requiresSeparateDifficultyCalibration": true,
+      "notes": "Direction is computed from opposed forces; treating the largest magnitude as the resultant is incorrect. Changed representation remains an adaptation."
+    },
+    {
+      "fixtureId": "resultant-vertical-2-prose",
+      "signature": "resultant:prose:vertical:2",
+      "classification": "direct-two-force",
+      "reviewStatus": "agent-reviewed",
+      "sourceRelation": "same-core-operations-with-representation-adaptation",
+      "operations": [
+        "Read 2 labelled forces and their stated directions.",
+        "Subtract the smaller opposed magnitude from the larger.",
+        "State the resultant magnitude and physical direction."
+      ],
+      "representationChange": "Explicit direction words replace arrow reading; all required readings are in prose.",
+      "axisChange": "Up/down conventions match the source axis.",
+      "proposedMarkBasis": {
+        "maximum": 2,
+        "magnitude": 1,
+        "direction": 1,
+        "origin": "source-derived-separate-credit",
+        "methodCredit": 0,
+        "validated": false
+      },
+      "independentArithmeticFixture": "resultant-vertical-2-prose",
+      "requiresSeparateDifficultyCalibration": true,
+      "notes": "Direction is computed from opposed forces; treating the largest magnitude as the resultant is incorrect. Changed representation remains an adaptation."
+    },
+    {
+      "fixtureId": "resultant-vertical-2-table",
+      "signature": "resultant:table:vertical:2",
+      "classification": "direct-two-force",
+      "reviewStatus": "agent-reviewed",
+      "sourceRelation": "same-core-operations-with-representation-adaptation",
+      "operations": [
+        "Read 2 labelled forces and their stated directions.",
+        "Subtract the smaller opposed magnitude from the larger.",
+        "State the resultant magnitude and physical direction."
+      ],
+      "representationChange": "A labelled table replaces arrow reading; magnitude and direction are separate columns.",
+      "axisChange": "Up/down conventions match the source axis.",
+      "proposedMarkBasis": {
+        "maximum": 2,
+        "magnitude": 1,
+        "direction": 1,
+        "origin": "source-derived-separate-credit",
+        "methodCredit": 0,
+        "validated": false
+      },
+      "independentArithmeticFixture": "resultant-vertical-2-table",
+      "requiresSeparateDifficultyCalibration": true,
+      "notes": "Direction is computed from opposed forces; treating the largest magnitude as the resultant is incorrect. Changed representation remains an adaptation."
+    },
+    {
+      "fixtureId": "resultant-horizontal-3-prose",
+      "signature": "resultant:prose:horizontal:3",
+      "classification": "direct-three-force",
+      "reviewStatus": "agent-reviewed",
+      "sourceRelation": "extended-demand",
+      "operations": [
+        "Read 3 labelled forces and their stated directions.",
+        "Combine same-direction contributions and subtract the opposed contribution.",
+        "State the resultant magnitude and physical direction."
+      ],
+      "representationChange": "Explicit direction words replace arrow reading; all required readings are in prose.",
+      "axisChange": "Left/right replaces up/down; no compass orientation is supplied.",
+      "proposedMarkBasis": {
+        "maximum": 2,
+        "magnitude": 1,
+        "direction": 1,
+        "origin": "editorial-extension-of-source-separate-credit",
+        "methodCredit": 0,
+        "validated": false
+      },
+      "independentArithmeticFixture": "resultant-horizontal-3-prose",
+      "requiresSeparateDifficultyCalibration": true,
+      "notes": "More contributors increase arithmetic/selection demand; the two-mark label does not prove equal difficulty."
+    },
+    {
+      "fixtureId": "resultant-horizontal-3-table",
+      "signature": "resultant:table:horizontal:3",
+      "classification": "direct-three-force",
+      "reviewStatus": "agent-reviewed",
+      "sourceRelation": "extended-demand",
+      "operations": [
+        "Read 3 labelled forces and their stated directions.",
+        "Combine same-direction contributions and subtract the opposed contribution.",
+        "State the resultant magnitude and physical direction."
+      ],
+      "representationChange": "A labelled table replaces arrow reading; magnitude and direction are separate columns.",
+      "axisChange": "Left/right replaces up/down; no compass orientation is supplied.",
+      "proposedMarkBasis": {
+        "maximum": 2,
+        "magnitude": 1,
+        "direction": 1,
+        "origin": "editorial-extension-of-source-separate-credit",
+        "methodCredit": 0,
+        "validated": false
+      },
+      "independentArithmeticFixture": "resultant-horizontal-3-table",
+      "requiresSeparateDifficultyCalibration": true,
+      "notes": "More contributors increase arithmetic/selection demand; the two-mark label does not prove equal difficulty."
+    },
+    {
+      "fixtureId": "resultant-vertical-3-prose",
+      "signature": "resultant:prose:vertical:3",
+      "classification": "direct-three-force",
+      "reviewStatus": "agent-reviewed",
+      "sourceRelation": "extended-demand",
+      "operations": [
+        "Read 3 labelled forces and their stated directions.",
+        "Combine same-direction contributions and subtract the opposed contribution.",
+        "State the resultant magnitude and physical direction."
+      ],
+      "representationChange": "Explicit direction words replace arrow reading; all required readings are in prose.",
+      "axisChange": "Up/down conventions match the source axis.",
+      "proposedMarkBasis": {
+        "maximum": 2,
+        "magnitude": 1,
+        "direction": 1,
+        "origin": "editorial-extension-of-source-separate-credit",
+        "methodCredit": 0,
+        "validated": false
+      },
+      "independentArithmeticFixture": "resultant-vertical-3-prose",
+      "requiresSeparateDifficultyCalibration": true,
+      "notes": "More contributors increase arithmetic/selection demand; the two-mark label does not prove equal difficulty."
+    },
+    {
+      "fixtureId": "resultant-vertical-3-table",
+      "signature": "resultant:table:vertical:3",
+      "classification": "direct-three-force",
+      "reviewStatus": "agent-reviewed",
+      "sourceRelation": "extended-demand",
+      "operations": [
+        "Read 3 labelled forces and their stated directions.",
+        "Combine same-direction contributions and subtract the opposed contribution.",
+        "State the resultant magnitude and physical direction."
+      ],
+      "representationChange": "A labelled table replaces arrow reading; magnitude and direction are separate columns.",
+      "axisChange": "Up/down conventions match the source axis.",
+      "proposedMarkBasis": {
+        "maximum": 2,
+        "magnitude": 1,
+        "direction": 1,
+        "origin": "editorial-extension-of-source-separate-credit",
+        "methodCredit": 0,
+        "validated": false
+      },
+      "independentArithmeticFixture": "resultant-vertical-3-table",
+      "requiresSeparateDifficultyCalibration": true,
+      "notes": "More contributors increase arithmetic/selection demand; the two-mark label does not prove equal difficulty."
+    },
+    {
+      "fixtureId": "missing-force-horizontal-2-prose",
+      "signature": "missing-force:prose:horizontal:2",
+      "classification": "inverse-two-force",
+      "reviewStatus": "agent-reviewed",
+      "sourceRelation": "extended-demand",
+      "operations": [
+        "Read the supplied net force and the other signed force.",
+        "Use A = resultant − B.",
+        "Convert the signed target A to magnitude and physical direction."
+      ],
+      "representationChange": "Explicit direction words replace arrow reading; all required readings are in prose.",
+      "axisChange": "Left/right replaces up/down; no compass orientation is supplied.",
+      "proposedMarkBasis": {
+        "maximum": 2,
+        "magnitude": 1,
+        "direction": 1,
+        "origin": "editorial-extension-of-source-separate-credit",
+        "methodCredit": 0,
+        "validated": false
+      },
+      "independentArithmeticFixture": "missing-force-horizontal-2-prose",
+      "requiresSeparateDifficultyCalibration": true,
+      "notes": "Repeating the supplied resultant is not answering for A. Show-working wording does not by itself create a method mark."
+    },
+    {
+      "fixtureId": "missing-force-horizontal-2-table",
+      "signature": "missing-force:table:horizontal:2",
+      "classification": "inverse-two-force",
+      "reviewStatus": "agent-reviewed",
+      "sourceRelation": "extended-demand",
+      "operations": [
+        "Read the supplied net force and the other signed force.",
+        "Use A = resultant − B.",
+        "Convert the signed target A to magnitude and physical direction."
+      ],
+      "representationChange": "A labelled table replaces arrow reading; magnitude and direction are separate columns.",
+      "axisChange": "Left/right replaces up/down; no compass orientation is supplied.",
+      "proposedMarkBasis": {
+        "maximum": 2,
+        "magnitude": 1,
+        "direction": 1,
+        "origin": "editorial-extension-of-source-separate-credit",
+        "methodCredit": 0,
+        "validated": false
+      },
+      "independentArithmeticFixture": "missing-force-horizontal-2-table",
+      "requiresSeparateDifficultyCalibration": true,
+      "notes": "Repeating the supplied resultant is not answering for A. Show-working wording does not by itself create a method mark."
+    },
+    {
+      "fixtureId": "missing-force-vertical-2-prose",
+      "signature": "missing-force:prose:vertical:2",
+      "classification": "inverse-two-force",
+      "reviewStatus": "agent-reviewed",
+      "sourceRelation": "extended-demand",
+      "operations": [
+        "Read the supplied net force and the other signed force.",
+        "Use A = resultant − B.",
+        "Convert the signed target A to magnitude and physical direction."
+      ],
+      "representationChange": "Explicit direction words replace arrow reading; all required readings are in prose.",
+      "axisChange": "Up/down conventions match the source axis.",
+      "proposedMarkBasis": {
+        "maximum": 2,
+        "magnitude": 1,
+        "direction": 1,
+        "origin": "editorial-extension-of-source-separate-credit",
+        "methodCredit": 0,
+        "validated": false
+      },
+      "independentArithmeticFixture": "missing-force-vertical-2-prose",
+      "requiresSeparateDifficultyCalibration": true,
+      "notes": "Repeating the supplied resultant is not answering for A. Show-working wording does not by itself create a method mark."
+    },
+    {
+      "fixtureId": "missing-force-vertical-2-table",
+      "signature": "missing-force:table:vertical:2",
+      "classification": "inverse-two-force",
+      "reviewStatus": "agent-reviewed",
+      "sourceRelation": "extended-demand",
+      "operations": [
+        "Read the supplied net force and the other signed force.",
+        "Use A = resultant − B.",
+        "Convert the signed target A to magnitude and physical direction."
+      ],
+      "representationChange": "A labelled table replaces arrow reading; magnitude and direction are separate columns.",
+      "axisChange": "Up/down conventions match the source axis.",
+      "proposedMarkBasis": {
+        "maximum": 2,
+        "magnitude": 1,
+        "direction": 1,
+        "origin": "editorial-extension-of-source-separate-credit",
+        "methodCredit": 0,
+        "validated": false
+      },
+      "independentArithmeticFixture": "missing-force-vertical-2-table",
+      "requiresSeparateDifficultyCalibration": true,
+      "notes": "Repeating the supplied resultant is not answering for A. Show-working wording does not by itself create a method mark."
+    },
+    {
+      "fixtureId": "missing-force-horizontal-3-prose",
+      "signature": "missing-force:prose:horizontal:3",
+      "classification": "inverse-three-force",
+      "reviewStatus": "agent-reviewed",
+      "sourceRelation": "extended-demand",
+      "operations": [
+        "Read the supplied net force and the other signed forces.",
+        "Use A = resultant − (B + C).",
+        "Convert the signed target A to magnitude and physical direction."
+      ],
+      "representationChange": "Explicit direction words replace arrow reading; all required readings are in prose.",
+      "axisChange": "Left/right replaces up/down; no compass orientation is supplied.",
+      "proposedMarkBasis": {
+        "maximum": 2,
+        "magnitude": 1,
+        "direction": 1,
+        "origin": "editorial-extension-of-source-separate-credit",
+        "methodCredit": 0,
+        "validated": false
+      },
+      "independentArithmeticFixture": "missing-force-horizontal-3-prose",
+      "requiresSeparateDifficultyCalibration": true,
+      "notes": "Repeating the supplied resultant is not answering for A. Show-working wording does not by itself create a method mark."
+    },
+    {
+      "fixtureId": "missing-force-horizontal-3-table",
+      "signature": "missing-force:table:horizontal:3",
+      "classification": "inverse-three-force",
+      "reviewStatus": "agent-reviewed",
+      "sourceRelation": "extended-demand",
+      "operations": [
+        "Read the supplied net force and the other signed forces.",
+        "Use A = resultant − (B + C).",
+        "Convert the signed target A to magnitude and physical direction."
+      ],
+      "representationChange": "A labelled table replaces arrow reading; magnitude and direction are separate columns.",
+      "axisChange": "Left/right replaces up/down; no compass orientation is supplied.",
+      "proposedMarkBasis": {
+        "maximum": 2,
+        "magnitude": 1,
+        "direction": 1,
+        "origin": "editorial-extension-of-source-separate-credit",
+        "methodCredit": 0,
+        "validated": false
+      },
+      "independentArithmeticFixture": "missing-force-horizontal-3-table",
+      "requiresSeparateDifficultyCalibration": true,
+      "notes": "Repeating the supplied resultant is not answering for A. Show-working wording does not by itself create a method mark."
+    },
+    {
+      "fixtureId": "missing-force-vertical-3-prose",
+      "signature": "missing-force:prose:vertical:3",
+      "classification": "inverse-three-force",
+      "reviewStatus": "agent-reviewed",
+      "sourceRelation": "extended-demand",
+      "operations": [
+        "Read the supplied net force and the other signed forces.",
+        "Use A = resultant − (B + C).",
+        "Convert the signed target A to magnitude and physical direction."
+      ],
+      "representationChange": "Explicit direction words replace arrow reading; all required readings are in prose.",
+      "axisChange": "Up/down conventions match the source axis.",
+      "proposedMarkBasis": {
+        "maximum": 2,
+        "magnitude": 1,
+        "direction": 1,
+        "origin": "editorial-extension-of-source-separate-credit",
+        "methodCredit": 0,
+        "validated": false
+      },
+      "independentArithmeticFixture": "missing-force-vertical-3-prose",
+      "requiresSeparateDifficultyCalibration": true,
+      "notes": "Repeating the supplied resultant is not answering for A. Show-working wording does not by itself create a method mark."
+    },
+    {
+      "fixtureId": "missing-force-vertical-3-table",
+      "signature": "missing-force:table:vertical:3",
+      "classification": "inverse-three-force",
+      "reviewStatus": "agent-reviewed",
+      "sourceRelation": "extended-demand",
+      "operations": [
+        "Read the supplied net force and the other signed forces.",
+        "Use A = resultant − (B + C).",
+        "Convert the signed target A to magnitude and physical direction."
+      ],
+      "representationChange": "A labelled table replaces arrow reading; magnitude and direction are separate columns.",
+      "axisChange": "Up/down conventions match the source axis.",
+      "proposedMarkBasis": {
+        "maximum": 2,
+        "magnitude": 1,
+        "direction": 1,
+        "origin": "editorial-extension-of-source-separate-credit",
+        "methodCredit": 0,
+        "validated": false
+      },
+      "independentArithmeticFixture": "missing-force-vertical-3-table",
+      "requiresSeparateDifficultyCalibration": true,
+      "notes": "Repeating the supplied resultant is not answering for A. Show-working wording does not by itself create a method mark."
+    }
+  ],
+  "conclusions": {
+    "reviewedStructures": 16,
+    "closestOperationMatches": 4,
+    "extendedDemandStructures": 12,
+    "validatedCustomMarks": [],
+    "activeTemplates": 0,
+    "pedagogicalValidation": "partial",
+    "studentResponseStudy": "not-conducted"
+  },
+  "remainingChecks": [
+    "The source uses an arrow diagram; generated prose/table variants change representation demand and have not established difficulty equivalence.",
+    "Inverse and three-force variants need separate assessment/response calibration beyond independent arithmetic fixtures.",
+    "General working, signed conventions and contradictory free-text responses remain outside the bounded final-answer marker.",
+    "No official per-task AO allocation has been verified.",
+    "No live question family registration or complete quiz blueprint."
+  ]
+}

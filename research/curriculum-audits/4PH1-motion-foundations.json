@@ -1,0 +1,739 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4PH1",
+  "chapterId": "forces-and-motion",
+  "documentId": "4PH1-spec",
+  "specificationIssue": "Issue 4 - September 2024",
+  "documentSha256": "bac4b8312d4fbfc84672f909100d66b2b3cda0b25e98c0d11bbc7366dae482b2",
+  "reviewDate": "2026-09-17",
+  "reviewer": "Codex Astra",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Bounded source-clause decomposition of references 1.1–1.10, with original teaching-evidence and remaining-check records. This is a partial curriculum audit, not a complete chapter or teaching claim.",
+  "identifierPolicy": "Requirement suffixes r1, r2, etc. are local editorial audit identifiers; only the parent reference is publisher-numbered.",
+  "notePath": "content/notes/physics.json",
+  "parents": [
+    {
+      "parentId": "4PH1:issue4:1.1",
+      "officialReference": "1.1",
+      "pdfPage": 17,
+      "printedPage": 11,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Seven named unit requirements; conversions and examples are original supporting teaching, not additional official numbered statements.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.1:r1",
+          "origin": "source-clause",
+          "summary": "Use kilograms (kg) for mass.",
+          "teachingEvidence": [
+            {
+              "sectionId": "motion-units",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "motion-units",
+              "field": "example"
+            },
+            {
+              "sectionId": "motion-units",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check use of kilograms in more than one context, including inverse calculations.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:1.1:r2",
+          "origin": "source-clause",
+          "summary": "Use metres (m) for length/distance.",
+          "teachingEvidence": [
+            {
+              "sectionId": "motion-units",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "motion-units",
+              "field": "example"
+            },
+            {
+              "sectionId": "motion-units",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check length conversion and graph-scale use independently.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:1.1:r3",
+          "origin": "source-clause",
+          "summary": "Use metres per second (m/s) for speed.",
+          "teachingEvidence": [
+            {
+              "sectionId": "motion-units",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "motion-units",
+              "field": "example"
+            },
+            {
+              "sectionId": "motion-units",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check speed-unit interpretation separately from memorising a conversion.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:1.1:r4",
+          "origin": "source-clause",
+          "summary": "Use metres per second squared (m/s²) for acceleration.",
+          "teachingEvidence": [
+            {
+              "sectionId": "motion-units",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "motion-units",
+              "field": "example"
+            },
+            {
+              "sectionId": "motion-units",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check the difference between m/s² and (m/s)² in an independent response.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:1.1:r5",
+          "origin": "source-clause",
+          "summary": "Use newtons (N) for force.",
+          "teachingEvidence": [
+            {
+              "sectionId": "motion-units",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "motion-units",
+              "field": "example"
+            },
+            {
+              "sectionId": "motion-units",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check force-versus-mass unit selection independently.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:1.1:r6",
+          "origin": "source-clause",
+          "summary": "Use seconds (s) for elapsed time.",
+          "teachingEvidence": [
+            {
+              "sectionId": "motion-units",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "motion-units",
+              "field": "example"
+            },
+            {
+              "sectionId": "motion-units",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check time conversion across all relevant calculation families.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:1.1:r7",
+          "origin": "source-clause",
+          "summary": "Use newtons per kilogram (N/kg) for gravitational field strength.",
+          "teachingEvidence": [
+            {
+              "sectionId": "motion-units",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "motion-units",
+              "field": "example"
+            },
+            {
+              "sectionId": "motion-units",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check the distinction between field strength and weight independently.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:1.2P",
+      "officialReference": "1.2P",
+      "pdfPage": 17,
+      "printedPage": 11,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Paper 2-only pair of named units.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.2P:r1",
+          "origin": "source-clause",
+          "summary": "Use newton metres (N m) for moments.",
+          "teachingEvidence": [
+            {
+              "sectionId": "moments-and-equilibrium",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "moments-and-equilibrium",
+              "field": "example"
+            },
+            {
+              "sectionId": "moments-and-equilibrium",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check N m versus N/m independently.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:1.2P:r2",
+          "origin": "source-clause",
+          "summary": "Use kilogram metres per second (kg m/s) for momentum.",
+          "teachingEvidence": [
+            {
+              "sectionId": "momentum-conservation",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "momentum-conservation",
+              "field": "example"
+            },
+            {
+              "sectionId": "momentum-conservation",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check momentum unit construction independently.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:1.3",
+      "officialReference": "1.3",
+      "pdfPage": 17,
+      "printedPage": 11,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "The two source verbs, plot and explain, are recorded separately.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.3:r1",
+          "origin": "source-clause",
+          "summary": "Plot distance–time graphs.",
+          "teachingEvidence": [
+            {
+              "sectionId": "plotting-motion-data",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "plotting-motion-data",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Numerical plotting tolerances and an independently marked learner-drawn graph remain unvalidated.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:1.3:r2",
+          "origin": "source-clause",
+          "summary": "Explain distance–time graphs.",
+          "teachingEvidence": [
+            {
+              "sectionId": "distance-time-graphs",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "distance-time-graphs",
+              "field": "diagram"
+            },
+            {
+              "sectionId": "distance-time-graphs",
+              "field": "example"
+            },
+            {
+              "sectionId": "distance-time-graphs",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add and calibrate assessment of curved sections and differing vertical-axis definitions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:1.4",
+      "officialReference": "1.4",
+      "pdfPage": 17,
+      "printedPage": 11,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Know and use are separate source demands; inverse forms are pedagogical applications rather than extra publisher-numbered statements.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.4:r1",
+          "origin": "source-clause",
+          "summary": "Know the average speed = distance moved / time taken relationship.",
+          "teachingEvidence": [
+            {
+              "sectionId": "average-speed",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent recall and quantity identification remain to be checked.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:1.4:r2",
+          "origin": "source-clause",
+          "summary": "Use the average-speed relationship.",
+          "teachingEvidence": [
+            {
+              "sectionId": "average-speed",
+              "field": "example"
+            },
+            {
+              "sectionId": "average-speed",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Broader rearrangement and multi-stage cases remain uncalibrated.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:1.5",
+      "officialReference": "1.5",
+      "pdfPage": 17,
+      "printedPage": 11,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Toy cars and tennis balls are examples introduced by 'such as'; the source does not require both particular objects or one compulsory method.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.5:r1",
+          "origin": "source-clause",
+          "summary": "Investigate the motion of an everyday object practically.",
+          "teachingEvidence": [
+            {
+              "sectionId": "investigating-motion",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "investigating-motion",
+              "field": "practical"
+            },
+            {
+              "sectionId": "investigating-motion",
+              "field": "example"
+            },
+            {
+              "sectionId": "investigating-motion",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "The saved method and synthetic worked values are not evidence of a learner's practical work; raw-data analysis and practical assessment remain uncalibrated.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:1.6",
+      "officialReference": "1.6",
+      "pdfPage": 17,
+      "printedPage": 11,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Preserve the source's change-in-velocity numerator and explicit formula.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.6:r1",
+          "origin": "source-clause",
+          "summary": "Know acceleration = change in velocity / time taken, a = (v − u)/t.",
+          "teachingEvidence": [
+            {
+              "sectionId": "acceleration",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check symbol meanings and velocity change independently.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:1.6:r2",
+          "origin": "source-clause",
+          "summary": "Use the acceleration relationship.",
+          "teachingEvidence": [
+            {
+              "sectionId": "acceleration",
+              "field": "example"
+            },
+            {
+              "sectionId": "acceleration",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Inverse-time/final-velocity variants and more sign-convention cases remain uncalibrated.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:1.7",
+      "officialReference": "1.7",
+      "pdfPage": 17,
+      "printedPage": 11,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Plotting is distinct from reading acceleration off an existing graph.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.7:r1",
+          "origin": "source-clause",
+          "summary": "Plot velocity–time graphs.",
+          "teachingEvidence": [
+            {
+              "sectionId": "plotting-motion-data",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "plotting-motion-data",
+              "field": "example"
+            },
+            {
+              "sectionId": "plotting-motion-data",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Graph submission, scale selection and plotting-tolerance assessment are not validated.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:1.7:r2",
+          "origin": "source-clause",
+          "summary": "Explain velocity–time graphs.",
+          "teachingEvidence": [
+            {
+              "sectionId": "velocity-time-graphs",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "velocity-time-graphs",
+              "field": "diagram"
+            },
+            {
+              "sectionId": "velocity-time-graphs",
+              "field": "example"
+            },
+            {
+              "sectionId": "velocity-time-graphs",
+              "field": "practice"
+            },
+            {
+              "sectionId": "tangent-acceleration",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "tangent-acceleration",
+              "field": "diagram"
+            },
+            {
+              "sectionId": "tangent-acceleration",
+              "field": "example"
+            },
+            {
+              "sectionId": "tangent-acceleration",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Original curved-graph interpretation is linked; independent assessment of changing acceleration and negative velocities remains to be calibrated.",
+            "Independent assessment-family coverage is not yet validated."
+          ],
+          "teachingReviewedAt": "2026-09-18"
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:1.8",
+      "officialReference": "1.8",
+      "pdfPage": 17,
+      "printedPage": 11,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Gradient demand is explicit; the obtained Q12 source demonstrates why the curve/tangent case needs a teaching check.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.8:r1",
+          "origin": "source-clause",
+          "summary": "Determine acceleration from a velocity–time graph's gradient.",
+          "teachingEvidence": [
+            {
+              "sectionId": "velocity-time-graphs",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "velocity-time-graphs",
+              "field": "example"
+            },
+            {
+              "sectionId": "velocity-time-graphs",
+              "field": "practice"
+            },
+            {
+              "sectionId": "tangent-acceleration",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "tangent-acceleration",
+              "field": "diagram"
+            },
+            {
+              "sectionId": "tangent-acceleration",
+              "field": "example"
+            },
+            {
+              "sectionId": "tangent-acceleration",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Original tangent teaching and supplied-line arithmetic are checked; student-drawn tangent placement and reading tolerances remain uncalibrated.",
+            "Independent assessment-family coverage is not yet validated."
+          ],
+          "teachingReviewedAt": "2026-09-18"
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:1.9",
+      "officialReference": "1.9",
+      "pdfPage": 17,
+      "printedPage": 11,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Distance versus signed displacement is a correctness clarification, not a new official substatement number.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.9:r1",
+          "origin": "source-clause",
+          "summary": "Determine distance travelled using the area between a velocity–time graph and the time axis.",
+          "teachingEvidence": [
+            {
+              "sectionId": "distance-from-velocity-graphs",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "distance-from-velocity-graphs",
+              "field": "example"
+            },
+            {
+              "sectionId": "distance-from-velocity-graphs",
+              "field": "practice"
+            },
+            {
+              "sectionId": "estimating-curved-area",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "estimating-curved-area",
+              "field": "diagram"
+            },
+            {
+              "sectionId": "estimating-curved-area",
+              "field": "example"
+            },
+            {
+              "sectionId": "estimating-curved-area",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Original curved-area teaching and strip arithmetic are checked; graph-reading tolerance calibration and independent signed-region assessment remain open.",
+            "Independent assessment-family coverage is not yet validated."
+          ],
+          "teachingReviewedAt": "2026-09-18"
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:1.10",
+      "officialReference": "1.10",
+      "pdfPage": 17,
+      "printedPage": 11,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Constant-acceleration and direction caveats are original correctness support; retain the publisher's one numbered relationship.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.10:r1",
+          "origin": "source-clause",
+          "summary": "Use v² = u² + 2as to relate final/initial speed, acceleration and distance moved.",
+          "teachingEvidence": [
+            {
+              "sectionId": "constant-acceleration",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "constant-acceleration",
+              "field": "example"
+            },
+            {
+              "sectionId": "constant-acceleration",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate inverse-variable choices, square-root handling and domain restrictions independently.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    }
+  ],
+  "completeTeachingPoints": 0,
+  "completeChapters": 0,
+  "teachingUpdatedAt": "2026-09-18"
+}

@@ -5,6 +5,10 @@ import physics from './notes/physics.json' with { type: 'json' };
 import physicsWaves from './notes/physics-waves.json' with { type: 'json' };
 import physicsEnergy from './notes/physics-energy.json' with { type: 'json' };
 import physicsElectricity from './notes/physics-electricity.json' with { type: 'json' };
+import physicsMatter from './notes/physics-matter.json' with { type: 'json' };
+import physicsMagnetism from './notes/physics-magnetism.json' with { type: 'json' };
+import physicsRadioactivity from './notes/physics-radioactivity.json' with { type: 'json' };
+import physicsAstrophysics from './notes/physics-astrophysics.json' with { type: 'json' };
 import english from './notes/english.json' with { type: 'json' };
 import mathematics from './notes/mathematics.json' with { type: 'json' };
 export type NoteSection = {
@@ -40,6 +44,7 @@ export type ChapterNotes = {
   humanReviewed: false;
   sourceId: string;
   sourcePages: number[];
+  supportingSources?: { title: string; url: string; sectionIds: string[] }[];
   prerequisites: string[];
   goals: string[];
   sections: NoteSection[];
@@ -53,6 +58,10 @@ export const notes: ChapterNotes[] = [
   physicsWaves,
   physicsEnergy,
   physicsElectricity,
+  physicsMatter,
+  physicsMagnetism,
+  physicsRadioactivity,
+  physicsAstrophysics,
   english,
   mathematics,
 ] as ChapterNotes[];

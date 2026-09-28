@@ -1,8 +1,33 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { execFileSync } from 'node:child_process';
+import sources from '../research/sources.json' with { type: 'json' };
 import paperLedger from '../research/paper-ledger.json' with { type: 'json' };
 import coverage from '../research/coverage.json' with { type: 'json' };
 import batch from '../research/batches/2026-09-08-cross-subject-lower-01.manifest.json' with { type: 'json' };
+
+void test('normalized specification references preserve saved metadata without inventing reviews', () => {
+  const rows = JSON.parse(execFileSync('python3', ['-c',
+    "import csv,json; print(json.dumps(list(csv.DictReader(open('research/ledger/v1/documents.csv')))))",
+  ], { encoding: 'utf8' })) as Record<string, string>[];
+  for (const source of sources) {
+    const matches = rows.filter((row) => row.document_id === source.id);
+    assert.equal(matches.length, 1);
+    const row = matches[0];
+    assert.equal(row.qualification, source.qualification);
+    assert.equal(row.document_type, source.documentType);
+    assert.equal(row.canonical_url, source.url);
+    assert.equal(row.sha256, source.sha256);
+    assert.equal(row.page_count, String(source.pages));
+    assert.equal(row.specification_issue, source.specificationIssue);
+    assert.equal(row.access_status, source.status);
+    assert.equal(row.local_evidence_path, 'research/sources.json');
+    assert.equal(row.identity_status, 'metadata-only');
+    assert.deepEqual(JSON.parse(row.reviewed_pages_json), []);
+    for (const field of ['year', 'series', 'component', 'variant', 'printed_exam_date'])
+      assert.equal(row[field], '', 'Unknown or inapplicable paper identity must not be invented');
+  }
+});
 
 void test('raw paper ledger keeps discovery and processing states separate', () => {
   assert.equal(paperLedger.length, 390);
@@ -51,20 +76,21 @@ void test('the bounded five-pair batch is indexed-only', () => {
 });
 
 // Reviewed identities and linked notes do not imply chapter completion.
-void test('reviewed Physics inventories agree with source candidates and registered notes', async () => {
+void test('reviewed inventories agree with source candidates and subject-specific notes', async () => {
   const { reviewedInventories } = await import('../lib/syllabus.ts');
   const { getNotes } = await import('../content/notes.ts');
+  const { subjects } = await import('../content/catalog.ts');
   assert.equal(
     reviewedInventories.reduce(
       (n, inventory) => n + inventory.points.length,
       0,
     ),
-    195,
+    248,
   );
   const allIds = reviewedInventories.flatMap((i) => i.points.map((p) => p.id));
   assert.equal(new Set(allIds).size, allIds.length);
   assert.deepEqual(
-    reviewedInventories.flatMap((i) => i.points.map((p) => p.reference)).sort(),
+    reviewedInventories.filter((i) => i.qualification === '4PH1').flatMap((i) => i.points.map((p) => p.reference)).sort(),
     coverage.filter((p) => p.qualification === '4PH1').map((p) => p.reference).sort(),
     'All Physics parent identities must reconcile to the preserved candidate inventory',
   );
@@ -75,12 +101,18 @@ void test('reviewed Physics inventories agree with source candidates and registe
           p.qualification === inventory.qualification &&
           p.reference === point.reference,
       );
-      assert.ok(raw);
-      assert.equal(raw.pdfPage, point.pdfPage);
+      if (inventory.qualification === '4MB1') {
+        assert.equal(raw, undefined, 'Raw numeric extraction must stay untouched for lettered Maths rows');
+        assert.match(point.reference, /^1[A-K]$/);
+        assert.equal(point.pdfPage, point.reference <= '1G' ? 17 : 18);
+      } else {
+        assert.ok(raw);
+        assert.equal(raw.pdfPage, point.pdfPage);
+      }
       assert.equal(point.printedPage, point.pdfPage - 6);
       assert.deepEqual(
         point.components,
-        point.reference.endsWith('P') ? ['2P'] : ['1P', '2P'],
+        inventory.qualification === '4CH1' ? (point.reference.endsWith('C') ? ['2C'] : ['1C', '2C']) : ['4HB1', '4MB1'].includes(inventory.qualification) ? ['01', '02'] : inventory.qualification === '4BI1' ? ['1B', '2B'] : point.reference.endsWith('P') ? ['2P'] : ['1P', '2P'],
       );
       assert.equal(point.humanReviewed, false);
       assert.equal(point.substatementAuditComplete, false);
@@ -89,7 +121,7 @@ void test('reviewed Physics inventories agree with source candidates and registe
         point.noteSectionIds.length ? 'partial' : 'not-started',
       );
       if (!point.noteSectionIds.length) continue;
-      const note = getNotes('physics', point.chapterId);
+      const note = getNotes(subjects.find((s) => s.code === inventory.qualification)!.id, point.chapterId);
       assert.ok(note);
       assert.ok(note.sourcePages.includes(point.pdfPage));
       assert.ok(point.noteSectionIds.length > 0);

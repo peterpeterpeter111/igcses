@@ -1,0 +1,178 @@
+{
+  "generatedAt": "2026-09-28T11:04:19.870162+00:00",
+  "scope": "Local preview DOM and interaction checks; no new academic or visual-content review. No deployment.",
+  "chapters": [
+    {
+      "path": "/subjects/biology/living-organisms",
+      "pageOpened": true,
+      "incompleteStatusPresent": true,
+      "brokenLocalFragmentLinks": [],
+      "diagramSources": [],
+      "allDiagramImagesLoaded": true
+    },
+    {
+      "path": "/subjects/chemistry/principles",
+      "pageOpened": true,
+      "incompleteStatusPresent": true,
+      "brokenLocalFragmentLinks": [],
+      "diagramSources": [
+        "/diagrams/chemistry-chromatogram.svg"
+      ],
+      "allDiagramImagesLoaded": true
+    },
+    {
+      "path": "/subjects/english/reading",
+      "pageOpened": true,
+      "incompleteStatusPresent": true,
+      "brokenLocalFragmentLinks": [],
+      "diagramSources": [],
+      "allDiagramImagesLoaded": true
+    },
+    {
+      "path": "/subjects/human-biology/cells-and-tissues",
+      "pageOpened": true,
+      "incompleteStatusPresent": true,
+      "brokenLocalFragmentLinks": [],
+      "diagramSources": [
+        "/diagrams/human-biology-mitosis.svg"
+      ],
+      "allDiagramImagesLoaded": true
+    },
+    {
+      "path": "/subjects/mathematics/number-and-algebra",
+      "pageOpened": true,
+      "incompleteStatusPresent": true,
+      "brokenLocalFragmentLinks": [],
+      "diagramSources": [],
+      "allDiagramImagesLoaded": true
+    },
+    {
+      "path": "/subjects/physics/astrophysics",
+      "pageOpened": true,
+      "incompleteStatusPresent": true,
+      "brokenLocalFragmentLinks": [],
+      "diagramSources": [
+        "/diagrams/physics-hr-diagram.svg"
+      ],
+      "allDiagramImagesLoaded": true
+    },
+    {
+      "path": "/subjects/physics/electricity",
+      "pageOpened": true,
+      "incompleteStatusPresent": true,
+      "brokenLocalFragmentLinks": [],
+      "diagramSources": [
+        "/diagrams/physics-current-voltage.svg"
+      ],
+      "allDiagramImagesLoaded": true
+    },
+    {
+      "path": "/subjects/physics/energy",
+      "pageOpened": true,
+      "incompleteStatusPresent": true,
+      "brokenLocalFragmentLinks": [],
+      "diagramSources": [
+        "/diagrams/physics-energy-sankey.svg"
+      ],
+      "allDiagramImagesLoaded": true
+    },
+    {
+      "path": "/subjects/physics/magnetism",
+      "pageOpened": true,
+      "incompleteStatusPresent": true,
+      "brokenLocalFragmentLinks": [],
+      "diagramSources": [
+        "/diagrams/physics-uniform-field.svg",
+        "/diagrams/physics-current-fields.svg"
+      ],
+      "allDiagramImagesLoaded": true
+    },
+    {
+      "path": "/subjects/physics/matter",
+      "pageOpened": true,
+      "incompleteStatusPresent": true,
+      "brokenLocalFragmentLinks": [],
+      "diagramSources": [
+        "/diagrams/physics-melting-curve.svg"
+      ],
+      "allDiagramImagesLoaded": true
+    },
+    {
+      "path": "/subjects/physics/radioactivity",
+      "pageOpened": true,
+      "incompleteStatusPresent": true,
+      "brokenLocalFragmentLinks": [],
+      "diagramSources": [
+        "/diagrams/physics-half-life.svg"
+      ],
+      "allDiagramImagesLoaded": true
+    },
+    {
+      "path": "/subjects/physics/waves",
+      "pageOpened": true,
+      "incompleteStatusPresent": true,
+      "brokenLocalFragmentLinks": [],
+      "diagramSources": [
+        "/diagrams/physics-wave-snapshot.svg",
+        "/diagrams/physics-refraction-block.svg"
+      ],
+      "allDiagramImagesLoaded": true
+    },
+    {
+      "path": "/subjects/physics/forces-and-motion",
+      "pageOpened": true,
+      "incompleteStatusPresent": true,
+      "brokenLocalFragmentLinks": [],
+      "diagramSources": [
+        "/diagrams/physics-distance-time.svg",
+        "/diagrams/physics-velocity-time.svg",
+        "/diagrams/physics-curved-tangent.svg",
+        "/diagrams/physics-curved-area.svg",
+        "/diagrams/physics-force-extension.svg",
+        "/diagrams/physics-supported-beam.svg"
+      ],
+      "allDiagramImagesLoaded": true
+    }
+  ],
+  "searchInteractions": [
+    {
+      "subject": "english",
+      "query": "comparison",
+      "expectedResultFound": true
+    },
+    {
+      "subject": "human-biology",
+      "query": "mitosis",
+      "expectedResultFound": true
+    },
+    {
+      "subject": "biology",
+      "query": "characteristics",
+      "expectedResultFound": true
+    },
+    {
+      "subject": "chemistry",
+      "query": "chromatography",
+      "expectedResultFound": true
+    },
+    {
+      "subject": "physics",
+      "query": "acceleration",
+      "expectedResultFound": true
+    },
+    {
+      "subject": "mathematics",
+      "query": "bounds",
+      "expectedResultFound": true
+    }
+  ],
+  "offlineSectionTitleSearch": {
+    "checked": 197,
+    "missingTargets": []
+  },
+  "limitations": [
+    "Does not certify syllabus accuracy, diagram scientific accuracy or all responsive layouts.",
+    "The first Biology status reading used an accessibility diff; a fresh DOM read then verified its incomplete label and eight sections.",
+    "The old preview tab retained a connection-error document; a fresh tab in the same browser was used after the server restarted."
+  ]
+}

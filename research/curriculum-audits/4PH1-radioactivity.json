@@ -1,0 +1,1320 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4PH1",
+  "chapterId": "radioactivity",
+  "documentId": "4PH1-spec",
+  "specificationIssue": "Issue 4 - September 2024",
+  "documentSha256": "bac4b8312d4fbfc84672f909100d66b2b3cda0b25e98c0d11bbc7366dae482b2",
+  "reviewDate": "2026-09-20",
+  "reviewer": "Codex Astra",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Bounded source-clause audit of 7.1–7.26, visually checked on official Physics specification PDF pages 31–32 / printed 25–26. Original teaching examples and model graph do not establish assessed mastery or completed practical work.",
+  "identifierPolicy": "Requirement suffixes r1, r2, etc. are local editorial audit identifiers; only the parent reference is publisher-numbered.",
+  "notePath": "content/notes/physics-radioactivity.json",
+  "parents": [
+    {
+      "parentId": "4PH1:issue4:7.1",
+      "officialReference": "7.1",
+      "pdfPage": 31,
+      "printedPage": 25,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "All five named units are retained.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:7.1:r1",
+          "origin": "source-clause",
+          "summary": "Use becquerels for activity.",
+          "teachingEvidence": [
+            {
+              "sectionId": "activity-and-decay",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess activity versus detector count rate across unit prefixes.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:7.1:r2",
+          "origin": "source-clause",
+          "summary": "Use centimetres for length.",
+          "teachingEvidence": [
+            {
+              "sectionId": "detecting-background-radiation",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess source–detector distance conversions in practical contexts.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:7.1:r3",
+          "origin": "source-clause",
+          "summary": "Use hours for time.",
+          "teachingEvidence": [
+            {
+              "sectionId": "half-life-calculations",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess hour/minute conversion in non-integer half-life contexts.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:7.1:r4",
+          "origin": "source-clause",
+          "summary": "Use minutes for time.",
+          "teachingEvidence": [
+            {
+              "sectionId": "detecting-background-radiation",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess unequal counting durations.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:7.1:r5",
+          "origin": "source-clause",
+          "summary": "Use seconds for time.",
+          "teachingEvidence": [
+            {
+              "sectionId": "detecting-background-radiation",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess time conversion and rate units independently.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:7.2",
+      "officialReference": "7.2",
+      "pdfPage": 31,
+      "printedPage": 25,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Atom structure and nuclear notation are separate demands.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:7.2:r1",
+          "origin": "source-clause",
+          "summary": "Describe proton, neutron and electron locations and properties.",
+          "teachingEvidence": [
+            {
+              "sectionId": "atoms-and-isotopes",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add calibrated atom/ion diagram interpretation.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:7.2:r2",
+          "origin": "source-clause",
+          "summary": "Interpret nuclear symbols.",
+          "teachingEvidence": [
+            {
+              "sectionId": "atoms-and-isotopes",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check unfamiliar isotope symbols and neutron counts.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:7.3",
+      "officialReference": "7.3",
+      "pdfPage": 31,
+      "printedPage": 25,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "All three specified terms are tracked.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:7.3:r1",
+          "origin": "source-clause",
+          "summary": "Define atomic or proton number.",
+          "teachingEvidence": [
+            {
+              "sectionId": "atoms-and-isotopes",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check distinction from electron number in ions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:7.3:r2",
+          "origin": "source-clause",
+          "summary": "Define mass or nucleon number.",
+          "teachingEvidence": [
+            {
+              "sectionId": "atoms-and-isotopes",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check that mass number is not treated as mass in grams.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:7.3:r3",
+          "origin": "source-clause",
+          "summary": "Define isotopes.",
+          "teachingEvidence": [
+            {
+              "sectionId": "atoms-and-isotopes",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess comparison of two unfamiliar nuclear symbols.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:7.4",
+      "officialReference": "7.4",
+      "pdfPage": 31,
+      "printedPage": 25,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Nuclear origin, ionisation and randomness are distinct demands.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:7.4:r1",
+          "origin": "source-clause",
+          "summary": "Identify alpha, beta-minus and gamma as ionising nuclear radiations.",
+          "teachingEvidence": [
+            {
+              "sectionId": "types-of-nuclear-radiation",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess nuclear versus orbital origins and ionisation meaning.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:7.4:r2",
+          "origin": "source-clause",
+          "summary": "Describe random emission from unstable nuclei.",
+          "teachingEvidence": [
+            {
+              "sectionId": "types-of-nuclear-radiation",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate individual-random versus ensemble-predictable explanations.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:7.5",
+      "officialReference": "7.5",
+      "pdfPage": 31,
+      "printedPage": 25,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Separate nature, penetration and ionising ability.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:7.5:r1",
+          "origin": "source-clause",
+          "summary": "Describe the nature of alpha, beta-minus and gamma.",
+          "teachingEvidence": [
+            {
+              "sectionId": "types-of-nuclear-radiation",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess particle content, charge and gamma properties.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:7.5:r2",
+          "origin": "source-clause",
+          "summary": "Compare penetrating power.",
+          "teachingEvidence": [
+            {
+              "sectionId": "types-of-nuclear-radiation",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add mixed-source/absorber cases with detector limitations.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:7.5:r3",
+          "origin": "source-clause",
+          "summary": "Compare ability to ionise.",
+          "teachingEvidence": [
+            {
+              "sectionId": "types-of-nuclear-radiation",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate comparative explanations without equating low penetration to safety.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:7.6",
+      "officialReference": "7.6",
+      "pdfPage": 31,
+      "printedPage": 25,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Method is taught; no investigation or data collection is claimed.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:7.6:r1",
+          "origin": "source-clause",
+          "summary": "Investigate radiation penetration with approved sources or simulations.",
+          "teachingEvidence": [
+            {
+              "sectionId": "radiation-penetration-practical",
+              "field": "practical"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Complete independently reviewed simulation data, uncertainty and evaluation tasks.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:7.7",
+      "officialReference": "7.7",
+      "pdfPage": 31,
+      "printedPage": 25,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "All four specified emissions are explicitly retained.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:7.7:r1",
+          "origin": "source-clause",
+          "summary": "Track nuclear numbers after alpha emission.",
+          "teachingEvidence": [
+            {
+              "sectionId": "balancing-nuclear-equations",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate unknown daughter identification.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:7.7:r2",
+          "origin": "source-clause",
+          "summary": "Track nuclear numbers after beta-minus emission.",
+          "teachingEvidence": [
+            {
+              "sectionId": "balancing-nuclear-equations",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate charge conservation and proton-number increase.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:7.7:r3",
+          "origin": "source-clause",
+          "summary": "Track nuclear numbers after gamma emission.",
+          "teachingEvidence": [
+            {
+              "sectionId": "balancing-nuclear-equations",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess excited versus changed isotope interpretation.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:7.7:r4",
+          "origin": "source-clause",
+          "summary": "Track nuclear numbers after neutron emission.",
+          "teachingEvidence": [
+            {
+              "sectionId": "balancing-nuclear-equations",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add a calibrated neutron-emission numeric task.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:7.8",
+      "officialReference": "7.8",
+      "pdfPage": 31,
+      "printedPage": 25,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Mass-number and charge conservation are both required.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:7.8:r1",
+          "origin": "source-clause",
+          "summary": "Balance mass numbers in nuclear equations.",
+          "teachingEvidence": [
+            {
+              "sectionId": "balancing-nuclear-equations",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess unknown emitted-particle and multi-stage equations.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:7.8:r2",
+          "origin": "source-clause",
+          "summary": "Balance charge numbers in nuclear equations.",
+          "teachingEvidence": [
+            {
+              "sectionId": "balancing-nuclear-equations",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess beta sign errors without inferring hidden method.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:7.9",
+      "officialReference": "7.9",
+      "pdfPage": 31,
+      "printedPage": 25,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Both listed detector types remain visible.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:7.9:r1",
+          "origin": "source-clause",
+          "summary": "Describe photographic-film detection.",
+          "teachingEvidence": [
+            {
+              "sectionId": "detecting-background-radiation",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess film-badge interpretation.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:7.9:r2",
+          "origin": "source-clause",
+          "summary": "Describe Geiger–Müller detection.",
+          "teachingEvidence": [
+            {
+              "sectionId": "detecting-background-radiation",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess count-rate interpretation and detector limitations.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:7.10",
+      "officialReference": "7.10",
+      "pdfPage": 31,
+      "printedPage": 25,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Earth and space sources are both represented.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:7.10:r1",
+          "origin": "source-clause",
+          "summary": "Explain terrestrial background sources.",
+          "teachingEvidence": [
+            {
+              "sectionId": "detecting-background-radiation",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess rock, radon, building material and internal-source comparisons.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:7.10:r2",
+          "origin": "source-clause",
+          "summary": "Explain cosmic background radiation.",
+          "teachingEvidence": [
+            {
+              "sectionId": "detecting-background-radiation",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess altitude-related explanations.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:7.11",
+      "officialReference": "7.11",
+      "pdfPage": 31,
+      "printedPage": 25,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Activity is kept distinct from measured count rate.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:7.11:r1",
+          "origin": "source-clause",
+          "summary": "Describe the decrease in activity over time.",
+          "teachingEvidence": [
+            {
+              "sectionId": "activity-and-decay",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess statistical fluctuations versus the ensemble trend.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:7.11:r2",
+          "origin": "source-clause",
+          "summary": "Express activity in becquerels.",
+          "teachingEvidence": [
+            {
+              "sectionId": "activity-and-decay",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate activity/count-rate distinction in detector questions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:7.12",
+      "officialReference": "7.12",
+      "pdfPage": 31,
+      "printedPage": 25,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Definition and variation between isotopes are separate.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:7.12:r1",
+          "origin": "source-clause",
+          "summary": "Define half-life.",
+          "teachingEvidence": [
+            {
+              "sectionId": "half-life-calculations",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess half-life descriptions without deterministic single-nucleus claims.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:7.12:r2",
+          "origin": "source-clause",
+          "summary": "Recognise that isotopes have different half-lives.",
+          "teachingEvidence": [
+            {
+              "sectionId": "half-life-calculations",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add isotope-selection/comparison evidence.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:7.13",
+      "officialReference": "7.13",
+      "pdfPage": 31,
+      "printedPage": 25,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Numerical and graphical demands are retained; the curve is an original model.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:7.13:r1",
+          "origin": "source-clause",
+          "summary": "Calculate activity changes with half-life.",
+          "teachingEvidence": [
+            {
+              "sectionId": "half-life-calculations",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess inverse, non-integer and unit-conversion cases.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:7.13:r2",
+          "origin": "source-clause",
+          "summary": "Use graphical half-life methods.",
+          "teachingEvidence": [
+            {
+              "sectionId": "half-life-from-graphs",
+              "field": "diagram"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate graph-reading tolerances, background and noisy data.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:7.14",
+      "officialReference": "7.14",
+      "pdfPage": 31,
+      "printedPage": 25,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Industry and medicine are both explained; no clinical advice is offered.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:7.14:r1",
+          "origin": "source-clause",
+          "summary": "Describe industrial radioactivity applications.",
+          "teachingEvidence": [
+            {
+              "sectionId": "uses-of-radioactivity",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess source choice and thickness-gauge feedback.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:7.14:r2",
+          "origin": "source-clause",
+          "summary": "Describe medical radioactivity applications.",
+          "teachingEvidence": [
+            {
+              "sectionId": "uses-of-radioactivity",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate tracer versus treatment explanations and half-life trade-offs.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:7.15",
+      "officialReference": "7.15",
+      "pdfPage": 31,
+      "printedPage": 25,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Material transfer is distinguished from exposure.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:7.15:r1",
+          "origin": "source-clause",
+          "summary": "Distinguish contamination and irradiation.",
+          "teachingEvidence": [
+            {
+              "sectionId": "contamination-and-irradiation",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess mixed scenarios involving both routes.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:7.16",
+      "officialReference": "7.16",
+      "pdfPage": 32,
+      "printedPage": 26,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Both biological harms plus waste disposal and risk reduction are retained.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:7.16:r1",
+          "origin": "source-clause",
+          "summary": "Explain mutation risks from ionising radiation.",
+          "teachingEvidence": [
+            {
+              "sectionId": "radiation-risks-and-waste",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate damage-risk wording without claiming deterministic cancer.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:7.16:r2",
+          "origin": "source-clause",
+          "summary": "Explain cell and tissue damage.",
+          "teachingEvidence": [
+            {
+              "sectionId": "radiation-risks-and-waste",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess ionisation-to-damage causal explanations.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:7.16:r3",
+          "origin": "source-clause",
+          "summary": "Explain radioactive-waste disposal problems and risk reduction.",
+          "teachingEvidence": [
+            {
+              "sectionId": "radiation-risks-and-waste",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess long half-lives, leakage, containment and shielding separately.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:7.17",
+      "officialReference": "7.17",
+      "pdfPage": 32,
+      "printedPage": 26,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "All three listed nuclear processes are included.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:7.17:r1",
+          "origin": "source-clause",
+          "summary": "Recognise decay, fission and fusion as energy sources.",
+          "teachingEvidence": [
+            {
+              "sectionId": "fission-and-chain-reactions",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess energy transfer paths for each process.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:7.18",
+      "officialReference": "7.18",
+      "pdfPage": 32,
+      "printedPage": 26,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Trigger and energy transfer are separately tracked.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:7.18:r1",
+          "origin": "source-clause",
+          "summary": "Describe neutron-induced uranium-235 fission.",
+          "teachingEvidence": [
+            {
+              "sectionId": "fission-and-chain-reactions",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess absorption followed by splitting, rather than atomic fragmentation.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:7.18:r2",
+          "origin": "source-clause",
+          "summary": "Describe kinetic energy of fission products.",
+          "teachingEvidence": [
+            {
+              "sectionId": "fission-and-chain-reactions",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess transfer from moving products to surrounding material.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:7.19",
+      "officialReference": "7.19",
+      "pdfPage": 32,
+      "printedPage": 26,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Variable product identities are not fixed to the illustrative example.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:7.19:r1",
+          "origin": "source-clause",
+          "summary": "Identify two radioactive daughter nuclei and emitted neutrons.",
+          "teachingEvidence": [
+            {
+              "sectionId": "fission-and-chain-reactions",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess varied balanced fission-product equations.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:7.20",
+      "officialReference": "7.20",
+      "pdfPage": 32,
+      "printedPage": 26,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Neutrons causing fission are distinguished from all emitted neutrons.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:7.20:r1",
+          "origin": "source-clause",
+          "summary": "Explain successive neutron-induced fissions in a chain reaction.",
+          "teachingEvidence": [
+            {
+              "sectionId": "fission-and-chain-reactions",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate diagram interpretation of escaping and captured neutrons.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:7.21",
+      "officialReference": "7.21",
+      "pdfPage": 32,
+      "printedPage": 26,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Moderator and control-rod mechanisms are separate.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:7.21:r1",
+          "origin": "source-clause",
+          "summary": "Explain control rods absorbing neutrons.",
+          "teachingEvidence": [
+            {
+              "sectionId": "controlling-a-reactor",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess insertion/withdrawal effects on neutron availability.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:7.21:r2",
+          "origin": "source-clause",
+          "summary": "Explain moderator slowing neutrons.",
+          "teachingEvidence": [
+            {
+              "sectionId": "controlling-a-reactor",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess slowing versus absorption explicitly.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:7.22",
+      "officialReference": "7.22",
+      "pdfPage": 32,
+      "printedPage": 26,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Shielding does not regulate the chain reaction.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:7.22:r1",
+          "origin": "source-clause",
+          "summary": "Explain protective reactor shielding.",
+          "teachingEvidence": [
+            {
+              "sectionId": "controlling-a-reactor",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess exposure reduction separately from containment and control.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:7.23",
+      "officialReference": "7.23",
+      "pdfPage": 32,
+      "printedPage": 26,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Both reactions are contrasted by their nuclear change.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:7.23:r1",
+          "origin": "source-clause",
+          "summary": "Distinguish fission from fusion.",
+          "teachingEvidence": [
+            {
+              "sectionId": "fission-and-chain-reactions",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess diagrams of splitting and combining.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:7.24",
+      "officialReference": "7.24",
+      "pdfPage": 32,
+      "printedPage": 26,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Combination, reduced rest mass and energy release are linked.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:7.24:r1",
+          "origin": "source-clause",
+          "summary": "Describe larger nuclei formed by combining light nuclei.",
+          "teachingEvidence": [
+            {
+              "sectionId": "fusion-in-stars",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess nuclear versus chemical processes.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:7.24:r2",
+          "origin": "source-clause",
+          "summary": "Relate reduced total rest mass to released energy.",
+          "teachingEvidence": [
+            {
+              "sectionId": "fusion-in-stars",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess conservation of mass–energy wording.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:7.25",
+      "officialReference": "7.25",
+      "pdfPage": 32,
+      "printedPage": 26,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Stellar fusion is a source claim, not complete stellar-life-cycle teaching.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:7.25:r1",
+          "origin": "source-clause",
+          "summary": "Identify fusion as the energy source of stars.",
+          "teachingEvidence": [
+            {
+              "sectionId": "fusion-in-stars",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess connection to stellar core fuel and conditions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:7.26",
+      "officialReference": "7.26",
+      "pdfPage": 32,
+      "printedPage": 26,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Electrostatic repulsion, temperature and pressure roles are retained.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:7.26:r1",
+          "origin": "source-clause",
+          "summary": "Explain why positive nuclei resist close approach.",
+          "teachingEvidence": [
+            {
+              "sectionId": "fusion-in-stars",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate explanations using proton charge and repulsion.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:7.26:r2",
+          "origin": "source-clause",
+          "summary": "Explain the need for high temperature and pressure.",
+          "teachingEvidence": [
+            {
+              "sectionId": "fusion-in-stars",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess kinetic-energy versus density/encounter roles without treating them as interchangeable.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    }
+  ],
+  "completeTeachingPoints": 0,
+  "completeChapters": 0,
+  "teachingUpdatedAt": "2026-09-20"
+}

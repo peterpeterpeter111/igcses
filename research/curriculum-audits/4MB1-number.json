@@ -1,0 +1,926 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4MB1",
+  "chapterId": "number-and-algebra",
+  "documentId": "4MB1-spec",
+  "specificationIssue": "Issue 1 - January 2016",
+  "documentSha256": "62d4534ba1c0aee42ce2d3e7fd1da8083fd03216dd106da11ae590525d3187a5",
+  "reviewDate": "2026-09-21",
+  "reviewer": "Codex Astra",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Only Number section 1, rows A–K. References 1A–1K combine the printed section number with its row letter; these are section-row identities, not invented decimal point numbers. Earlier raw numeric extraction returned zero Mathematics B rows and remains unchanged. All teaching partial.",
+  "identifierPolicy": "Parent references combine printed topic number 1 and row letter A–K. Requirement suffixes r1 etc. are local editorial identifiers, not publisher labels.",
+  "notePath": "content/notes/mathematics.json",
+  "parents": [
+    {
+      "parentId": "4MB1:issue1:1A",
+      "officialReference": "1A",
+      "pdfPage": 17,
+      "printedPage": 11,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Section-row identity verified; local requirements do not establish full exam coverage or mastery.",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:1A:r1",
+          "origin": "source-clause",
+          "summary": "Use addition and subtraction with signed numbers.",
+          "teachingEvidence": [
+            {
+              "sectionId": "operations-and-brackets",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess unfamiliar mixed-operation expressions with independent arithmetic.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1A:r2",
+          "origin": "source-clause",
+          "summary": "Use multiplication and division with signed numbers.",
+          "teachingEvidence": [
+            {
+              "sectionId": "operations-and-brackets",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess unfamiliar mixed-operation expressions with independent arithmetic.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1A:r3",
+          "origin": "source-clause",
+          "summary": "Apply operation priority and brackets.",
+          "teachingEvidence": [
+            {
+              "sectionId": "operations-and-brackets",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess unfamiliar mixed-operation expressions with independent arithmetic.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1A:r4",
+          "origin": "source-clause",
+          "summary": "Interpret grouped fractions and calculator entry.",
+          "teachingEvidence": [
+            {
+              "sectionId": "operations-and-brackets",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess unfamiliar mixed-operation expressions with independent arithmetic.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4MB1:issue1:1B",
+      "officialReference": "1B",
+      "pdfPage": 17,
+      "printedPage": 11,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Section-row identity verified; local requirements do not establish full exam coverage or mastery.",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:1B:r1",
+          "origin": "source-clause",
+          "summary": "Recognise prime numbers.",
+          "teachingEvidence": [
+            {
+              "sectionId": "primes-factors-multiples",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess classification and context selection independently.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1B:r2",
+          "origin": "source-clause",
+          "summary": "Identify factors.",
+          "teachingEvidence": [
+            {
+              "sectionId": "primes-factors-multiples",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess classification and context selection independently.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1B:r3",
+          "origin": "source-clause",
+          "summary": "Identify multiples.",
+          "teachingEvidence": [
+            {
+              "sectionId": "primes-factors-multiples",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess classification and context selection independently.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1B:r4",
+          "origin": "source-clause",
+          "summary": "Find HCF in simple cases.",
+          "teachingEvidence": [
+            {
+              "sectionId": "primes-factors-multiples",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess classification and context selection independently.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1B:r5",
+          "origin": "source-clause",
+          "summary": "Find LCM in simple cases.",
+          "teachingEvidence": [
+            {
+              "sectionId": "primes-factors-multiples",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess classification and context selection independently.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4MB1:issue1:1C",
+      "officialReference": "1C",
+      "pdfPage": 17,
+      "printedPage": 11,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Section-row identity verified; local requirements do not establish full exam coverage or mastery.",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:1C:r1",
+          "origin": "source-clause",
+          "summary": "Interpret index notation and integer powers.",
+          "teachingEvidence": [
+            {
+              "sectionId": "index-laws",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess positive, fractional and negative exponents without confusing addition with multiplication.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1C:r2",
+          "origin": "source-clause",
+          "summary": "Apply multiplication/division index laws and conditions.",
+          "teachingEvidence": [
+            {
+              "sectionId": "index-laws",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess positive, fractional and negative exponents without confusing addition with multiplication.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1C:r3",
+          "origin": "source-clause",
+          "summary": "Evaluate roots and fractional powers on a stated real domain.",
+          "teachingEvidence": [
+            {
+              "sectionId": "index-laws",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess positive, fractional and negative exponents without confusing addition with multiplication.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1C:r4",
+          "origin": "source-clause",
+          "summary": "Evaluate negative powers as reciprocals.",
+          "teachingEvidence": [
+            {
+              "sectionId": "index-laws",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess positive, fractional and negative exponents without confusing addition with multiplication.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1C:r5",
+          "origin": "source-clause",
+          "summary": "Apply zero powers and powers of powers with appropriate conditions.",
+          "teachingEvidence": [
+            {
+              "sectionId": "index-laws",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess positive, fractional and negative exponents without confusing addition with multiplication.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4MB1:issue1:1D",
+      "officialReference": "1D",
+      "pdfPage": 17,
+      "printedPage": 11,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Section-row identity verified; local requirements do not establish full exam coverage or mastery.",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:1D:r1",
+          "origin": "source-clause",
+          "summary": "Recognise surds as exact irrational roots.",
+          "teachingEvidence": [
+            {
+              "sectionId": "surds-and-exact-values",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess independent exact-value and simplification tasks.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1D:r2",
+          "origin": "source-clause",
+          "summary": "Simplify and combine simple surd expressions.",
+          "teachingEvidence": [
+            {
+              "sectionId": "surds-and-exact-values",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess independent exact-value and simplification tasks.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4MB1:issue1:1E",
+      "officialReference": "1E",
+      "pdfPage": 17,
+      "printedPage": 11,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Section-row identity verified; local requirements do not establish full exam coverage or mastery.",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:1E:r1",
+          "origin": "source-clause",
+          "summary": "Rationalise a single-root denominator.",
+          "teachingEvidence": [
+            {
+              "sectionId": "rationalising-denominators",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess non-zero denominator conditions and full numerator expansion.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1E:r2",
+          "origin": "source-clause",
+          "summary": "Use a conjugate for a two-term denominator.",
+          "teachingEvidence": [
+            {
+              "sectionId": "rationalising-denominators",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess non-zero denominator conditions and full numerator expansion.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4MB1:issue1:1F",
+      "officialReference": "1F",
+      "pdfPage": 17,
+      "printedPage": 11,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Section-row identity verified; local requirements do not establish full exam coverage or mastery.",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:1F:r1",
+          "origin": "source-clause",
+          "summary": "Recognise natural numbers under the stated convention.",
+          "teachingEvidence": [
+            {
+              "sectionId": "number-sets",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess overlapping memberships rather than mutually exclusive labels.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1F:r2",
+          "origin": "source-clause",
+          "summary": "Recognise integers.",
+          "teachingEvidence": [
+            {
+              "sectionId": "number-sets",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess overlapping memberships rather than mutually exclusive labels.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1F:r3",
+          "origin": "source-clause",
+          "summary": "Recognise rational numbers including recurring decimals.",
+          "teachingEvidence": [
+            {
+              "sectionId": "number-sets",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess overlapping memberships rather than mutually exclusive labels.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1F:r4",
+          "origin": "source-clause",
+          "summary": "Recognise irrational numbers without requiring proof.",
+          "teachingEvidence": [
+            {
+              "sectionId": "number-sets",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess overlapping memberships rather than mutually exclusive labels.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4MB1:issue1:1G",
+      "officialReference": "1G",
+      "pdfPage": 17,
+      "printedPage": 11,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Section-row identity verified; local requirements do not establish full exam coverage or mastery.",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:1G:r1",
+          "origin": "source-clause",
+          "summary": "Calculate with standard mass units.",
+          "teachingEvidence": [
+            {
+              "sectionId": "metric-measures",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess independently checked multi-step unit and rate problems.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1G:r2",
+          "origin": "source-clause",
+          "summary": "Calculate with metric lengths.",
+          "teachingEvidence": [
+            {
+              "sectionId": "metric-measures",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess independently checked multi-step unit and rate problems.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1G:r3",
+          "origin": "source-clause",
+          "summary": "Convert area using squared length factors.",
+          "teachingEvidence": [
+            {
+              "sectionId": "metric-measures",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess independently checked multi-step unit and rate problems.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1G:r4",
+          "origin": "source-clause",
+          "summary": "Convert volume using cubed length factors.",
+          "teachingEvidence": [
+            {
+              "sectionId": "metric-measures",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess independently checked multi-step unit and rate problems.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1G:r5",
+          "origin": "source-clause",
+          "summary": "Relate volume to capacity units.",
+          "teachingEvidence": [
+            {
+              "sectionId": "metric-measures",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess independently checked multi-step unit and rate problems.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1G:r6",
+          "origin": "source-clause",
+          "summary": "Convert time units.",
+          "teachingEvidence": [
+            {
+              "sectionId": "time-speed-and-money",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess independently checked multi-step unit and rate problems.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1G:r7",
+          "origin": "source-clause",
+          "summary": "Calculate average speed from total distance and time.",
+          "teachingEvidence": [
+            {
+              "sectionId": "time-speed-and-money",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess independently checked multi-step unit and rate problems.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1G:r8",
+          "origin": "source-clause",
+          "summary": "Calculate money and currency conversions at a supplied rate.",
+          "teachingEvidence": [
+            {
+              "sectionId": "time-speed-and-money",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess independently checked multi-step unit and rate problems.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4MB1:issue1:1H",
+      "officialReference": "1H",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Section-row identity verified; local requirements do not establish full exam coverage or mastery.",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:1H:r1",
+          "origin": "source-clause",
+          "summary": "Interchange fraction, decimal and percentage representations.",
+          "teachingEvidence": [
+            {
+              "sectionId": "fractions-and-decimals",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess representation choice and independently validated contextual problems.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1H:r2",
+          "origin": "source-clause",
+          "summary": "Use four operations on fractions.",
+          "teachingEvidence": [
+            {
+              "sectionId": "fractions-and-decimals",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess representation choice and independently validated contextual problems.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1H:r3",
+          "origin": "source-clause",
+          "summary": "Use four operations on decimals.",
+          "teachingEvidence": [
+            {
+              "sectionId": "fractions-and-decimals",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess representation choice and independently validated contextual problems.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1H:r4",
+          "origin": "source-clause",
+          "summary": "Solve ratios with up to three parts.",
+          "teachingEvidence": [
+            {
+              "sectionId": "ratio-and-proportion",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess representation choice and independently validated contextual problems.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1H:r5",
+          "origin": "source-clause",
+          "summary": "Apply proportion in problems.",
+          "teachingEvidence": [
+            {
+              "sectionId": "ratio-and-proportion",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess representation choice and independently validated contextual problems.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1H:r6",
+          "origin": "source-clause",
+          "summary": "Solve percentage and reverse-percentage problems.",
+          "teachingEvidence": [
+            {
+              "sectionId": "percentage-changes",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess representation choice and independently validated contextual problems.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4MB1:issue1:1I",
+      "officialReference": "1I",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Section-row identity verified; local requirements do not establish full exam coverage or mastery.",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:1I:r1",
+          "origin": "source-clause",
+          "summary": "Round to a stated number of decimal places.",
+          "teachingEvidence": [
+            {
+              "sectionId": "rounding-and-accuracy",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess leading/trailing zeros, carry and final-only rounding.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1I:r2",
+          "origin": "source-clause",
+          "summary": "Round to a stated number of significant figures.",
+          "teachingEvidence": [
+            {
+              "sectionId": "rounding-and-accuracy",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess leading/trailing zeros, carry and final-only rounding.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4MB1:issue1:1J",
+      "officialReference": "1J",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Section-row identity verified; local requirements do not establish full exam coverage or mastery.",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:1J:r1",
+          "origin": "source-clause",
+          "summary": "Determine error intervals from stated rounding.",
+          "teachingEvidence": [
+            {
+              "sectionId": "upper-and-lower-bounds",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess independent interval and combined-measurement problems including excluded endpoints.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1J:r2",
+          "origin": "source-clause",
+          "summary": "Combine bounds for sums, differences and positive products.",
+          "teachingEvidence": [
+            {
+              "sectionId": "upper-and-lower-bounds",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess independent interval and combined-measurement problems including excluded endpoints.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1J:r3",
+          "origin": "source-clause",
+          "summary": "Use correct quotient endpoints and recognise domain restrictions.",
+          "teachingEvidence": [
+            {
+              "sectionId": "upper-and-lower-bounds",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess independent interval and combined-measurement problems including excluded endpoints.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4MB1:issue1:1K",
+      "officialReference": "1K",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Section-row identity verified; local requirements do not establish full exam coverage or mastery.",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:1K:r1",
+          "origin": "source-clause",
+          "summary": "Express a positive value as a × 10ⁿ with the required coefficient and integer exponent.",
+          "teachingEvidence": [
+            {
+              "sectionId": "standard-form",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess independent arithmetic and contextual reasonableness checks.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:1K:r2",
+          "origin": "source-clause",
+          "summary": "Solve standard-form calculations and interpret magnitude.",
+          "teachingEvidence": [
+            {
+              "sectionId": "standard-form",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess independent arithmetic and contextual reasonableness checks.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    }
+  ],
+  "completeTeachingPoints": 0,
+  "completeChapters": 0
+}

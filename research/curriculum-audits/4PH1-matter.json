@@ -1,0 +1,1146 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4PH1",
+  "chapterId": "matter",
+  "documentId": "4PH1-spec",
+  "specificationIssue": "Issue 4 - September 2024",
+  "documentSha256": "bac4b8312d4fbfc84672f909100d66b2b3cda0b25e98c0d11bbc7366dae482b2",
+  "reviewDate": "2026-09-20",
+  "reviewer": "Codex Astra",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Bounded source-clause and named-item audit of 5.1–5.22 on Physics specification PDF pages 27–28 / printed 21–22. Practical, drawing and assessment validation remain incomplete.",
+  "identifierPolicy": "Requirement suffixes r1, r2, etc. are local editorial audit identifiers; only the parent reference is publisher-numbered.",
+  "notePath": "content/notes/physics-matter.json",
+  "parents": [
+    {
+      "parentId": "4PH1:issue4:5.1",
+      "officialReference": "5.1",
+      "pdfPage": 27,
+      "printedPage": 21,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "All twelve named units are recorded; a single conversion example is not complete unit coverage.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:5.1:r1",
+          "origin": "source-clause",
+          "summary": "Use degrees Celsius appropriately.",
+          "teachingEvidence": [
+            {
+              "sectionId": "matter-units",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate readings versus temperature changes.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:5.1:r2",
+          "origin": "source-clause",
+          "summary": "Use kelvin appropriately.",
+          "teachingEvidence": [
+            {
+              "sectionId": "matter-units",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate absolute temperature and the absence of a degree sign.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:5.1:r3",
+          "origin": "source-clause",
+          "summary": "Use joules appropriately.",
+          "teachingEvidence": [
+            {
+              "sectionId": "matter-units",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Distinguish energy from power and temperature.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:5.1:r4",
+          "origin": "source-clause",
+          "summary": "Use kilograms appropriately.",
+          "teachingEvidence": [
+            {
+              "sectionId": "matter-units",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check gram conversion in density and heat-capacity equations.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:5.1:r5",
+          "origin": "source-clause",
+          "summary": "Use kilograms per cubic metre appropriately.",
+          "teachingEvidence": [
+            {
+              "sectionId": "matter-units",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate density conversions requiring both mass and volume factors.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:5.1:r6",
+          "origin": "source-clause",
+          "summary": "Use metres appropriately.",
+          "teachingEvidence": [
+            {
+              "sectionId": "matter-units",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Distinguish depth and displacement from area/volume.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:5.1:r7",
+          "origin": "source-clause",
+          "summary": "Use square metres appropriately.",
+          "teachingEvidence": [
+            {
+              "sectionId": "matter-units",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate squared length conversions in pressure tasks.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:5.1:r8",
+          "origin": "source-clause",
+          "summary": "Use cubic metres appropriately.",
+          "teachingEvidence": [
+            {
+              "sectionId": "matter-units",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate cubed length conversions and measuring-cylinder volumes.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:5.1:r9",
+          "origin": "source-clause",
+          "summary": "Use metres per second appropriately.",
+          "teachingEvidence": [
+            {
+              "sectionId": "matter-units",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Distinguish average molecular speed from pressure and temperature.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:5.1:r10",
+          "origin": "source-clause",
+          "summary": "Use metres per second squared appropriately.",
+          "teachingEvidence": [
+            {
+              "sectionId": "matter-units",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Relate gravitational acceleration units to N/kg without treating all acceleration as g.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:5.1:r11",
+          "origin": "source-clause",
+          "summary": "Use newtons appropriately.",
+          "teachingEvidence": [
+            {
+              "sectionId": "matter-units",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Distinguish normal force from pressure and mass.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:5.1:r12",
+          "origin": "source-clause",
+          "summary": "Use pascals appropriately.",
+          "teachingEvidence": [
+            {
+              "sectionId": "matter-units",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate Pa/kPa conversion and Pa = N/m².",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:5.2P",
+      "officialReference": "5.2P",
+      "pdfPage": 27,
+      "printedPage": 21,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Specific heat capacity unit is Paper 2-only here.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:5.2P:r1",
+          "origin": "source-clause",
+          "summary": "Use J/(kg °C) for specific heat capacity.",
+          "teachingEvidence": [
+            {
+              "sectionId": "specific-heat-capacity",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate unit interpretation as energy per mass per temperature change.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:5.3",
+      "officialReference": "5.3",
+      "pdfPage": 27,
+      "printedPage": 21,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Know/use are local audit subdivisions.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:5.3:r1",
+          "origin": "source-clause",
+          "summary": "Know density = mass/volume.",
+          "teachingEvidence": [
+            {
+              "sectionId": "density",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check formula recall and material versus hollow-object average density.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:5.3:r2",
+          "origin": "source-clause",
+          "summary": "Use density, mass and volume relationship.",
+          "teachingEvidence": [
+            {
+              "sectionId": "density",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate inverse targets and coherent units for solids and liquids.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:5.4",
+      "officialReference": "5.4",
+      "pdfPage": 27,
+      "printedPage": 21,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "The source requires direct mass/volume measurements; the three apparatus contexts are teaching examples, not invented source bullets.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:5.4:r1",
+          "origin": "source-clause",
+          "summary": "Investigate density through measured mass and volume.",
+          "teachingEvidence": [
+            {
+              "sectionId": "density-practical",
+              "field": "practical"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate independent regular-solid, irregular-solid and liquid planning/results tasks and measurement uncertainty.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:5.5",
+      "officialReference": "5.5",
+      "pdfPage": 27,
+      "printedPage": 21,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Normal force and actual contact area matter.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:5.5:r1",
+          "origin": "source-clause",
+          "summary": "Know pressure = force/area.",
+          "teachingEvidence": [
+            {
+              "sectionId": "pressure-and-area",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate pressure/force distinctions and normal-force conditions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:5.5:r2",
+          "origin": "source-clause",
+          "summary": "Use p = F/A.",
+          "teachingEvidence": [
+            {
+              "sectionId": "pressure-and-area",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate inverse force/area targets and total versus per-contact areas.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:5.6",
+      "officialReference": "5.6",
+      "pdfPage": 27,
+      "printedPage": 21,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Both gases and liquids at rest are specified; pressure at one point is not pressure at every depth.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:5.6:r1",
+          "origin": "source-clause",
+          "summary": "Explain equal pressure in all directions at a point in a gas at rest.",
+          "teachingEvidence": [
+            {
+              "sectionId": "pressure-in-fluids",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate gas-container explanations without implying all wall forces have equal magnitude.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:5.6:r2",
+          "origin": "source-clause",
+          "summary": "Explain equal pressure in all directions at a point in a liquid at rest.",
+          "teachingEvidence": [
+            {
+              "sectionId": "pressure-in-fluids",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate distinction between directional equality and depth variation.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:5.7",
+      "officialReference": "5.7",
+      "pdfPage": 27,
+      "printedPage": 21,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "The source relationship concerns a pressure difference, not automatically absolute pressure.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:5.7:r1",
+          "origin": "source-clause",
+          "summary": "Know pressure difference = height × density × g.",
+          "teachingEvidence": [
+            {
+              "sectionId": "pressure-in-fluids",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate vertical depth and density assumptions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:5.7:r2",
+          "origin": "source-clause",
+          "summary": "Use the liquid pressure-difference relationship.",
+          "teachingEvidence": [
+            {
+              "sectionId": "pressure-in-fluids",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate inverse quantities, surface pressure and comparisons with different densities.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:5.8P",
+      "officialReference": "5.8P",
+      "pdfPage": 28,
+      "printedPage": 22,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Heating can raise temperature or change state; stored energy is not identical to temperature.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:5.8P:r1",
+          "origin": "source-clause",
+          "summary": "Explain heating that changes stored energy and raises temperature.",
+          "teachingEvidence": [
+            {
+              "sectionId": "heating-and-changing-state",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate particle kinetic-energy explanations without treating particles as expanding.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:5.8P:r2",
+          "origin": "source-clause",
+          "summary": "Explain heating that changes stored energy during a state change.",
+          "teachingEvidence": [
+            {
+              "sectionId": "heating-and-changing-state",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate phase-change explanations at constant pressure without claiming no energy transfer during a plateau.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:5.9P",
+      "officialReference": "5.9P",
+      "pdfPage": 28,
+      "printedPage": 22,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Melting, evaporation and boiling are all explicitly required.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:5.9P:r1",
+          "origin": "source-clause",
+          "summary": "Describe melting.",
+          "teachingEvidence": [
+            {
+              "sectionId": "states-and-particles",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess change in particle arrangement and motion rather than destruction of particles.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:5.9P:r2",
+          "origin": "source-clause",
+          "summary": "Describe evaporation.",
+          "teachingEvidence": [
+            {
+              "sectionId": "states-and-particles",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate surface escape below boiling temperature and evaporative cooling.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:5.9P:r3",
+          "origin": "source-clause",
+          "summary": "Describe boiling.",
+          "teachingEvidence": [
+            {
+              "sectionId": "states-and-particles",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess bubble formation throughout liquid and dependence of boiling temperature on pressure.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:5.10P",
+      "officialReference": "5.10P",
+      "pdfPage": 28,
+      "printedPage": 22,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Three states each require arrangement and motion.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:5.10P:r1",
+          "origin": "source-clause",
+          "summary": "Describe particle arrangement and motion in solids.",
+          "teachingEvidence": [
+            {
+              "sectionId": "states-and-particles",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate close arrangement and vibration around fixed positions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:5.10P:r2",
+          "origin": "source-clause",
+          "summary": "Describe particle arrangement and motion in liquids.",
+          "teachingEvidence": [
+            {
+              "sectionId": "states-and-particles",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate close arrangement with motion past other particles.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:5.10P:r3",
+          "origin": "source-clause",
+          "summary": "Describe particle arrangement and motion in gases.",
+          "teachingEvidence": [
+            {
+              "sectionId": "states-and-particles",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate separation and random motion without drawing particles themselves larger.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:5.11P",
+      "officialReference": "5.11P",
+      "pdfPage": 28,
+      "printedPage": 22,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "The practical requires obtaining a temperature–time graph; a supplied schematic cannot fulfil that experimental requirement.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:5.11P:r1",
+          "origin": "source-clause",
+          "summary": "Investigate temperature versus time through a change of state.",
+          "teachingEvidence": [
+            {
+              "sectionId": "heating-and-changing-state",
+              "field": "practical"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate learner planning, actual/independent sample data, graph scales, phases and limitations.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:5.12P",
+      "officialReference": "5.12P",
+      "pdfPage": 28,
+      "printedPage": 22,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Definition must include per kilogram and per degree Celsius.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:5.12P:r1",
+          "origin": "source-clause",
+          "summary": "Define specific heat capacity.",
+          "teachingEvidence": [
+            {
+              "sectionId": "specific-heat-capacity",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess both normalising quantities and distinction from total heat capacity.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:5.13P",
+      "officialReference": "5.13P",
+      "pdfPage": 28,
+      "printedPage": 22,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "The source asks use of the given thermal-energy equation.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:5.13P:r1",
+          "origin": "source-clause",
+          "summary": "Use ΔQ = mcΔT.",
+          "teachingEvidence": [
+            {
+              "sectionId": "specific-heat-capacity",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate inverse targets, temperature differences and restriction to no phase change.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:5.14P",
+      "officialReference": "5.14P",
+      "pdfPage": 28,
+      "printedPage": 22,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Water and some solids are expressly included, not alternatives.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:5.14P:r1",
+          "origin": "source-clause",
+          "summary": "Investigate water’s specific heat capacity.",
+          "teachingEvidence": [
+            {
+              "sectionId": "heat-capacity-water-practical",
+              "field": "practical"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate vessel/heater energy, losses, uniformity, input-energy measurement and uncertainty.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:5.14P:r2",
+          "origin": "source-clause",
+          "summary": "Investigate specific heat capacity of solid materials.",
+          "teachingEvidence": [
+            {
+              "sectionId": "heat-capacity-solid-practical",
+              "field": "practical"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate multiple suitable solids, thermal contact and probe lag in independent planning/results tasks.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:5.15",
+      "officialReference": "5.15",
+      "pdfPage": 28,
+      "printedPage": 22,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Random motion and collision-based force/pressure are both explicit.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:5.15:r1",
+          "origin": "source-clause",
+          "summary": "Describe random gas molecular motion.",
+          "teachingEvidence": [
+            {
+              "sectionId": "gas-pressure-and-temperature",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate a distribution of directions/speeds without assuming ordered bulk flow.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:5.15:r2",
+          "origin": "source-clause",
+          "summary": "Explain wall forces and pressure using collisions.",
+          "teachingEvidence": [
+            {
+              "sectionId": "gas-pressure-and-temperature",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate a chain from momentum changes to force per area.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:5.16",
+      "officialReference": "5.16",
+      "pdfPage": 28,
+      "printedPage": 22,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "The source gives the approximate −273 °C value; ideal-gas extrapolation is not a claim that real gases remain gaseous to zero.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:5.16:r1",
+          "origin": "source-clause",
+          "summary": "Explain the existence of absolute zero near −273 °C.",
+          "teachingEvidence": [
+            {
+              "sectionId": "gas-pressure-and-temperature",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess lower-bound/model reasoning and condensation limits of experimental extrapolation.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:5.17",
+      "officialReference": "5.17",
+      "pdfPage": 28,
+      "printedPage": 22,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Scale description and conversions are separate local demands.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:5.17:r1",
+          "origin": "source-clause",
+          "summary": "Describe the kelvin temperature scale.",
+          "teachingEvidence": [
+            {
+              "sectionId": "gas-pressure-and-temperature",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check absolute zero and equal-size kelvin/Celsius intervals.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:5.17:r2",
+          "origin": "source-clause",
+          "summary": "Convert between Celsius and kelvin readings.",
+          "teachingEvidence": [
+            {
+              "sectionId": "gas-pressure-and-temperature",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate both conversion directions and negative Celsius values.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:5.18",
+      "officialReference": "5.18",
+      "pdfPage": 28,
+      "printedPage": 22,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "The source refers to average molecular speed, not identical speeds or direct proportionality.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:5.18:r1",
+          "origin": "source-clause",
+          "summary": "Relate higher temperature to greater average molecular speed.",
+          "teachingEvidence": [
+            {
+              "sectionId": "gas-pressure-and-temperature",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate qualitative comparisons without doubling speed when kelvin temperature doubles.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:5.19",
+      "officialReference": "5.19",
+      "pdfPage": 28,
+      "printedPage": 22,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Proportionality uses kelvin temperature and average kinetic energy.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:5.19:r1",
+          "origin": "source-clause",
+          "summary": "Relate average gas molecular kinetic energy to kelvin temperature.",
+          "teachingEvidence": [
+            {
+              "sectionId": "gas-pressure-and-temperature",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate ratios using absolute temperatures rather than Celsius readings.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:5.20",
+      "officialReference": "5.20",
+      "pdfPage": 28,
+      "printedPage": 22,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Both qualitative laws require a fixed gas amount, with different controlled variables.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:5.20:r1",
+          "origin": "source-clause",
+          "summary": "Explain pressure–volume behaviour at constant temperature.",
+          "teachingEvidence": [
+            {
+              "sectionId": "gas-pressure-volume",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate collision-frequency reasoning and the fixed-temperature assumption.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:5.20:r2",
+          "origin": "source-clause",
+          "summary": "Explain pressure–kelvin-temperature behaviour at constant volume.",
+          "teachingEvidence": [
+            {
+              "sectionId": "gas-pressure-kelvin",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate frequency and momentum-change effects while distinguishing a rigid vessel from a balloon.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:5.21",
+      "officialReference": "5.21",
+      "pdfPage": 28,
+      "printedPage": 22,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Fixed gas mass and volume; temperatures in kelvin.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:5.21:r1",
+          "origin": "source-clause",
+          "summary": "Use p₁/T₁ = p₂/T₂.",
+          "teachingEvidence": [
+            {
+              "sectionId": "gas-pressure-kelvin",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate all inverse targets and absolute-versus-gauge pressures.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:5.22",
+      "officialReference": "5.22",
+      "pdfPage": 28,
+      "printedPage": 22,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Fixed gas mass and temperature; consistent volume and pressure units.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:5.22:r1",
+          "origin": "source-clause",
+          "summary": "Use p₁V₁ = p₂V₂.",
+          "teachingEvidence": [
+            {
+              "sectionId": "gas-pressure-volume",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate inverse volume, absolute pressure and post-compression temperature conditions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    }
+  ],
+  "completeTeachingPoints": 0,
+  "completeChapters": 0,
+  "teachingUpdatedAt": "2026-09-20"
+}

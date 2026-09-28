@@ -1,0 +1,708 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4HB1",
+  "chapterId": "cells-and-tissues",
+  "documentId": "4HB1-spec",
+  "specificationIssue": "Issue 2 - September 2024",
+  "documentSha256": "989c6536fa946f1361e45e3c1e0ebced240a9f4666a2c835ce9cf9724a38e30f",
+  "reviewDate": "2026-09-20",
+  "reviewer": "Codex Astra",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Bounded first half of Cells and tissues: 1.1–1.8 only. References 1.9–1.16 are not reviewed in this overlay. Micrograph interpretation and all assessment validation remain incomplete.",
+  "identifierPolicy": "Requirement suffixes r1, r2, etc. are local editorial audit identifiers; only the parent reference is publisher-numbered.",
+  "notePath": "content/notes/human-biology.json",
+  "parents": [
+    {
+      "parentId": "4HB1:issue2:1.1",
+      "officialReference": "1.1",
+      "pdfPage": 17,
+      "printedPage": 11,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Text explanations and original examples are present; image/sequence assessment and independent review remain incomplete.",
+      "requirements": [
+        {
+          "id": "4HB1:issue2:1.1:r1",
+          "origin": "source-clause",
+          "summary": "Recognise a nucleus in suitable cell images.",
+          "teachingEvidence": [
+            {
+              "sectionId": "recognising-cell-structures",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add independently checked real light/TEM image examples and blind recognition tasks; textual clues alone do not complete image interpretation.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.1:r2",
+          "origin": "source-clause",
+          "summary": "Recognise condensed chromosomes in appropriate dividing-cell images.",
+          "teachingEvidence": [
+            {
+              "sectionId": "recognising-cell-structures",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add independently checked real light/TEM image examples and blind recognition tasks; textual clues alone do not complete image interpretation.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.1:r3",
+          "origin": "source-clause",
+          "summary": "Recognise the cell membrane at the boundary.",
+          "teachingEvidence": [
+            {
+              "sectionId": "recognising-cell-structures",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add independently checked real light/TEM image examples and blind recognition tasks; textual clues alone do not complete image interpretation.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.1:r4",
+          "origin": "source-clause",
+          "summary": "Recognise mitochondrial internal membrane features in TEM images.",
+          "teachingEvidence": [
+            {
+              "sectionId": "recognising-cell-structures",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add independently checked real light/TEM image examples and blind recognition tasks; textual clues alone do not complete image interpretation.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.1:r5",
+          "origin": "source-clause",
+          "summary": "Recognise endoplasmic reticulum in TEM images.",
+          "teachingEvidence": [
+            {
+              "sectionId": "recognising-cell-structures",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add independently checked real light/TEM image examples and blind recognition tasks; textual clues alone do not complete image interpretation.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.1:r6",
+          "origin": "source-clause",
+          "summary": "Recognise ribosomes as small dense structures in TEM images.",
+          "teachingEvidence": [
+            {
+              "sectionId": "recognising-cell-structures",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add independently checked real light/TEM image examples and blind recognition tasks; textual clues alone do not complete image interpretation.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4HB1:issue2:1.2",
+      "officialReference": "1.2",
+      "pdfPage": 17,
+      "printedPage": 11,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Text explanations and original examples are present; image/sequence assessment and independent review remain incomplete.",
+      "requirements": [
+        {
+          "id": "4HB1:issue2:1.2:r1",
+          "origin": "source-clause",
+          "summary": "Relate the nucleus to genetic information and control of cell activity.",
+          "teachingEvidence": [
+            {
+              "sectionId": "cell-structures",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess organelle function using an unfamiliar cell activity and distinguish nearby structures.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.2:r2",
+          "origin": "source-clause",
+          "summary": "Relate chromosomes to DNA and genes.",
+          "teachingEvidence": [
+            {
+              "sectionId": "cell-structures",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess organelle function using an unfamiliar cell activity and distinguish nearby structures.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.2:r3",
+          "origin": "source-clause",
+          "summary": "Relate the membrane to controlled exchange.",
+          "teachingEvidence": [
+            {
+              "sectionId": "cell-structures",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess organelle function using an unfamiliar cell activity and distinguish nearby structures.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.2:r4",
+          "origin": "source-clause",
+          "summary": "Relate mitochondria to aerobic respiration and usable energy.",
+          "teachingEvidence": [
+            {
+              "sectionId": "cell-structures",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess organelle function using an unfamiliar cell activity and distinguish nearby structures.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.2:r5",
+          "origin": "source-clause",
+          "summary": "Relate endoplasmic reticulum to intracellular processing and transport.",
+          "teachingEvidence": [
+            {
+              "sectionId": "cell-structures",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess organelle function using an unfamiliar cell activity and distinguish nearby structures.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.2:r6",
+          "origin": "source-clause",
+          "summary": "Relate ribosomes to protein synthesis.",
+          "teachingEvidence": [
+            {
+              "sectionId": "cell-structures",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess organelle function using an unfamiliar cell activity and distinguish nearby structures.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4HB1:issue2:1.3",
+      "officialReference": "1.3",
+      "pdfPage": 17,
+      "printedPage": 11,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Text explanations and original examples are present; image/sequence assessment and independent review remain incomplete.",
+      "requirements": [
+        {
+          "id": "4HB1:issue2:1.3:r1",
+          "origin": "source-clause",
+          "summary": "Describe the double helix of two coiled strands.",
+          "teachingEvidence": [
+            {
+              "sectionId": "dna-structure",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add independently checked molecular diagrams and label-to-function assessment.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.3:r2",
+          "origin": "source-clause",
+          "summary": "Identify nucleotides as the units of DNA.",
+          "teachingEvidence": [
+            {
+              "sectionId": "dna-structure",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add independently checked molecular diagrams and label-to-function assessment.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.3:r3",
+          "origin": "source-clause",
+          "summary": "Apply complementary base pairing between strands.",
+          "teachingEvidence": [
+            {
+              "sectionId": "dna-structure",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add independently checked molecular diagrams and label-to-function assessment.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.3:r4",
+          "origin": "source-clause",
+          "summary": "Locate hydrogen bonds between complementary bases.",
+          "teachingEvidence": [
+            {
+              "sectionId": "dna-structure",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add independently checked molecular diagrams and label-to-function assessment.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4HB1:issue2:1.4",
+      "officialReference": "1.4",
+      "pdfPage": 17,
+      "printedPage": 11,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Text explanations and original examples are present; image/sequence assessment and independent review remain incomplete.",
+      "requirements": [
+        {
+          "id": "4HB1:issue2:1.4:r1",
+          "origin": "source-clause",
+          "summary": "Describe separation of the original DNA strands.",
+          "teachingEvidence": [
+            {
+              "sectionId": "dna-replication",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess the ordered replication explanation without supplying the steps.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.4:r2",
+          "origin": "source-clause",
+          "summary": "Explain formation of complementary new strands from nucleotides.",
+          "teachingEvidence": [
+            {
+              "sectionId": "dna-replication",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess the ordered replication explanation without supplying the steps.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.4:r3",
+          "origin": "source-clause",
+          "summary": "Explain DNA polymerase joining nucleotides into new strands.",
+          "teachingEvidence": [
+            {
+              "sectionId": "dna-replication",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess the ordered replication explanation without supplying the steps.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4HB1:issue2:1.5",
+      "officialReference": "1.5",
+      "pdfPage": 17,
+      "printedPage": 11,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Text explanations and original examples are present; image/sequence assessment and independent review remain incomplete.",
+      "requirements": [
+        {
+          "id": "4HB1:issue2:1.5:r1",
+          "origin": "source-clause",
+          "summary": "Define a gene as a DNA length whose sequence specifies a protein.",
+          "teachingEvidence": [
+            {
+              "sectionId": "genes-and-triplets",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess unfamiliar sequence/length examples with explicit strand and stop-signal assumptions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.5:r2",
+          "origin": "source-clause",
+          "summary": "Relate DNA base order to amino-acid order.",
+          "teachingEvidence": [
+            {
+              "sectionId": "genes-and-triplets",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess unfamiliar sequence/length examples with explicit strand and stop-signal assumptions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.5:r3",
+          "origin": "source-clause",
+          "summary": "Apply the three-base-per-amino-acid coding model.",
+          "teachingEvidence": [
+            {
+              "sectionId": "genes-and-triplets",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess unfamiliar sequence/length examples with explicit strand and stop-signal assumptions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4HB1:issue2:1.6",
+      "officialReference": "1.6",
+      "pdfPage": 17,
+      "printedPage": 11,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Text explanations and original examples are present; image/sequence assessment and independent review remain incomplete.",
+      "requirements": [
+        {
+          "id": "4HB1:issue2:1.6:r1",
+          "origin": "source-clause",
+          "summary": "Describe RNA as single-stranded.",
+          "teachingEvidence": [
+            {
+              "sectionId": "rna-and-transcription",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess RNA/DNA contrasts and the role of mRNA independently.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.6:r2",
+          "origin": "source-clause",
+          "summary": "Identify ribose as the RNA sugar.",
+          "teachingEvidence": [
+            {
+              "sectionId": "rna-and-transcription",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess RNA/DNA contrasts and the role of mRNA independently.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.6:r3",
+          "origin": "source-clause",
+          "summary": "Identify uracil in RNA.",
+          "teachingEvidence": [
+            {
+              "sectionId": "rna-and-transcription",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess RNA/DNA contrasts and the role of mRNA independently.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.6:r4",
+          "origin": "source-clause",
+          "summary": "Explain mRNA transfer of information from nuclear DNA to ribosomes.",
+          "teachingEvidence": [
+            {
+              "sectionId": "rna-and-transcription",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess RNA/DNA contrasts and the role of mRNA independently.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4HB1:issue2:1.7",
+      "officialReference": "1.7",
+      "pdfPage": 17,
+      "printedPage": 11,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Text explanations and original examples are present; image/sequence assessment and independent review remain incomplete.",
+      "requirements": [
+        {
+          "id": "4HB1:issue2:1.7:r1",
+          "origin": "source-clause",
+          "summary": "Define mutation as a changed DNA base sequence.",
+          "teachingEvidence": [
+            {
+              "sectionId": "mutations-and-phenotype",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess causal and no-effect mutation examples using independently checked sequence keys.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.7:r2",
+          "origin": "source-clause",
+          "summary": "Explain a possible change in amino-acid sequence.",
+          "teachingEvidence": [
+            {
+              "sectionId": "mutations-and-phenotype",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess causal and no-effect mutation examples using independently checked sequence keys.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.7:r3",
+          "origin": "source-clause",
+          "summary": "Explain possible effects on phenotype without assuming every mutation has one.",
+          "teachingEvidence": [
+            {
+              "sectionId": "mutations-and-phenotype",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess causal and no-effect mutation examples using independently checked sequence keys.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4HB1:issue2:1.8",
+      "officialReference": "1.8",
+      "pdfPage": 17,
+      "printedPage": 11,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Text explanations and original examples are present; image/sequence assessment and independent review remain incomplete.",
+      "requirements": [
+        {
+          "id": "4HB1:issue2:1.8:r1",
+          "origin": "source-clause",
+          "summary": "Describe transcription as mRNA formation in the nucleus.",
+          "teachingEvidence": [
+            {
+              "sectionId": "rna-and-transcription",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess transcription separately from replication.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.8:r2",
+          "origin": "source-clause",
+          "summary": "Describe mRNA transfer to ribosomes in the cytoplasm.",
+          "teachingEvidence": [
+            {
+              "sectionId": "rna-and-transcription",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess the compartment sequence using a labelled cell diagram.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.8:r3",
+          "origin": "source-clause",
+          "summary": "Explain tRNA matching to mRNA codons during translation.",
+          "teachingEvidence": [
+            {
+              "sectionId": "translation-at-ribosomes",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess codon versus anticodon using explicit sequence alignment.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4HB1:issue2:1.8:r4",
+          "origin": "source-clause",
+          "summary": "Describe amino-acid linkage into a polypeptide.",
+          "teachingEvidence": [
+            {
+              "sectionId": "translation-at-ribosomes",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess the full causal sequence from gene to chain.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    }
+  ],
+  "completeTeachingPoints": 0,
+  "completeChapters": 0
+}

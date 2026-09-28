@@ -1,0 +1,449 @@
+{
+  "subjectId": "physics",
+  "chapterId": "astrophysics",
+  "sourceId": "4PH1-spec",
+  "sourcePages": [
+    33,
+    34
+  ],
+  "status": "source-checked",
+  "complete": false,
+  "humanReviewed": false,
+  "prerequisites": [
+    "Use forces, velocity and circular motion concepts.",
+    "Rearrange equations and convert distance/time units.",
+    "Recall wavelength, frequency and nuclear fusion."
+  ],
+  "goals": [
+    "Explain gravitational orbits and calculate circular orbital speed.",
+    "Compare stellar colour, brightness and evolutionary stages.",
+    "Interpret H–R diagrams, red-shift and Big Bang evidence (Paper 2)."
+  ],
+  "sections": [
+    {
+      "id": "our-place-in-space",
+      "title": "Solar System, galaxy and universe",
+      "points": [
+        "8.2"
+      ],
+      "paragraphs": [
+        "The Solar System includes the Sun and objects orbiting it, such as planets, moons, asteroids and comets. It lies within the Milky Way galaxy. The Sun is one star in that galaxy; it is not the centre of the whole galaxy or of the universe.",
+        "Large galaxies contain billions of stars, together with gas, dust and other matter. The universe contains billions of galaxies. A galaxy is therefore a much larger grouping than a single solar system. A constellation is an apparent pattern on the sky, not necessarily a physically close group of stars."
+      ],
+      "example": {
+        "question": "Place Earth, the Solar System, the Milky Way and the universe in order of increasing scale.",
+        "steps": [
+          "Earth → Solar System → Milky Way → universe."
+        ],
+        "explanation": "These are nested locations, not four names for the same collection."
+      },
+      "practice": {
+        "question": "Does the Solar System contain the Milky Way?",
+        "answer": "No. The Solar System is within the Milky Way.",
+        "explanation": "A galaxy contains many stars and their systems."
+      },
+      "terms": [
+        "universe",
+        "galaxy",
+        "Milky Way",
+        "Solar System"
+      ]
+    },
+    {
+      "id": "gravity-on-other-worlds",
+      "title": "Gravitational field strength and weight",
+      "points": [
+        "8.1",
+        "8.3"
+      ],
+      "paragraphs": [
+        "Gravitational field strength g is force per unit mass, measured in newtons per kilogram (N/kg). Weight W = mg uses mass in kilograms and weight in newtons. Near a world’s surface, g depends on its mass and the distance from its centre. More mass at the same distance strengthens the field; greater distance from the same mass weakens it.",
+        "Different planets and the Moon therefore have different g values. A traveller’s mass does not change simply by travelling from Earth to the Moon, but their weight does. Gravitational acceleration has the same numerical value as g, expressed in metres per second squared (m/s²), when gravity is the only force considered.",
+        "Use the value supplied in a question. Do not assume every planet has Earth’s field strength or that a physically larger planet must have a larger surface g: mass and radius both matter."
+      ],
+      "example": {
+        "question": "A 60 kg traveller experiences g = 9.8 N/kg on Earth and 1.6 N/kg on the Moon. Compare weights.",
+        "steps": [
+          "Earth: W = 60 × 9.8 = 588 N.",
+          "Moon: W = 60 × 1.6 = 96 N.",
+          "Mass remains 60 kg in both places."
+        ],
+        "explanation": "Mass is measured in kg; gravitational force is measured in N."
+      },
+      "practice": {
+        "question": "If an object freely falls where g = 3.7 N/kg, what is its gravitational acceleration?",
+        "answer": "3.7 m/s² towards the world, neglecting other forces.",
+        "explanation": "N/kg and m/s² are equivalent units for this numerical value."
+      },
+      "terms": [
+        "gravitational field strength",
+        "weight",
+        "mass",
+        "N/kg",
+        "m/s²"
+      ]
+    },
+    {
+      "id": "gravity-keeps-orbits",
+      "title": "Why objects orbit",
+      "points": [
+        "8.4"
+      ],
+      "paragraphs": [
+        "An orbiting object has forward motion while gravity continually changes the direction of its velocity. For a circular orbit, the gravitational force points towards the centre and supplies the required centripetal force. Gravity is still present in orbit; it does not switch off above the atmosphere.",
+        "This principle applies to moons around planets, planets around the Sun, artificial satellites around Earth and comets around the Sun. Gravity attracts; an outward force is not needed to balance it in the usual inertial-frame explanation. A circular orbit can have constant speed but changing velocity because direction changes.",
+        "If the central gravitational attraction suddenly vanished in an idealised model, the object would initially move along the tangent rather than continue round the circle. Astronauts can feel weightless while falling with their spacecraft, even though Earth’s gravity acts on both."
+      ],
+      "example": {
+        "question": "A satellite moves at constant speed around a circular Earth orbit. Is its resultant force zero?",
+        "steps": [
+          "No: its velocity direction continually changes.",
+          "Gravity supplies an inward resultant force and acceleration."
+        ],
+        "explanation": "Constant speed is not the same as constant velocity."
+      },
+      "practice": {
+        "question": "Which interaction keeps a comet on a bound path around the Sun?",
+        "answer": "Gravitational attraction between the Sun and comet.",
+        "explanation": "The same interaction explains planetary and natural/artificial satellite orbits."
+      }
+    },
+    {
+      "id": "comparing-orbits",
+      "title": "Comparing comet, planet and moon orbits",
+      "points": [
+        "8.5"
+      ],
+      "paragraphs": [
+        "Planets orbit the Sun on elliptical paths that are usually close to circular in school diagrams, broadly in the same plane and direction. Many comets have much more elongated elliptical orbits, which can be strongly tilted relative to the planetary plane. Do not assume all comets share one size, period or shape.",
+        "A moon is a natural satellite of a planet. Many familiar moons follow approximately circular paths, while some have more eccentric or inclined orbits. Distinguish the body being orbited before comparing path shapes. The Moon orbits Earth while the Earth–Moon system also travels around the Sun.",
+        "Along an elongated comet orbit, speed varies: the comet moves faster near the Sun and more slowly farther away. The Sun is at a focus of the ellipse, not generally its geometric centre. The constant-speed circle formula is not a local speed rule for every point on that ellipse."
+      ],
+      "example": {
+        "question": "Compare an idealised near-circular planetary orbit with a highly elongated comet orbit.",
+        "steps": [
+          "The comet’s Sun-distance varies much more.",
+          "Its speed also varies more strongly, increasing near the Sun."
+        ],
+        "explanation": "A diagram’s apparent distance alone does not supply a numerical speed."
+      },
+      "practice": {
+        "question": "Must all moons orbit the Sun directly as planets do?",
+        "answer": "No. Moons are natural satellites of planets.",
+        "explanation": "Their wider motion through the Solar System does not change that classification."
+      }
+    },
+    {
+      "id": "circular-orbital-speed",
+      "title": "Circular orbital speed, radius and period",
+      "points": [
+        "8.1",
+        "8.6"
+      ],
+      "paragraphs": [
+        "For an ideal circular orbit, one revolution covers a circumference 2πr. The orbital period T is the time for that full revolution, so v = 2πr/T. Use radius in metres, period in seconds and speed in metres per second. Radius means distance from the orbit’s centre, not altitude above a surface.",
+        "If an orbit’s height h above a spherical planet and planet radius R are given, use r = R + h. Convert kilometres to metres and hours to seconds before calculating. Rearrangements are T = 2πr/v and r = vT/(2π).",
+        "The formula connects the geometry, speed and period of a circular orbit. It does not allow the radius and speed of a gravitational orbit to be chosen independently around a specified planet, nor does it give the changing speed at each point of an elliptical orbit."
+      ],
+      "example": {
+        "question": "A hypothetical circular orbit has radius 7000 km and period 100 min. Calculate orbital speed.",
+        "steps": [
+          "r = 7.00 × 10⁶ m; T = 6000 s.",
+          "v = 2π × 7.00 × 10⁶ / 6000 ≈ 7.33 × 10³ m/s."
+        ],
+        "explanation": "The path length is a circumference; use neither the radius alone nor the diameter as distance travelled."
+      },
+      "practice": {
+        "question": "A circular orbit has radius 4.20 × 10⁷ m and speed 3050 m/s. Estimate its period.",
+        "answer": "8.65 × 10⁴ s, about 24.0 h.",
+        "explanation": "T = 2πr/v ≈ 86523 s; divide by 3600 for hours."
+      },
+      "commonMistakes": [
+        "Using altitude as orbital radius.",
+        "Leaving the period in hours when the answer is required in m/s."
+      ]
+    },
+    {
+      "id": "stellar-colour-temperature",
+      "title": "Stellar colour and surface temperature",
+      "points": [
+        "8.7",
+        "8.8"
+      ],
+      "paragraphs": [
+        "Stars can be grouped by colour, with a broad progression from blue through white and yellow to orange and red. Blue stars have hotter surfaces than red stars. This describes surface temperature, not directly the temperature of the core.",
+        "Colour alone does not determine a star’s total light output: size also matters. A red giant can emit much more light in total than a small hotter star. Similarly, how bright a star appears from Earth depends on distance as well as its intrinsic light output."
+      ],
+      "example": {
+        "question": "A blue star and a red star are compared. Which has the hotter surface?",
+        "steps": [
+          "The blue star."
+        ],
+        "explanation": "Stellar colour is related to the spectrum of the light emitted by its surface."
+      },
+      "practice": {
+        "question": "Does a red star necessarily look fainter from Earth than every blue star?",
+        "answer": "No.",
+        "explanation": "Its size, total light output and distance also affect apparent brightness."
+      },
+      "terms": [
+        "blue star",
+        "red star",
+        "surface temperature"
+      ]
+    },
+    {
+      "id": "sun-like-stellar-evolution",
+      "title": "From nebula to white dwarf",
+      "points": [
+        "8.9"
+      ],
+      "paragraphs": [
+        "A Sun-like star begins when gravity contracts part of a gas-and-dust nebula. The forming star heats; sustained hydrogen fusion in its core marks the main-sequence stage.",
+        "After core hydrogen becomes depleted, the star’s structure changes and its outer layers expand into a red giant. It later loses outer material, leaving a hot dense white dwarf that gradually cools. The required sequence is nebula → main sequence → red giant → white dwarf; a white dwarf is a remnant, not a small hydrogen-fusing main-sequence star."
+      ],
+      "example": {
+        "question": "Arrange white dwarf, nebula, red giant and main sequence for a Sun-like star.",
+        "steps": [
+          "Nebula → main sequence → red giant → white dwarf."
+        ],
+        "explanation": "Connect each label to formation, fusion, expansion or the remnant stage."
+      },
+      "practice": {
+        "question": "Should the Sun-like sequence end with a supernova and neutron star?",
+        "answer": "No. That is the simplified high-mass route, not the Sun-like route.",
+        "explanation": "Initial mass strongly affects later stellar evolution."
+      }
+    },
+    {
+      "id": "massive-stellar-evolution",
+      "title": "The high-mass stellar route",
+      "points": [
+        "8.10"
+      ],
+      "paragraphs": [
+        "A sufficiently massive star also starts in a nebula and enters a main-sequence stage. It uses fuel rapidly and can evolve into a red supergiant. Further core changes can lead to collapse and a supernova, leaving a neutron star or, for a sufficiently massive remnant, a black hole.",
+        "This is the school-level high-mass pathway. A star only slightly more massive than the Sun does not automatically undergo core-collapse supernova. Initial mass and the remnant matter; do not apply one fate to every star. Ejected material can contribute to later star formation."
+      ],
+      "example": {
+        "question": "Complete a simplified high-mass sequence after the main sequence.",
+        "steps": [
+          "Red supergiant → supernova → neutron star or black hole."
+        ],
+        "explanation": "The remnant outcome depends on mass and the preceding evolution."
+      },
+      "practice": {
+        "question": "Why is “all stars become black holes” incorrect?",
+        "answer": "Stellar outcomes depend on mass; Sun-like stars leave white dwarfs.",
+        "explanation": "The high-mass route is not universal."
+      }
+    },
+    {
+      "id": "absolute-magnitude",
+      "title": "Paper 2: comparing stars at a standard distance",
+      "points": [
+        "8.11P"
+      ],
+      "paragraphs": [
+        "Apparent magnitude describes observed brightness. Absolute magnitude is the magnitude a star would have at a standard distance of 10 parsecs. Putting stars at the same reference distance makes intrinsic brightness comparisons possible.",
+        "A smaller or more negative magnitude means a brighter star. Compare values in the same photometric band. Do not rank intrinsic brightness using apparent magnitude alone, because the stars may be at different distances."
+      ],
+      "example": {
+        "question": "Star A has absolute magnitude −2 and star B has +3 in the same band. Which would be brighter at the standard distance?",
+        "steps": [
+          "Star A, because −2 is smaller than +3."
+        ],
+        "explanation": "The magnitude scale runs in the opposite numerical direction from brightness."
+      },
+      "practice": {
+        "question": "Why introduce a standard distance?",
+        "answer": "To compare brightness without different distances causing the difference.",
+        "explanation": "Absolute and apparent magnitude answer different questions."
+      },
+      "terms": [
+        "absolute magnitude",
+        "apparent magnitude",
+        "10 parsecs"
+      ]
+    },
+    {
+      "id": "hertzsprung-russell-diagram",
+      "title": "Paper 2: drawing an H–R diagram",
+      "points": [
+        "8.12P"
+      ],
+      "paragraphs": [
+        "An H–R diagram plots intrinsic stellar brightness against surface temperature or colour. Use hotter/bluer on the left and cooler/redder on the right. Greater luminosity is higher up; if absolute magnitude is used instead, the smaller and more negative values go towards the top.",
+        "The main sequence runs from the hot bright upper left to the cool faint lower right. Red giants lie above the main sequence towards the cool side; supergiants occupy very bright regions. White dwarfs lie towards the hot but faint lower left. A diagram must label axes and regions: a diagonal line without direction labels is ambiguous.",
+        "The sketch shows principal regions only, with no measured stars or numerical scales. It is not a path along which every star moves. Stars of different sizes and stages can have similar surface temperatures but different luminosities."
+      ],
+      "example": {
+        "question": "Where should a hot but faint white dwarf be placed on the standard diagram?",
+        "steps": [
+          "Towards the left because it is hot.",
+          "Low on the diagram because it is faint intrinsically."
+        ],
+        "explanation": "Use both axes, not temperature alone."
+      },
+      "practice": {
+        "question": "Is the main sequence a route that every star travels from its upper left to lower right as it ages?",
+        "answer": "No.",
+        "explanation": "It is a population pattern; an individual star’s evolution is a different kind of track."
+      },
+      "diagram": {
+        "src": "/diagrams/physics-hr-diagram.svg",
+        "alt": "Qualitative Hertzsprung–Russell diagram: hotter stars to the left, cooler to the right, luminosity increasing upwards. Main sequence descends from upper left to lower right; red giants are upper right; white dwarfs are lower left; supergiants are near the top.",
+        "caption": "Original schematic of principal regions, not a stellar dataset or an individual evolutionary track."
+      }
+    },
+    {
+      "id": "doppler-shift",
+      "title": "Paper 2: source motion and observed waves",
+      "points": [
+        "8.15P"
+      ],
+      "paragraphs": [
+        "Relative motion towards or away from an observer changes the observed frequency and wavelength. For approach, wavefronts arrive more frequently: the observed frequency is higher and wavelength shorter. For recession, frequency is lower and wavelength longer. The source need not change its own emission frequency.",
+        "For light, longer wavelength is called red-shift and shorter wavelength blue-shift; the spectral line need not actually become visibly red or blue. Compare the same identifiable feature with its reference wavelength. The elementary discussion concerns motion along the line of sight.",
+        "For cosmological light, expansion of space also stretches wavelength during travel. The school recession calculation below is a useful small-redshift approximation, not a complete model for every distant galaxy."
+      ],
+      "example": {
+        "question": "A source approaches an observer while emitting at a fixed frequency. What happens to observed frequency and wavelength?",
+        "steps": [
+          "Observed frequency rises.",
+          "Observed wavelength falls."
+        ],
+        "explanation": "The detected pattern changes without changing the source’s own oscillator."
+      },
+      "practice": {
+        "question": "Does a red-shift mean light travels more slowly in vacuum?",
+        "answer": "No.",
+        "explanation": "Vacuum light speed remains c; frequency and wavelength change together."
+      }
+    },
+    {
+      "id": "redshift-calculations",
+      "title": "Paper 2: calculating red-shift and recession speed",
+      "points": [
+        "8.16P"
+      ],
+      "paragraphs": [
+        "Let λ₀ be a spectral line’s reference wavelength and λ its observed wavelength. The change is Δλ = λ − λ₀. In the specified school approximation, Δλ/λ₀ = v/c, where v is recession speed and c is the speed of light. Use the reference wavelength in the denominator.",
+        "The two wavelengths may both be in nanometres, because their units cancel in the ratio; do not mix nm and m. Speed units must also match. Use c = 3.00 × 10⁸ m/s when v is in m/s. A positive wavelength change gives positive recession in this convention.",
+        "The relation v/c ≈ Δλ/λ₀ is for small shifts/speeds compared with c. Do not use it to assign literal high recession speeds from arbitrary large cosmological red-shifts. In examination calculations, follow the supplied model and givens."
+      ],
+      "example": {
+        "question": "A reference line at 500 nm is observed at 505 nm. Estimate recession speed using c = 3.00 × 10⁸ m/s.",
+        "steps": [
+          "Δλ = 505 − 500 = 5 nm.",
+          "Δλ/λ₀ = 5/500 = 0.010.",
+          "v = 0.010 × 3.00 × 10⁸ = 3.00 × 10⁶ m/s."
+        ],
+        "explanation": "The whole observed wavelength, 505 nm, is not the wavelength change."
+      },
+      "practice": {
+        "question": "For v = 6.00 × 10⁶ m/s and λ₀ = 600 nm, estimate λ using the same approximation.",
+        "answer": "612 nm.",
+        "explanation": "v/c = 0.020, so Δλ = 12 nm and λ = 600 + 12."
+      },
+      "terms": [
+        "red-shift",
+        "reference wavelength",
+        "recession speed",
+        "delta lambda"
+      ]
+    },
+    {
+      "id": "galaxies-and-expansion",
+      "title": "Paper 2: what galaxy red-shifts show",
+      "points": [
+        "8.14P",
+        "8.17P",
+        "8.18P"
+      ],
+      "paragraphs": [
+        "In large-scale observations, more distant galaxies generally show greater red-shifts. Their spectral patterns are shifted towards longer wavelengths relative to matching local reference patterns. Interpreted as a recession trend, greater distance corresponds to greater recession speed in the simple low-redshift model.",
+        "The pattern supports an expanding universe: separations between widely spaced, unbound galaxies increase. It is evidence about a population, not a guarantee that every nearby galaxy is receding; local gravitational motion can give exceptions. Expansion also does not mean atoms or the Solar System must grow at the same rate.",
+        "Observing expansion from Earth does not establish Earth as the unique centre. Other observers in a uniformly expanding universe would also see distant galaxies receding. The inference links a measured wavelength trend to a physical model; red-shift by itself does not demonstrate every detail of cosmic history."
+      ],
+      "example": {
+        "question": "A distant-galaxy sample shows increasing fractional red-shift with distance. What broad conclusion is supported?",
+        "steps": [
+          "The galaxies are generally receding, with more distant ones receding faster in the simple model.",
+          "This supports expansion of the universe on large scales."
+        ],
+        "explanation": "State both the observed trend and the inference."
+      },
+      "practice": {
+        "question": "Would one nearby approaching galaxy by itself disprove the large-scale expansion trend?",
+        "answer": "No.",
+        "explanation": "Local gravitational motions can differ from the overall pattern."
+      }
+    },
+    {
+      "id": "big-bang-and-cmb",
+      "title": "Paper 2: the Big Bang and microwave background",
+      "points": [
+        "8.13P",
+        "8.14P"
+      ],
+      "paragraphs": [
+        "The Big Bang model describes evolution from an early hot, dense state. As the universe expanded it cooled; matter later formed atoms, and gravity helped build stars and galaxies. It is not an ordinary explosion of material from one point into a pre-existing empty space.",
+        "Two central observations in this syllabus are the galaxy red-shift trend and the cosmic microwave background (CMB). Expansion implies an earlier denser state. The CMB is widespread thermal radiation, now observed at microwave wavelengths with a temperature about 2.7 K, consistent with radiation cooled by expansion from a much hotter early universe.",
+        "The CMB is almost uniform across the sky, with small variations. It is not simply light emitted by present-day stars. Together these observations support the hot Big Bang model; they do not directly observe an exact initial instant or settle what, if anything, preceded it."
+      ],
+      "example": {
+        "question": "Give two different observations supporting the Big Bang model.",
+        "steps": [
+          "The large-scale increase of galaxy red-shift with distance supports expansion.",
+          "The cosmic microwave background is consistent with cooled radiation from a hot early universe."
+        ],
+        "explanation": "Two descriptions of the same red-shift observation are not two independent kinds of evidence."
+      },
+      "practice": {
+        "question": "Why does the word microwave matter in CMB?",
+        "answer": "It identifies the observed long-wavelength radiation after cosmic expansion and cooling.",
+        "explanation": "The radiation reaching us now is much cooler than the early state it records."
+      },
+      "terms": [
+        "Big Bang",
+        "cosmic microwave background",
+        "CMB",
+        "expansion"
+      ]
+    }
+  ],
+  "supportingSources": [
+    {
+      "title": "NASA: stellar life cycles",
+      "url": "https://science.nasa.gov/universe/stars/",
+      "sectionIds": [
+        "sun-like-stellar-evolution",
+        "massive-stellar-evolution"
+      ]
+    },
+    {
+      "title": "ESA: reading an H–R diagram",
+      "url": "https://www.esa.int/ESA_Multimedia/Images/2018/04/Gaia_s_Hertzsprung-Russell_diagram",
+      "sectionIds": [
+        "stellar-colour-temperature",
+        "hertzsprung-russell-diagram"
+      ]
+    },
+    {
+      "title": "SDSS: absolute magnitude and H–R axes",
+      "url": "https://voyages.sdss.org/skyserver/advanced-projects/the-hertzsprung-russell-diagram/a-simple-h-r-diagram/",
+      "sectionIds": [
+        "absolute-magnitude",
+        "hertzsprung-russell-diagram"
+      ]
+    },
+    {
+      "title": "ESA: the cosmic microwave background",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Planck/Planck_and_the_cosmic_microwave_background",
+      "sectionIds": [
+        "big-bang-and-cmb"
+      ]
+    }
+  ]
+}

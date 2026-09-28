@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-09-19",
+  "reviewer": "Codex Astra",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "familyId": "4PH1.weight.convert-mass",
+  "version": "0.1.0",
+  "sourceTaskId": "4PH1-2024-June-1-standard.Q10.a",
+  "sourceEvidence": {
+    "taskId": "4PH1-2024-June-1-standard.Q10.a",
+    "paperId": "4PH1-2024-June-1-standard",
+    "questionPaper": {
+      "documentId": "4PH1-2024-June-1-standard-qp",
+      "pdfPages": [
+        22
+      ]
+    },
+    "markScheme": {
+      "documentId": "4PH1-2024-June-1-standard-ms",
+      "pdfPages": [
+        13
+      ]
+    },
+    "originalMarks": 2
+  },
+  "sourceObservations": [
+    "Question paper page 22 gives 250 g and supplies the weight formula. The wooden-strip apparatus provides context but no diagram measurement is needed for part (a).",
+    "Mark scheme page 13 awards substitution/evaluation, ignores units and applies one deduction for a clear mass-unit power-of-ten error. It accepts g=10, 9.8 or 9.81 for the original question.",
+    "General guidance page 3 supports positive application of the scheme and consultation when uncertain. It does not supply a universal rounding or conflicting-working policy for this task."
+  ],
+  "structures": [
+    {
+      "signature": "grams-to-weight:prose",
+      "sourceRelation": "same-core-operations-with-representation-adaptation",
+      "preserved": [
+        "Mass supplied in grams",
+        "Weight formula supplied",
+        "Target weight",
+        "Two-mark substitution/evaluation structure"
+      ],
+      "changed": [
+        "Removes the surrounding apparatus diagram",
+        "Explicitly specifies one g rather than allowing the original range",
+        "Changes load and multiplication values"
+      ],
+      "requiresSeparateDifficultyCalibration": true,
+      "markBasisValidated": false
+    },
+    {
+      "signature": "grams-to-weight:table",
+      "sourceRelation": "same-core-operations-with-representation-adaptation",
+      "preserved": [
+        "Mass supplied in grams",
+        "Weight formula supplied",
+        "Target weight",
+        "Two-mark substitution/evaluation structure"
+      ],
+      "changed": [
+        "Moves mass and g into labelled quantity/value rows",
+        "Removes the surrounding apparatus diagram",
+        "Explicitly specifies one g rather than allowing the original range",
+        "Changes load and multiplication values"
+      ],
+      "requiresSeparateDifficultyCalibration": true,
+      "markBasisValidated": false
+    }
+  ],
+  "decisions": [
+    "Both representations preserve conversion and multiplication. Neither requires inference of an extra force or an inverse calculation.",
+    "Explicit g removes a lookup/choice and makes applying an alternative g a new assessment decision; do not import the source acceptance list blindly.",
+    "The prototype table is plain-text stimulus with newline-separated rows. A rendered table representation is needed before live adaptation validation.",
+    "Canonical pretranscribed product fields support bounded offline checks; this is not a validated student-facing response format or free-text parser."
+  ],
+  "fullPedagogicalValidation": "partial",
+  "liveEligible": false,
+  "activeTemplates": 0
+}

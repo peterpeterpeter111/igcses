@@ -1,3 +1,27 @@
+# Latest checkpoint — text preparation and source references
+
+Read research/checkpoints/2026-09-28-TEXT-AND-SOURCE-REFERENCES.md first. Continues 2133275. Mathematics B text prepared across 50 pages, no extraction exceptions; no task index or academic review claimed. Six saved specification records transcribed into documents.csv without page-review promotion, reducing tracked normalization gaps from nine to four. 85 tests, typecheck, lint and 13 research checks pass; latest product build/public scan/browser verification is 2133275, unchanged by this scripts/data-only phase. Seven obtained pairs include one unreviewed Maths candidate; all completion/active-template counts remain zero. Keep AI last, no reset or deployment; GitHub safe-sync approval remains pending. Latest checked allowances: 60% five-hour / 79% weekly remaining.
+
+# Latest checkpoint — Mathematics B candidate obtained
+
+Read research/checkpoints/2026-09-28-MATHS-DISCOVERY.md first. Continues ffc3a55. Downloaded one official Pearson Mathematics B candidate pair, hashes/page counts saved. Seven obtained pairs total including this unreviewed candidate; zero fully processed papers or active templates. Raw 390 links and five indexed pairs preserved. Coverage UI distinguishes obtained-only from indexed/reviewed. 84 tests, typecheck, lint, 13 research checks, production build/public scan and bounded browser coverage checks pass. Notes/curriculum unchanged. Keep academic review with Astra; AI last, no reset. GitHub safe-sync approval blocker remains; no Sites version/deployment.
+
+# Current handoff — 28 September 2026
+
+Read PROGRESS_CHECKPOINT.md and CONTINUE_ASTRA.md before the historical handoff below. Preserve 4509a44, 294a606 and all descendants. The routine pass fixes historical-report overwriting, guards the English AO review, verifies current seed data and records local preview/evidence checks. Current application suite: 83 tests; exact content seeding also passes in nonpersistent local D1.
+
+Current content: 13 partial note documents / 197 sections; 248 reviewed parent identities / 612 partial requirements / 332 partial teaching links. Six obtained paper/scheme pairs. Physics has 51 detailed leaf records covering 110 marks, but remains extracted, not fully processed. Three provisional families, two experimental generators and two bounded offline markers; zero active templates or complete chapters/points/papers.
+
+The new research/reviews/2026-09-28-evidence-audit.json records zero structural errors and 19 matching local evidence documents, plus eight normalized-ledger gaps. Source JSON is retained; tables are not yet a self-contained import. The English AO model, further curriculum and paper extraction, broader source-linked families, calibration and reviewed data migration remain Astra work. Use research/reviews/2026-09-28-preview-check.json for the bounded browser check, not as academic verification.
+
+The earlier OpenAI selection/key-creation instructions below are historical: the user subsequently planned another provider and required AI integration last. Do not create or configure a provider key based on that old paragraph. No provider is configured, and no Sites version or live deployment exists. GitHub safe-sync approval remains pending after the oversized automatic-review rejection; do not bypass it. Consume no reset.
+
+The user authorized useful routine Luna work until the available weekly allowance is exhausted, overriding the earlier 5% gate for that pass only. Retain the 5% checkpoint/pause rule for future Astra work unless the user changes it.
+
+---
+
+# Historical handoff — retained for provenance, superseded above
+
 # Astra resume handoff
 
 This handoff is for the next Astra-capable turn after the lower-model repetitive indexing checkpoint. It does not authorise a new batch by itself.

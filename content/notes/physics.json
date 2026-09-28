@@ -2,7 +2,11 @@
   "subjectId": "physics",
   "chapterId": "forces-and-motion",
   "sourceId": "4PH1-spec",
-  "sourcePages": [17, 18, 19],
+  "sourcePages": [
+    17,
+    18,
+    19
+  ],
   "prerequisites": [
     "Divide a quantity by a time interval.",
     "Convert minutes to seconds and kilometres to metres."
@@ -32,7 +36,9 @@
         "kilometres per hour",
         "dimensions"
       ],
-      "points": ["1.1"],
+      "points": [
+        "1.1"
+      ],
       "paragraphs": [
         "A measurement pairs a number with a unit. In this chapter use kilograms (kg) for mass, metres (m) for distance, seconds (s) for time, metres per second (m/s) for speed and velocity, metres per second squared (m/s²) for acceleration, newtons (N) for force and newtons per kilogram (N/kg) for gravitational field strength.",
         "Convert before substituting into an equation. There are 1000 m in 1 km, 100 cm in 1 m, 1000 g in 1 kg and 60 s in 1 min. To convert km/h to m/s, multiply by 1000 then divide by 3600, which is the same as dividing by 3.6. For m/s to km/h, multiply by 3.6.",
@@ -67,7 +73,9 @@
         "m/s",
         "distance divided by time"
       ],
-      "points": ["1.4"],
+      "points": [
+        "1.4"
+      ],
       "paragraphs": [
         "Average speed tells you the distance travelled per unit time over a chosen interval. Divide the total distance travelled by the total time taken: average speed = distance ÷ time. Include stops if they occur within the interval described in the question.",
         "Distance is the length of the route travelled; it does not become zero just because an object returns to its starting point. Speed is a scalar quantity. Velocity includes direction, so an object can change velocity by changing direction even when its speed stays constant.",
@@ -99,7 +107,10 @@
         "tangent",
         "plot"
       ],
-      "points": ["1.3", "1.4"],
+      "points": [
+        "1.3",
+        "1.4"
+      ],
       "paragraphs": [
         "Put time on the horizontal axis and distance on the vertical axis. Label both quantities and units; choose linear scales that use the available space and plot coordinates carefully. Join points according to the model: straight segments for stated steady stages, or a smooth trend for continuously changing motion. A best-fit line need not pass through every noisy experimental reading.",
         "The gradient is change in distance divided by change in time, so it represents speed. A horizontal section means distance is unchanged and the object is stationary. A steeper positive gradient means a greater speed. An upward curve getting steeper represents increasing speed. Read the gradient, rather than the height alone, to compare speeds.",
@@ -131,6 +142,50 @@
       ]
     },
     {
+      "id": "plotting-motion-data",
+      "title": "Plotting motion data",
+      "points": [
+        "1.3",
+        "1.7"
+      ],
+      "terms": [
+        "plotting",
+        "coordinates",
+        "axis labels",
+        "linear scale",
+        "distance-time",
+        "velocity-time"
+      ],
+      "paragraphs": [
+        "Start with the quantity being plotted. Distance–time and velocity–time graphs can have a similar shape but mean different things. Put time on the horizontal axis; label the vertical axis with either distance or velocity and its unit. A pair (time, value) identifies one point, not a line segment.",
+        "Choose uniform scales that fit every supplied value and use a useful part of the grid. For example, if one horizontal square represents 1 s, every horizontal square must represent 1 s. Mark the scales before plotting. An axis label such as velocity / m/s gives both the quantity and the unit.",
+        "Plot each coordinate at the intersection of its time and vertical-value readings, then check every point against the table. Join points according to the stated motion. Straight segments are justified for stated constant-speed stages on a distance graph or constant-acceleration stages on a velocity graph. Scattered measurements instead need an appropriate best-fit trend; a table by itself does not prove what happened between readings."
+      ],
+      "example": {
+        "question": "Two different journeys are modelled in stages. Journey A has distance readings (0 s, 0 m), (4 s, 8 m), (7 s, 8 m), (10 s, 20 m), with constant speed in each interval. Journey B has velocity readings (0 s, 0 m/s), (4 s, 8 m/s), (7 s, 8 m/s), (11 s, 0 m/s), with constant acceleration in each interval. Plot a separate graph for each journey.",
+        "steps": [
+          "For A, label time / s and distance / m. One possible scale is 1 s per horizontal square and 2 m per vertical square, covering 0–10 s and 0–20 m.",
+          "Plot A's four coordinate pairs. Join consecutive points by straight lines because the motion within each interval is stated to have constant speed.",
+          "A's middle section is horizontal at 8 m: no extra distance is travelled during those 3 s, so the object is at rest.",
+          "For B, label time / s and velocity / m/s. A possible scale is 1 s per horizontal square and 1 m/s per vertical square, covering 0–11 s and 0–8 m/s.",
+          "Plot B's four coordinate pairs and join consecutive points by straight lines because acceleration is stated to be constant within each interval.",
+          "B's middle section is horizontal at 8 m/s: velocity is constant and non-zero, so the object keeps moving."
+        ],
+        "explanation": "Compare the finished plots with the distance–time and velocity–time diagrams in this chapter. Both middle sections are horizontal, but the axis quantity changes the interpretation. Other sensible uniform scales are equally valid."
+      },
+      "practice": {
+        "question": "Plot velocity against time for (0 s, 0 m/s), (2 s, 6 m/s) and (4 s, 6 m/s), assuming constant acceleration within each interval. Label the axes and explain the two stages.",
+        "answer": "Use time / s horizontally and velocity / m/s vertically. Plot the three points, draw a straight rising segment from (0, 0) to (2, 6), then a horizontal segment to (4, 6). The object accelerates at 3 m/s² for the first 2 s and then moves at a constant 6 m/s for 2 s.",
+        "explanation": "The first gradient is (6 − 0)/(2 − 0) = 3 m/s². The second gradient is zero, which means zero acceleration rather than zero velocity."
+      },
+      "commonMistakes": [
+        "Spacing labels unequally while treating the scale as uniform.",
+        "Swapping the time and vertical-value coordinates.",
+        "Calling every horizontal segment stationary without checking the vertical axis.",
+        "Assuming a straight segment or a best-fit curve without considering the stated model and the nature of the data."
+      ]
+    },
+    {
       "id": "investigating-motion",
       "title": "Practical: investigating a toy car’s motion",
       "terms": [
@@ -143,7 +198,11 @@
         "independent variable",
         "control variable"
       ],
-      "points": ["1.5", "1.4", "1.6"],
+      "points": [
+        "1.5",
+        "1.4",
+        "1.6"
+      ],
       "paragraphs": [
         "A toy car rolling from a fixed release point down a shallow ramp can be used to investigate how its speed changes along the ramp. This is one original example of the specification’s motion investigation, not a compulsory Pearson method. A tennis ball or other everyday object can support a different suitable investigation.",
         "Two light gates connected to a timer can measure the speed at two positions. A card of measured length L attached to the car interrupts each beam. Speed at each gate is approximately L divided by the interruption time; it is an average over the short card passage. Use corresponding events, such as the middle of each interruption, to measure the interval between the two speed readings. Average acceleration is then (v − u) ÷ that interval.",
@@ -194,8 +253,15 @@
     {
       "id": "acceleration",
       "title": "Acceleration is a rate of change",
-      "terms": ["acceleration", "velocity", "m/s²", "change in velocity"],
-      "points": ["1.6"],
+      "terms": [
+        "acceleration",
+        "velocity",
+        "m/s²",
+        "change in velocity"
+      ],
+      "points": [
+        "1.6"
+      ],
       "paragraphs": [
         "Acceleration is change in velocity divided by time taken: a = (v − u) ÷ t, where u is initial velocity and v is final velocity. Its SI unit is m/s². An acceleration of 3 m/s² means velocity changes by 3 m/s each second when acceleration is constant.",
         "Choose a positive direction and keep it throughout the calculation. A negative acceleration means acceleration in the negative direction; it does not always mean the object is slowing down. For example, an object moving in the negative direction speeds up if its acceleration is also negative."
@@ -224,7 +290,11 @@
         "negative acceleration",
         "constant velocity"
       ],
-      "points": ["1.7", "1.8", "1.6"],
+      "points": [
+        "1.7",
+        "1.8",
+        "1.6"
+      ],
       "paragraphs": [
         "Put time in seconds on the horizontal axis and velocity in m/s on the vertical axis. A horizontal line means constant velocity and zero acceleration. A straight sloping line means constant acceleration. A changing gradient means changing acceleration. A point on the time axis has zero velocity at that instant; it need not remain at rest.",
         "The gradient is acceleration: (v₂ − v₁) ÷ (t₂ − t₁). Use a large triangle on a straight line, or a tangent at the required time on a curve. A downward slope has negative acceleration. Whether this slows the object depends on its velocity direction: positive velocity with negative acceleration means slowing, but negative velocity with negative acceleration means speeding up in the negative direction.",
@@ -254,6 +324,51 @@
       ]
     },
     {
+      "id": "tangent-acceleration",
+      "title": "Acceleration at one instant: drawing a tangent",
+      "terms": [
+        "curved velocity-time graph",
+        "tangent",
+        "instantaneous acceleration",
+        "secant",
+        "gradient triangle"
+      ],
+      "points": [
+        "1.7",
+        "1.8"
+      ],
+      "paragraphs": [
+        "A curve has a different gradient at different times. To estimate acceleration at one instant, draw a straight tangent that follows the curve's local direction at that time. Extend it far enough to make a large reading triangle. The triangle's two points must lie on the tangent; they need not lie on the curve.",
+        "Read the change in velocity and the change in time from the axes, then divide. Counting squares alone is not enough if the axes use different scales. A line joining two points on the curve gives the average acceleration over that interval, which need not equal the acceleration at your chosen instant.",
+        "The original teaching graph below shows a vehicle moving in the positive direction and speeding up more rapidly as time passes. Its tangent at 2 s has a positive gradient. At a horizontal tangent the instantaneous acceleration would be zero, even if the velocity were not zero."
+      ],
+      "diagram": {
+        "src": "/diagrams/physics-curved-tangent.svg",
+        "alt": "A curved velocity-time graph rises through (0 s, 0 m/s), (1 s, 0.5 m/s), (2 s, 2 m/s), (3 s, 4.5 m/s) and (4 s, 8 m/s). At 2 s a straight tangent passes through (1 s, 0 m/s) and (4 s, 6 m/s). A dashed triangle uses these tangent points.",
+        "caption": "Crimson curve: velocity. Amber straight line: tangent at 2 s. Use the tangent's large triangle, not two convenient points on the curve."
+      },
+      "example": {
+        "question": "Use the drawn tangent to estimate the acceleration at 2 s. The two marked tangent points are (1 s, 0 m/s) and (4 s, 6 m/s).",
+        "steps": [
+          "Change in velocity along the tangent = 6 − 0 = 6 m/s.",
+          "Time interval for the same triangle = 4 − 1 = 3 s.",
+          "Gradient = 6 ÷ 3 = 2 m/s², so the acceleration at 2 s is approximately +2 m/s².",
+          "By contrast, joining the curve's endpoints (0 s, 0 m/s) and (4 s, 8 m/s) also happens to give 2 m/s² here. That is the average over 4 s; this numerical coincidence does not make the endpoint method valid for an arbitrary instant."
+        ],
+        "explanation": "The supplied tangent defines the worked estimate. A hand-drawn tangent can give a slightly different reading, so show your tangent and triangle rather than quoting unjustified precision."
+      },
+      "practice": {
+        "question": "A tangent at 3 s on the same curve passes through (0.5 s, 0 m/s) and (3.5 s, 9 m/s). Find its gradient. Explain why this differs from the average acceleration over 0–4 s.",
+        "answer": "Gradient = (9 − 0) ÷ (3.5 − 0.5) = +3 m/s². The average over 0–4 s is (8 − 0) ÷ 4 = +2 m/s².",
+        "explanation": "The curve gets steeper. The tangent describes acceleration at 3 s; the endpoint calculation describes the whole interval. Tangent points may be outside the plotted curve's velocity range."
+      },
+      "commonMistakes": [
+        "Using velocity divided by time from the origin when the tangent does not pass through the origin.",
+        "Choosing one triangle point on the curve and the other on the tangent.",
+        "Reporting a graph estimate to more precision than the line and scales justify."
+      ]
+    },
+    {
       "id": "distance-from-velocity-graphs",
       "title": "Distance from the area under a velocity graph",
       "terms": [
@@ -263,7 +378,9 @@
         "displacement",
         "distance travelled"
       ],
-      "points": ["1.9"],
+      "points": [
+        "1.9"
+      ],
       "paragraphs": [
         "For velocity that remains non-negative, the area between a velocity–time graph and the time axis gives the distance travelled. The units are (m/s) × s = m. Split the region into rectangles, triangles or trapezia and add their areas. A rectangle has area base × height; a triangle has area ½ × base × height; a trapezium has area ½ × (parallel sides added) × separation.",
         "If velocity changes sign, areas above and below the time axis have opposite signs when calculating displacement. Total distance is the sum of the magnitudes of the areas. Split a section at each crossing of the time axis; simply taking the magnitude of the net area can underestimate distance.",
@@ -290,6 +407,53 @@
       ]
     },
     {
+      "id": "estimating-curved-area",
+      "title": "Estimating distance under a curved velocity graph",
+      "terms": [
+        "trapezia",
+        "trapezium rule",
+        "curved graph area",
+        "strip width",
+        "area estimate"
+      ],
+      "points": [
+        "1.9"
+      ],
+      "paragraphs": [
+        "When a velocity–time graph curves, a single triangle or trapezium usually does not follow the boundary. Divide the time interval into narrower strips, read each boundary velocity, and approximate each strip by a trapezium. Add the strip areas; each contributes distance in metres when velocity stays non-negative.",
+        "Keep the width of each strip in seconds. For one strip, area = ½ × (left velocity + right velocity) × strip duration. Read a shared boundary only once, but use that reading in each of the two neighbouring trapezia.",
+        "An estimate is not an exact area. Compare results using narrower strips when the graph allows reliable readings. On this upward-curving graph, straight joins lie above the curve, so these trapezia overestimate its area. Another curve shape can give an underestimate or mixed errors; do not assume the direction of error is universal."
+      ],
+      "diagram": {
+        "src": "/diagrams/physics-curved-area.svg",
+        "alt": "The same positive velocity curve from 0 to 4 seconds with four shaded trapezia of width 1 second. Boundary velocities are 0, 0.5, 2, 4.5 and 8 metres per second. The straight tops of the trapezia lie above the smooth curve between readings.",
+        "caption": "Four 1 s strips give an original worked estimate. The shaded straight-sided strips approximate the curved region; they do not show constant acceleration within each interval."
+      },
+      "example": {
+        "question": "Estimate the distance from 0 to 4 s using 1 s trapezia. Readings are 0, 0.5, 2, 4.5 and 8 m/s at times 0, 1, 2, 3 and 4 s.",
+        "steps": [
+          "0–1 s: ½ × (0 + 0.5) × 1 = 0.25 m.",
+          "1–2 s: ½ × (0.5 + 2) × 1 = 1.25 m.",
+          "2–3 s: ½ × (2 + 4.5) × 1 = 3.25 m.",
+          "3–4 s: ½ × (4.5 + 8) × 1 = 6.25 m.",
+          "Total estimate = 0.25 + 1.25 + 3.25 + 6.25 = 11 m.",
+          "A single 0–4 s trapezium would give ½ × (0 + 8) × 4 = 16 m. It misses much more of the curved boundary."
+        ],
+        "explanation": "All velocities are non-negative, so this area estimate gives distance as well as forward displacement. The original readings are supplied exactly for the arithmetic; a real printed graph also introduces reading uncertainty."
+      },
+      "practice": {
+        "question": "For 0.5 s strips, supplied velocities at t = 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5 and 4 s are 0, 0.125, 0.5, 1.125, 2, 3.125, 4.5, 6.125 and 8 m/s. Estimate the distance and compare it with 11 m. You do not need calculus.",
+        "answer": "Estimate = 0.5 × [½(0 + 8) + 0.125 + 0.5 + 1.125 + 2 + 3.125 + 4.5 + 6.125] = 10.75 m. This is 0.25 m less than the 1 s-strip estimate.",
+        "explanation": "Narrower strips follow this smooth curve more closely. Both values are estimates of the curved area, even though their arithmetic uses exact supplied readings."
+      },
+      "commonMistakes": [
+        "Forgetting to multiply by the strip width when it is not 1 s.",
+        "Counting a shared boundary as an extra strip instead of part of both adjacent trapezia.",
+        "Treating the straight approximation as evidence that the actual motion has constant acceleration.",
+        "Using signed net area for total distance when a different graph crosses below zero; split at each crossing and add area magnitudes."
+      ]
+    },
+    {
       "id": "constant-acceleration",
       "title": "Finding speed when time is not given",
       "terms": [
@@ -299,7 +463,9 @@
         "constant acceleration",
         "braking distance"
       ],
-      "points": ["1.10"],
+      "points": [
+        "1.10"
+      ],
       "paragraphs": [
         "For straight-line motion with constant acceleration, v² = u² + 2as. Here u is initial velocity, v is final velocity, a is acceleration and s is displacement over the same interval. In a one-direction journey s can be the distance travelled. Use m/s, m/s² and m. The equation is useful when time is not supplied.",
         "List the known quantities with signs before rearranging. To find distance, s = (v² − u²) ÷ (2a). To find acceleration, a = (v² − u²) ÷ (2s). To find the final speed take the positive square root of v²; the equation alone does not determine a final velocity direction after a reversal. Decide direction from the stated motion.",
@@ -337,7 +503,14 @@
     {
       "id": "forces-and-vectors",
       "title": "Forces, scalars and vectors",
-      "points": ["1.11", "1.12", "1.13", "1.14", "1.15", "1.16"],
+      "points": [
+        "1.11",
+        "1.12",
+        "1.13",
+        "1.14",
+        "1.15",
+        "1.16"
+      ],
       "terms": [
         "scalar",
         "vector",
@@ -387,9 +560,58 @@
       }
     },
     {
+      "id": "identifying-force-effects",
+      "title": "Identifying a force and what it changes",
+      "points": [
+        "1.11",
+        "1.12",
+        "1.13",
+        "1.14",
+        "1.16"
+      ],
+      "terms": [
+        "force effects",
+        "shape change",
+        "contact force",
+        "non-contact force",
+        "electrostatic attraction",
+        "relative sliding"
+      ],
+      "paragraphs": [
+        "Name the interacting objects before naming the force. A falling stone experiences gravitational force from Earth. A charged balloon can attract a nearby object electrostatically without touching it. A hand pushing a trolley supplies a contact force. An object may experience several forces at once; one force's name does not tell you the resultant.",
+        "Describe the observable change: speed, direction or shape. A forward resultant can increase a trolley's speed. A sideways resultant can change the direction of a moving object without necessarily changing its speed. Squeezing a stationary sponge changes its shape even when the opposite pushes give no overall translational acceleration.",
+        "A scalar describes a magnitude, such as a speed of 5 m/s. A velocity of 5 m/s east also specifies direction and is a vector. Changing from east to north at the same speed changes velocity. Similarly, 4 N upwards and 4 N downwards have equal force magnitudes but are different vectors.",
+        "Friction opposes relative sliding, or the tendency to slide, at a contact. For a block sliding right over a fixed floor, friction on the block acts left and can slow it. For a walking person, the shoe tends to push backwards against the ground and the ground's frictional force on the shoe can act forwards. Identify the body and contact rather than memorising 'friction always points backwards'."
+      ],
+      "example": {
+        "question": "Identify a force and its effect in each case: a stone dropped near Earth; a charged balloon attracting a small piece of paper; a sponge squeezed between two hands; and a block sliding right on a rough stationary floor.",
+        "steps": [
+          "The Earth exerts gravitational force on the stone. With air resistance neglected, the downward resultant increases its downward speed.",
+          "The charged balloon interacts electrostatically with the paper. The paper need not carry a net charge for electrostatic attraction; do not infer its net charge from attraction alone.",
+          "The hands exert contact forces on the sponge. Opposed pushes can deform it without moving its centre as a whole.",
+          "The floor exerts friction on the sliding block to the left. If no other horizontal force acts, this leftward resultant reduces its rightward speed."
+        ],
+        "explanation": "Force type, direction and effect answer different questions. Neither an unchanged speed nor an object remaining in place proves that no force acts."
+      },
+      "practice": {
+        "question": "A satellite travels at constant speed in a circular orbit. Does its velocity stay constant? Identify the force that changes its motion and say whether contact with Earth is required.",
+        "answer": "Its velocity changes because its direction changes. Earth's gravitational force acts towards Earth and supplies the inward resultant in this simplified model. The interaction does not require contact.",
+        "explanation": "Speed is scalar; velocity and force are vectors. Constant speed can coexist with changing velocity."
+      },
+      "commonMistakes": [
+        "Treating unchanged speed as unchanged velocity on a curved path.",
+        "Saying opposite forces cannot deform an object because their resultant is zero.",
+        "Identifying a force only as 'movement' rather than naming the interaction."
+      ]
+    },
+    {
       "id": "force-mass-weight",
       "title": "Resultant force, mass and weight",
-      "points": ["1.17", "1.18", "1.1"],
+      "points": [
+        "1.17",
+        "1.18",
+        "1.1"
+      ],
       "terms": [
         "F = ma",
         "W = mg",
@@ -420,12 +642,68 @@
       "commonMistakes": [
         "A force of 12 N is not the resultant if another force opposes it.",
         "An object travelling steadily can have large balanced forces acting on it."
+      ],
+      "answerGuide": {
+        "id": "4PH1.weight.convert-mass",
+        "sourceTaskId": "4PH1-2024-June-1-standard.Q10.a",
+        "command": "Calculate weight from a mass in grams",
+        "steps": [
+          "Identify mass and gravitational field strength; use the value of g stated in your question.",
+          "Convert the mass to kg by dividing the gram reading by 1000.",
+          "Substitute into W = mg and evaluate; write the result in N.",
+          "For an original example, 375 g becomes 0.375 kg. With g = 9.8 N/kg, weight = 0.375 × 9.8 = 3.675 N. Show the conversion and substitution."
+        ],
+        "caution": "The source Q10(a) awards two marks for substitution and evaluation, with one deduction for a clear power-of-ten mass conversion error. Its permitted choices of g are specific to that source. This new generator explicitly states g and remains experimental; its marking is not yet calibrated."
+      }
+    },
+    {
+      "id": "choosing-force-equations",
+      "title": "Choosing and rearranging force equations",
+      "points": [
+        "1.17",
+        "1.18"
+      ],
+      "terms": [
+        "unknown mass",
+        "rearranging F = ma",
+        "gravitational field strength",
+        "weight-to-mass conversion"
+      ],
+      "paragraphs": [
+        "First identify the requested quantity. In F = ma, F is the resultant force on the chosen object along the chosen direction. In W = mg, W is specifically the gravitational force. The same object may have a weight, a pulling force and a frictional force; do not substitute whichever number happens to be labelled 'force'.",
+        "Useful rearrangements are m = F/a and a = F/m, or m = W/g and g = W/m. Keep the units alongside the numbers: mass in kg, resultant and weight in N, acceleration in m/s², and gravitational field strength in N/kg. Convert a mass stated in grams before using either relationship.",
+        "Check that an inverse calculation is determined. If both resultant force and acceleration are zero, F = ma does not determine the mass: every mass is consistent with that balance. Dividing zero by zero is not a mass measurement. Use a non-zero acceleration to infer mass from F/a.",
+        "The signs of resultant force and acceleration must agree when one axis convention is used and mass is positive. A negative acceleration may slow a positive-moving object or speed a negative-moving object; it does not imply negative mass."
+      ],
+      "example": {
+        "question": "A trolley is pulled right with 21 N against 6 N friction to the left. Its acceleration is 2.5 m/s² to the right. Find its mass and its weight where g = 9.8 N/kg. Vertical forces balance.",
+        "steps": [
+          "Take right as positive. Horizontal resultant F = 21 − 6 = 15 N.",
+          "Rearrange F = ma to m = F/a.",
+          "Mass = 15 ÷ 2.5 = 6.0 kg.",
+          "Now use the gravitational relationship: W = mg = 6.0 × 9.8 = 58.8 N, downwards.",
+          "The 21 N pull is not the resultant, and the vertical weight is not part of this horizontal force balance."
+        ],
+        "explanation": "The first calculation finds mass from horizontal acceleration; the second uses that mass to find a different force."
+      },
+      "practice": {
+        "question": "An object weighs 36 N where g = 3.0 N/kg. A horizontal resultant of 9.0 N then acts on it while its vertical forces balance. Find its mass and horizontal acceleration.",
+        "answer": "m = W/g = 36 ÷ 3.0 = 12 kg. a = F/m = 9.0 ÷ 12 = 0.75 m/s² in the direction of the horizontal resultant.",
+        "explanation": "Use the same mass in both relationships. Substituting the 36 N weight as the horizontal resultant would describe a different force balance."
+      },
+      "commonMistakes": [
+        "Finding mass from a single applied force while ignoring opposition.",
+        "Using weight in N where the relationship requires mass in kg.",
+        "Assuming F/a determines mass when both F and a are zero."
       ]
     },
     {
       "id": "stopping-distances",
       "title": "Thinking distance, braking distance and stopping distance",
-      "points": ["1.19", "1.20"],
+      "points": [
+        "1.19",
+        "1.20"
+      ],
       "terms": [
         "thinking distance",
         "braking distance",
@@ -461,7 +739,10 @@
     {
       "id": "terminal-velocity",
       "title": "Falling objects and terminal velocity",
-      "points": ["1.21", "1.17"],
+      "points": [
+        "1.21",
+        "1.17"
+      ],
       "terms": [
         "terminal velocity",
         "air resistance",
@@ -496,7 +777,11 @@
     {
       "id": "force-extension",
       "title": "Practical: force, extension and elastic behaviour",
-      "points": ["1.22", "1.23", "1.24"],
+      "points": [
+        "1.22",
+        "1.23",
+        "1.24"
+      ],
       "terms": [
         "Hooke law",
         "spring",
@@ -536,7 +821,7 @@
           "Tray and eye protection"
         ],
         "method": [
-          "Record the unloaded reference length. Include the hanger consistently in your chosen reference load.",
+          "Record the specimen’s length before attaching the load, using fixed reference points. When finding total applied force, include the mass of the hanger as well as the added masses.",
           "Add loads in small steps, allowing motion to settle before reading length at eye level.",
           "Calculate force from total load mass using W = mg and calculate extension from the reference length.",
           "Record repeat readings and plot force against extension with labelled units. Identify where a straight proportional region ends.",
@@ -553,7 +838,8 @@
         "quality": [
           "Use a pointer close to the ruler and read perpendicular to it to reduce parallax. Record original length and final length with the same reference points.",
           "A sensor or longer gauge length can improve resolution for small wire extensions. Repeats reveal scatter but do not fix a zero error.",
-          "Inspect unloading recovery before claiming elastic behaviour; a loading graph alone does not demonstrate recovery."
+          "Inspect unloading recovery before claiming elastic behaviour; a loading graph alone does not demonstrate recovery.",
+          "If a small preload is needed to straighten a wire, record it explicitly. Length changes measured from this preloaded position correspond to additional force above the preload, not automatically to total force from zero. Keep the force and extension reference states consistent."
         ]
       },
       "diagram": {
@@ -565,7 +851,11 @@
     {
       "id": "momentum-conservation",
       "title": "Paper 2: momentum and conservation",
-      "points": ["1.2P", "1.25P", "1.27P"],
+      "points": [
+        "1.2P",
+        "1.25P",
+        "1.27P"
+      ],
       "terms": [
         "momentum",
         "kg m/s",
@@ -590,7 +880,7 @@
         "explanation": "The mass after sticking is the total mass, and momentum is conserved for the two-trolley system."
       },
       "practice": {
-        "question": "A 2.0 kg object moves right at 3.0 m/s and sticks to a 1.0 kg object moving left at 2.0 m/s. Find their common velocity.",
+        "question": "A 2.0 kg object moves right at 3.0 m/s and sticks to a 1.0 kg object moving left at 2.0 m/s. Find their common velocity, neglecting external horizontal forces during the collision.",
         "answer": "Taking right as positive: momentum = 2.0 × 3.0 + 1.0 × (−2.0) = 4.0 kg m/s. Common velocity = 4.0 ÷ 3.0 = 1.33 m/s to the right.",
         "explanation": "Opposing momenta subtract. The more massive object’s direction is not sufficient by itself; compare momenta."
       },
@@ -600,9 +890,52 @@
       ]
     },
     {
+      "id": "finding-mass-and-recoil",
+      "title": "Paper 2: finding mass and recoil from momentum",
+      "points": [
+        "1.25P",
+        "1.27P"
+      ],
+      "terms": [
+        "unknown mass",
+        "recoil",
+        "signed momentum",
+        "conservation",
+        "sticking collision"
+      ],
+      "paragraphs": [
+        "Conservation can find an unknown mass, velocity or momentum. First draw the complete interacting system and choose a positive direction. Write total momentum before = total momentum after, retaining the unknown wherever that same object occurs.",
+        "For a moving trolley that sticks to a stationary trolley, the unknown mass may appear on both sides of the equation. Collect those terms before dividing. A sticking collision cannot make their common speed exceed the original moving trolley’s speed when the other trolley starts at rest and external forces are negligible.",
+        "To find a missing final momentum, subtract the other final momenta from the conserved total. For two initially stationary objects that push apart, total momentum remains zero if external forces are negligible. Their momenta are opposite, while their speeds depend on their masses."
+      ],
+      "example": {
+        "question": "A trolley of unknown mass m travels right at 3.0 m/s and sticks to a stationary 0.80 kg trolley. Their common velocity is 1.0 m/s right. Find m, neglecting external horizontal forces.",
+        "steps": [
+          "Take right as positive: 3.0m + 0 = (m + 0.80) × 1.0.",
+          "Collect the unknown terms: (3.0 − 1.0)m = 0.80.",
+          "m = 0.80 ÷ 2.0 = 0.40 kg.",
+          "Check: before = 0.40 × 3.0 = 1.20 kg m/s; after = (0.40 + 0.80) × 1.0 = 1.20 kg m/s."
+        ],
+        "explanation": "The moving trolley contributes to the combined mass after the collision, so omitting m on the right would give the wrong answer."
+      },
+      "practice": {
+        "question": "Two trolleys, of masses 0.60 kg and 0.90 kg, start at rest and push apart. The 0.60 kg trolley travels right at 1.5 m/s. Neglect external horizontal forces. Find the other trolley’s momentum and velocity.",
+        "answer": "Taking right as positive, the first momentum is +0.90 kg m/s. The second must be −0.90 kg m/s so the total stays zero. Its velocity is −0.90 ÷ 0.90 = −1.0 m/s, meaning 1.0 m/s left.",
+        "explanation": "Equal and opposite momenta do not mean equal speeds. The heavier trolley moves more slowly."
+      },
+      "commonMistakes": [
+        "Do not drop an unknown mass from the final combined mass.",
+        "For recoil, zero total momentum does not mean each trolley has zero momentum.",
+        "Check the total momentum using your calculated answer; do not check only the final speed."
+      ]
+    },
+    {
       "id": "momentum-and-safety",
       "title": "Paper 2: force, stopping time and safety",
-      "points": ["1.26P", "1.28P"],
+      "points": [
+        "1.26P",
+        "1.28P"
+      ],
       "terms": [
         "impulse",
         "crumple zone",
@@ -636,10 +969,54 @@
       ]
     },
     {
+      "id": "force-during-a-rebound",
+      "title": "Paper 2: force during a rebound",
+      "points": [
+        "1.28P"
+      ],
+      "terms": [
+        "rebound",
+        "change in momentum",
+        "average resultant force",
+        "contact time",
+        "negative velocity"
+      ],
+      "paragraphs": [
+        "A reversal of direction changes the sign of velocity. The change is final momentum minus initial momentum, not the difference between two unsigned speeds. Choose the positive direction before substituting into F = (mv − mu)/t.",
+        "The calculated force is the average resultant force on the chosen object over the stated interval. To identify it with a particular contact force, other forces in that direction must be negligible or included separately.",
+        "The same relation can find time: t = (mv − mu)/F, using consistent signs. Alternatively, divide the magnitude of the momentum change by the magnitude of the corresponding average force. A negative calculated time indicates inconsistent signs or an impossible stated model."
+      ],
+      "example": {
+        "question": "A 0.20 kg ball travels horizontally right at 6.0 m/s, hits a vertical wall and rebounds left at 4.0 m/s. Contact lasts 0.050 s. Find the average horizontal resultant force on the ball.",
+        "steps": [
+          "Take right as positive: u = +6.0 m/s and v = −4.0 m/s.",
+          "Change in momentum = 0.20 × (−4.0 − 6.0) = −2.0 kg m/s.",
+          "Average force = −2.0 ÷ 0.050 = −40 N: 40 N to the left."
+        ],
+        "explanation": "Subtracting the speeds as 6.0 − 4.0 would miss the reversal. If other horizontal forces are negligible, this is also the average horizontal force from the wall."
+      },
+      "practice": {
+        "question": "For the same ball and the same initial and final velocities, the average horizontal resultant force is instead 25 N left. Find the contact time.",
+        "answer": "t = (−2.0) ÷ (−25) = 0.080 s.",
+        "explanation": "The momentum change is unchanged. A smaller average force magnitude requires a longer interval."
+      },
+      "commonMistakes": [
+        "A rebound requires opposite signs for the incoming and outgoing velocities.",
+        "State which object experiences the force: the force on the wall is the opposite member of the interaction pair.",
+        "Average force is not necessarily the maximum force during contact."
+      ]
+    },
+    {
       "id": "newtons-third-law",
       "title": "Paper 2: Newton’s third law",
-      "points": ["1.29P"],
-      "terms": ["Newton third law", "action reaction", "interaction pair"],
+      "points": [
+        "1.29P"
+      ],
+      "terms": [
+        "Newton third law",
+        "action reaction",
+        "interaction pair"
+      ],
       "paragraphs": [
         "When object A exerts a force on object B, object B exerts an equal-magnitude force of the same type in the opposite direction on object A. The pair acts at the same time and on different objects. Neither force needs to wait for the other.",
         "For example, a hand pushes a wall and the wall pushes the hand with an equal and opposite contact force. Earth pulls a falling ball gravitationally and the ball pulls Earth gravitationally. The forces are equal, but the accelerations can differ enormously because the masses differ.",
@@ -666,7 +1043,12 @@
     {
       "id": "moments-and-equilibrium",
       "title": "Paper 2: moments and centre of gravity",
-      "points": ["1.2P", "1.30P", "1.31P", "1.32P"],
+      "points": [
+        "1.2P",
+        "1.30P",
+        "1.31P",
+        "1.32P"
+      ],
       "terms": [
         "moment",
         "turning effect",
@@ -692,7 +1074,7 @@
         "explanation": "The beam is light, so its own weight is neglected. Both forces are perpendicular to the horizontal beam."
       },
       "practice": {
-        "question": "A force of 8 N has its line of action 0.30 m from a pivot. Find the moment. What happens if its line of action moves through the pivot?",
+        "question": "A force of 8 N has a line of action at a perpendicular distance of 0.30 m from a pivot. Find the moment. What happens if its line of action moves through the pivot?",
         "answer": "Moment = 8 × 0.30 = 2.4 N m. If the line of action passes through the pivot, the perpendicular distance is zero and the moment is zero.",
         "explanation": "Force can remain non-zero even when its moment about a particular pivot is zero."
       },
@@ -704,7 +1086,11 @@
     {
       "id": "supported-beams",
       "title": "Paper 2: loads on a beam supported at both ends",
-      "points": ["1.33P", "1.31P", "1.32P"],
+      "points": [
+        "1.33P",
+        "1.31P",
+        "1.32P"
+      ],
       "terms": [
         "support reaction",
         "light beam",

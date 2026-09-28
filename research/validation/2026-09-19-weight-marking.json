@@ -1,0 +1,291 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-09-19T07:25:45.832Z",
+  "familyId": "4PH1.weight.convert-mass",
+  "version": "0.1.0",
+  "command": "node --experimental-strip-types scripts/check-weight-marking.ts",
+  "sourceHashes": {
+    "server/generators/weight-conversion.ts": "6abe412561794e7dd0e5f65921b1d3bd8dbd19eb23991d24c1d17c51ebf23ba2",
+    "server/generators/weight-marking.ts": "ab6145f3b32f8a4255d9a4ee524fe7c39a2d2650c1003c1520103c9dc9c0afe6",
+    "research/validation/weight-marking-cases.json": "67ca5a5ee802581b3abbe5b0e2d0cc77506f3d9af290bcb151aba65cd9cb9f56"
+  },
+  "reviewer": "Codex Astra",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Synthetic offline explicit-product response fixtures, not real student calibration or general free-text grading. Other working is never silently discarded.",
+  "sourceRefs": [
+    {
+      "documentId": "4PH1-2024-June-1-standard-ms",
+      "pdfPages": [
+        3,
+        13
+      ]
+    }
+  ],
+  "cases": 36,
+  "passed": 36,
+  "deferred": 16,
+  "results": [
+    {
+      "id": "exact",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "equivalent-decimals",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "scientific-notation",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "units-omitted",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "wrong-unscaled-unit",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "method-without-answer",
+      "expectedScore": 1,
+      "actualScore": 1,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "all-blank",
+      "expectedScore": 0,
+      "actualScore": 0,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "gram-as-kilogram",
+      "expectedScore": 1,
+      "actualScore": 1,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "divide-by-100",
+      "expectedScore": 1,
+      "actualScore": 1,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "extra-division",
+      "expectedScore": 1,
+      "actualScore": 1,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "mass-error-no-evaluation",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "answer-only-correct",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "answer-only-power-error",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "partial-working",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "different-g",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "working-final-conflict",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "arithmetic-error",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "plausible-rounding",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "non-power-mass",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "negative-mass",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "multiple-final-answers",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "extra-working",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "algebra-in-field",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "scaled-unit",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "subtle-decimal-error",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "huge-exponent",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "5-980-prose",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "5-980-table",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "375-980-prose",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "375-980-table",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "250-981-prose",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "250-981-table",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "5000-1000-prose",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "5000-1000-table",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "5000-981-prose",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "5000-981-table",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    }
+  ],
+  "fullPedagogicalValidation": "partial",
+  "liveEligible": false,
+  "activeTemplates": 0,
+  "blockers": [
+    "No real student-response calibration or free-text transcription validation.",
+    "Rounding, implied method, competing work, arbitrary errors and explicit-g adaptation remain deferred.",
+    "Two representations have matching numeric fixtures, not established equivalent assessment demand.",
+    "No live registration, blueprint or provider integration."
+  ]
+}

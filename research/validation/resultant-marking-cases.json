@@ -700,6 +700,67 @@
       },
       "expectedScore": 2,
       "rationale": "Explicit positive magnitude and surrounding whitespace are unambiguous."
+    },
+    {
+      "id": "extra-field-otherWorking",
+      "parameters": {
+        "axis": "vertical",
+        "task": "resultant",
+        "forces": [
+          32,
+          -20
+        ],
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "magnitude": "1.2",
+        "direction": "up",
+        "otherWorking": "The final resultant is downwards."
+      },
+      "expectedScore": null,
+      "rationale": "Unexpected response evidence must not be silently discarded by the bounded two-field marker."
+    },
+    {
+      "id": "extra-field-alternativeAnswer",
+      "parameters": {
+        "axis": "vertical",
+        "task": "resultant",
+        "forces": [
+          32,
+          -20
+        ],
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "magnitude": "1.2",
+        "direction": "up",
+        "alternativeAnswer": "5.2 N"
+      },
+      "expectedScore": null,
+      "rationale": "Unexpected response evidence must not be silently discarded by the bounded two-field marker."
+    },
+    {
+      "id": "extra-field-score",
+      "parameters": {
+        "axis": "vertical",
+        "task": "resultant",
+        "forces": [
+          32,
+          -20
+        ],
+        "representation": "prose",
+        "context": 0
+      },
+      "response": {
+        "magnitude": "1.2",
+        "direction": "up",
+        "score": 2
+      },
+      "expectedScore": null,
+      "rationale": "Unexpected response evidence must not be silently discarded by the bounded two-field marker."
     }
-  ]
+  ],
+  "boundaryReviewDate": "2026-09-20"
 }

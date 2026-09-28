@@ -1,0 +1,500 @@
+{
+  "subjectId": "physics",
+  "chapterId": "magnetism",
+  "sourceId": "4PH1-spec",
+  "sourcePages": [
+    29,
+    30
+  ],
+  "status": "source-checked",
+  "complete": false,
+  "humanReviewed": false,
+  "prerequisites": [
+    "Distinguish conventional current from electron motion.",
+    "Use force, voltage, current and power concepts."
+  ],
+  "goals": [
+    "Describe magnetic fields, materials and field-mapping methods.",
+    "Explain motor-effect and induction applications.",
+    "Use transformer relationships and explain transmission choices (Paper 2)."
+  ],
+  "sections": [
+    {
+      "id": "magnetic-materials",
+      "title": "Magnets, materials and induced magnetism",
+      "points": [
+        "6.2",
+        "6.3",
+        "6.5"
+      ],
+      "terms": [
+        "north pole",
+        "south pole",
+        "hard magnetic",
+        "soft magnetic",
+        "induced magnetism"
+      ],
+      "paragraphs": [
+        "Like magnetic poles repel and unlike poles attract. A magnet also attracts suitable unmagnetised magnetic materials, such as iron. Attraction alone does not prove that an unknown object is a permanent magnet; repulsion from a known pole is stronger evidence of an existing magnetic pole.",
+        "Magnetically soft materials become magnetised readily and lose much of their magnetism when the external field is removed. Soft iron is useful in electromagnets that should switch off. Magnetically hard materials retain magnetisation well and suit permanent magnets. Hard and soft here describe magnetic behaviour, not resistance to scratching.",
+        "A magnetic field can induce magnetism in a suitable material. The near end of a soft-iron object next to a north pole becomes an induced south pole, so attraction occurs. Removing the external magnet can remove most of this induced magnetisation in a soft material."
+      ],
+      "example": {
+        "question": "A north pole attracts the end of an unknown metal rod. Must that end be a permanent south pole?",
+        "steps": [
+          "No: the rod may be an unmagnetised magnetic material that becomes magnetised by induction.",
+          "An induced unlike pole near the magnet would also cause attraction."
+        ],
+        "explanation": "One observation of attraction does not distinguish a permanent magnet from induced magnetism."
+      },
+      "practice": {
+        "question": "Why use a magnetically soft core in a lifting electromagnet?",
+        "answer": "It magnetises readily while current flows and loses much of its magnetism when switched off, allowing release.",
+        "explanation": "A strongly magnetically hard core could retain unwanted attraction."
+      }
+    },
+    {
+      "id": "magnetic-fields",
+      "title": "Field lines and compass direction",
+      "points": [
+        "6.4"
+      ],
+      "terms": [
+        "field line",
+        "compass",
+        "field direction",
+        "field strength"
+      ],
+      "paragraphs": [
+        "A magnetic field is a region where a magnetic pole or moving charge can experience a magnetic force. A field line shows the local direction in which a small compass north pole points. Outside a bar magnet, lines run from its north pole towards its south pole.",
+        "The tangent to a field line gives the field direction at that point. Closely spaced lines conventionally indicate stronger field. Field lines are a model, not physical threads, and do not cross because the field at a point has one resultant direction.",
+        "A compass responds to the resultant field, which can include Earth’s field and nearby magnets. An isolated magnet’s field-line drawing is an idealised representation; measurements can differ where other fields matter."
+      ],
+      "example": {
+        "question": "Two lines are drawn crossing at a point in a magnetic field sketch. Explain the problem.",
+        "steps": [
+          "Each line would suggest a different field direction at the same point.",
+          "A small compass there has one resultant direction, so field lines cannot cross."
+        ],
+        "explanation": "The rule concerns the resultant field, not whether fields from several sources can overlap."
+      }
+    },
+    {
+      "id": "mapping-magnetic-fields",
+      "title": "Practical: mapping one and two bar magnets",
+      "points": [
+        "6.6"
+      ],
+      "terms": [
+        "plotting compass",
+        "iron filings",
+        "bar magnet field",
+        "two magnets"
+      ],
+      "paragraphs": [
+        "A plotting compass gives direction; iron filings can reveal the pattern but do not by themselves show arrow direction. Trace the magnet positions first so each observation can be located on the final drawing.",
+        "Map a single permanent bar magnet, then two bar magnets with unlike poles facing and with like poles facing. Unlike facing poles have lines linking across the gap. Like facing poles produce a pattern that bends away from the central gap; do not connect north directly to north."
+      ],
+      "example": {
+        "question": "A student scatters filings around two magnets and claims the pattern proves the direction of every line. What additional measurement is needed?",
+        "steps": [
+          "Use a small plotting compass at several positions.",
+          "Mark the direction of the compass’s north end and add consistent field arrows."
+        ],
+        "explanation": "The filings show shape; a compass supplies directional evidence."
+      },
+      "practical": {
+        "apparatus": [
+          "Permanent bar magnets, paper and pencil",
+          "Small plotting compass; optionally sealed iron-filings sheet or tray"
+        ],
+        "method": [
+          "Draw around the fixed magnet or magnets on the paper.",
+          "Place the compass nearby and mark the north-end direction; move it along that direction and repeat.",
+          "Join points with a smooth line and an arrow, then start again from other positions.",
+          "Repeat for two magnets with unlike and then like poles facing; label poles and keep the magnets fixed."
+        ],
+        "variables": [
+          "Change magnet arrangement and compass position.",
+          "Record field direction at each point.",
+          "Keep nearby magnetic objects and current-carrying equipment away when comparing arrangements."
+        ],
+        "safety": [
+          "Keep small magnets and filings away from eyes and mouth; use a sealed filings tray where available.",
+          "Avoid snapping magnets together and keep them away from magnetic-sensitive equipment."
+        ],
+        "quality": [
+          "Use a small compass and mark positions carefully.",
+          "A compass needle may be affected by Earth’s field, nearby metal or the other magnet; record the actual resultant pattern rather than forcing a perfect sketch."
+        ]
+      }
+    },
+    {
+      "id": "uniform-magnetic-field",
+      "title": "Producing an approximately uniform field",
+      "points": [
+        "6.7"
+      ],
+      "terms": [
+        "uniform field",
+        "parallel lines",
+        "opposite poles"
+      ],
+      "paragraphs": [
+        "Place broad, flat, unlike pole faces opposite each other with a small gap. In the central part of the gap, field direction and strength can be approximately uniform. Field lines there are parallel, equally spaced and point from north towards south.",
+        "Near the edges, field lines spread out: this is a fringe region. Do not label the entire surrounding field uniform, and do not arrange like poles facing when the aim is a straightforward uniform gap field."
+      ],
+      "example": {
+        "question": "Describe the central field between flat north and south pole faces that oppose one another.",
+        "steps": [
+          "The field points from the north face towards the south face.",
+          "The central lines are approximately straight, parallel and equally spaced."
+        ],
+        "explanation": "Equal spacing represents approximately equal field strength in that central region."
+      },
+      "diagram": {
+        "src": "/diagrams/physics-uniform-field.svg",
+        "alt": "Opposing flat north and south pole faces with parallel equally spaced arrows from north on the left to south on the right in the central gap.",
+        "caption": "The central gap is approximately uniform. Edge fringing is omitted from this focused schematic."
+      }
+    },
+    {
+      "id": "current-and-electromagnets",
+      "title": "Current produces a field; constructing an electromagnet",
+      "points": [
+        "6.8",
+        "6.9P"
+      ],
+      "terms": [
+        "current magnetic field",
+        "electromagnet",
+        "solenoid",
+        "soft iron"
+      ],
+      "paragraphs": [
+        "An electric current produces a magnetic field around a conductor. A nearby compass can change direction when the current is switched on, and reversing the current reverses the field direction.",
+        "Paper 2 construction: wind insulated wire into a coil around a suitable magnetically soft core and connect it to a controlled low-voltage supply. The coil’s fields combine; soft iron can strengthen the field and lose most magnetisation after switching off. Insulation prevents adjacent turns from shorting together.",
+        "Increasing current or adding turns per unit length can strengthen the field, while a soft-iron core increases it compared with a similar air-core coil. These comparisons need other conditions kept fixed. A current-carrying coil can heat, so practical equipment needs a controlled current and appropriate operating time."
+      ],
+      "example": {
+        "question": "Why are the wire turns insulated in a coil electromagnet?",
+        "steps": [
+          "Insulation keeps neighbouring turns electrically separate.",
+          "Current follows the intended length of the coil rather than taking short paths between turns."
+        ],
+        "explanation": "The coil shape and current path matter to its magnetic field."
+      },
+      "practice": {
+        "question": "What changes when the supply connections of the same electromagnet are reversed?",
+        "answer": "Current direction reverses, so the north and south poles swap.",
+        "explanation": "Reversing current changes field direction; it does not turn soft iron into a magnetically hard material."
+      }
+    },
+    {
+      "id": "current-field-patterns",
+      "title": "Paper 2: wire, coil and solenoid patterns",
+      "points": [
+        "6.10P"
+      ],
+      "terms": [
+        "right-hand grip",
+        "straight wire",
+        "flat circular coil",
+        "solenoid field",
+        "dot cross"
+      ],
+      "paragraphs": [
+        "For a straight wire, field lines are concentric circles centred on the wire. The right-hand grip rule gives direction: thumb along conventional current, curled fingers along the magnetic field. A dot means a vector out of the page; a cross means into the page.",
+        "A flat circular current loop has a field through its centre perpendicular to the plane of the loop. Curl right-hand fingers with the current; the thumb gives the central field direction. Counterclockwise current viewed face-on gives a field towards the viewer through the centre. Return field outside the loop completes the pattern.",
+        "Inside a long solenoid, lines are close, approximately parallel and nearly uniform away from the ends. Outside, the field resembles that of a bar magnet. The right-hand grip rule identifies the solenoid’s north end; the internal field points towards that end. Field lines form closed loops, including the part through the coil."
+      ],
+      "example": {
+        "question": "A straight wire carries conventional current out of the page. In which direction do field lines circulate, and what is their direction at a point to the right of the wire?",
+        "steps": [
+          "Point the right thumb out of the page: curled fingers circulate counterclockwise.",
+          "At a point directly to the right of the wire, the field points upwards."
+        ],
+        "explanation": "A compass follows the tangent to a circular field line, not a radial line towards the wire."
+      },
+      "practice": {
+        "question": "Viewed face-on, a flat loop’s current is clockwise. Which way is its central field?",
+        "answer": "Into the page.",
+        "explanation": "Reversing the current reverses the field everywhere, including through the loop centre."
+      },
+      "commonMistakes": [
+        "Do not draw a straight wire’s field as lines pointing radially outwards.",
+        "Conventional current direction is opposite electron drift in a metal."
+      ],
+      "diagram": {
+        "src": "/diagrams/physics-current-fields.svg",
+        "alt": "Field patterns for a straight wire with current out of the page, a circular coil viewed edge-on, and a solenoid viewed from the side. Dots and crosses identify conventional current; crimson arrows identify the field.",
+        "caption": "The coil and solenoid are side views: upper current emerges from the page and lower current enters it, giving an internal field to the right. A drawing task must still specify the view and current direction."
+      }
+    },
+    {
+      "id": "charged-particles-in-fields",
+      "title": "Paper 2: magnetic force on moving charges",
+      "points": [
+        "6.11P"
+      ],
+      "terms": [
+        "moving charge",
+        "magnetic force",
+        "parallel motion"
+      ],
+      "paragraphs": [
+        "A moving charged particle can experience a magnetic force when its motion has a component across a magnetic field. For motion exactly parallel or antiparallel to the field, the magnetic force is zero. A stationary charge also has no magnetic force from that field alone.",
+        "Magnetic force acts perpendicular to the particle’s instantaneous motion and the field. For the same velocity and field, positive and negative charges experience opposite directions of magnetic force. A field can therefore change direction of motion without changing speed when magnetic force is the only force."
+      ],
+      "example": {
+        "question": "Compare an electron moving along a magnetic field with one moving across it.",
+        "steps": [
+          "For motion exactly along the field, the magnetic force is zero.",
+          "For motion across the field, the electron experiences a magnetic force perpendicular to its motion and the field."
+        ],
+        "explanation": "The presence of a magnetic field alone is not enough; charge and motion direction matter."
+      },
+      "practice": {
+        "question": "Does reversing the sign of charge at the same velocity and field leave the force direction unchanged?",
+        "answer": "No. The magnetic force direction reverses.",
+        "explanation": "Use conventional positive-charge motion when applying a current-based direction rule, then reverse for a negative charge."
+      }
+    },
+    {
+      "id": "motor-effect-direction",
+      "title": "Force on a current-carrying wire",
+      "points": [
+        "6.12",
+        "6.13",
+        "6.14"
+      ],
+      "terms": [
+        "motor effect",
+        "Fleming left hand",
+        "conventional current",
+        "force direction"
+      ],
+      "paragraphs": [
+        "A current-carrying conductor in an external magnetic field can experience a force because its moving charges interact with that field. For a straight wire perpendicular to the field, Fleming’s left-hand rule gives force direction: first finger = field from north to south, second finger = conventional current, thumb = force.",
+        "For fixed active wire length and angle, greater current or a stronger field gives a larger force. Reversing current alone or field alone reverses the force; reversing both leaves the force direction unchanged. A wire parallel to the field has no motor-effect force in the ideal straight-wire model.",
+        "Keep current and field separate on a sketch. Use a dot for current towards you and a cross for current away from you; do not silently replace conventional current with electron-flow direction."
+      ],
+      "example": {
+        "question": "The field points right and conventional current in a wire points out of the page. Predict the force, then reverse only the current.",
+        "steps": [
+          "The left-hand rule gives an upward force initially.",
+          "With current reversed into the page and field unchanged, the force is downward."
+        ],
+        "explanation": "Changing one of the two direction inputs reverses the force."
+      },
+      "practice": {
+        "question": "What if both field and current reverse from their initial directions?",
+        "answer": "The force remains upward.",
+        "explanation": "Two reversals restore the original force direction."
+      },
+      "commonMistakes": [
+        "Do not use the right-hand grip rule as a substitute for the left-hand force rule."
+      ]
+    },
+    {
+      "id": "motors-and-loudspeakers",
+      "title": "Applying the motor effect",
+      "points": [
+        "6.12"
+      ],
+      "terms": [
+        "dc motor",
+        "split-ring commutator",
+        "brushes",
+        "loudspeaker",
+        "voice coil"
+      ],
+      "paragraphs": [
+        "In a simple d.c. motor, opposite sides of a current-carrying coil in a magnetic field experience opposite forces. Their turning effects can rotate the coil. A split-ring commutator reverses coil current every half turn so the turning effect continues in the same rotational sense; brushes maintain contact with the supply.",
+        "At certain positions the turning effect of a simple coil can be zero; its motion can carry it through these positions. The commutator is not a source of energy: electrical energy from the supply is transferred mechanically and also dissipated.",
+        "In a moving-coil loudspeaker, a coil attached to a cone sits in a permanent magnetic field. A varying signal current changes the force on the coil. Reversing current reverses force, moving the cone back and forth and making pressure variations in air. Greater signal amplitude can produce larger cone motion, within the speaker’s limits."
+      ],
+      "example": {
+        "question": "Why does a simple d.c. motor need a split-ring commutator?",
+        "steps": [
+          "As the coil passes each half turn, its sides exchange positions in the field.",
+          "The commutator reverses current in the coil, reversing the force on each physical side.",
+          "The resulting turning effect continues in the intended direction of rotation."
+        ],
+        "explanation": "Without appropriately timed reversal, the coil would tend towards a position rather than sustaining the intended rotation."
+      },
+      "practice": {
+        "question": "Why must the loudspeaker current vary to produce a changing sound signal?",
+        "answer": "A varying current gives a varying force, so the cone vibrates and creates pressure variations.",
+        "explanation": "A steady current alone produces a steady force and possible displacement, not sustained audio-frequency oscillation."
+      }
+    },
+    {
+      "id": "electromagnetic-induction",
+      "title": "Induced voltage and changing fields",
+      "points": [
+        "6.15"
+      ],
+      "terms": [
+        "induced voltage",
+        "flux change",
+        "magnet coil",
+        "relative motion"
+      ],
+      "paragraphs": [
+        "A voltage can be induced when a conductor moves across a magnetic field, or when the magnetic field passing through a coil changes. A complete circuit is needed for that induced voltage to drive a current. Voltage can exist across an open coil even though no current flows.",
+        "Moving a magnet into or out of a coil changes the field through it. Holding the magnet stationary relative to the coil gives no sustained induced voltage from that unchanged field. Faster change, a stronger changing field or more linked turns can increase the induced voltage, with other conditions fixed.",
+        "Reversing the relative motion or swapping the magnet pole reverses the induced voltage for the same arrangement. Not every motion produces induction: motion that leaves the field through the coil unchanged does not give the same result."
+      ],
+      "example": {
+        "question": "A magnet is pushed into a coil connected to a sensitive voltmeter, then held still inside it. Describe the readings.",
+        "steps": [
+          "During insertion, a changing field through the coil gives an induced voltage and meter deflection.",
+          "When the magnet is held still and the field through the coil is unchanged, the induced voltage returns to zero."
+        ],
+        "explanation": "A strong static field is not the same as a changing field."
+      },
+      "practice": {
+        "question": "Suggest two changes that can increase the peak voltage in the insertion experiment.",
+        "answer": "Move the magnet faster, or use more linked coil turns with the same motion and magnet.",
+        "explanation": "The changes must increase the rate of magnetic change linked with the coil; merely waiting longer with a stationary magnet does not."
+      }
+    },
+    {
+      "id": "generating-electricity",
+      "title": "Generating electricity by rotation",
+      "points": [
+        "6.16"
+      ],
+      "terms": [
+        "generator",
+        "rotating coil",
+        "rotating magnet",
+        "alternating voltage",
+        "slip rings"
+      ],
+      "paragraphs": [
+        "Rotating a coil within a magnetic field changes the field linked through it, inducing a voltage. A rotating magnet inside a stationary coil can produce the same kind of changing linkage. Mechanical work supplies the energy transferred electrically; induction does not create energy.",
+        "A simple rotating-coil alternator can use two slip rings and brushes to connect the rotating coil to the external circuit. The induced voltage changes sign every half turn, so the output is alternating. Slip rings maintain each coil-end connection; they do not reverse the connections like a split-ring motor commutator.",
+        "For a given geometry, increasing rotational speed, magnetic field strength or number of coil turns increases the induced voltage amplitude. Increasing rotational speed also increases the frequency; changing the number of turns alone need not change frequency."
+      ],
+      "example": {
+        "question": "A generator is rotated faster while its magnet and coil are unchanged. Predict two changes in its alternating output.",
+        "steps": [
+          "The rate of change of field linkage increases, so voltage amplitude increases.",
+          "More rotations occur each second, so the alternating frequency increases."
+        ],
+        "explanation": "Amplitude and frequency are different output properties, even though both change in this comparison."
+      },
+      "practice": {
+        "question": "Would a stronger magnet alone necessarily increase the output frequency at fixed rotation speed?",
+        "answer": "No. It increases voltage amplitude under the same geometry, while the rotation rate still sets the cycle rate.",
+        "explanation": "Identify which physical change controls each property."
+      }
+    },
+    {
+      "id": "transformer-structure",
+      "title": "Paper 2: transformer structure and voltage ratio",
+      "points": [
+        "6.17P",
+        "6.19P"
+      ],
+      "terms": [
+        "transformer",
+        "primary",
+        "secondary",
+        "turns ratio",
+        "alternating current",
+        "soft iron core"
+      ],
+      "paragraphs": [
+        "A transformer has primary and secondary coils linked by a magnetic core, commonly soft iron. An alternating current in the primary makes a changing magnetic field in the core, which induces an alternating voltage in the secondary. The coils are insulated; energy is transferred by the changing field, not by charge crossing directly from one coil to the other.",
+        "More secondary turns than primary turns gives a step-up voltage transformer; fewer gives step-down. Use Vp/Vs = Np/Ns, or Vs = Vp × Ns/Np. Keep primary quantities together and secondary quantities together.",
+        "A steady d.c. input produces no continuing changing field, so it cannot provide the ordinary sustained transformer output. Brief switching transients do not make a transformer suitable for normal d.c. operation."
+      ],
+      "example": {
+        "question": "A transformer has 1000 primary turns and 200 secondary turns. The primary alternating voltage is 12 V. Find the secondary voltage.",
+        "steps": [
+          "Vs = Vp × Ns/Np.",
+          "Vs = 12 × 200/1000 = 2.4 V."
+        ],
+        "explanation": "Fewer secondary turns correctly give a lower voltage."
+      },
+      "practice": {
+        "question": "A 5 V alternating input must become 20 V with 100 primary turns. How many secondary turns are needed?",
+        "answer": "400 turns.",
+        "explanation": "Ns = Np × Vs/Vp = 100 × 20/5."
+      },
+      "commonMistakes": [
+        "Do not invert only one ratio.",
+        "Transformers do not automatically produce direct current."
+      ]
+    },
+    {
+      "id": "transformer-power",
+      "title": "Paper 2: ideal transformer power and current",
+      "points": [
+        "6.1",
+        "6.20P"
+      ],
+      "terms": [
+        "ampere",
+        "volt",
+        "watt",
+        "ideal transformer",
+        "100 percent efficiency"
+      ],
+      "paragraphs": [
+        "Use amperes (A) for current, volts (V) for voltage and watts (W) for power. For a 100% efficient transformer, input power equals output power: VpIp = VsIs. An increase in output voltage is accompanied by a decrease in current for the same power.",
+        "The ideal equation is an explicit assumption. A real transformer has losses, so output power is less than input power. A larger output current from a step-down transformer does not imply energy has been created."
+      ],
+      "example": {
+        "question": "An ideal transformer takes 12 V at 0.50 A and supplies 2.4 V. Find input power and secondary current.",
+        "steps": [
+          "Input power = 12 × 0.50 = 6.0 W.",
+          "Output power = 6.0 W under the ideal assumption.",
+          "Secondary current = 6.0/2.4 = 2.5 A."
+        ],
+        "explanation": "Voltage falls by a factor of five while current rises by a factor of five, leaving power unchanged."
+      },
+      "practice": {
+        "question": "A real transformer supplies 18 W from a 20 W input. What is its efficiency?",
+        "answer": "90%.",
+        "explanation": "18/20 × 100 = 90; do not apply equal input/output power to this lossy case."
+      }
+    },
+    {
+      "id": "transmitting-electricity",
+      "title": "Paper 2: transmitting electrical energy",
+      "points": [
+        "6.18P"
+      ],
+      "terms": [
+        "National Grid",
+        "step-up",
+        "step-down",
+        "transmission losses",
+        "I squared R"
+      ],
+      "paragraphs": [
+        "Large-scale transmission uses step-up transformers to raise voltage before long cables and step-down transformers where lower voltages are required. For the same transmitted power, higher voltage means lower current because P = VI.",
+        "Cable heating is proportional to I²R for a given cable resistance. Reducing current strongly reduces this unwanted transfer. It is the smaller current that reduces cable heating; a transformer does not make the cable resistance vanish.",
+        "Step-down transformers provide appropriate lower voltages near users. Generation, transmission and distribution involve different required voltages, and practical systems have losses at each stage."
+      ],
+      "example": {
+        "question": "Transmit 1.0 MW through a cable of resistance 4.0 Ω. Compare cable heating at transmission voltages 20 kV and 200 kV, using the same transmitted power.",
+        "steps": [
+          "At 20 kV: current = 1 000 000/20 000 = 50 A; heating power = 50² × 4.0 = 10 000 W.",
+          "At 200 kV: current = 1 000 000/200 000 = 5.0 A; heating power = 5.0² × 4.0 = 100 W.",
+          "Ten times the voltage gives one tenth the current and one hundredth the heating loss in this model."
+        ],
+        "explanation": "The comparison holds power and cable resistance fixed. It does not mean all real transmission losses are eliminated."
+      },
+      "practice": {
+        "question": "Why is “high voltage reduces resistance” an incorrect explanation here?",
+        "answer": "The cable resistance was held fixed. Higher voltage lowers current for the same power, reducing I²R heating.",
+        "explanation": "Name the quantity that changes and the relationship linking it to the loss."
+      }
+    }
+  ]
+}

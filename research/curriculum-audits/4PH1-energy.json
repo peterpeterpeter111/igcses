@@ -1,0 +1,1240 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4PH1",
+  "chapterId": "energy",
+  "documentId": "4PH1-spec",
+  "specificationIssue": "Issue 4 - September 2024",
+  "documentSha256": "bac4b8312d4fbfc84672f909100d66b2b3cda0b25e98c0d11bbc7366dae482b2",
+  "reviewDate": "2026-09-19",
+  "reviewer": "Codex Astra",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Bounded source-clause and named-item audit of 4.1–4.19P, visually checked on specification PDF pages 25–26 / printed 19–20. Requirement suffixes are editorial; teaching/assessment remains partial.",
+  "identifierPolicy": "Requirement suffixes r1, r2, etc. are local editorial audit identifiers; only the parent reference is publisher-numbered.",
+  "notePath": "content/notes/physics-energy.json",
+  "parents": [
+    {
+      "parentId": "4PH1:issue4:4.1",
+      "officialReference": "4.1",
+      "pdfPage": 25,
+      "printedPage": 19,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "All eight named units remain separate local requirements.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:4.1:r1",
+          "origin": "source-clause",
+          "summary": "Use kilograms appropriately.",
+          "teachingEvidence": [
+            {
+              "sectionId": "energy-units",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate mass-prefix conversion across several energy equations.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.1:r2",
+          "origin": "source-clause",
+          "summary": "Use joules appropriately.",
+          "teachingEvidence": [
+            {
+              "sectionId": "energy-units",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Distinguish energy/work from force or power and validate conversions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.1:r3",
+          "origin": "source-clause",
+          "summary": "Use metres appropriately.",
+          "teachingEvidence": [
+            {
+              "sectionId": "energy-units",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate vertical height versus distance along a force.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.1:r4",
+          "origin": "source-clause",
+          "summary": "Use metres per second appropriately.",
+          "teachingEvidence": [
+            {
+              "sectionId": "energy-units",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check speed-unit conversion before squaring speed.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.1:r5",
+          "origin": "source-clause",
+          "summary": "Use metres per second squared appropriately.",
+          "teachingEvidence": [
+            {
+              "sectionId": "energy-units",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check acceleration and gravitational-field unit interpretation independently.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.1:r6",
+          "origin": "source-clause",
+          "summary": "Use newtons appropriately.",
+          "teachingEvidence": [
+            {
+              "sectionId": "energy-units",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Distinguish force from mass in work calculations.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.1:r7",
+          "origin": "source-clause",
+          "summary": "Use seconds appropriately.",
+          "teachingEvidence": [
+            {
+              "sectionId": "energy-units",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate minutes-to-seconds conversion in power calculations.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.1:r8",
+          "origin": "source-clause",
+          "summary": "Use watts appropriately.",
+          "teachingEvidence": [
+            {
+              "sectionId": "energy-units",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Distinguish transfer rate from energy and validate kW conversion.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:4.2",
+      "officialReference": "4.2",
+      "pdfPage": 25,
+      "printedPage": 19,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Eight named stores and four named transfer pathways are tracked; local subdivisions do not create publisher subnumbers.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:4.2:r1",
+          "origin": "source-clause",
+          "summary": "Describe transfers involving the chemical store.",
+          "teachingEvidence": [
+            {
+              "sectionId": "tracking-energy-stores",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess an unfamiliar fuel or battery system with named initial/final stores.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.2:r2",
+          "origin": "source-clause",
+          "summary": "Describe transfers involving the kinetic store.",
+          "teachingEvidence": [
+            {
+              "sectionId": "tracking-energy-stores",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess motion changes with both useful and dissipative transfers.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.2:r3",
+          "origin": "source-clause",
+          "summary": "Describe transfers involving the gravitational store.",
+          "teachingEvidence": [
+            {
+              "sectionId": "tracking-energy-stores",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate a system boundary that includes the gravitational interaction.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.2:r4",
+          "origin": "source-clause",
+          "summary": "Describe transfers involving the elastic store.",
+          "teachingEvidence": [
+            {
+              "sectionId": "tracking-energy-stores",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess loading and release, not merely the name of a spring.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.2:r5",
+          "origin": "source-clause",
+          "summary": "Describe transfers involving the thermal store.",
+          "teachingEvidence": [
+            {
+              "sectionId": "tracking-energy-stores",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Distinguish stored internal energy from a heating pathway.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.2:r6",
+          "origin": "source-clause",
+          "summary": "Describe transfers involving the magnetic store.",
+          "teachingEvidence": [
+            {
+              "sectionId": "tracking-energy-stores",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate a work/interaction example with attractive as well as repulsive poles.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.2:r7",
+          "origin": "source-clause",
+          "summary": "Describe transfers involving the electrostatic store.",
+          "teachingEvidence": [
+            {
+              "sectionId": "tracking-energy-stores",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate a work/interaction example without confusing charge with energy.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.2:r8",
+          "origin": "source-clause",
+          "summary": "Describe transfers involving the nuclear store.",
+          "teachingEvidence": [
+            {
+              "sectionId": "tracking-energy-stores",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess the distinction between nuclear release and chemical combustion.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.2:r9",
+          "origin": "source-clause",
+          "summary": "Describe energy transferred mechanically.",
+          "teachingEvidence": [
+            {
+              "sectionId": "tracking-energy-stores",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate force/displacement links across spring, motion and lifting examples.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.2:r10",
+          "origin": "source-clause",
+          "summary": "Describe energy transferred electrically.",
+          "teachingEvidence": [
+            {
+              "sectionId": "tracking-energy-stores",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess a circuit transfer without inventing an electrical store.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.2:r11",
+          "origin": "source-clause",
+          "summary": "Describe energy transferred by heating.",
+          "teachingEvidence": [
+            {
+              "sectionId": "tracking-energy-stores",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess a thermal transfer without treating heat as a stored substance.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.2:r12",
+          "origin": "source-clause",
+          "summary": "Describe energy transferred by radiation, including light and sound.",
+          "teachingEvidence": [
+            {
+              "sectionId": "tracking-energy-stores",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate both source examples while preserving sound’s need for a medium.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:4.3",
+      "officialReference": "4.3",
+      "pdfPage": 25,
+      "printedPage": 19,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Conservation is a use requirement, not only a memorised statement.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:4.3:r1",
+          "origin": "source-clause",
+          "summary": "Apply conservation of energy to a defined system.",
+          "teachingEvidence": [
+            {
+              "sectionId": "energy-balance-motion",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate non-zero initial stores, external work and dissipative transfers.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:4.4",
+      "officialReference": "4.4",
+      "pdfPage": 25,
+      "printedPage": 19,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "The official denominator is total energy output; equality with input needs an appropriate steady-device balance.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:4.4:r1",
+          "origin": "source-clause",
+          "summary": "Know the useful-output / total-output efficiency relationship.",
+          "teachingEvidence": [
+            {
+              "sectionId": "conservation-efficiency-sankey",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate recall and fraction-versus-percentage notation.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.4:r2",
+          "origin": "source-clause",
+          "summary": "Use the efficiency relationship.",
+          "teachingEvidence": [
+            {
+              "sectionId": "conservation-efficiency-sankey",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate inverse input/output targets and cases with changing stored energy.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:4.5",
+      "officialReference": "4.5",
+      "pdfPage": 25,
+      "printedPage": 19,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "A range of devices and Sankey representations are both explicitly included.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:4.5:r1",
+          "origin": "source-clause",
+          "summary": "Explain device energy transfers using useful/total output and efficiency.",
+          "teachingEvidence": [
+            {
+              "sectionId": "conservation-efficiency-sankey",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess unfamiliar purposes so that useful output is not assigned by rote.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.5:r2",
+          "origin": "source-clause",
+          "summary": "Represent and interpret transfers with Sankey diagrams.",
+          "teachingEvidence": [
+            {
+              "sectionId": "conservation-efficiency-sankey",
+              "field": "diagram"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate learner-drawn proportional widths and more than two outputs.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:4.6",
+      "officialReference": "4.6",
+      "pdfPage": 25,
+      "printedPage": 19,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "All three named mechanisms must be distinguished.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:4.6:r1",
+          "origin": "source-clause",
+          "summary": "Describe conduction.",
+          "teachingEvidence": [
+            {
+              "sectionId": "conduction-and-convection",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate particle/electron explanations without bulk particle flow in solids.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.6:r2",
+          "origin": "source-clause",
+          "summary": "Describe convection.",
+          "teachingEvidence": [
+            {
+              "sectionId": "conduction-and-convection",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess density-driven bulk fluid circulation and its limits.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.6:r3",
+          "origin": "source-clause",
+          "summary": "Describe radiation transfer.",
+          "teachingEvidence": [
+            {
+              "sectionId": "energy-stores-and-radiation",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate electromagnetic transfer across a vacuum and simultaneous pathways.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:4.7",
+      "officialReference": "4.7",
+      "pdfPage": 25,
+      "printedPage": 19,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Everyday phenomena are required, not just a lab description.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:4.7:r1",
+          "origin": "source-clause",
+          "summary": "Explain convection in everyday situations.",
+          "teachingEvidence": [
+            {
+              "sectionId": "conduction-and-convection",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add independently assessed room-heating/cooling circulation scenarios.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:4.8",
+      "officialReference": "4.8",
+      "pdfPage": 25,
+      "printedPage": 19,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Both absorption/emission and surface/temperature effects are explicit.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:4.8:r1",
+          "origin": "source-clause",
+          "summary": "Explain how surface finish affects absorption and emission.",
+          "teachingEvidence": [
+            {
+              "sectionId": "surface-absorption",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate fair-comparison conditions and distinguish absorption from emission.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.8:r2",
+          "origin": "source-clause",
+          "summary": "Explain how temperature relates to radiation transfer.",
+          "teachingEvidence": [
+            {
+              "sectionId": "surface-absorption",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess hotter same-surface emission and equilibrium with continuing exchange.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:4.9",
+      "officialReference": "4.9",
+      "pdfPage": 25,
+      "printedPage": 19,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "The practical explicitly covers conduction, convection and radiation.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:4.9:r1",
+          "origin": "source-clause",
+          "summary": "Investigate conduction experimentally.",
+          "teachingEvidence": [
+            {
+              "sectionId": "thermal-practical-conduction",
+              "field": "practical"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate a results task with geometry, heat capacity and loss limitations.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.9:r2",
+          "origin": "source-clause",
+          "summary": "Investigate convection experimentally.",
+          "teachingEvidence": [
+            {
+              "sectionId": "thermal-practical-convection",
+              "field": "practical"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess tracer circulation against stirring and diffusion alternatives.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.9:r3",
+          "origin": "source-clause",
+          "summary": "Investigate radiation transfer experimentally.",
+          "teachingEvidence": [
+            {
+              "sectionId": "thermal-practical-radiation",
+              "field": "practical"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate absorption and emission investigations separately; the existing practical is absorption.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:4.10",
+      "officialReference": "4.10",
+      "pdfPage": 25,
+      "printedPage": 19,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Insulation is an illustrative method, not the only permitted way to reduce unwanted transfer.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:4.10:r1",
+          "origin": "source-clause",
+          "summary": "Explain methods of reducing unwanted energy transfer.",
+          "teachingEvidence": [
+            {
+              "sectionId": "insulation",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess mechanisms in unfamiliar insulation and mechanical-friction contexts.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:4.11",
+      "officialReference": "4.11",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Know/use local subdivisions retain the direction-of-force condition.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:4.11:r1",
+          "origin": "source-clause",
+          "summary": "Know work = force × distance along the force.",
+          "teachingEvidence": [
+            {
+              "sectionId": "work-and-energy",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate equation recall and displacement direction.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.11:r2",
+          "origin": "source-clause",
+          "summary": "Use W = Fd.",
+          "teachingEvidence": [
+            {
+              "sectionId": "energy-on-a-slope",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate inverse quantities and work by individual versus resultant forces.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:4.12",
+      "officialReference": "4.12",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Work and energy transfer are linked explicitly.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:4.12:r1",
+          "origin": "source-clause",
+          "summary": "Recognise work done as energy transferred.",
+          "teachingEvidence": [
+            {
+              "sectionId": "work-and-energy",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess constant-speed examples where individual work is non-zero.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:4.13",
+      "officialReference": "4.13",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Near-surface gravitational energy uses vertical height and the stated g.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:4.13:r1",
+          "origin": "source-clause",
+          "summary": "Know gravitational potential energy = mgh.",
+          "teachingEvidence": [
+            {
+              "sectionId": "kinetic-and-gravitational-energy",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate symbols, reference level and unit choice.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.13:r2",
+          "origin": "source-clause",
+          "summary": "Use gravitational potential energy = mgh.",
+          "teachingEvidence": [
+            {
+              "sectionId": "energy-on-a-slope",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate inverse targets and distinguish vertical rise from path length.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:4.14",
+      "officialReference": "4.14",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Know/use local subdivisions preserve squared-speed dependence.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:4.14:r1",
+          "origin": "source-clause",
+          "summary": "Know kinetic energy = ½mv².",
+          "teachingEvidence": [
+            {
+              "sectionId": "kinetic-and-gravitational-energy",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate independent recall and proportional reasoning.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.14:r2",
+          "origin": "source-clause",
+          "summary": "Use kinetic energy = ½mv².",
+          "teachingEvidence": [
+            {
+              "sectionId": "kinetic-and-gravitational-energy",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate square-root targets, mass conversion and realistic domains.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:4.15",
+      "officialReference": "4.15",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "The required link includes gravitational, kinetic and work terms.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:4.15:r1",
+          "origin": "source-clause",
+          "summary": "Use conservation to link gravitational and kinetic energy with work.",
+          "teachingEvidence": [
+            {
+              "sectionId": "energy-on-a-slope",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate varied initial/final motion and dissipative work without assuming mgh always equals final KE.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:4.16",
+      "officialReference": "4.16",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Rate of energy transfer and rate of doing work describe the same power concept.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:4.16:r1",
+          "origin": "source-clause",
+          "summary": "Describe power as a transfer/work rate.",
+          "teachingEvidence": [
+            {
+              "sectionId": "power",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess equal-energy/different-time and equal-time/different-energy comparisons.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:4.17",
+      "officialReference": "4.17",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "The source requires use of power, work and time relationship.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:4.17:r1",
+          "origin": "source-clause",
+          "summary": "Use P = W/t.",
+          "teachingEvidence": [
+            {
+              "sectionId": "power",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate inverse time/work and input-versus-useful power.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:4.18P",
+      "officialReference": "4.18P",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Seven source bullets are tracked. Water is one publisher bullet; hydro/tidal/wave are teaching examples.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:4.18P:r1",
+          "origin": "source-clause",
+          "summary": "Describe electricity generation using wind.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electricity-generation",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess moving-air to turbine to electrical transfers without claiming the generator creates energy.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.18P:r2",
+          "origin": "source-clause",
+          "summary": "Describe electricity generation using water.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electricity-generation",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate reservoir hydro and at least one moving-water alternative with the correct source store.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.18P:r3",
+          "origin": "source-clause",
+          "summary": "Describe electricity generation using geothermal resources.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electricity-generation",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess hot underground fluid/rock to working fluid to generator transfers.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.18P:r4",
+          "origin": "source-clause",
+          "summary": "Describe electricity generation using solar heating systems.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electricity-generation",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Distinguish solar thermal generation from domestic water heating alone.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.18P:r5",
+          "origin": "source-clause",
+          "summary": "Describe electricity generation using solar cells.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electricity-generation",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess direct radiation-to-electrical transfer without adding a turbine.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.18P:r6",
+          "origin": "source-clause",
+          "summary": "Describe electricity generation using fossil fuels.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electricity-generation",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess chemical store, heating, steam/turbine and electrical transfers.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.18P:r7",
+          "origin": "source-clause",
+          "summary": "Describe electricity generation using nuclear power.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electricity-generation",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess nuclear release/heating and distinguish it from chemical burning.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:4.19P",
+      "officialReference": "4.19P",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Large-scale comparisons must include advantages and disadvantages for renewable and non-renewable methods.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:4.19P:r1",
+          "origin": "source-clause",
+          "summary": "Describe advantages and disadvantages of renewable electricity resources.",
+          "teachingEvidence": [
+            {
+              "sectionId": "comparing-energy-resources",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate scenario-linked reliability, geography, environmental effects and storage rather than generic lists.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:4.19P:r2",
+          "origin": "source-clause",
+          "summary": "Describe advantages and disadvantages of non-renewable electricity resources.",
+          "teachingEvidence": [
+            {
+              "sectionId": "comparing-energy-resources",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate fossil/nuclear comparisons and operational versus wider lifecycle effects.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    }
+  ],
+  "completeTeachingPoints": 0,
+  "completeChapters": 0,
+  "teachingUpdatedAt": "2026-09-19"
+}

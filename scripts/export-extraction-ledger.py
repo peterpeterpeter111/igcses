@@ -13,8 +13,8 @@ path = Path(sys.argv[1]).resolve()
 if path.parent != root / 'research/extractions':
     raise ValueError('Expected one saved research/extractions JSON file')
 m = json.loads(path.read_text())
-if m['fullyProcessed'] or m['paperStage'] != 'indexed':
-    raise ValueError('This exporter handles partial extractions only')
+if m['fullyProcessed'] or m['paperStage'] not in ['indexed', 'extracted']:
+    raise ValueError('This exporter handles indexed/extracted overlays, never processed papers')
 if m['paperId'] != '4PH1-2024-June-1-standard':
     raise ValueError('This bounded exporter is for the reviewed Physics 2024 1P overlay only')
 date = m['reviewDate']
@@ -48,6 +48,23 @@ for key, document in zip(['questionPaper', 'markScheme'], m['documents']):
     if full_visual_audit and sorted(m['pageAudit'][key]['visuallyReviewedPages']) != list(range(1, document['pageCount'] + 1)):
         raise ValueError('Incomplete page list cannot be called a whole-document audit')
 
+index = json.loads((root / 'research/reviews/2026-09-10-physics-leaf-index.json').read_text())
+if index['paperId'] != paper or index['questionPaperSha256'] != m['documents'][0]['sha256'] or index['markSchemeSha256'] != m['documents'][1]['sha256']:
+    raise ValueError('Leaf index does not match the exact paper/scheme pair')
+indexed_ids = [task['taskId'] for task in index['tasks']]
+if len(set(indexed_ids)) != len(indexed_ids) or index['indexedLeafCount'] != len(indexed_ids):
+    raise ValueError('Leaf index count/identity mismatch')
+expected_count = m['wholePaperLeafCount']
+if m['paperStage'] == 'extracted':
+    task_ids = [task['taskId'] for task in m['tasks']]
+    if (len(task_ids) != len(set(task_ids)) or set(task_ids) != set(indexed_ids)
+            or len(task_ids) != expected_count or m['detailedLeafTasks'] != expected_count
+            or sum(task['originalMarks'] for task in m['tasks']) != m['wholePaperMarks']
+            or m['detailedOriginalMarks'] != m['wholePaperMarks']
+            or not m.get('marksReconciled') or not full_visual_audit
+            or any(task['extractionStatus'] != 'source-checked' for task in m['tasks'])):
+        raise ValueError('Extracted stage requires the complete, reconciled detailed leaf set')
+
 
 def merge(name, key, records):
     file = root / 'research/ledger/v1' / (name + '.csv')
@@ -73,7 +90,7 @@ for d in m['documents']:
     pages = m['pageAudit']['questionPaper' if d['type'] == 'question-paper' else 'markScheme']['visuallyReviewedPages']
     docs.append(dict(document_id=d['id'], qualification=m['qualification'], document_type=d['type'], canonical_url=d['url'], title=paper + ' ' + d['type'], publisher='Pearson', year=2024, series='Summer', component='1P', variant='standard', printed_exam_date='2024-05-22' if d['type'] == 'question-paper' else '', filename_date='2024-05-23' if d['type'] == 'question-paper' else '2024-08-22', publication_code='P75826A' if d['type'] == 'question-paper' else '4PH1_1P_2406_MS', sha256=d['sha256'], page_count=d['pageCount'], access_status='obtained', local_evidence_path=relative, reviewed_pages_json=json.dumps([dict(page=p, mode='visual-and-text', reviewer=m['reviewer'], date=date) for p in pages]), identity_status='agent-reviewed', identity_notes='Matched existing cover review; retained legacy paper ID. See explicit reviewed pages and separate detailed extraction status.', batch_id=batch, updated_at=date))
 merge('documents', 'document_id', docs)
-merge('papers', 'paper_id', [dict(paper_id=paper, qualification=m['qualification'], year=2024, series='Summer', component='1P', variant='standard', qp_document_id=m['documents'][0]['id'], ms_document_id=m['documents'][1]['id'], insert_document_ids_json='[]', examiner_report_ids_json='[]', report_status=m['examinerReportStatus'], target_specification_id='4PH1-spec', applicability_status='partial-current-scope-review', stage='indexed', last_successful_stage='indexed', extracted_leaf_tasks=len(m['tasks']), assessed_marks=110, all_alternatives_marks=110, option_rules_json=json.dumps({'mode': 'all-compulsory', 'sourcePages':[1,31]}), reconciled_marks=str(m.get('marksReconciled', False)).lower(), scheme_match_status='matched-visual-inventory' if full_visual_audit else 'matched-reviewed-subset', complete_page_audit=str(full_visual_audit).lower(), template_links_complete='false', blocking_issues_json=json.dumps(m['blockers']), reviewed_at=date, **common)])
+merge('papers', 'paper_id', [dict(paper_id=paper, qualification=m['qualification'], year=2024, series='Summer', component='1P', variant='standard', qp_document_id=m['documents'][0]['id'], ms_document_id=m['documents'][1]['id'], insert_document_ids_json='[]', examiner_report_ids_json='[]', report_status=m['examinerReportStatus'], target_specification_id='4PH1-spec', applicability_status='partial-current-scope-review', stage=m['paperStage'], last_successful_stage=m['paperStage'], expected_leaf_tasks=expected_count, indexed_leaf_tasks=len(indexed_ids), extracted_leaf_tasks=len(m['tasks']), assessed_marks=m['wholePaperMarks'], all_alternatives_marks=m['wholePaperMarks'], option_rules_json=json.dumps({'mode': 'all-compulsory', 'sourcePages':[1,31]}), reconciled_marks=str(m.get('marksReconciled', False)).lower(), scheme_match_status='matched-visual-inventory' if full_visual_audit else 'matched-reviewed-subset', complete_page_audit=str(full_visual_audit).lower(), template_links_complete='false', blocking_issues_json=json.dumps(m['blockers']), reviewed_at=m.get('paperStageReviewedAt', date), **{**common, 'updated_at': m.get('paperStageReviewedAt', date)})])
 rows = []
 mappings = []
 for t in m['tasks']:

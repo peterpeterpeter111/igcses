@@ -1,0 +1,486 @@
+{
+  "schemaVersion": 1,
+  "id": "4PH1.weight.convert-mass",
+  "version": "0.1.0",
+  "status": "provisional",
+  "subject": "4PH1",
+  "origin": "exam-derived",
+  "syllabusRefs": [
+    {
+      "pointId": "4PH1:issue4:1.18",
+      "documentId": "4PH1-spec",
+      "issue": "4",
+      "pdfPages": [
+        18
+      ],
+      "mappingStatus": "verified"
+    },
+    {
+      "pointId": "4PH1:issue4:1.1",
+      "documentId": "4PH1-spec",
+      "issue": "4",
+      "pdfPages": [
+        17
+      ],
+      "mappingStatus": "verified"
+    }
+  ],
+  "sourceTasks": [
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q10.a",
+      "paperId": "4PH1-2024-June-1-standard",
+      "questionPaper": {
+        "documentId": "4PH1-2024-June-1-standard-qp",
+        "pdfPages": [
+          22
+        ]
+      },
+      "markScheme": {
+        "documentId": "4PH1-2024-June-1-standard-ms",
+        "pdfPages": [
+          13
+        ]
+      },
+      "originalMarks": 2
+    }
+  ],
+  "answerGuideId": "4PH1.weight.convert-mass",
+  "commandWord": "Calculate",
+  "skill": "Convert a supplied mass in grams to kilograms and evaluate weight using the supplied formula and stated gravitational field strength.",
+  "assessmentObjectives": [
+    "unassigned-pending-official-AO-review"
+  ],
+  "originalMarks": [
+    2
+  ],
+  "customQuiz": {
+    "candidateMarks": [
+      2
+    ],
+    "validatedMarks": [],
+    "adaptationStatus": "pending",
+    "rationale": "Preserves the original substitution/evaluation structure and gram conversion. An explicitly fixed g and table presentation are adaptations; method-credit, power-of-ten and rounding responses need calibration before use."
+  },
+  "stimulus": {
+    "types": [
+      "scenario",
+      "table",
+      "equation"
+    ],
+    "originality": "original-generated-content",
+    "requirements": [
+      "Original load context with one positive mass stated in grams.",
+      "Supply W = mg and state one g value explicitly; no gravitational lookup required.",
+      "Ask for weight, not net force, mass or support force."
+    ],
+    "evidenceContract": [
+      "Freeze mass in integer grams and g in integer hundredths of N/kg.",
+      "Store exact decimal mass/weight and source-specific rubric notes privately.",
+      "Public question contains only the givens, prompt and maximum marks."
+    ]
+  },
+  "parameters": [
+    {
+      "id": "massGrams",
+      "type": "integer",
+      "domain": {
+        "minimum": 5,
+        "maximum": 5000,
+        "step": 5
+      },
+      "constraints": [
+        "Strictly positive and a multiple of five grams; input is never already in kg."
+      ]
+    },
+    {
+      "id": "fieldHundredths",
+      "type": "integer",
+      "domain": {
+        "minimum": 980,
+        "maximum": 1000,
+        "step": 1
+      },
+      "constraints": [
+        "Only the discrete values 980, 981 and 1000 are allowed, representing 9.8, 9.81 and 10 N/kg."
+      ]
+    },
+    {
+      "id": "representation",
+      "type": "enum",
+      "domain": {
+        "values": [
+          "prose",
+          "table"
+        ]
+      },
+      "constraints": [
+        "Equivalent mass and field-strength readings appear in either form."
+      ]
+    },
+    {
+      "id": "context",
+      "type": "integer",
+      "domain": {
+        "minimum": 0,
+        "maximum": 2,
+        "step": 1
+      },
+      "constraints": [
+        "Select one original generic load context; no extra mechanical model or forces are implied."
+      ]
+    }
+  ],
+  "constraints": [
+    "No inverse task, buoyancy, changing g, zero mass or resultant-force calculation in this version.",
+    "Do not change the original two-mark source into a three-mark unit/conversion/method scheme.",
+    "Never activate from arithmetic checks alone."
+  ],
+  "relationships": [
+    "mass_kg = mass_grams / 1000",
+    "weight_N = mass_grams * field_hundredths / 100000"
+  ],
+  "difficultyControls": [
+    "Vary conversion and decimal multiplication values without claiming equal difficulty.",
+    "Prose/table presentation changes reading demand and remains provisional."
+  ],
+  "transformations": [
+    {
+      "id": "new-load-and-mass",
+      "status": "candidate",
+      "conditions": "Stay inside the explicit gram domain and recompute exact solution."
+    },
+    {
+      "id": "explicit-field-strength",
+      "status": "candidate",
+      "conditions": "The original scheme allows several g values; generated prompts explicitly select one. Calibrate this change rather than copying the original acceptance list blindly."
+    },
+    {
+      "id": "prose-to-table",
+      "status": "candidate",
+      "conditions": "All quantities and units must match the same frozen parameters."
+    },
+    {
+      "id": "inverse-target",
+      "status": "forbidden",
+      "conditions": "Mass or g as the target requires a separate demand/rubric review."
+    }
+  ],
+  "solutionProcedure": [
+    "Convert the stated mass from grams to kg.",
+    "Substitute the converted mass and the stated g into W = mg.",
+    "Evaluate and report weight in N, retaining suitable precision."
+  ],
+  "marking": {
+    "method": "method-marks",
+    "maximum": 2,
+    "criteria": [
+      {
+        "id": "substitution",
+        "credit": 1,
+        "rule": "Substitution into W=mg; a clear power-of-ten mass conversion error is handled by the source's one-mark deduction rule."
+      },
+      {
+        "id": "evaluation",
+        "credit": 1,
+        "rule": "Correct evaluation using the stated g, with method and single-error handling calibrated before serving."
+      }
+    ],
+    "acceptableAlternatives": [
+      "Equivalent decimal working; exact generated answers are stored privately.",
+      "Original Q10(a) additionally accepts g=9.8/9.81 and resulting 2.45/2.4525 N for its 250 g load. These are source observations, not automatic alternatives to a generated explicitly stated g."
+    ],
+    "dependencies": [
+      "Source scheme ignores units and deducts one mark for a clear power-of-ten error in mass units; avoid repeated penalties for the same error.",
+      "A plausible wrong number alone cannot establish a power-of-ten method without supporting working."
+    ],
+    "contradictionRules": [
+      "The offline explicit-product marker defers additional working, competing claims, inconsistent final answers and unsupported notation. It does not parse free-text solutions or infer missing working."
+    ],
+    "units": "N",
+    "tolerance": {
+      "absolute": 0,
+      "relative": 0,
+      "roundingRule": "Exact decimal model supplied. Acceptable rounded responses and implied method credit remain uncalibrated; do not automatically reject rounded work or serve this provisional rubric."
+    },
+    "levelRubric": []
+  },
+  "commonErrors": [
+    {
+      "description": "Using a gram reading as though it were kilograms.",
+      "origin": "scheme",
+      "sourceRefs": [
+        {
+          "documentId": "4PH1-2024-June-1-standard-ms",
+          "pdfPages": [
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Dividing by g instead of multiplying for weight.",
+      "origin": "editorial",
+      "sourceRefs": []
+    }
+  ],
+  "validation": {
+    "ruleIds": [
+      "gram-domain",
+      "explicit-g",
+      "displayed-readings",
+      "weight-relation",
+      "private-solution",
+      "deterministic-seed",
+      "two-mark-total"
+    ],
+    "testPlan": [
+      "200 deterministic seeds; both representations, all g values and all contexts.",
+      "Independent exact-answer fixtures including original permitted g values, unit boundaries and decimal cases.",
+      "Reject altered public/private content, unsupported g, mass boundaries and activation flags.",
+      "Before promotion calibrate method/ECF, clear power-of-ten errors, units, rounding, contradictory answers and complete final-answer-only responses.",
+      "36 hand-authored explicit-product response fixtures: exact evaluation, method-only, one mass power-of-ten deduction and conservative review routing. Not real-student calibration."
+    ],
+    "testedSeeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      190,
+      191,
+      192,
+      193,
+      194,
+      195,
+      196,
+      197,
+      198,
+      199
+    ],
+    "boundaryCoverage": "complete",
+    "status": "not-run",
+    "runRefs": [
+      "research/validation/2026-09-19-weight-prototype.json",
+      "research/validation/2026-09-19-weight-marking.json",
+      "research/validation/2026-09-19-weight-demand-review.json"
+    ]
+  },
+  "runtime": {
+    "implemented": true,
+    "generatorId": "weight-conversion-prototype-v1",
+    "seedPolicy": "Unsigned 32-bit seed; bounded deterministic integer parameters. Store full validated package before any future serving; no live integration.",
+    "maxRetries": 0,
+    "publicFields": [
+      "prompt",
+      "stimulus",
+      "maximumMarks"
+    ],
+    "privateFields": [
+      "seed",
+      "parameters",
+      "sourceTasks",
+      "solution",
+      "rubric",
+      "validationResults"
+    ],
+    "freezeBeforeAnswer": true,
+    "releaseSchemeAfter": "session-completed"
+  },
+  "review": {
+    "pedagogyStatus": "pending",
+    "reviewer": "Codex Astra",
+    "reviewerType": "agent",
+    "humanReviewed": false,
+    "blockers": [
+      "Arithmetic checks pass for 200 seeds, 108 boundary/context cases and 12 independent-answer/presentation fixtures; pedagogical validation remains incomplete.",
+      "A bounded offline explicit-product marker passes 36 synthetic fixtures (20 scored, 16 deferred). Rounding, implied method, competing working, arbitrary errors and free-text interpretation remain uncalibrated.",
+      "Explicit g and prose/table adaptations have a recorded source-demand review but no empirical difficulty equivalence; alternative-g answers are deferred.",
+      "Official per-task AO allocation unverified; not registered for live sessions."
+    ]
+  }
+}

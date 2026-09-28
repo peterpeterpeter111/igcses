@@ -6,6 +6,54 @@ import { reviewedInventories } from '../lib/syllabus.ts';
 import visualAudit from '../research/reviews/2026-09-10-physics-visual-audit.json' with { type: 'json' };
 import leafIndex from '../research/reviews/2026-09-10-physics-leaf-index.json' with { type: 'json' };
 
+void test('normalized paper progress distinguishes complete records from processed status', async () => {
+  const { execFileSync } = await import('node:child_process');
+  const report = JSON.parse(execFileSync('python3', ['-c', `import csv,json
+from pathlib import Path
+p=Path('research/ledger/v1')
+print(json.dumps({name:list(csv.DictReader((p/(name+'.csv')).open())) for name in ['papers','template-links']}))`], { encoding: 'utf8' }));
+  const row = report.papers.find((r: Record<string, string>) => r.paper_id === extracted.paperId);
+  assert.equal(row.stage, 'extracted');
+  assert.equal(extracted.paperStage, row.stage);
+  for (const key of ['expected_leaf_tasks', 'indexed_leaf_tasks', 'extracted_leaf_tasks']) assert.equal(Number(row[key]), 51);
+  assert.equal(row.template_links_complete, 'false');
+  assert.equal(row.updated_at, extracted.paperStageReviewedAt);
+  assert.equal(extracted.fullyProcessed, false);
+  const taskIds = new Set(extracted.tasks.map((t) => t.taskId));
+  const linked = new Set(report['template-links'].filter((r: Record<string, string>) => taskIds.has(r.task_id)).map((r: Record<string, string>) => r.task_id));
+  assert.equal(taskIds.size - linked.size, 49);
+  assert.ok(extracted.blockers.some((b) => b.includes('49 of 51')));
+  assert.ok(!extracted.blockers.some((b) => /validated-template|No examiner report/.test(b)));
+  assert.ok(extracted.processingNotes.some((n) => n.includes('absent report')));
+});
+
+void test('exporter refuses incomplete, duplicated, unreconciled or processed overlays before any write', async () => {
+  const { execFileSync } = await import('node:child_process');
+  const result = JSON.parse(execFileSync('python3', ['-c', `import copy,json,subprocess,tempfile
+from pathlib import Path
+root=Path.cwd(); data=json.loads((root/'research/extractions/4PH1-2024-June-1-standard.json').read_text())
+before={p:p.read_bytes() for p in (root/'research/ledger/v1').glob('*.csv')}
+cases=[]
+for mode in ['missing','duplicate','marks','hash','processed','flag']:
+ m=copy.deepcopy(data)
+ if mode=='missing':m['tasks'].pop()
+ elif mode=='duplicate':m['tasks'][-1]=m['tasks'][0]
+ elif mode=='marks':m['tasks'][0]['originalMarks']+=1
+ elif mode=='hash':m['documents'][0]['sha256']='wrong'
+ elif mode=='processed':m['paperStage']='processed'
+ elif mode=='flag':m['fullyProcessed']=True
+ with tempfile.NamedTemporaryFile(mode='w',suffix='.json',dir=root/'research/extractions',delete=False) as f:
+  json.dump(m,f); path=Path(f.name)
+ try:
+  run=subprocess.run(['python3','scripts/export-extraction-ledger.py',str(path)],capture_output=True)
+  assert run.returncode!=0,mode
+  assert all(p.read_bytes()==b for p,b in before.items()),mode
+  cases.append(mode)
+ finally:path.unlink()
+print(json.dumps(cases))`], { encoding: 'utf8' }));
+  assert.equal(result.length, 6);
+});
+
 void test('text leaf index reconciles all 110 marks without promoting processing status', () => {
   assert.equal(leafIndex.indexedLeafCount, leafIndex.tasks.length);
   assert.equal(new Set(leafIndex.tasks.map((t) => t.taskId)).size, 51);

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="850" viewBox="0 0 720 850" role="img" aria-labelledby="title desc">
+<title id="title">Mitosis in a model cell with four chromosomes</title>
+<desc id="desc">Four stages show four duplicated chromosomes condensing, aligning, separating their sister chromatids, and forming two nuclei with four chromosomes each. DNA replication happened before these stages. The cell outline, spindle and chromosome positions are simplified, not microscope images.</desc>
+<defs>
+<g id="x" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="M-9 -10L9 10M9 -10L-9 10"/><circle r="2.5" fill="currentColor" stroke="none"/></g>
+<g id="left" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"><path d="M10 -6L0 0L10 6"/></g>
+<g id="right" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"><path d="M-10 -6L0 0L-10 6"/></g>
+</defs>
+<rect width="720" height="850" fill="#faf5ec"/>
+<text x="30" y="40" font-family="Georgia,serif" font-size="25" fill="#332b29">One chromosome set, copied faithfully</text>
+<g font-family="Arial,sans-serif" font-size="17" fill="#473b35"><text x="30" y="72">Model diploid cell: 4 chromosomes · DNA already replicated</text></g>
+<g fill="none" stroke="#aa9584" stroke-width="2"><ellipse cx="160" cy="168" rx="108" ry="70"/><ellipse cx="160" cy="347" rx="108" ry="70"/><ellipse cx="160" cy="526" rx="108" ry="70"/><ellipse cx="160" cy="705" rx="108" ry="70"/></g>
+<ellipse cx="160" cy="168" rx="73" ry="49" fill="none" stroke="#aa9584" stroke-dasharray="6 5"/>
+<g color="#812e3c"><use href="#x" x="125" y="150"/><use href="#x" x="185" y="185"/></g>
+<g color="#95682f"><use href="#x" x="182" y="145"/><use href="#x" x="134" y="186"/></g>
+<g stroke="#c2b19e" stroke-width="1.2" fill="none"><path d="M65 347L160 306L255 347M65 347L160 334L255 347M65 347L160 362L255 347M65 347L160 390L255 347"/><path d="M65 526L117 496M65 526L117 516M65 526L117 536M65 526L117 556M255 526L203 496M255 526L203 516M255 526L203 536M255 526L203 556"/></g>
+<path d="M160 284V410" fill="none" stroke="#d4bbaa" stroke-dasharray="3 5"/>
+<g color="#812e3c"><use href="#x" x="160" y="306"/><use href="#x" x="160" y="334"/><use href="#left" x="117" y="496"/><use href="#left" x="117" y="516"/><use href="#right" x="203" y="496"/><use href="#right" x="203" y="516"/></g>
+<g color="#95682f"><use href="#x" x="160" y="362"/><use href="#x" x="160" y="390"/><use href="#left" x="117" y="536"/><use href="#left" x="117" y="556"/><use href="#right" x="203" y="536"/><use href="#right" x="203" y="556"/></g>
+<g fill="none" stroke="#aa9584" stroke-width="2"><ellipse cx="112" cy="705" rx="37" ry="43"/><ellipse cx="208" cy="705" rx="37" ry="43"/></g>
+<g fill="none" stroke-width="3.5" stroke-linecap="round"><path d="M94 682Q104 689 99 702M112 682Q122 689 117 702M190 682Q200 689 195 702M208 682Q218 689 213 702" stroke="#812e3c"/><path d="M96 713Q106 720 101 733M114 713Q124 720 119 733M192 713Q202 720 197 733M210 713Q220 720 215 733" stroke="#95682f"/></g>
+<g font-family="Georgia,serif" font-size="23" fill="#332b29"><text x="307" y="140">1 · Prophase</text><text x="307" y="319">2 · Metaphase</text><text x="307" y="498">3 · Anaphase</text><text x="307" y="677">4 · Telophase</text></g>
+<g font-family="Arial,sans-serif" font-size="18" fill="#473b35">
+<text x="307" y="173">Chromosomes condense.</text><text x="307" y="199">Each X has two sister chromatids.</text>
+<text x="307" y="352">Four duplicated chromosomes</text><text x="307" y="378">line up at the equator.</text>
+<text x="307" y="531">Sister chromatids separate.</text><text x="307" y="557">Four move to each pole.</text>
+<text x="307" y="710">Two nuclei form.</text><text x="307" y="736">Each receives four chromosomes.</text>
+<text x="30" y="803">Cytokinesis separates the daughter cells. Both remain diploid.</text><text x="30" y="829" font-size="15">Schematic, not a micrograph. Colours trace chromosomes; shapes are simplified.</text>
+</g>
+</svg>

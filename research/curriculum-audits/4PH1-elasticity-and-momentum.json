@@ -1,0 +1,526 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4PH1",
+  "chapterId": "forces-and-motion",
+  "documentId": "4PH1-spec",
+  "specificationIssue": "Issue 4 - September 2024",
+  "documentSha256": "bac4b8312d4fbfc84672f909100d66b2b3cda0b25e98c0d11bbc7366dae482b2",
+  "reviewDate": "2026-09-19",
+  "reviewer": "Codex Astra",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Bounded source-clause decomposition of 1.22–1.33P, visually checked against specification PDF pages 18–19 / printed 12–13. Covers practical/elasticity and Paper 2 mechanics. Teaching remains partial and independent assessment-family review remains outstanding.",
+  "identifierPolicy": "Requirement suffixes r1, r2, etc. are local editorial audit identifiers; only the parent reference is publisher-numbered.",
+  "notePath": "content/notes/physics.json",
+  "parents": [
+    {
+      "parentId": "4PH1:issue4:1.22",
+      "officialReference": "1.22",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "All three named materials are required practical contexts, not alternatives introduced by “such as”.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.22:r1",
+          "origin": "source-clause",
+          "summary": "Investigate how a helical spring’s extension changes with applied force.",
+          "teachingEvidence": [
+            {
+              "sectionId": "force-extension",
+              "field": "practical"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Review a complete spring results table, repeats and graph interpretation, including reference load.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:1.22:r2",
+          "origin": "source-clause",
+          "summary": "Investigate extension against applied force for a metal wire.",
+          "teachingEvidence": [
+            {
+              "sectionId": "force-extension",
+              "field": "practical"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate a wire-specific planning/results task addressing small extensions, safe loads and preload.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:1.22:r3",
+          "origin": "source-clause",
+          "summary": "Investigate extension against applied force for a rubber band.",
+          "teachingEvidence": [
+            {
+              "sectionId": "force-extension",
+              "field": "practical"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Review a rubber-band results task without assuming proportionality or identical loading/unloading paths.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:1.23",
+      "officialReference": "1.23",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Graph interpretation is required; F = kx in the notes is supporting teaching rather than a separately numbered source clause.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.23:r1",
+          "origin": "source-clause",
+          "summary": "Recognise the initial proportional force–extension region as Hooke’s-law behaviour.",
+          "teachingEvidence": [
+            {
+              "sectionId": "force-extension",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check unseen data/graphs, origin consistency and the end of the linear region.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:1.24",
+      "officialReference": "1.24",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Elastic recovery is distinct from direct proportionality.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.24:r1",
+          "origin": "source-clause",
+          "summary": "Explain elastic behaviour by recovery of the original shape after the deforming force is removed.",
+          "teachingEvidence": [
+            {
+              "sectionId": "force-extension",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate recovery explanations for unfamiliar shapes and materials, independently of Hooke’s law.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:1.25P",
+      "officialReference": "1.25P",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Local recall/use subdivisions preserve one publisher parent and Paper 2-only applicability.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.25P:r1",
+          "origin": "source-clause",
+          "summary": "Know the momentum–mass–velocity relationship.",
+          "teachingEvidence": [
+            {
+              "sectionId": "momentum-conservation",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate independent recall and vector/unit distinctions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:1.25P:r2",
+          "origin": "source-clause",
+          "summary": "Use momentum = mass × velocity.",
+          "teachingEvidence": [
+            {
+              "sectionId": "finding-mass-and-recoil",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate forward and inverse calculations with unit conversions and signed velocities.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:1.26P",
+      "officialReference": "1.26P",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "The source asks for safety explanations using momentum; the notes distinguish pressure from the momentum argument.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.26P:r1",
+          "origin": "source-clause",
+          "summary": "Use momentum change to explain safety features.",
+          "teachingEvidence": [
+            {
+              "sectionId": "momentum-and-safety",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Review independent explanations across belts, airbags and crumple zones with fixed initial/final velocities.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:1.27P",
+      "officialReference": "1.27P",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Mass, velocity and momentum are explicit target quantities in one source statement, recorded as local audit requirements.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.27P:r1",
+          "origin": "source-clause",
+          "summary": "Use conservation of momentum to determine an object’s mass.",
+          "teachingEvidence": [
+            {
+              "sectionId": "finding-mass-and-recoil",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate unseen inverse-mass collisions, including physically admissible givens and system assumptions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:1.27P:r2",
+          "origin": "source-clause",
+          "summary": "Use conservation of momentum to determine velocity.",
+          "teachingEvidence": [
+            {
+              "sectionId": "momentum-conservation",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate both sticking and separating-object cases with explicit external-force assumptions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:1.27P:r3",
+          "origin": "source-clause",
+          "summary": "Use conservation of momentum to determine momentum.",
+          "teachingEvidence": [
+            {
+              "sectionId": "finding-mass-and-recoil",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate missing-momentum tasks with non-zero initial system momentum as well as recoil from rest.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:1.28P",
+      "officialReference": "1.28P",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Know/use are local demand subdivisions; force is the average resultant over the interval for a constant-mass object.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.28P:r1",
+          "origin": "source-clause",
+          "summary": "Know force as change in momentum divided by time.",
+          "teachingEvidence": [
+            {
+              "sectionId": "momentum-and-safety",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate independent formula recall and distinction between average and peak force.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:1.28P:r2",
+          "origin": "source-clause",
+          "summary": "Use F = (mv − mu)/t with consistent directions.",
+          "teachingEvidence": [
+            {
+              "sectionId": "force-during-a-rebound",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate signed rebound calculations, inverse time and interpretations of contact versus resultant force.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:1.29P",
+      "officialReference": "1.29P",
+      "pdfPage": 19,
+      "printedPage": 13,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Interaction partners, simultaneous forces and different objects unpack one understanding requirement.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.29P:r1",
+          "origin": "source-clause",
+          "summary": "Explain and identify Newton’s third-law force pairs.",
+          "teachingEvidence": [
+            {
+              "sectionId": "newtons-third-law",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate unfamiliar contact/gravitational pairs and distinguish equilibrium forces on one object.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:1.30P",
+      "officialReference": "1.30P",
+      "pdfPage": 19,
+      "printedPage": 13,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Know/use are local subdivisions; perpendicular distance is to the force’s line of action.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.30P:r1",
+          "origin": "source-clause",
+          "summary": "Know moment = force × perpendicular distance from the pivot.",
+          "teachingEvidence": [
+            {
+              "sectionId": "moments-and-equilibrium",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate formula recall and identification of the perpendicular distance from a diagram.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:1.30P:r2",
+          "origin": "source-clause",
+          "summary": "Calculate moments using force and perpendicular distance.",
+          "teachingEvidence": [
+            {
+              "sectionId": "moments-and-equilibrium",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate inverse force/distance, non-perpendicular force drawings and zero-moment cases.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:1.31P",
+      "officialReference": "1.31P",
+      "pdfPage": 19,
+      "printedPage": 13,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "The source requires the weight’s line of action through the centre of gravity; it does not require a centre-of-gravity practical here.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.31P:r1",
+          "origin": "source-clause",
+          "summary": "Recognise that an object’s weight acts through its centre of gravity.",
+          "teachingEvidence": [
+            {
+              "sectionId": "moments-and-equilibrium",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Review force diagrams of non-uniform objects with given centres of gravity; do not assume geometric centre.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:1.32P",
+      "officialReference": "1.32P",
+      "pdfPage": 19,
+      "printedPage": 13,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "The source limits this principle-of-moments requirement to a simple coplanar parallel-force system.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.32P:r1",
+          "origin": "source-clause",
+          "summary": "Apply the principle of moments to parallel forces in one plane.",
+          "teachingEvidence": [
+            {
+              "sectionId": "moments-and-equilibrium",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate multiple-force equilibrium and explicit treatment of a beam’s own weight when relevant.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:1.33P",
+      "officialReference": "1.33P",
+      "pdfPage": 19,
+      "printedPage": 13,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "The beam is light and supported at both ends; end-load limits in the notes are ideal-model limits.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:1.33P:r1",
+          "origin": "source-clause",
+          "summary": "Explain how moving a heavy load changes the upward forces at the ends of a light beam.",
+          "teachingEvidence": [
+            {
+              "sectionId": "supported-beams",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate qualitative position/reaction graphs and limit cases, preserving light-beam and support assumptions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    }
+  ],
+  "completeTeachingPoints": 0,
+  "completeChapters": 0,
+  "teachingUpdatedAt": "2026-09-19"
+}

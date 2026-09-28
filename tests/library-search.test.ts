@@ -25,6 +25,12 @@ void test('library search tolerates a single typo in a long term', () => {
   );
 });
 
+void test('specific graph searches reach the new teaching without displacing the core topic', () => {
+  assert.ok(searchLibrary(physics, 'tangent')[0]?.href.endsWith('#tangent-acceleration'));
+  assert.ok(searchLibrary(physics, 'trapezium rule')[0]?.href.endsWith('#estimating-curved-area'));
+  assert.ok(searchLibrary(physics, ' ACCELERATION ')[0]?.href.endsWith('#acceleration'));
+});
+
 void test('empty and punctuation-only queries are deterministic no-ops', () => {
   assert.deepEqual(searchLibrary(physics, ''), []);
   assert.deepEqual(searchLibrary(physics, '!!!'), []);

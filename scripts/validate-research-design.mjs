@@ -49,12 +49,14 @@ check(
   },
 );
 check(
-  'Physics prototype links its extracted task and student answer guide',
+  'Implemented Physics prototypes link their extracted tasks and student answer guides',
   () => {
-    const family = templates.find((t) => t.id === '4PH1.collinear-resultant');
+    const implemented = templates.filter((t) => t.subject === '4PH1' && t.runtime.implemented);
+    assert.equal(implemented.length, 2);
     const extraction = read(
       'research/extractions/4PH1-2024-June-1-standard.json',
     );
+    for (const family of implemented) {
     const source = family.sourceTasks[0];
     const task = extraction.tasks.find((t) => t.taskId === source.taskId);
     assert(task);
@@ -71,6 +73,7 @@ check(
     assert.equal(family.status, 'provisional');
     assert.equal(family.runtime.implemented, true);
     assert.deepEqual(family.customQuiz.validatedMarks, []);
+    }
   },
 );
 check('Untested family cannot be promoted to active', () => {

@@ -1,0 +1,25 @@
+import motion from '../research/curriculum-audits/4PH1-motion-foundations.json' with { type: 'json' };
+import forces from '../research/curriculum-audits/4PH1-forces-foundations.json' with { type: 'json' };
+import mechanics from '../research/curriculum-audits/4PH1-elasticity-and-momentum.json' with { type: 'json' };
+import waves from '../research/curriculum-audits/4PH1-waves.json' with { type: 'json' };
+import energy from '../research/curriculum-audits/4PH1-energy.json' with { type: 'json' };
+import matter from '../research/curriculum-audits/4PH1-matter.json' with { type: 'json' };
+import magnetism from '../research/curriculum-audits/4PH1-magnetism.json' with { type: 'json' };
+import radioactivity from '../research/curriculum-audits/4PH1-radioactivity.json' with { type: 'json' };
+import electricity from '../research/curriculum-audits/4PH1-electricity-foundations.json' with { type: 'json' };
+import electricityCircuits from '../research/curriculum-audits/4PH1-electricity-circuits-and-charge.json' with { type: 'json' };
+import astrophysics from '../research/curriculum-audits/4PH1-astrophysics.json' with { type: 'json' };
+import biologyLiving from '../research/curriculum-audits/4BI1-living-organisms.json' with { type: 'json' };
+
+import humanCells from '../research/curriculum-audits/4HB1-cells-foundations.json' with { type: 'json' };
+
+import humanTissues from '../research/curriculum-audits/4HB1-cells-tissues-rest.json' with { type: 'json' };
+
+import chemistryStates from '../research/curriculum-audits/4CH1-states-and-mixtures.json' with { type: 'json' };
+
+import chemistryAtoms from '../research/curriculum-audits/4CH1-atoms-and-periodic-table.json' with { type: 'json' };
+
+import mathsNumber from '../research/curriculum-audits/4MB1-number.json' with { type: 'json' };
+
+// These bounded audits link partial teaching; they do not promote completion.
+export const curriculumAudits = [motion, forces, mechanics, waves, energy, matter, magnetism, radioactivity, electricity, electricityCircuits, astrophysics, biologyLiving, humanCells, humanTissues, chemistryStates, chemistryAtoms, mathsNumber];

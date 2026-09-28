@@ -1,0 +1,1003 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-09-20T16:29:34.191Z",
+  "familyId": "4PH1.collinear-resultant",
+  "version": "0.1.0",
+  "command": "node --experimental-strip-types scripts/check-resultant-marking.ts",
+  "sourceHashes": {
+    "server/generators/collinear-resultant.ts": "871f67962900fa6e93d2375cd17d27c49403aae6bff8d6ac8c49079c95cc6853",
+    "server/generators/resultant-marking.ts": "82b5c9f8c3741fbe4b771a386ce6b6e0117fcb81445e4bb6738018af71256516",
+    "research/validation/resultant-marking-cases.json": "9695a4852bf3158af60b2cab45273f5a229d7c32f958779cf733618a7cd2193c",
+    "research/validation/resultant-structure-cases.json": "c7d91ba8d7b16203d6da46e74b66b01265d25a34f42a028b388a47e6221edec9"
+  },
+  "deterministicSeeds": 200,
+  "structuralCombinations": 16,
+  "calibration": {
+    "cases": 39,
+    "passed": 39,
+    "deferred": 13,
+    "scope": "Separate final magnitude and direction fields only. Hand-authored synthetic examples; no real student-response calibration or general free-text grading.",
+    "results": [
+      {
+        "id": "source-correct",
+        "passed": true,
+        "expectedScore": 2,
+        "actualScore": 2,
+        "status": "scored"
+      },
+      {
+        "id": "equivalent-decimal",
+        "passed": true,
+        "expectedScore": 2,
+        "actualScore": 2,
+        "status": "scored"
+      },
+      {
+        "id": "arrow",
+        "passed": true,
+        "expectedScore": 2,
+        "actualScore": 2,
+        "status": "scored"
+      },
+      {
+        "id": "scientific-notation",
+        "passed": true,
+        "expectedScore": 2,
+        "actualScore": 2,
+        "status": "scored"
+      },
+      {
+        "id": "converted-millinewton",
+        "passed": true,
+        "expectedScore": 2,
+        "actualScore": 2,
+        "status": "scored"
+      },
+      {
+        "id": "converted-kilonewton",
+        "passed": true,
+        "expectedScore": 2,
+        "actualScore": 2,
+        "status": "scored"
+      },
+      {
+        "id": "source-no-north",
+        "passed": true,
+        "expectedScore": 1,
+        "actualScore": 1,
+        "status": "scored"
+      },
+      {
+        "id": "wrong-magnitude",
+        "passed": true,
+        "expectedScore": 1,
+        "actualScore": 1,
+        "status": "scored"
+      },
+      {
+        "id": "wrong-direction",
+        "passed": true,
+        "expectedScore": 1,
+        "actualScore": 1,
+        "status": "scored"
+      },
+      {
+        "id": "both-wrong",
+        "passed": true,
+        "expectedScore": 0,
+        "actualScore": 0,
+        "status": "scored"
+      },
+      {
+        "id": "blank",
+        "passed": true,
+        "expectedScore": 0,
+        "actualScore": 0,
+        "status": "scored"
+      },
+      {
+        "id": "magnitude-only",
+        "passed": true,
+        "expectedScore": 1,
+        "actualScore": 1,
+        "status": "scored"
+      },
+      {
+        "id": "direction-only",
+        "passed": true,
+        "expectedScore": 1,
+        "actualScore": 1,
+        "status": "scored"
+      },
+      {
+        "id": "downward-resultant",
+        "passed": true,
+        "expectedScore": 2,
+        "actualScore": 2,
+        "status": "scored"
+      },
+      {
+        "id": "horizontal-resultant",
+        "passed": true,
+        "expectedScore": 2,
+        "actualScore": 2,
+        "status": "scored"
+      },
+      {
+        "id": "horizontal-reversed",
+        "passed": true,
+        "expectedScore": 2,
+        "actualScore": 2,
+        "status": "scored"
+      },
+      {
+        "id": "inverse-target",
+        "passed": true,
+        "expectedScore": 2,
+        "actualScore": 2,
+        "status": "scored"
+      },
+      {
+        "id": "inverse-net-mistake",
+        "passed": true,
+        "expectedScore": 1,
+        "actualScore": 1,
+        "status": "scored"
+      },
+      {
+        "id": "three-forces",
+        "passed": true,
+        "expectedScore": 2,
+        "actualScore": 2,
+        "status": "scored"
+      },
+      {
+        "id": "three-inverse",
+        "passed": true,
+        "expectedScore": 2,
+        "actualScore": 2,
+        "status": "scored"
+      },
+      {
+        "id": "extra-digit-error",
+        "passed": true,
+        "expectedScore": 1,
+        "actualScore": 1,
+        "status": "scored"
+      },
+      {
+        "id": "competing-magnitudes",
+        "passed": true,
+        "expectedScore": null,
+        "actualScore": null,
+        "status": "needs-review"
+      },
+      {
+        "id": "competing-directions",
+        "passed": true,
+        "expectedScore": null,
+        "actualScore": null,
+        "status": "needs-review"
+      },
+      {
+        "id": "signed-magnitude",
+        "passed": true,
+        "expectedScore": null,
+        "actualScore": null,
+        "status": "needs-review"
+      },
+      {
+        "id": "explanation-in-field",
+        "passed": true,
+        "expectedScore": null,
+        "actualScore": null,
+        "status": "needs-review"
+      },
+      {
+        "id": "wrong-unit",
+        "passed": true,
+        "expectedScore": null,
+        "actualScore": null,
+        "status": "needs-review"
+      },
+      {
+        "id": "nonfinite",
+        "passed": true,
+        "expectedScore": null,
+        "actualScore": null,
+        "status": "needs-review"
+      },
+      {
+        "id": "prompt-injection",
+        "passed": true,
+        "expectedScore": null,
+        "actualScore": null,
+        "status": "needs-review"
+      },
+      {
+        "id": "decimal-beyond-double-precision",
+        "passed": true,
+        "expectedScore": 1,
+        "actualScore": 1,
+        "status": "scored"
+      },
+      {
+        "id": "decimal-just-below",
+        "passed": true,
+        "expectedScore": 1,
+        "actualScore": 1,
+        "status": "scored"
+      },
+      {
+        "id": "many-trailing-zeroes",
+        "passed": true,
+        "expectedScore": 2,
+        "actualScore": 2,
+        "status": "scored"
+      },
+      {
+        "id": "exponent-with-prefix",
+        "passed": true,
+        "expectedScore": 2,
+        "actualScore": 2,
+        "status": "scored"
+      },
+      {
+        "id": "subnormal-notation",
+        "passed": true,
+        "expectedScore": null,
+        "actualScore": null,
+        "status": "needs-review"
+      },
+      {
+        "id": "inherited-constructor",
+        "passed": true,
+        "expectedScore": null,
+        "actualScore": null,
+        "status": "needs-review"
+      },
+      {
+        "id": "inherited-prototype",
+        "passed": true,
+        "expectedScore": null,
+        "actualScore": null,
+        "status": "needs-review"
+      },
+      {
+        "id": "exponent-leading-plus",
+        "passed": true,
+        "expectedScore": 2,
+        "actualScore": 2,
+        "status": "scored"
+      },
+      {
+        "id": "extra-field-otherWorking",
+        "passed": true,
+        "expectedScore": null,
+        "actualScore": null,
+        "status": "needs-review"
+      },
+      {
+        "id": "extra-field-alternativeAnswer",
+        "passed": true,
+        "expectedScore": null,
+        "actualScore": null,
+        "status": "needs-review"
+      },
+      {
+        "id": "extra-field-score",
+        "passed": true,
+        "expectedScore": null,
+        "actualScore": null,
+        "status": "needs-review"
+      }
+    ]
+  },
+  "structuralCalibration": {
+    "scope": "Eight independently solved force setups, each shown in prose and table form: 16 structural fixtures with 96 synthetic final-answer outcomes. Expected answers are authored constants, not obtained from the generator. This is arithmetic and bounded rubric calibration, not real-student or difficulty validation.",
+    "fixtures": 16,
+    "outcomes": 96,
+    "deferred": 16,
+    "results": [
+      {
+        "id": "resultant-horizontal-2-prose",
+        "structuralSignature": "resultant:prose:horizontal:2",
+        "passed": true,
+        "outcomes": [
+          {
+            "expectedScore": 2,
+            "actualScore": 2,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": null,
+            "actualScore": null,
+            "status": "needs-review",
+            "passed": true
+          }
+        ]
+      },
+      {
+        "id": "resultant-horizontal-2-table",
+        "structuralSignature": "resultant:table:horizontal:2",
+        "passed": true,
+        "outcomes": [
+          {
+            "expectedScore": 2,
+            "actualScore": 2,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": null,
+            "actualScore": null,
+            "status": "needs-review",
+            "passed": true
+          }
+        ]
+      },
+      {
+        "id": "resultant-vertical-2-prose",
+        "structuralSignature": "resultant:prose:vertical:2",
+        "passed": true,
+        "outcomes": [
+          {
+            "expectedScore": 2,
+            "actualScore": 2,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": null,
+            "actualScore": null,
+            "status": "needs-review",
+            "passed": true
+          }
+        ]
+      },
+      {
+        "id": "resultant-vertical-2-table",
+        "structuralSignature": "resultant:table:vertical:2",
+        "passed": true,
+        "outcomes": [
+          {
+            "expectedScore": 2,
+            "actualScore": 2,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": null,
+            "actualScore": null,
+            "status": "needs-review",
+            "passed": true
+          }
+        ]
+      },
+      {
+        "id": "resultant-horizontal-3-prose",
+        "structuralSignature": "resultant:prose:horizontal:3",
+        "passed": true,
+        "outcomes": [
+          {
+            "expectedScore": 2,
+            "actualScore": 2,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": null,
+            "actualScore": null,
+            "status": "needs-review",
+            "passed": true
+          }
+        ]
+      },
+      {
+        "id": "resultant-horizontal-3-table",
+        "structuralSignature": "resultant:table:horizontal:3",
+        "passed": true,
+        "outcomes": [
+          {
+            "expectedScore": 2,
+            "actualScore": 2,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": null,
+            "actualScore": null,
+            "status": "needs-review",
+            "passed": true
+          }
+        ]
+      },
+      {
+        "id": "resultant-vertical-3-prose",
+        "structuralSignature": "resultant:prose:vertical:3",
+        "passed": true,
+        "outcomes": [
+          {
+            "expectedScore": 2,
+            "actualScore": 2,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": null,
+            "actualScore": null,
+            "status": "needs-review",
+            "passed": true
+          }
+        ]
+      },
+      {
+        "id": "resultant-vertical-3-table",
+        "structuralSignature": "resultant:table:vertical:3",
+        "passed": true,
+        "outcomes": [
+          {
+            "expectedScore": 2,
+            "actualScore": 2,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": null,
+            "actualScore": null,
+            "status": "needs-review",
+            "passed": true
+          }
+        ]
+      },
+      {
+        "id": "missing-force-horizontal-2-prose",
+        "structuralSignature": "missing-force:prose:horizontal:2",
+        "passed": true,
+        "outcomes": [
+          {
+            "expectedScore": 2,
+            "actualScore": 2,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": null,
+            "actualScore": null,
+            "status": "needs-review",
+            "passed": true
+          }
+        ]
+      },
+      {
+        "id": "missing-force-horizontal-2-table",
+        "structuralSignature": "missing-force:table:horizontal:2",
+        "passed": true,
+        "outcomes": [
+          {
+            "expectedScore": 2,
+            "actualScore": 2,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": null,
+            "actualScore": null,
+            "status": "needs-review",
+            "passed": true
+          }
+        ]
+      },
+      {
+        "id": "missing-force-vertical-2-prose",
+        "structuralSignature": "missing-force:prose:vertical:2",
+        "passed": true,
+        "outcomes": [
+          {
+            "expectedScore": 2,
+            "actualScore": 2,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": null,
+            "actualScore": null,
+            "status": "needs-review",
+            "passed": true
+          }
+        ]
+      },
+      {
+        "id": "missing-force-vertical-2-table",
+        "structuralSignature": "missing-force:table:vertical:2",
+        "passed": true,
+        "outcomes": [
+          {
+            "expectedScore": 2,
+            "actualScore": 2,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": null,
+            "actualScore": null,
+            "status": "needs-review",
+            "passed": true
+          }
+        ]
+      },
+      {
+        "id": "missing-force-horizontal-3-prose",
+        "structuralSignature": "missing-force:prose:horizontal:3",
+        "passed": true,
+        "outcomes": [
+          {
+            "expectedScore": 2,
+            "actualScore": 2,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": null,
+            "actualScore": null,
+            "status": "needs-review",
+            "passed": true
+          }
+        ]
+      },
+      {
+        "id": "missing-force-horizontal-3-table",
+        "structuralSignature": "missing-force:table:horizontal:3",
+        "passed": true,
+        "outcomes": [
+          {
+            "expectedScore": 2,
+            "actualScore": 2,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": null,
+            "actualScore": null,
+            "status": "needs-review",
+            "passed": true
+          }
+        ]
+      },
+      {
+        "id": "missing-force-vertical-3-prose",
+        "structuralSignature": "missing-force:prose:vertical:3",
+        "passed": true,
+        "outcomes": [
+          {
+            "expectedScore": 2,
+            "actualScore": 2,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": null,
+            "actualScore": null,
+            "status": "needs-review",
+            "passed": true
+          }
+        ]
+      },
+      {
+        "id": "missing-force-vertical-3-table",
+        "structuralSignature": "missing-force:table:vertical:3",
+        "passed": true,
+        "outcomes": [
+          {
+            "expectedScore": 2,
+            "actualScore": 2,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 1,
+            "actualScore": 1,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": 0,
+            "actualScore": 0,
+            "status": "scored",
+            "passed": true
+          },
+          {
+            "expectedScore": null,
+            "actualScore": null,
+            "status": "needs-review",
+            "passed": true
+          }
+        ]
+      }
+    ]
+  },
+  "reviewer": "Codex Astra",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "fullPedagogicalValidation": "partial",
+  "liveEligible": false,
+  "activeTemplates": 0,
+  "blockers": [
+    "Free-text explanation, signed-convention and contradiction interpretation remains deferred.",
+    "Inverse and three-force assessment-demand calibration still needs broader review.",
+    "No live blueprint or final provider integration."
+  ]
+}

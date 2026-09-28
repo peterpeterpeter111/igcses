@@ -1,6 +1,9 @@
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { subjects } from '../content/catalog.ts';
 import { getNotes } from '../content/notes.ts';
+const args = process.argv.slice(2);
+if (args.length && (args.length !== 1 || args[0] !== '--stdout'))
+  throw new Error('Usage: seed-content.ts [--stdout]');
 const read = (p: string) => JSON.parse(readFileSync(p, 'utf8'));
 const quote = (v: unknown) =>
   v === null || v === undefined
@@ -71,10 +74,14 @@ for (const p of read('research/coverage.json')) {
     scope_status: 'candidate',
   });
 }
-mkdirSync('work', { recursive: true });
-writeFileSync('work/seed-content.sql', lines.join('\n') + '\n');
-console.log(
-  'Prepared ' +
-    lines.length +
-    ' content rows; no quiz, user or private question data.',
-);
+const sql = lines.join('\n') + '\n';
+if (args[0] === '--stdout') {
+  // Let isolated checks consume the seed without changing a prepared file.
+  process.stdout.write(sql);
+} else {
+  mkdirSync('work', { recursive: true });
+  writeFileSync('work/seed-content.sql', sql);
+  console.log(
+    'Prepared ' + lines.length + ' content rows; no quiz, user or private question data.',
+  );
+}

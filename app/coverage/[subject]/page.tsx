@@ -11,6 +11,8 @@ import {
 import sources from '@/research/sources.json';
 import { reviewedInventories } from '@/lib/syllabus';
 import physicsSkills from '@/research/syllabus-skills/4PH1-issue4.json';
+import { curriculumAudits } from '@/lib/curriculum';
+import { obtainedPaperCandidates } from '@/lib/paper-discovery';
 export default async function SubjectCoverage({
   params,
 }: {
@@ -19,6 +21,9 @@ export default async function SubjectCoverage({
   const { subject: id } = await params,
     s = getSubject(id);
   if (!s) notFound();
+  const auditedParents = curriculumAudits
+    .filter((audit) => audit.qualification === s.code)
+    .flatMap((audit) => audit.parents.map((parent) => ({ ...parent, chapterId: audit.chapterId })));
   const points = pointCandidates.filter((x) => x.qualification === s.code),
     source = sources.find((x) => x.qualification === s.code)!;
   return (
@@ -56,7 +61,7 @@ export default async function SubjectCoverage({
                   {r.extraction.detailedTasks} question parts (
                   {r.extraction.originalMarks} original marks) reviewed across
                   Questions {r.extraction.reviewedQuestions.join(' and ')}.
-                  Detailed extraction: {r.extraction.detailedTasks} of{' '}
+                  Detailed records: {r.extraction.detailedTasks} of{' '}
                   {r.extraction.expectedTasks ?? 'an unconfirmed number of'}{' '}
                   parts. Zero fully processed papers.
                 </p>
@@ -65,6 +70,14 @@ export default async function SubjectCoverage({
                   <ul className="plain-list">
                     {r.extraction.blockers.map((blocker) => (
                       <li key={blocker}>{blocker}</li>
+                    ))}
+                  </ul>
+                </details>
+                <details>
+                  <summary>Processing status notes</summary>
+                  <ul className="plain-list">
+                    {r.extraction.notes.map((note) => (
+                      <li key={note}>{note}</li>
                     ))}
                   </ul>
                 </details>
@@ -97,6 +110,28 @@ export default async function SubjectCoverage({
             </p>
           </section>
         ))}
+        {obtainedPaperCandidates(s.code).map((record) => (
+          <section className="evidence-row" key={record.id}>
+            <h3>{record.label}</h3>
+            <p>Obtained only · identity and pairing review pending</p>
+            <p>
+              Both official Pearson PDFs were downloaded and hashed. No tasks
+              indexed, no detailed extraction and no fully processed paper.
+            </p>
+            <p>
+              <a href={record.questionPaper.url} target="_blank" rel="noreferrer">
+                Question paper ({record.questionPaper.pageCount} pages) ↗
+              </a>
+              {' · '}
+              <a href={record.markScheme.url} target="_blank" rel="noreferrer">
+                Mark scheme ({record.markScheme.pageCount} pages) ↗
+              </a>
+            </p>
+            <ul className="plain-list">
+              {record.limitations.map((limitation) => <li key={limitation}>{limitation}</li>)}
+            </ul>
+          </section>
+        ))}
         {s.code === '4EB1' && (
           <p>
             Also obtained: November 2024 paper 01, its scheme and examiner
@@ -115,17 +150,14 @@ export default async function SubjectCoverage({
               These are separate from the numbered content statements below.
             </p>
             <p>
-              Question 10 has skill links for all {physicsSkills.taskMappings.length} parts.
-              Other questions still need this review. These links do not establish
+              All {physicsSkills.taskMappings.length} parts of the obtained Physics paper
+              have a skill-demand review: {physicsSkills.taskMappings.filter((row) => row.mappings.length > 0).length}
+              {' '}have relevant skill links, while{' '}
+              {physicsSkills.taskMappings.filter((row) => row.mappings.length === 0).length}
+              {' '}have no separate listed skill demand. These decisions do not establish
               official assessment-objective marks or complete teaching coverage.
             </p>
           </section>
-        )}
-        {s.code === '4MB1' && (
-          <p>
-            No Mathematics B paper pair has been catalogued. Source discovery
-            remains open.
-          </p>
         )}
         {reviewedInventories
           .filter((inventory) => inventory.qualification === s.code)
@@ -197,6 +229,57 @@ export default async function SubjectCoverage({
               </details>
             </section>
           ))}
+        {auditedParents.length > 0 && (
+          <section>
+            <h2>Curriculum requirements audit</h2>
+            <p>
+              {auditedParents.length} specification statements have been separated into{' '}
+              {auditedParents.reduce((n, parent) => n + parent.requirements.length, 0)}
+              {' '}local teaching requirements. Their explanations are linked, but teaching
+              and assessment checks remain partial. No point or chapter is complete.
+            </p>
+            {s.id === 'physics' && <p>
+              Examples of linked teaching include a{' '}
+              <Link href="/subjects/physics/forces-and-motion#plotting-motion-data">
+                worked motion-graph exercise
+              </Link>{' '}and{' '}
+              <Link href="/subjects/physics/forces-and-motion#choosing-force-equations">
+                force-equation practice
+              </Link>, plus{' '}
+              <Link href="/subjects/physics/waves#reading-wave-records">
+                distance and time readings for waves
+              </Link>.
+            </p>}
+            <details>
+              <summary>Inspect remaining teaching checks</summary>
+              <ul className="plain-list">
+                {auditedParents.map((parent) => {
+                  const chapterNotes = getNotes(s.id, parent.chapterId);
+                  const sections = [...new Set(parent.requirements.flatMap((requirement) =>
+                    requirement.teachingEvidence.map((evidence) => evidence.sectionId),
+                  ))];
+                  return (
+                    <li key={parent.parentId}>
+                      <strong>{parent.officialReference}</strong>: {' '}
+                      {parent.requirements.map((requirement) => requirement.remainingChecks[0]).join(' ')}
+                      <p>
+                        Partial teaching:{' '}
+                        {sections.map((sectionId, index) => (
+                          <span key={sectionId}>
+                            {index > 0 ? ' · ' : ''}
+                            <Link href={`/subjects/${s.id}/${parent.chapterId}#${sectionId}`}>
+                              {chapterNotes?.sections.find((section) => section.id === sectionId)?.title ?? sectionId}
+                            </Link>
+                          </span>
+                        ))}
+                      </p>
+                    </li>
+                  );
+                })}
+              </ul>
+            </details>
+          </section>
+        )}
         <h2>Raw specification candidates</h2>
         <p>
           The original extraction below is retained for comparison with reviewed
@@ -205,7 +288,11 @@ export default async function SubjectCoverage({
           separate auditing.
         </p>
         {!points.length ? (
-          <p>The full skill/statement inventory is pending.</p>
+          <p>
+            The original automatic extraction contains no candidate rows for this
+            subject. Reviewed rows, where available, are listed above; the wider
+            skill and statement inventory remains incomplete.
+          </p>
         ) : (
           <details>
             <summary>Inspect {points.length} candidate references</summary>

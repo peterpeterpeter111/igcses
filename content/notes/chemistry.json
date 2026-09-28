@@ -3,14 +3,20 @@
   "chapterId": "principles",
   "sourceId": "4CH1-spec",
   "sourcePages": [
-    17
+    17,
+    18
   ],
   "prerequisites": [
     "Matter is made of particles; a model represents selected features of reality."
   ],
   "goals": [
     "Describe solids, liquids and gases using arrangement, movement and energy.",
-    "Explain a change of state without claiming the particles themselves melt."
+    "Explain a change of state without claiming the particles themselves melt.",
+    "Interpret solubility data using mass of solvent rather than solution.",
+    "Choose separation methods from the properties of a mixture.",
+    "Calculate and interpret chromatographic Rf values under stated conditions.",
+    "Calculate particle counts and relative atomic mass from isotope data.",
+    "Use electronic configuration to explain main-group positions."
   ],
   "sections": [
     {
@@ -49,6 +55,702 @@
         "answer": "The particles gain average kinetic energy and move faster on average. They continue moving randomly; the particles themselves do not grow larger.",
         "explanation": "Temperature is connected to average particle energy. A fixed container volume does not prevent particle speed from increasing."
       }
+    },
+    {
+      "id": "dilution-and-diffusion",
+      "title": "Dilution and diffusion: explaining observations",
+      "points": [
+        "1.3"
+      ],
+      "paragraphs": [
+        "Adding more solvent to a coloured solution makes the colour paler if the same amount of dissolved coloured substance is spread through a larger volume. The dissolved particles do not shrink, lose their colour individually or disappear. There are fewer coloured particles per unit volume.",
+        "In serial dilution, a measured portion is transferred into more solvent repeatedly. A very small amount can still colour a large volume, supporting the idea that matter contains enormous numbers of small particles. The observation supports the particle model; it is not a photograph or count of individual particles.",
+        "Gases diffuse because their particles move randomly. If the concentration of one gas is initially greater in one region, this random movement produces an overall spreading from high to low concentration. Particles continue moving after the gases become evenly mixed; equal concentration does not mean movement stops.",
+        "In demonstrations where a coloured gas spreads into another container, explain the colour spreading in terms of particles moving through spaces between gas particles. Air currents and stirring can also mix substances, so distinguish those effects from the random particle motion that causes diffusion."
+      ],
+      "example": {
+        "question": "A measured volume of dye solution is diluted with water to twice its original volume. Explain the paler colour.",
+        "steps": [
+          "The amount of dye in that sample stays the same.",
+          "The dye particles are distributed through twice the volume.",
+          "There are fewer dye particles per unit volume."
+        ],
+        "explanation": "Dilution changes concentration without requiring a change to the particles themselves."
+      },
+      "practice": {
+        "question": "Do gas particles stop moving once the gas is evenly distributed?",
+        "answer": "No. They keep moving randomly, but there is no overall concentration-driven transfer in one direction.",
+        "explanation": "Dynamic particle movement continues at an even concentration."
+      },
+      "terms": [
+        "dilution",
+        "serial dilution",
+        "diffusion",
+        "concentration"
+      ],
+      "commonMistakes": [
+        "Do not say dilution makes the particles smaller.",
+        "Diffusion does not require particles to be deliberately stirred."
+      ]
+    },
+    {
+      "id": "solutions-and-saturation",
+      "title": "Solute, solvent, solution and saturation",
+      "points": [
+        "1.4"
+      ],
+      "paragraphs": [
+        "A solute is a substance that dissolves. A solvent is the substance that dissolves it. Together they form a solution, a homogeneous mixture in which the dissolved material is distributed throughout the solvent. In salt water, salt is the solute and water is the solvent.",
+        "A saturated solution contains as much dissolved solute as it can hold at a specified temperature. Additional solid solute remains undissolved once equilibrium is reached. The temperature matters because solubility can change with temperature.",
+        "Dissolving is different from melting. When sugar dissolves in water, its particles become distributed among the water particles. It has not become molten sugar. A solution may be coloured or colourless; colour alone does not show whether it is saturated."
+      ],
+      "example": {
+        "question": "A student adds salt to water at a fixed temperature and stirs. Eventually some solid remains. Explain what this may show.",
+        "steps": [
+          "If sufficient time and stirring have allowed dissolving to finish, the liquid is saturated at that temperature.",
+          "It cannot hold additional dissolved salt under those conditions.",
+          "The remaining solid is undissolved solute, not part of the dissolved solution."
+        ],
+        "explanation": "Visible solid after only a moment is insufficient evidence because dissolving may still be taking place."
+      },
+      "practice": {
+        "question": "Identify the solute and solvent in a sugar solution made with water.",
+        "answer": "Sugar is the solute; water is the solvent.",
+        "explanation": "The solution is the resulting mixture, not another name for the solvent alone."
+      },
+      "terms": [
+        "solute",
+        "solvent",
+        "solution",
+        "saturated solution",
+        "dissolving"
+      ],
+      "commonMistakes": [
+        "Saturated is not the same as highly concentrated without a stated solute and temperature.",
+        "Dissolving and melting are different changes."
+      ]
+    },
+    {
+      "id": "solubility-units",
+      "title": "Solubility: use the mass of solvent",
+      "points": [
+        "1.5C"
+      ],
+      "paragraphs": [
+        "Solubility is the maximum mass of a solute that dissolves in a stated mass of solvent at a specified temperature. Here the units are grams of solute per 100 grams of solvent. A value of 36 g per 100 g of water means 36 g of solute with 100 g of water, producing 136 g of saturated solution if no material is lost.",
+        "To rescale a solubility value, use the same ratio of solute to solvent. Solubility = mass of dissolved solute ÷ mass of solvent × 100. Do not use the total solution mass as the denominator.",
+        "This content is marked 1.5C in the specification and applies to Paper 2C. Worked numbers in these notes are illustrative data, not measured solubilities of an identified chemical."
+      ],
+      "example": {
+        "question": "An illustrative solid has solubility 40 g per 100 g water at 25 °C. What maximum mass dissolves in 30 g water at that temperature?",
+        "steps": [
+          "Scale the solvent mass: 30 ÷ 100 = 0.30.",
+          "Maximum solute = 40 × 0.30 = 12 g.",
+          "The saturated solution would have mass 42 g."
+        ],
+        "explanation": "The ratio is based on water mass, not solution mass."
+      },
+      "practice": {
+        "question": "A saturated solution contains 8 g solute and 20 g water. Calculate solubility in g per 100 g water.",
+        "answer": "8 ÷ 20 × 100 = 40 g per 100 g water.",
+        "explanation": "Using 28 g as the denominator would incorrectly use the solution mass."
+      },
+      "terms": [
+        "solubility",
+        "g per 100 g solvent",
+        "saturated"
+      ],
+      "commonMistakes": [
+        "Use solvent mass, not total solution mass.",
+        "Always state the temperature associated with a solubility value."
+      ]
+    },
+    {
+      "id": "solubility-curves",
+      "title": "Reading and plotting solubility curves",
+      "points": [
+        "1.6C"
+      ],
+      "paragraphs": [
+        "Plot temperature on the horizontal axis and solubility, in g per 100 g solvent, on the vertical axis. Choose scales that use the graph area well, label units and plot every supplied value accurately. Draw an appropriate smooth curve rather than forcing all data onto a straight line.",
+        "Read a solubility at a chosen temperature by moving to the curve and then to the solubility axis. Interpolation uses values between measured points; extrapolation goes beyond the measured range and is less secure. The shape depends on the substance: do not assume every solid becomes more soluble at the same rate.",
+        "If a saturated solution is cooled and the new solubility is lower, excess solute can crystallise. Calculate the decrease in dissolved solute for the actual solvent mass. This assumes no solvent is lost and enough time is allowed for crystallisation. A temporarily supersaturated solution need not immediately produce the predicted crystals."
+      ],
+      "example": {
+        "question": "Illustrative data show solubility 60 g per 100 g water at 60 °C and 25 g per 100 g water at 20 °C. A saturated sample contains 50 g water. What mass can crystallise on cooling?",
+        "steps": [
+          "Initially dissolved mass = 60 × 50/100 = 30 g.",
+          "Finally dissolved mass = 25 × 50/100 = 12.5 g.",
+          "Mass crystallised = 30 − 12.5 = 17.5 g."
+        ],
+        "explanation": "The calculation assumes unchanged water mass and equilibration at 20 °C."
+      },
+      "practice": {
+        "question": "What is the difference between interpolation and extrapolation on a solubility graph?",
+        "answer": "Interpolation estimates between measured temperatures; extrapolation estimates outside the measured range.",
+        "explanation": "An extrapolated trend may not continue as assumed."
+      },
+      "terms": [
+        "solubility curve",
+        "interpolation",
+        "extrapolation",
+        "crystallisation"
+      ],
+      "commonMistakes": [
+        "Scale the change in solubility to the actual solvent mass.",
+        "A curve showing one substance does not describe every solid."
+      ]
+    },
+    {
+      "id": "measuring-solubility",
+      "title": "Practical: measure solubility at a fixed temperature",
+      "points": [
+        "1.7C"
+      ],
+      "paragraphs": [
+        "The aim is to find the mass of solute dissolved per 100 g water in a saturated solution at a known temperature. Keep the solution at that temperature while allowing it to reach saturation with excess solid present.",
+        "Take a clear sample without transferring undissolved crystals. A weighed sample can be evaporated gently to recover the dissolved solid, using an appropriate stable, non-volatile solute selected for the experiment. The difference between solution mass and dry-solute mass gives the water mass.",
+        "Dry to constant mass, allowing the container to cool before each weighing. If undissolved crystals enter the sample, the calculated solubility will be too high. If the recovered solid is still wet, its measured mass is too high and the calculated water mass too low. A changing temperature undermines the claim that the result applies to one specified temperature."
+      ],
+      "example": {
+        "question": "A dish has mass 30.0 g, dish plus saturated solution 44.0 g, and dish plus dry solute 34.0 g. Calculate solubility.",
+        "steps": [
+          "Solution mass = 44.0 − 30.0 = 14.0 g.",
+          "Solute mass = 34.0 − 30.0 = 4.0 g.",
+          "Water mass = 14.0 − 4.0 = 10.0 g.",
+          "Solubility = 4.0 ÷ 10.0 × 100 = 40 g per 100 g water."
+        ],
+        "explanation": "Subtract the empty dish before identifying solution and solute masses."
+      },
+      "practice": {
+        "question": "Why must undissolved solid be excluded from the weighed solution sample?",
+        "answer": "It would be counted as dissolved solute after evaporation, making the calculated solubility too high.",
+        "explanation": "The method measures dissolved material, not all solid originally added."
+      },
+      "terms": [
+        "solubility practical",
+        "constant mass",
+        "water bath",
+        "saturated sample"
+      ],
+      "commonMistakes": [
+        "Do not assume total sample mass is water mass.",
+        "Cooling during sampling can change what remains dissolved."
+      ],
+      "practical": {
+        "apparatus": [
+          "Balance, weighed evaporating dish, suitable non-volatile solid and water",
+          "Controlled water bath, thermometer, stirring rod and clear-sample transfer apparatus"
+        ],
+        "method": [
+          "Maintain water and excess solute at the chosen temperature; stir and allow saturation.",
+          "Withdraw clear saturated solution without crystals while maintaining the temperature.",
+          "Weigh the dish plus sample. Gently evaporate water using appropriate supervised equipment.",
+          "Cool and weigh the residue; repeat drying and weighing to constant mass.",
+          "Subtract masses, calculate solute per 100 g water, and repeat with independent samples."
+        ],
+        "variables": [
+          "Keep temperature fixed during saturation and sampling.",
+          "Use the same solute and solvent; measure masses rather than assume a solution density."
+        ],
+        "safety": [
+          "Wear eye protection and use suitable handling for hot apparatus.",
+          "Use an appropriate stable solute and gentle supervised heating to avoid splashing; do not boil the sample violently."
+        ],
+        "quality": [
+          "Exclude undissolved crystals from the aliquot.",
+          "Check constant dry mass and record temperature with the result.",
+          "Repeat samples and investigate inconsistent results before averaging."
+        ]
+      }
+    },
+    {
+      "id": "elements-compounds-mixtures",
+      "title": "Elements, compounds and mixtures",
+      "points": [
+        "1.8"
+      ],
+      "paragraphs": [
+        "An element contains only one type of atom. A compound contains atoms of two or more elements chemically combined in a fixed ratio. A mixture contains two or more substances together without all being chemically combined into a single new substance; its proportions can vary.",
+        "An element may be made of single atoms or molecules containing only that element. Oxygen molecules, O₂, still form an element because both atoms are oxygen. Water, H₂O, is a compound because hydrogen and oxygen atoms are chemically combined in a fixed ratio.",
+        "A sample containing water and dissolved salt is a mixture. Physical methods can separate mixture components by differences in properties. Breaking a compound into its elements involves chemical change, not simply filtering the compound.",
+        "For particle diagrams, count atom types and identify which particles are chemically joined. More than one colour does not automatically mean a mixture: identical molecules containing two atom types can represent a pure compound."
+      ],
+      "example": {
+        "question": "A diagram contains only identical pairs, each with one atom of type A bonded to one atom of type B. Classify the sample.",
+        "steps": [
+          "Two atom types are present.",
+          "They are chemically combined in identical particles with a fixed ratio.",
+          "The sample is a pure compound, not a mixture."
+        ],
+        "explanation": "Both the atom types and the bonding pattern are needed."
+      },
+      "practice": {
+        "question": "Why is pure oxygen gas an element even though each O₂ molecule contains two atoms?",
+        "answer": "Both atoms are the same element. An element is defined by atom type, not by having only single atoms.",
+        "explanation": "Do not confuse a molecule with a compound."
+      },
+      "terms": [
+        "element",
+        "compound",
+        "mixture",
+        "pure substance",
+        "particle diagram"
+      ],
+      "commonMistakes": [
+        "A molecule can be an element or a compound.",
+        "A mixture need not be visibly heterogeneous."
+      ]
+    },
+    {
+      "id": "purity-and-temperature",
+      "title": "Using melting and boiling behaviour as evidence",
+      "points": [
+        "1.9"
+      ],
+      "paragraphs": [
+        "A pure substance has a characteristic melting point and boiling point at a specified pressure. A sample can therefore be compared with a reliable reference value. Pressure matters, especially for boiling points, so comparisons require matching conditions.",
+        "A mixture may melt or boil over a range of temperatures. A broadened melting range or a change from the expected value can be evidence of impurity. Some mixtures have special behaviour, so a single temperature reading alone is not an absolute proof of identity or purity.",
+        "Describe the observation precisely: the temperature at which melting starts and finishes gives a range. Heating too quickly, uneven temperature or a miscalibrated thermometer can affect the measurement. Distinguish those measurement problems from a genuine difference in composition."
+      ],
+      "example": {
+        "question": "A reference solid melts sharply at 80 °C. A sample begins melting at 73 °C and finishes at 77 °C under the same pressure. What does this suggest?",
+        "steps": [
+          "The sample melts over a range rather than sharply.",
+          "The range differs from the reference melting point.",
+          "This is evidence that the sample may be impure, although measurement quality should also be checked."
+        ],
+        "explanation": "Use the range and reference comparison, not a claim of certainty from one observation."
+      },
+      "practice": {
+        "question": "Why should pressure be controlled when comparing boiling points?",
+        "answer": "Boiling point depends on pressure, so a different pressure can change the temperature without a change in composition.",
+        "explanation": "A fair comparison keeps relevant conditions the same."
+      },
+      "terms": [
+        "purity",
+        "melting range",
+        "boiling point",
+        "pressure"
+      ],
+      "commonMistakes": [
+        "A single matching temperature is not conclusive chemical identification.",
+        "Record a melting range rather than only the final temperature."
+      ]
+    },
+    {
+      "id": "filtration-and-crystallisation",
+      "title": "Recovering solids by filtration and crystallisation",
+      "points": [
+        "1.10"
+      ],
+      "paragraphs": [
+        "Filtration separates an insoluble solid from a liquid. The solid is retained as residue on the filter paper; liquid passing through is the filtrate. Dissolved substances pass through with the solvent, so filtration alone cannot recover dissolved salt from salt water.",
+        "Crystallisation recovers a dissolved solid by reducing the amount of solvent and/or cooling a solution whose solubility decreases on cooling. Gently concentrate the solution, allow crystals to form, then filter them and dry them appropriately. Heating to complete dryness is not always suitable, especially if the solid decomposes or loses water of crystallisation.",
+        "For a mixture of sand and soluble salt, add water to dissolve the salt, filter off the insoluble sand, and crystallise salt from the filtrate. The sequence follows the differences in solubility. The salt has not been removed at the first filtration stage."
+      ],
+      "example": {
+        "question": "Describe how to obtain dry sand and salt separately from their mixture using water.",
+        "steps": [
+          "Add water and stir to dissolve the salt.",
+          "Filter: sand is the residue; wash and dry it appropriately.",
+          "Concentrate the filtrate and allow salt crystals to form.",
+          "Separate and dry the crystals."
+        ],
+        "explanation": "Name where each substance is after filtration so the next step is unambiguous."
+      },
+      "practice": {
+        "question": "Why can ordinary filter paper not remove dissolved sugar from water?",
+        "answer": "The dissolved sugar particles pass through the filter with the water; there is no insoluble solid for the filter to retain.",
+        "explanation": "Filtration separates by the presence of insoluble particles, not by whether a liquid contains a solute."
+      },
+      "terms": [
+        "filtration",
+        "residue",
+        "filtrate",
+        "crystallisation"
+      ],
+      "commonMistakes": [
+        "The filtrate may contain dissolved substances.",
+        "Crystallisation is not always the same as evaporating to dryness."
+      ]
+    },
+    {
+      "id": "distillation",
+      "title": "Simple and fractional distillation",
+      "points": [
+        "1.10"
+      ],
+      "paragraphs": [
+        "Simple distillation can recover a solvent from a solution containing a non-volatile solute. Heating produces solvent vapour; cooling it in a condenser turns it back into liquid, collected as the distillate. The dissolved non-volatile solute remains in the flask.",
+        "A thermometer used to measure the vapour temperature is positioned near the entrance to the condenser. Cooling water normally enters the condenser at its lower inlet and leaves at the upper outlet so the jacket stays filled. The apparatus must not be sealed while heated.",
+        "Fractional distillation separates miscible liquids using different boiling points. A fractionating column allows repeated vaporisation and condensation, enriching the vapour in the more volatile component. The lower-boiling component is collected first under suitable conditions; collection is changed as the temperature rises.",
+        "Neither method means that only one component can ever evaporate. Separation depends on different volatilities, and purity depends on the mixture and apparatus. Choose fractional rather than simple distillation when repeated separation is needed for liquids with relatively close boiling points."
+      ],
+      "example": {
+        "question": "Which method is appropriate for recovering water from a solution of a non-volatile salt, and why?",
+        "steps": [
+          "Use simple distillation.",
+          "Water vaporises and then condenses into the receiver.",
+          "The non-volatile salt remains in the flask."
+        ],
+        "explanation": "State the collected substance and the property difference that enables separation."
+      },
+      "practice": {
+        "question": "Why add a fractionating column when separating two miscible volatile liquids?",
+        "answer": "Repeated condensation and vaporisation improve separation by enriching the vapour in the more volatile liquid.",
+        "explanation": "The column increases separation; it does not chemically change either liquid."
+      },
+      "terms": [
+        "simple distillation",
+        "fractional distillation",
+        "condenser",
+        "distillate",
+        "volatile"
+      ],
+      "commonMistakes": [
+        "The condenser cools vapour; it does not cause boiling.",
+        "Do not heat a sealed distillation system."
+      ]
+    },
+    {
+      "id": "paper-chromatography",
+      "title": "Paper chromatography and mixture evidence",
+      "points": [
+        "1.10",
+        "1.11",
+        "1.13"
+      ],
+      "paragraphs": [
+        "Paper chromatography separates soluble components because they travel at different rates with a solvent through the paper. Their relative attractions to the stationary phase and moving solvent differ. A component that travels farther under the stated conditions has moved more readily with that solvent.",
+        "Draw a pencil baseline near the bottom of the paper and place small concentrated sample spots on it. The solvent level must remain below the baseline. Let the solvent rise, remove the paper before the solvent reaches the top, and mark the solvent front immediately before it dries.",
+        "A sample giving several separated spots contains several components detectable by this method. One spot is consistent with one component but does not prove purity: different substances may overlap, fail to dissolve or be invisible with the detection method used. Comparing reference samples on the same chromatogram is more informative than comparing colours alone.",
+        "Pencil is used because graphite does not dissolve and run like many pen inks. Starting with the spots under the solvent would wash the samples into the reservoir. Large or overloaded spots can spread and make components difficult to distinguish."
+      ],
+      "example": {
+        "question": "A food colouring produces two spots, while a reference colouring produces one spot at the same height as one of them. What can be concluded?",
+        "steps": [
+          "The food colouring contains at least two components separated and detected in this run.",
+          "One component may match the reference under these conditions.",
+          "The matching position supports, but does not alone prove, chemical identity."
+        ],
+        "explanation": "Separate evidence of a mixture from the strength of an identification."
+      },
+      "practice": {
+        "question": "Why should the initial solvent level be below the sample spots?",
+        "answer": "Otherwise the samples may dissolve into the solvent reservoir instead of travelling from a defined baseline up the paper.",
+        "explanation": "A shared baseline is needed for meaningful travel-distance comparisons."
+      },
+      "terms": [
+        "chromatography",
+        "baseline",
+        "solvent front",
+        "stationary phase",
+        "mobile phase"
+      ],
+      "commonMistakes": [
+        "Use pencil for the baseline, not soluble ink.",
+        "One visible spot is not absolute proof of purity."
+      ],
+      "practical": {
+        "apparatus": [
+          "Chromatography paper, pencil, ruler, beaker and cover",
+          "Capillary spotters, water-soluble food colourings and a suitable water solvent"
+        ],
+        "method": [
+          "Draw a pencil baseline and label sample positions.",
+          "Apply small spots; allow them to dry before adding more sample if needed.",
+          "Place the paper with the solvent below the baseline and cover the container.",
+          "Allow development; remove the paper before the front reaches the top and mark the front immediately.",
+          "Measure component and front distances from the baseline; compare references run under the same conditions."
+        ],
+        "variables": [
+          "Use the same solvent, paper and development conditions for comparisons.",
+          "Control spot size and avoid touching the developing area."
+        ],
+        "safety": [
+          "Use the stated water-based method with suitable food colourings; do not taste laboratory samples.",
+          "Handle glass and capillary spotters carefully; avoid broken sharp edges."
+        ],
+        "quality": [
+          "Keep spots small, distinct and initially above the solvent.",
+          "Record the solvent front promptly and repeat if spots overlap or the front is uneven."
+        ]
+      }
+    },
+    {
+      "id": "rf-values",
+      "title": "Calculating and comparing Rf values",
+      "points": [
+        "1.12"
+      ],
+      "paragraphs": [
+        "Rf is the distance travelled by a component divided by the distance travelled by the solvent front. Measure both distances from the baseline in the direction of solvent travel. Use the centre of a compact spot for the component distance and the same length units for both measurements.",
+        "Rf has no units because the distance units cancel. For an ordinary run with the component between the baseline and front, its value lies between 0 and 1. A result greater than 1 suggests incorrect measurement or calculation, such as reversing the fraction.",
+        "Compare Rf values only under matching conditions, including the solvent and stationary phase. A component’s Rf is not a universal constant independent of the experimental setup. A matching reference supports identification, while further evidence may be needed if components overlap."
+      ],
+      "example": {
+        "question": "A component moves 3.6 cm from the baseline while the solvent front moves 6.0 cm. Calculate Rf.",
+        "steps": [
+          "Rf = component distance ÷ solvent-front distance.",
+          "Rf = 3.6 ÷ 6.0 = 0.60.",
+          "No units are attached to the ratio."
+        ],
+        "explanation": "Both distances use the same baseline; the denominator is not the distance between the spot and solvent front."
+      },
+      "practice": {
+        "question": "A spot moves 24 mm and the solvent front 4.0 cm. Calculate Rf.",
+        "answer": "Convert 4.0 cm to 40 mm, then Rf = 24/40 = 0.60.",
+        "explanation": "Convert to common units before dividing."
+      },
+      "terms": [
+        "Rf",
+        "retention factor",
+        "baseline",
+        "ratio"
+      ],
+      "commonMistakes": [
+        "Do not invert the distance ratio.",
+        "Do not compare Rf values from different solvents as if conditions were identical."
+      ],
+      "diagram": {
+        "src": "/diagrams/chemistry-chromatogram.svg",
+        "alt": "Reference A travels 20 mm, B 56 mm and the solvent front 80 mm from the baseline. Two mixture spots match their positions. Rf values are 0.25 and 0.70.",
+        "caption": "Original schematic with illustrative distances measured from the same baseline. Matching reference positions support possible identification under these conditions; they are not conclusive proof of identity."
+      }
+    },
+    {
+      "id": "atoms-and-molecules",
+      "title": "Atoms and molecules are different levels of structure",
+      "points": [
+        "1.14"
+      ],
+      "paragraphs": [
+        "An atom is the smallest particle of an element that retains its chemical identity. Atoms contain smaller subatomic particles, so “smallest particle of an element” does not mean an atom has no internal structure.",
+        "A molecule is a discrete group of two or more atoms chemically bonded together. The atoms may belong to the same element, as in O₂, or different elements, as in H₂O. A molecule therefore need not be a compound.",
+        "Not every substance consists of discrete molecules. Metals and ionic solids have extended structures; a formula such as NaCl expresses a ratio in an ionic structure rather than a collection of separate NaCl molecules. Keep atom, molecule, element and compound distinct."
+      ],
+      "example": {
+        "question": "State how many atoms and how many atom types are present in one CO₂ molecule.",
+        "steps": [
+          "The formula shows one carbon atom and two oxygen atoms.",
+          "There are three atoms in total.",
+          "There are two atom types: carbon and oxygen."
+        ],
+        "explanation": "Subscripts count atoms of that element in the molecule, not the number of different elements."
+      },
+      "practice": {
+        "question": "Is a molecule of O₂ a compound?",
+        "answer": "No. It contains only oxygen atoms, so it is a molecule of an element.",
+        "explanation": "A compound requires different elements chemically combined."
+      },
+      "terms": [
+        "atom",
+        "molecule",
+        "element",
+        "compound"
+      ],
+      "commonMistakes": [
+        "Do not call every bonded substance molecular.",
+        "Two atoms of the same element do not form a compound."
+      ]
+    },
+    {
+      "id": "subatomic-particles",
+      "title": "Inside an atom: position, mass and charge",
+      "points": [
+        "1.15"
+      ],
+      "paragraphs": [
+        "Protons and neutrons are in the nucleus. Electrons occupy shells, or energy levels, around it. The nucleus is tiny compared with the atom, but it contains nearly all the atom’s mass because electrons have much smaller masses.",
+        "A proton has relative mass 1 and charge +1. A neutron has relative mass 1 and charge 0. An electron has charge −1 and relative mass about 1/1836, often treated as negligible for simple mass-number calculations. These are relative values, not masses measured in grams.",
+        "A neutral atom has equal numbers of protons and electrons, so their charges cancel. Neutrons affect nuclear mass without contributing electric charge. Gaining or losing electrons produces an ion; it does not change which element the atom belongs to because the proton number is unchanged."
+      ],
+      "example": {
+        "question": "A neutral atom contains eight protons and eight neutrons. How many electrons does it have, and where is most of its mass?",
+        "steps": [
+          "Neutrality requires eight electrons to balance eight protons.",
+          "Protons and neutrons are in the nucleus.",
+          "Their masses dominate, so nearly all the mass is in the nucleus."
+        ],
+        "explanation": "The neutron count affects mass, not the electron count required for neutrality."
+      },
+      "practice": {
+        "question": "Which particle has zero charge and relative mass approximately 1?",
+        "answer": "The neutron.",
+        "explanation": "Do not confuse neutral charge with negligible mass."
+      },
+      "terms": [
+        "proton",
+        "neutron",
+        "electron",
+        "nucleus",
+        "relative mass",
+        "relative charge"
+      ],
+      "commonMistakes": [
+        "An electron’s mass is very small, not exactly zero.",
+        "Neutrons do not balance proton charge."
+      ]
+    },
+    {
+      "id": "atomic-number-and-isotopes",
+      "title": "Atomic number, mass number and isotopes",
+      "points": [
+        "1.16"
+      ],
+      "paragraphs": [
+        "Atomic number, Z, is the number of protons in an atom’s nucleus. It identifies the element. Mass number, A, is the total number of protons and neutrons in one nucleus. Therefore neutron number = A − Z.",
+        "Isotopes are atoms of the same element with the same proton number but different neutron numbers. Their mass numbers differ. For neutral atoms of the same element, the electron number and arrangement are the same, so their chemical behaviour is similar.",
+        "In nuclear notation the mass number is written above the atomic number beside the element symbol. Do not use the decimal relative atomic mass from a Periodic Table as the neutron count of one atom: relative atomic mass describes an average over isotopes.",
+        "Sodium-23 has Z = 11 and A = 23, so its nucleus has 11 protons and 12 neutrons. A neutral sodium atom has 11 electrons. Removing one electron gives a positive ion while leaving those nuclear counts unchanged."
+      ],
+      "example": {
+        "question": "Two atoms each have 17 protons. One has 18 neutrons and the other 20. Explain their relationship and state their mass numbers.",
+        "steps": [
+          "Equal proton numbers mean the same element.",
+          "Different neutron numbers mean they are isotopes.",
+          "Their mass numbers are 17 + 18 = 35 and 17 + 20 = 37."
+        ],
+        "explanation": "Specify both what stays the same and what differs."
+      },
+      "practice": {
+        "question": "An atom has mass number 40 and atomic number 20. State its proton, neutron and electron counts if neutral.",
+        "answer": "20 protons, 20 neutrons and 20 electrons.",
+        "explanation": "Only the neutrality condition determines the electron count from the proton count."
+      },
+      "terms": [
+        "atomic number",
+        "mass number",
+        "isotope",
+        "Z",
+        "A"
+      ],
+      "commonMistakes": [
+        "Mass number counts nucleons in one nucleus; relative atomic mass is an average.",
+        "Changing neutron number does not create a different element."
+      ]
+    },
+    {
+      "id": "relative-atomic-mass",
+      "title": "Relative atomic mass is a weighted average",
+      "points": [
+        "1.16",
+        "1.17"
+      ],
+      "paragraphs": [
+        "Relative atomic mass, Ar, compares the weighted mean mass of an element’s atoms with one twelfth of the mass of a carbon-12 atom. It is a ratio and has no units. Isotopes contribute according to their relative abundances, so a more common isotope has more influence on the result.",
+        "For percentage abundances, multiply each isotope mass by its percentage, add the products and divide by 100. For a ratio or raw counts, divide by the total of those abundances instead. An ordinary mean is only correct when the isotopes are equally abundant.",
+        "Use the isotope masses supplied in the question. At this level, many problems use mass numbers as approximations. Check that the calculated mean lies between the lightest and heaviest isotope masses and closer to the more abundant one."
+      ],
+      "example": {
+        "question": "A sample contains 75% atoms of isotope mass 35 and 25% of isotope mass 37. Calculate Ar.",
+        "steps": [
+          "Weighted total = 35 × 75 + 37 × 25 = 3550.",
+          "Divide by 100: Ar = 35.5.",
+          "The value is between 35 and 37 and closer to the more abundant mass 35."
+        ],
+        "explanation": "This uses the supplied simplified isotope masses and abundances, not an exact measured natural composition."
+      },
+      "practice": {
+        "question": "Isotopes with masses 10 and 11 occur in a 1:4 ratio. Calculate the weighted mean.",
+        "answer": "(10 × 1 + 11 × 4) ÷ 5 = 10.8.",
+        "explanation": "The denominator is the sum of the ratio parts, not 100."
+      },
+      "terms": [
+        "relative atomic mass",
+        "Ar",
+        "weighted mean",
+        "isotopic abundance",
+        "carbon-12"
+      ],
+      "commonMistakes": [
+        "Do not take a simple average unless abundances are equal.",
+        "Relative atomic mass has no g or kg unit."
+      ]
+    },
+    {
+      "id": "periodic-table-and-shells",
+      "title": "The Periodic Table and the first 20 configurations",
+      "points": [
+        "1.18",
+        "1.19",
+        "1.22"
+      ],
+      "paragraphs": [
+        "Elements are arranged in increasing atomic number. A horizontal row is a period and a vertical column is a group. Atomic number, not relative atomic mass, determines the order.",
+        "For neutral atoms of the first 20 elements, the electron number equals atomic number. In the school shell model, fill the first shell with up to two electrons, the second with up to eight, then the third with up to eight for this range, before placing the next electrons in the fourth shell. Thus sodium is 2,8,1; chlorine 2,8,7; argon 2,8,8; potassium 2,8,8,1; and calcium 2,8,8,2. This first-20 rule is not a claim that every shell can hold only eight electrons.",
+        "The period number gives the number of occupied shells in the ground-state atom. For main groups labelled 1 to 7 in this course, the number of outer-shell electrons matches the group label. Group 0, the noble gases, have full outer shells: helium has two electrons in its only shell; neon and argon have eight in their outer shell.",
+        "Some Periodic Tables use modern group numbers 1–18. For the main-group elements, course groups 3–7 correspond to modern groups 13–17, and group 0 corresponds to modern group 18. Read the labels on the supplied table. The simple outer-electron rule should not be applied indiscriminately to transition metals."
+      ],
+      "example": {
+        "question": "A neutral atom has atomic number 16. Deduce its configuration, period and course group.",
+        "steps": [
+          "It has 16 electrons.",
+          "Fill the shells: 2,8,6.",
+          "Three occupied shells give Period 3; six outer electrons give course Group 6 (modern Group 16)."
+        ],
+        "explanation": "The configuration links atomic number to both row and column."
+      },
+      "practice": {
+        "question": "Why is helium in the noble-gas group rather than Group 2?",
+        "answer": "Its only occupied shell is full with two electrons; it shares the full-outer-shell pattern of noble gases.",
+        "explanation": "Helium is the special case in the simple eight-outer-electron description."
+      },
+      "terms": [
+        "Periodic Table",
+        "group",
+        "period",
+        "electronic configuration",
+        "shell",
+        "noble gas",
+        "first 20"
+      ],
+      "commonMistakes": [
+        "The first-20 filling rule is a limited model, not a universal shell-capacity rule.",
+        "Group labels must be interpreted using the supplied Periodic Table."
+      ]
+    },
+    {
+      "id": "metals-and-non-metals",
+      "title": "Classifying metals and non-metals from evidence",
+      "points": [
+        "1.20",
+        "1.21"
+      ],
+      "paragraphs": [
+        "Metals occupy the left and centre of the Periodic Table; most non-metals are towards the upper right. Hydrogen is a non-metal even though it is usually displayed at the upper left. Elements near the boundary may have intermediate properties, so a position-based rule is a guide rather than a substitute for the supplied evidence.",
+        "Metals generally conduct electricity well. Non-metals usually do not, but graphite is an important conducting form of carbon. A single observation should therefore be considered alongside other evidence instead of treated as an exception-free definition.",
+        "Metal oxides are commonly basic, reacting with acids. Many non-metal oxides are acidic, reacting with bases; some form acidic solutions in water. Not all oxides dissolve in water. Some oxides are amphoteric or neutral, so do not claim every metal oxide is alkaline in water or every non-metal oxide is acidic.",
+        "For a classification question, combine evidence: electrical conduction and a basic oxide support a metallic classification; lack of conduction and an acidic oxide support a non-metallic one. Explain how each stated property supports the conclusion and identify any conflicting evidence."
+      ],
+      "example": {
+        "question": "An element conducts electricity and its oxide reacts with an acid. What classification do these observations support?",
+        "steps": [
+          "Good conduction is typical of metals.",
+          "Reaction of the oxide with an acid is consistent with a basic oxide.",
+          "Together these observations support classifying the element as a metal."
+        ],
+        "explanation": "The conclusion uses combined evidence and does not claim either property has no exceptions."
+      },
+      "practice": {
+        "question": "Why is “all elements on the left of the table are metals” incorrect?",
+        "answer": "Hydrogen is usually shown on the left but is a non-metal.",
+        "explanation": "Use explicit exceptions to refine a broad position rule."
+      },
+      "terms": [
+        "metal",
+        "non-metal",
+        "conductivity",
+        "basic oxide",
+        "acidic oxide",
+        "graphite",
+        "hydrogen"
+      ],
+      "commonMistakes": [
+        "Basic and alkaline are not identical: an insoluble basic oxide need not form an alkaline solution.",
+        "Graphite conducts electricity despite being a non-metal."
+      ]
     }
   ],
   "status": "source-checked",

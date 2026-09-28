@@ -1,0 +1,928 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4PH1",
+  "chapterId": "magnetism",
+  "documentId": "4PH1-spec",
+  "specificationIssue": "Issue 4 - September 2024",
+  "documentSha256": "bac4b8312d4fbfc84672f909100d66b2b3cda0b25e98c0d11bbc7366dae482b2",
+  "reviewDate": "2026-09-20",
+  "reviewer": "Codex Astra",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Bounded source-clause audit of 6.1–6.20P, visually checked on Physics specification PDF pages 29–30 / printed 23–24. Diagrams are original schematics, not evidence of completed drawing/practical assessment.",
+  "identifierPolicy": "Requirement suffixes r1, r2, etc. are local editorial audit identifiers; only the parent reference is publisher-numbered.",
+  "notePath": "content/notes/physics-magnetism.json",
+  "parents": [
+    {
+      "parentId": "4PH1:issue4:6.1",
+      "officialReference": "6.1",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "All three named units are tracked.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:6.1:r1",
+          "origin": "source-clause",
+          "summary": "Use amperes for current.",
+          "teachingEvidence": [
+            {
+              "sectionId": "transformer-power",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate input/output currents and unit prefixes.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:6.1:r2",
+          "origin": "source-clause",
+          "summary": "Use volts for potential difference.",
+          "teachingEvidence": [
+            {
+              "sectionId": "transformer-power",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate input/output voltage and turns-ratio interpretation.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:6.1:r3",
+          "origin": "source-clause",
+          "summary": "Use watts for power.",
+          "teachingEvidence": [
+            {
+              "sectionId": "transformer-power",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Distinguish input/output power and energy; validate W/kW conversion.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:6.2",
+      "officialReference": "6.2",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Attraction/repulsion of magnets is distinct from attraction of unmagnetised magnetic materials.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:6.2:r1",
+          "origin": "source-clause",
+          "summary": "Describe forces between magnetic poles.",
+          "teachingEvidence": [
+            {
+              "sectionId": "magnetic-materials",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate all like/unlike pole arrangements.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:6.2:r2",
+          "origin": "source-clause",
+          "summary": "Recognise attraction of magnetic substances.",
+          "teachingEvidence": [
+            {
+              "sectionId": "magnetic-materials",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate why attraction alone does not prove permanent magnetism.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:6.3",
+      "officialReference": "6.3",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Hard/soft refers to magnetic retention and ease of magnetisation.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:6.3:r1",
+          "origin": "source-clause",
+          "summary": "Describe magnetically hard and soft materials.",
+          "teachingEvidence": [
+            {
+              "sectionId": "magnetic-materials",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess both material types and their uses without confusing physical hardness.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:6.4",
+      "officialReference": "6.4",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Field lines represent local resultant field direction.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:6.4:r1",
+          "origin": "source-clause",
+          "summary": "Explain a magnetic field line.",
+          "teachingEvidence": [
+            {
+              "sectionId": "magnetic-fields",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate compass tangents, arrow direction, strength spacing and non-crossing patterns.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:6.5",
+      "officialReference": "6.5",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Induction here means induced magnetisation, not induced voltage.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:6.5:r1",
+          "origin": "source-clause",
+          "summary": "Explain magnetisation induced by an external magnetic field.",
+          "teachingEvidence": [
+            {
+              "sectionId": "magnetic-materials",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate near/far induced poles and retention in hard/soft materials.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:6.6",
+      "officialReference": "6.6",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Both one bar magnet and a pair of bar magnets are explicit practical contexts.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:6.6:r1",
+          "origin": "source-clause",
+          "summary": "Investigate a permanent bar magnet’s field pattern.",
+          "teachingEvidence": [
+            {
+              "sectionId": "mapping-magnetic-fields",
+              "field": "practical"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate compass mapping and directed lines from actual/independent observations.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:6.6:r2",
+          "origin": "source-clause",
+          "summary": "Investigate the field between two bar magnets.",
+          "teachingEvidence": [
+            {
+              "sectionId": "mapping-magnetic-fields",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate unlike and like facing poles, including qualitative central weak-field behaviour.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:6.7",
+      "officialReference": "6.7",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "The approximately uniform region is the central gap between suitable unlike pole faces.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:6.7:r1",
+          "origin": "source-clause",
+          "summary": "Use two permanent magnets to produce a uniform field pattern.",
+          "teachingEvidence": [
+            {
+              "sectionId": "uniform-magnetic-field",
+              "field": "diagram"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate arrangements and learner-drawn parallel/equally spaced lines with edge limitations.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:6.8",
+      "officialReference": "6.8",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Current creates a field around the conductor, not only when a second magnet is present.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:6.8:r1",
+          "origin": "source-clause",
+          "summary": "Recognise the magnetic field around a current-carrying conductor.",
+          "teachingEvidence": [
+            {
+              "sectionId": "current-and-electromagnets",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate on/off and reversal observations without claiming the field is an electric field.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:6.9P",
+      "officialReference": "6.9P",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Paper 2 construction requirement.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:6.9P:r1",
+          "origin": "source-clause",
+          "summary": "Describe electromagnet construction.",
+          "teachingEvidence": [
+            {
+              "sectionId": "current-and-electromagnets",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate insulated winding, controlled supply and suitable soft core in a labelled construction task.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:6.10P",
+      "officialReference": "6.10P",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Three drawings are explicitly required; supplied schematics support teaching but do not establish drawing competence.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:6.10P:r1",
+          "origin": "source-clause",
+          "summary": "Draw a straight current-carrying wire’s magnetic field.",
+          "teachingEvidence": [
+            {
+              "sectionId": "current-field-patterns",
+              "field": "diagram"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess end-on circles, tangent arrows and current dot/cross reversal.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:6.10P:r2",
+          "origin": "source-clause",
+          "summary": "Draw a flat circular coil’s field.",
+          "teachingEvidence": [
+            {
+              "sectionId": "current-field-patterns",
+              "field": "diagram"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess both edge-on and face-on interpretation with closed return lines.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:6.10P:r3",
+          "origin": "source-clause",
+          "summary": "Draw a current-carrying solenoid’s field.",
+          "teachingEvidence": [
+            {
+              "sectionId": "current-field-patterns",
+              "field": "diagram"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate interior/exterior directions, poles and uniform-interior limits.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:6.11P",
+      "officialReference": "6.11P",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Paper 2 charged-particle force; parallel includes the opposite along-field direction.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:6.11P:r1",
+          "origin": "source-clause",
+          "summary": "Recognise magnetic force on a moving charge whose motion is not parallel to the field.",
+          "teachingEvidence": [
+            {
+              "sectionId": "charged-particles-in-fields",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate stationary, parallel, antiparallel and cross-field cases; distinguish positive and negative charges.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:6.12",
+      "officialReference": "6.12",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Cause of force and both applications are source demands.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:6.12:r1",
+          "origin": "source-clause",
+          "summary": "Explain the force on a current-carrying wire in a magnetic field.",
+          "teachingEvidence": [
+            {
+              "sectionId": "motor-effect-direction",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess moving-charge/field interaction and external-field conditions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:6.12:r2",
+          "origin": "source-clause",
+          "summary": "Explain a simple d.c. motor.",
+          "teachingEvidence": [
+            {
+              "sectionId": "motors-and-loudspeakers",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate coil forces, turning effects, brushes and correctly timed split-ring reversal.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:6.12:r3",
+          "origin": "source-clause",
+          "summary": "Explain a loudspeaker.",
+          "teachingEvidence": [
+            {
+              "sectionId": "motors-and-loudspeakers",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate varying current, varying force, cone vibration and pressure variations.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:6.13",
+      "officialReference": "6.13",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "The source specifies current perpendicular to the field for direction predictions.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:6.13:r1",
+          "origin": "source-clause",
+          "summary": "Use the left-hand rule for wire-force direction.",
+          "teachingEvidence": [
+            {
+              "sectionId": "motor-effect-direction",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate all three-dimensional direction combinations, including into/out-of-page conventions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:6.14",
+      "officialReference": "6.14",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Magnitude and direction changes of field/current are explicitly included.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:6.14:r1",
+          "origin": "source-clause",
+          "summary": "Describe changes in force magnitude with current and field strength.",
+          "teachingEvidence": [
+            {
+              "sectionId": "motor-effect-direction",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess controlled active length/angle and stronger-current/field comparisons.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:6.14:r2",
+          "origin": "source-clause",
+          "summary": "Describe force direction changes when field or current reverses.",
+          "teachingEvidence": [
+            {
+              "sectionId": "motor-effect-direction",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate each single reversal and both reversals.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:6.15",
+      "officialReference": "6.15",
+      "pdfPage": 30,
+      "printedPage": 24,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Moving conductor or changing field plus voltage-size factors are explicit.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:6.15:r1",
+          "origin": "source-clause",
+          "summary": "Recognise induced voltage from suitable motion or a changing field through a coil.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electromagnetic-induction",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate conductor motion and stationary-coil/changing-field cases; separate open-circuit voltage from current.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:6.15:r2",
+          "origin": "source-clause",
+          "summary": "Describe factors affecting induced voltage size.",
+          "teachingEvidence": [
+            {
+              "sectionId": "electromagnetic-induction",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess rate of change, strength and linked turns without accepting irrelevant motion.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:6.16",
+      "officialReference": "6.16",
+      "pdfPage": 30,
+      "printedPage": 24,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Both rotating-magnet and rotating-coil arrangements plus factors are explicit.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:6.16:r1",
+          "origin": "source-clause",
+          "summary": "Describe generation using a rotating magnet inside a coil.",
+          "teachingEvidence": [
+            {
+              "sectionId": "generating-electricity",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate changing field linkage and mechanical energy input.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:6.16:r2",
+          "origin": "source-clause",
+          "summary": "Describe generation using a rotating coil in a field.",
+          "teachingEvidence": [
+            {
+              "sectionId": "generating-electricity",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate alternating output and slip-ring connection, distinguishing the motor commutator.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:6.16:r3",
+          "origin": "source-clause",
+          "summary": "Describe factors affecting generator voltage.",
+          "teachingEvidence": [
+            {
+              "sectionId": "generating-electricity",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate amplitude versus frequency changes from speed, field and turn count.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:6.17P",
+      "officialReference": "6.17P",
+      "pdfPage": 30,
+      "printedPage": 24,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Paper 2 structure and alternating-voltage change by turns are both required.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:6.17P:r1",
+          "origin": "source-clause",
+          "summary": "Describe transformer structure.",
+          "teachingEvidence": [
+            {
+              "sectionId": "transformer-structure",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate primary/secondary insulation and magnetic coupling.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:6.17P:r2",
+          "origin": "source-clause",
+          "summary": "Explain changed alternating voltage through differing turn counts.",
+          "teachingEvidence": [
+            {
+              "sectionId": "transformer-structure",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate step-up/step-down and lack of sustained steady-d.c. operation.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:6.18P",
+      "officialReference": "6.18P",
+      "pdfPage": 30,
+      "printedPage": 24,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Paper 2 large-scale generation/transmission application.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:6.18P:r1",
+          "origin": "source-clause",
+          "summary": "Explain step-up and step-down transformers in transmission.",
+          "teachingEvidence": [
+            {
+              "sectionId": "transmitting-electricity",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess same-power lower-current reasoning and I²R loss without claiming zero resistance/loss.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:6.19P",
+      "officialReference": "6.19P",
+      "pdfPage": 30,
+      "printedPage": 24,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Know/use local subdivisions retain primary/secondary ratio consistency.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:6.19P:r1",
+          "origin": "source-clause",
+          "summary": "Know the voltage/turns ratio.",
+          "teachingEvidence": [
+            {
+              "sectionId": "transformer-structure",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate recall with matching numerator/denominator quantities.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:6.19P:r2",
+          "origin": "source-clause",
+          "summary": "Use the voltage/turns ratio.",
+          "teachingEvidence": [
+            {
+              "sectionId": "transformer-structure",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate all inverse targets, prefixes and integer-turn feasibility.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:6.20P",
+      "officialReference": "6.20P",
+      "pdfPage": 30,
+      "printedPage": 24,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "The equality is explicitly for 100% efficiency.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:6.20P:r1",
+          "origin": "source-clause",
+          "summary": "Know ideal transformer input power equals output power.",
+          "teachingEvidence": [
+            {
+              "sectionId": "transformer-power",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Validate the stated ideal-efficiency condition.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:6.20P:r2",
+          "origin": "source-clause",
+          "summary": "Use VpIp = VsIs for an ideal transformer.",
+          "teachingEvidence": [
+            {
+              "sectionId": "transformer-power",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate inverse current/voltage targets without applying equality to lossy cases.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    }
+  ],
+  "completeTeachingPoints": 0,
+  "completeChapters": 0,
+  "teachingUpdatedAt": "2026-09-20"
+}

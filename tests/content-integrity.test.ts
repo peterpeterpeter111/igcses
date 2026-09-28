@@ -19,7 +19,7 @@ void test('catalog contains six uniquely addressable subjects and chapters', () 
 });
 
 void test('partial notes point to catalog chapters and retain incomplete status', () => {
-  assert.equal(notes.length, 9);
+  assert.equal(notes.length, 13);
   assert.equal(
     new Set(notes.map((note) => note.subjectId + ':' + note.chapterId)).size,
     notes.length,
@@ -35,6 +35,12 @@ void test('partial notes point to catalog chapters and retain incomplete status'
     assert.equal(note.complete, false);
     assert.equal(note.humanReviewed, false);
     assert.ok(note.sections.length > 0);
+    for (const reference of note.supportingSources ?? []) {
+      assert.ok(reference.title);
+      assert.equal(new URL(reference.url).protocol, 'https:');
+      assert.ok(reference.sectionIds.length);
+      assert.ok(reference.sectionIds.every((id) => note.sections.some((section) => section.id === id)));
+    }
     assert.equal(
       new Set(note.sections.map((section) => section.id)).size,
       note.sections.length,

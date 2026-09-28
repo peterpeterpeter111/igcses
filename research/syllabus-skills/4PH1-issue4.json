@@ -4,18 +4,18 @@
   "specificationIssue": "Issue 4 - September 2024",
   "documentId": "4PH1-spec",
   "documentSha256": "bac4b8312d4fbfc84672f909100d66b2b3cda0b25e98c0d11bbc7366dae482b2",
-  "reviewDate": "2026-09-12",
+  "reviewDate": "2026-09-17",
   "reviewer": "Codex Astra",
   "reviewerType": "agent",
   "humanReviewed": false,
-  "reviewMethod": "Visual page inspection plus text comparison; images inspected in the preceding session and preserved at the same source hash.",
+  "reviewMethod": "Specification page images and text reviewed at the saved source hash; source-checked task analyses used to judge each operation, with explicit no-separate-skill decisions and alternative-route distinctions.",
   "reviewedPdfPages": [
     36,
     37,
     51,
     52
   ],
-  "scope": "Separate qualification-wide skills inventory and bounded Q10 mapping. These 35 skill rows do not increase the 195 numbered content-parent count or complete any teaching/substatement audit.",
+  "scope": "Separate qualification-wide inventory of 35 skills and explicit skill-demand review of all 51 leaves in Physics Summer 2024 1P. A mapped skill is not an official task-AO allocation, complete teaching coverage or a validated template.",
   "identifierPolicy": "Experimental IDs use local one-based bullet ordinals, not publisher-assigned numbers. Mathematical IDs retain the printed category number and row letter. All IDs are local versioned references.",
   "excludedMathematicalRows": [
     {
@@ -481,9 +481,879 @@
   },
   "taskMappings": [
     {
+      "taskId": "4PH1-2024-June-1-standard.Q1.a.i",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "mapped",
+      "rationale": "The linked operations are supported by the source task; alternative-route links are explicitly distinguished from required operations.",
+      "mappings": [
+        {
+          "skillId": "4PH1:issue4:mathematical:5B",
+          "rationale": "Represent the three-dimensional Moon–Earth orbit by a labelled two-dimensional drawing.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                52
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                3
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                4
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q1.a.ii",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "no-separate-skill-demand",
+      "rationale": "Names gravitational force; the assessed demand is physical recall, not a separate listed practical/mathematical operation.",
+      "mappings": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q1.a.iii",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "no-separate-skill-demand",
+      "rationale": "Names an Earth-orbiting object; no additional skill-row operation is required.",
+      "mappings": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q1.b",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "mapped",
+      "rationale": "The linked operations are supported by the source task; alternative-route links are explicitly distinguished from required operations.",
+      "mappings": [
+        {
+          "skillId": "4PH1:issue4:mathematical:5B",
+          "rationale": "One source-accepted route compares circular and elongated orbit geometry; alternative speed/radius comparisons do not require drawing.",
+          "applicability": "one-accepted-route",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                52
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                3
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                4
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q2.a",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "no-separate-skill-demand",
+      "rationale": "Identifies isotope identity using proton/neutron counts; table format alone does not make this a frequency-table or graph task.",
+      "mappings": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q2.b",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "no-separate-skill-demand",
+      "rationale": "Recalls the identity of beta radiation.",
+      "mappings": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q2.c",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "no-separate-skill-demand",
+      "rationale": "Recognises the change in nuclear composition for neutron emission; no separately assessed mathematical procedure is required.",
+      "mappings": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q2.d",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "no-separate-skill-demand",
+      "rationale": "Recognises positive ionic charge from fewer electrons than protons; no explicit symbolic inequality or charge calculation is required by the source.",
+      "mappings": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q2.e",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "mapped",
+      "rationale": "The linked operations are supported by the source task; alternative-route links are explicitly distinguished from required operations.",
+      "mappings": [
+        {
+          "skillId": "4PH1:issue4:mathematical:1C",
+          "rationale": "Use the elapsed-time/half-life ratio and two repeated halvings of activity.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                5
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                5
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q3.a",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "no-separate-skill-demand",
+      "rationale": "Identifies infrared harm. A hazard question in an application context is not itself an experimental-method task.",
+      "mappings": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q3.b.i",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "no-separate-skill-demand",
+      "rationale": "Compares electromagnetic properties without an assessed numerical or investigative operation.",
+      "mappings": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q3.b.ii",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "no-separate-skill-demand",
+      "rationale": "Compares frequency and wavelength qualitatively; no formula manipulation, graph or measured data are required.",
+      "mappings": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q3.c",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "mapped",
+      "rationale": "The linked operations are supported by the source task; alternative-route links are explicitly distinguished from required operations.",
+      "mappings": [
+        {
+          "skillId": "4PH1:issue4:mathematical:1B",
+          "rationale": "Read and calculate with the given light speed in standard form.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                7
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:mathematical:3B",
+          "rationale": "Rearrange speed = distance/time to find the elapsed time.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                7
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:mathematical:3C",
+          "rationale": "Substitute distance and speed in consistent units.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                7
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                6
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q3.d",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "no-separate-skill-demand",
+      "rationale": "Explains differing absorption in a stated application; the paper does not ask the candidate to design or evaluate an investigation.",
+      "mappings": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q4.a",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "no-separate-skill-demand",
+      "rationale": "Classifies energy-store changes in a response grid; the grid is not a data-analysis table.",
+      "mappings": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q4.b",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "no-separate-skill-demand",
+      "rationale": "Identifies mass as the evolutionary-branch property.",
+      "mappings": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q4.c",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "no-separate-skill-demand",
+      "rationale": "Compares stellar properties qualitatively; optional terminology does not add a required numerical/experimental task.",
+      "mappings": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q5.a",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "mapped",
+      "rationale": "The linked operations are supported by the source task; alternative-route links are explicitly distinguished from required operations.",
+      "mappings": [
+        {
+          "skillId": "4PH1:issue4:mathematical:4B",
+          "rationale": "Sketch the linear, zero-intercept force–extension relationship implied by direct proportionality.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                11
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                8
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q5.b.i",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "mapped",
+      "rationale": "The linked operations are supported by the source task; alternative-route links are explicitly distinguished from required operations.",
+      "mappings": [
+        {
+          "skillId": "4PH1:issue4:mathematical:1A",
+          "rationale": "Subtract opposing decimal force magnitudes while tracking the resultant direction.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                12
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                8
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q5.b.ii",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "mapped",
+      "rationale": "The linked operations are supported by the source task; alternative-route links are explicitly distinguished from required operations.",
+      "mappings": [
+        {
+          "skillId": "4PH1:issue4:mathematical:3B",
+          "rationale": "Rearrange F = ma for acceleration.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                12,
+                13
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                8
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:mathematical:3C",
+          "rationale": "Substitute resultant force and mass in SI units.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                12,
+                13
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                8
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q5.b.iii",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "no-separate-skill-demand",
+      "rationale": "Explains changing spring force/resultant and acceleration qualitatively; no further calculation or graph construction is required.",
+      "mappings": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q6.a",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "no-separate-skill-demand",
+      "rationale": "Adds field-direction arrows to an existing pattern; mathematical spatial construction is not separately demanded.",
+      "mappings": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q6.b",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "no-separate-skill-demand",
+      "rationale": "Recognises a magnetic material.",
+      "mappings": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q6.c",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "no-separate-skill-demand",
+      "rationale": "Interprets field-line spacing using the physical convention; it is not an experimental scatter plot or numerical graph.",
+      "mappings": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q6.d.i",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "no-separate-skill-demand",
+      "rationale": "Explains induced poles and attraction without an assessed practical procedure.",
+      "mappings": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q6.d.ii",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "no-separate-skill-demand",
+      "rationale": "Explains soft magnetic behaviour; an experiment is not requested.",
+      "mappings": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q7.a",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "no-separate-skill-demand",
+      "rationale": "Explains independent switching using parallel topology; circuit context is not experimental-method assessment.",
+      "mappings": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q7.b.i",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "no-separate-skill-demand",
+      "rationale": "Identifies metallic charge carriers.",
+      "mappings": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q7.b.ii",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "mapped",
+      "rationale": "The linked operations are supported by the source task; alternative-route links are explicitly distinguished from required operations.",
+      "mappings": [
+        {
+          "skillId": "4PH1:issue4:mathematical:1C",
+          "rationale": "Convert milliamperes to amperes by the 1:1000 ratio.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                17
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:mathematical:3C",
+          "rationale": "Substitute current and voltage into the power equation.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                17
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:mathematical:2A",
+          "rationale": "Relate the calculated 5.06 W to the requested approximate value without prematurely changing the evidence.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                17
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                10
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q7.b.iii",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "mapped",
+      "rationale": "The linked operations are supported by the source task; alternative-route links are explicitly distinguished from required operations.",
+      "mappings": [
+        {
+          "skillId": "4PH1:issue4:mathematical:3B",
+          "rationale": "Rearrange the supplied power = energy/time relation.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                17
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:mathematical:3C",
+          "rationale": "Substitute the earlier power and the time into E = Pt.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                17
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                10
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q7.c.i",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "no-separate-skill-demand",
+      "rationale": "Defines voltage as energy per unit charge; no numerical substitution is requested.",
+      "mappings": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q7.c.ii",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "mapped",
+      "rationale": "The linked operations are supported by the source task; alternative-route links are explicitly distinguished from required operations.",
+      "mappings": [
+        {
+          "skillId": "4PH1:issue4:mathematical:1A",
+          "rationale": "Add the numerical currents of the conducting branches; physical circuit reasoning selects which terms belong in the sum.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                17
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                10
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q8",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "mapped",
+      "rationale": "The linked operations are supported by the source task; alternative-route links are explicitly distinguished from required operations.",
+      "mappings": [
+        {
+          "skillId": "4PH1:issue4:mathematical:5A",
+          "rationale": "Measure incidence/refraction angles from the normal in degrees.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                52
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                18,
+                19
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                11
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:mathematical:1E",
+          "rationale": "Evaluate sine and inverse sine in degree mode.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                18,
+                19
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                11
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:mathematical:3B",
+          "rationale": "Rearrange refractive index = sin(i)/sin(r) to obtain r.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                18,
+                19
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                11
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:mathematical:3C",
+          "rationale": "Substitute measured angles and refractive index.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                18,
+                19
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                11
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:mathematical:5B",
+          "rationale": "Represent the ray paths and interface in a two-dimensional optical diagram.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                52
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                18,
+                19
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                11
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q9.a",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "no-separate-skill-demand",
+      "rationale": "Reads the unchanged initial pressure from the common-air condition; no pressure calculation is needed.",
+      "mappings": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q9.b",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "no-separate-skill-demand",
+      "rationale": "Explains pressure difference and compression qualitatively. Photographs are a scenario, not a request to measure or graph data.",
+      "mappings": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q9.c",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "no-separate-skill-demand",
+      "rationale": "Explains the molecular mechanism of pressure; writing the defining relationship is optional rather than a numerical task.",
+      "mappings": []
+    },
+    {
       "taskId": "4PH1-2024-June-1-standard.Q10.a",
       "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
       "humanReviewed": false,
+      "decision": "mapped",
+      "rationale": "The linked operations are supported by the source task; alternative-route links are explicitly distinguished from required operations.",
       "mappings": [
         {
           "skillId": "4PH1:issue4:mathematical:3C",
@@ -507,7 +1377,8 @@
                 13
               ]
             }
-          ]
+          ],
+          "applicability": "required"
         },
         {
           "skillId": "4PH1:issue4:mathematical:1C",
@@ -531,14 +1402,18 @@
                 13
               ]
             }
-          ]
+          ],
+          "applicability": "required"
         }
       ]
     },
     {
       "taskId": "4PH1-2024-June-1-standard.Q10.b.i",
       "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
       "humanReviewed": false,
+      "decision": "mapped",
+      "rationale": "The linked operations are supported by the source task; alternative-route links are explicitly distinguished from required operations.",
       "mappings": [
         {
           "skillId": "4PH1:issue4:experimental:06",
@@ -563,14 +1438,18 @@
                 13
               ]
             }
-          ]
+          ],
+          "applicability": "required"
         }
       ]
     },
     {
       "taskId": "4PH1-2024-June-1-standard.Q10.b.ii",
       "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
       "humanReviewed": false,
+      "decision": "mapped",
+      "rationale": "The linked operations are supported by the source task; alternative-route links are explicitly distinguished from required operations.",
       "mappings": [
         {
           "skillId": "4PH1:issue4:experimental:06",
@@ -595,14 +1474,18 @@
                 13
               ]
             }
-          ]
+          ],
+          "applicability": "required"
         }
       ]
     },
     {
       "taskId": "4PH1-2024-June-1-standard.Q10.b.iii",
       "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
       "humanReviewed": false,
+      "decision": "mapped",
+      "rationale": "The linked operations are supported by the source task; alternative-route links are explicitly distinguished from required operations.",
       "mappings": [
         {
           "skillId": "4PH1:issue4:experimental:04",
@@ -627,7 +1510,8 @@
                 13
               ]
             }
-          ]
+          ],
+          "applicability": "required"
         },
         {
           "skillId": "4PH1:issue4:experimental:05",
@@ -652,14 +1536,18 @@
                 13
               ]
             }
-          ]
+          ],
+          "applicability": "required"
         }
       ]
     },
     {
       "taskId": "4PH1-2024-June-1-standard.Q10.c.i",
       "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
       "humanReviewed": false,
+      "decision": "mapped",
+      "rationale": "The linked operations are supported by the source task; alternative-route links are explicitly distinguished from required operations.",
       "mappings": [
         {
           "skillId": "4PH1:issue4:experimental:05",
@@ -683,7 +1571,8 @@
                 14
               ]
             }
-          ]
+          ],
+          "applicability": "required"
         },
         {
           "skillId": "4PH1:issue4:mathematical:1C",
@@ -707,14 +1596,18 @@
                 14
               ]
             }
-          ]
+          ],
+          "applicability": "required"
         }
       ]
     },
     {
       "taskId": "4PH1-2024-June-1-standard.Q10.c.ii",
       "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
       "humanReviewed": false,
+      "decision": "mapped",
+      "rationale": "The linked operations are supported by the source task; alternative-route links are explicitly distinguished from required operations.",
       "mappings": [
         {
           "skillId": "4PH1:issue4:mathematical:4C",
@@ -739,7 +1632,8 @@
                 14
               ]
             }
-          ]
+          ],
+          "applicability": "required"
         },
         {
           "skillId": "4PH1:issue4:mathematical:4A",
@@ -764,7 +1658,8 @@
                 14
               ]
             }
-          ]
+          ],
+          "applicability": "required"
         },
         {
           "skillId": "4PH1:issue4:experimental:08",
@@ -789,14 +1684,18 @@
                 14
               ]
             }
-          ]
+          ],
+          "applicability": "required"
         }
       ]
     },
     {
       "taskId": "4PH1-2024-June-1-standard.Q10.c.iii",
       "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
       "humanReviewed": false,
+      "decision": "mapped",
+      "rationale": "The linked operations are supported by the source task; alternative-route links are explicitly distinguished from required operations.",
       "mappings": [
         {
           "skillId": "4PH1:issue4:mathematical:2H",
@@ -821,7 +1720,8 @@
                 14
               ]
             }
-          ]
+          ],
+          "applicability": "required"
         },
         {
           "skillId": "4PH1:issue4:experimental:08",
@@ -846,14 +1746,18 @@
                 14
               ]
             }
-          ]
+          ],
+          "applicability": "required"
         }
       ]
     },
     {
       "taskId": "4PH1-2024-June-1-standard.Q10.c.iv",
       "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
       "humanReviewed": false,
+      "decision": "mapped",
+      "rationale": "The linked operations are supported by the source task; alternative-route links are explicitly distinguished from required operations.",
       "mappings": [
         {
           "skillId": "4PH1:issue4:mathematical:4B",
@@ -878,7 +1782,8 @@
                 14
               ]
             }
-          ]
+          ],
+          "applicability": "required"
         },
         {
           "skillId": "4PH1:issue4:mathematical:3A",
@@ -903,7 +1808,8 @@
                 14
               ]
             }
-          ]
+          ],
+          "applicability": "required"
         },
         {
           "skillId": "4PH1:issue4:experimental:07",
@@ -928,6 +1834,379 @@
                 14
               ]
             }
+          ],
+          "applicability": "required"
+        }
+      ]
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q11.a",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "mapped",
+      "rationale": "The linked operations are supported by the source task; alternative-route links are explicitly distinguished from required operations.",
+      "mappings": [
+        {
+          "skillId": "4PH1:issue4:mathematical:1C",
+          "rationale": "Convert one hour into seconds before applying the charge equation.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                26
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                15
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:mathematical:3C",
+          "rationale": "Substitute current and time into Q = It.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                26
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                15
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q11.b.i",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "mapped",
+      "rationale": "The linked operations are supported by the source task; alternative-route links are explicitly distinguished from required operations.",
+      "mappings": [
+        {
+          "skillId": "4PH1:issue4:mathematical:1B",
+          "rationale": "Read the stated charge in standard form.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                27
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                15
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:mathematical:3B",
+          "rationale": "Rearrange Q = It for charging time.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                27
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                15
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:mathematical:3C",
+          "rationale": "Substitute charge and current.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                27
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                15
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:mathematical:1C",
+          "rationale": "Convert the calculated seconds into minutes.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                27
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                15
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q11.b.ii",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "no-separate-skill-demand",
+      "rationale": "Reasons qualitatively about cable resistance/current/time; no separate quantitative equation solution is requested.",
+      "mappings": []
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q11.c",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "mapped",
+      "rationale": "The linked operations are supported by the source task; alternative-route links are explicitly distinguished from required operations.",
+      "mappings": [
+        {
+          "skillId": "4PH1:issue4:mathematical:1A",
+          "rationale": "Multiply the daily decimal charge by seven, then add the two weekly charges.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                28
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                15
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:mathematical:3A",
+          "rationale": "A source-accepted quantitative comparison can use the inequality 27.8 > 26.8; the symbol itself is not compulsory.",
+          "applicability": "one-accepted-route",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                28
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                15
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q12.a",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "mapped",
+      "rationale": "The linked operations are supported by the source task; alternative-route links are explicitly distinguished from required operations.",
+      "mappings": [
+        {
+          "skillId": "4PH1:issue4:mathematical:4E",
+          "rationale": "Draw a tangent at 20 seconds and use its gradient as the instantaneous acceleration.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                30
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                16
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q12.b",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "mapped",
+      "rationale": "The linked operations are supported by the source task; alternative-route links are explicitly distinguished from required operations.",
+      "mappings": [
+        {
+          "skillId": "4PH1:issue4:mathematical:4F",
+          "rationale": "Estimate distance from the area between the velocity curve and time axis, including square-counting routes.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                30,
+                31
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                16
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4PH1:issue4:mathematical:5C",
+          "rationale": "A strips/triangles/trapezia route uses triangle/rectangle areas; direct square counting need not use this route.",
+          "applicability": "one-accepted-route",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                52
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                30,
+                31
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                16
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "taskId": "4PH1-2024-June-1-standard.Q12.c",
+      "reviewStatus": "agent-reviewed",
+      "reviewDate": "2026-09-17",
+      "humanReviewed": false,
+      "decision": "mapped",
+      "rationale": "The linked operations are supported by the source task; alternative-route links are explicitly distinguished from required operations.",
+      "mappings": [
+        {
+          "skillId": "4PH1:issue4:mathematical:4A",
+          "rationale": "Translate the horizontal portion of the velocity–time graph into constant velocity before applying force-balance reasoning.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4PH1-spec",
+              "pdfPages": [
+                51
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-qp",
+              "pdfPages": [
+                30,
+                31
+              ]
+            },
+            {
+              "documentId": "4PH1-2024-June-1-standard-ms",
+              "pdfPages": [
+                16
+              ]
+            }
           ]
         }
       ]
@@ -936,8 +2215,8 @@
   "fullyProcessedPaper": false,
   "teachingCompletionAssessed": false,
   "blockers": [
-    "Only Q10 skill demands are mapped; remaining Physics tasks and other subjects need review.",
-    "Source Q10.c.iii curve-distance wording remains unresolved; this mapping does not validate its tolerance or activate a template.",
-    "No official task-level AO allocation or teaching-completion claim."
+    "Official per-task AO allocation has not been obtained; global specification percentages are not used to invent it.",
+    "Source discrepancies, family links and template validation remain separate incomplete gates.",
+    "This audit does not review skills in other papers or establish teaching completion."
   ]
 }

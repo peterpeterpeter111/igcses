@@ -1,0 +1,1000 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4PH1",
+  "chapterId": "astrophysics",
+  "documentId": "4PH1-spec",
+  "specificationIssue": "Issue 4 - September 2024",
+  "documentSha256": "bac4b8312d4fbfc84672f909100d66b2b3cda0b25e98c0d11bbc7366dae482b2",
+  "reviewDate": "2026-09-20",
+  "reviewer": "Codex Astra",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Bounded source-clause audit of 8.1–8.18P, visually checked on official Physics specification PDF pages 33–34 / printed 27–28. All local requirements remain partial; principal-region diagrams are authored schematics, not observational datasets.",
+  "identifierPolicy": "Requirement suffixes r1, r2, etc. are local editorial audit identifiers; only the parent reference is publisher-numbered.",
+  "notePath": "content/notes/physics-astrophysics.json",
+  "parents": [
+    {
+      "parentId": "4PH1:issue4:8.1",
+      "officialReference": "8.1",
+      "pdfPage": 33,
+      "printedPage": 27,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "All seven named units remain explicit.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:8.1:r1",
+          "origin": "source-clause",
+          "summary": "Use kilograms for mass.",
+          "teachingEvidence": [
+            {
+              "sectionId": "gravity-on-other-worlds",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess mass and weight distinction independently.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:8.1:r2",
+          "origin": "source-clause",
+          "summary": "Use metres for distance.",
+          "teachingEvidence": [
+            {
+              "sectionId": "circular-orbital-speed",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess radius/altitude and km/m conversions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:8.1:r3",
+          "origin": "source-clause",
+          "summary": "Use metres per second for speed.",
+          "teachingEvidence": [
+            {
+              "sectionId": "circular-orbital-speed",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess speed conversions and significant figures.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:8.1:r4",
+          "origin": "source-clause",
+          "summary": "Use metres per second squared for acceleration.",
+          "teachingEvidence": [
+            {
+              "sectionId": "gravity-on-other-worlds",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess equivalent numerical g and acceleration units.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:8.1:r5",
+          "origin": "source-clause",
+          "summary": "Use newtons for force.",
+          "teachingEvidence": [
+            {
+              "sectionId": "gravity-on-other-worlds",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess gravitational force with supplied g.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:8.1:r6",
+          "origin": "source-clause",
+          "summary": "Use seconds for time.",
+          "teachingEvidence": [
+            {
+              "sectionId": "circular-orbital-speed",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess minute/hour/second conversions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:8.1:r7",
+          "origin": "source-clause",
+          "summary": "Use newtons per kilogram for gravitational field strength.",
+          "teachingEvidence": [
+            {
+              "sectionId": "gravity-on-other-worlds",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess field strength versus force.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:8.2",
+      "officialReference": "8.2",
+      "pdfPage": 33,
+      "printedPage": 27,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "The three source bullets are separately retained; size statements describe the syllabus-level hierarchy.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:8.2:r1",
+          "origin": "source-clause",
+          "summary": "Recognise the universe contains billions of galaxies.",
+          "teachingEvidence": [
+            {
+              "sectionId": "our-place-in-space",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess universe/galaxy/system hierarchy.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:8.2:r2",
+          "origin": "source-clause",
+          "summary": "Recognise large galaxies contain billions of stars.",
+          "teachingEvidence": [
+            {
+              "sectionId": "our-place-in-space",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess star versus galaxy distinctions without universalising galaxy size.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:8.2:r3",
+          "origin": "source-clause",
+          "summary": "Locate the Solar System within the Milky Way.",
+          "teachingEvidence": [
+            {
+              "sectionId": "our-place-in-space",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess nested locations and incorrect centre claims.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:8.3",
+      "officialReference": "8.3",
+      "pdfPage": 33,
+      "printedPage": 27,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Cause of variation and examples of different worlds are separate.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:8.3:r1",
+          "origin": "source-clause",
+          "summary": "Explain variation in gravitational field strength.",
+          "teachingEvidence": [
+            {
+              "sectionId": "gravity-on-other-worlds",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess mass and centre-distance dependencies separately.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:8.3:r2",
+          "origin": "source-clause",
+          "summary": "Recognise different field strengths on planets, the Moon and Earth.",
+          "teachingEvidence": [
+            {
+              "sectionId": "gravity-on-other-worlds",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess new-world g without assuming mass changes with location.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:8.4",
+      "officialReference": "8.4",
+      "pdfPage": 33,
+      "printedPage": 27,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "All four named orbital cases are retained.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:8.4:r1",
+          "origin": "source-clause",
+          "summary": "Explain gravity keeping moons around planets.",
+          "teachingEvidence": [
+            {
+              "sectionId": "gravity-keeps-orbits",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess inward force and tangential velocity on a labelled moon orbit.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:8.4:r2",
+          "origin": "source-clause",
+          "summary": "Explain gravity keeping planets around the Sun.",
+          "teachingEvidence": [
+            {
+              "sectionId": "gravity-keeps-orbits",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess curved paths and changing velocity.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:8.4:r3",
+          "origin": "source-clause",
+          "summary": "Explain gravity keeping artificial satellites around Earth.",
+          "teachingEvidence": [
+            {
+              "sectionId": "gravity-keeps-orbits",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess constant speed versus zero resultant force.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:8.4:r4",
+          "origin": "source-clause",
+          "summary": "Explain gravity keeping comets around the Sun.",
+          "teachingEvidence": [
+            {
+              "sectionId": "gravity-keeps-orbits",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess noncircular gravitational motion.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:8.5",
+      "officialReference": "8.5",
+      "pdfPage": 33,
+      "printedPage": 27,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Comparison is qualified rather than claiming every orbit is identical.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:8.5:r1",
+          "origin": "source-clause",
+          "summary": "Compare comet, moon and planet orbits.",
+          "teachingEvidence": [
+            {
+              "sectionId": "comparing-orbits",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Add calibrated orbit diagrams and comparisons of central body, eccentricity and plane.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:8.6",
+      "officialReference": "8.6",
+      "pdfPage": 33,
+      "printedPage": 27,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Circle formula is not applied to local speeds on elongated ellipses.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:8.6:r1",
+          "origin": "source-clause",
+          "summary": "Use orbital speed = 2πr/T.",
+          "teachingEvidence": [
+            {
+              "sectionId": "circular-orbital-speed",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate inverse quantities, unit conversion, radius/altitude and allowed rounding.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:8.7",
+      "officialReference": "8.7",
+      "pdfPage": 34,
+      "printedPage": 28,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Colour grouping is distinct from apparent brightness.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:8.7:r1",
+          "origin": "source-clause",
+          "summary": "Classify stars by colour.",
+          "teachingEvidence": [
+            {
+              "sectionId": "stellar-colour-temperature",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess colour ordering using unfamiliar star descriptions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:8.8",
+      "officialReference": "8.8",
+      "pdfPage": 34,
+      "printedPage": 28,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Surface temperature is not substituted for core temperature.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:8.8:r1",
+          "origin": "source-clause",
+          "summary": "Relate stellar colour to surface temperature.",
+          "teachingEvidence": [
+            {
+              "sectionId": "stellar-colour-temperature",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess colour/size/brightness distinctions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:8.9",
+      "officialReference": "8.9",
+      "pdfPage": 34,
+      "printedPage": 28,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "All four specified stages are retained; additional detailed evolution remains out of the bounded audit.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:8.9:r1",
+          "origin": "source-clause",
+          "summary": "Describe formation from a nebula.",
+          "teachingEvidence": [
+            {
+              "sectionId": "sun-like-stellar-evolution",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess gravity, contraction and heating.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:8.9:r2",
+          "origin": "source-clause",
+          "summary": "Describe the main-sequence stage of a Sun-like star.",
+          "teachingEvidence": [
+            {
+              "sectionId": "sun-like-stellar-evolution",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess hydrogen fusion and the stage sequence.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:8.9:r3",
+          "origin": "source-clause",
+          "summary": "Describe the red-giant stage.",
+          "teachingEvidence": [
+            {
+              "sectionId": "sun-like-stellar-evolution",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess core fuel change and expanding outer layers.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:8.9:r4",
+          "origin": "source-clause",
+          "summary": "Describe the white-dwarf remnant.",
+          "teachingEvidence": [
+            {
+              "sectionId": "sun-like-stellar-evolution",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess hot remnant versus ongoing main-sequence fusion.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:8.10",
+      "officialReference": "8.10",
+      "pdfPage": 34,
+      "printedPage": 28,
+      "components": [
+        "1P",
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "The high-mass route is qualified: slightly above solar mass is not an automatic supernova.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:8.10:r1",
+          "origin": "source-clause",
+          "summary": "Describe evolution of high-mass stars.",
+          "teachingEvidence": [
+            {
+              "sectionId": "massive-stellar-evolution",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate red-supergiant, supernova and alternative-remnant explanations.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:8.11P",
+      "officialReference": "8.11P",
+      "pdfPage": 34,
+      "printedPage": 28,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Paper 2: standard distance and magnitude direction are both explained.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:8.11P:r1",
+          "origin": "source-clause",
+          "summary": "Interpret absolute magnitude as brightness at a standard distance.",
+          "teachingEvidence": [
+            {
+              "sectionId": "absolute-magnitude",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess negative magnitudes, consistent bands and apparent/absolute distinctions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:8.12P",
+      "officialReference": "8.12P",
+      "pdfPage": 34,
+      "printedPage": 28,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Paper 2: these are local drawing criteria under the one publisher statement.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:8.12P:r1",
+          "origin": "source-clause",
+          "summary": "Draw correctly directed H–R axes.",
+          "teachingEvidence": [
+            {
+              "sectionId": "hertzsprung-russell-diagram",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess temperature and absolute-magnitude axis reversals.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:8.12P:r2",
+          "origin": "source-clause",
+          "summary": "Place the main sequence on an H–R diagram.",
+          "teachingEvidence": [
+            {
+              "sectionId": "hertzsprung-russell-diagram",
+              "field": "diagram"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate placement tolerance and distinguish population pattern from evolution.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:8.12P:r3",
+          "origin": "source-clause",
+          "summary": "Place giant and supergiant regions.",
+          "teachingEvidence": [
+            {
+              "sectionId": "hertzsprung-russell-diagram",
+              "field": "diagram"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess cool luminous stars and the bright upper region.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:8.12P:r4",
+          "origin": "source-clause",
+          "summary": "Place white dwarfs.",
+          "teachingEvidence": [
+            {
+              "sectionId": "hertzsprung-russell-diagram",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess hot/faint interpretation and drawing criteria.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:8.13P",
+      "officialReference": "8.13P",
+      "pdfPage": 34,
+      "printedPage": 28,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Paper 2: cosmic history and supporting arguments are separated.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:8.13P:r1",
+          "origin": "source-clause",
+          "summary": "Describe evolution from an early hot dense universe.",
+          "teachingEvidence": [
+            {
+              "sectionId": "big-bang-and-cmb",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess expansion, cooling and later structure without inventing a central explosion.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:8.13P:r2",
+          "origin": "source-clause",
+          "summary": "Describe arguments supporting the Big Bang model.",
+          "teachingEvidence": [
+            {
+              "sectionId": "big-bang-and-cmb",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate evidence versus claims beyond the model.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:8.14P",
+      "officialReference": "8.14P",
+      "pdfPage": 34,
+      "printedPage": 28,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Paper 2: the two named observations must remain distinct.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:8.14P:r1",
+          "origin": "source-clause",
+          "summary": "Describe red-shift as Big Bang evidence.",
+          "teachingEvidence": [
+            {
+              "sectionId": "galaxies-and-expansion",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess observed trend followed by model inference.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:8.14P:r2",
+          "origin": "source-clause",
+          "summary": "Describe CMB radiation as Big Bang evidence.",
+          "teachingEvidence": [
+            {
+              "sectionId": "big-bang-and-cmb",
+              "field": "practice"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess cooled early thermal radiation rather than present-day starlight.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:8.15P",
+      "officialReference": "8.15P",
+      "pdfPage": 34,
+      "printedPage": 28,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Paper 2: elementary approach/recession examples specify line-of-sight motion.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:8.15P:r1",
+          "origin": "source-clause",
+          "summary": "Describe observed frequency changes with relative source motion.",
+          "teachingEvidence": [
+            {
+              "sectionId": "doppler-shift",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess approach and recession without changing source frequency.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        },
+        {
+          "id": "4PH1:issue4:8.15P:r2",
+          "origin": "source-clause",
+          "summary": "Describe observed wavelength changes with relative source motion.",
+          "teachingEvidence": [
+            {
+              "sectionId": "doppler-shift",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess wavelength/frequency opposition and fixed vacuum light speed.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:8.16P",
+      "officialReference": "8.16P",
+      "pdfPage": 34,
+      "printedPage": 28,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Paper 2: the specified equation is taught with its small-shift approximation limit.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:8.16P:r1",
+          "origin": "source-clause",
+          "summary": "Use fractional wavelength change = recession speed / light speed.",
+          "teachingEvidence": [
+            {
+              "sectionId": "redshift-calculations",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate inverse wavelength, difference/reference denominator, unit and precision cases.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:8.17P",
+      "officialReference": "8.17P",
+      "pdfPage": 34,
+      "printedPage": 28,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Paper 2: statistical distance trend is not a claim about every nearby galaxy.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:8.17P:r1",
+          "origin": "source-clause",
+          "summary": "Describe galactic red-shift at different distances.",
+          "teachingEvidence": [
+            {
+              "sectionId": "galaxies-and-expansion",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Assess trend/scatter graphs and local-motion exceptions.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4PH1:issue4:8.18P",
+      "officialReference": "8.18P",
+      "pdfPage": 34,
+      "printedPage": 28,
+      "components": [
+        "2P"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Paper 2: a measured trend supports expansion without identifying Earth as its centre.",
+      "requirements": [
+        {
+          "id": "4PH1:issue4:8.18P:r1",
+          "origin": "source-clause",
+          "summary": "Explain why galactic red-shifts support expansion.",
+          "teachingEvidence": [
+            {
+              "sectionId": "galaxies-and-expansion",
+              "field": "example"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Calibrate observation/inference reasoning and non-central-observer explanations.",
+            "Independent assessment-family coverage is not yet validated."
+          ]
+        }
+      ]
+    }
+  ],
+  "completeTeachingPoints": 0,
+  "completeChapters": 0,
+  "teachingUpdatedAt": "2026-09-20",
+  "supportingReferences": {
+    "reviewDate": "2026-09-20",
+    "role": "Factual cross-checks and further reading only. Pearson specification/mark schemes remain authoritative for requirements and assessment. No third-party graphics or prose copied.",
+    "sources": [
+      {
+        "title": "NASA: stellar life cycles",
+        "url": "https://science.nasa.gov/universe/stars/",
+        "sectionIds": [
+          "sun-like-stellar-evolution",
+          "massive-stellar-evolution"
+        ]
+      },
+      {
+        "title": "ESA: reading an H–R diagram",
+        "url": "https://www.esa.int/ESA_Multimedia/Images/2018/04/Gaia_s_Hertzsprung-Russell_diagram",
+        "sectionIds": [
+          "stellar-colour-temperature",
+          "hertzsprung-russell-diagram"
+        ]
+      },
+      {
+        "title": "SDSS: absolute magnitude and H–R axes",
+        "url": "https://voyages.sdss.org/skyserver/advanced-projects/the-hertzsprung-russell-diagram/a-simple-h-r-diagram/",
+        "sectionIds": [
+          "absolute-magnitude",
+          "hertzsprung-russell-diagram"
+        ]
+      },
+      {
+        "title": "ESA: the cosmic microwave background",
+        "url": "https://www.esa.int/Science_Exploration/Space_Science/Planck/Planck_and_the_cosmic_microwave_background",
+        "sectionIds": [
+          "big-bang-and-cmb"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+# Force demand review and template ledger — 18 September 2026
+
+Preserved curved-graph commit 1613680. Re-inspected original Physics QP page 12 and scheme page 8. Recorded a bounded demand review of all 16 implemented structures: four direct two-force variants share core arithmetic operations but change the diagram representation; twelve inverse/three-force variants extend demand. The two-mark magnitude/direction structure supplies no automatic method credit. No difficulty equivalence, student-response study or official per-task AO allocation is claimed.
+
+Updated the provisional family rationale, evidence links and precise remaining blockers. The generator/marker themselves are unchanged. Added a demand-evidence regression check. Filled the formerly header-only templates.csv and template-links.csv from both saved families, with a validating, non-promoting exporter and a check-only mode. Two provisional definitions / two source links / one experimental implemented generator / zero validated maxima and active templates.
+
+71 application tests, typecheck, lint and 13 research checks pass. Latest app build and public scan are the successful curved-graph build (41 files, zero findings); this phase changes research metadata/tests/export tooling only. No AI, Sites version, deployment or reset.
+
+During reconciliation, found a separate stale Physics paper metadata issue: the original immutable batch correctly stays indexed-only, but the detailed overlay/normalized paper ledger still say indexed and omit known indexed/expected task counts. The processing blocker also incorrectly asks for validated templates, while the saved workflow requires versioned family links and treats activation separately. An absent examiner report is informational, not alone a processing blocker. Correct these without promoting the paper to processed or altering the original batch.
+
+Counts remain nine partial notes / 77 sections / 140 partial links / 195 reviewed Physics parents; six obtained pairs, 51 detailed Physics leaves / 110 marks, zero complete chapters/points/papers or active templates. Sync approval remains pending; remote bfd2ed3 mirrors 7746684. Continue only above 5% in both allowances; no reset.

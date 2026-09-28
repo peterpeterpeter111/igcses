@@ -11,9 +11,86 @@
   ],
   "goals": [
     "Use index laws while stating their conditions.",
-    "Convert to standard form and check the coefficient."
+    "Convert to standard form and check the coefficient.",
+    "Select appropriate exact and approximate number representations.",
+    "Solve ratio, percentage, conversion and bounds problems while stating assumptions."
   ],
   "sections": [
+    {
+      "id": "operations-and-brackets",
+      "title": "Operations, signs and brackets",
+      "points": [
+        "1A"
+      ],
+      "paragraphs": [
+        "Calculate brackets first, then powers and roots, then multiplication and division, then addition and subtraction. Operations with the same priority are evaluated from left to right. The order matters: 18 − 6 ÷ 3 means 18 − 2, not 12 ÷ 3.",
+        "Brackets can change the whole calculation. A negative sign before a bracket changes the signs of every term inside when the bracket is removed. For multiplication or division, two negative signs give a positive result, while one negative sign gives a negative result.",
+        "Check calculator entry against the written expression. A fraction bar groups the whole numerator and denominator, so both may need brackets when typed. Estimate the size and sign before trusting a displayed answer."
+      ],
+      "example": {
+        "question": "Evaluate 24 ÷ (5 − 2) + 3 × (−2).",
+        "steps": [
+          "The bracket gives 5 − 2 = 3.",
+          "24 ÷ 3 = 8 and 3 × (−2) = −6.",
+          "8 + (−6) = 2."
+        ],
+        "explanation": "Both multiplication and division are completed before the final addition."
+      },
+      "practice": {
+        "question": "Evaluate 20 − 12 ÷ 4 × 2.",
+        "answer": "20 − 3 × 2 = 20 − 6 = 14.",
+        "explanation": "Division and multiplication have equal priority, so work left to right."
+      },
+      "terms": [
+        "four operations",
+        "brackets",
+        "order of operations",
+        "negative numbers"
+      ],
+      "commonMistakes": [
+        "Multiplication does not always come before division.",
+        "Do not enter a multi-term denominator without brackets."
+      ]
+    },
+    {
+      "id": "primes-factors-multiples",
+      "title": "Prime factors, HCF and LCM",
+      "points": [
+        "1B"
+      ],
+      "paragraphs": [
+        "A prime number is an integer greater than 1 with exactly two positive factors: 1 and itself. The number 1 is not prime. A factor divides a number exactly; a multiple is obtained by multiplying it by an integer.",
+        "Prime factorisation writes a positive integer as a product of prime powers. For HCF, take the common primes with the smaller exponent in each number. For LCM, take every prime required, using its larger exponent. HCF is useful for equal group sizes; LCM is useful for finding when repeating cycles coincide.",
+        "A useful check for two positive integers is HCF × LCM = product of the original numbers. This two-number rule should not be applied unchanged to three or more numbers."
+      ],
+      "example": {
+        "question": "Find the HCF and LCM of 18 and 24.",
+        "steps": [
+          "18 = 2 × 3² and 24 = 2³ × 3.",
+          "HCF = 2 × 3 = 6.",
+          "LCM = 2³ × 3² = 72.",
+          "Check: 6 × 72 = 18 × 24 = 432."
+        ],
+        "explanation": "The lower exponents identify shared factors; higher exponents supply enough factors for both numbers."
+      },
+      "practice": {
+        "question": "Two signals repeat every 12 and 18 seconds and sound together now. When will they next sound together?",
+        "answer": "After LCM(12,18) = 36 seconds.",
+        "explanation": "A common multiple, not a common factor, gives the shared repeat time."
+      },
+      "terms": [
+        "prime",
+        "factor",
+        "multiple",
+        "HCF",
+        "LCM",
+        "prime factorisation"
+      ],
+      "commonMistakes": [
+        "1 is not a prime number.",
+        "Choose HCF or LCM from the context rather than the size of the numbers."
+      ]
+    },
     {
       "id": "index-laws",
       "title": "Indices and powers",
@@ -30,7 +107,8 @@
       "paragraphs": [
         "An index tells you how a base is used as a power. For positive integers, aⁿ means n factors of a multiplied together. When multiplying powers with the same base, add the indices: aᵐ × aⁿ = aᵐ⁺ⁿ. When dividing, subtract them: aᵐ ÷ aⁿ = aᵐ⁻ⁿ, provided a is not zero.",
         "A zero power equals 1 for a non-zero base. A negative power describes a reciprocal: a⁻ⁿ = 1/aⁿ. It does not make a positive number negative. A fractional power combines a root and a power; for a positive base, a^(m/n) = (ⁿ√a)ᵐ.",
-        "Read the whole expression before applying a rule. Index laws combine products or quotients with the same base; they do not let you add the indices in a² + a³. Brackets also matter: (−3)² = 9, while −3² = −9 because the power is applied before the leading minus."
+        "Read the whole expression before applying a rule. Index laws combine products or quotients with the same base; they do not let you add the indices in a² + a³. Brackets also matter: (−3)² = 9, while −3² = −9 because the power is applied before the leading minus.",
+        "For positive bases, a power raised to another power multiplies the indices: (aᵐ)ⁿ = aᵐⁿ. For example, (3²)³ = 3⁶. Check the domain before using fractional powers, especially with negative bases; the positive-base rule avoids those complications."
       ],
       "example": {
         "question": "Simplify 2⁻³ × 2⁵.",
@@ -41,6 +119,370 @@
         ],
         "explanation": "The independent reciprocal check supports the result and shows why the negative index does not produce a negative value."
       }
+    },
+    {
+      "id": "surds-and-exact-values",
+      "title": "Surds and exact values",
+      "points": [
+        "1D"
+      ],
+      "paragraphs": [
+        "A surd is an irrational root left in exact form, such as √2. A root such as √9 is not a surd because it equals the integer 3. Keeping surds avoids rounding an exact answer too early.",
+        "To simplify a square root of a positive number, extract any square factor: √72 = √(36 × 2) = 6√2. Like surds combine through their coefficients, just as like algebraic terms do. Unlike surds usually cannot be combined into a single term.",
+        "For non-negative a and b, √a × √b = √(ab). The corresponding rule does not apply to addition: √(a + b) is generally not √a + √b. Use brackets when multiplying expressions containing surds."
+      ],
+      "example": {
+        "question": "Simplify √50 + 3√8.",
+        "steps": [
+          "√50 = 5√2.",
+          "√8 = 2√2, so 3√8 = 6√2.",
+          "The total is 11√2."
+        ],
+        "explanation": "Simplifying first reveals the common root."
+      },
+      "practice": {
+        "question": "Simplify √12 × √3.",
+        "answer": "√36 = 6.",
+        "explanation": "Multiplication can combine the quantities inside square roots here."
+      },
+      "terms": [
+        "surd",
+        "exact answer",
+        "square factor",
+        "square root"
+      ],
+      "commonMistakes": [
+        "Do not replace √(a + b) by √a + √b.",
+        "A rounded decimal is not an exact surd answer."
+      ]
+    },
+    {
+      "id": "rationalising-denominators",
+      "title": "Rationalising a denominator",
+      "points": [
+        "1E"
+      ],
+      "paragraphs": [
+        "Rationalising rewrites a fraction with a rational denominator without changing its value. Multiply the numerator and denominator by the same non-zero expression, which is equivalent to multiplying by 1.",
+        "For a single square-root denominator, multiply by that root. For a denominator with two terms, use its conjugate: change the sign between the terms. The product then uses the difference of two squares, removing the square-root cross terms.",
+        "Expand the whole numerator and simplify any common factor at the end. The original denominator and any factor used to multiply must be non-zero. Rationalising is a change of form, not a new approximation."
+      ],
+      "example": {
+        "question": "Rationalise 8/(√5 − 1).",
+        "steps": [
+          "Multiply top and bottom by √5 + 1.",
+          "The denominator is (√5 − 1)(√5 + 1) = 5 − 1 = 4.",
+          "The result is 8(√5 + 1)/4 = 2√5 + 2."
+        ],
+        "explanation": "The conjugate cancels the cross terms in the denominator."
+      },
+      "practice": {
+        "question": "Rationalise 3/√2.",
+        "answer": "Multiply by √2/√2 to obtain 3√2/2.",
+        "explanation": "Both numerator and denominator must be multiplied."
+      },
+      "terms": [
+        "rationalise",
+        "conjugate",
+        "difference of squares"
+      ],
+      "commonMistakes": [
+        "Changing only the denominator changes the value.",
+        "Keep brackets around a two-term numerator."
+      ]
+    },
+    {
+      "id": "number-sets",
+      "title": "Natural, integer, rational and irrational numbers",
+      "points": [
+        "1F"
+      ],
+      "paragraphs": [
+        "Integers are whole numbers including negative values, zero and positive values. Natural numbers are the counting numbers; some conventions include zero and others begin at 1, so use any definition given in the question.",
+        "A rational number can be written as a fraction of two integers with a non-zero denominator. Integers, terminating decimals and recurring decimals are rational. An irrational number cannot be expressed as such a fraction; its decimal expansion neither terminates nor repeats.",
+        "For example, −7 is an integer and rational; 0.125 = 1/8 is rational; √2 and π are irrational. A root symbol alone does not mean irrational: √49 = 7. This topic requires recognition, not formal proofs of irrationality."
+      ],
+      "example": {
+        "question": "Classify −4, 0.3 recurring, √16 and √7 as rational or irrational.",
+        "steps": [
+          "−4 is an integer and therefore rational.",
+          "0.3 recurring equals 1/3, so is rational.",
+          "√16 = 4 is rational.",
+          "√7 is irrational."
+        ],
+        "explanation": "Simplify an expression before deciding its number set."
+      },
+      "practice": {
+        "question": "Can a number be both an integer and a rational number?",
+        "answer": "Yes. Every integer n can be written as n/1.",
+        "explanation": "The sets overlap; they are not mutually exclusive labels."
+      },
+      "terms": [
+        "natural number",
+        "integer",
+        "rational",
+        "irrational",
+        "recurring decimal"
+      ],
+      "commonMistakes": [
+        "A recurring decimal is rational.",
+        "Not every root is irrational."
+      ]
+    },
+    {
+      "id": "metric-measures",
+      "title": "Metric units: length, area, volume and capacity",
+      "points": [
+        "1G"
+      ],
+      "paragraphs": [
+        "Convert units before combining measurements. For length, 1 m = 100 cm and 1 km = 1000 m. For mass, 1 kg = 1000 g. Multiplication or division depends on whether the new unit is smaller or larger.",
+        "Area conversion squares the length factor: 1 m² = 10 000 cm². Volume conversion cubes it: 1 m³ = 1 000 000 cm³. A volume of 1 cm³ equals 1 mL, and 1000 cm³ equals 1 litre. These scale factors are different; using 100 for square metres to square centimetres is incorrect.",
+        "Keep units visible through a multi-step problem. Multiplying two lengths produces an area; multiplying three produces a volume. A sensible estimate can expose a conversion in the wrong direction."
+      ],
+      "example": {
+        "question": "A tank is 40 cm long, 25 cm wide and 30 cm high. Find its volume in litres.",
+        "steps": [
+          "Volume = 40 × 25 × 30 = 30 000 cm³.",
+          "1000 cm³ = 1 litre.",
+          "Volume = 30 litres."
+        ],
+        "explanation": "Convert the final cubic volume using a capacity relationship, not a linear conversion."
+      },
+      "practice": {
+        "question": "Convert 0.6 m² to cm².",
+        "answer": "0.6 × 10 000 = 6000 cm².",
+        "explanation": "Square the factor 100 because the measurement is an area."
+      },
+      "terms": [
+        "metric",
+        "SI",
+        "area conversion",
+        "volume conversion",
+        "capacity",
+        "litre"
+      ],
+      "commonMistakes": [
+        "Area and volume conversions do not use the length factor unchanged.",
+        "1 mL equals 1 cm³, not 1 m³."
+      ]
+    },
+    {
+      "id": "time-speed-and-money",
+      "title": "Time, average speed and currency calculations",
+      "points": [
+        "1G"
+      ],
+      "paragraphs": [
+        "Time uses base-60 relationships: 1 hour = 60 minutes and 1 minute = 60 seconds. Thus 1 hour 30 minutes is 1.5 hours, not 1.30 hours. Use consistent units in average speed = total distance ÷ total time.",
+        "For a journey with several stages, add all the distances and all relevant times before dividing. An unweighted average of two stage speeds is generally wrong, particularly when the times spent at those speeds differ.",
+        "For currency conversion, use the exchange rate supplied by the question; the numerical rate in a worked example is hypothetical. Track the direction of the rate: if 1 unit of A buys 1.25 units of B, multiply A by 1.25 to obtain B and divide B by 1.25 to recover A. Apply only fees or rounding rules actually stated."
+      ],
+      "example": {
+        "question": "A traveller covers 90 km in 1 hour 30 minutes. Find the average speed.",
+        "steps": [
+          "Convert the time to 1.5 hours.",
+          "Average speed = 90 ÷ 1.5 = 60 km/h."
+        ],
+        "explanation": "Distance and time units determine the speed unit."
+      },
+      "practice": {
+        "question": "A question gives 1 unit A = 1.25 units B. How many units A buy 75 units B, with no fee?",
+        "answer": "75 ÷ 1.25 = 60 units A.",
+        "explanation": "Reverse conversion requires division by the stated rate."
+      },
+      "terms": [
+        "average speed",
+        "time conversion",
+        "exchange rate",
+        "currency"
+      ],
+      "commonMistakes": [
+        "1 hour 30 minutes is not 1.30 hours.",
+        "Use total distance and total time for an overall average speed."
+      ]
+    },
+    {
+      "id": "fractions-and-decimals",
+      "title": "Fractions, decimals and percentages as representations",
+      "points": [
+        "1H"
+      ],
+      "paragraphs": [
+        "Equivalent fractions have the same value: multiply or divide numerator and denominator by the same non-zero number. A fraction can be converted to a decimal by division, and a decimal to a percentage by multiplying by 100.",
+        "Add or subtract fractions by first using a common denominator. Multiply fractions by multiplying numerators and denominators, simplifying when possible. Divide by a non-zero fraction by multiplying by its reciprocal. These are different rules; a common denominator is not needed for every operation.",
+        "For decimal addition and subtraction, align equal place values. For multiplication, multiply as whole numbers and then restore the combined number of decimal places. For division by a decimal, multiply both dividend and divisor by the same power of ten to make the divisor a whole number. For example, 1.44 ÷ 0.12 = 144 ÷ 12 = 12; changing only the divisor would change the answer.",
+        "Choose a representation that suits the problem. Fractions can keep an exact value where a decimal repeats; decimals can simplify calculations involving money or measurements; percentages compare quantities on a per-hundred basis. Avoid rounding a recurring decimal before the calculation is finished."
+      ],
+      "example": {
+        "question": "Calculate 3/4 − 2/5 and express the result as a percentage.",
+        "steps": [
+          "Use denominator 20: 15/20 − 8/20 = 7/20.",
+          "7/20 = 0.35.",
+          "0.35 × 100 = 35%."
+        ],
+        "explanation": "The denominator is shared before subtracting the numerators."
+      },
+      "practice": {
+        "question": "Calculate (2/3) ÷ (4/5).",
+        "answer": "(2/3) × (5/4) = 10/12 = 5/6.",
+        "explanation": "Take the reciprocal of the divisor, not both fractions."
+      },
+      "terms": [
+        "fraction",
+        "decimal",
+        "percentage",
+        "equivalent fraction",
+        "reciprocal"
+      ],
+      "commonMistakes": [
+        "Do not add denominators when adding fractions.",
+        "Do not round an intermediate recurring decimal unnecessarily."
+      ]
+    },
+    {
+      "id": "ratio-and-proportion",
+      "title": "Sharing ratios and scaling quantities",
+      "points": [
+        "1H"
+      ],
+      "paragraphs": [
+        "A ratio compares quantities using multiplicative relationships. Express measurements in the same units before simplifying a ratio. In a three-part ratio such as 2:3:5, all three terms refer to the same size of ratio unit.",
+        "To share a total in a ratio, add the parts, find the value of one part and multiply by each term. For direct proportion, the same scale factor changes both corresponding quantities. A unitary method finds the amount for one unit before scaling to the required amount.",
+        "Distinguish a part-to-part ratio from a fraction of the whole. A ratio of red to blue counters of 2:3 means red counters are 2/5 of the total, not 2/3. In a word problem, identify what is held constant before assuming quantities are directly proportional."
+      ],
+      "example": {
+        "question": "Share 180 in the ratio 2:3:4.",
+        "steps": [
+          "There are 2 + 3 + 4 = 9 parts.",
+          "Each part is worth 180 ÷ 9 = 20.",
+          "The shares are 40, 60 and 80; they sum to 180."
+        ],
+        "explanation": "The same unit-part value is used for each share."
+      },
+      "practice": {
+        "question": "Five identical items cost 12.50. Find the cost of eight at the same unit price.",
+        "answer": "One costs 12.50/5 = 2.50; eight cost 20.00.",
+        "explanation": "The calculation assumes no bulk discount or extra charge."
+      },
+      "terms": [
+        "ratio",
+        "proportion",
+        "unitary method",
+        "three-part ratio"
+      ],
+      "commonMistakes": [
+        "Add all ratio parts before sharing a total.",
+        "Do not confuse a ratio to another part with a fraction of the total."
+      ]
+    },
+    {
+      "id": "percentage-changes",
+      "title": "Percentage changes and reverse percentages",
+      "points": [
+        "1H"
+      ],
+      "paragraphs": [
+        "A percentage change is measured relative to the original quantity. Percentage change = change ÷ original × 100. A 12% increase multiplies the original by 1.12; a 12% decrease multiplies it by 0.88.",
+        "To reverse a percentage change, divide the final amount by the relevant multiplier. Subtracting the same percentage from the final amount does not generally recover the original because the percentage would use a different base.",
+        "Successive changes multiply their factors. An increase followed by an equal percentage decrease does not cancel. Keep the original and final bases clear and round only when the context requires it."
+      ],
+      "example": {
+        "question": "A price after a 15% discount is 68. Find the original price.",
+        "steps": [
+          "The discounted amount is 85% of the original.",
+          "0.85 × original = 68.",
+          "Original = 68 ÷ 0.85 = 80."
+        ],
+        "explanation": "The percentage refers to the original price, which is the unknown."
+      },
+      "practice": {
+        "question": "A quantity increases by 10% and then decreases by 10%. What fraction of the original remains?",
+        "answer": "1.10 × 0.90 = 0.99, so 99% remains.",
+        "explanation": "The decrease is applied to the already increased amount."
+      },
+      "terms": [
+        "percentage change",
+        "multiplier",
+        "reverse percentage",
+        "successive changes"
+      ],
+      "commonMistakes": [
+        "Equal percentage increases and decreases do not cancel.",
+        "Use the original amount as the denominator for percentage change."
+      ]
+    },
+    {
+      "id": "rounding-and-accuracy",
+      "title": "Decimal places and significant figures",
+      "points": [
+        "1I"
+      ],
+      "paragraphs": [
+        "Decimal places count digits after the decimal point. Significant figures begin with the first non-zero digit and count meaningful digits from there. Zeros between significant digits count; leading zeros do not.",
+        "To round, identify the last digit to keep and inspect the next digit. Under the usual school convention, 5 or more rounds the kept digit up. Include zeros needed to show the requested accuracy: 3.5 to two decimal places is written 3.50.",
+        "For very large or small values, standard form can show significant figures clearly. Avoid premature rounding in multi-step calculations: retain extra digits until the final answer, then state the requested accuracy."
+      ],
+      "example": {
+        "question": "Round 0.004768 to three significant figures and separately to three decimal places.",
+        "steps": [
+          "For significant figures, begin at 4: the digits to keep are 4, 7 and 6.",
+          "The next digit is 8, giving 0.00477.",
+          "For three decimal places, the fourth decimal digit is 7, giving 0.005."
+        ],
+        "explanation": "The two instructions count digits from different starting positions."
+      },
+      "practice": {
+        "question": "Write 12.995 to two decimal places.",
+        "answer": "13.00.",
+        "explanation": "Rounding can carry through several digits; retain two decimal places in the written answer."
+      },
+      "terms": [
+        "rounding",
+        "decimal places",
+        "significant figures",
+        "accuracy"
+      ],
+      "commonMistakes": [
+        "Leading zeros are not significant figures.",
+        "Do not remove trailing zeros that show the requested decimal accuracy."
+      ]
+    },
+    {
+      "id": "upper-and-lower-bounds",
+      "title": "Bounds from rounded measurements",
+      "points": [
+        "1J"
+      ],
+      "paragraphs": [
+        "If a positive measurement is rounded to the nearest unit, its true value lies from half a unit below the stated value up to, but not including, half a unit above under the usual rounding convention. For a length stated as 8.2 cm to the nearest 0.1 cm, 8.15 ≤ length < 8.25 cm.",
+        "For sums, combine lower bounds for a lower result and upper bounds for an upper result. For a difference A − B, the smallest result uses the lower A and upper B. For positive products, multiply the respective lower or upper bounds. For a positive quotient A/B, the greatest possible limiting value uses upper A divided by lower B, provided B stays above zero.",
+        "Do not reuse the positive-number shortcut when an interval crosses zero or the denominator can be zero. Also distinguish a limiting upper bound from an attained maximum: an excluded endpoint may be approached without being reached. Write inequalities with their correct inclusive or exclusive endpoints."
+      ],
+      "example": {
+        "question": "Distance is 120 km to the nearest 10 km and time is 2.0 h to the nearest 0.1 h. Find an upper bound for average speed.",
+        "steps": [
+          "Distance is below 125 km; time is at least 1.95 h.",
+          "The upper speed bound uses 125 ÷ 1.95.",
+          "The bound is approximately 64.1026 km/h; it is not an attained maximum under these intervals."
+        ],
+        "explanation": "To make a positive quotient large, maximise the numerator and minimise the denominator."
+      },
+      "practice": {
+        "question": "A mass is 45 g to the nearest gram. Give its error interval.",
+        "answer": "44.5 ≤ mass < 45.5 g.",
+        "explanation": "The interval width is one rounding unit, centred on the stated value."
+      },
+      "terms": [
+        "upper bound",
+        "lower bound",
+        "error interval",
+        "rounding unit"
+      ],
+      "commonMistakes": [
+        "Use opposite endpoints for a quotient, not upper divided by upper.",
+        "Do not replace an excluded endpoint with an inclusive one."
+      ]
     },
     {
       "id": "standard-form",
@@ -55,7 +497,8 @@
       ],
       "paragraphs": [
         "For a positive number, standard form is a × 10ⁿ, where 1 ≤ a < 10 and n is an integer. The coefficient condition makes the representation consistent: 42 × 10³ has the correct value but is not in standard form; 4.2 × 10⁴ is.",
-        "A negative index on 10 represents a small positive number. Count place-value changes carefully and check the size of the answer. In calculations, work with coefficients and powers separately, then adjust the coefficient back into the required interval."
+        "A negative index on 10 represents a small positive number. Count place-value changes carefully and check the size of the answer. In calculations, work with coefficients and powers separately, then adjust the coefficient back into the required interval.",
+        "For addition or subtraction, first express both terms using the same power of ten, then combine the coefficients. For example, 4 × 10⁵ + 3 × 10⁴ = 4 × 10⁵ + 0.3 × 10⁵ = 4.3 × 10⁵. Multiplication and division instead use the index laws on the powers of ten."
       ],
       "example": {
         "question": "Write 0.00072 in standard form.",
