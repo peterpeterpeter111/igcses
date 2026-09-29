@@ -1,3 +1,7 @@
+# Latest checkpoint — Maths cover review, 29 September
+
+Read research/checkpoints/2026-09-29-MATHS-COVER.md first. GitHub sync repaired: remote 6f18229 exactly mirrors local d2f9db4, including repair documentation. New Maths cover overlay verifies 4MB1/01 Summer 2024 and matching P76502A log, with printed date 14 May (filename 15 May retained). Only QP page 1 / MS pages 1–2 visually checked; no task index or fully processed paper. 86 tests, typecheck, lint, research checks, build/public scan and bounded coverage browser check pass. All teaching/template completion counts unchanged; AI last, no reset. Latest allowances 73% five-hour / 65% weekly. This new phase needs non-force sync after commit.
+
 # Latest checkpoint — GitHub sync repaired
 
 Read research/checkpoints/2026-09-28-GITHUB-SYNC-REPAIRED.md first. The user explicitly prioritized fixing sync. Remote d4b62689b09a94f3b8329b77b899d027b2509d22 now exactly mirrors local ec211b692315f8fd612d449adeb6575bcec266b8 (tree abbd5e4d3a24dc95298294966f8596914885d042); fetched and compared with zero differences. Previous oversized-upload blocker is RESOLVED and older pending-approval statements below are historical. This documentation delta is being synced separately. Use scripts/prepare-github-sync.py and research/GITHUB_SYNC.md for bounded, reviewed connector requests; never force-push. Local and remote histories preserved. 85 tests, typecheck and 13 research checks pass after lossless JSON whitespace compaction. Curriculum/coverage/AI/deployment status unchanged; no reset consumed.

@@ -11,7 +11,7 @@ import retrievalFamily from '../research/templates/4EB1-retrieve-two-causes.v0.1
 import resultantFamily from '../research/templates/4PH1-collinear-resultant.v0.1.0.json' with { type: 'json' };
 import weightFamily from '../research/templates/4PH1-weight-convert-mass.v0.1.0.json' with { type: 'json' };
 import { activeFamilies } from '../server/template-registry';
-import { latestDiscoveryDate, obtainedPaperCandidates } from './paper-discovery';
+import { latestDiscoveryDate, obtainedPaperCandidates, paperCoverReview } from './paper-discovery';
 
 const researchFamilies = [retrievalFamily, resultantFamily, weightFamily];
 export const evidenceHighlights = {
@@ -37,7 +37,7 @@ export function coverageSummary() {
       obtained:
         indexed.filter((x) => x.indexed).length + (s.code === '4EB1' ? 1 : 0)
         + obtainedPaperCandidates(s.code).length,
-      candidatePairs: obtainedPaperCandidates(s.code).length,
+      candidatePairs: obtainedPaperCandidates(s.code).filter((record) => !paperCoverReview(record)).length,
       fullyProcessed: 0,
       candidatePoints: candidates.filter((x) => x.qualification === s.code)
         .length,

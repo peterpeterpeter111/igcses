@@ -55,6 +55,15 @@ def audit(root=ROOT):
     families = [json.loads(p.read_text()) for p in sorted((root / 'research/templates').glob('*.json'))]
     discovery_candidates = [record for p in sorted((root / 'research/discovery').glob('*.json'))
                             for record in json.loads(p.read_text())['records']]
+    paper_reviews = [json.loads(p.read_text()) for p in sorted((root / 'research/paper-reviews').glob('*.json'))]
+    cover_reviewed_ids = set()
+    for review in paper_reviews:
+        candidate = next((r for r in discovery_candidates if r['id'] == review['candidateId']), None)
+        if not candidate or review['qualification'] != candidate['qualification'] or any(
+                review[k + 'Sha256'] != candidate[k]['sha256'] for k in ['questionPaper', 'markScheme']):
+            errors.append({'kind': 'cover-review-source-mismatch', 'id': review['candidateId']})
+        elif review['identityStatus'] == 'cover-checked' and review['coverPairingStatus'] == 'matched':
+            cover_reviewed_ids.add(candidate['id'])
     documents = {s['id']: s for s in sources}
     documents.update({d['id']: d for d in pilot['documents'] + extraction['documents']})
     expected_documents = [{'id': s['id'], 'sha256': s['sha256']} for s in sources]
@@ -140,7 +149,7 @@ def audit(root=ROOT):
     for candidate in discovery_candidates:
         if candidate['id'] not in paper_ids:
             gaps.append({'kind': 'candidate-pair-only-in-discovery-json', 'id': candidate['id'],
-                         'note': 'Obtained-only candidate; identity review and indexing pending.'})
+                         'note': 'Discovery overlay remains separate from normalized paper rows; check cover review overlays and task-index status.'})
     pilot_tasks = {t['id'] for t in pilot['tasks']}
     family_ids = {(f['id'], f['version']) for f in families}
     for row in tables['tasks']:
@@ -186,7 +195,8 @@ def audit(root=ROOT):
             'obtainedPairs': sum(all(r[k]['accessStatus'] == 'obtained' for k in ['questionPaper', 'markScheme']) for r in indexed)
                 + int(code == pilot['qualification'] and all(any(d['type'] == kind and d['accessStatus'] == 'obtained'
                     for d in pilot['documents']) for kind in ['question-paper', 'mark-scheme'])) + len(obtained_candidates),
-            'obtainedCandidatePairsPendingReview': len(obtained_candidates),
+            'obtainedCandidatePairsPendingReview': sum(r['id'] not in cover_reviewed_ids for r in obtained_candidates),
+            'additionalPairsWithCoverReview': sum(r['id'] in cover_reviewed_ids for r in obtained_candidates),
             'partialNoteDocuments': len(teaching),
             'noteSections': sum(len(n['sections']) for n in teaching),
             'reviewedParentIdentities': len(parents),

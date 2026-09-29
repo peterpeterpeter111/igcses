@@ -12,7 +12,7 @@ import sources from '@/research/sources.json';
 import { reviewedInventories } from '@/lib/syllabus';
 import physicsSkills from '@/research/syllabus-skills/4PH1-issue4.json';
 import { curriculumAudits } from '@/lib/curriculum';
-import { obtainedPaperCandidates } from '@/lib/paper-discovery';
+import { obtainedPaperCandidates, paperCoverReview } from '@/lib/paper-discovery';
 export default async function SubjectCoverage({
   params,
 }: {
@@ -110,10 +110,14 @@ export default async function SubjectCoverage({
             </p>
           </section>
         ))}
-        {obtainedPaperCandidates(s.code).map((record) => (
+        {obtainedPaperCandidates(s.code).map((record) => {
+          const review = paperCoverReview(record);
+          return (
           <section className="evidence-row" key={record.id}>
-            <h3>{record.label}</h3>
-            <p>Obtained only · identity and pairing review pending</p>
+            <h3>{review ? `${s.code}/${review.observedComponent} · ${review.printedDate}` : record.label}</h3>
+            <p>{review
+              ? 'Obtained · cover identity and paper log matched · task indexing pending'
+              : 'Obtained only · identity and pairing review pending'}</p>
             <p>
               Both official Pearson PDFs were downloaded and hashed. No tasks
               indexed, no detailed extraction and no fully processed paper.
@@ -127,11 +131,13 @@ export default async function SubjectCoverage({
                 Mark scheme ({record.markScheme.pageCount} pages) ↗
               </a>
             </p>
+            {review && <p className="status">{review.dateDiscrepancy} Agent review on {review.reviewedAt}; no human review.</p>}
             <ul className="plain-list">
-              {record.limitations.map((limitation) => <li key={limitation}>{limitation}</li>)}
+              {(review?.limitations ?? record.limitations).map((limitation) => <li key={limitation}>{limitation}</li>)}
             </ul>
           </section>
-        ))}
+          );
+        })}
         {s.code === '4EB1' && (
           <p>
             Also obtained: November 2024 paper 01, its scheme and examiner

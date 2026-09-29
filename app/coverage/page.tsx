@@ -94,9 +94,10 @@ export default function CoveragePage() {
             Two English “Extract” links must not count as separate papers.
           </li>
           <li>
-            Mathematics B has one newly downloaded candidate paper/scheme pair,
-            separate from the original raw-link inventory. Identity review and
-            question indexing are pending; wider archive discovery is incomplete.
+            Mathematics B has one downloaded paper/scheme pair, separate from
+            the original raw-link inventory. Its cover identity and paper log
+            match; task indexing and whole-paper review remain pending.
+            Wider archive discovery is incomplete.
           </li>
           <li>
             The English November 2024 pilot has 11 tasks indexed and one
