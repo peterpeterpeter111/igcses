@@ -31,3 +31,5 @@ Private packages belong in D1, not the frontend. Owner checks, draft/submission 
 AI calls will use a backend-only provider adapter and hosted secrets in the final phase. Never commit real keys or put them in public environment variables. No AI provider is configured by this checkout.
 
 GitHub source: https://github.com/peterpeterpeter111/igcses
+
+Source synchronization uses the connected GitHub app because ordinary Git has no saved write login. The oversized-upload blocker was resolved on 28 September 2026. See [the verified sync procedure](research/GITHUB_SYNC.md); preserve both histories and never force-push.
