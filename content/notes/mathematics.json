@@ -4,7 +4,8 @@
   "sourceId": "4MB1-spec",
   "sourcePages": [
     17,
-    18
+    18,
+    19
   ],
   "prerequisites": [
     "Understand multiplication, division and place value."
@@ -13,7 +14,9 @@
     "Use index laws while stating their conditions.",
     "Convert to standard form and check the coefficient.",
     "Select appropriate exact and approximate number representations.",
-    "Solve ratio, percentage, conversion and bounds problems while stating assumptions."
+    "Solve ratio, percentage, conversion and bounds problems while stating assumptions.",
+    "Interpret sets, membership and subset notation in a stated universe.",
+    "Use union, intersection, complements and Venn diagrams to solve counting and logical problems."
   ],
   "sections": [
     {
@@ -514,6 +517,289 @@
         "answer": "Multiply the coefficients to get 12 and add the indices to get 3: 12 × 10³. Normalise this to 1.2 × 10⁴.",
         "explanation": "The last step is essential because a coefficient of 12 is outside the standard-form interval."
       }
+    },
+    {
+      "id": "defining-sets",
+      "title": "Sets, elements and notation",
+      "points": [
+        "2A",
+        "2B",
+        "2I"
+      ],
+      "paragraphs": [
+        "A set is a well-defined collection of distinct objects called elements. Well-defined means that you can decide whether a proposed object belongs to it. The set of positive even integers below 10 is precise; the set of interesting numbers is not precise until a rule for interesting is supplied. Sets can contain numbers, people or other objects.",
+        "List a finite set between braces: A = {2, 4, 6, 8}. Order does not matter and repeating an element does not add another member: {2, 4, 2} is the same set as {4, 2}. Two sets are equal when they have exactly the same elements.",
+        "Write 4 ∈ A to mean that 4 is an element of A, and 5 ∉ A to mean that 5 is not. An element and a set containing that element are different objects: 4 is a number, while {4} is a one-element set. A capital letter such as A names the whole set; it is not automatically an element of that set."
+      ],
+      "example": {
+        "question": "Let A be the set of different letters in the word LEVEL. List A and decide whether E and V belong to A.",
+        "steps": [
+          "The letters occurring are L, E and V; repeated L and E do not create extra elements.",
+          "A = {L, E, V}.",
+          "E ∈ A and V ∈ A. The list has three distinct elements."
+        ],
+        "explanation": "A list of occurrences and a set of distinct objects answer different questions."
+      },
+      "practice": {
+        "question": "Are {1, 3, 5} and {5, 1, 3, 3} equal sets?",
+        "answer": "Yes. Both contain exactly the elements 1, 3 and 5.",
+        "explanation": "Neither order nor repetition changes membership."
+      },
+      "terms": [
+        "set",
+        "element",
+        "membership",
+        "belongs to",
+        "set notation",
+        "braces"
+      ],
+      "commonMistakes": [
+        "Do not count a repeated element twice.",
+        "Use ∈ for an element belonging to a set, not for a subset relationship."
+      ]
+    },
+    {
+      "id": "universal-empty-subsets",
+      "title": "Universal set, empty set and subsets",
+      "points": [
+        "2F",
+        "2G",
+        "2I"
+      ],
+      "paragraphs": [
+        "The universal set contains every object under consideration in a problem. It is often denoted by ξ or U; define the notation you use. For a survey of a class, the universal set is the students in that class, not everyone in the school. A Venn diagram represents this set with an enclosing rectangle.",
+        "The empty or null set, written ∅ or {}, contains no elements. It is not the same as {0}, which contains the number zero. Nor is it the same as {∅}, which contains one object: the empty set itself.",
+        "A ⊆ B means every element of A is also an element of B. It allows A = B. A proper subset is a subset that is not equal to the larger set; symbols for this can vary between texts, so read the convention supplied. Here we write A ⊊ B for a proper subset. The empty set is a subset of every set, and every set is a subset of itself.",
+        "To disprove A ⊆ B, find just one element of A that is absent from B. In a Venn diagram, one circle entirely inside another indicates a subset relationship."
+      ],
+      "example": {
+        "question": "For U = {1, 2, 3, 4, 5, 6}, A = {2, 4} and B = {2, 4, 6}, describe the subset relationships.",
+        "steps": [
+          "Both elements of A occur in B, so A ⊆ B.",
+          "B also contains 6, which A does not, so A is a proper subset of B.",
+          "All elements of B are in U, so B ⊆ U."
+        ],
+        "explanation": "Compare all elements of the proposed smaller set; comparing only the number of elements is insufficient."
+      },
+      "practice": {
+        "question": "Is {1, 4} a subset of {1, 2, 3}?",
+        "answer": "No: 4 is in the first set but not the second.",
+        "explanation": "One counterexample is enough to refute the subset claim."
+      },
+      "terms": [
+        "universal set",
+        "null set",
+        "empty set",
+        "subset",
+        "proper subset",
+        "counterexample"
+      ],
+      "commonMistakes": [
+        "∅ has zero elements; {0} has one.",
+        "Two sets having different sizes does not by itself prove a subset relationship."
+      ]
+    },
+    {
+      "id": "union-and-intersection",
+      "title": "Union and intersection",
+      "points": [
+        "2B",
+        "2C",
+        "2I"
+      ],
+      "paragraphs": [
+        "The union A ∪ B contains elements in A or B or both. This is an inclusive or: an element in both sets is still included, but is listed only once. The intersection A ∩ B contains only elements shared by both sets.",
+        "On a two-circle Venn diagram, the union is the whole area inside either circle. The intersection is the overlapping region. Disjoint sets have no shared elements, so their intersection is ∅. Being different sets does not necessarily make sets disjoint.",
+        "Always distinguish the set of elements from its size. A ∩ B could be {6}, while n(A ∩ B) = 1. The first is a set and the second is a number."
+      ],
+      "example": {
+        "question": "For A = {2, 4, 6, 8} and B = {3, 6, 9}, find A ∪ B and A ∩ B.",
+        "steps": [
+          "Collect every distinct element occurring in either list: A ∪ B = {2, 3, 4, 6, 8, 9}.",
+          "Only 6 occurs in both lists, so A ∩ B = {6}.",
+          "Therefore n(A ∪ B) = 6 and n(A ∩ B) = 1."
+        ],
+        "explanation": "The shared element 6 appears once in the union and is the sole element of the intersection."
+      },
+      "practice": {
+        "question": "If A = {1, 3} and B = {2, 4}, what is A ∩ B?",
+        "answer": "∅.",
+        "explanation": "There is no element common to the two sets."
+      },
+      "terms": [
+        "union",
+        "intersection",
+        "inclusive or",
+        "disjoint",
+        "Venn diagram"
+      ],
+      "commonMistakes": [
+        "Union includes the overlap; it does not mean exactly one set.",
+        "Do not confuse ∪ (or) and ∩ (and)."
+      ]
+    },
+    {
+      "id": "complements-and-regions",
+      "title": "Complements and combined regions",
+      "points": [
+        "2C",
+        "2E",
+        "2G"
+      ],
+      "paragraphs": [
+        "The complement A′ consists of elements in the universal set that are not in A. The answer depends on the chosen universe. For U = {1, 2, 3, 4, 5} and A = {2, 4}, A′ = {1, 3, 5}; numbers outside U are not part of this complement.",
+        "Read compound expressions one operation at a time. A ∩ B′ means in A and not in B: the A-only region. (A ∪ B)′ means outside both sets. (A ∩ B)′ means not in both simultaneously, so it includes A-only, B-only and outside both.",
+        "Brackets show what is being complemented. The complement of a union is A′ ∩ B′; the complement of an intersection is A′ ∪ B′. You can check these relationships by testing membership in each of the four Venn regions."
+      ],
+      "example": {
+        "question": "Take U = {1, 2, 3, 4, 5, 6}, A = {1, 2, 3} and B = {3, 4}. Find A ∩ B′ and (A ∪ B)′.",
+        "steps": [
+          "B′ = {1, 2, 5, 6}. The elements also in A are 1 and 2, so A ∩ B′ = {1, 2}.",
+          "A ∪ B = {1, 2, 3, 4}.",
+          "Remove this union from U: (A ∪ B)′ = {5, 6}."
+        ],
+        "explanation": "The first expression selects only A; the second selects neither A nor B."
+      },
+      "practice": {
+        "question": "In the same universe, what is (A ∩ B)′?",
+        "answer": "{1, 2, 4, 5, 6}.",
+        "explanation": "A ∩ B = {3}, so only 3 is excluded from the universal set."
+      },
+      "terms": [
+        "complement",
+        "neither",
+        "only",
+        "combined regions",
+        "De Morgan"
+      ],
+      "commonMistakes": [
+        "A complement is relative to U, not to all possible objects.",
+        "Not both is different from neither."
+      ]
+    },
+    {
+      "id": "counting-venn-regions",
+      "title": "Counting a two-set Venn diagram",
+      "points": [
+        "2D",
+        "2H"
+      ],
+      "paragraphs": [
+        "The notation n(A) means the number of distinct elements in A. In a survey, this is a count of people meeting condition A. A number written in a Venn region is normally the number belonging to that region, not a particular element; read the question to distinguish the two uses.",
+        "When group totals include people in both groups, fill the intersection first. Subtract that overlap from each group total to obtain A-only and B-only. Add the three non-overlapping inside regions to get the union. Subtract the union from the universal total to find neither.",
+        "The identity n(A ∪ B) = n(A) + n(B) − n(A ∩ B) corrects the double count: every shared element was included once in n(A) and again in n(B). All four region counts must be non-negative and sum to n(U)."
+      ],
+      "example": {
+        "question": "Among 20 students, 8 attend music club, 7 attend chess club and 3 attend both. How many attend exactly one club, and how many attend neither?",
+        "steps": [
+          "Put 3 in the overlap.",
+          "Music only: 8 − 3 = 5. Chess only: 7 − 3 = 4.",
+          "Exactly one: 5 + 4 = 9. At least one: 5 + 3 + 4 = 12.",
+          "Neither: 20 − 12 = 8. Check: 5 + 3 + 4 + 8 = 20."
+        ],
+        "explanation": "The whole music circle contains 8, not 8 in its music-only region."
+      },
+      "diagram": {
+        "src": "/diagrams/mathematics-two-set-counts.svg",
+        "alt": "A universe of 20 students with music-only 5, both music and chess 3, chess-only 4, and neither 8. Music total is 8 and chess total is 7.",
+        "caption": "Counts belong to four separate regions. Add a circle’s regions to recover its whole-group total."
+      },
+      "practice": {
+        "question": "In a group of 30, n(A) = 14, n(B) = 12 and n(A ∩ B) = 5. Find n(A ∪ B) and the number in neither.",
+        "answer": "Union: 14 + 12 − 5 = 21. Neither: 30 − 21 = 9.",
+        "explanation": "The overlap is subtracted once, then the union is subtracted from the universal total."
+      },
+      "terms": [
+        "cardinality",
+        "number of elements",
+        "n(A)",
+        "double counting",
+        "exactly one",
+        "at least one"
+      ],
+      "commonMistakes": [
+        "A whole-circle total includes its overlap.",
+        "Exactly one excludes the overlap; at least one includes it."
+      ]
+    },
+    {
+      "id": "venn-logical-problems",
+      "title": "Turning statements into Venn regions",
+      "points": [
+        "2F",
+        "2H"
+      ],
+      "paragraphs": [
+        "Translate the wording before doing arithmetic. All A are B means A ⊆ B, so the A circle lies inside B. No A are B means A ∩ B = ∅. Some A are B means the intersection has at least one member. These statements describe different logical relationships.",
+        "If every violin player in a class is also in the music club, the violin set is inside the music set. This does not imply that every music-club member plays violin. Reversing a subset statement is a common logical error.",
+        "Check whether information is sufficient before assuming a number. Knowing n(A) and n(B) alone usually does not determine their overlap. A proposed survey with n(A) = 4 but n(A ∩ B) = 6 is impossible because an intersection cannot contain more members than a set that contains it."
+      ],
+      "example": {
+        "question": "A class has 24 students. Ten attend music club, and all four violin players are in that club. How many music-club members do not play violin?",
+        "steps": [
+          "Let V be violin players and M be music-club members. The statement gives V ⊆ M.",
+          "The music circle consists of the 4 violin players and those in M ∩ V′.",
+          "n(M ∩ V′) = 10 − 4 = 6."
+        ],
+        "explanation": "Containment makes the subtraction valid. It does not assert that the other 14 students cannot play another instrument."
+      },
+      "practice": {
+        "question": "If every member of A is in B, must every member of B be in A?",
+        "answer": "No. B may have additional elements outside A.",
+        "explanation": "For example, {2} is a subset of {2, 4}, but 4 is not in {2}."
+      },
+      "terms": [
+        "logical statements",
+        "all",
+        "some",
+        "none",
+        "containment",
+        "insufficient information"
+      ],
+      "commonMistakes": [
+        "Do not reverse all A are B.",
+        "Never assume that an unspecified overlap is zero."
+      ]
+    },
+    {
+      "id": "algebraically-defined-sets",
+      "title": "Sets defined by a rule",
+      "points": [
+        "2A",
+        "2C"
+      ],
+      "paragraphs": [
+        "A set can be given by a property rather than a list. For example, A = {x ∈ U : x < 5} means the elements x of the universal set U for which x < 5. The colon means such that; a vertical bar is also used. State the allowed universe before turning the rule into a list.",
+        "When a rule contains an equation or inequality, solve it and then retain only values belonging to U. If U is a finite set of integers, the resulting set contains only those integers. If U is the real numbers, the same inequality can describe infinitely many values, so the finite list would be wrong.",
+        "For two rule-defined sets, form the union or intersection after identifying which elements satisfy each rule. Intersection requires both conditions; union requires at least one."
+      ],
+      "example": {
+        "question": "Let U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}. Set A contains x for which 2x < 11, and B contains the multiples of 3 in U. Find A ∩ B and A ∪ B.",
+        "steps": [
+          "2x < 11 gives x < 5.5. In the stated universe, A = {1, 2, 3, 4, 5}.",
+          "B = {3, 6, 9}.",
+          "Only 3 satisfies both rules, so A ∩ B = {3}.",
+          "A ∪ B = {1, 2, 3, 4, 5, 6, 9}."
+        ],
+        "explanation": "The real-number inequality has more solutions, but membership is restricted to U."
+      },
+      "practice": {
+        "question": "For the same U, let C = {x ∈ U : x² = 9}. List C.",
+        "answer": "C = {3}.",
+        "explanation": "Although x² = 9 has real solutions 3 and −3, only 3 belongs to U."
+      },
+      "terms": [
+        "set builder notation",
+        "such that",
+        "rule",
+        "algebraic sets",
+        "finite set",
+        "universe"
+      ],
+      "commonMistakes": [
+        "Apply the universe restriction after solving the algebra.",
+        "Use braces for the resulting set, not just an unlabelled count."
+      ]
     }
   ],
   "status": "source-checked",

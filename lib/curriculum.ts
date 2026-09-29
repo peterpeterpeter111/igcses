@@ -20,6 +20,7 @@ import chemistryStates from '../research/curriculum-audits/4CH1-states-and-mixtu
 import chemistryAtoms from '../research/curriculum-audits/4CH1-atoms-and-periodic-table.json' with { type: 'json' };
 
 import mathsNumber from '../research/curriculum-audits/4MB1-number.json' with { type: 'json' };
+import mathsSets from '../research/curriculum-audits/4MB1-sets.json' with { type: 'json' };
 
 // These bounded audits link partial teaching; they do not promote completion.
-export const curriculumAudits = [motion, forces, mechanics, waves, energy, matter, magnetism, radioactivity, electricity, electricityCircuits, astrophysics, biologyLiving, humanCells, humanTissues, chemistryStates, chemistryAtoms, mathsNumber];
+export const curriculumAudits = [motion, forces, mechanics, waves, energy, matter, magnetism, radioactivity, electricity, electricityCircuits, astrophysics, biologyLiving, humanCells, humanTissues, chemistryStates, chemistryAtoms, mathsNumber, mathsSets];

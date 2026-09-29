@@ -708,6 +708,13 @@ summary::marker {
   animation: chapter-reader-open 0.9s cubic-bezier(0.22, 0.72, 0.24, 1) both;
 }
 
+/* Keep fragment targets stationary while the browser chooses a scroll offset.
+   Normal chapter opens still use the existing 3D book entrance. */
+.chapter-reader:has(:target) {
+  animation: none;
+  transform: none;
+}
+
 @keyframes chapter-reader-open {
   from {
     opacity: 0;

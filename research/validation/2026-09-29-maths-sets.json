@@ -1,0 +1,194 @@
+{
+  "reviewDate": "2026-09-29",
+  "scope": "Independent finite-set and arithmetic checks for the original worked examples and practice answers. Not pedagogical validation or template activation.",
+  "cases": [
+    {
+      "case": "Distinct letters in LEVEL",
+      "actual": [
+        "E",
+        "L",
+        "V"
+      ],
+      "expected": [
+        "E",
+        "L",
+        "V"
+      ],
+      "passed": true
+    },
+    {
+      "case": "Repeated ordering does not change a set",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "case": "Proper subset example",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "case": "Subset counterexample",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "case": "Union example",
+      "actual": [
+        2,
+        3,
+        4,
+        6,
+        8,
+        9
+      ],
+      "expected": [
+        2,
+        3,
+        4,
+        6,
+        8,
+        9
+      ],
+      "passed": true
+    },
+    {
+      "case": "Intersection example",
+      "actual": [
+        6
+      ],
+      "expected": [
+        6
+      ],
+      "passed": true
+    },
+    {
+      "case": "Only A",
+      "actual": [
+        1,
+        2
+      ],
+      "expected": [
+        1,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "case": "Neither",
+      "actual": [
+        5,
+        6
+      ],
+      "expected": [
+        5,
+        6
+      ],
+      "passed": true
+    },
+    {
+      "case": "Not both",
+      "actual": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "expected": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "passed": true
+    },
+    {
+      "case": "Club survey disjoint region counts",
+      "actual": [
+        5,
+        3,
+        4,
+        8
+      ],
+      "expected": [
+        5,
+        3,
+        4,
+        8
+      ],
+      "passed": true
+    },
+    {
+      "case": "Exactly one club",
+      "actual": 9,
+      "expected": 9,
+      "passed": true
+    },
+    {
+      "case": "Second survey union and neither",
+      "actual": [
+        21,
+        9
+      ],
+      "expected": [
+        21,
+        9
+      ],
+      "passed": true
+    },
+    {
+      "case": "Subset club subtraction",
+      "actual": 6,
+      "expected": 6,
+      "passed": true
+    },
+    {
+      "case": "Rule-based intersection",
+      "actual": [
+        3
+      ],
+      "expected": [
+        3
+      ],
+      "passed": true
+    },
+    {
+      "case": "Rule-based union",
+      "actual": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        9
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        9
+      ],
+      "passed": true
+    },
+    {
+      "case": "Universe-limited equation",
+      "actual": [
+        3
+      ],
+      "expected": [
+        3
+      ],
+      "passed": true
+    }
+  ],
+  "activeTemplates": 0,
+  "completeTeachingPoints": 0
+}

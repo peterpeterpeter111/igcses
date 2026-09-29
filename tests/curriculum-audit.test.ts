@@ -9,21 +9,21 @@ import { curriculumAudits } from '../lib/curriculum.ts';
 
 void test('combined curriculum audits preserve unique source identities and real partial evidence', () => {
   const parents = curriculumAudits.flatMap((a) => a.parents);
-  assert.equal(parents.length, 248);
+  assert.equal(parents.length, 257);
   assert.equal(new Set(parents.map((p) => p.parentId)).size, parents.length);
   const requirements = parents.flatMap((p) => p.requirements);
-  assert.equal(requirements.length, 612);
+  assert.equal(requirements.length, 632);
   assert.equal(new Set(requirements.map((r) => r.id)).size, requirements.length);
   for (const a of curriculumAudits) {
-    const chapterInventory = reviewedInventories.find((i) => i.qualification === a.qualification && i.points[0]?.chapterId === a.chapterId)!;
+    const chapterInventories = reviewedInventories.filter((i) => i.qualification === a.qualification && i.points.some((p) => p.chapterId === a.chapterId));
     const chapterNotes = allNotes.find((n) => n.sourceId === a.documentId && n.chapterId === a.chapterId)!;
-    assert.ok(chapterInventory);
+    assert.ok(chapterInventories.length);
     assert.ok(chapterNotes);
-    assert.equal(a.documentSha256, chapterInventory.specificationSha256);
+    assert.ok(chapterInventories.every((i) => i.specificationSha256 === a.documentSha256));
     assert.equal(a.completeTeachingPoints, 0);
     assert.equal(a.completeChapters, 0);
     for (const p of a.parents) {
-      const source = chapterInventory.points.find((i) => i.id === p.parentId)!;
+      const source = chapterInventories.flatMap((i) => i.points).find((i) => i.id === p.parentId)!;
       assert.ok(source);
       assert.equal(p.pdfPage, source.pdfPage);
       assert.equal(p.printedPage, source.printedPage);

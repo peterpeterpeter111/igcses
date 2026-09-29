@@ -10,7 +10,7 @@ import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-MAX_REQUEST_BYTES = 190000
+MAX_REQUEST_BYTES = 195000
 
 
 def git(*args):

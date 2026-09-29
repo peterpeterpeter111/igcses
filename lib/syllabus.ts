@@ -13,6 +13,7 @@ import humanCells from '../research/syllabus/4HB1-cells-foundations.json' with {
 import chemistryStates from '../research/syllabus/4CH1-states-and-mixtures.json' with { type: 'json' };
 
 import mathsNumber from '../research/syllabus/4MB1-number.json' with { type: 'json' };
+import mathsSets from '../research/syllabus/4MB1-sets.json' with { type: 'json' };
 
 // Reviewed overlays are kept separate from the immutable raw candidates.
 export const reviewedInventories = [
@@ -28,4 +29,5 @@ export const reviewedInventories = [
   { title: 'Cells and tissues (1.1–1.16)', ...humanCells },
   { title: 'Principles foundations (1.1–1.22)', ...chemistryStates },
   { title: 'Number: section 1, rows A–K', ...mathsNumber },
+  { title: 'Sets: section 2, rows A–I', ...mathsSets },
 ];

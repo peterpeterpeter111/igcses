@@ -1,3 +1,7 @@
+# Paused at 5% — 29 September 2026
+
+Read research/checkpoints/2026-09-29-SETS-PAUSED.md first. Latest allowance: 5% five-hour / 54% weekly; no reset. GitHub sync is repaired and verified through remote 16e3198 (local db458be). The new Sets notes and section-link fix are saved locally but need the next non-force sync. 13 partial notes / 204 sections; 257 reviewed parents / 632 partial requirements / 350 links. Seven obtained pairs; zero complete chapters/points/processed papers/active templates. 86 tests, typecheck, lint, research checks and final production build/public scan pass. Resume only above 5% in both windows; sync the saved delta first, then Algebra, paper inventory and calibrated templates. Keep AI last; no deployment/reset.
+
 # Latest checkpoint — Maths cover review, 29 September
 
 Read research/checkpoints/2026-09-29-MATHS-COVER.md first. GitHub sync repaired: remote 6f18229 exactly mirrors local d2f9db4, including repair documentation. New Maths cover overlay verifies 4MB1/01 Summer 2024 and matching P76502A log, with printed date 14 May (filename 15 May retained). Only QP page 1 / MS pages 1–2 visually checked; no task index or fully processed paper. 86 tests, typecheck, lint, research checks, build/public scan and bounded coverage browser check pass. All teaching/template completion counts unchanged; AI last, no reset. Latest allowances 73% five-hour / 65% weekly. This new phase needs non-force sync after commit.

@@ -4,7 +4,7 @@ Work in progress for six Pearson Edexcel International GCSE linear qualification
 
 ## Current checkpoint
 - Six subject routes and 36 top-level chapter entries, with subject search and transparent coverage pages.
-- Thirteen partial source-checked note documents (197 sections), with original examples. No complete chapters or complete syllabus coverage. Reviewed inventories contain 248 parent identities and 612 partial local requirements; these are not completion counts.
+- Thirteen partial source-checked note documents (204 sections), with original examples. No complete chapters or complete syllabus coverage. Reviewed inventories contain 257 parent identities and 632 partial local requirements; these are not completion counts.
 - Seven paper/scheme pairs downloaded, including Mathematics B with matching cover identity/paper log but no task index; zero whole papers fully processed.
 - D1 schema, session/history routes and tested quiz state/storage contracts. Eighty-six automated tests, including concurrent writes, lost-response recovery and exact, repeatable content seeding; isolated local Cloudflare D1 verification passes.
 - Three provisional families and two experimental Physics generators; zero active templates. Two bounded offline markers exist, but live AI generation and examiner-style marking remain deferred. This is not the completed question bank.
