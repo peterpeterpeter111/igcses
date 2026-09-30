@@ -1,0 +1,339 @@
+{
+  "schemaVersion": 1,
+  "paperId": "4MB1-2024-summer-01-candidate",
+  "qualification": "4MB1",
+  "canonicalIdentity": {
+    "year": 2024,
+    "series": "Summer",
+    "component": "01",
+    "variant": "unresolved",
+    "printedDate": "2024-05-14",
+    "filenameDate": "2024-05-15",
+    "paperLog": "P76502A",
+    "schemePublicationCode": "4MB1_01_2406_MS"
+  },
+  "reviewDate": "2026-09-30",
+  "reviewer": "Codex",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "status": "partial-source-checked",
+  "paperStage": "indexed",
+  "fullyProcessed": false,
+  "wholePaperMarks": 100,
+  "wholePaperLeafCount": 38,
+  "detailedLeafTasks": 2,
+  "detailedOriginalMarks": 4,
+  "reviewedQuestionTotals": {
+    "15": 4
+  },
+  "documents": [
+    {
+      "id": "4MB1-2024-summer-01-candidate-qp",
+      "type": "question-paper",
+      "url": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Mathematics-B/2016/Exam-materials/4mb1-01-que-20240515.pdf",
+      "sha256": "05e2896c96a92fe76d588bef9bfcef6ec6b5ee6cd95a5bed2404176caba9b0fb",
+      "pageCount": 24,
+      "accessStatus": "obtained",
+      "localPath": "work/discovery/2026-09-28-mathematics-b/4MB1-2024-summer-01-candidate-qp.pdf"
+    },
+    {
+      "id": "4MB1-2024-summer-01-candidate-ms",
+      "type": "mark-scheme",
+      "url": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Mathematics-B/2016/Exam-materials/4mb1-01-rms-20240822.pdf",
+      "sha256": "5e57bd1855d44ac575ba380b1b35f34039f62825259e94e173a064909c21bbf9",
+      "pageCount": 26,
+      "accessStatus": "obtained",
+      "localPath": "work/discovery/2026-09-28-mathematics-b/4MB1-2024-summer-01-candidate-ms.pdf"
+    }
+  ],
+  "indexRef": "research/paper-indexes/4MB1-2024-summer-01.json",
+  "coverReviewRef": "research/paper-reviews/4MB1-2024-summer-01.json",
+  "pageAudit": {
+    "questionPaper": {
+      "visuallyReviewedPages": [
+        12
+      ],
+      "wholeDocumentReviewed": false,
+      "scope": "Q15(a)/(b) source expressions and marks. Q16 is visible on the same page but is not analysed by this overlay."
+    },
+    "markScheme": {
+      "visuallyReviewedPages": [
+        3,
+        4,
+        5,
+        14
+      ],
+      "wholeDocumentReviewed": false,
+      "scope": "General guidance and Q15(a)/(b) rules; other task criteria not reviewed here."
+    }
+  },
+  "examinerReportStatus": "not-sought-for-this-bounded-review",
+  "currentSpecification": {
+    "documentId": "4MB1-spec",
+    "issue": "Issue 1 - January 2016",
+    "pdfPages": [
+      20
+    ],
+    "sha256": "62d4534ba1c0aee42ce2d3e7fd1da8083fd03216dd106da11ae590525d3187a5",
+    "scopeNote": "Parent 3C visually checked; full amendment audit for target sitting remains open."
+  },
+  "tasks": [
+    {
+      "paperId": "4MB1-2024-summer-01-candidate",
+      "recordKind": "leaf",
+      "questionPaperPages": [
+        12
+      ],
+      "markSchemePages": [
+        14
+      ],
+      "originalMarks": 2,
+      "commandWord": "Factorise fully",
+      "stimulusTypes": [
+        "algebraic-expression"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            12
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; do not infer an authoritative AO split.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex",
+      "reviewerType": "agent",
+      "reviewDate": "2026-09-30",
+      "humanReviewed": false,
+      "taskId": "4MB1-2024-summer-01-candidate.Q15.a",
+      "questionPath": "15.a",
+      "requiredKnowledge": [
+        "Common numerical and variable factors",
+        "Distributive law",
+        "Complete factorisation"
+      ],
+      "contextSummary": "Factor a two-term expression sharing a numerical coefficient and one variable.",
+      "sourceExpression": "6a + 24ab",
+      "solutionStructure": [
+        "The coefficient common factor is 6 and both terms contain a.",
+        "Divide both terms by 6a to obtain 1 and 4b.",
+        "The fully factorised expression is 6a(1 + 4b); expansion restores 6a + 24ab."
+      ],
+      "markingMethod": "method-marks",
+      "criteria": [
+        {
+          "id": "partial-factorisation",
+          "marks": 1,
+          "code": "M1",
+          "rule": "A correct partial factorisation earns the method mark. The source also allows a displayed bracket 1 + 4b with an incomplete outer factor; do not silently narrow the criterion to completely equivalent intermediate expressions."
+        },
+        {
+          "id": "complete-factorisation",
+          "marks": 1,
+          "code": "A1",
+          "rule": "The fully factorised product 6a(1 + 4b), or equivalent appropriate factor order, earns the accuracy mark after the method criterion, which a correct final product can imply."
+        }
+      ],
+      "acceptableAlternatives": [
+        "Equivalent order of the outside factors or bracket terms.",
+        "Scheme examples of partial credit include 6(a + 4ab), a(6 + 24b), 3a(2 + 8b), 2a(3 + 12b), 3(2a + 8ab) and 2(3a + 12ab)."
+      ],
+      "dependencies": [
+        "A correct final factorisation normally earns both marks without separate working under scheme page 4.",
+        "Do not repeatedly penalise one omitted common factor.",
+        "No routine transfer of marks from part (b); scheme page 5 separates parts."
+      ],
+      "commonErrors": [
+        {
+          "description": "Extracting only a numerical or variable factor and stopping before full factorisation.",
+          "origin": "scheme",
+          "sourceRefs": [
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                14
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Replacing the quotient of a term by itself with 0 instead of 1.",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4MB1:issue1:3C",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Factorise the source expression; the verified Algebra row 3C explicitly covers simple algebraic factorisation. Mapping is to the obtained Issue 1 specification, not a completed series-amendment audit.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                14
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedFamilyId": "4MB1.factorisation.common-monomial",
+      "generalSchemePages": [
+        3,
+        4,
+        5
+      ],
+      "markingReviewNotes": [
+        "The source permits partial-bracket evidence that a simple algebraic-equivalence checker would miss. A generated marker needs explicit calibration for this source exception.",
+        "Contradictory methods or suspected misreads should be routed for review rather than given an invented automatic rule."
+      ],
+      "blockers": [
+        "Generative family, varied partial-response calibration and parser/AI assessment are not implemented for this task."
+      ]
+    },
+    {
+      "paperId": "4MB1-2024-summer-01-candidate",
+      "recordKind": "leaf",
+      "questionPaperPages": [
+        12
+      ],
+      "markSchemePages": [
+        14
+      ],
+      "originalMarks": 2,
+      "commandWord": "Factorise fully",
+      "stimulusTypes": [
+        "algebraic-expression"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            12
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; do not infer an authoritative AO split.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex",
+      "reviewerType": "agent",
+      "reviewDate": "2026-09-30",
+      "humanReviewed": false,
+      "taskId": "4MB1-2024-summer-01-candidate.Q15.b",
+      "questionPath": "15.b",
+      "requiredKnowledge": [
+        "Quadratic factorisation",
+        "Signs of factor pairs",
+        "Expansion to check coefficients"
+      ],
+      "contextSummary": "Factor a monic quadratic whose two linear factors have integer constants.",
+      "sourceExpression": "x² − 7x + 12",
+      "solutionStructure": [
+        "Find constants with product 12 and sum −7: −3 and −4.",
+        "The result is (x − 3)(x − 4).",
+        "Expansion gives x² − 7x + 12; reversing the brackets gives the same product."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "factorisation-band",
+          "marks": 2,
+          "code": "B2/B1",
+          "rule": "Award two for the correct factorised product. Otherwise award one for a factorisation whose expansion has exactly two correct terms of the original quadratic. This is a single alternative-score criterion, not two separately required method steps."
+        }
+      ],
+      "acceptableAlternatives": [
+        "(x − 4)(x − 3).",
+        "(−x + 4)(−x + 3), explicitly accepted in the source.",
+        "Reordering equivalent factors or their terms preserves the correct product."
+      ],
+      "dependencies": [
+        "The task-specific scheme says to use the answer line; if it is empty, use the final line of working.",
+        "Do not ignore subsequent working for this part. A formerly correct line is not automatically the assessed response when replaced by another final answer.",
+        "The task-specific answer-location rule overrides a generic policy that selects the best intermediate algebraic line. Ambiguous transcription or multiple competing final answers should be reviewed."
+      ],
+      "commonErrors": [
+        {
+          "description": "A bracket product with only two correct expanded terms earns partial credit, rather than full credit for the appearance of two brackets.",
+          "origin": "scheme",
+          "sourceRefs": [
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                14
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Giving only roots instead of a factorised expression.",
+          "origin": "editorial"
+        },
+        {
+          "description": "Choosing positive constants that give the wrong middle-term sign.",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4MB1:issue1:3C",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Factorise the source expression; the verified Algebra row 3C explicitly covers simple algebraic factorisation. Mapping is to the obtained Issue 1 specification, not a completed series-amendment audit.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                14
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedFamilyId": "4MB1.factorisation.monic-quadratic",
+      "generalSchemePages": [
+        3,
+        4,
+        5
+      ],
+      "markingReviewNotes": [
+        "The two-term partial-credit rule must compare expanded coefficients against this task, including the leading term; it is not one mark per correct bracket.",
+        "Scalar-factor and unconventional but equivalent products need calibrated acceptance before a generic expression parser can be trusted."
+      ],
+      "blockers": [
+        "Generative family and final-answer/partial-credit calibration remain pending."
+      ]
+    }
+  ],
+  "marksReconciled": true,
+  "processingNotes": [
+    "Detailed coverage is two of the 38 indexed parts, covering four of 100 original marks.",
+    "The paper remains indexed; marksReconciled refers to the existing whole-paper text totals and this subset, not complete task processing.",
+    "No template family record or activation is established by proposedFamilyId."
+  ],
+  "blockers": [
+    "36 Maths parts still lack detailed analyses.",
+    "Whole-paper visual/page and scheme-content audit remains incomplete.",
+    "Outside the reviewed subset, extracted Maths text still contains unresolved glyph names and private-use characters; use the PDF for mathematical notation.",
+    "Source-linked generative families, calibration and assessment-objective review remain unfinished."
+  ]
+}

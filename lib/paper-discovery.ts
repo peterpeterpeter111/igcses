@@ -1,6 +1,7 @@
 import mathematicsDiscovery from '../research/discovery/2026-09-28-mathematics-b.json' with { type: 'json' };
 import mathematicsCoverReview from '../research/paper-reviews/4MB1-2024-summer-01.json' with { type: 'json' };
 import mathematicsIndex from '../research/paper-indexes/4MB1-2024-summer-01.json' with { type: 'json' };
+import mathematicsDetail from '../research/extractions/4MB1-2024-summer-01.json' with { type: 'json' };
 
 // New downloads remain separate from the preserved indexed batch and reviews.
 export const additionalPaperCandidates = mathematicsDiscovery.records;
@@ -32,4 +33,29 @@ export function obtainedPaperCandidates(qualification: string) {
       record.questionPaper.accessStatus === 'obtained' &&
       record.markScheme.accessStatus === 'obtained',
   );
+}
+
+// Return coverage metadata only; detailed answer criteria stay out of this view.
+export function paperDetailedSummary(record: (typeof additionalPaperCandidates)[number]) {
+  const index = paperTaskIndex(record);
+  const detail = mathematicsDetail;
+  if (!index || detail.paperId !== record.id || detail.qualification !== record.qualification ||
+      detail.documents.find((d) => d.type === 'question-paper')?.sha256 !== record.questionPaper.sha256 ||
+      detail.documents.find((d) => d.type === 'mark-scheme')?.sha256 !== record.markScheme.sha256 ||
+      detail.tasks.length !== detail.detailedLeafTasks ||
+      new Set(detail.tasks.map((t) => t.taskId)).size !== detail.tasks.length ||
+      detail.tasks.reduce((sum, t) => sum + t.originalMarks, 0) !== detail.detailedOriginalMarks ||
+      detail.tasks.some((t) => !index.tasks.some((i) => i.taskId === t.taskId && i.originalMarks === t.originalMarks))) {
+    return null;
+  }
+  return {
+    detailedTasks: detail.tasks.length,
+    originalMarks: detail.detailedOriginalMarks,
+    indexedTasks: index.indexedLeafCount,
+    remainingTasks: index.indexedLeafCount - detail.tasks.length,
+    reviewedAt: detail.reviewDate,
+    humanReviewed: detail.humanReviewed,
+    fullyProcessed: detail.fullyProcessed,
+    blockers: detail.blockers,
+  };
 }

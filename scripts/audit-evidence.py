@@ -46,7 +46,7 @@ def audit(root=ROOT):
     sources = read('research/sources.json')
     batch = read('research/batches/2026-09-08-cross-subject-lower-01.manifest.json')
     pilot = read('research/pilot/4EB1-2024-November-01.json')
-    extraction = read('research/extractions/4PH1-2024-June-1-standard.json')
+    extractions = [json.loads(p.read_text()) for p in sorted((root / 'research/extractions').glob('*.json'))]
     inventories = [json.loads(p.read_text()) for p in sorted((root / 'research/syllabus').glob('*.json'))]
     notes = [json.loads(p.read_text()) for p in sorted((root / 'content/notes').glob('*.json'))]
     audits = [json.loads(p.read_text()) for p in sorted((root / 'research/curriculum-audits').glob('*.json'))]
@@ -63,7 +63,7 @@ def audit(root=ROOT):
         elif review['identityStatus'] == 'cover-checked' and review['coverPairingStatus'] == 'matched':
             cover_reviewed_ids.add(candidate['id'])
     documents = {s['id']: s for s in sources}
-    documents.update({d['id']: d for d in pilot['documents'] + extraction['documents']})
+    documents.update({d['id']: d for d in pilot['documents'] + [d for e in extractions for d in e['documents']]})
     expected_documents = [{'id': s['id'], 'sha256': s['sha256']} for s in sources]
     expected_documents += [{'id': d['id'], 'sha256': d['sha256']} for d in pilot['documents']]
     for paper in batch['records']:

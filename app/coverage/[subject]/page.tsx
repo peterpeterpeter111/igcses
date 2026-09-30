@@ -12,7 +12,7 @@ import sources from '@/research/sources.json';
 import { reviewedInventories } from '@/lib/syllabus';
 import physicsSkills from '@/research/syllabus-skills/4PH1-issue4.json';
 import { curriculumAudits } from '@/lib/curriculum';
-import { obtainedPaperCandidates, paperCoverReview, paperTaskIndex } from '@/lib/paper-discovery';
+import { obtainedPaperCandidates, paperCoverReview, paperTaskIndex, paperDetailedSummary } from '@/lib/paper-discovery';
 export default async function SubjectCoverage({
   params,
 }: {
@@ -113,19 +113,21 @@ export default async function SubjectCoverage({
         {obtainedPaperCandidates(s.code).map((record) => {
           const review = paperCoverReview(record);
           const index = paperTaskIndex(record);
+          const detail = paperDetailedSummary(record);
           return (
           <section className="evidence-row" key={record.id}>
             <h3>{review ? `${s.code}/${review.observedComponent} · ${review.printedDate}` : record.label}</h3>
             <p>{index
-              ? 'Text index available · full visual and detailed review pending'
+              ? detail ? 'Text index available · detailed review started' : 'Text index available · full visual and detailed review pending'
               : review
               ? 'Obtained · cover identity and paper log matched · task indexing pending'
               : 'Obtained only · identity and pairing review pending'}</p>
             {index ? <p>
               {index.indexedLeafCount} question parts across {index.questionCount} questions;
               {' '}{index.indexedOriginalMarks} original marks reconciled. Labels and marks
-              indexed from text with selected page checks. No detailed Maths extraction
-              and no fully processed paper.
+              indexed from text with selected page checks. {detail
+                ? `${detail.detailedTasks} of ${detail.indexedTasks} parts (${detail.originalMarks} original marks) have detailed source-checked records; ${detail.remainingTasks} parts still need detailed review.`
+                : 'No detailed Maths extraction.'} No fully processed paper.
             </p> : <p>
               Both official Pearson PDFs were downloaded and hashed. No tasks
               indexed, no detailed extraction and no fully processed paper.
@@ -140,8 +142,9 @@ export default async function SubjectCoverage({
               </a>
             </p>
             {review && <p className="status">{review.dateDiscrepancy} Agent review on {review.reviewedAt}; no human review.</p>}
+            {detail && <p className="status">Detailed subset reviewed on {detail.reviewedAt}; no human review or active Maths templates.</p>}
             <ul className="plain-list">
-              {(index?.blockers ?? review?.limitations ?? record.limitations).map((limitation) => <li key={limitation}>{limitation}</li>)}
+              {(detail?.blockers ?? index?.blockers ?? review?.limitations ?? record.limitations).map((limitation) => <li key={limitation}>{limitation}</li>)}
             </ul>
           </section>
           );
