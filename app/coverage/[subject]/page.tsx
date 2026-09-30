@@ -12,7 +12,7 @@ import sources from '@/research/sources.json';
 import { reviewedInventories } from '@/lib/syllabus';
 import physicsSkills from '@/research/syllabus-skills/4PH1-issue4.json';
 import { curriculumAudits } from '@/lib/curriculum';
-import { obtainedPaperCandidates, paperCoverReview } from '@/lib/paper-discovery';
+import { obtainedPaperCandidates, paperCoverReview, paperTaskIndex } from '@/lib/paper-discovery';
 export default async function SubjectCoverage({
   params,
 }: {
@@ -112,16 +112,24 @@ export default async function SubjectCoverage({
         ))}
         {obtainedPaperCandidates(s.code).map((record) => {
           const review = paperCoverReview(record);
+          const index = paperTaskIndex(record);
           return (
           <section className="evidence-row" key={record.id}>
             <h3>{review ? `${s.code}/${review.observedComponent} · ${review.printedDate}` : record.label}</h3>
-            <p>{review
+            <p>{index
+              ? 'Text index available · full visual and detailed review pending'
+              : review
               ? 'Obtained · cover identity and paper log matched · task indexing pending'
               : 'Obtained only · identity and pairing review pending'}</p>
-            <p>
+            {index ? <p>
+              {index.indexedLeafCount} question parts across {index.questionCount} questions;
+              {' '}{index.indexedOriginalMarks} original marks reconciled. Labels and marks
+              indexed from text with selected page checks. No detailed Maths extraction
+              and no fully processed paper.
+            </p> : <p>
               Both official Pearson PDFs were downloaded and hashed. No tasks
               indexed, no detailed extraction and no fully processed paper.
-            </p>
+            </p>}
             <p>
               <a href={record.questionPaper.url} target="_blank" rel="noreferrer">
                 Question paper ({record.questionPaper.pageCount} pages) ↗
@@ -133,7 +141,7 @@ export default async function SubjectCoverage({
             </p>
             {review && <p className="status">{review.dateDiscrepancy} Agent review on {review.reviewedAt}; no human review.</p>}
             <ul className="plain-list">
-              {(review?.limitations ?? record.limitations).map((limitation) => <li key={limitation}>{limitation}</li>)}
+              {(index?.blockers ?? review?.limitations ?? record.limitations).map((limitation) => <li key={limitation}>{limitation}</li>)}
             </ul>
           </section>
           );

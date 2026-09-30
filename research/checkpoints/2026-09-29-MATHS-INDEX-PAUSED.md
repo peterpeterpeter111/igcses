@@ -1,0 +1,23 @@
+# Mathematics task index and allowance checkpoint — 29 September 2026
+
+Continues saved Algebra commit 96b0e60 and Sets commit 9f3f4aa. Preserve all history and UI. The allowance fell from 7% five-hour / 39% weekly to 0% five-hour / 38% weekly at the final check. Development is paused; no reset consumed. Product work is saved in d1f8c05; this documentation correction records the final gate. Check fresh allowances before continuing and pause at 5% in either.
+
+## Completed this phase
+- Added a separate Mathematics B text index at research/paper-indexes/4MB1-2024-summer-01.json: 27 questions, 38 lowest-level numbered parts, 100 original marks. All question totals match the question paper and mark scheme in sequence and sum to the cover total. Both PDF hashes verified against the saved cover review.
+- Text-label and mark reconciliation is not detailed extraction or whole-paper processing. Zero Maths detailed tasks. Q8 remains one two-mark task despite three answer spaces. Q25 spans QP pages 20–21. Q26(a)(i)/(ii) have one mark each despite the scheme's grouped two-mark cell; Q26(b) has four and retains stimulus page 22.
+- Visually inspected QP pages 18, 22 and 23 and scheme page 24. Q23(d)'s split text label and Q26's grouped marks resolved. Only Q26's three task-level visualLabelMarksChecked flags are true because both sides were inspected; no full visual audit claimed.
+- Coverage UI displays the 38-part / 100-mark text index and remaining checks. Binding requires exact candidate ID, qualification and QP/MS hashes; original discovery and cover records remain unchanged.
+- Fixed a real text-preflight blind spot: it now flags unresolved /g-number glyph names and private-use characters. The new report finds warning characters on all 24 QP pages (15 with /g tokens) and 18 scheme pages. Some are decorative, so warnings require visual review rather than automatic rejection. No extraction exceptions occurred. Earlier no-warning report is retained as historical; it did not certify mathematical fidelity.
+
+## Verification
+88 application tests pass, including mark sums, unique IDs, page bounds, continuation/stimulus handling, stale-hash rejection and glyph-warning detection. Typecheck, lint and 13 research checks pass. Final Sites 0.1.75 production build and public scan pass (49 files, zero findings). Browser verified Mathematics coverage shows the correct counts and no full-processing claim.
+
+Algebra foundations saved in 96b0e60 remain verified: six new original teaching sections for 3A–3C, 19 bounded arithmetic/polynomial checks, working subject search and section navigation. The source page was visually inspected. Current totals are 13 partial notes / 210 sections, 260 reviewed parents / 642 partial local requirements / 356 links. Seven obtained pairs. Physics 51 detailed records / 110 marks. Three provisional families, two experimental generators, two bounded offline markers; zero active templates, complete chapters/points or fully processed papers. AI remains unconfigured; no Sites version, deployment or verified live URL.
+
+## GitHub
+The interrupted Sets upload was completed: GitHub 84105588f8cb4d9beefe2eb030d980ed534dc246 exactly mirrors local 9f3f4aa72d88728eed1d524068fb083f16ca0a13 (tree 2d6c8526456ab1c786ef682e44fc39dea0a2a700), verified after fetch. The original sync blocker is resolved. Algebra 96b0e60 and this paper-index checkpoint still need non-force sync. A three-batch plan for 96b0e60 exists under ignored work/github-sync/2026-09-29-algebra-foundations; it has NOT been submitted. Prefer preparing a fresh plan for the latest full commit.
+
+Coverage CSV currently serializes as 194970 bytes in the actual sync planner against a 195000 cap. It fits now, but further curriculum growth needs an explicit lossless storage/transfer design. Never silently truncate, hide content or bypass review. This phase did not alter the cap or file structure.
+
+## Resume prompt
+Resume the latest local commit and CONTINUE_ASTRA.md. Read this checkpoint and PROGRESS_CHECKPOINT.md. Check both allowances; continue only above 5%, consume no reset. Sync all newer local work from remote 8410558 through the existing reviewed non-force procedure, verifying exact tree equality. Preserve the original raw evidence and UI. Continue the Maths whole-page visual audit and detailed extraction, Algebra 3D–L, broader curriculum and calibrated templates. Fix the growing coverage-ledger transfer constraint with a transparent lossless approach before adding rows beyond the existing request cap. Keep AI integration last and all completion counts honest. Save/pause at 5% in either window.

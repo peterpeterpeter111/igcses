@@ -1,0 +1,145 @@
+{
+  "date": "2026-09-29",
+  "scope": "Six original Algebra foundation sections for 4MB1 rows 3A\u20133C. Exact arithmetic and polynomial checks supplement the agent source/teaching review; finite substitution checks are explicitly bounded. This is not independent human moderation or question-template calibration.",
+  "notePath": "content/notes/mathematics.json",
+  "sourcePdfPage": 20,
+  "passed": 19,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "Signed bracket coefficients",
+      "method": "Exact coefficient arithmetic for x and y.",
+      "actual": "[4, -11]",
+      "expected": "[4, -11]",
+      "passed": true
+    },
+    {
+      "name": "Bracket practice polynomial",
+      "method": "Polynomial convolution; ascending powers.",
+      "actual": "[-6, 1, 1]",
+      "expected": "[-6, 1, 1]",
+      "passed": true
+    },
+    {
+      "name": "Index worked coefficient",
+      "method": "Exact rational coefficient arithmetic.",
+      "actual": "1",
+      "expected": "1",
+      "passed": true
+    },
+    {
+      "name": "Index worked exponent",
+      "method": "Exact exponent arithmetic, positive base stipulated.",
+      "actual": "4",
+      "expected": "4",
+      "passed": true
+    },
+    {
+      "name": "Index practice coefficient",
+      "method": "Integer arithmetic.",
+      "actual": "12",
+      "expected": "12",
+      "passed": true
+    },
+    {
+      "name": "Index practice exponent",
+      "method": "Exact rational exponent arithmetic.",
+      "actual": "2",
+      "expected": "2",
+      "passed": true
+    },
+    {
+      "name": "Hire formula worked cost",
+      "method": "Direct arithmetic from original charges.",
+      "actual": "40",
+      "expected": "40",
+      "passed": true
+    },
+    {
+      "name": "Signed substitution practice",
+      "method": "Direct exact substitution with squared time.",
+      "actual": "4",
+      "expected": "4",
+      "passed": true
+    },
+    {
+      "name": "Rearranged formula substituted back, y=-5",
+      "method": "Exact sample substitution into original formula, not a universal proof.",
+      "actual": "-5",
+      "expected": "-5",
+      "passed": true
+    },
+    {
+      "name": "Rearranged formula substituted back, y=-1",
+      "method": "Exact sample substitution into original formula, not a universal proof.",
+      "actual": "-1",
+      "expected": "-1",
+      "passed": true
+    },
+    {
+      "name": "Rearranged formula substituted back, y=0",
+      "method": "Exact sample substitution into original formula, not a universal proof.",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "name": "Rearranged formula substituted back, y=2",
+      "method": "Exact sample substitution into original formula, not a universal proof.",
+      "actual": "2",
+      "expected": "2",
+      "passed": true
+    },
+    {
+      "name": "Rearranged formula substituted back, y=7",
+      "method": "Exact sample substitution into original formula, not a universal proof.",
+      "actual": "7",
+      "expected": "7",
+      "passed": true
+    },
+    {
+      "name": "Excluded y=1 would require contradictory constants",
+      "method": "Original equation would require x+3=x\u22122; constant difference is non-zero.",
+      "actual": "5",
+      "expected": "5",
+      "passed": true
+    },
+    {
+      "name": "Cylinder rearrangement",
+      "method": "Cancel non-zero symbolic \u03c0r\u00b2 factor; rational stand-in checks division layout.",
+      "actual": "11",
+      "expected": "11",
+      "passed": true
+    },
+    {
+      "name": "Difference of squares product",
+      "method": "Polynomial convolution, ascending powers.",
+      "actual": "[0, -8, 0, 18]",
+      "expected": "[0, -8, 0, 18]",
+      "passed": true
+    },
+    {
+      "name": "Common-factor practice coefficients",
+      "method": "Coefficient multiplication; displayed monomials checked separately.",
+      "actual": "[12, 18]",
+      "expected": "[12, 18]",
+      "passed": true
+    },
+    {
+      "name": "Non-monic quadratic product",
+      "method": "Polynomial convolution, ascending powers.",
+      "actual": "[-2, 1, 6]",
+      "expected": "[-2, 1, 6]",
+      "passed": true
+    },
+    {
+      "name": "Monic quadratic practice product",
+      "method": "Polynomial convolution, ascending powers.",
+      "actual": "[12, -7, 1]",
+      "expected": "[12, -7, 1]",
+      "passed": true
+    }
+  ],
+  "completeChapters": 0,
+  "activeTemplates": 0
+}

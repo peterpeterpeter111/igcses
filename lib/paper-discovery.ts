@@ -1,5 +1,6 @@
 import mathematicsDiscovery from '../research/discovery/2026-09-28-mathematics-b.json' with { type: 'json' };
 import mathematicsCoverReview from '../research/paper-reviews/4MB1-2024-summer-01.json' with { type: 'json' };
+import mathematicsIndex from '../research/paper-indexes/4MB1-2024-summer-01.json' with { type: 'json' };
 
 // New downloads remain separate from the preserved indexed batch and reviews.
 export const additionalPaperCandidates = mathematicsDiscovery.records;
@@ -11,6 +12,16 @@ export function paperCoverReview(record: (typeof additionalPaperCandidates)[numb
     mathematicsCoverReview.questionPaperSha256 === record.questionPaper.sha256 &&
     mathematicsCoverReview.markSchemeSha256 === record.markScheme.sha256
     ? mathematicsCoverReview
+    : null;
+}
+
+export function paperTaskIndex(record: (typeof additionalPaperCandidates)[number]) {
+  return paperCoverReview(record) &&
+    mathematicsIndex.paperId === record.id &&
+    mathematicsIndex.qualification === record.qualification &&
+    mathematicsIndex.questionPaperSha256 === record.questionPaper.sha256 &&
+    mathematicsIndex.markSchemeSha256 === record.markScheme.sha256
+    ? mathematicsIndex
     : null;
 }
 

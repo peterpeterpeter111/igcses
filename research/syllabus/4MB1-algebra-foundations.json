@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4MB1",
+  "specificationIssue": "Issue 1 - January 2016",
+  "specificationDocumentId": "4MB1-spec",
+  "specificationSha256": "62d4534ba1c0aee42ce2d3e7fd1da8083fd03216dd106da11ae590525d3187a5",
+  "reviewDate": "2026-09-29",
+  "reviewedBy": "Codex",
+  "reviewerType": "agent",
+  "reviewMethod": "Visual inspection of official specification PDF page 20 (printed page 14); component applicability retained from the reviewed PDF pages 11–12.",
+  "reviewedPages": [
+    20
+  ],
+  "scope": "Bounded Algebra foundations: section 3 rows A–C on official PDF page 20. Rows D–L were observed on the page but are not included in this teaching audit. Editorial requirements and partial notes do not certify completion.",
+  "points": [
+    {
+      "id": "4MB1:issue1:3A",
+      "reference": "3A",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "summary": "Simplify algebraic expressions using operations and integer or fractional index rules.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "number-and-algebra",
+      "noteSectionIds": [
+        "collecting-algebraic-terms",
+        "algebraic-index-laws"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-09-29"
+    },
+    {
+      "id": "4MB1:issue1:3B",
+      "reference": "3B",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "summary": "Construct, interpret, substitute into and rearrange formulae.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "number-and-algebra",
+      "noteSectionIds": [
+        "constructing-and-using-formulae",
+        "changing-the-subject"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-09-29"
+    },
+    {
+      "id": "4MB1:issue1:3C",
+      "reference": "3C",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "summary": "Factorise simple algebraic expressions.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "number-and-algebra",
+      "noteSectionIds": [
+        "factorising-common-factors",
+        "factorising-quadratics"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-09-29"
+    }
+  ]
+}

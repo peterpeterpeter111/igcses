@@ -5,7 +5,8 @@
   "sourcePages": [
     17,
     18,
-    19
+    19,
+    20
   ],
   "prerequisites": [
     "Understand multiplication, division and place value."
@@ -16,7 +17,9 @@
     "Select appropriate exact and approximate number representations.",
     "Solve ratio, percentage, conversion and bounds problems while stating assumptions.",
     "Interpret sets, membership and subset notation in a stated universe.",
-    "Use union, intersection, complements and Venn diagrams to solve counting and logical problems."
+    "Use union, intersection, complements and Venn diagrams to solve counting and logical problems.",
+    "Simplify algebraic expressions and factorise common, quadratic and difference-of-squares forms.",
+    "Construct, use and rearrange formulae while keeping necessary restrictions."
   ],
   "sections": [
     {
@@ -799,6 +802,239 @@
       "commonMistakes": [
         "Apply the universe restriction after solving the algebra.",
         "Use braces for the resulting set, not just an unlabelled count."
+      ]
+    },
+    {
+      "id": "collecting-algebraic-terms",
+      "title": "Terms, brackets and algebraic operations",
+      "points": [
+        "3A"
+      ],
+      "paragraphs": [
+        "An expression represents a value without asserting an equality. A term is one part separated by addition or subtraction; its coefficient is the numerical multiplier. Like terms have exactly the same variable factors and powers, so 4x² and −7x² combine, but 4x² and 4x do not.",
+        "Collect like terms by adding their coefficients. To multiply a bracket, multiply every term inside it. A minus sign outside a bracket means multiplication by −1, so every sign inside changes. For two brackets, each term in the first multiplies each term in the second.",
+        "For products and quotients, work with coefficients and variable factors separately. For example, (12x³y) ÷ (3xy) = 4x² when x and y are non-zero. Cancelling applies to factors of the entire numerator and denominator; it does not allow a term to be removed from a sum."
+      ],
+      "example": {
+        "question": "Simplify 3(2x − y) − 2(x + 4y).",
+        "steps": [
+          "Expand both brackets: 6x − 3y − 2x − 8y.",
+          "Collect x terms: 6x − 2x = 4x.",
+          "Collect y terms: −3y − 8y = −11y.",
+          "The result is 4x − 11y."
+        ],
+        "explanation": "The negative multiplier applies to both terms in the second bracket."
+      },
+      "practice": {
+        "question": "Expand and simplify (x + 3)(x − 2).",
+        "answer": "x² + x − 6.",
+        "explanation": "The four products are x², −2x, 3x and −6. Only the two linear terms combine."
+      },
+      "commonMistakes": [
+        "Do not combine x² and x as like terms.",
+        "Expand the entire bracket after a negative sign.",
+        "Cancelling terms across addition gives an invalid simplification."
+      ],
+      "terms": [
+        "coefficient",
+        "like terms",
+        "expand brackets",
+        "algebraic operations",
+        "simplify"
+      ]
+    },
+    {
+      "id": "algebraic-index-laws",
+      "title": "Index laws with algebraic bases",
+      "points": [
+        "3A"
+      ],
+      "paragraphs": [
+        "For the same base, multiplying powers adds the indices and dividing powers subtracts them: aᵐ × aⁿ = aᵐ⁺ⁿ and aᵐ ÷ aⁿ = aᵐ⁻ⁿ. Raising a power to a power multiplies the indices: (aᵐ)ⁿ = aᵐⁿ. The quotient requires a non-zero base. For fractional powers in these rules, taking a positive real base avoids ambiguities about real roots.",
+        "A negative index means a reciprocal, not a negative value: a⁻² = 1/a² for a ≠ 0. A fractional index combines a root and a power: for a > 0, a^(m/n) is the nth root of aᵐ, with integer m and positive integer n. For example, x^(3/2) = (√x)³ when x > 0.",
+        "Keep numerical coefficients separate from powers of a variable. A power outside brackets applies to every factor: (3x²)² = 9x⁴. The index rules do not combine powers that are added, so x² + x³ cannot be changed to x⁵."
+      ],
+      "example": {
+        "question": "For x > 0, simplify (2x^(3/2))² ÷ (4x⁻¹).",
+        "steps": [
+          "Square the coefficient and multiply the index: (2x^(3/2))² = 4x³.",
+          "Divide the coefficients: 4 ÷ 4 = 1.",
+          "Subtract the denominator index: 3 − (−1) = 4.",
+          "The expression simplifies to x⁴."
+        ],
+        "explanation": "The positive-base condition makes every displayed fractional power real and the denominator non-zero."
+      },
+      "practice": {
+        "question": "For y > 0, simplify 6y^(1/2) × 2y^(3/2).",
+        "answer": "12y².",
+        "explanation": "Multiply coefficients to get 12 and add the indices 1/2 + 3/2 = 2."
+      },
+      "commonMistakes": [
+        "Subtract the whole denominator index, including its sign.",
+        "A power of a product applies to its coefficient too.",
+        "Do not use product rules to simplify a sum of powers."
+      ],
+      "terms": [
+        "algebraic indices",
+        "fractional powers",
+        "negative indices",
+        "positive base",
+        "exponent"
+      ]
+    },
+    {
+      "id": "constructing-and-using-formulae",
+      "title": "Constructing and using formulae",
+      "points": [
+        "3B"
+      ],
+      "paragraphs": [
+        "A formula describes a relationship between quantities. Define what each letter represents and use consistent units before substituting. Translate the structure of a situation first: a fixed charge plus a charge for every item produces a constant term plus a multiple of the number of items.",
+        "Substitute a value everywhere its letter occurs. Put negative values and fractions in brackets, especially before squaring or dividing. In s = ut + ½at², the square applies to t, not to the whole term ½at. The same formula can give a negative displacement when the chosen direction is positive the other way.",
+        "Interpret the answer in the original situation and check whether its sign and size make sense. A formula may come with a domain: a number of items is usually a non-negative integer, whereas a measured time can be a non-negative real number. State any conversion before calculation rather than mixing metres with centimetres."
+      ],
+      "example": {
+        "question": "A hire company charges a fixed £12 plus £7 for each day d. Write the cost formula and find the cost for 4 days.",
+        "steps": [
+          "Let C be the total cost in pounds and d the whole number of days charged.",
+          "The fixed amount is 12 and the variable amount is 7d, so C = 12 + 7d.",
+          "For d = 4, C = 12 + 28 = £40."
+        ],
+        "explanation": "The fixed charge is added once; it is not multiplied by the number of days."
+      },
+      "practice": {
+        "question": "Evaluate s = ut + ½at² when u = −3, a = 2 and t = 4, using consistent metre-second units.",
+        "answer": "s = (−3)(4) + ½(2)(4²) = −12 + 16 = 4 m.",
+        "explanation": "The squared time is 16, and the initial-velocity contribution is negative."
+      },
+      "commonMistakes": [
+        "Do not multiply a one-off charge by the number of items.",
+        "Use brackets when substituting a negative value.",
+        "Convert units before substitution."
+      ],
+      "terms": [
+        "formula",
+        "substitution",
+        "construct a formula",
+        "fixed charge",
+        "variable cost"
+      ]
+    },
+    {
+      "id": "changing-the-subject",
+      "title": "Changing the subject of a formula",
+      "points": [
+        "3B"
+      ],
+      "paragraphs": [
+        "The subject is the variable isolated on one side of an equation. Keep equality by doing the same operation to both sides. Reverse additions, multiplications and other operations in a useful order; write each intermediate equation so signs and denominators remain visible.",
+        "If the desired variable appears in more than one term, gather those terms and factorise before dividing. For y = ax + b, subtract b and divide by a to obtain x = (y − b)/a, provided a ≠ 0. Brackets matter: the entire difference y − b is divided by a.",
+        "Check restrictions inherited from the original formula and any new division. If a variable is squared, taking a square root may introduce two possible signs. For A = πr² with a radius r ≥ 0, r = √(A/π); a general equation x² = k instead has x = ±√k for k > 0. Context determines which signs are allowed."
+      ],
+      "example": {
+        "question": "Make x the subject of y = (x + 3)/(x − 2). State the restrictions.",
+        "steps": [
+          "The original formula requires x ≠ 2. Multiply by x − 2: y(x − 2) = x + 3.",
+          "Expand and collect x terms: yx − x = 2y + 3.",
+          "Factorise: x(y − 1) = 2y + 3.",
+          "Divide by y − 1: x = (2y + 3)/(y − 1), with y ≠ 1.",
+          "The rearranged expression can never equal 2, since that would require 3 = −2."
+        ],
+        "explanation": "Collecting the repeated variable is essential. The value y = 1 is impossible in the original relation."
+      },
+      "practice": {
+        "question": "Make h the subject of V = πr²h, assuming r > 0.",
+        "answer": "h = V/(πr²).",
+        "explanation": "The whole factor πr² multiplies h, so divide both sides by that non-zero factor."
+      },
+      "commonMistakes": [
+        "Do not divide only one term of a sum.",
+        "Collect repeated occurrences of the subject before isolating it.",
+        "State excluded denominator values and consider signs when taking roots."
+      ],
+      "terms": [
+        "change of subject",
+        "rearrange",
+        "formula manipulation",
+        "repeated variable",
+        "restriction"
+      ]
+    },
+    {
+      "id": "factorising-common-factors",
+      "title": "Common factors and difference of squares",
+      "points": [
+        "3C"
+      ],
+      "paragraphs": [
+        "Factorising reverses expansion: it writes a sum as a product. Take out a common numerical factor and any variable factors shared by every term, using the smallest power present. The expression left inside the bracket must reproduce each original term when multiplied back.",
+        "The difference-of-squares identity is a² − b² = (a − b)(a + b). It works because the two middle terms cancel on expansion. A sum such as a² + b² does not have this factorisation over the real numbers.",
+        "Look for a common factor before using another pattern, and continue until the requested expression is fully factorised. Numerical content and variable factors may both be shared. Checking by expansion is a direct way to catch a lost sign or factor."
+      ],
+      "example": {
+        "question": "Factorise fully 18x³ − 8x.",
+        "steps": [
+          "Both terms contain 2x: 18x³ − 8x = 2x(9x² − 4).",
+          "The remaining bracket is (3x)² − 2².",
+          "Use the difference of squares: 2x(3x − 2)(3x + 2).",
+          "Expanding the last two brackets gives 9x² − 4, then multiplication by 2x restores the original expression."
+        ],
+        "explanation": "Stopping at 2x(9x² − 4) would leave a further factorisation available."
+      },
+      "practice": {
+        "question": "Factorise fully 12a²b + 18ab².",
+        "answer": "6ab(2a + 3b).",
+        "explanation": "The greatest common numerical factor is 6 and both terms contain a and b."
+      },
+      "commonMistakes": [
+        "A term divided by itself leaves 1 inside the bracket, not 0.",
+        "The difference-of-squares identity does not apply to a sum of squares.",
+        "Check for another factorisation after removing a common factor."
+      ],
+      "terms": [
+        "factorise",
+        "common factor",
+        "difference of squares",
+        "fully factorised"
+      ]
+    },
+    {
+      "id": "factorising-quadratics",
+      "title": "Factorising quadratic expressions",
+      "points": [
+        "3C"
+      ],
+      "paragraphs": [
+        "For x² + bx + c, look for two numbers whose sum is b and whose product is c. If they are p and q, expansion confirms (x + p)(x + q) = x² + (p + q)x + pq. A negative constant requires opposite signs; a positive constant requires matching signs.",
+        "For ax² + bx + c, one systematic method is to find two numbers whose product is ac and whose sum is b. Split the middle term using them, then factorise by grouping. Always check that the final brackets produce the original leading coefficient as well as the middle and constant terms.",
+        "Not every quadratic factorises into brackets with integer coefficients. Failure to find integer factors is not evidence that an equation has no real solutions. Factorising an expression also differs from solving an equation: setting each factor to zero is justified only when their product equals zero."
+      ],
+      "example": {
+        "question": "Factorise 6x² + x − 2.",
+        "steps": [
+          "Here ac = 6 × (−2) = −12. The numbers 4 and −3 have product −12 and sum 1.",
+          "Split the middle term: 6x² + 4x − 3x − 2.",
+          "Group: 2x(3x + 2) − 1(3x + 2).",
+          "Take out the shared bracket: (2x − 1)(3x + 2).",
+          "Check the middle terms: 4x − 3x = x."
+        ],
+        "explanation": "Matching both the sum and product is what makes the grouping work."
+      },
+      "practice": {
+        "question": "Factorise x² − 7x + 12.",
+        "answer": "(x − 3)(x − 4).",
+        "explanation": "The numbers −3 and −4 multiply to 12 and add to −7."
+      },
+      "commonMistakes": [
+        "Use ac, not just c, for the split-middle-term method when a ≠ 1.",
+        "Check signs by multiplying the brackets back out.",
+        "Do not set factors equal to zero unless solving an equation with zero on the other side."
+      ],
+      "terms": [
+        "quadratic factorisation",
+        "split the middle term",
+        "grouping",
+        "integer factors"
       ]
     }
   ],

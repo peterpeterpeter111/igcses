@@ -8,15 +8,34 @@ discovery status are never changed.
 import argparse
 import hashlib
 import json
+import re
 from datetime import datetime, timezone
 from pathlib import Path
-
-import pypdf
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
+def text_warnings(text, error=None):
+    warnings = []
+    if error:
+        warnings.append('text-extraction-error')
+    if len(text.strip()) < 60:
+        warnings.append('sparse-text-may-be-blank-or-visual')
+    if '\ufffd' in text:
+        warnings.append('replacement-characters')
+    if '\x00' in text:
+        warnings.append('null-characters')
+    if re.search(r'/g\d+', text):
+        warnings.append('unresolved-glyph-names')
+    if any(0xe000 <= ord(c) <= 0xf8ff or 0xf0000 <= ord(c) <= 0xffffd
+           or 0x100000 <= ord(c) <= 0x10fffd for c in text):
+        warnings.append('private-use-characters-need-visual-check')
+    return warnings
+
+
 def prepare(manifest_path, text_dir):
+    import pypdf
+
     manifest = json.loads(manifest_path.read_text())
     records, text_outputs = [], []
     for record in manifest['records']:
@@ -37,15 +56,7 @@ def prepare(manifest_path, text_dir):
                     error = None
                 except Exception as exc:
                     text, error = '', type(exc).__name__ + ': ' + str(exc)
-                warnings = []
-                if error:
-                    warnings.append('text-extraction-error')
-                if len(text.strip()) < 60:
-                    warnings.append('sparse-text-may-be-blank-or-visual')
-                if '\ufffd' in text:
-                    warnings.append('replacement-characters')
-                if '\x00' in text:
-                    warnings.append('null-characters')
+                warnings = text_warnings(text, error)
                 pages.append({'pdfPage': number, 'textChars': len(text),
                               'warnings': warnings, 'error': error})
                 page_text.append({'pdfPage': number, 'text': text})

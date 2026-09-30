@@ -49,3 +49,34 @@ void test('cover review binds to exact downloaded bytes and never claims whole-p
   assert.equal(paperCoverReview({ ...candidate, questionPaper: { ...candidate.questionPaper, sha256: 'different' } }), null);
   assert.equal(paperCoverReview({ ...candidate, markScheme: { ...candidate.markScheme, sha256: 'different' } }), null);
 });
+
+void test('Maths text index reconciles leaves and marks without promoting processing', async () => {
+  const { paperTaskIndex } = await import('../lib/paper-discovery.ts');
+  const candidate = obtainedPaperCandidates('4MB1')[0];
+  const index = paperTaskIndex(candidate)!;
+  assert.ok(index);
+  assert.equal(index.indexedLeafCount, 38);
+  assert.equal(index.indexedOriginalMarks, 100);
+  assert.equal(index.tasks.length, index.indexedLeafCount);
+  assert.equal(new Set(index.tasks.map((t) => t.taskId)).size, 38);
+  assert.equal(index.tasks.reduce((sum, t) => sum + t.originalMarks, 0), 100);
+  assert.deepEqual(index.questionTotals.map((q) => q.question), Array.from({ length: 27 }, (_, i) => i + 1));
+  for (const q of index.questionTotals) {
+    assert.equal(index.tasks.filter((t) => Number(t.questionPath.split('.')[0]) === q.question).reduce((sum, t) => sum + t.originalMarks, 0), q.marks);
+  }
+  for (const task of index.tasks) {
+    assert.equal(task.detailStatus, 'pending');
+    assert.equal(task.indexStatus, 'text-reconciled');
+    assert.ok(task.questionPaperPages.length && task.markSchemePages.length);
+    assert.ok([...task.questionPaperPages, ...task.stimulusPages].every((p) => p >= 1 && p <= candidate.questionPaper.pageCount));
+    assert.ok(task.markSchemePages.every((p) => p >= 1 && p <= candidate.markScheme.pageCount));
+  }
+  assert.deepEqual(index.tasks.filter((t) => t.questionPath.startsWith('26.')).map((t) => t.originalMarks), [1, 1, 4]);
+  assert.deepEqual(index.tasks.find((t) => t.questionPath === '26.b')!.stimulusPages, [22]);
+  assert.deepEqual(index.tasks.find((t) => t.questionPath === '25')!.questionPaperPages, [20, 21]);
+  assert.equal(index.fullyProcessed, false);
+  assert.equal(index.visualPageAuditComplete, false);
+  assert.equal(index.humanReviewed, false);
+  assert.equal(paperTaskIndex({ ...candidate, questionPaper: { ...candidate.questionPaper, sha256: 'different' } }), null);
+  assert.equal(paperTaskIndex({ ...candidate, markScheme: { ...candidate.markScheme, sha256: 'different' } }), null);
+});
