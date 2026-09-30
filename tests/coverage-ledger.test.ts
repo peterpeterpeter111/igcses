@@ -85,7 +85,7 @@ void test('reviewed inventories agree with source candidates and subject-specifi
       (n, inventory) => n + inventory.points.length,
       0,
     ),
-    260,
+    263,
   );
   const allIds = reviewedInventories.flatMap((i) => i.points.map((p) => p.id));
   assert.equal(new Set(allIds).size, allIds.length);
@@ -103,7 +103,7 @@ void test('reviewed inventories agree with source candidates and subject-specifi
       );
       if (inventory.qualification === '4MB1') {
         assert.equal(raw, undefined, 'Raw numeric extraction must stay untouched for lettered Maths rows');
-        assert.match(point.reference, /^(1[A-K]|2[A-I]|3[A-C])$/);
+        assert.match(point.reference, /^(1[A-K]|2[A-I]|3[A-F])$/);
         assert.equal(point.pdfPage, point.reference.startsWith('3') ? 20 : point.reference.startsWith('2') ? 19 : point.reference <= '1G' ? 17 : 18);
       } else {
         assert.ok(raw);

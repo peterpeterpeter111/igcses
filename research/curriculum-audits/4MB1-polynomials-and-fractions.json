@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4MB1",
+  "chapterId": "number-and-algebra",
+  "documentId": "4MB1-spec",
+  "specificationIssue": "Issue 1 - January 2016",
+  "documentSha256": "62d4534ba1c0aee42ce2d3e7fd1da8083fd03216dd106da11ae590525d3187a5",
+  "reviewDate": "2026-09-30",
+  "reviewer": "Codex",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Bounded Algebra continuation: section 3 rows D–F on official PDF page 20 (printed 14): factor theorem including non-monic linear factors and cubics, cubic division and simple algebraic fractions. Rows G–L remain outside this audit; all teaching is partial.",
+  "identifierPolicy": "Parent identities combine printed section 3 with row letters D–F. Requirement r-suffixes are editorial teaching breakdowns, not official substatement numbers.",
+  "notePath": "content/notes/mathematics.json",
+  "parents": [
+    {
+      "parentId": "4MB1:issue1:3D",
+      "officialReference": "3D",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Source row reviewed; worked examples and practice are partial. Independent assessment calibration and full chapter review remain open.",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:3D:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Test x − r and general ax ± b factors by substituting the correct root.",
+          "teachingEvidence": [
+            {
+              "sectionId": "factor-theorem",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check unfamiliar symbolic variants and coefficient/sign edge cases independently.",
+            "Complete source-linked assessment families and whole-chapter review."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:3D:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Use a known linear factor to help factorise a cubic and check expansion.",
+          "teachingEvidence": [
+            {
+              "sectionId": "factor-theorem",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check unfamiliar symbolic variants and coefficient/sign edge cases independently.",
+            "Complete source-linked assessment families and whole-chapter review."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:3D:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Find an unknown coefficient from a stated factor condition.",
+          "teachingEvidence": [
+            {
+              "sectionId": "factor-theorem-unknown-coefficient",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check unfamiliar symbolic variants and coefficient/sign edge cases independently.",
+            "Complete source-linked assessment families and whole-chapter review."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4MB1:issue1:3E",
+      "officialReference": "3E",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Source row reviewed; worked examples and practice are partial. Independent assessment calibration and full chapter review remain open.",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:3E:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Arrange a cubic in descending powers, including missing coefficients.",
+          "teachingEvidence": [
+            {
+              "sectionId": "dividing-cubics",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check unfamiliar symbolic variants and coefficient/sign edge cases independently.",
+            "Complete source-linked assessment families and whole-chapter review."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:3E:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Divide a cubic by a linear expression using multiply/subtract steps, including non-monic divisors.",
+          "teachingEvidence": [
+            {
+              "sectionId": "dividing-cubics",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check unfamiliar symbolic variants and coefficient/sign edge cases independently.",
+            "Complete source-linked assessment families and whole-chapter review."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:3E:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Check the quotient and remainder by reconstruction; identify an exact factor.",
+          "teachingEvidence": [
+            {
+              "sectionId": "dividing-cubics",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check unfamiliar symbolic variants and coefficient/sign edge cases independently.",
+            "Complete source-linked assessment families and whole-chapter review."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4MB1:issue1:3F",
+      "officialReference": "3F",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Source row reviewed; worked examples and practice are partial. Independent assessment calibration and full chapter review remain open.",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:3F:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Factorise and simplify fractions with linear or quadratic denominators, keeping original exclusions.",
+          "teachingEvidence": [
+            {
+              "sectionId": "simplifying-algebraic-fractions",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check unfamiliar symbolic variants and coefficient/sign edge cases independently.",
+            "Complete source-linked assessment families and whole-chapter review."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:3F:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Combine fractions with numerical denominators.",
+          "teachingEvidence": [
+            {
+              "sectionId": "adding-algebraic-fractions",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check unfamiliar symbolic variants and coefficient/sign edge cases independently.",
+            "Complete source-linked assessment families and whole-chapter review."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:3F:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Add and subtract fractions using common algebraic denominators and correct signs.",
+          "teachingEvidence": [
+            {
+              "sectionId": "adding-algebraic-fractions",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check unfamiliar symbolic variants and coefficient/sign edge cases independently.",
+            "Complete source-linked assessment families and whole-chapter review."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:3F:r4",
+          "origin": "editorial-decomposition",
+          "summary": "Multiply factored fractions and retain original denominator restrictions.",
+          "teachingEvidence": [
+            {
+              "sectionId": "multiplying-dividing-algebraic-fractions",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check unfamiliar symbolic variants and coefficient/sign edge cases independently.",
+            "Complete source-linked assessment families and whole-chapter review."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:3F:r5",
+          "origin": "editorial-decomposition",
+          "summary": "Divide using a reciprocal, excluding a zero or undefined divisor.",
+          "teachingEvidence": [
+            {
+              "sectionId": "multiplying-dividing-algebraic-fractions",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Check unfamiliar symbolic variants and coefficient/sign edge cases independently.",
+            "Complete source-linked assessment families and whole-chapter review."
+          ]
+        }
+      ]
+    }
+  ],
+  "completeTeachingPoints": 0,
+  "completeChapters": 0
+}

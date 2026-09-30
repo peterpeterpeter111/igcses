@@ -1,3 +1,11 @@
+# Latest checkpoint — Maths Q16, 30 September 2026
+
+Read research/checkpoints/2026-09-30-MATHS-Q16.md and 2026-09-30-POLYNOMIALS.md first. Six new partial sections cover 3D–F; Maths now has three detailed paper parts/eight marks (Q15a,b and Q16), with 35 of 38 parts still awaiting detailed review. Normalized task ledger: 54 tasks / 87 mappings. Teaching: 216 sections / 13 partial notes, 263 parents / 653 partial requirements / 362 links. 92 tests, typecheck, lint, 13 research checks, production build/public scan and bounded browser checks pass. No complete chapters/points/processed papers/active templates; no Maths generator or marker yet. GitHub d3d31d5 mirrors 7ff5e02; newer curriculum and extraction delta needs non-force sync. Last allowance 22% five-hour / 10% weekly; save/pause at 5% in either, no reset. Keep AI last and history/UI intact. Earlier checkpoints are historical.
+
+# Latest curriculum checkpoint — 30 September 2026
+
+Read research/checkpoints/2026-09-30-POLYNOMIALS.md first. Six new partial Maths sections cover verified rows 3D–F: factor theorem, unknown coefficients, cubic division, and algebraic fractions. Totals: 216 sections / 13 partial notes; 263 reviewed parents / 653 partial requirements / 362 teaching links. 92 tests, typecheck, lint, 13 research checks, exact example checks, production build/public scan and bounded reader verification pass. Paper/template completion counts unchanged. GitHub d3d31d5 mirrors local 7ff5e02; this curriculum delta needs syncing after save. Keep AI last, preserve history/UI and save/pause at 5% in either window; no reset. Earlier entries are historical.
+
 Final gate check: 4% five-hour / 23% weekly remaining; paused, no reset. Resume only above 5% in both windows.
 
 # Resume checkpoint — 30 September 2026

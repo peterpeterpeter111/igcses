@@ -8,17 +8,24 @@ void test('Maths coverage exposes the reviewed subset without criteria or promot
   const candidate = obtainedPaperCandidates('4MB1')[0];
   const summary = paperDetailedSummary(candidate)!;
   assert.ok(summary);
-  assert.equal(summary.detailedTasks, 2);
-  assert.equal(summary.originalMarks, 4);
+  assert.equal(summary.detailedTasks, 3);
+  assert.equal(summary.originalMarks, 8);
   assert.equal(summary.indexedTasks, 38);
-  assert.equal(summary.remainingTasks, 36);
+  assert.equal(summary.remainingTasks, 35);
   assert.equal(summary.fullyProcessed, false);
   assert.equal(summary.humanReviewed, false);
   assert.ok(!('tasks' in summary) && !('criteria' in summary));
   assert.equal(paperDetailedSummary({ ...candidate, questionPaper: { ...candidate.questionPaper, sha256: 'mismatch' } }), null);
   assert.equal(paperDetailedSummary({ ...candidate, markScheme: { ...candidate.markScheme, sha256: 'mismatch' } }), null);
-  assert.deepEqual(detail.tasks.map((t) => t.criteria.map((c) => c.code)), [['M1', 'A1'], ['B2/B1']]);
+  assert.deepEqual(detail.tasks.slice(0, 2).map((t) => t.criteria.map((c) => c.code)), [['M1', 'A1'], ['B2/B1']]);
   assert.ok(detail.tasks[1].dependencies.some((rule) => rule.includes('Do not ignore subsequent working')));
+  const q16 = detail.tasks.find((task) => task.questionPath === '16')!;
+  assert.equal(q16.originalMarks, 4);
+  assert.deepEqual(q16.criteria.map((c) => 'dependsOn' in c ? c.dependsOn ?? [] : []), [[], ['mixed-number-representation'], [], ['mixed-number-representation', 'multiplication-method', 'common-denominator-addition']]);
+  assert.match(q16.criteria[1].rule, /21\/4 is explicitly insufficient/);
+  assert.match(q16.criteria[3].rule, /improper fraction must also be visible/);
+  assert.equal(q16.responseRequirements?.calculatorAllowed, false);
+  assert.equal(q16.responseRequirements?.workingRequired, true);
 });
 
 void test('Maths export rejects source, count, page and promotion errors before table changes', () => {
@@ -27,6 +34,11 @@ import copy,importlib.util,json,shutil,tempfile
 from pathlib import Path
 spec=importlib.util.spec_from_file_location('maths_export','scripts/export-maths-extraction.py')
 module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+def remove_task(m):
+ m['tasks'].pop()
+ m['detailedLeafTasks']=len(m['tasks'])
+ m['detailedOriginalMarks']=sum(t['originalMarks'] for t in m['tasks'])
+ m['reviewedQuestionTotals']={q:sum(t['originalMarks'] for t in m['tasks'] if t['questionPath'].split('.')[0]==q) for q in {t['questionPath'].split('.')[0] for t in m['tasks']}}
 with tempfile.TemporaryDirectory() as d:
  root=Path(d)
  for folder in ['extractions','discovery','paper-indexes','paper-reviews','syllabus','ledger/v1']:
@@ -45,7 +57,9 @@ with tempfile.TemporaryDirectory() as d:
   'spec-page':lambda m:m['tasks'][0]['syllabusMappings'][0]['evidenceRefs'][0].update(pdfPages=[19]),
   'scheme-page':lambda m:m['tasks'][1].update(markSchemePages=[15]),
   'rubric-max':lambda m:m['tasks'][1]['criteria'][0].update(marks=3),
-  'removed-task':lambda m:(m['tasks'].pop(),m.update(detailedLeafTasks=1,detailedOriginalMarks=2,reviewedQuestionTotals={'15':2})),
+  'cyclic-dependency':lambda m:m['tasks'][2]['criteria'][0].update(dependsOn=['mixed-number-result']),
+  'unknown-dependency':lambda m:m['tasks'][2]['criteria'][3].update(dependsOn=['invented-method']),
+  'removed-task':remove_task,
  }
  for name,mutate in mutations.items():
   m=copy.deepcopy(original);mutate(m);path.write_text(json.dumps(m))
@@ -55,6 +69,6 @@ with tempfile.TemporaryDirectory() as d:
   assert all(p.read_bytes()==data for p,data in before.items()),name+' changed a table'
  print(json.dumps({'rejected':len(mutations),'tablesChecked':len(outputs)}))
 `], { encoding: 'utf8' }));
-  assert.equal(result.rejected, 10);
+  assert.equal(result.rejected, 12);
   assert.equal(result.tablesChecked, 4);
 });

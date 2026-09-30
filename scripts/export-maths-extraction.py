@@ -67,6 +67,10 @@ def prepare(root=ROOT):
             require(t[field] == item[field], 'Index task mismatch: ' + field)
         require(t['assessmentObjectives'] == [] and t['templateLinkStatus'] == 'candidate-only', 'No inferred AO or template activation')
         require(sum(c['marks'] for c in t['criteria']) == t['originalMarks'], 'Criteria maximum mismatch')
+        earlier = set()
+        for criterion in t['criteria']:
+            require(criterion['id'] not in earlier and set(criterion.get('dependsOn', [])) <= earlier, 'Duplicate criterion or invalid/cyclic dependency')
+            earlier.add(criterion['id'])
         for key, field in [('questionPaper', 'questionPaperPages'), ('markScheme', 'markSchemePages')]:
             require(set(t[field]) <= set(m['pageAudit'][key]['visuallyReviewedPages']), 'Task lacks visual page evidence')
         require(t['stimulusTypes'] and t['stimulusRefs'] == [{'documentId': qp['id'], 'pdfPages': t['questionPaperPages']}], 'Missing exact stimulus reference')

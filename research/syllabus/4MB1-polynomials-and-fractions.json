@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4MB1",
+  "specificationIssue": "Issue 1 - January 2016",
+  "specificationDocumentId": "4MB1-spec",
+  "specificationSha256": "62d4534ba1c0aee42ce2d3e7fd1da8083fd03216dd106da11ae590525d3187a5",
+  "reviewDate": "2026-09-30",
+  "reviewedBy": "Codex",
+  "reviewerType": "agent",
+  "reviewMethod": "Visual inspection of official specification PDF page 20 (printed page 14); component applicability retained from the reviewed PDF pages 11–12.",
+  "reviewedPages": [
+    20
+  ],
+  "scope": "Bounded Algebra continuation: section 3 rows D–F on official PDF page 20 (printed 14): factor theorem including non-monic linear factors and cubics, cubic division and simple algebraic fractions. Rows G–L remain outside this audit; all teaching is partial.",
+  "points": [
+    {
+      "id": "4MB1:issue1:3D",
+      "reference": "3D",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "summary": "Apply the factor theorem to polynomials, including cubics and general linear factors.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "number-and-algebra",
+      "noteSectionIds": [
+        "factor-theorem",
+        "factor-theorem-unknown-coefficient"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-09-30"
+    },
+    {
+      "id": "4MB1:issue1:3E",
+      "reference": "3E",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "summary": "Divide a cubic polynomial by a linear factor.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "number-and-algebra",
+      "noteSectionIds": [
+        "dividing-cubics"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-09-30"
+    },
+    {
+      "id": "4MB1:issue1:3F",
+      "reference": "3F",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "summary": "Add, subtract, multiply and divide simple algebraic fractions with numerical, linear or quadratic denominators.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "number-and-algebra",
+      "noteSectionIds": [
+        "simplifying-algebraic-fractions",
+        "adding-algebraic-fractions",
+        "multiplying-dividing-algebraic-fractions"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-09-30"
+    }
+  ]
+}

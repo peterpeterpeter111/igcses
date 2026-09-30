@@ -21,10 +21,11 @@
   "fullyProcessed": false,
   "wholePaperMarks": 100,
   "wholePaperLeafCount": 38,
-  "detailedLeafTasks": 2,
-  "detailedOriginalMarks": 4,
+  "detailedLeafTasks": 3,
+  "detailedOriginalMarks": 8,
   "reviewedQuestionTotals": {
-    "15": 4
+    "15": 4,
+    "16": 4
   },
   "documents": [
     {
@@ -54,17 +55,18 @@
         12
       ],
       "wholeDocumentReviewed": false,
-      "scope": "Q15(a)/(b) source expressions and marks. Q16 is visible on the same page but is not analysed by this overlay."
+      "scope": "Q15(a)/(b) and Q16 source expressions, instructions and marks on page 12; no whole-paper review."
     },
     "markScheme": {
       "visuallyReviewedPages": [
         3,
         4,
         5,
-        14
+        14,
+        15
       ],
       "wholeDocumentReviewed": false,
-      "scope": "General guidance and Q15(a)/(b) rules; other task criteria not reviewed here."
+      "scope": "General guidance and the Q15/Q16 source criteria; other tasks not reviewed here."
     }
   },
   "examinerReportStatus": "not-sought-for-this-bounded-review",
@@ -72,10 +74,12 @@
     "documentId": "4MB1-spec",
     "issue": "Issue 1 - January 2016",
     "pdfPages": [
+      17,
+      18,
       20
     ],
     "sha256": "62d4534ba1c0aee42ce2d3e7fd1da8083fd03216dd106da11ae590525d3187a5",
-    "scopeNote": "Parent 3C visually checked; full amendment audit for target sitting remains open."
+    "scopeNote": "Parents 1A/1H and 3C visually checked; full amendment audit for target sitting remains open."
   },
   "tasks": [
     {
@@ -322,16 +326,213 @@
       "blockers": [
         "Generative family and final-answer/partial-credit calibration remain pending."
       ]
+    },
+    {
+      "paperId": "4MB1-2024-summer-01-candidate",
+      "recordKind": "leaf",
+      "questionPaperPages": [
+        12
+      ],
+      "markSchemePages": [
+        15
+      ],
+      "originalMarks": 4,
+      "commandWord": "Evaluate",
+      "stimulusTypes": [
+        "algebraic-expression"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            12
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; do not infer an authoritative AO split.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex",
+      "reviewerType": "agent",
+      "reviewDate": "2026-09-30",
+      "humanReviewed": false,
+      "taskId": "4MB1-2024-summer-01-candidate.Q16",
+      "questionPath": "16",
+      "requiredKnowledge": [
+        "Mixed numbers and improper fractions",
+        "Multiplication of fractions",
+        "Common-denominator addition",
+        "Simplest mixed-number form",
+        "Explicit non-calculator working"
+      ],
+      "contextSummary": "Evaluate an addition outside a product of two mixed numbers, showing non-calculator steps and finishing with a simplified mixed number.",
+      "sourceExpression": "1/6 + ((1 + 7/8) × (2 + 4/5))",
+      "solutionStructure": [
+        "Convert the mixed numbers to 15/8 and 14/5, or write their two bracketed sums.",
+        "Show multiplication using (15 × 14)/(8 × 5) = 210/40, or cancellation to (3/4) × (7/1), before obtaining 21/4.",
+        "Use a common denominator: 1/6 + 21/4 = 2/12 + 63/12 = 65/12.",
+        "Convert the correct improper fraction to the simplified mixed number 5 + 5/12."
+      ],
+      "markingMethod": "method-marks",
+      "criteria": [
+        {
+          "id": "mixed-number-representation",
+          "marks": 1,
+          "code": "M1",
+          "rule": "Show both correct improper fractions 15/8 and 14/5; a multiplication sign is not required for this first mark. Alternatively show the correct product of the bracketed mixed-number sums."
+        },
+        {
+          "id": "multiplication-method",
+          "marks": 1,
+          "code": "M1 dependent",
+          "dependsOn": [
+            "mixed-number-representation"
+          ],
+          "rule": "After the first method mark, show correct fraction multiplication or correct expansion of the bracketed product. The isolated simplified value 21/4 is explicitly insufficient for this mark."
+        },
+        {
+          "id": "common-denominator-addition",
+          "marks": 1,
+          "code": "M1 independent",
+          "dependsOn": [],
+          "rule": "Show a correct common-denominator method for adding 1/6 to another fraction. This mark is independent of the earlier method marks. A single fraction with the two addends in its numerator is allowed. Both addends must be fractions; denominator 1 is not accepted for this method mark."
+        },
+        {
+          "id": "mixed-number-result",
+          "marks": 1,
+          "code": "A1 dependent",
+          "dependsOn": [
+            "mixed-number-representation",
+            "multiplication-method",
+            "common-denominator-addition"
+          ],
+          "rule": "Award only after all three method marks, for the correct simplified mixed-number result 5 + 5/12. A correct improper fraction must also be visible, for example 65/12 or an equivalent unreduced improper fraction."
+        }
+      ],
+      "acceptableAlternatives": [
+        "Use bracket expansion of (1 + 7/8)(2 + 4/5) instead of improper-fraction multiplication.",
+        "Cross-cancel factors before multiplying, while displaying the multiplication method.",
+        "Use any valid common multiple as denominator, including 24, 48 or 120; the scheme shows equivalent routes.",
+        "Retain the whole-number part while adding the fractional remainder, provided the required correct improper fraction is subsequently shown for the accuracy mark."
+      ],
+      "dependencies": [
+        "The instruction to show all working makes final-answer-only inference inappropriate for this task.",
+        "The multiplication method mark depends on the correct initial representation; the addition method mark is independent.",
+        "The final accuracy mark depends on all three method marks and visible correct improper-fraction evidence.",
+        "No mark from one of the four criteria may be counted more than once, even if both alternative routes are shown."
+      ],
+      "commonErrors": [
+        {
+          "description": "Showing only the simplified product 21/4 omits the multiplication evidence explicitly required for the second method mark.",
+          "origin": "scheme",
+          "sourceRefs": [
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                15
+              ]
+            }
+          ]
+        },
+        {
+          "description": "A correct mixed-number answer without the required method and improper-fraction evidence cannot be assumed to earn full marks.",
+          "origin": "scheme",
+          "sourceRefs": [
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                15
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Adding numerators and denominators directly, or treating a mixed number as a product of its whole and fractional parts.",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4MB1:issue1:1H",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Number row 1H explicitly includes four operations with fractions and converting fractional representations. Mapping is to the obtained Issue 1 document, not a completed target-series amendment audit.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                18
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                15
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4MB1:issue1:1A",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Number row 1A covers combined operations and brackets; the product is evaluated before the outer addition. Mapping is to the obtained Issue 1 document, not a completed target-series amendment audit.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                17
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                15
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedFamilyId": "4MB1.number.mixed-fraction-evaluation",
+      "generalSchemePages": [
+        3,
+        4,
+        5
+      ],
+      "markingReviewNotes": [
+        "Original scheme wording and page geometry establish the dependency graph; this record is not an implemented automated marker.",
+        "The scheme allows an independent addition-method mark using another fraction. Do not invent a stricter requirement that the preceding product must be correct.",
+        "General scheme and task-specific evidence requirements must be reconciled for unusual, contradictory or decimal-only responses before calibration."
+      ],
+      "blockers": [
+        "A generative family and calibrated explicit-working assessment remain unimplemented."
+      ],
+      "responseRequirements": {
+        "calculatorAllowed": false,
+        "workingRequired": true,
+        "finalForm": "simplified-mixed-number",
+        "sourceRefs": [
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-qp",
+            "pdfPages": [
+              12
+            ]
+          }
+        ]
+      }
     }
   ],
   "marksReconciled": true,
   "processingNotes": [
-    "Detailed coverage is two of the 38 indexed parts, covering four of 100 original marks.",
+    "Detailed coverage is three of the 38 indexed parts, covering eight of 100 original marks.",
     "The paper remains indexed; marksReconciled refers to the existing whole-paper text totals and this subset, not complete task processing.",
     "No template family record or activation is established by proposedFamilyId."
   ],
   "blockers": [
-    "36 Maths parts still lack detailed analyses.",
+    "35 Maths parts still lack detailed analyses.",
     "Whole-paper visual/page and scheme-content audit remains incomplete.",
     "Outside the reviewed subset, extracted Maths text still contains unresolved glyph names and private-use characters; use the PDF for mathematical notation.",
     "Source-linked generative families, calibration and assessment-objective review remain unfinished."

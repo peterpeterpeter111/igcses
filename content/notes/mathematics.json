@@ -19,7 +19,9 @@
     "Interpret sets, membership and subset notation in a stated universe.",
     "Use union, intersection, complements and Venn diagrams to solve counting and logical problems.",
     "Simplify algebraic expressions and factorise common, quadratic and difference-of-squares forms.",
-    "Construct, use and rearrange formulae while keeping necessary restrictions."
+    "Construct, use and rearrange formulae while keeping necessary restrictions.",
+    "Use the factor theorem and divide cubics by linear factors.",
+    "Manipulate algebraic fractions while retaining their original restrictions."
   ],
   "sections": [
     {
@@ -1035,6 +1037,239 @@
         "split the middle term",
         "grouping",
         "integer factors"
+      ]
+    },
+    {
+      "id": "factor-theorem",
+      "title": "The factor theorem and cubic factors",
+      "points": [
+        "3D"
+      ],
+      "paragraphs": [
+        "For a polynomial P(x), (x − r) is a factor exactly when P(r) = 0. Substituting a candidate root tests divisibility without performing the whole division. P(r) ≠ 0 rules out that factor; it does not rule out other factors.",
+        "The sign comes from setting the proposed factor to zero. To test (x + 2), substitute −2. To test (ax + b), with a ≠ 0, substitute −b/a. For (ax − b), substitute b/a. A fractional root can therefore correspond to a factor with integer coefficients.",
+        "After establishing a linear factor of a cubic, divide to obtain a quadratic, then factorise that quadratic if possible. Expand the complete product to check the result. Showing P(r) = 0 alone verifies one factor; it does not give the full factorisation."
+      ],
+      "example": {
+        "question": "Show that (2x − 1) is a factor of P(x) = 2x³ + 3x² − 8x + 3, then factorise P(x) fully.",
+        "steps": [
+          "The factor is zero at x = 1/2, so calculate P(1/2).",
+          "P(1/2) = 2(1/8) + 3(1/4) − 8(1/2) + 3 = 1/4 + 3/4 − 4 + 3 = 0.",
+          "Division by (2x − 1) gives x² + 2x − 3.",
+          "The quadratic factorises as (x + 3)(x − 1), so P(x) = (2x − 1)(x + 3)(x − 1).",
+          "Expansion of (2x − 1)(x² + 2x − 3) restores 2x³ + 3x² − 8x + 3."
+        ],
+        "explanation": "The substitution uses the root 1/2, not the coefficient 2 or the constant −1."
+      },
+      "practice": {
+        "question": "Which of (x − 2) and (x + 2) is a factor of x³ − x² − 4x + 4?",
+        "answer": "Both: P(2) = 0 and P(−2) = 0. In fact P(x) = (x − 1)(x − 2)(x + 2).",
+        "explanation": "The substitutions test the two proposed factors separately; neither result cancels the other."
+      },
+      "commonMistakes": [
+        "Set the whole linear factor equal to zero before choosing the input.",
+        "Substitute negative numbers in brackets, especially when squaring or cubing.",
+        "A factor test is not a full factorisation."
+      ],
+      "terms": [
+        "factor theorem",
+        "cubic",
+        "polynomial",
+        "root",
+        "linear factor"
+      ]
+    },
+    {
+      "id": "factor-theorem-unknown-coefficient",
+      "title": "Finding an unknown coefficient from a factor",
+      "points": [
+        "3D"
+      ],
+      "paragraphs": [
+        "If a polynomial contains an unknown coefficient and a linear factor is given, substitute the root of that factor and set the resulting expression equal to zero. This creates an equation for the unknown coefficient.",
+        "Solve for the coefficient before treating the cubic as a fixed polynomial. Check by substituting the root into the completed expression. If several coefficients are unknown, one factor condition may not determine all of them; use all additional stated conditions.",
+        "The value of a coefficient is not generally a root. Keep the roles distinct: x is the variable of the polynomial, while the unknown coefficient controls which polynomial is being described."
+      ],
+      "example": {
+        "question": "Find k if (x + 1) is a factor of P(x) = x³ + kx² − 4x − 4.",
+        "steps": [
+          "For the proposed factor, x = −1.",
+          "P(−1) = −1 + k + 4 − 4 = k − 1.",
+          "Set k − 1 = 0, giving k = 1.",
+          "Check: x³ + x² − 4x − 4 = (x + 1)(x² − 4)."
+        ],
+        "explanation": "The factor provides the zero condition needed to determine k."
+      },
+      "practice": {
+        "question": "Find a if (x − 3) is a factor of x³ + ax² − 6x − 9.",
+        "answer": "a = 0.",
+        "explanation": "Substitute 3: 27 + 9a − 18 − 9 = 9a = 0."
+      },
+      "commonMistakes": [
+        "Substitute the root into every occurrence of x.",
+        "Do not set the unknown coefficient itself equal to the root.",
+        "Check whether the number of conditions is sufficient for the unknown coefficients."
+      ],
+      "terms": [
+        "unknown coefficient",
+        "factor condition",
+        "substitution"
+      ]
+    },
+    {
+      "id": "dividing-cubics",
+      "title": "Dividing a cubic by a linear factor",
+      "points": [
+        "3E"
+      ],
+      "paragraphs": [
+        "Write the cubic in descending powers, including zero coefficients for missing powers. Divide the leading term by the leading term of the divisor to find the next quotient term. Multiply the entire divisor by that term, subtract the entire product, and continue.",
+        "The identity is dividend = divisor × quotient + remainder. Dividing a cubic by a linear expression gives a quadratic quotient and a constant remainder. If the divisor is a factor, the remainder is zero; a non-zero remainder shows that the proposed divisor is not a factor.",
+        "A divisor need not start with x: for (2x − 1), dividing the leading cubic term 2x³ by 2x gives x². Keep exact coefficients throughout and verify by multiplying the divisor and quotient, then adding any remainder."
+      ],
+      "example": {
+        "question": "Divide 2x³ − 5x + 3 by x − 1.",
+        "steps": [
+          "Write 2x³ + 0x² − 5x + 3. The first quotient term is 2x³ ÷ x = 2x².",
+          "Subtract 2x²(x − 1) = 2x³ − 2x² to leave 2x² − 5x + 3.",
+          "The next term is 2x. Subtract 2x(x − 1) = 2x² − 2x to leave −3x + 3.",
+          "The final term is −3. Subtract −3(x − 1) = −3x + 3 to leave zero.",
+          "The quotient is 2x² + 2x − 3, with remainder 0. Check (x − 1)(2x² + 2x − 3) = 2x³ − 5x + 3."
+        ],
+        "explanation": "The zero x² coefficient preserves the columns, and each subtraction applies to both terms of the product."
+      },
+      "practice": {
+        "question": "Divide x³ − 2x² + x − 5 by x − 2. Is x − 2 a factor?",
+        "answer": "Quotient x² + 1, remainder −3; it is not a factor.",
+        "explanation": "(x − 2)(x² + 1) − 3 expands to the original cubic; substituting 2 also gives −3."
+      },
+      "commonMistakes": [
+        "Insert a zero coefficient when a power is missing.",
+        "Subtract the whole product, changing both signs.",
+        "A quotient by itself is incomplete when the remainder is non-zero."
+      ],
+      "terms": [
+        "algebraic division",
+        "cubic division",
+        "quotient",
+        "remainder",
+        "zero coefficient"
+      ]
+    },
+    {
+      "id": "simplifying-algebraic-fractions",
+      "title": "Simplifying algebraic fractions and keeping restrictions",
+      "points": [
+        "3F"
+      ],
+      "paragraphs": [
+        "An algebraic fraction is defined only when its original denominator is non-zero. State those restrictions before cancelling. Factorise the entire numerator and denominator, then cancel common non-zero factors; you cannot cancel individual terms joined by addition or subtraction.",
+        "For example, (3x + 6)/(3x) = (x + 2)/x for x ≠ 0. It does not simplify to 2: the two terms in x + 2 do not share a factor x. A useful check is to substitute a permitted value into both forms.",
+        "Cancellation can hide an original excluded value. The simplified expression agrees with the original only on the original domain. Keep exclusions even when the cancelled factor no longer appears in the denominator."
+      ],
+      "example": {
+        "question": "Simplify (x² − 9)/(x² + x − 6), stating excluded values.",
+        "steps": [
+          "Factor the numerator: x² − 9 = (x − 3)(x + 3).",
+          "Factor the denominator: x² + x − 6 = (x + 3)(x − 2).",
+          "The original denominator is zero at x = −3 and x = 2, so exclude both.",
+          "Cancel the common factor x + 3 to obtain (x − 3)/(x − 2), with x ≠ −3, 2."
+        ],
+        "explanation": "The cancelled factor does not make x = −3 valid in the original fraction."
+      },
+      "practice": {
+        "question": "Simplify (x² − x − 6)/(x + 2), keeping the original restriction.",
+        "answer": "x − 3, with x ≠ −2.",
+        "explanation": "The numerator is (x − 3)(x + 2); cancellation is valid only when x + 2 is non-zero."
+      },
+      "commonMistakes": [
+        "Cancel factors, not terms.",
+        "Keep the original denominator restrictions after cancellation.",
+        "Factorise quadratics before deciding what is common."
+      ],
+      "terms": [
+        "algebraic fraction",
+        "denominator restriction",
+        "domain",
+        "cancel factors"
+      ]
+    },
+    {
+      "id": "adding-algebraic-fractions",
+      "title": "Adding and subtracting algebraic fractions",
+      "points": [
+        "3F"
+      ],
+      "paragraphs": [
+        "Fractions must have a common denominator before their numerators can be added or subtracted. With numerical denominators, x/3 + x/2 = 2x/6 + 3x/6 = 5x/6. Do not add the denominators.",
+        "With algebraic denominators, factorise first so you can identify the necessary factors. Multiplying by a missing factor means multiplying the whole numerator and denominator by it. If one denominator already contains the other as a factor, use the larger factored denominator rather than duplicating every factor.",
+        "For subtraction, bracket the second numerator before expanding: A/D − B/D = (A − B)/D. Distribute the minus sign across every term. After combining, factorise again if possible and retain all restrictions from the original denominators."
+      ],
+      "example": {
+        "question": "Write 2/(x − 1) − 3/(x + 2) as a single fraction.",
+        "steps": [
+          "The original restrictions are x ≠ 1 and x ≠ −2.",
+          "Use common denominator (x − 1)(x + 2).",
+          "The new numerator is 2(x + 2) − 3(x − 1).",
+          "Expand carefully: 2x + 4 − 3x + 3 = 7 − x.",
+          "The result is (7 − x)/[(x − 1)(x + 2)], with x ≠ 1, −2."
+        ],
+        "explanation": "The minus sign changes −3(x − 1) into −3x + 3."
+      },
+      "practice": {
+        "question": "Simplify 1/(x − 2) + 3/[(x − 2)(x + 1)].",
+        "answer": "(x + 4)/[(x − 2)(x + 1)], with x ≠ 2, −1.",
+        "explanation": "The second denominator is already a common denominator; the first numerator becomes x + 1, so the total is x + 4."
+      },
+      "commonMistakes": [
+        "Do not add denominators.",
+        "Multiply the entire numerator by the missing factor.",
+        "A subtraction sign applies to the whole following numerator."
+      ],
+      "terms": [
+        "common denominator",
+        "algebraic fractions",
+        "sum",
+        "difference"
+      ]
+    },
+    {
+      "id": "multiplying-dividing-algebraic-fractions",
+      "title": "Multiplying and dividing algebraic fractions",
+      "points": [
+        "3F"
+      ],
+      "paragraphs": [
+        "To multiply algebraic fractions, factorise first, cancel common factors across the product where they are non-zero, then multiply the remaining numerators and denominators. The restrictions still come from every original denominator.",
+        "To divide by a fraction, multiply by its reciprocal. The divisor must itself be defined and non-zero. This creates restrictions from both its denominator and its numerator, even if these factors later cancel.",
+        "For a product, a zero numerator is allowed whenever the expression is defined. For a quotient, a zero numerator in the divisor makes the operation invalid. Check this distinction before simplifying; it cannot always be recovered from the final expression alone."
+      ],
+      "example": {
+        "question": "Simplify [(x² − 4)/(3x)] ÷ [(x + 2)/6], stating restrictions.",
+        "steps": [
+          "The first fraction requires x ≠ 0. The divisor is zero when x = −2, so also exclude −2.",
+          "Replace division by multiplication by the reciprocal: [(x² − 4)/(3x)] × [6/(x + 2)].",
+          "Factor x² − 4 = (x − 2)(x + 2).",
+          "Cancel x + 2 and reduce 6/3 to 2: the result is 2(x − 2)/x, with x ≠ 0, −2.",
+          "x = 2 is allowed: the original first fraction is zero but the divisor is not, so the result is zero."
+        ],
+        "explanation": "The excluded value −2 comes from dividing by zero, not from the final denominator."
+      },
+      "practice": {
+        "question": "Simplify [(x² − 1)/(2x)] × [4/(x + 1)], stating restrictions.",
+        "answer": "2(x − 1)/x, with x ≠ 0, −1.",
+        "explanation": "Factor x² − 1 and cancel x + 1; both original denominators must remain non-zero."
+      },
+      "commonMistakes": [
+        "Invert the divisor, not the first fraction.",
+        "Retain excluded values when factors cancel.",
+        "For division, check that the divisor is non-zero as well as defined."
+      ],
+      "terms": [
+        "reciprocal",
+        "product",
+        "quotient",
+        "division by zero"
       ]
     }
   ],

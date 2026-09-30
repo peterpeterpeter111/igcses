@@ -1,0 +1,73 @@
+{
+  "date": "2026-09-30",
+  "scope": "Bounded arithmetic/algebra verification of the six new original Maths teaching sections. Not independent educational review, full curriculum coverage or template calibration.",
+  "checks": [
+    {
+      "check": "factor-theorem example",
+      "method": "exact polynomial coefficient expansion",
+      "passed": true
+    },
+    {
+      "check": "factor-theorem practice",
+      "method": "exact polynomial coefficient expansion",
+      "passed": true
+    },
+    {
+      "check": "unknown coefficient example",
+      "method": "exact polynomial coefficient expansion",
+      "passed": true
+    },
+    {
+      "check": "division example",
+      "method": "exact polynomial coefficient expansion",
+      "passed": true
+    },
+    {
+      "check": "unknown coefficient practice a=0",
+      "method": "exact rational substitution",
+      "passed": true
+    },
+    {
+      "check": "division remainder practice",
+      "method": "exact polynomial reconstruction",
+      "passed": true
+    },
+    {
+      "check": "simplifying example",
+      "method": "exact cross-product coefficients and original exclusion roots",
+      "passed": true
+    },
+    {
+      "check": "simplifying practice",
+      "method": "exact cross-product coefficients and original exclusion roots",
+      "passed": true
+    },
+    {
+      "check": "addition example",
+      "method": "exact cross-product coefficients and original exclusion roots",
+      "passed": true
+    },
+    {
+      "check": "addition practice",
+      "method": "exact cross-product coefficients and original exclusion roots",
+      "passed": true
+    },
+    {
+      "check": "division fractions example",
+      "method": "exact cross-product coefficients and original exclusion roots",
+      "passed": true
+    },
+    {
+      "check": "product fractions practice",
+      "method": "exact cross-product coefficients and original exclusion roots",
+      "passed": true
+    },
+    {
+      "check": "fraction addition numerator construction",
+      "method": "independent distributed coefficients",
+      "passed": true
+    }
+  ],
+  "humanReviewed": false,
+  "completeTeachingPoints": 0
+}

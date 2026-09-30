@@ -15,6 +15,7 @@ import chemistryStates from '../research/syllabus/4CH1-states-and-mixtures.json'
 import mathsNumber from '../research/syllabus/4MB1-number.json' with { type: 'json' };
 import mathsSets from '../research/syllabus/4MB1-sets.json' with { type: 'json' };
 import mathsAlgebra from '../research/syllabus/4MB1-algebra-foundations.json' with { type: 'json' };
+import mathsPolynomials from '../research/syllabus/4MB1-polynomials-and-fractions.json' with { type: 'json' };
 
 // Reviewed overlays are kept separate from the immutable raw candidates.
 export const reviewedInventories = [
@@ -32,4 +33,5 @@ export const reviewedInventories = [
   { title: 'Number: section 1, rows A–K', ...mathsNumber },
   { title: 'Sets: section 2, rows A–I', ...mathsSets },
   { title: 'Algebra foundations: section 3, rows A–C', ...mathsAlgebra },
+  { title: 'Polynomials and algebraic fractions: section 3, rows D–F', ...mathsPolynomials },
 ];
