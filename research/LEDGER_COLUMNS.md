@@ -18,6 +18,12 @@ All IDs are stable, opaque strings except documented natural keys. Dates are ISO
 | `batches.csv` | batch_id; research_cutoff; scope_json; approval_reference; model; tools_json; started_at; finished_at; status; inventory_complete; cursor; discovered_links; obtained_documents; processed_papers; unresolved_issues_json; commit_sha |
 | `audit-events.csv` | event_id; entity_type; entity_id; action; previous_status; new_status; evidence_refs_json; rationale; actor; actor_type; created_at; batch_id |
 
+## Subject-partitioned coverage storage
+
+`coverage.csv` now retains the table header only. All rows live in `coverage/<qualification>.csv`, explicitly listed in `coverage-partitions.json`. Together they are one logical coverage table with the same columns and IDs. Use `scripts/ledger_io.py` (`read_table(directory, 'coverage')`) for imports/audits; reading only the root CSV omits the data. The reader rejects missing or undeclared files, changed headers, duplicate identities, wrong-subject rows and a populated root CSV. Other tables remain single files.
+
+The 30 September 2026 migration preserved all 356 rows and every field string; the canonical row hashes before and after match in `research/reviews/2026-09-30-coverage-partition-migration.json`. Grouping by subject changes physical row order only. This supports smaller subject updates and legible source review while retaining the existing GitHub request cap. It is not a D1 migration, content review or completion promotion. Future D1 import must read the logical table through the declared partitions.
+
 ## Identity and references
 
 Canonical paper natural key: qualification + sitting year + series + component + regional variant. Unknown variant is `unresolved`, not silently “standard”. Resits/versions with distinct covers receive an explicit edition discriminator if this key collides. A corrected PDF is a new document revision, with its own hash and a supersedes relation in the audit log. Duplicate links to the same hash do not increase document or paper counts.

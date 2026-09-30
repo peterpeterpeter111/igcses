@@ -3,6 +3,7 @@ import csv
 import json
 import sys
 from pathlib import Path
+from ledger_io import read_table, read_csv, coverage_partitions
 
 
 def encode(value):
@@ -37,10 +38,13 @@ for point in inventory['points']:
 pending = []
 ids = {p['id'] for p in inventory['points']}
 for name, key, additions in [('syllabus-points', 'point_id', point_rows), ('coverage', 'coverage_id', coverage_rows)]:
-    target = root / 'research/ledger/v1' / (name + '.csv')
-    with target.open() as stream:
-        reader = csv.DictReader(stream)
-        fields, rows = reader.fieldnames, list(reader)
+    directory = root / 'research/ledger/v1'
+    fields, rows = read_table(directory, name)
+    target = directory / (name + '.csv')
+    if name == 'coverage' and (directory / 'coverage-partitions.json').exists():
+        partitions = coverage_partitions(directory)
+        target = partitions[inventory['qualification']]
+        _, rows = read_csv(target)
     if len({r[key] for r in additions}) != len(additions) or any(set(r) != set(fields) for r in additions):
         raise ValueError('Invalid or duplicate export row')
     retained = [r for r in rows if r['point_id'] not in ids]

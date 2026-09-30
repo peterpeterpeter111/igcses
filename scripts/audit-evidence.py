@@ -4,12 +4,12 @@ No downloads, PDF extraction, syllabus mapping or educational judgement.
 An optional report uses exclusive creation to preserve previous audit evidence.
 """
 import argparse
-import csv
 import hashlib
 import json
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
+from ledger_io import read_table
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -22,9 +22,7 @@ def audit(root=ROOT):
     errors, gaps = [], []
     tables = {}
     for path in sorted((root / 'research/ledger/v1').glob('*.csv')):
-        with path.open(newline='') as stream:
-            reader = csv.DictReader(stream)
-            fields, rows = reader.fieldnames, list(reader)
+        fields, rows = read_table(path.parent, path.stem)
         if not fields or len(fields) != len(set(fields)):
             errors.append({'kind': 'invalid-csv-header', 'file': path.name})
             continue

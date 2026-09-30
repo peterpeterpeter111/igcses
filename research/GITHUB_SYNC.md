@@ -22,3 +22,6 @@ Remote mirror commits and local development commits have different IDs but ident
 The Physics extraction JSON was 237889 bytes. Removing formatting whitespace reduced it to 155370 bytes; parsed JSON equality and all 85 application tests, typecheck and 13 research checks passed. No keys, strings, numbers, ordering within arrays or evidence were removed. Its earlier formatting remains in local history. Any future oversized file requires a separately reviewed lossless change or another approved route; do not silently truncate evidence.
 
 No website deployment, AI configuration or reset credit is part of source sync.
+
+## Coverage table storage — 30 September 2026
+The growing coverage table is now stored in six explicitly declared subject CSVs. The root coverage.csv is the schema header; coverage-partitions.json lists every file. The shared reader and exporter validate all partitions. Migration preserved every row and field string with matching canonical hashes; see LEDGER_COLUMNS.md and the migration report. These are ordinary full-text source files in each reviewed request. The sync planner itself still cannot split or transform any file, and its 195000-byte cap is unchanged.

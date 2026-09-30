@@ -86,7 +86,7 @@ void test('curriculum teaching evidence resolves to real fields without promotin
 
 void test('new plotting teaching links are dated independently of the older source identity review', async () => {
   const { execFileSync } = await import('node:child_process');
-  const rows = JSON.parse(execFileSync('python3', ['-c', "import csv,json; print(json.dumps(list(csv.DictReader(open('research/ledger/v1/coverage.csv')))))"], { encoding: 'utf8' }));
+  const rows = JSON.parse(execFileSync('python3', ['-c', "import json; from scripts.ledger_io import read_table; print(json.dumps(read_table('research/ledger/v1','coverage')[1]))"], { encoding: 'utf8' }));
   for (const ref of ['1.3', '1.7']) {
     const row = rows.find((r: Record<string, string>) => r.coverage_id === '4PH1:issue4:' + ref + ':plotting-motion-data');
     assert.ok(row);

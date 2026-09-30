@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "table": "coverage",
+  "schemaPath": "coverage.csv",
+  "partitionKey": "qualification prefix of point_id",
+  "partitions": [
+    {
+      "qualification": "4BI1",
+      "path": "coverage/4BI1.csv"
+    },
+    {
+      "qualification": "4CH1",
+      "path": "coverage/4CH1.csv"
+    },
+    {
+      "qualification": "4EB1",
+      "path": "coverage/4EB1.csv"
+    },
+    {
+      "qualification": "4HB1",
+      "path": "coverage/4HB1.csv"
+    },
+    {
+      "qualification": "4MB1",
+      "path": "coverage/4MB1.csv"
+    },
+    {
+      "qualification": "4PH1",
+      "path": "coverage/4PH1.csv"
+    }
+  ]
+}
