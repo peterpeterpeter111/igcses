@@ -1,3 +1,7 @@
+# Latest pause — 1 October 2026
+
+Read research/checkpoints/2026-10-01-PAUSED.md first. Allowances: 3% five-hour / 85% weekly remaining; paused, no reset. GitHub 6acc3ad exactly mirrors local 0507c57; fetched equality and ancestry verified. Only this pause documentation needs the next non-force sync. 222 sections / 13 partial notes, 264 parents / 661 partial requirements / 368 links; four provisional families / three experimental generators and markers / zero active. 96 tests and final build pass. Zero complete chapters/points/processed papers; no deployment. Resume only above 5% in both windows, continue Algebra H–L and paper/template calibration; preserve UI/history, keep AI last. Earlier entries are historical.
+
 # Latest phase — Maths equations, 1 October 2026
 
 Read research/checkpoints/2026-10-01-EQUATIONS.md and 2026-10-01-QUADRATIC-PROTOTYPE.md first. Six equation lessons and a checked graph bring totals to 222 sections / 13 partial notes, 264 reviewed parents / 661 partial requirements / 368 links. Four provisional families, three experimental generators/markers, zero active templates; paper completion unchanged. 96 tests, typecheck, lint, research/content/evidence checks and final production build/public scan pass. Both new phases need non-force sync from GitHub 49552a9 after save. Next: Algebra H–L, remaining Maths paper details and broader curriculum/calibration. Preserve UI/history, keep AI last; no reset. Check both allowances and pause at 5%. Earlier entries are historical.
