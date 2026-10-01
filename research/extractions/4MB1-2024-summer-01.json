@@ -12,7 +12,7 @@
     "paperLog": "P76502A",
     "schemePublicationCode": "4MB1_01_2406_MS"
   },
-  "reviewDate": "2026-09-30",
+  "reviewDate": "2026-10-01",
   "reviewer": "Codex",
   "reviewerType": "agent",
   "humanReviewed": false,
@@ -21,11 +21,15 @@
   "fullyProcessed": false,
   "wholePaperMarks": 100,
   "wholePaperLeafCount": 38,
-  "detailedLeafTasks": 3,
-  "detailedOriginalMarks": 8,
+  "detailedLeafTasks": 7,
+  "detailedOriginalMarks": 23,
   "reviewedQuestionTotals": {
     "15": 4,
-    "16": 4
+    "16": 4,
+    "17": 4,
+    "18": 4,
+    "19": 3,
+    "20": 4
   },
   "documents": [
     {
@@ -52,10 +56,13 @@
   "pageAudit": {
     "questionPaper": {
       "visuallyReviewedPages": [
-        12
+        12,
+        13,
+        14,
+        15
       ],
       "wholeDocumentReviewed": false,
-      "scope": "Q15(a)/(b) and Q16 source expressions, instructions and marks on page 12; no whole-paper review."
+      "scope": "Q15–Q20 source expressions, scenarios, instructions and marks on pages 12–15; no whole-paper review."
     },
     "markScheme": {
       "visuallyReviewedPages": [
@@ -63,10 +70,13 @@
         4,
         5,
         14,
-        15
+        15,
+        16,
+        17,
+        18
       ],
       "wholeDocumentReviewed": false,
-      "scope": "General guidance and the Q15/Q16 source criteria; other tasks not reviewed here."
+      "scope": "General guidance and Q15–Q20 criteria, including alternative Q18 routes and Q19 special-case/scope discrepancies; other tasks not reviewed here."
     }
   },
   "examinerReportStatus": "not-sought-for-this-bounded-review",
@@ -76,10 +86,13 @@
     "pdfPages": [
       17,
       18,
-      20
+      20,
+      21,
+      24,
+      28
     ],
     "sha256": "62d4534ba1c0aee42ce2d3e7fd1da8083fd03216dd106da11ae590525d3187a5",
-    "scopeNote": "Parents 1A/1H and 3C visually checked; full amendment audit for target sitting remains open."
+    "scopeNote": "Reviewed mappings include 1A/1C/1D/1E/1H, 3C/3G, 6C and 10B. Row 4G is a related identity only: Q19 inverse cube-root demand is not in its explicit list. Full series-amendment reconciliation remains open."
   },
   "tasks": [
     {
@@ -523,18 +536,754 @@
           }
         ]
       }
+    },
+    {
+      "paperId": "4MB1-2024-summer-01-candidate",
+      "recordKind": "leaf",
+      "taskId": "4MB1-2024-summer-01-candidate.Q17",
+      "questionPath": "17",
+      "questionPaperPages": [
+        13
+      ],
+      "markSchemePages": [
+        16
+      ],
+      "originalMarks": 4,
+      "commandWord": "Calculate",
+      "requiredKnowledge": [
+        "Arithmetic mean",
+        "Recovering totals from a mean and count",
+        "Removing a subgroup total",
+        "Dependent method marks"
+      ],
+      "contextSummary": "Recover the mean mass of one colour of fruit from the overall mass and the mean of the other colour after one item was removed.",
+      "solutionStructure": [
+        "Nine remaining green apples have total mass 9 × 154 = 1386 g.",
+        "Add the removed green apple: 1386 + 148 = 1534 g for the original ten green apples.",
+        "Subtract from the total: 2394 − 1534 = 860 g for eight red apples.",
+        "The red mean is 860 ÷ 8 = 107.5 g; the source also accepts 108 g."
+      ],
+      "markingMethod": "method-marks",
+      "criteria": [
+        {
+          "id": "green-total",
+          "marks": 1,
+          "code": "M1",
+          "rule": "Use a correct method for the total mass of the remaining nine green apples or all ten, or form a suitable equation such as 8r + 9 × 154 + 148 = 2394."
+        },
+        {
+          "id": "red-total",
+          "marks": 1,
+          "code": "M1 dependent",
+          "rule": "Use a correct subtraction method to obtain the red total, following the candidate green total, or isolate the red term in the equation.",
+          "dependsOn": [
+            "green-total"
+          ]
+        },
+        {
+          "id": "red-mean",
+          "marks": 1,
+          "code": "M1 dependent",
+          "rule": "Divide the obtained red total by 8, dependent on both preceding method marks.",
+          "dependsOn": [
+            "green-total",
+            "red-total"
+          ]
+        },
+        {
+          "id": "mean-result",
+          "marks": 1,
+          "code": "A1",
+          "rule": "Correct mean 107.5 g; 108 g is explicitly allowed. Correct-answer-only scoring applies unless contradicted by obviously incorrect working.",
+          "dependsOn": [
+            "green-total",
+            "red-total",
+            "red-mean"
+          ]
+        }
+      ],
+      "acceptableAlternatives": [
+        "Use either the remaining-nine or original-ten green total.",
+        "Use an equation with r as the red mean instead of computing subgroup totals separately.",
+        "108 is a published accepted rounding, not a newly inferred tolerance."
+      ],
+      "dependencies": [
+        "The second M depends on the first; the third depends on both earlier M marks.",
+        "The scheme labels the result cas: a correct answer normally implies full credit unless the shown working is obviously incorrect.",
+        "The historical allowance of 108 must not be expanded into a generic rounding interval without calibration."
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4MB1:issue1:10B",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "The task uses a discrete arithmetic mean to recover and separate totals. The grouped-data row 10C is not used: no grouped-frequency estimate is involved.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                28
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                16
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4MB1:issue1:1A",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Multiplication, subtraction and division implement the mean-and-total calculation.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                17
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                16
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "written-scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            13
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO split inferred.",
+      "templateLinkStatus": "candidate-only",
+      "proposedFamilyId": "4MB1.statistics.recover-subgroup-mean",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex",
+      "reviewerType": "agent",
+      "reviewDate": "2026-10-01",
+      "humanReviewed": false,
+      "generalSchemePages": [
+        3,
+        4,
+        5
+      ],
+      "commonErrors": [
+        {
+          "description": "Subtracting only the remaining nine green masses and forgetting the removed green apple.",
+          "origin": "editorial"
+        },
+        {
+          "description": "Dividing the red total by the green count instead of eight.",
+          "origin": "editorial"
+        }
+      ],
+      "markingReviewNotes": [
+        "Source criteria are preserved as an offline analysis, not an implemented automatic marker. General scheme instructions remain relevant for contradictory methods, misreads and answer-only responses."
+      ],
+      "blockers": [
+        "No generated family, answer-range policy or partial-working calibration implemented."
+      ],
+      "sourceData": {
+        "redCount": 8,
+        "greenCount": 10,
+        "totalMassGrams": 2394,
+        "removedGreenMassGrams": 148,
+        "remainingGreenMeanGrams": 154
+      }
+    },
+    {
+      "paperId": "4MB1-2024-summer-01-candidate",
+      "recordKind": "leaf",
+      "taskId": "4MB1-2024-summer-01-candidate.Q18",
+      "questionPath": "18",
+      "questionPaperPages": [
+        14
+      ],
+      "markSchemePages": [
+        17
+      ],
+      "originalMarks": 4,
+      "commandWord": "Find",
+      "requiredKnowledge": [
+        "Interior/exterior polygon angles",
+        "Linear equations",
+        "Regular polygon side count",
+        "Alternative method routes"
+      ],
+      "contextSummary": "Find the side count of a regular polygon from two angle expressions involving one variable.",
+      "solutionStructure": [
+        "Adjacent interior and exterior angles sum to 180°: 2x + (x − 54)/2 = 180.",
+        "Multiply by 2 and collect terms: 5x = 414, so x = 82.8.",
+        "The exterior angle is (82.8 − 54)/2 = 14.4°.",
+        "There are 360 ÷ 14.4 = 25 sides."
+      ],
+      "markingMethod": "method-marks",
+      "criteria": [
+        {
+          "id": "angle-equation",
+          "marks": 1,
+          "code": "M1",
+          "rule": "Form a correct equation in x using supplementary interior/exterior angles, or the alternative pair of equations 2x = 180(n − 2)/n and (x − 54)/2 = 360/n."
+        },
+        {
+          "id": "equation-rearrangement",
+          "marks": 1,
+          "code": "M1 dependent",
+          "rule": "On the direct route collect the variable and constant terms correctly. On the alternative route substitute to eliminate one unknown. This mark implies the preceding model mark.",
+          "dependsOn": [
+            "angle-equation"
+          ]
+        },
+        {
+          "id": "side-count-method",
+          "marks": 1,
+          "code": "M1",
+          "rule": "Use the candidate x correctly in a polygon side-count formula; an incorrect x must be clearly identified or come from correct working. On the alternative route, solve the resulting equation in n. This source row does not explicitly require both preceding M marks.",
+          "dependsOn": []
+        },
+        {
+          "id": "side-count-result",
+          "marks": 1,
+          "code": "A1",
+          "rule": "Correct side count n = 25, subject to the general cas/incorrect-working rules.",
+          "dependsOn": [
+            "angle-equation",
+            "equation-rearrangement",
+            "side-count-method"
+          ]
+        }
+      ],
+      "acceptableAlternatives": [
+        "Use n = 360/(180 − 2x) after finding x.",
+        "Use the interior-angle formula 2x = 180(n − 2)/n.",
+        "Form two equations in x and n and eliminate one unknown; the source gives a separate alternative route with the same four-mark maximum."
+      ],
+      "dependencies": [
+        "Do not add the two alternative routes to make eight marks.",
+        "The second method mark implies the first; the third has its own source condition concerning the candidate x.",
+        "A correct n normally receives full credit under cas unless obtained from obviously incorrect working."
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4MB1:issue1:6C",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "The source explicitly includes regular polygon angle properties; the task links an interior/exterior pair and the exterior-angle sum.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                24
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                17
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4MB1:issue1:3G",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Solve the first-degree equation in x created by the angle relationship.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                17
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "written-scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            14
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO split inferred.",
+      "templateLinkStatus": "candidate-only",
+      "proposedFamilyId": "4MB1.geometry.regular-polygon-algebra",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex",
+      "reviewerType": "agent",
+      "reviewDate": "2026-10-01",
+      "humanReviewed": false,
+      "generalSchemePages": [
+        3,
+        4,
+        5
+      ],
+      "commonErrors": [
+        {
+          "description": "Using 360° for the sum of one interior angle and its adjacent exterior angle.",
+          "origin": "editorial"
+        },
+        {
+          "description": "Returning x rather than the number of sides.",
+          "origin": "editorial"
+        }
+      ],
+      "markingReviewNotes": [
+        "Source criteria are preserved as an offline analysis, not an implemented automatic marker. General scheme instructions remain relevant for contradictory methods, misreads and answer-only responses."
+      ],
+      "blockers": [
+        "Alternative-route and follow-through calibration remain pending; no active family or automated marker."
+      ],
+      "sourceData": {
+        "interiorAngleDegrees": "2x",
+        "exteriorAngleDegrees": "(x − 54)/2",
+        "requiredQuantity": "integer side count n"
+      }
+    },
+    {
+      "paperId": "4MB1-2024-summer-01-candidate",
+      "recordKind": "leaf",
+      "taskId": "4MB1-2024-summer-01-candidate.Q19",
+      "questionPath": "19",
+      "questionPaperPages": [
+        15
+      ],
+      "markSchemePages": [
+        18
+      ],
+      "originalMarks": 3,
+      "commandWord": "Find",
+      "requiredKnowledge": [
+        "Inverse variation",
+        "Cube roots",
+        "Finding a proportionality constant"
+      ],
+      "contextSummary": "Use inverse cube-root variation to find a new dependent value; the exact model has an unresolved mismatch with the obtained specification list.",
+      "solutionStructure": [
+        "Write y = k/∛x.",
+        "With x = 3.375 and y = 6, ∛3.375 = 1.5, so k = 6 × 1.5 = 9.",
+        "For x = 64, ∛64 = 4, giving y = 9/4 = 2.25."
+      ],
+      "markingMethod": "method-marks",
+      "criteria": [
+        {
+          "id": "inverse-cube-root-model",
+          "marks": 1,
+          "code": "M1",
+          "rule": "Use k/∛x or an equivalent proportionality expression; another letter for the constant and proportionality notation are allowed."
+        },
+        {
+          "id": "constant-method",
+          "marks": 1,
+          "code": "M1 dependent",
+          "rule": "Use the given values correctly to determine the constant, for example k = 6 × ∛3.375. The scheme condones proportionality notation here and says this mark implies the model mark.",
+          "dependsOn": [
+            "inverse-cube-root-model"
+          ]
+        },
+        {
+          "id": "variation-result",
+          "marks": 1,
+          "code": "A1",
+          "rule": "Correct y = 2.25 or equivalent, with cas subject to the general incorrect-working exception.",
+          "dependsOn": [
+            "inverse-cube-root-model",
+            "constant-method"
+          ]
+        }
+      ],
+      "acceptableAlternatives": [
+        "Use a different constant letter or equivalent fractional-index notation.",
+        "Use equivalent exact answer 9/4.",
+        "The historical scheme gives a separate SC B1 for an answer rounding to 3.6 or 16; this is not full credit and must not be added as a fourth mark."
+      ],
+      "dependencies": [
+        "The second method mark implies the first.",
+        "Special-case credit is a fallback, not an extra mark added to the ordinary three-mark route.",
+        "The reason given for the special-case 3.6 is inconsistent with consistently evaluating the printed inverse-cube model; retain the source concession without inventing an automatic explanation."
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4MB1:issue1:4G",
+          "kind": "primary",
+          "currentApplicability": "unresolved-specification-scope",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Related variation row verified, but its explicitly limited list includes direct/inverse x, x², x³ and square roots, not cube roots. The source task explicitly asks inverse cube-root variation. Applicability to the obtained issue remains unresolved; do not silently expand this row.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                21
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                18
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4MB1:issue1:1C",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "The source task also requires evaluating cube roots, within Number indices/powers/roots.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                17
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                18
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "algebraic-expression"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            15
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO split inferred.",
+      "templateLinkStatus": "candidate-only",
+      "proposedFamilyId": "4MB1.variation.inverse-cube-root",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex",
+      "reviewerType": "agent",
+      "reviewDate": "2026-10-01",
+      "humanReviewed": false,
+      "generalSchemePages": [
+        3,
+        4,
+        5
+      ],
+      "commonErrors": [
+        {
+          "description": "Using direct cube-root variation gives 16, for which the historical scheme allows special-case credit only.",
+          "origin": "scheme",
+          "sourceRefs": [
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                18
+              ]
+            }
+          ]
+        }
+      ],
+      "markingReviewNotes": [
+        "Source criteria are preserved as an offline analysis, not an implemented automatic marker. General scheme instructions remain relevant for contradictory methods, misreads and answer-only responses."
+      ],
+      "blockers": [
+        "Unresolved specification scope: Q19 uses inverse cube roots, absent from the explicit list in obtained Issue 1 row 4G. A series amendment or authoritative clarification is needed before curriculum/template eligibility.",
+        "Published SC B1 value 3.6 and its inverse-cube explanation need clarification; do not turn this into a generated marking rule.",
+        "No generative family or calibrated marker implemented."
+      ],
+      "sourceData": {
+        "relationship": "y inversely proportional to cube root of x",
+        "givenX": "3.375",
+        "givenY": 6,
+        "targetX": 64
+      },
+      "specialCases": [
+        {
+          "id": "published-misinterpretation-credit",
+          "code": "SC B1",
+          "marks": 1,
+          "additive": false,
+          "rule": "The source permits one special-case mark for an answer rounding to 3.6 or 16.",
+          "sourceRefs": [
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                18
+              ]
+            }
+          ],
+          "calibrationStatus": "unresolved-source-explanation"
+        }
+      ],
+      "scopeReview": {
+        "status": "unresolved",
+        "pointId": "4MB1:issue1:4G",
+        "discrepancyId": "Q19-inverse-cube-root-scope",
+        "resolution": null
+      }
+    },
+    {
+      "paperId": "4MB1-2024-summer-01-candidate",
+      "recordKind": "leaf",
+      "taskId": "4MB1-2024-summer-01-candidate.Q20",
+      "questionPath": "20",
+      "questionPaperPages": [
+        15
+      ],
+      "markSchemePages": [
+        18
+      ],
+      "originalMarks": 4,
+      "commandWord": "Show that",
+      "requiredKnowledge": [
+        "Exact surd manipulation",
+        "Squaring a binomial",
+        "Conjugate rationalisation",
+        "Showing non-calculator working"
+      ],
+      "contextSummary": "Simplify a squared surd numerator over a binomial surd denominator into the requested exact form.",
+      "solutionStructure": [
+        "Simplify the numerator: √27 + √3 = 4√3, so its square is 48.",
+        "Write the denominator as 3(√5 + 1), giving 16/(√5 + 1).",
+        "Multiply by (√5 − 1)/(√5 − 1), so the denominator becomes 5 − 1 = 4.",
+        "The expression becomes 4(√5 − 1) = 4√5 − 4, so a = 4 and b = 5."
+      ],
+      "markingMethod": "method-marks",
+      "criteria": [
+        {
+          "id": "square-numerator",
+          "marks": 1,
+          "code": "M1",
+          "rule": "Show a correct method for squaring the numerator, such as (4√3)² or 27 + 3 + 2√81."
+        },
+        {
+          "id": "conjugate-method",
+          "marks": 1,
+          "code": "M1",
+          "rule": "Multiply by an appropriate conjugate divided by itself. The source allows simplified or unsimplified conjugates and their sign-reversed equivalents; this may be seen earlier.",
+          "dependsOn": []
+        },
+        {
+          "id": "surd-or-denominator-simplification",
+          "marks": 1,
+          "code": "M1",
+          "rule": "Change √45 to 3√5, possibly earlier, or simplify the rationalised denominator to an integer. This is one mark, not one for each of those alternatives.",
+          "dependsOn": []
+        },
+        {
+          "id": "exact-result",
+          "marks": 1,
+          "code": "A1 dependent",
+          "rule": "Reach 4√5 − 4 with all three method marks awarded; working is explicitly required.",
+          "dependsOn": [
+            "square-numerator",
+            "conjugate-method",
+            "surd-or-denominator-simplification"
+          ]
+        }
+      ],
+      "acceptableAlternatives": [
+        "Rationalise with √45 − 3, 3√5 − 3 or √5 − 1 after equivalent prior simplification.",
+        "Use the negative of a conjugate in both numerator and denominator.",
+        "Rationalise before simplifying the original numerator, preserving the required evidence."
+      ],
+      "dependencies": [
+        "The final accuracy mark explicitly depends on all three method marks.",
+        "The second and third method marks may appear earlier; assessment must not demand one fixed line order.",
+        "The task-specific working-required instruction overrides generic cas scoring.",
+        "A final decimal approximation does not demonstrate the requested exact form."
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4MB1:issue1:1E",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "The denominator is rationalised using a conjugate.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                17
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                18
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4MB1:issue1:1D",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Simplify and combine surds and square the numerator.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                17
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                18
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "algebraic-expression"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            15
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO split inferred.",
+      "templateLinkStatus": "candidate-only",
+      "proposedFamilyId": "4MB1.surds.binomial-rationalisation",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex",
+      "reviewerType": "agent",
+      "reviewDate": "2026-10-01",
+      "humanReviewed": false,
+      "generalSchemePages": [
+        3,
+        4,
+        5
+      ],
+      "commonErrors": [
+        {
+          "description": "Dropping the cross term when squaring the numerator.",
+          "origin": "editorial"
+        },
+        {
+          "description": "Multiplying only the denominator by the conjugate.",
+          "origin": "editorial"
+        },
+        {
+          "description": "Treating the two alternatives for the third M mark as separate marks.",
+          "origin": "scheme",
+          "sourceRefs": [
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                18
+              ]
+            }
+          ]
+        }
+      ],
+      "markingReviewNotes": [
+        "Source criteria are preserved as an offline analysis, not an implemented automatic marker. General scheme instructions remain relevant for contradictory methods, misreads and answer-only responses."
+      ],
+      "blockers": [
+        "No generated family or calibrated explicit-working assessment implemented."
+      ],
+      "sourceExpression": "(√27 + √3)²/(√45 + 3)",
+      "responseRequirements": {
+        "calculatorAllowed": false,
+        "workingRequired": true,
+        "finalForm": "a√b − a with integers a,b",
+        "sourceRefs": [
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-qp",
+            "pdfPages": [
+              15
+            ]
+          }
+        ]
+      }
     }
   ],
   "marksReconciled": true,
   "processingNotes": [
-    "Detailed coverage is three of the 38 indexed parts, covering eight of 100 original marks.",
+    "Detailed coverage is seven of the 38 indexed parts, covering 23 of 100 original marks.",
     "The paper remains indexed; marksReconciled refers to the existing whole-paper text totals and this subset, not complete task processing.",
     "Proposed IDs do not activate templates. Q15(b) now has a separate provisional family and experimental runtime, with no validated custom maximum or live eligibility."
   ],
   "blockers": [
-    "35 Maths parts still lack detailed analyses.",
+    "31 Maths parts still lack detailed analyses.",
     "Whole-paper visual/page and scheme-content audit remains incomplete.",
     "Outside the reviewed subset, extracted Maths text still contains unresolved glyph names and private-use characters; use the PDF for mathematical notation.",
-    "Source-linked generative families, calibration and assessment-objective review remain unfinished."
+    "Source-linked generative families, calibration and assessment-objective review remain unfinished.",
+    "Q19 inverse cube-root demand is not in the obtained specification row 4G explicit list; current-series scope needs authoritative reconciliation.",
+    "Q19 special-case 3.6 explanation is arithmetically inconsistent when its printed inverse-cube model is applied consistently; concession preserved, generated use blocked."
+  ],
+  "sourceDiscrepancies": [
+    {
+      "id": "Q19-inverse-cube-root-scope",
+      "status": "unresolved-specification-scope",
+      "sourceRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            15
+          ]
+        },
+        {
+          "documentId": "4MB1-spec",
+          "pdfPages": [
+            21
+          ]
+        }
+      ],
+      "observation": "The source paper asks inverse cube-root variation, while obtained Issue 1 row 4G explicitly lists powers 1,2,3 and square roots only.",
+      "handling": "Keep the historical task and related mapping but do not claim this demand is included in the obtained specification or activate a generated family."
+    },
+    {
+      "id": "Q19-special-case-3.6",
+      "status": "source-explanation-inconsistent",
+      "sourceRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-ms",
+          "pdfPages": [
+            18
+          ]
+        }
+      ],
+      "observation": "SC B1 accepts an answer rounding to 3.6 and prints an inverse-cube misinterpretation. Consistently using y=k/x³ from x=3.375,y=6 to x=64 gives about 0.000879899, not 3.6. The other special-case answer 16 is consistent with direct cube-root variation.",
+      "handling": "Preserve the historical scoring concession as written; do not invent a corrected interpretation or use it in generated rubrics without clarification."
+    }
   ]
 }

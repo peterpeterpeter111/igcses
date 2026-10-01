@@ -1,3 +1,11 @@
+# Latest phase — Maths Q17–Q20, 1 October 2026
+
+Read research/checkpoints/2026-10-01-Q17-20.md and 2026-10-01-ALGEBRA-H-L.md first. Maths now has seven detailed leaves / 23 marks; 31 of 38 pending. Q19 inverse cube-root applicability and special-case explanation are explicitly unresolved; no generated use. 231 sections / 13 partial notes; 272 reviewed identities (269 with teaching audits), 680 partial requirements / 377 links. Four provisional families / three experimental generators/markers / zero active; no complete chapters/points/processed papers. 96 tests, typecheck, lint, research/evidence checks and final build/public scan pass. GitHub db2ca93 mirrors fca7a4a; both newer phases need non-force sync. Keep AI last, preserve UI/history, no reset; check both allowances and pause at 5%. Older entries are historical.
+
+# Latest curriculum phase — Algebra H–L, 1 October 2026
+
+Read research/checkpoints/2026-10-01-ALGEBRA-H-L.md first. Nine partial lessons and three verified diagrams added. Totals: 231 sections / 13 partial documents; 269 reviewed parents / 680 partial requirements / 377 links. Maths 48 sections / 32 parents / 111 requirements. No complete chapters/points/processed papers or active templates. 96 tests, typecheck, lint, research/content/evidence checks and final production build/public scan pass. GitHub db2ca93 matches saved fca7a4a; this new curriculum delta needs sync. Next: bounded Maths paper details, remaining curriculum beyond Algebra and calibrated templates. Preserve history/UI, keep AI last; no reset. Check both allowances and pause at 5%. Older entries are historical.
+
 # Latest pause — 1 October 2026
 
 Read research/checkpoints/2026-10-01-PAUSED.md first. Allowances: 3% five-hour / 85% weekly remaining; paused, no reset. GitHub 6acc3ad exactly mirrors local 0507c57; fetched equality and ancestry verified. Only this pause documentation needs the next non-force sync. 222 sections / 13 partial notes, 264 parents / 661 partial requirements / 368 links; four provisional families / three experimental generators and markers / zero active. 96 tests and final build pass. Zero complete chapters/points/processed papers; no deployment. Resume only above 5% in both windows, continue Algebra H–L and paper/template calibration; preserve UI/history, keep AI last. Earlier entries are historical.

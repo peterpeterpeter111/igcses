@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-01",
+  "scope": "Independent arithmetic checks for Q17\u2013Q20; original scheme dependencies reviewed visually, not an automatic marker calibration.",
+  "extractionSha256": "e21c0de5f353ba99bdb873bf6fd5252ba2afa84f5fc41609e1a3905cbe351b9f",
+  "checks": [
+    {
+      "name": "Q17 green and red totals",
+      "passed": true
+    },
+    {
+      "name": "Q17 mean and explicit rounded allowance",
+      "passed": true
+    },
+    {
+      "name": "Q18 supplementary angles",
+      "passed": true
+    },
+    {
+      "name": "Q18 side count and alternate interior equation",
+      "passed": true
+    },
+    {
+      "name": "Q19 cube root identities",
+      "passed": true
+    },
+    {
+      "name": "Q19 constant and result",
+      "passed": true
+    },
+    {
+      "name": "Q19 printed inverse-cube model does not yield special-case 3.6",
+      "passed": true
+    },
+    {
+      "name": "Q19 direct cube-root model gives special-case 16",
+      "passed": true
+    },
+    {
+      "name": "Q20 square numerator",
+      "passed": true
+    },
+    {
+      "name": "Q20 exact-form identity numerical cross-check",
+      "passed": true
+    },
+    {
+      "name": "Q20 exact conjugate reconstruction",
+      "passed": true
+    }
+  ],
+  "sourceDiscrepancy": {
+    "question": "19",
+    "printedWrongModel": "y=k/x\u00b3",
+    "computedValue": 0.0008798986673355103,
+    "publishedSpecialCase": "answer which rounds to 3.6",
+    "resolved": false
+  }
+}

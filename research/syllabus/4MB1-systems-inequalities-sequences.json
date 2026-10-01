@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4MB1",
+  "specificationIssue": "Issue 1 - January 2016",
+  "specificationDocumentId": "4MB1-spec",
+  "specificationSha256": "62d4534ba1c0aee42ce2d3e7fd1da8083fd03216dd106da11ae590525d3187a5",
+  "reviewDate": "2026-10-01",
+  "reviewedBy": "Codex",
+  "reviewerType": "agent",
+  "reviewMethod": "Visual inspection of official specification PDF page 20 (printed page 14); component applicability retained from the reviewed PDF pages 11–12.",
+  "reviewedPages": [
+    20
+  ],
+  "scope": "Bounded Algebra rows 3H–3L on official PDF page 20 (printed 14): simultaneous linear and linear-quadratic equations, linear inequalities on number lines and in two dimensions, quadratic inequalities, and common sequences. Linear programming explicitly excluded. All teaching and assessment calibration remain partial.",
+  "points": [
+    {
+      "id": "4MB1:issue1:3H",
+      "reference": "3H",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "summary": "Solve simultaneous linear equations in two unknowns, including graphical solutions.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "number-and-algebra",
+      "noteSectionIds": [
+        "simultaneous-linear-equations",
+        "simultaneous-equations-graphs"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-01"
+    },
+    {
+      "id": "4MB1:issue1:3I",
+      "reference": "3I",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "summary": "Solve simultaneous equations where one equation is linear and the other quadratic.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "number-and-algebra",
+      "noteSectionIds": [
+        "linear-quadratic-simultaneous"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-01"
+    },
+    {
+      "id": "4MB1:issue1:3J",
+      "reference": "3J",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "summary": "Solve linear inequalities and represent their solutions on number lines and in two-dimensional space, including simultaneous regions.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "number-and-algebra",
+      "noteSectionIds": [
+        "linear-inequalities-number-lines",
+        "inequality-regions"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-01"
+    },
+    {
+      "id": "4MB1:issue1:3K",
+      "reference": "3K",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "summary": "Solve quadratic inequalities in one unknown and represent the solution set on a number line.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "number-and-algebra",
+      "noteSectionIds": [
+        "quadratic-inequalities",
+        "quadratic-inequality-edge-cases"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-01"
+    },
+    {
+      "id": "4MB1:issue1:3L",
+      "reference": "3L",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "summary": "Recognise and continue sequences with common differences and common integer patterns.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "number-and-algebra",
+      "noteSectionIds": [
+        "arithmetic-sequences",
+        "common-integer-sequences"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-01"
+    }
+  ]
+}

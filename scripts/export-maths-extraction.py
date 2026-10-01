@@ -78,6 +78,13 @@ def prepare(root=ROOT):
         require(t['syllabusMappings'], 'Missing reviewed mapping')
         for mapping in t['syllabusMappings']:
             point = points[mapping['pointId']]
+            require(mapping['currentApplicability'] in ['current-specification', 'unresolved-specification-scope'], 'Unknown scope status')
+            scope = t.get('scopeReview', {})
+            if scope.get('status') == 'unresolved' and scope.get('pointId') == mapping['pointId']:
+                require(mapping['currentApplicability'] == 'unresolved-specification-scope' and scope.get('resolution') is None, 'Unresolved scope cannot be promoted')
+                require(any(d['id'] == scope['discrepancyId'] for d in m.get('sourceDiscrepancies', [])), 'Missing scope discrepancy')
+            if mapping['currentApplicability'] == 'unresolved-specification-scope':
+                require(scope.get('status') == 'unresolved' and scope.get('pointId') == mapping['pointId'] and t['blockers'], 'Missing unresolved-scope review')
             require({'documentId': m['currentSpecification']['documentId'], 'pdfPages': [point['pdfPage']]} in mapping['evidenceRefs'], 'Missing exact specification page')
             require({'documentId': ms['id'], 'pdfPages': t['markSchemePages']} in mapping['evidenceRefs'], 'Missing exact scheme page')
         q = t['questionPath'].split('.')[0]

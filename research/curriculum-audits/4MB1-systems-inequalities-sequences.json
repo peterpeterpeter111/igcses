@@ -1,0 +1,422 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4MB1",
+  "chapterId": "number-and-algebra",
+  "documentId": "4MB1-spec",
+  "specificationIssue": "Issue 1 - January 2016",
+  "documentSha256": "62d4534ba1c0aee42ce2d3e7fd1da8083fd03216dd106da11ae590525d3187a5",
+  "reviewDate": "2026-10-01",
+  "reviewer": "Codex",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Bounded Algebra rows 3H–3L on official PDF page 20 (printed 14): simultaneous linear and linear-quadratic equations, linear inequalities on number lines and in two dimensions, quadratic inequalities, and common sequences. Linear programming explicitly excluded. All teaching and assessment calibration remain partial.",
+  "identifierPolicy": "3H–3L combine printed section 3 and row letters. r-suffixes identify editorial teaching requirements, not official substatement numbers.",
+  "notePath": "content/notes/mathematics.json",
+  "parents": [
+    {
+      "parentId": "4MB1:issue1:3H",
+      "officialReference": "3H",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Source row and bounded original teaching linked; wider contexts, independent task calibration and whole-chapter review remain incomplete.",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:3H:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Eliminate or substitute to solve linear equations and check both coordinates.",
+          "teachingEvidence": [
+            {
+              "sectionId": "simultaneous-linear-equations",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent source-linked assessment calibration and unfamiliar variants.",
+            "Whole-chapter teaching and component coverage review incomplete."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:3H:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Recognise one, no or infinitely many solutions for pairs of lines.",
+          "teachingEvidence": [
+            {
+              "sectionId": "simultaneous-linear-equations",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent source-linked assessment calibration and unfamiliar variants.",
+            "Whole-chapter teaching and component coverage review incomplete."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:3H:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Plot both lines and read a simultaneous solution with appropriate precision.",
+          "teachingEvidence": [
+            {
+              "sectionId": "simultaneous-equations-graphs",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent source-linked assessment calibration and unfamiliar variants.",
+            "Whole-chapter teaching and component coverage review incomplete."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4MB1:issue1:3I",
+      "officialReference": "3I",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Source row and bounded original teaching linked; wider contexts, independent task calibration and whole-chapter review remain incomplete.",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:3I:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Substitute a linear expression into a quadratic and solve the resulting equation.",
+          "teachingEvidence": [
+            {
+              "sectionId": "linear-quadratic-simultaneous",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent source-linked assessment calibration and unfamiliar variants.",
+            "Whole-chapter teaching and component coverage review incomplete."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:3I:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Pair each real root with its corresponding second coordinate and check both equations.",
+          "teachingEvidence": [
+            {
+              "sectionId": "linear-quadratic-simultaneous",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent source-linked assessment calibration and unfamiliar variants.",
+            "Whole-chapter teaching and component coverage review incomplete."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:3I:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Recognise zero, one or two real intersections and apply contextual restrictions.",
+          "teachingEvidence": [
+            {
+              "sectionId": "linear-quadratic-simultaneous",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent source-linked assessment calibration and unfamiliar variants.",
+            "Whole-chapter teaching and component coverage review incomplete."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4MB1:issue1:3J",
+      "officialReference": "3J",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Source row and bounded original teaching linked; wider contexts, independent task calibration and whole-chapter review remain incomplete.",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:3J:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Solve linear inequalities, reversing the sign for negative multipliers or divisors.",
+          "teachingEvidence": [
+            {
+              "sectionId": "linear-inequalities-number-lines",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent source-linked assessment calibration and unfamiliar variants.",
+            "Whole-chapter teaching and component coverage review incomplete."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:3J:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Represent strict and inclusive endpoints and intersect compound conditions.",
+          "teachingEvidence": [
+            {
+              "sectionId": "linear-inequalities-number-lines",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent source-linked assessment calibration and unfamiliar variants.",
+            "Whole-chapter teaching and component coverage review incomplete."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:3J:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Distinguish integer solutions from the full real interval.",
+          "teachingEvidence": [
+            {
+              "sectionId": "linear-inequalities-number-lines",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent source-linked assessment calibration and unfamiliar variants.",
+            "Whole-chapter teaching and component coverage review incomplete."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:3J:r4",
+          "origin": "editorial-decomposition",
+          "summary": "Draw strict and inclusive boundary lines and identify permitted half-planes.",
+          "teachingEvidence": [
+            {
+              "sectionId": "inequality-regions",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent source-linked assessment calibration and unfamiliar variants.",
+            "Whole-chapter teaching and component coverage review incomplete."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:3J:r5",
+          "origin": "editorial-decomposition",
+          "summary": "Intersect half-planes and check edge inclusion; linear programming is excluded.",
+          "teachingEvidence": [
+            {
+              "sectionId": "inequality-regions",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent source-linked assessment calibration and unfamiliar variants.",
+            "Whole-chapter teaching and component coverage review incomplete."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4MB1:issue1:3K",
+      "officialReference": "3K",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Source row and bounded original teaching linked; wider contexts, independent task calibration and whole-chapter review remain incomplete.",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:3K:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Find roots and test signs on the intervals they delimit.",
+          "teachingEvidence": [
+            {
+              "sectionId": "quadratic-inequalities",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent source-linked assessment calibration and unfamiliar variants.",
+            "Whole-chapter teaching and component coverage review incomplete."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:3K:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Select inside or outside intervals with correct endpoint inclusion.",
+          "teachingEvidence": [
+            {
+              "sectionId": "quadratic-inequalities",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent source-linked assessment calibration and unfamiliar variants.",
+            "Whole-chapter teaching and component coverage review incomplete."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:3K:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Handle repeated roots and quadratics with no real roots without assuming a sign change.",
+          "teachingEvidence": [
+            {
+              "sectionId": "quadratic-inequality-edge-cases",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent source-linked assessment calibration and unfamiliar variants.",
+            "Whole-chapter teaching and component coverage review incomplete."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:3K:r4",
+          "origin": "editorial-decomposition",
+          "summary": "Express single-point, empty and all-real solution sets.",
+          "teachingEvidence": [
+            {
+              "sectionId": "quadratic-inequality-edge-cases",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent source-linked assessment calibration and unfamiliar variants.",
+            "Whole-chapter teaching and component coverage review incomplete."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4MB1:issue1:3L",
+      "officialReference": "3L",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Source row and bounded original teaching linked; wider contexts, independent task calibration and whole-chapter review remain incomplete.",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:3L:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Recognise and continue arithmetic sequences including negative or zero differences.",
+          "teachingEvidence": [
+            {
+              "sectionId": "arithmetic-sequences",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent source-linked assessment calibration and unfamiliar variants.",
+            "Whole-chapter teaching and component coverage review incomplete."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:3L:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Relate term position to repeated common-difference steps.",
+          "teachingEvidence": [
+            {
+              "sectionId": "arithmetic-sequences",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent source-linked assessment calibration and unfamiliar variants.",
+            "Whole-chapter teaching and component coverage review incomplete."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:3L:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Recognise and continue common integer sequences and simple stated recurrence rules.",
+          "teachingEvidence": [
+            {
+              "sectionId": "common-integer-sequences",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent source-linked assessment calibration and unfamiliar variants.",
+            "Whole-chapter teaching and component coverage review incomplete."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:3L:r4",
+          "origin": "editorial-decomposition",
+          "summary": "Check the proposed pattern against all supplied terms and acknowledge non-unique finite continuations.",
+          "teachingEvidence": [
+            {
+              "sectionId": "common-integer-sequences",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent source-linked assessment calibration and unfamiliar variants.",
+            "Whole-chapter teaching and component coverage review incomplete."
+          ]
+        }
+      ]
+    }
+  ],
+  "completeTeachingPoints": 0,
+  "completeChapters": 0
+}

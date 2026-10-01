@@ -4,9 +4,9 @@ Work in progress for six Pearson Edexcel International GCSE linear qualification
 
 ## Current checkpoint
 - Six subject routes and 36 top-level chapter entries, with subject search and transparent coverage pages.
-- Thirteen partial source-checked note documents (222 sections), with original examples. No complete chapters or complete syllabus coverage. Reviewed inventories contain 264 parent identities and 661 partial local requirements; these are not completion counts.
-- Seven paper/scheme pairs downloaded, including Mathematics B with a 38-part / 100-mark text index, selected visual checks and three detailed records across Q15–Q16 (eight marks); zero whole papers fully processed.
-- D1 schema, session/history routes and tested quiz state/storage contracts. Ninety automated tests, including concurrent writes, lost-response recovery and exact, repeatable content seeding; isolated local Cloudflare D1 verification passes.
+- Thirteen partial source-checked note documents (231 sections), with original examples. No complete chapters or complete syllabus coverage. Reviewed inventories contain 272 parent identities (269 with teaching audits) and 680 partial local requirements; these are not completion counts.
+- Seven paper/scheme pairs downloaded, including Mathematics B with a 38-part / 100-mark text index, selected visual checks and seven detailed records across Q15–Q20 (23 marks), with a Q19 specification-scope discrepancy recorded; zero whole papers fully processed.
+- D1 schema, session/history routes and tested quiz state/storage contracts. 96 automated tests, including concurrent writes, lost-response recovery and exact, repeatable content seeding; isolated local Cloudflare D1 verification passes.
 - Four provisional families and three experimental generators (two Physics, one Maths); zero active templates. Three bounded offline markers exist, but live AI generation and examiner-style marking remain deferred. This is not the completed question bank.
 - Sites hosting is configured, but no live website is claimed. Read PROGRESS_CHECKPOINT.md and the newest research/checkpoints file before resuming.
 

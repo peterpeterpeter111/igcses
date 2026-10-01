@@ -1,0 +1,13 @@
+# Algebra H–L partial teaching — 1 October 2026
+
+Continues fca7a4a. The prior pause documentation was synced non-force to GitHub db2ca9363e11e31960120de3d1eaf989bf697a0d; fetched equality with fca7a4a and prior ancestry verified. No reset.
+
+Nine original teaching sections were added for official Maths B Algebra rows 3H–3L, visually checked on specification PDF 20 / printed 14: simultaneous linear equations (algebra and graphs), a linear/quadratic system, linear inequalities and regions, quadratic inequalities including repeated/no-real-root cases, and arithmetic/common integer sequences. Linear programming remains excluded. Three original functional diagrams support line intersections, strict/inclusive region boundaries and quadratic signs. A default SVG fill artefact was found during visual review and fixed before the final build. Existing UI preserved.
+
+Added syllabus and curriculum files named 4MB1-systems-inequalities-sequences.json; integrated imports, ledger export and expected-count checks. Five parent identities, 19 editorial requirements and nine teaching links added. Current totals: 231 sections / 13 partial note documents; 269 reviewed parents / 680 partial requirements / 377 links. Maths: 48 sections, 32 parent identities, 111 requirements. All Number, Sets and Algebra row identities in these bounded inventories now have partial links; that does not complete those chapters, their contexts, component assessment or whole-specification audits.
+
+Validation: 96 tests, typecheck, lint, 13 research checks, content/evidence audits (zero errors, three declared normalization gaps), final production build and public scan (53 files, zero findings). Eighteen separate answer checks saved in research/validation/2026-10-01-algebra-rest-examples.json with note/diagram hashes. All three diagrams visually inspected. Reader loads all new diagrams, has no horizontal overflow and settles at anchor top 23.8359375px. Browser Maths coverage shows 32 statements / 111 partial requirements.
+
+Paper and template totals unchanged: seven obtained pairs; Physics 51 detailed parts/110 marks, Maths three/eight (35 of 38 pending) and separate English Q5 pilot. Four provisional families / three experimental generators and markers / zero active. Zero complete chapters, complete points or fully processed papers. No AI integration, Sites version or deployment.
+
+Next: bounded Maths detailed extraction using official paper/scheme PDFs, remaining curriculum beyond Algebra and calibrated families. Current source delta needs non-force sync after saving. Keep AI last, preserve history/UI and check both allowances; pause/save at 5% in either. Latest check before final verification: 85% five-hour / 82% weekly remaining.

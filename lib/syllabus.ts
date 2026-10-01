@@ -1,3 +1,5 @@
+import mathsPaperDemands from '../research/syllabus/4MB1-selected-paper-demands.json' with { type: 'json' };
+import mathsAlgebraRest from '../research/syllabus/4MB1-systems-inequalities-sequences.json' with { type: 'json' };
 import mathsEquations from '../research/syllabus/4MB1-equations.json' with { type: 'json' };
 import forces from '../research/syllabus/4PH1-forces-and-motion.json' with { type: 'json' };
 import waves from '../research/syllabus/4PH1-waves.json' with { type: 'json' };
@@ -36,4 +38,6 @@ export const reviewedInventories = [
   { title: 'Algebra foundations: section 3, rows A–C', ...mathsAlgebra },
   { title: 'Polynomials and algebraic fractions: section 3, rows D–F', ...mathsPolynomials },
   { title: 'Equations: section 3, row G', ...mathsEquations },
+  { title: 'Simultaneous equations, inequalities and sequences: section 3, rows H–L', ...mathsAlgebraRest },
+  { title: 'Selected paper demands: variation, polygon angles and averages (source identities only)', ...mathsPaperDemands },
 ];

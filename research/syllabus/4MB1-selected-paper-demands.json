@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4MB1",
+  "specificationIssue": "Issue 1 - January 2016",
+  "specificationDocumentId": "4MB1-spec",
+  "specificationSha256": "62d4534ba1c0aee42ce2d3e7fd1da8083fd03216dd106da11ae590525d3187a5",
+  "reviewDate": "2026-10-01",
+  "reviewedBy": "Codex",
+  "reviewerType": "agent",
+  "reviewMethod": "Visual review of official specification PDF pages 21,24,28; component applicability retained from prior PDF 11–12 review.",
+  "reviewedPages": [
+    21,
+    24,
+    28
+  ],
+  "scope": "Three source-only row identities needed to analyse Q17–Q19: 4G variation, 6C angles and 10B discrete averages. No teaching links or completed substatement audit. Q19 cube-root applicability to 4G is unresolved.",
+  "points": [
+    {
+      "id": "4MB1:issue1:4G",
+      "reference": "4G",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "summary": "Direct and indirect proportion in the explicitly listed forms: x, x², x³, √x and their reciprocals; inverse cube roots in source Q19 are not explicitly listed.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "number-and-algebra",
+      "noteSectionIds": [],
+      "teachingCoverage": "not-started",
+      "humanReviewed": false
+    },
+    {
+      "id": "4MB1:issue1:6C",
+      "reference": "6C",
+      "pdfPage": 24,
+      "printedPage": 18,
+      "summary": "Angle properties of parallel lines, triangles and polygons, including regular polygons, straight-line and full-turn angles.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "geometry",
+      "noteSectionIds": [],
+      "teachingCoverage": "not-started",
+      "humanReviewed": false
+    },
+    {
+      "id": "4MB1:issue1:10B",
+      "reference": "10B",
+      "pdfPage": 28,
+      "printedPage": 22,
+      "summary": "Determine mean, median and mode for discrete data.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "statistics",
+      "noteSectionIds": [],
+      "teachingCoverage": "not-started",
+      "humanReviewed": false
+    }
+  ]
+}

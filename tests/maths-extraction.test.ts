@@ -8,10 +8,10 @@ void test('Maths coverage exposes the reviewed subset without criteria or promot
   const candidate = obtainedPaperCandidates('4MB1')[0];
   const summary = paperDetailedSummary(candidate)!;
   assert.ok(summary);
-  assert.equal(summary.detailedTasks, 3);
-  assert.equal(summary.originalMarks, 8);
+  assert.equal(summary.detailedTasks, 7);
+  assert.equal(summary.originalMarks, 23);
   assert.equal(summary.indexedTasks, 38);
-  assert.equal(summary.remainingTasks, 35);
+  assert.equal(summary.remainingTasks, 31);
   assert.equal(summary.fullyProcessed, false);
   assert.equal(summary.humanReviewed, false);
   assert.ok(!('tasks' in summary) && !('criteria' in summary));
@@ -26,6 +26,14 @@ void test('Maths coverage exposes the reviewed subset without criteria or promot
   assert.match(q16.criteria[3].rule, /improper fraction must also be visible/);
   assert.equal(q16.responseRequirements?.calculatorAllowed, false);
   assert.equal(q16.responseRequirements?.workingRequired, true);
+  const q19 = detail.tasks.find((task) => task.questionPath === '19')!;
+  assert.equal(q19.syllabusMappings[0].currentApplicability, 'unresolved-specification-scope');
+  assert.equal(q19.scopeReview?.status, 'unresolved');
+  assert.equal(q19.specialCases?.[0].additive, false);
+  assert.equal(q19.criteria.reduce((sum, c) => sum + c.marks, 0), 3);
+  const q20 = detail.tasks.find((task) => task.questionPath === '20')!;
+  assert.deepEqual('dependsOn' in q20.criteria[3] ? q20.criteria[3].dependsOn : [], ['square-numerator', 'conjugate-method', 'surd-or-denominator-simplification']);
+  assert.equal(q20.responseRequirements?.workingRequired, true);
 });
 
 void test('Maths export rejects source, count, page and promotion errors before table changes', () => {
@@ -60,6 +68,9 @@ with tempfile.TemporaryDirectory() as d:
   'cyclic-dependency':lambda m:m['tasks'][2]['criteria'][0].update(dependsOn=['mixed-number-result']),
   'unknown-dependency':lambda m:m['tasks'][2]['criteria'][3].update(dependsOn=['invented-method']),
   'removed-task':remove_task,
+  'scope-promotion':lambda m:next(t for t in m['tasks'] if t['questionPath']=='19')['syllabusMappings'][0].update(currentApplicability='current-specification'),
+  'scope-evidence':lambda m:m.update(sourceDiscrepancies=[]),
+  'unknown-scope':lambda m:m['tasks'][0]['syllabusMappings'][0].update(currentApplicability='invented'),
  }
  for name,mutate in mutations.items():
   m=copy.deepcopy(original);mutate(m);path.write_text(json.dumps(m))
@@ -69,6 +80,6 @@ with tempfile.TemporaryDirectory() as d:
   assert all(p.read_bytes()==data for p,data in before.items()),name+' changed a table'
  print(json.dumps({'rejected':len(mutations),'tablesChecked':len(outputs)}))
 `], { encoding: 'utf8' }));
-  assert.equal(result.rejected, 12);
+  assert.equal(result.rejected, 15);
   assert.equal(result.tablesChecked, 4);
 });

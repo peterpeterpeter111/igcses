@@ -22,7 +22,10 @@
     "Construct, use and rearrange formulae while keeping necessary restrictions.",
     "Use the factor theorem and divide cubics by linear factors.",
     "Manipulate algebraic fractions while retaining their original restrictions.",
-    "Solve linear, quadratic and factorable cubic equations, choosing algebraic or graphical methods and checking context."
+    "Solve linear, quadratic and factorable cubic equations, choosing algebraic or graphical methods and checking context.",
+    "Solve linear and linear-quadratic simultaneous equations, retaining paired solutions.",
+    "Represent linear and quadratic inequality solutions on number lines and coordinate diagrams.",
+    "Recognise and continue arithmetic and common integer sequences, stating the intended rule."
   ],
   "sections": [
     {
@@ -1513,6 +1516,363 @@
         "cubic equation",
         "factor theorem",
         "quadratic quotient"
+      ]
+    },
+    {
+      "id": "simultaneous-linear-equations",
+      "title": "Solving two linear equations together",
+      "points": [
+        "3H"
+      ],
+      "paragraphs": [
+        "A simultaneous solution is an ordered pair that satisfies both equations. Elimination removes one unknown by adding or subtracting suitable multiples of the equations. Multiply every term, including the constant, when making coefficients match.",
+        "Substitution is useful when one equation already gives one variable in terms of the other. Replace that variable everywhere in the second equation, solve for the remaining unknown, then substitute back. Keep each x-value paired with its own y-value.",
+        "Two distinct non-parallel lines have one intersection. Parallel distinct lines give no solution; equations describing the same line give infinitely many pairs. Substituting the proposed pair into both original equations checks arithmetic and signs."
+      ],
+      "example": {
+        "question": "Solve 2x + 3y = 13 and 3x − 2y = 0.",
+        "steps": [
+          "Multiply the first equation by 2: 4x + 6y = 26.",
+          "Multiply the second by 3: 9x − 6y = 0.",
+          "Add: 13x = 26, so x = 2.",
+          "Use 3x − 2y = 0: 6 − 2y = 0, hence y = 3.",
+          "Check both: 4 + 9 = 13 and 6 − 6 = 0."
+        ],
+        "explanation": "Opposite y-coefficients cancel when the equations are added."
+      },
+      "practice": {
+        "question": "Solve y = 2x + 1 and x + y = 10.",
+        "answer": "x = 3, y = 7.",
+        "explanation": "Substitution gives x + 2x + 1 = 10, so 3x = 9. Then y = 7."
+      },
+      "commonMistakes": [
+        "Multiply the constant as well as both variable terms.",
+        "Choose addition or subtraction to cancel the matched coefficients.",
+        "Give and check both coordinates."
+      ],
+      "terms": [
+        "simultaneous equations",
+        "elimination",
+        "substitution",
+        "ordered pair"
+      ]
+    },
+    {
+      "id": "simultaneous-equations-graphs",
+      "title": "Finding simultaneous solutions on a graph",
+      "points": [
+        "3H"
+      ],
+      "paragraphs": [
+        "Draw both straight lines on the same axes and use their intersection to read the simultaneous solution. Two points define a line, but a third calculated point helps detect plotting mistakes. Use the scale on each axis when reading the coordinates.",
+        "The x-coordinate and y-coordinate of the crossing satisfy both equations. Graph readings are estimates unless the grid makes an exact value clear. An algebraic check is a useful independent way to test a graphical answer.",
+        "Parallel distinct lines do not meet, so there is no simultaneous solution. If the two equations draw the same line, all its points are solutions. A crossing outside the displayed window is not evidence that no solution exists."
+      ],
+      "example": {
+        "question": "Use a graph to solve y = 2x + 1 and x + y = 10.",
+        "steps": [
+          "Rearrange the second equation to y = 10 − x.",
+          "For the first line, plot (0, 1), (2, 5) and (4, 9).",
+          "For the second line, plot (0, 10), (2, 8) and (4, 6).",
+          "Read the crossing as (3, 7), giving x = 3 and y = 7."
+        ],
+        "explanation": "The two line heights are equal at the crossing; both original equations hold there."
+      },
+      "practice": {
+        "question": "What can you conclude about y = 2x + 1 and y = 2x − 3?",
+        "answer": "There is no simultaneous solution.",
+        "explanation": "The lines have equal gradients but different vertical intercepts, so they are distinct and parallel."
+      },
+      "commonMistakes": [
+        "Plot both equations on the same axes.",
+        "Read both coordinates at the intersection.",
+        "Do not confuse an off-screen intersection with parallel lines."
+      ],
+      "terms": [
+        "graphical solution",
+        "intersection",
+        "parallel lines",
+        "coincident lines"
+      ],
+      "diagram": {
+        "src": "/diagrams/maths-simultaneous-lines.svg",
+        "alt": "Lines y equals 2x plus 1 and y equals 10 minus x intersect at 3, 7.",
+        "caption": "Read both coordinates of the intersection. Here the exact algebraic solution agrees with the grid reading."
+      }
+    },
+    {
+      "id": "linear-quadratic-simultaneous",
+      "title": "Solving a linear and a quadratic equation",
+      "points": [
+        "3I"
+      ],
+      "paragraphs": [
+        "Use the linear equation to express one unknown in terms of the other, then substitute into the quadratic equation. Expand substituted brackets carefully. The result is a quadratic in one unknown, which can be solved by an appropriate method.",
+        "Substitute each resulting value separately into the linear equation to find its partner. State complete ordered pairs rather than unrelated lists of x-values and y-values. Check each pair in both original equations.",
+        "A line and a quadratic curve can have two intersections, a single touching intersection, or no real intersection. A repeated quadratic root gives one pair; a negative discriminant gives no real pairs. Contextual restrictions can further limit which pairs are acceptable."
+      ],
+      "example": {
+        "question": "Solve y = x + 1 and x² + y² = 13 simultaneously.",
+        "steps": [
+          "Substitute: x² + (x + 1)² = 13.",
+          "Expand and rearrange: 2x² + 2x − 12 = 0.",
+          "Divide by 2 and factor: (x + 3)(x − 2) = 0.",
+          "If x = −3, y = −2; if x = 2, y = 3.",
+          "The solutions are (−3, −2) and (2, 3). Each pair has x² + y² = 13."
+        ],
+        "explanation": "The original quadratic here describes a circle; substitution reduces the two-variable problem to a one-variable quadratic."
+      },
+      "practice": {
+        "question": "Solve y = x + 2 and y = x².",
+        "answer": "(x, y) = (−1, 1) or (2, 4).",
+        "explanation": "Set x² = x + 2, factor (x − 2)(x + 1) = 0, then pair each x with y = x + 2."
+      },
+      "commonMistakes": [
+        "Expand the whole substituted square.",
+        "Do not mix the y-value from one root with the other x-value.",
+        "Check both equations, not only the linear one."
+      ],
+      "terms": [
+        "linear-quadratic system",
+        "substitution",
+        "intersection",
+        "paired solutions"
+      ]
+    },
+    {
+      "id": "linear-inequalities-number-lines",
+      "title": "Linear inequalities and number lines",
+      "points": [
+        "3J"
+      ],
+      "paragraphs": [
+        "An inequality describes a set of values. Adding or subtracting the same quantity on both sides preserves its direction. Multiplying or dividing by a negative number reverses the inequality sign; multiplying or dividing by a positive number does not.",
+        "On a number line, use an open circle for an excluded endpoint (< or >) and a filled circle for an included endpoint (≤ or ≥). Shade or draw an arrow along the values that satisfy the inequality. The real solution set may be an interval even when a question separately asks for integer values.",
+        "For a double inequality, perform an operation on all three parts or solve its two conditions separately and intersect the results. A value must satisfy both conditions. Check endpoint inclusion explicitly before listing any requested integers."
+      ],
+      "example": {
+        "question": "Solve 5 − 2x < 11 and show the result on a number line.",
+        "steps": [
+          "Subtract 5: −2x < 6.",
+          "Divide by −2 and reverse the sign: x > −3.",
+          "Put an open circle at −3 and shade to its right.",
+          "Check x = 0: 5 < 11 is true; x = −4 gives 13 < 11, which is false."
+        ],
+        "explanation": "Dividing by a negative reverses the order of the numbers."
+      },
+      "practice": {
+        "question": "Find the integers satisfying −2 ≤ 3x + 1 < 10.",
+        "answer": "x = −1, 0, 1 or 2.",
+        "explanation": "Subtract 1 and divide by 3 to get −1 ≤ x < 3. Include −1 but exclude 3."
+      },
+      "commonMistakes": [
+        "Reverse the sign when dividing or multiplying by a negative.",
+        "Do not use a filled circle at a strict boundary.",
+        "Distinguish integer solutions from the full real interval."
+      ],
+      "terms": [
+        "linear inequality",
+        "open endpoint",
+        "closed endpoint",
+        "solution interval"
+      ]
+    },
+    {
+      "id": "inequality-regions",
+      "title": "Regions satisfying simultaneous inequalities",
+      "points": [
+        "3J"
+      ],
+      "paragraphs": [
+        "In two dimensions, replace each inequality temporarily with an equation to draw its boundary line. Use a solid boundary for ≤ or ≥, and a dashed boundary for < or >. Boundary points belong to the solution only when equality is allowed.",
+        "Choose a point away from the line, often (0, 0), and substitute it into the inequality to choose the correct side. If the test point lies on the boundary, choose a different point. Vertical boundaries such as x = 1 separate left and right half-planes.",
+        "The simultaneous solution is the overlap of every permitted half-plane. Check points against all the conditions and pay attention to which edges are included. The diagram below shades the allowed region; if a question asks you to shade unwanted regions, follow that convention and label the remaining region clearly. Linear programming is excluded from this specification row."
+      ],
+      "example": {
+        "question": "Describe the region satisfying x ≥ 1, y ≥ 0 and x + y < 5.",
+        "steps": [
+          "Draw x = 1 and y = 0 as solid lines.",
+          "Draw x + y = 5 as a dashed line through (0, 5) and (5, 0).",
+          "Keep the region right of x = 1, above y = 0, and below x + y = 5.",
+          "The corner (1, 0) is included; (1, 4) and (5, 0) are excluded because they lie on the strict boundary."
+        ],
+        "explanation": "The strict diagonal condition excludes its entire edge, including its corner points."
+      },
+      "practice": {
+        "question": "Which of (2, 2), (1, 4) and (0, 1) satisfies all three inequalities?",
+        "answer": "Only (2, 2).",
+        "explanation": "(2, 2) has x ≥ 1, y ≥ 0 and sum 4 < 5. (1, 4) has sum 5 and (0, 1) fails x ≥ 1."
+      },
+      "commonMistakes": [
+        "Show strict and inclusive boundaries differently.",
+        "The required region must satisfy every inequality.",
+        "Check intersections on a strict boundary before including them."
+      ],
+      "terms": [
+        "half-plane",
+        "feasible region",
+        "boundary",
+        "simultaneous inequalities"
+      ],
+      "diagram": {
+        "src": "/diagrams/maths-inequality-region.svg",
+        "alt": "The allowed triangular region lies right of x equals 1, above y equals 0, and below the dashed line x plus y equals 5. The corner 1,0 is filled and the corners 1,4 and 5,0 are open.",
+        "caption": "The shaded region satisfies all three inequalities. Dashed edges and open corner markers are excluded."
+      }
+    },
+    {
+      "id": "quadratic-inequalities",
+      "title": "Solving quadratic inequalities using signs",
+      "points": [
+        "3K"
+      ],
+      "paragraphs": [
+        "Rearrange so that one side is zero, find the roots of the quadratic, and use them to split the number line into intervals. The sign of a polynomial cannot change inside an interval containing no root, so one test value in each interval establishes its sign throughout that interval.",
+        "Select the intervals with the required sign. For a positive leading coefficient and two distinct real roots, the quadratic is positive outside the roots and negative between them. For a negative leading coefficient the signs reverse; testing values prevents a memorised rule being used with the wrong sign.",
+        "Include the roots when the inequality allows equality and exclude them for a strict inequality. Write separated outside intervals using “or”; a single inside interval can use a double inequality. A root solves the associated equation but does not by itself describe the whole inequality solution."
+      ],
+      "example": {
+        "question": "Solve x² − x − 6 ≤ 0.",
+        "steps": [
+          "Factor: (x − 3)(x + 2) ≤ 0, with roots −2 and 3.",
+          "Test x = −3: the product is positive; test x = 0: negative; test x = 4: positive.",
+          "Choose the middle interval and include both endpoints because equality is allowed.",
+          "The solution is −2 ≤ x ≤ 3."
+        ],
+        "explanation": "The quadratic lies on or below zero between its two roots."
+      },
+      "practice": {
+        "question": "Solve −x² + x + 6 < 0.",
+        "answer": "x < −2 or x > 3.",
+        "explanation": "Multiply by −1 and reverse the sign to obtain x² − x − 6 > 0. Choose the outside intervals, excluding the roots."
+      },
+      "commonMistakes": [
+        "Do not return only the two roots.",
+        "Use “or” for separated intervals.",
+        "Check the leading sign and whether equality is allowed."
+      ],
+      "terms": [
+        "quadratic inequality",
+        "sign chart",
+        "interval",
+        "roots"
+      ],
+      "diagram": {
+        "src": "/diagrams/maths-quadratic-intervals.svg",
+        "alt": "Sign chart for (x minus 3)(x plus 2): positive below minus 2, negative between minus 2 and 3, and positive above 3. The interval from minus 2 to 3 has filled endpoints for the less-than-or-equal-to-zero solution.",
+        "caption": "Roots split the line into intervals; the sign and endpoint rules determine which values belong."
+      }
+    },
+    {
+      "id": "quadratic-inequality-edge-cases",
+      "title": "Repeated roots and quadratics with no real roots",
+      "points": [
+        "3K"
+      ],
+      "paragraphs": [
+        "A real square is non-negative. For a repeated-root quadratic such as (x − a)², the expression is zero at x = a and positive everywhere else. Its sign does not change across the repeated root, so a two-distinct-root sign pattern would be misleading.",
+        "If a quadratic has no real roots, its sign is constant on the real number line. Completing the square can show that sign directly. For example, (x − 1)² + 2 is always strictly positive; its positive minimum rules out zero and negative values.",
+        "Use a number line to distinguish all real values, all except one point, a single included point and an empty set. An inequality may have any of these as its solution. A negative multiple reverses the sign of every value of the quadratic."
+      ],
+      "example": {
+        "question": "Solve (x − 2)² > 0 and (x − 2)² ≤ 0 separately.",
+        "steps": [
+          "The square is zero only at x = 2.",
+          "For > 0, every real number except 2 works: x < 2 or x > 2.",
+          "For ≤ 0, only x = 2 works because the square is never negative."
+        ],
+        "explanation": "A repeated root gives an isolated zero, not an interval of negative values."
+      },
+      "practice": {
+        "question": "Solve x² − 2x + 3 < 0, then solve x² − 2x + 3 ≥ 0.",
+        "answer": "For < 0: no real solutions. For ≥ 0: all real x.",
+        "explanation": "Complete the square: (x − 1)² + 2 is at least 2, so it is always positive."
+      },
+      "commonMistakes": [
+        "A repeated root need not be a sign-change point.",
+        "No real roots does not automatically mean no inequality solutions.",
+        "State all real values or no solution explicitly."
+      ],
+      "terms": [
+        "repeated root",
+        "empty solution set",
+        "all real numbers",
+        "minimum"
+      ]
+    },
+    {
+      "id": "arithmetic-sequences",
+      "title": "Recognising and continuing arithmetic sequences",
+      "points": [
+        "3L"
+      ],
+      "paragraphs": [
+        "A sequence is an ordered list, and its terms are identified by position. When the difference between every pair of consecutive terms is the same, the sequence is arithmetic. The common difference can be positive, negative or zero.",
+        "Continue an arithmetic sequence by repeatedly adding its common difference. If the first term is a and the difference is d, the term at positive integer position n is a + (n − 1)d: there have been n − 1 steps from the first term.",
+        "Check a proposed position rule against several known terms, including the first. A finite list can fit more than one rule; state the intended pattern rather than assuming that a few terms mathematically force a unique continuation."
+      ],
+      "example": {
+        "question": "For the arithmetic sequence 7, 11, 15, 19, …, find the next two terms and the twentieth term.",
+        "steps": [
+          "The common difference is 4.",
+          "The next terms are 23 and 27.",
+          "The position rule is 7 + 4(n − 1) = 4n + 3.",
+          "At n = 20, the term is 83."
+        ],
+        "explanation": "The twentieth term is nineteen steps after the first term, not twenty."
+      },
+      "practice": {
+        "question": "Continue the arithmetic sequence 18, 13, 8, 3, … by two terms.",
+        "answer": "−2, −7.",
+        "explanation": "The difference is −5, so subtract 5 each time, including after passing zero."
+      },
+      "commonMistakes": [
+        "Use n − 1 jumps from the first term.",
+        "Allow negative and zero differences.",
+        "Distinguish a term value from its position."
+      ],
+      "terms": [
+        "sequence",
+        "term",
+        "common difference",
+        "arithmetic sequence"
+      ]
+    },
+    {
+      "id": "common-integer-sequences",
+      "title": "Common integer patterns and recurrence rules",
+      "points": [
+        "3L"
+      ],
+      "paragraphs": [
+        "Common integer patterns include squares 1, 4, 9, 16, … and cubes 1, 8, 27, 64, …. Recognising the underlying number operation is more reliable than guessing the next difference. State the starting position when giving a position rule.",
+        "Triangular numbers 1, 3, 6, 10, 15, … grow by adding 2, then 3, then 4, and so on. A recurrence rule describes how to obtain a new term from earlier ones. For a sequence starting 1, 1 in which each later term is the sum of the previous two, the next terms are 2, 3, 5, 8, ….",
+        "Look at differences, ratios and known patterns, then test the proposed rule against every supplied term. A sequence may have increasing differences rather than a constant difference. If no rule is given, explain the pattern you use; more than one continuation can fit a short list."
+      ],
+      "example": {
+        "question": "Continue 1, 3, 6, 10, … using the triangular-number pattern.",
+        "steps": [
+          "The increases are 2, 3 and 4.",
+          "Add 5 to obtain 15, then add 6 to obtain 21.",
+          "The next two terms are 15 and 21."
+        ],
+        "explanation": "The added amount itself increases by one each time."
+      },
+      "practice": {
+        "question": "A sequence starts 2, 3 and each later term is the sum of the previous two. Find the next four terms.",
+        "answer": "5, 8, 13, 21.",
+        "explanation": "Add consecutive pairs: 2 + 3, then 3 + 5, then 5 + 8, then 8 + 13."
+      },
+      "commonMistakes": [
+        "Do not assume every sequence has a constant difference.",
+        "Use the supplied starting terms in a recurrence.",
+        "Explain the chosen pattern when the rule is not specified."
+      ],
+      "terms": [
+        "integer sequence",
+        "triangular number",
+        "square number",
+        "recurrence"
       ]
     }
   ],
