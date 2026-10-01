@@ -1,0 +1,8 @@
+# Weekly gate — 30 September 2026
+
+Resumed with 100% five-hour and 7% weekly. Completed the queued checkpoint-only GitHub sync. Remote 9d54aede0bd2f620d8180fa06d535b344241770d exactly mirrors local 4fee08394c6b3da6c6adac8adcdb990a72f152f5; tree 01664607bcda203ce670a5dd8f4a5d04a94dcebf. Non-force update, fetched equality and ancestry of 62ee51c verified. Local/remote histories preserved. No implementation or academic claims changed; existing 92-test/build results remain current for the unchanged product.
+
+The subsequent allowance check returned 87% five-hour / 5% weekly. Paused immediately at the user's threshold. No reset used, no further academic work, Sites version or deployment. This latest gate note is local; the entire preceding saved state is synced.
+
+## Resume prompt
+Continue from the latest commit and CONTINUE_ASTRA.md. Read PROGRESS_CHECKPOINT.md and research/checkpoints/2026-09-30-WEEKLY-GATE.md first. Check both allowances and proceed only when BOTH exceed 5%; checkpoint/pause at 5% in either. Consume no reset. GitHub 9d54aed mirrors local 4fee083; sync only the newer gate-note delta non-force. Preserve all work/history/UI. Continue Maths detailed extraction, Algebra G–L and source-derived calibrated families; Maths has three detailed parts/eight marks, with 35 parts awaiting detail, and no implemented Maths generator/marker. Overall 216 sections, 263 reviewed parents, 653 partial requirements, 362 teaching links, seven obtained pairs; zero complete chapters/points/processed papers/active templates. Keep AI integration last. Test/build before any Sites version or deployment.

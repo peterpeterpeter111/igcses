@@ -1,3 +1,7 @@
+# Weekly allowance pause — 30 September 2026
+
+Read research/checkpoints/2026-09-30-WEEKLY-GATE.md first. Allowances: 87% five-hour / 5% weekly remaining; paused immediately, no reset. Resume only above 5% in BOTH windows. GitHub 9d54aede0bd2f620d8180fa06d535b344241770d exactly mirrors local 4fee08394c6b3da6c6adac8adcdb990a72f152f5, including the previous pause documents. Equality and prior-remote ancestry verified. Only this new gate note is not yet synced. No curriculum, extraction, template or application changes this turn. Existing 92-test/build verification remains applicable. Next: Maths details, Algebra G–L and calibrated families; preserve history/UI, keep AI last. Earlier entries are historical.
+
 # Paused — 30 September 2026, after Maths Q16
 
 Read research/checkpoints/2026-09-30-PAUSED-AFTER-Q16.md first. Final allowance: 4% five-hour / 7% weekly remaining; paused immediately, no reset. Resume only above 5% in both windows. GitHub 62ee51cb2fe4c90db7979817a63e8c73d8ae77a9 exactly mirrors local b0d69ce2c191e6926747032652c5f73e5e52d1f7; full-tree equality and prior ancestry verified. Only this final pause documentation needs the next non-force sync. 216 sections, 263 reviewed parents, 653 partial requirements, 362 teaching links; Maths three detailed parts/eight marks, 35 parts remaining. Zero complete chapters/points/processed papers/active templates. 92 tests and final build pass. Keep AI last and preserve all history/UI. Earlier entries are historical.
