@@ -21,7 +21,8 @@
     "Simplify algebraic expressions and factorise common, quadratic and difference-of-squares forms.",
     "Construct, use and rearrange formulae while keeping necessary restrictions.",
     "Use the factor theorem and divide cubics by linear factors.",
-    "Manipulate algebraic fractions while retaining their original restrictions."
+    "Manipulate algebraic fractions while retaining their original restrictions.",
+    "Solve linear, quadratic and factorable cubic equations, choosing algebraic or graphical methods and checking context."
   ],
   "sections": [
     {
@@ -1037,7 +1038,18 @@
         "split the middle term",
         "grouping",
         "integer factors"
-      ]
+      ],
+      "answerGuide": {
+        "id": "4MB1.factorisation.monic-quadratic",
+        "sourceTaskId": "4MB1-2024-summer-01-candidate.Q15.b",
+        "command": "Factorise fully",
+        "steps": [
+          "Identify the two constants whose sum gives the linear coefficient and whose product gives the constant term.",
+          "Write the product of two linear brackets, then expand it to check all three terms.",
+          "Put the intended factorisation on the answer line and correct any later changes carefully."
+        ],
+        "caution": "For the reviewed two-mark source task, partial credit depends on the expanded terms, not one mark per bracket. A factorisation is required; giving roots solves a different question. Other questions may have different marking rules."
+      }
     },
     {
       "id": "factor-theorem",
@@ -1270,6 +1282,237 @@
         "product",
         "quotient",
         "division by zero"
+      ]
+    },
+    {
+      "id": "solving-linear-equations",
+      "title": "Solving linear equations and checking the model",
+      "points": [
+        "3G"
+      ],
+      "paragraphs": [
+        "An equation states that two expressions are equal. Adding or subtracting the same expression on both sides preserves that equality. Multiplying or dividing by the same non-zero number also preserves it. Expand brackets and collect like terms before deciding which inverse operation to use.",
+        "When the unknown appears on both sides, collect its terms on one side and constants on the other. If the variable disappears and leaves a true statement, every value allowed by the original equation is a solution; if it leaves a false statement, there is no solution.",
+        "For a word problem, define the unknown and its units first, then translate the relationship into an equation. Check the solution in the original situation: a count may need to be a non-negative integer, and lengths or times may have physical restrictions."
+      ],
+      "example": {
+        "question": "Solve 3(2x − 1) = 4x + 9.",
+        "steps": [
+          "Expand: 6x − 3 = 4x + 9.",
+          "Subtract 4x and add 3 on both sides: 2x = 12.",
+          "Divide by 2: x = 6.",
+          "Check: 3(12 − 1) = 33 and 24 + 9 = 33."
+        ],
+        "explanation": "The check uses the original equation, so it can reveal an expansion error."
+      },
+      "practice": {
+        "question": "A hire service charges £7 plus £3.50 per hour. A bill is £28. How many hours were hired?",
+        "answer": "6 hours.",
+        "explanation": "With h hours, 7 + 3.5h = 28, so h = 21 ÷ 3.5 = 6; the result fits the context."
+      },
+      "commonMistakes": [
+        "Apply each operation to both sides.",
+        "Keep units and contextual restrictions in the final answer.",
+        "An identity or contradiction is possible; do not force every equation to have one solution."
+      ],
+      "terms": [
+        "linear equation",
+        "inverse operations",
+        "identity",
+        "no solution"
+      ]
+    },
+    {
+      "id": "quadratic-equations-by-factorisation",
+      "title": "Solving quadratics by factorisation",
+      "points": [
+        "3G"
+      ],
+      "paragraphs": [
+        "Rearrange a quadratic equation so that one side is zero before using factorisation. If a product equals zero, at least one factor must equal zero. A product equal to a non-zero number does not justify setting its factors separately to zero.",
+        "Write an equation for each linear factor and solve both. Keep repeated solutions only once. If a common factor contains the unknown, keep its zero as a possible solution rather than cancelling it away.",
+        "Check all candidates in the original equation. In a context, state why any algebraic solution is rejected: a negative length, for example, cannot describe the requested measurement even though it can satisfy the rearranged polynomial."
+      ],
+      "example": {
+        "question": "Solve 6x² + x = 2.",
+        "steps": [
+          "Rearrange: 6x² + x − 2 = 0.",
+          "Factorise: (2x − 1)(3x + 2) = 0.",
+          "Either 2x − 1 = 0 or 3x + 2 = 0.",
+          "Hence x = 1/2 or x = −2/3.",
+          "Substitution gives 2 in both cases on the original left side."
+        ],
+        "explanation": "The zero-product rule gives both alternatives; solving just one bracket is incomplete."
+      },
+      "practice": {
+        "question": "Solve x² − 5x = 0.",
+        "answer": "x = 0 or x = 5.",
+        "explanation": "Factor x(x − 5) = 0. Dividing by x would incorrectly remove the solution x = 0."
+      },
+      "commonMistakes": [
+        "Make one side zero before setting factors to zero.",
+        "Do not lose a zero solution by dividing by the unknown.",
+        "Factorising an expression and solving an equation are different tasks."
+      ],
+      "terms": [
+        "zero product",
+        "quadratic equation",
+        "two roots"
+      ]
+    },
+    {
+      "id": "completing-the-square",
+      "title": "Completing the square to solve a quadratic",
+      "points": [
+        "3G"
+      ],
+      "paragraphs": [
+        "The identity x² + bx = (x + b/2)² − (b/2)² completes the square. Half the coefficient of x, square that half, and balance what you have added. Expand the completed form to check signs and constants.",
+        "Once the equation has the form (x + p)² = q, q > 0 gives x + p = ±√q, q = 0 gives one repeated root, and q < 0 gives no real solution. The positive and negative square roots must both be considered.",
+        "If the coefficient of x² is not one, divide the whole equation by it or factor it from the quadratic and linear terms first. Keep exact fractions until the final result. A decimal approximation can be found afterwards if requested."
+      ],
+      "example": {
+        "question": "Solve x² − 6x + 4 = 0 by completing the square.",
+        "steps": [
+          "x² − 6x = (x − 3)² − 9.",
+          "Substitute: (x − 3)² − 9 + 4 = 0.",
+          "Therefore (x − 3)² = 5.",
+          "Take both roots: x − 3 = ±√5.",
+          "So x = 3 ± √5."
+        ],
+        "explanation": "The expression becomes (x − 3)² − 5; expanding restores the original quadratic."
+      },
+      "practice": {
+        "question": "Solve 2x² + 8x + 3 = 0 by completing the square.",
+        "answer": "x = −2 ± √(5/2).",
+        "explanation": "Write 2(x + 2)² − 5 = 0, then divide by 2 before taking both square roots."
+      },
+      "commonMistakes": [
+        "Square half the linear coefficient, not the whole coefficient.",
+        "Balance the added square with a subtraction.",
+        "Keep ± when taking a square root of a positive value."
+      ],
+      "terms": [
+        "complete the square",
+        "exact roots",
+        "repeated root"
+      ]
+    },
+    {
+      "id": "quadratic-formula",
+      "title": "Using the quadratic formula",
+      "points": [
+        "3G"
+      ],
+      "paragraphs": [
+        "For ax² + bx + c = 0 with a ≠ 0, the quadratic formula is x = [−b ± √(b² − 4ac)]/(2a). First put every term on one side and identify the signed values of a, b and c. The whole numerator is divided by 2a.",
+        "The quantity b² − 4ac is the discriminant. A positive value gives two distinct real roots, zero gives one repeated real root, and a negative value gives no real roots. Failure to factorise over integers does not imply that there are no real solutions.",
+        "Use exact arithmetic for the discriminant where possible. On a calculator, bracket negative coefficients and the entire numerator and denominator. Keep the exact radical form or round only at the end to the accuracy requested."
+      ],
+      "example": {
+        "question": "Solve 3x² + x − 2 = 0 using the formula.",
+        "steps": [
+          "a = 3, b = 1 and c = −2.",
+          "The discriminant is 1² − 4(3)(−2) = 25.",
+          "x = [−1 ± √25]/6 = (−1 ± 5)/6.",
+          "The roots are x = 2/3 and x = −1."
+        ],
+        "explanation": "The negative constant makes the term −4ac positive in this example."
+      },
+      "practice": {
+        "question": "Solve 2x² − 3x − 4 = 0, leaving exact answers.",
+        "answer": "x = (3 ± √41)/4.",
+        "explanation": "Here a = 2, b = −3, c = −4. The discriminant is 9 + 32 = 41."
+      },
+      "commonMistakes": [
+        "Use the signed coefficient b, so −b may be positive.",
+        "Divide both terms of the numerator by 2a.",
+        "Distinguish no integer factorisation from no real roots."
+      ],
+      "terms": [
+        "quadratic formula",
+        "discriminant",
+        "real roots"
+      ]
+    },
+    {
+      "id": "solving-quadratics-from-graphs",
+      "title": "Estimating quadratic solutions from graphs",
+      "points": [
+        "3G"
+      ],
+      "paragraphs": [
+        "Solutions of f(x) = 0 are the x-coordinates where the graph y = f(x) meets the horizontal axis. A quadratic may cross twice, touch once at its turning point, or never meet the axis, corresponding to two, one repeated, or no real roots.",
+        "To solve f(x) = k graphically, look for intersections with the horizontal line y = k, or plot y = f(x) − k and read its zeros. Read x-coordinates, not y-coordinates, and use the stated scales. A drawn graph gives estimates, so do not report unsupported precision.",
+        "A table of values helps draw a smooth curve but its listed x-values are not the only possible solutions. Refine the readings between grid lines and, when an algebraic method is available, compare your estimates with exact roots."
+      ],
+      "example": {
+        "question": "Use the graph of y = x² − 2x − 2 to estimate the solutions of x² − 2x − 2 = 0.",
+        "steps": [
+          "Locate the two intersections with y = 0.",
+          "Read the horizontal coordinates: approximately −0.7 and 2.7 to one decimal place.",
+          "Algebra gives x = 1 ± √3, about −0.732 and 2.732, consistent with the graph."
+        ],
+        "explanation": "The plotted curve supplies approximate readings; the algebraic check explains the difference in precision."
+      },
+      "practice": {
+        "question": "Using the same curve, solve x² − 2x − 2 = 1 graphically.",
+        "answer": "x ≈ −1 and x ≈ 3.",
+        "explanation": "The horizontal line y = 1 intersects the curve at those x-values; substituting either gives 1."
+      },
+      "commonMistakes": [
+        "Read horizontal coordinates for the roots.",
+        "A graph that touches the axis has a repeated root, not two different roots.",
+        "Use precision supported by the graph scale."
+      ],
+      "terms": [
+        "graphical solution",
+        "x intercept",
+        "turning point",
+        "root estimate"
+      ],
+      "diagram": {
+        "src": "/diagrams/maths-quadratic-roots.svg",
+        "alt": "Coordinate graph of y = x squared minus 2x minus 2. The parabola crosses the x axis near minus 0.73 and 2.73 and has its minimum at 1, minus 3.",
+        "caption": "Read the two x-intercepts for f(x) = 0. The dashed horizontal line y = 1 illustrates a different equation, f(x) = 1."
+      }
+    },
+    {
+      "id": "solving-cubic-equations",
+      "title": "Solving a factorable cubic equation",
+      "points": [
+        "3G"
+      ],
+      "paragraphs": [
+        "First rearrange the cubic so one side is zero. Use a given factor or the factor theorem to identify a linear factor, divide to obtain the quadratic factor, then solve the linear and quadratic equations separately.",
+        "A cubic can have repeated roots or only one real root. The remaining quadratic may have no real roots. Do not assume that every cubic produces three distinct integer answers, and do not discard a repeated root entirely.",
+        "If the cubic comes from a context, check every real root against the original conditions. Factorisation and substitution checks establish algebraic correctness; the context determines which of those solutions describes the problem."
+      ],
+      "example": {
+        "question": "Solve x³ − 3x² − 4x + 12 = 0, given that x − 2 is a factor.",
+        "steps": [
+          "Divide by x − 2 to obtain x² − x − 6.",
+          "Factor the quadratic: x² − x − 6 = (x − 3)(x + 2).",
+          "The equation is (x − 2)(x − 3)(x + 2) = 0.",
+          "Therefore x = 2, x = 3 or x = −2.",
+          "Expanding the factors gives the original cubic."
+        ],
+        "explanation": "The first linear factor gives one solution; the remaining quadratic supplies the other two."
+      },
+      "practice": {
+        "question": "Solve x³ + x² − 4x − 4 = 0.",
+        "answer": "x = −1, x = −2 or x = 2.",
+        "explanation": "Group to obtain (x + 1)(x² − 4) = (x + 1)(x − 2)(x + 2)."
+      },
+      "commonMistakes": [
+        "Retain the solution from the linear factor as well as those from the quotient.",
+        "Do not apply the zero-product rule until one side equals zero.",
+        "Apply any contextual restrictions after finding the algebraic solutions."
+      ],
+      "terms": [
+        "cubic equation",
+        "factor theorem",
+        "quadratic quotient"
       ]
     }
   ],

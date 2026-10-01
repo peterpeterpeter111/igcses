@@ -1,0 +1,404 @@
+{
+  "scope": "Synthetic manually specified responses for a bounded offline parser. Expected scores apply only to the defined transcribed fields; no human/learner calibration.",
+  "sourceRefs": [
+    {
+      "documentId": "4MB1-2024-summer-01-candidate-ms",
+      "pdfPages": [
+        14
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "id": "source-correct",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": "(x-3)(x-4)",
+        "workingLines": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": 2
+    },
+    {
+      "id": "reversed-factors",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": "(x-4)(x-3)",
+        "workingLines": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": 2
+    },
+    {
+      "id": "both-negated",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": "(-x+4)(-x+3)",
+        "workingLines": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": 2
+    },
+    {
+      "id": "unicode-and-spaces",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": "( x − 3 ) × ( x − 4 )",
+        "workingLines": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": 2
+    },
+    {
+      "id": "explicit-plus-and-star",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": "(+x-3)*(+x-4)",
+        "workingLines": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": 2
+    },
+    {
+      "id": "correct-constant-wrong-linear",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": "(x+3)(x+4)",
+        "workingLines": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": 1
+    },
+    {
+      "id": "correct-linear-wrong-constant",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": "(x-1)(x-6)",
+        "workingLines": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": 1
+    },
+    {
+      "id": "one-correct-bracket-is-not-credit",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": "(x-3)(x-5)",
+        "workingLines": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": 0
+    },
+    {
+      "id": "one-negated-factor",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": "(-x+3)(x-4)",
+        "workingLines": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": 0
+    },
+    {
+      "id": "zero-constant-partial",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": "(x+0)(x-7)",
+        "workingLines": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": 1
+    },
+    {
+      "id": "answer-line-controls",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": "(x-3)(x-5)",
+        "workingLines": [
+          "(x-3)(x-4)"
+        ],
+        "additionalEvidence": ""
+      },
+      "expectedScore": 0
+    },
+    {
+      "id": "final-working-controls",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": " ",
+        "workingLines": [
+          "(x-3)(x-4)",
+          "(x-3)(x-5)",
+          " "
+        ],
+        "additionalEvidence": ""
+      },
+      "expectedScore": 0
+    },
+    {
+      "id": "final-working-correct",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": "",
+        "workingLines": [
+          "(x+3)(x+4)",
+          "(x-4)(x-3)"
+        ],
+        "additionalEvidence": ""
+      },
+      "expectedScore": 2
+    },
+    {
+      "id": "blank",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": " ",
+        "workingLines": [
+          " "
+        ],
+        "additionalEvidence": ""
+      },
+      "expectedScore": 0
+    },
+    {
+      "id": "expanded-not-parsed",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": "x^2-7x+12",
+        "workingLines": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": null
+    },
+    {
+      "id": "roots-not-parsed",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": "x=3 or x=4",
+        "workingLines": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": null
+    },
+    {
+      "id": "scalar-equivalent-deferred",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": "(2x-6)(0.5x-2)",
+        "workingLines": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": null
+    },
+    {
+      "id": "reversed-binomial-order-deferred",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": "(3-x)(4-x)",
+        "workingLines": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": null
+    },
+    {
+      "id": "power-form-deferred",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": "(x-3)^2",
+        "workingLines": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": null
+    },
+    {
+      "id": "competing-answers",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": "(x-3)(x-4) or (x-2)(x-6)",
+        "workingLines": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": null
+    },
+    {
+      "id": "unknown-working-order",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": "(x-3)(x-4)",
+        "workingLines": [],
+        "additionalEvidence": "A crossed-out answer needs visual interpretation."
+      },
+      "expectedScore": null
+    },
+    {
+      "id": "correct-earlier-expanded-final",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": "",
+        "workingLines": [
+          "(x-3)(x-4)",
+          "x^2-7x+12"
+        ],
+        "additionalEvidence": ""
+      },
+      "expectedScore": null
+    },
+    {
+      "id": "syntax-injection",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": "(x-3)(x-4);globalThis.secret",
+        "workingLines": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": null
+    },
+    {
+      "id": "trailing-equation",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": "(x-3)(x-4)=0",
+        "workingLines": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": null
+    },
+    {
+      "id": "outside-response-bound",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": "(x-999)(x-999)",
+        "workingLines": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": null
+    },
+    {
+      "id": "boundary-low",
+      "parameters": {
+        "smallerRoot": 1,
+        "largerRoot": 2
+      },
+      "response": {
+        "answerLine": "(x-1)(x-2)",
+        "workingLines": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": 2
+    },
+    {
+      "id": "boundary-high",
+      "parameters": {
+        "smallerRoot": 11,
+        "largerRoot": 12
+      },
+      "response": {
+        "answerLine": "(-x+12)(-x+11)",
+        "workingLines": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": 2
+    },
+    {
+      "id": "wide-pair",
+      "parameters": {
+        "smallerRoot": 1,
+        "largerRoot": 12
+      },
+      "response": {
+        "answerLine": "(x-3)(x-4)",
+        "workingLines": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": 1
+    },
+    {
+      "id": "separated-digits-not-merged",
+      "parameters": {
+        "smallerRoot": 1,
+        "largerRoot": 12
+      },
+      "response": {
+        "answerLine": "(x-1)(x-1 2)",
+        "workingLines": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": null
+    }
+  ]
+}

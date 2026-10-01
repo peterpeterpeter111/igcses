@@ -10,10 +10,11 @@ import { notes } from '../content/notes';
 import retrievalFamily from '../research/templates/4EB1-retrieve-two-causes.v0.1.0.json' with { type: 'json' };
 import resultantFamily from '../research/templates/4PH1-collinear-resultant.v0.1.0.json' with { type: 'json' };
 import weightFamily from '../research/templates/4PH1-weight-convert-mass.v0.1.0.json' with { type: 'json' };
+import quadraticFamily from '../research/templates/4MB1-monic-quadratic.v0.1.0.json' with { type: 'json' };
 import { activeFamilies } from '../server/template-registry';
 import { latestDiscoveryDate, obtainedPaperCandidates, paperCoverReview } from './paper-discovery';
 
-const researchFamilies = [retrievalFamily, resultantFamily, weightFamily];
+const researchFamilies = [retrievalFamily, resultantFamily, weightFamily, quadraticFamily];
 export const evidenceHighlights = {
   updatedAt: [physicsExtraction.paperStageReviewedAt, latestDiscoveryDate].sort().at(-1),
   physicsDetailedParts: physicsExtraction.detailedLeafTasks,

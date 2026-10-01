@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-01T02:00:16.921Z",
+  "familyId": "4MB1.factorisation.monic-quadratic",
+  "version": "0.1.0",
+  "command": "node --experimental-strip-types scripts/check-quadratic.ts",
+  "sourceHashes": {
+    "server/generators/monic-quadratic.ts": "16342d18306883d1464f5467003b3aa9c802004848427ca22953cde19839197a",
+    "server/generators/quadratic-marking.ts": "8bcd8f69e6c91a2d9a3f8f2b582b39d87aa6a9149bbb3e1b975afe262d29048e",
+    "research/validation/quadratic-marking-cases.json": "19923b21419f778ce26e7eb718ae4d2ea4e0bc92c5342c61907f4211768bbb5f"
+  },
+  "reviewer": "Codex",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "generatedPairs": 65,
+  "distinctStimuli": 65,
+  "sourceExpressionExcluded": true,
+  "markingCases": 28,
+  "deferred": 11,
+  "results": [
+    {
+      "id": "source-correct",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "reversed-factors",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "both-negated",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "unicode-and-spaces",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "explicit-plus-and-star",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "correct-constant-wrong-linear",
+      "expectedScore": 1,
+      "actualScore": 1,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "correct-linear-wrong-constant",
+      "expectedScore": 1,
+      "actualScore": 1,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "one-correct-bracket-is-not-credit",
+      "expectedScore": 0,
+      "actualScore": 0,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "one-negated-factor",
+      "expectedScore": 0,
+      "actualScore": 0,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "zero-constant-partial",
+      "expectedScore": 1,
+      "actualScore": 1,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "answer-line-controls",
+      "expectedScore": 0,
+      "actualScore": 0,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "final-working-controls",
+      "expectedScore": 0,
+      "actualScore": 0,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "final-working-correct",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "blank",
+      "expectedScore": 0,
+      "actualScore": 0,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "expanded-not-parsed",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "roots-not-parsed",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "scalar-equivalent-deferred",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "reversed-binomial-order-deferred",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "power-form-deferred",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "competing-answers",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "unknown-working-order",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "correct-earlier-expanded-final",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "syntax-injection",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "trailing-equation",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "outside-response-bound",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "boundary-low",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "boundary-high",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "wide-pair",
+      "expectedScore": 1,
+      "actualScore": 1,
+      "status": "scored",
+      "passed": true
+    }
+  ],
+  "scope": "Synthetic manually specified responses for a bounded offline parser. Expected scores apply only to the defined transcribed fields; no human/learner calibration.",
+  "sourceRefs": [
+    {
+      "documentId": "4MB1-2024-summer-01-candidate-ms",
+      "pdfPages": [
+        14
+      ]
+    }
+  ],
+  "fullPedagogicalValidation": "partial",
+  "liveEligible": false,
+  "activeTemplates": 0,
+  "blockers": [
+    "Official per-task AO allocation and empirical difficulty equivalence unverified.",
+    "Only explicitly transcribed two-binomial products parsed; unusual notation/additional evidence deferred.",
+    "Not a complete Maths bank or live blueprint; no AI adapter or live registration."
+  ]
+}

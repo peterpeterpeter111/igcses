@@ -182,7 +182,7 @@ export default async function SubjectCoverage({
             <section key={inventory.title}>
               <h2>Reviewed statements: {inventory.title}</h2>
               <p>
-                {inventory.points.length} statements checked against the
+                {inventory.points.length} {inventory.points.length === 1 ? 'statement' : 'statements'} checked against the
                 official PDF on {inventory.reviewDate}. This verifies their
                 references and paper applicability. Substatement auditing and
                 teaching coverage remain incomplete; no human review has been
@@ -194,7 +194,7 @@ export default async function SubjectCoverage({
                     (point) => point.noteSectionIds.length > 0,
                   ).length
                 }{' '}
-                statements have linked partial explanations. No statement is
+                {inventory.points.filter((point) => point.noteSectionIds.length > 0).length === 1 ? 'statement has' : 'statements have'} linked partial explanations. No statement is
                 counted as complete teaching coverage.
               </p>
               <details>

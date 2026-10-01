@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4MB1",
+  "specificationIssue": "Issue 1 - January 2016",
+  "specificationDocumentId": "4MB1-spec",
+  "specificationSha256": "62d4534ba1c0aee42ce2d3e7fd1da8083fd03216dd106da11ae590525d3187a5",
+  "reviewDate": "2026-10-01",
+  "reviewedBy": "Codex",
+  "reviewerType": "agent",
+  "reviewMethod": "Visual inspection of official specification PDF page 20 (printed page 14); component applicability retained from the reviewed PDF pages 11–12.",
+  "reviewedPages": [
+    20
+  ],
+  "scope": "Bounded Algebra row 3G on specification PDF page 20: first-, second- and third-degree equations in one unknown, including quadratic factorisation, graphs, completing the square, formula and contextual applications. Rows H–L remain pending; teaching and assessment checks are partial.",
+  "points": [
+    {
+      "id": "4MB1:issue1:3G",
+      "reference": "3G",
+      "pdfPage": 20,
+      "printedPage": 14,
+      "summary": "Solve linear, quadratic and cubic equations in one unknown, including algebraic/graphical quadratic methods and problems leading to equations.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "number-and-algebra",
+      "noteSectionIds": [
+        "solving-linear-equations",
+        "quadratic-equations-by-factorisation",
+        "completing-the-square",
+        "quadratic-formula",
+        "solving-quadratics-from-graphs",
+        "solving-cubic-equations"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-01"
+    }
+  ]
+}

@@ -113,7 +113,7 @@ export default function CoveragePage() {
           <li>
             Active generative templates: {evidenceHighlights.activeFamilies}.{' '}
             Provisional families: {evidenceHighlights.provisionalFamilies} (English
-            retrieval, Physics resultant force and Physics weight calculation).{' '}
+            retrieval, Physics resultant force and weight, Maths factorisation).{' '}
             Experimental generators: {evidenceHighlights.experimentalGenerators}.
             Mathematical checks do not establish assessment or marking readiness.
             Live AI remains deferred.

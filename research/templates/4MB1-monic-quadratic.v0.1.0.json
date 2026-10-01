@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 1,
+  "id": "4MB1.factorisation.monic-quadratic",
+  "version": "0.1.0",
+  "status": "provisional",
+  "subject": "4MB1",
+  "origin": "exam-derived",
+  "syllabusRefs": [
+    {
+      "pointId": "4MB1:issue1:3C",
+      "documentId": "4MB1-spec",
+      "issue": "1",
+      "pdfPages": [
+        20
+      ],
+      "mappingStatus": "verified"
+    }
+  ],
+  "sourceTasks": [
+    {
+      "taskId": "4MB1-2024-summer-01-candidate.Q15.b",
+      "paperId": "4MB1-2024-summer-01-candidate",
+      "questionPaper": {
+        "documentId": "4MB1-2024-summer-01-candidate-qp",
+        "pdfPages": [
+          12
+        ]
+      },
+      "markScheme": {
+        "documentId": "4MB1-2024-summer-01-candidate-ms",
+        "pdfPages": [
+          14
+        ]
+      },
+      "originalMarks": 2
+    }
+  ],
+  "answerGuideId": "4MB1.factorisation.monic-quadratic",
+  "commandWord": "Factorise fully",
+  "skill": "Factorise a monic quadratic with two distinct positive integer roots, using a pair of negative constants whose sum and product match its coefficients.",
+  "assessmentObjectives": [
+    "unassigned-pending-official-AO-review"
+  ],
+  "originalMarks": [
+    2
+  ],
+  "customQuiz": {
+    "candidateMarks": [
+      2
+    ],
+    "validatedMarks": [],
+    "adaptationStatus": "pending",
+    "rationale": "Retains source degree, leading coefficient, two distinct positive integer roots, command and two-mark scheme. New coefficients and exact-answer selection are subject to adaptation/difficulty review; no 4/6-mark variant is claimed."
+  },
+  "stimulus": {
+    "types": [
+      "equation"
+    ],
+    "originality": "original-generated-content",
+    "requirements": [
+      "Display only the expanded polynomial, with leading coefficient one, negative linear coefficient and positive constant.",
+      "Two distinct integer roots from 1 through 12; the generator excludes the source root pair 3,4."
+    ],
+    "evidenceContract": [
+      "Freeze parameters, expanded coefficients, factorised solution and source rubric before any future serving.",
+      "Expose only prompt, expanded stimulus and maximum marks; roots, seed and rubric stay private."
+    ]
+  },
+  "parameters": [
+    {
+      "id": "smallerRoot",
+      "type": "integer",
+      "domain": {
+        "minimum": 1,
+        "maximum": 12,
+        "step": 1
+      },
+      "constraints": [
+        "smallerRoot < largerRoot; roots are distinct positive integers."
+      ]
+    },
+    {
+      "id": "largerRoot",
+      "type": "integer",
+      "domain": {
+        "minimum": 1,
+        "maximum": 12,
+        "step": 1
+      },
+      "constraints": [
+        "smallerRoot < largerRoot; roots are distinct positive integers."
+      ]
+    }
+  ],
+  "constraints": [
+    "No repeated/zero/negative/fractional roots, non-monic coefficients, cubic factorisation or solving equations in this version.",
+    "The 65 fresh parameter pairs are a bounded prototype, not a complete Maths question bank.",
+    "Never equate arithmetic coverage with calibrated exam demand or live eligibility."
+  ],
+  "relationships": [
+    "b = -(smallerRoot + largerRoot)",
+    "c = smallerRoot * largerRoot",
+    "x² + bx + c = (x - smallerRoot)(x - largerRoot)"
+  ],
+  "difficultyControls": [
+    "Vary sum/product magnitudes within the explicit domain; equal difficulty is not established.",
+    "Preserve the sign pattern and distinct linear factors of the source."
+  ],
+  "transformations": [
+    {
+      "id": "new-integer-pair",
+      "status": "candidate",
+      "conditions": "Use distinct roots in 1..12, excluding 3,4 for fresh generation; recalibrate coefficient size effects."
+    },
+    {
+      "id": "change-sign-pattern-or-degree",
+      "status": "forbidden",
+      "conditions": "Requires a separate source/demand/rubric review."
+    },
+    {
+      "id": "solve-for-roots",
+      "status": "forbidden",
+      "conditions": "This task asks for factorisation, not an equation solution."
+    }
+  ],
+  "solutionProcedure": [
+    "Find two constants with the required sum and product.",
+    "Write their two linear factors.",
+    "Expand to check all three original coefficients."
+  ],
+  "marking": {
+    "method": "discrete-points",
+    "maximum": 2,
+    "criteria": [
+      {
+        "id": "factorisation-band",
+        "credit": 2,
+        "rule": "A single alternative-score criterion: correct factorised product earns two; otherwise a factorisation with exactly two correct expanded terms earns one; other supported products earn zero."
+      }
+    ],
+    "acceptableAlternatives": [
+      "Reverse the two factors.",
+      "Negate both linear factors, preserving the same product.",
+      "Other mathematically equivalent factorisations need representation review; unsupported syntax is deferred."
+    ],
+    "dependencies": [
+      "Use the answer line when nonempty; otherwise the last nonempty line of working.",
+      "Do not award separate marks per correct bracket or choose the best earlier line."
+    ],
+    "contradictionRules": [
+      "Additional evidence or unclear ordering is deferred.",
+      "A later supported answer supersedes an earlier correct working line under the source-specific rule."
+    ],
+    "units": null,
+    "tolerance": null,
+    "levelRubric": []
+  },
+  "commonErrors": [
+    {
+      "description": "A product giving only two correct expanded terms earns partial credit, not one mark per bracket.",
+      "origin": "scheme",
+      "sourceRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-ms",
+          "pdfPages": [
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Solving for x or copying the expanded polynomial does not supply the requested factorisation; these representations are deferred by the narrow parser.",
+      "origin": "editorial",
+      "sourceRefs": []
+    }
+  ],
+  "validation": {
+    "ruleIds": [
+      "bounded-root-domain",
+      "coefficient-expansion",
+      "fresh-source-exclusion",
+      "deterministic-seed",
+      "final-answer-selection",
+      "partial-term-credit",
+      "private-rubric",
+      "no-activation"
+    ],
+    "testPlan": [
+      "Exhaust the 65 fresh pairs and independently expand the produced factors.",
+      "Check original source and boundary fixtures against manually specified answers.",
+      "Score/defer explicit response fixtures including both-negative factors, incorrect later answers, unsupported scalars and unsafe strings.",
+      "Before promotion review empirical difficulty, notation breadth, all ambiguous responses and official AO applicability."
+    ],
+    "testedSeeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "boundaryCoverage": "complete",
+    "status": "not-run",
+    "runRefs": [
+      "research/validation/2026-10-01-quadratic-validation.json"
+    ]
+  },
+  "runtime": {
+    "implemented": true,
+    "generatorId": "monic-quadratic-prototype-v1",
+    "seedPolicy": "Unsigned 32-bit seed selects one of 65 stable pairs by remainder. Seed is reproducibility metadata, not a secret or security control. Exclude original source pair from fresh generation.",
+    "maxRetries": 0,
+    "publicFields": [
+      "prompt",
+      "stimulus",
+      "maximumMarks"
+    ],
+    "privateFields": [
+      "seed",
+      "parameters",
+      "solution",
+      "rubric",
+      "sourceTasks",
+      "validationResults"
+    ],
+    "freezeBeforeAnswer": true,
+    "releaseSchemeAfter": "session-completed"
+  },
+  "review": {
+    "pedagogyStatus": "pending",
+    "reviewer": "Codex",
+    "reviewerType": "agent",
+    "humanReviewed": false,
+    "blockers": [
+      "Only a bounded offline two-binomial marker; not a general algebra or handwriting parser.",
+      "Independent learner-response calibration, broad notation handling and difficulty review remain pending.",
+      "Official per-task AO allocation unverified; two-mark-only family does not cover the full quiz blueprint.",
+      "Not registered for live sessions."
+    ]
+  }
+}

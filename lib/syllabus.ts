@@ -1,3 +1,4 @@
+import mathsEquations from '../research/syllabus/4MB1-equations.json' with { type: 'json' };
 import forces from '../research/syllabus/4PH1-forces-and-motion.json' with { type: 'json' };
 import waves from '../research/syllabus/4PH1-waves.json' with { type: 'json' };
 import energy from '../research/syllabus/4PH1-energy-transfers.json' with { type: 'json' };
@@ -34,4 +35,5 @@ export const reviewedInventories = [
   { title: 'Sets: section 2, rows A–I', ...mathsSets },
   { title: 'Algebra foundations: section 3, rows A–C', ...mathsAlgebra },
   { title: 'Polynomials and algebraic fractions: section 3, rows D–F', ...mathsPolynomials },
+  { title: 'Equations: section 3, row G', ...mathsEquations },
 ];
