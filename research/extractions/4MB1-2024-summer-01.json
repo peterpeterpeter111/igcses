@@ -21,15 +21,19 @@
   "fullyProcessed": false,
   "wholePaperMarks": 100,
   "wholePaperLeafCount": 38,
-  "detailedLeafTasks": 7,
-  "detailedOriginalMarks": 23,
+  "detailedLeafTasks": 12,
+  "detailedOriginalMarks": 35,
   "reviewedQuestionTotals": {
     "15": 4,
     "16": 4,
     "17": 4,
     "18": 4,
     "19": 3,
-    "20": 4
+    "20": 4,
+    "21": 4,
+    "22": 4,
+    "1": 2,
+    "2": 2
   },
   "documents": [
     {
@@ -56,27 +60,33 @@
   "pageAudit": {
     "questionPaper": {
       "visuallyReviewedPages": [
+        2,
         12,
         13,
         14,
-        15
+        15,
+        16,
+        17
       ],
       "wholeDocumentReviewed": false,
-      "scope": "Q15–Q20 source expressions, scenarios, instructions and marks on pages 12–15; no whole-paper review."
+      "scope": "Q1–Q2 and Q15–Q22 expressions, scenarios, instructions and marks; no whole-document review."
     },
     "markScheme": {
       "visuallyReviewedPages": [
         3,
         4,
         5,
+        6,
         14,
         15,
         16,
         17,
-        18
+        18,
+        19,
+        20
       ],
       "wholeDocumentReviewed": false,
-      "scope": "General guidance and Q15–Q20 criteria, including alternative Q18 routes and Q19 special-case/scope discrepancies; other tasks not reviewed here."
+      "scope": "General guidance and Q1–Q2 / Q15–Q22 criteria; source discrepancies retained, other tasks pending."
     }
   },
   "examinerReportStatus": "not-sought-for-this-bounded-review",
@@ -92,7 +102,7 @@
       28
     ],
     "sha256": "62d4534ba1c0aee42ce2d3e7fd1da8083fd03216dd106da11ae590525d3187a5",
-    "scopeNote": "Reviewed mappings include 1A/1C/1D/1E/1H, 3C/3G, 6C and 10B. Row 4G is a related identity only: Q19 inverse cube-root demand is not in its explicit list. Full series-amendment reconciliation remains open."
+    "scopeNote": "Reviewed mappings include 1A/1C/1D/1E/1H, 3C/3G, 6C and 10B. Row 4G is a related identity only: Q19 inverse cube-root demand is not in its explicit list. Full series-amendment reconciliation remains open. Q21 uses reviewed rows 1G/1I/1J; Q22 uses 3C/3F."
   },
   "tasks": [
     {
@@ -1234,21 +1244,824 @@
           }
         ]
       }
+    },
+    {
+      "paperId": "4MB1-2024-summer-01-candidate",
+      "recordKind": "leaf",
+      "taskId": "4MB1-2024-summer-01-candidate.Q21",
+      "questionPath": "21",
+      "questionPaperPages": [
+        16
+      ],
+      "markSchemePages": [
+        19
+      ],
+      "originalMarks": 4,
+      "stimulusTypes": [
+        "written-scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            16
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO split inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex",
+      "reviewerType": "agent",
+      "reviewDate": "2026-10-01",
+      "humanReviewed": false,
+      "generalSchemePages": [
+        3,
+        4,
+        5
+      ],
+      "markingMethod": "method-marks",
+      "commandWord": "Calculate",
+      "requiredKnowledge": [
+        "Rounding intervals from significant figures",
+        "Time equals distance divided by speed",
+        "Upper bound of a difference",
+        "Required working and decimal precision"
+      ],
+      "contextSummary": "Maximise the difference between two journey times using rounded distances and speeds.",
+      "sourceData": {
+        "xKilometres": {
+          "value": 110,
+          "significantFigures": 2
+        },
+        "aKilometresPerHour": {
+          "value": 90,
+          "significantFigures": 1
+        },
+        "yKilometres": {
+          "value": 35,
+          "significantFigures": 2
+        },
+        "bKilometresPerHour": {
+          "value": 60,
+          "significantFigures": 1
+        }
+      },
+      "solutionStructure": [
+        "The rounding intervals are 105 ≤ x < 115, 85 ≤ a < 95, 34.5 ≤ y < 35.5 and 55 ≤ b < 65.",
+        "Maximise x/a and minimise y/b before subtracting: use x upper/a lower − y lower/b upper.",
+        "The upper bound is 115/85 − 34.5/65 = 1817/2210 ≈ 0.822171946 hours.",
+        "The requested three-decimal answer is 0.822 hours. The upper bound need not be attained because some interval endpoints are open."
+      ],
+      "criteria": [
+        {
+          "id": "one-bound",
+          "marks": 1,
+          "code": "M1",
+          "rule": "State or use one correct lower or upper bound. The source permits recurring-nine representations of endpoint values; its first working row swaps x/a labels, which is separately recorded as a source inconsistency."
+        },
+        {
+          "id": "one-time-method",
+          "marks": 1,
+          "code": "M1",
+          "rule": "Use x/a or y/b with values inside the corresponding scheme ranges: x between 105 and 115, a between 85 and 95, or y between 34.5 and 35.5, b between 55 and 65. The source uses inclusive ranges here for method credit.",
+          "dependsOn": []
+        },
+        {
+          "id": "time-difference-method",
+          "marks": 1,
+          "code": "M1",
+          "rule": "Use xUB/aLB − yLB/bUB with 110 < xUB ≤ 115, 85 ≤ aLB < 90, 34.5 ≤ yLB < 35 and 60 < bUB ≤ 65, as explicitly permitted in the scheme method criterion.",
+          "dependsOn": []
+        },
+        {
+          "id": "upper-bound-result",
+          "marks": 1,
+          "code": "A1 dependent",
+          "rule": "After all three M marks and a calculation with correct figures shown, give the upper-bound result. The answer column is 0.822; the source note also accepts an answer rounding to 0.82. Preserve that historical concession separately from the requested three-decimal answer.",
+          "dependsOn": [
+            "one-bound",
+            "one-time-method",
+            "time-difference-method"
+          ]
+        }
+      ],
+      "acceptableAlternatives": [
+        "Equivalent exact expression for 115/85 − 34.5/65 before rounding.",
+        "Endpoint expressions using recurring nines as explicitly allowed in the source; do not confuse recurring decimals with arbitrary truncated finite decimals.",
+        "The source result concession rounds to 0.82 although the question asks for three decimal places."
+      ],
+      "dependencies": [
+        "The final accuracy mark explicitly depends on all three M marks and visible correct-figure calculation.",
+        "The three method criteria are not labelled as sequentially dependent; do not invent dependencies between them.",
+        "The upper bound of a difference uses maximum first quantity minus minimum second quantity, not the difference of two upper bounds.",
+        "Generic answer-only full credit does not apply: the question and scheme require working."
+      ],
+      "commonErrors": [
+        {
+          "description": "Using upper bounds for both journey times before subtraction.",
+          "origin": "editorial"
+        },
+        {
+          "description": "Copying the swapped x/a labels in the first scheme row rather than applying the question rounding information.",
+          "origin": "scheme",
+          "sourceRefs": [
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                19
+              ]
+            }
+          ]
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4MB1:issue1:1J",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Apply upper and lower bounds to positive quotients and their difference.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                18
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                19
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4MB1:issue1:1G",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Use distance, average speed and elapsed time in standard units.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                17
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                19
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4MB1:issue1:1I",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Interpret significant-figure rounding and present the requested decimal-place accuracy.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                18
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                19
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedFamilyId": "4MB1.bounds.difference-of-times",
+      "responseRequirements": {
+        "workingRequired": true,
+        "finalForm": "hours to three decimal places",
+        "sourceRefs": [
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-qp",
+            "pdfPages": [
+              16
+            ]
+          }
+        ]
+      },
+      "markingReviewNotes": [
+        "The first scheme working row assigns 85/95 to x and 105/115 to a; the question and subsequent method/final calculation use the reverse. The correct teaching interpretation is derived from the question; historical source wording is retained in sourceDiscrepancies.",
+        "The marking tolerance and recurring-decimal concessions need calibration before generated reuse."
+      ],
+      "blockers": [
+        "Swapped x/a bounds in the source first row need an explicit editorial/source resolution before generated marking; no publisher clarification obtained.",
+        "No template family, rounding-policy calibration or explicit-working marker implemented."
+      ]
+    },
+    {
+      "paperId": "4MB1-2024-summer-01-candidate",
+      "recordKind": "leaf",
+      "taskId": "4MB1-2024-summer-01-candidate.Q22",
+      "questionPath": "22",
+      "questionPaperPages": [
+        17
+      ],
+      "markSchemePages": [
+        20
+      ],
+      "originalMarks": 4,
+      "stimulusTypes": [
+        "algebraic-expression"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            17
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO split inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex",
+      "reviewerType": "agent",
+      "reviewDate": "2026-10-01",
+      "humanReviewed": false,
+      "generalSchemePages": [
+        3,
+        4,
+        5
+      ],
+      "markingMethod": "method-marks",
+      "commandWord": "Express",
+      "requiredKnowledge": [
+        "Subtracting rational expressions",
+        "Quadratic factorisation",
+        "Reciprocal of a divisor",
+        "Factor cancellation",
+        "Original-domain restrictions"
+      ],
+      "contextSummary": "Combine two algebraic fractions, divide by a rational expression and simplify to a single fraction with clear algebraic working.",
+      "sourceExpression": "(2/(3x − 2) − 3/(x + 4)) ÷ ((7x − 14)/(12x² + 7x − 10))",
+      "solutionStructure": [
+        "Factor 12x² + 7x − 10 = (4x + 5)(3x − 2).",
+        "Combine the difference: [2(x + 4) − 3(3x − 2)]/[(3x − 2)(x + 4)] = (14 − 7x)/[(3x − 2)(x + 4)].",
+        "Multiply by the reciprocal (4x + 5)(3x − 2)/(7x − 14).",
+        "Since 14 − 7x = −7(x − 2), cancellation gives −(4x + 5)/(x + 4).",
+        "For algebraic equivalence, retain exclusions x ≠ 2/3, −4, −5/4, 2 from original denominators and the non-zero divisor; the scheme does not allocate a separate mark for listing these exclusions."
+      ],
+      "criteria": [
+        {
+          "id": "quadratic-factorisation",
+          "marks": 1,
+          "code": "M1",
+          "rule": "Factor the divisor denominator into two brackets whose expansion gives at least two correct terms. Fully correct factorisation is (4x + 5)(3x − 2); the source permits partial correctness of two expanded terms."
+        },
+        {
+          "id": "common-denominator-difference",
+          "marks": 1,
+          "code": "M1",
+          "rule": "Write the difference over a correct common denominator; it need not be expanded and may be two separate fractions. If the numerator is expanded, one sign error is allowed. This may occur after multiplication.",
+          "dependsOn": []
+        },
+        {
+          "id": "reciprocal-multiplication",
+          "marks": 1,
+          "code": "M1 independent",
+          "rule": "Attempt to invert the divisor and multiply. This method mark is explicitly independent.",
+          "dependsOn": []
+        },
+        {
+          "id": "simplified-fraction",
+          "marks": 1,
+          "code": "A1",
+          "rule": "Reach (−5 − 4x)/(x + 4), or (4x + 5)/(−x − 4), or −(4x + 5)/(x + 4). Clear working is required; do not apply generic answer-only credit.",
+          "dependsOn": [
+            "quadratic-factorisation",
+            "common-denominator-difference",
+            "reciprocal-multiplication"
+          ]
+        }
+      ],
+      "acceptableAlternatives": [
+        "Put the negative sign outside the fraction, in the numerator or in the denominator, maintaining equivalence.",
+        "Combine over a common denominator after multiplying by the reciprocal.",
+        "Use an unexpanded correct numerator; if expanded, the source permits one sign error for the common-denominator method mark."
+      ],
+      "dependencies": [
+        "The source explicitly permits the method marks in any order; criterion order here is storage order only.",
+        "The reciprocal method mark is independent; do not make it depend on a correct earlier subtraction.",
+        "The first M can be earned by a two-term-correct factorisation, rather than requiring all three terms.",
+        "Working is required. The general accuracy/method distinction applies; no uncalibrated automatic interpretation of contradictory algebra."
+      ],
+      "commonErrors": [
+        {
+          "description": "Multiplying by the divisor instead of its reciprocal.",
+          "origin": "editorial"
+        },
+        {
+          "description": "Cancelling terms in a sum rather than common factors.",
+          "origin": "editorial"
+        },
+        {
+          "description": "Losing the negative sign because 14 − 7x and 7x − 14 are opposites.",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4MB1:issue1:3F",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Subtract, divide and simplify rational expressions with linear and quadratic denominators.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                20
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4MB1:issue1:3C",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Factorise the quadratic denominator and linear expressions to expose cancellation.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                20
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedFamilyId": "4MB1.algebra.fraction-difference-division",
+      "responseRequirements": {
+        "workingRequired": true,
+        "finalForm": "single fraction in simplest form",
+        "sourceRefs": [
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-qp",
+            "pdfPages": [
+              17
+            ]
+          }
+        ]
+      },
+      "markingReviewNotes": [
+        "Original-domain exclusions are an editorial equivalence safeguard, not an extra source mark.",
+        "The source tolerates two correct expanded terms for one M and a sign error for another; a plain symbolic-equivalence grader would lose these concessions."
+      ],
+      "blockers": [
+        "No generated family or partial-algebra calibration; source allowances must survive any marker design."
+      ]
+    },
+    {
+      "paperId": "4MB1-2024-summer-01-candidate",
+      "recordKind": "leaf",
+      "taskId": "4MB1-2024-summer-01-candidate.Q1.a",
+      "questionPath": "1.a",
+      "questionPaperPages": [
+        2
+      ],
+      "markSchemePages": [
+        6
+      ],
+      "originalMarks": 1,
+      "stimulusTypes": [
+        "numeric-expression"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            2
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative split inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex",
+      "reviewerType": "agent",
+      "reviewDate": "2026-10-01",
+      "humanReviewed": false,
+      "generalSchemePages": [
+        3,
+        4,
+        5
+      ],
+      "commandWord": "Write",
+      "requiredKnowledge": [
+        "Rounding to significant figures",
+        "Place value"
+      ],
+      "contextSummary": "Round a four-digit positive integer to two significant figures.",
+      "sourceData": {
+        "value": 7432,
+        "significantFigures": 2
+      },
+      "solutionStructure": [
+        "The first two significant digits are 7 and 4; the next digit is 3.",
+        "Retain 74 and replace the remaining place values with zeros: 7400."
+      ],
+      "markingMethod": "accuracy-mark",
+      "criteria": [
+        {
+          "id": "rounded-integer",
+          "marks": 1,
+          "code": "B1",
+          "rule": "Give 7400. The source also accepts 7.4 × 10³, 7.400 × 10³, 74 × 10² and 740 × 10¹."
+        }
+      ],
+      "acceptableAlternatives": [
+        "7.4 × 10³",
+        "7.400 × 10³",
+        "74 × 10²",
+        "740 × 10¹"
+      ],
+      "dependencies": [
+        "This single B mark is independent of part (b).",
+        "Source acceptance of 7.400 × 10³ is a historical marking concession; teach the requested two-significant-figure presentation."
+      ],
+      "commonErrors": [
+        {
+          "description": "Dropping place-value zeros and writing 74.",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4MB1:issue1:1I",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Round a numerical value to the stated degree of accuracy.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                18
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                6
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedFamilyId": "4MB1.rounding.significant-figures",
+      "responseRequirements": {
+        "workingRequired": false,
+        "finalForm": "rounded numerical value to two significant figures",
+        "sourceRefs": [
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-qp",
+            "pdfPages": [
+              2
+            ]
+          },
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-ms",
+            "pdfPages": [
+              6
+            ]
+          }
+        ]
+      },
+      "markingReviewNotes": [
+        "The scheme displays 2 as the whole-question total; each leaf earns only B1. Do not allocate two marks to part (a).",
+        "Do not turn historical notation concessions into an unrestricted numeric-only grading policy."
+      ],
+      "blockers": [
+        "No calibrated rounding family or notation parser implemented."
+      ]
+    },
+    {
+      "paperId": "4MB1-2024-summer-01-candidate",
+      "recordKind": "leaf",
+      "taskId": "4MB1-2024-summer-01-candidate.Q1.b",
+      "questionPath": "1.b",
+      "questionPaperPages": [
+        2
+      ],
+      "markSchemePages": [
+        6
+      ],
+      "originalMarks": 1,
+      "stimulusTypes": [
+        "numeric-expression"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            2
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative split inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex",
+      "reviewerType": "agent",
+      "reviewDate": "2026-10-01",
+      "humanReviewed": false,
+      "generalSchemePages": [
+        3,
+        4,
+        5
+      ],
+      "commandWord": "Write",
+      "requiredKnowledge": [
+        "Rounding to decimal places",
+        "Place value in decimals"
+      ],
+      "contextSummary": "Round a positive decimal below one to two decimal places.",
+      "sourceData": {
+        "value": "0.0374",
+        "decimalPlaces": 2
+      },
+      "solutionStructure": [
+        "The hundredths digit is 3 and the next digit is 7.",
+        "Round up to 0.04. Leading zeros are place holders, not extra significant digits."
+      ],
+      "markingMethod": "accuracy-mark",
+      "criteria": [
+        {
+          "id": "rounded-decimal",
+          "marks": 1,
+          "code": "B1",
+          "rule": "Give 0.04; the source explicitly accepts 4 × 10⁻²."
+        }
+      ],
+      "acceptableAlternatives": [
+        "4 × 10⁻²"
+      ],
+      "dependencies": [
+        "This single B mark is independent of part (a).",
+        "Use decimal places, not significant figures."
+      ],
+      "commonErrors": [
+        {
+          "description": "Returning 0.037 as two significant figures instead of two decimal places.",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4MB1:issue1:1I",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Round a decimal to the stated number of decimal places.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                18
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                6
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedFamilyId": "4MB1.rounding.decimal-places",
+      "responseRequirements": {
+        "workingRequired": false,
+        "finalForm": "rounded numerical value to two decimal places",
+        "sourceRefs": [
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-qp",
+            "pdfPages": [
+              2
+            ]
+          },
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-ms",
+            "pdfPages": [
+              6
+            ]
+          }
+        ]
+      },
+      "markingReviewNotes": [
+        "The whole question is two marks across two independent one-mark leaves."
+      ],
+      "blockers": [
+        "No calibrated decimal-rounding family or notation parser implemented."
+      ]
+    },
+    {
+      "paperId": "4MB1-2024-summer-01-candidate",
+      "recordKind": "leaf",
+      "taskId": "4MB1-2024-summer-01-candidate.Q2",
+      "questionPath": "2",
+      "questionPaperPages": [
+        2
+      ],
+      "markSchemePages": [
+        6
+      ],
+      "originalMarks": 2,
+      "stimulusTypes": [
+        "algebraic-expression"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            2
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative split inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex",
+      "reviewerType": "agent",
+      "reviewDate": "2026-10-01",
+      "humanReviewed": false,
+      "generalSchemePages": [
+        3,
+        4,
+        5
+      ],
+      "commandWord": "Find",
+      "requiredKnowledge": [
+        "Substitution",
+        "Order of operations",
+        "Signed arithmetic"
+      ],
+      "contextSummary": "Substitute a positive integer into a quadratic numerical expression and evaluate.",
+      "sourceExpression": "(3 − 2k²)/2 + 5k",
+      "sourceData": {
+        "k": 7
+      },
+      "solutionStructure": [
+        "Substitute 7 everywhere: (3 − 2 × 7²)/2 + 5 × 7.",
+        "Evaluate the power before multiplication: (3 − 98)/2 + 35.",
+        "Compute −95/2 + 35 = −25/2 = −12.5."
+      ],
+      "markingMethod": "method-marks",
+      "criteria": [
+        {
+          "id": "correct-substitution",
+          "marks": 1,
+          "code": "M1",
+          "rule": "Fully correct substitution of k = 7 throughout the expression. The scheme permits 7² or 49, and 5 × 7 or 35; the intermediate pair −95/2 (or −47.5) and 35 implies this method."
+        },
+        {
+          "id": "evaluated-result",
+          "marks": 1,
+          "code": "A1",
+          "dependsOn": [
+            "correct-substitution"
+          ],
+          "rule": "Give −12.5 or an equivalent value. The source permits ignoring an incorrect subsequent attempt to simplify −25/2; do not reject valid earlier evidence automatically."
+        }
+      ],
+      "acceptableAlternatives": [
+        "−25/2",
+        "Equivalent exact numerical value of −12.5, subject to the scheme’s incorrect-working rule."
+      ],
+      "dependencies": [
+        "The scheme marks this task cas: a correct answer can imply both marks unless produced by obviously incorrect working.",
+        "A wrong final answer does not erase the source-specific permission to retain valid −25/2 before an incorrect simplification.",
+        "Method and accuracy are not independent: the final A mark follows a valid method, which a correct result may imply."
+      ],
+      "commonErrors": [
+        {
+          "description": "Squaring 2k rather than k alone.",
+          "origin": "editorial"
+        },
+        {
+          "description": "Dividing the final 5k term by 2 even though it is outside the fraction.",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4MB1:issue1:3B",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Substitution into a given algebraic formula/expression.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4MB1:issue1:1A",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Apply arithmetic operations, powers and brackets in the correct order.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                17
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                6
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedFamilyId": "4MB1.substitution.quadratic-expression",
+      "responseRequirements": {
+        "workingRequired": false,
+        "finalForm": "exact numerical value",
+        "sourceRefs": [
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-qp",
+            "pdfPages": [
+              2
+            ]
+          },
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-ms",
+            "pdfPages": [
+              6
+            ]
+          }
+        ],
+        "note": "Paper header asks for stages of working, but this task is explicitly cas in the scheme; answer-only credit is subject to that rule."
+      },
+      "markingReviewNotes": [
+        "The source method note says x = 7 although the question and displayed substitution use k. Treat as a variable-label typo, not a different given value.",
+        "A last-line-only marker would lose the explicit ignore-subsequent-working concession."
+      ],
+      "blockers": [
+        "No generated family or calibrated marker for substitution and subsequent-work handling."
+      ]
     }
   ],
   "marksReconciled": true,
   "processingNotes": [
-    "Detailed coverage is seven of the 38 indexed parts, covering 23 of 100 original marks.",
+    "Detailed coverage is twelve of the 38 indexed parts, covering 35 of 100 original marks.",
     "The paper remains indexed; marksReconciled refers to the existing whole-paper text totals and this subset, not complete task processing.",
     "Proposed IDs do not activate templates. Q15(b) now has a separate provisional family and experimental runtime, with no validated custom maximum or live eligibility."
   ],
   "blockers": [
-    "31 Maths parts still lack detailed analyses.",
+    "26 Maths parts still lack detailed analyses.",
     "Whole-paper visual/page and scheme-content audit remains incomplete.",
     "Outside the reviewed subset, extracted Maths text still contains unresolved glyph names and private-use characters; use the PDF for mathematical notation.",
     "Source-linked generative families, calibration and assessment-objective review remain unfinished.",
     "Q19 inverse cube-root demand is not in the obtained specification row 4G explicit list; current-series scope needs authoritative reconciliation.",
-    "Q19 special-case 3.6 explanation is arithmetically inconsistent when its printed inverse-cube model is applied consistently; concession preserved, generated use blocked."
+    "Q19 special-case 3.6 explanation is arithmetically inconsistent when its printed inverse-cube model is applied consistently; concession preserved, generated use blocked.",
+    "Q21 scheme first-row x/a bounds are swapped relative to the question and its own later calculation; source inconsistency retained."
   ],
   "sourceDiscrepancies": [
     {
@@ -1284,6 +2097,46 @@
       ],
       "observation": "SC B1 accepts an answer rounding to 3.6 and prints an inverse-cube misinterpretation. Consistently using y=k/x³ from x=3.375,y=6 to x=64 gives about 0.000879899, not 3.6. The other special-case answer 16 is consistent with direct cube-root variation.",
       "handling": "Preserve the historical scoring concession as written; do not invent a corrected interpretation or use it in generated rubrics without clarification."
+    },
+    {
+      "id": "Q21-swapped-bound-labels",
+      "status": "source-inconsistency-unresolved",
+      "sourceRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            16
+          ]
+        },
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-ms",
+          "pdfPages": [
+            19
+          ]
+        }
+      ],
+      "observation": "First working row labels x bounds 85/95 and a bounds 105/115. Question rounding and subsequent scheme rows instead give x bounds 105/115 and a bounds 85/95; the final expression uses 115/85 − 34.5/65.",
+      "handling": "Retain source wording, teach the interval derivation from the question and block unreviewed generated reuse; no publisher clarification obtained."
+    },
+    {
+      "id": "Q2-variable-label",
+      "status": "editorial-interpretation-recorded",
+      "sourceRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            2
+          ]
+        },
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-ms",
+          "pdfPages": [
+            6
+          ]
+        }
+      ],
+      "observation": "The scheme method note refers to x = 7; the question and scheme working use k = 7.",
+      "handling": "Use the question variable k; retain the mismatch as a source label typo. No publisher correction obtained."
     }
   ]
 }

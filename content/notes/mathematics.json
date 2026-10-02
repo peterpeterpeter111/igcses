@@ -458,7 +458,19 @@
       "commonMistakes": [
         "Leading zeros are not significant figures.",
         "Do not remove trailing zeros that show the requested decimal accuracy."
-      ]
+      ],
+      "answerGuide": {
+        "id": "4MB1.rounding.significant-figures",
+        "sourceTaskId": "4MB1-2024-summer-01-candidate.Q1.a",
+        "command": "Write to a given accuracy",
+        "steps": [
+          "Decide whether the question asks for significant figures or decimal places.",
+          "Locate the final retained digit; inspect the following digit to decide whether to round up.",
+          "Keep the place-value zeros needed to preserve the size of the number.",
+          "Present the requested accuracy clearly, even where a particular historical scheme accepts extra equivalent notations."
+        ],
+        "caution": "The source awards one independent mark per rounding part. Historical notation concessions do not change the requested precision."
+      }
     },
     {
       "id": "upper-and-lower-bounds",
@@ -494,7 +506,19 @@
       "commonMistakes": [
         "Use opposite endpoints for a quotient, not upper divided by upper.",
         "Do not replace an excluded endpoint with an inclusive one."
-      ]
+      ],
+      "answerGuide": {
+        "id": "4MB1.bounds.difference-of-times",
+        "sourceTaskId": "4MB1-2024-summer-01-candidate.Q21",
+        "command": "Calculate an upper bound",
+        "steps": [
+          "Write the rounding interval for each measurement, using its own stated precision.",
+          "Build the expression for the required quantity before choosing endpoints. For a difference, maximise the first term and minimise the term being subtracted.",
+          "For positive distance ÷ speed, the upper time bound uses upper distance and lower speed; the lower time bound uses lower distance and upper speed.",
+          "Show the endpoint substitution and keep the calculation unrounded until the requested final accuracy."
+        ],
+        "caution": "The reviewed source requires visible working. An upper bound may be approached without being attained. Its first scheme row swaps two variable labels; derive intervals from the question. Historical rounding concessions are not a general permission to ignore requested precision."
+      }
     },
     {
       "id": "standard-form",
@@ -924,7 +948,19 @@
         "construct a formula",
         "fixed charge",
         "variable cost"
-      ]
+      ],
+      "answerGuide": {
+        "id": "4MB1.substitution.quadratic-expression",
+        "sourceTaskId": "4MB1-2024-summer-01-candidate.Q2",
+        "command": "Find a value by substitution",
+        "steps": [
+          "Replace every occurrence of the variable by its given value.",
+          "Use brackets around substituted values and preserve the original fraction structure.",
+          "Calculate powers, then products and quotients, then sums and differences.",
+          "Keep exact intermediate values so your working can support method credit."
+        ],
+        "caution": "The reviewed scheme allows a correct answer to imply the method unless it comes from obviously incorrect working. It also retains a correct fraction before certain later simplification errors; a final-answer-only check cannot reproduce all this marking."
+      }
     },
     {
       "id": "changing-the-subject",
@@ -1285,7 +1321,19 @@
         "product",
         "quotient",
         "division by zero"
-      ]
+      ],
+      "answerGuide": {
+        "id": "4MB1.algebra.fraction-difference-division",
+        "sourceTaskId": "4MB1-2024-summer-01-candidate.Q22",
+        "command": "Express as a single fraction",
+        "steps": [
+          "Record values excluded by original denominators and by a divisor that would be zero.",
+          "Use a common denominator to combine a sum or difference; keep brackets around a subtracted numerator.",
+          "Factor the polynomial expressions and multiply by the reciprocal of the divisor.",
+          "Cancel common factors, track any negative sign, and state the simplest equivalent fraction on the original domain."
+        ],
+        "caution": "Show algebraic working. The reviewed source permits method steps in different orders and gives partial credit for specific imperfect intermediate steps. Domain restrictions preserve equivalence; the source does not award a separate mark for listing them."
+      }
     },
     {
       "id": "solving-linear-equations",

@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-01",
+  "scope": "Exact bounded source arithmetic, not template activation or whole-paper validation.",
+  "checks": [
+    {
+      "name": "Q1a rounding",
+      "passed": true
+    },
+    {
+      "name": "Q1b rounding",
+      "passed": true
+    },
+    {
+      "name": "Q2 substitution",
+      "passed": true
+    },
+    {
+      "name": "Q2 intermediate",
+      "passed": true
+    },
+    {
+      "name": "mark totals",
+      "passed": true
+    }
+  ],
+  "sourceHashes": {
+    "research/extractions/4MB1-2024-summer-01.json": "9b493d186d6d5562f1f239e1786640ef8afd49db46ed5c6854b28daf4e10cf4d",
+    "content/notes/mathematics.json": "3ebc0e6b028a924a82a1b13adc2072ea1cff828435b4875060a664501b14af15"
+  },
+  "humanReviewed": false
+}

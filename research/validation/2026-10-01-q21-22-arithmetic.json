@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-01",
+  "scope": "Exact rational answer/identity checks and bounded interval sanity check; no marker calibration or source discrepancy resolution.",
+  "checks": [
+    {
+      "name": "Q21 exact upper bound",
+      "passed": true
+    },
+    {
+      "name": "Q21 requested three decimals",
+      "passed": true
+    },
+    {
+      "name": "Q21 published rounding concession",
+      "passed": true
+    },
+    {
+      "name": "Q21 open endpoint interpretation",
+      "passed": true
+    },
+    {
+      "name": "Q22 factorisation coefficient identity",
+      "passed": true
+    },
+    {
+      "name": "Q22 common denominator identity",
+      "passed": true
+    },
+    {
+      "name": "Q22 simplified quotient identity",
+      "passed": true
+    },
+    {
+      "name": "Q22 all original exclusions accounted for",
+      "passed": true
+    },
+    {
+      "name": "Q22 sign placements agree",
+      "passed": true
+    }
+  ],
+  "sha256": {
+    "research/extractions/4MB1-2024-summer-01.json": "3e70307a67d25dbc51f3cdda8d7789a8b5cad8f185677b33d2e4c1f3e74ba0f2",
+    "content/notes/mathematics.json": "289ec1e2e3f9bbeab6209430035d16baecbae52f7a87af082b48537cba236b97"
+  },
+  "rationalSamples": 99
+}
