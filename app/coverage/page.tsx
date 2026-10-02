@@ -113,10 +113,10 @@ export default function CoveragePage() {
           <li>
             Active generative templates: {evidenceHighlights.activeFamilies}.{' '}
             Provisional families: {evidenceHighlights.provisionalFamilies} (English
-            retrieval, Physics resultant force and weight, Maths factorisation).{' '}
+            retrieval, Physics resultant force and weight, Maths factorisation and matrix addition).{' '}
             Experimental generators: {evidenceHighlights.experimentalGenerators}.
             Mathematical checks do not establish assessment or marking readiness.
-            Live AI remains deferred.
+            The one-mark matrix prototype has no validated 2/4/6-mark quiz adaptation. Live AI remains deferred.
           </li>
         </ul>
       </main>

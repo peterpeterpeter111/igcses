@@ -1,3 +1,15 @@
+# Latest phase — Matrix prototype, 2 October 2026
+
+Read research/checkpoints/2026-10-02-MATRIX-PROTOTYPE.md first. Five provisional families / four experimental generators and offline markers / zero active. Matrix addition keeps its original one-mark scheme; no validated 2/4/6-mark adaptation. 99 tests, typecheck/lint, research/evidence checks and final production build/public scan pass. Teaching: 235 sections / 13 partial notes, 277 identities / 687 partial requirements / 381 links. Maths 16/38 detailed parts / 44 marks. GitHub 0fb1b45 mirrors b9a4ccd; sync newer extraction/teaching/prototype phases non-force. No complete chapters/points/processed papers or deployment. Preserve UI/history, keep AI last, no reset; pause at 5% in either allowance. Older entries are historical.
+
+# Latest phase — Matrix teaching, 2 October 2026
+
+Read research/checkpoints/2026-10-02-MATRICES.md first. Four lessons and a checked diagram bring totals to 235 sections / 13 partial documents, 277 identities (271 with teaching audits), 687 partial requirements / 381 links. Maths 52 sections; paper counts unchanged at 16/38 detailed parts / 44 marks. 96 tests and final build/public scan pass. GitHub 0fb1b45 mirrors b9a4ccd; newer extraction/teaching phases need non-force sync. Continue bounded templates, paper details and curriculum. No complete chapters/points/processed papers, active templates or deployment. Preserve UI/history, AI last, no reset; pause at 5% in either allowance. Older entries are historical.
+
+# Latest phase — Maths Q3–Q5, 2 October 2026
+
+Read research/checkpoints/2026-10-02-Q3-5.md first. Maths: 16/38 detailed parts, 44 marks, 22 pending; Q3 source-label inconsistencies retained. 277 reviewed identities (269 with teaching audits), 680 partial requirements / 377 links; 231 sections / 13 partial notes. 96 tests and final build/public scan pass. GitHub 0fb1b45 exactly mirrors saved b9a4ccd; sync this newer delta after saving. Continue matrix lessons, remaining paper details and calibrated templates. Zero completed chapters/points/processed papers or active templates; no deployment. Keep UI/history, AI last, no reset; pause at 5% in either allowance. Older entries are historical.
+
 # Latest phase — Maths Q1–Q2, 1 October 2026
 
 Read research/checkpoints/2026-10-01-Q1-2.md and 2026-10-01-Q21-22.md first. Maths: 12/38 detailed parts, 35/100 marks, 26 pending. 231 sections / 13 partial documents and all completion counts unchanged. 96 tests, typecheck, lint, research/content/evidence checks, production build/public scan and bounded browser verification pass. The missing Sites helper was replaced only for local verification by the existing project build command; hosting remains unattempted. GitHub 6cd838b mirrors 7216180; newer phases need non-force sync. Preserve UI/history, keep AI last, no reset. Check both allowances and pause at 5%. Older entries are historical.

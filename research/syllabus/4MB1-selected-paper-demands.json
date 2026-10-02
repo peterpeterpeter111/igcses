@@ -4,16 +4,18 @@
   "specificationIssue": "Issue 1 - January 2016",
   "specificationDocumentId": "4MB1-spec",
   "specificationSha256": "62d4534ba1c0aee42ce2d3e7fd1da8083fd03216dd106da11ae590525d3187a5",
-  "reviewDate": "2026-10-01",
+  "reviewDate": "2026-10-02",
   "reviewedBy": "Codex",
   "reviewerType": "agent",
-  "reviewMethod": "Visual review of official specification PDF pages 21,24,28; component applicability retained from prior PDF 11–12 review.",
+  "reviewMethod": "Visual review of official specification PDF pages 21,23,24,25,28; component applicability retained from prior PDF 11–12 review.",
   "reviewedPages": [
     21,
+    23,
     24,
+    25,
     28
   ],
-  "scope": "Three source-only row identities needed to analyse Q17–Q19: 4G variation, 6C angles and 10B discrete averages. No teaching links or completed substatement audit. Q19 cube-root applicability to 4G is unresolved.",
+  "scope": "Eight selected row identities for reviewed paper demands. Rows 5B and 5C now have partial matrix lessons; six remaining identities are source-only. No completed substatement audits. Q19 inverse cube-root applicability remains unresolved.",
   "points": [
     {
       "id": "4MB1:issue1:4G",
@@ -62,6 +64,99 @@
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "statistics",
+      "noteSectionIds": [],
+      "teachingCoverage": "not-started",
+      "humanReviewed": false
+    },
+    {
+      "id": "4MB1:issue1:4I",
+      "reference": "4I",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "summary": "Relate a straight-line equation y = mx + c to its gradient and y-axis intercept (0,c).",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "geometry",
+      "noteSectionIds": [],
+      "teachingCoverage": "not-started",
+      "humanReviewed": false
+    },
+    {
+      "id": "4MB1:issue1:5B",
+      "reference": "5B",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "summary": "Add and multiply matrices; row-by-column multiplication of order at most 3 × 3.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "number-and-algebra",
+      "noteSectionIds": [
+        "adding-matrices",
+        "multiplying-matrices"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-02"
+    },
+    {
+      "id": "4MB1:issue1:5C",
+      "reference": "5C",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "summary": "Multiply a matrix by a scalar.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "number-and-algebra",
+      "noteSectionIds": [
+        "scalar-matrix-multiplication",
+        "scalar-matrix-equations"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-02"
+    },
+    {
+      "id": "4MB1:issue1:6F",
+      "reference": "6F",
+      "pdfPage": 24,
+      "printedPage": 18,
+      "summary": "Use Pythagoras in two and three dimensions, including constructed or given altitudes; angle-bisector theorems excluded.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "geometry",
+      "noteSectionIds": [],
+      "teachingCoverage": "not-started",
+      "humanReviewed": false
+    },
+    {
+      "id": "4MB1:issue1:7B",
+      "reference": "7B",
+      "pdfPage": 25,
+      "printedPage": 19,
+      "summary": "Calculate areas of rectangles, parallelograms, trapezia, triangles and circles, including shapes decomposed into these.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "geometry",
       "noteSectionIds": [],
       "teachingCoverage": "not-started",
       "humanReviewed": false

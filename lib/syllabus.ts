@@ -39,5 +39,5 @@ export const reviewedInventories = [
   { title: 'Polynomials and algebraic fractions: section 3, rows D–F', ...mathsPolynomials },
   { title: 'Equations: section 3, row G', ...mathsEquations },
   { title: 'Simultaneous equations, inequalities and sequences: section 3, rows H–L', ...mathsAlgebraRest },
-  { title: 'Selected paper demands: variation, polygon angles and averages (source identities only)', ...mathsPaperDemands },
+  { title: 'Selected paper demands: graphs, matrices, geometry and averages (partial matrix teaching)', ...mathsPaperDemands },
 ];

@@ -8,10 +8,10 @@ void test('Maths coverage exposes the reviewed subset without criteria or promot
   const candidate = obtainedPaperCandidates('4MB1')[0];
   const summary = paperDetailedSummary(candidate)!;
   assert.ok(summary);
-  assert.equal(summary.detailedTasks, 12);
-  assert.equal(summary.originalMarks, 35);
+  assert.equal(summary.detailedTasks, 16);
+  assert.equal(summary.originalMarks, 44);
   assert.equal(summary.indexedTasks, 38);
-  assert.equal(summary.remainingTasks, 26);
+  assert.equal(summary.remainingTasks, 22);
   assert.equal(summary.fullyProcessed, false);
   assert.equal(summary.humanReviewed, false);
   assert.ok(!('tasks' in summary) && !('criteria' in summary));

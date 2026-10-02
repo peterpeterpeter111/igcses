@@ -1,3 +1,4 @@
+import matrix from '../research/templates/4MB1-matrix-addition.v0.1.0.json' with { type: 'json' };
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { templateContractErrors } from '../scripts/template-contract.mjs';
@@ -21,7 +22,7 @@ function promotionFixture() {
 }
 
 void test('saved families remain valid provisional contracts', () => {
-  for (const f of [physics, english, weight, quadratic]) {
+  for (const f of [physics, english, weight, quadratic, matrix]) {
     assert.deepEqual(templateContractErrors(f), []);
     assert.equal(f.status, 'provisional');
     assert.deepEqual(f.customQuiz.validatedMarks, []);

@@ -1,0 +1,108 @@
+{
+  "checkedAt": "2026-10-02T04:41:23.978Z",
+  "familyId": "4MB1.matrices.add-two-by-two",
+  "version": "0.1.0",
+  "sampledSeeds": 10000,
+  "distinctSampledQuestions": 10000,
+  "endpointCombinations": 256,
+  "entireDomainExhausted": false,
+  "parameterDomainSize": 43046720,
+  "sourceExcluded": true,
+  "syntheticResponseCases": 12,
+  "results": [
+    {
+      "answerLine": "[[1,-6],[-9,3]]",
+      "expectedScore": 1,
+      "actualScore": 1,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "answerLine": "[[+1, −6], [−9, +3]]",
+      "expectedScore": 1,
+      "actualScore": 1,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "answerLine": "[[1,-6],[-9,2]]",
+      "expectedScore": 0,
+      "actualScore": 0,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "answerLine": "[[1,-9],[-6,3]]",
+      "expectedScore": 0,
+      "actualScore": 0,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "answerLine": "",
+      "expectedScore": 0,
+      "actualScore": 0,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "answerLine": "[1,-6,-9,3]",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "answerLine": "[[1,-6,-9],[3]]",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "answerLine": "[[1.0,-6],[-9,3]]",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "answerLine": "[[1/1,-6],[-9,3]]",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "answerLine": "[[1,-6],[-9,3]];alert(1)",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "answerLine": "[[1,- 6],[-9,3]]",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "answerLine": "[[1 1,-6],[-9,3]]",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    }
+  ],
+  "sourceHashes": {
+    "server/generators/matrix-addition.ts": "54de14e411f602910a56bf36b2e96cabc8e1c986cbec9e455de195284e89b063",
+    "server/generators/matrix-addition-marking.ts": "43fed0095811b3d11fa0ad68590cc95c3d4f32d1fd5d16dbcd48d4c2641514e3",
+    "tests/matrix-addition-prototype.test.ts": "27c28afa66b623108cc1ea5079558ce6f92d68391b60cbccb9c3bec3ff92ce93",
+    "research/templates/4MB1-matrix-addition.v0.1.0.json": "adf9ad83459d05dc4b3e40b6dd21536be15df93621381a6e40f1459f4bce3e84"
+  },
+  "humanReviewed": false,
+  "liveEligible": false,
+  "assessmentCalibrationComplete": false,
+  "scope": "Bounded offline arithmetic and synthetic transcription checks only; not millions of reviewed templates or learner calibration."
+}

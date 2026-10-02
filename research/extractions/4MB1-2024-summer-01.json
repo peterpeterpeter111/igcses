@@ -12,7 +12,7 @@
     "paperLog": "P76502A",
     "schemePublicationCode": "4MB1_01_2406_MS"
   },
-  "reviewDate": "2026-10-01",
+  "reviewDate": "2026-10-02",
   "reviewer": "Codex",
   "reviewerType": "agent",
   "humanReviewed": false,
@@ -21,8 +21,8 @@
   "fullyProcessed": false,
   "wholePaperMarks": 100,
   "wholePaperLeafCount": 38,
-  "detailedLeafTasks": 12,
-  "detailedOriginalMarks": 35,
+  "detailedLeafTasks": 16,
+  "detailedOriginalMarks": 44,
   "reviewedQuestionTotals": {
     "15": 4,
     "16": 4,
@@ -33,7 +33,10 @@
     "21": 4,
     "22": 4,
     "1": 2,
-    "2": 2
+    "2": 2,
+    "3": 3,
+    "4": 3,
+    "5": 3
   },
   "documents": [
     {
@@ -61,6 +64,9 @@
     "questionPaper": {
       "visuallyReviewedPages": [
         2,
+        3,
+        4,
+        5,
         12,
         13,
         14,
@@ -69,7 +75,7 @@
         17
       ],
       "wholeDocumentReviewed": false,
-      "scope": "Q1–Q2 and Q15–Q22 expressions, scenarios, instructions and marks; no whole-document review."
+      "scope": "Q1–Q5 and Q15–Q22 diagrams, matrices, expressions, instructions and marks; no whole-document review."
     },
     "markScheme": {
       "visuallyReviewedPages": [
@@ -77,6 +83,8 @@
         4,
         5,
         6,
+        7,
+        8,
         14,
         15,
         16,
@@ -86,7 +94,7 @@
         20
       ],
       "wholeDocumentReviewed": false,
-      "scope": "General guidance and Q1–Q2 / Q15–Q22 criteria; source discrepancies retained, other tasks pending."
+      "scope": "General guidance and Q1–Q5 / Q15–Q22 criteria; source discrepancies retained, other tasks pending."
     }
   },
   "examinerReportStatus": "not-sought-for-this-bounded-review",
@@ -98,11 +106,13 @@
       18,
       20,
       21,
+      23,
       24,
+      25,
       28
     ],
     "sha256": "62d4534ba1c0aee42ce2d3e7fd1da8083fd03216dd106da11ae590525d3187a5",
-    "scopeNote": "Reviewed mappings include 1A/1C/1D/1E/1H, 3C/3G, 6C and 10B. Row 4G is a related identity only: Q19 inverse cube-root demand is not in its explicit list. Full series-amendment reconciliation remains open. Q21 uses reviewed rows 1G/1I/1J; Q22 uses 3C/3F."
+    "scopeNote": "Reviewed mappings include 1A/1C/1D/1E/1H, 3C/3G, 6C and 10B. Row 4G is a related identity only: Q19 inverse cube-root demand is not in its explicit list. Full series-amendment reconciliation remains open. Q21 uses reviewed rows 1G/1I/1J; Q22 uses 3C/3F. Q3–Q5 additionally use reviewed identities 7B, 6F, 5B, 5C and 4I; these are source-only with teaching audits pending."
   },
   "tasks": [
     {
@@ -2046,22 +2056,708 @@
       "blockers": [
         "No generated family or calibrated marker for substitution and subsequent-work handling."
       ]
+    },
+    {
+      "paperId": "4MB1-2024-summer-01-candidate",
+      "recordKind": "leaf",
+      "taskId": "4MB1-2024-summer-01-candidate.Q3",
+      "questionPath": "3",
+      "questionPaperPages": [
+        3
+      ],
+      "markSchemePages": [
+        7
+      ],
+      "originalMarks": 3,
+      "stimulusRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            3
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative split inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex",
+      "reviewerType": "agent",
+      "reviewDate": "2026-10-02",
+      "humanReviewed": false,
+      "generalSchemePages": [
+        3,
+        4,
+        5
+      ],
+      "commandWord": "Calculate",
+      "requiredKnowledge": [
+        "Pythagoras theorem",
+        "Perpendicular distance between parallel sides",
+        "Area of a trapezium"
+      ],
+      "stimulusTypes": [
+        "geometry-diagram"
+      ],
+      "contextSummary": "Find the area of a right-angled trapezium from its two vertical parallel sides and a sloping top.",
+      "sourceData": {
+        "AD": 12,
+        "BC": 6,
+        "CD": 8.7,
+        "lengthUnit": "cm",
+        "rightAngles": [
+          "ABC",
+          "BAD"
+        ],
+        "diagramNotToScale": true
+      },
+      "solutionStructure": [
+        "AD and BC are parallel because both are perpendicular to AB. The vertical difference between D and C is 12 − 6 = 6 cm.",
+        "Use the right triangle with hypotenuse CD: AB² = 8.7² − 6² = 39.69, hence AB = 6.3 cm.",
+        "The perpendicular distance between the parallel sides is AB, not CD. Area = (12 + 6) × 6.3 / 2 = 56.7 cm²."
+      ],
+      "markingMethod": "method-marks",
+      "criteria": [
+        {
+          "id": "find-width",
+          "marks": 1,
+          "code": "M1",
+          "rule": "Give a correct expression involving AB and no other unknowns, or AB = 6.3. A correct Pythagoras calculation or complete trigonometric method is allowed. The scheme also permits the candidate’s height difference marked on their diagram, provided it is less than 8.7."
+        },
+        {
+          "id": "area-method",
+          "marks": 1,
+          "code": "M1",
+          "rule": "Use a correct trapezium area method with the candidate’s AB. The substituted width may be any number except 6, 12 or 8.7. Correct rectangle/triangle decomposition or subtraction is also allowed.",
+          "dependsOn": []
+        },
+        {
+          "id": "area-result",
+          "marks": 1,
+          "code": "A1",
+          "rule": "Give an area rounding to 56.7 cm². The task is cas, subject to the general obviously-incorrect-working exclusion.",
+          "dependsOn": [
+            "find-width",
+            "area-method"
+          ]
+        }
+      ],
+      "acceptableAlternatives": [
+        "Rectangle plus triangle: 6AB + (12 − 6)AB/2.",
+        "Larger rectangle minus triangle: 12AB − (12 − 6)AB/2.",
+        "A complete valid trigonometric method for AB earns the width method mark; printed alternative labels require the separate source caveat."
+      ],
+      "dependencies": [
+        "The area method can earn credit using the candidate’s width even when the first method mark is not earned; the stated width exclusions remain.",
+        "A correct answer may imply the methods unless obtained through obviously incorrect working.",
+        "Do not allocate extra marks for completing multiple alternative methods."
+      ],
+      "commonErrors": [
+        {
+          "description": "Using the sloping side 8.7 as the perpendicular trapezium width.",
+          "origin": "scheme",
+          "sourceRefs": [
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                7
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Treating 6.3 as AB² rather than AB.",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4MB1:issue1:7B",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Find a trapezium area or decompose it into a rectangle and triangle.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                25
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                7
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4MB1:issue1:6F",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Construct a right triangle and apply Pythagoras to obtain the missing width.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                24
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                7
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedFamilyId": "4MB1.geometry.trapezium-missing-width",
+      "responseRequirements": {
+        "workingRequired": false,
+        "finalForm": "area in cm²",
+        "sourceRefs": [
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-qp",
+            "pdfPages": [
+              3
+            ]
+          },
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-ms",
+            "pdfPages": [
+              7
+            ]
+          }
+        ],
+        "note": "The paper header asks for working, but this task is cas in the scheme."
+      },
+      "markingReviewNotes": [
+        "The opening working row puts [= 6.3] alongside an equation for AB²; 6.3 is the length AB, whereas AB² is 39.69.",
+        "Two printed sine-rule alternatives use AD as the unknown although the requested width is AB. The Pythagoras route and final result reconcile; do not silently teach those labels.",
+        "Trigonometric alternative syllabus mapping and generated diagram/partial-credit calibration remain unfinished."
+      ],
+      "blockers": [
+        "Printed intermediate/alternative labels need explicit editorial review before generated reuse; no publisher clarification obtained.",
+        "No calibrated family, diagram contract or marker for candidate-width follow-through."
+      ]
+    },
+    {
+      "paperId": "4MB1-2024-summer-01-candidate",
+      "recordKind": "leaf",
+      "taskId": "4MB1-2024-summer-01-candidate.Q4.a",
+      "questionPath": "4.a",
+      "questionPaperPages": [
+        4
+      ],
+      "markSchemePages": [
+        8
+      ],
+      "originalMarks": 1,
+      "stimulusRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            4
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative split inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex",
+      "reviewerType": "agent",
+      "reviewDate": "2026-10-02",
+      "humanReviewed": false,
+      "generalSchemePages": [
+        3,
+        4,
+        5
+      ],
+      "commandWord": "Calculate",
+      "requiredKnowledge": [
+        "Entrywise matrix addition",
+        "Signed arithmetic"
+      ],
+      "stimulusTypes": [
+        "matrices"
+      ],
+      "contextSummary": "Add two given two-by-two matrices entry by entry.",
+      "sourceData": {
+        "A": [
+          [
+            3,
+            -2
+          ],
+          [
+            -5,
+            1
+          ]
+        ],
+        "B": [
+          [
+            -2,
+            -4
+          ],
+          [
+            -4,
+            2
+          ]
+        ]
+      },
+      "solutionStructure": [
+        "Add corresponding entries: 3 + (−2) = 1, −2 + (−4) = −6, −5 + (−4) = −9, 1 + 2 = 3.",
+        "The sum is [[1, −6], [−9, 3]]."
+      ],
+      "markingMethod": "accuracy-mark",
+      "criteria": [
+        {
+          "id": "matrix-sum",
+          "marks": 1,
+          "code": "B1",
+          "rule": "Give the correct two-by-two matrix [[1, −6], [−9, 3]]; the single source mark is for the full matrix, not one mark per entry."
+        }
+      ],
+      "acceptableAlternatives": [
+        "Equivalent conventional bracket style preserving all four entries and their positions."
+      ],
+      "dependencies": [
+        "Independent of part (b). No partial-entry credit is specified for this one-mark part."
+      ],
+      "commonErrors": [
+        {
+          "description": "Multiplying rows and columns instead of adding corresponding entries.",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4MB1:issue1:5B",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Add two matrices of the same order.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                23
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                8
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedFamilyId": "4MB1.matrices.add-two-by-two",
+      "responseRequirements": {
+        "workingRequired": false,
+        "finalForm": "two-by-two matrix",
+        "sourceRefs": [
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-qp",
+            "pdfPages": [
+              4
+            ]
+          },
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-ms",
+            "pdfPages": [
+              8
+            ]
+          }
+        ]
+      },
+      "markingReviewNotes": [
+        "Preserve row and column positions; flattening entries without a shape contract would be unsafe."
+      ],
+      "blockers": [
+        "No matrix-response parser or calibrated generated family."
+      ]
+    },
+    {
+      "paperId": "4MB1-2024-summer-01-candidate",
+      "recordKind": "leaf",
+      "taskId": "4MB1-2024-summer-01-candidate.Q4.b",
+      "questionPath": "4.b",
+      "questionPaperPages": [
+        4
+      ],
+      "markSchemePages": [
+        8
+      ],
+      "originalMarks": 2,
+      "stimulusRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            4
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative split inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex",
+      "reviewerType": "agent",
+      "reviewDate": "2026-10-02",
+      "humanReviewed": false,
+      "generalSchemePages": [
+        3,
+        4,
+        5
+      ],
+      "commandWord": "Find",
+      "requiredKnowledge": [
+        "Scalar matrix multiplication",
+        "Equality of corresponding entries",
+        "Linear equations"
+      ],
+      "stimulusTypes": [
+        "matrices",
+        "matrix-equation"
+      ],
+      "contextSummary": "Find a scalar n from nA − 2B = C, with A and B supplied in the question.",
+      "sourceData": {
+        "A": [
+          [
+            3,
+            -2
+          ],
+          [
+            -5,
+            1
+          ]
+        ],
+        "B": [
+          [
+            -2,
+            -4
+          ],
+          [
+            -4,
+            2
+          ]
+        ],
+        "C": [
+          [
+            13,
+            2
+          ],
+          [
+            -7,
+            -1
+          ]
+        ]
+      },
+      "solutionStructure": [
+        "Equate any corresponding entry; the top left gives 3n − 2(−2) = 13.",
+        "Solve 3n + 4 = 13 to get n = 3.",
+        "Check all entries: 3A − 2B = [[13, 2], [−7, −1]]."
+      ],
+      "markingMethod": "method-marks",
+      "criteria": [
+        {
+          "id": "matrix-equation",
+          "marks": 1,
+          "code": "M1",
+          "rule": "Set up the matrices so a relevant equation can be formed, or give a correct relevant scalar equation: 3n + 4 = 13, −2n + 8 = 2, −5n + 8 = −7, or n − 4 = −1, or equivalent."
+        },
+        {
+          "id": "scalar-result",
+          "marks": 1,
+          "code": "A1",
+          "rule": "Find n = 3. The task is cas, so a correct result can imply the method unless produced by obviously incorrect working.",
+          "dependsOn": [
+            "matrix-equation"
+          ]
+        }
+      ],
+      "acceptableAlternatives": [
+        "Use any one corresponding entry to form and solve a valid equation.",
+        "Correct whole-matrix setup is sufficient for the source method mark even before a scalar equation is written."
+      ],
+      "dependencies": [
+        "Do not require all four scalar equations for a single method mark.",
+        "Part (b) uses the original A and B, not the candidate’s answer to part (a)."
+      ],
+      "commonErrors": [
+        {
+          "description": "Losing the negative sign when subtracting 2B.",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4MB1:issue1:5C",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Multiply matrices by a scalar in a matrix equation.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                23
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                8
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4MB1:issue1:5B",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Combine matching entries after scalar multiplication.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                23
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                8
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4MB1:issue1:3G",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Solve the resulting first-degree scalar equation.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                8
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedFamilyId": "4MB1.matrices.scalar-equation",
+      "responseRequirements": {
+        "workingRequired": false,
+        "finalForm": "scalar n",
+        "sourceRefs": [
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-qp",
+            "pdfPages": [
+              4
+            ]
+          },
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-ms",
+            "pdfPages": [
+              8
+            ]
+          }
+        ]
+      },
+      "markingReviewNotes": [
+        "The source accepts a relevant matrix setup or a single relevant scalar equation; do not overrequire full entrywise working."
+      ],
+      "blockers": [
+        "No calibrated matrix-equation family or marker."
+      ]
+    },
+    {
+      "paperId": "4MB1-2024-summer-01-candidate",
+      "recordKind": "leaf",
+      "taskId": "4MB1-2024-summer-01-candidate.Q5",
+      "questionPath": "5",
+      "questionPaperPages": [
+        5
+      ],
+      "markSchemePages": [
+        8
+      ],
+      "originalMarks": 3,
+      "stimulusRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            5
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative split inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex",
+      "reviewerType": "agent",
+      "reviewDate": "2026-10-02",
+      "humanReviewed": false,
+      "generalSchemePages": [
+        3,
+        4,
+        5
+      ],
+      "commandWord": "Find",
+      "requiredKnowledge": [
+        "Gradient from two coordinates",
+        "Straight-line equation",
+        "Substitution to find intercept"
+      ],
+      "stimulusTypes": [
+        "coordinate-pairs"
+      ],
+      "contextSummary": "Find the line through two given points and express its equation in slope-intercept form.",
+      "sourceData": {
+        "points": [
+          [
+            2,
+            -14
+          ],
+          [
+            -3,
+            6
+          ]
+        ],
+        "requiredForm": "y = mx + c"
+      },
+      "solutionStructure": [
+        "Keep subtraction order consistent: m = (6 − (−14))/(−3 − 2) = 20/(−5) = −4.",
+        "Substitute either point: −14 = −4 × 2 + c gives c = −6.",
+        "The requested equation is y = −4x − 6; it also gives y = 6 at x = −3."
+      ],
+      "markingMethod": "method-marks",
+      "criteria": [
+        {
+          "id": "gradient-method",
+          "marks": 1,
+          "code": "M1",
+          "rule": "Use a correct method to find the gradient. An equation with the correct gradient may imply this mark."
+        },
+        {
+          "id": "intercept-method",
+          "marks": 1,
+          "code": "M1",
+          "rule": "Give a correct expression for the intercept using the candidate’s gradient. If that gradient is incorrect, it must be clearly identified or come from correct working. A correct unsimplified equation, a correct equation outside the requested form such as y + 4x = −6, or an equation with the correct intercept can imply this mark.",
+          "dependsOn": []
+        },
+        {
+          "id": "line-equation",
+          "marks": 1,
+          "code": "A1",
+          "rule": "Give y = −4x − 6; y = −4x + (−6) is explicitly accepted. Retain the requested y = mx + c form.",
+          "dependsOn": [
+            "gradient-method",
+            "intercept-method"
+          ]
+        }
+      ],
+      "acceptableAlternatives": [
+        "Reverse both subtraction orders when computing the gradient.",
+        "Use either point in y = mx + c.",
+        "Use point-slope form as intermediate working, then rearrange to the requested form."
+      ],
+      "dependencies": [
+        "The intercept method is not automatically lost after an incorrect gradient; preserve the stated candidate-gradient condition.",
+        "A correct answer earns full marks under cas unless derived through obviously incorrect working.",
+        "A correct equation in a different form can earn method credit but does not automatically satisfy the final requested-form mark."
+      ],
+      "commonErrors": [
+        {
+          "description": "Reversing the subtraction order in only the numerator or denominator.",
+          "origin": "editorial"
+        },
+        {
+          "description": "Reading the y-coordinate of a supplied point as the intercept when x is not zero.",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4MB1:issue1:4I",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Use the relationship between gradient, y-intercept and y = mx + c.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                21
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                8
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedFamilyId": "4MB1.graphs.line-through-two-points",
+      "responseRequirements": {
+        "workingRequired": false,
+        "finalForm": "y = mx + c",
+        "sourceRefs": [
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-qp",
+            "pdfPages": [
+              5
+            ]
+          },
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-ms",
+            "pdfPages": [
+              8
+            ]
+          }
+        ]
+      },
+      "markingReviewNotes": [
+        "A marker needs to distinguish method evidence, candidate-gradient follow-through and final form; plain algebraic equivalence is insufficient."
+      ],
+      "blockers": [
+        "No calibrated line-equation family or partial-working marker."
+      ]
     }
   ],
   "marksReconciled": true,
   "processingNotes": [
-    "Detailed coverage is twelve of the 38 indexed parts, covering 35 of 100 original marks.",
+    "Detailed coverage is sixteen of the 38 indexed parts, covering 44 of 100 original marks.",
     "The paper remains indexed; marksReconciled refers to the existing whole-paper text totals and this subset, not complete task processing.",
     "Proposed IDs do not activate templates. Q15(b) now has a separate provisional family and experimental runtime, with no validated custom maximum or live eligibility."
   ],
   "blockers": [
-    "26 Maths parts still lack detailed analyses.",
+    "22 Maths parts still lack detailed analyses.",
     "Whole-paper visual/page and scheme-content audit remains incomplete.",
     "Outside the reviewed subset, extracted Maths text still contains unresolved glyph names and private-use characters; use the PDF for mathematical notation.",
     "Source-linked generative families, calibration and assessment-objective review remain unfinished.",
     "Q19 inverse cube-root demand is not in the obtained specification row 4G explicit list; current-series scope needs authoritative reconciliation.",
     "Q19 special-case 3.6 explanation is arithmetically inconsistent when its printed inverse-cube model is applied consistently; concession preserved, generated use blocked.",
-    "Q21 scheme first-row x/a bounds are swapped relative to the question and its own later calculation; source inconsistency retained."
+    "Q21 scheme first-row x/a bounds are swapped relative to the question and its own later calculation; source inconsistency retained.",
+    "Q3 scheme intermediate AB²/AB and alternative sine-rule AD labels require explicit review before generated reuse."
   ],
   "sourceDiscrepancies": [
     {
@@ -2137,6 +2833,26 @@
       ],
       "observation": "The scheme method note refers to x = 7; the question and scheme working use k = 7.",
       "handling": "Use the question variable k; retain the mismatch as a source label typo. No publisher correction obtained."
+    },
+    {
+      "id": "Q3-width-labels",
+      "status": "source-inconsistency-unresolved",
+      "sourceRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            3
+          ]
+        },
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-ms",
+          "pdfPages": [
+            7
+          ]
+        }
+      ],
+      "observation": "The Pythagoras line appends [= 6.3] beside an AB² equation; 39.69 is AB² and 6.3 is AB. Two sine-rule alternatives label the unknown AD even though AD is given as 12 and those equations yield the width AB = 6.3.",
+      "handling": "Preserve the source discrepancy; use the independently checked Pythagoras/area route. Do not activate a generated family based on unreviewed alternative labels. No publisher clarification obtained."
     }
   ]
 }

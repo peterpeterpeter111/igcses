@@ -6,7 +6,8 @@
     17,
     18,
     19,
-    20
+    20,
+    23
   ],
   "prerequisites": [
     "Understand multiplication, division and place value."
@@ -25,7 +26,8 @@
     "Solve linear, quadratic and factorable cubic equations, choosing algebraic or graphical methods and checking context.",
     "Solve linear and linear-quadratic simultaneous equations, retaining paired solutions.",
     "Represent linear and quadratic inequality solutions on number lines and coordinate diagrams.",
-    "Recognise and continue arithmetic and common integer sequences, stating the intended rule."
+    "Recognise and continue arithmetic and common integer sequences, stating the intended rule.",
+    "Add, scale and multiply compatible matrices, and solve scalar matrix equations while checking all entries."
   ],
   "sections": [
     {
@@ -1922,6 +1924,188 @@
         "square number",
         "recurrence"
       ]
+    },
+    {
+      "id": "adding-matrices",
+      "title": "Adding matrices entry by entry",
+      "points": [
+        "5B"
+      ],
+      "paragraphs": [
+        "A matrix is a rectangular arrangement of entries. Its order is rows × columns: a matrix with two rows and three columns is 2 × 3. In the inline notation [[a, b], [c, d]], each inner bracket is one row, so a and c belong to the first column.",
+        "Add matrices only when they have the same order. Add corresponding entries without moving their positions. For subtraction, subtract every matching entry; brackets matter when an entry is negative. Matrix addition is commutative: A + B = B + A for matrices of the same order.",
+        "Keep the output shape unchanged. A correct total of all the numbers is not a matrix sum. If two matrices have different orders, their sum is undefined; do not insert or delete rows to force an answer."
+      ],
+      "example": {
+        "question": "Find A + B for A = [[2, −3], [4, 1]] and B = [[−5, 6], [0, −2]].",
+        "steps": [
+          "Both matrices have order 2 × 2, so addition is defined.",
+          "First row: 2 + (−5) = −3 and −3 + 6 = 3.",
+          "Second row: 4 + 0 = 4 and 1 + (−2) = −1.",
+          "A + B = [[−3, 3], [4, −1]]."
+        ],
+        "explanation": "Every answer entry comes from the same row and column in the two inputs."
+      },
+      "practice": {
+        "question": "Find [[1, 2, 3], [4, 5, 6]] + [[6, 5, 4], [3, 2, 1]].",
+        "answer": "[[7, 7, 7], [7, 7, 7]].",
+        "explanation": "There are two rows and three columns in each input and in the sum."
+      },
+      "commonMistakes": [
+        "Check the order before adding.",
+        "Do not use row-by-column multiplication for a sum.",
+        "Keep negative entries in brackets when calculating."
+      ],
+      "terms": [
+        "matrix",
+        "entry",
+        "order",
+        "row",
+        "column",
+        "matrix addition"
+      ],
+      "answerGuide": {
+        "id": "4MB1.matrices.add-two-by-two",
+        "sourceTaskId": "4MB1-2024-summer-01-candidate.Q4.a",
+        "command": "Calculate a matrix sum",
+        "steps": [
+          "Check that both matrices have the same order.",
+          "Add matching entries and retain their row and column positions.",
+          "Write the complete result in matrix brackets."
+        ],
+        "caution": "The reviewed source awards one mark for the whole correct matrix; it does not award one mark per entry."
+      }
+    },
+    {
+      "id": "scalar-matrix-multiplication",
+      "title": "Multiplying a matrix by a scalar",
+      "points": [
+        "5C"
+      ],
+      "paragraphs": [
+        "A scalar is a single number. To form kA, multiply every entry of A by k. The matrix keeps the same order. This differs from multiplying two matrices, which combines rows and columns.",
+        "A negative scalar reverses the sign of each non-zero entry. Zero entries remain zero. Multiplication by zero gives a zero matrix of the same shape; multiplication by one leaves the matrix unchanged.",
+        "When matrices have the same order, k(A + B) = kA + kB. In an expression such as 2A − 3B, scale all entries of both matrices before subtracting corresponding entries. The minus sign applies to the whole matrix 3B."
+      ],
+      "example": {
+        "question": "Find −2A when A = [[3, −1], [0, 4]].",
+        "steps": [
+          "Multiply all four entries by −2.",
+          "−2 × 3 = −6, and −2 × (−1) = 2.",
+          "−2 × 0 = 0, and −2 × 4 = −8.",
+          "−2A = [[−6, 2], [0, −8]]."
+        ],
+        "explanation": "The scalar acts on every entry, including the second row."
+      },
+      "practice": {
+        "question": "For A = [[1, 2], [−1, 3]] and B = [[0, −2], [4, 1]], find 2A − 3B.",
+        "answer": "[[2, 10], [−14, 3]].",
+        "explanation": "2A = [[2, 4], [−2, 6]] and 3B = [[0, −6], [12, 3]]; subtract matching entries."
+      },
+      "commonMistakes": [
+        "Multiply every entry, not just the first row.",
+        "Distinguish a scalar from a matrix.",
+        "Subtracting a negative entry increases the result."
+      ],
+      "terms": [
+        "scalar",
+        "zero matrix",
+        "scalar multiplication",
+        "distributive law"
+      ]
+    },
+    {
+      "id": "multiplying-matrices",
+      "title": "Multiplying matrices using rows and columns",
+      "points": [
+        "5B"
+      ],
+      "paragraphs": [
+        "The product AB is defined when the number of columns in A equals the number of rows in B. If A is r × s and B is s × t, then AB is r × t. The specification expects row-by-column multiplication for orders no greater than 3 × 3.",
+        "To find the entry in row i, column j of AB, multiply matching entries from row i of A and column j of B, then add those products. A three-entry row and column produce a sum of three products. Repeat for every output position; do not multiply matching positions only.",
+        "The order of multiplication matters. AB and BA may have different sizes, one may be undefined, or both may exist but have different entries. Matrix multiplication is not generally commutative."
+      ],
+      "example": {
+        "question": "Calculate AB for A = [[1, 2], [−1, 3]] and B = [[4, −2], [0, 5]].",
+        "steps": [
+          "Both inputs are 2 × 2, so AB is 2 × 2.",
+          "First row: 1 × 4 + 2 × 0 = 4; 1 × (−2) + 2 × 5 = 8.",
+          "Second row: (−1) × 4 + 3 × 0 = −4; (−1) × (−2) + 3 × 5 = 17.",
+          "AB = [[4, 8], [−4, 17]].",
+          "In reverse order BA = [[6, 2], [−5, 15]], so BA ≠ AB."
+        ],
+        "explanation": "Each output entry uses an entire row from the first matrix and an entire column from the second."
+      },
+      "practice": {
+        "question": "Multiply [[2, −1, 3], [0, 4, 1]] by the column matrix [[1], [2], [−2]].",
+        "answer": "[[−6], [6]], a 2 × 1 matrix.",
+        "explanation": "The row sums are 2 − 2 − 6 = −6 and 0 + 8 − 2 = 6. Reversing these inputs gives incompatible inner dimensions 1 and 2."
+      },
+      "commonMistakes": [
+        "Check inner dimensions, then determine the output order.",
+        "Use a column from the second matrix, not a row.",
+        "Do not assume AB = BA."
+      ],
+      "terms": [
+        "matrix product",
+        "row-by-column",
+        "inner dimensions",
+        "non-commutative"
+      ],
+      "diagram": {
+        "src": "/diagrams/maths-matrix-product.svg",
+        "alt": "For A with rows 1,2 and minus 1,3, and B with rows 4,minus 2 and 0,5, highlight the first row of A and second column of B. Their dot product is 1 times minus 2 plus 2 times 5 equals 8, in row one column two of AB.",
+        "caption": "Follow the highlighted row and column to one output entry. Repeat the same rule for every other entry."
+      }
+    },
+    {
+      "id": "scalar-matrix-equations",
+      "title": "Finding a scalar in a matrix equation",
+      "points": [
+        "5C"
+      ],
+      "paragraphs": [
+        "Two matrices are equal when they have the same order and every pair of corresponding entries is equal. If a matrix expression contains an unknown scalar, choose a useful entry to form an ordinary equation.",
+        "Solve the scalar equation, then check the value in every other entry of the original matrix equation. A row containing a zero coefficient of the unknown may give no information, or it may expose an inconsistency. Do not divide by zero to force a value.",
+        "One entry can be sufficient to calculate a candidate value, but all entries must agree for it to solve the whole matrix equation. For example, n[[1, 0], [0, 1]] = [[2, 0], [0, 3]] has no solution: the diagonal entries require n = 2 and n = 3 simultaneously."
+      ],
+      "example": {
+        "question": "Given A = [[2, −1], [3, 0]], B = [[1, 2], [−2, 1]] and nA + B = [[9, −2], [10, 1]], find n.",
+        "steps": [
+          "The top-left entry gives 2n + 1 = 9, so n = 4.",
+          "Check top right: −4 + 2 = −2.",
+          "Check bottom left: 3 × 4 − 2 = 10.",
+          "Check bottom right: 0 × 4 + 1 = 1. All four entries agree."
+        ],
+        "explanation": "The bottom-right entry is true for every n, so it checks consistency but cannot determine n."
+      },
+      "practice": {
+        "question": "Solve n[[1, 2], [0, −1]] − [[2, 1], [3, 0]] = [[3, 9], [−3, −5]].",
+        "answer": "n = 5.",
+        "explanation": "The top-left entry gives n − 2 = 3; substitution gives 2n − 1 = 9, −3 = −3 and −n = −5."
+      },
+      "commonMistakes": [
+        "Match the same row and column on both sides.",
+        "Keep the sign of a subtracted scalar matrix.",
+        "Check all entries after solving one useful equation."
+      ],
+      "terms": [
+        "matrix equality",
+        "scalar equation",
+        "corresponding entries",
+        "consistency"
+      ],
+      "answerGuide": {
+        "id": "4MB1.matrices.scalar-equation",
+        "sourceTaskId": "4MB1-2024-summer-01-candidate.Q4.b",
+        "command": "Find the scalar",
+        "steps": [
+          "Set up the matrix equation using the given matrices.",
+          "Choose one corresponding entry that gives an equation in the scalar.",
+          "Solve and substitute into the full original equation to check consistency."
+        ],
+        "caution": "The reviewed source accepts a relevant matrix setup or one correct scalar equation for its method mark; it does not require four equations. A correct answer can imply that method unless it comes from obviously incorrect working."
+      }
     }
   ],
   "status": "source-checked",

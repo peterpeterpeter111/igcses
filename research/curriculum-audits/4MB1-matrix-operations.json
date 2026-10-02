@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4MB1",
+  "chapterId": "number-and-algebra",
+  "documentId": "4MB1-spec",
+  "specificationIssue": "Issue 1 - January 2016",
+  "documentSha256": "62d4534ba1c0aee42ce2d3e7fd1da8083fd03216dd106da11ae590525d3187a5",
+  "reviewDate": "2026-10-02",
+  "reviewer": "Codex",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Partial teaching audit of section 5 rows B and C from specification PDF page 23. Local requirements are editorial; no whole-chapter or family readiness certified.",
+  "identifierPolicy": "Parent identities combine section 5 and printed rows B/C; r-suffixes are editorial teaching requirements.",
+  "notePath": "content/notes/mathematics.json",
+  "parents": [
+    {
+      "parentId": "4MB1:issue1:5B",
+      "officialReference": "5B",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Source row reviewed; wider examples, response calibration and independent assessment checks remain incomplete.",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:5B:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Check matrix order and compatibility for addition.",
+          "teachingEvidence": [
+            {
+              "sectionId": "adding-matrices",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independently assess unfamiliar dimensions and sign combinations.",
+            "Source-linked generated assessment and whole-chapter review remain incomplete."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:5B:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Add or subtract corresponding entries without changing shape.",
+          "teachingEvidence": [
+            {
+              "sectionId": "adding-matrices",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independently assess unfamiliar dimensions and sign combinations.",
+            "Source-linked generated assessment and whole-chapter review remain incomplete."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:5B:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Check product dimensions and perform row-by-column multiplication up to order 3 × 3.",
+          "teachingEvidence": [
+            {
+              "sectionId": "multiplying-matrices",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independently assess unfamiliar dimensions and sign combinations.",
+            "Source-linked generated assessment and whole-chapter review remain incomplete."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:5B:r4",
+          "origin": "editorial-decomposition",
+          "summary": "Recognise that reversing a matrix product can change its value, shape or existence.",
+          "teachingEvidence": [
+            {
+              "sectionId": "multiplying-matrices",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independently assess unfamiliar dimensions and sign combinations.",
+            "Source-linked generated assessment and whole-chapter review remain incomplete."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4MB1:issue1:5C",
+      "officialReference": "5C",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Source row reviewed; wider examples, response calibration and independent assessment checks remain incomplete.",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:5C:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Multiply every entry by a scalar while retaining matrix order.",
+          "teachingEvidence": [
+            {
+              "sectionId": "scalar-matrix-multiplication",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independently assess unfamiliar dimensions and sign combinations.",
+            "Source-linked generated assessment and whole-chapter review remain incomplete."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:5C:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Combine scaled matrices and apply distributivity with correct signs.",
+          "teachingEvidence": [
+            {
+              "sectionId": "scalar-matrix-multiplication",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independently assess unfamiliar dimensions and sign combinations.",
+            "Source-linked generated assessment and whole-chapter review remain incomplete."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:5C:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Use corresponding entries to solve a scalar matrix equation and check consistency.",
+          "teachingEvidence": [
+            {
+              "sectionId": "scalar-matrix-equations",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independently assess unfamiliar dimensions and sign combinations.",
+            "Source-linked generated assessment and whole-chapter review remain incomplete."
+          ]
+        }
+      ]
+    }
+  ],
+  "completeTeachingPoints": 0,
+  "completeChapters": 0
+}

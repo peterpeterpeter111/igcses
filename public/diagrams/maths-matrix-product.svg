@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" viewBox="0 0 900 320" role="img" aria-labelledby="title desc">
+  <title id="title">A row times a column gives one matrix entry</title>
+  <desc id="desc">A has rows 1,2 and minus 1,3. B has rows 4,minus 2 and 0,5. The highlighted first row of A and second column of B give 8 in row one, column two of AB.</desc>
+  <rect width="900" height="320" fill="#faf6ed"/>
+  <g font-family="Georgia, serif" fill="#302522" text-anchor="middle">
+    <text x="450" y="36" font-size="23">Row 1 × column 2</text>
+    <text x="170" y="78" font-size="22">A</text>
+    <text x="425" y="78" font-size="22">B</text>
+    <text x="715" y="78" font-size="22">AB</text>
+    <rect x="110" y="96" width="120" height="39" fill="#eed2cb"/>
+    <rect x="435" y="96" width="55" height="94" fill="#eed2cb"/>
+    <rect x="725" y="96" width="55" height="39" fill="#eadab8"/>
+    <g font-size="29">
+      <text x="135" y="124">1</text><text x="205" y="124">2</text>
+      <text x="135" y="179">−1</text><text x="205" y="179">3</text>
+      <text x="390" y="124">4</text><text x="460" y="124">−2</text>
+      <text x="390" y="179">0</text><text x="460" y="179">5</text>
+      <text x="680" y="124">4</text><text x="750" y="124" fill="#882f35">8</text>
+      <text x="680" y="179">−4</text><text x="750" y="179">17</text>
+      <text x="297" y="151">×</text><text x="570" y="151">=</text>
+    </g>
+    <g fill="none" stroke="#56433b" stroke-width="2.5">
+      <path d="M108 91 H98 V195 H108 M232 91 H242 V195 H232"/>
+      <path d="M363 91 H353 V195 H363 M487 91 H497 V195 H487"/>
+      <path d="M653 91 H643 V195 H653 M777 91 H787 V195 H777"/>
+    </g>
+    <text x="450" y="251" font-size="27">1 × (−2) + 2 × 5 = 8</text>
+    <text x="450" y="290" font-size="19">Two products, then their sum. Keep the output position.</text>
+  </g>
+</svg>

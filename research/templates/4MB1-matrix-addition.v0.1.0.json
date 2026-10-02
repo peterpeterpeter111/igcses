@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 1,
+  "id": "4MB1.matrices.add-two-by-two",
+  "version": "0.1.0",
+  "status": "provisional",
+  "subject": "4MB1",
+  "origin": "exam-derived",
+  "syllabusRefs": [
+    {
+      "pointId": "4MB1:issue1:5B",
+      "documentId": "4MB1-spec",
+      "issue": "1",
+      "pdfPages": [
+        23
+      ],
+      "mappingStatus": "verified"
+    }
+  ],
+  "sourceTasks": [
+    {
+      "taskId": "4MB1-2024-summer-01-candidate.Q4.a",
+      "paperId": "4MB1-2024-summer-01-candidate",
+      "questionPaper": {
+        "documentId": "4MB1-2024-summer-01-candidate-qp",
+        "pdfPages": [
+          4
+        ]
+      },
+      "markScheme": {
+        "documentId": "4MB1-2024-summer-01-candidate-ms",
+        "pdfPages": [
+          8
+        ]
+      },
+      "originalMarks": 1
+    }
+  ],
+  "answerGuideId": "4MB1.matrices.add-two-by-two",
+  "commandWord": "Calculate",
+  "skill": "Add signed integer entries of two matrices, preserving the two-by-two shape.",
+  "assessmentObjectives": [
+    "unassigned-pending-official-AO-review"
+  ],
+  "originalMarks": [
+    1
+  ],
+  "customQuiz": {
+    "candidateMarks": [],
+    "validatedMarks": [],
+    "adaptationStatus": "pending",
+    "rationale": "Retain the one-mark source task. No 2/4/6-mark adaptation is proposed or validated; this cannot fill the live quiz blueprint."
+  },
+  "stimulus": {
+    "types": [
+      "table"
+    ],
+    "originality": "original-generated-content",
+    "requirements": [
+      "Two two-by-two integer matrices with the source sign patterns +−/−+ and −−/−+; magnitudes 1 through 9.",
+      "Preserve row/column shape in any eventual UI."
+    ],
+    "evidenceContract": [
+      "Only prompt, input matrices and maximum marks may be public.",
+      "Freeze sum and rubric privately before any future answer; not currently served."
+    ]
+  },
+  "parameters": [
+    {
+      "id": "m0",
+      "type": "integer",
+      "domain": {
+        "minimum": 1,
+        "maximum": 9,
+        "step": 1
+      },
+      "constraints": [
+        "One of eight entry magnitudes in row-major order for A then B; fixed signs."
+      ]
+    },
+    {
+      "id": "m1",
+      "type": "integer",
+      "domain": {
+        "minimum": 1,
+        "maximum": 9,
+        "step": 1
+      },
+      "constraints": [
+        "One of eight entry magnitudes in row-major order for A then B; fixed signs."
+      ]
+    },
+    {
+      "id": "m2",
+      "type": "integer",
+      "domain": {
+        "minimum": 1,
+        "maximum": 9,
+        "step": 1
+      },
+      "constraints": [
+        "One of eight entry magnitudes in row-major order for A then B; fixed signs."
+      ]
+    },
+    {
+      "id": "m3",
+      "type": "integer",
+      "domain": {
+        "minimum": 1,
+        "maximum": 9,
+        "step": 1
+      },
+      "constraints": [
+        "One of eight entry magnitudes in row-major order for A then B; fixed signs."
+      ]
+    },
+    {
+      "id": "m4",
+      "type": "integer",
+      "domain": {
+        "minimum": 1,
+        "maximum": 9,
+        "step": 1
+      },
+      "constraints": [
+        "One of eight entry magnitudes in row-major order for A then B; fixed signs."
+      ]
+    },
+    {
+      "id": "m5",
+      "type": "integer",
+      "domain": {
+        "minimum": 1,
+        "maximum": 9,
+        "step": 1
+      },
+      "constraints": [
+        "One of eight entry magnitudes in row-major order for A then B; fixed signs."
+      ]
+    },
+    {
+      "id": "m6",
+      "type": "integer",
+      "domain": {
+        "minimum": 1,
+        "maximum": 9,
+        "step": 1
+      },
+      "constraints": [
+        "One of eight entry magnitudes in row-major order for A then B; fixed signs."
+      ]
+    },
+    {
+      "id": "m7",
+      "type": "integer",
+      "domain": {
+        "minimum": 1,
+        "maximum": 9,
+        "step": 1
+      },
+      "constraints": [
+        "One of eight entry magnitudes in row-major order for A then B; fixed signs."
+      ]
+    }
+  ],
+  "constraints": [
+    "Exactly two two-by-two matrices; no scalar or matrix products.",
+    "Fresh generator excludes original source magnitudes [3,2,5,1,2,4,4,2].",
+    "The 43,046,720 eligible inputs are a parameter domain, not a reviewed bank of that many questions.",
+    "No 2/4/6-mark adaptation, source AO allocation or difficulty equivalence is validated."
+  ],
+  "relationships": [
+    "C[i,j] = A[i,j] + B[i,j] for each of four positions.",
+    "One B mark requires the full correct matrix, with no partial-entry mark."
+  ],
+  "difficultyControls": [
+    "Fixed dimensions and sign pattern; numeric size and cancellation difficulty still need calibration."
+  ],
+  "transformations": [
+    {
+      "id": "change-magnitudes",
+      "status": "candidate",
+      "conditions": "Integers 1..9 with fixed signs; empirical demand review pending."
+    },
+    {
+      "id": "change-operation-shape-or-marks",
+      "status": "forbidden",
+      "conditions": "Requires separate source/rubric/adaptation review."
+    }
+  ],
+  "solutionProcedure": [
+    "Check equal order.",
+    "Add corresponding entries.",
+    "Retain the two-by-two shape."
+  ],
+  "marking": {
+    "method": "discrete-points",
+    "maximum": 1,
+    "criteria": [
+      {
+        "id": "complete-matrix",
+        "credit": 1,
+        "rule": "Award one mark only when all four integer entries and their positions are correct."
+      }
+    ],
+    "acceptableAlternatives": [
+      "Whitespace, explicit plus signs and Unicode minus in the supported nested-row transcription.",
+      "Other conventional mathematical notation is deferred, not automatically marked wrong."
+    ],
+    "dependencies": [
+      "No independent marks for individual entries."
+    ],
+    "contradictionRules": [
+      "Any supplied working, crossed-out or additional evidence is deferred for review."
+    ],
+    "units": null,
+    "tolerance": null,
+    "levelRubric": []
+  },
+  "commonErrors": [
+    {
+      "description": "Adding only selected entries or rearranging rows/columns does not give the correct matrix.",
+      "origin": "editorial",
+      "sourceRefs": []
+    }
+  ],
+  "validation": {
+    "ruleIds": [
+      "integer-domain",
+      "matrix-shape",
+      "entrywise-sum",
+      "fresh-source-exclusion",
+      "determinism",
+      "private-answer",
+      "strict-transcription",
+      "no-live-activation"
+    ],
+    "testPlan": [
+      "Check a bounded sample of 10,000 seeds and all 256 magnitude endpoint combinations.",
+      "Check source fixture, source-exclusion boundaries, altered positions and unsupported/unsafe notation.",
+      "Before any promotion review learner responses, representation, difficulty, AO allocation and a valid quiz-mark adaptation."
+    ],
+    "testedSeeds": [
+      0,
+      1,
+      2,
+      9999,
+      43046719,
+      43046720,
+      4294967295
+    ],
+    "boundaryCoverage": "partial",
+    "status": "not-run",
+    "runRefs": [
+      "research/validation/2026-10-02-matrix-prototype.json"
+    ]
+  },
+  "runtime": {
+    "implemented": true,
+    "generatorId": "matrix-addition-prototype-v1",
+    "seedPolicy": "Unsigned 32-bit seed mapped to base-nine magnitudes while skipping the source. Deterministic and finite, not random-security or infinite uniqueness.",
+    "maxRetries": 0,
+    "publicFields": [
+      "prompt",
+      "stimulus",
+      "maximumMarks"
+    ],
+    "privateFields": [
+      "seed",
+      "parameters",
+      "solution",
+      "rubric",
+      "sourceTasks",
+      "validationResults"
+    ],
+    "freezeBeforeAnswer": true,
+    "releaseSchemeAfter": "session-completed"
+  },
+  "review": {
+    "pedagogyStatus": "pending",
+    "reviewer": "Codex",
+    "reviewerType": "agent",
+    "humanReviewed": false,
+    "blockers": [
+      "One-mark task cannot fill the required 2/4/6-mark quiz blueprint.",
+      "Strict offline transcription only; working and alternative representations defer.",
+      "Empirical difficulty, real learner responses and official AO allocation unverified.",
+      "Not registered for live sessions; no AI integration."
+    ]
+  }
+}
