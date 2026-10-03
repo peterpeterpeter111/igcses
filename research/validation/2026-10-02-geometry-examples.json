@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-02",
+  "scope": "Bounded arithmetic and original lesson proof/diagram review. No completed syllabus or template readiness.",
+  "checks": [
+    {
+      "name": "line example",
+      "passed": true
+    },
+    {
+      "name": "line practice",
+      "passed": true
+    },
+    {
+      "name": "ladder",
+      "passed": true
+    },
+    {
+      "name": "cuboid",
+      "passed": true
+    },
+    {
+      "name": "trapezium",
+      "passed": true
+    },
+    {
+      "name": "circle radius",
+      "passed": true
+    },
+    {
+      "name": "trig example",
+      "passed": true
+    },
+    {
+      "name": "inverse sine",
+      "passed": true
+    },
+    {
+      "name": "elevation",
+      "passed": true
+    },
+    {
+      "name": "eye-height",
+      "passed": true
+    },
+    {
+      "name": "diagram scale",
+      "passed": true
+    }
+  ],
+  "proofAudit": {
+    "example": "Triangles ABC and ADC",
+    "facts": [
+      "AB = AD given",
+      "BC = DC given",
+      "AC = AC common"
+    ],
+    "correspondence": {
+      "A": "A",
+      "B": "D",
+      "C": "C"
+    },
+    "criterion": "SSS",
+    "numericalExamplesNotUsedAsProof": true
+  },
+  "sourceHashes": {
+    "content/notes/mathematics-geometry.json": "bb7273f88c807db6d8fc3bd0ed59aa42bb1ff9e7c462fb6d65513257751c70a6",
+    "public/diagrams/maths-elevation-depression.svg": "57ca5157da7a86fdfb393075a6cadab885ae90308d0ff44eda4738ec862a70b8",
+    "research/curriculum-audits/4MB1-geometry-foundations.json": "e8d3939ebeb680ef39b663a72b4d1be10e74c502bb1ff8d548d2dee02cb8b991"
+  },
+  "humanReviewed": false
+}

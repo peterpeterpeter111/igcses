@@ -1,3 +1,11 @@
+# Latest phase — Maths Geometry notes, 2 October 2026
+
+Read research/checkpoints/2026-10-02-GEOMETRY.md first. New searchable Geometry chapter has six partial sections and a checked diagram. Totals: 241 sections / 14 partial documents, 280 identities (277 with teaching audits), 705 partial requirements / 387 links. 99 tests and final build/public scan pass. Maths remains 23/38 detailed parts / 59 marks; five provisional / four experimental / zero active. GitHub c92960e mirrors ccced64; newer extraction/teaching work needs non-force sync. No complete chapters/points/processed papers or deployment. Preserve UI/history, keep AI last, no reset; pause at 5% in either allowance. Older entries are historical.
+
+# Latest phase — Maths Q6–Q10, 2 October 2026
+
+Read research/checkpoints/2026-10-02-Q6-10.md first. Maths 23/38 detailed parts / 59 marks, 15 pending. 280 identities (271 with teaching audits), 687 partial requirements / 381 links, 235 sections / 13 partial documents. 99 tests and final build/public scan pass. GitHub c92960e exactly mirrors ccced64; sync this newer phase later. Next: Geometry/trigonometry partial notes, remaining papers and calibration. Five provisional / four experimental / zero active; no complete chapters/points/processed papers or deployment. Preserve history/UI, AI last, no reset; pause at 5% in either allowance. Older entries are historical.
+
 # Latest phase — Matrix prototype, 2 October 2026
 
 Read research/checkpoints/2026-10-02-MATRIX-PROTOTYPE.md first. Five provisional families / four experimental generators and offline markers / zero active. Matrix addition keeps its original one-mark scheme; no validated 2/4/6-mark adaptation. 99 tests, typecheck/lint, research/evidence checks and final production build/public scan pass. Teaching: 235 sections / 13 partial notes, 277 identities / 687 partial requirements / 381 links. Maths 16/38 detailed parts / 44 marks. GitHub 0fb1b45 mirrors b9a4ccd; sync newer extraction/teaching/prototype phases non-force. No complete chapters/points/processed papers or deployment. Preserve UI/history, keep AI last, no reset; pause at 5% in either allowance. Older entries are historical.

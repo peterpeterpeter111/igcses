@@ -1,3 +1,4 @@
+import mathematicsGeometry from './notes/mathematics-geometry.json' with { type: 'json' };
 import humanBiology from './notes/human-biology.json' with { type: 'json' };
 import biology from './notes/biology.json' with { type: 'json' };
 import chemistry from './notes/chemistry.json' with { type: 'json' };
@@ -64,6 +65,7 @@ export const notes: ChapterNotes[] = [
   physicsAstrophysics,
   english,
   mathematics,
+  mathematicsGeometry,
 ] as ChapterNotes[];
 export const getNotes = (subjectId: string, chapterId: string) =>
   notes.find((n) => n.subjectId === subjectId && n.chapterId === chapterId);

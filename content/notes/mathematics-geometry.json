@@ -1,0 +1,316 @@
+{
+  "subjectId": "mathematics",
+  "chapterId": "geometry",
+  "status": "source-checked",
+  "complete": false,
+  "humanReviewed": false,
+  "sourceId": "4MB1-spec",
+  "sourcePages": [
+    21,
+    24,
+    25,
+    27
+  ],
+  "prerequisites": [
+    "Rearrange linear equations and use square roots.",
+    "Read coordinates, angles and consistent units."
+  ],
+  "goals": [
+    "Find straight-line equations and recognise vertical-line limits.",
+    "Use perpendicular lengths in Pythagoras and area calculations.",
+    "Use trigonometric ratios and angles of elevation/depression in degrees.",
+    "Build a reasoned triangle-congruence proof."
+  ],
+  "sections": [
+    {
+      "id": "straight-line-equations",
+      "title": "A straight line from its gradient and intercept",
+      "points": [
+        "4I"
+      ],
+      "paragraphs": [
+        "In y = mx + c, m is the gradient and c is the y-intercept: the line crosses the y-axis at (0,c). A positive gradient rises as x increases, while a negative gradient falls. Equal increases in x give equal changes in y.",
+        "For two distinct points (x₁,y₁) and (x₂,y₂) with x₁ ≠ x₂, m = (y₂ − y₁)/(x₂ − x₁). Keep the subtraction order the same in the numerator and denominator. Substitute either original point into y = mx + c to find c, then check the other point.",
+        "A horizontal line has gradient zero and equation y = c. A vertical line has equation x = a; its gradient is undefined and it cannot be written as y = mx + c with finite m. Do not divide by zero when two supplied x-coordinates agree."
+      ],
+      "example": {
+        "question": "Find the line through (1,5) and (4,14), in the form y = mx + c.",
+        "steps": [
+          "m = (14 − 5)/(4 − 1) = 9/3 = 3.",
+          "Using (1,5): 5 = 3 × 1 + c, so c = 2.",
+          "The equation is y = 3x + 2.",
+          "At x = 4 it gives y = 14, confirming the second point."
+        ],
+        "explanation": "The gradient uses a change in y divided by the corresponding change in x."
+      },
+      "practice": {
+        "question": "Find the line through (−1,5) and (3,−3).",
+        "answer": "y = −2x + 3.",
+        "explanation": "The gradient is (−3 − 5)/(3 − (−1)) = −2. Substituting (−1,5) gives c = 3."
+      },
+      "commonMistakes": [
+        "Use the same point order in both differences.",
+        "The intercept occurs at x = 0, not at any chosen point.",
+        "Handle vertical lines separately."
+      ],
+      "terms": [
+        "gradient",
+        "y-intercept",
+        "straight line",
+        "coordinate",
+        "slope-intercept form"
+      ],
+      "answerGuide": {
+        "id": "4MB1.graphs.line-through-two-points",
+        "sourceTaskId": "4MB1-2024-summer-01-candidate.Q5",
+        "command": "Find an equation of a line",
+        "steps": [
+          "Calculate the gradient from the two points.",
+          "Substitute a supplied point to find the intercept.",
+          "Write the requested equation form and check both points."
+        ],
+        "caution": "The reviewed source distinguishes method credit from the final requested form and allows some follow-through with an identified candidate gradient."
+      }
+    },
+    {
+      "id": "pythagoras-and-perpendicular-width",
+      "title": "Pythagoras and a hidden perpendicular length",
+      "points": [
+        "6F"
+      ],
+      "paragraphs": [
+        "In a right-angled triangle, the square of the hypotenuse equals the sum of the squares of the two perpendicular sides. The hypotenuse is opposite the right angle and is the longest side. If its length is c, then c² = a² + b².",
+        "To find the hypotenuse, add the squares and then take the positive square root. To find a shorter side, subtract the square of the known shorter side from the square of the hypotenuse, then take the positive root. A squared length is not a length.",
+        "A right triangle may be hidden inside another shape. Draw a perpendicular and identify its lengths from the given information. For a trapezium with vertical parallel sides, their difference can form one leg of a right triangle; the sloping side is not the perpendicular width.",
+        "For a cuboid, find a face diagonal first and then use it with the perpendicular third edge. Its space diagonal satisfies d² = length² + width² + height². Each use of Pythagoras must belong to a right triangle; it does not apply unchanged to an arbitrary triangle."
+      ],
+      "example": {
+        "question": "A 13 m ladder reaches 12 m up a vertical wall on horizontal ground. How far is its foot from the wall?",
+        "steps": [
+          "The ladder is the hypotenuse of the right triangle.",
+          "Let the ground distance be x. Then x² + 12² = 13².",
+          "x² = 169 − 144 = 25, so x = 5 m."
+        ],
+        "explanation": "Subtract because the unknown is a shorter side. The negative square root is not a physical distance."
+      },
+      "practice": {
+        "question": "Find the space diagonal of a cuboid with edges 2 cm, 3 cm and 6 cm.",
+        "answer": "7 cm.",
+        "explanation": "The face diagonal squared is 2² + 3² = 13. The space diagonal squared is 13 + 6² = 49."
+      },
+      "commonMistakes": [
+        "Identify the hypotenuse from the right angle.",
+        "Take the square root at the end.",
+        "Do not measure lengths from a diagram marked not to scale."
+      ],
+      "terms": [
+        "Pythagoras",
+        "hypotenuse",
+        "perpendicular",
+        "face diagonal",
+        "space diagonal"
+      ]
+    },
+    {
+      "id": "areas-and-compound-shapes",
+      "title": "Areas and the perpendicular height",
+      "points": [
+        "7B"
+      ],
+      "paragraphs": [
+        "Area measures the space inside a two-dimensional shape and uses square units. A rectangle has area length × width, a parallelogram has area base × perpendicular height, and a triangle has area ½ × base × perpendicular height. A sloping side is not automatically the height.",
+        "For a trapezium, identify the parallel side lengths a and b and the perpendicular distance h between them. Area = ½(a + b)h. The parallel sides need not be drawn horizontally; the formula depends on their geometric relationship.",
+        "A circle of radius r has area πr². If given the diameter, halve it first. Retain π for an exact answer or round the final numerical value to the requested accuracy.",
+        "Split a compound shape into non-overlapping rectangles, triangles or other known shapes, or subtract a missing region from a larger shape. Mark the dimensions belonging to each piece. Convert lengths to consistent units before calculating; area conversion factors are squared."
+      ],
+      "example": {
+        "question": "A trapezium has parallel sides 9 cm and 15 cm, separated by a perpendicular distance of 8 cm. Find its area.",
+        "steps": [
+          "a + b = 9 + 15 = 24 cm.",
+          "Area = ½ × 24 × 8 = 96 cm².",
+          "The 8 cm is the distance between parallel sides, not a sloping edge."
+        ],
+        "explanation": "The mean of the two parallel lengths is multiplied by their perpendicular separation."
+      },
+      "practice": {
+        "question": "Find the exact area of a circle with diameter 6 cm.",
+        "answer": "9π cm².",
+        "explanation": "The radius is 3 cm, so πr² = π × 3²."
+      },
+      "commonMistakes": [
+        "Use square units for area.",
+        "Use the radius, not the diameter, in πr².",
+        "Avoid overlapping pieces in a compound-area sum."
+      ],
+      "terms": [
+        "area",
+        "trapezium",
+        "parallel sides",
+        "perpendicular height",
+        "compound shape"
+      ],
+      "answerGuide": {
+        "id": "4MB1.geometry.trapezium-missing-width",
+        "sourceTaskId": "4MB1-2024-summer-01-candidate.Q3",
+        "command": "Calculate an area with a missing width",
+        "steps": [
+          "Identify the parallel sides and the perpendicular distance between them.",
+          "Construct a right triangle to calculate a missing perpendicular length if needed.",
+          "Apply the area formula or a valid decomposition, retaining unrounded intermediate values."
+        ],
+        "caution": "The reviewed source allows limited follow-through with a candidate width. Its printed alternative labels are inconsistent; use the verified geometric relationships and do not copy those labels into a proof."
+      }
+    },
+    {
+      "id": "trigonometric-ratios",
+      "title": "Sine, cosine and tangent in degrees",
+      "points": [
+        "9A"
+      ],
+      "paragraphs": [
+        "For an acute angle θ in a right triangle, label the opposite side across from θ, the adjacent shorter side beside θ, and the hypotenuse opposite the right angle. Then sin θ = opposite/hypotenuse, cos θ = adjacent/hypotenuse and tan θ = opposite/adjacent.",
+        "Choose the ratio that connects the known side and the required side. Rearrange the equation before evaluating it. To find an acute angle from a ratio, use the inverse trigonometric function: for example θ = sin⁻¹(opposite/hypotenuse). The calculator must be in degree mode; sin⁻¹ here means inverse sine, not the reciprocal 1/sin.",
+        "The source scope also includes angles up to 180°. For an acute α, sin(180° − α) = sin α, cos(180° − α) = −cos α and tan(180° − α) = −tan α. Thus an obtuse sine is positive while its cosine and tangent are negative. tan 90° is undefined.",
+        "A calculator inverse-sine result can be the acute member of a pair with the same sine. Use the stated angle range or geometry to decide whether the supplementary angle is required. Right-triangle side ratios alone describe acute angles; do not invent a right triangle containing an obtuse angle."
+      ],
+      "example": {
+        "question": "A right triangle has an acute angle of 35° and adjacent side 7 cm. Find the opposite side to three significant figures.",
+        "steps": [
+          "Let the opposite side be x. Then tan 35° = x/7.",
+          "x = 7 tan 35° ≈ 4.901452767 cm.",
+          "To three significant figures, x = 4.90 cm."
+        ],
+        "explanation": "Tangent links opposite and adjacent; the trailing zero records the requested precision."
+      },
+      "practice": {
+        "question": "A right triangle has hypotenuse 10 cm and side opposite θ equal to 6 cm. Find the acute angle θ to one decimal place.",
+        "answer": "36.9°.",
+        "explanation": "sin θ = 6/10 = 0.6, so θ = sin⁻¹(0.6) ≈ 36.8699°."
+      },
+      "commonMistakes": [
+        "Use degree mode.",
+        "Relabel opposite and adjacent when the chosen angle changes.",
+        "Do not confuse inverse sine with a reciprocal."
+      ],
+      "terms": [
+        "sine",
+        "cosine",
+        "tangent",
+        "opposite",
+        "adjacent",
+        "inverse trigonometry",
+        "degrees"
+      ]
+    },
+    {
+      "id": "angles-of-elevation-and-depression",
+      "title": "Angles of elevation and depression",
+      "points": [
+        "9C"
+      ],
+      "paragraphs": [
+        "An angle of elevation is measured upwards from the observer’s horizontal line of sight. An angle of depression is measured downwards from that horizontal. Neither is measured from a vertical pole or wall.",
+        "When the observer and object are connected by a line of sight, draw horizontal lines through the relevant levels. Parallel horizontal lines make the depression from the upper point equal to the elevation from the lower point. Use that angle in the right triangle with the vertical height difference and horizontal distance.",
+        "Trigonometry often gives a height difference, not the full height above ground. If the observer’s eye is above the ground, add that height only when the geometry requires it. Read whether a given distance is horizontal or sloping, and do not substitute one for the other."
+      ],
+      "example": {
+        "question": "From a point on level ground 18 m from the foot of a vertical tower, the top has an angle of elevation of 30°. Find the tower height to three significant figures.",
+        "steps": [
+          "Let the tower height be h. Then tan 30° = h/18.",
+          "h = 18 tan 30° = 6√3 m ≈ 10.3923 m.",
+          "The height is 10.4 m to three significant figures."
+        ],
+        "explanation": "The observation point is on the ground, so no eye-height adjustment is needed."
+      },
+      "practice": {
+        "question": "An observer’s eye is 1.6 m above level ground, 20 m horizontally from a vertical building. The angle of elevation to its top is 28°. Find the building height to one decimal place.",
+        "answer": "12.2 m.",
+        "explanation": "The height above eye level is 20 tan 28° ≈ 10.6342 m. Add 1.6 m to obtain approximately 12.2342 m."
+      },
+      "commonMistakes": [
+        "Measure depression from the horizontal.",
+        "Distinguish height difference from total height.",
+        "Do not use the diagram’s appearance to estimate the angle."
+      ],
+      "terms": [
+        "elevation",
+        "depression",
+        "horizontal",
+        "line of sight",
+        "height difference"
+      ],
+      "answerGuide": {
+        "id": "4MB1.trigonometry.pole-depression",
+        "sourceTaskId": "4MB1-2024-summer-01-candidate.Q9",
+        "command": "Find a height from an angle of depression",
+        "steps": [
+          "Draw the horizontal at the observer and identify the angle of depression.",
+          "Transfer the angle using parallel horizontals when appropriate.",
+          "Choose and rearrange a valid trigonometric ratio, then account for any reference height.",
+          "Round only the final answer to the requested accuracy."
+        ],
+        "caution": "The reviewed source has specific partial-method and rounding concessions. They are not permission to measure depression from the vertical or to ignore the requested precision in other questions."
+      },
+      "diagram": {
+        "src": "/diagrams/maths-elevation-depression.svg",
+        "alt": "Two parallel horizontals show the 30 degree angle of elevation at the ground observer equals the angle of depression at the tower top. The horizontal separation is 18 metres and the height is 6 square root 3 metres.",
+        "caption": "The equal 30° angles are measured from parallel horizontal lines. The tower height is the vertical side, not the sloping line of sight."
+      }
+    },
+    {
+      "id": "proving-triangle-congruence",
+      "title": "Proving that two triangles are congruent",
+      "points": [
+        "6J"
+      ],
+      "paragraphs": [
+        "Congruent triangles have the same size and shape. Match corresponding vertices so that equal sides and angles refer to the same positions. State the geometric facts and their reasons before naming a congruence condition.",
+        "SSS uses three equal side pairs. SAS uses two equal side pairs and the included equal angle. ASA uses two equal angle pairs and the included equal side; when a different corresponding side is supplied, the angle sum can establish the missing angle. RHS applies to two right triangles with equal hypotenuses and one other equal side.",
+        "AAA establishes similarity but does not fix size. Two sides and a non-included angle (SSA) do not generally guarantee congruence. A diagram that looks symmetric is not a proof; rely on stated equalities, common sides, midpoint definitions and established angle properties.",
+        "For overlapping triangles, identify each triangle separately. A common side is equal to itself. Midpoints halve their own segments; halves of two different segments are equal only when those full segments are equal. Make that link explicit."
+      ],
+      "example": {
+        "question": "In quadrilateral ABCD, AB = AD and BC = DC. Diagonal AC is drawn. Prove triangles ABC and ADC are congruent.",
+        "steps": [
+          "AB = AD is given.",
+          "BC = DC is given.",
+          "AC = AC because it is a common side.",
+          "The three corresponding side pairs are equal, so triangle ABC is congruent to triangle ADC by SSS."
+        ],
+        "explanation": "The vertex order pairs A with A, B with D, and C with C. No unprovided angle equality is needed."
+      },
+      "practice": {
+        "question": "Two triangles have equal angles 40°, 60° and 80°, but no lengths are specified. Must they be congruent?",
+        "answer": "No. They are similar, but one can be a scaled copy of the other.",
+        "explanation": "Angle equality alone fixes shape, not size; a length relationship is needed for congruence."
+      },
+      "commonMistakes": [
+        "Name the included angle for SAS.",
+        "Give reasons as well as equalities.",
+        "Keep vertex correspondence consistent."
+      ],
+      "terms": [
+        "congruence",
+        "SSS",
+        "SAS",
+        "ASA",
+        "RHS",
+        "included angle",
+        "common side",
+        "midpoint"
+      ],
+      "answerGuide": {
+        "id": "4MB1.geometry.isosceles-midpoints-sas",
+        "sourceTaskId": "4MB1-2024-summer-01-candidate.Q10",
+        "command": "Prove triangle congruence",
+        "steps": [
+          "Identify the matching triangles and corresponding vertices.",
+          "State each required side or angle equality with its reason.",
+          "Check that the selected facts satisfy the named congruence condition.",
+          "State the resulting congruence explicitly."
+        ],
+        "caution": "The reviewed SAS source requires all three facts and reasons for the final accuracy mark. A bare SAS label or a claim that the drawing looks symmetric is insufficient."
+      }
+    }
+  ]
+}

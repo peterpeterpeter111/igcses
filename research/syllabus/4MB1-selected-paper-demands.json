@@ -7,15 +7,16 @@
   "reviewDate": "2026-10-02",
   "reviewedBy": "Codex",
   "reviewerType": "agent",
-  "reviewMethod": "Visual review of official specification PDF pages 21,23,24,25,28; component applicability retained from prior PDF 11–12 review.",
+  "reviewMethod": "Visual review of official specification PDF pages 21,23,24,25,27,28; component applicability retained from prior PDF 11–12 review.",
   "reviewedPages": [
     21,
     23,
     24,
     25,
+    27,
     28
   ],
-  "scope": "Eight selected row identities for reviewed paper demands. Rows 5B and 5C now have partial matrix lessons; six remaining identities are source-only. No completed substatement audits. Q19 inverse cube-root applicability remains unresolved.",
+  "scope": "Thirteen selected row identities; eight have partial teaching links, five are source-only. No completed substatement audits. Q19 scope unresolved.",
   "points": [
     {
       "id": "4MB1:issue1:4G",
@@ -81,9 +82,12 @@
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "geometry",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
-      "humanReviewed": false
+      "noteSectionIds": [
+        "straight-line-equations"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-02"
     },
     {
       "id": "4MB1:issue1:5B",
@@ -140,9 +144,12 @@
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "geometry",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
-      "humanReviewed": false
+      "noteSectionIds": [
+        "pythagoras-and-perpendicular-width"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-02"
     },
     {
       "id": "4MB1:issue1:7B",
@@ -150,6 +157,103 @@
       "pdfPage": 25,
       "printedPage": 19,
       "summary": "Calculate areas of rectangles, parallelograms, trapezia, triangles and circles, including shapes decomposed into these.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "geometry",
+      "noteSectionIds": [
+        "areas-and-compound-shapes"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-02"
+    },
+    {
+      "id": "4MB1:issue1:6J",
+      "reference": "6J",
+      "pdfPage": 24,
+      "printedPage": 18,
+      "summary": "Use SSS, SAS, ASA and RHS conditions to prove two triangles congruent.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "geometry",
+      "noteSectionIds": [
+        "proving-triangle-congruence"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-02"
+    },
+    {
+      "id": "4MB1:issue1:9A",
+      "reference": "9A",
+      "pdfPage": 27,
+      "printedPage": 21,
+      "summary": "Use sine, cosine and tangent for angles up to 180°, measured in degrees and decimals of degrees.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "geometry",
+      "noteSectionIds": [
+        "trigonometric-ratios"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-02"
+    },
+    {
+      "id": "4MB1:issue1:9C",
+      "reference": "9C",
+      "pdfPage": 27,
+      "printedPage": 21,
+      "summary": "Use angles of elevation and depression in degrees and decimals of degrees.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "geometry",
+      "noteSectionIds": [
+        "angles-of-elevation-and-depression"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-02"
+    },
+    {
+      "id": "4MB1:issue1:5E",
+      "reference": "5E",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "summary": "Determine determinants and inverses of non-singular 2×2 matrices; knowledge of singular matrices is not required.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "number-and-algebra",
+      "noteSectionIds": [],
+      "teachingCoverage": "not-started",
+      "humanReviewed": false
+    },
+    {
+      "id": "4MB1:issue1:6K",
+      "reference": "6K",
+      "pdfPage": 24,
+      "printedPage": 18,
+      "summary": "Use chord, angle and tangent properties of circles, including internal and external intersecting chords and the alternate segment theorem.",
       "components": [
         "01",
         "02"

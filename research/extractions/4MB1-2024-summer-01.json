@@ -21,8 +21,8 @@
   "fullyProcessed": false,
   "wholePaperMarks": 100,
   "wholePaperLeafCount": 38,
-  "detailedLeafTasks": 16,
-  "detailedOriginalMarks": 44,
+  "detailedLeafTasks": 28,
+  "detailedOriginalMarks": 71,
   "reviewedQuestionTotals": {
     "15": 4,
     "16": 4,
@@ -36,7 +36,16 @@
     "2": 2,
     "3": 3,
     "4": 3,
-    "5": 3
+    "5": 3,
+    "6": 4,
+    "7": 3,
+    "8": 2,
+    "9": 3,
+    "10": 3,
+    "11": 2,
+    "12": 3,
+    "13": 3,
+    "14": 4
   },
   "documents": [
     {
@@ -67,6 +76,12 @@
         3,
         4,
         5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
         12,
         13,
         14,
@@ -75,7 +90,7 @@
         17
       ],
       "wholeDocumentReviewed": false,
-      "scope": "Q1–Q5 and Q15–Q22 diagrams, matrices, expressions, instructions and marks; no whole-document review."
+      "scope": "Q1–Q22 detailed task pages reviewed; remaining questions and whole-document audit incomplete."
     },
     "markScheme": {
       "visuallyReviewedPages": [
@@ -85,6 +100,11 @@
         6,
         7,
         8,
+        9,
+        10,
+        11,
+        12,
+        13,
         14,
         15,
         16,
@@ -94,7 +114,7 @@
         20
       ],
       "wholeDocumentReviewed": false,
-      "scope": "General guidance and Q1–Q5 / Q15–Q22 criteria; source discrepancies retained, other tasks pending."
+      "scope": "Q1–Q22 detailed task pages reviewed; remaining questions and whole-document audit incomplete."
     }
   },
   "examinerReportStatus": "not-sought-for-this-bounded-review",
@@ -109,10 +129,11 @@
       23,
       24,
       25,
+      27,
       28
     ],
     "sha256": "62d4534ba1c0aee42ce2d3e7fd1da8083fd03216dd106da11ae590525d3187a5",
-    "scopeNote": "Reviewed mappings include 1A/1C/1D/1E/1H, 3C/3G, 6C and 10B. Row 4G is a related identity only: Q19 inverse cube-root demand is not in its explicit list. Full series-amendment reconciliation remains open. Q21 uses reviewed rows 1G/1I/1J; Q22 uses 3C/3F. Q3–Q5 additionally use reviewed identities 7B, 6F, 5B, 5C and 4I; these are source-only with teaching audits pending."
+    "scopeNote": "Mappings are reviewed parent identities only, not complete teaching coverage or a whole-series scope audit. Q19 inverse cube-root applicability to 4G remains unresolved. Q11–Q14 add 5E and 6K and use existing 3B,6F,7B,1B."
   },
   "tasks": [
     {
@@ -2741,23 +2762,1775 @@
       "blockers": [
         "No calibrated line-equation family or partial-working marker."
       ]
+    },
+    {
+      "paperId": "4MB1-2024-summer-01-candidate",
+      "recordKind": "leaf",
+      "taskId": "4MB1-2024-summer-01-candidate.Q6.a",
+      "questionPath": "6.a",
+      "questionPaperPages": [
+        5
+      ],
+      "markSchemePages": [
+        9
+      ],
+      "originalMarks": 2,
+      "commandWord": "Solve",
+      "stimulusTypes": [
+        "inequality"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            5
+          ]
+        }
+      ],
+      "requiredKnowledge": [
+        "Linear inequalities",
+        "Sign reversal on division by a negative"
+      ],
+      "contextSummary": "Solve an inequality with the variable on both sides.",
+      "solutionStructure": [
+        "3w − 4 ≤ 8w + 11 gives −5w ≤ 15.",
+        "Divide by −5 and reverse the inequality: w ≥ −3."
+      ],
+      "criteria": [
+        {
+          "id": "isolate-variable",
+          "marks": 1,
+          "code": "M1",
+          "rule": "Correct collection giving −5w ≤ 15 or equivalent. The source allows any inequality symbol or equality for this method mark, and also allows the boundary value −3."
+        },
+        {
+          "id": "solution-set",
+          "marks": 1,
+          "code": "A1",
+          "rule": "Give w ≥ −3 or −3 ≤ w. The task is cas, subject to the incorrect-working exclusion.",
+          "dependsOn": [
+            "isolate-variable"
+          ]
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4MB1:issue1:3J",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Solve a first-degree inequality in one variable.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                9
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedFamilyId": "4MB1.inequalities.linear-both-sides",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative split inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex",
+      "reviewerType": "agent",
+      "reviewDate": "2026-10-02",
+      "humanReviewed": false,
+      "generalSchemePages": [
+        3,
+        4,
+        5
+      ],
+      "responseRequirements": {
+        "workingRequired": false,
+        "finalForm": "inequality describing all solutions",
+        "sourceRefs": [
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-qp",
+            "pdfPages": [
+              5
+            ]
+          },
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-ms",
+            "pdfPages": [
+              9
+            ]
+          }
+        ]
+      },
+      "markingMethod": "method-marks",
+      "acceptableAlternatives": [
+        "−3 ≤ w",
+        "Equivalent rearrangements before dividing."
+      ],
+      "dependencies": [
+        "The method concession does not make an incorrect final inequality correct.",
+        "Correct answer may imply the method unless obtained through obviously incorrect working."
+      ],
+      "commonErrors": [
+        {
+          "description": "Failing to reverse the relation after division by −5.",
+          "origin": "editorial"
+        }
+      ],
+      "markingReviewNotes": [
+        "The source allows a boundary value alone for M1, but the full solution requires the correct relation."
+      ],
+      "blockers": [
+        "No calibrated generated family or marker for this task."
+      ],
+      "sourceExpression": "3w − 4 ≤ 8w + 11"
+    },
+    {
+      "paperId": "4MB1-2024-summer-01-candidate",
+      "recordKind": "leaf",
+      "taskId": "4MB1-2024-summer-01-candidate.Q6.b",
+      "questionPath": "6.b",
+      "questionPaperPages": [
+        5
+      ],
+      "markSchemePages": [
+        9
+      ],
+      "originalMarks": 2,
+      "commandWord": "Show",
+      "stimulusTypes": [
+        "number-line"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            5
+          ]
+        }
+      ],
+      "requiredKnowledge": [
+        "Strict and inclusive endpoints",
+        "Bounded intervals"
+      ],
+      "contextSummary": "Represent a supplied interval on a printed number line.",
+      "solutionStructure": [
+        "Draw one finite segment joining −4 to 2.",
+        "Use an open circle at −4 and a filled circle at 2."
+      ],
+      "criteria": [
+        {
+          "id": "finite-segment",
+          "marks": 1,
+          "code": "M1",
+          "rule": "Draw a single line joining −4 and 2. Do not allow arrows at the interval endpoints."
+        },
+        {
+          "id": "endpoint-conventions",
+          "marks": 1,
+          "code": "A1",
+          "rule": "Both endpoints use correct symbols, with one correct connecting line between the correct values: open at −4, closed at 2.",
+          "dependsOn": [
+            "finite-segment"
+          ]
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4MB1:issue1:3J",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Represent a compound linear inequality on a number line.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                9
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedFamilyId": "4MB1.inequalities.bounded-number-line",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative split inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex",
+      "reviewerType": "agent",
+      "reviewDate": "2026-10-02",
+      "humanReviewed": false,
+      "generalSchemePages": [
+        3,
+        4,
+        5
+      ],
+      "responseRequirements": {
+        "workingRequired": false,
+        "finalForm": "drawn number-line interval",
+        "sourceRefs": [
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-qp",
+            "pdfPages": [
+              5
+            ]
+          },
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-ms",
+            "pdfPages": [
+              9
+            ]
+          }
+        ]
+      },
+      "markingMethod": "method-marks",
+      "acceptableAlternatives": [
+        "Equivalent open/filled endpoint symbols on the supplied number line."
+      ],
+      "dependencies": [
+        "The accuracy mark requires both correct endpoints and the correct connecting segment.",
+        "The task asks for a diagram; a rewritten inequality alone is not the requested evidence."
+      ],
+      "commonErrors": [
+        {
+          "description": "Drawing outward arrows instead of a bounded segment.",
+          "origin": "scheme",
+          "sourceRefs": [
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                9
+              ]
+            }
+          ]
+        }
+      ],
+      "markingReviewNotes": [
+        "An automated marker needs a drawing/endpoint contract; text-only equality is insufficient."
+      ],
+      "blockers": [
+        "No calibrated generated family or marker for this task."
+      ],
+      "sourceExpression": "−4 < x ≤ 2"
+    },
+    {
+      "paperId": "4MB1-2024-summer-01-candidate",
+      "recordKind": "leaf",
+      "taskId": "4MB1-2024-summer-01-candidate.Q7.a",
+      "questionPath": "7.a",
+      "questionPaperPages": [
+        6
+      ],
+      "markSchemePages": [
+        9
+      ],
+      "originalMarks": 2,
+      "commandWord": "Simplify fully",
+      "stimulusTypes": [
+        "algebraic-expression"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            6
+          ]
+        }
+      ],
+      "requiredKnowledge": [
+        "Power of a product",
+        "Power of a power"
+      ],
+      "contextSummary": "Square a coefficient and two powers inside brackets.",
+      "solutionStructure": [
+        "Square the coefficient: 3² = 9.",
+        "Multiply each exponent by 2: a⁶ and b¹⁰.",
+        "The result is 9a⁶b¹⁰."
+      ],
+      "criteria": [
+        {
+          "id": "coefficient-and-powers",
+          "marks": 2,
+          "code": "B2/B1",
+          "rule": "One non-additive band: B2 for 9a⁶b¹⁰; otherwise B1 for an expression ma^p b^q with two of m,p,q correct, or for a⁶b¹⁰. Do not award one mark per correct symbol."
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4MB1:issue1:3A",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Apply algebraic index rules to a product.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                9
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedFamilyId": "4MB1.indices.power-of-monomial",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative split inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex",
+      "reviewerType": "agent",
+      "reviewDate": "2026-10-02",
+      "humanReviewed": false,
+      "generalSchemePages": [
+        3,
+        4,
+        5
+      ],
+      "responseRequirements": {
+        "workingRequired": false,
+        "finalForm": "fully simplified monomial",
+        "sourceRefs": [
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-qp",
+            "pdfPages": [
+              6
+            ]
+          },
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-ms",
+            "pdfPages": [
+              9
+            ]
+          }
+        ]
+      },
+      "markingMethod": "accuracy-band",
+      "acceptableAlternatives": [
+        "Equivalent order of the same coefficient and powers."
+      ],
+      "dependencies": [
+        "Maximum two marks: the partial band is an alternative score, not extra credit.",
+        "Part (a) marking is independent of part (b)."
+      ],
+      "commonErrors": [
+        {
+          "description": "Multiplying 3 by 2 instead of squaring it, while exponent multiplication may still earn partial credit.",
+          "origin": "editorial"
+        }
+      ],
+      "markingReviewNotes": [
+        "Preserve the two-of-three partial band and explicit coefficient-omitted allowance."
+      ],
+      "blockers": [
+        "No calibrated generated family or marker for this task."
+      ],
+      "sourceExpression": "(3a³b⁵)²"
+    },
+    {
+      "paperId": "4MB1-2024-summer-01-candidate",
+      "recordKind": "leaf",
+      "taskId": "4MB1-2024-summer-01-candidate.Q7.b",
+      "questionPath": "7.b",
+      "questionPaperPages": [
+        6
+      ],
+      "markSchemePages": [
+        9
+      ],
+      "originalMarks": 1,
+      "commandWord": "Simplify fully",
+      "stimulusTypes": [
+        "algebraic-expression"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            6
+          ]
+        }
+      ],
+      "requiredKnowledge": [
+        "Negative indices",
+        "Fractional powers"
+      ],
+      "contextSummary": "Simplify a negative half power.",
+      "solutionStructure": [
+        "A negative exponent gives a reciprocal: (4c)^(−1/2) = 1/√(4c).",
+        "For real c > 0, √(4c) = 2√c, so the result is 1/(2√c)."
+      ],
+      "criteria": [
+        {
+          "id": "reciprocal-root",
+          "marks": 1,
+          "code": "B1",
+          "rule": "Accept (1/2)c^(−1/2), 1/(2√c), 1/(2c^(1/2)), 0.5c^(−1/2), or 1/√(4c), as listed by the source."
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4MB1:issue1:3A",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Apply negative and fractional algebraic index rules.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                9
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedFamilyId": "4MB1.indices.negative-half-power",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative split inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex",
+      "reviewerType": "agent",
+      "reviewDate": "2026-10-02",
+      "humanReviewed": false,
+      "generalSchemePages": [
+        3,
+        4,
+        5
+      ],
+      "responseRequirements": {
+        "workingRequired": false,
+        "finalForm": "simplified reciprocal or fractional power",
+        "sourceRefs": [
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-qp",
+            "pdfPages": [
+              6
+            ]
+          },
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-ms",
+            "pdfPages": [
+              9
+            ]
+          }
+        ]
+      },
+      "markingMethod": "accuracy-mark",
+      "acceptableAlternatives": [
+        "(1/2)c^(−1/2)",
+        "1/(2√c)",
+        "1/(2c^(1/2))",
+        "0.5c^(−1/2)",
+        "1/√(4c)"
+      ],
+      "dependencies": [
+        "One whole-answer B mark; no partial mark.",
+        "c > 0 is the editorial real-domain condition, not a separate source mark."
+      ],
+      "commonErrors": [
+        {
+          "description": "Interpreting the negative exponent as a negative coefficient.",
+          "origin": "editorial"
+        }
+      ],
+      "markingReviewNotes": [
+        "The source accepts the unseparated square root 1/√(4c), despite the simplify-fully command."
+      ],
+      "blockers": [
+        "No calibrated generated family or marker for this task."
+      ],
+      "sourceExpression": "(4c)^(−1/2)"
+    },
+    {
+      "paperId": "4MB1-2024-summer-01-candidate",
+      "recordKind": "leaf",
+      "taskId": "4MB1-2024-summer-01-candidate.Q8",
+      "questionPath": "8",
+      "questionPaperPages": [
+        6
+      ],
+      "markSchemePages": [
+        9
+      ],
+      "originalMarks": 2,
+      "commandWord": "Write down",
+      "stimulusTypes": [
+        "coordinate-graph",
+        "shaded-region"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            6
+          ]
+        }
+      ],
+      "requiredKnowledge": [
+        "Linear half-planes",
+        "Intersection of three regions"
+      ],
+      "contextSummary": "Read a shaded triangle bounded by the coordinate axes and y = 2x + 3.",
+      "solutionStructure": [
+        "The shaded region lies left of the y-axis: x ≤ 0.",
+        "It lies above the x-axis: y ≥ 0.",
+        "It lies below the sloping line: y ≤ 2x + 3. All displayed boundaries are solid."
+      ],
+      "criteria": [
+        {
+          "id": "three-region-inequalities",
+          "marks": 2,
+          "code": "B2/B1",
+          "rule": "One non-additive band: B2 for all three correct inequalities; B1 for two correct. Equivalent inequalities allowed. The source condones strict < in place of ≤ and > in place of ≥ for both bands, but not equality signs."
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4MB1:issue1:3J",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Represent the intersection of linear inequalities in two dimensions.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                9
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4MB1:issue1:4I",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Interpret the straight-line boundary equation on coordinate axes.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                21
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                9
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedFamilyId": "4MB1.inequalities.triangular-region",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative split inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex",
+      "reviewerType": "agent",
+      "reviewDate": "2026-10-02",
+      "humanReviewed": false,
+      "generalSchemePages": [
+        3,
+        4,
+        5
+      ],
+      "responseRequirements": {
+        "workingRequired": false,
+        "finalForm": "three inequalities",
+        "sourceRefs": [
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-qp",
+            "pdfPages": [
+              6
+            ]
+          },
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-ms",
+            "pdfPages": [
+              9
+            ]
+          }
+        ]
+      },
+      "markingMethod": "accuracy-band",
+      "acceptableAlternatives": [
+        "Equivalent inequalities with sides reversed.",
+        "Strict variants are an explicit historical marking concession; teach inclusive boundaries for the solid diagram."
+      ],
+      "dependencies": [
+        "Maximum two marks for three inequalities; do not award three marks or add B1 to B2.",
+        "Equality by itself does not define a half-plane and is explicitly not condoned."
+      ],
+      "commonErrors": [
+        {
+          "description": "Giving boundary equations without choosing the allowed side.",
+          "origin": "scheme",
+          "sourceRefs": [
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                9
+              ]
+            }
+          ]
+        }
+      ],
+      "markingReviewNotes": [
+        "Do not generalise this strict-sign concession to all inequality diagrams."
+      ],
+      "blockers": [
+        "No calibrated generated family or marker for this task."
+      ],
+      "sourceData": {
+        "line": "y = 2x + 3",
+        "vertices": [
+          [
+            -1.5,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "solidBoundaries": true
+      }
+    },
+    {
+      "paperId": "4MB1-2024-summer-01-candidate",
+      "recordKind": "leaf",
+      "taskId": "4MB1-2024-summer-01-candidate.Q9",
+      "questionPath": "9",
+      "questionPaperPages": [
+        7
+      ],
+      "markSchemePages": [
+        10
+      ],
+      "originalMarks": 3,
+      "commandWord": "Find",
+      "stimulusTypes": [
+        "geometry-diagram",
+        "written-scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            7
+          ]
+        }
+      ],
+      "requiredKnowledge": [
+        "Angles of depression",
+        "Right-triangle trigonometry",
+        "Significant figures"
+      ],
+      "contextSummary": "Find a vertical pole height from a horizontal distance and an angle of depression.",
+      "solutionStructure": [
+        "The 10° depression from the top equals the elevation angle at A because the horizontal lines are parallel.",
+        "tan 10° = BT/20, so BT = 20 tan 10° ≈ 3.526539614 m.",
+        "To three significant figures the height is 3.53 m."
+      ],
+      "criteria": [
+        {
+          "id": "trigonometric-method",
+          "marks": 2,
+          "code": "M2/M1",
+          "rule": "Non-additive method band: M2 for a fully correct equation or method. Otherwise M1 for angle TAB = 10° (possibly marked on the diagram), cos 10° = 20/AT, or a correct trigonometric statement from an incorrect diagram. Source examples include angle BTA = 10° with tan 10° = 20/BT, the corresponding sine-rule relation, or BT rounding to 113."
+        },
+        {
+          "id": "height-result",
+          "marks": 1,
+          "code": "A1",
+          "rule": "Answer column gives 3.53 m; notes accept an answer rounding to 3.5 and allow 3.4 or 3.6 from correct working. Preserve these historical concessions; requested teaching result remains 3.53 m.",
+          "dependsOn": [
+            "trigonometric-method"
+          ]
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4MB1:issue1:9C",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Interpret an angle of depression relative to the horizontal.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                27
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4MB1:issue1:9A",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Use tangent of an angle in degrees.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                27
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4MB1:issue1:6C",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Relate angles formed by parallel horizontal lines.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                24
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedFamilyId": "4MB1.trigonometry.pole-depression",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative split inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex",
+      "reviewerType": "agent",
+      "reviewDate": "2026-10-02",
+      "humanReviewed": false,
+      "generalSchemePages": [
+        3,
+        4,
+        5
+      ],
+      "responseRequirements": {
+        "workingRequired": false,
+        "finalForm": "height in metres to three significant figures",
+        "sourceRefs": [
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-qp",
+            "pdfPages": [
+              7
+            ]
+          },
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-ms",
+            "pdfPages": [
+              10
+            ]
+          }
+        ]
+      },
+      "markingMethod": "method-marks",
+      "acceptableAlternatives": [
+        "BT = 20/tan 80°.",
+        "BT/sin 10° = 20/sin 80°.",
+        "Find AT using cosine and then BT using Pythagoras.",
+        "Historical rounding concessions listed in the accuracy criterion."
+      ],
+      "dependencies": [
+        "M2 and M1 are alternatives within a two-mark method band.",
+        "The accuracy mark requires a fully correct method, which an acceptable cas result may imply; a wrong-angle method cannot earn full accuracy merely by an accidental result.",
+        "A correct answer can earn full marks unless produced by obviously incorrect working."
+      ],
+      "commonErrors": [
+        {
+          "description": "Measuring the angle of depression from the vertical rather than from the horizontal.",
+          "origin": "scheme",
+          "sourceRefs": [
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "markingReviewNotes": [
+        "The source has unusually broad accuracy allowances; keep source-specific policy separate from generated variants.",
+        "The method band gives partial credit for some wrong-angle diagrams."
+      ],
+      "blockers": [
+        "No generated diagram/angle contract or calibration of source-specific method and rounding allowances."
+      ],
+      "sourceData": {
+        "horizontalDistanceMetres": 20,
+        "depressionDegrees": 10,
+        "verticalPole": true,
+        "diagramNotToScale": true
+      }
+    },
+    {
+      "paperId": "4MB1-2024-summer-01-candidate",
+      "recordKind": "leaf",
+      "taskId": "4MB1-2024-summer-01-candidate.Q10",
+      "questionPath": "10",
+      "questionPaperPages": [
+        8
+      ],
+      "markSchemePages": [
+        10
+      ],
+      "originalMarks": 3,
+      "commandWord": "Prove",
+      "stimulusTypes": [
+        "geometry-diagram"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            8
+          ]
+        }
+      ],
+      "requiredKnowledge": [
+        "Isosceles base angles",
+        "Midpoints of equal sides",
+        "SAS congruence"
+      ],
+      "contextSummary": "Prove two overlapping triangles congruent inside an isosceles triangle with side midpoints.",
+      "solutionStructure": [
+        "MC = NB because M and N are midpoints of the equal sides AC and AB.",
+        "BC is common to both triangles.",
+        "Angle MCB = angle NBC because they are the base angles of isosceles triangle ABC, with M on AC and N on AB.",
+        "The equal angle is included between the two equal side pairs, so triangles MCB and NBC are congruent by SAS."
+      ],
+      "criteria": [
+        {
+          "id": "facts-with-reasons",
+          "marks": 2,
+          "code": "M2/M1",
+          "rule": "Non-additive method band: M2 for two correct stated facts with reasons equivalent to the source keywords common, midpoints and isosceles. Otherwise M1 for one correct fact with reason, or all three facts stated without reasons. Shortened keywords and full-triangle base-angle names are allowed."
+        },
+        {
+          "id": "sas-proof",
+          "marks": 1,
+          "code": "A1",
+          "rule": "State SAS with all three correct facts including reasons; a bare SAS label is insufficient.",
+          "dependsOn": [
+            "facts-with-reasons"
+          ]
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4MB1:issue1:6J",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Use side-angle-side to prove triangle congruence.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                24
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4MB1:issue1:6C",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Use equal base angles in an isosceles triangle.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                24
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedFamilyId": "4MB1.geometry.isosceles-midpoints-sas",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative split inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex",
+      "reviewerType": "agent",
+      "reviewDate": "2026-10-02",
+      "humanReviewed": false,
+      "generalSchemePages": [
+        3,
+        4,
+        5
+      ],
+      "responseRequirements": {
+        "workingRequired": true,
+        "finalForm": "reasoned congruence proof",
+        "sourceRefs": [
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-qp",
+            "pdfPages": [
+              8
+            ]
+          },
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-ms",
+            "pdfPages": [
+              10
+            ]
+          }
+        ]
+      },
+      "markingMethod": "method-marks",
+      "acceptableAlternatives": [
+        "Use angle ACB for MCB and angle ABC for NBC.",
+        "Equivalent shortened reason wording retaining its mathematical meaning."
+      ],
+      "dependencies": [
+        "Method band maximum two; do not add M1 and M2.",
+        "Final A1 requires all three correct facts and reasons plus SAS.",
+        "The source labels this wr; generic answer-only cas rules do not apply."
+      ],
+      "commonErrors": [
+        {
+          "description": "Stating SAS without identifying the matching sides and included angle with reasons.",
+          "origin": "editorial"
+        }
+      ],
+      "markingReviewNotes": [
+        "Valid alternative proofs need separate review; the detailed source route here is SAS.",
+        "Diagram appearance is not evidence of equality; use the given equal sides and midpoint facts."
+      ],
+      "blockers": [
+        "No proof-response semantic marker or alternative-proof calibration; no active generated family."
+      ],
+      "sourceData": {
+        "equalSides": [
+          "AC",
+          "AB"
+        ],
+        "midpoints": {
+          "M": "AC",
+          "N": "AB"
+        },
+        "targetTriangles": [
+          "MCB",
+          "NBC"
+        ],
+        "diagramNotToScale": true
+      }
+    },
+    {
+      "paperId": "4MB1-2024-summer-01-candidate",
+      "recordKind": "leaf",
+      "taskId": "4MB1-2024-summer-01-candidate.Q11",
+      "questionPath": "11",
+      "questionPaperPages": [
+        9
+      ],
+      "markSchemePages": [
+        11
+      ],
+      "originalMarks": 2,
+      "commandWord": "Find",
+      "stimulusTypes": [
+        "matrix"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            9
+          ]
+        }
+      ],
+      "requiredKnowledge": [
+        "Find determinants and inverses of non-singular 2×2 matrices."
+      ],
+      "contextSummary": "Invert a non-singular two-by-two matrix.",
+      "solutionStructure": [
+        "For A = [[3,−2],[−5,1]], the determinant is 3×1 − (−2)(−5) = −7.",
+        "Swap the diagonal entries and negate the other two: [[1,2],[5,3]].",
+        "Multiply by −1/7 to obtain [[−1/7,−2/7],[−5/7,−3/7]]."
+      ],
+      "criteria": [
+        {
+          "id": "inverse-method",
+          "marks": 1,
+          "code": "M1",
+          "rule": "Correct method for the determinant OR the correct adjugate matrix [[1,2],[5,3]] without the determinant factor; either can appear in the final answer."
+        },
+        {
+          "id": "inverse-result",
+          "marks": 1,
+          "code": "A1",
+          "rule": "Correct inverse or equivalent. Ignore subsequent incorrect multiplication by −1/7, or its omission on the answer line if the correct factor appears in working. Source decimal concession is ambiguous; see discrepancy.",
+          "dependsOn": [
+            "inverse-method"
+          ]
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4MB1:issue1:5E",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Find determinants and inverses of non-singular 2×2 matrices.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                23
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                11
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedFamilyId": "4MB1.matrices.inverse-two-by-two",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative split inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex",
+      "reviewerType": "agent",
+      "reviewDate": "2026-10-02",
+      "humanReviewed": false,
+      "generalSchemePages": [
+        3,
+        4,
+        5
+      ],
+      "responseRequirements": {
+        "workingRequired": false,
+        "finalForm": "exact answer",
+        "sourceRefs": [
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-qp",
+            "pdfPages": [
+              9
+            ]
+          },
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-ms",
+            "pdfPages": [
+              11
+            ]
+          }
+        ]
+      },
+      "markingMethod": "method-marks",
+      "acceptableAlternatives": [
+        "−(1/7)[[1,2],[5,3]]",
+        "Exact entrywise fractions."
+      ],
+      "dependencies": [],
+      "commonErrors": [],
+      "markingReviewNotes": [
+        "The source labels the answer cas. Decimal equivalents to 2dp are mentioned, but the illustrative decimal magnitudes omit all minus signs; this is not authority for accepting a positive inverse."
+      ],
+      "blockers": [
+        "Q11 decimal-sign concession requires editorial reconciliation before automated marking or generated reuse.",
+        "No calibrated inverse-matrix family."
+      ],
+      "sourceData": {
+        "matrix": [
+          [
+            3,
+            -2
+          ],
+          [
+            -5,
+            1
+          ]
+        ],
+        "determinant": -7,
+        "inverseExact": [
+          [
+            "-1/7",
+            "-2/7"
+          ],
+          [
+            "-5/7",
+            "-3/7"
+          ]
+        ]
+      }
+    },
+    {
+      "paperId": "4MB1-2024-summer-01-candidate",
+      "recordKind": "leaf",
+      "taskId": "4MB1-2024-summer-01-candidate.Q12",
+      "questionPath": "12",
+      "questionPaperPages": [
+        9
+      ],
+      "markSchemePages": [
+        12
+      ],
+      "originalMarks": 3,
+      "commandWord": "Make x the subject",
+      "stimulusTypes": [
+        "algebraic-equation"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            9
+          ]
+        }
+      ],
+      "requiredKnowledge": [
+        "Rearrange a formula to change its subject."
+      ],
+      "contextSummary": "Rearrange a rational formula with x on both sides.",
+      "solutionStructure": [
+        "Multiply x+3 = 4(x−1)/y by y and expand: xy+3y = 4x−4.",
+        "Collect x terms: xy−4x = −4−3y.",
+        "Factor and divide: x = (−4−3y)/(y−4) = (3y+4)/(4−y)."
+      ],
+      "criteria": [
+        {
+          "id": "clear-expand",
+          "marks": 1,
+          "code": "M1",
+          "rule": "Multiply all terms by y and expand correctly, or correctly expand and split the RHS as 4x/y − 4/y. A correct collected equation can imply this mark."
+        },
+        {
+          "id": "collect-x",
+          "marks": 1,
+          "code": "M1",
+          "rule": "Collect x terms on one side and the others on the other side; allow one sign error. Follow through their equation only if there are four distinct terms with exactly two involving x."
+        },
+        {
+          "id": "subject-x",
+          "marks": 1,
+          "code": "A1",
+          "rule": "Correct isolated x in an equivalent form. Do not ignore subsequent working, except a correct fraction without x= on the answer line is allowed if x= was correctly given in working.",
+          "dependsOn": [
+            "clear-expand",
+            "collect-x"
+          ]
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4MB1:issue1:3B",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Rearrange a formula to change its subject.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                12
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedFamilyId": "4MB1.algebra.subject-on-both-sides",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative split inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex",
+      "reviewerType": "agent",
+      "reviewDate": "2026-10-02",
+      "humanReviewed": false,
+      "generalSchemePages": [
+        3,
+        4,
+        5
+      ],
+      "responseRequirements": {
+        "workingRequired": false,
+        "finalForm": "exact answer",
+        "sourceRefs": [
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-qp",
+            "pdfPages": [
+              9
+            ]
+          },
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-ms",
+            "pdfPages": [
+              12
+            ]
+          }
+        ]
+      },
+      "markingMethod": "method-marks",
+      "acceptableAlternatives": [
+        "x = (−4−3y)/(y−4)",
+        "x = (3y+4)/(4−y)",
+        "x = (−4/y−3)/(1−4/y)"
+      ],
+      "dependencies": [
+        "Second M1 permits specified follow-through; it is not conditional on the first M1.",
+        "Original formula requires y ≠ 0; y = 4 gives a contradiction and no x. Domain observations are editorial, not additional marks."
+      ],
+      "commonErrors": [],
+      "markingReviewNotes": [
+        "The source labels the correct answer cas but explicitly says do not ISW for the final result, with the narrow missing-x= exception."
+      ],
+      "blockers": [
+        "No calibrated generated family or marker for this task."
+      ],
+      "sourceExpression": "x + 3 = 4(x − 1)/y"
+    },
+    {
+      "paperId": "4MB1-2024-summer-01-candidate",
+      "recordKind": "leaf",
+      "taskId": "4MB1-2024-summer-01-candidate.Q13",
+      "questionPath": "13",
+      "questionPaperPages": [
+        10
+      ],
+      "markSchemePages": [
+        13
+      ],
+      "originalMarks": 3,
+      "commandWord": "Calculate",
+      "stimulusTypes": [
+        "concentric-circle-diagram"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            10
+          ]
+        }
+      ],
+      "requiredKnowledge": [
+        "Use tangent-radius perpendicularity and the perpendicular bisector property of a chord.",
+        "Apply Pythagoras in a constructed right triangle.",
+        "Subtract concentric circle areas."
+      ],
+      "contextSummary": "Find an annulus area from a chord tangent to its inner circle.",
+      "solutionStructure": [
+        "The radius OD is perpendicular to tangent AB at D. The perpendicular from centre O bisects the outer-circle chord, so AD=DB=8 cm.",
+        "With outer radius R and inner radius r, Pythagoras gives R²=r²+64.",
+        "The shaded area is πR²−πr²=64π cm²."
+      ],
+      "criteria": [
+        {
+          "id": "right-triangle",
+          "marks": 1,
+          "code": "M1",
+          "rule": "Recognise the tangent-radius right angle and form a correct Pythagoras equation using half-chord 8. The source allows any chosen value for either radius."
+        },
+        {
+          "id": "eliminate-radius",
+          "marks": 1,
+          "code": "M1",
+          "rule": "Substitute for R² or r² in the area difference to eliminate one variable, or use their radii in full working to find the shaded area.",
+          "dependsOn": [
+            "right-triangle"
+          ]
+        },
+        {
+          "id": "exact-area",
+          "marks": 1,
+          "code": "A1",
+          "rule": "64π or 8²π, dependent on both methods. The source explicitly grants full marks for 64π alone and only two marks for a decimal rounding to 201.",
+          "dependsOn": [
+            "right-triangle",
+            "eliminate-radius"
+          ]
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4MB1:issue1:6K",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Use tangent-radius perpendicularity and the perpendicular bisector property of a chord.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                24
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                13
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4MB1:issue1:6F",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Apply Pythagoras in a constructed right triangle.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                24
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                13
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4MB1:issue1:7B",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Subtract concentric circle areas.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                25
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                13
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedFamilyId": "4MB1.geometry.tangent-chord-annulus",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative split inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex",
+      "reviewerType": "agent",
+      "reviewDate": "2026-10-02",
+      "humanReviewed": false,
+      "generalSchemePages": [
+        3,
+        4,
+        5
+      ],
+      "responseRequirements": {
+        "workingRequired": true,
+        "finalForm": "exact answer",
+        "sourceRefs": [
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-qp",
+            "pdfPages": [
+              10
+            ]
+          },
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-ms",
+            "pdfPages": [
+              13
+            ]
+          }
+        ]
+      },
+      "markingMethod": "method-marks",
+      "acceptableAlternatives": [
+        "64π cm²",
+        "8²π cm²"
+      ],
+      "dependencies": [
+        "Method two depends on method one; final accuracy depends on both.",
+        "The explicit answer-only allowance is retained despite the question requesting working.",
+        "A decimal approximation cannot earn the exact-answer A1."
+      ],
+      "commonErrors": [],
+      "markingReviewNotes": [
+        "The radius values are not independently specified; the area difference is determined by the half-chord alone.",
+        "Do not treat an arbitrary radius choice as additional given source data."
+      ],
+      "blockers": [
+        "No calibrated generated family or marker for this task."
+      ],
+      "sourceData": {
+        "chordLengthCm": 16,
+        "concentric": true,
+        "innerCircleTangentAt": "D",
+        "diagramNotToScale": true
+      }
+    },
+    {
+      "paperId": "4MB1-2024-summer-01-candidate",
+      "recordKind": "leaf",
+      "taskId": "4MB1-2024-summer-01-candidate.Q14.a",
+      "questionPath": "14.a",
+      "questionPaperPages": [
+        11
+      ],
+      "markSchemePages": [
+        13
+      ],
+      "originalMarks": 2,
+      "commandWord": "Find",
+      "stimulusTypes": [
+        "integer-list"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            11
+          ]
+        }
+      ],
+      "requiredKnowledge": [
+        "Use prime factors to find the highest common factor."
+      ],
+      "contextSummary": "Find the HCF of three integers with working.",
+      "solutionStructure": [
+        "90=2×3²×5; 132=2²×3×11; 432=2⁴×3³.",
+        "The common prime factors with minimum powers give 2×3=6."
+      ],
+      "criteria": [
+        {
+          "id": "factor-method",
+          "marks": 1,
+          "code": "M1",
+          "rule": "Two or three numbers correctly in prime factors, or as 2×3×..., including a correct shared-factor division table or two correct factor trees."
+        },
+        {
+          "id": "hcf-result",
+          "marks": 1,
+          "code": "A1",
+          "rule": "HCF is 6; the source labels this wr, so correct answer alone is not sufficient for full credit.",
+          "dependsOn": [
+            "factor-method"
+          ]
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4MB1:issue1:1B",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Use prime factors to find the highest common factor.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                17
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                13
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedFamilyId": "4MB1.number.hcf-three-integers",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative split inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex",
+      "reviewerType": "agent",
+      "reviewDate": "2026-10-02",
+      "humanReviewed": false,
+      "generalSchemePages": [
+        3,
+        4,
+        5
+      ],
+      "responseRequirements": {
+        "workingRequired": true,
+        "finalForm": "exact answer",
+        "sourceRefs": [
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-qp",
+            "pdfPages": [
+              11
+            ]
+          },
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-ms",
+            "pdfPages": [
+              13
+            ]
+          }
+        ]
+      },
+      "markingMethod": "method-marks",
+      "acceptableAlternatives": [
+        "Correct factor trees or repeated common-factor division."
+      ],
+      "dependencies": [
+        "Working is explicitly required; apply the general wr rule."
+      ],
+      "commonErrors": [],
+      "markingReviewNotes": [
+        "The source permits partially factored 2×3×15, 2×3×22 and 2×3×72 for the method."
+      ],
+      "blockers": [
+        "No calibrated generated family or marker for this task."
+      ],
+      "sourceData": {
+        "integers": [
+          90,
+          132,
+          432
+        ]
+      }
+    },
+    {
+      "paperId": "4MB1-2024-summer-01-candidate",
+      "recordKind": "leaf",
+      "taskId": "4MB1-2024-summer-01-candidate.Q14.b",
+      "questionPath": "14.b",
+      "questionPaperPages": [
+        11
+      ],
+      "markSchemePages": [
+        13
+      ],
+      "originalMarks": 2,
+      "commandWord": "Find",
+      "stimulusTypes": [
+        "number-constraints"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-qp",
+          "pdfPages": [
+            11
+          ]
+        }
+      ],
+      "requiredKnowledge": [
+        "Relate HCF, LCM and prime factors in a constrained pair."
+      ],
+      "contextSummary": "Find the smallest two positive integers with HCF 28 and LCM a multiple of 35.",
+      "solutionStructure": [
+        "Both numbers are multiples of 28. The LCM must contain a factor 5, so at least one number is a multiple of 140.",
+        "Choose 28 and 140: their HCF is 28 and their LCM is 140, a multiple of 35.",
+        "No smaller first number than 28 or factor-5-containing second number than 140 can meet those conditions."
+      ],
+      "criteria": [
+        {
+          "id": "multiples-method",
+          "marks": 1,
+          "code": "M1",
+          "rule": "Source accepts expressing both numbers as prime factors or two correct factor trees, with printed example 2×2×7 and 5×7 (28 and 35), or at least four correct multiples of 28 or of 35."
+        },
+        {
+          "id": "smallest-pair",
+          "marks": 1,
+          "code": "A1",
+          "rule": "28 and 140; source labels this cas.",
+          "dependsOn": [
+            "multiples-method"
+          ]
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4MB1:issue1:1B",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Relate HCF, LCM and prime factors in a constrained pair.",
+          "evidenceRefs": [
+            {
+              "documentId": "4MB1-spec",
+              "pdfPages": [
+                17
+              ]
+            },
+            {
+              "documentId": "4MB1-2024-summer-01-candidate-ms",
+              "pdfPages": [
+                13
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedFamilyId": "4MB1.number.hcf-lcm-smallest-pair",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative split inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewer": "Codex",
+      "reviewerType": "agent",
+      "reviewDate": "2026-10-02",
+      "humanReviewed": false,
+      "generalSchemePages": [
+        3,
+        4,
+        5
+      ],
+      "responseRequirements": {
+        "workingRequired": false,
+        "finalForm": "exact answer",
+        "sourceRefs": [
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-qp",
+            "pdfPages": [
+              11
+            ]
+          },
+          {
+            "documentId": "4MB1-2024-summer-01-candidate-ms",
+            "pdfPages": [
+              13
+            ]
+          }
+        ]
+      },
+      "markingMethod": "method-marks",
+      "acceptableAlternatives": [
+        "140 and 28 (pair order is immaterial)."
+      ],
+      "dependencies": [
+        "If no ordinary marks have been awarded, SC B1 for an answer of 140; this alternative is capped at one and not added to ordinary marks.",
+        "Correct pair can imply method under the source cas convention."
+      ],
+      "commonErrors": [],
+      "markingReviewNotes": [
+        "The scheme factor example refers to the constraint numbers 28 and 35. Preserve it as historical method evidence, not the requested solution pair.",
+        "Minimality argument is an editorial explanation; the source does not assign it an extra mark."
+      ],
+      "blockers": [
+        "No calibrated generated family or marker for this task."
+      ],
+      "sourceData": {
+        "hcf": 28,
+        "lcmMultipleOf": 35,
+        "smallestPair": [
+          28,
+          140
+        ]
+      },
+      "specialCases": [
+        {
+          "code": "SCB1",
+          "marks": 1,
+          "condition": "Answer 140 and no ordinary marks awarded",
+          "additive": false
+        }
+      ]
     }
   ],
   "marksReconciled": true,
   "processingNotes": [
-    "Detailed coverage is sixteen of the 38 indexed parts, covering 44 of 100 original marks.",
+    "Detailed coverage is 28 of 38 indexed parts, covering 71 of 100 original marks.",
     "The paper remains indexed; marksReconciled refers to the existing whole-paper text totals and this subset, not complete task processing.",
     "Proposed IDs do not activate templates. Q15(b) now has a separate provisional family and experimental runtime, with no validated custom maximum or live eligibility."
   ],
   "blockers": [
-    "22 Maths parts still lack detailed analyses.",
+    "10 Maths parts still lack detailed analyses.",
     "Whole-paper visual/page and scheme-content audit remains incomplete.",
     "Outside the reviewed subset, extracted Maths text still contains unresolved glyph names and private-use characters; use the PDF for mathematical notation.",
     "Source-linked generative families, calibration and assessment-objective review remain unfinished.",
     "Q19 inverse cube-root demand is not in the obtained specification row 4G explicit list; current-series scope needs authoritative reconciliation.",
     "Q19 special-case 3.6 explanation is arithmetically inconsistent when its printed inverse-cube model is applied consistently; concession preserved, generated use blocked.",
     "Q21 scheme first-row x/a bounds are swapped relative to the question and its own later calculation; source inconsistency retained.",
-    "Q3 scheme intermediate AB²/AB and alternative sine-rule AD labels require explicit review before generated reuse."
+    "Q3 scheme intermediate AB²/AB and alternative sine-rule AD labels require explicit review before generated reuse.",
+    "Q11 illustrative decimal list omits negative signs; generated decimal marking blocked pending reconciliation."
   ],
   "sourceDiscrepancies": [
     {
@@ -2853,6 +4626,20 @@
       ],
       "observation": "The Pythagoras line appends [= 6.3] beside an AB² equation; 39.69 is AB² and 6.3 is AB. Two sine-rule alternatives label the unknown AD even though AD is given as 12 and those equations yield the width AB = 6.3.",
       "handling": "Preserve the source discrepancy; use the independently checked Pythagoras/area route. Do not activate a generated family based on unreviewed alternative labels. No publisher clarification obtained."
+    },
+    {
+      "id": "Q11-decimal-signs",
+      "status": "source-concession-ambiguous",
+      "sourceRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-ms",
+          "pdfPages": [
+            11
+          ]
+        }
+      ],
+      "observation": "Exact inverse has four negative entries, but the illustrative 2dp decimal list prints positive magnitudes 0.14,0.29,0.71,0.43 without signs.",
+      "handling": "Keep exact negative inverse and historical concession separately; do not accept positive matrices or generate a rubric from this note until reconciled."
     }
   ]
 }

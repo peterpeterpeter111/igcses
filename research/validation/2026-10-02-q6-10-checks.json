@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-02",
+  "scope": "Bounded arithmetic and interval checks, plus an explicit deductive Q10 reasoning audit; not template activation.",
+  "checks": [
+    {
+      "name": "Q6a solution sampled",
+      "passed": true
+    },
+    {
+      "name": "Q6b interval endpoints",
+      "passed": true
+    },
+    {
+      "name": "Q7a powers",
+      "passed": true
+    },
+    {
+      "name": "Q7b root identity",
+      "passed": true
+    },
+    {
+      "name": "Q8 interior",
+      "passed": true
+    },
+    {
+      "name": "Q8 all three vertices",
+      "passed": true
+    },
+    {
+      "name": "Q9 tangent height",
+      "passed": true
+    },
+    {
+      "name": "Q9 complement",
+      "passed": true
+    },
+    {
+      "name": "Q9 sine route",
+      "passed": true
+    },
+    {
+      "name": "Q9 wrong-angle partial",
+      "passed": true
+    },
+    {
+      "name": "review totals",
+      "passed": true
+    }
+  ],
+  "proofReview": {
+    "taskId": "4MB1-2024-summer-01-candidate.Q10",
+    "correspondence": {
+      "M": "N",
+      "C": "B",
+      "B": "C"
+    },
+    "facts": [
+      "MC = NB as halves of equal AC/AB",
+      "CB = BC is common",
+      "angle MCB = angle NBC from isosceles base angles"
+    ],
+    "includedAngleChecked": true,
+    "conclusion": "SAS",
+    "numericalExamplesAreNotProof": true,
+    "humanReviewed": false
+  },
+  "sourceHashes": {
+    "research/extractions/4MB1-2024-summer-01.json": "c62440b9b488d8d495d7bb1271a0649ff94ae67112eec88db5d5b6f0b580bc53",
+    "research/syllabus/4MB1-selected-paper-demands.json": "a2af0810bc7cb213b07375251487a6f87bf58e8d829a0a731c9d3fe727a2a2d1"
+  },
+  "humanReviewed": false
+}
