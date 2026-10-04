@@ -1,3 +1,4 @@
+import biologyNutrition from '../research/syllabus/4BI1-human-nutrition.json' with { type: 'json' };
 import biologyPhotosynthesis from '../research/syllabus/4BI1-photosynthesis.json' with { type: 'json' };
 import chemistryElectrolysis from '../research/syllabus/4CH1-electrolysis.json' with { type: 'json' };
 import chemistryCalculations from '../research/syllabus/4CH1-formulae-and-calculations.json' with { type: 'json' };
@@ -43,6 +44,7 @@ export const reviewedInventories = [
   { title: 'Biological molecules and enzymes (2.7–2.14B)', ...biologyMolecules },
   { title: 'Cell transport (2.15–2.17)', ...biologyTransport },
   { title: 'Plant nutrition and photosynthesis (2.18–2.23)', ...biologyPhotosynthesis },
+  { title: 'Human nutrition (2.24–2.33B)', ...biologyNutrition },
   { title: 'Cells and tissues (1.1–1.16)', ...humanCells },
   { title: 'Principles foundations (1.1–1.22)', ...chemistryStates },
   { title: 'Group behaviour, formulae and calculations (1.23–1.36)', ...chemistryCalculations },

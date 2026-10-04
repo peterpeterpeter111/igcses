@@ -1,3 +1,4 @@
+import biologyNutrition from '../research/curriculum-audits/4BI1-human-nutrition.json' with { type: 'json' };
 import biologyPhotosynthesis from '../research/curriculum-audits/4BI1-photosynthesis.json' with { type: 'json' };
 import chemistryElectrolysis from '../research/curriculum-audits/4CH1-electrolysis.json' with { type: 'json' };
 import chemistryCalculations from '../research/curriculum-audits/4CH1-formulae-and-calculations.json' with { type: 'json' };
@@ -39,4 +40,4 @@ import mathsAlgebra from '../research/curriculum-audits/4MB1-algebra-foundations
 import mathsPolynomials from '../research/curriculum-audits/4MB1-polynomials-and-fractions.json' with { type: 'json' };
 
 // These bounded audits link partial teaching; they do not promote completion.
-export const curriculumAudits = [motion, forces, mechanics, waves, energy, matter, magnetism, radioactivity, electricity, electricityCircuits, astrophysics, biologyLiving, biologyCells, biologyMolecules, biologyTransport, biologyPhotosynthesis, humanCells, humanTissues, humanMolecules, chemistryStates, chemistryAtoms, chemistryCalculations, chemistryBonding, chemistryElectrolysis, mathsNumber, mathsSets, mathsAlgebra, mathsPolynomials, mathsEquations, mathsAlgebraRest, mathsMatrices, mathsGeometry, mathsStatistics, mathsFunctions];
+export const curriculumAudits = [motion, forces, mechanics, waves, energy, matter, magnetism, radioactivity, electricity, electricityCircuits, astrophysics, biologyLiving, biologyCells, biologyMolecules, biologyTransport, biologyPhotosynthesis, biologyNutrition, humanCells, humanTissues, humanMolecules, chemistryStates, chemistryAtoms, chemistryCalculations, chemistryBonding, chemistryElectrolysis, mathsNumber, mathsSets, mathsAlgebra, mathsPolynomials, mathsEquations, mathsAlgebraRest, mathsMatrices, mathsGeometry, mathsStatistics, mathsFunctions];

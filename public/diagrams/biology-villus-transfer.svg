@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="670" viewBox="0 0 980 670" role="img" aria-labelledby="title desc">
+<title id="title">Villus: surface and transfer routes</title>
+<desc id="desc">Original functional villus schematic. A thin epithelium and its microvilli face the intestinal lumen. A blood capillary receives glucose and amino acids. A separate lacteal carries many absorbed long-chain lipid products into lymph. Shapes and arrows are illustrative, not to scale; membrane transport mechanisms are not all simple diffusion.</desc>
+<defs><marker id="blood" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6" fill="none" stroke="#963d43" stroke-width="1.5"/></marker><marker id="lymph" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6" fill="none" stroke="#716638" stroke-width="1.5"/></marker></defs>
+<rect width="980" height="670" rx="8" fill="#fbf8f0"/>
+<g font-family="system-ui, sans-serif" fill="#292524">
+<text x="36" y="40" font-size="26" font-weight="650">A villus: area, distance and onward transport</text>
+<text x="36" y="70" font-size="15" fill="#686158">Original functional model · enlarged and not to scale</text>
+<text x="40" y="132" font-size="19" font-weight="600">Intestinal lumen</text>
+<text x="40" y="156" font-size="15">Digested material contacts the lining.</text>
+<!-- One projection with an epithelial boundary; no claim of measured geometry. -->
+<path d="M225 535 L290 535 L290 290 Q290 155 390 155 Q490 155 490 290 L490 535 L555 535" fill="#eee1cd" stroke="#5a453c" stroke-width="4"/>
+<path d="M314 532 L314 291 Q314 183 390 183 Q466 183 466 291 L466 532" fill="#fbf3e3" stroke="#9d8672" stroke-width="2"/>
+<!-- Cell partitions in the single lining layer. -->
+<g fill="none" stroke="#a58c76" stroke-width="2"><path d="M290 335H314 M290 380H314 M290 425H314 M290 470H314 M466 335H490 M466 380H490 M466 425H490 M466 470H490 M300 235L321 245 M321 187L337 207 M365 158L371 186 M414 158L408 186 M459 187L443 207 M480 235L459 245"/></g>
+<!-- Representative microvilli on the outer face. -->
+<g stroke="#79594f" stroke-width="3" stroke-linecap="round"><path d="M279 320H290 M279 347H290 M279 372H290 M279 397H290 M279 422H290 M279 447H290 M490 320H502 M490 347H502 M490 372H502 M490 397H502 M490 422H502 M490 447H502 M319 189L309 181 M341 168L335 156 M363 158L359 143 M387 155V140 M411 158L415 143 M435 168L441 156 M460 189L470 181"/></g>
+<!-- The capillary loop is a separate lumen from the lacteal. -->
+<path d="M338 543 L338 296 Q338 223 390 223 Q442 223 442 296 L442 543" fill="none" stroke="#963d43" stroke-width="8"/>
+<path d="M390 552V320" fill="none" stroke="#8b8050" stroke-width="15" stroke-linecap="round"/>
+<path d="M390 398V488" fill="none" stroke="#fbf8f0" stroke-width="3" marker-end="url(#lymph)"/>
+<path d="M338 454V340 M442 339V455" fill="none" stroke="#fbf8f0" stroke-width="2.5"/>
+<path d="M235 346H326" stroke="#963d43" stroke-width="3" fill="none" marker-end="url(#blood)"/>
+<path d="M553 396H401" stroke="#716638" stroke-width="3" fill="none" marker-end="url(#lymph)"/>
+<g stroke="#8b8175" stroke-width="1.5" fill="none"><path d="M644 185H556L466 180"/><path d="M644 240H560L478 295"/><path d="M644 294H557L441 288"/><path d="M644 462H557L400 462"/></g>
+<text x="659" y="190" font-size="18" font-weight="600">Microvilli</text><text x="659" y="213" font-size="15">Projections on lining cells;</text><text x="659" y="233" font-size="15">increase absorptive area.</text>
+<text x="659" y="269" font-size="18" font-weight="600">Epithelium</text><text x="659" y="291" font-size="15">One cell thick: short transfer path.</text>
+<text x="659" y="329" font-size="18" font-weight="600" fill="#963d43">Blood capillary</text><text x="659" y="352" font-size="15">Carries glucose and amino acids</text><text x="659" y="373" font-size="15">away from the villus.</text>
+<text x="659" y="463" font-size="18" font-weight="600" fill="#716638">Lacteal (lymph vessel)</text><text x="659" y="486" font-size="15">Main route for repackaged</text><text x="659" y="507" font-size="15">long-chain lipid products.</text>
+<text x="36" y="585" font-size="16" font-weight="600">Absorption is more than simple diffusion.</text>
+<text x="36" y="612" font-size="15">Arrows show overall transfer routes; nutrients cross the lining using different transport processes.</text>
+<text x="36" y="636" font-size="15">A villus contains many cells. A microvillus is a much smaller cell-surface projection.</text>
+</g></svg>
