@@ -1,0 +1,178 @@
+{
+  "date": "2026-10-05",
+  "scope": "Atom/charge conservation for ten stated teaching reactions; not product-selection, experimental or learner-response validation.",
+  "checks": [
+    {
+      "id": "lead-reduction-atoms",
+      "left": {
+        "Pb": 1
+      },
+      "right": {
+        "Pb": 1
+      },
+      "passed": true
+    },
+    {
+      "id": "lead-reduction-charge",
+      "left": 0,
+      "right": 0,
+      "passed": true
+    },
+    {
+      "id": "bromide-oxidation-atoms",
+      "left": {
+        "Br": 2
+      },
+      "right": {
+        "Br": 2
+      },
+      "passed": true
+    },
+    {
+      "id": "bromide-oxidation-charge",
+      "left": -2,
+      "right": -2,
+      "passed": true
+    },
+    {
+      "id": "copper-reduction-atoms",
+      "left": {
+        "Cu": 1
+      },
+      "right": {
+        "Cu": 1
+      },
+      "passed": true
+    },
+    {
+      "id": "copper-reduction-charge",
+      "left": 0,
+      "right": 0,
+      "passed": true
+    },
+    {
+      "id": "acidic-hydrogen-atoms",
+      "left": {
+        "H": 2
+      },
+      "right": {
+        "H": 2
+      },
+      "passed": true
+    },
+    {
+      "id": "acidic-hydrogen-charge",
+      "left": 0,
+      "right": 0,
+      "passed": true
+    },
+    {
+      "id": "water-hydrogen-atoms",
+      "left": {
+        "H": 4,
+        "O": 2
+      },
+      "right": {
+        "H": 4,
+        "O": 2
+      },
+      "passed": true
+    },
+    {
+      "id": "water-hydrogen-charge",
+      "left": -2,
+      "right": -2,
+      "passed": true
+    },
+    {
+      "id": "chloride-oxidation-atoms",
+      "left": {
+        "Cl": 2
+      },
+      "right": {
+        "Cl": 2
+      },
+      "passed": true
+    },
+    {
+      "id": "chloride-oxidation-charge",
+      "left": -2,
+      "right": -2,
+      "passed": true
+    },
+    {
+      "id": "hydroxide-oxygen-atoms",
+      "left": {
+        "O": 4,
+        "H": 4
+      },
+      "right": {
+        "O": 4,
+        "H": 4
+      },
+      "passed": true
+    },
+    {
+      "id": "hydroxide-oxygen-charge",
+      "left": -4,
+      "right": -4,
+      "passed": true
+    },
+    {
+      "id": "acidic-water-oxygen-atoms",
+      "left": {
+        "H": 4,
+        "O": 2
+      },
+      "right": {
+        "O": 2,
+        "H": 4
+      },
+      "passed": true
+    },
+    {
+      "id": "acidic-water-oxygen-charge",
+      "left": 0,
+      "right": 0,
+      "passed": true
+    },
+    {
+      "id": "molten-lead-bromide-overall-atoms",
+      "left": {
+        "Pb": 1,
+        "Br": 2
+      },
+      "right": {
+        "Pb": 1,
+        "Br": 2
+      },
+      "passed": true
+    },
+    {
+      "id": "molten-lead-bromide-overall-charge",
+      "left": 0,
+      "right": 0,
+      "passed": true
+    },
+    {
+      "id": "water-overall-atoms",
+      "left": {
+        "H": 4,
+        "O": 2
+      },
+      "right": {
+        "H": 4,
+        "O": 2
+      },
+      "passed": true
+    },
+    {
+      "id": "water-overall-charge",
+      "left": 0,
+      "right": 0,
+      "passed": true
+    }
+  ],
+  "passed": 20,
+  "noteSha256": "fa2f05addc33a684d1451ebeed0319d93566feea3d5d7bd0eac4bb8c834e757e"
+}

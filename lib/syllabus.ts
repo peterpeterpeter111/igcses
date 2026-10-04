@@ -1,3 +1,4 @@
+import chemistryElectrolysis from '../research/syllabus/4CH1-electrolysis.json' with { type: 'json' };
 import chemistryCalculations from '../research/syllabus/4CH1-formulae-and-calculations.json' with { type: 'json' };
 import biologyTransport from '../research/syllabus/4BI1-cell-transport.json' with { type: 'json' };
 import mathsPaperDemands from '../research/syllabus/4MB1-selected-paper-demands.json' with { type: 'json' };
@@ -44,6 +45,7 @@ export const reviewedInventories = [
   { title: 'Principles foundations (1.1–1.22)', ...chemistryStates },
   { title: 'Group behaviour, formulae and calculations (1.23–1.36)', ...chemistryCalculations },
   { title: 'Ionic, covalent and metallic bonding (1.37–1.54C)', ...chemistryBonding },
+  { title: 'Electrolysis (1.55C–1.60C; Paper 2C)', ...chemistryElectrolysis },
   { title: 'Biological molecules (2.1–2.10)', ...humanMolecules },
   { title: 'Number: section 1, rows A–K', ...mathsNumber },
   { title: 'Sets: section 2, rows A–I', ...mathsSets },

@@ -24,7 +24,9 @@
     "Draw and check electron-transfer and shared-electron representations.",
     "Connect structure and charge-carrier mobility to physical properties.",
     "Connect amount, mass and equation ratios, and calculate yield and formulae from evidence.",
-    "Use solution and gas-volume calculations with exact units and Paper2C applicability."
+    "Use solution and gas-volume calculations with exact units and Paper2C applicability.",
+    "Explain charge carriers, predict molten/aqueous electrolysis products and balance half-equations for Paper 2C.",
+    "Evaluate electrolysis observations without treating graphite as universally inert."
   ],
   "sections": [
     {
@@ -1760,6 +1762,264 @@
         "alt": "A two-dimensional metallic lattice model with regular rows of positive metal ions and delocalised electrons between them. A second arrangement shows a shifted row with electrons still surrounding the ions.",
         "caption": "Original schematic for Paper 2C: positive ions remain attracted to delocalised electrons when a layer shifts. Symbol sizes and positions are illustrative."
       }
+    },
+    {
+      "id": "electrolysis-charge-carriers",
+      "title": "Which substances carry current? (Paper 2C)",
+      "points": [
+        "1.55C",
+        "1.56C"
+      ],
+      "paragraphs": [
+        "Electrical conduction needs mobile charged particles. Typical simple molecular covalent substances consist of neutral molecules and do not supply mobile ions or delocalised electrons, so they usually do not conduct. A molecule’s atoms do not become ions merely because its material melts.",
+        "Covalent substances can have important exceptions or different behaviour after reaction. Graphite conducts through delocalised electrons; an acid can form ions when dissolved in water. Explain the actual charge carriers rather than using “covalent” as an absolute prohibition.",
+        "An ionic solid contains charged ions, but they are held in lattice positions and cannot move throughout the solid to carry a current. On melting, or when the compound dissolves and releases ions into water, the ions can move and the material can conduct. An ionic compound that does not dissolve cannot automatically form an aqueous electrolyte.",
+        "The wires and electrodes carry electrons. The electrolyte carries charge through moving ions; electrons do not travel through it from one electrode to the other in the simple cell model. Electrolysis uses electrical energy to drive electrode reactions and can decompose an electrolyte. All six electrolysis references 1.55C–1.60C apply to Paper 2C."
+      ],
+      "example": {
+        "question": "Compare solid sodium chloride, molten sodium chloride and pure liquid ethanol.",
+        "steps": [
+          "Solid salt has ions fixed in a lattice, so it does not conduct by moving ions.",
+          "Molten salt has mobile ions and conducts.",
+          "A typical pure molecular liquid has neutral molecules and lacks suitable mobile charge carriers."
+        ],
+        "explanation": "Identify the charged particles and explain whether they can move."
+      },
+      "practice": {
+        "question": "Why is “solid salt has no ions” a poor explanation of its non-conduction?",
+        "answer": "It has ions, but they are not mobile through the lattice. Mobility as well as charge matters.",
+        "explanation": "Identify the charged particles and explain whether they can move."
+      },
+      "terms": [
+        "electrolyte",
+        "mobile ion",
+        "electron",
+        "conduction",
+        "electrolysis"
+      ],
+      "commonMistakes": [
+        "Do not say electrons flow through the electrolyte like they flow through a metal wire."
+      ]
+    },
+    {
+      "id": "cations-anions-and-electrodes",
+      "title": "Keep ion charges and electrode names separate (Paper 2C)",
+      "points": [
+        "1.57C",
+        "1.59C"
+      ],
+      "paragraphs": [
+        "A cation is a positive ion; an anion is a negative ion. In an electrolytic cell connected to a direct-current supply, the cathode is negative and attracts cations, while the anode is positive and attracts anions. Electrode signs in this lesson describe electrolysis, not every possible type of electrochemical cell.",
+        "At the cathode, reduction occurs: a species gains electrons from the electrode. At the anode, oxidation occurs: a species loses electrons to the electrode. Aqueous systems may involve water as well as ions, so the species discharged is not determined by the attraction alone.",
+        "For copper deposition, Cu²⁺ + 2e⁻ → Cu. One positive ion gains two electrons and becomes a neutral atom. The cathode supplies electrons, so gaining electrons does not make the copper product a negative ion.",
+        "An inert electrode provides a conducting surface without being a reactant in the ideal model. Electrode material matters in a real cell: a copper anode can dissolve, while carbon can react with anode products. “Inert” is an assumption to check under the stated conditions."
+      ],
+      "example": {
+        "question": "Identify the ion type and destination of Cu²⁺ in an electrolytic cell, then name the electrode reaction.",
+        "steps": [
+          "Cu²⁺ is a cation because it is positive.",
+          "It is attracted to the negative cathode.",
+          "Cu²⁺ + 2e⁻ → Cu is reduction because electrons are gained."
+        ],
+        "explanation": "Name charge, attraction and electron transfer as separate steps."
+      },
+      "practice": {
+        "question": "Is an anion positive because it moves towards the positive anode?",
+        "answer": "No. Anions are negative and are attracted to the oppositely charged positive anode.",
+        "explanation": "Name charge, attraction and electron transfer as separate steps."
+      },
+      "terms": [
+        "cation",
+        "anion",
+        "cathode",
+        "anode",
+        "oxidation",
+        "reduction",
+        "inert electrode"
+      ],
+      "commonMistakes": [
+        "The cathode is the site of reduction; do not confuse its negative sign with the charge of the attracted ion."
+      ]
+    },
+    {
+      "id": "molten-lead-bromide",
+      "title": "Predict molten lead(II) bromide products (Paper 2C)",
+      "points": [
+        "1.58C",
+        "1.59C"
+      ],
+      "paragraphs": [
+        "Molten lead(II) bromide contains mobile Pb²⁺ and Br⁻ ions without an aqueous solvent. In the ideal inert-electrode cell, lead forms at the cathode and bromine forms at the anode. The overall decomposition is PbBr₂ → Pb + Br₂.",
+        "The cathode half-equation is Pb²⁺ + 2e⁻ → Pb. The anode half-equation is 2Br⁻ → Br₂ + 2e⁻. The bromine product is diatomic, so two bromide ions are needed. Each half-equation conserves both atoms and total charge.",
+        "A teacher-controlled demonstration heats the salt in suitable apparatus until it is molten, uses separated inert electrodes and a suitable direct-current supply, and relates the observed products to the electrode connections. Conduction depends on the ions becoming mobile; switching current through the solid is not the same experiment.",
+        "This example involves hot material, lead compounds and bromine. Any demonstration requires the school’s approved controls and fume extraction; it is described for interpretation, not as a learner home procedure. Brown bromine fumes and a lead deposit are expected qualitative observations, not observations obtained in this project."
+      ],
+      "example": {
+        "question": "Write both half-equations for molten PbBr₂ and classify them.",
+        "steps": [
+          "Cathode: Pb²⁺ + 2e⁻ → Pb; reduction by electron gain.",
+          "Anode: 2Br⁻ → Br₂ + 2e⁻; oxidation by electron loss.",
+          "The two electrons cancel when the half-equations are combined."
+        ],
+        "explanation": "Use the ions in the melt and balance electrons as well as atoms."
+      },
+      "practice": {
+        "question": "Why is Br⁻ → Br + e⁻ not the complete product equation here?",
+        "answer": "It omits the diatomic bromine product. Use 2Br⁻ → Br₂ + 2e⁻.",
+        "explanation": "Use the ions in the melt and balance electrons as well as atoms."
+      },
+      "terms": [
+        "molten lead bromide",
+        "bromide",
+        "diatomic bromine",
+        "half-equation"
+      ],
+      "commonMistakes": [
+        "Do not add aqueous water products to a specified molten-salt model."
+      ]
+    },
+    {
+      "id": "aqueous-product-predictions",
+      "title": "Water changes aqueous product predictions (Paper 2C)",
+      "points": [
+        "1.58C"
+      ],
+      "paragraphs": [
+        "An aqueous electrolyte contains water as well as dissolved ions. The products therefore differ from those of the same salt when molten. For the school prediction model at the cathode, a metal less reactive than hydrogen, such as copper, can be deposited; with a more reactive metal ion such as sodium, hydrogen is usually formed from water or hydrogen ions.",
+        "For aqueous copper(II) sulfate with genuinely inert electrodes, copper deposits at the cathode and oxygen is predicted at the anode. Sulfate is not discharged as a lump of sulfur. With a copper anode, copper dissolution changes the process; this is a different electrode system.",
+        "For dilute sulfuric acid with inert electrodes, hydrogen is produced at the cathode and oxygen at the anode. The net reaction is 2H₂O → 2H₂ + O₂. At matching temperature and pressure, the ideal produced gas amounts and volumes have H₂:O₂ ratio 2:1. Dissolution, leaks and collection conditions can make the measured ratio differ.",
+        "For concentrated sodium chloride solution (brine), hydrogen is predicted at the cathode and chlorine at the anode with inert electrodes; sodium is not deposited from water. The remaining solution becomes alkaline. Chloride concentration and conditions matter: oxygen can compete with chlorine formation in more dilute chloride solutions.",
+        "The convenient rule “halide gives halogen; otherwise oxygen” is a school prediction pattern with conditions. It does not prove that every halide concentration gives only one gas, or that an electrode is chemically inert. Use supplied conditions and evidence for an unfamiliar electrolyte."
+      ],
+      "example": {
+        "question": "Compare molten sodium chloride with concentrated aqueous sodium chloride using inert electrodes.",
+        "steps": [
+          "The melt contains Na⁺ and Cl⁻, giving sodium at the cathode and chlorine at the anode.",
+          "The aqueous system also contains water; hydrogen forms at the cathode instead of sodium.",
+          "Concentrated brine favours chlorine at the anode; concentration and electrode material must be specified."
+        ],
+        "explanation": "Include water, electrode material and concentration when predicting aqueous products."
+      },
+      "practice": {
+        "question": "Why is aqueous copper sulfate not expected to deposit sulfur at its anode in the inert-electrode model?",
+        "answer": "Water-derived species are oxidised to oxygen under the stated model; sulfate is not discharged to sulfur.",
+        "explanation": "Include water, electrode material and concentration when predicting aqueous products."
+      },
+      "terms": [
+        "aqueous electrolyte",
+        "preferential discharge",
+        "brine",
+        "inert electrode",
+        "gas ratio"
+      ],
+      "commonMistakes": [
+        "A salt dissolved in water is not a molten salt.",
+        "Do not use the ideal gas ratio as a guarantee for measured collection volumes."
+      ]
+    },
+    {
+      "id": "electrolysis-half-equations",
+      "title": "Balance atoms and charges in half-equations (Paper 2C)",
+      "points": [
+        "1.59C"
+      ],
+      "paragraphs": [
+        "Write the reactant and product species for one electrode, balance atoms, then use electrons to balance charge. Electrons appear on the left for reduction and on the right for oxidation. Their negative charge counts towards the total charge on that side.",
+        "Acidic hydrogen production can be written 2H⁺ + 2e⁻ → H₂. At an alkaline or neutral aqueous cathode, an appropriate water form is 2H₂O + 2e⁻ → H₂ + 2OH⁻. Both show reduction, but they refer to different descriptions of the local solution conditions.",
+        "Chlorine formation is 2Cl⁻ → Cl₂ + 2e⁻. Oxygen formation can be expressed as 4OH⁻ → O₂ + 2H₂O + 4e⁻, or in an acidic water form as 2H₂O → O₂ + 4H⁺ + 4e⁻. Use the form appropriate to the question rather than mixing parts of the two forms.",
+        "For the acidic oxygen form, both sides have four H atoms and two O atoms. The left has charge zero; the right has +4 from hydrogen ions and −4 from electrons, also zero. Balancing atoms alone would miss an incorrect electron count.",
+        "When combining electrode equations, multiply whole equations so their electron counts match, then cancel electrons. For hydrogen and oxygen from acidified water, two copies of the hydrogen equation combine with one oxygen equation to give 2H₂O → 2H₂ + O₂ after cancellation."
+      ],
+      "example": {
+        "question": "Check whether 2Cl⁻ → Cl₂ + e⁻ is balanced, and correct it.",
+        "steps": [
+          "Two Cl atoms occur on both sides.",
+          "The left has total charge −2; the right has −1, so charge is not balanced.",
+          "Use 2Cl⁻ → Cl₂ + 2e⁻. Electrons are lost, so this is oxidation."
+        ],
+        "explanation": "Check every atom and the total charge, then use electron location to classify the reaction."
+      },
+      "practice": {
+        "question": "Why are two copies of 2H⁺ + 2e⁻ → H₂ needed to combine with the acidic oxygen equation?",
+        "answer": "The oxygen equation releases four electrons. Two hydrogen equations consume the same four electrons.",
+        "explanation": "Check every atom and the total charge, then use electron location to classify the reaction."
+      },
+      "terms": [
+        "ionic half-equation",
+        "charge conservation",
+        "electron balance",
+        "oxidation",
+        "reduction"
+      ],
+      "commonMistakes": [
+        "A balanced atom count does not automatically give a balanced charge count."
+      ]
+    },
+    {
+      "id": "aqueous-electrolysis-investigation",
+      "title": "Investigating aqueous electrolysis and identifying products (Paper 2C)",
+      "points": [
+        "1.58C",
+        "1.60C"
+      ],
+      "paragraphs": [
+        "A teacher-supervised aqueous copper(II) sulfate investigation uses a low-voltage direct-current supply and separated electrodes. Label the anode and cathode from the actual supply connections. Record the initial solution and electrode appearance, then compare deposits and gas formation during the fixed observation time.",
+        "For an ideal inert anode, the predicted cathode deposit is copper and the anode product is oxygen. The practical electrode must be checked: Pearson’s International GCSE guide warns that graphite can react with oxygen to make carbon dioxide. A graphite gas observation must not automatically be reported as pure oxygen; use approved suitable electrodes and qualified identification.",
+        "A reddish-brown cathode coating is consistent with copper; appearance alone is less decisive than a supported product identification. In an approved teacher-run test, oxygen relights a glowing splint and a small hydrogen sample gives a squeaky pop with a lighted splint. Gas samples must be kept separate and tested through the school’s safe method.",
+        "Chlorine bleaches damp litmus after an initial acid effect, but chloride electrolysis and chlorine testing need additional school controls and suitable extraction. Do not identify gases by deliberately smelling them. This guide introduces copper-sulfate investigation; chloride and acidified-water collection need separate approved practical observations.",
+        "Compare a control with no current and repeat under matching conditions. Electrode spacing, immersed area, supply setting, solution concentration, temperature and duration can change observations. Deposits can be lost on washing, gases can dissolve and electrodes can react. No observed deposit, gas test or current measurement has been obtained for this project."
+      ],
+      "example": {
+        "question": "An anode made from graphite gives gas during copper-sulfate electrolysis. Is it safe to conclude from bubbling alone that it is pure oxygen?",
+        "steps": [
+          "Bubbling shows gas formation but not gas identity.",
+          "Graphite may react with oxygen to produce carbon dioxide.",
+          "Check electrode suitability and use approved product identification; do not invent a completed gas test."
+        ],
+        "explanation": "Separate theoretical prediction, observed evidence and limitations of the apparatus."
+      },
+      "practice": {
+        "question": "Why include a no-current control?",
+        "answer": "It checks whether a change requires the electrical treatment rather than merely immersion or another background process.",
+        "explanation": "Separate theoretical prediction, observed evidence and limitations of the apparatus."
+      },
+      "terms": [
+        "aqueous electrolysis",
+        "direct current",
+        "control",
+        "gas identification",
+        "electrode material"
+      ],
+      "commonMistakes": [
+        "Do not infer pure oxygen from bubbling alone.",
+        "An electrode called inert must still be suitable for the particular system."
+      ],
+      "practical": {
+        "apparatus": [
+          "Teacher-prepared aqueous copper(II) sulfate and suitable approved inert electrodes",
+          "Low-voltage direct-current supply, leads, electrode holder and container",
+          "Timer and teacher-approved separate product-testing apparatus"
+        ],
+        "method": [
+          "With power off, label the supply terminals and electrode positions; keep electrodes separated.",
+          "Record starting conditions, then apply the approved electrical setting for a fixed observation period.",
+          "Record changes at each electrode separately; the teacher manages any gas collection and tests.",
+          "Switch off before handling the cell, compare a no-current control and repeat."
+        ],
+        "variables": [
+          "Record electrode deposits and separately identified gas products.",
+          "Keep solution concentration/volume, immersed electrode area, spacing, temperature and duration consistent."
+        ],
+        "safety": [
+          "Wear eye protection; use the approved low-voltage supply and avoid splashes.",
+          "Do not mix collected gases or smell them; the teacher controls gas tests and any chloride/acid demonstrations.",
+          "Collect copper-containing waste as directed by the school rather than disposing of it casually."
+        ],
+        "quality": [
+          "Verify electrode material; graphite is unsuitable for confidently obtaining pure oxygen in this model.",
+          "Document actual observations and control results; do not substitute expected products for measured results."
+        ]
+      }
     }
   ],
   "status": "source-checked",
@@ -1778,6 +2038,21 @@
       "url": "https://activeteach-prod.resource.pearson-intl.com/r00/r0035/r003582/r00358258/current/8eb2_changing_mass.pdf",
       "sectionIds": [
         "magnesium-oxide-investigation"
+      ]
+    },
+    {
+      "title": "Pearson International GCSE core practical guide: electrolysis",
+      "url": "https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Biology/2017/teaching-and-learning-materials/biology-chemistry-physics-core-practical-guide.pdf#page=87",
+      "sectionIds": [
+        "aqueous-product-predictions",
+        "aqueous-electrolysis-investigation"
+      ]
+    },
+    {
+      "title": "RSC: copper(II) sulfate electrolysis and electrode effects",
+      "url": "https://edu.rsc.org/experiments/electrolysis-of-copperii-sulfate-solution/476.article",
+      "sectionIds": [
+        "aqueous-electrolysis-investigation"
       ]
     }
   ]
