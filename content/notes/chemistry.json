@@ -5,6 +5,7 @@
   "sourcePages": [
     17,
     18,
+    19,
     20,
     21
   ],
@@ -21,7 +22,9 @@
     "Use electronic configuration to explain main-group positions.",
     "Explain ionic, covalent and metallic bonding using electrostatic attraction.",
     "Draw and check electron-transfer and shared-electron representations.",
-    "Connect structure and charge-carrier mobility to physical properties."
+    "Connect structure and charge-carrier mobility to physical properties.",
+    "Connect amount, mass and equation ratios, and calculate yield and formulae from evidence.",
+    "Use solution and gas-volume calculations with exact units and Paper2C applicability."
   ],
   "sections": [
     {
@@ -758,6 +761,515 @@
       ]
     },
     {
+      "id": "groups-and-noble-gases",
+      "title": "Outer electrons explain group similarities and noble-gas stability",
+      "points": [
+        "1.23",
+        "1.24"
+      ],
+      "paragraphs": [
+        "For the main-group elements studied here, members of the same group have the same number of outer-shell electrons. Chemical reactions involve these electrons, so members of a group often form similar ions and compounds and show similar chemical behaviour.",
+        "Lithium has the arrangement 2, 1 and sodium 2, 8, 1. Each can lose its one outer electron to form a singly positive ion. This explains a similarity; it does not mean their reaction rates must be identical. The number of occupied shells and attraction to the outer electron also differ.",
+        "Noble gases have full outer shells: helium has two electrons filling its first shell, while neon and argon have eight in their outer shells. Their stable arrangements mean that they do not readily gain, lose or share electrons in ordinary reactions.",
+        "Do not turn “do not readily react” into “can never form any compound.” The introductory rule concerns their low reactivity in the conditions studied. Helium also shows why “every stable atom has eight electrons in its outer shell” is incorrect."
+      ],
+      "example": {
+        "question": "Compare lithium (2, 1) and sodium (2, 8, 1), then explain why neon (2, 8) is much less reactive in ordinary conditions.",
+        "steps": [
+          "Lithium and sodium each have one outer electron and tend to form +1 ions by losing it.",
+          "Neon already has a full outer shell, so it does not readily change its electron arrangement.",
+          "Their configurations explain patterns without asserting identical reactivity."
+        ],
+        "explanation": "Use the outer-shell arrangement and the change involved in reaction."
+      },
+      "practice": {
+        "question": "Why is helium stable with only two electrons?",
+        "answer": "Its first shell is full at two electrons. The eight-electron outer-shell model does not apply to helium’s first shell.",
+        "explanation": "Use the outer-shell arrangement and the change involved in reaction."
+      },
+      "terms": [
+        "group",
+        "outer shell",
+        "noble gas",
+        "stable configuration"
+      ],
+      "commonMistakes": [
+        "Similar chemical properties do not mean identical reaction rates."
+      ]
+    },
+    {
+      "id": "equations-and-state-symbols",
+      "title": "Write and balance equations without changing formulae",
+      "points": [
+        "1.25"
+      ],
+      "paragraphs": [
+        "A word equation names the reactants and products. A chemical equation replaces those names with correct formulae. For example, magnesium + hydrochloric acid → magnesium chloride + hydrogen becomes Mg + HCl → MgCl₂ + H₂ before balancing.",
+        "Balance using numbers in front of formulae: Mg + 2HCl → MgCl₂ + H₂. There is one Mg atom, two H atoms and two Cl atoms on each side. Changing HCl into HCl₂ would change the substance and is not a valid balancing method.",
+        "State symbols describe the substances under the stated conditions: (s) solid, (l) liquid, (g) gas and (aq) dissolved in water. With dilute aqueous acid and dissolved salt, the equation is Mg(s) + 2HCl(aq) → MgCl₂(aq) + H₂(g). Water as a pure liquid is H₂O(l), not H₂O(aq).",
+        "For an unfamiliar reaction, use the supplied reactant and product identities and conditions; do not invent a product just to balance atoms. Check every element and, for ionic equations, total charge. These examples introduce the method; the complete collection of syllabus reactions still needs separate coverage."
+      ],
+      "example": {
+        "question": "Balance the supplied reaction Al(s) + O₂(g) → Al₂O₃(s).",
+        "steps": [
+          "Two Al₂O₃ formula units contain six O atoms, requiring three O₂ molecules.",
+          "Those products contain four Al atoms, requiring four Al atoms on the left.",
+          "4Al(s) + 3O₂(g) → 2Al₂O₃(s). Verify Al:4=4 and O:6=6."
+        ],
+        "explanation": "Preserve correct chemical identities and conserve each type of atom."
+      },
+      "practice": {
+        "question": "May you change the subscript in Al₂O₃ to balance the equation?",
+        "answer": "No. Preserve the compound’s formula and change coefficients in front of formulae.",
+        "explanation": "Preserve correct chemical identities and conserve each type of atom."
+      },
+      "terms": [
+        "word equation",
+        "coefficient",
+        "subscript",
+        "state symbol",
+        "balanced equation"
+      ],
+      "commonMistakes": [
+        "Aqueous means dissolved in water; it does not mean every liquid."
+      ]
+    },
+    {
+      "id": "relative-formula-mass",
+      "title": "Count every atom when calculating relative formula mass",
+      "points": [
+        "1.26"
+      ],
+      "paragraphs": [
+        "Relative formula mass, Mᵣ, is the sum of the relative atomic masses, Aᵣ, for all atoms represented by a formula. For a molecular substance, the same calculation gives relative molecular mass. These relative quantities are ratios and have no unit.",
+        "Use the atomic masses provided in the question or its Periodic Table. In these examples only, use H=1, C=12, N=14, O=16, Mg=24, S=32, Ca=40 and Cu=64. Other supplied precision may change a rounded numerical result.",
+        "A subscript multiplies the element before it; a subscript outside brackets multiplies the whole bracket. Ca(OH)₂ contains one Ca, two O and two H: Mᵣ = 40 + 2(16+1) = 74. It does not contain two calcium atoms.",
+        "A hydration dot counts complete water molecules in the formula unit. CuSO₄·5H₂O has Mᵣ = 64 + 32 + 4(16) + 5(2+16) = 250. A coefficient in a reaction equation does not change the Mᵣ of the substance itself."
+      ],
+      "example": {
+        "question": "Using N=14, H=1, S=32, O=16, calculate Mᵣ of (NH₄)₂SO₄.",
+        "steps": [
+          "The formula represents N₂H₈SO₄.",
+          "Contribution = 2(14) + 8(1) + 32 + 4(16).",
+          "Mᵣ = 132, with no unit."
+        ],
+        "explanation": "Expand the formula into atom counts, then add each atomic-mass contribution."
+      },
+      "practice": {
+        "question": "Does 2H₂O in an equation mean the relative molecular mass of water is 36?",
+        "answer": "No. Water has Mᵣ=18 using H=1, O=16. The coefficient specifies twice the amount, not a different molecule.",
+        "explanation": "Expand the formula into atom counts, then add each atomic-mass contribution."
+      },
+      "terms": [
+        "relative formula mass",
+        "relative molecular mass",
+        "relative atomic mass",
+        "brackets",
+        "water of crystallisation"
+      ],
+      "commonMistakes": [
+        "Count bracket multipliers and hydration water separately.",
+        "Do not put g after a dimensionless Mᵣ value."
+      ]
+    },
+    {
+      "id": "moles-and-mass",
+      "title": "A mole measures amount; molar mass connects amount to mass",
+      "points": [
+        "1.27",
+        "1.28"
+      ],
+      "paragraphs": [
+        "The mole, symbol mol, is the unit of amount of substance. It counts a very large fixed number of specified entities, such as atoms, molecules or formula units. Name the entity: one mole of oxygen atoms is not one mole of O₂ molecules.",
+        "Molar mass M is the mass per mole, measured here in g mol⁻¹. Its numerical value in these units matches the relevant relative atomic or formula mass. For MgO using Mg=24, O=16, Mᵣ=40 and M=40 g mol⁻¹. The relative quantity and the molar mass are related but have different units.",
+        "Use n = m/M, m = nM and M = m/n, with n in mol and m in g for the units used here. Convert kilograms or milligrams to grams first. A mole is not a fixed mass of every substance: different substances have different molar masses.",
+        "Carry sufficient digits through intermediate steps and round at the end to the requested precision. Write units so that dividing g by g mol⁻¹ clearly gives mol. Do not substitute the volume of a liquid into a mass equation."
+      ],
+      "example": {
+        "question": "Find the amount in 3.6 g of water using H=1, O=16.",
+        "steps": [
+          "M(H₂O)=18 g mol⁻¹.",
+          "n = 3.6/18 = 0.20 mol of water molecules.",
+          "This amount contains 0.40 mol of H atoms and 0.20 mol of O atoms."
+        ],
+        "explanation": "Keep amount, mass and molar mass separate and let their units guide the calculation."
+      },
+      "practice": {
+        "question": "How much does 0.15 mol of MgO weigh using M=40 g mol⁻¹?",
+        "answer": "m=nM=0.15×40=6.0 g.",
+        "explanation": "Keep amount, mass and molar mass separate and let their units guide the calculation."
+      },
+      "terms": [
+        "mole",
+        "amount of substance",
+        "molar mass",
+        "n=m/M"
+      ],
+      "commonMistakes": [
+        "State whether an amount counts atoms, molecules or formula units."
+      ]
+    },
+    {
+      "id": "reacting-masses",
+      "title": "Use mole ratios to calculate reacting masses",
+      "points": [
+        "1.29"
+      ],
+      "paragraphs": [
+        "A balanced equation gives ratios of amounts, not usually ratios of masses. In 2Mg + O₂ → 2MgO, two mol of Mg react with one mol of O₂ to produce two mol of MgO. Using Mg=24, O=16, the corresponding masses are 48 g, 32 g and 80 g.",
+        "For an equation-based calculation, convert the known reactant mass into mol, use the coefficient ratio, then convert the product amount into mass. State assumptions such as complete reaction, pure reactant and sufficient supply of any other reactant.",
+        "With 4.8 g Mg and excess oxygen, n(Mg)=4.8/24=0.20 mol. The Mg:MgO ratio is 1:1, so 0.20 mol MgO has a theoretical mass 0.20×40=8.0 g. Oxygen contributes 3.2 g: the product contains atoms from both reactants.",
+        "Experimental mass pairs can also show a reacting ratio if the reaction is complete and the measured substances are correctly identified. If12.0 g carbon combines with 32.0 g oxygen to give 44.0 g carbon dioxide, a proportional run using 3.0 g carbon needs 8.0 g oxygen and gives 11.0 g product under the same assumptions.",
+        "If both reactant quantities are supplied, compare the available mol divided by their coefficients. The smaller value determines the limiting reactant. An excess reactant does not all have to be consumed, and scaling from its total starting mass can overpredict the product."
+      ],
+      "example": {
+        "question": "React 4.8 g Mg with only 1.6 g O₂ using 2Mg+O₂→2MgO. Find the maximum MgO mass.",
+        "steps": [
+          "n(Mg)=4.8/24=0.20 mol; n(O₂)=1.6/32=0.050 mol.",
+          "Mg capacity=0.20/2=0.10; O₂ capacity=0.050/1=0.050. Oxygen limits.",
+          "n(MgO)=2×0.050=0.10 mol; mass=0.10×40=4.0 g."
+        ],
+        "explanation": "Convert mass to amount, apply the balanced ratio, then convert back to mass."
+      },
+      "practice": {
+        "question": "Why is the theoretical MgO mass larger than the mass of reacted Mg?",
+        "answer": "Oxygen atoms are incorporated into the product, adding mass while total mass of the reacting substances is conserved.",
+        "explanation": "Convert mass to amount, apply the balanced ratio, then convert back to mass."
+      },
+      "terms": [
+        "stoichiometry",
+        "coefficient ratio",
+        "limiting reactant",
+        "excess",
+        "reacting mass"
+      ],
+      "commonMistakes": [
+        "Equation coefficients are mole ratios, not automatically mass ratios."
+      ]
+    },
+    {
+      "id": "percentage-yield",
+      "title": "Compare actual product with the theoretical yield",
+      "points": [
+        "1.30"
+      ],
+      "paragraphs": [
+        "Theoretical yield is the product amount predicted from the limiting reactant and balanced equation, assuming complete conversion along the intended reaction. Actual yield is the product recovered. Compare them in matching units and for the same product.",
+        "Percentage yield = (actual yield/theoretical yield)×100. If theoretical product is 8.0 g and the isolated dry product is 6.4 g, the percentage yield is 80%. The denominator is not the total starting mass of all materials.",
+        "Incomplete reaction, competing reactions and product lost during transfer or separation can reduce actual yield. Wet or impure product can instead give an apparent mass above the theoretical value. An apparent yield above 100% is evidence to investigate the measurement or assumptions, not creation of extra matter.",
+        "A yield alone does not identify the cause of a loss. Use procedure observations and purity measurements to support an explanation. Distinguish percentage yield from percentage purity and from atom economy, which answer different questions."
+      ],
+      "example": {
+        "question": "A theoretical yield is 8.0 g. Calculate the percentage yield for 6.4 g isolated product.",
+        "steps": [
+          "Check both masses refer to the same intended product.",
+          "Percentage yield=(6.4/8.0)×100=80%.",
+          "The calculation quantifies recovery; it does not prove where the missing product went."
+        ],
+        "explanation": "Calculate a comparison for the same product, then discuss evidence for its limitations."
+      },
+      "practice": {
+        "question": "A still-wet sample gives 9.2 g against an 8.0 g theoretical yield. What is its apparent yield and likely limitation?",
+        "answer": "115%; remaining solvent or another impurity may inflate the measured mass. Investigate rather than interpreting it as a valid yield of pure dry product.",
+        "explanation": "Calculate a comparison for the same product, then discuss evidence for its limitations."
+      },
+      "terms": [
+        "theoretical yield",
+        "actual yield",
+        "percentage yield",
+        "purity"
+      ],
+      "commonMistakes": [
+        "Do not divide by reactant mass unless that is also the independently calculated theoretical product mass."
+      ]
+    },
+    {
+      "id": "empirical-formulae",
+      "title": "Find the simplest whole-number atom ratio",
+      "points": [
+        "1.32",
+        "1.33"
+      ],
+      "paragraphs": [
+        "An empirical formula gives the simplest whole-number ratio of atoms of the elements in a compound. It need not show the number of atoms in an individual molecule. CH₂O is the empirical formula of a compound whose molecular formula may be C₆H₁₂O₆.",
+        "Convert each element’s mass into an amount using its relative atomic mass, divide all amounts by the smallest, then seek a simple whole-number ratio. For percentage composition, treating the percentages as masses in a100 g sample is a convenient consistent basis.",
+        "An illustrative compound with 40.0% C, 6.67% H and 53.33% O gives amounts about 3.333, 6.67 and 3.333 mol on that basis, close to 1:2:1. Small differences can reflect the rounded inputs; the evidence supports CH₂O, not a formula based on the mass ratio 40:6.67:53.33.",
+        "A ratio close to 1:1.5 should be multiplied throughout by 2, giving 2:3. Do not round 1.5 to 2 independently. Larger departures require uncertainty or data-quality review rather than forcing a familiar formula."
+      ],
+      "example": {
+        "question": "An oxide contains 5.4 g Al and 4.8 g O. Using Al=27, O=16, find its empirical formula.",
+        "steps": [
+          "n(Al)=5.4/27=0.20; n(O)=4.8/16=0.30.",
+          "Divide by 0.20: ratio 1:1.5.",
+          "Multiply both by 2: Al:O=2:3, so Al₂O₃."
+        ],
+        "explanation": "Use amounts to infer the atom ratio, and apply any multiplier to every element."
+      },
+      "practice": {
+        "question": "Should an empirical atom ratio 1:1.5 be rounded directly to 1:2?",
+        "answer": "No. Multiply the entire ratio by 2 to obtain 2:3 if the measurements support that ratio.",
+        "explanation": "Use amounts to infer the atom ratio, and apply any multiplier to every element."
+      },
+      "terms": [
+        "empirical formula",
+        "mole ratio",
+        "whole-number ratio",
+        "percentage composition"
+      ],
+      "commonMistakes": [
+        "Mass ratios must be converted to atom-amount ratios."
+      ]
+    },
+    {
+      "id": "molecular-formulae",
+      "title": "Use molecular mass to scale the empirical formula",
+      "points": [
+        "1.32",
+        "1.33"
+      ],
+      "paragraphs": [
+        "A molecular formula states the actual numbers of each type of atom in a molecule. An empirical formula states only their simplest ratio. C₂H₆ has empirical formula CH₃; an ionic lattice such as MgO is represented by a formula-unit ratio rather than individual MgO molecules.",
+        "Calculate the relative mass of the empirical formula, then divide the supplied relative molecular mass by that value. A valid multiplier should be a positive whole number within the precision of the data. Multiply every empirical subscript by the same factor.",
+        "For empirical CH₂O using C=12, H=1, O=16, empirical formula mass is 30. A relative molecular mass 180 gives factor 6 and molecular formula C₆H₁₂O₆. The mass data supply information that elemental percentages alone cannot.",
+        "If the ratio is not consistent with an integer, check the empirical formula, stated masses, units and uncertainty. Do not invent a nearest formula when the discrepancy is too large. Real molecular formula evidence also needs the compound’s identity and molecular-mass measurement."
+      ],
+      "example": {
+        "question": "A molecular compound has empirical formula CH₃ and relative molecular mass 30. Find its molecular formula.",
+        "steps": [
+          "Empirical formula mass=12+3=15.",
+          "Multiplier=30/15=2.",
+          "Multiply both subscripts: C₂H₆."
+        ],
+        "explanation": "Use independent molecular-mass information to determine the common multiplier."
+      },
+      "practice": {
+        "question": "Can CH₃ and a relative molecular mass 20 establish a valid whole-number multiple?",
+        "answer": "Not from these exact inputs:20/15 is not an integer. Recheck the data or their stated uncertainty.",
+        "explanation": "Use independent molecular-mass information to determine the common multiplier."
+      },
+      "terms": [
+        "molecular formula",
+        "empirical formula mass",
+        "integer multiplier",
+        "formula unit"
+      ],
+      "commonMistakes": [
+        "The multiplier applies to every subscript, including an implied 1."
+      ]
+    },
+    {
+      "id": "experimental-formula-evidence",
+      "title": "Use mass changes to infer oxide and water formulae",
+      "points": [
+        "1.29",
+        "1.31",
+        "1.33"
+      ],
+      "paragraphs": [
+        "An experimental formula determination must identify which masses belong to each element. Burning a known metal mass adds oxygen from the surroundings. Reducing a known oxide removes oxygen. Subtract the apparatus mass and identify the chemical change before turning a total mass into an element mass.",
+        "In illustrative magnesium data, 1.20 g of Mg produces 2.00 g of oxide. The oxygen mass is 0.80 g. Amounts are 1.20/24=0.050 mol Mg atoms and 0.80/16=0.050 mol O atoms, giving MgO. Use 16 for oxygen atoms in the solid, not 32 for O₂ gas.",
+        "For a separate idealised demonstration, 8.0 g of pure copper(II) oxide becomes 6.4 g Cu and produces 1.8 g collected pure water when reduced with hydrogen. Oxygen removed from the oxide is 1.6 g. If all this oxygen is captured in the water, its hydrogen mass is 1.8−1.6=0.2 g. H:O amounts are 0.2/1 : 1.6/16 =2:1, supporting empirical H₂O.",
+        "This water result depends on complete reduction, complete collection and the absence of pre-existing moisture or other products. It is a worked mass analysis, not an instruction to set up a hydrogen apparatus. A teacher must manage any demonstration through an approved protocol.",
+        "Repeated weighing can improve confidence in reaction completion, but constant mass alone does not prove that the product is pure. Product loss, contamination and side reactions can bias an inferred ratio. Keep the observation, assumptions and conclusion separate."
+      ],
+      "example": {
+        "question": "From 1.20 g Mg and 2.00 g oxide, determine the oxygen mass and Mg:O atom ratio.",
+        "steps": [
+          "Oxygen gained=2.00−1.20=0.80 g.",
+          "Mg amount=1.20/24=0.050 mol; O atom amount=0.80/16=0.050 mol.",
+          "Ratio 1:1 supports MgO under the purity and complete-reaction assumptions."
+        ],
+        "explanation": "Identify each element’s measured mass, convert to atoms’ amounts, and state the experimental assumptions."
+      },
+      "practice": {
+        "question": "Why divide the oxygen mass in the solid by 16 rather than 32?",
+        "answer": "The formula ratio compares oxygen atoms with metal atoms.32 is the molar mass of O₂ molecules, not of oxygen atoms.",
+        "explanation": "Identify each element’s measured mass, convert to atoms’ amounts, and state the experimental assumptions."
+      },
+      "terms": [
+        "combustion",
+        "reduction",
+        "mass difference",
+        "experimental formula",
+        "assumption"
+      ],
+      "commonMistakes": [
+        "Apparatus mass and oxygen gas molecule mass are not element masses in the compound."
+      ]
+    },
+    {
+      "id": "water-of-crystallisation",
+      "title": "Determine water molecules per salt formula unit",
+      "points": [
+        "1.31",
+        "1.33"
+      ],
+      "paragraphs": [
+        "Water of crystallisation is water incorporated in the crystal structure of a hydrated salt. A formula such as CuSO₄·xH₂O expresses x water molecules for each CuSO₄ formula unit. It does not mean liquid water is simply mixed onto the outside.",
+        "Heat a known hydrated salt under suitable controlled conditions to remove its hydration water without decomposing the salt, then compare its initial and final masses after cooling. The lost mass represents water only if no salt or other material is lost and the residue is the intended anhydrous salt.",
+        "In illustrative data, 3.00 g hydrated copper(II) sulfate leaves 1.92 g anhydrous CuSO₄. Water lost=1.08 g. With Cu=64, S=32, O=16, H=1, n(CuSO₄)=1.92/160=0.012 mol and n(H₂O)=1.08/18=0.060 mol. The water:salt ratio is 5:1, giving CuSO₄·5H₂O.",
+        "The result can be distorted by incomplete drying, reabsorption of water while cooling, overheated salt decomposition or splashing. Constant mass is useful evidence of a stable measured mass, but the chemical identity and heating conditions still need checking. These numbers are teaching inputs, not results from a completed practical."
+      ],
+      "example": {
+        "question": "Find x using 3.00 g CuSO₄·xH₂O and 1.92 g CuSO₄ residue with the supplied atomic masses.",
+        "steps": [
+          "Lost water=1.08 g, equivalent to 0.060 mol H₂O.",
+          "Anhydrous salt=1.92/160=0.012 mol CuSO₄.",
+          "x=0.060/0.012=5."
+        ],
+        "explanation": "Separate salt and water masses, convert each to amount, then form the ratio."
+      },
+      "practice": {
+        "question": "Does every mass loss on heating a salt represent water of crystallisation?",
+        "answer": "No. Decomposition, splashing or other volatile materials can cause mass loss. Establish what the solid and residue are.",
+        "explanation": "Separate salt and water masses, convert each to amount, then form the ratio."
+      },
+      "terms": [
+        "hydrated salt",
+        "anhydrous salt",
+        "water of crystallisation",
+        "constant mass"
+      ],
+      "commonMistakes": [
+        "Compare moles of water with moles of salt, not their masses directly."
+      ]
+    },
+    {
+      "id": "solution-concentration",
+      "title": "Relate amount, concentration and solution volume (Paper 2C)",
+      "points": [
+        "1.34C"
+      ],
+      "paragraphs": [
+        "For concentration c in mol dm⁻³ and solution volume V in dm³, amount n=cV. Rearrangements are c=n/V and V=n/c. The volume is the total solution volume, not automatically the volume of solvent added. These calculations apply to Paper 2C.",
+        "Convert cm³ to dm³ by dividing by 1000: 25.0 cm³=0.0250 dm³. A 25.0 cm³ portion of 0.200 mol dm⁻³ solution contains 0.200×0.0250=0.00500 mol. Using 25.0 without conversion would give a result 1000 times too large.",
+        "Concentration in g dm⁻³ is a different unit. For the same solute, dividing a mass concentration by its molar mass converts it to mol dm⁻³. A sodium hydroxide solution with 8.0 g dm⁻³ and M=40 g mol⁻¹ has c=0.20 mol dm⁻³.",
+        "When an unchanged amount of solute is diluted, c₁V₁=c₂V₂. This relation assumes no solute is lost or reacts. Diluting 25.0 cm³ of 0.200 mol dm⁻³ solution to a final 100.0 cm³ gives 0.0500 mol dm⁻³, not a dilution by an extra 100.0 cm³ of water."
+      ],
+      "example": {
+        "question": "Find the amount in 25.0 cm³ of 0.200 mol dm⁻³ solution.",
+        "steps": [
+          "Convert volume: 25.0/1000=0.0250 dm³.",
+          "n=cV=0.200×0.0250=0.00500 mol.",
+          "Check units: mol dm⁻³×dm³=mol."
+        ],
+        "explanation": "Convert volume units first and conserve amount only when the conditions permit."
+      },
+      "practice": {
+        "question": "What is the final concentration after diluting that unchanged solute amount to 100.0 cm³?",
+        "answer": "0.00500/0.1000=0.0500 mol dm⁻³.",
+        "explanation": "Convert volume units first and conserve amount only when the conditions permit."
+      },
+      "terms": [
+        "molar concentration",
+        "solution volume",
+        "dm³",
+        "dilution"
+      ],
+      "commonMistakes": [
+        "Use final solution volume; added solvent volume is a different measurement."
+      ]
+    },
+    {
+      "id": "gas-volume-at-rtp",
+      "title": "Use the stated gas molar volume at rtp (Paper 2C)",
+      "points": [
+        "1.35C"
+      ],
+      "paragraphs": [
+        "For the gas-volume calculations specified here, one mole of gas occupies 24 dm³, or 24 000 cm³, at room temperature and pressure (rtp). This is the syllabus calculation value; gas volume depends on temperature and pressure. These calculations apply to Paper 2C.",
+        "Use n=V/24 if V is in dm³, or n=V/24 000 if V is in cm³. For 0.0125 mol of gas, V=0.0125×24=0.300 dm³=300 cm³ at rtp. State the conditions and keep the units consistent.",
+        "Use a balanced equation before connecting a mass of reactant to a gas amount. Mg+2HCl→MgCl₂+H₂ has Mg:H₂ ratio 1:1. If0.60 g pure Mg reacts completely with excess acid using Mg=24, n(Mg)=0.025 mol and the predicted H₂ volume is 0.600 dm³ at rtp.",
+        "Volumes of reacting gases at the same temperature and pressure have the same ratios as their equation coefficients. This shortcut applies to gases under matched conditions, not to comparing a solid volume with a gas volume. Gas leakage, dissolved gas and unmatched collection conditions limit a real measurement."
+      ],
+      "example": {
+        "question": "What volume at rtp corresponds to 0.0125 mol of a gas using the specified molar volume?",
+        "steps": [
+          "V=0.0125×24=0.300 dm³.",
+          "Multiply by 1000 to obtain 300 cm³.",
+          "The result assumes the stated rtp calculation conditions."
+        ],
+        "explanation": "Use the correct gas amount, matched conditions and a consistent volume unit."
+      },
+      "practice": {
+        "question": "May 24 dm³ mol⁻¹ be applied unchanged to a hot gas collected at a different pressure?",
+        "answer": "No. The specified value applies to rtp. Different conditions need appropriate information and treatment.",
+        "explanation": "Use the correct gas amount, matched conditions and a consistent volume unit."
+      },
+      "terms": [
+        "gas molar volume",
+        "rtp",
+        "gas volume",
+        "matched conditions"
+      ],
+      "commonMistakes": [
+        "Do not mix 24 dm³ with an input volume measured in cm³."
+      ]
+    },
+    {
+      "id": "magnesium-oxide-investigation",
+      "title": "Investigating a metal oxide formula by combustion",
+      "points": [
+        "1.31",
+        "1.36"
+      ],
+      "paragraphs": [
+        "In a teacher-supervised combustion investigation, magnesium is heated in a crucible and the mass increase is used to infer how much oxygen combined with it. The lid helps retain oxide product while controlled air access permits reaction. This is one permitted route for 1.36; reduction of an oxide is another route needing its own demonstration review.",
+        "Keep three masses distinct: empty crucible with lid, crucible/lid with magnesium before heating, and crucible/lid with product after cooling. Subtract the empty mass for the metal and product masses. The product-minus-metal difference estimates oxygen gained under the model’s assumptions.",
+        "Heat, cool and weigh repeatedly until successive readings are stable within the balance’s resolution. Cooling is necessary for safe handling and a reliable mass measurement. The stable-mass condition supports completion but cannot on its own exclude impurities.",
+        "Loss of oxide powder or incomplete reaction makes the measured oxygen gain too small, biasing the inferred oxygen:magnesium ratio downwards. Initial oxide on the ribbon and other reactions also complicate the mass difference. Magnesium can react with nitrogen as well as oxygen, so a real product may need purity checks; do not assume every gram gained is necessarily oxygen.",
+        "The numerical example below is idealised. Unfamiliar real measurements, uncertainty analysis and practical observation have not yet been calibrated for this teaching section."
+      ],
+      "example": {
+        "question": "An illustrative crucible/lid weighs 20.00 g, with Mg21.20 g, and with cooled product 22.00 g. Infer the formula using Mg=24, O=16.",
+        "steps": [
+          "Metal mass=21.20−20.00=1.20 g; product mass=22.00−20.00=2.00 g.",
+          "Oxygen gain=0.80 g. Amounts Mg=0.050 mol and O=0.050 mol.",
+          "Ratio 1:1 supports MgO if the product is pure and no metal or product was lost."
+        ],
+        "explanation": "Use mass differences for each element and connect a procedural error to the direction of its bias."
+      },
+      "practice": {
+        "question": "How does escaped oxide powder affect the inferred oxygen gain?",
+        "answer": "The final product mass becomes too small, so the apparent oxygen gain and oxygen:magnesium ratio are underestimated.",
+        "explanation": "Use mass differences for each element and connect a procedural error to the direction of its bias."
+      },
+      "terms": [
+        "crucible",
+        "combustion",
+        "constant mass",
+        "oxygen gain",
+        "product loss"
+      ],
+      "commonMistakes": [
+        "Cool before weighing; a stable mass is not proof of product purity."
+      ],
+      "practical": {
+        "apparatus": [
+          "Teacher-approved magnesium sample and crucible with lid",
+          "Balance, tongs, secure heating support and heat-resistant mat",
+          "Teacher-controlled burner and eye protection"
+        ],
+        "method": [
+          "Record the empty crucible/lid mass, then its mass with clean magnesium.",
+          "Under teacher supervision heat with controlled air access while retaining oxide.",
+          "Allow safe cooling and weigh with the same lid; repeat heating/cooling/weighing to stable readings.",
+          "Calculate metal and oxygen masses and their amounts, then evaluate product-loss and purity assumptions."
+        ],
+        "variables": [
+          "Measure the mass increase; keep the crucible/lid assembly and weighing procedure consistent."
+        ],
+        "safety": [
+          "Wear eye protection, use tongs and allow hot apparatus to cool.",
+          "Do not look directly at burning magnesium; the teacher controls heating and lid handling."
+        ],
+        "quality": [
+          "Record balance resolution and repeated final masses.",
+          "The teacher checks the approved procedure and possible side products; stable mass alone does not certify purity."
+        ]
+      }
+    },
+    {
       "id": "ion-formation",
       "title": "Making ions by losing or gaining electrons",
       "points": [
@@ -1252,5 +1764,21 @@
   ],
   "status": "source-checked",
   "complete": false,
-  "humanReviewed": false
+  "humanReviewed": false,
+  "supportingSources": [
+    {
+      "title": "RSC: measuring magnesium combustion mass changes",
+      "url": "https://edu.rsc.org/download?ac=545227",
+      "sectionIds": [
+        "magnesium-oxide-investigation"
+      ]
+    },
+    {
+      "title": "Pearson: magnesium mass-change apparatus and procedure",
+      "url": "https://activeteach-prod.resource.pearson-intl.com/r00/r0035/r003582/r00358258/current/8eb2_changing_mass.pdf",
+      "sectionIds": [
+        "magnesium-oxide-investigation"
+      ]
+    }
+  ]
 }

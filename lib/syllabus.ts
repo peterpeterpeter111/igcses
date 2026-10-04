@@ -1,3 +1,4 @@
+import chemistryCalculations from '../research/syllabus/4CH1-formulae-and-calculations.json' with { type: 'json' };
 import biologyTransport from '../research/syllabus/4BI1-cell-transport.json' with { type: 'json' };
 import mathsPaperDemands from '../research/syllabus/4MB1-selected-paper-demands.json' with { type: 'json' };
 import mathsAlgebraRest from '../research/syllabus/4MB1-systems-inequalities-sequences.json' with { type: 'json' };
@@ -41,6 +42,7 @@ export const reviewedInventories = [
   { title: 'Cell transport (2.15–2.17)', ...biologyTransport },
   { title: 'Cells and tissues (1.1–1.16)', ...humanCells },
   { title: 'Principles foundations (1.1–1.22)', ...chemistryStates },
+  { title: 'Group behaviour, formulae and calculations (1.23–1.36)', ...chemistryCalculations },
   { title: 'Ionic, covalent and metallic bonding (1.37–1.54C)', ...chemistryBonding },
   { title: 'Biological molecules (2.1–2.10)', ...humanMolecules },
   { title: 'Number: section 1, rows A–K', ...mathsNumber },

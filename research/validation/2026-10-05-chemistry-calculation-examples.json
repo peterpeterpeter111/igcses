@@ -1,0 +1,225 @@
+{
+  "date": "2026-10-05",
+  "reviewerType": "agent",
+  "scope": "36 exact arithmetic and atom-count checks for original illustrative teaching inputs; no actual experiments, learner-response calibration or active templates.",
+  "checks": [
+    {
+      "id": "balanced-magnesium-acid",
+      "actual": "{'Mg': 1, 'H': 2, 'Cl': 2}",
+      "expected": "{'Mg': 1, 'H': 2, 'Cl': 2}",
+      "passed": true
+    },
+    {
+      "id": "balanced-aluminium-oxide",
+      "actual": "{'Al': 4, 'O': 6}",
+      "expected": "{'Al': 4, 'O': 6}",
+      "passed": true
+    },
+    {
+      "id": "balanced-magnesium-oxygen",
+      "actual": "{'Mg': 2, 'O': 2}",
+      "expected": "{'Mg': 2, 'O': 2}",
+      "passed": true
+    },
+    {
+      "id": "mr-calcium-hydroxide",
+      "actual": "74",
+      "expected": "74",
+      "passed": true
+    },
+    {
+      "id": "mr-ammonium-sulfate",
+      "actual": "132",
+      "expected": "132",
+      "passed": true
+    },
+    {
+      "id": "mr-hydrated-copper-sulfate",
+      "actual": "250",
+      "expected": "250",
+      "passed": true
+    },
+    {
+      "id": "water-amount",
+      "actual": "1/5",
+      "expected": "1/5",
+      "passed": true
+    },
+    {
+      "id": "hydrogen-atoms-in-water",
+      "actual": "2/5",
+      "expected": "2/5",
+      "passed": true
+    },
+    {
+      "id": "mgo-mass",
+      "actual": "6",
+      "expected": "6",
+      "passed": true
+    },
+    {
+      "id": "mgo-excess-oxygen",
+      "actual": "8",
+      "expected": "8",
+      "passed": true
+    },
+    {
+      "id": "oxygen-gain",
+      "actual": "16/5",
+      "expected": "16/5",
+      "passed": true
+    },
+    {
+      "id": "experimental-carbon-scale-product",
+      "actual": "11",
+      "expected": "11",
+      "passed": true
+    },
+    {
+      "id": "experimental-carbon-scale-oxygen",
+      "actual": "8",
+      "expected": "8",
+      "passed": true
+    },
+    {
+      "id": "limiting-oxygen-extent",
+      "actual": "1/20",
+      "expected": "1/20",
+      "passed": true
+    },
+    {
+      "id": "limiting-mgo-mass",
+      "actual": "4",
+      "expected": "4",
+      "passed": true
+    },
+    {
+      "id": "yield-percent",
+      "actual": "80",
+      "expected": "80",
+      "passed": true
+    },
+    {
+      "id": "wet-apparent-yield",
+      "actual": "115",
+      "expected": "115",
+      "passed": true
+    },
+    {
+      "id": "al-o-amount-ratio",
+      "actual": "2/3",
+      "expected": "2/3",
+      "passed": true
+    },
+    {
+      "id": "ch2o-molecular-factor",
+      "actual": "6",
+      "expected": "6",
+      "passed": true
+    },
+    {
+      "id": "ch3-molecular-factor",
+      "actual": "2",
+      "expected": "2",
+      "passed": true
+    },
+    {
+      "id": "incompatible-molecular-factor",
+      "actual": "4/3",
+      "expected": "4/3",
+      "passed": true
+    },
+    {
+      "id": "mgo-experimental-ratio",
+      "actual": "1",
+      "expected": "1",
+      "passed": true
+    },
+    {
+      "id": "water-oxygen-removed",
+      "actual": "8/5",
+      "expected": "8/5",
+      "passed": true
+    },
+    {
+      "id": "water-hydrogen-mass",
+      "actual": "1/5",
+      "expected": "1/5",
+      "passed": true
+    },
+    {
+      "id": "water-atom-ratio",
+      "actual": "2",
+      "expected": "2",
+      "passed": true
+    },
+    {
+      "id": "hydrate-water-mass",
+      "actual": "27/25",
+      "expected": "27/25",
+      "passed": true
+    },
+    {
+      "id": "hydrate-ratio",
+      "actual": "5",
+      "expected": "5",
+      "passed": true
+    },
+    {
+      "id": "solution-volume-dm3",
+      "actual": "1/40",
+      "expected": "1/40",
+      "passed": true
+    },
+    {
+      "id": "solution-amount",
+      "actual": "1/200",
+      "expected": "1/200",
+      "passed": true
+    },
+    {
+      "id": "mass-to-molar-concentration",
+      "actual": "1/5",
+      "expected": "1/5",
+      "passed": true
+    },
+    {
+      "id": "diluted-concentration",
+      "actual": "1/20",
+      "expected": "1/20",
+      "passed": true
+    },
+    {
+      "id": "gas-rtp-volume",
+      "actual": "3/10",
+      "expected": "3/10",
+      "passed": true
+    },
+    {
+      "id": "gas-cm3",
+      "actual": "300",
+      "expected": "300",
+      "passed": true
+    },
+    {
+      "id": "gas-from-Mg",
+      "actual": "3/5",
+      "expected": "3/5",
+      "passed": true
+    },
+    {
+      "id": "crucible-mg-mass",
+      "actual": "6/5",
+      "expected": "6/5",
+      "passed": true
+    },
+    {
+      "id": "crucible-product-mass",
+      "actual": "2",
+      "expected": "2",
+      "passed": true
+    }
+  ],
+  "passed": 36,
+  "noteSha256": "63d6273ef845a6dbdbe107856cad67012bc05df8b208d021755d107016332320"
+}
