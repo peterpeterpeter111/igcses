@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-05",
+  "scope": "Generated SQL text-size and payload provenance;isolated D1 and SQLite checks recorded separately. No production import.",
+  "bytes": 1053688,
+  "statements": 765,
+  "maximumStatementBytes": 48480,
+  "appendStatements": 7,
+  "maximumChapterJsonBytes": 141318,
+  "officialLimitsSource": "https://developers.cloudflare.com/d1/platform/limits/",
+  "sqlStatementLimitBytes": 100000,
+  "guardedChapterContentBytes": 1900000,
+  "sourceHashes": {
+    "scripts/seed-content.ts": "62efd55a4e53f8ec93b7d884520b2e2a55907ac53b38b36476f564427dc9a50a",
+    "scripts/read-content-seed.ts": "50c80aa36260931368f886de713ba1c271895d970357ffd6dceb7b6804a8031f",
+    "scripts/check-d1-runtime.ts": "951388783b6ddcde5cd9fb692b76508afa8927aae8ea0c3908ef40f6fc1beb75",
+    "tests/content-seed.test.ts": "82e8efe0e1bf6cc81bed8f27b3c06e276671c62f570295dda57927d0cf7bfe3e"
+  },
+  "completeChapters": 0,
+  "productionImported": false
+}

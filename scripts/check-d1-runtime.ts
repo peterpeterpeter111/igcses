@@ -1,7 +1,7 @@
 // Isolated local Miniflare D1: never points at development or production data.
 import { Miniflare } from 'miniflare';
 import { readdirSync, readFileSync } from 'node:fs';
-import { execFileSync } from 'node:child_process';
+import { readContentSeed } from './read-content-seed.ts';
 import assert from 'node:assert/strict';
 import { subjects } from '../content/catalog.ts';
 import { notes } from '../content/notes.ts';
@@ -30,9 +30,9 @@ try {
     .prepare('INSERT INTO subjects(id,code,title) VALUES (?,?,?)')
     .bind('physics', '4PH1', 'Physics')
     .run();
-  const seed = execFileSync(process.execPath,
-    ['--experimental-strip-types', 'scripts/seed-content.ts', '--stdout'], { encoding: 'utf8' });
+  const seed = readContentSeed();
   const seedStatements = seed.trim().split('\n');
+  for (const statement of seedStatements) assert.ok(Buffer.byteLength(statement, 'utf8') <= 100000);
   for (let i = 0; i < seedStatements.length; i += 25)
     await db.batch(seedStatements.slice(i, i + 25).map((sql) => db.prepare(sql)));
   assert.equal((await db.prepare('SELECT COUNT(*) AS n FROM subjects').first<{ n: number }>())?.n, subjects.length);

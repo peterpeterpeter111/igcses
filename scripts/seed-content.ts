@@ -14,15 +14,34 @@ const quote = (v: unknown) =>
         (typeof v === 'string' ? v : JSON.stringify(v)).replaceAll("'", "''") +
         "'";
 const lines: string[] = [];
+// D1 limits SQL text to100,000bytes per statement. Split escaped UTF-8
+// content at48KB, leaving ample space for identifiers and the UPDATE wrapper.
+// Re-seeding resets the first chunk before appending, so it is repeatable.
+function contentChunks(text: string): string[] {
+  const chunks: string[] = [];
+  let chunk = '', bytes = 0;
+  for (const character of text) {
+    const size = Buffer.byteLength(character === "'" ? "''" : character, 'utf8');
+    if (bytes + size > 48000) { chunks.push(chunk); chunk = ''; bytes = 0; }
+    chunk += character; bytes += size;
+  }
+  chunks.push(chunk);
+  return chunks;
+}
 function upsert(table: string, row: Record<string, unknown>, key = 'id') {
-  const names = Object.keys(row);
+  const payload = table === 'chapters' && typeof row.content_json === 'string' ? row.content_json : null;
+  if (payload !== null && Buffer.byteLength(payload, 'utf8') > 1900000)
+    throw new Error('Chapter content approaches the D1 two-megabyte row limit; split the stored content before seeding.');
+  const chunks = payload === null ? [] : contentChunks(payload);
+  const seedRow = chunks.length ? { ...row, content_json: chunks[0] } : row;
+  const names = Object.keys(seedRow);
   lines.push(
     'INSERT INTO ' +
       table +
       ' (' +
       names.join(',') +
       ') VALUES (' +
-      names.map((k) => quote(row[k])).join(',') +
+      names.map((k) => quote(seedRow[k])).join(',') +
       ') ON CONFLICT(' +
       key +
       ') DO UPDATE SET ' +
@@ -32,6 +51,8 @@ function upsert(table: string, row: Record<string, unknown>, key = 'id') {
         .join(',') +
       ';',
   );
+  for (const chunk of chunks.slice(1))
+    lines.push('UPDATE chapters SET content_json=content_json || ' + quote(chunk) + ' WHERE ' + key + '=' + quote(row[key]) + ';');
 }
 for (const s of subjects)
   upsert('subjects', { id: s.id, code: s.code, title: s.title });
@@ -74,6 +95,8 @@ for (const p of read('research/coverage.json')) {
     scope_status: 'candidate',
   });
 }
+for (const line of lines)
+  if (Buffer.byteLength(line, 'utf8') > 100000) throw new Error('Seed statement exceeds the D1 SQL-text limit.');
 const sql = lines.join('\n') + '\n';
 if (args[0] === '--stdout') {
   // Let isolated checks consume the seed without changing a prepared file.

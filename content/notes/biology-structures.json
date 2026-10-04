@@ -8,7 +8,8 @@
   "sourcePages": [
     19,
     20,
-    21
+    21,
+    22
   ],
   "prerequisites": [
     "Organisms may contain one cell or many cells.",
@@ -26,7 +27,9 @@
     "Explain photosynthesis, leaf adaptations and mineral requirements, and evaluate the prescribed plant investigations.",
     "Explain the specified dietary components,alimentary canal,peristalsis,digestive enzymes,bile and villus adaptations.",
     "Evaluate Paper2B food calorimetry without claiming measured trials.",
-    "Respiration and later systems,broader unfamiliar assessments and whole-chapter completion remain unfinished."
+    "Explain ATP,aerobic/anaerobic pathways and seed respiration investigations.",
+    "Interpret Paper2B plant gas exchange and hydrogencarbonate-indicator comparisons.",
+    "Human gas exchange,later systems and broader unfamiliar assessments remain unfinished."
   ],
   "sections": [
     {
@@ -1915,6 +1918,517 @@
       "commonMistakes": [
         "Repeating alone does not eliminate a systematic bias."
       ]
+    },
+    {
+      "id": "respiration-and-atp",
+      "title": "Respiration makes ATP available for cell processes",
+      "points": [
+        "2.34",
+        "2.35"
+      ],
+      "paragraphs": [
+        "Respiration is a set of chemical processes in cells that transfers energy from organic substrates and supports ATP production. ATP stands for adenosine triphosphate. Energy transferred from substrate breakdown can be used to form ATP from ADP and inorganic phosphate.",
+        "ATP hydrolysis to ADP and phosphate can be coupled to processes requiring energy, including active transport, muscle contraction and synthesis of larger molecules. ATP is an immediate energy-transfer molecule, rather than the body’s principal long-term food store.",
+        "Cells continually use and regenerate ATP. Respiration does not create energy, and its energy transfer is not all captured as ATP: some is transferred as heat. Breathing supplies gases for many organisms but is not the same process as chemical respiration.",
+        "Plants respire as well as photosynthesise. ATP production does not occur only in mitochondria: glycolysis in the cytoplasm also contributes. Mitochondria support the later stages of aerobic respiration in many eukaryotic cells."
+      ],
+      "example": {
+        "question": "Connect glucose breakdown to active transport without saying ATP creates energy.",
+        "steps": [
+          "Respiration transfers energy from glucose and supports ATP formation.",
+          "ATP hydrolysis is coupled to the transporter’s energy requirement.",
+          "Energy changes form and is transferred; it is not created."
+        ],
+        "explanation": "Describe the substrate-to-ATP-to-cell-process connection rather than treating ATP as newly created energy."
+      },
+      "practice": {
+        "question": "Is moving air into a lung itself cellular respiration?",
+        "answer": "No. Ventilation supplies air; cellular respiration is a chemical process in cells.",
+        "explanation": "Describe the substrate-to-ATP-to-cell-process connection rather than treating ATP as newly created energy."
+      },
+      "terms": [
+        "respiration",
+        "ATP",
+        "ADP",
+        "phosphate",
+        "energy transfer"
+      ],
+      "commonMistakes": [
+        "Breathing, respiration and photosynthesis are different processes."
+      ]
+    },
+    {
+      "id": "aerobic-anaerobic-comparison",
+      "title": "Compare oxygen use, products and ATP yield",
+      "points": [
+        "2.36"
+      ],
+      "paragraphs": [
+        "Aerobic respiration uses oxygen and, in the overall glucose model, produces carbon dioxide and water. Glucose is oxidised more completely than in the specified anaerobic pathways, giving a larger ATP yield per glucose molecule.",
+        "The school anaerobic pathways do not require oxygen and leave organic products such as lactate or ethanol. Much of the substrate’s chemical energy remains in these products, so less ATP is produced per glucose than by complete aerobic oxidation.",
+        "“Anaerobic” does not mean “no ATP”. Glycolysis can still generate ATP while fermentation allows the pathway to continue. In more advanced usage, fermentation is distinguished from anaerobic respiration using other electron acceptors; the specified animal and plant word-equation models here are fermentation pathways.",
+        "Both kinds of pathway involve enzyme-controlled reactions. Oxygen use, products and ATP yield are separate comparison headings: carbon dioxide alone does not prove that a pathway was aerobic."
+      ],
+      "example": {
+        "question": "Why is “anaerobic respiration releases no energy” incorrect?",
+        "steps": [
+          "The specified pathway can produce ATP without oxygen.",
+          "Its ATP yield per glucose is smaller, not zero.",
+          "Organic end products retain energy that has not been extracted by complete oxidation."
+        ],
+        "explanation": "Compare oxygen requirement, products and ATP yield separately."
+      },
+      "practice": {
+        "question": "Does carbon dioxide release by yeast alone prove oxygen was used?",
+        "answer": "No. Ethanol fermentation can release carbon dioxide without requiring oxygen.",
+        "explanation": "Compare oxygen requirement, products and ATP yield separately."
+      },
+      "terms": [
+        "aerobic",
+        "anaerobic",
+        "fermentation",
+        "ATP yield",
+        "oxidation"
+      ],
+      "commonMistakes": [
+        "Do not infer oxygen use from carbon dioxide alone."
+      ]
+    },
+    {
+      "id": "aerobic-respiration-equation",
+      "title": "Balance the overall aerobic glucose equation",
+      "points": [
+        "2.37"
+      ],
+      "paragraphs": [
+        "The word equation is glucose + oxygen → carbon dioxide + water. Energy is transferred through the overall process, including energy used in ATP formation and heat; it is not another material substance in an atom balance.",
+        "The balanced net symbol equation is C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O. Both sides contain six carbon, twelve hydrogen and eighteen oxygen atoms. The six oxygen molecules supply twelve oxygen atoms in addition to the six already in glucose.",
+        "This overall equation summarises many steps. It does not imply that cells burn glucose in a flame or that every respiratory substrate is glucose. Enzymes allow the cellular processes to occur under conditions compatible with living cells."
+      ],
+      "example": {
+        "question": "Count oxygen atoms on both sides of C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O.",
+        "steps": [
+          "Left: six in glucose plus twelve in six O₂ molecules gives eighteen.",
+          "Right: twelve in six CO₂ plus six in six H₂O gives eighteen.",
+          "Changing a coefficient counts whole molecules; do not alter a chemical formula to force balance."
+        ],
+        "explanation": "Check each element while keeping the correct molecular formulae unchanged."
+      },
+      "practice": {
+        "question": "Would writing 6O instead of 6O₂ correctly represent the oxygen reactant?",
+        "answer": "No. The reactant is molecular oxygen, O₂; changing its formula changes the substance.",
+        "explanation": "Check each element while keeping the correct molecular formulae unchanged."
+      },
+      "terms": [
+        "glucose",
+        "oxygen",
+        "carbon dioxide",
+        "water",
+        "balanced equation"
+      ],
+      "commonMistakes": [
+        "Do not count O₂ as one oxygen atom."
+      ]
+    },
+    {
+      "id": "anaerobic-word-equations",
+      "title": "Distinguish animal and plant anaerobic products",
+      "points": [
+        "2.36",
+        "2.38"
+      ],
+      "paragraphs": [
+        "The specified animal word equation is glucose → lactic acid, with a small ATP yield associated with the pathway. In cell conditions, the product is mainly lactate; school questions commonly use the term lactic acid. This model does not produce carbon dioxide as an end product.",
+        "The specified plant model is glucose → ethanol + carbon dioxide. Suitable plant tissues can use this pathway when oxygen is limited. Yeast also carries out ethanol fermentation, but yeast is a fungus rather than a plant.",
+        "In exercising muscle, anaerobic ATP production can supplement aerobic metabolism when demand is high. Lactate can be transported and metabolised later; avoid assuming that the whole body has stopped using oxygen or that lactate explains every kind of muscle soreness.",
+        "The product names identify the pathway model. A small ATP yield is not a separate word-equation carbon product, and energy is not a material molecule counted in the equation."
+      ],
+      "example": {
+        "question": "A student puts carbon dioxide into the animal lactic-acid word equation. Correct it and contrast the plant model.",
+        "steps": [
+          "Animal: glucose → lactic acid (lactate in cells).",
+          "Plant model: glucose → ethanol + carbon dioxide.",
+          "Both can support some ATP production without requiring oxygen."
+        ],
+        "explanation": "Match the stated organism and pathway to the specified products."
+      },
+      "practice": {
+        "question": "Is yeast a flowering plant because it makes ethanol?",
+        "answer": "No. Yeast is a fungus; a shared biochemical pathway does not place organisms in the same group.",
+        "explanation": "Match the stated organism and pathway to the specified products."
+      },
+      "terms": [
+        "lactate",
+        "lactic acid",
+        "ethanol",
+        "carbon dioxide",
+        "yeast"
+      ],
+      "commonMistakes": [
+        "Do not give animal lactate production the ethanol pathway’s carbon-dioxide product."
+      ]
+    },
+    {
+      "id": "seed-carbon-dioxide-investigation",
+      "title": "Check carbon dioxide release from respiring seeds",
+      "points": [
+        "2.39"
+      ],
+      "paragraphs": [
+        "Living germinating seeds use stored organic material and can release carbon dioxide. In a teacher-prepared comparison, the released gas is brought into contact with fresh limewater; a cloudy result supports the presence of carbon dioxide.",
+        "Compare with a matched non-living seed control and a no-seed background control, using comparable seed mass, temperature, apparatus and observation interval. Incoming atmospheric carbon dioxide and microbial activity can otherwise contribute to the response.",
+        "The teacher prepares any disinfected or killed-seed controls and checks that treatment does not introduce a chemical interference. Seed gas should not be confused with gas from a burning food sample: combustion and cellular respiration are different experimental processes.",
+        "A positive carbon-dioxide test does not by itself establish aerobic rather than ethanol fermentation. Evidence about oxygen availability or uptake is needed for that stronger conclusion. No gas observation has been obtained in this project."
+      ],
+      "example": {
+        "question": "Both live-seed and no-seed limewater tests turn cloudy. Why is attributing all cloudiness to seed respiration weak?",
+        "steps": [
+          "The background setup also produced a positive response.",
+          "Incoming carbon dioxide or another setup effect must be considered.",
+          "Use controlled, comparable gas exposure before assigning a difference to seeds."
+        ],
+        "explanation": "Identify what the test detects and which alternative sources the controls address."
+      },
+      "practice": {
+        "question": "Does the carbon-dioxide test alone identify aerobic respiration?",
+        "answer": "No. Some anaerobic pathways also release carbon dioxide.",
+        "explanation": "Identify what the test detects and which alternative sources the controls address."
+      },
+      "terms": [
+        "germination",
+        "limewater",
+        "carbon dioxide",
+        "background control"
+      ],
+      "commonMistakes": [
+        "A positive test needs a comparison and does not establish the entire respiratory pathway."
+      ],
+      "practical": {
+        "apparatus": [
+          "Teacher-prepared living, killed-seed and no-seed comparisons",
+          "Matched gas-collection/delivery arrangements and fresh limewater",
+          "Timer and controlled-temperature location"
+        ],
+        "method": [
+          "Set equal seed masses and matched conditions; record the fresh test reagent’s appearance.",
+          "Use the teacher-approved gas delivery arrangement without sucking reagents or blowing into seed controls.",
+          "Compare responses after equal exposure intervals, including the no-seed background.",
+          "Repeat and record actual changes; consider atmospheric carbon dioxide and microbial sources."
+        ],
+        "variables": [
+          "Compare living and non-living seed treatments; observe the carbon-dioxide test.",
+          "Match seed species/mass, temperature, apparatus and exposure time."
+        ],
+        "safety": [
+          "Teacher prepares killed/disinfected material and gas apparatus; use eye protection and avoid reagent contact.",
+          "Do not eat experimental seeds or directly inhale from apparatus."
+        ],
+        "quality": [
+          "Cloudiness supports carbon dioxide but does not distinguish aerobic from ethanol fermentation.",
+          "No physical trial or outcome has been obtained."
+        ]
+      }
+    },
+    {
+      "id": "seed-heat-investigation",
+      "title": "Compare temperature changes in living and killed seeds",
+      "points": [
+        "2.39"
+      ],
+      "paragraphs": [
+        "A teacher-prepared insulated-flask comparison can investigate heat transfer from germinating seeds. One flask holds living seeds; a comparable flask holds killed seeds that have cooled to the same starting temperature. Thermometers or probes record changes over the same interval.",
+        "Use matched masses of the same seed species, similar moisture, identical insulation and the same surroundings. Suitable breathable plugs allow oxygen supply while supporting probes and limiting heat loss. A sealed oxygen-depleted container is not the intended aerobic heat comparison.",
+        "Teacher-controlled surface disinfection limits microbial respiration as a competing heat source. Disinfection must be appropriate for the living-seed treatment: a damaged live sample would undermine the comparison. A control still warm from boiling is also invalid.",
+        "With illustrative inputs, the live-seed flask rises from 20.0 °C to 24.0 °C and the cooled-control flask from 20.0 °C to 20.5 °C. The rises are 4.0 °C and 0.5 °C; the difference between rises is 3.5 °C. These are invented teaching inputs, not observed data or a measured ATP yield."
+      ],
+      "example": {
+        "question": "For the illustrative inputs, calculate each rise and compare them.",
+        "steps": [
+          "Live-seed rise = 24.0 − 20.0 = 4.0 °C.",
+          "Control rise = 20.5 − 20.0 = 0.5 °C.",
+          "Difference = 3.5 °C; controls strengthen attribution but temperature is not a direct ATP count."
+        ],
+        "explanation": "Compare changes from matched starting conditions and identify competing sources of heat."
+      },
+      "practice": {
+        "question": "Why cool killed seeds to the same starting temperature before comparison?",
+        "answer": "Residual heat from the killing treatment could otherwise mimic or hide the biological temperature change.",
+        "explanation": "Compare changes from matched starting conditions and identify competing sources of heat."
+      },
+      "terms": [
+        "insulation",
+        "temperature change",
+        "microbial respiration",
+        "control"
+      ],
+      "commonMistakes": [
+        "Do not confuse a temperature difference with a measured amount of ATP."
+      ],
+      "practical": {
+        "apparatus": [
+          "Matched insulated flasks and equal masses of teacher-prepared living and killed seeds",
+          "Thermometers/probes and breathable supports",
+          "Controlled surroundings and a fixed observation schedule"
+        ],
+        "method": [
+          "Allow both treatments to reach the same starting temperature.",
+          "Set equal seed masses/moisture and suitable oxygen access in matched flasks.",
+          "Record initial temperatures and later readings over the same intervals.",
+          "Compare temperature changes and repeat with prepared controls."
+        ],
+        "variables": [
+          "Compare living and killed seeds; measure temperature changes.",
+          "Control species, mass, moisture, insulation, ambient conditions and interval."
+        ],
+        "safety": [
+          "Teacher handles disinfection, killing treatment and fragile/hot apparatus.",
+          "Use suitable breathable plugs rather than creating a sealed pressure hazard; do not eat seeds."
+        ],
+        "quality": [
+          "Microbial respiration and residual boiling heat are competing heat sources.",
+          "Temperature increase is not a direct ATP measurement."
+        ]
+      }
+    },
+    {
+      "id": "plant-gas-diffusion",
+      "title": "Paper 2B: gas exchange follows concentration gradients",
+      "points": [
+        "2.40B"
+      ],
+      "paragraphs": [
+        "Carbon dioxide and oxygen move through a leaf by diffusion. Random molecular movement produces net movement from higher to lower concentration, while molecules still move in both directions. A gas concentration difference is not an active pumping mechanism.",
+        "Gas moves between the outside air, stomatal pores and internal leaf air spaces. It then dissolves at moist cell surfaces before crossing cell membranes. Photosynthesis and respiration change local gas concentrations and therefore influence the gradients.",
+        "The direction for one gas need not match the other. In strong light, a photosynthesising leaf may have net carbon-dioxide entry and net oxygen exit. In darkness, respiration can give the opposite net directions."
+      ],
+      "example": {
+        "question": "Does carbon dioxide always move out of a living leaf?",
+        "steps": [
+          "No. Its net direction depends on relative concentrations.",
+          "Photosynthetic uptake in suitable light can support net inward diffusion.",
+          "Respiration in darkness can support net outward diffusion."
+        ],
+        "explanation": "Connect the gas-specific concentration difference to net movement."
+      },
+      "practice": {
+        "question": "Is diffusion the same as air being pumped through a leaf?",
+        "answer": "No. It is net molecular movement down a concentration gradient.",
+        "explanation": "Connect the gas-specific concentration difference to net movement."
+      },
+      "terms": [
+        "diffusion",
+        "concentration gradient",
+        "stoma",
+        "air space"
+      ],
+      "commonMistakes": [
+        "Use a net direction rather than claiming all molecules travel only one way."
+      ]
+    },
+    {
+      "id": "plant-net-gas-exchange",
+      "title": "Paper 2B: interpret photosynthesis and respiration together",
+      "points": [
+        "2.41B",
+        "2.44B"
+      ],
+      "paragraphs": [
+        "Respiration continues in living leaf cells during both day and night. Photosynthesis needs light and can remove carbon dioxide while releasing oxygen. The observed net exchange combines the contributions of both processes.",
+        "In darkness, photosynthesis is absent and respiratory carbon-dioxide production can exceed uptake, giving net carbon-dioxide release and oxygen uptake. In sufficiently bright light, photosynthesis can exceed respiration, giving net carbon-dioxide uptake and oxygen release.",
+        "At the compensation condition, the photosynthetic carbon-dioxide uptake rate balances respiratory release, so net exchange is approximately zero. Both processes can still be occurring; zero net exchange is not proof that metabolism stopped.",
+        "For a clearly hypothetical arithmetic model, in common rate units, photosynthesis removes 8 units of carbon dioxide while respiration releases 3, so net uptake is 5. If both rates are 3, net exchange is 0. These numbers are a model, not measured biological rates."
+      ],
+      "example": {
+        "question": "Photosynthesis removes 8 units of CO₂ per interval and respiration releases 3 in the same units. Find the net exchange.",
+        "steps": [
+          "Net uptake = 8 − 3 = 5 units per interval.",
+          "Respiration continues despite the inward net carbon-dioxide movement.",
+          "At equal rates, the two contributions cancel in the net measurement."
+        ],
+        "explanation": "Subtract opposing rates expressed on the same basis and retain both underlying processes."
+      },
+      "practice": {
+        "question": "Does zero net carbon-dioxide movement prove no respiration?",
+        "answer": "No. Photosynthesis can be taking up carbon dioxide at the same rate that respiration releases it.",
+        "explanation": "Subtract opposing rates expressed on the same basis and retain both underlying processes."
+      },
+      "terms": [
+        "net gas exchange",
+        "compensation",
+        "light intensity",
+        "respiration"
+      ],
+      "commonMistakes": [
+        "Do not say respiration switches off in daylight."
+      ]
+    },
+    {
+      "id": "leaf-gas-exchange-adaptations",
+      "title": "Paper 2B: connect leaf features to gas transfer",
+      "points": [
+        "2.42B"
+      ],
+      "paragraphs": [
+        "A typical leaf is thin, so gases travel short distances between air spaces and cells. Many internal moist cell surfaces provide a large exchange area. Spongy-mesophyll air spaces link the stomatal openings with internal tissues.",
+        "Stomatal pores provide routes through the epidermis, and guard cells regulate the openings. Their distribution differs between species, so “every leaf has stomata only underneath” is not a universal rule.",
+        "The waxy cuticle helps limit water loss rather than providing the main gas-diffusion pathway. Leaf adaptation is a balance: opening pores improves gas access but also permits water-vapour loss."
+      ],
+      "example": {
+        "question": "Why do air spaces improve access to photosynthetic cells?",
+        "steps": [
+          "They connect stomata with internal surfaces.",
+          "Carbon dioxide can diffuse through the spaces to moist cell surfaces.",
+          "Short transfer distances support effective gas exchange."
+        ],
+        "explanation": "Link each structural feature to distance, area or access."
+      },
+      "practice": {
+        "question": "Is the waxy cuticle the main open passage for gases?",
+        "answer": "No. The stomatal pores are the main regulated openings in the typical model.",
+        "explanation": "Link each structural feature to distance, area or access."
+      },
+      "terms": [
+        "thin leaf",
+        "spongy mesophyll",
+        "moist surface",
+        "epidermis",
+        "cuticle"
+      ],
+      "commonMistakes": [
+        "Do not turn a typical stomatal pattern into a universal rule."
+      ]
+    },
+    {
+      "id": "stomata-and-guard-cells",
+      "title": "Paper 2B: stomata balance gas access and water loss",
+      "points": [
+        "2.43B"
+      ],
+      "paragraphs": [
+        "A stoma is a pore between guard cells. When the pore opens, carbon dioxide and oxygen can diffuse between the leaf’s internal air spaces and external air. The guard cells regulate access; they do not actively pump every gas molecule.",
+        "Changes in guard-cell water content and turgor alter pore width. Greater turgor in the typical model opens the pore; loss of turgor tends to close it. The curved walls and paired shape help produce that movement.",
+        "Open pores allow water vapour to leave as well as gas exchange. Water stress can promote closure and limit carbon-dioxide uptake even in daylight. Light is one influence among several, not a guarantee that all stomata remain open."
+      ],
+      "example": {
+        "question": "Why can stomatal closure reduce both water loss and photosynthesis?",
+        "steps": [
+          "A smaller pore limits water-vapour transfer.",
+          "It also restricts carbon-dioxide access to photosynthetic cells.",
+          "The plant faces a trade-off rather than simply switching off one independent process."
+        ],
+        "explanation": "Explain opening or closure and then its consequences for both gases and water."
+      },
+      "practice": {
+        "question": "Do guard cells pump carbon dioxide into the leaf?",
+        "answer": "No. They regulate pore width; the gas itself moves mainly by diffusion down its gradient.",
+        "explanation": "Explain opening or closure and then its consequences for both gases and water."
+      },
+      "terms": [
+        "stoma",
+        "guard cell",
+        "turgor",
+        "water vapour"
+      ],
+      "commonMistakes": [
+        "Do not confuse pore regulation with active transport of carbon dioxide."
+      ]
+    },
+    {
+      "id": "leaf-indicator-investigation",
+      "title": "Paper 2B: compare light conditions using an indicator",
+      "points": [
+        "2.45B"
+      ],
+      "paragraphs": [
+        "Hydrogencarbonate indicator responds to changes related to carbon dioxide in solution. The usual starting reference is red/orange at the atmospheric-equilibrium condition; higher carbon dioxide shifts it towards yellow, and lower carbon dioxide towards purple. Check the supplied indicator’s reference colours rather than treating a colour as an exact gas concentration.",
+        "Use comparable healthy leaves in teacher-prepared tubes with equal small indicator volumes and comparable headspaces. Place leaves above the solution to avoid direct contamination. Compare bright light, dim light and darkness over the same interval, with a no-leaf tube as a background comparison.",
+        "Control temperature, leaf species/area, starting indicator condition and exposure time. A lamp can warm the apparatus, and uneven leaf condition can change respiratory as well as photosynthetic rates. A no-leaf comparison for each condition gives stronger evidence if conditions themselves affect the indicator.",
+        "Expected purple in suitable bright light supports net carbon-dioxide removal; yellow in darkness supports net addition. Dim light may leave the reference colour when rates balance, but“dim” does not guarantee compensation. No colour outcomes have been measured here."
+      ],
+      "example": {
+        "question": "A leaf tube stays red/orange under a dim light. What is a supported explanation and one limit?",
+        "steps": [
+          "Photosynthetic carbon-dioxide uptake may approximately balance respiratory release.",
+          "The observation concerns net exchange, not an absence of both processes.",
+          "Indicator sensitivity and leaf health must be considered before treating it as an exact compensation measurement."
+        ],
+        "explanation": "Interpret the carbon-dioxide change with a working reference and controlled conditions."
+      },
+      "practice": {
+        "question": "Does hydrogencarbonate indicator directly measure oxygen concentration?",
+        "answer": "No. It responds to carbon-dioxide-related changes, so oxygen exchange is inferred from additional biological knowledge.",
+        "explanation": "Interpret the carbon-dioxide change with a working reference and controlled conditions."
+      },
+      "terms": [
+        "hydrogencarbonate indicator",
+        "reference colour",
+        "headspace",
+        "net exchange"
+      ],
+      "commonMistakes": [
+        "Do not treat an expected colour as an obtained experimental result."
+      ],
+      "practical": {
+        "apparatus": [
+          "Comparable healthy leaves and matched transparent tubes",
+          "Teacher-prepared reference-equilibrated hydrogencarbonate indicator",
+          "Light source, foil/dim-light covering, timer and thermometer"
+        ],
+        "method": [
+          "Record equal starting indicator colour, volume and headspace; keep leaves above the liquid.",
+          "Compare bright, dim and dark treatments with a no-leaf background comparison.",
+          "Maintain comparable temperature and exposure interval; record actual final colours.",
+          "Repeat and compare with the reference chart before inferring net carbon-dioxide changes."
+        ],
+        "variables": [
+          "Vary light; observe the carbon-dioxide-related indicator response.",
+          "Control temperature, leaf area/species, indicator volume/headspace and exposure time."
+        ],
+        "safety": [
+          "Teacher prepares indicator and handles glass/leaf supports; use eye protection as instructed.",
+          "Keep lamp heat controlled and electrical equipment away from liquids."
+        ],
+        "quality": [
+          "A no-leaf comparison under each condition helps detect direct setup effects.",
+          "Colour is not a calibrated gas-exchange rate or oxygen test."
+        ]
+      }
+    },
+    {
+      "id": "leaf-indicator-evaluation",
+      "title": "Paper 2B: evaluate what the indicator can establish",
+      "points": [
+        "2.45B"
+      ],
+      "paragraphs": [
+        "An indicator records a response to its chemical environment, not a direct count of photosynthetic or respiratory events. A colour shift needs a no-leaf control, stable starting colour and evidence that contamination or temperature effects do not explain the pattern.",
+        "Limewater is useful for detecting added carbon dioxide, but is less suitable for distinguishing increases and decreases around an atmospheric starting level. Hydrogencarbonate indicator allows comparison of both directions under the stated conditions.",
+        "Use repeats and a reference colour chart or approved colour measurement. Different indicator volumes and headspaces can change response timing. A larger volume does not automatically give a faster change and a single shade is not a calibrated rate.",
+        "Leave the gas-exchange and photosynthesis claims proportional to the evidence. A non-changing tube could reflect balanced rates, low sensitivity or an unhealthy leaf, so a working light-treatment comparison matters."
+      ],
+      "example": {
+        "question": "Why can a no-leaf tube be useful even if it stays at the starting colour?",
+        "steps": [
+          "It supports stability of the indicator and surroundings without the leaf.",
+          "A leaf-specific difference is then more plausibly linked to metabolism.",
+          "It does not alone rule out all leaf damage or treatment confounds."
+        ],
+        "explanation": "State both the supported interpretation and limits of the measurement system."
+      },
+      "practice": {
+        "question": "Would adding more indicator necessarily make the response quicker?",
+        "answer": "No. The gas amount, solution volume, headspace and chemistry affect the response; more indicator is not automatically better.",
+        "explanation": "State both the supported interpretation and limits of the measurement system."
+      },
+      "terms": [
+        "control",
+        "sensitivity",
+        "colour reference",
+        "calibration"
+      ],
+      "commonMistakes": [
+        "No colour change has more than one possible explanation."
+      ]
     }
   ],
   "supportingSources": [
@@ -2015,6 +2529,32 @@
       "sectionIds": [
         "food-energy-investigation",
         "food-calorimetry-evaluation"
+      ]
+    },
+    {
+      "title": "Pearson International GCSE: respiration and leaf-indicator practical support",
+      "url": "https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Biology/2017/teaching-and-learning-materials/biology-chemistry-physics-core-practical-guide.pdf",
+      "sectionIds": [
+        "seed-carbon-dioxide-investigation",
+        "seed-heat-investigation",
+        "leaf-indicator-investigation",
+        "leaf-indicator-evaluation"
+      ]
+    },
+    {
+      "title": "OpenStax: distinguish fermentation and anaerobic respiration",
+      "url": "https://openstax.org/books/microbiology/pages/8-4-fermentation",
+      "sectionIds": [
+        "aerobic-anaerobic-comparison",
+        "anaerobic-word-equations"
+      ]
+    },
+    {
+      "title": "Science and Plants for Schools: photosynthesis measurement and net exchange",
+      "url": "https://www.saps.org.uk/teaching-resources/resources/157/measuring-the-rate-of-photosynthesis/",
+      "sectionIds": [
+        "plant-net-gas-exchange",
+        "leaf-indicator-evaluation"
       ]
     }
   ]

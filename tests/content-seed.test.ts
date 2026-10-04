@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { execFileSync } from 'node:child_process';
+import { readContentSeed } from '../scripts/read-content-seed.ts';
 import { notes } from '../content/notes.ts';
 import { subjects } from '../content/catalog.ts';
 import sources from '../research/sources.json' with { type: 'json' };
@@ -15,8 +15,10 @@ void test('content seed preserves notes exactly, is repeatable and leaves an exi
     const snapshot = () => Object.fromEntries(quizTables.map((table) =>
       [table, sqlite.prepare('SELECT * FROM ' + table + ' ORDER BY rowid').all()]));
     const before = snapshot();
-    const sql = execFileSync(process.execPath,
-      ['--experimental-strip-types', 'scripts/seed-content.ts', '--stdout'], { encoding: 'utf8' });
+    const sql = readContentSeed();
+    assert.ok(Buffer.byteLength(sql, 'utf8') > 1024 * 1024); // Exercises the former subprocess buffer failure.
+    assert.ok(sql.includes('UPDATE chapters SET content_json=content_json ||'));
+    for (const statement of sql.trim().split('\n')) assert.ok(Buffer.byteLength(statement, 'utf8') <= 100000);
     sqlite.exec(sql);
     sqlite.exec(sql);
     assert.deepEqual(snapshot(), before);

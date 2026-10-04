@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-05",
+  "scope": "Eight exact atom/temperature/net-rate checks for explicitly hypothetical teaching values. No physical measurements or calibrated biological response.",
+  "passed": 8,
+  "checks": [
+    {
+      "id": "aerobic-C",
+      "actual": "6",
+      "expected": "6",
+      "passed": true
+    },
+    {
+      "id": "aerobic-H",
+      "actual": "12",
+      "expected": "12",
+      "passed": true
+    },
+    {
+      "id": "aerobic-O",
+      "actual": "18",
+      "expected": "18",
+      "passed": true
+    },
+    {
+      "id": "live-temperature-rise",
+      "actual": "4",
+      "expected": "4",
+      "passed": true
+    },
+    {
+      "id": "control-temperature-rise",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "id": "difference-in-rises",
+      "actual": "7/2",
+      "expected": "7/2",
+      "passed": true
+    },
+    {
+      "id": "net-CO2-uptake",
+      "actual": "5",
+      "expected": "5",
+      "passed": true
+    },
+    {
+      "id": "balanced-CO2-net",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    }
+  ],
+  "noteSha256": "3858b688736614b375d020e27b47fa48f7abe51dedf256bc4af4bbb89322df67",
+  "formattingReview": "Prose spacing corrected after first browser capture; arithmetic unchanged."
+}
