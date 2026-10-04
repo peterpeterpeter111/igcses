@@ -1,3 +1,7 @@
+# Latest phase — Maths page audit, 4 October 2026
+
+Read research/checkpoints/2026-10-04-MATHS-WHOLE-AUDIT.md first. Maths all 24 QP/26 MS pages and 38 detailed parts/100 marks reviewed; stage extracted, still zero fully processed. Source issues, Q19 scope and template/AO gates remain. 104 tests and final build pass. Curriculum 255 sections/15 partial notes, 300 identities/738 requirements/401 links; six provisional/five experimental/zero active. GitHub 6f6d2b3 exactly mirrors 9fe3b5a; sync this newer audit phase non-force. No completed chapters/points, AI integration, Sites version/deployment or reset. Preserve UI/history, pause at 5% in either allowance. Older entries historical.
+
 # Latest phase — Grouped-mean prototype, 4 October 2026
 
 Read research/checkpoints/2026-10-04-GROUPED-MEAN.md first. Six provisional families/five experimental generators and offline markers/zero active. Grouped-mean domain: 1,989 inputs checked, 33 synthetic response cases; no learner calibration. 103 tests and final build/public scan pass. Curriculum remains 255 sections/15 partial notes, 300 identities/738 partial requirements/401 links; Maths 38 detailed parts/100 marks. Zero completed chapters/points/fully processed papers. GitHub blocker recovered: main 34ebe8a exactly mirrors saved 7d26593 and preserves history; sync newer local phases non-force. AI last; no Sites version/deployment or reset. Continue above 5% in both allowances, pause at 5%. Older entries historical.

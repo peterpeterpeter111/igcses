@@ -17,7 +17,7 @@
  "reviewerType": "agent",
  "humanReviewed": false,
  "status": "partial-source-checked",
- "paperStage": "indexed",
+ "paperStage": "extracted",
  "fullyProcessed": false,
  "wholePaperMarks": 100,
  "wholePaperLeafCount": 38,
@@ -77,6 +77,7 @@
  "pageAudit": {
   "questionPaper": {
    "visuallyReviewedPages": [
+    1,
     2,
     3,
     4,
@@ -101,8 +102,8 @@
     23,
     24
    ],
-   "wholeDocumentReviewed": false,
-   "scope": "All Q1–Q27 task pages reviewed across bounded phases. Cover/end-page and independent whole-document audit not certified.",
+   "wholeDocumentReviewed": true,
+   "scope": "All pages visually reviewed across saved bounded leaf phases and this cover/end-page pass. This compiles the existing reviews; no independent second reading or source-issue resolution is claimed.",
    "pageReviewDates": {
     "2": "2026-10-02",
     "3": "2026-10-02",
@@ -126,11 +127,14 @@
     "21": "2026-10-04",
     "22": "2026-10-04",
     "23": "2026-10-04",
-    "24": "2026-10-04"
+    "24": "2026-10-04",
+    "1": "2026-10-04"
    }
   },
   "markScheme": {
    "visuallyReviewedPages": [
+    1,
+    2,
     3,
     4,
     5,
@@ -153,10 +157,11 @@
     22,
     23,
     24,
-    25
+    25,
+    26
    ],
-   "wholeDocumentReviewed": false,
-   "scope": "All Q1–Q27 task pages reviewed across bounded phases. Cover/end-page and independent whole-document audit not certified.",
+   "wholeDocumentReviewed": true,
+   "scope": "All pages visually reviewed across saved bounded leaf phases and this cover/end-page pass. This compiles the existing reviews; no independent second reading or source-issue resolution is claimed.",
    "pageReviewDates": {
     "3": "2026-10-02",
     "4": "2026-10-02",
@@ -180,7 +185,10 @@
     "22": "2026-10-04",
     "23": "2026-10-04",
     "24": "2026-10-04",
-    "25": "2026-10-04"
+    "25": "2026-10-04",
+    "1": "2026-10-04",
+    "2": "2026-10-04",
+    "26": "2026-10-04"
    }
   }
  },
@@ -6174,13 +6182,12 @@
  ],
  "marksReconciled": true,
  "processingNotes": [
-  "All 38 indexed parts now have detailed agent source-checked records, covering 100 original marks. This does not promote the paper to fully processed.",
-  "The paper remains indexed; marksReconciled refers to the existing whole-paper text totals and this subset, not complete task processing.",
-  "Proposed IDs do not activate templates. Q15(b) now has a separate provisional family and experimental runtime, with no validated custom maximum or live eligibility."
+  "All 38 parts and 100 original marks have detailed source-checked records; 24 question-paper and 26 mark-scheme pages are now visually covered. Stage extracted, not fully processed.",
+  "Raw discovery, cover review and text index remain unchanged. Historical unresolved text glyphs do not override the visually read detailed notation.",
+  "Three source-linked Maths provisional families have experimental generators (Q4(a),Q15(b),Q23(c)); no active templates or validated custom maxima. Other family links, scope and source discrepancies remain open."
  ],
  "blockers": [
-  "No missing detailed leaves remain; whole-document audit, source-discrepancy reconciliation and later validation gates remain open.",
-  "Whole-paper visual/page and scheme-content audit remains incomplete.",
+  "Full page and detailed-task coverage established; source discrepancies, incomplete template links and assessment-objective/calibration gates still prevent fully processed status.",
   "Detailed notation has been read from the PDFs; the raw text index retains historical unresolved glyphs and is not the authority for formulae.",
   "Source-linked generative families, calibration and assessment-objective review remain unfinished.",
   "Q19 inverse cube-root demand is not in the obtained specification row 4G explicit list; current-series scope needs authoritative reconciliation.",
@@ -6298,5 +6305,6 @@
    "observation": "Exact inverse has four negative entries, but the illustrative 2dp decimal list prints positive magnitudes 0.14,0.29,0.71,0.43 without signs.",
    "handling": "Keep exact negative inverse and historical concession separately; do not accept positive matrices or generate a rubric from this note until reconciled."
   }
- ]
+ ],
+ "wholeDocumentAuditRef": "research/reviews/2026-10-04-maths-whole-page-audit.json"
 }

@@ -1,4 +1,4 @@
-"""Export the bounded Maths detailed subset; never promote a paper or template.
+"""Export bounded Maths details; permit extracted only with full page evidence.
 
 All references and all four output tables are checked before writing any table.
 The original discovery, text index and cover review remain immutable evidence.
@@ -28,7 +28,7 @@ def prepare(root=ROOT):
     m = read(OVERLAY)
     paper = m['paperId']
     require(paper == '4MB1-2024-summer-01-candidate' and m['qualification'] == '4MB1', 'Wrong bounded paper')
-    require(m['paperStage'] == 'indexed' and m['fullyProcessed'] is False and m['humanReviewed'] is False, 'No promotion permitted')
+    require(m['paperStage'] in ['indexed', 'extracted'] and m['fullyProcessed'] is False and m['humanReviewed'] is False, 'Processed/human promotion not permitted')
     index, cover = read(m['indexRef']), read(m['coverReviewRef'])
     require(index['paperId'] == paper and cover['candidateId'] == paper, 'Index/cover identity mismatch')
     candidate = next(r for r in read('research/discovery/2026-09-28-mathematics-b.json')['records'] if r['id'] == paper)
@@ -42,8 +42,10 @@ def prepare(root=ROOT):
         require(doc['pageCount'] == source['pageCount'] and doc['url'] == source['url'], 'Source metadata mismatch')
         audit = m['pageAudit'][key]
         pages = audit['visuallyReviewedPages']
-        require(audit['wholeDocumentReviewed'] is False, 'Partial exporter cannot claim a whole-page audit')
         require(pages and len(pages) == len(set(pages)) and all(type(p) is int and 1 <= p <= doc['pageCount'] for p in pages), 'Invalid reviewed pages')
+        require(type(audit['wholeDocumentReviewed']) is bool, 'Invalid page audit flag')
+        if audit['wholeDocumentReviewed']:
+            require(sorted(pages) == list(range(1, doc['pageCount'] + 1)), 'Whole-page audit has missing pages')
     identity = m['canonicalIdentity']
     for key in ['year', 'series', 'printedDate', 'filenameDate', 'paperLog', 'schemePublicationCode']:
         require(identity[key] == cover[key], 'Cover identity mismatch: ' + key)
@@ -95,6 +97,18 @@ def prepare(root=ROOT):
         q = t['questionPath'].split('.')[0]
         totals[q] = totals.get(q, 0) + t['originalMarks']
     require(totals == m['reviewedQuestionTotals'], 'Reviewed question totals mismatch')
+    complete_pages = all(m['pageAudit'][key]['wholeDocumentReviewed'] for key in ['questionPaper', 'markScheme'])
+    if m['paperStage'] == 'extracted':
+        require(complete_pages and len(tasks) == len(indexed) and m['detailedOriginalMarks'] == m['wholePaperMarks'], 'Extracted stage requires every task, mark and page')
+        audit = read(m['wholeDocumentAuditRef'])
+        require(audit['paperId'] == paper and audit['pageAuditComplete'] is True and audit['tasksReconciled'] is True and audit['fullyProcessed'] is False and audit['humanReviewed'] is False, 'Invalid whole-document evidence')
+        require(set(audit['reconciledTaskIds']) == set(indexed) and len(audit['reconciledTaskIds']) == len(indexed), 'Whole-audit task mismatch')
+        require(set(audit['sourceDiscrepancyIds']) == {d['id'] for d in m['sourceDiscrepancies']}, 'Whole-audit discrepancy drift')
+        audit_docs = {d['documentId']: d for d in audit['documents']}
+        require(len(audit_docs) == len(audit['documents']) == 2, 'Whole-audit document mismatch')
+        for doc in [qp, ms]:
+            a = audit_docs[doc['id']]
+            require(a['sha256'] == doc['sha256'] and a['pageCount'] == doc['pageCount'] and a['visuallyReviewedPages'] == list(range(1, doc['pageCount'] + 1)), 'Whole-audit hash/page mismatch')
 
     date = m['reviewDate']
     common = dict(reviewed_by=m['reviewer'], reviewer_type='agent', human_reviewed='false', batch_id='maths-detailed-' + date, updated_at=date)
@@ -103,7 +117,7 @@ def prepare(root=ROOT):
         pages = sorted(set(m['pageAudit'][key]['visuallyReviewedPages'] + cover[key + 'VisualPages']))
         documents.append(dict(document_id=doc['id'], qualification='4MB1', document_type=doc['type'], canonical_url=doc['url'], title='4MB1/01 Summer 2024 ' + doc['type'], publisher='Pearson', year=identity['year'], series=identity['series'], component=identity['component'], variant='unresolved', printed_exam_date=identity['printedDate'] if key == 'questionPaper' else '', filename_date=identity['filenameDate'] if key == 'questionPaper' else '', publication_code=identity['paperLog'] if key == 'questionPaper' else identity['schemePublicationCode'], sha256=doc['sha256'], page_count=doc['pageCount'], access_status='obtained', local_evidence_path=OVERLAY, reviewed_pages_json=compact([dict(page=p, mode='visual-and-text', reviewer=m['reviewer'], date=m['pageAudit'][key].get('pageReviewDates', {}).get(str(p), date) if p in m['pageAudit'][key]['visuallyReviewedPages'] else cover['reviewedAt']) for p in pages]), identity_status='agent-reviewed', identity_notes='Cover identity matched; candidate ID and unresolved variant retained. ' + cover['dateDiscrepancy'], batch_id=common['batch_id'], updated_at=date))
     require(index['allCompulsory'] is True and cover['allQuestionsRequired'] is True, 'Option rule not established')
-    papers = [dict(paper_id=paper, qualification='4MB1', year=identity['year'], series=identity['series'], component=identity['component'], variant='unresolved', qp_document_id=qp['id'], ms_document_id=ms['id'], insert_document_ids_json='[]', examiner_report_ids_json='[]', report_status=m['examinerReportStatus'], target_specification_id=m['currentSpecification']['documentId'], applicability_status='partial-current-scope-review', stage='indexed', last_successful_stage='indexed', expected_leaf_tasks=len(indexed), indexed_leaf_tasks=len(indexed), extracted_leaf_tasks=len(tasks), assessed_marks=m['wholePaperMarks'], all_alternatives_marks=m['wholePaperMarks'], option_rules_json=compact({'mode': 'all-compulsory', 'sourcePages': [1]}), reconciled_marks='true', scheme_match_status='matched-reviewed-subset', complete_page_audit='false', template_links_complete='false', blocking_issues_json=compact(m['blockers']), reviewed_at=date, **common)]
+    papers = [dict(paper_id=paper, qualification='4MB1', year=identity['year'], series=identity['series'], component=identity['component'], variant='unresolved', qp_document_id=qp['id'], ms_document_id=ms['id'], insert_document_ids_json='[]', examiner_report_ids_json='[]', report_status=m['examinerReportStatus'], target_specification_id=m['currentSpecification']['documentId'], applicability_status='partial-current-scope-review', stage=m['paperStage'], last_successful_stage=m['paperStage'], expected_leaf_tasks=len(indexed), indexed_leaf_tasks=len(indexed), extracted_leaf_tasks=len(tasks), assessed_marks=m['wholePaperMarks'], all_alternatives_marks=m['wholePaperMarks'], option_rules_json=compact({'mode': 'all-compulsory', 'sourcePages': [1]}), reconciled_marks='true', scheme_match_status='matched-all-detailed-with-source-issues' if m['paperStage'] == 'extracted' else 'matched-reviewed-subset', complete_page_audit=str(complete_pages).lower(), template_links_complete='false', blocking_issues_json=compact(m['blockers']), reviewed_at=date, **common)]
     task_rows, mappings = [], []
     for t in tasks:
         task_common = {**common, 'reviewed_by': t['reviewer'], 'reviewer_type': t['reviewerType'], 'updated_at': t['reviewDate']}
@@ -136,4 +150,4 @@ if __name__ == '__main__':
     outputs = prepare()
     for path, content in outputs.items():
         path.write_text(content)
-    print('Maths detailed records exported; paper remains indexed, no active templates.')
+    print('Maths detailed records exported at saved stage; no processed-paper or template activation.')

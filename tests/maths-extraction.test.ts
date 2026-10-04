@@ -4,7 +4,7 @@ import { execFileSync } from 'node:child_process';
 import { obtainedPaperCandidates, paperDetailedSummary } from '../lib/paper-discovery.ts';
 import detail from '../research/extractions/4MB1-2024-summer-01.json' with { type: 'json' };
 
-void test('Maths coverage exposes the reviewed subset without criteria or promotion', () => {
+void test('Maths coverage exposes complete detailed records without criteria or processed promotion', () => {
   const candidate = obtainedPaperCandidates('4MB1')[0];
   const summary = paperDetailedSummary(candidate)!;
   assert.ok(summary);
@@ -14,6 +14,11 @@ void test('Maths coverage exposes the reviewed subset without criteria or promot
   assert.equal(summary.remainingTasks, 0);
   assert.equal(summary.fullyProcessed, false);
   assert.equal(summary.humanReviewed, false);
+  assert.equal(detail.paperStage, 'extracted');
+  assert.ok(detail.pageAudit.questionPaper.wholeDocumentReviewed && detail.pageAudit.markScheme.wholeDocumentReviewed);
+  assert.equal(summary.pageAuditComplete, true);
+  assert.equal(summary.questionPaperPagesReviewed, 24);
+  assert.equal(summary.schemePagesReviewed, 26);
   assert.ok(!('tasks' in summary) && !('criteria' in summary));
   assert.equal(paperDetailedSummary({ ...candidate, questionPaper: { ...candidate.questionPaper, sha256: 'mismatch' } }), null);
   assert.equal(paperDetailedSummary({ ...candidate, markScheme: { ...candidate.markScheme, sha256: 'mismatch' } }), null);
@@ -49,7 +54,7 @@ def remove_task(m):
  m['reviewedQuestionTotals']={q:sum(t['originalMarks'] for t in m['tasks'] if t['questionPath'].split('.')[0]==q) for q in {t['questionPath'].split('.')[0] for t in m['tasks']}}
 with tempfile.TemporaryDirectory() as d:
  root=Path(d)
- for folder in ['extractions','discovery','paper-indexes','paper-reviews','syllabus','ledger/v1']:
+ for folder in ['extractions','discovery','paper-indexes','paper-reviews','reviews','syllabus','ledger/v1']:
   shutil.copytree(Path('research')/folder,root/'research'/folder)
  path=root/module.OVERLAY;original=json.loads(path.read_text())
  before={p:p.read_bytes() for p in (root/'research/ledger/v1').rglob('*.csv')}
@@ -62,6 +67,8 @@ with tempfile.TemporaryDirectory() as d:
   'duplicate':lambda m:m['tasks'].append(m['tasks'][0]),
   'promotion':lambda m:m.update(paperStage='processed',fullyProcessed=True),
   'visual':lambda m:m['pageAudit']['questionPaper'].update(visuallyReviewedPages=[1]),
+  'page-flag':lambda m:m['pageAudit']['markScheme'].update(wholeDocumentReviewed=False),
+  'missing-whole-evidence':lambda m:m.update(wholeDocumentAuditRef='research/paper-reviews/4MB1-2024-summer-01.json'),
   'spec-page':lambda m:m['tasks'][0]['syllabusMappings'][0]['evidenceRefs'][0].update(pdfPages=[19]),
   'scheme-page':lambda m:m['tasks'][1].update(markSchemePages=[15]),
   'rubric-max':lambda m:m['tasks'][1]['criteria'][0].update(marks=3),
@@ -81,6 +88,36 @@ with tempfile.TemporaryDirectory() as d:
   assert all(p.read_bytes()==data for p,data in before.items()),name+' changed a table'
  print(json.dumps({'rejected':len(mutations),'tablesChecked':len(outputs)}))
 `], { encoding: 'utf8' }));
-  assert.equal(result.rejected, 16);
+  assert.equal(result.rejected, 18);
   assert.equal(result.tablesChecked, 4);
+});
+
+void test('Maths extracted stage requires matching whole-page evidence and preserved unresolved issues', () => {
+  const rejected = JSON.parse(execFileSync('python3', ['-c', `
+import copy,importlib.util,json,shutil,tempfile
+from pathlib import Path
+spec=importlib.util.spec_from_file_location('maths_export','scripts/export-maths-extraction.py')
+module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+with tempfile.TemporaryDirectory() as d:
+ root=Path(d)
+ for folder in ['extractions','discovery','paper-indexes','paper-reviews','reviews','syllabus','ledger/v1']:
+  shutil.copytree(Path('research')/folder,root/'research'/folder)
+ m=json.loads((root/module.OVERLAY).read_text());path=root/m['wholeDocumentAuditRef'];original=json.loads(path.read_text())
+ before={p:p.read_bytes() for p in (root/'research/ledger/v1').rglob('*.csv')}
+ mutations={
+  'audit-hash':lambda a:a['documents'][0].update(sha256='wrong'),
+  'audit-page':lambda a:a['documents'][1]['visuallyReviewedPages'].pop(),
+  'audit-task':lambda a:a['reconciledTaskIds'].pop(),
+  'audit-issues':lambda a:a.update(sourceDiscrepancyIds=[]),
+  'audit-processed':lambda a:a.update(fullyProcessed=True),
+ }
+ for name,mutate in mutations.items():
+  a=copy.deepcopy(original);mutate(a);path.write_text(json.dumps(a))
+  try:module.prepare(root)
+  except (ValueError,KeyError):pass
+  else:raise AssertionError(name+' accepted')
+  assert all(p.read_bytes()==data for p,data in before.items())
+ print(json.dumps(len(mutations)))
+`], { encoding: 'utf8' }));
+  assert.equal(rejected, 5);
 });

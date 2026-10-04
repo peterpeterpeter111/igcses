@@ -118,19 +118,24 @@ export default async function SubjectCoverage({
           <section className="evidence-row" key={record.id}>
             <h3>{review ? `${s.code}/${review.observedComponent} · ${review.printedDate}` : record.label}</h3>
             <p>{index
-              ? detail ? (detail.remainingTasks === 0 ? 'All question parts have detailed records · paper audit pending' : 'Text index available · detailed review started') : 'Text index available · full visual and detailed review pending'
+              ? detail ? (detail.pageAuditComplete ? 'All pages and question parts reviewed · validation pending' : detail.remainingTasks === 0 ? 'All question parts have detailed records · paper audit pending' : 'Text index available · detailed review started') : 'Text index available · full visual and detailed review pending'
               : review
               ? 'Obtained · cover identity and paper log matched · task indexing pending'
               : 'Obtained only · identity and pairing review pending'}</p>
             {index ? <p>
               {index.indexedLeafCount} question parts across {index.questionCount} questions;
-              {' '}{index.indexedOriginalMarks} original marks reconciled. Labels and marks
-              indexed from text with selected page checks. {detail
+              {' '}{index.indexedOriginalMarks} original marks reconciled. The original
+              text index is preserved. {detail
                 ? `${detail.detailedTasks} of ${detail.indexedTasks} parts (${detail.originalMarks} original marks) have detailed source-checked records; ${detail.remainingTasks} parts still need detailed review.`
                 : 'No detailed Maths extraction.'} No fully processed paper.
             </p> : <p>
               Both official Pearson PDFs were downloaded and hashed. No tasks
               indexed, no detailed extraction and no fully processed paper.
+            </p>}
+            {detail?.pageAuditComplete && <p>
+              The separate detailed audit covers all {detail.questionPaperPagesReviewed} question-paper
+              pages and {detail.schemePagesReviewed} mark-scheme pages. Source discrepancies,
+              syllabus scope and template validation still need resolution.
             </p>}
             <p>
               <a href={record.questionPaper.url} target="_blank" rel="noreferrer">

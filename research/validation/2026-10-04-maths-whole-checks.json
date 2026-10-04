@@ -1,0 +1,23 @@
+{
+  "reviewDate": "2026-10-04",
+  "scope": "Reconciles saved task payload and immutable raw evidence after document-page audit. No source-discrepancy or template promotion.",
+  "baseCommit": "9fe3b5a124eb663f2423be96cfa2bb723401b28e",
+  "taskPayloadUnchanged": true,
+  "rawEvidenceUnchanged": [
+    "research/paper-indexes/4MB1-2024-summer-01.json",
+    "research/paper-reviews/4MB1-2024-summer-01.json"
+  ],
+  "newStage": "extracted",
+  "fullyProcessed": false,
+  "documentPageCoverage": {
+    "questionPaper": 24,
+    "markScheme": 26
+  },
+  "sourceHashes": {
+    "research/extractions/4MB1-2024-summer-01.json": "5b6097345174b7a54d2bfed44a37e63cddcf752205732a097da6118dd6e70268",
+    "research/reviews/2026-10-04-maths-whole-page-audit.json": "c5b96bcc04b8e1f5dcdd4e9b835cb5164d8f3b55747557908f2922511999a6eb",
+    "scripts/export-maths-extraction.py": "2cc02e2024978b5a3b249ec3f18ba417ca0cfd4cfbd182955b6134044fdb4689",
+    "tests/maths-extraction.test.ts": "f33529dddfa7e753245828ffc4812cb5ec8a6a1100d4567dd73ffc620f4ff63e"
+  },
+  "humanReviewed": false
+}

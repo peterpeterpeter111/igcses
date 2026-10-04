@@ -56,6 +56,9 @@ export function paperDetailedSummary(record: (typeof additionalPaperCandidates)[
     reviewedAt: detail.reviewDate,
     humanReviewed: detail.humanReviewed,
     fullyProcessed: detail.fullyProcessed,
+    pageAuditComplete: detail.pageAudit.questionPaper.wholeDocumentReviewed && detail.pageAudit.markScheme.wholeDocumentReviewed,
+    questionPaperPagesReviewed: detail.pageAudit.questionPaper.visuallyReviewedPages.length,
+    schemePagesReviewed: detail.pageAudit.markScheme.visuallyReviewedPages.length,
     blockers: detail.blockers,
   };
 }
