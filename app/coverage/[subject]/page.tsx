@@ -118,7 +118,7 @@ export default async function SubjectCoverage({
           <section className="evidence-row" key={record.id}>
             <h3>{review ? `${s.code}/${review.observedComponent} · ${review.printedDate}` : record.label}</h3>
             <p>{index
-              ? detail ? 'Text index available · detailed review started' : 'Text index available · full visual and detailed review pending'
+              ? detail ? (detail.remainingTasks === 0 ? 'All question parts have detailed records · paper audit pending' : 'Text index available · detailed review started') : 'Text index available · full visual and detailed review pending'
               : review
               ? 'Obtained · cover identity and paper log matched · task indexing pending'
               : 'Obtained only · identity and pairing review pending'}</p>
@@ -142,7 +142,7 @@ export default async function SubjectCoverage({
               </a>
             </p>
             {review && <p className="status">{review.dateDiscrepancy} Agent review on {review.reviewedAt}; no human review.</p>}
-            {detail && <p className="status">Detailed subset reviewed on {detail.reviewedAt}; no human review or active Maths templates.</p>}
+            {detail && <p className="status">{detail.remainingTasks === 0 ? 'Latest detailed review' : 'Detailed subset reviewed'} on {detail.reviewedAt}; no human review or active Maths templates.</p>}
             <ul className="plain-list">
               {(detail?.blockers ?? index?.blockers ?? review?.limitations ?? record.limitations).map((limitation) => <li key={limitation}>{limitation}</li>)}
             </ul>

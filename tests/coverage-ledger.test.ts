@@ -85,7 +85,7 @@ void test('reviewed inventories agree with source candidates and subject-specifi
       (n, inventory) => n + inventory.points.length,
       0,
     ),
-    282,
+    300,
   );
   const allIds = reviewedInventories.flatMap((i) => i.points.map((p) => p.id));
   assert.equal(new Set(allIds).size, allIds.length);
@@ -103,8 +103,8 @@ void test('reviewed inventories agree with source candidates and subject-specifi
       );
       if (inventory.qualification === '4MB1') {
         assert.equal(raw, undefined, 'Raw numeric extraction must stay untouched for lettered Maths rows');
-        assert.match(point.reference, /^(1[A-K]|2[A-I]|3[A-L]|4[GI]|5[BCE]|6[CFJK]|7B|9[AC]|10B)$/);
-        assert.equal(point.pdfPage, point.reference.startsWith('4') ? 21 : point.reference.startsWith('5') ? 23 : point.reference.startsWith('6') ? 24 : point.reference === '7B' ? 25 : point.reference.startsWith('9') ? 27 : point.reference === '10B' ? 28 : point.reference.startsWith('3') ? 20 : point.reference.startsWith('2') ? 19 : point.reference <= '1G' ? 17 : 18);
+        assert.match(point.reference, /^(1[A-K]|2[A-I]|3[A-L]|4[GILM]|5[BCE]|6[CFGJK]|7[BD]|8[DEGI]|9[AC]|10[A-K])$/);
+        assert.equal(point.pdfPage, point.reference.startsWith('4') ? (['4L', '4M'].includes(point.reference) ? 22 : 21) : point.reference.startsWith('5') ? 23 : point.reference.startsWith('6') ? 24 : point.reference.startsWith('7') ? 25 : point.reference.startsWith('8') ? 26 : point.reference.startsWith('9') ? 27 : point.reference.startsWith('10') ? 28 : point.reference.startsWith('3') ? 20 : point.reference.startsWith('2') ? 19 : point.reference <= '1G' ? 17 : 18);
       } else {
         assert.ok(raw);
         assert.equal(raw.pdfPage, point.pdfPage);

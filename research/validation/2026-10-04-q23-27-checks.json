@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-04",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "group-total",
+      "status": "passed",
+      "detail": "Printed frequencies sum to 60."
+    },
+    {
+      "name": "modal-class",
+      "status": "passed",
+      "detail": "Highest frequency belongs to 0 < d ≤ 2."
+    },
+    {
+      "name": "median-class",
+      "status": "passed",
+      "detail": "Both central observations are in 2 < d ≤ 5."
+    },
+    {
+      "name": "mean",
+      "status": "passed",
+      "detail": "Midpoint sum 435; estimate 7.25 km."
+    },
+    {
+      "name": "tail-probability",
+      "status": "passed",
+      "detail": "The upper endpoint 10 belongs to the preceding class and is excluded."
+    },
+    {
+      "name": "similarity-volume",
+      "status": "passed",
+      "detail": "Volume ratio 27/125, linear ratio 3/5."
+    },
+    {
+      "name": "similarity-area",
+      "status": "passed",
+      "detail": "Area ratio 9/25 partitions the combined area into 34 parts."
+    },
+    {
+      "name": "sector-chord",
+      "status": "passed",
+      "detail": "Independent sine and cosine-rule routes agree."
+    },
+    {
+      "name": "secant-positive-root",
+      "status": "passed",
+      "detail": "Roots ≈13.6112904334 and −17.6324207593; only positive length retained."
+    },
+    {
+      "name": "vector-intersection",
+      "status": "passed",
+      "detail": "Line intersection derived from coordinate cross products."
+    },
+    {
+      "name": "vector-result",
+      "status": "passed",
+      "detail": "Independent coordinate realization confirms (5/2)a − (7/6)b."
+    },
+    {
+      "name": "stationary-constant",
+      "status": "passed",
+      "detail": "a=3.4, b=6; gradient zero and negative second derivative at x=3. Second derivative is an editorial check, not an extra mark."
+    },
+    {
+      "name": "leaf-mark-reconciliation",
+      "status": "passed",
+      "detail": "All detailed parts match the indexed count; no processing promotion."
+    }
+  ],
+  "educationalReadinessCertified": false,
+  "limitations": [
+    "These are task-specific arithmetic and reasoning checks, not calibrated families.",
+    "Existing source discrepancies and whole-paper processing gates remain open."
+  ],
+  "extractionSha256": "fbf99d4a102c071617c1ed0e840ea24c1a4e620ac1d102180ffb114db148e8bd"
+}

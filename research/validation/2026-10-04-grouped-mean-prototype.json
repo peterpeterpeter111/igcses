@@ -1,0 +1,451 @@
+{
+  "checkedAt": "2026-10-04T07:16:52.269Z",
+  "familyId": "4MB1.statistics.grouped-mean",
+  "sourceTaskId": "4MB1-2024-summer-01-candidate.Q23.c",
+  "version": "0.1.0",
+  "numericDomainExhausted": true,
+  "parameterDomainSize": 1989,
+  "distinctGeneratedQuestions": 1989,
+  "estimatedMeanRange": [
+    4.75,
+    11.35
+  ],
+  "sourceExcluded": true,
+  "sourceEvidence": {
+    "questionPaper": {
+      "documentId": "4MB1-2024-summer-01-candidate-qp",
+      "pdfPages": [
+        18
+      ]
+    },
+    "markScheme": {
+      "documentId": "4MB1-2024-summer-01-candidate-ms",
+      "pdfPages": [
+        21
+      ]
+    }
+  },
+  "syntheticResponseCases": 33,
+  "scoredCases": 19,
+  "deferredCases": 14,
+  "results": [
+    {
+      "id": "answer-decimal",
+      "expectedScore": 4,
+      "actual": {
+        "status": "scored",
+        "score": 4,
+        "maximum": 4,
+        "band": 2,
+        "division": 1,
+        "accuracy": 1,
+        "impliedByCorrectAnswer": true
+      },
+      "passed": true
+    },
+    {
+      "id": "answer-unit",
+      "expectedScore": 4,
+      "actual": {
+        "status": "scored",
+        "score": 4,
+        "maximum": 4,
+        "band": 2,
+        "division": 1,
+        "accuracy": 1,
+        "impliedByCorrectAnswer": true
+      },
+      "passed": true
+    },
+    {
+      "id": "answer-unreduced-fraction",
+      "expectedScore": 4,
+      "actual": {
+        "status": "scored",
+        "score": 4,
+        "maximum": 4,
+        "band": 2,
+        "division": 1,
+        "accuracy": 1,
+        "impliedByCorrectAnswer": true
+      },
+      "passed": true
+    },
+    {
+      "id": "answer-equivalent-fraction",
+      "expectedScore": 4,
+      "actual": {
+        "status": "scored",
+        "score": 4,
+        "maximum": 4,
+        "band": 2,
+        "division": 1,
+        "accuracy": 1,
+        "impliedByCorrectAnswer": true
+      },
+      "passed": true
+    },
+    {
+      "id": "answer-double-minus",
+      "expectedScore": 4,
+      "actual": {
+        "status": "scored",
+        "score": 4,
+        "maximum": 4,
+        "band": 2,
+        "division": 1,
+        "accuracy": 1,
+        "impliedByCorrectAnswer": true
+      },
+      "passed": true
+    },
+    {
+      "id": "wrong-alone",
+      "expectedScore": 0,
+      "actual": {
+        "status": "scored",
+        "score": 0,
+        "maximum": 4,
+        "band": 0,
+        "division": 0,
+        "accuracy": 0,
+        "impliedByCorrectAnswer": false
+      },
+      "passed": true
+    },
+    {
+      "id": "empty",
+      "expectedScore": 0,
+      "actual": {
+        "status": "scored",
+        "score": 0,
+        "maximum": 4,
+        "band": 0,
+        "division": 0,
+        "accuracy": 0,
+        "impliedByCorrectAnswer": false
+      },
+      "passed": true
+    },
+    {
+      "id": "full-correct",
+      "expectedScore": 4,
+      "actual": {
+        "status": "scored",
+        "score": 4,
+        "maximum": 4,
+        "band": 2,
+        "division": 1,
+        "accuracy": 1,
+        "impliedByCorrectAnswer": false
+      },
+      "passed": true
+    },
+    {
+      "id": "full-no-final",
+      "expectedScore": 3,
+      "actual": {
+        "status": "scored",
+        "score": 3,
+        "maximum": 4,
+        "band": 2,
+        "division": 1,
+        "accuracy": 0,
+        "impliedByCorrectAnswer": false
+      },
+      "passed": true
+    },
+    {
+      "id": "wrong-final-with-method",
+      "expectedScore": 3,
+      "actual": {
+        "status": "scored",
+        "score": 3,
+        "maximum": 4,
+        "band": 2,
+        "division": 1,
+        "accuracy": 0,
+        "impliedByCorrectAnswer": false
+      },
+      "passed": true
+    },
+    {
+      "id": "addition-error",
+      "expectedScore": 3,
+      "actual": {
+        "status": "scored",
+        "score": 3,
+        "maximum": 4,
+        "band": 2,
+        "division": 1,
+        "accuracy": 0,
+        "impliedByCorrectAnswer": false
+      },
+      "passed": true
+    },
+    {
+      "id": "three-added",
+      "expectedScore": 3,
+      "actual": {
+        "status": "scored",
+        "score": 3,
+        "maximum": 4,
+        "band": 2,
+        "division": 1,
+        "accuracy": 0,
+        "impliedByCorrectAnswer": false
+      },
+      "passed": true
+    },
+    {
+      "id": "three-no-addition",
+      "expectedScore": 1,
+      "actual": {
+        "status": "scored",
+        "score": 1,
+        "maximum": 4,
+        "band": 1,
+        "division": 0,
+        "accuracy": 0,
+        "impliedByCorrectAnswer": false
+      },
+      "passed": true
+    },
+    {
+      "id": "two-only",
+      "expectedScore": 0,
+      "actual": {
+        "status": "scored",
+        "score": 0,
+        "maximum": 4,
+        "band": 0,
+        "division": 0,
+        "accuracy": 0,
+        "impliedByCorrectAnswer": false
+      },
+      "passed": true
+    },
+    {
+      "id": "upper-endpoints",
+      "expectedScore": 2,
+      "actual": {
+        "status": "scored",
+        "score": 2,
+        "maximum": 4,
+        "band": 1,
+        "division": 1,
+        "accuracy": 0,
+        "impliedByCorrectAnswer": false
+      },
+      "passed": true
+    },
+    {
+      "id": "lower-endpoints",
+      "expectedScore": 0,
+      "actual": {
+        "status": "scored",
+        "score": 0,
+        "maximum": 4,
+        "band": 0,
+        "division": 0,
+        "accuracy": 0,
+        "impliedByCorrectAnswer": false
+      },
+      "passed": true
+    },
+    {
+      "id": "mixed-representatives",
+      "expectedScore": 2,
+      "actual": {
+        "status": "scored",
+        "score": 2,
+        "maximum": 4,
+        "band": 1,
+        "division": 1,
+        "accuracy": 0,
+        "impliedByCorrectAnswer": false
+      },
+      "passed": true
+    },
+    {
+      "id": "wrong-divisor",
+      "expectedScore": 2,
+      "actual": {
+        "status": "scored",
+        "score": 2,
+        "maximum": 4,
+        "band": 2,
+        "division": 0,
+        "accuracy": 0,
+        "impliedByCorrectAnswer": false
+      },
+      "passed": true
+    },
+    {
+      "id": "unevaluated-products",
+      "expectedScore": 4,
+      "actual": {
+        "status": "scored",
+        "score": 4,
+        "maximum": 4,
+        "band": 2,
+        "division": 1,
+        "accuracy": 1,
+        "impliedByCorrectAnswer": false
+      },
+      "passed": true
+    },
+    {
+      "id": "correct-with-wrong-sum",
+      "expectedScore": null,
+      "actual": {
+        "status": "needs-review",
+        "score": null,
+        "reason": "Correct answer with incomplete, different or contradictory working needs examiner review."
+      },
+      "passed": true
+    },
+    {
+      "id": "correct-with-incomplete-working",
+      "expectedScore": null,
+      "actual": {
+        "status": "needs-review",
+        "score": null,
+        "reason": "Correct answer with incomplete, different or contradictory working needs examiner review."
+      },
+      "passed": true
+    },
+    {
+      "id": "frequency-mismatch",
+      "expectedScore": null,
+      "actual": {
+        "status": "needs-review",
+        "score": null,
+        "reason": "Ambiguous product, wrong frequency, unsupported representative or arithmetic contradiction requires review."
+      },
+      "passed": true
+    },
+    {
+      "id": "evaluated-product-contradiction",
+      "expectedScore": null,
+      "actual": {
+        "status": "needs-review",
+        "score": null,
+        "reason": "Ambiguous product, wrong frequency, unsupported representative or arithmetic contradiction requires review."
+      },
+      "passed": true
+    },
+    {
+      "id": "unshown-addition",
+      "expectedScore": null,
+      "actual": {
+        "status": "needs-review",
+        "score": null,
+        "reason": "Sum or division is not supported by the transcribed working."
+      },
+      "passed": true
+    },
+    {
+      "id": "unshown-sum",
+      "expectedScore": null,
+      "actual": {
+        "status": "needs-review",
+        "score": null,
+        "reason": "Sum or division is not supported by the transcribed working."
+      },
+      "passed": true
+    },
+    {
+      "id": "unsupported-representative",
+      "expectedScore": null,
+      "actual": {
+        "status": "needs-review",
+        "score": null,
+        "reason": "Ambiguous product, wrong frequency, unsupported representative or arithmetic contradiction requires review."
+      },
+      "passed": true
+    },
+    {
+      "id": "equation",
+      "expectedScore": null,
+      "actual": {
+        "status": "needs-review",
+        "score": null,
+        "reason": "Unsupported numeric notation or units; do not mark them automatically wrong."
+      },
+      "passed": true
+    },
+    {
+      "id": "scientific-notation",
+      "expectedScore": null,
+      "actual": {
+        "status": "needs-review",
+        "score": null,
+        "reason": "Unsupported numeric notation or units; do not mark them automatically wrong."
+      },
+      "passed": true
+    },
+    {
+      "id": "unsupported-units",
+      "expectedScore": null,
+      "actual": {
+        "status": "needs-review",
+        "score": null,
+        "reason": "Unsupported numeric notation or units; do not mark them automatically wrong."
+      },
+      "passed": true
+    },
+    {
+      "id": "division-by-zero",
+      "expectedScore": null,
+      "actual": {
+        "status": "needs-review",
+        "score": null,
+        "reason": "Unsupported numeric notation or units; do not mark them automatically wrong."
+      },
+      "passed": true
+    },
+    {
+      "id": "multiple-answers",
+      "expectedScore": null,
+      "actual": {
+        "status": "needs-review",
+        "score": null,
+        "reason": "Unsupported numeric notation or units; do not mark them automatically wrong."
+      },
+      "passed": true
+    },
+    {
+      "id": "execution-string",
+      "expectedScore": null,
+      "actual": {
+        "status": "needs-review",
+        "score": null,
+        "reason": "Unsupported numeric notation or units; do not mark them automatically wrong."
+      },
+      "passed": true
+    },
+    {
+      "id": "extra-evidence",
+      "expectedScore": null,
+      "actual": {
+        "status": "needs-review",
+        "score": null,
+        "reason": "Additional, alternative or crossed-out evidence requires review."
+      },
+      "passed": true
+    }
+  ],
+  "sourceHashes": {
+    "server/generators/grouped-mean.ts": "938c129b1e4fef02147086b5a0eaa8dd4c947be27d52521e7a246b62069f5ac2",
+    "server/generators/grouped-mean-marking.ts": "cdaf7f042a6116f9c20b172891a3e5d53e38bf5ff203ffeea04c7ec9d7bdb0be",
+    "scripts/grouped-mean-fixtures.ts": "700a7e58399a0622db98a6db30ee805bf8e4331dd73bc1e246f42024f366ae61",
+    "tests/grouped-mean-prototype.test.ts": "be54dc1582db4a2c12ce159622f47bf9fa340382ba24ee6e68f08ad178555a79",
+    "research/validation/grouped-mean-marking-cases.json": "996d00111295ed6d93f6d6aa78155e688f3d7ee9cc9ccc9fb4093a149b469c9b",
+    "research/templates/4MB1-grouped-mean.v0.1.0.json": "643c97d0000253979181f5c25be20760ec0a6c908ccee3e91e53f20f7c6a0880"
+  },
+  "humanReviewed": false,
+  "liveEligible": false,
+  "assessmentCalibrationComplete": false,
+  "scope": "Entire implemented numeric domain and synthetic structured transcriptions checked. This does not exhaust possible student responses or establish context demand, official AO allocation, real learner calibration or live eligibility."
+}

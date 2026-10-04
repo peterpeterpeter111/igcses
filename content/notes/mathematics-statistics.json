@@ -1,0 +1,551 @@
+{
+  "subjectId": "mathematics",
+  "chapterId": "statistics",
+  "status": "source-checked",
+  "complete": false,
+  "humanReviewed": false,
+  "sourceId": "4MB1-spec",
+  "sourcePages": [
+    28
+  ],
+  "prerequisites": [
+    "Read fractions, decimals and percentages.",
+    "Sort numbers and multiply frequencies.",
+    "Interpret class interval boundaries."
+  ],
+  "goals": [
+    "Represent numerical data and distinguish frequency from density.",
+    "Calculate discrete averages and grouped estimates.",
+    "Use probability events, trees, conditioning and expectations."
+  ],
+  "sections": [
+    {
+      "id": "bar-charts",
+      "title": "Bar charts compare separate categories",
+      "points": [
+        "10A"
+      ],
+      "paragraphs": [
+        "A bar chart represents categories or separate numerical values. Label both axes, use a consistent frequency scale and give each category its own bar. Equal-width bars with gaps make the categories distinct; bar height shows frequency.",
+        "Read a bar using the axis scale rather than its apparent screen height. A shortened axis can exaggerate differences, so inspect where the scale begins. A bar chart does not join observations into a continuous curve."
+      ],
+      "example": {
+        "question": "A club records 9 people choosing football, 6 choosing badminton and 5 choosing swimming. What fraction chose badminton?",
+        "steps": [
+          "Total = 9+6+5 = 20.",
+          "Badminton fraction = 6/20 = 3/10."
+        ],
+        "explanation": "The labels tell you which bar belongs to each category; the frequencies supply the counts."
+      },
+      "practice": {
+        "question": "A bar spans 7 grid divisions and each division represents 4 students. How many students?",
+        "answer": "28 students.",
+        "explanation": "Use the stated scale: 7×4=28."
+      },
+      "terms": [
+        "bar chart",
+        "category",
+        "frequency",
+        "axis scale"
+      ],
+      "commonMistakes": [
+        "Do not confuse a grid division with one person.",
+        "Keep category bars distinct and label the scale."
+      ]
+    },
+    {
+      "id": "pie-charts",
+      "title": "Pie-chart angles represent proportions",
+      "points": [
+        "10A"
+      ],
+      "paragraphs": [
+        "A pie chart divides a full 360° circle into sectors. Sector angle = category frequency ÷ total frequency × 360°. Reverse this relation when an angle is given: category fraction = sector angle ÷ 360°.",
+        "Angles must total 360°, and the sector fractions must total 1. A larger sector represents a larger fraction; it does not reveal a count unless the total is also known."
+      ],
+      "example": {
+        "question": "There are 12 walkers, 18 bus users and 6 cyclists among 36 pupils. Find the three pie-chart angles.",
+        "steps": [
+          "Walking: (12/36)×360° = 120°.",
+          "Bus: (18/36)×360° = 180°.",
+          "Cycling: (6/36)×360° = 60°; total 360°."
+        ],
+        "explanation": "Each frequency is converted using the same total."
+      },
+      "practice": {
+        "question": "A 135° sector represents a group in a total of 80 people. Find its size.",
+        "answer": "30 people.",
+        "explanation": "(135/360)×80 = 30."
+      },
+      "terms": [
+        "pie chart",
+        "sector angle",
+        "proportion"
+      ],
+      "commonMistakes": [
+        "Divide by the total before multiplying by 360°.",
+        "An angle alone does not determine the original population size."
+      ]
+    },
+    {
+      "id": "histograms-and-density",
+      "title": "Histogram area carries the frequency",
+      "points": [
+        "10A"
+      ],
+      "paragraphs": [
+        "A histogram groups continuous measurements into adjoining class intervals. With unequal widths, bar height is frequency density = frequency ÷ class width. The bar area, width × density, represents frequency. Label the horizontal measurement axis and the vertical density axis.",
+        "For 0 < x ≤ 4, the width is 4; for 4 < x ≤ 10, it is 6. Do not use upper boundaries as widths. A tall narrow bar can represent fewer observations than a shorter wide bar. The modal class asked from a grouped table is treated here as the class with greatest frequency, as in the reviewed Pearson task; the tallest histogram bar identifies greatest density, which can differ.",
+        "Cumulative frequency graphs are excluded by this specification row. A cumulative count used to locate a median class is still needed; it is not a requirement to draw a cumulative frequency graph."
+      ],
+      "example": {
+        "question": "Classes 0<x≤4, 4<x≤10 and 10<x≤20 have frequencies 8,9 and 3. Find their histogram heights.",
+        "steps": [
+          "Widths are 4,6 and 10.",
+          "Densities are 8/4=2, 9/6=1.5 and 3/10=0.3.",
+          "The areas recover 8,9 and 3, respectively."
+        ],
+        "explanation": "Area rather than bar height preserves frequency when widths differ."
+      },
+      "practice": {
+        "question": "A class of width 8 has frequency density 2.5. Find its frequency.",
+        "answer": "20.",
+        "explanation": "Frequency = 8×2.5 = 20."
+      },
+      "terms": [
+        "histogram",
+        "frequency density",
+        "class width",
+        "continuous data"
+      ],
+      "commonMistakes": [
+        "Use density on the vertical axis when widths differ.",
+        "Do not equate tallest density bar with largest frequency when widths differ."
+      ],
+      "diagram": {
+        "src": "/diagrams/maths-frequency-density.svg",
+        "alt": "Histogram with widths 4,6,10 and heights 2,1.5,0.3. Bar areas equal frequencies 8,9,3.",
+        "caption": "The first bar is tallest, while the second has the largest frequency because it is wider."
+      }
+    },
+    {
+      "id": "discrete-averages",
+      "title": "Mean, median and mode for discrete values",
+      "points": [
+        "10B"
+      ],
+      "paragraphs": [
+        "The mean is the sum of all values divided by the number of values. The median is the middle value after sorting. For an even number of values, average the two middle values. The mode is the value occurring most often; a data set can have more than one mode or no mode.",
+        "In a frequency table, each value appears as many times as its frequency. Compute the total of value × frequency, then divide by the sum of the frequencies. Locate the median by positions in the ordered list, rather than averaging the frequencies."
+      ],
+      "example": {
+        "question": "For 2,3,3,7,10, calculate the mean, median and mode.",
+        "steps": [
+          "Sum=25 and count=5, so mean=5.",
+          "The ordered middle (third) value is 3, so median=3.",
+          "The most frequent value is 3, so mode=3."
+        ],
+        "explanation": "Different averages describe different features of the data."
+      },
+      "practice": {
+        "question": "The sorted values are 1,4,8,11. Find the median.",
+        "answer": "6.",
+        "explanation": "The two middle values are 4 and 8; (4+8)/2=6."
+      },
+      "terms": [
+        "mean",
+        "median",
+        "mode",
+        "discrete data",
+        "frequency"
+      ],
+      "commonMistakes": [
+        "Sort before finding a median.",
+        "Divide by the number of observations, not the number of distinct values."
+      ]
+    },
+    {
+      "id": "grouped-modal-and-median-classes",
+      "title": "Which class contains the middle observations?",
+      "points": [
+        "10D"
+      ],
+      "paragraphs": [
+        "The modal class in the reviewed grouped-table task is the interval with the greatest frequency. Give the interval unambiguously, retaining its boundary convention. This identifies a class, not an exact individual mode.",
+        "To find the median class, add frequencies cumulatively and locate the middle observation positions. For 20 observations, positions 10 and 11 determine the median. If both lie in one class, that is the median class. When the two middle observations fall in different classes, the table alone may not locate their average within a single class; inspect the task rather than guessing an exact median.",
+        "Grouped data do not tell you the precise values inside each class. Distinguish the class containing the median from an estimated median value; the current row asks for the class."
+      ],
+      "example": {
+        "question": "Classes 0<x≤4, 4<x≤10 and 10<x≤20 have frequencies 8,9 and 3. Give the modal and median classes.",
+        "steps": [
+          "The largest frequency is 9, so modal class is 4<x≤10.",
+          "Cumulative frequencies are 8,17,20.",
+          "Positions 10 and 11 are both in the second class, so median class is 4<x≤10."
+        ],
+        "explanation": "Both answers name intervals; neither gives the exact underlying individual values."
+      },
+      "practice": {
+        "question": "Classes 0<t≤5, 5<t≤15 have frequencies 4 and 6. Which contains the median?",
+        "answer": "5<t≤15.",
+        "explanation": "Of ten observations, positions 5 and 6 both lie in the second class."
+      },
+      "terms": [
+        "modal class",
+        "median class",
+        "cumulative count",
+        "class boundary"
+      ],
+      "commonMistakes": [
+        "Name the interval rather than its midpoint.",
+        "Do not read the median class from the largest frequency alone."
+      ],
+      "answerGuide": {
+        "id": "4MB1.statistics.median-class",
+        "sourceTaskId": "4MB1-2024-summer-01-candidate.Q23.b",
+        "command": "Find the median class",
+        "steps": [
+          "Find total frequency and central positions.",
+          "Use cumulative counts to locate them.",
+          "Name the class interval."
+        ],
+        "caution": "The reviewed source awards one accuracy mark for an unambiguous class; it does not ask for an exact median."
+      }
+    },
+    {
+      "id": "estimated-grouped-mean",
+      "title": "Estimate a grouped mean with midpoints",
+      "points": [
+        "10C"
+      ],
+      "paragraphs": [
+        "Because individual grouped values are unavailable, use each class midpoint as a representative value. Midpoint = (lower boundary + upper boundary) ÷ 2. Multiply each midpoint by its class frequency, add the products and divide by the total frequency.",
+        "Estimated mean = sum of midpoint × frequency ÷ sum of frequency. This is an estimate because the actual observations need not sit at the midpoints. Retain enough precision in intermediate products and include the measurement unit in the result.",
+        "This specification includes grouped-frequency mean estimates. Weighted and moving means as separate question topics are excluded; this does not remove the explicitly required midpoint-frequency calculation."
+      ],
+      "example": {
+        "question": "Classes 0<x≤4, 4<x≤10 and 10<x≤20 have frequencies 8,9 and 3. Estimate the mean.",
+        "steps": [
+          "Midpoints are 2,7,15.",
+          "Products are 2×8=16, 7×9=63, 15×3=45.",
+          "Sum=124; total frequency=20. Estimated mean=124/20=6.2."
+        ],
+        "explanation": "The denominator counts observations; the numerator represents an estimated total."
+      },
+      "practice": {
+        "question": "Classes 0<t≤5, 5<t≤15 have frequencies 4 and 6. Estimate the mean.",
+        "answer": "7.",
+        "explanation": "Midpoints 2.5 and 10 give (2.5×4+10×6)/10=7."
+      },
+      "terms": [
+        "class midpoint",
+        "estimated mean",
+        "frequency product"
+      ],
+      "commonMistakes": [
+        "Do not divide by the number of classes.",
+        "Use midpoints, not class widths or upper boundaries, for the correct method."
+      ],
+      "answerGuide": {
+        "id": "4MB1.statistics.grouped-mean",
+        "sourceTaskId": "4MB1-2024-summer-01-candidate.Q23.c",
+        "command": "Calculate an estimated mean",
+        "steps": [
+          "Calculate each midpoint.",
+          "Multiply midpoints by frequencies and add.",
+          "Divide by total frequency."
+        ],
+        "caution": "The source has a non-additive two/one method band, a dependent division mark and a final accuracy mark; generated marking is still provisional."
+      }
+    },
+    {
+      "id": "probability-and-sample-spaces",
+      "title": "List outcomes before counting them",
+      "points": [
+        "10E"
+      ],
+      "paragraphs": [
+        "Probability measures how likely an event is, from 0 for impossible to 1 for certain. For equally likely outcomes, probability = number of favourable outcomes ÷ total number of outcomes. An outcome is one result; an event is a collection of outcomes.",
+        "A sample space lists all possible outcomes without omission or duplication. Equal likelihood is an assumption that must be justified by the experiment, such as independent tosses of fair coins. Simply counting categories is insufficient when they have different chances."
+      ],
+      "example": {
+        "question": "Two fair independent coins are tossed. Find the probability of at least one head.",
+        "steps": [
+          "Sample space: HH,HT,TH,TT, each equally likely.",
+          "Favourable outcomes HH,HT,TH: three of four.",
+          "Probability=3/4."
+        ],
+        "explanation": "At least one includes the outcome with two heads."
+      },
+      "practice": {
+        "question": "A fair six-sided die is rolled. Find the probability of a result greater than 4.",
+        "answer": "1/3.",
+        "explanation": "Favourable results 5 and 6 give 2/6=1/3."
+      },
+      "terms": [
+        "probability",
+        "outcome",
+        "event",
+        "sample space",
+        "equally likely"
+      ],
+      "commonMistakes": [
+        "Check whether outcomes are equally likely.",
+        "At least one is different from exactly one."
+      ]
+    },
+    {
+      "id": "relative-frequency-and-complements",
+      "title": "Observed frequency and the opposite event",
+      "points": [
+        "10E"
+      ],
+      "paragraphs": [
+        "Relative frequency = event count ÷ total trial count. It estimates the probability from observed data; repeated trials can give different estimates. A larger suitable sample usually gives a more stable estimate, but it does not guarantee an exact theoretical probability.",
+        "The complement consists of outcomes where the event does not happen. Its probability is 1 minus the probability of the event. This works because an event and its complement cannot happen together and together cover the entire sample space."
+      ],
+      "example": {
+        "question": "A spinner lands on red in 28 of 80 trials. Estimate the probability of red and of not red.",
+        "steps": [
+          "Red relative frequency=28/80=0.35.",
+          "Not red=1−0.35=0.65."
+        ],
+        "explanation": "The second event includes every colour except red."
+      },
+      "practice": {
+        "question": "An event has probability 0.18. What is the probability that it does not occur?",
+        "answer": "0.82.",
+        "explanation": "Complement probability=1−0.18."
+      },
+      "terms": [
+        "relative frequency",
+        "experimental probability",
+        "complement"
+      ],
+      "commonMistakes": [
+        "Use the total number of trials as the denominator.",
+        "An estimate is not a guarantee for the next trial."
+      ],
+      "answerGuide": {
+        "id": "4MB1.probability.grouped-tail",
+        "sourceTaskId": "4MB1-2024-summer-01-candidate.Q23.d",
+        "command": "Find a probability",
+        "steps": [
+          "Count the complete qualifying classes.",
+          "Divide by the total.",
+          "Give an equivalent probability."
+        ],
+        "caution": "The historical source permits specific decimal rounding and ignores subsequent incorrect cancellation after correct evidence; do not generalise that concession."
+      }
+    },
+    {
+      "id": "mutually-exclusive-addition",
+      "title": "Add probabilities for outcomes that cannot overlap",
+      "points": [
+        "10F"
+      ],
+      "paragraphs": [
+        "Mutually exclusive events cannot occur together in one trial. For such events, probability of A or B = probability of A + probability of B. The word or includes either event; ensure no outcome is counted twice.",
+        "If events overlap, straightforward addition double-counts the overlap. You can instead list and count their union in a sample space. Establish exclusivity from the events, not from their names."
+      ],
+      "example": {
+        "question": "A fair die is rolled. Find the probability of an even number or a 5.",
+        "steps": [
+          "Even outcomes:2,4,6. Outcome 5 is separate.",
+          "The events are mutually exclusive, so probability=3/6+1/6=2/3."
+        ],
+        "explanation": "No roll can be both even and 5."
+      },
+      "practice": {
+        "question": "Find the probability of an even number or a number greater than 4 on a fair die.",
+        "answer": "2/3.",
+        "explanation": "The union is {2,4,5,6}; outcome 6 belongs to both events, so counting it once gives 4/6."
+      },
+      "terms": [
+        "mutually exclusive",
+        "union",
+        "addition rule",
+        "overlap"
+      ],
+      "commonMistakes": [
+        "Only use the simple addition rule when events cannot overlap.",
+        "Or is not the same as and."
+      ]
+    },
+    {
+      "id": "independent-product-rule",
+      "title": "Multiply probabilities when trials are independent",
+      "points": [
+        "10G"
+      ],
+      "paragraphs": [
+        "Events are independent when knowing that one occurred does not change the probability of the other. For independent events, probability of A and B = probability of A × probability of B. For more independent events, multiply all the corresponding probabilities.",
+        "Independent is different from mutually exclusive. Two independent events can occur together. If the first outcome changes the available population, such as drawing without replacement, later probabilities must be reconsidered."
+      ],
+      "example": {
+        "question": "A fair coin and a fair die are used independently. Find the probability of a head and a 6.",
+        "steps": [
+          "Probability of a head=1/2; probability of a 6=1/6.",
+          "Their joint probability=(1/2)×(1/6)=1/12."
+        ],
+        "explanation": "The die probability is unchanged by the coin result."
+      },
+      "practice": {
+        "question": "Two independent events have probabilities 0.3 and 0.4. Find the probability both occur.",
+        "answer": "0.12.",
+        "explanation": "Multiply 0.3×0.4."
+      },
+      "terms": [
+        "independence",
+        "product rule",
+        "joint event"
+      ],
+      "commonMistakes": [
+        "Multiply only under a justified independence assumption for this rule.",
+        "Do not add probabilities for both events occurring."
+      ]
+    },
+    {
+      "id": "probability-tree-diagrams",
+      "title": "Multiply along a tree and add separate paths",
+      "points": [
+        "10H"
+      ],
+      "paragraphs": [
+        "A probability tree labels the outcomes at each stage. Branch probabilities from any one node sum to 1. Multiply along a path to obtain that complete sequence probability; add probabilities of separate paths that meet the event.",
+        "For independent stages, later branch probabilities are unchanged. Keep ordered paths distinct: red then blue and blue then red are different outcomes. After calculating, check all complete path probabilities sum to 1.",
+        "Select each counter at random, with every remaining counter equally likely on that draw. State this sampling assumption before calculating the branch fractions."
+      ],
+      "example": {
+        "question": "A bag has 3 red and 2 blue counters. Draw twice, replacing the first counter. Find the probability of two counters of the same colour.",
+        "steps": [
+          "Each stage has red 3/5 and blue 2/5.",
+          "RR probability=9/25; BB probability=4/25.",
+          "Same colour=9/25+4/25=13/25."
+        ],
+        "explanation": "Replacement keeps the second-draw probabilities unchanged."
+      },
+      "practice": {
+        "question": "For the same experiment, find the probability of exactly one red.",
+        "answer": "12/25.",
+        "explanation": "RB and BR each have probability 6/25; add them."
+      },
+      "terms": [
+        "tree diagram",
+        "branch",
+        "path",
+        "replacement"
+      ],
+      "commonMistakes": [
+        "Multiply along each path; add different qualifying paths.",
+        "Do not forget the second possible order of a mixed pair."
+      ],
+      "diagram": {
+        "src": "/diagrams/maths-probability-tree.svg",
+        "alt": "Two draws with replacement: each stage has red probability 3/5 and blue 2/5; the four leaf probabilities are 9/25,6/25,6/25 and4/25.",
+        "caption": "Replacement restores the same 3 red/2 blue population for each draw. Multiply along paths; add RR and BB for the same-colour event."
+      }
+    },
+    {
+      "id": "without-replacement",
+      "title": "Update the second probability after the first draw",
+      "points": [
+        "10I"
+      ],
+      "paragraphs": [
+        "Without replacement, the first draw changes both the total remaining and sometimes the count of a colour. Use the probability appropriate to each path. This is a simple conditional calculation: the second probability depends on the first result.",
+        "A tree can still be used, but the two nodes at the second stage can have different probabilities. Do not reuse the original denominator after removing a counter. Add only distinct qualifying sequences.",
+        "Select each counter at random, with every remaining counter equally likely on that draw. State this sampling assumption before calculating the branch fractions."
+      ],
+      "example": {
+        "question": "A bag has 3 red and 2 blue counters. Draw twice without replacement. Find the probability of two reds.",
+        "steps": [
+          "First red probability=3/5.",
+          "After a red is removed,2 reds remain among 4 counters.",
+          "RR probability=(3/5)×(2/4)=3/10."
+        ],
+        "explanation": "The second fraction describes the remaining bag on the red path."
+      },
+      "practice": {
+        "question": "For the same experiment, find the probability of one red and one blue.",
+        "answer": "3/5.",
+        "explanation": "RB=(3/5)(2/4)=3/10; BR=(2/5)(3/4)=3/10; add them."
+      },
+      "terms": [
+        "without replacement",
+        "dependent events",
+        "conditional branch"
+      ],
+      "commonMistakes": [
+        "Update the total as well as the relevant colour count.",
+        "The second blue probability differs after a red versus a blue draw."
+      ]
+    },
+    {
+      "id": "conditional-probability",
+      "title": "Restrict the group when extra information is given",
+      "points": [
+        "10J"
+      ],
+      "paragraphs": [
+        "When told that a selected person belongs to a particular group, restrict the sample space to that group. Conditional probability = favourable members inside the given group ÷ total members of that given group. The original population is no longer the denominator.",
+        "A two-way table helps keep totals and intersections distinct. Use the condition in the question to choose the denominator. This specification expects very simple conditional probabilities and does not require formal conditional-probability notation."
+      ],
+      "example": {
+        "question": "Among 24 pupils,14 have a bicycle,8 have a helmet and 6 have both. A pupil is selected from those with a bicycle. Find the probability they have a helmet.",
+        "steps": [
+          "The given group contains 14 bicycle owners.",
+          "Of them,6 have helmets.",
+          "Probability=6/14=3/7."
+        ],
+        "explanation": "The condition changes the denominator to 14."
+      },
+      "practice": {
+        "question": "Instead select a pupil from those with a helmet. Find the probability they have a bicycle.",
+        "answer": "3/4.",
+        "explanation": "There are 8 helmet owners and 6 of them have bicycles, giving 6/8."
+      },
+      "terms": [
+        "conditional probability",
+        "restricted sample space",
+        "two-way table",
+        "intersection"
+      ],
+      "commonMistakes": [
+        "Read the given group before choosing a denominator.",
+        "Reversing the condition generally changes the probability."
+      ]
+    },
+    {
+      "id": "expected-frequency",
+      "title": "Expected counts predict an average over repeated trials",
+      "points": [
+        "10K"
+      ],
+      "paragraphs": [
+        "Expected frequency = number of trials × probability of the event, when the same probability applies to each trial. It predicts an average count over repetitions of the experiment, rather than an assured count in one batch.",
+        "An expected count can be non-integer even though an observed count must be an integer. Retain the calculated expectation unless the question gives a particular rounding instruction. If using experimental relative frequency as the probability, the result is an estimate."
+      ],
+      "example": {
+        "question": "An event has probability 0.15. Find its expected frequency in 200 trials.",
+        "steps": [
+          "Expected count=200×0.15=30."
+        ],
+        "explanation": "Thirty is a prediction, not a promise that every set of 200 trials contains exactly 30 successes."
+      },
+      "practice": {
+        "question": "An event has probability 1/8. Find its expected frequency in 10 trials.",
+        "answer": "1.25.",
+        "explanation": "10×1/8=1.25; this is a valid expectation."
+      },
+      "terms": [
+        "expected frequency",
+        "number of trials",
+        "prediction"
+      ],
+      "commonMistakes": [
+        "Do not replace an expectation with an arbitrary whole number.",
+        "Distinguish the expected count from a guaranteed outcome."
+      ]
+    }
+  ]
+}

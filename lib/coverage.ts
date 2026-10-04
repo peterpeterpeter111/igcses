@@ -1,4 +1,5 @@
 import matrixFamily from '../research/templates/4MB1-matrix-addition.v0.1.0.json' with { type: 'json' };
+import groupedMeanFamily from '../research/templates/4MB1-grouped-mean.v0.1.0.json' with { type: 'json' };
 import rawLinks from '../research/paper-ledger.json' with { type: 'json' };
 import candidates from '../research/coverage.json' with { type: 'json' };
 import batch from '../research/batches/2026-09-08-cross-subject-lower-01.manifest.json' with { type: 'json' };
@@ -13,11 +14,14 @@ import resultantFamily from '../research/templates/4PH1-collinear-resultant.v0.1
 import weightFamily from '../research/templates/4PH1-weight-convert-mass.v0.1.0.json' with { type: 'json' };
 import quadraticFamily from '../research/templates/4MB1-monic-quadratic.v0.1.0.json' with { type: 'json' };
 import { activeFamilies } from '../server/template-registry';
-import { latestDiscoveryDate, obtainedPaperCandidates, paperCoverReview } from './paper-discovery';
+import { latestDiscoveryDate, obtainedPaperCandidates, paperCoverReview, paperDetailedSummary } from './paper-discovery';
 
-const researchFamilies = [retrievalFamily, resultantFamily, weightFamily, quadraticFamily, matrixFamily];
+const researchFamilies = [retrievalFamily, resultantFamily, weightFamily, quadraticFamily, matrixFamily, groupedMeanFamily];
+const mathematicsSummary = obtainedPaperCandidates('4MB1').map(paperDetailedSummary).find((row) => row !== null);
 export const evidenceHighlights = {
-  updatedAt: [physicsExtraction.paperStageReviewedAt, latestDiscoveryDate].sort().at(-1),
+  updatedAt: [physicsExtraction.paperStageReviewedAt, latestDiscoveryDate, mathematicsSummary?.reviewedAt ?? latestDiscoveryDate].sort().at(-1),
+  mathematicsDetailedParts: mathematicsSummary?.detailedTasks ?? 0,
+  mathematicsDetailedMarks: mathematicsSummary?.originalMarks ?? 0,
   physicsDetailedParts: physicsExtraction.detailedLeafTasks,
   physicsDetailedMarks: physicsExtraction.detailedOriginalMarks,
   provisionalFamilies: researchFamilies.filter((f) => f.status === 'provisional').length,

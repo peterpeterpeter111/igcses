@@ -1,3 +1,4 @@
+import mathematicsStatistics from './notes/mathematics-statistics.json' with { type: 'json' };
 import mathematicsGeometry from './notes/mathematics-geometry.json' with { type: 'json' };
 import humanBiology from './notes/human-biology.json' with { type: 'json' };
 import biology from './notes/biology.json' with { type: 'json' };
@@ -52,6 +53,7 @@ export type ChapterNotes = {
 };
 // Teaching content is added only after its relevant specification pages are reviewed.
 export const notes: ChapterNotes[] = [
+  mathematicsStatistics,
   humanBiology,
   biology,
   chemistry,

@@ -1,3 +1,15 @@
+# Latest phase — Grouped-mean prototype, 4 October 2026
+
+Read research/checkpoints/2026-10-04-GROUPED-MEAN.md first. Six provisional families/five experimental generators and offline markers/zero active. Grouped-mean domain: 1,989 inputs checked, 33 synthetic response cases; no learner calibration. 103 tests and final build/public scan pass. Curriculum remains 255 sections/15 partial notes, 300 identities/738 partial requirements/401 links; Maths 38 detailed parts/100 marks. Zero completed chapters/points/fully processed papers. GitHub blocker recovered: main 34ebe8a exactly mirrors saved 7d26593 and preserves history; sync newer local phases non-force. AI last; no Sites version/deployment or reset. Continue above 5% in both allowances, pause at 5%. Older entries historical.
+
+# Latest phase — Maths Statistics, 4 October 2026
+
+Read research/checkpoints/2026-10-04-STATISTICS.md first.255 sections/15 partial notes;300 reviewed identities,288 teaching audits;738 partial requirements/401 links.14 Statistics lessons and two checked diagrams added.99tests and final build/public scan pass. Maths38/38 detailed parts/100marks; zero fully processed papers or completed chapters/points. Five provisional/four experimental/zero active. GitHub main update still blocked by automatic approval-review transport failure; pending34ebe8a mirrors7d26593. Check remote before resolving and syncing newer work. AI last, preserve UI/history, no reset, pause at5%. Older entries historical.
+
+# Latest phase — Maths Q23–Q27, 4 October 2026
+
+Read research/checkpoints/2026-10-04-Q23-27.md first. Maths all38 detailed parts/100marks, but zero fully processed papers. Totals293 reviewed identities,277 with teaching audits;241 sections/14 partial notes;705 partial requirements/387 links.99tests,13 numeric checks and final build/public scan pass. GitHub tree uploaded and commit34ebe8a created to mirror7d26593; main update was not executed because automatic approval review disconnected twice. Check remote before resolving; do not bypass review. New phase also needs descendant sync. Five provisional/four experimental/zero active; no complete chapters/points or deployment. Preserve history/UI, AI last, no reset; pause at5% in either allowance. Older entries historical.
+
 # Latest pause — 2 October 2026
 
 Read research/checkpoints/2026-10-02-PAUSED.md first. 5% five-hour /23% weekly remaining; paused, no reset. Latest academic commit 782aa92 passes 99 tests and final build. Maths 28/38 detailed parts /71 marks; 241 sections /14 partial documents. GitHub c92960e mirrors ccced64; newer saved phases and this pause require non-force sync. Prepared five-batch plan was NOT uploaded; regenerate for latest HEAD. Resume only above 5% in both windows. Next Q23–Q27, broader curriculum/calibration; preserve UI/history and keep AI last. Zero completed chapters/points/processed papers or active templates; no deployment. Older entries are historical.

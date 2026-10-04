@@ -1,0 +1,289 @@
+{
+  "schemaVersion": 1,
+  "id": "4MB1.statistics.grouped-mean",
+  "version": "0.1.0",
+  "status": "provisional",
+  "subject": "4MB1",
+  "origin": "exam-derived",
+  "syllabusRefs": [
+    {
+      "pointId": "4MB1:issue1:10C",
+      "documentId": "4MB1-spec",
+      "issue": "1",
+      "pdfPages": [
+        28
+      ],
+      "mappingStatus": "verified"
+    }
+  ],
+  "sourceTasks": [
+    {
+      "taskId": "4MB1-2024-summer-01-candidate.Q23.c",
+      "paperId": "4MB1-2024-summer-01-candidate",
+      "questionPaper": {
+        "documentId": "4MB1-2024-summer-01-candidate-qp",
+        "pdfPages": [
+          18
+        ]
+      },
+      "markScheme": {
+        "documentId": "4MB1-2024-summer-01-candidate-ms",
+        "pdfPages": [
+          21
+        ]
+      },
+      "originalMarks": 4
+    }
+  ],
+  "answerGuideId": "4MB1.statistics.grouped-mean",
+  "commandWord": "Calculate an estimate",
+  "skill": "Estimate a grouped mean using class midpoints and frequencies.",
+  "assessmentObjectives": [
+    "unassigned-pending-official-AO-review"
+  ],
+  "originalMarks": [
+    4
+  ],
+  "customQuiz": {
+    "candidateMarks": [
+      4
+    ],
+    "validatedMarks": [],
+    "adaptationStatus": "pending",
+    "rationale": "Keep the original four-mark M2/M1 + dependent M1 + A1 structure. Numeric and context transformation is not yet calibrated for live use."
+  },
+  "stimulus": {
+    "types": [
+      "table"
+    ],
+    "originality": "original-generated-content",
+    "requirements": [
+      "Five fixed unequal-width distance classes (0,2],(2,5],(5,10],(10,20],(20,40] km; five positive integer frequencies sum to 60.",
+      "Original walking-club context and generated frequencies; original frequency tuple excluded from fresh generation."
+    ],
+    "evidenceContract": [
+      "Only prompt, class table, total, units and maximum marks may be public.",
+      "Deep-freeze the package privately before scoring; no live route serves this prototype.",
+      "Structured working records five ordered product slots, explicit intention to add, their sum and divisor. A null slot means not shown.",
+      "Offline representatives and totals must be half-integers in a bounded domain; other valid notation or methods defer rather than being marked wrong."
+    ]
+  },
+  "parameters": [
+    {
+      "id": "f0",
+      "type": "integer",
+      "domain": {
+        "minimum": 12,
+        "maximum": 27,
+        "step": 1
+      },
+      "constraints": [
+        "Five frequencies total 60; twice the midpoint product sum is divisible by 6, giving an exact mean with at most two decimal places."
+      ]
+    },
+    {
+      "id": "f1",
+      "type": "integer",
+      "domain": {
+        "minimum": 8,
+        "maximum": 19,
+        "step": 1
+      },
+      "constraints": [
+        "Five frequencies total 60; twice the midpoint product sum is divisible by 6, giving an exact mean with at most two decimal places."
+      ]
+    },
+    {
+      "id": "f2",
+      "type": "integer",
+      "domain": {
+        "minimum": 5,
+        "maximum": 15,
+        "step": 1
+      },
+      "constraints": [
+        "Five frequencies total 60; twice the midpoint product sum is divisible by 6, giving an exact mean with at most two decimal places."
+      ]
+    },
+    {
+      "id": "f3",
+      "type": "integer",
+      "domain": {
+        "minimum": 5,
+        "maximum": 17,
+        "step": 1
+      },
+      "constraints": [
+        "Five frequencies total 60; twice the midpoint product sum is divisible by 6, giving an exact mean with at most two decimal places."
+      ]
+    },
+    {
+      "id": "f4",
+      "type": "integer",
+      "domain": {
+        "minimum": 2,
+        "maximum": 10,
+        "step": 1
+      },
+      "constraints": [
+        "Five frequencies total 60; twice the midpoint product sum is divisible by 6, giving an exact mean with at most two decimal places."
+      ]
+    }
+  ],
+  "constraints": [
+    "Preserve the five classes, midpoint arithmetic, total 60, units km and four-mark maximum.",
+    "Fresh generation excludes [22,13,9,12,4]; source fixture is permitted only for evidence tests.",
+    "The finite numeric domain is not a reviewed question bank or an infinite supply. Seeds repeat modulo eligible-domain size.",
+    "No changed class boundaries, added subquestions or 2/6-mark adaptation.",
+    "Official per-leaf AO allocation and empirical difficulty remain unverified."
+  ],
+  "relationships": [
+    "Midpoints are 1,3.5,7.5,15,30 km; estimate = sum(midpoint times frequency)/60.",
+    "Twice the product sum is integral and divisible by 6; the exact mean has at most two decimal places.",
+    "First method band is capped at two, not three; division credit requires at least one mark in that band."
+  ],
+  "difficultyControls": [
+    "Retain the source total, five rows, unequal class widths and half-integer midpoints. Frequency-size and context changes need demand calibration."
+  ],
+  "transformations": [
+    {
+      "id": "change-frequencies-and-context",
+      "status": "candidate",
+      "conditions": "Admitted domain only; source-relative demand and response calibration pending."
+    },
+    {
+      "id": "change-classes-total-operation-or-marks",
+      "status": "forbidden",
+      "conditions": "Needs a separate source and rubric review."
+    }
+  ],
+  "solutionProcedure": [
+    "Find the five class midpoints.",
+    "Multiply each midpoint by its class frequency, then add the products.",
+    "Divide the sum by 60 and report an estimate in km, not a measured exact population mean."
+  ],
+  "marking": {
+    "method": "method-marks",
+    "maximum": 4,
+    "criteria": [
+      {
+        "id": "midpoint-products",
+        "credit": 2,
+        "rule": "Non-additive band: M2 for at least three correct midpoint products with intention to add; M1 for at least three within-class representatives (upper endpoint included, lower excluded) in products with addition, OR three correct midpoint products without addition. Unevaluated multiplication allowed."
+      },
+      {
+        "id": "divide-total",
+        "credit": 1,
+        "rule": "M1 for dividing their sum by 60, dependent on at least M1 in the preceding band."
+      },
+      {
+        "id": "estimate",
+        "credit": 1,
+        "rule": "A1 for the exact estimated mean or equivalent. The source labels the answer cas, so an answer alone can imply full credit unless obviously obtained incorrectly."
+      }
+    ],
+    "acceptableAlternatives": [
+      "Exact decimal with optional km, or an exactly equivalent integer fraction, including unreduced forms.",
+      "Unevaluated correct product entries in the supported structured working.",
+      "Conventional unsupported notation and methods require review; this narrow parser does not define all acceptable exam answers."
+    ],
+    "dependencies": [
+      "M2 and M1 in the first band cannot be added.",
+      "Division credit requires at least one first-band mark.",
+      "All credit can be implied by an exact correct answer alone."
+    ],
+    "contradictionRules": [
+      "Additional, crossed-out, wrong-frequency or inconsistent product evidence requires review.",
+      "Correct answer with incomplete or different working requires review unless all five midpoint products, addition total and divisor 60 are explicitly correct.",
+      "An incorrect addition total may retain method marks; never silently repair it or give final accuracy for a wrong estimate."
+    ],
+    "units": "km",
+    "tolerance": null,
+    "levelRubric": []
+  },
+  "commonErrors": [
+    {
+      "description": "Using class boundaries or averaging midpoints without frequencies does not give the correct grouped mean.",
+      "origin": "editorial",
+      "sourceRefs": []
+    },
+    {
+      "description": "Representatives strictly at lower endpoints do not satisfy the source M1 within-class concession.",
+      "origin": "scheme",
+      "sourceRefs": [
+        {
+          "documentId": "4MB1-2024-summer-01-candidate-ms",
+          "pdfPages": [
+            21
+          ]
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ruleIds": [
+      "domain-reconciliation",
+      "midpoint-sum",
+      "exact-fraction",
+      "fresh-source-exclusion",
+      "determinism",
+      "method-band-cap",
+      "division-dependency",
+      "lower-excluded-upper-included",
+      "contradiction-deferral",
+      "private-answer",
+      "no-live-activation"
+    ],
+    "testPlan": [
+      "Exhaust the implemented finite frequency domain for arithmetic, determinism and source exclusion.",
+      "Check source fixture, all mark totals and dependency boundaries with synthetic response cases; tamper and sparse-input rejection.",
+      "Before promotion review AO allocation, numeric/context demand and real learner working; retain unsupported-method review."
+    ],
+    "testedSeeds": [
+      0,
+      1,
+      2,
+      100,
+      1000,
+      4294967295
+    ],
+    "boundaryCoverage": "partial",
+    "status": "not-run",
+    "runRefs": [
+      "research/validation/2026-10-04-grouped-mean-prototype.json"
+    ]
+  },
+  "runtime": {
+    "implemented": true,
+    "generatorId": "grouped-mean-prototype-v1",
+    "seedPolicy": "Unsigned 32-bit seed modulo an enumerated finite domain, excluding the original tuple. No retries, infinite uniqueness or security randomness claimed.",
+    "maxRetries": 0,
+    "publicFields": [
+      "prompt",
+      "stimulus",
+      "maximumMarks"
+    ],
+    "privateFields": [
+      "seed",
+      "parameters",
+      "solution",
+      "rubric",
+      "sourceTasks",
+      "validationResults"
+    ],
+    "freezeBeforeAnswer": true,
+    "releaseSchemeAfter": "session-completed"
+  },
+  "review": {
+    "pedagogyStatus": "pending",
+    "reviewer": "Codex",
+    "reviewerType": "agent",
+    "humanReviewed": false,
+    "blockers": [
+      "Frequency and context transformation demand not calibrated.",
+      "Official per-leaf AO allocation and real learner responses unverified.",
+      "Offline structured transcription only; alternative or contradictory working defers.",
+      "No live registration or final AI integration."
+    ]
+  }
+}

@@ -35,9 +35,9 @@ void test('demand review covers every implemented structure without claiming dif
 });
 
 void test('template ledgers exactly reflect saved families, provisional links and implementation status', () => {
-  const result = JSON.parse(execFileSync('python3', ['scripts/export-template-ledger.py', '--date', '2026-10-02', '--check'], { encoding: 'utf8' }));
-  assert.equal(result.families, 5);
-  assert.equal(result.sourceLinks, 5);
+  const result = JSON.parse(execFileSync('python3', ['scripts/export-template-ledger.py', '--date', '2026-10-04', '--check'], { encoding: 'utf8' }));
+  assert.equal(result.families, 6);
+  assert.equal(result.sourceLinks, 6);
   assert.equal(result.activeTemplates, 0);
   assert.equal(result.checkOnly, true);
 });

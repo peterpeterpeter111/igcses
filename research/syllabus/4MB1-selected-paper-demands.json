@@ -4,19 +4,21 @@
   "specificationIssue": "Issue 1 - January 2016",
   "specificationDocumentId": "4MB1-spec",
   "specificationSha256": "62d4534ba1c0aee42ce2d3e7fd1da8083fd03216dd106da11ae590525d3187a5",
-  "reviewDate": "2026-10-02",
+  "reviewDate": "2026-10-04",
   "reviewedBy": "Codex",
   "reviewerType": "agent",
-  "reviewMethod": "Visual review of official specification PDF pages 21,23,24,25,27,28; component applicability retained from prior PDF 11–12 review.",
+  "reviewMethod": "Visual review of official specification PDF pages 21,22,23,24,25,26,27,28; component applicability retained from prior PDF 11–12 review.",
   "reviewedPages": [
     21,
+    22,
     23,
     24,
     25,
+    26,
     27,
     28
   ],
-  "scope": "Thirteen selected row identities; eight have partial teaching links, five are source-only. No completed substatement audits. Q19 scope unresolved.",
+  "scope": "Thirty-one selected source identities, nineteen with partial teaching and twelve source-only. No complete points or substatement audits. Q19 scope unresolved.",
   "points": [
     {
       "id": "4MB1:issue1:4G",
@@ -65,9 +67,12 @@
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "statistics",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
-      "humanReviewed": false
+      "noteSectionIds": [
+        "discrete-averages"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-04"
     },
     {
       "id": "4MB1:issue1:4I",
@@ -264,6 +269,345 @@
       "noteSectionIds": [],
       "teachingCoverage": "not-started",
       "humanReviewed": false
+    },
+    {
+      "id": "4MB1:issue1:10C",
+      "reference": "10C",
+      "pdfPage": 28,
+      "printedPage": 22,
+      "summary": "Estimate a mean from grouped frequencies; separate weighted and moving mean questions will not be set.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "statistics",
+      "noteSectionIds": [
+        "estimated-grouped-mean"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-04"
+    },
+    {
+      "id": "4MB1:issue1:10D",
+      "reference": "10D",
+      "pdfPage": 28,
+      "printedPage": 22,
+      "summary": "Determine a modal class and the class containing the median in grouped data.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "statistics",
+      "noteSectionIds": [
+        "grouped-modal-and-median-classes"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-04"
+    },
+    {
+      "id": "4MB1:issue1:10E",
+      "reference": "10E",
+      "pdfPage": 28,
+      "printedPage": 22,
+      "summary": "Use basic probability language, scales, sample spaces, relative frequency, probabilities and complements.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "statistics",
+      "noteSectionIds": [
+        "probability-and-sample-spaces",
+        "relative-frequency-and-complements"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-04"
+    },
+    {
+      "id": "4MB1:issue1:6G",
+      "reference": "6G",
+      "pdfPage": 24,
+      "printedPage": 18,
+      "summary": "Relate length scale factors to area and volume factors for similar figures.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "geometry",
+      "noteSectionIds": [],
+      "teachingCoverage": "not-started",
+      "humanReviewed": false
+    },
+    {
+      "id": "4MB1:issue1:7D",
+      "reference": "7D",
+      "pdfPage": 25,
+      "printedPage": 19,
+      "summary": "Calculate arc lengths and sector areas in degrees; radians excluded.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "geometry",
+      "noteSectionIds": [],
+      "teachingCoverage": "not-started",
+      "humanReviewed": false
+    },
+    {
+      "id": "4MB1:issue1:8D",
+      "reference": "8D",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "summary": "Use parallel vectors, unit vectors and position vectors in two dimensions.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "geometry",
+      "noteSectionIds": [],
+      "teachingCoverage": "not-started",
+      "humanReviewed": false
+    },
+    {
+      "id": "4MB1:issue1:8E",
+      "reference": "8E",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "summary": "Find sums and differences of vectors.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "geometry",
+      "noteSectionIds": [],
+      "teachingCoverage": "not-started",
+      "humanReviewed": false
+    },
+    {
+      "id": "4MB1:issue1:8G",
+      "reference": "8G",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "summary": "Multiply a vector by a scalar.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "geometry",
+      "noteSectionIds": [],
+      "teachingCoverage": "not-started",
+      "humanReviewed": false
+    },
+    {
+      "id": "4MB1:issue1:8I",
+      "reference": "8I",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "summary": "Apply vectors to simple geometry, including collinearity, parallel lines and concurrency.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "geometry",
+      "noteSectionIds": [],
+      "teachingCoverage": "not-started",
+      "humanReviewed": false
+    },
+    {
+      "id": "4MB1:issue1:4L",
+      "reference": "4L",
+      "pdfPage": 22,
+      "printedPage": 16,
+      "summary": "Differentiate integer powers of x using dy/dx notation.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "number-and-algebra",
+      "noteSectionIds": [],
+      "teachingCoverage": "not-started",
+      "humanReviewed": false
+    },
+    {
+      "id": "4MB1:issue1:4M",
+      "reference": "4M",
+      "pdfPage": 22,
+      "printedPage": 16,
+      "summary": "Determine gradients, rates of change, maxima, minima and stationary or turning points through differentiation or graphical methods.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "number-and-algebra",
+      "noteSectionIds": [],
+      "teachingCoverage": "not-started",
+      "humanReviewed": false
+    },
+    {
+      "id": "4MB1:issue1:10A",
+      "reference": "10A",
+      "pdfPage": 28,
+      "printedPage": 22,
+      "summary": "Represent numerical data with bar charts, pie charts and histograms; cumulative frequency graphs excluded.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "statistics",
+      "noteSectionIds": [
+        "bar-charts",
+        "pie-charts",
+        "histograms-and-density"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-04"
+    },
+    {
+      "id": "4MB1:issue1:10F",
+      "reference": "10F",
+      "pdfPage": 28,
+      "printedPage": 22,
+      "summary": "Add probabilities of mutually exclusive events.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "statistics",
+      "noteSectionIds": [
+        "mutually-exclusive-addition"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-04"
+    },
+    {
+      "id": "4MB1:issue1:10G",
+      "reference": "10G",
+      "pdfPage": 28,
+      "printedPage": 22,
+      "summary": "Multiply probabilities of independent events.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "statistics",
+      "noteSectionIds": [
+        "independent-product-rule"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-04"
+    },
+    {
+      "id": "4MB1:issue1:10H",
+      "reference": "10H",
+      "pdfPage": 28,
+      "printedPage": 22,
+      "summary": "Determine probabilities of two or more independent events using tree diagrams.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "statistics",
+      "noteSectionIds": [
+        "probability-tree-diagrams"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-04"
+    },
+    {
+      "id": "4MB1:issue1:10I",
+      "reference": "10I",
+      "pdfPage": 28,
+      "printedPage": 22,
+      "summary": "Use simple conditional probability for combined events.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "statistics",
+      "noteSectionIds": [
+        "without-replacement"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-04"
+    },
+    {
+      "id": "4MB1:issue1:10J",
+      "reference": "10J",
+      "pdfPage": 28,
+      "printedPage": 22,
+      "summary": "Find very simple conditional probability; formal conditional notation is not used.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "statistics",
+      "noteSectionIds": [
+        "conditional-probability"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-04"
+    },
+    {
+      "id": "4MB1:issue1:10K",
+      "reference": "10K",
+      "pdfPage": 28,
+      "printedPage": 22,
+      "summary": "Understand and calculate expected frequency.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "statistics",
+      "noteSectionIds": [
+        "expected-frequency"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-04"
     }
   ]
 }

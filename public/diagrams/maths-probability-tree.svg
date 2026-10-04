@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" role="img" aria-labelledby="title desc">
+ <title id="title">A probability tree for two draws with replacement</title><desc id="desc">A bag holds three red and two blue counters. Every draw is random with replacement. Four ordered paths have probabilities nine, six, six and four twenty-fifths.</desc>
+ <rect width="900" height="480" fill="#faf5ec"/>
+ <g font-family="Georgia, serif" fill="#332722"><text x="36" y="38" font-size="24">Two random draws · replace the first counter</text><text x="36" y="66" font-size="16">Each stage: R = red, B = blue. Every counter is equally likely.</text></g>
+ <g fill="none" stroke-width="3"><path d="M90 280 L350 170 M350 170 L660 120 M350 380 L660 330" stroke="#8c343a"/><path d="M90 280 L350 380 M350 170 L660 225 M350 380 L660 435" stroke="#8e7148"/></g>
+ <g fill="#faf5ec" stroke="#332722" stroke-width="2"><circle cx="90" cy="280" r="5"/><circle cx="350" cy="170" r="5"/><circle cx="350" cy="380" r="5"/></g>
+ <g font-family="Georgia, serif" font-size="20" fill="#332722"><text x="158" y="210">R · 3/5</text><text x="158" y="350">B · 2/5</text><text x="466" y="130">R · 3/5</text><text x="466" y="215">B · 2/5</text><text x="466" y="345">R · 3/5</text><text x="466" y="428">B · 2/5</text><text x="684" y="126">RR → 9/25</text><text x="684" y="231">RB → 6/25</text><text x="684" y="336">BR → 6/25</text><text x="684" y="441">BB → 4/25</text></g>
+ <g font-family="Georgia, serif" font-size="16" fill="#6d5a4e"><text x="44" y="112">First draw</text><text x="430" y="93">Second draw</text></g>
+</svg>

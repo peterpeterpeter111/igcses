@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-04",
+  "status": "passed",
+  "numericChecks": 17,
+  "reasoningChecks": [
+    "Unequal widths distinguish frequency from density.",
+    "Grouped median central positions10/11 both in second class.",
+    "Sample-space equiprobability assumptions explicit.",
+    "Replacement and no-replacement branch populations distinguished.",
+    "Conditional denominators reflect given group."
+  ],
+  "limitations": [
+    "Original teaching, not validated assessment families or a complete chapter."
+  ],
+  "noteSha256": "20e84abc854a39bfe946197e5ac61620923407899db8f9640290d95e86ee7d56",
+  "diagramChecks": [
+    "Histogram plotted widths4,6,10 and heights2,1.5,0.3; browser visual review.",
+    "Four ordered probability paths and branch labels checked visually; colour is supplementary to textual labels."
+  ],
+  "diagramHashes": {
+    "maths-probability-tree.svg": "858c03c24b0d48c0d1c8f4fd0d7e42b5e7acab727c1bb90e36f3042d3a0c4f5e",
+    "maths-frequency-density.svg": "dbd62cf42b40d335d7f21149da436030752cf54c9039e7d3bbdfeb0bdc589e95"
+  }
+}

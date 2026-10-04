@@ -8,10 +8,10 @@ void test('Maths coverage exposes the reviewed subset without criteria or promot
   const candidate = obtainedPaperCandidates('4MB1')[0];
   const summary = paperDetailedSummary(candidate)!;
   assert.ok(summary);
-  assert.equal(summary.detailedTasks, 28);
-  assert.equal(summary.originalMarks, 71);
+  assert.equal(summary.detailedTasks, 38);
+  assert.equal(summary.originalMarks, 100);
   assert.equal(summary.indexedTasks, 38);
-  assert.equal(summary.remainingTasks, 10);
+  assert.equal(summary.remainingTasks, 0);
   assert.equal(summary.fullyProcessed, false);
   assert.equal(summary.humanReviewed, false);
   assert.ok(!('tasks' in summary) && !('criteria' in summary));
@@ -57,7 +57,7 @@ with tempfile.TemporaryDirectory() as d:
  assert all(text==p.read_text() for p,text in outputs.items()),'Saved export drift'
  mutations={
   'hash':lambda m:m['documents'][0].update(sha256='bad'),
-  'count':lambda m:m.update(detailedLeafTasks=38),
+  'count':lambda m:m.update(detailedLeafTasks=39),
   'marks':lambda m:m['tasks'][0].update(originalMarks=5),
   'duplicate':lambda m:m['tasks'].append(m['tasks'][0]),
   'promotion':lambda m:m.update(paperStage='processed',fullyProcessed=True),
@@ -70,6 +70,7 @@ with tempfile.TemporaryDirectory() as d:
   'removed-task':remove_task,
   'scope-promotion':lambda m:next(t for t in m['tasks'] if t['questionPath']=='19')['syllabusMappings'][0].update(currentApplicability='current-specification'),
   'scope-evidence':lambda m:m.update(sourceDiscrepancies=[]),
+  'missing-stimulus':lambda m:next(t for t in m['tasks'] if t['questionPath']=='26.b').update(stimulusRefs=[{'documentId':m['paperId']+'-qp','pdfPages':[23]}]),
   'unknown-scope':lambda m:m['tasks'][0]['syllabusMappings'][0].update(currentApplicability='invented'),
  }
  for name,mutate in mutations.items():
@@ -80,6 +81,6 @@ with tempfile.TemporaryDirectory() as d:
   assert all(p.read_bytes()==data for p,data in before.items()),name+' changed a table'
  print(json.dumps({'rejected':len(mutations),'tablesChecked':len(outputs)}))
 `], { encoding: 'utf8' }));
-  assert.equal(result.rejected, 15);
+  assert.equal(result.rejected, 16);
   assert.equal(result.tablesChecked, 4);
 });

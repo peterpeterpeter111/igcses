@@ -96,7 +96,9 @@ export default function CoveragePage() {
           <li>
             Mathematics B has one downloaded paper/scheme pair, separate from
             the original raw-link inventory. Its cover identity and paper log
-            match; task indexing and whole-paper review remain pending.
+            match; {evidenceHighlights.mathematicsDetailedParts} question parts
+            ({evidenceHighlights.mathematicsDetailedMarks} original marks) have
+            detailed records. Whole-paper processing remains incomplete.
             Wider archive discovery is incomplete.
           </li>
           <li>
@@ -113,7 +115,8 @@ export default function CoveragePage() {
           <li>
             Active generative templates: {evidenceHighlights.activeFamilies}.{' '}
             Provisional families: {evidenceHighlights.provisionalFamilies} (English
-            retrieval, Physics resultant force and weight, Maths factorisation and matrix addition).{' '}
+            retrieval, Physics resultant force and weight, Maths factorisation,
+            matrix addition and grouped means).{' '}
             Experimental generators: {evidenceHighlights.experimentalGenerators}.
             Mathematical checks do not establish assessment or marking readiness.
             The one-mark matrix prototype has no validated 2/4/6-mark quiz adaptation. Live AI remains deferred.
