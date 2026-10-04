@@ -1,3 +1,4 @@
+import biologyHumanGas from '../research/syllabus/4BI1-human-gas.json' with { type: 'json' };
 import biologyRespiration from '../research/syllabus/4BI1-respiration-plant-gas.json' with { type: 'json' };
 import biologyNutrition from '../research/syllabus/4BI1-human-nutrition.json' with { type: 'json' };
 import biologyPhotosynthesis from '../research/syllabus/4BI1-photosynthesis.json' with { type: 'json' };
@@ -47,6 +48,7 @@ export const reviewedInventories = [
   { title: 'Plant nutrition and photosynthesis (2.18–2.23)', ...biologyPhotosynthesis },
   { title: 'Human nutrition (2.24–2.33B)', ...biologyNutrition },
   { title: 'Respiration and plant gas exchange (2.34–2.45B)', ...biologyRespiration },
+  { title: 'Human gas exchange (2.46–2.50)', ...biologyHumanGas },
   { title: 'Cells and tissues (1.1–1.16)', ...humanCells },
   { title: 'Principles foundations (1.1–1.22)', ...chemistryStates },
   { title: 'Group behaviour, formulae and calculations (1.23–1.36)', ...chemistryCalculations },

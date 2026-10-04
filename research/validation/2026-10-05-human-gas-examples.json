@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-05",
+  "scope": "Six exact checks on invented breath counts. No observations, lung-volume estimates or fitness calibration.",
+  "passed": 6,
+  "checks": [
+    {
+      "id": "rest-mean",
+      "actual": "8",
+      "expected": "8",
+      "passed": true
+    },
+    {
+      "id": "post-mean",
+      "actual": "14",
+      "expected": "14",
+      "passed": true
+    },
+    {
+      "id": "rest-rate",
+      "actual": "16",
+      "expected": "16",
+      "passed": true
+    },
+    {
+      "id": "post-rate",
+      "actual": "28",
+      "expected": "28",
+      "passed": true
+    },
+    {
+      "id": "rate-difference",
+      "actual": "12",
+      "expected": "12",
+      "passed": true
+    },
+    {
+      "id": "percentage-increase",
+      "actual": "75",
+      "expected": "75",
+      "passed": true
+    }
+  ],
+  "noteSha256": "85b9807d74ac89001b50397c2d690c7fa8a73fdd47ac8ff59555edb65b4f06bc"
+}
