@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-05",
+  "scope": "Exact arithmetic for original illustrative teaching inputs only; no practical observations or generated response calibration.",
+  "checks": [
+    {
+      "id": "large-mm-sa-v",
+      "actual": "6",
+      "expected": "6",
+      "passed": true
+    },
+    {
+      "id": "small-mm-sa-v",
+      "actual": "60",
+      "expected": "60",
+      "passed": true
+    },
+    {
+      "id": "large-cm-sa-v",
+      "actual": "3",
+      "expected": "3",
+      "passed": true
+    },
+    {
+      "id": "small-cm-sa-v",
+      "actual": "6",
+      "expected": "6",
+      "passed": true
+    },
+    {
+      "id": "mm-ratio",
+      "actual": "10",
+      "expected": "10",
+      "passed": true
+    },
+    {
+      "id": "cm-ratio",
+      "actual": "2",
+      "expected": "2",
+      "passed": true
+    },
+    {
+      "id": "penetration-percent-L1",
+      "actual": "244/5",
+      "expected": "244/5",
+      "passed": true
+    },
+    {
+      "id": "penetration-percent-L2",
+      "actual": "271/10",
+      "expected": "271/10",
+      "passed": true
+    },
+    {
+      "id": "mass-percent-2",
+      "actual": "9",
+      "expected": "9",
+      "passed": true
+    },
+    {
+      "id": "mass-percent-5/2",
+      "actual": "-12",
+      "expected": "-12",
+      "passed": true
+    }
+  ],
+  "passed": 10,
+  "sourceNoteSha256": "50c200c340da1072286c9495c6a5698b33b733465bd6fd61ec3040300b08bf1e"
+}

@@ -1,3 +1,7 @@
+# Latest phase — Biology cell transport, 5 October 2026
+
+Read research/checkpoints/2026-10-05-BIOLOGY-TRANSPORT.md first. Seven original lessons plus one checked diagram;312 sections /17 partial notes,354 reviewed parents /345 partial audits /910 requirements /478 links.104tests,typecheck/lint/research/evidence,10exact arithmetic checks,production build and64-file public scan pass. Three own-spec references2.15–2.17,all1B/2B; no completion promotion or paper/template-count change. GitHub7dc4cf7 exactly mirrorsb9a0b72; sync this newer phase non-force. No AI, Sites version,deployment or reset. Continue broader curriculum and calibration above5%in both ordinary windows; Astra worker model quota remains blocked. Older entries historical.
+
 # Latest phase — Biology molecules and enzymes, 5 October 2026
 
 Read research/checkpoints/2026-10-05-BIOLOGY-MOLECULES.md first. Seven qualification-checked shared lessons added; 305 sections /17 partial notes,351 reviewed parents /342 partial audits /894 requirements /469 links.104tests,typecheck/lint/research/evidence and production build/63-file public scan pass. Food-test sample preparation clarified in both subjects; pH practical2.14B remains Paper2B-only. No completion activation or paper-count change. GitHub45c743e mirrors f11a5ab; sync the newer Biology phases non-force. No AI integration, Sites version, deployment or reset. Continue broader curriculum and calibrated templates; pause at5%in either allowance. Older entries historical.

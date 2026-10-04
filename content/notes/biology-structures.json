@@ -18,9 +18,11 @@
     "Identify eight named cell structures and connect each to its role.",
     "Compare typical plant and animal cells while recognising specialisation.",
     "Explain differentiation and evaluate stem-cell benefits and limitations for Paper 2B.",
-    "This introduction covers only the first six parent statements; later chapter topics and assessment remain unfinished.",
     "Connect carbohydrates, proteins and lipids to their elements and smaller units.",
-    "Design controlled food tests and explain enzyme activity, temperature and pH effects."
+    "Design controlled food tests and explain enzyme activity, temperature and pH effects.",
+    "Explain diffusion, osmosis and active transport, including concentration and water-potential gradients.",
+    "Calculate surface area per volume and evaluate living and non-living transport investigations.",
+    "Later nutrition, respiration and organ-system teaching and whole-chapter assessment remain unfinished."
   ],
   "sections": [
     {
@@ -724,6 +726,352 @@
           "Never return iodine-contaminated samples to the tube. Controls check that starch is not disappearing without active enzyme."
         ]
       }
+    },
+    {
+      "id": "diffusion-and-net-movement",
+      "title": "Diffusion: random motion produces a net movement",
+      "points": [
+        "2.15"
+      ],
+      "paragraphs": [
+        "Diffusion is the net movement of particles from a region of higher concentration to a region of lower concentration, caused by their random motion. A concentration gradient is a difference in concentration across a distance. More particles initially leave the more concentrated region than leave the less concentrated region, even though particles move in both directions.",
+        "Particles do not sense where they are needed or deliberately travel towards an empty space. Each particle moves randomly. Net movement describes the overall balance across many particles, rather than the direction taken by every particle.",
+        "Diffusion can occur through fluids and across a cell membrane if the membrane is permeable to the substance. Oxygen can diffuse into a respiring cell when its concentration is higher outside, while carbon dioxide can diffuse out when its concentration is higher inside. The direction depends on the gradient for that substance, not a universal rule that diffusion always enters cells.",
+        "Diffusion does not require energy supplied by respiration. Particles already have kinetic energy. In a closed system at uniform concentration, random motion continues, but there is no net movement down a concentration gradient. Diffusion does not require a membrane; diffusion through agar is a useful non-living model."
+      ],
+      "example": {
+        "question": "A cell uses oxygen faster than it receives it, so oxygen concentration remains lower inside. Explain the net direction across its oxygen-permeable membrane.",
+        "steps": [
+          "Oxygen moves randomly in both directions.",
+          "The higher concentration outside produces a net movement into the cell.",
+          "Continual consumption can maintain the gradient; the cell does not pull individual oxygen particles towards itself."
+        ],
+        "explanation": "State the substance, compare its concentrations, then explain its net direction."
+      },
+      "practice": {
+        "question": "At equal concentrations on both sides of a permeable membrane, do particles stop crossing?",
+        "answer": "No. Particles continue moving randomly in both directions, with no net movement if other relevant conditions are equal.",
+        "explanation": "State the substance, compare its concentrations, then explain its net direction."
+      },
+      "terms": [
+        "diffusion",
+        "net movement",
+        "random motion",
+        "concentration gradient",
+        "equilibrium"
+      ],
+      "commonMistakes": [
+        "Do not say all particles move only from high to low concentration.",
+        "Diffusion is not powered by ATP from respiration."
+      ]
+    },
+    {
+      "id": "osmosis-and-cell-water",
+      "title": "Osmosis: water movement across a partially permeable membrane",
+      "points": [
+        "2.15"
+      ],
+      "paragraphs": [
+        "Osmosis is the net movement of water through a partially permeable membrane from higher water potential to lower water potential. In the simple school model with the same pressure on each side and a solute that cannot cross, this means water moves from the more dilute solution towards the more concentrated solution.",
+        "The membrane must allow water through while restricting the relevant solute. Water crosses in both directions; the large arrow in the model represents the net movement. The term osmosis describes water movement, not sugar or salt moving through the membrane.",
+        "A plant cell placed in a solution with higher water potential than its contents can take in water. Its vacuole expands and the contents press against the cellulose wall, making the cell turgid. The wall resists further expansion; the pressure that develops reduces the difference in water potential, so inflow need not continue indefinitely.",
+        "A plant cell losing water becomes less turgid. In sufficiently concentrated surroundings, its membrane and contents may pull away from the wall: plasmolysis. An animal cell has no supporting cellulose wall and may swell and burst in very dilute surroundings, or shrink after losing water. These outcomes depend on the conditions and the type of cell.",
+        "“More concentrated” is a shortcut with assumptions, not the complete definition. Pressure and solute permeability matter. The diagram is an idealised starting comparison with equal pressure, not a measured picture of particles or a claim that every artificial membrane blocks every sugar."
+      ],
+      "example": {
+        "question": "An ideal membrane passes water but blocks a dissolved solute. At the same initial pressure, side A is more dilute than side B. Predict the initial net movement.",
+        "steps": [
+          "Side A has higher water potential under the stated conditions.",
+          "There is a net movement of water A → B through the membrane.",
+          "Individual water molecules still cross both ways; the solute is retained in this model."
+        ],
+        "explanation": "Name water, give the water-potential direction, and include the membrane."
+      },
+      "practice": {
+        "question": "Why does the cellulose wall not replace the membrane in an explanation of osmosis?",
+        "answer": "The membrane provides selective permeability. The wall provides support and resists swelling; it is not the selectively permeable boundary controlling osmosis.",
+        "explanation": "Name water, give the water-potential direction, and include the membrane."
+      },
+      "terms": [
+        "osmosis",
+        "water potential",
+        "partially permeable membrane",
+        "turgor",
+        "plasmolysis"
+      ],
+      "commonMistakes": [
+        "Do not describe the movement of sugar as osmosis.",
+        "Dilute-to-concentrated assumes the relevant solute is retained and pressure conditions are comparable."
+      ],
+      "diagram": {
+        "src": "/diagrams/biology-osmosis-model.svg",
+        "alt": "Two idealised solution compartments separated by a water-permeable, solute-retaining membrane at equal initial pressure. Water crosses in both directions with an initial net movement from the more dilute left side to the more concentrated right side. The solute stays on its own side. Not to scale.",
+        "caption": "An ideal membrane model at equal initial pressure. Small arrows show both-way water movement; the larger arrow shows the initial net direction. Symbols are not measured particle counts."
+      }
+    },
+    {
+      "id": "active-transport-and-energy",
+      "title": "Active transport moves substances against a gradient",
+      "points": [
+        "2.15"
+      ],
+      "paragraphs": [
+        "Active transport moves substances across a cell membrane against their concentration gradient, from a lower concentration to a higher concentration in this introductory model. Membrane transport proteins are involved, and energy transferred through respiration supplies the process, commonly through ATP.",
+        "Root hair cells can take up mineral ions when the ion concentration in the soil solution is lower than in the cell. The uptake helps supply minerals needed by the plant. A concentration comparison and evidence of energy dependence are needed before calling a particular movement active transport: ions can also move down gradients through suitable pathways.",
+        "Active transport differs from diffusion in both gradient direction and energy requirement. It differs from osmosis because it transports particular substances using membrane proteins, whereas osmosis is the net movement of water caused by a water-potential difference.",
+        "Energy is transferred, not created by mitochondria. ATP can also be supplied through anaerobic processes, so saying that all active transport instantly stops whenever oxygen is absent is too strong. For a specific experiment, the effect depends on the cell, its energy supply and the duration of the treatment."
+      ],
+      "example": {
+        "question": "The concentration of a mineral ion is 1 arbitrary unit in the soil and 5 units inside a root hair cell. Explain how uptake can still occur.",
+        "steps": [
+          "Uptake from 1 to 5 units goes against this concentration gradient.",
+          "Membrane transport proteins use an energy supply to move the ion.",
+          "This is consistent with active transport; the numbers alone do not identify every mechanism in a real cell."
+        ],
+        "explanation": "Link against-gradient movement to a membrane protein and an energy supply."
+      },
+      "practice": {
+        "question": "Is all movement of mineral ions into a root necessarily active transport?",
+        "answer": "No. The gradient and membrane pathways matter. A concentration gradient into the cell may allow passive movement.",
+        "explanation": "Link against-gradient movement to a membrane protein and an energy supply."
+      },
+      "terms": [
+        "active transport",
+        "ATP",
+        "respiration",
+        "transport protein",
+        "mineral ion",
+        "root hair"
+      ],
+      "commonMistakes": [
+        "Do not claim active transport always moves substances out of cells.",
+        "The energy requirement concerns the transport process; diffusion particles still have kinetic energy."
+      ]
+    },
+    {
+      "id": "transport-rate-and-sa-volume",
+      "title": "Four factors affecting transport rate and surface area per volume",
+      "points": [
+        "2.16"
+      ],
+      "paragraphs": [
+        "A steeper concentration gradient generally increases the net rate of diffusion when other factors stay the same. Consuming an incoming substance or removing an outgoing substance can help maintain the gradient. As a closed system approaches uniform concentration, net diffusion slows even though particles keep moving.",
+        "A shorter diffusion distance allows substances to reach their destination more rapidly. Thin exchange surfaces help. Higher temperature generally increases particles’ kinetic energy and diffusion rate, but heating living tissue too far can damage membranes and proteins; the simple relationship cannot be extended indefinitely.",
+        "A larger surface area provides more space for exchange, but a larger organism also contains more material to supply. Surface area to volume ratio compares the available exchange area with the volume requiring supply. It is especially useful when comparing geometrically similar shapes.",
+        "For a cube with edge length L, surface area = 6L², volume = L³ and SA/V = 6/L. A cube of edge 1 mm has 6 mm² of surface and 1 mm³ of volume: 6 mm⁻¹. A cube of edge 0.1 mm has 0.06 mm² of surface and 0.001 mm³ of volume: 60 mm⁻¹. The smaller cube has less total surface area but ten times the surface area per unit volume.",
+        "This tenfold ratio does not prove that a real cell takes up a substance exactly ten times faster. Permeability, gradients, temperature, shape and diffusion distance also matter. Geometric comparisons support an explanation; they do not replace experimental measurements of rate."
+      ],
+      "example": {
+        "question": "Compare SA/V for cubes of edge 2 cm and 1 cm, then state a limit of the comparison.",
+        "steps": [
+          "For L = 2 cm: SA = 24 cm², V = 8 cm³ and SA/V = 3 cm⁻¹.",
+          "For L = 1 cm: SA = 6 cm², V = 1 cm³ and SA/V = 6 cm⁻¹.",
+          "The smaller cube has twice as much surface per unit volume, but an exact uptake-rate ratio needs more evidence."
+        ],
+        "explanation": "Separate the measured or calculated ratio from an inference about rate."
+      },
+      "practice": {
+        "question": "Why can a small cube have less total surface but a larger SA/V?",
+        "answer": "Its volume decreases faster than its surface area as edge length decreases: area scales with L² and volume with L³.",
+        "explanation": "Separate the measured or calculated ratio from an inference about rate."
+      },
+      "terms": [
+        "surface area to volume ratio",
+        "diffusion distance",
+        "temperature",
+        "concentration gradient",
+        "inverse length"
+      ],
+      "commonMistakes": [
+        "Keep length units consistent; SA/V has units of inverse length.",
+        "A larger total surface area is not the same as a larger surface area per unit volume."
+      ]
+    },
+    {
+      "id": "agar-diffusion-investigation",
+      "title": "Investigating diffusion into non-living agar",
+      "points": [
+        "2.16",
+        "2.17"
+      ],
+      "paragraphs": [
+        "Agar blocks can model how substances penetrate material from its surface. Teacher-prepared alkaline agar containing a suitable indicator changes colour as acid enters and reacts. A visible colour boundary shows where the indicator has responded; it is not a direct image of individual particles.",
+        "Compare cubes of different measured sizes after the same immersion time. Measure penetration depth from an outside face to the remaining coloured region. For a cube with a similar depth d on all six faces, the unchanged central edge is L − 2d, provided 0 ≤ d ≤ L/2. The fraction of volume reached is 1 − ((L − 2d)/L)³.",
+        "In a purely illustrative calculation, d = 0.1 cm in a cube of edge 1 cm gives a central volume of 0.8³ = 0.512 cm³ and a reached fraction of 48.8%. For a 2 cm cube at the same depth, the central volume is 1.8³ = 5.832 cm³ and the reached fraction is 27.1%. The depth is the same; the fraction reached is different. These are invented teaching inputs, not experimental results.",
+        "Agar is not a living cell. It lacks a cell membrane, metabolism and active transport. The colour boundary also depends on reaction and indicator thresholds. Uneven blocks, uneven penetration and reading uncertainty limit the cube calculation. Further practical data and unfamiliar-model comparisons are still needed."
+      ],
+      "example": {
+        "question": "In the illustrative agar model, a 1 cm cube has a 0.1 cm penetrated layer on every face. Find the percentage of volume reached.",
+        "steps": [
+          "Central edge = 1 − 2(0.1) = 0.8 cm.",
+          "Unchanged volume = 0.8³ = 0.512 cm³; original volume = 1 cm³.",
+          "Reached percentage = (1 − 0.512) × 100 = 48.8%."
+        ],
+        "explanation": "State the model assumptions, calculate the inner core, and interpret the result cautiously."
+      },
+      "practice": {
+        "question": "Why is equal penetration depth not evidence that equal proportions of differently sized cubes have been reached?",
+        "answer": "The remaining core is a different fraction of each cube. Calculate volumes rather than comparing only depth.",
+        "explanation": "State the model assumptions, calculate the inner core, and interpret the result cautiously."
+      },
+      "terms": [
+        "agar",
+        "indicator",
+        "penetration depth",
+        "non-living model",
+        "volume fraction"
+      ],
+      "commonMistakes": [
+        "Subtract penetration from both sides of an edge.",
+        "A colour front reflects a chemical response; it is not a particle speed measurement."
+      ],
+      "practical": {
+        "apparatus": [
+          "Teacher-prepared indicator agar cubes and approved dilute acid",
+          "Ruler, timer, forceps, tray and eye protection"
+        ],
+        "method": [
+          "Measure edge lengths; immerse each cube fully for the same timed interval.",
+          "Remove with forceps; a teacher cuts each cube to reveal its core. Measure the colour-boundary depth.",
+          "Repeat each size; compare depth and the calculated fraction reached."
+        ],
+        "variables": [
+          "Change cube size; keep acid concentration, temperature, immersion time and agar preparation consistent."
+        ],
+        "safety": [
+          "Wear eye protection and follow the teacher’s handling instructions for acid and prepared agar.",
+          "Keep sharp cutting tools under teacher control; rinse splashes as instructed."
+        ],
+        "quality": [
+          "Use enough surrounding solution to avoid substantial depletion; keep all faces exposed.",
+          "Record uncertainty and uneven penetration rather than treating the model as exact."
+        ]
+      }
+    },
+    {
+      "id": "potato-osmosis-investigation",
+      "title": "Investigating osmosis in living potato tissue",
+      "points": [
+        "2.17"
+      ],
+      "paragraphs": [
+        "Living potato tissue offers a different model: its cells contain partially permeable membranes. Compare percentage mass changes after immersion in several teacher-prepared sucrose concentrations. Use intact fresh tissue; damaged or dead cells may not behave like healthy cells.",
+        "Percentage mass change = ((final mass − initial mass)/initial mass) × 100. Using the initial mass as the denominator lets you compare samples with different starting masses. Blotting consistently before weighing helps avoid counting surface solution as part of the tissue.",
+        "For illustrative inputs, a piece changing from 2.00 g to 2.18 g has gained 0.18 g, or +9.0%. Another changing from 2.50 g to 2.20 g has lost 0.30 g, or −12.0%. These arithmetic examples are not obtained laboratory observations.",
+        "Plot mean percentage change against sucrose concentration, including repeated measurements and their spread. A crossing of zero can estimate a solution causing no net mass change under the test conditions. Do not automatically call it the exact concentration of every solute inside every potato cell: the tissue contains many cell types and dissolved substances, and water potential is the relevant comparison.",
+        "A near-zero change may be within balance uncertainty or result from an insufficient immersion time. Surface liquid, tissue damage, leaching and evaporation can also affect measured mass. Evaluate these possibilities before concluding that water molecules have stopped moving."
+      ],
+      "example": {
+        "question": "A potato piece changes from 2.50 g to 2.20 g. Calculate its percentage change and interpret the sign.",
+        "steps": [
+          "Change = 2.20 − 2.50 = −0.30 g.",
+          "Percentage change = (−0.30/2.50) × 100 = −12.0%.",
+          "The tissue lost mass, consistent with net water loss by osmosis if membranes were intact and other mass changes were controlled."
+        ],
+        "explanation": "Show a signed change relative to the initial mass, then distinguish observation from interpretation."
+      },
+      "practice": {
+        "question": "Why should percentage change use initial rather than final mass?",
+        "answer": "The initial mass is the comparison baseline. Changing the denominator changes the question being answered.",
+        "explanation": "Show a signed change relative to the initial mass, then distinguish observation from interpretation."
+      },
+      "terms": [
+        "osmosis",
+        "potato tissue",
+        "sucrose",
+        "percentage mass change",
+        "repeat",
+        "uncertainty"
+      ],
+      "commonMistakes": [
+        "Do not discard a negative sign for mass loss.",
+        "Zero net mass change does not mean water molecules stop moving."
+      ],
+      "practical": {
+        "apparatus": [
+          "Fresh equal-dimension potato pieces, labelled sucrose solutions and water",
+          "Balance, paper towel, forceps, containers and timer"
+        ],
+        "method": [
+          "Prepare fresh pieces with matching dimensions; blot consistently and record each starting mass.",
+          "Immerse in equal volumes of the labelled solutions for a fixed time at the same temperature.",
+          "Remove, blot in the same way and weigh. Repeat using fresh pieces; calculate percentage changes."
+        ],
+        "variables": [
+          "Change sucrose concentration; measure percentage mass change.",
+          "Keep tissue source, dimensions, solution volume, temperature, time and blotting procedure consistent."
+        ],
+        "safety": [
+          "A teacher prepares pieces with sharp tools. Do not eat the tissue or drink laboratory solutions."
+        ],
+        "quality": [
+          "Include a water condition and several concentrations; record repeats and balance resolution.",
+          "Investigate unusual values instead of discarding them solely because they disagree with the expected trend."
+        ]
+      }
+    },
+    {
+      "id": "dialysis-diffusion-model",
+      "title": "Testing a non-living membrane model and its limits",
+      "points": [
+        "2.15",
+        "2.17"
+      ],
+      "paragraphs": [
+        "A teacher-prepared dialysis bag containing starch and glucose can be immersed in water. The selected tubing allows glucose to pass but retains starch over the test period. Testing separate outside samples before and after immersion can provide evidence that some substances cross the membrane and others do not.",
+        "Rinse the outside before immersion so leaked filling solution does not produce a false initial positive result. Use controls for the reducing-sugar and starch tests. For this prepared mixture, a new positive reducing-sugar result outside is consistent with glucose crossing down its gradient. Benedict’s reagent detects reducing sugars generally; it is not a glucose-specific identification test.",
+        "This is a non-living model of selective permeability and diffusion. It does not contain living intestinal cells, enzymes or membrane transport proteins, and it cannot demonstrate active transport. The artificial tubing’s permeability must be checked for the actual molecules and conditions used.",
+        "Do not assume all sugars are excluded just because starch is retained. Some tubing also passes sucrose. A reliable osmosis demonstration needs a membrane that retains the selected solute during the observation; otherwise solute diffusion changes the gradient. Bag mass changes alone cannot identify which substances crossed."
+      ],
+      "example": {
+        "question": "The outside water is initially negative for reducing sugar and later positive, while the starch test stays negative. What conclusion is supported for a known glucose-and-starch filling mixture?",
+        "steps": [
+          "The result is consistent with glucose reaching the outside through the selected membrane.",
+          "No starch was detected outside by the test used; this does not establish the membrane blocks every solute.",
+          "Leaks, contaminated outside surfaces and test controls must be considered."
+        ],
+        "explanation": "Use the controls and known mixture to draw a bounded conclusion, then state what the model omits."
+      },
+      "practice": {
+        "question": "Does this dialysis model prove intestinal absorption uses only diffusion?",
+        "answer": "No. It is an artificial non-living membrane. A real gut contains living cells and transport mechanisms that the model lacks.",
+        "explanation": "Use the controls and known mixture to draw a bounded conclusion, then state what the model omits."
+      },
+      "terms": [
+        "dialysis tubing",
+        "selective permeability",
+        "starch",
+        "glucose",
+        "model limitation"
+      ],
+      "commonMistakes": [
+        "Starch retention does not imply sucrose retention.",
+        "A reducing-sugar test is not specific to glucose in an unknown sample."
+      ],
+      "practical": {
+        "apparatus": [
+          "Teacher-prepared hydrated dialysis bags with known glucose-and-starch mixture",
+          "Water, clean sampling pipettes, iodine and Benedict’s test reagents",
+          "Teacher-controlled water bath, test tubes, timer and eye protection"
+        ],
+        "method": [
+          "Rinse the filled bag’s outside, seal and check for leaks; immerse in fresh water.",
+          "Test separate outside samples at the start and after the same timed interval, keeping test reagents out of the bath.",
+          "Include a water blank, known test-positive controls and a sealed water-filled bag control; repeat."
+        ],
+        "variables": [
+          "Measure outside test results over a controlled interval.",
+          "Keep membrane grade and exposed area, solution volumes, filling concentrations and temperature consistent."
+        ],
+        "safety": [
+          "Wear eye protection; a teacher manages the hot bath and reagent handling.",
+          "Use laboratory-prepared samples and do not consume them."
+        ],
+        "quality": [
+          "Verify the chosen tubing’s glucose/starch permeability rather than assuming it from the brand name.",
+          "A positive outside test may reflect a leak or contamination; controls and inspection are needed."
+        ]
+      }
     }
   ],
   "supportingSources": [
@@ -755,6 +1103,21 @@
       "sectionIds": [
         "amylase-ph-investigation",
         "amylase-temperature-investigation"
+      ]
+    },
+    {
+      "title": "Pearson: osmosis in potatoes and agar models",
+      "url": "https://www.pearson.com/content/dam/one-dot-com/one-dot-com/uk/documents/subjects/science/GCSE-core-practical-sheets/cp4-osmosis-in-potatoes-ts.pdf",
+      "sectionIds": [
+        "potato-osmosis-investigation",
+        "agar-diffusion-investigation"
+      ]
+    },
+    {
+      "title": "Practical Biology: evaluating a dialysis gut model",
+      "url": "https://practicalbiology.org/exchange-of-materials/digestion-and-absorption/evaluating-visking-tubing-as-a-model-for-a-gut.html",
+      "sectionIds": [
+        "dialysis-diffusion-model"
       ]
     }
   ]

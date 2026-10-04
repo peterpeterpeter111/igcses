@@ -1,3 +1,4 @@
+import biologyTransport from '../research/syllabus/4BI1-cell-transport.json' with { type: 'json' };
 import mathsPaperDemands from '../research/syllabus/4MB1-selected-paper-demands.json' with { type: 'json' };
 import mathsAlgebraRest from '../research/syllabus/4MB1-systems-inequalities-sequences.json' with { type: 'json' };
 import mathsEquations from '../research/syllabus/4MB1-equations.json' with { type: 'json' };
@@ -37,6 +38,7 @@ export const reviewedInventories = [
   { title: 'The nature and variety of living organisms (1.1–1.4)', ...biologyLiving },
   { title: 'Cell organisation and structures (2.1–2.6B)', ...biologyCells },
   { title: 'Biological molecules and enzymes (2.7–2.14B)', ...biologyMolecules },
+  { title: 'Cell transport (2.15–2.17)', ...biologyTransport },
   { title: 'Cells and tissues (1.1–1.16)', ...humanCells },
   { title: 'Principles foundations (1.1–1.22)', ...chemistryStates },
   { title: 'Ionic, covalent and metallic bonding (1.37–1.54C)', ...chemistryBonding },

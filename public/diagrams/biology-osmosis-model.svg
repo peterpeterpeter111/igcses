@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 560" role="img" aria-labelledby="title desc">
+  <title id="title">An ideal membrane model of osmosis</title>
+  <desc id="desc">Equal initial pressure in both compartments. Water can cross the central membrane; the selected solute cannot. Water moves both ways with initial net movement from the more dilute left compartment to the more concentrated right compartment. Symbols do not represent measured counts.</desc>
+  <defs>
+    <marker id="net" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#943848"/></marker>
+    <marker id="small" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#496577"/></marker>
+    <pattern id="membrane" width="8" height="12" patternUnits="userSpaceOnUse"><rect width="8" height="12" fill="#d8b877"/><path d="M0 6H8" stroke="#756344" stroke-width="1"/></pattern>
+  </defs>
+  <rect width="920" height="560" rx="12" fill="#f4ecda"/>
+  <g font-family="Georgia,serif" fill="#392d29">
+    <text x="40" y="44" font-size="26">Osmosis — an ideal starting comparison</text>
+    <text x="40" y="76" font-size="17">Equal initial pressure · water passes · selected solute is retained</text>
+    <text x="60" y="122" font-size="21">More dilute</text><text x="546" y="122" font-size="21">More concentrated</text>
+    <text x="60" y="147" font-size="17">Higher water potential</text><text x="546" y="147" font-size="17">Lower water potential</text>
+  </g>
+  <rect x="50" y="166" width="816" height="252" rx="8" fill="#e8eeeb" stroke="#77645a" stroke-width="2"/>
+  <rect x="447" y="166" width="26" height="252" fill="url(#membrane)" stroke="#756344"/>
+  <g fill="#496577">
+    <circle cx="89" cy="206" r="7"/><circle cx="166" cy="244" r="7"/><circle cx="248" cy="196" r="7"/><circle cx="361" cy="242" r="7"/><circle cx="90" cy="341" r="7"/><circle cx="168" cy="385" r="7"/><circle cx="281" cy="344" r="7"/><circle cx="389" cy="378" r="7"/>
+    <circle cx="531" cy="201" r="7"/><circle cx="680" cy="250" r="7"/><circle cx="818" cy="214" r="7"/><circle cx="579" cy="390" r="7"/><circle cx="740" cy="381" r="7"/><circle cx="825" cy="337" r="7"/>
+  </g>
+  <g fill="#b48740" stroke="#766142" stroke-width="1.5">
+    <rect x="194" y="208" width="17" height="17"/><rect x="348" y="352" width="17" height="17"/>
+    <rect x="562" y="215" width="17" height="17"/><rect x="642" y="187" width="17" height="17"/><rect x="737" y="221" width="17" height="17"/><rect x="802" y="261" width="17" height="17"/>
+    <rect x="515" y="346" width="17" height="17"/><rect x="645" y="368" width="17" height="17"/><rect x="716" y="333" width="17" height="17"/><rect x="810" y="383" width="17" height="17"/>
+  </g>
+  <path d="M365 196H545" stroke="#496577" stroke-width="2" marker-end="url(#small)"/>
+  <path d="M550 251H371" stroke="#496577" stroke-width="2" marker-end="url(#small)"/>
+  <text x="327" y="282" font-family="Georgia,serif" font-size="16" fill="#392d29">Water crosses both ways</text>
+  <path d="M240 306H660" stroke="#943848" stroke-width="5" marker-end="url(#net)"/>
+  <text x="304" y="336" font-family="Georgia,serif" font-size="18" fill="#943848">Initial net water movement →</text>
+  <path d="M460 418V442" stroke="#756344" stroke-width="2"/>
+  <g font-family="Georgia,serif" fill="#392d29" font-size="17">
+    <text x="314" y="467">Partially permeable membrane</text>
+    <circle cx="60" cy="502" r="7" fill="#496577"/><text x="80" y="508">Water symbol</text>
+    <rect x="258" y="493" width="17" height="17" fill="#b48740" stroke="#766142"/><text x="285" y="508">Retained solute symbol</text>
+    <text x="40" y="541" font-size="15">Original schematic · not to scale · symbols are not measured counts or rates</text>
+  </g>
+</svg>
