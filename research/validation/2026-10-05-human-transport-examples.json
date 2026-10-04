@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-05",
+  "scope": "Twelve exact checks on original/shared illustrative inputs, not practical observations or calibrated human response.",
+  "passed": 12,
+  "checks": [
+    {
+      "id": "large-mm-sa-v",
+      "actual": "6",
+      "expected": "6",
+      "passed": true
+    },
+    {
+      "id": "small-mm-sa-v",
+      "actual": "60",
+      "expected": "60",
+      "passed": true
+    },
+    {
+      "id": "large-cm-sa-v",
+      "actual": "3",
+      "expected": "3",
+      "passed": true
+    },
+    {
+      "id": "small-cm-sa-v",
+      "actual": "6",
+      "expected": "6",
+      "passed": true
+    },
+    {
+      "id": "mm-ratio",
+      "actual": "10",
+      "expected": "10",
+      "passed": true
+    },
+    {
+      "id": "cm-ratio",
+      "actual": "2",
+      "expected": "2",
+      "passed": true
+    },
+    {
+      "id": "penetration-L1",
+      "actual": "244/5",
+      "expected": "244/5",
+      "passed": true
+    },
+    {
+      "id": "penetration-L2",
+      "actual": "271/10",
+      "expected": "271/10",
+      "passed": true
+    },
+    {
+      "id": "mass-gain",
+      "actual": "9",
+      "expected": "9",
+      "passed": true
+    },
+    {
+      "id": "mass-loss",
+      "actual": "-12",
+      "expected": "-12",
+      "passed": true
+    },
+    {
+      "id": "total-water-potential",
+      "actual": "-1/5",
+      "expected": "-1/5",
+      "passed": true
+    },
+    {
+      "id": "water-potential-order",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    }
+  ],
+  "noteSha256": "0826bb9088f20041168fdda7d5ca030a41f65823df9e83c2cea044b03121b432",
+  "sharedBiologyNoteSha256": "85b9807d74ac89001b50397c2d690c7fa8a73fdd47ac8ff59555edb65b4f06bc"
+}

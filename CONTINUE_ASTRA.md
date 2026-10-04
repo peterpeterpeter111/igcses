@@ -1,3 +1,7 @@
+# Latest phase — Human Biology cell transport, 5 October 2026
+
+Read research/checkpoints/2026-10-05-HUMAN-TRANSPORT.md first. New8-section partial document;379sections/18partial notes,410reviewed identities/401audits/1098requirements/567links. Human29parents/117requirements;3.1–3.3both01/02,water potential explicit,practical models supplementary.111tests,typecheck/lint/research/content/evidence,12illustrative checks,isolatedD1 and build/66-file public scan pass. GitHub674575e mirrors75ec5ad;sync newer saved phase non-force. Seven obtained pairs;zero processed papers/complete chapters/points/active families;6provisional/5experimental. No AI,version,deployment or reset. Continue above5%both windows; future Biology source file is near bounded-sync request cap. Older entries historical.
+
 # Latest phase — Biology human gas exchange, 5 October 2026
 
 Read research/checkpoints/2026-10-05-HUMAN-GAS.md first. Eight partial lessons and one checked alveolar model;371sections/17partial notes,407reviewed identities/398audits/1083requirements/556links. Biology54parents/221requirements;new2.46–2.50both1B/2B.111tests,typecheck/lint/research/content/evidence,six illustrative checks,isolatedD1 and build/66-file public scan pass. GitHub07b36ad exactly mirrors92d21a9;sync newer saved phase non-force. Seven obtained pairs;zero processed papers/complete chapters/points/active families;6provisional/5experimental. No AI,version,deployment or reset. Continue transport/later curriculum and calibration above5%both ordinary windows. Older entries historical.

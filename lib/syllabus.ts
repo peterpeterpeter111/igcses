@@ -1,3 +1,4 @@
+import humanTransport from '../research/syllabus/4HB1-cell-transport.json' with { type: 'json' };
 import biologyHumanGas from '../research/syllabus/4BI1-human-gas.json' with { type: 'json' };
 import biologyRespiration from '../research/syllabus/4BI1-respiration-plant-gas.json' with { type: 'json' };
 import biologyNutrition from '../research/syllabus/4BI1-human-nutrition.json' with { type: 'json' };
@@ -55,6 +56,7 @@ export const reviewedInventories = [
   { title: 'Ionic, covalent and metallic bonding (1.37–1.54C)', ...chemistryBonding },
   { title: 'Electrolysis (1.55C–1.60C; Paper 2C)', ...chemistryElectrolysis },
   { title: 'Biological molecules (2.1–2.10)', ...humanMolecules },
+  { title: 'Movement of substances (3.1–3.3)', ...humanTransport },
   { title: 'Number: section 1, rows A–K', ...mathsNumber },
   { title: 'Sets: section 2, rows A–I', ...mathsSets },
   { title: 'Algebra foundations: section 3, rows A–C', ...mathsAlgebra },

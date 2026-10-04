@@ -1,3 +1,4 @@
+import humanTransport from './notes/human-biology-transport.json' with { type: 'json' };
 import mathematicsStatistics from './notes/mathematics-statistics.json' with { type: 'json' };
 import mathematicsGeometry from './notes/mathematics-geometry.json' with { type: 'json' };
 import humanBiology from './notes/human-biology.json' with { type: 'json' };
@@ -58,6 +59,7 @@ export const notes: ChapterNotes[] = [
   mathematicsStatistics,
   humanBiology,
   humanMolecules,
+  humanTransport,
   biology,
   biologyStructures,
   chemistry,
