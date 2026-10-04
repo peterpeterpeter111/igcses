@@ -41,7 +41,7 @@ void test('matrix package and response validation reject tampering and invalid p
   for (const seed of [-1,1.5,NaN,Infinity,0x100000000]) assert.throws(()=>generateMatrixAdditionPrototype(seed));
   const sparse: number[] = []; sparse.length = 8; // Deliberate holes exercise validation.
   for(const magnitudes of [sparse,[],[1,2,3],[0,1,1,1,1,1,1,1],[10,1,1,1,1,1,1,1],[1.5,1,1,1,1,1,1,1]]) assert.throws(()=>buildMatrixAdditionPrototype(0,{magnitudes}));
-  const q=source();q.privateSolution.sum[0][0]=999;assert.equal(validateMatrixAdditionPrototype(q),false);assert.throws(()=>markMatrixAdditionResponse(q,response('')));
-  const q2=source();q2.publicQuestion.stimulus.A[0][0]=4;assert.equal(validateMatrixAdditionPrototype(q2),false);
+  const q=structuredClone(source());q.privateSolution.sum[0][0]=999;assert.equal(validateMatrixAdditionPrototype(q),false);assert.throws(()=>markMatrixAdditionResponse(q,response('')));
+  const q2=structuredClone(source());q2.publicQuestion.stimulus.A[0][0]=4;assert.equal(validateMatrixAdditionPrototype(q2),false);
   assert.equal(markMatrixAdditionResponse(source(),{...response(''),answerLine:'x'.repeat(201)}).status,'needs-review');
 });

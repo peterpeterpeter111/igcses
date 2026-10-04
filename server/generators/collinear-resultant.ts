@@ -1,3 +1,4 @@
+import { freezeQuestionPackage } from './freeze-package.ts';
 // Experimental source-derived generation. No API route serves this prototype.
 // It deliberately does not produce a PrivateQuestion that can start a quiz.
 export const RESULTANT_FAMILY = Object.freeze({
@@ -160,7 +161,7 @@ export function buildResultantPrototype(
     validateResultantPrototype(instance);
   if (!instance.validation.mathematicallyChecked)
     throw new Error('Independent force validation failed');
-  return instance;
+  return freezeQuestionPackage(instance);
 }
 export function generateResultantPrototype(seed: number): ResultantPrototype {
   if (!Number.isInteger(seed) || seed < 0 || seed > 0xffffffff)

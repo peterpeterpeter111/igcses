@@ -22,7 +22,7 @@ const results = fixtures.cases.map((f) => {
   assert.equal(actual.status,f.expectedScore===null?'needs-review':'scored',f.id);
   return { id:f.id,expectedScore:f.expectedScore,actualScore:actual.score,status:actual.status,passed:true };
 });
-const paths=['server/generators/monic-quadratic.ts','server/generators/quadratic-marking.ts','research/validation/quadratic-marking-cases.json'];
+const paths=['server/generators/freeze-package.ts','server/generators/monic-quadratic.ts','server/generators/quadratic-marking.ts','research/validation/quadratic-marking-cases.json'];
 const report={schemaVersion:1,checkedAt:new Date().toISOString(),familyId:'4MB1.factorisation.monic-quadratic',version:'0.1.0',command:'node --experimental-strip-types scripts/check-quadratic.ts',
  sourceHashes:Object.fromEntries(paths.map((p)=>[p,createHash('sha256').update(readFileSync(p)).digest('hex')])),reviewer:'Codex',reviewerType:'agent',humanReviewed:false,
  generatedPairs:65,distinctStimuli:unique.size,sourceExpressionExcluded:true,markingCases:results.length,deferred:results.filter((r)=>r.status==='needs-review').length,results,

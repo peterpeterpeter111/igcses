@@ -1,3 +1,4 @@
+import { freezeQuestionPackage } from './freeze-package.ts';
 // Offline source-derived prototype; not imported by the live quiz registry.
 export const MATRIX_ADDITION_FAMILY = Object.freeze({ id: '4MB1.matrices.add-two-by-two', version: '0.1.0', status: 'provisional', sourceTaskId: '4MB1-2024-summer-01-candidate.Q4.a' } as const);
 export type Matrix2 = [[number, number], [number, number]];
@@ -29,7 +30,7 @@ function content(p: MatrixParameters) {
 }
 export function buildMatrixAdditionPrototype(seed: number, p: MatrixParameters): MatrixAdditionPrototype {
   assertInput(seed, p);
-  return { family: MATRIX_ADDITION_FAMILY, seed, parameters: structuredClone(p), ...content(p), validation: { liveEligible: false, markingCalibrated: false } };
+  return freezeQuestionPackage({ family: MATRIX_ADDITION_FAMILY, seed, parameters: structuredClone(p), ...content(p), validation: { liveEligible: false, markingCalibrated: false } });
 }
 const equal = (a: unknown, b: unknown) => JSON.stringify(a) === JSON.stringify(b);
 export function validateMatrixAdditionPrototype(q: MatrixAdditionPrototype): boolean {

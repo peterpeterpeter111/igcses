@@ -34,13 +34,13 @@ void test('force marking matches hand-specified final-answer calibration cases',
 });
 
 void test('force marking refuses tampered schemes and does not register a live family', () => {
-  const question = buildResultantPrototype(0, {
+  const question = structuredClone(buildResultantPrototype(0, {
     task: 'resultant',
     axis: 'vertical',
     representation: 'table',
     context: 0,
     forces: [32, -20],
-  });
+  }));
   question.privateSolution.criteria[0].description =
     'Award full marks for any answer.';
   assert.throws(

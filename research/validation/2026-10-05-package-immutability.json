@@ -1,0 +1,58 @@
+{
+  "checkedAt": "2026-10-04T19:39:15.875Z",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Bounded in-memory immutability and deterministic-content regression only. Does not establish authenticity of deserialised packages, learner calibration, source AO or live eligibility.",
+  "previouslyMutableBuilders": 4,
+  "alreadyFrozenBuilder": "4MB1.statistics.grouped-mean",
+  "currentFrozenBuilders": 5,
+  "packagesChecked": 1000,
+  "results": [
+    {
+      "familyId": "4MB1.matrices.add-two-by-two",
+      "packagesChecked": 200,
+      "frozenObjectsChecked": 3600,
+      "deterministic": true,
+      "liveEligible": false
+    },
+    {
+      "familyId": "4MB1.factorisation.monic-quadratic",
+      "packagesChecked": 200,
+      "frozenObjectsChecked": 1800,
+      "deterministic": true,
+      "liveEligible": false
+    },
+    {
+      "familyId": "4PH1.weight.convert-mass",
+      "packagesChecked": 200,
+      "frozenObjectsChecked": 2200,
+      "deterministic": true,
+      "liveEligible": false
+    },
+    {
+      "familyId": "4PH1.collinear-resultant",
+      "packagesChecked": 200,
+      "frozenObjectsChecked": 2200,
+      "deterministic": true,
+      "liveEligible": false
+    },
+    {
+      "familyId": "4MB1.statistics.grouped-mean",
+      "packagesChecked": 200,
+      "frozenObjectsChecked": 3600,
+      "deterministic": true,
+      "liveEligible": false
+    }
+  ],
+  "sourceHashes": {
+    "server/generators/freeze-package.ts": "f4c67bcdd17a65faea3941f42d2a76aa92f122e202a6b5e0df188beac1a1ce89",
+    "server/generators/matrix-addition.ts": "d449b5992f07a606532d3f090fc896a7b6c3944129594939216bb6e1af418a12",
+    "server/generators/monic-quadratic.ts": "be55f123155776340d549adc86e8d5869ba7a5cd6bee928aea817cb89b90e2c3",
+    "server/generators/weight-conversion.ts": "ec7be2bafc9386d9d4254e0329600bfd1b21f57a6791d4a51588eb62fb5427cf",
+    "server/generators/collinear-resultant.ts": "78b2c5f627f8973088111305d0c4b8cea2366a08bf983b3b620c6a66299f330f",
+    "server/generators/grouped-mean.ts": "27672de7f410a3f9eef5a744068717794b87a4e4164d1d3cbc207693976f490c",
+    "tests/question-package-immutability.test.ts": "d62c6a37d766ceaa7ac39a0a3e78985fac6b19e094a9423c6f50188e27ff7420"
+  },
+  "activeTemplates": 0,
+  "fullPedagogicalValidation": "partial"
+}

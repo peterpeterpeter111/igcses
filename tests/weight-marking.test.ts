@@ -19,7 +19,7 @@ void test('weight marking matches independent explicit-working cases without inf
 });
 
 void test('weight marking refuses unsafe formats, extra evidence and tampered schemes', () => {
-  const q = buildWeightPrototype(0, { massGrams: 250, fieldHundredths: 1000, representation: 'prose', context: 0 });
+  const q = structuredClone(buildWeightPrototype(0, { massGrams: 250, fieldHundredths: 1000, representation: 'prose', context: 0 }));
   const good = { massKg: '0.25', fieldNPerKg: '10', finalAnswer: '2.5', otherWorking: '' };
   for (const response of [null, {}, { ...good, massKg: 0.25 }, { ...good, extra: 'contradiction' },
     { ...good, otherWorking: 'x'.repeat(201) }, { ...good, massKg: '0'.repeat(201) },

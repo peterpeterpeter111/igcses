@@ -1,3 +1,4 @@
+import { freezeQuestionPackage } from './freeze-package.ts';
 // Offline, source-derived prototype. Never imported by the live family registry.
 export const WEIGHT_FAMILY = Object.freeze({
   id: '4PH1.weight.convert-mass',
@@ -100,7 +101,7 @@ export function buildWeightPrototype(seed: number, p: WeightParameters): WeightP
     validation: { arithmeticChecked: true, liveEligible: false, markingCalibrated: false },
   };
   if (!validateWeightPrototype(q)) throw new Error('Weight package validation failed');
-  return q;
+  return freezeQuestionPackage(q);
 }
 export function generateWeightPrototype(seed: number): WeightPrototype {
   if (!Number.isInteger(seed) || seed < 0 || seed > 0xffffffff) throw new Error('Invalid unsigned seed');

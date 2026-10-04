@@ -1,3 +1,4 @@
+import { freezeQuestionPackage } from './freeze-package.ts';
 // Bounded offline prototype derived from Q15(b). Not registered for live quizzes.
 export const QUADRATIC_FAMILY = Object.freeze({
   id: '4MB1.factorisation.monic-quadratic', version: '0.1.0', status: 'provisional',
@@ -55,9 +56,9 @@ export function validateQuadraticPrototype(q: QuadraticPrototype): boolean {
 /** Explicit parameters allow reproduction of the source for offline calibration only. */
 export function buildQuadraticPrototype(seed: number, p: QuadraticParameters): QuadraticPrototype {
   assertInput(seed, p);
-  return { family: QUADRATIC_FAMILY, seed, parameters: structuredClone(p),
+  return freezeQuestionPackage({ family: QUADRATIC_FAMILY, seed, parameters: structuredClone(p),
     structuralSignature: 'monic-distinct-positive-integer-roots', ...packageContent(p),
-    validation: { arithmeticChecked: true, liveEligible: false, markingCalibrated: false } };
+    validation: { arithmeticChecked: true, liveEligible: false, markingCalibrated: false } });
 }
 export function generateQuadraticPrototype(seed: number): QuadraticPrototype {
   if (!Number.isInteger(seed) || seed < 0 || seed > 0xffffffff) throw new Error('Invalid unsigned seed');

@@ -80,23 +80,23 @@ void test('force prototypes reject singular or out-of-domain inputs and corrupte
   }
   for (const seed of [-1, 0.5, NaN, 0x100000000])
     assert.throws(() => generateResultantPrototype(seed));
-  const q = buildResultantPrototype(0, p);
+  const q = structuredClone(buildResultantPrototype(0, p));
   q.privateSolution.signedTenths += 1;
   assert.equal(validateResultantPrototype(q), false);
-  const wrongDirection = buildResultantPrototype(0, p);
+  const wrongDirection = structuredClone(buildResultantPrototype(0, p));
   wrongDirection.privateSolution.direction = 'left';
   assert.equal(validateResultantPrototype(wrongDirection), false);
 });
 
 void test('force prototype validation rejects changed public data in both representations', () => {
   for (const representation of ['prose', 'table'] as const) {
-    const q = buildResultantPrototype(0, {
+    const q = structuredClone(buildResultantPrototype(0, {
       task: 'resultant',
       representation,
       axis: 'horizontal',
       context: 0,
       forces: [10, -5],
-    });
+    }));
     q.publicQuestion.stimulus = q.publicQuestion.stimulus.replace(
       '1.0 N',
       '2.0 N',

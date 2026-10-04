@@ -5,7 +5,7 @@ import { readFileSync } from 'node:fs';
 import { buildQuadraticPrototype, generateQuadraticPrototype, validateQuadraticPrototype, type QuadraticParameters, type QuadraticPrototype } from '../server/generators/monic-quadratic.ts';
 import { markQuadraticResponse, type QuadraticResponse } from '../server/generators/quadratic-marking.ts';
 import fixtures from '../research/validation/quadratic-marking-cases.json' with { type: 'json' };
-import report from '../research/validation/2026-10-01-quadratic-validation.json' with { type: 'json' };
+import report from '../research/validation/2026-10-05-quadratic-validation.json' with { type: 'json' };
 import family from '../research/templates/4MB1-monic-quadratic.v0.1.0.json' with { type: 'json' };
 import extraction from '../research/extractions/4MB1-2024-summer-01.json' with { type: 'json' };
 import notes from '../content/notes/mathematics.json' with { type: 'json' };

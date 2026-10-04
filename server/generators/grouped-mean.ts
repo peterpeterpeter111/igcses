@@ -1,3 +1,4 @@
+import { freezeQuestionPackage } from './freeze-package.ts';
 // Offline source-derived prototype. Not registered for live quizzes.
 export const GROUPED_MEAN_FAMILY = Object.freeze({ id: '4MB1.statistics.grouped-mean', version: '0.1.0', status: 'provisional', sourceTaskId: '4MB1-2024-summer-01-candidate.Q23.c' } as const);
 export type GroupedMeanParameters = { frequencies: number[] };
@@ -43,13 +44,9 @@ function content(p: GroupedMeanParameters) {
         'A1 for the correct estimated mean. Correct answer alone can imply full credit unless obviously obtained incorrectly.'] },
   };
 }
-function freezeDeep<T>(value: T): T {
-  if (value && typeof value === 'object') { for (const child of Object.values(value)) freezeDeep(child); Object.freeze(value); }
-  return value;
-}
 export function buildGroupedMeanPrototype(seed: number, p: GroupedMeanParameters): GroupedMeanPrototype {
   assertSeed(seed); assertParameters(p);
-  return freezeDeep({ family: GROUPED_MEAN_FAMILY, seed, parameters: structuredClone(p), ...content(p), validation: { liveEligible: false, markingCalibrated: false } });
+  return freezeQuestionPackage({ family: GROUPED_MEAN_FAMILY, seed, parameters: structuredClone(p), ...content(p), validation: { liveEligible: false, markingCalibrated: false } });
 }
 export function generateGroupedMeanPrototype(seed: number): GroupedMeanPrototype {
   assertSeed(seed);
