@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-05",
+  "mode": "bounded local in-app browser verification",
+  "humanReviewed": false,
+  "routes": [
+    "/subjects/chemistry/principles#ionic-dot-cross",
+    "/subjects/chemistry/principles#inorganic-molecule-diagrams",
+    "/subjects/chemistry/principles#metallic-bonding",
+    "/subjects/human-biology/biological-molecules#vitamin-c-calibration",
+    "/coverage/human-biology",
+    "/coverage"
+  ],
+  "checks": [
+    "All four Chemistry chapter images loaded; no horizontal overflow at observed 1280px viewport.",
+    "Three new Chemistry figures visually read in the embedded chapter reader.",
+    "Human Biology chapter renders 12 teaching sections and Sources section.",
+    "Search alginate returns two new chapter-section links with incomplete status.",
+    "Human coverage shows 26 reviewed parents and 102 partial requirements; no complete points or chapters.",
+    "Coverage remains explicit that no paper passed full processing."
+  ],
+  "responsiveScope": "Desktop viewport only this phase; no new mobile layout changes.",
+  "proofPaths": [
+    "work/chemistry-ionic-proof-2026-10-04.png",
+    "work/integrated-coverage-proof-2026-10-05.png"
+  ],
+  "deploymentVerified": false
+}

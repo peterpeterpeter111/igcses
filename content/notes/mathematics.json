@@ -7,6 +7,8 @@
     18,
     19,
     20,
+    21,
+    22,
     23
   ],
   "prerequisites": [
@@ -27,7 +29,9 @@
     "Solve linear and linear-quadratic simultaneous equations, retaining paired solutions.",
     "Represent linear and quadratic inequality solutions on number lines and coordinate diagrams.",
     "Recognise and continue arithmetic and common integer sequences, stating the intended rule.",
-    "Add, scale and multiply compatible matrices, and solve scalar matrix equations while checking all entries."
+    "Add, scale and multiply compatible matrices, and solve scalar matrix equations while checking all entries.",
+    "Use mappings, domains, composites and inverses with the required restrictions.",
+    "Interpret function graphs and tangents; differentiate integer powers and apply rates of change."
   ],
   "sections": [
     {
@@ -2106,6 +2110,434 @@
         ],
         "caution": "The reviewed source accepts a relevant matrix setup or one correct scalar equation for its method mark; it does not require four equations. A correct answer can imply that method unless it comes from obviously incorrect working."
       }
+    },
+    {
+      "id": "functions-and-mappings",
+      "title": "Functions and mappings",
+      "points": [
+        "4A",
+        "4B"
+      ],
+      "paragraphs": [
+        "A function assigns exactly one output to each permitted input. Different inputs may have the same output; one input cannot have two outputs under the same rule. Think of an input set, a rule and an output set rather than just a formula.",
+        "In a mapping diagram, every input must have exactly one arrow leaving it. Multiple arrows may arrive at the same output. The range is the set of outputs actually reached, not necessarily every member of the stated output set.",
+        "For f(x) = x² on the input set {−2, 0, 2}, both −2 and 2 map to 4, while 0 maps to 0. This is a function, but reversing all the arrows would give input 4 two possible outputs. An inverse function may therefore need a restricted original domain."
+      ],
+      "example": {
+        "question": "Use f(x) = x² with domain {−2, 0, 2}. List the mappings and the range.",
+        "steps": [
+          "(−2)² = 4, 0² = 0 and 2² = 4.",
+          "Mappings: −2 ↦ 4, 0 ↦ 0 and 2 ↦ 4.",
+          "The range is {0, 4}; repeated output 4 is listed once."
+        ],
+        "explanation": "Each input has one output even though the function is many-to-one."
+      },
+      "practice": {
+        "question": "A mapping has 1 ↦ 5 and 2 ↦ 5. Is it a function? What if 1 also maps to 6?",
+        "answer": "The first mapping is a function. Adding 1 ↦ 6 would make it fail the function rule.",
+        "explanation": "Many-to-one is allowed; one-to-many is not."
+      },
+      "terms": [
+        "function",
+        "mapping diagram",
+        "input",
+        "output",
+        "many-to-one"
+      ],
+      "commonMistakes": [
+        "Do not reject a function just because two inputs share an output.",
+        "Every permitted input needs exactly one output.",
+        "Do not assume every function has an inverse on its original domain."
+      ],
+      "diagram": {
+        "src": "/diagrams/maths-function-mapping.svg",
+        "alt": "Inputs minus two, zero and two map under x squared to outputs four, zero and four; two inputs share output four.",
+        "caption": "Original mapping diagram: f(x) = x² is a function on {−2,0,2}, but reversing the arrows would not define an inverse function."
+      }
+    },
+    {
+      "id": "function-notation",
+      "title": "Use function notation",
+      "points": [
+        "4C"
+      ],
+      "paragraphs": [
+        "The expression f(x) names the output of function f at input x. It does not mean f multiplied by x. A rule such as f: x ↦ 3x − 2 describes the same mapping as f(x) = 3x − 2.",
+        "To find f(a), substitute a everywhere x appears, using brackets for a negative or algebraic input. For f(x) = x² + 2x, f(−3) = (−3)² + 2(−3), so the square applies to the whole negative input.",
+        "An algebraic input is substituted in the same way. If f(x) = 3x − 2, then f(t + 1) = 3(t + 1) − 2 = 3t + 1. Keep any restrictions required by the original rule."
+      ],
+      "example": {
+        "question": "For f(x) = x² + 2x, find f(−3) and f(a + 1).",
+        "steps": [
+          "f(−3) = 9 − 6 = 3.",
+          "f(a + 1) = (a + 1)² + 2(a + 1).",
+          "Expand to a² + 4a + 3."
+        ],
+        "explanation": "Brackets preserve the entire substituted input."
+      },
+      "practice": {
+        "question": "For g: x ↦ 4x − 5, find g(2t).",
+        "answer": "g(2t) = 8t − 5.",
+        "explanation": "Replace the input x by 2t in the whole rule."
+      },
+      "terms": [
+        "function notation",
+        "mapping notation",
+        "f(x)",
+        "substitution"
+      ],
+      "commonMistakes": [
+        "f(x) is an output, not multiplication.",
+        "Use brackets around a negative input before squaring.",
+        "Substitute the whole algebraic input into every occurrence of x."
+      ]
+    },
+    {
+      "id": "function-domain-and-range",
+      "title": "Domain, range and exclusions",
+      "points": [
+        "4D"
+      ],
+      "paragraphs": [
+        "The domain is the set of allowed inputs; the range is the set of outputs actually produced. Use any domain stated in the question. For real-valued rules, also exclude inputs that make the formula undefined.",
+        "For f(x) = 1/(x − 2), x = 2 is excluded because the denominator would be zero. With all other real inputs allowed, f(x) can take any nonzero real output, but can never equal zero. For √x with real outputs, x must be at least zero.",
+        "For a restricted quadratic domain, examine values inside the interval as well as its endpoints. Squaring reverses the order of some negative inputs and reaches a minimum of zero if the interval contains zero. Formal continuity is excluded from this specification row."
+      ],
+      "example": {
+        "question": "Find the domain and range of f(x) = x² when −2 ≤ x ≤ 3.",
+        "steps": [
+          "The stated domain is [−2, 3].",
+          "The interval contains 0, so the smallest output is 0.",
+          "The largest endpoint square is 3² = 9, so the range is [0, 9]."
+        ],
+        "explanation": "Squaring just the endpoints would miss the internal minimum."
+      },
+      "practice": {
+        "question": "For g(x) = 1/(x + 4), state the excluded real input and an output that is never reached.",
+        "answer": "Exclude x = −4. Output 0 is never reached.",
+        "explanation": "The denominator vanishes at −4; a nonzero numerator divided by a finite nonzero denominator cannot equal zero."
+      },
+      "terms": [
+        "domain",
+        "range",
+        "excluded value",
+        "real input"
+      ],
+      "commonMistakes": [
+        "Do not confuse the domain with the range.",
+        "A denominator cannot be zero.",
+        "Check internal turning or minimum values for a restricted domain."
+      ]
+    },
+    {
+      "id": "composite-functions",
+      "title": "Composite functions: inner rule first",
+      "points": [
+        "4E"
+      ],
+      "paragraphs": [
+        "A composite function applies one rule and then another. In this specification, fg means do g first and then f: fg(x) = f(g(x)). Read the inner function first, rather than working in the written left-to-right order.",
+        "Keep brackets around the inner output while substituting into the outer rule. The order usually matters: f(g(x)) and g(f(x)) need not agree. Composite notation is not multiplication of the two function values.",
+        "The input must belong to the domain of the inner function, and its output must be accepted by the outer function. If the outer rule divides by its input, any input that makes the inner output zero must be excluded."
+      ],
+      "example": {
+        "question": "Let f(x) = 2x + 3 and g(x) = x². Find fg(x) and gf(x).",
+        "steps": [
+          "fg(x) = f(x²) = 2x² + 3.",
+          "gf(x) = g(2x + 3) = (2x + 3)².",
+          "Thus fg(1) = 5 but gf(1) = 25."
+        ],
+        "explanation": "The two orders produce different functions."
+      },
+      "practice": {
+        "question": "Let f(x) = 1/x and g(x) = x − 2. Find fg(x) and its excluded real input.",
+        "answer": "fg(x) = 1/(x − 2), with x ≠ 2.",
+        "explanation": "g runs first; its output cannot be zero because f then takes its reciprocal."
+      },
+      "terms": [
+        "composite function",
+        "inner function",
+        "fg",
+        "gf",
+        "composition"
+      ],
+      "commonMistakes": [
+        "fg means g first and f second here.",
+        "Do not multiply f(x) by g(x).",
+        "Carry the inner result in brackets and check the composite domain."
+      ]
+    },
+    {
+      "id": "inverse-functions",
+      "title": "Inverse functions and domain restrictions",
+      "points": [
+        "4F"
+      ],
+      "paragraphs": [
+        "An inverse function undoes the original mapping. Its domain is the original function’s range, and its range is the original domain. The notation f⁻¹(x) means the inverse function; it is not the reciprocal 1/f(x).",
+        "To find an inverse algebraically, write y = f(x), rearrange to make x the subject, then rename the input and output. Check by composing in either order on the appropriate domains.",
+        "A many-to-one function cannot be reversed to a single-valued inverse on its full domain. For x², restricting the original input to x ≥ 0 gives inverse √x; choosing x ≤ 0 instead would give inverse −√x. The restriction changes which branch is correct."
+      ],
+      "example": {
+        "question": "Find f⁻¹(x) for f(x) = 2x + 3 on the real numbers.",
+        "steps": [
+          "Write y = 2x + 3.",
+          "Rearrange to x = (y − 3)/2.",
+          "Rename the inverse input: f⁻¹(x) = (x − 3)/2.",
+          "f⁻¹(f(x)) = ((2x + 3) − 3)/2 = x."
+        ],
+        "explanation": "The inverse removes +3 first, then divides by 2."
+      },
+      "practice": {
+        "question": "For g(x) = x² on x ≥ 0, find g⁻¹(9).",
+        "answer": "g⁻¹(9) = √9 = 3.",
+        "explanation": "The original domain excludes negative inputs, so −3 is not the inverse output."
+      },
+      "terms": [
+        "inverse function",
+        "f⁻¹",
+        "one-to-one",
+        "restricted domain"
+      ],
+      "commonMistakes": [
+        "The inverse is not the reciprocal.",
+        "Reverse the operation order.",
+        "Keep the stated domain and choose the corresponding square-root branch."
+      ]
+    },
+    {
+      "id": "direct-and-inverse-variation",
+      "title": "Direct and inverse variation",
+      "points": [
+        "4G"
+      ],
+      "paragraphs": [
+        "Direct variation y ∝ h(x) means y = k h(x) for a constant k. Inverse variation y ∝ 1/h(x) means y = k/h(x). Use one known pair to find k, then keep that same k when finding another pair.",
+        "The obtained specification explicitly includes h(x) = x, x², x³ and √x, and their reciprocals. State any denominator or real-root restrictions. For example, y = k/√x needs x > 0, while y = k/x needs x ≠ 0.",
+        "Reason about changes through the stated power. If y is inversely proportional to x², doubling x divides y by four. Do not transfer a direct-proportion rule to an inverse problem."
+      ],
+      "example": {
+        "question": "y is inversely proportional to x². When x = 2, y = 12. Find y when x = 6.",
+        "steps": [
+          "Write y = k/x².",
+          "12 = k/4, so k = 48.",
+          "At x = 6, y = 48/36 = 4/3."
+        ],
+        "explanation": "Tripling x divides y by 3² = 9."
+      },
+      "practice": {
+        "question": "y is directly proportional to √x. When x = 9, y = 15. Find y when x = 16.",
+        "answer": "k = 15/3 = 5, so y = 5√16 = 20.",
+        "explanation": "Use the square root of the input rather than the input itself."
+      },
+      "terms": [
+        "variation",
+        "constant of proportionality",
+        "direct proportion",
+        "inverse square",
+        "square-root variation"
+      ],
+      "commonMistakes": [
+        "Find k from the original pair and use it consistently.",
+        "Match the stated power or root.",
+        "Do not apply linear scaling to a square, cube or square-root variation."
+      ]
+    },
+    {
+      "id": "function-graphs-and-intersections",
+      "title": "Function graphs and intersections",
+      "points": [
+        "4J"
+      ],
+      "paragraphs": [
+        "A graph shows permitted pairs (x, f(x)). Build a table of values, plot with a labelled scale and draw an appropriate smooth curve. Check axis intercepts and turning behaviour rather than joining sparse points into an arbitrary shape.",
+        "This row covers numerical combinations of cubic, quadratic, linear, constant, 1/x and 1/x² terms with at least three of the six coefficients zero. Exclude x = 0 when a reciprocal term is present; never join opposite branches across an undefined input.",
+        "Intersections of two graphs solve f(x) = g(x). Read both coordinates and use the x-values as the equation’s solutions. Graphical answers are approximate when read from a drawn scale; a line touching a curve may give only one intersection."
+      ],
+      "example": {
+        "question": "Sketch y = x² − 4x + 3 and use its x-axis intersections to solve x² − 4x + 3 = 0.",
+        "steps": [
+          "Factorise: y = (x − 1)(x − 3), so the x-intercepts are (1,0) and (3,0).",
+          "At x = 0, y = 3; completing the square gives y = (x − 2)² − 1, so the minimum is (2,−1).",
+          "Draw an upward-opening curve through these points. The equation solutions are x = 1 and x = 3."
+        ],
+        "explanation": "The x-axis is the graph y = 0; its intersections supply the roots."
+      },
+      "practice": {
+        "question": "Solve graphically the intersection of y = x² and y = x + 2, then check algebraically.",
+        "answer": "Intersections are (−1,1) and (2,4), giving x = −1 and x = 2.",
+        "explanation": "x² = x + 2 becomes (x − 2)(x + 1) = 0."
+      },
+      "terms": [
+        "function graph",
+        "curve intersection",
+        "graphical solution",
+        "reciprocal graph",
+        "x-intercept"
+      ],
+      "commonMistakes": [
+        "Do not connect a reciprocal graph across x = 0.",
+        "An equation solution is an x-value, not the whole intersection pair.",
+        "Use a scale and enough values to establish the curve’s behaviour."
+      ]
+    },
+    {
+      "id": "tangent-gradient",
+      "title": "Estimate a curve gradient from a tangent",
+      "points": [
+        "4K"
+      ],
+      "paragraphs": [
+        "A curve’s gradient at a point is the gradient of its tangent there. Draw a reasonable straight tangent that follows the curve’s local direction at the named point. A chord joining two distant curve points gives an average gradient, not generally the local gradient.",
+        "Choose two well-separated readable points on the tangent and construct a right-angled triangle. Calculate gradient = change in vertical value ÷ change in horizontal value. Use axis units and preserve the sign; horizontal tangents have zero gradient.",
+        "The two triangle points need not lie on the curve. A drawn tangent gives an estimate, with precision limited by the graph scale and line placement. Differentiation provides an exact gradient for a supplied differentiable formula."
+      ],
+      "example": {
+        "question": "The tangent to y = (x − 2)² + 1 at (3,2) passes through (2,0) and (4,4). Find its gradient.",
+        "steps": [
+          "Vertical change = 4 − 0 = 4.",
+          "Horizontal change = 4 − 2 = 2.",
+          "Gradient = 4/2 = 2."
+        ],
+        "explanation": "(2,0) is on the tangent, not the curve; that is allowed for the gradient triangle."
+      },
+      "practice": {
+        "question": "A tangent passes through (1,7) and (5,−1). Find its gradient.",
+        "answer": "(−1 − 7)/(5 − 1) = −8/4 = −2.",
+        "explanation": "Use both coordinate changes in the same direction."
+      },
+      "terms": [
+        "tangent",
+        "local gradient",
+        "gradient triangle",
+        "curve slope"
+      ],
+      "commonMistakes": [
+        "Use tangent points, not two arbitrary curve points.",
+        "Keep coordinate subtraction in the same order.",
+        "A graphical estimate should not claim unjustified precision."
+      ],
+      "diagram": {
+        "src": "/diagrams/maths-stationary-tangent.svg",
+        "alt": "The curve y equals the square of the quantity x minus two, plus one, has minimum at two, one with horizontal tangent, and a tangent of gradient two at three, two.",
+        "caption": "Original curve and tangent: the minimum has gradient 0; the tangent at (3,2) has gradient 2. The labelled triangle is drawn on that tangent."
+      }
+    },
+    {
+      "id": "differentiate-integer-powers",
+      "title": "Differentiate integer powers",
+      "points": [
+        "4L"
+      ],
+      "paragraphs": [
+        "For a term a xⁿ with integer n, differentiation gives a n xⁿ⁻¹. Multiply by the old power and reduce the power by one. Differentiate each term in a sum separately; a constant differentiates to zero.",
+        "Rewrite reciprocal terms as negative powers first: 6/x = 6x⁻¹ and −2/x² = −2x⁻². Their derivatives are −6x⁻² and +4x⁻³. The sign of a negative power is part of the multiplication. Original denominator restrictions remain.",
+        "dy/dx is the derivative: it gives the local rate of change of y with respect to x. Find its formula before substituting a point. This lesson uses integer powers only; no product, quotient or chain-rule extension is being claimed."
+      ],
+      "example": {
+        "question": "Differentiate y = 3x³ − 2x² + 5x + 7, then find the gradient at x = 2.",
+        "steps": [
+          "dy/dx = 9x² − 4x + 5.",
+          "The constant 7 contributes zero.",
+          "At x = 2, the gradient is 36 − 8 + 5 = 33."
+        ],
+        "explanation": "Substitution into y would give a coordinate, not the gradient."
+      },
+      "practice": {
+        "question": "Differentiate y = 4x² + 6/x − 2/x².",
+        "answer": "dy/dx = 8x − 6/x² + 4/x³, with x ≠ 0.",
+        "explanation": "Rewrite the reciprocal terms as negative powers and keep their original domain restriction."
+      },
+      "terms": [
+        "differentiation",
+        "dy/dx",
+        "power rule",
+        "integer powers",
+        "negative powers"
+      ],
+      "commonMistakes": [
+        "Multiply by the old power before reducing it.",
+        "A constant’s derivative is zero.",
+        "Do not lose negative-power signs or denominator restrictions."
+      ]
+    },
+    {
+      "id": "stationary-and-turning-points",
+      "title": "Stationary points, maxima and minima",
+      "points": [
+        "4M"
+      ],
+      "paragraphs": [
+        "A stationary point has dy/dx = 0. Solve that equation for x, then substitute into the original function to find y. A gradient is not the y-coordinate of the point.",
+        "Use the sign of the derivative on either side to classify a turning point. Negative then positive gives a local minimum; positive then negative gives a local maximum. A derivative of zero alone does not establish either classification.",
+        "Some stationary points do not turn. For y = x³, dy/dx = 3x² is zero at x = 0 but positive on both sides; the curve continues increasing through a horizontal tangent. A greatest or least value on a restricted interval may also occur at an endpoint."
+      ],
+      "example": {
+        "question": "Find and classify the stationary point of y = x² − 4x + 5.",
+        "steps": [
+          "dy/dx = 2x − 4 = 0 gives x = 2.",
+          "At x = 2, y = 4 − 8 + 5 = 1.",
+          "The derivative is negative for x < 2 and positive for x > 2, so (2,1) is a minimum."
+        ],
+        "explanation": "Classify by the change in gradient sign, not the zero derivative alone."
+      },
+      "practice": {
+        "question": "Find and classify the stationary points of y = x³ − 3x.",
+        "answer": "(−1,2) is a local maximum; (1,−2) is a local minimum.",
+        "explanation": "dy/dx = 3x² − 3 vanishes at ±1. Its sign is positive, then negative, then positive as x passes −1 and 1."
+      },
+      "terms": [
+        "stationary point",
+        "turning point",
+        "local maximum",
+        "local minimum",
+        "derivative sign"
+      ],
+      "commonMistakes": [
+        "Use the original function to find y.",
+        "Zero gradient need not mean a maximum or minimum.",
+        "Check interval endpoints when asked for an overall greatest or least value."
+      ]
+    },
+    {
+      "id": "kinematics-functions",
+      "title": "Motion: displacement, velocity and acceleration",
+      "points": [
+        "4N"
+      ],
+      "paragraphs": [
+        "For straight-line motion, displacement s is measured from an origin and can be signed. Velocity v = ds/dt is its rate of change; acceleration a = dv/dt is the rate of change of velocity. Speed is the magnitude of velocity, so it is never negative.",
+        "Differentiate a displacement formula with respect to time, then differentiate the velocity formula for acceleration. Keep units: displacement in metres, velocity in m/s and acceleration in m/s². A change of direction can make distance travelled greater than the magnitude of the overall displacement.",
+        "A displacement–time graph’s gradient is velocity; a velocity–time graph’s gradient is acceleration and its signed area is displacement change. Area under a speed–time graph is distance travelled. Straight-line sections give rectangle, triangle or trapezium areas; draw and label the axes before interpreting them."
+      ],
+      "example": {
+        "question": "s = 2t² + 3t metres for t ≥ 0. Find velocity and acceleration at t = 2 seconds.",
+        "steps": [
+          "v = ds/dt = 4t + 3 m/s.",
+          "a = dv/dt = 4 m/s².",
+          "At t = 2, v = 11 m/s and a = 4 m/s²; displacement s = 14 m."
+        ],
+        "explanation": "s, v and a are different quantities. Here v stays positive, so from t = 0 to 2 the distance travelled is also 14 m."
+      },
+      "practice": {
+        "question": "Speed rises uniformly from 0 to 6 m/s in 3 seconds, then stays at 6 m/s for 2 more seconds. Find total distance travelled.",
+        "answer": "Triangle area ½ × 3 × 6 = 9 m; rectangle area 2 × 6 = 12 m; total 21 m.",
+        "explanation": "The speed–time area gives distance. The initial speed increase is 6/3 = 2 m/s² for motion in a fixed direction."
+      },
+      "terms": [
+        "kinematics",
+        "displacement",
+        "velocity",
+        "speed",
+        "acceleration",
+        "ds/dt",
+        "dv/dt"
+      ],
+      "commonMistakes": [
+        "Speed is the magnitude of velocity.",
+        "A graph gradient and a graph area give different quantities.",
+        "Do not equate distance and displacement if direction changes."
+      ]
     }
   ],
   "status": "source-checked",

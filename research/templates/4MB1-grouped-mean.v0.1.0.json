@@ -195,7 +195,8 @@
     "contradictionRules": [
       "Additional, crossed-out, wrong-frequency or inconsistent product evidence requires review.",
       "Correct answer with incomplete or different working requires review unless all five midpoint products, addition total and divisor 60 are explicitly correct.",
-      "An incorrect addition total may retain method marks; never silently repair it or give final accuracy for a wrong estimate."
+      "An incorrect addition total may retain method marks; never silently repair it or give final accuracy for a wrong estimate.",
+      "A correct equivalent fraction in working with a blank or different final answer requires review because the transcription does not identify the final fraction or subsequent-working intent."
     ],
     "units": "km",
     "tolerance": null,
@@ -235,7 +236,7 @@
       "no-live-activation"
     ],
     "testPlan": [
-      "Exhaust the implemented finite frequency domain for arithmetic, determinism and source exclusion.",
+      "Exhaust the implemented finite frequency domain for arithmetic, determinism and source exclusion. Passing these bounded tests does not establish complete response coverage or assessment calibration.",
       "Check source fixture, all mark totals and dependency boundaries with synthetic response cases; tamper and sparse-input rejection.",
       "Before promotion review AO allocation, numeric/context demand and real learner working; retain unsupported-method review."
     ],
@@ -248,7 +249,7 @@
       4294967295
     ],
     "boundaryCoverage": "partial",
-    "status": "not-run",
+    "status": "passed",
     "runRefs": [
       "research/validation/2026-10-04-grouped-mean-prototype.json"
     ]

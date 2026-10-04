@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-04T07:16:52.269Z",
+  "checkedAt": "2026-10-04T17:18:15.288Z",
   "familyId": "4MB1.statistics.grouped-mean",
   "sourceTaskId": "4MB1-2024-summer-01-candidate.Q23.c",
   "version": "0.1.0",
@@ -26,8 +26,8 @@
     }
   },
   "syntheticResponseCases": 33,
-  "scoredCases": 19,
-  "deferredCases": 14,
+  "scoredCases": 17,
+  "deferredCases": 16,
   "results": [
     {
       "id": "answer-decimal",
@@ -143,29 +143,21 @@
     },
     {
       "id": "full-no-final",
-      "expectedScore": 3,
+      "expectedScore": null,
       "actual": {
-        "status": "scored",
-        "score": 3,
-        "maximum": 4,
-        "band": 2,
-        "division": 1,
-        "accuracy": 0,
-        "impliedByCorrectAnswer": false
+        "status": "needs-review",
+        "score": null,
+        "reason": "Correct equivalent fraction in working with a missing or different final answer needs examiner review."
       },
       "passed": true
     },
     {
       "id": "wrong-final-with-method",
-      "expectedScore": 3,
+      "expectedScore": null,
       "actual": {
-        "status": "scored",
-        "score": 3,
-        "maximum": 4,
-        "band": 2,
-        "division": 1,
-        "accuracy": 0,
-        "impliedByCorrectAnswer": false
+        "status": "needs-review",
+        "score": null,
+        "reason": "Correct equivalent fraction in working with a missing or different final answer needs examiner review."
       },
       "passed": true
     },
@@ -438,11 +430,11 @@
   ],
   "sourceHashes": {
     "server/generators/grouped-mean.ts": "938c129b1e4fef02147086b5a0eaa8dd4c947be27d52521e7a246b62069f5ac2",
-    "server/generators/grouped-mean-marking.ts": "cdaf7f042a6116f9c20b172891a3e5d53e38bf5ff203ffeea04c7ec9d7bdb0be",
+    "server/generators/grouped-mean-marking.ts": "214f94c6e7a4ffaf941a72f0cd28e511e2ec967838fbbda55db3b79a8f74f274",
     "scripts/grouped-mean-fixtures.ts": "700a7e58399a0622db98a6db30ee805bf8e4331dd73bc1e246f42024f366ae61",
     "tests/grouped-mean-prototype.test.ts": "be54dc1582db4a2c12ce159622f47bf9fa340382ba24ee6e68f08ad178555a79",
-    "research/validation/grouped-mean-marking-cases.json": "996d00111295ed6d93f6d6aa78155e688f3d7ee9cc9ccc9fb4093a149b469c9b",
-    "research/templates/4MB1-grouped-mean.v0.1.0.json": "643c97d0000253979181f5c25be20760ec0a6c908ccee3e91e53f20f7c6a0880"
+    "research/validation/grouped-mean-marking-cases.json": "6e19b94327e619f6e0e98aa91315f1be55a6d48830dac308022e983c2bab127f",
+    "research/templates/4MB1-grouped-mean.v0.1.0.json": "7b97773c3a515ba5cc71370a1c45999e4d516584f0c6efbb05643e05242cc453"
   },
   "humanReviewed": false,
   "liveEligible": false,

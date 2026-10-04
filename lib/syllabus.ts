@@ -14,6 +14,8 @@ import biologyLiving from '../research/syllabus/4BI1-living-organisms.json' with
 import humanCells from '../research/syllabus/4HB1-cells-foundations.json' with { type: 'json' };
 
 import chemistryStates from '../research/syllabus/4CH1-states-and-mixtures.json' with { type: 'json' };
+import chemistryBonding from '../research/syllabus/4CH1-bonding.json' with { type: 'json' };
+import humanMolecules from '../research/syllabus/4HB1-biological-molecules.json' with { type: 'json' };
 
 import mathsNumber from '../research/syllabus/4MB1-number.json' with { type: 'json' };
 import mathsSets from '../research/syllabus/4MB1-sets.json' with { type: 'json' };
@@ -33,6 +35,8 @@ export const reviewedInventories = [
   { title: 'The nature and variety of living organisms (1.1–1.4)', ...biologyLiving },
   { title: 'Cells and tissues (1.1–1.16)', ...humanCells },
   { title: 'Principles foundations (1.1–1.22)', ...chemistryStates },
+  { title: 'Ionic, covalent and metallic bonding (1.37–1.54C)', ...chemistryBonding },
+  { title: 'Biological molecules (2.1–2.10)', ...humanMolecules },
   { title: 'Number: section 1, rows A–K', ...mathsNumber },
   { title: 'Sets: section 2, rows A–I', ...mathsSets },
   { title: 'Algebra foundations: section 3, rows A–C', ...mathsAlgebra },

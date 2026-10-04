@@ -1,0 +1,200 @@
+{
+  "checkedAt": "2026-10-04",
+  "scope": "Fraction arithmetic and finite-sample central-difference checks, plus selected SVG coordinate checks. Derivative formulas and domain/reasoning also reviewed editorially; numeric samples alone are not a formal symbolic proof or a full chapter audit.",
+  "checks": [
+    {
+      "name": "notation input -3",
+      "passed": true,
+      "tolerance": 0.0
+    },
+    {
+      "name": "notation input 1",
+      "passed": true,
+      "tolerance": 0.0
+    },
+    {
+      "name": "notation input 2",
+      "passed": true,
+      "tolerance": 0.0
+    },
+    {
+      "name": "algebraic substitution -2",
+      "passed": true,
+      "tolerance": 0.0
+    },
+    {
+      "name": "algebraic substitution 0",
+      "passed": true,
+      "tolerance": 0.0
+    },
+    {
+      "name": "algebraic substitution 3",
+      "passed": true,
+      "tolerance": 0.0
+    },
+    {
+      "name": "mapping gf at 1",
+      "passed": true,
+      "tolerance": 0.0
+    },
+    {
+      "name": "mapping fg at 1",
+      "passed": true,
+      "tolerance": 0.0
+    },
+    {
+      "name": "inverse composition -3",
+      "passed": true,
+      "tolerance": 0.0
+    },
+    {
+      "name": "inverse composition 0",
+      "passed": true,
+      "tolerance": 0.0
+    },
+    {
+      "name": "inverse composition 7",
+      "passed": true,
+      "tolerance": 0.0
+    },
+    {
+      "name": "inverse square variation",
+      "passed": true,
+      "tolerance": 0.0
+    },
+    {
+      "name": "root variation",
+      "passed": true,
+      "tolerance": 0.0
+    },
+    {
+      "name": "quadratic root 1",
+      "passed": true,
+      "tolerance": 0.0
+    },
+    {
+      "name": "quadratic root 3",
+      "passed": true,
+      "tolerance": 0.0
+    },
+    {
+      "name": "graph intersection -1",
+      "passed": true,
+      "tolerance": 0.0
+    },
+    {
+      "name": "graph intersection 2",
+      "passed": true,
+      "tolerance": 0.0
+    },
+    {
+      "name": "tangent gradient",
+      "passed": true,
+      "tolerance": 0.0
+    },
+    {
+      "name": "negative tangent",
+      "passed": true,
+      "tolerance": 0.0
+    },
+    {
+      "name": "cubic derivative at -2",
+      "passed": true,
+      "tolerance": 1e-06
+    },
+    {
+      "name": "cubic derivative at -1",
+      "passed": true,
+      "tolerance": 1e-06
+    },
+    {
+      "name": "cubic derivative at 1",
+      "passed": true,
+      "tolerance": 1e-06
+    },
+    {
+      "name": "cubic derivative at 2",
+      "passed": true,
+      "tolerance": 1e-06
+    },
+    {
+      "name": "reciprocal derivative at -2",
+      "passed": true,
+      "tolerance": 1e-06
+    },
+    {
+      "name": "reciprocal derivative at -1",
+      "passed": true,
+      "tolerance": 1e-06
+    },
+    {
+      "name": "reciprocal derivative at 1",
+      "passed": true,
+      "tolerance": 1e-06
+    },
+    {
+      "name": "reciprocal derivative at 2",
+      "passed": true,
+      "tolerance": 1e-06
+    },
+    {
+      "name": "cubic gradient at 2",
+      "passed": true,
+      "tolerance": 0.0
+    },
+    {
+      "name": "minimum original coordinate",
+      "passed": true,
+      "tolerance": 0.0
+    },
+    {
+      "name": "stationary coordinate -1",
+      "passed": true,
+      "tolerance": 0.0
+    },
+    {
+      "name": "stationary coordinate 1",
+      "passed": true,
+      "tolerance": 0.0
+    },
+    {
+      "name": "displacement at 2",
+      "passed": true,
+      "tolerance": 0.0
+    },
+    {
+      "name": "velocity at 2",
+      "passed": true,
+      "tolerance": 0.0
+    },
+    {
+      "name": "acceleration",
+      "passed": true,
+      "tolerance": 0.0
+    },
+    {
+      "name": "speed-time area",
+      "passed": true,
+      "tolerance": 0.0
+    },
+    {
+      "name": "Bezier minimum",
+      "passed": true,
+      "tolerance": 0.0
+    },
+    {
+      "name": "tangent point y coordinate",
+      "passed": true,
+      "tolerance": 0.0
+    }
+  ],
+  "totalChecks": 37,
+  "sourceHashes": {
+    "content/notes/mathematics.json": "05082784a411137886a516409b143eb782077340078f05c33b81b107fd2b75c2",
+    "public/diagrams/maths-function-mapping.svg": "72a81ef67303a8af2646a2b567a04998546c66652823a9e35e22c0d7468471b8",
+    "public/diagrams/maths-stationary-tangent.svg": "3ed2634c38d8fe6b59d6823ea2eb0f78a13f6f2e50662fd22d35e680f9fddc46"
+  },
+  "humanReviewed": false,
+  "completeChapters": 0,
+  "wordingReview": "Independent Astra agent found no blocking mathematical/scope/link errors. Research process language removed from the lesson and spoken-parentheses diagram wording clarified; all example and practice payloads confirmed unchanged."
+}

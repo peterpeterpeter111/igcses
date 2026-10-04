@@ -18,14 +18,14 @@
     27,
     28
   ],
-  "scope": "Thirty-one selected source identities, nineteen with partial teaching and twelve source-only. No complete points or substatement audits. Q19 scope unresolved.",
+  "scope": "40 selected source identities, 31 with partial teaching; no complete point or whole-substatement audit. Q19 scope remains unresolved.",
   "points": [
     {
       "id": "4MB1:issue1:4G",
       "reference": "4G",
       "pdfPage": 21,
       "printedPage": 15,
-      "summary": "Direct and indirect proportion in the explicitly listed forms: x, x², x³, √x and their reciprocals; inverse cube roots in source Q19 are not explicitly listed.",
+      "summary": "Direct and inverse variation only in the explicitly listed x, x², x³, √x and reciprocal forms; historical Q19 inverse cube-root applicability remains unresolved.",
       "components": [
         "01",
         "02"
@@ -33,9 +33,12 @@
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "number-and-algebra",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
-      "humanReviewed": false
+      "noteSectionIds": [
+        "direct-and-inverse-variation"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-04"
     },
     {
       "id": "4MB1:issue1:6C",
@@ -446,16 +449,19 @@
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "number-and-algebra",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
-      "humanReviewed": false
+      "noteSectionIds": [
+        "differentiate-integer-powers"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-04"
     },
     {
       "id": "4MB1:issue1:4M",
       "reference": "4M",
       "pdfPage": 22,
       "printedPage": 16,
-      "summary": "Determine gradients, rates of change, maxima, minima and stationary or turning points through differentiation or graphical methods.",
+      "summary": "Determine gradients, rates of change, stationary points, maxima, minima and turning points with graph interpretation.",
       "components": [
         "01",
         "02"
@@ -463,9 +469,12 @@
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "number-and-algebra",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
-      "humanReviewed": false
+      "noteSectionIds": [
+        "stationary-and-turning-points"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-04"
     },
     {
       "id": "4MB1:issue1:10A",
@@ -604,6 +613,186 @@
       "chapterId": "statistics",
       "noteSectionIds": [
         "expected-frequency"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-04"
+    },
+    {
+      "id": "4MB1:issue1:4A",
+      "reference": "4A",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "summary": "The idea of a function of a variable.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "number-and-algebra",
+      "noteSectionIds": [
+        "functions-and-mappings"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-04"
+    },
+    {
+      "id": "4MB1:issue1:4B",
+      "reference": "4B",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "summary": "Functions as mappings or correspondences between elements of two sets.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "number-and-algebra",
+      "noteSectionIds": [
+        "functions-and-mappings"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-04"
+    },
+    {
+      "id": "4MB1:issue1:4C",
+      "reference": "4C",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "summary": "Use f(x) and mapping-arrow functional notation.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "number-and-algebra",
+      "noteSectionIds": [
+        "function-notation"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-04"
+    },
+    {
+      "id": "4MB1:issue1:4D",
+      "reference": "4D",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "summary": "Domain and range, including excluded inputs; continuity questions excluded.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "number-and-algebra",
+      "noteSectionIds": [
+        "function-domain-and-range"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-04"
+    },
+    {
+      "id": "4MB1:issue1:4E",
+      "reference": "4E",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "summary": "Composite functions, with fg meaning apply g then f.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "number-and-algebra",
+      "noteSectionIds": [
+        "composite-functions"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-04"
+    },
+    {
+      "id": "4MB1:issue1:4F",
+      "reference": "4F",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "summary": "Find inverse functions.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "number-and-algebra",
+      "noteSectionIds": [
+        "inverse-functions"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-04"
+    },
+    {
+      "id": "4MB1:issue1:4J",
+      "reference": "4J",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "summary": "Draw and interpret numerical cubic/quadratic/linear/constant/reciprocal combinations with at least three of six coefficients zero; solve by graph intersections.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "number-and-algebra",
+      "noteSectionIds": [
+        "function-graphs-and-intersections"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-04"
+    },
+    {
+      "id": "4MB1:issue1:4K",
+      "reference": "4K",
+      "pdfPage": 21,
+      "printedPage": 15,
+      "summary": "Estimate gradients by a drawn tangent and an appropriate right-angled gradient triangle.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "number-and-algebra",
+      "noteSectionIds": [
+        "tangent-gradient"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-04"
+    },
+    {
+      "id": "4MB1:issue1:4N",
+      "reference": "4N",
+      "pdfPage": 22,
+      "printedPage": 16,
+      "summary": "Apply functions to linear kinematics and simple practical problems; interpret distance/speed-time graphs and displacement/velocity/acceleration relationships.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "number-and-algebra",
+      "noteSectionIds": [
+        "kinematics-functions"
       ],
       "teachingCoverage": "partial",
       "humanReviewed": false,

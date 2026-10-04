@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" role="img" aria-labelledby="title desc">
+  <title id="title">A stationary minimum and a sloping tangent</title>
+  <desc id="desc">The parabola y equals the square of the quantity x minus two, plus one, has minimum at two, one and gradient zero there. Its tangent at three, two is y equals two x minus four. A triangle with horizontal change one and vertical change two shows tangent gradient two.</desc>
+  <rect width="900" height="480" fill="#faf6ee"/>
+  <g font-family="Georgia,serif" fill="#302523">
+    <text x="50" y="34" font-size="22">y = (x − 2)² + 1: gradient depends on the point</text>
+    <g stroke="#ddd0bc" stroke-width="1">
+      <path d="M130 50V380M280 50V380M430 50V380M580 50V380M730 50V380"/>
+      <path d="M130 325H730M130 270H730M130 215H730M130 160H730M130 105H730M130 50H730"/>
+    </g>
+    <path d="M105 380H785M130 408V55" stroke="#594b41" stroke-width="2" fill="none"/>
+    <text x="795" y="385" font-size="18">x</text><text x="106" y="68" font-size="18">y</text>
+    <g font-size="16" text-anchor="middle">
+      <text x="130" y="405">0</text><text x="280" y="405">1</text><text x="430" y="405">2</text><text x="580" y="405">3</text><text x="730" y="405">4</text>
+      <text x="113" y="331">1</text><text x="113" y="276">2</text><text x="113" y="221">3</text><text x="113" y="166">4</text><text x="113" y="111">5</text><text x="113" y="56">6</text>
+    </g>
+    <path d="M130 105Q430 545 730 105" stroke="#8d2634" stroke-width="3.5" fill="none"/>
+    <path d="M430 380L730 160" stroke="#a47738" stroke-width="3" fill="none"/>
+    <path d="M430 380H580V270" stroke="#a47738" stroke-width="2" stroke-dasharray="6 4" fill="none"/>
+    <path d="M350 325H510" stroke="#8d2634" stroke-width="2" fill="none"/>
+    <circle cx="430" cy="325" r="5" fill="#8d2634"/><circle cx="580" cy="270" r="5" fill="#a47738"/>
+    <text x="250" y="353" font-size="17">Minimum (2,1)</text>
+    <text x="485" y="426" font-size="16">Δx = 1</text><text x="592" y="348" font-size="16">Δy = 2</text>
+    <text x="584" y="252" font-size="17">(3,2)</text>
+    <text x="746" y="177" font-size="17">Tangent</text><text x="746" y="201" font-size="17">y = 2x − 4</text>
+    <text x="55" y="454" font-size="17">Minimum: gradient 0. At (3,2): gradient Δy/Δx = 2/1 = 2.</text>
+  </g>
+</svg>

@@ -1,6 +1,7 @@
 import mathematicsStatistics from './notes/mathematics-statistics.json' with { type: 'json' };
 import mathematicsGeometry from './notes/mathematics-geometry.json' with { type: 'json' };
 import humanBiology from './notes/human-biology.json' with { type: 'json' };
+import humanMolecules from './notes/human-biology-molecules.json' with { type: 'json' };
 import biology from './notes/biology.json' with { type: 'json' };
 import chemistry from './notes/chemistry.json' with { type: 'json' };
 import physics from './notes/physics.json' with { type: 'json' };
@@ -55,6 +56,7 @@ export type ChapterNotes = {
 export const notes: ChapterNotes[] = [
   mathematicsStatistics,
   humanBiology,
+  humanMolecules,
   biology,
   chemistry,
   physics,

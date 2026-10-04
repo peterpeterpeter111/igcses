@@ -36,6 +36,9 @@ export function markGroupedMeanResponse(q: GroupedMeanPrototype, response: Group
     if (p.representative > q.publicQuestion.stimulus.classes[i].lower && p.representative <= q.publicQuestion.stimulus.classes[i].upper) withinCount++;
   }
   if ((w.sum !== null && (!w.additionShown || shownCount === 0)) || (w.divisor !== null && w.sum === null)) return review('Sum or division is not supported by the transcribed working.');
+  // The transcription does not say whether a correct fraction in working is
+  // the final answer. Equivalent-answer and subsequent-working rules need review.
+  if (!correct && w.sum !== null && w.divisor !== null && w.sum * 120 === q.privateSolution.exactMean.numerator * w.divisor) return review('Correct equivalent fraction in working with a missing or different final answer needs examiner review.');
   // An incorrect addition total can retain method credit. It is not silently
   // repaired, and cannot justify a correct final answer via an incorrect method.
   if (correct) {
