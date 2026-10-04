@@ -3,6 +3,7 @@ import mathematicsGeometry from './notes/mathematics-geometry.json' with { type:
 import humanBiology from './notes/human-biology.json' with { type: 'json' };
 import humanMolecules from './notes/human-biology-molecules.json' with { type: 'json' };
 import biology from './notes/biology.json' with { type: 'json' };
+import biologyStructures from './notes/biology-structures.json' with { type: 'json' };
 import chemistry from './notes/chemistry.json' with { type: 'json' };
 import physics from './notes/physics.json' with { type: 'json' };
 import physicsWaves from './notes/physics-waves.json' with { type: 'json' };
@@ -58,6 +59,7 @@ export const notes: ChapterNotes[] = [
   humanBiology,
   humanMolecules,
   biology,
+  biologyStructures,
   chemistry,
   physics,
   physicsWaves,

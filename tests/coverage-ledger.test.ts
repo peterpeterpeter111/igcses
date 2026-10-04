@@ -85,7 +85,7 @@ void test('reviewed inventories agree with source candidates and subject-specifi
       (n, inventory) => n + inventory.points.length,
       0,
     ),
-    337,
+    351,
   );
   const allIds = reviewedInventories.flatMap((i) => i.points.map((p) => p.id));
   assert.equal(new Set(allIds).size, allIds.length);
@@ -112,7 +112,7 @@ void test('reviewed inventories agree with source candidates and subject-specifi
       assert.equal(point.printedPage, point.pdfPage - 6);
       assert.deepEqual(
         point.components,
-        inventory.qualification === '4CH1' ? (point.reference.endsWith('C') ? ['2C'] : ['1C', '2C']) : ['4HB1', '4MB1'].includes(inventory.qualification) ? ['01', '02'] : inventory.qualification === '4BI1' ? ['1B', '2B'] : point.reference.endsWith('P') ? ['2P'] : ['1P', '2P'],
+        inventory.qualification === '4CH1' ? (point.reference.endsWith('C') ? ['2C'] : ['1C', '2C']) : ['4HB1', '4MB1'].includes(inventory.qualification) ? ['01', '02'] : inventory.qualification === '4BI1' ? (point.reference.endsWith('B') ? ['2B'] : ['1B', '2B']) : point.reference.endsWith('P') ? ['2P'] : ['1P', '2P'],
       );
       assert.equal(point.humanReviewed, false);
       assert.equal(point.substatementAuditComplete, false);

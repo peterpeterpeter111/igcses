@@ -10,6 +10,8 @@ import matter from '../research/syllabus/4PH1-matter.json' with { type: 'json' }
 import radioactivity from '../research/syllabus/4PH1-radioactivity.json' with { type: 'json' };
 import astrophysics from '../research/syllabus/4PH1-astrophysics.json' with { type: 'json' };
 import biologyLiving from '../research/syllabus/4BI1-living-organisms.json' with { type: 'json' };
+import biologyCells from '../research/syllabus/4BI1-cell-organisation.json' with { type: 'json' };
+import biologyMolecules from '../research/syllabus/4BI1-molecules-and-enzymes.json' with { type: 'json' };
 
 import humanCells from '../research/syllabus/4HB1-cells-foundations.json' with { type: 'json' };
 
@@ -33,6 +35,8 @@ export const reviewedInventories = [
   { title: 'Radioactivity and particles (7.1–7.26)', ...radioactivity },
   { title: 'Astrophysics (8.1–8.18P)', ...astrophysics },
   { title: 'The nature and variety of living organisms (1.1–1.4)', ...biologyLiving },
+  { title: 'Cell organisation and structures (2.1–2.6B)', ...biologyCells },
+  { title: 'Biological molecules and enzymes (2.7–2.14B)', ...biologyMolecules },
   { title: 'Cells and tissues (1.1–1.16)', ...humanCells },
   { title: 'Principles foundations (1.1–1.22)', ...chemistryStates },
   { title: 'Ionic, covalent and metallic bonding (1.37–1.54C)', ...chemistryBonding },

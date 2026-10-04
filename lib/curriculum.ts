@@ -18,6 +18,8 @@ import electricity from '../research/curriculum-audits/4PH1-electricity-foundati
 import electricityCircuits from '../research/curriculum-audits/4PH1-electricity-circuits-and-charge.json' with { type: 'json' };
 import astrophysics from '../research/curriculum-audits/4PH1-astrophysics.json' with { type: 'json' };
 import biologyLiving from '../research/curriculum-audits/4BI1-living-organisms.json' with { type: 'json' };
+import biologyCells from '../research/curriculum-audits/4BI1-cell-organisation.json' with { type: 'json' };
+import biologyMolecules from '../research/curriculum-audits/4BI1-molecules-and-enzymes.json' with { type: 'json' };
 
 import humanCells from '../research/curriculum-audits/4HB1-cells-foundations.json' with { type: 'json' };
 
@@ -33,4 +35,4 @@ import mathsAlgebra from '../research/curriculum-audits/4MB1-algebra-foundations
 import mathsPolynomials from '../research/curriculum-audits/4MB1-polynomials-and-fractions.json' with { type: 'json' };
 
 // These bounded audits link partial teaching; they do not promote completion.
-export const curriculumAudits = [motion, forces, mechanics, waves, energy, matter, magnetism, radioactivity, electricity, electricityCircuits, astrophysics, biologyLiving, humanCells, humanTissues, humanMolecules, chemistryStates, chemistryAtoms, chemistryBonding, mathsNumber, mathsSets, mathsAlgebra, mathsPolynomials, mathsEquations, mathsAlgebraRest, mathsMatrices, mathsGeometry, mathsStatistics, mathsFunctions];
+export const curriculumAudits = [motion, forces, mechanics, waves, energy, matter, magnetism, radioactivity, electricity, electricityCircuits, astrophysics, biologyLiving, biologyCells, biologyMolecules, humanCells, humanTissues, humanMolecules, chemistryStates, chemistryAtoms, chemistryBonding, mathsNumber, mathsSets, mathsAlgebra, mathsPolynomials, mathsEquations, mathsAlgebraRest, mathsMatrices, mathsGeometry, mathsStatistics, mathsFunctions];
