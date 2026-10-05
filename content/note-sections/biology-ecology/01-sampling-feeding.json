@@ -1,0 +1,525 @@
+{
+  "subjectId": "biology",
+  "chapterId": "ecology",
+  "sections": [
+    {
+      "id": "ecological-scales",
+      "title": "Distinguish population, community, habitat and ecosystem",
+      "points": [
+        "4.1"
+      ],
+      "paragraphs": [
+        "A population consists of individuals of one species in a defined area at a particular time. A community includes the populations of different species living and interacting there. A count of one plant species is a population measure, not a count of the whole community.",
+        "A habitat is the place where an organism lives. An ecosystem includes the community and its non-living environment, with interactions such as feeding, nutrient uptake and energy transfer. A woodland community therefore excludes the non-living soil-water and temperature conditions that are part of its ecosystem.",
+        "State the spatial boundary and time when comparing populations. A pond and a nearby field may be separate study areas; one quadrat samples only a small part of an area. The number present can change through births, deaths, immigration and emigration."
+      ],
+      "example": {
+        "question": "Classify all clover plants in a defined field, all its species together, and those species plus soil/light interactions.",
+        "steps": [
+          "Clover of one species in that field/time is a population.",
+          "The different populations form its community.",
+          "The community, abiotic conditions and their interactions form the ecosystem."
+        ],
+        "explanation": "Identify the level and specify the boundary rather than using ecological terms interchangeably."
+      },
+      "practice": {
+        "question": "Is a habitat the same as all populations in it?",
+        "answer": "No. Habitat names the place; community names the different living populations.",
+        "explanation": "Identify the level and specify the boundary rather than using ecological terms interchangeably."
+      },
+      "terms": [
+        "population",
+        "community",
+        "habitat",
+        "ecosystem",
+        "abiotic",
+        "biotic"
+      ],
+      "commonMistakes": [
+        "Do not define an ecosystem as only living species or a population as every species in a habitat."
+      ]
+    },
+    {
+      "id": "quadrat-two-area-method",
+      "title": "Plan a fair two-area quadrat comparison",
+      "points": [
+        "4.2"
+      ],
+      "paragraphs": [
+        "For stationary or slow-moving organisms, a quadrat defines a known sample area. Select a countable plant species and consistent identification/counting rules. A mobile bird population cannot normally be estimated by treating a small stationary frame as a complete bird sample.",
+        "Mark a defined accessible sampling area at each site and select valid quadrat positions using random coordinates, rather than placing frames where plants look abundant. Specify whether coordinates locate the same frame corner or centre, and how frames fit within the boundary. Record excluded areas so the population being estimated is clear.",
+        "Use the same quadrat dimensions, species definition, border rule and recording procedure in both areas. Count zeros as observations. For plants crossing edges, include two designated edges and exclude the opposite two; apply that rule consistently rather than counting a plant twice.",
+        "Take enough spread-out samples to represent patchiness and report the variation, not just a selected mean. Equal sampling effort makes comparison easier, but no universal number guarantees reliability. If the aim is to compare habitat types, independent sites also matter: many frames in one field do not become many independent fields."
+      ],
+      "example": {
+        "question": "Why is throwing frames towards visible flowers a poor random sample?",
+        "steps": [
+          "Visible abundance influences placement.",
+          "Sparse or zero-count patches become less likely to be sampled.",
+          "Use a defined frame and random valid coordinates, keeping zeros and a consistent boundary rule."
+        ],
+        "explanation": "Reduce placement/identification bias and distinguish independent sites from repeated within-site samples."
+      },
+      "practice": {
+        "question": "Can you discard a zero count because it lowers the mean?",
+        "answer": "No. A valid zero is part of the evidence for the sampled area.",
+        "explanation": "Reduce placement/identification bias and distinguish independent sites from repeated within-site samples."
+      },
+      "terms": [
+        "quadrat",
+        "random coordinates",
+        "sampling frame",
+        "boundary rule",
+        "zero count",
+        "independent site"
+      ],
+      "commonMistakes": [
+        "Do not choose attractive patches, omit zeros or claim that many nearby frames prove a habitat-level cause."
+      ],
+      "practical": {
+        "apparatus": [
+          "Known-size quadrat",
+          "Tape measures and site map",
+          "Species identification guide",
+          "Random-coordinate list and recording sheet"
+        ],
+        "method": [
+          "Define each accessible site and record its area/boundaries.",
+          "Draw valid positions by a stated random-coordinate procedure.",
+          "Place the same known-size quadrat at each selected position and apply one identification/border rule.",
+          "Record the chosen species count, including zero, and relevant site conditions.",
+          "Calculate site means/densities and estimates; retain individual observations and describe uncertainty."
+        ],
+        "variables": [
+          "Compare the two defined sites observationally, not as a controlled manipulation.",
+          "Keep quadrat area, border/identification rules and recording effort comparable.",
+          "Record other differing conditions rather than attributing every difference to one presumed factor."
+        ],
+        "safety": [
+          "Use authorised accessible locations; avoid steep edges, water, traffic and harmful plants.",
+          "Minimise disturbance and follow the teacher/site fieldwork plan."
+        ],
+        "quality": [
+          "Spread samples and avoid unrecorded exclusions or counting overlaps as independent evidence.",
+          "Increase sampling based on patchiness and practical limits; independent sites for broader habitat comparisons.",
+          "This is a proposed method, not a performed survey."
+        ]
+      }
+    },
+    {
+      "id": "quadrat-density-population-estimate",
+      "title": "Calculate density before estimating population size",
+      "points": [
+        "4.2"
+      ],
+      "paragraphs": [
+        "Mean count per quadrat = total counted / number of quadrats. Density = mean count / quadrat area. Estimated site population = density × site area, provided the samples represent the defined site. Convert dimensions to the same units before calculating areas.",
+        "Original invented counts from six 0.5 m × 0.5 m frames in area A are 2,4,3,5,1,3. Their total is 18 and mean 3. Each frame is 0.25 m², so the estimated density is 12 plants/m². For a 120 m² site, the population estimate is 1,440 plants.",
+        "Invented counts 1,2,0,1,1,1 in area B give total 6, mean 1 and density 4 plants/m². If B covers 400 m², its estimate is 1,600 plants. A has greater sampled density while the larger B has the greater estimated total; density and population size are different quantities.",
+        "These few invented readings demonstrate the arithmetic, not a reliable field survey or exact population census. Clumped growth, sampling coverage, site boundaries and identification affect uncertainty. For overlapping plants, percentage cover may be more meaningful than uncertain individual counts; cover cannot simply be converted to organism number."
+      ],
+      "example": {
+        "question": "Calculate the two illustrative densities and explain why the larger site can have more plants despite lower density.",
+        "steps": [
+          "A:18/6=3 per 0.25 m² →12/m²;12×120=1,440 estimated.",
+          "B:6/6=1 per 0.25 m² →4/m²;4×400=1,600 estimated.",
+          "Keep density and whole-site area separate; do not label these invented estimates actual populations."
+        ],
+        "explanation": "Use both area units and the sampled mean; an estimate is not a census."
+      },
+      "practice": {
+        "question": "A mean of 2 plants in a 0.25 m² quadrat is applied to 75 m². Estimate the population.",
+        "answer": "Density 2/0.25=8 plants/m²;8×75=600 plants, subject to representative sampling.",
+        "explanation": "Use both area units and the sampled mean; an estimate is not a census."
+      },
+      "terms": [
+        "mean count",
+        "quadrat area",
+        "density",
+        "population estimate",
+        "sampling uncertainty"
+      ],
+      "commonMistakes": [
+        "Do not multiply count-per-frame by square metres without first accounting for frame area."
+      ]
+    },
+    {
+      "id": "biodiversity-richness-evenness",
+      "title": "Distinguish biodiversity from abundance",
+      "points": [
+        "4.3B",
+        "4.4B"
+      ],
+      "paragraphs": [
+        "Biodiversity is the variety of living organisms. Species diversity concerns the different species and their relative abundance in a defined area; genetic variation within species and variety of ecosystems are broader aspects. Counting many individuals of one species does not establish high species diversity.",
+        "Species richness is the number of species recorded. Evenness describes how individuals are distributed among those species. Original samples containing species counts 8,8,8 and 22,1,1 both have richness 3 and total 24, but the first is more even. State which measure you are comparing rather than claiming richness alone captures everything.",
+        "A quadrat survey for plant diversity must identify all relevant plant species within each frame, not only the focal species used for a population estimate. Combine consistent observations across comparable sampling effort and note species that cannot be confidently identified.",
+        "Frequency is the percentage of quadrats containing a species: occupied quadrats / total quadrats ×100. Presence in 3 of 8 frames gives 37.5% frequency. This is not 37.5% of all individual plants and is not automatically 37.5% ground cover. One frame containing 20 individuals still counts as one occupied frame."
+      ],
+      "example": {
+        "question": "Compare richness and evenness of invented counts 8,8,8 versus 22,1,1.",
+        "steps": [
+          "Both contain three recorded species.",
+          "Both contain 24 individuals, but the first is more even.",
+          "Report richness and relative abundances; larger total abundance alone is not higher biodiversity."
+        ],
+        "explanation": "Name the metric, denominator and sampling scope."
+      },
+      "practice": {
+        "question": "A species occurs in 3 of 8 quadrats. What is its sample frequency?",
+        "answer": "3/8×100=37.5%; this concerns occupied quadrats, not individual-count share or ground cover.",
+        "explanation": "Name the metric, denominator and sampling scope."
+      },
+      "terms": [
+        "biodiversity",
+        "species richness",
+        "evenness",
+        "relative abundance",
+        "frequency",
+        "percentage cover"
+      ],
+      "commonMistakes": [
+        "Do not call total individual count richness, equate presence frequency with cover or infer absent-from-habitat from one missed sample."
+      ]
+    },
+    {
+      "id": "quadrat-distribution-transect",
+      "title": "Investigate distribution along a gradient",
+      "points": [
+        "4.4B"
+      ],
+      "paragraphs": [
+        "Random quadrats estimate how a species or community is represented across a defined area. When the question asks how distribution changes with a gradient such as distance from shade, a transect gives positions along that gradient.",
+        "Lay a line through the defined gradient and place the same quadrat at stated intervals for an interrupted belt transect. Record distance, each species’ count or cover using one consistent metric, and environmental readings such as light or soil moisture at each station. Repeat with separate transects to assess whether one line is typical.",
+        "Plot abundance or cover against distance and compare richness/relative abundance where needed. An association with decreasing light suggests a possible relationship, but moisture, competition, soil and past management can change along the same line. Correlation does not isolate light as the cause.",
+        "Use comparable season, observation method and identification across stations. Closely neighbouring frames can be related rather than fully independent. Record uncertainty and spatial replication; no transect readings have been collected for this lesson."
+      ],
+      "example": {
+        "question": "Choose a sampling approach for plant distribution from an open edge into woodland shade.",
+        "steps": [
+          "A transect follows the environmental gradient.",
+          "Place known-size frames at defined intervals and record distance, abundance and light readings.",
+          "Repeat separate lines and consider other changing conditions before claiming causation."
+        ],
+        "explanation": "Match the sampling design to the question and preserve its limits."
+      },
+      "practice": {
+        "question": "Does placing frames at equal intervals make a transect a random area sample?",
+        "answer": "No. It is systematic sampling along a selected line, useful for a gradient but not automatically representative of the entire area.",
+        "explanation": "Match the sampling design to the question and preserve its limits."
+      },
+      "terms": [
+        "transect",
+        "gradient",
+        "systematic sampling",
+        "station",
+        "distribution",
+        "correlation"
+      ],
+      "commonMistakes": [
+        "Do not treat one selected transect as unbiased coverage of every habitat patch or a correlation as proof of one cause."
+      ],
+      "practical": {
+        "apparatus": [
+          "Tape/line and known-size quadrat",
+          "Identification key",
+          "Suitable light/moisture measuring equipment",
+          "Recording sheet"
+        ],
+        "method": [
+          "Define the gradient and select the transect route with its limitations recorded.",
+          "Place frames at stated distances; record all relevant species with one count/cover metric.",
+          "Measure the selected abiotic conditions with a consistent calibrated procedure.",
+          "Repeat separate transects and plot the observations against distance."
+        ],
+        "variables": [
+          "Distance/conditions vary observationally.",
+          "Keep frame size, metric, species identification and observation timing comparable."
+        ],
+        "safety": [
+          "Work only in authorised accessible areas under the fieldwork plan; minimise disturbance."
+        ],
+        "quality": [
+          "Report all stations and missing/uncertain identifications.",
+          "Use spatial replication and consider correlated frames/confounding factors.",
+          "Proposed investigation, not completed biodiversity measurement."
+        ]
+      }
+    },
+    {
+      "id": "abiotic-biotic-population-factors",
+      "title": "Explain population size and distribution",
+      "points": [
+        "4.5"
+      ],
+      "paragraphs": [
+        "Abiotic factors are non-living conditions such as light, temperature, water availability, oxygen, pH and mineral supply. They can change growth, survival or reproduction; a species may be scarce where a required condition is outside its tolerated range.",
+        "Biotic factors involve living organisms: competition for resources, predation, disease and access to food or pollinators. Competition can be within the same species or between species. A change in one population can affect others through their interactions.",
+        "Population size concerns how many are present in the stated area/time; distribution concerns where they occur. The same total number can be clustered in a wet patch rather than spread evenly. Immigration/emigration can also change the local count without changing births or deaths.",
+        "Explain a mechanism appropriate to the species and conditions. More light need not always increase abundance because water, temperature or competition may limit growth. Observational site differences need controls, recorded confounders and independent replication before supporting a causal conclusion."
+      ],
+      "example": {
+        "question": "Explain a possible patchy plant distribution in a dry field with a wetter corner.",
+        "steps": [
+          "Water availability is an abiotic factor.",
+          "If water limits this species’ establishment or growth, the wetter patch can support more individuals.",
+          "Record other conditions; the pattern alone does not prove water is the only cause."
+        ],
+        "explanation": "Classify the factor, link it to survival/reproduction or movement and state the evidence limit."
+      },
+      "practice": {
+        "question": "Is predation abiotic because it can kill an organism?",
+        "answer": "No. It involves interactions between living organisms and is biotic.",
+        "explanation": "Classify the factor, link it to survival/reproduction or movement and state the evidence limit."
+      },
+      "terms": [
+        "abiotic factor",
+        "biotic factor",
+        "competition",
+        "predation",
+        "disease",
+        "distribution",
+        "limiting factor"
+      ],
+      "commonMistakes": [
+        "Do not list factors without explaining a mechanism or assume every increase in one resource improves every population."
+      ]
+    },
+    {
+      "id": "trophic-roles-decomposers",
+      "title": "Name trophic roles without placing decomposers last",
+      "points": [
+        "4.6"
+      ],
+      "paragraphs": [
+        "A producer makes organic substances from inorganic material; green plants and algae usually use light energy in the school examples. Producers are not creating energy from nothing: photosynthesis transfers energy into chemical stores.",
+        "A primary consumer feeds on producers. A secondary consumer feeds on primary consumers, and a tertiary consumer feeds on secondary consumers. Trophic level is the feeding position along a specified chain, not a permanent label determined only by an animal’s name.",
+        "An omnivore can feed at more than one trophic level in a web. If an animal eats both a plant and an herbivore, it acts as a primary consumer along the plant link and a secondary consumer along the herbivore link.",
+        "Decomposers such as many fungi and bacteria break down dead material and waste, releasing absorbable products and helping return mineral substances. They receive material from several trophic levels, so they are not simply a final consumer after every apex predator. Detritivores that ingest fragments and decomposers are related but distinct roles."
+      ],
+      "example": {
+        "question": "For a stated plant→herbivore→small predator→larger predator chain, name the four roles.",
+        "steps": [
+          "Plant:producer.",
+          "Herbivore:primary consumer; small predator:secondary consumer.",
+          "Larger predator:tertiary consumer on this chain; decomposers can receive waste/dead material from all levels."
+        ],
+        "explanation": "Read the feeding link before assigning a level."
+      },
+      "practice": {
+        "question": "Must an omnivore occupy one fixed trophic level?",
+        "answer": "No. Its position depends on which food pathway in the web is being followed.",
+        "explanation": "Read the feeding link before assigning a level."
+      },
+      "terms": [
+        "producer",
+        "primary consumer",
+        "secondary consumer",
+        "tertiary consumer",
+        "omnivore",
+        "decomposer",
+        "detritivore"
+      ],
+      "commonMistakes": [
+        "Do not put decomposers only at the top or say producers manufacture new energy."
+      ]
+    },
+    {
+      "id": "food-chain-web-arrows",
+      "title": "Follow food-web arrows towards the consumer",
+      "points": [
+        "4.7",
+        "4.8"
+      ],
+      "paragraphs": [
+        "In the standard food-chain convention, an arrow points from the organism eaten to the organism receiving its substances and stored chemical energy. Thus plant→herbivore means the herbivore eats the plant, not the plant eats the herbivore.",
+        "A food chain follows one sequence. A food web joins multiple sequences and can include alternative prey and omnivory. The arrow is a transfer relationship, not simply the direction of an animal’s movement or a statement about population size.",
+        "In an original hypothetical web, producer P feeds herbivores H1 and H2; both feed consumer C. Removing H1 can reduce one food source for C, but H2 is an alternative. It can also reduce competition affecting H2. The direction and size of a real population change require information about diet, limitations and other interactions.",
+        "Organic substances and their chemical energy enter the consumer through feeding. Some material is not eaten or absorbed, and energy is transferred to the surroundings during metabolism. Matter can later cycle; energy is not continually recycled from consumers back to producers as sunlight."
+      ],
+      "example": {
+        "question": "For P→H1→C and P→H2→C, describe the direct effect of losing H1 without claiming a guaranteed outcome.",
+        "steps": [
+          "C loses one feeding pathway.",
+          "H2 still supplies a potential alternative.",
+          "State a possible food limitation but allow competition/diet and other conditions to affect the actual result."
+        ],
+        "explanation": "Interpret the arrow and separate a direct link from an unproved whole-web forecast."
+      },
+      "practice": {
+        "question": "Which way should an arrow point when a caterpillar eats a leaf?",
+        "answer": "From the leaf/plant towards the caterpillar, indicating transfer to the consumer.",
+        "explanation": "Interpret the arrow and separate a direct link from an unproved whole-web forecast."
+      },
+      "terms": [
+        "food chain",
+        "food web",
+        "feeding arrow",
+        "alternative prey",
+        "chemical energy",
+        "substance transfer"
+      ],
+      "commonMistakes": [
+        "Do not reverse arrows or predict exact population changes from one link without further information."
+      ]
+    },
+    {
+      "id": "pyramids-number-biomass",
+      "title": "Choose the quantity represented by a pyramid",
+      "points": [
+        "4.7"
+      ],
+      "paragraphs": [
+        "A pyramid of numbers represents individual counts at each trophic level in a defined area/time. Bar widths should reflect counts, not the size of an individual. A single large tree can support many herbivorous insects, so a numbers pyramid need not be upright.",
+        "A pyramid of biomass represents total biological mass at each level, often dry mass per unit area at a specified time. Dry mass avoids confusing water content with organic material. The measurement’s organism scope and sampling method must be stated.",
+        "Standing biomass is a snapshot, not the rate of production. Rapidly growing and rapidly eaten phytoplankton can support a greater standing consumer biomass, giving an inverted biomass pyramid without creating energy. Turnover through time matters.",
+        "Do not substitute a numbers pyramid for biomass or infer biomass by assuming all organisms have the same size. To compare levels, keep the study area, units and measurement time consistent; unfamiliar real diagrams and full assessment are still pending."
+      ],
+      "example": {
+        "question": "Why can one tree supporting many herbivorous insects invert a numbers pyramid?",
+        "steps": [
+          "The producer count is one, regardless of its large mass.",
+          "The primary-consumer count can be many.",
+          "A biomass comparison asks a different question and needs mass evidence."
+        ],
+        "explanation": "Name counts, mass or rate before interpreting a shape."
+      },
+      "practice": {
+        "question": "Does low producer standing biomass prove low producer productivity?",
+        "answer": "No. Rapid production and consumption can keep standing biomass low while maintaining a high flow through the ecosystem.",
+        "explanation": "Name counts, mass or rate before interpreting a shape."
+      },
+      "terms": [
+        "pyramid of numbers",
+        "pyramid of biomass",
+        "dry mass",
+        "standing biomass",
+        "turnover",
+        "productivity"
+      ],
+      "commonMistakes": [
+        "Do not force every count/biomass pyramid upright or confuse a biomass snapshot with production over time."
+      ]
+    },
+    {
+      "id": "energy-pyramid-time-units",
+      "title": "Read energy pyramids with a matched interval",
+      "points": [
+        "4.7",
+        "4.9"
+      ],
+      "paragraphs": [
+        "An energy-transfer pyramid compares energy incorporated into new biomass at successive trophic levels for the same area and time interval. Suitable rate units are kJ/m²/year; a biomass snapshot in grams is a different measurement.",
+        "Under the stated comparable transfer model, the higher level receives only a fraction of the lower level’s production, so the energy pyramid is upright. Invented producer, primary-consumer, secondary-consumer values 1,000,120,12 kJ/m²/year decrease upwards.",
+        "Those invented values give 12% for the first transfer and 10% for the second, not one compulsory efficiency for every step. The specification’s about 10% is a useful approximation. Use supplied data when an exam asks for a calculation.",
+        "A shape drawn from unmatched areas or periods can mislead. Keep all trophic values on the same basis and do not place heat returned to the surroundings into a higher trophic level’s new biomass."
+      ],
+      "example": {
+        "question": "Calculate the two efficiencies from invented production rates 1,000→120→12.",
+        "steps": [
+          "120/1,000×100=12%.",
+          "12/120×100=10%.",
+          "Values concern matching area/time; draw decreasing bars upwards and label energy-rate units."
+        ],
+        "explanation": "Compare like quantities, then calculate each transfer separately."
+      },
+      "practice": {
+        "question": "Can an inverted standing-biomass pyramid prove an inverted energy-transfer pyramid?",
+        "answer": "No. Standing mass and energy production over a matched interval are different quantities.",
+        "explanation": "Compare like quantities, then calculate each transfer separately."
+      },
+      "terms": [
+        "energy pyramid",
+        "new biomass",
+        "energy transfer rate",
+        "matched interval",
+        "kJ per square metre per year"
+      ],
+      "commonMistakes": [
+        "Do not mix grams and kilojoules, compare different periods or force measured efficiencies to exactly 10%."
+      ]
+    },
+    {
+      "id": "trophic-energy-budget",
+      "title": "Account for energy not transferred to new consumer biomass",
+      "points": [
+        "4.8",
+        "4.9"
+      ],
+      "paragraphs": [
+        "Not all lower-level biomass is eaten. Of the material eaten, not all is digested and absorbed: some remains in faeces. Absorbed substances can be used in respiration and activity, with energy ultimately transferred as heat; only part becomes new consumer biomass available to a further level.",
+        "Original invented matched-interval budget: the lower level produces 1,000 energy units. Uneaten material contains 400 units, leaving 600 ingested. Unabsorbed material contains 180, leaving 420 absorbed. Respiration accounts for 300, leaving 120 in new consumer biomass.",
+        "The balance is 400+180+300+120=1,000. Uneaten material and faeces still contain chemical energy that can enter decomposer pathways; they are not already all heat. The respiratory 300 ultimately transfer energy to the surroundings and are not part of consumer growth.",
+        "The example assumes no additional unrecorded storage or pathways over the matched interval. It is a teaching budget, not observed ecological data. Energy is conserved overall; “lost” here means unavailable as new biomass in the next feeding level, not destroyed."
+      ],
+      "example": {
+        "question": "Use the invented budget to explain the 120 units in new consumer biomass.",
+        "steps": [
+          "1,000−400=600 eaten.",
+          "600−180=420 absorbed.",
+          "420−300=120 new biomass;400+180+300+120 reconciles the starting 1,000."
+        ],
+        "explanation": "Track compartments and distinguish organic material pathways from heat transfer."
+      },
+      "practice": {
+        "question": "Are all units in uneaten material and faeces already dissipated as heat?",
+        "answer": "No. They still contain chemical energy that may pass into decomposer pathways.",
+        "explanation": "Track compartments and distinguish organic material pathways from heat transfer."
+      },
+      "terms": [
+        "ingestion",
+        "egestion",
+        "absorption",
+        "respiration",
+        "new biomass",
+        "energy balance",
+        "decomposer pathway"
+      ],
+      "commonMistakes": [
+        "Do not destroy energy, count respired energy again as growth or describe all untransferred biomass energy as already heat."
+      ],
+      "diagram": {
+        "src": "/diagrams/biology-trophic-energy-budget.svg",
+        "alt": "Original assumed energy budget:1000 lower-level production,400 uneaten,600 eaten;180 unabsorbed,420 absorbed;300 respired,120 new consumer biomass; transfer efficiency 12%.",
+        "caption": "Assumed matched-interval units, not field data. 400+180+300+120=1,000; uneaten and egested material can enter decomposer pathways."
+      }
+    },
+    {
+      "id": "trophic-transfer-efficiency",
+      "title": "Use the correct efficiency denominator",
+      "points": [
+        "4.9"
+      ],
+      "paragraphs": [
+        "For transfer between trophic levels, efficiency = energy in new biomass at the higher level / energy production at the preceding level ×100. Both quantities must refer to the same area and interval; state what the supplied values measure.",
+        "In the invented budget,120/1,000×100=12% trophic transfer efficiency. Dividing by 600 ingested gives 20%, but that is a different within-consumer comparison. Dividing absorbed 420 by ingested 600 gives 70% absorption efficiency, also not the trophic transfer asked for.",
+        "Low transfer reflects uneaten and unabsorbed material plus metabolic energy transferred as heat. Repeated small transfers help explain why less energy is available at higher levels and why many food chains have a limited number of levels; it is not a universal fixed maximum number of organisms or levels.",
+        "If a question explicitly assumes 10% at each stage, two transfers retain 0.1×0.1=0.01, or 1% of the initial production. Without that assumption, calculate from the supplied rates rather than importing the rule."
+      ],
+      "example": {
+        "question": "Find trophic efficiency when invented lower/higher production is 5,000 and 650 matching units.",
+        "steps": [
+          "Higher divided by preceding level:650/5,000.",
+          "Multiply by 100 to obtain 13%.",
+          "About 10% is not a reason to replace the calculated 13%."
+        ],
+        "explanation": "Name the denominator and check whether a percentage refers to trophic transfer, absorption or growth."
+      },
+      "practice": {
+        "question": "At an explicitly assumed 10% for each of two transfers, what fraction of initial production remains?",
+        "answer": "0.1×0.1=0.01=1%; this is a two-step model assumption, not a measured universal value.",
+        "explanation": "Name the denominator and check whether a percentage refers to trophic transfer, absorption or growth."
+      },
+      "terms": [
+        "transfer efficiency",
+        "percentage",
+        "denominator",
+        "energy conservation",
+        "successive transfer"
+      ],
+      "commonMistakes": [
+        "Do not add transfer percentages across stages or divide by ingested energy when the question asks for lower-level production."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "date": "2026-10-05",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Own 4BI1 Issue 3 PDF29/printed23: Ecology 4.1–4.9. Focused quality review of six existing Physics/Maths lessons; not a whole-site semantic certification.",
+  "sourcePage": 29,
+  "printedPage": 23,
+  "sourceSha256": "9f474a0ef0e93ef3c3107b568956d163454cdb476bb2017189e8dd12c0d58cef",
+  "newSections": 12,
+  "newIdentities": 9,
+  "localRequirements": 38,
+  "partialTeachingLinks": 16,
+  "checks": [
+    "4.3B and 4.4B only 2B; all other new identities both 1B/2B. All audits and teaching remain partial.",
+    "Random quadrat placement, boundaries, zeros, consistent organism rules, replication and spatial sampling are explicit; transects answer gradient questions. Both field plans are proposed, not performed.",
+    "Richness and evenness distinguished from wider biodiversity; frequency is occupied frames, not abundance or cover. No universal minimum sample size adopted.",
+    "Food-web arrows point from eaten to eater. Decomposers receive material from multiple levels, not just the last predator.",
+    "Standing biomass and production rate distinguished; energy pyramids compare the same area/time. Transfer efficiency is calculated, not always 10%.",
+    "Original energy budget reconciles uneaten, egested, respired and new consumer biomass. Organic matter retains chemical energy; respiration ultimately dissipates heat.",
+    "Short-section scan used only to choose review candidates. Eleven existing short sections read: five clinical sections kept because they already explain causes and limits; three thermal, two Maths and one magnitude section improved. Four English reading sections also read; broad scope remains unfinished.",
+    "Thermal observations, density/convection mechanism, controls and physical inference now linked. Wavelength-dependent surface behaviour qualified. Pie charts require a non-overlapping stated whole; exclusivity and independence distinguished. Same-band apparent and absolute magnitude rankings separated.",
+    "Five thermal worked-example ledger rows corrected after the evidence check caught stale empty example references. The original failing report is retained; final report has zero errors."
+  ],
+  "externalSources": [
+    {
+      "url": "https://www.field-studies-council.org/resources/16-18-biology/fieldwork-%20techniques/vegetation-sampling/using-quadrats/",
+      "scope": "Quadrat placement and frequency method; surrounding worked fraction typo and universal sample minimum not adopted."
+    },
+    {
+      "url": "https://www.field-studies-council.org/resources/16-18-biology/fieldwork-techniques/vegetation-sampling/transects/",
+      "scope": "Gradient sampling and repeated transects."
+    },
+    {
+      "url": "https://openstax.org/books/biology-2e/pages/44-1-the-scope-of-ecology",
+      "scope": "Organisation and population factors."
+    },
+    {
+      "url": "https://openstax.org/books/biology-2e/pages/46-2-energy-flow-through-ecosystems",
+      "scope": "Feeding relationships, pyramids and turnover; surrounding inconsistent example arithmetic and blanket 10% claims not adopted."
+    },
+    {
+      "url": "https://openstax.org/books/biology-2e/pages/47-1-the-biodiversity-crisis",
+      "scope": "Biodiversity dimensions; no current prevalence statistics adopted."
+    },
+    {
+      "url": "https://openstax.org/books/physics/pages/11-2-heat-specific-heat-and-heat-transfer",
+      "scope": "Heat transfer and temperature response; surrounding white-surface all-IR shorthand and insulation/heat-capacity shortcuts not adopted."
+    },
+    {
+      "url": "https://www.nasa.gov/smallsat-institute/sst-soa/thermal-control/",
+      "scope": "Section7.2.1 separately treats solar absorptivity and infrared emissivity; white radiator paint can have low solar absorption and high IR emission. No surrounding spectral cutoff or engineering data imported."
+    },
+    {
+      "url": "https://openstax.org/books/introductory-statistics-2e/pages/3-2-independent-and-mutually-exclusive-events",
+      "scope": "Definitions; original fair-die enumeration supplies the lesson arithmetic."
+    },
+    {
+      "url": "https://openstax.org/books/introductory-statistics-2e/pages/1-2-data-sampling-and-variation-in-data-and-sampling",
+      "scope": "Pie-chart whole and categories; no published dataset reused."
+    },
+    {
+      "url": "https://voyages.sdss.org/skyserver/advanced-projects/the-hertzsprung-russell-diagram/a-simple-h-r-diagram/",
+      "scope": "Absolute magnitude at 10pc; surrounding erroneous apparent/intrinsic shorthand not adopted, no catalogue values copied."
+    }
+  ],
+  "independentExamples": {
+    "quadratA": {
+      "counts": [
+        2,
+        4,
+        3,
+        5,
+        1,
+        3
+      ],
+      "mean": 3,
+      "densityPerM2": 12,
+      "estimatedSiteTotal": 1440
+    },
+    "quadratB": {
+      "counts": [
+        1,
+        2,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mean": 1,
+      "densityPerM2": 4,
+      "estimatedSiteTotal": 1600
+    },
+    "frequencyPercent": 37.5,
+    "energyBudget": {
+      "input": 1000,
+      "uneaten": 400,
+      "egested": 180,
+      "respired": 300,
+      "newBiomass": 120,
+      "ingested": 600,
+      "absorbed": 420
+    },
+    "efficiencyPercent": [
+      12,
+      20,
+      70,
+      13
+    ],
+    "thermalRisesC": [
+      [
+        12,
+        7
+      ],
+      [
+        11,
+        6
+      ],
+      [
+        6,
+        8
+      ]
+    ],
+    "pieComparisonCounts": [
+      20,
+      25
+    ],
+    "independentDiceJoint": "1/12",
+    "runtimeActivated": false
+  },
+  "browser": {
+    "desktopWidth": 1280,
+    "documentWidth": 1280,
+    "ecologyAnchorTop": 23.890625,
+    "energyDiagramWidth": 600,
+    "energyDiagramLoaded": true,
+    "ecologyScreenshot": "work/biology-energy-budget-proof-2026-10-05.png",
+    "thermalScreenshot": "work/thermal-quality-proof-2026-10-05.png",
+    "thermalAnchorTop": 23.984375,
+    "magnitudeAnchorTop": 23.8828125,
+    "search": "Biology quadrat query returned the new method/density/diversity/scales/transect links.",
+    "coverage": "147 Biology identities/569 requirements and all new component labels verified; all partial.",
+    "narrowVerification": "Pending: earlier override did not apply and was reset."
+  },
+  "verification": {
+    "applicationTests": 133,
+    "typecheck": "pass",
+    "lint": "pass",
+    "researchChecks": 14,
+    "content": "pass:573 sections/25 partial documents",
+    "evidenceErrors": [],
+    "isolatedD1": "pass after semantic quality edits; subsequent spacing-only polish did not alter seed shape",
+    "productionBuild": "pass after final text polish",
+    "publicFiles": 83,
+    "publicFindings": [],
+    "buildWarning": "Some generated client chunks exceed 500kB; performance review remains pending."
+  },
+  "remaining": [
+    "Ecology cycles/human influences and resources",
+    "Wider curriculum and whole chapter/assessment reviews",
+    "Historical applicability and whole-paper skills audits",
+    "Independent response/demand calibration and active template bank",
+    "Narrow browser verification and client bundle performance review",
+    "AI integration last, then Sites version/deployment verification"
+  ],
+  "completeChapters": 0,
+  "completePoints": 0,
+  "fullyProcessedPapers": 0,
+  "activeTemplates": 0
+}

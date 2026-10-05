@@ -254,7 +254,9 @@
         "fair test"
       ],
       "paragraphs": [
-        "Compare equal-sized rods of different materials heated in the same way. Measure temperature at the same distance from the heated end after equal times. This school comparison indicates thermal response; without controlling heat capacity and losses it is not a precise measurement of thermal conductivity."
+        "Compare equal-sized rods of different materials heated in the same way. Measure temperature at the same distance from the heated end after equal times. This school comparison indicates thermal response; without controlling heat capacity and losses it is not a precise measurement of thermal conductivity.",
+        "Plot temperature at the probe against elapsed time and compare readings at the same times. A larger or earlier rise shows a faster local temperature response in this arrangement. It does not by itself establish how much energy entered the entire rod: mass, specific heat capacity, contact and heat losses also matter.",
+        "Conduction transfers energy through interactions in the rod without the solid travelling to the probe. In metals, mobile electrons contribute. Repeated readings and the same geometry/probe contact help separate a consistent response from an accidental contact difference."
       ],
       "practical": {
         "apparatus": [
@@ -283,7 +285,21 @@
       "commonMistakes": [
         "Comparing rods of different thickness without accounting for geometry.",
         "Treating the time to warm as a measurement of heat alone."
-      ]
+      ],
+      "example": {
+        "question": "Original assumed readings: two same-sized rods start at 22°C. After the same heating interval, the probes read 34°C for A and 29°C for B. What does this establish?",
+        "steps": [
+          "A rises 34 − 22 = 12°C; B rises 29 − 22 = 7°C.",
+          "A has the greater local temperature rise under these conditions.",
+          "Do not report an exact conductivity or energy ratio from this transient comparison; heat capacity, contact and losses remain relevant."
+        ],
+        "explanation": "The readings support a measured temperature response, with a limited inference about material heat transfer. They are invented examples, not results of a performed experiment."
+      },
+      "practice": {
+        "question": "Why should the probes be attached at the same distance from the heated end?",
+        "answer": "Probe position changes the route length and local temperature response. Unequal distances would confound the material comparison.",
+        "explanation": "State how a control affects the measurement, rather than listing controls without a reason."
+      }
     },
     {
       "id": "thermal-practical-convection",
@@ -298,7 +314,9 @@
         "water circulation"
       ],
       "paragraphs": [
-        "A small amount of visible dye can trace water movement. Heating gently near one lower side of a water-filled vessel can reveal a rising coloured stream and a return flow away from the heat source. The dye is a tracer: its motion shows water movement rather than displaying energy itself."
+        "A small amount of visible dye can trace water movement. Heating gently near one lower side of a water-filled vessel can reveal a rising coloured stream and a return flow away from the heat source. The dye is a tracer: its motion shows water movement rather than displaying energy itself.",
+        "In the ordinary warm-water conditions of this school demonstration, locally heated water expands and becomes less dense than surrounding cooler water. Buoyancy makes that warmer fluid rise; cooler water moves in, allowing a circulating current while the temperature difference is maintained.",
+        "The unheated comparison helps distinguish circulation associated with heating from diffusion or movement introduced by the pipette. Use a small tracer addition without stirring, record the observed path and avoid treating every coloured movement as proof that heating caused it. These instructions describe a proposed investigation, not a performed observation."
       ],
       "practical": {
         "apparatus": [
@@ -323,6 +341,20 @@
           "Avoid stirring when adding dye.",
           "Compare with unheated water: spreading by diffusion alone is not evidence of the same bulk circulation."
         ]
+      },
+      "example": {
+        "question": "In a proposed warmed vessel, a tracer rises beside the lower heater and returns down the cooler side. Explain the expected loop.",
+        "steps": [
+          "Locally warmed water normally expands and becomes less dense under these conditions.",
+          "It rises relative to cooler surroundings; cooler water moves to replace it.",
+          "Bulk fluid motion transfers energy around the vessel. The tracer follows the water; heat is not a coloured material."
+        ],
+        "explanation": "Connect the observation to density and circulation, and compare with an unheated control before attributing movement to heating."
+      },
+      "practice": {
+        "question": "Dye spreads slowly in an unheated vessel. Does that alone demonstrate the same heating-driven convection loop?",
+        "answer": "No. Diffusion or disturbance from adding dye can spread colour without the stated buoyancy-driven loop. Compare direction, circulation and the heating condition.",
+        "explanation": "Colour movement is evidence to interpret, not a direct display of energy."
       }
     },
     {
@@ -339,7 +371,9 @@
         "temperature rise"
       ],
       "paragraphs": [
-        "Expose otherwise matched dull-black and shiny surfaces to the same infrared source and compare temperature rise over a fixed time. Keep mass, material and position the same, because these also affect the temperature response. This arrangement compares absorption under external illumination; a cooling experiment instead investigates emission."
+        "Expose otherwise matched dull-black and shiny surfaces to the same infrared source and compare temperature rise over a fixed time. Keep mass, material and position the same, because these also affect the temperature response. This arrangement compares absorption under external illumination; a cooling experiment instead investigates emission.",
+        "Calculate the temperature change from each starting value, then compare equal exposure intervals. Dull-black and shiny finishes can differ in absorption under the stated infrared conditions. A net temperature rise also reflects energy lost by emission, conduction and convection, so it is not a direct measurement of absorptivity.",
+        "Keep the radiation source and surfaces specified. Visible colour alone does not establish a surface’s behaviour at every infrared wavelength. Repeating with positions swapped helps detect unequal illumination; a separate cooling comparison is needed to investigate emission rather than conflating the two tests."
       ],
       "practical": {
         "apparatus": [
@@ -368,7 +402,21 @@
       "commonMistakes": [
         "Calling a higher starting temperature evidence of better absorption.",
         "Explaining faster heating by greater emission."
-      ]
+      ],
+      "example": {
+        "question": "Original assumed matched-plate readings: both start at 20°C. After equal lamp exposure, dull-black reaches 31°C and shiny reaches 26°C. Compare the rises and the conclusion.",
+        "steps": [
+          "Dull-black: 31 − 20 = 11°C; shiny: 26 − 20 = 6°C.",
+          "The larger net rise is consistent with greater absorption by the dull-black surface if geometry, material, illumination and other conditions are comparable.",
+          "These readings do not give an exact absorption coefficient or show that all losses were radiation."
+        ],
+        "explanation": "Invented teaching data illustrate how to compare changes and limit the physical inference; no experiment has been performed."
+      },
+      "practice": {
+        "question": "A plate changes 23→29°C and another 19→27°C. Is the higher final temperature enough to claim better absorption?",
+        "answer": "No. Their rises are 6°C and 8°C, and unequal starting temperatures also make the comparison unfair. Match starting conditions and other controls before drawing the absorption conclusion.",
+        "explanation": "Subtract each starting value and identify the confound; neither final temperature nor these unmatched changes isolate absorptivity."
+      }
     },
     {
       "id": "work-and-energy",
@@ -636,6 +684,17 @@
         "Do not put the distance along the slope into mgh.",
         "Constant speed does not mean no energy transfer.",
         "Do not set useful output equal to total supplied work when energy is dissipated."
+      ]
+    }
+  ],
+  "supportingSources": [
+    {
+      "title": "OpenStax Physics: temperature response and heat-transfer mechanisms",
+      "url": "https://openstax.org/books/physics/pages/11-2-heat-specific-heat-and-heat-transfer",
+      "sectionIds": [
+        "thermal-practical-conduction",
+        "thermal-practical-convection",
+        "thermal-practical-radiation"
       ]
     }
   ]

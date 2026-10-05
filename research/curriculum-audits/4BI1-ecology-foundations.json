@@ -1,0 +1,807 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4BI1",
+  "chapterId": "ecology",
+  "documentId": "4BI1-spec",
+  "specificationIssue": "Issue 3 - September 2024",
+  "documentSha256": "9f474a0ef0e93ef3c3107b568956d163454cdb476bb2017189e8dd12c0d58cef",
+  "reviewDate": "2026-10-05",
+  "reviewer": "Codex source/logic review",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Own4BI1Issue3PDF29/printed23:4.1–4.9,only4.3B/4.4B2B-only. Twelve original partial lessons,proposed unperformed sampling methods and invented arithmetic/energy budget. Cycles4.10–4.11B,human influences4.12–4.18B,unfamiliar assessment and independent calibration/full point audit unfinished.",
+  "identifierPolicy": "Local r clauses are editorial teaching requirements, not publisher-numbered substatements.",
+  "notePath": "content/notes/biology-ecology.json",
+  "parents": [
+    {
+      "parentId": "4BI1:issue3:4.1",
+      "officialReference": "4.1",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "1B",
+        "2B"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Own4BI1Issue3PDF29/printed23:4.1–4.9,only4.3B/4.4B2B-only. Twelve original partial lessons,proposed unperformed sampling methods and invented arithmetic/energy budget. Cycles4.10–4.11B,human influences4.12–4.18B,unfamiliar assessment and independent calibration/full point audit unfinished.",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:4.1:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Population one species/area/time;community different populations.",
+          "teachingEvidence": [
+            {
+              "sectionId": "ecological-scales",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        },
+        {
+          "id": "4BI1:issue3:4.1:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Habitat place;ecosystem biotic/abiotic interactions.",
+          "teachingEvidence": [
+            {
+              "sectionId": "ecological-scales",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        },
+        {
+          "id": "4BI1:issue3:4.1:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Defined boundary/time and local demographic change.",
+          "teachingEvidence": [
+            {
+              "sectionId": "ecological-scales",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4BI1:issue3:4.2",
+      "officialReference": "4.2",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "1B",
+        "2B"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Own4BI1Issue3PDF29/printed23:4.1–4.9,only4.3B/4.4B2B-only. Twelve original partial lessons,proposed unperformed sampling methods and invented arithmetic/energy budget. Cycles4.10–4.11B,human influences4.12–4.18B,unfamiliar assessment and independent calibration/full point audit unfinished.",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:4.2:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Known area,appropriate organism,consistent identification/border rule.",
+          "teachingEvidence": [
+            {
+              "sectionId": "quadrat-two-area-method",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        },
+        {
+          "id": "4BI1:issue3:4.2:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Random valid coordinates,recorded exclusions and retained zeros.",
+          "teachingEvidence": [
+            {
+              "sectionId": "quadrat-two-area-method",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        },
+        {
+          "id": "4BI1:issue3:4.2:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Comparable procedure,patchiness/variation and independent-site limits.",
+          "teachingEvidence": [
+            {
+              "sectionId": "quadrat-two-area-method",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        },
+        {
+          "id": "4BI1:issue3:4.2:r4",
+          "origin": "editorial-decomposition",
+          "summary": "Mean/frame area→density→site area→population estimate,matching units.",
+          "teachingEvidence": [
+            {
+              "sectionId": "quadrat-density-population-estimate",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        },
+        {
+          "id": "4BI1:issue3:4.2:r5",
+          "origin": "editorial-decomposition",
+          "summary": "Invented two-site arithmetic,estimate uncertainty and density/total distinction.",
+          "teachingEvidence": [
+            {
+              "sectionId": "quadrat-density-population-estimate",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4BI1:issue3:4.3B",
+      "officialReference": "4.3B",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "2B"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Own4BI1Issue3PDF29/printed23:4.1–4.9,only4.3B/4.4B2B-only. Twelve original partial lessons,proposed unperformed sampling methods and invented arithmetic/energy budget. Cycles4.10–4.11B,human influences4.12–4.18B,unfamiliar assessment and independent calibration/full point audit unfinished.",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:4.3B:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Variety of organisms with broader genetic/ecosystem context.",
+          "teachingEvidence": [
+            {
+              "sectionId": "biodiversity-richness-evenness",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        },
+        {
+          "id": "4BI1:issue3:4.3B:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Richness versus evenness/relative abundance,not total individuals.",
+          "teachingEvidence": [
+            {
+              "sectionId": "biodiversity-richness-evenness",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        },
+        {
+          "id": "4BI1:issue3:4.3B:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Original equal-richness contrasting-evenness example.",
+          "teachingEvidence": [
+            {
+              "sectionId": "biodiversity-richness-evenness",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4BI1:issue3:4.4B",
+      "officialReference": "4.4B",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "2B"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Own4BI1Issue3PDF29/printed23:4.1–4.9,only4.3B/4.4B2B-only. Twelve original partial lessons,proposed unperformed sampling methods and invented arithmetic/energy budget. Cycles4.10–4.11B,human influences4.12–4.18B,unfamiliar assessment and independent calibration/full point audit unfinished.",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:4.4B:r1",
+          "origin": "editorial-decomposition",
+          "summary": "All relevant species identified with comparable effort and uncertainty.",
+          "teachingEvidence": [
+            {
+              "sectionId": "biodiversity-richness-evenness",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        },
+        {
+          "id": "4BI1:issue3:4.4B:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Presence frequency distinct from count share/cover.",
+          "teachingEvidence": [
+            {
+              "sectionId": "biodiversity-richness-evenness",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        },
+        {
+          "id": "4BI1:issue3:4.4B:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Transect/intervals/environmental readings matched to gradient question.",
+          "teachingEvidence": [
+            {
+              "sectionId": "quadrat-distribution-transect",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        },
+        {
+          "id": "4BI1:issue3:4.4B:r4",
+          "origin": "editorial-decomposition",
+          "summary": "Separate transects/spatial replication and correlated station limits.",
+          "teachingEvidence": [
+            {
+              "sectionId": "quadrat-distribution-transect",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        },
+        {
+          "id": "4BI1:issue3:4.4B:r5",
+          "origin": "editorial-decomposition",
+          "summary": "Plot distribution and discuss confounding,not causal proof.",
+          "teachingEvidence": [
+            {
+              "sectionId": "quadrat-distribution-transect",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4BI1:issue3:4.5",
+      "officialReference": "4.5",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "1B",
+        "2B"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Own4BI1Issue3PDF29/printed23:4.1–4.9,only4.3B/4.4B2B-only. Twelve original partial lessons,proposed unperformed sampling methods and invented arithmetic/energy budget. Cycles4.10–4.11B,human influences4.12–4.18B,unfamiliar assessment and independent calibration/full point audit unfinished.",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:4.5:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Light/water/temperature/oxygen/pH/minerals with species-dependent mechanisms.",
+          "teachingEvidence": [
+            {
+              "sectionId": "abiotic-biotic-population-factors",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        },
+        {
+          "id": "4BI1:issue3:4.5:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Competition/predation/disease/food/pollinator biotic interactions.",
+          "teachingEvidence": [
+            {
+              "sectionId": "abiotic-biotic-population-factors",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        },
+        {
+          "id": "4BI1:issue3:4.5:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Size versus pattern and immigration/emigration.",
+          "teachingEvidence": [
+            {
+              "sectionId": "abiotic-biotic-population-factors",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        },
+        {
+          "id": "4BI1:issue3:4.5:r4",
+          "origin": "editorial-decomposition",
+          "summary": "Limits/confounders and controlled evidence needed for causation.",
+          "teachingEvidence": [
+            {
+              "sectionId": "abiotic-biotic-population-factors",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4BI1:issue3:4.6",
+      "officialReference": "4.6",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "1B",
+        "2B"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Own4BI1Issue3PDF29/printed23:4.1–4.9,only4.3B/4.4B2B-only. Twelve original partial lessons,proposed unperformed sampling methods and invented arithmetic/energy budget. Cycles4.10–4.11B,human influences4.12–4.18B,unfamiliar assessment and independent calibration/full point audit unfinished.",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:4.6:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Producer uses energy to synthesise organic compounds.",
+          "teachingEvidence": [
+            {
+              "sectionId": "trophic-roles-decomposers",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        },
+        {
+          "id": "4BI1:issue3:4.6:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Primary/secondary/tertiary consumers depend on followed chain.",
+          "teachingEvidence": [
+            {
+              "sectionId": "trophic-roles-decomposers",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        },
+        {
+          "id": "4BI1:issue3:4.6:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Omnivore can occupy more than one level.",
+          "teachingEvidence": [
+            {
+              "sectionId": "trophic-roles-decomposers",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        },
+        {
+          "id": "4BI1:issue3:4.6:r4",
+          "origin": "editorial-decomposition",
+          "summary": "Decomposers receive material from multiple levels,not fixed final apex.",
+          "teachingEvidence": [
+            {
+              "sectionId": "trophic-roles-decomposers",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4BI1:issue3:4.7",
+      "officialReference": "4.7",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "1B",
+        "2B"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Own4BI1Issue3PDF29/printed23:4.1–4.9,only4.3B/4.4B2B-only. Twelve original partial lessons,proposed unperformed sampling methods and invented arithmetic/energy budget. Cycles4.10–4.11B,human influences4.12–4.18B,unfamiliar assessment and independent calibration/full point audit unfinished.",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:4.7:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Arrows eaten→consumer and chain versus joined web.",
+          "teachingEvidence": [
+            {
+              "sectionId": "food-chain-web-arrows",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        },
+        {
+          "id": "4BI1:issue3:4.7:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Alternative feeding links and uncertain indirect population effects.",
+          "teachingEvidence": [
+            {
+              "sectionId": "food-chain-web-arrows",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        },
+        {
+          "id": "4BI1:issue3:4.7:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Number count width and possible inversion with large producer.",
+          "teachingEvidence": [
+            {
+              "sectionId": "pyramids-number-biomass",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        },
+        {
+          "id": "4BI1:issue3:4.7:r4",
+          "origin": "editorial-decomposition",
+          "summary": "Standing dry biomass distinct from production/turnover and possible inversion.",
+          "teachingEvidence": [
+            {
+              "sectionId": "pyramids-number-biomass",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        },
+        {
+          "id": "4BI1:issue3:4.7:r5",
+          "origin": "editorial-decomposition",
+          "summary": "Energy new biomass rate on matching area/time basis,not grams.",
+          "teachingEvidence": [
+            {
+              "sectionId": "energy-pyramid-time-units",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        },
+        {
+          "id": "4BI1:issue3:4.7:r6",
+          "origin": "editorial-decomposition",
+          "summary": "Decreasing comparable energy values and conditional efficiencies.",
+          "teachingEvidence": [
+            {
+              "sectionId": "energy-pyramid-time-units",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4BI1:issue3:4.8",
+      "officialReference": "4.8",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "1B",
+        "2B"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Own4BI1Issue3PDF29/printed23:4.1–4.9,only4.3B/4.4B2B-only. Twelve original partial lessons,proposed unperformed sampling methods and invented arithmetic/energy budget. Cycles4.10–4.11B,human influences4.12–4.18B,unfamiliar assessment and independent calibration/full point audit unfinished.",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:4.8:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Feeding transfers organic substances/chemical energy eaten→consumer.",
+          "teachingEvidence": [
+            {
+              "sectionId": "food-chain-web-arrows",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        },
+        {
+          "id": "4BI1:issue3:4.8:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Matter cycling distinct from energy throughput/heat.",
+          "teachingEvidence": [
+            {
+              "sectionId": "food-chain-web-arrows",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        },
+        {
+          "id": "4BI1:issue3:4.8:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Ingestion/absorption/egestion/new biomass compartments.",
+          "teachingEvidence": [
+            {
+              "sectionId": "trophic-energy-budget",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        },
+        {
+          "id": "4BI1:issue3:4.8:r4",
+          "origin": "editorial-decomposition",
+          "summary": "Original budget conservation and organic decomposer paths versus heat.",
+          "teachingEvidence": [
+            {
+              "sectionId": "trophic-energy-budget",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4BI1:issue3:4.9",
+      "officialReference": "4.9",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "1B",
+        "2B"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Own4BI1Issue3PDF29/printed23:4.1–4.9,only4.3B/4.4B2B-only. Twelve original partial lessons,proposed unperformed sampling methods and invented arithmetic/energy budget. Cycles4.10–4.11B,human influences4.12–4.18B,unfamiliar assessment and independent calibration/full point audit unfinished.",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:4.9:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Uneaten/unabsorbed material plus respiration/metabolic heat limits new biomass.",
+          "teachingEvidence": [
+            {
+              "sectionId": "trophic-energy-budget",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        },
+        {
+          "id": "4BI1:issue3:4.9:r2",
+          "origin": "editorial-decomposition",
+          "summary": "About10%approximation distinguished from actual supplied rates.",
+          "teachingEvidence": [
+            {
+              "sectionId": "energy-pyramid-time-units",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        },
+        {
+          "id": "4BI1:issue3:4.9:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Higher production/preceding production with matching area/time.",
+          "teachingEvidence": [
+            {
+              "sectionId": "trophic-transfer-efficiency",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        },
+        {
+          "id": "4BI1:issue3:4.9:r4",
+          "origin": "editorial-decomposition",
+          "summary": "Original denominator alternatives and repeated-transfer multiplication.",
+          "teachingEvidence": [
+            {
+              "sectionId": "trophic-transfer-efficiency",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Unfamiliar fieldwork/food-web/pyramid data and independent response/demand calibration pending.",
+            "Cycles/human influences and whole point/chapter audits unfinished."
+          ]
+        }
+      ]
+    }
+  ],
+  "completeTeachingPoints": 0,
+  "completeChapters": 0
+}

@@ -61,10 +61,12 @@
       ],
       "paragraphs": [
         "A pie chart divides a full 360° circle into sectors. Sector angle = category frequency ÷ total frequency × 360°. Reverse this relation when an angle is given: category fraction = sector angle ÷ 360°.",
-        "Angles must total 360°, and the sector fractions must total 1. A larger sector represents a larger fraction; it does not reveal a count unless the total is also known."
+        "Angles must total 360°, and the sector fractions must total 1. A larger sector represents a larger fraction; it does not reveal a count unless the total is also known.",
+        "For a pie chart of people, the categories must account for the stated whole without counting one person in several sectors. In the travel example, each pupil reports one usual mode. A survey allowing several answers needs a different display or an explicitly defined whole of responses; its overlapping percentages are not sectors of one pupil total.",
+        "When comparing two pie charts, a larger sector means a larger proportion, not necessarily a larger count. An invented 50% of 40 people is 20, whereas 25% of 100 is 25. Check both group totals before deciding which category has more people; rounded sector angles should still represent a complete circle within the stated rounding tolerance."
       ],
       "example": {
-        "question": "There are 12 walkers, 18 bus users and 6 cyclists among 36 pupils. Find the three pie-chart angles.",
+        "question": "Original teaching data: 36 pupils each report one usual travel mode, counted exactly once: 12 walking, 18 bus and 6 cycling. Find the three pie-chart angles.",
         "steps": [
           "Walking: (12/36)×360° = 120°.",
           "Bus: (18/36)×360° = 180°.",
@@ -84,7 +86,8 @@
       ],
       "commonMistakes": [
         "Divide by the total before multiplying by 360°.",
-        "An angle alone does not determine the original population size."
+        "An angle alone does not determine the original population size.",
+        "Do not combine overlapping multiple-choice categories as exclusive sectors or compare absolute counts without the chart totals."
       ]
     },
     {
@@ -345,13 +348,15 @@
       ],
       "paragraphs": [
         "Mutually exclusive events cannot occur together in one trial. For such events, probability of A or B = probability of A + probability of B. The word or includes either event; ensure no outcome is counted twice.",
-        "If events overlap, straightforward addition double-counts the overlap. You can instead list and count their union in a sample space. Establish exclusivity from the events, not from their names."
+        "If events overlap, straightforward addition double-counts the overlap. You can instead list and count their union in a sample space. Establish exclusivity from the events, not from their names.",
+        "Mutually exclusive is different from independent. Exclusivity means the two events cannot happen together in the stated trial. Independence means learning that one happened does not change the chance of the other. On one fair die roll, “even” and “5” are exclusive; once 5 occurs, an even result is impossible, so these positive-probability events are not independent.",
+        "For contrast, on two independent fair rolls, “even on the first” and “5 on the second” can both occur. Their joint probability is (3/6) × (1/6) = 1/12. The multiplication follows the stated independence; it is not a rule for combining the exclusive events on one roll."
       ],
       "example": {
         "question": "A fair die is rolled. Find the probability of an even number or a 5.",
         "steps": [
-          "Even outcomes:2,4,6. Outcome 5 is separate.",
-          "The events are mutually exclusive, so probability=3/6+1/6=2/3."
+          "Even outcomes: 2, 4, 6. Outcome 5 is separate.",
+          "The events are mutually exclusive, so probability = 3/6 + 1/6 = 2/3."
         ],
         "explanation": "No roll can be both even and 5."
       },
@@ -364,11 +369,13 @@
         "mutually exclusive",
         "union",
         "addition rule",
-        "overlap"
+        "overlap",
+        "independence"
       ],
       "commonMistakes": [
         "Only use the simple addition rule when events cannot overlap.",
-        "Or is not the same as and."
+        "Or is not the same as and.",
+        "Do not use independent as a synonym for mutually exclusive, or multiply events without checking the relevant condition."
       ]
     },
     {
@@ -545,6 +552,22 @@
       "commonMistakes": [
         "Do not replace an expectation with an arbitrary whole number.",
         "Distinguish the expected count from a guaranteed outcome."
+      ]
+    }
+  ],
+  "supportingSources": [
+    {
+      "title": "OpenStax Statistics: categorical chart totals and overlapping categories",
+      "url": "https://openstax.org/books/introductory-statistics-2e/pages/1-2-data-sampling-and-variation-in-data-and-sampling",
+      "sectionIds": [
+        "pie-charts"
+      ]
+    },
+    {
+      "title": "OpenStax Statistics: independence and mutually exclusive events",
+      "url": "https://openstax.org/books/introductory-statistics-2e/pages/3-2-independent-and-mutually-exclusive-events",
+      "sectionIds": [
+        "mutually-exclusive-addition"
       ]
     }
   ]

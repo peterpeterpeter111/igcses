@@ -1,3 +1,9 @@
+# Latest phase — Ecology foundations and focused quality review, 5 October 2026
+
+Read `research/checkpoints/2026-10-05-ECOLOGY-AND-QUALITY.md` first. Twelve original Ecology lessons, nine partial identities4.1–4.9;4.3B/4.4B only2B. Six existing Physics/Maths lessons strengthened after a focused review; five thermal coverage-example references reconciled.133 tests, typecheck/lint/14 research checks/content/evidence/isolatedD1/final build/83-file public scan pass. Desktop diagram/search/coverage and revised readers verified; narrow preview and bundle performance review pending.
+
+Totals573 sections/25 partial notes/36 routes;559 identities/543 partial audits/1,619 local requirements/794 partial links. Seven obtained pairs, zero fully processed papers, complete chapters/points or active families; seven experimental offline prototypes. GitHub dffef77 exactly mirrors saved bd30331; commit/sync this newer phase non-force. Next Ecology cycles/human influences/resources, wider curriculum, historical/skills paper audits and independent calibration. Continue only above5% both allowances; checkpoint/pause at5%, no reset. Preserve UI/history and quality; AI last, no Sites version/deployment/public URL. Older entries are historical.
+
 # Latest phase — Biology mutation and selection, 5 October 2026
 
 Read `research/checkpoints/2026-10-05-BIOLOGY-MUTATION-SELECTION.md` first. Seven partial lessons/original selection diagram; own3.35B–3.37B only2B,3.38–3.39both. UV wording caveat explained; original counts10%→50%→50%, not observed results. Totals561sections/24partialnotes/36routes;550identities/534partialaudits/1,581requirements/778links.133tests,typecheck/lint/14research/content/evidence/isolatedD1/build/82-filepublicscan pass; desktopdiagram and exactcomponentlabels verified,narrowpending.

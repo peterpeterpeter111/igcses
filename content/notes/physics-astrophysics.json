@@ -246,7 +246,9 @@
       ],
       "paragraphs": [
         "Apparent magnitude describes observed brightness. Absolute magnitude is the magnitude a star would have at a standard distance of 10 parsecs. Putting stars at the same reference distance makes intrinsic brightness comparisons possible.",
-        "A smaller or more negative magnitude means a brighter star. Compare values in the same photometric band. Do not rank intrinsic brightness using apparent magnitude alone, because the stars may be at different distances."
+        "A smaller or more negative magnitude means a brighter star. Compare values in the same photometric band. Do not rank intrinsic brightness using apparent magnitude alone, because the stars may be at different distances.",
+        "The two rankings can differ. For original invented same-band values, A has apparent magnitude +1 and absolute magnitude +3, while B has apparent +2 and absolute −1. A appears brighter to the observer because +1 is smaller than +2; B is brighter at the standard 10-parsec comparison because −1 is smaller than +3.",
+        "Use the appropriate column for the question. Different distance and obscuration can affect observed brightness; absolute magnitude comparisons remove the distance difference in their definition. A magnitude alone does not identify a star’s mass, size or temperature, and a negative magnitude is not negative energy."
       ],
       "example": {
         "question": "Star A has absolute magnitude −2 and star B has +3 in the same band. Which would be brighter at the standard distance?",
@@ -256,14 +258,17 @@
         "explanation": "The magnitude scale runs in the opposite numerical direction from brightness."
       },
       "practice": {
-        "question": "Why introduce a standard distance?",
-        "answer": "To compare brightness without different distances causing the difference.",
-        "explanation": "Absolute and apparent magnitude answer different questions."
+        "question": "Using the invented A/B values above, which looks brighter to the observer and which is brighter at 10 parsecs?",
+        "answer": "A looks brighter from its apparent magnitude (+1 versus +2); B is brighter at the standard distance from its absolute magnitude (−1 versus +3).",
+        "explanation": "Choose the apparent or absolute column before applying the smaller-number-means-brighter rule. The values are invented, not catalogue observations."
       },
       "terms": [
         "absolute magnitude",
         "apparent magnitude",
         "10 parsecs"
+      ],
+      "commonMistakes": [
+        "Do not rank intrinsic same-band brightness from apparent magnitude alone or treat a negative magnitude as negative energy."
       ]
     },
     {
