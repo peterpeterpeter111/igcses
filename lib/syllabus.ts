@@ -1,3 +1,4 @@
+import biologyHormones from '../research/syllabus/4BI1-hormones.json' with { type: 'json' };
 import biologySkinTemperature from '../research/syllabus/4BI1-skin-temperature.json' with { type: 'json' };
 import biologyEye from '../research/syllabus/4BI1-eye.json' with { type: 'json' };
 import biologyHumanNervous from '../research/syllabus/4BI1-human-nervous.json' with { type: 'json' };
@@ -80,6 +81,7 @@ export const reviewedInventories = [
   { title: 'Human nervous coordination (2.86–2.90; partial teaching)', ...biologyHumanNervous },
   { title: 'Eye structure and responses (2.91–2.92; partial teaching)', ...biologyEye },
   { title: 'Skin temperature regulation (2.93; partial teaching)', ...biologySkinTemperature },
+  { title: 'Named hormones (2.94–2.95B; partial teaching)', ...biologyHormones },
   { title: 'Cells and tissues (1.1–1.16)', ...humanCells },
   { title: 'Bones, muscles and joints (4.1–4.6)', ...humanMovement },
   { title: 'Selected Q1 demands: coordination and skin (identities only; no teaching)', ...humanQ1 },

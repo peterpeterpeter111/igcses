@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 810" role="img" aria-labelledby="title description">
+ <title id="title">Insulin opposes a rise in blood glucose</title>
+ <desc id="description">Original causal model: higher glucose stimulates pancreatic beta cells to release insulin; target tissues increase glucose uptake and glycogen storage, with reduced liver output; blood glucose falls. The feedback line means the lower glucose reduces the stimulus for further insulin release, not that another rise is generated.</desc>
+ <defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0L10 4L0 8" fill="#774c42"/></marker></defs>
+ <rect width="1000" height="810" fill="#faf7ed"/>
+ <g font-family="Arial, sans-serif" fill="#302c27">
+  <text x="36" y="47" font-size="28" font-weight="bold">A response to rising blood glucose</text>
+  <text x="36" y="79" font-size="17">Original one-sided causal model · no measured values or clinical thresholds</text>
+  <rect x="36" y="110" width="590" height="103" fill="#eee2d9" stroke="#ac8d79"/>
+  <text x="58" y="147" font-size="22" font-weight="bold">Blood glucose rises</text>
+  <text x="58" y="181" font-size="19">For example, following carbohydrate absorption</text>
+  <path d="M331 213V251" stroke="#774c42" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="36" y="264" width="590" height="103" fill="#efe7d5" stroke="#9b8766"/>
+  <text x="58" y="301" font-size="22" font-weight="bold">Pancreatic beta cells release insulin</text>
+  <text x="58" y="335" font-size="19">The hormone travels in blood to suitable targets</text>
+  <path d="M331 367V405" stroke="#774c42" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="36" y="418" width="590" height="130" fill="#e4e6d5" stroke="#8b9277"/>
+  <text x="58" y="454" font-size="22" font-weight="bold">Target tissues change their activity</text>
+  <text x="58" y="487" font-size="19">Muscle / fat: greater glucose uptake</text>
+  <text x="58" y="520" font-size="19">Liver / muscle: storage; liver glucose output falls</text>
+  <path d="M331 548V586" stroke="#774c42" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="36" y="599" width="590" height="103" fill="#eee2d9" stroke="#ac8d79"/>
+  <text x="58" y="636" font-size="22" font-weight="bold">Blood glucose falls towards its range</text>
+  <text x="58" y="670" font-size="19">The initial rise is opposed</text>
+  <path d="M626 652H917V316H642" fill="none" stroke="#774c42" stroke-width="3" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+  <text x="661" y="418" font-size="21" font-weight="bold">Negative feedback</text>
+  <text x="661" y="458" font-size="19">Smaller glucose stimulus</text>
+  <text x="661" y="490" font-size="19">→ less insulin release</text>
+  <text x="36" y="755" font-size="20" font-weight="bold">Insulin signals cells; it is not the glycogen-building enzyme.</text>
+  <text x="36" y="788" font-size="17">The response to low glucose and the complete regulatory system are not shown.</text>
+ </g>
+</svg>

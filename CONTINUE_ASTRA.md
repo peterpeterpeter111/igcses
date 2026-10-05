@@ -1,3 +1,9 @@
+# Latest phase — Biology named hormones, 5 October 2026
+
+Read `research/checkpoints/2026-10-05-BIOLOGY-HORMONES.md` first. Nine original partial lessons and an insulin feedback diagram added; own 2.94 both 1B/2B, 2.95B only 2B. Existing ADH teaching reused. Totals: 521 sections / 23 partial notes / 36 routes; 511 identities / 495 partial audits / 1,455 local requirements / 727 links. All 133 tests, typecheck, lint, 14 research checks, content/evidence, isolated D1, build and 78-file public scan pass. Desktop diagram/coverage verified; narrow preview override did not apply and remains pending. Skin coverage inspection is now complete.
+
+The prior GitHub capacity blocker is resolved: remote `7acd523` exactly mirrors saved local `be42edd`. Commit and sync this newer phase non-force; preserve both histories. Seven obtained paper/scheme pairs, zero fully processed papers, complete chapters/points or active families; seven experimental offline prototypes. Next own Biology reproduction/inheritance, wider curriculum, paper historical/skills audits and calibration. AI last; no reset, Sites version or deployment. Continue above 5% in both ordinary allowances and pause/checkpoint at 5%. Earlier entries below are historical.
+
 # Current pause and GitHub blocker — 5 October 2026
 
 Read `research/checkpoints/2026-10-05-PAUSED-AFTER-COORDINATION.md` first. Curriculum work paused at5%five-hour/27%weekly, noreset. Verified skin implementation/checkpoint saved in `b5a74c1`; this documentation is its descendant. GitHub `1806e8d` exactly mirrors eye local `868d801`; the final skin/checkpoint sync remains pending. Two tree batches uploaded, then batch3 was not executed because automatic approval review’s selected model was at capacity. No final commit/ref update. Regenerate the non-force plan from fetched remote to latest local HEAD once both allowances exceed5% and the review service can run; do not bypass review.

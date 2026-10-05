@@ -16,6 +16,7 @@ import part11 from './note-sections/biology-structures/12-plant-coordination.jso
 import part12 from './note-sections/biology-structures/13-human-nervous.json' with { type: 'json' };
 import part13 from './note-sections/biology-structures/14-eye.json' with { type: 'json' };
 import part14 from './note-sections/biology-structures/15-skin-temperature.json' with { type: 'json' };
+import part15 from './note-sections/biology-structures/16-hormones.json' with { type: 'json' };
 export default composeNote(metadata as ChapterNotes, {
   '../note-sections/biology-structures/01-cells.json': part0,
   '../note-sections/biology-structures/02-molecules.json': part1,
@@ -32,4 +33,5 @@ export default composeNote(metadata as ChapterNotes, {
   '../note-sections/biology-structures/13-human-nervous.json': part12,
   '../note-sections/biology-structures/14-eye.json': part13,
   '../note-sections/biology-structures/15-skin-temperature.json': part14,
+  '../note-sections/biology-structures/16-hormones.json': part15,
 });

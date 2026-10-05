@@ -1,0 +1,17 @@
+# Biology named hormones — 5 October 2026
+
+Added nine original partial lessons and one original insulin feedback diagram to the existing Biology structures-and-functions reader. Own Pearson 4BI1 Issue 3, PDF page 25 / printed page 19, verifies 2.94 for both 1B/2B and 2.95B for 2B only. Two new identities, two partial audits, 24 local requirements and 13 partial teaching links. Two existing ADH lessons receive the additional 2.95B annotation; their prose is preserved rather than duplicated.
+
+The five 2.94 hormones have source, role and effect explanations. ADH production versus release, FSH and LH target roles, ovarian stage-dependent feedback, liver versus muscle glucose handling, and insulin signalling versus enzyme activity are distinguished. The diagram's dashed return reduces the beta-cell stimulus; it does not cause another glucose rise. No clinical thresholds, patient observations or calibrated endocrine question family are claimed.
+
+New files: `content/note-sections/biology-structures/16-hormones.json`, `public/diagrams/biology-insulin-feedback.svg`, `research/syllabus/4BI1-hormones.json`, `research/curriculum-audits/4BI1-hormones.json`, and the three `research/reviews/2026-10-05-biology-hormones-{content,evidence,teaching-review}.json` reports. Composer, metadata, registries, structural count assertions and partial ledgers were updated. Existing UI, private paper evidence, prototypes and history are preserved.
+
+All 133 application tests, typecheck, lint, 14 research checks, content validation, evidence reconciliation, isolated D1, production build and 78-file public scan pass. Evidence errors and public findings are empty. Desktop reader width/document width 1280; settled insulin anchor 24px; diagram loaded at 598px wide. Full diagram/labels/arrows and the coverage group were inspected. Screenshot: `work/biology-insulin-proof-2026-10-05.png`. Coverage correctly displays 2.94 both papers, 2.95B only 2B, and partial status.
+
+The preceding skin coverage group has now been inspected in the browser. A second bounded attempt at a fresh 390px preview still reported 1280px; the override was reset. Narrow-screen verification remains pending, not passed. No unrelated visual code was changed to work around this preview limitation.
+
+The former GitHub approval-capacity blocker is resolved after natural allowance recovery. GitHub `7acd52360574195026343020d6ab17c705bc12a3` exactly mirrors local `be42edd4d253f5d9fb4a182c700dba113c7b2270`, with tree `9989e80f2d03d9c21de5329005c18daaa0d0efa4`. Prior remote ancestry was verified. This hormone phase is the next non-force delta to sync after committing; no history was replaced and no reset was consumed.
+
+Totals: 521 sections / 23 partial note documents / 36 chapter routes; 511 reviewed identities / 495 partial audits / 1,455 local requirements / 727 partial teaching links. Biology: 143 sections / two notes / 99 identities and audits / 405 requirements. Seven obtained paper/scheme pairs, zero fully processed papers, complete chapters, complete points or active template families. Seven experimental offline generators/markers remain provisional. No AI integration, Sites version, deployment or verified public URL.
+
+Next: own Biology reproduction/inheritance source review, wider curriculum, whole-paper historical/skills audits, and template calibration. Keep AI last. Continue only above 5% in both ordinary allowances; checkpoint and pause at 5%, without consuming a reset. Older pause/blocker entries are historical.
