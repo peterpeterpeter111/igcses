@@ -1,3 +1,4 @@
+import biologyEcologyCycles from '../research/syllabus/4BI1-ecology-cycles-influences.json' with { type: 'json' };
 import biologyEcologyFoundations from '../research/syllabus/4BI1-ecology-foundations.json' with { type: 'json' };
 import biologyMutationSelection from '../research/syllabus/4BI1-mutation-selection.json' with { type: 'json' };
 import biologyInheritance from '../research/syllabus/4BI1-inheritance.json' with { type: 'json' };
@@ -90,6 +91,7 @@ export const reviewedInventories = [
   { title: 'Inheritance (3.14–3.34; partial teaching)', ...biologyInheritance },
   { title: 'Mutation and selection (3.35B–3.39; partial teaching)', ...biologyMutationSelection },
   { title: 'Ecology sampling and feeding (4.1–4.9; partial teaching)', ...biologyEcologyFoundations },
+  { title: 'Ecology cycles and human influences (4.10–4.18B; partial teaching)', ...biologyEcologyCycles },
   { title: 'Cells and tissues (1.1–1.16)', ...humanCells },
   { title: 'Bones, muscles and joints (4.1–4.6)', ...humanMovement },
   { title: 'Selected Q1 demands: coordination and skin (identities only; no teaching)', ...humanQ1 },

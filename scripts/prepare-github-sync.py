@@ -30,6 +30,11 @@ if __name__ == '__main__':
     output = (ROOT / args.output_dir).resolve()
     if ROOT / 'work' not in output.parents or output.exists():
         parser.error('Choose a new directory inside ignored work/')
+    # A matching committed tree cannot prove that the working site was saved.
+    # Refuse to silently omit a new diagram or another unsaved source file.
+    if git('status', '--porcelain=v1', '-z', '--untracked-files=all'):
+        parser.error('Commit all intended source changes before preparing a GitHub sync; '
+                     'unsaved or untracked files would be omitted. Ignored work files are allowed.')
     base = git('rev-parse', args.base + '^{commit}').decode().strip()
     head = git('rev-parse', args.head + '^{commit}').decode().strip()
     tree = git('rev-parse', head + '^{tree}').decode().strip()

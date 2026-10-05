@@ -1,3 +1,9 @@
+# Latest phase — Ecology cycles and human influences, 5 October 2026
+
+Read `research/checkpoints/2026-10-05-ECOLOGY-CYCLES-INFLUENCES.md` first. Seventeen original partial lessons/one diagram, nine identities4.10–4.18B;4.11B/4.18B only2B. Ecology29 sections with partial links across all18 statements; no chapter/point complete.136 tests,typecheck/lint/14research/content/evidence/isolatedD1/build/84-file scan pass; desktop diagram and exact coverage labels verified. Both Ecology diagrams are now committed; prior untracked-asset omission fixed and source-sync clean-tree guard/regressions added. Narrow preview/client bundle performance pending.
+
+Totals590 sections/25 partial notes/36 routes;568 identities/552 partial audits/1,665 local requirements/815 partial links. Seven obtained pairs/zero fully processed papers, complete points/chapters or active families; seven experimental offline prototypes. GitHub2535fb8 exactly mirrors savedd26d6b4; commit/sync new phase non-force. Next own Biology resources5.1 onward, wider curriculum/historical/skills audits and independent calibration. Maintain lesson quality and accurate coverage; AI last. Continue above5%both, checkpoint/pauseat5%; no reset/Sites version/deployment/public URL. Older entries historical.
+
 # Latest phase — Ecology foundations and focused quality review, 5 October 2026
 
 Read `research/checkpoints/2026-10-05-ECOLOGY-AND-QUALITY.md` first. Twelve original Ecology lessons, nine partial identities4.1–4.9;4.3B/4.4B only2B. Six existing Physics/Maths lessons strengthened after a focused review; five thermal coverage-example references reconciled.133 tests, typecheck/lint/14 research checks/content/evidence/isolatedD1/final build/83-file public scan pass. Desktop diagram/search/coverage and revised readers verified; narrow preview and bundle performance review pending.

@@ -3,7 +3,8 @@
   "chapterId": "ecology",
   "sourceId": "4BI1-spec",
   "sourcePages": [
-    29
+    29,
+    30
   ],
   "status": "source-checked",
   "complete": false,
@@ -16,11 +17,12 @@
     "Use ecological terms and compare population estimates using quadrats.",
     "Investigate distribution/biodiversity and interpret observational limitations.",
     "Explain feeding roles, food-web arrows, ecological pyramids and energy transfer.",
-    "Carbon/nitrogen cycles, human influences, unfamiliar assessment and full chapter audit remain unfinished."
+    "Trace carbon and nitrogen cycles, explain human environmental impacts and interpret conditional data. Unfamiliar assessment, independent calibration and full chapter audit remain unfinished."
   ],
   "sections": [],
   "sectionFiles": [
-    "../note-sections/biology-ecology/01-sampling-feeding.json"
+    "../note-sections/biology-ecology/01-sampling-feeding.json",
+    "../note-sections/biology-ecology/02-cycles-human-influences.json"
   ],
   "supportingSources": [
     {
@@ -64,6 +66,79 @@
         "energy-pyramid-time-units",
         "trophic-energy-budget",
         "trophic-transfer-efficiency"
+      ]
+    },
+    {
+      "title": "OpenStax Biology: carbon/nitrogen pathways",
+      "url": "https://openstax.org/books/biology-2e/pages/46-3-biogeochemical-cycles",
+      "sectionIds": [
+        "carbon-photosynthesis-feeding",
+        "carbon-decomposition-combustion",
+        "nitrogen-entry-fixation",
+        "nitrogen-decomposition-ammonium",
+        "nitrogen-nitrification",
+        "nitrogen-denitrification"
+      ]
+    },
+    {
+      "title": "EPA: sulfur dioxide biological effects",
+      "url": "https://www.epa.gov/so2-pollution/sulfur-dioxide-basics",
+      "sectionIds": [
+        "sulfur-dioxide-biological-effects"
+      ]
+    },
+    {
+      "title": "EPA: acidic deposition and ecosystem response",
+      "url": "https://www.epa.gov/acidrain/effects-acid-rain",
+      "sectionIds": [
+        "sulfur-dioxide-biological-effects",
+        "deforestation-soil-loss"
+      ]
+    },
+    {
+      "title": "EPA: carbon monoxide and reduced oxygen delivery",
+      "url": "https://www.epa.gov/co-pollution/basic-information-about-carbon-monoxide-co-outdoor-air-pollution",
+      "sectionIds": [
+        "carbon-monoxide-oxygen-transport"
+      ]
+    },
+    {
+      "title": "CDC archived CO mechanism: haemoglobin binding (PDF page79)",
+      "url": "https://stacks.cdc.gov/view/cdc/6283/cdc_6283_DS1.pdf#page=79",
+      "sectionIds": [
+        "carbon-monoxide-oxygen-transport"
+      ]
+    },
+    {
+      "title": "NASA: greenhouse mechanisms and gas sources",
+      "url": "https://science.nasa.gov/climate-change/causes/",
+      "sectionIds": [
+        "greenhouse-gas-identities",
+        "greenhouse-human-sources",
+        "greenhouse-radiation-balance"
+      ]
+    },
+    {
+      "title": "NASA: climate consequences and sea-level mechanisms",
+      "url": "https://science.nasa.gov/climate-change/effects/",
+      "sectionIds": [
+        "warming-biological-consequences"
+      ]
+    },
+    {
+      "title": "EPA: nutrient pollution",
+      "url": "https://www.epa.gov/nutrientpollution/basic-information-nutrient-pollution",
+      "sectionIds": [
+        "fertiliser-eutrophication-sequence"
+      ]
+    },
+    {
+      "title": "EPA: dissolved oxygen, microbial demand and daily changes",
+      "url": "https://www.epa.gov/caddis/dissolved-oxygen",
+      "sectionIds": [
+        "sewage-organic-oxygen-demand",
+        "fertiliser-eutrophication-sequence",
+        "oxygen-day-night-data"
       ]
     }
   ]

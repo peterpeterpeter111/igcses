@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 850" role="img" aria-labelledby="title description">
+ <title id="title">An original matched-interval trophic energy budget</title>
+ <desc id="description">Assumed1000 units of lower-level production:400 uneaten,600 ingested. Of600,180 unabsorbed and420 absorbed. Of420,300 respired and120 in new consumer biomass. Transfer120/1000=12percent. Uneaten and egested material retain chemical energy for decomposer pathways; respiratory energy ultimately transfers as heat.</desc>
+ <defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0L10 4L0 8" fill="#774c42"/></marker></defs>
+ <rect width="1000" height="850" fill="#faf7ed"/>
+ <g font-family="Arial, sans-serif" fill="#302c27">
+  <text x="35" y="48" font-size="28" font-weight="bold">Follow one budget; keep the same area and interval</text>
+  <text x="35" y="83" font-size="18">Original assumed energy units · no field measurements · box sizes are schematic</text>
+  <rect x="35" y="117" width="480" height="80" fill="#e4e6d5" stroke="#8b9277"/>
+  <text x="57" y="153" font-size="22" font-weight="bold">Lower-level new biomass: 1,000</text>
+  <text x="57" y="180" font-size="18">Starting production over the stated interval</text>
+  <path d="M515 155H605" stroke="#774c42" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="630" y="149" font-size="23" font-weight="bold">Uneaten: 400</text>
+  <text x="630" y="177" font-size="18">Organic material / detrital pathway</text>
+  <path d="M270 200V264" stroke="#774c42" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="300" y="242" font-size="19">Eaten</text>
+  <rect x="35" y="282" width="480" height="80" fill="#eee2d9" stroke="#ac8d79"/>
+  <text x="57" y="318" font-size="22" font-weight="bold">Ingested: 600</text>
+  <text x="57" y="345" font-size="18">1,000−400</text>
+  <path d="M515 320H605" stroke="#774c42" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="630" y="314" font-size="23" font-weight="bold">Unabsorbed: 180</text>
+  <text x="630" y="342" font-size="18">Egested organic material</text>
+  <path d="M270 365V429" stroke="#774c42" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="300" y="407" font-size="19">Absorbed</text>
+  <rect x="35" y="447" width="480" height="80" fill="#efe7d5" stroke="#9b8766"/>
+  <text x="57" y="483" font-size="22" font-weight="bold">Absorbed: 420</text>
+  <text x="57" y="510" font-size="18">600−180</text>
+  <path d="M515 485H605" stroke="#774c42" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="630" y="479" font-size="23" font-weight="bold">Respired: 300</text>
+  <text x="630" y="507" font-size="18">Ultimately transferred as heat</text>
+  <path d="M270 530V594" stroke="#774c42" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="300" y="572" font-size="19">Retained in growth</text>
+  <rect x="35" y="612" width="480" height="80" fill="#e4e6d5" stroke="#8b9277"/>
+  <text x="57" y="648" font-size="22" font-weight="bold">New consumer biomass: 120</text>
+  <text x="57" y="675" font-size="18">420−300; potential further-level food</text>
+  <text x="565" y="647" font-size="22" font-weight="bold">Transfer: 120 / 1,000 = 12%</text>
+  <text x="35" y="750" font-size="22" font-weight="bold">Balance: 400 + 180 + 300 + 120 = 1,000</text>
+  <text x="35" y="789" font-size="19">Uneaten/egested material retains chemical energy; it is not already all heat.</text>
+  <text x="35" y="825" font-size="18">“Not transferred to next-level biomass” does not mean energy was destroyed.</text>
+ </g>
+</svg>
