@@ -1,3 +1,7 @@
+# Latest phase — Human Biology Q4–Q5, 5 October 2026
+
+Read research/checkpoints/2026-10-05-HUMAN-Q45.md first. Human24of42 detailed parts/51of90marks;18indexed-only parts/39marks remain. Apparatus topology, exercise controls and4of6/5of6source caps saved; graph has no numeric optimum.125tests,typecheck/lint/research/content/evidence/build and68-file public scan pass; isolatedD1 passed preceding heredity phase.397sections/20partial notes,433identities/412audits/1148requirements/586links. Sevenobtainedpairs,zero processed/completechapters/points/activefamilies;sixexperimental. GitHub80cc30a mirrors savedc99d40f;sync newer phase non-force. ContinueHumanQ6–Q9,curriculum/calibration above5%both;AIlast,noreset/version/deployment. Older entries are historical.
+
 # Latest phase — Human Biology heredity, 5 October 2026
 
 Read research/checkpoints/2026-10-05-HEREDITY.md first. Ten original lessons and an original Punnett diagram added to the existing reproduction route. Totals:397 sections /20 partial notes;427 identities /412 audits /1148 requirements /586 links. Human17of42 detailed parts/32of90marks, seven obtained pairs, zero processed papers/complete chapters/points/active families; six experimental generators/markers.125tests,typecheck/lint/research/content/evidence/isolatedD1/build and68-file public scan pass. GitHubbf4bbdc mirrors saveded55779;sync newer phase non-force. Continue HumanQ4–Q9,curriculum/calibration above5%both allowances. AI last;no reset/version/deployment. Older entries are historical.

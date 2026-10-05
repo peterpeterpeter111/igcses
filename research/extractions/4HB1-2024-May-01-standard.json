@@ -21,12 +21,14 @@
   "fullyProcessed": false,
   "wholePaperMarks": 90,
   "wholePaperLeafCount": 42,
-  "detailedLeafTasks": 17,
-  "detailedOriginalMarks": 32,
+  "detailedLeafTasks": 24,
+  "detailedOriginalMarks": 51,
   "reviewedQuestionTotals": {
     "1": 12,
     "2": 11,
-    "3": 9
+    "3": 9,
+    "4": 9,
+    "5": 10
   },
   "reviewedSubsetMarksReconciled": true,
   "marksReconciled": false,
@@ -56,7 +58,11 @@
         6,
         7,
         8,
-        9
+        9,
+        10,
+        11,
+        12,
+        13
       ],
       "wholeDocumentReviewed": false
     },
@@ -65,7 +71,9 @@
         3,
         4,
         5,
-        6
+        6,
+        7,
+        8
       ],
       "wholeDocumentReviewed": false
     }
@@ -81,8 +89,11 @@
     "issue": "2",
     "reviewedPages": [
       17,
+      18,
+      19,
       20,
       21,
+      22,
       24,
       25,
       26,
@@ -2233,24 +2244,1075 @@
           ]
         }
       }
+    },
+    {
+      "paperId": "4HB1-2024-May-01-standard",
+      "recordKind": "leaf",
+      "taskId": "4HB1-2024-May-01-standard.Q4.a.i",
+      "questionPath": "4.a.i",
+      "originalMarks": 3,
+      "questionPaperPages": [
+        10
+      ],
+      "markSchemePages": [
+        7
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Draw",
+      "requiredKnowledge": [
+        "inspired/expired air comparison",
+        "gas bubbling apparatus"
+      ],
+      "contextSummary": "Draw the equipment connections to compare carbon dioxide in inspired and expired air.",
+      "solutionStructure": [
+        "Show the two-indicator-vessel apparatus correctly connected to the mouthpiece and outside air.",
+        "Place each long tube end in the indicator.",
+        "Place each short tube end above the indicator."
+      ],
+      "markingMethod": "drawing-discrete-points",
+      "criteria": [
+        {
+          "id": "4HB1-2024-May-01-standard.Q4.a.i:point-1",
+          "marks": 1,
+          "rule": "Show the two-indicator-vessel apparatus correctly connected to the mouthpiece and outside air."
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q4.a.i:point-2",
+          "marks": 1,
+          "rule": "Place each long tube end in the indicator."
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q4.a.i:point-3",
+          "marks": 1,
+          "rule": "Place each short tube end above the indicator."
+        }
+      ],
+      "scoringRule": {
+        "mode": "all-distinct",
+        "maximum": 3,
+        "creditPerCriterion": 1,
+        "eligibleCriterionIds": [
+          "4HB1-2024-May-01-standard.Q4.a.i:point-1",
+          "4HB1-2024-May-01-standard.Q4.a.i:point-2",
+          "4HB1-2024-May-01-standard.Q4.a.i:point-3"
+        ],
+        "selectionLimit": 3,
+        "sourceRef": {
+          "documentId": "4HB1-2024-May-01-standard:markScheme",
+          "pdfPages": [
+            7
+          ]
+        }
+      },
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4HB1:issue2:7.2",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "The drawing sets up the named inspired/expired CO2 comparison practical; interpretation and full practical assessment are not all tested.",
+          "evidenceRefs": [
+            {
+              "documentId": "4HB1-spec",
+              "pdfPages": [
+                22
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:markScheme",
+              "pdfPages": [
+                7
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:questionPaper",
+              "pdfPages": [
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "equipment-components",
+        "apparatus-drawing-space"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4HB1-2024-May-01-standard:questionPaper",
+          "pdfPages": [
+            10
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; do not infer authoritative AO marks.",
+      "proposedFamilyId": "4HB1.4-a-i-candidate",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-05",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "Generative family, semantic/drawing marking, whole skill/AO and independent response calibration pending.",
+        "Drawing submission/recognition and equivalent topology scoring are not implemented; no physical breathing practical protocol approved."
+      ],
+      "apparatusTopology": {
+        "sourceRef": {
+          "documentId": "4HB1-2024-May-01-standard:markScheme",
+          "pdfPages": [
+            7
+          ]
+        },
+        "orientation": "Source sketch left/right description only; equivalent reflected diagrams need calibration.",
+        "leftVessel": {
+          "externalTube": "long-submerged",
+          "mouthpieceTube": "short-above-indicator"
+        },
+        "rightVessel": {
+          "mouthpieceTube": "long-submerged",
+          "externalTube": "short-above-indicator"
+        },
+        "recognitionStatus": "not-implemented",
+        "safetyStatus": "historical-exam-drawing-not-a-runnable-practical-protocol"
+      }
+    },
+    {
+      "paperId": "4HB1-2024-May-01-standard",
+      "recordKind": "leaf",
+      "taskId": "4HB1-2024-May-01-standard.Q4.a.ii",
+      "questionPath": "4.a.ii",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        11
+      ],
+      "markSchemePages": [
+        7
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "State",
+      "requiredKnowledge": [
+        "apparatus risk control"
+      ],
+      "contextSummary": "State one source-accepted precaution for the breathing apparatus investigation.",
+      "solutionStructure": [
+        "Give one accepted precaution for breathing, mouthpiece cleanliness, avoiding inhaled liquid or glass assembly."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "4HB1-2024-May-01-standard.Q4.a.ii:point-1",
+          "marks": 1,
+          "rule": "Give one accepted precaution for breathing, mouthpiece cleanliness, avoiding inhaled liquid or glass assembly."
+        }
+      ],
+      "scoringRule": {
+        "mode": "all-distinct",
+        "maximum": 1,
+        "creditPerCriterion": 1,
+        "eligibleCriterionIds": [
+          "4HB1-2024-May-01-standard.Q4.a.ii:point-1"
+        ],
+        "selectionLimit": 1,
+        "sourceRef": {
+          "documentId": "4HB1-2024-May-01-standard:markScheme",
+          "pdfPages": [
+            7
+          ]
+        }
+      },
+      "acceptableAlternatives": [
+        "Inhale and exhale gently.",
+        "Sterilise or clean the mouthpiece.",
+        "Do not inhale liquid.",
+        "Assemble glass apparatus carefully to avoid breakage."
+      ],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4HB1:issue2:7.2",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "One precaution supports the named practical; not a complete safe practical protocol.",
+          "evidenceRefs": [
+            {
+              "documentId": "4HB1-spec",
+              "pdfPages": [
+                22
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:markScheme",
+              "pdfPages": [
+                7
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:questionPaper",
+              "pdfPages": [
+                11
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "equipment-components"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4HB1-2024-May-01-standard:questionPaper",
+          "pdfPages": [
+            10,
+            11
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; do not infer authoritative AO marks.",
+      "proposedFamilyId": "4HB1.4-a-ii-candidate",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-05",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "Generative family, semantic/drawing marking, whole skill/AO and independent response calibration pending."
+      ]
+    },
+    {
+      "paperId": "4HB1-2024-May-01-standard",
+      "recordKind": "leaf",
+      "taskId": "4HB1-2024-May-01-standard.Q4.b.i",
+      "questionPath": "4.b.i",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        11
+      ],
+      "markSchemePages": [
+        7
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Give",
+      "requiredKnowledge": [
+        "control variables",
+        "repeat consistency"
+      ],
+      "contextSummary": "Give one control variable for the repeated rest/gentle/vigorous exercise breathing-rate comparison.",
+      "solutionStructure": [
+        "Name a valid controlled duration, pace within each repeated condition, or the same student."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "4HB1-2024-May-01-standard.Q4.b.i:point-1",
+          "marks": 1,
+          "rule": "Name a valid controlled duration, pace within each repeated condition, or the same student."
+        }
+      ],
+      "scoringRule": {
+        "mode": "all-distinct",
+        "maximum": 1,
+        "creditPerCriterion": 1,
+        "eligibleCriterionIds": [
+          "4HB1-2024-May-01-standard.Q4.b.i:point-1"
+        ],
+        "selectionLimit": 1,
+        "sourceRef": {
+          "documentId": "4HB1-2024-May-01-standard:markScheme",
+          "pdfPages": [
+            7
+          ]
+        }
+      },
+      "acceptableAlternatives": [
+        "Same length of exercise/rest time.",
+        "Same pace for each repeat of a given exercise condition.",
+        "Same student."
+      ],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4HB1:issue2:8.5",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Control-variable selection in the breathing-rate branch only; lung capacity measurement is not assessed.",
+          "evidenceRefs": [
+            {
+              "documentId": "4HB1-spec",
+              "pdfPages": [
+                22
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:markScheme",
+              "pdfPages": [
+                7
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:questionPaper",
+              "pdfPages": [
+                11
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "exercise-result-table"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4HB1-2024-May-01-standard:questionPaper",
+          "pdfPages": [
+            11
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; do not infer authoritative AO marks.",
+      "proposedFamilyId": "4HB1.4-b-i-candidate",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-05",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "Generative family, semantic/drawing marking, whole skill/AO and independent response calibration pending."
+      ],
+      "sourceData": {
+        "conditions": [
+          "at rest",
+          "after gentle exercise",
+          "after vigorous exercise"
+        ],
+        "meanBreathingRates": [
+          14,
+          19,
+          50
+        ],
+        "units": "breaths per minute",
+        "repeatsPerExercise": 3
+      },
+      "controlScope": {
+        "pace": "Same pace for repeats within each given condition, not the same intensity across gentle and vigorous conditions.",
+        "sourceRef": {
+          "documentId": "4HB1-2024-May-01-standard:markScheme",
+          "pdfPages": [
+            7
+          ]
+        }
+      }
+    },
+    {
+      "paperId": "4HB1-2024-May-01-standard",
+      "recordKind": "leaf",
+      "taskId": "4HB1-2024-May-01-standard.Q4.b.ii",
+      "questionPath": "4.b.ii",
+      "originalMarks": 4,
+      "questionPaperPages": [
+        11
+      ],
+      "markSchemePages": [
+        7
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Explain",
+      "requiredKnowledge": [
+        "oxygen supply",
+        "aerobic respiration",
+        "energy transfer",
+        "anaerobic respiration",
+        "oxygen debt"
+      ],
+      "contextSummary": "Explain the working-muscle benefit of increased breathing rate after vigorous exercise.",
+      "solutionStructure": [
+        "Breathing rate increases with vigorous exercise.",
+        "More oxygen is inhaled or supplied.",
+        "Oxygen supports aerobic respiration.",
+        "More energy is released or more ATP made available.",
+        "Extra oxygen supports breakdown of lactic acid in the source model.",
+        "Lactic acid was produced during anaerobic respiration."
+      ],
+      "markingMethod": "capped-discrete-points",
+      "criteria": [
+        {
+          "id": "4HB1-2024-May-01-standard.Q4.b.ii:point-1",
+          "marks": 1,
+          "rule": "Breathing rate increases with vigorous exercise."
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q4.b.ii:point-2",
+          "marks": 1,
+          "rule": "More oxygen is inhaled or supplied."
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q4.b.ii:point-3",
+          "marks": 1,
+          "rule": "Oxygen supports aerobic respiration."
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q4.b.ii:point-4",
+          "marks": 1,
+          "rule": "More energy is released or more ATP made available."
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q4.b.ii:point-5",
+          "marks": 1,
+          "rule": "Extra oxygen supports breakdown of lactic acid in the source model."
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q4.b.ii:point-6",
+          "marks": 1,
+          "rule": "Lactic acid was produced during anaerobic respiration."
+        }
+      ],
+      "scoringRule": {
+        "mode": "any-distinct",
+        "maximum": 4,
+        "creditPerCriterion": 1,
+        "eligibleCriterionIds": [
+          "4HB1-2024-May-01-standard.Q4.b.ii:point-1",
+          "4HB1-2024-May-01-standard.Q4.b.ii:point-2",
+          "4HB1-2024-May-01-standard.Q4.b.ii:point-3",
+          "4HB1-2024-May-01-standard.Q4.b.ii:point-4",
+          "4HB1-2024-May-01-standard.Q4.b.ii:point-5",
+          "4HB1-2024-May-01-standard.Q4.b.ii:point-6"
+        ],
+        "selectionLimit": 4,
+        "sourceRef": {
+          "documentId": "4HB1-2024-May-01-standard:markScheme",
+          "pdfPages": [
+            7
+          ]
+        }
+      },
+      "acceptableAlternatives": [
+        "Energy or ATP wording for the energy-release point."
+      ],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4HB1:issue2:7.1",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Muscle benefit includes energy released by respiration.",
+          "evidenceRefs": [
+            {
+              "documentId": "4HB1-spec",
+              "pdfPages": [
+                22
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:markScheme",
+              "pdfPages": [
+                7
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:questionPaper",
+              "pdfPages": [
+                11
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4HB1:issue2:7.5",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Source points distinguish aerobic supply from anaerobic lactic acid production; full comparison is not assessed.",
+          "evidenceRefs": [
+            {
+              "documentId": "4HB1-spec",
+              "pdfPages": [
+                22
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:markScheme",
+              "pdfPages": [
+                7
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:questionPaper",
+              "pdfPages": [
+                11
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4HB1:issue2:7.6",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Source accepts ATP availability but does not assess phosphate addition/removal.",
+          "evidenceRefs": [
+            {
+              "documentId": "4HB1-spec",
+              "pdfPages": [
+                22
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:markScheme",
+              "pdfPages": [
+                7
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:questionPaper",
+              "pdfPages": [
+                11
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4HB1:issue2:8.12",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Post-exercise oxygen supply/lactic acid branch supports oxygen-debt scope without a complete mechanism audit.",
+          "evidenceRefs": [
+            {
+              "documentId": "4HB1-spec",
+              "pdfPages": [
+                22
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:markScheme",
+              "pdfPages": [
+                7
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:questionPaper",
+              "pdfPages": [
+                11
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "exercise-result-table"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4HB1-2024-May-01-standard:questionPaper",
+          "pdfPages": [
+            11
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; do not infer authoritative AO marks.",
+      "proposedFamilyId": "4HB1.4-b-ii-candidate",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-05",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "Generative family, semantic/drawing marking, whole skill/AO and independent response calibration pending.",
+        "Historical school lactic-acid/oxygen-debt wording needs calibrated model boundaries before generative reuse."
+      ],
+      "sourceData": {
+        "conditions": [
+          "at rest",
+          "after gentle exercise",
+          "after vigorous exercise"
+        ],
+        "meanBreathingRates": [
+          14,
+          19,
+          50
+        ],
+        "units": "breaths per minute",
+        "repeatsPerExercise": 3
+      },
+      "sourceIgnoredEvidence": [
+        "References to carbon dioxide"
+      ]
+    },
+    {
+      "paperId": "4HB1-2024-May-01-standard",
+      "recordKind": "leaf",
+      "taskId": "4HB1-2024-May-01-standard.Q5.a.i",
+      "questionPath": "5.a.i",
+      "originalMarks": 5,
+      "questionPaperPages": [
+        12
+      ],
+      "markSchemePages": [
+        8
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Design",
+      "requiredKnowledge": [
+        "enzyme investigation",
+        "temperature control",
+        "endpoint measurement",
+        "control variables"
+      ],
+      "contextSummary": "Design a temperature investigation for the source qualitative enzyme-activity curve.",
+      "solutionStructure": [
+        "Place substrate in a test tube, boiling tube or beaker.",
+        "Use a water bath to set the reaction temperature.",
+        "Add enzyme to substrate.",
+        "Measure reaction time or identify the source-accepted reaction outcome measurement.",
+        "Keep enzyme/substrate volume or concentration the same.",
+        "Repeat at other temperatures."
+      ],
+      "markingMethod": "capped-discrete-points",
+      "criteria": [
+        {
+          "id": "4HB1-2024-May-01-standard.Q5.a.i:point-1",
+          "marks": 1,
+          "rule": "Place substrate in a test tube, boiling tube or beaker."
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q5.a.i:point-2",
+          "marks": 1,
+          "rule": "Use a water bath to set the reaction temperature."
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q5.a.i:point-3",
+          "marks": 1,
+          "rule": "Add enzyme to substrate."
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q5.a.i:point-4",
+          "marks": 1,
+          "rule": "Measure reaction time or identify the source-accepted reaction outcome measurement."
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q5.a.i:point-5",
+          "marks": 1,
+          "rule": "Keep enzyme/substrate volume or concentration the same."
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q5.a.i:point-6",
+          "marks": 1,
+          "rule": "Repeat at other temperatures."
+        }
+      ],
+      "scoringRule": {
+        "mode": "any-distinct",
+        "maximum": 5,
+        "creditPerCriterion": 1,
+        "eligibleCriterionIds": [
+          "4HB1-2024-May-01-standard.Q5.a.i:point-1",
+          "4HB1-2024-May-01-standard.Q5.a.i:point-2",
+          "4HB1-2024-May-01-standard.Q5.a.i:point-3",
+          "4HB1-2024-May-01-standard.Q5.a.i:point-4",
+          "4HB1-2024-May-01-standard.Q5.a.i:point-5",
+          "4HB1-2024-May-01-standard.Q5.a.i:point-6"
+        ],
+        "selectionLimit": 5,
+        "sourceRef": {
+          "documentId": "4HB1-2024-May-01-standard:markScheme",
+          "pdfPages": [
+            8
+          ]
+        }
+      },
+      "acceptableAlternatives": [
+        "A temperature value for the water-bath point.",
+        "An example reaction outcome, such as colour change or amount of glucose produced, for the source measurement point."
+      ],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4HB1:issue2:2.8",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Temperature investigation branch of the named temperature/pH practical; pH investigation is not assessed here.",
+          "evidenceRefs": [
+            {
+              "documentId": "4HB1-spec",
+              "pdfPages": [
+                19
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:markScheme",
+              "pdfPages": [
+                8
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:questionPaper",
+              "pdfPages": [
+                12
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "qualitative-enzyme-temperature-curve"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4HB1-2024-May-01-standard:questionPaper",
+          "pdfPages": [
+            12
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; do not infer authoritative AO marks.",
+      "proposedFamilyId": "4HB1.5-a-i-candidate",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-05",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "Generative family, semantic/drawing marking, whole skill/AO and independent response calibration pending.",
+        "Source method concessions retained; a runnable validated investigation and measurement calibration are not inferred."
+      ],
+      "sourceGraph": {
+        "axes": [
+          "Temperature",
+          "Enzyme activity"
+        ],
+        "numericScaleProvided": false,
+        "optimumTemperatureValue": null,
+        "shape": "Activity rises to a peak then falls steeply.",
+        "printedAttributionUrl": "https://ib.bioninja.com.au/standard-level/topic-2-molecular-biology/25-enzymes/enzyme-activity.html",
+        "attributionAccessStatus": "not-accessed-not-used-as-independent-authority",
+        "sourceRef": {
+          "documentId": "4HB1-2024-May-01-standard:questionPaper",
+          "pdfPages": [
+            12
+          ]
+        }
+      },
+      "sourceRejectedEvidence": [
+        "Unqualified amount for the volume/concentration control point"
+      ],
+      "methodScope": {
+        "criteriaCount": 6,
+        "distinctCap": 5,
+        "repeatedTemperaturesCriterion": "Other temperatures; not an invented extra point for repeats at the same temperature.",
+        "endpointCalibration": "Pending: appropriate enzyme/substrate pair, endpoint definition, rate/time comparability and tolerances.",
+        "sourceRef": {
+          "documentId": "4HB1-2024-May-01-standard:markScheme",
+          "pdfPages": [
+            8
+          ]
+        }
+      }
+    },
+    {
+      "paperId": "4HB1-2024-May-01-standard",
+      "recordKind": "leaf",
+      "taskId": "4HB1-2024-May-01-standard.Q5.a.ii",
+      "questionPath": "5.a.ii",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        13
+      ],
+      "markSchemePages": [
+        8
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "State",
+      "requiredKnowledge": [
+        "independent variable"
+      ],
+      "contextSummary": "Identify the independent variable in the enzyme investigation.",
+      "solutionStructure": [
+        "State temperature."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "4HB1-2024-May-01-standard.Q5.a.ii:point-1",
+          "marks": 1,
+          "rule": "State temperature."
+        }
+      ],
+      "scoringRule": {
+        "mode": "all-distinct",
+        "maximum": 1,
+        "creditPerCriterion": 1,
+        "eligibleCriterionIds": [
+          "4HB1-2024-May-01-standard.Q5.a.ii:point-1"
+        ],
+        "selectionLimit": 1,
+        "sourceRef": {
+          "documentId": "4HB1-2024-May-01-standard:markScheme",
+          "pdfPages": [
+            8
+          ]
+        }
+      },
+      "acceptableAlternatives": [
+        "temperature"
+      ],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4HB1:issue2:2.8",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Variable identification supports only the temperature branch of the practical.",
+          "evidenceRefs": [
+            {
+              "documentId": "4HB1-spec",
+              "pdfPages": [
+                19
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:markScheme",
+              "pdfPages": [
+                8
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:questionPaper",
+              "pdfPages": [
+                13
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "qualitative-enzyme-temperature-curve"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4HB1-2024-May-01-standard:questionPaper",
+          "pdfPages": [
+            12,
+            13
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; do not infer authoritative AO marks.",
+      "proposedFamilyId": "4HB1.5-a-ii-candidate",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-05",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "Generative family, semantic/drawing marking, whole skill/AO and independent response calibration pending."
+      ],
+      "sourceGraph": {
+        "axes": [
+          "Temperature",
+          "Enzyme activity"
+        ],
+        "numericScaleProvided": false,
+        "optimumTemperatureValue": null,
+        "shape": "Activity rises to a peak then falls steeply.",
+        "printedAttributionUrl": "https://ib.bioninja.com.au/standard-level/topic-2-molecular-biology/25-enzymes/enzyme-activity.html",
+        "attributionAccessStatus": "not-accessed-not-used-as-independent-authority",
+        "sourceRef": {
+          "documentId": "4HB1-2024-May-01-standard:questionPaper",
+          "pdfPages": [
+            12
+          ]
+        }
+      }
+    },
+    {
+      "paperId": "4HB1-2024-May-01-standard",
+      "recordKind": "leaf",
+      "taskId": "4HB1-2024-May-01-standard.Q5.b",
+      "questionPath": "5.b",
+      "originalMarks": 4,
+      "questionPaperPages": [
+        13
+      ],
+      "markSchemePages": [
+        8
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Explain",
+      "requiredKnowledge": [
+        "kinetic energy",
+        "enzyme substrate collisions",
+        "enzyme-substrate complexes",
+        "reaction rate"
+      ],
+      "contextSummary": "Explain low-temperature enzyme activity through kinetic energy, collisions and binding.",
+      "solutionStructure": [
+        "Particles have less kinetic energy.",
+        "There are fewer enzyme/substrate collisions.",
+        "Fewer enzyme\u2013substrate complexes form or less binding occurs.",
+        "Enzyme activity or reaction rate is lower."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "4HB1-2024-May-01-standard.Q5.b:point-1",
+          "marks": 1,
+          "rule": "Particles have less kinetic energy."
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q5.b:point-2",
+          "marks": 1,
+          "rule": "There are fewer enzyme/substrate collisions."
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q5.b:point-3",
+          "marks": 1,
+          "rule": "Fewer enzyme\u2013substrate complexes form or less binding occurs."
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q5.b:point-4",
+          "marks": 1,
+          "rule": "Enzyme activity or reaction rate is lower."
+        }
+      ],
+      "scoringRule": {
+        "mode": "all-distinct",
+        "maximum": 4,
+        "creditPerCriterion": 1,
+        "eligibleCriterionIds": [
+          "4HB1-2024-May-01-standard.Q5.b:point-1",
+          "4HB1-2024-May-01-standard.Q5.b:point-2",
+          "4HB1-2024-May-01-standard.Q5.b:point-3",
+          "4HB1-2024-May-01-standard.Q5.b:point-4"
+        ],
+        "selectionLimit": 4,
+        "sourceRef": {
+          "documentId": "4HB1-2024-May-01-standard:markScheme",
+          "pdfPages": [
+            8
+          ]
+        }
+      },
+      "acceptableAlternatives": [
+        "Less binding for fewer enzyme-substrate complexes.",
+        "Lower activity for lower rate."
+      ],
+      "dependencies": [],
+      "commonErrors": [
+        {
+          "description": "Explaining low-temperature slowing as high-temperature denaturation.",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4HB1:issue2:2.7",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Temperature effect on enzyme activity; source does not ask for denaturation or pH effects.",
+          "evidenceRefs": [
+            {
+              "documentId": "4HB1-spec",
+              "pdfPages": [
+                18
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:markScheme",
+              "pdfPages": [
+                8
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:questionPaper",
+              "pdfPages": [
+                13
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "text"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4HB1-2024-May-01-standard:questionPaper",
+          "pdfPages": [
+            13
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; do not infer authoritative AO marks.",
+      "proposedFamilyId": "4HB1.5-b-candidate",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-05",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "Generative family, semantic/drawing marking, whole skill/AO and independent response calibration pending."
+      ]
     }
   ],
   "blockers": [
-    "Q4\u2013Q9 detailed extraction remains pending:25 indexed parts/58marks.",
-    "Whole visual leaf/mark inventory is reviewed; detailed page/rubric review remains limited to Q1\u2013Q3.",
+    "Q6\u2013Q9 detailed extraction remains pending:18 indexed parts/39marks.",
+    "Whole visual inventory is reviewed; detailed page/rubric review remains limited to Q1\u2013Q5.",
     "Whole historical amendment, experimental skills and assessment-objective reconciliation pending.",
     "No calibrated/active Human Biology templates; no learner or human examiner certification.",
     "Examiner report not obtained for this paper."
   ],
   "processingNotes": [
-    "Q1 eight parts/12marks, Q2 three parts/11marks and Q3 six parts/9marks match printed QP/MS totals;32 reviewed marks remain a subset of90.",
+    "Q1\u2013Q5 source totals12+11+9+9+10=51marks;24 detailed leaves remain a subset of42/90.",
     "Original batch stays indexed-only, with its date conflict and heuristic warnings retained. This newer overlay records partial detailed progress.",
-    "Whole visual inventory establishes42parts/90marks across9compulsory questions;17parts/32marks have detailed records. Inventory reconciliation does not complete detailed processing.",
+    "Whole visual inventory42/90;24 detailed parts/51marks. Inventory reconciliation does not complete detailed processing.",
     "5.7 maps as supporting practical context only; the source method does not fully assess number and position of sensory receptors.",
     "Any-two-of-three sweating criteria are capped at two distinct points; insulation source rejection and thermometer risk-control points are retained.",
     "Source diagrams/method and scheme remain private research evidence; no original paper scans are placed in public assets.",
     "Q2 preserves a source line-graph concession (mark points1\u20133 only), original categorical values and six ordered bacterial gaps. No drawing thresholds or universal food-storage times invented.",
-    "Q3 DNA any-four-of-five cap, source carrier concession and three pedigrees are retained privately. Ambiguous hydrogen-bond wording blocks generated reuse; no medical diagnosis or inheritance-risk advice."
+    "Q3 DNA any-four-of-five cap, source carrier concession and three pedigrees are retained privately. Ambiguous hydrogen-bond wording blocks generated reuse; no medical diagnosis or inheritance-risk advice.",
+    "Q4 apparatus topology, source safety alternatives and within-condition pace control retained. Q4 any4of6 and Q5 any5of6 caps, amount rejection and qualitative graph with no numeric optimum retained; no drawing/method calibration invented."
   ],
   "visualInventoryRef": "research/paper-indexes/4HB1-2024-summer-01.json",
   "inventoryMarksReconciled": true
