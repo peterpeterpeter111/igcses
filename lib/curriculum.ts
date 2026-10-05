@@ -1,3 +1,4 @@
+import humanInternal from '../research/curriculum-audits/4HB1-internal-transport-foundations.json' with { type: 'json' };
 import humanRespiration from '../research/curriculum-audits/4HB1-respiration.json' with { type: 'json' };
 import humanGasExchange from '../research/curriculum-audits/4HB1-gas-exchange.json' with { type: 'json' };
 import humanHeredity from '../research/curriculum-audits/4HB1-heredity.json' with { type: 'json' };
@@ -47,4 +48,4 @@ import mathsAlgebra from '../research/curriculum-audits/4MB1-algebra-foundations
 import mathsPolynomials from '../research/curriculum-audits/4MB1-polynomials-and-fractions.json' with { type: 'json' };
 
 // These bounded audits link partial teaching; they do not promote completion.
-export const curriculumAudits = [motion, forces, mechanics, waves, energy, matter, magnetism, radioactivity, electricity, electricityCircuits, astrophysics, biologyLiving, biologyCells, biologyMolecules, biologyTransport, biologyPhotosynthesis, biologyNutrition, biologyRespiration, biologyHumanGas, humanCells, humanTissues, humanMolecules, humanTransport, humanMovement, humanHeredity, humanRespiration, humanGasExchange, chemistryStates, chemistryAtoms, chemistryCalculations, chemistryBonding, chemistryElectrolysis, mathsNumber, mathsSets, mathsAlgebra, mathsPolynomials, mathsEquations, mathsAlgebraRest, mathsMatrices, mathsGeometry, mathsStatistics, mathsFunctions];
+export const curriculumAudits = [motion, forces, mechanics, waves, energy, matter, magnetism, radioactivity, electricity, electricityCircuits, astrophysics, biologyLiving, biologyCells, biologyMolecules, biologyTransport, biologyPhotosynthesis, biologyNutrition, biologyRespiration, biologyHumanGas, humanCells, humanTissues, humanMolecules, humanTransport, humanMovement, humanHeredity, humanRespiration, humanGasExchange, humanInternal, chemistryStates, chemistryAtoms, chemistryCalculations, chemistryBonding, chemistryElectrolysis, mathsNumber, mathsSets, mathsAlgebra, mathsPolynomials, mathsEquations, mathsAlgebraRest, mathsMatrices, mathsGeometry, mathsStatistics, mathsFunctions];

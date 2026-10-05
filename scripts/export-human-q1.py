@@ -203,7 +203,7 @@ def prepare(root=ROOT):
         for mapping in t['syllabusMappings']:
             p = points.get(mapping['pointId'])
             require(p and p['statementVerified'] is True and p['humanReviewed'] is False, 'Missing verified own identity')
-            if p['reference'] not in ['1.2', '1.3', '2.7', '2.8', '3.1', '3.3', '11.13', '11.14', '11.20', '11.21', '7.1', '7.2', '7.5', '7.6', '8.2', '8.4', '8.5', '8.6', '8.12']:
+            if p['reference'] not in ['1.2', '1.3', '2.7', '2.8', '3.1', '3.3', '11.13', '11.14', '11.20', '11.21', '7.1', '7.2', '7.5', '7.6', '8.2', '8.4', '8.5', '8.6', '8.12', '9.2', '9.4', '9.5']:
                 require(p['teachingCoverage'] == 'not-started' and p['noteSectionIds'] == [], 'Selected identities must not invent teaching')
             require(mapping['currentApplicability'] == 'current-specification' and mapping['reviewStatus'] == 'agent-reviewed', 'Unreviewed mapping status')
             require(mapping['evidenceRefs'] == [dict(documentId=spec['documentId'], pdfPages=[p['pdfPage']]), dict(documentId=ms['id'], pdfPages=[scheme_page]), dict(documentId=qp['id'], pdfPages=pages)], 'Exact mapping source mismatch')

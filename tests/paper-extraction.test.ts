@@ -29,27 +29,34 @@ print(json.dumps({name:list(csv.DictReader((p/(name+'.csv')).open())) for name i
 
 void test('exporter refuses incomplete, duplicated, unreconciled or processed overlays before any write', async () => {
   const { execFileSync } = await import('node:child_process');
-  const result = JSON.parse(execFileSync('python3', ['-c', `import copy,json,subprocess,tempfile
+  const result = JSON.parse(execFileSync('python3', ['-c', `import copy,json,subprocess,tempfile,shutil
 from pathlib import Path
-root=Path.cwd(); data=json.loads((root/'research/extractions/4PH1-2024-June-1-standard.json').read_text())
-before={p:p.read_bytes() for p in (root/'research/ledger/v1').glob('*.csv')}
+source=Path.cwd(); data=json.loads((source/'research/extractions/4PH1-2024-June-1-standard.json').read_text())
 cases=[]
-for mode in ['missing','duplicate','marks','hash','processed','flag']:
- m=copy.deepcopy(data)
- if mode=='missing':m['tasks'].pop()
- elif mode=='duplicate':m['tasks'][-1]=m['tasks'][0]
- elif mode=='marks':m['tasks'][0]['originalMarks']+=1
- elif mode=='hash':m['documents'][0]['sha256']='wrong'
- elif mode=='processed':m['paperStage']='processed'
- elif mode=='flag':m['fullyProcessed']=True
- with tempfile.NamedTemporaryFile(mode='w',suffix='.json',dir=root/'research/extractions',delete=False) as f:
-  json.dump(m,f); path=Path(f.name)
- try:
-  run=subprocess.run(['python3','scripts/export-extraction-ledger.py',str(path)],capture_output=True)
+with tempfile.TemporaryDirectory() as d:
+ root=Path(d)
+ for folder in ['scripts','research/extractions','research/syllabus','research/reviews']:
+  (root/folder).mkdir(parents=True)
+ shutil.copy(source/'scripts/export-extraction-ledger.py',root/'scripts/export-extraction-ledger.py')
+ shutil.copytree(source/'research/ledger/v1',root/'research/ledger/v1')
+ for p in (source/'research/syllabus').glob('4PH1-*.json'):
+  shutil.copy(p,root/'research/syllabus'/p.name)
+ shutil.copy(source/'research/reviews/2026-09-10-physics-leaf-index.json',root/'research/reviews/2026-09-10-physics-leaf-index.json')
+ before={p:p.read_bytes() for p in (root/'research/ledger/v1').glob('*.csv')}
+ path=root/'research/extractions/candidate.json'
+ for mode in ['missing','duplicate','marks','hash','processed','flag']:
+  m=copy.deepcopy(data)
+  if mode=='missing':m['tasks'].pop()
+  elif mode=='duplicate':m['tasks'][-1]=m['tasks'][0]
+  elif mode=='marks':m['tasks'][0]['originalMarks']+=1
+  elif mode=='hash':m['documents'][0]['sha256']='wrong'
+  elif mode=='processed':m['paperStage']='processed'
+  elif mode=='flag':m['fullyProcessed']=True
+  path.write_text(json.dumps(m))
+  run=subprocess.run(['python3',str(root/'scripts/export-extraction-ledger.py'),str(path)],cwd=root,capture_output=True)
   assert run.returncode!=0,mode
   assert all(p.read_bytes()==b for p,b in before.items()),mode
   cases.append(mode)
- finally:path.unlink()
 print(json.dumps(cases))`], { encoding: 'utf8' }));
   assert.equal(result.length, 6);
 });

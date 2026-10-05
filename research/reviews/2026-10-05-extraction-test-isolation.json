@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-05",
+  "scope": "Verification reliability repair only; no production exporter or educational gate weakened.",
+  "failure": "Physics rejection test created/deleted temporary JSON in the real extraction directory while concurrent Human test copied that directory; shutil.copytree observed a disappearing file.",
+  "repair": "Physics malformed-overlay test now copies the minimal stable exporter inputs and ledger into TemporaryDirectory, creates candidate.json there and runs the copied exporter with that isolated working directory.",
+  "retainedRejections": ["missing part", "duplicate part", "marks mismatch", "hash mismatch", "processed stage", "fullyProcessed flag"],
+  "retainedInvariant": "All six failing imports leave every isolated ledger CSV byte unchanged.",
+  "targetedConcurrentTests": {"passed": 16, "failed": 0},
+  "fullApplicationTests": {"passed": 133, "failed": 0},
+  "extractionSourceChanges": false,
+  "limitations": "Bounded reproduction and full suite pass; not a proof of every possible race in unrelated tests. Original failure log preserved in ignored work directory."
+}

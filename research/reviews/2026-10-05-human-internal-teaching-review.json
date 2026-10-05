@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-05",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Original foundations for own Human Biology references 9.1–9.10. Source/logic and bounded browser review, not independent examiner calibration or chapter certification.",
+  "sourcePage": 23,
+  "printedPage": 17,
+  "sourceSha256": "989c6536fa946f1361e45e3c1e0ebced240a9f4666a2c835ce9cf9724a38e30f",
+  "parents": ["9.1", "9.2", "9.3", "9.4", "9.5", "9.6", "9.7", "9.8", "9.9", "9.10"],
+  "newSections": 15,
+  "newIdentities": 7,
+  "requirements": 34,
+  "partialTeachingLinks": 16,
+  "qualifications": [
+    "Blood transports heat energy; heat is not a dissolved chemical. Urea is made in liver and transported toward kidneys.",
+    "Tissue-fluid exchange includes filtration and lymph drainage; no fixed immediate venous reabsorption percentage asserted.",
+    "Mature human red cells lack a nucleus. Biconcavity, haemoglobin and flexibility each linked to a function.",
+    "ABO surface antigens distinguished from plasma antibodies. Group O lacks A/B antigens, not every possible antigen.",
+    "Compatibility model explicitly limited to red cells and ABO; Rh, other groups and crossmatching not replaced by a classroom chart.",
+    "Phagocytosis distinguished from antigen-specific lymphocyte responses. Soluble fibrinogen and insoluble fibrin correctly ordered.",
+    "Vessels defined by direction relative to heart, including pulmonary oxygenation exceptions. Pulse identified as pressure wave.",
+    "Pulmonary/systemic, renal and hepatic portal routes checked. Ventricular wall demand linked to pressure; valves respond passively to pressure differences."
+  ],
+  "externalAccess": [
+    {"url": "https://www.blood.co.uk/why-give-blood/blood-types/", "status": "page-read", "scope": "ABO/Rh foundations only"},
+    {"url": "https://www.nhlbi.nih.gov/health/heart/blood-flow", "status": "page-read", "scope": "chambers, flow and valves"},
+    {"url": "https://www.nhlbi.nih.gov/health/heart/heart-beats", "status": "page-read", "scope": "pressure/filling/ejection; no clinical reference ranges used"},
+    {"url": "https://journals.physiology.org/doi/abs/10.1152/physrev.00006.2020", "status": "search-abstract-only; direct open failed", "scope": "lymph drainage support; full text not claimed"}
+  ],
+  "browser": {
+    "route": "/subjects/human-biology/internal-transport#double-circulation",
+    "viewportWidth": 583,
+    "documentWidth": 583,
+    "diagramLoaded": true,
+    "diagramScope": "Original flowchart, not anatomy. Right heart → lungs → left heart → body → right heart. Direction/labels and complete figure visually inspected.",
+    "screenshot": "work/human-internal-diagram-proof-2026-10-05.png"
+  },
+  "verification": {
+    "applicationTests": {"passed": 133, "failed": 0},
+    "typecheck": "pass",
+    "lint": "pass",
+    "researchChecks": 14,
+    "isolatedD1": "pass",
+    "productionBuild": "pass",
+    "publicFilesScanned": 71,
+    "publicScanFindings": []
+  },
+  "remaining": ["9.11–9.19 not taught in this phase", "Unfamiliar-response and diagram assessment", "Historical source applicability and whole-paper skills/AO review", "Independent marking/difficulty calibration"],
+  "completeChapters": 0,
+  "completePoints": 0,
+  "activeTemplates": 0
+}

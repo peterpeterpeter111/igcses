@@ -1,0 +1,17 @@
+# Human Biology internal-transport foundations — 5 October 2026
+
+Continued local b0474ff, exactly mirrored by GitHub 901abc3. Preserved history, UI, paper records and all template gates. Last ordinary allowance: 63% five-hour / 36% weekly remaining; no reset consumed.
+
+Added 15 original sections on the existing internal-transport route, with a new partial note document and an original double-circulation flowchart. Own 4HB1 Issue2 PDF23 / printed17 supplies 9.1–9.10, both01/02. Seven new identities, ten partial parent audits, 34 local editorial requirements and sixteen partial teaching links. Existing9.2/9.4/9.5 paper-demand inventories gain truthful partial teaching links; extraction tasks, document hashes and completion gates unchanged. References9.11–9.19 remain unfinished.
+
+Teaching covers blood/plasma, tissue fluid and lymph, red-cell adaptations, ABO antigens/antibodies and limited red-cell compatibility, phagocytes/lymphocytes, clotting, vessel adaptations, pulmonary/systemic/renal/hepatic routes and pressure-driven heart valves. Qualifications: heat is energy, mature red-cell scope, O lacks A/B rather than every antigen, ABO classroom charts do not replace clinical crossmatching, and no fixed tissue-fluid reabsorption percentage. NHSBT and NHLBI pages read; lymphatic review search abstract available but direct full text inaccessible. Review file records limits.
+
+New main files: content/notes/human-biology-internal-transport.json; public/diagrams/human-double-circulation.svg; research/syllabus/4HB1-internal-transport-foundations.json; research/curriculum-audits/4HB1-internal-transport-foundations.json; research/reviews/2026-10-05-human-internal-{content,evidence,teaching-review}.json. Registries, two selected-demand inventories, teaching export allowlist, ledgers and exact count assertions updated.
+
+The full suite exposed a shared-folder test race: Physics created/deleted temporary extraction files while Human copied the folder. Physics rejection tests now use a private temporary project with minimal stable inputs. All six rejection cases and before-write byte invariants remain. No production exporter gate changed. Concurrent16 targeted tests and the final133-test suite pass; original failed log preserved. Review: research/reviews/2026-10-05-extraction-test-isolation.json.
+
+Typecheck, lint, fourteen research checks, content/evidence reconciliation, isolatedD1, production build and71-file privacy scan pass. At583px reader has no horizontal overflow; full diagram/route arrows and caption reviewed, screenshot work/human-internal-diagram-proof-2026-10-05.png. User reader unchanged.
+
+Totals:434 sections /23 partial notes /36 catalog routes;457 reviewed parent identities /441 partial parent audits /1,240 local requirements /627 partial teaching links. Human92 sections /8 partial notes /76 identities /69 audits /259 requirements. Seven obtained pairs; detailed Human42parts90marks, Physics51/110, Maths38/100 plus one English pilot task. Zero fully processed papers, complete chapters/points or active templates. Seven provisional families/seven experimental offline generators and markers. NoAI, Sites version, deployment or verified publicURL.
+
+Save and sync non-force. Next: own Human9.11–9.19 source/clinical teaching audit, remaining curriculum and whole-paper skills/historical audits, then calibrated families. AIlast. Continue only above5%in both ordinarywindows; checkpoint/pauseat5%; noreset.

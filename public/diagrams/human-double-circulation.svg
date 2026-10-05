@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">The two connected circulatory routes</title>
+  <desc id="desc">Body to venae cavae to right atrium to right ventricle to pulmonary artery to lungs. Lungs to pulmonary veins to left atrium to left ventricle to aorta to body. Brown and crimson distinguish relative oxygen content, not the actual colour of blood.</desc>
+  <defs>
+    <marker id="poor" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#75604c"/></marker>
+    <marker id="rich" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#8d3035"/></marker>
+  </defs>
+  <rect width="1200" height="900" fill="#fbf6ec"/>
+  <text x="60" y="57" font-family="Georgia,serif" font-size="35" fill="#362a28">Follow one complete journey</text>
+  <g fill="none" stroke-width="7" stroke-linejoin="round">
+    <path d="M180 350V175H420" stroke="#75604c" marker-end="url(#poor)"/>
+    <path d="M780 246H1010V350" stroke="#75604c" marker-end="url(#poor)"/>
+    <path d="M1010 480V645H780" stroke="#8d3035" marker-end="url(#rich)"/>
+    <path d="M420 715H180V480" stroke="#8d3035" marker-end="url(#rich)"/>
+  </g>
+  <g fill="#f5e9d8" stroke="#705d50" stroke-width="3">
+    <rect x="60" y="350" width="240" height="130"/><rect x="890" y="350" width="240" height="130"/>
+    <rect x="420" y="100" width="360" height="180"/><rect x="420" y="570" width="360" height="180"/>
+  </g>
+  <g font-family="system-ui,sans-serif" fill="#362a28" text-anchor="middle">
+    <text x="600" y="138" font-size="24" letter-spacing="2">RIGHT HEART</text>
+    <text x="600" y="183" font-size="29">Right atrium</text><text x="600" y="256" font-size="29">Right ventricle</text>
+    <text x="600" y="607" font-size="24" letter-spacing="2">LEFT HEART</text>
+    <text x="600" y="653" font-size="29">Left atrium</text><text x="600" y="725" font-size="29">Left ventricle</text>
+    <text x="180" y="396" font-size="30">Body tissues</text><text x="180" y="441" font-size="24">O₂ used · CO₂ added</text>
+    <text x="1010" y="396" font-size="30">Lungs</text><text x="1010" y="441" font-size="24">O₂ added · CO₂ removed</text>
+    <text x="295" y="147" font-size="25">Venae cavae</text><text x="924" y="218" font-size="25">Pulmonary artery</text>
+    <text x="948" y="610" font-size="25">Pulmonary veins</text><text x="304" y="683" font-size="25">Aorta</text>
+  </g>
+  <path d="M600 197V223" stroke="#75604c" stroke-width="5" marker-end="url(#poor)"/>
+  <path d="M600 668V693" stroke="#8d3035" stroke-width="5" marker-end="url(#rich)"/>
+  <g font-family="system-ui,sans-serif" font-size="24" fill="#362a28">
+    <path d="M65 812H130" stroke="#75604c" stroke-width="6"/><text x="146" y="820">Relatively oxygen-poor</text>
+    <path d="M655 812H720" stroke="#8d3035" stroke-width="6"/><text x="736" y="820">Relatively oxygen-rich</text>
+    <text x="60" y="868">Route diagram, not anatomy. Blood on both sides is red.</text>
+  </g>
+</svg>

@@ -1,3 +1,4 @@
+import humanInternal from './notes/human-biology-internal-transport.json' with { type: 'json' };
 import humanRespiration from './notes/human-biology-respiration.json' with { type: 'json' };
 import humanGasExchange from './notes/human-biology-gas-exchange.json' with { type: 'json' };
 import humanHeredity from './notes/human-biology-heredity.json' with { type: 'json' };
@@ -68,6 +69,7 @@ export const notes: ChapterNotes[] = [
   humanHeredity,
   humanRespiration,
   humanGasExchange,
+  humanInternal,
   biology,
   biologyStructures,
   chemistry,

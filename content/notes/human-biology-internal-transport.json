@@ -1,0 +1,574 @@
+{
+  "subjectId": "human-biology",
+  "chapterId": "internal-transport",
+  "status": "source-checked",
+  "complete": false,
+  "humanReviewed": false,
+  "sourceId": "4HB1-spec",
+  "sourcePages": [
+    23
+  ],
+  "supportingSources": [
+    {
+      "title": "NHS Blood and Transplant: ABO blood groups",
+      "url": "https://www.blood.co.uk/why-give-blood/blood-types/",
+      "sectionIds": [
+        "abo-antigens-and-antibodies",
+        "abo-transfusion-model"
+      ]
+    },
+    {
+      "title": "NHLBI: heart flow and valves",
+      "url": "https://www.nhlbi.nih.gov/health/heart/blood-flow",
+      "sectionIds": [
+        "double-circulation",
+        "heart-chambers-and-walls"
+      ]
+    },
+    {
+      "title": "NHLBI: heart contraction and filling",
+      "url": "https://www.nhlbi.nih.gov/health/heart/heart-beats",
+      "sectionIds": [
+        "heart-valves-and-cycle"
+      ]
+    },
+    {
+      "title": "Physiological Reviews: lymphatic fluid balance",
+      "url": "https://journals.physiology.org/doi/abs/10.1152/physrev.00006.2020",
+      "sectionIds": [
+        "tissue-fluid-and-lymph"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Diffusion, gas exchange and cell structures.",
+    "Understand the difference between a structure and its function."
+  ],
+  "goals": [
+    "Identify blood components and explain their transport/defence roles.",
+    "Trace tissue-fluid drainage and the main circulatory routes.",
+    "Explain ABO compatibility as a limited red-cell model and link heart/vessel structures to function."
+  ],
+  "sections": [
+    {
+      "id": "blood-components",
+      "title": "Identify the four main blood components",
+      "points": [
+        "9.1"
+      ],
+      "paragraphs": [
+        "Blood consists of cells and cell fragments suspended in plasma. Red blood cells, or erythrocytes, carry oxygen using haemoglobin. White blood cells contribute to defence; the required groups here are phagocytes and lymphocytes.",
+        "Platelets are small cell fragments involved in clot formation. Plasma is the liquid component, mainly water with dissolved substances and proteins. A blood sample is not made only of red cells, even though haemoglobin gives it its familiar colour.",
+        "Keep a component separate from a substance carried by it: a red blood cell contains haemoglobin; plasma transports dissolved materials. The roles overlap in a coordinated transport and defence system."
+      ],
+      "terms": [
+        "erythrocyte",
+        "phagocyte",
+        "lymphocyte",
+        "platelet",
+        "plasma"
+      ],
+      "example": {
+        "question": "Which components have transport and clotting roles?",
+        "steps": [
+          "Red cells carry oxygen through haemoglobin.",
+          "Plasma carries many dissolved substances.",
+          "Platelets help initiate clot formation."
+        ],
+        "explanation": "Name the component, then connect it to a function."
+      },
+      "practice": {
+        "question": "Is plasma a type of white blood cell?",
+        "answer": "No. It is the liquid in which blood cells and platelets are suspended.",
+        "explanation": "Name the component, then connect it to a function."
+      },
+      "commonMistakes": [
+        "Do not describe platelets as complete red blood cells."
+      ]
+    },
+    {
+      "id": "plasma-transport",
+      "title": "Follow the materials and energy transported by plasma",
+      "points": [
+        "9.2"
+      ],
+      "paragraphs": [
+        "Plasma carries absorbed digested food, including glucose and amino acids, from the intestine toward tissues. It carries urea, made in the liver from excess amino-acid breakdown, to the kidneys for excretion. Hormones travel from glands toward their target tissues in plasma.",
+        "Carbon dioxide from respiring tissues is carried toward the lungs. A large part is transported as hydrogencarbonate ions in plasma rather than solely as dissolved CO₂ gas. At this level, connect CO₂ transport to respiration and exhalation.",
+        "Flowing blood also transfers heat energy around the body and toward the skin. Heat energy is not a dissolved chemical substance like glucose. This transport helps distribute thermal energy and contributes to temperature regulation."
+      ],
+      "terms": [
+        "urea",
+        "hormone",
+        "hydrogencarbonate",
+        "heat energy"
+      ],
+      "example": {
+        "question": "Trace the routes of glucose and urea.",
+        "steps": [
+          "Glucose: absorbed from intestine, carried toward cells for respiration or storage.",
+          "Urea: produced in liver, transported toward kidneys for excretion."
+        ],
+        "explanation": "The same fluid carries substances between different organs."
+      },
+      "practice": {
+        "question": "Does the kidney normally produce all the urea it excretes?",
+        "answer": "No. The liver produces urea, and blood transports it to the kidneys.",
+        "explanation": "The same fluid carries substances between different organs."
+      },
+      "commonMistakes": [
+        "Do not list heat as a dissolved nutrient or call urea undigested food."
+      ]
+    },
+    {
+      "id": "tissue-fluid-and-lymph",
+      "title": "Explain tissue fluid and its drainage",
+      "points": [
+        "9.3"
+      ],
+      "paragraphs": [
+        "Tissue fluid surrounds body cells and provides an exchange medium between capillary blood and cells. Oxygen and nutrients can move from this fluid into cells; carbon dioxide and other products can move out of cells into it.",
+        "Pressure within capillaries can drive water and small dissolved substances across their thin walls into tissue spaces: filtration. Blood cells and most large plasma proteins are retained in blood in this simplified normal model. Hydrostatic pressure differences favour outward movement; plasma proteins and the barrier properties also influence fluid exchange.",
+        "Excess tissue fluid enters lymphatic vessels and is then called lymph. These vessels return fluid and proteins toward the bloodstream. Do not assign a fixed percentage of all tissue fluid to immediate venous-end reabsorption: exchange varies by tissue and conditions, and lymphatic drainage is important for normal fluid balance."
+      ],
+      "terms": [
+        "tissue fluid",
+        "filtration",
+        "hydrostatic pressure",
+        "lymph"
+      ],
+      "example": {
+        "question": "Why is tissue fluid not identical to whole blood?",
+        "steps": [
+          "Water and small solutes can filter into tissue spaces.",
+          "Red cells and most large plasma proteins remain in the capillaries.",
+          "The fluid also exchanges materials with cells."
+        ],
+        "explanation": "Composition follows the selective movement across the capillary wall."
+      },
+      "practice": {
+        "question": "What happens to excess tissue fluid?",
+        "answer": "It drains into lymphatic vessels as lymph and is returned toward the blood.",
+        "explanation": "Composition follows the selective movement across the capillary wall."
+      },
+      "commonMistakes": [
+        "Do not say whole blood normally leaks out of every capillary or that lymph is made by kidneys."
+      ]
+    },
+    {
+      "id": "red-cell-adaptations",
+      "title": "Pair red-cell adaptations with oxygen transport",
+      "points": [
+        "9.4"
+      ],
+      "paragraphs": [
+        "Mature human red blood cells contain a large amount of haemoglobin, which binds oxygen reversibly. Oxygen is loaded in the lungs and released as blood supplies tissues. The red cell transports the oxygen; it does not generate it.",
+        "The biconcave shape provides a large surface area relative to volume and a thin centre, supporting rapid diffusion. A mature red cell has no nucleus, leaving more space for haemoglobin. Its flexible shape helps it pass through narrow capillaries.",
+        "An explanation must connect a feature to a benefit. Naming biconcave without explaining exchange area or diffusion distance is weaker than a linked explanation. Lack of a nucleus is a mature human red-cell adaptation, not a feature of all blood cells."
+      ],
+      "terms": [
+        "haemoglobin",
+        "biconcave",
+        "reversible binding"
+      ],
+      "example": {
+        "question": "Explain two red-cell adaptations.",
+        "steps": [
+          "Haemoglobin reversibly binds oxygen for transport.",
+          "Biconcavity increases exchange area and shortens the diffusion path through the thin centre."
+        ],
+        "explanation": "Structure must be linked to oxygen movement or carriage."
+      },
+      "practice": {
+        "question": "Do all white cells also lack a nucleus?",
+        "answer": "No. White blood cells have nuclei; the stated adaptation is for mature human red cells.",
+        "explanation": "Structure must be linked to oxygen movement or carriage."
+      },
+      "commonMistakes": [
+        "Do not say haemoglobin carries oxygen by making new oxygen atoms."
+      ]
+    },
+    {
+      "id": "abo-antigens-and-antibodies",
+      "title": "Separate red-cell antigens from plasma antibodies",
+      "points": [
+        "9.5"
+      ],
+      "paragraphs": [
+        "In the ABO model, group A red cells carry A antigens and the plasma normally contains anti-B antibodies. Group B cells carry B antigens and the plasma normally contains anti-A. Group AB cells carry both A and B antigens and normally lack anti-A and anti-B.",
+        "Group O red cells have neither A nor B antigen, while the plasma normally contains both anti-A and anti-B. This does not mean group O cells have no antigens of any kind; ABO is one blood-group system.",
+        "Antigens are the identifying molecules on red-cell surfaces. Antibodies are proteins in plasma that can bind particular antigens. Mixing these locations reverses the compatibility explanation."
+      ],
+      "terms": [
+        "ABO",
+        "antigen",
+        "anti-A",
+        "anti-B"
+      ],
+      "example": {
+        "question": "What are the ABO features of group B?",
+        "steps": [
+          "B antigen is present on red cells.",
+          "Anti-A is normally present in plasma."
+        ],
+        "explanation": "An antibody against a foreign ABO antigen differs from the cell’s own antigen."
+      },
+      "practice": {
+        "question": "Does group O mean there are no red-cell antigens at all?",
+        "answer": "No. It means neither A nor B antigen in the ABO system.",
+        "explanation": "An antibody against a foreign ABO antigen differs from the cell’s own antigen."
+      },
+      "commonMistakes": [
+        "Do not call the plasma antibody an antigen on a red cell."
+      ]
+    },
+    {
+      "id": "abo-transfusion-model",
+      "title": "Explain ABO compatibility in a red-cell model",
+      "points": [
+        "9.5"
+      ],
+      "paragraphs": [
+        "In a simplified red-cell transfusion model, recipient antibodies must not attack the donor red-cell antigens. Anti-A can bind A antigens, and anti-B can bind B antigens, leading to agglutination and potentially haemolysis. Incompatible transfusion can be dangerous.",
+        "A group A recipient normally has anti-B, so group B donor red cells are incompatible in this ABO-only model. O donor red cells lack A and B antigens, which explains their broad ABO red-cell compatibility.",
+        "This classroom model does not establish clinical compatibility by itself. Rh and other blood-group systems, antibody screening and crossmatching also matter. Plasma compatibility follows different antibody considerations; do not extend a red-cell rule to every blood product or use it as a transfusion instruction."
+      ],
+      "terms": [
+        "agglutination",
+        "haemolysis",
+        "compatibility",
+        "crossmatch"
+      ],
+      "example": {
+        "question": "Explain why group B red cells are incompatible with a group A recipient in the ABO model.",
+        "steps": [
+          "The recipient’s plasma contains anti-B.",
+          "Those antibodies bind the B antigens on donor red cells.",
+          "This can cause cell clumping and destruction."
+        ],
+        "explanation": "Follow recipient antibody to donor cell antigen."
+      },
+      "practice": {
+        "question": "Can an ABO classroom chart alone approve a real transfusion?",
+        "answer": "No. Clinical testing includes other blood groups and crossmatching.",
+        "explanation": "Follow recipient antibody to donor cell antigen."
+      },
+      "commonMistakes": [
+        "Do not use “universal” without naming the red-cell and blood-group scope."
+      ]
+    },
+    {
+      "id": "phagocytosis",
+      "title": "Follow a phagocyte removing a pathogen",
+      "points": [
+        "9.6"
+      ],
+      "paragraphs": [
+        "Phagocytes are white blood cells that can engulf microorganisms or other foreign material. Their membrane surrounds the target, bringing it into the cell in a vesicle.",
+        "Digestive enzymes then break down the engulfed material. This is phagocytosis. It is a cellular defence response and does not require the phagocyte to manufacture a matching antibody for every target.",
+        "Describe engulfing followed by digestion. Saying a white cell eats a pathogen is informal and leaves out the mechanism that explains the role."
+      ],
+      "terms": [
+        "phagocytosis",
+        "engulf",
+        "digestive enzyme"
+      ],
+      "example": {
+        "question": "Describe the action of a phagocyte.",
+        "steps": [
+          "It surrounds and engulfs the target.",
+          "Enzymes digest the material inside the cell."
+        ],
+        "explanation": "The sequence explains removal rather than just naming defence."
+      },
+      "practice": {
+        "question": "Is phagocytosis the same as antibody production?",
+        "answer": "No. Phagocytes engulf; lymphocytes are associated with specific antibody responses.",
+        "explanation": "The sequence explains removal rather than just naming defence."
+      },
+      "commonMistakes": [
+        "Do not describe every white-cell action as phagocytosis."
+      ]
+    },
+    {
+      "id": "lymphocytes-and-antibodies",
+      "title": "Connect lymphocytes with specific defence",
+      "points": [
+        "9.6"
+      ],
+      "paragraphs": [
+        "Lymphocytes contribute to specific immune responses, including antibody production. Different antibodies bind particular antigens. Binding can help neutralise a target or make its removal easier.",
+        "The response to a newly encountered antigen takes time to develop. Some lymphocytes provide memory, helping a later response to the same antigen become faster and stronger. The detailed plasma-cell stage is not needed for this point.",
+        "Antibodies are not antibiotics. An antibody is a protein made by the immune response; an antibiotic is a medicine used against susceptible bacteria. Specificity means one antibody does not automatically bind every unrelated pathogen."
+      ],
+      "terms": [
+        "lymphocyte",
+        "antibody",
+        "specificity",
+        "memory"
+      ],
+      "example": {
+        "question": "Why is a particular antibody not effective against every antigen?",
+        "steps": [
+          "Its binding region has a particular shape.",
+          "It binds a matching antigen rather than all foreign molecules."
+        ],
+        "explanation": "Specific binding explains the selective response."
+      },
+      "practice": {
+        "question": "Are antibodies medicines prescribed as antibiotics?",
+        "answer": "No. They are different types of agents and have different mechanisms.",
+        "explanation": "Specific binding explains the selective response."
+      },
+      "commonMistakes": [
+        "Do not claim that every antigen fits the same antibody."
+      ]
+    },
+    {
+      "id": "blood-clotting",
+      "title": "Connect a platelet response to a fibrin clot",
+      "points": [
+        "9.7"
+      ],
+      "paragraphs": [
+        "When a vessel is damaged, platelets help initiate a clotting response. Activated clotting processes involve enzymes that convert soluble fibrinogen into insoluble fibrin. The names of the enzyme intermediates are not needed here.",
+        "Fibrin forms a mesh that traps blood cells and helps seal the damaged region. A clot reduces blood loss and helps prevent microorganisms entering through the wound.",
+        "Platelets are not themselves the long fibrin strands, and fibrinogen is not an insoluble mesh already circulating throughout healthy blood. The conversion after damage explains how a local barrier forms."
+      ],
+      "terms": [
+        "fibrinogen",
+        "fibrin",
+        "clot"
+      ],
+      "example": {
+        "question": "Explain how a clot limits blood loss.",
+        "steps": [
+          "Enzymes convert soluble fibrinogen into insoluble fibrin.",
+          "The fibrin mesh traps cells and helps seal the wound."
+        ],
+        "explanation": "State the conversion and its physical result."
+      },
+      "practice": {
+        "question": "Why is fibrinogen described as soluble before clotting?",
+        "answer": "It can remain in plasma until the clotting response converts it into insoluble fibrin.",
+        "explanation": "State the conversion and its physical result."
+      },
+      "commonMistakes": [
+        "Do not swap the soluble fibrinogen and insoluble fibrin names."
+      ]
+    },
+    {
+      "id": "arteries-veins-capillaries",
+      "title": "Compare vessel structure, direction and pressure",
+      "points": [
+        "9.8"
+      ],
+      "paragraphs": [
+        "Arteries carry blood away from the heart. Their relatively thick muscular and elastic walls withstand and accommodate higher pulsating pressure. Veins return blood toward the heart at lower pressure; they have thinner walls, a relatively larger lumen and many have valves to oppose backflow.",
+        "Capillaries connect the small arterial and venous branches. Their walls are one cell layer thick and their narrow lumens bring blood close to surrounding tissues. Short distances support exchange of materials; capillaries are not miniature thick-walled arteries.",
+        "A pulse is an arterial pressure wave caused by heart contraction. Classify a vessel by direction relative to the heart, not oxygen content: the pulmonary artery carries oxygen-poor blood away and pulmonary veins carry oxygen-rich blood toward the heart."
+      ],
+      "terms": [
+        "artery",
+        "vein",
+        "capillary",
+        "lumen",
+        "pulse"
+      ],
+      "example": {
+        "question": "Compare a systemic artery and vein for wall and valve adaptations.",
+        "steps": [
+          "The artery has thicker muscular/elastic walls for higher pressure.",
+          "The vein has thinner walls and commonly valves to oppose backflow at lower pressure."
+        ],
+        "explanation": "Relate each structure to its conditions, rather than claiming every vessel has identical valves."
+      },
+      "practice": {
+        "question": "Is a pulmonary vein an artery because it carries oxygen-rich blood?",
+        "answer": "No. It carries blood toward the heart, so it is a vein.",
+        "explanation": "Relate each structure to its conditions, rather than claiming every vessel has identical valves."
+      },
+      "commonMistakes": [
+        "Do not use oxygen content as the defining artery/vein rule."
+      ]
+    },
+    {
+      "id": "double-circulation",
+      "title": "Trace the pulmonary and systemic circuits",
+      "points": [
+        "9.9"
+      ],
+      "paragraphs": [
+        "The human circulation has two connected circuits. Pulmonary circulation runs from the right side of the heart to the lungs and back to the left side. Systemic circulation runs from the left side to body tissues and back to the right side.",
+        "Follow the main route: body → venae cavae → right atrium → right ventricle → pulmonary artery → lungs → pulmonary veins → left atrium → left ventricle → aorta → body. Blood passes through the heart twice in one complete journey through both circuits.",
+        "The lungs add oxygen and remove carbon dioxide; body tissues use oxygen and release carbon dioxide. The two sides keep the streams largely separate in the normal heart."
+      ],
+      "terms": [
+        "double circulation",
+        "pulmonary artery",
+        "pulmonary veins",
+        "aorta",
+        "venae cavae"
+      ],
+      "example": {
+        "question": "Which vessel brings blood from the lungs to the heart?",
+        "steps": [
+          "It is a pulmonary vein.",
+          "It delivers oxygen-rich blood to the left atrium."
+        ],
+        "explanation": "Name both route and destination."
+      },
+      "practice": {
+        "question": "Why is the circulation called double?",
+        "answer": "A complete trip through lungs and body passes through the heart twice.",
+        "explanation": "Name both route and destination."
+      },
+      "commonMistakes": [
+        "Do not send blood from the lungs directly into the right ventricle."
+      ],
+      "diagram": {
+        "src": "/diagrams/human-double-circulation.svg",
+        "alt": "Original flowchart: body returns blood to the right heart, which sends it to lungs; lungs return blood to left heart, which sends it to body.",
+        "caption": "A route diagram, not an anatomical view. Arrows show direction; oxygen-rich and oxygen-poor blood are both red in the body."
+      }
+    },
+    {
+      "id": "liver-and-kidney-vessels",
+      "title": "Add liver and kidney routes to the general plan",
+      "points": [
+        "9.9"
+      ],
+      "paragraphs": [
+        "Renal arteries carry blood from the aorta toward the kidneys. Renal veins return blood from the kidneys toward the vena cava. The kidneys receive blood for filtration and regulation; they do not send filtered blood directly to the lungs.",
+        "The liver receives oxygen-rich blood through the hepatic artery and nutrient-rich blood from the gut through the hepatic portal vein. The portal route allows absorbed substances to reach the liver before returning to the main systemic circulation.",
+        "Hepatic veins drain the liver toward the vena cava. Keep hepatic artery, hepatic portal vein and hepatic vein distinct: they have different origins and directions."
+      ],
+      "terms": [
+        "renal artery",
+        "renal vein",
+        "hepatic artery",
+        "hepatic portal vein",
+        "hepatic vein"
+      ],
+      "example": {
+        "question": "Trace an absorbed glucose molecule from intestine through the liver.",
+        "steps": [
+          "It can enter blood associated with the intestine.",
+          "The hepatic portal vein carries it toward the liver.",
+          "Blood then leaves through hepatic veins toward the vena cava."
+        ],
+        "explanation": "The portal vein connects two organ capillary beds; it is not the same vessel as the liver’s arterial supply."
+      },
+      "practice": {
+        "question": "Which named vessel carries blood away from a kidney?",
+        "answer": "A renal vein.",
+        "explanation": "The portal vein connects two organ capillary beds; it is not the same vessel as the liver’s arterial supply."
+      },
+      "commonMistakes": [
+        "Do not reverse hepatic portal and hepatic vein routes."
+      ]
+    },
+    {
+      "id": "heart-chambers-and-walls",
+      "title": "Relate heart structure to the two circuits",
+      "points": [
+        "9.10"
+      ],
+      "paragraphs": [
+        "The heart has two atria that receive blood and two ventricles that pump blood away. The right atrium receives from the venae cavae; the left atrium receives from pulmonary veins. A septum separates the left and right sides.",
+        "The left ventricle has a thicker muscular wall because it produces the pressure needed for the systemic circuit. The right ventricle pumps toward the lungs at lower pressure. The left side does not need a thicker wall simply because its blood contains more oxygen.",
+        "Coronary arteries supply the heart muscle itself with oxygen and nutrients. Blood inside a chamber is not sufficient on its own to supply every part of the thick muscular wall."
+      ],
+      "terms": [
+        "atrium",
+        "ventricle",
+        "septum",
+        "coronary artery"
+      ],
+      "example": {
+        "question": "Why is the left ventricular wall thicker?",
+        "steps": [
+          "It pumps blood through the systemic circuit.",
+          "More muscular contraction generates the required higher pressure."
+        ],
+        "explanation": "Tie wall thickness to pumping demand."
+      },
+      "practice": {
+        "question": "Does the septum separate atria from ventricles?",
+        "answer": "The septum divides the left and right sides; valves lie between each atrium and ventricle.",
+        "explanation": "Tie wall thickness to pumping demand."
+      },
+      "commonMistakes": [
+        "Do not say the right side always appears on the right of a front-view drawing."
+      ]
+    },
+    {
+      "id": "heart-valves-and-cycle",
+      "title": "Use pressure differences to explain a heartbeat",
+      "points": [
+        "9.10"
+      ],
+      "paragraphs": [
+        "Atrioventricular valves lie between atria and ventricles: tricuspid on the right and bicuspid, or mitral, on the left. Semilunar valves lie at the exits to the pulmonary artery and aorta. They prevent backflow and respond to pressure differences; they do not actively pump blood.",
+        "When ventricles relax, they fill as the pressure conditions allow blood through the atrioventricular valves. Atrial contraction completes filling. As ventricles contract and their pressure exceeds atrial pressure, those valves close. Semilunar valves open when ventricular pressure exceeds arterial pressure, allowing ejection.",
+        "As ventricles relax and their pressure falls below arterial pressure, semilunar valves close to prevent return from the arteries. Filling can begin again once the atrial-to-ventricular pressure difference opens the atrioventricular valves."
+      ],
+      "terms": [
+        "atrioventricular valve",
+        "tricuspid",
+        "mitral",
+        "semilunar valve"
+      ],
+      "example": {
+        "question": "Why do atrioventricular valves close during ventricular contraction?",
+        "steps": [
+          "Ventricular pressure rises above atrial pressure.",
+          "The valve flaps close, preventing blood returning to the atria."
+        ],
+        "explanation": "State the pressure comparison and backflow prevented."
+      },
+      "practice": {
+        "question": "Do valves create blood pressure by contracting?",
+        "answer": "No. The heart muscle creates pressure; valves open or close in response to pressure differences.",
+        "explanation": "State the pressure comparison and backflow prevented."
+      },
+      "commonMistakes": [
+        "Do not claim every valve opens at the same time."
+      ]
+    },
+    {
+      "id": "reading-heart-diagrams",
+      "title": "Follow arrows before naming chambers",
+      "points": [
+        "9.9",
+        "9.10"
+      ],
+      "paragraphs": [
+        "Identify the direction of blood flow before relying on where a label sits on the page. In a front view, the person’s anatomical right is usually on the viewer’s left. A flowchart may place structures differently, so use its labels and arrows.",
+        "Trace a complete route in small steps and check each connection against the circuit. An artery takes blood away from a ventricle; a returning major vein enters an atrium. The septum separates the sides and valves control onward flow.",
+        "For an explanation of function, add the relevant pressure, oxygenation or exchange role. A list of vessel names without the correct sequence does not show how the circulation works."
+      ],
+      "terms": [
+        "diagram orientation",
+        "flow direction"
+      ],
+      "example": {
+        "question": "A diagram shows blood entering a chamber from a pulmonary vein. Identify the chamber.",
+        "steps": [
+          "The pulmonary vein returns from lungs.",
+          "It enters the left atrium.",
+          "Use that connection even if the page layout is unfamiliar."
+        ],
+        "explanation": "Anatomical identity follows the route, not the viewer’s side."
+      },
+      "practice": {
+        "question": "Where does the aorta receive blood?",
+        "answer": "From the left ventricle.",
+        "explanation": "Anatomical identity follows the route, not the viewer’s side."
+      },
+      "commonMistakes": [
+        "Do not guess anatomical left/right solely from position on the page."
+      ]
+    }
+  ]
+}
