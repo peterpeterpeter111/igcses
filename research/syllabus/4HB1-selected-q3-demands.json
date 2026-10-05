@@ -7,11 +7,11 @@
   "reviewDate": "2026-10-05",
   "reviewedBy": "Codex visual/source review",
   "reviewerType": "agent",
-  "reviewMethod": "Own-spec PDF25 visual review; selected Q3 identities only. No teaching/substatement certification.",
+  "reviewMethod": "Own-spec PDF25 visual review and original teaching/source checks; no completion certification.",
   "reviewedPages": [
     25
   ],
-  "scope": "Selected inherited-condition and pedigree identities; no notes or complete heredity audit.",
+  "scope": "Selected heredity identities with ten original partial lessons; the original Q3 filename and four identities are preserved. Whole reproduction/heredity teaching remains incomplete.",
   "points": [
     {
       "id": "4HB1:issue2:11.13",
@@ -26,9 +26,12 @@
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "reproduction",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
-      "humanReviewed": false
+      "noteSectionIds": [
+        "genes-and-alleles"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-05"
     },
     {
       "id": "4HB1:issue2:11.14",
@@ -43,9 +46,15 @@
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "reproduction",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
-      "humanReviewed": false
+      "noteSectionIds": [
+        "genotype-and-phenotype",
+        "homozygous-and-heterozygous",
+        "codominance",
+        "haploid-and-diploid"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-05"
     },
     {
       "id": "4HB1:issue2:11.20",
@@ -60,9 +69,12 @@
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "reproduction",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
-      "humanReviewed": false
+      "noteSectionIds": [
+        "reading-family-pedigrees"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-05"
     },
     {
       "id": "4HB1:issue2:11.21",
@@ -77,9 +89,13 @@
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "reproduction",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
-      "humanReviewed": false
+      "noteSectionIds": [
+        "autosomal-condition-models",
+        "x-linked-condition-models"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-05"
     }
   ]
 }

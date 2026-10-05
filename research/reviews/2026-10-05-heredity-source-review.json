@@ -1,0 +1,164 @@
+{
+  "date": "2026-10-05",
+  "qualification": "4HB1",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "specificationPdfPages": [
+    25
+  ],
+  "selectedReferences": [
+    "11.13",
+    "11.14",
+    "11.19",
+    "11.20",
+    "11.21"
+  ],
+  "newPartialSections": 10,
+  "requirements": 23,
+  "teachingLinks": 10,
+  "independentMonohybridEnumerations": [
+    {
+      "parents": [
+        "BB",
+        "BB"
+      ],
+      "genotypes": {
+        "BB": "1"
+      }
+    },
+    {
+      "parents": [
+        "BB",
+        "Bb"
+      ],
+      "genotypes": {
+        "BB": "1/2",
+        "Bb": "1/2"
+      }
+    },
+    {
+      "parents": [
+        "BB",
+        "bb"
+      ],
+      "genotypes": {
+        "Bb": "1"
+      }
+    },
+    {
+      "parents": [
+        "Bb",
+        "BB"
+      ],
+      "genotypes": {
+        "BB": "1/2",
+        "Bb": "1/2"
+      }
+    },
+    {
+      "parents": [
+        "Bb",
+        "Bb"
+      ],
+      "genotypes": {
+        "BB": "1/4",
+        "Bb": "1/2",
+        "bb": "1/4"
+      }
+    },
+    {
+      "parents": [
+        "Bb",
+        "bb"
+      ],
+      "genotypes": {
+        "Bb": "1/2",
+        "bb": "1/2"
+      }
+    },
+    {
+      "parents": [
+        "bb",
+        "BB"
+      ],
+      "genotypes": {
+        "Bb": "1"
+      }
+    },
+    {
+      "parents": [
+        "bb",
+        "Bb"
+      ],
+      "genotypes": {
+        "Bb": "1/2",
+        "bb": "1/2"
+      }
+    },
+    {
+      "parents": [
+        "bb",
+        "bb"
+      ],
+      "genotypes": {
+        "bb": "1"
+      }
+    }
+  ],
+  "xLinkedModel": {
+    "equallyLikelyOutcomes": [
+      "XH-XH",
+      "XH-Xh",
+      "XH-Y",
+      "Xh-Y"
+    ],
+    "affectedAmongSons": "1/2",
+    "affectedAmongAll": "1/4",
+    "fatherPassesXToSon": false,
+    "independentlyEnumeratedPairs": [
+      [
+        "XH",
+        "XH"
+      ],
+      [
+        "XH",
+        "Y"
+      ],
+      [
+        "Xh",
+        "XH"
+      ],
+      [
+        "Xh",
+        "Y"
+      ]
+    ]
+  },
+  "diagramOriginal": true,
+  "diagramNotToScale": true,
+  "wholeChapterComplete": false,
+  "activeFamilies": 0,
+  "notes": "Source/logic review; no independent learner responses, whole chapter or medical/examiner certification.",
+  "supplementarySources": [
+    {
+      "url": "https://www.nhs.uk/conditions/cystic-fibrosis/",
+      "access": "read",
+      "scope": "Recessive inheritance and mucus/lung/digestive effects"
+    },
+    {
+      "url": "https://www.genomicseducation.hee.nhs.uk/genotes/knowledge-hub/haemophilia-a/",
+      "access": "read",
+      "scope": "X-linked clotting model; female carriers can have symptoms"
+    },
+    {
+      "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/color-blindness/causes-color-vision-deficiency",
+      "access": "read",
+      "scope": "Inherited red-green model and distinction from other forms"
+    }
+  ],
+  "blockedDiscoverySource": {
+    "url": "https://www.england.nhs.uk/long-read/rightcare-cystic-fibrosis-toolkit/",
+    "access": "robot-check",
+    "usedAsTeachingAuthority": false
+  }
+}

@@ -1,0 +1,383 @@
+{
+  "subjectId": "human-biology",
+  "chapterId": "reproduction",
+  "status": "source-checked",
+  "complete": false,
+  "humanReviewed": false,
+  "sourceId": "4HB1-spec",
+  "sourcePages": [
+    25
+  ],
+  "prerequisites": [
+    "Know chromosome, gene and DNA structure.",
+    "Use fractions and a diagram key."
+  ],
+  "goals": [
+    "Distinguish alleles, genotype, phenotype and the listed genetic terminology.",
+    "Construct a one-gene cross and interpret probabilities and pedigrees.",
+    "Compare the specified inherited-condition models; reproduction, development and the rest of heredity remain incomplete."
+  ],
+  "sections": [
+    {
+      "id": "genes-and-alleles",
+      "title": "Follow a gene to its alternative forms",
+      "points": [
+        "11.13"
+      ],
+      "paragraphs": [
+        "A gene is a sequence of DNA with information used to make a particular product, often a protein. Alleles are alternative forms of the same gene. Different base sequences can change the product or its activity and therefore contribute to different inherited characteristics.",
+        "At a particular gene position, a diploid cell normally has two alleles, one on each homologous chromosome. The two alleles may be the same or different. They are alternatives at the same gene, rather than two unrelated genes for different characteristics.",
+        "Letters in a genetic diagram stand for alleles. Define the symbols before using them; the letters alone do not show whether an allele is dominant or what characteristic it affects."
+      ],
+      "terms": [
+        "gene",
+        "allele",
+        "homologous chromosome"
+      ],
+      "example": {
+        "question": "An invented classroom gene has forms B and b. Are B and b different genes?",
+        "steps": [
+          "Both symbols refer to the same gene position.",
+          "They are alternative forms of that gene, so they are alleles."
+        ],
+        "explanation": "Keep the gene identity separate from the allele identity."
+      },
+      "practice": {
+        "question": "Can a diploid cell carry two different alleles of one gene?",
+        "answer": "Yes. A heterozygous cell has different alleles at the same gene position.",
+        "explanation": "Keep the gene identity separate from the allele identity."
+      },
+      "commonMistakes": [
+        "Do not define an allele as a different chromosome or an unrelated gene."
+      ]
+    },
+    {
+      "id": "genotype-and-phenotype",
+      "title": "Separate the allele combination from its expression",
+      "points": [
+        "11.14"
+      ],
+      "paragraphs": [
+        "Genotype is the allele combination being considered. Phenotype is the expressed characteristic. A genotype such as Bb is a symbolic description of alleles; a phenotype describes what they produce in the stated model.",
+        "For a simple complete-dominance model, B is expressed when present with b. BB and Bb therefore have the dominant phenotype, while bb has the recessive phenotype. Different genotypes can give the same phenotype.",
+        "Dominant does not mean more common, better or stronger. It describes expression in a heterozygote. Real characteristics can depend on several genes and the environment, so apply a one-gene model only where the question specifies it."
+      ],
+      "terms": [
+        "genotype",
+        "phenotype",
+        "dominant",
+        "recessive"
+      ],
+      "example": {
+        "question": "B gives a dark pigment and is completely dominant to b. Compare BB and Bb.",
+        "steps": [
+          "Their genotypes differ: two B alleles versus one B and one b.",
+          "Both express the dark-pigment phenotype in this model."
+        ],
+        "explanation": "Do not infer the exact genotype from a dominant phenotype alone."
+      },
+      "practice": {
+        "question": "Which genotype gives the recessive phenotype in this model?",
+        "answer": "bb, because no dominant B allele is present.",
+        "explanation": "Do not infer the exact genotype from a dominant phenotype alone."
+      },
+      "commonMistakes": [
+        "A dominant phenotype does not distinguish BB from Bb.",
+        "Dominance is not a measure of population frequency."
+      ]
+    },
+    {
+      "id": "homozygous-and-heterozygous",
+      "title": "Read the two alleles together",
+      "points": [
+        "11.14"
+      ],
+      "paragraphs": [
+        "Homozygous means that the two alleles at the gene position are the same, such as BB or bb. Heterozygous means that they differ, such as Bb. Both a homozygous dominant and a homozygous recessive genotype are homozygous.",
+        "For a simple recessive condition, a heterozygote can carry the condition-associated allele without expressing the condition. That is the usual classroom meaning of an unaffected carrier.",
+        "If a condition-associated allele is dominant, a heterozygote expresses the condition in the stated model. Do not describe that person as an unaffected carrier merely because two different alleles are present."
+      ],
+      "terms": [
+        "homozygous",
+        "heterozygous",
+        "carrier"
+      ],
+      "example": {
+        "question": "P is a dominant condition-associated allele. Classify Pp and pp.",
+        "steps": [
+          "Pp is heterozygous and expresses the dominant condition in this model.",
+          "pp is homozygous recessive and does not express it."
+        ],
+        "explanation": "First classify the allele pair, then use the stated dominance relationship."
+      },
+      "practice": {
+        "question": "Is bb heterozygous because both letters are lowercase?",
+        "answer": "No. The alleles match, so bb is homozygous recessive.",
+        "explanation": "First classify the allele pair, then use the stated dominance relationship."
+      },
+      "commonMistakes": [
+        "Heterozygous and carrier are not universally interchangeable."
+      ]
+    },
+    {
+      "id": "codominance",
+      "title": "Recognise expression of both alleles",
+      "points": [
+        "11.14"
+      ],
+      "paragraphs": [
+        "With codominance, the contributions of both alleles are expressed in a heterozygote. Neither contribution is hidden by the other. This differs from complete dominance, where one allele determines the stated phenotype in the heterozygote.",
+        "In the ABO red-cell model, the A and B alleles are codominant. A person with an A allele and a B allele has both A and B antigens on the red cells. The phenotype is AB rather than a blended halfway antigen.",
+        "Use a consistent symbol key, such as I^A and I^B, when comparing alleles. This example illustrates codominance; blood compatibility also depends on the context and is not established by this definition."
+      ],
+      "terms": [
+        "codominance"
+      ],
+      "example": {
+        "question": "A red-cell genotype is I^A I^B. What shows codominance?",
+        "steps": [
+          "Both the A-antigen and B-antigen contributions are expressed.",
+          "Neither allele hides the other in this genotype."
+        ],
+        "explanation": "Codominance describes two expressed contributions, not a new blended allele."
+      },
+      "practice": {
+        "question": "Does codominance mean that one allele changes into the other?",
+        "answer": "No. Both inherited alleles remain present and their contributions are expressed.",
+        "explanation": "Codominance describes two expressed contributions, not a new blended allele."
+      },
+      "commonMistakes": [
+        "Do not describe AB as a mixture with a single intermediate antigen."
+      ]
+    },
+    {
+      "id": "haploid-and-diploid",
+      "title": "Count chromosome sets rather than copied DNA",
+      "points": [
+        "11.14"
+      ],
+      "paragraphs": [
+        "Diploid means having two chromosome sets. Haploid means having one set. A typical nucleated human body cell is diploid with 46 chromosomes arranged in 23 pairs; a human gamete is haploid with 23 chromosomes.",
+        "Meiosis produces haploid gametes from diploid precursor cells. Fertilisation joins two haploid gametes, restoring the diploid number in the zygote. This keeps chromosome number from doubling every generation.",
+        "Ploidy refers to chromosome sets, not simply the amount of DNA. Copying DNA before a cell divides does not by itself turn a diploid cell into a cell with four chromosome sets. Mature human red blood cells lack a nucleus and are not an example of a typical 46-chromosome nucleated cell."
+      ],
+      "terms": [
+        "haploid",
+        "diploid",
+        "gamete",
+        "zygote"
+      ],
+      "example": {
+        "question": "A human egg has 23 chromosomes and a sperm has 23. Predict the zygote number.",
+        "steps": [
+          "Each gamete contributes one chromosome set.",
+          "The zygote has 46 chromosomes in two sets."
+        ],
+        "explanation": "Keep the number in each gamete separate from the number after fusion."
+      },
+      "practice": {
+        "question": "Does haploid mean half a chromosome?",
+        "answer": "No. It means one complete chromosome set, rather than the two sets in a diploid cell.",
+        "explanation": "Keep the number in each gamete separate from the number after fusion."
+      },
+      "commonMistakes": [
+        "DNA replication alone is not a change from diploid to tetraploid."
+      ]
+    },
+    {
+      "id": "monohybrid-genetic-diagrams",
+      "title": "Build a cross one gamete at a time",
+      "points": [
+        "11.19"
+      ],
+      "paragraphs": [
+        "A monohybrid cross follows one gene. Define the alleles and dominance, write each parent genotype, list the possible gamete alleles and then combine one allele from each parent. A gamete receives one allele of this gene, rather than the full diploid genotype.",
+        "For Bb × Bb, each parent produces B and b gametes with equal probability in the simplified model. The four equally likely combinations are BB, Bb, bB and bb. Bb and bB describe the same heterozygous genotype.",
+        "Combine equivalent genotypes only after recording all four outcomes. The genotype ratio is 1 BB : 2 Bb : 1 bb. If B is completely dominant, the phenotype ratio is 3 dominant : 1 recessive."
+      ],
+      "terms": [
+        "monohybrid",
+        "Punnett square"
+      ],
+      "example": {
+        "question": "List the offspring genotypes for Bb × bb.",
+        "steps": [
+          "The first parent contributes B or b; the second contributes b only.",
+          "The possible offspring are Bb and bb, each with probability one half."
+        ],
+        "explanation": "A parental genotype is not copied unchanged into every gamete."
+      },
+      "practice": {
+        "question": "What gamete allele does a bb parent contribute at this gene?",
+        "answer": "b in every gamete at this gene position.",
+        "explanation": "A parental genotype is not copied unchanged into every gamete."
+      },
+      "commonMistakes": [
+        "Do not put Bb inside a single gamete box.",
+        "Do not count Bb and bB as different genotypes."
+      ],
+      "diagram": {
+        "src": "/diagrams/human-monohybrid-cross.svg",
+        "alt": "Original Punnett square for Bb by Bb: B and b gametes give BB, Bb, bB and bb, with a one-to-two-to-one genotype ratio.",
+        "caption": "Original one-gene model: each box represents probability one quarter when both parents produce the two gamete types equally. B is completely dominant here."
+      }
+    },
+    {
+      "id": "inheritance-probabilities",
+      "title": "Treat a cross as a probability model",
+      "points": [
+        "11.19"
+      ],
+      "paragraphs": [
+        "An equally likely Punnett-square box is a possible outcome, not a promised child. For Bb × Bb, the probability of bb is 1/4, and the probability of a dominant phenotype is 3/4 under complete dominance.",
+        "Four offspring are not guaranteed to include exactly one bb offspring. Ratios describe the probabilities for each fertilisation and the expected pattern across many outcomes. Under the same model, an earlier outcome does not make the next outcome due.",
+        "State the denominator clearly. The probability of a genotype among all offspring differs from a probability restricted to sons, daughters or another specified group. Only combine outcomes with the same stated conditions."
+      ],
+      "terms": [
+        "probability",
+        "expected ratio"
+      ],
+      "example": {
+        "question": "Two Bb parents already have one bb offspring. What is the probability that their next offspring is bb in the same independent model?",
+        "steps": [
+          "The parent genotypes and gamete probabilities have not changed.",
+          "The next-offspring probability remains 1/4."
+        ],
+        "explanation": "An independent model does not use previous outcomes to fill a fixed quota."
+      },
+      "practice": {
+        "question": "Is a 3:1 phenotype ratio a guarantee for a family of four?",
+        "answer": "No. It is a probability ratio in the stated model.",
+        "explanation": "An independent model does not use previous outcomes to fill a fixed quota."
+      },
+      "commonMistakes": [
+        "Do not replace probability with a guaranteed small-family count."
+      ]
+    },
+    {
+      "id": "reading-family-pedigrees",
+      "title": "Use the key before inferring an allele",
+      "points": [
+        "11.20"
+      ],
+      "paragraphs": [
+        "A pedigree shows relationships and the stated characteristic across a family. A common key uses squares for males and circles for females, with shading for an affected phenotype. Always read the supplied key; a shaded symbol does not automatically mean homozygous.",
+        "In a simple recessive model, two unaffected parents with an affected offspring must each contribute the recessive allele. They are therefore heterozygous carriers under the model assumptions. Mark the inference on the family diagram rather than guessing from symbol shape.",
+        "In a complete-dominance model, an unaffected individual lacks the dominant condition-associated allele. An affected individual may be homozygous or heterozygous. An unaffected offspring can distinguish those possibilities for a parent when the full cross is considered.",
+        "These deductions assume the stated one-gene model and no new mutation. A pedigree alone may leave some genotypes unresolved; record alternatives rather than forcing one answer."
+      ],
+      "terms": [
+        "pedigree"
+      ],
+      "example": {
+        "question": "For a recessive model, two unshaded parents have a shaded child with genotype bb. What can be inferred?",
+        "steps": [
+          "Each parent supplied b.",
+          "Because each parent is unaffected, neither is bb.",
+          "Both parents must therefore be Bb in this model."
+        ],
+        "explanation": "Use offspring and parental phenotypes together; shading alone is insufficient."
+      },
+      "practice": {
+        "question": "For a dominant condition, does a shaded individual have to be BB?",
+        "answer": "No. BB or Bb can express the dominant condition.",
+        "explanation": "Use offspring and parental phenotypes together; shading alone is insufficient."
+      },
+      "commonMistakes": [
+        "Read the diagram key before interpreting shading.",
+        "Do not confuse sex-symbol shape with genotype."
+      ]
+    },
+    {
+      "id": "autosomal-condition-models",
+      "title": "Compare dominant and recessive condition examples",
+      "points": [
+        "11.21"
+      ],
+      "paragraphs": [
+        "Polydactyly means extra fingers or toes. The syllabus uses a dominant-allele model: with P as the condition-associated allele, PP and Pp express polydactyly and pp does not. Different genes can cause the condition, so the specified exam model is not a complete account of every real case.",
+        "Cystic fibrosis is inherited recessively. In a simplified C/c model, CC lacks the condition-associated allele, Cc is an unaffected carrier and cc expresses the condition. An altered gene affects the normal properties of mucus, which becomes unusually thick and sticky.",
+        "The mucus affects the lungs and digestive system, causing breathing and digestion problems and increasing susceptibility to infections. These effects are consequences of altered biological function; the recessive allele is not acquired by catching an infection."
+      ],
+      "terms": [
+        "polydactyly",
+        "cystic fibrosis",
+        "autosomal"
+      ],
+      "example": {
+        "question": "Compare Pp in a dominant polydactyly model with Cc in a recessive cystic-fibrosis model.",
+        "steps": [
+          "Pp expresses the dominant condition-associated allele.",
+          "Cc carries the recessive condition-associated allele without expressing the condition in the simplified model."
+        ],
+        "explanation": "The same heterozygous pattern can have different phenotypes when dominance differs."
+      },
+      "practice": {
+        "question": "Is a recessive inherited condition caught from another person?",
+        "answer": "No. The relevant altered alleles are inherited; infection susceptibility can be an effect of the condition.",
+        "explanation": "The same heterozygous pattern can have different phenotypes when dominance differs."
+      },
+      "commonMistakes": [
+        "Do not transfer recessive carrier terminology to an affected dominant heterozygote."
+      ]
+    },
+    {
+      "id": "x-linked-condition-models",
+      "title": "Keep the allele attached to its X chromosome",
+      "points": [
+        "11.21"
+      ],
+      "paragraphs": [
+        "For the standard X-linked recessive model, write the relevant allele on the X symbol, such as X^H or X^h, and write Y without a matching allele for that gene. An X^hY individual expresses the condition-associated allele because there is no second X allele to provide the usual function.",
+        "Haemophilia affects blood clotting: altered X-linked genes can reduce the activity of clotting proteins, so bleeding can be prolonged. Red–green colour vision deficiency affects discrimination of some red and green shades. It does not generally mean that everything is seen in black and white.",
+        "For X^H X^h × X^H Y, the simplified outcomes are X^H X^H, X^H X^h, X^H Y and X^hY. Half the sons have X^hY; one quarter of all offspring have X^hY if male and female outcomes are equally likely. The father supplies Y to sons and X to daughters, so he does not transmit an X-linked allele directly to a son.",
+        "X-linked does not mean females can never be affected. The simple recessive model includes affected females with two condition-associated alleles; female haemophilia carriers can also have bleeding symptoms. The model helps solve the specified inheritance question and does not determine a real person’s diagnosis. Other forms of colour vision deficiency need not follow this X-linked model."
+      ],
+      "terms": [
+        "X-linked",
+        "haemophilia",
+        "red–green colour vision deficiency"
+      ],
+      "example": {
+        "question": "In X^H X^h × X^H Y, compare the affected probability among sons with the probability among all offspring.",
+        "steps": [
+          "Among the two son outcomes, one is X^hY: probability 1/2.",
+          "Among all four equally likely outcomes, one is X^hY: probability 1/4."
+        ],
+        "explanation": "Name the group before counting outcomes; the denominator changes."
+      },
+      "practice": {
+        "question": "Why does an affected father not pass his X-linked allele directly to a son?",
+        "answer": "He gives a Y chromosome to a son; the son’s X comes from the mother in this model.",
+        "explanation": "Name the group before counting outcomes; the denominator changes."
+      },
+      "commonMistakes": [
+        "Do not put a recessive X allele on Y at a gene lacking its corresponding locus.",
+        "Do not equate all colour vision deficiency with the inherited red–green model."
+      ]
+    }
+  ],
+  "supportingSources": [
+    {
+      "title": "NHS: cystic fibrosis inheritance and effects",
+      "url": "https://www.nhs.uk/conditions/cystic-fibrosis/",
+      "sectionIds": [
+        "autosomal-condition-models"
+      ]
+    },
+    {
+      "title": "NHS Genomics Education: haemophilia and female carrier symptoms",
+      "url": "https://www.genomicseducation.hee.nhs.uk/genotes/knowledge-hub/haemophilia-a/",
+      "sectionIds": [
+        "x-linked-condition-models"
+      ]
+    },
+    {
+      "title": "National Eye Institute: inherited red–green colour vision deficiency",
+      "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/color-blindness/causes-color-vision-deficiency",
+      "sectionIds": [
+        "x-linked-condition-models"
+      ]
+    }
+  ]
+}

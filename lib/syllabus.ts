@@ -1,3 +1,4 @@
+import humanMonohybrid from '../research/syllabus/4HB1-monohybrid.json' with { type: 'json' };
 import humanQ3 from '../research/syllabus/4HB1-selected-q3-demands.json' with { type: 'json' };
 import humanQ1 from '../research/syllabus/4HB1-selected-q1-demands.json' with { type: 'json' };
 import humanQ2 from '../research/syllabus/4HB1-selected-q2-demands.json' with { type: 'json' };
@@ -57,7 +58,8 @@ export const reviewedInventories = [
   { title: 'Cells and tissues (1.1–1.16)', ...humanCells },
   { title: 'Bones, muscles and joints (4.1–4.6)', ...humanMovement },
   { title: 'Selected Q1 demands: coordination and skin (identities only; no teaching)', ...humanQ1 },
-  { title: 'Selected Q3 demands: inheritance and pedigrees (identities only; no teaching)', ...humanQ3 },
+  { title: 'Selected heredity foundations (11.13/11.14/11.20/11.21; partial teaching)', ...humanQ3 },
+  { title: 'Monohybrid inheritance (11.19; partial teaching)', ...humanMonohybrid },
   { title: 'Selected Q2 demands: food hygiene and bacteria (identities only; no teaching)', ...humanQ2 },
   { title: 'Principles foundations (1.1–1.22)', ...chemistryStates },
   { title: 'Group behaviour, formulae and calculations (1.23–1.36)', ...chemistryCalculations },
