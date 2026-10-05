@@ -6,7 +6,7 @@
   "reviewer": "Codex visual/source review",
   "reviewerType": "agent",
   "humanReviewed": false,
-  "scope": "Whole obtained QP/MS visual structural inventory: labels, pages, stimulus locations and original marks. Detailed extraction remains limited to Q1–Q5; no whole-paper syllabus, marking or template validation.",
+  "scope": "Whole obtained QP/MS visual structural inventory: labels, pages, stimulus locations and original marks. Separate detailed overlay now records42/90; no whole-paper skills/AO/historical or template validation.",
   "questionPaperSha256": "6f65e16f7752630e632eb16ae6cf481252154fbdd187854a30c3a4ca75d72ef1",
   "markSchemeSha256": "226c87f3b1a1a212cd2c1d4e3b8ec1f77a571b3032a830118e352f66757c5a0c",
   "indexedLeafCount": 42,
@@ -947,9 +947,9 @@
         }
       ],
       "commandWord": "Describe",
-      "contextSummary": "Inhalation",
-      "extractionStatus": "indexed-only",
-      "commandWordStatus": "editorial-short-label-not-verbatim-command"
+      "contextSummary": "Describe how thoracic structures work together during inhalation.",
+      "extractionStatus": "source-checked",
+      "commandWordStatus": "source-checked"
     },
     {
       "taskId": "4HB1-2024-May-01-standard.Q7.b",
@@ -971,10 +971,10 @@
           ]
         }
       ],
-      "commandWord": "Explain",
-      "contextSummary": "Carotid chemoreceptors",
-      "extractionStatus": "indexed-only",
-      "commandWordStatus": "editorial-short-label-not-verbatim-command"
+      "commandWord": "Describe",
+      "contextSummary": "Describe carotid chemoreceptor function.",
+      "extractionStatus": "source-checked",
+      "commandWordStatus": "source-checked"
     },
     {
       "taskId": "4HB1-2024-May-01-standard.Q7.c.i",
@@ -996,10 +996,10 @@
           ]
         }
       ],
-      "commandWord": "Name",
-      "contextSummary": "Spirometer labelled volume X",
-      "extractionStatus": "indexed-only",
-      "commandWordStatus": "editorial-short-label-not-verbatim-command"
+      "commandWord": "Give",
+      "contextSummary": "Identify lung volume X on the qualitative source trace.",
+      "extractionStatus": "source-checked",
+      "commandWordStatus": "source-checked"
     },
     {
       "taskId": "4HB1-2024-May-01-standard.Q7.c.ii",
@@ -1021,10 +1021,10 @@
           ]
         }
       ],
-      "commandWord": "Name",
-      "contextSummary": "Spirometer labelled volume Y",
-      "extractionStatus": "indexed-only",
-      "commandWordStatus": "editorial-short-label-not-verbatim-command"
+      "commandWord": "Give",
+      "contextSummary": "Identify lung volume Y on the qualitative source trace.",
+      "extractionStatus": "source-checked",
+      "commandWordStatus": "source-checked"
     },
     {
       "taskId": "4HB1-2024-May-01-standard.Q7.c.iii",
@@ -1046,10 +1046,10 @@
           ]
         }
       ],
-      "commandWord": "Name",
-      "contextSummary": "Spirometer labelled volume W",
-      "extractionStatus": "indexed-only",
-      "commandWordStatus": "editorial-short-label-not-verbatim-command"
+      "commandWord": "Give",
+      "contextSummary": "Identify lung volume W on the qualitative source trace.",
+      "extractionStatus": "source-checked",
+      "commandWordStatus": "source-checked"
     },
     {
       "taskId": "4HB1-2024-May-01-standard.Q8.a.i",
@@ -1072,9 +1072,9 @@
         }
       ],
       "commandWord": "Describe",
-      "contextSummary": "Sewage screen stage",
-      "extractionStatus": "indexed-only",
-      "commandWordStatus": "editorial-short-label-not-verbatim-command"
+      "contextSummary": "Describe physical screening at sewage stage X.",
+      "extractionStatus": "source-checked",
+      "commandWordStatus": "source-checked"
     },
     {
       "taskId": "4HB1-2024-May-01-standard.Q8.a.ii",
@@ -1098,9 +1098,9 @@
         }
       ],
       "commandWord": "Explain",
-      "contextSummary": "Aeration stage",
-      "extractionStatus": "indexed-only",
-      "commandWordStatus": "editorial-short-label-not-verbatim-command"
+      "contextSummary": "Explain air supply to the activated sludge tank at stage Y.",
+      "extractionStatus": "source-checked",
+      "commandWordStatus": "source-checked"
     },
     {
       "taskId": "4HB1-2024-May-01-standard.Q8.a.iii",
@@ -1124,9 +1124,9 @@
         }
       ],
       "commandWord": "Name",
-      "contextSummary": "Biogas stage",
-      "extractionStatus": "indexed-only",
-      "commandWordStatus": "editorial-short-label-not-verbatim-command"
+      "contextSummary": "Name the main biogas from the anaerobic digester at stage Z.",
+      "extractionStatus": "source-checked",
+      "commandWordStatus": "source-checked"
     },
     {
       "taskId": "4HB1-2024-May-01-standard.Q8.b",
@@ -1144,14 +1144,15 @@
         {
           "documentId": "4HB1-2024-May-01-standard:questionPaper",
           "pdfPages": [
+            20,
             21
           ]
         }
       ],
       "commandWord": "Explain",
-      "contextSummary": "Treated sludge use",
-      "extractionStatus": "indexed-only",
-      "commandWordStatus": "editorial-short-label-not-verbatim-command"
+      "contextSummary": "Explain use of treated sewage sludge as fertiliser.",
+      "extractionStatus": "source-checked",
+      "commandWordStatus": "source-checked"
     },
     {
       "taskId": "4HB1-2024-May-01-standard.Q9.a.i",
@@ -1174,9 +1175,9 @@
         }
       ],
       "commandWord": "Name",
-      "contextSummary": "Three non-O ABO groups",
-      "extractionStatus": "indexed-only",
-      "commandWordStatus": "editorial-short-label-not-verbatim-command"
+      "contextSummary": "Name the three other ABO blood groups when O is given.",
+      "extractionStatus": "source-checked",
+      "commandWordStatus": "source-checked"
     },
     {
       "taskId": "4HB1-2024-May-01-standard.Q9.a.ii",
@@ -1199,9 +1200,9 @@
         }
       ],
       "commandWord": "Explain",
-      "contextSummary": "ABO red-cell compatibility model",
-      "extractionStatus": "indexed-only",
-      "commandWordStatus": "editorial-short-label-not-verbatim-command"
+      "contextSummary": "Explain donor blood type for a type O recipient in the historical ABO model.",
+      "extractionStatus": "source-checked",
+      "commandWordStatus": "source-checked"
     },
     {
       "taskId": "4HB1-2024-May-01-standard.Q9.b.i",
@@ -1223,10 +1224,10 @@
           ]
         }
       ],
-      "commandWord": "Explain",
-      "contextSummary": "Sex-linked haemophilia",
-      "extractionStatus": "indexed-only",
-      "commandWordStatus": "editorial-short-label-not-verbatim-command"
+      "commandWord": "Describe",
+      "contextSummary": "Describe sex-linked inheritance in the haemophilia source context.",
+      "extractionStatus": "source-checked",
+      "commandWordStatus": "source-checked"
     },
     {
       "taskId": "4HB1-2024-May-01-standard.Q9.b.ii",
@@ -1249,13 +1250,12 @@
         }
       ],
       "commandWord": "State",
-      "contextSummary": "Haemophilia symptom",
-      "extractionStatus": "indexed-only",
-      "commandWordStatus": "editorial-short-label-not-verbatim-command"
+      "contextSummary": "State one effect of haemophilia.",
+      "extractionStatus": "source-checked",
+      "commandWordStatus": "source-checked"
     }
   ],
   "blockers": [
-    "18 parts remain indexed-only with no detailed solution/rubric or syllabus mapping.",
     "Whole historical amendment, skills and AO audits remain incomplete.",
     "Source discrepancies and reuse qualifications require detailed reconciliation before templates.",
     "No examiner report, human examiner certification or active Human Biology templates."
@@ -1265,5 +1265,8 @@
   "rawManifestRef": "research/batches/2026-09-08-cross-subject-lower-01.manifest.json",
   "rawManifestSha256": "562a2b39cf6c20944d2f29dd274c49e5a57a26d3502bf3b37dc82364d17ab963",
   "coverReviewRef": "research/reviews/2026-09-09-cover-review.json",
-  "coverReviewSha256": "0ff8900b0c35dc679141bd58605fba2700ab0edc42b44e4d4bd2ac991d55a119"
+  "coverReviewSha256": "0ff8900b0c35dc679141bd58605fba2700ab0edc42b44e4d4bd2ac991d55a119",
+  "processingNotes": [
+    "Detailed overlay now records42/90; this structural index still carries no rubric/solution/mapping fields and does not certify full processing."
+  ]
 }

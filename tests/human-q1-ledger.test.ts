@@ -15,7 +15,7 @@ def rows(root,name):
  with (root/'research/ledger/v1'/ (name+'.csv')).open(newline='') as f:return list(csv.DictReader(f))
 `;
 
-void test('Human Q1–Q6 export separates complete inventory from partial detail and preserves, rubric caps and unrelated/historical evidence', () => {
+void test('Human Q1–Q9 export separates complete inventory/detail from incomplete processing and preserves, rubric caps and unrelated/historical evidence', () => {
   const result = JSON.parse(
     execFileSync(
       'python3',
@@ -36,22 +36,22 @@ with tempfile.TemporaryDirectory() as d:
  allowed={Path('research/ledger/v1')/(n+'.csv') for n in unrelated}
  assert all((root/p).read_bytes()==v for p,v in before.items() if p not in allowed)
  paper=next(r for r in rows(root,'papers') if r['paper_id']==api['PAPER'])
- assert paper['stage']=='indexed' and paper['expected_leaf_tasks']==paper['indexed_leaf_tasks']=='42'
+ assert paper['stage']=='extracted' and paper['expected_leaf_tasks']==paper['indexed_leaf_tasks']=='42'
  assert paper['reconciled_marks']==paper['complete_page_audit']=='true' and paper['template_links_complete']=='false'
  tasks=[r for r in rows(root,'tasks') if r['paper_id']==api['PAPER']]
  assert len(tasks)==42 and sum(int(t['original_marks']) for t in tasks)==90
  detailed=[t for t in tasks if t['extraction_status']=='source-checked'];indexed=[t for t in tasks if t['extraction_status']=='indexed-only']
- assert len(detailed)==29 and sum(int(t['original_marks']) for t in detailed)==64
- assert len(indexed)==13 and all(t['required_knowledge']==t['marking_method']==t['rubric_ref']=='' and json.loads(t['solution_structure_json'])==[] and t['mapping_status']=='not-started' for t in indexed)
+ assert len(detailed)==42 and sum(int(t['original_marks']) for t in detailed)==90
+ assert len(indexed)==0 and all(t['required_knowledge']==t['marking_method']==t['rubric_ref']=='' and json.loads(t['solution_structure_json'])==[] and t['mapping_status']=='not-started' for t in indexed)
  m=json.loads((root/api['OVERLAY']).read_text())
- assert sum(sum(c['marks'] for c in t['criteria']) for t in m['tasks'])==70
- assert sum(api['rubric_maximum'](t) for t in m['tasks'])==64
+ assert sum(sum(c['marks'] for c in t['criteria']) for t in m['tasks'])==95
+ assert sum(api['rubric_maximum'](t) for t in m['tasks'])==90
  any_two=next(t for t in m['tasks'] if t['questionPath']=='1.b.ii')
  assert len(any_two['criteria'])==3 and api['rubric_maximum'](any_two)==2
  dna=next(t for t in m['tasks'] if t['questionPath']=='3.c')
  assert len(dna['criteria'])==5 and api['rubric_maximum'](dna)==4
  assert dna['sourceDiscrepancy']['generatedUse']=='blocked-until-authoritative-clarification'
- assert m['pageAudit']['markScheme']['visuallyReviewedPages']==[3,4,5,6,7,8,9]
+ assert m['pageAudit']['markScheme']['visuallyReviewedPages']==list(range(1,13))
  assert all(json.loads(t['assessment_objectives_json'])==[] for t in tasks)
  assert next(t for t in tasks if t['question_path']=='1.b.ii')['marking_method']=='capped-discrete-points'
  print(json.dumps(result))
@@ -62,12 +62,12 @@ with tempfile.TemporaryDirectory() as d:
   );
   assert.equal(result.indexedTasks, 42);
   assert.equal(result.indexedMarks, 90);
-  assert.equal(result.detailedTasks, 29);
-  assert.equal(result.detailedMarks, 64);
+  assert.equal(result.detailedTasks, 42);
+  assert.equal(result.detailedMarks, 90);
   assert.equal(result.fullyProcessedPapers, 0);
 });
 
-void test('Human Q1–Q6 rejects completion, inventory and source/rubric changes before any table write', () => {
+void test('Human Q1–Q9 rejects completion, inventory and source/rubric changes before any table write', () => {
   const result = JSON.parse(
     execFileSync(
       'python3',
@@ -76,14 +76,14 @@ void test('Human Q1–Q6 rejects completion, inventory and source/rubric changes
         setup +
           `
 cases=[]
-for mode in ['stage','human','whole-count','whole-marks','whole-pages','hash','task-page','task-duplicate','criteria-duplicate','cap','any-two-mode','eligibility','ao','activation','practical-mapping','shared-stimulus','stale-row','graph-cap','graph-exclusion','gap-order','skill-source','index-missing','index-mark','index-blank','index-pages','index-stimulus','index-promoted','index-solution','index-paperlog','dna-cap','dna-activation','dna-wording','carrier-concession','pedigree-parent','pedigree-choice','q3-mapping','apparatus-topology','drawing-promotion','exercise-data','pace-control','oxygen-cap','enzyme-cap','enzyme-amount','numeric-optimum','enzyme-calibration','cube-answer-cap','cube-ecf','cube-data','cube-dependent','cube-promoted','heat-policy','cube-skill']:
+for mode in ['stage','human','whole-count','whole-marks','whole-pages','hash','task-page','task-duplicate','criteria-duplicate','cap','any-two-mode','eligibility','ao','activation','practical-mapping','shared-stimulus','stale-row','graph-cap','graph-exclusion','gap-order','skill-source','index-missing','index-mark','index-blank','index-pages','index-stimulus','index-promoted','index-solution','index-paperlog','dna-cap','dna-activation','dna-wording','carrier-concession','pedigree-parent','pedigree-choice','q3-mapping','apparatus-topology','drawing-promotion','exercise-data','pace-control','oxygen-cap','enzyme-cap','enzyme-amount','numeric-optimum','enzyme-calibration','cube-answer-cap','cube-ecf','cube-data','cube-dependent','cube-promoted','heat-policy','cube-skill','compound-rib','compound-diaphragm','intercostal-policy','lung-letter','lung-value','numeric-trace','residual-primary','molecular-screen','aerobic-term','treated-sludge','pit-scope','threshold-any','threshold-schedule','threshold-unit','threshold-calibrated','transfusion-cap','abo-antigens','x-linked-scope']:
  with tempfile.TemporaryDirectory() as d:
   root=Path(d);copy(root);p=root/api['OVERLAY'];m=json.loads(p.read_text());t=m['tasks'][3]
-  if mode=='stage':m['paperStage']='extracted'
+  if mode=='stage':m['paperStage']='processed'
   elif mode=='human':m['humanReviewed']=True
   elif mode=='whole-count':m['wholePaperLeafCount']=8
-  elif mode=='whole-marks':m['marksReconciled']=True
-  elif mode=='whole-pages':m['pageAudit']['markScheme']['wholeDocumentReviewed']=True
+  elif mode=='whole-marks':m['marksReconciled']=False
+  elif mode=='whole-pages':m['pageAudit']['markScheme']['wholeDocumentReviewed']=False
   elif mode=='hash':m['documents'][0]['sha256']='0'*64
   elif mode=='task-page':m['tasks'][0]['questionPaperPages']=[24]
   elif mode=='task-duplicate':m['tasks'][1]=m['tasks'][0]
@@ -121,6 +121,24 @@ for mode in ['stage','human','whole-count','whole-marks','whole-pages','hash','t
   elif mode=='cube-promoted':m['tasks'][24]['numericScoring']['recognitionStatus']='implemented'
   elif mode=='heat-policy':m['tasks'][27]['sourceDiscrepancy']['generatedUse']='active'
   elif mode=='cube-skill':m['tasks'][24]['skillMappings'][0]['evidenceRefs'][0]['pdfPages']=[42]
+  elif mode=='compound-rib':m['tasks'][29]['compoundCriteria'][0]['requiredElements'].pop()
+  elif mode=='compound-diaphragm':m['tasks'][29]['compoundCriteria'][1]['maximum']=2
+  elif mode=='intercostal-policy':m['tasks'][29]['sourceQualification']['generatedPolicy']='All intercostals contract'
+  elif mode=='lung-letter':m['tasks'][31]['sourceDiagramAnswer']['letter']='W'
+  elif mode=='lung-value':m['tasks'][33]['sourceDiagramAnswer']['answer']='total lung capacity'
+  elif mode=='numeric-trace':m['tasks'][31]['sourceDiagram']['numericScaleProvided']=True
+  elif mode=='residual-primary':m['tasks'][32]['syllabusMappings'][0]['kind']='primary'
+  elif mode=='molecular-screen':m['tasks'][34]['sourceRejectedEvidence']=[]
+  elif mode=='aerobic-term':m['tasks'][35]['sourceRequiredTerm']='respiration'
+  elif mode=='treated-sludge':m['tasks'][37]['sourceTreatmentScope']='untreated sewage'
+  elif mode=='pit-scope':m['tasks'][34]['currentScope']='All sewage processes covered'
+  elif mode=='threshold-any':m['tasks'][38]['scoringRule']['mode']='any-distinct'
+  elif mode=='threshold-schedule':m['tasks'][38]['scoringRule']['marksByRecognizedCount']=[0,1,2,2]
+  elif mode=='threshold-unit':m['tasks'][38]['criteria'][0]['marks']=1
+  elif mode=='threshold-calibrated':m['tasks'][38]['thresholdRecognition']['recognitionStatus']='implemented'
+  elif mode=='transfusion-cap':m['tasks'][39]['scoringRule']['maximum']=6
+  elif mode=='abo-antigens':m['tasks'][39]['sourceQualification']['generatedScope']='O cells have no antigens of any kind'
+  elif mode=='x-linked-scope':m['tasks'][40]['sourceQualification']['generatedScope']='Females cannot be affected'
   elif mode=='skill-source':m['tasks'][8]['skillMappings'][0]['evidenceRefs'][0]['pdfPages']=[44]
   elif mode=='stale-row':
    path=root/'research/ledger/v1/tasks.csv';data=rows(root,'tasks');stale=dict(data[0]);stale['task_id']=api['PAPER']+'.Q9';stale['paper_id']=api['PAPER'];data.append(stale)
@@ -133,7 +151,7 @@ for mode in ['stage','human','whole-count','whole-marks','whole-pages','hash','t
    elif mode=='index-blank':index['blankQuestionPaperPages']=[24]
    elif mode=='index-pages':index['markSchemeVisualPages'].pop()
    elif mode=='index-stimulus':index['tasks'][15]['stimulusRefs'][0]['pdfPages']=[9]
-   elif mode=='index-promoted':index['tasks'][-1]['extractionStatus']='source-checked'
+   elif mode=='index-promoted':index['tasks'][-1]['extractionStatus']='indexed-only'
    elif mode=='index-solution':index['tasks'][-1]['solutionStructure']=['invented']
    elif mode=='index-paperlog':index['paperMatch']['schemePaperLog']='OTHER'
    ip.write_text(json.dumps(index))
@@ -149,22 +167,40 @@ print(json.dumps(cases))
       { encoding: 'utf8' },
     ),
   );
-  assert.equal(result.length, 52);
+  assert.equal(result.length, 70);
 });
 
 void test('coverage separates Human visual inventory from detailed subset', () => {
   const rows = subjectEvidence('4HB1');
   assert.equal(rows.length, 1);
   const detail = rows[0].extraction!;
-  assert.equal(detail.detailedTasks, 29);
-  assert.equal(detail.originalMarks, 64);
+  assert.equal(detail.detailedTasks, 42);
+  assert.equal(detail.originalMarks, 90);
   assert.equal(detail.expectedTasks, 42);
-  assert.equal(detail.wholePageAudit, false);
-  assert.deepEqual(detail.reviewedQuestions, ['1', '2', '3', '4', '5', '6']);
+  assert.equal(detail.wholePageAudit, true);
+  assert.deepEqual(detail.reviewedQuestions, ['1', '2', '3', '4', '5', '6', '7', '8', '9']);
   assert.equal(rows[0].index?.visualTasks, 42);
   assert.equal(rows[0].index?.reconciledMarks, 90);
   assert.equal(rows[0].index?.questionPaperPages, 24);
   assert.equal(rows[0].index?.markSchemePages, 12);
   assert.equal(rows[0].index?.hasEquationBooklet, false);
   assert.equal(evidenceHighlights.activeFamilies, 0);
+});
+
+void test('ABO source threshold allocates all eight correct-label subsets without direct criterion credit or duplicate inflation', () => {
+  const result = JSON.parse(execFileSync('python3', ['-c', setup + `
+m=json.loads((source/api['OVERLAY']).read_text());t=next(t for t in m['tasks'] if t['questionPath']=='9.a.i')
+ids=[c['id'] for c in t['criteria']]
+assert [c['marks'] for c in t['criteria']]==[0,0,0]
+expected=[([],0),([2],1),([1],1),([1,2],1),([0],1),([0,2],1),([0,1],1),([0,1,2],2)]
+for selected,marks in expected:
+ assert api['score_recognized_threshold'](t,[ids[i] for i in selected])==marks
+assert api['score_recognized_threshold'](t,[ids[0]]*8)==1
+for bad in [['unrecognised'],[None],None]:
+ try:api['score_recognized_threshold'](t,bad)
+ except ValueError:pass
+ else:raise AssertionError('unknown recognition accepted')
+print(json.dumps(dict(cases=len(expected),max=api['rubric_maximum'](t))))
+`], {encoding:'utf8'}));
+  assert.deepEqual(result, { cases: 8, max: 2 });
 });

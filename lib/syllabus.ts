@@ -1,3 +1,4 @@
+import humanQ79 from '../research/syllabus/4HB1-selected-q79-demands.json' with { type: 'json' };
 import humanQ6 from '../research/syllabus/4HB1-selected-q6-demands.json' with { type: 'json' };
 import humanQ4 from '../research/syllabus/4HB1-selected-q4-demands.json' with { type: 'json' };
 import humanMonohybrid from '../research/syllabus/4HB1-monohybrid.json' with { type: 'json' };
@@ -41,6 +42,7 @@ import mathsPolynomials from '../research/syllabus/4MB1-polynomials-and-fraction
 
 // Reviewed overlays are kept separate from the immutable raw candidates.
 export const reviewedInventories = [
+  { title: 'Selected Q7–Q9 demands: gas exchange, blood groups and sewage (identities only; no teaching)', ...humanQ79 },
   { title: 'Selected Q6 demands: blood transport (identities only; no teaching)', ...humanQ6 },
   { title: 'Forces and motion', ...forces },
   { title: 'Waves', ...waves },

@@ -1,3 +1,7 @@
+# Latest phase — Human Biology whole detailed extraction, 5 October 2026
+
+Read research/checkpoints/2026-10-05-HUMAN-FULL-EXTRACTION.md first. All42Humanparts/90marks detailed and reconciled; stageextracted, zero fullyprocessed. Q7compound/concession,Q8screening/aerobic/treatment andQ9explicitthreshold/ABO/Xlinkedscope saved.126tests/70malformedcases,typecheck/lint/research/content/evidence/build/68publicfilespass.397sections/20partialnotes/36routes,440identities/412audits/1148requirements/586links.7obtainedpairs/0completechapters/points/processedpapers/activefamilies;6experimental. GitHuba7b767a mirrorssaved312f190;sync newer phase non-force. Continuecurriculum/wholepaper skills/historicalsourceaudits/calibration above5%both;AIlast,noreset/version/deployment. Olderentrieshistorical.
+
 # Latest pause — Human Biology Q6, 5 October 2026
 
 Read research/checkpoints/2026-10-05-PAUSED-AFTER-HUMAN-Q6.md first. Allowances5%five-hour/42%weekly;paused at requested gate,noreset. Local26b6720 exactly mirrored byGitHub9ae9acc (non-force retry resolved422). This checkpoint/preflight documentation is a newer delta tosync nextresume. Human29of42detailed/64of90marks;Q7–Q9preflights saved but13parts26marks remainindexed-only.397sections/20partialnotes/36routes,435parents/412audits/1148requirements/586links;7obtained/0processed/completechapters/points/activefamilies,6experimental.125tests,typecheck/lint/research/content/reconciled evidence/build/68publicfilespass. NoAI/Sitesversion/deployment. Continueonlyabove5%both;preservehistory/UI;AIlast. Olderentrieshistorical.

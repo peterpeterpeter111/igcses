@@ -12,6 +12,7 @@ import sources from '@/research/sources.json';
 import { reviewedInventories } from '@/lib/syllabus';
 import physicsSkills from '@/research/syllabus-skills/4PH1-issue4.json';
 import humanSkills from '@/research/syllabus-skills/4HB1-issue2-selected.json';
+import humanCubeSkills from '@/research/syllabus-skills/4HB1-issue2-q6-selected.json';
 import { curriculumAudits } from '@/lib/curriculum';
 import { obtainedPaperCandidates, paperCoverReview, paperTaskIndex, paperDetailedSummary } from '@/lib/paper-discovery';
 export default async function SubjectCoverage({
@@ -67,6 +68,12 @@ export default async function SubjectCoverage({
                   {r.extraction.expectedTasks ?? 'an unconfirmed number of'}{' '}
                   parts. Zero fully processed papers.
                 </p>
+                {r.extraction.wholePageAudit && <p className="status">
+                  The visual page review covers all {r.extraction.questionPaperPages} question-paper
+                  pages and {r.extraction.markSchemePages} scheme pages, including covers and
+                  non-task pages. Detailed extraction is available; the remaining processing
+                  checks below still prevent this paper from being counted as fully processed.
+                </p>}
                 {!r.extraction.wholePageAudit && <p className="status">
                   Detailed review covers {r.extraction.questionPaperPages} question-paper pages
                   and {r.extraction.markSchemePages} scheme pages. The original text index
@@ -97,8 +104,8 @@ export default async function SubjectCoverage({
                 {r.index.reconciledMarks} marks reconciled across all{' '}
                 {r.index.questionPaperPages} paper pages{r.index.hasEquationBooklet ? ' (including the equation booklet)' : ''} and {r.index.markSchemePages} scheme pages.{' '}
                 {r.index.sourceDiscrepancies} source discrepancies recorded for
-                review. This page audit does not mean all parts have detailed
-                solutions or validated templates. AI review; no human review.
+                review. The inventory alone does not certify detailed rubric, syllabus
+                or template validation. AI review; no human review.
               </p>
             )}
             <p>
@@ -191,9 +198,10 @@ export default async function SubjectCoverage({
           <section>
             <h2>Selected mathematical skills</h2>
             <p>
-              Two Appendix 4 skills support the reviewed Q2 chart task: constructing
-              a bar chart and translating numerical information into graphical form.
-              This is a selected review, not a complete practical, mathematical or
+              {new Set([...humanSkills.skills, ...humanCubeSkills.skills].map((skill) => skill.id)).size} Appendix 4
+              skills support the reviewed Q2 chart and Q6 cube tasks: bar charts,
+              graphical and numerical information, ratios and powers, and substitution
+              with units. This is a selected review, not a complete practical, mathematical or
               assessment-objective audit. No official per-part AO marks are claimed.
             </p>
             <p>
