@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Inhalation and quiet exhalation</title>
+  <desc id="desc">Original simplified thorax models. Inhalation: ribs move up and out, diaphragm contracts and flattens, volume increases and pressure falls. Quiet exhalation: muscles relax, diaphragm domes, recoil reduces volume and pressure rises.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#8d3035"/></marker></defs>
+  <rect width="1200" height="680" fill="#fbf6ec"/>
+  <g font-family="Georgia,serif" fill="#362a28" text-anchor="middle">
+    <text x="300" y="62" font-size="34">Inhalation</text><text x="900" y="62" font-size="34">Quiet exhalation</text>
+  </g>
+  <g fill="none" stroke="#705d50" stroke-width="7" stroke-linecap="round">
+    <path d="M265 145Q125 145 120 310L120 440M335 145Q475 145 480 310L480 440"/>
+    <path d="M855 180Q755 185 760 315L770 430M945 180Q1045 185 1040 315L1030 430"/>
+    <path d="M150 230Q192 214 220 224M140 288Q185 270 220 280M137 345Q179 326 216 338M145 400Q182 382 211 394"/>
+    <path d="M450 230Q408 214 380 224M460 288Q415 270 380 280M463 345Q421 326 384 338M455 400Q418 382 389 394"/>
+    <path d="M790 253Q825 237 847 249M781 304Q817 288 847 300M786 351Q818 335 848 347M795 394Q821 379 845 390"/>
+    <path d="M1010 253Q975 237 953 249M1019 304Q983 288 953 300M1014 351Q982 335 952 347M1005 394Q979 379 955 390"/>
+  </g>
+  <g fill="#dcc8bd" stroke="#936860" stroke-width="3">
+    <path d="M270 193Q201 200 202 356Q204 418 277 435L277 223Z"/>
+    <path d="M330 193Q399 200 398 356Q396 418 323 435L323 223Z"/>
+    <path d="M874 219Q826 229 827 342Q829 394 881 405L881 243Z"/>
+    <path d="M926 219Q974 229 973 342Q971 394 919 405L919 243Z"/>
+  </g>
+  <g fill="none" stroke="#8d3035" stroke-width="8" stroke-linecap="round">
+    <path d="M300 118V243M300 224L252 273M300 224L348 273M900 118V260M900 244L862 282M900 244L938 282"/>
+    <path d="M128 477Q300 462 472 477"/>
+    <path d="M770 455Q900 348 1030 455"/>
+  </g>
+  <g fill="none" stroke="#8d3035" stroke-width="4" marker-end="url(#arrow)">
+    <path d="M95 220L60 160M505 220L540 160M300 455V505"/>
+    <path d="M747 180L775 232M1053 180L1025 232M900 453V421"/>
+  </g>
+  <g font-family="system-ui,sans-serif" fill="#362a28" text-anchor="middle" font-size="25">
+    <text x="300" y="553">Diaphragm contracts and flattens</text><text x="900" y="553">Diaphragm relaxes into a dome</text>
+    <text x="300" y="591">Ribs rise and move outward</text><text x="900" y="591">Ribs lower and move inward</text>
+    <text x="300" y="637">Volume ↑ · pressure ↓ · air enters</text><text x="900" y="637">Volume ↓ · pressure ↑ · air leaves</text>
+  </g>
+  <path d="M600 98V652" stroke="#d9c9b3" stroke-width="2"/>
+</svg>

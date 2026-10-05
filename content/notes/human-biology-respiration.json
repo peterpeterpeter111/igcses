@@ -1,0 +1,293 @@
+{
+  "subjectId": "human-biology",
+  "chapterId": "respiration",
+  "status": "source-checked",
+  "complete": false,
+  "humanReviewed": false,
+  "sourceId": "4HB1-spec",
+  "sourcePages": [
+    22
+  ],
+  "supportingSources": [
+    {
+      "title": "ATP hydrolysis: chemistry and biology education research",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12087740/",
+      "sectionIds": [
+        "atp-energy-transfer"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Cell structures and diffusion.",
+    "Read units, ratios and graphs."
+  ],
+  "goals": [
+    "Explain the aerobic and human anaerobic equations and energy transfer.",
+    "Follow ATP phosphate addition/removal with the associated overall energy changes.",
+    "Plan and interpret a controlled inspired/expired CO₂ comparison."
+  ],
+  "sections": [
+    {
+      "id": "respiration-and-energy",
+      "title": "Trace energy from food to cell activity",
+      "points": [
+        "7.1"
+      ],
+      "paragraphs": [
+        "Respiration is a set of reactions in living cells that releases energy from organic molecules such as glucose. Energy is transferred into forms cells can use, including ATP, and some is transferred to the surroundings as heat. It is not created from nothing.",
+        "Energy transferred by respiration supports muscle contraction, active transport and the synthesis of larger molecules. Cells respire at rest as well as during exercise because these processes continue. Breathing moves air; gas exchange moves gases across surfaces; respiration is the cellular chemical process.",
+        "A response about energy should identify the cell activity being supplied. Saying that oxygen gives energy misses the role of glucose as the fuel and of oxygen in aerobic reactions."
+      ],
+      "terms": [
+        "respiration",
+        "energy transfer",
+        "active transport"
+      ],
+      "example": {
+        "question": "Why do intestinal cells need respiration even when a person is sitting still?",
+        "steps": [
+          "Absorbing some nutrients involves active transport against a concentration gradient.",
+          "Respiration supplies energy for this cellular work."
+        ],
+        "explanation": "A named cell process explains the need."
+      },
+      "practice": {
+        "question": "Is respiration the movement of the diaphragm?",
+        "answer": "No. The diaphragm ventilates the lungs; respiration takes place in cells.",
+        "explanation": "Separate the mechanical and chemical processes."
+      },
+      "commonMistakes": [
+        "Energy is released or transferred, not made."
+      ]
+    },
+    {
+      "id": "aerobic-respiration-equations",
+      "title": "Balance aerobic respiration",
+      "points": [
+        "7.3"
+      ],
+      "paragraphs": [
+        "The word equation is glucose + oxygen → carbon dioxide + water. Energy is released by the overall process, but energy is not a material reactant or product to balance.",
+        "The balanced chemical symbol equation is C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O. Count six carbon atoms, twelve hydrogen atoms and eighteen oxygen atoms on each side. The glucose already contains six oxygen atoms; the six oxygen molecules add twelve.",
+        "For human cells, the early breakdown of glucose begins in the cytoplasm and later aerobic stages occur in mitochondria. The equation summarises many enzyme-controlled reactions rather than one direct combustion reaction. No single fixed ATP yield is needed here."
+      ],
+      "terms": [
+        "aerobic respiration",
+        "glucose",
+        "balanced equation"
+      ],
+      "example": {
+        "question": "How many oxygen molecules appear for one glucose molecule in the summary equation?",
+        "steps": [
+          "There are 18 oxygen atoms on the product side.",
+          "Glucose supplies 6, leaving 12 from oxygen gas.",
+          "12 oxygen atoms require 6 O₂ molecules."
+        ],
+        "explanation": "Change coefficients, not chemical formulas."
+      },
+      "practice": {
+        "question": "What are the two material products?",
+        "answer": "Carbon dioxide and water.",
+        "explanation": "Energy release accompanies the reaction but does not add an atom."
+      },
+      "commonMistakes": [
+        "Do not write 6O instead of 6O₂ or change the glucose formula."
+      ]
+    },
+    {
+      "id": "anaerobic-muscle-respiration",
+      "title": "Use the human anaerobic word equation",
+      "points": [
+        "7.4"
+      ],
+      "paragraphs": [
+        "When oxygen supply cannot meet the demand of working muscle, anaerobic reactions can continue releasing a smaller amount of energy from glucose. The human muscle word equation used at this level is glucose → lactic acid. In body fluids the product is predominantly lactate; the examination word equation convention is lactic acid.",
+        "This pathway does not require oxygen and does not release carbon dioxide as a product of the glucose-to-lactate pathway. It supplies much less ATP per glucose than aerobic respiration because the glucose is only partly broken down.",
+        "Do not substitute the yeast equation glucose → ethanol + carbon dioxide when describing human muscle. Specify the organism and the conditions before deciding which products are relevant."
+      ],
+      "terms": [
+        "anaerobic respiration",
+        "lactic acid",
+        "lactate"
+      ],
+      "example": {
+        "question": "A sprinting muscle cannot receive oxygen quickly enough. State the relevant word equation.",
+        "steps": [
+          "Identify the context as human muscle.",
+          "Write glucose → lactic acid.",
+          "State that energy is released without oxygen being a reactant."
+        ],
+        "explanation": "The products depend on the organism."
+      },
+      "practice": {
+        "question": "Does this human muscle equation produce ethanol?",
+        "answer": "No. Ethanol belongs to the yeast fermentation context.",
+        "explanation": "Keep human and yeast pathways distinct."
+      },
+      "commonMistakes": [
+        "Do not put carbon dioxide in the human glucose-to-lactic-acid equation."
+      ]
+    },
+    {
+      "id": "comparing-respiration",
+      "title": "Compare the pathways using matching features",
+      "points": [
+        "7.5"
+      ],
+      "paragraphs": [
+        "Both aerobic and anaerobic respiration release energy from glucose in living cells and involve enzyme-controlled reactions. A comparison should state what happens in each pathway for the same feature.",
+        "Aerobic respiration requires oxygen and breaks glucose down more completely, producing carbon dioxide and water with a larger energy transfer per glucose. Anaerobic respiration in human muscles does not require oxygen, produces lactic acid and transfers less energy per glucose.",
+        "Aerobic work can be sustained when oxygen and fuel delivery meet demand. Anaerobic energy transfer can help during short periods of high demand, but recovery is then needed. Avoid treating every movement as exclusively one pathway: a working muscle may use both."
+      ],
+      "terms": [
+        "comparison",
+        "oxygen supply",
+        "energy per glucose"
+      ],
+      "example": {
+        "question": "Compare aerobic and human anaerobic respiration for oxygen and products.",
+        "steps": [
+          "Aerobic: oxygen required; carbon dioxide and water produced.",
+          "Human anaerobic: oxygen not required; lactic acid produced."
+        ],
+        "explanation": "Pair the same features rather than listing unrelated facts."
+      },
+      "practice": {
+        "question": "Which transfers more energy per glucose?",
+        "answer": "Aerobic respiration.",
+        "explanation": "Glucose is broken down more completely in the aerobic pathway."
+      },
+      "commonMistakes": [
+        "Do not claim anaerobic respiration releases no energy."
+      ]
+    },
+    {
+      "id": "atp-energy-transfer",
+      "title": "Follow ATP through its energy-transfer cycle",
+      "points": [
+        "7.6"
+      ],
+      "paragraphs": [
+        "ATP is adenosine triphosphate. It has three phosphate groups. Adding a phosphate group to ADP to regenerate ATP requires energy, which can be supplied by respiration. In a simplified cycle: ADP + phosphate + energy → ATP.",
+        "When ATP reacts with water to form ADP and inorganic phosphate, the overall hydrolysis reaction can transfer energy to coupled cell processes. A simplified summary is ATP → ADP + phosphate, with energy available for work such as muscle contraction or active transport.",
+        "An individual chemical bond requires energy to break. The overall ATP reaction releases free energy because the products and their interactions have lower free energy than the reactants. Do not explain energy release as a bond snapping and spilling stored energy. ATP is repeatedly regenerated; it is an immediate transfer molecule rather than a long-term food store."
+      ],
+      "terms": [
+        "ATP",
+        "ADP",
+        "phosphate",
+        "hydrolysis"
+      ],
+      "example": {
+        "question": "Which direction of the ATP cycle needs energy from respiration?",
+        "steps": [
+          "Identify ATP regeneration: ADP gains a phosphate.",
+          "State that this addition requires energy.",
+          "The reverse overall hydrolysis can supply energy to coupled cell work."
+        ],
+        "explanation": "Associate both phosphate movement and the overall energy change."
+      },
+      "practice": {
+        "question": "Does breaking an isolated bond itself release energy?",
+        "answer": "No. Bond breaking requires energy; the overall hydrolysis reaction can release free energy.",
+        "explanation": "The net reaction and an individual bond are different descriptions."
+      },
+      "commonMistakes": [
+        "Do not say that ATP stores oxygen or that all energy release comes from breaking one bond."
+      ]
+    },
+    {
+      "id": "inspired-expired-carbon-dioxide",
+      "title": "Plan a fair inspired-versus-expired air comparison",
+      "points": [
+        "7.2"
+      ],
+      "paragraphs": [
+        "Inspired air is air breathed in; expired air is air breathed out. Respiring cells produce carbon dioxide, which is transported to the lungs and diffuses into alveolar air. Expired air therefore normally contains a higher carbon dioxide concentration than inspired air. Expired air still contains oxygen.",
+        "Limewater turns cloudy when carbon dioxide reacts to form insoluble calcium carbonate. Compare measured equal volumes of room air and collected expired air with equal volumes of fresh limewater under the same conditions. A faster or stronger response to the expired-air sample supports a higher carbon dioxide content.",
+        "Use a teacher-approved collection and transfer arrangement. Do not suck through chemical solutions or share mouthpieces. The method below is a comparison plan using separate collected samples, not an instruction to improvise a connected breathing apparatus."
+      ],
+      "terms": [
+        "inspired air",
+        "expired air",
+        "limewater"
+      ],
+      "example": {
+        "question": "One air sample is twice as large as the other. Can cloudiness alone show which has higher CO₂ concentration?",
+        "steps": [
+          "The larger sample may deliver more CO₂ simply because more gas was tested.",
+          "Compare equal gas volumes with identical fresh indicator volumes."
+        ],
+        "explanation": "Total amount and concentration must be separated."
+      },
+      "practice": {
+        "question": "Why does expired air contain more CO₂?",
+        "answer": "Respiration in cells produces CO₂, which is carried to the lungs and diffuses into the air that is breathed out.",
+        "explanation": "Include the origin and route of the gas."
+      },
+      "commonMistakes": [
+        "Do not breathe through limewater or use different gas volumes as a concentration comparison."
+      ],
+      "practical": {
+        "apparatus": [
+          "Teacher-approved individual expired-air collection equipment",
+          "Measured room-air and expired-air samples",
+          "Equal fresh limewater portions, separate labelled tubes, transfer equipment and timer"
+        ],
+        "method": [
+          "Collect each sample without contact with indicator; use a fresh individual collection interface.",
+          "Transfer the same measured gas volume through each fresh equal limewater portion at the same controlled rate.",
+          "Compare cloudiness at the same time, or time to a defined endpoint when delivered volumes/rates are controlled.",
+          "Repeat with fresh indicator and record the comparison."
+        ],
+        "variables": [
+          "Independent: air source",
+          "Dependent: cloudiness at a fixed time or time to a defined endpoint",
+          "Control gas volume and delivery rate, indicator concentration/volume and temperature"
+        ],
+        "safety": [
+          "Use the school-approved procedure and eye protection for limewater.",
+          "No inhalation through solution, no shared mouthpieces and no unapproved rebreathing system."
+        ],
+        "quality": [
+          "Use a consistent visual endpoint or an appropriate sensor for a quantitative comparison.",
+          "Fresh indicator and repeated trials reduce carry-over and random variation."
+        ]
+      }
+    },
+    {
+      "id": "interpreting-carbon-dioxide-evidence",
+      "title": "Read a gas comparison without overstating it",
+      "points": [
+        "7.2"
+      ],
+      "paragraphs": [
+        "If the expired-air sample makes equal fresh limewater cloudy sooner under controlled delivery, this supports more carbon dioxide in that sample. It does not show that expired air is pure carbon dioxide or measure an exact percentage unless a calibrated method provides one.",
+        "A single trial may be affected by unequal volumes, leaks, different bubbling rates or a subjective endpoint. Repeat a fair comparison, identify anomalies and report the measured evidence. A colour or turbidity comparison is usually qualitative or semi-quantitative.",
+        "Illustrative classroom results: equal sample volumes give endpoint times of 12, 14 and 13 seconds for expired air, while the room-air sample does not reach that endpoint during a fixed 60-second test. Report the room-air result as not reached within 60 seconds, not as zero CO₂ or an exact 60-second endpoint."
+      ],
+      "terms": [
+        "endpoint",
+        "qualitative",
+        "repeat"
+      ],
+      "example": {
+        "question": "Find the mean for the expired-air illustrative times.",
+        "steps": [
+          "Add 12 + 14 + 13 = 39 seconds.",
+          "Divide by three trials: 39 ÷ 3 = 13 seconds.",
+          "Keep the room-air non-endpoint result separate."
+        ],
+        "explanation": "Do not average a time limit as if it were a measured endpoint."
+      },
+      "practice": {
+        "question": "Does a clear room-air sample prove there is no CO₂?",
+        "answer": "No. It may contain too little to reach the visible endpoint within the chosen test.",
+        "explanation": "A detection limit is not proof of absence."
+      },
+      "commonMistakes": [
+        "Do not invent concentration percentages from an uncalibrated cloudiness result."
+      ]
+    }
+  ]
+}

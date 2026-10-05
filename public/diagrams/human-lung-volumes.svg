@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1260 700" role="img" aria-labelledby="title desc">
+  <title id="title">Tidal volume, vital capacity and residual volume</title>
+  <desc id="desc">Qualitative original lung-volume sketch. Ordinary breaths have a small peak-to-trough tidal excursion. Vital capacity extends from maximum inhalation to maximum exhalation. Residual air remains below the maximum-exhalation level. Total capacity comprises both.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#705d50"/></marker></defs>
+  <rect width="1260" height="700" fill="#fbf6ec"/>
+  <g font-family="Georgia,serif" fill="#362a28"><text x="66" y="56" font-size="33">Read the volume limits</text></g>
+  <rect x="100" y="425" width="680" height="115" fill="#ecdcc2"/>
+  <g fill="none" stroke="#705d50" stroke-width="3" marker-end="url(#arrow)"><path d="M100 540V98"/><path d="M100 540H790"/></g>
+  <g stroke="#c4b8a8" stroke-width="2" stroke-dasharray="7 7"><path d="M100 143H1115"/><path d="M100 425H1115"/><path d="M100 540H1115"/></g>
+  <path d="M118 327Q142 275 166 327Q190 379 214 327Q238 275 262 327Q286 379 310 327Q334 275 358 327Q382 379 406 327Q445 275 474 143Q517 238 552 425Q597 368 628 327Q652 275 676 327Q700 379 724 327" fill="none" stroke="#8d3035" stroke-width="5"/>
+  <g fill="none" stroke="#94703c" stroke-width="4"><path d="M226 301H244M235 301V353M226 353H244"/><path d="M822 143H846M834 143V425M822 425H846"/><path d="M919 425H943M931 425V540M919 540H943"/><path d="M1115 143H1139M1127 143V540M1115 540H1139"/></g>
+  <g font-family="system-ui,sans-serif" fill="#362a28" font-size="25">
+    <text x="65" y="343" text-anchor="middle" transform="rotate(-90 65 343)">Volume in the lungs</text>
+    <text x="400" y="585">Time →</text><text x="105" y="126">Maximum inhalation</text><text x="105" y="408">Maximum exhalation</text>
+    <text x="215" y="262">Tidal volume</text><text x="150" y="485">Air still in the lungs</text>
+    <text x="874" y="290" text-anchor="middle" transform="rotate(-90 874 290)">Vital capacity</text>
+    <text x="969" y="467">Residual</text><text x="969" y="500">volume</text>
+    <text x="1170" y="342" text-anchor="middle" transform="rotate(-90 1170 342)">Total lung capacity</text>
+    <text x="66" y="633" font-size="24">Qualitative model: no numerical scale; not a measured spirometer record.</text>
+    <text x="66" y="670" font-size="24">Ordinary spirometry measures moved air, not residual air remaining in the lungs.</text>
+  </g>
+</svg>

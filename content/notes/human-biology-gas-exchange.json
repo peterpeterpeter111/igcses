@@ -1,0 +1,658 @@
+{
+  "subjectId": "human-biology",
+  "chapterId": "gas-exchange",
+  "status": "source-checked",
+  "complete": false,
+  "humanReviewed": false,
+  "sourceId": "4HB1-spec",
+  "sourcePages": [
+    22
+  ],
+  "supportingSources": [
+    {
+      "title": "NHLBI: how breathing works",
+      "url": "https://www.nhlbi.nih.gov/health/lungs/breathing-benefits",
+      "sectionIds": [
+        "inhaling-mechanics",
+        "exhaling-mechanics"
+      ]
+    },
+    {
+      "title": "NHLBI: body control of breathing",
+      "url": "https://www.nhlbi.nih.gov/health/lungs/body-controls-breathing",
+      "sectionIds": [
+        "carbon-dioxide-control"
+      ]
+    },
+    {
+      "title": "NIH pulmonary function tests: spirometry and lung-volume methods",
+      "url": "https://www.nhlbi.nih.gov/science/pulmonary-function-lab/tests",
+      "sectionIds": [
+        "lung-volumes-and-capacities"
+      ]
+    },
+    {
+      "title": "West Suffolk NHS: smoking and lung damage",
+      "url": "https://www.wsh.nhs.uk/CMS-Documents/Patient-leaflets/Physiotherapy/6517-1-Smoking-how-does-it-affect-me.pdf",
+      "sectionIds": [
+        "smoking-and-gas-exchange"
+      ]
+    },
+    {
+      "title": "Leeds Teaching Hospitals NHS: carbon monoxide and nicotine",
+      "url": "https://www.leedsth.nhs.uk/wp-content/uploads/2023/05/LN004649.pdf",
+      "sectionIds": [
+        "smoking-and-gas-exchange"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Cell structures and diffusion.",
+    "Read units, ratios and graphs."
+  ],
+  "goals": [
+    "Explain thorax structure, ventilation and diffusion adaptations.",
+    "Interpret breathing volumes and traces and plan exercise/breathing/pulse investigations.",
+    "Explain CO₂ feedback, exercise recovery and smoking effects."
+  ],
+  "sections": [
+    {
+      "id": "thorax-and-airways",
+      "title": "Locate the structures in the thorax",
+      "points": [
+        "8.1"
+      ],
+      "paragraphs": [
+        "The thorax is the chest region. Ribs protect the lungs and help change chest volume. Intercostal muscles lie between ribs, and the diaphragm is a muscular sheet below the lungs separating the thorax from the abdomen.",
+        "Air passes through the trachea, then the two main bronchi, branching bronchioles and finally the alveoli. Cartilage helps keep the trachea and larger bronchi open. Bronchioles are smaller branches; alveoli are the terminal air sacs where diffusion occurs.",
+        "The pleural membranes cover the lung surfaces and line the chest wall. A thin layer of pleural fluid reduces friction as these surfaces move during breathing. The lungs expand with changes in the chest rather than actively pulling air in with their own skeletal muscles."
+      ],
+      "terms": [
+        "thorax",
+        "bronchi",
+        "bronchioles",
+        "alveoli",
+        "pleural membranes"
+      ],
+      "example": {
+        "question": "Order the airway route after the nose or mouth.",
+        "steps": [
+          "Trachea → bronchi → bronchioles → alveoli.",
+          "The branching system delivers air to many gas-exchange surfaces."
+        ],
+        "explanation": "Distinguish conducting tubes from exchange sacs."
+      },
+      "practice": {
+        "question": "What lies between neighbouring ribs?",
+        "answer": "Intercostal muscles.",
+        "explanation": "The diaphragm instead lies beneath the lungs."
+      },
+      "commonMistakes": [
+        "Do not describe pleural membranes as the alveolar wall or diaphragm."
+      ]
+    },
+    {
+      "id": "inhaling-mechanics",
+      "title": "Explain inhalation as a pressure sequence",
+      "points": [
+        "8.2"
+      ],
+      "paragraphs": [
+        "During ordinary inhalation, the diaphragm contracts and flattens downward. The external intercostal muscles contract, helping move the ribs upward and outward. These movements increase the volume of the thorax.",
+        "The lungs expand as the chest enlarges. The pressure of air inside the lungs falls below atmospheric pressure, so air flows in through the airways. State volume, pressure and direction of airflow to connect muscle action to ventilation.",
+        "In a short answer, ribs up and out describes two aspects of the same movement. Diaphragm contraction and flattening describe the muscle action and resulting shape. Avoid naming internal intercostals as the main muscles for quiet inhalation."
+      ],
+      "terms": [
+        "ventilation",
+        "inhalation",
+        "external intercostals",
+        "pressure difference"
+      ],
+      "example": {
+        "question": "Explain why air enters after the diaphragm contracts.",
+        "steps": [
+          "The diaphragm flattens, increasing thoracic volume.",
+          "The lungs expand, lowering their air pressure below atmospheric pressure.",
+          "Air moves into the lungs down the pressure difference."
+        ],
+        "explanation": "Airflow follows pressure; it is not caused by oxygen attracting the lungs."
+      },
+      "practice": {
+        "question": "Which direction do ribs move during inhalation?",
+        "answer": "Upward and outward.",
+        "explanation": "This contributes to the increase in chest volume."
+      },
+      "commonMistakes": [
+        "Do not say contraction makes the diaphragm more domed."
+      ],
+      "diagram": {
+        "src": "/diagrams/human-ventilation.svg",
+        "alt": "Two simplified thorax models: ribs move up and out and diaphragm flattens during inhalation; ribs lower and diaphragm domes during quiet exhalation.",
+        "caption": "Original schematic. Arrows describe movement; lungs and ribs are simplified, not an anatomical cross-section."
+      }
+    },
+    {
+      "id": "exhaling-mechanics",
+      "title": "Explain quiet exhalation and distinguish forced breathing",
+      "points": [
+        "8.2"
+      ],
+      "paragraphs": [
+        "During quiet exhalation, the diaphragm and external intercostal muscles relax. The diaphragm returns toward a dome and the ribs move down and inward. Elastic recoil of the lungs and chest reduces thoracic and lung volume.",
+        "Pressure in the lungs rises above atmospheric pressure and air flows out. Quiet exhalation is mainly passive; it does not require the diaphragm to contract upward.",
+        "Forced expiration, such as vigorous exercise or blowing hard, can involve abdominal muscles and internal intercostal muscles. Keep that active process separate from the ordinary resting cycle."
+      ],
+      "terms": [
+        "exhalation",
+        "elastic recoil",
+        "forced expiration"
+      ],
+      "example": {
+        "question": "A learner writes that the diaphragm contracts upward during quiet exhalation. Repair the explanation.",
+        "steps": [
+          "The diaphragm relaxes and returns to a dome.",
+          "Chest volume decreases, lung air pressure rises and air flows out."
+        ],
+        "explanation": "Shape follows relaxation and recoil, not upward contraction."
+      },
+      "practice": {
+        "question": "Does air move out when lung pressure is below atmospheric pressure?",
+        "answer": "No. Air flows out when lung pressure is higher than atmospheric pressure.",
+        "explanation": "Always compare the two pressures."
+      },
+      "commonMistakes": [
+        "Do not make quiet exhalation an active contraction of the diaphragm."
+      ]
+    },
+    {
+      "id": "alveolar-diffusion",
+      "title": "Connect each lung adaptation to diffusion",
+      "points": [
+        "8.3"
+      ],
+      "paragraphs": [
+        "Many alveoli provide a large total surface area for gas exchange. Alveolar walls and capillary walls are each very thin, so the diffusion distance between air and blood is short. The moist exchange surface allows gases to dissolve before crossing.",
+        "Blood arriving at the lungs has less oxygen and more carbon dioxide than alveolar air. Oxygen diffuses into blood and carbon dioxide diffuses into alveoli. A rich capillary supply moves blood past the surface; ventilation renews alveolar air. Together these maintain diffusion gradients.",
+        "An explanation should pair a structure with its effect: large area allows more diffusion at once; thin walls shorten the path; blood flow and ventilation preserve the gradient. Alveoli do not actively pump oxygen across their walls."
+      ],
+      "terms": [
+        "diffusion gradient",
+        "surface area",
+        "capillary"
+      ],
+      "example": {
+        "question": "Why does blood flow help gas exchange?",
+        "steps": [
+          "It brings blood with lower oxygen content to the alveolar surface.",
+          "It carries away oxygenated blood, helping maintain the oxygen gradient."
+        ],
+        "explanation": "The same principle helps remove incoming CO₂."
+      },
+      "practice": {
+        "question": "Which gas moves from blood to alveolar air?",
+        "answer": "Carbon dioxide.",
+        "explanation": "Its gradient is opposite to the oxygen gradient."
+      },
+      "commonMistakes": [
+        "Do not give active transport as the mechanism of alveolar gas exchange."
+      ]
+    },
+    {
+      "id": "lung-volumes-and-capacities",
+      "title": "Separate a normal breath from maximum capacity",
+      "points": [
+        "8.4"
+      ],
+      "paragraphs": [
+        "Tidal volume is the volume of air moved in or out during one ordinary breath. Vital capacity is the largest volume that can be breathed out after the deepest possible inhalation. These are volumes, not rates or numbers of breaths.",
+        "Lung capacity describes a combined lung volume; total lung capacity is the volume present after maximal inhalation. Air remains after maximal exhalation: residual volume. Thus total lung capacity = vital capacity + residual volume. Residual volume helps distinguish vital capacity from all the air in the lungs.",
+        "An ordinary spirometer records air moved at the mouth. It can measure a vital-capacity manoeuvre and tidal movements, but it cannot directly measure air left in the lungs after maximal exhalation. Measuring residual volume and total lung capacity needs additional methods."
+      ],
+      "terms": [
+        "tidal volume",
+        "vital capacity",
+        "total lung capacity",
+        "residual volume"
+      ],
+      "example": {
+        "question": "An illustrative model has vital capacity 3.8 L and independently measured residual volume 1.1 L. Find total lung capacity.",
+        "steps": [
+          "Add 3.8 + 1.1 = 4.9 L.",
+          "The residual volume was provided by a separate measurement, not inferred from ordinary spirometry."
+        ],
+        "explanation": "The numbers are invented teaching values, not personal normal ranges."
+      },
+      "practice": {
+        "question": "Is vital capacity the same as one quiet breath?",
+        "answer": "No. A quiet breath has tidal volume; vital capacity covers a maximum inhalation-to-exhalation manoeuvre.",
+        "explanation": "Define the limits of the measurement."
+      },
+      "commonMistakes": [
+        "Do not include residual volume within vital capacity."
+      ]
+    },
+    {
+      "id": "reading-spirometer-traces",
+      "title": "Read a breathing trace from its axes",
+      "points": [
+        "8.4"
+      ],
+      "paragraphs": [
+        "Begin with what the vertical axis measures. A lung-volume graph increases during inhalation, while a trace of the volume remaining in a closed spirometer chamber may move in the opposite direction. Do not decide inhalation from an upward line without checking the apparatus and axis label.",
+        "For a volume-against-time trace, one complete rise-and-fall cycle is one breath. Tidal volume is the vertical difference between an ordinary-breath trough and peak. Breathing rate comes from complete cycles per unit time, whereas vital capacity is the maximum volume excursion.",
+        "In an illustrative trace, five complete cycles in 20 seconds correspond to 5 × 60 ÷ 20 = 15 breaths per minute. A normal-breath peak at 2.7 L and trough at 2.2 L give a tidal volume of 0.5 L. These readings describe the invented graph only; they are not diagnostic standards."
+      ],
+      "terms": [
+        "spirometer trace",
+        "cycle",
+        "breaths per minute"
+      ],
+      "example": {
+        "question": "A trace shows six complete cycles in 30 seconds. Calculate breathing rate.",
+        "steps": [
+          "Rate = 6 × 60 ÷ 30.",
+          "Rate = 12 breaths per minute."
+        ],
+        "explanation": "Count complete cycles and show the time conversion."
+      },
+      "practice": {
+        "question": "Can a rate be read from the height of one peak?",
+        "answer": "No. Rate needs the number of cycles and elapsed time.",
+        "explanation": "Peak-to-trough height gives a volume change."
+      },
+      "commonMistakes": [
+        "A turning point is not a complete breath."
+      ],
+      "diagram": {
+        "src": "/diagrams/human-lung-volumes.svg",
+        "alt": "Qualitative lung-volume sketch with quiet tidal excursions, maximum inhalation and maximum exhalation; separate brackets identify tidal volume, vital capacity and residual volume.",
+        "caption": "Original qualitative model, not a real measured spirometer record. Residual air is shown for context and cannot be measured directly by ordinary spirometry."
+      }
+    },
+    {
+      "id": "exercise-breathing-practical",
+      "title": "Plan an exercise and breathing-rate investigation",
+      "points": [
+        "8.5"
+      ],
+      "paragraphs": [
+        "Muscles doing more work generally need a greater rate of energy transfer. Breathing rate and depth can rise during exercise to support oxygen delivery and carbon dioxide removal. Rate and depth are distinct dependent variables.",
+        "For a breathing-rate investigation, count complete breaths for a fixed interval before exercise, then at an agreed time immediately after a standardised activity, and during recovery. The timing matters because recovery starts quickly.",
+        "Comparing different volunteers mixes effects of exercise with age, fitness and body size. A within-person comparison after full recovery can control some differences. Repeats and consistent activity are needed; one result does not establish a universal fitness score."
+      ],
+      "terms": [
+        "breathing rate",
+        "recovery",
+        "controlled variable"
+      ],
+      "example": {
+        "question": "A person takes 9 breaths in 30 seconds before exercise and 15 afterwards. Find both rates.",
+        "steps": [
+          "Before: 9 × 2 = 18 breaths/min.",
+          "After: 15 × 2 = 30 breaths/min.",
+          "Change: 12 breaths/min."
+        ],
+        "explanation": "These are illustrative counts, not targets for volunteers."
+      },
+      "practice": {
+        "question": "Why record the time after exercise?",
+        "answer": "Breathing rate changes during recovery, so different delays make results hard to compare.",
+        "explanation": "Timing is a control."
+      },
+      "commonMistakes": [
+        "Do not infer tidal volume from breathing count alone."
+      ],
+      "practical": {
+        "apparatus": [
+          "Timer",
+          "Results table",
+          "Teacher-approved moderate activity and clear space"
+        ],
+        "method": [
+          "Allow a settled rest period and count complete breaths over a fixed interval.",
+          "Use the same agreed moderate activity, duration and pace.",
+          "Measure at the same defined delay after exercise and at fixed recovery intervals.",
+          "Repeat only after recovery; summarise repeat results and compare with the baseline."
+        ],
+        "variables": [
+          "Independent: exercise condition or time during recovery",
+          "Dependent: breathing rate in breaths/min",
+          "Control person where appropriate, activity, duration, pace, counting interval and post-exercise delay"
+        ],
+        "safety": [
+          "Follow school participation screening; activity must be suitable for the volunteer.",
+          "Stop for discomfort; do not use maximum exertion, breath-holding or rebreathing."
+        ],
+        "quality": [
+          "Use complete cycles and a long enough counting window.",
+          "Record recovery timing and repeat variability instead of selecting a preferred trial."
+        ]
+      }
+    },
+    {
+      "id": "lung-capacity-practical",
+      "title": "Measure moved air without confusing it with all lung air",
+      "points": [
+        "8.5",
+        "8.4"
+      ],
+      "paragraphs": [
+        "A teacher-approved spirometer or gas-volume collection system can measure the volume exhaled after a maximal inhalation: vital capacity. A calibrated device and a fresh individual mouthpiece are important. Record the procedure used rather than calling every exhaled volume total lung capacity.",
+        "If a calibrated collection device measures displaced water or collected gas, the measured gas volume corresponds to the air moved into it after allowing for the apparatus limitations. Leaks, incomplete effort and dead space can affect the result. Do not inhale through a water-displacement collection system.",
+        "Exercise usually changes breathing rate and tidal volume over a short period. It does not mean the person has instantly grown a larger anatomical lung capacity. Repeat comparable manoeuvres under the approved procedure and explain what the instrument actually measures."
+      ],
+      "terms": [
+        "vital-capacity measurement",
+        "calibration",
+        "leak"
+      ],
+      "example": {
+        "question": "Three illustrative vital-capacity readings are 3.4, 3.6 and 3.5 L. Find the mean.",
+        "steps": [
+          "Total = 10.5 L.",
+          "Mean = 10.5 ÷ 3 = 3.5 L.",
+          "Report the same units and note repeat variation."
+        ],
+        "explanation": "A mean cannot fix a leak present in every reading."
+      },
+      "practice": {
+        "question": "Why is this measurement not total lung capacity?",
+        "answer": "Residual air remains after maximal exhalation and is not collected.",
+        "explanation": "Name the air that the device cannot measure."
+      },
+      "commonMistakes": [
+        "Do not share mouthpieces or inhale through a water collection arrangement."
+      ],
+      "practical": {
+        "apparatus": [
+          "Teacher-approved calibrated volume device",
+          "Fresh individual mouthpiece and approved cleaning/filters",
+          "Recording sheet"
+        ],
+        "method": [
+          "Follow the approved device procedure and confirm calibration.",
+          "After a full inhalation, record a controlled maximal exhalation into the device.",
+          "Check for leaks and repeat comparable valid attempts with adequate recovery.",
+          "Record vital capacity and units; if comparing conditions, use the same instrument and procedure."
+        ],
+        "variables": [
+          "Dependent: volume moved during the defined manoeuvre",
+          "Control posture, device, procedure and participant where appropriate",
+          "Separate ordinary tidal volume from the maximum vital-capacity manoeuvre"
+        ],
+        "safety": [
+          "Use approved participation and individual equipment hygiene.",
+          "No improvised closed-loop breathing, inhalation through water or forced attempts by unsuitable volunteers."
+        ],
+        "quality": [
+          "A valid manoeuvre must match the named capacity.",
+          "Record anomalies and instrument precision; residual volume is outside ordinary spirometry."
+        ]
+      }
+    },
+    {
+      "id": "carbon-dioxide-control",
+      "title": "Follow a carbon-dioxide feedback loop",
+      "points": [
+        "8.6"
+      ],
+      "paragraphs": [
+        "Chemoreceptors associated with the aorta and carotid arteries help monitor the chemical condition of arterial blood. Rising carbon dioxide affects acidity; receptor signals contribute to the response coordinated by respiratory centres in the brain. Other sensors also participate, so these are not the only breathing-control receptors.",
+        "The brain sends nerve impulses to respiratory muscles, increasing ventilation when needed. More carbon dioxide then leaves the blood across the lungs and is exhaled, helping move blood carbon dioxide back toward its normal range.",
+        "This is negative feedback: a departure prompts responses that oppose the departure. During exercise, respiration in working tissues increases CO₂ production. Do not say the receptors physically filter CO₂ out of blood; they detect a change and signal."
+      ],
+      "terms": [
+        "chemoreceptor",
+        "aorta",
+        "carotid artery",
+        "negative feedback"
+      ],
+      "example": {
+        "question": "Trace the response to increased arterial CO₂.",
+        "steps": [
+          "Chemical change is detected by chemoreceptor systems including the aortic and carotid sites.",
+          "Signals reach respiratory centres, which alter nerve output to breathing muscles.",
+          "Ventilation increases, increasing CO₂ removal."
+        ],
+        "explanation": "Connect sensor, coordination, effector and corrective effect."
+      },
+      "practice": {
+        "question": "Are chemoreceptors themselves the muscles that ventilate lungs?",
+        "answer": "No. They are sensors; respiratory muscles are effectors.",
+        "explanation": "Keep each role in the feedback loop distinct."
+      },
+      "commonMistakes": [
+        "Do not claim that the aorta and carotid arteries are the only sites involved in breathing control."
+      ]
+    },
+    {
+      "id": "aerobic-exercise",
+      "title": "Explain what aerobic exercise means",
+      "points": [
+        "8.7"
+      ],
+      "paragraphs": [
+        "Aerobic exercise is activity sustained mainly by aerobic energy transfer, with oxygen delivery supporting working muscles. Examples can include steady walking, cycling or swimming at an appropriate intensity. The activity name alone does not determine the balance of energy pathways.",
+        "During sustained work, ventilation and circulation supply oxygen and glucose and remove carbon dioxide. If intensity rises so demand exceeds oxygen supply, anaerobic contribution can increase.",
+        "Use the term to describe the dominant energy supply in the stated conditions. It does not mean that no anaerobic reactions ever occur or that the heart is the only organ using energy."
+      ],
+      "terms": [
+        "aerobic exercise",
+        "sustained activity"
+      ],
+      "example": {
+        "question": "Why might steady moderate cycling rely mainly on aerobic respiration?",
+        "steps": [
+          "The activity can be sustained while oxygen delivery meets much of muscle demand.",
+          "Aerobic respiration supplies ATP for repeated contraction."
+        ],
+        "explanation": "Intensity and oxygen delivery matter, not merely the sport name."
+      },
+      "practice": {
+        "question": "Does sprinting and slow walking always use the same pathway balance?",
+        "answer": "No. Higher demand can increase anaerobic contribution.",
+        "explanation": "The pathways can contribute together."
+      },
+      "commonMistakes": [
+        "Do not equate aerobic exercise with breathing pure oxygen."
+      ]
+    },
+    {
+      "id": "fitness-and-resting-pulse",
+      "title": "Relate training, stroke volume and resting pulse",
+      "points": [
+        "8.8",
+        "8.9"
+      ],
+      "paragraphs": [
+        "A pulse is a pressure wave in an artery caused by heart contraction. In the normal classroom model, counting pulses provides a measure of heartbeats per minute. Count over a stated interval and scale to one minute.",
+        "Regular suitable aerobic exercise can improve cardiovascular performance, including the amount of blood pumped per beat, called stroke volume. At rest, an efficient trained heart may meet the required blood flow with fewer beats. This helps explain why resting pulse can be one indicator of physical fitness.",
+        "It is not a stand-alone diagnosis or universal ranking. Resting pulse varies with stress, temperature, recent activity and other factors. Compare like conditions, repeat measurements and avoid assuming that any low pulse proves high fitness or that every person responds identically."
+      ],
+      "terms": [
+        "pulse rate",
+        "heart rate",
+        "stroke volume",
+        "cardiovascular fitness"
+      ],
+      "example": {
+        "question": "Count 17 pulses in 15 seconds. Estimate the rate.",
+        "steps": [
+          "There are four 15-second intervals per minute.",
+          "17 × 4 = 68 beats/min."
+        ],
+        "explanation": "A longer interval and repeats reduce the effect of a one-beat counting error."
+      },
+      "practice": {
+        "question": "Why can a trained heart have a lower resting rate?",
+        "answer": "A larger stroke volume can supply the required resting blood flow with fewer beats.",
+        "explanation": "Relate beats to the volume supplied, rather than saying the heart has stopped needing oxygen."
+      },
+      "commonMistakes": [
+        "Do not use one resting pulse result as a diagnosis or a complete measure of fitness."
+      ]
+    },
+    {
+      "id": "exercise-heart-rate-and-adrenaline",
+      "title": "Explain the rise in heart rate during exercise",
+      "points": [
+        "8.10"
+      ],
+      "paragraphs": [
+        "Working muscles need faster delivery of oxygen and glucose for respiration and removal of carbon dioxide. Increasing heart rate, together with changes in stroke volume, can increase the volume of blood supplied per minute.",
+        "Adrenaline released by the adrenal glands can increase heart rate and help prepare the body for activity. It acts as a hormone carried in blood, rather than as a nerve impulse travelling directly from the lungs.",
+        "Explain the complete link: more muscular work → greater energy demand → greater transport needs → increased circulation. A change in pulse alone does not establish how much adrenaline was released; the hormone is part of the regulation, not the measured variable in a simple pulse investigation."
+      ],
+      "terms": [
+        "adrenaline",
+        "adrenal gland",
+        "cardiac output"
+      ],
+      "example": {
+        "question": "Why is faster circulation useful during exercise?",
+        "steps": [
+          "It can deliver more oxygen and glucose to working muscles per unit time.",
+          "It also carries CO₂ away for removal at the lungs."
+        ],
+        "explanation": "State both the transported substances and the muscular demand."
+      },
+      "practice": {
+        "question": "How is adrenaline delivered to the heart?",
+        "answer": "It is a hormone carried in blood from the adrenal glands.",
+        "explanation": "Hormonal transport differs from a nerve impulse."
+      },
+      "commonMistakes": [
+        "Do not say adrenaline is produced by the heart or carried along a motor neuron."
+      ]
+    },
+    {
+      "id": "exercise-pulse-practical",
+      "title": "Investigate pulse changes and recovery",
+      "points": [
+        "8.11",
+        "8.9"
+      ],
+      "paragraphs": [
+        "Measure a resting baseline after a settled period, then use the same moderate activity and count pulses at an agreed delay afterwards. Recovery measurements at fixed intervals show how the rate moves back toward baseline.",
+        "Use a pulse sensor or gently locate the radial pulse at the wrist with fingertips. Count for a fixed period. A shorter window is quicker after exercise but magnifies counting error; record the window and timing explicitly.",
+        "Illustrative 15-second counts of 28, 30 and 29 after comparable trials give a mean count of 29 and estimated mean rate 116 beats/min. Compare with a baseline obtained by the same method. These are invented data, not instructions for reaching a particular rate."
+      ],
+      "terms": [
+        "baseline",
+        "radial pulse",
+        "recovery time"
+      ],
+      "example": {
+        "question": "Calculate the mean rate from the illustrative counts.",
+        "steps": [
+          "Mean count = (28 + 30 + 29) ÷ 3 = 29.",
+          "Rate = 29 × 4 = 116 beats/min."
+        ],
+        "explanation": "Use the same conversion for every comparable trial."
+      },
+      "practice": {
+        "question": "Why wait for recovery before repeating an exercise trial?",
+        "answer": "A raised starting rate would change the baseline and confound the comparison.",
+        "explanation": "Control starting conditions."
+      },
+      "commonMistakes": [
+        "Do not compare a 15-second count directly with a one-minute rate."
+      ],
+      "practical": {
+        "apparatus": [
+          "Timer",
+          "Recording table",
+          "Approved pulse sensor or wrist-pulse method",
+          "Clear space for standard moderate activity"
+        ],
+        "method": [
+          "Rest, then measure pulse over the chosen interval.",
+          "Complete the same suitable activity for the same duration and pace.",
+          "Measure at the same delay after activity and at fixed recovery times.",
+          "Repeat only after recovery; calculate rates, means and changes from baseline."
+        ],
+        "variables": [
+          "Independent: exercise condition or recovery time",
+          "Dependent: pulse rate in beats/min",
+          "Control activity, duration, timing, counting window and starting rest"
+        ],
+        "safety": [
+          "Follow teacher-approved participation; stop for discomfort and keep activity moderate.",
+          "Use the wrist rather than pressing neck arteries; do not push volunteers toward maximal exertion."
+        ],
+        "quality": [
+          "Consistent timing and repeats are essential.",
+          "A graph should label recovery time and pulse units and show variation where available."
+        ]
+      }
+    },
+    {
+      "id": "oxygen-debt-and-recovery",
+      "title": "Connect anaerobic work to recovery",
+      "points": [
+        "8.12"
+      ],
+      "paragraphs": [
+        "If exercise demand exceeds the rate of oxygen delivery, human muscles may obtain more energy anaerobically and lactate can accumulate. At this level, oxygen debt means the extra oxygen required after exercise to support recovery from that anaerobic contribution.",
+        "Continued raised breathing and heart rate deliver oxygen and transport metabolites. Lactate can be oxidised or converted into other molecules as recovery proceeds; energy and oxygen stores also need restoration. The simplified school account often emphasises oxygen needed to remove lactic acid.",
+        "Do not treat lactate as the only cause of fatigue or the only reason oxygen consumption stays high after exercise. Oxygen debt is a useful examination model, while actual recovery involves several processes. Explain why rates remain above resting values before returning toward baseline."
+      ],
+      "terms": [
+        "oxygen debt",
+        "recovery",
+        "lactate"
+      ],
+      "example": {
+        "question": "Why can breathing remain rapid after a sprint ends?",
+        "steps": [
+          "Extra oxygen is needed for recovery following anaerobic energy transfer.",
+          "Continued ventilation supplies oxygen and removes CO₂ while metabolites and stores are restored."
+        ],
+        "explanation": "Stopping movement does not instantly finish recovery."
+      },
+      "practice": {
+        "question": "Is the raised recovery rate proof that all muscle fatigue is caused by lactic acid?",
+        "answer": "No. Fatigue and recovery have several contributing processes.",
+        "explanation": "Use the simplified oxygen-debt model without making it universal."
+      },
+      "commonMistakes": [
+        "Do not say that lactic acid simply leaves the body as oxygen or that recovery has only one cause."
+      ]
+    },
+    {
+      "id": "smoking-and-gas-exchange",
+      "title": "Link smoking damage to respiratory and cardiovascular function",
+      "points": [
+        "8.13"
+      ],
+      "paragraphs": [
+        "Tobacco smoke can damage airway cilia and increase mucus-related problems, reducing normal clearance and contributing to bronchitis and infections. Carcinogens increase the risk of lung cancer. Emphysema damages alveolar walls, reducing useful exchange area and elastic recoil, so breathing and gas exchange become less effective.",
+        "Carbon monoxide binds strongly to haemoglobin and reduces its ability to transport oxygen. Nicotine is addictive and can increase heart rate and blood pressure. Smoking also damages blood vessels and increases the risk of cardiovascular disease.",
+        "For an explanation, connect the substance or damage to a consequence: reduced oxygen transport limits delivery; lost alveolar area limits diffusion; poorer mucus clearance allows material to remain in airways. Do not describe every smoke constituent as having the same effect, or confuse carbon monoxide with carbon dioxide."
+      ],
+      "terms": [
+        "cilia",
+        "emphysema",
+        "carbon monoxide",
+        "nicotine",
+        "carcinogen"
+      ],
+      "example": {
+        "question": "Explain one way smoking reduces oxygen supply.",
+        "steps": [
+          "Carbon monoxide binds to haemoglobin.",
+          "Less haemoglobin is available to carry oxygen effectively."
+        ],
+        "explanation": "This is a blood-transport effect, distinct from alveolar damage."
+      },
+      "practice": {
+        "question": "Why does alveolar wall damage affect diffusion?",
+        "answer": "It reduces useful exchange area and impairs normal recoil, making gas exchange and ventilation less effective.",
+        "explanation": "Pair the damaged structure with its function."
+      },
+      "commonMistakes": [
+        "Do not write CO₂ when describing carbon monoxide binding to haemoglobin."
+      ]
+    }
+  ]
+}

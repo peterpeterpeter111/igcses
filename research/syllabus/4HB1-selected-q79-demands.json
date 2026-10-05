@@ -7,13 +7,13 @@
   "reviewDate": "2026-10-05",
   "reviewedBy": "Codex visual/source review",
   "reviewerType": "agent",
-  "reviewMethod": "Own-spec PDF22/23/26 and saved visual QP18–23/MS10–11 review; selected Q7–Q9 demand identities.",
+  "reviewMethod": "Own-spec PDF22/23/26 and saved visual QP18–23/MS10–11 review; selected Q7–Q9 demand identities. Original partial teaching reviewed against the same own-spec page; no completion certification.",
   "reviewedPages": [
     22,
     23,
     26
   ],
-  "scope": "Selected gas exchange, ABO and modern sewage demand identities; no new teaching or complete current point coverage.",
+  "scope": "Selected paper demand identities; respiration/gas-exchange points now have partial teaching. Other selected identities and full assessment calibration remain incomplete.",
   "points": [
     {
       "id": "4HB1:issue2:8.2",
@@ -28,9 +28,13 @@
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "gas-exchange",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
-      "humanReviewed": false
+      "noteSectionIds": [
+        "inhaling-mechanics",
+        "exhaling-mechanics"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-05"
     },
     {
       "id": "4HB1:issue2:8.4",
@@ -45,9 +49,14 @@
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "gas-exchange",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
-      "humanReviewed": false
+      "noteSectionIds": [
+        "lung-volumes-and-capacities",
+        "reading-spirometer-traces",
+        "lung-capacity-practical"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-05"
     },
     {
       "id": "4HB1:issue2:8.6",
@@ -62,9 +71,12 @@
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "gas-exchange",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
-      "humanReviewed": false
+      "noteSectionIds": [
+        "carbon-dioxide-control"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-05"
     },
     {
       "id": "4HB1:issue2:9.5",

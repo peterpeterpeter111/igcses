@@ -1,3 +1,4 @@
+import humanRespGas from '../research/syllabus/4HB1-respiration-gas-exchange.json' with { type: 'json' };
 import humanQ79 from '../research/syllabus/4HB1-selected-q79-demands.json' with { type: 'json' };
 import humanQ6 from '../research/syllabus/4HB1-selected-q6-demands.json' with { type: 'json' };
 import humanQ4 from '../research/syllabus/4HB1-selected-q4-demands.json' with { type: 'json' };
@@ -42,7 +43,8 @@ import mathsPolynomials from '../research/syllabus/4MB1-polynomials-and-fraction
 
 // Reviewed overlays are kept separate from the immutable raw candidates.
 export const reviewedInventories = [
-  { title: 'Selected Q7–Q9 demands: gas exchange, blood groups and sewage (identities only; no teaching)', ...humanQ79 },
+  { title: 'Respiration and gas exchange: additional identities with partial teaching', ...humanRespGas },
+  { title: 'Selected Q7–Q9 demands: gas exchange (partial teaching), blood groups and sewage (identities only)', ...humanQ79 },
   { title: 'Selected Q6 demands: blood transport (identities only; no teaching)', ...humanQ6 },
   { title: 'Forces and motion', ...forces },
   { title: 'Waves', ...waves },
@@ -65,7 +67,7 @@ export const reviewedInventories = [
   { title: 'Selected Q1 demands: coordination and skin (identities only; no teaching)', ...humanQ1 },
   { title: 'Selected heredity foundations (11.13/11.14/11.20/11.21; partial teaching)', ...humanQ3 },
   { title: 'Monohybrid inheritance (11.19; partial teaching)', ...humanMonohybrid },
-  { title: 'Selected Q4 demands: respiration and exercise (identities only; no teaching)', ...humanQ4 },
+  { title: 'Selected Q4 demands: respiration and exercise (partial teaching)', ...humanQ4 },
   { title: 'Selected Q2 demands: food hygiene and bacteria (identities only; no teaching)', ...humanQ2 },
   { title: 'Principles foundations (1.1–1.22)', ...chemistryStates },
   { title: 'Group behaviour, formulae and calculations (1.23–1.36)', ...chemistryCalculations },

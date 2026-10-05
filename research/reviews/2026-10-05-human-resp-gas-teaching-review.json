@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-05",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Original Human Biology respiration/gas-exchange teaching checked against own-spec PDF22 and bounded supporting sources. No independent examiner calibration or chapter certification.",
+  "sourcePage": 22,
+  "sourceSha256": "989c6536fa946f1361e45e3c1e0ebced240a9f4666a2c835ce9cf9724a38e30f",
+  "parents": [
+    "7.1",
+    "7.2",
+    "7.3",
+    "7.4",
+    "7.5",
+    "7.6",
+    "8.1",
+    "8.2",
+    "8.3",
+    "8.4",
+    "8.5",
+    "8.6",
+    "8.7",
+    "8.8",
+    "8.9",
+    "8.10",
+    "8.11",
+    "8.12",
+    "8.13"
+  ],
+  "newSections": 22,
+  "newIdentities": 10,
+  "requirements": 58,
+  "checks": [
+    {
+      "name": "aerobic carbon",
+      "actual": "6",
+      "expected": "6",
+      "passed": true
+    },
+    {
+      "name": "aerobic hydrogen",
+      "actual": "12",
+      "expected": "12",
+      "passed": true
+    },
+    {
+      "name": "aerobic oxygen",
+      "actual": "18",
+      "expected": "18",
+      "passed": true
+    },
+    {
+      "name": "CO2 mean",
+      "actual": "13.0",
+      "expected": "13",
+      "passed": true
+    },
+    {
+      "name": "lung model total",
+      "actual": "49/10",
+      "expected": "49/10",
+      "passed": true
+    },
+    {
+      "name": "trace breathing rate",
+      "actual": "15.0",
+      "expected": "15",
+      "passed": true
+    },
+    {
+      "name": "trace tidal",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "practice trace rate",
+      "actual": "12.0",
+      "expected": "12",
+      "passed": true
+    },
+    {
+      "name": "exercise baseline",
+      "actual": "18.0",
+      "expected": "18",
+      "passed": true
+    },
+    {
+      "name": "exercise rate",
+      "actual": "30.0",
+      "expected": "30",
+      "passed": true
+    },
+    {
+      "name": "volume mean",
+      "actual": "7/2",
+      "expected": "7/2",
+      "passed": true
+    },
+    {
+      "name": "resting pulse",
+      "actual": "68.0",
+      "expected": "68",
+      "passed": true
+    },
+    {
+      "name": "pulse mean",
+      "actual": "116.0",
+      "expected": "116",
+      "passed": true
+    }
+  ],
+  "qualifications": [
+    "ATP phosphate addition requires energy; net hydrolysis energy is not isolated bond-breaking energy.",
+    "Human anaerobic equation scope and lactate terminology kept distinct from yeast.",
+    "Quiet exhalation passive recoil; forced muscle use qualified. Corrected schematic expiration arrows inward/downward before save.",
+    "Spirometer orientation depends on axis/apparatus; ordinary spirometry cannot directly measure residual volume.",
+    "CO2 test controls equal gas/indicator volumes; non-endpoint result not converted into zero concentration.",
+    "Pulse/respiration illustrative data not clinical reference values; controls/recovery/hygiene explicit.",
+    "Oxygen-debt school model qualified; lactate not sole fatigue/recovery cause."
+  ],
+  "externalAccess": [
+    "NHLBI breathing/tests/control and NHS smoking sources browsed.",
+    "PMC/NCBI direct open challenged; relevant ATP misconception research abstract/search excerpt available. No inaccessible full paper certification."
+  ],
+  "completeChapters": 0,
+  "completePoints": 0,
+  "activeTemplates": 0
+}
