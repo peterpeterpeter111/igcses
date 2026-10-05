@@ -1,0 +1,15 @@
+# Biology human transport — 5 October 2026
+
+Continued local8f4c0a0, exactly mirrored by GitHubd09876f. Fifteen original sections in tenth Biology source part; own4BI1Issue3PDF23/printed17refs2.59–2.69, eleven new identities/partial audits,41local requirements/16links. Vaccination2.63B/clotting2.64B only2B; other nine both1B/2B. No completion promoted or Human reference numbers borrowed.
+
+Blood cells/plasma/cargo, red-cell adaptations, phagocytosis/antibody specificity, memory after vaccination, fibrin clot, chambers/valves/cycle, exercise/adrenaline, coronary risk, vessels and named pulmonary/systemic/liver/kidney routes now have partial teaching. One new original immune-memory graph compares each exposure on elapsed time; shorter delay, steeper rise and higher peak. It is conceptual, no measured clinical data or vaccination schedule. The library’s original circulation route SVG is reused with attribution as original library material.
+
+Own page visually checked. Primary NHLBI/CDC/NHS/OpenStax physiology sources checked; no prescribing thresholds/doses, blanket ABO compatibility or surrounding source redox/camel statements adopted. NIAID direct page timed out and NCBI hepatic overview challenged; search excerpts available, full direct texts not certified. No bypass or new bulk collection. Limits saved in teaching review.
+
+New main files: content/note-sections/biology-structures/10-human-transport.json; public/diagrams/biology-immune-memory.svg; research/syllabus/4BI1-human-transport.json; research/curriculum-audits/4BI1-human-transport.json; research/reviews/2026-10-05-biology-human-transport-{content,evidence,arithmetic,teaching-review}.json. Composer/metadata/registries/count assertions/normalized ledgers updated. Prior work, historical batches and template gates preserved.
+
+Verification:133 tests,typecheck/lint,14research checks, content/evidence reconciliation, isolatedD1, production build and73-file public scan pass; git diff whitespace check clean. Independent constructed cardiac-output arithmetic passes. Reader/diagram/coverage width583,no horizontal overflow; settledanchor24px,diagram529px. Coverage11new partial rows and2Bscope verified. Proof work/biology-immune-memory-proof-2026-10-05.png.
+
+Totals:475sections /23partial note documents /36catalog routes;485reviewed parent identities /469partial audits /1,343local requirements /672partial teaching links. Biology97sections /2notes /73identities/audits /293requirements. Seven obtained pairs; Physics51parts110marks, Maths38parts100marks, Human42parts90marks plus one detailed English pilot task. Zero fully processed papers/complete chapters/points/active templates;seven provisional families/seven experimental offline prototypes. No liveAI,Sitesversion/deployment/verifiedpublicURL or reset.
+
+Next: Biology excretion2.70–2.79B/coordination2.80onwards and other curriculum; whole-paper skills/historical applicability/calibration. Save/sync non-force and preserve all source/UI. Continue only above5%both ordinary allowances; checkpoint/pause at5%;AIlast.
