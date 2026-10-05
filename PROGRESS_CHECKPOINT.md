@@ -1,3 +1,7 @@
+# Latest pause — Human Biology Q6, 5 October 2026
+
+Read research/checkpoints/2026-10-05-PAUSED-AFTER-HUMAN-Q6.md first. Allowances5%five-hour/42%weekly;paused at requested gate,noreset. Local26b6720 exactly mirrored byGitHub9ae9acc (non-force retry resolved422). This checkpoint/preflight documentation is a newer delta tosync nextresume. Human29of42detailed/64of90marks;Q7–Q9preflights saved but13parts26marks remainindexed-only.397sections/20partialnotes/36routes,435parents/412audits/1148requirements/586links;7obtained/0processed/completechapters/points/activefamilies,6experimental.125tests,typecheck/lint/research/content/reconciled evidence/build/68publicfilespass. NoAI/Sitesversion/deployment. Continueonlyabove5%both;preservehistory/UI;AIlast. Olderentrieshistorical.
+
 # Latest phase — Human Biology Q6, 5 October 2026
 
 Read research/checkpoints/2026-10-05-HUMAN-Q6.md first. Human29of42detailed parts/64of90marks;13indexed-only/26marks remainQ7–Q9. Numeric full-answer/ECF sidecars and heat-energy qualification preserved; recognition/calibration pending.125tests including52malformedcases,typecheck/lint/research/content/reconciled evidence/build and68public-file checks pass.397sections/20partialnotes,435identities/412audits/1148requirements/586links. Sevenobtainedpairs/zero processedpapers/completechapters/points/activefamilies;sixexperimental. GitHubbce4a85 mirrors local103afe6;sync newer phase non-force. AIlast,noreset/version/deployment. Continueabove5%both;pauseat5%. Olderentrieshistorical.
