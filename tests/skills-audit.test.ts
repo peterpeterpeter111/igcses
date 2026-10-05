@@ -16,7 +16,7 @@ void test('skills audit separates Physics applicability from numbered content an
   const parents = reviewedInventories.filter((i) => i.qualification === skills.qualification).flatMap((i) => i.points);
   assert.equal(parents.length, 195);
   assert.ok(skills.skills.every((s) => !parents.some((p) => p.id === s.id)));
-  assert.equal(skills.documentSha256, reviewedInventories[0].specificationSha256);
+  assert.equal(skills.documentSha256, reviewedInventories.find((inventory) => inventory.qualification === skills.qualification)!.specificationSha256);
   assert.equal(skills.assessmentObjectiveCaution.officialTaskAllocationVerified, false);
   assert.equal(skills.teachingCompletionAssessed, false);
   assert.equal(skills.fullyProcessedPaper, false);

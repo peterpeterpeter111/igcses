@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4HB1",
+  "specificationDocumentId": "4HB1-spec",
+  "specificationSha256": "989c6536fa946f1361e45e3c1e0ebced240a9f4666a2c835ce9cf9724a38e30f",
+  "reviewDate": "2026-10-05",
+  "reviewer": "Codex visual/source review",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Selected Q6 arithmetic skills only; not full mathematical/experimental/AO reconciliation.",
+  "reviewedPages": [
+    43
+  ],
+  "skills": [
+    {
+      "id": "4HB1:issue2:mathematical:1C",
+      "reference": "1C",
+      "pdfPage": 43,
+      "printedPage": 37,
+      "summary": "Use ratios, fractions, percentages, powers and roots.",
+      "appliesToHumanBiology": true,
+      "reviewStatus": "agent-reviewed"
+    },
+    {
+      "id": "4HB1:issue2:mathematical:3C",
+      "reference": "3C",
+      "pdfPage": 43,
+      "printedPage": 37,
+      "summary": "Substitute numerical values into algebraic equations using appropriate units.",
+      "appliesToHumanBiology": true,
+      "reviewStatus": "agent-reviewed"
+    }
+  ],
+  "taskMappings": [
+    {
+      "taskId": "4HB1-2024-May-01-standard.Q6.a.i",
+      "skillIds": [
+        "4HB1:issue2:mathematical:1C",
+        "4HB1:issue2:mathematical:3C"
+      ],
+      "scope": "required-operations-only",
+      "humanReviewed": false
+    },
+    {
+      "taskId": "4HB1-2024-May-01-standard.Q6.a.ii",
+      "skillIds": [
+        "4HB1:issue2:mathematical:1C",
+        "4HB1:issue2:mathematical:3C"
+      ],
+      "scope": "required-operations-only",
+      "humanReviewed": false
+    },
+    {
+      "taskId": "4HB1-2024-May-01-standard.Q6.a.iii",
+      "skillIds": [
+        "4HB1:issue2:mathematical:1C"
+      ],
+      "scope": "required-operations-only",
+      "humanReviewed": false
+    }
+  ],
+  "blockers": [
+    "Whole-paper skill/AO audit and response calibration pending."
+  ]
+}

@@ -1,3 +1,7 @@
+# Latest phase — Human Biology Q6, 5 October 2026
+
+Read research/checkpoints/2026-10-05-HUMAN-Q6.md first. Human29of42detailed parts/64of90marks;13indexed-only/26marks remainQ7–Q9. Numeric full-answer/ECF sidecars and heat-energy qualification preserved; recognition/calibration pending.125tests including52malformedcases,typecheck/lint/research/content/reconciled evidence/build and68public-file checks pass.397sections/20partialnotes,435identities/412audits/1148requirements/586links. Sevenobtainedpairs/zero processedpapers/completechapters/points/activefamilies;sixexperimental. GitHubbce4a85 mirrors local103afe6;sync newer phase non-force. AIlast,noreset/version/deployment. Continueabove5%both;pauseat5%. Olderentrieshistorical.
+
 # Latest phase — Human Biology Q4–Q5, 5 October 2026
 
 Read research/checkpoints/2026-10-05-HUMAN-Q45.md first. Human24of42 detailed parts/51of90marks;18indexed-only parts/39marks remain. Apparatus topology, exercise controls and4of6/5of6source caps saved; graph has no numeric optimum.125tests,typecheck/lint/research/content/evidence/build and68-file public scan pass; isolatedD1 passed preceding heredity phase.397sections/20partial notes,433identities/412audits/1148requirements/586links. Sevenobtainedpairs,zero processed/completechapters/points/activefamilies;sixexperimental. GitHub80cc30a mirrors savedc99d40f;sync newer phase non-force. ContinueHumanQ6–Q9,curriculum/calibration above5%both;AIlast,noreset/version/deployment. Older entries are historical.
