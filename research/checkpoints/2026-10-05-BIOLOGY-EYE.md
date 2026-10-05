@@ -1,0 +1,13 @@
+# Biology eye structure and responses — 5 October 2026
+
+Continued local `399b596`, exactly mirrored by GitHub `2939330`. Added six original lessons and one lens-state comparison. Own4BI1Issue3PDF25/printed19 refs2.91–2.92, both1B/2B; two new identities/partial audits, eleven local requirements and six partial links. No point/chapter completion.
+
+Eye light entry/optical layers/media, retinal rods/cones/fovea/blindspot and optic-nerve signalling explained. Near muscle contraction→reduced ligament tension→rounder lens versus distance reverse; bright/dim iris antagonists and distance/illumination variables distinguished. Diagram is original relative lens thickness, not anatomy/ray tracing/measurement. Proposed observation comparisons are not performed trials. Own page visually verified; primary OpenStax vision and UTHealth McGovern lens/iris teaching read. Surrounding clinical material and oversimplified direct fovea-to-ganglion claims not adopted.
+
+New files: `content/note-sections/biology-structures/14-eye.json`, `public/diagrams/biology-accommodation.svg`, `research/syllabus/4BI1-eye.json`, `research/curriculum-audits/4BI1-eye.json`, and `research/reviews/2026-10-05-biology-eye-{content,evidence,teaching-review}.json`. Composer/metadata/registries/count assertions and partial ledgers updated. Existing UI, raw batches, papers and template gates preserved.
+
+Verification:133tests,typecheck/lint,fourteenresearchchecks,content/evidence,isolatedD1,productionbuild/77-filepublicscan and whitespace check pass. Evidenceerrors/publicfindings empty. Desktop reader/complete diagram width1280,image600,no overflow;proof `work/biology-eye-proof-2026-10-05.png`. Coverage shows two new partial statements and96Biologyparents/374requirements. Narrow check remains pending because preceding390viewport override did not change reported width; no false claim.
+
+Totals:508 sections/23 partial notes/36catalogroutes;508 reviewed parent identities/492partialaudits/1,424localrequirements/710partiallinks. Biology130sections/twonotes/96identitiesandaudits/374requirements. Sevenobtainedpairs;Physics51detailedparts/110marks,Maths38/100,Human42/90,oneEnglishpilot. Zero fullyprocessedpapers,completechapters/points/activefamilies;sevenprovisional/sevenexperimentalofflinegenerators/markers. NoAI,Sitesversion,deployment/verifiedpublicURL/reset.
+
+Next: skin temperature regulation2.93, named hormone source/role/effects2.94–2.95B, then widercurriculum/paperhistorical/skillsaudits/calibration. Only2.95B onthispage is2B-only. Labelledwhole-eyeanatomy/ray diagrams/unfamiliarassessment remain partial gates. Save/syncnon-force,continueabove5%bothallowances,pauseat5%. Lastread10%five-hour/28%weekly. AIlast.
