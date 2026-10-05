@@ -90,7 +90,19 @@
       "commonMistakes": [
         "Do not turn one detail into two by rephrasing it.",
         "Stay inside any specified part of the text."
-      ]
+      ],
+      "answerGuide": {
+        "id": "4EB1.retrieve-two-causes",
+        "sourceTaskId": "4EB1-2024-November-01.Q5",
+        "command": "Identify two causes",
+        "steps": [
+          "Locate the named paragraph or lines and identify the outcome in the question.",
+          "Choose a cause that the passage explicitly links to that outcome. Preserve qualifiers and whether it causes or removes a problem.",
+          "Choose a second distinct cause; a synonym of the first does not add another point.",
+          "Check both answers against the passage rather than adding an outside explanation."
+        ],
+        "caution": "This is a source-derived reading approach, not a guarantee of marks. Follow the restrictions in each question and preserve the passage’s causal meaning."
+      }
     },
     {
       "id": "inference-with-evidence",

@@ -1,4 +1,5 @@
 import matrixFamily from '../research/templates/4MB1-matrix-addition.v0.1.0.json' with { type: 'json' };
+import retrievalValidation from '../research/validation/2026-10-05-retrieval-prototype.json' with { type: 'json' };
 import groupedMeanFamily from '../research/templates/4MB1-grouped-mean.v0.1.0.json' with { type: 'json' };
 import rawLinks from '../research/paper-ledger.json' with { type: 'json' };
 import candidates from '../research/coverage.json' with { type: 'json' };
@@ -19,7 +20,7 @@ import { latestDiscoveryDate, obtainedPaperCandidates, paperCoverReview, paperDe
 const researchFamilies = [retrievalFamily, resultantFamily, weightFamily, quadraticFamily, matrixFamily, groupedMeanFamily];
 const mathematicsSummary = obtainedPaperCandidates('4MB1').map(paperDetailedSummary).find((row) => row !== null);
 export const evidenceHighlights = {
-  updatedAt: [physicsExtraction.paperStageReviewedAt, latestDiscoveryDate, mathematicsSummary?.reviewedAt ?? latestDiscoveryDate].sort().at(-1),
+  updatedAt: [physicsExtraction.paperStageReviewedAt, latestDiscoveryDate, mathematicsSummary?.reviewedAt ?? latestDiscoveryDate, retrievalValidation.date].sort().at(-1),
   mathematicsDetailedParts: mathematicsSummary?.detailedTasks ?? 0,
   mathematicsDetailedMarks: mathematicsSummary?.originalMarks ?? 0,
   physicsDetailedParts: physicsExtraction.detailedLeafTasks,

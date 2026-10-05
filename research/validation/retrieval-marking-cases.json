@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "scope": "Independent manually specified synthetic transcription cases. Not learner calibration or official examiner responses.",
+  "parameters": {"context":"fair","causeIds":["signs","doors","boxes","delivery"],"remedyCount":2,"evidenceOrder":"interleaved"},
+  "cases": [
+    {"id":"two-exact","answers":["missing direction signs","locked entrance doors"],"additionalEvidence":"","status":"scored","score":2},
+    {"id":"any-valid-pair","answers":["unlabelled supply boxes","late delivery of equipment"],"additionalEvidence":"","status":"scored","score":2},
+    {"id":"bounded-aliases","answers":["a lack of direction signs","equipment arriving late"],"additionalEvidence":"","status":"scored","score":2},
+    {"id":"duplicate","answers":["missing direction signs","missing direction signs"],"additionalEvidence":"","status":"scored","score":1},
+    {"id":"equivalent-duplicate","answers":["missing direction signs","a lack of direction signs"],"additionalEvidence":"","status":"scored","score":1},
+    {"id":"one-blank","answers":["","locked entrance doors"],"additionalEvidence":"","status":"scored","score":1},
+    {"id":"two-blanks","answers":["",""],"additionalEvidence":"","status":"scored","score":0},
+    {"id":"remedies","answers":["putting up clear direction signs","unlocking the entrance doors"],"additionalEvidence":"","status":"scored","score":0},
+    {"id":"cause-and-remedy","answers":["locked entrance doors","putting up clear direction signs"],"additionalEvidence":"","status":"scored","score":1},
+    {"id":"capitalization-and-whitespace","answers":[" MISSING   DIRECTION SIGNS. "," Locked Entrance Doors. "],"additionalEvidence":"","status":"scored","score":2},
+    {"id":"unlisted-valid-paraphrase","answers":["there were no signs showing the way","locked entrance doors"],"additionalEvidence":"","status":"needs-review","score":null},
+    {"id":"unlisted-contradiction","answers":["missing direction signs did not cause delays","locked entrance doors"],"additionalEvidence":"","status":"needs-review","score":null},
+    {"id":"combined-claims","answers":["missing direction signs and putting up clear direction signs","locked entrance doors"],"additionalEvidence":"","status":"needs-review","score":null},
+    {"id":"two-causes-in-one-entry","answers":["missing direction signs and locked entrance doors",""],"additionalEvidence":"","status":"needs-review","score":null},
+    {"id":"outside-selected-causes","answers":["missing registration lists","locked entrance doors"],"additionalEvidence":"","status":"needs-review","score":null},
+    {"id":"extra-evidence","answers":["missing direction signs","locked entrance doors"],"additionalEvidence":"The signs did not matter.","status":"needs-review","score":null},
+    {"id":"unrelated-detail","answers":["Saturday","locked entrance doors"],"additionalEvidence":"","status":"needs-review","score":null}
+  ]
+}

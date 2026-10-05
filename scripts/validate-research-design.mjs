@@ -76,6 +76,19 @@ check(
     }
   },
 );
+check('English offline prototype keeps its source task, guide and provisional gates aligned', () => {
+  const family = templates.find((t) => t.id === '4EB1.retrieve-two-causes');
+  const task = pilot.tasks.find((t) => t.number === 5);
+  assert.equal(family.runtime.implemented, true);
+  assert.equal(family.sourceTasks[0].taskId, task.id);
+  assert.equal(family.sourceTasks[0].originalMarks, task.marks);
+  assert.deepEqual(family.sourceTasks[0].markScheme.pdfPages, task.msPages);
+  assert(read('content/notes/english.json').sections.some((s) =>
+    s.answerGuide?.id === family.answerGuideId && s.answerGuide.sourceTaskId === task.id));
+  assert.equal(family.status, 'provisional');
+  assert.deepEqual(family.customQuiz.validatedMarks, []);
+  assert(family.review.blockers.length > 0);
+});
 check('Untested family cannot be promoted to active', () => {
   const candidate = structuredClone(template);
   candidate.status = 'active';

@@ -118,7 +118,8 @@ export default function CoveragePage() {
             retrieval, Physics resultant force and weight, Maths factorisation,
             matrix addition and grouped means).{' '}
             Experimental generators: {evidenceHighlights.experimentalGenerators}.
-            Mathematical checks do not establish assessment or marking readiness.
+            Mechanical checks do not establish assessment or marking readiness.
+            The English prototype uses a finite original word bank and defers unfamiliar paraphrases for review.
             The one-mark matrix prototype has no validated 2/4/6-mark quiz adaptation. Live AI remains deferred.
           </li>
         </ul>

@@ -5,6 +5,7 @@ import { generateQuadraticPrototype, validateQuadraticPrototype } from '../serve
 import { generateWeightPrototype, validateWeightPrototype } from '../server/generators/weight-conversion.ts';
 import { generateResultantPrototype, buildResultantPrototype, validateResultantPrototype } from '../server/generators/collinear-resultant.ts';
 import { generateGroupedMeanPrototype, buildGroupedMeanPrototype, validateGroupedMeanPrototype } from '../server/generators/grouped-mean.ts';
+import { generateRetrievalPrototype, validateRetrievalPrototype } from '../server/generators/retrieve-two-causes.ts';
 
 // Inspect the real packages, including nested row arrays, rubric records and
 // parameter arrays. A frozen outer object alone would not protect a scheme.
@@ -15,6 +16,7 @@ function checkEveryObject(value: unknown): number {
   return 1 + Object.values(value).reduce<number>((sum, child) => sum + checkEveryObject(child), 0);
 }
 const fixtures = [
+  { name: 'English retrieval', create: () => generateRetrievalPrototype(7), validate: (q: unknown) => validateRetrievalPrototype(q as ReturnType<typeof generateRetrievalPrototype>) },
   { name: 'matrix', create: () => generateMatrixAdditionPrototype(7), validate: (q: unknown) => validateMatrixAdditionPrototype(q as ReturnType<typeof generateMatrixAdditionPrototype>) },
   { name: 'quadratic', create: () => generateQuadraticPrototype(7), validate: (q: unknown) => validateQuadraticPrototype(q as ReturnType<typeof generateQuadraticPrototype>) },
   { name: 'weight', create: () => generateWeightPrototype(7), validate: (q: unknown) => validateWeightPrototype(q as ReturnType<typeof generateWeightPrototype>) },
