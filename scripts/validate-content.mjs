@@ -1,5 +1,6 @@
 import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import assert from 'node:assert/strict';
+import { readNote } from './read-note.mjs';
 // Read-only by default. An explicit output creates a new report and must never
 // replace historical evidence, even when a caller reuses an old filename.
 const args = process.argv.slice(2);
@@ -9,7 +10,7 @@ const sources = JSON.parse(readFileSync('research/sources.json', 'utf8'));
 const rows = readdirSync('content/notes')
   .filter((x) => x.endsWith('.json'))
   .sort()
-  .map((f) => JSON.parse(readFileSync('content/notes/' + f, 'utf8')));
+  .map((f) => readNote('content/notes/' + f));
 const checks = [];
 for (const n of rows) {
   const s = sources.find((s) => s.id === n.sourceId);

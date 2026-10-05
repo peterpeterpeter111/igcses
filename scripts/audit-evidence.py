@@ -10,6 +10,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 from ledger_io import read_table
+from note_io import read_note
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -48,7 +49,7 @@ def audit(root=ROOT):
     pilot = read('research/pilot/4EB1-2024-November-01.json')
     extractions = [json.loads(p.read_text()) for p in sorted((root / 'research/extractions').glob('*.json'))]
     inventories = [json.loads(p.read_text()) for p in sorted((root / 'research/syllabus').glob('*.json'))]
-    notes = [json.loads(p.read_text()) for p in sorted((root / 'content/notes').glob('*.json'))]
+    notes = [read_note(p) for p in sorted((root / 'content/notes').glob('*.json'))]
     audits = [json.loads(p.read_text()) for p in sorted((root / 'research/curriculum-audits').glob('*.json'))]
     families = [json.loads(p.read_text()) for p in sorted((root / 'research/templates').glob('*.json'))]
     discovery_candidates = [record for p in sorted((root / 'research/discovery').glob('*.json'))

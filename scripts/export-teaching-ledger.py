@@ -4,6 +4,7 @@ import json
 import sys
 from pathlib import Path
 from ledger_io import read_table, read_csv, coverage_partitions
+from note_io import read_note
 
 
 def encode(value):
@@ -15,7 +16,7 @@ path = Path(sys.argv[1]).resolve()
 if path.parent != root / 'research/syllabus':
     raise ValueError('Expected a reviewed syllabus inventory')
 inventory = json.loads(path.read_text())
-notes = [json.loads(p.read_text()) for p in (root / 'content/notes').glob('*.json')]
+notes = [read_note(p) for p in (root / 'content/notes').glob('*.json')]
 date = inventory['reviewDate']
 point_rows, coverage_rows = [], []
 for point in inventory['points']:

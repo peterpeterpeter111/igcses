@@ -46,7 +46,7 @@ from scripts.ledger_io import read_table
 source=Path.cwd()
 with tempfile.TemporaryDirectory() as d:
  root=Path(d)
- for folder in ['scripts','research/ledger/v1','research/syllabus','content/notes']:
+ for folder in ['scripts','research/ledger/v1','research/syllabus','content/notes','content/note-sections']:
   shutil.copytree(source/folder,root/folder)
  before={p.relative_to(root):p.read_bytes() for p in (root/'research/ledger/v1').rglob('*') if p.is_file()}
  old=read_table(root/'research/ledger/v1','coverage')[1]
