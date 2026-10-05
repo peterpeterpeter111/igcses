@@ -1,6 +1,6 @@
-"""Normalize the full visual 4HB1 inventory and detailed Q1–Q2 subset.
+"""Normalize the full visual 4HB1 inventory and detailed Q1–Q3 subset.
 
-Structural inventory is42parts/90marks; only11parts/23marks are detailed. The
+Structural inventory is42parts/90marks; only17parts/32marks are detailed. The
 paper stays indexed, and an any-two-of-three rubric retains its distinct cap.
 All evidence/table validation happens before any write. Raw manifests are read.
 """
@@ -15,6 +15,8 @@ PAPER = '4HB1-2024-May-01-standard'
 OVERLAY = 'research/extractions/' + PAPER + '.json'
 INVENTORY = 'research/syllabus/4HB1-selected-q1-demands.json'
 Q2_INVENTORY = 'research/syllabus/4HB1-selected-q2-demands.json'
+Q3_INVENTORY = 'research/syllabus/4HB1-selected-q3-demands.json'
+CELLS = 'research/syllabus/4HB1-cells-foundations.json'
 SKILLS = 'research/syllabus-skills/4HB1-issue2-selected.json'
 INDEX = 'research/paper-indexes/4HB1-2024-summer-01.json'
 # Independent reviewed leaf allocations; index records must not supply their own denominator.
@@ -25,6 +27,8 @@ EXPECTED = {
     '1.b.i': (2, [3]), '1.b.ii': (2, [3]), '1.b.iii': (2, [4]),
     '1.c.i': (1, [5]), '1.c.ii': (2, [5]), '1.c.iii': (1, [5]),
     '2.a.i': (4, [6]), '2.a.ii': (1, [7]), '2.b': (6, [7]),
+    '3.a.i': (1, [8]), '3.a.ii': (1, [8]), '3.a.iii': (1, [8]),
+    '3.b.i': (1, [8]), '3.b.ii': (1, [9]), '3.c': (4, [9]),
 }
 
 
@@ -65,7 +69,7 @@ def prepare(root=ROOT):
     require(m['paperId'] == PAPER and m['qualification'] == '4HB1', 'Wrong bounded paper')
     require(m['paperStage'] == 'indexed' and m['fullyProcessed'] is False and m['humanReviewed'] is False and m['marksReconciled'] is False, 'No whole-paper or human promotion')
     require(m['wholePaperLeafCount'] == 42 and m['wholePaperMarks'] == 90 and m['reviewedSubsetMarksReconciled'] is True and m['inventoryMarksReconciled'] is True and m['visualInventoryRef'] == INDEX, 'Structural and detailed scopes must stay separate')
-    require(m['detailedLeafTasks'] == 11 and m['detailedOriginalMarks'] == 23 and m['reviewedQuestionTotals'] == {'1': 12, '2': 11}, 'Wrong Q1–Q2 subset counts')
+    require(m['detailedLeafTasks'] == 17 and m['detailedOriginalMarks'] == 32 and m['reviewedQuestionTotals'] == {'1': 12, '2': 11, '3': 9}, 'Wrong Q1–Q3 subset counts')
     require(m['rawManifestRef'] == 'research/batches/2026-09-08-cross-subject-lower-01.manifest.json'
             and m['coverReviewRef'] == 'research/reviews/2026-09-09-cover-review.json', 'Unexpected evidence authority')
     for field in ['rawManifest', 'coverReview']:
@@ -80,7 +84,7 @@ def prepare(root=ROOT):
     docs = {d['type']: d for d in m['documents']}
     require(set(docs) == {'question-paper', 'mark-scheme'} and len(m['documents']) == 2, 'Expected two distinct documents')
     qp, ms = docs['question-paper'], docs['mark-scheme']
-    for key, doc, expected_pages in [('questionPaper', qp, [2, 3, 4, 5, 6, 7]), ('markScheme', ms, [3, 4, 5])]:
+    for key, doc, expected_pages in [('questionPaper', qp, [2, 3, 4, 5, 6, 7, 8, 9]), ('markScheme', ms, [3, 4, 5, 6])]:
         source, audit = raw[key], m['pageAudit'][key]
         require(doc['id'] == PAPER + ':' + key and doc['sha256'] == source['sha256'] == cover[key + 'Sha256'] and doc['url'] == source['url'] and doc['pageCount'] == source['pageCount'], 'Document identity/hash metadata mismatch')
         require(audit['visuallyReviewedPages'] == expected_pages and audit['wholeDocumentReviewed'] is False, 'Bounded visual audit drift')
@@ -100,6 +104,7 @@ def prepare(root=ROOT):
         require(leaf['taskId'] == PAPER + '.Q' + path and leaf['paperId'] == PAPER and leaf['recordKind'] == 'leaf' and type(leaf['originalMarks']) is int and leaf['originalMarks'] == marks and leaf['questionPaperPages'] == pages and leaf['markSchemePages'] == scheme_pages, 'Indexed allocation/page mismatch')
         stimulus = {'1.b.iii': [3, 4], '2.a.ii': [6, 7], '3.b.ii': [8, 9], '4.a.ii': [10, 11], '5.a.ii': [12, 13], '6.b': [15, 16], '8.a.ii': [20, 21], '8.a.iii': [20, 21]}.get(path, pages)
         require(leaf['stimulusRefs'] == [dict(documentId=qp['id'], pdfPages=stimulus)] and leaf['commandWord'] and leaf['contextSummary'], 'Indexed stimulus/label mismatch')
+        require(leaf['commandWordStatus'] == ('source-checked' if path in EXPECTED else 'editorial-short-label-not-verbatim-command'), 'Indexed labels must not claim verbatim command review')
         require(leaf['extractionStatus'] == ('source-checked' if path in EXPECTED else 'indexed-only'), 'Structural index cannot promote detailed extraction')
         require(not any(key in leaf for key in ['criteria', 'solutionStructure', 'syllabusMappings', 'assessmentObjectives']), 'Index must not invent detailed fields')
     expected_totals = [(8, 12, 5, 4), (3, 11, 7, 5), (6, 9, 9, 6), (4, 9, 11, 7), (3, 10, 13, 8), (5, 13, 17, 9), (5, 9, 19, 10), (4, 7, 21, 11), (4, 10, 23, 11)]
@@ -112,36 +117,45 @@ def prepare(root=ROOT):
     inv = read(INVENTORY)
     source = next(s for s in read('research/sources.json') if s['id'] == '4HB1-spec')
     require(spec['documentId'] == inv['specificationDocumentId'] == source['id'] and spec['sha256'] == inv['specificationSha256'] == source['sha256'], 'Current specification identity mismatch')
-    require(spec['issue'] == '2' and spec['reviewedPages'] == [20, 21, 24, 26, 43] and inv['reviewedPages'] == [20, 24] and spec['wholeHistoricalAmendmentReconciliation'] == 'pending', 'Specification scope drift')
+    require(spec['issue'] == '2' and spec['reviewedPages'] == [17, 20, 21, 24, 25, 26, 43] and inv['reviewedPages'] == [20, 24] and spec['wholeHistoricalAmendmentReconciliation'] == 'pending', 'Specification scope drift')
     points = {p['id']: p for p in inv['points']}
     require(set(points) == {'4HB1:issue2:' + ref for ref in ['5.1', '5.5', '5.7', '10.1']} and len(inv['points']) == 4, 'Selected identity scope changed')
     q2_inventory = read(Q2_INVENTORY)
     require(q2_inventory['specificationDocumentId'] == spec['documentId'] and q2_inventory['specificationSha256'] == spec['sha256'] and q2_inventory['reviewedPages'] == [21, 26], 'Q2 specification source drift')
     require([p['id'] for p in q2_inventory['points']] == ['4HB1:issue2:6.12', '4HB1:issue2:12.5'], 'Q2 identity scope changed')
     points.update({p['id']: p for p in q2_inventory['points']})
+    q3_inventory = read(Q3_INVENTORY)
+    cells = read(CELLS)
+    require(q3_inventory['specificationDocumentId'] == spec['documentId'] and q3_inventory['specificationSha256'] == spec['sha256'] and q3_inventory['reviewedPages'] == [25], 'Q3 specification source drift')
+    require([p['id'] for p in q3_inventory['points']] == ['4HB1:issue2:' + r for r in ['11.13', '11.14', '11.20', '11.21']], 'Q3 identity scope changed')
+    require(cells['specificationDocumentId'] == spec['documentId'] and cells['specificationSha256'] == spec['sha256'], 'Existing cell inventory source mismatch')
+    points.update({p['id']: p for p in q3_inventory['points']})
+    points.update({p['id']: p for p in cells['points'] if p['reference'] in ['1.2', '1.3']})
     skills = read(SKILLS)
     require(skills['qualification'] == '4HB1' and skills['specificationDocumentId'] == spec['documentId'] and skills['specificationSha256'] == spec['sha256'] and skills['reviewedPages'] == [43] and skills['humanReviewed'] is False, 'Selected skills source mismatch')
     require([s['id'] for s in skills['skills']] == ['4HB1:issue2:mathematical:2C', '4HB1:issue2:mathematical:4A'] and all(s['pdfPage'] == 43 and s['appliesToHumanBiology'] is True for s in skills['skills']), 'Selected skills identity/scope mismatch')
     tasks = m['tasks']
-    require(len(tasks) == 11 and {t['questionPath'] for t in tasks} == set(EXPECTED) and len({t['taskId'] for t in tasks}) == 11, 'Missing/duplicate Q1–Q2 parts')
-    require(sum(t['originalMarks'] for t in tasks) == 23, 'Subset mark sum mismatch')
+    require(len(tasks) == 17 and {t['questionPath'] for t in tasks} == set(EXPECTED) and len({t['taskId'] for t in tasks}) == 17, 'Missing/duplicate Q1–Q3 parts')
+    require(sum(t['originalMarks'] for t in tasks) == 32, 'Subset mark sum mismatch')
     for t in tasks:
         marks, pages = EXPECTED[t['questionPath']]
-        scheme_page = 4 if t['questionPath'].startswith('1.') else 5
+        scheme_page = {'1': 4, '2': 5, '3': 6}[t['questionPath'].split('.')[0]]
         require(t['taskId'] == PAPER + '.Q' + t['questionPath'] and t['paperId'] == PAPER and t['recordKind'] == 'leaf', 'Task identity mismatch')
         require(type(t['originalMarks']) is int and t['originalMarks'] == marks and t['questionPaperPages'] == pages and t['markSchemePages'] == [scheme_page] and t['generalSchemePages'] == [3], 'Task marks/page drift')
         require(t['assessmentObjectives'] == [] and t['templateLinkStatus'] == 'candidate-only' and t['extractionStatus'] == 'source-checked' and t['humanReviewed'] is False and t['reviewerType'] == 'agent', 'Unreviewed AO/template/human promotion')
         require(t['requiredKnowledge'] and t['contextSummary'] and t['solutionStructure'] and t['blockers'], 'Missing detailed review content/gates')
         require(rubric_maximum(t) == marks and t['scoringRule']['sourceRef'] == dict(documentId=ms['id'], pdfPages=[scheme_page]), 'Rubric capacity/source mismatch')
-        any_two = t['questionPath'] == '1.b.ii'
-        method = {'1.b.ii': 'capped-discrete-points', '2.a.i': 'drawing-discrete-points', '2.b': 'ordered-gap-points'}.get(t['questionPath'], 'discrete-points')
-        require(t['scoringRule']['mode'] == ('any-distinct' if any_two else 'all-distinct') and t['markingMethod'] == method and len(t['criteria']) == (3 if any_two else marks), 'Distinct point/method policy drift')
-        expected_stimulus = {'1.b.iii': [3, 4], '2.a.ii': [6, 7]}.get(t['questionPath'], pages)
+        capped = t['questionPath'] in ['1.b.ii', '3.c']
+        method = {'1.b.ii': 'capped-discrete-points', '3.c': 'capped-discrete-points', '2.a.i': 'drawing-discrete-points', '2.b': 'ordered-gap-points'}.get(t['questionPath'], 'discrete-points')
+        require(t['scoringRule']['mode'] == ('any-distinct' if capped else 'all-distinct') and t['markingMethod'] == method and len(t['criteria']) == ({'1.b.ii': 3, '3.c': 5}.get(t['questionPath'], marks)), 'Distinct point/method policy drift')
+        expected_stimulus = {'1.b.iii': [3, 4], '2.a.ii': [6, 7], '3.b.ii': [8, 9]}.get(t['questionPath'], pages)
         require(t['stimulusRefs'] == [dict(documentId=qp['id'], pdfPages=expected_stimulus)] and t['stimulusTypes'], 'Missing shared diagram/method evidence')
         require(t['syllabusMappings'], 'Missing mapping evidence')
         for mapping in t['syllabusMappings']:
             p = points.get(mapping['pointId'])
-            require(p and p['statementVerified'] is True and p['humanReviewed'] is False and p['teachingCoverage'] == 'not-started' and p['noteSectionIds'] == [], 'Identity must not invent teaching')
+            require(p and p['statementVerified'] is True and p['humanReviewed'] is False, 'Missing verified own identity')
+            if p['reference'] not in ['1.2', '1.3']:
+                require(p['teachingCoverage'] == 'not-started' and p['noteSectionIds'] == [], 'Selected identities must not invent teaching')
             require(mapping['currentApplicability'] == 'current-specification' and mapping['reviewStatus'] == 'agent-reviewed', 'Unreviewed mapping status')
             require(mapping['evidenceRefs'] == [dict(documentId=spec['documentId'], pdfPages=[p['pdfPage']]), dict(documentId=ms['id'], pdfPages=[scheme_page]), dict(documentId=qp['id'], pdfPages=pages)], 'Exact mapping source mismatch')
             if t['questionPath'] in ['1.c.i', '1.c.ii']:
@@ -160,6 +174,19 @@ def prepare(root=ROOT):
             gap = t['orderedGapRubric']
             require(gap['answers'] == ['lag', 'exponential', 'equal to', 'death', 'less than', 'dying'] and gap['positions'] == list(range(1, 7)) and gap['marksPerPosition'] == [1] * 6 and gap['sourceRef'] == dict(documentId=ms['id'], pdfPages=[5]), 'Source gap order/marks drift')
             require(len(gap['wordBank']) == len(set(gap['wordBank'])) == 10 and set(gap['answers']) <= set(gap['wordBank']), 'Invalid source word bank')
+        if t['questionPath'].startswith('3.'):
+            own = {'3.a.i': ('1.2', 'supporting'), '3.a.ii': ('11.13', 'primary'), '3.a.iii': ('11.21', 'primary'), '3.b.i': ('11.14', 'primary'), '3.b.ii': ('11.20', 'primary'), '3.c': ('1.3', 'primary')}[t['questionPath']]
+            require([(r['pointId'], r['kind']) for r in t['syllabusMappings']] == [('4HB1:issue2:' + own[0], own[1])], 'Q3 demand mapping drift')
+        if t['questionPath'] == '3.b.i':
+            q = t['sourceQualification']
+            require(q['publishedAlternative'] == 'carrier' and q['generatedUse'] == 'blocked-until-source-concession-policy-reviewed' and q['sourceRef'] == dict(documentId=ms['id'], pdfPages=[6]) and q['scientificQualification'], 'Dominant carrier concession drift')
+        if t['questionPath'] == '3.b.ii':
+            model = t['sourcePedigreeModel']
+            require(model['parents'] == [dict(label='R', sex='female', genotype='Pp', affected=True), dict(label='S', sex='male', genotype='pp', affected=False)] and model['choices'] == [dict(label='W', motherAffected=True, fatherAffected=True, daughterAffected=True), dict(label='X', motherAffected=False, fatherAffected=True, daughterAffected=True), dict(label='Y', motherAffected=True, fatherAffected=False, daughterAffected=False)] and model['answer'] == 'Y' and model['daughterProbabilityClaim'] == 'none-the-question-only-selects-a-source-diagram', 'Source pedigree model drift')
+        if t['questionPath'] == '3.c':
+            discrepancy = t['sourceDiscrepancy']
+            require(discrepancy['id'] == index['sourceDiscrepancies'][0]['id'] and discrepancy['publishedAmbiguousAlternative'] == 'each strand held together by hydrogen bonds' and discrepancy['publishedUnambiguousAlternative'] == 'bases linked by hydrogen bonds' and discrepancy['generatedUse'] == 'blocked-until-authoritative-clarification' and discrepancy['authoritativeCurrentSpecRef'] == dict(documentId=spec['documentId'], pdfPages=[17]), 'DNA ambiguity/activation drift')
+            require(t['criteria'][3]['sourceWordingStatus'] == 'ambiguous-alternative-retained-no-generated-use', 'DNA criterion scope drift')
     require(m['blockers'] and m['processingNotes'], 'Missing paper processing gaps')
 
     date = m['reviewDate']
@@ -167,8 +194,8 @@ def prepare(root=ROOT):
     documents = []
     for key, doc in [('questionPaper', qp), ('markScheme', ms)]:
         pages = index[key + 'VisualPages']
-        documents.append(dict(document_id=doc['id'], qualification='4HB1', document_type=doc['type'], canonical_url=doc['url'], title='4HB1/01 Summer 2024 ' + doc['type'], publisher='Pearson', year=2024, series=identity['series'], component='01', variant='unresolved', printed_exam_date=identity['printedDate'] if key == 'questionPaper' else '', filename_date=identity['filenameDate'] if key == 'questionPaper' else '', sha256=doc['sha256'], page_count=doc['pageCount'], access_status='obtained', local_evidence_path=OVERLAY, reviewed_pages_json=compact([dict(page=p, mode='visual', reviewer=m['reviewer'] if p != 1 else 'Codex cover visual review', date=date if p != 1 else '2026-09-09') for p in pages]), identity_status='agent-reviewed', identity_notes='Original legacy ID retained; printed date differs from filename. Variant remains unresolved. Full structural inventory matched by paper log; only Q1–Q2 detailed.', batch_id=common['batch_id'], updated_at=date))
-    papers = [dict(paper_id=PAPER, qualification='4HB1', year=2024, series=identity['series'], component='01', variant='unresolved', qp_document_id=qp['id'], ms_document_id=ms['id'], insert_document_ids_json='[]', examiner_report_ids_json='[]', report_status=m['examinerReportStatus'], target_specification_id=spec['documentId'], applicability_status='partial-current-scope-review', stage='indexed', last_successful_stage='indexed', expected_leaf_tasks=42, indexed_leaf_tasks=42, extracted_leaf_tasks=11, assessed_marks=90, all_alternatives_marks=90, option_rules_json=compact(dict(mode='all-compulsory', sourcePages=[1])), reconciled_marks='true', scheme_match_status='matched-visual-inventory-Q1-Q2-detailed', complete_page_audit='true', template_links_complete='false', blocking_issues_json=compact(m['blockers']), reviewed_at=date, **common)]
+        documents.append(dict(document_id=doc['id'], qualification='4HB1', document_type=doc['type'], canonical_url=doc['url'], title='4HB1/01 Summer 2024 ' + doc['type'], publisher='Pearson', year=2024, series=identity['series'], component='01', variant='unresolved', printed_exam_date=identity['printedDate'] if key == 'questionPaper' else '', filename_date=identity['filenameDate'] if key == 'questionPaper' else '', sha256=doc['sha256'], page_count=doc['pageCount'], access_status='obtained', local_evidence_path=OVERLAY, reviewed_pages_json=compact([dict(page=p, mode='visual', reviewer=m['reviewer'] if p != 1 else 'Codex cover visual review', date=date if p != 1 else '2026-09-09') for p in pages]), identity_status='agent-reviewed', identity_notes='Original legacy ID retained; printed date differs from filename. Variant remains unresolved. Full structural inventory matched by paper log; only Q1–Q3 detailed.', batch_id=common['batch_id'], updated_at=date))
+    papers = [dict(paper_id=PAPER, qualification='4HB1', year=2024, series=identity['series'], component='01', variant='unresolved', qp_document_id=qp['id'], ms_document_id=ms['id'], insert_document_ids_json='[]', examiner_report_ids_json='[]', report_status=m['examinerReportStatus'], target_specification_id=spec['documentId'], applicability_status='partial-current-scope-review', stage='indexed', last_successful_stage='indexed', expected_leaf_tasks=42, indexed_leaf_tasks=42, extracted_leaf_tasks=17, assessed_marks=90, all_alternatives_marks=90, option_rules_json=compact(dict(mode='all-compulsory', sourcePages=[1])), reconciled_marks='true', scheme_match_status='matched-visual-inventory-Q1-Q3-detailed', complete_page_audit='true', template_links_complete='false', blocking_issues_json=compact(m['blockers']), reviewed_at=date, **common)]
     task_rows, mappings = [], []
     for t in tasks:
         task_rows.append(dict(task_id=t['taskId'], paper_id=PAPER, question_path=t['questionPath'], record_kind='leaf', qp_pages_json=compact(t['questionPaperPages']), stimulus_refs_json=compact(t['stimulusRefs']), scheme_pages_json=compact(t['markSchemePages']), command_word=t['commandWord'], original_marks=t['originalMarks'], assessment_objectives_json='[]', required_knowledge='; '.join(t['requiredKnowledge']), context_summary=t['contextSummary'], stimulus_types_json=compact(t['stimulusTypes']), solution_structure_json=compact(t['solutionStructure']), marking_method=t['markingMethod'], rubric_ref=OVERLAY + '#' + t['taskId'], acceptable_alternatives_json=compact(t['acceptableAlternatives']), dependencies_json=compact(t['dependencies']), common_errors_json=compact(t['commonErrors']), report_refs_json='[]', extraction_status='source-checked', mapping_status='agent-reviewed-partial-current-scope', review_status='agent-reviewed', blocker='; '.join(t['blockers']), **common))
@@ -206,7 +233,7 @@ def export(root=ROOT):
     outputs = prepare(root)
     for path, content in outputs.items():
         path.write_text(content)
-    return dict(indexedTasks=42, indexedMarks=90, detailedTasks=11, detailedMarks=23, fullyProcessedPapers=0, activeTemplates=0)
+    return dict(indexedTasks=42, indexedMarks=90, detailedTasks=17, detailedMarks=32, fullyProcessedPapers=0, activeTemplates=0)
 
 
 if __name__ == '__main__':

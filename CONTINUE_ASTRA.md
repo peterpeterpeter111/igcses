@@ -1,3 +1,7 @@
+# Latest phase — Human Biology Q3, 5 October 2026
+
+Read research/checkpoints/2026-10-05-HUMAN-Q3.md first. Human17detailed parts/32marks of42/90;25indexed-only remain. DNA4of5cap/carrierconcession/pedigrees preserved; ambiguous generated rules blocked.125tests,typecheck/lint/research/content/evidence/build and67-file public scan pass.387sections/19partial notes;426identities/407audits/1125requirements/576links;7obtained/0processed/completechapters/points/activefamilies,6experimental. GitHub4cc316c mirrors saved9c500c5;syncnewerphase non-force. ContinueQ4–Q9,curriculum/calibration above5%both;AIlast,noreset/version/deployment. Olderentrieshistorical.
+
 # Latest phase — Human Biology whole inventory, 5 October 2026
 
 Read research/checkpoints/2026-10-05-HUMAN-INVENTORY.md first. Full visual inventory 42 parts / 90 marks across 24 QP + 12 MS pages; detailed Q1–Q2 remains 11 parts / 23 marks, 31 indexed-only parts. Source wording and reuse gates recorded; raw history preserved. 124 tests, typecheck/lint/research/content/evidence/build and 67-file public scan pass. Curriculum totals 387 sections / 19 partial notes, 422 identities / 407 audits / 1125 requirements / 576 links. Seven obtained pairs; zero fully processed papers, complete chapters/points or active families. Six experimental generators/markers. GitHub47df6ce mirrors saved de6c344; sync newer phase non-force. Continue Q3–Q9, curriculum/calibration above5% both allowances; AI last, no reset/version/deployment. Older entries below are historical.

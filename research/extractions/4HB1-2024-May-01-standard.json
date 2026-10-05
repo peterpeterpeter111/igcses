@@ -21,11 +21,12 @@
   "fullyProcessed": false,
   "wholePaperMarks": 90,
   "wholePaperLeafCount": 42,
-  "detailedLeafTasks": 11,
-  "detailedOriginalMarks": 23,
+  "detailedLeafTasks": 17,
+  "detailedOriginalMarks": 32,
   "reviewedQuestionTotals": {
     "1": 12,
-    "2": 11
+    "2": 11,
+    "3": 9
   },
   "reviewedSubsetMarksReconciled": true,
   "marksReconciled": false,
@@ -53,7 +54,9 @@
         4,
         5,
         6,
-        7
+        7,
+        8,
+        9
       ],
       "wholeDocumentReviewed": false
     },
@@ -61,7 +64,8 @@
       "visuallyReviewedPages": [
         3,
         4,
-        5
+        5,
+        6
       ],
       "wholeDocumentReviewed": false
     }
@@ -76,9 +80,11 @@
     "sha256": "989c6536fa946f1361e45e3c1e0ebced240a9f4666a2c835ce9cf9724a38e30f",
     "issue": "2",
     "reviewedPages": [
+      17,
       20,
       21,
       24,
+      25,
       26,
       43
     ],
@@ -1480,23 +1486,771 @@
         },
         "calibrationStatus": "source-order-checked; generated variants/spelling policy pending"
       }
+    },
+    {
+      "paperId": "4HB1-2024-May-01-standard",
+      "recordKind": "leaf",
+      "taskId": "4HB1-2024-May-01-standard.Q3.a.i",
+      "questionPath": "3.a.i",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        8
+      ],
+      "markSchemePages": [
+        6
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "State",
+      "requiredKnowledge": [
+        "nuclear chromosome location"
+      ],
+      "contextSummary": "Identify the cell compartment containing most chromosomes.",
+      "solutionStructure": [
+        "Name the nucleus."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "4HB1-2024-May-01-standard.Q3.a.i:point-1",
+          "marks": 1,
+          "rule": "Name the nucleus."
+        }
+      ],
+      "scoringRule": {
+        "mode": "all-distinct",
+        "maximum": 1,
+        "creditPerCriterion": 1,
+        "eligibleCriterionIds": [
+          "4HB1-2024-May-01-standard.Q3.a.i:point-1"
+        ],
+        "selectionLimit": 1,
+        "sourceRef": {
+          "documentId": "4HB1-2024-May-01-standard:markScheme",
+          "pdfPages": [
+            6
+          ]
+        }
+      },
+      "acceptableAlternatives": [
+        "nucleus"
+      ],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4HB1:issue2:1.2",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Naming the chromosome-containing compartment supports nucleus structure/function; no full image-recognition or organelle-function assessment.",
+          "evidenceRefs": [
+            {
+              "documentId": "4HB1-spec",
+              "pdfPages": [
+                17
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:markScheme",
+              "pdfPages": [
+                6
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:questionPaper",
+              "pdfPages": [
+                8
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "text"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4HB1-2024-May-01-standard:questionPaper",
+          "pdfPages": [
+            8
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; do not infer authoritative AO marks.",
+      "proposedFamilyId": "4HB1.chromosome-location",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-05",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generative family, semantic/diagram marker or learner/examiner response review."
+      ]
+    },
+    {
+      "paperId": "4HB1-2024-May-01-standard",
+      "recordKind": "leaf",
+      "taskId": "4HB1-2024-May-01-standard.Q3.a.ii",
+      "questionPath": "3.a.ii",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        8
+      ],
+      "markSchemePages": [
+        6
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "State",
+      "requiredKnowledge": [
+        "alleles"
+      ],
+      "contextSummary": "Name an alternative gene form.",
+      "solutionStructure": [
+        "Name an allele."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "4HB1-2024-May-01-standard.Q3.a.ii:point-1",
+          "marks": 1,
+          "rule": "Name an allele."
+        }
+      ],
+      "scoringRule": {
+        "mode": "all-distinct",
+        "maximum": 1,
+        "creditPerCriterion": 1,
+        "eligibleCriterionIds": [
+          "4HB1-2024-May-01-standard.Q3.a.ii:point-1"
+        ],
+        "selectionLimit": 1,
+        "sourceRef": {
+          "documentId": "4HB1-2024-May-01-standard:markScheme",
+          "pdfPages": [
+            6
+          ]
+        }
+      },
+      "acceptableAlternatives": [
+        "allele"
+      ],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4HB1:issue2:11.13",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Alternative gene terminology is required.",
+          "evidenceRefs": [
+            {
+              "documentId": "4HB1-spec",
+              "pdfPages": [
+                25
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:markScheme",
+              "pdfPages": [
+                6
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:questionPaper",
+              "pdfPages": [
+                8
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "text"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4HB1-2024-May-01-standard:questionPaper",
+          "pdfPages": [
+            8
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; do not infer authoritative AO marks.",
+      "proposedFamilyId": "4HB1.allele-identification",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-05",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generative family, semantic/diagram marker or learner/examiner response review."
+      ]
+    },
+    {
+      "paperId": "4HB1-2024-May-01-standard",
+      "recordKind": "leaf",
+      "taskId": "4HB1-2024-May-01-standard.Q3.a.iii",
+      "questionPath": "3.a.iii",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        8
+      ],
+      "markSchemePages": [
+        6
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Give",
+      "requiredKnowledge": [
+        "dominant polydactyly phenotype"
+      ],
+      "contextSummary": "Give one polydactyly symptom.",
+      "solutionStructure": [
+        "Identify extra fingers or toes."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "4HB1-2024-May-01-standard.Q3.a.iii:point-1",
+          "marks": 1,
+          "rule": "Identify extra fingers or toes."
+        }
+      ],
+      "scoringRule": {
+        "mode": "all-distinct",
+        "maximum": 1,
+        "creditPerCriterion": 1,
+        "eligibleCriterionIds": [
+          "4HB1-2024-May-01-standard.Q3.a.iii:point-1"
+        ],
+        "selectionLimit": 1,
+        "sourceRef": {
+          "documentId": "4HB1-2024-May-01-standard:markScheme",
+          "pdfPages": [
+            6
+          ]
+        }
+      },
+      "acceptableAlternatives": [
+        "extra fingers",
+        "extra toes"
+      ],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4HB1:issue2:11.21",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Specified polydactyly phenotype; not a full audit of other conditions.",
+          "evidenceRefs": [
+            {
+              "documentId": "4HB1-spec",
+              "pdfPages": [
+                25
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:markScheme",
+              "pdfPages": [
+                6
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:questionPaper",
+              "pdfPages": [
+                8
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "text"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4HB1-2024-May-01-standard:questionPaper",
+          "pdfPages": [
+            8
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; do not infer authoritative AO marks.",
+      "proposedFamilyId": "4HB1.polydactyly-phenotype",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-05",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generative family, semantic/diagram marker or learner/examiner response review."
+      ]
+    },
+    {
+      "paperId": "4HB1-2024-May-01-standard",
+      "recordKind": "leaf",
+      "taskId": "4HB1-2024-May-01-standard.Q3.b.i",
+      "questionPath": "3.b.i",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        8
+      ],
+      "markSchemePages": [
+        6
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Name",
+      "requiredKnowledge": [
+        "heterozygous genotype"
+      ],
+      "contextSummary": "Classify female parent R with Pp in the source dominant-condition model.",
+      "solutionStructure": [
+        "Identify R as heterozygous."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "4HB1-2024-May-01-standard.Q3.b.i:point-1",
+          "marks": 1,
+          "rule": "Identify R as heterozygous."
+        }
+      ],
+      "scoringRule": {
+        "mode": "all-distinct",
+        "maximum": 1,
+        "creditPerCriterion": 1,
+        "eligibleCriterionIds": [
+          "4HB1-2024-May-01-standard.Q3.b.i:point-1"
+        ],
+        "selectionLimit": 1,
+        "sourceRef": {
+          "documentId": "4HB1-2024-May-01-standard:markScheme",
+          "pdfPages": [
+            6
+          ]
+        }
+      },
+      "acceptableAlternatives": [
+        "heterozygous",
+        "heterozygote",
+        "carrier (historical scheme concession only)"
+      ],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4HB1:issue2:11.14",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Classifies a genotype with two different alleles.",
+          "evidenceRefs": [
+            {
+              "documentId": "4HB1-spec",
+              "pdfPages": [
+                25
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:markScheme",
+              "pdfPages": [
+                6
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:questionPaper",
+              "pdfPages": [
+                8
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "parent-genotype-table"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4HB1-2024-May-01-standard:questionPaper",
+          "pdfPages": [
+            8
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; do not infer authoritative AO marks.",
+      "proposedFamilyId": "4HB1.heterozygous-classification",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-05",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generative family, semantic/diagram marker or learner/examiner response review.",
+        "Historical carrier concession is retained privately; no misleading new teaching or generated marking policy."
+      ],
+      "sourceQualification": {
+        "id": "4HB1-2024-Q3bi-carrier-concession",
+        "publishedAlternative": "carrier",
+        "scientificQualification": "P is dominant in this source model, so Pp expresses the condition; carrier commonly implies an unaffected bearer of a recessive allele.",
+        "generatedUse": "blocked-until-source-concession-policy-reviewed",
+        "sourceRef": {
+          "documentId": "4HB1-2024-May-01-standard:markScheme",
+          "pdfPages": [
+            6
+          ]
+        }
+      }
+    },
+    {
+      "paperId": "4HB1-2024-May-01-standard",
+      "recordKind": "leaf",
+      "taskId": "4HB1-2024-May-01-standard.Q3.b.ii",
+      "questionPath": "3.b.ii",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        9
+      ],
+      "markSchemePages": [
+        6
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Which",
+      "requiredKnowledge": [
+        "dominance",
+        "pedigree symbols",
+        "genotype to phenotype"
+      ],
+      "contextSummary": "Choose among the three source pedigrees for female R=Pp and male S=pp.",
+      "solutionStructure": [
+        "Choose pedigree Y."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "4HB1-2024-May-01-standard.Q3.b.ii:point-1",
+          "marks": 1,
+          "rule": "Choose pedigree Y."
+        }
+      ],
+      "scoringRule": {
+        "mode": "all-distinct",
+        "maximum": 1,
+        "creditPerCriterion": 1,
+        "eligibleCriterionIds": [
+          "4HB1-2024-May-01-standard.Q3.b.ii:point-1"
+        ],
+        "selectionLimit": 1,
+        "sourceRef": {
+          "documentId": "4HB1-2024-May-01-standard:markScheme",
+          "pdfPages": [
+            6
+          ]
+        }
+      },
+      "acceptableAlternatives": [
+        "Y"
+      ],
+      "dependencies": [
+        "Read R/S genotypes on QP8 together with diagram/key on QP9; identify affected mother and unaffected father."
+      ],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4HB1:issue2:11.20",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Read affected/unaffected parents using the source pedigree key and genotype table.",
+          "evidenceRefs": [
+            {
+              "documentId": "4HB1-spec",
+              "pdfPages": [
+                25
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:markScheme",
+              "pdfPages": [
+                6
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:questionPaper",
+              "pdfPages": [
+                9
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "parent-genotype-table",
+        "pedigree-diagrams"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4HB1-2024-May-01-standard:questionPaper",
+          "pdfPages": [
+            8,
+            9
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; do not infer authoritative AO marks.",
+      "proposedFamilyId": "4HB1.dominant-pedigree-selection",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-05",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generative family, semantic/diagram marker or learner/examiner response review.",
+        "Diagram reconstruction and distractor/demand calibration are not implemented."
+      ],
+      "sourcePedigreeModel": {
+        "parents": [
+          {
+            "label": "R",
+            "sex": "female",
+            "genotype": "Pp",
+            "affected": true
+          },
+          {
+            "label": "S",
+            "sex": "male",
+            "genotype": "pp",
+            "affected": false
+          }
+        ],
+        "choices": [
+          {
+            "label": "W",
+            "motherAffected": true,
+            "fatherAffected": true,
+            "daughterAffected": true
+          },
+          {
+            "label": "X",
+            "motherAffected": false,
+            "fatherAffected": true,
+            "daughterAffected": true
+          },
+          {
+            "label": "Y",
+            "motherAffected": true,
+            "fatherAffected": false,
+            "daughterAffected": false
+          }
+        ],
+        "answer": "Y",
+        "daughterProbabilityClaim": "none-the-question-only-selects-a-source-diagram"
+      }
+    },
+    {
+      "paperId": "4HB1-2024-May-01-standard",
+      "recordKind": "leaf",
+      "taskId": "4HB1-2024-May-01-standard.Q3.c",
+      "questionPath": "3.c",
+      "originalMarks": 4,
+      "questionPaperPages": [
+        9
+      ],
+      "markSchemePages": [
+        6
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Describe",
+      "requiredKnowledge": [
+        "double helix",
+        "nucleotides",
+        "four DNA bases",
+        "hydrogen bonds between complementary bases"
+      ],
+      "contextSummary": "Describe DNA structure with the source four-of-five discrete-point cap.",
+      "solutionStructure": [
+        "Two strands coiled as a double helix.",
+        "DNA consists of nucleotides.",
+        "Four types of base.",
+        "Hydrogen bonds link complementary bases across strands; published alternative strand wording retained as unresolved source evidence.",
+        "Complementary pairing A with T and G with C."
+      ],
+      "markingMethod": "capped-discrete-points",
+      "criteria": [
+        {
+          "id": "4HB1-2024-May-01-standard.Q3.c:point-1",
+          "marks": 1,
+          "rule": "Two strands coiled as a double helix."
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q3.c:point-2",
+          "marks": 1,
+          "rule": "DNA consists of nucleotides."
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q3.c:point-3",
+          "marks": 1,
+          "rule": "Four types of base."
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q3.c:point-4",
+          "marks": 1,
+          "rule": "Hydrogen bonds link complementary bases across strands; published alternative strand wording retained as unresolved source evidence.",
+          "sourceWordingStatus": "ambiguous-alternative-retained-no-generated-use"
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q3.c:point-5",
+          "marks": 1,
+          "rule": "Complementary pairing A with T and G with C."
+        }
+      ],
+      "scoringRule": {
+        "mode": "any-distinct",
+        "maximum": 4,
+        "creditPerCriterion": 1,
+        "eligibleCriterionIds": [
+          "4HB1-2024-May-01-standard.Q3.c:point-1",
+          "4HB1-2024-May-01-standard.Q3.c:point-2",
+          "4HB1-2024-May-01-standard.Q3.c:point-3",
+          "4HB1-2024-May-01-standard.Q3.c:point-4",
+          "4HB1-2024-May-01-standard.Q3.c:point-5"
+        ],
+        "selectionLimit": 4,
+        "sourceRef": {
+          "documentId": "4HB1-2024-May-01-standard:markScheme",
+          "pdfPages": [
+            6
+          ]
+        }
+      },
+      "acceptableAlternatives": [
+        "Two strands for double helix; do not omit the two/double requirement.",
+        "A\u2013T and G\u2013C for complementary pairing."
+      ],
+      "dependencies": [],
+      "commonErrors": [
+        {
+          "description": "Hydrogen bonds within the covalent DNA backbone.",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4HB1:issue2:1.3",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "DNA structural demands align with own specification; ambiguous historical scheme wording requires qualification.",
+          "evidenceRefs": [
+            {
+              "documentId": "4HB1-spec",
+              "pdfPages": [
+                17
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:markScheme",
+              "pdfPages": [
+                6
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:questionPaper",
+              "pdfPages": [
+                9
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "text"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4HB1-2024-May-01-standard:questionPaper",
+          "pdfPages": [
+            9
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; do not infer authoritative AO marks.",
+      "proposedFamilyId": "4HB1.dna-structure-description",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-05",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generative family, semantic/diagram marker or learner/examiner response review.",
+        "Current specification links complementary bases by hydrogen bonds; historical within-strand wording must not become a generated criterion."
+      ],
+      "sourceDiscrepancy": {
+        "id": "4HB1-2024-Q3c-DNA-bond-wording",
+        "taskIds": [
+          "4HB1-2024-May-01-standard.Q3.c"
+        ],
+        "questionPaperPages": [
+          9
+        ],
+        "markSchemePages": [
+          6
+        ],
+        "observation": "Published scheme includes wording that can be read as hydrogen bonds holding each strand together; scientifically the covalent backbone is distinct from hydrogen bonds between complementary bases.",
+        "status": "clarification-pending-generated-rubric-blocked",
+        "publishedAmbiguousAlternative": "each strand held together by hydrogen bonds",
+        "publishedUnambiguousAlternative": "bases linked by hydrogen bonds",
+        "generatedUse": "blocked-until-authoritative-clarification",
+        "authoritativeCurrentSpecRef": {
+          "documentId": "4HB1-spec",
+          "pdfPages": [
+            17
+          ]
+        }
+      }
     }
   ],
   "blockers": [
-    "Q3\u2013Q9 detailed extraction remains pending:31 indexed parts/67marks.",
-    "Whole visual leaf/mark inventory is reviewed; detailed page/rubric review remains limited to Q1\u2013Q2.",
+    "Q4\u2013Q9 detailed extraction remains pending:25 indexed parts/58marks.",
+    "Whole visual leaf/mark inventory is reviewed; detailed page/rubric review remains limited to Q1\u2013Q3.",
     "Whole historical amendment, experimental skills and assessment-objective reconciliation pending.",
     "No calibrated/active Human Biology templates; no learner or human examiner certification.",
     "Examiner report not obtained for this paper."
   ],
   "processingNotes": [
-    "Q1 has eight parts/12marks and Q2 three parts/11marks, matching each printed QP and scheme total;23 reviewed marks are subset reconciliation, not all90.",
+    "Q1 eight parts/12marks, Q2 three parts/11marks and Q3 six parts/9marks match printed QP/MS totals;32 reviewed marks remain a subset of90.",
     "Original batch stays indexed-only, with its date conflict and heuristic warnings retained. This newer overlay records partial detailed progress.",
-    "Whole visual inventory establishes42parts/90marks across9compulsory questions; only11parts/23marks have detailed records. Inventory reconciliation does not complete detailed processing.",
+    "Whole visual inventory establishes42parts/90marks across9compulsory questions;17parts/32marks have detailed records. Inventory reconciliation does not complete detailed processing.",
     "5.7 maps as supporting practical context only; the source method does not fully assess number and position of sensory receptors.",
     "Any-two-of-three sweating criteria are capped at two distinct points; insulation source rejection and thermometer risk-control points are retained.",
     "Source diagrams/method and scheme remain private research evidence; no original paper scans are placed in public assets.",
-    "Q2 preserves a source line-graph concession (mark points1\u20133 only), original categorical values and six ordered bacterial gaps. No drawing thresholds or universal food-storage times invented."
+    "Q2 preserves a source line-graph concession (mark points1\u20133 only), original categorical values and six ordered bacterial gaps. No drawing thresholds or universal food-storage times invented.",
+    "Q3 DNA any-four-of-five cap, source carrier concession and three pedigrees are retained privately. Ambiguous hydrogen-bond wording blocks generated reuse; no medical diagnosis or inheritance-risk advice."
   ],
   "visualInventoryRef": "research/paper-indexes/4HB1-2024-summer-01.json",
   "inventoryMarksReconciled": true

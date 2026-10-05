@@ -62,7 +62,7 @@ export default async function SubjectCoverage({
                   {r.extraction.detailedTasks} question parts (
                   {r.extraction.originalMarks} original marks) reviewed across{' '}
                   {r.extraction.reviewedQuestions.length === 1 ? 'Question' : 'Questions'}{' '}
-                  {r.extraction.reviewedQuestions.join(' and ')}.
+                  {new Intl.ListFormat('en-GB', { style: 'long', type: 'conjunction' }).format(r.extraction.reviewedQuestions)}.
                   Detailed records: {r.extraction.detailedTasks} of{' '}
                   {r.extraction.expectedTasks ?? 'an unconfirmed number of'}{' '}
                   parts. Zero fully processed papers.
