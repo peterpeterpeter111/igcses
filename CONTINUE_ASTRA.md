@@ -1,3 +1,11 @@
+# PAUSED — 5 October 2026, after quality review
+
+Read `research/checkpoints/2026-10-05-PAUSED-AFTER-QUALITY.md` and `2026-10-05-SELECTIVE-BREEDING.md` first. Paused at 5% five-hour / 12% weekly remaining; no reset consumed. Search performance/reliability fixes, 16 food-production sections, four selective-breeding sections and one original fermenter diagram are saved. All 143 tests, typecheck, lint, 14 research checks, content/evidence reconciliation, isolated D1, production build and the 85-file public scan pass. Desktop readers, search, diagram and component labels are verified. Narrow-screen and final hosted endpoint checks remain pending.
+
+Totals: 610 sections / 26 partial notes / 36 routes; 579 reviewed identities / 563 partial audits / 1,723 local requirements / 836 partial links. Biology has 232 sections, five partial notes, 167 reviewed identities/audits and 673 local requirements. Resources has 20 sections with partial links for 5.1–5.11; only 5.9B is Paper 2B-only. Seven obtained paper/scheme pairs, zero fully processed papers, complete chapters/points or active templates. Seven experimental offline families; the live registry is empty.
+
+GitHub c5708e7 exactly mirrors saved local 3fdb470. Commit/sync the newer breeding and pause delta non-force and verify it. Resume only above 5% in both allowances. Next: Biology genetic modification/cloning 5.12–5.20, wider curriculum, historical/skills paper reviews and independent calibration. Preserve quality, UI and history; AI last. No Sites version, deployment or verified public URL. Older entries are historical.
+
 # Latest phase — Biology food production, 5 October 2026
 
 Read research/checkpoints/2026-10-05-FOOD-PRODUCTION.md first. Sixteen original partial lessons/one original fermenter diagram,nine identities5.1–5.9B/47localrequirements/16partiallinks;only5.9B2B-only.143tests,typecheck/lint/14research/content/evidence/isolatedD1/build/85-file scan pass;desktop reader/search/exactcomponentcoverage verified,narrowpending. Proposed yeast trial not performed;examples independent and invented;source-guide errors not copied.

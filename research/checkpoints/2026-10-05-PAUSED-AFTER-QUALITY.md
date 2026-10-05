@@ -1,0 +1,19 @@
+# Paused after quality review — 5 October 2026
+
+The user’s pause gate was reached: 5% five-hour / 12% weekly remaining. Curriculum work stopped immediately. No reset consumed. This checkpoint is saved work, not a deployed release.
+
+Three verified phases: search performance and request-lifecycle fixes; 16 partial food-production lessons and an original fermenter diagram; four partial selective-breeding lessons. Search now uses the existing backend, keeping the same algorithm, subject scope and anchors. The client chunk is 12,213 bytes instead of 1,264,980. Stale, cancelled, failed and hung requests are guarded, with a ten-second timeout and visible retry. Seven new regression tests were added; all 143 application tests pass.
+
+Current verification: typecheck, lint, 14 research checks, content/evidence reconciliation, isolated nonpersistent D1, production build and the 85-file public scan pass. Desktop readers, figure, search and exact component labels checked. Proof images and logs are under ignored work/. Narrow responsive and final hosted endpoint checks remain open. Reviews are bounded agent checks, not human review or semantic certification of every lesson.
+
+Totals: 610 teaching sections / 26 partial note documents / 36 chapter routes; 579 reviewed identities / 563 partial audits / 1,723 local editorial requirements / 836 partial teaching links. Biology has 232 sections, five partial notes, 167 reviewed identities/audits and 673 requirements. Resources has 20 sections with partial links for 5.1–5.11. Only 5.9B is 2B-only; the other new points apply to both components.
+
+Seven obtained paper/scheme pairs remain unchanged. Detailed Physics: 51 parts / 110 marks; Maths: 38 / 100; Human Biology: 42 / 90; English: one pilot task. Zero fully processed papers or complete chapters/points. Seven provisional families have experimental offline generators/markers; zero active, and the live registry is empty. Historical applicability, whole-paper skills and independent demand/response calibration remain unfinished. Raw indexed-only manifests are preserved.
+
+GitHub c5708e722654bbe5e40b196377fb0d634d4acf35 was fetched and verified as an exact mirror of local 3fdb4707b08705a8bac22c3ba32a5c06f584e770, tree f41917693279439c65aaefa8f5d36e0624e2b3ad, including the fermenter SVG. The newer breeding and pause delta must be committed and synced non-force. Do not claim it synced until final-tree, fetch and diff verification. The clean-tree preparation guard remains mandatory; include all intended source and public assets. There is no current technical sync blocker.
+
+Next, after both allowances exceed 5%: inspect the latest commit and phase reviews; verify or finish checkpoint sync; continue Biology genetic modification 5.12–5.16 and cloning 5.17B–5.20B, then wider curriculum, historical/skills paper reviews and calibrated generative bank. Own PDF page 32 has been visually/textually read, but future teaching still needs review and mapping. Preserve quality, original examples, source boundaries, UI, history and partial counts. Keep AI integration last through a secure backend. Save a Sites version/deploy only after current tests, build and final verification. No Sites version, deployment or verified public URL exists.
+
+Resume prompt:
+
+Continue the latest local descendant of 3fdb470 and CONTINUE_ASTRA.md. Read PROGRESS_CHECKPOINT.md, research/checkpoints/2026-10-05-PAUSED-AFTER-QUALITY.md and 2026-10-05-SELECTIVE-BREEDING.md. Check both allowances; resume only above 5%. Verify or finish saved GitHub sync non-force, preserving all history. Continue Biology genetic modification/cloning, wider curriculum, historical/skills paper audits and independent template calibration. Keep counts honest, quality and UI preserved, AI last; consume no reset. Checkpoint and pause at 5%.

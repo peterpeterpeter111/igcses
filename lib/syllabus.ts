@@ -1,3 +1,4 @@
+import biologyBreeding from '../research/syllabus/4BI1-selective-breeding.json' with { type: 'json' };
 import biologyFood from '../research/syllabus/4BI1-food-production.json' with { type: 'json' };
 import biologyEcologyCycles from '../research/syllabus/4BI1-ecology-cycles-influences.json' with { type: 'json' };
 import biologyEcologyFoundations from '../research/syllabus/4BI1-ecology-foundations.json' with { type: 'json' };
@@ -59,6 +60,7 @@ import mathsPolynomials from '../research/syllabus/4MB1-polynomials-and-fraction
 
 // Reviewed overlays are kept separate from the immutable raw candidates.
 export const reviewedInventories = [
+  { title: 'Selective breeding (5.10–5.11; partial teaching)', ...biologyBreeding },
   { title: 'Food production (5.1–5.9B; partial teaching)', ...biologyFood },
   { title: 'Internal transport: disease, treatments and antibodies (partial teaching)', ...humanInternalClinical },
   { title: 'Internal transport foundations: additional identities with partial teaching', ...humanInternal },

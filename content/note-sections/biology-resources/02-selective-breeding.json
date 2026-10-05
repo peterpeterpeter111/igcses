@@ -1,0 +1,125 @@
+{
+  "subjectId": "biology",
+  "chapterId": "biological-resources",
+  "sections": [
+    {
+      "id": "plant-selective-breeding-stages",
+      "title": "Select, cross, assess and repeat in crop plants",
+      "points": [
+        "5.10"
+      ],
+      "terms": [
+        "selective breeding",
+        "heritable variation",
+        "controlled pollination",
+        "offspring"
+      ],
+      "paragraphs": [
+        "Selective breeding gives plants with desired inherited characteristics a greater contribution to future generations. A breeder first defines a useful aim, such as harvestable yield, resistance to a particular disease or stalk strength. Choose suitable parent plants showing relevant heritable variation, cross them through controlled pollination, grow their seeds, and assess the offspring. Retain suitable offspring as parents and repeat the process over several generations.",
+        "The offspring are not copies of either parent: sexual reproduction combines inherited information in new ways. A cross may combine useful characteristics, but some offspring may not express the desired combination, so selection continues. Fertilising a plant or pruning it may change its performance during its lifetime; that treatment alone does not mean a new inherited characteristic has been selected."
+      ],
+      "example": {
+        "question": "A breeder wants good grain yield and stronger stalks. Outline a breeding programme using plants that differ in these traits.",
+        "steps": [
+          "Select suitable parents showing the desired inherited characteristics, rather than choosing only the tallest plant.",
+          "Cross-pollinate the selected parents and grow the resulting seeds under comparable conditions.",
+          "Assess yield and stalk strength in offspring; choose those with a useful combination.",
+          "Use selected offspring in further crosses and repeat assessment and selection over generations."
+        ],
+        "explanation": "Stating “cross good plants” omits the repeated offspring assessment. A useful combination is not guaranteed in every seed."
+      },
+      "commonMistakes": [
+        "Selection changes contributions to future generations; it does not turn the original parent into a different genotype."
+      ]
+    },
+    {
+      "id": "plant-breeding-environment-evidence",
+      "title": "A productive plant may have good conditions, useful genes, or both",
+      "points": [
+        "5.10"
+      ],
+      "terms": [
+        "phenotype",
+        "controlled comparison",
+        "repeat",
+        "genetic contribution"
+      ],
+      "paragraphs": [
+        "Measured yield is influenced by inherited differences and by growing conditions. Assess candidate plants in comparable environments, with independent replicates and a consistent definition of harvested yield. Otherwise a well-watered plant on fertile soil might be selected for an environmental advantage that its seeds will not inherit.",
+        "Compare descendant lines with an appropriate unselected line under matched conditions. A shift in mean performance is more useful evidence than one unusually productive individual, but variation and remaining confounders still matter. Repeating across generations and conditions helps evaluate whether the benefit is inherited and useful for the intended crop setting."
+      ],
+      "example": {
+        "question": "Invented matched plots of equal area: an unselected line yields 1.8,2.0,2.1,2.1 kg; a selected descendant line yields 2.1,2.3,2.4,2.4 kg. Compare means and percentage difference. Does this prove the genetic cause?",
+        "steps": [
+          "Unselected mean = 8.0 ÷ 4 = 2.0 kg per plot.",
+          "Selected mean = 9.2 ÷ 4 = 2.3 kg per plot.",
+          "Relative difference = (2.3 − 2.0) ÷ 2.0 × 100 = 15%.",
+          "These plots suggest better mean performance in the stated comparison; repeat and check matching conditions, ancestry and other differences before attributing it entirely to selection."
+        ],
+        "explanation": "The numbers are invented teaching data. They do not establish heritability or a guaranteed gain from every breeding programme."
+      },
+      "commonMistakes": [
+        "A larger phenotype is not by itself proof of a better inherited contribution."
+      ]
+    },
+    {
+      "id": "animal-selective-breeding-stages",
+      "title": "Animal breeding also depends on inherited variation",
+      "points": [
+        "5.11"
+      ],
+      "terms": [
+        "selective breeding",
+        "parent selection",
+        "breeding record",
+        "offspring"
+      ],
+      "paragraphs": [
+        "In animals, define a desired inherited characteristic, such as milk production, egg production, growth performance or disease resistance. Choose suitable parents, mate them, assess their offspring and select suitable descendants for subsequent breeding. Repeat over generations, keeping records of ancestry and performance. The breeding objective is chosen by humans; it is not necessarily the same as success in the wild.",
+        "Not every characteristic can be measured directly in both sexes or at every age. For example, milk yield can be recorded in lactating females, while a male’s contribution can be evaluated using information about relatives and descendants. Performance comparisons need comparable age, feeding, health and measurement periods. Better feed can increase current production without changing the animal’s inherited information."
+      ],
+      "example": {
+        "question": "A farmer gives one group better feed and chooses its fastest-growing animals as breeding parents. Explain why this alone does not show a successful selective-breeding programme.",
+        "steps": [
+          "The extra feed can change growth through the environment.",
+          "Selection must favour useful inherited differences, assessed under comparable conditions or using suitable family evidence.",
+          "Descendants must be assessed and selected across generations; one fed group is not evidence of inherited improvement."
+        ],
+        "explanation": "This is a distinction between rearing and selection, not an instruction to conduct an animal experiment."
+      },
+      "commonMistakes": [
+        "Only the animals that reproduce contribute directly to the next generation’s inherited information."
+      ]
+    },
+    {
+      "id": "breeding-diversity-tradeoffs",
+      "title": "Breeding gains can have genetic and practical tradeoffs",
+      "points": [
+        "5.10",
+        "5.11"
+      ],
+      "terms": [
+        "genetic diversity",
+        "inbreeding",
+        "recessive allele",
+        "tradeoff"
+      ],
+      "paragraphs": [
+        "Repeatedly using a small related set of parents can increase relatedness and reduce genetic diversity. Inbreeding increases the chance that offspring inherit matching copies of alleles from common ancestors; harmful recessive combinations may then be expressed more often. Inbreeding does not itself create the harmful allele. Reduced diversity can also limit later selection or leave a stock vulnerable to a new disease or environmental change.",
+        "Selection for one characteristic can be associated with an unwanted change in another, so crop performance or animal production must be considered alongside other useful traits and animal welfare where relevant. Maintaining several lines or using appropriately chosen less-related parents can help manage these risks. None of this guarantees every cross will help, and selective breeding is not the same process as cloning genetically identical organisms or inserting a DNA sequence through genetic engineering."
+      ],
+      "example": {
+        "question": "Why could breeding repeatedly from a few high-producing relatives increase a later problem, even if their output is good now?",
+        "steps": [
+          "A narrow related breeding population can lose useful variation and increase inbreeding.",
+          "Harmful recessive allele combinations can become more likely to be expressed.",
+          "A change in disease or conditions may expose weaknesses that selection for present output did not measure."
+        ],
+        "explanation": "Explain a possible mechanism and its conditions. Do not claim that every selected line inevitably fails or that inbreeding creates mutations."
+      },
+      "commonMistakes": [
+        "Selective breeding combines and selects inherited variants; it does not require inserting a gene from another species."
+      ]
+    }
+  ]
+}
