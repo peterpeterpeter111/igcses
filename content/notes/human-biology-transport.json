@@ -215,7 +215,18 @@
       "commonMistakes": [
         "Keep length units consistent; SA/V has units of inverse length.",
         "A larger total surface area is not the same as a larger surface area per unit volume."
-      ]
+      ],
+      "answerGuide": {
+        "id": "4HB1.cube.measure",
+        "sourceTaskId": "4HB1-2024-May-01-standard.Q6.a.i",
+        "command": "Calculate",
+        "steps": [
+          "Read the stated edge and units and identify the requested quantity.",
+          "For total cube area, find one square face and account for all six faces. For volume, multiply the three edge dimensions.",
+          "Evaluate and use square units for area or cubic units for volume."
+        ],
+        "caution": "A cube is a geometry model. Calculating area or volume does not by itself explain uptake rate or represent every factor affecting movement."
+      }
     },
     {
       "id": "agar-diffusion-investigation",

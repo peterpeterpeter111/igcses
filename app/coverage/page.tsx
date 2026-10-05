@@ -92,8 +92,10 @@ export default function CoveragePage() {
           <li>
             Human Biology: {evidenceHighlights.humanBiologyDetailedParts} question parts
             ({evidenceHighlights.humanBiologyDetailedMarks} original marks) have detailed
-            records. The whole-paper leaf count, remaining questions and visual audit
-            are incomplete; no fully processed paper or active template.
+            records out of {evidenceHighlights.humanBiologyExpectedParts} inventoried
+            parts. The visual page audit and detailed extraction are available;
+            historical applicability, full skills/AO audits and template calibration
+            remain incomplete. No fully processed paper or active template.
           </li>
           <li>
             390 raw links: 188 paper-labelled, 186 scheme and 16 report links.
@@ -120,9 +122,8 @@ export default function CoveragePage() {
           </li>
           <li>
             Active generative templates: {evidenceHighlights.activeFamilies}.{' '}
-            Provisional families: {evidenceHighlights.provisionalFamilies} (English
-            retrieval, Physics resultant force and weight, Maths factorisation,
-            matrix addition and grouped means).{' '}
+            Provisional families: {evidenceHighlights.provisionalFamilies} (
+            {evidenceHighlights.provisionalFamilyNames.join(', ')}).{' '}
             Experimental generators: {evidenceHighlights.experimentalGenerators}.
             Mechanical checks do not establish assessment or marking readiness.
             The English prototype uses a finite original word bank and defers unfamiliar paraphrases for review.

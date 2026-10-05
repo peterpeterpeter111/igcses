@@ -1,0 +1,111 @@
+{
+  "date": "2026-10-05",
+  "familyId": "4HB1.cube.measure",
+  "version": "0.1.0",
+  "reviewer": "Codex source/logic review",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "sourceTasks": [
+    {
+      "taskId": "4HB1-2024-May-01-standard.Q6.a.i",
+      "paperId": "4HB1-2024-May-01-standard",
+      "questionPaper": {
+        "documentId": "4HB1-2024-May-01-standard:questionPaper",
+        "pdfPages": [
+          15
+        ]
+      },
+      "markScheme": {
+        "documentId": "4HB1-2024-May-01-standard:markScheme",
+        "pdfPages": [
+          9
+        ]
+      },
+      "originalMarks": 2
+    },
+    {
+      "taskId": "4HB1-2024-May-01-standard.Q6.a.ii",
+      "paperId": "4HB1-2024-May-01-standard",
+      "questionPaper": {
+        "documentId": "4HB1-2024-May-01-standard:questionPaper",
+        "pdfPages": [
+          15
+        ]
+      },
+      "markScheme": {
+        "documentId": "4HB1-2024-May-01-standard:markScheme",
+        "pdfPages": [
+          9
+        ]
+      },
+      "originalMarks": 2
+    }
+  ],
+  "sourceHashes": {
+    "4HB1-2024-May-01-standard:questionPaper": "6f65e16f7752630e632eb16ae6cf481252154fbdd187854a30c3a4ca75d72ef1",
+    "4HB1-2024-May-01-standard:markScheme": "226c87f3b1a1a212cd2c1d4e3b8ec1f77a571b3032a830118e352f66757c5a0c"
+  },
+  "visualEvidence": [
+    "QP15: dimensioned two-cube model, partially completed comparison table and separate area/volume targets.",
+    "MS9: multiplication and result, two marks each; explicit full-credit final-answer concession and ecf labels.",
+    "Own-spec3.3 PDF19 supports SA:V context only; selected mathematical1C/3C PDF43 reviews arithmetic and area/volume demands."
+  ],
+  "sourceDemand": {
+    "edgeCm": 3,
+    "areaCm2": 54,
+    "volumeCm3": 27,
+    "marksEach": 2,
+    "scaffolding": [
+      "organism comparison",
+      "second cube with filled table",
+      "dimensioned drawing"
+    ],
+    "suppliedFormula": false
+  },
+  "generatedDemand": {
+    "edgeDomain": "Integers1\u201320, source3 excluded from generation but permitted for regression builder.",
+    "distinctFreshQuestions": 38,
+    "targets": [
+      "surface-area",
+      "volume"
+    ],
+    "maximumEach": 2,
+    "presentation": "Original standalone prose; formula not supplied."
+  },
+  "transformations": [
+    {
+      "change": "New integer edges",
+      "assessment": "Same operation, products and difficulty need separate review."
+    },
+    {
+      "change": "Remove original diagram/table/comparison",
+      "assessment": "Scaffolding changes; no equivalent reading demand or difficulty claim."
+    }
+  ],
+  "markerScope": {
+    "input": "Faithful three-factor numeric transcription, not semantic free text.",
+    "automatic": [
+      "Correct final alone",
+      "Correct source-form multiplication method with consistent supported final/evaluation"
+    ],
+    "deferred": [
+      "Units or unsupported numeric notation",
+      "Other equivalent methods",
+      "Wrong dimension/ecf",
+      "Contradictory or additional evidence",
+      "Correct working with missing/different final"
+    ]
+  },
+  "semanticFreeTextRecognition": false,
+  "liveEligible": false,
+  "markingCalibrated": false,
+  "difficultyEquivalenceCertified": false,
+  "officialTaskAoAssigned": false,
+  "historicalSourceReconciliationComplete": false,
+  "remaining": [
+    "Independent examiner/student response calibration.",
+    "Representation and difficulty review.",
+    "Broader notation, equivalent methods, units and ecf.",
+    "Official AO/historical audit and complete subject blueprint."
+  ]
+}

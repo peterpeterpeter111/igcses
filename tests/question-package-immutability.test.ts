@@ -1,3 +1,4 @@
+import { generateCubePrototype, validateCubePrototype } from '../server/generators/cube-measure.ts';
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { generateMatrixAdditionPrototype, buildMatrixAdditionPrototype, validateMatrixAdditionPrototype } from '../server/generators/matrix-addition.ts';
@@ -16,6 +17,7 @@ function checkEveryObject(value: unknown): number {
   return 1 + Object.values(value).reduce<number>((sum, child) => sum + checkEveryObject(child), 0);
 }
 const fixtures = [
+  { name: 'Human cube', create: () => generateCubePrototype(7), validate: (q: unknown) => validateCubePrototype(q as ReturnType<typeof generateCubePrototype>) },
   { name: 'English retrieval', create: () => generateRetrievalPrototype(7), validate: (q: unknown) => validateRetrievalPrototype(q as ReturnType<typeof generateRetrievalPrototype>) },
   { name: 'matrix', create: () => generateMatrixAdditionPrototype(7), validate: (q: unknown) => validateMatrixAdditionPrototype(q as ReturnType<typeof generateMatrixAdditionPrototype>) },
   { name: 'quadratic', create: () => generateQuadraticPrototype(7), validate: (q: unknown) => validateQuadraticPrototype(q as ReturnType<typeof generateQuadraticPrototype>) },

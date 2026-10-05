@@ -1,0 +1,620 @@
+{
+  "date": "2026-10-05",
+  "scope": "Research-only deterministic arithmetic and hand-authored synthetic transcription checks. Not empirical difficulty, semantic marking or live validation.",
+  "familyId": "4HB1.cube.measure",
+  "version": "0.1.0",
+  "testedSeeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    4294967295
+  ],
+  "distinctGeneratedQuestions": 38,
+  "arithmetic": [
+    {
+      "edgeCm": 1,
+      "measure": "surface-area",
+      "answer": 6,
+      "passed": true
+    },
+    {
+      "edgeCm": 1,
+      "measure": "volume",
+      "answer": 1,
+      "passed": true
+    },
+    {
+      "edgeCm": 2,
+      "measure": "surface-area",
+      "answer": 24,
+      "passed": true
+    },
+    {
+      "edgeCm": 2,
+      "measure": "volume",
+      "answer": 8,
+      "passed": true
+    },
+    {
+      "edgeCm": 3,
+      "measure": "surface-area",
+      "answer": 54,
+      "passed": true
+    },
+    {
+      "edgeCm": 3,
+      "measure": "volume",
+      "answer": 27,
+      "passed": true
+    },
+    {
+      "edgeCm": 4,
+      "measure": "surface-area",
+      "answer": 96,
+      "passed": true
+    },
+    {
+      "edgeCm": 4,
+      "measure": "volume",
+      "answer": 64,
+      "passed": true
+    },
+    {
+      "edgeCm": 20,
+      "measure": "surface-area",
+      "answer": 2400,
+      "passed": true
+    },
+    {
+      "edgeCm": 20,
+      "measure": "volume",
+      "answer": 8000,
+      "passed": true
+    }
+  ],
+  "cases": [
+    {
+      "id": "area-final",
+      "expected": 2,
+      "actual": {
+        "status": "scored",
+        "score": 2,
+        "maximum": 2,
+        "impliedByCorrectAnswer": true
+      },
+      "passed": true
+    },
+    {
+      "id": "area-squared-unit",
+      "expected": 2,
+      "actual": {
+        "status": "scored",
+        "score": 2,
+        "maximum": 2,
+        "impliedByCorrectAnswer": true
+      },
+      "passed": true
+    },
+    {
+      "id": "area-caret-unit",
+      "expected": 2,
+      "actual": {
+        "status": "scored",
+        "score": 2,
+        "maximum": 2,
+        "impliedByCorrectAnswer": true
+      },
+      "passed": true
+    },
+    {
+      "id": "area-plain-unit",
+      "expected": 2,
+      "actual": {
+        "status": "scored",
+        "score": 2,
+        "maximum": 2,
+        "impliedByCorrectAnswer": true
+      },
+      "passed": true
+    },
+    {
+      "id": "area-decimal",
+      "expected": 2,
+      "actual": {
+        "status": "scored",
+        "score": 2,
+        "maximum": 2,
+        "impliedByCorrectAnswer": true
+      },
+      "passed": true
+    },
+    {
+      "id": "volume-final",
+      "expected": 2,
+      "actual": {
+        "status": "scored",
+        "score": 2,
+        "maximum": 2,
+        "impliedByCorrectAnswer": true
+      },
+      "passed": true
+    },
+    {
+      "id": "volume-cubed-unit",
+      "expected": 2,
+      "actual": {
+        "status": "scored",
+        "score": 2,
+        "maximum": 2,
+        "impliedByCorrectAnswer": true
+      },
+      "passed": true
+    },
+    {
+      "id": "volume-caret-unit",
+      "expected": 2,
+      "actual": {
+        "status": "scored",
+        "score": 2,
+        "maximum": 2,
+        "impliedByCorrectAnswer": true
+      },
+      "passed": true
+    },
+    {
+      "id": "volume-plain-unit",
+      "expected": 2,
+      "actual": {
+        "status": "scored",
+        "score": 2,
+        "maximum": 2,
+        "impliedByCorrectAnswer": true
+      },
+      "passed": true
+    },
+    {
+      "id": "area-full",
+      "expected": 2,
+      "actual": {
+        "status": "scored",
+        "score": 2,
+        "maximum": 2,
+        "impliedByCorrectAnswer": false
+      },
+      "passed": true
+    },
+    {
+      "id": "area-permuted",
+      "expected": 2,
+      "actual": {
+        "status": "scored",
+        "score": 2,
+        "maximum": 2,
+        "impliedByCorrectAnswer": false
+      },
+      "passed": true
+    },
+    {
+      "id": "volume-full",
+      "expected": 2,
+      "actual": {
+        "status": "scored",
+        "score": 2,
+        "maximum": 2,
+        "impliedByCorrectAnswer": false
+      },
+      "passed": true
+    },
+    {
+      "id": "area-method-final",
+      "expected": 2,
+      "actual": {
+        "status": "scored",
+        "score": 2,
+        "maximum": 2,
+        "impliedByCorrectAnswer": false
+      },
+      "passed": true
+    },
+    {
+      "id": "volume-method-final",
+      "expected": 2,
+      "actual": {
+        "status": "scored",
+        "score": 2,
+        "maximum": 2,
+        "impliedByCorrectAnswer": false
+      },
+      "passed": true
+    },
+    {
+      "id": "area-arithmetic-error",
+      "expected": 1,
+      "actual": {
+        "status": "scored",
+        "score": 1,
+        "maximum": 2,
+        "impliedByCorrectAnswer": false
+      },
+      "passed": true
+    },
+    {
+      "id": "volume-arithmetic-error",
+      "expected": 1,
+      "actual": {
+        "status": "scored",
+        "score": 1,
+        "maximum": 2,
+        "impliedByCorrectAnswer": false
+      },
+      "passed": true
+    },
+    {
+      "id": "area-method-only",
+      "expected": 1,
+      "actual": {
+        "status": "scored",
+        "score": 1,
+        "maximum": 2,
+        "impliedByCorrectAnswer": false
+      },
+      "passed": true
+    },
+    {
+      "id": "volume-method-only",
+      "expected": 1,
+      "actual": {
+        "status": "scored",
+        "score": 1,
+        "maximum": 2,
+        "impliedByCorrectAnswer": false
+      },
+      "passed": true
+    },
+    {
+      "id": "wrong-final-only",
+      "expected": 0,
+      "actual": {
+        "status": "scored",
+        "score": 0,
+        "maximum": 2,
+        "impliedByCorrectAnswer": false
+      },
+      "passed": true
+    },
+    {
+      "id": "negative-final-only",
+      "expected": 0,
+      "actual": {
+        "status": "scored",
+        "score": 0,
+        "maximum": 2,
+        "impliedByCorrectAnswer": false
+      },
+      "passed": true
+    },
+    {
+      "id": "blank",
+      "expected": 0,
+      "actual": {
+        "status": "scored",
+        "score": 0,
+        "maximum": 2,
+        "impliedByCorrectAnswer": false
+      },
+      "passed": true
+    },
+    {
+      "id": "correct-area-wrong-unit",
+      "expected": null,
+      "actual": {
+        "status": "needs-review",
+        "score": null,
+        "reason": "Unrecognised notation or unit issue requires review, not an automatic zero."
+      },
+      "passed": true
+    },
+    {
+      "id": "correct-volume-wrong-unit",
+      "expected": null,
+      "actual": {
+        "status": "needs-review",
+        "score": null,
+        "reason": "Unrecognised notation or unit issue requires review, not an automatic zero."
+      },
+      "passed": true
+    },
+    {
+      "id": "scientific-notation",
+      "expected": null,
+      "actual": {
+        "status": "needs-review",
+        "score": null,
+        "reason": "Unrecognised notation or unit issue requires review, not an automatic zero."
+      },
+      "passed": true
+    },
+    {
+      "id": "equivalent-fraction",
+      "expected": null,
+      "actual": {
+        "status": "needs-review",
+        "score": null,
+        "reason": "Unrecognised notation or unit issue requires review, not an automatic zero."
+      },
+      "passed": true
+    },
+    {
+      "id": "different-valid-working",
+      "expected": null,
+      "actual": {
+        "status": "needs-review",
+        "score": null,
+        "reason": "Different factors may represent an equivalent method, a dimension error or ecf; examiner review is required."
+      },
+      "passed": true
+    },
+    {
+      "id": "different-dimension",
+      "expected": null,
+      "actual": {
+        "status": "needs-review",
+        "score": null,
+        "reason": "Different factors may represent an equivalent method, a dimension error or ecf; examiner review is required."
+      },
+      "passed": true
+    },
+    {
+      "id": "correct-working-empty-final",
+      "expected": null,
+      "actual": {
+        "status": "needs-review",
+        "score": null,
+        "reason": "Correct result in working with a missing or different final answer needs review."
+      },
+      "passed": true
+    },
+    {
+      "id": "correct-final-wrong-working",
+      "expected": null,
+      "actual": {
+        "status": "needs-review",
+        "score": null,
+        "reason": "The shown evaluation conflicts with the final answer."
+      },
+      "passed": true
+    },
+    {
+      "id": "wrong-final-correct-working",
+      "expected": null,
+      "actual": {
+        "status": "needs-review",
+        "score": null,
+        "reason": "The shown evaluation conflicts with the final answer."
+      },
+      "passed": true
+    },
+    {
+      "id": "additional-claim",
+      "expected": null,
+      "actual": {
+        "status": "needs-review",
+        "score": null,
+        "reason": "Additional, alternative or crossed-out evidence requires review."
+      },
+      "passed": true
+    },
+    {
+      "id": "free-text-equation",
+      "expected": null,
+      "actual": {
+        "status": "needs-review",
+        "score": null,
+        "reason": "Unrecognised notation or unit issue requires review, not an automatic zero."
+      },
+      "passed": true
+    }
+  ],
+  "scoredCases": 21,
+  "deferredCases": 11,
+  "liveEligible": false,
+  "markingCalibrated": false,
+  "humanReviewed": false
+}

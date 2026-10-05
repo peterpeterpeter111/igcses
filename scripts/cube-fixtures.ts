@@ -1,0 +1,38 @@
+import type { CubeResponse } from '../server/generators/cube-marking.ts';
+// Hand-authored cases use edge 4: area 96, volume 64. Expectations are independent
+// of generated private solutions. Deferred cases must never become zero marks.
+const response = (answerLine: string, factors: number[] | null = null, evaluatedProduct: number | null = null, additionalEvidence = ''): CubeResponse => ({ answerLine, working: factors ? { factors, evaluatedProduct } : null, additionalEvidence });
+export const cubeCases = [
+  { id: 'area-final', measure: 'surface-area', response: response('96'), expected: 2 },
+  { id: 'area-squared-unit', measure: 'surface-area', response: response('96 cm²'), expected: 2 },
+  { id: 'area-caret-unit', measure: 'surface-area', response: response('96 cm^2'), expected: 2 },
+  { id: 'area-plain-unit', measure: 'surface-area', response: response('96 cm2'), expected: 2 },
+  { id: 'area-decimal', measure: 'surface-area', response: response('96.000'), expected: 2 },
+  { id: 'volume-final', measure: 'volume', response: response('64'), expected: 2 },
+  { id: 'volume-cubed-unit', measure: 'volume', response: response('64 cm³'), expected: 2 },
+  { id: 'volume-caret-unit', measure: 'volume', response: response('64 cm^3'), expected: 2 },
+  { id: 'volume-plain-unit', measure: 'volume', response: response('64 cm3'), expected: 2 },
+  { id: 'area-full', measure: 'surface-area', response: response('96', [4, 4, 6], 96), expected: 2 },
+  { id: 'area-permuted', measure: 'surface-area', response: response('96', [6, 4, 4], 96), expected: 2 },
+  { id: 'volume-full', measure: 'volume', response: response('64', [4, 4, 4], 64), expected: 2 },
+  { id: 'area-method-final', measure: 'surface-area', response: response('96', [4, 6, 4]), expected: 2 },
+  { id: 'volume-method-final', measure: 'volume', response: response('64', [4, 4, 4]), expected: 2 },
+  { id: 'area-arithmetic-error', measure: 'surface-area', response: response('90', [4, 4, 6], 90), expected: 1 },
+  { id: 'volume-arithmetic-error', measure: 'volume', response: response('60', [4, 4, 4], 60), expected: 1 },
+  { id: 'area-method-only', measure: 'surface-area', response: response('', [4, 4, 6]), expected: 1 },
+  { id: 'volume-method-only', measure: 'volume', response: response('', [4, 4, 4]), expected: 1 },
+  { id: 'wrong-final-only', measure: 'surface-area', response: response('64'), expected: 0 },
+  { id: 'negative-final-only', measure: 'volume', response: response('−64'), expected: 0 },
+  { id: 'blank', measure: 'surface-area', response: response(''), expected: 0 },
+  { id: 'correct-area-wrong-unit', measure: 'surface-area', response: response('96 cm³'), expected: null },
+  { id: 'correct-volume-wrong-unit', measure: 'volume', response: response('64 cm²'), expected: null },
+  { id: 'scientific-notation', measure: 'surface-area', response: response('9.6e1'), expected: null },
+  { id: 'equivalent-fraction', measure: 'surface-area', response: response('192/2'), expected: null },
+  { id: 'different-valid-working', measure: 'volume', response: response('64', [16, 4, 1], 64), expected: null },
+  { id: 'different-dimension', measure: 'surface-area', response: response('54', [3, 3, 6], 54), expected: null },
+  { id: 'correct-working-empty-final', measure: 'surface-area', response: response('', [4, 4, 6], 96), expected: null },
+  { id: 'correct-final-wrong-working', measure: 'surface-area', response: response('96', [4, 4, 6], 90), expected: null },
+  { id: 'wrong-final-correct-working', measure: 'volume', response: response('60', [4, 4, 4], 64), expected: null },
+  { id: 'additional-claim', measure: 'surface-area', response: response('96', null, null, 'or 64'), expected: null },
+  { id: 'free-text-equation', measure: 'volume', response: response('4 × 4 × 4 = 64'), expected: null },
+] as const;

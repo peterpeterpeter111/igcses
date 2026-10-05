@@ -1,0 +1,455 @@
+{
+  "schemaVersion": 1,
+  "id": "4HB1.cube.measure",
+  "version": "0.1.0",
+  "status": "provisional",
+  "subject": "4HB1",
+  "origin": "exam-derived",
+  "syllabusRefs": [
+    {
+      "pointId": "4HB1:issue2:3.3",
+      "documentId": "4HB1-spec",
+      "issue": "2",
+      "pdfPages": [
+        19
+      ],
+      "mappingStatus": "verified"
+    }
+  ],
+  "sourceTasks": [
+    {
+      "taskId": "4HB1-2024-May-01-standard.Q6.a.i",
+      "paperId": "4HB1-2024-May-01-standard",
+      "questionPaper": {
+        "documentId": "4HB1-2024-May-01-standard:questionPaper",
+        "pdfPages": [
+          15
+        ]
+      },
+      "markScheme": {
+        "documentId": "4HB1-2024-May-01-standard:markScheme",
+        "pdfPages": [
+          9
+        ]
+      },
+      "originalMarks": 2
+    },
+    {
+      "taskId": "4HB1-2024-May-01-standard.Q6.a.ii",
+      "paperId": "4HB1-2024-May-01-standard",
+      "questionPaper": {
+        "documentId": "4HB1-2024-May-01-standard:questionPaper",
+        "pdfPages": [
+          15
+        ]
+      },
+      "markScheme": {
+        "documentId": "4HB1-2024-May-01-standard:markScheme",
+        "pdfPages": [
+          9
+        ]
+      },
+      "originalMarks": 2
+    }
+  ],
+  "answerGuideId": "4HB1.cube.measure",
+  "commandWord": "Calculate",
+  "skill": "Calculate cube surface area or volume from a stated edge length; supports surface-area/volume context only, not the full transport-rate point.",
+  "assessmentObjectives": [
+    "unassigned-pending-official-AO-review"
+  ],
+  "originalMarks": [
+    2
+  ],
+  "customQuiz": {
+    "candidateMarks": [
+      2
+    ],
+    "validatedMarks": [],
+    "adaptationStatus": "pending",
+    "rationale": "Preserve the two-mark arithmetic and explicit final-answer concession for both original parts. Prose model presentation and standalone selection remove original diagram/table/comparison scaffolding; no equivalent difficulty claim. Ratio and biological explanation are separate demands."
+  },
+  "stimulus": {
+    "types": [
+      "scenario"
+    ],
+    "originality": "original-generated-content",
+    "requirements": [
+      "An original geometry model is explicitly a cube, not an actual cubical organism.",
+      "Supply one positive integer edge length in cm; ask only for area or volume.",
+      "Do not supply the target formula or the answer."
+    ],
+    "evidenceContract": [
+      "Freeze seed, measure, edge, public question and private scheme before answering.",
+      "Source tasks, formula factors, exact result, unit and rubric remain private.",
+      "Public fields contain only prompt, given cube data and maximum marks."
+    ]
+  },
+  "parameters": [
+    {
+      "id": "edgeCm",
+      "type": "integer",
+      "domain": {
+        "minimum": 1,
+        "maximum": 20,
+        "step": 1
+      },
+      "constraints": [
+        "Fresh generator excludes source edge 3; builder permits it for historical regression only."
+      ]
+    },
+    {
+      "id": "measure",
+      "type": "enum",
+      "domain": {
+        "values": [
+          "surface-area",
+          "volume"
+        ]
+      },
+      "constraints": [
+        "Area and volume retain their own source task and unit; no ratio or inverse target."
+      ]
+    }
+  ],
+  "constraints": [
+    "Generated finite bank has only 38 distinct question forms; seeds repeat periodically.",
+    "No fractional edges, unit conversion, ratios, heat, transport-rate inference or multi-part dependency in this version.",
+    "Never activate from arithmetic or synthetic marking checks alone."
+  ],
+  "relationships": [
+    "surface_area_cm2 = 6 * edge_cm * edge_cm",
+    "volume_cm3 = edge_cm * edge_cm * edge_cm"
+  ],
+  "difficultyControls": [
+    "Vary integer edge 1\u201320 without asserting equal demand.",
+    "Original two-cube diagram/table scaffolding is absent and needs explicit representation/difficulty calibration."
+  ],
+  "transformations": [
+    {
+      "id": "new-edge",
+      "status": "candidate",
+      "conditions": "Recompute every answer and preserve the cube shape and stated cm units."
+    },
+    {
+      "id": "standalone-prose-model",
+      "status": "candidate",
+      "conditions": "Review removal of original organism comparison, diagram and table before serving."
+    },
+    {
+      "id": "ratio-or-biological-explanation",
+      "status": "forbidden",
+      "conditions": "Ratio ecf and biological explanations require separate source/demand/marking review."
+    }
+  ],
+  "solutionProcedure": [
+    "Identify whether area or volume is asked for.",
+    "Area: six faces, each edge squared. Volume: three edge factors.",
+    "Evaluate in the requested square or cubic centimetres."
+  ],
+  "marking": {
+    "method": "method-marks",
+    "maximum": 2,
+    "criteria": [
+      {
+        "id": "cube-method",
+        "credit": 1,
+        "rule": "Source multiplication method: edge \u00d7 edge \u00d7 6 for area, edge \u00d7 edge \u00d7 edge for volume."
+      },
+      {
+        "id": "evaluation",
+        "credit": 1,
+        "rule": "Correct result. The source explicitly permits full marks for a correct final answer alone."
+      }
+    ],
+    "acceptableAlternatives": [
+      "Commuted correct three-factor multiplication is supported by the bounded offline transcription marker.",
+      "Other equivalent algebraic/geometric methods and numeric notation require review rather than an automatic zero."
+    ],
+    "dependencies": [
+      "Published ecf label retained privately; wrong-dimension and earlier-working pathways are not independently calibrated.",
+      "Do not manufacture a third unit mark or transplant the ratio part scoring concession."
+    ],
+    "contradictionRules": [
+      "Additional evidence, competing answers, correct final with conflicting evaluation, and correct working with missing/different final are deferred."
+    ],
+    "units": "cm\u00b2 for area; cm\u00b3 for volume",
+    "tolerance": {
+      "absolute": 0,
+      "relative": 0,
+      "roundingRule": "Exact integer outputs. Unsupported precision/notation or unit issues require review; no blanket alternative-unit deduction."
+    },
+    "levelRubric": []
+  },
+  "commonErrors": [
+    {
+      "description": "Use volume factors when asked for total surface area, or omit six faces.",
+      "origin": "editorial",
+      "sourceRefs": []
+    },
+    {
+      "description": "Confuse square and cubic units.",
+      "origin": "editorial",
+      "sourceRefs": []
+    }
+  ],
+  "validation": {
+    "ruleIds": [
+      "integer-edge-domain",
+      "source-target-match",
+      "finite-variety",
+      "exact-answer",
+      "deep-freeze",
+      "private-solution",
+      "two-mark-concession",
+      "defer-ambiguous-evidence"
+    ],
+    "testPlan": [
+      "200 deterministic seeds plus seed upper boundary; all 38 generated forms.",
+      "Independent source 3cm and boundary 1/2/4/20 answer fixtures.",
+      "32 hand-authored marking fixtures: 21 scored and 11 deferred; no live or empirical calibration.",
+      "Reject altered package fields, unbounded/sparse working, unsupported units and unreviewed activation."
+    ],
+    "testedSeeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      190,
+      191,
+      192,
+      193,
+      194,
+      195,
+      196,
+      197,
+      198,
+      199,
+      4294967295
+    ],
+    "boundaryCoverage": "complete",
+    "status": "not-run",
+    "runRefs": [
+      "research/validation/2026-10-05-cube-prototype.json",
+      "research/validation/2026-10-05-cube-demand-review.json"
+    ]
+  },
+  "runtime": {
+    "implemented": true,
+    "generatorId": "cube-measure-prototype-v1",
+    "seedPolicy": "Unsigned 32-bit deterministic seed; 38 finite fresh question forms, excludes historical edge 3. Research-only, no live adapter.",
+    "maxRetries": 0,
+    "publicFields": [
+      "prompt",
+      "stimulus",
+      "maximumMarks"
+    ],
+    "privateFields": [
+      "seed",
+      "parameters",
+      "sourceTasks",
+      "solution",
+      "rubric",
+      "validationResults"
+    ],
+    "freezeBeforeAnswer": true,
+    "releaseSchemeAfter": "session-completed"
+  },
+  "review": {
+    "pedagogyStatus": "pending",
+    "reviewer": "Codex source/logic review",
+    "reviewerType": "agent",
+    "humanReviewed": false,
+    "blockers": [
+      "Source arithmetic/concession reviewed but standalone prose representation and difficulty equivalence uncalibrated.",
+      "Bounded transcription marker is not a semantic examiner; units, alternative methods, ecf and contradictory responses remain deferred.",
+      "Official per-task AO and historical applicability review pending; no live quiz registration."
+    ]
+  }
+}
