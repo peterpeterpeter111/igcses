@@ -1,3 +1,9 @@
+# Latest phase — Biology reproduction, 5 October 2026
+
+Read `research/checkpoints/2026-10-05-BIOLOGY-REPRODUCTION.md` first. Eighteen original partial lessons/two functional diagrams on the existing reproduction-and-inheritance route; own 3.1–3.13, all both 1B/2B except 3.10B only 2B. Germination plans are not performed trials. Inheritance and anatomical/graph assessment remain unfinished. Totals: 539 sections /24 partial notes /36 routes; 524 identities /508 partial audits /1,510 local requirements /748 links. 133 tests, typecheck/lint/14 research checks/content/evidence/isolated D1/final build/80-file public scan pass. Desktop diagrams, coverage and subject search verified; narrow preview remains unverified.
+
+GitHub `f85f7f9` exactly mirrors saved local `25066bb`; commit and sync this reproduction delta non-force. Keep history/UI, counts and source access gaps honest. Seven obtained pairs; zero fully processed papers, complete chapters/points or active families; seven experimental offline prototypes. Continue own inheritance3.14 onward, wider curriculum, historical/skills paper audits and calibration only above5% in both ordinary allowances. Pause/checkpoint at5%; consume no reset. AI last; no Sites version/deployment/public URL. Older entries below are historical.
+
 # Latest phase — Biology named hormones, 5 October 2026
 
 Read `research/checkpoints/2026-10-05-BIOLOGY-HORMONES.md` first. Nine original partial lessons and an insulin feedback diagram added; own 2.94 both 1B/2B, 2.95B only 2B. Existing ADH teaching reused. Totals: 521 sections / 23 partial notes / 36 routes; 511 identities / 495 partial audits / 1,455 local requirements / 727 links. All 133 tests, typecheck, lint, 14 research checks, content/evidence, isolated D1, build and 78-file public scan pass. Desktop diagram/coverage verified; narrow preview override did not apply and remains pending. Skin coverage inspection is now complete.

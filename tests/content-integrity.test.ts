@@ -19,7 +19,7 @@ void test('catalog contains six uniquely addressable subjects and chapters', () 
 });
 
 void test('partial notes point to catalog chapters and retain incomplete status', () => {
-  assert.equal(notes.length, 23);
+  assert.equal(notes.length, 24);
   assert.equal(
     new Set(notes.map((note) => note.subjectId + ':' + note.chapterId)).size,
     notes.length,
