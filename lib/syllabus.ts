@@ -1,3 +1,4 @@
+import biologyMutationSelection from '../research/syllabus/4BI1-mutation-selection.json' with { type: 'json' };
 import biologyInheritance from '../research/syllabus/4BI1-inheritance.json' with { type: 'json' };
 import biologyReproduction from '../research/syllabus/4BI1-reproduction.json' with { type: 'json' };
 import biologyHormones from '../research/syllabus/4BI1-hormones.json' with { type: 'json' };
@@ -86,6 +87,7 @@ export const reviewedInventories = [
   { title: 'Named hormones (2.94–2.95B; partial teaching)', ...biologyHormones },
   { title: 'Reproduction (3.1–3.13; partial teaching)', ...biologyReproduction },
   { title: 'Inheritance (3.14–3.34; partial teaching)', ...biologyInheritance },
+  { title: 'Mutation and selection (3.35B–3.39; partial teaching)', ...biologyMutationSelection },
   { title: 'Cells and tissues (1.1–1.16)', ...humanCells },
   { title: 'Bones, muscles and joints (4.1–4.6)', ...humanMovement },
   { title: 'Selected Q1 demands: coordination and skin (identities only; no teaching)', ...humanQ1 },

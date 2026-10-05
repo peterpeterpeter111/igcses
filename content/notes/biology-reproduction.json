@@ -4,7 +4,8 @@
   "sourceId": "4BI1-spec",
   "sourcePages": [
     26,
-    27
+    27,
+    28
   ],
   "status": "source-checked",
   "complete": false,
@@ -17,13 +18,14 @@
     "Compare sexual/asexual reproduction and trace fertilisation to an embryo.",
     "Explain pollination, seed/fruit origins and germination with practical controls.",
     "Link human reproductive structures, hormones and protection to their functions.",
-    "Inheritance, full anatomical/graph assessment and chapter completion remain unfinished.",
-    "Explain genes/RNA/protein synthesis, genetic crosses, pedigrees, chromosome sets and sources of variation; later mutation/selection and full assessments remain unfinished."
+    "Apply reproduction and inheritance explanations; full anatomical/graph assessment and chapter completion remain unfinished.",
+    "Explain genes/RNA/protein synthesis, crosses, pedigrees, chromosome sets, variation, mutation and selection; unfamiliar assessments and full point audits remain unfinished."
   ],
   "sections": [],
   "sectionFiles": [
     "../note-sections/biology-reproduction/01-reproduction.json",
-    "../note-sections/biology-reproduction/02-inheritance.json"
+    "../note-sections/biology-reproduction/02-inheritance.json",
+    "../note-sections/biology-reproduction/03-mutation-selection.json"
   ],
   "supportingSources": [
     {
@@ -158,6 +160,65 @@
         "alleles-and-genetic-terms",
         "monohybrid-cross-outcomes",
         "pedigree-model-inference"
+      ]
+    },
+    {
+      "title": "MedlinePlus Genetics: types of sequence variants",
+      "url": "https://medlineplus.gov/genetics/understanding/mutationsanddisorders/possiblemutations/",
+      "sectionIds": [
+        "dna-change-protein-phenotype"
+      ]
+    },
+    {
+      "title": "MedlinePlus Genetics: variable effects of variants",
+      "url": "https://medlineplus.gov/genetics/understanding/mutationsanddisorders/neutralmutations/",
+      "sectionIds": [
+        "mutation-effect-size"
+      ]
+    },
+    {
+      "title": "OpenStax Biology: DNA damage, repair and mutations",
+      "url": "https://openstax.org/books/biology-2e/pages/14-6-dna-repair",
+      "sectionIds": [
+        "dna-change-protein-phenotype",
+        "mutagens-radiation-types"
+      ]
+    },
+    {
+      "title": "CDC: non-ionising radiation and ordinary solar UV",
+      "url": "https://www.cdc.gov/radiation-health/about/non-ionizing-radiation.html",
+      "sectionIds": [
+        "mutagens-radiation-types"
+      ]
+    },
+    {
+      "title": "OpenStax Biology: natural selection and reproductive fitness",
+      "url": "https://openstax.org/books/biology-2e/pages/19-3-adaptive-evolution",
+      "sectionIds": [
+        "natural-selection-chain",
+        "selection-counts-frequency"
+      ]
+    },
+    {
+      "title": "OpenStax Microbiology: resistance, selection and gene transfer",
+      "url": "https://openstax.org/books/microbiology/pages/14-5-drug-resistance",
+      "sectionIds": [
+        "antibiotic-selection-inheritance"
+      ]
+    },
+    {
+      "title": "WHO: antimicrobial resistance and infection control",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/antimicrobial-resistance",
+      "sectionIds": [
+        "resistance-treatment-limits"
+      ]
+    },
+    {
+      "title": "NCBI: the standard genetic code",
+      "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi",
+      "sectionIds": [
+        "dna-change-protein-phenotype",
+        "mutation-effect-size"
       ]
     }
   ]

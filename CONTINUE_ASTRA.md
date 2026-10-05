@@ -1,3 +1,9 @@
+# Latest phase — Biology mutation and selection, 5 October 2026
+
+Read `research/checkpoints/2026-10-05-BIOLOGY-MUTATION-SELECTION.md` first. Seven partial lessons/original selection diagram; own3.35B–3.37B only2B,3.38–3.39both. UV wording caveat explained; original counts10%→50%→50%, not observed results. Totals561sections/24partialnotes/36routes;550identities/534partialaudits/1,581requirements/778links.133tests,typecheck/lint/14research/content/evidence/isolatedD1/build/82-filepublicscan pass; desktopdiagram and exactcomponentlabels verified,narrowpending.
+
+GitHub`e459658` exactly mirrors savedlocal`1dbee8d`;commit/sync newer mutation phase non-force. Sevenobtainedpairs,zero fullyprocessedpapers/completechapters/points/activefamilies;sevenexperimentalofflineprototypes. Next Ecology/resources,widercurriculum,historical/skills paper audits and calibration. Continue only above5%bothordinary allowances,pause/checkpointat5%;noreset. AIlast;noSitesversion/deployment/publicURL. PreserveUI/history;olderentrieshistorical.
+
 # Latest phase — Biology inheritance, 5 October 2026
 
 Read `research/checkpoints/2026-10-05-BIOLOGY-INHERITANCE.md` first. Fifteen partial lessons, original sequence figure and original site Punnett reuse. Own3.14–3.34;3.16B/3.17B/3.18B/3.21B2B-only,othersboth. Totals554sections/24partialnotes/36routes;545identities/529partialaudits/1,563requirements/770links. 133tests,typecheck/lint/14research/content/evidence/isolatedD1/finalbuild/81-filepublicscan pass;desktopsequence/coverageverified,narrowpending. Reproductionreader33sections,butlatermutation/selectionandfullassessmentsunfinished.

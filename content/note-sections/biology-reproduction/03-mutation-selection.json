@@ -1,0 +1,277 @@
+{
+  "subjectId": "biology",
+  "chapterId": "reproduction-and-inheritance",
+  "sections": [
+    {
+      "id": "dna-change-protein-phenotype",
+      "title": "Connect a DNA change to a possible phenotype",
+      "points": [
+        "3.35B"
+      ],
+      "paragraphs": [
+        "Changing a base in coding DNA can change the corresponding mRNA codon. If that codon specifies a different amino acid, translation can produce an altered amino-acid sequence. This is a possible consequence, not a guarantee for every DNA change.",
+        "A different amino-acid sequence can alter protein folding or an active site, affecting the protein’s function and then the phenotype. For an enzyme, a useful explanation connects the changed site to substrate binding and reaction rate; merely saying “the gene changes the appearance” misses the intermediate steps.",
+        "Use this supplied standard-code key for an original short fragment: RNA GAA and GAG both specify glutamate; GCA specifies alanine. A coding-strand change from 5′-GAA-3′ to 5′-GCA-3′ changes that mRNA codon from GAA to GCA and its amino acid from glutamate to alanine. The fragment alone cannot establish a whole protein’s shape, activity or an organism’s phenotype.",
+        "Insertions or deletions can also affect the grouping of downstream codons when their size is not a multiple of three. An early stop signal can shorten a protein. These are different mechanisms; a one-base substitution need not shift the reading frame."
+      ],
+      "example": {
+        "question": "In the supplied fragment model, trace coding DNA GAA → GCA to a possible phenotype.",
+        "steps": [
+          "Coding DNA and the corresponding mRNA match in the 5′ → 3′ direction, apart from T/U where present.",
+          "The supplied key gives glutamate → alanine at this position.",
+          "An altered protein structure or function could change a phenotype; no particular functional change is proved by this fragment."
+        ],
+        "explanation": "Trace DNA, message, amino-acid sequence, protein function and phenotype as separate stages."
+      },
+      "practice": {
+        "question": "Must substituting one base shift every later codon?",
+        "answer": "No. A substitution replaces a base without changing sequence length or necessarily moving the reading frame.",
+        "explanation": "Trace DNA, message, amino-acid sequence, protein function and phenotype as separate stages."
+      },
+      "terms": [
+        "mutation",
+        "coding strand",
+        "codon",
+        "amino-acid sequence",
+        "protein folding",
+        "phenotype",
+        "frameshift"
+      ],
+      "commonMistakes": [
+        "Do not confuse DNA bases with amino acids or infer an enzyme’s exact activity from one invented codon."
+      ]
+    },
+    {
+      "id": "mutation-effect-size",
+      "title": "Explain why mutation effects vary",
+      "points": [
+        "3.36B"
+      ],
+      "paragraphs": [
+        "The specification’s broad pattern is that most genetic mutations have no effect on phenotype, some have a small effect and significant effects are rarer. This is not a numerical prediction for every selected gene, exposure, organism or experimental sample.",
+        "A coding-strand GAA → GAG change gives mRNA GAA → GAG. Both specify glutamate in the supplied key, so this fragment retains its amino acid. This illustrates a synonymous change; it does not prove that every synonymous change is harmless in every biological context.",
+        "A change outside a protein-coding region may leave a measured trait unchanged. However, some non-coding regions regulate expression or RNA processing, so “non-coding” does not mean incapable of an effect. Even an amino-acid replacement can leave protein activity sufficiently similar for no detectable phenotype change.",
+        "Effect size depends on location, protein role, expression and environment. A change at a critical functional site or an early stop can have a larger effect. Mutation is not synonymous with disease: consequences can be neutral, harmful or beneficial in a particular setting."
+      ],
+      "example": {
+        "question": "Why can a changed DNA sequence leave the measured phenotype unchanged?",
+        "steps": [
+          "A codon may still specify the same amino acid, as in supplied GAA/GAG.",
+          "Alternatively, a changed product may retain sufficient function, or the changed region may not affect the measured feature.",
+          "Give a mechanism and its limits; do not claim all non-coding or synonymous variants are without effect."
+        ],
+        "explanation": "Distinguish sequence change, altered product and a detectable phenotypic consequence."
+      },
+      "practice": {
+        "question": "Does a different amino acid automatically prove a significant phenotype change?",
+        "answer": "No. The protein’s functional response and the measured phenotype must also be considered.",
+        "explanation": "Distinguish sequence change, altered product and a detectable phenotypic consequence."
+      },
+      "terms": [
+        "synonymous change",
+        "neutral effect",
+        "protein function",
+        "regulatory DNA",
+        "effect size"
+      ],
+      "commonMistakes": [
+        "Do not invent a universal percentage of harmful mutations or equate every mutation with a disorder."
+      ]
+    },
+    {
+      "id": "mutagens-radiation-types",
+      "title": "Distinguish mutagens and radiation categories",
+      "points": [
+        "3.37B"
+      ],
+      "paragraphs": [
+        "A mutagen is an agent that can increase the frequency of mutations. Some chemicals in tobacco and radiation such as gamma rays, X-rays and ultraviolet are examples within the specification’s scope. Increased incidence does not mean a useful mutation is deliberately produced.",
+        "Gamma rays and X-rays are ionising radiation: their photons can remove electrons and damage DNA directly or through reactive products. UV can damage DNA through photochemical processes, including links between adjacent pyrimidine bases. If damage is not correctly resolved, later copying can establish a changed sequence.",
+        "Wording note: point 3.37B groups UV with ionising examples. Ordinary solar UV reaching Earth is normally classed as non-ionising, as the CDC explains; its capacity to damage DNA does not depend on calling it ionising. Keep the required examples while distinguishing their mechanisms and physical classification.",
+        "DNA damage and a lasting mutation are not identical: repair may prevent a sequence change. Exposure can increase mutation likelihood, but does not prove that every exposed cell changes or that any one observed variant was caused by that exposure. No exposure experiment or personal dose assessment is proposed here."
+      ],
+      "example": {
+        "question": "Give two required radiation examples and explain the UV classification caveat.",
+        "steps": [
+          "Gamma rays and X-rays are ionising examples; UV is also a required mutagenic radiation example.",
+          "Ordinary UV at Earth’s surface is classed as non-ionising, but can cause photochemical DNA damage.",
+          "A lasting mutation can result if damage is incorrectly resolved or copied; not every damaged molecule becomes a mutation."
+        ],
+        "explanation": "Separate the syllabus example list, physical classification, DNA damage and established sequence change."
+      },
+      "practice": {
+        "question": "Does non-ionising mean that ordinary UV cannot damage DNA?",
+        "answer": "No. UV can cause photochemical damage without being classed as ionising in that ordinary context.",
+        "explanation": "Separate the syllabus example list, physical classification, DNA damage and established sequence change."
+      },
+      "terms": [
+        "mutagen",
+        "ionising radiation",
+        "gamma ray",
+        "X-ray",
+        "ultraviolet",
+        "DNA damage",
+        "repair"
+      ],
+      "commonMistakes": [
+        "Do not call all UV ionising, classify every chemical as a mutagen or claim exposure directs a needed mutation."
+      ]
+    },
+    {
+      "id": "natural-selection-chain",
+      "title": "Build a natural-selection explanation",
+      "points": [
+        "3.38"
+      ],
+      "paragraphs": [
+        "Individuals in a population differ, and some differences are heritable. Mutation can produce new alleles; sexual reproduction reshuffles allele combinations. These processes supply variation rather than responding intentionally to what the population needs.",
+        "More offspring can be produced than the environment supports. Competition, predation or other conditions can create unequal survival and reproductive success. In that setting, individuals with a useful inherited feature tend to contribute more offspring to the next generation.",
+        "Offspring can inherit the relevant alleles. Over generations, the frequency of the advantageous inherited feature can increase in the population. The environment selects among variants; it does not give each individual a chosen new trait.",
+        "Fitness here concerns reproductive contribution in the particular environment, not simply strength or long life. Survival matters insofar as it contributes to reproduction; a feature advantageous in one setting can be less advantageous in another. A change in colour caused only by the environment is not automatically an inherited adaptation."
+      ],
+      "example": {
+        "question": "Explain how an inherited camouflage feature could become more frequent where predators detect exposed individuals.",
+        "steps": [
+          "Start with heritable differences in camouflage in the population.",
+          "Individuals less often detected are more likely to survive to reproduce in the stated setting.",
+          "They contribute more offspring carrying the relevant alleles; the inherited feature becomes more frequent over generations."
+        ],
+        "explanation": "Link the causal stages and name the population change rather than an individual’s intention."
+      },
+      "practice": {
+        "question": "Is “the strongest survive” sufficient to explain natural selection?",
+        "answer": "No. Explain heritable variation, the particular selection pressure, unequal reproductive contribution and inheritance over generations.",
+        "explanation": "Link the causal stages and name the population change rather than an individual’s intention."
+      },
+      "terms": [
+        "natural selection",
+        "heritable variation",
+        "competition",
+        "selection pressure",
+        "reproductive success",
+        "fitness"
+      ],
+      "commonMistakes": [
+        "Do not say an individual evolves a required inherited feature during its lifetime because it needs it."
+      ]
+    },
+    {
+      "id": "selection-counts-frequency",
+      "title": "Separate survivor counts from population proportions",
+      "points": [
+        "3.38",
+        "3.39"
+      ],
+      "paragraphs": [
+        "This original toy population starts with 2 resistant and 18 susceptible bacteria: 20 in total, with a resistant proportion of 2/20 = 10%. The categories concern one specified antibiotic under the stated conditions, not resistance to every treatment.",
+        "Suppose exposure leaves 2 resistant and 2 susceptible survivors. Resistance now accounts for 2/4 = 50%, even though the number of resistant bacteria has not increased. Unequal survival changed the denominator and therefore the proportion.",
+        "In a later drug-free step, suppose every survivor divides once and descendants keep the same resistance category. There are then 4 resistant and 4 susceptible descendants, still 50% resistant. Equal reproduction alone doubled both counts without increasing this proportion further.",
+        "These chosen values are teaching assumptions, not an observed culture or a universal drug response. Real outcomes depend on growth, inhibition, survival, transfer, mutation and conditions. Counts support a descriptive change; they do not alone identify its genetic mechanism."
+      ],
+      "example": {
+        "question": "Calculate resistance proportion at the three stages in the figure.",
+        "steps": [
+          "Initially: 2/(2+18) × 100 = 10%.",
+          "After unequal survival: 2/(2+2) × 100 = 50%.",
+          "After one equal division: 4/(4+4) × 100 = 50%; absolute counts grew but proportion stayed unchanged."
+        ],
+        "explanation": "Use the total at each stage and distinguish a proportion from an absolute count."
+      },
+      "practice": {
+        "question": "An original population changes from 3 resistant of 30 total to 3 resistant of 6 survivors. Give the two percentages.",
+        "answer": "10% initially and 50% among survivors; resistant count stayed 3 while the total fell.",
+        "explanation": "Use the total at each stage and distinguish a proportion from an absolute count."
+      },
+      "terms": [
+        "resistant proportion",
+        "susceptible",
+        "survivor",
+        "denominator",
+        "percentage",
+        "selection"
+      ],
+      "commonMistakes": [
+        "Do not divide survivors by the old total or claim equal division necessarily increases resistance frequency."
+      ],
+      "diagram": {
+        "src": "/diagrams/biology-resistance-selection.svg",
+        "alt": "Original assumed population: 2 resistant plus 18 susceptible before exposure gives 10%; 2 plus 2 survivors gives 50%; equal division gives 4 plus 4, still 50%.",
+        "caption": "Assumed counts, not culture results. Bar lengths show proportions and totals change; equal division preserves the survivor ratio."
+      }
+    },
+    {
+      "id": "antibiotic-selection-inheritance",
+      "title": "Explain how antibiotic resistance spreads",
+      "points": [
+        "3.39"
+      ],
+      "paragraphs": [
+        "A bacterial population can contain genetic variants that resist a particular antibiotic. Mutation can generate such variants before exposure, and bacteria can also acquire resistance genes from other bacteria. Selection and gene transfer are distinct processes.",
+        "Under suitable exposure conditions, susceptible bacteria are killed or their growth is inhibited more than resistant bacteria. Resistant cells can therefore leave a greater share of descendants. Repeated selection can make resistance more common without the drug deliberately creating the required variant.",
+        "When resistant bacteria divide, their descendants can inherit the relevant genetic information. Resistance genes on transferable DNA such as some plasmids can also pass between bacteria by horizontal transfer; inheritance through cell division is vertical transmission.",
+        "Resistance is a property of bacteria relative to the particular antibiotic, not a person’s body becoming immune to medicines. Surviving exposure alone does not prove a heritable resistance mechanism; the population model assumes the stated resistance categories are established."
+      ],
+      "example": {
+        "question": "Contrast cell division and plasmid transfer as routes for a resistance gene.",
+        "steps": [
+          "Cell division passes genetic information to descendants: vertical inheritance.",
+          "Transferable plasmid DNA can carry a gene between bacteria: horizontal transfer.",
+          "Antibiotic exposure can favour bacteria carrying resistance; it is not intentional mutation towards a required outcome."
+        ],
+        "explanation": "Separate the origin, movement and selection of resistance information."
+      },
+      "practice": {
+        "question": "Must every bacterium make the same useful mutation after the antibiotic appears?",
+        "answer": "No. Existing variants can be selected, new mutations are not directed by need, and resistance genes can also be transferred.",
+        "explanation": "Separate the origin, movement and selection of resistance information."
+      },
+      "terms": [
+        "antibiotic resistance",
+        "susceptible bacterium",
+        "selection",
+        "plasmid",
+        "vertical inheritance",
+        "horizontal transfer"
+      ],
+      "commonMistakes": [
+        "Do not say antibiotics train every bacterium or make the patient genetically resistant to the medicine."
+      ]
+    },
+    {
+      "id": "resistance-treatment-limits",
+      "title": "Connect resistance to harder infection control",
+      "points": [
+        "3.39"
+      ],
+      "paragraphs": [
+        "If an infection’s bacteria resist the antibiotic being used, bacterial growth may continue and that medicine can be less effective. Resistance to several antibiotics can reduce the available effective options and make infections harder to control.",
+        "Resistant bacteria can spread between hosts and environments. Selection during antibiotic exposure and the movement of bacteria or resistance genes can therefore affect more than one local population.",
+        "This does not mean every resistant infection is untreatable or that an arbitrary stronger dose will overcome it. Which treatment works depends on the organism, resistance pattern and clinical context; this lesson explains the biological problem rather than prescribing treatment.",
+        "For an exam explanation, connect the inherited resistant variant to survival or continued growth, reproduction, increasing population share and reduced effectiveness of the particular antibiotic. No clinical outcome, resistance prevalence or treatment schedule is invented."
+      ],
+      "example": {
+        "question": "Why can an increased proportion of resistant bacteria make an infection harder to control?",
+        "steps": [
+          "More bacteria can continue growing despite the particular antibiotic.",
+          "They can reproduce and sustain or spread the infection.",
+          "Fewer available medicines may be effective if resistance affects several options; this is not a claim that every option fails."
+        ],
+        "explanation": "State the affected bacteria and medicine, then explain the consequence without inventing a prescription."
+      },
+      "practice": {
+        "question": "Does resistance to one antibiotic automatically mean resistance to all antibiotics?",
+        "answer": "No. Resistance is specific to mechanisms and drugs; resistance to several can occur but is not guaranteed by resistance to one.",
+        "explanation": "State the affected bacteria and medicine, then explain the consequence without inventing a prescription."
+      },
+      "terms": [
+        "infection control",
+        "drug effectiveness",
+        "multidrug resistance",
+        "bacterial spread"
+      ],
+      "commonMistakes": [
+        "Do not turn population biology into a personal treatment instruction or claim all resistant infections are untreatable."
+      ]
+    }
+  ]
+}
