@@ -12,6 +12,7 @@ import part7 from './note-sections/biology-structures/08-human-gas.json' with { 
 import part8 from './note-sections/biology-structures/09-plant-transport.json' with { type: 'json' };
 import part9 from './note-sections/biology-structures/10-human-transport.json' with { type: 'json' };
 import part10 from './note-sections/biology-structures/11-excretion.json' with { type: 'json' };
+import part11 from './note-sections/biology-structures/12-plant-coordination.json' with { type: 'json' };
 export default composeNote(metadata as ChapterNotes, {
   '../note-sections/biology-structures/01-cells.json': part0,
   '../note-sections/biology-structures/02-molecules.json': part1,
@@ -24,4 +25,5 @@ export default composeNote(metadata as ChapterNotes, {
   '../note-sections/biology-structures/09-plant-transport.json': part8,
   '../note-sections/biology-structures/10-human-transport.json': part9,
   '../note-sections/biology-structures/11-excretion.json': part10,
+  '../note-sections/biology-structures/12-plant-coordination.json': part11,
 });
