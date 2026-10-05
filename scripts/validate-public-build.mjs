@@ -26,6 +26,9 @@ const files = filesIn(root);
 const findings = [];
 for (const file of files) {
   const text = readFileSync(file, 'utf8');
+  if (/library-search-[^/]+\.js$/.test(file) && Buffer.byteLength(text) > 250000) {
+    findings.push({ file, label: 'Library search client exceeds 250 kB; check for bundled full note documents' });
+  }
   for (const [label, pattern] of forbidden) {
     if (pattern.test(text)) findings.push({ file, label });
   }

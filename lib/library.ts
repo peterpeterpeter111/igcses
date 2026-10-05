@@ -1,13 +1,7 @@
 import { subjects, type Subject } from '../content/catalog.ts';
 import { getNotes } from '../content/notes.ts';
-export type SearchResult = {
-  title: string;
-  chapter: string;
-  href: string;
-  snippet: string;
-  status: string;
-  score: number;
-};
+import type { SearchResult } from './library-search-contract.ts';
+export type { SearchResult } from './library-search-contract.ts';
 export function normalise(text: string) {
   return text
     .toLowerCase()

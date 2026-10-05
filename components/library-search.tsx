@@ -1,9 +1,9 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Input } from '@/components/ui/input';
 import { getSubject } from '@/content/catalog';
-import { searchLibrary } from '@/lib/library';
+import { queueLibrarySearch, type SearchState } from '@/lib/library-search-client';
 function Highlight({ text, term }: { text: string; term: string }) {
   const at = text.toLowerCase().indexOf(term.trim().toLowerCase());
   return at < 0 || !term.trim() ? (
@@ -24,10 +24,18 @@ export function LibrarySearch({
   className?: string;
 }) {
   const [query, setQuery] = useState('');
+  const [retry, setRetry] = useState(0);
+  const [response, setResponse] = useState<SearchState & { query: string; subjectId: string }>({ status: 'ready', results: [], query: '', subjectId });
+  useEffect(() => {
+    if (!query.trim()) return;
+    return queueLibrarySearch(subjectId, query, (state) => setResponse({ ...state, query, subjectId }));
+  }, [subjectId, query, retry]);
   const subject = getSubject(subjectId)!;
   const inputId = 'subject-search-' + subject.id;
   const labelId = inputId + '-label';
-  const results = searchLibrary(subject, query);
+  const current = response.query === query && response.subjectId === subjectId;
+  const status = current ? response.status : 'loading';
+  const results = current ? response.results : [];
   return (
     <section
       className={className ? 'library-search ' + className : 'library-search'}
@@ -43,13 +51,12 @@ export function LibrarySearch({
         placeholder="A chapter, term or formula…"
         value={query}
         maxLength={120}
-        onChange={(e) => setQuery(e.target.value)}
+        onChange={(e) => setQuery(e.target.value.slice(0, 120))}
       />
       {query.trim() && (
-        <div className="search-results">
+        <div className="search-results" aria-busy={status === 'loading'}>
           <output className="search-count" htmlFor={inputId} aria-live="polite">
-            {results.length} matching{' '}
-            {results.length === 1 ? 'section' : 'sections'}
+            {status === 'loading' ? 'Searching…' : status === 'error' ? 'Search unavailable' : `${results.length} matching ${results.length === 1 ? 'section' : 'sections'}`}
           </output>
           {results.map((r) => (
             <Link className="search-result" href={r.href} key={r.href}>
@@ -64,7 +71,10 @@ export function LibrarySearch({
               </p>
             </Link>
           ))}
-          {!results.length && (
+          {status === 'error' && (
+            <p>Search could not load. <button type="button" onClick={() => setRetry((n) => n + 1)}>Retry search</button></p>
+          )}
+          {status === 'ready' && !results.length && (
             <p>
               Try a shorter term or a chapter title. Unwritten notes cannot
               appear in full-text search.

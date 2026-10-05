@@ -1,3 +1,9 @@
+# Latest phase — Search quality and performance, 5 October 2026
+
+Read research/checkpoints/2026-10-05-SEARCH-QUALITY.md first. The existing full-text algorithm now runs behind the site's own backend; the search browser chunk is12,213bytes instead of1,264,980. Stale requests, retry, cancellation and10second timeout are guarded;143 tests/typecheck/lint/14research/build/84-file scan pass. Desktop Biology and fuzzy Physics search verified. Narrow-screen and final hosted endpoint verification pending. No AI call or curriculum changes.
+
+Totals remain590sections/25partialnotes/36routes;568identities/552partialaudits/1,665localrequirements/815partiallinks. Sevenobtainedpairs/zero processedpapers, completepoints/chapters or activetemplates;sevenexperimentalofflinefamilies. GitHub9741bae mirrors saved8673f57; commit/sync newsearchsource and documents non-force after clean-tree guard. Next own Biologyresources5.1 onward, widercurriculum/historical/skills reviews/calibration. Preserve quality/UI/history; AIlast, noreset/version/deployment/publicURL. Continueabove5%bothallowances,checkpoint/pauseat5%. Earlier entries are historical.
+
 # Latest phase — Ecology cycles and human influences, 5 October 2026
 
 Read `research/checkpoints/2026-10-05-ECOLOGY-CYCLES-INFLUENCES.md` first. Seventeen original partial lessons/one diagram, nine identities4.10–4.18B;4.11B/4.18B only2B. Ecology29 sections with partial links across all18 statements; no chapter/point complete.136 tests,typecheck/lint/14research/content/evidence/isolatedD1/build/84-file scan pass; desktop diagram and exact coverage labels verified. Both Ecology diagrams are now committed; prior untracked-asset omission fixed and source-sync clean-tree guard/regressions added. Narrow preview/client bundle performance pending.

@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-05",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Focused existing subject-search quality, performance, lifecycle and endpoint review; curriculum counts unchanged.",
+  "problem": "Client search imported all six subjects of note text.",
+  "solution": "Existing deterministic algorithm behind same-origin backend; only matching public teaching returned.",
+  "clientChunk": {
+    "beforeBytes": 1264980,
+    "beforeGzipBytes": 384175,
+    "afterBytes": 12213,
+    "afterGzipBytes": 5274,
+    "maxBudgetBytes": 250000
+  },
+  "checks": [
+    "All six subject filters and existing anchor/ranking behaviour",
+    "One query/subject,120-character bound, at most30 results and no-store",
+    "180ms debounce, stale success/failure and unmount guards",
+    "10second dispatched-request timeout, abort and visible retry",
+    "Malformed/wrong-subject/executable destinations rejected",
+    "No private papers/templates or AI provider call"
+  ],
+  "browser": {
+    "biologyQuery": "nitrification",
+    "biologyResults": 4,
+    "exactAnchor": "/subjects/biology/ecology#nitrogen-nitrification",
+    "unmatchedAndClear": "pass",
+    "physicsMisspelling": "refracton",
+    "physicsResults": 5,
+    "screenshot": "work/biology-backend-search-proof-2026-10-05.png",
+    "narrow": "Pending; previous viewport override ineffective."
+  },
+  "verification": {
+    "applicationTests": 143,
+    "newTests": 7,
+    "typecheck": "pass",
+    "lint": "pass",
+    "researchChecks": 14,
+    "productionBuild": "pass",
+    "largeClientChunkWarning": false,
+    "publicFiles": 84,
+    "publicFindings": [],
+    "contentEvidenceD1": "Unchanged from verified preceding Ecology phase."
+  },
+  "limitations": [
+    "Search now needs the existing backend server; final hosted endpoint verification still required.",
+    "Focused review does not certify every lesson.",
+    "Narrow responsive verification pending.",
+    "No curriculum/paper/template completion promotion."
+  ],
+  "completeChapters": 0,
+  "completePoints": 0,
+  "fullyProcessedPapers": 0,
+  "activeTemplates": 0,
+  "aiIntegration": "Deferred to final pre-deployment phase",
+  "deployment": "No Sites version or verified public URL."
+}
