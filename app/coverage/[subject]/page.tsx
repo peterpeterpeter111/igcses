@@ -70,7 +70,7 @@ export default async function SubjectCoverage({
                 {!r.extraction.wholePageAudit && <p className="status">
                   Detailed review covers {r.extraction.questionPaperPages} question-paper pages
                   and {r.extraction.markSchemePages} scheme pages. The original text index
-                  is preserved; the whole-paper visual inventory and mark reconciliation remain incomplete.
+                  is preserved. {r.index ? 'The separate whole-paper visual inventory is complete; detailed review remains incomplete.' : 'The whole-paper visual inventory and mark reconciliation remain incomplete.'}
                 </p>}
                 <details>
                   <summary>Remaining processing gaps</summary>
@@ -92,11 +92,10 @@ export default async function SubjectCoverage({
             )}
             {r.index && (
               <p className="status">
-                Text index: {r.index.textTasks} numbered parts. Visual
+                {r.index.textTasks !== null && <>Text index: {r.index.textTasks} numbered parts. </>}Visual
                 inventory: {r.index.visualTasks} parts and{' '}
                 {r.index.reconciledMarks} marks reconciled across all{' '}
-                {r.index.questionPaperPages} paper pages (including the equation
-                booklet) and {r.index.markSchemePages} scheme pages.{' '}
+                {r.index.questionPaperPages} paper pages{r.index.hasEquationBooklet ? ' (including the equation booklet)' : ''} and {r.index.markSchemePages} scheme pages.{' '}
                 {r.index.sourceDiscrepancies} source discrepancies recorded for
                 review. This page audit does not mean all parts have detailed
                 solutions or validated templates. AI review; no human review.

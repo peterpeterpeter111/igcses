@@ -46,3 +46,7 @@ Every extracted leaf task must reference the paper's verified scheme and a curre
 - Show notes drafted, source-checked and human-reviewed independently. No chapters are complete today.
 - Keep syllabus coverage and exam-family coverage separate. A missing past-paper example does not remove a required syllabus point.
 - Show the inventory cutoff, searched sites and outstanding gaps alongside every aggregate. Do not imply an exhaustive denominator while reconciliation is unfinished.
+
+## Human Biology structural inventory — 5 October 2026
+
+The obtained 4HB1/01 pair has a separate full visual inventory: 42 leaves / 90 marks. In papers.csv, `reconciled_marks` means original mark allocations reconcile, and `complete_page_audit` means all source pages have been seen structurally. Neither means every rubric, solution, mapping or template is complete. `extracted_leaf_tasks` is 11; stage remains indexed. The 31 index-only tasks have no invented knowledge, solution, rubric or mappings. The extraction overlay retains its narrower Q1–Q2 detailed page audit and false whole-detailed marks reconciliation. Legacy raw batches remain unchanged.

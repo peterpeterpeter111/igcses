@@ -1,6 +1,6 @@
-"""Normalize the bounded, visually reviewed 4HB1 Q1–Q2 subset only.
+"""Normalize the full visual 4HB1 inventory and detailed Q1–Q2 subset.
 
-No full leaf inventory exists. Unknown expected/indexed counts stay blank, the
+Structural inventory is42parts/90marks; only11parts/23marks are detailed. The
 paper stays indexed, and an any-two-of-three rubric retains its distinct cap.
 All evidence/table validation happens before any write. Raw manifests are read.
 """
@@ -16,6 +16,10 @@ OVERLAY = 'research/extractions/' + PAPER + '.json'
 INVENTORY = 'research/syllabus/4HB1-selected-q1-demands.json'
 Q2_INVENTORY = 'research/syllabus/4HB1-selected-q2-demands.json'
 SKILLS = 'research/syllabus-skills/4HB1-issue2-selected.json'
+INDEX = 'research/paper-indexes/4HB1-2024-summer-01.json'
+# Independent reviewed leaf allocations; index records must not supply their own denominator.
+INDEX_ALLOCATIONS = '1.a.i:1:2:4 1.a.ii:1:2:4 1.b.i:2:3:4 1.b.ii:2:3:4 1.b.iii:2:4:4 1.c.i:1:5:4 1.c.ii:2:5:4 1.c.iii:1:5:4 2.a.i:4:6:5 2.a.ii:1:7:5 2.b:6:7:5 3.a.i:1:8:6 3.a.ii:1:8:6 3.a.iii:1:8:6 3.b.i:1:8:6 3.b.ii:1:9:6 3.c:4:9:6 4.a.i:3:10:7 4.a.ii:1:11:7 4.b.i:1:11:7 4.b.ii:4:11:7 5.a.i:5:12:8 5.a.ii:1:13:8 5.b:4:13:8 6.a.i:2:15:9 6.a.ii:2:15:9 6.a.iii:2:15:9 6.b:5:16:9 6.c:2:17:9 7.a:4:18:10 7.b:2:18:10 7.c.i:1:19:10 7.c.ii:1:19:10 7.c.iii:1:19:10 8.a.i:2:20:11 8.a.ii:2:21:11 8.a.iii:1:21:11 8.b:2:21:11 9.a.i:2:22:11 9.a.ii:5:22:11 9.b.i:2:23:11 9.b.ii:1:23:11'
+INDEX_EXPECTED = {path: (int(marks), [int(qp)], [int(ms)]) for path, marks, qp, ms in (item.split(':') for item in INDEX_ALLOCATIONS.split())}
 EXPECTED = {
     '1.a.i': (1, [2]), '1.a.ii': (1, [2]),
     '1.b.i': (2, [3]), '1.b.ii': (2, [3]), '1.b.iii': (2, [4]),
@@ -60,7 +64,7 @@ def prepare(root=ROOT):
     m = read(OVERLAY)
     require(m['paperId'] == PAPER and m['qualification'] == '4HB1', 'Wrong bounded paper')
     require(m['paperStage'] == 'indexed' and m['fullyProcessed'] is False and m['humanReviewed'] is False and m['marksReconciled'] is False, 'No whole-paper or human promotion')
-    require(m['wholePaperLeafCount'] is None and m['wholePaperMarks'] == 90 and m['reviewedSubsetMarksReconciled'] is True, 'Unknown whole inventory must remain unknown')
+    require(m['wholePaperLeafCount'] == 42 and m['wholePaperMarks'] == 90 and m['reviewedSubsetMarksReconciled'] is True and m['inventoryMarksReconciled'] is True and m['visualInventoryRef'] == INDEX, 'Structural and detailed scopes must stay separate')
     require(m['detailedLeafTasks'] == 11 and m['detailedOriginalMarks'] == 23 and m['reviewedQuestionTotals'] == {'1': 12, '2': 11}, 'Wrong Q1–Q2 subset counts')
     require(m['rawManifestRef'] == 'research/batches/2026-09-08-cross-subject-lower-01.manifest.json'
             and m['coverReviewRef'] == 'research/reviews/2026-09-09-cover-review.json', 'Unexpected evidence authority')
@@ -81,6 +85,29 @@ def prepare(root=ROOT):
         require(doc['id'] == PAPER + ':' + key and doc['sha256'] == source['sha256'] == cover[key + 'Sha256'] and doc['url'] == source['url'] and doc['pageCount'] == source['pageCount'], 'Document identity/hash metadata mismatch')
         require(audit['visuallyReviewedPages'] == expected_pages and audit['wholeDocumentReviewed'] is False, 'Bounded visual audit drift')
         require(pages_valid(expected_pages, doc['pageCount']), 'Invalid audit pages')
+    index = read(INDEX)
+    require(index['paperId'] == PAPER and index['qualification'] == '4HB1' and index['questionPaperSha256'] == qp['sha256'] and index['markSchemeSha256'] == ms['sha256'], 'Visual index source mismatch')
+    require(index['indexedLeafCount'] == 42 and index['indexedOriginalMarks'] == 90 and index['questionCount'] == 9 and index['allCompulsory'] is True and index['fullyProcessed'] is False and index['humanReviewed'] is False and index['visualPageAuditComplete'] is True, 'Index status/count drift')
+    require(index['questionPaperVisualPages'] == list(range(1, 25)) and index['markSchemeVisualPages'] == list(range(1, 13)) and index['blankQuestionPaperPages'] == [14, 24] and index['nonTaskSchemePages'] == [1, 2, 3, 12], 'Incomplete structural page audit')
+    match = index['paperMatch']
+    require(match == dict(questionPaperLog='P74626RA', schemePaperLog='P74626RA', schemePublicationCode='4HB1_01_2406_MS', questionPaperEvidencePages=[1], schemeEvidencePages=[1, 2], printedDate='2024-05-14', filenameDate='2024-05-15', dateConflictPreserved=True, variant='unresolved'), 'Paper log/date match drift')
+    for field in ['rawManifestRef', 'rawManifestSha256', 'coverReviewRef', 'coverReviewSha256']:
+        require(index[field] == m[field], 'Historical index reference drift')
+    leaves = index['tasks']
+    require(len(leaves) == 42 and len({t['taskId'] for t in leaves}) == 42 and {t['questionPath'] for t in leaves} == set(INDEX_EXPECTED), 'Missing/duplicate indexed leaves')
+    for leaf in leaves:
+        path = leaf['questionPath']; marks, pages, scheme_pages = INDEX_EXPECTED[path]
+        require(leaf['taskId'] == PAPER + '.Q' + path and leaf['paperId'] == PAPER and leaf['recordKind'] == 'leaf' and type(leaf['originalMarks']) is int and leaf['originalMarks'] == marks and leaf['questionPaperPages'] == pages and leaf['markSchemePages'] == scheme_pages, 'Indexed allocation/page mismatch')
+        stimulus = {'1.b.iii': [3, 4], '2.a.ii': [6, 7], '3.b.ii': [8, 9], '4.a.ii': [10, 11], '5.a.ii': [12, 13], '6.b': [15, 16], '8.a.ii': [20, 21], '8.a.iii': [20, 21]}.get(path, pages)
+        require(leaf['stimulusRefs'] == [dict(documentId=qp['id'], pdfPages=stimulus)] and leaf['commandWord'] and leaf['contextSummary'], 'Indexed stimulus/label mismatch')
+        require(leaf['extractionStatus'] == ('source-checked' if path in EXPECTED else 'indexed-only'), 'Structural index cannot promote detailed extraction')
+        require(not any(key in leaf for key in ['criteria', 'solutionStructure', 'syllabusMappings', 'assessmentObjectives']), 'Index must not invent detailed fields')
+    expected_totals = [(8, 12, 5, 4), (3, 11, 7, 5), (6, 9, 9, 6), (4, 9, 11, 7), (3, 10, 13, 8), (5, 13, 17, 9), (5, 9, 19, 10), (4, 7, 21, 11), (4, 10, 23, 11)]
+    require(index['questionTotals'] == [dict(question=q, parts=n, marks=marks, questionPaperTotalPage=page, markSchemeTotalPage=ms_page) for q, (n, marks, page, ms_page) in enumerate(expected_totals, 1)], 'Question total source drift')
+    for total in index['questionTotals']:
+        subset = [t for t in leaves if t['questionPath'].split('.')[0] == str(total['question'])]
+        require(len(subset) == total['parts'] and sum(t['originalMarks'] for t in subset) == total['marks'], 'Question allocation reconciliation failed')
+    require(sum(t['originalMarks'] for t in leaves) == 90 and len(index['sourceDiscrepancies']) == 2 and len(index['reuseQualifications']) == 4 and index['blockers'], 'Inventory gates/sum mismatch')
     spec = m['currentSpecification']
     inv = read(INVENTORY)
     source = next(s for s in read('research/sources.json') if s['id'] == '4HB1-spec')
@@ -139,14 +166,21 @@ def prepare(root=ROOT):
     common = dict(reviewed_by=m['reviewer'], reviewer_type='agent', human_reviewed='false', batch_id='human-detailed-' + date, updated_at=date)
     documents = []
     for key, doc in [('questionPaper', qp), ('markScheme', ms)]:
-        pages = sorted(set(m['pageAudit'][key]['visuallyReviewedPages'] + cover['reviewedPages'][key]))
-        documents.append(dict(document_id=doc['id'], qualification='4HB1', document_type=doc['type'], canonical_url=doc['url'], title='4HB1/01 Summer 2024 ' + doc['type'], publisher='Pearson', year=2024, series=identity['series'], component='01', variant='unresolved', printed_exam_date=identity['printedDate'] if key == 'questionPaper' else '', filename_date=identity['filenameDate'] if key == 'questionPaper' else '', sha256=doc['sha256'], page_count=doc['pageCount'], access_status='obtained', local_evidence_path=OVERLAY, reviewed_pages_json=compact([dict(page=p, mode='visual', reviewer=m['reviewer'] if p != 1 else 'Codex cover visual review', date=date if p != 1 else '2026-09-09') for p in pages]), identity_status='agent-reviewed', identity_notes='Original legacy ID retained; printed date differs from filename. Variant remains unresolved. Only Q1–Q2 matched to scheme.', batch_id=common['batch_id'], updated_at=date))
-    papers = [dict(paper_id=PAPER, qualification='4HB1', year=2024, series=identity['series'], component='01', variant='unresolved', qp_document_id=qp['id'], ms_document_id=ms['id'], insert_document_ids_json='[]', examiner_report_ids_json='[]', report_status=m['examinerReportStatus'], target_specification_id=spec['documentId'], applicability_status='partial-current-scope-review', stage='indexed', last_successful_stage='indexed', expected_leaf_tasks='', indexed_leaf_tasks='', extracted_leaf_tasks=11, assessed_marks=90, all_alternatives_marks='', option_rules_json='[]', reconciled_marks='false', scheme_match_status='matched-Q1-Q2-only', complete_page_audit='false', template_links_complete='false', blocking_issues_json=compact(m['blockers']), reviewed_at=date, **common)]
+        pages = index[key + 'VisualPages']
+        documents.append(dict(document_id=doc['id'], qualification='4HB1', document_type=doc['type'], canonical_url=doc['url'], title='4HB1/01 Summer 2024 ' + doc['type'], publisher='Pearson', year=2024, series=identity['series'], component='01', variant='unresolved', printed_exam_date=identity['printedDate'] if key == 'questionPaper' else '', filename_date=identity['filenameDate'] if key == 'questionPaper' else '', sha256=doc['sha256'], page_count=doc['pageCount'], access_status='obtained', local_evidence_path=OVERLAY, reviewed_pages_json=compact([dict(page=p, mode='visual', reviewer=m['reviewer'] if p != 1 else 'Codex cover visual review', date=date if p != 1 else '2026-09-09') for p in pages]), identity_status='agent-reviewed', identity_notes='Original legacy ID retained; printed date differs from filename. Variant remains unresolved. Full structural inventory matched by paper log; only Q1–Q2 detailed.', batch_id=common['batch_id'], updated_at=date))
+    papers = [dict(paper_id=PAPER, qualification='4HB1', year=2024, series=identity['series'], component='01', variant='unresolved', qp_document_id=qp['id'], ms_document_id=ms['id'], insert_document_ids_json='[]', examiner_report_ids_json='[]', report_status=m['examinerReportStatus'], target_specification_id=spec['documentId'], applicability_status='partial-current-scope-review', stage='indexed', last_successful_stage='indexed', expected_leaf_tasks=42, indexed_leaf_tasks=42, extracted_leaf_tasks=11, assessed_marks=90, all_alternatives_marks=90, option_rules_json=compact(dict(mode='all-compulsory', sourcePages=[1])), reconciled_marks='true', scheme_match_status='matched-visual-inventory-Q1-Q2-detailed', complete_page_audit='true', template_links_complete='false', blocking_issues_json=compact(m['blockers']), reviewed_at=date, **common)]
     task_rows, mappings = [], []
     for t in tasks:
         task_rows.append(dict(task_id=t['taskId'], paper_id=PAPER, question_path=t['questionPath'], record_kind='leaf', qp_pages_json=compact(t['questionPaperPages']), stimulus_refs_json=compact(t['stimulusRefs']), scheme_pages_json=compact(t['markSchemePages']), command_word=t['commandWord'], original_marks=t['originalMarks'], assessment_objectives_json='[]', required_knowledge='; '.join(t['requiredKnowledge']), context_summary=t['contextSummary'], stimulus_types_json=compact(t['stimulusTypes']), solution_structure_json=compact(t['solutionStructure']), marking_method=t['markingMethod'], rubric_ref=OVERLAY + '#' + t['taskId'], acceptable_alternatives_json=compact(t['acceptableAlternatives']), dependencies_json=compact(t['dependencies']), common_errors_json=compact(t['commonErrors']), report_refs_json='[]', extraction_status='source-checked', mapping_status='agent-reviewed-partial-current-scope', review_status='agent-reviewed', blocker='; '.join(t['blockers']), **common))
         for mapping in t['syllabusMappings']:
             mappings.append(dict(mapping_id=t['taskId'] + ':' + mapping['pointId'], task_id=t['taskId'], point_id=mapping['pointId'], mapping_kind=mapping['kind'], current_applicability=mapping['currentApplicability'], evidence_refs_json=compact(mapping['evidenceRefs']), rationale=mapping['rationale'], review_status='agent-reviewed', reviewed_by=m['reviewer'], reviewer_type='agent', updated_at=date))
+    detailed_ids = {t['taskId'] for t in tasks}
+    for leaf in leaves:
+        if leaf['taskId'] in detailed_ids:
+            detailed = next(t for t in tasks if t['taskId'] == leaf['taskId'])
+            require(all(leaf[k] == detailed[k] for k in ['originalMarks', 'questionPaperPages', 'markSchemePages', 'stimulusRefs', 'commandWord', 'contextSummary']), 'Detailed/index record disagreement')
+            continue
+        task_rows.append(dict(task_id=leaf['taskId'], paper_id=PAPER, question_path=leaf['questionPath'], record_kind='leaf', qp_pages_json=compact(leaf['questionPaperPages']), stimulus_refs_json=compact(leaf['stimulusRefs']), scheme_pages_json=compact(leaf['markSchemePages']), command_word=leaf['commandWord'], original_marks=leaf['originalMarks'], assessment_objectives_json='[]', required_knowledge='', context_summary=leaf['contextSummary'], stimulus_types_json='[]', solution_structure_json='[]', marking_method='', rubric_ref='', acceptable_alternatives_json='[]', dependencies_json='[]', common_errors_json='[]', report_refs_json='[]', extraction_status='indexed-only', mapping_status='not-started', review_status='agent-reviewed-structural-only', blocker='Detailed extraction, rubric and syllabus/skill/AO mapping pending; not a processed task.', **common))
     outputs = {}
     for name, key, incoming in [('documents', 'document_id', documents), ('papers', 'paper_id', papers), ('tasks', 'task_id', task_rows), ('task-mappings', 'mapping_id', mappings)]:
         path = root / 'research/ledger/v1' / (name + '.csv')
@@ -172,7 +206,7 @@ def export(root=ROOT):
     outputs = prepare(root)
     for path, content in outputs.items():
         path.write_text(content)
-    return dict(detailedTasks=11, detailedMarks=23, fullyProcessedPapers=0, activeTemplates=0)
+    return dict(indexedTasks=42, indexedMarks=90, detailedTasks=11, detailedMarks=23, fullyProcessedPapers=0, activeTemplates=0)
 
 
 if __name__ == '__main__':

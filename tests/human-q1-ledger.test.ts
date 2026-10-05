@@ -8,14 +8,14 @@ import csv,json,tempfile,shutil,runpy
 from pathlib import Path
 source=Path.cwd();api=runpy.run_path(str(source/'scripts/export-human-q1.py'))
 def copy(root):
- for folder in ['research/extractions','research/syllabus','research/syllabus-skills','research/ledger/v1','research/batches','research/reviews']:
+ for folder in ['research/extractions','research/paper-indexes','research/syllabus','research/syllabus-skills','research/ledger/v1','research/batches','research/reviews']:
   shutil.copytree(source/folder,root/folder)
  shutil.copy(source/'research/sources.json',root/'research/sources.json')
 def rows(root,name):
  with (root/'research/ledger/v1'/ (name+'.csv')).open(newline='') as f:return list(csv.DictReader(f))
 `;
 
-void test('Human Q1–Q2 export preserves unknown totals, rubric caps and unrelated/historical evidence', () => {
+void test('Human Q1–Q2 export separates complete inventory from partial detail and preserves, rubric caps and unrelated/historical evidence', () => {
   const result = JSON.parse(
     execFileSync(
       'python3',
@@ -36,10 +36,13 @@ with tempfile.TemporaryDirectory() as d:
  allowed={Path('research/ledger/v1')/(n+'.csv') for n in unrelated}
  assert all((root/p).read_bytes()==v for p,v in before.items() if p not in allowed)
  paper=next(r for r in rows(root,'papers') if r['paper_id']==api['PAPER'])
- assert paper['stage']=='indexed' and paper['expected_leaf_tasks']==paper['indexed_leaf_tasks']==''
- assert paper['reconciled_marks']==paper['complete_page_audit']==paper['template_links_complete']=='false'
+ assert paper['stage']=='indexed' and paper['expected_leaf_tasks']==paper['indexed_leaf_tasks']=='42'
+ assert paper['reconciled_marks']==paper['complete_page_audit']=='true' and paper['template_links_complete']=='false'
  tasks=[r for r in rows(root,'tasks') if r['paper_id']==api['PAPER']]
- assert len(tasks)==11 and sum(int(t['original_marks']) for t in tasks)==23
+ assert len(tasks)==42 and sum(int(t['original_marks']) for t in tasks)==90
+ detailed=[t for t in tasks if t['extraction_status']=='source-checked'];indexed=[t for t in tasks if t['extraction_status']=='indexed-only']
+ assert len(detailed)==11 and sum(int(t['original_marks']) for t in detailed)==23
+ assert len(indexed)==31 and all(t['required_knowledge']==t['marking_method']==t['rubric_ref']=='' and json.loads(t['solution_structure_json'])==[] and t['mapping_status']=='not-started' for t in indexed)
  m=json.loads((root/api['OVERLAY']).read_text())
  assert sum(sum(c['marks'] for c in t['criteria']) for t in m['tasks'])==24
  assert sum(api['rubric_maximum'](t) for t in m['tasks'])==23
@@ -53,12 +56,14 @@ with tempfile.TemporaryDirectory() as d:
       { encoding: 'utf8' },
     ),
   );
+  assert.equal(result.indexedTasks, 42);
+  assert.equal(result.indexedMarks, 90);
   assert.equal(result.detailedTasks, 11);
   assert.equal(result.detailedMarks, 23);
   assert.equal(result.fullyProcessedPapers, 0);
 });
 
-void test('Human Q1–Q2 rejects completion, unknown-count and source/rubric changes before any table write', () => {
+void test('Human Q1–Q2 rejects completion, inventory and source/rubric changes before any table write', () => {
   const result = JSON.parse(
     execFileSync(
       'python3',
@@ -67,7 +72,7 @@ void test('Human Q1–Q2 rejects completion, unknown-count and source/rubric cha
         setup +
           `
 cases=[]
-for mode in ['stage','human','whole-count','whole-marks','whole-pages','hash','task-page','task-duplicate','criteria-duplicate','cap','any-two-mode','eligibility','ao','activation','practical-mapping','shared-stimulus','stale-row','graph-cap','graph-exclusion','gap-order','skill-source']:
+for mode in ['stage','human','whole-count','whole-marks','whole-pages','hash','task-page','task-duplicate','criteria-duplicate','cap','any-two-mode','eligibility','ao','activation','practical-mapping','shared-stimulus','stale-row','graph-cap','graph-exclusion','gap-order','skill-source','index-missing','index-mark','index-blank','index-pages','index-stimulus','index-promoted','index-solution','index-paperlog']:
  with tempfile.TemporaryDirectory() as d:
   root=Path(d);copy(root);p=root/api['OVERLAY'];m=json.loads(p.read_text());t=m['tasks'][3]
   if mode=='stage':m['paperStage']='extracted'
@@ -94,6 +99,17 @@ for mode in ['stage','human','whole-count','whole-marks','whole-pages','hash','t
    path=root/'research/ledger/v1/tasks.csv';data=rows(root,'tasks');stale=dict(data[0]);stale['task_id']=api['PAPER']+'.Q9';stale['paper_id']=api['PAPER'];data.append(stale)
    with path.open('w',newline='') as f:
     writer=csv.DictWriter(f,list(stale),lineterminator='\\n');writer.writeheader();writer.writerows(data)
+  if mode.startswith('index-'):
+   ip=root/api['INDEX'];index=json.loads(ip.read_text())
+   if mode=='index-missing':index['tasks'].pop()
+   elif mode=='index-mark':index['tasks'][-1]['originalMarks']=2
+   elif mode=='index-blank':index['blankQuestionPaperPages']=[24]
+   elif mode=='index-pages':index['markSchemeVisualPages'].pop()
+   elif mode=='index-stimulus':index['tasks'][15]['stimulusRefs'][0]['pdfPages']=[9]
+   elif mode=='index-promoted':index['tasks'][-1]['extractionStatus']='source-checked'
+   elif mode=='index-solution':index['tasks'][-1]['solutionStructure']=['invented']
+   elif mode=='index-paperlog':index['paperMatch']['schemePaperLog']='OTHER'
+   ip.write_text(json.dumps(index))
   p.write_text(json.dumps(m))
   before={p:p.read_bytes() for p in (root/'research/ledger/v1').rglob('*') if p.is_file()}
   try:api['export'](root)
@@ -106,18 +122,22 @@ print(json.dumps(cases))
       { encoding: 'utf8' },
     ),
   );
-  assert.equal(result.length, 21);
+  assert.equal(result.length, 29);
 });
 
-void test('coverage presents Human Q1 as an eleven-part subset, with no invented whole-paper denominator', () => {
+void test('coverage separates Human visual inventory from detailed subset', () => {
   const rows = subjectEvidence('4HB1');
   assert.equal(rows.length, 1);
   const detail = rows[0].extraction!;
   assert.equal(detail.detailedTasks, 11);
   assert.equal(detail.originalMarks, 23);
-  assert.equal(detail.expectedTasks, null);
+  assert.equal(detail.expectedTasks, 42);
   assert.equal(detail.wholePageAudit, false);
   assert.deepEqual(detail.reviewedQuestions, ['1', '2']);
-  assert.equal(rows[0].index, null);
+  assert.equal(rows[0].index?.visualTasks, 42);
+  assert.equal(rows[0].index?.reconciledMarks, 90);
+  assert.equal(rows[0].index?.questionPaperPages, 24);
+  assert.equal(rows[0].index?.markSchemePages, 12);
+  assert.equal(rows[0].index?.hasEquationBooklet, false);
   assert.equal(evidenceHighlights.activeFamilies, 0);
 });

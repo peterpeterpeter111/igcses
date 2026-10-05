@@ -6,6 +6,7 @@ import candidates from '../research/coverage.json' with { type: 'json' };
 import batch from '../research/batches/2026-09-08-cross-subject-lower-01.manifest.json' with { type: 'json' };
 import covers from '../research/reviews/2026-09-09-cover-review.json' with { type: 'json' };
 import physicsExtraction from '../research/extractions/4PH1-2024-June-1-standard.json' with { type: 'json' };
+import humanIndex from '../research/paper-indexes/4HB1-2024-summer-01.json' with { type: 'json' };
 import humanExtraction from '../research/extractions/4HB1-2024-May-01-standard.json' with { type: 'json' };
 import physicsIndex from '../research/reviews/2026-09-10-physics-leaf-index.json' with { type: 'json' };
 import physicsVisualAudit from '../research/reviews/2026-09-10-physics-visual-audit.json' with { type: 'json' };
@@ -102,6 +103,7 @@ export function subjectEvidence(code: string) {
           r.paperId === physicsIndex.paperId
             ? {
                 textTasks: physicsIndex.indexedLeafCount,
+                hasEquationBooklet: true,
                 visualTasks: physicsVisualAudit.verifiedLeafCount,
                 reconciledMarks: physicsVisualAudit.reconciledMarks,
                 questionPaperPages: physicsVisualAudit.questionPaper.length,
@@ -113,7 +115,17 @@ export function subjectEvidence(code: string) {
                   ),
                 ]).size,
               }
-            : null,
+            : r.paperId === humanIndex.paperId
+              ? {
+                  textTasks: null,
+                  hasEquationBooklet: false,
+                  visualTasks: humanIndex.indexedLeafCount,
+                  reconciledMarks: humanIndex.indexedOriginalMarks,
+                  questionPaperPages: humanIndex.questionPaperVisualPages.length,
+                  markSchemePages: humanIndex.markSchemeVisualPages.length,
+                  sourceDiscrepancies: humanIndex.sourceDiscrepancies.length,
+                }
+              : null,
         extraction: detail
           ? {
               detailedTasks: detail.detailedLeafTasks,
