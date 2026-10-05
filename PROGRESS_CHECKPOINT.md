@@ -1,3 +1,7 @@
+# Latest phase — Human Biology Q2, 5 October 2026
+
+Read research/checkpoints/2026-10-05-HUMAN-Q2.md first. Human11partial Q1–Q2parts/23marks; unknownwholeleaf count, indexed stage, rawmanifestunchanged. Graphconcessionmax3 and sixordered gaps retained privately; twoidentity/twoskillrefsadded.124tests/typecheck/lint/14research/content/evidence/isolatedD1/finalbuild/67-filepublicscan pass.387sections/19partialnotes,422parents/407audits/1125requirements/576links;7obtained/0processed/completepoints/chapters,6experimental/0active. GitHubeb69e06 mirrorslocal239366a;syncnewerphase non-force. Continue fullHumanleaf/pageinventory,Q3–Q9,curriculum/calibration above5%bothwindows. AIlast;noreset/version/deployment. Olderentrieshistorical.
+
 # Latest phase — Human Biology Q1, 5 October 2026
 
 Read research/checkpoints/2026-10-05-HUMAN-Q1.md first. Eight partial source-checked Q1parts/12marks; unknown wholeleaf count, paper indexed, rawbatchunchanged. Four own-spec identities added without teaching links. Explicitany2of3cap/sourcepractical restrictions.124tests/typecheck/lint/14research/content/evidence/isolatedD1/build/67-file public scan pass.387sections/19partial notes,420parents/407audits/1125requirements/576links;7obtained pairs,0processed/completechapters/points,6experimental/0active. GitHubf5d5651 mirrorslocal336f3e0;syncnewer phase non-force. Continue HumanQ2–Q9,curriculum/calibration above5%bothwindows. AIlast;noreset/version/deployment. Older entries historical.

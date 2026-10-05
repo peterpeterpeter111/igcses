@@ -8,14 +8,14 @@ import csv,json,tempfile,shutil,runpy
 from pathlib import Path
 source=Path.cwd();api=runpy.run_path(str(source/'scripts/export-human-q1.py'))
 def copy(root):
- for folder in ['research/extractions','research/syllabus','research/ledger/v1','research/batches','research/reviews']:
+ for folder in ['research/extractions','research/syllabus','research/syllabus-skills','research/ledger/v1','research/batches','research/reviews']:
   shutil.copytree(source/folder,root/folder)
  shutil.copy(source/'research/sources.json',root/'research/sources.json')
 def rows(root,name):
  with (root/'research/ledger/v1'/ (name+'.csv')).open(newline='') as f:return list(csv.DictReader(f))
 `;
 
-void test('Human Q1 export preserves unknown totals, rubric caps and unrelated/historical evidence', () => {
+void test('Human Q1–Q2 export preserves unknown totals, rubric caps and unrelated/historical evidence', () => {
   const result = JSON.parse(
     execFileSync(
       'python3',
@@ -39,10 +39,10 @@ with tempfile.TemporaryDirectory() as d:
  assert paper['stage']=='indexed' and paper['expected_leaf_tasks']==paper['indexed_leaf_tasks']==''
  assert paper['reconciled_marks']==paper['complete_page_audit']==paper['template_links_complete']=='false'
  tasks=[r for r in rows(root,'tasks') if r['paper_id']==api['PAPER']]
- assert len(tasks)==8 and sum(int(t['original_marks']) for t in tasks)==12
+ assert len(tasks)==11 and sum(int(t['original_marks']) for t in tasks)==23
  m=json.loads((root/api['OVERLAY']).read_text())
- assert sum(sum(c['marks'] for c in t['criteria']) for t in m['tasks'])==13
- assert sum(api['rubric_maximum'](t) for t in m['tasks'])==12
+ assert sum(sum(c['marks'] for c in t['criteria']) for t in m['tasks'])==24
+ assert sum(api['rubric_maximum'](t) for t in m['tasks'])==23
  any_two=next(t for t in m['tasks'] if t['questionPath']=='1.b.ii')
  assert len(any_two['criteria'])==3 and api['rubric_maximum'](any_two)==2
  assert all(json.loads(t['assessment_objectives_json'])==[] for t in tasks)
@@ -53,12 +53,12 @@ with tempfile.TemporaryDirectory() as d:
       { encoding: 'utf8' },
     ),
   );
-  assert.equal(result.detailedTasks, 8);
-  assert.equal(result.detailedMarks, 12);
+  assert.equal(result.detailedTasks, 11);
+  assert.equal(result.detailedMarks, 23);
   assert.equal(result.fullyProcessedPapers, 0);
 });
 
-void test('Human Q1 rejects completion, unknown-count and source/rubric changes before any table write', () => {
+void test('Human Q1–Q2 rejects completion, unknown-count and source/rubric changes before any table write', () => {
   const result = JSON.parse(
     execFileSync(
       'python3',
@@ -67,7 +67,7 @@ void test('Human Q1 rejects completion, unknown-count and source/rubric changes 
         setup +
           `
 cases=[]
-for mode in ['stage','human','whole-count','whole-marks','whole-pages','hash','task-page','task-duplicate','criteria-duplicate','cap','any-two-mode','eligibility','ao','activation','practical-mapping','shared-stimulus','stale-row']:
+for mode in ['stage','human','whole-count','whole-marks','whole-pages','hash','task-page','task-duplicate','criteria-duplicate','cap','any-two-mode','eligibility','ao','activation','practical-mapping','shared-stimulus','stale-row','graph-cap','graph-exclusion','gap-order','skill-source']:
  with tempfile.TemporaryDirectory() as d:
   root=Path(d);copy(root);p=root/api['OVERLAY'];m=json.loads(p.read_text());t=m['tasks'][3]
   if mode=='stage':m['paperStage']='extracted'
@@ -86,6 +86,10 @@ for mode in ['stage','human','whole-count','whole-marks','whole-pages','hash','t
   elif mode=='activation':t['templateLinkStatus']='active'
   elif mode=='practical-mapping':m['tasks'][5]['syllabusMappings'][0]['kind']='primary'
   elif mode=='shared-stimulus':m['tasks'][4]['stimulusRefs'][0]['pdfPages']=[4]
+  elif mode=='graph-cap':m['tasks'][8]['graphScoring']['sourceConcession']['maximum']=4
+  elif mode=='graph-exclusion':m['tasks'][8]['graphScoring']['sourceConcession']['eligibleCriterionIds'].append(m['tasks'][8]['criteria'][3]['id'])
+  elif mode=='gap-order':m['tasks'][10]['orderedGapRubric']['answers'].reverse()
+  elif mode=='skill-source':m['tasks'][8]['skillMappings'][0]['evidenceRefs'][0]['pdfPages']=[44]
   elif mode=='stale-row':
    path=root/'research/ledger/v1/tasks.csv';data=rows(root,'tasks');stale=dict(data[0]);stale['task_id']=api['PAPER']+'.Q9';stale['paper_id']=api['PAPER'];data.append(stale)
    with path.open('w',newline='') as f:
@@ -102,18 +106,18 @@ print(json.dumps(cases))
       { encoding: 'utf8' },
     ),
   );
-  assert.equal(result.length, 17);
+  assert.equal(result.length, 21);
 });
 
-void test('coverage presents Human Q1 as an eight-part subset, with no invented whole-paper denominator', () => {
+void test('coverage presents Human Q1 as an eleven-part subset, with no invented whole-paper denominator', () => {
   const rows = subjectEvidence('4HB1');
   assert.equal(rows.length, 1);
   const detail = rows[0].extraction!;
-  assert.equal(detail.detailedTasks, 8);
-  assert.equal(detail.originalMarks, 12);
+  assert.equal(detail.detailedTasks, 11);
+  assert.equal(detail.originalMarks, 23);
   assert.equal(detail.expectedTasks, null);
   assert.equal(detail.wholePageAudit, false);
-  assert.deepEqual(detail.reviewedQuestions, ['1']);
+  assert.deepEqual(detail.reviewedQuestions, ['1', '2']);
   assert.equal(rows[0].index, null);
   assert.equal(evidenceHighlights.activeFamilies, 0);
 });

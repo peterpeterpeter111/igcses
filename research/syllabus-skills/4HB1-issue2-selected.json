@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4HB1",
+  "specificationDocumentId": "4HB1-spec",
+  "specificationSha256": "989c6536fa946f1361e45e3c1e0ebced240a9f4666a2c835ce9cf9724a38e30f",
+  "reviewDate": "2026-10-05",
+  "reviewer": "Codex visual/source review",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Selected Appendix4 mathematical skills forQ2.a.i only. No full mathematical/experimental/AO audit.",
+  "reviewedPages": [
+    43
+  ],
+  "skills": [
+    {
+      "id": "4HB1:issue2:mathematical:2C",
+      "reference": "2C",
+      "pdfPage": 43,
+      "printedPage": 37,
+      "summary": "Construct and interpret bar charts.",
+      "appliesToHumanBiology": true,
+      "reviewStatus": "agent-reviewed"
+    },
+    {
+      "id": "4HB1:issue2:mathematical:4A",
+      "reference": "4A",
+      "pdfPage": 43,
+      "printedPage": 37,
+      "summary": "Translate information between graphical and numerical form.",
+      "appliesToHumanBiology": true,
+      "reviewStatus": "agent-reviewed"
+    }
+  ],
+  "taskMappings": [
+    {
+      "taskId": "4HB1-2024-May-01-standard.Q2.a.i",
+      "skillIds": [
+        "4HB1:issue2:mathematical:2C",
+        "4HB1:issue2:mathematical:4A"
+      ],
+      "scope": "required-operations-only",
+      "humanReviewed": false
+    }
+  ],
+  "blockers": [
+    "Remaining mathematical and experimental skills and official per-leaf AO reconciliation pending."
+  ]
+}

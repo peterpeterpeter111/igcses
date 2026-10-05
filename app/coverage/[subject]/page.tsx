@@ -11,6 +11,7 @@ import {
 import sources from '@/research/sources.json';
 import { reviewedInventories } from '@/lib/syllabus';
 import physicsSkills from '@/research/syllabus-skills/4PH1-issue4.json';
+import humanSkills from '@/research/syllabus-skills/4HB1-issue2-selected.json';
 import { curriculumAudits } from '@/lib/curriculum';
 import { obtainedPaperCandidates, paperCoverReview, paperTaskIndex, paperDetailedSummary } from '@/lib/paper-discovery';
 export default async function SubjectCoverage({
@@ -59,8 +60,9 @@ export default async function SubjectCoverage({
               <div>
                 <p>
                   {r.extraction.detailedTasks} question parts (
-                  {r.extraction.originalMarks} original marks) reviewed across
-                  Questions {r.extraction.reviewedQuestions.join(' and ')}.
+                  {r.extraction.originalMarks} original marks) reviewed across{' '}
+                  {r.extraction.reviewedQuestions.length === 1 ? 'Question' : 'Questions'}{' '}
+                  {r.extraction.reviewedQuestions.join(' and ')}.
                   Detailed records: {r.extraction.detailedTasks} of{' '}
                   {r.extraction.expectedTasks ?? 'an unconfirmed number of'}{' '}
                   parts. Zero fully processed papers.
@@ -183,6 +185,23 @@ export default async function SubjectCoverage({
               {physicsSkills.taskMappings.filter((row) => row.mappings.length === 0).length}
               {' '}have no separate listed skill demand. These decisions do not establish
               official assessment-objective marks or complete teaching coverage.
+            </p>
+          </section>
+        )}
+        {s.code === humanSkills.qualification && (
+          <section>
+            <h2>Selected mathematical skills</h2>
+            <p>
+              Two Appendix 4 skills support the reviewed Q2 chart task: constructing
+              a bar chart and translating numerical information into graphical form.
+              This is a selected review, not a complete practical, mathematical or
+              assessment-objective audit. No official per-part AO marks are claimed.
+            </p>
+            <p>
+              <a href={source.url + '#page=43'} target="_blank" rel="noreferrer">
+                Own specification · PDF page 43 ↗
+              </a>
+              {' · Checked '}{humanSkills.reviewDate}; AI review, no human certification.
             </p>
           </section>
         )}

@@ -21,10 +21,11 @@
   "fullyProcessed": false,
   "wholePaperMarks": 90,
   "wholePaperLeafCount": null,
-  "detailedLeafTasks": 8,
-  "detailedOriginalMarks": 12,
+  "detailedLeafTasks": 11,
+  "detailedOriginalMarks": 23,
   "reviewedQuestionTotals": {
-    "1": 12
+    "1": 12,
+    "2": 11
   },
   "reviewedSubsetMarksReconciled": true,
   "marksReconciled": false,
@@ -50,14 +51,17 @@
         2,
         3,
         4,
-        5
+        5,
+        6,
+        7
       ],
       "wholeDocumentReviewed": false
     },
     "markScheme": {
       "visuallyReviewedPages": [
         3,
-        4
+        4,
+        5
       ],
       "wholeDocumentReviewed": false
     }
@@ -73,7 +77,10 @@
     "issue": "2",
     "reviewedPages": [
       20,
-      24
+      21,
+      24,
+      26,
+      43
     ],
     "wholeHistoricalAmendmentReconciliation": "pending"
   },
@@ -958,21 +965,537 @@
         "No calibrated generative family, semantic marker or learner/examiner response review.",
         "Supplied method is not approved practical instructions; future practical variants require method/risk review. No safe threshold invented."
       ]
+    },
+    {
+      "paperId": "4HB1-2024-May-01-standard",
+      "recordKind": "leaf",
+      "taskId": "4HB1-2024-May-01-standard.Q2.a.i",
+      "questionPath": "2.a.i",
+      "originalMarks": 4,
+      "questionPaperPages": [
+        6
+      ],
+      "markSchemePages": [
+        5
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Draw",
+      "requiredKnowledge": [
+        "categorical bar charts",
+        "labelled axes and units",
+        "linear scale",
+        "plotting supplied data"
+      ],
+      "contextSummary": "Construct a bar chart for four food preservation categories using supplied freshness durations; these durations are stimulus values, not general food-storage guidance.",
+      "solutionStructure": [
+        "Label the vertical axis for freshness duration and include days.",
+        "Identify each preservation category on the horizontal axis.",
+        "Choose a suitable scale.",
+        "Plot the supplied values as bars."
+      ],
+      "markingMethod": "drawing-discrete-points",
+      "criteria": [
+        {
+          "id": "4HB1-2024-May-01-standard.Q2.a.i:point-1",
+          "marks": 1,
+          "rule": "Label the vertical axis for freshness duration and include days."
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q2.a.i:point-2",
+          "marks": 1,
+          "rule": "Identify each preservation category on the horizontal axis."
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q2.a.i:point-3",
+          "marks": 1,
+          "rule": "Choose a suitable scale."
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q2.a.i:point-4",
+          "marks": 1,
+          "rule": "Plot the supplied values as bars."
+        }
+      ],
+      "scoringRule": {
+        "mode": "all-distinct",
+        "maximum": 4,
+        "creditPerCriterion": 1,
+        "eligibleCriterionIds": [
+          "4HB1-2024-May-01-standard.Q2.a.i:point-1",
+          "4HB1-2024-May-01-standard.Q2.a.i:point-2",
+          "4HB1-2024-May-01-standard.Q2.a.i:point-3",
+          "4HB1-2024-May-01-standard.Q2.a.i:point-4"
+        ],
+        "selectionLimit": 4,
+        "sourceRef": {
+          "documentId": "4HB1-2024-May-01-standard:markScheme",
+          "pdfPages": [
+            5
+          ]
+        }
+      },
+      "acceptableAlternatives": [
+        "Historical line-graph concession permits only axis-label/category/scale criteria, maximum3; the requested answer is a bar chart."
+      ],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4HB1:issue2:6.12",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Food preservation provides the data context; the main assessed operation is bar-chart construction, separately linked to mathematical skills.",
+          "evidenceRefs": [
+            {
+              "documentId": "4HB1-spec",
+              "pdfPages": [
+                21
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:markScheme",
+              "pdfPages": [
+                5
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:questionPaper",
+              "pdfPages": [
+                6
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "categorical-data-table",
+        "blank-chart-grid"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4HB1-2024-May-01-standard:questionPaper",
+          "pdfPages": [
+            6
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; do not infer authoritative AO marks.",
+      "proposedFamilyId": "4HB1.categorical-bar-chart",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-05",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generative family, semantic marker or learner/examiner response review.",
+        "Drawing recognition, scale/plot tolerances and line-graph concession calibration pending. Stimulus dates/durations cannot be generalized as food safety guidance."
+      ],
+      "sourceData": {
+        "units": "days",
+        "categories": [
+          "refrigeration",
+          "freezing",
+          "pasteurisation",
+          "vacuum-packed food"
+        ],
+        "values": [
+          5,
+          90,
+          35,
+          14
+        ],
+        "provenance": "Source-stimulus facts, not real-world safe storage times."
+      },
+      "graphScoring": {
+        "requestedGraphType": "bar-chart",
+        "sourceConcession": {
+          "responseType": "line-graph",
+          "eligibleCriterionIds": [
+            "4HB1-2024-May-01-standard.Q2.a.i:point-1",
+            "4HB1-2024-May-01-standard.Q2.a.i:point-2",
+            "4HB1-2024-May-01-standard.Q2.a.i:point-3"
+          ],
+          "maximum": 3,
+          "excludedCriterionIds": [
+            "4HB1-2024-May-01-standard.Q2.a.i:point-4"
+          ],
+          "sourceRef": {
+            "documentId": "4HB1-2024-May-01-standard:markScheme",
+            "pdfPages": [
+              5
+            ]
+          }
+        },
+        "calibrationStatus": "drawing-recognition-and-tolerances-pending",
+        "observation": "Source note permits only mark points1\u20133 for a line graph. It does not supply numeric plotting tolerances or a semantic drawing-recognition policy."
+      },
+      "skillMappings": [
+        {
+          "skillId": "4HB1:issue2:mathematical:2C",
+          "rationale": "Construct a bar chart for supplied categories and values.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4HB1-spec",
+              "pdfPages": [
+                43
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:questionPaper",
+              "pdfPages": [
+                6
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:markScheme",
+              "pdfPages": [
+                5
+              ]
+            }
+          ]
+        },
+        {
+          "skillId": "4HB1:issue2:mathematical:4A",
+          "rationale": "Translate tabulated durations into graphical form.",
+          "applicability": "required",
+          "evidenceRefs": [
+            {
+              "documentId": "4HB1-spec",
+              "pdfPages": [
+                43
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:questionPaper",
+              "pdfPages": [
+                6
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:markScheme",
+              "pdfPages": [
+                5
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paperId": "4HB1-2024-May-01-standard",
+      "recordKind": "leaf",
+      "taskId": "4HB1-2024-May-01-standard.Q2.a.ii",
+      "questionPath": "2.a.ii",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        7
+      ],
+      "markSchemePages": [
+        5
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "State",
+      "requiredKnowledge": [
+        "heat treatment in food preservation"
+      ],
+      "contextSummary": "Count heat-based methods among the four categories from the preceding table/chart.",
+      "solutionStructure": [
+        "One method uses heat treatment: pasteurisation."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "4HB1-2024-May-01-standard.Q2.a.ii:point-1",
+          "marks": 1,
+          "rule": "One method uses heat treatment: pasteurisation."
+        }
+      ],
+      "scoringRule": {
+        "mode": "all-distinct",
+        "maximum": 1,
+        "creditPerCriterion": 1,
+        "eligibleCriterionIds": [
+          "4HB1-2024-May-01-standard.Q2.a.ii:point-1"
+        ],
+        "selectionLimit": 1,
+        "sourceRef": {
+          "documentId": "4HB1-2024-May-01-standard:markScheme",
+          "pdfPages": [
+            5
+          ]
+        }
+      },
+      "acceptableAlternatives": [],
+      "dependencies": [
+        "Uses the preservation table/chart from2.a.i; no follow-through policy inferred."
+      ],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4HB1:issue2:6.12",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Distinguish pasteurisation from refrigeration, freezing and vacuum packing.",
+          "evidenceRefs": [
+            {
+              "documentId": "4HB1-spec",
+              "pdfPages": [
+                21
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:markScheme",
+              "pdfPages": [
+                5
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:questionPaper",
+              "pdfPages": [
+                7
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "shared-categorical-data-table"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4HB1-2024-May-01-standard:questionPaper",
+          "pdfPages": [
+            6,
+            7
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; do not infer authoritative AO marks.",
+      "proposedFamilyId": "4HB1.preservation-heat-count",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-05",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generative family, semantic marker or learner/examiner response review."
+      ]
+    },
+    {
+      "paperId": "4HB1-2024-May-01-standard",
+      "recordKind": "leaf",
+      "taskId": "4HB1-2024-May-01-standard.Q2.b",
+      "questionPath": "2.b",
+      "originalMarks": 6,
+      "questionPaperPages": [
+        7
+      ],
+      "markSchemePages": [
+        5
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Complete",
+      "requiredKnowledge": [
+        "bacterial growth phases",
+        "relative rates of bacterial division and death"
+      ],
+      "contextSummary": "Fill six ordered gaps describing bacterial growth phases using a supplied word bank. Keep this as one six-mark task, not six invented leaf parts.",
+      "solutionStructure": [
+        "Gap1: lag.",
+        "Gap2: exponential.",
+        "Gap3: equal to.",
+        "Gap4: death.",
+        "Gap5: less than.",
+        "Gap6: dying."
+      ],
+      "markingMethod": "ordered-gap-points",
+      "criteria": [
+        {
+          "id": "4HB1-2024-May-01-standard.Q2.b:point-1",
+          "marks": 1,
+          "rule": "Gap1: lag."
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q2.b:point-2",
+          "marks": 1,
+          "rule": "Gap2: exponential."
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q2.b:point-3",
+          "marks": 1,
+          "rule": "Gap3: equal to."
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q2.b:point-4",
+          "marks": 1,
+          "rule": "Gap4: death."
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q2.b:point-5",
+          "marks": 1,
+          "rule": "Gap5: less than."
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q2.b:point-6",
+          "marks": 1,
+          "rule": "Gap6: dying."
+        }
+      ],
+      "scoringRule": {
+        "mode": "all-distinct",
+        "maximum": 6,
+        "creditPerCriterion": 1,
+        "eligibleCriterionIds": [
+          "4HB1-2024-May-01-standard.Q2.b:point-1",
+          "4HB1-2024-May-01-standard.Q2.b:point-2",
+          "4HB1-2024-May-01-standard.Q2.b:point-3",
+          "4HB1-2024-May-01-standard.Q2.b:point-4",
+          "4HB1-2024-May-01-standard.Q2.b:point-5",
+          "4HB1-2024-May-01-standard.Q2.b:point-6"
+        ],
+        "selectionLimit": 6,
+        "sourceRef": {
+          "documentId": "4HB1-2024-May-01-standard:markScheme",
+          "pdfPages": [
+            5
+          ]
+        }
+      },
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [
+        {
+          "description": "Confusing stationary phase equality with the death-phase imbalance, or placing growth-phase names into the wrong slots.",
+          "origin": "editorial"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4HB1:issue2:12.5",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Recall growth-phase names and relate cell division and cell death rates.",
+          "evidenceRefs": [
+            {
+              "documentId": "4HB1-spec",
+              "pdfPages": [
+                26
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:markScheme",
+              "pdfPages": [
+                5
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:questionPaper",
+              "pdfPages": [
+                7
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "word-bank",
+        "six-gap-passage"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4HB1-2024-May-01-standard:questionPaper",
+          "pdfPages": [
+            7
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; do not infer authoritative AO marks.",
+      "proposedFamilyId": "4HB1.bacterial-growth-gap-fill",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-05",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generative family, semantic marker or learner/examiner response review."
+      ],
+      "orderedGapRubric": {
+        "answers": [
+          "lag",
+          "exponential",
+          "equal to",
+          "death",
+          "less than",
+          "dying"
+        ],
+        "positions": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "marksPerPosition": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wordBank": [
+          "exponential",
+          "more than",
+          "stationary",
+          "equal to",
+          "lag",
+          "dying",
+          "death",
+          "less than",
+          "live",
+          "growth"
+        ],
+        "sourceRef": {
+          "documentId": "4HB1-2024-May-01-standard:markScheme",
+          "pdfPages": [
+            5
+          ]
+        },
+        "calibrationStatus": "source-order-checked; generated variants/spelling policy pending"
+      }
     }
   ],
   "blockers": [
-    "Q2\u2013Q9 detailed extraction and whole-paper leaf/marks inventory pending.",
+    "Q3\u2013Q9 detailed extraction and whole-paper leaf/marks inventory pending.",
     "Remaining question-paper and scheme pages are not visually audited.",
     "Whole historical amendment, experimental skills and assessment-objective reconciliation pending.",
     "No calibrated/active Human Biology templates; no learner or human examiner certification.",
     "Examiner report not obtained for this paper."
   ],
   "processingNotes": [
-    "The eight Q1 parts total 12 marks in both the question paper and scheme; this is subset reconciliation only, not all 90 marks.",
+    "Q1 has eight parts/12marks and Q2 three parts/11marks, matching each printed QP and scheme total;23 reviewed marks are subset reconciliation, not all90.",
     "Original batch stays indexed-only, with its date conflict and heuristic warnings retained. This newer overlay records partial detailed progress.",
     "Whole-paper leaf count is unconfirmed; do not infer it from the nine candidate top-level question labels.",
     "5.7 maps as supporting practical context only; the source method does not fully assess number and position of sensory receptors.",
     "Any-two-of-three sweating criteria are capped at two distinct points; insulation source rejection and thermometer risk-control points are retained.",
-    "Source diagrams/method and scheme remain private research evidence; no original paper scans are placed in public assets."
+    "Source diagrams/method and scheme remain private research evidence; no original paper scans are placed in public assets.",
+    "Q2 preserves a source line-graph concession (mark points1\u20133 only), original categorical values and six ordered bacterial gaps. No drawing thresholds or universal food-storage times invented."
   ]
 }
