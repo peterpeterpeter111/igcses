@@ -1,0 +1,15 @@
+# Biology general and plant transport — 5 October 2026
+
+Continued local66efb04, exactly mirrored by GitHubf5a2836. Twelve original lessons and one original potometer schematic added to the existing structures-and-functions route through ninth source part. Own4BI1Issue3PDF23/printed17 refs2.51–2.58B: eight identities/eight partial audits/31local requirements/14partial teaching links. 2.55B–2.58B remain2B-only; no point or chapter completion.
+
+Covers unicellular/multicellular exchange, phloem sucrose/amino acids with source/sink direction, xylem water/mineral ions, root-hair water potential, mesophyll evaporation/stomatal diffusion, conditional environmental trends and controlled potometer comparisons. Apparatus shows a submerged inlet, one marker, tight shoot seal and closed reset valve. Uptake remains a proxy, not exact evaporative loss or a root-uptake measurement. Ten constructed arithmetic checks pass; no physical trial data claimed.
+
+Own specification visually checked. Primary SAPS/RHS/OpenStax pages and Pearson2017 guide method/evaluation text checked. SAPS teacher/student attachment links returned Internal Error; full attachments not claimed; default shell page fetch failed DNS while web overview readable. No bypass or bulk collection. Historical guide does not override current own-spec applicability.
+
+New main files: content/note-sections/biology-structures/09-plant-transport.json; public/diagrams/biology-potometer.svg; research/syllabus/4BI1-plant-transport.json; research/curriculum-audits/4BI1-plant-transport.json; research/reviews/2026-10-05-biology-plant-{content,evidence,arithmetic,teaching-review}.json. Metadata/composer/registries/count assertions/normalized ledgers updated. All old parts and paper/template gates retained.
+
+Verification:133 tests, typecheck/lint,14 research checks, content/evidence reconciliation, isolatedD1, production build and72-file privacy scan pass. Final evidence-field correction links root-hair gradient/ion limits to their explanatory paragraphs; no public text change. Reader/diagram/coverage width583, no horizontal overflow; settled anchor23.8px; diagram529px. Potometer subject search works; detailed coverage shows own eight points with component restrictions and partial labels. Proof work/biology-potometer-proof-2026-10-05.png.
+
+Totals:460sections /23partial notes /36catalog routes;474reviewed identities /458partial parent audits /1,302local requirements /656partial teaching links. Biology82sections /2notes /62identities/audits /252requirements. Seven obtained paper/scheme pairs; Physics51parts110marks, Maths38parts100marks, Human42parts90marks and one detailed English pilot task. Zero fully processed papers/complete chapters/points/active templates. Seven provisional families/seven experimental offline generators/markers; calibration still pending.
+
+Next: Biology human blood/circulation2.59–2.69, broader curriculum and whole-paper skills/historical applicability/calibration. Save/sync non-force, keep AI last. Continue only above5%both ordinary allowances, checkpoint/pause at5%; no reset. No Sites version, deployment or verified publicURL.

@@ -9,7 +9,8 @@
     19,
     20,
     21,
-    22
+    22,
+    23
   ],
   "prerequisites": [
     "Organisms may contain one cell or many cells.",
@@ -30,7 +31,9 @@
     "Explain ATP,aerobic/anaerobic pathways and seed respiration investigations.",
     "Interpret Paper2B plant gas exchange and hydrogencarbonate-indicator comparisons.",
     "Explain thoracic structures, ventilation, alveolar exchange and smoking consequences.",
-    "Compare breathing observations and evaluate exercise-rate methods; later systems and unfamiliar assessments remain unfinished."
+    "Compare breathing observations and evaluate exercise-rate methods.",
+    "Explain the need for internal transport and distinguish phloem and xylem cargo/routes.",
+    "Explain Paper2B root-hair osmosis, leaf water loss and environmental effects; evaluate a potometer with controlled comparisons and uptake-rate calculations. Later systems and unfamiliar assessments remain unfinished."
   ],
   "sections": [],
   "supportingSources": [
@@ -142,7 +145,10 @@
         "leaf-indicator-investigation",
         "leaf-indicator-evaluation",
         "breath-carbon-dioxide-comparison",
-        "exercise-breathing-investigation"
+        "exercise-breathing-investigation",
+        "potometer-setup",
+        "transpiration-factor-investigation",
+        "potometer-evaluation"
       ]
     },
     {
@@ -217,6 +223,33 @@
       "sectionIds": [
         "smoking-and-coronary-risk"
       ]
+    },
+    {
+      "title": "Science and Plants for Schools: potometer uptake and water-loss comparison",
+      "url": "https://www.saps.org.uk/teaching-resources/resources/1263/investigating-transpiration-with-a-potometer/",
+      "sectionIds": [
+        "potometer-setup",
+        "potometer-evaluation",
+        "transpiration-factor-investigation"
+      ]
+    },
+    {
+      "title": "RHS: environmental effects on plant water loss",
+      "url": "https://www.rhs.org.uk/advice/understanding-plants/how-plants-lose-water",
+      "sectionIds": [
+        "transpiration-leaf-route",
+        "humidity-and-wind",
+        "light-and-temperature"
+      ]
+    },
+    {
+      "title": "OpenStax Biology: plant water and organic-solute transport",
+      "url": "https://openstax.org/books/biology-2e/pages/30-5-transport-of-water-and-solutes-in-plants",
+      "sectionIds": [
+        "phloem-source-and-sink",
+        "xylem-water-route",
+        "root-hair-osmosis"
+      ]
     }
   ],
   "sectionFiles": [
@@ -227,6 +260,7 @@
     "../note-sections/biology-structures/05-nutrition.json",
     "../note-sections/biology-structures/06-respiration.json",
     "../note-sections/biology-structures/07-plant-gas.json",
-    "../note-sections/biology-structures/08-human-gas.json"
+    "../note-sections/biology-structures/08-human-gas.json",
+    "../note-sections/biology-structures/09-plant-transport.json"
   ]
 }

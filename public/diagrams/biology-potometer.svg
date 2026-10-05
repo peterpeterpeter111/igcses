@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="740" viewBox="0 0 1000 740" role="img" aria-labelledby="title desc">
+<title id="title">A bubble potometer measures water uptake</title>
+<desc id="desc">Original apparatus schematic, not to scale. A leafy shoot is sealed to a water-filled capillary. The capillary inlet remains below water in a beaker at the left. One small air marker in the horizontal tube moves right towards the shoot as water is taken up. A separate water reservoir connects through a closed reset valve; that route is shut during timing.</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#963d43" stroke-width="1.5"/></marker></defs>
+<rect width="1000" height="740" fill="#fbf8f0"/>
+<g font-family="system-ui, sans-serif" fill="#292524">
+<text x="34" y="43" font-size="26" font-weight="650">A bubble potometer: water uptake</text>
+<text x="34" y="75" font-size="16" fill="#686158">Original apparatus model · not to scale · one marker, tight seals</text>
+<!-- Leafy shoot joins the tube at its cut end. Leaves are symbolic. -->
+<g stroke="#57684c" stroke-width="6" fill="none"><path d="M775 325V154M775 220L713 176M775 196L833 150M775 266L840 227"/></g>
+<g fill="#c5cba7" stroke="#57684c" stroke-width="2">
+<path d="M713 176Q659 180 665 128Q712 123 713 176Z"/>
+<path d="M833 150Q833 104 884 103Q893 150 833 150Z"/>
+<path d="M840 227Q850 184 902 192Q901 237 840 227Z"/>
+<path d="M775 155Q744 126 765 97Q800 117 775 155Z"/>
+</g>
+<!-- Reservoir branch is interrupted by the closed valve below. -->
+<path d="M510 165V239Q510 258 547 258Q584 258 584 239V165" fill="none" stroke="#6b6257" stroke-width="3"/>
+<path d="M514 195H580V238Q580 253 547 253Q514 253 514 238Z" fill="#9eb7b0"/>
+<path d="M547 257V405" fill="none" stroke="#6b6257" stroke-width="18"/>
+<path d="M547 257V405" fill="none" stroke="#9eb7b0" stroke-width="12"/>
+<rect x="532" y="304" width="30" height="18" fill="#f0e6d6" stroke="#6b6257" stroke-width="2"/>
+<path d="M529 313H565M547 304V290M536 290H558" stroke="#963d43" stroke-width="3"/>
+<!-- Inlet remains below the beaker's water surface. -->
+<path d="M95 532V680H195V532" fill="none" stroke="#6b6257" stroke-width="3"/>
+<path d="M99 558H191V676H99Z" fill="#c0d0c7"/>
+<path d="M99 558H191" stroke="#738f87" stroke-width="2"/>
+<path d="M145 639V405H775V328" fill="none" stroke="#6b6257" stroke-width="20" stroke-linejoin="round"/>
+<path d="M145 639V405H775V328" fill="none" stroke="#9eb7b0" stroke-width="14" stroke-linejoin="round"/>
+<rect x="759" y="316" width="32" height="22" fill="#9b8067" stroke="#574237" stroke-width="2"/>
+<!-- One deliberate air marker inside the otherwise water-filled capillary. -->
+<rect x="316" y="399" width="24" height="12" rx="6" fill="#fbf8f0" stroke="#665c4f" stroke-width="1.5"/>
+<path d="M280 435H710" stroke="#8b8175" stroke-width="1.5"/>
+<g stroke="#8b8175" stroke-width="1.5"><path d="M280 426V441M380 426V441M480 426V441M580 426V441M680 426V441"/></g>
+<path d="M383 485H655" stroke="#963d43" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="361" y="517" font-size="18" font-weight="600" fill="#963d43">Marker moves towards the shoot</text>
+<g fill="none" stroke="#8b8175" stroke-width="1.5">
+<path d="M510 204H420V164H327"/>
+<path d="M566 313H602V286H625"/>
+<path d="M792 327H820V365H850"/>
+<path d="M328 393V338H210"/>
+<path d="M287 435V568H325"/>
+<path d="M163 610H218V647H238"/>
+</g>
+<text x="70" y="145" font-size="19" font-weight="600">Water reservoir</text>
+<text x="70" y="171" font-size="16">Used to reset the marker</text>
+<text x="634" y="281" font-size="19" font-weight="600">Reset valve closed</text>
+<text x="634" y="306" font-size="16">during the timed reading</text>
+<text x="849" y="358" font-size="17" font-weight="600">Tight seal</text>
+<text x="849" y="382" font-size="15">around shoot</text>
+<text x="55" y="319" font-size="19" font-weight="600">One air marker</text>
+<text x="55" y="344" font-size="16">Read the same edge each time</text>
+<text x="336" y="564" font-size="18" font-weight="600">Scale beside the capillary</text>
+<text x="336" y="591" font-size="16">Distance ÷ time; volume needs the internal tube area.</text>
+<text x="249" y="643" font-size="18" font-weight="600">Inlet below water</text>
+<text x="249" y="669" font-size="16">No open air inlet during timing</text>
+<text x="34" y="716" font-size="16" fill="#686158">Uptake is a proxy for transpiration, not a direct or exact measurement of evaporative water loss.</text>
+</g></svg>
