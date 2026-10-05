@@ -1,3 +1,7 @@
+# Latest phase — English pilot ledger, 5 October 2026
+
+Read research/checkpoints/2026-10-05-ENGLISH-LEDGER.md first. Existing English pilot normalized into3document rows/1indexed paper/11tasks;tenindexed-only,Q5partial detailed. No new processing or invented official point.117tests,typecheck/lint/research/evidence and production build/67-file public scan pass. Totals387sections/19partial notes,416identities/407audits/1125requirements/576links;sevenobtained pairs,zeroprocessed/completechapters/points/activefamilies;sixprovisional/fiveexperimental. GitHub6723970 mirrorslocal89ff72f;syncnewerphase non-force. Continue English prototype, curriculum/paper processing/calibration above5%bothwindows. AIlast;noreset/version/deployment. Older entries historical.
+
 # Latest phase — Human Biology movement, 5 October 2026
 
 Read research/checkpoints/2026-10-05-HUMAN-MOVEMENT.md first. Eight partial lessons and one original long-bone cutaway added; own refs4.1–4.6 both01/02. Totals387sections/19partial notes,416identities/407audits/1125requirements/576links.115tests,typecheck/lint/research/content/evidence,isolatedD1 and build/67-file public scan pass; bounded desktop reader verified. GitHubbe6cf1e mirrorslocal2caebdd;sync this newer phase non-force. Seven obtained pairs;zero fully processed papers/complete chapters/points/active families;sixprovisional/fiveexperimental. No AI,version/deployment/reset. Continue English pilot ledger normalization, broader curriculum/paper processing/calibration above5%both windows. Older entries historical.
