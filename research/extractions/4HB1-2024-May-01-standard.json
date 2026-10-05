@@ -1,0 +1,978 @@
+{
+  "schemaVersion": 1,
+  "paperId": "4HB1-2024-May-01-standard",
+  "qualification": "4HB1",
+  "canonicalIdentity": {
+    "year": 2024,
+    "series": "June",
+    "component": "01",
+    "variant": "unresolved",
+    "printedDate": "2024-05-14",
+    "filenameDate": "2024-05-15",
+    "legacyPaperIdPreserved": true
+  },
+  "reviewDate": "2026-10-05",
+  "reviewer": "Codex visual/source review",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "status": "partial-detailed-extraction-processing-incomplete",
+  "paperStage": "indexed",
+  "paperStageReviewedAt": "2026-10-05",
+  "fullyProcessed": false,
+  "wholePaperMarks": 90,
+  "wholePaperLeafCount": null,
+  "detailedLeafTasks": 8,
+  "detailedOriginalMarks": 12,
+  "reviewedQuestionTotals": {
+    "1": 12
+  },
+  "reviewedSubsetMarksReconciled": true,
+  "marksReconciled": false,
+  "documents": [
+    {
+      "id": "4HB1-2024-May-01-standard:questionPaper",
+      "type": "question-paper",
+      "url": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Human-Biology/2017/Exam-materials/4hb1-01-que-20240515.pdf",
+      "sha256": "6f65e16f7752630e632eb16ae6cf481252154fbdd187854a30c3a4ca75d72ef1",
+      "pageCount": 24
+    },
+    {
+      "id": "4HB1-2024-May-01-standard:markScheme",
+      "type": "mark-scheme",
+      "url": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Human-Biology/2017/Exam-materials/4hb1-01-rms-20240822.pdf",
+      "sha256": "226c87f3b1a1a212cd2c1d4e3b8ec1f77a571b3032a830118e352f66757c5a0c",
+      "pageCount": 12
+    }
+  ],
+  "pageAudit": {
+    "questionPaper": {
+      "visuallyReviewedPages": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "wholeDocumentReviewed": false
+    },
+    "markScheme": {
+      "visuallyReviewedPages": [
+        3,
+        4
+      ],
+      "wholeDocumentReviewed": false
+    }
+  },
+  "rawManifestRef": "research/batches/2026-09-08-cross-subject-lower-01.manifest.json",
+  "rawManifestSha256": "562a2b39cf6c20944d2f29dd274c49e5a57a26d3502bf3b37dc82364d17ab963",
+  "coverReviewRef": "research/reviews/2026-09-09-cover-review.json",
+  "coverReviewSha256": "0ff8900b0c35dc679141bd58605fba2700ab0edc42b44e4d4bd2ac991d55a119",
+  "examinerReportStatus": "not-obtained-for-this-paper",
+  "currentSpecification": {
+    "documentId": "4HB1-spec",
+    "sha256": "989c6536fa946f1361e45e3c1e0ebced240a9f4666a2c835ce9cf9724a38e30f",
+    "issue": "2",
+    "reviewedPages": [
+      20,
+      24
+    ],
+    "wholeHistoricalAmendmentReconciliation": "pending"
+  },
+  "tasks": [
+    {
+      "paperId": "4HB1-2024-May-01-standard",
+      "recordKind": "leaf",
+      "taskId": "4HB1-2024-May-01-standard.Q1.a.i",
+      "questionPath": "1.a.i",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        2
+      ],
+      "markSchemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "State",
+      "requiredKnowledge": [
+        "sensory neurone function"
+      ],
+      "contextSummary": "Identify the nerve-cell type from receptor-to-CNS transport and the shown morphology.",
+      "solutionStructure": [
+        "Name a sensory neurone."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "4HB1-2024-May-01-standard.Q1.a.i:point-1",
+          "marks": 1,
+          "rule": "Name a sensory neurone."
+        }
+      ],
+      "scoringRule": {
+        "mode": "all-distinct",
+        "maximum": 1,
+        "creditPerCriterion": 1,
+        "eligibleCriterionIds": [
+          "4HB1-2024-May-01-standard.Q1.a.i:point-1"
+        ],
+        "selectionLimit": 1,
+        "sourceRef": {
+          "documentId": "4HB1-2024-May-01-standard:markScheme",
+          "pdfPages": [
+            4
+          ]
+        }
+      },
+      "acceptableAlternatives": [
+        "Sensory neurone/cell"
+      ],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4HB1:issue2:5.1",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Receptor-to-CNS direction and sensory neurone structure support the type identification.",
+          "evidenceRefs": [
+            {
+              "documentId": "4HB1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:markScheme",
+              "pdfPages": [
+                4
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:questionPaper",
+              "pdfPages": [
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "neurone-diagram"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4HB1-2024-May-01-standard:questionPaper",
+          "pdfPages": [
+            2
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; do not infer authoritative AO marks.",
+      "proposedFamilyId": "4HB1.sensory-neurone-identification",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-05",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generative family, semantic marker or learner/examiner response review."
+      ]
+    },
+    {
+      "paperId": "4HB1-2024-May-01-standard",
+      "recordKind": "leaf",
+      "taskId": "4HB1-2024-May-01-standard.Q1.a.ii",
+      "questionPath": "1.a.ii",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        2
+      ],
+      "markSchemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Name",
+      "requiredKnowledge": [
+        "axon structure"
+      ],
+      "contextSummary": "Identify label X on the long fibre to the right of the cell body.",
+      "solutionStructure": [
+        "Name the axon."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "4HB1-2024-May-01-standard.Q1.a.ii:point-1",
+          "marks": 1,
+          "rule": "Name the axon."
+        }
+      ],
+      "scoringRule": {
+        "mode": "all-distinct",
+        "maximum": 1,
+        "creditPerCriterion": 1,
+        "eligibleCriterionIds": [
+          "4HB1-2024-May-01-standard.Q1.a.ii:point-1"
+        ],
+        "selectionLimit": 1,
+        "sourceRef": {
+          "documentId": "4HB1-2024-May-01-standard:markScheme",
+          "pdfPages": [
+            4
+          ]
+        }
+      },
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4HB1:issue2:5.1",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Identify an axon on the supplied neurone diagram.",
+          "evidenceRefs": [
+            {
+              "documentId": "4HB1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:markScheme",
+              "pdfPages": [
+                4
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:questionPaper",
+              "pdfPages": [
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "neurone-diagram"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4HB1-2024-May-01-standard:questionPaper",
+          "pdfPages": [
+            2
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; do not infer authoritative AO marks.",
+      "proposedFamilyId": "4HB1.neurone-label",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-05",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generative family, semantic marker or learner/examiner response review."
+      ]
+    },
+    {
+      "paperId": "4HB1-2024-May-01-standard",
+      "recordKind": "leaf",
+      "taskId": "4HB1-2024-May-01-standard.Q1.b.i",
+      "questionPath": "1.b.i",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        3
+      ],
+      "markSchemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Name",
+      "requiredKnowledge": [
+        "skin structures"
+      ],
+      "contextSummary": "Identify R at the coiled gland and S at the upper dermal vessel in the skin section.",
+      "solutionStructure": [
+        "R is a sweat gland.",
+        "S is a blood vessel."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "4HB1-2024-May-01-standard.Q1.b.i:point-1",
+          "marks": 1,
+          "rule": "R is a sweat gland."
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q1.b.i:point-2",
+          "marks": 1,
+          "rule": "S is a blood vessel."
+        }
+      ],
+      "scoringRule": {
+        "mode": "all-distinct",
+        "maximum": 2,
+        "creditPerCriterion": 1,
+        "eligibleCriterionIds": [
+          "4HB1-2024-May-01-standard.Q1.b.i:point-1",
+          "4HB1-2024-May-01-standard.Q1.b.i:point-2"
+        ],
+        "selectionLimit": 2,
+        "sourceRef": {
+          "documentId": "4HB1-2024-May-01-standard:markScheme",
+          "pdfPages": [
+            4
+          ]
+        }
+      },
+      "acceptableAlternatives": [
+        "For S the scheme also accepts capillaries or arterioles."
+      ],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4HB1:issue2:10.1",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Name structures in a skin section.",
+          "evidenceRefs": [
+            {
+              "documentId": "4HB1-spec",
+              "pdfPages": [
+                24
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:markScheme",
+              "pdfPages": [
+                4
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:questionPaper",
+              "pdfPages": [
+                3
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "skin-section-diagram"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4HB1-2024-May-01-standard:questionPaper",
+          "pdfPages": [
+            3
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; do not infer authoritative AO marks.",
+      "proposedFamilyId": "4HB1.skin-labels",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-05",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generative family, semantic marker or learner/examiner response review."
+      ]
+    },
+    {
+      "paperId": "4HB1-2024-May-01-standard",
+      "recordKind": "leaf",
+      "taskId": "4HB1-2024-May-01-standard.Q1.b.ii",
+      "questionPath": "1.b.ii",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        3
+      ],
+      "markSchemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Describe",
+      "requiredKnowledge": [
+        "sweating",
+        "evaporative cooling"
+      ],
+      "contextSummary": "Describe how the gland identified as R contributes to cooling.",
+      "solutionStructure": [
+        "Produce sweat.",
+        "Sweat evaporates from the skin surface.",
+        "Evaporation takes thermal energy from the body/blood."
+      ],
+      "markingMethod": "capped-discrete-points",
+      "criteria": [
+        {
+          "id": "4HB1-2024-May-01-standard.Q1.b.ii:point-1",
+          "marks": 1,
+          "rule": "Produce sweat."
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q1.b.ii:point-2",
+          "marks": 1,
+          "rule": "Sweat evaporates from the skin surface."
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q1.b.ii:point-3",
+          "marks": 1,
+          "rule": "Evaporation takes thermal energy from the body/blood."
+        }
+      ],
+      "scoringRule": {
+        "mode": "any-distinct",
+        "maximum": 2,
+        "creditPerCriterion": 1,
+        "eligibleCriterionIds": [
+          "4HB1-2024-May-01-standard.Q1.b.ii:point-1",
+          "4HB1-2024-May-01-standard.Q1.b.ii:point-2",
+          "4HB1-2024-May-01-standard.Q1.b.ii:point-3"
+        ],
+        "selectionLimit": 2,
+        "sourceRef": {
+          "documentId": "4HB1-2024-May-01-standard:markScheme",
+          "pdfPages": [
+            4
+          ]
+        }
+      },
+      "acceptableAlternatives": [
+        "Perspiration is an alternative to sweat."
+      ],
+      "dependencies": [
+        "R refers to the sweat gland in the shared skin diagram; no automatic error-carried-forward rule is supplied."
+      ],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4HB1:issue2:10.1",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Explain the role of sweat glands in temperature regulation.",
+          "evidenceRefs": [
+            {
+              "documentId": "4HB1-spec",
+              "pdfPages": [
+                24
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:markScheme",
+              "pdfPages": [
+                4
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:questionPaper",
+              "pdfPages": [
+                3
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "skin-section-diagram"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4HB1-2024-May-01-standard:questionPaper",
+          "pdfPages": [
+            3
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; do not infer authoritative AO marks.",
+      "proposedFamilyId": "4HB1.evaporative-cooling",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-05",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generative family, semantic marker or learner/examiner response review."
+      ]
+    },
+    {
+      "paperId": "4HB1-2024-May-01-standard",
+      "recordKind": "leaf",
+      "taskId": "4HB1-2024-May-01-standard.Q1.b.iii",
+      "questionPath": "1.b.iii",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        4
+      ],
+      "markSchemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Describe",
+      "requiredKnowledge": [
+        "insulation",
+        "heat loss"
+      ],
+      "contextSummary": "Describe how the illustrated fat layer contributes to maintaining temperature.",
+      "solutionStructure": [
+        "Fat provides insulation.",
+        "Insulation reduces heat loss."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "4HB1-2024-May-01-standard.Q1.b.iii:point-1",
+          "marks": 1,
+          "rule": "Fat provides insulation."
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q1.b.iii:point-2",
+          "marks": 1,
+          "rule": "Insulation reduces heat loss."
+        }
+      ],
+      "scoringRule": {
+        "mode": "all-distinct",
+        "maximum": 2,
+        "creditPerCriterion": 1,
+        "eligibleCriterionIds": [
+          "4HB1-2024-May-01-standard.Q1.b.iii:point-1",
+          "4HB1-2024-May-01-standard.Q1.b.iii:point-2"
+        ],
+        "selectionLimit": 2,
+        "sourceRef": {
+          "documentId": "4HB1-2024-May-01-standard:markScheme",
+          "pdfPages": [
+            4
+          ]
+        }
+      },
+      "acceptableAlternatives": [
+        "The historical scheme allows trapping heat energy to prevent heat loss; teach this as reduced thermal transfer."
+      ],
+      "dependencies": [],
+      "commonErrors": [
+        {
+          "description": "Saying only that it keeps the body warm is explicitly rejected by the source scheme.",
+          "origin": "source-scheme"
+        }
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4HB1:issue2:10.1",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Relate skin-associated fat insulation to temperature regulation.",
+          "evidenceRefs": [
+            {
+              "documentId": "4HB1-spec",
+              "pdfPages": [
+                24
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:markScheme",
+              "pdfPages": [
+                4
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:questionPaper",
+              "pdfPages": [
+                4
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "skin-section-diagram"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4HB1-2024-May-01-standard:questionPaper",
+          "pdfPages": [
+            3,
+            4
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; do not infer authoritative AO marks.",
+      "proposedFamilyId": "4HB1.fat-insulation",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-05",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generative family, semantic marker or learner/examiner response review."
+      ]
+    },
+    {
+      "paperId": "4HB1-2024-May-01-standard",
+      "recordKind": "leaf",
+      "taskId": "4HB1-2024-May-01-standard.Q1.c.i",
+      "questionPath": "1.c.i",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        5
+      ],
+      "markSchemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "State",
+      "requiredKnowledge": [
+        "hazard identification"
+      ],
+      "contextSummary": "Evaluate a supplied temperature-perception method involving hands in water at different temperatures; this is an exam scenario, not student instructions.",
+      "solutionStructure": [
+        "Water that is too hot may burn the hands."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "4HB1-2024-May-01-standard.Q1.c.i:point-1",
+          "marks": 1,
+          "rule": "Water that is too hot may burn the hands."
+        }
+      ],
+      "scoringRule": {
+        "mode": "all-distinct",
+        "maximum": 1,
+        "creditPerCriterion": 1,
+        "eligibleCriterionIds": [
+          "4HB1-2024-May-01-standard.Q1.c.i:point-1"
+        ],
+        "selectionLimit": 1,
+        "sourceRef": {
+          "documentId": "4HB1-2024-May-01-standard:markScheme",
+          "pdfPages": [
+            4
+          ]
+        }
+      },
+      "acceptableAlternatives": [
+        "Too-hot water or burning hands are source alternatives for the same hazard."
+      ],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4HB1:issue2:5.7",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Risk analysis occurs in a skin receptor context; the source method does not establish the required number/position receptor investigation in full.",
+          "evidenceRefs": [
+            {
+              "documentId": "4HB1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:markScheme",
+              "pdfPages": [
+                4
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:questionPaper",
+              "pdfPages": [
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "supplied-practical-method"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4HB1-2024-May-01-standard:questionPaper",
+          "pdfPages": [
+            5
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; do not infer authoritative AO marks.",
+      "proposedFamilyId": "4HB1.skin-receptor-hazard",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-05",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generative family, semantic marker or learner/examiner response review.",
+        "Supplied method is not approved practical instructions; future practical variants require method/risk review. No safe threshold invented."
+      ]
+    },
+    {
+      "paperId": "4HB1-2024-May-01-standard",
+      "recordKind": "leaf",
+      "taskId": "4HB1-2024-May-01-standard.Q1.c.ii",
+      "questionPath": "1.c.ii",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        5
+      ],
+      "markSchemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Describe",
+      "requiredKnowledge": [
+        "hazard-linked risk reduction",
+        "temperature measurement"
+      ],
+      "contextSummary": "Reduce the too-hot-water burn risk in the supplied receptor investigation. No safe numerical temperature limit is supplied by the scheme.",
+      "solutionStructure": [
+        "Use a thermometer.",
+        "Check the water temperature so that it is not too hot."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "4HB1-2024-May-01-standard.Q1.c.ii:point-1",
+          "marks": 1,
+          "rule": "Use a thermometer."
+        },
+        {
+          "id": "4HB1-2024-May-01-standard.Q1.c.ii:point-2",
+          "marks": 1,
+          "rule": "Check the water temperature so that it is not too hot."
+        }
+      ],
+      "scoringRule": {
+        "mode": "all-distinct",
+        "maximum": 2,
+        "creditPerCriterion": 1,
+        "eligibleCriterionIds": [
+          "4HB1-2024-May-01-standard.Q1.c.ii:point-1",
+          "4HB1-2024-May-01-standard.Q1.c.ii:point-2"
+        ],
+        "selectionLimit": 2,
+        "sourceRef": {
+          "documentId": "4HB1-2024-May-01-standard:markScheme",
+          "pdfPages": [
+            4
+          ]
+        }
+      },
+      "acceptableAlternatives": [
+        "Checking the temperature of the water and ensuring it is not too hot are source alternatives for the second point."
+      ],
+      "dependencies": [
+        "The question refers to the hazard in 1.c.i. This extraction follows the scheme's burn-risk route; no alternative-hazard or follow-through policy was verified."
+      ],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4HB1:issue2:5.7",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Assess a relevant practical risk; the full prescribed receptor investigation remains outside this task.",
+          "evidenceRefs": [
+            {
+              "documentId": "4HB1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:markScheme",
+              "pdfPages": [
+                4
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:questionPaper",
+              "pdfPages": [
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "supplied-practical-method"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4HB1-2024-May-01-standard:questionPaper",
+          "pdfPages": [
+            5
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; do not infer authoritative AO marks.",
+      "proposedFamilyId": "4HB1.skin-receptor-risk-control",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-05",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generative family, semantic marker or learner/examiner response review.",
+        "Supplied method is not approved practical instructions; future practical variants require method/risk review. No safe threshold invented."
+      ]
+    },
+    {
+      "paperId": "4HB1-2024-May-01-standard",
+      "recordKind": "leaf",
+      "taskId": "4HB1-2024-May-01-standard.Q1.c.iii",
+      "questionPath": "1.c.iii",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        5
+      ],
+      "markSchemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Name",
+      "requiredKnowledge": [
+        "temperature receptors"
+      ],
+      "contextSummary": "Identify the skin structure that detects temperature after a supplied perception scenario.",
+      "solutionStructure": [
+        "Name a temperature receptor."
+      ],
+      "markingMethod": "discrete-points",
+      "criteria": [
+        {
+          "id": "4HB1-2024-May-01-standard.Q1.c.iii:point-1",
+          "marks": 1,
+          "rule": "Name a temperature receptor."
+        }
+      ],
+      "scoringRule": {
+        "mode": "all-distinct",
+        "maximum": 1,
+        "creditPerCriterion": 1,
+        "eligibleCriterionIds": [
+          "4HB1-2024-May-01-standard.Q1.c.iii:point-1"
+        ],
+        "selectionLimit": 1,
+        "sourceRef": {
+          "documentId": "4HB1-2024-May-01-standard:markScheme",
+          "pdfPages": [
+            4
+          ]
+        }
+      },
+      "acceptableAlternatives": [
+        "The source scheme also accepts receptor without the temperature qualifier."
+      ],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4HB1:issue2:5.5",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Name a receptor responding to a temperature stimulus.",
+          "evidenceRefs": [
+            {
+              "documentId": "4HB1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:markScheme",
+              "pdfPages": [
+                4
+              ]
+            },
+            {
+              "documentId": "4HB1-2024-May-01-standard:questionPaper",
+              "pdfPages": [
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "supplied-practical-method"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4HB1-2024-May-01-standard:questionPaper",
+          "pdfPages": [
+            5
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; do not infer authoritative AO marks.",
+      "proposedFamilyId": "4HB1.temperature-receptor-identification",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-05",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generative family, semantic marker or learner/examiner response review.",
+        "Supplied method is not approved practical instructions; future practical variants require method/risk review. No safe threshold invented."
+      ]
+    }
+  ],
+  "blockers": [
+    "Q2\u2013Q9 detailed extraction and whole-paper leaf/marks inventory pending.",
+    "Remaining question-paper and scheme pages are not visually audited.",
+    "Whole historical amendment, experimental skills and assessment-objective reconciliation pending.",
+    "No calibrated/active Human Biology templates; no learner or human examiner certification.",
+    "Examiner report not obtained for this paper."
+  ],
+  "processingNotes": [
+    "The eight Q1 parts total 12 marks in both the question paper and scheme; this is subset reconciliation only, not all 90 marks.",
+    "Original batch stays indexed-only, with its date conflict and heuristic warnings retained. This newer overlay records partial detailed progress.",
+    "Whole-paper leaf count is unconfirmed; do not infer it from the nine candidate top-level question labels.",
+    "5.7 maps as supporting practical context only; the source method does not fully assess number and position of sensory receptors.",
+    "Any-two-of-three sweating criteria are capped at two distinct points; insulation source rejection and thermometer risk-control points are retained.",
+    "Source diagrams/method and scheme remain private research evidence; no original paper scans are placed in public assets."
+  ]
+}

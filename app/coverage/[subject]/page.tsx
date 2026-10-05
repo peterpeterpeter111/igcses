@@ -65,6 +65,11 @@ export default async function SubjectCoverage({
                   {r.extraction.expectedTasks ?? 'an unconfirmed number of'}{' '}
                   parts. Zero fully processed papers.
                 </p>
+                {!r.extraction.wholePageAudit && <p className="status">
+                  Detailed review covers {r.extraction.questionPaperPages} question-paper pages
+                  and {r.extraction.markSchemePages} scheme pages. The original text index
+                  is preserved; the whole-paper visual inventory and mark reconciliation remain incomplete.
+                </p>}
                 <details>
                   <summary>Remaining processing gaps</summary>
                   <ul className="plain-list">

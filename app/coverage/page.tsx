@@ -90,6 +90,12 @@ export default function CoveragePage() {
         <h2>Known gaps</h2>
         <ul className="plain-list">
           <li>
+            Human Biology: {evidenceHighlights.humanBiologyDetailedParts} Q1 parts
+            ({evidenceHighlights.humanBiologyDetailedMarks} original marks) have detailed
+            records. The whole-paper leaf count, remaining questions and visual audit
+            are incomplete; no fully processed paper or active template.
+          </li>
+          <li>
             390 raw links: 188 paper-labelled, 186 scheme and 16 report links.
             Two English “Extract” links must not count as separate papers.
           </li>

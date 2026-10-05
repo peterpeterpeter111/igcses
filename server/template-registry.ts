@@ -1,5 +1,5 @@
 import type { Qualification } from '../content/catalog';
-import { BLUEPRINT, QuizError, type PrivateQuestion } from './quiz-contract';
+import { BLUEPRINT, QuizError, type PrivateQuestion } from './quiz-contract.ts';
 export type RuntimeFamily = {
   id: string;
   version: string;

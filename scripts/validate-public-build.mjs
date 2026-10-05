@@ -9,6 +9,10 @@ const forbidden = [
     'synthetic private solution fixture',
     /(?:SECRET_SOLUTION|SECRET_RUBRIC|PRIVATE_SOLUTION)/,
   ],
+  [
+    'Human Biology research rubric identifier',
+    /4HB1-2024-May-01-standard\.Q1\.[abc]\.(?:i|ii|iii):point-\d/,
+  ],
 ];
 
 function filesIn(directory) {
