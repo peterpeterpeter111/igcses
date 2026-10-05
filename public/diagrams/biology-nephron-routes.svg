@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="720" viewBox="0 0 1000 720" role="img" aria-labelledby="title desc">
+<title id="title">Filtration and reabsorption follow separate fluid routes</title>
+<desc id="desc">Original functional chart, not anatomy. Glomerular blood continues towards nearby tubule capillaries. Pressure filtration transfers water and small solutes into Bowman’s capsule. Filtrate then follows proximal convoluted tubule, loop of Henle, distal convoluted tubule and collecting duct. Selected glucose returns from the proximal tubule to blood, and water returns from the collecting duct by osmosis. Remaining fluid drains towards urine.</desc>
+<defs>
+<marker id="blood" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#963d43" stroke-width="1.5"/></marker>
+<marker id="fluid" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#716638" stroke-width="1.5"/></marker>
+</defs>
+<rect width="1000" height="720" fill="#fbf8f0"/>
+<g font-family="system-ui, sans-serif" fill="#292524">
+<text x="34" y="43" font-size="26" font-weight="650">A nephron: keep blood and tubule fluid separate</text>
+<text x="34" y="75" font-size="16" fill="#686158">Original functional chart · not anatomical shape or scale · exchange arrows are simplified</text>
+<rect x="50" y="155" width="250" height="72" fill="#f0dfda" stroke="#963d43" stroke-width="2"/>
+<text x="70" y="184" font-size="20" font-weight="600">Glomerulus</text>
+<text x="70" y="209" font-size="16">Blood inside capillaries</text>
+<path d="M300 191H680" stroke="#963d43" stroke-width="3" marker-end="url(#blood)"/>
+<text x="343" y="161" font-size="16">Blood continues along its own route</text>
+<rect x="680" y="155" width="250" height="72" fill="#f0dfda" stroke="#963d43" stroke-width="2"/>
+<text x="698" y="184" font-size="19" font-weight="600">Nearby blood capillaries</text>
+<text x="698" y="209" font-size="16">Receive recovered material</text>
+<path d="M125 227V335" stroke="#716638" stroke-width="3" marker-end="url(#fluid)"/>
+<text x="53" y="282" font-size="15">Filtration</text>
+<path d="M300 335V270H710V227" stroke="#963d43" stroke-width="2.5" fill="none" marker-end="url(#blood)"/>
+<text x="356" y="250" font-size="16" fill="#963d43">Glucose recovery from proximal tubule</text>
+<path d="M850 335V227" stroke="#963d43" stroke-width="2.5" marker-end="url(#blood)"/>
+<text x="866" y="274" font-size="15" fill="#963d43">Water</text>
+<text x="866" y="297" font-size="15" fill="#963d43">by osmosis</text>
+<g fill="#f0e9dc" stroke="#716638" stroke-width="2">
+<rect x="50" y="335" width="150" height="90"/>
+<rect x="230" y="335" width="150" height="90"/>
+<rect x="410" y="335" width="150" height="90"/>
+<rect x="590" y="335" width="150" height="90"/>
+<rect x="770" y="335" width="160" height="90"/>
+</g>
+<g font-size="18" text-anchor="middle" font-weight="600">
+<text x="125" y="374">Bowman’s</text><text x="125" y="400">capsule</text>
+<text x="305" y="374">Proximal</text><text x="305" y="400">tubule</text>
+<text x="485" y="374">Loop of</text><text x="485" y="400">Henle</text>
+<text x="665" y="374">Distal</text><text x="665" y="400">tubule</text>
+<text x="850" y="374">Collecting</text><text x="850" y="400">duct</text>
+</g>
+<g stroke="#716638" stroke-width="2.5" marker-end="url(#fluid)"><path d="M200 380H230"/><path d="M380 380H410"/><path d="M560 380H590"/><path d="M740 380H770"/></g>
+<text x="50" y="466" font-size="17" fill="#716638">Filtrate follows this tubule route →</text>
+<path d="M850 425V490H718" fill="none" stroke="#716638" stroke-width="2.5" marker-end="url(#fluid)"/>
+<text x="452" y="496" font-size="18">Towards urine drainage</text>
+<rect x="50" y="535" width="420" height="113" fill="#f3eadf"/>
+<text x="69" y="566" font-size="19" font-weight="600">Filtration: blood → capsule</text>
+<text x="69" y="594" font-size="16">Water and small solutes can enter filtrate.</text>
+<text x="69" y="622" font-size="16">Cells and most large proteins stay in blood.</text>
+<rect x="505" y="535" width="425" height="113" fill="#f0dfda"/>
+<text x="524" y="566" font-size="19" font-weight="600">Reabsorption: tubule → blood</text>
+<text x="524" y="594" font-size="16">Selected useful material is returned.</text>
+<text x="524" y="622" font-size="16">More recovery also occurs along this route.</text>
+<text x="50" y="685" font-size="16" fill="#686158">The proximal and distal tubules are convoluted. Real coils, vessel networks and other exchanges are omitted.</text>
+</g></svg>

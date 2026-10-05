@@ -10,7 +10,8 @@
     20,
     21,
     22,
-    23
+    23,
+    24
   ],
   "prerequisites": [
     "Organisms may contain one cell or many cells.",
@@ -34,7 +35,8 @@
     "Compare breathing observations and evaluate exercise-rate methods.",
     "Explain the need for internal transport and distinguish phloem and xylem cargo/routes.",
     "Explain Paper2B root-hair osmosis, leaf water loss and environmental effects; evaluate a potometer with controlled comparisons and uptake-rate calculations.",
-    "Explain blood components, immune responses and circulation including liver/kidney routes; Paper2B vaccination and clotting remain distinct. Later systems and unfamiliar assessments remain unfinished."
+    "Explain blood components, immune responses and circulation including liver/kidney routes; Paper2B vaccination and clotting remain distinct.",
+    "Explain plant/organ excretory products and Paper2B urinary/nephron routes, ultrafiltration, selective recovery and ADH feedback. Coordination and later topics and unfamiliar assessments remain unfinished."
   ],
   "sections": [],
   "supportingSources": [
@@ -299,6 +301,33 @@
         "vessel-structure",
         "human-double-circulation"
       ]
+    },
+    {
+      "title": "NIDDK: urinary system and kidney processing",
+      "url": "https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work",
+      "sectionIds": [
+        "kidney-two-roles",
+        "urinary-system-route",
+        "nephron-fluid-route",
+        "glomerular-ultrafiltration"
+      ]
+    },
+    {
+      "title": "OpenStax Anatomy and Physiology: water balance and ADH",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/26-2-water-balance",
+      "sectionIds": [
+        "collecting-duct-water",
+        "adh-negative-feedback",
+        "adh-comparison"
+      ]
+    },
+    {
+      "title": "OpenStax Anatomy and Physiology: selective tubular recovery",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-6-tubular-reabsorption",
+      "sectionIds": [
+        "proximal-glucose-recovery",
+        "filtrate-versus-urine"
+      ]
     }
   ],
   "sectionFiles": [
@@ -311,6 +340,7 @@
     "../note-sections/biology-structures/07-plant-gas.json",
     "../note-sections/biology-structures/08-human-gas.json",
     "../note-sections/biology-structures/09-plant-transport.json",
-    "../note-sections/biology-structures/10-human-transport.json"
+    "../note-sections/biology-structures/10-human-transport.json",
+    "../note-sections/biology-structures/11-excretion.json"
   ]
 }

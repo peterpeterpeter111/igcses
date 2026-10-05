@@ -1,3 +1,4 @@
+import biologyExcretion from '../research/syllabus/4BI1-excretion.json' with { type: 'json' };
 import biologyHumanTransport from '../research/syllabus/4BI1-human-transport.json' with { type: 'json' };
 import biologyPlantTransport from '../research/syllabus/4BI1-plant-transport.json' with { type: 'json' };
 import humanInternalClinical from '../research/syllabus/4HB1-internal-transport-clinical.json' with { type: 'json' };
@@ -70,6 +71,7 @@ export const reviewedInventories = [
   { title: 'Human gas exchange (2.46–2.50)', ...biologyHumanGas },
   { title: 'General and plant transport (2.51–2.58B; partial teaching)', ...biologyPlantTransport },
   { title: 'Human transport (2.59–2.69; partial teaching)', ...biologyHumanTransport },
+  { title: 'Excretion (2.70–2.79B; partial teaching)', ...biologyExcretion },
   { title: 'Cells and tissues (1.1–1.16)', ...humanCells },
   { title: 'Bones, muscles and joints (4.1–4.6)', ...humanMovement },
   { title: 'Selected Q1 demands: coordination and skin (identities only; no teaching)', ...humanQ1 },
