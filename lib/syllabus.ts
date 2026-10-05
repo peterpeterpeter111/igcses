@@ -1,3 +1,4 @@
+import humanInternalClinical from '../research/syllabus/4HB1-internal-transport-clinical.json' with { type: 'json' };
 import humanInternal from '../research/syllabus/4HB1-internal-transport-foundations.json' with { type: 'json' };
 import humanRespGas from '../research/syllabus/4HB1-respiration-gas-exchange.json' with { type: 'json' };
 import humanQ79 from '../research/syllabus/4HB1-selected-q79-demands.json' with { type: 'json' };
@@ -44,6 +45,7 @@ import mathsPolynomials from '../research/syllabus/4MB1-polynomials-and-fraction
 
 // Reviewed overlays are kept separate from the immutable raw candidates.
 export const reviewedInventories = [
+  { title: 'Internal transport: disease, treatments and antibodies (partial teaching)', ...humanInternalClinical },
   { title: 'Internal transport foundations: additional identities with partial teaching', ...humanInternal },
   { title: 'Respiration and gas exchange: additional identities with partial teaching', ...humanRespGas },
   { title: 'Selected Q7–Q9 demands: gas exchange and blood groups (partial teaching), sewage (identity only)', ...humanQ79 },
