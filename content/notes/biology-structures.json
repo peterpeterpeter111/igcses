@@ -11,7 +11,8 @@
     21,
     22,
     23,
-    24
+    24,
+    25
   ],
   "prerequisites": [
     "Organisms may contain one cell or many cells.",
@@ -37,7 +38,8 @@
     "Explain Paper2B root-hair osmosis, leaf water loss and environmental effects; evaluate a potometer with controlled comparisons and uptake-rate calculations.",
     "Explain blood components, immune responses and circulation including liver/kidney routes; Paper2B vaccination and clotting remain distinct.",
     "Explain plant/organ excretory products and Paper2B urinary/nephron routes, ultrafiltration, selective recovery and ADH feedback.",
-    "Explain stimuli/receptors/effectors and homeostasis; compare plant tropisms and auxin-related stem elongation. Human coordination, later topics and unfamiliar assessments remain unfinished."
+    "Explain stimuli/receptors/effectors and homeostasis; compare plant tropisms and auxin-related stem elongation.",
+    "Compare nervous/hormonal communication and explain CNS links, sensory/motor directions, chemical synapses and a spinal withdrawal reflex. Eye, temperature regulation, named hormone roles and later curriculum remain unfinished."
   ],
   "sections": [],
   "supportingSources": [
@@ -354,6 +356,38 @@
       "sectionIds": [
         "root-stem-directions"
       ]
+    },
+    {
+      "title": "OpenStax Anatomy and Physiology: CNS and nervous organisation",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-1-basic-structure-and-function-of-the-nervous-system",
+      "sectionIds": [
+        "central-peripheral-links",
+        "sensory-motor-direction"
+      ]
+    },
+    {
+      "title": "OpenStax Anatomy and Physiology: chemical synapses",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-5-communication-between-neurons",
+      "sectionIds": [
+        "chemical-synapse-sequence",
+        "synapse-direction-and-delay"
+      ]
+    },
+    {
+      "title": "OpenStax Anatomy and Physiology: spinal reflex coordination",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-3-motor-responses",
+      "sectionIds": [
+        "finger-withdrawal-arc",
+        "reflex-structures-from-functions",
+        "reflex-versus-reaction"
+      ]
+    },
+    {
+      "title": "OpenStax Biology: hormones and target cells",
+      "url": "https://openstax.org/books/biology-2e/pages/37-1-types-of-hormones",
+      "sectionIds": [
+        "nervous-hormonal-signals"
+      ]
     }
   ],
   "sectionFiles": [
@@ -368,6 +402,7 @@
     "../note-sections/biology-structures/09-plant-transport.json",
     "../note-sections/biology-structures/10-human-transport.json",
     "../note-sections/biology-structures/11-excretion.json",
-    "../note-sections/biology-structures/12-plant-coordination.json"
+    "../note-sections/biology-structures/12-plant-coordination.json",
+    "../note-sections/biology-structures/13-human-nervous.json"
   ]
 }

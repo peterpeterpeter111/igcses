@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" role="img" aria-labelledby="title description">
+  <title id="title">A simple withdrawal reflex</title>
+  <desc id="description">Functional flow from hot stimulus to skin receptor, sensory neurone, relay in spinal cord, motor neurone, arm muscle and withdrawal. Information also reaches the brain. Chemical synapses in the spinal circuit are distinguished from electrical impulses along neurones. Positions and lengths are not anatomy or measured timing.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0L10 4L0 8" fill="#774c42"/></marker></defs>
+  <rect width="1000" height="800" fill="#faf7ed"/>
+  <g font-family="Arial, sans-serif" fill="#302c27">
+    <text x="36" y="48" font-size="28" font-weight="bold">From detection to withdrawal</text>
+    <text x="36" y="79" font-size="17">Original functional model · positions, lengths and timings are not anatomical</text>
+    <rect x="54" y="117" width="258" height="100" fill="#eee2d9" stroke="#ac8d79"/>
+    <text x="74" y="148" font-size="21" font-weight="bold">Harmful hot stimulus</text>
+    <text x="74" y="180" font-size="18">Skin receptor detects it</text>
+    <path d="M312 167H433" fill="none" stroke="#774c42" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="332" y="136" font-size="17">Sensory</text><text x="332" y="157" font-size="17">neurone</text>
+    <rect x="444" y="111" width="306" height="203" fill="#efe7d5" stroke="#9b8766" stroke-width="2"/>
+    <text x="464" y="143" font-size="22" font-weight="bold">Spinal cord · CNS</text>
+    <text x="464" y="179" font-size="18">Sensory ending</text>
+    <path d="M528 190V212" stroke="#774c42" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="464" y="239" font-size="20" font-weight="bold">Relay neurone</text>
+    <path d="M528 248V271" stroke="#774c42" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="464" y="299" font-size="18">Motor neurone output</text>
+    <text x="616" y="211" font-size="16">Chemical</text><text x="616" y="232" font-size="16">synapses</text>
+    <path d="M750 167H849" stroke="#774c42" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="785" y="144" font-size="16">Also</text>
+    <rect x="859" y="125" width="109" height="94" fill="#e4e6d5" stroke="#8b9277"/>
+    <text x="876" y="157" font-size="20" font-weight="bold">Brain</text>
+    <text x="876" y="183" font-size="15">Awareness</text>
+    <path d="M584 314V400H312" fill="none" stroke="#774c42" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="379" y="367" font-size="18">Motor neurone to muscle</text>
+    <rect x="54" y="348" width="258" height="111" fill="#e4e6d5" stroke="#8b9277"/>
+    <text x="74" y="380" font-size="21" font-weight="bold">Muscle effector</text>
+    <text x="74" y="412" font-size="18">Arm muscle contracts</text>
+    <path d="M183 459V493" stroke="#774c42" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="54" y="504" width="258" height="89" fill="#eee2d9" stroke="#ac8d79"/>
+    <text x="74" y="539" font-size="21" font-weight="bold">Response</text>
+    <text x="74" y="569" font-size="18">Finger withdraws</text>
+    <text x="369" y="467" font-size="20" font-weight="bold">Electrical impulses</text>
+    <text x="369" y="497" font-size="18">travel along the neurones.</text>
+    <text x="369" y="533" font-size="20" font-weight="bold">Neurotransmitters</text>
+    <text x="369" y="563" font-size="18">cross chemical synaptic clefts.</text>
+    <path d="M36 634H964" stroke="#bfb3a1"/>
+    <text x="36" y="672" font-size="20" font-weight="bold">The spinal circuit does not wait for a conscious decision.</text>
+    <text x="36" y="709" font-size="18">Information can still reach the brain. This chart omits the full network,</text>
+    <text x="36" y="738" font-size="18">sensory cell-body position, neuromuscular detail and opposing-muscle control.</text>
+    <text x="36" y="776" font-size="16">Use a diagram or described observation; do not test withdrawal with painful heat.</text>
+  </g>
+</svg>

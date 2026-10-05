@@ -1,3 +1,4 @@
+import biologyHumanNervous from '../research/syllabus/4BI1-human-nervous.json' with { type: 'json' };
 import biologyPlantCoordination from '../research/syllabus/4BI1-plant-coordination.json' with { type: 'json' };
 import biologyExcretion from '../research/syllabus/4BI1-excretion.json' with { type: 'json' };
 import biologyHumanTransport from '../research/syllabus/4BI1-human-transport.json' with { type: 'json' };
@@ -74,6 +75,7 @@ export const reviewedInventories = [
   { title: 'Human transport (2.59–2.69; partial teaching)', ...biologyHumanTransport },
   { title: 'Excretion (2.70–2.79B; partial teaching)', ...biologyExcretion },
   { title: 'General and plant coordination (2.80–2.85; partial teaching)', ...biologyPlantCoordination },
+  { title: 'Human nervous coordination (2.86–2.90; partial teaching)', ...biologyHumanNervous },
   { title: 'Cells and tissues (1.1–1.16)', ...humanCells },
   { title: 'Bones, muscles and joints (4.1–4.6)', ...humanMovement },
   { title: 'Selected Q1 demands: coordination and skin (identities only; no teaching)', ...humanQ1 },
