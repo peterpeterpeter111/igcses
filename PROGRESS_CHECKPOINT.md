@@ -1,3 +1,9 @@
+# Latest phase — Biology food production, 5 October 2026
+
+Read research/checkpoints/2026-10-05-FOOD-PRODUCTION.md first. Sixteen original partial lessons/one original fermenter diagram,nine identities5.1–5.9B/47localrequirements/16partiallinks;only5.9B2B-only.143tests,typecheck/lint/14research/content/evidence/isolatedD1/build/85-file scan pass;desktop reader/search/exactcomponentcoverage verified,narrowpending. Proposed yeast trial not performed;examples independent and invented;source-guide errors not copied.
+
+Totals606sections/26partialnotes/36routes;577identities/561partialaudits/1,712localrequirements/831partiallinks. Sevenobtainedpairs/zeroprocessedpapers,completepoints/chapters or activefamilies;sevenexperimentalofflineprototypes. GitHub40973d6 mirrors local10ef1b1;commit/sync this newer food-production delta non-force,includingallsource/diagram files. Next5.10–5.11selectivebreeding,thenGM/cloning,widercurriculum,historical/skills reviews/calibration. Quality/UI/history preserved;AIlast,noreset/version/deployment/publicURL.Continueabove5%bothallowances,checkpoint/pauseat5%.Olderentrieshistorical.
+
 # Latest phase — Search quality and performance, 5 October 2026
 
 Read research/checkpoints/2026-10-05-SEARCH-QUALITY.md first. The existing full-text algorithm now runs behind the site's own backend; the search browser chunk is12,213bytes instead of1,264,980. Stale requests, retry, cancellation and10second timeout are guarded;143 tests/typecheck/lint/14research/build/84-file scan pass. Desktop Biology and fuzzy Physics search verified. Narrow-screen and final hosted endpoint verification pending. No AI call or curriculum changes.

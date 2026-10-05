@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 650" role="img" aria-labelledby="title desc">
+  <title id="title">Controlling an aerobic industrial culture</title>
+  <desc id="desc">Original functional diagram. Protected nutrients and filtered air enter a culture vessel. Mixing distributes resources and heat. Temperature and pH monitoring inform correction; a jacket removes surplus heat. Sample or harvest leaves an aseptic outlet. The model applies to an aerobic process, not every type of fermentation.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8c343d"/></marker></defs>
+  <rect width="800" height="650" rx="5" fill="#fbf8f1"/>
+  <g font-family="Georgia,serif" fill="#292425"><text x="28" y="36" font-size="25">An aerobic culture: resources and controls</text><text x="28" y="63" font-size="16">A functional model, not a factory operating plan</text></g>
+  <g fill="#f0e9dc" stroke="#c4b49a" stroke-width="1.5">
+    <rect x="20" y="91" width="220" height="98"/>
+    <rect x="20" y="225" width="220" height="98"/>
+    <rect x="20" y="402" width="220" height="98"/>
+    <rect x="560" y="91" width="220" height="112"/>
+    <rect x="560" y="284" width="220" height="106"/>
+    <rect x="270" y="532" width="260" height="70"/>
+  </g>
+  <g font-family="Arial,sans-serif" fill="#292425" font-size="16">
+    <text x="36" y="118" font-weight="bold">Protected nutrients</text><text x="36" y="145">Sterilised medium</text><text x="36" y="169">Known culture introduced</text>
+    <text x="36" y="253" font-weight="bold">Filtered air</text><text x="36" y="279">O₂ for an aerobic process</text><text x="36" y="304">Supports respiration</text>
+    <text x="36" y="431" font-weight="bold">Mixing / agitation</text><text x="36" y="457">Spreads nutrients and O₂</text><text x="36" y="481">Reduces uneven conditions</text>
+    <text x="576" y="119" font-weight="bold">Temperature control</text><text x="576" y="145">Sensor → controller</text><text x="576" y="169">Jacket removes surplus</text><text x="576" y="191">heat from the culture</text>
+    <text x="576" y="312" font-weight="bold">pH monitoring</text><text x="576" y="337">Adjust acidity if needed</text><text x="576" y="363">Process-specific target</text>
+    <text x="400" y="559" text-anchor="middle" font-weight="bold">Sample / harvest</text><text x="400" y="584" text-anchor="middle">Protected outlet</text>
+  </g>
+  <rect x="270" y="207" width="260" height="287" rx="36" fill="#e7eef0" stroke="#87999d" stroke-width="2"/>
+  <rect x="285" y="215" width="230" height="266" rx="26" fill="#eee2bc" stroke="#51464a" stroke-width="2"/>
+  <rect x="284" y="181" width="232" height="39" rx="6" fill="#ddd2bf" stroke="#51464a" stroke-width="2"/>
+  <g stroke="#8c343d" stroke-width="2.5" fill="none" marker-end="url(#arrow)">
+    <path d="M240 144H306V181"/>
+    <path d="M240 276H324V372"/>
+    <path d="M240 450H326"/>
+    <path d="M526 224H545V152H560"/>
+    <path d="M516 333H560"/>
+    <path d="M400 482V530"/>
+  </g>
+  <path d="M400 220V395M363 366L437 382M363 399L437 383" stroke="#5f5455" stroke-width="8" stroke-linecap="round"/>
+  <g fill="none" stroke="#687f8b" stroke-width="2"><circle cx="327" cy="361" r="5"/><circle cx="337" cy="343" r="7"/><circle cx="318" cy="319" r="5"/><circle cx="339" cy="298" r="6"/></g>
+  <g font-family="Arial,sans-serif" fill="#292425" text-anchor="middle"><text x="400" y="207" font-size="17" font-weight="bold">Selected culture</text><text x="400" y="442" font-size="15">Suitable medium</text><text x="400" y="465" font-size="15">Controlled conditions</text></g>
+  <text x="28" y="632" font-family="Arial,sans-serif" font-size="15" fill="#5c4b4c">Oxygen conditions depend on the organism and intended product; not all processes are aerobic.</text>
+</svg>

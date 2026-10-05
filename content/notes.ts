@@ -1,3 +1,4 @@
+import biologyResources from './biology-resources.ts';
 import biologyEcology from './biology-ecology.ts';
 import biologyReproduction from './biology-reproduction.ts';
 import humanInternal from './notes/human-biology-internal-transport.json' with { type: 'json' };
@@ -76,6 +77,7 @@ export const notes: ChapterNotes[] = [
   biologyStructures,
   biologyReproduction,
   biologyEcology,
+  biologyResources,
   chemistry,
   physics,
   physicsWaves,
