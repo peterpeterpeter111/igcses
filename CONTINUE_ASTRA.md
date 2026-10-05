@@ -1,3 +1,9 @@
+# Latest phase — Biology inheritance, 5 October 2026
+
+Read `research/checkpoints/2026-10-05-BIOLOGY-INHERITANCE.md` first. Fifteen partial lessons, original sequence figure and original site Punnett reuse. Own3.14–3.34;3.16B/3.17B/3.18B/3.21B2B-only,othersboth. Totals554sections/24partialnotes/36routes;545identities/529partialaudits/1,563requirements/770links. 133tests,typecheck/lint/14research/content/evidence/isolatedD1/finalbuild/81-filepublicscan pass;desktopsequence/coverageverified,narrowpending. Reproductionreader33sections,butlatermutation/selectionandfullassessmentsunfinished.
+
+GitHub `78b6d53` exactly mirrors saved local `a3f1ddd`; commit and sync this newer phase non-force. Seven obtained pairs, zero fully processed papers, complete chapters/points or active families; seven experimental offline prototypes. Continue own3.35B–3.39, Ecology/resources, wider curriculum, paper historical/skills audits and calibration only above5%bothordinary allowances; checkpoint/pause at5%;noreset. AIlast;noSitesversion/deployment/publicURL. PreserveUI/history;olderentriesbelowhistorical.
+
 # Latest phase — Biology reproduction, 5 October 2026
 
 Read `research/checkpoints/2026-10-05-BIOLOGY-REPRODUCTION.md` first. Eighteen original partial lessons/two functional diagrams on the existing reproduction-and-inheritance route; own 3.1–3.13, all both 1B/2B except 3.10B only 2B. Germination plans are not performed trials. Inheritance and anatomical/graph assessment remain unfinished. Totals: 539 sections /24 partial notes /36 routes; 524 identities /508 partial audits /1,510 local requirements /748 links. 133 tests, typecheck/lint/14 research checks/content/evidence/isolated D1/final build/80-file public scan pass. Desktop diagrams, coverage and subject search verified; narrow preview remains unverified.

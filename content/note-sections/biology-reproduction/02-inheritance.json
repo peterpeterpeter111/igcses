@@ -1,0 +1,594 @@
+{
+  "subjectId": "biology",
+  "chapterId": "reproduction-and-inheritance",
+  "sections": [
+    {
+      "id": "genome-gene-chromosome",
+      "title": "Locate genes within the genome",
+      "points": [
+        "3.14",
+        "3.15"
+      ],
+      "paragraphs": [
+        "The genome is an organism’s entire DNA, including coding and non-coding regions. In the school protein-coding model, a gene is a section of DNA whose sequence provides information for a particular protein; the genome is not just one gene or a list of visible characteristics.",
+        "Nuclear chromosomes consist of long DNA molecules associated with proteins. Many genes are located along a chromosome. In a diploid cell, homologous chromosomes carry corresponding gene positions but can carry different alleles.",
+        "The nucleus contains the nuclear chromosomes of a typical eukaryotic cell. Not every cell has a nucleus, and mitochondria and chloroplasts also contain DNA. Bacterial DNA is not enclosed in a nucleus; do not transfer nuclear organisation to every organism.",
+        "Some genes produce functional RNA rather than a protein, so the specification’s protein-coding definition is the teaching model here, not a claim that every gene is protein-coding. Non-coding DNA can also have regulatory roles; it is not automatically useless."
+      ],
+      "example": {
+        "question": "Contrast a gene, a chromosome and the genome.",
+        "steps": [
+          "A protein-coding gene is a DNA section with information for a protein.",
+          "A chromosome contains a long DNA molecule with many gene positions.",
+          "The genome includes the entire DNA, not only those protein-coding sections."
+        ],
+        "explanation": "Distinguish the scale of the DNA structure from the information being considered."
+      },
+      "practice": {
+        "question": "Does a chromosome normally contain just one gene?",
+        "answer": "No. Many genes occur along its DNA molecule.",
+        "explanation": "Distinguish the scale of the DNA structure from the information being considered."
+      },
+      "terms": [
+        "genome",
+        "gene",
+        "chromosome",
+        "homologous chromosome",
+        "non-coding DNA"
+      ],
+      "commonMistakes": [
+        "Do not define a genome as one chromosome or claim all DNA is nuclear/protein-coding."
+      ]
+    },
+    {
+      "id": "dna-rna-base-pairing",
+      "title": "Compare DNA and RNA structure",
+      "points": [
+        "3.16B",
+        "3.17B"
+      ],
+      "paragraphs": [
+        "DNA usually consists of two nucleotide strands coiled into a double helix. Each strand has a sugar-phosphate backbone; bases face inward and complementary bases pair: A with T and C with G.",
+        "The two strands run in opposite directions. If one short strand is written 5′-ACGT-3′, its paired strand is 3′-TGCA-5′. Copying the letters unchanged is not complementary pairing, and reversing orientation without labelling it can give an ambiguous answer.",
+        "RNA is usually single stranded and uses uracil, U, instead of thymine, T. Its sugar is ribose rather than DNA’s deoxyribose. A single RNA strand can fold and base-pair with itself in places; that does not make it a two-stranded DNA molecule.",
+        "These detailed DNA/RNA structure points, 3.16B and 3.17B, are additional Paper 2B content. A base sequence is information in a molecule, not a string of amino acids already assembled into a protein."
+      ],
+      "example": {
+        "question": "Give the base paired with each DNA base in A C G T.",
+        "steps": [
+          "A pairs with T.",
+          "C pairs with G.",
+          "G pairs with C.",
+          "T pairs with A."
+        ],
+        "explanation": "Name the molecule before choosing its pairing rules and sequence direction."
+      },
+      "practice": {
+        "question": "Which base replaces thymine in RNA?",
+        "answer": "Uracil, U; adenine can pair with U in RNA pairing.",
+        "explanation": "Name the molecule before choosing its pairing rules and sequence direction."
+      },
+      "terms": [
+        "DNA",
+        "RNA",
+        "double helix",
+        "nucleotide",
+        "sugar-phosphate backbone",
+        "complementary base",
+        "uracil",
+        "antiparallel"
+      ],
+      "commonMistakes": [
+        "Do not put U into the usual DNA pair list or confuse nucleotide bases with amino acids."
+      ]
+    },
+    {
+      "id": "transcription-template-coding",
+      "title": "Trace transcription from a specified DNA strand",
+      "points": [
+        "3.18B"
+      ],
+      "paragraphs": [
+        "For a nuclear protein-coding gene in a eukaryotic cell, DNA locally opens and RNA polymerase uses a template strand to build an RNA transcript. RNA nucleotides pair with the template: DNA A → RNA U, T → A, C → G and G → C.",
+        "The template is read in the 3′ to 5′ direction while RNA is assembled 5′ to 3′. A short original template example, 3′-TAC CGT-5′, gives 5′-AUG GCA-3′ RNA. Its DNA coding strand is 5′-ATG GCA-3′; RNA matches that coding sequence with U replacing T.",
+        "Eukaryotic transcripts are processed to form mature mRNA, which can leave the nucleus through nuclear pores. The DNA itself is not carried out to a ribosome, and transcription makes RNA rather than directly joining amino acids.",
+        "Specify whether a question gives the template or coding strand before deriving mRNA. The short sequence is a teaching fragment, not a complete gene, patient variant or newly discovered sequence. Transcription and translation are separate stages in 3.18B, for Paper 2B."
+      ],
+      "example": {
+        "question": "Find RNA from the original DNA template 3′-TAC CGT-5′.",
+        "steps": [
+          "Complement TAC to AUG and CGT to GCA, using U in RNA.",
+          "Write 5′-AUG GCA-3′ because it runs opposite to the template.",
+          "The coding DNA would instead be 5′-ATG GCA-3′."
+        ],
+        "explanation": "Label strand role and orientation before applying complement rules."
+      },
+      "practice": {
+        "question": "Would replacing every T with U in an unspecified template always give the correct mRNA?",
+        "answer": "No. Template DNA must be complemented; direct T-to-U substitution applies to the correspondingly oriented coding sequence.",
+        "explanation": "Label strand role and orientation before applying complement rules."
+      },
+      "terms": [
+        "transcription",
+        "RNA polymerase",
+        "template strand",
+        "coding strand",
+        "mRNA",
+        "nuclear pore"
+      ],
+      "commonMistakes": [
+        "Do not translate DNA letters directly as if they were mRNA or take DNA out of the nucleus in this model."
+      ],
+      "diagram": {
+        "src": "/diagrams/biology-transcription-sequence.svg",
+        "alt": "Original labelled sequence comparison: coding DNA5prime ATG GCA3prime pairs with template DNA3prime TAC CGT5prime. Transcription gives mRNA5prime AUG GCA3prime. Template is complemented; coding sequence matches RNA except T/U. The sequence is an invented fragment, not a complete gene.",
+        "caption": "Original short sequence fragment with strand roles and directions. Complement the template; use U in RNA. No gene length, patient variant or protein activity is inferred."
+      }
+    },
+    {
+      "id": "translation-codon-anticodon",
+      "title": "Trace codons, tRNA and protein assembly",
+      "points": [
+        "3.18B"
+      ],
+      "paragraphs": [
+        "During translation, a ribosome reads mRNA codons in the correct reading frame. Each codon is a group of three bases; an amino-acid codon specifies which amino acid is added, while stop codons end translation rather than specifying a “stop amino acid”.",
+        "A tRNA carries an amino acid and has an anticodon that base-pairs with an appropriate mRNA codon. Enzymes attach the appropriate amino acid to tRNA before delivery. The ribosome links successive amino acids through peptide bonds to make a polypeptide.",
+        "For the original mRNA fragment 5′-AUG GCA-3′, the standard-code entries used here are AUG: methionine and GCA: alanine. Simple paired anticodons are written 3′-UAC-5′ and 3′-CGU-5′ opposite those codons. This fragment alone is not a complete protein.",
+        "Translation normally ends when a stop codon is recognised by release machinery; there is no ordinary stop-carrying tRNA delivering a special amino acid. The chain can fold and be modified to become a functional protein. In this eukaryotic nuclear-gene model, transcription is nuclear and translation occurs at ribosomes outside the nucleus."
+      ],
+      "example": {
+        "question": "Using the stated standard-code entries, what amino acids do AUG GCA specify?",
+        "steps": [
+          "Read the mRNA as two codons in the stated frame.",
+          "AUG specifies methionine; GCA specifies alanine.",
+          "tRNAs deliver those amino acids and the ribosome joins them; the letters do not become amino acids by themselves."
+        ],
+        "explanation": "Distinguish message, adaptor, assembly site and product."
+      },
+      "practice": {
+        "question": "Is the anticodon located on mRNA?",
+        "answer": "No. The codon is on mRNA; the anticodon is on tRNA.",
+        "explanation": "Distinguish message, adaptor, assembly site and product."
+      },
+      "terms": [
+        "translation",
+        "codon",
+        "anticodon",
+        "tRNA",
+        "ribosome",
+        "amino acid",
+        "peptide bond",
+        "polypeptide",
+        "stop codon"
+      ],
+      "commonMistakes": [
+        "Do not put anticodons on mRNA, claim tRNA manufactures amino acids or assign an amino acid to a stop signal."
+      ]
+    },
+    {
+      "id": "alleles-and-genetic-terms",
+      "title": "Interpret alleles, genotype and phenotype",
+      "points": [
+        "3.19",
+        "3.20"
+      ],
+      "paragraphs": [
+        "Alleles are alternative forms of the same gene. At a usual autosomal position in a diploid cell, two alleles occur, one on each homologous chromosome. Sequence differences can affect a product or its expression and contribute to inherited characteristics.",
+        "Genotype is the allele combination being considered; phenotype is the expressed characteristic. Define a symbol key: in an original complete-dominance pigment model, B gives dark pigment when present and b gives the recessive light phenotype only as bb.",
+        "BB and bb are homozygous because their two alleles match. Bb is heterozygous because they differ. Under the stated complete dominance, BB and Bb both give the dominant phenotype, while bb gives the recessive one.",
+        "Dominant means expressed in the heterozygote in this model, not stronger, better or more common. The b allele is not deleted from Bb and can be passed on. A dominant phenotype alone does not distinguish BB from Bb; most real characteristics are more complex than this single-gene exercise."
+      ],
+      "example": {
+        "question": "Classify BB, Bb and bb in the stated pigment model.",
+        "steps": [
+          "BB: homozygous dominant, dark phenotype.",
+          "Bb: heterozygous, dark phenotype.",
+          "bb: homozygous recessive, light phenotype."
+        ],
+        "explanation": "Use the allele key to classify the pair before predicting expression."
+      },
+      "practice": {
+        "question": "Does a dark phenotype prove BB rather than Bb?",
+        "answer": "No. Both genotypes have the same dominant phenotype in this model.",
+        "explanation": "Use the allele key to classify the pair before predicting expression."
+      },
+      "terms": [
+        "allele",
+        "genotype",
+        "phenotype",
+        "dominant",
+        "recessive",
+        "homozygous",
+        "heterozygous"
+      ],
+      "commonMistakes": [
+        "Do not equate dominance with frequency, confuse two alleles with unrelated genes or erase a recessive allele from a heterozygote."
+      ]
+    },
+    {
+      "id": "codominance-expression",
+      "title": "Distinguish codominance from blending",
+      "points": [
+        "3.21B"
+      ],
+      "paragraphs": [
+        "With codominance, contributions of both alleles are expressed in a heterozygote. Neither contribution is hidden by complete dominance. This differs from incomplete dominance, where the heterozygote has an intermediate phenotype.",
+        "In the ABO red-cell model, I^A and I^B are codominant. I^A I^B expresses both A and B antigens and has phenotype AB; the two contributions do not become a new halfway antigen.",
+        "Use a clearly defined notation when listing gametes or offspring. A diploid AB genotype contributes one allele at that position to each gamete, I^A or I^B, not both alleles together in every gamete.",
+        "Codominance is the additional Paper 2B point 3.21B. This example demonstrates allele expression, not a blood-transfusion recommendation or a conclusion about an individual from appearance."
+      ],
+      "example": {
+        "question": "What shows codominance in I^A I^B?",
+        "steps": [
+          "Both A-antigen and B-antigen contributions are expressed.",
+          "Neither inherited contribution is concealed by the other."
+        ],
+        "explanation": "Separate expression of both alleles from transmission of one allele per gamete."
+      },
+      "practice": {
+        "question": "Does an AB parent produce gametes each containing I^A I^B?",
+        "answer": "No. A gamete receives one allele at that position in this model.",
+        "explanation": "Separate expression of both alleles from transmission of one allele per gamete."
+      },
+      "terms": [
+        "codominance",
+        "incomplete dominance",
+        "ABO",
+        "antigen",
+        "gamete"
+      ],
+      "commonMistakes": [
+        "Do not describe AB as a blended allele or use its definition to infer transfusion compatibility."
+      ]
+    },
+    {
+      "id": "polygenic-features",
+      "title": "Explain polygenic inheritance",
+      "points": [
+        "3.22"
+      ],
+      "paragraphs": [
+        "Polygenic inheritance means that several genes contribute to a phenotypic feature. Most phenotypic features cannot be explained by one dominant/recessive allele pair alone. Different combinations can contribute different amounts or interact.",
+        "Height illustrates a complex feature influenced by many genetic variants and by conditions such as nutrition and development. A single H/h cross is therefore not a complete model of a person’s height.",
+        "Many polygenic features show a range of values rather than just two categories, but continuous variation alone does not prove a particular number of genes or exclude environmental influence.",
+        "Use a one-gene diagram only when the question supplies that simplified model. Do not automatically infer a dominant allele for every common or larger feature."
+      ],
+      "example": {
+        "question": "Why is a single dominant “tall” allele an incomplete explanation of human height?",
+        "steps": [
+          "Many genes contribute to height.",
+          "Environmental/developmental conditions also affect it.",
+          "A one-gene model omits these interacting contributions."
+        ],
+        "explanation": "Match the model’s number of genes to the feature and evidence."
+      },
+      "practice": {
+        "question": "Does polygenic mean one gene with two alleles?",
+        "answer": "No. It means multiple genes contribute to the feature.",
+        "explanation": "Match the model’s number of genes to the feature and evidence."
+      },
+      "terms": [
+        "polygenic inheritance",
+        "continuous variation",
+        "genetic contribution",
+        "environment"
+      ],
+      "commonMistakes": [
+        "Do not turn every continuous characteristic into a single-gene dominant/recessive trait."
+      ]
+    },
+    {
+      "id": "monohybrid-cross-outcomes",
+      "title": "Build a monohybrid cross and its probabilities",
+      "points": [
+        "3.23",
+        "3.25"
+      ],
+      "paragraphs": [
+        "A monohybrid cross follows one gene. Define the alleles and expression, write parental genotypes, list gamete alleles and combine one allele from each parent. In the original B/b complete-dominance model, Bb × Bb gives B or b gametes from each parent with equal probability.",
+        "The four equally likely combinations are BB, Bb, bB and bb. Bb and bB are the same heterozygous genotype reached through different combinations. Genotype probabilities are 1/4 BB, 1/2 Bb and 1/4 bb; the phenotype probabilities are 3/4 dominant and 1/4 recessive.",
+        "For Bb × bb, the first parent contributes B or b and the second contributes b only. The outcomes are Bb and bb, each with probability 1/2. A parental diploid pair such as Bb is not put unchanged into a single gamete box.",
+        "Probabilities are predictions under the stated model, not a promised order or fixed count in a small family. For independent offspring under that model, an earlier outcome does not change the next offspring’s probability. A ratio such as 3:1 is not a guarantee that four offspring contain exactly three of one phenotype."
+      ],
+      "example": {
+        "question": "Find recessive-phenotype probability for Bb × Bb under complete dominance.",
+        "steps": [
+          "Only bb has the recessive phenotype.",
+          "One of four equally likely combinations is bb.",
+          "Probability=1/4=25%; this is a model prediction, not a guaranteed family count."
+        ],
+        "explanation": "Count equally likely gamete combinations and name genotype versus phenotype."
+      },
+      "practice": {
+        "question": "After one bb offspring, must the next three have the dominant phenotype?",
+        "answer": "No. Each independent offspring still has probability 1/4 of bb under the same parental model.",
+        "explanation": "Count equally likely gamete combinations and name genotype versus phenotype."
+      },
+      "terms": [
+        "monohybrid",
+        "Punnett square",
+        "gamete",
+        "probability",
+        "genotype ratio",
+        "phenotype ratio"
+      ],
+      "commonMistakes": [
+        "Do not count Bb/bB as distinct genotypes, use a genotype ratio as the phenotype ratio or treat probability as a fixed schedule."
+      ],
+      "diagram": {
+        "src": "/diagrams/human-monohybrid-cross.svg",
+        "alt": "Existing original Punnett square reused for the same specified Bb by Bb complete-dominance model: four combinations BB,Bb,bB,bb, with genotype ratio1:2:1 and phenotype ratio3:1.",
+        "caption": "Original site diagram reused for the same B/b model. Each combination has probability 1/4; equivalent heterozygous boxes are combined for genotype totals. No family outcome is guaranteed."
+      }
+    },
+    {
+      "id": "pedigree-model-inference",
+      "title": "Infer genotypes from a pedigree model",
+      "points": [
+        "3.24"
+      ],
+      "paragraphs": [
+        "A pedigree shows family relationships and stated phenotypes. Read its key: conventional squares/circles may identify the diagram’s sex categories, shading may show a specified trait and linking lines show partnerships/offspring. The actual question key takes precedence over an assumed convention.",
+        "For an original fully penetrant autosomal recessive model, aa expresses the trait and AA/Aa do not. If two unexpressing parents have an aa child, each must have supplied a, so both are Aa under the stated model.",
+        "An unexpressing sibling of that child could be AA or Aa unless further evidence rules one out. A shaded symbol does not reveal an exact genotype in every inheritance model: in complete dominant inheritance, expressing individuals may be BB or Bb.",
+        "State assumptions such as no new mutation and the supplied penetrance/model. Small pedigrees can be compatible with more than one inheritance pattern. Do not diagnose a real family or decide the model solely from the number of shaded people."
+      ],
+      "example": {
+        "question": "In the stated autosomal recessive model, unexpressing parents have an aa child. Infer their genotypes.",
+        "steps": [
+          "The child receives a from each parent.",
+          "Each unexpressing parent also has a dominant A in this model.",
+          "Both parents are Aa; an unexpressing sibling is not automatically proven Aa."
+        ],
+        "explanation": "Use transmission constraints plus the explicit phenotype model, and preserve remaining possibilities."
+      },
+      "practice": {
+        "question": "Does an unshaded sibling have to be AA?",
+        "answer": "No. AA and Aa are both unexpressing in the stated recessive model.",
+        "explanation": "Use transmission constraints plus the explicit phenotype model, and preserve remaining possibilities."
+      },
+      "terms": [
+        "pedigree",
+        "autosomal",
+        "penetrance",
+        "carrier",
+        "family relationship"
+      ],
+      "commonMistakes": [
+        "Do not infer every genotype from shading alone or turn a simplified pedigree into a real-person diagnosis."
+      ]
+    },
+    {
+      "id": "xx-xy-cross-model",
+      "title": "Construct the school XX/XY cross",
+      "points": [
+        "3.26",
+        "3.27"
+      ],
+      "paragraphs": [
+        "In the usual school human chromosome model, an XX parent produces X-bearing eggs and an XY parent produces X-bearing or Y-bearing sperm. XX is associated with the female developmental pattern and XY with the male pattern in that simplified comparison.",
+        "At fertilisation an X-bearing egg combines with X-bearing sperm to give XX or with Y-bearing sperm to give XY. A genetic diagram should label parental chromosome combinations, gamete types and offspring combinations.",
+        "Using equal X/Y sperm probabilities in the model gives two equally likely offspring combinations: XX and XY, each probability 1/2. The egg contributes X in both cases; it is the sperm’s X or Y that differs in this comparison.",
+        "This is a chromosome-inheritance model, not a complete definition of a person’s sex traits or identity. Chromosome/development variations exist and not every person is described by its two categories. It gives no guarantee that a particular family has equal numbers of each outcome."
+      ],
+      "example": {
+        "question": "Combine an X egg with the two stated sperm types.",
+        "steps": [
+          "X egg + X sperm → XX.",
+          "X egg + Y sperm → XY.",
+          "With equal stated sperm probabilities, each combination has probability 1/2."
+        ],
+        "explanation": "Label chromosome contributions and the probability assumptions."
+      },
+      "practice": {
+        "question": "Does an earlier XY outcome require the next outcome to be XX?",
+        "answer": "No. Independent fertilisations keep the same model probabilities.",
+        "explanation": "Label chromosome contributions and the probability assumptions."
+      },
+      "terms": [
+        "X chromosome",
+        "Y chromosome",
+        "XX",
+        "XY",
+        "fertilisation",
+        "sex chromosome model"
+      ],
+      "commonMistakes": [
+        "Do not attribute the varying X/Y contribution to the egg or treat the school categories as exhaustive personal classification."
+      ]
+    },
+    {
+      "id": "mitosis-growth-repair",
+      "title": "Explain mitosis and its uses",
+      "points": [
+        "3.28",
+        "3.29"
+      ],
+      "paragraphs": [
+        "Before mitosis, DNA is replicated so each chromosome has copied sister chromatids. During mitosis those copies are separated into two nuclei; cytokinesis normally separates the cell into two daughter cells.",
+        "Starting with a diploid cell, the usual result is two diploid daughter cells with the same chromosome sets and normally the same genetic information as the parent, barring mutation or division errors. Each daughter receives a complete set; the chromosomes are not cut in half.",
+        "Mitosis increases cell number during growth and replaces cells during repair. It also underlies cloning and the asexual plant examples. Increasing cell size and specialising cells are separate changes that accompany development.",
+        "Replication doubles the amount of copied DNA but does not itself make a diploid cell tetraploid. Chromosomes are counted by their centromeres in the standard model; a copied chromosome has two sister chromatids before those copies separate. Meiosis, not mitosis, normally reduces chromosome-set number in gamete formation."
+      ],
+      "example": {
+        "question": "A usual diploid human precursor with 46 chromosomes divides mitotically. Give daughter number and chromosome number.",
+        "steps": [
+          "Two daughter cells are formed in the usual division model.",
+          "Each daughter has 46 chromosomes: diploid number preserved.",
+          "Copies were separated; the 46 chromosomes were not split into two groups of 23."
+        ],
+        "explanation": "Separate copied DNA amount, chromosome sets and the number in each daughter."
+      },
+      "practice": {
+        "question": "Does DNA replication alone turn a diploid cell into a tetraploid cell?",
+        "answer": "No. It copies DNA within the existing chromosome sets.",
+        "explanation": "Separate copied DNA amount, chromosome sets and the number in each daughter."
+      },
+      "terms": [
+        "mitosis",
+        "cytokinesis",
+        "sister chromatid",
+        "centromere",
+        "growth",
+        "repair",
+        "cloning"
+      ],
+      "commonMistakes": [
+        "Do not halve chromosome number during mitosis or confuse a chromatid copy with another homologous set."
+      ]
+    },
+    {
+      "id": "meiosis-and-random-fusion",
+      "title": "Explain meiosis and variation at fertilisation",
+      "points": [
+        "3.30",
+        "3.31"
+      ],
+      "paragraphs": [
+        "Meiosis usually begins with a diploid precursor after one DNA replication and includes two divisions. Homologous chromosome pairs separate in the first; sister chromatids separate in the second. The standard outcome is four haploid products, each with one chromosome set.",
+        "Different orientations of homologous pairs and crossing over between nonsister chromatids can produce new allele combinations. Products are therefore usually genetically varied; at just one gene, several can still carry the same allele. Meiosis reshuffles alleles rather than creating every allele by mutation.",
+        "The four products are not always four equivalent functional gametes. Human sperm formation can yield four sperm, whereas egg formation partitions cytoplasm unequally and normally yields one functional egg plus polar bodies. The four-product chromosome model must not be translated into four large eggs.",
+        "Random fusion of one egg and one sperm combines independently produced gamete genotypes, adding variation among offspring and restoring diploid number. There is no second replication between the two meiotic divisions, and no claim that a gamete is selected because an offspring needs a particular trait."
+      ],
+      "example": {
+        "question": "Explain two distinct ways sexual reproduction produces new combinations.",
+        "steps": [
+          "Meiosis produces varied gametes through chromosome assortment and crossing over.",
+          "Random fertilisation combines one gamete from each source.",
+          "Mutation can create new alleles, but reshuffling/fusion need not create new DNA variants."
+        ],
+        "explanation": "Separate allele creation, allele reshuffling and joining of gametes."
+      },
+      "practice": {
+        "question": "Does meiosis guarantee four different alleles at one gene?",
+        "answer": "No. Alleles at a particular gene may repeat among products even when wider chromosome combinations vary.",
+        "explanation": "Separate allele creation, allele reshuffling and joining of gametes."
+      },
+      "terms": [
+        "meiosis",
+        "homologous pair",
+        "crossing over",
+        "independent assortment",
+        "haploid product",
+        "polar body",
+        "random fertilisation"
+      ],
+      "commonMistakes": [
+        "Do not replicate DNA again between divisions, guarantee four functional eggs or equate reshuffling with new mutation."
+      ]
+    },
+    {
+      "id": "human-chromosome-set-counts",
+      "title": "Count human chromosome sets consistently",
+      "points": [
+        "3.32"
+      ],
+      "paragraphs": [
+        "A typical nucleated human body cell is diploid:46 chromosomes in 23 pairs. A usual gamete is haploid:23 chromosomes, one from each pair. Haploid means one complete set, not half of each chromosome.",
+        "The numbers are per cell. Two diploid daughter cells after mitosis each have 46, not 46 shared between them. Four haploid meiotic products each have 23, not 23 shared among all four.",
+        "At fertilisation,23 from the egg and 23 from the sperm give 46 in the usual zygote. That restores two sets and avoids doubling the species’ chromosome number each generation.",
+        "The model concerns typical cells: mature red blood cells lack a nucleus and are not 46-chromosome examples; chromosome-number variations also occur. DNA copying changes DNA amount before separation but not the number of homologous sets on its own."
+      ],
+      "example": {
+        "question": "State usual chromosome numbers for body cell, gamete and zygote.",
+        "steps": [
+          "Typical nucleated body cell:46, diploid.",
+          "Gamete:23, haploid.",
+          "Zygote after 23 + 23 fusion:46, diploid."
+        ],
+        "explanation": "Name the cell type and distinguish chromosomes from pairs."
+      },
+      "practice": {
+        "question": "Is a gamete 23 pairs or 23 chromosomes?",
+        "answer": "23 chromosomes, not 23 pairs, in the usual human model.",
+        "explanation": "Name the cell type and distinguish chromosomes from pairs."
+      },
+      "terms": [
+        "diploid",
+        "haploid",
+        "chromosome number",
+        "chromosome pair",
+        "zygote"
+      ],
+      "commonMistakes": [
+        "Do not write 23 pairs for a haploid gamete or distribute one per-cell count across all products."
+      ]
+    },
+    {
+      "id": "genetic-environmental-variation",
+      "title": "Distinguish sources of variation",
+      "points": [
+        "3.33"
+      ],
+      "paragraphs": [
+        "Variation means differences among individuals of the same species. Genetic variation involves differences in inherited genetic material, including alleles and combinations formed during sexual reproduction.",
+        "Environmental variation can arise from conditions such as light, nutrition or exposure that alter development without changing the inherited allele combination. Genetically similar cuttings can grow to different sizes in different conditions.",
+        "Many phenotypic differences involve both genes and environment. Height and plant growth are examples of interacting contributions, not simple alternatives in which one source must explain everything.",
+        "A correlation between phenotype and one environmental condition does not by itself isolate its cause if genetic background or other conditions differ. State what is controlled and what evidence could distinguish the explanations; no environmental or family observations have been collected here."
+      ],
+      "example": {
+        "question": "Two cloned plants differ in height after receiving different light. What is a plausible explanation?",
+        "steps": [
+          "They normally share genotype, with mutation qualification.",
+          "Different light conditions can affect growth phenotype.",
+          "The difference alone does not prove a newly inherited allele."
+        ],
+        "explanation": "Distinguish inherited sequence, environmental exposure and the resulting phenotype."
+      },
+      "practice": {
+        "question": "Must a phenotypic feature be either genetic or environmental, but never both?",
+        "answer": "No. Many features reflect contributions from both.",
+        "explanation": "Distinguish inherited sequence, environmental exposure and the resulting phenotype."
+      },
+      "terms": [
+        "variation",
+        "genetic variation",
+        "environmental variation",
+        "phenotype",
+        "gene-environment interaction"
+      ],
+      "commonMistakes": [
+        "Do not infer genetic differences from every visible difference or claim a correlation proves one exclusive cause."
+      ]
+    },
+    {
+      "id": "mutation-and-transmission",
+      "title": "Explain mutation and when it can be inherited",
+      "points": [
+        "3.34"
+      ],
+      "paragraphs": [
+        "A mutation is a change in genetic material, often a DNA sequence change. It can arise during copying or after damage. A particular sequence change is generally a rare event; random means it does not occur specifically because an organism needs that useful trait.",
+        "A mutation in a gamete or germline precursor can be transmitted through that gamete to offspring. A mutation confined to a body-cell lineage is not normally transmitted to offspring through sexual reproduction, although daughter cells can inherit it by mitosis.",
+        "In asexual organisms or vegetative propagation, a mutation in cells that form a new individual can be passed on without gamete fusion. Whether it is inherited depends on which cells contribute to the next generation, not just whether the DNA changed somewhere.",
+        "Mutation need not cause a visible phenotype change; its effect depends on position, sequence and biological context. Detailed protein effects, mutagens and selection are later points and remain unfinished in this phase. No patient variant or exposure-induced mutation is fabricated."
+      ],
+      "example": {
+        "question": "Contrast a DNA change confined to a skin-cell lineage with one in a fertilising gamete.",
+        "steps": [
+          "The skin-cell change can pass to its mitotic descendants.",
+          "It does not normally enter offspring through gametes.",
+          "The gamete change can be present in the zygote and transmitted to offspring."
+        ],
+        "explanation": "Separate the origin of a change from its transmission route and later consequences."
+      },
+      "practice": {
+        "question": "Does a useful mutation happen because the organism intentionally needs it?",
+        "answer": "No. Mutation is not directed towards the required adaptive outcome.",
+        "explanation": "Separate the origin of a change from its transmission route and later consequences."
+      },
+      "terms": [
+        "mutation",
+        "DNA sequence change",
+        "germline",
+        "somatic cell",
+        "inheritance",
+        "random event"
+      ],
+      "commonMistakes": [
+        "Do not claim every body-cell mutation is inherited by children or every mutation visibly changes a trait."
+      ]
+    }
+  ]
+}

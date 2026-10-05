@@ -3,7 +3,8 @@
   "chapterId": "reproduction-and-inheritance",
   "sourceId": "4BI1-spec",
   "sourcePages": [
-    26
+    26,
+    27
   ],
   "status": "source-checked",
   "complete": false,
@@ -16,11 +17,13 @@
     "Compare sexual/asexual reproduction and trace fertilisation to an embryo.",
     "Explain pollination, seed/fruit origins and germination with practical controls.",
     "Link human reproductive structures, hormones and protection to their functions.",
-    "Inheritance, full anatomical/graph assessment and chapter completion remain unfinished."
+    "Inheritance, full anatomical/graph assessment and chapter completion remain unfinished.",
+    "Explain genes/RNA/protein synthesis, genetic crosses, pedigrees, chromosome sets and sources of variation; later mutation/selection and full assessments remain unfinished."
   ],
   "sections": [],
   "sectionFiles": [
-    "../note-sections/biology-reproduction/01-reproduction.json"
+    "../note-sections/biology-reproduction/01-reproduction.json",
+    "../note-sections/biology-reproduction/02-inheritance.json"
   ],
   "supportingSources": [
     {
@@ -88,6 +91,73 @@
         "fertilisation-to-embryo",
         "placental-nutrition-exchange",
         "amniotic-fluid-protection"
+      ]
+    },
+    {
+      "title": "NHGRI: genome",
+      "url": "https://www.genome.gov/genetics-glossary/Genome",
+      "sectionIds": [
+        "genome-gene-chromosome"
+      ]
+    },
+    {
+      "title": "NHGRI: gene",
+      "url": "https://www.genome.gov/genetics-glossary/Gene",
+      "sectionIds": [
+        "genome-gene-chromosome"
+      ]
+    },
+    {
+      "title": "NHGRI: codon",
+      "url": "https://www.genome.gov/genetics-glossary/Codon",
+      "sectionIds": [
+        "translation-codon-anticodon"
+      ]
+    },
+    {
+      "title": "NHGRI: codominance",
+      "url": "https://www.genome.gov/genetics-glossary/Codominance",
+      "sectionIds": [
+        "codominance-expression"
+      ]
+    },
+    {
+      "title": "NHGRI: mutation",
+      "url": "https://www.genome.gov/genetics-glossary/Mutation",
+      "sectionIds": [
+        "mutation-and-transmission"
+      ]
+    },
+    {
+      "title": "OpenStax Biology: eukaryotic transcription",
+      "url": "https://openstax.org/books/biology-2e/pages/15-3-eukaryotic-transcription",
+      "sectionIds": [
+        "transcription-template-coding"
+      ]
+    },
+    {
+      "title": "OpenStax Biology: translation machinery",
+      "url": "https://openstax.org/books/biology-2e/pages/15-5-ribosomes-and-protein-synthesis",
+      "sectionIds": [
+        "translation-codon-anticodon"
+      ]
+    },
+    {
+      "title": "OpenStax Biology: meiotic chromosome division",
+      "url": "https://openstax.org/books/biology-2e/pages/11-1-the-process-of-meiosis",
+      "sectionIds": [
+        "mitosis-growth-repair",
+        "meiosis-and-random-fusion",
+        "human-chromosome-set-counts"
+      ]
+    },
+    {
+      "title": "OpenStax Biology: allele segregation and probability",
+      "url": "https://openstax.org/books/biology-2e/pages/12-3-laws-of-inheritance",
+      "sectionIds": [
+        "alleles-and-genetic-terms",
+        "monohybrid-cross-outcomes",
+        "pedigree-model-inference"
       ]
     }
   ]

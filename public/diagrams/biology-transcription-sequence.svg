@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" role="img" aria-labelledby="title description">
+ <title id="title">Coding DNA, template DNA and the RNA transcript</title>
+ <desc id="description">Original short fragment: coding DNA5prime ATG GCA3prime complements template DNA3prime TAC CGT5prime. The template is used for transcription giving RNA5prime AUG GCA3prime. RNA matches the coding strand except U replaces T. Roles and sequence directions are explicit; this is not a complete gene.</desc>
+ <defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0L10 4L0 8" fill="#774c42"/></marker></defs>
+ <rect width="1000" height="760" fill="#faf7ed"/>
+ <g font-family="Arial, sans-serif" fill="#302c27">
+  <text x="35" y="49" font-size="29" font-weight="bold">Name the strand before deriving RNA</text>
+  <text x="35" y="85" font-size="18">Original invented sequence fragment · no complete gene or patient variant</text>
+  <rect x="35" y="122" width="930" height="106" fill="#eee2d9" stroke="#ac8d79"/>
+  <text x="57" y="165" font-size="24" font-weight="bold">Coding DNA</text>
+  <text x="430" y="175" font-size="33" font-family="monospace">5′ — ATG GCA — 3′</text>
+  <text x="57" y="205" font-size="18">Shown in the same 5′ → 3′ direction as the RNA below</text>
+  <text x="35" y="266" font-size="20">Complementary DNA strands run in opposite directions.</text>
+  <rect x="35" y="293" width="930" height="106" fill="#efe7d5" stroke="#9b8766"/>
+  <text x="57" y="336" font-size="24" font-weight="bold">Template DNA</text>
+  <text x="430" y="346" font-size="33" font-family="monospace">3′ — TAC CGT — 5′</text>
+  <text x="57" y="376" font-size="18">Read 3′ → 5′ for transcription</text>
+  <path d="M180 400V460" stroke="#774c42" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="225" y="442" font-size="21">Template pairing: T → A, A → U, C → G, G → C</text>
+  <rect x="35" y="478" width="930" height="106" fill="#e4e6d5" stroke="#8b9277"/>
+  <text x="57" y="521" font-size="24" font-weight="bold">RNA transcript</text>
+  <text x="430" y="531" font-size="33" font-family="monospace">5′ — AUG GCA — 3′</text>
+  <text x="57" y="561" font-size="18">Built 5′ → 3′; U is used instead of T</text>
+  <text x="35" y="634" font-size="22" font-weight="bold">Complement the template. Match the coding strand except T / U.</text>
+  <text x="35" y="678" font-size="19">Transcription makes RNA; translation at a ribosome follows as a separate stage.</text>
+  <text x="35" y="720" font-size="18">A short pair of codons is not enough to infer a complete protein or its activity.</text>
+ </g>
+</svg>
