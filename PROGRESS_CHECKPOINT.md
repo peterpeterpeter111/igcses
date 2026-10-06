@@ -2,16 +2,16 @@
 
 # Current checkpoint — 6 October 2026
 
-Read research/checkpoints/2026-10-06-HUMAN-HORMONES.md first. Preserve latest commit/history/UI; no reset/discard.
+Read research/checkpoints/2026-10-06-HUMAN-HEARING.md first. Preserve latest commit/history/UI; no reset/discard.
 
-Eight partial hormone lessons appended, Coordination24sections across5.1–5.10. Two new identities/audits,18 local requirements, nine links. Published5.10 incomplete wording explicitly recorded; local comparison not claimed as publisher correction. Later5.11–5.19 and disease unfinished.
+Four hearing/balance/noise lessons appended, Coordination28sections. Two new both01/02 identities/audits,14 local requirements, four links. Human vision5.11–5.12 is source preparation only;5.15 practical,5.16–5.19 and disease unfinished. Published5.10 ambiguous wording remains explicitly recorded.
 
-Totals:858 sections /32 partial notes /36 routes;738 identities /727 audits /2,412 requirements /1,166 partial links. Human182sections /11notes /113identities /111audits. Seven obtained pairs; zero complete chapters/points, fully processed papers or active templates. Seven experimental offline families, empty live registry.
+Totals:862 sections /32 partial notes /36 routes;740 identities /729 audits /2,426 requirements /1,170 partial links. Human186sections /11notes /115identities /113audits. Seven obtained pairs; zero complete chapters/points, fully processed papers or active templates. Seven experimental offline families, empty live registry. Raw manifests unchanged.
 
-144 tests, types, lint,14 research checks, content/evidence, isolated D1, build and112-file public scan pass. Settled615px reader verified; first-frame/smaller/mobile/hosted remain. No AI integration, Sites version, deployment or public URL.
+144 tests, types, lint,14 research checks, content/evidence, isolated D1, build and112-file public scan pass. Settled615px reader verified; smaller/mobile, first-frame and hosted remain. No AI integration, Sites version, deployment or public URL.
 
-GitHubeaed2bd mirrors savedf939503; newer delta needs non-force sync. Inspect work/github-sync/oct6-human-hormones/verified.json for later proof. Continue remaining Coordination/disease, English/Maths curriculum, paper processing/extraction and independently calibrated templates. AI last.
+GitHub2afd59c mirrors savedaafdb23; newer hearing delta needs non-force sync. Inspect work/github-sync/oct6-human-hearing/verified.json for resolved proof. Continue remaining Coordination/disease, English/Maths, paper-processing checks/extraction and independent calibrated templates. AI last.
 
-User asks faster useful progress until weekly exhaustion, overriding historical5% gates this run. Last actual allowance8%five-hour/86%weekly; ordinary usage allowed. No reset. Save phases; stop if actual usage blocks work.
+Latest faster/useful-until-weekly-exhaustion request overrides historical5% gates this run. Last actual allowance4%five-hour/85%weekly; ordinary usage permitted. Five-hour may block before weekly. No reset. Save phases; stop if actual limits block work.
 
-Older entries preserved in research/checkpoints/archive/2026-10-06-PROGRESS-HISTORY.md and 2026-10-06-CONTINUE-HISTORY.md; all checkpoints/Git history retained.
+Historical entries preserved in research/checkpoints/archive/2026-10-06-PROGRESS-HISTORY.md and 2026-10-06-CONTINUE-HISTORY.md; all checkpoints/Git history retained.

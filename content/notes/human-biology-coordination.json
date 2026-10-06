@@ -19,7 +19,9 @@
     "Trace stimulus–response and chemical-synapse mechanisms.",
     "Interpret skin-sensitivity evidence without pretending to count receptors.",
     "Match named glands and hormones to target actions.",
-    "Compare nervous and hormonal communication with appropriate exceptions."
+    "Compare nervous and hormonal communication with appropriate exceptions.",
+    "Trace mechanical sound transfer and cochlear conversion.",
+    "Distinguish vestibular mechanisms and explain noise-exposure risks."
   ],
   "supportingSources": [
     {
@@ -83,6 +85,35 @@
       "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/17-8-gonadal-and-placental-hormones",
       "sectionIds": [
         "gonadal-development-hormones"
+      ]
+    },
+    {
+      "title": "NIDCD: selected mechanical hearing and cochlear conversion",
+      "url": "https://www.nidcd.nih.gov/health/how-do-we-hear",
+      "sectionIds": [
+        "outer-middle-ear-transfer",
+        "cochlea-neural-signals"
+      ]
+    },
+    {
+      "title": "OpenStax14.1: selected middle-ear pressure route",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-1-sensory-perception",
+      "sectionIds": [
+        "outer-middle-ear-transfer"
+      ]
+    },
+    {
+      "title": "NIDCD: selected semicircular and otolith mechanisms",
+      "url": "https://www.nidcd.nih.gov/health/balance-disorders",
+      "sectionIds": [
+        "vestibular-balance"
+      ]
+    },
+    {
+      "title": "NIDCD: selected exposure, hair-cell loss and recovery limits",
+      "url": "https://www.nidcd.nih.gov/health/noise-induced-hearing-loss",
+      "sectionIds": [
+        "noise-exposure-hair-cells"
       ]
     }
   ],
@@ -867,6 +898,131 @@
       "commonMistakes": [
         "Calling every chemical signal a blood-borne hormone.",
         "Saying nerves and endocrine glands never interact."
+      ]
+    },
+    {
+      "id": "outer-middle-ear-transfer",
+      "title": "Trace sound through the outer and middle ear",
+      "points": [
+        "5.13"
+      ],
+      "terms": [
+        "pinna",
+        "ear canal",
+        "eardrum",
+        "ossicles",
+        "oval window",
+        "Eustachian tube"
+      ],
+      "paragraphs": [
+        "The pinna collects sound towards the ear canal. Incoming pressure variations make the eardrum vibrate. Three middle-ear bones, the malleus, incus and stapes, transmit vibrations to the oval window at the inner ear.",
+        "This mechanical transfer helps couple sound in air to fluid movement in the cochlea. The Eustachian tube connects the middle-ear space with the throat region and helps equalise pressure across the eardrum; it is not the nerve carrying sound information to the brain."
+      ],
+      "example": {
+        "question": "Arrange canal, eardrum, ossicles and oval window along the mechanical route.",
+        "steps": [
+          "Canal → eardrum.",
+          "Eardrum → ossicles.",
+          "Ossicles → oval window and inner-ear fluid."
+        ],
+        "explanation": "Mechanical vibration transfer precedes neural signalling."
+      },
+      "commonMistakes": [
+        "Sending sound down the Eustachian tube to the brain.",
+        "Calling the ossicles sensory neurones."
+      ]
+    },
+    {
+      "id": "cochlea-neural-signals",
+      "title": "Explain cochlear conversion into nerve signals",
+      "points": [
+        "5.13"
+      ],
+      "terms": [
+        "cochlea",
+        "basilar membrane",
+        "hair cell",
+        "auditory nerve"
+      ],
+      "paragraphs": [
+        "Movement at the oval window produces pressure waves in cochlear fluid. Motion of the basilar membrane bends hair-cell projections against the associated structures. The resulting changes in the sensory cells lead to signalling in auditory nerve fibres.",
+        "The auditory nerve carries electrical information to the brain for interpretation. It does not carry air-filled sound waves as a hollow tube. Different cochlear regions respond preferentially to different frequencies: higher frequencies near the base and lower frequencies nearer the tip."
+      ],
+      "example": {
+        "question": "Where does the sound pathway change from mechanical movement to sensory signalling?",
+        "steps": [
+          "Within the cochlea at the hair-cell mechanism.",
+          "Bending changes sensory-cell activity.",
+          "Auditory nerve fibres carry the resulting neural information."
+        ],
+        "explanation": "Locate conversion rather than saying the whole ear is one receptor."
+      },
+      "commonMistakes": [
+        "Saying the brain receives air vibrations through a nerve lumen.",
+        "Confusing higher pitch with larger sound amplitude."
+      ]
+    },
+    {
+      "id": "vestibular-balance",
+      "title": "Distinguish rotational and gravity-related balance information",
+      "points": [
+        "5.13"
+      ],
+      "terms": [
+        "semicircular canal",
+        "vestibular system",
+        "otolith",
+        "hair cell",
+        "balance"
+      ],
+      "paragraphs": [
+        "The semicircular canals contain fluid-filled ducts arranged in roughly different planes. Head rotation produces relative fluid movement that bends sensory hair-cell projections through the associated cupula, generating information about rotation.",
+        "The otolith organs, the utricle and saccule, provide information related to gravity and linear acceleration. Dense particles act on a gel layer associated with sensory cells. Balance combines vestibular information with vision and body-position information; the cochlea is mainly the hearing region, not the sole balance detector."
+      ],
+      "example": {
+        "question": "Why is “semicircular canals alone tell every aspect of body position” incomplete?",
+        "steps": [
+          "They contribute rotational information.",
+          "Otolith organs contribute gravity/linear information.",
+          "Vision and body-position feedback also support balance."
+        ],
+        "explanation": "Different sensors provide complementary information."
+      },
+      "commonMistakes": [
+        "Calling the pinna the main gravity detector.",
+        "Equating a semicircular canal with the cochlea."
+      ]
+    },
+    {
+      "id": "noise-exposure-hair-cells",
+      "title": "Link prolonged loud noise to hearing damage",
+      "points": [
+        "5.14"
+      ],
+      "terms": [
+        "noise-induced hearing loss",
+        "hair cell",
+        "sound level",
+        "duration",
+        "tinnitus"
+      ],
+      "paragraphs": [
+        "Loud sound can damage sensitive inner-ear structures, including cochlear hair cells. Prolonged or repeated exposure raises the risk, and an extremely intense brief sound can also cause injury. Damage can make sounds less clear and contribute to difficulty understanding speech; tinnitus can accompany noise exposure.",
+        "Human cochlear hair cells that die do not normally regrow, so lasting loss can remain. A temporary improvement in hearing after an exposure does not prove that no damage occurred. Risk depends on sound level and exposure duration, not pitch alone. Lower exposure and appropriate hearing protection reduce risk; a classroom investigation should never deliberately create damaging noise."
+      ],
+      "example": {
+        "question": "Why should two noise exposures not be ranked by duration alone?",
+        "steps": [
+          "Sound level also affects risk.",
+          "A much more intense brief sound can be harmful.",
+          "Compare both intensity-related level and duration using the supplied context."
+        ],
+        "explanation": "Do not turn a simplified comparison into a guaranteed safe threshold."
+      },
+      "commonMistakes": [
+        "Calling loud sound harmless if its pitch is low.",
+        "Saying all damaged human hair cells automatically regrow.",
+        "Increasing volume to find a participant’s limit."
       ]
     }
   ]

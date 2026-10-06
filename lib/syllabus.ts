@@ -1,3 +1,4 @@
+import humanHearing from '../research/syllabus/4HB1-coordination-hearing.json' with { type: 'json' };
 import humanHormones from '../research/syllabus/4HB1-coordination-hormones.json' with { type: 'json' };
 import humanCoordination from '../research/syllabus/4HB1-coordination-foundations.json' with { type: 'json' };
 import humanHomeostasis from '../research/syllabus/4HB1-homeostasis.json' with { type: 'json' };
@@ -77,6 +78,7 @@ import mathsPolynomials from '../research/syllabus/4MB1-polynomials-and-fraction
 
 // Reviewed overlays are kept separate from the immutable raw candidates.
 export const reviewedInventories = [
+  { title: 'Human hearing/balance/noise (5.13–5.14; partial teaching)', ...humanHearing },
   { title: 'Human Coordination hormones (5.9–5.10; partial teaching)', ...humanHormones },
   { title: 'Human Coordination foundations (selected5.1–5.8; partial teaching)', ...humanCoordination },
   { title: 'Human homeostasis (10.2–10.11; partial teaching)', ...humanHomeostasis },
