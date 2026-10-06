@@ -7,7 +7,8 @@
   "sourceId": "4CH1-spec",
   "sourcePages": [
     22,
-    23
+    23,
+    24
   ],
   "prerequisites": [
     "Balanced equations conserve atoms.",
@@ -31,7 +32,8 @@
     "Use conditional reaction evidence to rank metals.",
     "Recall the eleven-metal order required by Pearson.",
     "Distinguish rusting conditions, barrier protection and sacrifice.",
-    "Balance electron-transfer examples and identify both agent roles."
+    "Balance electron-transfer examples and identify both agent roles.",
+    "Review the named acid–metal practical and distinguish rate from final product amount."
   ],
   "supportingSources": [
     {
@@ -194,6 +196,14 @@
       "url": "https://goldbook.iupac.org/terms/view/R05222/plain",
       "sectionIds": [
         "redox-electron-transfer"
+      ]
+    },
+    {
+      "title": "Pearson 2017 core practical guide: acid–metal investigation",
+      "url": "https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Biology/2017/teaching-and-learning-materials/biology-chemistry-physics-core-practical-guide.pdf#page=98",
+      "sectionIds": [
+        "acid-metal-practical-plan",
+        "acid-metal-practical-interpretation"
       ]
     }
   ],
@@ -1244,6 +1254,75 @@
         "Calling the oxidized reactant the oxidizing agent just because the words look similar.",
         "Naming product Cu instead of reacting Cu²⁺ as the oxidizing agent.",
         "Calling sulfate the agent merely because it occurs in the salt formula."
+      ]
+    },
+    {
+      "id": "acid-metal-practical-plan",
+      "title": "Planning the named acid–metal investigation",
+      "points": [
+        "2.21"
+      ],
+      "terms": [
+        "magnesium",
+        "zinc",
+        "iron",
+        "hydrochloric acid",
+        "sulfuric acid",
+        "controlled variable"
+      ],
+      "paragraphs": [
+        "The named school investigation compares magnesium, zinc and iron with dilute hydrochloric and sulfuric acids. Keep each metal/acid combination identifiable in a results table, recording reaction evidence and whether a gas is detected. Interpret a proposed table separately from measured results: no investigation has been performed for this site.",
+        "When changing the metal, keep the acid identity, concentration, volume and initial temperature comparable, and account for metal quantity, exposed surface and surface condition. Use a consistent start and observation interval. When investigating acid identity instead, hold the chosen metal and other stated conditions constant. Equal molar concentrations of different acids do not automatically mean equal available hydrogen-ion concentration, so avoid treating acid identity as an irrelevant variable.",
+        "Gas evidence supports hydrogen formation, with an appropriate school hydrogen identification test providing more information than fizzing alone. Slower evolution may not give a suitable gas sample in a short observation, so a weak test result is not automatically proof of a different gas. Dilute acids and flammable hydrogen require the school’s controlled practical arrangements; the examples do not propose adding alkali metals to acid.",
+        "The expected salt follows the acid: magnesium chloride, zinc chloride and iron(II) chloride with HCl; corresponding sulfates with dilute H₂SO₄. Example balanced equations are Zn + 2HCl → ZnCl₂ + H₂ and Fe + H₂SO₄ → FeSO₄ + H₂. Link a recorded observation to a justified product, then explain what the comparison can and cannot establish."
+      ],
+      "example": {
+        "question": "A planned zinc/iron comparison uses different hydrochloric-acid concentrations and different surface areas. Identify two changes needed for a fairer comparison and name the expected gas.",
+        "steps": [
+          "Use the same stated acid concentration for both metal comparisons.",
+          "Make exposed surfaces comparable, while controlling the other stated conditions.",
+          "Expected gas: hydrogen; fizzing alone is not a conclusive identification."
+        ],
+        "explanation": "This is an original plan review, not a trial result. Changing several conditions at once weakens a reactivity inference."
+      },
+      "commonMistakes": [
+        "Recording invented observations as if the practical was performed.",
+        "Calling every acid comparison fair merely because the solution volumes match.",
+        "Writing iron(III) sulfate as the automatic product of iron with the named dilute acid."
+      ]
+    },
+    {
+      "id": "acid-metal-practical-interpretation",
+      "title": "Rates, endpoints and limits of acid–metal evidence",
+      "points": [
+        "2.21"
+      ],
+      "terms": [
+        "average rate",
+        "gas volume",
+        "endpoint",
+        "surface coating",
+        "repeatability"
+      ],
+      "paragraphs": [
+        "A quantitative comparison may record hydrogen volume against time using a suitable school collection setup. An average gas-production rate over a stated interval is change in gas volume divided by elapsed time, with units such as cm³ s⁻¹. Compare like intervals and methods, check collection losses and repeat measurements rather than ranking from an isolated bubble count.",
+        "Total gas at completion and rate are different quantities. Final hydrogen amount depends on available reactants and the limiting reactant. Equal masses of different metals do not give equal numbers of metal atoms, so a larger final volume is not by itself evidence of greater reactivity. A faster initial change and a larger final amount answer different questions.",
+        "A slow start can reflect a surface oxide layer, as in aluminium with hydrochloric acid, rather than a low position in the required series. A reaction can also slow because a poorly soluble product coats the surface, as calcium sulfate can do in the appropriate calcium/sulfuric-acid comparison. Neither extension is a recommendation to replace the named school samples or perform a new trial.",
+        "A stopped reaction does not always prove that both reactants are exhausted. Surface coating, limiting-reactant exhaustion or changing conditions can give different explanations; use the supplied evidence to distinguish them. Report uncertainty and the scope of the comparison, without claiming that repeated similar values eliminate every systematic error."
+      ],
+      "example": {
+        "question": "Two hypothetical trials each collect 20 cm³ of gas: A takes 10 s and B takes 40 s. Calculate the average rates to that volume. Does equal final gas volume prove equal rates?",
+        "steps": [
+          "A:20/10 = 2.0 cm³ s⁻¹.",
+          "B:20/40 = 0.50 cm³ s⁻¹.",
+          "A’s average to this volume is four times B’s; equal amount does not mean equal rate."
+        ],
+        "explanation": "Invented arithmetic illustrates amount versus rate. It does not establish an intrinsic metal ranking without matched reaction and collection conditions."
+      },
+      "commonMistakes": [
+        "Ranking reactivity solely by total hydrogen volume from equal metal masses.",
+        "Using volume multiplied by time as a rate.",
+        "Assuming that a stalled coated surface means all acid has reacted."
       ]
     }
   ]

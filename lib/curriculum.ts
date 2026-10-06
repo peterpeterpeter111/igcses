@@ -1,3 +1,4 @@
+import chemistryAcidPractical from '../research/curriculum-audits/4CH1-acid-metal-practical.json' with { type: 'json' };
 import chemistryReactivity from '../research/curriculum-audits/4CH1-reactivity-rust-redox.json' with { type: 'json' };
 import chemistryAtmosphere from '../research/curriculum-audits/4CH1-atmosphere.json' with { type: 'json' };
 import chemistryHalogenReactivity from '../research/curriculum-audits/4CH1-halogen-reactivity.json' with { type: 'json' };
@@ -71,6 +72,7 @@ import mathsPolynomials from '../research/curriculum-audits/4MB1-polynomials-and
 
 // These bounded audits link partial teaching; they do not promote completion.
 export const curriculumAudits = [
+  chemistryAcidPractical,
   chemistryReactivity,
   chemistryAtmosphere,
   chemistryHalogenReactivity,

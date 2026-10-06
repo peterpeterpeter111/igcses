@@ -1,3 +1,4 @@
+import chemistryAcidPractical from '../research/syllabus/4CH1-acid-metal-practical.json' with { type: 'json' };
 import chemistryReactivity from '../research/syllabus/4CH1-reactivity-rust-redox.json' with { type: 'json' };
 import chemistryAtmosphere from '../research/syllabus/4CH1-atmosphere.json' with { type: 'json' };
 import chemistryHalogenReactivity from '../research/syllabus/4CH1-halogen-reactivity.json' with { type: 'json' };
@@ -66,6 +67,7 @@ import mathsPolynomials from '../research/syllabus/4MB1-polynomials-and-fraction
 
 // Reviewed overlays are kept separate from the immutable raw candidates.
 export const reviewedInventories = [
+  { title: 'Acid–metal practical (2.21; partial teaching)', ...chemistryAcidPractical },
   { title: 'Reactivity, rust and redox (2.15–2.20; partial teaching)', ...chemistryReactivity },
   { title: 'Gases in the atmosphere (2.9–2.14; partial teaching)', ...chemistryAtmosphere },
   { title: 'Halogen displacement and reactivity (2.7–2.8C; partial teaching)', ...chemistryHalogenReactivity },

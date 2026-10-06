@@ -1,3 +1,11 @@
+# Latest phase — Acid–metal practical, 6 October 2026
+
+Read `research/checkpoints/2026-10-06-ACID-PRACTICAL.md` first. Preserve5963ddd andall descendants. GitHub1802c33 exactly mirrors the reactivity tree;older pending sync resolved. Two original partial lessons cover own2.21,both1C/2C;inorganic34sections. No performed experiment or new examination pair. Guide98/99 visually read;not a processed paper.
+
+Totals662sections/27partialnotes/36routes;609reviewed identities/593partialaudits/1,867localrequirements/891partiallinks. Chemistry83sections/two notes/81identities and audits/256requirements.143tests,typecheck/lint/14research/content/evidence/isolatedD1/build/89-filepublicscan pass;desktop reader/exactcoverage verified. First-frame timing,narrow/hosted checks pending. Sevenobtainedpairs;zero processedpapers/completepoints/chapters/activefamilies;seven experimental prototypes/live registry empty.
+
+Commit/sync this newer phase non-force and verify exacttree. Next own2.22C–2.27C extraction/uses/alloys,all Paper2C-only (visual preparation only),then widercurriculum,historical/skills reviews and independent calibration. Preserve quality/UI/history/counts;AIlast,noreset/version/deployment/publicURL. Latestuser continues useful work until weekly exhausted,overriding historical5%gate for this run. Last33%five-hour/1%weeklyremaining. Resume latestcommit and this checkpoint when ordinary allowance returns;do not restart. Older entries historical.
+
 # Latest phase — Reactivity, rust and redox, 6 October 2026
 
 Read `research/checkpoints/2026-10-06-REACTIVITY.md` first. Preserve d6e5104 and descendants. GitHub63ef574 exactly mirrors the atmosphere tree;old pending sync resolved. Twelve new partial lessons cover own2.15–2.20,all both1C/2C. Inorganic32sections. Keep source-error corrections,conditional comparisons and agent-role explanations.
