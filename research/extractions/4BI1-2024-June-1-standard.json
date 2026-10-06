@@ -21,10 +21,11 @@
   "fullyProcessed": false,
   "wholePaperMarks": 110,
   "wholePaperLeafCount": null,
-  "detailedLeafTasks": 6,
-  "detailedOriginalMarks": 12,
+  "detailedLeafTasks": 14,
+  "detailedOriginalMarks": 26,
   "reviewedQuestionTotals": {
-    "1": 12
+    "1": 12,
+    "2": 14
   },
   "reviewedSubsetMarksReconciled": true,
   "marksReconciled": false,
@@ -50,7 +51,10 @@
         2,
         3,
         4,
-        5
+        5,
+        6,
+        7,
+        8
       ],
       "wholeDocumentReviewed": false
     },
@@ -59,7 +63,10 @@
         3,
         4,
         5,
-        6
+        6,
+        7,
+        8,
+        9
       ],
       "wholeDocumentReviewed": false
     }
@@ -76,7 +83,9 @@
     "reviewedPages": [
       18,
       21,
+      26,
       29,
+      31,
       49
     ],
     "wholeHistoricalAmendmentReconciliation": "pending"
@@ -1135,10 +1144,1167 @@
           ]
         }
       }
+    },
+    {
+      "paperId": "4BI1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4BI1-2024-June-1-standard.Q2.a.i",
+      "questionPath": "2.a.i",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        6
+      ],
+      "markSchemePages": [
+        7
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Which",
+      "commandWordStatus": "source-checked-short-label",
+      "requiredKnowledge": [
+        "style",
+        "flower anatomy"
+      ],
+      "contextSummary": "Select the labelled style in the given flower.",
+      "solutionStructure": [
+        "Select B, structure Q."
+      ],
+      "markingMethod": "single-choice",
+      "criteria": [
+        {
+          "id": "4BI1-2024-June-1-standard.Q2.a.i:point-1",
+          "marks": 1,
+          "rule": "Select B, structure Q."
+        }
+      ],
+      "scoringRule": {
+        "mode": "single-choice",
+        "maximum": 1,
+        "eligibleCriterionIds": [
+          "4BI1-2024-June-1-standard.Q2.a.i:point-1"
+        ],
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            7
+          ]
+        },
+        "answerLabel": "B",
+        "structureLabel": "Q"
+      },
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4BI1:issue3:3.3",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "The labelled flower structure and pollination role are directly assessed.",
+          "evidenceRefs": [
+            {
+              "documentId": "4BI1-spec",
+              "pdfPages": [
+                26
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                6
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                7
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "flower-diagram",
+        "multiple-choice"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            6
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO marks inferred.",
+      "proposedFamilyId": "4BI1.flower.i",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generative family or response recognizer; candidate family only.",
+        "Official per-leaf AO allocation, historical amendments and whole-paper processing remain incomplete."
+      ],
+      "sourceChoices": [
+        {
+          "label": "A",
+          "structureLabel": "P"
+        },
+        {
+          "label": "B",
+          "structureLabel": "Q"
+        },
+        {
+          "label": "C",
+          "structureLabel": "S"
+        },
+        {
+          "label": "D",
+          "structureLabel": "T"
+        }
+      ]
+    },
+    {
+      "paperId": "4BI1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4BI1-2024-June-1-standard.Q2.a.ii",
+      "questionPath": "2.a.ii",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        6
+      ],
+      "markSchemePages": [
+        7
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Which",
+      "commandWordStatus": "source-checked-short-label",
+      "requiredKnowledge": [
+        "pollen-releasing anther",
+        "flower anatomy"
+      ],
+      "contextSummary": "Select the labelled pollen-releasing anther in the given flower.",
+      "solutionStructure": [
+        "Select D, structure U."
+      ],
+      "markingMethod": "single-choice",
+      "criteria": [
+        {
+          "id": "4BI1-2024-June-1-standard.Q2.a.ii:point-1",
+          "marks": 1,
+          "rule": "Select D, structure U."
+        }
+      ],
+      "scoringRule": {
+        "mode": "single-choice",
+        "maximum": 1,
+        "eligibleCriterionIds": [
+          "4BI1-2024-June-1-standard.Q2.a.ii:point-1"
+        ],
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            7
+          ]
+        },
+        "answerLabel": "D",
+        "structureLabel": "U"
+      },
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4BI1:issue3:3.3",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "The labelled flower structure and pollination role are directly assessed.",
+          "evidenceRefs": [
+            {
+              "documentId": "4BI1-spec",
+              "pdfPages": [
+                26
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                6
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                7
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "flower-diagram",
+        "multiple-choice"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            6
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO marks inferred.",
+      "proposedFamilyId": "4BI1.flower.ii",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generative family or response recognizer; candidate family only.",
+        "Official per-leaf AO allocation, historical amendments and whole-paper processing remain incomplete."
+      ],
+      "sourceChoices": [
+        {
+          "label": "A",
+          "structureLabel": "P"
+        },
+        {
+          "label": "B",
+          "structureLabel": "R"
+        },
+        {
+          "label": "C",
+          "structureLabel": "T"
+        },
+        {
+          "label": "D",
+          "structureLabel": "U"
+        }
+      ]
+    },
+    {
+      "paperId": "4BI1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4BI1-2024-June-1-standard.Q2.a.iii",
+      "questionPath": "2.a.iii",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        6
+      ],
+      "markSchemePages": [
+        7
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Which",
+      "commandWordStatus": "source-checked-short-label",
+      "requiredKnowledge": [
+        "pollen germination site",
+        "flower anatomy"
+      ],
+      "contextSummary": "Select the labelled pollen germination site in the given flower.",
+      "solutionStructure": [
+        "Select A, structure P."
+      ],
+      "markingMethod": "single-choice",
+      "criteria": [
+        {
+          "id": "4BI1-2024-June-1-standard.Q2.a.iii:point-1",
+          "marks": 1,
+          "rule": "Select A, structure P."
+        }
+      ],
+      "scoringRule": {
+        "mode": "single-choice",
+        "maximum": 1,
+        "eligibleCriterionIds": [
+          "4BI1-2024-June-1-standard.Q2.a.iii:point-1"
+        ],
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            7
+          ]
+        },
+        "answerLabel": "A",
+        "structureLabel": "P"
+      },
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4BI1:issue3:3.3",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "The labelled flower structure and pollination role are directly assessed.",
+          "evidenceRefs": [
+            {
+              "documentId": "4BI1-spec",
+              "pdfPages": [
+                26
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                6
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                7
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "flower-diagram",
+        "multiple-choice"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            6
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO marks inferred.",
+      "proposedFamilyId": "4BI1.flower.iii",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generative family or response recognizer; candidate family only.",
+        "Official per-leaf AO allocation, historical amendments and whole-paper processing remain incomplete."
+      ],
+      "sourceChoices": [
+        {
+          "label": "A",
+          "structureLabel": "P"
+        },
+        {
+          "label": "B",
+          "structureLabel": "R"
+        },
+        {
+          "label": "C",
+          "structureLabel": "S"
+        },
+        {
+          "label": "D",
+          "structureLabel": "U"
+        }
+      ]
+    },
+    {
+      "paperId": "4BI1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4BI1-2024-June-1-standard.Q2.b",
+      "questionPath": "2.b",
+      "originalMarks": 3,
+      "questionPaperPages": [
+        7
+      ],
+      "markSchemePages": [
+        8
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Describe",
+      "commandWordStatus": "source-checked-short-label",
+      "requiredKnowledge": [
+        "wind pollination",
+        "stigma/petal/filament adaptations"
+      ],
+      "contextSummary": "Describe how labelled structures P, R and T differ in a wind-pollinated flower.",
+      "solutionStructure": [
+        "P: a feathery, large or exposed stigma.",
+        "R: petals reduced/absent, green or not conspicuously coloured.",
+        "T: filaments longer, hinged or exposed."
+      ],
+      "markingMethod": "all-distinct",
+      "criteria": [
+        {
+          "id": "4BI1-2024-June-1-standard.Q2.b:point-1",
+          "marks": 1,
+          "rule": "Accepted wind adaptation for P (stigma)."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q2.b:point-2",
+          "marks": 1,
+          "rule": "Accepted wind adaptation for R (petal)."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q2.b:point-3",
+          "marks": 1,
+          "rule": "Accepted wind adaptation for T (filament)."
+        }
+      ],
+      "scoringRule": {
+        "mode": "all-distinct",
+        "maximum": 3,
+        "eligibleCriterionIds": [
+          "4BI1-2024-June-1-standard.Q2.b:point-1",
+          "4BI1-2024-June-1-standard.Q2.b:point-2",
+          "4BI1-2024-June-1-standard.Q2.b:point-3"
+        ],
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            8
+          ]
+        },
+        "selectionLimit": 3,
+        "creditPerCriterion": 1
+      },
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4BI1:issue3:3.3",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Compare source-labelled insect and wind pollination structures.",
+          "evidenceRefs": [
+            {
+              "documentId": "4BI1-spec",
+              "pdfPages": [
+                26
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                7
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                8
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "flower-diagram",
+        "labelled-response"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            6,
+            7
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO marks inferred.",
+      "proposedFamilyId": "4BI1.flower.wind-adaptations",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generative family or response recognizer; candidate family only.",
+        "Official per-leaf AO allocation, historical amendments and whole-paper processing remain incomplete.",
+        "The original three-mark demand needs a separately calibrated 2/4/6-mark quiz adaptation."
+      ],
+      "labelledScoring": {
+        "labels": [
+          "P",
+          "R",
+          "T"
+        ],
+        "oneMarkPerLabel": true,
+        "maximum": 3,
+        "publishedAlternatives": [
+          {
+            "label": "P",
+            "alternatives": [
+              "feathery",
+              "large surface area",
+              "outside flower",
+              "exposed"
+            ]
+          },
+          {
+            "label": "R",
+            "alternatives": [
+              "absent",
+              "smaller",
+              "not coloured",
+              "green"
+            ]
+          },
+          {
+            "label": "T",
+            "alternatives": [
+              "longer",
+              "hinged",
+              "outside flower",
+              "exposed"
+            ]
+          }
+        ],
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            8
+          ]
+        }
+      }
+    },
+    {
+      "paperId": "4BI1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4BI1-2024-June-1-standard.Q2.c.i",
+      "questionPath": "2.c.i",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        7
+      ],
+      "markSchemePages": [
+        8
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Give",
+      "commandWordStatus": "source-checked-short-label",
+      "requiredKnowledge": [
+        "natural plant propagation"
+      ],
+      "contextSummary": "Give one natural method of asexual plant reproduction.",
+      "solutionStructure": [
+        "Name one accepted specific method."
+      ],
+      "markingMethod": "one-of-alternatives",
+      "criteria": [
+        {
+          "id": "4BI1-2024-June-1-standard.Q2.c.i:point-1",
+          "marks": 1,
+          "rule": "An accepted specific propagation method."
+        }
+      ],
+      "scoringRule": {
+        "mode": "one-of-alternatives",
+        "maximum": 1,
+        "eligibleCriterionIds": [
+          "4BI1-2024-June-1-standard.Q2.c.i:point-1"
+        ],
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            8
+          ]
+        }
+      },
+      "acceptableAlternatives": [
+        "runners",
+        "bulbs",
+        "corms",
+        "tubers",
+        "rhizomes"
+      ],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4BI1:issue3:3.7",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "The source tests one natural/artificial example; the current statement illustrates runners/cuttings, not every accepted alternative.",
+          "evidenceRefs": [
+            {
+              "documentId": "4BI1-spec",
+              "pdfPages": [
+                26
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                7
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                8
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "short-answer"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            7
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO marks inferred.",
+      "proposedFamilyId": "4BI1.plant-propagation.natural",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generative family or response recognizer; candidate family only.",
+        "Official per-leaf AO allocation, historical amendments and whole-paper processing remain incomplete.",
+        "The scheme accepts methods beyond the current statement examples; full historical/alternative method scope remains partial."
+      ],
+      "sourceMethodPolicy": {
+        "natural": true,
+        "publishedAcceptedMethods": [
+          "runners",
+          "bulbs",
+          "corms",
+          "tubers",
+          "rhizomes"
+        ],
+        "rejectedBareTerms": [],
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            8
+          ]
+        },
+        "recognitionStatus": "not-implemented"
+      }
+    },
+    {
+      "paperId": "4BI1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4BI1-2024-June-1-standard.Q2.c.ii",
+      "questionPath": "2.c.ii",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        7
+      ],
+      "markSchemePages": [
+        8
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Give",
+      "commandWordStatus": "source-checked-short-label",
+      "requiredKnowledge": [
+        "artificial plant propagation"
+      ],
+      "contextSummary": "Give one artificial method of asexual plant reproduction.",
+      "solutionStructure": [
+        "Name one accepted specific method."
+      ],
+      "markingMethod": "one-of-alternatives",
+      "criteria": [
+        {
+          "id": "4BI1-2024-June-1-standard.Q2.c.ii:point-1",
+          "marks": 1,
+          "rule": "An accepted specific propagation method."
+        }
+      ],
+      "scoringRule": {
+        "mode": "one-of-alternatives",
+        "maximum": 1,
+        "eligibleCriterionIds": [
+          "4BI1-2024-June-1-standard.Q2.c.ii:point-1"
+        ],
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            8
+          ]
+        }
+      },
+      "acceptableAlternatives": [
+        "cuttings",
+        "grafting",
+        "layering",
+        "tissue culture",
+        "micropropagation"
+      ],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4BI1:issue3:3.7",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "The source tests one natural/artificial example; the current statement illustrates runners/cuttings, not every accepted alternative.",
+          "evidenceRefs": [
+            {
+              "documentId": "4BI1-spec",
+              "pdfPages": [
+                26
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                7
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                8
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "short-answer"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            7
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO marks inferred.",
+      "proposedFamilyId": "4BI1.plant-propagation.artificial",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generative family or response recognizer; candidate family only.",
+        "Official per-leaf AO allocation, historical amendments and whole-paper processing remain incomplete.",
+        "The scheme accepts methods beyond the current statement examples; full historical/alternative method scope remains partial."
+      ],
+      "sourceMethodPolicy": {
+        "natural": false,
+        "publishedAcceptedMethods": [
+          "cuttings",
+          "grafting",
+          "layering",
+          "tissue culture",
+          "micropropagation"
+        ],
+        "rejectedBareTerms": [
+          "cloning"
+        ],
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            8
+          ]
+        },
+        "recognitionStatus": "not-implemented"
+      }
+    },
+    {
+      "paperId": "4BI1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4BI1-2024-June-1-standard.Q2.d",
+      "questionPath": "2.d",
+      "originalMarks": 3,
+      "questionPaperPages": [
+        7
+      ],
+      "markSchemePages": [
+        9
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Give",
+      "commandWordStatus": "source-checked-short-label",
+      "requiredKnowledge": [
+        "sexual versus asexual reproduction",
+        "gametes/fusion",
+        "genetic variation"
+      ],
+      "contextSummary": "Give three differences between sexual and asexual reproduction.",
+      "solutionStructure": [
+        "Any three distinct published comparison points from the four-point pool."
+      ],
+      "markingMethod": "any-distinct",
+      "criteria": [
+        {
+          "id": "4BI1-2024-June-1-standard.Q2.d:point-1",
+          "marks": 1,
+          "rule": "Gamete production/meiosis in sexual reproduction versus its absence in asexual; published one-parent-cell alternative retained."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q2.d:point-2",
+          "marks": 1,
+          "rule": "Fusion/fertilisation in sexual reproduction versus its absence in asexual."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q2.d:point-3",
+          "marks": 1,
+          "rule": "Sexual offspring show genetic variation versus asexual clones."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q2.d:point-4",
+          "marks": 1,
+          "rule": "Asexual reproduction is faster/shorter in the source comparison."
+        }
+      ],
+      "scoringRule": {
+        "mode": "any-distinct",
+        "maximum": 3,
+        "eligibleCriterionIds": [
+          "4BI1-2024-June-1-standard.Q2.d:point-1",
+          "4BI1-2024-June-1-standard.Q2.d:point-2",
+          "4BI1-2024-June-1-standard.Q2.d:point-3",
+          "4BI1-2024-June-1-standard.Q2.d:point-4"
+        ],
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            9
+          ]
+        },
+        "selectionLimit": 3,
+        "creditPerCriterion": 1
+      },
+      "acceptableAlternatives": [
+        "Two or three credited points may occur in one numbered answer line."
+      ],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4BI1:issue3:3.1",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Compare sexual and asexual reproduction.",
+          "evidenceRefs": [
+            {
+              "documentId": "4BI1-spec",
+              "pdfPages": [
+                26
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                7
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                9
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4BI1:issue3:3.2",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Gamete fusion supports the fertilisation comparison; full embryo-development demand is not assessed.",
+          "evidenceRefs": [
+            {
+              "documentId": "4BI1-spec",
+              "pdfPages": [
+                26
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                7
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                9
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "comparison"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            7
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO marks inferred.",
+      "proposedFamilyId": "4BI1.reproduction.comparison",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generative family or response recognizer; candidate family only.",
+        "Official per-leaf AO allocation, historical amendments and whole-paper processing remain incomplete.",
+        "Coupled fusion credit and context-qualified variation/speed comparisons require calibration; original three marks are not an approved quiz adaptation."
+      ],
+      "sourceComparisonPolicy": {
+        "allowMultiplePointsInOneLine": true,
+        "ignoredEvidence": [
+          "number of parents"
+        ],
+        "publishedCellAlternative": "one parent cell",
+        "publishedGameteFusionConcession": {
+          "description": "Sexual reproduction involves fusion of gametes.",
+          "creditsCriterionIds": [
+            "4BI1-2024-June-1-standard.Q2.d:point-1",
+            "4BI1-2024-June-1-standard.Q2.d:point-2"
+          ],
+          "distinctMarks": 2
+        },
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            9
+          ]
+        },
+        "recognitionStatus": "not-implemented"
+      },
+      "sourceQualification": {
+        "status": "published-comparisons-retained-with-context-limits",
+        "note": "The source clone/no-variation and speed comparisons are retained as marking points, not universal claims excluding mutation or environmental effects. The one-parent-cell alternative is distinct from ignored parent-organism counts. Sexual plant life cycles involve meiosis, but the source wording does not certify that all plant gametes form directly by meiosis.",
+        "generatedUse": "blocked-until-biological-scope-and-response-policy-review",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            9
+          ]
+        }
+      }
+    },
+    {
+      "paperId": "4BI1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4BI1-2024-June-1-standard.Q2.e",
+      "questionPath": "2.e",
+      "originalMarks": 3,
+      "questionPaperPages": [
+        8
+      ],
+      "markSchemePages": [
+        9
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Explain",
+      "commandWordStatus": "source-checked-short-label",
+      "requiredKnowledge": [
+        "selective breeding",
+        "crossing",
+        "offspring selection",
+        "repeated generations"
+      ],
+      "contextSummary": "Explain how the farmer could combine red flowers and scent from two existing varieties.",
+      "solutionStructure": [
+        "Identify selective breeding/artificial selection.",
+        "Cross the two varieties.",
+        "Select and breed offspring with both desired traits.",
+        "Repeat across generations; any three distinct source points are capped at three."
+      ],
+      "markingMethod": "any-distinct",
+      "criteria": [
+        {
+          "id": "4BI1-2024-June-1-standard.Q2.e:point-1",
+          "marks": 1,
+          "rule": "Identify selective breeding/artificial selection."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q2.e:point-2",
+          "marks": 1,
+          "rule": "Cross the two source varieties."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q2.e:point-3",
+          "marks": 1,
+          "rule": "Select/breed offspring with red flowers and scent."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q2.e:point-4",
+          "marks": 1,
+          "rule": "Repeat across many generations."
+        }
+      ],
+      "scoringRule": {
+        "mode": "any-distinct",
+        "maximum": 3,
+        "eligibleCriterionIds": [
+          "4BI1-2024-June-1-standard.Q2.e:point-1",
+          "4BI1-2024-June-1-standard.Q2.e:point-2",
+          "4BI1-2024-June-1-standard.Q2.e:point-3",
+          "4BI1-2024-June-1-standard.Q2.e:point-4"
+        ],
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            9
+          ]
+        },
+        "selectionLimit": 3,
+        "creditPerCriterion": 1
+      },
+      "acceptableAlternatives": [
+        "Crossing the varieties/plants need not repeat both source trait descriptions."
+      ],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4BI1:issue3:5.10",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Develop desired plant characteristics through selection and breeding.",
+          "evidenceRefs": [
+            {
+              "documentId": "4BI1-spec",
+              "pdfPages": [
+                31
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                8
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                9
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "plant-breeding-scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            8
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO marks inferred.",
+      "proposedFamilyId": "4BI1.selective-breeding.combine-traits",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generative family or response recognizer; candidate family only.",
+        "Official per-leaf AO allocation, historical amendments and whole-paper processing remain incomplete.",
+        "No source genotypes or dominance given; do not invent offspring probabilities. Original three-mark pool needs demand and quiz-adaptation calibration."
+      ],
+      "sourceTraitData": {
+        "varieties": [
+          {
+            "flowerColour": "red",
+            "scent": false
+          },
+          {
+            "flowerColour": "white",
+            "scent": true
+          }
+        ],
+        "desired": {
+          "flowerColour": "red",
+          "scent": true
+        },
+        "genotypesProvided": false,
+        "dominanceProvided": false,
+        "probabilityClaim": null,
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            8
+          ]
+        }
+      },
+      "sourceBreedingPolicy": {
+        "ignoreGeneticModificationReferences": true,
+        "desiredCharacteristicsAloneCredit": false,
+        "unqualifiedCrossVarietiesAccepted": true,
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            9
+          ]
+        },
+        "recognitionStatus": "not-implemented"
+      }
     }
   ],
   "blockers": [
-    "Only Q1: six detailed parts / 12 marks; whole-paper leaf count and visual inventory remain unknown.",
+    "Only Q1–Q2: fourteen detailed parts / 26 marks; whole-paper leaf count and visual inventory remain unknown.",
     "Whole historical, skills/AO and paper-to-current-scope reconciliation incomplete.",
     "Printed divisor 35 and tick-context physiological examples require generated-reuse policy.",
     "No calibrated Biology template, response recognition or learner/examiner certification.",
@@ -1151,6 +2317,27 @@
     "QP PDF2 food-web edges and PDF4 physical measurement stimulus were visually checked; source diagrams remain private.",
     "Nutrition functions are dependent on named substances; vitamin/mineral category naming caps and ignored blood-cell evidence retained.",
     "Magnification has a final-answer full-credit range and alternative one-mark branches; calculation lines are not independent mark points.",
-    "Per-leaf AO fields remain empty; selected Appendix 4 IDs are separate from numbered content points."
-  ]
+    "Per-leaf AO fields remain empty; selected Appendix 4 IDs are separate from numbered content points.",
+    "Q2 adds eight parts / 14 marks, matched to QP PDF6–8 and MS PDF7–9; both final source pages show the 14-mark total.",
+    "Q2 source rejects cloning alone for an artificial method, ignores number-of-parent references but accepts one parent cell, and permits gamete-fusion wording to earn the first two distinct comparison points.",
+    "Comparison and selective-breeding pools each contain four one-mark points capped at three. Original three-mark demands do not create 3-mark custom quizzes or validated adaptations.",
+    "No source genotype, dominance or offspring probability is supplied for breeding; no such value is invented."
+  ],
+  "sourceFlower": {
+    "labels": {
+      "P": "stigma",
+      "Q": "style",
+      "R": "petal",
+      "S": "ovary",
+      "T": "filament",
+      "U": "anther"
+    },
+    "sourceRef": {
+      "documentId": "4BI1-2024-June-1-standard:questionPaper",
+      "pdfPages": [
+        6
+      ]
+    },
+    "diagramAccess": "Private semantic transcription; original scan not public."
+  }
 }

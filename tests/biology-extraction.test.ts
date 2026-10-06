@@ -9,23 +9,23 @@ import { subjectEvidence, coverageSummary, evidenceHighlights } from '../lib/cov
 
 void test('Biology exposes a detailed subset while keeping private rubrics and whole-paper gates separate', () => {
   const row = subjectEvidence('4BI1').find((r) => r.paperId === extraction.paperId)!;
-  assert.equal(row.extraction?.detailedTasks, 6);
-  assert.equal(row.extraction?.originalMarks, 12);
+  assert.equal(row.extraction?.detailedTasks, 14);
+  assert.equal(row.extraction?.originalMarks, 26);
   assert.equal(row.extraction?.expectedTasks, null);
   assert.equal(row.extraction?.wholePageAudit, false);
   assert.equal(row.index, null);
-  assert.deepEqual(row.extraction?.reviewedQuestions, ['1']);
-  assert.equal(row.extraction?.questionPaperPages, 4);
-  assert.equal(row.extraction?.markSchemePages, 4);
+  assert.deepEqual(row.extraction?.reviewedQuestions, ['1', '2']);
+  assert.equal(row.extraction?.questionPaperPages, 7);
+  assert.equal(row.extraction?.markSchemePages, 7);
   assert.equal(coverageSummary().find((r) => r.subject.code === '4BI1')?.fullyProcessed, 0);
-  assert.equal(evidenceHighlights.biologyDetailedParts, 6);
+  assert.equal(evidenceHighlights.biologyDetailedParts, 14);
   const summary = JSON.stringify(row);
-  for (const hidden of ['sourceChain', 'numericScoring', 'pairScoring', 'eligibleCriterionIds', 'sourceFoodWeb', 'answerLabel']) {
+  for (const hidden of ['sourceChain', 'numericScoring', 'pairScoring', 'eligibleCriterionIds', 'sourceFoodWeb', 'sourceFlower', 'sourceComparisonPolicy', 'sourceTraitData', 'answerLabel']) {
     assert.ok(!summary.includes(hidden), hidden);
   }
   assert.equal(extraction.paperStage, 'indexed');
   assert.equal(extraction.marksReconciled, false);
-  assert.equal(extraction.tasks.reduce((sum, t) => sum + t.originalMarks, 0), 12);
+  assert.equal(extraction.tasks.reduce((sum, t) => sum + t.originalMarks, 0), 26);
   for (const [ref, hash] of [[extraction.rawManifestRef, extraction.rawManifestSha256], [extraction.coverReviewRef, extraction.coverReviewSha256]]) {
     assert.equal(createHash('sha256').update(readFileSync(ref)).digest('hex'), hash);
   }
@@ -48,7 +48,7 @@ void test('The food-web transcription independently gives the four-level chain a
   assert.deepEqual(levels('mouse'), [2, 3]);
   assert.deepEqual(levels('blue jay'), [4]);
   assert.deepEqual(levels('tick'), [3, 4]);
-  assert.deepEqual(extraction.tasks[2].sourceChoices?.filter((c) => levels(c.organism).length > 1), [{ label: 'D', organism: 'mouse' }]);
+  assert.deepEqual(extraction.tasks[2].sourceChoices?.filter((c) => 'organism' in c && levels(c.organism).length > 1), [{ label: 'D', organism: 'mouse' }]);
   const chain = extraction.tasks[1];
   assert.equal(chain.sourceChain?.correctWholeChainMarks, 2);
   assert.equal(chain.sourceChain?.correctOrderOnlyMarks, 1);
@@ -133,6 +133,20 @@ mutations={
  'tick-physiology':lambda m:m['tasks'][4]['sourceQualification'].update(generatedUse='ready'),
  'nutrition-example':lambda m:m['tasks'][4]['pairScoring']['publishedExamples'][0].update(functions=['oxygen']),
  'any-three':lambda m:m['tasks'][5]['scoringRule'].update(selectionLimit=3),
+ 'flower-label':lambda m:m['sourceFlower']['labels'].update(T='anther'),
+ 'flower-option':lambda m:m['tasks'][6]['scoringRule'].update(answerLabel='A'),
+ 'wind-cap':lambda m:m['tasks'][9]['labelledScoring'].update(oneMarkPerLabel=False),
+ 'natural-method':lambda m:m['tasks'][10]['sourceMethodPolicy']['publishedAcceptedMethods'].append('cuttings'),
+ 'bare-cloning':lambda m:m['tasks'][11]['sourceMethodPolicy'].update(rejectedBareTerms=[]),
+ 'parent-count':lambda m:m['tasks'][12]['sourceComparisonPolicy'].update(ignoredEvidence=[]),
+ 'cell-alternative':lambda m:m['tasks'][12]['sourceComparisonPolicy'].update(publishedCellAlternative='one parent'),
+ 'fusion-concession':lambda m:m['tasks'][12]['sourceComparisonPolicy']['publishedGameteFusionConcession'].update(distinctMarks=1),
+ 'single-line-only':lambda m:m['tasks'][12]['sourceComparisonPolicy'].update(allowMultiplePointsInOneLine=False),
+ 'comparison-reuse':lambda m:m['tasks'][12]['sourceQualification'].update(generatedUse='ready'),
+ 'invented-probability':lambda m:m['tasks'][13]['sourceTraitData'].update(probabilityClaim=0.25),
+ 'invented-genotype':lambda m:m['tasks'][13]['sourceTraitData'].update(genotypesProvided=True),
+ 'traits-alone':lambda m:m['tasks'][13]['sourceBreedingPolicy'].update(desiredCharacteristicsAloneCredit=True),
+ 'breeding-cap':lambda m:m['tasks'][13]['scoringRule'].update(selectionLimit=4),
 }
 for name,mutate in mutations.items():
  m=copy.deepcopy(original);mutate(m)
@@ -142,6 +156,39 @@ for name,mutate in mutations.items():
  assert all(p.read_bytes()==data for p,data in before.items()),name+' changed a ledger table'
 print(json.dumps({'rejected':len(mutations),'tables':len(outputs)}))
 `], { encoding: 'utf8' }));
-  assert.equal(proof.rejected, 24);
+  assert.equal(proof.rejected, 38);
   assert.equal(proof.tables, 4);
+});
+
+void test('Flower diagram roles remain distinct and propagation requires a specific method', () => {
+  assert.deepEqual(extraction.sourceFlower.labels, { P: 'stigma', Q: 'style', R: 'petal', S: 'ovary', T: 'filament', U: 'anther' });
+  assert.deepEqual(extraction.tasks.slice(6, 9).map((t) => [t.scoringRule.answerLabel, t.scoringRule.structureLabel]), [['B', 'Q'], ['D', 'U'], ['A', 'P']]);
+  assert.equal(extraction.tasks[9].labelledScoring?.oneMarkPerLabel, true);
+  assert.equal(extraction.tasks[9].criteria.length, 3);
+  assert.deepEqual(extraction.tasks[10].sourceMethodPolicy?.publishedAcceptedMethods, ['runners', 'bulbs', 'corms', 'tubers', 'rhizomes']);
+  assert.deepEqual(extraction.tasks[11].sourceMethodPolicy?.rejectedBareTerms, ['cloning']);
+  assert.ok(extraction.tasks[11].acceptableAlternatives.some((method) => method === 'cuttings'));
+  assert.equal(extraction.tasks.filter((t) => t.questionPath.startsWith('2.')).reduce((sum, t) => sum + t.originalMarks, 0), 14);
+});
+
+void test('Comparison and breeding source pools preserve caps and special credit without an active adaptation', () => {
+  const comparison = extraction.tasks[12], breeding = extraction.tasks[13];
+  for (const task of [comparison, breeding]) {
+    assert.equal(task.originalMarks, 3);
+    assert.equal(task.criteria.length, 4);
+    assert.equal(task.scoringRule.selectionLimit, 3);
+    assert.equal(task.scoringRule.maximum, 3);
+    assert.equal(task.scoringRule.recognitionStatus, 'not-implemented');
+  }
+  const policy = comparison.sourceComparisonPolicy!;
+  assert.equal(policy.allowMultiplePointsInOneLine, true);
+  assert.deepEqual(policy.ignoredEvidence, ['number of parents']);
+  assert.equal(policy.publishedCellAlternative, 'one parent cell');
+  assert.deepEqual(policy.publishedGameteFusionConcession.creditsCriterionIds, comparison.criteria.slice(0, 2).map((c) => c.id));
+  assert.equal(policy.publishedGameteFusionConcession.distinctMarks, 2);
+  assert.equal(breeding.sourceTraitData?.genotypesProvided, false);
+  assert.equal(breeding.sourceTraitData?.dominanceProvided, false);
+  assert.equal(breeding.sourceTraitData?.probabilityClaim, null);
+  assert.equal(breeding.sourceBreedingPolicy?.desiredCharacteristicsAloneCredit, false);
+  assert.equal(evidenceHighlights.activeFamilies, 0);
 });
