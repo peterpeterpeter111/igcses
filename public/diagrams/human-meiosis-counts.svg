@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" role="img" aria-labelledby="title description">
+ <title id="title">Chromosome counts through a toy meiosis model</title>
+ <desc id="description">Original counting chart for a diploid cell with four chromosomes. DNA replication leaves four chromosomes with eight chromatids; meiosis I produces two cells with two replicated chromosomes in each; meiosis II produces four cells with two single chromosomes in each. Counts are per cell. Human oogenesis is unequal and does not give four functional eggs.</desc>
+ <defs><marker id="arrow" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0 0L9 3.5L0 7" fill="#774c42"/></marker></defs>
+ <rect width="700" height="700" fill="#faf7ed"/>
+ <g fill="#302c27" font-family="Arial, sans-serif">
+  <text x="28" y="42" font-size="27" font-weight="bold">One DNA copy · two divisions</text>
+  <text x="28" y="76" font-size="20">Original toy model: 2n = 4, not a human cell count</text>
+  <rect x="28" y="105" width="644" height="94" fill="#eee2d9" stroke="#ac8d79"/>
+  <text x="48" y="138" font-size="22" font-weight="bold">Before DNA replication</text>
+  <text x="48" y="173" font-size="21">1 diploid cell · 4 chromosomes · 4 chromatids</text>
+  <path d="M350 204V235" stroke="#774c42" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="28" y="244" width="644" height="94" fill="#eee2d9" stroke="#ac8d79"/>
+  <text x="48" y="277" font-size="22" font-weight="bold">After DNA replication</text>
+  <text x="48" y="312" font-size="21">Still diploid · 4 chromosomes · 8 chromatids</text>
+  <path d="M350 343V374" stroke="#774c42" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="375" y="365" font-size="19">I: homologues separate</text>
+  <rect x="28" y="383" width="644" height="94" fill="#e4e6d5" stroke="#8b9277"/>
+  <text x="48" y="416" font-size="22" font-weight="bold">2 haploid cells after meiosis I</text>
+  <text x="48" y="451" font-size="21">Each: 2 replicated chromosomes · 4 chromatids</text>
+  <path d="M350 482V513" stroke="#774c42" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="375" y="503" font-size="19">II: sisters separate</text>
+  <rect x="28" y="522" width="644" height="94" fill="#e4e6d5" stroke="#8b9277"/>
+  <text x="48" y="555" font-size="22" font-weight="bold">4 haploid products after meiosis II</text>
+  <text x="48" y="590" font-size="21">Each: 2 single chromosomes · 2 chromatids</text>
+  <text x="28" y="653" font-size="19">Counts are per cell; no DNA copying between I and II.</text>
+  <text x="28" y="681" font-size="19">Human egg formation is unequal: not four functional eggs.</text>
+ </g>
+</svg>

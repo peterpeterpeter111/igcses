@@ -13,6 +13,8 @@
     "Use fractions and a diagram key."
   ],
   "goals": [
+    "Trace fertilisation, embryo development and the stages of meiosis.",
+    "Connect reproductive organs, cycle hormones and pregnancy support to their functions.",
     "Distinguish alleles, genotype, phenotype and the listed genetic terminology.",
     "Construct a one-gene cross and interpret probabilities and pedigrees.",
     "Compare the specified inherited-condition models; reproduction, development and the rest of heredity remain incomplete.",
@@ -22,6 +24,572 @@
     "Distinguish genetic, environmental and combined phenotypic differences."
   ],
   "sections": [
+    {
+      "id": "fertilisation-to-embryo",
+      "title": "Trace fertilisation to an embryo",
+      "points": [
+        "11.1",
+        "11.2"
+      ],
+      "paragraphs": [
+        "A male and female gamete fuse during fertilisation; their nuclei combine genetic information in a zygote. In the usual diploid life-cycle model, each haploid gamete contributes one chromosome set, restoring two sets in the zygote.",
+        "The zygote then divides by mitosis. The resulting cells grow and differentiate as an embryo develops. An embryo is not another name for a single unfertilised egg or for every later developmental stage.",
+        "In humans, fertilisation usually occurs in an oviduct. Early divisions begin before the developing embryo reaches the uterus and implants in its lining. Fertilisation and implantation are separate events at different locations."
+      ],
+      "example": {
+        "question": "Distinguish fusion in an oviduct from implantation in the uterus.",
+        "steps": [
+          "Gamete fusion produces a zygote, usually in an oviduct.",
+          "The early developing embryo divides as it travels towards the uterus.",
+          "Implantation attaches it to the uterine lining later."
+        ],
+        "explanation": "Follow the event and its location rather than merging all steps into fertilisation."
+      },
+      "practice": {
+        "question": "Does a human zygote first form by implantation in the uterus?",
+        "answer": "No. Fertilisation usually forms it in an oviduct; implantation follows later.",
+        "explanation": "Keep transfer, fusion, division and implantation in their causal order."
+      },
+      "terms": [
+        "fertilisation",
+        "zygote",
+        "embryo",
+        "haploid",
+        "diploid",
+        "implantation"
+      ],
+      "commonMistakes": [
+        "Do not equate ovulation, fertilisation and implantation."
+      ]
+    },
+    {
+      "id": "zygote-cleavage-and-differentiation",
+      "title": "Follow mitosis from zygote to developing embryo",
+      "points": [
+        "11.2"
+      ],
+      "terms": [
+        "cleavage",
+        "mitosis",
+        "embryo",
+        "differentiation"
+      ],
+      "paragraphs": [
+        "Early cleavage divisions increase cell number: one zygote can produce two cells, then four and then more. They are mitotic divisions, maintaining the chromosome sets in the usual model. Producing more cells is different from reducing chromosome number to make gametes.",
+        "During early cleavage the original volume is partitioned among smaller cells; cell number can increase without the embryo doubling in total size at every division. Later growth, cell movements and differentiation build tissues with different structures and functions. Specialised cells do not normally acquire different chromosome sets simply because their functions differ."
+      ],
+      "example": {
+        "question": "In an idealised sequence with every cell dividing at each round, how many cells follow three rounds from one zygote?",
+        "steps": [
+          "1 → 2 → 4 → 8 cells.",
+          "This counts cells in a synchronised model, not an exact timetable for a real embryo.",
+          "It does not mean that each cell has eight chromosome sets."
+        ],
+        "explanation": "Keep cell number, size and chromosome sets distinct."
+      },
+      "commonMistakes": [
+        "Calling early embryo formation meiosis.",
+        "Assuming every division doubles the embryo’s overall size."
+      ]
+    },
+    {
+      "id": "meiosis-before-division",
+      "title": "Prepare one chromosome copy before two divisions",
+      "points": [
+        "11.3"
+      ],
+      "terms": [
+        "meiosis",
+        "homologous chromosome",
+        "sister chromatid",
+        "centromere",
+        "DNA replication"
+      ],
+      "paragraphs": [
+        "Before meiosis, DNA is copied once. Each replicated chromosome consists of two sister chromatids attached around a centromere. Homologous chromosomes are the maternal and paternal members of a pair; they carry corresponding gene positions and can carry different alleles.",
+        "A replicated chromosome is still counted as one chromosome while its sister chromatids remain joined. In a diploid model with 2n = 4, copying DNA gives four replicated chromosomes, with eight chromatids in total. It does not turn the cell into one with four homologous sets. The two following divisions separate different structures."
+      ],
+      "example": {
+        "question": "A toy cell has four chromosomes before replication. Does it have eight chromosomes immediately after copying DNA?",
+        "steps": [
+          "It has four replicated chromosomes.",
+          "Each has two sister chromatids, so there are eight chromatids.",
+          "Its homologous chromosome sets remain diploid."
+        ],
+        "explanation": "Count chromosomes and DNA copies separately."
+      },
+      "commonMistakes": [
+        "Calling a homologous pair two sister chromatids.",
+        "Counting each joined chromatid as a separate chromosome."
+      ],
+      "diagram": {
+        "src": "/diagrams/human-meiosis-counts.svg",
+        "alt": "Original 2n equals four counting model. DNA replication leaves four chromosomes with eight chromatids; meiosis I gives two cells with two replicated chromosomes each; meiosis II gives four cells with two single chromosomes each. Human oogenesis is unequal and does not produce four functional eggs.",
+        "caption": "Original chromosome-count model, not a microscope image or an anatomical depiction. Counts are per cell; the four equal products are a generic symmetrical model, not human egg formation."
+      }
+    },
+    {
+      "id": "meiosis-first-division",
+      "title": "Trace prophase I to the first division",
+      "points": [
+        "11.3"
+      ],
+      "terms": [
+        "prophase I",
+        "metaphase I",
+        "anaphase I",
+        "telophase I",
+        "crossing over",
+        "reduction division"
+      ],
+      "paragraphs": [
+        "In prophase I chromosomes condense and homologous chromosomes pair. Crossing over can exchange corresponding DNA segments between non-sister chromatids of homologous chromosomes. In metaphase I the pairs align at the cell’s equator; their orientation allows different maternal and paternal homologues to move to each pole.",
+        "In anaphase I homologous chromosomes separate to opposite poles, while each chromosome’s sister chromatids remain joined. At telophase I and the associated cell division, each daughter cell has one member of every homologous pair: a haploid set whose chromosomes are still replicated. This first division reduces the number of chromosome sets."
+      ],
+      "example": {
+        "question": "In a 2n = 4 model, state the chromosome arrangement in each cell after meiosis I.",
+        "steps": [
+          "Each receives one chromosome from each of the two homologous pairs.",
+          "Each is n = 2 with two replicated chromosomes.",
+          "Each chromosome still has two chromatids."
+        ],
+        "explanation": "Reduction concerns homologous sets, not removal of one strand of DNA."
+      },
+      "commonMistakes": [
+        "Separating all sister chromatids in anaphase I.",
+        "Calling a haploid cell diploid because its chromosomes remain replicated."
+      ]
+    },
+    {
+      "id": "meiosis-second-division",
+      "title": "Separate sister chromatids in meiosis II",
+      "points": [
+        "11.3"
+      ],
+      "terms": [
+        "prophase II",
+        "metaphase II",
+        "anaphase II",
+        "telophase II",
+        "haploid"
+      ],
+      "paragraphs": [
+        "DNA is not replicated again between the two meiotic divisions. In prophase II a spindle forms as needed; in metaphase II individual replicated chromosomes align at the equator of each cell. They do not pair up as homologous pairs again.",
+        "In anaphase II sister chromatids separate and move to opposite poles, becoming separate chromosomes. Telophase II and division yield four haploid products in the symmetrical model. Each has one chromosome set; meiosis II does not halve that set number again. Human sperm formation can produce four haploid sperm precursors; human egg formation divides the cytoplasm unequally."
+      ],
+      "example": {
+        "question": "After meiosis II in the 2n = 4 symmetrical model, how many chromosomes are in each product?",
+        "steps": [
+          "Each of the four products has n = 2.",
+          "Its two chromosomes are no longer composed of joined sister chromatids.",
+          "There was no second DNA-copying round."
+        ],
+        "explanation": "Separate cell count from chromosome number per cell."
+      },
+      "commonMistakes": [
+        "Predicting n = 1 by halving the haploid set again.",
+        "Inserting an extra DNA-copying stage between meiosis I and II."
+      ]
+    },
+    {
+      "id": "meiotic-variation-and-oogenesis",
+      "title": "Explain variation and the human egg qualification",
+      "points": [
+        "11.3"
+      ],
+      "terms": [
+        "independent assortment",
+        "recombination",
+        "gamete",
+        "polar body",
+        "oogenesis"
+      ],
+      "paragraphs": [
+        "Crossing over reshuffles allele arrangements within homologous chromosomes; their independent orientation and separation reshuffle whole maternal and paternal chromosomes. These mechanisms can give gametes different combinations of existing alleles. They do not require every allele to mutate during meiosis.",
+        "Human gametes normally have 23 chromosomes. In human egg development, unequal divisions leave most cytoplasm in one cell and produce small polar bodies; meiosis II normally completes in response to fertilisation. The classroom four-product diagram is therefore not a claim that one human primary oocyte forms four equally sized functional eggs."
+      ],
+      "example": {
+        "question": "Why is “meiosis gives four identical eggs” wrong for human egg formation?",
+        "steps": [
+          "Meiosis can produce genetic differences by recombination and assortment.",
+          "Human egg formation allocates cytoplasm unequally.",
+          "The small polar bodies are not four equal functional eggs."
+        ],
+        "explanation": "Apply the generic division model with the stated human context."
+      },
+      "commonMistakes": [
+        "Treating a generic four-product diagram as four functional human eggs.",
+        "Equating reshuffling inherited alleles with creation of every allele."
+      ]
+    },
+    {
+      "id": "male-reproductive-functions",
+      "title": "Link male reproductive structures to functions",
+      "points": [
+        "11.4"
+      ],
+      "paragraphs": [
+        "Testes contain sperm-producing tubules and cells that produce testosterone. The scrotum holds the testes outside the main body cavity, supporting a temperature below core temperature that is suitable for sperm production.",
+        "Sperm mature and are stored in the epididymis, then pass through a sperm duct, or vas deferens. Muscular duct walls help move them during ejaculation; the duct does not produce the sperm.",
+        "Accessory glands, including seminal vesicles and prostate, add fluids to form semen. The fluid provides a transport medium, and seminal-vesicle secretions contain respiratory substrate. Semen therefore includes more than sperm cells alone.",
+        "The penis contains erectile tissue and can deliver semen into the reproductive tract. The urethra is the outlet for semen and urine at different times; neither the bladder nor a kidney is a sperm-producing organ. A full anatomical labelling assessment remains to be added."
+      ],
+      "example": {
+        "question": "Someone says the sperm duct makes semen and the bladder makes sperm. Repair the pathway.",
+        "steps": [
+          "Sperm are produced in the testes and mature in the epididymis.",
+          "The sperm duct transports them.",
+          "Accessory glands add fluid; semen exits via the urethra."
+        ],
+        "explanation": "Connect each structure to production, maturation, transport or delivery."
+      },
+      "practice": {
+        "question": "Why is semen not simply another word for a single sperm cell?",
+        "answer": "It is fluid containing sperm plus glandular secretions.",
+        "explanation": "Connect each structure to production, maturation, transport or delivery."
+      },
+      "terms": [
+        "testis",
+        "scrotum",
+        "epididymis",
+        "sperm duct",
+        "vas deferens",
+        "seminal vesicle",
+        "prostate",
+        "semen",
+        "urethra",
+        "penis"
+      ],
+      "commonMistakes": [
+        "Do not place sperm production in a duct, glandular fluid source in the bladder or gametes in the kidney."
+      ]
+    },
+    {
+      "id": "female-reproductive-functions",
+      "title": "Link female reproductive structures to functions",
+      "points": [
+        "11.4"
+      ],
+      "paragraphs": [
+        "Ovaries contain follicles in which egg cells mature and produce ovarian hormones. At ovulation an egg is released; release is not fertilisation and does not itself guarantee pregnancy.",
+        "The nearby oviduct, or fallopian tube, receives the egg. Ciliated lining cells and smooth-muscle contractions help move it towards the uterus. The tube opens near the ovary rather than being directly joined to it; fertilisation usually occurs in the tube.",
+        "The uterus has a muscular wall and an endometrial lining that can support implantation and development. An early embryo reaching the uterus can implant in that lining, while contractions of uterine muscle have a later role during birth.",
+        "The cervix is the narrow lower region of the uterus opening into the vagina. The vagina can receive semen and forms part of the birth passage; it is not an oviduct. The urethral opening is separate from the vaginal opening. Full anatomical labelling and unfamiliar structure questions remain pending."
+      ],
+      "example": {
+        "question": "Contrast the usual sites of egg maturation, fertilisation and implantation.",
+        "steps": [
+          "Egg maturation: follicle in an ovary.",
+          "Fertilisation: usually an oviduct.",
+          "Implantation: uterine lining."
+        ],
+        "explanation": "Keep organs, movement mechanisms and developmental events distinct."
+      },
+      "practice": {
+        "question": "Does the egg actively swim along the oviduct with its own tail?",
+        "answer": "No. Cilia and muscular movements help move it; an egg does not have the sperm’s flagellum.",
+        "explanation": "Keep organs, movement mechanisms and developmental events distinct."
+      },
+      "terms": [
+        "ovary",
+        "follicle",
+        "oviduct",
+        "fallopian tube",
+        "cilia",
+        "uterus",
+        "endometrium",
+        "cervix",
+        "vagina",
+        "ovulation"
+      ],
+      "commonMistakes": [
+        "Do not merge fertilisation with implantation or place egg maturation in the uterus."
+      ]
+    },
+    {
+      "id": "ovarian-cycle-lining",
+      "title": "Explain ovarian hormones and the uterine lining",
+      "points": [
+        "11.5"
+      ],
+      "paragraphs": [
+        "The cycle coordinates ovarian events with changes in the uterus. Oestrogen from developing follicles helps rebuild the uterine lining after menstruation. Ovulation releases an egg; it is distinct from thickening of the lining.",
+        "After ovulation, the remaining follicle becomes a corpus luteum that produces progesterone. Progesterone helps maintain the lining, while ovarian hormones feed back to the pituitary and hypothalamus.",
+        "If pregnancy is not established and the corpus luteum loses function, progesterone and oestrogen fall. The functional lining is shed in menstruation. If pregnancy is established, signals support hormone production and lining maintenance; the placenta later becomes an important hormone source.",
+        "FSH supports follicle development and an LH surge triggers ovulation. Sustained high pre-ovulatory oestrogen supports that surge; oestrogen does not always inhibit LH. A 28-day drawing is a model, not a timetable for every person, and these lessons make no fertility prediction."
+      ],
+      "example": {
+        "question": "Why does progesterone withdrawal matter when no pregnancy is established?",
+        "steps": [
+          "Progesterone normally helps maintain the lining after ovulation.",
+          "Declining corpus-luteum function lowers progesterone and oestrogen.",
+          "The lining is then shed during menstruation."
+        ],
+        "explanation": "Explain a sequence using hormone source and target effects without assuming fixed personal dates."
+      },
+      "practice": {
+        "question": "Does an oestrogen rise mean that ovulation and implantation are the same event?",
+        "answer": "No. Egg release, hormone feedback and implantation are distinct; implantation depends on an embryo.",
+        "explanation": "Explain a sequence using hormone source and target effects without assuming fixed personal dates."
+      },
+      "terms": [
+        "menstrual cycle",
+        "oestrogen",
+        "progesterone",
+        "corpus luteum",
+        "lining maintenance",
+        "menstruation"
+      ],
+      "commonMistakes": [
+        "Do not reverse progesterone maintenance/withdrawal, equate ovulation with menstruation or impose a universal cycle length."
+      ]
+    },
+    {
+      "id": "fsh-lh-cycle-control",
+      "title": "Trace FSH and LH through the cycle",
+      "points": [
+        "11.5"
+      ],
+      "paragraphs": [
+        "FSH and LH are released by the anterior pituitary. FSH supports development of ovarian follicles and egg maturation, with increased oestrogen production from the developing follicles.",
+        "An LH surge triggers ovulation and supports formation/function of the corpus luteum, linking the pituitary signal to post-ovulation progesterone production. LH itself is not progesterone or an ovarian egg.",
+        "For much of the cycle ovarian hormones restrain gonadotropin release through negative feedback. Sustained high oestrogen before ovulation provides a different, positive-feedback context that supports the LH surge.",
+        "When interpreting an unfamiliar graph, first inspect hormone identity, axis scale and timing. Identify rise, surge and post-ovulation effects from the given data rather than forcing a memorised day number. The Human Biology requirement includes all four named hormones for both components."
+      ],
+      "example": {
+        "question": "Trace one route from pituitary FSH to a uterine change.",
+        "steps": [
+          "FSH stimulates development of an ovarian follicle.",
+          "The follicle increases oestrogen production.",
+          "Oestrogen helps rebuild the uterine lining."
+        ],
+        "explanation": "Follow hormone source → target → downstream effect, with cycle stage stated."
+      },
+      "practice": {
+        "question": "Does the ovary release FSH because FSH stimulates a follicle?",
+        "answer": "No. The anterior pituitary is the source; the ovary is a target.",
+        "explanation": "Follow hormone source → target → downstream effect, with cycle stage stated."
+      },
+      "terms": [
+        "FSH",
+        "LH",
+        "anterior pituitary",
+        "LH surge",
+        "positive feedback",
+        "negative feedback"
+      ],
+      "commonMistakes": [
+        "Do not make feedback direction independent of cycle stage or treat the graph as a personal clinical prediction."
+      ]
+    },
+    {
+      "id": "interpreting-cycle-data",
+      "title": "Interpret a cycle graph from its given evidence",
+      "points": [
+        "11.5"
+      ],
+      "terms": [
+        "axis scale",
+        "LH surge",
+        "oestrogen",
+        "progesterone",
+        "model"
+      ],
+      "paragraphs": [
+        "Identify each hormone, the time units and whether curves share the same concentration scale. A narrow LH peak and a later progesterone rise support the sequence of ovulation followed by corpus-luteum activity. A high line on a differently scaled axis does not prove a higher molar concentration than another hormone.",
+        "In an original hypothetical graph, the LH peak is labelled day 12 and progesterone rises afterwards. Use that supplied sequence rather than changing the peak to a memorised day 14. The graph can illustrate hormonal control; it cannot establish an individual’s safe contraceptive days or prove pregnancy from one curve alone."
+      ],
+      "example": {
+        "question": "The model labels an LH peak on day 12 and a progesterone rise on day 15. Which event plausibly links them?",
+        "steps": [
+          "The LH surge triggers ovulation.",
+          "The remaining follicle forms a corpus luteum.",
+          "Its progesterone production can explain the later rise."
+        ],
+        "explanation": "Explain the sequence while keeping the model’s stated times."
+      },
+      "commonMistakes": [
+        "Imposing day 14 on every dataset.",
+        "Comparing heights on incompatible concentration scales."
+      ]
+    },
+    {
+      "id": "pregnancy-progesterone",
+      "title": "Explain progesterone in maintaining pregnancy",
+      "points": [
+        "11.6"
+      ],
+      "terms": [
+        "progesterone",
+        "endometrium",
+        "corpus luteum",
+        "placenta",
+        "hCG"
+      ],
+      "paragraphs": [
+        "Progesterone helps maintain the uterine lining so that the implanted developing embryo is supported rather than the lining being shed as in menstruation. Early trophoblast signals, including hCG, sustain the corpus luteum and its hormone production. The placenta later becomes an important progesterone source.",
+        "This hormonal support differs from supplying oxygen or nutrients through blood. Progesterone does not itself become fetal food or amniotic fluid. Its role is part of coordinated pregnancy physiology, not a claim that one hormone guarantees a successful pregnancy or a treatment instruction."
+      ],
+      "example": {
+        "question": "Distinguish progesterone maintenance from umbilical transport.",
+        "steps": [
+          "Progesterone acts as a hormone supporting the uterine environment.",
+          "Umbilical vessels transport developing-organism blood to and from the placenta.",
+          "The two functions support development through different mechanisms."
+        ],
+        "explanation": "Distinguish signal, target effect and transport route."
+      },
+      "commonMistakes": [
+        "Describing progesterone as a blood vessel.",
+        "Promising a pregnancy outcome from a single hormone value."
+      ]
+    },
+    {
+      "id": "placental-nutrition-exchange",
+      "title": "Explain nutrition through placental exchange",
+      "points": [
+        "11.6"
+      ],
+      "paragraphs": [
+        "The placenta provides an exchange surface between maternal blood surrounding placental villi and embryonic/fetal blood in villus capillaries. The two circulations normally remain separate; useful substances cross the tissues between them rather than the embryo drinking maternal blood.",
+        "Glucose, amino acids and other nutrients pass from maternal supply to the developing organism; oxygen supports its respiration. Movement uses different mechanisms for different substances, so do not call every placental transfer simple diffusion. Concentration gradients support gas diffusion, and transport proteins help transfer nutrients.",
+        "Carbon dioxide and metabolic wastes move in the opposite direction towards maternal circulation for removal. Large villus surface area, a short exchange distance and maintained blood supplies support exchange. The placenta is not a complete barrier to all harmful substances or infections.",
+        "Umbilical vessels connect the developing organism to the placenta. The umbilical vein carries oxygen/nutrient-rich blood towards it; the arteries carry blood towards the placenta. Artery and vein names describe direction relative to the developing organism’s heart, not oxygen content. The original diagram is functional, not an anatomical section."
+      ],
+      "example": {
+        "question": "Why is calling the umbilical vein deoxygenated simply because it is a vein incorrect?",
+        "steps": [
+          "Veins carry blood towards the heart of the circulation being described.",
+          "The umbilical vein returns blood from placental exchange towards the developing organism.",
+          "That blood is relatively rich in oxygen and nutrients."
+        ],
+        "explanation": "Distinguish material exchange from blood mixing and vessel names from oxygen content."
+      },
+      "practice": {
+        "question": "Do maternal and fetal blood have to mix directly for oxygen to cross?",
+        "answer": "No. Oxygen can diffuse across the placental exchange tissues while the circulations normally remain separate.",
+        "explanation": "Distinguish material exchange from blood mixing and vessel names from oxygen content."
+      },
+      "terms": [
+        "placenta",
+        "chorionic villus",
+        "exchange surface",
+        "umbilical vein",
+        "umbilical artery",
+        "nutrient transport"
+      ],
+      "commonMistakes": [
+        "Do not claim normal bulk blood mixing, that every nutrient uses simple diffusion or that the placenta blocks every harmful substance."
+      ],
+      "diagram": {
+        "src": "/diagrams/biology-placental-exchange.svg",
+        "alt": "Original functional placental exchange model: maternal supply and developing-organism blood are shown as separate circulations; oxygen and nutrients cross towards developing blood, carbon dioxide and wastes cross towards maternal blood. The umbilical vein returns from placenta and the arteries travel to placenta. No bulk blood-mixing connection is drawn.",
+        "caption": "Original functional chart, not an anatomical section or measured profile. Exchanges cross placental tissues; the two blood supplies normally remain separate. Transport mechanisms differ by substance."
+      }
+    },
+    {
+      "id": "umbilical-cord-route",
+      "title": "Trace the cord’s blood vessels in both directions",
+      "points": [
+        "11.6"
+      ],
+      "terms": [
+        "umbilical cord",
+        "umbilical vein",
+        "umbilical artery",
+        "placenta"
+      ],
+      "paragraphs": [
+        "The usual umbilical cord contains one vein carrying relatively oxygen- and nutrient-rich blood from the placenta towards the developing organism, and two arteries carrying blood from it towards the placenta. The vessels belong to the developing organism’s circulation; the cord is not a tube carrying maternal blood directly into its heart.",
+        "At the placenta, substances cross between the normally separate circulations. Carbon dioxide and other metabolic wastes return towards maternal removal pathways. “Artery” and “vein” describe direction relative to the developing organism’s heart, so their names do not by themselves determine oxygen content."
+      ],
+      "example": {
+        "question": "Which cord vessel brings blood from the placenta towards the fetus?",
+        "steps": [
+          "The umbilical vein.",
+          "Its flow is towards the fetal circulation.",
+          "Its blood is relatively rich in oxygen and nutrients after placental exchange."
+        ],
+        "explanation": "Name a vessel from its direction and state its exchanged materials."
+      },
+      "commonMistakes": [
+        "Reversing umbilical vein and arteries.",
+        "Treating the cord as direct mixing of maternal and fetal blood."
+      ]
+    },
+    {
+      "id": "amniotic-fluid-protection",
+      "title": "Explain protection by amniotic fluid",
+      "points": [
+        "11.6"
+      ],
+      "paragraphs": [
+        "The developing embryo and later fetus are surrounded by amniotic fluid within the amniotic sac. The fluid cushions mechanical knocks by distributing pressure and allows movement without direct impact against surrounding tissues.",
+        "It also helps buffer rapid temperature changes and reduces direct contact between delicate developing tissues. Protection reduces risk; it does not mean every possible force or temperature change is harmless.",
+        "Amniotic fluid is not the main route by which nutrients and oxygen reach the developing organism. Placental exchange and its blood supply provide those materials; the fluid’s protective role is a different function.",
+        "The school model explains cushioning rather than diagnosing pregnancy or setting safe impact levels. No exposure experiment, patient observation or clinical threshold is claimed."
+      ],
+      "example": {
+        "question": "A learner describes amniotic fluid as the embryo’s main oxygen-carrying blood. Correct it.",
+        "steps": [
+          "The fluid surrounds the developing organism inside a sac.",
+          "Its relevant role is cushioning and protection.",
+          "Placental exchange and developing blood supply deliver oxygen."
+        ],
+        "explanation": "Give the protective mechanism and distinguish it from nutrition."
+      },
+      "practice": {
+        "question": "Does cushioning mean that protection from every injury is guaranteed?",
+        "answer": "No. It reduces mechanical stress but is not an absolute guarantee.",
+        "explanation": "Give the protective mechanism and distinguish it from nutrition."
+      },
+      "terms": [
+        "amnion",
+        "amniotic sac",
+        "amniotic fluid",
+        "cushioning",
+        "mechanical protection"
+      ],
+      "commonMistakes": [
+        "Do not confuse protective fluid with placental blood or claim unlimited protection."
+      ]
+    },
+    {
+      "id": "secondary-sexual-development",
+      "title": "Link hormones to secondary sexual development",
+      "points": [
+        "11.7"
+      ],
+      "paragraphs": [
+        "Secondary sexual characteristics develop during puberty and differ from the reproductive organs themselves. Oestrogen contributes to breast development and other changes in the ovarian reproductive context.",
+        "Testosterone from the testes contributes to a deeper voice, facial/body hair and muscle development in the testicular context. Hormones act on target tissues and do not themselves become body structures or gametes.",
+        "Both ovarian and testicular development involve interacting signals; FSH and LH have additional roles in controlling gonadal activity. Hormone levels, timing and features vary among individuals, and more than one hormone can contribute to a change.",
+        "These are school-model source/effect links, not a fixed puberty schedule, a definition of personal identity or a diagnosis from appearance. Oestrogen and testosterone can be present in different amounts in more than one reproductive context."
+      ],
+      "example": {
+        "question": "Distinguish a testis from voice deepening in a developmental comparison.",
+        "steps": [
+          "The testis is a primary reproductive organ and hormone source.",
+          "Voice deepening is an example of a secondary sexual characteristic associated with testosterone effects."
+        ],
+        "explanation": "Separate hormone source, target effect and a variable developmental timetable."
+      },
+      "practice": {
+        "question": "Does everyone show each listed feature at one identical age?",
+        "answer": "No. Developmental timing and extent vary; the list describes hormone-related roles.",
+        "explanation": "Separate hormone source, target effect and a variable developmental timetable."
+      },
+      "terms": [
+        "secondary sexual characteristic",
+        "puberty",
+        "oestrogen",
+        "testosterone",
+        "target tissue"
+      ],
+      "commonMistakes": [
+        "Do not confuse primary organs with secondary features or infer an individual diagnosis from the classroom model."
+      ]
+    },
     {
       "id": "genes-and-alleles",
       "title": "Follow a gene to its alternative forms",
@@ -736,6 +1304,47 @@
       "sectionIds": [
         "cf-viral-gene-delivery",
         "cf-gene-therapy-limits"
+      ]
+    },
+    {
+      "title": "OpenStax Biology 2e 11.1: selected meiosis stages and set-number distinctions",
+      "url": "https://openstax.org/books/biology-2e/pages/11-1-the-process-of-meiosis",
+      "sectionIds": [
+        "meiosis-before-division",
+        "meiosis-first-division",
+        "meiosis-second-division",
+        "meiotic-variation-and-oogenesis"
+      ]
+    },
+    {
+      "title": "OpenStax Anatomy and Physiology 2e 27.1: selected sperm-production and transport functions",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/27-1-anatomy-and-physiology-of-the-testicular-reproductive-system",
+      "sectionIds": [
+        "male-reproductive-functions",
+        "secondary-sexual-development"
+      ]
+    },
+    {
+      "title": "OpenStax Anatomy and Physiology 2e 27.2: selected ovarian, tube, cycle and oogenesis passages",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/27-2-anatomy-and-physiology-of-the-ovarian-reproductive-system",
+      "sectionIds": [
+        "female-reproductive-functions",
+        "ovarian-cycle-lining",
+        "fsh-lh-cycle-control",
+        "interpreting-cycle-data",
+        "meiotic-variation-and-oogenesis"
+      ]
+    },
+    {
+      "title": "OpenStax Anatomy and Physiology 2e 28.2: selected embryo, hormone and exchange mechanisms",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/28-2-embryonic-development",
+      "sectionIds": [
+        "fertilisation-to-embryo",
+        "zygote-cleavage-and-differentiation",
+        "pregnancy-progesterone",
+        "placental-nutrition-exchange",
+        "umbilical-cord-route",
+        "amniotic-fluid-protection"
       ]
     }
   ]
