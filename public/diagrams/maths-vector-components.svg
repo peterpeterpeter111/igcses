@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="450" viewBox="0 0 600 450" role="img" aria-labelledby="title desc">
+  <title id="title">Components and magnitude of a two-dimensional vector</title>
+  <desc id="desc">Vector a starts at O and moves three units to the right and four units up to A. Its column vector has 3 on top and 4 below. The perpendicular component triangle gives a magnitude of 5 by Pythagoras.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#8b343b"/></marker></defs>
+  <rect width="600" height="450" fill="#faf6ed"/>
+  <g font-family="Georgia, serif" fill="#302522">
+    <text x="300" y="34" font-size="26" text-anchor="middle">Components and magnitude</text>
+    <path d="M100 90 H280 M100 150 H280 M100 210 H280 M100 270 H280 M160 90 V330 M220 90 V330" fill="none" stroke="#857161" stroke-opacity="0.25" stroke-width="1"/>
+    <path d="M100 330 H280 V90" fill="none" stroke="#857161" stroke-width="2" stroke-dasharray="7 5"/>
+    <path d="M100 330 L280 90" fill="none" stroke="#8b343b" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M264 330 V314 H280" fill="none" stroke="#514238" stroke-width="2"/>
+    <circle cx="100" cy="330" r="4" fill="#302522"/>
+    <text x="75" y="355" font-size="25">O</text><text x="292" y="86" font-size="25">A</text>
+    <text x="190" y="365" font-size="25" text-anchor="middle">3 units right</text>
+    <text x="304" y="269" font-size="25">4 units up</text>
+    <text x="138" y="193" font-size="27" fill="#8b343b">a</text>
+    <text x="455" y="114" font-size="24" text-anchor="middle">Column vector</text>
+    <path d="M421 130 H410 V208 H421 M489 130 H500 V208 H489" fill="none" stroke="#514238" stroke-width="2.5"/>
+    <text x="455" y="160" font-size="28" text-anchor="middle">3</text><text x="455" y="196" font-size="28" text-anchor="middle">4</text>
+    <text x="300" y="418" font-size="27" text-anchor="middle">|a| = √(3² + 4²) = 5</text>
+  </g>
+</svg>

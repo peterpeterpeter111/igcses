@@ -9,6 +9,7 @@
     21,
     24,
     25,
+    26,
     27
   ],
   "prerequisites": [
@@ -22,7 +23,9 @@
     "Build a reasoned triangle-congruence proof.",
     "Use similar length, area and volume factors and justify triangle similarity.",
     "Identify the arc, chord, tangent or cyclic configuration before choosing a circle rule.",
-    "Calculate and rearrange arc, sector and perimeter relationships in degrees."
+    "Calculate and rearrange arc, sector and perimeter relationships in degrees.",
+    "Calculate and interpret two-dimensional vectors, their magnitudes and unit directions.",
+    "Use directed vector routes to prove collinearity, parallelism and concurrency."
   ],
   "sections": [
     {
@@ -905,6 +908,462 @@
         "reverse sector calculation",
         "annular sector",
         "exposed boundary"
+      ]
+    },
+    {
+      "id": "scalar-and-vector-quantities",
+      "title": "Separate a vector from its magnitude",
+      "points": [
+        "8A"
+      ],
+      "paragraphs": [
+        "A scalar quantity has a magnitude. A vector quantity has a magnitude and direction. Time, distance and speed are scalars; displacement, velocity and force are vectors. A magnitude can carry units, such as metres or newtons, and a signed scalar is still a scalar.",
+        "Two-dimensional vectors can be described by horizontal and vertical components. State the positive directions and units before interpreting the signs. Moving 3 units right and 4 units up gives a different vector from moving 3 right and 4 down, even though both have magnitude 5.",
+        "Add components only for compatible quantities with consistent units. A force vector cannot be added to a displacement vector. Magnitude is nonnegative; a minus sign in a component tells direction, not a negative physical length."
+      ],
+      "example": {
+        "question": "A walker moves 6 m east and then 8 m north. Find the total distance walked and the magnitude of the displacement.",
+        "steps": [
+          "Distance walked = 6 + 8 = 14 m.",
+          "The displacement has components 6 m east and 8 m north.",
+          "Its magnitude is √(6² + 8²) = 10 m."
+        ],
+        "explanation": "Distance follows the route, whereas displacement joins the initial and final positions."
+      },
+      "practice": {
+        "question": "A walker goes 5 m east and then 5 m west. Find distance and displacement.",
+        "answer": "Distance 10 m; displacement zero.",
+        "explanation": "The two displacement vectors cancel, but the two travelled lengths add."
+      },
+      "commonMistakes": [
+        "Include direction when describing a vector.",
+        "Do not add unlike physical quantities.",
+        "Distinguish distance from displacement magnitude."
+      ],
+      "terms": [
+        "scalar",
+        "vector quantity",
+        "displacement",
+        "magnitude",
+        "direction"
+      ]
+    },
+    {
+      "id": "directed-vectors-and-column-notation",
+      "title": "Read the start, end and component order",
+      "points": [
+        "8B",
+        "8C"
+      ],
+      "paragraphs": [
+        "The directed vector from A to B begins at A and ends at B. Reversing its direction gives the negative vector: vector BA = −vector AB. Arrows on a diagram indicate this direction; the segment without a direction does not by itself specify the vector.",
+        "A column vector has its horizontal component on top and its vertical component below. In these text examples, (u,v)ᵀ means that column, with u above v. It is not a point name or the scalar length of the vector. In a coordinate calculation, the vector from A(x₁,y₁) to B(x₂,y₂) is (x₂ − x₁, y₂ − y₁)ᵀ.",
+        "Equal vectors have equal components, magnitude and direction relative to the same axes. They may be drawn at different positions. A vector can be translated as a directed segment without changing its components; its initial and final points need not coincide with another equal vector’s endpoints."
+      ],
+      "example": {
+        "question": "A has coordinates (−1,3) and B has coordinates (4,−2). Find the vectors AB and BA.",
+        "steps": [
+          "AB = (4 − (−1), −2 − 3)ᵀ = (5,−5)ᵀ.",
+          "BA = (−1 − 4, 3 − (−2))ᵀ = (−5,5)ᵀ.",
+          "BA = −AB: both components change sign."
+        ],
+        "explanation": "Subtract the starting position from the ending position in each component."
+      },
+      "practice": {
+        "question": "P = (3,−2) and Q = (−1,4). Find vector PQ.",
+        "answer": "(−4,6)ᵀ.",
+        "explanation": "Horizontal change −1 − 3 = −4; vertical change 4 − (−2) = 6."
+      },
+      "commonMistakes": [
+        "Keep the start-to-end order.",
+        "Keep horizontal above vertical in a column.",
+        "Equal vectors need not share a starting point."
+      ],
+      "terms": [
+        "column vector",
+        "directed line segment",
+        "vector notation",
+        "components",
+        "reverse vector"
+      ]
+    },
+    {
+      "id": "position-vectors-and-displacements",
+      "title": "Subtract position vectors to join two points",
+      "points": [
+        "8D"
+      ],
+      "paragraphs": [
+        "With a fixed origin O, the position vector a of A is vector OA and the position vector b of B is vector OB. Following the route O to A to B gives a + vector AB = b, so vector AB = b − a.",
+        "A position vector depends on the chosen origin. The displacement from A to B is found by subtracting their position vectors relative to the same origin. Changing both positions to a new common origin leaves this displacement unchanged.",
+        "Keep vectors and lengths separate: b − a is a directed vector, while the length AB is its magnitude. Do not subtract the two magnitudes to obtain the distance between arbitrary points."
+      ],
+      "example": {
+        "question": "The position vectors of A and B are a = (2,−1)ᵀ and b = (−3,4)ᵀ. Find vector AB.",
+        "steps": [
+          "AB = b − a.",
+          "AB = (−3 − 2, 4 − (−1))ᵀ = (−5,5)ᵀ.",
+          "Check the route: (2,−1)ᵀ + (−5,5)ᵀ = (−3,4)ᵀ."
+        ],
+        "explanation": "A route equation fixes the subtraction direction."
+      },
+      "practice": {
+        "question": "Relative to O, A has position (1,3)ᵀ and C has position (6,−2)ᵀ. Find vector AC.",
+        "answer": "(5,−5)ᵀ.",
+        "explanation": "AC = OC − OA = (6 − 1, −2 − 3)ᵀ."
+      },
+      "commonMistakes": [
+        "Use one common origin.",
+        "Subtract starting position from ending position.",
+        "Vector subtraction is not subtraction of lengths."
+      ],
+      "terms": [
+        "position vector",
+        "common origin",
+        "displacement vector",
+        "route equation"
+      ]
+    },
+    {
+      "id": "vector-addition-and-subtraction",
+      "title": "Add component by component; reverse to subtract",
+      "points": [
+        "8E"
+      ],
+      "paragraphs": [
+        "Add two vectors by adding their horizontal components and adding their vertical components. Geometrically, place them head to tail: the resultant runs from the first starting point to the final endpoint. The same sum is given by the diagonal of a correctly constructed parallelogram.",
+        "Subtract b from a by adding −b, which reverses both components of b. Vector addition is commutative, but subtraction is not: b − a = −(a − b).",
+        "When an equation represents a route through points, use each directed segment consistently. AB + BC = AC because the end of the first segment is the start of the second. AB + CB is not that same route."
+      ],
+      "example": {
+        "question": "a = (2,−3)ᵀ and b = (−4,5)ᵀ. Find a + b and a − b.",
+        "steps": [
+          "a + b = (2 + (−4), −3 + 5)ᵀ = (−2,2)ᵀ.",
+          "a − b = (2 − (−4), −3 − 5)ᵀ = (6,−8)ᵀ.",
+          "Subtracting a negative horizontal component means adding 4."
+        ],
+        "explanation": "Work on corresponding components; do not mix horizontal and vertical entries."
+      },
+      "practice": {
+        "question": "a = (4,1)ᵀ and b = (−1,3)ᵀ. Find a + 2b.",
+        "answer": "(2,7)ᵀ.",
+        "explanation": "2b = (−2,6)ᵀ, so a + 2b = (4 − 2, 1 + 6)ᵀ."
+      },
+      "commonMistakes": [
+        "Reverse both components when subtracting.",
+        "Check the head-to-tail order of a route.",
+        "Subtraction changes when its order is reversed."
+      ],
+      "terms": [
+        "vector addition",
+        "vector subtraction",
+        "head to tail",
+        "parallelogram resultant"
+      ]
+    },
+    {
+      "id": "multiplying-vectors-by-scalars",
+      "title": "A scalar changes length and may reverse direction",
+      "points": [
+        "8G"
+      ],
+      "paragraphs": [
+        "Multiply a vector by scalar k by multiplying each component by k. For a nonzero vector and positive k, the direction stays the same; for negative k, it reverses. The magnitude is multiplied by |k|, the absolute value of k.",
+        "Multiplication by zero produces the zero vector, which has magnitude zero and no defined direction. A fractional positive scalar shortens a vector when it is less than one; it does not change only one component.",
+        "Apply scalar multiplication before combining vectors, keeping brackets when needed: 2(a − b) = 2a − 2b. Distributing 2 to just one vector gives a different result."
+      ],
+      "example": {
+        "question": "a = (2,−4)ᵀ. Find −3a and explain its direction and magnitude relative to a.",
+        "steps": [
+          "−3a = (−6,12)ᵀ.",
+          "The negative multiplier reverses the direction.",
+          "The magnitude is three times that of a, not negative three times a physical length."
+        ],
+        "explanation": "Use |−3| = 3 for the magnitude factor."
+      },
+      "practice": {
+        "question": "a = (2,1)ᵀ and b = (1,−3)ᵀ. Find 3a − 2b.",
+        "answer": "(4,9)ᵀ.",
+        "explanation": "3a = (6,3)ᵀ and 2b = (2,−6)ᵀ; subtract to obtain (4,9)ᵀ."
+      },
+      "commonMistakes": [
+        "Multiply every component.",
+        "Use absolute value for the magnitude factor.",
+        "A zero vector has no direction to compare."
+      ],
+      "terms": [
+        "scalar multiplication",
+        "negative multiplier",
+        "zero vector",
+        "absolute value"
+      ]
+    },
+    {
+      "id": "vector-magnitude-and-unit-direction",
+      "title": "Find a positive magnitude and a unit direction",
+      "points": [
+        "8F",
+        "8D"
+      ],
+      "paragraphs": [
+        "For a two-dimensional vector a = (u,v)ᵀ, its magnitude is |a| = √(u² + v²). This follows from the right triangle formed by the perpendicular components. Squaring removes their signs; the final magnitude is the nonnegative square root.",
+        "For a nonzero a, the unit vector in its direction is a/|a|. It has magnitude one and keeps the signs of the original components. The zero vector cannot be divided by its magnitude and has no unit direction.",
+        "The standard horizontal and vertical unit vectors are (1,0)ᵀ and (0,1)ᵀ. A unit vector need not have either component equal to one: (3/5,4/5)ᵀ has magnitude one because 9/25 + 16/25 = 1."
+      ],
+      "example": {
+        "question": "Find the magnitude of a = (−5,12)ᵀ and a unit vector in its direction.",
+        "steps": [
+          "|a| = √((−5)² + 12²) = √169 = 13.",
+          "a/|a| = (−5/13,12/13)ᵀ.",
+          "Its squared magnitude is 25/169 + 144/169 = 1; the horizontal sign is still negative."
+        ],
+        "explanation": "Divide both components by the same positive magnitude."
+      },
+      "practice": {
+        "question": "Find the magnitude and unit direction of (3,4)ᵀ. Can the same procedure be used for (0,0)ᵀ?",
+        "answer": "Magnitude 5; unit direction (3/5,4/5)ᵀ. No unit direction exists for (0,0)ᵀ.",
+        "explanation": "Use √(3² + 4²) = 5. Dividing the zero vector by zero is undefined."
+      },
+      "commonMistakes": [
+        "Do not add component magnitudes instead of using Pythagoras.",
+        "Keep signs in the unit vector.",
+        "Handle the zero vector separately."
+      ],
+      "terms": [
+        "modulus",
+        "vector magnitude",
+        "unit vector",
+        "normalise direction"
+      ],
+      "diagram": {
+        "src": "/diagrams/maths-vector-components.svg",
+        "alt": "The vector a moves three units right and four units up. Its vertical column has 3 above 4. The perpendicular component triangle gives magnitude 5.",
+        "caption": "Horizontal component first, vertical component second. The column records direction; its magnitude is the scalar 5."
+      }
+    },
+    {
+      "id": "resultants-and-closed-vector-routes",
+      "title": "Sum the components of the whole route",
+      "points": [
+        "8H",
+        "8E"
+      ],
+      "paragraphs": [
+        "The resultant of two or more compatible vectors is their component sum. A sequence of displacement vectors can be combined in any order, provided each vector keeps its direction and every component uses consistent axes and units.",
+        "For a closed route ending where it began, the resultant displacement is the zero vector. This does not imply that no movement occurred or that the total distance travelled is zero.",
+        "If asked for the resultant’s magnitude, first calculate its horizontal and vertical components and then use Pythagoras. Adding the separate magnitudes generally gives a route length rather than the magnitude of the resultant."
+      ],
+      "example": {
+        "question": "Three displacements in metres are (2,5)ᵀ, (−3,−1)ᵀ and (4,−2)ᵀ. Find their resultant and its exact magnitude.",
+        "steps": [
+          "Horizontal total = 2 − 3 + 4 = 3.",
+          "Vertical total = 5 − 1 − 2 = 2.",
+          "Resultant = (3,2)ᵀ m; magnitude = √(3² + 2²) = √13 m."
+        ],
+        "explanation": "The vector and its scalar magnitude are different requested quantities."
+      },
+      "practice": {
+        "question": "A route has displacement vectors (3,0)ᵀ, (0,4)ᵀ and (−3,−4)ᵀ. Find resultant and total distance along these three straight segments.",
+        "answer": "Resultant (0,0)ᵀ; total distance 12 units.",
+        "explanation": "The components sum to zero; the segment lengths are 3, 4 and 5, adding to 12."
+      },
+      "commonMistakes": [
+        "Add components before calculating magnitude.",
+        "A closed route can have a nonzero distance.",
+        "Keep all vectors referred to the same axes."
+      ],
+      "terms": [
+        "resultant",
+        "closed route",
+        "net displacement",
+        "component sum"
+      ]
+    },
+    {
+      "id": "parallel-vectors-and-zero-vector",
+      "title": "Compare both components using one nonzero factor",
+      "points": [
+        "8D"
+      ],
+      "paragraphs": [
+        "Two nonzero vectors have parallel directions if one is a scalar multiple of the other. A positive multiple points the same way; a negative multiple points the opposite way. One matching component alone is insufficient.",
+        "Compare both components without dividing by a zero component. For example, (0,2)ᵀ and (0,−6)ᵀ are parallel with factor −3. A zero vector is not a usable direction vector for proving that a distinct line is parallel to another.",
+        "Parallel direction vectors can also occur on the same line. If the task requires two distinct parallel lines, establish that the lines are different as well as showing their nonzero directions are proportional."
+      ],
+      "example": {
+        "question": "a = (4,−6)ᵀ and b = (−2,3)ᵀ. Are their directions parallel, and do they point the same way?",
+        "steps": [
+          "b = −(1/2)a because both components have multiplier −1/2.",
+          "Their directions are parallel.",
+          "The negative multiplier means opposite directions."
+        ],
+        "explanation": "Parallel refers to the direction relationship, not necessarily equal magnitudes."
+      },
+      "practice": {
+        "question": "Are (2,3)ᵀ and (4,7)ᵀ parallel?",
+        "answer": "No.",
+        "explanation": "The horizontal factor would be 2, but 2 × 3 = 6, not 7, for the vertical component."
+      },
+      "commonMistakes": [
+        "Check both components with one multiplier.",
+        "Do not divide by a zero component.",
+        "Exclude the zero vector from a line-direction argument."
+      ],
+      "terms": [
+        "parallel vectors",
+        "opposite directions",
+        "scalar multiple",
+        "direction vector"
+      ]
+    },
+    {
+      "id": "vector-midpoints-and-segment-ratios",
+      "title": "Build a position vector from a fraction of a segment",
+      "points": [
+        "8I"
+      ],
+      "paragraphs": [
+        "If A and B have position vectors a and b, the midpoint M has position (a + b)/2. Equivalently, start at A and add half of AB: a + (b − a)/2. Both methods give the same vector.",
+        "For an internal point M with AM:MB = m:n, the fraction from A to B is m/(m + n). Therefore OM = a + [m/(m + n)](b − a) = (na + mb)/(m + n). The ratio is between the two parts, while the denominator uses their total.",
+        "State that the point lies internally on the segment before using a fraction between zero and one. Exterior division needs its own directed ratio analysis; do not use an internal ratio formula without reading the point order."
+      ],
+      "example": {
+        "question": "A = (1,2) and B = (11,7). M lies on AB with AM:MB = 2:3. Find M.",
+        "steps": [
+          "AB = (10,5)ᵀ and AM is 2/(2 + 3) = 2/5 of AB.",
+          "OM = (1,2)ᵀ + (2/5)(10,5)ᵀ = (5,4)ᵀ.",
+          "Hence M has coordinates (5,4)."
+        ],
+        "explanation": "The coefficient of AB is 2/5, not 2/3."
+      },
+      "practice": {
+        "question": "A = (−1,4), B = (9,−1) and AM:MB = 2:3 internally. Find M.",
+        "answer": "(3,2).",
+        "explanation": "Add 2/5 of (10,−5)ᵀ to (−1,4)ᵀ, giving (3,2)ᵀ."
+      },
+      "commonMistakes": [
+        "Use part divided by total parts.",
+        "Keep the starting position in the route.",
+        "Do not silently treat external division as internal division."
+      ],
+      "terms": [
+        "midpoint",
+        "internal ratio",
+        "section formula",
+        "position vector"
+      ]
+    },
+    {
+      "id": "proving-collinearity-with-vectors",
+      "title": "Prove collinearity with a common directed line",
+      "points": [
+        "8I"
+      ],
+      "paragraphs": [
+        "Distinct points A, B and C are collinear if vector AC is a scalar multiple of the nonzero vector AB. Starting both vectors at A shows that C lies on the line through A and B. Alternatively, proportional AB and BC share B, so their segments lie on one line.",
+        "State the scalar relationship and the common point. Proportional vectors at unrelated positions establish parallel directions, not that all four endpoints lie on the same line. A zero vector cannot specify a distinct line.",
+        "The sign and size of the factor locate C. In AC = kAB, 0 < k < 1 places C between A and B, k > 1 places it beyond B, and k < 0 places it on the opposite side of A. These conclusions assume A and B are distinct."
+      ],
+      "example": {
+        "question": "A = (1,2), B = (3,5) and C = (7,11). Prove they are collinear and locate C relative to B.",
+        "steps": [
+          "AB = (2,3)ᵀ and AC = (6,9)ᵀ.",
+          "AC = 3AB, with AB nonzero and both vectors starting at A.",
+          "Thus A, B and C are collinear; factor 3 places C beyond B."
+        ],
+        "explanation": "A relationship tied to a common point proves one line, rather than just two parallel directions."
+      },
+      "practice": {
+        "question": "A = (0,0), B = (2,3), C = (4,7). Are the three points collinear?",
+        "answer": "No.",
+        "explanation": "AC would need to be 2AB from its horizontal component, but its vertical component is 7 instead of 6."
+      },
+      "commonMistakes": [
+        "Use a common point in the proof.",
+        "Do not infer collinearity from unrelated parallel directions.",
+        "Check the direction vector is nonzero."
+      ],
+      "terms": [
+        "collinearity",
+        "common point",
+        "vector proof",
+        "point order"
+      ]
+    },
+    {
+      "id": "proving-parallel-lines-with-vectors",
+      "title": "Show proportional directions and distinct lines",
+      "points": [
+        "8I"
+      ],
+      "paragraphs": [
+        "To prove lines AB and CD have parallel directions, express both directed segments using the supplied position vectors or geometric routes. Show CD = kAB for one nonzero scalar k, with both direction vectors nonzero.",
+        "If the lines are required to be distinct, check that C is not on line AB. One way is to show AC is not proportional to AB. Without that check or a stated separation, proportional directions might describe the same line.",
+        "When using symbolic vectors a and b, collect coefficients carefully. Equating their coefficients independently requires a and b to be linearly independent, as for two nonparallel sides of a non-degenerate triangle; it is not valid for arbitrary parallel or zero vectors."
+      ],
+      "example": {
+        "question": "A = (0,0), B = (4,−6), C = (0,2) and D = (−2,5). Prove lines AB and CD are distinct and parallel.",
+        "steps": [
+          "AB = (4,−6)ᵀ and CD = (−2,3)ᵀ = −(1/2)AB.",
+          "Both directions are nonzero, so they are parallel.",
+          "AC = (0,2)ᵀ is not proportional to AB: horizontal factor zero would also give vertical zero.",
+          "C is not on AB, so the lines are distinct."
+        ],
+        "explanation": "The negative multiplier reverses the direction but preserves parallelism."
+      },
+      "practice": {
+        "question": "A = (0,0), B = (2,1), C = (4,2), D = (6,3). Are AB and CD distinct parallel lines?",
+        "answer": "No: they lie on the same line.",
+        "explanation": "CD = AB but AC = 2AB, so C lies on AB; proportional directions alone do not establish distinct lines."
+      },
+      "commonMistakes": [
+        "Calculate both line directions.",
+        "A negative multiple can still be parallel.",
+        "Check independence before equating symbolic coefficients."
+      ],
+      "terms": [
+        "distinct parallel lines",
+        "linear independence",
+        "proportional directions"
+      ]
+    },
+    {
+      "id": "vector-lines-and-concurrency",
+      "title": "Check that all three lines share one intersection",
+      "points": [
+        "8I"
+      ],
+      "paragraphs": [
+        "Concurrent lines pass through one common point. Finding where two lines meet is only part of a three-line concurrency proof: show that the third line contains the same point.",
+        "A point on line AD can be represented by OA + t(vector AD). If the point lies on the segment, its parameter t is between zero and one; the full line permits other real values. Use a second line equation to find the intersection, then verify the third.",
+        "For a non-degenerate triangle, two side vectors from one vertex are independent. Equate their coefficients to solve a vector intersection. Independence is a geometric condition, not an automatic property of two named vectors."
+      ],
+      "example": {
+        "question": "In non-degenerate triangle ABC take A as the origin, with AB = b and AC = c. D, E and F are the midpoints of BC, AC and AB. Prove the medians AD, BE and CF are concurrent.",
+        "steps": [
+          "OD = (b + c)/2, OE = c/2 and OF = b/2.",
+          "On AD an intersection has position t(b + c)/2. On BE it has position b + u(c/2 − b).",
+          "Equating independent b and c coefficients gives t/2 = 1 − u and t/2 = u/2. Thus t = u = 2/3.",
+          "The intersection G has position (b + c)/3.",
+          "On CF, c + (2/3)(b/2 − c) = (b + c)/3 as well. Therefore all three medians pass through G."
+        ],
+        "explanation": "The third-line substitution completes the concurrency proof. It also gives AG:GD = 2:1."
+      },
+      "practice": {
+        "question": "A = (0,0), B = (6,0), C = (0,9). Find the common point of the three medians and check the median from C to the midpoint of AB.",
+        "answer": "(2,3).",
+        "explanation": "The common position is ((6,0)ᵀ + (0,9)ᵀ)/3 = (2,3)ᵀ. From C, moving 2/3 of the vector to F = (3,0) gives (0,9) + (2/3)(3,−9) = (2,3)."
+      },
+      "commonMistakes": [
+        "Verify the third line, not only an intersection of two.",
+        "Use independence only for nonparallel basis vectors.",
+        "Distinguish a line parameter from an internal segment fraction."
+      ],
+      "terms": [
+        "concurrency",
+        "median",
+        "centroid",
+        "vector line equation"
       ]
     }
   ]

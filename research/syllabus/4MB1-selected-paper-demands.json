@@ -18,7 +18,7 @@
     27,
     28
   ],
-  "scope": "40 selected source identities, 35 with partial teaching; no complete point or whole-substatement audit. Q19 scope remains unresolved. Existing 6C, 6G, 6K and 7D owners retained; new partial geometry teaching dated separately on 2026-10-06.",
+  "scope": "40 selected source identities, 39 with partial teaching; no complete point or whole-substatement audit. Existing angle/similarity/circle/sector/vector owners retained, with teaching dates separate from source review. Q19 scope remains unresolved; 5E inverse-matrix teaching still not started.",
   "points": [
     {
       "id": "4MB1:issue1:4G",
@@ -404,9 +404,14 @@
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "geometry",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
-      "humanReviewed": false
+      "noteSectionIds": [
+        "position-vectors-and-displacements",
+        "vector-magnitude-and-unit-direction",
+        "parallel-vectors-and-zero-vector"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-06"
     },
     {
       "id": "4MB1:issue1:8E",
@@ -421,9 +426,13 @@
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "geometry",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
-      "humanReviewed": false
+      "noteSectionIds": [
+        "vector-addition-and-subtraction",
+        "resultants-and-closed-vector-routes"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-06"
     },
     {
       "id": "4MB1:issue1:8G",
@@ -438,9 +447,12 @@
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "geometry",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
-      "humanReviewed": false
+      "noteSectionIds": [
+        "multiplying-vectors-by-scalars"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-06"
     },
     {
       "id": "4MB1:issue1:8I",
@@ -455,9 +467,15 @@
       "statementVerified": true,
       "substatementAuditComplete": false,
       "chapterId": "geometry",
-      "noteSectionIds": [],
-      "teachingCoverage": "not-started",
-      "humanReviewed": false
+      "noteSectionIds": [
+        "vector-midpoints-and-segment-ratios",
+        "proving-collinearity-with-vectors",
+        "proving-parallel-lines-with-vectors",
+        "vector-lines-and-concurrency"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-06"
     },
     {
       "id": "4MB1:issue1:4L",
