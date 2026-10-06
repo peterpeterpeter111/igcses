@@ -1,3 +1,4 @@
+import humanCoordination from './notes/human-biology-coordination.json' with { type: 'json' };
 import humanHomeostasis from './notes/human-biology-homeostasis.json' with { type: 'json' };
 import humanNutrition from './notes/human-biology-nutrition.json' with { type: 'json' };
 import chemistryOrganic from './notes/chemistry-organic.json' with { type: 'json' };
@@ -80,6 +81,7 @@ export const notes: ChapterNotes[] = [
   humanInternal,
   humanNutrition,
   humanHomeostasis,
+  humanCoordination,
   biology,
   biologyStructures,
   biologyReproduction,

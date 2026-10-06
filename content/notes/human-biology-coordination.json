@@ -1,0 +1,585 @@
+{
+  "subjectId": "human-biology",
+  "chapterId": "coordination",
+  "status": "source-checked",
+  "complete": false,
+  "humanReviewed": false,
+  "sourceId": "4HB1-spec",
+  "sourcePages": [
+    20
+  ],
+  "prerequisites": [
+    "Know cell membrane, nucleus and tissue/organ scales.",
+    "Distinguish detection, communication and action.",
+    "Recall diffusion and controlled repeated observations."
+  ],
+  "goals": [
+    "Identify neurone roles and directions.",
+    "Relate central structures to main functions.",
+    "Trace stimulus–response and chemical-synapse mechanisms.",
+    "Interpret skin-sensitivity evidence without pretending to count receptors."
+  ],
+  "supportingSources": [
+    {
+      "title": "OpenStax12.2: selected neurone parts and shape conventions",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-2-nervous-tissue",
+      "sectionIds": [
+        "neurone-shared-parts",
+        "sensory-neurone-route",
+        "motor-neurone-route"
+      ]
+    },
+    {
+      "title": "OpenStax13.2: selected cerebral, cerebellar, midbrain and spinal structures",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system",
+      "sectionIds": [
+        "cerebral-hemispheres",
+        "cerebellum-coordination",
+        "midbrain-endocrine-centres",
+        "spinal-cord-structure"
+      ]
+    },
+    {
+      "title": "OpenStax12.5: selected chemical-synapse sequence",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-5-communication-between-neurons",
+      "sectionIds": [
+        "chemical-synapse-sequence"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "neurone-shared-parts",
+      "title": "Identify a neurone’s signal-carrying parts",
+      "points": [
+        "5.1"
+      ],
+      "terms": [
+        "neurone",
+        "cell body",
+        "nucleus",
+        "axon",
+        "dendrite",
+        "myelin"
+      ],
+      "paragraphs": [
+        "A neurone is a specialised signalling cell. Its cell body contains a nucleus and the machinery supporting the cell. Branched processes receive information, while a long fibre can carry an impulse towards terminals that communicate with another cell.",
+        "Myelin surrounds some nerve fibres and electrically insulates them, with gaps between segments. It increases the speed of impulse propagation in the appropriate myelinated model; not every neurone has the same shape, fibre length or myelin covering. A nerve is a bundle of fibres, not one large neurone."
+      ],
+      "example": {
+        "question": "Why is “a nerve and a neurone are the same thing” inaccurate?",
+        "steps": [
+          "A neurone is one cell.",
+          "A nerve contains bundles of nerve fibres.",
+          "Use the scale and labels of the supplied drawing."
+        ],
+        "explanation": "Separate cellular structures from tissue bundles."
+      },
+      "commonMistakes": [
+        "Calling myelin the nucleus.",
+        "Giving every neurone identical branches and length."
+      ],
+      "diagram": {
+        "src": "/diagrams/human-neurone-roles.svg",
+        "alt": "Three original simplified cell drawings distinguish sensory inward signalling with a side cell body, motor outward signalling with segmented myelin, and a central relay role.",
+        "caption": "Common school shapes are models. Impulse direction follows the role; not every sensory neurone has this shape."
+      }
+    },
+    {
+      "id": "sensory-neurone-route",
+      "title": "Recognise a sensory neurone and its direction",
+      "points": [
+        "5.1",
+        "5.6"
+      ],
+      "terms": [
+        "sensory neurone",
+        "receptor",
+        "dendron",
+        "ganglion"
+      ],
+      "paragraphs": [
+        "A sensory neurone carries information from a receptor towards the central nervous system. In the common school skin-sensory drawing, the cell body lies to the side of the long conducting fibre rather than at its start. The receptor-facing fibre is often labelled dendron in this convention.",
+        "The impulse travels from the receptor end towards the central connection, passing the region where the cell-body branch joins the fibre. It need not detour through the cell body as a separate loop. Recognise the role and impulse arrow as well as the outline; real sensory cells include more than one structural type."
+      ],
+      "example": {
+        "question": "A diagram shows a receptor at the left, a side cell body and a spinal connection at the right. Which direction carries sensory information?",
+        "steps": [
+          "From the left receptor towards the right central connection.",
+          "The side cell body supports the neurone.",
+          "The impulse is not a substance flowing through the nucleus."
+        ],
+        "explanation": "Direction follows function, not the position of a circle alone."
+      },
+      "commonMistakes": [
+        "Saying sensory neurones carry commands from muscle to brain.",
+        "Assuming every sensory cell has the same school shape."
+      ]
+    },
+    {
+      "id": "motor-neurone-route",
+      "title": "Recognise a motor neurone and its effector",
+      "points": [
+        "5.1",
+        "5.6"
+      ],
+      "terms": [
+        "motor neurone",
+        "effector",
+        "axon terminal",
+        "muscle",
+        "gland"
+      ],
+      "paragraphs": [
+        "A motor neurone carries information from the central nervous system towards an effector. An effector can be a muscle that contracts or a gland that secretes. In a common motor-neurone drawing, dendrites surround a cell body near the central end, and an axon extends towards terminal branches.",
+        "A motor impulse does not directly turn a sensory receptor into a muscle. It reaches an appropriate effector connection, where signalling can trigger the response. For a muscle-withdrawal example, name contraction and movement rather than merely stating that an effector “works”."
+      ],
+      "example": {
+        "question": "What is the effector in an example where an arm bends away from a stimulus?",
+        "steps": [
+          "The relevant skeletal muscle.",
+          "Motor signalling reaches that muscle.",
+          "Contraction produces the movement."
+        ],
+        "explanation": "The response and the cell carrying its command differ."
+      },
+      "commonMistakes": [
+        "Calling a receptor the motor effector.",
+        "Saying an axon terminal is a whole muscle."
+      ]
+    },
+    {
+      "id": "relay-neurone-role",
+      "title": "Place relay neurones within the central system",
+      "points": [
+        "5.1",
+        "5.4"
+      ],
+      "terms": [
+        "relay neurone",
+        "interneurone",
+        "central nervous system",
+        "synapse"
+      ],
+      "paragraphs": [
+        "Relay neurones, also called interneurones, connect and process information between other neurones within the central nervous system. In the course withdrawal-reflex model, a relay neurone links the incoming sensory pathway to an outgoing motor pathway.",
+        "A simplified relay cell is often drawn with branching processes and a relatively short conducting distance. Its central location and connections matter more than memorising one arbitrary outline. Neural circuits can contain many relay cells; the three-neurone drawing is a model of a particular pathway, not every reflex."
+      ],
+      "example": {
+        "question": "Where would the relay cell be placed in a spinal withdrawal-reflex model?",
+        "steps": [
+          "Inside the spinal cord.",
+          "After the sensory input connection.",
+          "Before the outgoing motor connection."
+        ],
+        "explanation": "Use the circuit role and compartment."
+      },
+      "commonMistakes": [
+        "Placing the relay cell in the skin receptor.",
+        "Claiming all reflexes contain exactly three neurones."
+      ]
+    },
+    {
+      "id": "central-peripheral-plan",
+      "title": "Separate central processing from peripheral nerves",
+      "points": [
+        "5.2",
+        "5.6"
+      ],
+      "terms": [
+        "CNS",
+        "brain",
+        "spinal cord",
+        "peripheral nerve"
+      ],
+      "paragraphs": [
+        "The central nervous system consists of the brain and spinal cord. Peripheral nerves connect receptors and effectors with that central system. Sensory input brings information in, and motor output carries commands towards effectors.",
+        "The spinal cord runs within the vertebral column; it is nervous tissue, not the surrounding bones. A central pathway can coordinate a response, while communication with the brain also supports conscious perception and voluntary action. A diagram must distinguish direction from physical proximity."
+      ],
+      "example": {
+        "question": "Is a nerve running from the skin towards the spinal cord itself the spinal cord?",
+        "steps": [
+          "No: it is a peripheral connection.",
+          "The spinal cord belongs to the CNS.",
+          "The skin receptor and nerve connect with it."
+        ],
+        "explanation": "Name the system at the appropriate scale."
+      },
+      "commonMistakes": [
+        "Calling the vertebral column a bundle of neurones.",
+        "Defining the CNS as every nerve in the body."
+      ]
+    },
+    {
+      "id": "cerebral-hemispheres",
+      "title": "Connect the cerebral hemispheres to conscious activity",
+      "points": [
+        "5.3"
+      ],
+      "terms": [
+        "cerebrum",
+        "cerebral hemispheres",
+        "cortex",
+        "conscious perception"
+      ],
+      "paragraphs": [
+        "The cerebrum is divided into two cerebral hemispheres. Its cortex contributes to conscious sensory interpretation, voluntary movement, learning, memory and thought. These functions involve communicating regions, not an isolated single “thinking cell”.",
+        "A conscious decision to move differs from an automatic spinal withdrawal response. Nevertheless, spinal pathways carry information to and from the brain, so do not claim that the cerebrum is completely disconnected during a reflex. Learning a short function list is only the start of recognising regions on unfamiliar diagrams."
+      ],
+      "example": {
+        "question": "Which named brain area is especially relevant to choosing a voluntary action?",
+        "steps": [
+          "The cerebral hemispheres/cortex.",
+          "They contribute to conscious interpretation and voluntary control.",
+          "Other regions and pathways still participate in execution."
+        ],
+        "explanation": "Assign a main role without reducing a complex network to one cell."
+      },
+      "commonMistakes": [
+        "Giving the pituitary gland as the main conscious-thinking region.",
+        "Saying all movement requires a conscious choice."
+      ]
+    },
+    {
+      "id": "cerebellum-coordination",
+      "title": "Explain cerebellar coordination and balance",
+      "points": [
+        "5.3"
+      ],
+      "terms": [
+        "cerebellum",
+        "coordination",
+        "balance",
+        "sensory feedback"
+      ],
+      "paragraphs": [
+        "The cerebellum helps coordinate muscular activity and maintain balance and posture. It compares intended motor activity with sensory feedback and contributes corrective signals, making actions better timed and controlled.",
+        "Distinguish deciding to make a voluntary movement from coordinating its execution. The cerebellum is not simply a storage sac for balance fluid; it receives information through neural pathways, including information relevant to body position. Its location is near the rear of the brain, behind the brain stem."
+      ],
+      "example": {
+        "question": "Why might cerebellar function matter when walking over uneven ground?",
+        "steps": [
+          "Sensory feedback differs as body position changes.",
+          "Coordination helps adjust muscular activity.",
+          "The movement must remain controlled and balanced."
+        ],
+        "explanation": "Link coordination to feedback and correction."
+      },
+      "commonMistakes": [
+        "Calling the cerebellum the gland making insulin.",
+        "Equating coordination with making every conscious decision."
+      ]
+    },
+    {
+      "id": "midbrain-endocrine-centres",
+      "title": "Distinguish midbrain, hypothalamus and pituitary roles",
+      "points": [
+        "5.3"
+      ],
+      "terms": [
+        "midbrain",
+        "brain stem",
+        "hypothalamus",
+        "pituitary"
+      ],
+      "paragraphs": [
+        "The midbrain is part of the brain stem and participates in sensory pathways and orienting responses, including responses linking visual and auditory information with eye movement. The brain stem connects with the spinal cord; different brain-stem regions have different roles.",
+        "The hypothalamus lies in the forebrain region and contributes to homeostatic regulation, including temperature and water balance. The pituitary gland below it releases hormones involved in regulating other glands and bodily functions. These are different structures. The posterior pituitary releases ADH made in the hypothalamus, as explained in Homeostasis; detailed gland and growth-hormone coverage belongs to the later5.9 work."
+      ],
+      "example": {
+        "question": "Why should the hypothalamus and pituitary not be given one identical label?",
+        "steps": [
+          "They are distinct structures with linked roles.",
+          "The hypothalamus contributes detection/control and hormone synthesis.",
+          "The pituitary releases its appropriate hormones."
+        ],
+        "explanation": "Connection does not mean anatomical identity."
+      },
+      "commonMistakes": [
+        "Calling all brain-stem functions midbrain-only functions.",
+        "Claiming the posterior pituitary manufactures ADH."
+      ]
+    },
+    {
+      "id": "spinal-cord-structure",
+      "title": "Read a spinal cord section and its routes",
+      "points": [
+        "5.4",
+        "5.2"
+      ],
+      "terms": [
+        "grey matter",
+        "white matter",
+        "dorsal root",
+        "ventral root"
+      ],
+      "paragraphs": [
+        "In a simplified spinal cross-section, central grey matter contains many cell bodies and synaptic connections; surrounding white matter contains many myelinated fibres carrying signals along the cord. The cord also provides local reflex connections.",
+        "Sensory fibres enter through dorsal roots, with relevant sensory cell bodies in dorsal-root ganglia outside the cord. Motor fibres leave through ventral roots. A peripheral spinal nerve can contain both kinds of fibre after the roots join. Do not treat grey matter as only cell bodies or white matter as empty insulation."
+      ],
+      "example": {
+        "question": "Which root carries the sensory input in the stated spinal model?",
+        "steps": [
+          "The dorsal root.",
+          "The ventral root carries motor output.",
+          "A joined peripheral nerve can contain both routes."
+        ],
+        "explanation": "Input/output labels must agree with the arrow direction."
+      },
+      "commonMistakes": [
+        "Swapping dorsal and ventral routes.",
+        "Placing spinal grey matter as the outermost layer in this model."
+      ]
+    },
+    {
+      "id": "withdrawal-reflex-arc",
+      "title": "Trace a spinal withdrawal reflex",
+      "points": [
+        "5.4",
+        "5.6"
+      ],
+      "terms": [
+        "stimulus",
+        "reflex arc",
+        "sensory",
+        "relay",
+        "motor"
+      ],
+      "paragraphs": [
+        "The course withdrawal pathway is stimulus → receptor → sensory neurone → relay neurone in the spinal cord → motor neurone → effector muscle → response. A reflex is rapid and automatic; it does not wait for a deliberate decision about the stimulus.",
+        "Connections between the cells include synapses. Information can also travel to the brain for awareness, so a spinal reflex occurring before a conscious decision does not imply no brain information. The example is a conceptual protective response, not an instruction to test pain or injury."
+      ],
+      "example": {
+        "question": "Arrange receptor, motor neurone, sensory neurone and muscle in the withdrawal pathway.",
+        "steps": [
+          "Receptor first, then sensory input.",
+          "Central relay connection, then motor output.",
+          "Muscle contraction provides the response."
+        ],
+        "explanation": "Never send the motor command to the receptor as the final effector."
+      },
+      "commonMistakes": [
+        "Using a motor neurone as the initial skin detector.",
+        "Waiting for conscious thought before every spinal withdrawal."
+      ],
+      "diagram": {
+        "src": "/diagrams/human-withdrawal-reflex.svg",
+        "alt": "Five ordered stages connect stimulus/receptor, sensory neurone, spinal relay/synapses, motor neurone and contracting muscle response.",
+        "caption": "A withdrawal-reflex sequence, not an anatomical spinal cross-section or every reflex circuit."
+      }
+    },
+    {
+      "id": "receptor-stimulus-types",
+      "title": "Match receptor type to the stimulus",
+      "points": [
+        "5.5",
+        "5.6"
+      ],
+      "terms": [
+        "receptor",
+        "light",
+        "temperature",
+        "pressure",
+        "pain",
+        "taste"
+      ],
+      "paragraphs": [
+        "Receptors detect particular changes called stimuli. Relevant examples include light receptors in the retina, temperature and mechanical receptors associated with skin, pain-sensitive nerve endings, and taste receptor cells responding to appropriate dissolved chemicals.",
+        "A receptor detects a stimulus and initiates signalling towards the nervous system; an effector carries out the response. Pressure and pain are not identical signals, and a taste is not detected merely because a food molecule is bright or warm. Receptors are specialised, although real sensory mechanisms are more varied than a one-receptor-per-sense list."
+      ],
+      "example": {
+        "question": "Which role belongs to a light receptor rather than an effector muscle?",
+        "steps": [
+          "Detection of a light-related stimulus.",
+          "Signalling towards the nervous system.",
+          "Movement or contraction belongs to an effector."
+        ],
+        "explanation": "Separate detection from action."
+      },
+      "commonMistakes": [
+        "Calling every stimulus a nerve impulse.",
+        "Using a muscle as the detector in a light-sensing pathway."
+      ]
+    },
+    {
+      "id": "stimulus-to-response",
+      "title": "Write a complete stimulus–response chain",
+      "points": [
+        "5.6"
+      ],
+      "terms": [
+        "receptor",
+        "sensory input",
+        "CNS",
+        "motor output",
+        "effector"
+      ],
+      "paragraphs": [
+        "For an unfamiliar response, identify the change first, then the receptor that detects it. Describe sensory information reaching the CNS, relevant coordination, motor output reaching an effector and the resulting action.",
+        "A response can involve muscle contraction or gland secretion. Name the actual response rather than repeating “a response happens”. The detailed route differs among voluntary actions, spinal reflexes and brain-mediated reflexes; the general chain is a scaffold, not evidence that every circuit has one relay synapse."
+      ],
+      "example": {
+        "question": "In a conceptual cold response, distinguish detecting cooling from shivering.",
+        "steps": [
+          "Temperature receptors/control mechanisms detect the disturbance.",
+          "Coordinated motor signals affect skeletal muscles.",
+          "Repeated muscle contractions are the shivering response."
+        ],
+        "explanation": "One structure detects; another produces the action."
+      },
+      "commonMistakes": [
+        "Describing a hormone as the motor neurone.",
+        "Leaving out the effector when asked for a pathway."
+      ]
+    },
+    {
+      "id": "skin-receptor-investigation",
+      "title": "Plan a controlled comparison of skin sensitivity",
+      "points": [
+        "5.7"
+      ],
+      "terms": [
+        "touch",
+        "two-point discrimination",
+        "temperature receptor",
+        "control"
+      ],
+      "paragraphs": [
+        "A supervised planning model compares agreed skin regions using gentle blunt contact. In a two-point task, vary separation and ask whether one or two contacts are perceived while the participant cannot see the contact. Include one-point trials in varied order, standardise contact force/duration and repeat trials.",
+        "An alternative temperature-sensitivity comparison uses teacher-approved comfortably warm or cool contacts, matched contact conditions and a record of detection at agreed positions. Never use painfully hot/cold objects, needles or deliberate injury. Participation is voluntary and the task stops if uncomfortable. Neither planning model has been performed here."
+      ],
+      "example": {
+        "question": "Why include randomly ordered one-point trials in a two-point comparison?",
+        "steps": [
+          "They reduce guessing from a predictable pattern.",
+          "They reveal possible false two-point reports.",
+          "Matched conditions and repeated trials strengthen the comparison."
+        ],
+        "explanation": "A participant’s perception is the measurement, not a direct microscope count."
+      },
+      "commonMistakes": [
+        "Using sharp pins to create pain.",
+        "Letting the participant see each separation.",
+        "Changing pressure and position simultaneously without recording them."
+      ],
+      "practical": {
+        "apparatus": [
+          "Teacher-approved blunt contact tool with measurable separation; ruler and recording table.",
+          "Agreed safe skin regions and optional teacher-approved comfortably warm/cool contacts."
+        ],
+        "method": [
+          "Obtain voluntary participation and agree safe positions; do not test damaged skin.",
+          "Use matched gentle force/duration without letting the participant see each contact.",
+          "Vary separation for touch trials, including randomly ordered one-point controls.",
+          "Repeat trials and record perceived contacts at each position.",
+          "For temperature work separately compare detection under matched approved contact conditions; no extreme or painful temperatures."
+        ],
+        "variables": [
+          "Independent variable: region and, within its controlled series, separation.",
+          "Outcome: reported number of contacts and inferred discrimination threshold.",
+          "Keep duration, force, tool and participant posture comparable; record participant variation."
+        ],
+        "safety": [
+          "No sharp contact, intentional pain, extreme temperature or forced participation.",
+          "Use clean equipment under the teacher’s risk assessment; stop on discomfort."
+        ],
+        "quality": [
+          "Randomised one-point controls, repeats and multiple willing participants reduce bias.",
+          "Thresholds indicate spatial discrimination; they do not directly measure receptor number.",
+          "Original planning only; classroom method and broader practical-demand review pending."
+        ]
+      }
+    },
+    {
+      "id": "skin-sensitivity-inference",
+      "title": "Keep sensitivity evidence separate from receptor counts",
+      "points": [
+        "5.7"
+      ],
+      "terms": [
+        "receptive field",
+        "threshold",
+        "repeat",
+        "uncertainty"
+      ],
+      "paragraphs": [
+        "A smaller two-point discrimination threshold can indicate better spatial sensitivity in the compared region, associated with receptor distribution and receptive-field organisation. It does not directly count receptors or prove exactly how many are present in a square centimetre.",
+        "An original hypothetical comparison gives repeated thresholds of3,4,5mm at regionA and8,10,12mm at regionB. Their mean thresholds are4mm and10mm. This suggests finer discrimination atA under these conditions, not a receptor-count ratio of10/4. Different participants and repeats help assess variation; neural processing and method affect the inference."
+      ],
+      "example": {
+        "question": "Calculate the mean thresholds and limit the conclusion.",
+        "steps": [
+          "A:(3+4+5)/3=4mm.",
+          "B:(8+10+12)/3=10mm.",
+          "A discriminates a smaller separation; receptor numbers were not directly measured."
+        ],
+        "explanation": "Name exactly what the test measures and its limitations."
+      },
+      "commonMistakes": [
+        "Calling4mm a count of four receptors.",
+        "Claiming the result proves all people have identical sensitivity."
+      ]
+    },
+    {
+      "id": "impulse-initiation-direction",
+      "title": "Explain initiation and impulse propagation",
+      "points": [
+        "5.8"
+      ],
+      "terms": [
+        "nerve impulse",
+        "electrical signal",
+        "threshold",
+        "direction"
+      ],
+      "paragraphs": [
+        "An appropriate stimulus changes receptor activity and can initiate impulses in a sensory pathway. A nerve impulse is an electrical event involving membrane ion movements, not a tiny particle of electricity travelling unchanged through the nucleus.",
+        "In the course pathway, impulses travel from the receptor-facing end towards central connections in a sensory neurone and towards the effector in a motor neurone. Propagation along a neurone is distinguished from chemical transmission across the next synapse. Threshold and circuit organisation matter; not every small stimulus necessarily produces an outgoing impulse."
+      ],
+      "example": {
+        "question": "Why distinguish “along the fibre” from “across a chemical synapse”?",
+        "steps": [
+          "The fibre carries a propagating electrical event.",
+          "The synaptic gap uses a released chemical transmitter.",
+          "A later electrical response may be initiated in the next cell."
+        ],
+        "explanation": "Use the mechanism appropriate to each compartment."
+      },
+      "commonMistakes": [
+        "Saying a neurone is a hollow pipe full of neurotransmitter.",
+        "Calling every impulse a hormone in blood."
+      ]
+    },
+    {
+      "id": "chemical-synapse-sequence",
+      "title": "Trace a chemical synapse in the correct direction",
+      "points": [
+        "5.8",
+        "5.4"
+      ],
+      "terms": [
+        "synapse",
+        "neurotransmitter",
+        "vesicle",
+        "receptor protein"
+      ],
+      "paragraphs": [
+        "At a typical chemical synapse, an arriving impulse at the presynaptic terminal leads to neurotransmitter release from vesicles. The transmitter diffuses across the cleft and binds to appropriate receptor proteins on the receiving cell’s membrane.",
+        "The resulting change can help initiate a new impulse if the receiving cell reaches threshold; synaptic effects can also be inhibitory. Transmission in the course chemical model has a defined direction because release machinery and receiving receptors occupy different sides. Transmitter is then removed or broken down as appropriate, limiting continued stimulation."
+      ],
+      "example": {
+        "question": "Why does the gap not transmit a chemical-synapse signal just by the two neurones touching?",
+        "steps": [
+          "The membranes are separated by a cleft.",
+          "Released transmitter diffuses and binds to receptors.",
+          "The receiving cell then responds according to the input."
+        ],
+        "explanation": "A connection need not be direct cytoplasmic continuity."
+      },
+      "commonMistakes": [
+        "Saying neurotransmitter enters and becomes the next electrical impulse itself.",
+        "Claiming all chemical synapses excite the next cell."
+      ]
+    }
+  ]
+}

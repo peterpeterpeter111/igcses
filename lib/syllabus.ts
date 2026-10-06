@@ -1,3 +1,4 @@
+import humanCoordination from '../research/syllabus/4HB1-coordination-foundations.json' with { type: 'json' };
 import humanHomeostasis from '../research/syllabus/4HB1-homeostasis.json' with { type: 'json' };
 import humanNutrition from '../research/syllabus/4HB1-nutrition.json' with { type: 'json' };
 import chemistryOrganicFamilies from '../research/syllabus/4CH1-organic-families-polymers.json' with { type: 'json' };
@@ -75,6 +76,7 @@ import mathsPolynomials from '../research/syllabus/4MB1-polynomials-and-fraction
 
 // Reviewed overlays are kept separate from the immutable raw candidates.
 export const reviewedInventories = [
+  { title: 'Human Coordination foundations (selected5.1–5.8; partial teaching)', ...humanCoordination },
   { title: 'Human homeostasis (10.2–10.11; partial teaching)', ...humanHomeostasis },
   { title: 'Human nutrition, digestion, teeth and risk (6.1–6.11; partial teaching)', ...humanNutrition },
   { title: 'Alcohols, acids, esters and polymers (4.29C–4.50C; partial teaching)', ...chemistryOrganicFamilies },
