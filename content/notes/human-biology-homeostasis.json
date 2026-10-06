@@ -1,0 +1,875 @@
+{
+  "subjectId": "human-biology",
+  "chapterId": "homeostasis",
+  "status": "source-checked",
+  "complete": false,
+  "humanReviewed": false,
+  "sourceId": "4HB1-spec",
+  "sourcePages": [
+    24
+  ],
+  "prerequisites": [
+    "Distinguish concentration, solute amount and volume.",
+    "Recall diffusion, osmosis and active transport.",
+    "Know the separate blood, gut and urine routes."
+  ],
+  "goals": [
+    "Trace negative feedback for temperature, water and blood glucose.",
+    "Explain kidney filtration/reabsorption without confusing blood and urine.",
+    "Compare dialysis/transplant with context and limitations.",
+    "Plan controlled membrane evidence and distinguish diffusion, leaks and osmosis."
+  ],
+  "supportingSources": [
+    {
+      "title": "OpenStax5.3: selected skin/temperature mechanisms",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/5-3-functions-of-the-integumentary-system",
+      "sectionIds": [
+        "skin-layers-functions",
+        "sweat-evaporation",
+        "skin-vessel-control"
+      ]
+    },
+    {
+      "title": "NIDDK: selected kidney blood, filtration and urine routes",
+      "url": "https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work",
+      "sectionIds": [
+        "renal-system-route",
+        "glomerular-filtration",
+        "selective-reabsorption"
+      ]
+    },
+    {
+      "title": "OpenStax17.3: selected ADH production, release and osmoreception",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/17-3-the-pituitary-gland-and-hypothalamus",
+      "sectionIds": [
+        "hypothalamus-pituitary-adh",
+        "adh-water-conservation",
+        "adh-excess-water"
+      ]
+    },
+    {
+      "title": "OpenStax25.8: selected collecting-duct water permeability",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-8-endocrine-regulation-of-kidney-function",
+      "sectionIds": [
+        "adh-water-conservation"
+      ]
+    },
+    {
+      "title": "OpenStax17.9: selected main-prose pancreatic/liver mechanisms",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/17-9-the-endocrine-pancreas",
+      "sectionIds": [
+        "insulin-high-glucose",
+        "glucagon-low-glucose"
+      ]
+    },
+    {
+      "title": "NIDDK: selected dialysis mechanism and burdens",
+      "url": "https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/hemodialysis",
+      "sectionIds": [
+        "dialysis-transfer",
+        "dialysis-benefits-burdens"
+      ]
+    },
+    {
+      "title": "NIDDK: selected transplant function, rejection and immune risks",
+      "url": "https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/kidney-transplant",
+      "sectionIds": [
+        "transplant-benefits-risks"
+      ]
+    },
+    {
+      "title": "OpenStax24.4: selected amino-acid nitrogen and urea pathway",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/24-4-protein-metabolism",
+      "sectionIds": [
+        "liver-functions-urea"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "homeostasis-range",
+      "title": "Keep internal conditions within a suitable range",
+      "points": [
+        "10.8"
+      ],
+      "terms": [
+        "homeostasis",
+        "internal environment",
+        "negative feedback"
+      ],
+      "paragraphs": [
+        "Homeostasis maintains a sufficiently stable internal environment despite changes outside the body or in its activity. Temperature and blood glucose concentration fluctuate around suitable ranges; they are not absolutely constant every second.",
+        "In negative feedback, a change is detected and a response opposes the original disturbance. As the condition returns towards its suitable range, the corrective response is reduced. Distinguish the variable, detector/control centre and effector response rather than saying only that the body “balances things”."
+      ],
+      "example": {
+        "question": "Why is a small rise followed by a return towards normal compatible with homeostasis?",
+        "steps": [
+          "Detection and correction take time.",
+          "The response opposes the rise.",
+          "The variable is regulated within a range, not fixed without fluctuation."
+        ],
+        "explanation": "Follow the direction of the disturbance and response."
+      },
+      "commonMistakes": [
+        "Defining homeostasis as maintaining only the outside temperature.",
+        "Calling every hormone response positive feedback."
+      ]
+    },
+    {
+      "id": "skin-layers-functions",
+      "title": "Connect skin layers to protection and sensing",
+      "points": [
+        "10.1"
+      ],
+      "terms": [
+        "epidermis",
+        "dermis",
+        "subcutaneous fat",
+        "receptor",
+        "sweat gland"
+      ],
+      "paragraphs": [
+        "The outer epidermis forms a protective barrier that helps limit water loss and entry of harmful agents. The underlying dermis contains blood vessels, sensory receptors, sweat glands and hair follicles. Subcutaneous fatty tissue beneath the skin contributes insulation and energy storage.",
+        "Receptors detect stimuli such as temperature and touch; nerves carry information. Sweat glands make sweat that reaches the surface through ducts. The epidermis itself does not contain the blood vessels drawn within the dermis. Link each structure to its function instead of placing all structures in the outer layer."
+      ],
+      "example": {
+        "question": "Which layer contains the vessels involved in skin temperature control?",
+        "steps": [
+          "The dermis contains the skin blood vessels.",
+          "The epidermis lies above it.",
+          "Subcutaneous fat helps insulate beneath the skin."
+        ],
+        "explanation": "A labelled section needs appropriate relative layers."
+      },
+      "commonMistakes": [
+        "Drawing blood vessels inside the epidermis.",
+        "Calling sweat ducts blood vessels."
+      ]
+    },
+    {
+      "id": "sweat-evaporation",
+      "title": "Explain why evaporation cools",
+      "points": [
+        "10.1",
+        "10.8"
+      ],
+      "terms": [
+        "sweat",
+        "evaporation",
+        "heat transfer",
+        "humidity"
+      ],
+      "paragraphs": [
+        "When the body is too warm, sweating can increase. Water evaporating from the skin requires energy, which is transferred from the skin and helps cool it. Merely producing liquid sweat is not the same as evaporative heat loss.",
+        "In humid air, evaporation can be slower because the air already contains more water vapour. Sweat that drips away has not removed as much energy by evaporation from the skin as the same amount that evaporates there. Cooling depends on the surrounding conditions as well as sweat production."
+      ],
+      "example": {
+        "question": "Why might visible sweating give less evaporative cooling in very humid air?",
+        "steps": [
+          "Less water evaporates from the surface in the stated conditions.",
+          "Evaporation is the step that takes energy from the skin.",
+          "Visible liquid sweat alone does not measure cooling."
+        ],
+        "explanation": "Name the energy transfer rather than saying sweat is intrinsically cold."
+      },
+      "commonMistakes": [
+        "Saying sweat contains cold energy.",
+        "Equating dripping with evaporation."
+      ]
+    },
+    {
+      "id": "skin-vessel-control",
+      "title": "Compare vasodilation and vasoconstriction",
+      "points": [
+        "10.1",
+        "10.8"
+      ],
+      "terms": [
+        "vasodilation",
+        "vasoconstriction",
+        "arteriole",
+        "heat loss"
+      ],
+      "paragraphs": [
+        "When too warm, dilation of arterioles supplying superficial skin capillaries increases blood flow near the surface. More heat can be transferred to cooler surroundings. In cold conditions, constriction of these arterioles reduces superficial flow and reduces heat loss.",
+        "The active diameter change occurs in muscular vessel walls, especially arterioles. The vessels do not move towards or away from the surface, and the blood does not leave the vessels onto the skin. A warm environment can limit or reverse some heat transfer, so vasodilation is not a guarantee of cooling under every condition."
+      ],
+      "example": {
+        "question": "Correct the claim “cold makes skin capillaries move deeper”.",
+        "steps": [
+          "Their anatomical location does not move.",
+          "Supplying arterioles narrow.",
+          "Less superficial blood flow reduces heat transfer to colder surroundings."
+        ],
+        "explanation": "State diameter, flow and heat loss as separate linked changes."
+      },
+      "commonMistakes": [
+        "Saying vasoconstriction increases superficial flow.",
+        "Making all blood vessels stop carrying blood."
+      ]
+    },
+    {
+      "id": "shivering-insulation",
+      "title": "Distinguish heat production from insulation",
+      "points": [
+        "10.1",
+        "10.8"
+      ],
+      "terms": [
+        "shivering",
+        "muscle contraction",
+        "respiration",
+        "insulation"
+      ],
+      "paragraphs": [
+        "Shivering is repeated involuntary skeletal-muscle contraction. Increased muscular activity increases energy release and heat production, helping oppose a fall in body temperature. It is an effector response, not a movement that directly traps heat.",
+        "Fat, suitable clothing and trapped air reduce heat transfer and help conserve heat; they do not generate energy in the same way as muscular activity. In humans, raised hairs have a relatively small insulating effect compared with a dense fur coat. Reduced sweating and vasoconstriction also help conserve heat."
+      ],
+      "example": {
+        "question": "How do shivering and insulation help in different ways?",
+        "steps": [
+          "Shivering increases heat production.",
+          "Insulation reduces heat loss.",
+          "Both can oppose a fall in body temperature."
+        ],
+        "explanation": "Do not confuse producing heat with retaining it."
+      },
+      "commonMistakes": [
+        "Saying shivering removes heat.",
+        "Claiming insulation creates energy."
+      ]
+    },
+    {
+      "id": "temperature-feedback",
+      "title": "Trace temperature negative feedback",
+      "points": [
+        "10.8",
+        "10.1"
+      ],
+      "terms": [
+        "hypothalamus",
+        "receptor",
+        "effector",
+        "negative feedback"
+      ],
+      "paragraphs": [
+        "Temperature information from receptors and the temperature-sensitive control mechanisms in the hypothalamus contributes to regulation. If core temperature rises above its suitable range, sweating and increased superficial skin flow can help reduce it. If it falls, shivering and reduced superficial flow can help oppose the fall.",
+        "As temperature returns towards the suitable range, the corrective signals diminish. An explanation needs both the response and how it opposes the initial change. These are course control models, not a method for diagnosing a fever or managing heat illness."
+      ],
+      "example": {
+        "question": "Why does sweating normally decrease after the body has cooled towards its usual range?",
+        "steps": [
+          "The original temperature disturbance is reduced.",
+          "There is less need for the cooling response.",
+          "Reduced correction is part of negative feedback."
+        ],
+        "explanation": "A continuous maximal response would overshoot rather than regulate."
+      },
+      "commonMistakes": [
+        "Saying sweating stops all metabolism.",
+        "Describing a rising temperature causing a further uncontrolled rise."
+      ]
+    },
+    {
+      "id": "excretion-egestion",
+      "title": "Distinguish metabolic waste from undigested food",
+      "points": [
+        "10.2"
+      ],
+      "terms": [
+        "excretion",
+        "egestion",
+        "urea",
+        "carbon dioxide",
+        "water"
+      ],
+      "paragraphs": [
+        "Excretion is removal of metabolic waste. Carbon dioxide is generated in respiration and leaves through the lungs; urea from amino-acid nitrogen processing is carried to the kidneys and leaves in urine. Water is a metabolic product and also enters in food and drink; excess water is removed by routes including urine, sweat and expired air.",
+        "Egestion removes unabsorbed material from the alimentary canal as faeces. The course distinction is about the material’s origin: undigested food is not a waste molecule made by cell metabolism. Kidneys remove waste from blood, not directly from the gut contents."
+      ],
+      "example": {
+        "question": "Compare removing carbon dioxide from lungs with passing unabsorbed food from the anus.",
+        "steps": [
+          "Respiration produces carbon dioxide: excretion.",
+          "Unabsorbed gut material is removed: egestion.",
+          "Use origin rather than merely whether material leaves the body."
+        ],
+        "explanation": "Not everything leaving the body has the same biological category."
+      },
+      "commonMistakes": [
+        "Calling sweating egestion.",
+        "Saying kidneys remove whole undigested meals."
+      ]
+    },
+    {
+      "id": "renal-system-route",
+      "title": "Keep blood and urine routes separate",
+      "points": [
+        "10.3"
+      ],
+      "terms": [
+        "kidney",
+        "renal artery",
+        "renal vein",
+        "ureter",
+        "bladder",
+        "urethra"
+      ],
+      "paragraphs": [
+        "The renal system includes kidneys, ureters, bladder and urethra. Blood enters a kidney through a renal artery and leaves through a renal vein. Kidney processing removes urea and regulates water and ion balance; urine travels from each kidney along a ureter to the bladder.",
+        "The bladder stores urine before it passes out through the urethra. A ureter carries urine from a kidney, whereas the urethra carries it from the bladder to outside. Filtered blood remains in the circulation; it does not normally flow down the ureter."
+      ],
+      "example": {
+        "question": "Name the tube connecting a kidney to the bladder.",
+        "steps": [
+          "The ureter.",
+          "The renal vein returns blood.",
+          "The urethra leaves the bladder."
+        ],
+        "explanation": "Similar names refer to different routes."
+      },
+      "commonMistakes": [
+        "Swapping ureter and urethra.",
+        "Sending renal-vein blood to the bladder."
+      ],
+      "diagram": {
+        "src": "/diagrams/human-renal-transfer.svg",
+        "alt": "Distinct blood route through renal artery, retained large components and renal vein; small filtrate processes separately through tubule to urine with reabsorption back to blood.",
+        "caption": "A flow model, not a whole-kidney anatomical drawing. Blood and urine are separate."
+      }
+    },
+    {
+      "id": "kidney-structure",
+      "title": "Locate cortex, medulla and pelvis",
+      "points": [
+        "10.3"
+      ],
+      "terms": [
+        "cortex",
+        "medulla",
+        "renal pelvis",
+        "nephron"
+      ],
+      "paragraphs": [
+        "A kidney has an outer cortex and an inner medulla. Its many nephrons are the microscopic functional units that process blood and form urine. Renal corpuscles containing glomeruli lie in the cortex; tubules extend through cortex and medulla.",
+        "Fluid remaining as urine enters collecting passages and the renal pelvis before flowing into a ureter. The pelvis collects urine; it is not a second blood-filtering glomerulus. A schematic section shows relative regions, while a nephron diagram shows a different scale."
+      ],
+      "example": {
+        "question": "Why should a whole-kidney outline and a nephron drawing not be treated as the same scale?",
+        "steps": [
+          "A kidney contains many nephrons.",
+          "A nephron is a microscopic processing unit.",
+          "Its parts occupy regions of the larger organ."
+        ],
+        "explanation": "Separate the organ and its functional units."
+      },
+      "commonMistakes": [
+        "Saying one kidney has only one nephron.",
+        "Calling the renal pelvis a blood vessel."
+      ]
+    },
+    {
+      "id": "glomerular-filtration",
+      "title": "Explain filtration without losing cells and large proteins",
+      "points": [
+        "10.3"
+      ],
+      "terms": [
+        "glomerulus",
+        "Bowman’s capsule",
+        "ultrafiltration",
+        "filtrate"
+      ],
+      "paragraphs": [
+        "Blood pressure drives filtration from the glomerular capillaries into Bowman’s capsule. Water and small solutes, including glucose, urea and ions, enter the filtrate. Blood cells and most large plasma proteins are retained in the blood in the normal course model.",
+        "Filtration is not a sorting process that sends only waste into the capsule. Useful small molecules are filtered too and may later be reabsorbed. The blood route and the filtrate route separate at this stage; a renal artery is not connected directly to a urine-filled collecting duct."
+      ],
+      "example": {
+        "question": "Does finding glucose in initial filtrate prove that normal final urine contains glucose?",
+        "steps": [
+          "No: small glucose molecules can be filtered.",
+          "They are normally reabsorbed later.",
+          "Initial filtrate and final urine differ."
+        ],
+        "explanation": "Follow the full processing sequence."
+      },
+      "commonMistakes": [
+        "Saying all plasma proteins normally pass freely.",
+        "Calling the filtrate pure urea."
+      ]
+    },
+    {
+      "id": "selective-reabsorption",
+      "title": "Return useful substances to the blood",
+      "points": [
+        "10.3"
+      ],
+      "terms": [
+        "selective reabsorption",
+        "tubule",
+        "capillary",
+        "active transport",
+        "osmosis"
+      ],
+      "paragraphs": [
+        "As filtrate passes along nephron tubules, useful substances are selectively returned to blood. In the normal school model, glucose is reabsorbed so it is absent from final urine. Appropriate ion amounts and much water also return, leaving urea and regulated quantities of water and ions for excretion.",
+        "Different transfers use different mechanisms. Glucose and ion reabsorption involve transport processes including active transport; water moves by osmosis across suitable permeable surfaces. ADH changes water reabsorption mainly in later nephron regions, especially collecting ducts. Reabsorbed molecules return to surrounding blood, not to the bladder."
+      ],
+      "example": {
+        "question": "Why does selective reabsorption matter after filtration of useful glucose?",
+        "steps": [
+          "Filtration alone removes useful small substances.",
+          "Reabsorption returns glucose to blood.",
+          "Final urine composition reflects both processes."
+        ],
+        "explanation": "Do not treat every filtered molecule as inevitably excreted."
+      },
+      "commonMistakes": [
+        "Calling water active transport.",
+        "Describing reabsorption as movement from blood into urine."
+      ]
+    },
+    {
+      "id": "urine-composition-variation",
+      "title": "Interpret urine volume and concentration separately",
+      "points": [
+        "10.4",
+        "10.6"
+      ],
+      "terms": [
+        "urine concentration",
+        "water intake",
+        "urea",
+        "solute mass"
+      ],
+      "paragraphs": [
+        "Urine composition varies with water intake, sweating and other water losses, diet and the body’s regulation. Greater water conservation usually means a smaller volume of more concentrated urine, whereas excess water can produce a larger volume of more dilute urine. Relevant conditions must be comparable.",
+        "Urea production can vary with amino-acid processing, so concentration depends on both solute amount and water volume. A more concentrated sample does not by itself prove more total urea was excreted. In normal course comparisons, urine contains water, urea and ions; unusual glucose or protein results need their supplied context rather than an invented diagnosis."
+      ],
+      "example": {
+        "question": "Two original samples each contain 0.6 g urea. A is100 mL, B300 mL. Compare concentrations.",
+        "steps": [
+          "A:0.6/0.1=6 g/L.",
+          "B:0.6/0.3=2 g/L.",
+          "A is three times as concentrated despite equal urea masses."
+        ],
+        "explanation": "Convert volume to litres and distinguish concentration from amount."
+      },
+      "commonMistakes": [
+        "Using mL as L.",
+        "Claiming a single concentrated sample diagnoses disease."
+      ]
+    },
+    {
+      "id": "hypothalamus-pituitary-adh",
+      "title": "Separate ADH production from its release",
+      "points": [
+        "10.5",
+        "10.6"
+      ],
+      "terms": [
+        "osmoreceptor",
+        "hypothalamus",
+        "posterior pituitary",
+        "ADH"
+      ],
+      "paragraphs": [
+        "Osmoreceptors in the hypothalamus detect changes in blood solute concentration associated with changing water balance. ADH, antidiuretic hormone, is made by hypothalamic neurones and transported to the posterior pituitary, where it is stored and released into the blood.",
+        "The school description “pituitary releases ADH” refers to release, not proof that posterior-pituitary cells synthesize it. Blood carries the hormone to kidney targets. More concentrated blood generally stimulates greater ADH release; dilution reduces the signal in the ordinary negative-feedback model."
+      ],
+      "example": {
+        "question": "Correct “the kidneys detect blood dilution and manufacture ADH”.",
+        "steps": [
+          "Hypothalamic osmoreceptors participate in detection.",
+          "Hypothalamic neurones produce ADH; posterior pituitary releases it.",
+          "Kidneys respond to the circulating hormone."
+        ],
+        "explanation": "Detector, release site and target are different roles."
+      },
+      "commonMistakes": [
+        "Calling ADH a digestive enzyme.",
+        "Confusing the anterior and posterior pituitary."
+      ]
+    },
+    {
+      "id": "adh-water-conservation",
+      "title": "Explain increased ADH after water loss",
+      "points": [
+        "10.6",
+        "10.5"
+      ],
+      "terms": [
+        "ADH",
+        "collecting duct",
+        "water permeability",
+        "osmosis"
+      ],
+      "paragraphs": [
+        "When water loss makes the blood more concentrated, increased ADH release raises collecting-duct permeability to water. Water can move by osmosis from tubular fluid into the surrounding tissue fluid and then return to the blood, using the kidney’s concentration gradient.",
+        "More water reabsorption means less water remaining in the urine: its volume decreases and it is more concentrated when solute amounts are comparable. ADH does not manufacture water or directly remove all urea. The response conserves existing water and reduces the original disturbance."
+      ],
+      "example": {
+        "question": "Trace a response after increased sweating with no matching water intake in the model.",
+        "steps": [
+          "Blood becomes more concentrated.",
+          "ADH release and collecting-duct water permeability increase.",
+          "More water returns to blood; urine volume falls."
+        ],
+        "explanation": "Connect signal, permeability, osmosis and consequence."
+      },
+      "commonMistakes": [
+        "Saying high ADH produces a larger dilute urine volume.",
+        "Saying water is pumped by active transport."
+      ],
+      "diagram": {
+        "src": "/diagrams/human-adh-feedback.svg",
+        "alt": "Five ordered steps connect water loss, concentrated blood, hypothalamic detection, increased ADH release and water reabsorption to a reduced disturbance.",
+        "caption": "ADH production and release sites differ. Reverse the responses for excess water."
+      }
+    },
+    {
+      "id": "adh-excess-water",
+      "title": "Explain reduced ADH after excess water",
+      "points": [
+        "10.6",
+        "10.5"
+      ],
+      "terms": [
+        "dilute",
+        "ADH",
+        "reabsorption",
+        "negative feedback"
+      ],
+      "paragraphs": [
+        "If blood becomes more dilute after excess water intake, ADH release decreases in the ordinary model. The collecting duct becomes less permeable to water, so less water is reabsorbed there. A larger volume of more dilute urine helps remove the excess.",
+        "As blood water balance returns towards its suitable range, the corrective response changes accordingly. “Less reabsorption” means less return from tubular fluid to blood, not less filtration of every molecule. Other factors can affect urine, so hold them comparable in a prediction."
+      ],
+      "example": {
+        "question": "Why is decreased ADH appropriate after the model’s water surplus?",
+        "steps": [
+          "It reduces water conservation in the collecting duct.",
+          "More water leaves in urine.",
+          "That opposes the initial excess."
+        ],
+        "explanation": "Use opposite arrows for the opposite disturbance."
+      },
+      "commonMistakes": [
+        "Treating a decrease in ADH as a complete shutdown of kidneys.",
+        "Saying urine concentration and volume always rise together."
+      ]
+    },
+    {
+      "id": "insulin-high-glucose",
+      "title": "Trace insulin after a rise in blood glucose",
+      "points": [
+        "10.7",
+        "10.8"
+      ],
+      "terms": [
+        "pancreas",
+        "beta cell",
+        "insulin",
+        "glycogen"
+      ],
+      "paragraphs": [
+        "A rise in blood glucose stimulates pancreatic beta cells to release more insulin. Insulin promotes glucose uptake in responsive tissues and storage as glycogen in liver and muscle, helping lower blood glucose. Glucose and glycogen are different substances: one is a small soluble sugar, the other a storage polymer.",
+        "As blood glucose falls towards its suitable range, insulin release is reduced. Do not claim every tissue needs insulin for all glucose uptake. This is the normal course control model, not an insulin dose calculation or a complete account of diabetes."
+      ],
+      "example": {
+        "question": "Which direction of conversion contributes to lowering glucose after a meal?",
+        "steps": [
+          "Glucose to glycogen.",
+          "Insulin promotes appropriate uptake/storage.",
+          "Less glucose remains circulating in the model."
+        ],
+        "explanation": "Name both the hormone and the direction of storage."
+      },
+      "commonMistakes": [
+        "Saying insulin turns glycogen into blood glucose.",
+        "Calling insulin glycogen."
+      ]
+    },
+    {
+      "id": "glucagon-low-glucose",
+      "title": "Trace glucagon when blood glucose falls",
+      "points": [
+        "10.7",
+        "10.8"
+      ],
+      "terms": [
+        "alpha cell",
+        "glucagon",
+        "liver",
+        "glycogen breakdown"
+      ],
+      "paragraphs": [
+        "A fall in blood glucose stimulates pancreatic alpha cells to release more glucagon. Glucagon promotes liver glycogen breakdown and release of glucose into the blood, helping raise the concentration. Liver glucose production also contributes, although its biochemical detail is beyond this short course model.",
+        "Do not turn this into a claim that every body cell exports stored glycogen as glucose. Muscle glycogen largely supports that muscle’s own activity; the liver is the key named organ for this blood-glucose response. The response diminishes as the disturbance is corrected."
+      ],
+      "example": {
+        "question": "Why is the liver important in the glucagon response?",
+        "steps": [
+          "It can break down glycogen.",
+          "It releases glucose into the blood.",
+          "The resulting rise opposes low blood glucose."
+        ],
+        "explanation": "Keep liver storage and blood regulation linked."
+      },
+      "commonMistakes": [
+        "Swapping glucagon and glycogen.",
+        "Claiming muscle releases all its glycogen as free glucose into blood."
+      ]
+    },
+    {
+      "id": "glucose-feedback-comparison",
+      "title": "Compare opposing glucose responses",
+      "points": [
+        "10.7",
+        "10.8"
+      ],
+      "terms": [
+        "negative feedback",
+        "insulin",
+        "glucagon",
+        "blood glucose"
+      ],
+      "paragraphs": [
+        "For high glucose, greater insulin action helps lower it; for low glucose, greater glucagon action helps raise it. The two course pathways oppose different disturbances and together contribute to regulation. Normal secretion is not necessarily a binary switch with one hormone completely absent.",
+        "For an unfamiliar graph, identify the initial direction of glucose change, choose the relevant response and predict how it opposes that change. Use the units and normal range supplied in the task. Do not impose an invented universal numerical threshold or infer a diagnosis from an isolated plotted point."
+      ],
+      "example": {
+        "question": "A supplied graph shows glucose rising after a meal then returning towards its earlier range. Explain the falling phase.",
+        "steps": [
+          "Identify the earlier rise.",
+          "Increased insulin action promotes uptake/storage.",
+          "The fall reduces the original disturbance, so the corrective signal declines."
+        ],
+        "explanation": "A causal explanation links the trend to a mechanism."
+      },
+      "commonMistakes": [
+        "Saying negative feedback means glucose must fall forever.",
+        "Replacing the supplied graph units with a memorized range."
+      ],
+      "diagram": {
+        "src": "/diagrams/human-glucose-feedback.svg",
+        "alt": "Two original sequences compare insulin after high glucose with glucagon after low glucose and show how each opposes its disturbance.",
+        "caption": "The liver can release glucose to blood; muscle glycogen supports local use. No clinical thresholds or doses."
+      }
+    },
+    {
+      "id": "dialysis-transfer",
+      "title": "Explain what a dialysis membrane does",
+      "points": [
+        "10.9"
+      ],
+      "terms": [
+        "haemodialysis",
+        "partially permeable membrane",
+        "dialysate",
+        "diffusion"
+      ],
+      "paragraphs": [
+        "In haemodialysis, blood passes through a dialyser outside the body and returns to the circulation. A partially permeable membrane separates blood from dialysis fluid. Urea can diffuse down its concentration gradient into fluid initially low in urea; large blood components are retained.",
+        "Controlled fluid composition helps avoid unnecessary loss of useful solutes. Excess water can also be removed by a pressure-controlled process, so do not explain every dialysis transfer solely as diffusion. Dialysis fluid is separated from blood; it is not poured into a blood vessel. This mechanism is a school explanation, not a treatment protocol."
+      ],
+      "example": {
+        "question": "Why maintain low urea concentration in the fluid outside the blood compartment?",
+        "steps": [
+          "It maintains a urea concentration difference.",
+          "Urea can diffuse out across the membrane.",
+          "Changing/flowing dialysis fluid helps maintain transfer."
+        ],
+        "explanation": "Identify the substance and its gradient."
+      },
+      "commonMistakes": [
+        "Sending blood cells through the membrane into the dialysis fluid.",
+        "Calling water removal identical to urea diffusion in every machine."
+      ]
+    },
+    {
+      "id": "dialysis-benefits-burdens",
+      "title": "Evaluate dialysis with a stated context",
+      "points": [
+        "10.9"
+      ],
+      "terms": [
+        "dialysis",
+        "waste removal",
+        "time",
+        "vascular access"
+      ],
+      "paragraphs": [
+        "Dialysis can remove wastes and excess water when kidney function is insufficient, supporting survival without first obtaining a donor organ. It can be used while a suitable transplant is awaited or when transplant is unsuitable.",
+        "Repeated treatment takes time and may require travel, equipment and trained support. Diet and fluid limits can apply; vascular access can become infected or blocked, and treatment can cause adverse effects. Dialysis does not reproduce every normal kidney function. Schedules and outcomes vary, so these are comparison factors, not a universal prescription."
+      ],
+      "example": {
+        "question": "Give one benefit and one burden of dialysis for a person awaiting a suitable donor.",
+        "steps": [
+          "Benefit: waste/water removal can support them while waiting.",
+          "Burden: repeated treatment occupies time and may restrict routine.",
+          "Connect each point to the supplied context."
+        ],
+        "explanation": "Do not rank treatments without the stated circumstances."
+      },
+      "commonMistakes": [
+        "Saying dialysis permanently cures kidney failure.",
+        "Giving one fixed schedule for every patient."
+      ]
+    },
+    {
+      "id": "transplant-benefits-risks",
+      "title": "Evaluate a kidney transplant",
+      "points": [
+        "10.9"
+      ],
+      "terms": [
+        "transplant",
+        "donor",
+        "rejection",
+        "immunosuppression"
+      ],
+      "paragraphs": [
+        "A functioning transplanted kidney can continuously regulate wastes, water and ions, reducing or removing the need for dialysis and allowing greater flexibility in daily life. A suitable donor, assessment and surgery are needed; a new kidney is not immediately available to everyone.",
+        "The immune system can reject transplanted tissue. Compatibility checks reduce risk, and antirejection medicines suppress immune responses, but rejection remains possible and infection risk and other side effects can increase. A graft can fail; transplant is not a guaranteed permanent cure. Benefits and risks depend on the individual context."
+      ],
+      "example": {
+        "question": "Why can “no routine dialysis” and “ongoing treatment” both apply after a successful transplant?",
+        "steps": [
+          "The graft can provide kidney function.",
+          "Medicines and monitoring can still be needed.",
+          "Replacing an organ does not remove every treatment burden."
+        ],
+        "explanation": "Separate filtration function from immune risk management."
+      },
+      "commonMistakes": [
+        "Saying antirejection medicine strengthens attack on the graft.",
+        "Claiming matching eliminates all rejection risk."
+      ]
+    },
+    {
+      "id": "visking-diffusion-model",
+      "title": "Plan a partially permeable membrane investigation",
+      "points": [
+        "10.10"
+      ],
+      "terms": [
+        "Visking tubing",
+        "diffusion",
+        "glucose",
+        "starch",
+        "membrane"
+      ],
+      "paragraphs": [
+        "An original planning model places a starch/glucose mixture inside intact Visking tubing and water outside. In the chosen school membrane model, glucose can pass through but the larger starch molecules cannot. Net glucose diffusion is from its initially higher concentration inside towards lower concentration outside.",
+        "Take separate initial and later samples from both compartments. Fresh aliquots are tested for starch with iodine and for reducing sugar with Benedict’s reagent under the laboratory’s approved heating method. Benedict’s detects reducing sugars rather than uniquely identifying glucose; glucose is the defined starting sugar in this model. No experiment or result is claimed to have been performed."
+      ],
+      "example": {
+        "question": "Which change would support glucose diffusion if external water initially tested negative?",
+        "steps": [
+          "A later positive reducing-sugar result outside supports transfer in this controlled glucose model.",
+          "No external starch result supports exclusion of starch.",
+          "Check contamination and leaks before accepting the conclusion."
+        ],
+        "explanation": "An observation supports a controlled inference, not absolute proof by itself."
+      },
+      "commonMistakes": [
+        "Calling a positive Benedict’s test specific for all glucose in unknown mixtures.",
+        "Saying starch becomes glucose without an enzyme."
+      ],
+      "practical": {
+        "apparatus": [
+          "Suitable Visking tubing and secure ties, containers and labelled sample tubes.",
+          "Defined starch/glucose mixture, water and separate transfer droppers.",
+          "Iodine and Benedict’s reagents, controls and approved supervised water-bath equipment."
+        ],
+        "method": [
+          "Use the laboratory’s approved concentrations, equipment and heating procedure; this is a planning model, not a validated recipe.",
+          "Fill and seal the tubing; rinse its outer surface and check integrity.",
+          "Record initial tests inside and outside with separate clean aliquots.",
+          "Immerse for a fixed measured interval under controlled conditions.",
+          "Test later aliquots using separate starch and reducing-sugar tests, recording controls and repeats."
+        ],
+        "variables": [
+          "For a time-course investigation vary exposure time; measure external reducing-sugar detection under the stated test conditions.",
+          "Keep initial concentrations/volumes, membrane type/area and temperature comparable.",
+          "Qualitative colour evidence is not an exact concentration measurement without calibration."
+        ],
+        "safety": [
+          "Wear eye protection and follow the teacher’s chemical handling and disposal assessment.",
+          "Handle hot water and heated tubes with approved equipment; never heat a closed tube or taste samples.",
+          "Use separate droppers to avoid contamination; reagent-containing samples are not food."
+        ],
+        "quality": [
+          "Initial outside negative samples, intact seals and a rinsed exterior distinguish diffusion from contamination/leaks.",
+          "Known positive/negative reagent controls and repeated trials support reliability.",
+          "No practical performed; primary practical-site access was blocked and independent classroom method review remains pending."
+        ]
+      }
+    },
+    {
+      "id": "visking-controls-results",
+      "title": "Distinguish diffusion, leakage and osmosis",
+      "points": [
+        "10.10"
+      ],
+      "terms": [
+        "control",
+        "repeat",
+        "osmosis",
+        "contamination",
+        "model limitation"
+      ],
+      "paragraphs": [
+        "Rinse the filled tubing’s outside before immersion and check seals for leaks. Initial outside tests and a water-only control help identify contamination; known positive and negative test samples check that the reagents work. Use equal volumes, exposure times, temperature and membrane area for comparisons, and repeat observations.",
+        "A hypothetical result is reducing sugar absent outside initially and present later, while starch remains undetected outside. This supports size-selective transfer if controls work and the bag is intact. A bag-mass change can concern water movement by osmosis and does not alone establish which solute crossed. A tubing wall lacks living-cell transport and is only a limited biological model."
+      ],
+      "example": {
+        "question": "Why is a starch-positive outside sample a reason to check the setup?",
+        "steps": [
+          "Starch should be excluded by the stated membrane model.",
+          "A leak or contaminated exterior may explain the result.",
+          "Do not automatically infer a different molecule size from one compromised trial."
+        ],
+        "explanation": "Control alternative explanations before extending the model."
+      },
+      "commonMistakes": [
+        "Comparing unequal areas without considering their effect.",
+        "Calling a mass increase proof that starch diffused."
+      ]
+    },
+    {
+      "id": "liver-functions-urea",
+      "title": "Link liver functions to the kidney and gut",
+      "points": [
+        "10.11"
+      ],
+      "terms": [
+        "liver",
+        "bile",
+        "glycogen",
+        "deamination",
+        "urea",
+        "detoxification"
+      ],
+      "paragraphs": [
+        "The liver makes bile, which helps provide suitable intestinal conditions and emulsifies fats; the gall bladder stores it. Liver glycogen storage and breakdown contribute to blood-glucose regulation. These are different functions of the same organ, not different routes for urine.",
+        "Amino-acid processing can remove nitrogen-containing groups, producing nitrogenous waste. The school pathway describes deamination and conversion of toxic ammonia to less toxic urea in the liver. Urea travels in blood to the kidneys for excretion: the liver forms it, while kidneys remove it. Detailed nitrogen-transfer chemistry is beyond this model.",
+        "Liver enzymes also process substances including alcohol. Detoxification does not mean unlimited capacity, instant removal or making every intermediate harmless; alcohol processing and exposure can damage liver tissue. This function is not a drinking-safety limit or treatment recommendation."
+      ],
+      "example": {
+        "question": "Trace the route of nitrogenous waste without swapping organ functions.",
+        "steps": [
+          "Amino-acid nitrogen is processed in the liver.",
+          "Urea is formed and carried in blood.",
+          "Kidneys excrete it in urine."
+        ],
+        "explanation": "Production and excretion are different steps."
+      },
+      "commonMistakes": [
+        "Calling urea a digestive enzyme in bile.",
+        "Saying kidney filtration manufactures all urea.",
+        "Calling alcohol processing a guarantee of harmless exposure."
+      ]
+    }
+  ]
+}

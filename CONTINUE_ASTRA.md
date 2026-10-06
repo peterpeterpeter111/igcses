@@ -2,16 +2,16 @@
 
 # Current checkpoint — 6 October 2026
 
-Read research/checkpoints/2026-10-06-HUMAN-NUTRITION.md first. Preserve latest commit, history and UI; no reset or discard.
+Read research/checkpoints/2026-10-06-HUMAN-HOMEOSTASIS.md first. Preserve latest commit/history/UI; no reset or discard.
 
-Nutrition now has28 original partial Human Biology lessons and three diagrams. Eleven new source identities plus existing6.12 teaching owner;12 new partial audits,71 local requirements. Paper-export regression fixed with grounded partial teaching checks and74 rejection cases. All182 Chemistry numbered identity/page references align, while teaching remains partial.
+Homeostasis now has24 original partial lessons and three reviewed flow diagrams. Ten new identities plus existing10.1 owner retained;11 audits,66 local requirements,35 links. Primary practical site403: Visking is clearly original planning/hypothetical evidence, not performed or a validated recipe. Independent review remains.
 
-Totals:810 sections /30 partial notes /36 routes;721 reviewed identities /706 partial audits /2,286 local editorial requirements /1,098 partial links. Human Biology134 sections /nine notes /96 identities /90 audits. Seven obtained QP/MS pairs; zero fully processed papers, complete chapters/points or active templates. Seven provisional offline families; empty live registry. Raw manifests unchanged.
+Totals:834 sections /31 partial notes /36 routes;731 reviewed identities /717 audits /2,352 requirements /1,133 partial links. Human158sections /ten notes /106 identities /101 audits. Seven obtained paper/scheme pairs; zero complete chapters/points, fully processed papers or active templates. Seven experimental offline families, empty live registry. Raw manifests unchanged.
 
-144 tests, types, lint,14 research checks, final content/evidence, isolated D1, final build and107-file public scan pass. Three diagrams, settled615px anchor, search and paper labels verified. Smaller/mobile, first-frame and hosted checks remain. No Sites version, deployment or public URL.
+144 tests, types, lint,14 research checks, content/evidence, isolated D1, final build and110-file public scan pass. Three diagrams, settled615px anchor, search and new01/02 labels verified. First-frame, smaller/mobile and hosted remain. No Sites version, deployment, public URL or AI integration.
 
-GitHub0a33ebc exactly mirrors local614a2d8; this newer delta needs sync. Inspect work/github-sync for a newer proof and verify whole tree non-force. Next: Human coordination/homeostasis/disease, remaining English/Maths curriculum, paper audits/extraction and independent calibrated templates. Keep AI last.
+GitHub1824abd exactly mirrors saved7347382; this newer delta needs non-force sync. Inspect work/github-sync/oct6-human-homeostasis/verified.json for later proof. Next: Human coordination/disease, English/Maths curriculum gaps, paper processing checks/extraction and independent calibrated templates. Keep AI last.
 
-User asks faster useful progress until weekly exhaustion, overriding historical5% gates this run. Last check32%five-hour/89%weekly remaining; ordinary usage allowed. No reset consumed. Save phases and stop if actual usage blocks further work.
+User asks faster useful progress until weekly exhaustion, overriding historical5% gates this run. Last allowance18%five-hour/87%weekly; ordinary usage allowed. No reset. Save phases and stop if actual usage blocks further work.
 
-Older entry text remains in research/checkpoints/archive/2026-10-06-PROGRESS-HISTORY.md and 2026-10-06-CONTINUE-HISTORY.md; all individual checkpoints and Git history preserved.
+Historical entry documents retained in research/checkpoints/archive/2026-10-06-PROGRESS-HISTORY.md and 2026-10-06-CONTINUE-HISTORY.md; individual checkpoints and Git history preserved.

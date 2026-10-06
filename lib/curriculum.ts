@@ -1,3 +1,4 @@
+import humanHomeostasis from '../research/curriculum-audits/4HB1-homeostasis.json' with { type: 'json' };
 import humanNutrition from '../research/curriculum-audits/4HB1-nutrition.json' with { type: 'json' };
 import chemistryOrganicFamilies from '../research/curriculum-audits/4CH1-organic-families-polymers.json' with { type: 'json' };
 import chemistryOrganic from '../research/curriculum-audits/4CH1-organic-foundations.json' with { type: 'json' };
@@ -79,6 +80,7 @@ import mathsPolynomials from '../research/curriculum-audits/4MB1-polynomials-and
 
 // These bounded audits link partial teaching; they do not promote completion.
 export const curriculumAudits = [
+  humanHomeostasis,
   humanNutrition,
   chemistryOrganicFamilies,
   chemistryOrganic,
