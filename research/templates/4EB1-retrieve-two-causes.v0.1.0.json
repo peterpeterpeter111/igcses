@@ -251,7 +251,8 @@
     "status": "passed",
     "runRefs": [
       "research/validation/2026-10-05-retrieval-prototype.json",
-      "research/validation/retrieval-marking-cases.json"
+      "research/validation/retrieval-marking-cases.json",
+      "research/validation/2026-10-06-retrieval-diversity.json"
     ]
   },
   "runtime": {
@@ -289,7 +290,7 @@
       "Only a finite original word-bank prototype is implemented; arbitrary original-text context domain remains pending.",
       "Explicit causal sentences are not independently calibrated to source reading difficulty.",
       "Bounded approved-phrase marking defers broad paraphrases, mixed contradictions and extra evidence; no learner calibration.",
-      "Distinct byte strings do not prove semantic diversity; near-duplicate rejection remains pending.",
+      "Conservative duplicate filtering covers the finite cause sets only; arbitrary-text similarity and live persisted history remain pending.",
       "No validated 4/6-mark families or complete live quiz blueprint; AI integration deferred."
     ]
   }

@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-06",
+  "familyId": "4EB1.retrieve-two-causes",
+  "familyVersion": "0.1.0",
+  "scope": "Exhaustive conservative grouping for a fixed six-cause word bank. Not general semantic similarity, reading-demand equivalence or learner calibration.",
+  "policy": "Ignore event name, cause ordering, remedy selection and evidence order when the full set of cause facts is unchanged. This deliberately groups some different presentation demands together.",
+  "parameterPackagesChecked": 6120,
+  "conservativeCauseSetGroups": 50,
+  "groupMultiplicityDistribution": {
+    "24": 15,
+    "72": 20,
+    "288": 15
+  },
+  "selectedDistinctGroups": 50,
+  "rejectedDuplicateVariants": 6070,
+  "historyGroupsProvided": 17,
+  "remainingGroupsSelected": 33,
+  "historyDuplicatesRejected": 6087,
+  "entireBatchValidatedBeforeSelection": true,
+  "hashesRemainPrivate": true,
+  "liveEligible": false,
+  "activeTemplates": 0,
+  "sourceHashes": {
+    "server/generators/retrieve-two-causes.ts": "52741fbb73a9c518bb8839ba8247928d725b02e2dda75d3f44b8faa81278293b",
+    "server/generators/retrieval-diversity.ts": "f93573563a9c56b1920f988438b46154d6a2073ee9cba01d3c91583ce0fe3c05"
+  },
+  "remaining": [
+    "No generic free-text similarity filter.",
+    "No arbitrary passage generation, empirical reading difficulty or broad paraphrase calibration.",
+    "History selection is pure offline logic; live concurrent persistence and activation remain pending.",
+    "No complete4/6-mark blueprint or AI integration."
+  ]
+}
