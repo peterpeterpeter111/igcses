@@ -28,6 +28,12 @@ check('JSON schema and provisional family are valid', () => {
 const templates = readdirSync(root + 'research/templates/')
   .filter((name) => name.endsWith('.json'))
   .map((name) => read('research/templates/' + name));
+check('English assessment objectives have a separate partial-coverage schema', () => {
+  const objectiveSchema = read('research/schemas/assessment-objectives.schema.json');
+  assert(ajv.validateSchema(objectiveSchema));
+  const validate = ajv.compile(objectiveSchema);
+  assert(validate(read('research/assessment-objectives/4EB1-issue4.json')), JSON.stringify(validate.errors));
+});
 check(
   'Every saved family satisfies its schema and has no unreviewed activation',
   () => {
@@ -196,7 +202,7 @@ check(
   () => {
     const dir = root + 'research/ledger/v1/';
     const files = readdirSync(dir).filter((n) => n.endsWith('.csv'));
-    assert.equal(files.length, 11);
+    assert.equal(files.length, 13);
     for (const name of files) {
       const headers = readFileSync(dir + name, 'utf8')
         .split(/\r?\n/)[0]

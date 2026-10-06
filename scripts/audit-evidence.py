@@ -11,6 +11,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from ledger_io import read_table
 from note_io import read_note
+from assessment_objective_io import objective_tables
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -126,6 +127,20 @@ def audit(root=ROOT):
         for key in sorted(actual - expected):
             errors.append({'kind': 'unmodelled-ledger-row', 'table': name, 'id': key})
 
+    # Separate AO identity domain: never fold these into numbered point totals.
+    objective_models = [json.loads(p.read_text()) for p in sorted((root / 'research/assessment-objectives').glob('*.json'))]
+    for model in objective_models:
+        try:
+            projections = objective_tables(model, root)
+        except (ValueError, KeyError, StopIteration) as exc:
+            errors.append({'kind': 'assessment-objective-contract', 'note': str(exc)})
+            continue
+        for name, (_, expected) in projections.items():
+            actual = [r for r in tables.get(name, []) if r['qualification'] == model['qualification']]
+            key = next(iter(expected[0])) if expected else 'objective_coverage_id'
+            if sorted(actual, key=lambda r: r[key]) != sorted(expected, key=lambda r: r[key]):
+                errors.append({'kind': 'assessment-objective-export-mismatch', 'table': name, 'qualification': model['qualification']})
+
     normal_docs = {r['document_id'] for r in tables['documents']}
     # Metadata transcription closes reference gaps, not academic review gates.
     source_fields = {'qualification': 'qualification', 'document_type': 'documentType',
@@ -199,6 +214,8 @@ def audit(root=ROOT):
             'partialNoteDocuments': len(teaching),
             'noteSections': sum(len(n['sections']) for n in teaching),
             'reviewedParentIdentities': len(parents),
+            'reviewedAssessmentObjectives': sum(len(m['objectives']) for m in objective_models if m['qualification'] == code),
+            'partialObjectiveTeachingLinks': sum(len(m['teachingLinks']) for m in objective_models if m['qualification'] == code),
             'partialLocalRequirements': sum(r['completionStatus'] == 'partial' for r in local_requirements),
             'normalizedPaperRows': sum(r['qualification'] == code for r in tables['papers']),
             'normalizedFullyProcessedPapers': sum(r['qualification'] == code and r['stage'] == 'processed' for r in tables['papers']),

@@ -1,0 +1,251 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:igcses:assessment-objectives:1",
+  "title": "English assessment objectives and partial teaching contract v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "qualification",
+    "specificationDocumentId",
+    "specificationIssue",
+    "specificationSha256",
+    "reviewDate",
+    "reviewer",
+    "reviewerType",
+    "humanReviewed",
+    "scope",
+    "objectives",
+    "teachingLinks"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "qualification": {
+      "const": "4EB1"
+    },
+    "specificationDocumentId": {
+      "const": "4EB1-spec"
+    },
+    "specificationIssue": {
+      "type": "string",
+      "minLength": 1
+    },
+    "specificationSha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "reviewDate": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "reviewer": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewerType": {
+      "const": "agent"
+    },
+    "humanReviewed": {
+      "const": false
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "objectives": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "reference",
+          "referenceKind",
+          "domain",
+          "scope",
+          "summary",
+          "qualificationWeightPercent",
+          "sourcePdfPages",
+          "sourcePrintedPages",
+          "statementVerified",
+          "complete",
+          "humanReviewed"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^4EB1:issue4:AO[1-6]$"
+          },
+          "reference": {
+            "enum": [
+              "AO1",
+              "AO2",
+              "AO3",
+              "AO4",
+              "AO5",
+              "AO6"
+            ]
+          },
+          "referenceKind": {
+            "const": "assessment-objective"
+          },
+          "domain": {
+            "enum": [
+              "reading",
+              "writing",
+              "spoken-language"
+            ]
+          },
+          "scope": {
+            "enum": [
+              "exam",
+              "optional-endorsement"
+            ]
+          },
+          "summary": {
+            "type": "string",
+            "minLength": 1
+          },
+          "qualificationWeightPercent": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0,
+            "maximum": 100
+          },
+          "sourcePdfPages": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "sourcePrintedPages": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "statementVerified": {
+            "const": true
+          },
+          "complete": {
+            "const": false
+          },
+          "humanReviewed": {
+            "const": false
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "scope": {
+                  "const": "optional-endorsement"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "qualificationWeightPercent": {
+                  "type": "null"
+                },
+                "reference": {
+                  "const": "AO6"
+                },
+                "domain": {
+                  "const": "spoken-language"
+                }
+              }
+            },
+            "else": {
+              "properties": {
+                "qualificationWeightPercent": {
+                  "type": "integer"
+                },
+                "reference": {
+                  "enum": [
+                    "AO1",
+                    "AO2",
+                    "AO3",
+                    "AO4",
+                    "AO5"
+                  ]
+                },
+                "domain": {
+                  "enum": [
+                    "reading",
+                    "writing"
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "teachingLinks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "objectiveId",
+          "chapterId",
+          "sectionId",
+          "teachingReviewPath",
+          "teachingReviewedAt",
+          "status",
+          "humanReviewed"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "objectiveId": {
+            "type": "string",
+            "pattern": "^4EB1:issue4:AO[1-6]$"
+          },
+          "chapterId": {
+            "enum": [
+              "reading",
+              "directed-writing",
+              "writing",
+              "spoken-language"
+            ]
+          },
+          "sectionId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "teachingReviewPath": {
+            "type": "string",
+            "pattern": "^research/teaching-reviews/4EB1-[a-z-]+\\.json$"
+          },
+          "teachingReviewedAt": {
+            "type": "string",
+            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+          },
+          "status": {
+            "const": "partial"
+          },
+          "humanReviewed": {
+            "const": false
+          }
+        }
+      }
+    }
+  }
+}

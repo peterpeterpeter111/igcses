@@ -15,6 +15,7 @@ import humanSkills from '@/research/syllabus-skills/4HB1-issue2-selected.json';
 import humanCubeSkills from '@/research/syllabus-skills/4HB1-issue2-q6-selected.json';
 import englishReadingReview from '@/research/teaching-reviews/4EB1-reading-foundations.json';
 import englishWritingReview from '@/research/teaching-reviews/4EB1-writing-foundations.json';
+import { assessmentObjectiveCoverage, assessmentObjectiveReviewDate } from '@/lib/assessment-objectives';
 import { curriculumAudits } from '@/lib/curriculum';
 import { obtainedPaperCandidates, paperCoverReview, paperTaskIndex, paperDetailedSummary } from '@/lib/paper-discovery';
 export default async function SubjectCoverage({
@@ -30,6 +31,7 @@ export default async function SubjectCoverage({
     .flatMap((audit) => audit.parents.map((parent) => ({ ...parent, chapterId: audit.chapterId })));
   const points = pointCandidates.filter((x) => x.qualification === s.code),
     source = sources.find((x) => x.qualification === s.code)!;
+  const objectives = assessmentObjectiveCoverage(s.code);
   return (
     <SiteFrame>
       <main className="page">
@@ -199,8 +201,46 @@ export default async function SubjectCoverage({
             Writing source review: {englishWritingReview.reviewDate} against
             Issue 4, PDF pages {englishWritingReview.source.pdfPages.join(', ')}.
             Full source-text practice, independent whole-response level decisions,
-            AO coverage reconciliation and optional spoken-language teaching remain
+            complete objective coverage and optional spoken-language teaching remain
             incomplete. No human certification or active marking template.
+          </p>
+          <h2 id="english-objectives">Assessment objectives and teaching</h2>
+          <p>
+            {objectives.filter((objective) => objective.scope === 'exam').length} exam
+            objectives have partial teaching links. The optional spoken-language
+            objective is separate and has no notes yet. These objectives are not
+            counted as numbered syllabus statements or complete coverage.
+          </p>
+          <div className="table-wrap">
+            <table>
+              <caption>Official qualification weights; lesson links remain partial.</caption>
+              <thead><tr><th scope="col">Objective</th><th scope="col">Weight</th><th scope="col">Linked lessons</th></tr></thead>
+              <tbody>
+                {objectives.map((objective) => <tr key={objective.id}>
+                  <th scope="row">{objective.reference}{objective.scope === 'optional-endorsement' ? ' · optional' : ''}</th>
+                  <td>{objective.qualificationWeightPercent === null ? 'Separate endorsement' : `${objective.qualificationWeightPercent}%`}</td>
+                  <td>{objective.links.length ? `${objective.links.length} partial` : 'Not started'}</td>
+                </tr>)}
+              </tbody>
+            </table>
+          </div>
+          {objectives.map((objective) => <details key={objective.id}>
+            <summary>{objective.reference}: {objective.summary}</summary>
+            {objective.links.length ? <ul className="plain-list">
+              {objective.links.map((link) => <li key={link.id}>
+                <a href={`/subjects/english/${link.chapterId}#${link.sectionId}`}>
+                  {getNotes('english', link.chapterId)?.sections.find((section) => section.id === link.sectionId)?.title ?? link.sectionId}
+                </a>{' · partial teaching'}
+              </li>)}
+            </ul> : <p>No teaching document for the optional endorsement has been added.</p>}
+          </details>)}
+          <p className="status">
+            Objective definitions and {objectives.reduce((n, objective) => n + objective.links.length, 0)} partial
+            {' '}relationships reconciled on {assessmentObjectiveReviewDate} against
+            Issue 4, PDF pages 10 and 18. A lesson can support several objectives.
+            Full text-range practice and independent whole-response calibration
+            remain incomplete; no objective is certified complete.
+            {' '}<a href={`${source.url}#page=10`} target="_blank" rel="noreferrer">Inspect the official objectives ↗</a>
           </p>
           </section>
         )}
