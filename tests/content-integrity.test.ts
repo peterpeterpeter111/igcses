@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { subjects } from '../content/catalog.ts';
-import { notes } from '../content/notes.ts';
+import { notes, type NoteSection } from '../content/notes.ts';
 import { searchAll } from '../lib/library.ts';
 
 void test('catalog contains six uniquely addressable subjects and chapters', () => {
@@ -60,6 +60,30 @@ void test('cross-subject search returns each matching subject without mutating c
       /chapter incomplete|notes not written/.test(result.status),
     ),
   );
+});
+
+void test('saved sections use the reader contract and retain structured practical material', () => {
+  const fields: (keyof NoteSection)[] = [
+    'id', 'title', 'paragraphs', 'terms', 'points', 'example', 'practice',
+    'diagram', 'commonMistakes', 'practical', 'answerGuide',
+  ];
+  const supported = new Set<string>(fields);
+  for (const note of notes) {
+    for (const section of note.sections) {
+      assert.ok(Object.keys(section).every((key) => supported.has(key)),
+        `${note.subjectId}/${note.chapterId}#${section.id} has a field the reader does not support`);
+      if (section.practical) {
+        assert.deepEqual(Object.keys(section.practical).sort(),
+          ['apparatus', 'method', 'variables', 'safety', 'quality'].sort());
+        assert.ok(Object.values(section.practical).every((items) =>
+          items.length > 0 && items.every((item) => item.trim())));
+      }
+    }
+  }
+  const hearing = notes.find((note) => note.subjectId === 'human-biology' &&
+    note.chapterId === 'coordination')?.sections.find((section) =>
+      section.id === 'audible-range-planning');
+  assert.ok(hearing?.practical?.method.length);
 });
 
 void test('teaching diagrams and nested material have valid searchable chapter targets', async () => {

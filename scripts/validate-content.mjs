@@ -12,6 +12,10 @@ const rows = readdirSync('content/notes')
   .sort()
   .map((f) => readNote('content/notes/' + f));
 const checks = [];
+const sectionFields = new Set([
+  'id', 'title', 'paragraphs', 'terms', 'points', 'example', 'practice',
+  'diagram', 'commonMistakes', 'practical', 'answerGuide',
+]);
 for (const n of rows) {
   const s = sources.find((s) => s.id === n.sourceId);
   assert(s);
@@ -23,6 +27,21 @@ for (const n of rows) {
   assert(n.sections.length > 0);
   assert.equal(new Set(n.sections.map((s) => s.id)).size, n.sections.length);
   assert(n.sections.every((s) => s.paragraphs.length > 0 && s.title && s.id));
+  for (const section of n.sections) {
+    for (const field of Object.keys(section)) {
+      assert(sectionFields.has(field),
+        `${n.subjectId}/${n.chapterId}#${section.id}: unsupported section field ${field}; the reader may silently omit it`);
+    }
+    if (section.practical) {
+      const fields = ['apparatus', 'method', 'variables', 'safety', 'quality'];
+      assert.deepEqual(Object.keys(section.practical).sort(), [...fields].sort());
+      for (const field of fields) {
+        assert(Array.isArray(section.practical[field]) && section.practical[field].length > 0 &&
+          section.practical[field].every((item) => typeof item === 'string' && item.trim()),
+          `${section.id}: practical ${field} must contain nonempty text`);
+      }
+    }
+  }
   checks.push({
     subjectId: n.subjectId,
     chapterId: n.chapterId,
