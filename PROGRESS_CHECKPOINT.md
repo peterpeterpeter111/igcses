@@ -1,3 +1,11 @@
+# Latest phase — Reactivity, rust and redox, 6 October 2026
+
+Read `research/checkpoints/2026-10-06-REACTIVITY.md` first. Preserve d6e5104 and descendants. GitHub63ef574 exactly mirrors the atmosphere tree;old pending sync resolved. Twelve new partial lessons cover own2.15–2.20,all both1C/2C. Inorganic32sections. Keep source-error corrections,conditional comparisons and agent-role explanations.
+
+Totals660sections/27partialnotes/36routes;608reviewed identities/592partialaudits/1,859localrequirements/889partiallinks. Chemistry81sections/two notes/80identities and audits/248requirements.143tests,typecheck/lint/14research/content/evidence/isolatedD1/build/89-filepublicscan pass. Desktop settled native reader verified;first-frame entrance/scroll timing,narrow and hosted checks not certified. Seven obtained pairs;zero processedpapers/completepoints/chapters/activefamilies;seven experimental prototypes/live registry empty.
+
+Commit/sync this newer phase non-force and verify exacttree. Next own2.21 onward extraction,widercurriculum,historical/skills paper reviews and independent calibration. Preserve quality/UI/history/counts;AIlast,noreset/version/deployment/publicURL. Latest user continues useful work until weekly exhausted,overriding historical5%gate for this run. Last37%five-hour/2%weeklyremaining. Older entries historical.
+
 # Latest phase — Chemistry atmosphere, 6 October 2026
 
 Read `research/checkpoints/2026-10-06-ATMOSPHERE.md` first. Preserve bdccfc3 and all descendants. GitHub cac8c63 exactly mirrors the halogen source tree; older pending-sync wording is historical. Ten new partial lessons/one original oxygen-volume schematic cover own2.9–2.14,all both1C/2C. Inorganic now20sections. Teacher-guide download/answer review is not a new examination pair; no performed trials.

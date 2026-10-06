@@ -27,7 +27,11 @@
     "Explain and calculate oxygen removal using the whole gas sample.",
     "Evaluate a practical plan and distinguish repeatability from accuracy.",
     "Describe combustion and carbonate decomposition without confusing products.",
-    "Explain how carbon dioxide changes outgoing energy transfer."
+    "Explain how carbon dioxide changes outgoing energy transfer.",
+    "Use conditional reaction evidence to rank metals.",
+    "Recall the eleven-metal order required by Pearson.",
+    "Distinguish rusting conditions, barrier protection and sacrifice.",
+    "Balance electron-transfer examples and identify both agent roles."
   ],
   "supportingSources": [
     {
@@ -150,6 +154,46 @@
       "url": "https://science.nasa.gov/ems/13_radiationbudget/",
       "sectionIds": [
         "carbon-dioxide-greenhouse"
+      ]
+    },
+    {
+      "title": "University of Washington: named dilute-acid comparisons",
+      "url": "https://chem.washington.edu/lecture-demos/metals-acid",
+      "sectionIds": [
+        "metal-acid-evidence"
+      ]
+    },
+    {
+      "title": "Purdue University: zinc/copper displacement evidence",
+      "url": "https://chemed.chem.purdue.edu/demos/demosheets/9.11.html",
+      "sectionIds": [
+        "metal-salt-displacement",
+        "redox-agents"
+      ]
+    },
+    {
+      "title": "OpenStax Chemistry 2e: corrosion mechanisms",
+      "url": "https://openstax.org/books/chemistry-2e/pages/17-6-corrosion",
+      "sectionIds": [
+        "rust-conditions",
+        "rust-evidence-plan",
+        "rust-barriers",
+        "rust-galvanising-sacrificial"
+      ]
+    },
+    {
+      "title": "IUPAC Gold Book: oxidation definition",
+      "url": "https://goldbook.iupac.org/terms/view/O04362/plain",
+      "sectionIds": [
+        "redox-oxygen-transfer",
+        "redox-electron-transfer"
+      ]
+    },
+    {
+      "title": "IUPAC Gold Book: reduction definition",
+      "url": "https://goldbook.iupac.org/terms/view/R05222/plain",
+      "sectionIds": [
+        "redox-electron-transfer"
       ]
     }
   ],
@@ -813,6 +857,393 @@
         "Explaining warming as an ozone hole.",
         "Saying all heat is permanently trapped.",
         "Using one day’s weather as proof of a long-term climate trend."
+      ]
+    },
+    {
+      "id": "metal-water-evidence",
+      "title": "Water reactions as reactivity evidence",
+      "points": [
+        "2.15"
+      ],
+      "terms": [
+        "reactivity series",
+        "cold water",
+        "steam",
+        "controlled comparison"
+      ],
+      "paragraphs": [
+        "Metals can be compared by their reactions under stated conditions. Potassium, sodium and lithium react with cold water to form their hydroxides and hydrogen; calcium also forms its hydroxide and hydrogen. Within the alkali-metal comparison, potassium is more reactive than sodium, which is more reactive than lithium. Calcium hydroxide is only sparingly soluble, so its mixture may look cloudy.",
+        "Magnesium reacts only very slowly with cold water, but heating changes the comparison. With steam the model reaction is Mg + H₂O(g) → MgO + H₂. Cold-water hydroxide and steam oxide products must not be confused. “No visible reaction during this observation” is not identical to “no possible reaction under any conditions”.",
+        "Use comparable mass, exposed surface and temperature when interpreting relative vigour. Surface oxide layers and sample shape can affect visible rates. If two metals both show no visible reaction with cold water, that evidence alone cannot rank them against each other. Other reactions are needed; do not invent an order from two negative results."
+      ],
+      "example": {
+        "question": "Two metals show no visible reaction with cold water during a short observation. Can this alone establish which is more reactive?",
+        "steps": [
+          "Both observations place limits on that particular comparison.",
+          "Neither is shown to react faster than the other.",
+          "Use additional supplied acid or displacement evidence to rank them."
+        ],
+        "explanation": "A negative result is condition-dependent, not a numerical rate or a complete ordering."
+      },
+      "commonMistakes": [
+        "Mixing cold-water and steam observations as if conditions were the same.",
+        "Writing magnesium hydroxide as the stated steam product.",
+        "Ranking two unreactive-looking samples solely from two negative results."
+      ]
+    },
+    {
+      "id": "metal-acid-evidence",
+      "title": "Metals with dilute hydrochloric or sulfuric acid",
+      "points": [
+        "2.15"
+      ],
+      "terms": [
+        "hydrogen",
+        "metal salt",
+        "dilute acid",
+        "surface layer"
+      ],
+      "paragraphs": [
+        "Many metals above hydrogen in the school reactivity series displace hydrogen from dilute hydrochloric or sulfuric acid, making a salt and hydrogen gas. Magnesium and zinc provide familiar comparisons; iron also reacts. Copper does not displace hydrogen from these dilute non-oxidizing acids. This is a chemical distinction, not simply a statement that copper reacts a little more slowly.",
+        "Balanced examples are Mg + 2HCl → MgCl₂ + H₂; Zn + H₂SO₄ → ZnSO₄ + H₂; and Fe + 2HCl → FeCl₂ + H₂. Hydrochloric acid makes chlorides, while sulfuric acid makes sulfates in these examples. The iron product here is iron(II), not automatically iron(III). The acid and conditions must be specified; other acids need not follow this pattern.",
+        "A fair rate comparison requires comparable concentration, temperature, sample surface and quantity. Magnesium typically reacts more vigorously than zinc under suitable comparable conditions, while copper gives no hydrogen-displacement result. A protective aluminium oxide layer can delay visible reaction even though aluminium is above zinc and iron in Pearson’s required order. Vigour from unequal samples does not define an intrinsic numerical reactivity scale."
+      ],
+      "example": {
+        "question": "A question specifies zinc with dilute sulfuric acid. Name the salt and gas, balance the equation and state whether copper would displace hydrogen under the same acid conditions.",
+        "steps": [
+          "Salt: zinc sulfate; gas: hydrogen.",
+          "Zn + H₂SO₄ → ZnSO₄ + H₂.",
+          "Copper does not displace hydrogen from this dilute acid."
+        ],
+        "explanation": "The named acid determines the salt, and copper’s position below hydrogen limits this displacement prediction."
+      },
+      "commonMistakes": [
+        "Predicting a chloride from sulfuric acid.",
+        "Calling the gas oxygen.",
+        "Extending the dilute-acid rule to every acid and concentration."
+      ]
+    },
+    {
+      "id": "metal-salt-displacement",
+      "title": "Displacement from aqueous metal salts",
+      "points": [
+        "2.16"
+      ],
+      "terms": [
+        "metal ion",
+        "displacement",
+        "spectator ion",
+        "product evidence"
+      ],
+      "paragraphs": [
+        "In the usual aqueous comparison, a more reactive metal can convert ions of a less reactive metal into the elemental metal. Zinc with copper(II) sulfate gives Zn + CuSO₄ → ZnSO₄ + Cu. The reacting copper species initially is Cu²⁺, not a piece of copper metal or a sulfate ion. Sulfate remains a spectator in the net ionic description.",
+        "The net ionic equation is Zn + Cu²⁺ → Zn²⁺ + Cu. Zinc atoms become ions and copper ions become atoms. Expected evidence includes a copper deposit and a decrease in the blue colour as Cu²⁺ is removed, subject to quantities and completion. Deposit colour depends on surface and particle appearance, so do not require every copper deposit to look identically bright red.",
+        "Copper does not displace zinc from zinc sulfate under this usual comparison. A balanced reverse equation is not proof that it happens. Treat the ranking as a prediction for appropriate conditions: very reactive metals in water can react with the solvent, so putting any metal into any aqueous salt is not a universal clean test."
+      ],
+      "example": {
+        "question": "A hypothetical results table says A displaces B from its salt, and B displaces C. Predict A with C’s salt and C with A’s salt.",
+        "steps": [
+          "The positive evidence gives A > B > C.",
+          "A is predicted to displace C under comparable suitable conditions.",
+          "C is not predicted to displace A."
+        ],
+        "explanation": "This is an original qualitative table, not a performed experiment; solvent reactions or unsuitable conditions can invalidate a simple test."
+      },
+      "commonMistakes": [
+        "Saying sulfate is the displaced element.",
+        "Using a balanced reverse equation as evidence of a reaction.",
+        "Ignoring the distinction between metal atoms and metal ions."
+      ]
+    },
+    {
+      "id": "metal-oxide-displacement",
+      "title": "A more reactive metal can remove oxygen from an oxide",
+      "points": [
+        "2.16"
+      ],
+      "terms": [
+        "metal oxide",
+        "oxygen transfer",
+        "reduction",
+        "reaction conditions"
+      ],
+      "paragraphs": [
+        "A metal above another in the reactivity series can, under suitable reaction conditions, remove oxygen from the less reactive metal’s oxide. The more reactive metal becomes oxidized; the oxide loses oxygen and forms its metal. A model example is Mg + CuO → MgO + Cu.",
+        "Here magnesium gains oxygen and copper(II) oxide loses oxygen. Both sides contain one magnesium, one copper and one oxygen atom. The equation predicts product identity and conserves atoms; it does not specify an ignition procedure or guarantee visible reaction on simply mixing cold solids.",
+        "Copper is not expected to take oxygen from magnesium oxide in the corresponding simple comparison. State the order, identify which oxide is reduced and give the products. Do not confuse displacement from a solid oxide with metal-ion displacement from a salt solution, even though both can supply evidence of relative reactivity."
+      ],
+      "example": {
+        "question": "For Mg + CuO → MgO + Cu, which reactant gains oxygen and which loses it? Would Cu + MgO be the expected reverse displacement?",
+        "steps": [
+          "Magnesium gains oxygen to become magnesium oxide.",
+          "Copper(II) oxide loses oxygen to form copper.",
+          "No expected reverse displacement: copper is below magnesium in the required order."
+        ],
+        "explanation": "The oxygen-transfer model connects the ranking to specific reactants and products."
+      },
+      "commonMistakes": [
+        "Claiming copper metal gains oxygen in the forward reaction.",
+        "Treating suitable heating conditions as irrelevant to solid reactions.",
+        "Writing an unqualified reverse reaction just because atom counts balance."
+      ]
+    },
+    {
+      "id": "metal-reactivity-order",
+      "title": "Pearson’s required metal order",
+      "points": [
+        "2.17"
+      ],
+      "terms": [
+        "potassium",
+        "sodium",
+        "lithium",
+        "calcium",
+        "reactivity order"
+      ],
+      "paragraphs": [
+        "Learn the required descending order: potassium > sodium > lithium > calcium > magnesium > aluminium > zinc > iron > copper > silver > gold. Greater-than here means more reactive in this school series; it is not an atomic-number sequence or a claim about every reaction rate.",
+        "Use positions to support predictions: zinc is above iron and copper, so it can displace those metals from suitable salts. Aluminium is above zinc despite a surface layer that can hinder observations. Gold is below silver in the stated order. Hydrogen can be added as a comparison reference between iron and copper for the named dilute-acid reactions; it is not one of the eleven metals in this specification list.",
+        "Pearson’s chemical reactivity ordering is the required learning target. Do not silently replace it with a list of standard electrode potentials: solvent, passivation and reaction conditions matter, and such tables describe a particular electrochemical comparison. State which evidence supports a ranking when a question supplies results."
+      ],
+      "example": {
+        "question": "Place aluminium, gold, magnesium, copper and zinc in descending order using the required series.",
+        "steps": [
+          "Magnesium is above aluminium.",
+          "Aluminium is above zinc; zinc is above copper.",
+          "Copper is above gold: Mg > Al > Zn > Cu > Au."
+        ],
+        "explanation": "All five positions follow the source list rather than alphabetical order, density or one uncontrolled demonstration."
+      },
+      "commonMistakes": [
+        "Omitting aluminium because its surface can appear unreactive.",
+        "Calling hydrogen one of the listed metals.",
+        "Substituting atomic mass or electrode values for the specified order."
+      ]
+    },
+    {
+      "id": "rust-conditions",
+      "title": "Rust requires both water and oxygen",
+      "points": [
+        "2.18"
+      ],
+      "terms": [
+        "rust",
+        "hydrated iron(III) oxide",
+        "corrosion",
+        "conditions"
+      ],
+      "paragraphs": [
+        "Rusting is corrosion of iron in the presence of both water and oxygen. The familiar brown material is commonly described as hydrated iron(III) oxide, with variable water content. Other metals may corrode, but their products are not all called rust.",
+        "An oxygen-containing gas with water excluded does not provide both required conditions. Water from which oxygen has been removed and kept excluded likewise lacks one requirement. Ordinary water can contain dissolved oxygen, so “only water in the tube” does not prove oxygen absence.",
+        "Salt is not required for rusting but can accelerate corrosion under suitable wet conditions. Rust often flakes and exposes more iron, rather than forming a reliably protective layer. A short observation with no visible brown material does not establish that rusting is impossible; time, surface condition and observation sensitivity also matter."
+      ],
+      "example": {
+        "question": "A statement says iron rusts only if salt is present. Correct it and name the two required substances.",
+        "steps": [
+          "Both water and oxygen are required.",
+          "Salt is not a required reactant in the school conditions test.",
+          "Salt water can speed corrosion, so rate and necessity must be distinguished."
+        ],
+        "explanation": "A factor that changes a rate need not be essential for the reaction to occur."
+      },
+      "commonMistakes": [
+        "Calling every metal’s corrosion rusting.",
+        "Treating clear water as automatically oxygen-free.",
+        "Assuming a rust layer permanently seals the iron."
+      ]
+    },
+    {
+      "id": "rust-evidence-plan",
+      "title": "Testing rusting conditions without confusing controls",
+      "points": [
+        "2.18"
+      ],
+      "terms": [
+        "control",
+        "dry air",
+        "dissolved oxygen",
+        "matched samples"
+      ],
+      "paragraphs": [
+        "A comparison plan can contrast matched iron samples exposed to water plus air, dry air, and water with oxygen removed and kept excluded. The purpose is to vary availability of one required substance at a time. Keep iron type, surface preparation, exposure time and temperature comparable.",
+        "For the dry-air comparison, an appropriate drying arrangement must actually exclude moisture; merely leaving out visible liquid is insufficient because air may contain water vapour. For the oxygen-excluded-water comparison, oxygen removal must be followed by a method that prevents re-entry. Otherwise dissolved or incoming oxygen can invalidate the conclusion.",
+        "Record visible changes over sufficient time and explain their limits. Rust in the water-plus-air condition, with no observed rust in the two excluded-condition controls, supports the two-condition explanation. It does not prove exact rate ratios or that controls were perfect. This is a proposed comparison, not results obtained for the site."
+      ],
+      "example": {
+        "question": "A student calls an open tube of previously oxygen-depleted water an oxygen-free control. Explain the weakness.",
+        "steps": [
+          "Oxygen from the surrounding air can re-enter and dissolve.",
+          "Removing oxygen initially is insufficient if it is not kept excluded.",
+          "The control may no longer isolate the effect of oxygen absence."
+        ],
+        "explanation": "The explanation challenges the control condition, not the requirement for water and oxygen."
+      },
+      "commonMistakes": [
+        "Treating absence of visible bubbles as evidence of no dissolved oxygen.",
+        "Changing metal surface and temperature as well as the intended condition.",
+        "Presenting a proposed control as a verified trial."
+      ]
+    },
+    {
+      "id": "rust-barriers",
+      "title": "Barrier protection: what an intact coating does",
+      "points": [
+        "2.19"
+      ],
+      "terms": [
+        "paint",
+        "oil",
+        "grease",
+        "barrier",
+        "scratch"
+      ],
+      "paragraphs": [
+        "Paint, oil, grease or a suitable plastic coating can protect iron by reducing contact with water and oxygen. The mechanism is physical exclusion of the substances needed for rusting. It depends on a sufficiently continuous coating and does not require the coating to donate electrons.",
+        "A scratch through an ordinary paint coating exposes iron, so water and oxygen may reach that area. Protection is local: intact regions can remain shielded while exposed iron corrodes. Say what the barrier blocks rather than claiming it changes iron into an unreactive element.",
+        "Choose the explanation that fits the material. Oil and grease are useful for some moving surfaces but need maintenance. A zinc coating has an additional sacrificial mechanism discussed below; ordinary paint alone is not the same as galvanising."
+      ],
+      "example": {
+        "question": "Why can an iron object rust at a deep paint scratch while the intact painted area remains protected?",
+        "steps": [
+          "The scratch exposes iron to water and oxygen.",
+          "Intact paint still acts as a barrier elsewhere.",
+          "Ordinary paint does not provide the sacrificial electron-transfer protection of a suitable connected reactive metal."
+        ],
+        "explanation": "The explanation identifies a local failure of the barrier rather than a mysterious change in iron’s reactivity."
+      },
+      "commonMistakes": [
+        "Claiming paint consumes oxygen until it runs out.",
+        "Saying a scratch makes the whole coating vanish.",
+        "Calling any coloured coating galvanising."
+      ]
+    },
+    {
+      "id": "rust-galvanising-sacrificial",
+      "title": "Zinc protection: barrier plus sacrifice",
+      "points": [
+        "2.19"
+      ],
+      "terms": [
+        "galvanising",
+        "sacrificial protection",
+        "zinc",
+        "electrical contact",
+        "electron loss"
+      ],
+      "paragraphs": [
+        "Galvanising coats iron or steel with zinc. An intact zinc layer is a barrier. Zinc is also above iron in the required reactivity series, so connected zinc can oxidize preferentially and protect exposed iron in an appropriate corrosive environment. These are two mechanisms, not two names for ordinary paint.",
+        "For zinc oxidation, Zn → Zn²⁺ + 2e⁻. Sacrificial zinc supplies electrons through the connected metal, reducing iron’s tendency to lose its own electrons. The zinc is consumed and may need replacement. Protection at a scratch is conditional on remaining connected zinc, a suitable environment and the size of exposure; it is not a promise of unlimited protection for every hole.",
+        "Sacrificial protection can also use an attached more reactive metal such as magnesium rather than a full coating. Electrical contact matters: an isolated zinc piece nearby is not the same circuit. Copper is below iron, so it is not a suitable sacrificial choice for protecting iron and can worsen corrosion in a connected wet pair."
+      ],
+      "example": {
+        "question": "Compare deeply scratched ordinary paint with a small scratch in a zinc coating. Why can connected zinc still help, and why is protection not permanent?",
+        "steps": [
+          "Paint’s barrier is broken and gives no sacrificial metal mechanism.",
+          "Connected zinc can lose electrons preferentially, helping protect the exposed iron.",
+          "Zinc is consumed; contact, environment and remaining material limit protection."
+        ],
+        "explanation": "The answer separates exclusion from electron transfer and explains the finite sacrificial resource."
+      },
+      "commonMistakes": [
+        "Calling zinc a less reactive metal than iron.",
+        "Saying the iron is sacrificed to protect zinc.",
+        "Assuming a disconnected nearby metal always prevents rusting."
+      ]
+    },
+    {
+      "id": "redox-oxygen-transfer",
+      "title": "Oxidation and reduction as oxygen transfer",
+      "points": [
+        "2.20"
+      ],
+      "terms": [
+        "oxidation",
+        "reduction",
+        "redox",
+        "oxygen transfer"
+      ],
+      "paragraphs": [
+        "In the school oxygen-transfer description, oxidation is gain of oxygen and reduction is loss of oxygen. In CuO + H₂ → Cu + H₂O, copper(II) oxide loses oxygen and is reduced; hydrogen gains oxygen and is oxidized. Both changes occur in the same reaction, so it is redox.",
+        "The equation conserves one copper atom, one oxygen atom and two hydrogen atoms. Do not classify reduction by a decrease in physical mass alone. The relevant change here is removal of oxygen from the oxide, while the oxygen becomes part of water.",
+        "Oxygen transfer is useful for these examples, but not every redox reaction contains oxygen. The electron description extends the idea to metal ions and other species. Conversely, heating, colour change or gas formation alone does not establish redox: carbonate decomposition must not be labelled oxidation simply because heat is used."
+      ],
+      "example": {
+        "question": "In Mg + CuO → MgO + Cu, name what is oxidized and what is reduced using oxygen transfer.",
+        "steps": [
+          "Magnesium gains oxygen, so it is oxidized.",
+          "Copper(II) oxide loses oxygen, so it is reduced.",
+          "Both changes occur together: the reaction is redox."
+        ],
+        "explanation": "Oxidation and reduction refer to changes in the reactants, not simply to which product is a metal."
+      },
+      "commonMistakes": [
+        "Defining oxidation as any heating.",
+        "Calling magnesium reduced because a solid oxide forms.",
+        "Saying oxygen must appear as O₂ in every redox reaction."
+      ]
+    },
+    {
+      "id": "redox-electron-transfer",
+      "title": "Oxidation loses electrons; reduction gains them",
+      "points": [
+        "2.20"
+      ],
+      "terms": [
+        "half-equation",
+        "electron",
+        "charge balance",
+        "spectator"
+      ],
+      "paragraphs": [
+        "Oxidation is electron loss and reduction is electron gain. For zinc with copper(II) ions, zinc oxidation is Zn → Zn²⁺ + 2e⁻ and copper-ion reduction is Cu²⁺ + 2e⁻ → Cu. Each half-equation conserves atoms and total charge.",
+        "Adding the two halves cancels two electrons and gives Zn + Cu²⁺ → Zn²⁺ + Cu. The electrons leave zinc and are accepted by copper ions; they are not left as extra products in the overall equation. Sulfate ions cancel as spectators if the starting solution is copper(II) sulfate.",
+        "A gain of negative electrons makes the ion’s charge less positive in this example: Cu²⁺ becomes neutral Cu. It is the reactant Cu²⁺ that gains electrons and is reduced. A charge change should be explained by the direction and number of electrons, not by treating a superscript as a count of copper atoms."
+      ],
+      "example": {
+        "question": "Classify Fe²⁺ → Fe³⁺ + e⁻ and Cu²⁺ + 2e⁻ → Cu. Check each charge balance.",
+        "steps": [
+          "Iron(II) loses one electron, so it is oxidized; right charge +3−1 = +2.",
+          "Copper(II) gains two electrons, so it is reduced; left charge +2−2 = 0.",
+          "One atom of the named element is present on each side of each half-equation."
+        ],
+        "explanation": "The classifications depend on electron transfer, not oxygen presence. These two halves are separate classification tasks and are not presented as a combined spontaneous reaction."
+      },
+      "commonMistakes": [
+        "Writing electrons on the wrong side of a half-equation.",
+        "Calling electron gain oxidation.",
+        "Cancelling unequal numbers of electrons without multiplying a half-equation."
+      ]
+    },
+    {
+      "id": "redox-agents",
+      "title": "Identify an agent by what it does to the other reactant",
+      "points": [
+        "2.20"
+      ],
+      "terms": [
+        "oxidizing agent",
+        "reducing agent",
+        "electron acceptor",
+        "electron donor"
+      ],
+      "paragraphs": [
+        "An oxidizing agent causes another reactant to lose electrons; it accepts those electrons and is itself reduced. A reducing agent donates electrons and causes another reactant to gain them; the donor is itself oxidized. The agent’s name describes its effect on the other substance, not its own change.",
+        "In Zn + Cu²⁺ → Zn²⁺ + Cu, zinc is the reducing agent and is oxidized. Copper(II) ions are the oxidizing agent and are reduced. Name the actual species Cu²⁺, not the copper product, and do not assign the role to unchanged sulfate ions.",
+        "In the oxygen-transfer example CuO + H₂ → Cu + H₂O, CuO supplies oxygen to hydrogen and is the oxidizing agent; H₂ removes oxygen from CuO and is the reducing agent. Oxygen gain/loss and electron bookkeeping agree for these examples. A reaction can have an oxidizing agent even when no free oxygen gas is a reactant."
+      ],
+      "example": {
+        "question": "For Zn + Cu²⁺ → Zn²⁺ + Cu, complete the four roles: oxidized reactant, reduced reactant, reducing agent, oxidizing agent.",
+        "steps": [
+          "Oxidized reactant: Zn; reduced reactant: Cu²⁺.",
+          "Reducing agent: Zn, which donates electrons.",
+          "Oxidizing agent: Cu²⁺, which accepts electrons."
+        ],
+        "explanation": "The donor’s own oxidation and the acceptor’s own reduction are the reason the two agent names can initially seem reversed."
+      },
+      "commonMistakes": [
+        "Calling the oxidized reactant the oxidizing agent just because the words look similar.",
+        "Naming product Cu instead of reacting Cu²⁺ as the oxidizing agent.",
+        "Calling sulfate the agent merely because it occurs in the salt formula."
       ]
     }
   ]
