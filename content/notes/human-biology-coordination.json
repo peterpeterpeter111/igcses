@@ -17,7 +17,9 @@
     "Identify neurone roles and directions.",
     "Relate central structures to main functions.",
     "Trace stimulus–response and chemical-synapse mechanisms.",
-    "Interpret skin-sensitivity evidence without pretending to count receptors."
+    "Interpret skin-sensitivity evidence without pretending to count receptors.",
+    "Match named glands and hormones to target actions.",
+    "Compare nervous and hormonal communication with appropriate exceptions."
   ],
   "supportingSources": [
     {
@@ -44,6 +46,43 @@
       "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-5-communication-between-neurons",
       "sectionIds": [
         "chemical-synapse-sequence"
+      ]
+    },
+    {
+      "title": "OpenStax17.1: selected communication routes and rapid endocrine exception",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/17-1-an-overview-of-the-endocrine-system",
+      "sectionIds": [
+        "endocrine-target-cells",
+        "nervous-hormonal-comparison"
+      ]
+    },
+    {
+      "title": "OpenStax17.3: selected pituitary hormones and growth action",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/17-3-the-pituitary-gland-and-hypothalamus",
+      "sectionIds": [
+        "pituitary-hormone-actions",
+        "growth-development-control"
+      ]
+    },
+    {
+      "title": "OpenStax17.4: selected thyroid metabolic/development roles",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/17-4-the-thyroid-gland",
+      "sectionIds": [
+        "thyroid-metabolism-development"
+      ]
+    },
+    {
+      "title": "OpenStax17.6: selected adrenal medulla and acute response",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/17-6-the-adrenal-glands",
+      "sectionIds": [
+        "adrenaline-preparation"
+      ]
+    },
+    {
+      "title": "OpenStax17.8: selected gonadal secretion/development functions",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/17-8-gonadal-and-placental-hormones",
+      "sectionIds": [
+        "gonadal-development-hormones"
       ]
     }
   ],
@@ -579,6 +618,255 @@
       "commonMistakes": [
         "Saying neurotransmitter enters and becomes the next electrical impulse itself.",
         "Claiming all chemical synapses excite the next cell."
+      ]
+    },
+    {
+      "id": "endocrine-target-cells",
+      "title": "Explain blood transport and target specificity",
+      "points": [
+        "5.9",
+        "5.10"
+      ],
+      "terms": [
+        "endocrine gland",
+        "hormone",
+        "blood",
+        "target cell",
+        "receptor"
+      ],
+      "paragraphs": [
+        "Endocrine glands release hormones into the blood via surrounding tissue fluid. A hormone can circulate widely, but its response depends on suitable target-cell receptors and the cell’s signalling machinery. Circulation through an organ does not mean every cell responds identically.",
+        "A hormone is a chemical signal rather than a nerve fibre or a digestive secretion travelling down a duct into the gut. Use three linked parts when explaining an example: source gland, named hormone and target effect. Endocrine and nervous systems communicate with each other."
+      ],
+      "example": {
+        "question": "Why can a hormone in the circulation affect some tissues more than others?",
+        "steps": [
+          "Targets have appropriate receptors and response mechanisms.",
+          "Other cells need not respond in the same way.",
+          "Blood transport and response specificity are separate facts."
+        ],
+        "explanation": "A widely transported message still needs a suitable receiver."
+      },
+      "commonMistakes": [
+        "Saying a hormone must physically enter every nucleus to act.",
+        "Calling blood a neurone."
+      ]
+    },
+    {
+      "id": "pituitary-hormone-actions",
+      "title": "Match pituitary release to its targets",
+      "points": [
+        "5.9"
+      ],
+      "terms": [
+        "pituitary",
+        "ADH",
+        "FSH",
+        "LH",
+        "gonadotrophic hormone"
+      ],
+      "paragraphs": [
+        "The posterior pituitary releases ADH made by hypothalamic neurones. ADH increases water reabsorption through its kidney targets, as developed in Homeostasis. Production and release sites must not be silently swapped.",
+        "The anterior pituitary releases gonadotrophic hormones, including FSH and LH. They regulate gonadal activity, supporting gamete production and sex-hormone secretion through appropriate target cells. These are different hormones with different actions; “pituitary hormone” is not one substance controlling all organs identically. Detailed reproductive-cycle pathways remain later teaching work."
+      ],
+      "example": {
+        "question": "Compare the main targets of ADH and gonadotrophic hormones.",
+        "steps": [
+          "ADH affects kidney water reabsorption.",
+          "FSH/LH regulate appropriate gonadal functions.",
+          "Both are hormonal signals, but their targets and actions differ."
+        ],
+        "explanation": "Name the hormone rather than only its gland."
+      },
+      "commonMistakes": [
+        "Saying FSH directly makes urine.",
+        "Calling ADH an anterior-pituitary digestive enzyme."
+      ]
+    },
+    {
+      "id": "adrenaline-preparation",
+      "title": "Link adrenaline to readiness for activity",
+      "points": [
+        "5.9"
+      ],
+      "terms": [
+        "adrenal gland",
+        "adrenal medulla",
+        "adrenaline",
+        "heart rate",
+        "glycogen"
+      ],
+      "paragraphs": [
+        "The adrenal medulla releases adrenaline in an acute stress response. Adrenaline can increase heart rate and contribute to mobilisation of energy stores, preparing the body for activity. The adrenal glands lie near the kidneys but are not the kidney filtration units.",
+        "Liver glycogen breakdown can increase glucose supplied to the blood. Muscle glycogen also supports local muscular energy use; do not generalise that every tissue exports glycogen as free blood glucose. A nervous signal can rapidly stimulate adrenal hormone release, showing that the two communication systems work together."
+      ],
+      "example": {
+        "question": "Why can a faster heartbeat help during the stated activity response?",
+        "steps": [
+          "It contributes to increased delivery through the circulation.",
+          "Working tissues need oxygen and fuel.",
+          "Link the response to activity rather than saying adrenaline is energy."
+        ],
+        "explanation": "A hormone changes physiological responses; it is not itself the fuel."
+      },
+      "commonMistakes": [
+        "Confusing adrenal glands with the pancreas.",
+        "Saying adrenaline always requires hours to act."
+      ]
+    },
+    {
+      "id": "thyroid-metabolism-development",
+      "title": "Connect thyroid hormones to metabolism and development",
+      "points": [
+        "5.9"
+      ],
+      "terms": [
+        "thyroid gland",
+        "thyroxine",
+        "metabolic rate",
+        "growth",
+        "development"
+      ],
+      "paragraphs": [
+        "The thyroid gland in the neck produces thyroid hormones including thyroxine. These influence metabolic rate, affecting how rapidly the body uses energy at rest and contributing to heat production. Iodine is needed for thyroid-hormone synthesis.",
+        "Appropriate thyroid-hormone action also supports normal growth and development, including nervous-system development. This role differs from simply providing energy as a food molecule. The pituitary releases TSH to stimulate the thyroid; TSH and thyroxine are not the same hormone from the same gland. No symptom-based diagnosis or medicine plan is implied."
+      ],
+      "example": {
+        "question": "Distinguish thyroid thyroxine from pituitary TSH.",
+        "steps": [
+          "Thyroxine comes from the thyroid and influences target tissues.",
+          "TSH comes from the anterior pituitary and stimulates the thyroid.",
+          "Their linked roles do not make their names interchangeable."
+        ],
+        "explanation": "Source and target differ within a hormonal pathway."
+      },
+      "commonMistakes": [
+        "Calling iodine the hormone itself.",
+        "Saying thyroxine is stored glycogen."
+      ]
+    },
+    {
+      "id": "pancreatic-islet-actions",
+      "title": "Separate pancreatic endocrine and digestive roles",
+      "points": [
+        "5.9"
+      ],
+      "terms": [
+        "islets of Langerhans",
+        "insulin",
+        "glucagon",
+        "beta cell",
+        "alpha cell"
+      ],
+      "paragraphs": [
+        "The islets of Langerhans contain pancreatic hormone-producing cells. Beta cells release insulin, which helps lower raised blood glucose through appropriate uptake and storage responses. Alpha cells release glucagon, which helps raise low blood glucose through liver actions.",
+        "Pancreatic digestive enzymes enter the small intestine through ducts, whereas islet hormones enter the circulation. Insulin is not an intestinal enzyme hydrolysing starch. The complete opposing-glucose response models are developed in Homeostasis; this section locates their endocrine source."
+      ],
+      "example": {
+        "question": "Why is “all pancreatic secretions go to the intestine” incomplete?",
+        "steps": [
+          "Digestive secretions have an intestinal duct route.",
+          "Islet hormones have a blood route.",
+          "The pancreas has both exocrine and endocrine functions."
+        ],
+        "explanation": "One organ can have more than one secretion route."
+      },
+      "commonMistakes": [
+        "Saying insulin digests glucose in the gut.",
+        "Swapping alpha-cell glucagon and beta-cell insulin."
+      ]
+    },
+    {
+      "id": "gonadal-development-hormones",
+      "title": "Explain gonadal hormones in development",
+      "points": [
+        "5.9"
+      ],
+      "terms": [
+        "testes",
+        "ovaries",
+        "testosterone",
+        "oestrogen",
+        "progesterone",
+        "puberty"
+      ],
+      "paragraphs": [
+        "The testes produce testosterone, which contributes to reproductive development and male secondary sexual characteristics in the usual course model, such as voice change, body hair and increased muscle development. The ovaries produce oestrogens and progesterone, which contribute to reproductive regulation and development.",
+        "Oestrogens contribute to female secondary sexual characteristics and menstrual regulation; progesterone contributes to regulation and preparation/maintenance of the uterine lining for pregnancy. These are hormonal roles, not a claim that one sex has absolutely none of the hormones associated with the other. Timing and individual development vary; detailed reproduction and pregnancy mechanisms remain separate work."
+      ],
+      "example": {
+        "question": "Why distinguish a hormone from the gamete produced by a gonad?",
+        "steps": [
+          "Testosterone is a chemical signal.",
+          "A sperm cell is a gamete.",
+          "The testes support both functions through different biological processes."
+        ],
+        "explanation": "A gland product need not be a reproductive cell."
+      },
+      "commonMistakes": [
+        "Calling oestrogen an egg cell.",
+        "Claiming every person changes at exactly one universal age."
+      ]
+    },
+    {
+      "id": "growth-development-control",
+      "title": "Describe several contributors to growth",
+      "points": [
+        "5.9"
+      ],
+      "terms": [
+        "growth hormone",
+        "pituitary",
+        "protein synthesis",
+        "development"
+      ],
+      "paragraphs": [
+        "The anterior pituitary releases growth hormone, which supports growth through effects including protein synthesis and tissue growth. Thyroid and gonadal hormones also contribute to normal development at appropriate stages. Growth is therefore not controlled by one hormone acting alone.",
+        "Nutrition, inherited factors and the responsiveness of tissues also matter. Hormones coordinate biological processes; they do not create matter or replace dietary building materials. This course account does not prescribe growth treatment or infer hormone levels from a person’s height."
+      ],
+      "example": {
+        "question": "Why is “growth hormone makes nutrients unnecessary” wrong?",
+        "steps": [
+          "Growing tissue needs material and energy.",
+          "Hormonal signals influence the use and production of tissue components.",
+          "Signals do not replace building materials."
+        ],
+        "explanation": "Distinguish regulation from nutrient supply."
+      },
+      "commonMistakes": [
+        "Saying growth means only an immediate rise in blood glucose.",
+        "Diagnosing hormonal disease from height alone."
+      ]
+    },
+    {
+      "id": "nervous-hormonal-comparison",
+      "title": "Compare two connected communication systems",
+      "points": [
+        "5.10"
+      ],
+      "terms": [
+        "nervous signalling",
+        "hormonal signalling",
+        "speed",
+        "duration",
+        "specificity"
+      ],
+      "paragraphs": [
+        "Nervous signalling uses electrical impulses along neurones and chemical transmission at typical synapses. It can produce rapid, relatively brief responses along particular neural connections. Hormonal signalling uses chemicals transported in blood and depends on responsive target tissues.",
+        "Hormonal effects often develop more slowly and last longer, but these are general comparison patterns, not universal laws. Adrenaline can contribute to a rapid response, and nervous activity can initiate hormone release. Neither system is confined solely to internal or external changes; both contribute to coordination and homeostasis."
+      ],
+      "example": {
+        "question": "Why does a rapid adrenaline response not disprove its being a hormone?",
+        "steps": [
+          "It is released into the circulation and acts at responsive targets.",
+          "Speed varies among hormonal responses.",
+          "Communication route and mechanism identify it; “always slow” is an overstatement."
+        ],
+        "explanation": "Use qualified comparisons with a concrete exception."
+      },
+      "commonMistakes": [
+        "Calling every chemical signal a blood-borne hormone.",
+        "Saying nerves and endocrine glands never interact."
       ]
     }
   ]
