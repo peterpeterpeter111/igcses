@@ -9,7 +9,8 @@
     22,
     23,
     24,
-    25
+    25,
+    26
   ],
   "prerequisites": [
     "Balanced equations conserve atoms.",
@@ -40,7 +41,10 @@
     "Explain alloy composition and the atom-size hardness model for Paper 2C.",
     "Interpret indicators and approximate pH without overstating their precision.",
     "Explain proton transfer, neutralization and the named salt reactions.",
-    "Select and evaluate salt-preparation and titration methods with correct paper applicability."
+    "Select and evaluate salt-preparation and titration methods with correct paper applicability.",
+    "Describe all five required gas tests with their conditions.",
+    "Recall five cation flame colours and explain contamination controls.",
+    "Interpret named ion and water tests without confusing presence, identity and purity."
   ],
   "supportingSources": [
     {
@@ -287,6 +291,46 @@
         "salt-insoluble-reactant",
         "salt-copper-hydrated",
         "salt-purity-recovery"
+      ]
+    },
+    {
+      "title": "Pearson teacher resource: selected cation and anion test tables",
+      "url": "https://qualifications.pearson.com/content/dam/pdf/A%20Level/Chemistry/2015/teaching-and-learning-materials/A_level_Chemistry_Core_Practical_15_Analysis_of_Unknowns.pdf",
+      "sectionIds": [
+        "test-metal-hydroxides",
+        "test-halide-ions",
+        "test-sulfate-ions",
+        "test-carbonate-ions"
+      ]
+    },
+    {
+      "title": "RSC: flame-test method and contamination",
+      "url": "https://edu.rsc.org/infographics/how-to-carry-out-flame-tests/4024075.article",
+      "sectionIds": [
+        "test-flame-method"
+      ]
+    },
+    {
+      "title": "RSC: common gas-test comparisons",
+      "url": "https://edu.rsc.org/cpd/how-to-teach-non-metals/4011417.article",
+      "sectionIds": [
+        "test-hydrogen-oxygen",
+        "test-carbon-dioxide"
+      ]
+    },
+    {
+      "title": "RSC: ammonia and damp litmus",
+      "url": "https://edu.rsc.org/experiments/ammonia-fountain-demonstration/979.article",
+      "sectionIds": [
+        "test-ammonia-chlorine",
+        "test-ammonium"
+      ]
+    },
+    {
+      "title": "RSC: describe chlorine bleaching precisely",
+      "url": "https://edu.rsc.org/ideas/10-effective-questioning-techniques/4011025.article",
+      "sectionIds": [
+        "test-ammonia-chlorine"
       ]
     }
   ],
@@ -2363,6 +2407,434 @@
         "Calling a dry surface proof of correct hydration.",
         "Assuming no desired salt remains dissolved."
       ]
+    },
+    {
+      "id": "test-hydrogen-oxygen",
+      "title": "Distinguish hydrogen and oxygen splint tests",
+      "points": [
+        "2.44"
+      ],
+      "terms": [
+        "hydrogen",
+        "oxygen",
+        "lighted splint",
+        "glowing splint"
+      ],
+      "paragraphs": [
+        "For the standard supervised hydrogen test, a lighted splint at the mouth of a small test tube of gas gives a squeaky pop. For oxygen, a glowing splint inserted into the gas relights. Lighted and glowing describe different starting conditions; stating only “use a splint” leaves the test ambiguous.",
+        "Hydrogen is combustible, while oxygen supports combustion in the oxygen test. Do not describe oxygen as the gas that burns with a pop. An oxygen-containing sample can make combustion more vigorous without being pure oxygen, so the inference is presence of sufficient oxygen under the test conditions.",
+        "A weak or negative result can reflect a small gas amount, dilution with air or an unsuitable splint, as well as absence of the target gas. Use the test specified for the sample and teacher-approved quantities; these explanations are not evidence of a performed gas collection."
+      ],
+      "example": {
+        "question": "Improve “the gas makes a splint burn” into the two distinct required gas-test observations.",
+        "steps": [
+          "Hydrogen: a lighted splint gives a squeaky pop.",
+          "Oxygen: a glowing splint relights.",
+          "Name the test condition and the gas separately."
+        ],
+        "explanation": "The starting splint condition is part of the evidence."
+      },
+      "commonMistakes": [
+        "Swapping lighted and glowing splints.",
+        "Calling oxygen combustible in this test.",
+        "Treating no clear pop from a tiny sample as conclusive absence of hydrogen."
+      ]
+    },
+    {
+      "id": "test-carbon-dioxide",
+      "title": "Carbon dioxide clouds limewater",
+      "points": [
+        "2.44"
+      ],
+      "terms": [
+        "limewater",
+        "calcium carbonate",
+        "white precipitate",
+        "carbon dioxide"
+      ],
+      "paragraphs": [
+        "Bubble the gas through limewater, the clear aqueous solution of calcium hydroxide, using the supervised test setup. Carbon dioxide produces a white calcium carbonate precipitate, making it cloudy or milky. The gas bubbles alone are not the positive observation.",
+        "The school equation is CO₂ + Ca(OH)₂ → CaCO₃ + H₂O. A dispersed insoluble solid causes cloudiness; the limewater is not simply dyed white. With enough additional carbon dioxide the precipitate can dissolve into soluble hydrogencarbonate-containing solution, so prolonged bubbling can remove an earlier positive result.",
+        "Observe and record the sequence. Clear old limewater or a poorly delivered gas sample can give an unhelpful test; a fresh appropriate reagent and known comparison help evaluate the result. This is an explanation of the standard inference, not a claim that every possible gas mixture has been identified."
+      ],
+      "example": {
+        "question": "In an invented test, limewater first clouds and later clears during prolonged gas passage. Does the final clear appearance erase the earlier evidence?",
+        "steps": [
+          "No: initial white precipitate is the expected carbon-dioxide evidence.",
+          "Further CO₂ can dissolve the precipitate under the stated conditions.",
+          "Record the sequence rather than only the final appearance."
+        ],
+        "explanation": "An observation can change as further reaction occurs."
+      },
+      "commonMistakes": [
+        "Calling bubbling itself the CO₂ test result.",
+        "Calling a white solution a precipitate without solid formation.",
+        "Ignoring an earlier positive observation."
+      ]
+    },
+    {
+      "id": "test-ammonia-chlorine",
+      "title": "Damp litmus distinguishes ammonia and chlorine",
+      "points": [
+        "2.44"
+      ],
+      "terms": [
+        "ammonia",
+        "chlorine",
+        "damp litmus",
+        "bleaching"
+      ],
+      "paragraphs": [
+        "Ammonia gas turns damp red litmus paper blue because it gives an alkaline solution in the moisture on the paper. Dampness matters: the gas must interact with water for this acid–base response. Keep the paper out of direct contact with an alkaline reaction mixture, which could turn it blue without showing an evolved gas.",
+        "Chlorine bleaches damp litmus paper white. Damp blue litmus may first turn red before bleaching; the lasting white/bleached result is the key chlorine observation. Red alone indicates an acidic response and is insufficient to establish the bleaching test.",
+        "Chlorine gas and chloride ions are different species and have different tests. A chloride solution is tested with acidified silver nitrate, not by expecting it to bleach litmus. Ammonia and chlorine are irritating gases; use the teacher-approved sample and ventilation, and do not use direct smelling as the identification method."
+      ],
+      "example": {
+        "question": "An invented chloride-salt solution is tested with damp blue litmus because a student remembers chlorine’s test. Correct the species and method.",
+        "steps": [
+          "The target is Cl⁻ ions in solution, not Cl₂ gas.",
+          "Use dilute nitric acid followed by silver nitrate solution.",
+          "A white precipitate supports chloride; chlorine’s damp-litmus bleaching is a different test."
+        ],
+        "explanation": "Species identity determines which evidence is relevant."
+      },
+      "commonMistakes": [
+        "Calling chloride and chlorine interchangeable.",
+        "Reporting red litmus alone as chlorine bleaching.",
+        "Testing litmus by dipping it into NaOH when the intended evidence is ammonia gas."
+      ]
+    },
+    {
+      "id": "test-flame-method",
+      "title": "Carry out a clean flame test",
+      "points": [
+        "2.45"
+      ],
+      "terms": [
+        "nichrome wire",
+        "blue flame",
+        "contamination",
+        "comparison"
+      ],
+      "paragraphs": [
+        "In one school method, use a clean nichrome wire loop to introduce a small sample into the edge of a non-luminous blue Bunsen flame and observe the colour. The teacher’s specified cleaning method may use dilute hydrochloric acid and heating until the clean loop adds no characteristic colour. A cleaned loop is checked before testing another sample.",
+        "Alternative approved methods use separate soaked wooden splints. The apparatus choice can differ while the purpose remains the same: compare the sample’s characteristic flame colour with known results under similar conditions. Do not confuse the colour of an unheated salt or solution with its flame-test colour.",
+        "Contamination can dominate the result. In particular, sodium gives a strong yellow emission that can mask weaker colours, so a yellow result from a contaminated loop is not secure evidence about an unknown alone. Record uncertainty, use clean apparatus and follow the supervised heat and eye-protection procedure; no flame test has been performed by this site."
+      ],
+      "example": {
+        "question": "A clean loop gives no characteristic colour, but a loop reused after sodium gives yellow with an unknown. What should be checked before identifying the unknown?",
+        "steps": [
+          "Clean the loop using the specified method and verify a blank response.",
+          "Test a fresh sample under comparable conditions.",
+          "Consider sodium contamination before concluding that the unknown contains sodium."
+        ],
+        "explanation": "A control helps separate apparatus contamination from sample evidence."
+      },
+      "commonMistakes": [
+        "Using a bright luminous flame that obscures the sample colour.",
+        "Reusing contaminated wire without checking it.",
+        "Identifying a cation from the unheated solution’s colour."
+      ]
+    },
+    {
+      "id": "test-flame-colours",
+      "title": "The five required cation flame colours",
+      "points": [
+        "2.46"
+      ],
+      "terms": [
+        "lithium red",
+        "sodium yellow",
+        "potassium lilac",
+        "calcium orange-red",
+        "copper blue-green"
+      ],
+      "paragraphs": [
+        "The required reference colours are Li⁺: red; Na⁺: yellow; K⁺: lilac; Ca²⁺: orange-red; Cu²⁺: blue-green. Use Pearson’s labels when recalling this five-cation set. A visible shade can vary with sample, conditions and the observer, so a screen illustration is not a calibrated spectrum.",
+        "The cation associated with the sample is what this school test helps identify; it does not establish the accompanying anion. A sodium chloride sample and another suitable sodium salt can both give the sodium flame colour. Copper’s blue-green flame is not the same observation as its blue hydroxide precipitate.",
+        "A mixture can show a dominant or blended response. Sodium masking and similar red tones can make a single colour less decisive. Combine the result with the context or further appropriate evidence rather than assuming a perfectly pure single salt."
+      ],
+      "example": {
+        "question": "An invented salt gives a lilac flame under clean conditions. Which required cation is supported, and has its anion been identified?",
+        "steps": [
+          "Potassium, K⁺, is supported by lilac.",
+          "The flame result does not identify the anion.",
+          "Other suitable evidence is needed to name the full salt."
+        ],
+        "explanation": "Cation evidence is only part of a compound identification."
+      },
+      "commonMistakes": [
+        "Calling the lilac result lithium.",
+        "Inferring chloride automatically from a flame colour.",
+        "Equating a flame colour with a precipitation colour."
+      ]
+    },
+    {
+      "id": "test-metal-hydroxides",
+      "title": "NaOH precipitates identify three metal cations",
+      "points": [
+        "2.47"
+      ],
+      "terms": [
+        "copper(II)",
+        "iron(II)",
+        "iron(III)",
+        "hydroxide precipitate"
+      ],
+      "paragraphs": [
+        "Add sodium hydroxide solution to a separate aqueous sample, initially dropwise, and describe the solid formed. Cu²⁺ gives a blue copper(II) hydroxide precipitate; Fe²⁺ gives a green iron(II) hydroxide precipitate; Fe³⁺ gives a brown or red-brown iron(III) hydroxide precipitate. These three remain insoluble in excess NaOH in the school comparison.",
+        "The illustrative ionic equations are Cu²⁺ + 2OH⁻ → Cu(OH)₂, Fe²⁺ + 2OH⁻ → Fe(OH)₂ and Fe³⁺ + 3OH⁻ → Fe(OH)₃. Each has zero total charge on the left and a neutral solid on the right. Say “blue precipitate” rather than just “blue colour”, since the initial solution may already be coloured.",
+        "The green iron(II) precipitate can turn brown as it is oxidized on exposure to air. Record its initial appearance promptly and describe any later change. An old brown sample cannot be identified as originally Fe³⁺ solely from its final colour; mixtures, insufficient reagent and very dilute samples can also limit the inference."
+      ],
+      "example": {
+        "question": "An invented sample gives a green precipitate immediately with NaOH and becomes brown on standing. Which initial ion is supported?",
+        "steps": [
+          "Initial green precipitate supports Fe²⁺.",
+          "Later brown appearance is consistent with oxidation of the iron(II) product.",
+          "The time sequence matters; final brown alone is not the whole evidence."
+        ],
+        "explanation": "The test describes both a solid and its changing state."
+      },
+      "commonMistakes": [
+        "Writing Fe(OH)₂ for the iron(III) product.",
+        "Calling a blue solution the required blue precipitate observation.",
+        "Ignoring oxidation while leaving an iron(II) test to stand."
+      ]
+    },
+    {
+      "id": "test-ammonium",
+      "title": "Warm with NaOH and test for evolved ammonia",
+      "points": [
+        "2.47"
+      ],
+      "terms": [
+        "ammonium ion",
+        "ammonia gas",
+        "warming",
+        "red litmus"
+      ],
+      "paragraphs": [
+        "For NH₄⁺, add sodium hydroxide solution and warm gently using the approved school method. Ammonia is evolved and turns damp red litmus paper blue when tested in the gas above the mixture. Bubbles or a smell alone are not the complete identification.",
+        "The net ionic equation is NH₄⁺ + OH⁻ → NH₃ + H₂O. Nitrogen is conserved, the five hydrogen atoms on the left appear as three in NH₃ plus two in water, and charge +1 − 1 = 0 matches the neutral products.",
+        "Use a separate fresh sample and keep the litmus away from alkaline liquid or spray. Direct contact with NaOH could mimic the blue response without proving NH₄⁺. Warming aids gas release; it does not transform the nitrate test into an ammonium test unless the intended reagents and reaction are specified."
+      ],
+      "example": {
+        "question": "Why must damp red litmus be tested in the gas, rather than dipped into the NaOH-containing mixture?",
+        "steps": [
+          "NaOH itself is alkaline and can turn the paper blue.",
+          "The required observation concerns evolved ammonia gas.",
+          "Avoiding liquid contact helps rule out that false explanation."
+        ],
+        "explanation": "The location of the test is part of its validity."
+      },
+      "commonMistakes": [
+        "Writing NH₃⁺ for ammonium.",
+        "Using bubbles alone to identify ammonia.",
+        "Testing a reagent’s alkalinity instead of the evolved gas."
+      ]
+    },
+    {
+      "id": "test-halide-ions",
+      "title": "Acidified silver nitrate distinguishes halides",
+      "points": [
+        "2.48"
+      ],
+      "terms": [
+        "nitric acid",
+        "silver nitrate",
+        "chloride",
+        "bromide",
+        "iodide"
+      ],
+      "paragraphs": [
+        "Use a separate aqueous sample, acidify with dilute nitric acid, then add silver nitrate solution. Chloride gives white AgCl precipitate, bromide gives cream AgBr and iodide gives yellow AgI. Describe a precipitate, not simply the solution becoming a colour.",
+        "The ionic pattern is Ag⁺ + X⁻ → AgX(s), where X⁻ is the named halide ion. Acidification removes interfering carbonate under the school test conditions. Hydrochloric acid is unsuitable for this preparation because it introduces chloride and can create a false AgCl result.",
+        "Use fresh separate portions for different anion tests. A sample previously treated with HCl in the carbonate or sulfate test has been supplied with chloride, even if it originally contained none. The colours support the named ions in the appropriate comparison, but mixtures or contamination can obscure them; additional ammonia-solubility tests are extensions rather than an added requirement here."
+      ],
+      "example": {
+        "question": "A sample treated with HCl is later used for an AgNO₃ test and gives white solid. Why is this not secure proof of chloride in the original sample?",
+        "steps": [
+          "The HCl treatment introduced Cl⁻.",
+          "Added Ag⁺ can form AgCl from that introduced chloride.",
+          "Use a fresh portion acidified with dilute nitric acid for the intended halide test."
+        ],
+        "explanation": "A reagent can introduce the species that the next test is supposed to identify."
+      },
+      "commonMistakes": [
+        "Using chlorine’s litmus test for chloride ions.",
+        "Using hydrochloric acid to acidify the halide-test sample.",
+        "Writing AgCl₂ for the silver chloride precipitate."
+      ]
+    },
+    {
+      "id": "test-sulfate-ions",
+      "title": "Acidified barium chloride tests for sulfate",
+      "points": [
+        "2.48"
+      ],
+      "terms": [
+        "barium chloride",
+        "hydrochloric acid",
+        "barium sulfate",
+        "carbonate interference"
+      ],
+      "paragraphs": [
+        "For sulfate, acidify a separate aqueous portion with dilute hydrochloric acid, then add barium chloride solution. A white barium sulfate precipitate supports sulfate: Ba²⁺ + SO₄²⁻ → BaSO₄(s). Total charge is zero and the one-to-one ion ratio gives the neutral solid.",
+        "The acid helps remove carbonate that could otherwise give a white barium carbonate precipitate. Do not use sulfuric acid for acidification: it would supply the sulfate being tested for and can give a misleading positive result.",
+        "White precipitate is the expected observation with the appropriate reagents and preparation. It is not a universal identity for every white solid. Keep the sulfate test separate from the silver-nitrate test, and use approved handling and waste procedures because soluble barium reagents are hazardous."
+      ],
+      "example": {
+        "question": "Explain why HCl is useful for this sulfate test while H₂SO₄ would undermine the inference.",
+        "steps": [
+          "HCl acidifies without introducing sulfate.",
+          "Acid helps remove carbonate interference.",
+          "H₂SO₄ introduces SO₄²⁻ and can itself cause BaSO₄ precipitation."
+        ],
+        "explanation": "The acid’s ions matter, not merely whether it is acidic."
+      },
+      "commonMistakes": [
+        "Using sulfuric acid to prove sulfate was originally present.",
+        "Calling a white precipitate uniquely barium sulfate without naming reagents.",
+        "Forgetting acidification and carbonate interference."
+      ]
+    },
+    {
+      "id": "test-carbonate-ions",
+      "title": "Acid release plus gas identification tests for carbonate",
+      "points": [
+        "2.48"
+      ],
+      "terms": [
+        "hydrochloric acid",
+        "effervescence",
+        "carbon dioxide",
+        "carbonate ion"
+      ],
+      "paragraphs": [
+        "Add dilute hydrochloric acid to a separate sample. A carbonate releases carbon dioxide; confirm the evolved gas by its clouding of limewater. Effervescence followed by the appropriate gas-test result supplies stronger evidence than reporting bubbles alone.",
+        "The net reaction is CO₃²⁻ + 2H⁺ → CO₂ + H₂O. Carbon1, oxygen3 and hydrogen2 are conserved, and the left charge −2 + 2 = 0 matches the neutral products. The limewater test is a second reaction forming a precipitate.",
+        "Keep the two observations separate: gas release in the original sample, then white cloudiness in limewater. A reactive metal can also bubble with acid, but its hydrogen does not give the same carbonate/CO₂ evidence. Some other substances can also release CO₂, so apply the inference within the stated school sample context."
+      ],
+      "example": {
+        "question": "An invented sample bubbles after HCl addition. What further required observation supports carbonate rather than merely proving gas release?",
+        "steps": [
+          "Pass the evolved gas into limewater using the approved setup.",
+          "White cloudiness is consistent with CO₂.",
+          "Combine that with the acid reaction and the given sample context."
+        ],
+        "explanation": "The gas must be identified rather than assumed from effervescence."
+      },
+      "commonMistakes": [
+        "Calling every acid-generated gas CO₂.",
+        "Saying the original sample must turn limewater-white itself.",
+        "Omitting the second observation."
+      ]
+    },
+    {
+      "id": "test-water-presence",
+      "title": "Anhydrous copper sulfate shows water is present",
+      "points": [
+        "2.49"
+      ],
+      "terms": [
+        "anhydrous copper(II) sulfate",
+        "white",
+        "blue",
+        "hydration"
+      ],
+      "paragraphs": [
+        "White anhydrous copper(II) sulfate becomes blue when it takes up water and forms hydrated material. Use the teacher’s specified test with a small fresh sample of the reagent. The required evidence is the white-to-blue change, rather than the presence of blue copper sulfate before the test starts.",
+        "The test establishes water presence in a suitable sample; it does not show that the sample is pure water. A solution containing water and dissolved salt can still give the positive response. Water from damp apparatus or atmospheric moisture can also compromise a blank test.",
+        "The distinction matches the salt-preparation lesson: hydrated crystals contain structural water, while anhydrous material lacks that hydration. Avoid relying on direct strong heating of an unknown as the identification method; the named reagent and observed change are the requirement here."
+      ],
+      "example": {
+        "question": "A mixture of water and dissolved salt turns fresh white anhydrous CuSO₄ blue. Does this prove the mixture is chemically pure water?",
+        "steps": [
+          "No: the test supports water being present.",
+          "Dissolved substances may also be present.",
+          "A different physical purity check is needed for the next requirement."
+        ],
+        "explanation": "Presence and purity are different questions."
+      },
+      "commonMistakes": [
+        "Starting with blue hydrated reagent and calling no change a positive test.",
+        "Calling any positive hydration test proof of purity.",
+        "Ignoring water already on the apparatus."
+      ]
+    },
+    {
+      "id": "test-water-purity",
+      "title": "Compare a phase-change temperature with pure water",
+      "points": [
+        "2.50"
+      ],
+      "terms": [
+        "boiling point",
+        "melting point",
+        "pressure",
+        "purity"
+      ],
+      "paragraphs": [
+        "A physical school test compares a measured phase-change temperature with the reference for pure water at the same pressure. At standard atmospheric pressure, pure water boils at about 100°C and melts/freezes at about 0°C. A sharp phase-change temperature consistent with the appropriate reference supports purity in the school comparison.",
+        "Pressure matters especially for boiling point: a lower atmospheric pressure can make pure water boil below 100°C. Dissolved substances can change a freezing or boiling point, but a measured deviation is not automatically proof of one particular impurity; thermometer calibration, heating method and pressure also need consideration.",
+        "In an approved boiling-point method, measure the liquid’s temperature when it is steadily boiling, using correctly positioned suitable apparatus rather than touching the heater or vessel wall. Compare with a reference measured under comparable conditions. A result within the measurement resolution cannot exclude every trace impurity.",
+        "The water-presence chemical test, clear appearance and a phase-change test answer different questions. None of these alone certifies that an unknown is safe to drink. No sample or phase-change curve has actually been measured here."
+      ],
+      "example": {
+        "question": "An invented sample boils at 98°C. Before calling it impure solely because it differs from 100°C, name two checks.",
+        "steps": [
+          "Check atmospheric pressure against the reference conditions.",
+          "Check the thermometer and its measurement position/calibration.",
+          "Then interpret the result within the experiment’s resolution and other evidence."
+        ],
+        "explanation": "A physical reference is meaningful only with appropriate conditions."
+      },
+      "commonMistakes": [
+        "Assuming pure water boils at 100°C at every pressure.",
+        "Using white-to-blue CuSO₄ as proof of purity.",
+        "Claiming one approximate result excludes every trace contaminant."
+      ]
+    },
+    {
+      "id": "test-observation-inference",
+      "title": "Separate the test, observation and conclusion",
+      "points": [
+        "2.44",
+        "2.47",
+        "2.48",
+        "2.50"
+      ],
+      "terms": [
+        "reagent",
+        "observation",
+        "inference",
+        "fresh sample",
+        "control"
+      ],
+      "paragraphs": [
+        "A useful answer names the test condition, records a concrete observation and then identifies what it supports. “Add NaOH; a blue precipitate forms; Cu²⁺ is supported” is more complete than “it turns blue”. A precipitate is a solid, while a flame colour, a gas response and a solution colour are different observations.",
+        "Plan separate fresh portions when reagents can interfere with later tests. HCl used in a carbonate test supplies chloride; sulfuric acid supplies sulfate. Controls and clean apparatus help establish that the expected response belongs to the sample rather than a reagent or contamination.",
+        "Do not claim a whole compound’s identity from one ion test. Combining an appropriate cation test and an appropriate anion test can narrow the proposed salt, while mixtures and other possibilities still need the context. Negative results have detection and reagent limitations; report the evidence rather than inventing a definitive purity claim."
+      ],
+      "example": {
+        "question": "A proposed salt gives a blue precipitate with NaOH and, in a fresh properly acidified portion, a white precipitate with barium chloride. What named ions are supported?",
+        "steps": [
+          "Cu²⁺ is supported by the NaOH blue precipitate.",
+          "SO₄²⁻ is supported by the acidified barium test.",
+          "Copper(II) sulfate is consistent with those ions in a single-salt context; the observations do not prove every purity condition."
+        ],
+        "explanation": "Separate tests combine compatible evidence without exceeding it."
+      },
+      "commonMistakes": [
+        "Calling a white precipitate enough to identify the whole compound.",
+        "Reusing a contaminated sample for another ion test.",
+        "Claiming a negative result proves absolute absence at any concentration."
+      ],
+      "diagram": {
+        "src": "/diagrams/chemistry-anion-tests.svg",
+        "alt": "Original comparison: acidified silver nitrate yields white, cream or yellow halide precipitates; acidified barium chloride yields white sulfate precipitate; carbonate acid reaction produces gas that clouds limewater.",
+        "caption": "Name the reagent and the solid or gas observation. White appearance alone does not identify the ion. Colours are schematic, not calibrated observations."
+      }
     }
   ]
 }

@@ -76,6 +76,16 @@ void test('the bounded five-pair batch is indexed-only', () => {
 });
 
 // Reviewed identities and linked notes do not imply chapter completion.
+void test('inventory page summaries include every recorded statement page', async () => {
+  const { reviewedInventories } = await import('../lib/syllabus.ts');
+  for (const inventory of reviewedInventories)
+    for (const point of inventory.points)
+      assert.ok(
+        inventory.reviewedPages.includes(point.pdfPage),
+        `${inventory.qualification} ${point.reference}: statement page is missing from its inventory page summary`,
+      );
+});
+
 void test('reviewed inventories agree with source candidates and subject-specific notes', async () => {
   const { reviewedInventories } = await import('../lib/syllabus.ts');
   const { getNotes } = await import('../content/notes.ts');
@@ -85,7 +95,7 @@ void test('reviewed inventories agree with source candidates and subject-specifi
       (n, inventory) => n + inventory.points.length,
       0,
     ),
-    631,
+    638,
   );
   const allIds = reviewedInventories.flatMap((i) => i.points.map((p) => p.id));
   assert.equal(new Set(allIds).size, allIds.length);

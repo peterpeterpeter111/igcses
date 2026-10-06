@@ -1,3 +1,4 @@
+import chemistryTests from '../research/syllabus/4CH1-chemical-tests.json' with { type: 'json' };
 import chemistryAcidsSalts from '../research/syllabus/4CH1-acids-salts.json' with { type: 'json' };
 import chemistryMetalExtraction from '../research/syllabus/4CH1-metal-extraction-uses.json' with { type: 'json' };
 import chemistryAcidPractical from '../research/syllabus/4CH1-acid-metal-practical.json' with { type: 'json' };
@@ -69,6 +70,7 @@ import mathsPolynomials from '../research/syllabus/4MB1-polynomials-and-fraction
 
 // Reviewed overlays are kept separate from the immutable raw candidates.
 export const reviewedInventories = [
+  { title: 'Chemical tests (2.44–2.50; both papers; partial teaching)', ...chemistryTests },
   { title: 'Acids, alkalis, titration and salts (2.28–2.43C; partial teaching)', ...chemistryAcidsSalts },
   { title: 'Metal extraction, uses and alloys (2.22C–2.27C; Paper 2C; partial teaching)', ...chemistryMetalExtraction },
   { title: 'Acid–metal practical (2.21; partial teaching)', ...chemistryAcidPractical },
