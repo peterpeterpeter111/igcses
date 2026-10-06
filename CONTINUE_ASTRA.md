@@ -1,8 +1,10 @@
+Allowance reopened on resumed check2026-10-06 10:52:48UTC:100%five-hour/84%weekly remaining, ordinary usage allowed, no reset consumed. Read the historical2026-10-06-USAGE-BLOCKED.md and preserve1608fb6. Sync pending audit/docs plus this note non-force from verified GitHubb5f1a73, then continue the listed gaps; AI last.
+
 # Resume the saved project
 
 # Current checkpoint — 6 October 2026
 
-Read research/checkpoints/2026-10-06-HUMAN-HEARING.md first. Preserve latest commit/history/UI; no reset/discard.
+Read research/checkpoints/2026-10-06-HUMAN-HEARING.md and2026-10-06-HUMAN-IDENTITY-GAPS.md first. Preserve latest commit/history/UI; no reset/discard.
 
 Four hearing/balance/noise lessons appended, Coordination28sections. Two new both01/02 identities/audits,14 local requirements, four links. Human vision5.11–5.12 is source preparation only;5.15 practical,5.16–5.19 and disease unfinished. Published5.10 ambiguous wording remains explicitly recorded.
 
