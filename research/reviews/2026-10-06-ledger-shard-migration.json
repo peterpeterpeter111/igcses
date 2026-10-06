@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-06",
+  "status": "lossless-storage-migration",
+  "tables": [
+    {
+      "table": "coverage",
+      "rowsBefore": 1283,
+      "rowsAfter": 1283,
+      "canonicalRowsSha256Before": "d8844ea6df923c0e4b4b454cffe81d074325f2a4aa6a3ee0e1adb05594808c10",
+      "canonicalRowsSha256After": "d8844ea6df923c0e4b4b454cffe81d074325f2a4aa6a3ee0e1adb05594808c10",
+      "allFieldStringsPreserved": true,
+      "requestSizes": [
+        {
+          "path": "coverage/4BI1.csv",
+          "requestBytes": 175064
+        },
+        {
+          "path": "coverage/4CH1.csv",
+          "requestBytes": 160736
+        },
+        {
+          "path": "coverage/4EB1.csv",
+          "requestBytes": 443
+        },
+        {
+          "path": "coverage/4HB1-001.csv",
+          "requestBytes": 101583
+        },
+        {
+          "path": "coverage/4HB1-002.csv",
+          "requestBytes": 92486
+        },
+        {
+          "path": "coverage/4MB1.csv",
+          "requestBytes": 52787
+        },
+        {
+          "path": "coverage/4PH1.csv",
+          "requestBytes": 143759
+        }
+      ]
+    },
+    {
+      "table": "syllabus-points",
+      "rowsBefore": 776,
+      "rowsAfter": 776,
+      "canonicalRowsSha256Before": "1aaa70c1bbb3f31d7368fd93d9a98ec43991c496509d9b63151984113d421560",
+      "canonicalRowsSha256After": "1aaa70c1bbb3f31d7368fd93d9a98ec43991c496509d9b63151984113d421560",
+      "allFieldStringsPreserved": true,
+      "requestSizes": [
+        {
+          "path": "syllabus-points/4BI1.csv",
+          "requestBytes": 44907
+        },
+        {
+          "path": "syllabus-points/4CH1.csv",
+          "requestBytes": 42230
+        },
+        {
+          "path": "syllabus-points/4EB1.csv",
+          "requestBytes": 511
+        },
+        {
+          "path": "syllabus-points/4HB1.csv",
+          "requestBytes": 36850
+        },
+        {
+          "path": "syllabus-points/4MB1.csv",
+          "requestBytes": 18109
+        },
+        {
+          "path": "syllabus-points/4PH1.csv",
+          "requestBytes": 47804
+        }
+      ]
+    }
+  ],
+  "contentCoveragePromotion": false,
+  "maxRequestBytes": 195000
+}

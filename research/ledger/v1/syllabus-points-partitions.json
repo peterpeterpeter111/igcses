@@ -1,44 +1,43 @@
 {
   "schemaVersion": 2,
-  "table": "coverage",
-  "schemaPath": "coverage.csv",
+  "table": "syllabus-points",
+  "schemaPath": "syllabus-points.csv",
   "partitionKey": "qualification prefix of point_id; declared identity shards",
   "partitions": [
     {
       "qualification": "4BI1",
       "paths": [
-        "coverage/4BI1.csv"
+        "syllabus-points/4BI1.csv"
       ]
     },
     {
       "qualification": "4CH1",
       "paths": [
-        "coverage/4CH1.csv"
+        "syllabus-points/4CH1.csv"
       ]
     },
     {
       "qualification": "4EB1",
       "paths": [
-        "coverage/4EB1.csv"
+        "syllabus-points/4EB1.csv"
       ]
     },
     {
       "qualification": "4HB1",
       "paths": [
-        "coverage/4HB1-001.csv",
-        "coverage/4HB1-002.csv"
+        "syllabus-points/4HB1.csv"
       ]
     },
     {
       "qualification": "4MB1",
       "paths": [
-        "coverage/4MB1.csv"
+        "syllabus-points/4MB1.csv"
       ]
     },
     {
       "qualification": "4PH1",
       "paths": [
-        "coverage/4PH1.csv"
+        "syllabus-points/4PH1.csv"
       ]
     }
   ]

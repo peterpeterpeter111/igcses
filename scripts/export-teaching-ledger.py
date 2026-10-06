@@ -1,9 +1,10 @@
 """Export one reviewed inventory and its note links, preserving unrelated rows."""
 import csv
+import hashlib
 import json
 import sys
 from pathlib import Path
-from ledger_io import read_table, read_csv, coverage_partitions
+from ledger_io import read_table, table_partitions
 from note_io import read_note
 
 
@@ -42,14 +43,24 @@ for name, key, additions in [('syllabus-points', 'point_id', point_rows), ('cove
     directory = root / 'research/ledger/v1'
     fields, rows = read_table(directory, name)
     target = directory / (name + '.csv')
-    if name == 'coverage' and (directory / 'coverage-partitions.json').exists():
-        partitions = coverage_partitions(directory)
-        target = partitions[inventory['qualification']]
-        _, rows = read_csv(target)
+    if (directory / (name + '-partitions.json')).exists():
+        targets = table_partitions(directory, name)[inventory['qualification']]
+        rows = [r for r in rows if r['point_id'].startswith(inventory['qualification'] + ':')]
+    else:
+        targets = [target]
     if len({r[key] for r in additions}) != len(additions) or any(set(r) != set(fields) for r in additions):
         raise ValueError('Invalid or duplicate export row')
     retained = [r for r in rows if r['point_id'] not in ids]
-    pending.append((target, fields, retained + additions))
+    combined = retained + additions
+    if len(targets) == 1:
+        pending.append((targets[0], fields, combined))
+    else:
+        # Stable identity routing keeps repeat exports in the same declared shard.
+        shards = [[] for _ in targets]
+        for row in combined:
+            index = int.from_bytes(hashlib.sha256(row[key].encode()).digest()[:8], 'big') % len(targets)
+            shards[index].append(row)
+        pending.extend((target, fields, shard) for target, shard in zip(targets, shards))
 for target, fields, rows in pending:
     with target.open('w', newline='') as stream:
         writer = csv.DictWriter(stream, fields, lineterminator='\n')

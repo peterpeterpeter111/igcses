@@ -18,11 +18,15 @@ All IDs are stable, opaque strings except documented natural keys. Dates are ISO
 | `batches.csv` | batch_id; research_cutoff; scope_json; approval_reference; model; tools_json; started_at; finished_at; status; inventory_complete; cursor; discovered_links; obtained_documents; processed_papers; unresolved_issues_json; commit_sha |
 | `audit-events.csv` | event_id; entity_type; entity_id; action; previous_status; new_status; evidence_refs_json; rationale; actor; actor_type; created_at; batch_id |
 
-## Subject-partitioned coverage storage
+## Subject-partitioned ledger storage
 
-`coverage.csv` now retains the table header only. All rows live in `coverage/<qualification>.csv`, explicitly listed in `coverage-partitions.json`. Together they are one logical coverage table with the same columns and IDs. Use `scripts/ledger_io.py` (`read_table(directory, 'coverage')`) for imports/audits; reading only the root CSV omits the data. The reader rejects missing or undeclared files, changed headers, duplicate identities, wrong-subject rows and a populated root CSV. Other tables remain single files.
+`coverage.csv` and `syllabus-points.csv` retain only their table headers. Each table has an explicit `<table>-partitions.json` manifest. Version 2 entries declare a qualification and an ordered `paths` list. A subject with one file uses `<table>/<qualification>.csv`; a subject with multiple identity shards uses `<table>/<qualification>-001.csv`, `-002.csv`, and so on. Human Biology coverage currently has two shards. Empty English files remain explicitly declared; an empty file does not claim normalized English coverage.
+
+Use `scripts/ledger_io.py` (`read_table(directory, name)`) for imports/audits; reading only a root CSV omits data. The reader supports the historical version 1 coverage manifest and current version 2 manifests. It rejects missing, undeclared or linked files, ambiguous/unordered paths, changed headers, duplicate identities, wrong-subject rows and populated roots. Other tables remain single files. The exporter validates both logical tables first, updates only the chosen subject and routes each coverage identity by the first eight bytes of its SHA-256 modulo the declared shard count. It never silently creates another shard.
 
 The 30 September 2026 migration preserved all 356 rows and every field string; the canonical row hashes before and after match in `research/reviews/2026-09-30-coverage-partition-migration.json`. Grouping by subject changes physical row order only. This supports smaller subject updates and legible source review while retaining the existing GitHub request cap. It is not a D1 migration, content review or completion promotion. Future D1 import must read the logical table through the declared partitions.
+
+The 6 October migration preserves all 1,283 coverage rows and 776 source-identity rows with matching canonical hashes in `research/reviews/2026-10-06-ledger-shard-migration.json`. Every field string is unchanged. Shards and subject files remain ordinary CSV text reviewed under the unchanged 195,000-byte request cap. A future file approaching that ceiling requires a new explicit lossless storage review; the sync planner does not transform files.
 
 ## Identity and references
 
