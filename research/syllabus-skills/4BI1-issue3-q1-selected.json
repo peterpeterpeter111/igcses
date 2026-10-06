@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4BI1",
+  "specificationDocumentId": "4BI1-spec",
+  "specificationSha256": "9f474a0ef0e93ef3c3107b568956d163454cdb476bb2017189e8dd12c0d58cef",
+  "reviewDate": "2026-10-07",
+  "reviewer": "Codex visual/source review",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Only Q1.b.i required arithmetic/unit-ratio demands; not full skills/AO reconciliation or a new numbered point.",
+  "reviewedPages": [
+    49
+  ],
+  "skills": [
+    {
+      "id": "4BI1:issue3:mathematical:1A",
+      "reference": "1A",
+      "pdfPage": 49,
+      "printedPage": 43,
+      "summary": "Use decimal numbers.",
+      "appliesToBiology": true,
+      "reviewStatus": "agent-reviewed"
+    },
+    {
+      "id": "4BI1:issue3:mathematical:1C",
+      "reference": "1C",
+      "pdfPage": 49,
+      "printedPage": 43,
+      "summary": "Use ratios and related numerical operations.",
+      "appliesToBiology": true,
+      "reviewStatus": "agent-reviewed"
+    },
+    {
+      "id": "4BI1:issue3:mathematical:3C",
+      "reference": "3C",
+      "pdfPage": 49,
+      "printedPage": 43,
+      "summary": "Substitute quantities into equations with appropriate units.",
+      "appliesToBiology": true,
+      "reviewStatus": "agent-reviewed"
+    }
+  ],
+  "taskMappings": [
+    {
+      "taskId": "4BI1-2024-June-1-standard.Q1.b.i",
+      "skillIds": [
+        "4BI1:issue3:mathematical:1A",
+        "4BI1:issue3:mathematical:1C",
+        "4BI1:issue3:mathematical:3C"
+      ],
+      "scope": "required-operations-only",
+      "humanReviewed": false
+    }
+  ],
+  "blockers": [
+    "Physical measurement display calibration and printed partial-credit policy unresolved.",
+    "Whole-paper mathematical/experimental/AO and historical reconciliation pending."
+  ]
+}

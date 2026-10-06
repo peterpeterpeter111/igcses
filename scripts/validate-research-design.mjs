@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { createHash } from 'node:crypto';
+import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import Ajv from 'ajv';
 import { templateContractErrors } from './template-contract.mjs';
@@ -33,6 +34,18 @@ check('English assessment objectives have a separate partial-coverage schema', (
   assert(ajv.validateSchema(objectiveSchema));
   const validate = ajv.compile(objectiveSchema);
   assert(validate(read('research/assessment-objectives/4EB1-issue4.json')), JSON.stringify(validate.errors));
+});
+check('Biology Q1 subset has source-bound, idempotent normalization without whole-paper promotion', () => {
+  const result = execFileSync('python3', ['-c', `
+import importlib.util,sys
+sys.path.insert(0,'scripts')
+spec=importlib.util.spec_from_file_location('biology_export','scripts/export-biology-q1.py')
+module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+outputs=module.prepare()
+assert len(outputs)==4 and all(p.read_text()==value for p,value in outputs.items())
+print('verified')
+`], { cwd: root, encoding: 'utf8' });
+  assert.equal(result.trim(), 'verified');
 });
 check(
   'Every saved family satisfies its schema and has no unreviewed activation',

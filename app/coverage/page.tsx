@@ -90,6 +90,13 @@ export default function CoveragePage() {
         <h2>Known gaps</h2>
         <ul className="plain-list">
           <li>
+            Biology: {evidenceHighlights.biologyDetailedParts} parts of Question 1
+            ({evidenceHighlights.biologyDetailedMarks} original marks) have detailed
+            records. The whole-paper part count and visual inventory remain
+            unconfirmed. Source qualifications, full skills/AO review and template
+            calibration are pending; no fully processed Biology paper.
+          </li>
+          <li>
             Human Biology: {evidenceHighlights.humanBiologyDetailedParts} question parts
             ({evidenceHighlights.humanBiologyDetailedMarks} original marks) have detailed
             records out of {evidenceHighlights.humanBiologyExpectedParts} inventoried

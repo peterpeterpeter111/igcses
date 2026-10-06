@@ -9,6 +9,7 @@ import covers from '../research/reviews/2026-09-09-cover-review.json' with { typ
 import physicsExtraction from '../research/extractions/4PH1-2024-June-1-standard.json' with { type: 'json' };
 import humanIndex from '../research/paper-indexes/4HB1-2024-summer-01.json' with { type: 'json' };
 import humanExtraction from '../research/extractions/4HB1-2024-May-01-standard.json' with { type: 'json' };
+import biologyExtraction from '../research/extractions/4BI1-2024-June-1-standard.json' with { type: 'json' };
 import physicsIndex from '../research/reviews/2026-09-10-physics-leaf-index.json' with { type: 'json' };
 import physicsVisualAudit from '../research/reviews/2026-09-10-physics-visual-audit.json' with { type: 'json' };
 import { subjects } from '../content/catalog.ts';
@@ -53,12 +54,15 @@ export const evidenceHighlights = {
     mathematicsSummary?.reviewedAt ?? latestDiscoveryDate,
     retrievalValidation.date,
     humanExtraction.reviewDate,
+    biologyExtraction.reviewDate,
   ]
     .sort()
     .at(-1),
   humanBiologyDetailedParts: humanExtraction.detailedLeafTasks,
   humanBiologyExpectedParts: humanExtraction.wholePaperLeafCount,
   humanBiologyDetailedMarks: humanExtraction.detailedOriginalMarks,
+  biologyDetailedParts: biologyExtraction.detailedLeafTasks,
+  biologyDetailedMarks: biologyExtraction.detailedOriginalMarks,
   mathematicsDetailedParts: mathematicsSummary?.detailedTasks ?? 0,
   mathematicsDetailedMarks: mathematicsSummary?.originalMarks ?? 0,
   physicsDetailedParts: physicsExtraction.detailedLeafTasks,
@@ -106,7 +110,7 @@ export function subjectEvidence(code: string) {
   return batch.records
     .filter((r) => r.qualification === code)
     .map((r) => {
-      const detail = [physicsExtraction, humanExtraction].find(
+      const detail = [physicsExtraction, humanExtraction, biologyExtraction].find(
         (e) => e.paperId === r.paperId,
       );
       return {

@@ -1,0 +1,1156 @@
+{
+  "schemaVersion": 1,
+  "paperId": "4BI1-2024-June-1-standard",
+  "qualification": "4BI1",
+  "canonicalIdentity": {
+    "year": 2024,
+    "series": "June",
+    "component": "1B",
+    "variant": "unresolved",
+    "printedDate": "2024-05-10",
+    "filenameDate": "2024-05-11",
+    "legacyPaperIdPreserved": true
+  },
+  "reviewDate": "2026-10-07",
+  "reviewer": "Codex visual/source review",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "status": "partial-detailed-extraction",
+  "paperStage": "indexed",
+  "paperStageReviewedAt": "2026-10-07",
+  "fullyProcessed": false,
+  "wholePaperMarks": 110,
+  "wholePaperLeafCount": null,
+  "detailedLeafTasks": 6,
+  "detailedOriginalMarks": 12,
+  "reviewedQuestionTotals": {
+    "1": 12
+  },
+  "reviewedSubsetMarksReconciled": true,
+  "marksReconciled": false,
+  "documents": [
+    {
+      "id": "4BI1-2024-June-1-standard:questionPaper",
+      "type": "question-paper",
+      "url": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Biology/2017/Exam-materials/4bi1-1b-que-20240511.pdf",
+      "sha256": "5d4a76b9c961f83179706c753c95b56efc4e0cb792452c3307a0029454a54337",
+      "pageCount": 32
+    },
+    {
+      "id": "4BI1-2024-June-1-standard:markScheme",
+      "type": "mark-scheme",
+      "url": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Biology/2017/Exam-materials/4bi1-1b-rms-20240822.pdf",
+      "sha256": "50e93a23131b5ad5642423d2db2ff40f6276c35b15b7f0fb3210b5765423d104",
+      "pageCount": 24
+    }
+  ],
+  "pageAudit": {
+    "questionPaper": {
+      "visuallyReviewedPages": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "wholeDocumentReviewed": false
+    },
+    "markScheme": {
+      "visuallyReviewedPages": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "wholeDocumentReviewed": false
+    }
+  },
+  "rawManifestRef": "research/batches/2026-09-08-cross-subject-lower-01.manifest.json",
+  "rawManifestSha256": "562a2b39cf6c20944d2f29dd274c49e5a57a26d3502bf3b37dc82364d17ab963",
+  "coverReviewRef": "research/reviews/2026-09-09-cover-review.json",
+  "coverReviewSha256": "0ff8900b0c35dc679141bd58605fba2700ab0edc42b44e4d4bd2ac991d55a119",
+  "examinerReportStatus": "not-obtained-for-this-paper",
+  "currentSpecification": {
+    "documentId": "4BI1-spec",
+    "sha256": "9f474a0ef0e93ef3c3107b568956d163454cdb476bb2017189e8dd12c0d58cef",
+    "issue": "3",
+    "reviewedPages": [
+      18,
+      21,
+      29,
+      49
+    ],
+    "wholeHistoricalAmendmentReconciliation": "pending"
+  },
+  "sourceFoodWeb": {
+    "nodes": [
+      "oak tree",
+      "deer",
+      "squirrel",
+      "mouse",
+      "caterpillar",
+      "beetle",
+      "ant",
+      "blue jay",
+      "tick"
+    ],
+    "edges": [
+      [
+        "oak tree",
+        "deer"
+      ],
+      [
+        "oak tree",
+        "squirrel"
+      ],
+      [
+        "oak tree",
+        "mouse"
+      ],
+      [
+        "oak tree",
+        "caterpillar"
+      ],
+      [
+        "deer",
+        "tick"
+      ],
+      [
+        "squirrel",
+        "tick"
+      ],
+      [
+        "mouse",
+        "tick"
+      ],
+      [
+        "caterpillar",
+        "mouse"
+      ],
+      [
+        "caterpillar",
+        "beetle"
+      ],
+      [
+        "caterpillar",
+        "ant"
+      ],
+      [
+        "beetle",
+        "blue jay"
+      ],
+      [
+        "ant",
+        "blue jay"
+      ]
+    ],
+    "arrowMeaning": "From food to consumer; do not reverse the flow.",
+    "sourceRef": {
+      "documentId": "4BI1-2024-June-1-standard:questionPaper",
+      "pdfPages": [
+        2
+      ]
+    },
+    "diagramAccess": "Private semantic transcription; original scan not in public assets."
+  },
+  "tasks": [
+    {
+      "paperId": "4BI1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4BI1-2024-June-1-standard.Q1.a.i",
+      "questionPath": "1.a.i",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        3
+      ],
+      "markSchemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Which",
+      "commandWordStatus": "source-checked-short-label",
+      "requiredKnowledge": [
+        "producer recognition"
+      ],
+      "contextSummary": "Choose the producer from four named food-web organisms.",
+      "solutionStructure": [
+        "Select C, oak tree."
+      ],
+      "markingMethod": "single-choice",
+      "criteria": [
+        {
+          "id": "4BI1-2024-June-1-standard.Q1.a.i:point-1",
+          "marks": 1,
+          "rule": "Select C, oak tree."
+        }
+      ],
+      "scoringRule": {
+        "mode": "single-choice",
+        "maximum": 1,
+        "eligibleCriterionIds": [
+          "4BI1-2024-June-1-standard.Q1.a.i:point-1"
+        ],
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            4
+          ]
+        },
+        "answerLabel": "C"
+      },
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4BI1:issue3:4.6",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "The producer trophic role is directly assessed.",
+          "evidenceRefs": [
+            {
+              "documentId": "4BI1-spec",
+              "pdfPages": [
+                29
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                3
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                4
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "food-web",
+        "multiple-choice"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            2,
+            3
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO marks inferred.",
+      "proposedFamilyId": "4BI1.food-web.producer",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generative family or response recognizer; candidate family only.",
+        "Official per-leaf AO allocation, historical amendments and whole-paper processing remain incomplete."
+      ],
+      "sourceChoices": [
+        {
+          "label": "A",
+          "organism": "beetle"
+        },
+        {
+          "label": "B",
+          "organism": "deer"
+        },
+        {
+          "label": "C",
+          "organism": "oak tree"
+        },
+        {
+          "label": "D",
+          "organism": "tick"
+        }
+      ]
+    },
+    {
+      "paperId": "4BI1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4BI1-2024-June-1-standard.Q1.a.ii",
+      "questionPath": "1.a.ii",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        3
+      ],
+      "markSchemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Draw",
+      "commandWordStatus": "source-checked-short-label",
+      "requiredKnowledge": [
+        "food-web paths",
+        "trophic levels",
+        "arrow direction"
+      ],
+      "contextSummary": "Draw a four-level chain in the given web that includes the mouse.",
+      "solutionStructure": [
+        "oak tree → caterpillar → mouse → tick",
+        "Arrows follow food to consumer."
+      ],
+      "markingMethod": "ordered-chain",
+      "criteria": [
+        {
+          "id": "4BI1-2024-June-1-standard.Q1.a.ii:point-1",
+          "marks": 1,
+          "rule": "All four organisms in the correct order."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q1.a.ii:point-2",
+          "marks": 1,
+          "rule": "The correct ordered chain has food-to-consumer arrows.",
+          "requiresCriterionIds": [
+            "4BI1-2024-June-1-standard.Q1.a.ii:point-1"
+          ]
+        }
+      ],
+      "scoringRule": {
+        "mode": "ordered-chain",
+        "maximum": 2,
+        "eligibleCriterionIds": [
+          "4BI1-2024-June-1-standard.Q1.a.ii:point-1",
+          "4BI1-2024-June-1-standard.Q1.a.ii:point-2"
+        ],
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            4
+          ]
+        },
+        "sourceConcession": "Correct order alone earns one; pyramids earn no credit. No per-arrow allocation is published."
+      },
+      "acceptableAlternatives": [
+        "Oak or tree accepted for oak tree."
+      ],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4BI1:issue3:4.7",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Interpret the web to draw a valid chain.",
+          "evidenceRefs": [
+            {
+              "documentId": "4BI1-spec",
+              "pdfPages": [
+                29
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                3
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4BI1:issue3:4.6",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "The required four trophic levels constrain the chain.",
+          "evidenceRefs": [
+            {
+              "documentId": "4BI1-spec",
+              "pdfPages": [
+                29
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                3
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                4
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "food-web",
+        "drawing"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            2,
+            3
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO marks inferred.",
+      "proposedFamilyId": "4BI1.food-web.four-level-chain",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generative family or response recognizer; candidate family only.",
+        "Official per-leaf AO allocation, historical amendments and whole-paper processing remain incomplete.",
+        "Hand-drawn chain recognition and borderline arrow/order responses have not been calibrated."
+      ],
+      "sourceChain": {
+        "nodes": [
+          "oak tree",
+          "caterpillar",
+          "mouse",
+          "tick"
+        ],
+        "arrows": "food-to-consumer",
+        "correctWholeChainMarks": 2,
+        "correctOrderOnlyMarks": 1,
+        "pyramidMarks": 0,
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            4
+          ]
+        }
+      }
+    },
+    {
+      "paperId": "4BI1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4BI1-2024-June-1-standard.Q1.a.iii",
+      "questionPath": "1.a.iii",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        3
+      ],
+      "markSchemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Which",
+      "commandWordStatus": "source-checked-short-label",
+      "requiredKnowledge": [
+        "food-web paths",
+        "organism-specific trophic roles"
+      ],
+      "contextSummary": "Choose which listed organism occupies two different trophic levels in the given web.",
+      "solutionStructure": [
+        "Select D, mouse: direct plant feeding gives level 2; eating the caterpillar gives level 3."
+      ],
+      "markingMethod": "single-choice",
+      "criteria": [
+        {
+          "id": "4BI1-2024-June-1-standard.Q1.a.iii:point-1",
+          "marks": 1,
+          "rule": "Select D, mouse."
+        }
+      ],
+      "scoringRule": {
+        "mode": "single-choice",
+        "maximum": 1,
+        "eligibleCriterionIds": [
+          "4BI1-2024-June-1-standard.Q1.a.iii:point-1"
+        ],
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            4
+          ]
+        },
+        "answerLabel": "D"
+      },
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4BI1:issue3:4.6",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Identify the two trophic roles of a consumer.",
+          "evidenceRefs": [
+            {
+              "documentId": "4BI1-spec",
+              "pdfPages": [
+                29
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                3
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4BI1:issue3:4.7",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Different paths through the web support the roles.",
+          "evidenceRefs": [
+            {
+              "documentId": "4BI1-spec",
+              "pdfPages": [
+                29
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                3
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                4
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "food-web",
+        "multiple-choice"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            2,
+            3
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO marks inferred.",
+      "proposedFamilyId": "4BI1.food-web.multiple-levels",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generative family or response recognizer; candidate family only.",
+        "Official per-leaf AO allocation, historical amendments and whole-paper processing remain incomplete."
+      ],
+      "sourceChoices": [
+        {
+          "label": "A",
+          "organism": "ant"
+        },
+        {
+          "label": "B",
+          "organism": "blue jay"
+        },
+        {
+          "label": "C",
+          "organism": "caterpillar"
+        },
+        {
+          "label": "D",
+          "organism": "mouse"
+        }
+      ],
+      "editorialReasoning": {
+        "mouseLevels": [
+          2,
+          3
+        ],
+        "blueJayLevels": [
+          4
+        ],
+        "tickLevels": [
+          3,
+          4
+        ],
+        "qualification": "The mouse is the answer among the listed options. It is not the only organism in the entire web with two path lengths; two prey species alone do not establish two trophic levels."
+      }
+    },
+    {
+      "paperId": "4BI1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4BI1-2024-June-1-standard.Q1.b.i",
+      "questionPath": "1.b.i",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        4
+      ],
+      "markSchemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Calculate",
+      "commandWordStatus": "source-checked-short-label",
+      "requiredKnowledge": [
+        "magnification ratio",
+        "consistent length units",
+        "physical image measurement"
+      ],
+      "contextSummary": "Calculate magnification of the printed A–B tick image using actual length 3.5 mm.",
+      "solutionStructure": [
+        "The scheme uses an image length of 104 mm.",
+        "104 ÷ 3.5 ≈ 29.714; its accepted final range is 29.0–30.0."
+      ],
+      "markingMethod": "final-answer-or-one-partial",
+      "criteria": [
+        {
+          "id": "4BI1-2024-June-1-standard.Q1.b.i:point-1",
+          "marks": 0,
+          "rule": "Informational role: source image measurement, with accepted units and tolerance."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q1.b.i:point-2",
+          "marks": 0,
+          "rule": "Informational role: source division method or full-credit final ratio."
+        }
+      ],
+      "scoringRule": {
+        "mode": "final-answer-or-one-partial",
+        "maximum": 2,
+        "eligibleCriterionIds": [
+          "4BI1-2024-June-1-standard.Q1.b.i:point-1",
+          "4BI1-2024-June-1-standard.Q1.b.i:point-2"
+        ],
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            4
+          ]
+        }
+      },
+      "acceptableAlternatives": [
+        "Correct final magnification in the published range earns both marks."
+      ],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [],
+      "stimulusTypes": [
+        "measured-image"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            4
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO marks inferred.",
+      "proposedFamilyId": "4BI1.image-magnification",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generative family or response recognizer; candidate family only.",
+        "Official per-leaf AO allocation, historical amendments and whole-paper processing remain incomplete.",
+        "Printed partial divisor 35 needs an explicit marking policy; no silent correction.",
+        "Physical measurement and web display scale are not interchangeable; original image remains private."
+      ],
+      "numericScoring": {
+        "actualLengthMm": 3.5,
+        "sourceImageLengthMm": 104,
+        "finalRange": [
+          29.0,
+          30.0
+        ],
+        "correctFinalAnswerAloneMaximum": 2,
+        "partialMaximum": 1,
+        "measurementAlternatives": [
+          {
+            "unit": "cm",
+            "range": [
+              10.3,
+              10.5
+            ]
+          },
+          {
+            "unit": "mm",
+            "range": [
+              103,
+              105
+            ]
+          }
+        ],
+        "measurementRequiresUnits": true,
+        "publishedPartialDivisors": [
+          3.5,
+          35
+        ],
+        "partialBranchesAreAlternatives": true,
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            4
+          ]
+        }
+      },
+      "sourceQualification": {
+        "id": "4BI1-2024-June-1-standard.Q1.b.i:partial-divisor-35",
+        "publishedDivisor": 35,
+        "status": "published-partial-credit-concession-not-a-correct-ratio",
+        "note": "The printed divisor 35 is preserved as a one-mark method concession. It is not silently converted to 3.5 or presented as a full-credit result; the eligible response pathway needs source-policy review.",
+        "generatedUse": "blocked-until-partial-method-and-presentation-calibration",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            4
+          ]
+        }
+      },
+      "measurementPresentation": {
+        "source": "Physical printed A–B line, not the resized preview on screen.",
+        "webScaleValidated": false,
+        "sourceAttribution": "© Evgdemidova / Shutterstock",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            4
+          ]
+        },
+        "publicOriginalImage": false
+      },
+      "mathematicalSkillIds": [
+        "4BI1:issue3:mathematical:1A",
+        "4BI1:issue3:mathematical:1C",
+        "4BI1:issue3:mathematical:3C"
+      ]
+    },
+    {
+      "paperId": "4BI1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4BI1-2024-June-1-standard.Q1.b.ii",
+      "questionPath": "1.b.ii",
+      "originalMarks": 4,
+      "questionPaperPages": [
+        5
+      ],
+      "markSchemePages": [
+        5
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Give",
+      "commandWordStatus": "source-checked-short-label",
+      "requiredKnowledge": [
+        "absorbed substances",
+        "matched nutritional functions"
+      ],
+      "contextSummary": "Name two substances absorbed after blood feeding and give a function for each.",
+      "solutionStructure": [
+        "Credit up to two distinct accepted substance names.",
+        "Credit the function of each only when it matches its credited name."
+      ],
+      "markingMethod": "two-matched-pairs",
+      "criteria": [
+        {
+          "id": "4BI1-2024-June-1-standard.Q1.b.ii:point-1",
+          "marks": 1,
+          "rule": "An accepted first named substance."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q1.b.ii:point-2",
+          "marks": 1,
+          "rule": "A function matching that first substance.",
+          "requiresCriterionIds": [
+            "4BI1-2024-June-1-standard.Q1.b.ii:point-1"
+          ]
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q1.b.ii:point-3",
+          "marks": 1,
+          "rule": "A distinct accepted second named substance."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q1.b.ii:point-4",
+          "marks": 1,
+          "rule": "A function matching that second substance.",
+          "requiresCriterionIds": [
+            "4BI1-2024-June-1-standard.Q1.b.ii:point-3"
+          ]
+        }
+      ],
+      "scoringRule": {
+        "mode": "two-matched-pairs",
+        "maximum": 4,
+        "eligibleCriterionIds": [
+          "4BI1-2024-June-1-standard.Q1.b.ii:point-1",
+          "4BI1-2024-June-1-standard.Q1.b.ii:point-2",
+          "4BI1-2024-June-1-standard.Q1.b.ii:point-3",
+          "4BI1-2024-June-1-standard.Q1.b.ii:point-4"
+        ],
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            5
+          ]
+        }
+      },
+      "acceptableAlternatives": [
+        "One vitamin or named vitamin naming credit; one mineral or named mineral naming credit."
+      ],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4BI1:issue3:2.25",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Dietary-component functions supply supporting knowledge, but the printed item uses a tick rather than a human; no complete human nutrition scope claimed.",
+          "evidenceRefs": [
+            {
+              "documentId": "4BI1-spec",
+              "pdfPages": [
+                21
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                5
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "blood-feeding-scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            4,
+            5
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO marks inferred.",
+      "proposedFamilyId": "4BI1.substance-function.pairs",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generative family or response recognizer; candidate family only.",
+        "Official per-leaf AO allocation, historical amendments and whole-paper processing remain incomplete.",
+        "Published tick-context nutrient/function examples need taxon-specific source-policy review; semantic pair and duplicate/category recognition unimplemented."
+      ],
+      "pairScoring": {
+        "maximumPairs": 2,
+        "nameMarksPerPair": 1,
+        "functionMarksPerPair": 1,
+        "functionRequiresMatchingCreditedName": true,
+        "functionAloneMarks": 0,
+        "twoCorrectNamesAloneMarks": 2,
+        "duplicateNamesCreateNewPair": false,
+        "categoryNamingCaps": {
+          "vitamins": 1,
+          "minerals": 1
+        },
+        "ignoredEvidence": [
+          "blood cells",
+          "platelets",
+          "oxygen",
+          "hormones",
+          "antibodies",
+          "enzymes"
+        ],
+        "publishedExamples": [
+          {
+            "substances": [
+              "glucose"
+            ],
+            "functions": [
+              "energy",
+              "respiration"
+            ]
+          },
+          {
+            "substances": [
+              "iron"
+            ],
+            "functions": [
+              "haemoglobin",
+              "red blood cells"
+            ]
+          },
+          {
+            "substances": [
+              "amino acids"
+            ],
+            "functions": [
+              "protein synthesis"
+            ]
+          },
+          {
+            "substances": [
+              "protein",
+              "named protein"
+            ],
+            "functions": [
+              "growth"
+            ]
+          },
+          {
+            "substances": [
+              "cholesterol",
+              "fatty acids",
+              "lipoproteins"
+            ],
+            "functions": [
+              "energy",
+              "insulation"
+            ]
+          },
+          {
+            "substances": [
+              "water"
+            ],
+            "functions": [
+              "hydration",
+              "transport",
+              "solvent"
+            ]
+          },
+          {
+            "substances": [
+              "vitamin C"
+            ],
+            "functions": [
+              "prevention of scurvy"
+            ]
+          }
+        ],
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            5
+          ]
+        }
+      },
+      "sourceQualification": {
+        "id": "4BI1-2024-June-1-standard.Q1.b.ii:taxon-specific-functions",
+        "status": "published-examples-retained-not-taxonomic-certification",
+        "note": "The scheme includes iron/red-blood-cell and vitamin-C/scurvy examples. These are retained as printed marking examples, not claims that ticks produce human red blood cells or have human deficiency physiology. Novel arthropod-specific teaching and generated reuse need biological and source-policy review.",
+        "generatedUse": "blocked-until-physiological-scope-review",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            5
+          ]
+        }
+      }
+    },
+    {
+      "paperId": "4BI1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4BI1-2024-June-1-standard.Q1.b.iii",
+      "questionPath": "1.b.iii",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        5
+      ],
+      "markSchemePages": [
+        6
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Suggest",
+      "commandWordStatus": "source-checked-short-label",
+      "requiredKnowledge": [
+        "pathogen identity",
+        "blood-feeding disease transmission"
+      ],
+      "contextSummary": "Suggest how a tick can transmit disease between organisms.",
+      "solutionStructure": [
+        "Any two distinct source points: uptake from an infected host during biting/feeding; pathogen identity; biting/feeding on another host."
+      ],
+      "markingMethod": "any-distinct",
+      "criteria": [
+        {
+          "id": "4BI1-2024-June-1-standard.Q1.b.iii:point-1",
+          "marks": 1,
+          "rule": "Biting or blood feeding takes material from an infected animal."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q1.b.iii:point-2",
+          "marks": 1,
+          "rule": "Identify a bacterium, virus or pathogen."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q1.b.iii:point-3",
+          "marks": 1,
+          "rule": "Biting or feeding on another animal transfers the infection."
+        }
+      ],
+      "scoringRule": {
+        "mode": "any-distinct",
+        "maximum": 2,
+        "eligibleCriterionIds": [
+          "4BI1-2024-June-1-standard.Q1.b.iii:point-1",
+          "4BI1-2024-June-1-standard.Q1.b.iii:point-2",
+          "4BI1-2024-June-1-standard.Q1.b.iii:point-3"
+        ],
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            6
+          ]
+        },
+        "selectionLimit": 2,
+        "creditPerCriterion": 1
+      },
+      "acceptableAlternatives": [
+        "Transfer wording accepted when biting is referenced in the answer."
+      ],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4BI1:issue3:1.4",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "The pathogen category is covered; this does not claim the numbered statement prescribes the full tick transmission route.",
+          "evidenceRefs": [
+            {
+              "documentId": "4BI1-spec",
+              "pdfPages": [
+                18
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                5
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                6
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "blood-feeding-scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            4,
+            5
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO marks inferred.",
+      "proposedFamilyId": "4BI1.vector-transmission",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generative family or response recognizer; candidate family only.",
+        "Official per-leaf AO allocation, historical amendments and whole-paper processing remain incomplete.",
+        "Vector-mechanism demand exceeds the selected numbered definition; full scope and alternative response calibration pending."
+      ],
+      "sourceConcession": {
+        "transferNeedsBitingReference": true,
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            6
+          ]
+        }
+      }
+    }
+  ],
+  "blockers": [
+    "Only Q1: six detailed parts / 12 marks; whole-paper leaf count and visual inventory remain unknown.",
+    "Whole historical, skills/AO and paper-to-current-scope reconciliation incomplete.",
+    "Printed divisor 35 and tick-context physiological examples require generated-reuse policy.",
+    "No calibrated Biology template, response recognition or learner/examiner certification.",
+    "Examiner report not obtained."
+  ],
+  "processingNotes": [
+    "Original indexed-only batch and its zero extracted count are preserved; this separately dated overlay records Q1 progress.",
+    "Printed sitting is 10 May 2024; filename encodes 11 May. Legacy June/standard ID is retained without resolving variant.",
+    "Both QP PDF5 and MS PDF6 show Q1 total 12; no extrapolated whole-paper denominator or completion claim.",
+    "QP PDF2 food-web edges and PDF4 physical measurement stimulus were visually checked; source diagrams remain private.",
+    "Nutrition functions are dependent on named substances; vitamin/mineral category naming caps and ignored blood-cell evidence retained.",
+    "Magnification has a final-answer full-credit range and alternative one-mark branches; calculation lines are not independent mark points.",
+    "Per-leaf AO fields remain empty; selected Appendix 4 IDs are separate from numbered content points."
+  ]
+}
