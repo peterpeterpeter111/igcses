@@ -31,7 +31,8 @@
     "Recognise and continue arithmetic and common integer sequences, stating the intended rule.",
     "Add, scale and multiply compatible matrices, and solve scalar matrix equations while checking all entries.",
     "Use mappings, domains, composites and inverses with the required restrictions.",
-    "Interpret function graphs and tangents; differentiate integer powers and apply rates of change."
+    "Interpret function graphs and tangents; differentiate integer powers and apply rates of change.",
+    "Represent matrix data and use identity, zero, determinant and inverse operations with their dimension restrictions."
   ],
   "sections": [
     {
@@ -1930,6 +1931,120 @@
       ]
     },
     {
+      "id": "representing-data-in-matrices",
+      "title": "Read a matrix as a labelled data table",
+      "points": [
+        "5A"
+      ],
+      "paragraphs": [
+        "A matrix can store a rectangular table of data. State what each row and column represents, including the units if the entries measure a quantity. In the inline notation [[12, 7, 9], [5, 11, 8]], each inner bracket is a row. The order is 2 × 3: two rows, then three columns.",
+        "An entry is identified by its row first and column second. The entry a₂₃ is in row 2, column 3, not row 3, column 2. The same numbers arranged in different positions can describe different data. Zero can be meaningful, for example no stock of an item; it is not a missing entry.",
+        "Before using an operation on a data matrix, check that corresponding entries refer to the same quantities in the same order. Two shops can combine stock counts by adding matching products, but adding a price matrix to a stock-count matrix would mix different units."
+      ],
+      "example": {
+        "question": "Rows of A = [[12, 7, 9], [5, 11, 8]] represent shops North and South. Columns represent books, pens and folders, in that order. State the order of A, the South pen stock and the meaning of a₁₃.",
+        "steps": [
+          "A has two rows and three columns, so its order is 2 × 3.",
+          "South pens are in row 2, column 2: 11 pens.",
+          "a₁₃ = 9 is the North stock of folders."
+        ],
+        "explanation": "The row and column labels give each entry its meaning."
+      },
+      "practice": {
+        "question": "Rows represent Monday and Tuesday; columns represent bus and train journeys. For [[8, 3], [6, 5]], interpret the entry in row 2, column 1 and find the total train journeys.",
+        "answer": "6 bus journeys on Tuesday; 8 train journeys in total.",
+        "explanation": "Row 2, column 1 is 6. The train column contains 3 and 5, so its total is 8."
+      },
+      "commonMistakes": [
+        "Write rows before columns in the order.",
+        "Retain the given labels and units.",
+        "Distinguish a zero observation from a missing value."
+      ],
+      "terms": [
+        "matrix data",
+        "row labels",
+        "column labels",
+        "entry",
+        "matrix order"
+      ]
+    },
+    {
+      "id": "identity-matrices",
+      "title": "Use the identity matrix with compatible dimensions",
+      "points": [
+        "5D"
+      ],
+      "paragraphs": [
+        "The identity or unit matrix Iₙ is square. Its main diagonal contains ones and every other entry is zero. For example, I₂ = [[1, 0], [0, 1]] and I₃ = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]. The main diagonal runs from the top left to the bottom right. A matrix filled with ones is not an identity matrix.",
+        "Multiplication by an identity leaves a compatible matrix unchanged. If A has r rows and s columns, IᵣA = A and AIₛ = A. The two identity matrices need not have the same order. For a square 2 × 2 matrix these are both I₂.",
+        "The dimension check still applies. If A is 2 × 3, I₂A and AI₃ are defined, but AI₂ is not: its inner dimensions would be 3 and 2. Identity multiplication is a useful check of row-by-column calculations. This course uses identity matrices of order no greater than 3 × 3."
+      ],
+      "example": {
+        "question": "Let A = [[2, −1, 4], [0, 3, 5]]. Which identities can multiply it on the left and right without changing it?",
+        "steps": [
+          "A is 2 × 3.",
+          "On the left, use I₂: the product is (2 × 2)(2 × 3), giving a 2 × 3 matrix.",
+          "On the right, use I₃: the product is (2 × 3)(3 × 3), also giving a 2 × 3 matrix.",
+          "Thus I₂A = A and AI₃ = A. AI₂ is undefined."
+        ],
+        "explanation": "Each diagonal one selects the corresponding row or column, while the other zero entries contribute nothing."
+      },
+      "practice": {
+        "question": "For B = [[4, 1], [−2, 3]], calculate I₂B and BI₂.",
+        "answer": "Both products are [[4, 1], [−2, 3]].",
+        "explanation": "The compatible 2 × 2 identity leaves every entry of B unchanged."
+      },
+      "commonMistakes": [
+        "Put ones only on the main diagonal.",
+        "Use the identity of the appropriate size on each side.",
+        "Do not skip the inner-dimension check."
+      ],
+      "terms": [
+        "identity matrix",
+        "unit matrix",
+        "main diagonal",
+        "compatible dimensions"
+      ]
+    },
+    {
+      "id": "zero-and-null-matrices",
+      "title": "Keep the shape of a zero matrix",
+      "points": [
+        "5D"
+      ],
+      "paragraphs": [
+        "A zero or null matrix has zero in every entry. Its shape still matters: [[0, 0, 0], [0, 0, 0]] is a 2 × 3 zero matrix, while [[0, 0], [0, 0]] is 2 × 2. A zero matrix need not be square. The specification uses orders no greater than 3 × 3.",
+        "Adding a zero matrix of the same order leaves a matrix unchanged: A + O = A. Subtracting a matrix from itself gives the zero matrix of that order. Multiplying any matrix by the scalar zero also gives a zero matrix with the original shape.",
+        "A product involving a zero matrix is a zero matrix only when the multiplication is defined. Its order is the number of rows of the first input by the number of columns of the second. Do not replace a zero matrix by the scalar 0 in a calculation where the dimensions matter."
+      ],
+      "example": {
+        "question": "A = [[1, 2, 3], [4, 5, 6]] and Z = [[0], [0], [0]]. Find AZ and its order.",
+        "steps": [
+          "A is 2 × 3 and Z is 3 × 1, so AZ is defined and has order 2 × 1.",
+          "First entry: 1 × 0 + 2 × 0 + 3 × 0 = 0.",
+          "Second entry: 4 × 0 + 5 × 0 + 6 × 0 = 0.",
+          "AZ = [[0], [0]]."
+        ],
+        "explanation": "All entries are zero, but the output is a two-row column matrix."
+      },
+      "practice": {
+        "question": "For B = [[−2, 5], [1, 0]], find B − B and compare it with I₂.",
+        "answer": "B − B = [[0, 0], [0, 0]], which is not I₂.",
+        "explanation": "The zero matrix has no diagonal ones; it is different from the identity."
+      },
+      "commonMistakes": [
+        "Preserve the rows and columns even when all entries are zero.",
+        "Do not confuse the zero matrix with the identity.",
+        "Check product dimensions before saying a result is zero."
+      ],
+      "terms": [
+        "zero matrix",
+        "null matrix",
+        "matrix shape",
+        "additive identity"
+      ]
+    },
+    {
       "id": "adding-matrices",
       "title": "Adding matrices entry by entry",
       "points": [
@@ -2110,6 +2225,124 @@
         ],
         "caution": "The reviewed source accepts a relevant matrix setup or one correct scalar equation for its method mark; it does not require four equations. A correct answer can imply that method unless it comes from obviously incorrect working."
       }
+    },
+    {
+      "id": "two-by-two-determinants",
+      "title": "Calculate a 2 × 2 determinant in the correct order",
+      "points": [
+        "5E"
+      ],
+      "paragraphs": [
+        "For A = [[a, b], [c, d]], the determinant is det(A) = ad − bc. Multiply the main-diagonal entries and subtract the product of the other two entries. The determinant is one scalar number, not a matrix. Its sign matters.",
+        "Use the complete entries, including negative signs, in the products. For [[2, −1], [3, 4]], the off-diagonal product is (−1) × 3 = −3, so the subtraction gives 8 − (−3) = 11. Do not change ad − bc into ad + bc or take an absolute value.",
+        "This specification asks for determinants and inverses of non-singular 2 × 2 matrices. The inverse formula requires a nonzero determinant. If a calculation gives zero, recheck the data and do not divide by zero. A separate classification of singular matrices is not required by this source point."
+      ],
+      "example": {
+        "question": "Find the determinant of A = [[3, 2], [1, 4]].",
+        "steps": [
+          "Identify a = 3, b = 2, c = 1 and d = 4.",
+          "ad = 3 × 4 = 12 and bc = 2 × 1 = 2.",
+          "det(A) = 12 − 2 = 10."
+        ],
+        "explanation": "The order of subtraction is part of the definition; reversing it would give the wrong sign."
+      },
+      "practice": {
+        "question": "Find det([[2, −1], [3, 4]]).",
+        "answer": "11.",
+        "explanation": "2 × 4 − (−1) × 3 = 8 − (−3) = 11."
+      },
+      "commonMistakes": [
+        "Subtract the off-diagonal product from the main-diagonal product.",
+        "Include signs inside each product.",
+        "Write a scalar result, not four matrix entries."
+      ],
+      "terms": [
+        "determinant",
+        "non-singular",
+        "diagonal products",
+        "ad minus bc"
+      ]
+    },
+    {
+      "id": "inverting-two-by-two-matrices",
+      "title": "Find a 2 × 2 inverse without losing signs",
+      "points": [
+        "5E"
+      ],
+      "paragraphs": [
+        "For a non-singular A = [[a, b], [c, d]], A⁻¹ = [1/(ad − bc)] [[d, −b], [−c, a]]. First find the determinant, then exchange the two main-diagonal entries and negate the two off-diagonal entries. Finally multiply every entry by the reciprocal of the determinant.",
+        "A⁻¹ denotes the matrix inverse, not the reciprocal of each separate entry and not the negative of A. Keeping the scalar factor outside the matrix is an exact form. Multiplying it into all four entries is also an exact equivalent form; reduce fractions carefully before rounding.",
+        "The factor 1/(ad − bc) applies to the whole matrix. If the determinant is negative, that negative sign affects every entry. Always check the original determinant is nonzero before using the formula. Do not carry the minus signs from the original off-diagonal entries unchanged: the formula negates those entries."
+      ],
+      "example": {
+        "question": "Find A⁻¹ for A = [[4, 1], [2, 1]].",
+        "steps": [
+          "det(A) = 4 × 1 − 1 × 2 = 2.",
+          "Exchange the diagonal entries and negate the others: [[1, −1], [−2, 4]].",
+          "A⁻¹ = (1/2)[[1, −1], [−2, 4]].",
+          "Equivalently A⁻¹ = [[1/2, −1/2], [−1, 2]]."
+        ],
+        "explanation": "Only the main diagonal is exchanged; the other entries stay in their positions and change sign."
+      },
+      "practice": {
+        "question": "Find the exact inverse of B = [[1, 3], [2, 4]].",
+        "answer": "B⁻¹ = (−1/2)[[4, −3], [−2, 1]] = [[−2, 3/2], [1, −1/2]].",
+        "explanation": "det(B) = 4 − 6 = −2. The negative reciprocal multiplies every entry of the exchanged-and-negated matrix."
+      },
+      "commonMistakes": [
+        "Do not take entrywise reciprocals.",
+        "Exchange a and d, but negate b and c in place.",
+        "Apply a negative determinant factor to every entry."
+      ],
+      "terms": [
+        "matrix inverse",
+        "inverse notation",
+        "reciprocal determinant",
+        "exact fractions"
+      ],
+      "diagram": {
+        "src": "/diagrams/maths-matrix-inverse.svg",
+        "alt": "A has rows four and one, then two and one. Its determinant is two. Exchange the diagonal and negate the other entries to give rows one and minus one, then minus two and four. Multiplying by one half gives the inverse.",
+        "caption": "Exchange the main diagonal, negate the other entries, then apply the reciprocal determinant to every entry."
+      }
+    },
+    {
+      "id": "checking-matrix-inverses",
+      "title": "Verify an inverse by multiplying to the identity",
+      "points": [
+        "5E"
+      ],
+      "paragraphs": [
+        "An inverse undoes matrix multiplication: for a square matrix A with inverse B, AB = BA = I. To check a proposed inverse, multiply rows by columns and look for diagonal ones and off-diagonal zeros. In this two-sided definition, both products describe the inverse relationship.",
+        "A product with just one correct diagonal entry is not enough. A positive version of an inverse with the wrong overall sign might instead produce −I. A missing determinant factor can produce a scalar multiple of I. These are useful clues for finding the error, but neither result is the identity.",
+        "An inverse can reverse a transformation described by an invertible 2 × 2 matrix about the origin. Apply the inverse to the image position vector and check that it returns the original point. General translations cannot be represented by the ordinary 2 × 2 matrix rule because such matrices fix the origin."
+      ],
+      "example": {
+        "question": "A = [[2, 3], [1, 2]] and B = [[2, −3], [−1, 2]]. Check that B = A⁻¹.",
+        "steps": [
+          "AB has first row [2 × 2 + 3 × (−1), 2 × (−3) + 3 × 2] = [1, 0].",
+          "Its second row is [1 × 2 + 2 × (−1), 1 × (−3) + 2 × 2] = [0, 1].",
+          "BA similarly has rows [4 − 3, 6 − 6] and [−2 + 2, −3 + 4], giving I₂.",
+          "Both products equal the identity, so B is the inverse of A."
+        ],
+        "explanation": "All four entries in each product agree with I₂, rather than merely giving the right determinant."
+      },
+      "practice": {
+        "question": "A = [[2, 1], [1, 1]] maps position (3, 2)ᵀ to (8, 5)ᵀ. Use A⁻¹ = [[1, −1], [−1, 2]] to recover the original point.",
+        "answer": "(3, 2)ᵀ.",
+        "explanation": "Multiplication gives (8 − 5, −8 + 10)ᵀ = (3, 2)ᵀ."
+      },
+      "commonMistakes": [
+        "Check all four product entries.",
+        "The required result is I, not −I or a multiple of I.",
+        "An inverse reverses multiplication rather than addition."
+      ],
+      "terms": [
+        "inverse check",
+        "identity product",
+        "undo a transformation",
+        "position vector"
+      ]
     },
     {
       "id": "functions-and-mappings",

@@ -1,3 +1,4 @@
+import mathsMatrixFoundations from '../research/curriculum-audits/4MB1-matrix-foundations.json' with { type: 'json' };
 import mathsVectors from '../research/curriculum-audits/4MB1-vectors.json' with { type: 'json' };
 import mathsCircleSector from '../research/curriculum-audits/4MB1-similarity-circles-sectors.json' with { type: 'json' };
 import mathsAngles from '../research/curriculum-audits/4MB1-angle-properties.json' with { type: 'json' };
@@ -94,6 +95,7 @@ import mathsPolynomials from '../research/curriculum-audits/4MB1-polynomials-and
 
 // These bounded audits link partial teaching; they do not promote completion.
 export const curriculumAudits = [
+  mathsMatrixFoundations,
   mathsVectors,
   mathsCircleSector,
   mathsAngles,
