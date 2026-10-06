@@ -9,33 +9,32 @@
   "reviewer": "Codex source/logic review",
   "reviewerType": "agent",
   "humanReviewed": false,
-  "scope": "Own Issue 3 PDF29–30/printed23–24, references4.1–4.28 all both papers. Initial 26 partial lessons plus later linked formula/naming evidence; later families are audited separately. Whole-chapter and independent assessment review remain unfinished.",
+  "scope": "Own Issue 3 PDF31–32/printed25–26, references4.29C–4.50C. Twenty-five original partial lessons; 18 Paper2C-only identities and four both-paper addition-polymer identities. No performed practical, human review or complete teaching claim.",
   "identifierPolicy": "r suffixes are local editorial audit clauses, not publisher-numbered substatements.",
   "notePath": "content/notes/chemistry-organic.json",
   "completeTeachingPoints": 0,
   "completeChapters": 0,
   "parents": [
     {
-      "parentId": "4CH1:issue3:4.1",
-      "officialReference": "4.1",
-      "pdfPage": 29,
-      "printedPage": 23,
+      "parentId": "4CH1:issue3:4.29C",
+      "officialReference": "4.29C",
+      "pdfPage": 31,
+      "printedPage": 25,
       "components": [
-        "1C",
         "2C"
       ],
       "sourceDecompositionStatus": "source-checked",
       "teachingAuditStatus": "partial",
       "substatementAuditComplete": false,
-      "scopeNote": "Own Issue 3 PDF29–30/printed23–24, references4.1–4.28 all both papers. Initial 26 partial lessons plus later linked formula/naming evidence; later families are audited separately. Whole-chapter and independent assessment review remain unfinished.",
+      "scopeNote": "Own Issue 3 PDF31–32/printed25–26, references4.29C–4.50C. Twenty-five original partial lessons; 18 Paper2C-only identities and four both-paper addition-polymer identities. No performed practical, human review or complete teaching claim.",
       "requirements": [
         {
-          "id": "4CH1:issue3:4.1:r1",
+          "id": "4CH1:issue3:4.29C:r1",
           "origin": "editorial-decomposition",
-          "summary": "Carbon and hydrogen only in a compound",
+          "summary": "Alcohol C–O–H connection and oxygen valency",
           "teachingEvidence": [
             {
-              "sectionId": "hydrocarbon-identity",
+              "sectionId": "alcohol-functional-group",
               "field": "paragraphs"
             }
           ],
@@ -47,12 +46,12 @@
           ]
         },
         {
-          "id": "4CH1:issue3:4.1:r2",
+          "id": "4CH1:issue3:4.29C:r2",
           "origin": "editorial-decomposition",
-          "summary": "All elements checked rather than a partial formula",
+          "summary": "Alcohol not a hydrocarbon or free hydroxide",
           "teachingEvidence": [
             {
-              "sectionId": "hydrocarbon-identity",
+              "sectionId": "alcohol-functional-group",
               "field": "paragraphs"
             }
           ],
@@ -66,251 +65,800 @@
       ]
     },
     {
-      "parentId": "4CH1:issue3:4.2",
-      "officialReference": "4.2",
-      "pdfPage": 29,
-      "printedPage": 23,
+      "parentId": "4CH1:issue3:4.30C",
+      "officialReference": "4.30C",
+      "pdfPage": 31,
+      "printedPage": 25,
       "components": [
-        "1C",
         "2C"
       ],
       "sourceDecompositionStatus": "source-checked",
       "teachingAuditStatus": "partial",
       "substatementAuditComplete": false,
-      "scopeNote": "Own Issue 3 PDF29–30/printed23–24, references4.1–4.28 all both papers. Initial 26 partial lessons plus later linked formula/naming evidence; later families are audited separately. Whole-chapter and independent assessment review remain unfinished.",
+      "scopeNote": "Own Issue 3 PDF31–32/printed25–26, references4.29C–4.50C. Twenty-five original partial lessons; 18 Paper2C-only identities and four both-paper addition-polymer identities. No performed practical, human review or complete teaching claim.",
       "requirements": [
         {
-          "id": "4CH1:issue3:4.2:r1",
+          "id": "4CH1:issue3:4.30C:r1",
           "origin": "editorial-decomposition",
-          "summary": "Molecular actual atom counts",
-          "teachingEvidence": [
-            {
-              "sectionId": "organic-formula-types",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.2:r2",
-          "origin": "editorial-decomposition",
-          "summary": "Empirical simplest ratio",
-          "teachingEvidence": [
-            {
-              "sectionId": "organic-formula-types",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.2:r3",
-          "origin": "editorial-decomposition",
-          "summary": "General family formula with stated conditions",
-          "teachingEvidence": [
-            {
-              "sectionId": "organic-formula-types",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.2:r4",
-          "origin": "editorial-decomposition",
-          "summary": "Structural connectivity and condensed notation",
-          "teachingEvidence": [
-            {
-              "sectionId": "organic-formula-types",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.2:r5",
-          "origin": "editorial-decomposition",
-          "summary": "Displayed every atom/bond and valency",
-          "teachingEvidence": [
-            {
-              "sectionId": "organic-formula-types",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        }
-      ]
-    },
-    {
-      "parentId": "4CH1:issue3:4.3",
-      "officialReference": "4.3",
-      "pdfPage": 29,
-      "printedPage": 23,
-      "components": [
-        "1C",
-        "2C"
-      ],
-      "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Own Issue 3 PDF29–30/printed23–24, references4.1–4.28 all both papers. Initial 26 partial lessons plus later linked formula/naming evidence; later families are audited separately. Whole-chapter and independent assessment review remain unfinished.",
-      "requirements": [
-        {
-          "id": "4CH1:issue3:4.3:r1",
-          "origin": "editorial-decomposition",
-          "summary": "Homologous family, formula, behaviour and CH₂ difference",
-          "teachingEvidence": [
-            {
-              "sectionId": "homologous-series",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.3:r2",
-          "origin": "editorial-decomposition",
-          "summary": "Functional group associated with characteristic reactions",
-          "teachingEvidence": [
-            {
-              "sectionId": "homologous-series",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.3:r3",
-          "origin": "editorial-decomposition",
-          "summary": "Isomer formula equality and different connectivity",
-          "teachingEvidence": [
-            {
-              "sectionId": "structural-isomers",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        }
-      ]
-    },
-    {
-      "parentId": "4CH1:issue3:4.4",
-      "officialReference": "4.4",
-      "pdfPage": 29,
-      "printedPage": 23,
-      "components": [
-        "1C",
-        "2C"
-      ],
-      "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Own Issue 3 PDF29–30/printed23–24, references4.1–4.28 all both papers. Initial 26 partial lessons plus later linked formula/naming evidence; later families are audited separately. Whole-chapter and independent assessment review remain unfinished.",
-      "requirements": [
-        {
-          "id": "4CH1:issue3:4.4:r1",
-          "origin": "editorial-decomposition",
-          "summary": "First six carbon-count roots",
-          "teachingEvidence": [
-            {
-              "sectionId": "organic-names",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.4:r2",
-          "origin": "editorial-decomposition",
-          "summary": "Appropriate parent and low double-bond locant",
-          "teachingEvidence": [
-            {
-              "sectionId": "organic-names",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.4:r3",
-          "origin": "editorial-decomposition",
-          "summary": "Branch numbering and distinction from total carbon count",
-          "teachingEvidence": [
-            {
-              "sectionId": "organic-names",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.4:r4",
-          "origin": "editorial-decomposition",
-          "summary": "Relevant alcohol, acid and ester naming within the six-carbon scope",
+          "summary": "Methanol and ethanol named structures",
           "teachingEvidence": [
             {
               "sectionId": "alcohol-drawings",
               "field": "paragraphs"
-            },
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:4.30C:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Propan-1-ol and butan-1-ol primary connections",
+          "teachingEvidence": [
+            {
+              "sectionId": "alcohol-drawings",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:4.30C:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Full displayed bonds and alcohol naming",
+          "teachingEvidence": [
+            {
+              "sectionId": "alcohol-drawings",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4CH1:issue3:4.31C",
+      "officialReference": "4.31C",
+      "pdfPage": 31,
+      "printedPage": 25,
+      "components": [
+        "2C"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Own Issue 3 PDF31–32/printed25–26, references4.29C–4.50C. Twenty-five original partial lessons; 18 Paper2C-only identities and four both-paper addition-polymer identities. No performed practical, human review or complete teaching claim.",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.31C:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Complete ethanol combustion and atom balance",
+          "teachingEvidence": [
+            {
+              "sectionId": "ethanol-combustion",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:4.31C:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Microbial oxidation with oxygen to acid",
+          "teachingEvidence": [
+            {
+              "sectionId": "ethanol-acid-oxidation",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:4.31C:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Potassium dichromate(VI), dilute sulfuric acid and heat",
+          "teachingEvidence": [
+            {
+              "sectionId": "ethanol-acid-oxidation",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:4.31C:r4",
+          "origin": "editorial-decomposition",
+          "summary": "Route products and controlled acid endpoint distinguished",
+          "teachingEvidence": [
+            {
+              "sectionId": "ethanol-acid-oxidation",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4CH1:issue3:4.32C",
+      "officialReference": "4.32C",
+      "pdfPage": 31,
+      "printedPage": 25,
+      "components": [
+        "2C"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Own Issue 3 PDF31–32/printed25–26, references4.29C–4.50C. Twenty-five original partial lessons; 18 Paper2C-only identities and four both-paper addition-polymer identities. No performed practical, human review or complete teaching claim.",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.32C:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Ethene/steam and phosphoric acid catalyst",
+          "teachingEvidence": [
+            {
+              "sectionId": "ethanol-steam-route",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:4.32C:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Own about 300°C and 60–70 atm",
+          "teachingEvidence": [
+            {
+              "sectionId": "ethanol-steam-route",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:4.32C:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Glucose, yeast enzymes, absence of air and about30°C",
+          "teachingEvidence": [
+            {
+              "sectionId": "ethanol-fermentation",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:4.32C:r4",
+          "origin": "editorial-decomposition",
+          "summary": "Balanced fermentation equation and product mixture",
+          "teachingEvidence": [
+            {
+              "sectionId": "ethanol-fermentation",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4CH1:issue3:4.33C",
+      "officialReference": "4.33C",
+      "pdfPage": 31,
+      "printedPage": 25,
+      "components": [
+        "2C"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Own Issue 3 PDF31–32/printed25–26, references4.29C–4.50C. Twenty-five original partial lessons; 18 Paper2C-only identities and four both-paper addition-polymer identities. No performed practical, human review or complete teaching claim.",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.33C:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Absence of air supports intended ethanol route",
+          "teachingEvidence": [
+            {
+              "sectionId": "fermentation-conditions",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:4.33C:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Optimum enzyme activity and high-temperature denaturation",
+          "teachingEvidence": [
+            {
+              "sectionId": "fermentation-conditions",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:4.33C:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Gas outlet distinct from absence of air",
+          "teachingEvidence": [
+            {
+              "sectionId": "fermentation-conditions",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4CH1:issue3:4.34C",
+      "officialReference": "4.34C",
+      "pdfPage": 31,
+      "printedPage": 25,
+      "components": [
+        "2C"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Own Issue 3 PDF31–32/printed25–26, references4.29C–4.50C. Twenty-five original partial lessons; 18 Paper2C-only identities and four both-paper addition-polymer identities. No performed practical, human review or complete teaching claim.",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.34C:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Complete C(=O)–OH functional group",
+          "teachingEvidence": [
+            {
+              "sectionId": "carboxyl-group",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:4.34C:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Carbonyl carbon count and oxygen valencies",
+          "teachingEvidence": [
+            {
+              "sectionId": "carboxyl-group",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4CH1:issue3:4.35C",
+      "officialReference": "4.35C",
+      "pdfPage": 31,
+      "printedPage": 25,
+      "components": [
+        "2C"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Own Issue 3 PDF31–32/printed25–26, references4.29C–4.50C. Twenty-five original partial lessons; 18 Paper2C-only identities and four both-paper addition-polymer identities. No performed practical, human review or complete teaching claim.",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.35C:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Four named unbranched acid structures",
+          "teachingEvidence": [
             {
               "sectionId": "carboxylic-drawings",
               "field": "paragraphs"
-            },
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:4.35C:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Displayed C=O/C–O–H and C–H bonds",
+          "teachingEvidence": [
+            {
+              "sectionId": "carboxylic-drawings",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:4.35C:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Carboxyl carbon counted in name",
+          "teachingEvidence": [
+            {
+              "sectionId": "carboxylic-drawings",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4CH1:issue3:4.36C",
+      "officialReference": "4.36C",
+      "pdfPage": 31,
+      "printedPage": 25,
+      "components": [
+        "2C"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Own Issue 3 PDF31–32/printed25–26, references4.29C–4.50C. Twenty-five original partial lessons; 18 Paper2C-only identities and four both-paper addition-polymer identities. No performed practical, human review or complete teaching claim.",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.36C:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Suitable metal to salt/hydrogen",
+          "teachingEvidence": [
+            {
+              "sectionId": "carboxylic-metal-reaction",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:4.36C:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Carboxylate and magnesium charge balance",
+          "teachingEvidence": [
+            {
+              "sectionId": "carboxylic-metal-reaction",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:4.36C:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Metal carbonate to salt/water/carbon dioxide",
+          "teachingEvidence": [
+            {
+              "sectionId": "carboxylic-carbonate-reaction",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:4.36C:r4",
+          "origin": "editorial-decomposition",
+          "summary": "Atom balance and distinct gas tests",
+          "teachingEvidence": [
+            {
+              "sectionId": "carboxylic-carbonate-reaction",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4CH1:issue3:4.37C",
+      "officialReference": "4.37C",
+      "pdfPage": 31,
+      "printedPage": 25,
+      "components": [
+        "2C"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Own Issue 3 PDF31–32/printed25–26, references4.29C–4.50C. Twenty-five original partial lessons; 18 Paper2C-only identities and four both-paper addition-polymer identities. No performed practical, human review or complete teaching claim.",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.37C:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Vinegar aqueous solution containing ethanoic acid",
+          "teachingEvidence": [
+            {
+              "sectionId": "vinegar-solution",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:4.37C:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Mixture and identification/concentration limits",
+          "teachingEvidence": [
+            {
+              "sectionId": "vinegar-solution",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4CH1:issue3:4.38C",
+      "officialReference": "4.38C",
+      "pdfPage": 32,
+      "printedPage": 26,
+      "components": [
+        "2C"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Own Issue 3 PDF31–32/printed25–26, references4.29C–4.50C. Twenty-five original partial lessons; 18 Paper2C-only identities and four both-paper addition-polymer identities. No performed practical, human review or complete teaching claim.",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.38C:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Ester C(=O)–O–C connection",
+          "teachingEvidence": [
+            {
+              "sectionId": "ester-group",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:4.38C:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Difference from acid OH and oxygen valency",
+          "teachingEvidence": [
+            {
+              "sectionId": "ester-group",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4CH1:issue3:4.39C",
+      "officialReference": "4.39C",
+      "pdfPage": 32,
+      "printedPage": 26,
+      "components": [
+        "2C"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Own Issue 3 PDF31–32/printed25–26, references4.29C–4.50C. Twenty-five original partial lessons; 18 Paper2C-only identities and four both-paper addition-polymer identities. No performed practical, human review or complete teaching claim.",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.39C:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Ethanol and ethanoic acid give ethyl ethanoate",
+          "teachingEvidence": [
+            {
+              "sectionId": "ethyl-ethanoate-formation",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:4.39C:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Acid catalyst and water product",
+          "teachingEvidence": [
+            {
+              "sectionId": "ethyl-ethanoate-formation",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:4.39C:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Reversible mixture and reactant tracing",
+          "teachingEvidence": [
+            {
+              "sectionId": "ethyl-ethanoate-formation",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4CH1:issue3:4.40C",
+      "officialReference": "4.40C",
+      "pdfPage": 32,
+      "printedPage": 26,
+      "components": [
+        "2C"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Own Issue 3 PDF31–32/printed25–26, references4.29C–4.50C. Twenty-five original partial lessons; 18 Paper2C-only identities and four both-paper addition-polymer identities. No performed practical, human review or complete teaching claim.",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.40C:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Structural ethyl ethanoate connectivity",
+          "teachingEvidence": [
+            {
+              "sectionId": "ethyl-ethanoate-drawing",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:4.40C:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Full displayed atoms/bonds and valencies",
+          "teachingEvidence": [
+            {
+              "sectionId": "ethyl-ethanoate-drawing",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:4.40C:r3",
+          "origin": "editorial-decomposition",
+          "summary": "C₄H₈O₂ atom count not unique identity",
+          "teachingEvidence": [
+            {
+              "sectionId": "ethyl-ethanoate-drawing",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4CH1:issue3:4.41C",
+      "officialReference": "4.41C",
+      "pdfPage": 32,
+      "printedPage": 26,
+      "components": [
+        "2C"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Own Issue 3 PDF31–32/printed25–26, references4.29C–4.50C. Twenty-five original partial lessons; 18 Paper2C-only identities and four both-paper addition-polymer identities. No performed practical, human review or complete teaching claim.",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.41C:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Alcohol-derived alkyl and acid-derived alkanoate name",
+          "teachingEvidence": [
+            {
+              "sectionId": "ester-naming",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:4.41C:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Structure from both named/formula reactants",
+          "teachingEvidence": [
+            {
+              "sectionId": "ester-naming",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:4.41C:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Reverse structure to both starting compounds",
+          "teachingEvidence": [
+            {
+              "sectionId": "ester-naming",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:4.41C:r4",
+          "origin": "editorial-decomposition",
+          "summary": "Carbonyl counted and displayed valencies",
+          "teachingEvidence": [
             {
               "sectionId": "ester-naming",
               "field": "paragraphs"
@@ -326,26 +874,25 @@
       ]
     },
     {
-      "parentId": "4CH1:issue3:4.5",
-      "officialReference": "4.5",
-      "pdfPage": 29,
-      "printedPage": 23,
+      "parentId": "4CH1:issue3:4.42C",
+      "officialReference": "4.42C",
+      "pdfPage": 32,
+      "printedPage": 26,
       "components": [
-        "1C",
         "2C"
       ],
       "sourceDecompositionStatus": "source-checked",
       "teachingAuditStatus": "partial",
       "substatementAuditComplete": false,
-      "scopeNote": "Own Issue 3 PDF29–30/printed23–24, references4.1–4.28 all both papers. Initial 26 partial lessons plus later linked formula/naming evidence; later families are audited separately. Whole-chapter and independent assessment review remain unfinished.",
+      "scopeNote": "Own Issue 3 PDF31–32/printed25–26, references4.29C–4.50C. Twenty-five original partial lessons; 18 Paper2C-only identities and four both-paper addition-polymer identities. No performed practical, human review or complete teaching claim.",
       "requirements": [
         {
-          "id": "4CH1:issue3:4.5:r1",
+          "id": "4CH1:issue3:4.42C:r1",
           "origin": "editorial-decomposition",
-          "summary": "Connected skeleton and normal valencies",
+          "summary": "Volatility and distinctive smells",
           "teachingEvidence": [
             {
-              "sectionId": "structural-isomers",
+              "sectionId": "ester-volatility-uses",
               "field": "paragraphs"
             }
           ],
@@ -357,12 +904,12 @@
           ]
         },
         {
-          "id": "4CH1:issue3:4.5:r2",
+          "id": "4CH1:issue3:4.42C:r2",
           "origin": "editorial-decomposition",
-          "summary": "Different structural connections and duplicate removal",
+          "summary": "Food flavouring and perfume uses",
           "teachingEvidence": [
             {
-              "sectionId": "structural-isomers",
+              "sectionId": "ester-volatility-uses",
               "field": "paragraphs"
             }
           ],
@@ -374,29 +921,12 @@
           ]
         },
         {
-          "id": "4CH1:issue3:4.5:r3",
+          "id": "4CH1:issue3:4.42C:r3",
           "origin": "editorial-decomposition",
-          "summary": "Displayed and structural C₄/C₅ examples with atom counts",
+          "summary": "No universal safety or unique identity inference",
           "teachingEvidence": [
             {
-              "sectionId": "alkane-branched-isomers",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.5:r4",
-          "origin": "editorial-decomposition",
-          "summary": "Family ambiguity not resolved by formula alone",
-          "teachingEvidence": [
-            {
-              "sectionId": "structural-isomers",
+              "sectionId": "ester-volatility-uses",
               "field": "paragraphs"
             }
           ],
@@ -410,26 +940,25 @@
       ]
     },
     {
-      "parentId": "4CH1:issue3:4.6",
-      "officialReference": "4.6",
-      "pdfPage": 29,
-      "printedPage": 23,
+      "parentId": "4CH1:issue3:4.43C",
+      "officialReference": "4.43C",
+      "pdfPage": 32,
+      "printedPage": 26,
       "components": [
-        "1C",
         "2C"
       ],
       "sourceDecompositionStatus": "source-checked",
       "teachingAuditStatus": "partial",
       "substatementAuditComplete": false,
-      "scopeNote": "Own Issue 3 PDF29–30/printed23–24, references4.1–4.28 all both papers. Initial 26 partial lessons plus later linked formula/naming evidence; later families are audited separately. Whole-chapter and independent assessment review remain unfinished.",
+      "scopeNote": "Own Issue 3 PDF31–32/printed25–26, references4.29C–4.50C. Twenty-five original partial lessons; 18 Paper2C-only identities and four both-paper addition-polymer identities. No performed practical, human review or complete teaching claim.",
       "requirements": [
         {
-          "id": "4CH1:issue3:4.6:r1",
+          "id": "4CH1:issue3:4.43C:r1",
           "origin": "editorial-decomposition",
-          "summary": "Substitution replaces a group",
+          "summary": "Named reactants, acid catalyst and controlled water bath",
           "teachingEvidence": [
             {
-              "sectionId": "organic-reaction-classes",
+              "sectionId": "ester-practical-plan",
               "field": "paragraphs"
             }
           ],
@@ -441,12 +970,12 @@
           ]
         },
         {
-          "id": "4CH1:issue3:4.6:r2",
+          "id": "4CH1:issue3:4.43C:r2",
           "origin": "editorial-decomposition",
-          "summary": "Addition across a multiple bond",
+          "summary": "Carbonate acid neutralization and gas release",
           "teachingEvidence": [
             {
-              "sectionId": "organic-reaction-classes",
+              "sectionId": "ester-practical-plan",
               "field": "paragraphs"
             }
           ],
@@ -458,29 +987,12 @@
           ]
         },
         {
-          "id": "4CH1:issue3:4.6:r3",
+          "id": "4CH1:issue3:4.43C:r3",
           "origin": "editorial-decomposition",
-          "summary": "Combustion and oxygen products",
+          "summary": "Method-specific separation/purity and supervision",
           "teachingEvidence": [
             {
-              "sectionId": "hydrocarbon-complete-combustion",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.6:r4",
-          "origin": "editorial-decomposition",
-          "summary": "No mandatory mechanism detail",
-          "teachingEvidence": [
-            {
-              "sectionId": "organic-reaction-classes",
+              "sectionId": "ester-practical-plan",
               "field": "paragraphs"
             }
           ],
@@ -494,10 +1006,10 @@
       ]
     },
     {
-      "parentId": "4CH1:issue3:4.7",
-      "officialReference": "4.7",
-      "pdfPage": 29,
-      "printedPage": 23,
+      "parentId": "4CH1:issue3:4.44",
+      "officialReference": "4.44",
+      "pdfPage": 32,
+      "printedPage": 26,
       "components": [
         "1C",
         "2C"
@@ -505,15 +1017,15 @@
       "sourceDecompositionStatus": "source-checked",
       "teachingAuditStatus": "partial",
       "substatementAuditComplete": false,
-      "scopeNote": "Own Issue 3 PDF29–30/printed23–24, references4.1–4.28 all both papers. Initial 26 partial lessons plus later linked formula/naming evidence; later families are audited separately. Whole-chapter and independent assessment review remain unfinished.",
+      "scopeNote": "Own Issue 3 PDF31–32/printed25–26, references4.29C–4.50C. Twenty-five original partial lessons; 18 Paper2C-only identities and four both-paper addition-polymer identities. No performed practical, human review or complete teaching claim.",
       "requirements": [
         {
-          "id": "4CH1:issue3:4.7:r1",
+          "id": "4CH1:issue3:4.44:r1",
           "origin": "editorial-decomposition",
-          "summary": "Crude oil mixture of hydrocarbons",
+          "summary": "Many small monomers joined in a polymer",
           "teachingEvidence": [
             {
-              "sectionId": "crude-mixture",
+              "sectionId": "addition-monomers",
               "field": "paragraphs"
             }
           ],
@@ -525,12 +1037,29 @@
           ]
         },
         {
-          "id": "4CH1:issue3:4.7:r2",
+          "id": "4CH1:issue3:4.44:r2",
           "origin": "editorial-decomposition",
-          "summary": "No unique molecular formula or fixed boiling point",
+          "summary": "C=C opening and preserved atoms in own examples",
           "teachingEvidence": [
             {
-              "sectionId": "crude-mixture",
+              "sectionId": "addition-monomers",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:4.44:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Repeat boundary and no water eliminated",
+          "teachingEvidence": [
+            {
+              "sectionId": "addition-monomers",
               "field": "paragraphs"
             }
           ],
@@ -544,10 +1073,10 @@
       ]
     },
     {
-      "parentId": "4CH1:issue3:4.8",
-      "officialReference": "4.8",
-      "pdfPage": 29,
-      "printedPage": 23,
+      "parentId": "4CH1:issue3:4.45",
+      "officialReference": "4.45",
+      "pdfPage": 32,
+      "printedPage": 26,
       "components": [
         "1C",
         "2C"
@@ -555,15 +1084,15 @@
       "sourceDecompositionStatus": "source-checked",
       "teachingAuditStatus": "partial",
       "substatementAuditComplete": false,
-      "scopeNote": "Own Issue 3 PDF29–30/printed23–24, references4.1–4.28 all both papers. Initial 26 partial lessons plus later linked formula/naming evidence; later families are audited separately. Whole-chapter and independent assessment review remain unfinished.",
+      "scopeNote": "Own Issue 3 PDF31–32/printed25–26, references4.29C–4.50C. Twenty-five original partial lessons; 18 Paper2C-only identities and four both-paper addition-polymer identities. No performed practical, human review or complete teaching claim.",
       "requirements": [
         {
-          "id": "4CH1:issue3:4.8:r1",
+          "id": "4CH1:issue3:4.45:r1",
           "origin": "editorial-decomposition",
-          "summary": "Heated oil and vaporized components",
+          "summary": "Polyethene repeat and outward bonds",
           "teachingEvidence": [
             {
-              "sectionId": "fractional-column",
+              "sectionId": "addition-repeat-drawings",
               "field": "paragraphs"
             }
           ],
@@ -575,12 +1104,12 @@
           ]
         },
         {
-          "id": "4CH1:issue3:4.8:r2",
+          "id": "4CH1:issue3:4.45:r2",
           "origin": "editorial-decomposition",
-          "summary": "Hot bottom and cooler top",
+          "summary": "Polypropene methyl branch and hydrogen count",
           "teachingEvidence": [
             {
-              "sectionId": "fractional-column",
+              "sectionId": "addition-repeat-drawings",
               "field": "paragraphs"
             }
           ],
@@ -592,12 +1121,12 @@
           ]
         },
         {
-          "id": "4CH1:issue3:4.8:r3",
+          "id": "4CH1:issue3:4.45:r3",
           "origin": "editorial-decomposition",
-          "summary": "Different condensation heights/boiling ranges",
+          "summary": "Polychloroethene chlorine retained",
           "teachingEvidence": [
             {
-              "sectionId": "fractional-column",
+              "sectionId": "addition-repeat-drawings",
               "field": "paragraphs"
             }
           ],
@@ -609,12 +1138,29 @@
           ]
         },
         {
-          "id": "4CH1:issue3:4.8:r4",
+          "id": "4CH1:issue3:4.45:r4",
           "origin": "editorial-decomposition",
-          "summary": "Fractions remain mixtures and separation not cracking",
+          "summary": "PTFE four fluorines retained",
           "teachingEvidence": [
             {
-              "sectionId": "crude-mixture",
+              "sectionId": "addition-repeat-drawings",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:4.45:r5",
+          "origin": "editorial-decomposition",
+          "summary": "Displayed every bond, brackets and outside n",
+          "teachingEvidence": [
+            {
+              "sectionId": "addition-repeat-drawings",
               "field": "paragraphs"
             }
           ],
@@ -628,10 +1174,10 @@
       ]
     },
     {
-      "parentId": "4CH1:issue3:4.9",
-      "officialReference": "4.9",
-      "pdfPage": 29,
-      "printedPage": 23,
+      "parentId": "4CH1:issue3:4.46",
+      "officialReference": "4.46",
+      "pdfPage": 32,
+      "printedPage": 26,
       "components": [
         "1C",
         "2C"
@@ -639,15 +1185,15 @@
       "sourceDecompositionStatus": "source-checked",
       "teachingAuditStatus": "partial",
       "substatementAuditComplete": false,
-      "scopeNote": "Own Issue 3 PDF29–30/printed23–24, references4.1–4.28 all both papers. Initial 26 partial lessons plus later linked formula/naming evidence; later families are audited separately. Whole-chapter and independent assessment review remain unfinished.",
+      "scopeNote": "Own Issue 3 PDF31–32/printed25–26, references4.29C–4.50C. Twenty-five original partial lessons; 18 Paper2C-only identities and four both-paper addition-polymer identities. No performed practical, human review or complete teaching claim.",
       "requirements": [
         {
-          "id": "4CH1:issue3:4.9:r1",
+          "id": "4CH1:issue3:4.46:r1",
           "origin": "editorial-decomposition",
-          "summary": "Refinery gases cooking/heating",
+          "summary": "Repeat to double-bond monomer",
           "teachingEvidence": [
             {
-              "sectionId": "fraction-uses",
+              "sectionId": "recover-addition-monomer",
               "field": "paragraphs"
             }
           ],
@@ -659,12 +1205,12 @@
           ]
         },
         {
-          "id": "4CH1:issue3:4.9:r2",
+          "id": "4CH1:issue3:4.46:r2",
           "origin": "editorial-decomposition",
-          "summary": "Gasoline/petrol car engines",
+          "summary": "Monomer to chain with preserved side groups",
           "teachingEvidence": [
             {
-              "sectionId": "fraction-uses",
+              "sectionId": "recover-addition-monomer",
               "field": "paragraphs"
             }
           ],
@@ -676,63 +1222,12 @@
           ]
         },
         {
-          "id": "4CH1:issue3:4.9:r3",
+          "id": "4CH1:issue3:4.46:r3",
           "origin": "editorial-decomposition",
-          "summary": "Kerosene aircraft fuel",
+          "summary": "Backbone distinguished from branch and scope",
           "teachingEvidence": [
             {
-              "sectionId": "fraction-uses",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.9:r4",
-          "origin": "editorial-decomposition",
-          "summary": "Diesel suitable engine fuel",
-          "teachingEvidence": [
-            {
-              "sectionId": "fraction-uses",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.9:r5",
-          "origin": "editorial-decomposition",
-          "summary": "Fuel oil large-scale heating/ship/power uses",
-          "teachingEvidence": [
-            {
-              "sectionId": "fraction-uses",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.9:r6",
-          "origin": "editorial-decomposition",
-          "summary": "Bitumen road/roof uses",
-          "teachingEvidence": [
-            {
-              "sectionId": "fraction-uses",
+              "sectionId": "recover-addition-monomer",
               "field": "paragraphs"
             }
           ],
@@ -746,10 +1241,10 @@
       ]
     },
     {
-      "parentId": "4CH1:issue3:4.10",
-      "officialReference": "4.10",
-      "pdfPage": 29,
-      "printedPage": 23,
+      "parentId": "4CH1:issue3:4.47",
+      "officialReference": "4.47",
+      "pdfPage": 32,
+      "printedPage": 26,
       "components": [
         "1C",
         "2C"
@@ -757,15 +1252,15 @@
       "sourceDecompositionStatus": "source-checked",
       "teachingAuditStatus": "partial",
       "substatementAuditComplete": false,
-      "scopeNote": "Own Issue 3 PDF29–30/printed23–24, references4.1–4.28 all both papers. Initial 26 partial lessons plus later linked formula/naming evidence; later families are audited separately. Whole-chapter and independent assessment review remain unfinished.",
+      "scopeNote": "Own Issue 3 PDF31–32/printed25–26, references4.29C–4.50C. Twenty-five original partial lessons; 18 Paper2C-only identities and four both-paper addition-polymer identities. No performed practical, human review or complete teaching claim.",
       "requirements": [
         {
-          "id": "4CH1:issue3:4.10:r1",
+          "id": "4CH1:issue3:4.47:r1",
           "origin": "editorial-decomposition",
-          "summary": "Colour trend in the mixtures",
+          "summary": "Inertness and inability to biodegrade in required examples",
           "teachingEvidence": [
             {
-              "sectionId": "fraction-trends",
+              "sectionId": "addition-disposal",
               "field": "paragraphs"
             }
           ],
@@ -777,12 +1272,12 @@
           ]
         },
         {
-          "id": "4CH1:issue3:4.10:r2",
+          "id": "4CH1:issue3:4.47:r2",
           "origin": "editorial-decomposition",
-          "summary": "Boiling range and intermolecular attractions",
+          "summary": "Persistence versus physical fragmentation",
           "teachingEvidence": [
             {
-              "sectionId": "fraction-trends",
+              "sectionId": "addition-disposal",
               "field": "paragraphs"
             }
           ],
@@ -794,12 +1289,12 @@
           ]
         },
         {
-          "id": "4CH1:issue3:4.10:r3",
+          "id": "4CH1:issue3:4.47:r3",
           "origin": "editorial-decomposition",
-          "summary": "Viscosity/flow trend at comparable temperature",
+          "summary": "Toxic burning products depend on composition/conditions",
           "teachingEvidence": [
             {
-              "sectionId": "fraction-trends",
+              "sectionId": "addition-disposal",
               "field": "paragraphs"
             }
           ],
@@ -813,26 +1308,25 @@
       ]
     },
     {
-      "parentId": "4CH1:issue3:4.11",
-      "officialReference": "4.11",
-      "pdfPage": 29,
-      "printedPage": 23,
+      "parentId": "4CH1:issue3:4.48C",
+      "officialReference": "4.48C",
+      "pdfPage": 32,
+      "printedPage": 26,
       "components": [
-        "1C",
         "2C"
       ],
       "sourceDecompositionStatus": "source-checked",
       "teachingAuditStatus": "partial",
       "substatementAuditComplete": false,
-      "scopeNote": "Own Issue 3 PDF29–30/printed23–24, references4.1–4.28 all both papers. Initial 26 partial lessons plus later linked formula/naming evidence; later families are audited separately. Whole-chapter and independent assessment review remain unfinished.",
+      "scopeNote": "Own Issue 3 PDF31–32/printed25–26, references4.29C–4.50C. Twenty-five original partial lessons; 18 Paper2C-only identities and four both-paper addition-polymer identities. No performed practical, human review or complete teaching claim.",
       "requirements": [
         {
-          "id": "4CH1:issue3:4.11:r1",
+          "id": "4CH1:issue3:4.48C:r1",
           "origin": "editorial-decomposition",
-          "summary": "Heat released on burning defines fuel",
+          "summary": "Diacid and diol two functional ends",
           "teachingEvidence": [
             {
-              "sectionId": "fuel-energy",
+              "sectionId": "polyester-condensation",
               "field": "paragraphs"
             }
           ],
@@ -844,12 +1338,29 @@
           ]
         },
         {
-          "id": "4CH1:issue3:4.11:r2",
+          "id": "4CH1:issue3:4.48C:r2",
           "origin": "editorial-decomposition",
-          "summary": "Ignition barrier distinct from net energy",
+          "summary": "Polyester ester links and water eliminated",
           "teachingEvidence": [
             {
-              "sectionId": "fuel-energy",
+              "sectionId": "polyester-condensation",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:4.48C:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Atom fragments and difference from addition",
+          "teachingEvidence": [
+            {
+              "sectionId": "polyester-condensation",
               "field": "paragraphs"
             }
           ],
@@ -863,26 +1374,25 @@
       ]
     },
     {
-      "parentId": "4CH1:issue3:4.12",
-      "officialReference": "4.12",
-      "pdfPage": 29,
-      "printedPage": 23,
+      "parentId": "4CH1:issue3:4.49C",
+      "officialReference": "4.49C",
+      "pdfPage": 32,
+      "printedPage": 26,
       "components": [
-        "1C",
         "2C"
       ],
       "sourceDecompositionStatus": "source-checked",
       "teachingAuditStatus": "partial",
       "substatementAuditComplete": false,
-      "scopeNote": "Own Issue 3 PDF29–30/printed23–24, references4.1–4.28 all both papers. Initial 26 partial lessons plus later linked formula/naming evidence; later families are audited separately. Whole-chapter and independent assessment review remain unfinished.",
+      "scopeNote": "Own Issue 3 PDF31–32/printed25–26, references4.29C–4.50C. Twenty-five original partial lessons; 18 Paper2C-only identities and four both-paper addition-polymer identities. No performed practical, human review or complete teaching claim.",
       "requirements": [
         {
-          "id": "4CH1:issue3:4.12:r1",
+          "id": "4CH1:issue3:4.49C:r1",
           "origin": "editorial-decomposition",
-          "summary": "Complete combustion CO₂/water and balanced counts",
+          "summary": "Required ethanedioic acid/ethanediol monomers",
           "teachingEvidence": [
             {
-              "sectionId": "hydrocarbon-complete-combustion",
+              "sectionId": "polyester-repeat-drawing",
               "field": "paragraphs"
             }
           ],
@@ -894,12 +1404,12 @@
           ]
         },
         {
-          "id": "4CH1:issue3:4.12:r2",
+          "id": "4CH1:issue3:4.49C:r2",
           "origin": "editorial-decomposition",
-          "summary": "Incomplete CO/carbon/water possibilities and mixtures",
+          "summary": "Structural and full displayed repeat connections",
           "teachingEvidence": [
             {
-              "sectionId": "hydrocarbon-incomplete-combustion",
+              "sectionId": "polyester-repeat-drawing",
               "field": "paragraphs"
             }
           ],
@@ -911,12 +1421,29 @@
           ]
         },
         {
-          "id": "4CH1:issue3:4.12:r3",
+          "id": "4CH1:issue3:4.49C:r3",
           "origin": "editorial-decomposition",
-          "summary": "Oxygen supply and inference limits",
+          "summary": "Two carbonyls and correct boundary link",
           "teachingEvidence": [
             {
-              "sectionId": "hydrocarbon-incomplete-combustion",
+              "sectionId": "polyester-repeat-drawing",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar structure/data and response calibration pending.",
+            "Whole-chapter skills and human educational review unfinished."
+          ]
+        },
+        {
+          "id": "4CH1:issue3:4.49C:r4",
+          "origin": "editorial-decomposition",
+          "summary": "Water per ester link and repeat/end-group distinction",
+          "teachingEvidence": [
+            {
+              "sectionId": "polyester-repeat-drawing",
               "field": "paragraphs"
             }
           ],
@@ -930,26 +1457,25 @@
       ]
     },
     {
-      "parentId": "4CH1:issue3:4.13",
-      "officialReference": "4.13",
-      "pdfPage": 30,
-      "printedPage": 24,
+      "parentId": "4CH1:issue3:4.50C",
+      "officialReference": "4.50C",
+      "pdfPage": 32,
+      "printedPage": 26,
       "components": [
-        "1C",
         "2C"
       ],
       "sourceDecompositionStatus": "source-checked",
       "teachingAuditStatus": "partial",
       "substatementAuditComplete": false,
-      "scopeNote": "Own Issue 3 PDF29–30/printed23–24, references4.1–4.28 all both papers. Initial 26 partial lessons plus later linked formula/naming evidence; later families are audited separately. Whole-chapter and independent assessment review remain unfinished.",
+      "scopeNote": "Own Issue 3 PDF31–32/printed25–26, references4.29C–4.50C. Twenty-five original partial lessons; 18 Paper2C-only identities and four both-paper addition-polymer identities. No performed practical, human review or complete teaching claim.",
       "requirements": [
         {
-          "id": "4CH1:issue3:4.13:r1",
+          "id": "4CH1:issue3:4.50C:r1",
           "origin": "editorial-decomposition",
-          "summary": "Blood oxygen-transport capacity reduced",
+          "summary": "Some biopolyesters are biodegradable",
           "teachingEvidence": [
             {
-              "sectionId": "carbon-monoxide-transport",
+              "sectionId": "biopolyester-limits",
               "field": "paragraphs"
             }
           ],
@@ -961,45 +1487,12 @@
           ]
         },
         {
-          "id": "4CH1:issue3:4.13:r2",
+          "id": "4CH1:issue3:4.50C:r2",
           "origin": "editorial-decomposition",
-          "summary": "CO distinct from soot and CO₂; haemoglobin not required",
+          "summary": "Conditions and no universal rate/environment inference",
           "teachingEvidence": [
             {
-              "sectionId": "carbon-monoxide-transport",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        }
-      ]
-    },
-    {
-      "parentId": "4CH1:issue3:4.14",
-      "officialReference": "4.14",
-      "pdfPage": 30,
-      "printedPage": 24,
-      "components": [
-        "1C",
-        "2C"
-      ],
-      "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Own Issue 3 PDF29–30/printed23–24, references4.1–4.28 all both papers. Initial 26 partial lessons plus later linked formula/naming evidence; later families are audited separately. Whole-chapter and independent assessment review remain unfinished.",
-      "requirements": [
-        {
-          "id": "4CH1:issue3:4.14:r1",
-          "origin": "editorial-decomposition",
-          "summary": "High engine temperature permits nitrogen/oxygen reaction",
-          "teachingEvidence": [
-            {
-              "sectionId": "combustion-other-oxides",
+              "sectionId": "biopolyester-limits",
               "field": "paragraphs"
             }
           ],
@@ -1011,848 +1504,12 @@
           ]
         },
         {
-          "id": "4CH1:issue3:4.14:r2",
+          "id": "4CH1:issue3:4.50C:r3",
           "origin": "editorial-decomposition",
-          "summary": "Air nitrogen rather than assumed fuel nitrogen source",
+          "summary": "Bio-derived raw material distinct from biodegradation",
           "teachingEvidence": [
             {
-              "sectionId": "combustion-other-oxides",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        }
-      ]
-    },
-    {
-      "parentId": "4CH1:issue3:4.15",
-      "officialReference": "4.15",
-      "pdfPage": 30,
-      "printedPage": 24,
-      "components": [
-        "1C",
-        "2C"
-      ],
-      "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Own Issue 3 PDF29–30/printed23–24, references4.1–4.28 all both papers. Initial 26 partial lessons plus later linked formula/naming evidence; later families are audited separately. Whole-chapter and independent assessment review remain unfinished.",
-      "requirements": [
-        {
-          "id": "4CH1:issue3:4.15:r1",
-          "origin": "editorial-decomposition",
-          "summary": "Sulfur-bearing impurity oxidation to SO₂",
-          "teachingEvidence": [
-            {
-              "sectionId": "combustion-other-oxides",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.15:r2",
-          "origin": "editorial-decomposition",
-          "summary": "Pure hydrocarbon formula has no sulfur",
-          "teachingEvidence": [
-            {
-              "sectionId": "combustion-other-oxides",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        }
-      ]
-    },
-    {
-      "parentId": "4CH1:issue3:4.16",
-      "officialReference": "4.16",
-      "pdfPage": 30,
-      "printedPage": 24,
-      "components": [
-        "1C",
-        "2C"
-      ],
-      "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Own Issue 3 PDF29–30/printed23–24, references4.1–4.28 all both papers. Initial 26 partial lessons plus later linked formula/naming evidence; later families are audited separately. Whole-chapter and independent assessment review remain unfinished.",
-      "requirements": [
-        {
-          "id": "4CH1:issue3:4.16:r1",
-          "origin": "editorial-decomposition",
-          "summary": "SO₂ and nitrogen oxides atmospheric/water acid formation",
-          "teachingEvidence": [
-            {
-              "sectionId": "acid-rain-formation",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.16:r2",
-          "origin": "editorial-decomposition",
-          "summary": "Acidic substances enter rainwater",
-          "teachingEvidence": [
-            {
-              "sectionId": "acid-rain-formation",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.16:r3",
-          "origin": "editorial-decomposition",
-          "summary": "Acid-rain pathway distinct from warming",
-          "teachingEvidence": [
-            {
-              "sectionId": "acid-rain-formation",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        }
-      ]
-    },
-    {
-      "parentId": "4CH1:issue3:4.17",
-      "officialReference": "4.17",
-      "pdfPage": 30,
-      "printedPage": 24,
-      "components": [
-        "1C",
-        "2C"
-      ],
-      "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Own Issue 3 PDF29–30/printed23–24, references4.1–4.28 all both papers. Initial 26 partial lessons plus later linked formula/naming evidence; later families are audited separately. Whole-chapter and independent assessment review remain unfinished.",
-      "requirements": [
-        {
-          "id": "4CH1:issue3:4.17:r1",
-          "origin": "editorial-decomposition",
-          "summary": "Long-chain alkane to shorter alkanes/alkenes",
-          "teachingEvidence": [
-            {
-              "sectionId": "cracking-process",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.17:r2",
-          "origin": "editorial-decomposition",
-          "summary": "Silica or alumina and 600–700°C own conditions",
-          "teachingEvidence": [
-            {
-              "sectionId": "cracking-process",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.17:r3",
-          "origin": "editorial-decomposition",
-          "summary": "Atom-balanced possible product model",
-          "teachingEvidence": [
-            {
-              "sectionId": "cracking-process",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        }
-      ]
-    },
-    {
-      "parentId": "4CH1:issue3:4.18",
-      "officialReference": "4.18",
-      "pdfPage": 30,
-      "printedPage": 24,
-      "components": [
-        "1C",
-        "2C"
-      ],
-      "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Own Issue 3 PDF29–30/printed23–24, references4.1–4.28 all both papers. Initial 26 partial lessons plus later linked formula/naming evidence; later families are audited separately. Whole-chapter and independent assessment review remain unfinished.",
-      "requirements": [
-        {
-          "id": "4CH1:issue3:4.18:r1",
-          "origin": "editorial-decomposition",
-          "summary": "Mismatch between fraction supply and demand",
-          "teachingEvidence": [
-            {
-              "sectionId": "cracking-demand",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.18:r2",
-          "origin": "editorial-decomposition",
-          "summary": "Shorter fuels and alkene feedstock uses",
-          "teachingEvidence": [
-            {
-              "sectionId": "cracking-demand",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.18:r3",
-          "origin": "editorial-decomposition",
-          "summary": "Chemical conversion beyond physical separation",
-          "teachingEvidence": [
-            {
-              "sectionId": "cracking-demand",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        }
-      ]
-    },
-    {
-      "parentId": "4CH1:issue3:4.19",
-      "officialReference": "4.19",
-      "pdfPage": 30,
-      "printedPage": 24,
-      "components": [
-        "1C",
-        "2C"
-      ],
-      "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Own Issue 3 PDF29–30/printed23–24, references4.1–4.28 all both papers. Initial 26 partial lessons plus later linked formula/naming evidence; later families are audited separately. Whole-chapter and independent assessment review remain unfinished.",
-      "requirements": [
-        {
-          "id": "4CH1:issue3:4.19:r1",
-          "origin": "editorial-decomposition",
-          "summary": "CₙH₂ₙ₊₂ for acyclic alkanes",
-          "teachingEvidence": [
-            {
-              "sectionId": "alkane-formula",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.19:r2",
-          "origin": "editorial-decomposition",
-          "summary": "Correct carbon/hydrogen count substitution",
-          "teachingEvidence": [
-            {
-              "sectionId": "alkane-formula",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        }
-      ]
-    },
-    {
-      "parentId": "4CH1:issue3:4.20",
-      "officialReference": "4.20",
-      "pdfPage": 30,
-      "printedPage": 24,
-      "components": [
-        "1C",
-        "2C"
-      ],
-      "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Own Issue 3 PDF29–30/printed23–24, references4.1–4.28 all both papers. Initial 26 partial lessons plus later linked formula/naming evidence; later families are audited separately. Whole-chapter and independent assessment review remain unfinished.",
-      "requirements": [
-        {
-          "id": "4CH1:issue3:4.20:r1",
-          "origin": "editorial-decomposition",
-          "summary": "Saturation means no carbon-carbon multiple bond",
-          "teachingEvidence": [
-            {
-              "sectionId": "alkane-formula",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.20:r2",
-          "origin": "editorial-decomposition",
-          "summary": "Molecular saturation distinct from solution saturation",
-          "teachingEvidence": [
-            {
-              "sectionId": "alkane-formula",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        }
-      ]
-    },
-    {
-      "parentId": "4CH1:issue3:4.21",
-      "officialReference": "4.21",
-      "pdfPage": 30,
-      "printedPage": 24,
-      "components": [
-        "1C",
-        "2C"
-      ],
-      "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Own Issue 3 PDF29–30/printed23–24, references4.1–4.28 all both papers. Initial 26 partial lessons plus later linked formula/naming evidence; later families are audited separately. Whole-chapter and independent assessment review remain unfinished.",
-      "requirements": [
-        {
-          "id": "4CH1:issue3:4.21:r1",
-          "origin": "editorial-decomposition",
-          "summary": "First five unbranched names and structural formulas",
-          "teachingEvidence": [
-            {
-              "sectionId": "alkane-drawings",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.21:r2",
-          "origin": "editorial-decomposition",
-          "summary": "Every C–H/C–C bond displayed with correct valency",
-          "teachingEvidence": [
-            {
-              "sectionId": "alkane-drawings",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.21:r3",
-          "origin": "editorial-decomposition",
-          "summary": "Branched drawing examples and unbranched naming limit",
-          "teachingEvidence": [
-            {
-              "sectionId": "alkane-branched-isomers",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        }
-      ]
-    },
-    {
-      "parentId": "4CH1:issue3:4.22",
-      "officialReference": "4.22",
-      "pdfPage": 30,
-      "printedPage": 24,
-      "components": [
-        "1C",
-        "2C"
-      ],
-      "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Own Issue 3 PDF29–30/printed23–24, references4.1–4.28 all both papers. Initial 26 partial lessons plus later linked formula/naming evidence; later families are audited separately. Whole-chapter and independent assessment review remain unfinished.",
-      "requirements": [
-        {
-          "id": "4CH1:issue3:4.22:r1",
-          "origin": "editorial-decomposition",
-          "summary": "Halogen and ultraviolet condition",
-          "teachingEvidence": [
-            {
-              "sectionId": "alkane-monosubstitution",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.22:r2",
-          "origin": "editorial-decomposition",
-          "summary": "One H replaced and hydrogen halide formed",
-          "teachingEvidence": [
-            {
-              "sectionId": "alkane-monosubstitution",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.22:r3",
-          "origin": "editorial-decomposition",
-          "summary": "Balanced mono-substitution and scope limits",
-          "teachingEvidence": [
-            {
-              "sectionId": "alkane-monosubstitution",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        }
-      ]
-    },
-    {
-      "parentId": "4CH1:issue3:4.23",
-      "officialReference": "4.23",
-      "pdfPage": 30,
-      "printedPage": 24,
-      "components": [
-        "1C",
-        "2C"
-      ],
-      "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Own Issue 3 PDF29–30/printed23–24, references4.1–4.28 all both papers. Initial 26 partial lessons plus later linked formula/naming evidence; later families are audited separately. Whole-chapter and independent assessment review remain unfinished.",
-      "requirements": [
-        {
-          "id": "4CH1:issue3:4.23:r1",
-          "origin": "editorial-decomposition",
-          "summary": "C=C functional group in own scope",
-          "teachingEvidence": [
-            {
-              "sectionId": "alkene-formula",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        }
-      ]
-    },
-    {
-      "parentId": "4CH1:issue3:4.24",
-      "officialReference": "4.24",
-      "pdfPage": 30,
-      "printedPage": 24,
-      "components": [
-        "1C",
-        "2C"
-      ],
-      "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Own Issue 3 PDF29–30/printed23–24, references4.1–4.28 all both papers. Initial 26 partial lessons plus later linked formula/naming evidence; later families are audited separately. Whole-chapter and independent assessment review remain unfinished.",
-      "requirements": [
-        {
-          "id": "4CH1:issue3:4.24:r1",
-          "origin": "editorial-decomposition",
-          "summary": "CₙH₂ₙ for acyclic one-double-bond hydrocarbons",
-          "teachingEvidence": [
-            {
-              "sectionId": "alkene-formula",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.24:r2",
-          "origin": "editorial-decomposition",
-          "summary": "Formula/structure qualification",
-          "teachingEvidence": [
-            {
-              "sectionId": "alkene-formula",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        }
-      ]
-    },
-    {
-      "parentId": "4CH1:issue3:4.25",
-      "officialReference": "4.25",
-      "pdfPage": 30,
-      "printedPage": 24,
-      "components": [
-        "1C",
-        "2C"
-      ],
-      "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Own Issue 3 PDF29–30/printed23–24, references4.1–4.28 all both papers. Initial 26 partial lessons plus later linked formula/naming evidence; later families are audited separately. Whole-chapter and independent assessment review remain unfinished.",
-      "requirements": [
-        {
-          "id": "4CH1:issue3:4.25:r1",
-          "origin": "editorial-decomposition",
-          "summary": "Unsaturation and C=C addition",
-          "teachingEvidence": [
-            {
-              "sectionId": "alkene-formula",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        }
-      ]
-    },
-    {
-      "parentId": "4CH1:issue3:4.26",
-      "officialReference": "4.26",
-      "pdfPage": 30,
-      "printedPage": 24,
-      "components": [
-        "1C",
-        "2C"
-      ],
-      "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Own Issue 3 PDF29–30/printed23–24, references4.1–4.28 all both papers. Initial 26 partial lessons plus later linked formula/naming evidence; later families are audited separately. Whole-chapter and independent assessment review remain unfinished.",
-      "requirements": [
-        {
-          "id": "4CH1:issue3:4.26:r1",
-          "origin": "editorial-decomposition",
-          "summary": "Ethene/propene structural and displayed formulas",
-          "teachingEvidence": [
-            {
-              "sectionId": "alkene-drawings",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.26:r2",
-          "origin": "editorial-decomposition",
-          "summary": "But-1-ene/but-2-ene positions and names",
-          "teachingEvidence": [
-            {
-              "sectionId": "alkene-drawings",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.26:r3",
-          "origin": "editorial-decomposition",
-          "summary": "Branched C₄ connectivity and valency",
-          "teachingEvidence": [
-            {
-              "sectionId": "alkene-drawings",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.26:r4",
-          "origin": "editorial-decomposition",
-          "summary": "No required E/Z or cis/trans notation",
-          "teachingEvidence": [
-            {
-              "sectionId": "alkene-drawings",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        }
-      ]
-    },
-    {
-      "parentId": "4CH1:issue3:4.27",
-      "officialReference": "4.27",
-      "pdfPage": 30,
-      "printedPage": 24,
-      "components": [
-        "1C",
-        "2C"
-      ],
-      "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Own Issue 3 PDF29–30/printed23–24, references4.1–4.28 all both papers. Initial 26 partial lessons plus later linked formula/naming evidence; later families are audited separately. Whole-chapter and independent assessment review remain unfinished.",
-      "requirements": [
-        {
-          "id": "4CH1:issue3:4.27:r1",
-          "origin": "editorial-decomposition",
-          "summary": "Br₂ across C=C to dibromoalkane",
-          "teachingEvidence": [
-            {
-              "sectionId": "bromine-addition",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.27:r2",
-          "origin": "editorial-decomposition",
-          "summary": "One Br on each original double-bond carbon",
-          "teachingEvidence": [
-            {
-              "sectionId": "bromine-addition",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.27:r3",
-          "origin": "editorial-decomposition",
-          "summary": "Product structure and balanced atom model",
-          "teachingEvidence": [
-            {
-              "sectionId": "bromine-addition",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        }
-      ]
-    },
-    {
-      "parentId": "4CH1:issue3:4.28",
-      "officialReference": "4.28",
-      "pdfPage": 30,
-      "printedPage": 24,
-      "components": [
-        "1C",
-        "2C"
-      ],
-      "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Own Issue 3 PDF29–30/printed23–24, references4.1–4.28 all both papers. Initial 26 partial lessons plus later linked formula/naming evidence; later families are audited separately. Whole-chapter and independent assessment review remain unfinished.",
-      "requirements": [
-        {
-          "id": "4CH1:issue3:4.28:r1",
-          "origin": "editorial-decomposition",
-          "summary": "Bromine-water orange/brown to colourless alkene response",
-          "teachingEvidence": [
-            {
-              "sectionId": "bromine-water-test",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.28:r2",
-          "origin": "editorial-decomposition",
-          "summary": "Alkane comparison without UV and matched conditions",
-          "teachingEvidence": [
-            {
-              "sectionId": "bromine-water-test",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.28:r3",
-          "origin": "editorial-decomposition",
-          "summary": "Mixing/phase transfer/excess reagent limits",
-          "teachingEvidence": [
-            {
-              "sectionId": "bromine-water-test",
-              "field": "paragraphs"
-            }
-          ],
-          "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Independent unfamiliar structure/data and response calibration pending.",
-            "Whole-chapter skills and human educational review unfinished."
-          ]
-        },
-        {
-          "id": "4CH1:issue3:4.28:r4",
-          "origin": "editorial-decomposition",
-          "summary": "Restricted candidates and no exact identity/purity inference",
-          "teachingEvidence": [
-            {
-              "sectionId": "bromine-water-test",
+              "sectionId": "biopolyester-limits",
               "field": "paragraphs"
             }
           ],

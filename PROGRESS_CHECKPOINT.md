@@ -1,17 +1,15 @@
 # Current checkpoint — 6 October 2026
 
-Read research/checkpoints/2026-10-06-ORGANIC-FOUNDATIONS.md first. Resume the latest local commit without restarting, resetting, discarding history or changing the saved UI.
+Read research/checkpoints/2026-10-06-ORGANIC-FAMILIES-POLYMERS.md first. Preserve latest local commit, history and UI; never reset or discard work.
 
-Organic Chemistry now has 26 original partial lessons, 13 displayed structures and four diagrams for references 4.1–4.28, all both papers. Physical Chemistry has 27 partial lessons across all 22 identities. Later alcohols, acids, esters and polymers are the next unfinished phase.
+Chemistry has203 partial teaching sections in four notes. All182 own numbered identities/page references reconcile with no missing references, but teaching and assessments remain partial. Organic now51 sections with alcohol, acid, ester and polymer teaching, five new diagrams and22 new reviewed identities. Exact paper applicability retained:18only2C/fourboth in this batch.
 
-Totals: 757 sections / 29 partial note documents / 36 routes; 688 reviewed parent identities / 672 partial audits / 2,146 editorial requirements / 1,034 partial links. Chemistry: 178 sections / four notes / 160 identities and audits / 535 requirements. Seven obtained QP/MS pairs; zero fully processed papers, complete chapters/points or active templates. Seven provisional offline families; live registry empty. Raw manifests unchanged.
+Totals:782 sections /29 partial note documents /36 routes;710 reviewed identities /694 partial audits /2,215 editorial requirements /1,065 partial links. Seven obtained QP/MS pairs; zero fully processed papers, complete chapters/points or active templates. Seven provisional offline families; live registry empty. Raw indexed-only manifests unchanged.
 
-144 tests, typecheck, lint, 14 research checks, content/evidence, isolated D1, final build and 99-file public scan pass. Four new diagrams, 615 px reader without overflow and exact 28 paper labels verified. Smaller mobile, first-frame and hosted verification remain pending. No Sites version, deployment or public URL.
+144 tests, types, lint,14 research checks, content/evidence, isolated D1, build and104-file public scan pass. Five diagrams, settled615px anchor, paper labels and three polyester search links verified. Initial anchor settling, smaller/mobile and hosted verification pending. No Sites version, deployment or public URL.
 
-GitHub d37f729 exactly mirrors local c25f08c. Commit/sync this newer phase non-force and verify the whole tree including all diagrams. Check work/github-sync/ for newer proof before treating frozen sync wording as current.
+GitHub5a65cbe exactly mirrors saved local5d0b0c2. Sync this newer phase non-force and verify the whole tree; inspect work/github-sync proof for a newer resolved sync. Next: remaining Human Biology/English/Maths curriculum, paper historical/skills audits and independent template calibration. Keep AI last.
 
-Next: own 4.29C–4.50C lessons/audits, remaining curriculum, historical/whole-paper skills and independent template calibration. Keep AI last. Test/build before Sites version/deployment. Never consume a reset.
-
-Latest user instruction requests faster useful work until weekly exhaustion, overriding historical 5% gates for this run. Last checked: 53% five-hour / 93% weekly remaining, ordinary usage allowed. Save phases and stop if actual usage blocks further progress.
+User requests faster useful work until weekly exhaustion override historical5% gates for this run. Last checked40%five-hour/91%weekly remaining; ordinary usage allowed. No reset consumed. Save phases and stop if actual usage blocks work.
 
 Older entry text is preserved in research/checkpoints/archive/2026-10-06-PROGRESS-HISTORY.md and 2026-10-06-CONTINUE-HISTORY.md. Earlier counts/gates are historical; individual checkpoints and Git history remain intact.

@@ -1,3 +1,4 @@
+import chemistryOrganicFamilies from '../research/curriculum-audits/4CH1-organic-families-polymers.json' with { type: 'json' };
 import chemistryOrganic from '../research/curriculum-audits/4CH1-organic-foundations.json' with { type: 'json' };
 import chemistryPhysical from '../research/curriculum-audits/4CH1-physical.json' with { type: 'json' };
 import chemistryTests from '../research/curriculum-audits/4CH1-chemical-tests.json' with { type: 'json' };
@@ -77,6 +78,7 @@ import mathsPolynomials from '../research/curriculum-audits/4MB1-polynomials-and
 
 // These bounded audits link partial teaching; they do not promote completion.
 export const curriculumAudits = [
+  chemistryOrganicFamilies,
   chemistryOrganic,
   chemistryPhysical,
   chemistryTests,

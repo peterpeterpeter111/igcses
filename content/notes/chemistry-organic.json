@@ -7,7 +7,9 @@
   "sourceId": "4CH1-spec",
   "sourcePages": [
     29,
-    30
+    30,
+    31,
+    32
   ],
   "prerequisites": [
     "Carbon has four and hydrogen one bond contribution in these normal structures.",
@@ -17,7 +19,9 @@
   "goals": [
     "Read formula types, simple names and distinct structural connections.",
     "Explain oil separation, named fraction uses, combustion and the need for cracking.",
-    "Draw and distinguish the specified alkanes and alkenes with the stated reaction conditions."
+    "Draw and distinguish the specified alkanes and alkenes with the stated reaction conditions.",
+    "Explain the specified alcohol, carboxylic acid and ester routes without mixing conditions.",
+    "Draw the required addition and polyester repeat units and trace each monomer fragment."
   ],
   "supportingSources": [
     {
@@ -56,6 +60,29 @@
       "url": "https://edu.rsc.org/resources/investigate-organic-reaction-mechanisms/383.article",
       "sectionIds": [
         "alkane-monosubstitution"
+      ]
+    },
+    {
+      "title": "Pearson core practical guide: PDF138/printed136, selected ester preparation purposes",
+      "url": "https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Biology/2017/teaching-and-learning-materials/biology-chemistry-physics-core-practical-guide.pdf",
+      "sectionIds": [
+        "ester-practical-plan"
+      ]
+    },
+    {
+      "title": "RSC: indexed small-scale ester method overview",
+      "url": "https://edu.rsc.org/experiments/making-esters-from-alcohols-and-acids/1743.article",
+      "sectionIds": [
+        "ester-practical-plan"
+      ]
+    },
+    {
+      "title": "IUPAC brief guide: selected alcohol, acid and ester nomenclature",
+      "url": "https://iupac.org/wp-content/uploads/2021/06/Organic-Brief-Guide-brochure_v1.1_June2021.pdf",
+      "sectionIds": [
+        "alcohol-drawings",
+        "carboxylic-drawings",
+        "ester-naming"
       ]
     }
   ],
@@ -174,7 +201,7 @@
       "paragraphs": [
         "For the relevant simple chains, learn the first six carbon-count roots: meth- for one, eth- for two, prop- for three, but- for four, pent- for five and hex- for six. Methane, ethane, propane, butane, pentane and hexane are the corresponding unbranched alkanes. The specification expects relevant names up to six carbons, while individual drawing requirements have their own smaller limits.",
         "For a simple unbranched alkene, use -ene and number to give the C=C bond the lower position. CH₂=CHCH₂CH₃ is but-1-ene; CH₃CH=CHCH₃ is but-2-ene. The number names the first carbon of the double bond, not a count of double bonds.",
-        "A branched structure needs a suitable parent chain and positions for substituents. CH₃CH(CH₃)CH₂CH₃ has a four-carbon longest chain and a methyl branch at carbon 2, hence 2-methylbutane. Its total five carbons do not make its parent chain pentane. Naming the later oxygen-containing families requires their additional suffix rules, which remain unfinished in this initial organic batch."
+        "Alcohol names use the -ol ending, carboxylic acid names the -oic acid ending, and simple ester names join the alcohol-derived alkyl name with the acid-derived alkanoate name. The later drawing and ester-naming lessons show the required named sets and how to trace both parts. The general six-carbon scope does not turn a selected four-carbon drawing requirement into a completed whole-chapter audit."
       ],
       "example": {
         "question": "Name the unbranched structure CH₃CH₂CH=CH₂ using a lower double-bond position.",
@@ -914,6 +941,816 @@
         "Treating physical movement of colour between layers as proof of reaction.",
         "Using UV during the distinction and ignoring alkane substitution.",
         "Claiming every decolourising unknown must be one pure alkene."
+      ]
+    },
+    {
+      "id": "alcohol-functional-group",
+      "title": "Recognize the alcohol group — Paper 2C",
+      "points": [
+        "4.29C"
+      ],
+      "terms": [
+        "alcohol",
+        "hydroxyl",
+        "–OH"
+      ],
+      "paragraphs": [
+        "The required alcohol functional group is –OH bonded to the organic carbon framework. Methanol CH₃OH and ethanol CH₃CH₂OH are examples. The oxygen has two bonds: one to carbon and one to hydrogen. The –OH here is a covalent group, not a free hydroxide ion.",
+        "Do not classify a carboxylic acid as an alcohol just because its –COOH includes O–H: the surrounding carbonyl connection makes a different functional group. Alcohols contain oxygen and are not hydrocarbons."
+      ],
+      "example": {
+        "question": "Why does ethanol not meet the hydrocarbon definition?",
+        "steps": [
+          "Its formula includes an oxygen atom.",
+          "Hydrocarbons contain carbon and hydrogen only.",
+          "Ethanol is an alcohol, although it is still an organic compound."
+        ],
+        "explanation": "Check both composition and functional-group connections."
+      },
+      "commonMistakes": [
+        "Treating an alcohol’s OH as OH⁻ in solution.",
+        "Calling every organic O–H an alcohol."
+      ]
+    },
+    {
+      "id": "alcohol-drawings",
+      "title": "Draw and name the four required alcohols — Paper 2C",
+      "points": [
+        "4.2",
+        "4.4",
+        "4.30C"
+      ],
+      "terms": [
+        "methanol",
+        "ethanol",
+        "propan-1-ol",
+        "butan-1-ol"
+      ],
+      "paragraphs": [
+        "The required structures are methanol CH₃OH, ethanol CH₃CH₂OH, propan-1-ol CH₃CH₂CH₂OH and butan-1-ol CH₃CH₂CH₂CH₂OH. Propanol and butanol are accepted in the own specification for these named primary structures; giving the position as 1 makes the connection explicit.",
+        "The alcohol carbon-count root includes every carbon in the chain, and -ol identifies the alcohol group. In a displayed drawing, expand all carbon-hydrogen bonds and show the C–O–H connections. A terminal carbon attached to oxygen has two hydrogen atoms if it is also attached to another carbon.",
+        "The explicit 4.30C set has the OH at carbon 1 for the three- and four-carbon examples. Do not silently substitute propan-2-ol when the task asks for the named primary structure. The original diagrams show connections, not real molecular angles."
+      ],
+      "example": {
+        "question": "Give the structural formula of butan-1-ol and count its atoms.",
+        "steps": [
+          "CH₃CH₂CH₂CH₂OH.",
+          "There are four carbons, ten hydrogens including the O–H hydrogen, and one oxygen.",
+          "Its molecular formula is C₄H₁₀O."
+        ],
+        "explanation": "Count the hydrogen on oxygen as well as those on carbon."
+      },
+      "commonMistakes": [
+        "Giving the OH-bearing CH₂ three hydrogens as well as both C and O bonds.",
+        "Replacing propan-1-ol with propan-2-ol in the named set."
+      ],
+      "diagram": {
+        "src": "/diagrams/chemistry-alcohol-displayed.svg",
+        "alt": "Full displayed formulas of methanol, ethanol, propan-1-ol and butan-1-ol, showing every hydrogen including the one on oxygen.",
+        "caption": "Four named primary structures. Position 1 is explicit for propanol and butanol; schematic geometry."
+      }
+    },
+    {
+      "id": "ethanol-combustion",
+      "title": "Distinguish ethanol combustion from acid formation — Paper 2C",
+      "points": [
+        "4.31C"
+      ],
+      "terms": [
+        "ethanol",
+        "complete combustion",
+        "carbon dioxide",
+        "water"
+      ],
+      "paragraphs": [
+        "Complete combustion of ethanol with oxygen forms carbon dioxide and water: C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O. Ethanol already contains one oxygen, so include it when balancing the added oxygen requirement.",
+        "The products of complete combustion are not ethanoic acid. Producing ethanoic acid by microbial oxidation or a chemical oxidant retains the two-carbon framework in the acid. All are oxidation routes in the required list, but their conditions and products differ."
+      ],
+      "example": {
+        "question": "Check the oxygen balance in complete ethanol combustion.",
+        "steps": [
+          "The left has one oxygen in ethanol and six in three O₂ molecules, total seven.",
+          "The right has four in two CO₂ and three in three H₂O, total seven.",
+          "The equation balances without changing ethanol’s formula."
+        ],
+        "explanation": "Count oxygen already in the organic reactant."
+      },
+      "commonMistakes": [
+        "Using the hydrocarbon-only oxygen count for an alcohol.",
+        "Giving ethanoic acid as the complete-combustion product."
+      ]
+    },
+    {
+      "id": "ethanol-acid-oxidation",
+      "title": "Use the two specified routes to ethanoic acid — Paper 2C",
+      "points": [
+        "4.31C"
+      ],
+      "terms": [
+        "microbial oxidation",
+        "ethanoic acid",
+        "potassium dichromate(VI)",
+        "dilute sulfuric acid"
+      ],
+      "paragraphs": [
+        "The own specification gives microbial oxidation using oxygen in air, and heating with potassium dichromate(VI) in dilute sulfuric acid, as routes from ethanol to ethanoic acid. The microbial route requires suitable microorganisms and oxygen; it is different from anaerobic glucose fermentation that makes ethanol.",
+        "A balanced oxygen model is C₂H₅OH + O₂ → CH₃COOH + H₂O. For the chemical-oxidant shorthand, CH₃CH₂OH + 2[O] → CH₃COOH + H₂O uses [O] to represent oxidising equivalents, not a measured bottle of monatomic oxygen.",
+        "Controlled heating with sufficient oxidant can take oxidation through to the acid; partial oxidation can form a different intermediate and should not be confused with the required final product. Dichromate(VI) and acid require approved laboratory handling and waste collection; a nearby demonstration’s drain-disposal suggestion is not adopted here."
+      ],
+      "example": {
+        "question": "What key condition distinguishes microbial oxidation of ethanol to acid from fermentation of glucose to ethanol?",
+        "steps": [
+          "The microbial acid-forming route uses oxygen from air.",
+          "The specified ethanol fermentation is carried out without air.",
+          "They start from different substances and produce different organic products."
+        ],
+        "explanation": "Conditions belong to the named route, not to every microbial process."
+      },
+      "commonMistakes": [
+        "Saying the acid-forming route is the same as glucose fermentation.",
+        "Substituting a different oxidant for the named course reagent.",
+        "Interpreting [O] as a literal gas formula."
+      ]
+    },
+    {
+      "id": "ethanol-steam-route",
+      "title": "Manufacture ethanol from ethene and steam — Paper 2C",
+      "points": [
+        "4.32C"
+      ],
+      "terms": [
+        "ethene",
+        "steam",
+        "phosphoric acid",
+        "hydration",
+        "300°C",
+        "60–70 atm"
+      ],
+      "paragraphs": [
+        "Ethene reacts with steam to form ethanol: C₂H₄ + H₂O → C₂H₅OH in the simplified formation equation. The required conditions are a phosphoric acid catalyst, about 300°C and about 60–70 atm. Keep these together; they are not the fermentation conditions.",
+        "Water’s elements add across the double bond in this hydration route. The ethene carbon skeleton is retained and the product has an alcohol group. This is an industrial process, not a school method using a sealed flask at the stated pressure.",
+        "A catalyst increases the reaction rate rather than being written as a consumed reactant. This lesson gives the specified route and conditions, not an independently optimized factory yield or a claim that every molecule converts in one pass."
+      ],
+      "example": {
+        "question": "Which catalyst and temperature belong to ethene hydration rather than glucose fermentation?",
+        "steps": [
+          "Phosphoric acid is the named catalyst.",
+          "The temperature is about 300°C, with about 60–70 atm pressure.",
+          "Yeast enzymes and about 30°C belong to fermentation instead."
+        ],
+        "explanation": "Avoid mixing the two manufacturing routes."
+      },
+      "commonMistakes": [
+        "Using sulfuric acid as the named industrial catalyst.",
+        "Giving fermentation’s temperature for steam hydration."
+      ]
+    },
+    {
+      "id": "ethanol-fermentation",
+      "title": "Manufacture ethanol from glucose — Paper 2C",
+      "points": [
+        "4.32C"
+      ],
+      "terms": [
+        "glucose",
+        "fermentation",
+        "yeast enzymes",
+        "absence of air",
+        "30°C"
+      ],
+      "paragraphs": [
+        "The specified fermentation uses glucose, enzymes in yeast, absence of air and an optimum temperature of about 30°C. The overall model is C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂. It conserves C₆, H₁₂ and O₆.",
+        "The reaction produces ethanol and carbon dioxide, so a gas outlet is needed in a safe supervised setup. “Without air” does not mean sealing an actively gas-producing flask with no way to release pressure. The resulting liquid is a mixture containing water and other material rather than automatically pure ethanol.",
+        "The word equation and conditions describe manufacture. Separation and purification are later physical steps if a task asks for a concentrated or pure product. No fermentation has actually been carried out here."
+      ],
+      "example": {
+        "question": "In the fermentation model, how many moles of ethanol correspond to one mole of glucose converted?",
+        "steps": [
+          "The coefficient ratio is one glucose to two ethanol.",
+          "One mole of converted glucose gives two moles of ethanol in the ideal equation.",
+          "Real yield can differ, so the ratio is not proof of an achieved practical yield."
+        ],
+        "explanation": "Read the stoichiometric model separately from measured production."
+      },
+      "commonMistakes": [
+        "Writing oxygen as a required reactant in this route.",
+        "Calling the fermentation mixture pure ethanol.",
+        "Blocking the CO₂ outlet."
+      ]
+    },
+    {
+      "id": "fermentation-conditions",
+      "title": "Explain the absence of air and temperature choice — Paper 2C",
+      "points": [
+        "4.33C"
+      ],
+      "terms": [
+        "anaerobic",
+        "enzyme activity",
+        "optimum",
+        "denaturation"
+      ],
+      "paragraphs": [
+        "Absence of air supports the anaerobic route that produces ethanol rather than oxygen-supported respiration. If oxygen is available, yeast can use a different respiratory route, and suitable microbes can oxidise ethanol further. Do not say all yeast activity requires oxygen or that every microbial reaction is anaerobic.",
+        "At low temperatures enzyme-controlled fermentation is slower. An appropriate optimum near the course’s stated 30°C balances activity with the enzymes’ stability; excessive temperature can denature the enzymes and reduce or stop useful fermentation. The optimum is not a universal identical value for every yeast strain and condition.",
+        "Explain these choices using the product wanted and the enzyme-controlled process. Raising temperature cannot indefinitely increase an enzyme reaction’s rate, and boiling to make a reaction faster defeats the intended living-yeast process."
+      ],
+      "example": {
+        "question": "Why is “use the highest possible temperature to make more ethanol quickly” unsuitable?",
+        "steps": [
+          "Fermentation depends on yeast enzymes.",
+          "Excessive heating can denature them.",
+          "Use the specified suitable optimum, not unlimited heating."
+        ],
+        "explanation": "An enzyme rate trend has a high-temperature limit."
+      },
+      "commonMistakes": [
+        "Saying enzymes are killed while ignoring denaturation as the explanation.",
+        "Confusing absence of air with an unsafe blocked gas outlet."
+      ]
+    },
+    {
+      "id": "carboxyl-group",
+      "title": "Recognize the complete carboxyl group — Paper 2C",
+      "points": [
+        "4.34C"
+      ],
+      "terms": [
+        "carboxylic acid",
+        "–COOH",
+        "carbonyl"
+      ],
+      "paragraphs": [
+        "A carboxylic acid has the –C(=O)–OH group, often condensed to –COOH. The same carbon is double-bonded to one oxygen and single-bonded to the OH oxygen. Recognize both parts as one group rather than treating it as an isolated alcohol OH.",
+        "The carboxyl carbon counts in the molecule’s carbon total and in the chain name. In methanoic acid it is bonded to hydrogen; in ethanoic acid it is bonded to CH₃. Normal valencies require four bond contributions at this carbon and two at each oxygen."
+      ],
+      "example": {
+        "question": "How many carbon atoms are in CH₃COOH?",
+        "steps": [
+          "There is one carbon in CH₃ and one in COOH.",
+          "The total is two.",
+          "The compound is ethanoic acid, not a one-carbon acid."
+        ],
+        "explanation": "Do not omit the carbon in the functional group."
+      },
+      "commonMistakes": [
+        "Drawing C–O–O–H without the required carbonyl.",
+        "Counting only the hydrocarbon fragment."
+      ]
+    },
+    {
+      "id": "carboxylic-drawings",
+      "title": "Draw the first four unbranched acids — Paper 2C",
+      "points": [
+        "4.2",
+        "4.4",
+        "4.35C"
+      ],
+      "terms": [
+        "methanoic acid",
+        "ethanoic acid",
+        "propanoic acid",
+        "butanoic acid"
+      ],
+      "paragraphs": [
+        "The required unbranched structures are methanoic acid HCOOH, ethanoic acid CH₃COOH, propanoic acid CH₃CH₂COOH and butanoic acid CH₃CH₂CH₂COOH. Their names count the carboxyl carbon: one, two, three and four respectively.",
+        "For displayed formulas, expand all C–H bonds and show the C=O and C–O–H bonds separately. The carboxyl carbon already uses three bond contributions for its two oxygen connections and has only one remaining bond to H or the rest of the chain.",
+        "The own required set ends at four carbons for these unbranched acid drawings. Do not replace an acid name with the corresponding alcohol’s -ol suffix. The drawing sheet shows connections rather than realistic bond geometry."
+      ],
+      "example": {
+        "question": "Write the structural formula of propanoic acid and count carbons.",
+        "steps": [
+          "CH₃CH₂COOH.",
+          "The CH₃ and CH₂ supply two carbons.",
+          "The COOH carbon makes three in total."
+        ],
+        "explanation": "The acid group is part of the named chain."
+      },
+      "commonMistakes": [
+        "Drawing CH₃CH₂CH₂COOH and calling it propanoic acid.",
+        "Omitting the carbonyl double bond in a displayed acid."
+      ],
+      "diagram": {
+        "src": "/diagrams/chemistry-carboxylic-displayed.svg",
+        "alt": "Full displayed methanoic, ethanoic, propanoic and butanoic acids. Each shows C=O and C–O–H with the carboxyl carbon included in the carbon total.",
+        "caption": "Count the carboxyl carbon in the name and preserve the double bond to oxygen."
+      }
+    },
+    {
+      "id": "carboxylic-metal-reaction",
+      "title": "Form a carboxylate salt and hydrogen with a suitable metal — Paper 2C",
+      "points": [
+        "4.36C"
+      ],
+      "terms": [
+        "carboxylate",
+        "magnesium",
+        "hydrogen",
+        "ethanoate"
+      ],
+      "paragraphs": [
+        "Aqueous carboxylic acids can react with a suitable metal above hydrogen in the relevant reactivity context to form a salt and hydrogen. For ethanoic acid and magnesium: 2CH₃COOH + Mg → Mg(CH₃COO)₂ + H₂.",
+        "The carboxylate ion in the salt is CH₃COO⁻ for ethanoate. Magnesium is Mg²⁺, so two ethanoate ions are needed. The acidic O–H hydrogens are involved; the CH₃ groups remain in this simple reaction.",
+        "Do not assume every metal reacts under the same conditions. The gas test for hydrogen is a lighted splint pop in the supervised method. A weak acid may react more slowly than a matched strong acid; weak does not mean unable to react."
+      ],
+      "example": {
+        "question": "Why is the magnesium salt Mg(CH₃COO)₂ rather than MgCH₃COO?",
+        "steps": [
+          "Magnesium ions have charge +2.",
+          "Each ethanoate ion has charge −1.",
+          "Two ethanoate ions balance one magnesium ion."
+        ],
+        "explanation": "Salt charge and atom counts both need checking."
+      },
+      "commonMistakes": [
+        "Giving oxygen gas instead of hydrogen.",
+        "Keeping the acid’s O–H in each carboxylate ion.",
+        "Assuming copper behaves like magnesium in dilute acid."
+      ]
+    },
+    {
+      "id": "carboxylic-carbonate-reaction",
+      "title": "Identify salt, water and carbon dioxide — Paper 2C",
+      "points": [
+        "4.36C"
+      ],
+      "terms": [
+        "carbonate",
+        "carbon dioxide",
+        "ethanoate",
+        "limewater"
+      ],
+      "paragraphs": [
+        "Aqueous carboxylic acid reacts with a suitable metal carbonate to give the carboxylate salt, water and carbon dioxide. For sodium carbonate: 2CH₃COOH + Na₂CO₃ → 2CH₃COONa + H₂O + CO₂.",
+        "The carbonate consumes two acidic hydrogen equivalents per carbonate ion. The balanced molecular example conserves five carbons overall: four stay in the two ethanoate ions and one leaves as CO₂. Gas production does not mean the acid’s entire carbon skeleton has been burned.",
+        "The CO₂ test clouds limewater in an appropriate separate gas test. Distinguish this from hydrogen made by a suitable metal: “bubbles” alone does not name the gas. No reaction or gas collection has been performed here."
+      ],
+      "example": {
+        "question": "How would the expected gas differ for magnesium metal versus sodium carbonate with ethanoic acid?",
+        "steps": [
+          "Magnesium metal gives hydrogen in the stated reaction.",
+          "Sodium carbonate gives carbon dioxide.",
+          "Use their different appropriate gas tests rather than naming bubbles alone."
+        ],
+        "explanation": "The reacting material determines the gas product."
+      },
+      "commonMistakes": [
+        "Writing hydrogen for the carbonate reaction.",
+        "Omitting water or using one acid molecule per carbonate."
+      ]
+    },
+    {
+      "id": "vinegar-solution",
+      "title": "Treat vinegar as a solution containing ethanoic acid — Paper 2C",
+      "points": [
+        "4.37C"
+      ],
+      "terms": [
+        "vinegar",
+        "aqueous",
+        "ethanoic acid",
+        "mixture"
+      ],
+      "paragraphs": [
+        "Vinegar is an aqueous solution containing ethanoic acid. It is not a bottle of pure ethanoic acid, and its acid concentration and other dissolved components depend on the sample.",
+        "An acid reaction can support the presence of an acid, but does not by itself prove that an unrestricted unknown is vinegar or identify its concentration. Use the named context and supplied measurements. Nothing in the chemical notes authorizes tasting an unknown laboratory liquid."
+      ],
+      "example": {
+        "question": "Why is it inaccurate to give pure ethanoic acid as the composition of vinegar?",
+        "steps": [
+          "Vinegar is aqueous: water is part of the solution.",
+          "It contains ethanoic acid and can contain other substances.",
+          "A solution is not a single pure compound."
+        ],
+        "explanation": "The word aqueous changes the composition claim."
+      },
+      "commonMistakes": [
+        "Calling vinegar ethanol.",
+        "Treating acidic behaviour as proof of the exact food mixture."
+      ]
+    },
+    {
+      "id": "ester-group",
+      "title": "Distinguish an ester linkage from an acid — Paper 2C",
+      "points": [
+        "4.38C"
+      ],
+      "terms": [
+        "ester",
+        "–COO–",
+        "carbonyl",
+        "alcohol-derived group"
+      ],
+      "paragraphs": [
+        "The required ester group is –C(=O)–O– joining an acid-derived carbonyl side to an organic group on the single-bond oxygen side. It resembles the acid’s –C(=O)–OH, but the ester oxygen is bonded to carbon rather than to that acid-group hydrogen.",
+        "Do not draw two single C–O bonds without a carbonyl, or put an O–H on the ester linkage while also attaching the alcohol-derived carbon there. The oxygen has two single bonds; the carbonyl carbon has four bond contributions."
+      ],
+      "example": {
+        "question": "Which connection distinguishes CH₃COOCH₂CH₃ from CH₃COOH?",
+        "steps": [
+          "The single-bond ester oxygen connects to CH₂CH₃.",
+          "In the acid that oxygen connects to hydrogen.",
+          "Both have a carbonyl, but their complete functional groups differ."
+        ],
+        "explanation": "Read connectivity beyond the letters COO."
+      },
+      "commonMistakes": [
+        "Calling every molecule with two oxygens a carboxylic acid.",
+        "Giving the ester oxygen three bonds."
+      ]
+    },
+    {
+      "id": "ethyl-ethanoate-formation",
+      "title": "Form ethyl ethanoate from the named reactants — Paper 2C",
+      "points": [
+        "4.39C"
+      ],
+      "terms": [
+        "ethanol",
+        "ethanoic acid",
+        "acid catalyst",
+        "esterification"
+      ],
+      "paragraphs": [
+        "Ethanol and ethanoic acid form ethyl ethanoate and water in an acid-catalysed esterification: CH₃COOH + CH₃CH₂OH ⇌ CH₃COOCH₂CH₃ + H₂O. The catalyst is not written as a consumed substance in this overall equation.",
+        "The reaction is reversible, so a reaction mixture can still contain starting alcohol and acid. Warming increases the rate of approaching the reacting mixture; a smell or layer is not proof of complete conversion or pure ester.",
+        "Ethyl identifies the alcohol-derived two-carbon group, while ethanoate identifies the acid-derived two-carbon part, including the carbonyl carbon. Do not reverse those sources when deciding the ester name."
+      ],
+      "example": {
+        "question": "Which two named reactants give ethyl ethanoate?",
+        "steps": [
+          "Ethanol supplies the ethyl group.",
+          "Ethanoic acid supplies the ethanoate part.",
+          "The products are ethyl ethanoate and water with an acid catalyst."
+        ],
+        "explanation": "Trace each part of the name to its starting compound."
+      },
+      "commonMistakes": [
+        "Giving methanol for an ethyl ester.",
+        "Treating sulfuric acid as incorporated into every ester molecule.",
+        "Assuming the reversible equation means complete conversion."
+      ]
+    },
+    {
+      "id": "ethyl-ethanoate-drawing",
+      "title": "Draw the complete ethyl ethanoate connection — Paper 2C",
+      "points": [
+        "4.2",
+        "4.40C"
+      ],
+      "terms": [
+        "CH₃COOCH₂CH₃",
+        "C₄H₈O₂",
+        "displayed formula"
+      ],
+      "paragraphs": [
+        "The structural formula is CH₃C(=O)OCH₂CH₃, also condensed to CH₃COOCH₂CH₃. It contains four carbons, eight hydrogens and two oxygens. The formula C₄H₈O₂ alone does not identify that exact connectivity.",
+        "In the displayed structure, show the carbonyl C=O, its single C–O link, the O–CH₂ connection, and all C–H bonds. The carbonyl carbon has no hydrogen in ethyl ethanoate; the CH₂ immediately after oxygen has two hydrogens.",
+        "The original drawing identifies the acid- and alcohol-derived parts without copying a source reaction figure. A shortened structural formula is useful for reading, but an explicitly displayed answer needs every bond."
+      ],
+      "example": {
+        "question": "How many hydrogens are on the carbonyl carbon in ethyl ethanoate?",
+        "steps": [
+          "It has one bond to CH₃, a double bond to oxygen and one bond to the other oxygen.",
+          "That totals four bond contributions.",
+          "It has no hydrogen."
+        ],
+        "explanation": "Use valency to check the functional group."
+      },
+      "commonMistakes": [
+        "Adding H to a carbon with four bond contributions already.",
+        "Reversing the O–CH₂ and carbonyl connections."
+      ],
+      "diagram": {
+        "src": "/diagrams/chemistry-ethyl-ethanoate.svg",
+        "alt": "Full displayed ethyl ethanoate with CH3 connected to the carbonyl carbon and the single-bond oxygen connected to CH2CH3; every hydrogen shown.",
+        "caption": "Acid-derived CH₃C(=O) and alcohol-derived OCH₂CH₃ connect through the ester link."
+      }
+    },
+    {
+      "id": "ester-naming",
+      "title": "Work between ester names and both starting compounds — Paper 2C",
+      "points": [
+        "4.4",
+        "4.41C"
+      ],
+      "terms": [
+        "alkyl",
+        "alkanoate",
+        "acid-derived",
+        "alcohol-derived"
+      ],
+      "paragraphs": [
+        "Name a simple ester using the alcohol-derived alkyl group first, followed by the acid-derived alkanoate. Methanol and propanoic acid give methyl propanoate, CH₃CH₂COOCH₃. The acid’s carbonyl carbon counts in propanoate’s three carbons; the methyl adds one more carbon to the ester.",
+        "To reverse the interpretation, locate –C(=O)–O– in the structure. The carbon-containing side attached directly to the carbonyl carbon gives the acid when the oxygen-side connection is replaced with OH. The carbon group on the single-bond oxygen gives the alcohol when joined to OH.",
+        "A valid displayed ester keeps the carbonyl and the two single bonds at its single-bond oxygen. A name’s two parts are not interchangeable: ethyl methanoate and methyl ethanoate have the same overall molecular formula but different connections."
+      ],
+      "example": {
+        "question": "Identify the starting acid and alcohol for CH₃CH₂COOCH₂CH₃.",
+        "steps": [
+          "The carbonyl side is CH₃CH₂CO–, giving propanoic acid.",
+          "The oxygen-side group is –CH₂CH₃, giving ethanol.",
+          "The ester name is ethyl propanoate."
+        ],
+        "explanation": "Read the carbonyl side and oxygen side separately."
+      },
+      "commonMistakes": [
+        "Counting only CH₃CH₂ and calling the acid ethanoic.",
+        "Swapping the alcohol-derived and acid-derived name parts."
+      ]
+    },
+    {
+      "id": "ester-volatility-uses",
+      "title": "Link volatility and distinctive smells to uses — Paper 2C",
+      "points": [
+        "4.42C"
+      ],
+      "terms": [
+        "volatile",
+        "smell",
+        "food flavouring",
+        "perfume"
+      ],
+      "paragraphs": [
+        "The required ester description emphasizes volatility and distinctive smells. Volatile molecules enter the vapour phase sufficiently to reach smell receptors, supporting uses of suitable esters in food flavourings and perfumes.",
+        "This is a class-level course description, not a claim that every ester is safe to eat or that an unknown can be identified uniquely by smell. An ester’s particular structure and purity affect its properties; a pleasant smell does not establish purity or safe handling."
+      ],
+      "example": {
+        "question": "Why is volatility relevant to an ester used in a perfume?",
+        "steps": [
+          "Some molecules evaporate into the air.",
+          "Their vapour can reach smell receptors.",
+          "Suitability still depends on the particular substance and formulation."
+        ],
+        "explanation": "Connect a property to the function without a universal safety inference."
+      },
+      "commonMistakes": [
+        "Defining volatile as flammable rather than readily entering vapour.",
+        "Treating smell as a unique compound-identification test."
+      ]
+    },
+    {
+      "id": "ester-practical-plan",
+      "title": "Explain a supervised small-scale ester preparation — Paper 2C",
+      "points": [
+        "4.43C"
+      ],
+      "terms": [
+        "water bath",
+        "acid catalyst",
+        "separation",
+        "purity"
+      ],
+      "paragraphs": [
+        "In the approved small-scale method, combine the named alcohol and carboxylic acid with the teacher-specified acid catalyst and warm using a controlled water bath. Ethanol and ethanoic acid are the required ethyl ethanoate example. Avoid a direct flame around the flammable organic mixture, and use eye protection and approved acid handling.",
+        "After the specified heating and cooling, transfer or dilute the reaction mixture as directed to help separate or observe the ester sample. A teacher-approved sodium carbonate treatment can neutralize residual acid and make its smell less dominant; it releases CO₂, so the operation must not be sealed. Further washing/separation depends on the actual method and required sample purity.",
+        "A characteristic smell or a separate organic layer supports the demonstration, not a measured yield or proof of a pure dry sample. Do not inhale directly from a tube. The method outline is source-checked but not a performed practical or a fully specified substitute for laboratory risk assessment and quantities."
+      ],
+      "example": {
+        "question": "Why do warming and sodium carbonate treatment have different purposes in the ester preparation?",
+        "steps": [
+          "Controlled warming helps the ester-forming reaction proceed faster.",
+          "Carbonate treatment neutralizes residual acid after the reaction stage in the approved method.",
+          "It does not replace the acid catalyst or certify complete conversion."
+        ],
+        "explanation": "Assign each step to its purpose."
+      },
+      "commonMistakes": [
+        "Heating the flammable mixture directly over a flame.",
+        "Sealing a carbonate treatment that evolves CO₂.",
+        "Calling a smell proof of pure ester."
+      ]
+    },
+    {
+      "id": "addition-monomers",
+      "title": "Join many monomers by addition",
+      "points": [
+        "4.44"
+      ],
+      "terms": [
+        "monomer",
+        "addition polymer",
+        "polymerisation",
+        "repeat unit"
+      ],
+      "paragraphs": [
+        "A monomer is a small molecule that can join with many other monomers to form a polymer chain. For the required alkene examples, the carbon–carbon double bond becomes a single bond in the chain backbone and new single bonds connect neighbouring units.",
+        "Addition polymerisation of these monomers does not eliminate a small molecule such as water. The atoms originally attached to each alkene carbon stay attached to the corresponding backbone carbon. Many molecules are needed; simply drawing one alkene or two disconnected units does not show a polymer chain.",
+        "A repeat unit is the segment repeated along the polymer backbone. It is not a free molecule with unfilled valencies: the bonds drawn through its brackets connect it to neighbouring units. The n outside the brackets indicates many repetitions."
+      ],
+      "example": {
+        "question": "What changes when ethene becomes poly(ethene)?",
+        "steps": [
+          "The C=C connection becomes a C–C backbone bond.",
+          "Each original carbon also joins a neighbouring unit.",
+          "All carbon and hydrogen atoms are retained; no water is removed."
+        ],
+        "explanation": "Distinguish a chain connection from an isolated molecule."
+      },
+      "commonMistakes": [
+        "Leaving C=C in the required addition-polymer repeat unit.",
+        "Adding water as a product of ethene addition polymerisation."
+      ]
+    },
+    {
+      "id": "addition-repeat-drawings",
+      "title": "Draw the four required addition repeat units",
+      "points": [
+        "4.45"
+      ],
+      "terms": [
+        "poly(ethene)",
+        "poly(propene)",
+        "poly(chloroethene)",
+        "poly(tetrafluoroethene)",
+        "PTFE"
+      ],
+      "paragraphs": [
+        "The required repeat units are [–CH₂–CH₂–]ₙ for poly(ethene), [–CH₂–CH(CH₃)–]ₙ for poly(propene), [–CH₂–CHCl–]ₙ for poly(chloroethene), and [–CF₂–CF₂–]ₙ for poly(tetrafluoroethene). These are condensed structural formulas; the drawing sheet expands every atom and bond.",
+        "Draw a single bond between the two backbone carbons and a bond through each bracket. Keep the methyl branch in poly(propene), the chlorine in poly(chloroethene) and all four fluorines in the PTFE unit. Carbon still has four bond contributions when the connections to neighbouring units are counted.",
+        "Place n outside the brackets rather than as a subscript on one atom. A reversed or rotated repeat drawing can represent the same connections. The structural sheet does not assign tacticity, stereochemistry or real molecular angles."
+      ],
+      "example": {
+        "question": "How many hydrogens are attached to the branch-bearing backbone carbon in poly(propene)?",
+        "steps": [
+          "It has bonds to two backbone neighbours and to its CH₃ branch.",
+          "Three bond contributions are already used.",
+          "It has one hydrogen."
+        ],
+        "explanation": "Include the connection through the bracket in the valency count."
+      },
+      "commonMistakes": [
+        "Making the branch-bearing carbon CH₂ as well as attaching CH₃.",
+        "Losing a chlorine or fluorine when opening the double bond.",
+        "Closing the polymer ends with H inside the repeat unit."
+      ],
+      "diagram": {
+        "src": "/diagrams/chemistry-addition-repeats.svg",
+        "alt": "Full displayed repeat units for polyethene, polypropene, polychloroethene and polytetrafluoroethene; branches, all hydrogens and halogens, bonds through both brackets and n outside.",
+        "caption": "Each boundary bond joins the neighbouring unit. No C=C remains in these required repeat units."
+      }
+    },
+    {
+      "id": "recover-addition-monomer",
+      "title": "Work between a repeat unit and its alkene",
+      "points": [
+        "4.46"
+      ],
+      "terms": [
+        "monomer deduction",
+        "backbone",
+        "side group",
+        "double bond"
+      ],
+      "paragraphs": [
+        "For these simple addition examples, identify two adjacent backbone carbons in the repeat unit. Replace the outward chain connections by a double bond between those two carbons while retaining their attached H, methyl, chlorine or fluorine groups. The recovered monomer must satisfy the ordinary valencies.",
+        "For [–CH₂–CHCl–]ₙ, the monomer is CH₂=CHCl, chloroethene. For [–CF₂–CF₂–]ₙ it is CF₂=CF₂, tetrafluoroethene. A CH₃ branch on a backbone carbon remains a branch in propene; it is not the second backbone carbon selected to make a new double bond.",
+        "In the forward direction, open the monomer C=C to a single bond and extend each of those two carbons to its neighbouring units. This deduction is for the supplied simple addition structures; do not use it as a universal reverse rule for condensation polymers or unspecified copolymers."
+      ],
+      "example": {
+        "question": "Recover the monomer from [–CH₂–CH(CH₃)–]ₙ.",
+        "steps": [
+          "Identify CH₂ and CH as the two backbone carbons.",
+          "Retain the CH₃ group on the second carbon.",
+          "Remove outward unit connections and form CH₂=CHCH₃, propene."
+        ],
+        "explanation": "The original side group keeps its connection."
+      },
+      "commonMistakes": [
+        "Forming C=C to the methyl branch instead of between the backbone carbons.",
+        "Adding atoms not present in the repeat unit."
+      ]
+    },
+    {
+      "id": "addition-disposal",
+      "title": "Explain persistence and burning problems",
+      "points": [
+        "4.47"
+      ],
+      "terms": [
+        "inert",
+        "non-biodegradable",
+        "disposal",
+        "toxic gases"
+      ],
+      "paragraphs": [
+        "The required addition polymers are relatively chemically inert and do not biodegrade readily. Microorganisms do not break their chains down effectively in ordinary environmental conditions, so discarded material can persist. Breaking into smaller pieces is not the same as biological breakdown of the chemical structure.",
+        "Burning polymers can produce toxic gases, with the products depending on composition and combustion conditions. Incomplete combustion can produce carbon monoxide; a chlorine-containing polymer such as poly(chloroethene) can also produce hydrogen chloride. Do not claim every polymer releases chlorine-containing gases.",
+        "These problems explain why disposal needs controlled decisions. A recycling label does not prove that every mixed, contaminated or thermally damaged item can be processed in every system. No local recycling policy or safe home-burning method is claimed here."
+      ],
+      "example": {
+        "question": "Why is “it has broken into small pieces, so it has biodegraded” an invalid inference?",
+        "steps": [
+          "Fragment size describes a physical change.",
+          "Biodegradation requires biological chemical breakdown.",
+          "Persistent polymer fragments can still retain the original material."
+        ],
+        "explanation": "Separate physical fragmentation from breakdown of polymer chains."
+      },
+      "commonMistakes": [
+        "Calling inertness proof that burning cannot make harmful gases.",
+        "Giving hydrogen chloride for a polymer containing no chlorine."
+      ]
+    },
+    {
+      "id": "polyester-condensation",
+      "title": "Join a diacid and a diol — Paper 2C",
+      "points": [
+        "4.48C"
+      ],
+      "terms": [
+        "condensation polymerisation",
+        "dicarboxylic acid",
+        "diol",
+        "polyester",
+        "water"
+      ],
+      "paragraphs": [
+        "A dicarboxylic acid has two carboxyl groups and a diol has two alcohol groups. They can form ester links while eliminating water. Having a reacting group at both ends of each monomer allows further links to form a polyester chain rather than only one small ester molecule.",
+        "At each ester link, an OH from an acid group and an H from an alcohol OH together form water; the acid carbonyl remains. The alcohol oxygen stays in the ester linkage. Condensation differs from the required alkene addition reactions because a small molecule is eliminated.",
+        "Draw both functional ends before deciding whether repeated linking can occur. A monocarboxylic acid and a monohydric alcohol make a simple ester in the basic model; they cannot independently support continuing polyester-chain formation in this diacid–diol model."
+      ],
+      "example": {
+        "question": "Why are two reacting groups on each monomer needed in this model?",
+        "steps": [
+          "One group can link to one neighbour.",
+          "The other can link onward to another neighbour.",
+          "Repeated connections can extend the chain."
+        ],
+        "explanation": "Count functional ends rather than just carbon atoms."
+      },
+      "commonMistakes": [
+        "Removing both oxygens from the acid group.",
+        "Calling any single ester molecule a polyester.",
+        "Claiming no small molecule leaves in condensation."
+      ]
+    },
+    {
+      "id": "polyester-repeat-drawing",
+      "title": "Trace the specified polyester repeat unit — Paper 2C",
+      "points": [
+        "4.49C"
+      ],
+      "terms": [
+        "ethanedioic acid",
+        "ethanediol",
+        "ester linkage",
+        "repeat unit"
+      ],
+      "paragraphs": [
+        "The required example combines ethanedioic acid HOOC–COOH with ethanediol HO–CH₂–CH₂–OH. A valid repeat sequence is [–C(=O)–C(=O)–O–CH₂–CH₂–O–]ₙ. Its two carbonyl carbons come from the diacid, and its two CH₂ groups and chain oxygens come from the diol.",
+        "Retain both C=O double bonds, show the ester connections and draw a bond through each bracket. At the right boundary, the final oxygen links to a carbonyl carbon of the next unit; an ester linkage can therefore cross a drawn repeat boundary. Neither outward bond represents a loose atom or an extra hydrogen.",
+        "The repeat formula is C₄H₄O₄. It matches the combined monomer formulas C₂H₂O₄ and C₂H₆O₂ after two waters are removed in the ideal repeating-chain representation. The course equation uses 2nH₂O with n repeat units and omits finite end groups; an actual single open chain of n diacid and n diol molecules has 2n−1 links and waters. Water is lost per new ester link, so do not interpret the repeat shorthand as exact finite end-group bookkeeping."
+      ],
+      "example": {
+        "question": "Where are the two carbonyl groups in this polyester repeat?",
+        "steps": [
+          "They remain on the two adjacent diacid-derived carbons.",
+          "The diol-derived carbons remain CH₂ groups.",
+          "Water formation removes groups at the joining ends, not the carbonyl oxygens."
+        ],
+        "explanation": "Trace each original monomer fragment through the connection."
+      },
+      "commonMistakes": [
+        "Moving a carbonyl to a diol carbon.",
+        "Drawing O–O at the ester linkage.",
+        "Using 2n water as exact for a finite unclosed chain without checking end groups."
+      ],
+      "diagram": {
+        "src": "/diagrams/chemistry-polyester-repeat.svg",
+        "alt": "Original full displayed ethanedioic acid, ethanediol and their polyester repeat, retaining two carbonyls, two CH2 carbons and oxygen connections through the brackets.",
+        "caption": "Read the ester link across the repeat boundary as well as the one inside it. This is schematic connectivity."
+      }
+    },
+    {
+      "id": "biopolyester-limits",
+      "title": "Recognize some biodegradable polyesters — Paper 2C",
+      "points": [
+        "4.50C"
+      ],
+      "terms": [
+        "biopolyester",
+        "biodegradable",
+        "conditions",
+        "hydrolysis"
+      ],
+      "paragraphs": [
+        "The own course states that some polyesters, called biopolyesters in this context, are biodegradable. Their susceptible ester connections can be broken down through appropriate biological processes. This does not make all polyesters rapidly biodegradable in every environment.",
+        "Whether breakdown occurs at a useful rate depends on the particular polymer and conditions, such as the available organisms, moisture and temperature. A material being made from a biological raw material is a different claim from it biodegrading under specified conditions.",
+        "Use the scope word some. Neither an ester linkage alone nor a bio-derived starting material proves that an item will disappear promptly in seawater, soil or an ordinary waste bin. No compost certification or measured degradation rate is supplied here."
+      ],
+      "example": {
+        "question": "Does an ester linkage prove that every polyester will rapidly biodegrade anywhere?",
+        "steps": [
+          "No: the course identifies some polyesters as biodegradable.",
+          "Structure and environmental conditions affect breakdown.",
+          "A specific rate or environment needs evidence."
+        ],
+        "explanation": "Retain the qualification rather than generalizing a class property."
+      },
+      "commonMistakes": [
+        "Replacing some with all.",
+        "Treating bio-based and biodegradable as identical."
       ]
     }
   ]
