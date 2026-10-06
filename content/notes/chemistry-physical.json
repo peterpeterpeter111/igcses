@@ -1,0 +1,1019 @@
+{
+  "subjectId": "chemistry",
+  "chapterId": "physical",
+  "status": "source-checked",
+  "complete": false,
+  "humanReviewed": false,
+  "sourceId": "4CH1-spec",
+  "sourcePages": [
+    27,
+    28
+  ],
+  "prerequisites": [
+    "Balanced equations identify the reacting amounts and conserve atoms.",
+    "Use moles, concentration and consistent energy units.",
+    "Distinguish a measured observation from a chemical inference."
+  ],
+  "goals": [
+    "Track energy transfer and calculate calorimetry estimates with explicit assumptions.",
+    "Use level, bond and profile models with exact Paper 2C applicability.",
+    "Plan the required rate investigations and separate rate from final amount.",
+    "Explain the two named reversible examples and dynamic equilibrium with exact Paper 2C applicability."
+  ],
+  "supportingSources": [
+    {
+      "title": "Pearson practical guide: selected calorimetry methods and limitations",
+      "url": "https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Biology/2017/teaching-and-learning-materials/biology-chemistry-physics-core-practical-guide.pdf#page=114",
+      "sectionIds": [
+        "calorimetry-methods",
+        "neutralization-calorimeter",
+        "dissolving-displacement",
+        "fuel-calorimeter",
+        "calorimetry-evaluation"
+      ]
+    },
+    {
+      "title": "Pearson practical guide: marble-chip investigations",
+      "url": "https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Biology/2017/teaching-and-learning-materials/biology-chemistry-physics-core-practical-guide.pdf#page=128",
+      "sectionIds": [
+        "marble-design",
+        "rate-curves",
+        "rate-area"
+      ]
+    },
+    {
+      "title": "Pearson practical guide: catalytic decomposition investigation",
+      "url": "https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Biology/2017/teaching-and-learning-materials/biology-chemistry-physics-core-practical-guide.pdf#page=134",
+      "sectionIds": [
+        "peroxide-solids"
+      ]
+    },
+    {
+      "title": "OpenStax: independent heat-transfer check",
+      "url": "https://openstax.org/books/chemistry-2e/pages/5-2-calorimetry",
+      "sectionIds": [
+        "energy-system",
+        "calorimetry-heat"
+      ]
+    },
+    {
+      "title": "OpenStax: independent bond-energy estimate check",
+      "url": "https://openstax.org/books/chemistry-2e/pages/7-5-strengths-of-ionic-and-covalent-bonds",
+      "sectionIds": [
+        "bond-balance"
+      ]
+    },
+    {
+      "title": "OpenStax: independent successful-collision check",
+      "url": "https://openstax.org/books/chemistry-2e/pages/12-5-collision-theory",
+      "sectionIds": [
+        "rate-temperature",
+        "rate-concentration-pressure"
+      ]
+    },
+    {
+      "title": "OpenStax: independent pathway check",
+      "url": "https://openstax.org/books/chemistry-2e/pages/12-7-catalysis",
+      "sectionIds": [
+        "catalyst-model",
+        "reaction-profile"
+      ]
+    },
+    {
+      "title": "OpenStax: independent dynamic-equilibrium check",
+      "url": "https://openstax.org/books/chemistry-2e/pages/13-1-chemical-equilibria",
+      "sectionIds": [
+        "dynamic-equilibrium"
+      ]
+    },
+    {
+      "title": "OpenStax: independent pressure and temperature check",
+      "url": "https://openstax.org/books/chemistry-2e/pages/13-3-shifting-equilibria-le-chateliers-principle",
+      "sectionIds": [
+        "equilibrium-temperature",
+        "equilibrium-pressure"
+      ]
+    },
+    {
+      "title": "RSC: selected indexed reversible-reaction facts",
+      "url": "https://edu.rsc.org/cpd/how-to-teach-reversible-reactions-and-equilibrium-at-14-16/4018148.article",
+      "sectionIds": [
+        "copper-water-reverse",
+        "ammonium-reverse"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "energy-system",
+      "title": "Follow energy between the reaction and its surroundings",
+      "points": [
+        "3.1"
+      ],
+      "terms": [
+        "exothermic",
+        "endothermic",
+        "system",
+        "surroundings"
+      ],
+      "paragraphs": [
+        "Treat the reacting chemicals as the system. An exothermic reaction transfers thermal energy to the surroundings; an endothermic reaction takes thermal energy from them. In a simple insulated solution experiment, warming supports an exothermic change and cooling supports an endothermic change, provided the starting conditions and external heating have been controlled.",
+        "The thermometer measures the solution or water used to receive or supply heat. It does not directly measure a quantity called “heat in the chemical”. Energy is conserved: under the simple calorimetry assumptions, energy gained by the measured surroundings is energy lost by the reaction, and conversely.",
+        "A reaction may need an initial flame or other input to begin and still release energy overall. Classify the overall change, not whether it was heated at some stage. A warm mixture made by combining initially hot and cold liquids does not alone establish a reaction’s energy change."
+      ],
+      "example": {
+        "question": "An invented reaction cools initially temperature-matched surroundings from 24°C to 21°C, with no external cooling. What energy transfer does that support?",
+        "steps": [
+          "The measured surroundings lose thermal energy.",
+          "The reaction takes energy from the surroundings.",
+          "This supports an endothermic change under the stated controls."
+        ],
+        "explanation": "Direction of transfer explains the observation."
+      },
+      "commonMistakes": [
+        "Calling a cooling reaction exothermic because the surroundings lose energy.",
+        "Saying an exothermic reaction cannot need ignition.",
+        "Ignoring unequal initial temperatures."
+      ]
+    },
+    {
+      "id": "calorimetry-methods",
+      "title": "Choose a calorimeter for the type of change",
+      "points": [
+        "3.2",
+        "3.8"
+      ],
+      "terms": [
+        "calorimetry",
+        "combustion",
+        "neutralization",
+        "dissolving",
+        "displacement"
+      ],
+      "paragraphs": [
+        "Simple calorimetry estimates an energy change from the temperature change of a known mass. Combustion heats a measured mass of water using a burning fuel. Neutralization mixes measured acid and alkali in an insulated cup. Dissolving adds a measured solute to a measured solvent. Displacement mixes a suitable reactive metal with a solution of a less reactive metal’s ions.",
+        "For cup experiments, a lid, insulation and consistent stirring help the measured solution represent the thermal change. Record initial temperatures before mixing and the highest or lowest temperature afterwards, or a suitable time series for a cooling correction. For combustion, also weigh the fuel container before and after burning.",
+        "The named practical requirement asks for temperature changes accompanying some of these changes. These are method explanations and original model results; no practical has been performed here. A valid plan identifies what is reacting, what receives or supplies heat, and the measurements and assumptions needed."
+      ],
+      "example": {
+        "question": "Which extra measurement is essential in an alcohol combustion comparison if the question asks for energy per mole of fuel?",
+        "steps": [
+          "Measure burner mass before and after the burn.",
+          "Estimate the mass of fuel burned from the loss, considering evaporation.",
+          "Convert the fuel amount to moles using its stated molar mass."
+        ],
+        "explanation": "Water warming alone gives transferred energy, not the amount of fuel consumed."
+      },
+      "commonMistakes": [
+        "Using the fuel’s mass as the water mass in Q = mcΔT.",
+        "Calling a set of notes a completed experiment.",
+        "Assuming cup and flame experiments lose energy in identical ways."
+      ]
+    },
+    {
+      "id": "calorimetry-heat",
+      "title": "Calculate the heat transferred using Q = mcΔT",
+      "points": [
+        "3.3"
+      ],
+      "terms": [
+        "specific heat capacity",
+        "temperature change",
+        "joule",
+        "gram"
+      ],
+      "paragraphs": [
+        "Use Q = mcΔT with a consistent set of units. If m is in grams and c is in J g⁻¹ °C⁻¹, Q is in joules. Calculate ΔT as final minus initial temperature. A positive Q refers to warming of the material whose mass and heat capacity you used; a negative Q refers to its cooling.",
+        "Choose the heated or cooled mass correctly. In a solution experiment it is normally the total solution mass, or an explicitly stated approximation such as solvent mass. If volumes are converted to masses, state the density assumption. In combustion it is the water being heated, not the mass of fuel.",
+        "The heat capacity must describe that material. A dilute solution is often approximated as water with a supplied c; concentrated solutions and other substances need their own value. Q here is the measured material’s thermal energy change; assign the reaction’s opposite sign separately."
+      ],
+      "example": {
+        "question": "A model uses 100 g of solution, c = 4.18 J g⁻¹ °C⁻¹, initially 19.0°C and finally 23.0°C. Calculate Q for the solution.",
+        "steps": [
+          "ΔT = 23.0 − 19.0 = +4.0°C.",
+          "Q = 100 × 4.18 × 4.0 = +1,672 J.",
+          "The solution gains 1.672 kJ; the reaction’s estimated heat transfer has the opposite sign."
+        ],
+        "explanation": "Units and the named recipient of heat determine the interpretation."
+      },
+      "commonMistakes": [
+        "Using the final temperature instead of ΔT.",
+        "Treating 1,672 J as 1,672 kJ.",
+        "Assigning positive reaction ΔH to a warming solution."
+      ]
+    },
+    {
+      "id": "enthalpy-amount",
+      "title": "Turn the heat estimate into a molar enthalpy change",
+      "points": [
+        "3.4"
+      ],
+      "terms": [
+        "enthalpy change",
+        "ΔH",
+        "mole",
+        "limiting reactant"
+      ],
+      "paragraphs": [
+        "In the simple constant-pressure model, estimate reaction heat as minus the heat gained by the measured surroundings. Divide that signed reaction heat by the reacting amount on the stated molar basis. Convert joules to kilojoules for a result in kJ mol⁻¹. Exothermic ΔH is negative; endothermic ΔH is positive.",
+        "The amount must refer to what actually reacted: the fuel consumed, the limiting dissolved reactant or the neutralized amount. An excess reagent’s initial amount is not the amount reacted. If an equation has a coefficient of 2 for that species, a value per mole of that species differs from a value per mole of the reaction as written.",
+        "Retain enough figures through intermediate steps and round the final result to suit the supplied data. Always name the molar basis. An estimate from a school calorimeter does not automatically equal a standard enthalpy value under specified reference conditions."
+      ],
+      "example": {
+        "question": "A hypothetical change warms its measured surroundings by 1,672 J while 0.040 mol of the stated reactant is consumed. Estimate ΔH per mole of that reactant.",
+        "steps": [
+          "Estimated reaction heat = −1,672 J = −1.672 kJ.",
+          "ΔH = −1.672 ÷ 0.040 = −41.8 kJ mol⁻¹.",
+          "The negative sign indicates energy released; the value is an estimate on the supplied basis."
+        ],
+        "explanation": "Sign, joule conversion and reacting amount are separate decisions."
+      },
+      "commonMistakes": [
+        "Dividing by the amount initially added in excess.",
+        "Losing the factor of 1,000.",
+        "Reporting a value without specifying its molar basis."
+      ]
+    },
+    {
+      "id": "neutralization-calorimeter",
+      "title": "Combine both solutions in neutralization calorimetry",
+      "points": [
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.8"
+      ],
+      "terms": [
+        "neutralization",
+        "total mass",
+        "initial temperature",
+        "insulated cup"
+      ],
+      "paragraphs": [
+        "Measure the acid and alkali volumes and concentrations, and their temperatures before combining them in a supported insulated cup. Prefer the same initial temperature. If they differ, a simple arithmetic mean is only justified for equal thermal capacities; otherwise use the appropriate weighted baseline or re-equilibrate them first.",
+        "Mix promptly with a suitable stirrer, keep the probe in the solution without touching the cup wall, and record the maximum temperature or a planned time series. Calculate Q using the combined solution mass. The usual density and water heat-capacity approximations must be stated; energy absorbed by the cup and probe is neglected only as an approximation.",
+        "HCl + NaOH → NaCl + H₂O is a 1:1 neutralization. Compare the two initial mole amounts to find how much reacts. The invented calculation below describes a possible dataset; it is not a measured result or a memorized universal enthalpy for all acids and alkalis."
+      ],
+      "example": {
+        "question": "A model mixes 30.0 cm³ each of 1.00 mol dm⁻³ HCl and NaOH. Both start at 20.0°C and the mixture reaches 26.0°C. Use density 1.00 g cm⁻³ and c = 4.18 J g⁻¹ °C⁻¹.",
+        "steps": [
+          "Combined mass = 60.0 g and ΔT = +6.0°C.",
+          "Q(solution) = 60.0 × 4.18 × 6.0 = +1,504.8 J.",
+          "Each reactant supplies 0.0300 mol; 0.0300 mol is neutralized.",
+          "ΔH ≈ −1.5048 ÷ 0.0300 = −50.2 kJ mol⁻¹ on that basis."
+        ],
+        "explanation": "Both solution volumes contribute to the heated mass, while stoichiometry sets the reacting amount."
+      },
+      "commonMistakes": [
+        "Using 30 g rather than the combined 60 g.",
+        "Averaging unequal-volume initial temperatures without checking heat capacities.",
+        "Calling the model result a performed practical."
+      ]
+    },
+    {
+      "id": "dissolving-displacement",
+      "title": "Distinguish dissolving from displacement experiments",
+      "points": [
+        "3.2",
+        "3.8"
+      ],
+      "terms": [
+        "dissolving",
+        "displacement",
+        "temperature minimum",
+        "time series"
+      ],
+      "paragraphs": [
+        "For dissolving, add a measured amount of a suitable solute to a measured solvent in the approved insulated-cup setup. Stir to dissolve it and follow the temperature. Some dissolving changes cool the solution and some warm it. State whether the calculation uses solution mass or an explicit solvent-mass approximation; do not quietly switch between them.",
+        "For displacement, a more reactive metal can reduce another metal’s ions. A suitable school example is Zn(s) + CuSO₄(aq) → ZnSO₄(aq) + Cu(s). Measure the solution temperature before and after adding the approved metal amount. If zinc is in excess, the copper(II) sulfate amount limits the reaction and sets the reacting amount for a molar estimate.",
+        "A slow reaction loses heat while it is occurring. Record temperatures against time and use a justified correction rather than assuming the highest observed temperature captures all transferred energy. No named solid is being recommended for unsupervised mixing; quantities, handling and disposal belong to the teacher-approved method."
+      ],
+      "example": {
+        "question": "Why is the amount of zinc initially added not always the right divisor for a displacement enthalpy calculation?",
+        "steps": [
+          "Zinc may be deliberately in excess.",
+          "Only part of that zinc then reacts.",
+          "Use the limiting amount and the balanced equation to identify the reacting amount."
+        ],
+        "explanation": "The calorimeter result must be matched to the chemical amount actually consumed."
+      },
+      "commonMistakes": [
+        "Assuming dissolving is always exothermic.",
+        "Using all excess metal as though it reacted.",
+        "Ignoring heat loss during a slow change."
+      ]
+    },
+    {
+      "id": "fuel-calorimeter",
+      "title": "Estimate combustion energy from water warming",
+      "points": [
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.8"
+      ],
+      "terms": [
+        "combustion",
+        "fuel mass loss",
+        "water mass",
+        "heat loss"
+      ],
+      "paragraphs": [
+        "A supervised spirit-burner experiment measures the water mass, initial and final water temperatures, and burner mass before and after the burn. Keep the burner-to-vessel distance, water amount and method comparable. Use appropriate flame protection and stable apparatus without enclosing the flame in a way that restricts oxygen or traps dangerous gases.",
+        "The water’s Q is calculated from its mass and ΔT. Convert the estimated fuel burned to moles using the supplied molar mass, then divide the opposite-signed heat estimate by those moles. Heat absorbed by the vessel, heat escaping to the air and incomplete combustion usually make the captured-water estimate less negative than the full combustion value.",
+        "Burner mass loss may include evaporation rather than combustion, and evaporating water can alter the water mass. Soot is evidence relevant to incomplete combustion. Repeating the same flawed setup does not eliminate these systematic effects. The model below is invented, not an experimentally determined standard value."
+      ],
+      "example": {
+        "question": "A model burns 0.40 g of a fuel with molar mass 46 g mol⁻¹. It heats 100 g water from 18°C to 36°C with c = 4.18 J g⁻¹ °C⁻¹. Estimate energy per mole from the captured heat.",
+        "steps": [
+          "ΔT = 18°C; Q(water) = 100 × 4.18 × 18 = 7,524 J.",
+          "Estimated fuel amount = 0.40 ÷ 46 = 0.00870 mol.",
+          "ΔH estimate = −7.524 ÷ (0.40/46) ≈ −865 kJ mol⁻¹.",
+          "This captures only the measured water heating under the assumptions."
+        ],
+        "explanation": "The heat recipient and burned reactant use different masses."
+      },
+      "commonMistakes": [
+        "Using 0.40 g in the water Q calculation.",
+        "Equating every gram of burner mass loss with burned fuel without qualification.",
+        "Claiming insulation guarantees complete heat capture."
+      ]
+    },
+    {
+      "id": "calorimetry-evaluation",
+      "title": "Evaluate thermal measurements and uncertainty",
+      "points": [
+        "3.2",
+        "3.3",
+        "3.8"
+      ],
+      "terms": [
+        "insulation",
+        "heat capacity",
+        "resolution",
+        "systematic error"
+      ],
+      "paragraphs": [
+        "A cup and lid reduce exchange with the room; they do not eliminate it. Apparatus also absorbs energy. A good evaluation names the physical effect and its direction: for a warming reaction, heat escaping before measurement lowers the observed rise and usually reduces the estimated magnitude of released heat. An endothermic mixture may gain energy from the room, reducing the measured cooling.",
+        "A temperature change uses two readings. If each has a stated maximum reading uncertainty of ±0.5°C, the worst-case uncertainty in their difference is ±1.0°C. A 2.0°C change then has 50% relative worst-case uncertainty, much larger than the 10% for a 10.0°C change. This is a supplied worst-case convention, not a statistical standard uncertainty.",
+        "Repeat independent runs to assess variation, retain justified anomalies with an explanation and compare means appropriately. Better insulation, consistent mixing and a justified cooling correction address specific biases. Use a suitable stirrer; do not risk breaking a glass thermometer by using it as a stirring rod."
+      ],
+      "example": {
+        "question": "Under the supplied ±0.5°C per-reading worst-case convention, calculate the relative uncertainty in an invented 4.0°C temperature change.",
+        "steps": [
+          "Maximum uncertainty in the difference = 0.5 + 0.5 = 1.0°C.",
+          "Relative uncertainty = 1.0 ÷ 4.0 × 100 = 25%.",
+          "Repeating readings may improve the estimate of variation but does not remove a fixed calibration bias."
+        ],
+        "explanation": "A small difference can have a large relative uncertainty."
+      },
+      "commonMistakes": [
+        "Using only one reading’s uncertainty for a difference.",
+        "Calling the cup’s heat capacity exactly zero.",
+        "Saying repeats automatically remove heat loss."
+      ]
+    },
+    {
+      "id": "energy-levels",
+      "title": "Draw reactant and product energy levels — Paper 2C",
+      "points": [
+        "3.5C"
+      ],
+      "terms": [
+        "energy-level diagram",
+        "exothermic",
+        "endothermic",
+        "ΔH"
+      ],
+      "paragraphs": [
+        "Use a vertical energy axis and identify the reactant and product levels. For an exothermic change the products are lower and the reaction ΔH is negative. For an endothermic change the products are higher and ΔH is positive. Label the difference between the levels with its direction.",
+        "The vertical difference represents the overall reaction change. It is not the energy needed to start a collision and it is not a temperature axis. A simple energy-level diagram needs the two labelled levels and their difference; a separate reaction profile adds the activation barrier.",
+        "Use supplied values on the same molar basis. Reversing the reaction reverses the sign of the level difference. Diagram heights without a numerical scale show the direction of change, not a measured number of kilojoules."
+      ],
+      "example": {
+        "question": "An invented diagram places reactants at 70 and products at 25 kJ mol⁻¹ on the same reaction basis. What is ΔH?",
+        "steps": [
+          "ΔH = product level − reactant level = 25 − 70.",
+          "ΔH = −45 kJ mol⁻¹, so the forward change is exothermic.",
+          "The reverse change would have ΔH = +45 kJ mol⁻¹."
+        ],
+        "explanation": "Compare the final and initial levels rather than their absolute heights."
+      },
+      "commonMistakes": [
+        "Labelling the y-axis temperature.",
+        "Drawing higher products for a negative ΔH.",
+        "Reading an unscaled diagram as precise measured data."
+      ],
+      "diagram": {
+        "src": "/diagrams/chemistry-energy-levels.svg",
+        "alt": "Original paired energy-level sketches: exothermic products are lower than reactants with a downward negative delta H arrow; endothermic products are higher with an upward positive delta H arrow.",
+        "caption": "Schematic levels on the same reaction basis. The vertical axis is energy; no activation barrier is shown in this level comparison."
+      }
+    },
+    {
+      "id": "bond-balance",
+      "title": "Count broken and formed bonds — Paper 2C",
+      "points": [
+        "3.6C",
+        "3.7C"
+      ],
+      "terms": [
+        "bond energy",
+        "bond breaking",
+        "bond formation",
+        "average value"
+      ],
+      "paragraphs": [
+        "Breaking a bond requires energy, while forming a bond releases energy. A reaction can release energy overall even though energy was needed to break reactant bonds: compare both totals. The estimate is ΔH ≈ total energy for bonds broken − total energy released for bonds formed.",
+        "Draw or interpret the structures and multiply bond counts by the balanced equation coefficients. A double or triple bond is a distinct table entry, not two or three arbitrary single-bond values. Count all affected bonds consistently; unchanged bonds can cancel only when represented consistently on both sides.",
+        "Average bond energies provide an approximate gas-phase model. A supplied value is not necessarily the exact bond energy in every compound, and condensed states can introduce additional effects. State the reaction basis; the example uses hypothetical supplied values for arithmetic practice, not a claim about measured ammonia synthesis."
+      ],
+      "example": {
+        "question": "For N₂(g) + 3H₂(g) → 2NH₃(g), use hypothetical supplied values N≡N = 940, H–H = 430 and N–H = 390 kJ mol⁻¹. Estimate ΔH for the equation as written.",
+        "steps": [
+          "Break one N≡N and three H–H: 940 + 3 × 430 = 2,230 kJ.",
+          "Form six N–H bonds: 6 × 390 = 2,340 kJ.",
+          "ΔH ≈ 2,230 − 2,340 = −110 kJ per mole of reaction as written.",
+          "On a per-mole-of-NH₃ basis, the same estimate is −55 kJ mol⁻¹."
+        ],
+        "explanation": "Coefficients and the requested basis prevent a factor-of-two error."
+      },
+      "commonMistakes": [
+        "Saying breaking bonds releases energy.",
+        "Counting three N–H bonds for two NH₃ molecules.",
+        "Treating average bond-energy estimates as exact standard enthalpies."
+      ]
+    },
+    {
+      "id": "rate-measure",
+      "title": "Measure a reaction rate from a changing quantity",
+      "points": [
+        "3.9"
+      ],
+      "terms": [
+        "rate",
+        "gas volume",
+        "mass loss",
+        "time"
+      ],
+      "paragraphs": [
+        "Rate describes how quickly reactants are used or products form. In a gas-producing reaction, record gas volume against time or measure the time to a fixed volume. If a gas escapes from an appropriate balance setup, mass loss against time can be useful. Choose a measurement linked to the reaction rather than a vague judgement of how vigorous it looks.",
+        "For an interval, average gas-production rate is change in gas volume divided by elapsed time, commonly cm³ s⁻¹. A fixed-volume endpoint permits a fair speed comparison only if the same amount of product is used each time. Reciprocal time is a relative rate proxy under those conditions; it is not automatically a measured molar rate.",
+        "Start timing consistently with mixing. A gas syringe needs secure connections, a freely moving plunger and sufficient capacity. A gas-evolving system must not be blocked or rigidly sealed. No gas curves have been measured here; examples are invented to explain data interpretation."
+      ],
+      "example": {
+        "question": "A hypothetical reaction produces 12 cm³ gas at 10 s and 36 cm³ at 30 s. Calculate its average rate over that interval.",
+        "steps": [
+          "Volume change = 36 − 12 = 24 cm³.",
+          "Time interval = 30 − 10 = 20 s.",
+          "Average rate = 24 ÷ 20 = 1.2 cm³ s⁻¹."
+        ],
+        "explanation": "Use differences in both coordinates for an interval."
+      },
+      "commonMistakes": [
+        "Dividing 36 by 30 when asked for the later interval.",
+        "Using a reciprocal time without a consistent endpoint.",
+        "Blocking the outlet to a gas-producing flask."
+      ]
+    },
+    {
+      "id": "rate-curves",
+      "title": "Read curve gradients and final product amounts separately",
+      "points": [
+        "3.9",
+        "3.10",
+        "3.15"
+      ],
+      "terms": [
+        "gradient",
+        "tangent",
+        "plateau",
+        "limiting reactant"
+      ],
+      "paragraphs": [
+        "A steeper gas-volume versus time curve indicates a greater rate at that point. To estimate instantaneous rate, draw a tangent to a suitable smooth curve and calculate its gradient using two widely separated points on the tangent. Those points do not have to be original measurements, but must lie on the tangent and use the stated axes.",
+        "A plateau shows no further collected volume increase under the measurement conditions. It can support completion of gas production when the apparatus and reagents behave as intended; a leak, jammed syringe or blocked connection can create a misleading trace. A horizontal line is a zero measured rate, not proof of which chemical was exhausted.",
+        "A faster run can have the same final gas volume if the same limiting amount reacts fully under matched gas conditions. Changing concentration at fixed volume also changes reagent amount; if that reagent becomes limiting, the final volume can change too. Rate and final yield are separate questions."
+      ],
+      "example": {
+        "question": "Two ideal matched runs use the same limiting marble mass with acid in excess. One reaches the same 48 cm³ plateau sooner. What changes and what stays the same?",
+        "steps": [
+          "The sooner run has a higher rate over appropriate early intervals.",
+          "The same limiting amount produces the same final CO₂ amount.",
+          "The common plateau does not imply the rates were the same."
+        ],
+        "explanation": "Completion amount and speed are different graph features."
+      },
+      "commonMistakes": [
+        "Reading plateau height as reaction rate.",
+        "Forcing the same final volume when different limiting amounts were used.",
+        "Using a curve chord as an instantaneous tangent without explanation."
+      ],
+      "diagram": {
+        "src": "/diagrams/chemistry-rate-curves.svg",
+        "alt": "Original schematic gas volume versus time: a faster curve is initially steeper than a slower curve, and both approach the same final volume when limiting amounts and gas conditions match.",
+        "caption": "A schematic comparison with equal final amounts under the stated assumptions. Curve slope shows rate; plateau height shows collected amount. These are not measured results."
+      }
+    },
+    {
+      "id": "rate-area",
+      "title": "Expose more solid surface without changing its amount",
+      "points": [
+        "3.9",
+        "3.10",
+        "3.11",
+        "3.15"
+      ],
+      "terms": [
+        "surface area",
+        "marble chips",
+        "collision frequency"
+      ],
+      "paragraphs": [
+        "For the same mass of a solid, smaller pieces generally provide a larger total exposed surface area than a few larger pieces. Liquid reactant can reach more reacting sites, increasing successful collisions per second and usually increasing the reaction rate. Crushing changes accessible area, not the solid’s total mass or its particles’ temperature.",
+        "Compare similar material and equal masses of different chip sizes while holding acid concentration, acid volume, initial temperature, mixing and apparatus constant. Surface area cannot be perfectly controlled just by weighing; record a consistent size range and repeat. Do not confuse more pieces with more total area without checking their sizes and mass.",
+        "If equal masses of pure calcium carbonate react completely with hydrochloric acid in excess, their total CO₂ amounts are the same. Powder can finish sooner. If the acid amount is insufficient or the collection is faulty, the final-volume comparison needs different reasoning."
+      ],
+      "example": {
+        "question": "Explain why an equal mass of smaller marble chips can give a steeper early CO₂ curve than larger chips at the same temperature.",
+        "steps": [
+          "Smaller pieces expose a greater total reacting surface.",
+          "More acid particles can collide with exposed carbonate sites per second.",
+          "More successful collisions per second increase the rate; the particles are not necessarily moving faster."
+        ],
+        "explanation": "Surface accessibility changes collision frequency."
+      },
+      "commonMistakes": [
+        "Saying smaller chips contain more total carbonate for equal pure masses.",
+        "Claiming crushing raises every particle’s kinetic energy throughout the experiment.",
+        "Failing to keep acid conditions constant."
+      ]
+    },
+    {
+      "id": "rate-concentration-pressure",
+      "title": "Distinguish concentration and gas compression from heating",
+      "points": [
+        "3.9",
+        "3.10",
+        "3.11"
+      ],
+      "terms": [
+        "concentration",
+        "pressure",
+        "gas compression",
+        "particles per volume"
+      ],
+      "paragraphs": [
+        "A more concentrated reacting solution has more relevant particles per unit volume. With the other conditions held constant, reactants have more opportunities to collide successfully per second, so the rate usually increases. This does not mean each particle has more energy; that is a temperature argument.",
+        "Compressing a reacting gas mixture at constant temperature puts its particles into a smaller volume, raising their concentration and collision frequency. This commonly increases the rate of a reaction involving those gas reactants. Raising total pressure by adding an inert gas at fixed volume is not the same as increasing the reacting gases’ concentration.",
+        "To investigate solution concentration, vary the concentration of one named reactant while holding the solid sample, total reaction volume where appropriate, temperature and collection method comparable. Interpret any change in final amount using limiting-reagent amounts; doubling concentration does not universally imply exactly twice the rate."
+      ],
+      "example": {
+        "question": "Why is “higher pressure makes molecules faster” an unsuitable explanation for compressing a gas at constant temperature?",
+        "steps": [
+          "The average kinetic energy is controlled by the unchanged temperature.",
+          "Compression puts the reacting particles closer together in a smaller volume.",
+          "Collision frequency increases without requiring a temperature increase."
+        ],
+        "explanation": "State which physical variable changed and which was controlled."
+      },
+      "commonMistakes": [
+        "Using temperature reasoning for concentration.",
+        "Treating inert-gas pressure as reacting-gas compression.",
+        "Promising an exact rate ratio without supporting data."
+      ]
+    },
+    {
+      "id": "rate-temperature",
+      "title": "Use collision energy to explain a temperature effect",
+      "points": [
+        "3.9",
+        "3.10",
+        "3.11"
+      ],
+      "terms": [
+        "temperature",
+        "kinetic energy",
+        "activation energy",
+        "successful collision"
+      ],
+      "paragraphs": [
+        "At a higher temperature, reacting particles have greater average kinetic energy. More collisions have sufficient energy to overcome the activation barrier, and collision frequency also tends to increase. More successful collisions per second explains the usual rate increase; not every collision reacts.",
+        "A fair temperature investigation pre-equilibrates reactants to the selected temperature using an approved water-bath arrangement and measures the actual reaction temperature. Keep concentrations, volumes, solid area and apparatus comparable. Thermal expansion changes collected gas volume, so compare gas measurements at matched or appropriately accounted-for conditions.",
+        "Temperature changes do not normally lower the activation energy for the same reaction pathway. That is the role of a suitable catalyst’s alternative pathway. No universal “doubling every ten degrees” rule is being assumed; use the supplied observations or a justified model."
+      ],
+      "example": {
+        "question": "Improve the explanation “heating speeds up the reaction because particles collide”.",
+        "steps": [
+          "At higher temperature, particles have greater average kinetic energy.",
+          "A larger fraction of collisions has enough energy for reaction.",
+          "The number of successful collisions per second increases; collisions alone are not sufficient."
+        ],
+        "explanation": "Link temperature to the energy condition for successful collisions."
+      },
+      "commonMistakes": [
+        "Saying activation energy itself falls when the mixture is warmed.",
+        "Saying all particles gain the same energy.",
+        "Ignoring gas expansion in a gas-volume comparison."
+      ]
+    },
+    {
+      "id": "catalyst-model",
+      "title": "Explain the alternative pathway provided by a catalyst",
+      "points": [
+        "3.9",
+        "3.10",
+        "3.12",
+        "3.13"
+      ],
+      "terms": [
+        "catalyst",
+        "alternative pathway",
+        "activation energy",
+        "regenerated"
+      ],
+      "paragraphs": [
+        "A catalyst increases reaction rate and is chemically unchanged overall at the end. It can participate in steps of a reaction and then be regenerated; “it does nothing chemically” is not an adequate explanation. A suitable catalyst is specific to the reaction and conditions.",
+        "The catalytic pathway has a lower activation barrier. At the same temperature, more reacting particles can undergo successful reaction, so rate increases. The catalyst does not heat every particle, supply extra reactant or change the overall reactant-to-product energy difference.",
+        "A visible gas increase after adding a solid supports a rate effect, but a complete identification of the solid as a catalyst also needs its chemical role. A solid that is consumed to make the gas is a reactant instead. Recovery and mass comparison may provide evidence but do not alone prove unchanged chemical identity."
+      ],
+      "example": {
+        "question": "A substance speeds a reaction, is regenerated overall and permits a lower activation barrier. What remains unchanged about the overall energy diagram?",
+        "steps": [
+          "The reactant and product levels remain the same for the same overall reaction.",
+          "The difference between those levels, ΔH, remains the same.",
+          "The pathway barrier is lower; this is a rate effect."
+        ],
+        "explanation": "Change the barrier without moving the endpoints."
+      },
+      "commonMistakes": [
+        "Calling every added solid a catalyst.",
+        "Saying a catalyst supplies activation energy.",
+        "Saying the catalyst must remain uninvolved at every intermediate step."
+      ]
+    },
+    {
+      "id": "reaction-profile",
+      "title": "Label activation energy and ΔH independently — Paper 2C",
+      "points": [
+        "3.14C"
+      ],
+      "terms": [
+        "reaction profile",
+        "activation energy",
+        "reaction progress",
+        "ΔH"
+      ],
+      "paragraphs": [
+        "A reaction profile has energy on the vertical axis and reaction progress on the horizontal axis. The forward activation energy is the vertical difference from the reactant level to the pathway’s highest barrier in the simple profile. ΔH is the product level minus the reactant level, not the barrier height.",
+        "An exothermic profile finishes below its starting level and an endothermic profile finishes above it. Both can have a positive activation barrier. Show a catalysed pathway with a lower barrier but unchanged endpoints for the same overall reaction. A simple one-hump sketch is a teaching model, not a claim that every catalytic mechanism has one step.",
+        "The horizontal axis is progress through the reaction, not elapsed seconds. Reading a profile does not directly tell you how many seconds the reaction takes. For a numerical question, keep the supplied energy units and reaction basis consistent."
+      ],
+      "example": {
+        "question": "A hypothetical profile has reactants at 70, products at 25 and an uncatalysed peak at 120 kJ mol⁻¹. A catalytic peak is at 95. Calculate forward barriers and ΔH.",
+        "steps": [
+          "Uncatalysed forward barrier = 120 − 70 = 50 kJ mol⁻¹.",
+          "Catalytic forward barrier = 95 − 70 = 25 kJ mol⁻¹.",
+          "ΔH = 25 − 70 = −45 kJ mol⁻¹ for either pathway."
+        ],
+        "explanation": "Use different vertical differences for the barrier and the overall change."
+      },
+      "commonMistakes": [
+        "Measuring activation energy from zero rather than the reactant level.",
+        "Labelling reaction progress as time.",
+        "Changing product energy to make a catalytic peak lower."
+      ],
+      "diagram": {
+        "src": "/diagrams/chemistry-reaction-profile.svg",
+        "alt": "Original hypothetical exothermic profile: reactants at 70, products at 25, uncatalysed peak at 120 and catalytic peak at 95 kJ per mole on the same basis. Forward barriers 50 and 25; delta H minus 45 for both.",
+        "caption": "Invented scale and simplified pathways. A lower barrier changes rate while the reactant and product levels remain unchanged; progress is not elapsed time."
+      }
+    },
+    {
+      "id": "marble-design",
+      "title": "Plan the two marble-chip rate investigations",
+      "points": [
+        "3.9",
+        "3.15"
+      ],
+      "terms": [
+        "calcium carbonate",
+        "hydrochloric acid",
+        "gas syringe",
+        "controlled variable"
+      ],
+      "paragraphs": [
+        "The named reaction is CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g). An approved gas-syringe setup follows CO₂ volume at regular times. Collection over water is an alternative, but CO₂ dissolves partly in water, so the collection method has limitations and must be comparable across runs.",
+        "For surface area, vary chip size while keeping carbonate mass and material, acid concentration and volume, temperature and apparatus constant. For concentration, use a consistent chip mass and size distribution, vary dilute acid concentration and keep the acid volume and other conditions comparable. If comparing equal final yields, ensure the acid remains in excess throughout the selected series.",
+        "Repeat matched runs, start timing with mixing, check for leaks and ensure the gas outlet and syringe remain free. Use teacher-approved chip sizes and dilute acid, eye protection and safe handling; prepare smaller chips through an approved method rather than unsafe hammering. This is a plan, not a performed or calibrated practical."
+      ],
+      "example": {
+        "question": "Why is changing both the chip size and acid concentration at once a poor test of the concentration effect?",
+        "steps": [
+          "Either change can alter the rate.",
+          "The resulting curve cannot isolate concentration as the cause.",
+          "Keep chip mass and size distribution comparable while varying concentration only."
+        ],
+        "explanation": "Control competing explanations for the dependent measurement."
+      },
+      "commonMistakes": [
+        "Writing H₂ rather than CO₂ as the product.",
+        "Assuming collection over water captures every CO₂ molecule.",
+        "Using different carbonate masses in a chip-size comparison."
+      ]
+    },
+    {
+      "id": "peroxide-solids",
+      "title": "Compare solids in hydrogen peroxide decomposition",
+      "points": [
+        "3.9",
+        "3.12",
+        "3.16"
+      ],
+      "terms": [
+        "hydrogen peroxide",
+        "oxygen",
+        "manganese(IV) oxide",
+        "catalytic decomposition"
+      ],
+      "paragraphs": [
+        "Hydrogen peroxide decomposes according to 2H₂O₂(aq) → 2H₂O(l) + O₂(g). The named investigation compares the effect of different approved solids on the rate of oxygen production. A suitable example is manganese(IV) oxide. The oxygen test uses a glowing splint that relights, performed separately under supervised conditions.",
+        "Use the same peroxide volume and concentration, initial temperature, apparatus and timing method. Compare a specified consistent mass and particle-size range of the solids where practicable, and record those choices. Different solids have different surface properties, so this comparison ranks the tested samples under the chosen conditions rather than universal catalytic activity per active site.",
+        "Include an appropriate no-solid comparison and collect gas-volume versus time data or a consistent fixed-volume endpoint. Peroxide is an oxidising chemical and the change can be rapid and warm the mixture. Use approved dilute solutions and quantities, protect eyes and keep the gas path open; no demonstration or concentrated-peroxide recipe is given here."
+      ],
+      "example": {
+        "question": "Matched hypothetical samples collect 24 cm³ oxygen in 18 s with solid A and 30 s with solid B. Compare average rates to that endpoint.",
+        "steps": [
+          "A: 24 ÷ 18 = 1.33 cm³ s⁻¹.",
+          "B: 24 ÷ 30 = 0.80 cm³ s⁻¹.",
+          "A has the greater measured average rate under the stated matched conditions; no universal catalyst ranking is established."
+        ],
+        "explanation": "The same product endpoint supports a rate comparison."
+      },
+      "commonMistakes": [
+        "Writing H₂ as the decomposition gas.",
+        "Using a lighted-pop test for oxygen.",
+        "Ignoring changes in temperature or solid particle size."
+      ]
+    },
+    {
+      "id": "rate-evidence",
+      "title": "Explain limitations without inventing a result",
+      "points": [
+        "3.9",
+        "3.15",
+        "3.16"
+      ],
+      "terms": [
+        "repeatability",
+        "leak",
+        "dead time",
+        "fair comparison"
+      ],
+      "paragraphs": [
+        "A delay between mixing and fitting the connection can lose early gas and distort an initial rate. A leaking tube under-records volume. A sticking syringe or inadequate capacity can create a false plateau. Evaluate the particular trace and setup; do not automatically discard the least convenient result as an anomaly.",
+        "Repeat the full procedure independently to assess variation. Use a consistent mixing and timing protocol and choose time intervals suitable for the reaction speed. Record the actual temperature, reactant amounts and solid condition so a difference in rate has a defensible explanation.",
+        "An observation that one solid produces gas sooner supports a faster measured change in that experiment. It does not establish purity, unchanged catalyst identity or complete conversion by itself. Original worked examples are not examiner-calibrated questions, and these plans do not certify practical performance."
+      ],
+      "example": {
+        "question": "One peroxide run starts collecting gas five seconds after mixing, while another is connected before mixing. Is the early-rate comparison fair?",
+        "steps": [
+          "The first run can lose gas during the delay.",
+          "Its recorded time origin and volume history differ from the second.",
+          "Use a consistent method that captures the reaction from a defined start."
+        ],
+        "explanation": "An apparatus delay can mimic a chemical rate difference."
+      },
+      "commonMistakes": [
+        "Calling every flat curve complete reaction.",
+        "Repeating a leaking setup and calling the bias removed.",
+        "Claiming invented results were measured."
+      ]
+    },
+    {
+      "id": "reversible-arrow",
+      "title": "Use the reversible arrow to name both directions",
+      "points": [
+        "3.17",
+        "3.18"
+      ],
+      "terms": [
+        "reversible reaction",
+        "⇌",
+        "forward",
+        "reverse"
+      ],
+      "paragraphs": [
+        "A reversible reaction can form products from reactants and form the original reactants again from those products under suitable conditions. The symbol ⇌ shows the two directions. When discussing the forward reaction, read the equation left to right; the reverse direction swaps those roles.",
+        "Reversibility does not mean equal amounts must be present or that the mixture instantly reaches equilibrium. It also does not mean an open demonstration must retain every product. Conditions and escape of substances affect what is observed.",
+        "If the forward chemical change is endothermic, the reverse change is exothermic on the corresponding basis, and vice versa. Returning a substance to its starting chemical form is different from merely recovering an unchanged solid by filtration."
+      ],
+      "example": {
+        "question": "What does A ⇌ B say, and what does it not say, about an invented chemical system?",
+        "steps": [
+          "It indicates that A can form B and B can form A under suitable conditions.",
+          "It does not require equal amounts of A and B.",
+          "It does not alone establish that the current mixture has reached equilibrium."
+        ],
+        "explanation": "The arrow states reversibility, not the composition or timing."
+      },
+      "commonMistakes": [
+        "Reading ⇌ as a one-way arrow.",
+        "Assuming both concentrations must be equal.",
+        "Calling filtration a reverse chemical reaction."
+      ]
+    },
+    {
+      "id": "copper-water-reverse",
+      "title": "Reverse the hydration of copper(II) sulfate",
+      "points": [
+        "3.18"
+      ],
+      "terms": [
+        "hydrated copper sulfate",
+        "anhydrous",
+        "water of crystallisation"
+      ],
+      "paragraphs": [
+        "The required hydration example is blue hydrated copper(II) sulfate and white anhydrous copper(II) sulfate. In a supervised demonstration, controlled heating removes water of crystallisation; adding water to the cooled anhydrous material can restore the blue hydrated form and release energy.",
+        "A balanced model for the pentahydrate is CuSO₄·5H₂O(s) ⇌ CuSO₄(s) + 5H₂O. Heating favours dehydration in the demonstration; the forward water may leave as vapour. The observation must not be described as simply melting blue crystals into a white liquid. The reverse involves hydration, and using a large excess of water can instead produce a blue solution.",
+        "The usual open-tube demonstration shows a reversible chemical change, not a sealed dynamic-equilibrium experiment. Copper salts require approved handling and disposal. Controlled heating is important: more severe heating can lead to other changes, so this explanation is not permission to heat an unknown indefinitely."
+      ],
+      "example": {
+        "question": "Why is heating hydrated copper sulfate in an open tube not by itself proof that dynamic equilibrium has been established?",
+        "steps": [
+          "Water can escape from the open tube.",
+          "The observed colour change demonstrates dehydration.",
+          "It does not show retained products and equal forward/reverse reaction rates."
+        ],
+        "explanation": "Separate evidence of reversibility from evidence of equilibrium."
+      },
+      "commonMistakes": [
+        "Calling the white product hydrated copper sulfate.",
+        "Ignoring water leaving the system.",
+        "Assuming any blue appearance proves pure dry crystals."
+      ]
+    },
+    {
+      "id": "ammonium-reverse",
+      "title": "Explain ammonium chloride heating and re-formation",
+      "points": [
+        "3.18"
+      ],
+      "terms": [
+        "ammonium chloride",
+        "ammonia",
+        "hydrogen chloride",
+        "thermal decomposition"
+      ],
+      "paragraphs": [
+        "On controlled heating, solid ammonium chloride produces ammonia and hydrogen chloride gases: NH₄Cl(s) ⇌ NH₃(g) + HCl(g). These gases can recombine in a cooler region to form white solid ammonium chloride. The equation conserves one nitrogen, four hydrogens and one chlorine on both sides.",
+        "Describe the required chemical explanation rather than saying the solid only evaporates unchanged. A cooler white deposit is evidence consistent with re-formation of the solid, not evidence that either gas itself is white. The temperatures and transport of gases through the apparatus influence where a deposit is seen.",
+        "This is a teacher-controlled demonstration because the gases are irritating and must not be inhaled. The tube must not be heated as a rigidly sealed gas-producing container. A suitable demonstration can show reversibility without being a constant-temperature sealed equilibrium measurement."
+      ],
+      "example": {
+        "question": "Balance and identify the gases in the ammonium chloride heating example.",
+        "steps": [
+          "NH₄Cl(s) ⇌ NH₃(g) + HCl(g).",
+          "The gases are ammonia and hydrogen chloride.",
+          "They can recombine to produce solid ammonium chloride in a cooler region."
+        ],
+        "explanation": "Named gas products make the chemical reversibility explicit."
+      },
+      "commonMistakes": [
+        "Writing chlorine gas rather than hydrogen chloride.",
+        "Calling the white deposit white ammonia gas.",
+        "Heating a sealed tube to retain gases."
+      ]
+    },
+    {
+      "id": "dynamic-equilibrium",
+      "title": "Explain equal rates and constant concentrations — Paper 2C",
+      "points": [
+        "3.19C",
+        "3.20C"
+      ],
+      "terms": [
+        "dynamic equilibrium",
+        "closed system",
+        "equal rates",
+        "constant concentration"
+      ],
+      "paragraphs": [
+        "A reversible reaction can reach dynamic equilibrium in a closed system at maintained conditions. “Closed” means relevant reactants and products cannot escape; it does not mean no energy can pass through the boundary. An appropriate sealed system retains substances, but this is a concept, not a direction to seal and heat a demonstration tube.",
+        "At equilibrium, the forward and reverse reactions continue at equal rates. The concentrations remain constant because the two directions balance their changes. Constant concentrations are not necessarily equal concentrations, and a stable macroscopic appearance does not mean particles have stopped reacting.",
+        "Starting from one side, the reaction rates and concentrations can change while equilibrium is approached. A graph of forward and reverse rates ultimately shows equal rates, while a concentration graph can level off at different values. A plateau in a one-way gas collection is not the same evidence as dynamic equilibrium."
+      ],
+      "example": {
+        "question": "An invented equilibrium mixture has constant [A] = 0.80 and [B] = 0.20 mol dm⁻³. Does the unequal concentration contradict equilibrium?",
+        "steps": [
+          "No: equilibrium requires equal forward and reverse reaction rates.",
+          "The individual concentrations can be constant at different values.",
+          "Dynamic reactions still continue in both directions."
+        ],
+        "explanation": "Equality applies to the rates, not the concentrations."
+      },
+      "commonMistakes": [
+        "Saying both reactions stop.",
+        "Equating a closed system with a perfectly insulated system.",
+        "Demanding equal reactant and product amounts."
+      ]
+    },
+    {
+      "id": "equilibrium-catalyst",
+      "title": "Separate the time to equilibrium from its position — Paper 2C",
+      "points": [
+        "3.21C"
+      ],
+      "terms": [
+        "catalyst",
+        "equilibrium position",
+        "rate",
+        "composition"
+      ],
+      "paragraphs": [
+        "A suitable catalyst speeds the approach to equilibrium by enabling both forward and reverse changes. At the same maintained temperature and other conditions, it does not change the equilibrium position or equilibrium composition. It changes how quickly the system gets there.",
+        "This follows the same unchanged-endpoint distinction as the energy profile: a catalyst changes a pathway barrier without changing the overall reactant-product energy difference. Greater product collected after a short fixed time can reflect a rate improvement rather than a different final equilibrium yield.",
+        "Compare systems that have actually reached equilibrium before drawing a conclusion about equilibrium composition. A catalyst’s recovery or its effect on a short-time gas trace is not a measurement of the equilibrium position."
+      ],
+      "example": {
+        "question": "Two otherwise matched systems reach equilibrium at different times because one has a catalyst. What can be said about their final equilibrium compositions?",
+        "steps": [
+          "They are the same under the stated maintained conditions.",
+          "The catalysed system reaches that composition sooner.",
+          "A difference before equilibrium is reached is a time/rate comparison, not a changed equilibrium position."
+        ],
+        "explanation": "Specify when the comparison is made."
+      },
+      "commonMistakes": [
+        "Saying a catalyst always increases equilibrium yield.",
+        "Claiming it only accelerates the forward direction.",
+        "Comparing an unfinished run with an equilibrium run."
+      ]
+    },
+    {
+      "id": "equilibrium-temperature",
+      "title": "Use the endothermic direction for heating predictions — Paper 2C",
+      "points": [
+        "3.22C"
+      ],
+      "terms": [
+        "temperature",
+        "endothermic direction",
+        "exothermic direction",
+        "equilibrium shift"
+      ],
+      "paragraphs": [
+        "For an equilibrium mixture, increasing temperature shifts the position towards the endothermic direction; decreasing temperature shifts it towards the exothermic direction. Identify the direction first from the supplied energy information. “Heating makes more product” is not a rule unless the forward direction is endothermic.",
+        "For the gas reaction N₂ + 3H₂ ⇌ 2NH₃, the forward formation is exothermic. Increasing temperature shifts equilibrium towards nitrogen and hydrogen; decreasing temperature favours ammonia at equilibrium. A lower temperature can favour that equilibrium composition while also slowing the approach to it.",
+        "Keep other conditions defined and distinguish a new equilibrium position from the immediate transient after changing temperature. You do not need to memorize the name of a general equilibrium principle to explain the required directional prediction. The example gives a qualitative prediction, not an industrial optimization or a measured yield."
+      ],
+      "example": {
+        "question": "An invented reversible reaction has endothermic forward formation of product P. Predict the equilibrium shift when temperature rises.",
+        "steps": [
+          "The endothermic direction is forward.",
+          "Increasing temperature favours that direction.",
+          "The equilibrium shifts towards P; this does not mean every reactant is converted."
+        ],
+        "explanation": "Read the supplied direction of energy transfer before naming the shift."
+      },
+      "commonMistakes": [
+        "Always choosing the exothermic direction when heating.",
+        "Confusing a faster approach with a greater equilibrium yield.",
+        "Claiming the shift means complete conversion."
+      ]
+    },
+    {
+      "id": "equilibrium-pressure",
+      "title": "Count gas coefficients before predicting a pressure shift — Paper 2C",
+      "points": [
+        "3.22C"
+      ],
+      "terms": [
+        "gas moles",
+        "compression",
+        "equilibrium",
+        "pressure"
+      ],
+      "paragraphs": [
+        "For a gaseous equilibrium compressed at constant temperature, increased pressure favours the side with fewer moles of gas. Decreased pressure by expansion favours the side with more gas moles. Count balanced gas coefficients; do not count solid or liquid coefficients in this comparison.",
+        "N₂(g) + 3H₂(g) ⇌ 2NH₃(g) compares four gas moles on the left with two on the right. Compression favours ammonia. By contrast, H₂(g) + I₂(g) ⇌ 2HI(g) has two gas moles on each side, so the simple volume-induced pressure change does not shift its equilibrium position at constant temperature.",
+        "Pressure created by compressing reacting gases differs from increasing total pressure by adding an inert gas at fixed volume. Keep that condition explicit. A pressure change can affect reaction rates without producing a shift in equilibrium position for every equation."
+      ],
+      "example": {
+        "question": "For CaCO₃(s) ⇌ CaO(s) + CO₂(g), which side is favoured by greater CO₂ pressure at maintained temperature?",
+        "steps": [
+          "The left has zero gas moles; the right has one gas mole.",
+          "Greater reacting-gas pressure favours the side with fewer gas moles.",
+          "The shift is towards CaCO₃; the solids are not counted as gases."
+        ],
+        "explanation": "Use states and coefficients, not the number of written formulas."
+      },
+      "commonMistakes": [
+        "Counting solid calcium carbonate as a gas molecule.",
+        "Assuming all pressure changes favour products.",
+        "Ignoring equal gas coefficients or the method used to raise pressure."
+      ]
+    }
+  ]
+}

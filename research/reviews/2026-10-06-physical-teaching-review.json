@@ -1,0 +1,154 @@
+{
+  "date": "2026-10-06",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "status": "bounded-source-and-logic-review",
+  "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "ownPDFPages": [
+    27,
+    28
+  ],
+  "printedPages": [
+    21,
+    22
+  ],
+  "newSections": 27,
+  "reviewedParents": 22,
+  "localEditorialRequirements": 78,
+  "partialLinks": 57,
+  "completePoints": 0,
+  "completeChapters": 0,
+  "fullyProcessedPapers": 0,
+  "activeTemplates": 0,
+  "arithmeticChecks": [
+    {
+      "name": "Q solution",
+      "result": 1672.0,
+      "expected": 1672
+    },
+    {
+      "name": "Molar heat",
+      "result": -41.8,
+      "expected": -41.8
+    },
+    {
+      "name": "Combined neutralization Q",
+      "result": 1504.8,
+      "expected": 1504.8
+    },
+    {
+      "name": "Combined neutralization molar estimate",
+      "result": -50.16,
+      "expected": -50.16
+    },
+    {
+      "name": "Fuel capture estimate",
+      "result": -865.26,
+      "expected": -865.26
+    },
+    {
+      "name": "Worst-case temperature difference percent",
+      "result": 25.0,
+      "expected": 25
+    },
+    {
+      "name": "Bond estimate per reaction",
+      "result": -110,
+      "expected": -110
+    },
+    {
+      "name": "Interval gas rate",
+      "result": 1.2,
+      "expected": 1.2
+    },
+    {
+      "name": "Profile barrier",
+      "result": 50,
+      "expected": 50
+    },
+    {
+      "name": "Catalytic barrier",
+      "result": 25,
+      "expected": 25
+    },
+    {
+      "name": "Profile enthalpy",
+      "result": -45,
+      "expected": -45
+    },
+    {
+      "name": "Guide printed intermediate correction",
+      "result": 55176.0,
+      "expected": 55176
+    }
+  ],
+  "checks": [
+    "All 22 own numbered identities and exact C tags visually reviewed: eight Paper 2C only, fourteen both papers.",
+    "Three original diagrams state hypothetical or schematic status; the 70 to 25 profile has ΔH −45 and forward barriers 50/25 on the stated basis.",
+    "Heat recipient mass and units, opposite reaction sign, combined neutralization mass and limiting amount checked independently.",
+    "Unequal initial temperatures require thermal-capacity weighting, rather than an unqualified arithmetic mean.",
+    "Average gas-phase bond values and hypothetical 940/430/390 arithmetic distinguished from actual data and source exercises.",
+    "Atom conservation checked for zinc displacement, marble/acid, peroxide, copper sulfate pentahydrate, ammonium chloride, ammonia formation, hydrogen iodide formation and carbonate decomposition.",
+    "Interval, tangent and fixed-endpoint rates separated from final amount; temperature, area, concentration and compression explanations distinguished.",
+    "A catalyst may participate and regenerate; lower barrier does not change overall ΔH or equilibrium position.",
+    "A closed system retains substances; it need not be insulated. Equal reaction rates do not require equal concentrations.",
+    "Ammonium chloride decomposes and re-forms; the white deposit is not white gas. Open heated demonstrations are not instructions to heat sealed tubes.",
+    "Pressure predictions use gas states, coefficients and a specified volume change; equilibrium temperature shifts are distinct from reaction speed."
+  ],
+  "supportingSources": [
+    {
+      "title": "Pearson practical guide: selected calorimetry methods and limitations",
+      "url": "https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Biology/2017/teaching-and-learning-materials/biology-chemistry-physics-core-practical-guide.pdf#page=114"
+    },
+    {
+      "title": "Pearson practical guide: marble-chip investigations",
+      "url": "https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Biology/2017/teaching-and-learning-materials/biology-chemistry-physics-core-practical-guide.pdf#page=128"
+    },
+    {
+      "title": "Pearson practical guide: catalytic decomposition investigation",
+      "url": "https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Biology/2017/teaching-and-learning-materials/biology-chemistry-physics-core-practical-guide.pdf#page=134"
+    },
+    {
+      "title": "OpenStax: independent heat-transfer check",
+      "url": "https://openstax.org/books/chemistry-2e/pages/5-2-calorimetry"
+    },
+    {
+      "title": "OpenStax: independent bond-energy estimate check",
+      "url": "https://openstax.org/books/chemistry-2e/pages/7-5-strengths-of-ionic-and-covalent-bonds"
+    },
+    {
+      "title": "OpenStax: independent successful-collision check",
+      "url": "https://openstax.org/books/chemistry-2e/pages/12-5-collision-theory"
+    },
+    {
+      "title": "OpenStax: independent pathway check",
+      "url": "https://openstax.org/books/chemistry-2e/pages/12-7-catalysis"
+    },
+    {
+      "title": "OpenStax: independent dynamic-equilibrium check",
+      "url": "https://openstax.org/books/chemistry-2e/pages/13-1-chemical-equilibria"
+    },
+    {
+      "title": "OpenStax: independent pressure and temperature check",
+      "url": "https://openstax.org/books/chemistry-2e/pages/13-3-shifting-equilibria-le-chateliers-principle"
+    },
+    {
+      "title": "RSC: selected indexed reversible-reaction facts",
+      "url": "https://edu.rsc.org/cpd/how-to-teach-reversible-reactions-and-equilibrium-at-14-16/4018148.article"
+    }
+  ],
+  "sourceAccessNotes": [
+    "Own PDF 27/28 visually read. Practical guide SHA256: 9dd6228da0e915ea90fcca823aad4446d92d05faa59f9da1e9496b22b292a7fb.",
+    "Guide 114/115 previously visually read; 117/128/134 newly visually read. Selected method text 117/119/121/128/129/134 read. Not the whole 211-page guide and not a new examination pair.",
+    "Guide PDF 117 visually confirms an intermediate factor-of-ten typo: 2758.8 divided by 0.050 is 55176 J/mol, while the printed intermediate is 5517.6. Its final −55 kJ/mol is consistent with correct division. No source numerical exercise copied into teaching.",
+    "Guide cup specific-heat wording not adopted unqualified; the teaching states apparatus total heat-capacity and insulation assumptions.",
+    "RSC full article body inaccessible; only narrow indexed facts for the two named reversible reactions used alongside the own specification. No full-article or recipe claim.",
+    "Selected OpenStax facts independently checked. No source diagrams, numerical exercises, rate-law derivations or whole chapters reproduced.",
+    "An older OpenStax factors page shows an iron/HCl equation producing FeCl3; that equation was not adopted. Own balanced marble, zinc and peroxide examples used."
+  ],
+  "limitations": [
+    "Independent assessment and practical-response calibration pending.",
+    "No physical calorimetry, gas collection, hydration or heating performed.",
+    "All 22 parents remain partial; no human review or whole-chapter completion."
+  ]
+}
