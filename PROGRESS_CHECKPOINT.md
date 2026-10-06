@@ -1,3 +1,11 @@
+# Latest phase — Metal extraction, uses and alloys, 6 October 2026
+
+Read `research/checkpoints/2026-10-06-METAL-EXTRACTION.md` first. Preserve 03306c4 and all descendants. GitHub 24900b3 exactly mirrors the acid-practical source; older pending sync resolved. Eight new partial lessons and one original diagram cover 2.22C–2.27C, all Paper 2C-only. Inorganic has 42 sections.
+
+Totals: 670 sections / 27 partial notes / 36 routes; 615 reviewed identities / 599 partial audits / 1,895 local requirements / 899 partial links. Chemistry: 91 sections, 87 identities/audits, 284 requirements. All 143 tests, types, lint, 14 research checks, content/evidence, isolated D1, build and 90-file public scan pass. Desktop diagram, search and exact component labels verified; narrow/hosted checks pending. Seven obtained pairs; zero fully processed papers, complete chapters/points or active templates. Seven offline experimental families; live registry empty.
+
+Commit/sync this phase non-force, verify exact tree, then continue own 2.28 onward acids/alkalis/salts and the remaining curriculum, paper and independent calibration work. Preserve quality/UI/history/counts; AI last. No reset, Sites version, deployment or public URL. Latest user requests faster useful work until weekly exhaustion; historical 5% gate is overridden for this run. Both allowances available: last 96% five-hour / 99% weekly. Older entries below are historical.
+
 # Latest phase — Acid–metal practical, 6 October 2026
 
 Read `research/checkpoints/2026-10-06-ACID-PRACTICAL.md` first. Preserve5963ddd andall descendants. GitHub1802c33 exactly mirrors the reactivity tree;older pending sync resolved. Two original partial lessons cover own2.21,both1C/2C;inorganic34sections. No performed experiment or new examination pair. Guide98/99 visually read;not a processed paper.

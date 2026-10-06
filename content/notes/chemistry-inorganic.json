@@ -33,7 +33,10 @@
     "Recall the eleven-metal order required by Pearson.",
     "Distinguish rusting conditions, barrier protection and sacrifice.",
     "Balance electron-transfer examples and identify both agent roles.",
-    "Review the named acid–metal practical and distinguish rate from final product amount."
+    "Review the named acid–metal practical and distinguish rate from final product amount.",
+    "Select extraction methods from reactivity and supplied data for Paper 2C.",
+    "Link named metal and steel uses to properties for Paper 2C.",
+    "Explain alloy composition and the atom-size hardness model for Paper 2C."
   ],
   "supportingSources": [
     {
@@ -204,6 +207,49 @@
       "sectionIds": [
         "acid-metal-practical-plan",
         "acid-metal-practical-interpretation"
+      ]
+    },
+    {
+      "title": "Australian Aluminium Council: molten electrolysis example",
+      "url": "https://aluminium.org.au/about-aluminium/how-aluminium-is-made/aluminium-smelting/",
+      "sectionIds": [
+        "metal-extraction-electrolysis"
+      ]
+    },
+    {
+      "title": "RSC Periodic Table: aluminium properties and alloy uses",
+      "url": "https://periodic-table.rsc.org/element/13/aluminium",
+      "sectionIds": [
+        "metal-uses-aluminium-copper"
+      ]
+    },
+    {
+      "title": "RSC Periodic Table: copper conductivity and wire use",
+      "url": "https://periodic-table.rsc.org/element/29/copper",
+      "sectionIds": [
+        "metal-uses-aluminium-copper"
+      ]
+    },
+    {
+      "title": "RSC Periodic Table: iron and steel properties",
+      "url": "https://periodic-table.rsc.org/element/26/iron",
+      "sectionIds": [
+        "metal-extraction-carbon",
+        "metal-uses-iron-steels"
+      ]
+    },
+    {
+      "title": "TWI: carbon and stainless steel comparison",
+      "url": "https://www.twi-global.com/technical-knowledge/faqs/carbon-steel-vs-stainless-steel",
+      "sectionIds": [
+        "metal-uses-iron-steels"
+      ]
+    },
+    {
+      "title": "MATTER materials-science teaching: alloy strengthening",
+      "url": "https://www.matter.org.uk/matscicdrom/manual/as.html",
+      "sectionIds": [
+        "metal-alloys-hardness"
       ]
     }
   ],
@@ -1324,6 +1370,272 @@
         "Using volume multiplied by time as a rate.",
         "Assuming that a stalled coated surface means all acid has reacted."
       ]
+    },
+    {
+      "id": "metal-ores-native",
+      "title": "Ores, compounds and native metals — Paper 2C",
+      "points": [
+        "2.22C"
+      ],
+      "terms": [
+        "ore",
+        "mineral",
+        "native metal",
+        "extraction"
+      ],
+      "paragraphs": [
+        "Most metals are obtained from ores in the Earth’s crust. An ore contains a useful metal or its compounds in a concentration that makes extraction worthwhile under the stated circumstances. It is usually a mixture of minerals and other material, rather than a pure metal compound with one formula.",
+        "Reactive metals tend to occur combined with other elements. Obtaining metal from a compound requires a chemical change: iron atoms in an oxide are not simply loose iron pieces that a magnet can pull out. Crushing or separating unwanted rock can concentrate the useful material, but it does not by itself reduce metal ions to the metal.",
+        "Less reactive metals can occur as the uncombined element, often called native metal. Gold is a familiar example. “Often found uncombined” is a tendency, not a claim that every sample of an unreactive metal is pure or that such metals never occur in compounds. Extraction method depends on the actual starting material as well as the metal."
+      ],
+      "example": {
+        "question": "A supplied ore contains iron oxide mixed with unwanted rock. Explain why separating the rock is not the same as obtaining iron metal.",
+        "steps": [
+          "Separation can increase the proportion of iron oxide.",
+          "Iron remains chemically combined with oxygen in the oxide.",
+          "A chemical reduction is needed to form elemental iron."
+        ],
+        "explanation": "This distinguishes concentration of a mixture from changing the chemical species."
+      },
+      "commonMistakes": [
+        "Calling every ore a pure compound.",
+        "Treating an oxide as a mixture of free metal and oxygen.",
+        "Claiming every unreactive metal occurs only in native form."
+      ]
+    },
+    {
+      "id": "metal-extraction-carbon",
+      "title": "Carbon-based extraction of iron — Paper 2C",
+      "points": [
+        "2.23C"
+      ],
+      "terms": [
+        "carbon",
+        "reactivity position",
+        "carbon monoxide",
+        "reduction"
+      ],
+      "paragraphs": [
+        "For the school extraction comparison, place carbon below aluminium and above zinc and iron in the reactivity series. Metals below carbon can often be extracted from suitable oxides by carbon-based reduction. Iron illustrates this method; aluminium is too reactive for the corresponding simple carbon reduction of its oxide.",
+        "In the familiar iron process, carbon helps produce carbon monoxide, which reduces iron oxide. An illustrative balanced equation is Fe₂O₃ + 3CO → 2Fe + 3CO₂. Iron oxide loses oxygen and is reduced; carbon monoxide gains oxygen and is oxidized. There are two iron, three carbon and six oxygen atoms on each side.",
+        "The reactivity rule supports method selection, rather than a complete factory design. Actual choices also depend on the compound, unwanted products, available energy and process information. A metal below carbon is not necessarily extracted by exactly the same sequence as iron, and carbon is not itself a metal."
+      ],
+      "example": {
+        "question": "Explain the different school extraction choices for iron and aluminium using their positions relative to carbon.",
+        "steps": [
+          "Iron is below carbon, allowing the illustrated carbon-based reduction route.",
+          "Aluminium is above carbon, so this simple route does not remove it from its oxide.",
+          "Aluminium is instead obtained by electrolysis of an appropriate molten electrolyte."
+        ],
+        "explanation": "The answer uses relative reactivity; it does not require memorizing a complete furnace sequence."
+      },
+      "commonMistakes": [
+        "Using copper rather than carbon as the extraction-method boundary.",
+        "Calling CO the iron product.",
+        "Saying a balanced equation alone guarantees a suitable industrial route."
+      ]
+    },
+    {
+      "id": "metal-extraction-electrolysis",
+      "title": "Why aluminium extraction uses electrolysis — Paper 2C",
+      "points": [
+        "2.23C"
+      ],
+      "terms": [
+        "alumina",
+        "molten electrolyte",
+        "cathode",
+        "electrical energy"
+      ],
+      "paragraphs": [
+        "Aluminium oxide is strongly bound in the school reactivity comparison, so aluminium extraction uses electrolysis. In the industrial example, alumina is dissolved in a molten cryolite-based bath. The electrolyte has mobile ions; electrical energy drives the extraction. Solid ionic material with fixed ions would not serve the same conducting role.",
+        "Aluminium ions gain electrons at the negative cathode: Al³⁺ + 3e⁻ → Al. Charge is conserved because +3 − 3 = 0. The example uses a molten electrolyte, not ordinary aqueous aluminium-salt electrolysis, where competing reactions can prevent the intended metal deposit.",
+        "A carbon anode in the conventional process is consumed as oxygen-containing species react with it, producing carbon oxides. Carbon’s presence as an electrode does not mean it directly reduces aluminium oxide by the simple below-carbon extraction rule. Heating and a large electrical supply are inputs that should be considered when evaluating a supplied process."
+      ],
+      "example": {
+        "question": "A student says a carbon electrode proves aluminium is extracted by heating its oxide with carbon. Correct the explanation.",
+        "steps": [
+          "The aluminium extraction example is electrolysis of an appropriate molten electrolyte.",
+          "Al³⁺ gains three electrons at the cathode.",
+          "Carbon can act as a consumed anode without making the process simple carbon reduction of aluminium oxide."
+        ],
+        "explanation": "An electrode material and the extraction method are separate parts of the explanation."
+      },
+      "commonMistakes": [
+        "Trying to apply the molten result automatically to aqueous aluminium salts.",
+        "Writing Al³⁺ → Al + 3e⁻ for cathode reduction.",
+        "Confusing alumina with elemental aluminium."
+      ]
+    },
+    {
+      "id": "metal-extraction-evaluation",
+      "title": "Evaluate a process from the supplied information — Paper 2C",
+      "points": [
+        "2.24C"
+      ],
+      "terms": [
+        "ore grade",
+        "recovery",
+        "energy input",
+        "trade-off"
+      ],
+      "paragraphs": [
+        "Use the information given about starting material, reduction or electrolysis, recovery, energy and waste. A reasoned comment connects a piece of evidence to an advantage or limitation. Pearson explicitly says detailed knowledge of every specific extraction process is not required for this point; an unfamiliar diagram can still be interpreted using chemistry and supplied data.",
+        "Original model: 100 kg of ore contains 20% Fe₂O₃ by mass, with the rest specified as material containing no iron. Given relative atomic masses Fe = 56 and O = 16, Fe₂O₃ has relative formula mass 160 and an iron fraction 112/160. The 20 kg oxide can therefore yield at most 14 kg iron. If recovery is 80% of that theoretical iron, actual recovered iron is 11.2 kg. Ore grade, theoretical yield and recovery are different quantities.",
+        "Compare alternatives on the same basis, such as energy per kilogram of recovered metal rather than energy per batch of unequal size. Higher recovery may reduce unused metal-containing waste, while higher energy demand may bring a different cost or environmental trade-off. Use the stated electricity source and waste treatment information; a high current alone does not establish a specific carbon footprint.",
+        "Give a qualified conclusion and name missing evidence. No single favourable number proves that a process is best overall. These example values are invented and are not an operating plant’s measurements or current market prices."
+      ],
+      "example": {
+        "question": "Two invented processes recover 10 kg metal using 50 MJ and 15 kg using 90 MJ. Which uses less energy per kilogram? What would you need before recommending one overall?",
+        "steps": [
+          "First:50/10 = 5 MJ kg⁻¹.",
+          "Second:90/15 = 6 MJ kg⁻¹; the first has lower energy per recovered kilogram.",
+          "Overall judgement also needs comparable product quality, waste, other inputs and relevant impacts."
+        ],
+        "explanation": "Normalizing to the recovered product permits a fairer energy comparison without inventing a complete industrial assessment."
+      },
+      "commonMistakes": [
+        "Treating 20% oxide in an ore as 20% elemental iron.",
+        "Applying recovery to the wrong starting mass.",
+        "Comparing unequal batches solely by total energy."
+      ]
+    },
+    {
+      "id": "metal-uses-aluminium-copper",
+      "title": "Choose aluminium or copper by the useful property — Paper 2C",
+      "points": [
+        "2.25C"
+      ],
+      "terms": [
+        "low density",
+        "thermal conductivity",
+        "electrical conductivity",
+        "ductility",
+        "oxide layer"
+      ],
+      "paragraphs": [
+        "Aluminium has low density, so aluminium alloys are useful where low mass matters, such as aircraft components. Pure aluminium is relatively soft; alloying can supply the required mechanical strength. A thin protective oxide layer contributes to corrosion resistance even though aluminium is high in the reactivity series.",
+        "Aluminium conducts heat, helping cooking utensils transfer energy to their contents, and is malleable enough for forming and foil. State the property relevant to the particular use: low density does not explain heat transfer, and good thermal conductivity does not by itself establish aircraft strength.",
+        "Copper’s electrical conductivity and ductility make it suitable for electrical wiring: it carries current and can be drawn into wires. Its thermal conductivity is useful in heat exchangers, while its workability and resistance to corrosion under suitable conditions support some plumbing uses. Copper still can corrode; relatively unreactive is not the same as indestructible."
+      ],
+      "example": {
+        "question": "For copper wire, explain why both electrical conductivity and ductility are useful. For an aircraft component, explain why specifying an aluminium alloy is more informative than simply saying pure aluminium.",
+        "steps": [
+          "Conductivity permits current flow; ductility permits drawing into wire.",
+          "Low density helps reduce aircraft mass.",
+          "An appropriate alloy can provide greater strength than pure aluminium."
+        ],
+        "explanation": "A material choice needs the relevant combination of properties, rather than a list unrelated to the use."
+      },
+      "commonMistakes": [
+        "Using low density as the explanation for copper electrical conduction.",
+        "Calling pure aluminium automatically strong enough for every structural use.",
+        "Treating corrosion resistance as a guarantee of no reaction in any environment."
+      ]
+    },
+    {
+      "id": "metal-uses-iron-steels",
+      "title": "Iron and the three required steel types — Paper 2C",
+      "points": [
+        "2.25C"
+      ],
+      "terms": [
+        "iron",
+        "mild steel",
+        "high-carbon steel",
+        "stainless steel",
+        "chromium"
+      ],
+      "paragraphs": [
+        "Iron’s magnetic behaviour is useful in magnetic components; appropriate soft iron can be magnetized readily for an electromagnet core. Iron is also the main metal in steel, whose composition and treatment give a range of mechanical properties. Explain the selected material, rather than treating pure iron and every steel as interchangeable.",
+        "Low-carbon or mild steel is relatively easy to shape and weld, making it useful for formed vehicle panels and many structural products. High-carbon steel can be harder and better able to retain a cutting edge, supporting cutting-tool uses, but often sacrifices ease of shaping and toughness compared with a suitable lower-carbon steel.",
+        "Stainless steel contains chromium, which supports a protective surface layer and corrosion resistance. This is useful for cutlery and equipment exposed to moisture. Many grades also contain other elements, but nickel is not compulsory in every stainless steel. “Stainless” means corrosion-resistant under appropriate conditions, not immune to every chemical environment.",
+        "The required comparison is low-carbon, high-carbon and stainless steel. Heat treatment and grade affect real properties, so avoid a universal claim that increasing carbon always improves every property or that every stainless steel is non-magnetic. Match hardness, formability or corrosion resistance to the task being described."
+      ],
+      "example": {
+        "question": "Choose a required steel type for an easily formed panel, a cutting edge and corrosion-resistant cutlery, explaining one property for each.",
+        "steps": [
+          "Mild steel:relatively easy to form for the panel.",
+          "Appropriate high-carbon steel:hardness and edge retention for the tool.",
+          "Stainless steel:chromium-supported corrosion resistance for the cutlery."
+        ],
+        "explanation": "The choices illustrate school property–use links, not an engineering specification for every real product."
+      },
+      "commonMistakes": [
+        "Calling hardness and toughness the same property.",
+        "Claiming all stainless steels must contain nickel or be non-magnetic.",
+        "Using more carbon as a promise of improvement in every property."
+      ]
+    },
+    {
+      "id": "metal-alloys-mixtures",
+      "title": "An alloy is a mixture — Paper 2C",
+      "points": [
+        "2.26C"
+      ],
+      "terms": [
+        "alloy",
+        "composition",
+        "mixture",
+        "carbon"
+      ],
+      "paragraphs": [
+        "An alloy is a mixture containing a metal and one or more other elements, usually other metals or carbon. Steel contains iron with carbon and may contain additional elements. Carbon is a non-metal, so an alloy does not have to consist only of metals.",
+        "Composition can vary between grades, changing properties. An alloy is not normally represented by a single fixed formula like an ionic compound. A stated percentage describes one selected composition, not a universal ratio for every sample carrying that alloy name.",
+        "Alloys retain useful metallic behaviour while allowing properties to be adjusted. Changing composition can improve one property while reducing another, so specify the desired feature. The simple mixture description is the requirement here; it does not imply that every atom is arranged randomly or that all metallurgical phases are identical."
+      ],
+      "example": {
+        "question": "An invented steel specification gives 0.5% carbon by mass. How much carbon is in 2.0 kg of that material? Does this mean every steel has the same composition?",
+        "steps": [
+          "Carbon mass = .005 × 2.0 kg = .010 kg = 10 g.",
+          "No:the percentage defines this supplied composition.",
+          "Other steels can have different carbon content and additional elements."
+        ],
+        "explanation": "This is an original composition calculation; carbon does not need to be a metal for the mixture to qualify as an alloy."
+      },
+      "commonMistakes": [
+        "Defining an alloy as exactly two metals.",
+        "Calling the given percentage a fixed chemical formula.",
+        "Calculating 0.5 × 2.0 instead of converting percent to a fraction."
+      ]
+    },
+    {
+      "id": "metal-alloys-hardness",
+      "title": "Different atom sizes can hinder sliding — Paper 2C",
+      "points": [
+        "2.27C"
+      ],
+      "terms": [
+        "lattice distortion",
+        "atom size",
+        "sliding",
+        "hardness",
+        "model"
+      ],
+      "paragraphs": [
+        "In a simple pure-metal model, similarly sized atoms form regular arrangements that can slide as the material deforms. Different-sized alloying atoms disrupt that regularity. The distorted arrangement makes the movements responsible for plastic deformation harder, so a greater force is needed and the material can be harder than the pure metal.",
+        "Use the full reasoning chain: different atom sizes → distortion of the regular arrangement → harder movement → increased resistance to deformation. Saying only “there are two elements” does not explain why sliding changes. Do not say that the alloy has more layers or that all metallic bonds disappear.",
+        "The diagram is an original two-dimensional schematic, not a microscopic photograph or a measured atomic structure. It shows a substituted larger atom as one way to illustrate distortion. Actual alloys can also contain small atoms between metal atoms and several phases; their properties depend on composition and treatment. The school model does not imply that deformation becomes impossible or that every alloy is harder under every comparison."
+      ],
+      "example": {
+        "question": "Improve the answer “An alloy is harder because it contains another element.”",
+        "steps": [
+          "Explain that atoms of a different size disturb the regular metal arrangement.",
+          "Link the distortion to more difficult sliding or plastic deformation.",
+          "State that more force is required to deform the material, giving greater hardness in this model."
+        ],
+        "explanation": "The explanation connects composition to structure and then to a mechanical property."
+      },
+      "commonMistakes": [
+        "Saying atoms cannot move at all in an alloy.",
+        "Explaining hardness as the presence of more electrons without a sliding mechanism.",
+        "Treating the schematic as an actual measured arrangement."
+      ],
+      "diagram": {
+        "src": "/diagrams/chemistry-alloy-hardness.svg",
+        "alt": "Original two-dimensional model: uniform atoms in regular rows beside an alloy region with a larger substituted atom and nearby displaced atoms; distortion hinders plastic movement.",
+        "caption": "Original schematic of one alloy-hardening mechanism. Sizes and positions are illustrative, not measured; real structures and treatment can vary."
+      }
     }
   ]
 }
