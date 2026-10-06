@@ -1,3 +1,5 @@
+import englishDirected from './notes/english-directed-writing.json' with { type: 'json' };
+import englishWriting from './notes/english-writing.json' with { type: 'json' };
 import humanDisease from './notes/human-biology-disease.json' with { type: 'json' };
 import humanCoordination from './notes/human-biology-coordination.json' with { type: 'json' };
 import humanHomeostasis from './notes/human-biology-homeostasis.json' with { type: 'json' };
@@ -102,6 +104,8 @@ export const notes: ChapterNotes[] = [
   physicsRadioactivity,
   physicsAstrophysics,
   english,
+  englishDirected,
+  englishWriting,
   mathematics,
   mathematicsGeometry,
 ] as ChapterNotes[];

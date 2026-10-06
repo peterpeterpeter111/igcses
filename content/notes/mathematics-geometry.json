@@ -311,6 +311,101 @@
         ],
         "caution": "The reviewed SAS source requires all three facts and reasons for the final accuracy mark. A bare SAS label or a claim that the drawing looks symmetric is insufficient."
       }
+    },
+    {
+      "id": "angle-turns-and-signed-rotation",
+      "title": "Use straight-line, full-turn and signed angles",
+      "points": [
+        "6C"
+      ],
+      "paragraphs": [
+        "Adjacent angles making a straight angle total 180°. Angles making a complete turn around a point total 360°. Vertically opposite angles formed by two intersecting straight lines are equal. Identify the relevant straight lines and vertex before choosing a fact.",
+        "The syllabus takes anticlockwise rotation as positive and clockwise rotation as negative. A signed rotation states direction as well as size: −70° means a 70° clockwise turn, not a negative physical gap between two rays. Keep a directed turn distinct from an unsigned interior angle."
+      ],
+      "example": {
+        "question": "Two adjacent angles on a straight line are x and 128°. Find x, then describe a rotation of −70°.",
+        "steps": [
+          "x + 128° = 180°, so x = 52°.",
+          "−70° describes 70° clockwise."
+        ],
+        "explanation": "The line sum gives the angle size; the rotation sign supplies direction."
+      },
+      "commonMistakes": [
+        "Using 360° for a straight angle.",
+        "Interpreting the rotation sign as an impossible angle size."
+      ]
+    },
+    {
+      "id": "parallel-line-angle-reasons",
+      "title": "State the parallel-line reason for each angle",
+      "points": [
+        "6C"
+      ],
+      "paragraphs": [
+        "When a transversal crosses two parallel lines, corresponding angles are equal and alternate angles are equal. Co-interior angles on the same side of the transversal total 180°. Match the positions of the angles before applying the relationship.",
+        "The equality rules rely on the lines being parallel, established by given information, markings or a valid argument. A sketch that merely looks parallel is insufficient. Vertically opposite equality and straight-line sums may be needed alongside a parallel-line fact."
+      ],
+      "example": {
+        "question": "A transversal cuts two given parallel lines. One co-interior angle is 68°. Find its paired co-interior angle.",
+        "steps": [
+          "The co-interior angles total 180° because the lines are parallel.",
+          "180° − 68° = 112°.",
+          "Corresponding equality would apply to a different paired position."
+        ],
+        "explanation": "Name the positional relationship and its condition."
+      },
+      "commonMistakes": [
+        "Calling every pair of angles made by a transversal equal.",
+        "Using parallel-line rules without establishing parallel lines."
+      ]
+    },
+    {
+      "id": "triangle-and-exterior-angles",
+      "title": "Connect a triangle’s interior and exterior angles",
+      "points": [
+        "6C"
+      ],
+      "paragraphs": [
+        "The three interior angles of a triangle total 180°. At a vertex, an adjacent exterior angle on an extended straight side is supplementary to the interior angle. That exterior angle also equals the sum of the two non-adjacent interior angles.",
+        "Use the actual triangle and the stated extension. A different outside angle, such as a reflex turn, need not be the adjacent exterior angle in this theorem. For an isosceles triangle, equal sides have equal opposite angles, but establish the equal sides from the information."
+      ],
+      "example": {
+        "question": "A triangle has two interior angles of 47° and 61°. Find the third angle and its adjacent exterior angle.",
+        "steps": [
+          "Third angle = 180° − 47° − 61° = 72°.",
+          "Adjacent exterior angle = 180° − 72° = 108°.",
+          "Check: 47° + 61° = 108°."
+        ],
+        "explanation": "Both methods agree because they use the same adjacent exterior angle."
+      },
+      "commonMistakes": [
+        "Adding the adjacent interior angle to the two others to find the exterior angle.",
+        "Assuming a triangle is isosceles from its appearance."
+      ]
+    },
+    {
+      "id": "polygon-angle-sums",
+      "title": "Distinguish polygon sums from one regular angle",
+      "points": [
+        "6C"
+      ],
+      "paragraphs": [
+        "For a simple polygon with n sides, the interior-angle sum is (n − 2) × 180°. A convex polygon can be split from one vertex into n − 2 triangles to explain this total. The sum applies without assuming the polygon is regular.",
+        "A regular polygon has equal sides and equal interior angles, so one interior angle is (n − 2) × 180° ÷ n. For a convex polygon, consistently directed adjacent exterior turns total 360°; one exterior angle of a regular polygon is 360° ÷ n. Do not use these as a shortcut for arbitrary star shapes or a mixture of interior, reflex and exterior angles."
+      ],
+      "example": {
+        "question": "Find one interior angle and one exterior angle of a regular octagon.",
+        "steps": [
+          "Interior sum = (8 − 2) × 180° = 1080°.",
+          "One interior angle = 1080° ÷ 8 = 135°.",
+          "One exterior angle = 360° ÷ 8 = 45°; 135° + 45° = 180°."
+        ],
+        "explanation": "Equal angles are required to divide the total by eight for one vertex."
+      },
+      "commonMistakes": [
+        "Dividing a non-regular polygon’s total by n to claim every angle.",
+        "Using n × 180° as the interior sum."
+      ]
     }
   ]
 }

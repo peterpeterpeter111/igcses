@@ -13,6 +13,8 @@ import { reviewedInventories } from '@/lib/syllabus';
 import physicsSkills from '@/research/syllabus-skills/4PH1-issue4.json';
 import humanSkills from '@/research/syllabus-skills/4HB1-issue2-selected.json';
 import humanCubeSkills from '@/research/syllabus-skills/4HB1-issue2-q6-selected.json';
+import englishReadingReview from '@/research/teaching-reviews/4EB1-reading-foundations.json';
+import englishWritingReview from '@/research/teaching-reviews/4EB1-writing-foundations.json';
 import { curriculumAudits } from '@/lib/curriculum';
 import { obtainedPaperCandidates, paperCoverReview, paperTaskIndex, paperDetailedSummary } from '@/lib/paper-discovery';
 export default async function SubjectCoverage({
@@ -168,11 +170,39 @@ export default async function SubjectCoverage({
           );
         })}
         {s.code === '4EB1' && (
+          <section>
           <p>
             Also obtained: November 2024 paper 01, its scheme and examiner
             report. Eleven tasks indexed; Q5 detailed; whole-paper processing
             incomplete.
           </p>
+          <h2>Selected reading and writing teaching</h2>
+          <p>
+            {englishReadingReview.sections.length + englishWritingReview.sections.length}
+            {' '}original sections have partial source checks across reading,
+            directed writing and discursive, narrative and descriptive writing.
+            Their AO references are assessment objectives, separate from numbered
+            syllabus statements. No objective or chapter is certified complete.
+          </p>
+          <ul className="plain-list">
+            {['reading', ...englishWritingReview.chapterIds].map((chapterId) => {
+              const chapter = s.chapters.find((chapter) => chapter.id === chapterId)!;
+              const note = getNotes(s.id, chapterId)!;
+              return <li key={chapterId}>
+                <Link href={`/subjects/${s.id}/${chapterId}`}>{chapter.title}</Link>
+                {' · '}{note.sections.length} partial sections
+                {' · '}{[...new Set(note.sections.flatMap((section) => section.points ?? []))].join(', ')}
+              </li>;
+            })}
+          </ul>
+          <p className="status">
+            Writing source review: {englishWritingReview.reviewDate} against
+            Issue 4, PDF pages {englishWritingReview.source.pdfPages.join(', ')}.
+            Full source-text practice, independent whole-response level decisions,
+            AO coverage reconciliation and optional spoken-language teaching remain
+            incomplete. No human certification or active marking template.
+          </p>
+          </section>
         )}
         {s.code === physicsSkills.qualification && (
           <section>

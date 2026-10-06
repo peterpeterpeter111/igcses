@@ -180,7 +180,10 @@ export default async function ChapterPage({
                     ) : null}
                     {section.points?.length ? (
                       <p className="status">
-                        Specification references: {section.points.join(', ')}
+                        {section.points.every((point) => /^AO\d+$/.test(point))
+                          ? 'Assessment objective references: '
+                          : 'Specification references: '}
+                        {section.points.join(', ')}
                       </p>
                     ) : null}
                   </section>

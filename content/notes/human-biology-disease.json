@@ -159,6 +159,127 @@
         "typhoid-housefly-mechanical-route",
         "typhoid-treatment-and-prevention"
       ]
+    },
+    {
+      "title": "OpenStax Microbiology: selected antigen recognition and antibody action, not copied figures",
+      "url": "https://openstax.org/books/microbiology/pages/18-1-overview-of-specific-adaptive-immunity",
+      "sectionIds": [
+        "antigen-antibody-specificity",
+        "antibody-binding-and-clearance"
+      ]
+    },
+    {
+      "title": "OpenStax Microbiology: selected B-cell, plasma-cell and memory-response distinction",
+      "url": "https://openstax.org/books/microbiology/pages/18-4-b-lymphocytes-and-humoral-immunity",
+      "sectionIds": [
+        "antibody-binding-and-clearance",
+        "immune-memory-and-response"
+      ]
+    },
+    {
+      "title": "WHO: selected antigen platforms, memory and community-transmission explanation",
+      "url": "https://www.who.int/news-room/feature-stories/detail/how-do-vaccines-work",
+      "sectionIds": [
+        "vaccination-antigens-and-memory",
+        "vaccination-and-community-transmission"
+      ]
+    },
+    {
+      "title": "CDC Pink Book: selected active/passive mechanisms and varied vaccine antigens",
+      "url": "https://www.cdc.gov/pinkbook/hcp/table-of-contents/chapter-1-principles-of-vaccination.html",
+      "sectionIds": [
+        "vaccination-antigens-and-memory",
+        "active-and-passive-immunity"
+      ]
+    },
+    {
+      "title": "CDC: selected active/passive definitions and maternal antibody transfer",
+      "url": "https://www.cdc.gov/vaccines/basics/immunity-types.html",
+      "sectionIds": [
+        "active-and-passive-immunity",
+        "natural-and-artificial-immunity"
+      ]
+    },
+    {
+      "title": "OpenStax Microbiology: selected four-way classification and maternal antibody routes",
+      "url": "https://openstax.org/books/microbiology/pages/18-5-vaccines",
+      "sectionIds": [
+        "natural-and-artificial-immunity",
+        "immunity-classification-and-limits"
+      ]
+    },
+    {
+      "title": "OpenStax Microbiology: selected natural/modified antibacterial sources and bacterial targets",
+      "url": "https://openstax.org/books/microbiology/pages/14-3-mechanisms-of-antibacterial-drugs",
+      "sectionIds": [
+        "antibiotic-sources",
+        "antibiotic-targets-and-role"
+      ]
+    },
+    {
+      "title": "OpenStax Microbiology: selected mutation, selection and transferable resistance",
+      "url": "https://openstax.org/books/microbiology/pages/14-5-drug-resistance",
+      "sectionIds": [
+        "resistance-variation-and-selection",
+        "resistance-frequency-model"
+      ]
+    },
+    {
+      "title": "CDC MRSA: selected colonisation, infection and treatment-choice distinctions",
+      "url": "https://www.cdc.gov/mrsa/hcp/clinical-overview/index.html",
+      "sectionIds": [
+        "mrsa-and-treatment-challenges"
+      ]
+    },
+    {
+      "title": "CDC: selected bacterial antibiotic role and resistance concerns",
+      "url": "https://www.cdc.gov/antimicrobial-resistance/about/index.html",
+      "sectionIds": [
+        "antibiotic-targets-and-role",
+        "mrsa-and-treatment-challenges"
+      ]
+    },
+    {
+      "title": "CDC: selected resistant-organism spread and prevention mechanisms",
+      "url": "https://www.cdc.gov/antimicrobial-resistance/causes/index.html",
+      "sectionIds": [
+        "resistant-spread-and-stewardship"
+      ]
+    },
+    {
+      "title": "OpenStax Biology 2e: selected fungal external digestion and useful decomposition",
+      "url": "https://openstax.org/books/biology-2e/pages/24-1-characteristics-of-fungi",
+      "sectionIds": [
+        "decomposer-extracellular-digestion"
+      ]
+    },
+    {
+      "title": "EPA: selected historical physical and aerobic sewage-treatment sequence, not universal efficacy values",
+      "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=20004CXG.TXT",
+      "sectionIds": [
+        "sewage-works-aerobic-treatment"
+      ]
+    },
+    {
+      "title": "EPA: selected oxygen-free digestion of wastewater solids and residual products",
+      "url": "https://www.epa.gov/anaerobic-digestion",
+      "sectionIds": [
+        "sewage-sludge-anaerobic-digestion"
+      ]
+    },
+    {
+      "title": "WHO Sanitation Guidelines: selected indexed aerobic/anaerobic decomposition context; downloaded scan has no extractable text",
+      "url": "https://applications.emro.who.int/dsaf/dsa1195.pdf",
+      "sectionIds": [
+        "decomposition-conditions-and-use"
+      ]
+    },
+    {
+      "title": "Original pit-latrine ecology study: selected indexed conclusion on both aerobic and anaerobic processes varying by conditions",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4767293/",
+      "sectionIds": [
+        "pit-latrines-and-microbial-breakdown"
+      ]
     }
   ],
   "prerequisites": [
@@ -170,7 +291,10 @@
     "Relate bacterial growth to structure, conditions and measurements.",
     "Plan a controlled antibacterial comparison and recognise its limits.",
     "Distinguish named pathogen, vector, route and intervention.",
-    "Explain rehydration through replacement and absorption rather than pathogen killing."
+    "Explain rehydration through replacement and absorption rather than pathogen killing.",
+    "Explain antigen recognition, vaccination and both classifications of immunity.",
+    "Explain bacterial antibiotic targets, selection and resistant spread.",
+    "Distinguish useful decomposition, sewage streams and oxygen conditions."
   ],
   "sections": [
     {
@@ -1001,6 +1125,601 @@
       "commonMistakes": [
         "Assuming every recovered-looking person has cleared the bacterium.",
         "Claiming vaccination replaces sanitation."
+      ]
+    },
+    {
+      "id": "antigen-antibody-specificity",
+      "title": "Distinguish an antigen from its matching antibody",
+      "points": [
+        "12.12"
+      ],
+      "terms": [
+        "antigen",
+        "antibody",
+        "binding site",
+        "specificity"
+      ],
+      "paragraphs": [
+        "An antigen is a molecule recognised by the immune system, for example a molecule on a pathogen’s surface. An antibody is a protein whose binding sites fit particular features of an antigen. The antigen–antibody reaction is their specific binding; the antibody and antigen are not the same substance.",
+        "Different antibodies recognise different features. Having an antibody against one antigen does not automatically provide protection against an unrelated pathogen. The familiar matching-shape model explains recognition, but real binding involves molecular structure and chemical interactions."
+      ],
+      "example": {
+        "question": "In a matching model, antibody A binds antigen X but not antigen Y. What does this show?",
+        "steps": [
+          "A has binding sites compatible with X.",
+          "Specificity prevents assuming that A also recognises Y."
+        ],
+        "explanation": "Identify the two molecules before describing the binding."
+      },
+      "commonMistakes": [
+        "Calling an antigen a protective antibody.",
+        "Claiming one antibody binds every pathogen."
+      ]
+    },
+    {
+      "id": "antibody-binding-and-clearance",
+      "title": "Explain how binding helps defend the body",
+      "points": [
+        "12.12"
+      ],
+      "terms": [
+        "neutralisation",
+        "agglutination",
+        "phagocytosis",
+        "B lymphocyte",
+        "plasma cell"
+      ],
+      "paragraphs": [
+        "Antibodies can neutralise a toxin or prevent a pathogen attaching to a cell. They can also join particles into clumps and help phagocytes recognise material to engulf. These are different consequences of binding, rather than a claim that every antibody directly kills everything it touches.",
+        "Activated B lymphocytes can develop into plasma cells that secrete antibodies. Phagocytes engulf and digest material; antibody production is a different cell function. For an explanation, link specific recognition to the appropriate defence mechanism."
+      ],
+      "example": {
+        "question": "Why is “the antibody eats the bacterium” incorrect?",
+        "steps": [
+          "An antibody is a protein, not an engulfing cell.",
+          "It can mark a bacterium for recognition.",
+          "A phagocyte performs engulfment and digestion."
+        ],
+        "explanation": "Keep molecular binding and cell action separate."
+      },
+      "commonMistakes": [
+        "Giving every white blood cell the same function.",
+        "Describing neutralisation as necessarily bursting a pathogen."
+      ]
+    },
+    {
+      "id": "immune-memory-and-response",
+      "title": "Explain a faster response to a familiar antigen",
+      "points": [
+        "12.13",
+        "12.14"
+      ],
+      "terms": [
+        "primary response",
+        "secondary response",
+        "memory cell"
+      ],
+      "paragraphs": [
+        "A first exposure requires activation and multiplication of the relevant lymphocytes, so the primary response takes time. In a response that establishes immune memory, memory cells remain available after the immediate infection or stimulus has passed.",
+        "A later exposure to the same antigen can produce a faster, stronger antibody response. This helps control the target before serious disease develops. Protection varies with the antigen, person and time; memory is not a promise of lifelong protection against every infection."
+      ],
+      "example": {
+        "question": "A fictional graph reaches its antibody peak sooner after a second exposure. Explain the change without inventing a fixed number of days.",
+        "steps": [
+          "Memory cells recognise the familiar antigen.",
+          "Relevant antibody-secreting cells can be produced more rapidly.",
+          "Use the graph’s actual times if values are provided."
+        ],
+        "explanation": "A qualitative model does not supply a universal clinical timetable."
+      },
+      "commonMistakes": [
+        "Assuming all first exposures create identical memory.",
+        "Treating any antibody concentration as a guaranteed protective threshold."
+      ]
+    },
+    {
+      "id": "vaccination-antigens-and-memory",
+      "title": "Relate vaccination to an active immune response",
+      "points": [
+        "12.13"
+      ],
+      "terms": [
+        "vaccine",
+        "antigen",
+        "active immunity",
+        "booster"
+      ],
+      "paragraphs": [
+        "Vaccination presents a suitable antigen stimulus without requiring the person to experience the corresponding full natural disease. Examples include weakened organisms, inactivated organisms, selected antigen components and inactivated toxins. Some platforms supply instructions for cells to make an antigen.",
+        "The recipient’s own immune system responds and can establish memory, allowing a more rapid response to later exposure. Some vaccines require additional doses to establish or maintain protection. Vaccination is not normally the transfer of ready-made protective antibodies."
+      ],
+      "example": {
+        "question": "Why is vaccination classified as active rather than passive immunity?",
+        "steps": [
+          "The recipient produces their own immune response.",
+          "The stimulus can establish memory.",
+          "Transferred antibody products instead supply antibodies made elsewhere."
+        ],
+        "explanation": "Classify by what the recipient produces, not by whether a needle is used."
+      },
+      "commonMistakes": [
+        "Saying every vaccine contains live disease-causing organisms.",
+        "Calling a vaccine an antibiotic."
+      ]
+    },
+    {
+      "id": "vaccination-and-community-transmission",
+      "title": "Connect protection to fewer opportunities for spread",
+      "points": [
+        "12.13"
+      ],
+      "terms": [
+        "susceptible",
+        "transmission",
+        "community protection"
+      ],
+      "paragraphs": [
+        "For a transmissible infection, vaccination that reduces susceptibility or infectiousness can leave fewer opportunities for the pathogen to pass between people. This can indirectly protect some susceptible individuals by reducing their exposure. Individual protection and effects on transmission are related but distinct.",
+        "The extent depends on the infection, vaccine, uptake and distribution of susceptible people. Neither vaccination nor community protection guarantees that every person avoids infection. Do not assign one universal coverage percentage to all diseases."
+      ],
+      "example": {
+        "question": "Why can a cluster of susceptible people matter even when an overall uptake figure is high?",
+        "steps": [
+          "They can have frequent contact with each other.",
+          "A pathogen may still find a chain of susceptible hosts.",
+          "A population average does not describe every contact pattern."
+        ],
+        "explanation": "Explain the transmission chain rather than relying only on an average."
+      },
+      "commonMistakes": [
+        "Assuming all vaccines stop transmission equally.",
+        "Promising complete protection to every unvaccinated person."
+      ]
+    },
+    {
+      "id": "active-and-passive-immunity",
+      "title": "Compare making antibodies with receiving them",
+      "points": [
+        "12.14"
+      ],
+      "terms": [
+        "active immunity",
+        "passive immunity",
+        "immune memory"
+      ],
+      "paragraphs": [
+        "Active immunity involves the recipient’s own adaptive immune response to an antigen. Antibodies take time to develop, and appropriate responses can establish memory. Passive immunity supplies antibodies produced elsewhere, giving protection without waiting for the recipient to make those antibodies.",
+        "Transferred antibodies are gradually broken down, so passive protection is temporary. The transfer itself does not create the recipient’s antigen-specific memory response. Active immunity can last longer, but its duration is not identical for every disease or person."
+      ],
+      "example": {
+        "question": "Why can transferred antibodies help quickly yet require a different explanation from long-term immune memory?",
+        "steps": [
+          "The antibodies are already present after transfer.",
+          "They can bind their target without waiting for a primary response.",
+          "Their loss is not prevented by memory created by the transfer."
+        ],
+        "explanation": "Compare onset and persistence as two separate features."
+      },
+      "commonMistakes": [
+        "Calling passive immunity a slow primary antibody response.",
+        "Making every active response lifelong."
+      ]
+    },
+    {
+      "id": "natural-and-artificial-immunity",
+      "title": "Use both axes to classify immunity",
+      "points": [
+        "12.14"
+      ],
+      "terms": [
+        "natural active",
+        "artificial active",
+        "natural passive",
+        "artificial passive"
+      ],
+      "paragraphs": [
+        "Natural active immunity follows the person’s response to natural infection; artificial active immunity follows vaccination. In both, the person’s own immune system responds. The natural/artificial distinction describes how the stimulus is acquired, not whether an immune response is active.",
+        "Natural passive immunity includes maternal antibody transfer: IgG can cross the placenta, while antibodies in breast milk help protect mucosal surfaces. Artificial passive immunity supplies an antibody product through a medical intervention. “Natural” does not mean risk-free, and passive protection does not cover every disease."
+      ],
+      "example": {
+        "question": "Classify vaccination and maternal placental antibody transfer using both words.",
+        "steps": [
+          "Vaccination: artificial active.",
+          "Placental antibody transfer: natural passive.",
+          "Explain whether antibodies are made by the recipient or transferred."
+        ],
+        "explanation": "Two classifications are needed, not a single label such as “natural”."
+      },
+      "commonMistakes": [
+        "Calling milk antibodies active because the infant feeds.",
+        "Confusing a vaccine with an antibody product."
+      ]
+    },
+    {
+      "id": "immunity-classification-and-limits",
+      "title": "Classify unfamiliar descriptions using the mechanism",
+      "points": [
+        "12.14"
+      ],
+      "terms": [
+        "antigen stimulus",
+        "antibody transfer",
+        "classification"
+      ],
+      "paragraphs": [
+        "Start with what is supplied. If an antigen stimulus produces the recipient’s own response, classify it as active. If protective antibodies are transferred, classify it as passive. Then identify natural exposure or transfer versus a deliberate medical intervention.",
+        "The procedure’s name alone may be insufficient. Two injections could contain different materials: one a vaccine antigen, the other an antibody product. The route of entry therefore cannot determine active or passive immunity."
+      ],
+      "example": {
+        "question": "A fictional description states that a product contains antibodies made by another individual. It is administered by injection. Classify it.",
+        "steps": [
+          "The antibodies are transferred, so immunity is passive.",
+          "The medical intervention makes it artificial.",
+          "It is artificial passive immunity, not vaccination inferred from the injection."
+        ],
+        "explanation": "Use the supplied material as the decisive evidence."
+      },
+      "commonMistakes": [
+        "Classifying every injection as artificial active immunity.",
+        "Inferring immune memory from antibody transfer alone."
+      ]
+    },
+    {
+      "id": "antibiotic-sources",
+      "title": "Identify microbial sources and manufactured antibiotics",
+      "points": [
+        "12.15"
+      ],
+      "terms": [
+        "antibiotic",
+        "Penicillium",
+        "Streptomyces",
+        "semisynthetic"
+      ],
+      "paragraphs": [
+        "Some antibiotics originated as substances produced by microorganisms. Penicillin came from Penicillium fungi, while Streptomyces bacteria provide examples of bacterial antibiotic sources. A microorganism producing an antibiotic need not itself be a human pathogen.",
+        "Modern antibacterial medicines include purified natural products, chemically modified derivatives and synthetic drugs. A microbial origin does not mean eating the organism is a safe treatment: medicine production controls identity, purity and other properties."
+      ],
+      "example": {
+        "question": "Why is “only fungi produce antibiotics” too narrow?",
+        "steps": [
+          "Some bacterial species also produce antibiotic substances.",
+          "Streptomyces is a bacterial example."
+        ],
+        "explanation": "Separate the organism producing a substance from the organism targeted by it."
+      },
+      "commonMistakes": [
+        "Classifying Penicillium as a bacterium.",
+        "Treating a mouldy food as a controlled medicine."
+      ]
+    },
+    {
+      "id": "antibiotic-targets-and-role",
+      "title": "Explain the antibacterial role using a target",
+      "points": [
+        "12.15"
+      ],
+      "terms": [
+        "bactericidal",
+        "bacteriostatic",
+        "cell wall",
+        "ribosome"
+      ],
+      "paragraphs": [
+        "Antibiotics can kill susceptible bacteria or inhibit their growth. Different drugs target different bacterial processes, such as cell-wall production or protein synthesis. Human cells do not make bacterial cell walls, which helps explain selective action; it does not mean every drug is free of side effects.",
+        "Viruses lack the bacterial structures and processes targeted by these antibiotics, so antibiotics do not directly treat a viral infection. Treating a separate bacterial complication is a different situation. Drug choice depends on the organism, susceptibility and clinical circumstances."
+      ],
+      "example": {
+        "question": "Why does a bacterial cell-wall inhibitor not directly stop a virus reproducing?",
+        "steps": [
+          "A virus has no bacterial cell wall to build.",
+          "It reproduces using a host cell rather than bacterial cell division."
+        ],
+        "explanation": "Link lack of the target to lack of the proposed direct effect."
+      },
+      "commonMistakes": [
+        "Saying every antibiotic has the same target.",
+        "Calling growth inhibition the same as killing every bacterium."
+      ]
+    },
+    {
+      "id": "resistance-variation-and-selection",
+      "title": "Explain resistance without a purposeful mutation",
+      "points": [
+        "12.16"
+      ],
+      "terms": [
+        "mutation",
+        "resistance gene",
+        "selection pressure",
+        "gene transfer"
+      ],
+      "paragraphs": [
+        "Genetic variation can arise through mutation, and bacteria can acquire resistance genes from other bacteria. Variation capable of providing resistance may already exist before a particular antibiotic exposure. Bacteria do not choose a useful mutation because they need to survive.",
+        "Exposure can remove susceptible bacteria more effectively than resistant ones. Resistant survivors can reproduce and pass resistance genes to descendants; some genes can also spread between bacteria. Their proportion may then increase. This is selection of variation, not proof that the drug deliberately created it."
+      ],
+      "example": {
+        "question": "What is missing from “the antibiotic makes all bacteria resistant”?",
+        "steps": [
+          "Variation or an acquired resistance gene must be explained.",
+          "Susceptible and resistant bacteria differ in survival.",
+          "Survivors reproduce or transfer genes."
+        ],
+        "explanation": "State a sequence from variation through differential survival to spread."
+      },
+      "commonMistakes": [
+        "Giving bacteria a conscious need-directed mutation.",
+        "Saying the patient’s body becomes the resistant organism."
+      ]
+    },
+    {
+      "id": "resistance-frequency-model",
+      "title": "Separate resistant proportion from absolute number",
+      "points": [
+        "12.16"
+      ],
+      "terms": [
+        "frequency",
+        "proportion",
+        "percentage",
+        "population"
+      ],
+      "paragraphs": [
+        "In an invented selection model, a population begins with 1,000 susceptible and 10 resistant bacteria. After exposure, 20 susceptible and 10 resistant bacteria remain. The number resistant stays at 10 during this step, but its fraction of the surviving population becomes much larger.",
+        "Initially, the resistant percentage is 10 ÷ 1,010 × 100 ≈ 0.99%. Afterwards it is 10 ÷ 30 × 100 ≈ 33.3%. Later reproduction can increase the absolute number. These assumed numbers are for reasoning, not measured drug efficacy or a treatment prediction."
+      ],
+      "example": {
+        "question": "Calculate the resistant percentage among survivors and explain why it rose.",
+        "steps": [
+          "Total survivors = 20 + 10 = 30.",
+          "10 ÷ 30 × 100 ≈ 33.3%.",
+          "Most susceptible bacteria were removed; resistant number did not increase in the stated step."
+        ],
+        "explanation": "Use the surviving total as denominator and distinguish count from proportion."
+      },
+      "commonMistakes": [
+        "Using the original total to calculate the survivor percentage.",
+        "Claiming reproduction must have occurred during the stated survival step."
+      ]
+    },
+    {
+      "id": "mrsa-and-treatment-challenges",
+      "title": "Use MRSA as a specific resistance example",
+      "points": [
+        "12.16"
+      ],
+      "terms": [
+        "MRSA",
+        "Staphylococcus aureus",
+        "colonisation",
+        "infection"
+      ],
+      "paragraphs": [
+        "MRSA means methicillin-resistant Staphylococcus aureus. It is a bacterium resistant to methicillin and several related antibiotics, rather than a virus or an organism necessarily resistant to every available medicine. Resistance narrows effective treatment options and can make infection more difficult to manage.",
+        "People can carry the bacterium without illness; this is colonisation. Carriage can still allow spread. Infection is different and can be serious. MRSA occurs in communities as well as healthcare settings, and laboratory evidence and current guidance inform treatment."
+      ],
+      "example": {
+        "question": "Does finding that a person carries MRSA prove that they currently have a serious MRSA infection?",
+        "steps": [
+          "No: carriage can occur without illness.",
+          "Infection requires a different assessment.",
+          "The bacterium may nevertheless be transmitted."
+        ],
+        "explanation": "Keep carriage, disease severity and resistance as separate features."
+      },
+      "commonMistakes": [
+        "Expanding MRSA to “resistant to all medicines”.",
+        "Using one visible symptom as a definitive laboratory identification."
+      ]
+    },
+    {
+      "id": "resistant-spread-and-stewardship",
+      "title": "Explain why prevention and appropriate use both matter",
+      "points": [
+        "12.16"
+      ],
+      "terms": [
+        "stewardship",
+        "hygiene",
+        "infection prevention",
+        "susceptibility"
+      ],
+      "paragraphs": [
+        "Resistant bacteria can spread between hosts or environments, and resistance genes can move between bacteria. A resistant infection can therefore occur in someone who has not previously taken that antibiotic. Hygiene, infection control and appropriate sanitation reduce opportunities for spread.",
+        "Appropriate antibiotic use reduces unnecessary selection pressure while preserving treatment when needed. Selection should follow clinical evidence and current instructions, rather than sharing medicines, using leftovers or treating viral illness with an antibacterial drug. Prevention of infection and improved use address different stages of the problem."
+      ],
+      "example": {
+        "question": "Why can hand hygiene and avoiding unnecessary antibiotic use both slow the problem?",
+        "steps": [
+          "Hygiene reduces transfer of bacteria.",
+          "Avoiding unnecessary use reduces avoidable selection pressure.",
+          "Neither is a guarantee that all existing resistance disappears."
+        ],
+        "explanation": "Identify which stage each measure changes."
+      },
+      "commonMistakes": [
+        "Blaming every resistant infection on the affected person’s medicine use.",
+        "Giving a universal instruction to change a prescribed course without clinical advice."
+      ]
+    },
+    {
+      "id": "decomposer-extracellular-digestion",
+      "title": "Explain useful bacterial and fungal decomposition",
+      "points": [
+        "12.17"
+      ],
+      "terms": [
+        "decomposer",
+        "saprotrophic",
+        "extracellular enzyme",
+        "absorption"
+      ],
+      "paragraphs": [
+        "Many non-pathogenic bacteria and fungi break down dead material and organic wastes. They secrete enzymes that digest large molecules outside their cells. Smaller soluble products can then be absorbed and used for growth or respiration.",
+        "This decomposition releases materials into forms that other organisms can use and prevents dead organic matter accumulating indefinitely. A decomposer is not automatically a disease-causing organism, and fungi do not obtain food by photosynthesis."
+      ],
+      "example": {
+        "question": "Why must a large insoluble food molecule be broken down before absorption?",
+        "steps": [
+          "It cannot simply pass into the cell as a large insoluble molecule.",
+          "Extracellular enzymes produce smaller soluble products.",
+          "These products can be absorbed."
+        ],
+        "explanation": "Connect location of digestion to movement into the cell."
+      },
+      "commonMistakes": [
+        "Placing all fungal digestion inside a stomach.",
+        "Calling all useful decomposers pathogens."
+      ]
+    },
+    {
+      "id": "decomposition-conditions-and-use",
+      "title": "Relate decomposition to oxygen and enzyme activity",
+      "points": [
+        "12.17"
+      ],
+      "terms": [
+        "aerobic",
+        "anaerobic",
+        "moisture",
+        "enzyme activity"
+      ],
+      "paragraphs": [
+        "Microbial decomposition depends on suitable conditions. Water supports biological activity, while temperature affects enzyme-controlled reactions. Very high temperatures can damage enzymes and cells; increasing temperature is not an unlimited way to speed decomposition.",
+        "Aerobic activity uses oxygen, while anaerobic breakdown can occur without it. Which organisms and pathways dominate depends on local conditions. These ideas explain useful waste treatment; detailed carbon and nitrogen cycles are not required by this Human Biology statement."
+      ],
+      "example": {
+        "question": "Why might aeration alter decomposition without adding more organic waste?",
+        "steps": [
+          "It changes oxygen availability.",
+          "This can support aerobic microorganisms and their activity.",
+          "The starting amount of waste and rate of breakdown are different quantities."
+        ],
+        "explanation": "Link a condition to a biological process, not just to “more bacteria”."
+      },
+      "commonMistakes": [
+        "Assuming all decomposers require oxygen.",
+        "Treating the optional context as a new publisher-numbered cycle requirement."
+      ]
+    },
+    {
+      "id": "sewage-works-aerobic-treatment",
+      "title": "Trace the water stream through sewage treatment",
+      "points": [
+        "12.18"
+      ],
+      "terms": [
+        "screening",
+        "sedimentation",
+        "aeration",
+        "activated sludge",
+        "effluent"
+      ],
+      "paragraphs": [
+        "In a typical works, screens remove large objects and settling separates solids from the liquid. Biological treatment then reduces biodegradable organic material. In an activated-sludge system, air is mixed with wastewater and a microbial population, supporting aerobic breakdown.",
+        "Microbial biomass is separated by further settling; some is returned to maintain the treatment population. The liquid leaving a stage is effluent. Additional treatment or disinfection depends on the required use and discharge conditions: aeration and settling alone do not certify drinking-water safety."
+      ],
+      "example": {
+        "question": "Why is pumping air into an activated-sludge tank a biological treatment step?",
+        "steps": [
+          "Oxygen supports aerobic microbial activity.",
+          "Microorganisms use and break down organic material.",
+          "Air is not simply a sieve removing large objects."
+        ],
+        "explanation": "Separate physical removal from microbial breakdown."
+      },
+      "commonMistakes": [
+        "Confusing settled sludge with the final liquid stream.",
+        "Claiming sewage becomes drinkable after any one stage."
+      ]
+    },
+    {
+      "id": "sewage-sludge-anaerobic-digestion",
+      "title": "Distinguish aerated treatment from sludge digestion",
+      "points": [
+        "12.18"
+      ],
+      "terms": [
+        "sludge",
+        "anaerobic digestion",
+        "biogas",
+        "methane"
+      ],
+      "paragraphs": [
+        "Removed sewage solids form sludge that needs further management. In an anaerobic digester, microorganisms break down organic material without oxygen. The process can produce methane-containing biogas and residual material; treatment of solids is distinct from the aerated water stream.",
+        "A controlled facility can collect biogas for energy use. Digestion does not mean every contaminant or pathogen has disappeared, and residues still require appropriate handling. Do not add air as the defining requirement for an anaerobic digester."
+      ],
+      "example": {
+        "question": "Which oxygen condition distinguishes an aeration tank from an anaerobic sludge digester?",
+        "steps": [
+          "The aeration tank supplies oxygen for aerobic activity.",
+          "The anaerobic digester operates without oxygen.",
+          "Both involve microorganisms but use different conditions."
+        ],
+        "explanation": "Match the oxygen condition to the named stage."
+      },
+      "commonMistakes": [
+        "Calling methane the only product.",
+        "Assuming digestion makes every residual material harmless."
+      ]
+    },
+    {
+      "id": "pit-latrines-and-microbial-breakdown",
+      "title": "Explain pit-latrine containment and decomposition",
+      "points": [
+        "12.18"
+      ],
+      "terms": [
+        "pit latrine",
+        "containment",
+        "aerobic breakdown",
+        "anaerobic breakdown"
+      ],
+      "paragraphs": [
+        "A pit latrine contains excreta at the place where it is deposited, rather than sending it along a sewer to a central works. Microorganisms break down some organic material. Oxygen availability varies: oxygenated regions can support aerobic activity, while deeper oxygen-poor contents favour anaerobic breakdown.",
+        "Conditions and decomposition vary between pits, and material can accumulate. Containment and partial breakdown do not sterilise the contents. Preventing contamination of water and contact with waste remains important; a classroom description is not a specification for building or emptying a pit."
+      ],
+      "example": {
+        "question": "Why is “all parts of every pit have the same oxygen level” a poor model?",
+        "steps": [
+          "Air reaches some regions more readily than others.",
+          "Microbial activity can consume oxygen.",
+          "Different local conditions can support different pathways."
+        ],
+        "explanation": "Use local conditions rather than assigning one process to every part of the system."
+      },
+      "commonMistakes": [
+        "Calling all pits controlled aerated tanks.",
+        "Equating absence of visible waste with absence of pathogens."
+      ]
+    },
+    {
+      "id": "sewage-data-and-interpretation",
+      "title": "Calculate a change without claiming complete treatment",
+      "points": [
+        "12.18"
+      ],
+      "terms": [
+        "oxygen demand",
+        "percentage reduction",
+        "measurement limit"
+      ],
+      "paragraphs": [
+        "A fictional comparison records an oxygen-demand measure falling from 150 to 30 mg oxygen per dm³ after treatment. Under the stated matched measurement conditions, the decrease is 120 mg oxygen per dm³ and the percentage reduction is 120 ÷ 150 × 100 = 80%.",
+        "A lower oxygen-demand value suggests less material consuming oxygen in that measurement. It is not a direct count of every pathogen, a drinking-water certificate or proof that all chemical pollutants were removed. Different claims require appropriate additional evidence."
+      ],
+      "example": {
+        "question": "What conclusion is supported by the fictional 80% reduction, and what is not?",
+        "steps": [
+          "The stated oxygen-demand measure fell by 80%.",
+          "Use the same defined measurement conditions for comparison.",
+          "The calculation alone does not establish absence of pathogens or drinking-water safety."
+        ],
+        "explanation": "Report the measured property rather than silently substituting a different one."
+      },
+      "commonMistakes": [
+        "Calling the percentage a universal plant performance figure.",
+        "Replacing oxygen demand with pathogen count."
       ]
     }
   ]
