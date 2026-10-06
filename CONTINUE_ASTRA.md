@@ -1,5 +1,17 @@
 # Resume the saved project
 
+# Current checkpoint — 7 October 2026, saved after Biology Q5
+
+Read `research/checkpoints/2026-10-07-SAVED-AFTER-BIOLOGY.md` and `2026-10-07-BIOLOGY-Q5.md` first. Validated source local `abf8de63b4281c1b0f7af8566f02f0f9aef8fb01` /GitHub `ecf9400a7526248b643ee9ae3dfe9614105d4ba5` share fetch-verified tree `03c920e44412ca61f5b38d666b13dc651aa47b0a`. Later documentation sync follows; verify the latest descendant. Preserve both histories/UI; no reset.
+
+1,048 sections/35 partial notes/36 routes;796 numbered identities/796 partial audits/2,824 local requirements/1,354 partial numbered teaching links. English separately6 objectives/41 partial links. Seven obtained pairs. Detailed Physics51/110,Maths38/100,Human42/90,Biology24/54,English one pilot/2 marks. Zero complete chapters/points/objectives,fully processed papers or active templates. Seven provisional offline families. No live AI,Sites version,deployment or public URL.
+
+173 tests,types/lint,sixteen research checks,idempotent normalization,evidence reconciliation,production build and public scan121/zero findings pass. Source discrepancy and private-rubric guards preserved. No notes/seed/D1 changes; prior isolated D1 proof remains current.
+
+Q6 has text preflight only: QP17 apparatus/choices and PDF18 interleaved table; inspect continuation and full QP/MS images before detailed extraction. No Q6 counts added. Check task CSV sync headroom (12,835 bytes below195,000), then whole-paper/historical/AO/experimental audits,curriculum and template calibration. Keep AI last; build/test before any Sites version/deploy and verify URL. Saved at5% five-hour/54% weekly remaining; resume substantial work above5% in both windows. No reset/restart/force push.
+
+# Historical preceding checkpoints
+
 # Current checkpoint — 7 October 2026, Biology Q5 detailed subset
 
 Read `research/checkpoints/2026-10-07-BIOLOGY-Q5.md` first. Prior Q3–Q4 phase is fetch-verified: local `7bd8c78256f69e161cd3a43aa82d4c5303c499ae`, GitHub `2f1a8822ab9dbeef938c22f7a7575fd0f8af582d`, tree `e01f852497abb5d3b2fa66ed0cd2eb37b8c3fa45`. Q5 is the next descendant; commit and exact non-force sync follow. Preserve histories/UI; no reset.
