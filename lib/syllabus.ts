@@ -1,3 +1,4 @@
+import humanReproductionClinical from '../research/syllabus/4HB1-reproduction-clinical.json' with { type: 'json' };
 import humanReproductionFoundations from '../research/syllabus/4HB1-reproduction-foundations.json' with { type: 'json' };
 import humanHeredityExtension from '../research/syllabus/4HB1-heredity-extension.json' with { type: 'json' };
 import humanCoordinationHealth from '../research/syllabus/4HB1-coordination-health.json' with { type: 'json' };
@@ -82,6 +83,7 @@ import mathsPolynomials from '../research/syllabus/4MB1-polynomials-and-fraction
 
 // Reviewed overlays are kept separate from the immutable raw candidates.
 export const reviewedInventories = [
+  { title: 'Human birth, growth, contraception and IVF (11.8–11.12; partial teaching)', ...humanReproductionClinical },
   { title: 'Human reproductive physiology (11.1–11.7; partial teaching)', ...humanReproductionFoundations },
   { title: 'Human heredity extension (selected11.15–11.24; partial teaching)', ...humanHeredityExtension },
   { title: 'Human Coordination practical, drugs and clinical topics (5.15–5.19; partial teaching)', ...humanCoordinationHealth },

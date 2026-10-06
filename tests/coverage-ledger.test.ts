@@ -95,7 +95,7 @@ void test('reviewed inventories agree with source candidates and subject-specifi
       (n, inventory) => n + inventory.points.length,
       0,
     ),
-    761,
+    766,
   );
   const allIds = reviewedInventories.flatMap((i) => i.points.map((p) => p.id));
   assert.equal(new Set(allIds).size, allIds.length);
