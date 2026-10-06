@@ -7,7 +7,7 @@
   "reviewer": "Codex visual/source review",
   "reviewerType": "agent",
   "humanReviewed": false,
-  "scope": "Selected Q1 magnification and Q4 mean/precision operations only; no full paper or experimental/AO certification.",
+  "scope": "Selected Q1 magnification, Q4 mean/precision and Q5 graphical percentage operations only; no full paper or experimental/AO certification.",
   "reviewedPages": [
     49
   ],
@@ -26,7 +26,7 @@
       "reference": "1C",
       "pdfPage": 49,
       "printedPage": 43,
-      "summary": "Use ratios and related numerical operations.",
+      "summary": "Use ratios and percentages in selected operations; not all powers, roots or fractions assessed.",
       "appliesToBiology": true,
       "reviewStatus": "agent-reviewed"
     },
@@ -56,6 +56,15 @@
       "summary": "Understand and find the arithmetic mean.",
       "appliesToBiology": true,
       "reviewStatus": "agent-reviewed"
+    },
+    {
+      "id": "4BI1:issue3:mathematical:4A",
+      "reference": "4A",
+      "pdfPage": 49,
+      "printedPage": 43,
+      "summary": "Translate information between graphical and numerical form.",
+      "appliesToBiology": true,
+      "reviewStatus": "agent-reviewed"
     }
   ],
   "taskMappings": [
@@ -77,11 +86,22 @@
       ],
       "scope": "required-operations-only",
       "humanReviewed": false
+    },
+    {
+      "taskId": "4BI1-2024-June-1-standard.Q5.b.i",
+      "skillIds": [
+        "4BI1:issue3:mathematical:1A",
+        "4BI1:issue3:mathematical:1C",
+        "4BI1:issue3:mathematical:4A"
+      ],
+      "scope": "required-operations-only",
+      "humanReviewed": false
     }
   ],
   "blockers": [
     "Physical measurement display calibration and printed partial-credit policy unresolved.",
     "Whole-paper mathematical/experimental/AO and historical reconciliation pending.",
-    "Q4 source rounding concession and broader respirometer experimental applicability pending."
+    "Q4 source rounding concession and broader respirometer experimental applicability pending.",
+    "Q5 graphical tolerances, source partial follow-through and time-range concessions require calibration."
   ]
 }

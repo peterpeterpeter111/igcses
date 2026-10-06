@@ -1,5 +1,19 @@
 # Resume the saved project
 
+# Current checkpoint — 7 October 2026, Biology Q5 detailed subset
+
+Read `research/checkpoints/2026-10-07-BIOLOGY-Q5.md` first. Prior Q3–Q4 phase is fetch-verified: local `7bd8c78256f69e161cd3a43aa82d4c5303c499ae`, GitHub `2f1a8822ab9dbeef938c22f7a7575fd0f8af582d`, tree `e01f852497abb5d3b2fa66ed0cd2eb37b8c3fa45`. Q5 is the next descendant; commit and exact non-force sync follow. Preserve histories/UI; no reset.
+
+Biology now has 24 detailed Q1–Q5 parts / 54 marks, 24 partial numbered mappings and six selected mathematical skills linked to three tasks. Q5 preserves final-answer overrides, two partial calculation rules, eight commentary criteria capped at five and unresolved after-2020 concessions. No whole-paper denominator, causal proof, recognizer, calibrated custom quiz or active family is invented. Raw indexed-only history and all earlier source qualifications remain intact.
+
+1,048 sections /35 partial notes /36 routes; 796 numbered identities /796 partial audits /2,824 local requirements /1,354 partial numbered teaching links. English separately six objectives /41 partial links. Seven obtained pairs; detailed Physics51/110, Maths38/100, Human42/90, Biology24/54 and English one pilot/2 marks. Seven provisional offline families; zero complete chapters/points/objectives, fully processed papers or active templates. No live AI, Sites version, deployment or public URL.
+
+173 tests, typecheck/lint, sixteen research checks, idempotent normalization, evidence reconciliation, production build and public scan121/zero findings pass. Eleven Biology tests include 63 rejected source/policy/promotion mutations. Phone-width DOM has no horizontal overflow; coverage accurately shows thirteen QP/eleven scheme reviewed pages and unknown denominator. Prior D1 proof remains current; notes/seed/D1 unchanged.
+
+Next: exact sync then Q6, whole-paper inventory, historical/experimental/AO reconciliation, curriculum and calibrated templates. Task CSV request currently182,165 bytes; inspect 12,835-byte remaining bounded-sync capacity before more bulk additions. No migration started. Keep AI last; test/build before any Sites version/deployment. Last observed7% five-hour/54% weekly remaining. Save before exhaustion; no restart/reset/force push.
+
+# Historical preceding checkpoints
+
 # Current checkpoint — 7 October 2026, Biology Q3–Q4 detailed subset
 
 Read `research/checkpoints/2026-10-07-BIOLOGY-Q3-Q4.md` first. Prior Q2 phase is fetch-verified: local `b0d6e9641667ec42e9e164ca037e8c2446afa271`, GitHub `baa609daf75040c590d51ce908c6244837a8bcc3`, tree `c4e9b500724e3907462c01dfa91f6cc03790c9d1`. Q3–Q4 is the next descendant; commit and exact non-force sync follow. Preserve both histories/UI; consume no reset.

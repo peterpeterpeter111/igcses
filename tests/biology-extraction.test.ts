@@ -9,23 +9,23 @@ import { subjectEvidence, coverageSummary, evidenceHighlights } from '../lib/cov
 
 void test('Biology exposes a detailed subset while keeping private rubrics and whole-paper gates separate', () => {
   const row = subjectEvidence('4BI1').find((r) => r.paperId === extraction.paperId)!;
-  assert.equal(row.extraction?.detailedTasks, 20);
-  assert.equal(row.extraction?.originalMarks, 43);
+  assert.equal(row.extraction?.detailedTasks, 24);
+  assert.equal(row.extraction?.originalMarks, 54);
   assert.equal(row.extraction?.expectedTasks, null);
   assert.equal(row.extraction?.wholePageAudit, false);
   assert.equal(row.index, null);
-  assert.deepEqual(row.extraction?.reviewedQuestions, ['1', '2', '3', '4']);
-  assert.equal(row.extraction?.questionPaperPages, 10);
-  assert.equal(row.extraction?.markSchemePages, 9);
+  assert.deepEqual(row.extraction?.reviewedQuestions, ['1', '2', '3', '4', '5']);
+  assert.equal(row.extraction?.questionPaperPages, 13);
+  assert.equal(row.extraction?.markSchemePages, 11);
   assert.equal(coverageSummary().find((r) => r.subject.code === '4BI1')?.fullyProcessed, 0);
-  assert.equal(evidenceHighlights.biologyDetailedParts, 20);
+  assert.equal(evidenceHighlights.biologyDetailedParts, 24);
   const summary = JSON.stringify(row);
-  for (const hidden of ['sourceChain', 'numericScoring', 'pairScoring', 'eligibleCriterionIds', 'sourceFoodWeb', 'sourceFlower', 'sourceComparisonPolicy', 'sourceTraitData', 'answerLabel']) {
+  for (const hidden of ['sourceChain', 'numericScoring', 'pairScoring', 'eligibleCriterionIds', 'sourceFoodWeb', 'sourceFlower', 'sourceComparisonPolicy', 'sourceTraitData', 'answerLabel', 'percentageScoring', 'sourceTemporalConcessions', 'sourceEmissionsGraph']) {
     assert.ok(!summary.includes(hidden), hidden);
   }
   assert.equal(extraction.paperStage, 'indexed');
   assert.equal(extraction.marksReconciled, false);
-  assert.equal(extraction.tasks.reduce((sum, t) => sum + t.originalMarks, 0), 43);
+  assert.equal(extraction.tasks.reduce((sum, t) => sum + t.originalMarks, 0), 54);
   for (const [ref, hash] of [[extraction.rawManifestRef, extraction.rawManifestSha256], [extraction.coverReviewRef, extraction.coverReviewSha256]]) {
     assert.equal(createHash('sha256').update(readFileSync(ref)).digest('hex'), hash);
   }
@@ -161,6 +161,18 @@ mutations={
  'mean-policy-promotion':lambda m:m['tasks'][18]['sourceQualification'].update(generatedUse='ready'),
  'temperature-bubble-credit':lambda m:m['tasks'][19].update(sourceRejectedEvidence=[]),
  'temperature-data':lambda m:m['tasks'][19]['sourceExperimentData'].update(temperaturesC=[20,50]),
+ 'greenhouse-choice':lambda m:m['tasks'][20]['scoringRule'].update(answerLabel='D'),
+ 'enhanced-effect-promotion':lambda m:m['tasks'][21]['sourceQualification'].update(generatedUse='ready'),
+ 'percentage-range':lambda m:m['tasks'][22]['percentageScoring'].update(fullCreditRange=[24,24]),
+ 'wrong-working-concession':lambda m:m['tasks'][22]['percentageScoring'].update(correctFinalAnswerWithWrongWorkingMarks=0),
+ 'extra-percent-mark':lambda m:m['tasks'][22]['percentageScoring'].update(independentMultiplyBy100Mark=True),
+ 'readings-tolerance':lambda m:m['tasks'][22]['percentageScoring'].update(allReadingsTolerance=2),
+ 'partial-numerator':lambda m:m['tasks'][22]['percentageScoring']['partialRules'][1].update(numeratorRange=[110,110]),
+ 'commentary-cap':lambda m:m['tasks'][23]['scoringRule'].update(selectionLimit=8),
+ 'temporal-concession':lambda m:m['tasks'][23]['sourceTemporalConcessions'].update(publishedGuidance=[]),
+ 'invented-final-year':lambda m:m['sourceEmissionsGraph'].update(tailEndYearVerified=2023),
+ 'graph-reuse-promotion':lambda m:m['tasks'][23]['sourceQualification'].update(generatedUse='ready'),
+
 }
 for name,mutate in mutations.items():
  m=copy.deepcopy(original);mutate(m)
@@ -170,7 +182,7 @@ for name,mutate in mutations.items():
  assert all(p.read_bytes()==data for p,data in before.items()),name+' changed a ledger table'
 print(json.dumps({'rejected':len(mutations),'tables':len(outputs)}))
 `], { encoding: 'utf8' }));
-  assert.equal(proof.rejected, 52);
+  assert.equal(proof.rejected, 63);
   assert.equal(proof.tables, 4);
 });
 
@@ -241,6 +253,46 @@ void test('Respirometer extraction preserves exact arithmetic, equation balance 
   assert.equal(tasks[4].scoringRule.selectionLimit, 3);
   assert.deepEqual(tasks[4].sourceRejectedEvidence, ['Energy of the bubble rather than molecules', 'Increased bubble movement alone']);
   assert.deepEqual(tasks[4].sourceExperimentData?.temperaturesC, [20, 30]);
-  assert.equal(skills.skills.length, 5);
+  assert.deepEqual(skills.skills.slice(0, 5).map((skill) => skill.reference), ['1A', '1C', '3C', '2A', '2B']);
   assert.equal(evidenceHighlights.activeFamilies, 0);
+});
+
+
+void test('Emissions percentage keeps source final-credit override and two partial rules without invented calculation marks', () => {
+  const t = extraction.tasks.find((task) => task.questionPath === '5.b.i')!;
+  const p = t.percentageScoring!;
+  const values = Object.values(p.readings);
+  assert.equal(values.reduce((a, b) => a + b, 0), 453);
+  const exact = p.readings.energy / values.reduce((a, b) => a + b, 0) * 100;
+  assert.ok(Math.abs(exact - 24.282560706401764) < 1e-10);
+  assert.ok(exact > p.fullCreditRange[0] && exact < p.fullCreditRange[1]);
+  assert.equal(p.correctFinalAnswerWithWrongWorkingMarks, 3);
+  assert.equal(p.correctFinalAnswerWithoutWorkingMarks, 3);
+  assert.equal(p.partialRules.reduce((sum, rule) => sum + rule.marks, 0), 2);
+  assert.equal(p.partialMaximum, 2);
+  assert.equal(p.independentMultiplyBy100Mark, false);
+  assert.equal(p.calculationLinesAreMarkingPoints, false);
+  assert.deepEqual(t.criteria.map((c) => c.marks), [0, 0]);
+  assert.deepEqual(t.syllabusMappings, []);
+  assert.equal(p.recognitionStatus, 'not-implemented');
+  assert.equal(skills.skills.length, 6);
+  assert.equal(skills.taskMappings.length, 3);
+});
+
+void test('Emissions commentary keeps five-of-eight source credit and after-2020 concessions without inventing the tail year', () => {
+  const t = extraction.tasks.find((task) => task.questionPath === '5.b.ii')!;
+  assert.equal(t.originalMarks, 5);
+  assert.equal(t.criteria.length, 8);
+  assert.equal(t.scoringRule.selectionLimit, 5);
+  const concessions = t.sourceTemporalConcessions!;
+  assert.deepEqual(concessions.publishedGuidance.map((r) => r.criterionId), [t.criteria[0].id, t.criteria[3].id, t.criteria[7].id]);
+  assert.ok(concessions.publishedGuidance.every((r) => r.wording.includes('after 2020')));
+  assert.equal(extraction.sourceEmissionsGraph.tailEndYearVerified, null);
+  assert.equal(extraction.sourceEmissionsGraph.rightHandTailBeyond2020, true);
+  assert.deepEqual(extraction.sourceEmissionsGraph.promptYearRange, [1990, 2020]);
+  assert.equal(extraction.tasks.filter((task) => task.questionPath.startsWith('5.')).reduce((sum, task) => sum + task.originalMarks, 0), 11);
+  assert.equal(t.sourceQualification?.generatedUse, 'blocked-until-temporal-scope-causal-and-response-calibration');
+  const greenhouse = extraction.tasks.find((task) => task.questionPath === '5.a.ii')!;
+  assert.equal(greenhouse.syllabusMappings[0].kind, 'supporting');
+  assert.equal(greenhouse.sourceQualification?.generatedUse, 'blocked-until-natural-enhanced-scope-and-response-calibration');
 });

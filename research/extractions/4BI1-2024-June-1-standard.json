@@ -21,13 +21,14 @@
   "fullyProcessed": false,
   "wholePaperMarks": 110,
   "wholePaperLeafCount": null,
-  "detailedLeafTasks": 20,
-  "detailedOriginalMarks": 43,
+  "detailedLeafTasks": 24,
+  "detailedOriginalMarks": 54,
   "reviewedQuestionTotals": {
     "1": 12,
     "2": 14,
     "3": 7,
-    "4": 10
+    "4": 10,
+    "5": 11
   },
   "reviewedSubsetMarksReconciled": true,
   "marksReconciled": false,
@@ -59,7 +60,10 @@
         8,
         9,
         10,
-        11
+        11,
+        13,
+        14,
+        15
       ],
       "wholeDocumentReviewed": false
     },
@@ -73,7 +77,9 @@
         8,
         9,
         10,
-        11
+        11,
+        12,
+        13
       ],
       "wholeDocumentReviewed": false
     }
@@ -94,6 +100,7 @@
       22,
       26,
       29,
+      30,
       31,
       49
     ],
@@ -3331,14 +3338,686 @@
           ]
         }
       }
+    },
+    {
+      "paperId": "4BI1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "generalSchemePages": [
+        3
+      ],
+      "commandWordStatus": "source-checked-short-label",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO marks inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "taskId": "4BI1-2024-June-1-standard.Q5.a.i",
+      "questionPath": "5.a.i",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        13
+      ],
+      "markSchemePages": [
+        12
+      ],
+      "commandWord": "Which",
+      "requiredKnowledge": [
+        "named greenhouse gases",
+        "distinguishing oxygen from greenhouse gases"
+      ],
+      "contextSummary": "Choose the greenhouse gases from four numbered entries.",
+      "solutionStructure": [
+        "Select C: entries 1, 2 and 4, excluding oxygen."
+      ],
+      "markingMethod": "single-choice",
+      "criteria": [
+        {
+          "id": "4BI1-2024-June-1-standard.Q5.a.i:point-1",
+          "marks": 1,
+          "rule": "Select C: CFCs, methane and water vapour."
+        }
+      ],
+      "scoringRule": {
+        "mode": "single-choice",
+        "maximum": 1,
+        "eligibleCriterionIds": [
+          "4BI1-2024-June-1-standard.Q5.a.i:point-1"
+        ],
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            12
+          ]
+        },
+        "answerLabel": "C"
+      },
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4BI1:issue3:4.13",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Identifies three named greenhouse gases among four choices; not the full specified list.",
+          "evidenceRefs": [
+            {
+              "documentId": "4BI1-spec",
+              "pdfPages": [
+                30
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                13
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                12
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "multiple-choice"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            13
+          ]
+        }
+      ],
+      "proposedFamilyId": "4BI1.greenhouse-gases.choice",
+      "blockers": [
+        "Candidate family only; response recognition and custom 2/4/6-mark adaptation uncalibrated.",
+        "Whole historical, experimental/AO and source-policy review remain incomplete."
+      ],
+      "sourceGasEntries": [
+        {
+          "number": 1,
+          "gas": "CFCs"
+        },
+        {
+          "number": 2,
+          "gas": "methane"
+        },
+        {
+          "number": 3,
+          "gas": "oxygen"
+        },
+        {
+          "number": 4,
+          "gas": "water vapour"
+        }
+      ],
+      "sourceChoices": [
+        {
+          "label": "A",
+          "entryNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "B",
+          "entryNumbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "label": "C",
+          "entryNumbers": [
+            1,
+            2,
+            4
+          ]
+        },
+        {
+          "label": "D",
+          "entryNumbers": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "paperId": "4BI1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "generalSchemePages": [
+        3
+      ],
+      "commandWordStatus": "source-checked-short-label",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO marks inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "taskId": "4BI1-2024-June-1-standard.Q5.a.ii",
+      "questionPath": "5.a.ii",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        13
+      ],
+      "markSchemePages": [
+        12
+      ],
+      "commandWord": "Explain",
+      "requiredKnowledge": [
+        "infrared/long-wave radiation absorption",
+        "warming"
+      ],
+      "contextSummary": "Explain the greenhouse effect in the source greenhouse-gas context.",
+      "solutionStructure": [
+        "Explain infrared absorption or reduced heat escape, followed by warming."
+      ],
+      "markingMethod": "all-distinct",
+      "criteria": [
+        {
+          "id": "4BI1-2024-June-1-standard.Q5.a.ii:point-1",
+          "marks": 1,
+          "rule": "Infrared/long-wave radiation absorption or trapping; source also accepts trapping heat or preventing heat escape."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q5.a.ii:point-2",
+          "marks": 1,
+          "rule": "Increased global temperature or warming of Earth."
+        }
+      ],
+      "scoringRule": {
+        "mode": "all-distinct",
+        "maximum": 2,
+        "eligibleCriterionIds": [
+          "4BI1-2024-June-1-standard.Q5.a.ii:point-1",
+          "4BI1-2024-June-1-standard.Q5.a.ii:point-2"
+        ],
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            12
+          ]
+        },
+        "selectionLimit": 2,
+        "creditPerCriterion": 1
+      },
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4BI1:issue3:4.15",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Basic absorption/warming mechanism only; the prompt does not fully assess increased gas concentration or wider enhanced-effect consequences.",
+          "evidenceRefs": [
+            {
+              "documentId": "4BI1-spec",
+              "pdfPages": [
+                30
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                13
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                12
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "text"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            13
+          ]
+        }
+      ],
+      "proposedFamilyId": "4BI1.greenhouse-effect.explanation",
+      "blockers": [
+        "Candidate family only; response recognition and custom 2/4/6-mark adaptation uncalibrated.",
+        "Whole historical, experimental/AO and source-policy review remain incomplete."
+      ],
+      "sourceQualification": {
+        "note": "Natural greenhouse warming and an enhanced greenhouse effect must remain distinct. The scheme accepts global-warming wording here, but the prompt does not require an increase in greenhouse-gas concentration or establish wider consequences. No additional source dependency or gas-name mark is invented.",
+        "generatedUse": "blocked-until-natural-enhanced-scope-and-response-calibration",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            12
+          ]
+        }
+      }
+    },
+    {
+      "paperId": "4BI1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "generalSchemePages": [
+        3
+      ],
+      "commandWordStatus": "source-checked-short-label",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO marks inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "taskId": "4BI1-2024-June-1-standard.Q5.b.i",
+      "questionPath": "5.b.i",
+      "originalMarks": 3,
+      "questionPaperPages": [
+        14
+      ],
+      "markSchemePages": [
+        12
+      ],
+      "commandWord": "Calculate",
+      "requiredKnowledge": [
+        "graph readings",
+        "part/whole percentage"
+      ],
+      "contextSummary": "Calculate the percentage of the four-source total represented by energy production in 2020.",
+      "solutionStructure": [
+        "Read 50, 110, 118 and 175 million tonnes; sum 453.",
+        "Compute 110 / 453 × 100 = approximately 24.2826%; the source accepts 23.9–24.9%."
+      ],
+      "markingMethod": "percentage-final-or-two-partials",
+      "criteria": [
+        {
+          "id": "4BI1-2024-June-1-standard.Q5.b.i:point-1",
+          "marks": 0,
+          "rule": "Informational role: four source readings."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q5.b.i:point-2",
+          "marks": 0,
+          "rule": "Informational role: division by the candidate total and final percentage."
+        }
+      ],
+      "scoringRule": {
+        "mode": "percentage-final-or-two-partials",
+        "maximum": 3,
+        "eligibleCriterionIds": [
+          "4BI1-2024-June-1-standard.Q5.b.i:point-1",
+          "4BI1-2024-June-1-standard.Q5.b.i:point-2"
+        ],
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            12
+          ]
+        }
+      },
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [],
+      "stimulusTypes": [
+        "line-graph"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            14
+          ]
+        }
+      ],
+      "proposedFamilyId": "4BI1.emissions.graph-percentage",
+      "blockers": [
+        "Candidate family only; response recognition and custom 2/4/6-mark adaptation uncalibrated.",
+        "Whole historical, experimental/AO and source-policy review remain incomplete."
+      ],
+      "percentageScoring": {
+        "readings": {
+          "agriculture": 50,
+          "energy": 110,
+          "business": 118,
+          "transport": 175
+        },
+        "allReadingsTolerance": 1,
+        "unlabelledReadingsAccepted": true,
+        "sourceTotal": 453,
+        "exactPercentage": "11000/453",
+        "fullCreditRange": [
+          23.9,
+          24.9
+        ],
+        "fullCreditMarks": 3,
+        "correctFinalAnswerWithoutWorkingMarks": 3,
+        "correctFinalAnswerWithWrongWorkingMarks": 3,
+        "partialMaximum": 2,
+        "partialRules": [
+          {
+            "id": "all-four-readings",
+            "marks": 1,
+            "rule": "All four correct readings, even if unlabelled, within ±1."
+          },
+          {
+            "id": "divide-by-their-total",
+            "marks": 1,
+            "numeratorRange": [
+              109,
+              111
+            ],
+            "rule": "Divide energy 110 (109–111) by the candidate total."
+          }
+        ],
+        "partialRulesDistinct": true,
+        "independentMultiplyBy100Mark": false,
+        "calculationLinesAreMarkingPoints": false,
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            12
+          ]
+        }
+      },
+      "mathematicalSkillIds": [
+        "4BI1:issue3:mathematical:1A",
+        "4BI1:issue3:mathematical:1C",
+        "4BI1:issue3:mathematical:4A"
+      ],
+      "sourceQualification": {
+        "note": "The source labels its worked calculation as method, not marking points. Full credit follows an in-range final percentage even without or with wrong working; otherwise only the two published partial rules apply. Do not invent separate total or ×100 marks. Follow-through parsing and graphical precision require calibration.",
+        "generatedUse": "blocked-until-graph-tolerance-and-follow-through-calibration",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            12
+          ]
+        }
+      },
+      "sourceGraphData": {
+        "country": "United Kingdom",
+        "promptYearRange": [
+          1990,
+          2020
+        ],
+        "verticalAxisUnit": "million tonnes of greenhouse gas",
+        "sources": [
+          "agriculture",
+          "energy production",
+          "business",
+          "transport (including international)"
+        ],
+        "sourceReadingsAt2020": {
+          "agriculture": 50,
+          "energy": 110,
+          "business": 118,
+          "transport": 175
+        },
+        "readingsAuthority": "Published mark-scheme calculation; graph visually checked, no full numerical series digitised.",
+        "rightHandTailBeyond2020": true,
+        "tailEndYearVerified": null,
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            14
+          ]
+        }
+      }
+    },
+    {
+      "paperId": "4BI1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "generalSchemePages": [
+        3
+      ],
+      "commandWordStatus": "source-checked-short-label",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO marks inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "taskId": "4BI1-2024-June-1-standard.Q5.b.ii",
+      "questionPath": "5.b.ii",
+      "originalMarks": 5,
+      "questionPaperPages": [
+        15
+      ],
+      "markSchemePages": [
+        13
+      ],
+      "commandWord": "Comment",
+      "requiredKnowledge": [
+        "source-specific trends",
+        "human greenhouse-gas sources",
+        "evidence and causal limits"
+      ],
+      "contextSummary": "Comment on the four sectors from 1990 to 2020 using the graph and own knowledge.",
+      "solutionStructure": [
+        "Use any five distinct points from the eight-point source pool.",
+        "Keep descriptive graph trends separate from proposed causal explanations."
+      ],
+      "markingMethod": "any-distinct",
+      "criteria": [
+        {
+          "id": "4BI1-2024-June-1-standard.Q5.b.ii:point-1",
+          "marks": 1,
+          "rule": "Overall emissions decline."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q5.b.ii:point-2",
+          "marks": 1,
+          "rule": "Energy was highest in 1990, decreases most, or has a large decline."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q5.b.ii:point-3",
+          "marks": 1,
+          "rule": "Energy shifts towards wind/solar/renewables, away from coal/gas/fossil-fuel burning."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q5.b.ii:point-4",
+          "marks": 1,
+          "rule": "Transport increases, increases then falls, or declines from 2009/2010."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q5.b.ii:point-5",
+          "marks": 1,
+          "rule": "More cars/emissions, followed by electric/hybrid cars or less commuting."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q5.b.ii:point-6",
+          "marks": 1,
+          "rule": "Agricultural emissions decline."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q5.b.ii:point-7",
+          "marks": 1,
+          "rule": "Fewer cattle or less methane released."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q5.b.ii:point-8",
+          "marks": 1,
+          "rule": "Business changes little or declines slightly."
+        }
+      ],
+      "scoringRule": {
+        "mode": "any-distinct",
+        "maximum": 5,
+        "eligibleCriterionIds": [
+          "4BI1-2024-June-1-standard.Q5.b.ii:point-1",
+          "4BI1-2024-June-1-standard.Q5.b.ii:point-2",
+          "4BI1-2024-June-1-standard.Q5.b.ii:point-3",
+          "4BI1-2024-June-1-standard.Q5.b.ii:point-4",
+          "4BI1-2024-June-1-standard.Q5.b.ii:point-5",
+          "4BI1-2024-June-1-standard.Q5.b.ii:point-6",
+          "4BI1-2024-June-1-standard.Q5.b.ii:point-7",
+          "4BI1-2024-June-1-standard.Q5.b.ii:point-8"
+        ],
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            13
+          ]
+        },
+        "selectionLimit": 5,
+        "creditPerCriterion": 1
+      },
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4BI1:issue3:4.14",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "The sector explanations connect energy, transport and livestock activity with gas emissions; not full assessment of every human pathway.",
+          "evidenceRefs": [
+            {
+              "documentId": "4BI1-spec",
+              "pdfPages": [
+                30
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                15
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                13
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "line-graph",
+        "text"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            14,
+            15
+          ]
+        }
+      ],
+      "proposedFamilyId": "4BI1.emissions.trend-commentary",
+      "blockers": [
+        "Candidate family only; response recognition and custom 2/4/6-mark adaptation uncalibrated.",
+        "Whole historical, experimental/AO and source-policy review remain incomplete."
+      ],
+      "sourceGraphData": {
+        "country": "United Kingdom",
+        "promptYearRange": [
+          1990,
+          2020
+        ],
+        "verticalAxisUnit": "million tonnes of greenhouse gas",
+        "sources": [
+          "agriculture",
+          "energy production",
+          "business",
+          "transport (including international)"
+        ],
+        "sourceReadingsAt2020": {
+          "agriculture": 50,
+          "energy": 110,
+          "business": 118,
+          "transport": 175
+        },
+        "readingsAuthority": "Published mark-scheme calculation; graph visually checked, no full numerical series digitised.",
+        "rightHandTailBeyond2020": true,
+        "tailEndYearVerified": null,
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            14
+          ]
+        }
+      },
+      "sourceTemporalConcessions": {
+        "promptYearRange": [
+          1990,
+          2020
+        ],
+        "publishedGuidance": [
+          {
+            "criterionId": "4BI1-2024-June-1-standard.Q5.b.ii:point-1",
+            "wording": "allow all fall after 2020"
+          },
+          {
+            "criterionId": "4BI1-2024-June-1-standard.Q5.b.ii:point-4",
+            "wording": "allow transport drops after 2020"
+          },
+          {
+            "criterionId": "4BI1-2024-June-1-standard.Q5.b.ii:point-8",
+            "wording": "allow drops after 2020"
+          }
+        ],
+        "renewableEnergyAlternativeAccepted": true,
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            13
+          ]
+        },
+        "recognitionStatus": "not-implemented"
+      },
+      "sourceQualification": {
+        "note": "The graph has visible tails beyond the labelled 2020 line, while the prompt specifies 1990–2020. The scheme expressly allows after-2020 decline wording for overall, transport and business points; preserve these concessions without silently rewriting the prompt or inventing a final year. Sector trends alone do not prove causes; electric/hybrid references do not establish zero lifecycle emissions. Original five-mark demand is not an activated custom quiz.",
+        "generatedUse": "blocked-until-temporal-scope-causal-and-response-calibration",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            13
+          ]
+        }
+      }
     }
   ],
   "blockers": [
-    "Only Q1–Q4: twenty detailed parts / 43 marks; whole-paper leaf count and visual inventory remain unknown.",
+    "Only Q1–Q5: twenty-four detailed parts / 54 marks; whole-paper leaf count and visual inventory remain unknown.",
     "Whole historical, skills/AO and paper-to-current-scope reconciliation incomplete.",
     "Printed divisor 35 and tick-context physiological examples require generated-reuse policy.",
     "No calibrated Biology template, response recognition or learner/examiner certification.",
-    "Examiner report not obtained."
+    "Examiner report not obtained.",
+    "Q5 time-range concessions, graph-reading tolerance, partial follow-through and natural/enhanced-effect scope remain generated-reuse blockers."
   ],
   "processingNotes": [
     "Original indexed-only batch and its zero extracted count are preserved; this separately dated overlay records Q1 progress.",
@@ -3354,7 +4033,11 @@
     "No source genotype, dominance or offspring probability is supplied for breeding; no such value is invented.",
     "Q3 is one seven-mark passage with seven credit positions, not seven leaf tasks. Q4 contributes five parts / 10 marks. Both question totals match the source.",
     "Q4 keeps the unbalanced-correct-symbol one-mark concession, rejects a word equation and uses separate alternative partial-credit branches for its mean.",
-    "Respirometer CO2 effects, observed-temperature range, source precision and incomplete apparatus calibration remain explicit generated-reuse gates."
+    "Respirometer CO2 effects, observed-temperature range, source precision and incomplete apparatus calibration remain explicit generated-reuse gates.",
+    "Q5 adds four parts / 11 marks at QP PDF13–15 / MS PDF12–13; both show the 11-mark total. The blank QP PDF12 is not included in this detailed visual audit.",
+    "Q5 percentage final range earns all three marks even with no or wrong working; otherwise only all readings ±1 and energy numerator 109–111 divided by their total are the two partial rules. Calculation lines, total and ×100 are not invented independent credit.",
+    "Q5 commentary has eight one-mark points capped at five. Published after-2020 concessions are retained despite the prompt 1990–2020 window and visible later graph tails; no tail end year or causal proof is invented.",
+    "Current 4.13/4.14 and supporting 4.15 mappings remain partial; percentage operations are separately mapped to selected Appendix 4 skills, not fabricated numbered content."
   ],
   "sourceFlower": {
     "labels": {
@@ -3382,6 +4065,35 @@
       "documentId": "4BI1-2024-June-1-standard:questionPaper",
       "pdfPages": [
         10
+      ]
+    }
+  },
+  "sourceEmissionsGraph": {
+    "country": "United Kingdom",
+    "promptYearRange": [
+      1990,
+      2020
+    ],
+    "verticalAxisUnit": "million tonnes of greenhouse gas",
+    "sources": [
+      "agriculture",
+      "energy production",
+      "business",
+      "transport (including international)"
+    ],
+    "sourceReadingsAt2020": {
+      "agriculture": 50,
+      "energy": 110,
+      "business": 118,
+      "transport": 175
+    },
+    "readingsAuthority": "Published mark-scheme calculation; graph visually checked, no full numerical series digitised.",
+    "rightHandTailBeyond2020": true,
+    "tailEndYearVerified": null,
+    "sourceRef": {
+      "documentId": "4BI1-2024-June-1-standard:questionPaper",
+      "pdfPages": [
+        14
       ]
     }
   }
