@@ -1,0 +1,274 @@
+{
+  "subjectId": "biology",
+  "chapterId": "biological-resources",
+  "sections": [
+    {
+      "id": "restriction-specific-cuts",
+      "title": "Restriction enzymes cut at particular DNA sites",
+      "points": [
+        "5.12"
+      ],
+      "terms": [
+        "restriction enzyme",
+        "recognition sequence",
+        "sticky end",
+        "blunt end"
+      ],
+      "paragraphs": [
+        "A restriction enzyme recognises a particular sequence of bases in DNA and cuts the DNA backbone at a specific position at or near that site. It does not identify an entire useful gene by its purpose. In a simple gene-transfer model, suitable cuts release a wanted DNA fragment and open a vector so that the fragment can be inserted.",
+        "Staggered cuts can leave short single-stranded overhangs, called sticky ends. Complementary overhangs can pair: A with T and C with G. Other restriction enzymes make blunt ends with no overhang. Compatible ends matter; saying that any two pieces will stick together misses the sequence requirement."
+      ],
+      "example": {
+        "question": "Why can cutting a desired DNA fragment and a plasmid with the same suitable restriction enzyme help their ends fit?",
+        "steps": [
+          "The enzyme makes a reproducible cut at its recognition sites.",
+          "In the stated sticky-end model, cutting both pieces produces matching complementary overhangs.",
+          "Base pairing can align the pieces, but DNA ligase is still needed to join their backbones."
+        ],
+        "explanation": "This conceptual example assumes suitable recognition sites around the desired fragment and in the vector; it is not a laboratory protocol."
+      },
+      "commonMistakes": [
+        "Not every restriction enzyme leaves sticky ends, and a cut within the wanted coding sequence could disrupt it."
+      ]
+    },
+    {
+      "id": "ligase-joins-backbone",
+      "title": "Ligase joins DNA; it does not manufacture the protein",
+      "points": [
+        "5.12"
+      ],
+      "terms": [
+        "DNA ligase",
+        "sugar–phosphate backbone",
+        "recombinant DNA",
+        "base pairing"
+      ],
+      "paragraphs": [
+        "DNA ligase seals breaks in the sugar–phosphate backbone, forming bonds that join the DNA fragments into a continuous molecule. In the plasmid model it joins the inserted DNA to the opened plasmid. The resulting engineered combination is recombinant DNA.",
+        "Complementary bases pairing at sticky ends helps position the pieces; that pairing is different from ligase sealing their backbones. Keep the roles separate: a restriction enzyme cuts, ligase joins, a vector carries the engineered DNA, and a living cell may express a gene to produce a protein."
+      ],
+      "example": {
+        "question": "A student says “ligase makes insulin when the sticky ends meet”. Correct the explanation.",
+        "steps": [
+          "Ligase joins DNA fragments by sealing their backbones.",
+          "Joining the coding DNA into a suitable vector makes a recombinant DNA molecule.",
+          "Insulin production requires gene expression in suitable host cells and later product recovery."
+        ],
+        "explanation": "DNA is information for a protein; the ligation reaction itself does not translate that information."
+      },
+      "commonMistakes": [
+        "Sticky-end base pairing and permanent backbone joining are different events."
+      ]
+    },
+    {
+      "id": "plasmid-vector-sequence",
+      "title": "A plasmid vector connects DNA assembly to a host cell",
+      "points": [
+        "5.13"
+      ],
+      "terms": [
+        "plasmid",
+        "vector",
+        "host cell",
+        "recombinant plasmid"
+      ],
+      "paragraphs": [
+        "Plasmids are small DNA molecules, commonly circular, found separately from the main bacterial chromosome. A plasmid can be used as a vector: a carrier for a DNA fragment introduced into another cell. Open a suitable plasmid, combine it with the wanted DNA fragment and join the pieces with ligase; then introduce the recombinant plasmid into suitable host cells.",
+        "Check which host cells received the intended construct and retain suitable cells. The host can copy the recombinant DNA as it grows and divides. Carrying DNA does not by itself prove that the wanted protein is produced: expression also requires suitable control sequences and a compatible host. A plasmid is a DNA molecule, not a whole bacterium or a miniature nucleus."
+      ],
+      "example": {
+        "question": "Put the conceptual stages in order: grow suitable host cells; join insert and vector; introduce vector into host; prepare compatible DNA pieces.",
+        "steps": [
+          "Prepare the DNA fragment and opened vector with compatible ends.",
+          "Use ligase to join the pieces as recombinant DNA.",
+          "Introduce the construct into suitable host cells and identify cells carrying the intended DNA.",
+          "Grow the selected cells; verify expression when a protein product is required."
+        ],
+        "explanation": "The sequence separates assembly outside the host from subsequent cell growth and expression."
+      },
+      "commonMistakes": [
+        "A bacterial plasmid need not become part of the main chromosome to act as a vector."
+      ],
+      "diagram": {
+        "src": "/diagrams/biology-recombinant-vector.svg",
+        "alt": "Conceptual sequence: suitable insert and opened plasmid are joined by ligase, the recombinant plasmid enters suitable host cells, and selected cells grow; expression is checked separately.",
+        "caption": "Original conceptual model. Cutting, joining, delivery, copying and expression have different roles; no experimental operating conditions are shown."
+      }
+    },
+    {
+      "id": "virus-vector-transfer",
+      "title": "A virus can also act as a DNA carrier",
+      "points": [
+        "5.13"
+      ],
+      "terms": [
+        "viral vector",
+        "genetic material",
+        "delivery",
+        "host compatibility"
+      ],
+      "paragraphs": [
+        "Some viruses can deliver genetic material into cells. An engineered viral vector can carry a wanted DNA sequence and introduce it into suitable recipient cells. This is an alternative carrier to a plasmid in the syllabus model; the virus is not the restriction enzyme or the ligase.",
+        "The carrier must be appropriate for the intended recipient. Different vectors enter different cells and handle their genetic material differently, so do not assume that every viral vector inserts DNA into a chromosome. Gene delivery and expression must be checked separately. Here the focus is the role of a vector, rather than practical instructions for making or using viruses."
+      ],
+      "example": {
+        "question": "What shared role allows both a plasmid and an engineered virus to be described as vectors?",
+        "steps": [
+          "Each can carry a chosen genetic sequence.",
+          "A suitable carrier helps introduce that sequence into another cell.",
+          "The recipient must still receive and, where needed, express the intended sequence."
+        ],
+        "explanation": "Their shared role is carriage and delivery, even though their structures and entry mechanisms differ."
+      },
+      "commonMistakes": [
+        "A vector does not automatically guarantee successful gene expression in every cell."
+      ]
+    },
+    {
+      "id": "insulin-expression-culture",
+      "title": "Give bacterial cells information for human insulin production",
+      "points": [
+        "5.14"
+      ],
+      "terms": [
+        "human insulin",
+        "coding DNA",
+        "gene expression",
+        "binary fission"
+      ],
+      "paragraphs": [
+        "Human insulin is a protein involved in blood-glucose regulation. In the genetic-engineering model, a suitable human-insulin coding sequence is assembled into a vector with control sequences that can work in the bacterial host. Suitable bacteria receive the recombinant DNA; identify and grow cells that can express it to produce material used to make human insulin.",
+        "The DNA sequence supplies information; the bacterial cell provides the machinery for protein synthesis. Copying engineered DNA and expressing it are distinct processes. Bacteria multiply by binary fission, not mitosis. They do not acquire a human pancreas, and insulin protein is not the DNA fragment inserted into the vector."
+      ],
+      "example": {
+        "question": "Why is inserting insulin protein into a plasmid not a correct description of this manufacturing model?",
+        "steps": [
+          "A plasmid is DNA and is engineered with an appropriate coding DNA sequence.",
+          "Host cells use that information in gene expression to make the protein product.",
+          "A protein placed beside a plasmid would not supply a copyable coding sequence for future cells."
+        ],
+        "explanation": "At this level, focus on coding DNA, vector, suitable host and expression; manufacturing systems can differ in how insulin precursors or chains are processed."
+      },
+      "commonMistakes": [
+        "A suitable construct must work in the bacterial host; an arbitrary piece of unmodified human genomic DNA is not automatically an expression-ready instruction."
+      ]
+    },
+    {
+      "id": "insulin-fermenter-recovery",
+      "title": "Scale up the culture, then recover and purify the product",
+      "points": [
+        "5.14"
+      ],
+      "terms": [
+        "fermenter",
+        "aseptic culture",
+        "product recovery",
+        "purification"
+      ],
+      "paragraphs": [
+        "Grow selected genetically modified bacteria in a fermenter so that many productive cells can be maintained in a controlled culture. Supply suitable nutrients and control temperature and pH. For an aerobic production culture, provide oxygen and mix the contents to distribute it and other resources. Aseptic handling reduces contamination by unwanted organisms.",
+        "Large culture volume alone does not guarantee a large useful output: growth, expression and product stability matter. Recover the product, carry out any required processing, purify it and check its identity and quality. The finished medicine is a controlled protein preparation; patients are not given the fermenter broth or live production bacteria. Genetic engineering provides the producer, while fermentation and downstream processing provide manufacture at scale."
+      ],
+      "example": {
+        "question": "An invented culture contains 2.0 g of target protein before recovery. Recovery retains 75% and purification retains 80% of that recovered amount. Calculate the final amount.",
+        "steps": [
+          "After recovery: 2.0 × 0.75 = 1.5 g.",
+          "After purification: 1.5 × 0.80 = 1.2 g.",
+          "Overall retention: 1.2 ÷ 2.0 × 100 = 60%."
+        ],
+        "explanation": "These are invented mass-retention data, not real insulin yield, purity, dosage or a manufacturing specification. Successive retention factors multiply."
+      },
+      "commonMistakes": [
+        "Do not add percentage losses from stages with different starting amounts or confuse retained mass with percentage purity."
+      ]
+    },
+    {
+      "id": "gm-crop-trait-yield",
+      "title": "Link a plant modification to a specific food-production benefit",
+      "points": [
+        "5.15"
+      ],
+      "terms": [
+        "genetically modified plant",
+        "insect resistance",
+        "harvestable yield",
+        "limiting condition"
+      ],
+      "paragraphs": [
+        "Genetic modification can change a plant characteristic relevant to food production. For example, an insect-resistant crop can produce a particular Bt-derived protein that affects susceptible target pests. Less pest feeding can mean less crop damage and a larger harvest where those pests would otherwise limit yield. Resistance to a particular plant virus is another possible way to reduce loss.",
+        "Explain the chain from altered genetic information to an expressed trait, then to reduced loss or improved useful output. The benefit depends on the crop, trait and conditions. An insect-resistant plant is not resistant to every insect, and extra pest protection cannot remove all limits from water, light or minerals. Some modifications improve food quality or storage rather than increasing harvested mass."
+      ],
+      "example": {
+        "question": "Why might a pest-resistant crop show a larger benefit in a heavily attacked field than in a field without that pest?",
+        "steps": [
+          "In the attacked field, damage from the susceptible target pest is an important cause of loss.",
+          "The expressed resistance can reduce that damage and retain more harvestable material.",
+          "Without that pest, there is less loss to prevent; other limits may determine yield."
+        ],
+        "explanation": "A plausible mechanism predicts a conditional advantage, not a guaranteed increase under every environment."
+      },
+      "commonMistakes": [
+        "Herbicide tolerance protects a crop from a particular herbicide; it does not mean the crop itself kills all weeds or grows without competition."
+      ]
+    },
+    {
+      "id": "gm-crop-comparison",
+      "title": "Evaluate evidence and consequences of a modified crop",
+      "points": [
+        "5.15"
+      ],
+      "terms": [
+        "matched comparison",
+        "mean yield",
+        "selection for resistance",
+        "gene flow"
+      ],
+      "paragraphs": [
+        "Compare a modified crop with a suitable similar non-modified line in matched, replicated conditions. Measure harvested yield or the stated quality outcome, pest pressure and other relevant differences. One good plant or one unmatched field cannot isolate the effect of the modification. Costs, pesticide use and environmental effects are additional questions, not interchangeable with yield.",
+        "Repeated exposure to an insecticidal trait can favour pest variants that are less susceptible, allowing inherited resistance to become more common. Monitoring and appropriate resistance management matter. Where a modified plant can cross with compatible plants, pollen can also carry the inserted information into descendants; the chance and consequence depend on the species, surroundings and trait. Evaluate those conditions rather than calling every modification automatically beneficial or harmful."
+      ],
+      "example": {
+        "question": "Invented matched plots yield 3.8,4.0,4.2 kg for a comparison line and 4.4,4.6,4.8 kg for a modified line. Compare means and relative difference.",
+        "steps": [
+          "Comparison mean = 12.0 ÷ 3 = 4.0 kg per plot.",
+          "Modified mean = 13.8 ÷ 3 = 4.6 kg per plot.",
+          "Relative increase = (4.6 − 4.0) ÷ 4.0 × 100 = 15%.",
+          "The limited comparison suggests a benefit under these conditions; check matching, variability and further trials before generalising."
+        ],
+        "explanation": "The data are invented. They do not demonstrate universal superiority, environmental safety or commercial value."
+      },
+      "commonMistakes": [
+        "A resistant pest population is selected through survival and reproduction; pests do not deliberately invent the allele because they need it."
+      ]
+    },
+    {
+      "id": "transgenic-meaning",
+      "title": "Transgenic identifies a transfer between different species",
+      "points": [
+        "5.16"
+      ],
+      "terms": [
+        "transgenic",
+        "species",
+        "gene transfer",
+        "genetic modification"
+      ],
+      "paragraphs": [
+        "For this specification, transgenic refers to genetic material transferred from one species into a different species. A bacterium carrying an introduced human-insulin coding sequence is a syllabus example. A crop carrying an introduced bacterial Bt coding sequence provides another cross-species example.",
+        "Identify the source species, recipient species and transferred genetic material when explaining the term. Genetic modification is broader: changing an existing sequence or transferring material within one species does not necessarily create a transgenic organism under this definition. Cloning an organism copies a genetic arrangement; cloning by itself does not introduce genetic material from a different species."
+      ],
+      "example": {
+        "question": "Classify three invented cases: a plant receives bacterial coding DNA; a plant has one of its own sequences altered; an unchanged plant is propagated from tissue.",
+        "steps": [
+          "The bacterial-to-plant transfer is transgenic because source and recipient are different species.",
+          "The within-plant alteration is genetic modification but is not evidence of cross-species transfer.",
+          "Tissue propagation is cloning; it does not by itself demonstrate genetic modification or a transgene."
+        ],
+        "explanation": "Classify from the stated mechanism, not from whether the result has a useful trait."
+      },
+      "commonMistakes": [
+        "A transgenic bacterium remains a bacterium; one introduced sequence does not make it a human cell."
+      ]
+    }
+  ]
+}

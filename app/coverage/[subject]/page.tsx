@@ -256,7 +256,7 @@ export default async function SubjectCoverage({
                           {point.noteSectionIds.map((heading, i) => (
                             <span key={heading}>
                               {i > 0 ? ' · ' : ''}
-                              <Link
+                              <a
                                 href={
                                   '/subjects/' +
                                   s.id +
@@ -269,7 +269,7 @@ export default async function SubjectCoverage({
                                 {getNotes(s.id, point.chapterId)?.sections.find(
                                   (section) => section.id === heading,
                                 )?.title ?? heading}
-                              </Link>
+                              </a>
                             </span>
                           ))}
                         </>
@@ -293,15 +293,18 @@ export default async function SubjectCoverage({
             </p>
             {s.id === 'physics' && <p>
               Examples of linked teaching include a{' '}
-              <Link href="/subjects/physics/forces-and-motion#plotting-motion-data">
+              {/* oxlint-disable-next-line nextjs/no-html-link-for-pages -- Native fragment navigation updates :target before the reader scroll. */}
+              <a href="/subjects/physics/forces-and-motion#plotting-motion-data">
                 worked motion-graph exercise
-              </Link>{' '}and{' '}
-              <Link href="/subjects/physics/forces-and-motion#choosing-force-equations">
+              </a>{' '}and{' '}
+              {/* oxlint-disable-next-line nextjs/no-html-link-for-pages -- Native fragment navigation updates :target before the reader scroll. */}
+              <a href="/subjects/physics/forces-and-motion#choosing-force-equations">
                 force-equation practice
-              </Link>, plus{' '}
-              <Link href="/subjects/physics/waves#reading-wave-records">
+              </a>, plus{' '}
+              {/* oxlint-disable-next-line nextjs/no-html-link-for-pages -- Native fragment navigation updates :target before the reader scroll. */}
+              <a href="/subjects/physics/waves#reading-wave-records">
                 distance and time readings for waves
-              </Link>.
+              </a>.
             </p>}
             <details>
               <summary>Inspect remaining teaching checks</summary>
@@ -320,9 +323,9 @@ export default async function SubjectCoverage({
                         {sections.map((sectionId, index) => (
                           <span key={sectionId}>
                             {index > 0 ? ' · ' : ''}
-                            <Link href={`/subjects/${s.id}/${parent.chapterId}#${sectionId}`}>
+                            <a href={`/subjects/${s.id}/${parent.chapterId}#${sectionId}`}>
                               {chapterNotes?.sections.find((section) => section.id === sectionId)?.title ?? sectionId}
-                            </Link>
+                            </a>
                           </span>
                         ))}
                       </p>

@@ -1,6 +1,5 @@
 'use client';
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
 import { Input } from '@/components/ui/input';
 import { getSubject } from '@/content/catalog';
 import { queueLibrarySearch, type SearchState } from '@/lib/library-search-client';
@@ -58,8 +57,10 @@ export function LibrarySearch({
           <output className="search-count" htmlFor={inputId} aria-live="polite">
             {status === 'loading' ? 'Searching…' : status === 'error' ? 'Search unavailable' : `${results.length} matching ${results.length === 1 ? 'section' : 'sections'}`}
           </output>
+          {/* Native fragment navigation updates :target before anchor scrolling.
+              Client pushState leaves the tall reader's 3D entrance active. */}
           {results.map((r) => (
-            <Link className="search-result" href={r.href} key={r.href}>
+            <a className="search-result" href={r.href} key={r.href}>
               <strong>
                 <Highlight text={r.title} term={query} />
               </strong>
@@ -69,7 +70,7 @@ export function LibrarySearch({
               <p>
                 <Highlight text={r.snippet} term={query} />
               </p>
-            </Link>
+            </a>
           ))}
           {status === 'error' && (
             <p>Search could not load. <button type="button" onClick={() => setRetry((n) => n + 1)}>Retry search</button></p>

@@ -3,25 +3,31 @@
   "chapterId": "biological-resources",
   "sourceId": "4BI1-spec",
   "sourcePages": [
-    31
+    31,
+    32
   ],
   "status": "source-checked",
   "complete": false,
   "humanReviewed": false,
   "prerequisites": [
     "Photosynthesis and limiting factors; enzyme-controlled reactions and respiration.",
-    "Microbial roles, inheritance, predation and ecological oxygen balance."
+    "Microbial roles, inheritance, predation and ecological oxygen balance.",
+    "DNA, genes and gene expression; mitosis versus bacterial binary fission; diploid body cells and egg-cell structure."
   ],
   "goals": [
     "Explain protected crop growth, mineral nutrition and balanced pest control.",
     "Explain bread and yoghurt mechanisms; plan and interpret a fair yeast investigation.",
     "Connect fermenter controls to the needs of the chosen culture.",
-    "Explain fish production methods for Paper2B and selective breeding of crops/animals. Genetic modification, cloning and full assessments remain unfinished."
+    "Explain fish production for Paper 2B and selective breeding of crops/animals.",
+    "Connect DNA cutting, joining, vector delivery and expression to insulin manufacture and crop traits.",
+    "Explain micropropagation and mammalian nuclear-transfer cloning for Paper 2B, including cloned transgenic protein producers. Whole-chapter and unfamiliar assessment remain unfinished."
   ],
   "sections": [],
   "sectionFiles": [
     "../note-sections/biology-resources/01-food-production.json",
-    "../note-sections/biology-resources/02-selective-breeding.json"
+    "../note-sections/biology-resources/02-selective-breeding.json",
+    "../note-sections/biology-resources/03-genetic-modification.json",
+    "../note-sections/biology-resources/04-cloning.json"
   ],
   "supportingSources": [
     {
@@ -117,6 +123,77 @@
         "plant-selective-breeding-stages",
         "animal-selective-breeding-stages",
         "breeding-diversity-tradeoffs"
+      ]
+    },
+    {
+      "title": "New England Biolabs: recognition sites and compatible sticky/blunt ends (concepts only)",
+      "url": "https://www.neb.com/en/tools-and-resources/video-library/cloning-with-restriction-enzymes",
+      "sectionIds": [
+        "restriction-specific-cuts",
+        "ligase-joins-backbone"
+      ]
+    },
+    {
+      "title": "NHGRI: recombinant DNA and cellular expression",
+      "url": "https://www.genome.gov/genetics-glossary/Recombinant-DNA-Technology",
+      "sectionIds": [
+        "plasmid-vector-sequence",
+        "virus-vector-transfer",
+        "transgenic-meaning"
+      ]
+    },
+    {
+      "title": "FDA historical exhibit: recombinant human insulin manufacture (not clinical advice)",
+      "url": "https://www.fda.gov/about-fda/fda-history-exhibits/100-years-insulin",
+      "sectionIds": [
+        "insulin-expression-culture",
+        "insulin-fermenter-recovery"
+      ]
+    },
+    {
+      "title": "FDA: crop traits that can reduce food losses (conditional benefits)",
+      "url": "https://www.fda.gov/food/agricultural-biotechnology/why-do-farmers-us-grow-gmo-crops",
+      "sectionIds": [
+        "gm-crop-trait-yield"
+      ]
+    },
+    {
+      "title": "EPA: selection for Bt resistance and monitoring concepts (not regulatory prescriptions)",
+      "url": "https://www.epa.gov/regulation-biotechnology-under-tsca-and-fifra/insect-resistance-management-bt-plant-incorporated",
+      "sectionIds": [
+        "gm-crop-comparison"
+      ]
+    },
+    {
+      "title": "RHS: explants, multiplication, rooting, acclimatisation and off-types",
+      "url": "https://www.rhs.org.uk/propagation/micropropagation",
+      "sectionIds": [
+        "micropropagation-explants",
+        "micropropagation-multiplication",
+        "micropropagation-commerce"
+      ]
+    },
+    {
+      "title": "NHGRI: mature-cell nuclear transfer and embryo/surrogate sequence",
+      "url": "https://www.genome.gov/about-genomics/fact-sheets/Cloning-Fact-Sheet",
+      "sectionIds": [
+        "mammal-cloning-stages"
+      ]
+    },
+    {
+      "title": "Roslin Institute: nuclear versus mitochondrial contribution and conditional development",
+      "url": "https://vet.ed.ac.uk/roslin/about/history/dolly/facts/cloning",
+      "sectionIds": [
+        "cloning-donor-roles",
+        "cloning-outcomes"
+      ]
+    },
+    {
+      "title": "FDA: genomic alterations and human proteins in animal milk (not proof of cloning for a named product)",
+      "url": "https://www.fda.gov/animal-veterinary/intentional-genomic-alterations-igas-animals/qa-consumers-intentional-genomic-alterations-animals",
+      "sectionIds": [
+        "transgenic-animal-proteins",
+        "cloning-gm-comparison"
       ]
     }
   ]

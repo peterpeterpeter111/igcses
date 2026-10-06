@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" role="img" aria-labelledby="title desc">
+  <title id="title">Different roles in recombinant plasmid transfer</title>
+  <desc id="desc">A suitable coding DNA fragment and an opened plasmid with compatible ends are joined by ligase. Introduce the recombinant DNA into suitable host cells, identify cells carrying the intended construct and grow them. DNA copying and protein expression must be distinguished.</desc>
+  <defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#973b40"/></marker></defs>
+  <rect width="800" height="640" rx="8" fill="#fbf5e9"/>
+  <g font-family="system-ui,sans-serif" fill="#342a27">
+    <text x="40" y="39" font-size="23" font-weight="650">DNA assembly, delivery and expression</text>
+    <text x="40" y="66" font-size="16">Conceptual plasmid model · not an experimental protocol</text>
+    <g fill="#f4e8d8" stroke="#bc9c7b" stroke-width="1.5">
+      <rect x="40" y="90" width="310" height="110" rx="5"/>
+      <rect x="450" y="90" width="310" height="110" rx="5"/>
+      <rect x="40" y="250" width="720" height="98" rx="5"/>
+      <rect x="40" y="407" width="330" height="114" rx="5"/>
+      <rect x="430" y="407" width="330" height="114" rx="5"/>
+    </g>
+    <g font-size="19" font-weight="650">
+      <text x="60" y="120">Wanted coding DNA</text>
+      <text x="470" y="120">Plasmid vector</text>
+      <text x="62" y="280">Ligase joins the DNA backbones</text>
+      <text x="60" y="438">Suitable host cells</text>
+      <text x="450" y="438">Grow selected cells</text>
+    </g>
+    <g font-size="17">
+      <text x="60" y="152">Suitable cuts release a fragment.</text>
+      <text x="60" y="178">Preserve the wanted sequence.</text>
+      <text x="470" y="152">Suitable cut opens the carrier.</text>
+      <text x="470" y="178">Prepare compatible DNA ends.</text>
+      <text x="62" y="310">Recombinant plasmid: vector DNA + inserted DNA</text>
+      <text x="60" y="469">Introduce the construct.</text>
+      <text x="60" y="495">Identify the intended recipients.</text>
+      <text x="450" y="469">Cells can copy the construct.</text>
+      <text x="450" y="495">Check the wanted expression.</text>
+    </g>
+    <g fill="none" stroke="#973b40" stroke-width="2.5" marker-end="url(#arrow)">
+      <path d="M195 200V236L260 247"/>
+      <path d="M605 200V236L540 247"/>
+      <path d="M205 348V399"/>
+      <path d="M370 464H422"/>
+    </g>
+    <text x="239" y="377" font-size="16" fill="#733c3d">Delivery into cells follows DNA assembly</text>
+    <rect x="40" y="551" width="720" height="62" rx="5" fill="#eae0cd"/>
+    <text x="58" y="578" font-size="17">Copying DNA is not the same as expressing a protein.</text>
+    <text x="58" y="601" font-size="16">Expression needs suitable control sequences and a compatible host.</text>
+  </g>
+</svg>
