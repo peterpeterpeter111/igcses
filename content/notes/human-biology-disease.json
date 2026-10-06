@@ -1,0 +1,614 @@
+{
+  "subjectId": "human-biology",
+  "chapterId": "disease",
+  "status": "source-checked",
+  "complete": false,
+  "humanReviewed": false,
+  "sourceId": "4HB1-spec",
+  "sourcePages": [
+    26
+  ],
+  "supportingSources": [
+    {
+      "title": "CDC archived Principles of Epidemiology: selected incubation and asymptomatic distinction",
+      "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson1/section9.html",
+      "sectionIds": [
+        "infection-course-and-incubation",
+        "symptoms-and-infectiousness"
+      ]
+    },
+    {
+      "title": "OpenStax Concepts of Biology: selected viral structure and host dependence",
+      "url": "https://openstax.org/books/concepts-biology/pages/17-1-viruses",
+      "sectionIds": [
+        "virus-particle-structure"
+      ]
+    },
+    {
+      "title": "OpenStax Biology 2e: selected replication sequence and varied release mechanisms",
+      "url": "https://openstax.org/books/biology-2e/pages/21-2-virus-infections-and-hosts",
+      "sectionIds": [
+        "viral-reproduction-host-sequence"
+      ]
+    },
+    {
+      "title": "WHO: selected Ebola routes, care and virus-specific intervention scope",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/ebola-disease",
+      "sectionIds": [
+        "ebola-transmission-routes",
+        "ebola-care-and-outbreak-control"
+      ]
+    },
+    {
+      "title": "WHO: selected HIV/AIDS distinction, routes, ART and sexual transmission conditions",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/hiv-aids",
+      "sectionIds": [
+        "hiv-and-aids-distinction",
+        "hiv-transmission-treatment-prevention"
+      ]
+    },
+    {
+      "title": "OpenStax Microbiology: selected bacterial structure and optional features",
+      "url": "https://openstax.org/books/microbiology/pages/3-3-unique-characteristics-of-prokaryotic-cells",
+      "sectionIds": [
+        "bacterial-structure-and-function"
+      ]
+    },
+    {
+      "title": "OpenStax Microbiology: selected closed-culture growth and measurement distinctions",
+      "url": "https://openstax.org/books/microbiology/pages/9-1-how-microbes-grow",
+      "sectionIds": [
+        "binary-fission-and-doubling",
+        "bacterial-growth-curve-phases",
+        "bacterial-growth-data-rates"
+      ]
+    },
+    {
+      "title": "Nuffield Practical Biology: indexed antimicrobial investigation, controls and safety passages",
+      "url": "https://practicalbiology.org/health-and-disease/hygiene/investigating-anti-microbial-action.html",
+      "sectionIds": [
+        "antibacterial-investigation-design",
+        "inhibition-zone-measurement-limits"
+      ]
+    },
+    {
+      "title": "AQA GCSE Biology: selected school culture precautions as supporting practice, not Pearson scope",
+      "url": "https://www.aqa.org.uk/subjects/biology/gcse/biology-8461/specification/subject-content/cell-biology",
+      "sectionIds": [
+        "antibacterial-investigation-design"
+      ]
+    },
+    {
+      "title": "NIH HIVinfo: selected HIV, CD4, AIDS and ART distinctions",
+      "url": "https://hivinfo.nih.gov/understanding-hiv/fact-sheets/hiv-and-aids-basics",
+      "sectionIds": [
+        "hiv-and-aids-distinction",
+        "hiv-transmission-treatment-prevention"
+      ]
+    },
+    {
+      "title": "OpenStax Biology 2e: selected prokaryotic nutritional strategies",
+      "url": "https://openstax.org/books/biology-2e/pages/22-3-prokaryotic-metabolism",
+      "sectionIds": [
+        "bacterial-nutrition-and-growth-conditions"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Cell structure and enzymes",
+    "Blood defence and antibodies"
+  ],
+  "goals": [
+    "Explain infection and distinguish named viruses from resulting disease.",
+    "Relate bacterial growth to structure, conditions and measurements.",
+    "Plan a controlled antibacterial comparison and recognise its limits."
+  ],
+  "sections": [
+    {
+      "id": "infection-course-and-incubation",
+      "title": "Follow infection before symptoms appear",
+      "points": [
+        "12.1"
+      ],
+      "terms": [
+        "infection",
+        "incubation period",
+        "symptom",
+        "asymptomatic"
+      ],
+      "paragraphs": [
+        "Infection means that a pathogen has entered and established itself in a host. In an infection that later produces symptoms, the incubation period is the interval from infection to the onset of those symptoms. During this interval the host and pathogen can already be interacting; absence of symptoms does not mean absence of infection.",
+        "After incubation, symptoms may develop as tissues are damaged and the immune response acts. Outcomes can include recovery, persistent infection or severe illness. The course and timing depend on the pathogen and host. Some infections remain asymptomatic; do not force every infected person through an identical timetable."
+      ],
+      "example": {
+        "question": "In an invented timeline, infection occurs on day 2 and symptoms begin on day 7. What is the incubation period?",
+        "steps": [
+          "7 − 2 = 5 days.",
+          "Count from infection to symptom onset, not from onset to recovery.",
+          "These invented dates do not predict a particular disease."
+        ],
+        "explanation": "Identify the two events defining the interval."
+      },
+      "commonMistakes": [
+        "Assuming the pathogen only enters when symptoms begin.",
+        "Calling an asymptomatic infection impossible."
+      ]
+    },
+    {
+      "id": "symptoms-and-infectiousness",
+      "title": "Separate symptoms from the ability to transmit",
+      "points": [
+        "12.1"
+      ],
+      "terms": [
+        "symptom",
+        "sign",
+        "infectiousness",
+        "transmission"
+      ],
+      "paragraphs": [
+        "A symptom is a change experienced by a person, such as feeling pain or nausea; a sign is something that can be observed or measured, such as a raised temperature. Similar symptoms can occur in different infections, so a symptom list alone does not identify one pathogen.",
+        "The infectious period is when a host can pass on the pathogen. It need not coincide exactly with visible symptoms: some infections can transmit before symptoms, while other pathogens have different patterns. Incubation time and infectious period answer different questions. Recovery from symptoms also does not universally prove immediate loss of every transmission route."
+      ],
+      "example": {
+        "question": "Does a shared fever prove that two patients have the same pathogen?",
+        "steps": [
+          "No: different infections can produce fever.",
+          "Further clinical information and suitable tests may be needed."
+        ],
+        "explanation": "An effect is not a unique identification of its cause."
+      },
+      "commonMistakes": [
+        "Equating incubation with a period guaranteed to be non-infectious.",
+        "Treating symptoms as a diagnosis."
+      ]
+    },
+    {
+      "id": "pathogens-and-disease-causes",
+      "title": "Identify infectious disease without calling all microbes harmful",
+      "points": [
+        "12.2"
+      ],
+      "terms": [
+        "pathogen",
+        "infectious disease",
+        "bacterium",
+        "virus",
+        "fungus",
+        "protoctist"
+      ],
+      "paragraphs": [
+        "A pathogen is an agent capable of causing disease. Infectious diseases can be caused by bacteria, viruses, fungi or protoctists. The term microorganism is often used broadly in this syllabus context, including viruses even though they are not cells.",
+        "Pathogens can damage cells, produce harmful substances or provoke damaging responses in the host. Not all microorganisms are pathogenic: many are harmless in their usual setting or useful in decomposition and production. Not all diseases are infectious either; inherited conditions and many other disorders have different causes."
+      ],
+      "example": {
+        "question": "Is a bacterium useful in decomposition necessarily a pathogen?",
+        "steps": [
+          "No: classify its role rather than assuming that all bacteria cause disease.",
+          "Disease-causing ability depends on the organism and circumstances."
+        ],
+        "explanation": "Distinguish an organism group from a harmful role."
+      },
+      "commonMistakes": [
+        "Claiming that all disease is caused by microorganisms.",
+        "Calling every bacterium or fungus harmful."
+      ]
+    },
+    {
+      "id": "virus-particle-structure",
+      "title": "Describe a virus as a particle rather than a cell",
+      "points": [
+        "12.3"
+      ],
+      "terms": [
+        "genome",
+        "capsid",
+        "envelope",
+        "receptor"
+      ],
+      "paragraphs": [
+        "A virus particle contains a nucleic-acid genome, DNA or RNA, enclosed in a protein coat called a capsid. Some viruses also have an outer lipid envelope with proteins involved in attachment. Envelope and capsid are different structures; an envelope is not present in every virus.",
+        "Viruses lack the complete cellular machinery for independent growth and reproduction. They do not have their own ribosomes carrying out all protein synthesis. Their attachment proteins interact with suitable host-cell receptors, helping explain why a virus does not infect every kind of cell equally."
+      ],
+      "example": {
+        "question": "A model particle has RNA, a capsid and an outer envelope. Is the envelope its nucleus?",
+        "steps": [
+          "No: a virus particle is not a cell with a nucleus.",
+          "RNA is its genetic material; the capsid is protein and the envelope is an outer covering."
+        ],
+        "explanation": "Label composition and location before assigning a function."
+      },
+      "commonMistakes": [
+        "Giving all viruses a cell wall or nucleus.",
+        "Making an envelope compulsory."
+      ]
+    },
+    {
+      "id": "viral-reproduction-host-sequence",
+      "title": "Trace viral reproduction using a living host cell",
+      "points": [
+        "12.3"
+      ],
+      "terms": [
+        "attachment",
+        "entry",
+        "genome replication",
+        "assembly",
+        "release"
+      ],
+      "paragraphs": [
+        "A general sequence is attachment to a susceptible cell, entry of viral genetic material, copying of that material and production of viral proteins using host resources. Components are assembled into new particles and released. Details vary: entry and release mechanisms are not identical in every virus.",
+        "Release may damage or lyse a cell, or occur by budding. This is reproduction of viral particles using a host, not binary fission of a viral cell. Antibiotics acting on bacterial structures do not automatically stop this process; antiviral drugs have different targets."
+      ],
+      "example": {
+        "question": "Why is nutrient agar alone not equivalent to a living host for viral reproduction?",
+        "steps": [
+          "A virus needs suitable living cells and their machinery.",
+          "A nutrient supply alone does not provide that host machinery."
+        ],
+        "explanation": "Resource availability and the cellular machinery to use it are distinct."
+      },
+      "commonMistakes": [
+        "Describing a virus as dividing into two bacterial daughter cells.",
+        "Assuming every virus leaves by bursting its host cell."
+      ]
+    },
+    {
+      "id": "ebola-transmission-routes",
+      "title": "Explain Ebola transmission through specific contact routes",
+      "points": [
+        "12.4"
+      ],
+      "terms": [
+        "Ebola disease",
+        "body fluid",
+        "mucous membrane",
+        "contaminated surface"
+      ],
+      "paragraphs": [
+        "Ebola disease is caused by related viruses. Transmission can occur when infected blood or other body fluids from an ill or deceased person contact broken skin or mucous membranes. Contaminated objects can carry those fluids. Infected animals can also be a source of the initial human infection.",
+        "This route explains the importance of protective equipment and safe handling of contaminated materials and bodies. Ordinary airborne spread is not the classroom transmission model. Recovery needs a qualified distinction: viral persistence in some body sites can leave particular routes, such as semen, relevant after the acute illness."
+      ],
+      "example": {
+        "question": "Why is contact with contaminated bedding a different risk from simply being in a distant room?",
+        "steps": [
+          "Bedding can carry infected fluids.",
+          "Transmission requires an appropriate route into the exposed person."
+        ],
+        "explanation": "Connect the source, transfer and entry route."
+      },
+      "commonMistakes": [
+        "Treating Ebola as routinely airborne like an aerosol infection.",
+        "Assuming any contact with a survivor is dangerous."
+      ]
+    },
+    {
+      "id": "ebola-care-and-outbreak-control",
+      "title": "Link Ebola care and prevention to their mechanisms",
+      "points": [
+        "12.4"
+      ],
+      "terms": [
+        "supportive care",
+        "rehydration",
+        "contact tracing",
+        "vaccination"
+      ],
+      "paragraphs": [
+        "Supportive care, including fluid replacement and management of complications, can improve survival. Specific antibody treatments and licensed vaccines exist for Ebola virus disease caused by Ebola virus, often described using the Zaire name. They must not be generalised to every related virus causing Ebola disease.",
+        "Outbreak control combines early recognition and testing, care in designated facilities, infection-control precautions, contact tracing and safe, dignified burial. Vaccination is used when suitable for the virus concerned. Each measure interrupts a route or improves care; none is a reason to promise that every patient survives."
+      ],
+      "example": {
+        "question": "Does one licensed Ebola vaccine prove vaccination is available for every virus in this disease group?",
+        "steps": [
+          "No: identify the virus covered by the vaccine.",
+          "Related disease names do not imply identical approved products."
+        ],
+        "explanation": "Keep an intervention within its verified scope."
+      },
+      "commonMistakes": [
+        "Calling rehydration a drug that directly kills all viruses.",
+        "Claiming that one vaccine covers every Ebola-causing virus."
+      ]
+    },
+    {
+      "id": "hiv-and-aids-distinction",
+      "title": "Distinguish HIV infection from AIDS",
+      "points": [
+        "12.4"
+      ],
+      "terms": [
+        "HIV",
+        "AIDS",
+        "CD4 cell",
+        "immune system",
+        "opportunistic infection"
+      ],
+      "paragraphs": [
+        "HIV is the human immunodeficiency virus. It damages the immune system, including CD4 helper T cells, so defence against other infections is weakened. AIDS is an advanced stage of HIV infection, associated with severe immune damage and particular illnesses; it is not the name of a second virus.",
+        "Untreated infection can progress over years, while effective antiretroviral treatment can prevent progression. A person can have HIV without having AIDS or obvious symptoms. The consequences of weakened defence help explain opportunistic infections rather than HIV turning into a bacterium."
+      ],
+      "example": {
+        "question": "Why is “HIV and AIDS are two viruses” incorrect?",
+        "steps": [
+          "HIV names the virus.",
+          "AIDS names an advanced disease stage resulting from immune damage."
+        ],
+        "explanation": "Separate the cause from the resulting syndrome."
+      },
+      "commonMistakes": [
+        "Assuming every HIV diagnosis means AIDS.",
+        "Treating absence of symptoms as absence of HIV."
+      ]
+    },
+    {
+      "id": "hiv-transmission-treatment-prevention",
+      "title": "Match HIV routes with prevention and treatment",
+      "points": [
+        "12.4"
+      ],
+      "terms": [
+        "antiretroviral therapy",
+        "viral load",
+        "condom",
+        "sterile equipment"
+      ],
+      "paragraphs": [
+        "HIV can be transmitted through sexual exposure, infected blood and shared contaminated injecting equipment, or from parent to child during pregnancy, birth or breastfeeding. It is not transmitted by ordinary contact such as hugging or sharing food. Prevention includes condoms, sterile equipment, screened blood supplies, testing and appropriate treatment and pregnancy care.",
+        "Antiretroviral therapy suppresses viral replication but is not a cure. Maintaining an undetectable viral load on effective treatment prevents sexual transmission: this specific statement does not promise instant protection after one dose or apply without qualification to every other route. Clinical preventive medicines also exist; this lesson gives no personal drug regimen."
+      ],
+      "example": {
+        "question": "Does prevention of sexual transmission with a maintained undetectable viral load mean a single tablet cures HIV?",
+        "steps": [
+          "No: suppression requires effective maintained treatment.",
+          "Suppression and cure are different outcomes."
+        ],
+        "explanation": "Retain the condition attached to the prevention claim."
+      },
+      "commonMistakes": [
+        "Presenting casual social contact as a transmission route.",
+        "Removing the maintained-treatment condition or extending the sexual claim to every route."
+      ]
+    },
+    {
+      "id": "bacterial-structure-and-function",
+      "title": "Relate bacterial structures to their functions",
+      "points": [
+        "12.5"
+      ],
+      "terms": [
+        "prokaryote",
+        "cell membrane",
+        "cell wall",
+        "ribosome",
+        "plasmid"
+      ],
+      "paragraphs": [
+        "A typical bacterial cell has cytoplasm, a cell membrane, ribosomes and chromosomal DNA not enclosed in a nucleus. Its wall supports the cell; bacterial walls are different from plant cellulose walls. Some bacteria also have plasmids, a capsule or flagella. These optional structures are not universal.",
+        "The membrane controls exchange, ribosomes make proteins and DNA carries inherited information. Plasmids are additional DNA molecules that can carry useful genes, including some resistance genes. A flagellum can aid movement; a capsule can help protection or attachment. A bacterial cell is structurally different from both a human cell and a virus particle."
+      ],
+      "example": {
+        "question": "A labelled cell has DNA and ribosomes but no membrane-bound nucleus. Does lack of a nucleus mean lack of DNA?",
+        "steps": [
+          "No: bacterial DNA is present outside a nucleus.",
+          "Ribosomes still allow protein synthesis."
+        ],
+        "explanation": "Absence of one enclosing structure does not imply absence of its contents."
+      },
+      "commonMistakes": [
+        "Giving bacteria a plant cellulose wall or nucleus.",
+        "Requiring every bacterium to have a flagellum or plasmid."
+      ]
+    },
+    {
+      "id": "bacterial-nutrition-and-growth-conditions",
+      "title": "Explain how nutrients and conditions support bacterial growth",
+      "points": [
+        "12.5"
+      ],
+      "terms": [
+        "nutrient",
+        "enzyme",
+        "absorption",
+        "temperature",
+        "pH"
+      ],
+      "paragraphs": [
+        "Bacteria need materials and an energy source for metabolism and growth. Many obtain organic nutrients by absorption, sometimes after enzymes break large molecules into soluble products. Different bacteria use different nutritional strategies; some make organic material using light or chemical energy. Do not make all bacteria photosynthetic or parasitic.",
+        "Growth depends on suitable nutrients, water, temperature and pH. Oxygen requirements differ: aerobic bacteria need oxygen, whereas others can grow without it. Favourable conditions permit growth but do not guarantee unlimited increase as resources and wastes change."
+      ],
+      "example": {
+        "question": "Why can “give every bacterium oxygen” be a poor universal growth rule?",
+        "steps": [
+          "Bacterial oxygen requirements differ.",
+          "A condition suitable for one organism may not suit another."
+        ],
+        "explanation": "Specify the organism and conditions before predicting a result."
+      },
+      "commonMistakes": [
+        "Calling all bacteria chloroplast-containing plants.",
+        "Assuming a favourable temperature creates unlimited nutrients."
+      ]
+    },
+    {
+      "id": "binary-fission-and-doubling",
+      "title": "Count bacterial reproduction by binary fission",
+      "points": [
+        "12.5"
+      ],
+      "terms": [
+        "binary fission",
+        "DNA replication",
+        "daughter cell",
+        "generation"
+      ],
+      "paragraphs": [
+        "In the usual binary-fission model, a bacterium copies its DNA, grows and divides into two daughter cells. Daughter cells inherit genetic information; this is not gamete formation or fertilisation. Mutations can arise, so identical inheritance is an idealised starting model rather than a promise of no genetic change.",
+        "If every cell divides once per generation, no cells die and resources remain sufficient, the population is multiplied by two each generation. An invented population of 30 cells becomes 60, 120, 240 and 480 after four generations. The model does not assign a universal doubling time to all bacteria."
+      ],
+      "example": {
+        "question": "A fictional population of 30 doubles every 40 minutes for 160 minutes with no deaths. Calculate its size.",
+        "steps": [
+          "160 ÷ 40 = 4 generations.",
+          "30 × 2⁴ = 480 cells.",
+          "State the ideal conditions; actual cultures can depart from the model."
+        ],
+        "explanation": "Count generations before applying the doubling factor."
+      },
+      "commonMistakes": [
+        "Adding two cells per generation instead of doubling the population.",
+        "Using bacterial division as a model of meiosis."
+      ]
+    },
+    {
+      "id": "bacterial-growth-curve-phases",
+      "title": "Interpret a closed-culture growth curve",
+      "points": [
+        "12.5"
+      ],
+      "terms": [
+        "lag phase",
+        "exponential phase",
+        "stationary phase",
+        "decline phase",
+        "viable cells"
+      ],
+      "paragraphs": [
+        "For a closed culture, a typical viable-cell curve has lag, exponential, stationary and decline phases. In lag, cells adjust and synthesise materials with little increase in population. During exponential growth, repeated division produces rapid increase. A logarithmic vertical scale can show this as an approximately straight rising segment; a linear scale need not.",
+        "As nutrients become limited and wastes accumulate, growth slows. In the stationary model, production of cells roughly balances deaths, so viable number is relatively steady even though activity continues. In decline, deaths exceed production. The curve describes a particular culture model, not the timetable of every infection in a human body."
+      ],
+      "example": {
+        "question": "Does a flat stationary segment prove that every cell has stopped metabolising?",
+        "steps": [
+          "No: a steady viable count can conceal division and death.",
+          "Cells can remain metabolically active."
+        ],
+        "explanation": "A population total does not reveal every individual event."
+      },
+      "commonMistakes": [
+        "Calling lag a period when every bacterium is dead.",
+        "Reading a logarithmic axis as equal arithmetic increases."
+      ]
+    },
+    {
+      "id": "bacterial-growth-data-rates",
+      "title": "Calculate a rate without changing what was measured",
+      "points": [
+        "12.5"
+      ],
+      "terms": [
+        "population density",
+        "viable count",
+        "average rate",
+        "measurement"
+      ],
+      "paragraphs": [
+        "Read the measured quantity and units before calculating. A count per cubic centimetre is a population density, not automatically the total in a whole vessel. A turbidity reading estimates cloudiness and cannot by itself establish that every counted particle is a living bacterium.",
+        "In an invented viable-density dataset, 200 cells per cm³ at hour 1 and 800 per cm³ at hour 4 give an average increase of (800 − 200) ÷ 3 = 200 cells per cm³ per hour. The change is not divided by the final time alone, and the average does not prove a constant instantaneous rate throughout the interval."
+      ],
+      "example": {
+        "question": "The fictional density is 800 cells per cm³ in a uniformly mixed 5 cm³ sample. Estimate its total viable cells.",
+        "steps": [
+          "800 × 5 = 4,000 cells.",
+          "This uses the stated uniform-density assumption."
+        ],
+        "explanation": "Multiply density by volume when the assumptions permit it."
+      },
+      "commonMistakes": [
+        "Treating a density as a whole-vessel total.",
+        "Equating turbidity with a verified viable count."
+      ]
+    },
+    {
+      "id": "antibacterial-investigation-design",
+      "title": "Plan a controlled antibacterial investigation",
+      "points": [
+        "12.6"
+      ],
+      "terms": [
+        "aseptic technique",
+        "control disc",
+        "bacterial lawn",
+        "inhibition zone"
+      ],
+      "paragraphs": [
+        "A supervised investigation can compare teacher-approved antibacterial treatments using a known low-risk educational bacterial strain. Equal paper discs carry the assigned treatments onto a uniform bacterial lawn. A matched solvent-only disc controls for the solvent and disc. Comparing the same strain under the same conditions helps isolate the treatment variable.",
+        "After approved incubation, a region without visible growth around a disc is an inhibition zone. Keep lids closed for observations and measurements. School protocols commonly use a temperature no higher than 25°C to reduce particular risks; that temperature alone does not make an unknown organism safe. This is a planning lesson, not a performed experiment or home-culturing task."
+      ],
+      "example": {
+        "question": "Why include a solvent-only disc when testing a chemical dissolved in that solvent?",
+        "steps": [
+          "The solvent might affect growth independently.",
+          "The control helps separate the treatment effect from that other influence."
+        ],
+        "explanation": "A control should match the possible confounder."
+      },
+      "commonMistakes": [
+        "Culturing an unknown body sample or a named pathogen for this school task.",
+        "Calling a clear zone proof that every bacterium was killed."
+      ],
+      "practical": {
+        "apparatus": [
+          "Teacher-prepared uniform lawn plates from a verified low-risk educational strain; equal sterile paper discs, approved treatments and matching solvent control.",
+          "Sterile handling equipment, labels on plate bases and a ruler for closed-lid measurements."
+        ],
+        "method": [
+          "Use the laboratory’s approved aseptic protocol; the teacher selects the strain, treatment concentrations, incubation conditions and disposal route.",
+          "Compare equal discs and loading volumes; keep separated positions so zones can be distinguished and include the matching control.",
+          "Secure lids according to the approved protocol without an airtight seal; approved plates are commonly inverted to reduce condensation falling onto agar.",
+          "Observe and measure without reopening incubated plates, using a consistent diameter convention and planned repeats."
+        ],
+        "variables": [
+          "Change one stated treatment variable, such as agent identity at specified concentrations; measure the inhibition-zone diameter.",
+          "Hold strain, starting lawn density, disc size/loading, agar conditions, incubation time and temperature constant."
+        ],
+        "safety": [
+          "Supervised school laboratory only, with risk assessment and a known approved strain; no unknown body samples, pathogens or environmental cultures.",
+          "Approved incubation conditions, often at or below 25°C, reduce selected risks but do not make all organisms harmless.",
+          "Keep incubated lids closed; wash hands and let trained staff decontaminate and dispose of cultures under the approved protocol."
+        ],
+        "quality": [
+          "Use independent repeats and the solvent-only control; describe uncertainty and the observed spread.",
+          "Prevent overlap and use equal measurement conventions; diffusion differences limit between-agent comparisons.",
+          "An inhibition zone shows absent visible growth locally; killing versus temporary growth inhibition is not resolved by diameter alone."
+        ]
+      }
+    },
+    {
+      "id": "inhibition-zone-measurement-limits",
+      "title": "Measure zones and limit the conclusion",
+      "points": [
+        "12.6"
+      ],
+      "terms": [
+        "diameter",
+        "repeat",
+        "mean",
+        "diffusion",
+        "clinical susceptibility"
+      ],
+      "paragraphs": [
+        "Measure the whole clear-zone diameter through its centre using the same rule for every treatment; include the disc if that is the stated convention. For uneven zones, perpendicular measurements and their mean can improve consistency. Repeat independent treatment measurements and record variation rather than selecting only the largest result.",
+        "A larger zone can indicate greater inhibition under the test conditions, but diffusion through agar, treatment concentration and disc loading also affect its size. It does not directly count killed cells or prove which drug will cure a patient. Clinical susceptibility testing needs standardised methods and interpretation that this classroom comparison does not supply."
+      ],
+      "example": {
+        "question": "In a fictional repeat set, diameters are 18, 20 and 22 mm. What is their mean and what can it establish?",
+        "steps": [
+          "(18 + 20 + 22) ÷ 3 = 20 mm.",
+          "Record the 18–22 mm spread.",
+          "The mean summarises these observations; it is not a guaranteed clinical outcome."
+        ],
+        "explanation": "State a bounded conclusion consistent with the measurement."
+      },
+      "commonMistakes": [
+        "Claiming that the zone with twice the diameter killed twice as many cells.",
+        "Ignoring loading, diffusion or overlapping zones."
+      ],
+      "diagram": {
+        "src": "/diagrams/human-inhibition-model.svg",
+        "alt": "Original hypothetical disc-diffusion model. An outer clear zone is 20 millimetres across and the central paper disc is 6 millimetres across. A separate solvent-control disc has no additional clear halo. Both are conceptual and not clinical results.",
+        "caption": "Original conceptual measurements: whole-zone diameter includes the disc. No experiment was performed; distances are not clinical susceptibility thresholds."
+      }
+    }
+  ]
+}

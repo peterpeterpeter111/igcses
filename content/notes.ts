@@ -1,3 +1,4 @@
+import humanDisease from './notes/human-biology-disease.json' with { type: 'json' };
 import humanCoordination from './notes/human-biology-coordination.json' with { type: 'json' };
 import humanHomeostasis from './notes/human-biology-homeostasis.json' with { type: 'json' };
 import humanNutrition from './notes/human-biology-nutrition.json' with { type: 'json' };
@@ -70,6 +71,7 @@ export type ChapterNotes = {
 };
 // Teaching content is added only after its relevant specification pages are reviewed.
 export const notes: ChapterNotes[] = [
+  humanDisease,
   mathematicsStatistics,
   humanBiology,
   humanMolecules,
