@@ -21,7 +21,10 @@
     "Match named glands and hormones to target actions.",
     "Compare nervous and hormonal communication with appropriate exceptions.",
     "Trace mechanical sound transfer and cochlear conversion.",
-    "Distinguish vestibular mechanisms and explain noise-exposure risks."
+    "Distinguish vestibular mechanisms and explain noise-exposure risks.",
+    "Trace eye optics, detection, accommodation and light responses.",
+    "Explain the binocular contribution to distance judgement.",
+    "Distinguish refractive corrections, cataract replacement and corneal transplantation."
   ],
   "supportingSources": [
     {
@@ -114,6 +117,69 @@
       "url": "https://www.nidcd.nih.gov/health/noise-induced-hearing-loss",
       "sectionIds": [
         "noise-exposure-hair-cells"
+      ]
+    },
+    {
+      "title": "UTHealth Neuroscience: selected accommodation and iris mechanisms",
+      "url": "https://nba.uth.tmc.edu/neuroscience/s3/chapter07.html",
+      "sectionIds": [
+        "eye-light-entry",
+        "retina-to-brain",
+        "near-object-focus",
+        "distant-object-focus",
+        "iris-light-response",
+        "separate-focus-from-light"
+      ]
+    },
+    {
+      "title": "OpenStax Psychology5.3: selected binocular and monocular depth cues",
+      "url": "https://openstax.org/books/psychology-2e/pages/5-3-vision",
+      "sectionIds": [
+        "stereoscopic-distance"
+      ]
+    },
+    {
+      "title": "NEI: selected short-sight focus and optical causes",
+      "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/nearsightedness-myopia",
+      "sectionIds": [
+        "short-sight-correction"
+      ]
+    },
+    {
+      "title": "NEI: selected long-sight focus and optical causes",
+      "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/farsightedness-hyperopia",
+      "sectionIds": [
+        "long-sight-correction"
+      ]
+    },
+    {
+      "title": "OpenStax College Physics26.2: selected diverging, converging and cylindrical corrections",
+      "url": "https://openstax.org/books/college-physics/pages/26-2-vision-correction",
+      "sectionIds": [
+        "short-sight-correction",
+        "long-sight-correction",
+        "astigmatism-directional-focus"
+      ]
+    },
+    {
+      "title": "NEI: selected astigmatism causes and treatments",
+      "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/astigmatism",
+      "sectionIds": [
+        "astigmatism-directional-focus"
+      ]
+    },
+    {
+      "title": "NEI: selected cataract clouding and lens replacement",
+      "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/cataracts",
+      "sectionIds": [
+        "cataract-lens-opacity"
+      ]
+    },
+    {
+      "title": "NHS: selected corneal transplant scope and limits",
+      "url": "https://www.nhs.uk/tests-and-treatments/cornea-transplant/",
+      "sectionIds": [
+        "corneal-transplant-purpose"
       ]
     }
   ],
@@ -1023,6 +1089,418 @@
         "Calling loud sound harmless if its pitch is low.",
         "Saying all damaged human hair cells automatically regrow.",
         "Increasing volume to find a participant’s limit."
+      ]
+    },
+    {
+      "id": "eye-light-entry",
+      "title": "Trace light through the front of the eye",
+      "points": [
+        "5.11"
+      ],
+      "paragraphs": [
+        "The transparent cornea is the curved front surface through which light enters. It refracts light and provides much of the eye’s focusing power. The lens adds adjustable refraction so an image can be focused on the retina.",
+        "The iris is the coloured ring of tissue with muscles controlling the diameter of the pupil. The pupil is the opening through the iris, not a black lens or a muscle. Light passes through this opening to the lens.",
+        "Aqueous humour is the watery fluid in the front part of the eye; vitreous humour is the clearer gel filling most of the space behind the lens. These media transmit light and help maintain the eye’s shape.",
+        "The conjunctiva is a thin protective membrane lining the eyelids and covering the exposed sclera; it does not cover the cornea. Tears help keep the surface moist. The ciliary muscle and suspensory ligaments change the lens’s shape, rather than the iris changing lens curvature."
+      ],
+      "example": {
+        "question": "A diagram’s arrow points to the central opening in the iris. What is it?",
+        "steps": [
+          "The pupil: an opening admitting light.",
+          "The iris is the surrounding muscular tissue.",
+          "The lens is a separate transparent structure behind it."
+        ],
+        "explanation": "Connect each structure to its optical or protective function."
+      },
+      "practice": {
+        "question": "Which structure supplies adjustable refraction: the lens or the pupil?",
+        "answer": "The lens. The pupil is an opening whose diameter regulates incoming light.",
+        "explanation": "Connect each structure to its optical or protective function."
+      },
+      "terms": [
+        "cornea",
+        "iris",
+        "pupil",
+        "lens",
+        "aqueous humour",
+        "vitreous humour",
+        "conjunctiva"
+      ],
+      "commonMistakes": [
+        "Do not label the pupil as a muscle or assign accommodation to the iris."
+      ]
+    },
+    {
+      "id": "retina-to-brain",
+      "title": "Explain the eye as a receptor",
+      "points": [
+        "5.11"
+      ],
+      "paragraphs": [
+        "The sclera is the tough outer coat supporting and protecting the eyeball. Inside it, the choroid contains blood vessels supplying eye tissues; its dark pigment helps absorb stray light. The retina is the light-sensitive layer containing photoreceptors.",
+        "Rods are especially useful in dim light and do not provide colour discrimination. Cones support colour vision and fine detail in brighter light. The fovea has densely packed cones and provides particularly sharp central vision.",
+        "Light stimulates photoreceptors and changes signalling through retinal cells. Electrical impulses in optic-nerve fibres carry information towards the brain. The image does not travel down the nerve as a small picture.",
+        "The optic nerve leaves at the optic disc, where there are no rods or cones: this creates the blind spot. It is different from the fovea. The cornea and lens form a real inverted image on the retina; the brain interprets the resulting signals."
+      ],
+      "example": {
+        "question": "Why is the blind spot different from the fovea?",
+        "steps": [
+          "The blind spot is where optic-nerve fibres leave and photoreceptors are absent.",
+          "The fovea contains densely packed cones for sharp central vision.",
+          "They have different locations and functions."
+        ],
+        "explanation": "Separate optical focusing from light detection and nervous communication."
+      },
+      "practice": {
+        "question": "Does the optic nerve carry a photograph from the lens?",
+        "answer": "No. It carries electrical information produced after light detection and retinal processing.",
+        "explanation": "Separate optical focusing from light detection and nervous communication."
+      },
+      "terms": [
+        "sclera",
+        "choroid",
+        "retina",
+        "rod",
+        "cone",
+        "fovea",
+        "blind spot",
+        "optic nerve"
+      ],
+      "commonMistakes": [
+        "Do not place photoreceptors in the pupil or equate fovea with blind spot."
+      ]
+    },
+    {
+      "id": "near-object-focus",
+      "title": "Explain focusing on a near object",
+      "points": [
+        "5.11"
+      ],
+      "paragraphs": [
+        "Accommodation changes the lens’s shape to keep the image focused on the retina when object distance changes. Light arriving from a near object is more divergent and requires greater converging power than light arriving from a distant object.",
+        "For near focus in the standard model, the ciliary muscle contracts. This reduces tension in the suspensory ligaments, also called zonular fibres, allowing the elastic lens to become thicker and more rounded.",
+        "The greater lens curvature increases its refractive power. The linked sequence is muscle contraction → less ligament tension → rounder lens → stronger refraction → focused retinal image.",
+        "The ligaments are passive fibres, not muscles that actively contract. The ciliary muscle does not squeeze the lens directly, and the lens does not slide forwards until it meets the near object."
+      ],
+      "example": {
+        "question": "Someone says contraction makes the ligaments tighter for near focus. Correct the chain.",
+        "steps": [
+          "The ciliary muscle contracts.",
+          "Suspensory-ligament tension decreases.",
+          "The lens becomes thicker/more rounded and refracts light more strongly."
+        ],
+        "explanation": "Explain the whole causal chain rather than memorising muscle contraction alone."
+      },
+      "practice": {
+        "question": "Why is a thicker lens useful for near vision?",
+        "answer": "Its greater curvature gives greater converging power for the more divergent incoming light.",
+        "explanation": "Explain the whole causal chain rather than memorising muscle contraction alone."
+      },
+      "terms": [
+        "accommodation",
+        "ciliary muscle",
+        "suspensory ligament",
+        "curvature",
+        "near focus"
+      ],
+      "commonMistakes": [
+        "Do not say the ligaments actively relax like muscles or reverse tension and lens shape."
+      ],
+      "diagram": {
+        "src": "/diagrams/biology-accommodation.svg",
+        "alt": "Original state comparison for distance and near focus. Distance: ciliary muscle relaxed, suspensory ligaments taut, lens flatter, less converging power. Near: muscle contracted, ligament tension reduced, lens rounder, greater converging power. Oval shapes compare relative lens thickness only, not full anatomical geometry or ray tracing.",
+        "caption": "Original lens-state comparison, not anatomical scale or measured lens dimensions. Reduced ligament tension allows the near-focus lens to become rounder."
+      }
+    },
+    {
+      "id": "distant-object-focus",
+      "title": "Explain focusing on a distant object",
+      "points": [
+        "5.11"
+      ],
+      "paragraphs": [
+        "For distant focus in the standard model, the ciliary muscle relaxes. Tension in the suspensory ligaments increases and they pull on the elastic lens, making it thinner and flatter.",
+        "The flatter lens has less converging power. Light from a distant object arrives nearly parallel, so it needs less additional lens refraction to form a focused retinal image than light from a near object.",
+        "The cornea continues to refract light in both conditions. A flatter lens does not mean no refraction, and the retina does not move backwards to catch the image.",
+        "Describe the transition explicitly. Moving the view from far to near reverses the ciliary-muscle/tension/lens-shape changes; it is different from changing pupil size because the light became brighter."
+      ],
+      "example": {
+        "question": "A learner looks from a nearby page to a distant tree. State the lens-state changes.",
+        "steps": [
+          "Ciliary muscle relaxes.",
+          "Suspensory ligaments become more taut.",
+          "Lens becomes thinner/flatter, giving less converging power."
+        ],
+        "explanation": "Relate the distance condition to tension and the amount of additional lens power."
+      },
+      "practice": {
+        "question": "Does distant focus stop the cornea refracting light?",
+        "answer": "No. The cornea still refracts; adjustable lens power is lower.",
+        "explanation": "Relate the distance condition to tension and the amount of additional lens power."
+      },
+      "terms": [
+        "distant focus",
+        "taut ligament",
+        "flatter lens",
+        "converging power"
+      ],
+      "commonMistakes": [
+        "Do not say the muscle contracts to pull the lens flat or that refraction disappears."
+      ]
+    },
+    {
+      "id": "iris-light-response",
+      "title": "Explain the pupil response to light",
+      "points": [
+        "5.11"
+      ],
+      "paragraphs": [
+        "The iris contains circular and radial muscle fibres that act in opposition. In brighter light, circular fibres contract and radial fibres relax, reducing pupil diameter and the amount of light entering.",
+        "In dimmer light, radial fibres contract and circular fibres relax. The pupil widens so more light can enter. The iris moves its tissue; the opening itself is not a muscle that contracts.",
+        "This light response helps regulate incoming light and protect the retina from excessive brightness. It does not make the lens thicker as its defining action, and a wide pupil cannot provide vision without any light.",
+        "Light is detected by retinal receptors and nervous pathways coordinate the iris muscles. The response is automatic. Do not shine intense light, lasers or sunlight into an eye to test it; this lesson describes a model, not a performed pupil experiment."
+      ],
+      "example": {
+        "question": "Predict the iris muscle changes on going from a bright room into dim conditions.",
+        "steps": [
+          "Radial muscles contract and circular muscles relax.",
+          "The pupil becomes wider.",
+          "More of the available light enters; the eye does not create its own light."
+        ],
+        "explanation": "State the stimulus, antagonistic muscle changes and resulting aperture change."
+      },
+      "practice": {
+        "question": "In bright light, which iris fibres contract?",
+        "answer": "Circular fibres contract while radial fibres relax, constricting the pupil.",
+        "explanation": "State the stimulus, antagonistic muscle changes and resulting aperture change."
+      },
+      "terms": [
+        "circular muscle",
+        "radial muscle",
+        "pupil constriction",
+        "pupil dilation"
+      ],
+      "commonMistakes": [
+        "Do not reverse the two muscle groups or attribute light-intensity control to a contracting pupil."
+      ]
+    },
+    {
+      "id": "separate-focus-from-light",
+      "title": "Keep distance and brightness responses distinct",
+      "points": [
+        "5.11"
+      ],
+      "paragraphs": [
+        "Object distance and illumination are different variables. Accommodation adjusts lens curvature for distance; the pupil light response adjusts the iris aperture for brightness. Both may occur together in everyday viewing, but they need separate explanations.",
+        "For example, moving from a nearby bright page to a distant dim scene changes both distance and light intensity. The standard predictions are a flatter lens for distance and a wider pupil for dim light.",
+        "When interpreting a comparison, state which variable changed. To study a distance change, keep illumination comparable; to study a brightness change, keep viewing distance comparable. These are proposed observation comparisons, not experiments performed for this library.",
+        "The near response can also involve pupil constriction and convergence of the two eyes. That does not make iris aperture the same mechanism as changing lens curvature. State the viewing conditions and explain each response separately; pupil size alone does not prove the lens mechanism."
+      ],
+      "example": {
+        "question": "A distant object is also dimmer than the nearby one. Predict lens and pupil separately.",
+        "steps": [
+          "Distance: ciliary muscle relaxed, greater ligament tension, flatter lens.",
+          "Dim light: radial iris muscles contract, circular fibres relax, wider pupil.",
+          "Use a different causal chain for each change."
+        ],
+        "explanation": "Match each response to its own changed variable."
+      },
+      "practice": {
+        "question": "Does “pupil gets smaller” explain how the lens focuses a near object?",
+        "answer": "No. Explain ciliary-muscle contraction, reduced ligament tension and increased lens curvature.",
+        "explanation": "Match each response to its own changed variable."
+      },
+      "terms": [
+        "object distance",
+        "illumination",
+        "controlled comparison",
+        "lens curvature"
+      ],
+      "commonMistakes": [
+        "Do not use pupil size as a substitute for the required accommodation mechanism."
+      ]
+    },
+    {
+      "id": "stereoscopic-distance",
+      "title": "Explain how two views help judge distance",
+      "points": [
+        "5.11"
+      ],
+      "terms": [
+        "stereoscopic vision",
+        "binocular disparity",
+        "depth perception",
+        "monocular cue"
+      ],
+      "paragraphs": [
+        "The two eyes view a scene from slightly different positions. The brain can compare differences between their retinal views to obtain information about depth. This binocular contribution is stereoscopic vision and helps judgement of relative distance.",
+        "It does not mean a person using one eye has no depth information. Perspective, overlap and changes during movement also provide cues. A two-view drawing must represent the same scene from different positions, rather than two unrelated objects."
+      ],
+      "example": {
+        "question": "Why is “one eye cannot judge any distance” too strong?",
+        "steps": [
+          "Two eyes supply binocular depth information.",
+          "A single view still supplies other depth cues.",
+          "Losing one kind of cue is not losing every source of spatial information."
+        ],
+        "explanation": "Distinguish an additional depth cue from all distance perception."
+      },
+      "commonMistakes": [
+        "Calling the two retinal views perfectly identical.",
+        "Claiming the eye itself calculates a measured distance."
+      ]
+    },
+    {
+      "id": "short-sight-correction",
+      "title": "Correct the optical model for short sight",
+      "points": [
+        "5.12"
+      ],
+      "terms": [
+        "short sight",
+        "myopia",
+        "retina",
+        "concave lens",
+        "diverging lens"
+      ],
+      "paragraphs": [
+        "In short sight, distant detail is blurred because the uncorrected eye focuses incoming light in front of the retina. An eyeball that is too long for its optical power, or excessive refracting power for its length, can produce this mismatch.",
+        "In the school optical model, a concave, diverging spectacle lens reduces the convergence before light enters the eye, allowing the combined system to focus on the retina. It does not shorten the eyeball or replace the retina. The appropriate lens is fitted for the individual; this model does not supply a prescription."
+      ],
+      "example": {
+        "question": "An uncorrected diagram shows distant-object rays crossing before the retina. Which correction is appropriate in this model?",
+        "steps": [
+          "Identify short sight.",
+          "Choose a diverging lens.",
+          "Explain that it offsets excessive convergence for this eye length."
+        ],
+        "explanation": "Match the correction to the focus position, not a memorised word alone."
+      },
+      "commonMistakes": [
+        "Using a converging lens to increase the excessive convergence.",
+        "Saying glasses physically shorten the eye."
+      ]
+    },
+    {
+      "id": "long-sight-correction",
+      "title": "Correct the optical model for long sight",
+      "points": [
+        "5.12"
+      ],
+      "terms": [
+        "long sight",
+        "hyperopia",
+        "convex lens",
+        "converging lens",
+        "presbyopia"
+      ],
+      "paragraphs": [
+        "In long sight, the eye has insufficient optical power for its length: without enough accommodation, light would focus behind the retina. An eyeball that is relatively short, or the refracting shape of the cornea or lens, can contribute. Near detail is often blurred, although accommodation can compensate to varying degrees.",
+        "A convex, converging spectacle lens adds convergence so the combined system can focus on the retina. Do not move the retina in the explanation. Age-related loss of accommodation, called presbyopia, can also make near viewing difficult, but it is not the same definition as a short-eyeball model of hyperopia."
+      ],
+      "example": {
+        "question": "A model eye does not bring near-object rays together by the time they reach the retina. Explain a lens correction.",
+        "steps": [
+          "Extra converging power is needed.",
+          "A convex lens contributes that power.",
+          "The combined focus is brought onto the retina."
+        ],
+        "explanation": "Keep cause, focus position and correction consistent."
+      },
+      "commonMistakes": [
+        "Saying long sight always gives perfect distant vision.",
+        "Calling every age-related near-vision difficulty a short eyeball."
+      ]
+    },
+    {
+      "id": "astigmatism-directional-focus",
+      "title": "Explain unequal focusing in astigmatism",
+      "points": [
+        "5.12"
+      ],
+      "terms": [
+        "astigmatism",
+        "cornea",
+        "lens",
+        "cylindrical correction",
+        "axis"
+      ],
+      "paragraphs": [
+        "Astigmatism involves unequal refracting curvature in different directions of the cornea or lens. Light is not brought to a single sharp focus in the same way across those directions; vision can be blurred or distorted at different viewing distances.",
+        "A suitable spectacle lens can include cylindrical correction, with power and orientation matched to the directional error. Contact lenses can also correct it, and selected cases may be treated by reshaping the cornea. It is not clouding of the eye lens, and the label does not mean every case requires surgery."
+      ],
+      "example": {
+        "question": "Why is choosing only “stronger convergence everywhere” an incomplete account of an astigmatism correction?",
+        "steps": [
+          "The optical error differs by direction.",
+          "Correction must address the relevant power and axis.",
+          "A single uniform strength description misses that directional difference."
+        ],
+        "explanation": "Explain the kind of optical mismatch."
+      },
+      "commonMistakes": [
+        "Treating astigmatism as a cataract.",
+        "Saying it can affect only distant objects."
+      ]
+    },
+    {
+      "id": "cataract-lens-opacity",
+      "title": "Separate cataracts from refractive errors",
+      "points": [
+        "5.12"
+      ],
+      "terms": [
+        "cataract",
+        "clouding",
+        "lens",
+        "intraocular lens"
+      ],
+      "paragraphs": [
+        "A cataract is clouding of the eye lens. It can cause blurred or hazy vision and interfere with light reaching the retina clearly. This is an opacity problem, rather than simply rays focusing too far forward or backward.",
+        "Vision aids may help in earlier stages, but they do not remove the clouding. Cataract surgery removes the affected lens and normally replaces it with an artificial intraocular lens. The decision depends on the effect on vision and clinical assessment; not every mild cataract needs immediate surgery."
+      ],
+      "example": {
+        "question": "Why is adding a concave spectacle lens not an explanation for removing a cataract?",
+        "steps": [
+          "A concave lens changes refraction.",
+          "A cataract is clouding within the eye lens.",
+          "Removal and replacement addresses the affected lens itself."
+        ],
+        "explanation": "Match treatment to the altered structure."
+      },
+      "commonMistakes": [
+        "Calling the cataract a cloudy retina.",
+        "Saying cataract surgery replaces the whole eye."
+      ]
+    },
+    {
+      "id": "corneal-transplant-purpose",
+      "title": "Explain what a corneal transplant replaces",
+      "points": [
+        "5.12"
+      ],
+      "terms": [
+        "cornea",
+        "transplant",
+        "donor tissue",
+        "rejection"
+      ],
+      "paragraphs": [
+        "The cornea must remain sufficiently clear and appropriately shaped to transmit and refract light. Damage or disease affecting it can impair vision. A corneal transplant replaces some or all of the affected corneal tissue with donor tissue.",
+        "The transplant does not replace the lens, retina, optic nerve or entire eye. It can improve vision for an appropriate corneal problem, but rejection or other complications can occur and glasses may still be needed. It is not a guaranteed cure for every cause of poor sight."
+      ],
+      "example": {
+        "question": "Would replacing a damaged cornea directly replace damaged optic-nerve fibres?",
+        "steps": [
+          "No: these are different structures.",
+          "The cornea is an anterior transparent refracting surface.",
+          "The optic nerve carries neural information towards the brain."
+        ],
+        "explanation": "Locate the tissue being replaced and the limit of its function."
+      },
+      "commonMistakes": [
+        "Confusing corneal transplantation with cataract lens replacement.",
+        "Claiming a transplant necessarily restores perfect sight."
       ]
     }
   ]
