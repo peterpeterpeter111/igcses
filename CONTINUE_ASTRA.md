@@ -2,14 +2,14 @@
 
 # Current checkpoint — 6 October 2026
 
-Read research/checkpoints/2026-10-06-HUMAN-VISION.md and preserve all existing history/UI. Historical usage/sync block resolved: cb32703/GitHub bbb8551 exact tree, proof work/github-sync/oct6-human-identity-resumed/verified.json. Save/sync the newer vision phase non-force; work/github-sync/oct6-human-vision/verified.json records its resolution.
+Read research/checkpoints/2026-10-06-HUMAN-COORDINATION-HEALTH.md. Preserve all work, UI and both local/GitHub histories. Vision dea51c5/GitHub b9cb5a0 exact tree is verified; the newer health phase requires non-force backup, with resolution in work/github-sync/oct6-human-coordination-health/verified.json. Historical sync/usage block resolved; no reset.
 
-Twelve partial vision sections added, including six adapted project-original eye explanations. Human5.11–5.12 own PDF20 verified, both01/02. Coordination40 sections. No complete chapter/point claim.
+23 new lessons; Coordination63 sections, every numbered5.1–5.19 identity has partial teaching links. No complete chapter/point claim. Source limitations, uncertainty and clinical/practical gaps explicitly recorded.
 
-Totals874 sections /32 partial notes /36 routes;742 reviewed identities /731 partial audits /2,451 local requirements /1,182 partial links. Human198 sections /11 notes /117 identities /115 audits /526 requirements. Seven obtained pairs; zero fully processed papers or active templates. Seven experimental offline families; empty live registry. Raw candidates/discovery unchanged.
+897 teaching sections /32 partial notes /36 routes;747 reviewed identities /736 partial audits /2,498 requirements /1,205 partial links. Human221 sections /11 notes /122 identities /120 audits /573 requirements. Seven obtained pairs, zero fully processed papers or active templates. Seven experimental offline families, empty live registry. Raw manifests unchanged.
 
-144 tests, types, lint,14 research checks, content/evidence, isolated D1, production build and112-file public scan pass. Settled615px reader, search and both component scopes verified. Smaller/mobile, first-frame, anatomical/ray diagrams and independent calibration remain. No AI integration, Sites version, deployment, public URL or reset.
+144 tests, types, lint,14 research checks, content/evidence, isolated D1, production build and112-file public scan pass. Settled615px reader, search and component scopes checked. Smaller/mobile, first-frame, independent practical/clinical/assessment and hosted checks remain. No AI integration, Sites version, deployment or public URL.
 
-Next: Human5.15–5.19, omitted chapter11 reproduction/heredity and chapter12 disease, English/Maths gaps, paper skills/historical/extraction checks and independently calibrated templates. AI last. Latest user useful-until-weekly-exhaustion instruction overrides historical5% gates this run. Last actual allowance90%five-hour/83%weekly; ordinary usage permitted. Save phases; stop at actual usage block, never consume a reset.
+Next: chapter11 omitted reproduction/heredity identities and chapter12 disease after own PDF visual review, English/Maths gaps, paper skills/historical/extraction checks and independently calibrated templates. AI last. User useful-until-weekly-exhaustion instruction overrides historical5% gates this run. Last actual allowances83%five-hour/82%weekly; save phases and stop at actual usage block. Consume no reset.
 
 Historical entries retained in research/checkpoints/archive/2026-10-06-PROGRESS-HISTORY.md and2026-10-06-CONTINUE-HISTORY.md and individual checkpoints. Do not restore oversized entry documents or discard work.

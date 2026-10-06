@@ -24,7 +24,11 @@
     "Distinguish vestibular mechanisms and explain noise-exposure risks.",
     "Trace eye optics, detection, accommodation and light responses.",
     "Explain the binocular contribution to distance judgement.",
-    "Distinguish refractive corrections, cataract replacement and corneal transplantation."
+    "Distinguish refractive corrections, cataract replacement and corneal transplantation.",
+    "Plan and interpret hearing-range evidence within apparatus and exposure limits.",
+    "Distinguish drug mechanisms, risks and legal classification.",
+    "Explain alcohol’s neural, liver and behavioural consequences.",
+    "Describe causes, symptoms and treatment goals of the named mental and neurological conditions."
   ],
   "supportingSources": [
     {
@@ -180,6 +184,146 @@
       "url": "https://www.nhs.uk/tests-and-treatments/cornea-transplant/",
       "sectionIds": [
         "corneal-transplant-purpose"
+      ]
+    },
+    {
+      "title": "OpenStax17.6: selected approximate hearing range",
+      "url": "https://openstax.org/books/college-physics/pages/17-6-hearing",
+      "sectionIds": [
+        "audible-frequency-range"
+      ]
+    },
+    {
+      "title": "NIDA heroin report: indexed opioid and breathing-risk passage",
+      "url": "https://nida.nih.gov/sites/default/files/828-heroin.pdf",
+      "sectionIds": [
+        "heroin-opioid-risks"
+      ]
+    },
+    {
+      "title": "CDC: selected cannabis brain-function evidence",
+      "url": "https://www.cdc.gov/cannabis/health-effects/brain-health.html",
+      "sectionIds": [
+        "cannabis-cognition-risks"
+      ]
+    },
+    {
+      "title": "CDC: selected cannabis mental-health associations",
+      "url": "https://www.cdc.gov/cannabis/health-effects/mental-health.html",
+      "sectionIds": [
+        "cannabis-cognition-risks"
+      ]
+    },
+    {
+      "title": "CDC: selected cannabis use-disorder and lung risks",
+      "url": "https://www.cdc.gov/cannabis/health-effects/index.html",
+      "sectionIds": [
+        "cannabis-cognition-risks"
+      ]
+    },
+    {
+      "title": "MedlinePlus/NIDA: selected cocaine effects and dependence distinctions",
+      "url": "https://medlineplus.gov/cocaine.html",
+      "sectionIds": [
+        "drug-meaning-and-status",
+        "cocaine-stimulant-risks"
+      ]
+    },
+    {
+      "title": "NHS: selected paracetamol purpose and liver-risk facts",
+      "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/",
+      "sectionIds": [
+        "paracetamol-pain-signalling"
+      ]
+    },
+    {
+      "title": "Manufacturer SmPC5.1: selected proposed central mechanism and uncertainty",
+      "url": "https://www.medicines.org.uk/emc/product/2853/smpc",
+      "sectionIds": [
+        "paracetamol-pain-signalling"
+      ]
+    },
+    {
+      "title": "NIAAA: selected brain, peripheral nerve and liver effects",
+      "url": "https://www.niaaa.nih.gov/alcohols-effects-health/alcohols-effects-body",
+      "sectionIds": [
+        "alcohol-acute-coordination",
+        "alcohol-chronic-liver-nerves",
+        "alcohol-behaviour-and-evidence"
+      ]
+    },
+    {
+      "title": "NIMH: selected schizophrenia risk, symptoms and treatment categories",
+      "url": "https://www.nimh.nih.gov/health/publications/schizophrenia",
+      "sectionIds": [
+        "mental-illness-risk-factors",
+        "schizophrenia-symptom-groups",
+        "schizophrenia-treatment-support"
+      ]
+    },
+    {
+      "title": "NIMH: selected depression pattern and treatment categories",
+      "url": "https://www.nimh.nih.gov/health/publications/depression",
+      "sectionIds": [
+        "mental-illness-risk-factors",
+        "depression-symptoms-and-duration",
+        "depression-treatment-mechanisms"
+      ]
+    },
+    {
+      "title": "NHS: selected Alzheimer’s brain changes and cause uncertainty",
+      "url": "https://www.nhs.uk/conditions/alzheimers-disease/causes/",
+      "sectionIds": [
+        "alzheimers-brain-changes"
+      ]
+    },
+    {
+      "title": "NHS: selected Alzheimer’s variable symptom progression",
+      "url": "https://www.nhs.uk/conditions/alzheimers-disease/symptoms/",
+      "sectionIds": [
+        "alzheimers-progressive-symptoms"
+      ]
+    },
+    {
+      "title": "NIA: indexed selected symptom and early-disease treatment distinctions",
+      "url": "https://www.nia.nih.gov/health/alzheimers-treatment/how-alzheimers-disease-treated",
+      "sectionIds": [
+        "alzheimers-treatment-goals"
+      ]
+    },
+    {
+      "title": "NHS: selected vascular perfusion, symptoms and mixed disease",
+      "url": "https://www.nhs.uk/conditions/vascular-dementia/",
+      "sectionIds": [
+        "vascular-dementia-blood-supply"
+      ]
+    },
+    {
+      "title": "NHS: selected vascular treatment goals and limits",
+      "url": "https://www.nhs.uk/conditions/vascular-dementia/treatment/",
+      "sectionIds": [
+        "vascular-dementia-treatment-limits"
+      ]
+    },
+    {
+      "title": "NHS: selected Parkinson’s dopamine-cell loss and cause uncertainty",
+      "url": "https://www.nhs.uk/conditions/parkinsons-disease/causes/",
+      "sectionIds": [
+        "parkinsons-dopamine-movement"
+      ]
+    },
+    {
+      "title": "NHS: selected Parkinson’s movement and non-motor symptoms",
+      "url": "https://www.nhs.uk/conditions/parkinsons-disease/symptoms/",
+      "sectionIds": [
+        "parkinsons-dopamine-movement"
+      ]
+    },
+    {
+      "title": "NHS: selected levodopa and support/surgical treatment goals",
+      "url": "https://www.nhs.uk/conditions/parkinsons-disease/treatment/",
+      "sectionIds": [
+        "parkinsons-treatment-goals"
       ]
     }
   ],
@@ -1501,6 +1645,736 @@
       "commonMistakes": [
         "Confusing corneal transplantation with cataract lens replacement.",
         "Claiming a transplant necessarily restores perfect sight."
+      ]
+    },
+    {
+      "id": "audible-frequency-range",
+      "title": "Distinguish frequency range from loudness",
+      "points": [
+        "5.15"
+      ],
+      "terms": [
+        "frequency",
+        "hertz",
+        "audible range",
+        "infrasound",
+        "ultrasound"
+      ],
+      "paragraphs": [
+        "Frequency is the number of oscillations per second, measured in hertz. It relates to pitch, whereas sound level relates to loudness. The commonly quoted young-human hearing range is approximately20Hz to20,000Hz; it is a broad reference, not an identical range for every person under every condition.",
+        "Hearing sensitivity varies with frequency, age and individual hearing history. Whether a tone is detected also depends on its level and the background sound. A loudness change is not a frequency change, and an ordinary speaker may not reproduce the entire reference range accurately."
+      ],
+      "example": {
+        "question": "A tone changes from500Hz to1,000Hz at a comparable measured sound level. Which variable was deliberately changed?",
+        "steps": [
+          "Frequency was doubled.",
+          "Its pitch is expected to be higher.",
+          "The change does not by itself prove a higher sound level."
+        ],
+        "explanation": "Keep the two physical quantities separate."
+      },
+      "commonMistakes": [
+        "Measuring frequency in decibels.",
+        "Treating20kHz as an exact boundary for everyone."
+      ]
+    },
+    {
+      "id": "audible-range-planning",
+      "title": "Plan a controlled audible-range investigation",
+      "points": [
+        "5.15"
+      ],
+      "terms": [
+        "tone generator",
+        "calibration",
+        "control trial",
+        "frequency",
+        "sound level"
+      ],
+      "paragraphs": [
+        "A supervised investigation can present brief tones at selected frequencies using a teacher-approved generator and calibrated sound output. Keep a low, agreed sound level and the position of the source consistent, use quiet conditions, and record whether each tone is reported as heard. Include randomly ordered silent controls and repeated trials to reduce expectation and guessing.",
+        "Do not increase volume to force detection or use an online sweep as a hearing diagnosis. Output may change across frequencies even at the same device volume setting. Apparatus limits, actual sound level and voluntary participation must be checked under the teacher’s risk assessment. This is an original planning model; no participant test has been performed here."
+      ],
+      "example": {
+        "question": "Why is “keep the computer volume slider fixed” not enough to prove equal sound level at all frequencies?",
+        "steps": [
+          "Speaker output depends on frequency.",
+          "A fixed setting does not establish calibrated sound pressure.",
+          "Check output and record the equipment’s supported range."
+        ],
+        "explanation": "Distinguish a device setting from the physical control variable."
+      },
+      "commonMistakes": [
+        "Raising volume until an uncomfortable tone is heard.",
+        "Calling a silent control a different-frequency tone."
+      ],
+      "experiment": {
+        "apparatus": [
+          "Teacher-approved tone generator and calibrated sound source with documented frequency/output limits.",
+          "Quiet setting and response table; no unsupervised hearing app diagnosis."
+        ],
+        "method": [
+          "Agree voluntary participation and low safe output under a teacher’s risk assessment.",
+          "Present brief frequencies in varied order, with silent controls and rest intervals.",
+          "Keep source position and actual output controlled; do not raise level to force a response.",
+          "Record heard/not-heard and repeat comparable trials.",
+          "Compare tested frequencies and equipment limits before inferring endpoints."
+        ],
+        "variables": [
+          "Independent variable: tone frequency in hertz.",
+          "Outcome: reported detection at the agreed measured level.",
+          "Control actual sound level, duration, distance, background sound and presentation conditions."
+        ],
+        "safety": [
+          "No damaging or uncomfortable sound, deliberate exposure challenge or forced participation.",
+          "Stop at discomfort; no clinical diagnosis or complete performed practical claimed."
+        ],
+        "quality": [
+          "A fixed volume slider does not establish frequency-independent sound level.",
+          "Use repeats, varied ordering, silent trials and willing-participant variation.",
+          "Original planning only; calibrated apparatus/classroom method and independent practical-demand review remain."
+        ]
+      }
+    },
+    {
+      "id": "audible-range-data-limits",
+      "title": "Limit conclusions from hearing-range data",
+      "points": [
+        "5.15"
+      ],
+      "terms": [
+        "repeat",
+        "detection",
+        "apparatus limit",
+        "sample variation"
+      ],
+      "paragraphs": [
+        "An original hypothetical data set records repeated detection at250,500,1,000,2,000,4,000 and8,000Hz using equipment tested only across250–8,000Hz. This supports detection of those supplied frequencies at the agreed output level. It does not establish the participant’s lowest or highest audible frequency.",
+        "A non-detection could reflect the participant, insufficient output or background sound; silent-control false reports also weaken the result. Compare repeated responses and willing participants without turning variation into a diagnosis. To infer an endpoint, a justified method must test around it while respecting safe output and equipment limitations."
+      ],
+      "example": {
+        "question": "Does hearing every supplied250–8,000Hz tone establish a complete human hearing range?",
+        "steps": [
+          "No: only the tested frequencies are supported.",
+          "The lower and upper endpoints were not bracketed.",
+          "Participant and apparatus limits must be separated."
+        ],
+        "explanation": "Match a conclusion to the actual observations."
+      },
+      "commonMistakes": [
+        "Reporting250Hz as a proven lower hearing limit.",
+        "Calling invented data a performed experiment."
+      ]
+    },
+    {
+      "id": "drug-meaning-and-status",
+      "title": "Separate drug action, legal status and risk",
+      "points": [
+        "5.16"
+      ],
+      "terms": [
+        "drug",
+        "medicine",
+        "psychoactive",
+        "legal status"
+      ],
+      "paragraphs": [
+        "A drug is a substance that changes physiological processes when introduced into the body. Medicines are drugs used for an intended health effect; psychoactive drugs alter nervous-system activity, perception or behaviour. A painkiller can therefore be a drug even when it does not cause intoxication.",
+        "Legal status is a separate classification. Authorised medicines and regulated substances differ from illicit supply or possession. The syllabus names heroin, cannabis and cocaine as danger examples; their legal treatment depends on jurisdiction and authorised use. “Legal” does not mean harmless, and a substance’s effect does not change simply because its legal status changes."
+      ],
+      "example": {
+        "question": "Why can paracetamol count as a drug while being sold as a medicine?",
+        "steps": [
+          "It changes physiological processes, including pain signalling.",
+          "Its intended use is medicinal.",
+          "Drug and medicine are not mutually exclusive labels."
+        ],
+        "explanation": "Use biological action for the definition and context for legal classification."
+      },
+      "commonMistakes": [
+        "Defining every drug as an illegal substance.",
+        "Assuming a legal product cannot cause harm."
+      ]
+    },
+    {
+      "id": "heroin-opioid-risks",
+      "title": "Link heroin effects to respiratory and dependence risks",
+      "points": [
+        "5.16"
+      ],
+      "terms": [
+        "heroin",
+        "opioid receptor",
+        "respiratory depression",
+        "dependence",
+        "addiction"
+      ],
+      "paragraphs": [
+        "Heroin acts through opioid mechanisms after conversion to morphine. Effects on brain and nervous-system receptors can reduce pain and depress alertness. Suppression of automatic breathing can become life-threatening, depriving the body and brain of oxygen.",
+        "Repeated use can lead to dependence and addiction. Dependence includes adaptation and withdrawal; addiction includes difficulty controlling use despite harmful consequences. These are not identical terms. Contaminated drugs and unsafe injection can add further poisoning or infection risks; this lesson gives no instructions for using a drug."
+      ],
+      "example": {
+        "question": "Why can depressed breathing harm brain tissue even if the main initial drug action is on nervous signalling?",
+        "steps": [
+          "Breathing supports oxygen transfer.",
+          "Severe suppression reduces oxygen supply.",
+          "Brain cells require oxygen for normal function."
+        ],
+        "explanation": "Connect the drug effect to its physiological consequence."
+      },
+      "commonMistakes": [
+        "Calling respiratory depression faster ventilation.",
+        "Treating dependence and addiction as exactly the same definition."
+      ]
+    },
+    {
+      "id": "cannabis-cognition-risks",
+      "title": "Explain cannabis impairment without absolute claims",
+      "points": [
+        "5.16"
+      ],
+      "terms": [
+        "cannabis",
+        "THC",
+        "memory",
+        "coordination",
+        "psychosis",
+        "use disorder"
+      ],
+      "paragraphs": [
+        "THC-containing cannabis can impair attention, memory, reaction time and coordination. Anxiety, disorientation or paranoia can occur. Effects depend on factors including product strength, frequency of use, age and other substances; “natural” does not establish safety.",
+        "Cannabis use is associated with increased risk of psychosis, particularly with earlier and more frequent use, but not every person who uses it develops schizophrenia. Use disorder can develop, and smoking can harm lung tissue. Keep an association and a universal causal claim distinct when interpreting a study."
+      ],
+      "example": {
+        "question": "A study reports a higher psychosis rate in a group with frequent cannabis use. Does it show that every user develops schizophrenia?",
+        "steps": [
+          "No: a group-level increase is not a universal individual outcome.",
+          "Other influences and the study design matter.",
+          "The increased risk remains relevant without the absolute claim."
+        ],
+        "explanation": "Describe evidence proportionately."
+      },
+      "commonMistakes": [
+        "Calling a plant-derived drug automatically harmless.",
+        "Equating an increased risk with certainty."
+      ]
+    },
+    {
+      "id": "cocaine-stimulant-risks",
+      "title": "Link cocaine stimulation to serious harm",
+      "points": [
+        "5.16"
+      ],
+      "terms": [
+        "cocaine",
+        "stimulant",
+        "arrhythmia",
+        "stroke",
+        "addiction"
+      ],
+      "paragraphs": [
+        "Cocaine is a stimulant that can increase alertness but also produce agitation, anxiety or paranoia. Serious effects can include abnormal heart rhythms, heart attack, stroke or seizures. Stimulation does not mean safer nervous-system function.",
+        "Repeated use can lead to tolerance, dependence and cocaine use disorder, where use continues despite harms and disruption of responsibilities. A short-lived perceived effect does not mean the drug cannot have lasting consequences. Clinical anaesthetic use in particular settings does not make illicit use safe."
+      ],
+      "example": {
+        "question": "Why is “a stimulant improves the nervous system, so it cannot harm the heart” wrong?",
+        "steps": [
+          "Stimulation describes an effect, not a safety rating.",
+          "Cocaine can affect cardiovascular function seriously.",
+          "A perceived increase in alertness does not remove those risks."
+        ],
+        "explanation": "Relate classification to mechanism and consequences."
+      },
+      "commonMistakes": [
+        "Calling every stimulant harmless.",
+        "Assuming a brief effect rules out overdose or lasting injury."
+      ]
+    },
+    {
+      "id": "paracetamol-pain-signalling",
+      "title": "Explain a painkiller’s action and its limits",
+      "points": [
+        "5.16"
+      ],
+      "terms": [
+        "paracetamol",
+        "analgesic",
+        "central nervous system",
+        "prostaglandin"
+      ],
+      "paragraphs": [
+        "Paracetamol is an analgesic that reduces pain and can reduce fever. Its action includes central nervous-system mechanisms. Inhibition of prostaglandin-related signalling is a proposed contribution; its complete analgesic mechanism is not fully determined.",
+        "Reducing pain perception does not mean repairing the original tissue damage, blocking every nerve impulse or acting as a local anaesthetic on all sensory fibres. Excess amounts can damage the liver. The biological explanation here supplies neither a dose nor an instruction to take or combine medicines."
+      ],
+      "example": {
+        "question": "If pain becomes less intense after an analgesic, does that prove the damaged tissue has already healed?",
+        "steps": [
+          "No: pain signalling and tissue repair differ.",
+          "An analgesic can change the symptom.",
+          "The original cause may remain."
+        ],
+        "explanation": "Keep symptom relief separate from removal of the cause."
+      },
+      "commonMistakes": [
+        "Saying paracetamol switches off all neurones.",
+        "Presenting a proposed biochemical contribution as the complete proven mechanism."
+      ]
+    },
+    {
+      "id": "alcohol-acute-coordination",
+      "title": "Explain alcohol’s acute nervous-system effects",
+      "points": [
+        "5.17"
+      ],
+      "terms": [
+        "alcohol",
+        "depressant",
+        "reaction time",
+        "judgement",
+        "coordination"
+      ],
+      "paragraphs": [
+        "Alcohol is a nervous-system depressant: it disrupts communication and can impair judgement, reaction time and coordinated movement. Reduced inhibition can make someone appear more talkative or daring; that does not make alcohol a stimulant or improve reliable decision-making.",
+        "Impaired coordination can make movement less controlled, and slower or less accurate responses increase accident risk. Large exposures can seriously depress vital functions. A classroom comparison must not administer alcohol to test reaction time; use supplied data to discuss mechanisms."
+      ],
+      "example": {
+        "question": "Why can a person feel more confident while responding less reliably?",
+        "steps": [
+          "Reduced inhibition can increase perceived confidence.",
+          "Judgement and coordinated responses can still be impaired.",
+          "Subjective feeling and measured performance differ."
+        ],
+        "explanation": "Explain the apparent contrast through different functions."
+      },
+      "commonMistakes": [
+        "Defining a depressant as a substance that only causes sadness.",
+        "Treating confidence as proof of safe driving."
+      ]
+    },
+    {
+      "id": "alcohol-chronic-liver-nerves",
+      "title": "Link long-term heavy drinking to organ damage",
+      "points": [
+        "5.17"
+      ],
+      "terms": [
+        "fatty liver",
+        "hepatitis",
+        "fibrosis",
+        "cirrhosis",
+        "neuropathy"
+      ],
+      "paragraphs": [
+        "The liver processes alcohol. Heavy drinking can lead to fat accumulation, inflammation and scarring, including cirrhosis, which impairs liver functions. These changes are not simply the liver temporarily storing a drink unchanged.",
+        "Long-term misuse can also damage brain and peripheral nervous-system function, contributing to problems with thinking, memory or nerve sensation. Nutritional deficiencies can contribute to neurological harm. Severity and progression vary; do not infer that every exposure inevitably produces every listed condition."
+      ],
+      "example": {
+        "question": "Why can extensive liver scarring affect more than alcohol processing alone?",
+        "steps": [
+          "The liver performs many metabolic functions.",
+          "Scarring disrupts functioning tissue.",
+          "Impaired synthesis and metabolic regulation can have wider consequences."
+        ],
+        "explanation": "Connect structure loss to multiple organ functions."
+      },
+      "commonMistakes": [
+        "Calling cirrhosis only temporary intoxication.",
+        "Claiming every liver effect is immediately and completely reversible."
+      ]
+    },
+    {
+      "id": "alcohol-behaviour-and-evidence",
+      "title": "Relate alcohol misuse to behaviour and social consequences",
+      "points": [
+        "5.17"
+      ],
+      "terms": [
+        "disinhibition",
+        "dependence",
+        "risk-taking",
+        "behavioural consequence"
+      ],
+      "paragraphs": [
+        "Impaired judgement and disinhibition can contribute to unsafe decisions, accidents and conflict. Persistent misuse or dependence can disrupt education, work and relationships. These are possible consequences, not a stereotype that every person with alcohol problems is violent or behaves identically.",
+        "When interpreting supplied data, consider exposure pattern, comparison groups and other influences. An association between drinking and an outcome does not alone measure a direct biological mechanism. Combine the evidence with the appropriate nervous-system or liver explanation rather than blaming a person’s character."
+      ],
+      "example": {
+        "question": "Why should a group-level accident association not be turned into “every drinker has an accident”?",
+        "steps": [
+          "A higher probability is not a universal outcome.",
+          "Exposure and other factors vary.",
+          "Impaired judgement remains a relevant mechanism."
+        ],
+        "explanation": "Use probability and mechanisms without inventing certainty."
+      },
+      "commonMistakes": [
+        "Calling dependence a lack of willpower alone.",
+        "Treating a correlation as proof of one exclusive cause."
+      ]
+    },
+    {
+      "id": "mental-illness-risk-factors",
+      "title": "Explain mental illness with multiple contributing factors",
+      "points": [
+        "5.18"
+      ],
+      "terms": [
+        "mental illness",
+        "risk factor",
+        "genetic",
+        "environmental",
+        "brain function"
+      ],
+      "paragraphs": [
+        "Mental illnesses can affect thoughts, mood, perception and daily functioning. For depression and schizophrenia, causes involve interacting biological, genetic, psychological and environmental influences. A risk factor changes likelihood; it is not a prediction that a particular person must become ill.",
+        "Schizophrenia is associated with differences in brain development and function and with genetic and environmental influences. Depression also involves interacting vulnerabilities and life experiences. Neither should be explained simply as weakness, one guaranteed trigger or one universally missing brain chemical. Diagnosis needs qualified assessment, not a classroom label from a single symptom."
+      ],
+      "example": {
+        "question": "If a relative has schizophrenia, does that alone prove another family member will develop it?",
+        "steps": [
+          "No: inherited influences can affect risk.",
+          "Many factors contribute.",
+          "Risk and certainty are different."
+        ],
+        "explanation": "Do not convert susceptibility into a deterministic prediction."
+      },
+      "commonMistakes": [
+        "Giving one gene as the universal cause.",
+        "Calling mental illness a moral failure."
+      ]
+    },
+    {
+      "id": "schizophrenia-symptom-groups",
+      "title": "Distinguish perception, thought and motivation symptoms",
+      "points": [
+        "5.18"
+      ],
+      "terms": [
+        "schizophrenia",
+        "hallucination",
+        "delusion",
+        "thought disorder",
+        "negative symptom"
+      ],
+      "paragraphs": [
+        "Schizophrenia can involve hallucinations, such as hearing something without the corresponding external stimulus, and delusions, meaning strongly held false beliefs. Disorganised thinking or speech can also occur. These symptoms vary among individuals.",
+        "Reduced motivation, expression and social engagement, or difficulty with attention and memory, may impair daily functioning. Schizophrenia is not the same as having multiple separate personalities. A symptom description should identify the altered function without treating everyone with the condition as dangerous."
+      ],
+      "example": {
+        "question": "Separate a hallucination from a delusion.",
+        "steps": [
+          "A hallucination concerns a perception without its external stimulus.",
+          "A delusion concerns a strongly held false belief.",
+          "They are different symptom categories, although they can coexist."
+        ],
+        "explanation": "Use the function being affected to distinguish terms."
+      },
+      "commonMistakes": [
+        "Defining schizophrenia as split personality.",
+        "Assuming one symptom alone establishes a diagnosis."
+      ]
+    },
+    {
+      "id": "schizophrenia-treatment-support",
+      "title": "Explain combined treatment and support",
+      "points": [
+        "5.18"
+      ],
+      "terms": [
+        "antipsychotic",
+        "psychological therapy",
+        "family support",
+        "functioning"
+      ],
+      "paragraphs": [
+        "Antipsychotic medicines can reduce the severity or frequency of psychotic symptoms. Psychological and social support can help a person manage difficulties, maintain routines and participate in education, work or relationships. Family education can support care.",
+        "Treatment is selected and reviewed by professionals because benefits, side effects and needs vary. Symptom improvement and better functioning do not prove that every underlying vulnerability has disappeared. Avoid describing support as pointless simply because medication is also used."
+      ],
+      "example": {
+        "question": "Why may practical and psychological support be useful alongside symptom-reducing medicine?",
+        "steps": [
+          "Daily functioning involves more than the intensity of one symptom.",
+          "Support can help routines, skills and relationships.",
+          "The approaches can address complementary needs."
+        ],
+        "explanation": "Explain the purpose of each treatment category."
+      },
+      "commonMistakes": [
+        "Claiming medication guarantees an immediate permanent cure.",
+        "Equating support with replacing all clinical assessment."
+      ]
+    },
+    {
+      "id": "depression-symptoms-and-duration",
+      "title": "Distinguish persistent depression from a passing low mood",
+      "points": [
+        "5.18"
+      ],
+      "terms": [
+        "depression",
+        "low mood",
+        "loss of interest",
+        "fatigue",
+        "concentration"
+      ],
+      "paragraphs": [
+        "Depression can involve persistent low mood or loss of interest and pleasure, with changes in sleep, appetite, energy and concentration. Symptoms interfere with daily functioning and vary among people. In the usual major-depression definition, a pattern lasting at least two weeks matters; a single bad afternoon does not define it.",
+        "The duration alone is not a self-diagnostic test, and other conditions can produce similar symptoms. Persistent distress should receive appropriate assessment. A person can experience depression without showing every symptom or looking sad at every moment."
+      ],
+      "example": {
+        "question": "Why does “felt disappointed once” not give enough information to identify major depression?",
+        "steps": [
+          "A transient feeling differs from a persistent pattern.",
+          "Duration, associated symptoms and functioning matter.",
+          "Other explanations and clinical assessment must be considered."
+        ],
+        "explanation": "Explain the evidence needed without diagnosing a fictional or real classmate."
+      },
+      "commonMistakes": [
+        "Equating ordinary sadness and all depression.",
+        "Assuming outward appearance establishes mental health."
+      ]
+    },
+    {
+      "id": "depression-treatment-mechanisms",
+      "title": "Explain treatment categories without a single-chemical story",
+      "points": [
+        "5.18"
+      ],
+      "terms": [
+        "psychotherapy",
+        "CBT",
+        "antidepressant",
+        "monitoring"
+      ],
+      "paragraphs": [
+        "Psychological therapies, including cognitive behavioural therapy, can help with patterns of thought and behaviour associated with depression. Antidepressant medicines alter relevant brain signalling and can help symptoms; response and side effects differ, so treatment is monitored.",
+        "A treatment’s action does not prove that every case was caused by one chemical deficiency. Therapy, medication and support may be combined according to need; severe or resistant illness may require specialist approaches. This account does not recommend starting, stopping or choosing a medicine."
+      ],
+      "example": {
+        "question": "Why does a medicine changing brain signalling not establish one exclusive cause of depression?",
+        "steps": [
+          "Treatment effects and disease causes are different questions.",
+          "Several influences contribute to depression.",
+          "A useful intervention need not reverse one universal initial cause."
+        ],
+        "explanation": "Separate an intervention mechanism from a causal claim."
+      },
+      "commonMistakes": [
+        "Calling depression simply a guaranteed serotonin shortage.",
+        "Promising every person the same response time or outcome."
+      ]
+    },
+    {
+      "id": "alzheimers-brain-changes",
+      "title": "Connect Alzheimer’s disease with progressive brain changes",
+      "points": [
+        "5.19"
+      ],
+      "terms": [
+        "Alzheimer’s disease",
+        "amyloid",
+        "tau",
+        "neurotransmitter",
+        "neurone"
+      ],
+      "paragraphs": [
+        "Alzheimer’s disease is a cause of progressive dementia. Abnormal amyloid deposits and tau changes are associated with disrupted cell communication and neuronal loss. Why this process begins is not completely understood; age and inherited factors can influence risk.",
+        "It is not an inevitable part of growing old, and a risk factor is not a diagnosis. Loss of functioning cells and connections helps explain increasing cognitive difficulties. Do not describe the mechanism as a blocked nerve that can simply be cleared in every patient."
+      ],
+      "example": {
+        "question": "Why is “all older people develop Alzheimer’s” not an appropriate conclusion?",
+        "steps": [
+          "Age influences risk.",
+          "Increased likelihood is not certainty.",
+          "The condition involves disease processes rather than every ordinary age-related change."
+        ],
+        "explanation": "Distinguish ageing, risk and pathology."
+      },
+      "commonMistakes": [
+        "Saying its initiating cause is fully known in every case.",
+        "Equating a plaque with a blood clot in a brain artery."
+      ]
+    },
+    {
+      "id": "alzheimers-progressive-symptoms",
+      "title": "Explain how progressive changes affect daily life",
+      "points": [
+        "5.19"
+      ],
+      "terms": [
+        "recent memory",
+        "disorientation",
+        "language",
+        "daily functioning"
+      ],
+      "paragraphs": [
+        "Early Alzheimer’s disease often affects memory for recent events. Later difficulties can include language, orientation, judgement and performing familiar tasks. The pattern and rate vary; some forms begin with other cognitive difficulties.",
+        "Progressive impairment can increase the need for help with daily activities. Ordinary forgetfulness alone does not establish Alzheimer’s, and sudden worsening can have additional causes. Explain the affected functions rather than treating every dementia as an identical symptom list."
+      ],
+      "example": {
+        "question": "Why can trouble remembering recent instructions make an everyday sequence harder?",
+        "steps": [
+          "The person may not retain the information needed for the next step.",
+          "Planning and orientation may also be affected.",
+          "Support needs depend on the pattern and severity of impairment."
+        ],
+        "explanation": "Link a named difficulty to a function rather than merely listing words."
+      },
+      "commonMistakes": [
+        "Using one forgotten name as a complete diagnosis.",
+        "Claiming progression follows an identical timetable for everyone."
+      ]
+    },
+    {
+      "id": "alzheimers-treatment-goals",
+      "title": "Distinguish symptom relief from disease modification",
+      "points": [
+        "5.19"
+      ],
+      "terms": [
+        "cholinesterase inhibitor",
+        "acetylcholine",
+        "supportive care",
+        "disease modification"
+      ],
+      "paragraphs": [
+        "Some medicines help symptoms by influencing brain signalling; cholinesterase inhibitors reduce acetylcholine breakdown. Practical support and adapted routines can help everyday functioning. These approaches do not reconstruct all lost neurones.",
+        "Selected treatments can slow decline for some people with early disease, under specialist eligibility and monitoring. They are not a cure and are not suitable or available for everyone. Distinguish reducing symptoms, slowing progression and reversing existing damage when comparing treatment claims."
+      ],
+      "example": {
+        "question": "Does slower decline mean the original brain damage has been completely reversed?",
+        "steps": [
+          "No: rate of progression and existing damage differ.",
+          "Symptom relief is another distinct aim.",
+          "Use the outcome actually measured."
+        ],
+        "explanation": "Do not overstate a treatment endpoint."
+      },
+      "commonMistakes": [
+        "Saying no treatment can help any symptom.",
+        "Calling disease modification a guaranteed cure."
+      ]
+    },
+    {
+      "id": "vascular-dementia-blood-supply",
+      "title": "Connect vascular dementia to impaired brain blood supply",
+      "points": [
+        "5.19"
+      ],
+      "terms": [
+        "vascular dementia",
+        "stroke",
+        "small-vessel disease",
+        "oxygen supply"
+      ],
+      "paragraphs": [
+        "Vascular dementia results from damage related to inadequate brain blood supply, including stroke or small-vessel disease. Reduced delivery of oxygen and nutrients can damage cells and connections. Vascular risks such as high blood pressure and diabetes can contribute.",
+        "Slower thought, concentration and planning difficulties can occur, alongside memory or movement problems. Onset and progression may be gradual or occur in steps, depending on the damage. Mixed Alzheimer’s and vascular changes can coexist; do not assume one excludes the other."
+      ],
+      "example": {
+        "question": "Why could impaired brain blood flow cause cognitive difficulty even without an amyloid-based explanation?",
+        "steps": [
+          "Neurones depend on oxygen and nutrient delivery.",
+          "Vascular damage can disrupt functioning circuits.",
+          "Different disease mechanisms can produce some overlapping symptoms."
+        ],
+        "explanation": "Link perfusion to cell function without merging distinct mechanisms."
+      },
+      "commonMistakes": [
+        "Calling every vascular event an amyloid plaque.",
+        "Saying every case progresses only in sudden steps."
+      ]
+    },
+    {
+      "id": "vascular-dementia-treatment-limits",
+      "title": "Explain reducing further vascular damage",
+      "points": [
+        "5.19"
+      ],
+      "terms": [
+        "vascular risk",
+        "blood pressure",
+        "rehabilitation",
+        "support"
+      ],
+      "paragraphs": [
+        "Management can address vascular risks and underlying disease, for example through appropriate treatment of blood pressure or diabetes and prevention of further vascular events. Rehabilitation, practical adaptations and support can help with the consequences of existing impairment.",
+        "Reducing future damage is not the same as replacing cells already lost. There is no general treatment that reverses all established vascular brain damage. A care plan depends on the cause and the individual; the examples name goals, not a medicine or dose to choose."
+      ],
+      "example": {
+        "question": "Why is controlling a vascular risk useful even if existing impairment does not disappear?",
+        "steps": [
+          "It can reduce the likelihood of additional damage.",
+          "Existing and future damage are different outcomes.",
+          "Support can address present difficulties."
+        ],
+        "explanation": "Explain prevention and support as distinct treatment aims."
+      },
+      "commonMistakes": [
+        "Promising blood-pressure treatment regrows all damaged neurones.",
+        "Prescribing a clot-prevention drug from this course summary."
+      ]
+    },
+    {
+      "id": "parkinsons-dopamine-movement",
+      "title": "Link dopamine-cell loss to movement difficulties",
+      "points": [
+        "5.19"
+      ],
+      "terms": [
+        "Parkinson’s disease",
+        "substantia nigra",
+        "dopamine",
+        "rigidity",
+        "bradykinesia"
+      ],
+      "paragraphs": [
+        "Parkinson’s disease involves loss of dopamine-producing neurones in the substantia nigra, disrupting circuits involved in movement control. Why this loss begins is not fully established; genetic and environmental influences can contribute.",
+        "Movement can become slower, with stiffness and tremor, often most noticeable at rest. Not every person has every feature, and non-motor difficulties can also occur. Dopamine is a signalling chemical, not a substance mechanically lubricating a joint."
+      ],
+      "example": {
+        "question": "Why can a brain signalling disorder produce a movement problem without the muscle itself being the original site of cell loss?",
+        "steps": [
+          "Motor control uses communicating neural circuits.",
+          "Dopamine-cell loss alters that control.",
+          "Muscles receive less well-regulated commands."
+        ],
+        "explanation": "Connect the neural mechanism to the observed function."
+      },
+      "commonMistakes": [
+        "Calling dopamine a joint lubricant.",
+        "Assuming every tremor alone proves Parkinson’s."
+      ]
+    },
+    {
+      "id": "parkinsons-treatment-goals",
+      "title": "Explain symptom management in Parkinson’s disease",
+      "points": [
+        "5.19"
+      ],
+      "terms": [
+        "levodopa",
+        "dopamine",
+        "physiotherapy",
+        "deep brain stimulation"
+      ],
+      "paragraphs": [
+        "Levodopa can be converted to dopamine in the brain and help movement symptoms. Other medicines, physiotherapy and practical support can also help. Treatment effects and side effects vary and require professional review.",
+        "Deep brain stimulation is an option for selected people to help particular symptoms; it does not replace the lost neurones or cure the disease. An improvement in movement is evidence of symptom benefit, not proof that the underlying progressive condition has disappeared."
+      ],
+      "example": {
+        "question": "Does improved movement after levodopa show that the lost neurones have been replaced?",
+        "steps": [
+          "No: increasing available dopamine can improve signalling.",
+          "That differs from replacing cells.",
+          "The treatment outcome is symptom improvement."
+        ],
+        "explanation": "Distinguish compensation from reversing the underlying loss."
+      },
+      "commonMistakes": [
+        "Claiming levodopa itself is a new neurone.",
+        "Saying surgery guarantees complete restoration for everyone."
       ]
     }
   ]
