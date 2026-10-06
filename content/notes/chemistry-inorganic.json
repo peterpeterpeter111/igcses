@@ -8,7 +8,8 @@
   "sourcePages": [
     22,
     23,
-    24
+    24,
+    25
   ],
   "prerequisites": [
     "Balanced equations conserve atoms.",
@@ -36,7 +37,10 @@
     "Review the named acid–metal practical and distinguish rate from final product amount.",
     "Select extraction methods from reactivity and supplied data for Paper 2C.",
     "Link named metal and steel uses to properties for Paper 2C.",
-    "Explain alloy composition and the atom-size hardness model for Paper 2C."
+    "Explain alloy composition and the atom-size hardness model for Paper 2C.",
+    "Interpret indicators and approximate pH without overstating their precision.",
+    "Explain proton transfer, neutralization and the named salt reactions.",
+    "Select and evaluate salt-preparation and titration methods with correct paper applicability."
   ],
   "supportingSources": [
     {
@@ -250,6 +254,39 @@
       "url": "https://www.matter.org.uk/matscicdrom/manual/as.html",
       "sectionIds": [
         "metal-alloys-hardness"
+      ]
+    },
+    {
+      "title": "Purdue: acid–base indicator ranges",
+      "url": "https://chemed.chem.purdue.edu/demos/demosheets/17.3.html",
+      "sectionIds": [
+        "acid-indicator-colours",
+        "acid-universal-indicator"
+      ]
+    },
+    {
+      "title": "OpenStax Chemistry 2e: proton transfer",
+      "url": "https://openstax.org/books/chemistry-2e/pages/14-1-bronsted-lowry-acids-and-bases",
+      "sectionIds": [
+        "acid-proton-transfer",
+        "acid-base-types"
+      ]
+    },
+    {
+      "title": "OpenStax Chemistry 2e: equivalence point and indicator end point",
+      "url": "https://openstax.org/books/chemistry-2e/pages/14-7-acid-base-titrations",
+      "sectionIds": [
+        "acid-neutralization",
+        "acid-titration-method"
+      ]
+    },
+    {
+      "title": "Pearson core practical guide: copper sulfate preparation",
+      "url": "https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Biology/2017/teaching-and-learning-materials/biology-chemistry-physics-core-practical-guide.pdf",
+      "sectionIds": [
+        "salt-insoluble-reactant",
+        "salt-copper-hydrated",
+        "salt-purity-recovery"
       ]
     }
   ],
@@ -1636,6 +1673,696 @@
         "alt": "Original two-dimensional model: uniform atoms in regular rows beside an alloy region with a larger substituted atom and nearby displaced atoms; distortion hinders plastic movement.",
         "caption": "Original schematic of one alloy-hardening mechanism. Sizes and positions are illustrative, not measured; real structures and treatment can vary."
       }
+    },
+    {
+      "id": "acid-indicator-colours",
+      "title": "Use the correct indicator colour",
+      "points": [
+        "2.28"
+      ],
+      "terms": [
+        "litmus",
+        "phenolphthalein",
+        "methyl orange",
+        "transition range"
+      ],
+      "paragraphs": [
+        "In the usual school comparisons, litmus is red in sufficiently acidic solution and blue in alkaline solution. Blue litmus changing red is evidence of acidity; red litmus changing blue is evidence of alkalinity. A strip that keeps its starting colour does not on its own establish neutrality.",
+        "Phenolphthalein is colourless in acidic and neutral solution, and pink in suitably alkaline solution. Methyl orange is red in sufficiently acidic solution and yellow on the alkaline side of its transition; at pH 7 it is yellow, not orange. Orange is an intermediate transition colour for methyl orange, rather than a universal signal for neutral solution.",
+        "Indicators change over a range of pH, rather than at a single value for every indicator. Some weakly acidic solutions already give methyl orange its yellow colour; some slightly alkaline solutions still leave phenolphthalein colourless. Use the named indicator and the context, and use a broader-range test when an exact acid/alkali classification is uncertain."
+      ],
+      "example": {
+        "question": "An invented sample leaves phenolphthalein colourless. A student concludes that its pH is exactly 7. Explain why this is not established.",
+        "steps": [
+          "Acidic solution can also leave phenolphthalein colourless.",
+          "The indicator has a transition range and does not measure an exact pH.",
+          "A suitable pH measurement or universal-indicator comparison would give more information."
+        ],
+        "explanation": "One indicator colour can correspond to many pH values."
+      },
+      "commonMistakes": [
+        "Calling methyl orange orange at every neutral point.",
+        "Calling colourless phenolphthalein proof of a neutral solution.",
+        "Confusing the colour of a reagent with a measured pH."
+      ]
+    },
+    {
+      "id": "acid-ph-classification",
+      "title": "Classify a solution on the pH scale",
+      "points": [
+        "2.29"
+      ],
+      "terms": [
+        "pH",
+        "strongly acidic",
+        "weakly alkaline",
+        "neutral"
+      ],
+      "paragraphs": [
+        "For Pearson’s 0–14 school scale, classify pH 0–3 as strongly acidic, 4–6 as weakly acidic, 7 as neutral, 8–10 as weakly alkaline and 11–14 as strongly alkaline. Lower pH means a more acidic aqueous solution; higher pH means a more alkaline one under the stated conditions.",
+        "The words strongly acidic and weakly acidic here classify the solution’s pH. They are not the same as defining a strong or weak acid by how completely it ionizes. Concentration also matters: a very dilute strong acid need not have the same pH as a concentrated sample of that acid.",
+        "Use the measurement provided, rather than assuming a solution is neutral because it looks colourless or contains a salt. The familiar neutral pH of 7 is the school reference near room temperature; the classification task does not require deriving a logarithmic formula."
+      ],
+      "example": {
+        "question": "Classify invented solutions with pH 2, 5, 7, 9 and 12 using the required scale.",
+        "steps": [
+          "2: strongly acidic; 5: weakly acidic.",
+          "7: neutral.",
+          "9: weakly alkaline; 12: strongly alkaline."
+        ],
+        "explanation": "These labels describe the supplied solutions, without identifying the acid or its concentration."
+      },
+      "commonMistakes": [
+        "Using pH 7 as acidic.",
+        "Equating the pH label with complete versus partial acid ionization.",
+        "Assuming every salt solution has pH 7."
+      ]
+    },
+    {
+      "id": "acid-universal-indicator",
+      "title": "Estimate pH with universal indicator",
+      "points": [
+        "2.30"
+      ],
+      "terms": [
+        "universal indicator",
+        "colour chart",
+        "aqueous solution",
+        "approximate pH"
+      ],
+      "paragraphs": [
+        "Universal indicator combines indicator responses to cover a broad pH range. Compare the sample’s resulting colour with the chart for that formulation: commonly red/orange/yellow towards the acidic end, green near neutral, and blue/purple towards the alkaline end. The supplied chart, rather than an invented exact hue, determines the estimate.",
+        "Use a clean separate sample or indicator paper according to the specified method, avoiding contamination between solutions. Compare against a light background and follow the chart’s instructions. Strongly coloured or cloudy samples, ambiguous lighting and a colour between chart bands can limit the estimate.",
+        "Report an approximate pH or a justified interval. Universal indicator is not a precise electronic pH measurement and is generally less suitable than a chosen single indicator for a sharp titration end point. A colour sequence across the whole scale does not mean every colour change happens at neutralization."
+      ],
+      "example": {
+        "question": "A supplied chart places the observed colour between pH 5 and 6. What conclusion is justified?",
+        "steps": [
+          "Estimate pH between about 5 and 6.",
+          "Classify it as weakly acidic on Pearson’s school scale.",
+          "Do not report an unsupported value such as 5.37."
+        ],
+        "explanation": "The precision of the conclusion follows the resolution of the evidence."
+      },
+      "commonMistakes": [
+        "Reporting several decimal places from a broad colour band.",
+        "Ignoring the chart supplied with the indicator.",
+        "Using universal indicator as an exact neutralization meter."
+      ]
+    },
+    {
+      "id": "acid-aqueous-ions",
+      "title": "Acids supply H⁺; alkalis supply OH⁻",
+      "points": [
+        "2.31"
+      ],
+      "terms": [
+        "hydrogen ion",
+        "hydroxide ion",
+        "aqueous",
+        "alkali"
+      ],
+      "paragraphs": [
+        "In the aqueous school description, acids provide hydrogen ions, H⁺, and alkalis provide hydroxide ions, OH⁻. For example, hydrochloric acid supplies H⁺ and Cl⁻, while sodium hydroxide solution contains Na⁺ and OH⁻. The ions move in solution; their charges and names matter.",
+        "H⁺ is shorthand for a hydrogen ion associated with water in an aqueous solution, rather than a free isolated proton travelling through otherwise empty space. This notation is sufficient for the required neutralization equation. The chloride and sodium ions do not disappear merely because H⁺ and OH⁻ react.",
+        "An alkali is a base that dissolves in water to give an alkaline solution. An insoluble metal oxide can be a base without being an alkali. Ammonia can also accept a proton and produce OH⁻ through its reaction with water, even though NH₃ itself has no OH group in its formula."
+      ],
+      "example": {
+        "question": "Identify the ions responsible for acidity and alkalinity in the school equations for hydrochloric acid and sodium hydroxide solution.",
+        "steps": [
+          "Acidity: H⁺ from the aqueous acid.",
+          "Alkalinity: OH⁻ from the alkali.",
+          "Cl⁻ and Na⁺ are other ions, not the reacting acid/alkali pair in the net equation."
+        ],
+        "explanation": "The answer distinguishes reacting ions from spectator ions."
+      },
+      "commonMistakes": [
+        "Writing H⁻ for a hydrogen ion from an acid.",
+        "Confusing hydroxide OH⁻ with an oxygen atom.",
+        "Defining every base as a soluble hydroxide."
+      ]
+    },
+    {
+      "id": "acid-neutralization",
+      "title": "Neutralization uses reacting amounts, not equal volumes",
+      "points": [
+        "2.32"
+      ],
+      "terms": [
+        "neutralization",
+        "spectator ions",
+        "salt",
+        "stoichiometry"
+      ],
+      "paragraphs": [
+        "An alkali can neutralize an acid. For a metal-hydroxide alkali, the net ionic equation is H⁺(aq) + OH⁻(aq) → H₂O(l). One proton and one hydroxide ion combine to give water; total charge is zero on both sides. The other ions can remain in the resulting salt solution.",
+        "For hydrochloric acid and sodium hydroxide, HCl + NaOH → NaCl + H₂O. For sulfuric acid and sodium hydroxide, full neutralization is H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O. The second equation requires two hydroxide amounts per sulfuric-acid amount in this school comparison.",
+        "Equal volumes only give the appropriate reacting ratio when the concentrations and equation support it. Adding too much alkali leaves an alkaline excess; too little can leave acid. The stoichiometric point and an indicator’s visible end point are related but distinct, and the pH after neutralization is not 7 for every possible acid/base pair."
+      ],
+      "example": {
+        "question": "Given equal concentrations and complete neutralization as written, compare the NaOH volumes needed for equal volumes of HCl and H₂SO₄.",
+        "steps": [
+          "HCl:NaOH reacting ratio is 1:1.",
+          "H₂SO₄:NaOH reacting ratio is 1:2.",
+          "The sulfuric-acid sample needs twice the NaOH volume under these stated conditions."
+        ],
+        "explanation": "The conclusion depends on both the balanced equation and the stated concentrations."
+      },
+      "commonMistakes": [
+        "Assuming all neutralizations need equal volumes.",
+        "Removing spectator ions from existence.",
+        "Calling every indicator end point exactly pH 7."
+      ]
+    },
+    {
+      "id": "acid-titration-method",
+      "title": "Set up an acid–alkali titration — Paper 2C",
+      "points": [
+        "2.33C"
+      ],
+      "terms": [
+        "burette",
+        "volumetric pipette",
+        "indicator",
+        "end point"
+      ],
+      "paragraphs": [
+        "A titration measures the volume needed to react with a measured portion of another solution. In the illustrative school setup, use a volumetric pipette with a filler for a fixed alkali portion in a conical flask and a clamped burette for acid. Clean the apparatus; final rinses of the burette and pipette use the solutions they will contain, avoiding dilution by remaining water.",
+        "Rinse the conical flask with distilled water, add the measured alkali and a few drops of a suitable indicator, and place it over a white tile. Fill the burette and its tip, remove the filling funnel and record the initial reading. A starting value of exactly zero is unnecessary: the delivered volume is found from the difference in readings.",
+        "Carry out a rough run to locate the end point. In accurate runs, swirl to mix, wash splashes on the flask walls down with distilled water, and add titrant dropwise near the end point. Stop at the specified lasting colour change. For acid added to NaOH with phenolphthalein, the pink colour just disappears; adding alkali to acid gives the opposite direction.",
+        "Use eye-level readings and the appropriate meniscus for the solution, normally the bottom for a clear aqueous liquid. Use the pipette as calibrated rather than blowing out a remaining drop indiscriminately. These are descriptions for a supervised laboratory method, not a claim that an experiment has been carried out here."
+      ],
+      "example": {
+        "question": "Explain why the conical flask can contain a little distilled water, but a pipette containing residual water must be conditioned with its measured solution.",
+        "steps": [
+          "Water in the flask does not change the transferred reacting amount.",
+          "Residual water in the pipette can dilute the measured solution.",
+          "The two vessels have different measurement roles."
+        ],
+        "explanation": "Concentration and reacting amount are separate; water affects them differently in these steps."
+      },
+      "commonMistakes": [
+        "Rinsing the flask with extra alkali, adding an unmeasured reacting amount.",
+        "Leaving an air bubble in the delivery tip.",
+        "Requiring an initial burette reading of zero."
+      ]
+    },
+    {
+      "id": "acid-titration-results",
+      "title": "Calculate a titre and evaluate repeat results — Paper 2C",
+      "points": [
+        "2.33C"
+      ],
+      "terms": [
+        "titre",
+        "concordant",
+        "rough run",
+        "mean"
+      ],
+      "paragraphs": [
+        "Titre = final burette reading − initial burette reading. The scale normally increases down the burette, so the difference is positive for solution delivered. Record the units and the precision supported by the actual apparatus. Two readings are involved, so a delivery result depends on both readings.",
+        "Repeat accurate titrations to obtain concordant results using the tolerance specified by the task or laboratory method. Do not silently choose a universal tolerance: different teaching methods can specify different acceptable differences. Exclude a rough locating run from the reported accurate mean and explain any discarded anomalous result.",
+        "Original example: 2.15 to 26.35 cm³ gives 24.20 cm³; 1.05 to 25.35 cm³ gives 24.30 cm³. For a supplied tolerance of at most 0.10 cm³, these agree sufficiently, and their mean is 24.25 cm³. A rough result of 26.50 cm³ is not included.",
+        "Close repeats demonstrate repeatability, not guaranteed accuracy. All runs could share an end-point bias, contaminated solution or an incorrectly calibrated instrument. Overshooting the end point increases the delivered titre; interpreting the effect on a calculated concentration then requires the actual equation and calculation setup."
+      ],
+      "example": {
+        "question": "Use the two original accurate titres 24.20 and 24.30 cm³ and a stated tolerance of at most 0.10 cm³. Calculate their difference and mean.",
+        "steps": [
+          "Difference = 0.10 cm³, within the stated inclusive tolerance.",
+          "Mean = (24.20 + 24.30)/2 = 24.25 cm³.",
+          "The rough run is excluded; repeatability is not a proof of absence of bias."
+        ],
+        "explanation": "The example applies a supplied rule, rather than promoting a local tolerance into a Pearson-wide requirement."
+      },
+      "commonMistakes": [
+        "Averaging a rough run with accurate runs.",
+        "Subtracting final from initial.",
+        "Claiming close repeats prove the true value."
+      ]
+    },
+    {
+      "id": "salt-solubility-rules",
+      "title": "Recognize the broadly soluble ionic families",
+      "points": [
+        "2.34"
+      ],
+      "terms": [
+        "solubility",
+        "sodium",
+        "potassium",
+        "ammonium",
+        "nitrate"
+      ],
+      "paragraphs": [
+        "The required general rules treat common sodium, potassium and ammonium compounds as soluble in water, and all nitrates as soluble. These rules help choose aqueous starting reagents: lead(II) nitrate can provide dissolved Pb²⁺, despite many other lead salts being poorly soluble.",
+        "Common chlorides and sulfates are usually soluble, subject to the named exceptions in the following section. Common carbonates and hydroxides are usually insoluble, subject to their own exceptions. Identify both ions before choosing a rule: a compound is not classified solely from whether it contains a metal.",
+        "Solubility describes whether appreciable material can dissolve under the stated conditions; it is not the same as whether a material reacts with water. A sparingly soluble substance has a finite solubility. These school rules make predictions for common compounds, not numerical solubility values at every temperature or concentration."
+      ],
+      "example": {
+        "question": "Predict whether sodium carbonate, ammonium nitrate and lead(II) nitrate can be used as soluble starting compounds under the school rules.",
+        "steps": [
+          "Sodium carbonate: soluble because it is a common sodium compound.",
+          "Ammonium nitrate: soluble by both relevant broad rules.",
+          "Lead(II) nitrate: soluble because it is a nitrate."
+        ],
+        "explanation": "Use the complete ion pair and the named rule, rather than extending the behaviour of one lead compound to all of them."
+      },
+      "commonMistakes": [
+        "Calling all compounds of lead insoluble.",
+        "Assuming all carbonates are insoluble.",
+        "Confusing dissolving with chemical decomposition."
+      ]
+    },
+    {
+      "id": "salt-solubility-exceptions",
+      "title": "Learn the required solubility exceptions",
+      "points": [
+        "2.34"
+      ],
+      "terms": [
+        "silver chloride",
+        "lead(II)",
+        "calcium sulfate",
+        "carbonate",
+        "hydroxide"
+      ],
+      "paragraphs": [
+        "Common chlorides are soluble except silver chloride and lead(II) chloride. Common sulfates are soluble except those of barium, calcium and lead(II), which Pearson places in the insoluble group for these predictions. Do not omit calcium sulfate because another simplified chart uses a different cutoff.",
+        "Common carbonates are insoluble except sodium, potassium and ammonium carbonates. Common hydroxides are insoluble except those of sodium, potassium and calcium; calcium hydroxide is only slightly soluble. Its dissolved portion still produces an alkaline solution, such as clear limewater.",
+        "Use these exact required families to predict a precipitate when appropriate aqueous ions are mixed. “Insoluble” is a school classification, not zero dissolved ions under every condition. Very dilute mixtures may not give a visible precipitate, and the appearance alone is not proof that an isolated solid is pure."
+      ],
+      "example": {
+        "question": "Classify AgCl, MgSO₄, CaSO₄, Na₂CO₃ and Ca(OH)₂ using the required rules.",
+        "steps": [
+          "AgCl: insoluble; MgSO₄: soluble.",
+          "CaSO₄: in the required insoluble sulfate exceptions; Na₂CO₃: soluble.",
+          "Ca(OH)₂: slightly soluble, with its dissolved portion alkaline."
+        ],
+        "explanation": "The answer preserves Pearson’s named exceptions and the calcium-hydroxide qualification."
+      },
+      "commonMistakes": [
+        "Treating calcium hydroxide as freely soluble like sodium hydroxide.",
+        "Forgetting the sulfate exceptions.",
+        "Claiming an insoluble salt has absolutely no dissolved ions."
+      ]
+    },
+    {
+      "id": "acid-proton-transfer",
+      "title": "Follow the proton from donor to acceptor",
+      "points": [
+        "2.35",
+        "2.36"
+      ],
+      "terms": [
+        "proton donor",
+        "proton acceptor",
+        "acid",
+        "base",
+        "ammonium"
+      ],
+      "paragraphs": [
+        "In the proton-transfer description, an acid donates H⁺ and a base accepts H⁺. Follow the transferred proton and identify the reacting species: the acid has lost a proton and the base has gained one. A proton is not an electron, so this description must not be confused with the electron transfer used to define redox.",
+        "For H⁺ + OH⁻ → H₂O, hydroxide accepts the proton. For NH₃ + H⁺ → NH₄⁺, ammonia accepts a proton to form ammonium. The latter balances three starting hydrogen atoms plus one transferred proton to give four, and charge zero plus one to give +1.",
+        "With water, NH₃ + H₂O ⇌ NH₄⁺ + OH⁻: ammonia accepts a proton from water. Here water acts as a proton donor; in another reaction it can be a proton acceptor. Assign roles from the particular reaction, rather than insisting every substance has the same role in every situation."
+      ],
+      "example": {
+        "question": "In NH₃ + H₂O ⇌ NH₄⁺ + OH⁻, name the proton donor and acceptor in the forward direction.",
+        "steps": [
+          "H₂O donates a proton, leaving OH⁻.",
+          "NH₃ accepts it, forming NH₄⁺.",
+          "Water is the acid and ammonia the base for this direction."
+        ],
+        "explanation": "The atom and charge changes reveal the roles directly."
+      },
+      "commonMistakes": [
+        "Saying ammonia donates the proton because it contains hydrogen.",
+        "Replacing proton transfer with electron transfer.",
+        "Calling NH₄⁺ neutral."
+      ]
+    },
+    {
+      "id": "acid-base-types",
+      "title": "Bases include oxides, hydroxides and ammonia",
+      "points": [
+        "2.38"
+      ],
+      "terms": [
+        "metal oxide",
+        "metal hydroxide",
+        "ammonia",
+        "base",
+        "alkali"
+      ],
+      "paragraphs": [
+        "Metal oxides, metal hydroxides and ammonia can act as bases in the required examples. A base neutralizes an acid by accepting protons; it need not contain an OH group in its written formula. Copper(II) oxide is a familiar insoluble basic oxide used for salt preparation.",
+        "An alkali is a base soluble in water that gives an alkaline solution. Sodium hydroxide is an alkali; copper(II) oxide is a base but is not an alkali. Slightly soluble calcium hydroxide gives OH⁻ in the dissolved portion. Aqueous ammonia accepts protons from water and is alkaline, without being a bottle of molecular NH₄OH.",
+        "Avoid extending the example to every oxide: some oxides are acidic or have other acid–base behaviour. In a particular school question, identify the named reactant and use the appropriate reaction. The base/alkali distinction is about solubility and aqueous behaviour, not a ranking of which material is safest or most reactive."
+      ],
+      "example": {
+        "question": "Explain why CuO can prepare a salt from an acid even though it is not an alkali.",
+        "steps": [
+          "CuO acts as a base and reacts with acid.",
+          "It does not dissolve appreciably in water to form an alkali.",
+          "Base is the broader category; alkali is a soluble-base category."
+        ],
+        "explanation": "The two descriptions are compatible, rather than contradictory."
+      },
+      "commonMistakes": [
+        "Calling all bases alkalis.",
+        "Requiring every base formula to contain OH.",
+        "Calling every metal oxide strongly alkaline in water."
+      ]
+    },
+    {
+      "id": "acid-metal-salts",
+      "title": "Acid–metal reactions form the named salt",
+      "points": [
+        "2.37"
+      ],
+      "terms": [
+        "chloride",
+        "sulfate",
+        "hydrogen",
+        "reactive metal"
+      ],
+      "paragraphs": [
+        "Suitable reactive metals with dilute hydrochloric or sulfuric acid can form a salt and hydrogen. Hydrochloric acid gives chlorides; sulfuric acid gives sulfates. For example, Zn + 2HCl → ZnCl₂ + H₂ and Mg + H₂SO₄ → MgSO₄ + H₂. Match the salt formula to the metal ion’s charge.",
+        "Bubbles suggest a gas but do not identify it alone. The standard supervised hydrogen test gives a squeaky pop with a lighted splint. A metal below hydrogen, such as copper, does not give the same hydrogen-producing reaction with these dilute non-oxidizing acids under the usual conditions.",
+        "Pearson explicitly excludes nitric-acid reactions with metals from this requirement. Do not apply the salt + hydrogen pattern to them. Reaction rate, surface coating and insoluble salt layers can also affect observations; the separately taught 2.21 practical examines the named Mg/Zn/Fe dilute-acid comparisons."
+      ],
+      "example": {
+        "question": "Give the salt and gas in the illustrated reaction of magnesium with dilute sulfuric acid, and state whether the same rule should be applied to copper or to nitric-acid metal reactions.",
+        "steps": [
+          "Salt: magnesium sulfate; gas: hydrogen.",
+          "Copper does not follow this hydrogen-producing pattern with the named dilute acids.",
+          "Nitric-acid metal reactions are excluded from this point."
+        ],
+        "explanation": "The general pattern has stated reactants and boundaries."
+      },
+      "commonMistakes": [
+        "Naming a chloride when the acid is sulfuric.",
+        "Extending hydrogen formation to every metal and acid.",
+        "Using bubbles alone as complete gas identification."
+      ]
+    },
+    {
+      "id": "acid-base-salts",
+      "title": "Acids react with basic oxides, hydroxides and ammonia",
+      "points": [
+        "2.37",
+        "2.38"
+      ],
+      "terms": [
+        "nitrate",
+        "oxide",
+        "hydroxide",
+        "ammonium salt"
+      ],
+      "paragraphs": [
+        "A suitable metal oxide or metal hydroxide with acid produces a salt and water. Examples are CuO + 2HCl → CuCl₂ + H₂O, CuO + H₂SO₄ → CuSO₄ + H₂O and CuO + 2HNO₃ → Cu(NO₃)₂ + H₂O. The acid supplies chloride, sulfate or nitrate; Cu²⁺ determines how many anions are needed.",
+        "For hydroxides, match the amount of H⁺ to the OH groups: Mg(OH)₂ + 2HCl → MgCl₂ + 2H₂O. Brackets in Mg(OH)₂ represent two complete hydroxide groups, rather than changing the formula of water to balance an equation.",
+        "Ammonia with acid can form an ammonium salt without water as an additional product in the overall equation: NH₃ + HCl → NH₄Cl. This is proton acceptance by ammonia. Do not add water automatically to every acid–base equation or treat ammonia as a metal."
+      ],
+      "example": {
+        "question": "Write a balanced equation for copper(II) oxide with nitric acid. Explain why two nitrates occur in the salt.",
+        "steps": [
+          "CuO + 2HNO₃ → Cu(NO₃)₂ + H₂O.",
+          "Cu²⁺ needs two NO₃⁻ ions for electrical neutrality.",
+          "The equation balances Cu1, N2, H2 and O7 on each side."
+        ],
+        "explanation": "Charge determines the salt formula; coefficients then conserve atoms."
+      },
+      "commonMistakes": [
+        "Writing CuNO₃ for copper(II) nitrate.",
+        "Changing compound subscripts to balance.",
+        "Adding water as a compulsory product of ammonia with HCl."
+      ]
+    },
+    {
+      "id": "acid-carbonate-salts",
+      "title": "Carbonates give a salt, water and carbon dioxide",
+      "points": [
+        "2.37"
+      ],
+      "terms": [
+        "carbonate",
+        "carbon dioxide",
+        "limewater",
+        "nitrate"
+      ],
+      "paragraphs": [
+        "A suitable metal carbonate with acid forms a salt, water and carbon dioxide. An original illustration is CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂. Replacing the acid with nitric acid gives Ca(NO₃)₂ as the salt, while sulfuric acid gives a sulfate subject to solubility and reaction-layer effects.",
+        "Effervescence is an observation of gas release. Carbon dioxide can be identified by its clouding of limewater in the usual test, rather than by the absence of a hydrogen pop. Calcium carbonate with sulfuric acid can become coated by poorly soluble calcium sulfate, slowing reaction; a stopped reaction does not automatically mean all the starting carbonate was used.",
+        "Choose the acid to supply the desired salt anion and check whether that salt is soluble. For a soluble-salt preparation from an insoluble carbonate, a suitable excess of the solid can consume the acid before filtration, but the product’s solubility still decides the isolation method."
+      ],
+      "example": {
+        "question": "Predict the salt and other products when magnesium carbonate reacts with dilute nitric acid, and balance the equation.",
+        "steps": [
+          "MgCO₃ + 2HNO₃ → Mg(NO₃)₂ + H₂O + CO₂.",
+          "The salt is magnesium nitrate.",
+          "The other products are water and carbon dioxide; atoms balance on both sides."
+        ],
+        "explanation": "The pattern connects the carbonate reaction to the chosen acid and ion charges."
+      },
+      "commonMistakes": [
+        "Calling the gas hydrogen.",
+        "Omitting water from the carbonate equation.",
+        "Assuming every carbonate–acid reaction continues until every solid disappears."
+      ]
+    },
+    {
+      "id": "salt-insoluble-reactant",
+      "title": "Prepare a soluble salt from an insoluble base",
+      "points": [
+        "2.39"
+      ],
+      "terms": [
+        "excess solid",
+        "filtrate",
+        "crystallization",
+        "soluble salt"
+      ],
+      "paragraphs": [
+        "For a suitable soluble salt, select an acid and an insoluble reactant that form the desired ions. In the illustrative copper sulfate method, gently warm dilute sulfuric acid using the supervised method, add small portions of copper(II) oxide while stirring, and allow time for each portion to react. Continued solid remaining after adequate mixing indicates an excess under these conditions.",
+        "The excess insoluble base consumes the acid and can then be removed by filtration. The residue contains unreacted solid; the filtrate contains the dissolved salt. Filtration does not remove a dissolved acid or dissolved contaminant, so simply filtering an acid-rich mixture does not make it pure.",
+        "Partially evaporate water to concentrate the filtrate, then cool a hot saturated solution to form crystals. Separate the crystals from the remaining solution and dry their surface appropriately. Do not evaporate all the solution to dryness as a universal purification method: dissolved impurities can remain with the product, and hydrated crystals can lose water if overheated."
+      ],
+      "example": {
+        "question": "Explain why excess CuO is useful but excess sulfuric acid is difficult to remove by the same filtration step.",
+        "steps": [
+          "Unreacted CuO is insoluble and can be trapped by the filter.",
+          "Sulfuric acid remains dissolved and passes through with the solution.",
+          "The correct excess improves consumption of acid without relying on filtration to remove dissolved species."
+        ],
+        "explanation": "The excess must be compatible with the separation method."
+      },
+      "commonMistakes": [
+        "Collecting the first residue as the soluble salt.",
+        "Saying filtration removes dissolved acid.",
+        "Boiling every salt solution completely dry to obtain pure crystals."
+      ]
+    },
+    {
+      "id": "salt-copper-hydrated",
+      "title": "Pure, dry hydrated copper(II) sulfate crystals",
+      "points": [
+        "2.42"
+      ],
+      "terms": [
+        "CuO",
+        "hydrated crystal",
+        "water of crystallization",
+        "surface water"
+      ],
+      "paragraphs": [
+        "The required practical starts with copper(II) oxide and dilute sulfuric acid: CuO + H₂SO₄ → CuSO₄ + H₂O. A black excess solid is filtered away; the blue filtrate is concentrated and cooled to crystallize hydrated copper(II) sulfate. Warming helps the slow initial reaction, but boiling acid is not needed and can cause splashing.",
+        "Hydrated crystals contain water as part of their crystal structure. In the familiar pentahydrate, CuSO₄·5H₂O, this is different from liquid water clinging to a crystal. A pure, dry hydrated sample has surface liquid removed while retaining the intended water of crystallization.",
+        "Separate formed crystals from the mother liquor and blot them with suitable paper or use an appropriate gentle drying method. Direct strong heating can dehydrate the product. Leaving all the mother liquor to evaporate can also deposit soluble impurities that crystallization and separation were meant to leave behind.",
+        "Use eye protection and the teacher’s approved handling, heating and waste method. A colour and a dry-looking surface do not alone prove purity or hydration. This site provides an explanation of the laboratory stages; no actual preparation or measured yield is claimed."
+      ],
+      "example": {
+        "question": "An invented hydrated-crystal sample has 12.0 g crystals plus 0.8 g clinging solution. Explain why weighing it immediately overstates the isolated crystal mass, and why strong heating is not a suitable correction.",
+        "steps": [
+          "Immediate mass is 12.8 g, including unwanted clinging solution.",
+          "Removing surface liquid is needed for a meaningful crystal mass.",
+          "Strong heating may remove water of crystallization and change the intended product."
+        ],
+        "explanation": "Dryness of the surface and absence of structural water are different conditions."
+      },
+      "commonMistakes": [
+        "Calling dry hydrated crystals water-free.",
+        "Treating a blue solution as already isolated crystals.",
+        "Claiming the invented mass is a performed experiment."
+      ]
+    },
+    {
+      "id": "salt-acid-alkali-preparation",
+      "title": "Use titration for a soluble acid–alkali salt — Paper 2C",
+      "points": [
+        "2.40C"
+      ],
+      "terms": [
+        "neutralizing volumes",
+        "indicator contamination",
+        "crystallization",
+        "soluble reactants"
+      ],
+      "paragraphs": [
+        "When both acid and alkali are soluble, excess reagent cannot be removed by ordinary filtration. Use a suitable titration to find the reacting volumes for a measured portion, then repeat using those volumes without indicator to make an uncontaminated salt solution. Suitable starting solutions and a clean setup remain necessary.",
+        "For sodium chloride, the model reaction is HCl + NaOH → NaCl + H₂O. Indicator helps locate the preliminary end point, but leaving it in the final preparation adds a soluble impurity. A titre measured with an acid or alkali at one concentration cannot simply be reused after changing its concentration.",
+        "Concentrate the indicator-free solution by controlled evaporation, allow crystallization by the method suitable for that salt, separate the crystals and dry them appropriately. Sodium chloride has relatively little change in solubility with temperature, so evaporation contributes strongly to its crystallization; cooling is not equally effective for every soluble salt.",
+        "The preliminary titration volume should come from reliable repeat results. Avoid calling the final solution pure just because its pH is neutral: unreacted impurities can remain, and the end point has measurement uncertainty."
+      ],
+      "example": {
+        "question": "Why is “add excess NaOH and filter it off” unsuitable for preparing NaCl from HCl and NaOH?",
+        "steps": [
+          "NaOH is soluble, so ordinary filtration will not remove the dissolved excess.",
+          "Find the reacting volumes by titration.",
+          "Repeat without indicator before suitable crystallization and drying."
+        ],
+        "explanation": "The method is selected from reactant solubility and product isolation."
+      },
+      "commonMistakes": [
+        "Treating a soluble excess as filterable solid.",
+        "Keeping indicator in the intended pure product solution.",
+        "Applying old titre volumes to new concentrations."
+      ]
+    },
+    {
+      "id": "salt-precipitation",
+      "title": "Collect an insoluble salt by precipitation — Paper 2C",
+      "points": [
+        "2.41C"
+      ],
+      "terms": [
+        "precipitate",
+        "soluble reactants",
+        "residue",
+        "washing"
+      ],
+      "paragraphs": [
+        "Choose two soluble compounds whose aqueous ions can form the desired insoluble salt. Mixing the solutions produces a precipitate when the ionic concentrations are sufficient. The other ions generally remain in the solution; the appearance of cloudiness means solid has formed, not that every species has been removed.",
+        "For the school isolation method, mix suitable solutions, filter to collect the precipitate, wash the solid with small portions of distilled water to remove soluble material adhering to it, and dry it appropriately. Here the wanted product is the filter residue, unlike the first filtration in a soluble-salt preparation.",
+        "Washing trades impurity removal against possible product loss because solubility is finite. Excessive washing, incomplete precipitation, fine particles passing the filter and loss during transfer can reduce recovery. Evaporating the whole unfiltered mixture would deposit soluble by-products as well as the wanted solid."
+      ],
+      "example": {
+        "question": "An insoluble product forms alongside dissolved sodium nitrate. Explain how filtration and washing have different purposes.",
+        "steps": [
+          "Filtration separates the solid from most of the solution.",
+          "Washing removes soluble material in the liquid clinging to the solid.",
+          "Drying removes surface liquid; it does not replace either separation step."
+        ],
+        "explanation": "The three stages address different parts of product isolation."
+      },
+      "commonMistakes": [
+        "Calling the filtrate the wanted insoluble salt.",
+        "Evaporating all the mixture to obtain a pure precipitate.",
+        "Assuming washing cannot lose any product."
+      ]
+    },
+    {
+      "id": "salt-lead-sulfate",
+      "title": "Prepare lead(II) sulfate by precipitation — Paper 2C",
+      "points": [
+        "2.43C"
+      ],
+      "terms": [
+        "lead(II) nitrate",
+        "sodium sulfate",
+        "PbSO₄",
+        "toxic lead salts"
+      ],
+      "paragraphs": [
+        "For the required school example, lead(II) nitrate solution supplies Pb²⁺ and sodium sulfate solution supplies SO₄²⁻. Their mixture forms white lead(II) sulfate under suitable conditions: Pb(NO₃)₂(aq) + Na₂SO₄(aq) → PbSO₄(s) + 2NaNO₃(aq). Both starting compounds are soluble under the required rules; PbSO₄ is an insoluble sulfate exception.",
+        "The net ionic equation is Pb²⁺(aq) + SO₄²⁻(aq) → PbSO₄(s), with zero total charge on each side. Nitrate and sodium are spectator ions. Collect the precipitate by filtration, wash with small portions of distilled water and dry appropriately to obtain the intended pure, dry sample.",
+        "Lead compounds are toxic: this required practical belongs in a supervised laboratory using approved handling and separate lead-waste collection, not disposal to a sink. This is a method explanation, not evidence that a sample has been prepared. White appearance alone cannot establish identity or purity; reagent identity and the separation steps are essential."
+      ],
+      "example": {
+        "question": "Why are lead(II) nitrate and sodium sulfate appropriate soluble starting compounds, while adding solid lead(II) sulfate itself is not a precipitation preparation?",
+        "steps": [
+          "The soluble reagents provide the two needed ions in solution.",
+          "Those ions form new PbSO₄ solid when mixed.",
+          "Starting with the product does not demonstrate its formation from soluble reactants."
+        ],
+        "explanation": "The method explains both the ion sources and the reaction producing the solid."
+      },
+      "commonMistakes": [
+        "Using sulfate and sulfide as interchangeable names.",
+        "Writing Pb₂SO₄ instead of charge-neutral PbSO₄.",
+        "Treating a white precipitate as proof of purity."
+      ]
+    },
+    {
+      "id": "salt-method-choice",
+      "title": "Choose the separation method from solubility",
+      "points": [
+        "2.39",
+        "2.40C",
+        "2.41C"
+      ],
+      "terms": [
+        "method choice",
+        "residue",
+        "filtrate",
+        "reactant solubility"
+      ],
+      "paragraphs": [
+        "Ask first whether the target salt is soluble. For a soluble product and a suitable insoluble base, excess base can be filtered out and crystals obtained from the filtrate. For a soluble product from an acid and alkali, measure the reacting amounts by titration because a soluble excess cannot be filtered out.",
+        "For an insoluble product made from two soluble reagents, precipitation is followed by filtration, washing and drying of the residue. “Filter the mixture” is incomplete unless the answer says what is being removed and which fraction contains the wanted product.",
+        "This comparison connects requirements that have different paper applicability: the insoluble-base soluble-salt method is on both papers, while the acid–alkali and two-solution precipitation methods are Paper 2C-only. Use the named reactants and the exact required solubility rules before choosing a route."
+      ],
+      "example": {
+        "question": "Identify the fraction to keep after the first filtration for CuSO₄ made using excess CuO, and for PbSO₄ made by mixing soluble reagents.",
+        "steps": [
+          "CuSO₄ preparation: keep the filtrate; excess CuO is the residue.",
+          "PbSO₄ preparation: keep the residue; soluble by-products are in the filtrate.",
+          "The desired product’s solubility explains the difference."
+        ],
+        "explanation": "The same apparatus can serve opposite product-collection roles."
+      },
+      "commonMistakes": [
+        "Memorizing keep the residue for every filtration.",
+        "Ignoring whether excess reagent is soluble.",
+        "Treating all compared methods as both-paper requirements."
+      ],
+      "diagram": {
+        "src": "/diagrams/chemistry-salt-methods.svg",
+        "alt": "Original comparison of three salt-preparation routes: soluble salt from insoluble base keeps the filtrate; acid and alkali use measured volumes; precipitation keeps the residue.",
+        "caption": "Choose the route from reactant and product solubility. This is a method comparison, not a record of performed experiments."
+      }
+    },
+    {
+      "id": "salt-purity-recovery",
+      "title": "Distinguish purity, dryness and recovery",
+      "points": [
+        "2.39",
+        "2.42"
+      ],
+      "terms": [
+        "purity",
+        "recovery",
+        "mother liquor",
+        "contamination"
+      ],
+      "paragraphs": [
+        "Purity describes the absence of unwanted substances; dryness concerns surface liquid; recovery is how much desired product is isolated compared with an appropriate expected amount. A sample can look dry yet contain solid impurities, or be chemically appropriate but still wet.",
+        "Some salt remains dissolved in the mother liquor after crystallization. Cooling longer does not guarantee that all dissolved salt crystallizes, and transferring or filtering can lose material. More aggressive evaporation can increase the recovered mass while also bringing soluble impurities into the crystals, so maximum mass is not automatically maximum purity.",
+        "Evaluate a method using evidence: identify a likely contaminant, show how a separation removes it, and explain any loss or uncertainty. Compare recovery on the same hydration basis for a hydrated product. No numerical purity, yield or practical success is certified by the descriptions here."
+      ],
+      "example": {
+        "question": "A proposed method evaporates all the mother liquor because it gives a larger mass. Why does that not establish a better purified product?",
+        "steps": [
+          "The extra solid can include previously dissolved impurities.",
+          "Greater measured mass can include unwanted species or liquid.",
+          "Purity and useful recovery need separate evidence."
+        ],
+        "explanation": "An isolation method has more than one success criterion."
+      },
+      "commonMistakes": [
+        "Equating mass with purity.",
+        "Calling a dry surface proof of correct hydration.",
+        "Assuming no desired salt remains dissolved."
+      ]
     }
   ]
 }

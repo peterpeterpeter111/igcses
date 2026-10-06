@@ -1,3 +1,11 @@
+# Latest phase — Acids, titration and salts, 6 October 2026
+
+Read `research/checkpoints/2026-10-06-ACIDS-SALTS.md` first. Preserve 3a18814 and descendants. GitHub 4a100b7 exactly mirrors the metal-extraction tree; older pending sync resolved. Twenty-one original partial lessons and one method diagram cover own 2.28–2.43C. Only 2.33C/2.40C/2.41C/2.43C are 2C-only; the other twelve points apply to both papers. Inorganic has 63 sections.
+
+Totals: 691 sections / 27 partial notes / 36 routes; 631 reviewed identities / 615 partial audits / 1,956 local requirements / 925 partial links. Chemistry: 112 sections / 103 identities and audits / 345 requirements. All 143 tests, types, lint, 14 research checks, content/evidence, isolated D1, final build and 91-file public scan pass. Desktop diagram and exact component rows verified; narrow/hosted checks pending. Seven obtained pairs; zero fully processed papers, complete points/chapters or active templates. Seven experimental offline families; live registry empty.
+
+Commit/sync non-force and verify exact tree, then continue own 2.44–2.50 chemical tests, remaining curriculum, paper audits and independent calibration. Preserve quality/UI/history/counts; AI last. No reset, Sites version, deployment or public URL. Latest user requests faster useful progress until weekly exhaustion; historical 5% gate overridden for this run. Last 86% five-hour / 98% weekly remaining. Earlier entries historical.
+
 # Latest phase — Metal extraction, uses and alloys, 6 October 2026
 
 Read `research/checkpoints/2026-10-06-METAL-EXTRACTION.md` first. Preserve 03306c4 and all descendants. GitHub 24900b3 exactly mirrors the acid-practical source; older pending sync resolved. Eight new partial lessons and one original diagram cover 2.22C–2.27C, all Paper 2C-only. Inorganic has 42 sections.
