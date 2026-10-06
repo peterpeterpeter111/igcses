@@ -6,7 +6,8 @@
   "humanReviewed": false,
   "sourceId": "4CH1-spec",
   "sourcePages": [
-    22
+    22,
+    23
   ],
   "prerequisites": [
     "Balanced equations conserve atoms.",
@@ -21,7 +22,12 @@
     "Use transition data to make qualified physical-property predictions.",
     "Predict halogen displacement outcomes and check ionic equations.",
     "Interpret matched product observations without confusing dilution with reaction.",
-    "Explain the halogen trend using electronic configurations for Paper 2C."
+    "Explain the halogen trend using electronic configurations for Paper 2C.",
+    "Recall the approximate composition of dry air.",
+    "Explain and calculate oxygen removal using the whole gas sample.",
+    "Evaluate a practical plan and distinguish repeatability from accuracy.",
+    "Describe combustion and carbonate decomposition without confusing products.",
+    "Explain how carbon dioxide changes outgoing energy transfer."
   ],
   "supportingSources": [
     {
@@ -93,6 +99,57 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/6-5-periodic-variations-in-element-properties",
       "sectionIds": [
         "halogen-electron-reactivity"
+      ]
+    },
+    {
+      "title": "NOAA Jetstream: dry-air composition",
+      "url": "https://www.noaa.gov/jetstream/atmosphere",
+      "sectionIds": [
+        "air-composition"
+      ]
+    },
+    {
+      "title": "Pearson 2017 core practical guide: oxygen experiment and answer guidance",
+      "url": "https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Biology/2017/teaching-and-learning-materials/biology-chemistry-physics-core-practical-guide.pdf#page=93",
+      "sectionIds": [
+        "oxygen-air-removal",
+        "oxygen-volume-calculation",
+        "oxygen-measurement-practical"
+      ]
+    },
+    {
+      "title": "Purdue University: magnesium combustion",
+      "url": "https://chemed.chem.purdue.edu/demos/demosheets/10.2.html",
+      "sectionIds": [
+        "magnesium-combustion"
+      ]
+    },
+    {
+      "title": "UC San Diego: hydrogen combustion",
+      "url": "https://chemistry-biochemistry.ucsd.edu/undergraduate/teaching-labs/demos/demo1",
+      "sectionIds": [
+        "hydrogen-combustion"
+      ]
+    },
+    {
+      "title": "Thomas Aquinas College laboratory manual: sulfur oxide",
+      "url": "https://www.thomasaquinas.edu/sites/default/files/media/file/sophomore-lab-manual-2017.pdf#page=52",
+      "sectionIds": [
+        "sulfur-combustion"
+      ]
+    },
+    {
+      "title": "Sigma-Aldrich: basic copper carbonate formula and decomposition",
+      "url": "https://www.sigmaaldrich.com/DE/en/product/sigald/207896",
+      "sectionIds": [
+        "carbonate-decomposition"
+      ]
+    },
+    {
+      "title": "NASA: radiation budget and greenhouse absorption",
+      "url": "https://science.nasa.gov/ems/13_radiationbudget/",
+      "sectionIds": [
+        "carbon-dioxide-greenhouse"
       ]
     }
   ],
@@ -433,6 +490,329 @@
         "Claiming nuclear charge decreases from chlorine to bromine.",
         "Saying bromine has more than seven outer electrons.",
         "Using easier electron loss to explain lower halogen reactivity."
+      ]
+    },
+    {
+      "id": "air-composition",
+      "title": "The four main gases in dry air",
+      "points": [
+        "2.9"
+      ],
+      "terms": [
+        "dry air",
+        "percentage by volume",
+        "nitrogen",
+        "oxygen",
+        "argon",
+        "carbon dioxide"
+      ],
+      "paragraphs": [
+        "Dry air means the mixture with water vapour excluded. Approximate percentages by volume are nitrogen 78%, oxygen 21%, argon 0.9% and carbon dioxide 0.04%. These are rounded teaching values, not a measurement of today’s atmosphere. Carbon dioxide varies over time and place; other trace gases are also present.",
+        "Percentage by volume compares the volume of a component gas with the total mixture volume at the same temperature and pressure. In a hypothetical 1,000 cm³ dry-air sample, about 210 cm³ corresponds to oxygen. Do not interpret 21% as 21 g in every 100 g of air: mass percentage is a different quantity.",
+        "Water vapour varies with conditions, so moist-air percentages differ from dry-air percentages. The rounded values need not sum to exactly 100%; rounding and trace components account for the remaining difference. Argon is the third most abundant gas in dry air, ahead of carbon dioxide."
+      ],
+      "example": {
+        "question": "Estimate the oxygen volume in 1,000 cm³ of dry air. Which named gas has a larger proportion: argon or carbon dioxide?",
+        "steps": [
+          "Use 21/100 × 1,000 = 210 cm³ oxygen, approximately.",
+          "Compare about 0.9% argon with about 0.04% carbon dioxide: argon is larger."
+        ],
+        "explanation": "All volumes refer to the same conditions; the example is invented and uses rounded composition values."
+      },
+      "commonMistakes": [
+        "Including water vapour in a table labelled dry air.",
+        "Using 21% oxygen as a mass percentage.",
+        "Calling carbon dioxide the third most abundant dry-air gas."
+      ]
+    },
+    {
+      "id": "oxygen-air-removal",
+      "title": "Removing oxygen with iron",
+      "points": [
+        "2.10"
+      ],
+      "terms": [
+        "rusting",
+        "oxygen removal",
+        "excess iron",
+        "remaining gas"
+      ],
+      "paragraphs": [
+        "A volume experiment can estimate oxygen by selectively consuming it from a measured air sample. Moist iron reacts with oxygen to form solid corrosion products. With enough iron, enough time and an airtight apparatus, the decrease in gas volume estimates the oxygen removed. Water is needed for rusting; dry iron is a poor choice for this method.",
+        "In a water-supported tube demonstration, water enters the space vacated as oxygen is removed. The remaining gas is smaller in volume. It is mostly nitrogen but also contains argon and other gases, so it is not pure nitrogen. Removing oxygen does not turn nitrogen into water or make every gas disappear.",
+        "Excess iron means enough is available to consume the oxygen; it does not mean all the iron must react. A stable final gas volume is evidence of an endpoint, provided the apparatus is airtight and conditions are comparable. These notes explain a school investigation; no experiment has been performed for the site."
+      ],
+      "example": {
+        "question": "A hypothetical sealed sample falls from 100 cm³ to 80 cm³ after complete oxygen removal. Is the remaining 80 cm³ pure nitrogen?",
+        "steps": [
+          "The decrease is 20 cm³, so this sample suggests approximately 20% oxygen.",
+          "Reject pure nitrogen: argon and other unreacted gases remain."
+        ],
+        "explanation": "An approximate experimental estimate need not equal the rounded reference value exactly."
+      },
+      "commonMistakes": [
+        "Expecting the whole iron sample to disappear.",
+        "Calling the remaining gas pure nitrogen.",
+        "Treating dry iron or a leaking apparatus as a reliable oxygen-removal method."
+      ]
+    },
+    {
+      "id": "oxygen-air-nonmetal",
+      "title": "The same volume principle with a non-metal",
+      "points": [
+        "2.10"
+      ],
+      "terms": [
+        "phosphorus",
+        "oxygen consumption",
+        "cooling",
+        "non-metal oxide"
+      ],
+      "paragraphs": [
+        "A suitable non-metal can also remove oxygen from air by reaction. In a teacher-controlled phosphorus demonstration, oxygen is consumed to form phosphorus oxide. Once products have been removed from the measured gas phase and the apparatus has cooled, the gas-volume decrease can be compared with the initial air volume.",
+        "For phosphorus represented as P₄, a model equation is P₄ + 5O₂ → P₄O₁₀. It conserves four phosphorus atoms and ten oxygen atoms on each side. P₂O₅ is an empirical formula for the same atomic ratio; it must not simply replace P₄O₁₀ in this equation without rebalancing.",
+        "Combustion heats gas and can introduce temporary changes in volume or pressure. Measuring while hot confuses thermal expansion with gas consumption. Use the same comparison principle as the iron method, and state excess reactant, complete oxygen removal and comparable temperature/pressure assumptions. Phosphorus handling belongs to a controlled school demonstration, not a home investigation."
+      ],
+      "example": {
+        "question": "Why should a teacher’s phosphorus demonstration cool before the final air volume is compared with the initial volume?",
+        "steps": [
+          "Reaction heat changes gas volume even without changing the amount of gas.",
+          "Cooling to the initial temperature makes the decrease a better measure of oxygen consumed, with comparable pressure."
+        ],
+        "explanation": "A hot final reading would mix a chemical change with a physical expansion effect."
+      },
+      "commonMistakes": [
+        "Calling a hot gas-volume change a direct oxygen percentage.",
+        "Replacing P₄O₁₀ with P₂O₅ without rebalancing.",
+        "Assuming that any non-metal removes only oxygen under every condition."
+      ]
+    },
+    {
+      "id": "oxygen-volume-calculation",
+      "title": "Use the whole initial air volume",
+      "points": [
+        "2.10",
+        "2.14"
+      ],
+      "terms": [
+        "dead space",
+        "gas syringe",
+        "percentage calculation",
+        "volume change"
+      ],
+      "paragraphs": [
+        "Use oxygen percentage ≈ (initial total air volume − final total gas volume) ÷ initial total air volume × 100. The initial total includes all connected gas spaces, not only a syringe reading. Solid and liquid volumes are not additional air volumes; use the actual gas-containing space given in the question.",
+        "Original hypothetical example: a flask holds 60 cm³ of air, a connecting tube 5 cm³, and a syringe initially 35 cm³. Initial air volume is 60 + 5 + 35 = 100 cm³. After complete removal and return to the same temperature and pressure, the syringe reads 14 cm³. Final total is 60 + 5 + 14 = 79 cm³; the decrease is 21 cm³ and the estimate is 21%.",
+        "The fixed flask and tube volumes cancel in the subtraction but still belong in the denominator. Dividing 21 by the initial syringe reading 35 would give 60%, an incorrect estimate for the whole connected sample. This is a model exercise, not measured data or a copied past-paper task."
+      ],
+      "example": {
+        "question": "A hypothetical apparatus has fixed gas spaces totalling 90 cm³. Its syringe changes from 30 to 6 cm³ at comparable conditions. Calculate the oxygen percentage.",
+        "steps": [
+          "Initial total = 90 + 30 = 120 cm³.",
+          "Gas removed = 30 − 6 = 24 cm³.",
+          "Percentage = 24/120 × 100 = 20%."
+        ],
+        "explanation": "The syringe difference gives the removed volume, but the original total air volume gives the denominator."
+      },
+      "commonMistakes": [
+        "Dividing only by the syringe volume.",
+        "Adding solid iron or liquid water volume as air.",
+        "Using final volume instead of initial volume in the denominator."
+      ],
+      "diagram": {
+        "src": "/diagrams/chemistry-oxygen-volume.svg",
+        "alt": "Invented connected-air example: fixed gas spaces 65 cubic centimetres; syringe 35 initially and 14 finally; total changes 100 to 79, giving 21 percent.",
+        "caption": "Original calculation schematic, not measured data or an apparatus construction plan. Fixed gas spaces remain in the initial denominator."
+      }
+    },
+    {
+      "id": "oxygen-measurement-practical",
+      "title": "Reviewing an oxygen-measurement plan",
+      "points": [
+        "2.14"
+      ],
+      "terms": [
+        "endpoint",
+        "controlled conditions",
+        "measurement uncertainty",
+        "repeat"
+      ],
+      "paragraphs": [
+        "A school plan should specify a known initial gas volume, excess moist iron, an airtight connection and enough time for the gas volume to stop changing. Record readings with units and compare initial and final values at matching temperature and pressure. Repeat runs with fresh samples to assess consistency; do not invent results to force a value of 21%.",
+        "Read tube or syringe scales consistently and avoid parallax. A gas-column length is proportional to volume only where the tube’s cross-sectional area is constant. A rounded tube end or changing diameter can invalidate a simple length ratio; use calibrated gas volumes when that geometry matters. Equal water levels, where applicable, help match the gas pressure to outside pressure.",
+        "Insufficient iron or stopping before completion removes too little oxygen and tends to underestimate the percentage. A warmer final gas reading, at the same pressure, is larger and can also reduce the apparent decrease. Being warmer throughout is different: if both readings share the same conditions, temperature alone need not bias the fraction. Leak effects depend on when and how gas enters or escapes, so their direction cannot be asserted without details.",
+        "Wet-air composition, gas dissolution, changing conditions and limited scale resolution make this an approximate measurement. Report repeated estimates and their spread rather than claiming that agreement proves every systematic error is absent. This planning and error analysis does not certify practical competence or a completed investigation."
+      ],
+      "example": {
+        "question": "Two readings under matched conditions imply 19.8% and 20.2% oxygen. Calculate their mean, and explain why agreement is not proof that the apparatus was perfect.",
+        "steps": [
+          "Mean = (19.8 + 20.2)/2 = 20.0%.",
+          "Both runs may share a systematic bias, such as incomplete oxygen removal.",
+          "The close values show consistency, not guaranteed accuracy."
+        ],
+        "explanation": "The two percentages are invented for the calculation; no physical trial is claimed."
+      },
+      "commonMistakes": [
+        "Using a length ratio for a non-uniform tube without justification.",
+        "Calling repeatability the same as accuracy.",
+        "Claiming every leak causes an overestimate."
+      ]
+    },
+    {
+      "id": "magnesium-combustion",
+      "title": "Magnesium burning in oxygen",
+      "points": [
+        "2.11"
+      ],
+      "terms": [
+        "combustion",
+        "magnesium oxide",
+        "bright white light"
+      ],
+      "paragraphs": [
+        "Combustion is a reaction with oxygen that releases energy. Magnesium gives a bright white light and forms white magnesium oxide in the intended oxygen reaction. The balanced equation is 2Mg + O₂ → 2MgO: two magnesium atoms and two oxygen atoms occur on each side.",
+        "The oxide contains oxygen from the gas as well as magnesium from the metal, so the mass of the oxide exceeds the mass of the magnesium that forms it when product is retained. Brightness is an observation; formation of an oxide is a chemical interpretation supported by the reaction.",
+        "Burning in air can involve nitrogen as well as oxygen, so an actual air experiment need not produce only pure MgO. Describe the conditions stated in the question. The bright light should not be stared at in a supervised demonstration; these notes do not give an ignition procedure."
+      ],
+      "example": {
+        "question": "Balance Mg + O₂ → MgO and explain why the retained oxide is heavier than the magnesium used to form it.",
+        "steps": [
+          "Write 2Mg + O₂ → 2MgO.",
+          "Oxygen atoms are added from the gas; both elements contribute to the product mass."
+        ],
+        "explanation": "Mass is conserved when gas reactants are included; it is not created by the light."
+      },
+      "commonMistakes": [
+        "Writing MgO₂ to balance oxygen.",
+        "Ignoring the gas when explaining a mass increase.",
+        "Assuming an air experiment necessarily gives one pure product."
+      ]
+    },
+    {
+      "id": "hydrogen-combustion",
+      "title": "Hydrogen burning: water as the product",
+      "points": [
+        "2.11"
+      ],
+      "terms": [
+        "hydrogen",
+        "water vapour",
+        "condensation"
+      ],
+      "paragraphs": [
+        "Hydrogen burns in oxygen to form water and release energy: 2H₂ + O₂ → 2H₂O. The hot product can be water vapour, which may condense into liquid droplets on cooling. Formation of water is the chemical change; subsequent condensation is a physical change.",
+        "The balanced equation contains four hydrogen atoms and two oxygen atoms on each side. Neither reactant contains carbon, so carbon dioxide is not the product of this reaction. Pure hydrogen combustion is different from burning a carbon-containing fuel.",
+        "A burning hydrogen sample can give a squeaky pop in the familiar small-scale identification test. That observation supports identification under controlled school conditions; it is not a quantitative measurement of reaction energy or evidence that every hydrogen flame looks identical."
+      ],
+      "example": {
+        "question": "A hot hydrogen-combustion product later forms droplets. Name the product and distinguish the two changes.",
+        "steps": [
+          "Product: water, from 2H₂ + O₂ → 2H₂O.",
+          "Combustion forms a new substance and is chemical.",
+          "Cooling water vapour into liquid is condensation and is physical."
+        ],
+        "explanation": "No carbon dioxide can be assigned to this equation without an additional carbon source."
+      },
+      "commonMistakes": [
+        "Calling condensation the chemical reaction.",
+        "Writing H₂ + O₂ → H₂O without balancing.",
+        "Predicting carbon dioxide just because a substance burns."
+      ]
+    },
+    {
+      "id": "sulfur-combustion",
+      "title": "Sulfur burning: a gaseous oxide",
+      "points": [
+        "2.11"
+      ],
+      "terms": [
+        "sulfur",
+        "sulfur dioxide",
+        "non-metal oxide"
+      ],
+      "paragraphs": [
+        "Sulfur burns in oxygen to form sulfur dioxide. A school equation written using sulfur atoms is S + O₂ → SO₂. Sulfur and oxygen atoms are conserved. The oxygen is incorporated into a gaseous product, so oxygen consumption does not necessarily mean a simple decrease in total gas volume.",
+        "Sulfur dioxide is an irritating gas. Describe the expected product rather than using direct inhalation or smell as a test. The phase of the product distinguishes this reaction from magnesium, whose intended oxide product is solid.",
+        "Do not infer that every combustion produces carbon dioxide or that all non-metal oxides have identical behaviour. The product formula follows the named reactant and reaction. If a question represents sulfur as S₈ instead, the corresponding balanced equation is S₈ + 8O₂ → 8SO₂."
+      ],
+      "example": {
+        "question": "Compare the intended oxide products when magnesium and sulfur burn in oxygen. Why is sulfur not a straightforward substitute for iron in a gas-volume oxygen-removal experiment?",
+        "steps": [
+          "Magnesium forms solid MgO; sulfur forms gaseous SO₂.",
+          "Sulfur replaces oxygen with another gas unless the product is separately removed.",
+          "A gas-volume decrease alone would not directly measure consumed oxygen under that setup."
+        ],
+        "explanation": "The distinction uses product identity and phase; it is not a claim that all oxygen-removal methods use metals."
+      },
+      "commonMistakes": [
+        "Calling SO₂ carbon dioxide.",
+        "Using smell as a safe identification method.",
+        "Assuming that oxygen consumption always removes gas from the gas phase."
+      ]
+    },
+    {
+      "id": "carbonate-decomposition",
+      "title": "Carbon dioxide from thermal decomposition",
+      "points": [
+        "2.12"
+      ],
+      "terms": [
+        "thermal decomposition",
+        "copper(II) carbonate",
+        "copper(II) oxide",
+        "limewater"
+      ],
+      "paragraphs": [
+        "Thermal decomposition uses heat to break a compound into simpler substances. In the school model for copper(II) carbonate, CuCO₃ → CuO + CO₂. One copper atom, one carbon atom and three oxygen atoms occur on each side. Heating is the condition, not another substance added to the equation.",
+        "A typical green copper-carbonate sample becomes black as copper(II) oxide forms. Carbon dioxide makes limewater cloudy because insoluble calcium carbonate forms: CO₂ + Ca(OH)₂ → CaCO₃ + H₂O. It is the precipitate that gives cloudiness; carbon dioxide is not itself a milky gas. Colour change alone does not identify the released gas.",
+        "Many metal carbonates give a metal oxide and carbon dioxide on heating, but do not assume every carbonate decomposes under the same conditions. This reaction is not combustion: oxygen is already present in the carbonate, and added oxygen is not required by the equation.",
+        "A formula given in a question determines the model you should use. Common laboratory material sold as basic copper(II) carbonate also contains hydroxide and can release water on heating. For CuCO₃·Cu(OH)₂, the balanced equation is CuCO₃·Cu(OH)₂ → 2CuO + CO₂ + H₂O. Do not treat every supplied green sample as pure CuCO₃ or silently mix the two formulas."
+      ],
+      "example": {
+        "question": "For the stated pure-CuCO₃ model, identify the black product and name a test for the released gas. Does the equation require an oxygen reactant?",
+        "steps": [
+          "Black solid: copper(II) oxide, CuO.",
+          "Carbon dioxide gives a cloudy limewater result under the usual test conditions.",
+          "No O₂ reactant is required: CuCO₃ → CuO + CO₂."
+        ],
+        "explanation": "The answer uses the supplied formula; an actual basic-carbonate sample can also produce water."
+      },
+      "commonMistakes": [
+        "Calling heating a combustion reaction because a flame supplies heat.",
+        "Claiming that a colour change proves carbon dioxide formation.",
+        "Writing a basic-carbonate equation without its water product."
+      ]
+    },
+    {
+      "id": "carbon-dioxide-greenhouse",
+      "title": "Carbon dioxide and the greenhouse effect",
+      "points": [
+        "2.13"
+      ],
+      "terms": [
+        "infrared radiation",
+        "greenhouse gas",
+        "energy balance",
+        "climate change"
+      ],
+      "paragraphs": [
+        "Earth’s surface receives solar energy and emits thermal infrared radiation. Carbon dioxide absorbs some outgoing infrared radiation and the atmosphere emits radiation in different directions, including towards the surface. This changes the rate at which energy is transferred to space; it does not prevent every wavelength or all energy from escaping.",
+        "Increasing atmospheric carbon dioxide can strengthen this greenhouse effect. With other influences considered, a changed energy balance can lead to warming and changes in long-term climate patterns. Carbon dioxide does not generate energy from nothing; the explanation concerns transfers of incoming and outgoing energy.",
+        "Climate concerns long-term patterns. A single hot day or cold week cannot by itself establish or disprove the effect. The greenhouse effect is also different from ozone depletion: protection from incoming ultraviolet radiation and absorption of outgoing infrared radiation are separate mechanisms. The natural greenhouse effect exists even without a recent increase in carbon dioxide."
+      ],
+      "example": {
+        "question": "Improve the statement “More carbon dioxide creates heat and stops all radiation escaping.”",
+        "steps": [
+          "Replace creates heat with changes the transfer of outgoing thermal infrared energy.",
+          "State that CO₂ absorbs some infrared radiation and atmospheric emission includes downward radiation.",
+          "Explain that an increase can alter energy balance and contribute to long-term climate change; some energy still escapes."
+        ],
+        "explanation": "The explanation describes a mechanism, not a prediction of the weather on a particular day."
+      },
+      "commonMistakes": [
+        "Explaining warming as an ozone hole.",
+        "Saying all heat is permanently trapped.",
+        "Using one day’s weather as proof of a long-term climate trend."
       ]
     }
   ]

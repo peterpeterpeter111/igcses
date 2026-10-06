@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 510" role="img" aria-labelledby="title desc">
+  <title id="title">Oxygen estimate: count all connected air</title>
+  <desc id="desc">Invented example. Fixed gas spaces total 65 cubic centimetres. The syringe changes from 35 to 14. Total gas volume changes from 100 to 79, so 21 out of 100 is removed.</desc>
+  <rect width="900" height="510" fill="#f7f0e5"/>
+  <g font-family="Georgia,serif" fill="#302322">
+    <text x="36" y="48" font-size="28">Count the whole connected sample</text>
+    <text x="36" y="78" font-size="16">Original hypothetical data · same initial/final temperature and pressure</text>
+    <rect x="36" y="110" width="398" height="204" rx="4" fill="#e9e0d2" stroke="#8d7661"/>
+    <rect x="466" y="110" width="398" height="204" rx="4" fill="#e9e0d2" stroke="#8d7661"/>
+    <text x="58" y="145" font-size="23">Initial air</text>
+    <text x="488" y="145" font-size="23">Final gas</text>
+    <text x="58" y="181" font-size="18">Flask gas space: 60 cm³</text>
+    <text x="58" y="211" font-size="18">Connecting tube: 5 cm³</text>
+    <text x="58" y="241" font-size="18">Syringe: 35 cm³</text>
+    <text x="488" y="181" font-size="18">Flask gas space: 60 cm³</text>
+    <text x="488" y="211" font-size="18">Connecting tube: 5 cm³</text>
+    <text x="488" y="241" font-size="18">Syringe: 14 cm³</text>
+    <path d="M58 260H412M488 260H842" stroke="#8d7661"/>
+    <text x="58" y="293" font-size="23">Total: 100 cm³</text>
+    <text x="488" y="293" font-size="23">Total: 79 cm³</text>
+    <rect x="36" y="338" width="828" height="95" rx="4" fill="#6c2529"/>
+    <text x="60" y="374" font-size="22" fill="#fff5e6">Gas removed: 100 − 79 = 21 cm³</text>
+    <text x="60" y="408" font-size="22" fill="#fff5e6">Oxygen estimate: 21 ÷ 100 × 100 = 21%</text>
+    <text x="36" y="469" font-size="17">Fixed spaces cancel in the difference, but stay in the initial total.</text>
+    <text x="36" y="494" font-size="15">Not measured results. Schematic for calculation; apparatus geometry is not depicted.</text>
+  </g>
+</svg>

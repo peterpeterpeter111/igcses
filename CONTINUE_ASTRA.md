@@ -1,3 +1,11 @@
+# Latest phase — Chemistry atmosphere, 6 October 2026
+
+Read `research/checkpoints/2026-10-06-ATMOSPHERE.md` first. Preserve bdccfc3 and all descendants. GitHub cac8c63 exactly mirrors the halogen source tree; older pending-sync wording is historical. Ten new partial lessons/one original oxygen-volume schematic cover own2.9–2.14,all both1C/2C. Inorganic now20sections. Teacher-guide download/answer review is not a new examination pair; no performed trials.
+
+Totals648sections/27partialnotes/36routes;602reviewed identities/586partial audits/1,828localrequirements/877partiallinks. Chemistry69sections/two notes/74identities and audits/217requirements.143tests,typecheck/lint/14research/content/evidence/isolatedD1/build/89-file publicscan pass. Desktop full diagram, native anchor and both-paper coverage verified; narrow/final hosted checks pending. Seven obtained pairs,zero fullyprocessedpapers/completepoints/chapters/activefamilies;seven experimental offline prototypes,live registry empty.
+
+Commit/sync this newer atmosphere phase non-force and verify exacttree includingSVG. Next own2.15 onward reactivity/rust/redox,widercurriculum,historical/skills paper review and independent calibration. Keep quality/UI/history/counts,AIlast;noreset/version/deployment/publicURL. Latest user request continues useful work until weekly exhausted,overriding historical5%gate for this run. Last43%five-hour/3%weeklyremaining,ordinaryusageallowed. Older entries historical.
+
 # Latest phase — Halogens, 6 October 2026
 
 Read `research/checkpoints/2026-10-06-HALOGENS.md` first. Preserve f796962 and all descendants. GitHub e700848 exactly mirrors the Group 1/reconciliation tree; that pending sync is resolved. Six new partial halogen sections and one original predicted displacement matrix; own2.5–2.7 both1C/2C,2.8C only2C. Inorganic now ten sections. Keep source access failures and hypothetical-versus-observed evidence explicit.
