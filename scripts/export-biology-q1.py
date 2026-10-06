@@ -1,4 +1,4 @@
-"""Normalize the checked Biology Q1–Q2 subset (fourteen parts / 26 marks).
+"""Normalize the checked Biology Q1–Q4 subset (twenty parts / 43 marks).
 
 Validation and table preparation precede every write. Raw batch, incomplete
 whole-paper counts and printed source qualifications cannot be promoted here.
@@ -30,6 +30,12 @@ EXPECTED = {
     '2.c.ii': (1, [7], [8], [('3.7', 'primary')]),
     '2.d': (3, [7], [9], [('3.1', 'primary'), ('3.2', 'supporting')]),
     '2.e': (3, [8], [9], [('5.10', 'primary')]),
+    '3': (7, [9], [10], [('5.7', 'primary')]),
+    '4.a': (2, [10], [10], [('2.37', 'primary')]),
+    '4.b.i': (2, [10], [10], [('2.37', 'supporting')]),
+    '4.b.ii': (1, [11], [11], []),
+    '4.c.i': (2, [11], [11], []),
+    '4.c.ii': (3, [11], [11], [('2.11', 'primary'), ('2.37', 'supporting')]),
 }
 
 
@@ -52,8 +58,8 @@ def prepare(root=ROOT, overlay=None):
             and m['fullyProcessed'] is False and m['humanReviewed'] is False
             and m['marksReconciled'] is False and m['wholePaperLeafCount'] is None,
             'Partial subset must not promote full processing, denominator or human review')
-    require(m['wholePaperMarks'] == 110 and m['detailedLeafTasks'] == 14
-            and m['detailedOriginalMarks'] == 26 and m['reviewedQuestionTotals'] == {'1': 12, '2': 14}
+    require(m['wholePaperMarks'] == 110 and m['detailedLeafTasks'] == 20
+            and m['detailedOriginalMarks'] == 43 and m['reviewedQuestionTotals'] == {'1': 12, '2': 14, '3': 7, '4': 10}
             and m['reviewedSubsetMarksReconciled'] is True, 'Subset totals mismatch')
     require(m['rawManifestRef'] == 'research/batches/2026-09-08-cross-subject-lower-01.manifest.json'
             and m['coverReviewRef'] == 'research/reviews/2026-09-09-cover-review.json', 'Unexpected source authority')
@@ -69,22 +75,22 @@ def prepare(root=ROOT, overlay=None):
     docs = {d['type']: d for d in m['documents']}
     require(set(docs) == {'question-paper', 'mark-scheme'} and len(m['documents']) == 2, 'Expected one pair')
     qp, ms = docs['question-paper'], docs['mark-scheme']
-    for key, doc, count, pages in [('questionPaper', qp, 32, list(range(2, 9))), ('markScheme', ms, 24, list(range(3, 10)))]:
+    for key, doc, count, pages in [('questionPaper', qp, 32, list(range(2, 12))), ('markScheme', ms, 24, list(range(3, 12)))]:
         r, a = raw[key], m['pageAudit'][key]
         require(doc['id'] == PAPER + ':' + key and doc['sha256'] == r['sha256'] == cover[key + 'Sha256']
                 and doc['url'] == r['url'] and doc['pageCount'] == r['pageCount'] == count, 'Document/hash mismatch')
         require(a == dict(visuallyReviewedPages=pages, wholeDocumentReviewed=False), 'Partial page audit drift')
     source = next(s for s in read('research/sources.json') if s['id'] == '4BI1-spec')
     spec = m['currentSpecification']
-    require(spec == dict(documentId=source['id'], sha256=source['sha256'], issue='3', reviewedPages=[18, 21, 26, 29, 31, 49], wholeHistoricalAmendmentReconciliation='pending'), 'Specification scope drift')
+    require(spec == dict(documentId=source['id'], sha256=source['sha256'], issue='3', reviewedPages=[18, 20, 21, 22, 26, 29, 31, 49], wholeHistoricalAmendmentReconciliation='pending'), 'Specification scope drift')
     skills = read(SKILLS)
     require(skills['specificationDocumentId'] == spec['documentId'] and skills['specificationSha256'] == spec['sha256']
             and skills['humanReviewed'] is False and skills['reviewedPages'] == [49]
             and [(s['id'], s['pdfPage'], s['appliesToBiology']) for s in skills['skills']]
-            == [('4BI1:issue3:mathematical:' + i, 49, True) for i in ['1A', '1C', '3C']], 'Selected mathematical skill scope drift')
+            == [('4BI1:issue3:mathematical:' + i, 49, True) for i in ['1A', '1C', '3C', '2A', '2B']], 'Selected mathematical skill scope drift')
     points = {p['point_id']: p for p in read_table(root / 'research/ledger/v1', 'syllabus-points')[1]}
     tasks = m['tasks']
-    require(len(tasks) == len(EXPECTED) and len({t['taskId'] for t in tasks}) == 14
+    require(len(tasks) == len(EXPECTED) and len({t['taskId'] for t in tasks}) == 20
             and [t['questionPath'] for t in tasks] == list(EXPECTED), 'Missing, duplicate or unexpected tasks')
     for t in tasks:
         marks, pages, scheme_pages, mappings = EXPECTED[t['questionPath']]
@@ -101,6 +107,8 @@ def prepare(root=ROOT, overlay=None):
         stimulus_pages = [2, 3] if t['questionPath'].startswith('1.a.') else [4, 5] if t['questionPath'] in ['1.b.ii', '1.b.iii'] else pages
         if t['questionPath'] == '2.b':
             stimulus_pages = [6, 7]
+        if t['questionPath'] in ['4.b.ii', '4.c.ii']:
+            stimulus_pages = [10, 11]
         require(t['stimulusRefs'] == [dict(documentId=qp['id'], pdfPages=stimulus_pages)], 'Stimulus page mismatch')
         ids = [c['id'] for c in t['criteria']]
         rule = t['scoringRule']
@@ -142,8 +150,7 @@ def prepare(root=ROOT, overlay=None):
             and q['sourceRef'] == dict(documentId=ms['id'], pdfPages=[4])
             and t['measurementPresentation']['webScaleValidated'] is False
             and t['measurementPresentation']['publicOriginalImage'] is False, 'No silent divisor or display-scale repair')
-    require(t['mathematicalSkillIds'] == [s['id'] for s in skills['skills']]
-            and skills['taskMappings'] == [dict(taskId=t['taskId'], skillIds=t['mathematicalSkillIds'], scope='required-operations-only', humanReviewed=False)], 'Skills must remain separate from numbered mappings')
+    require(t['mathematicalSkillIds'] == [s['id'] for s in skills['skills'][:3]], 'Magnification skills must remain separate from numbered mappings')
     t = by_path['1.b.ii']; p = t['pairScoring']
     require(p['maximumPairs'] == 2 and p['nameMarksPerPair'] == p['functionMarksPerPair'] == 1
             and p['functionRequiresMatchingCreditedName'] is True and p['functionAloneMarks'] == 0
@@ -203,8 +210,47 @@ def prepare(root=ROOT, overlay=None):
     t = by_path['2.e']
     require(t['sourceTraitData'] == dict(varieties=[dict(flowerColour='red', scent=False), dict(flowerColour='white', scent=True)], desired=dict(flowerColour='red', scent=True), genotypesProvided=False, dominanceProvided=False, probabilityClaim=None, sourceRef=dict(documentId=qp['id'], pdfPages=[8]))
             and t['sourceBreedingPolicy'] == dict(ignoreGeneticModificationReferences=True, desiredCharacteristicsAloneCredit=False, unqualifiedCrossVarietiesAccepted=True, sourceRef=dict(documentId=ms['id'], pdfPages=[9]), recognitionStatus='not-implemented'), 'Do not invent traits, dominance, probabilities or trait-only credit')
-    require(sum(t['originalMarks'] for t in tasks) == 26
+    t = by_path['3']; gaps = t['gapScoring']
+    require(gaps == dict(positions=list(range(1, 8)), acceptedByPosition=[['milk'], ['pasteurisation', 'sterilisation'], ['killed', 'dead', 'destroyed'], ['Lactobacillus', 'Streptococcus'], ['lactose'], ['anaerobic'], ['lactic acid', 'lactate']], marksPerPosition=[1] * 7, maximum=7, recognitionStatus='not-implemented', sourceRef=dict(documentId=ms['id'], pdfPages=[10]))
+            and t['markingMethod'] == t['scoringRule']['mode'] == 'ordered-gaps'
+            and [c['marks'] for c in t['criteria']] == [1] * 7
+            and t['sourceData']['coolingRangeC'] == [40, 46]
+            and t['sourceQualification']['generatedUse'] == 'blocked-until-process-scope-and-gap-calibration', 'Yoghurt ordered-position/source-process drift')
+    t = by_path['4.a']
+    require(t['equationScoring'] == dict(reactants=['C6H12O6', 'O2'], products=['CO2', 'H2O'], coefficients=[1, 6, 6, 6], balancedMarks=2, correctSymbolsUnbalancedMarks=1, wordEquationMarks=0, recognitionStatus='not-implemented', sourceRef=dict(documentId=ms['id'], pdfPages=[10]))
+            and t['markingMethod'] == t['scoringRule']['mode'] == 'symbol-equation'
+            and [c['marks'] for c in t['criteria']] == [1, 1]
+            and t['criteria'][1]['requiresCriterionIds'] == [t['criteria'][0]['id']], 'Symbol equation partial credit drift')
+    t = by_path['4.b.i']; rule = t['scoringRule']
+    require(rule['mode'] == t['markingMethod'] == 'any-distinct' and len(t['criteria']) == 3
+            and [c['marks'] for c in t['criteria']] == [1] * 3 and rule['maximum'] == rule['selectionLimit'] == 2
+            and rule['creditPerCriterion'] == 1 and t['sourceRejectedEvidence'] == ['CO2 is merely present without production/release.']
+            and t['sourceQualification']['generatedUse'] == 'blocked-until-apparatus-and-gas-balance-policy-review', 'CO2 production/measurement rule drift')
+    t = by_path['4.b.ii']
+    require(t['markingMethod'] == t['scoringRule']['mode'] == 'one-of-alternatives'
+            and [c['marks'] for c in t['criteria']] == [1]
+            and t['acceptableAlternatives'] == ['Water bath', 'Water-filled beaker with Bunsen heating described']
+            and t['sourceRejectedEvidence'] == ['Bunsen alone']
+            and t['practicalDemand']['officialNumberedMapping'] is None, 'Temperature technique cannot invent a numbered practical mapping')
+    t = by_path['4.c.i']; n = t['meanScoring']
+    require(n == dict(readingsMm=[22, 25, 24], sumMm=71, divisor=3, exactMean='71/3', fullCreditValue=24, fullCreditMarks=2, partialMaximum=1, partialBranches=['sum 71', 'division by 3', '23.7', '23.67', '23.6 recurring'], partialBranchesAreAlternatives=True, recognitionStatus='not-implemented', sourceRef=dict(documentId=ms['id'], pdfPages=[11]))
+            and t['markingMethod'] == t['scoringRule']['mode'] == 'mean-final-or-one-partial'
+            and [c['marks'] for c in t['criteria']] == [0, 0]
+            and t['sourceQualification']['generatedUse'] == 'blocked-until-precision-policy-and-response-calibration', 'Mean precision/alternative partial credit drift')
+    require(t['mathematicalSkillIds'] == ['4BI1:issue3:mathematical:2B', '4BI1:issue3:mathematical:2A']
+            and skills['taskMappings'] == [dict(taskId=by_path[path]['taskId'], skillIds=by_path[path]['mathematicalSkillIds'], scope='required-operations-only', humanReviewed=False) for path in ['1.b.i', '4.c.i']], 'Selected mean/magnification skill mappings drift')
+    t = by_path['4.c.ii']; rule = t['scoringRule']
+    require(rule['mode'] == t['markingMethod'] == 'any-distinct' and [c['marks'] for c in t['criteria']] == [1] * 5
+            and rule['maximum'] == rule['selectionLimit'] == 3 and rule['creditPerCriterion'] == 1
+            and t['sourceRejectedEvidence'] == ['Energy of the bubble rather than molecules', 'Increased bubble movement alone']
+            and t['sourceQualification']['generatedUse'] == 'blocked-until-observed-range-and-practical-calibration', 'Observed temperature explanation cap/rejections drift')
+    experiment = dict(temperaturesC=[20, 30], seedMassG=10, repeatsPerTemperature=3, intervalMinutes=1, readingsMm=[[14, 12, 14], [22, 25, 24]], printedMeanAt20=13, sourceRef=dict(documentId=qp['id'], pdfPages=[10, 11]))
+    require(all(t['sourceExperimentData'] == experiment for t in tasks if t['questionPath'].startswith('4.'))
+            and m['sourceRespirometer']['sourceRef'] == dict(documentId=qp['id'], pdfPages=[10])
+            and m['sourceRespirometer']['diagramCalibration'], 'Respirometer source data/calibration drift')
+    require(sum(t['originalMarks'] for t in tasks) == 43
             and sum(t['originalMarks'] for t in tasks if t['questionPath'].startswith('2.')) == 14
+            and sum(t['originalMarks'] for t in tasks if t['questionPath'].startswith('4.')) == 10
             and m['blockers'] and m['processingNotes'], 'Subset reconciliation/gaps missing')
 
     date = m['reviewDate']
@@ -212,12 +258,13 @@ def prepare(root=ROOT, overlay=None):
     documents = []
     for key, doc in [('questionPaper', qp), ('markScheme', ms)]:
         reviews = [dict(page=1, mode='visual-cover', reviewer='Codex cover visual review', date='2026-09-09')]
-        reviews += [dict(page=p, mode='visual-Q1-Q2-subset', reviewer=m['reviewer'], date=date) for p in m['pageAudit'][key]['visuallyReviewedPages']]
-        documents.append(dict(document_id=doc['id'], qualification='4BI1', document_type=doc['type'], canonical_url=doc['url'], title='4BI1/1B Summer 2024 ' + doc['type'], publisher='Pearson', year=2024, series='June', component='1B', variant='unresolved', printed_exam_date='2024-05-10' if key == 'questionPaper' else '', filename_date='2024-05-11' if key == 'questionPaper' else '', sha256=doc['sha256'], page_count=doc['pageCount'], access_status='obtained', local_evidence_path=OVERLAY, reviewed_pages_json=compact(reviews), identity_status='agent-reviewed-subset', identity_notes='Cover match plus Q1–Q2 task pairing only. Legacy standard variant unresolved; printed/filename date conflict retained. Whole-page audit pending.', batch_id=common['batch_id'], updated_at=date))
-    papers = [dict(paper_id=PAPER, qualification='4BI1', year=2024, series='June', component='1B', variant='unresolved', qp_document_id=qp['id'], ms_document_id=ms['id'], insert_document_ids_json='[]', examiner_report_ids_json='[]', report_status=m['examinerReportStatus'], target_specification_id=spec['documentId'], applicability_status='partial-current-scope-review', stage='indexed', last_successful_stage='indexed', expected_leaf_tasks='', indexed_leaf_tasks=14, extracted_leaf_tasks=14, assessed_marks=110, all_alternatives_marks='', option_rules_json=compact(dict(mode='answer-all', sourcePages=[2], wholeAllocationReviewed=False)), reconciled_marks='false', scheme_match_status='cover-and-Q1-Q2-subset-match-only', complete_page_audit='false', template_links_complete='false', blocking_issues_json=compact(m['blockers']), reviewed_at=date, **common)]
+        reviews += [dict(page=p, mode='visual-Q1-Q4-subset', reviewer=m['reviewer'], date=date) for p in m['pageAudit'][key]['visuallyReviewedPages']]
+        documents.append(dict(document_id=doc['id'], qualification='4BI1', document_type=doc['type'], canonical_url=doc['url'], title='4BI1/1B Summer 2024 ' + doc['type'], publisher='Pearson', year=2024, series='June', component='1B', variant='unresolved', printed_exam_date='2024-05-10' if key == 'questionPaper' else '', filename_date='2024-05-11' if key == 'questionPaper' else '', sha256=doc['sha256'], page_count=doc['pageCount'], access_status='obtained', local_evidence_path=OVERLAY, reviewed_pages_json=compact(reviews), identity_status='agent-reviewed-subset', identity_notes='Cover match plus Q1–Q4 task pairing only. Legacy standard variant unresolved; printed/filename date conflict retained. Whole-page audit pending.', batch_id=common['batch_id'], updated_at=date))
+    papers = [dict(paper_id=PAPER, qualification='4BI1', year=2024, series='June', component='1B', variant='unresolved', qp_document_id=qp['id'], ms_document_id=ms['id'], insert_document_ids_json='[]', examiner_report_ids_json='[]', report_status=m['examinerReportStatus'], target_specification_id=spec['documentId'], applicability_status='partial-current-scope-review', stage='indexed', last_successful_stage='indexed', expected_leaf_tasks='', indexed_leaf_tasks=20, extracted_leaf_tasks=20, assessed_marks=110, all_alternatives_marks='', option_rules_json=compact(dict(mode='answer-all', sourcePages=[2], wholeAllocationReviewed=False)), reconciled_marks='false', scheme_match_status='cover-and-Q1-Q4-subset-match-only', complete_page_audit='false', template_links_complete='false', blocking_issues_json=compact(m['blockers']), reviewed_at=date, **common)]
     task_rows, mappings = [], []
     for t in tasks:
-        task_rows.append(dict(task_id=t['taskId'], paper_id=PAPER, question_path=t['questionPath'], record_kind='leaf', qp_pages_json=compact(t['questionPaperPages']), stimulus_refs_json=compact(t['stimulusRefs']), scheme_pages_json=compact(t['markSchemePages']), command_word=t['commandWord'], original_marks=t['originalMarks'], assessment_objectives_json='[]', required_knowledge='; '.join(t['requiredKnowledge']), context_summary=t['contextSummary'], stimulus_types_json=compact(t['stimulusTypes']), solution_structure_json=compact(t['solutionStructure']), marking_method=t['markingMethod'], rubric_ref=OVERLAY + '#' + t['taskId'], acceptable_alternatives_json=compact(t['acceptableAlternatives']), dependencies_json=compact(t['dependencies']), common_errors_json=compact(t['commonErrors']), report_refs_json='[]', extraction_status='source-checked', mapping_status='selected-mathematical-skills-only' if not t['syllabusMappings'] else 'agent-reviewed-partial-current-scope', review_status='agent-reviewed', blocker='; '.join(t['blockers']), **common))
+        status = 'agent-reviewed-partial-current-scope' if t['syllabusMappings'] else 'selected-mathematical-skills-only' if t.get('mathematicalSkillIds') else 'experimental-demand-numbered-scope-unresolved'
+        task_rows.append(dict(task_id=t['taskId'], paper_id=PAPER, question_path=t['questionPath'], record_kind='leaf', qp_pages_json=compact(t['questionPaperPages']), stimulus_refs_json=compact(t['stimulusRefs']), scheme_pages_json=compact(t['markSchemePages']), command_word=t['commandWord'], original_marks=t['originalMarks'], assessment_objectives_json='[]', required_knowledge='; '.join(t['requiredKnowledge']), context_summary=t['contextSummary'], stimulus_types_json=compact(t['stimulusTypes']), solution_structure_json=compact(t['solutionStructure']), marking_method=t['markingMethod'], rubric_ref=OVERLAY + '#' + t['taskId'], acceptable_alternatives_json=compact(t['acceptableAlternatives']), dependencies_json=compact(t['dependencies']), common_errors_json=compact(t['commonErrors']), report_refs_json='[]', extraction_status='source-checked', mapping_status=status, review_status='agent-reviewed', blocker='; '.join(t['blockers']), **common))
         for mapping in t['syllabusMappings']:
             mappings.append(dict(mapping_id=t['taskId'] + ':' + mapping['pointId'], task_id=t['taskId'], point_id=mapping['pointId'], mapping_kind=mapping['kind'], current_applicability=mapping['currentApplicability'], evidence_refs_json=compact(mapping['evidenceRefs']), rationale=mapping['rationale'], review_status='agent-reviewed', reviewed_by=m['reviewer'], reviewer_type='agent', updated_at=date))
     outputs = {}
@@ -243,7 +290,7 @@ def export(root=ROOT):
     outputs = prepare(root)
     for path, content in outputs.items():
         path.write_text(content)
-    return dict(detailedTasks=14, detailedMarks=26, numberedMappings=16, fullyProcessedPapers=0, activeTemplates=0)
+    return dict(detailedTasks=20, detailedMarks=43, numberedMappings=21, fullyProcessedPapers=0, activeTemplates=0)
 
 
 if __name__ == '__main__':

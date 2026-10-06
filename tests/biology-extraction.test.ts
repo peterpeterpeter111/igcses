@@ -9,23 +9,23 @@ import { subjectEvidence, coverageSummary, evidenceHighlights } from '../lib/cov
 
 void test('Biology exposes a detailed subset while keeping private rubrics and whole-paper gates separate', () => {
   const row = subjectEvidence('4BI1').find((r) => r.paperId === extraction.paperId)!;
-  assert.equal(row.extraction?.detailedTasks, 14);
-  assert.equal(row.extraction?.originalMarks, 26);
+  assert.equal(row.extraction?.detailedTasks, 20);
+  assert.equal(row.extraction?.originalMarks, 43);
   assert.equal(row.extraction?.expectedTasks, null);
   assert.equal(row.extraction?.wholePageAudit, false);
   assert.equal(row.index, null);
-  assert.deepEqual(row.extraction?.reviewedQuestions, ['1', '2']);
-  assert.equal(row.extraction?.questionPaperPages, 7);
-  assert.equal(row.extraction?.markSchemePages, 7);
+  assert.deepEqual(row.extraction?.reviewedQuestions, ['1', '2', '3', '4']);
+  assert.equal(row.extraction?.questionPaperPages, 10);
+  assert.equal(row.extraction?.markSchemePages, 9);
   assert.equal(coverageSummary().find((r) => r.subject.code === '4BI1')?.fullyProcessed, 0);
-  assert.equal(evidenceHighlights.biologyDetailedParts, 14);
+  assert.equal(evidenceHighlights.biologyDetailedParts, 20);
   const summary = JSON.stringify(row);
   for (const hidden of ['sourceChain', 'numericScoring', 'pairScoring', 'eligibleCriterionIds', 'sourceFoodWeb', 'sourceFlower', 'sourceComparisonPolicy', 'sourceTraitData', 'answerLabel']) {
     assert.ok(!summary.includes(hidden), hidden);
   }
   assert.equal(extraction.paperStage, 'indexed');
   assert.equal(extraction.marksReconciled, false);
-  assert.equal(extraction.tasks.reduce((sum, t) => sum + t.originalMarks, 0), 26);
+  assert.equal(extraction.tasks.reduce((sum, t) => sum + t.originalMarks, 0), 43);
   for (const [ref, hash] of [[extraction.rawManifestRef, extraction.rawManifestSha256], [extraction.coverReviewRef, extraction.coverReviewSha256]]) {
     assert.equal(createHash('sha256').update(readFileSync(ref)).digest('hex'), hash);
   }
@@ -71,7 +71,7 @@ void test('Physical magnification retains alternative partial credit and an unre
   assert.equal(task.measurementPresentation?.webScaleValidated, false);
   assert.equal(task.sourceQualification?.generatedUse, 'blocked-until-partial-method-and-presentation-calibration');
   assert.deepEqual(task.syllabusMappings, []);
-  assert.deepEqual(task.mathematicalSkillIds, skills.skills.map((s) => s.id));
+  assert.deepEqual(task.mathematicalSkillIds, skills.skills.slice(0, 3).map((s) => s.id));
   assert.ok(skills.skills.every((s) => s.pdfPage === 49 && s.appliesToBiology));
 });
 
@@ -147,6 +147,20 @@ mutations={
  'invented-genotype':lambda m:m['tasks'][13]['sourceTraitData'].update(genotypesProvided=True),
  'traits-alone':lambda m:m['tasks'][13]['sourceBreedingPolicy'].update(desiredCharacteristicsAloneCredit=True),
  'breeding-cap':lambda m:m['tasks'][13]['scoringRule'].update(selectionLimit=4),
+ 'gaps-as-leaves':lambda m:m.update(detailedLeafTasks=26),
+ 'gap-order':lambda m:m['tasks'][14]['gapScoring']['acceptedByPosition'].reverse(),
+ 'gap-overcredit':lambda m:m['tasks'][14]['gapScoring'].update(marksPerPosition=[2]*7),
+ 'pasteurisation-equivalence':lambda m:m['tasks'][14]['sourceQualification'].update(generatedUse='ready'),
+ 'unbalanced-full':lambda m:m['tasks'][15]['equationScoring'].update(correctSymbolsUnbalancedMarks=2),
+ 'word-equation':lambda m:m['tasks'][15]['equationScoring'].update(wordEquationMarks=1),
+ 'CO2-presence':lambda m:m['tasks'][16].update(sourceRejectedEvidence=[]),
+ 'burner-alone':lambda m:m['tasks'][17].update(sourceRejectedEvidence=[]),
+ 'experimental-numbered':lambda m:m['tasks'][17]['practicalDemand'].update(officialNumberedMapping='2.39'),
+ 'mean-rounding':lambda m:m['tasks'][18]['meanScoring'].update(fullCreditValue=23.67),
+ 'mean-partial-sum':lambda m:m['tasks'][18]['meanScoring'].update(partialBranchesAreAlternatives=False),
+ 'mean-policy-promotion':lambda m:m['tasks'][18]['sourceQualification'].update(generatedUse='ready'),
+ 'temperature-bubble-credit':lambda m:m['tasks'][19].update(sourceRejectedEvidence=[]),
+ 'temperature-data':lambda m:m['tasks'][19]['sourceExperimentData'].update(temperaturesC=[20,50]),
 }
 for name,mutate in mutations.items():
  m=copy.deepcopy(original);mutate(m)
@@ -156,7 +170,7 @@ for name,mutate in mutations.items():
  assert all(p.read_bytes()==data for p,data in before.items()),name+' changed a ledger table'
 print(json.dumps({'rejected':len(mutations),'tables':len(outputs)}))
 `], { encoding: 'utf8' }));
-  assert.equal(proof.rejected, 38);
+  assert.equal(proof.rejected, 52);
   assert.equal(proof.tables, 4);
 });
 
@@ -190,5 +204,43 @@ void test('Comparison and breeding source pools preserve caps and special credit
   assert.equal(breeding.sourceTraitData?.dominanceProvided, false);
   assert.equal(breeding.sourceTraitData?.probabilityClaim, null);
   assert.equal(breeding.sourceBreedingPolicy?.desiredCharacteristicsAloneCredit, false);
+  assert.equal(evidenceHighlights.activeFamilies, 0);
+});
+
+void test('Yoghurt stays one seven-mark task with seven ordered credit positions', () => {
+  const task = extraction.tasks.find((t) => t.questionPath === '3')!;
+  assert.equal(extraction.tasks.filter((t) => t.questionPath === '3').length, 1);
+  assert.equal(task.originalMarks, 7);
+  assert.deepEqual(task.gapScoring?.acceptedByPosition, [['milk'], ['pasteurisation', 'sterilisation'], ['killed', 'dead', 'destroyed'], ['Lactobacillus', 'Streptococcus'], ['lactose'], ['anaerobic'], ['lactic acid', 'lactate']]);
+  assert.deepEqual(task.gapScoring?.marksPerPosition, [1, 1, 1, 1, 1, 1, 1]);
+  assert.equal(task.sourceQualification?.generatedUse, 'blocked-until-process-scope-and-gap-calibration');
+});
+
+void test('Respirometer extraction preserves exact arithmetic, equation balance and source-specific concessions', () => {
+  const tasks = extraction.tasks.filter((t) => t.questionPath.startsWith('4.'));
+  assert.equal(tasks.length, 5);
+  assert.equal(tasks.reduce((sum, t) => sum + t.originalMarks, 0), 10);
+  const equation = tasks[0].equationScoring!;
+  const [glucose, oxygen, co2, water] = equation.coefficients;
+  assert.equal(6 * glucose, co2);
+  assert.equal(12 * glucose, 2 * water);
+  assert.equal(6 * glucose + 2 * oxygen, 2 * co2 + water);
+  assert.equal(equation.correctSymbolsUnbalancedMarks, 1);
+  assert.equal(equation.wordEquationMarks, 0);
+  assert.equal(tasks[1].scoringRule.selectionLimit, 2);
+  assert.deepEqual(tasks[2].sourceRejectedEvidence, ['Bunsen alone']);
+  assert.deepEqual(tasks[2].syllabusMappings, []);
+  const mean = tasks[3].meanScoring!;
+  assert.equal(mean.readingsMm.reduce((sum, n) => sum + n, 0), 71);
+  assert.equal(Math.round(71 / 3), mean.fullCreditValue);
+  assert.equal(mean.partialMaximum, 1);
+  assert.equal(mean.partialBranchesAreAlternatives, true);
+  assert.ok(mean.partialBranches.some((branch) => branch === '23.67'));
+  assert.equal(tasks[3].sourceQualification?.generatedUse, 'blocked-until-precision-policy-and-response-calibration');
+  assert.equal(tasks[4].criteria.length, 5);
+  assert.equal(tasks[4].scoringRule.selectionLimit, 3);
+  assert.deepEqual(tasks[4].sourceRejectedEvidence, ['Energy of the bubble rather than molecules', 'Increased bubble movement alone']);
+  assert.deepEqual(tasks[4].sourceExperimentData?.temperaturesC, [20, 30]);
+  assert.equal(skills.skills.length, 5);
   assert.equal(evidenceHighlights.activeFamilies, 0);
 });
