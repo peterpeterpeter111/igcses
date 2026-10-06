@@ -95,7 +95,8 @@
   "constraints": [
     "No repeated/zero/negative/fractional roots, non-monic coefficients, cubic factorisation or solving equations in this version.",
     "The 65 fresh parameter pairs are a bounded prototype, not a complete Maths question bank.",
-    "Never equate arithmetic coverage with calibrated exam demand or live eligibility."
+    "Never equate arithmetic coverage with calibrated exam demand or live eligibility.",
+    "Offline marker accepts either term order in unit-coefficient integer linear factors; other scalars, general algebra, powers and additional evidence remain deferred."
   ],
   "relationships": [
     "b = -(smallerRoot + largerRoot)",
@@ -141,6 +142,7 @@
     "acceptableAlternatives": [
       "Reverse the two factors.",
       "Negate both linear factors, preserving the same product.",
+      "Write either linear factor with its constant first, preserving both signs; a bare x is the zero-constant factor for partial-term checking.",
       "Other mathematically equivalent factorisations need representation review; unsupported syntax is deferred."
     ],
     "dependencies": [
@@ -263,7 +265,8 @@
     "runRefs": [
       "research/validation/2026-10-01-quadratic-validation.json",
       "research/validation/2026-10-05-package-immutability.json",
-      "research/validation/2026-10-05-quadratic-validation.json"
+      "research/validation/2026-10-05-quadratic-validation.json",
+      "research/validation/2026-10-06-quadratic-notation-validation.json"
     ]
   },
   "runtime": {

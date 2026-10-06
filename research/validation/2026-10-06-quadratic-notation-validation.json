@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-06T16:30:38.211Z",
+  "familyId": "4MB1.factorisation.monic-quadratic",
+  "version": "0.1.0",
+  "command": "node --experimental-strip-types scripts/check-quadratic.ts",
+  "sourceHashes": {
+    "server/generators/freeze-package.ts": "f4c67bcdd17a65faea3941f42d2a76aa92f122e202a6b5e0df188beac1a1ce89",
+    "server/generators/monic-quadratic.ts": "be55f123155776340d549adc86e8d5869ba7a5cd6bee928aea817cb89b90e2c3",
+    "server/generators/quadratic-marking.ts": "113dd7add1b20f7a6fbacea79d0d070bc0abe7cc98cc9e1cf34a89fe7996375f",
+    "research/validation/quadratic-marking-cases.json": "e17513a6bf4c8a192916f401b01fa27eb6e8d514002b6f3ac3b77cfcb5ec4408"
+  },
+  "reviewer": "Codex",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "generatedPairs": 65,
+  "distinctStimuli": 65,
+  "sourceExpressionExcluded": true,
+  "markingCases": 37,
+  "deferred": 13,
+  "results": [
+    {
+      "id": "source-correct",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "reversed-factors",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "both-negated",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "unicode-and-spaces",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "explicit-plus-and-star",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "correct-constant-wrong-linear",
+      "expectedScore": 1,
+      "actualScore": 1,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "correct-linear-wrong-constant",
+      "expectedScore": 1,
+      "actualScore": 1,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "one-correct-bracket-is-not-credit",
+      "expectedScore": 0,
+      "actualScore": 0,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "one-negated-factor",
+      "expectedScore": 0,
+      "actualScore": 0,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "zero-constant-partial",
+      "expectedScore": 1,
+      "actualScore": 1,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "answer-line-controls",
+      "expectedScore": 0,
+      "actualScore": 0,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "final-working-controls",
+      "expectedScore": 0,
+      "actualScore": 0,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "final-working-correct",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "blank",
+      "expectedScore": 0,
+      "actualScore": 0,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "expanded-not-parsed",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "roots-not-parsed",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "scalar-equivalent-deferred",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "constant-first-correct",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "power-form-deferred",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "competing-answers",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "unknown-working-order",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "correct-earlier-expanded-final",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "syntax-injection",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "trailing-equation",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "outside-response-bound",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "boundary-low",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "boundary-high",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "wide-pair",
+      "expectedScore": 1,
+      "actualScore": 1,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "separated-digits-not-merged",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "mixed-order-correct",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "negative-constants-leading-plus",
+      "expectedScore": 2,
+      "actualScore": 2,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "constant-first-wrong-sign",
+      "expectedScore": 1,
+      "actualScore": 1,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "constant-first-partial",
+      "expectedScore": 1,
+      "actualScore": 1,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "one-factor-sign-reversed",
+      "expectedScore": 0,
+      "actualScore": 0,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "bare-variable-partial",
+      "expectedScore": 1,
+      "actualScore": 1,
+      "status": "scored",
+      "passed": true
+    },
+    {
+      "id": "constant-first-separated-digits",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    },
+    {
+      "id": "constant-first-injection",
+      "expectedScore": null,
+      "actualScore": null,
+      "status": "needs-review",
+      "passed": true
+    }
+  ],
+  "scope": "Synthetic manually specified responses for a bounded offline parser. Expected scores apply only to the defined transcribed fields; no human/learner calibration.",
+  "sourceRefs": [
+    {
+      "documentId": "4MB1-2024-summer-01-candidate-ms",
+      "pdfPages": [
+        14
+      ]
+    }
+  ],
+  "fullPedagogicalValidation": "partial",
+  "liveEligible": false,
+  "activeTemplates": 0,
+  "blockers": [
+    "Official per-task AO allocation and empirical difficulty equivalence unverified.",
+    "Only explicitly transcribed two-binomial products parsed; unusual notation/additional evidence deferred.",
+    "Not a complete Maths bank or live blueprint; no AI adapter or live registration."
+  ]
+}

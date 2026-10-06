@@ -8,11 +8,26 @@ function parseProduct(text: string): [number, number, number] | null {
   // Bounded characters/length, no eval, symbolic execution or expression-library coercion.
   if (/\d\s+\d/.test(text)) return null; // Do not merge separate written numbers.
   const value = text.replaceAll('−', '-').replaceAll('×', '*').replace(/\s/g, '');
-  const match = value.match(/^\(([+-]?)x([+-])(\d{1,3})\)\*?\(([+-]?)x([+-])(\d{1,3})\)$/);
-  if (!match || Number(match[3]) > 100 || Number(match[6]) > 100) return null;
-  const a = match[1] === '-' ? -1 : 1, c = match[4] === '-' ? -1 : 1;
-  const b = (match[2] === '-' ? -1 : 1) * Number(match[3]);
-  const d = (match[5] === '-' ? -1 : 1) * Number(match[6]);
+  const match = value.match(/^\(([^()]*)\)\*?\(([^()]*)\)$/);
+  if (!match) return null;
+  // Both x - 3 and 3 - x are explicit linear factors. Parse their coefficients
+  // rather than silently deferring an equivalent constant-first product.
+  const factor = (term: string): [number, number] | null => {
+    if (/^[+-]?x$/.test(term)) return [term.startsWith('-') ? -1 : 1, 0];
+    const variableFirst = term.match(/^([+-]?)x([+-])(\d{1,3})$/);
+    if (variableFirst && Number(variableFirst[3]) <= 100) {
+      return [variableFirst[1] === '-' ? -1 : 1,
+        (variableFirst[2] === '-' ? -1 : 1) * Number(variableFirst[3])];
+    }
+    const constantFirst = term.match(/^([+-]?\d{1,3})([+-])x$/);
+    if (constantFirst && Math.abs(Number(constantFirst[1])) <= 100) {
+      return [constantFirst[2] === '-' ? -1 : 1, Number(constantFirst[1])];
+    }
+    return null;
+  };
+  const left = factor(match[1]), right = factor(match[2]);
+  if (!left || !right) return null;
+  const [a, b] = left, [c, d] = right;
   return [a * c, a * d + b * c, b * d];
 }
 export function markQuadraticResponse(q: QuadraticPrototype, response: QuadraticResponse): QuadraticMark {

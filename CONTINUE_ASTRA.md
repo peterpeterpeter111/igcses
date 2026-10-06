@@ -2,12 +2,12 @@
 
 # Current checkpoint — resumed 6 October 2026
 
-Read research/checkpoints/2026-10-06-MATHS-CIRCLES-SECTORS.md first. All work preserved. GitHub sync blocker resolved for the saved pause/source delta: remote6169d54 exactly mirrors locale948c3e, prior remote4a71e80 retained. New geometry phase is the next local descendant and must be synced after committing; prepare from actually fetched main, compare exact tree, force false.
+Read research/checkpoints/2026-10-06-QUADRATIC-NOTATION.md and MATHS-CIRCLES-SECTORS.md first. Geometry saved2aa9756 and GitHub17352f3 have exactly matching source trees; prior local and remote history preserved. The next descendant contains the tested offline quadratic notation repair and checkpoint; sync it non-force after committing.
 
-1,019 sections /35 partial notes /36 routes;784 numbered identities /779 partial curriculum audit parents /2,757 local requirements /1,321 partial links. Maths100 sections /3 notes /74 identities /69 audit parents /241 requirements. All counts remain partial; zero complete chapters/points, fully processed papers or active templates. Seven obtained pairs and seven experimental offline families unchanged. AI last; no Sites version, deployment, live URL or reset.
+1,019 sections/35 partial notes/36 routes;784 numbered identities/779 partial audit parents/2,757 local requirements/1,321 partial links. Maths100 sections/3 notes/74 identities/69 audits/241 requirements. Seven obtained exam pairs; zero complete chapters/points, fully processed papers or active templates. Seven experimental families, empty live registry. AI last; no Sites version, deployed URL or reset.
 
-151 tests, typecheck/lint, fourteen research checks, evidence reconciliation, isolated D1 and production build pass; public scan118 files /zero findings. New source/teaching/reader/phone/search proof in the phase checkpoint. Existing UI preserved. Both allowances returned; last observed89% five-hour /67% weekly remaining. Check applicable windows at major phases; save before exhaustion.
+152 tests, typecheck/lint, fourteen research checks, current source/evidence reconciliation and production build pass; public scan118 files/zero findings. Geometry isolated D1 and phone/search proof retained. Quadratic validation covers65 expressions/37 synthetic response fixtures,13 deferred; legitimate constant-first factors are supported, remaining unfamiliar syntax deferred. No empirical or human calibration claim.
 
-Continue bounded quadratic notation/calibration, Maths vectors/broader curriculum, English AO/full responses, independent teaching and marking reviews, source discrepancies and paper-processing gates. Never turn partial or provisional evidence into a completeness claim.
+Next: Maths vectors/broader curriculum, English AO ledger/full responses, independent teaching/marking reviews, paper discrepancies and family-link gates. Last observed77% five-hour/65% weekly remaining; check both allowances and save major phases before exhaustion. Preserve all UI, source/raw records and both histories; no restart, reset or force-push.
 
-Preserve every commit, UI and raw/source record. Read the actual latest working tree and checkpoint; no restart, reset credit or force-push. Complete useful authorised work, test/build current edits before any Sites version or deployment and verify an actual live URL before claiming one.
+Test/build current edits before any Sites version or deployment. Never promote partial notes or provisional families silently. Verify an actual live URL before claiming one.

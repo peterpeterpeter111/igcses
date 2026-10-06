@@ -5,7 +5,7 @@ import { readFileSync } from 'node:fs';
 import { buildQuadraticPrototype, generateQuadraticPrototype, validateQuadraticPrototype, type QuadraticParameters, type QuadraticPrototype } from '../server/generators/monic-quadratic.ts';
 import { markQuadraticResponse, type QuadraticResponse } from '../server/generators/quadratic-marking.ts';
 import fixtures from '../research/validation/quadratic-marking-cases.json' with { type: 'json' };
-import report from '../research/validation/2026-10-05-quadratic-validation.json' with { type: 'json' };
+import report from '../research/validation/2026-10-06-quadratic-notation-validation.json' with { type: 'json' };
 import family from '../research/templates/4MB1-monic-quadratic.v0.1.0.json' with { type: 'json' };
 import extraction from '../research/extractions/4MB1-2024-summer-01.json' with { type: 'json' };
 import notes from '../content/notes/mathematics.json' with { type: 'json' };
@@ -71,6 +71,28 @@ void test('quadratic packages reject unsupported domains and tampered answers or
     const q=structuredClone(generateQuadraticPrototype(0));mutate(q);
     assert.equal(validateQuadraticPrototype(q),false);
     assert.throws(()=>markQuadraticResponse(q,{answerLine:'',workingLines:[],additionalEvidence:''}));
+  }
+});
+
+void test('factor term order preserves credit across every generated quadratic', () => {
+  for (let seed = 0; seed < 65; seed++) {
+    const q = generateQuadraticPrototype(seed);
+    const { smallerRoot: r, largerRoot: s } = q.parameters;
+    // Each written product equals (x-r)(x-s) by commutativity or two sign flips.
+    for (const answerLine of [
+      `(${r}-x)(${s}-x)`, `(${s}-x)(${r}-x)`,
+      `(${r}-x)(-x+${s})`, `(-x+${r})(${s}-x)`,
+      `(-${r}+x)(x-${s})`, `(x-${r})(-${s}+x)`,
+      `(+${r}−x) × (+${s}−x)`, `(-${s}+x)(-${r}+x)`,
+    ]) {
+      const mark = markQuadraticResponse(q, { answerLine, workingLines: [], additionalEvidence: '' });
+      assert.equal(mark.status, 'scored', answerLine);
+      assert.equal(mark.score, 2, answerLine);
+    }
+    // One sign flip negates every nonzero coefficient, so no terms match.
+    assert.equal(markQuadraticResponse(q, {
+      answerLine: `(x-${r})(${s}-x)`, workingLines: [], additionalEvidence: '',
+    }).score, 0);
   }
 });
 

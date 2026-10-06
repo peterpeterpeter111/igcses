@@ -242,7 +242,7 @@
       "expectedScore": null
     },
     {
-      "id": "reversed-binomial-order-deferred",
+      "id": "constant-first-correct",
       "parameters": {
         "smallerRoot": 3,
         "largerRoot": 4
@@ -252,7 +252,7 @@
         "workingLines": [],
         "additionalEvidence": ""
       },
-      "expectedScore": null
+      "expectedScore": 2
     },
     {
       "id": "power-form-deferred",
@@ -395,6 +395,110 @@
       },
       "response": {
         "answerLine": "(x-1)(x-1 2)",
+        "workingLines": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": null
+    },
+    {
+      "id": "mixed-order-correct",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": "(3-x)(-x+4)",
+        "workingLines": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": 2
+    },
+    {
+      "id": "negative-constants-leading-plus",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": "(-3+x)(-4+x)",
+        "workingLines": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": 2
+    },
+    {
+      "id": "constant-first-wrong-sign",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": "(3+x)(4+x)",
+        "workingLines": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": 1
+    },
+    {
+      "id": "constant-first-partial",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": "(1-x)(6-x)",
+        "workingLines": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": 1
+    },
+    {
+      "id": "one-factor-sign-reversed",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": "(x-3)(4-x)",
+        "workingLines": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": 0
+    },
+    {
+      "id": "bare-variable-partial",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": "(x)(x-7)",
+        "workingLines": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": 1
+    },
+    {
+      "id": "constant-first-separated-digits",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": "(1 2-x)(11-x)",
+        "workingLines": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": null
+    },
+    {
+      "id": "constant-first-injection",
+      "parameters": {
+        "smallerRoot": 3,
+        "largerRoot": 4
+      },
+      "response": {
+        "answerLine": "(3-x)(4-x);alert(1)",
         "workingLines": [],
         "additionalEvidence": ""
       },
