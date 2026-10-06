@@ -1,3 +1,4 @@
+import chemistryGroup1 from '../research/curriculum-audits/4CH1-group1.json' with { type: 'json' };
 import biologyGMCloning from '../research/curriculum-audits/4BI1-genetic-modification-cloning.json' with { type: 'json' };
 import biologyBreeding from '../research/curriculum-audits/4BI1-selective-breeding.json' with { type: 'json' };
 import biologyFood from '../research/curriculum-audits/4BI1-food-production.json' with { type: 'json' };
@@ -66,6 +67,7 @@ import mathsPolynomials from '../research/curriculum-audits/4MB1-polynomials-and
 
 // These bounded audits link partial teaching; they do not promote completion.
 export const curriculumAudits = [
+  chemistryGroup1,
   biologyGMCloning,
   biologyBreeding,
   biologyFood,motion, forces, mechanics, waves, energy, matter, magnetism, radioactivity, electricity, electricityCircuits, astrophysics, biologyLiving, biologyCells, biologyMolecules, biologyTransport, biologyPhotosynthesis, biologyNutrition, biologyRespiration, biologyHumanGas, biologyPlantTransport, biologyHumanTransport, biologyExcretion, biologyPlantCoordination, biologyHumanNervous, biologyEye, biologySkinTemperature, biologyHormones, biologyReproduction, biologyInheritance, biologyMutationSelection, biologyEcologyFoundations, biologyEcologyCycles, humanCells, humanTissues, humanMolecules, humanTransport, humanMovement, humanHeredity, humanRespiration, humanGasExchange, humanInternal, humanInternalClinical, chemistryStates, chemistryAtoms, chemistryCalculations, chemistryBonding, chemistryElectrolysis, mathsNumber, mathsSets, mathsAlgebra, mathsPolynomials, mathsEquations, mathsAlgebraRest, mathsMatrices, mathsGeometry, mathsStatistics, mathsFunctions];

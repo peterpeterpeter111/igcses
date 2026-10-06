@@ -85,15 +85,17 @@ void test('reviewed inventories agree with source candidates and subject-specifi
       (n, inventory) => n + inventory.points.length,
       0,
     ),
-    588,
+    592,
   );
   const allIds = reviewedInventories.flatMap((i) => i.points.map((p) => p.id));
   assert.equal(new Set(allIds).size, allIds.length);
-  assert.deepEqual(
-    reviewedInventories.filter((i) => i.qualification === '4PH1').flatMap((i) => i.points.map((p) => p.reference)).sort(),
-    coverage.filter((p) => p.qualification === '4PH1').map((p) => p.reference).sort(),
-    'All Physics parent identities must reconcile to the preserved candidate inventory',
-  );
+  for (const qualification of ['4PH1', '4BI1']) {
+    assert.deepEqual(
+      reviewedInventories.filter((i) => i.qualification === qualification).flatMap((i) => i.points.map((p) => p.reference)).sort(),
+      coverage.filter((p) => p.qualification === qualification).map((p) => p.reference).sort(),
+      `${qualification} parent identities must reconcile to the preserved candidate inventory; teaching remains partial`,
+    );
+  }
   for (const inventory of reviewedInventories)
     for (const point of inventory.points) {
       const raw = coverage.find(

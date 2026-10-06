@@ -1,3 +1,11 @@
+# Latest phase — Chemistry Group 1 and Biology reconciliation, 6 October 2026
+
+Read `research/checkpoints/2026-10-06-GROUP1-AND-RECONCILIATION.md` first. Preserve local 83ae7ff and all descendants. GitHub 9fed8ec exactly mirrors that Biology source tree including both diagrams; earlier pending-sync wording is historical. Four new Group 1 lessons on the existing inorganic route cover own 2.1–2.3 for both 1C/2C and 2.4C only 2C. Biology's 176 numbered identities reconcile to preserved candidates without missing references, duplicates or page differences; this does not prove full teaching or assessment coverage.
+
+Totals: 632 sections / 27 partial notes / 36 routes; 592 reviewed identities / 576 partial audits / 1,777 local editorial requirements / 859 partial links. Chemistry: 53 sections / two partial notes / 64 identities and audits / 166 requirements. 143 tests, typecheck/lint, 14 research checks, content/evidence, isolated D1, build and 87-file public scan pass. Desktop reader, search and exact component coverage inspected; narrow/final hosted verification pending. Seven obtained pairs; zero fully processed papers, complete points/chapters or active families. Seven experimental offline prototypes, live registry empty.
+
+Commit and sync this newer Group 1/reconciliation phase non-force, verifying the exact tree. Next Chemistry halogens 2.5–2.8C (preparatory primary reads only; no implementation), wider curriculum, historical/skills paper audits and independent template calibration. Preserve quality/UI/history; AI last. No reset, Sites version, deployment or public URL. Last gate 66% five-hour / 6% weekly remaining; continue only above 5% both, save/pause at 5%. Earlier entries are historical.
+
 # Latest phase — Biology genetic modification/cloning and section navigation, 6 October 2026
 
 Read `research/checkpoints/2026-10-06-BIOLOGY-GM-CLONING.md` first. Resumed saved ca4174d without reset; fetched GitHub023bba4 exactly mirrors its tree. Older pending-sync wording is historical. Eighteen new partial lessons/two diagrams cover own5.12–5.16both1B/2B and5.17B–5.20Bonly2B. Resources now38sections. A real search/coverage fragment-scroll bug was repaired with native anchors; normal book Open animations preserved. Desktop diagrams,search click and exact component labels verified; narrow/final hosted checks pending.

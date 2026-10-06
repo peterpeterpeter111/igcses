@@ -1,0 +1,180 @@
+{
+  "subjectId": "chemistry",
+  "chapterId": "inorganic",
+  "status": "source-checked",
+  "complete": false,
+  "humanReviewed": false,
+  "sourceId": "4CH1-spec",
+  "sourcePages": [
+    22
+  ],
+  "prerequisites": [
+    "Balanced equations conserve atoms.",
+    "Electronic configurations identify outer electrons and occupied shells."
+  ],
+  "goals": [
+    "Use shared water reactions as evidence for a chemical family.",
+    "Separate observations from reactivity interpretations in air and water.",
+    "Make limited predictions from periodic position.",
+    "Explain the Group 1 trend using electron loss, distance and shielding for Paper 2C."
+  ],
+  "supportingSources": [
+    {
+      "title": "University of Washington: alkali-metal water evidence",
+      "url": "https://chem.washington.edu/lecture-demos/activity-series-alkali-metals-water",
+      "sectionIds": [
+        "group1-water-family",
+        "group1-air-water-trend"
+      ]
+    },
+    {
+      "title": "OpenStax Chemistry 2e: alkali-metal periodicity",
+      "url": "https://openstax.org/books/chemistry-2e/pages/18-1-periodicity",
+      "sectionIds": [
+        "group1-water-family",
+        "group1-predicting-properties"
+      ]
+    },
+    {
+      "title": "OpenStax Chemistry 2e: shielding and ionization trends",
+      "url": "https://openstax.org/books/chemistry-2e/pages/6-5-periodic-variations-in-element-properties",
+      "sectionIds": [
+        "group1-electron-reactivity"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "group1-water-family",
+      "title": "Water reactions: evidence for an alkali-metal family",
+      "points": [
+        "2.1"
+      ],
+      "terms": [
+        "alkali metal",
+        "metal hydroxide",
+        "hydrogen",
+        "alkaline solution"
+      ],
+      "paragraphs": [
+        "Lithium, sodium and potassium are Group 1 metals. In reactions with cold water they produce hydrogen gas and the corresponding metal hydroxide. The hydroxide dissolves to give an alkaline solution. These shared products and similar reaction patterns support treating the elements as a chemical family; similar appearance alone is weaker evidence.",
+        "The general word equation is alkali metal + water → metal hydroxide + hydrogen. For sodium, the balanced symbol equation is 2Na + 2H₂O → 2NaOH + H₂. The two water molecules supply four hydrogen atoms: two remain in the hydroxide and two form one hydrogen molecule. Potassium follows the same pattern: 2K + 2H₂O → 2KOH + H₂.",
+        "Fizzing is an observation that gas is produced; identifying that gas as hydrogen is a further conclusion supported by appropriate test evidence. A suitable indicator can show that the resulting solution is alkaline, but indicator colour must be interpreted using the named indicator. Phenolphthalein changes from colourless to pink in an alkaline solution.",
+        "Compare the shared type of reaction separately from how vigorously each metal reacts. This is an explanation of evidence from a supervised demonstration, not instructions to perform one. These metals and the alkaline products can cause harm; any demonstration requires the institution’s trained staff and safety procedures. Hydrogen is not an alkali metal even though it is placed above Group 1 in many periodic tables."
+      ],
+      "example": {
+        "question": "A question states that lithium, sodium and potassium each produce hydrogen and an alkaline solution with water. Explain how this supports their classification as a family.",
+        "steps": [
+          "Identify the shared gas product as hydrogen.",
+          "Identify the solution products as the corresponding metal hydroxides.",
+          "Connect the same reaction pattern and product types to similar chemical behaviour."
+        ],
+        "explanation": "The evidence is chemical similarity. It does not imply identical reaction rates or the same hydroxide compound."
+      },
+      "commonMistakes": [
+        "Calling hydrogen a metal hydroxide or an alkali metal.",
+        "Writing Na + H₂O → NaOH + H₂ without balancing it.",
+        "Treating fizzing alone as conclusive identification of hydrogen."
+      ]
+    },
+    {
+      "id": "group1-air-water-trend",
+      "title": "Air and water: comparing lithium, sodium and potassium",
+      "points": [
+        "2.2"
+      ],
+      "terms": [
+        "reactivity trend",
+        "tarnishing",
+        "comparison",
+        "reaction conditions"
+      ],
+      "paragraphs": [
+        "Typical supervised demonstrations show increasing reactivity in the order lithium < sodium < potassium. With comparable small samples in cold water, lithium usually fizzes relatively gently; sodium reacts more vigorously and may melt into a moving ball because heat is released. Potassium usually reacts still more vigorously and may ignite, giving a lilac flame. These observations are examples of typical behaviour, not guaranteed outcomes for every sample.",
+        "Freshly exposed surfaces are silvery, but reaction with substances in air produces a dull surface layer. Sodium and potassium usually tarnish faster than lithium under comparable conditions. Faster surface change provides further evidence for increasing reactivity down Group 1. Air contains oxygen and water vapour, so do not assume every surface layer is a single simple oxide.",
+        "An observation is what is seen, such as fizzing, movement or loss of shine. A reactivity ranking is an interpretation of a pattern across the metals. More vigorous reaction can support that ranking, but reaction time alone is a poor comparison when sample mass, exposed surface or water temperature differs. A large lithium sample and a tiny potassium sample do not provide a controlled test of the group trend.",
+        "The shared water-reaction products identify family similarities; the different vigour and air-reaction rates distinguish positions within the family. A defensible answer names the observation, states the order and connects the two. No trial has been performed for these notes, and the examples are not measured data."
+      ],
+      "example": {
+        "question": "A written demonstration report describes gentle lithium fizzing, faster sodium reaction and still more vigorous potassium reaction under comparable conditions. State the trend and give one limitation of the evidence.",
+        "steps": [
+          "State that reactivity increases from lithium to sodium to potassium.",
+          "Use the reported increase in vigour as the supporting observation.",
+          "Explain that unequal surface area, sample size or temperature could weaken a comparison; the report does not give a numerical rate."
+        ],
+        "explanation": "The qualitative report supports the usual ordering. It does not establish exact rate ratios, and flame absence would not by itself reverse the ranking."
+      },
+      "commonMistakes": [
+        "Ranking the metals by atomic mass without referring to reaction evidence.",
+        "Claiming sodium always melts or potassium always ignites.",
+        "Assuming that every Group 1 air-reaction product has the formula M₂O."
+      ]
+    },
+    {
+      "id": "group1-predicting-properties",
+      "title": "Predicting another alkali metal without inventing results",
+      "points": [
+        "2.3"
+      ],
+      "terms": [
+        "prediction",
+        "rubidium",
+        "group trend",
+        "limitation"
+      ],
+      "paragraphs": [
+        "Use a periodic-table position to extend a known group pattern. Rubidium lies below potassium in Group 1, so it is expected to react more vigorously with water under comparable conditions. Like the other alkali metals, it forms a +1 ion and its water-reaction products are rubidium hydroxide and hydrogen. The predicted reaction pattern is 2Rb + 2H₂O → 2RbOH + H₂.",
+        "Separate properties shared by the family from trends down the family. Forming a +1 ion and producing a hydroxide with water are family patterns. Increasing reactivity down the group is a directional trend. Softer metals and generally lower melting points are familiar Group 1 patterns, but a prediction must be limited to what the evidence or stated trend supports.",
+        "A trend does not provide an exact reaction time, temperature, flame colour or numerical melting point. It also does not mean that every physical property changes smoothly: density, for example, is not a simple steadily increasing sequence across lithium, sodium and potassium. Use supplied data when a question asks for a numerical estimate, and label an extrapolation as a prediction rather than a measured result.",
+        "Do not propose an unsupervised water test of a more reactive metal to check the prediction. The learning task is to reason from reliable evidence and periodic position. Prediction remains distinct from experimental verification."
+      ],
+      "example": {
+        "question": "Rubidium is below potassium in Group 1. Predict its products with water and relative reactivity. Can the group trend give an exact time for a sample to disappear?",
+        "steps": [
+          "Predict rubidium hydroxide and hydrogen.",
+          "Predict greater reactivity than potassium under comparable conditions.",
+          "Reject an exact disappearance time: sample size, conditions and numerical rate data are unspecified."
+        ],
+        "explanation": "Two qualitative predictions are justified by the family pattern and direction of the reactivity trend. No invented measurement is needed."
+      },
+      "commonMistakes": [
+        "Predicting Rb²⁺ because rubidium is lower in the group.",
+        "Claiming that every physical property increases down Group 1.",
+        "Presenting a guessed time or flame colour as an observed result."
+      ]
+    },
+    {
+      "id": "group1-electron-reactivity",
+      "title": "Why reactivity increases down Group 1 — Paper 2C",
+      "points": [
+        "2.4C"
+      ],
+      "terms": [
+        "outer electron",
+        "occupied shell",
+        "shielding",
+        "nuclear attraction"
+      ],
+      "paragraphs": [
+        "The electronic configurations of lithium, sodium and potassium are 2,1; 2,8,1; and 2,8,8,1. Each has one electron in its outer shell. A Group 1 metal atom forms a +1 ion by losing that electron. In an oxidation half-equation this is M → M⁺ + e⁻. It does not gain an electron or lose an entire outer shell of many electrons.",
+        "Down Group 1, atoms have additional occupied electron shells. The outer electron is farther from the nucleus, and more inner electrons shield it from nuclear attraction. Although the nucleus has more protons, the combined increase in distance and shielding makes the outer electron easier to remove. Less energy is needed to remove that first electron.",
+        "Connect the electronic explanation to the chemical trend: easier loss of the outer electron supports greater reactivity down the group in these reactions. Merely saying “there are more shells” misses the link through weaker attraction and easier electron loss. The number of outer electrons stays one; it is the number of occupied shells and the attraction experienced by that electron that change.",
+        "Pearson marks this particular explanation as 2.4C, applying to Paper 2C only in the saved Issue 3 specification. The observable trends and predictions in 2.1–2.3 apply to both 1C and 2C. Electronic reasoning explains the trend; it does not determine an exact demonstration rate from configuration alone."
+      ],
+      "example": {
+        "question": "Why does potassium react more vigorously with water than sodium? Explain using their electronic configurations.",
+        "steps": [
+          "Both atoms have one outer electron: sodium 2,8,1 and potassium 2,8,8,1.",
+          "Potassium has an additional occupied shell, so its outer electron is farther from the nucleus and more shielded.",
+          "The outer electron is less strongly attracted and is lost more easily, supporting potassium’s greater reactivity."
+        ],
+        "explanation": "The chain is configuration → distance and shielding → easier electron loss → greater reactivity. Potassium’s larger positive nuclear charge alone would not explain the observed direction."
+      },
+      "commonMistakes": [
+        "Saying potassium has more outer electrons than sodium.",
+        "Claiming nuclear charge decreases down the group.",
+        "Using “it gains one electron” as the alkali-metal explanation."
+      ]
+    }
+  ]
+}

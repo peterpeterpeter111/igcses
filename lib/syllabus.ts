@@ -1,3 +1,4 @@
+import chemistryGroup1 from '../research/syllabus/4CH1-group1.json' with { type: 'json' };
 import biologyGMCloning from '../research/syllabus/4BI1-genetic-modification-cloning.json' with { type: 'json' };
 import biologyBreeding from '../research/syllabus/4BI1-selective-breeding.json' with { type: 'json' };
 import biologyFood from '../research/syllabus/4BI1-food-production.json' with { type: 'json' };
@@ -61,6 +62,7 @@ import mathsPolynomials from '../research/syllabus/4MB1-polynomials-and-fraction
 
 // Reviewed overlays are kept separate from the immutable raw candidates.
 export const reviewedInventories = [
+  { title: 'Group 1 (2.1–2.4C; partial teaching)', ...chemistryGroup1 },
   { title: 'Genetic modification and cloning (5.12–5.20B; partial teaching)', ...biologyGMCloning },
   { title: 'Selective breeding (5.10–5.11; partial teaching)', ...biologyBreeding },
   { title: 'Food production (5.1–5.9B; partial teaching)', ...biologyFood },
