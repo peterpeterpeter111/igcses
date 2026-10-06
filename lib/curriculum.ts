@@ -1,3 +1,4 @@
+import humanHeredityExtension from '../research/curriculum-audits/4HB1-heredity-extension.json' with { type: 'json' };
 import humanCoordinationHealth from '../research/curriculum-audits/4HB1-coordination-health.json' with { type: 'json' };
 import humanVision from '../research/curriculum-audits/4HB1-coordination-vision.json' with { type: 'json' };
 import humanHearing from '../research/curriculum-audits/4HB1-coordination-hearing.json' with { type: 'json' };
@@ -85,6 +86,7 @@ import mathsPolynomials from '../research/curriculum-audits/4MB1-polynomials-and
 
 // These bounded audits link partial teaching; they do not promote completion.
 export const curriculumAudits = [
+  humanHeredityExtension,
   humanCoordinationHealth,
   humanVision,
   humanHearing,

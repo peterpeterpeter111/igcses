@@ -15,7 +15,11 @@
   "goals": [
     "Distinguish alleles, genotype, phenotype and the listed genetic terminology.",
     "Construct a one-gene cross and interpret probabilities and pedigrees.",
-    "Compare the specified inherited-condition models; reproduction, development and the rest of heredity remain incomplete."
+    "Compare the specified inherited-condition models; reproduction, development and the rest of heredity remain incomplete.",
+    "Explain the school XX/XY cross and random-fertilisation variation.",
+    "Use the ABO multiple-allele model with explicit probabilities.",
+    "Trace proposed viral CF gene delivery and its limits.",
+    "Distinguish genetic, environmental and combined phenotypic differences."
   ],
   "sections": [
     {
@@ -355,6 +359,321 @@
         "Do not put a recessive X allele on Y at a gene lacking its corresponding locus.",
         "Do not equate all colour vision deficiency with the inherited red–green model."
       ]
+    },
+    {
+      "id": "human-sex-chromosome-model",
+      "title": "Locate the sex-chromosome pair in the course model",
+      "points": [
+        "11.15"
+      ],
+      "terms": [
+        "sex chromosome",
+        "autosome",
+        "XX",
+        "XY",
+        "diploid"
+      ],
+      "paragraphs": [
+        "A typical human diploid cell has 23 chromosome pairs. In the course comparison, 22 pairs are autosomes and one pair consists of sex chromosomes: XX in the usual female model and XY in the usual male model. This is one pair within the chromosome set, not the entire genome.",
+        "Meiosis gives a gamete one chromosome from each pair. X-bearing eggs and X- or Y-bearing sperm are the types used in this simplified cross. Real chromosome and developmental variations exist, so the school model is not an exhaustive personal classification."
+      ],
+      "example": {
+        "question": "Why is “an XY cell contains only two chromosomes” incorrect?",
+        "steps": [
+          "XY identifies the sex-chromosome pair.",
+          "The other chromosome pairs are autosomes.",
+          "The typical diploid total in this comparison is 46."
+        ],
+        "explanation": "Distinguish one pair from the complete set."
+      },
+      "commonMistakes": [
+        "Counting XX as one chromosome.",
+        "Treating the model as a complete description of every person."
+      ]
+    },
+    {
+      "id": "xx-xy-cross-model",
+      "title": "Construct the school XX/XY cross",
+      "points": [
+        "11.15",
+        "11.16"
+      ],
+      "paragraphs": [
+        "In the usual school human chromosome model, an XX parent produces X-bearing eggs and an XY parent produces X-bearing or Y-bearing sperm. XX is associated with the female developmental pattern and XY with the male pattern in that simplified comparison.",
+        "At fertilisation an X-bearing egg combines with X-bearing sperm to give XX or with Y-bearing sperm to give XY. A genetic diagram should label parental chromosome combinations, gamete types and offspring combinations.",
+        "Using equal X/Y sperm probabilities in the model gives two equally likely offspring combinations: XX and XY, each probability 1/2. The egg contributes X in both cases; it is the sperm’s X or Y that differs in this comparison.",
+        "This is a chromosome-inheritance model, not a complete definition of a person’s sex traits or identity. Chromosome/development variations exist and not every person is described by its two categories. It gives no guarantee that a particular family has equal numbers of each outcome."
+      ],
+      "example": {
+        "question": "Combine an X egg with the two stated sperm types.",
+        "steps": [
+          "X egg + X sperm → XX.",
+          "X egg + Y sperm → XY.",
+          "With equal stated sperm probabilities, each combination has probability 1/2."
+        ],
+        "explanation": "Label chromosome contributions and the probability assumptions."
+      },
+      "practice": {
+        "question": "Does an earlier XY outcome require the next outcome to be XX?",
+        "answer": "No. Independent fertilisations keep the same model probabilities.",
+        "explanation": "Label chromosome contributions and the probability assumptions."
+      },
+      "terms": [
+        "X chromosome",
+        "Y chromosome",
+        "XX",
+        "XY",
+        "fertilisation",
+        "sex chromosome model"
+      ],
+      "commonMistakes": [
+        "Do not attribute the varying X/Y contribution to the egg or treat the school categories as exhaustive personal classification."
+      ]
+    },
+    {
+      "id": "random-fertilisation-combinations",
+      "title": "Explain how random gamete fusion adds variation",
+      "points": [
+        "11.17",
+        "11.23"
+      ],
+      "terms": [
+        "random fertilisation",
+        "gamete",
+        "allele combination",
+        "zygote"
+      ],
+      "paragraphs": [
+        "Meiosis produces gametes with different combinations of inherited alleles. At fertilisation, one egg and one sperm fuse, combining a gamete from each parent and restoring the diploid chromosome set. Which compatible gametes unite contributes to differences among offspring.",
+        "Fusion combines existing genetic material; it does not create every new allele by mutation. Neither gamete is deliberately selected to give the offspring a needed characteristic. The specification repeats this random-fertilisation requirement at 11.17 and 11.23; both references point to this explanation."
+      ],
+      "example": {
+        "question": "Why can siblings inherit different allele combinations from the same parents?",
+        "steps": [
+          "The parents can produce varied gamete genotypes.",
+          "Different gametes can combine at fertilisation.",
+          "The parental genes need not all mutate between births."
+        ],
+        "explanation": "Separate reshuffling, fusion and mutation."
+      },
+      "commonMistakes": [
+        "Claiming fertilisation always creates a new allele.",
+        "Selecting a gamete because its future offspring needs a trait."
+      ]
+    },
+    {
+      "id": "gamete-combination-counting",
+      "title": "Count possible combinations without predicting a family",
+      "points": [
+        "11.17",
+        "11.23"
+      ],
+      "terms": [
+        "possible combination",
+        "independent event",
+        "probability"
+      ],
+      "paragraphs": [
+        "In an original simplified model, one parent can supply two distinguishable gamete genotypes and the other can supply three. Pairing each first type with each second gives 2 × 3 = 6 possible combinations. Equal probabilities require an additional assumption that the stated types are equally likely.",
+        "Six possibilities do not require a family of six children to show all six outcomes. Each fertilisation is a new event in the model. Real gamete types and probabilities depend on the genetic assumptions; this count is a mathematical illustration, not a complete human genome calculation."
+      ],
+      "example": {
+        "question": "If all six stated combinations are equally likely, what is the probability of one specified combination?",
+        "steps": [
+          "There are six possible pairs.",
+          "The equal-probability assumption gives 1/6 for each.",
+          "Observed small-family counts need not match the theoretical proportion."
+        ],
+        "explanation": "Distinguish a sample-space calculation from a guaranteed sequence."
+      },
+      "commonMistakes": [
+        "Using 2 + 3 = 5 instead of pairing all types.",
+        "Saying an earlier outcome forces the next one."
+      ]
+    },
+    {
+      "id": "abo-multiple-alleles",
+      "title": "Connect ABO phenotypes to multiple alleles",
+      "points": [
+        "11.18"
+      ],
+      "terms": [
+        "ABO",
+        "multiple alleles",
+        "codominance",
+        "I^A",
+        "I^B",
+        "i"
+      ],
+      "paragraphs": [
+        "The standard ABO model uses three alleles in the population: I^A, I^B and i. An ordinary diploid individual has two alleles at this gene position, not all three merely because the population has three possibilities.",
+        "I^A and I^B are codominant with each other and each is dominant over i. Genotypes I^A I^A or I^A i give group A; I^B I^B or I^B i give group B; I^A I^B gives group AB; ii gives group O. AB shows both A and B red-cell antigens rather than a blended intermediate.",
+        "These genotype rules explain an inheritance model. They do not supply a clinical transfusion decision, and unusual biological exceptions are outside this simplified comparison. Define the superscripts and allele symbols before drawing a cross."
+      ],
+      "example": {
+        "question": "Why does “three alleles exist” not mean a person normally carries three ABO alleles?",
+        "steps": [
+          "Multiple alleles describes the population.",
+          "The individual normally inherits one allele from each parent.",
+          "A diploid genotype therefore contains two."
+        ],
+        "explanation": "Keep population possibilities and individual chromosome number separate."
+      },
+      "commonMistakes": [
+        "Calling AB a blend that removes A and B expression.",
+        "Giving every group A individual only one possible genotype."
+      ]
+    },
+    {
+      "id": "abo-cross-and-probability",
+      "title": "Draw an ABO cross using the actual genotypes",
+      "points": [
+        "11.18"
+      ],
+      "terms": [
+        "Punnett square",
+        "gamete",
+        "AB phenotype",
+        "O phenotype"
+      ],
+      "paragraphs": [
+        "For an original I^A i × I^B i cross, the first parent supplies I^A or i and the second I^B or i. With equal segregation and independent fusion, the four combinations are I^A I^B, I^A i, I^B i and ii.",
+        "The model therefore gives AB, A, B and O phenotypes, each with probability 1/4. A parent’s phenotype alone may not establish whether the genotype is homozygous or heterozygous. A cross must use the given genotype or show the uncertainty."
+      ],
+      "example": {
+        "question": "Could these stated heterozygous group A and group B parents produce a group O outcome in the model?",
+        "steps": [
+          "Yes: each can contribute i.",
+          "The resulting genotype is ii.",
+          "Its probability is 1/2 × 1/2 = 1/4 under the stated assumptions."
+        ],
+        "explanation": "Use allele contributions to justify the phenotype."
+      },
+      "commonMistakes": [
+        "Assuming group A and group B parents must produce only AB.",
+        "Omitting recessive gamete types from heterozygotes."
+      ]
+    },
+    {
+      "id": "cf-viral-gene-delivery",
+      "title": "Trace a viral gene-addition strategy for cystic fibrosis",
+      "points": [
+        "11.22"
+      ],
+      "terms": [
+        "CFTR",
+        "gene therapy",
+        "viral vector",
+        "airway cell",
+        "expression"
+      ],
+      "paragraphs": [
+        "A proposed gene-therapy strategy introduces a functioning CFTR gene copy into relevant cells. A modified viral vector can carry the DNA into target airway cells, which may then express functional CFTR protein. Improving this channel’s function aims to improve ion and water movement at the airway surface.",
+        "The vector is modified to deliver the intended material rather than simply giving the patient an ordinary disease-causing infection. Delivering a gene and expressing its protein are separate requirements. Gene addition does not necessarily remove or repair every inherited faulty copy."
+      ],
+      "example": {
+        "question": "Arrange DNA delivery, protein production and the intended functional benefit.",
+        "steps": [
+          "Modified vector delivers functioning CFTR DNA to appropriate cells.",
+          "Those cells express the protein.",
+          "Improved channel function can improve airway-surface ion/water regulation."
+        ],
+        "explanation": "Link the genetic material to its product and target function."
+      },
+      "commonMistakes": [
+        "Calling a virus the functional CFTR protein.",
+        "Assuming delivery alone proves adequate expression in every cell."
+      ]
+    },
+    {
+      "id": "cf-gene-therapy-limits",
+      "title": "Explain delivery and persistence limits",
+      "points": [
+        "11.22"
+      ],
+      "terms": [
+        "target cell",
+        "immune response",
+        "non-integrating",
+        "somatic therapy"
+      ],
+      "paragraphs": [
+        "Mucus, cell entry, the number of cells reached and immune responses make delivery difficult. Some added DNA remains separate from the genome and may have a limited effect duration; different strategies have different persistence and risks.",
+        "Viral CF gene delivery remains a research/clinical-trial strategy in the selected source review. It is not presented here as a guaranteed routine cure. Treating airway somatic cells does not by itself change the patient’s eggs or sperm or guarantee removal of inherited risk for offspring."
+      ],
+      "example": {
+        "question": "Why does adding CFTR DNA to some airway cells not mean every future child inherits a corrected CFTR allele?",
+        "steps": [
+          "The targeted airway cells are somatic.",
+          "Inheritance occurs through gamete genetic material.",
+          "The stated treatment does not establish gamete correction."
+        ],
+        "explanation": "Separate a patient’s target-tissue response from germline inheritance."
+      },
+      "commonMistakes": [
+        "Calling all vectors harmless by definition.",
+        "Promising permanent benefit merely because DNA entered a cell."
+      ]
+    },
+    {
+      "id": "human-variation-sources",
+      "title": "Distinguish genetic, environmental and combined variation",
+      "points": [
+        "11.24"
+      ],
+      "terms": [
+        "variation",
+        "genetic",
+        "environmental",
+        "phenotype"
+      ],
+      "paragraphs": [
+        "Variation is difference among individuals of the same species. Genetic variation involves inherited genetic differences, while environmental conditions can alter phenotype without changing the inherited allele combination. ABO group illustrates a predominantly inherited model; a scar acquired after an injury illustrates an environmental influence.",
+        "Many differences, including human height, involve both inherited factors and conditions such as nutrition. A visible difference alone does not prove a different inherited allele, and a resemblance does not prove identical environments. Describe the feature and the evidence rather than forcing every example into one exclusive category."
+      ],
+      "example": {
+        "question": "Why can differences in adult height have both genetic and environmental contributions?",
+        "steps": [
+          "Inherited factors influence growth.",
+          "Nutrition and other conditions also influence development.",
+          "The phenotype reflects their combined effects."
+        ],
+        "explanation": "Distinguish influences from a claim of one exclusive cause."
+      },
+      "commonMistakes": [
+        "Calling an acquired scar an allele.",
+        "Saying every phenotypic difference must be inherited."
+      ]
+    },
+    {
+      "id": "variation-comparison-limits",
+      "title": "Interpret a comparison without inventing an isolated cause",
+      "points": [
+        "11.24"
+      ],
+      "terms": [
+        "comparison",
+        "confounding variable",
+        "inference",
+        "genotype"
+      ],
+      "paragraphs": [
+        "A hypothetical report compares height in two groups with different nutrition but also different family backgrounds. An association with nutrition alone cannot isolate its contribution if inherited influences and other conditions differ too.",
+        "Better evidence accounts for the relevant backgrounds, measures exposure and recognises remaining uncertainty. No human development experiment has been performed for these notes. A controlled comparison is a reasoning model, not an instruction to restrict nutrition or alter someone’s growth."
+      ],
+      "example": {
+        "question": "Does this two-group comparison establish that genes played no role?",
+        "steps": [
+          "No: family background also differed.",
+          "The influences are not separated by the comparison.",
+          "State a limited conclusion and identify other relevant variables."
+        ],
+        "explanation": "Match the causal claim to the design."
+      },
+      "commonMistakes": [
+        "Treating a correlation as proof of exclusive causation.",
+        "Describing invented observations as measured results."
+      ]
     }
   ],
   "supportingSources": [
@@ -377,6 +696,46 @@
       "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/color-blindness/causes-color-vision-deficiency",
       "sectionIds": [
         "x-linked-condition-models"
+      ]
+    },
+    {
+      "title": "OpenStax 11.2: selected usual chromosome contributions and developmental qualification",
+      "url": "https://openstax.org/books/introduction-behavioral-neuroscience/pages/11-2-mechanisms-of-sexual-determination-and-differentiation",
+      "sectionIds": [
+        "human-sex-chromosome-model",
+        "xx-xy-cross-model"
+      ]
+    },
+    {
+      "title": "OpenStax 11.1: selected gamete assortment/fertilisation context",
+      "url": "https://openstax.org/books/biology/pages/11-1-the-process-of-meiosis",
+      "sectionIds": [
+        "random-fertilisation-combinations",
+        "gamete-combination-counting"
+      ]
+    },
+    {
+      "title": "OpenStax 8.3: selected multiple-allele and ABO dominance rules",
+      "url": "https://openstax.org/books/concepts-biology/pages/8-3-extensions-of-the-laws-of-inheritance",
+      "sectionIds": [
+        "abo-multiple-alleles",
+        "abo-cross-and-probability"
+      ]
+    },
+    {
+      "title": "Cystic Fibrosis Foundation: selected vector delivery challenges and trial status",
+      "url": "https://www.cff.org/research-clinical-trials/genetic-therapy-delivery-cystic-fibrosis",
+      "sectionIds": [
+        "cf-viral-gene-delivery",
+        "cf-gene-therapy-limits"
+      ]
+    },
+    {
+      "title": "Cystic Fibrosis Foundation: selected gene addition and persistence distinctions",
+      "url": "https://www.cff.org/research-clinical-trials/gene-therapy-cystic-fibrosis",
+      "sectionIds": [
+        "cf-viral-gene-delivery",
+        "cf-gene-therapy-limits"
       ]
     }
   ]

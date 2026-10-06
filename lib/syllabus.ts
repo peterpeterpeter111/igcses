@@ -1,3 +1,4 @@
+import humanHeredityExtension from '../research/syllabus/4HB1-heredity-extension.json' with { type: 'json' };
 import humanCoordinationHealth from '../research/syllabus/4HB1-coordination-health.json' with { type: 'json' };
 import humanVision from '../research/syllabus/4HB1-coordination-vision.json' with { type: 'json' };
 import humanHearing from '../research/syllabus/4HB1-coordination-hearing.json' with { type: 'json' };
@@ -80,6 +81,7 @@ import mathsPolynomials from '../research/syllabus/4MB1-polynomials-and-fraction
 
 // Reviewed overlays are kept separate from the immutable raw candidates.
 export const reviewedInventories = [
+  { title: 'Human heredity extension (selected11.15–11.24; partial teaching)', ...humanHeredityExtension },
   { title: 'Human Coordination practical, drugs and clinical topics (5.15–5.19; partial teaching)', ...humanCoordinationHealth },
   { title: 'Human eye mechanisms and defects (5.11–5.12; partial teaching)', ...humanVision },
   { title: 'Human hearing/balance/noise (5.13–5.14; partial teaching)', ...humanHearing },
