@@ -45,7 +45,9 @@ if __name__ == '__main__':
         metadata, name = item.split(b'\t', 1)
         mode, kind, sha = metadata.decode().split()
         entries[name.decode()] = (mode, kind, sha)
-    changed = git('diff', '--name-only', '-z', base, head).decode().split('\0')
+    # Tree requests need both the removed path and the replacement. Git's rename
+    # detection otherwise returns only the destination with --name-only.
+    changed = git('diff', '--no-renames', '--name-only', '-z', base, head).decode().split('\0')
     batches, current = [], []
 
     def request(elements):

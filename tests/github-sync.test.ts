@@ -73,3 +73,19 @@ void test('committed source sync includes new diagrams and allows ignored local 
     assert.equal(f.git('status', '--porcelain'), '');
   } finally { f.cleanup(); }
 });
+
+void test('source sync represents a rename as deletion and addition', () => {
+  const f = fixture();
+  try {
+    f.git('mv', 'source.txt', 'renamed-source.txt');
+    f.git('commit', '-qm', 'rename saved source');
+    const result = f.prepare();
+    assert.equal(result.status, 0, result.stderr);
+    const batch = JSON.parse(readFileSync(join(f.root, 'work/sync/batch-001.json'), 'utf8'));
+    assert.deepEqual(batch.tree_elements, [
+      { path: 'renamed-source.txt', mode: '100644', type: 'blob', content: 'base\n' },
+      { path: 'source.txt', mode: '100644', type: 'blob', sha: null },
+    ]);
+    assert.equal(f.git('status', '--porcelain'), '');
+  } finally { f.cleanup(); }
+});
