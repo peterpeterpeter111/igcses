@@ -92,6 +92,73 @@
       "sectionIds": [
         "bacterial-nutrition-and-growth-conditions"
       ]
+    },
+    {
+      "title": "WHO: selected cholera route, rehydration and WASH measures",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/cholera",
+      "sectionIds": [
+        "cholera-faecal-oral-route",
+        "cholera-care-and-prevention"
+      ]
+    },
+    {
+      "title": "WHO: selected gonorrhoea cause, routes, treatment and prevention",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/gonorrhoea-(neisseria-gonorrhoeae-infection)",
+      "sectionIds": [
+        "gonorrhoea-transmission-and-effects",
+        "gonorrhoea-treatment-and-prevention"
+      ]
+    },
+    {
+      "title": "WHO: selected oral rehydration glucose/electrolyte purpose",
+      "url": "https://www.who.int/publications/i/item/WHO-FCH-CAH-06.1",
+      "sectionIds": [
+        "oral-rehydration-absorption",
+        "oral-rehydration-limits-and-data"
+      ]
+    },
+    {
+      "title": "WHO: indexed historical glucose-mediated intestinal absorption evidence, not a formulation recipe",
+      "url": "https://applications.emro.who.int/docs/WP_05_EN.pdf",
+      "sectionIds": [
+        "oral-rehydration-absorption"
+      ]
+    },
+    {
+      "title": "NHS: selected fungal cause, transfer, antifungal treatment and prevention",
+      "url": "https://www.nhs.uk/conditions/athletes-foot/",
+      "sectionIds": [
+        "athletes-foot-fungal-transmission"
+      ]
+    },
+    {
+      "title": "CDC DPDx: selected malaria development across mosquito and human hosts",
+      "url": "https://www.cdc.gov/dpdx/malaria/",
+      "sectionIds": [
+        "malaria-pathogen-and-mosquito"
+      ]
+    },
+    {
+      "title": "WHO: indexed housefly mechanical carrier context",
+      "url": "https://iris.who.int/bitstream/handle/10665/38143/9241544112_eng_part1.pdf?sequence=1",
+      "sectionIds": [
+        "typhoid-housefly-mechanical-route"
+      ]
+    },
+    {
+      "title": "WHO: selected malaria measures and resistance target distinctions",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/malaria",
+      "sectionIds": [
+        "malaria-treatment-and-prevention"
+      ]
+    },
+    {
+      "title": "WHO: selected typhoid agent, faecal–oral routes, carriage and prevention",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/typhoid",
+      "sectionIds": [
+        "typhoid-housefly-mechanical-route",
+        "typhoid-treatment-and-prevention"
+      ]
     }
   ],
   "prerequisites": [
@@ -101,7 +168,9 @@
   "goals": [
     "Explain infection and distinguish named viruses from resulting disease.",
     "Relate bacterial growth to structure, conditions and measurements.",
-    "Plan a controlled antibacterial comparison and recognise its limits."
+    "Plan a controlled antibacterial comparison and recognise its limits.",
+    "Distinguish named pathogen, vector, route and intervention.",
+    "Explain rehydration through replacement and absorption rather than pathogen killing."
   ],
   "sections": [
     {
@@ -609,6 +678,330 @@
         "alt": "Original hypothetical disc-diffusion model. An outer clear zone is 20 millimetres across and the central paper disc is 6 millimetres across. A separate solvent-control disc has no additional clear halo. Both are conceptual and not clinical results.",
         "caption": "Original conceptual measurements: whole-zone diameter includes the disc. No experiment was performed; distances are not clinical susceptibility thresholds."
       }
+    },
+    {
+      "id": "cholera-faecal-oral-route",
+      "title": "Trace the cholera faecal–oral route",
+      "points": [
+        "12.7"
+      ],
+      "terms": [
+        "Vibrio cholerae",
+        "faecal–oral",
+        "contaminated water",
+        "diarrhoea"
+      ],
+      "paragraphs": [
+        "Cholera is an intestinal infection caused by the bacterium Vibrio cholerae. Infected faecal material can contaminate water or food; consuming that material transfers the pathogen to another person. Infection can occur without obvious symptoms, so appearance alone cannot certify safe food or water.",
+        "Toxin-producing strains can cause profuse watery diarrhoea, losing water and dissolved ions from the body. The resulting dehydration is a major danger. This mechanism is different from ordinary airborne transmission or a mosquito injecting a parasite."
+      ],
+      "example": {
+        "question": "Arrange infected faeces, contaminated drinking water and a new intestinal infection into a route.",
+        "steps": [
+          "Faecal material contaminates the water.",
+          "Another person consumes the contaminated water.",
+          "The bacterium reaches the intestine."
+        ],
+        "explanation": "Link the material carrying the pathogen to its entry route."
+      },
+      "commonMistakes": [
+        "Calling cholera a viral infection.",
+        "Assuming every infected person has visible diarrhoea."
+      ]
+    },
+    {
+      "id": "cholera-care-and-prevention",
+      "title": "Separate cholera rehydration from transmission control",
+      "points": [
+        "12.7",
+        "12.8"
+      ],
+      "terms": [
+        "rehydration",
+        "sanitation",
+        "safe water",
+        "oral vaccine"
+      ],
+      "paragraphs": [
+        "Prompt replacement of lost fluids and electrolytes is central to cholera care. Oral rehydration solution is used for many cases; severe dehydration can require intravenous fluids and other clinical care. Antibiotics are used in selected clinical circumstances rather than being the only response or a universal community prevention measure.",
+        "Safe drinking water, hygienic food handling and safe disposal of faeces interrupt the faecal–oral route. Oral cholera vaccination can add protection in appropriate programmes. Preventing contamination and treating dehydration act at different stages."
+      ],
+      "example": {
+        "question": "Why can improving sanitation prevent new cases while replacing a patient’s fluids has a different immediate purpose?",
+        "steps": [
+          "Sanitation interrupts transfer of the bacterium.",
+          "Fluid replacement addresses water and ion losses in the patient."
+        ],
+        "explanation": "Match each intervention to the problem it addresses."
+      },
+      "commonMistakes": [
+        "Calling a vaccine instant treatment for severe dehydration.",
+        "Claiming routine mass antibiotics are the essential prevention measure."
+      ]
+    },
+    {
+      "id": "gonorrhoea-transmission-and-effects",
+      "title": "Identify gonorrhoea and its routes",
+      "points": [
+        "12.7"
+      ],
+      "terms": [
+        "Neisseria gonorrhoeae",
+        "sexually transmitted infection",
+        "asymptomatic"
+      ],
+      "paragraphs": [
+        "Gonorrhoea is caused by the bacterium Neisseria gonorrhoeae. Transmission occurs mainly through sexual contact involving infected mucosal sites; an infected parent can also transmit it to a baby during birth. It is not the same pathogen as HIV.",
+        "Infection can produce painful urination or discharge, but may have no noticeable symptoms. Untreated infection can cause complications, including reproductive-tract damage and infertility. Symptoms alone neither identify every infection nor establish that a person without symptoms is uninfected."
+      ],
+      "example": {
+        "question": "Does absence of discharge prove absence of gonorrhoea?",
+        "steps": [
+          "No: infection can be asymptomatic.",
+          "Suitable clinical testing is different from observing one symptom."
+        ],
+        "explanation": "Keep the evidence required for a conclusion explicit."
+      },
+      "commonMistakes": [
+        "Calling gonorrhoea a virus.",
+        "Using absence of a symptom as a negative test."
+      ]
+    },
+    {
+      "id": "gonorrhoea-treatment-and-prevention",
+      "title": "Explain gonorrhoea treatment and prevention without a drug guarantee",
+      "points": [
+        "12.7"
+      ],
+      "terms": [
+        "antibiotic",
+        "resistance",
+        "condom",
+        "partner services"
+      ],
+      "paragraphs": [
+        "Appropriate antibiotics can treat gonorrhoea, but antimicrobial resistance complicates drug choice and can cause treatment failure. This does not make every strain untreatable or mean any antibiotic will work. Selection and follow-up belong to current clinical guidance.",
+        "Correct condom use reduces transmission risk. Testing, treatment and appropriate partner services can interrupt ongoing spread and reinfection. These measures do not depend on everyone having obvious symptoms. No personal regimen, dose or guaranteed cure is supplied by the classroom comparison."
+      ],
+      "example": {
+        "question": "Why might treating one infection without addressing infected contacts leave a risk of reinfection?",
+        "steps": [
+          "A contact can remain infected.",
+          "Later exposure can transfer the bacterium again."
+        ],
+        "explanation": "Successful treatment of one episode does not automatically remove every future source."
+      },
+      "commonMistakes": [
+        "Promising that one named drug cures every resistant strain.",
+        "Equating pregnancy prevention by any method with STI protection."
+      ]
+    },
+    {
+      "id": "oral-rehydration-absorption",
+      "title": "Explain why glucose and electrolytes help rehydration",
+      "points": [
+        "12.8"
+      ],
+      "terms": [
+        "oral rehydration solution",
+        "electrolyte",
+        "sodium",
+        "glucose",
+        "osmosis"
+      ],
+      "paragraphs": [
+        "Diarrhoea can remove water and electrolytes. Oral rehydration solution supplies water with an appropriate balance of glucose and salts. Glucose-linked sodium uptake in the small intestine can remain effective during diarrhoea; uptake of solutes supports absorption of water into the body.",
+        "Water movement relates to osmotic gradients produced by solute absorption. This mechanism does not require the solution to kill the pathogen or instantly stop every bowel movement. Glucose here is part of an absorption mechanism, not a claim that any very sweet drink is equivalent to a formulated solution."
+      ],
+      "example": {
+        "question": "Why is “ORS works by poisoning the bacterium” an incorrect explanation?",
+        "steps": [
+          "Its relevant action replaces losses and supports absorption.",
+          "Glucose and sodium uptake helps water enter the body.",
+          "Pathogen-specific treatment is a separate question."
+        ],
+        "explanation": "Trace the transport mechanism to the physiological benefit."
+      },
+      "commonMistakes": [
+        "Calling ORS an antibiotic.",
+        "Assuming adding unlimited sugar always improves absorption."
+      ]
+    },
+    {
+      "id": "oral-rehydration-limits-and-data",
+      "title": "Interpret losses without turning a model into a treatment plan",
+      "points": [
+        "12.8"
+      ],
+      "terms": [
+        "fluid balance",
+        "net loss",
+        "severe dehydration"
+      ],
+      "paragraphs": [
+        "A classroom fluid-balance model compares losses and absorbed replacement over a stated interval. In an invented example, losing 450 cm³ and absorbing 300 cm³ leaves a net loss of 150 cm³. This accounts for only the stated flows; real physiology includes other inputs and outputs.",
+        "Maintaining fluid and ion balance supports circulation and cell function. Severe dehydration needs urgent clinical assessment and may require intravenous replacement; a calculation cannot choose an individual’s dose. Use properly formulated products and clinical guidance rather than treating the example as a homemade recipe or prescribing instruction."
+      ],
+      "example": {
+        "question": "Calculate the net loss for the invented values without ignoring units.",
+        "steps": [
+          "450 − 300 = 150 cm³ net loss.",
+          "State the interval and the limited flows included."
+        ],
+        "explanation": "A positive replacement volume can still be smaller than the loss."
+      },
+      "commonMistakes": [
+        "Claiming any replacement volume completely restores balance.",
+        "Using the fictional volumes as a personal dose."
+      ]
+    },
+    {
+      "id": "athletes-foot-fungal-transmission",
+      "title": "Relate athlete’s foot prevention to fungal transmission",
+      "points": [
+        "12.9"
+      ],
+      "terms": [
+        "fungal infection",
+        "skin",
+        "damp surface",
+        "antifungal"
+      ],
+      "paragraphs": [
+        "Athlete’s foot is a fungal infection of the skin, often affecting the feet and spaces between toes. It can spread through contact with affected skin or contaminated surfaces, particularly damp shared floors. Shared towels, socks or footwear can also transfer infective material. Warm, moist conditions favour its persistence; sweat alone is not the pathogen.",
+        "Antifungal medicines treat the fungus. Keeping feet clean and dry, avoiding shared towels or footwear and using suitable footwear in communal showers reduce exposure or conditions favouring infection. Not every itchy rash is athlete’s foot, and antibacterial antibiotics are not a substitute for identifying a fungal cause."
+      ],
+      "example": {
+        "question": "Why do drying feet and avoiding shared towels address different parts of the problem?",
+        "steps": [
+          "Drying reduces moisture favouring fungal growth.",
+          "Avoiding a contaminated shared towel reduces transfer."
+        ],
+        "explanation": "Separate conditions supporting growth from transfer of the organism."
+      },
+      "commonMistakes": [
+        "Calling perspiration itself the causative agent.",
+        "Describing every skin rash as the same infection."
+      ]
+    },
+    {
+      "id": "malaria-pathogen-and-mosquito",
+      "title": "Distinguish the malaria parasite from its mosquito vector",
+      "points": [
+        "12.10"
+      ],
+      "terms": [
+        "Plasmodium",
+        "protoctist",
+        "female Anopheles",
+        "biological vector",
+        "host"
+      ],
+      "paragraphs": [
+        "Malaria is caused by Plasmodium parasites, classified as protoctists in the syllabus. An infected female Anopheles mosquito transfers parasite stages in saliva during a blood meal. The mosquito is the vector; the parasite is the causative agent. A mosquito bite does not create the parasite from the person’s blood.",
+        "The parasite develops in the mosquito as well as in the human host. In humans, liver stages precede blood stages involving red blood cells. A mosquito feeding on an infected person can acquire parasite stages, which must develop before that mosquito can transmit them. This makes a biological cycle rather than simple dirt carried on the outside of an insect."
+      ],
+      "example": {
+        "question": "Classify Plasmodium and an infected mosquito as causative agent or vector.",
+        "steps": [
+          "Plasmodium is the agent causing malaria.",
+          "The mosquito carries and transfers it between hosts."
+        ],
+        "explanation": "The carrier and the organism causing the disease are distinct."
+      },
+      "commonMistakes": [
+        "Naming the mosquito as a bacterium causing malaria.",
+        "Assuming every mosquito is infected or immediately becomes infective."
+      ]
+    },
+    {
+      "id": "typhoid-housefly-mechanical-route",
+      "title": "Trace a mechanical housefly route for typhoid",
+      "points": [
+        "12.10"
+      ],
+      "terms": [
+        "Salmonella Typhi",
+        "housefly",
+        "mechanical vector",
+        "faecal contamination"
+      ],
+      "paragraphs": [
+        "Typhoid fever is caused by Salmonella Typhi bacteria. In the syllabus housefly model, a fly contacts contaminated faecal material and then exposed food, carrying bacteria on its body or through regurgitation and droppings. A person ingesting the contaminated food can acquire infection.",
+        "The fly is a mechanical carrier in this route; no required parasite development inside the fly is part of the model. Houseflies do not inject typhoid through a blood-feeding bite. Typhoid also spreads through other faecal–oral contamination of food or water, so a fly is not necessary for every case."
+      ],
+      "example": {
+        "question": "Why does covering food interrupt the housefly route even though it does not cure an infected person?",
+        "steps": [
+          "It reduces fly contact with food.",
+          "That interrupts a possible transfer step.",
+          "Clinical treatment acts on the established infection separately."
+        ],
+        "explanation": "Identify the broken link in the transmission chain."
+      },
+      "commonMistakes": [
+        "Calling typhoid a mosquito-borne protoctist infection.",
+        "Making the housefly the only possible route."
+      ]
+    },
+    {
+      "id": "malaria-treatment-and-prevention",
+      "title": "Match malaria measures to parasite and vector",
+      "points": [
+        "12.11"
+      ],
+      "terms": [
+        "antimalarial",
+        "insecticide-treated net",
+        "vector control",
+        "resistance"
+      ],
+      "paragraphs": [
+        "Diagnosis and appropriate antimalarial medicines target infection with the parasite. Drug choice depends on factors including parasite species and resistance, so no universal drug name or regimen is assigned here. Severe malaria needs prompt clinical care.",
+        "Insecticide-treated bed nets, indoor residual spraying and other appropriate bite-reduction measures interrupt vector contact. Preventive medicines and vaccination can add protection in specified settings, rather than replacing all other measures. Insecticide resistance in mosquitoes is distinct from drug resistance in Plasmodium."
+      ],
+      "example": {
+        "question": "Which target differs between an insecticide-treated net and an antimalarial medicine?",
+        "steps": [
+          "The net reduces contact with or survival of the mosquito vector.",
+          "The medicine acts against the parasite in the treatment or prevention context."
+        ],
+        "explanation": "Choose the organism targeted before describing the effect."
+      },
+      "commonMistakes": [
+        "Claiming bed nets cure an existing infection.",
+        "Treating mosquito insecticide resistance as bacterial antibiotic resistance."
+      ]
+    },
+    {
+      "id": "typhoid-treatment-and-prevention",
+      "title": "Explain typhoid treatment and prevention by route",
+      "points": [
+        "12.11"
+      ],
+      "terms": [
+        "antibiotic",
+        "carrier",
+        "sanitation",
+        "food hygiene",
+        "vaccination"
+      ],
+      "paragraphs": [
+        "Appropriate antibiotics treat typhoid, but resistance can complicate treatment. Some people can continue carrying and shedding Salmonella Typhi after symptoms improve. Losing a fever alone does not prove the organism can no longer be transmitted.",
+        "Safe water, sanitation, handwashing and hygienic food handling limit faecal–oral transfer. Covering food and managing waste also reduce opportunities for mechanical transfer by flies. Vaccination provides additional protection in appropriate programmes; it does not make food and water precautions unnecessary."
+      ],
+      "example": {
+        "question": "Why can food-handler hygiene matter even after symptoms improve?",
+        "steps": [
+          "Bacteria may still be shed in faeces.",
+          "Contaminated hands can transfer them to food."
+        ],
+        "explanation": "Link possible carriage to the material and route involved."
+      },
+      "commonMistakes": [
+        "Assuming every recovered-looking person has cleared the bacterium.",
+        "Claiming vaccination replaces sanitation."
+      ]
     }
   ]
 }

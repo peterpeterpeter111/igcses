@@ -9,10 +9,10 @@ import { curriculumAudits } from '../lib/curriculum.ts';
 
 void test('combined curriculum audits preserve unique source identities and real partial evidence', () => {
   const parents = curriculumAudits.flatMap((a) => a.parents);
-  assert.equal(parents.length, 761);
+  assert.equal(parents.length, 766);
   assert.equal(new Set(parents.map((p) => p.parentId)).size, parents.length);
   const requirements = parents.flatMap((p) => p.requirements);
-  assert.equal(requirements.length, 2647);
+  assert.equal(requirements.length, 2675);
   assert.equal(new Set(requirements.map((r) => r.id)).size, requirements.length);
   for (const a of curriculumAudits) {
     const chapterInventories = reviewedInventories.filter((i) => i.qualification === a.qualification && i.points.some((p) => p.chapterId === a.chapterId));
@@ -86,8 +86,11 @@ void test('curriculum teaching evidence resolves to real fields without promotin
 
 void test('new plotting teaching links are dated independently of the older source identity review', async () => {
   const { execFileSync } = await import('node:child_process');
-  const rows = JSON.parse(execFileSync('python3', ['-c', "import json; from scripts.ledger_io import read_table; print(json.dumps(read_table('research/ledger/v1','coverage')[1]))"], { encoding: 'utf8' }));
-  for (const ref of ['1.3', '1.7']) {
+  const references = ['1.3', '1.7'];
+  const ids = references.map((ref) => '4PH1:issue4:' + ref + ':plotting-motion-data');
+  // Return only the rows under review so curriculum growth cannot fill the subprocess buffer.
+  const rows = JSON.parse(execFileSync('python3', ['-c', "import json,sys; from scripts.ledger_io import read_table; ids=set(json.loads(sys.argv[1])); print(json.dumps([r for r in read_table('research/ledger/v1','coverage')[1] if r['coverage_id'] in ids]))", JSON.stringify(ids)], { encoding: 'utf8' }));
+  for (const ref of references) {
     const row = rows.find((r: Record<string, string>) => r.coverage_id === '4PH1:issue4:' + ref + ':plotting-motion-data');
     assert.ok(row);
     const point = inventory.points.find((p) => p.reference === ref)!;
