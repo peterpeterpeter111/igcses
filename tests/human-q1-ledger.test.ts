@@ -4,11 +4,11 @@ import { execFileSync } from 'node:child_process';
 import { subjectEvidence, evidenceHighlights } from '../lib/coverage.ts';
 
 const setup = `
-import csv,json,tempfile,shutil,runpy
+import csv,json,tempfile,shutil,runpy,sys
 from pathlib import Path
-source=Path.cwd();api=runpy.run_path(str(source/'scripts/export-human-q1.py'))
+source=Path.cwd();sys.path.insert(0,str(source/'scripts'));api=runpy.run_path(str(source/'scripts/export-human-q1.py'))
 def copy(root):
- for folder in ['research/extractions','research/paper-indexes','research/syllabus','research/syllabus-skills','research/ledger/v1','research/batches','research/reviews']:
+ for folder in ['content','research/curriculum-audits','research/extractions','research/paper-indexes','research/syllabus','research/syllabus-skills','research/ledger/v1','research/batches','research/reviews']:
   shutil.copytree(source/folder,root/folder)
  shutil.copy(source/'research/sources.json',root/'research/sources.json')
 def rows(root,name):
@@ -76,7 +76,7 @@ void test('Human Q1–Q9 rejects completion, inventory and source/rubric changes
         setup +
           `
 cases=[]
-for mode in ['stage','human','whole-count','whole-marks','whole-pages','hash','task-page','task-duplicate','criteria-duplicate','cap','any-two-mode','eligibility','ao','activation','practical-mapping','shared-stimulus','stale-row','graph-cap','graph-exclusion','gap-order','skill-source','index-missing','index-mark','index-blank','index-pages','index-stimulus','index-promoted','index-solution','index-paperlog','dna-cap','dna-activation','dna-wording','carrier-concession','pedigree-parent','pedigree-choice','q3-mapping','apparatus-topology','drawing-promotion','exercise-data','pace-control','oxygen-cap','enzyme-cap','enzyme-amount','numeric-optimum','enzyme-calibration','cube-answer-cap','cube-ecf','cube-data','cube-dependent','cube-promoted','heat-policy','cube-skill','compound-rib','compound-diaphragm','intercostal-policy','lung-letter','lung-value','numeric-trace','residual-primary','molecular-screen','aerobic-term','treated-sludge','pit-scope','threshold-any','threshold-schedule','threshold-unit','threshold-calibrated','transfusion-cap','abo-antigens','x-linked-scope']:
+for mode in ['stage','human','whole-count','whole-marks','whole-pages','hash','task-page','task-duplicate','criteria-duplicate','cap','any-two-mode','eligibility','ao','activation','practical-mapping','shared-stimulus','stale-row','graph-cap','graph-exclusion','gap-order','skill-source','index-missing','index-mark','index-blank','index-pages','index-stimulus','index-promoted','index-solution','index-paperlog','dna-cap','dna-activation','dna-wording','carrier-concession','pedigree-parent','pedigree-choice','q3-mapping','apparatus-topology','drawing-promotion','exercise-data','pace-control','oxygen-cap','enzyme-cap','enzyme-amount','numeric-optimum','enzyme-calibration','cube-answer-cap','cube-ecf','cube-data','cube-dependent','cube-promoted','heat-policy','cube-skill','compound-rib','compound-diaphragm','intercostal-policy','lung-letter','lung-value','numeric-trace','residual-primary','molecular-screen','aerobic-term','treated-sludge','pit-scope','threshold-any','threshold-schedule','threshold-unit','threshold-calibrated','transfusion-cap','abo-antigens','x-linked-scope','teaching-orphan','teaching-source','teaching-completion','teaching-audit']:
  with tempfile.TemporaryDirectory() as d:
   root=Path(d);copy(root);p=root/api['OVERLAY'];m=json.loads(p.read_text());t=m['tasks'][3]
   if mode=='stage':m['paperStage']='processed'
@@ -139,6 +139,15 @@ for mode in ['stage','human','whole-count','whole-marks','whole-pages','hash','t
   elif mode=='transfusion-cap':m['tasks'][39]['scoringRule']['maximum']=6
   elif mode=='abo-antigens':m['tasks'][39]['sourceQualification']['generatedScope']='O cells have no antigens of any kind'
   elif mode=='x-linked-scope':m['tasks'][40]['sourceQualification']['generatedScope']='Females cannot be affected'
+  elif mode.startswith('teaching-'):
+   point_path=root/api['Q2_INVENTORY'];inventory=json.loads(point_path.read_text());point=inventory['points'][0]
+   if mode=='teaching-orphan':point['noteSectionIds']=['missing-section']
+   elif mode=='teaching-source':
+    note_path=root/'content/notes/human-biology-nutrition.json';note=json.loads(note_path.read_text());note['sourceId']='4BI1-spec';note_path.write_text(json.dumps(note))
+   elif mode=='teaching-completion':point['teachingCoverage']='complete'
+   elif mode=='teaching-audit':
+    audit_path=root/'research/curriculum-audits/4HB1-nutrition.json';audit=json.loads(audit_path.read_text());audit['parents']=[p for p in audit['parents'] if p['officialReference']!='6.12'];audit_path.write_text(json.dumps(audit))
+   point_path.write_text(json.dumps(inventory))
   elif mode=='skill-source':m['tasks'][8]['skillMappings'][0]['evidenceRefs'][0]['pdfPages']=[44]
   elif mode=='stale-row':
    path=root/'research/ledger/v1/tasks.csv';data=rows(root,'tasks');stale=dict(data[0]);stale['task_id']=api['PAPER']+'.Q9';stale['paper_id']=api['PAPER'];data.append(stale)
@@ -167,7 +176,7 @@ print(json.dumps(cases))
       { encoding: 'utf8' },
     ),
   );
-  assert.equal(result.length, 70);
+  assert.equal(result.length, 74);
 });
 
 void test('coverage separates Human visual inventory from detailed subset', () => {

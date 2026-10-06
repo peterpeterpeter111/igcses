@@ -1,0 +1,1090 @@
+{
+  "subjectId": "human-biology",
+  "chapterId": "nutrition",
+  "status": "source-checked",
+  "complete": false,
+  "humanReviewed": false,
+  "sourceId": "4HB1-spec",
+  "sourcePages": [
+    21
+  ],
+  "prerequisites": [
+    "Enzymes catalyse particular substrates under suitable conditions.",
+    "Distinguish physical pieces from molecules and units from elements.",
+    "Use consistent mass, height, energy and nutrient units."
+  ],
+  "goals": [
+    "Explain diet variation and interpret reference data with the right population.",
+    "Trace organs, enzymes, products and absorption without confusing production and action.",
+    "Explain tooth structure/care, BMI arithmetic and risk without diagnostic overclaims.",
+    "Explain hygienic preparation and preservation mechanisms with their limitations."
+  ],
+  "supportingSources": [
+    {
+      "title": "NHS Eatwell Guide: selected overall food-group pattern",
+      "url": "https://www.nhs.uk/live-well/eat-well/food-guidelines-and-food-labels/the-eatwell-guide/",
+      "sectionIds": [
+        "balanced-diet"
+      ]
+    },
+    {
+      "title": "UK official food-label reference intake annex: indexed adult carbohydrate/fat/protein values",
+      "url": "https://www.legislation.gov.uk/eur/2011/1169/annexes/data.xht",
+      "sectionIds": [
+        "reference-intakes"
+      ]
+    },
+    {
+      "title": "NHS vitamin A: selected sources, vision and adult reference",
+      "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-a/",
+      "sectionIds": [
+        "reference-intakes",
+        "vitamin-a-source-function"
+      ]
+    },
+    {
+      "title": "NHS vitamin C: selected sources, function and adult reference",
+      "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-c/",
+      "sectionIds": [
+        "reference-intakes",
+        "vitamin-c-source-function"
+      ]
+    },
+    {
+      "title": "NHS vitamin D: selected bone/mineral and source facts",
+      "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/",
+      "sectionIds": [
+        "vitamin-d-calcium"
+      ]
+    },
+    {
+      "title": "NHS calcium: selected sources, function and adult reference",
+      "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/calcium/",
+      "sectionIds": [
+        "reference-intakes",
+        "mineral-sources-functions"
+      ]
+    },
+    {
+      "title": "NHS iron: selected source/function and age-specific references",
+      "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/iron/",
+      "sectionIds": [
+        "reference-intakes",
+        "mineral-sources-functions"
+      ]
+    },
+    {
+      "title": "NHS fibre: selected adult guideline and age distinction",
+      "url": "https://www.nhs.uk/live-well/eat-well/digestive-health/how-to-get-more-fibre-into-your-diet/",
+      "sectionIds": [
+        "reference-intakes"
+      ]
+    },
+    {
+      "title": "NHS scurvy: selected cause and symptoms",
+      "url": "https://www.nhs.uk/conditions/scurvy/",
+      "sectionIds": [
+        "vitamin-c-source-function",
+        "four-deficiency-associations"
+      ]
+    },
+    {
+      "title": "NHS iron-deficiency anaemia: selected cause and symptoms",
+      "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+      "sectionIds": [
+        "four-deficiency-associations"
+      ]
+    },
+    {
+      "title": "WHO Pocket Book: indexed nutritional oedema definition",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK154454/",
+      "sectionIds": [
+        "four-deficiency-associations"
+      ]
+    },
+    {
+      "title": "NIDDK: selected digestive route and accessory secretions",
+      "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/digestive-system-how-it-works",
+      "sectionIds": [
+        "alimentary-route",
+        "intestinal-organ-functions"
+      ]
+    },
+    {
+      "title": "OpenStax A&P23.3: selected tooth layer/type facts",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-3-the-mouth-pharynx-and-esophagus",
+      "sectionIds": [
+        "tooth-types-functions",
+        "tooth-structure"
+      ]
+    },
+    {
+      "title": "OpenStax A&P23.5: selected villus, microvillus and transport facts",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines",
+      "sectionIds": [
+        "villus-adaptations",
+        "absorption-route-products"
+      ]
+    },
+    {
+      "title": "OpenStax A&P23.7: selected enzyme production/action table",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-7-chemical-digestion-and-absorption-a-closer-look",
+      "sectionIds": [
+        "starch-enzyme-sites",
+        "protein-enzyme-sites",
+        "lipase-product-pathway"
+      ]
+    },
+    {
+      "title": "NHS: selected fluoride brushing and plaque facts",
+      "url": "https://www.nhs.uk/live-well/healthy-teeth-and-gums/how-to-keep-your-teeth-clean/",
+      "sectionIds": [
+        "teeth-growth-care"
+      ]
+    },
+    {
+      "title": "NHS adult BMI: calculation and applicability limits",
+      "url": "https://www.nhs.uk/health-assessment-tools/calculate-your-body-mass-index/calculate-bmi-for-adults/",
+      "sectionIds": [
+        "bmi-calculation-limits"
+      ]
+    },
+    {
+      "title": "NIDDK: selected multifactor type2 diabetes risk",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/risk-factors-type-2-diabetes",
+      "sectionIds": [
+        "metabolic-vascular-risk"
+      ]
+    },
+    {
+      "title": "NHS atherosclerosis: selected arterial narrowing and cholesterol risk",
+      "url": "https://www.nhs.uk/conditions/atherosclerosis/",
+      "sectionIds": [
+        "metabolic-vascular-risk"
+      ]
+    },
+    {
+      "title": "WHO food safety: selected five-barrier principles",
+      "url": "https://www.who.int/activities/promoting-safe-food-handling/five-key-to-safer-food/",
+      "sectionIds": [
+        "food-hygiene-barriers",
+        "food-storage-preservation"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "balanced-diet",
+      "title": "Balance nutrient groups rather than equal masses",
+      "points": [
+        "6.1"
+      ],
+      "terms": [
+        "balanced diet",
+        "nutrient",
+        "fibre",
+        "water"
+      ],
+      "paragraphs": [
+        "A balanced diet supplies enough energy and the required nutrients in suitable amounts for the person. It includes carbohydrates, lipids, proteins, vitamins and mineral ions, plus fibre and water. Balance does not mean equal masses of every nutrient, and vitamins are needed in much smaller amounts than the main energy-supplying foods.",
+        "Use a range of foods: starchy foods supply carbohydrate; beans, eggs, fish and other protein foods supply protein; dairy or suitable fortified alternatives can supply calcium; fruit and vegetables contribute vitamins and fibre. Foods are mixtures, so one food can contribute several nutrient groups.",
+        "The UK Eatwell pattern balances the diet over a day or longer rather than requiring every individual meal to have identical proportions. Its fruit/vegetable and starchy-food groups are each a little over a third of the overall pattern, with smaller protein and dairy groups and small amounts of unsaturated oils. These food-group portions are not percentages of dietary energy, and the general pattern is not an infant feeding plan."
+      ],
+      "example": {
+        "question": "Why is a diet with enough energy but almost no fruit, vegetables or varied protein foods not necessarily balanced?",
+        "steps": [
+          "An energy total checks only one aspect.",
+          "Vitamin, mineral, protein and fibre provision can still be inadequate.",
+          "Compare the whole nutrient pattern with the stated person’s needs."
+        ],
+        "explanation": "Enough energy alone does not certify sufficient nutrients."
+      },
+      "commonMistakes": [
+        "Giving the same mass of vitamins as carbohydrate.",
+        "Treating a mixed food as only one nutrient.",
+        "Equating a food-group plate fraction with an energy percentage."
+      ]
+    },
+    {
+      "id": "reference-intakes",
+      "title": "Read intake values with their population and units",
+      "points": [
+        "6.1"
+      ],
+      "terms": [
+        "reference intake",
+        "milligram",
+        "microgram",
+        "percentage",
+        "adult"
+      ],
+      "paragraphs": [
+        "Reference intakes allow comparison, but their population and purpose matter. The UK adult food-labelling reference amounts include carbohydrate 260 g, total fat 70 g and protein 50 g per day with an 8400 kJ / 2000 kcal energy reference. They are a labelling comparison basis, not a personalized menu or an instruction that a growing teenager must eat exactly those masses.",
+        "Selected NHS adult nutrient values are vitamin A 700 µg retinol equivalents for men and 600 µg for women aged 19–64; vitamin C 40 mg for adults 19–64; and calcium 700 mg for adults. Iron values differ: 8.7 mg for men 19+ and women 50+, compared with 14.8 mg for women 19–49. The general adult fibre guideline is 30 g. Children, pregnancy and individual circumstances require their appropriate reference, not silent use of this adult list.",
+        "Use the table or reference specified in an examination task, identify its group and keep units consistent. One milligram is 1000 micrograms. A percentage of reference intake is nutrient amount per portion divided by the stated reference amount, multiplied by 100. A food label is not evidence that every person’s requirements are identical."
+      ],
+      "example": {
+        "question": "A hypothetical portion supplies 7.5 g protein against a stated 50 g reference. What percentage is that?",
+        "steps": [
+          "7.5 ÷ 50 × 100 = 15%.",
+          "The denominator is the stated daily comparison value.",
+          "This is not proof that the portion supplies 15% of every nutrient."
+        ],
+        "explanation": "A percentage needs its own nutrient, portion and reference."
+      },
+      "commonMistakes": [
+        "Confusing mg and µg by a factor of1000.",
+        "Treating the fat labelling reference as a compulsory minimum.",
+        "Applying adult values to every child or pregnancy."
+      ]
+    },
+    {
+      "id": "diet-energy-balance",
+      "title": "Compare intake and use over time",
+      "points": [
+        "6.1",
+        "6.2"
+      ],
+      "terms": [
+        "energy balance",
+        "respiration",
+        "intake",
+        "activity"
+      ],
+      "paragraphs": [
+        "Food chemical energy supports metabolic activity, movement, temperature regulation and growth. Over time, energy intake above energy use tends to increase stored body energy; intake below use draws on stores. A one-day difference does not determine an exact body-mass change without further information.",
+        "Total needs depend on the person’s body size, growth, activity and environment. A diet can have too little energy, too much energy or sufficient energy but an unsuitable nutrient composition. Protein’s growth and repair role and vitamin/mineral functions cannot be reduced to a calorie total.",
+        "For a supplied comparison, subtract energy use from intake using the same units and timeframe. A positive difference means a surplus in that model. It does not justify prescribing a diet from an invented single-day record."
+      ],
+      "example": {
+        "question": "In an original model, daily intake is10000 kJ and use9000 kJ. Interpret the difference.",
+        "steps": [
+          "10000 − 9000 =1000 kJ surplus.",
+          "If the pattern persisted it would tend to increase energy stores.",
+          "The data do not provide an exact kilogram gain."
+        ],
+        "explanation": "Keep the conclusion within the measurements supplied."
+      },
+      "commonMistakes": [
+        "Subtracting values in different energy units.",
+        "Giving a precise fat mass without a conversion model."
+      ]
+    },
+    {
+      "id": "diet-age-pregnancy",
+      "title": "Explain growth and pregnancy-related variation",
+      "points": [
+        "6.2"
+      ],
+      "terms": [
+        "age",
+        "growth",
+        "pregnancy",
+        "iron",
+        "calcium"
+      ],
+      "paragraphs": [
+        "Children and adolescents need nutrients for growth as well as ordinary maintenance. Protein supplies amino acids for new tissue, and calcium with appropriate vitamin D supports developing bones and teeth. Absolute energy intake is not identical at every age or body size.",
+        "Pregnancy involves growth of fetal and maternal tissue, so provision of suitable protein, mineral ions and other nutrients matters. Iron supports haemoglobin and oxygen transport; calcium supports skeletal development. The course comparison is about changed biological demands, not the rule “eat twice as much of everything”.",
+        "An older person with lower activity may require less energy than the same person during a very active period, while still requiring adequate nutrients. Age alone does not identify activity or exact requirements. Compare named life stage and supplied evidence rather than assigning one universal menu."
+      ],
+      "example": {
+        "question": "Why can an energy reduction in a less active older person still require careful nutrient balance?",
+        "steps": [
+          "Energy expenditure can fall.",
+          "Protein, vitamins and minerals still have maintenance roles.",
+          "Reducing energy does not mean eliminating whole essential nutrient groups."
+        ],
+        "explanation": "Energy amount and nutrient adequacy are distinct."
+      },
+      "commonMistakes": [
+        "Using pregnancy as a reason to double every adult intake.",
+        "Claiming all older people have the same activity."
+      ]
+    },
+    {
+      "id": "diet-climate-occupation",
+      "title": "Link diet variation to activity and environment",
+      "points": [
+        "6.2"
+      ],
+      "terms": [
+        "occupation",
+        "climate",
+        "temperature regulation",
+        "water"
+      ],
+      "paragraphs": [
+        "A physically demanding occupation generally uses more energy than a sedentary occupation when other relevant conditions are comparable. The worker therefore needs enough energy to match use, alongside nutrients for normal maintenance and repair.",
+        "Cold conditions can increase energy used to maintain body temperature, especially when exposure is greater; insulation, clothing and shelter change that demand. Hot conditions can increase sweating and water loss. Climate does not automatically determine a fixed calorie value for every resident.",
+        "Give the causal link in a comparison: greater muscular work → greater energy use → a greater energy requirement in the stated model. Use the task’s evidence, and keep hydration changes separate from a claim that water supplies energy."
+      ],
+      "example": {
+        "question": "Two otherwise comparable workers have different amounts of muscular work. How could their energy requirements differ?",
+        "steps": [
+          "The more active worker uses more energy for muscular work.",
+          "Their intake must support that greater use over time.",
+          "Both still require a balanced nutrient supply."
+        ],
+        "explanation": "State what differs and why it affects the requirement."
+      },
+      "commonMistakes": [
+        "Saying occupation changes which vitamins exist in food.",
+        "Treating water as an energy nutrient."
+      ]
+    },
+    {
+      "id": "macronutrient-sources",
+      "title": "Connect carbohydrate, protein and lipid to functions",
+      "points": [
+        "6.3"
+      ],
+      "terms": [
+        "carbohydrate",
+        "protein",
+        "lipid",
+        "growth",
+        "insulation"
+      ],
+      "paragraphs": [
+        "Rice, bread, potatoes and other starchy foods are common carbohydrate sources. Carbohydrates can provide glucose for respiration; stored glycogen can supply fuel when needed. Sugary and starchy foods are not chemically identical even though both contribute carbohydrate.",
+        "Beans, lentils, eggs, fish and other suitable animal or plant foods supply protein. Digested amino acids support tissue growth and repair and formation of enzymes and other proteins. Protein can also supply energy, but that does not replace its structural and functional roles.",
+        "Oils, nuts, seeds and other fat-containing foods supply lipids. Lipids provide energy stores, contribute to cell membranes, and stored fat can provide insulation and cushioning. Different foods can contain mixtures of fat types. No claim that every lipid source has identical health effects is needed to explain the school functions."
+      ],
+      "example": {
+        "question": "Why is “protein is only an energy source” incomplete?",
+        "steps": [
+          "Amino acids support growth and repair.",
+          "They are used to make enzymes and other body proteins.",
+          "Energy provision is an additional possible role."
+        ],
+        "explanation": "Give the function relevant to the question."
+      },
+      "commonMistakes": [
+        "Calling carbohydrate the building unit of protein.",
+        "Saying fat has no useful biological role."
+      ]
+    },
+    {
+      "id": "vitamin-a-source-function",
+      "title": "Connect vitamin A to vision",
+      "points": [
+        "6.3",
+        "6.4"
+      ],
+      "terms": [
+        "vitamin A",
+        "retinol",
+        "beta-carotene",
+        "dim light"
+      ],
+      "paragraphs": [
+        "Vitamin A supports vision, especially in dim light, and normal epithelial tissues. Eggs and dairy foods can supply vitamin A; beta-carotene in foods such as carrots and leafy vegetables can be converted into vitamin A by the body. Naming carrot pigment as preformed retinol would be inaccurate.",
+        "The own deficiency association is blindness from vitamin A deficiency. Impaired dim-light vision can occur earlier, and severe deficiency can damage the eye. This nutritional pathway does not mean every case of poor vision or blindness has the same cause.",
+        "A source/function question needs both parts: identify an appropriate dietary source and explain the role. Vitamin A is not an energy source, and more is not automatically better. The biological explanation is not a supplement dose plan."
+      ],
+      "example": {
+        "question": "A task asks for a vitamin associated with impaired dim-light vision after severe dietary deficiency. Which named course vitamin is relevant?",
+        "steps": [
+          "Vitamin A.",
+          "Its role includes normal vision in dim light.",
+          "The restricted dietary context matters; symptoms alone are not a complete diagnosis."
+        ],
+        "explanation": "Match the nutrient to the stated deficiency context."
+      },
+      "commonMistakes": [
+        "Calling vitamin C the dim-light vision vitamin.",
+        "Saying all blindness is dietary vitamin A deficiency."
+      ]
+    },
+    {
+      "id": "vitamin-c-source-function",
+      "title": "Connect vitamin C to healthy tissue and healing",
+      "points": [
+        "6.3",
+        "6.4"
+      ],
+      "terms": [
+        "vitamin C",
+        "collagen",
+        "scurvy",
+        "wound healing"
+      ],
+      "paragraphs": [
+        "Vitamin C is supplied by appropriate fruit and vegetables, such as citrus fruit, peppers and broccoli. It is involved in normal collagen formation and tissue maintenance, which help support blood vessels, gums and wound healing.",
+        "Prolonged severe deficiency can cause scurvy. Relevant symptoms include swollen or bleeding gums, easy bruising, weakness and poor wound healing. Link the tissue-related symptoms to deficient vitamin supply rather than describing scurvy as caused by bacteria.",
+        "A varied diet and a single laboratory symptom observation are different kinds of evidence. The course association is useful in the stated context, but a bleeding gum can have other causes, including local dental disease."
+      ],
+      "example": {
+        "question": "Why are poor healing and bleeding gums plausible in the required vitamin C deficiency example?",
+        "steps": [
+          "Vitamin C supports normal connective tissue and collagen formation.",
+          "Deficiency can impair tissue maintenance.",
+          "The course deficiency disease is scurvy."
+        ],
+        "explanation": "Connect deficiency to function rather than memorizing a disconnected symptom."
+      },
+      "commonMistakes": [
+        "Giving anaemia as the vitamin C disease in the specified list.",
+        "Diagnosing every bleeding gum as scurvy."
+      ]
+    },
+    {
+      "id": "vitamin-d-calcium",
+      "title": "Explain vitamin D and calcium together",
+      "points": [
+        "6.3",
+        "6.10"
+      ],
+      "terms": [
+        "vitamin D",
+        "calcium",
+        "phosphate",
+        "bone",
+        "teeth"
+      ],
+      "paragraphs": [
+        "Vitamin D supports regulation and absorption of calcium and phosphate needed for normal bones and teeth. Dietary sources include oily fish, egg yolk and appropriately fortified foods. Skin can also make vitamin D with suitable sunlight exposure; that is production by the body, not a food source.",
+        "Calcium contributes to the mineral structure of bones and teeth. Providing calcium while ignoring vitamin D’s role does not fully explain healthy mineral development. Vitamin D deficiency can impair mineralization; rickets is a useful functional example but is not an extra disease added to the own restricted6.4 deficiency list.",
+        "Food fortification differs between products and places, so check the given label. In particular, do not assume every milk product is fortified with vitamin D. Sunlight physiology here is not a prescribed exposure duration."
+      ],
+      "example": {
+        "question": "How can two nutrients cooperate in bone development?",
+        "steps": [
+          "Calcium is used in the mineral structure.",
+          "Vitamin D supports appropriate calcium/phosphate availability.",
+          "They have related but different roles."
+        ],
+        "explanation": "A mineral and a vitamin are not interchangeable."
+      },
+      "commonMistakes": [
+        "Calling sunlight a dietary food.",
+        "Treating all milk as vitamin-D-fortified."
+      ]
+    },
+    {
+      "id": "mineral-sources-functions",
+      "title": "Distinguish calcium from iron",
+      "points": [
+        "6.3",
+        "6.4"
+      ],
+      "terms": [
+        "calcium",
+        "iron",
+        "haemoglobin",
+        "mineral ion"
+      ],
+      "paragraphs": [
+        "Dairy foods, calcium-fortified alternatives and fish with edible bones can provide calcium. Its roles include bones and teeth, and calcium also participates in muscle contraction and blood clotting. The course nutrient is a mineral ion, not a vitamin.",
+        "Iron-containing foods include beans, fortified cereals and suitable meat sources. Iron is needed for haemoglobin, the oxygen-carrying protein in red blood cells. Reduced iron availability can lower functional haemoglobin provision and contribute to iron-deficiency anaemia.",
+        "A food’s iron amount and how much is absorbed are not identical. The required school association is a lack of iron with anaemia, while anaemia more broadly has several possible causes. Do not call every tired person iron-deficient from one symptom."
+      ],
+      "example": {
+        "question": "Why does iron deficiency affect oxygen transport rather than directly remove oxygen from the air?",
+        "steps": [
+          "Iron is needed in haemoglobin.",
+          "Haemoglobin carries oxygen in blood.",
+          "The transport capacity can be reduced even if air still contains oxygen."
+        ],
+        "explanation": "Place the effect in the transport system."
+      },
+      "commonMistakes": [
+        "Giving calcium as the haemoglobin mineral.",
+        "Calling a mineral ion a protein."
+      ]
+    },
+    {
+      "id": "four-deficiency-associations",
+      "title": "Use the four required deficiency associations",
+      "points": [
+        "6.4"
+      ],
+      "terms": [
+        "scurvy",
+        "anaemia",
+        "blindness",
+        "kwashiorkor",
+        "oedema"
+      ],
+      "paragraphs": [
+        "The own restricted list links vitamin C deficiency with scurvy, iron deficiency with anaemia, vitamin A deficiency with blindness, and protein deficiency with kwashiorkor. Learn the missing nutrient as well as the disease name, then connect appropriate symptoms to its normal function.",
+        "Scurvy can involve bleeding gums and poor healing. Iron-deficiency anaemia can involve tiredness, pallor and shortness of breath. Vitamin A deficiency can impair night vision and, when severe, cause serious eye damage. These are the course associations, not unique diagnostic rules for an unrestricted patient.",
+        "Kwashiorkor is a severe malnutrition syndrome that can involve oedema, swelling and impaired growth. The own syllabus uses the protein-deficiency association; real nutritional oedema has a more complex clinical context, so do not claim that an arbitrary single low-protein meal proves the syndrome or that swelling means adequate nutrition. No clinical treatment procedure is taught here."
+      ],
+      "example": {
+        "question": "Why can a swollen appearance in the malnutrition example fail to prove adequate nutrition?",
+        "steps": [
+          "Swelling can reflect oedema, not healthy tissue growth.",
+          "The own course associates kwashiorkor with protein deficiency.",
+          "Appearance alone does not establish a complete clinical cause."
+        ],
+        "explanation": "Symptoms and nutritional adequacy need separate interpretation."
+      },
+      "commonMistakes": [
+        "Swapping scurvy and iron-deficiency anaemia.",
+        "Treating one symptom as proof of a disease.",
+        "Calling swelling stored healthy muscle."
+      ]
+    },
+    {
+      "id": "alimentary-route",
+      "title": "Trace food through the alimentary canal",
+      "points": [
+        "6.5"
+      ],
+      "terms": [
+        "mouth",
+        "oesophagus",
+        "stomach",
+        "small intestine",
+        "large intestine",
+        "pancreas"
+      ],
+      "paragraphs": [
+        "The alimentary canal is the continuous route from mouth through oesophagus, stomach, small intestine and large intestine to the rectum and anus. Food is ingested, processed and moved along the lumen; absorbed nutrients cross its wall into the body’s transport systems.",
+        "The pancreas, liver and gall bladder are associated digestive organs rather than places food travels through on this route. Their secretions reach the small intestine by ducts. The pancreas releases digestive enzymes; the liver produces bile and the gall bladder stores it.",
+        "Distinguish digestion, absorption and egestion. Digestion breaks larger food molecules into smaller products; absorption transfers products across the gut lining; egestion removes material remaining in the gut. Egestion is not the same as excretion of metabolic waste such as urea."
+      ],
+      "example": {
+        "question": "Does swallowed food pass through the pancreas before entering the small intestine?",
+        "steps": [
+          "No: it follows the canal from stomach to small intestine.",
+          "Pancreatic secretion is delivered into the intestine.",
+          "The pancreas is an accessory organ, not the food passage."
+        ],
+        "explanation": "Keep the food route separate from secretion routes."
+      },
+      "commonMistakes": [
+        "Putting the liver on the sequence of hollow food passages.",
+        "Calling faecal egestion the same as urea excretion."
+      ],
+      "diagram": {
+        "src": "/diagrams/human-digestive-route.svg",
+        "alt": "Original food-flow schematic with six canal stages; a separate liver/gall bladder bile route and pancreas enzyme route enter the small intestine.",
+        "caption": "Arrows distinguish swallowed food from secretions. Organ positions are schematic."
+      }
+    },
+    {
+      "id": "mouth-stomach-functions",
+      "title": "Separate mechanical and chemical digestion",
+      "points": [
+        "6.5"
+      ],
+      "terms": [
+        "chewing",
+        "saliva",
+        "stomach",
+        "hydrochloric acid",
+        "mechanical digestion"
+      ],
+      "paragraphs": [
+        "Teeth cut and grind food into smaller physical pieces, increasing exposed surface area. Saliva moistens the material and salivary amylase begins starch digestion. Chewing by itself does not turn starch molecules into glucose; physical size reduction and enzyme chemistry are different processes.",
+        "The stomach stores and mixes food using muscular contractions. Gastric glands provide acid and pepsin for the first stage of protein digestion. The acid creates the suitable acidic environment for pepsin and helps kill many swallowed microorganisms; it does not digest every nutrient or sterilize every meal.",
+        "The oesophagus moves the swallowed bolus towards the stomach by peristalsis. It is not a major site of enzyme secretion for the required nutrient pathways. Use each structure’s specific action instead of saying every organ does all digestion."
+      ],
+      "example": {
+        "question": "Which change during chewing is mechanical rather than enzymatic?",
+        "steps": [
+          "Food pieces become smaller.",
+          "More surface is exposed to digestive secretions.",
+          "Chemical bonds within starch are not broken merely by grinding."
+        ],
+        "explanation": "A change of piece size is not a change of molecule identity."
+      },
+      "commonMistakes": [
+        "Calling hydrochloric acid a digestive enzyme.",
+        "Saying the oesophagus produces pepsin."
+      ]
+    },
+    {
+      "id": "intestinal-organ-functions",
+      "title": "Assign small intestine, large intestine and pancreas roles",
+      "points": [
+        "6.5"
+      ],
+      "terms": [
+        "small intestine",
+        "large intestine",
+        "pancreatic duct",
+        "absorption"
+      ],
+      "paragraphs": [
+        "The small intestine receives bile and pancreatic enzymes, completes much chemical digestion and absorbs most digested nutrient products. Its lining has folds, villi and microvilli that support a large absorptive area. It is not simply a narrow pipe whose only function is transport.",
+        "The large intestine absorbs water from the remaining material and supports formation of faeces; the rectum stores faeces before egestion through the anus. Water is also absorbed in the small intestine, so “all water absorption happens only in the large intestine” is too absolute.",
+        "The pancreas produces amylase, protease precursors and lipase that reach the small intestine in pancreatic juice. Its digestive secretion travels through a duct. Its separate hormone role does not mean insulin is poured into the gut to digest starch."
+      ],
+      "example": {
+        "question": "Why does a pancreatic enzyme’s site of production differ from its main site of action?",
+        "steps": [
+          "It is made by pancreatic cells.",
+          "A duct delivers the secretion into the small intestine.",
+          "It acts on food there, not on food inside the pancreas."
+        ],
+        "explanation": "Production and action are separate locations."
+      },
+      "commonMistakes": [
+        "Calling bile a pancreatic enzyme.",
+        "Assigning every water molecule to large-intestine absorption."
+      ]
+    },
+    {
+      "id": "peristalsis-fibre",
+      "title": "Explain muscular movement and fibre",
+      "points": [
+        "6.6"
+      ],
+      "terms": [
+        "peristalsis",
+        "circular muscle",
+        "longitudinal muscle",
+        "fibre",
+        "bolus"
+      ],
+      "paragraphs": [
+        "Peristalsis is a coordinated wave of gut-wall muscular activity that moves contents along. Circular muscle contracts behind a bolus to narrow the lumen, while the region ahead relaxes; coordinated longitudinal-muscle activity helps the movement. The gut does not rely only on gravity.",
+        "Dietary fibre is not broken down into absorbable glucose by human digestive enzymes in the same way as starch. It contributes bulk and helps retain water in faecal material, supporting movement through the bowel. Adequate fluid is relevant; fibre is not itself a muscle that pulls food.",
+        "Explain fibre’s role without saying it directly catalyses digestion or that every fibre type behaves identically. Gut microbes can act on some fibre, but that does not turn fibre into the named human starch–amylase pathway."
+      ],
+      "example": {
+        "question": "Why can food move towards the stomach even when gravity is not helping?",
+        "steps": [
+          "Gut-wall muscle contracts in coordinated waves.",
+          "The lumen narrows behind the bolus and the region ahead allows movement.",
+          "Peristalsis supplies the movement."
+        ],
+        "explanation": "Name the active mechanism rather than merely the direction."
+      },
+      "commonMistakes": [
+        "Saying fibre contracts.",
+        "Describing uniform simultaneous squeezing along the whole oesophagus."
+      ]
+    },
+    {
+      "id": "starch-enzyme-sites",
+      "title": "Follow starch through amylase and maltase",
+      "points": [
+        "6.7"
+      ],
+      "terms": [
+        "amylase",
+        "maltase",
+        "maltose",
+        "glucose",
+        "brush border"
+      ],
+      "paragraphs": [
+        "Salivary glands produce amylase that starts acting on starch in the mouth. The pancreas produces amylase that acts in the small intestine. In the required school pathway, amylase breaks starch towards maltose; maltase then breaks maltose into glucose.",
+        "Maltase is associated with the small-intestine lining and acts there. Do not identify the pancreas as the required maltase production site, or claim that amylase alone completes the starch-to-glucose pathway. Both enzymes have particular substrates.",
+        "Stomach acidity stops salivary amylase working effectively as the material becomes acidified. The small-intestine environment supports continued carbohydrate digestion. Glucose can then be absorbed; “digestion” describes its formation from larger carbohydrate, not its movement into a capillary."
+      ],
+      "example": {
+        "question": "A learner writes “amylase changes starch directly into amino acids”. Repair the pathway.",
+        "steps": [
+          "Amylase acts on starch, a carbohydrate.",
+          "The school sequence is starch → maltose with amylase, then maltose → glucose with maltase.",
+          "Amino acids are products of protein digestion."
+        ],
+        "explanation": "Match each substrate and product."
+      },
+      "commonMistakes": [
+        "Making maltase act on starch.",
+        "Confusing the sites of pancreatic production and intestinal action."
+      ]
+    },
+    {
+      "id": "protein-enzyme-sites",
+      "title": "Trace pepsin, trypsin and the final products",
+      "points": [
+        "6.7"
+      ],
+      "terms": [
+        "protease",
+        "pepsin",
+        "trypsin",
+        "peptide",
+        "amino acid"
+      ],
+      "paragraphs": [
+        "Pepsin is produced in the stomach as an inactive precursor and acts as a protease in its acidic contents. It breaks protein chains into shorter peptide fragments. This starts protein digestion; it does not imply that every protein becomes free amino acids in the stomach.",
+        "The pancreas produces a trypsin precursor that is delivered and activated in the small intestine. Trypsin continues protein/peptide breakdown there, and intestinal peptidases complete the pathway to amino acids. The own course lists pepsin and trypsin within the overall protease-to-amino-acid pathway.",
+        "Enzyme specificity and suitable pH matter. The same acidic conditions are not ideal for every digestive protease. Amino acids are small enough to be absorbed and used for new proteins; digestion does not retain a swallowed protein as an unchanged whole molecule entering the blood."
+      ],
+      "example": {
+        "question": "How can the course’s final protein product be amino acids while pepsin is only the first stage?",
+        "steps": [
+          "Pepsin produces shorter peptide fragments in the stomach.",
+          "Further proteases and peptidases act in the small intestine.",
+          "The combined pathway supplies amino acids for absorption."
+        ],
+        "explanation": "Separate an individual enzyme’s action from the entire pathway."
+      },
+      "commonMistakes": [
+        "Claiming pepsin works best in the alkaline small intestine.",
+        "Saying trypsin is secreted by the liver."
+      ]
+    },
+    {
+      "id": "lipase-product-pathway",
+      "title": "Explain the course lipid-digestion model",
+      "points": [
+        "6.7"
+      ],
+      "terms": [
+        "lipase",
+        "fatty acid",
+        "glycerol",
+        "pancreas",
+        "lipid"
+      ],
+      "paragraphs": [
+        "The pancreas produces lipase that acts in the small intestine on lipids. The required school model gives fatty acids and glycerol as the digestion products. They differ from glucose and amino acids, which come from the other named nutrient pathways.",
+        "Bile disperses larger lipid droplets into smaller ones, increasing the surface available to lipase. Lipase then catalyses chemical bond breakdown. Emulsification and enzyme digestion are separate actions; bile is not itself lipase.",
+        "The full physiology includes intermediate lipid products and processing by intestinal cells. The own school product model is retained here without claiming that every dietary lipid becomes free glycerol in a single pancreatic step. Further absorption detail belongs to the separate villus lesson."
+      ],
+      "example": {
+        "question": "Why can emulsification increase the rate of lipase action without being chemical digestion itself?",
+        "steps": [
+          "Smaller droplets expose a greater total surface.",
+          "Lipase can contact more substrate.",
+          "The droplet splitting does not itself cleave the lipid molecules."
+        ],
+        "explanation": "Surface area and chemical reaction are distinct."
+      },
+      "commonMistakes": [
+        "Giving amino acids as lipase products.",
+        "Calling bile an enzyme."
+      ]
+    },
+    {
+      "id": "bile-two-functions",
+      "title": "Keep bile production, storage and two roles separate",
+      "points": [
+        "6.8"
+      ],
+      "terms": [
+        "liver",
+        "gall bladder",
+        "emulsification",
+        "neutralisation",
+        "bile"
+      ],
+      "paragraphs": [
+        "The liver produces bile, the gall bladder stores and concentrates it, and ducts deliver it to the small intestine. Saying the gall bladder makes bile reverses production and storage.",
+        "In the own course model, alkaline bile helps neutralise stomach acid entering the small intestine, supporting a suitable environment for intestinal enzymes. Pancreatic bicarbonate also contributes in the fuller physiology; bile is not the sole possible source of neutralising secretion.",
+        "Bile salts emulsify lipids: larger droplets become dispersed as smaller droplets with a greater total surface area for lipase. This is a physical dispersion, not hydrolysis into fatty acids and glycerol. Neutralisation concerns pH; emulsification concerns droplet surface area. They should not be used as synonyms."
+      ],
+      "example": {
+        "question": "Give two distinct reasons bile assists digestion.",
+        "steps": [
+          "It helps neutralise the acidic stomach contents in the course model.",
+          "It emulsifies lipid droplets to increase exposed surface.",
+          "Lipase performs the chemical lipid breakdown."
+        ],
+        "explanation": "Assign one mechanism to each role."
+      },
+      "commonMistakes": [
+        "Swapping liver and gall bladder.",
+        "Saying neutralisation makes smaller lipid droplets."
+      ]
+    },
+    {
+      "id": "villus-adaptations",
+      "title": "Link each villus feature to absorption",
+      "points": [
+        "6.9"
+      ],
+      "terms": [
+        "villus",
+        "microvilli",
+        "epithelium",
+        "capillary",
+        "lacteal"
+      ],
+      "paragraphs": [
+        "Villi are projections of the small-intestine lining; microvilli are smaller projections on absorptive cells. Both increase surface area. A villus is not one cell or one microvillus, and the original schematic is not drawn to microscopic scale.",
+        "The surface epithelium is one cell thick, providing a short transfer distance. A capillary network carries away absorbed sugars and amino acids, helping maintain a useful concentration difference. Absorptive cells also contain machinery and energy supply for active transport where needed; not every nutrient always crosses by simple diffusion.",
+        "A lacteal is a lymphatic vessel in the villus. Much absorbed lipid is processed by epithelial cells and enters the lymphatic route, eventually reaching blood. The capillary and lacteal are different vessels; neither is the open lumen containing undigested food."
+      ],
+      "example": {
+        "question": "Explain how a good capillary supply supports continued glucose absorption.",
+        "steps": [
+          "Blood removes absorbed glucose from the villus region.",
+          "That helps maintain a concentration difference for relevant transfer steps.",
+          "The short epithelial distance and large area also support absorption."
+        ],
+        "explanation": "A feature needs a causal explanation, not only its name."
+      },
+      "commonMistakes": [
+        "Saying a lacteal directly pumps undigested starch.",
+        "Confusing villi with individual microvilli."
+      ],
+      "diagram": {
+        "src": "/diagrams/human-villus-transfer.svg",
+        "alt": "Original villus with thin outer epithelium and enlarged surface, blood capillary network and a separate central lacteal; labels connect these features to absorption.",
+        "caption": "Villus versus cell microvilli and blood versus lymph are separate structures. Not to scale."
+      }
+    },
+    {
+      "id": "absorption-route-products",
+      "title": "Track products after they cross the gut lining",
+      "points": [
+        "6.9"
+      ],
+      "terms": [
+        "absorption",
+        "portal blood",
+        "lymph",
+        "assimilation"
+      ],
+      "paragraphs": [
+        "Glucose and amino acids enter villus blood capillaries and are carried towards the liver through the hepatic portal route before wider distribution. Cells can then use them for energy-related pathways, storage or synthesis as appropriate. Their use after transfer is assimilation, not another definition of digestion.",
+        "Many long-chain lipid products are processed into transport particles in intestinal cells and enter lacteals and lymph before reaching the bloodstream. The simple school description of lipid products entering lacteals is useful, but not a claim that every fatty acid of every chain length follows an identical route.",
+        "Absorption concerns crossing the epithelial barrier. An entire food particle does not enter a capillary merely because the gut wall is thin. Link suitable small products, cellular transfer and onward transport rather than naming large undigested polymers in the blood."
+      ],
+      "example": {
+        "question": "Is absorption the same as turning glucose into glycogen in a body cell?",
+        "steps": [
+          "No: absorption transfers products across the gut lining.",
+          "Using absorbed glucose to form glycogen is assimilation/storage.",
+          "The processes occur at different stages."
+        ],
+        "explanation": "Use the stage named in the question."
+      },
+      "commonMistakes": [
+        "Calling starch directly absorbed into blood.",
+        "Putting the liver before epithelial transfer in the absorption sequence."
+      ]
+    },
+    {
+      "id": "tooth-types-functions",
+      "title": "Match tooth shapes to mechanical functions",
+      "points": [
+        "6.10"
+      ],
+      "terms": [
+        "incisor",
+        "canine",
+        "premolar",
+        "molar",
+        "mastication"
+      ],
+      "paragraphs": [
+        "Incisors have cutting edges for biting pieces from food. Canines have more pointed crowns and help tear or grip. Premolars and molars have broader chewing surfaces with cusps that crush and grind material. Shape supports function rather than providing a different enzyme for each tooth.",
+        "The ideal full adult set has32 teeth including third molars, though actual dentition varies. Children’s primary set has20 and no premolars. The required understanding is types, structures and functions; an individual missing wisdom tooth is not proof that the person has a different nutrient pathway.",
+        "Chewing reduces physical piece size and exposes more surface to secretions. It does not change every starch molecule into glucose by mechanical force. Teeth act with saliva and muscular mouth movements to make food suitable for swallowing."
+      ],
+      "example": {
+        "question": "Which tooth type is most directly associated with a broad grinding surface?",
+        "steps": [
+          "Molars, with premolars also involved in crushing/grinding.",
+          "Broad cusped surfaces support that mechanical role.",
+          "This is not an enzyme secretion function."
+        ],
+        "explanation": "Relate the shape to the action."
+      },
+      "commonMistakes": [
+        "Giving incisors the only grinding role.",
+        "Assigning lipase to a tooth type."
+      ]
+    },
+    {
+      "id": "tooth-structure",
+      "title": "Locate enamel, dentine and the living pulp",
+      "points": [
+        "6.10"
+      ],
+      "terms": [
+        "crown",
+        "root",
+        "enamel",
+        "dentine",
+        "pulp",
+        "cementum"
+      ],
+      "paragraphs": [
+        "The crown projects above the gum; the root anchors the tooth within its socket. Enamel covers the crown and is a hard mineralised protective layer. Dentine lies beneath and extends around the central pulp region.",
+        "The pulp contains blood vessels and nerves, continuing through the root canal. Cementum covers the root surface, with supporting periodontal tissues connecting the root to its socket. Enamel is not a living blood-filled cavity and does not contain the tooth’s main nerves.",
+        "Damage that progresses through the outer layers can affect sensitive inner tissues. Name the layer a question points to, not just the whole tooth. The original layered drawing is a simplified longitudinal section, not a radiograph or a diagnosis."
+      ],
+      "example": {
+        "question": "Where are the blood vessels and nerves shown in a simple tooth section?",
+        "steps": [
+          "In the pulp cavity and root canal.",
+          "They are inside the surrounding dentine.",
+          "They are not the outer enamel coating."
+        ],
+        "explanation": "Location helps distinguish protective and living tissues."
+      },
+      "commonMistakes": [
+        "Calling gum tissue enamel.",
+        "Placing the main nerve within the crown’s outer mineral coat."
+      ],
+      "diagram": {
+        "src": "/diagrams/human-tooth-layers.svg",
+        "alt": "Original schematic section showing protective crown enamel, underlying dentine, pulp with nerves and vessels, gum level and cementum over the root.",
+        "caption": "A simplified section, not a radiograph. Supporting tissue anchors the root; enamel is not the pulp."
+      }
+    },
+    {
+      "id": "teeth-growth-care",
+      "title": "Explain mineral development, plaque and care",
+      "points": [
+        "6.10"
+      ],
+      "terms": [
+        "plaque",
+        "sugar",
+        "acid",
+        "fluoride",
+        "gum disease"
+      ],
+      "paragraphs": [
+        "Developing teeth require suitable nutrients, including calcium/phosphate and vitamin D’s supporting role. Normal mineral development is different from preventing damage to a tooth after it has formed. Inherited and developmental factors also affect dentition, so a single food is not a complete growth guarantee.",
+        "Plaque is a bacterial film. Bacteria can use sugars and produce acids that dissolve mineral in the tooth surface, leading to decay. Frequent sugar exposure supplies repeated opportunities for acid production. Plaque around gums can also contribute to gum disease; decay and gum inflammation are related but not identical.",
+        "NHS guidance supports cleaning all tooth surfaces with suitable fluoride toothpaste twice daily for about two minutes and cleaning between teeth appropriately. Fluoride supports resistance to decay; brushing removes plaque. Use age-appropriate products and dental guidance rather than inventing one concentration for every age. A symptom is not used here to diagnose a disease."
+      ],
+      "example": {
+        "question": "Why does brushing have a different role from providing calcium during growth?",
+        "steps": [
+          "Calcium supports mineral development.",
+          "Brushing reduces plaque on existing teeth.",
+          "Suitable fluoride helps protect the surface against decay."
+        ],
+        "explanation": "Care and development address different mechanisms."
+      },
+      "commonMistakes": [
+        "Saying sugar itself is the bacterium.",
+        "Claiming brushing replaces all mineral requirements."
+      ]
+    },
+    {
+      "id": "bmi-calculation-limits",
+      "title": "Calculate BMI without turning it into a diagnosis",
+      "points": [
+        "6.11"
+      ],
+      "terms": [
+        "BMI",
+        "kg/m²",
+        "height squared",
+        "screening",
+        "body composition"
+      ],
+      "paragraphs": [
+        "Body mass index is mass in kilograms divided by height in metres squared: BMI = mass / height². Square the height before division, and convert centimetres to metres. The resulting units are kg/m²; using height without the square calculates a different quantity.",
+        "BMI compares mass with height, but does not directly measure body fat or distinguish muscle from fat. Adult categories are not automatically applied to a child: childhood interpretation depends on age and sex. Pregnancy and other circumstances also limit adult-tool applicability.",
+        "Use the interpretation or reference supplied by an exam task. A worked hypothetical calculation here is mathematical practice, not an individual health assessment. A BMI alone does not diagnose diabetes or prove the cause of a person’s mass."
+      ],
+      "example": {
+        "question": "An original adult arithmetic example has mass81 kg and height180 cm. Calculate BMI.",
+        "steps": [
+          "180 cm =1.80 m.",
+          "1.80² =3.24 m².",
+          "81 ÷3.24 =25.0 kg/m²."
+        ],
+        "explanation": "Correct conversion and squaring come before interpretation."
+      },
+      "commonMistakes": [
+        "Dividing81 by180 without unit conversion.",
+        "Dividing by1.80 rather than3.24.",
+        "Diagnosing diabetes from the calculated value."
+      ]
+    },
+    {
+      "id": "metabolic-vascular-risk",
+      "title": "Distinguish risk from certainty in diabetes and arteries",
+      "points": [
+        "6.11"
+      ],
+      "terms": [
+        "type 2 diabetes",
+        "insulin resistance",
+        "cholesterol",
+        "atherosclerosis"
+      ],
+      "paragraphs": [
+        "Obesity is a risk factor for type2 diabetes, including onset at a younger age. Insulin resistance reduces cells’ response to insulin, making blood-glucose control more difficult. Risk is influenced by several factors; not every person with obesity develops diabetes, and not every person with diabetes has obesity.",
+        "High levels of cholesterol in the blood, particularly in relevant LDL-containing particles, contribute to risk of atherosclerosis. Fatty deposits in arterial walls can narrow the lumen and reduce blood flow; a damaged plaque can also be associated with clot formation. Cholesterol is not simply food physically sticking inside a hollow artery unchanged.",
+        "The course phrase early onset of diabetes refers here to the type2 risk association, not to a claim that obesity causes all childhood diabetes. BMI, a blood cholesterol measurement and disease diagnosis are different kinds of evidence. Treatment selection is not part of this teaching example."
+      ],
+      "example": {
+        "question": "Why is “high cholesterol guarantees an immediate blocked artery” too strong?",
+        "steps": [
+          "It is a risk factor for deposit-related arterial disease.",
+          "Development involves several factors and time.",
+          "The measurement alone does not establish a specific blockage."
+        ],
+        "explanation": "Keep association, mechanism and diagnostic evidence distinct."
+      },
+      "commonMistakes": [
+        "Conflating type1 with the specified type2 obesity association.",
+        "Calling the fatty deposit a bolus of unchanged food."
+      ]
+    },
+    {
+      "id": "food-hygiene-barriers",
+      "title": "Explain preparation and cooking barriers",
+      "points": [
+        "6.12"
+      ],
+      "terms": [
+        "cross-contamination",
+        "pathogen",
+        "cooking",
+        "hygiene"
+      ],
+      "paragraphs": [
+        "Hygienic preparation reduces transfer of harmful microorganisms: clean hands, safe water and clean utensils matter, and raw food should be kept separate from ready-to-eat food. A board used for raw meat can transfer contamination to food that will not be cooked afterwards.",
+        "Appropriate thorough cooking reduces viable pathogens by heating food sufficiently throughout. A browned surface does not prove a thick food’s centre has reached the required conditions. Safe practices depend on the food and validated time/temperature guidance; an arbitrary universal warm setting is not a sterilization protocol.",
+        "A cooking step is not a substitute for all preparation and storage barriers. Recontamination can occur afterwards, and some preformed microbial toxins may remain after heating. WHO’s separate hygiene, separation, cooking, temperature and safe-material principles work together."
+      ],
+      "example": {
+        "question": "Why can cooked food become unsafe after being placed on a board used for raw meat?",
+        "steps": [
+          "The board can carry microorganisms from the raw food.",
+          "They can transfer to the cooked food.",
+          "There may be no further cooking step to reduce them."
+        ],
+        "explanation": "Follow the contamination route."
+      },
+      "commonMistakes": [
+        "Treating visible cleanliness as proof of no microorganisms.",
+        "Claiming reheating always removes every toxin."
+      ]
+    },
+    {
+      "id": "food-storage-preservation",
+      "title": "Distinguish slowing growth from killing everything",
+      "points": [
+        "6.12"
+      ],
+      "terms": [
+        "refrigeration",
+        "freezing",
+        "drying",
+        "salting",
+        "canning",
+        "preservation"
+      ],
+      "paragraphs": [
+        "Refrigeration slows growth of many microorganisms but does not sterilize food. Freezing also inhibits growth while frozen, yet surviving organisms can become active again after thawing. Storage time and cross-contamination still matter; cold is not proof of unlimited safe life.",
+        "Drying, and suitable high salt or sugar concentrations, reduce available water for microbial growth. Controlled acidity can inhibit suitable organisms. Canning uses validated heat treatment and a sealed container to prevent re-entry, with different requirements for different foods. This explanation is not a home-canning recipe.",
+        "Explain each preservation method’s mechanism and limitation. Sealing without a validated process can leave organisms inside; heating without later protection can allow recontamination. An unknown stored sample’s smell cannot certify that it is safe."
+      ],
+      "example": {
+        "question": "Why is “refrigeration kills all bacteria, so storage time is irrelevant” wrong?",
+        "steps": [
+          "Many bacteria can survive refrigeration.",
+          "Cold mainly slows relevant growth.",
+          "Time, temperature and contamination control still affect safety."
+        ],
+        "explanation": "Slower growth and sterilization are different claims."
+      },
+      "commonMistakes": [
+        "Treating freezing as a guaranteed kill step.",
+        "Equating a lid alone with validated canning."
+      ]
+    }
+  ]
+}

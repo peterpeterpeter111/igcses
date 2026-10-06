@@ -1,3 +1,4 @@
+import humanNutrition from '../research/syllabus/4HB1-nutrition.json' with { type: 'json' };
 import chemistryOrganicFamilies from '../research/syllabus/4CH1-organic-families-polymers.json' with { type: 'json' };
 import chemistryOrganic from '../research/syllabus/4CH1-organic-foundations.json' with { type: 'json' };
 import chemistryPhysical from '../research/syllabus/4CH1-physical.json' with { type: 'json' };
@@ -73,6 +74,7 @@ import mathsPolynomials from '../research/syllabus/4MB1-polynomials-and-fraction
 
 // Reviewed overlays are kept separate from the immutable raw candidates.
 export const reviewedInventories = [
+  { title: 'Human nutrition, digestion, teeth and risk (6.1–6.11; partial teaching)', ...humanNutrition },
   { title: 'Alcohols, acids, esters and polymers (4.29C–4.50C; partial teaching)', ...chemistryOrganicFamilies },
   { title: 'Organic foundations, oil, alkanes and alkenes (4.1–4.28; partial teaching)', ...chemistryOrganic },
   { title: 'Physical Chemistry (3.1–3.22C; partial teaching)', ...chemistryPhysical },

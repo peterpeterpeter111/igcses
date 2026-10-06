@@ -9,6 +9,7 @@ import hashlib
 import io
 import json
 from pathlib import Path
+from note_io import read_note
 
 ROOT = Path(__file__).resolve().parents[1]
 PAPER = '4HB1-2024-May-01-standard'
@@ -49,6 +50,48 @@ EXPECTED = {
 def require(condition, message):
     if not condition:
         raise ValueError(message)
+
+
+def validate_partial_teaching(root, point, specification):
+    """Allow later lessons only with actual source-matched note and audit evidence.
+
+    Teaching progress does not change this paper's extraction or processing stage.
+    """
+    require(point['teachingCoverage'] == 'partial' and point['noteSectionIds']
+            and point.get('substatementAuditComplete') is False,
+            'Selected teaching must remain partial with real links')
+    matches = [read_note(path) for path in (root / 'content/notes').glob('*.json')]
+    matches = [n for n in matches if n['subjectId'] == 'human-biology'
+               and n['chapterId'] == point['chapterId']]
+    require(len(matches) == 1, 'Missing or duplicate selected teaching document')
+    note = matches[0]
+    require(note['sourceId'] == specification['documentId'] and note['complete'] is False
+            and note['humanReviewed'] is False and point['pdfPage'] in note['sourcePages'],
+            'Selected teaching source/completion mismatch')
+    sections = {s['id']: s for s in note['sections']}
+    ids = point['noteSectionIds']
+    require(len(set(ids)) == len(ids) and all(i in sections and sections[i]['paragraphs']
+            and point['reference'] in sections[i].get('points', []) for i in ids),
+            'Orphan or wrong-reference selected teaching')
+    audits = [json.loads(path.read_text()) for path in (root / 'research/curriculum-audits').glob('4HB1-*.json')]
+    owners = [(a, p) for a in audits for p in a['parents'] if p['parentId'] == point['id']]
+    require(len(owners) == 1, 'Selected teaching needs one curriculum audit owner')
+    audit, parent = owners[0]
+    require(audit['documentSha256'] == specification['sha256']
+            and audit['documentId'] == specification['documentId']
+            and audit['chapterId'] == point['chapterId']
+            and audit['humanReviewed'] is False
+            and audit['completeTeachingPoints'] == audit['completeChapters'] == 0
+            and parent['components'] == point['components']
+            and parent['pdfPage'] == point['pdfPage']
+            and parent['teachingAuditStatus'] == 'partial'
+            and parent['substatementAuditComplete'] is False,
+            'Selected teaching audit source/completion mismatch')
+    require(parent['requirements'] and all(r['completionStatus'] == 'partial'
+            and r['remainingChecks'] and r['teachingEvidence']
+            and all(e['sectionId'] in ids and sections[e['sectionId']].get(e['field'])
+                    for e in r['teachingEvidence']) for r in parent['requirements']),
+            'Selected teaching requirements need grounded partial evidence')
 
 
 def compact(value):
@@ -204,7 +247,10 @@ def prepare(root=ROOT):
             p = points.get(mapping['pointId'])
             require(p and p['statementVerified'] is True and p['humanReviewed'] is False, 'Missing verified own identity')
             if p['reference'] not in ['1.2', '1.3', '2.7', '2.8', '3.1', '3.3', '11.13', '11.14', '11.20', '11.21', '7.1', '7.2', '7.5', '7.6', '8.2', '8.4', '8.5', '8.6', '8.12', '9.2', '9.4', '9.5']:
-                require(p['teachingCoverage'] == 'not-started' and p['noteSectionIds'] == [], 'Selected identities must not invent teaching')
+                if p['teachingCoverage'] == 'not-started':
+                    require(p['noteSectionIds'] == [], 'Unstarted identities must not invent teaching')
+                else:
+                    validate_partial_teaching(root, p, spec)
             require(mapping['currentApplicability'] == 'current-specification' and mapping['reviewStatus'] == 'agent-reviewed', 'Unreviewed mapping status')
             require(mapping['evidenceRefs'] == [dict(documentId=spec['documentId'], pdfPages=[p['pdfPage']]), dict(documentId=ms['id'], pdfPages=[scheme_page]), dict(documentId=qp['id'], pdfPages=pages)], 'Exact mapping source mismatch')
             if t['questionPath'] in ['1.c.i', '1.c.ii']:

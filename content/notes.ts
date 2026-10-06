@@ -1,3 +1,4 @@
+import humanNutrition from './notes/human-biology-nutrition.json' with { type: 'json' };
 import chemistryOrganic from './notes/chemistry-organic.json' with { type: 'json' };
 import chemistryPhysical from './notes/chemistry-physical.json' with { type: 'json' };
 import chemistryInorganic from './notes/chemistry-inorganic.json' with { type: 'json' };
@@ -76,6 +77,7 @@ export const notes: ChapterNotes[] = [
   humanRespiration,
   humanGasExchange,
   humanInternal,
+  humanNutrition,
   biology,
   biologyStructures,
   biologyReproduction,
