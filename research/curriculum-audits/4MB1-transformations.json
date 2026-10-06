@@ -1,0 +1,575 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4MB1",
+  "chapterId": "geometry",
+  "documentId": "4MB1-spec",
+  "specificationIssue": "Issue 1 - January 2016",
+  "documentSha256": "62d4534ba1c0aee42ce2d3e7fd1da8083fd03216dd106da11ae590525d3187a5",
+  "reviewDate": "2026-10-06",
+  "reviewer": "Codex",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Five partial parents, eleven original sections and28 local editorial requirements. No completion certification.",
+  "identifierPolicy": "Official source lettered IDs retained; local r-suffixes are editorial requirements.",
+  "notePath": "content/notes/mathematics-geometry.json",
+  "parents": [
+    {
+      "parentId": "4MB1:issue1:5F",
+      "officialReference": "5F",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Own source reviewed; general geometric moves distinguished from ordinary2×2 transformations fixing the origin.",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:5F:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Axis reflection matrices",
+          "teachingEvidence": [
+            {
+              "sectionId": "reflection-matrices",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar diagram constructions and learner-response calibration pending.",
+            "Whole-parent and chapter completeness not certified."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:5F:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Diagonal-line reflection matrices",
+          "teachingEvidence": [
+            {
+              "sectionId": "reflection-matrices",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar diagram constructions and learner-response calibration pending.",
+            "Whole-parent and chapter completeness not certified."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:5F:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Reflection self-inverse check",
+          "teachingEvidence": [
+            {
+              "sectionId": "reflection-matrices",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar diagram constructions and learner-response calibration pending.",
+            "Whole-parent and chapter completeness not certified."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:5F:r4",
+          "origin": "editorial-decomposition",
+          "summary": "Quarter/half-turn matrices and direction",
+          "teachingEvidence": [
+            {
+              "sectionId": "rotation-matrices",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar diagram constructions and learner-response calibration pending.",
+            "Whole-parent and chapter completeness not certified."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:5F:r5",
+          "origin": "editorial-decomposition",
+          "summary": "Equivalent270° turns and inverse turns",
+          "teachingEvidence": [
+            {
+              "sectionId": "rotation-matrices",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar diagram constructions and learner-response calibration pending.",
+            "Whole-parent and chapter completeness not certified."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:5F:r6",
+          "origin": "editorial-decomposition",
+          "summary": "Origin enlargement scalar identity matrix",
+          "teachingEvidence": [
+            {
+              "sectionId": "enlargement-matrices",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar diagram constructions and learner-response calibration pending.",
+            "Whole-parent and chapter completeness not certified."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:5F:r7",
+          "origin": "editorial-decomposition",
+          "summary": "Negative and fractional factors; length versus area",
+          "teachingEvidence": [
+            {
+              "sectionId": "enlargement-matrices",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar diagram constructions and learner-response calibration pending.",
+            "Whole-parent and chapter completeness not certified."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:5F:r8",
+          "origin": "editorial-decomposition",
+          "summary": "Nonzero inverse scale and shifted-centre limitation",
+          "teachingEvidence": [
+            {
+              "sectionId": "enlargement-matrices",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar diagram constructions and learner-response calibration pending.",
+            "Whole-parent and chapter completeness not certified."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4MB1:issue1:5G",
+      "officialReference": "5G",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Own source reviewed; general geometric moves distinguished from ordinary2×2 transformations fixing the origin.",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:5G:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Right-hand matrix applied first",
+          "teachingEvidence": [
+            {
+              "sectionId": "ordering-matrix-transformations",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar diagram constructions and learner-response calibration pending.",
+            "Whole-parent and chapter completeness not certified."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:5G:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Full matrix composite and noncommutative order",
+          "teachingEvidence": [
+            {
+              "sectionId": "ordering-matrix-transformations",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar diagram constructions and learner-response calibration pending.",
+            "Whole-parent and chapter completeness not certified."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:5G:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Reverse actions to undo an invertible composite",
+          "teachingEvidence": [
+            {
+              "sectionId": "ordering-matrix-transformations",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar diagram constructions and learner-response calibration pending.",
+            "Whole-parent and chapter completeness not certified."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4MB1:issue1:8J",
+      "officialReference": "8J",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Own source reviewed; general geometric moves distinguished from ordinary2×2 transformations fixing the origin.",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:8J:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Perpendicular bisector definition for any mirror line",
+          "teachingEvidence": [
+            {
+              "sectionId": "reflecting-in-a-line",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar diagram constructions and learner-response calibration pending.",
+            "Whole-parent and chapter completeness not certified."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:8J:r2",
+          "origin": "editorial-decomposition",
+          "summary": "Shifted and diagonal reflection coordinate reasoning",
+          "teachingEvidence": [
+            {
+              "sectionId": "reflecting-in-a-line",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar diagram constructions and learner-response calibration pending.",
+            "Whole-parent and chapter completeness not certified."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:8J:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Centre angle and direction fully describe rotation",
+          "teachingEvidence": [
+            {
+              "sectionId": "rotating-about-a-centre",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar diagram constructions and learner-response calibration pending.",
+            "Whole-parent and chapter completeness not certified."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:8J:r4",
+          "origin": "editorial-decomposition",
+          "summary": "Relative displacement rotation and distance check",
+          "teachingEvidence": [
+            {
+              "sectionId": "rotating-about-a-centre",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar diagram constructions and learner-response calibration pending.",
+            "Whole-parent and chapter completeness not certified."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:8J:r5",
+          "origin": "editorial-decomposition",
+          "summary": "All-point translation with a complete vector",
+          "teachingEvidence": [
+            {
+              "sectionId": "translating-by-a-vector",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar diagram constructions and learner-response calibration pending.",
+            "Whole-parent and chapter completeness not certified."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:8J:r6",
+          "origin": "editorial-decomposition",
+          "summary": "Inverse translation and vector addition",
+          "teachingEvidence": [
+            {
+              "sectionId": "translating-by-a-vector",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar diagram constructions and learner-response calibration pending.",
+            "Whole-parent and chapter completeness not certified."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:8J:r7",
+          "origin": "editorial-decomposition",
+          "summary": "Centre-relative enlargement vector formula",
+          "teachingEvidence": [
+            {
+              "sectionId": "enlarging-from-a-centre",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar diagram constructions and learner-response calibration pending.",
+            "Whole-parent and chapter completeness not certified."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:8J:r8",
+          "origin": "editorial-decomposition",
+          "summary": "Positive negative and fractional factors with length/area",
+          "teachingEvidence": [
+            {
+              "sectionId": "enlarging-from-a-centre",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar diagram constructions and learner-response calibration pending.",
+            "Whole-parent and chapter completeness not certified."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:8J:r9",
+          "origin": "editorial-decomposition",
+          "summary": "Identifying centre and signed factor from corresponding vertices",
+          "teachingEvidence": [
+            {
+              "sectionId": "enlarging-from-a-centre",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar diagram constructions and learner-response calibration pending.",
+            "Whole-parent and chapter completeness not certified."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4MB1:issue1:8K",
+      "officialReference": "8K",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Own source reviewed; general geometric moves distinguished from ordinary2×2 transformations fixing the origin.",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:8K:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Intermediate image and ordered composition",
+          "teachingEvidence": [
+            {
+              "sectionId": "combining-geometric-transformations",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar diagram constructions and learner-response calibration pending.",
+            "Whole-parent and chapter completeness not certified."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:8K:r2",
+          "origin": "editorial-decomposition",
+          "summary": "General-point equivalent rule versus one sample point",
+          "teachingEvidence": [
+            {
+              "sectionId": "combining-geometric-transformations",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar diagram constructions and learner-response calibration pending.",
+            "Whole-parent and chapter completeness not certified."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:8K:r3",
+          "origin": "editorial-decomposition",
+          "summary": "Matrix composites agree with separate geometric steps",
+          "teachingEvidence": [
+            {
+              "sectionId": "ordering-matrix-transformations",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar diagram constructions and learner-response calibration pending.",
+            "Whole-parent and chapter completeness not certified."
+          ]
+        }
+      ]
+    },
+    {
+      "parentId": "4MB1:issue1:8L",
+      "officialReference": "8L",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "components": [
+        "01",
+        "02"
+      ],
+      "sourceDecompositionStatus": "source-checked",
+      "teachingAuditStatus": "partial",
+      "substatementAuditComplete": false,
+      "scopeNote": "Own source reviewed; general geometric moves distinguished from ordinary2×2 transformations fixing the origin.",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:8L:r1",
+          "origin": "editorial-decomposition",
+          "summary": "Matrix-times-column image components",
+          "teachingEvidence": [
+            {
+              "sectionId": "matrix-images-of-position-vectors",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar diagram constructions and learner-response calibration pending.",
+            "Whole-parent and chapter completeness not certified."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:8L:r2",
+          "origin": "editorial-decomposition",
+          "summary": "All vertices and fixed origin",
+          "teachingEvidence": [
+            {
+              "sectionId": "matrix-images-of-position-vectors",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar diagram constructions and learner-response calibration pending.",
+            "Whole-parent and chapter completeness not certified."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:8L:r3",
+          "origin": "editorial-decomposition",
+          "summary": "First basis image is first column",
+          "teachingEvidence": [
+            {
+              "sectionId": "finding-matrices-from-basis-images",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar diagram constructions and learner-response calibration pending.",
+            "Whole-parent and chapter completeness not certified."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:8L:r4",
+          "origin": "editorial-decomposition",
+          "summary": "Second basis image is second column",
+          "teachingEvidence": [
+            {
+              "sectionId": "finding-matrices-from-basis-images",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar diagram constructions and learner-response calibration pending.",
+            "Whole-parent and chapter completeness not certified."
+          ]
+        },
+        {
+          "id": "4MB1:issue1:8L:r5",
+          "origin": "editorial-decomposition",
+          "summary": "Linearity/source scope before inferring a matrix",
+          "teachingEvidence": [
+            {
+              "sectionId": "finding-matrices-from-basis-images",
+              "field": "paragraphs"
+            }
+          ],
+          "explanationStatus": "present",
+          "completionStatus": "partial",
+          "remainingChecks": [
+            "Independent unfamiliar diagram constructions and learner-response calibration pending.",
+            "Whole-parent and chapter completeness not certified."
+          ]
+        }
+      ]
+    }
+  ],
+  "completeTeachingPoints": 0,
+  "completeChapters": 0
+}

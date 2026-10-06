@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 510" role="img" aria-labelledby="title desc">
+<title id="title">Basis images become matrix columns</title>
+<desc id="desc">A clockwise quarter turn about the origin sends the first basis column one, zero to zero, minus one. That image is column one of the matrix. It sends the second basis column zero, one to one, zero, which is column two. The resulting matrix has rows zero, one and minus one, zero.</desc>
+<rect width="600" height="510" fill="#fbf8ef"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6" fill="none" stroke="#6d5246" stroke-width="1.5"/></marker></defs>
+<g font-family="Georgia,serif" fill="#302520" text-anchor="middle">
+<text x="300" y="40" font-size="27">Basis images become columns</text>
+<text x="65" y="120" font-size="27">e₁ =</text>
+<g fill="none" stroke="#6d5246" stroke-width="2.5"><path d="M119 75h-10v85h10M159 75h10v85h-10"/></g>
+<text x="138" y="105" font-size="28">1</text><text x="138" y="145" font-size="28">0</text>
+<path d="M188 117h45" fill="none" stroke="#6d5246" stroke-width="2.5" marker-end="url(#arrow)"/>
+<g fill="none" stroke="#802e39" stroke-width="2.5"><path d="M260 75h-10v85h10M300 75h10v85h-10"/></g>
+<text x="280" y="105" font-size="28" fill="#802e39">0</text><text x="280" y="145" font-size="28" fill="#802e39">−1</text>
+<text x="432" y="120" font-size="26" fill="#802e39">Column 1</text>
+<text x="65" y="254" font-size="27">e₂ =</text>
+<g fill="none" stroke="#6d5246" stroke-width="2.5"><path d="M119 209h-10v85h10M159 209h10v85h-10"/></g>
+<text x="138" y="239" font-size="28">0</text><text x="138" y="279" font-size="28">1</text>
+<path d="M188 251h45" fill="none" stroke="#6d5246" stroke-width="2.5" marker-end="url(#arrow)"/>
+<g fill="none" stroke="#6d5246" stroke-width="2.5"><path d="M260 209h-10v85h10M300 209h10v85h-10"/></g>
+<text x="280" y="239" font-size="28">1</text><text x="280" y="279" font-size="28">0</text>
+<text x="432" y="254" font-size="26">Column 2</text>
+<path d="M65 323h470" stroke="#d4bda7" stroke-width="1"/>
+<text x="295" y="359" font-size="24">1</text><text x="365" y="359" font-size="24">2</text>
+<text x="192" y="417" font-size="28">M =</text>
+<rect x="269" y="379" width="50" height="75" fill="#f0dfdd"/>
+<rect x="340" y="379" width="50" height="75" fill="#ede5d8"/>
+<g fill="none" stroke="#6d5246" stroke-width="2.5"><path d="M261 375h-10v83h10M398 375h10v83h-10"/></g>
+<text x="295" y="405" font-size="28" fill="#802e39">0</text><text x="295" y="447" font-size="28" fill="#802e39">−1</text>
+<text x="365" y="405" font-size="28">1</text><text x="365" y="447" font-size="28">0</text>
+<text x="300" y="493" font-size="23">90° clockwise, about the origin</text>
+</g>
+</svg>

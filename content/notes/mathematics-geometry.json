@@ -7,6 +7,7 @@
   "sourceId": "4MB1-spec",
   "sourcePages": [
     21,
+    23,
     24,
     25,
     26,
@@ -25,7 +26,9 @@
     "Identify the arc, chord, tangent or cyclic configuration before choosing a circle rule.",
     "Calculate and rearrange arc, sector and perimeter relationships in degrees.",
     "Calculate and interpret two-dimensional vectors, their magnitudes and unit directions.",
-    "Use directed vector routes to prove collinearity, parallelism and concurrency."
+    "Use directed vector routes to prove collinearity, parallelism and concurrency.",
+    "Describe and construct reflections, rotations, translations and enlargements with the necessary parameters.",
+    "Apply origin-fixing matrix transformations, find matrices from basis images and compose them in the correct order."
   ],
   "sections": [
     {
@@ -1364,6 +1367,432 @@
         "median",
         "centroid",
         "vector line equation"
+      ]
+    },
+    {
+      "id": "reflecting-in-a-line",
+      "title": "Reflect across a stated mirror line",
+      "points": [
+        "8J"
+      ],
+      "paragraphs": [
+        "A reflection places each point on the opposite side of a mirror line at the same perpendicular distance. The segment joining a point to its image is perpendicular to the mirror line, and the line bisects that segment. Points already on the line stay fixed. Reflect every vertex of a shape and join corresponding image vertices in the original order.",
+        "For a general drawn mirror line, construct or measure the perpendicular from the point to the line and continue it the same distance beyond the line. Distance measured horizontally is correct only for a vertical mirror line; a sloping mirror needs a perpendicular measurement. A reflection preserves lengths and angles but reverses orientation.",
+        "Useful coordinate rules are reflection in x = h: (x, y) → (2h − x, y), and in y = k: (x, y) → (x, 2k − y). In y = x, exchange the coordinates; in y = −x, exchange and negate both. A full description names the reflection and the exact mirror line."
+      ],
+      "example": {
+        "question": "Reflect P = (5, 2) in the vertical line x = 1.",
+        "steps": [
+          "The perpendicular distance from P to x = 1 is 5 − 1 = 4 units.",
+          "Place the image 4 units to the left of the line: x′ = 1 − 4 = −3.",
+          "The vertical coordinate is unchanged, so P′ = (−3, 2).",
+          "The midpoint of PP′ has x-coordinate (5 − 3)/2 = 1, on the mirror line."
+        ],
+        "explanation": "The mirror is x = 1, not the y-axis, so simply negating x would be wrong."
+      },
+      "practice": {
+        "question": "Reflect (4, 1) in y = x + 1.",
+        "answer": "(0, 5).",
+        "explanation": "Shift down by 1 to use the mirror y = x: (4, 0) reflects to (0, 4). Shift back up by 1 to get (0, 5). Their midpoint (2, 3) lies on y = x + 1, and their joining direction has slope −1."
+      },
+      "commonMistakes": [
+        "Measure perpendicular to a sloping mirror.",
+        "Name the line rather than only saying reflection.",
+        "Do not negate coordinates for a shifted mirror without accounting for its position."
+      ],
+      "terms": [
+        "reflection",
+        "mirror line",
+        "perpendicular distance",
+        "orientation"
+      ]
+    },
+    {
+      "id": "rotating-about-a-centre",
+      "title": "Rotate around the given centre",
+      "points": [
+        "8J"
+      ],
+      "paragraphs": [
+        "Describe a rotation by its centre, angle and direction. A point and its image are the same distance from the centre, and their connecting radii make the stated angle. The centre itself is fixed. A shape retains its lengths, angles and orientation.",
+        "For a quarter turn about the origin, 90° anticlockwise maps (x, y) to (−y, x), while 90° clockwise maps it to (y, −x). A half turn maps (x, y) to (−x, −y); clockwise and anticlockwise give the same image at 180°. Check the direction on a sketch rather than memorising an unsigned angle.",
+        "For a centre C = (h, k), first subtract C to obtain the relative displacement (x − h, y − k). Rotate that displacement, then add C back. For other angles use the specified angle accurately with a construction or the relevant coordinate method; do not apply a quarter-turn rule to an arbitrary angle."
+      ],
+      "example": {
+        "question": "Rotate P = (4, 3) by 90° anticlockwise about C = (1, 2).",
+        "steps": [
+          "The displacement from C to P is (3, 1)ᵀ.",
+          "Rotate it anticlockwise: (3, 1)ᵀ → (−1, 3)ᵀ.",
+          "Add the centre: P′ = (1 − 1, 2 + 3) = (0, 5).",
+          "Both squared distances from C are 3² + 1² = (−1)² + 3² = 10."
+        ],
+        "explanation": "Subtracting and restoring the centre prevents an unintended rotation about the origin."
+      },
+      "practice": {
+        "question": "Rotate P = (1, 4) by 90° clockwise about C = (−1, 1).",
+        "answer": "(2, −1).",
+        "explanation": "The relative vector is (2, 3)ᵀ, which becomes (3, −2)ᵀ clockwise. Adding (−1, 1) gives (2, −1)."
+      },
+      "commonMistakes": [
+        "Specify centre, angle and direction.",
+        "Rotate relative to the actual centre.",
+        "A half turn needs no distinction between clockwise and anticlockwise images."
+      ],
+      "terms": [
+        "rotation",
+        "centre",
+        "clockwise",
+        "anticlockwise",
+        "quarter turn"
+      ]
+    },
+    {
+      "id": "translating-by-a-vector",
+      "title": "Move every point by the same vector",
+      "points": [
+        "8J"
+      ],
+      "paragraphs": [
+        "A translation moves every point by one fixed vector. For vector (u, v)ᵀ, the rule is (x, y) → (x + u, y + v). The first component is the horizontal displacement and the second is vertical. Negative components move left or down when right and up are positive.",
+        "Every vertex receives the same displacement. A translation preserves lengths, angles, orientation and parallelism; it does not turn a shape or change its size. Describe it using the complete vector, not only a distance.",
+        "The inverse translation uses the negative vector. Two successive translations add their vectors, so their order does not affect the final position. A nonzero translation moves the origin, so it cannot be represented by an ordinary 2 × 2 matrix multiplying position columns alone."
+      ],
+      "example": {
+        "question": "Translate P = (−2, 4) by (5, −3)ᵀ.",
+        "steps": [
+          "Move 5 units right: x′ = −2 + 5 = 3.",
+          "Move 3 units down: y′ = 4 − 3 = 1.",
+          "The image is P′ = (3, 1).",
+          "The reverse translation is (−5, 3)ᵀ, returning P′ to P."
+        ],
+        "explanation": "The two components retain their horizontal and vertical meanings."
+      },
+      "practice": {
+        "question": "Translate triangle A(1, 1), B(3, 1), C(1, 2) by (−2, 3)ᵀ.",
+        "answer": "A′(−1, 4), B′(1, 4), C′(−1, 5).",
+        "explanation": "Subtract 2 from every horizontal coordinate and add 3 to every vertical coordinate."
+      },
+      "commonMistakes": [
+        "Use one vector for all vertices.",
+        "Do not interchange the two components.",
+        "Do not call a translation a rotation."
+      ],
+      "terms": [
+        "translation",
+        "displacement vector",
+        "inverse translation",
+        "origin"
+      ]
+    },
+    {
+      "id": "enlarging-from-a-centre",
+      "title": "Scale displacements from the enlargement centre",
+      "points": [
+        "8J"
+      ],
+      "paragraphs": [
+        "An enlargement is specified by a centre C and a scale factor k. For each point P, its image satisfies CP′ = kCP as a directed vector. Work from the centre rather than multiplying the point coordinates unless the centre is the origin.",
+        "A positive factor puts P′ on the same ray from C; a negative factor puts it on the opposite ray. A factor between zero and one reduces the size even though the transformation is called an enlargement. Corresponding lengths scale by |k| and areas by k². For nonzero k, angles are preserved. At k = 0 all points collapse to C, so it does not preserve a non-degenerate shape.",
+        "For C = (h, j), the image is (h + k(x − h), j + k(y − j)). Keep the centre fixed. To describe an enlargement from a diagram, find the centre using lines through corresponding vertices and use directed distances from that centre to determine the signed factor. A nonzero factor can be reversed using 1/k about the same centre."
+      ],
+      "example": {
+        "question": "Enlarge P = (3, 2) from C = (1, −1) with scale factor 3/2.",
+        "steps": [
+          "CP = (3 − 1, 2 − (−1))ᵀ = (2, 3)ᵀ.",
+          "Scale the displacement: CP′ = (3, 9/2)ᵀ.",
+          "Add C back: P′ = (4, 7/2).",
+          "With factor −2 instead, CP′ = (−4, −6)ᵀ and the image would be (−3, −7), on the opposite ray."
+        ],
+        "explanation": "The centre is not the origin, so multiplying (3, 2) directly by 3/2 would give the wrong point."
+      },
+      "practice": {
+        "question": "Enlarge (4, 3) from C = (−2, 1) with scale factor 1/2.",
+        "answer": "(1, 2).",
+        "explanation": "The displacement (6, 2)ᵀ becomes (3, 1)ᵀ. Add the centre to get (1, 2)."
+      },
+      "commonMistakes": [
+        "State centre and scale factor.",
+        "Scale the vector from the centre, not always the coordinates.",
+        "Use the sign of the factor to decide the ray."
+      ],
+      "terms": [
+        "enlargement",
+        "scale factor",
+        "centre of enlargement",
+        "signed displacement"
+      ]
+    },
+    {
+      "id": "combining-geometric-transformations",
+      "title": "Apply transformations in their stated order",
+      "points": [
+        "8K"
+      ],
+      "paragraphs": [
+        "A combination acts on the image produced by the preceding transformation. Record an intermediate point or shape, then transform that result. Reusing the original point for both steps gives two separate images instead of a composition.",
+        "The order usually matters. Reflection followed by rotation can give a different image from rotation followed by reflection. Some special combinations do commute, such as two translations; prove the result for the stated transformations rather than assuming every pair behaves the same way.",
+        "To identify a single equivalent transformation, consider the rule for a general point or compare enough corresponding vertices to justify the full transformation. One point alone cannot establish an equivalent rule for the entire plane. A combination can also be the identity, even when its individual steps move the point."
+      ],
+      "example": {
+        "question": "Reflect a point (x, y) in the y-axis, then rotate the image 90° clockwise about the origin. Find the equivalent single transformation and the image of (2, 1).",
+        "steps": [
+          "Reflection gives (−x, y).",
+          "The clockwise rule applied to that image gives (y, x).",
+          "Swapping coordinates is reflection in y = x, so that is the equivalent transformation.",
+          "For (2, 1), the intermediate point is (−2, 1) and the final point is (1, 2)."
+        ],
+        "explanation": "Using a general point establishes the equivalent rule for every point, not just the example."
+      },
+      "practice": {
+        "question": "Reverse the two steps for (2, 1): rotate 90° clockwise first, then reflect in the y-axis.",
+        "answer": "(−1, −2).",
+        "explanation": "The rotation gives (1, −2), then reflection gives (−1, −2). This differs from (1, 2) in the original order."
+      },
+      "commonMistakes": [
+        "Transform the intermediate image.",
+        "Do not assume the order can be reversed.",
+        "One coincident point does not prove whole-plane equivalence."
+      ],
+      "terms": [
+        "composition",
+        "intermediate image",
+        "equivalent transformation",
+        "order"
+      ]
+    },
+    {
+      "id": "matrix-images-of-position-vectors",
+      "title": "Apply a matrix to a position column",
+      "points": [
+        "8L"
+      ],
+      "paragraphs": [
+        "A 2 × 2 matrix M acts on a position column p by Mp. The matrix is on the left of the column. For M = [[a, b], [c, d]], the image of (x, y)ᵀ is (ax + by, cx + dy)ᵀ. Each output component is a row-by-column product.",
+        "Apply the rule to every vertex to transform a shape. Every such matrix sends the zero position column to zero, so the origin is unchanged. This matches the source scope for matrix transformations; a nonzero translation or a rotation about a different fixed centre generally needs an additional offset, outside this ordinary 2 × 2 representation.",
+        "Different matrix effects are possible, so do not identify a transformation from a single image point. Follow the given rule and use the images of the two standard basis vectors, or an appropriate full shape, when finding what the matrix does."
+      ],
+      "example": {
+        "question": "M = [[0, −1], [1, 0]]. Find the image of P = (3, −2).",
+        "steps": [
+          "Write the position column as (3, −2)ᵀ.",
+          "First output component: 0 × 3 + (−1) × (−2) = 2.",
+          "Second output component: 1 × 3 + 0 × (−2) = 3.",
+          "P′ = (2, 3). The matrix represents a 90° anticlockwise rotation about the origin."
+        ],
+        "explanation": "The original vector is a column on the right of M; reversing their order is not the same operation."
+      },
+      "practice": {
+        "question": "For M = [[−1, 0], [0, 1]], find the images of (2, 3) and the origin.",
+        "answer": "(−2, 3) and (0, 0).",
+        "explanation": "The horizontal coordinate changes sign; the vertical stays the same. The zero column always maps to zero."
+      },
+      "commonMistakes": [
+        "Multiply the matrix by the position column in the correct order.",
+        "Calculate both output rows.",
+        "Check whether the origin can stay fixed before proposing a 2 × 2 representation."
+      ],
+      "terms": [
+        "matrix transformation",
+        "position column",
+        "origin unchanged",
+        "row-by-column"
+      ]
+    },
+    {
+      "id": "reflection-matrices",
+      "title": "Recognise the four standard reflection matrices",
+      "points": [
+        "5F"
+      ],
+      "paragraphs": [
+        "For reflection in x = 0, the y-axis, the rule (x, y) → (−x, y) gives [[−1, 0], [0, 1]]. For reflection in y = 0, the x-axis, the rule (x, y) → (x, −y) gives [[1, 0], [0, −1]]. Naming the axis correctly matters: x = 0 is the vertical axis.",
+        "Reflection in y = x exchanges the two components, giving [[0, 1], [1, 0]]. Reflection in y = −x exchanges and negates both components, giving [[0, −1], [−1, 0]]. All four mirror lines pass through the origin, so these reflections are represented by ordinary 2 × 2 matrices.",
+        "Each reflection done twice returns every point to its starting position. Its matrix squares to I₂ and is its own inverse. This provides a check, but the identity product alone does not name the mirror line; inspect the component rule or the basis-vector images."
+      ],
+      "example": {
+        "question": "Find the matrix for reflection in y = −x and use it on P = (4, −1).",
+        "steps": [
+          "The coordinate rule is (x, y) → (−y, −x).",
+          "The matrix is [[0, −1], [−1, 0]].",
+          "Multiplying (4, −1)ᵀ gives (1, −4)ᵀ.",
+          "A second reflection gives (4, −1), as expected."
+        ],
+        "explanation": "Both exchange and sign changes are needed for the downward-sloping mirror."
+      },
+      "practice": {
+        "question": "Reflect (−2, 5) in x = 0 and write the matrix used.",
+        "answer": "(2, 5), using [[−1, 0], [0, 1]].",
+        "explanation": "x = 0 is the y-axis, so negate the horizontal component only."
+      },
+      "commonMistakes": [
+        "Distinguish x = 0 from y = 0.",
+        "For y = −x, swap and negate both coordinates.",
+        "Shifted mirror lines need an offset and are not these same matrices."
+      ],
+      "terms": [
+        "reflection matrix",
+        "x-axis",
+        "y-axis",
+        "diagonal mirror",
+        "self-inverse"
+      ]
+    },
+    {
+      "id": "rotation-matrices",
+      "title": "Build rotation matrices from direction rules",
+      "points": [
+        "5F"
+      ],
+      "paragraphs": [
+        "A 90° anticlockwise rotation about the origin has rule (x, y) → (−y, x), so its matrix is [[0, −1], [1, 0]]. A 90° clockwise rotation has rule (x, y) → (y, −x), giving [[0, 1], [−1, 0]]. A 180° rotation gives [[−1, 0], [0, −1]].",
+        "A 270° anticlockwise turn is equivalent to 90° clockwise; a 270° clockwise turn is equivalent to 90° anticlockwise. A full 360° turn is the identity. State direction and centre in the transformation description; the ordinary matrices here rotate about the origin.",
+        "Check a proposed matrix using a familiar point such as (1, 0): anticlockwise 90° sends it to (0, 1), clockwise sends it to (0, −1). The inverse rotation turns through the same angle in the opposite direction. Multiplying its matrix by the original gives I₂."
+      ],
+      "example": {
+        "question": "Use a matrix to rotate (−2, 3) through 270° anticlockwise about the origin.",
+        "steps": [
+          "270° anticlockwise is equivalent to 90° clockwise.",
+          "Use [[0, 1], [−1, 0]].",
+          "Multiplication gives (3, 2)ᵀ, so the image is (3, 2)."
+        ],
+        "explanation": "The equivalent shorter turn helps avoid choosing the opposite quarter-turn matrix."
+      },
+      "practice": {
+        "question": "What is the image of (3, −4) after a 180° rotation about the origin?",
+        "answer": "(−3, 4).",
+        "explanation": "The matrix −I₂ negates both components. A half turn has the same image in either direction."
+      },
+      "commonMistakes": [
+        "State the direction of a quarter turn.",
+        "These matrices rotate about the origin.",
+        "A 180° matrix is −I₂, not I₂."
+      ],
+      "terms": [
+        "rotation matrix",
+        "quarter turn",
+        "half turn",
+        "inverse rotation"
+      ]
+    },
+    {
+      "id": "enlargement-matrices",
+      "title": "Use a scalar identity for an origin enlargement",
+      "points": [
+        "5F"
+      ],
+      "paragraphs": [
+        "An enlargement of scale factor k about the origin multiplies both position components by k. Its matrix is kI₂ = [[k, 0], [0, k]]. The off-diagonal entries are zero: a matrix with k in every position would mix the coordinates and represent a different rule.",
+        "For k > 0, the image lies on the same ray from the origin; for k < 0 it lies on the opposite ray. The length factor is |k| and the area factor is k². If k ≠ 0, the inverse has matrix (1/k)I₂. At k = 0 every point maps to the origin, so there is no inverse that can recover the original point.",
+        "An enlargement about another centre generally needs a coordinate offset. The matrix kI₂ by itself describes the origin-centred rule only. The identity case k = 1 leaves all points fixed, so its description does not determine a unique centre."
+      ],
+      "example": {
+        "question": "Write the matrix of an enlargement with centre the origin and scale factor −2, and find the image of (3, −1).",
+        "steps": [
+          "The matrix is [[−2, 0], [0, −2]].",
+          "Its product with (3, −1)ᵀ is (−6, 2)ᵀ.",
+          "The point is on the opposite ray from the origin and twice as far away.",
+          "The inverse factor is −1/2."
+        ],
+        "explanation": "A negative scale changes the ray; its absolute value still gives a positive length multiplier."
+      },
+      "practice": {
+        "question": "Use a matrix for scale factor 1/2 about the origin on (−4, 6).",
+        "answer": "(−2, 3), using [[1/2, 0], [0, 1/2]].",
+        "explanation": "Both components are halved; the image is closer to the origin on the same ray."
+      },
+      "commonMistakes": [
+        "Put the factor on the diagonal, not in every entry.",
+        "Distinguish signed factor from positive length ratio.",
+        "Do not claim a zero-factor inverse."
+      ],
+      "terms": [
+        "enlargement matrix",
+        "scalar identity",
+        "area factor",
+        "inverse factor"
+      ]
+    },
+    {
+      "id": "finding-matrices-from-basis-images",
+      "title": "Put the basis images in the matrix columns",
+      "points": [
+        "8L"
+      ],
+      "paragraphs": [
+        "Let e₁ = (1, 0)ᵀ and e₂ = (0, 1)ᵀ. Multiplying M = [[a, b], [c, d]] by e₁ selects the first column (a, c)ᵀ; multiplying by e₂ selects the second (b, d)ᵀ. To find a matrix for a given origin-fixing linear transformation, put the image of e₁ in column 1 and the image of e₂ in column 2.",
+        "The images are columns, not rows. For a general position (x, y)ᵀ = xe₁ + ye₂, the transformed vector is xMe₁ + yMe₂. This explains why the two basis images determine the rule when it is a linear matrix transformation.",
+        "Check that the transformation belongs to the source scope and fixes the origin. Two arbitrary images do not justify assuming an unrelated nonlinear mapping has a 2 × 2 matrix. A translated reflection may look like the standard mirror locally but cannot use the same origin-only matrix rule."
+      ],
+      "example": {
+        "question": "A linear transformation maps e₁ to (0, −1)ᵀ and e₂ to (1, 0)ᵀ. Find its matrix and identify the transformation.",
+        "steps": [
+          "Column 1 is (0, −1)ᵀ and column 2 is (1, 0)ᵀ.",
+          "Therefore M = [[0, 1], [−1, 0]].",
+          "Its general rule is (x, y) → (y, −x).",
+          "This is a 90° clockwise rotation about the origin."
+        ],
+        "explanation": "Writing the images as rows would give the opposite quarter turn."
+      },
+      "practice": {
+        "question": "A linear transformation maps e₁ to (−1, 0)ᵀ and e₂ to (0, 1)ᵀ. Find and identify its matrix.",
+        "answer": "[[−1, 0], [0, 1]], reflection in the y-axis.",
+        "explanation": "Place the stated images in columns. The general rule is (x, y) → (−x, y)."
+      },
+      "commonMistakes": [
+        "Place basis images in columns.",
+        "Retain the top-to-bottom order of each column.",
+        "Do not assume an arbitrary mapping is linear."
+      ],
+      "terms": [
+        "standard basis",
+        "image columns",
+        "linear transformation",
+        "matrix identification"
+      ],
+      "diagram": {
+        "src": "/diagrams/maths-basis-images.svg",
+        "alt": "For a ninety degree clockwise rotation, the first basis vector one, zero goes to zero, minus one and becomes column one. The second basis vector zero, one goes to one, zero and becomes column two. The resulting matrix has rows zero, one and minus one, zero.",
+        "caption": "The image of e₁ is column 1; the image of e₂ is column 2. Do not put them in rows."
+      }
+    },
+    {
+      "id": "ordering-matrix-transformations",
+      "title": "Read the right-hand matrix as the first action",
+      "points": [
+        "5G",
+        "8K"
+      ],
+      "paragraphs": [
+        "For position column p, applying B first gives Bp. Applying A to that image gives A(Bp) = (AB)p. Thus the product AB represents B followed by A: the right-hand matrix acts first. This convention follows directly from multiplication by a column on the right.",
+        "Calculate AB in that order using rows of A and columns of B. The reverse product BA represents the reverse sequence and may differ. You can check a result by transforming a point in two separate steps and comparing it with the composite matrix, but a whole-plane equivalence needs the full matrix rule.",
+        "To undo AB when both matrices are invertible, reverse the actions: first undo A, then undo B. The inverse matrix is B⁻¹A⁻¹, with the right-hand inverse acting first. Keep all transformations within the origin-fixing matrix scope; a nonzero translation cannot be silently inserted into the same 2 × 2 product."
+      ],
+      "example": {
+        "question": "Let B reflect in the y-axis and A rotate 90° clockwise about the origin. Find AB and the image of (2, 1).",
+        "steps": [
+          "B = [[−1, 0], [0, 1]] and A = [[0, 1], [−1, 0]].",
+          "AB = [[0, 1], [1, 0]], the matrix for reflection in y = x.",
+          "The composite sends (2, 1)ᵀ to (1, 2)ᵀ.",
+          "The separate steps give (−2, 1)ᵀ then (1, 2)ᵀ, confirming the order.",
+          "BA = [[0, −1], [−1, 0]] instead, reflection in y = −x."
+        ],
+        "explanation": "The product names A first on the page, but B is the first transformation applied to the column."
+      },
+      "practice": {
+        "question": "For the same A and B, calculate BA and its image of (2, 1).",
+        "answer": "BA = [[0, −1], [−1, 0]], giving (−1, −2).",
+        "explanation": "Apply A first: (2, 1) → (1, −2); then B gives (−1, −2)."
+      },
+      "commonMistakes": [
+        "In AB, apply B first to a position column.",
+        "Do not exchange A and B without justification.",
+        "Undo compositions by reversing the actions."
+      ],
+      "terms": [
+        "matrix composition",
+        "AB order",
+        "right-hand action",
+        "inverse composition"
       ]
     }
   ]

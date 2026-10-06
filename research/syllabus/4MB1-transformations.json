@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4MB1",
+  "title": "Plane and matrix transformations — partial teaching",
+  "specificationIssue": "Issue 1 - January 2016",
+  "specificationDocumentId": "4MB1-spec",
+  "specificationSha256": "62d4534ba1c0aee42ce2d3e7fd1da8083fd03216dd106da11ae590525d3187a5",
+  "reviewDate": "2026-10-06",
+  "reviewedBy": "Codex",
+  "reviewerType": "agent",
+  "reviewMethod": "Own official PDF23 and26 text and full-page images reviewed.",
+  "reviewedPages": [
+    23,
+    26
+  ],
+  "scope": "Five new source identities, with explicit geometric versus origin-fixing matrix scope. No whole-point or chapter completion.",
+  "points": [
+    {
+      "id": "4MB1:issue1:5F",
+      "reference": "5F",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "summary": "Use2×2 matrices for reflections in x=0, y=0 and y=±x, rotations about the origin and origin-centred enlargements.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "geometry",
+      "noteSectionIds": [
+        "reflection-matrices",
+        "rotation-matrices",
+        "enlargement-matrices"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-06"
+    },
+    {
+      "id": "4MB1:issue1:5G",
+      "reference": "5G",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "summary": "Combine matrix transformations; AB applies B followed by A.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "geometry",
+      "noteSectionIds": [
+        "ordering-matrix-transformations"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-06"
+    },
+    {
+      "id": "4MB1:issue1:8J",
+      "reference": "8J",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "summary": "Transform the plane using reflections in any line, rotations about any point, translations and enlargements.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "geometry",
+      "noteSectionIds": [
+        "reflecting-in-a-line",
+        "rotating-about-a-centre",
+        "translating-by-a-vector",
+        "enlarging-from-a-centre"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-06"
+    },
+    {
+      "id": "4MB1:issue1:8K",
+      "reference": "8K",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "summary": "Combine plane transformations in their stated order.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "geometry",
+      "noteSectionIds": [
+        "combining-geometric-transformations",
+        "ordering-matrix-transformations"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-06"
+    },
+    {
+      "id": "4MB1:issue1:8L",
+      "reference": "8L",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "summary": "Multiply a vector by a matrix and find a matrix from images of the two standard basis columns; origin unchanged.",
+      "components": [
+        "01",
+        "02"
+      ],
+      "statementVerified": true,
+      "substatementAuditComplete": false,
+      "chapterId": "geometry",
+      "noteSectionIds": [
+        "matrix-images-of-position-vectors",
+        "finding-matrices-from-basis-images"
+      ],
+      "teachingCoverage": "partial",
+      "humanReviewed": false,
+      "teachingReviewedAt": "2026-10-06"
+    }
+  ]
+}

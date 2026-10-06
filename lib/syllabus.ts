@@ -1,3 +1,4 @@
+import mathsTransformationsBasis from '../research/syllabus/4MB1-transformations.json' with { type: 'json' };
 import mathsMatrixBasis from '../research/syllabus/4MB1-matrix-foundations.json' with { type: 'json' };
 import mathsVectorBasis from '../research/syllabus/4MB1-vector-foundations.json' with { type: 'json' };
 import mathsSimilarityCyclic from '../research/syllabus/4MB1-similarity-and-cyclic.json' with { type: 'json' };
@@ -89,6 +90,7 @@ import mathsPolynomials from '../research/syllabus/4MB1-polynomials-and-fraction
 
 // Reviewed overlays are kept separate from the immutable raw candidates.
 export const reviewedInventories = [
+  mathsTransformationsBasis,
   mathsMatrixBasis,
   mathsVectorBasis,
   mathsSimilarityCyclic,
