@@ -1,3 +1,4 @@
+import mathsSimilarityCyclic from '../research/syllabus/4MB1-similarity-and-cyclic.json' with { type: 'json' };
 import humanImmunityWaste from '../research/syllabus/4HB1-disease-immunity-waste.json' with { type: 'json' };
 import humanDiseaseNamed from '../research/syllabus/4HB1-disease-named.json' with { type: 'json' };
 import humanDisease from '../research/syllabus/4HB1-disease-foundations.json' with { type: 'json' };
@@ -86,6 +87,7 @@ import mathsPolynomials from '../research/syllabus/4MB1-polynomials-and-fraction
 
 // Reviewed overlays are kept separate from the immutable raw candidates.
 export const reviewedInventories = [
+  mathsSimilarityCyclic,
   { title: 'Human immunity, antibiotics and waste (12.12–12.18; partial teaching)', ...humanImmunityWaste },
   { title: 'Human named diseases, rehydration and vectors (12.7–12.11; partial teaching)', ...humanDiseaseNamed },
   { title: 'Human disease foundations (12.1–12.6; partial teaching; 12.5 owned in Q2)', ...humanDisease },

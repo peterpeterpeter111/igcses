@@ -19,7 +19,10 @@
     "Find straight-line equations and recognise vertical-line limits.",
     "Use perpendicular lengths in Pythagoras and area calculations.",
     "Use trigonometric ratios and angles of elevation/depression in degrees.",
-    "Build a reasoned triangle-congruence proof."
+    "Build a reasoned triangle-congruence proof.",
+    "Use similar length, area and volume factors and justify triangle similarity.",
+    "Identify the arc, chord, tangent or cyclic configuration before choosing a circle rule.",
+    "Calculate and rearrange arc, sector and perimeter relationships in degrees."
   ],
   "sections": [
     {
@@ -405,6 +408,503 @@
       "commonMistakes": [
         "Dividing a non-regular polygon’s total by n to claim every angle.",
         "Using n × 180° as the interior sum."
+      ]
+    },
+    {
+      "id": "similar-lengths-and-correspondence",
+      "title": "Match corresponding lengths before scaling",
+      "points": [
+        "6G"
+      ],
+      "paragraphs": [
+        "Similar figures have equal corresponding angles and a common ratio between corresponding lengths. They can be turned or reflected, so match vertices by their geometric roles rather than by left/right position on the page. Similar does not mean congruent: size may change.",
+        "Define the length scale factor in a direction: k = target length / original corresponding length. Every corresponding length is multiplied by that same positive k, including a perimeter. An enlargement has k > 1; a smaller similar figure has 0 < k < 1. Reversing direction uses 1/k.",
+        "Convert corresponding measurements to the same units before forming a ratio. A single pair of lengths is enough to find k only when similarity is given or established; it cannot by itself prove that arbitrary shapes are similar."
+      ],
+      "example": {
+        "question": "Similar triangles have AB corresponding to DE. AB = 6 cm and DE = 9 cm. BC = 8 cm corresponds to EF. Find EF.",
+        "steps": [
+          "The factor from ABC to DEF is 9/6 = 3/2.",
+          "EF = 8 × 3/2 = 12 cm.",
+          "The correspondence is A ↔ D, B ↔ E and C ↔ F; do not pair sides by their orientation in a sketch."
+        ],
+        "explanation": "Write both ratios in the same direction."
+      },
+      "practice": {
+        "question": "A 4 cm length on a similar model corresponds to 1.2 m on the original. Find the length factor from model to original.",
+        "answer": "30.",
+        "explanation": "1.2 m = 120 cm, so k = 120/4 = 30."
+      },
+      "commonMistakes": [
+        "Identify correspondence before using a proportion.",
+        "State the direction of k.",
+        "Equal-looking sides in a sketch are not evidence of similarity."
+      ],
+      "terms": [
+        "similarity",
+        "corresponding sides",
+        "length scale factor",
+        "perimeter"
+      ]
+    },
+    {
+      "id": "similar-area-and-volume-factors",
+      "title": "Square the length factor for area; cube it for volume",
+      "points": [
+        "6G"
+      ],
+      "paragraphs": [
+        "For similar figures with length factor k, corresponding areas have factor k². A rectangle illustrates why: both its length and width are multiplied by k, so their product is multiplied by k × k. The same area relationship holds for other similar plane shapes and for corresponding surface areas of similar solids.",
+        "For similar solids, volumes have factor k³. All three dimensions change by k, giving k × k × k. This requires geometrical similarity; two cylinders with equal radii but different heights are not necessarily similar.",
+        "Distinguish a ratio of lengths from a ratio of areas or volumes. If corresponding lengths are in ratio 2:3, corresponding areas are in ratio 4:9 and volumes of similar solids are in ratio 8:27. Use square units for areas and cubic units for volumes."
+      ],
+      "example": {
+        "question": "Two similar solid containers have corresponding lengths in ratio small:large = 2:3. The smaller surface area is 80 cm² and its volume is 160 cm³. Find the larger values.",
+        "steps": [
+          "From small to large, k = 3/2.",
+          "Surface area = 80 × (3/2)² = 180 cm².",
+          "Volume = 160 × (3/2)³ = 540 cm³."
+        ],
+        "explanation": "The same linear factor has different powers for area and volume."
+      },
+      "practice": {
+        "question": "A shape is enlarged with length factor 1/2. What fractions of the original area and volume does a similar solid retain?",
+        "answer": "Area 1/4; volume 1/8.",
+        "explanation": "Square 1/2 for area and cube it for volume; halving a length does not halve the volume."
+      },
+      "commonMistakes": [
+        "Use k² for area and surface area.",
+        "Use k³ for volume only when all dimensions are similar.",
+        "Do not square the supplied area a second time."
+      ],
+      "terms": [
+        "area scale factor",
+        "volume scale factor",
+        "similar solids",
+        "surface area"
+      ]
+    },
+    {
+      "id": "recovering-length-scale-factors",
+      "title": "Recover the length factor from area or volume",
+      "points": [
+        "6G"
+      ],
+      "paragraphs": [
+        "If the corresponding area ratio is A₂/A₁, the length factor from figure 1 to figure 2 is the positive square root of that ratio. If the corresponding volume ratio of similar solids is V₂/V₁, use its positive cube root.",
+        "After recovering k, apply the appropriate power to the quantity actually requested. An area ratio does not directly give a volume ratio. Keep the direction of the ratio fixed throughout.",
+        "For example, a volume ratio of 27:64 gives a length ratio of 3:4 and a corresponding surface-area ratio of 9:16. This conclusion depends on the solids being similar, not merely having those volumes."
+      ],
+      "example": {
+        "question": "Two similar solid ornaments have surface areas 50 cm² and 98 cm². The smaller has volume 125 cm³. Find the larger volume.",
+        "steps": [
+          "Area factor = 98/50 = 49/25.",
+          "Length factor k = √(49/25) = 7/5.",
+          "Volume factor = (7/5)³ = 343/125.",
+          "Larger volume = 125 × 343/125 = 343 cm³."
+        ],
+        "explanation": "Recover a length factor before switching from area to volume."
+      },
+      "practice": {
+        "question": "Similar solids have volumes in ratio small:large = 8:125. Find their surface-area ratio.",
+        "answer": "4:25.",
+        "explanation": "Cube roots give length ratio 2:5, whose square gives area ratio 4:25."
+      },
+      "commonMistakes": [
+        "Square-root an area ratio; cube-root a volume ratio.",
+        "Use the positive length factor.",
+        "State similarity rather than inferring it from one numerical ratio."
+      ],
+      "terms": [
+        "square root",
+        "cube root",
+        "reverse scale factor"
+      ]
+    },
+    {
+      "id": "proving-triangle-similarity",
+      "title": "Prove similarity with facts and matching vertices",
+      "points": [
+        "6H"
+      ],
+      "paragraphs": [
+        "For triangles, two pairs of equal corresponding angles establish similarity (AA), because the third pair then follows from the 180° angle sum. Give the reasons for the equalities: a common angle, parallel-line angle facts or stated data. A drawing that looks proportional is not a proof.",
+        "Alternatively, three corresponding side pairs in the same ratio establish similarity (SSS similarity). Two corresponding side pairs in the same ratio and an equal included angle establish SAS similarity. The angle must be between the two sides used; two arbitrary ratios and a non-included angle are insufficient.",
+        "Write the triangles in corresponding vertex order. Once similarity is proved, set up a proportion between corresponding sides to calculate a length. AA proves the same shape; it does not prove the same size or congruence."
+      ],
+      "example": {
+        "question": "In triangle ABC, D lies on AB and E lies on AC with DE parallel to BC. Prove triangles ADE and ABC similar. AD = 4 cm, AB = 10 cm and BC = 15 cm; find DE.",
+        "steps": [
+          "∠DAE = ∠BAC: they are the same angle at A.",
+          "∠ADE = ∠ABC: corresponding angles with DE parallel to BC.",
+          "Therefore triangle ADE is similar to triangle ABC by AA, with A ↔ A, D ↔ B and E ↔ C.",
+          "DE/BC = AD/AB = 4/10, so DE = 15 × 4/10 = 6 cm."
+        ],
+        "explanation": "The parallel condition supplies the second angle equality; do not assume it from appearance."
+      },
+      "practice": {
+        "question": "Triangles have side lengths 3, 4, 5 cm and 6, 8, 10 cm. Are they similar or necessarily congruent?",
+        "answer": "Similar by SSS similarity, with factor 2; not congruent.",
+        "explanation": "The corresponding ratios 6/3, 8/4 and 10/5 are all 2, so the size changes."
+      },
+      "commonMistakes": [
+        "Include reasons for angle equalities.",
+        "Use the included angle for SAS similarity.",
+        "Distinguish ratios for similarity from equalities for congruence."
+      ],
+      "terms": [
+        "AA similarity",
+        "SSS similarity",
+        "SAS similarity",
+        "parallel lines",
+        "proof"
+      ],
+      "diagram": {
+        "src": "/diagrams/maths-similar-triangles.svg",
+        "alt": "Triangle ABC with D on AB and E on AC. DE is parallel to BC. The smaller triangle ADE shares angle A and has corresponding angles at D and B.",
+        "caption": "DE ∥ BC gives AA similarity. Match A–D–E with A–B–C before comparing lengths; the sketch is not a measurement tool."
+      }
+    },
+    {
+      "id": "chords-and-perpendicular-centre-lines",
+      "title": "Use the centre to reason about chords",
+      "points": [
+        "6K"
+      ],
+      "paragraphs": [
+        "A chord joins two points on a circle. A line from the centre perpendicular to a chord bisects that chord. Conversely, a line from the centre through the midpoint of a non-diameter chord is perpendicular to it. State that the line passes through the centre: an arbitrary perpendicular does not necessarily bisect a chord.",
+        "Equal chords in the same circle, or in circles of equal radius, are the same perpendicular distance from the centre. The converse also holds. Equal chords subtend equal minor central angles; compare corresponding minor angles rather than mixing minor and reflex angles.",
+        "Join the centre to a chord endpoint to form a radius. A perpendicular from the centre then creates a right triangle containing the radius, half the chord and the centre-to-chord distance. Apply Pythagoras to those actual lengths."
+      ],
+      "example": {
+        "question": "A circle has radius 13 cm. A chord is 5 cm from the centre, measured perpendicularly. Find the chord length.",
+        "steps": [
+          "Let M be the perpendicular foot from centre O to chord AB. AM = MB.",
+          "In right triangle OMA, OA = 13 and OM = 5, so AM² = 13² − 5² = 144.",
+          "AM = 12 cm; the full chord AB = 2 × 12 = 24 cm."
+        ],
+        "explanation": "The right triangle contains half the chord, not the whole chord."
+      },
+      "practice": {
+        "question": "A chord is 16 cm long in a circle of radius 10 cm. Find its perpendicular distance from the centre.",
+        "answer": "6 cm.",
+        "explanation": "Half the chord is 8 cm, so the distance is √(10² − 8²) = 6 cm."
+      },
+      "commonMistakes": [
+        "Check the perpendicular begins at the centre.",
+        "Halve the chord before using Pythagoras.",
+        "The chord cannot exceed the diameter."
+      ],
+      "terms": [
+        "chord",
+        "centre",
+        "perpendicular bisector",
+        "equal chords"
+      ]
+    },
+    {
+      "id": "circle-angles-and-same-segment",
+      "title": "Match the arc before using a circle-angle rule",
+      "points": [
+        "6K"
+      ],
+      "paragraphs": [
+        "The angle subtended by an arc at the centre is twice the angle subtended by that same arc at a point on the remaining circumference. Identify the arc not containing the circumference vertex. In some configurations the matching central angle is reflex; automatically choosing the smaller central angle can give a wrong result.",
+        "Angles subtended by the same chord at circumference points in the same segment are equal. The vertices must lie on the same side of the chord and on the same circle. Points on opposite sides of a chord instead form the supplementary-angle configuration of a cyclic quadrilateral.",
+        "An angle in a semicircle is 90°: its chord is a diameter and the matching central angle is 180°. The right angle is at the circumference point, not necessarily at the centre. A chord that only appears to pass through the centre is not enough."
+      ],
+      "example": {
+        "question": "A and B lie on a circle with centre O, and minor ∠AOB = 124°. C lies on the major arc AB. Find ∠ACB.",
+        "steps": [
+          "C is on the major arc, so ∠ACB subtends the minor arc AB.",
+          "The matching central angle is 124°.",
+          "∠ACB = 124°/2 = 62°."
+        ],
+        "explanation": "If C were on the minor arc, the matching reflex central angle would be 236° and the circumference angle would be 118°."
+      },
+      "practice": {
+        "question": "AB is a diameter. C lies elsewhere on its circle. ∠CAB = 34°. Find ∠ABC.",
+        "answer": "56°.",
+        "explanation": "∠ACB = 90° by the semicircle rule; the triangle sum gives 180° − 90° − 34° = 56°."
+      },
+      "commonMistakes": [
+        "Name the common arc or chord.",
+        "Check whether vertices lie in the same segment.",
+        "Choose the matching central angle, including reflex angles when required."
+      ],
+      "terms": [
+        "angle at centre",
+        "same segment",
+        "semicircle",
+        "reflex angle",
+        "subtended arc"
+      ]
+    },
+    {
+      "id": "tangents-radii-and-equal-lengths",
+      "title": "Use perpendicular radii and equal tangents",
+      "points": [
+        "6K"
+      ],
+      "paragraphs": [
+        "A tangent touches a circle at one point. The radius to that point is perpendicular to the tangent. The right angle occurs at the point of contact. A radius to a different point is not automatically perpendicular to the tangent line.",
+        "The two tangent segments drawn from the same external point to the same circle have equal lengths. Their endpoints are the two points of contact; this does not assert that arbitrary tangents from different external points are equal.",
+        "Join the centre O to the external point P and to the tangent point T. Triangle OTP is right-angled at T, so OP is the hypotenuse and PT² = OP² − OT². Use positive lengths."
+      ],
+      "example": {
+        "question": "P is 13 cm from centre O of a circle of radius 5 cm. PT is tangent at T. Find PT.",
+        "steps": [
+          "OT is perpendicular to PT, so triangle OTP is right-angled at T.",
+          "PT² = OP² − OT² = 13² − 5² = 144.",
+          "PT = 12 cm. A second tangent from P to the circle also has length 12 cm."
+        ],
+        "explanation": "The centre-to-external-point segment is the hypotenuse."
+      },
+      "practice": {
+        "question": "PA and PB are tangents from one external point P, with PA = 3x + 1 and PB = 2x + 6 cm. Find x and the tangent lengths.",
+        "answer": "x = 5; PA = PB = 16 cm.",
+        "explanation": "Equal tangents give 3x + 1 = 2x + 6, so x = 5; substitute into both."
+      },
+      "commonMistakes": [
+        "The perpendicular radius goes to the point of contact.",
+        "Equal tangents must share one external point and circle.",
+        "Do not set the radius equal to a tangent."
+      ],
+      "terms": [
+        "tangent",
+        "point of contact",
+        "equal tangents",
+        "radius perpendicular"
+      ]
+    },
+    {
+      "id": "alternate-segment-theorem",
+      "title": "Locate the angle in the alternate segment",
+      "points": [
+        "6K"
+      ],
+      "paragraphs": [
+        "The angle between a tangent at A and chord AB equals the angle subtended by chord AB at a circumference point in the alternate segment. Draw the chosen tangent ray and chord ray explicitly. The circumference vertex is on the opposite side of the chord from the selected tangent-chord angle.",
+        "Two tangent rays at A form supplementary angles with chord AB. They match circumference angles in opposite segments, not the same arbitrary angle. State the chosen angle using three letters and give alternate segment theorem as the reason.",
+        "Combine this theorem with the 180° triangle sum or the perpendicular radius rule only after locating all the angles. The tangent-chord angle is not always acute and is not an angle at the centre."
+      ],
+      "example": {
+        "question": "A tangent ray AX and chord AB make ∠XAB = 58°. C is a point on the circumference in the alternate segment for that angle. Find ∠ACB.",
+        "steps": [
+          "Identify chord AB and the angle between ray AX and AB.",
+          "C is in the required alternate segment.",
+          "∠ACB = 58° by the alternate segment theorem."
+        ],
+        "explanation": "Choosing the other tangent ray would give a supplementary tangent-chord angle and require the opposite segment."
+      },
+      "practice": {
+        "question": "For the same tangent ray, ∠XAB = 41°. C lies in its alternate segment and ∠BAC = 67°. Find ∠ABC.",
+        "answer": "72°.",
+        "explanation": "∠ACB = 41° by the alternate segment theorem; ∠ABC = 180° − 41° − 67° = 72°."
+      },
+      "commonMistakes": [
+        "Identify the tangent ray, chord and alternate segment.",
+        "Do not halve the tangent-chord angle.",
+        "Do not choose any convenient circumference vertex."
+      ],
+      "terms": [
+        "alternate segment theorem",
+        "tangent-chord angle",
+        "alternate segment"
+      ]
+    },
+    {
+      "id": "internal-intersecting-chord-products",
+      "title": "Multiply the two parts of each intersecting chord",
+      "points": [
+        "6K"
+      ],
+      "paragraphs": [
+        "When chords AB and CD intersect at P inside a circle, PA × PB = PC × PD. Each product uses the two lengths from P to the endpoints of one chord. It does not multiply one length from each chord, and it does not use the full chord length with one of its parts.",
+        "If a whole chord length is given, subtract its known part to obtain the other part before forming the product. The unknown distances must be positive and smaller than the full chord where appropriate. An algebraic root that violates these conditions is not a geometric solution.",
+        "This is an interior-chord configuration. The external-secant rule has a different whole-length interpretation; do not copy an internal-part diagram into an external problem."
+      ],
+      "example": {
+        "question": "Chords AB and CD meet at P inside a circle. PA = 4 cm, PB = 9 cm and PC = 3 cm. Find PD.",
+        "steps": [
+          "PA × PB = PC × PD.",
+          "4 × 9 = 3 × PD.",
+          "PD = 12 cm."
+        ],
+        "explanation": "The two products refer to different full chords but each product uses its two separate parts."
+      },
+      "practice": {
+        "question": "Chords intersect at P. PA = 3 cm and AB = 11 cm. PC = 4 cm. Find PD.",
+        "answer": "6 cm.",
+        "explanation": "PB = 11 − 3 = 8 cm. Then 3 × 8 = 4 × PD, giving PD = 6 cm."
+      },
+      "commonMistakes": [
+        "Subtract to find a missing chord part.",
+        "Pair endpoints from the same chord.",
+        "Reject negative distances or roots outside the segment."
+      ],
+      "terms": [
+        "intersecting chords",
+        "chord product",
+        "internal intersection"
+      ]
+    },
+    {
+      "id": "external-secant-and-tangent-products",
+      "title": "Use external distance times whole secant length",
+      "points": [
+        "6K"
+      ],
+      "paragraphs": [
+        "Let two secants from external point P meet a circle in the orders P–A–B and P–C–D. Then PA × PB = PC × PD. PA and PC are external lengths; PB and PD are the whole distances from P to the farther circle intersections. If AB is given, PB = PA + AB.",
+        "If PT is tangent to the same circle from P, then PT² = PA × PB. The tangent length is squared, while the secant product uses its external and whole lengths. This rule does not say PT = PA or PT = AB.",
+        "Read the point order rather than relying on a memorised picture. All lengths are positive, and a whole secant is greater than its external part. Solve the algebra and check those conditions. The common external point is essential."
+      ],
+      "example": {
+        "question": "P–A–B are collinear in that order, with PA = 4 cm and AB = 5 cm. PT is tangent from P to the same circle. Find PT.",
+        "steps": [
+          "The whole secant PB = PA + AB = 4 + 5 = 9 cm.",
+          "PT² = PA × PB = 4 × 9 = 36.",
+          "PT = 6 cm."
+        ],
+        "explanation": "Using 4 × 5 would incorrectly multiply the external part by the internal part."
+      },
+      "practice": {
+        "question": "Two secants from P have orders P–A–B and P–C–D. PA = 3 cm, AB = 9 cm and PC = 4 cm. Find CD.",
+        "answer": "5 cm.",
+        "explanation": "PB = 12 cm. From 3 × 12 = 4 × PD, PD = 9 cm. CD = PD − PC = 9 − 4 = 5 cm."
+      },
+      "commonMistakes": [
+        "Add the internal part to get a whole secant.",
+        "Subtract the external part when the required answer is inside the circle.",
+        "Use one common external point."
+      ],
+      "terms": [
+        "secant",
+        "external intersecting chords",
+        "tangent secant",
+        "whole secant"
+      ],
+      "diagram": {
+        "src": "/diagrams/maths-external-secant.svg",
+        "alt": "From external P a horizontal secant crosses the circle at A then B, with PA equal to 4 centimetres and AB equal to 5 centimetres. A separate tangent PT touches the circle at T. Whole PB is 9 centimetres and PT is 6 centimetres.",
+        "caption": "PT² = PA × PB = 4 × 9. PB includes both the external 4 cm and internal 5 cm; AB alone is not the whole secant."
+      }
+    },
+    {
+      "id": "cyclic-quadrilateral-angle-reasons",
+      "title": "Use opposite angles in a cyclic quadrilateral",
+      "points": [
+        "6L"
+      ],
+      "paragraphs": [
+        "A cyclic quadrilateral has all four vertices on the same circle. Its opposite interior angles add to 180°. Adjacent angles do not in general do so. State or establish that the vertices lie on one circle before using the rule.",
+        "An exterior angle formed by extending one side of a cyclic quadrilateral equals the opposite interior angle. It is adjacent and supplementary to the interior angle at the extended vertex. Identify the actual side extension so that a reflex angle is not mistaken for that exterior angle.",
+        "A quadrilateral drawn near a circle is not automatically cyclic. Keep the opposite-angle rule separate from the same-segment rule: circumference vertices on opposite sides of a chord produce supplementary angles, not equal ones."
+      ],
+      "example": {
+        "question": "ABCD is cyclic, in that vertex order. ∠ABC = 112° and ∠BCD = 83°. Find ∠ADC and ∠BAD.",
+        "steps": [
+          "B and D are opposite, so ∠ADC = 180° − 112° = 68°.",
+          "A and C are opposite, so ∠BAD = 180° − 83° = 97°.",
+          "The four angles total 360°, confirming the calculation."
+        ],
+        "explanation": "Pair opposite vertices; do not subtract an adjacent angle."
+      },
+      "practice": {
+        "question": "In cyclic ABCD, extend AB beyond B to E. If ∠ADC = 74°, find ∠CBE.",
+        "answer": "74°.",
+        "explanation": "∠ABC = 180° − 74° = 106°. The adjacent exterior ∠CBE is 180° − 106° = 74°."
+      },
+      "commonMistakes": [
+        "Verify all four vertices lie on the same circle.",
+        "Pair opposite angles.",
+        "Identify a side extension before naming an exterior angle."
+      ],
+      "terms": [
+        "cyclic quadrilateral",
+        "opposite angles",
+        "exterior angle"
+      ]
+    },
+    {
+      "id": "arc-length-and-sector-area",
+      "title": "Use the fraction of a full circle in degrees",
+      "points": [
+        "7D"
+      ],
+      "paragraphs": [
+        "For radius r and central angle θ measured in degrees, the arc length is (θ/360) × 2πr and the sector area is (θ/360) × πr². The angle determines the same fraction of the circumference and of the full-circle area, but one result is a length and the other is an area.",
+        "A sector is bounded by two radii and their circular arc. A segment is bounded by a chord and an arc; it is not the same region. If an angle names the minor sector, the major sector has angle 360° − θ. State which arc or region is required.",
+        "Use the radius rather than the diameter and keep all length units consistent. Retain π for an exact answer or evaluate with unrounded intermediate values before final rounding. This specification uses degrees for sectors; radian measure is excluded."
+      ],
+      "example": {
+        "question": "A sector has radius 12 cm and central angle 75°. Find its exact arc length and area.",
+        "steps": [
+          "The circle fraction is 75/360 = 5/24.",
+          "Arc length = (5/24) × 2π × 12 = 5π cm.",
+          "Area = (5/24) × π × 12² = 30π cm²."
+        ],
+        "explanation": "The arc is measured in centimetres; the sector area in square centimetres."
+      },
+      "practice": {
+        "question": "A circle has diameter 10 cm. Find the exact area of its major sector when the minor central angle is 72°.",
+        "answer": "20π cm².",
+        "explanation": "r = 5 and the major angle is 288°. Its area is (288/360) × π × 25 = 20π."
+      },
+      "commonMistakes": [
+        "Halve the diameter to get the radius.",
+        "Use θ/360 with degrees.",
+        "Distinguish an arc, a sector and a segment."
+      ],
+      "terms": [
+        "arc length",
+        "sector area",
+        "major sector",
+        "central angle",
+        "degrees"
+      ],
+      "diagram": {
+        "src": "/diagrams/maths-sector.svg",
+        "alt": "A minor circular sector has centre O, radius 12 centimetres and central angle 75 degrees. Its curved arc is 5 pi centimetres and area 30 pi square centimetres. The dashed endpoint chord bounds a different circular segment.",
+        "caption": "The sector includes the centre and two radii. The dashed chord is not a radial boundary: it would define a segment together with the arc."
+      }
+    },
+    {
+      "id": "sector-perimeters-and-reverse-calculations",
+      "title": "Include the radii and rearrange sector relationships",
+      "points": [
+        "7D"
+      ],
+      "paragraphs": [
+        "For a non-degenerate sector bounded by two radii and one arc, perimeter = arc length + 2r. The full circumference is not its perimeter. If a shape contains several sectors or a removed region, trace the outside boundary and include only the edges that actually remain exposed.",
+        "Reverse calculations use the same relationships. From arc length L, θ = 360L/(2πr). From sector area A, θ = 360A/(πr²). Alternatively, solve for r and take a positive square root when the area formula gives r². Check that the inferred angle belongs to the stated sector.",
+        "For an annular sector between concentric radii R and r with the same angle θ, its area is (θ/360)π(R² − r²). It is not (θ/360)π(R − r)². Derive the result by subtracting the two sector areas; do not add their overlapping regions."
+      ],
+      "example": {
+        "question": "A 60° sector of radius 9 cm has its two straight radial edges exposed. Find its exact perimeter.",
+        "steps": [
+          "Arc length = (60/360) × 2π × 9 = 3π cm.",
+          "The two radii contribute 18 cm.",
+          "Perimeter = 18 + 3π cm."
+        ],
+        "explanation": "The curved edge is only one-sixth of the circumference."
+      },
+      "practice": {
+        "question": "A sector of radius 8 cm has area 16π cm². Find its central angle and exact arc length.",
+        "answer": "90° and 4π cm.",
+        "explanation": "θ = 360 × 16π/(64π) = 90°. Arc = (90/360) × 16π = 4π cm."
+      },
+      "commonMistakes": [
+        "Include exposed straight edges in a perimeter.",
+        "Use consistent square units when rearranging area.",
+        "Subtract sector areas, not radii squared after subtraction."
+      ],
+      "terms": [
+        "sector perimeter",
+        "reverse sector calculation",
+        "annular sector",
+        "exposed boundary"
       ]
     }
   ]

@@ -9,10 +9,10 @@ import { curriculumAudits } from '../lib/curriculum.ts';
 
 void test('combined curriculum audits preserve unique source identities and real partial evidence', () => {
   const parents = curriculumAudits.flatMap((a) => a.parents);
-  assert.equal(parents.length, 774);
+  assert.equal(parents.length, 779);
   assert.equal(new Set(parents.map((p) => p.parentId)).size, parents.length);
   const requirements = parents.flatMap((p) => p.requirements);
-  assert.equal(requirements.length, 2731);
+  assert.equal(requirements.length, 2757);
   assert.equal(new Set(requirements.map((r) => r.id)).size, requirements.length);
   for (const a of curriculumAudits) {
     const chapterInventories = reviewedInventories.filter((i) => i.qualification === a.qualification && i.points.some((p) => p.chapterId === a.chapterId));

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="420" viewBox="0 0 600 420" role="img" aria-labelledby="title desc">
+  <title id="title">A sector has two radial boundaries</title>
+  <desc id="desc">The shaded minor sector has centre O, radius 12 centimetres and central angle 75 degrees. Its arc is 5 pi centimetres and its area is 30 pi square centimetres. A dashed chord connects the circumference endpoints and separates a circular segment from the rest of the sector.</desc>
+  <rect width="600" height="420" fill="#faf6ed"/>
+  <g font-family="Georgia, serif" fill="#302522">
+    <text x="300" y="34" font-size="26" text-anchor="middle">Two radii bound the sector</text>
+    <path d="M100 330 L330 330 A230 230 0 0 0 159.528 107.037 Z" fill="#8b343b" fill-opacity="0.11" stroke="#8b343b" stroke-width="3"/>
+    <path d="M330 330 L159.528 107.037" fill="none" stroke="#857161" stroke-width="2" stroke-dasharray="8 6"/>
+    <path d="M150 330 A50 50 0 0 0 112.941 281.704" fill="none" stroke="#9b7842" stroke-width="2.5"/>
+    <text x="82" y="359" font-size="25">O</text><text x="159" y="304" font-size="25">75°</text>
+    <text x="227" y="358" font-size="25" text-anchor="middle">12 cm</text>
+    <text x="379" y="290" font-size="25">Arc = 5π cm</text>
+    <text x="24" y="82" font-size="25">Area = 30π cm²</text>
+    <path d="M234.424 205 L360 205" fill="none" stroke="#857161" stroke-width="1.8"/>
+    <text x="379" y="196" font-size="24">Dashed chord</text>
+    <text x="379" y="224" font-size="22">is not a radius</text>
+    <text x="300" y="401" font-size="25" text-anchor="middle">75 / 360 of the full circle</text>
+  </g>
+</svg>

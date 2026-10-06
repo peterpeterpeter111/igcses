@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="430" viewBox="0 0 600 430" role="img" aria-labelledby="title desc">
+  <title id="title">External distance times the whole secant</title>
+  <desc id="desc">A secant from P meets the circle at A then B. PA is 4 centimetres and AB is 5 centimetres, so whole PB is 9 centimetres. PT is tangent at T and radius OT is perpendicular to PT. PT squared equals PA times PB, giving PT of 6 centimetres.</desc>
+  <rect width="600" height="430" fill="#faf6ed"/>
+  <g font-family="Georgia, serif" fill="#302522">
+    <text x="300" y="34" font-size="26" text-anchor="middle">External × whole secant</text>
+    <circle cx="400" cy="250" r="100" fill="none" stroke="#857161" stroke-width="2.5"/>
+    <path d="M140 250 H519 M140 250 L361.538 157.692" fill="none" stroke="#8b343b" stroke-width="3"/>
+    <path d="M400 250 L361.538 157.692" fill="none" stroke="#857161" stroke-width="2" stroke-dasharray="6 5"/>
+    <path d="M365.385 166.923 L356.154 170.769 L352.307 161.538" fill="none" stroke="#514238" stroke-width="2"/>
+    <g fill="#302522"><circle cx="140" cy="250" r="4"/><circle cx="300" cy="250" r="4"/><circle cx="500" cy="250" r="4"/><circle cx="361.538" cy="157.692" r="4"/><circle cx="400" cy="250" r="4"/></g>
+    <text x="115" y="245" font-size="25">P</text><text x="283" y="239" font-size="25" text-anchor="middle">A</text><text x="510" y="245" font-size="25">B</text>
+    <text x="361" y="136" font-size="25" text-anchor="middle">T</text><text x="400" y="278" font-size="25" text-anchor="middle">O</text>
+    <text x="187" y="163" font-size="25" fill="#8b343b">PT = 6 cm</text>
+    <path d="M140 301 V290 H300 V301 M300 301 V290 H500 V301" fill="none" stroke="#514238" stroke-width="1.8"/>
+    <text x="215" y="326" font-size="25" text-anchor="middle">PA = 4 cm</text><text x="405" y="326" font-size="25" text-anchor="middle">AB = 5 cm</text>
+    <path d="M140 364 V352 H500 V364" fill="none" stroke="#9b7842" stroke-width="2"/>
+    <rect x="223" y="339" width="194" height="31" fill="#faf6ed"/>
+    <text x="320" y="366" font-size="25" text-anchor="middle">PB = 9 cm</text>
+    <text x="300" y="412" font-size="25" text-anchor="middle">PT² = 4 × 9 = 36 cm²</text>
+  </g>
+</svg>
