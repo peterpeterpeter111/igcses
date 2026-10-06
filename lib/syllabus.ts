@@ -1,3 +1,5 @@
+import chemistryHalogenReactivity from '../research/syllabus/4CH1-halogen-reactivity.json' with { type: 'json' };
+import chemistryHalogenPhysical from '../research/syllabus/4CH1-halogen-physical.json' with { type: 'json' };
 import chemistryGroup1 from '../research/syllabus/4CH1-group1.json' with { type: 'json' };
 import biologyGMCloning from '../research/syllabus/4BI1-genetic-modification-cloning.json' with { type: 'json' };
 import biologyBreeding from '../research/syllabus/4BI1-selective-breeding.json' with { type: 'json' };
@@ -62,6 +64,8 @@ import mathsPolynomials from '../research/syllabus/4MB1-polynomials-and-fraction
 
 // Reviewed overlays are kept separate from the immutable raw candidates.
 export const reviewedInventories = [
+  { title: 'Halogen displacement and reactivity (2.7–2.8C; partial teaching)', ...chemistryHalogenReactivity },
+  { title: 'Halogen physical properties (2.5–2.6; partial teaching)', ...chemistryHalogenPhysical },
   { title: 'Group 1 (2.1–2.4C; partial teaching)', ...chemistryGroup1 },
   { title: 'Genetic modification and cloning (5.12–5.20B; partial teaching)', ...biologyGMCloning },
   { title: 'Selective breeding (5.10–5.11; partial teaching)', ...biologyBreeding },

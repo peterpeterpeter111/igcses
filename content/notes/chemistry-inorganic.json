@@ -16,7 +16,12 @@
     "Use shared water reactions as evidence for a chemical family.",
     "Separate observations from reactivity interpretations in air and water.",
     "Make limited predictions from periodic position.",
-    "Explain the Group 1 trend using electron loss, distance and shielding for Paper 2C."
+    "Explain the Group 1 trend using electron loss, distance and shielding for Paper 2C.",
+    "Identify elemental halogen colours and states at room temperature.",
+    "Use transition data to make qualified physical-property predictions.",
+    "Predict halogen displacement outcomes and check ionic equations.",
+    "Interpret matched product observations without confusing dilution with reaction.",
+    "Explain the halogen trend using electronic configurations for Paper 2C."
   ],
   "supportingSources": [
     {
@@ -40,6 +45,54 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/6-5-periodic-variations-in-element-properties",
       "sectionIds": [
         "group1-electron-reactivity"
+      ]
+    },
+    {
+      "title": "RSC Periodic Table: chlorine properties",
+      "url": "https://periodic-table.rsc.org/element/17/chlorine",
+      "sectionIds": [
+        "halogen-colours-and-states",
+        "halogen-physical-predictions"
+      ]
+    },
+    {
+      "title": "RSC Periodic Table: bromine properties",
+      "url": "https://periodic-table.rsc.org/element/35/bromine",
+      "sectionIds": [
+        "halogen-colours-and-states",
+        "halogen-physical-predictions"
+      ]
+    },
+    {
+      "title": "RSC Periodic Table: iodine properties",
+      "url": "https://periodic-table.rsc.org/element/53/iodine",
+      "sectionIds": [
+        "halogen-colours-and-states",
+        "halogen-physical-predictions"
+      ]
+    },
+    {
+      "title": "Oklahoma State Chemistry SourceBook: halogen/halide comparisons",
+      "url": "https://intro.chem.okstate.edu/ChemSource/Halogens/Concept-Skills(lab2).html",
+      "sectionIds": [
+        "halogen-displacement-pattern",
+        "halogen-displacement-equations",
+        "halogen-displacement-evidence"
+      ]
+    },
+    {
+      "title": "OpenStax Chemistry 2e: halogen oxidation and solution appearance",
+      "url": "https://openstax.org/books/chemistry-2e/pages/18-11-occurrence-preparation-and-properties-of-halogens",
+      "sectionIds": [
+        "halogen-displacement-pattern",
+        "halogen-displacement-evidence"
+      ]
+    },
+    {
+      "title": "OpenStax Chemistry 2e: periodic shielding concepts",
+      "url": "https://openstax.org/books/chemistry-2e/pages/6-5-periodic-variations-in-element-properties",
+      "sectionIds": [
+        "halogen-electron-reactivity"
       ]
     }
   ],
@@ -174,6 +227,212 @@
         "Saying potassium has more outer electrons than sodium.",
         "Claiming nuclear charge decreases down the group.",
         "Using “it gains one electron” as the alkali-metal explanation."
+      ]
+    },
+    {
+      "id": "halogen-colours-and-states",
+      "title": "Chlorine, bromine and iodine: colours and states",
+      "points": [
+        "2.5"
+      ],
+      "terms": [
+        "halogen",
+        "diatomic molecule",
+        "physical state",
+        "vapour"
+      ],
+      "paragraphs": [
+        "Pearson’s Group 7 halogens are the elements labelled Group 17 in the modern 1–18 periodic table. Chlorine, bromine and iodine are non-metals whose elemental molecules are Cl₂, Br₂ and I₂. A chlorine molecule, Cl₂, is different from a chloride ion, Cl⁻; likewise bromine and iodine are distinct from bromide and iodide ions.",
+        "At about 20°C and ordinary atmospheric pressure, chlorine is a yellow-green gas, bromine a red-brown liquid, and iodine a grey-black, shiny crystalline solid. Give both the colour and the state when describing each element. These descriptions concern the elemental substances, not their ions in salts.",
+        "Iodine vapour is purple. That does not make the room-temperature solid purple: the description depends on the state being observed. Iodine can produce vapour from a solid, but it also has a melting point and can exist as a liquid under suitable conditions. Avoid the absolute claim that iodine never melts.",
+        "Across chlorine, bromine and iodine, the appearance becomes darker and melting and boiling points increase. At the same room temperature their states consequently change from gas to liquid to solid. Colour alone does not establish a reaction or quantify chemical reactivity. These are reference descriptions, not observations from an experiment performed for this site."
+      ],
+      "example": {
+        "question": "Three elemental samples at 20°C are described as a yellow-green gas, a red-brown liquid and a grey-black solid. Identify them. Which description applies to iodine vapour?",
+        "steps": [
+          "Yellow-green gas: chlorine, Cl₂.",
+          "Red-brown liquid: bromine, Br₂.",
+          "Grey-black solid: iodine, I₂; its vapour is purple."
+        ],
+        "explanation": "Pair each element with its state as well as colour. Iodide ions in a salt are not the same substance as elemental iodine."
+      },
+      "commonMistakes": [
+        "Calling solid iodine purple because its vapour is purple.",
+        "Writing Cl⁻ as the formula of elemental chlorine.",
+        "Describing bromine as a room-temperature gas because it gives off vapour."
+      ]
+    },
+    {
+      "id": "halogen-physical-predictions",
+      "title": "Predicting physical properties from halogen data",
+      "points": [
+        "2.5",
+        "2.6"
+      ],
+      "terms": [
+        "melting point",
+        "boiling point",
+        "intermolecular attraction",
+        "prediction"
+      ],
+      "paragraphs": [
+        "Compare numerical melting and boiling points to establish the physical trend. Rounded reference values in °C are chlorine −101.5 / −34.04, bromine −7.2 / 58.8, and iodine 113.7 / 184.4, written as melting / boiling point. Both sets increase in that order. The values come from RSC reference data; they are not measurements made for this site.",
+        "At a stated pressure, a temperature below the melting point normally places a pure substance in the solid region; a temperature between its melting and boiling points places it in the liquid region; and a temperature above its boiling point places it in the gas region. At a transition temperature, two phases can coexist during the change. At 20°C chlorine is above its boiling point, bromine is between its two transition points, and iodine is below its melting point.",
+        "The simple molecular explanation connects larger, more polarizable molecules to stronger intermolecular attractions down this sequence. More energy is required to separate molecules, so melting and boiling points rise. Changing state does not require breaking the covalent bond inside each X₂ molecule. Do not confuse intermolecular attraction with that internal covalent bond.",
+        "Use the established trend to make a limited prediction for another halogen. A halogen above chlorine is expected to have lower melting and boiling points; because chlorine’s boiling point is already below 20°C, a lower boiling point supports a gas prediction at 20°C. A halogen below iodine is expected to have higher transition temperatures and to be solid at 20°C in this simple extrapolation. Exact values and an exact colour cannot be calculated from group position alone; check supplied data and label extrapolations as predictions.",
+        "Melting and boiling describe physical changes. Increasing transition temperatures does not prove increasing chemical reactivity. Displacement reactions and their electronic explanation are covered separately below. The state example below is a written reasoning exercise, not advice to heat a halogen sample."
+      ],
+      "example": {
+        "question": "Using iodine’s reference melting point of 113.7°C and boiling point of 184.4°C, predict its stable bulk state at 120°C at ordinary atmospheric pressure. Explain why purple vapour does not mean iodine cannot be liquid.",
+        "steps": [
+          "Compare the temperature: 113.7 < 120 < 184.4.",
+          "It is above the melting point and below the boiling point, so the stable bulk phase is liquid.",
+          "Vapour can exist above a liquid or solid; seeing vapour alone does not establish the bulk sample’s state."
+        ],
+        "explanation": "The supplied transition temperatures and pressure determine the phase prediction. The calculation does not describe a performed experiment."
+      },
+      "commonMistakes": [
+        "Assuming a larger halogen always has greater chemical reactivity because its boiling point is higher.",
+        "Saying boiling breaks the covalent bond inside every X₂ molecule.",
+        "Inventing an exact melting point or colour for an unfamiliar halogen from its group position alone."
+      ]
+    },
+    {
+      "id": "halogen-displacement-pattern",
+      "title": "Halogen displacement: predict the product, not just a colour",
+      "points": [
+        "2.7"
+      ],
+      "terms": [
+        "halogen",
+        "halide ion",
+        "displacement",
+        "reactivity order"
+      ],
+      "paragraphs": [
+        "In these aqueous displacement reactions, a more reactive halogen converts the halide ions of a less reactive halogen into that elemental halogen. Chlorine molecules can react with bromide or iodide ions; bromine molecules can react with iodide ions. Chlorine is therefore more reactive than bromine, which is more reactive than iodine in this comparison: chlorine > bromine > iodine.",
+        "Keep the species distinct. In chlorine plus potassium bromide solution, the starting reactive species are Cl₂ molecules and Br⁻ ions. The products are Cl⁻ ions and Br₂ molecules. Potassium ions remain in solution as spectator ions. Saying “chlorine displaces bromide to form bromine” identifies the initial ion and final element; saying “chlorine ions displace bromine ions” mixes up the reactants.",
+        "Bromine does not displace chloride, and iodine does not displace chloride or bromide under the usual aqueous comparison conditions. A halogen mixed with its own halide produces no net displacement of one element by another. These negative outcomes constrain the ranking. “No displacement” does not mean “no colour”: the original halogen can still colour the mixture.",
+        "The matrix shows predicted outcomes, not measured results. Read each row as the added elemental halogen and each column as the halide already in the solution. A Br₂ or I₂ product is the newly formed element, while the added more reactive halogen becomes its own halide ion. Other reactions or equilibria are not ruled out by a no-displacement entry."
+      ],
+      "diagram": {
+        "src": "/diagrams/chemistry-halogen-displacement.svg",
+        "alt": "Predicted matrix: chlorine forms bromine from bromide and iodine from iodide; bromine forms iodine from iodide; other pairs show no displacement.",
+        "caption": "Original schematic of predicted aqueous displacement outcomes. It does not represent a performed experiment or exact observed colours."
+      },
+      "example": {
+        "question": "A supplied results table shows chlorine displacing bromide and iodide, while bromine displaces iodide but not chloride. Rank the three halogens and predict iodine with bromide.",
+        "steps": [
+          "Chlorine displaces both other halides, so it is the most reactive of the three.",
+          "Bromine displaces iodide but not chloride, placing it between chlorine and iodine.",
+          "The order is chlorine > bromine > iodine; iodine does not displace bromide in this comparison."
+        ],
+        "explanation": "The ranking follows the stated positive and negative displacement evidence. The hypothetical table is not a trial performed for this site."
+      },
+      "commonMistakes": [
+        "Treating Cl₂ and Cl⁻ as interchangeable reactants.",
+        "Calling the incoming potassium ion the displaced species.",
+        "Assuming no displacement means the liquid must be colourless."
+      ]
+    },
+    {
+      "id": "halogen-displacement-equations",
+      "title": "Balance displacement equations by atoms and charge",
+      "points": [
+        "2.7"
+      ],
+      "terms": [
+        "net ionic equation",
+        "spectator ion",
+        "oxidation",
+        "reduction"
+      ],
+      "paragraphs": [
+        "For chlorine reacting with potassium bromide solution, a balanced complete equation is Cl₂ + 2KBr → 2KCl + Br₂. The net ionic equation removes unchanged K⁺ spectator ions: Cl₂ + 2Br⁻ → 2Cl⁻ + Br₂. There are two chlorine and two bromine atoms on each side, and the total charge is −2 on each side.",
+        "The other predicted positive outcomes are Cl₂ + 2I⁻ → 2Cl⁻ + I₂ and Br₂ + 2I⁻ → 2Br⁻ + I₂. Each starts with a neutral diatomic halogen and two negative halide ions, and produces two halide ions plus one neutral diatomic halogen. Writing just one iodide ion would fail atom balance.",
+        "Electron transfer explains the ionic form. For chlorine and bromide: Cl₂ + 2e⁻ → 2Cl⁻ is reduction because chlorine gains electrons; 2Br⁻ → Br₂ + 2e⁻ is oxidation because bromide loses electrons. Adding the half-equations cancels the electrons and gives the net ionic equation. The chlorine molecules act as the oxidizing agent in this reaction.",
+        "Check a proposed equation against the reactivity order before balancing it. Br₂ + 2Cl⁻ → 2Br⁻ + Cl₂ can be balanced on paper, but it is not the expected spontaneous displacement in the stated aqueous comparison. Atom and charge balance are necessary checks; they do not by themselves establish that a reaction occurs."
+      ],
+      "example": {
+        "question": "Write the net ionic equation for bromine displacing iodide. Check the atom counts and total charge.",
+        "steps": [
+          "Use Br₂ and I⁻ as reactants, with Br⁻ and I₂ as products.",
+          "Balance: Br₂ + 2I⁻ → 2Br⁻ + I₂.",
+          "Both sides have two bromine and two iodine atoms; both have total charge −2."
+        ],
+        "explanation": "The relative reactivity supports the direction. Coefficients conserve the atoms and charge without turning elemental bromine into a single Br atom."
+      },
+      "commonMistakes": [
+        "Writing I rather than I₂ for elemental iodine.",
+        "Leaving spectator K⁺ ions in a supposedly net ionic equation.",
+        "Assuming any balanced reverse equation describes an observed reaction."
+      ]
+    },
+    {
+      "id": "halogen-displacement-evidence",
+      "title": "What observations can actually establish displacement?",
+      "points": [
+        "2.7"
+      ],
+      "terms": [
+        "reference comparison",
+        "solvent",
+        "control",
+        "dilution"
+      ],
+      "paragraphs": [
+        "An interpretation needs the known starting substances and reliable product evidence. Bromine commonly gives orange to brown solutions depending on concentration and solvent; iodine gives brown aqueous solutions and violet solutions in a suitable nonpolar solvent. Compare a reported product with a reference of the same halogen in the same solvent, rather than comparing an aqueous colour with a vapour colour.",
+        "A lighter original colour may be caused by dilution, so colour fading alone does not prove displacement. A mixture can also retain some colour from excess added halogen. If a question reports a violet nonpolar layer matching an iodine reference after bromine contacts iodide, that supports iodine formation. The reactant identities and product comparison jointly support the conclusion.",
+        "A useful supervised comparison keeps conditions and concentration comparisons consistent, separates samples to avoid contamination, uses corresponding reference colours and records positive as well as negative outcomes. Distinguish a proposed comparison from actual recorded data. For a negative outcome, fresh reagents and suitable observations matter: a degraded halogen solution can give a misleading absence of visible reaction.",
+        "The learning task here is interpreting supplied evidence, not preparing halogens or running a solvent extraction. Halogens and many extraction solvents require professional laboratory controls. No preparation recipe, exact dose or unsupervised experimental method is supplied. The original problem below states its observations as hypothetical data."
+      ],
+      "example": {
+        "question": "A hypothetical report says bromine solution contacted iodide solution. The nonpolar layer then matched a violet iodine reference. In a separate mixture, bromine’s original colour merely became lighter after adding chloride solution. Interpret both results.",
+        "steps": [
+          "The first product comparison supports iodine formation: bromine displaces iodide.",
+          "The second colour fading could result from dilution; it does not establish chlorine formation.",
+          "The expected ranking predicts no bromine displacement of chloride; use matched references and known conditions rather than colour fading alone."
+        ],
+        "explanation": "A product-specific comparison is stronger evidence than a change in colour intensity. Neither description is a performed trial."
+      },
+      "commonMistakes": [
+        "Using purple iodine vapour as the reference for an aqueous solution.",
+        "Treating any colour change as proof of a displacement product.",
+        "Promoting hypothetical supplied observations to real measurements."
+      ]
+    },
+    {
+      "id": "halogen-electron-reactivity",
+      "title": "Why halogen reactivity decreases down the group — Paper 2C",
+      "points": [
+        "2.8C"
+      ],
+      "terms": [
+        "outer shell",
+        "electron gain",
+        "shielding",
+        "nuclear attraction"
+      ],
+      "paragraphs": [
+        "Chlorine, bromine and iodine atoms each have seven electrons in their outer shell. Their shell configurations are 2,8,7; 2,8,18,7; and 2,8,18,18,7. In the displacement reactions being considered, halogen atoms gain one electron each to form −1 halide ions. For a chlorine molecule the reduction half-equation is Cl₂ + 2e⁻ → 2Cl⁻: two atoms need two electrons in total.",
+        "Down the group there are more occupied shells. An incoming electron joins a shell farther from the nucleus and experiences more shielding by inner electrons. Despite the increase in proton number, the attraction experienced by an incoming outer-shell electron is weaker in this simplified explanation. Electron gain is less readily achieved in the chlorine–bromine–iodine reactivity comparison.",
+        "Connect the mechanism to the evidence: chlorine gains electrons more readily than bromine, and bromine more readily than iodine in these displacement comparisons. Chemical reactivity therefore decreases down this sequence. Do not explain the trend by saying that lower atoms have fewer protons or fewer outer electrons; both statements are wrong.",
+        "Compare with Group 1 carefully. Increased distance and shielding make an outer electron easier to lose for alkali metals, supporting increasing Group 1 reactivity. For these halogens the important step is gaining an electron, which becomes less readily achieved down the group. The same structural changes can therefore support opposite reactivity trends.",
+        "This electronic explanation is own 2.8C, applying only to Paper 2C in the saved Issue 3 specification. Displacement evidence in 2.7 applies to both 1C and 2C. The shell model explains the qualitative trend; it does not calculate an exact reaction rate or every quantitative property of every heavier halogen."
+      ],
+      "example": {
+        "question": "Explain why bromine is less reactive than chlorine in the halide-displacement comparison, even though bromine has more protons.",
+        "steps": [
+          "Both atoms have seven outer electrons and gain one electron per atom to form halide ions.",
+          "Bromine has more occupied shells, greater distance to the outer shell and more inner-electron shielding.",
+          "These effects reduce the attraction for an incoming outer-shell electron despite the greater proton number, making electron gain less readily achieved."
+        ],
+        "explanation": "Give the complete causal chain and the correct electron-gain direction. A Group 1 answer about easier electron loss would not explain this halogen trend."
+      },
+      "commonMistakes": [
+        "Claiming nuclear charge decreases from chlorine to bromine.",
+        "Saying bromine has more than seven outer electrons.",
+        "Using easier electron loss to explain lower halogen reactivity."
       ]
     }
   ]

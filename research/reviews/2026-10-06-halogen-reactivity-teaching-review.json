@@ -1,0 +1,114 @@
+{
+  "date": "2026-10-06",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "status": "bounded-source-and-logic-review",
+  "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "ownPDFPages": [
+    22
+  ],
+  "printedPages": [
+    16
+  ],
+  "newSections": 4,
+  "reviewedParents": 2,
+  "localEditorialRequirements": 10,
+  "partialLinks": 4,
+  "completePoints": 0,
+  "completeChapters": 0,
+  "fullyProcessedPapers": 0,
+  "activeTemplates": 0,
+  "matrix": [
+    {
+      "addedElement": "Cl",
+      "halide": "Cl",
+      "displacement": false,
+      "newElement": null
+    },
+    {
+      "addedElement": "Cl",
+      "halide": "Br",
+      "displacement": true,
+      "newElement": "Br"
+    },
+    {
+      "addedElement": "Cl",
+      "halide": "I",
+      "displacement": true,
+      "newElement": "I"
+    },
+    {
+      "addedElement": "Br",
+      "halide": "Cl",
+      "displacement": false,
+      "newElement": null
+    },
+    {
+      "addedElement": "Br",
+      "halide": "Br",
+      "displacement": false,
+      "newElement": null
+    },
+    {
+      "addedElement": "Br",
+      "halide": "I",
+      "displacement": true,
+      "newElement": "I"
+    },
+    {
+      "addedElement": "I",
+      "halide": "Cl",
+      "displacement": false,
+      "newElement": null
+    },
+    {
+      "addedElement": "I",
+      "halide": "Br",
+      "displacement": false,
+      "newElement": null
+    },
+    {
+      "addedElement": "I",
+      "halide": "I",
+      "displacement": false,
+      "newElement": null
+    }
+  ],
+  "checks": [
+    "Own2.7 both1C/2C;bold2.8C only2C visually reviewed.",
+    "Primary OklahomaState teacher expected equations confirm all3positivepairs andCl>Br>I ranking.",
+    "All3netionic equations conserve2atoms of each element andtotalcharge−2;potassium spectators cancel.",
+    "Bothhalf-equations conserve atoms/charge andcancel2electrons.",
+    "Shell sums17/35/53 independently checked,outerelectrons7throughout.",
+    "Physicalpropertytrend not conflated with chemical reactivity.",
+    "No-displacement is not a claim of no colour or no other equilibrium.",
+    "Same-solvent matched references anddilution/excess/degraded-reagent limits explicit.",
+    "Originaldiagram9cells checked against recorded predictedmatrix;notobserved data."
+  ],
+  "supportingSources": [
+    {
+      "title": "Oklahoma State Chemistry SourceBook:halogen/halide comparisons",
+      "url": "https://intro.chem.okstate.edu/ChemSource/Halogens/Concept-Skills(lab2).html"
+    },
+    {
+      "title": "OpenStax Chemistry 2e:halogen oxidation and solution appearance",
+      "url": "https://openstax.org/books/chemistry-2e/pages/18-11-occurrence-preparation-and-properties-of-halogens"
+    },
+    {
+      "title": "OpenStax Chemistry 2e:periodic shielding concepts",
+      "url": "https://openstax.org/books/chemistry-2e/pages/6-5-periodic-variations-in-element-properties"
+    }
+  ],
+  "sourceAccessNotes": [
+    "Pearson external displacement teaching PDF failed web fetch andbounded30secondcurl connection;not obtained andnot counted as a paper/scheme pair.",
+    "RSCeducation article/download inaccessible;no bypass/full-read claim.",
+    "Accessible OklahomaState teacher expected outcomes andOpenStax adopted narrowly;operational chlorine generation/solvent recipes not reproduced.",
+    "OpenStax outdated vacant-d-orbital explanation for triiodide andunqualified all-halogen iodine minimum not adopted.",
+    "FSU procedure read as corroborating comparison design only;operational generation andhandling instructions not adopted."
+  ],
+  "limitations": [
+    "No physical trial,human certification orindependent assessment-demand/response calibration.",
+    "Later inorganic topics andwhole-chapter teaching unfinished.",
+    "No paper processing oractive template promotion."
+  ]
+}

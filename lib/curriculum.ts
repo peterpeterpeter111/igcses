@@ -1,3 +1,5 @@
+import chemistryHalogenReactivity from '../research/curriculum-audits/4CH1-halogen-reactivity.json' with { type: 'json' };
+import chemistryHalogenPhysical from '../research/curriculum-audits/4CH1-halogen-physical.json' with { type: 'json' };
 import chemistryGroup1 from '../research/curriculum-audits/4CH1-group1.json' with { type: 'json' };
 import biologyGMCloning from '../research/curriculum-audits/4BI1-genetic-modification-cloning.json' with { type: 'json' };
 import biologyBreeding from '../research/curriculum-audits/4BI1-selective-breeding.json' with { type: 'json' };
@@ -67,6 +69,8 @@ import mathsPolynomials from '../research/curriculum-audits/4MB1-polynomials-and
 
 // These bounded audits link partial teaching; they do not promote completion.
 export const curriculumAudits = [
+  chemistryHalogenReactivity,
+  chemistryHalogenPhysical,
   chemistryGroup1,
   biologyGMCloning,
   biologyBreeding,

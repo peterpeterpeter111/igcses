@@ -1,3 +1,11 @@
+# Latest phase — Halogens, 6 October 2026
+
+Read `research/checkpoints/2026-10-06-HALOGENS.md` first. Preserve f796962 and all descendants. GitHub e700848 exactly mirrors the Group 1/reconciliation tree; that pending sync is resolved. Six new partial halogen sections and one original predicted displacement matrix; own2.5–2.7 both1C/2C,2.8C only2C. Inorganic now ten sections. Keep source access failures and hypothetical-versus-observed evidence explicit.
+
+Totals638sections/27partial notes/36routes;596reviewed identities/580partial audits/1,795local requirements/866partial links. Chemistry59sections/two partialnotes/68identities and audits/184requirements.143tests,typecheck/lint/14research/content/evidence/isolatedD1/build/88-file public scan pass. Full desktop diagram verified;narrow/final hosted checks pending. Seven obtained pairs;zero fullyprocessed papers,complete chapters/points or active families;seven experimental offline prototypes,live registry empty.
+
+Commit/sync this newer halogen phase non-force and verify exacttree including the SVG. Next visually review own gases-in-atmosphere requirements,then widercurriculum,historical/skills reviews and independent template calibration. AIlast,noreset/version/deployment/publicURL. Latest user instruction “continue until weekly usage is drained” supersedes the earlier5%pause for this run:continue useful verified work while ordinary usage permits and save checkpoints before capacity blocks further work. Last58%five-hour/5%weeklyremaining. Earlier entries are historical.
+
 # Latest phase — Chemistry Group 1 and Biology reconciliation, 6 October 2026
 
 Read `research/checkpoints/2026-10-06-GROUP1-AND-RECONCILIATION.md` first. Preserve local 83ae7ff and all descendants. GitHub 9fed8ec exactly mirrors that Biology source tree including both diagrams; earlier pending-sync wording is historical. Four new Group 1 lessons on the existing inorganic route cover own 2.1–2.3 for both 1C/2C and 2.4C only 2C. Biology's 176 numbered identities reconcile to preserved candidates without missing references, duplicates or page differences; this does not prove full teaching or assessment coverage.
