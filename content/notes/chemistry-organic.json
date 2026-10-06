@@ -1,0 +1,920 @@
+{
+  "subjectId": "chemistry",
+  "chapterId": "organic",
+  "status": "source-checked",
+  "complete": false,
+  "humanReviewed": false,
+  "sourceId": "4CH1-spec",
+  "sourcePages": [
+    29,
+    30
+  ],
+  "prerequisites": [
+    "Carbon has four and hydrogen one bond contribution in these normal structures.",
+    "Balanced equations conserve each element.",
+    "Separate a pure compound from a mixture."
+  ],
+  "goals": [
+    "Read formula types, simple names and distinct structural connections.",
+    "Explain oil separation, named fraction uses, combustion and the need for cracking.",
+    "Draw and distinguish the specified alkanes and alkenes with the stated reaction conditions."
+  ],
+  "supportingSources": [
+    {
+      "title": "IUPAC brief guide: selected simple-chain roots",
+      "url": "https://iupac.org/wp-content/uploads/2021/06/Organic-Brief-Guide-brochure_v1.1_June2021.pdf",
+      "sectionIds": [
+        "organic-names",
+        "alkane-drawings"
+      ]
+    },
+    {
+      "title": "IUPAC Blue Book: selected alkene locant rules",
+      "url": "https://iupac.qmul.ac.uk/BlueBook/P1.html#P-15.1.7.2",
+      "sectionIds": [
+        "organic-names",
+        "alkene-drawings"
+      ]
+    },
+    {
+      "title": "RSC: selected indexed fraction descriptions and common uses",
+      "url": "https://edu.rsc.org/infographics/everything-you-need-to-teach-fractional-distillation/4016691.article",
+      "sectionIds": [
+        "fractional-column",
+        "fraction-uses"
+      ]
+    },
+    {
+      "title": "RSC: indexed alkene bromine-addition fact",
+      "url": "https://edu.rsc.org/download?ac=543166",
+      "sectionIds": [
+        "bromine-addition"
+      ]
+    },
+    {
+      "title": "RSC: indexed alkane UV-substitution fact",
+      "url": "https://edu.rsc.org/resources/investigate-organic-reaction-mechanisms/383.article",
+      "sectionIds": [
+        "alkane-monosubstitution"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "hydrocarbon-identity",
+      "title": "Check which elements a hydrocarbon contains",
+      "points": [
+        "4.1"
+      ],
+      "terms": [
+        "hydrocarbon",
+        "carbon",
+        "hydrogen"
+      ],
+      "paragraphs": [
+        "A hydrocarbon is a compound containing carbon and hydrogen only. Check the entire formula, not whether it begins with C and H. Methane and ethene are hydrocarbons; ethanol contains oxygen and is not a hydrocarbon, although it is an organic compound.",
+        "A mixture of carbon and hydrogen elements is not automatically a hydrocarbon compound. Nor is every carbon-containing compound a hydrocarbon. This classification describes composition; it does not by itself tell you whether the molecule is saturated, branched or a gas."
+      ],
+      "example": {
+        "question": "Which of C₃H₈, C₂H₅OH and CH₃Cl are hydrocarbons?",
+        "steps": [
+          "C₃H₈ contains only carbon and hydrogen and is a hydrocarbon.",
+          "C₂H₅OH contains oxygen; CH₃Cl contains chlorine.",
+          "The latter two are not hydrocarbons."
+        ],
+        "explanation": "Every element in the formula matters."
+      },
+      "commonMistakes": [
+        "Calling every organic molecule a hydrocarbon.",
+        "Ignoring an oxygen or halogen at the end of a formula."
+      ]
+    },
+    {
+      "id": "organic-formula-types",
+      "title": "Separate molecular, empirical, general and structural formulas",
+      "points": [
+        "4.2"
+      ],
+      "terms": [
+        "molecular formula",
+        "empirical formula",
+        "general formula",
+        "structural formula",
+        "displayed formula"
+      ],
+      "paragraphs": [
+        "A molecular formula gives the actual atom counts in one molecule, such as C₄H₈. Its empirical formula gives the simplest whole-number ratio, here CH₂. A general formula describes a family under stated conditions, such as CₙH₂ₙ for an acyclic hydrocarbon with one C=C bond; n is the number of carbon atoms.",
+        "A structural formula shows how atoms or groups connect: CH₂=CHCH₂CH₃ identifies but-1-ene, whereas C₄H₈ alone does not. A displayed formula shows every atom and every covalent bond, including C–H bonds and both lines of a C=C bond.",
+        "Check that each carbon has four bond contributions and each hydrogen one. Condensed CH₃ and CH₂ labels save space in structural formulas, but do not count as a fully displayed formula. Neither rotating a drawing nor grouping its letters differently changes the molecule’s connectivity."
+      ],
+      "example": {
+        "question": "For CH₂=CHCH₂CH₃, give the molecular and empirical formulas and explain what its structural formula adds.",
+        "steps": [
+          "Count four carbons and eight hydrogens: C₄H₈.",
+          "Divide both counts by four: CH₂.",
+          "The structural formula locates the double bond at one end of the connected four-carbon chain."
+        ],
+        "explanation": "Atom counts and connectivity answer different questions."
+      },
+      "commonMistakes": [
+        "Using a general formula as the molecular formula of a specific molecule.",
+        "Calling CH₃CH₃ fully displayed.",
+        "Reducing a molecular formula when the question asks for actual atom counts."
+      ]
+    },
+    {
+      "id": "homologous-series",
+      "title": "Recognize a homologous series, functional group and isomers",
+      "points": [
+        "4.3"
+      ],
+      "terms": [
+        "homologous series",
+        "functional group",
+        "isomerism",
+        "CH₂"
+      ],
+      "paragraphs": [
+        "A homologous series is a family of organic compounds with the same general formula and similar chemical behaviour; successive members by carbon number differ by CH₂. Where a characteristic functional group defines the family, members share it. Physical properties such as boiling point generally vary gradually with increasing molecular size.",
+        "A functional group is the atom or group associated with characteristic reactions, such as the C=C group used for the alkene family in this syllabus. Do not confuse changing the carbon-chain length with changing the functional group.",
+        "Structural isomers have the same molecular formula but different connections between atoms. They are different compounds rather than successive homologous members, which differ in formula. Drawing the same connected chain backwards does not create a structural isomer."
+      ],
+      "example": {
+        "question": "Are ethene C₂H₄ and propene C₃H₆ structural isomers?",
+        "steps": [
+          "Their molecular formulas differ by CH₂.",
+          "They are successive members of the alkene series.",
+          "They are not structural isomers because the molecular formulas are not the same."
+        ],
+        "explanation": "Formula equality is essential to structural isomerism."
+      },
+      "commonMistakes": [
+        "Calling any two compounds with C=C isomers.",
+        "Calling a rotated drawing a different molecule.",
+        "Assuming similar chemical properties mean identical physical properties."
+      ]
+    },
+    {
+      "id": "organic-names",
+      "title": "Use carbon counts and positions to read names",
+      "points": [
+        "4.4"
+      ],
+      "terms": [
+        "IUPAC",
+        "parent chain",
+        "locant",
+        "meth",
+        "eth",
+        "prop",
+        "but",
+        "pent",
+        "hex"
+      ],
+      "paragraphs": [
+        "For the relevant simple chains, learn the first six carbon-count roots: meth- for one, eth- for two, prop- for three, but- for four, pent- for five and hex- for six. Methane, ethane, propane, butane, pentane and hexane are the corresponding unbranched alkanes. The specification expects relevant names up to six carbons, while individual drawing requirements have their own smaller limits.",
+        "For a simple unbranched alkene, use -ene and number to give the C=C bond the lower position. CH₂=CHCH₂CH₃ is but-1-ene; CH₃CH=CHCH₃ is but-2-ene. The number names the first carbon of the double bond, not a count of double bonds.",
+        "A branched structure needs a suitable parent chain and positions for substituents. CH₃CH(CH₃)CH₂CH₃ has a four-carbon longest chain and a methyl branch at carbon 2, hence 2-methylbutane. Its total five carbons do not make its parent chain pentane. Naming the later oxygen-containing families requires their additional suffix rules, which remain unfinished in this initial organic batch."
+      ],
+      "example": {
+        "question": "Name the unbranched structure CH₃CH₂CH=CH₂ using a lower double-bond position.",
+        "steps": [
+          "Number from the CH₂ double-bond end.",
+          "The chain has four carbons and the double bond starts at carbon 1.",
+          "The name is but-1-ene, not but-3-ene."
+        ],
+        "explanation": "Choose numbering from connectivity, not the left edge of the written formula."
+      },
+      "commonMistakes": [
+        "Counting a branch as part of a longer disconnected parent chain.",
+        "Calling the locant a number of double bonds.",
+        "Assuming all later naming scope is finished by learning six roots."
+      ]
+    },
+    {
+      "id": "structural-isomers",
+      "title": "Generate different connections without duplicating rotations",
+      "points": [
+        "4.3",
+        "4.5"
+      ],
+      "terms": [
+        "structural isomer",
+        "connectivity",
+        "branch",
+        "valency"
+      ],
+      "paragraphs": [
+        "To propose structural formulas from a molecular formula, choose a connected carbon framework, add any required functional group or unsaturation, and complete hydrogens to the normal valencies. Recount all atoms afterwards. A correct atom total with an impossible carbon valency is not a valid isomer.",
+        "For the acyclic saturated formula C₄H₁₀, a four-carbon chain gives CH₃CH₂CH₂CH₃. A three-carbon chain with a methyl branch gives CH₃CH(CH₃)CH₃. These are the two distinct connectivities. Reversing either drawing or bending its chain does not produce a third.",
+        "A molecular formula alone can leave the compound family ambiguous. For example, C₄H₈ can describe an acyclic alkene or a cyclic saturated hydrocarbon. Use the stated family and task scope rather than claiming a general formula uniquely proves a functional group; ring structures are not added to this introductory drawing bank."
+      ],
+      "example": {
+        "question": "Why is CH₃CH₂CH₂CH₃ written from the other end not a new C₄H₁₀ isomer?",
+        "steps": [
+          "It still connects the same four-carbon chain.",
+          "Only the orientation on the page changed.",
+          "A new structural isomer needs different atom connections."
+        ],
+        "explanation": "Connectivity, not drawing direction, identifies the compound."
+      },
+      "commonMistakes": [
+        "Counting the same chain twice.",
+        "Giving a carbon five bond contributions.",
+        "Assuming CₙH₂ₙ alone proves an alkene."
+      ]
+    },
+    {
+      "id": "organic-reaction-classes",
+      "title": "Classify substitution, addition and combustion",
+      "points": [
+        "4.6"
+      ],
+      "terms": [
+        "substitution",
+        "addition",
+        "combustion"
+      ],
+      "paragraphs": [
+        "In substitution, one atom or group in a molecule is replaced by another; an alkane hydrogen replaced by a halogen is the named example. In addition, groups add across a multiple bond, giving a product with no small molecule removed in the simple alkene example.",
+        "Combustion is reaction with oxygen that releases energy. Complete hydrocarbon combustion makes carbon dioxide and water; incomplete combustion can form carbon monoxide or carbon as well. Classify from the chemical change and products rather than the number of words in an equation.",
+        "The current alkane and alkene requirements do not require reaction mechanisms. Balance ordinary equations and retain the stated conditions without inventing radical or curly-arrow detail as a compulsory part of this course."
+      ],
+      "example": {
+        "question": "Classify a change in which each carbon of an ethene C=C gains a bromine atom to form one dibromoalkane.",
+        "steps": [
+          "Bromine adds across the C=C bond.",
+          "The carbon-carbon bond becomes single.",
+          "This is addition, not replacement of a hydrogen."
+        ],
+        "explanation": "Follow which bonds and atoms change."
+      },
+      "commonMistakes": [
+        "Calling addition substitution because bromine is a halogen.",
+        "Classifying from the number of products alone."
+      ]
+    },
+    {
+      "id": "crude-mixture",
+      "title": "Treat crude oil and its fractions as mixtures",
+      "points": [
+        "4.7",
+        "4.8"
+      ],
+      "terms": [
+        "crude oil",
+        "mixture",
+        "fraction",
+        "boiling range"
+      ],
+      "paragraphs": [
+        "Crude oil is a mixture of hydrocarbons with different molecular sizes and structures. It is not one compound with one molecular formula or one fixed boiling point. Its composition depends on the sample.",
+        "A fraction collects compounds with a similar range of boiling temperatures. It still contains more than one substance and is not a pure single alkane. Fractional distillation separates existing components by physical behaviour; it does not break the carbon chains as cracking does."
+      ],
+      "example": {
+        "question": "Does a collected gasoline fraction have to be one pure hydrocarbon?",
+        "steps": [
+          "No: a fraction contains a range of hydrocarbons with similar boiling behaviour.",
+          "Its boiling range reflects that mixture.",
+          "Separation into a fraction does not imply a single molecular formula."
+        ],
+        "explanation": "A fraction is a useful grouped mixture."
+      },
+      "commonMistakes": [
+        "Assigning crude oil one molecular formula.",
+        "Calling fractional distillation a chemical cracking reaction."
+      ]
+    },
+    {
+      "id": "fractional-column",
+      "title": "Follow vaporization, rising vapours and condensation",
+      "points": [
+        "4.8"
+      ],
+      "terms": [
+        "fractionating column",
+        "temperature gradient",
+        "condensation"
+      ],
+      "paragraphs": [
+        "In the industrial model, crude oil is heated so many components vaporize. The vapour mixture enters a fractionating column with a hot lower region and a cooler upper region. Different hydrocarbons condense at different heights according to their boiling behaviour.",
+        "Higher-boiling components condense in the hotter lower regions, while lower-boiling components rise farther before condensing; the lightest gases leave near the top. Very high-boiling residue remains near the bottom. The process uses repeated vaporization and condensation to separate boiling ranges.",
+        "A diagram needs the direction of the temperature gradient, the incoming hot mixture and the relative outlet positions. It does not require an invented exact temperature or carbon-count cutoff for every fraction. Real refinery cuts vary; the six required fraction names are the course reference."
+      ],
+      "example": {
+        "question": "Where would a lower-boiling fraction be collected relative to a higher-boiling fraction in this model?",
+        "steps": [
+          "The column is cooler higher up.",
+          "Lower-boiling vapours travel farther before condensing.",
+          "They are collected higher than the higher-boiling fraction."
+        ],
+        "explanation": "Condensation depends on the local temperature and boiling behaviour."
+      },
+      "commonMistakes": [
+        "Putting the hottest part at the top.",
+        "Saying all vapours condense at the same temperature.",
+        "Confusing an outlet’s height with a molecule’s density alone."
+      ],
+      "diagram": {
+        "src": "/diagrams/chemistry-fractionating-column.svg",
+        "alt": "Original schematic crude-oil column, hot at the bottom and cooler at the top, with the required refinery gases, gasoline, kerosene, diesel, fuel oil and bitumen in order, and their common uses.",
+        "caption": "Relative order and temperature gradient only; no universal exact boiling cutoffs or single-compound purity are implied."
+      }
+    },
+    {
+      "id": "fraction-uses",
+      "title": "Recall the six required fractions and their uses",
+      "points": [
+        "4.9"
+      ],
+      "terms": [
+        "refinery gases",
+        "gasoline",
+        "kerosene",
+        "diesel",
+        "fuel oil",
+        "bitumen"
+      ],
+      "paragraphs": [
+        "From lighter to heavier fractions, the required names are refinery gases, gasoline, kerosene, diesel, fuel oil and bitumen. Gasoline is also called petrol. Use the course’s named set rather than substituting an additional refinery cut for one of these six.",
+        "Refinery gases are used for cooking and heating fuels; gasoline fuels car engines; kerosene is used as aircraft jet fuel; diesel fuels suitable road vehicles and other diesel engines. Fuel oil is used for large-scale heating and fuels such as those in some ships and power stations. Bitumen is used for road surfaces and roofing.",
+        "These are common uses, not a claim that every vehicle, ship or power station uses the same fuel. Connect a use to appropriate volatility or flow properties when requested, and keep a fraction’s name separate from a single compound’s name."
+      ],
+      "example": {
+        "question": "Identify the required fraction commonly associated with jet aircraft and the heavy residue used to surface roads.",
+        "steps": [
+          "Kerosene is commonly used as jet fuel.",
+          "Bitumen is used in road surfacing.",
+          "The two uses involve fractions from very different regions of the column."
+        ],
+        "explanation": "Recall the named fraction-use pairs."
+      },
+      "commonMistakes": [
+        "Calling bitumen gasoline.",
+        "Replacing fuel oil with an unrelated fraction name.",
+        "Treating a common use as universal for every engine."
+      ]
+    },
+    {
+      "id": "fraction-trends",
+      "title": "Relate molecular size to boiling and flow trends",
+      "points": [
+        "4.10"
+      ],
+      "terms": [
+        "viscosity",
+        "boiling point",
+        "colour",
+        "chain length"
+      ],
+      "paragraphs": [
+        "Across the main crude-oil fractions from lighter to heavier material, average hydrocarbon size increases. The school trends are higher boiling ranges, greater viscosity and generally darker appearance. Viscosity describes resistance to flow; it is different from density.",
+        "Larger hydrocarbon molecules generally have stronger intermolecular attractions, requiring more energy to separate them into the gas phase. Do not say the covalent carbon-carbon bonds must be broken simply to boil a hydrocarbon. Branching and composition can affect individual compounds, so use the broad fraction trend rather than an absolute rule for every isomer.",
+        "Refinery gases do not have liquid viscosity under ordinary gas conditions. Comparisons of flow for liquid fractions should use the same temperature; warming can change viscosity substantially. The general colour trend refers to the mixtures, not a claim that every long-chain pure alkane is dark."
+      ],
+      "example": {
+        "question": "Why does a heavier fraction usually need a higher temperature to boil?",
+        "steps": [
+          "Its larger molecules generally attract one another more strongly.",
+          "More energy is needed to separate those molecules into vapour.",
+          "Boiling does not require breaking the covalent bonds within each molecule."
+        ],
+        "explanation": "Distinguish intermolecular separation from chemical decomposition."
+      },
+      "commonMistakes": [
+        "Equating viscosity with density.",
+        "Saying longer carbon chains are broken during boiling.",
+        "Applying a mixture’s colour trend to every pure compound."
+      ]
+    },
+    {
+      "id": "fuel-energy",
+      "title": "Define a fuel by the energy released when burned",
+      "points": [
+        "4.11"
+      ],
+      "terms": [
+        "fuel",
+        "combustion",
+        "energy release"
+      ],
+      "paragraphs": [
+        "A fuel releases heat energy when it burns. Hydrocarbon fuels react with oxygen, transferring energy to the surroundings. A useful fuel choice may also depend on storage, availability, handling and unwanted emissions; these need supplied evidence rather than an invented universal ranking.",
+        "Ignition may be needed to overcome a barrier even though combustion is exothermic overall. Heat release is not the same as reaction rate or the fraction’s boiling point. A volatile fuel may be easier to ignite, but volatility alone does not establish a greater energy release per mole or gram."
+      ],
+      "example": {
+        "question": "Does needing an ignition spark mean gasoline combustion is endothermic overall?",
+        "steps": [
+          "No: ignition can provide the initial activation input.",
+          "Combustion releases energy overall.",
+          "Starting a reaction and its net energy transfer are different questions."
+        ],
+        "explanation": "Keep the initiation barrier separate from the overall change."
+      },
+      "commonMistakes": [
+        "Defining a fuel only as a liquid hydrocarbon.",
+        "Calling a high boiling point a measure of combustion energy."
+      ]
+    },
+    {
+      "id": "hydrocarbon-complete-combustion",
+      "title": "Balance complete hydrocarbon combustion",
+      "points": [
+        "4.6",
+        "4.12"
+      ],
+      "terms": [
+        "complete combustion",
+        "carbon dioxide",
+        "water",
+        "oxygen supply"
+      ],
+      "paragraphs": [
+        "Complete combustion of a hydrocarbon with sufficient oxygen forms carbon dioxide and water. Carbon atoms set the number of CO₂ molecules, hydrogen atoms set the number of H₂O molecules, and the total product oxygen count sets the O₂ amount.",
+        "For propane, C₃H₈ + 5O₂ → 3CO₂ + 4H₂O conserves C₃, H₈ and O₁₀ on both sides. Do not change formula subscripts to balance an equation; adjust coefficients. Water may be vapour near the flame and condense after cooling.",
+        "A balanced equation describes the complete-combustion model, not a guarantee that any actual burner has sufficient oxygen. Exhaust samples can contain mixtures of products, unreacted gases and impurities."
+      ],
+      "example": {
+        "question": "Balance the complete combustion of C₄H₁₀ using whole-number coefficients.",
+        "steps": [
+          "One C₄H₁₀ produces 4CO₂ and 5H₂O, requiring 6.5O₂.",
+          "Multiply through by two.",
+          "2C₄H₁₀ + 13O₂ → 8CO₂ + 10H₂O."
+        ],
+        "explanation": "Count carbon, then hydrogen, then oxygen."
+      },
+      "commonMistakes": [
+        "Changing C₄H₁₀ to force an oxygen balance.",
+        "Omitting water from hydrocarbon combustion.",
+        "Assuming a balanced model proves complete real combustion."
+      ]
+    },
+    {
+      "id": "hydrocarbon-incomplete-combustion",
+      "title": "Recognize carbon monoxide and soot as possible products",
+      "points": [
+        "4.12"
+      ],
+      "terms": [
+        "incomplete combustion",
+        "carbon monoxide",
+        "carbon",
+        "soot"
+      ],
+      "paragraphs": [
+        "With insufficient oxygen or poor fuel-air mixing, hydrocarbon combustion can produce carbon monoxide, carbon particles and water, often together with some carbon dioxide. There is not one universal equation for every incomplete flame.",
+        "Illustrative limiting models include 2CH₄ + 3O₂ → 2CO + 4H₂O and CH₄ + O₂ → C + 2H₂O. Both conserve atoms but describe different product choices. Carbon particles can appear as soot; carbon monoxide is not a visible black solid.",
+        "A sooty flame supports an incomplete-combustion concern, but absence of visible soot does not prove no carbon monoxide is present. These model equations do not replace appropriate combustion controls or gas measurements."
+      ],
+      "example": {
+        "question": "In the model 2CH₄ + 3O₂ → 2CO + 4H₂O, check the atom totals.",
+        "steps": [
+          "Left: C = 2, H = 8, O = 6.",
+          "Right: two CO supply C₂O₂ and four water supply H₈O₄.",
+          "The totals match; this is a CO-producing incomplete-combustion model."
+        ],
+        "explanation": "A possible product equation still needs atom conservation."
+      },
+      "commonMistakes": [
+        "Calling soot carbon monoxide.",
+        "Giving only carbon dioxide as a possible incomplete product.",
+        "Using clear appearance as proof of no CO."
+      ]
+    },
+    {
+      "id": "carbon-monoxide-transport",
+      "title": "Explain carbon monoxide’s effect on oxygen transport",
+      "points": [
+        "4.13"
+      ],
+      "terms": [
+        "carbon monoxide",
+        "blood",
+        "oxygen transport"
+      ],
+      "paragraphs": [
+        "Carbon monoxide is poisonous because it reduces the blood’s capacity to transport oxygen. Less oxygen reaches body tissues for aerobic respiration. The required explanation focuses on that transport capacity; haemoglobin terminology is not required by this reference.",
+        "Do not explain the danger by saying CO is soot that blocks the lungs or that it simply uses up all the oxygen in a room. CO and CO₂ are different gases with different roles. This is the syllabus’s chemical and biological explanation, not a diagnosis or a detector reading."
+      ],
+      "example": {
+        "question": "Complete the explanation: carbon monoxide is dangerous because it reduces…",
+        "steps": [
+          "…the capacity of the blood to transport oxygen.",
+          "That reduces oxygen delivery to tissues.",
+          "It is not explained by CO being a black solid."
+        ],
+        "explanation": "Name the affected transport function."
+      },
+      "commonMistakes": [
+        "Confusing carbon monoxide with carbon dioxide.",
+        "Explaining the danger only by soot or irritation."
+      ]
+    },
+    {
+      "id": "combustion-other-oxides",
+      "title": "Identify nitrogen and sulfur sources in combustion pollution",
+      "points": [
+        "4.14",
+        "4.15"
+      ],
+      "terms": [
+        "nitrogen oxides",
+        "sulfur dioxide",
+        "air",
+        "fuel impurity"
+      ],
+      "paragraphs": [
+        "Air supplies nitrogen as well as oxygen. In a car engine, the high temperature can enable these gases to react and form oxides of nitrogen. Nitrogen need not have been part of the hydrocarbon molecule for nitrogen oxides to form.",
+        "Some fuels contain sulfur-bearing impurities. Their combustion can produce sulfur dioxide; the simple elemental-sulfur model is S + O₂ → SO₂. A pure hydrocarbon contains only C and H, so sulfur dioxide is not an unavoidable product from that pure formula alone.",
+        "Separate these sources: nitrogen oxides arise from high-temperature air chemistry in the named engine context, while sulfur dioxide can arise from fuel impurities. Cleaner sulfur content and altered combustion conditions address different contributors; no current emissions or policy figures are assumed."
+      ],
+      "example": {
+        "question": "Why can a sulfur-containing fuel mixture produce SO₂ even though a pure hydrocarbon has no sulfur?",
+        "steps": [
+          "The fuel mixture can contain sulfur-bearing impurities.",
+          "Those impurities react with oxygen when burned.",
+          "The hydrocarbon-only formula does not describe every component of the fuel mixture."
+        ],
+        "explanation": "Use the mixture composition rather than adding sulfur to an unrelated formula."
+      },
+      "commonMistakes": [
+        "Claiming sulfur is present in every pure alkane.",
+        "Claiming engine nitrogen oxides must come from nitrogen atoms in the fuel."
+      ]
+    },
+    {
+      "id": "acid-rain-formation",
+      "title": "Connect sulfur and nitrogen oxides to acidic rain",
+      "points": [
+        "4.16"
+      ],
+      "terms": [
+        "acid rain",
+        "sulfur dioxide",
+        "nitrogen oxides",
+        "water"
+      ],
+      "paragraphs": [
+        "Sulfur dioxide and nitrogen oxides can undergo reactions in the atmosphere and with water to form acidic substances that contribute to acid rain. The explanation needs the pollution gases, their conversion to acids and their incorporation into rainwater.",
+        "Do not describe these gases themselves as liquid acid falling from the exhaust. Several atmospheric reaction steps can be involved; a single simplified oxide-plus-water idea is not an exact model for every nitrogen oxide or every acid-rain sample.",
+        "Acid rain can harm organisms and react with susceptible materials such as carbonate stone. Carbon dioxide’s warming role is a different environmental pathway; avoid using “greenhouse gas” as the whole explanation for acid rain."
+      ],
+      "example": {
+        "question": "Improve “dirty fuel makes acid rain” into a chemical chain of explanation.",
+        "steps": [
+          "Burning sulfur-containing impurities can release SO₂.",
+          "SO₂ undergoes atmospheric/water reactions that form acidic substances.",
+          "Those substances contribute to acidic rainwater."
+        ],
+        "explanation": "Name the intermediate pollutant and its change, not only the outcome."
+      },
+      "commonMistakes": [
+        "Calling soot an acid gas.",
+        "Giving global warming as the acid-rain mechanism."
+      ]
+    },
+    {
+      "id": "cracking-process",
+      "title": "Use the specified catalytic cracking conditions",
+      "points": [
+        "4.17"
+      ],
+      "terms": [
+        "cracking",
+        "silica",
+        "alumina",
+        "600–700°C",
+        "alkene"
+      ],
+      "paragraphs": [
+        "Catalytic cracking converts long-chain alkanes into shorter-chain alkanes and alkenes. In the specified model, use silica or alumina as the catalyst and a temperature in the range 600–700°C. Heating vaporized hydrocarbon over the hot catalyst changes chemical bonds rather than merely separating a mixture.",
+        "An original atom-balanced model is C₁₂H₂₆ → C₈H₁₈ + 2C₂H₄. Carbon totals are 12 on both sides and hydrogen totals 26. This illustrates one possible product set, not a claim that a refinery produces only these compounds.",
+        "Cracking equations can have more than one valid product combination. Check every atom and whether the proposed saturated and unsaturated products fit the task. Other industrial processes can use different conditions; do not replace the own syllabus’s named catalytic conditions with a different cracking route."
+      ],
+      "example": {
+        "question": "For the model C₁₀H₂₂ → C₆H₁₄ + X, find X and identify its family if it is an acyclic molecule with one double bond.",
+        "steps": [
+          "Subtract atoms: X has C₄H₈.",
+          "This fits CₙH₂ₙ with n = 4.",
+          "Under the supplied structure condition X is an alkene; the formula alone does not locate its double bond."
+        ],
+        "explanation": "Conservation identifies a formula before structure is inferred."
+      },
+      "commonMistakes": [
+        "Calling fractional distillation cracking.",
+        "Ignoring a missing hydrogen in the product balance.",
+        "Giving an exact product identity without enough structural information."
+      ]
+    },
+    {
+      "id": "cracking-demand",
+      "title": "Explain why supply and demand motivate cracking",
+      "points": [
+        "4.18"
+      ],
+      "terms": [
+        "supply",
+        "demand",
+        "short-chain fuel",
+        "alkene feedstock"
+      ],
+      "paragraphs": [
+        "Crude oil supplies a particular distribution of fractions, while demand for useful products differs. A refinery may have more heavy long-chain material than demand requires and insufficient lighter fuels. Cracking converts some less-demanded long-chain material into more useful shorter products.",
+        "The shorter alkanes can contribute to fuel supply, and alkenes are useful starting materials for products such as polymers. Distillation alone cannot make more short molecules from long ones because it separates rather than changes the molecules.",
+        "Use any supplied production and demand data to identify the mismatch. The need is not that long-chain hydrocarbons contain no energy or can never be used; it is the balance between the available fractions and desired products."
+      ],
+      "example": {
+        "question": "A hypothetical refinery has excess heavy fractions but demand for more lighter fuel and alkene feedstock. Why does distillation alone not solve the mismatch?",
+        "steps": [
+          "Distillation redistributes existing compounds into fractions.",
+          "It does not turn long molecules into shorter ones.",
+          "Cracking can change that molecular supply."
+        ],
+        "explanation": "Connect the chemical process to the stated supply-demand problem."
+      },
+      "commonMistakes": [
+        "Saying heavy fractions are always useless.",
+        "Claiming separation creates new alkene molecules."
+      ]
+    },
+    {
+      "id": "alkane-formula",
+      "title": "Use the alkane formula and explain saturation",
+      "points": [
+        "4.19",
+        "4.20"
+      ],
+      "terms": [
+        "alkane",
+        "CₙH₂ₙ₊₂",
+        "saturated",
+        "single bond"
+      ],
+      "paragraphs": [
+        "Acyclic alkanes have the general formula CₙH₂ₙ₊₂. With n = 5, the formula is C₅H₁₂. Saturated describes the absence of carbon-carbon multiple bonds: the carbon skeleton has single bonds and the normal hydrogen count for an acyclic alkane.",
+        "Saturation does not mean the sample is wet or that a solution cannot dissolve more solute. The term describes molecular bonding. A ring of saturated carbons has a different hydrogen-count formula, so apply CₙH₂ₙ₊₂ within the stated acyclic alkane family.",
+        "Branching does not change the molecular formula for a fixed number of carbons in an acyclic alkane. It changes connectivity and can change physical properties. Check formula and structure together."
+      ],
+      "example": {
+        "question": "An acyclic alkane has six carbons. Calculate its molecular formula.",
+        "steps": [
+          "n = 6.",
+          "Hydrogens = 2 × 6 + 2 = 14.",
+          "The formula is C₆H₁₄; its particular connectivity still needs a structure."
+        ],
+        "explanation": "A family formula gives atom counts under explicit conditions."
+      },
+      "commonMistakes": [
+        "Using CₙH₂ₙ for an acyclic alkane.",
+        "Confusing saturation with a saturated solution."
+      ]
+    },
+    {
+      "id": "alkane-drawings",
+      "title": "Draw the first five unbranched alkanes",
+      "points": [
+        "4.21"
+      ],
+      "terms": [
+        "methane",
+        "ethane",
+        "propane",
+        "butane",
+        "pentane",
+        "displayed bonds"
+      ],
+      "paragraphs": [
+        "The five unbranched examples are methane CH₄, ethane CH₃CH₃, propane CH₃CH₂CH₃, butane CH₃CH₂CH₂CH₃ and pentane CH₃CH₂CH₂CH₂CH₃. The condensed formulas show connectivity; a displayed answer must expand every C–H bond.",
+        "For a displayed acyclic alkane chain, draw single C–C bonds, give each terminal carbon three hydrogens and each internal unbranched carbon two. Methane is the one-carbon case with four hydrogens. Recount the atom totals and verify four bond contributions around every carbon.",
+        "The original drawing sheet is a two-dimensional bond representation, not the real bond angles or a claim that the molecules are flat. The required alkane drawing range is up to five carbons; the general naming reference extends to relevant compounds with six."
+      ],
+      "example": {
+        "question": "How many hydrogens should the displayed unbranched pentane drawing contain?",
+        "steps": [
+          "Two terminal CH₃ groups contribute six H.",
+          "Three internal CH₂ groups contribute six H.",
+          "Total twelve H: C₅H₁₂."
+        ],
+        "explanation": "Use connectivity and carbon valency to check the drawing."
+      },
+      "commonMistakes": [
+        "Giving a terminal carbon only two hydrogens.",
+        "Omitting C–H bonds in a displayed answer.",
+        "Calling the sketch a realistic bond-angle model."
+      ],
+      "diagram": {
+        "src": "/diagrams/chemistry-alkane-displayed.svg",
+        "alt": "Original displayed formulas showing every bond in methane, ethane, propane, butane and pentane, with four bond contributions at each carbon.",
+        "caption": "Expand all C–H bonds for a displayed answer. These are schematic connections, not the actual molecular angles."
+      }
+    },
+    {
+      "id": "alkane-branched-isomers",
+      "title": "Check the three acyclic C₅H₁₂ skeletons",
+      "points": [
+        "4.5",
+        "4.21"
+      ],
+      "terms": [
+        "pentane",
+        "2-methylbutane",
+        "2,2-dimethylpropane",
+        "branch"
+      ],
+      "paragraphs": [
+        "For C₅H₁₂, the three distinct acyclic alkane skeletons are the unbranched five-carbon chain, a four-carbon chain with one methyl branch, and a three-carbon chain with two methyl branches at its middle carbon. Their condensed formulas are CH₃CH₂CH₂CH₂CH₃, CH₃CH(CH₃)CH₂CH₃ and C(CH₃)₄.",
+        "The last central carbon has four carbon-carbon single bonds and no hydrogen. Its four surrounding CH₃ groups supply all twelve hydrogens. In the one-branch isomer, the branch-bearing CH has one hydrogen, not two.",
+        "The corresponding systematic names help distinguish the skeletons, but the specific alkane naming requirement names the unbranched-chain isomers. These extra branch labels support the general naming and structural-isomer explanation; no exhaustive six-carbon isomer bank is claimed."
+      ],
+      "example": {
+        "question": "Why must the central carbon in C(CH₃)₄ have no hydrogen?",
+        "steps": [
+          "It already has four C–C single bonds.",
+          "A further C–H bond would give five bond contributions.",
+          "The surrounding four CH₃ groups already give C₅H₁₂."
+        ],
+        "explanation": "Normal carbon valency constrains the atom count."
+      },
+      "commonMistakes": [
+        "Adding a hydrogen to a carbon already bonded four times.",
+        "Counting a rotated branched skeleton as another isomer."
+      ],
+      "diagram": {
+        "src": "/diagrams/chemistry-branched-alkanes.svg",
+        "alt": "Original full displayed formulas for 2-methylpropane C4H10, 2-methylbutane C5H12 and 2,2-dimethylpropane C5H12. Branch-bearing hydrogen counts satisfy carbon valency.",
+        "caption": "Branch names support the general isomer explanation. The specific alkane naming reference asks for the unbranched names."
+      }
+    },
+    {
+      "id": "alkane-monosubstitution",
+      "title": "Replace one alkane hydrogen under ultraviolet radiation",
+      "points": [
+        "4.6",
+        "4.22"
+      ],
+      "terms": [
+        "mono-substitution",
+        "halogen",
+        "ultraviolet",
+        "hydrogen halide"
+      ],
+      "paragraphs": [
+        "In the specified alkane-halogen reaction, ultraviolet radiation enables substitution of one hydrogen by a halogen atom. For methane and chlorine, the mono-substitution model is CH₄ + Cl₂ → CH₃Cl + HCl, with UV shown as a condition rather than a chemical reactant.",
+        "One chlorine atom takes the replaced hydrogen’s position and the other forms hydrogen chloride. The organic product is chloromethane, which contains chlorine and is no longer a hydrocarbon. The school scope is mono-substitution; additional substitution can occur under other circumstances and is not treated as impossible.",
+        "For larger alkanes, replacing hydrogens at different nonequivalent positions can give different mono-substitution products. Do not assume an unsymmetrical alkane necessarily makes only one constitutional product. No reaction mechanism or unsupervised halogen/UV procedure is required here."
+      ],
+      "example": {
+        "question": "Balance the methane/bromine mono-substitution model and name the required radiation condition.",
+        "steps": [
+          "CH₄ + Br₂ → CH₃Br + HBr.",
+          "The atoms balance: C₁H₄Br₂ on both sides.",
+          "Ultraviolet radiation is the specified condition."
+        ],
+        "explanation": "Substitution replaces a hydrogen and forms a hydrogen halide."
+      },
+      "commonMistakes": [
+        "Writing only CH₃Br and losing the replaced hydrogen.",
+        "Drawing addition across a nonexistent alkane double bond.",
+        "Treating UV as a consumed chemical."
+      ]
+    },
+    {
+      "id": "alkene-formula",
+      "title": "Identify a C=C group and the alkene formula",
+      "points": [
+        "4.23",
+        "4.24",
+        "4.25"
+      ],
+      "terms": [
+        "alkene",
+        "C=C",
+        "CₙH₂ₙ",
+        "unsaturated"
+      ],
+      "paragraphs": [
+        "The named alkene functional group is a carbon-carbon double bond, C=C. Acyclic hydrocarbons with one such double bond have general formula CₙH₂ₙ. The first member is ethene C₂H₄; a one-carbon molecule cannot have a carbon-carbon double bond.",
+        "Alkenes are unsaturated because the multiple bond permits addition, such as adding bromine across the C=C. The two carbon atoms remain connected after simple addition, but by a single bond; the extra bond contributions connect the added atoms.",
+        "The formula CₙH₂ₙ alone does not uniquely prove an alkene because other structures can have that atom ratio. Use a displayed structure or the stated family. The required drawing range has one C=C and up to four carbons, without compulsory E/Z or cis/trans notation."
+      ],
+      "example": {
+        "question": "An acyclic one-double-bond alkene has three carbons. What formula is expected?",
+        "steps": [
+          "n = 3 in CₙH₂ₙ.",
+          "The formula is C₃H₆.",
+          "The structure must still place the C=C bond and satisfy carbon valency."
+        ],
+        "explanation": "Use the family’s stated structural conditions."
+      },
+      "commonMistakes": [
+        "Giving ethene C₂H₆.",
+        "Proposing a one-carbon alkene.",
+        "Treating a molecular ratio as proof of a double bond."
+      ]
+    },
+    {
+      "id": "alkene-drawings",
+      "title": "Draw and distinguish the required small alkenes",
+      "points": [
+        "4.26"
+      ],
+      "terms": [
+        "ethene",
+        "propene",
+        "but-1-ene",
+        "but-2-ene",
+        "double bond position"
+      ],
+      "paragraphs": [
+        "The unbranched examples up to four carbons are ethene CH₂=CH₂, propene CH₂=CHCH₃, but-1-ene CH₂=CHCH₂CH₃ and but-2-ene CH₃CH=CHCH₃. For four carbons the two unbranched double-bond positions are distinct structural isomers, while writing but-1-ene from the opposite end does not add another.",
+        "The branched four-carbon alkene CH₂=C(CH₃)₂ provides another valid connectivity for the drawing requirement; its double-bonded branch carbon has no hydrogen. The specific naming requirement covers the unbranched isomers. Cis/trans or E/Z descriptors are not required in this course reference.",
+        "In displayed formulas, show both C=C lines and all C–H bonds. A double bond contributes two to each connected carbon’s valency. The schematic arrangements show connectivity only; orientation on the sheet is not a claim of a particular stereoisomer."
+      ],
+      "example": {
+        "question": "How many hydrogens are attached to each double-bond carbon in CH₃CH=CHCH₃?",
+        "steps": [
+          "Each double-bond carbon has one single bond to a CH₃ group and the double bond to the other carbon.",
+          "That gives three bond contributions before adding H.",
+          "Each needs one H; total formula is C₄H₈."
+        ],
+        "explanation": "Count bond contributions, not just the number of neighbouring labels."
+      },
+      "commonMistakes": [
+        "Drawing three H on a carbon already in C=C.",
+        "Counting opposite drawing directions as different positions.",
+        "Requiring E/Z names beyond the stated scope."
+      ],
+      "diagram": {
+        "src": "/diagrams/chemistry-alkene-displayed.svg",
+        "alt": "Original fully displayed ethene, propene, but-1-ene, but-2-ene and the branched C4 alkene. Double bonds and every hydrogen are drawn without stereochemical assignments.",
+        "caption": "Different double-bond positions can change connectivity. Drawing orientation does not create a new isomer; stereochemical descriptors are not required."
+      }
+    },
+    {
+      "id": "bromine-addition",
+      "title": "Add bromine across the alkene double bond",
+      "points": [
+        "4.6",
+        "4.27"
+      ],
+      "terms": [
+        "bromine",
+        "dibromoalkane",
+        "addition",
+        "1,2-dibromoethane"
+      ],
+      "paragraphs": [
+        "In the required simple model, Br₂ adds across the C=C of an alkene to form a dibromoalkane. For ethene: CH₂=CH₂ + Br₂ → CH₂BrCH₂Br. Each former double-bond carbon gains one bromine, and the carbon-carbon bond is now single.",
+        "The product is 1,2-dibromoethane, not bromoethene or a substitution product with HBr removed. The model conserves C₂H₄Br₂ on both sides. For propene the bromines attach at the two original double-bond carbons, giving CH₂BrCHBrCH₃.",
+        "This is the syllabus’s dibromoalkane addition model. An actual aqueous reagent can involve additional chemistry; the colour test identifies the specified unsaturation response rather than certifying a pure isolated dibromo product. Mechanisms are not required."
+      ],
+      "example": {
+        "question": "Write the structural product of bromine addition to CH₃CH=CHCH₃ in the required model.",
+        "steps": [
+          "Change the C=C to C–C.",
+          "Add Br to each of those two carbons.",
+          "The product is CH₃CHBrCHBrCH₃, with no hydrogen removed."
+        ],
+        "explanation": "Preserve the skeleton and add across the two-carbon group."
+      },
+      "commonMistakes": [
+        "Putting both Br atoms on one carbon for this addition model.",
+        "Keeping the C=C while adding too many bonds.",
+        "Creating HBr as though a hydrogen were substituted."
+      ]
+    },
+    {
+      "id": "bromine-water-test",
+      "title": "Use a controlled bromine-water colour comparison",
+      "points": [
+        "4.28"
+      ],
+      "terms": [
+        "bromine water",
+        "orange",
+        "colourless",
+        "alkane",
+        "alkene"
+      ],
+      "paragraphs": [
+        "In the supervised comparison, add bromine water to the sample and mix as directed. An alkene removes the bromine colour: orange or orange-brown becomes colourless under suitable conditions. An alkane does not show that prompt reaction in the comparison without UV; avoid UV or strong sunlight that can permit substitution.",
+        "Name the original reagent colour and its disappearance rather than saying “the alkene turns clear”. Some samples form two layers; distinguish a reaction removing bromine from its physical transfer between layers, and keep reagent amounts and mixing comparable. Excess bromine can leave colour even when some alkene reacted.",
+        "The test distinguishes the specified alkane/alkene candidates in the task context. Other reactive substances can also decolourise bromine, so a positive response in an unrestricted unknown does not uniquely identify one compound or certify purity. Bromine is hazardous; use the teacher-approved dilute reagent and handling rather than direct inhalation or a home recipe."
+      ],
+      "example": {
+        "question": "Two stated hydrocarbon candidates are an alkane and an alkene. One promptly makes bromine water colourless under matched conditions without UV. What does that support?",
+        "steps": [
+          "The responding sample is the alkene in this specified comparison.",
+          "Bromine reacts with its C=C group.",
+          "The observation does not name the exact alkene or certify purity."
+        ],
+        "explanation": "Connect the observation to the restricted candidate set."
+      },
+      "commonMistakes": [
+        "Treating physical movement of colour between layers as proof of reaction.",
+        "Using UV during the distinction and ignoring alkane substitution.",
+        "Claiming every decolourising unknown must be one pure alkene."
+      ]
+    }
+  ]
+}

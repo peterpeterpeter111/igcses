@@ -1,3 +1,4 @@
+import chemistryOrganic from './notes/chemistry-organic.json' with { type: 'json' };
 import chemistryPhysical from './notes/chemistry-physical.json' with { type: 'json' };
 import chemistryInorganic from './notes/chemistry-inorganic.json' with { type: 'json' };
 import biologyResources from './biology-resources.ts';
@@ -83,6 +84,7 @@ export const notes: ChapterNotes[] = [
   chemistry,
   chemistryInorganic,
   chemistryPhysical,
+  chemistryOrganic,
   physics,
   physicsWaves,
   physicsEnergy,

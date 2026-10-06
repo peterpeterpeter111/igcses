@@ -1,0 +1,149 @@
+{
+  "date": "2026-10-06",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "status": "bounded-source-and-logic-review",
+  "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "ownPDFPages": [
+    29,
+    30
+  ],
+  "printedPages": [
+    23,
+    24
+  ],
+  "newSections": 26,
+  "reviewedParents": 28,
+  "localEditorialRequirements": 82,
+  "partialLinks": 36,
+  "completePoints": 0,
+  "completeChapters": 0,
+  "fullyProcessedPapers": 0,
+  "activeTemplates": 0,
+  "displayedStructureChecks": [
+    {
+      "name": "methane",
+      "carbons": 1,
+      "hydrogens": 4,
+      "allCarbonValencies": 4
+    },
+    {
+      "name": "ethane",
+      "carbons": 2,
+      "hydrogens": 6,
+      "allCarbonValencies": 4
+    },
+    {
+      "name": "propane",
+      "carbons": 3,
+      "hydrogens": 8,
+      "allCarbonValencies": 4
+    },
+    {
+      "name": "butane",
+      "carbons": 4,
+      "hydrogens": 10,
+      "allCarbonValencies": 4
+    },
+    {
+      "name": "pentane",
+      "carbons": 5,
+      "hydrogens": 12,
+      "allCarbonValencies": 4
+    },
+    {
+      "name": "2-methylpropane",
+      "carbons": 4,
+      "hydrogens": 10,
+      "allCarbonValencies": 4
+    },
+    {
+      "name": "2-methylbutane",
+      "carbons": 5,
+      "hydrogens": 12,
+      "allCarbonValencies": 4
+    },
+    {
+      "name": "2,2-dimethylpropane",
+      "carbons": 5,
+      "hydrogens": 12,
+      "allCarbonValencies": 4
+    },
+    {
+      "name": "ethene",
+      "carbons": 2,
+      "hydrogens": 4,
+      "allCarbonValencies": 4
+    },
+    {
+      "name": "propene",
+      "carbons": 3,
+      "hydrogens": 6,
+      "allCarbonValencies": 4
+    },
+    {
+      "name": "but-1-ene",
+      "carbons": 4,
+      "hydrogens": 8,
+      "allCarbonValencies": 4
+    },
+    {
+      "name": "but-2-ene",
+      "carbons": 4,
+      "hydrogens": 8,
+      "allCarbonValencies": 4
+    },
+    {
+      "name": "branched C4 alkene: CH2=C(CH3)2",
+      "carbons": 4,
+      "hydrogens": 8,
+      "allCarbonValencies": 4
+    }
+  ],
+  "checks": [
+    "Own first 28 identities visually read: all both papers; six root naming versus five-carbon alkane/four-carbon alkene drawing limits separated.",
+    "Formula types, connectivity and valency independently checked; rotations do not create structural isomers.",
+    "C₄H₁₀ two acyclic skeletons and C₅H₁₂ three; branched carbon hydrogen counts verified.",
+    "Five small alkene drawings include the branched C₄ structure; no compulsory E/Z assignment or formula-alone family claim.",
+    "Six required fraction names and uses, hot-bottom/cool-top gradient and mixture distinction checked; original column diagram not a copied refinery poster.",
+    "Complete/incomplete equations independently atom-balanced; CO blood oxygen-capacity effect distinct from soot and CO₂.",
+    "Air nitrogen and sulfur-bearing impurities distinguished; acid-rain explanation avoids treating every oxide as a one-step acid.",
+    "Own silica/alumina and 600–700°C conditions authoritative; no alternative source cracking temperature substituted.",
+    "Cracking C12H26 → C8H18 + 2C2H4 and C10H22 → C6H14 + C4H8 conserve atoms; no exact product guarantee.",
+    "Methane mono-substitution equations conserve C/H/halogen; UV condition, H-halide and possible larger-alkane product differences retained.",
+    "Br₂ addition preserves skeleton, changes C=C to C–C and adds one Br per original alkene carbon; colour test distinguished from physical phase transfer and purity."
+  ],
+  "supportingSources": [
+    {
+      "title": "IUPAC brief guide: selected simple-chain roots",
+      "url": "https://iupac.org/wp-content/uploads/2021/06/Organic-Brief-Guide-brochure_v1.1_June2021.pdf"
+    },
+    {
+      "title": "IUPAC Blue Book: selected alkene locant rules",
+      "url": "https://iupac.qmul.ac.uk/BlueBook/P1.html#P-15.1.7.2"
+    },
+    {
+      "title": "RSC: selected indexed fraction descriptions and common uses",
+      "url": "https://edu.rsc.org/infographics/everything-you-need-to-teach-fractional-distillation/4016691.article"
+    },
+    {
+      "title": "RSC: indexed alkene bromine-addition fact",
+      "url": "https://edu.rsc.org/download?ac=543166"
+    },
+    {
+      "title": "RSC: indexed alkane UV-substitution fact",
+      "url": "https://edu.rsc.org/resources/investigate-organic-reaction-mechanisms/383.article"
+    }
+  ],
+  "sourceAccessNotes": [
+    "Own PDF 29/30 visually reviewed before drafting. PDF 31/32 also visually read for the next phase; their statements have not yet been added to reviewed ledgers.",
+    "Selected IUPAC brief-guide naming table and Blue Book locant text read as factual checks; no whole-book review, assessment copying or reproduction of its diagrams.",
+    "RSC full article/download opening returned access errors; narrow indexed primary fraction/reaction descriptions used with the own specification. No full download/body-read claim.",
+    "Nearby refinery worksheet shows different cracking conditions and extra cuts; not substituted for own course requirements. Dated motoring-policy sidebar was not used."
+  ],
+  "limitations": [
+    "Later alcohol, acid, ester and polymer teaching and wider nomenclature still unfinished.",
+    "Independent unfamiliar structure/data and response calibration pending.",
+    "No combustion, halogen or oil experiment performed; no human review."
+  ]
+}
