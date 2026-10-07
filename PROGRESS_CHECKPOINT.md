@@ -1,3 +1,19 @@
+# Current checkpoint — 7 October 2026, Chemistry detailed extraction begun
+
+Read `research/checkpoints/2026-10-07-CHEMISTRY-Q1.md` and the Biology publication record first. Chemistry Q1 now has two detailed leaves/seven marks andfive partial scope links; whole-paper part count/visual inventory remain unconfirmed.189 normalized tasks/248 mappings,19 documents/six paper rows. Biology remains45 detailed parts/110 marks.198 tests,types/lint,16 research checks,evidence errors=[],build/public scan124/zero pass. Final reader wording types/lint/build/public checks also pass.36 partial note documents/1,056 sections unchanged;zero fully processed papers oractive exam templates.
+
+Sites version3 is already verified live for release107ad68/GitHubed9ef8f at https://igcses-study.peterwu2311.chatgpt.site . This newer Chemistry source andpublication documentation need non-force sync andexact-source publication. Desktop local notes shortcut works. Next Chemistry Q2 andwhole visual inventory,then curriculum/template calibration; AI last. Preserve both histories/UI andconsume no reset. Latest82% five-hour/84% weekly; continue above5% in both andcheckpoint/pause at5%.
+
+# Historical preceding checkpoints
+
+# Current checkpoint — 7 October 2026, Biology update published
+
+Read `research/checkpoints/2026-10-07-BIOLOGY-UPDATE-PUBLISHED.md` first. Sites version3 successfully publishes release107ad68 /GitHubed9ef8f, exact verified treeec5f1dccdfab65b6b7ec68f1cdfd47bf6df21df0, at https://igcses-study.peterwu2311.chatgpt.site . Owner-private access preserved. Biology has45 detailed parts/110 original marks across Q1–Q10 but remains zero fully processed papers; current/historical, AO/experimental and generative calibration gates remain unfinished. 194 tests plus25 focused tests, types/lint,16 research checks, rebuilt source andpublic scan124/zero pass.
+
+Desktop local notes shortcut works. 36 partial documents/1,056 sections,seven obtained pairs,seven provisional families;zero active exam templates or live AI. The preceding stale preparation was cancelled and reopened at corrected107ad68 before publication; no remaining sync/deployment blocker. This documentation needs non-force sync. Next inspect the obtained Chemistry pair, then continue source/curriculum/template work. Preserve both histories/UI, keep AI last andconsume no reset. Latest89% five-hour/85% weekly; continue above5% in both andcheckpoint/pause at5%.
+
+# Historical preceding checkpoints
+
 # Current checkpoint — 7 October 2026, Biology whole-paper details
 
 Read `research/checkpoints/2026-10-07-BIOLOGY-WHOLE-DETAILED.md` first. Biology now has all45 detailed parts/110 original marks across Q1–Q10, with49 partial numbered mappings. It remains indexed with zero fully processed papers or active exam templates; historical specification, AO/experimental scope, recognition and generative calibration remain unfinished. 194 tests plus25 focused tests after diagnostic wording changes, clean types/lint,16 research checks, evidence errors=[], build and public scan124/zero findings pass. 36 partial note documents/1,056 sections unchanged. Desktop local-notes shortcut works.

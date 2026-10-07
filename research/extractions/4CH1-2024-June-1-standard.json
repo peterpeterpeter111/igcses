@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "paperId": "4CH1-2024-June-1-standard",
+  "qualification": "4CH1",
+  "canonicalIdentity": {
+    "year": 2024,
+    "series": "June",
+    "component": "1C",
+    "variant": "unresolved",
+    "printedDate": "2024-05-17",
+    "filenameDate": "2024-05-18",
+    "legacyPaperIdPreserved": true
+  },
+  "reviewDate": "2026-10-07",
+  "reviewer": "Codex visual/source review",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "status": "detailed-subset-processing-incomplete",
+  "paperStage": "indexed",
+  "fullyProcessed": false,
+  "wholePaperMarks": 110,
+  "wholePaperLeafCount": null,
+  "detailedLeafTasks": 2,
+  "detailedOriginalMarks": 7,
+  "reviewedQuestionTotals": {
+    "1": 7
+  },
+  "reviewedSubsetMarksReconciled": true,
+  "marksReconciled": false,
+  "documents": [
+    {
+      "id": "4CH1-2024-June-1-standard:questionPaper",
+      "type": "question-paper",
+      "url": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Chemistry/2017/Exam-materials/4ch1-1c-que-20240518.pdf",
+      "sha256": "1aec3bb887bbfaa925f35e9dd20bcb9e0890474467b43385fa37628d0efc96eb",
+      "pageCount": 24
+    },
+    {
+      "id": "4CH1-2024-June-1-standard:markScheme",
+      "type": "mark-scheme",
+      "url": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Chemistry/2017/Exam-materials/4ch1-1c-rms-20240822.pdf",
+      "sha256": "204e6528094f3cd69b0eb8e06943fe5c73f7dd581943d62c57be7383d5c4a10b",
+      "pageCount": 18
+    }
+  ],
+  "pageAudit": {
+    "questionPaper": {
+      "visuallyReviewedPages": [
+        3
+      ],
+      "wholeDocumentReviewed": false
+    },
+    "markScheme": {
+      "visuallyReviewedPages": [
+        4
+      ],
+      "wholeDocumentReviewed": false
+    }
+  },
+  "rawManifestRef": "research/batches/2026-09-08-cross-subject-lower-01.manifest.json",
+  "rawManifestSha256": "562a2b39cf6c20944d2f29dd274c49e5a57a26d3502bf3b37dc82364d17ab963",
+  "coverReviewRef": "research/reviews/2026-09-09-cover-review.json",
+  "coverReviewSha256": "0ff8900b0c35dc679141bd58605fba2700ab0edc42b44e4d4bd2ac991d55a119",
+  "examinerReportStatus": "not-obtained-for-this-paper",
+  "currentSpecification": {
+    "documentId": "4CH1-spec",
+    "sha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+    "issue": "3",
+    "publication": "September 2024",
+    "reviewedPages": [
+      18,
+      20,
+      22,
+      26,
+      32
+    ],
+    "wholeHistoricalAmendmentReconciliation": "pending"
+  },
+  "tasks": [],
+  "taskPartitions": {
+    "schemaVersion": 1,
+    "parts": [
+      {
+        "question": "1",
+        "path": "4CH1-2024-June-1-standard/Q1.json"
+      }
+    ]
+  },
+  "blockers": [
+    "Q2 onwards remain without detailed extraction; whole-paper leaf denominator and visual inventory are unconfirmed.",
+    "Issue 3 September 2024 postdates the sitting; whole historical and current-scope reconciliation remains incomplete.",
+    "Official per-leaf AO and whole experimental/mathematical skill allocation remain unreviewed.",
+    "Q1 chlorine-test concessions/exclusions and alternative-path dependencies need source-policy and response calibration.",
+    "No calibrated generative family, semantic marker or complete template linkage."
+  ],
+  "processingNotes": [
+    "The existing raw indexed-only manifest and its zero extracted count remain unchanged; this dated overlay records two Q1 parts/seven original marks.",
+    "Printed sitting is17 May2024; filename date18 May is retained. Legacy June/standard ID and unresolved variant are preserved.",
+    "QP page3 and MS page4 both show Q1 total7. Five table positions remain one five-mark leaf, not five fabricated paper parts.",
+    "Cover identity and110-mark allocation were checked previously; whole task/rubric allocation is not reconciled.",
+    "Private question partitions keep marking data out of the public metadata module.",
+    "Published chlorine-test alternatives, dependent M2, iodide rejection and red-litmus maximum-one concession are source-specific records, not general chemistry rules."
+  ]
+}

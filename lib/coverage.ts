@@ -11,6 +11,7 @@ import humanIndex from '../research/paper-indexes/4HB1-2024-summer-01.json' with
 import biologyIndex from '../research/paper-indexes/4BI1-2024-summer-1b.json' with { type: 'json' };
 import humanExtraction from '../research/extractions/4HB1-2024-May-01-standard.json' with { type: 'json' };
 import biologyExtraction from '../research/extractions/4BI1-2024-June-1-standard.json' with { type: 'json' };
+import chemistryExtraction from '../research/extractions/4CH1-2024-June-1-standard.json' with { type: 'json' };
 import physicsIndex from '../research/reviews/2026-09-10-physics-leaf-index.json' with { type: 'json' };
 import physicsVisualAudit from '../research/reviews/2026-09-10-physics-visual-audit.json' with { type: 'json' };
 import { subjects } from '../content/catalog.ts';
@@ -56,6 +57,7 @@ export const evidenceHighlights = {
     retrievalValidation.date,
     humanExtraction.reviewDate,
     biologyExtraction.reviewDate,
+    chemistryExtraction.reviewDate,
   ]
     .sort()
     .at(-1),
@@ -114,7 +116,7 @@ export function subjectEvidence(code: string) {
   return batch.records
     .filter((r) => r.qualification === code)
     .map((r) => {
-      const detail = [physicsExtraction, humanExtraction, biologyExtraction].find(
+      const detail = [physicsExtraction, humanExtraction, biologyExtraction, chemistryExtraction].find(
         (e) => e.paperId === r.paperId,
       );
       return {

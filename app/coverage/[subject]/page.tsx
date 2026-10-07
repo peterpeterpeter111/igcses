@@ -68,9 +68,10 @@ export default async function SubjectCoverage({
                   {r.extraction.originalMarks} original marks) reviewed across{' '}
                   {r.extraction.reviewedQuestions.length === 1 ? 'Question' : 'Questions'}{' '}
                   {new Intl.ListFormat('en-GB', { style: 'long', type: 'conjunction' }).format(r.extraction.reviewedQuestions)}.
-                  Detailed records: {r.extraction.detailedTasks} of{' '}
-                  {r.extraction.expectedTasks ?? 'an unconfirmed number of'}{' '}
-                  parts. Zero fully processed papers.
+                  {r.extraction.expectedTasks === null
+                    ? 'The whole-paper part count is not yet confirmed.'
+                    : `Detailed records: ${r.extraction.detailedTasks} of ${r.extraction.expectedTasks} parts.`}
+                  {' '}Zero fully processed papers.
                 </p>
                 {r.extraction.wholePageAudit && <p className="status">
                   The visual page review covers all {r.extraction.questionPaperPages} question-paper
@@ -79,8 +80,8 @@ export default async function SubjectCoverage({
                   checks below still prevent this paper from being counted as fully processed.
                 </p>}
                 {!r.extraction.wholePageAudit && <p className="status">
-                  Detailed review covers {r.extraction.questionPaperPages} question-paper pages
-                  and {r.extraction.markSchemePages} scheme pages. The original text index
+                  Detailed review covers {r.extraction.questionPaperPages} question-paper {r.extraction.questionPaperPages === 1 ? 'page' : 'pages'}
+                  {' '}and {r.extraction.markSchemePages} scheme {r.extraction.markSchemePages === 1 ? 'page' : 'pages'}. The original text index
                   is preserved. {r.index ? 'The separate whole-paper visual inventory is complete; detailed review remains incomplete.' : 'The whole-paper visual inventory and mark reconciliation remain incomplete.'}
                 </p>}
                 <details>
