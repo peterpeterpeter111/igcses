@@ -5,18 +5,20 @@ import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import extraction from '../research/extractions/4BI1-2024-June-1-standard.json' with { type: 'json' };
 import skills from '../research/syllabus-skills/4BI1-issue3-q1-selected.json' with { type: 'json' };
+import index from '../research/paper-indexes/4BI1-2024-summer-1b.json' with { type: 'json' };
 import { subjectEvidence, coverageSummary, evidenceHighlights } from '../lib/coverage.ts';
 
 void test('Biology exposes a detailed subset while keeping private rubrics and whole-paper gates separate', () => {
   const row = subjectEvidence('4BI1').find((r) => r.paperId === extraction.paperId)!;
   assert.equal(row.extraction?.detailedTasks, 29);
   assert.equal(row.extraction?.originalMarks, 65);
-  assert.equal(row.extraction?.expectedTasks, null);
-  assert.equal(row.extraction?.wholePageAudit, false);
-  assert.equal(row.index, null);
+  assert.equal(row.extraction?.expectedTasks, 45);
+  assert.equal(row.extraction?.wholePageAudit, true);
+  assert.equal(row.index?.visualTasks, 45);
+  assert.equal(row.index?.reconciledMarks, 110);
   assert.deepEqual(row.extraction?.reviewedQuestions, ['1', '2', '3', '4', '5', '6']);
-  assert.equal(row.extraction?.questionPaperPages, 16);
-  assert.equal(row.extraction?.markSchemePages, 13);
+  assert.equal(row.extraction?.questionPaperPages, 32);
+  assert.equal(row.extraction?.markSchemePages, 24);
   assert.equal(coverageSummary().find((r) => r.subject.code === '4BI1')?.fullyProcessed, 0);
   assert.equal(evidenceHighlights.biologyDetailedParts, 29);
   const summary = JSON.stringify(row);
@@ -116,7 +118,7 @@ mutations={
  'human':lambda m:m['tasks'][0].update(humanReviewed=True),
  'whole-marks':lambda m:m.update(marksReconciled=True),
  'page':lambda m:m['tasks'][0].update(questionPaperPages=[2]),
- 'all-pages':lambda m:m['pageAudit']['questionPaper'].update(wholeDocumentReviewed=True),
+ 'all-pages':lambda m:m['pageAudit']['questionPaper'].update(wholeDocumentReviewed=False),
  'invented-AO':lambda m:m['tasks'][0].update(assessmentObjectives=['AO1']),
  'mapping':lambda m:m['tasks'][0]['syllabusMappings'][0].update(pointId='4BI1:issue3:4.1'),
  'reverse-edge':lambda m:m['sourceFoodWeb']['edges'][0].reverse(),
@@ -326,4 +328,46 @@ void test('Pondweed table retains supplied means and graph/explanation credit re
   assert.deepEqual(explanation.directionScoring?.converseAcceptedCriterionIds, [explanation.criteria[1].id, explanation.criteria[2].id]);
   assert.deepEqual(explanation.directionScoring?.converseRejectedCriterionIds, [explanation.criteria[0].id, explanation.criteria[3].id]);
   assert.equal(extraction.tasks.filter((t) => t.questionPath.startsWith('6.')).reduce((sum, t) => sum + t.originalMarks, 0), 11);
+});
+
+void test('The whole Biology visual index reconciles all compulsory allocations without promoting remaining extraction', () => {
+  assert.equal(index.tasks.length, 45);
+  assert.equal(index.tasks.reduce((sum, t) => sum + t.originalMarks, 0), 110);
+  assert.deepEqual(index.questionTotals.map((q) => [q.parts, q.marks]), [[6,12],[8,14],[1,7],[5,10],[4,11],[5,11],[4,13],[5,12],[6,14],[1,6]]);
+  const pending = index.tasks.filter((t) => t.detailedExtractionStatus === 'pending');
+  assert.equal(pending.length, 16);
+  assert.equal(pending.reduce((sum, t) => sum + t.originalMarks, 0), 45);
+  assert.equal(index.fullyProcessed, false);
+  assert.equal(extraction.marksReconciled, false);
+  const proof = JSON.parse(execFileSync('python3', ['-c', `
+import copy,importlib.util,json,sys
+from pathlib import Path
+sys.path.insert(0,'scripts')
+spec=importlib.util.spec_from_file_location('biology_export','scripts/export-biology-q1.py')
+module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+original=json.loads(Path(module.INDEX).read_text())
+mutations={
+ 'scheme-hash':lambda m:m.update(markSchemeSha256='bad'),
+ 'denominator':lambda m:m.update(indexedLeafCount=44),
+ 'promoted':lambda m:m.update(fullyProcessed=True),
+ 'human':lambda m:m.update(humanReviewed=True),
+ 'optional':lambda m:m.update(allCompulsory=False),
+ 'missing-page':lambda m:m['questionPaperVisualPages'].pop(),
+ 'renamed-leaf':lambda m:m['tasks'][29].update(questionPath='7.c'),
+ 'swapped-pages':lambda m:m['tasks'][29].update(questionPaperPages=[22]),
+ 'private-rubric':lambda m:m['tasks'][29].update(criteria=[{'marks':3}]),
+ 'remaining-promotion':lambda m:m['tasks'][29].update(detailedExtractionStatus='source-checked-subset'),
+ 'date-erasure':lambda m:m['paperMatch'].update(dateConflictPreserved=False),
+ 'unknown-variant':lambda m:m['paperMatch'].update(variant='standard'),
+}
+before={p:p.read_bytes() for p in Path('research/ledger/v1').rglob('*.csv')}
+for name,mutate in mutations.items():
+ m=copy.deepcopy(original);mutate(m)
+ try:module.prepare(index_overlay=m)
+ except ValueError:pass
+ else:raise AssertionError(name)
+assert all(p.read_bytes()==v for p,v in before.items())
+print(json.dumps({'rejected':len(mutations)}))
+`], { encoding:'utf8' }));
+  assert.equal(proof.rejected, 12);
 });

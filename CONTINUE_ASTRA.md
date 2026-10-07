@@ -1,5 +1,23 @@
 # Resume the saved project
 
+# Current checkpoint — 7 October 2026, Biology whole visual inventory
+
+Read `research/checkpoints/2026-10-07-BIOLOGY-WHOLE-INVENTORY.md`, then the library publication record. The existing owner-private website is published at https://igcses-study.peterwu2311.chatgpt.site. Initial release local1fb1d50 /GitHubcb1c6fb shares the verified tree; later source changes require their own non-force sync and publication.
+
+Biology now has a full45-part /110-mark visual structural index across32QP/24MS pages. Detailed rubric extraction remains29 Q1–Q6 parts /65 marks; remaining16/45 are pending. Denominator/indexed allocations are confirmed without promoting processing, mapping, marking or templates.36 chapter documents /1,056 sections and separate lesson practice remain available.178 tests and all prior checks pass; final build/types/lint/public checks also pass after the coverage-text correction; save/deploy the exact committed state. No notes/D1 changes in this inventory phase.
+
+The allowance monitor stopped returning; current remaining values are unknown. Last observed at continuation start91% five-hour /99% weekly. User was asked for current values; pause major work until the5% rule can be verified. No reset consumed. This is not an observed5% threshold. Keep AI last, preserve all source qualifications and both histories. Resume Q7 detailed extraction and current/historical/AO/experimental curriculum/template audits above5% in both windows; check task CSV187,014/195,000-byte capacity before larger additions.
+
+# Historical preceding checkpoints
+
+# Current checkpoint — 7 October 2026, library published
+
+Read `research/checkpoints/2026-10-07-LIBRARY-PUBLISHED.md` and the linked release checkpoint. Local release `1fb1d50` /GitHub `cb1c6fb` fetch-verify tree `14ff1e91726721753ac6c7882cdbb8b0f88afbf4`; prior histories preserved. Owner-private Sites deployment succeeded at https://igcses-study.peterwu2311.chatgpt.site for that same local release. Later documentation/source edits require their own sync.
+
+36 chapter documents /1,056 original sections; working separate lesson self-assessment across six subjects. Biology Q1–Q6 now29 parts/65 marks.177 tests, types/lint, sixteen research checks, build, public scan124/zero findings and fresh isolated D1 proof pass. Curriculum and paper processing remain partial; zero active exam templates or live AI. See checkpoints for all retained restrictions. Continue whole-paper/curriculum/template validation before AI. No reset, history rewrite or force push; save and pause at5% in either applicable window.
+
+# Historical preceding checkpoints
+
 # Current checkpoint — 7 October 2026, library release prepared
 
 Read `research/checkpoints/2026-10-07-LIBRARY-RELEASE.md` first. This phase continues local `95610d8`; fetched GitHub `f7588e7` matched its tree before edits. Source commit, exact non-force synchronization and Sites publication follow. Preserve both histories, existing interface and current private audience; use no reset.

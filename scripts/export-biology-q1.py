@@ -1,7 +1,7 @@
 """Normalize the checked Biology Q1–Q6 subset (twenty-nine parts / 65 marks).
 
-Validation and table preparation precede every write. Raw batch, incomplete
-whole-paper counts and printed source qualifications cannot be promoted here.
+Validation and table preparation precede every write. The whole visual index
+is separate from detailed rubric coverage; raw history and source gates remain.
 This validates source records, not free-text or drawing responses.
 """
 import csv
@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PAPER = '4BI1-2024-June-1-standard'
 OVERLAY = 'research/extractions/' + PAPER + '.json'
 SKILLS = 'research/syllabus-skills/4BI1-issue3-q1-selected.json'
+INDEX = 'research/paper-indexes/4BI1-2024-summer-1b.json'
 EXPECTED = {
     '1.a.i': (1, [3], [4], [('4.6', 'primary')]),
     '1.a.ii': (2, [3], [4], [('4.7', 'primary'), ('4.6', 'supporting')]),
@@ -46,6 +47,15 @@ EXPECTED = {
     '6.b.i': (5, [18], [15], [('2.23', 'supporting')]),
     '6.b.ii': (3, [19], [15], [('2.20', 'primary')]),
 }
+INDEX_REMAINING = {
+    '7.a': (3, [21], [16]), '7.b.i': (3, [22], [16]),
+    '7.b.ii': (2, [22], [16]), '7.b.iii': (5, [23], [17]),
+    '8.a': (1, [24], [18]), '8.b.i': (3, [24], [18]),
+    '8.b.ii': (3, [25], [18]), '8.c.i': (3, [25], [19]), '8.c.ii': (2, [25], [19]),
+    '9.a.i': (2, [26], [20]), '9.a.ii': (2, [27], [20]),
+    '9.a.iii': (2, [27], [21]), '9.a.iv': (1, [27], [21]),
+    '9.b.i': (1, [28], [21]), '9.b.ii': (6, [29], [22]), '10': (6, [30], [23]),
+}
 
 
 def require(condition, message):
@@ -57,7 +67,7 @@ def compact(value):
     return json.dumps(value, ensure_ascii=False, separators=(',', ':'))
 
 
-def prepare(root=ROOT, overlay=None):
+def prepare(root=ROOT, overlay=None, index_overlay=None):
     root = Path(root)
     def read(path):
         return json.loads((root / path).read_text())
@@ -65,8 +75,8 @@ def prepare(root=ROOT, overlay=None):
     require(m['paperId'] == PAPER and m['qualification'] == '4BI1', 'Wrong bounded paper')
     require(m['paperStage'] == 'indexed' and m['status'] == 'partial-detailed-extraction'
             and m['fullyProcessed'] is False and m['humanReviewed'] is False
-            and m['marksReconciled'] is False and m['wholePaperLeafCount'] is None,
-            'Partial subset must not promote full processing, denominator or human review')
+            and m['marksReconciled'] is False and m['wholePaperLeafCount'] == 45,
+            'Partial subset must not promote full processing or human review, or alter the checked denominator')
     require(m['wholePaperMarks'] == 110 and m['detailedLeafTasks'] == 29
             and m['detailedOriginalMarks'] == 65 and m['reviewedQuestionTotals'] == {'1': 12, '2': 14, '3': 7, '4': 10, '5': 11, '6': 11}
             and m['reviewedSubsetMarksReconciled'] is True, 'Subset totals mismatch')
@@ -84,11 +94,48 @@ def prepare(root=ROOT, overlay=None):
     docs = {d['type']: d for d in m['documents']}
     require(set(docs) == {'question-paper', 'mark-scheme'} and len(m['documents']) == 2, 'Expected one pair')
     qp, ms = docs['question-paper'], docs['mark-scheme']
-    for key, doc, count, pages in [('questionPaper', qp, 32, list(range(2, 12)) + [13, 14, 15, 17, 18, 19]), ('markScheme', ms, 24, list(range(3, 16)))]:
+    for key, doc, count, pages in [('questionPaper', qp, 32, list(range(1, 33))), ('markScheme', ms, 24, list(range(1, 25)))]:
         r, a = raw[key], m['pageAudit'][key]
         require(doc['id'] == PAPER + ':' + key and doc['sha256'] == r['sha256'] == cover[key + 'Sha256']
                 and doc['url'] == r['url'] and doc['pageCount'] == r['pageCount'] == count, 'Document/hash mismatch')
-        require(a == dict(visuallyReviewedPages=pages, wholeDocumentReviewed=False), 'Partial page audit drift')
+        require(a == dict(visuallyReviewedPages=pages, wholeDocumentReviewed=True), 'Whole visual page audit drift')
+    require(m['wholePaperIndexRef'] == INDEX, 'Unexpected structural index')
+    index = read(INDEX) if index_overlay is None else index_overlay
+    require(index['paperId'] == PAPER and index['qualification'] == '4BI1'
+            and index['indexedLeafCount'] == 45 and index['indexedOriginalMarks'] == 110
+            and index['questionCount'] == 10 and index['allCompulsory'] is True
+            and index['fullyProcessed'] is False and index['humanReviewed'] is False
+            and index['questionPaperSha256'] == qp['sha256'] and index['markSchemeSha256'] == ms['sha256']
+            and index['visualPageAuditComplete'] is True
+            and index['questionPaperVisualPages'] == list(range(1, 33))
+            and index['markSchemeVisualPages'] == list(range(1, 25)), 'Unbound or promoted structural index')
+    indexed = index['tasks']
+    require(len(indexed) == len({t['taskId'] for t in indexed}) == 45
+            and [t['questionPath'] for t in indexed] == list(EXPECTED) + list(INDEX_REMAINING)
+            and sum(t['originalMarks'] for t in indexed) == 110
+            and [r['parts'] for r in index['questionTotals']] == [6, 8, 1, 5, 4, 5, 4, 5, 6, 1]
+            and [r['marks'] for r in index['questionTotals']] == [12, 14, 7, 10, 11, 11, 13, 12, 14, 6], 'Structural allocation mismatch')
+    for q in index['questionTotals']:
+        subset = [t for t in indexed if t['questionPath'].split('.')[0] == str(q['question'])]
+        require(len(subset) == q['parts'] and sum(t['originalMarks'] for t in subset) == q['marks'], 'Indexed question total mismatch')
+    for t in indexed:
+        require(t['taskId'] == PAPER + '.Q' + t['questionPath'] and t['paperId'] == PAPER
+                and t['recordKind'] == 'leaf' and type(t['originalMarks']) is int
+                and t['inventoryStatus'] == 'visual-structure-checked'
+                and not any(k in t for k in ['criteria', 'syllabusMappings', 'solutionStructure', 'numericScoring']), 'Index ownership or rubric disclosure')
+        if t['questionPath'] in EXPECTED:
+            marks, pages, scheme_pages, _ = EXPECTED[t['questionPath']]
+            require((t['originalMarks'], t['questionPaperPages'], t['markSchemePages']) == (marks, pages, scheme_pages)
+                    and t['detailedExtractionStatus'] == 'source-checked-subset', 'Detailed/indexed subset drift')
+        else:
+            require(t['detailedExtractionStatus'] == 'pending'
+                    and (t['originalMarks'], t['questionPaperPages'], t['markSchemePages']) == INDEX_REMAINING[t['questionPath']],
+                    'Remaining task promoted or source allocation altered')
+    require(index['paperMatch'] == dict(questionPaperLog='P75813A', schemePaperLog='P75813A',
+            schemePublicationCode='4BI1_1B_2406_MS', questionPaperEvidencePages=[1], schemeEvidencePages=[1, 2],
+            printedDate='2024-05-10', filenameDate='2024-05-11', dateConflictPreserved=True, variant='unresolved')
+            and index['blankQuestionPaperPages'] == [12, 16, 20, 31, 32]
+            and index['nonTaskSchemePages'] == [1, 2, 3, 24], 'Whole-paper identity or non-task allocation drift')
     source = next(s for s in read('research/sources.json') if s['id'] == '4BI1-spec')
     spec = m['currentSpecification']
     require(spec == dict(documentId=source['id'], sha256=source['sha256'], issue='3', reviewedPages=[18, 19, 20, 21, 22, 26, 29, 30, 31, 49], wholeHistoricalAmendmentReconciliation='pending'), 'Specification scope drift')
@@ -320,9 +367,9 @@ def prepare(root=ROOT, overlay=None):
     documents = []
     for key, doc in [('questionPaper', qp), ('markScheme', ms)]:
         reviews = [dict(page=1, mode='visual-cover', reviewer='Codex cover visual review', date='2026-09-09')]
-        reviews += [dict(page=p, mode='visual-Q1-Q6-subset', reviewer=m['reviewer'], date=date) for p in m['pageAudit'][key]['visuallyReviewedPages']]
-        documents.append(dict(document_id=doc['id'], qualification='4BI1', document_type=doc['type'], canonical_url=doc['url'], title='4BI1/1B Summer 2024 ' + doc['type'], publisher='Pearson', year=2024, series='June', component='1B', variant='unresolved', printed_exam_date='2024-05-10' if key == 'questionPaper' else '', filename_date='2024-05-11' if key == 'questionPaper' else '', sha256=doc['sha256'], page_count=doc['pageCount'], access_status='obtained', local_evidence_path=OVERLAY, reviewed_pages_json=compact(reviews), identity_status='agent-reviewed-subset', identity_notes='Cover match plus Q1–Q6 task pairing only. Legacy standard variant unresolved; printed/filename date conflict retained. Whole-page audit pending.', batch_id=common['batch_id'], updated_at=date))
-    papers = [dict(paper_id=PAPER, qualification='4BI1', year=2024, series='June', component='1B', variant='unresolved', qp_document_id=qp['id'], ms_document_id=ms['id'], insert_document_ids_json='[]', examiner_report_ids_json='[]', report_status=m['examinerReportStatus'], target_specification_id=spec['documentId'], applicability_status='partial-current-scope-review', stage='indexed', last_successful_stage='indexed', expected_leaf_tasks='', indexed_leaf_tasks=29, extracted_leaf_tasks=29, assessed_marks=110, all_alternatives_marks='', option_rules_json=compact(dict(mode='answer-all', sourcePages=[2], wholeAllocationReviewed=False)), reconciled_marks='false', scheme_match_status='cover-and-Q1-Q6-subset-match-only', complete_page_audit='false', template_links_complete='false', blocking_issues_json=compact(m['blockers']), reviewed_at=date, **common)]
+        reviews += [dict(page=p, mode='visual-whole-structural-index', reviewer=m['reviewer'], date=date) for p in m['pageAudit'][key]['visuallyReviewedPages'] if p != 1]
+        documents.append(dict(document_id=doc['id'], qualification='4BI1', document_type=doc['type'], canonical_url=doc['url'], title='4BI1/1B Summer 2024 ' + doc['type'], publisher='Pearson', year=2024, series='June', component='1B', variant='unresolved', printed_exam_date='2024-05-10' if key == 'questionPaper' else '', filename_date='2024-05-11' if key == 'questionPaper' else '', sha256=doc['sha256'], page_count=doc['pageCount'], access_status='obtained', local_evidence_path=OVERLAY, reviewed_pages_json=compact(reviews), identity_status='agent-reviewed-whole-visual-pair', identity_notes='Whole visual structural pair match,45 indexed parts /110 allocation marks; detailed rubric review remains Q1–Q6 only. Legacy standard variant unresolved; printed/filename date conflict retained.', batch_id=common['batch_id'], updated_at=date))
+    papers = [dict(paper_id=PAPER, qualification='4BI1', year=2024, series='June', component='1B', variant='unresolved', qp_document_id=qp['id'], ms_document_id=ms['id'], insert_document_ids_json='[]', examiner_report_ids_json='[]', report_status=m['examinerReportStatus'], target_specification_id=spec['documentId'], applicability_status='partial-current-scope-review', stage='indexed', last_successful_stage='indexed', expected_leaf_tasks=45, indexed_leaf_tasks=45, extracted_leaf_tasks=29, assessed_marks=110, all_alternatives_marks='', option_rules_json=compact(dict(mode='answer-all', sourcePages=[1], wholeAllocationReviewed=True)), reconciled_marks='false', scheme_match_status='whole-visual-structural-pair-match-detailed-subset', complete_page_audit='true', template_links_complete='false', blocking_issues_json=compact(m['blockers']), reviewed_at=date, **common)]
     task_rows, mappings = [], []
     for t in tasks:
         status = 'agent-reviewed-partial-current-scope' if t['syllabusMappings'] else 'selected-mathematical-skills-only' if t.get('mathematicalSkillIds') else 'experimental-demand-numbered-scope-unresolved'

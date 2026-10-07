@@ -8,6 +8,7 @@ import batch from '../research/batches/2026-09-08-cross-subject-lower-01.manifes
 import covers from '../research/reviews/2026-09-09-cover-review.json' with { type: 'json' };
 import physicsExtraction from '../research/extractions/4PH1-2024-June-1-standard.json' with { type: 'json' };
 import humanIndex from '../research/paper-indexes/4HB1-2024-summer-01.json' with { type: 'json' };
+import biologyIndex from '../research/paper-indexes/4BI1-2024-summer-1b.json' with { type: 'json' };
 import humanExtraction from '../research/extractions/4HB1-2024-May-01-standard.json' with { type: 'json' };
 import biologyExtraction from '../research/extractions/4BI1-2024-June-1-standard.json' with { type: 'json' };
 import physicsIndex from '../research/reviews/2026-09-10-physics-leaf-index.json' with { type: 'json' };
@@ -63,6 +64,9 @@ export const evidenceHighlights = {
   humanBiologyDetailedMarks: humanExtraction.detailedOriginalMarks,
   biologyDetailedParts: biologyExtraction.detailedLeafTasks,
   biologyDetailedMarks: biologyExtraction.detailedOriginalMarks,
+  biologyExpectedParts: biologyIndex.indexedLeafCount,
+  biologyIndexedMarks: biologyIndex.indexedOriginalMarks,
+  biologyReviewedQuestions: Object.keys(biologyExtraction.reviewedQuestionTotals).join(', '),
   mathematicsDetailedParts: mathematicsSummary?.detailedTasks ?? 0,
   mathematicsDetailedMarks: mathematicsSummary?.originalMarks ?? 0,
   physicsDetailedParts: physicsExtraction.detailedLeafTasks,
@@ -144,7 +148,17 @@ export function subjectEvidence(code: string) {
                   markSchemePages: humanIndex.markSchemeVisualPages.length,
                   sourceDiscrepancies: humanIndex.sourceDiscrepancies.length,
                 }
-              : null,
+              : r.paperId === biologyIndex.paperId
+                ? {
+                    textTasks: null,
+                    hasEquationBooklet: false,
+                    visualTasks: biologyIndex.indexedLeafCount,
+                    reconciledMarks: biologyIndex.indexedOriginalMarks,
+                    questionPaperPages: biologyIndex.questionPaperVisualPages.length,
+                    markSchemePages: biologyIndex.markSchemeVisualPages.length,
+                    sourceDiscrepancies: biologyIndex.sourceDiscrepancies.length,
+                  }
+                : null,
         extraction: detail
           ? {
               detailedTasks: detail.detailedLeafTasks,
