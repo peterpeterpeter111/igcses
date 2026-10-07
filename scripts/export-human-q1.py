@@ -9,6 +9,7 @@ import hashlib
 import io
 import json
 from pathlib import Path
+from ledger_io import read_table, table_outputs
 from note_io import read_note
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -372,9 +373,7 @@ def prepare(root=ROOT):
     outputs = {}
     for name, key, incoming in [('documents', 'document_id', documents), ('papers', 'paper_id', papers), ('tasks', 'task_id', task_rows), ('task-mappings', 'mapping_id', mappings)]:
         path = root / 'research/ledger/v1' / (name + '.csv')
-        with path.open(newline='') as stream:
-            reader = csv.DictReader(stream)
-            fields, rows = reader.fieldnames, list(reader)
+        fields, rows = read_table(path.parent, name)
         require(fields and len({r[key] for r in rows}) == len(rows), 'Duplicate existing table IDs')
         saved = {r[key]: r for r in rows}
         owned = {r[key] for r in rows if r.get('paper_id') == PAPER or r.get('task_id', '').startswith(PAPER + '.Q') or r.get('document_id', '').startswith(PAPER + ':')}
@@ -382,11 +381,7 @@ def prepare(root=ROOT):
         for record in incoming:
             require(not set(record) - set(fields), 'Unknown output columns')
             saved[record[key]] = {field: record.get(field, '') for field in fields}
-        stream = io.StringIO(newline='')
-        writer = csv.DictWriter(stream, fields, lineterminator='\n')
-        writer.writeheader()
-        writer.writerows(saved.values())
-        outputs[path] = stream.getvalue()
+        outputs.update(table_outputs(path.parent, name, fields, saved.values(), m['qualification']))
     return outputs
 
 

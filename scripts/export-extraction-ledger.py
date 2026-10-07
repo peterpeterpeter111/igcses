@@ -7,6 +7,7 @@ import csv
 import json
 import sys
 from pathlib import Path
+from ledger_io import read_table, table_outputs
 
 root = Path(__file__).resolve().parents[1]
 path = Path(sys.argv[1]).resolve()
@@ -66,22 +67,20 @@ if m['paperStage'] == 'extracted':
         raise ValueError('Extracted stage requires the complete, reconciled detailed leaf set')
 
 
+outputs = {}
+
 def merge(name, key, records):
     file = root / 'research/ledger/v1' / (name + '.csv')
-    with file.open() as f:
-        reader = csv.DictReader(f)
-        fields = reader.fieldnames
-        rows = list(reader)
+    fields, rows = read_table(file.parent, name)
+    if len({r[key] for r in rows}) != len(rows):
+        raise ValueError('Duplicate existing ledger identity')
     indexed = {r[key]: r for r in rows}
     for record in records:
         unknown = set(record) - set(fields)
         if unknown:
             raise ValueError(unknown)
         indexed[record[key]] = {field: record.get(field, '') for field in fields}
-    with file.open('w', newline='') as f:
-        writer = csv.DictWriter(f, fields, lineterminator='\n')
-        writer.writeheader()
-        writer.writerows(indexed.values())
+    outputs.update(table_outputs(file.parent, name, fields, indexed.values(), m['qualification']))
 
 
 common = dict(reviewed_by=m['reviewer'], reviewer_type='agent', human_reviewed='false', batch_id=batch, updated_at=date)
@@ -99,4 +98,6 @@ for t in m['tasks']:
         mappings.append(dict(mapping_id=t['taskId']+':'+ref['pointId'], task_id=t['taskId'], point_id=ref['pointId'], mapping_kind=ref['kind'], current_applicability=ref['currentApplicability'], evidence_refs_json=json.dumps(ref['evidenceRefs']), rationale=ref['rationale'], review_status='agent-reviewed', reviewed_by=m['reviewer'], reviewer_type='agent', updated_at=date))
 merge('tasks', 'task_id', rows)
 merge('task-mappings', 'mapping_id', mappings)
+for output_path, content in outputs.items():
+    output_path.write_text(content)
 print(json.dumps({'paper':paper, 'detailedLeafTasks':len(rows), 'taskMappings':len(mappings), 'fullyProcessed':False}))

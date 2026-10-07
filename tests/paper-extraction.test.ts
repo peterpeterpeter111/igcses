@@ -38,11 +38,12 @@ with tempfile.TemporaryDirectory() as d:
  for folder in ['scripts','research/extractions','research/syllabus','research/reviews']:
   (root/folder).mkdir(parents=True)
  shutil.copy(source/'scripts/export-extraction-ledger.py',root/'scripts/export-extraction-ledger.py')
+ shutil.copy(source/'scripts/ledger_io.py',root/'scripts/ledger_io.py')
  shutil.copytree(source/'research/ledger/v1',root/'research/ledger/v1')
  for p in (source/'research/syllabus').glob('4PH1-*.json'):
   shutil.copy(p,root/'research/syllabus'/p.name)
  shutil.copy(source/'research/reviews/2026-09-10-physics-leaf-index.json',root/'research/reviews/2026-09-10-physics-leaf-index.json')
- before={p:p.read_bytes() for p in (root/'research/ledger/v1').glob('*.csv')}
+ before={p:p.read_bytes() for p in (root/'research/ledger/v1').rglob('*') if p.is_file()}
  path=root/'research/extractions/candidate.json'
  for mode in ['missing','duplicate','marks','hash','processed','flag']:
   m=copy.deepcopy(data)
@@ -238,8 +239,9 @@ void test('detailed export retains stimulus pages and exact cross-topic syllabus
         '-c',
         `import csv,json
 from pathlib import Path
+from scripts.ledger_io import read_table
 p=Path('research/ledger/v1')
-print(json.dumps({name:list(csv.DictReader((p/(name+'.csv')).open())) for name in ['tasks','task-mappings']}))`,
+print(json.dumps({name:read_table(p,name)[1] for name in ['tasks','task-mappings']}))`,
       ],
       { encoding: 'utf8' },
     ),

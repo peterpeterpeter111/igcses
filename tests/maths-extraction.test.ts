@@ -43,8 +43,9 @@ void test('Maths coverage exposes complete detailed records without criteria or 
 
 void test('Maths export rejects source, count, page and promotion errors before table changes', () => {
   const result = JSON.parse(execFileSync('python3', ['-c', `
-import copy,importlib.util,json,shutil,tempfile
+import copy,importlib.util,json,shutil,tempfile,sys
 from pathlib import Path
+sys.path.insert(0,'scripts')
 spec=importlib.util.spec_from_file_location('maths_export','scripts/export-maths-extraction.py')
 module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
 def remove_task(m):
@@ -94,8 +95,9 @@ with tempfile.TemporaryDirectory() as d:
 
 void test('Maths extracted stage requires matching whole-page evidence and preserved unresolved issues', () => {
   const rejected = JSON.parse(execFileSync('python3', ['-c', `
-import copy,importlib.util,json,shutil,tempfile
+import copy,importlib.util,json,shutil,tempfile,sys
 from pathlib import Path
+sys.path.insert(0,'scripts')
 spec=importlib.util.spec_from_file_location('maths_export','scripts/export-maths-extraction.py')
 module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
 with tempfile.TemporaryDirectory() as d:

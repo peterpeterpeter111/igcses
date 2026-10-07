@@ -9,7 +9,7 @@ import hashlib
 import io
 import json
 from pathlib import Path
-from ledger_io import read_table
+from ledger_io import read_table, table_outputs
 
 ROOT = Path(__file__).resolve().parents[1]
 PAPER = '4BI1-2024-June-1-standard'
@@ -387,11 +387,7 @@ def prepare(root=ROOT, overlay=None, index_overlay=None):
         for record in incoming:
             require(not set(record) - set(fields), 'Unknown output columns')
             saved[record[key]] = {field: record.get(field, '') for field in fields}
-        stream = io.StringIO(newline='')
-        writer = csv.DictWriter(stream, fields, lineterminator='\n')
-        writer.writeheader()
-        writer.writerows(saved.values())
-        outputs[path] = stream.getvalue()
+        outputs.update(table_outputs(path.parent, name, fields, saved.values(), m['qualification']))
     return outputs
 
 

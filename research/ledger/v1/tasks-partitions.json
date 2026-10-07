@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 2,
+  "table": "tasks",
+  "schemaPath": "tasks.csv",
+  "partitions": [
+    {
+      "qualification": "4HB1",
+      "paths": [
+        "tasks/4HB1.csv"
+      ]
+    },
+    {
+      "qualification": "4BI1",
+      "paths": [
+        "tasks/4BI1.csv"
+      ]
+    },
+    {
+      "qualification": "4CH1",
+      "paths": [
+        "tasks/4CH1.csv"
+      ]
+    },
+    {
+      "qualification": "4PH1",
+      "paths": [
+        "tasks/4PH1.csv"
+      ]
+    },
+    {
+      "qualification": "4EB1",
+      "paths": [
+        "tasks/4EB1.csv"
+      ]
+    },
+    {
+      "qualification": "4MB1",
+      "paths": [
+        "tasks/4MB1.csv"
+      ]
+    }
+  ]
+}

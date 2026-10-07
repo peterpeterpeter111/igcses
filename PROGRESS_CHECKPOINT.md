@@ -1,3 +1,11 @@
+# Current checkpoint — 7 October 2026, local notes and task partitions
+
+Read `research/checkpoints/2026-10-07-LOCAL-NOTES-AND-TASK-PARTITIONS.md` first. Continued fbe757c without restarting or discarding the unfinished migration. Desktop `IGCSE Notes.command` now opens the local library. All171 task records and fields are preserved in six declared subject partitions; five exporters and meaningful failure/idempotence tests pass.182 application tests, types/lint,16 research checks, build and public scan124/zero findings pass. No notes/D1 or coverage promotions.
+
+Both allowance checks work again:35% five-hour /90% weekly remaining at checkpoint creation. Continue above5% in both; no reset. Biology remains29 detailed Q1–Q6 parts/65 marks with45-part/110-mark separate whole visual inventory. Continue Q7, then curriculum and calibrated templates; AI last. Existing owner-private publication remains the earlier9e1621b release. Commit/sync this phase non-force before more source changes; preserve both histories and existing UI.
+
+# Historical preceding checkpoints
+
 # Project progress
 
 Latest verified application release: local `9e1621b` /GitHub `a89b5a1`, exact tree `3d7b7ecc34bf869e02e877775bb756e95a6d8adc`. Owner-private Sites deployment `appgdep_6ac6295185e081918b78aeddf6af07cb` succeeded for that same local commit at https://igcses-study.peterwu2311.chatgpt.site .178 tests and final types/lint/build/public checks pass. See the whole-inventory checkpoint for full proof and remaining work. This final note is a documentation descendant; preserve both histories. Major work is paused for unavailable current allowance monitoring, not an observed5% threshold. No reset used.

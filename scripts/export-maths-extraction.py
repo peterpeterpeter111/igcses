@@ -7,6 +7,7 @@ import csv
 import io
 import json
 from pathlib import Path
+from ledger_io import read_table, table_outputs
 
 ROOT = Path(__file__).resolve().parents[1]
 OVERLAY = 'research/extractions/4MB1-2024-summer-01.json'
@@ -127,9 +128,7 @@ def prepare(root=ROOT):
     outputs = {}
     for name, key, records in [('documents', 'document_id', documents), ('papers', 'paper_id', papers), ('tasks', 'task_id', task_rows), ('task-mappings', 'mapping_id', mappings)]:
         path = root / 'research/ledger/v1' / (name + '.csv')
-        with path.open() as f:
-            reader = csv.DictReader(f)
-            fields, rows = reader.fieldnames, list(reader)
+        fields, rows = read_table(path.parent, name)
         require(fields and len({r[key] for r in rows}) == len(rows), 'Invalid existing table: ' + name)
         saved = {r[key]: r for r in rows}
         incoming = {r[key] for r in records}
@@ -138,11 +137,7 @@ def prepare(root=ROOT):
         for record in records:
             require(not set(record) - set(fields), 'Unknown CSV column')
             saved[record[key]] = {field: record.get(field, '') for field in fields}
-        stream = io.StringIO(newline='')
-        writer = csv.DictWriter(stream, fields, lineterminator='\n')
-        writer.writeheader()
-        writer.writerows(saved.values())
-        outputs[path] = stream.getvalue()
+        outputs.update(table_outputs(path.parent, name, fields, saved.values(), m['qualification']))
     return outputs
 
 

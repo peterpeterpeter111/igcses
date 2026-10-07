@@ -10,6 +10,7 @@ import io
 import json
 import re
 from pathlib import Path
+from ledger_io import read_table, table_outputs
 
 PILOT = Path('research/pilot/4EB1-2024-November-01.json')
 PAPER = '4EB1-2024-November-01'
@@ -133,16 +134,14 @@ def prepare(root):
     pending = []
     for name,(key,records) in additions.items():
         path=root/'research/ledger/v1'/ (name+'.csv')
-        with path.open(newline='') as f:
-            reader=csv.DictReader(f);fields=reader.fieldnames;old=list(reader)
+        fields,old=read_table(path.parent,name)
         if not fields or len(set(fields))!=len(fields) or any(set(r)!=set(fields) or None in r.values() for r in old):
             raise ValueError('Malformed existing table: '+name)
         if len({r[key] for r in old})!=len(old) or any(set(r)-set(fields) for r in records):
             raise ValueError('Duplicate or unsupported export row: '+name)
         merged={r[key]:r for r in old}
         for row in records:merged[row[key]]={field:row.get(field,'') for field in fields}
-        stream=io.StringIO(newline='');writer=csv.DictWriter(stream,fields,lineterminator='\n')
-        writer.writeheader();writer.writerows(merged.values());pending.append((path,stream.getvalue()))
+        pending.extend(table_outputs(path.parent,name,fields,merged.values(),'4EB1').items())
     summary=dict(paper=PAPER, indexedTasks=11, detailedTasks=1, fullyProcessedPapers=0, activeTemplates=0,
                  normalizedDocuments=3, originalPilotSha256=hashlib.sha256((root/PILOT).read_bytes()).hexdigest())
     return pending,summary

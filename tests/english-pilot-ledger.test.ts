@@ -4,24 +4,26 @@ import { execFileSync } from 'node:child_process';
 
 void test('English pilot normalization is repeatable and preserves partial evidence and unrelated rows', () => {
   const result = JSON.parse(execFileSync('python3', ['-c', `
-import csv,json,tempfile,shutil,runpy
+import csv,json,tempfile,shutil,runpy,sys
 from pathlib import Path
-source=Path.cwd();api=runpy.run_path(str(source/'scripts/export-english-pilot.py'))
+source=Path.cwd();sys.path.insert(0,str(source/'scripts'));api=runpy.run_path(str(source/'scripts/export-english-pilot.py'))
+from ledger_io import read_table
 def rows(root,name):
- with (root/'research/ledger/v1'/ (name+'.csv')).open(newline='') as f:return list(csv.DictReader(f))
+ return read_table(root/'research/ledger/v1',name)[1]
 with tempfile.TemporaryDirectory() as d:
  root=Path(d)
  for folder in ['research/pilot','research/ledger/v1']:shutil.copytree(source/folder,root/folder)
  before={p.relative_to(root):p.read_bytes() for p in (root/'research').rglob('*') if p.is_file()}
  unrelated={name:[r for r in rows(root,name) if not (r.get('paper_id','').startswith(api['PAPER']) or r.get('document_id','').startswith('pilot-'+api['PAPER']))] for name in ['documents','papers','tasks']}
  summary=api['export'](root)
- first={name:(root/'research/ledger/v1'/ (name+'.csv')).read_bytes() for name in unrelated}
+ first={p:p.read_bytes() for p in (root/'research/ledger/v1').rglob('*') if p.is_file()}
  assert api['export'](root)==summary
- assert all((root/'research/ledger/v1'/ (name+'.csv')).read_bytes()==data for name,data in first.items())
+ assert all(p.read_bytes()==data for p,data in first.items())
  for name,old in unrelated.items():
   new=[r for r in rows(root,name) if not (r.get('paper_id','').startswith(api['PAPER']) or r.get('document_id','').startswith('pilot-'+api['PAPER']))]
   assert old==new,name
  allowed={Path('research/ledger/v1')/(name+'.csv') for name in unrelated}
+ allowed.add(Path('research/ledger/v1/tasks/4EB1.csv'))
  assert all((root/path).read_bytes()==data for path,data in before.items() if path not in allowed)
  tasks=[r for r in rows(root,'tasks') if r['paper_id']==api['PAPER']]
  assert len(tasks)==11
@@ -45,9 +47,9 @@ with tempfile.TemporaryDirectory() as d:
 
 void test('English normalization rejects changed stages, identities, marks and pages before any write', () => {
   const result = JSON.parse(execFileSync('python3', ['-c', `
-import json,tempfile,shutil,runpy
+import json,tempfile,shutil,runpy,sys
 from pathlib import Path
-source=Path.cwd();api=runpy.run_path(str(source/'scripts/export-english-pilot.py'));cases=[]
+source=Path.cwd();sys.path.insert(0,str(source/'scripts'));api=runpy.run_path(str(source/'scripts/export-english-pilot.py'));cases=[]
 for mode in ['stage','completion','duplicate-task','ao-marks','option-marks','qp-page','scheme-page','new-extraction','duplicate-document']:
  with tempfile.TemporaryDirectory() as d:
   root=Path(d)

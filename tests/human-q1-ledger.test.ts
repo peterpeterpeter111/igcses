@@ -7,12 +7,13 @@ const setup = `
 import csv,json,tempfile,shutil,runpy,sys
 from pathlib import Path
 source=Path.cwd();sys.path.insert(0,str(source/'scripts'));api=runpy.run_path(str(source/'scripts/export-human-q1.py'))
+from ledger_io import read_table
 def copy(root):
  for folder in ['content','research/curriculum-audits','research/extractions','research/paper-indexes','research/syllabus','research/syllabus-skills','research/ledger/v1','research/batches','research/reviews']:
   shutil.copytree(source/folder,root/folder)
  shutil.copy(source/'research/sources.json',root/'research/sources.json')
 def rows(root,name):
- with (root/'research/ledger/v1'/ (name+'.csv')).open(newline='') as f:return list(csv.DictReader(f))
+ return read_table(root/'research/ledger/v1',name)[1]
 `;
 
 void test('Human Q1–Q9 export separates complete inventory/detail from incomplete processing and preserves, rubric caps and unrelated/historical evidence', () => {
@@ -28,12 +29,13 @@ with tempfile.TemporaryDirectory() as d:
  before={p.relative_to(root):p.read_bytes() for p in (root/'research').rglob('*') if p.is_file()}
  unrelated={n:[r for r in rows(root,n) if not (r.get('paper_id')==api['PAPER'] or r.get('task_id','').startswith(api['PAPER']+'.Q') or r.get('document_id','').startswith(api['PAPER']+':'))] for n in ['documents','papers','tasks','task-mappings']}
  result=api['export'](root)
- first={n:(root/'research/ledger/v1'/ (n+'.csv')).read_bytes() for n in unrelated}
+ first={p:p.read_bytes() for p in (root/'research/ledger/v1').rglob('*') if p.is_file()}
  assert api['export'](root)==result
- assert all((root/'research/ledger/v1'/ (n+'.csv')).read_bytes()==v for n,v in first.items())
+ assert all(p.read_bytes()==v for p,v in first.items())
  for n,old in unrelated.items():
   assert [r for r in rows(root,n) if not (r.get('paper_id')==api['PAPER'] or r.get('task_id','').startswith(api['PAPER']+'.Q') or r.get('document_id','').startswith(api['PAPER']+':'))]==old,n
  allowed={Path('research/ledger/v1')/(n+'.csv') for n in unrelated}
+ allowed.add(Path('research/ledger/v1/tasks/4HB1.csv'))
  assert all((root/p).read_bytes()==v for p,v in before.items() if p not in allowed)
  paper=next(r for r in rows(root,'papers') if r['paper_id']==api['PAPER'])
  assert paper['stage']=='extracted' and paper['expected_leaf_tasks']==paper['indexed_leaf_tasks']=='42'
@@ -150,7 +152,7 @@ for mode in ['stage','human','whole-count','whole-marks','whole-pages','hash','t
    point_path.write_text(json.dumps(inventory))
   elif mode=='skill-source':m['tasks'][8]['skillMappings'][0]['evidenceRefs'][0]['pdfPages']=[44]
   elif mode=='stale-row':
-   path=root/'research/ledger/v1/tasks.csv';data=rows(root,'tasks');stale=dict(data[0]);stale['task_id']=api['PAPER']+'.Q9';stale['paper_id']=api['PAPER'];data.append(stale)
+   path=root/'research/ledger/v1/tasks/4HB1.csv';data=[r for r in rows(root,'tasks') if r['paper_id'].startswith('4HB1-')];stale=dict(data[0]);stale['task_id']=api['PAPER']+'.Q9';stale['paper_id']=api['PAPER'];stale['question_path']='9';data.append(stale)
    with path.open('w',newline='') as f:
     writer=csv.DictWriter(f,list(stale),lineterminator='\\n');writer.writeheader();writer.writerows(data)
   if mode.startswith('index-'):
