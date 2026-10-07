@@ -842,3 +842,8 @@ summary::marker {
     transform: none;
   }
 }
+.revision-card { margin-top: 2rem; }
+.revision-card [data-slot="progress"] { width: 100%; margin: 1rem 0; }
+.revision-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin: 1rem 0; }
+.revision-card textarea { min-height: 9rem; width: 100%; margin: .75rem 0; }
+.revision-card .quiz-meta { flex-wrap: wrap; gap: .5rem; }

@@ -66,6 +66,7 @@ export default async function ChapterPage({
                     : 'Draft sections'}{' '}
                   · chapter incomplete · no human review
                 </p>
+                <p><Link className="action" href={`/revision/${s.id}?chapter=${c.id}`}>Practise this chapter →</Link></p>
                 <h2>Before you begin</h2>
                 <ul>
                   {n.prerequisites.map((x) => (

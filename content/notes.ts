@@ -1,3 +1,4 @@
+import englishSpoken from './notes/english-spoken-language.json' with { type: 'json' };
 import englishDirected from './notes/english-directed-writing.json' with { type: 'json' };
 import englishWriting from './notes/english-writing.json' with { type: 'json' };
 import humanDisease from './notes/human-biology-disease.json' with { type: 'json' };
@@ -106,6 +107,7 @@ export const notes: ChapterNotes[] = [
   english,
   englishDirected,
   englishWriting,
+  englishSpoken,
   mathematics,
   mathematicsGeometry,
 ] as ChapterNotes[];

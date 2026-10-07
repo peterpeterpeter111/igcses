@@ -5,19 +5,19 @@ export default function QuizPage() {
   return (
     <SiteFrame quiz>
       <main className="quiz-page">
-        <div className="eyebrow">CUSTOM PRACTICE · 80 MARKS</div>
-        <h1>Quiz mode</h1>
-        <p>Choose a subject to see its practice readiness.</p>
+        <div className="eyebrow">PRACTICE ROOM</div>
+        <h1>Practise what you’ve learned</h1>
+        <p>Choose a subject for a short set of lesson exercises. Write your answer, compare with the explanation, and revisit the topics that need work.</p>
         <nav aria-label="Quiz subjects">
           {subjects.map((s) => (
-            <Link className="chapter-row" href={'/coverage/' + s.id} key={s.id}>
+            <Link className="chapter-row" href={'/revision/' + s.id} key={s.id}>
               <strong>{s.title}</strong>
-              <small>Awaiting validated templates →</small>
+              <small>Start chapter practice →</small>
             </Link>
           ))}
         </nav>
         <div className="note">
-          <h2>Question bank under review</h2>
+          <h2>80-mark exam quizzes</h2>
           <p>
             No validated family is active yet. Quizzes will become available
             after the source-linked templates, generated solutions and marking

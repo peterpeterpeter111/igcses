@@ -3,12 +3,13 @@
 Work in progress for six Pearson Edexcel International GCSE linear qualifications: 4HB1, 4BI1, 4CH1, 4PH1, 4EB1 and 4MB1.
 
 ## Current checkpoint
-- Six subject routes and 36 top-level chapter entries, with subject search and transparent coverage pages.
-- Twenty partial source-checked note documents (397 sections), with original examples. No complete chapters or complete syllabus coverage. Reviewed inventories contain 433 parent identities (412 with partial teaching audits) and 1,148 partial local requirements; these are not completion counts.
-- Seven paper/scheme pairs obtained. Mathematics B has 38 detailed parts / 100 marks and a whole-page visual audit, with source discrepancies recorded. Physics has 51 detailed records / 110 marks and a whole-paper inventory. Human Biology has twenty-four partial Q1–Q5 records / 51 marks; its separate visual inventory establishes 42 parts / 90 marks across all 24 question-paper and 12 scheme pages. The remaining 18 parts are indexed only. One English pilot task is detailed; the other obtained pairs retain indexed-only status. Zero whole papers fully processed.
-- D1 schema, session/history routes and tested quiz state/storage contracts. 124 automated tests, including concurrent writes, lost-response recovery, exact repeatable content seeding, ordered note-part integrity and partial-paper/rubric-cap integrity; isolated local Cloudflare D1 verification passes.
-- Six provisional families and six experimental generators (two Physics, three Maths, one English); zero active templates. Six bounded offline markers exist, but live AI generation and examiner-style marking remain deferred. This is not the completed question bank.
-- Sites hosting is configured, but no live website is claimed. Read PROGRESS_CHECKPOINT.md and the newest research/checkpoints file before resuming.
+- Six subject routes and all 36 top-level chapter routes have original teaching content, with subject search, examples, exercises and transparent coverage pages.
+- 36 partial source-checked note documents / 1,056 sections; 796 reviewed numbered identities / 796 partial teaching audits / 2,824 local requirements / 1,354 partial numbered links. English’s six objectives / 41 links are tracked separately; the optional spoken endorsement now has eight original preparation sections without an invented exam AO or numeric grade.
+- Chapter practice is available across all six subjects: temporary ten-question self-assessment sets drawn from original lesson exercises, answer explanations and focused revisits. Written answers remain in the page and are not uploaded or stored; leaving or reloading resets the session. This is separate from the generated exam bank.
+- Seven paper/scheme pairs obtained. Detailed Physics51parts/110marks, Maths38/100, Human Biology42/90, Biology29/65, and one English pilot/2marks. Biology Q6 table, graph restrictions and direction-specific concessions are checked; whole-paper denominator remains unknown. No fully processed papers or complete chapters/points/objectives are claimed.
+- D1 ownership, idempotency, drafts, history and completion-gated private results are tested. 177 automated tests, types/lint, research checks and isolated D1 proof pass for this phase.
+- Seven provisional offline families / zero active exam templates. The fixed 22-question/80-mark generated quiz and live AI marking remain gated until curriculum, generation and marking calibration pass.
+- Sites publication status and continuation details are recorded in the latest checkpoint; preserve both source histories.
 
 ## Local development
 Use Node 24 and npm. Run `npm ci`, then `npm run dev`.

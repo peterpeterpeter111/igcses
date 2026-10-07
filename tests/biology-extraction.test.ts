@@ -9,23 +9,23 @@ import { subjectEvidence, coverageSummary, evidenceHighlights } from '../lib/cov
 
 void test('Biology exposes a detailed subset while keeping private rubrics and whole-paper gates separate', () => {
   const row = subjectEvidence('4BI1').find((r) => r.paperId === extraction.paperId)!;
-  assert.equal(row.extraction?.detailedTasks, 24);
-  assert.equal(row.extraction?.originalMarks, 54);
+  assert.equal(row.extraction?.detailedTasks, 29);
+  assert.equal(row.extraction?.originalMarks, 65);
   assert.equal(row.extraction?.expectedTasks, null);
   assert.equal(row.extraction?.wholePageAudit, false);
   assert.equal(row.index, null);
-  assert.deepEqual(row.extraction?.reviewedQuestions, ['1', '2', '3', '4', '5']);
-  assert.equal(row.extraction?.questionPaperPages, 13);
-  assert.equal(row.extraction?.markSchemePages, 11);
+  assert.deepEqual(row.extraction?.reviewedQuestions, ['1', '2', '3', '4', '5', '6']);
+  assert.equal(row.extraction?.questionPaperPages, 16);
+  assert.equal(row.extraction?.markSchemePages, 13);
   assert.equal(coverageSummary().find((r) => r.subject.code === '4BI1')?.fullyProcessed, 0);
-  assert.equal(evidenceHighlights.biologyDetailedParts, 24);
+  assert.equal(evidenceHighlights.biologyDetailedParts, 29);
   const summary = JSON.stringify(row);
-  for (const hidden of ['sourceChain', 'numericScoring', 'pairScoring', 'eligibleCriterionIds', 'sourceFoodWeb', 'sourceFlower', 'sourceComparisonPolicy', 'sourceTraitData', 'answerLabel', 'percentageScoring', 'sourceTemporalConcessions', 'sourceEmissionsGraph']) {
+  for (const hidden of ['sourceChain', 'numericScoring', 'pairScoring', 'eligibleCriterionIds', 'sourceFoodWeb', 'sourceFlower', 'sourceComparisonPolicy', 'sourceTraitData', 'answerLabel', 'percentageScoring', 'sourceTemporalConcessions', 'sourceEmissionsGraph', 'graphScoring', 'directionScoring', 'sourcePondweedExperiment']) {
     assert.ok(!summary.includes(hidden), hidden);
   }
   assert.equal(extraction.paperStage, 'indexed');
   assert.equal(extraction.marksReconciled, false);
-  assert.equal(extraction.tasks.reduce((sum, t) => sum + t.originalMarks, 0), 54);
+  assert.equal(extraction.tasks.reduce((sum, t) => sum + t.originalMarks, 0), 65);
   for (const [ref, hash] of [[extraction.rawManifestRef, extraction.rawManifestSha256], [extraction.coverReviewRef, extraction.coverReviewSha256]]) {
     assert.equal(createHash('sha256').update(readFileSync(ref)).digest('hex'), hash);
   }
@@ -172,6 +172,20 @@ mutations={
  'temporal-concession':lambda m:m['tasks'][23]['sourceTemporalConcessions'].update(publishedGuidance=[]),
  'invented-final-year':lambda m:m['sourceEmissionsGraph'].update(tailEndYearVerified=2023),
  'graph-reuse-promotion':lambda m:m['tasks'][23]['sourceQualification'].update(generatedUse='ready'),
+ 'pondweed-cell':lambda m:m['sourcePondweedExperiment']['countsPerMinute'][0].__setitem__(0,21),
+ 'pondweed-mean':lambda m:m['tasks'][27]['sourceExperimentData']['printedMeansPerMinute'].__setitem__(0,20),
+ 'photosynthesis-gas':lambda m:m['tasks'][24]['scoringRule'].update(answerLabel='A'),
+ 'photosynthesis-site':lambda m:m['tasks'][25]['scoringRule'].update(answerLabel='B'),
+ 'control-cap':lambda m:m['tasks'][26]['sourceControlPolicy'].update(maximum=2),
+ 'grid-size':lambda m:m['tasks'][27]['graphScoring'].update(yMinimumLargeSquares=2),
+ 'all-three-series':lambda m:m['tasks'][27]['graphScoring']['plottingCredit'].update(noCreditIfAllThreeCountSeriesPlotted=False),
+ 'extrapolated-zero':lambda m:m['tasks'][27]['graphScoring']['plottingCredit'].update(noCreditIfExtrapolatedRateToZero=False),
+ 'bar-chart':lambda m:m['tasks'][27]['graphScoring']['barChart'].update(lineCredit=1),
+ 'graph-units':lambda m:m['tasks'][27]['graphScoring'].update(requireBothUnits=False),
+ 'explanation-cap':lambda m:m['tasks'][28]['scoringRule'].update(selectionLimit=4),
+ 'direction-concession':lambda m:m['tasks'][28]['directionScoring'].update(converseAcceptedCriterionIds=[]),
+ 'oxygen-only':lambda m:m['tasks'][28]['directionScoring'].update(oxygenRequiredForGasPoint=False),
+ 'light-alone':lambda m:m['tasks'][28]['directionScoring'].update(lessLightAloneCredit=True),
 
 }
 for name,mutate in mutations.items():
@@ -182,7 +196,7 @@ for name,mutate in mutations.items():
  assert all(p.read_bytes()==data for p,data in before.items()),name+' changed a ledger table'
 print(json.dumps({'rejected':len(mutations),'tables':len(outputs)}))
 `], { encoding: 'utf8' }));
-  assert.equal(proof.rejected, 63);
+  assert.equal(proof.rejected, 77);
   assert.equal(proof.tables, 4);
 });
 
@@ -275,8 +289,8 @@ void test('Emissions percentage keeps source final-credit override and two parti
   assert.deepEqual(t.criteria.map((c) => c.marks), [0, 0]);
   assert.deepEqual(t.syllabusMappings, []);
   assert.equal(p.recognitionStatus, 'not-implemented');
-  assert.equal(skills.skills.length, 6);
-  assert.equal(skills.taskMappings.length, 3);
+  assert.equal(skills.skills.length, 7);
+  assert.equal(skills.taskMappings.length, 4);
 });
 
 void test('Emissions commentary keeps five-of-eight source credit and after-2020 concessions without inventing the tail year', () => {
@@ -295,4 +309,21 @@ void test('Emissions commentary keeps five-of-eight source credit and after-2020
   const greenhouse = extraction.tasks.find((task) => task.questionPath === '5.a.ii')!;
   assert.equal(greenhouse.syllabusMappings[0].kind, 'supporting');
   assert.equal(greenhouse.sourceQualification?.generatedUse, 'blocked-until-natural-enhanced-scope-and-response-calibration');
+});
+
+void test('Pondweed table retains supplied means and graph/explanation credit restrictions', () => {
+  const data = extraction.sourcePondweedExperiment;
+  assert.deepEqual(data.distanceCm, [2, 4, 6, 8, 10, 12]);
+  const rounded = data.countsPerMinute.map((row) => Math.round(row.reduce((sum, x) => sum + x, 0) / row.length));
+  assert.deepEqual(rounded, data.printedMeansPerMinute);
+  assert.equal(data.plotSeries, 'printed-mean');
+  const graph = extraction.tasks.find((t) => t.questionPath === '6.b.i')!;
+  assert.equal(graph.graphScoring?.meanRecalculationIsSeparateTask, false);
+  assert.equal(graph.graphScoring?.barChart.lineCredit, 0);
+  const explanation = extraction.tasks.find((t) => t.questionPath === '6.b.ii')!;
+  assert.equal(explanation.criteria.length, 4);
+  assert.equal(explanation.scoringRule.selectionLimit, 3);
+  assert.deepEqual(explanation.directionScoring?.converseAcceptedCriterionIds, [explanation.criteria[1].id, explanation.criteria[2].id]);
+  assert.deepEqual(explanation.directionScoring?.converseRejectedCriterionIds, [explanation.criteria[0].id, explanation.criteria[3].id]);
+  assert.equal(extraction.tasks.filter((t) => t.questionPath.startsWith('6.')).reduce((sum, t) => sum + t.originalMarks, 0), 11);
 });

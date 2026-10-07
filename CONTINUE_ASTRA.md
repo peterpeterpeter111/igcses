@@ -1,5 +1,17 @@
 # Resume the saved project
 
+# Current checkpoint — 7 October 2026, library release prepared
+
+Read `research/checkpoints/2026-10-07-LIBRARY-RELEASE.md` first. This phase continues local `95610d8`; fetched GitHub `f7588e7` matched its tree before edits. Source commit, exact non-force synchronization and Sites publication follow. Preserve both histories, existing interface and current private audience; use no reset.
+
+All 36 chapters now have original teaching notes: 36 partial documents /1,056 sections. Separate lesson practice works across all six subjects with temporary written answers, original explanations and focused revisits. Biology Q6 is visually checked:29 detailed Q1–Q6 parts /65 marks,29 partial numbered mappings, seven mathematical skills. Whole-paper denominator remains unknown. Numbered curriculum totals remain796/796/2,824/1,354; English separately6 objectives/41 links. Zero complete chapters/points/objectives, fully processed papers or active exam templates; seven provisional families. Live AI remains last and unconfigured.
+
+177 tests, types/lint, sixteen research checks, structural evidence, build, public scan124/zero findings and fresh isolated D1 proof pass. The optional English spoken endorsement now has eight original preparation sections. Browser interaction QA was unavailable; local home/practice routes return200. Check the deployment record for a real URL before claiming publication.
+
+Last observed allowance at continuation start:91% five-hour /99% weekly; later refreshes have not returned. No reset used. Save and pause at5% in either applicable window. Task CSV request187,014 bytes leaves7,986 below195,000; check before bulk extraction. Continue whole-paper/historical/AO/experimental audits, curriculum and template calibration before AI. Never promote provisional families to bypass validation.
+
+# Historical preceding checkpoints
+
 # Current checkpoint — 7 October 2026, saved after Biology Q5
 
 Read `research/checkpoints/2026-10-07-SAVED-AFTER-BIOLOGY.md` and `2026-10-07-BIOLOGY-Q5.md` first. Validated source local `abf8de63b4281c1b0f7af8566f02f0f9aef8fb01` /GitHub `ecf9400a7526248b643ee9ae3dfe9614105d4ba5` share fetch-verified tree `03c920e44412ca61f5b38d666b13dc651aa47b0a`. Later documentation sync follows; verify the latest descendant. Preserve both histories/UI; no reset.
