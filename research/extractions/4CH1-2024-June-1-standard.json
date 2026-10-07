@@ -19,12 +19,14 @@
   "paperStage": "indexed",
   "fullyProcessed": false,
   "wholePaperMarks": 110,
-  "wholePaperLeafCount": null,
-  "detailedLeafTasks": 10,
-  "detailedOriginalMarks": 16,
+  "wholePaperLeafCount": 56,
+  "detailedLeafTasks": 22,
+  "detailedOriginalMarks": 38,
   "reviewedQuestionTotals": {
     "1": 7,
-    "2": 9
+    "2": 9,
+    "3": 10,
+    "4": 12
   },
   "reviewedSubsetMarksReconciled": true,
   "marksReconciled": false,
@@ -47,18 +49,55 @@
   "pageAudit": {
     "questionPaper": {
       "visuallyReviewedPages": [
+        1,
+        2,
         3,
         4,
-        5
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
       ],
-      "wholeDocumentReviewed": false
+      "wholeDocumentReviewed": true
     },
     "markScheme": {
       "visuallyReviewedPages": [
+        1,
+        2,
+        3,
         4,
-        5
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
       ],
-      "wholeDocumentReviewed": false
+      "wholeDocumentReviewed": true
     }
   },
   "rawManifestRef": "research/batches/2026-09-08-cross-subject-lower-01.manifest.json",
@@ -94,15 +133,25 @@
       {
         "question": "2",
         "path": "4CH1-2024-June-1-standard/Q2.json"
+      },
+      {
+        "question": "3",
+        "path": "4CH1-2024-June-1-standard/Q3.json"
+      },
+      {
+        "question": "4",
+        "path": "4CH1-2024-June-1-standard/Q4.json"
       }
     ]
   },
   "blockers": [
-    "Q3 onwards remain without detailed extraction; whole-paper leaf denominator and visual inventory are unconfirmed.",
+    "Q5–Q10:34 of56 parts /72 marks remain without detailed extraction; whole structural index is confirmed separately.",
     "Issue 3 September 2024 postdates the sitting; whole historical and current-scope reconciliation remains incomplete.",
     "Official per-leaf AO and whole experimental/mathematical skill allocation remain unreviewed.",
     "Q1 chlorine-test concessions/exclusions and alternative-path dependencies need source-policy and response calibration.",
-    "No calibrated generative family, semantic marker or complete template linkage."
+    "No calibrated generative family, semantic marker or complete template linkage.",
+    "Q3 formula notation, electron-count ECF and isotope subsumption/rounding concessions await source-policy and response calibration.",
+    "Q4 no-ECF formula mass, formula ordering, distillation rejection and criterion-specific bonding exclusions await source-policy/response calibration."
   ],
   "processingNotes": [
     "The existing raw indexed-only manifest and its zero extracted count remain unchanged; this dated overlay records two Q1 parts/seven original marks.",
@@ -111,7 +160,10 @@
     "Cover identity and110-mark allocation were checked previously; whole task/rubric allocation is not reconciled.",
     "Private question partitions keep marking data out of the public metadata module.",
     "Published chlorine-test alternatives, dependent M2, iodide rejection and red-litmus maximum-one concession are source-specific records, not general chemistry rules.",
-    "Q2 adds eight leaves/nine original marks from QP4–5/MS5. The ranking is one mark for the complete sequence, not per letter. Balanced symbol-equation multiples/fractions are source concessions. Source hazard/heat exclusions, reverse reactivity and alternative redox credit partitions remain blocked for semantic/generative calibration. No reaction procedure or performed practical is claimed."
+    "Q2 adds eight leaves/nine original marks from QP4–5/MS5. The ranking is one mark for the complete sequence, not per letter. Balanced symbol-equation multiples/fractions are source concessions. Source hazard/heat exclusions, reverse reactivity and alternative redox credit partitions remain blocked for semantic/generative calibration. No reaction procedure or performed practical is claimed.",
+    "Q3 adds six leaves/ten marks from QP6–7/MS6. The atom has shell populations2,8,2; Z is not an element symbol. Isotope mass numbers are derived from proton plus neutron counts, not supplied directly. M2 subsumes M1 is printed in the isotope subsection only; no such explicit electron-count subsumption is invented. Narrow division-by-12 ECF, table-dependent M4 and worked/no-working credit examples are private source records, not an implemented semantic marker.",
+    "Q4 adds six leaves/twelve marks from QP8–9/MS7. The printed Periodic Table on QP2 supplies C12/H1/N14/O16; QP24 is blank and is not an insert. Correct-result credit without working and the no-ECF policy are recorded privately. Empirical atom order is unrestricted. Fractional distillation is rejected. Melting-point criterion exclusions remain source-specific and do not become invented prerequisite dependencies or a performed practical claim.",
+    "Whole visual structure now reconciles56 leaf parts/110 original marks across24QP/18MS pages. Detailed extraction remains22parts/38marks. Multi-position tables, multi-answer drawings and capped mark-point pools remain single original leaves. Original indexed-only history and zero processed status are unchanged. Full processing still requires source/curriculum/AO/skills and response/template validation."
   ],
   "sourceReactivityTable": {
     "rows": [
@@ -171,5 +223,148 @@
         5
       ]
     }
-  }
+  },
+  "sourceAtomDiagram": {
+    "label": "Z",
+    "labelIsElementSymbol": false,
+    "electronsPerShell": [
+      2,
+      8,
+      2
+    ],
+    "totalElectrons": 12,
+    "occupiedShells": 3,
+    "outerElectrons": 2,
+    "atomsPerMole": {
+      "coefficient": 6.0,
+      "exponent": 23
+    },
+    "sourceRef": {
+      "documentId": "4CH1-2024-June-1-standard:questionPaper",
+      "pdfPages": [
+        6
+      ]
+    }
+  },
+  "sourceIsotopeTable": {
+    "rows": [
+      {
+        "isotope": 1,
+        "protons": 12,
+        "neutrons": 12,
+        "percentageAbundance": 79.0
+      },
+      {
+        "isotope": 2,
+        "protons": 12,
+        "neutrons": 13,
+        "percentageAbundance": 10.0
+      },
+      {
+        "isotope": 3,
+        "protons": 12,
+        "neutrons": 14,
+        "percentageAbundance": 11.0
+      }
+    ],
+    "massNumbersAreGiven": false,
+    "requestedDecimalPlaces": 1,
+    "sourceRef": {
+      "documentId": "4CH1-2024-June-1-standard:questionPaper",
+      "pdfPages": [
+        7
+      ]
+    }
+  },
+  "sourceCaffeineFormula": {
+    "formula": "C8H10N4O2",
+    "atomCounts": {
+      "C": 8,
+      "H": 10,
+      "N": 4,
+      "O": 2
+    },
+    "sourceRef": {
+      "documentId": "4CH1-2024-June-1-standard:questionPaper",
+      "pdfPages": [
+        8
+      ]
+    }
+  },
+  "sourceRelativeAtomicMasses": {
+    "values": {
+      "C": 12,
+      "H": 1,
+      "N": 14,
+      "O": 16
+    },
+    "sourceRef": {
+      "documentId": "4CH1-2024-June-1-standard:questionPaper",
+      "pdfPages": [
+        2
+      ]
+    }
+  },
+  "sourceDistillationApparatus": {
+    "label": "X",
+    "mixture": "caffeine in ethanol",
+    "heatedFlask": true,
+    "waterIn": "lower outlet end",
+    "waterOut": "upper flask end",
+    "sourceRef": {
+      "documentId": "4CH1-2024-June-1-standard:questionPaper",
+      "pdfPages": [
+        8
+      ]
+    }
+  },
+  "sourceMeltingPointTable": {
+    "rows": [
+      {
+        "name": "caffeine",
+        "formula": "C8H10N4O2",
+        "meltingPointC": 235
+      },
+      {
+        "name": "calcium bromide",
+        "formula": "CaBr2",
+        "meltingPointC": 730
+      }
+    ],
+    "calciumBromideStatedIonic": true,
+    "relativeFormulaMassesStatedSimilar": true,
+    "sourceRef": {
+      "documentId": "4CH1-2024-June-1-standard:questionPaper",
+      "pdfPages": [
+        9
+      ]
+    }
+  },
+  "detailedPageAudit": {
+    "questionPaper": {
+      "visuallyReviewedPages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        24
+      ],
+      "wholeDocumentReviewed": false
+    },
+    "markScheme": {
+      "visuallyReviewedPages": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "wholeDocumentReviewed": false
+    }
+  },
+  "wholePaperIndexRef": "research/paper-indexes/4CH1-2024-summer-1c.json"
 }

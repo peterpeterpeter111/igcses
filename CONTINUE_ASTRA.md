@@ -1,3 +1,33 @@
+# Current checkpoint — 7 October 2026, Chemistry whole visual inventory
+
+Read `research/checkpoints/2026-10-07-CHEMISTRY-WHOLE-INVENTORY.md` first. Continued Q4 commit80f0c27. Chemistry now has a separate whole visual index: 56 leaf parts /110 original marks across24QP/18MS pages. Detailed extraction remains22 Q1–Q4 parts /38marks; remaining34parts/72marks pending. No full processing, curriculum or template promotion. Stale Biology index wording repaired; its45/110 detailed totals are unchanged.
+
+206 tests, types/lint,16 research checks, evidence errors=[], build andpublic scan124/zero pass; final wording types/lint/build/public checks also pass. Local browser verifies the structural versus detailed counts. Ledger209tasks/272mappings, notes36partial documents/1,056sections andseven obtained pairs unchanged. No notes/D1 changes. Saved Q3/Q4/index delta needs non-force GitHub sync and exact-source Sites publication; prior owner-private version5 is still live until that succeeds.
+
+Latest46% five-hour /78% weekly; continue above5% in both, checkpoint/pause at5% in either, no reset. Next Chemistry Q5 detailed extraction and current/historical/skills/curriculum/template calibration. Keep AI last. Preserve both histories, indexed-only raw history and existing UI. Desktop local-notes shortcut remains available.
+
+# Historical preceding checkpoints
+
+# Current checkpoint — 7 October 2026, Chemistry Q4
+
+Read `research/checkpoints/2026-10-07-CHEMISTRY-Q4.md` first. Q3 is saved at 24feb81; continued it without discarding work. Chemistry now has 22 detailed Q1–Q4 parts / 38 original marks and 29 partial numbered mappings. Whole-paper denominator and visual inventory remain unconfirmed. Zero fully processed papers, complete chapters/points/objectives or active exam templates. All 204 tests, types/lint, 16 research checks, evidence reconciliation, build and public scan 124 files / zero findings pass. Local browser verifies the counts and unfinished gates.
+
+Ledger: 209 tasks / 272 mappings. Notes remain 36 partial documents / 1,056 sections; no notes/D1 changes. GitHub d4f17b0 mirrors the preceding ec92d72; newer Q3/Q4 need a non-force descendant sync. Existing owner-private Sites version5 publishes earlier 3bdc83d until a newer exact-source deployment succeeds. Desktop local-notes shortcut remains available.
+
+Latest allowances: 53% five-hour / 79% weekly remaining. Continue above5% in both; checkpoint/pause at5% in either, no reset. Next whole Chemistry visual leaf inventory, Q5 details, curriculum and calibrated templates. Preserve both histories, raw indexed-only batches and current UI. Keep AI integration last.
+
+# Historical preceding checkpoints
+
+# Current checkpoint — 7 October 2026, Chemistry Q3
+
+Read `research/checkpoints/2026-10-07-CHEMISTRY-Q3.md` first. Continued clean local ec92d72; GitHub d4f17b0 already mirrors its exact tree. Chemistry now has 16 detailed Q1–Q3 parts / 26 original marks and 21 partial numbered mappings. The whole-paper denominator remains unconfirmed; zero fully processed papers or active exam templates. Q3 preserves the source-specific notation, ECF, table provenance and rounding rules without transferring isotope subsumption to electron counting.
+
+All 202 tests, types/lint, 16 research checks, evidence reconciliation errors=[], production build and public scan pass. Ledger: 203 tasks / 264 mappings. Notes remain 36 partial documents / 1,056 sections; no curriculum completion promotions or D1 changes. Existing owner-private Sites version 5 publishes earlier 3bdc83d; this newer phase requires non-force sync and exact-source publication. Desktop local notes shortcut remains available.
+
+Both allowances exceed 5% (latest 57% five-hour / 80% weekly); no reset used. Save the phase, then continue Chemistry Q4 and whole visual inventory, curriculum and calibrated templates. Preserve both histories, raw indexed-only batches and current UI. Keep AI integration last; checkpoint and pause at 5% in either window.
+
+# Historical preceding checkpoints
+
 # Current checkpoint — 7 October 2026, Chemistry Q2 published
 
 Read `research/checkpoints/2026-10-07-CHEMISTRY-Q2-PUBLISHED.md` and the Q2 source checkpoint first. Release3bdc83d/GitHub4a81252 share fetch-verified tree0270c0d98c77946b9b9c2ee4f7dea74815da1383. Owner-private Sites version5 successfully publishes that exact source at https://igcses-study.peterwu2311.chatgpt.site . GitHub normal non-force synchronization worked again; no remaining sync/deployment blocker. This later documentation needs its own sync.

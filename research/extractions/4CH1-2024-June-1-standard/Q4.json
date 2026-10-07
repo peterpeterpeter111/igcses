@@ -1,0 +1,837 @@
+{
+  "schemaVersion": 1,
+  "paperId": "4CH1-2024-June-1-standard",
+  "question": "4",
+  "tasks": [
+    {
+      "paperId": "4CH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4CH1-2024-June-1-standard.Q4.a.i",
+      "questionPath": "4.a.i",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        8
+      ],
+      "markSchemePages": [
+        7
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Determine",
+      "requiredKnowledge": [
+        "molecular formula atom counts"
+      ],
+      "contextSummary": "Count all atoms in one caffeine molecule.",
+      "solutionStructure": [
+        "Add the supplied atom counts."
+      ],
+      "markingMethod": "single-numerical-answer",
+      "criteria": [
+        {
+          "id": "4CH1-2024-June-1-standard.Q4.a.i:M1",
+          "marks": 1,
+          "rule": "24 atoms."
+        }
+      ],
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4CH1:issue3:1.32",
+          "kind": "supporting",
+          "currentApplicability": "partial-current-scope",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Read the molecular formula to determine the number of atoms; only partial definition/application scope.",
+          "evidenceRefs": [
+            {
+              "documentId": "4CH1-spec",
+              "pdfPages": [
+                19
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                8
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                7
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "molecular-formula"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            8
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No authoritative per-leaf AO allocation inspected.",
+      "proposedFamilyId": "4CH1.4-a-i",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generator or response recognizer; notation, explanation exclusions and historical/current scope remain incomplete."
+      ],
+      "sourceQualification": {
+        "generatedUse": "blocked-until-formula-distillation-and-bond-explanation-calibration",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            7
+          ]
+        }
+      },
+      "sourceScoring": {
+        "answer": 24
+      },
+      "scoringRule": {
+        "mode": "single-numerical-answer",
+        "maximum": 1,
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            7
+          ]
+        }
+      }
+    },
+    {
+      "paperId": "4CH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4CH1-2024-June-1-standard.Q4.a.ii",
+      "questionPath": "4.a.ii",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        8
+      ],
+      "markSchemePages": [
+        7
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Calculate",
+      "requiredKnowledge": [
+        "relative atomic masses",
+        "relative formula mass"
+      ],
+      "contextSummary": "Calculate caffeine relative formula mass from the given formula and printed Periodic Table.",
+      "solutionStructure": [
+        "Multiply each atom count by its relative atomic mass.",
+        "Add 96+10+56+32 to obtain 194."
+      ],
+      "markingMethod": "method-and-result",
+      "criteria": [
+        {
+          "id": "4CH1-2024-June-1-standard.Q4.a.ii:M1",
+          "marks": 1,
+          "rule": "12×8 +1×10 +14×4 +16×2."
+        },
+        {
+          "id": "4CH1-2024-June-1-standard.Q4.a.ii:M2",
+          "marks": 1,
+          "rule": "194."
+        }
+      ],
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [
+        "Carrying a wrong formula or wrong atomic mass forward despite the explicit no-ECF note."
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4CH1:issue3:1.26",
+          "kind": "primary",
+          "currentApplicability": "partial-current-scope",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Calculate relative formula mass from relative atomic masses.",
+          "evidenceRefs": [
+            {
+              "documentId": "4CH1-spec",
+              "pdfPages": [
+                19
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                8
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                7
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "molecular-formula",
+        "printed-periodic-table"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            8
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            2
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No authoritative per-leaf AO allocation inspected.",
+      "proposedFamilyId": "4CH1.4-a-ii",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generator or response recognizer; notation, explanation exclusions and historical/current scope remain incomplete."
+      ],
+      "sourceQualification": {
+        "generatedUse": "blocked-until-formula-distillation-and-bond-explanation-calibration",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            7
+          ]
+        }
+      },
+      "sourceScoring": {
+        "atomCounts": {
+          "C": 8,
+          "H": 10,
+          "N": 4,
+          "O": 2
+        },
+        "relativeAtomicMasses": {
+          "C": 12,
+          "H": 1,
+          "N": 14,
+          "O": 16
+        },
+        "result": 194,
+        "correctAnswerCredit": 2,
+        "correctAnswerWorkingRequired": false,
+        "ecfAllowed": false,
+        "recognitionStatus": "not-implemented"
+      },
+      "scoringRule": {
+        "mode": "method-and-result",
+        "maximum": 2,
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            7
+          ]
+        }
+      }
+    },
+    {
+      "paperId": "4CH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4CH1-2024-June-1-standard.Q4.a.iii",
+      "questionPath": "4.a.iii",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        8
+      ],
+      "markSchemePages": [
+        7
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Give",
+      "requiredKnowledge": [
+        "simplest whole-number atomic ratio"
+      ],
+      "contextSummary": "Give the empirical formula of caffeine.",
+      "solutionStructure": [
+        "Divide all molecular counts by their common factor 2."
+      ],
+      "markingMethod": "one-of-equivalent-formulae",
+      "criteria": [
+        {
+          "id": "4CH1-2024-June-1-standard.Q4.a.iii:M1",
+          "marks": 1,
+          "rule": "C4H5N2O; atoms may be written in any order."
+        }
+      ],
+      "acceptableAlternatives": [
+        "Equivalent empirical atom counts in any atom order"
+      ],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4CH1:issue3:1.32",
+          "kind": "primary",
+          "currentApplicability": "partial-current-scope",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Infer simplest atomic ratio from the given molecular formula; not an experimental empirical-formula determination.",
+          "evidenceRefs": [
+            {
+              "documentId": "4CH1-spec",
+              "pdfPages": [
+                19
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                8
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                7
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "molecular-formula"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            8
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No authoritative per-leaf AO allocation inspected.",
+      "proposedFamilyId": "4CH1.4-a-iii",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generator or response recognizer; notation, explanation exclusions and historical/current scope remain incomplete."
+      ],
+      "sourceQualification": {
+        "generatedUse": "blocked-until-formula-distillation-and-bond-explanation-calibration",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            7
+          ]
+        }
+      },
+      "sourceScoring": {
+        "formula": "C4H5N2O",
+        "atomCounts": {
+          "C": 4,
+          "H": 5,
+          "N": 2,
+          "O": 1
+        },
+        "atomsInAnyOrderAllowed": true,
+        "recognitionStatus": "not-implemented"
+      },
+      "scoringRule": {
+        "mode": "one-of-equivalent-formulae",
+        "maximum": 1,
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            7
+          ]
+        }
+      }
+    },
+    {
+      "paperId": "4CH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4CH1-2024-June-1-standard.Q4.b.i",
+      "questionPath": "4.b.i",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        8
+      ],
+      "markSchemePages": [
+        7
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Give",
+      "requiredKnowledge": [
+        "separation by boiling and condensation"
+      ],
+      "contextSummary": "Name the separation method illustrated.",
+      "solutionStructure": [
+        "Identify simple distillation from the given apparatus."
+      ],
+      "markingMethod": "one-of-alternatives",
+      "criteria": [
+        {
+          "id": "4CH1-2024-June-1-standard.Q4.b.i:M1",
+          "marks": 1,
+          "rule": "Distillation or simple distillation."
+        }
+      ],
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [
+        "Naming fractional distillation for the shown simple apparatus."
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4CH1:issue3:1.10",
+          "kind": "primary",
+          "currentApplicability": "partial-current-scope",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Identify the simple-distillation technique from a diagram; not a performed practical.",
+          "evidenceRefs": [
+            {
+              "documentId": "4CH1-spec",
+              "pdfPages": [
+                18
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                8
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                7
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "distillation-apparatus"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            8
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No authoritative per-leaf AO allocation inspected.",
+      "proposedFamilyId": "4CH1.4-b-i",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generator or response recognizer; notation, explanation exclusions and historical/current scope remain incomplete."
+      ],
+      "sourceQualification": {
+        "generatedUse": "blocked-until-formula-distillation-and-bond-explanation-calibration",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            7
+          ]
+        }
+      },
+      "sourceScoring": {
+        "accepted": [
+          "distillation",
+          "simple distillation"
+        ],
+        "rejected": [
+          "fractional distillation"
+        ]
+      },
+      "scoringRule": {
+        "mode": "one-of-alternatives",
+        "maximum": 1,
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            7
+          ]
+        }
+      }
+    },
+    {
+      "paperId": "4CH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4CH1-2024-June-1-standard.Q4.b.ii",
+      "questionPath": "4.b.ii",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        8
+      ],
+      "markSchemePages": [
+        7
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Describe",
+      "requiredKnowledge": [
+        "condenser function"
+      ],
+      "contextSummary": "Describe the ethanol vapour behaviour in the labelled apparatus X.",
+      "solutionStructure": [
+        "The vapour is cooled.",
+        "It condenses to liquid ethanol."
+      ],
+      "markingMethod": "two-description-points",
+      "criteria": [
+        {
+          "id": "4CH1-2024-June-1-standard.Q4.b.ii:M1",
+          "marks": 1,
+          "rule": "X/the condenser cools the ethanol vapour."
+        },
+        {
+          "id": "4CH1-2024-June-1-standard.Q4.b.ii:M2",
+          "marks": 1,
+          "rule": "It condenses or forms liquid ethanol."
+        }
+      ],
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4CH1:issue3:1.10",
+          "kind": "primary",
+          "currentApplicability": "partial-current-scope",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Describe the condensation stage of simple distillation.",
+          "evidenceRefs": [
+            {
+              "documentId": "4CH1-spec",
+              "pdfPages": [
+                18
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                8
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                7
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "distillation-apparatus"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            8
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No authoritative per-leaf AO allocation inspected.",
+      "proposedFamilyId": "4CH1.4-b-ii",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generator or response recognizer; notation, explanation exclusions and historical/current scope remain incomplete."
+      ],
+      "sourceQualification": {
+        "generatedUse": "blocked-until-formula-distillation-and-bond-explanation-calibration",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            7
+          ]
+        }
+      },
+      "sourceScoring": {
+        "M1": "cooling of ethanol vapour",
+        "M2Alternatives": [
+          "condensation",
+          "formation of liquid ethanol"
+        ],
+        "maximum": 2,
+        "explicitM2DependencyOnM1": false,
+        "recognitionStatus": "not-implemented"
+      },
+      "scoringRule": {
+        "mode": "two-description-points",
+        "maximum": 2,
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            7
+          ]
+        }
+      }
+    },
+    {
+      "paperId": "4CH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4CH1-2024-June-1-standard.Q4.c",
+      "questionPath": "4.c",
+      "originalMarks": 5,
+      "questionPaperPages": [
+        9
+      ],
+      "markSchemePages": [
+        7
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Explain",
+      "requiredKnowledge": [
+        "giant ionic lattice",
+        "simple molecular structure",
+        "electrostatic attractions",
+        "intermolecular forces",
+        "energy comparison"
+      ],
+      "contextSummary": "Compare the supplied similar-formula-mass substances and explain their different melting points.",
+      "solutionStructure": [
+        "Identify the ionic lattice and attractions in calcium bromide.",
+        "Identify simple molecules and weak intermolecular forces in caffeine.",
+        "Compare the energy required to overcome the relevant attractions, retaining source exclusions."
+      ],
+      "markingMethod": "five-explanation-points",
+      "criteria": [
+        {
+          "id": "4CH1-2024-June-1-standard.Q4.c:M1",
+          "marks": 1,
+          "rule": "Calcium bromide has a giant ionic lattice/structure."
+        },
+        {
+          "id": "4CH1-2024-June-1-standard.Q4.c:M2",
+          "marks": 1,
+          "rule": "Many/strong electrostatic attractions between oppositely charged ions."
+        },
+        {
+          "id": "4CH1-2024-June-1-standard.Q4.c:M3",
+          "marks": 1,
+          "rule": "Caffeine has a simple molecular structure."
+        },
+        {
+          "id": "4CH1-2024-June-1-standard.Q4.c:M4",
+          "marks": 1,
+          "rule": "Weak intermolecular forces or forces between molecules in caffeine."
+        },
+        {
+          "id": "4CH1-2024-June-1-standard.Q4.c:M5",
+          "marks": 1,
+          "rule": "More energy is needed to break the ionic attractions than to overcome the intermolecular forces."
+        }
+      ],
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [
+        "Confusing intermolecular forces with covalent bonds inside the molecules.",
+        "Using the similar relative formula masses as the melting-point explanation."
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4CH1:issue3:1.42",
+          "kind": "primary",
+          "currentApplicability": "partial-current-scope",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Explain high ionic melting point through attractions and energy.",
+          "evidenceRefs": [
+            {
+              "documentId": "4CH1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                9
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                7
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:1.41",
+          "kind": "supporting",
+          "currentApplicability": "partial-current-scope",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Use electrostatic attractions between opposite ions.",
+          "evidenceRefs": [
+            {
+              "documentId": "4CH1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                9
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                7
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:1.47",
+          "kind": "supporting",
+          "currentApplicability": "partial-current-scope",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Contrast weaker intermolecular attractions in a simple molecular substance.",
+          "evidenceRefs": [
+            {
+              "documentId": "4CH1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                9
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                7
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "melting-point-comparison-table"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            9
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No authoritative per-leaf AO allocation inspected.",
+      "proposedFamilyId": "4CH1.4-c",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generator or response recognizer; notation, explanation exclusions and historical/current scope remain incomplete."
+      ],
+      "sourceQualification": {
+        "generatedUse": "blocked-until-formula-distillation-and-bond-explanation-calibration",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            7
+          ]
+        }
+      },
+      "sourceScoring": {
+        "maximum": 5,
+        "M1": "giant ionic lattice/structure in calcium bromide",
+        "M2": "many/strong electrostatic attractions between oppositely charged ions",
+        "M2Allowed": [
+          "many/strong ionic bonds"
+        ],
+        "M2NoCreditIf": [
+          "covalent bonds",
+          "intermolecular forces"
+        ],
+        "M3": "simple molecular structure in caffeine",
+        "M3Allowed": [
+          "simple covalent structure"
+        ],
+        "M4": "weak intermolecular forces/weak forces between molecules",
+        "M4Rejected": [
+          "weak forces between bonds"
+        ],
+        "M5": "more energy to break ionic electrostatic attractions than overcome caffeine intermolecular forces",
+        "M5NoCreditIf": [
+          "breaking covalent bonds",
+          "incorrect bonds"
+        ],
+        "explicitCriterionDependencies": false,
+        "recognitionStatus": "not-implemented"
+      },
+      "scoringRule": {
+        "mode": "five-explanation-points",
+        "maximum": 5,
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            7
+          ]
+        }
+      }
+    }
+  ]
+}

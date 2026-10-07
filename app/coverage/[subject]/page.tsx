@@ -108,7 +108,7 @@ export default async function SubjectCoverage({
                 inventory: {r.index.visualTasks} parts and{' '}
                 {r.index.reconciledMarks} marks reconciled across all{' '}
                 {r.index.questionPaperPages} paper pages{r.index.hasEquationBooklet ? ' (including the equation booklet)' : ''} and {r.index.markSchemePages} scheme pages.{' '}
-                {r.index.sourceDiscrepancies} source discrepancies recorded for
+                {r.index.sourceDiscrepancies} source {r.index.sourceDiscrepancies === 1 ? 'discrepancy' : 'discrepancies'} recorded for
                 review. The inventory alone does not certify detailed rubric, syllabus
                 or template validation. AI review; no human review.
               </p>

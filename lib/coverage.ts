@@ -8,6 +8,7 @@ import batch from '../research/batches/2026-09-08-cross-subject-lower-01.manifes
 import covers from '../research/reviews/2026-09-09-cover-review.json' with { type: 'json' };
 import physicsExtraction from '../research/extractions/4PH1-2024-June-1-standard.json' with { type: 'json' };
 import humanIndex from '../research/paper-indexes/4HB1-2024-summer-01.json' with { type: 'json' };
+import chemistryIndex from '../research/paper-indexes/4CH1-2024-summer-1c.json' with { type: 'json' };
 import biologyIndex from '../research/paper-indexes/4BI1-2024-summer-1b.json' with { type: 'json' };
 import humanExtraction from '../research/extractions/4HB1-2024-May-01-standard.json' with { type: 'json' };
 import biologyExtraction from '../research/extractions/4BI1-2024-June-1-standard.json' with { type: 'json' };
@@ -160,7 +161,17 @@ export function subjectEvidence(code: string) {
                     markSchemePages: biologyIndex.markSchemeVisualPages.length,
                     sourceDiscrepancies: biologyIndex.sourceDiscrepancies.length,
                   }
-                : null,
+                : r.paperId === chemistryIndex.paperId
+                  ? {
+                      textTasks: null,
+                      hasEquationBooklet: false,
+                      visualTasks: chemistryIndex.indexedLeafCount,
+                      reconciledMarks: chemistryIndex.indexedOriginalMarks,
+                      questionPaperPages: chemistryIndex.questionPaperVisualPages.length,
+                      markSchemePages: chemistryIndex.markSchemeVisualPages.length,
+                      sourceDiscrepancies: chemistryIndex.sourceDiscrepancies.length,
+                    }
+                  : null,
         extraction: detail
           ? {
               detailedTasks: detail.detailedLeafTasks,
