@@ -1,3 +1,13 @@
+# Current checkpoint — 7 October 2026, Chemistry organic summary repair
+
+Read `research/checkpoints/2026-10-07-CHEMISTRY-ORGANIC-SUMMARIES.md` and `2026-10-07-CHEMISTRY-DETAILED-PUBLISHED.md` first. Detailed Chemistry extraction is saved atd833a00: all56 parts/110 marks,83 partial task mappings. GitHub3e404f6 exactly mirrors that tree; owner-private Sites version7 successfully publishes it. This newer three-summary repair and publication record need non-force sync/publication.
+
+218 tests, types/lint,16 research checks, evidence errors=[], build/public124 files/zero findings pass. Summaries for4.3/4.6/4.12 now reflect the full named terms, reaction classes and complete/incomplete combustion scope. Existing detailed audit clauses/teaching links already cover these topics partially, so no counts are increased. Ledger243 tasks/326 mappings;796 reviewed parent identities/2,824 local requirements/1,354 partial teaching links plus English6objectives/41links. Notes36 partial documents/1,056 sections, seven obtained pairs. Zero complete curriculum items, fully processed papers, active exam templates or live AI.
+
+Latest9% five-hour/72% weekly remaining. Finish saved sync/publication then checkpoint/pause at5%; no reset. Keep AI last. Next substantive phase: whole Chemistry historical/current-scope and AO/experimental/math-skills audit, drawing/semantic calibration, cross-subject curriculum completion and validated templates. Preserve raw manifests, both histories and current UI. Desktop local notes shortcut remains available.
+
+# Historical preceding checkpoints
+
 # Current checkpoint — 7 October 2026, Chemistry Q10
 
 Read `research/checkpoints/2026-10-07-CHEMISTRY-Q10.md` first. Continueddb66a7f. Chemistry now has detailed source records for all56 Q1–Q10 parts /110 original marks and83 partial numbered task mappings. Whole visual index remains56/110. Detailed extraction is complete for this one obtained pair; whole processing, historical/current-scope, AO/experimental/skills and calibrated templates remain incomplete. Zero fully processed papers, complete curriculum items or active exam templates.

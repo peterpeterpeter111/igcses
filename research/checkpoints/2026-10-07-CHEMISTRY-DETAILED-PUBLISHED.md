@@ -1,0 +1,11 @@
+# Chemistry detailed extraction published — 7 October 2026
+
+All56 detailed Chemistry parts/110 marks are saved at locald833a0000627775d2a2dc0f031960f2ece19e307. GitHubmain3e404f6d155fc4845b233f7455462eb04b5613d2 is a non-force descendant of02f0d15 and exactly matches local tree7a04443d4fe1a0156216632917cc3531c2d75997. Fetch/tree/ancestry/clean-worktree proof saved in ignored work/github-sync/oct7-chemistry-all-detail/verified.json. Both histories preserved.
+
+Owner-private Sites version7 publishes exactlyd833a00. VersionID:appgprj_6a9fb37ec9b48191a33eada1843b3a8f~appgver_73bdc4f79120819193f3ebee8e8e33e1. DeploymentID:appgdep_6ac67a5e2b38819185c345cae370ae8c. Native status succeeded/no failure at2026-10-07T16:59:39.856464+00:00. URL:https://igcses-study.peterwu2311.chatgpt.site. Audience unchanged; automations unchanged. No AI secrets created/exposed.
+
+Archive:work/chemistry-all-detail-d833a00.tar.gz; SHA256:5b1a2780281016f3564747c74a84085ef5253229590af91cd8c6fe4639d11e99,218 files/7,772,160 bytes. Native version lookup verifies commit/archive provenance. Build/public scan reuse matches unchanged source;218 application tests, types/lint,16 research checks and evidence errors=[] passed before publication. No D1/schema/seed changes, so previous isolated D1 proof applies. Native hosting verification does not establish full production browser/D1 QA.
+
+Local browser verifies56/56 detailed parts/110 marks and zero fully processed papers, with remaining processing gaps retained. Screenshot:work/chemistry-all-detail-local-proof.png. This one pair's detailed extraction completion is not full syllabus, all-paper or template completion. Zero active exam templates/fully processed papers/complete chapters/points/objectives/live AI. Notes36 partial documents/1,056 sections, seven obtained pairs, ledger243 tasks/326 mappings unchanged.
+
+Latest13% five-hour/73% weekly remaining. Continue above5% in both, checkpoint/pause at5%, no reset. Next narrow organic parent-summary repair and curriculum/scope/skills/template calibration. Source notes/coverage remain partial. Desktop IGCSE Notes.command remains available. This new publication record is a documentation delta to sync later, not a change to the published application.
