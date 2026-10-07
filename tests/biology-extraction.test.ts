@@ -10,24 +10,24 @@ import { subjectEvidence, coverageSummary, evidenceHighlights } from '../lib/cov
 
 void test('Biology exposes a detailed subset while keeping private rubrics and whole-paper gates separate', () => {
   const row = subjectEvidence('4BI1').find((r) => r.paperId === extraction.paperId)!;
-  assert.equal(row.extraction?.detailedTasks, 33);
-  assert.equal(row.extraction?.originalMarks, 78);
+  assert.equal(row.extraction?.detailedTasks, 45);
+  assert.equal(row.extraction?.originalMarks, 110);
   assert.equal(row.extraction?.expectedTasks, 45);
   assert.equal(row.extraction?.wholePageAudit, true);
   assert.equal(row.index?.visualTasks, 45);
   assert.equal(row.index?.reconciledMarks, 110);
-  assert.deepEqual(row.extraction?.reviewedQuestions, ['1', '2', '3', '4', '5', '6', '7']);
+  assert.deepEqual(row.extraction?.reviewedQuestions, ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']);
   assert.equal(row.extraction?.questionPaperPages, 32);
   assert.equal(row.extraction?.markSchemePages, 24);
   assert.equal(coverageSummary().find((r) => r.subject.code === '4BI1')?.fullyProcessed, 0);
-  assert.equal(evidenceHighlights.biologyDetailedParts, 33);
+  assert.equal(evidenceHighlights.biologyDetailedParts, 45);
   const summary = JSON.stringify(row);
-  for (const hidden of ['sourceChain', 'numericScoring', 'pairScoring', 'eligibleCriterionIds', 'sourceFoodWeb', 'sourceFlower', 'sourceComparisonPolicy', 'sourceTraitData', 'answerLabel', 'percentageScoring', 'sourceTemporalConcessions', 'sourceEmissionsGraph', 'graphScoring', 'directionScoring', 'sourcePondweedExperiment', 'standardFormScoring', 'sourceBloodAltitudeData', 'discussionScoring', 'comparisonScoring']) {
+  for (const hidden of ['sourceChain', 'numericScoring', 'pairScoring', 'eligibleCriterionIds', 'sourceFoodWeb', 'sourceFlower', 'sourceComparisonPolicy', 'sourceTraitData', 'answerLabel', 'percentageScoring', 'sourceTemporalConcessions', 'sourceEmissionsGraph', 'graphScoring', 'directionScoring', 'sourcePondweedExperiment', 'standardFormScoring', 'sourceBloodAltitudeData', 'discussionScoring', 'comparisonScoring', 'sourcePedigree', 'geneticDiagramScoring', 'conditionalDigestionScoring', 'labelledGenotypeScoring', 'sourceDuckweedExperiment', 'groupedControlScoring', 'pairedDistinctionScoring', 'mineralDiscussionScoring', 'experimentalDesignScoring']) {
     assert.ok(!summary.includes(hidden), hidden);
   }
   assert.equal(extraction.paperStage, 'indexed');
   assert.equal(extraction.marksReconciled, false);
-  assert.equal(extraction.tasks.reduce((sum, t) => sum + t.originalMarks, 0), 78);
+  assert.equal(extraction.tasks.reduce((sum, t) => sum + t.originalMarks, 0), 110);
   for (const [ref, hash] of [[extraction.rawManifestRef, extraction.rawManifestSha256], [extraction.coverReviewRef, extraction.coverReviewSha256]]) {
     assert.equal(createHash('sha256').update(readFileSync(ref)).digest('hex'), hash);
   }
@@ -331,13 +331,13 @@ void test('Pondweed table retains supplied means and graph/explanation credit re
   assert.equal(extraction.tasks.filter((t) => t.questionPath.startsWith('6.')).reduce((sum, t) => sum + t.originalMarks, 0), 11);
 });
 
-void test('The whole Biology visual index reconciles all compulsory allocations without promoting remaining extraction', () => {
+void test('The whole Biology visual index reconciles all compulsory allocations without promoting processing', () => {
   assert.equal(index.tasks.length, 45);
   assert.equal(index.tasks.reduce((sum, t) => sum + t.originalMarks, 0), 110);
   assert.deepEqual(index.questionTotals.map((q) => [q.parts, q.marks]), [[6,12],[8,14],[1,7],[5,10],[4,11],[5,11],[4,13],[5,12],[6,14],[1,6]]);
   const pending = index.tasks.filter((t) => t.detailedExtractionStatus === 'pending');
-  assert.equal(pending.length, 12);
-  assert.equal(pending.reduce((sum, t) => sum + t.originalMarks, 0), 32);
+  assert.equal(pending.length, 0);
+  assert.equal(pending.reduce((sum, t) => sum + t.originalMarks, 0), 0);
   assert.equal(index.fullyProcessed, false);
   assert.equal(extraction.marksReconciled, false);
   const proof = JSON.parse(execFileSync('python3', ['-c', `
@@ -357,7 +357,7 @@ mutations={
  'renamed-leaf':lambda m:m['tasks'][29].update(questionPath='7.c'),
  'swapped-pages':lambda m:m['tasks'][29].update(questionPaperPages=[22]),
  'private-rubric':lambda m:m['tasks'][29].update(criteria=[{'marks':3}]),
- 'remaining-promotion':lambda m:m['tasks'][33].update(detailedExtractionStatus='source-checked-subset'),
+ 'detailed-regression':lambda m:m['tasks'][44].update(detailedExtractionStatus='pending'),
  'date-erasure':lambda m:m['paperMatch'].update(dateConflictPreserved=False),
  'unknown-variant':lambda m:m['paperMatch'].update(variant='standard'),
 }
@@ -448,6 +448,214 @@ for name,mutate in mutations.items():
  except ValueError:pass
  else:raise AssertionError(name+' accepted')
  assert all(p.read_bytes()==v for p,v in before.items()),name+' wrote ledger data'
+print(json.dumps({'rejected':len(mutations)}))
+`], { encoding: 'utf8' }));
+  assert.equal(proof.rejected, 14);
+});
+
+void test('The recessive pedigree independently fixes carriers without assigning unknown unaffected genotypes', () => {
+  const pedigree = extraction.sourcePedigree;
+  const people = pedigree.individuals;
+  const outcomes = (a: string, b: string) => [...new Set(a.split('').flatMap((x) => b.split('').map((y) => [x, y].sort().join(''))))];
+  const assignments: Record<string, string>[] = [];
+  function enumerate(i: number, current: Record<string, string>) {
+    if (i === people.length) {
+      if (pedigree.children.every((family) => family.children.every((child) => outcomes(current[family.parents[0]], current[family.parents[1]]).includes(current[child])))) assignments.push(current);
+      return;
+    }
+    const person = people[i];
+    for (const genotype of person.affected ? ['ff'] : ['FF', 'Ff']) enumerate(i + 1, { ...current, [person.id]: genotype });
+  }
+  enumerate(0, {});
+  assert.equal(assignments.length, 4);
+  for (const id of ['A', 'B', 'E', 'F']) assert.deepEqual([...new Set(assignments.map((a) => a[id]))], ['Ff']);
+  for (const id of ['D', 'G']) assert.deepEqual([...new Set(assignments.map((a) => a[id]))].sort(), ['FF', 'Ff']);
+  const cross = extraction.tasks.find((t) => t.questionPath === '8.b.ii')!.geneticDiagramScoring!;
+  const children = cross.gametes[0].flatMap((a) => cross.gametes[1].map((b) => [a, b].sort().join('')));
+  assert.deepEqual(children, ['FF', 'Ff', 'Ff', 'ff']);
+  assert.equal(children.filter((g) => g === 'ff').length, 1);
+  assert.equal(cross.wrongParentFollowThrough.maximum, 1);
+  assert.equal(cross.requireGenotypesAndPhenotypes, true);
+  assert.equal(cross.recognitionStatus, 'not-implemented');
+});
+
+void test('The source digestion concession excludes specific breakdown credit and retains the three-mark cap', () => {
+  const task = extraction.tasks.find((t) => t.questionPath === '8.c.i')!;
+  const policy = task.conditionalDigestionScoring!;
+  const allocated = (indices: number[]) => {
+    const selected = new Set(indices.map((i) => task.criteria[i].id));
+    if (policy.genericConcessionExcludedIfAnyCredited.some((id) => selected.has(id))) selected.delete(policy.genericConcessionCriterionId);
+    return Math.min(policy.maximum, selected.size);
+  };
+  assert.equal(allocated([1, 5]), 1);
+  assert.equal(allocated([2, 5]), 1);
+  assert.equal(allocated([3, 5]), 1);
+  assert.equal(allocated([0, 4, 5]), 3);
+  assert.equal(allocated([0, 1, 2, 3, 4, 5]), 3);
+  assert.equal(policy.genericConcessionRequiresFewerEnzymes, true);
+  assert.equal(policy.recognitionStatus, 'not-implemented');
+  const reproduction = extraction.tasks.find((t) => t.questionPath === '8.c.ii')!;
+  assert.deepEqual(reproduction.reproductionScoring?.ignoredBareTerms, ['no reproduction', 'less reproduction']);
+  assert.equal(reproduction.scoringRule.selectionLimit, 2);
+  assert.equal(extraction.tasks.filter((t) => t.questionPath.startsWith('8.')).reduce((sum, t) => sum + t.originalMarks, 0), 12);
+});
+
+void test('Q8 pedigree, follow-through, conditional-credit and activation mutations fail before writes', () => {
+  const proof = JSON.parse(execFileSync('python3', ['-c', `
+import copy,importlib.util,json,sys
+from pathlib import Path
+sys.path.insert(0,'scripts')
+spec=importlib.util.spec_from_file_location('biology_export','scripts/export-biology-q1.py')
+module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+original=module.read_extraction(Path(module.OVERLAY))
+mutations={
+ 'pedigree-edge':lambda m:m['sourcePedigree']['children'][0]['children'].append('E'),
+ 'affected-status':lambda m:m['tasks'][34]['sourcePedigree']['individuals'][2].update(affected=False),
+ 'definition-concession':lambda m:m['tasks'][33]['definitionScoring']['publishedAlternatives'].pop(),
+ 'label-swap':lambda m:m['tasks'][34]['labelledGenotypeScoring'].update(genotypes=['ff','Ff','Ff']),
+ 'different-symbols':lambda m:m['tasks'][34]['labelledGenotypeScoring'].update(otherSymbolsAccepted=False),
+ 'TE-cap':lambda m:m['tasks'][35]['geneticDiagramScoring']['wrongParentFollowThrough'].update(maximum=2),
+ 'gametes':lambda m:m['tasks'][35]['geneticDiagramScoring'].update(gametes=[['F','F'],['f','f']]),
+ 'phenotypes':lambda m:m['tasks'][35]['geneticDiagramScoring'].update(requireGenotypesAndPhenotypes=False),
+ 'sex-alleles':lambda m:m['tasks'][35]['geneticDiagramScoring'].update(rejectedAlleleSymbolPair=[]),
+ 'unconditional-generic':lambda m:m['tasks'][36]['conditionalDigestionScoring'].update(genericConcessionExcludedIfAnyCredited=[]),
+ 'bare-digestion':lambda m:m['tasks'][36]['conditionalDigestionScoring'].update(genericConcessionRequiresFewerEnzymes=False),
+ 'digestion-cap':lambda m:m['tasks'][36]['scoringRule'].update(selectionLimit=6),
+ 'bare-reproduction':lambda m:m['tasks'][37]['reproductionScoring'].update(ignoredBareTerms=[]),
+ 'recognition':lambda m:m['tasks'][35]['geneticDiagramScoring'].update(recognitionStatus='implemented'),
+ 'activation':lambda m:m['tasks'][36]['sourceQualification'].update(generatedUse='ready'),
+}
+before={p:p.read_bytes() for p in Path('research/ledger/v1').rglob('*') if p.is_file()}
+for name,mutate in mutations.items():
+ m=copy.deepcopy(original);mutate(m)
+ try:module.prepare(overlay=m)
+ except ValueError:pass
+ else:raise AssertionError(name+' accepted')
+ assert all(p.read_bytes()==v for p,v in before.items()),name+' wrote ledger data'
+print(json.dumps({'rejected':len(mutations)}))
+`], { encoding: 'utf8' }));
+  assert.equal(proof.rejected, 15);
+});
+
+void test('Duckweed results preserve omission rows, ordinal colour endpoints and shared control categories', () => {
+  const experiment = extraction.sourceDuckweedExperiment;
+  assert.deepEqual(experiment.results.map((r) => [r.solution, r.leafCount, r.leafSize, r.colourScore]), [['A',13,'large',4],['B',7,'small',2],['C',8,'medium',2],['D',9,'medium',1]]);
+  assert.equal(experiment.results[0].leafCount, Math.max(...experiment.results.map((r) => r.leafCount)));
+  assert.equal(experiment.results[0].colourScore, Math.max(...experiment.results.map((r) => r.colourScore)));
+  assert.ok(experiment.results[0].colourScore < experiment.colourScoreEndpoints.darkGreen);
+  assert.equal(experiment.temperatureSpecified, null);
+  assert.equal(experiment.solutionVolumeSpecified, null);
+  const control = extraction.tasks.find((t) => t.questionPath === '9.a.i')!.groupedControlScoring!;
+  const categories = (terms: string[]) => new Set(control.categories.flatMap((group, i) => group.some((term) => terms.includes(term)) ? [i] : []));
+  assert.equal(categories(['number of plants','size of leaves','health of leaves at start']).size, 1);
+  assert.equal(categories(['light','number of plants']).size, 2);
+  assert.equal(categories(['temperature','amount of solution']).size, 0);
+  assert.equal(control.maximum, 2);
+  const paired = extraction.tasks.find((t) => t.questionPath === '9.b.i')!.pairedDistinctionScoring!;
+  assert.equal(paired.requireQuantitativeAndQualitative, true);
+  assert.equal(paired.independentMarksForEachSide, false);
+  const discussion = extraction.tasks.find((t) => t.questionPath === '9.b.ii')!;
+  assert.equal(discussion.criteria.length, 9);
+  assert.equal(discussion.scoringRule.selectionLimit, 6);
+  assert.deepEqual(discussion.mineralDiscussionScoring?.unmappedPublishedMineralRoles, ['iron']);
+  assert.equal(discussion.mineralDiscussionScoring?.publishedIronAlternative, 'respiration');
+  assert.equal(extraction.tasks.filter((t) => t.questionPath.startsWith('9.')).reduce((sum, t) => sum + t.originalMarks, 0), 14);
+});
+
+void test('Q9 control grouping, paired distinction, mineral scope and source-table mutations are rejected without writes', () => {
+  const proof = JSON.parse(execFileSync('python3', ['-c', `
+import copy,importlib.util,json,sys
+from pathlib import Path
+sys.path.insert(0,'scripts')
+spec=importlib.util.spec_from_file_location('biology_export','scripts/export-biology-q1.py')
+module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+original=module.read_extraction(Path(module.OVERLAY))
+mutations={
+ 'treatment':lambda m:m['sourceDuckweedExperiment']['solutions'][1].update(mineralLacking='magnesium'),
+ 'leaf-count':lambda m:m['tasks'][43]['sourceDuckweedExperiment']['results'][0].update(leafCount=15),
+ 'invented-temperature':lambda m:m['sourceDuckweedExperiment'].update(temperatureSpecified=25),
+ 'control-group':lambda m:m['tasks'][38]['groupedControlScoring']['categories'].append(['size of plant']),
+ 'rejected-control':lambda m:m['tasks'][38]['groupedControlScoring'].update(rejectedBareTerms=[]),
+ 'invented-practical':lambda m:m['tasks'][38]['practicalDemand'].update(officialNumberedMapping='2.23'),
+ 'control-cap':lambda m:m['tasks'][38]['scoringRule'].update(selectionLimit=6),
+ 'independent-variable':lambda m:m['tasks'][41]['independentVariableScoring']['publishedAlternatives'].pop(),
+ 'unpaired-description':lambda m:m['tasks'][42]['pairedDistinctionScoring'].update(requireQuantitativeAndQualitative=False),
+ 'two-description-marks':lambda m:m['tasks'][42]['pairedDistinctionScoring'].update(independentMarksForEachSide=True),
+ 'iron-concession':lambda m:m['tasks'][43]['mineralDiscussionScoring'].update(publishedIronAlternative=None),
+ 'invented-iron-scope':lambda m:m['tasks'][43]['mineralDiscussionScoring'].update(unmappedPublishedMineralRoles=[]),
+ 'colour-endpoint':lambda m:m['tasks'][43]['mineralDiscussionScoring'].update(greenestObservedScore=5),
+ 'discussion-cap':lambda m:m['tasks'][43]['scoringRule'].update(selectionLimit=9),
+ 'activation':lambda m:m['tasks'][43]['sourceQualification'].update(generatedUse='ready'),
+}
+before={p:p.read_bytes() for p in Path('research/ledger/v1').rglob('*') if p.is_file()}
+for name,mutate in mutations.items():
+ m=copy.deepcopy(original);mutate(m)
+ try:module.prepare(overlay=m)
+ except ValueError:pass
+ else:raise AssertionError(name+' accepted')
+ assert all(p.read_bytes()==v for p,v in before.items()),name+' changed ledger data'
+print(json.dumps({'rejected':len(mutations)}))
+`], { encoding: 'utf8' }));
+  assert.equal(proof.rejected, 15);
+});
+
+void test('Crop-yield design preserves six-of-seven categories without an invented numerical optimum or mandatory C gate', () => {
+  const task = extraction.tasks.find((t) => t.questionPath === '10')!;
+  const policy = task.experimentalDesignScoring!;
+  assert.deepEqual(policy.criterionLabels, ['C','O','R','M1','M2','S1','S2']);
+  assert.equal(task.criteria.length, 7);
+  assert.equal(task.scoringRule.selectionLimit, 6);
+  assert.equal(Math.min(task.scoringRule.maximum, task.criteria.slice(1).reduce((sum, c) => sum + c.marks, 0)), 6);
+  assert.deepEqual(policy.mandatoryCriterionIds, []);
+  assert.equal(policy.minimumDifferentCO2Levels, 3);
+  assert.equal(policy.specificConcentrationValuesRequired, false);
+  assert.equal(policy.zeroLevelMandatory, false);
+  assert.equal(policy.repeatEachConcentration, true);
+  assert.equal(policy.specificRepeatNumberRequired, false);
+  assert.deepEqual(policy.rejectedYieldEvidence, ['yield alone','height']);
+  assert.equal(policy.maximumPerControlCategory, 1);
+  assert.equal(policy.controlCategories.length, 2);
+  assert.equal(policy.independentFullSentenceMark, false);
+  assert.equal(policy.verifiedNumericOptimum, null);
+  assert.equal(policy.providedYieldDataset, null);
+  assert.equal(extraction.detailedLeafTasks, index.indexedLeafCount);
+  assert.equal(extraction.detailedOriginalMarks, index.indexedOriginalMarks);
+  assert.equal(extraction.fullyProcessed, false);
+  assert.equal(extraction.marksReconciled, false);
+  assert.equal(extraction.paperStage, 'indexed');
+});
+
+void test('Q10 design source constraints and whole-paper processing promotions reject before writes', () => {
+  const proof = JSON.parse(execFileSync('python3', ['-c', `
+import copy,importlib.util,json,sys
+from pathlib import Path
+sys.path.insert(0,'scripts')
+spec=importlib.util.spec_from_file_location('biology_export','scripts/export-biology-q1.py')
+module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+original=module.read_extraction(Path(module.OVERLAY))
+mutations={
+ 'two-levels':lambda m:m['tasks'][44]['experimentalDesignScoring'].update(minimumDifferentCO2Levels=2),
+ 'numeric-levels':lambda m:m['tasks'][44]['experimentalDesignScoring'].update(specificConcentrationValuesRequired=True),
+ 'mandatory-zero':lambda m:m['tasks'][44]['experimentalDesignScoring'].update(zeroLevelMandatory=True),
+ 'repeat-total-only':lambda m:m['tasks'][44]['experimentalDesignScoring'].update(repeatEachConcentration=False),
+ 'invented-repeats':lambda m:m['tasks'][44]['experimentalDesignScoring'].update(specificRepeatNumberRequired=True),
+ 'height-yield':lambda m:m['tasks'][44]['experimentalDesignScoring'].update(rejectedYieldEvidence=[]),
+ 'mandatory-C':lambda m:m['tasks'][44]['experimentalDesignScoring'].update(mandatoryCriterionIds=[m['tasks'][44]['criteria'][0]['id']]),
+ 'control-overcredit':lambda m:m['tasks'][44]['experimentalDesignScoring'].update(maximumPerControlCategory=3),
+ 'sentence-mark':lambda m:m['tasks'][44]['experimentalDesignScoring'].update(independentFullSentenceMark=True),
+ 'invented-optimum':lambda m:m['tasks'][44]['experimentalDesignScoring'].update(verifiedNumericOptimum=1000),
+ 'seven-credit':lambda m:m['tasks'][44]['scoringRule'].update(selectionLimit=7),
+ 'official-practical':lambda m:m['tasks'][44]['practicalDemand'].update(officialNumberedPracticalMapping='2.23'),
+ 'active':lambda m:m['tasks'][44]['sourceQualification'].update(generatedUse='ready'),
+ 'whole-processed':lambda m:m.update(fullyProcessed=True,paperStage='processed',marksReconciled=True),
+}
+before={p:p.read_bytes() for p in Path('research/ledger/v1').rglob('*') if p.is_file()}
+for name,mutate in mutations.items():
+ m=copy.deepcopy(original);mutate(m)
+ try:module.prepare(overlay=m)
+ except ValueError:pass
+ else:raise AssertionError(name+' accepted')
+ assert all(p.read_bytes()==v for p,v in before.items()),name+' changed ledger data'
 print(json.dumps({'rejected':len(mutations)}))
 `], { encoding: 'utf8' }));
   assert.equal(proof.rejected, 14);

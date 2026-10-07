@@ -15,14 +15,14 @@
   "reviewer": "Codex visual/source review",
   "reviewerType": "agent",
   "humanReviewed": false,
-  "status": "partial-detailed-extraction",
+  "status": "detailed-extraction-processing-review-pending",
   "paperStage": "indexed",
   "paperStageReviewedAt": "2026-10-07",
   "fullyProcessed": false,
   "wholePaperMarks": 110,
   "wholePaperLeafCount": 45,
-  "detailedLeafTasks": 33,
-  "detailedOriginalMarks": 78,
+  "detailedLeafTasks": 45,
+  "detailedOriginalMarks": 110,
   "reviewedQuestionTotals": {
     "1": 12,
     "2": 14,
@@ -30,7 +30,10 @@
     "4": 10,
     "5": 11,
     "6": 11,
-    "7": 13
+    "7": 13,
+    "8": 12,
+    "9": 14,
+    "10": 6
   },
   "reviewedSubsetMarksReconciled": true,
   "marksReconciled": false,
@@ -135,6 +138,7 @@
       22,
       23,
       26,
+      27,
       29,
       30,
       31,
@@ -215,14 +219,17 @@
   },
   "tasks": [],
   "blockers": [
-    "Only Q1–Q7:33 detailed parts /78 marks; whole visual index confirms45 parts /110 marks. Remaining12 parts /32 marks are not detailed.",
+    "All45 parts /110 original marks now have source-detailed records. Whole historical,current-scope,AO/experimental,source-policy,recognition and template checks remain incomplete; this is not a fully processed paper.",
     "Whole historical, skills/AO and paper-to-current-scope reconciliation incomplete.",
     "Printed divisor 35 and tick-context physiological examples require generated-reuse policy.",
     "No calibrated Biology template, response recognition or learner/examiner certification.",
     "Examiner report not obtained.",
     "Q5 time-range concessions, graph-reading tolerance, partial follow-through and natural/enhanced-effect scope remain generated-reuse blockers.",
     "Q6 graph plotting exclusions, grid calibration, supplied means and direction-specific explanation concessions remain generated-reuse blockers.",
-    "Q7 standard-form precision, comparison wording, observational altitude/sample interpretation and published oxygen wording require generated-response calibration."
+    "Q7 standard-form precision, comparison wording, observational altitude/sample interpretation and published oxygen wording require generated-response calibration.",
+    "Q8 recessive-definition concessions, labelled-genotype equivalents, genetic-diagram TE1 cap, conditional digestion exclusion and reproduction response recognition remain uncalibrated.",
+    "Q9 source-evidenced grouped controls, paired data distinction and published iron/nitrate/mineral-role concessions need experimental/response-scope calibration.",
+    "Q10 any-six-of-seven design categories,three unspecified CO2 levels,measurement exclusions and control grouping need generated-design response calibration; no numeric optimum is provided."
   ],
   "processingNotes": [
     "Original indexed-only batch and its zero extracted count are preserved; this separately dated overlay records Q1 progress.",
@@ -248,7 +255,13 @@
     "Explanation has four one-mark source criteria capped at3, with converse accepted only for light-intensity and photosynthesis points. Appendix4 graph plotting skill4C remains separate from numbered content.",
     "Whole structural inventory now visually checks all32 QP and24 MS pages, confirms45 compulsory leaf parts and reconciles ten question totals to110. This is allocation reconciliation only: detailed rubric/scope coverage remains29/65 and marksReconciled stays false. Earlier subset statements are historical observations, not current whole-page limitations.",
     "Q7 adds four source-checked parts /13 marks at QP21–23 and MS16–17; both source totals match13. The complete altitude table is transcribed cell by cell with sex-specific units and sample counts.",
-    "Q7 numerical methods are not independent marking points: standard-form full/partial concessions and percentage difference baseline148 are preserved. Discussion has twelve one-mark alternatives capped at five, including sampling limitations and the1890m-to2270m declines. Current content mappings are partial; Appendix4 standard form and sampling skills are separate."
+    "Q7 numerical methods are not independent marking points: standard-form full/partial concessions and percentage difference baseline148 are preserved. Discussion has twelve one-mark alternatives capped at five, including sampling limitations and the1890m-to2270m declines. Current content mappings are partial; Appendix4 standard form and sampling skills are separate.",
+    "Q8 adds five source-checked parts /12 marks at QP24–25 and MS18–19. Pedigree sexes, affected status, couples and child relationships are privately transcribed; original image is not publicly reproduced.",
+    "Genetic cross preserves parental/gamete/offspring three-component allocation, one-mark incorrect-parent TE cap and genotype-plus-phenotype requirement. Digestion preserves conditional generic credit only if no specific starch/protein/lipid digestion point is awarded; no double credit or semantic recognizer is invented.",
+    "Q9 adds six source-checked parts /14 marks at QP26–29 and MS20–22. Four mineral-omission treatment rows,leaf counts/sizes/ordinal colour codes,initial conditions andfour-week duration are transcribed. Solution volume/temperature are not numerically supplied.",
+    "Published constant-variable categories cap credit at two,with starting plant/leaf number,size andhealth sharing one category. Quantitative and qualitative descriptions are jointly required for one mark. Mineral commentary has nine alternatives capped at six; source iron scope,colour-code endpoint and non-replicated treatment limits remain explicit generated-use blockers.",
+    "Q10 is one six-mark design task,not seven leaf tasks. Seven C/O/R/M1/M2/S1/S2 one-mark source categories are capped at six; control-group alternatives are not independent extra marks. QP30 and MS23 show both Q10 total6 and the110-mark paper allocation.",
+    "All45 original parts/110 marks now have detailed source records. The separate whole visual index remains45/110 and all32/24 pages reviewed. This reconciles detailed allocations only; marksReconciled,humanReviewed andfullyProcessed remain false and paperStage stays indexed until remaining source/scope/template gates are met."
   ],
   "sourceFlower": {
     "labels": {
@@ -451,7 +464,172 @@
       {
         "question": "7",
         "path": "4BI1-2024-June-1-standard/Q7.json"
+      },
+      {
+        "question": "8",
+        "path": "4BI1-2024-June-1-standard/Q8.json"
+      },
+      {
+        "question": "9",
+        "path": "4BI1-2024-June-1-standard/Q9.json"
+      },
+      {
+        "question": "10",
+        "path": "4BI1-2024-June-1-standard/Q10.json"
       }
     ]
+  },
+  "sourcePedigree": {
+    "individuals": [
+      {
+        "id": "A",
+        "sex": "female",
+        "affected": false
+      },
+      {
+        "id": "B",
+        "sex": "male",
+        "affected": false
+      },
+      {
+        "id": "C",
+        "sex": "female",
+        "affected": true
+      },
+      {
+        "id": "D",
+        "sex": "male",
+        "affected": false
+      },
+      {
+        "id": "E",
+        "sex": "female",
+        "affected": false
+      },
+      {
+        "id": "F",
+        "sex": "male",
+        "affected": false
+      },
+      {
+        "id": "G",
+        "sex": "female",
+        "affected": false
+      },
+      {
+        "id": "H",
+        "sex": "male",
+        "affected": true
+      }
+    ],
+    "couples": [
+      [
+        "A",
+        "B"
+      ],
+      [
+        "E",
+        "F"
+      ]
+    ],
+    "children": [
+      {
+        "parents": [
+          "A",
+          "B"
+        ],
+        "children": [
+          "C",
+          "D",
+          "F"
+        ]
+      },
+      {
+        "parents": [
+          "E",
+          "F"
+        ],
+        "children": [
+          "G",
+          "H"
+        ]
+      }
+    ],
+    "inheritance": "recessive",
+    "sourceRef": {
+      "documentId": "4BI1-2024-June-1-standard:questionPaper",
+      "pdfPages": [
+        24
+      ]
+    }
+  },
+  "sourceDuckweedExperiment": {
+    "plant": "duckweed",
+    "solutions": [
+      {
+        "label": "A",
+        "mineralLacking": null
+      },
+      {
+        "label": "B",
+        "mineralLacking": "nitrate"
+      },
+      {
+        "label": "C",
+        "mineralLacking": "magnesium"
+      },
+      {
+        "label": "D",
+        "mineralLacking": "iron"
+      }
+    ],
+    "plantsPerJar": 5,
+    "initialPlantConditions": [
+      "same number of leaves",
+      "same size",
+      "healthy"
+    ],
+    "allJarsPlasticFilmCovered": true,
+    "lighting": "sunlight",
+    "durationWeeks": 4,
+    "solutionVolumeSpecified": null,
+    "temperatureSpecified": null,
+    "results": [
+      {
+        "solution": "A",
+        "leafCount": 13,
+        "leafSize": "large",
+        "colourScore": 4
+      },
+      {
+        "solution": "B",
+        "leafCount": 7,
+        "leafSize": "small",
+        "colourScore": 2
+      },
+      {
+        "solution": "C",
+        "leafCount": 8,
+        "leafSize": "medium",
+        "colourScore": 2
+      },
+      {
+        "solution": "D",
+        "leafCount": 9,
+        "leafSize": "medium",
+        "colourScore": 1
+      }
+    ],
+    "colourScoreEndpoints": {
+      "white": 0,
+      "darkGreen": 5
+    },
+    "sourceRef": {
+      "documentId": "4BI1-2024-June-1-standard:questionPaper",
+      "pdfPages": [
+        26,
+        28
+      ]
+    }
   }
 }

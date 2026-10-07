@@ -1,0 +1,1305 @@
+{
+  "schemaVersion": 1,
+  "paperId": "4BI1-2024-June-1-standard",
+  "question": "9",
+  "tasks": [
+    {
+      "paperId": "4BI1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "generalSchemePages": [
+        3
+      ],
+      "commandWordStatus": "source-checked-short-label",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO marks inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "taskId": "4BI1-2024-June-1-standard.Q9.a.i",
+      "questionPath": "9.a.i",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        26
+      ],
+      "markSchemePages": [
+        20
+      ],
+      "commandWord": "State",
+      "requiredKnowledge": [
+        "source-evidenced controls"
+      ],
+      "contextSummary": "Give two variables kept constant in the stated experiment.",
+      "solutionStructure": [
+        "Apply distinct source criteria to the stated duckweed experiment and table; retain source caps and qualifications."
+      ],
+      "markingMethod": "any-distinct",
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [],
+      "stimulusTypes": [
+        "experiment"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            26
+          ]
+        }
+      ],
+      "proposedFamilyId": "4BI1.plant-minerals.9-a-i",
+      "blockers": [
+        "Candidate only; semantic recognition/custom2/4/6-mark adaptation remain uncalibrated.",
+        "Whole historical, experimental/AO and source-policy review remains incomplete."
+      ],
+      "criteria": [
+        {
+          "id": "4BI1-2024-June-1-standard.Q9.a.i:point-1",
+          "marks": 1,
+          "rule": "Same sunlight/light."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q9.a.i:point-2",
+          "marks": 1,
+          "rule": "Same volume or mass of solution."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q9.a.i:point-3",
+          "marks": 1,
+          "rule": "Same starting number of plants/leaves, size of leaves/plant or health of leaves."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q9.a.i:point-4",
+          "marks": 1,
+          "rule": "Same species/duckweed."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q9.a.i:point-5",
+          "marks": 1,
+          "rule": "Same time/duration."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q9.a.i:point-6",
+          "marks": 1,
+          "rule": "All jars covered."
+        }
+      ],
+      "scoringRule": {
+        "mode": "any-distinct",
+        "maximum": 2,
+        "eligibleCriterionIds": [
+          "4BI1-2024-June-1-standard.Q9.a.i:point-1",
+          "4BI1-2024-June-1-standard.Q9.a.i:point-2",
+          "4BI1-2024-June-1-standard.Q9.a.i:point-3",
+          "4BI1-2024-June-1-standard.Q9.a.i:point-4",
+          "4BI1-2024-June-1-standard.Q9.a.i:point-5",
+          "4BI1-2024-June-1-standard.Q9.a.i:point-6"
+        ],
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            20
+          ]
+        },
+        "selectionLimit": 2,
+        "creditPerCriterion": 1
+      },
+      "syllabusMappings": [],
+      "groupedControlScoring": {
+        "maximum": 2,
+        "maximumPerCategory": 1,
+        "categories": [
+          [
+            "sunlight",
+            "light"
+          ],
+          [
+            "volume of solution",
+            "mass of solution"
+          ],
+          [
+            "number of plants",
+            "number of leaves",
+            "size of leaves",
+            "size of plant",
+            "health of leaves at start",
+            "amount of leaves"
+          ],
+          [
+            "same species",
+            "duckweed"
+          ],
+          [
+            "time",
+            "duration"
+          ],
+          [
+            "all jars covered"
+          ]
+        ],
+        "rejectedBareTerms": [
+          "temperature",
+          "amount of solution"
+        ],
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            20
+          ]
+        }
+      },
+      "practicalDemand": {
+        "officialNumberedMapping": null,
+        "scope": "source-evidenced-constant-variables",
+        "wholeExperimentalScopeReview": "pending"
+      },
+      "sourceQualification": {
+        "note": "The task asks what was held constant in this source method. Temperature and bare amount of solution are rejected; plant number,leaf number,size andhealth share one published category. This does not prohibit temperature control in a fresh experiment.",
+        "generatedUse": "blocked-until-source-control-category-calibration",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            20
+          ]
+        }
+      },
+      "sourceDuckweedExperiment": {
+        "plant": "duckweed",
+        "solutions": [
+          {
+            "label": "A",
+            "mineralLacking": null
+          },
+          {
+            "label": "B",
+            "mineralLacking": "nitrate"
+          },
+          {
+            "label": "C",
+            "mineralLacking": "magnesium"
+          },
+          {
+            "label": "D",
+            "mineralLacking": "iron"
+          }
+        ],
+        "plantsPerJar": 5,
+        "initialPlantConditions": [
+          "same number of leaves",
+          "same size",
+          "healthy"
+        ],
+        "allJarsPlasticFilmCovered": true,
+        "lighting": "sunlight",
+        "durationWeeks": 4,
+        "solutionVolumeSpecified": null,
+        "temperatureSpecified": null,
+        "results": [
+          {
+            "solution": "A",
+            "leafCount": 13,
+            "leafSize": "large",
+            "colourScore": 4
+          },
+          {
+            "solution": "B",
+            "leafCount": 7,
+            "leafSize": "small",
+            "colourScore": 2
+          },
+          {
+            "solution": "C",
+            "leafCount": 8,
+            "leafSize": "medium",
+            "colourScore": 2
+          },
+          {
+            "solution": "D",
+            "leafCount": 9,
+            "leafSize": "medium",
+            "colourScore": 1
+          }
+        ],
+        "colourScoreEndpoints": {
+          "white": 0,
+          "darkGreen": 5
+        },
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            26,
+            28
+          ]
+        }
+      }
+    },
+    {
+      "paperId": "4BI1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "generalSchemePages": [
+        3
+      ],
+      "commandWordStatus": "source-checked-short-label",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO marks inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "taskId": "4BI1-2024-June-1-standard.Q9.a.ii",
+      "questionPath": "9.a.ii",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        27
+      ],
+      "markSchemePages": [
+        20
+      ],
+      "commandWord": "Explain",
+      "requiredKnowledge": [
+        "experimental control",
+        "mineral sufficiency"
+      ],
+      "contextSummary": "Explain why the comparison uses complete mineral solution rather than distilled water.",
+      "solutionStructure": [
+        "Apply distinct source criteria to the stated duckweed experiment and table; retain source caps and qualifications."
+      ],
+      "markingMethod": "any-distinct",
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [],
+      "stimulusTypes": [
+        "experiment"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            26,
+            27
+          ]
+        }
+      ],
+      "proposedFamilyId": "4BI1.plant-minerals.9-a-ii",
+      "blockers": [
+        "Candidate only; semantic recognition/custom2/4/6-mark adaptation remain uncalibrated.",
+        "Whole historical, experimental/AO and source-policy review remains incomplete."
+      ],
+      "criteria": [
+        {
+          "id": "4BI1-2024-June-1-standard.Q9.a.ii:point-1",
+          "marks": 1,
+          "rule": "Complete solution contains all minerals and permits normal/ideal growth."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q9.a.ii:point-2",
+          "marks": 1,
+          "rule": "Distilled water lacks all minerals,so plants would not grow normally."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q9.a.ii:point-3",
+          "marks": 1,
+          "rule": "Differences can then be attributed to the one missing mineral in each treatment."
+        }
+      ],
+      "scoringRule": {
+        "mode": "any-distinct",
+        "maximum": 2,
+        "eligibleCriterionIds": [
+          "4BI1-2024-June-1-standard.Q9.a.ii:point-1",
+          "4BI1-2024-June-1-standard.Q9.a.ii:point-2",
+          "4BI1-2024-June-1-standard.Q9.a.ii:point-3"
+        ],
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            20
+          ]
+        },
+        "selectionLimit": 2,
+        "creditPerCriterion": 1
+      },
+      "syllabusMappings": [
+        {
+          "pointId": "4BI1:issue3:2.22",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Selected mineral-necessity context; no complete nitrate/magnesium role or iron content coverage.",
+          "evidenceRefs": [
+            {
+              "documentId": "4BI1-spec",
+              "pdfPages": [
+                21
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                27
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                20
+              ]
+            }
+          ]
+        }
+      ],
+      "controlComparisonScoring": {
+        "criterionPoolSize": 3,
+        "maximum": 2,
+        "completeSolutionIsComparison": true,
+        "distilledWaterLacksAllMinerals": true,
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            20
+          ]
+        }
+      },
+      "sourceDuckweedExperiment": {
+        "plant": "duckweed",
+        "solutions": [
+          {
+            "label": "A",
+            "mineralLacking": null
+          },
+          {
+            "label": "B",
+            "mineralLacking": "nitrate"
+          },
+          {
+            "label": "C",
+            "mineralLacking": "magnesium"
+          },
+          {
+            "label": "D",
+            "mineralLacking": "iron"
+          }
+        ],
+        "plantsPerJar": 5,
+        "initialPlantConditions": [
+          "same number of leaves",
+          "same size",
+          "healthy"
+        ],
+        "allJarsPlasticFilmCovered": true,
+        "lighting": "sunlight",
+        "durationWeeks": 4,
+        "solutionVolumeSpecified": null,
+        "temperatureSpecified": null,
+        "results": [
+          {
+            "solution": "A",
+            "leafCount": 13,
+            "leafSize": "large",
+            "colourScore": 4
+          },
+          {
+            "solution": "B",
+            "leafCount": 7,
+            "leafSize": "small",
+            "colourScore": 2
+          },
+          {
+            "solution": "C",
+            "leafCount": 8,
+            "leafSize": "medium",
+            "colourScore": 2
+          },
+          {
+            "solution": "D",
+            "leafCount": 9,
+            "leafSize": "medium",
+            "colourScore": 1
+          }
+        ],
+        "colourScoreEndpoints": {
+          "white": 0,
+          "darkGreen": 5
+        },
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            26,
+            28
+          ]
+        }
+      }
+    },
+    {
+      "paperId": "4BI1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "generalSchemePages": [
+        3
+      ],
+      "commandWordStatus": "source-checked-short-label",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO marks inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "taskId": "4BI1-2024-June-1-standard.Q9.a.iii",
+      "questionPath": "9.a.iii",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        27
+      ],
+      "markSchemePages": [
+        21
+      ],
+      "commandWord": "Explain",
+      "requiredKnowledge": [
+        "photosynthesis",
+        "glucose and growth"
+      ],
+      "contextSummary": "Explain why the jars are kept in sunlight.",
+      "solutionStructure": [
+        "Apply distinct source criteria to the stated duckweed experiment and table; retain source caps and qualifications."
+      ],
+      "markingMethod": "any-distinct",
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [],
+      "stimulusTypes": [
+        "experiment"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            26,
+            27
+          ]
+        }
+      ],
+      "proposedFamilyId": "4BI1.plant-minerals.9-a-iii",
+      "blockers": [
+        "Candidate only; semantic recognition/custom2/4/6-mark adaptation remain uncalibrated.",
+        "Whole historical, experimental/AO and source-policy review remains incomplete."
+      ],
+      "criteria": [
+        {
+          "id": "4BI1-2024-June-1-standard.Q9.a.iii:point-1",
+          "marks": 1,
+          "rule": "For photosynthesis."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q9.a.iii:point-2",
+          "marks": 1,
+          "rule": "To produce glucose, including for respiration."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q9.a.iii:point-3",
+          "marks": 1,
+          "rule": "To permit growth or normal growth."
+        }
+      ],
+      "scoringRule": {
+        "mode": "any-distinct",
+        "maximum": 2,
+        "eligibleCriterionIds": [
+          "4BI1-2024-June-1-standard.Q9.a.iii:point-1",
+          "4BI1-2024-June-1-standard.Q9.a.iii:point-2",
+          "4BI1-2024-June-1-standard.Q9.a.iii:point-3"
+        ],
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            21
+          ]
+        },
+        "selectionLimit": 2,
+        "creditPerCriterion": 1
+      },
+      "syllabusMappings": [
+        {
+          "pointId": "4BI1:issue3:2.18",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Selected photosynthesis/glucose/growth reasoning only.",
+          "evidenceRefs": [
+            {
+              "documentId": "4BI1-spec",
+              "pdfPages": [
+                21
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                27
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                21
+              ]
+            }
+          ]
+        }
+      ],
+      "sunlightScoring": {
+        "criterionPoolSize": 3,
+        "maximum": 2,
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            21
+          ]
+        }
+      },
+      "sourceDuckweedExperiment": {
+        "plant": "duckweed",
+        "solutions": [
+          {
+            "label": "A",
+            "mineralLacking": null
+          },
+          {
+            "label": "B",
+            "mineralLacking": "nitrate"
+          },
+          {
+            "label": "C",
+            "mineralLacking": "magnesium"
+          },
+          {
+            "label": "D",
+            "mineralLacking": "iron"
+          }
+        ],
+        "plantsPerJar": 5,
+        "initialPlantConditions": [
+          "same number of leaves",
+          "same size",
+          "healthy"
+        ],
+        "allJarsPlasticFilmCovered": true,
+        "lighting": "sunlight",
+        "durationWeeks": 4,
+        "solutionVolumeSpecified": null,
+        "temperatureSpecified": null,
+        "results": [
+          {
+            "solution": "A",
+            "leafCount": 13,
+            "leafSize": "large",
+            "colourScore": 4
+          },
+          {
+            "solution": "B",
+            "leafCount": 7,
+            "leafSize": "small",
+            "colourScore": 2
+          },
+          {
+            "solution": "C",
+            "leafCount": 8,
+            "leafSize": "medium",
+            "colourScore": 2
+          },
+          {
+            "solution": "D",
+            "leafCount": 9,
+            "leafSize": "medium",
+            "colourScore": 1
+          }
+        ],
+        "colourScoreEndpoints": {
+          "white": 0,
+          "darkGreen": 5
+        },
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            26,
+            28
+          ]
+        }
+      }
+    },
+    {
+      "paperId": "4BI1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "generalSchemePages": [
+        3
+      ],
+      "commandWordStatus": "source-checked-short-label",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO marks inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "taskId": "4BI1-2024-June-1-standard.Q9.a.iv",
+      "questionPath": "9.a.iv",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        27
+      ],
+      "markSchemePages": [
+        21
+      ],
+      "commandWord": "State",
+      "requiredKnowledge": [
+        "independent variable"
+      ],
+      "contextSummary": "Identify the investigation independent variable.",
+      "solutionStructure": [
+        "Apply distinct source criteria to the stated duckweed experiment and table; retain source caps and qualifications."
+      ],
+      "markingMethod": "one-of-alternatives",
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [],
+      "stimulusTypes": [
+        "experiment"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            26,
+            27
+          ]
+        }
+      ],
+      "proposedFamilyId": "4BI1.plant-minerals.9-a-iv",
+      "blockers": [
+        "Candidate only; semantic recognition/custom2/4/6-mark adaptation remain uncalibrated.",
+        "Whole historical, experimental/AO and source-policy review remains incomplete."
+      ],
+      "criteria": [
+        {
+          "id": "4BI1-2024-June-1-standard.Q9.a.iv:point-1",
+          "marks": 1,
+          "rule": "The mineral missing or present,composition of solution,or source-accepted solution wording."
+        }
+      ],
+      "scoringRule": {
+        "mode": "one-of-alternatives",
+        "maximum": 1,
+        "eligibleCriterionIds": [
+          "4BI1-2024-June-1-standard.Q9.a.iv:point-1"
+        ],
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            21
+          ]
+        }
+      },
+      "syllabusMappings": [
+        {
+          "pointId": "4BI1:issue3:2.22",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Manipulates selected mineral omissions; does not assess all specified mineral functions.",
+          "evidenceRefs": [
+            {
+              "documentId": "4BI1-spec",
+              "pdfPages": [
+                21
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                27
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                21
+              ]
+            }
+          ]
+        }
+      ],
+      "independentVariableScoring": {
+        "publishedAlternatives": [
+          "mineral missing",
+          "mineral absent from solution",
+          "minerals present",
+          "composition of solution",
+          "solution"
+        ],
+        "maximum": 1,
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            21
+          ]
+        }
+      },
+      "sourceQualification": {
+        "note": "The broad published solution alternative is retained; generated independent-variable wording discrimination remains uncalibrated.",
+        "generatedUse": "blocked-until-independent-variable-wording-calibration",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            21
+          ]
+        }
+      },
+      "sourceDuckweedExperiment": {
+        "plant": "duckweed",
+        "solutions": [
+          {
+            "label": "A",
+            "mineralLacking": null
+          },
+          {
+            "label": "B",
+            "mineralLacking": "nitrate"
+          },
+          {
+            "label": "C",
+            "mineralLacking": "magnesium"
+          },
+          {
+            "label": "D",
+            "mineralLacking": "iron"
+          }
+        ],
+        "plantsPerJar": 5,
+        "initialPlantConditions": [
+          "same number of leaves",
+          "same size",
+          "healthy"
+        ],
+        "allJarsPlasticFilmCovered": true,
+        "lighting": "sunlight",
+        "durationWeeks": 4,
+        "solutionVolumeSpecified": null,
+        "temperatureSpecified": null,
+        "results": [
+          {
+            "solution": "A",
+            "leafCount": 13,
+            "leafSize": "large",
+            "colourScore": 4
+          },
+          {
+            "solution": "B",
+            "leafCount": 7,
+            "leafSize": "small",
+            "colourScore": 2
+          },
+          {
+            "solution": "C",
+            "leafCount": 8,
+            "leafSize": "medium",
+            "colourScore": 2
+          },
+          {
+            "solution": "D",
+            "leafCount": 9,
+            "leafSize": "medium",
+            "colourScore": 1
+          }
+        ],
+        "colourScoreEndpoints": {
+          "white": 0,
+          "darkGreen": 5
+        },
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            26,
+            28
+          ]
+        }
+      }
+    },
+    {
+      "paperId": "4BI1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "generalSchemePages": [
+        3
+      ],
+      "commandWordStatus": "source-checked-short-label",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO marks inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "taskId": "4BI1-2024-June-1-standard.Q9.b.i",
+      "questionPath": "9.b.i",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        28
+      ],
+      "markSchemePages": [
+        21
+      ],
+      "commandWord": "Give",
+      "requiredKnowledge": [
+        "numeric measurement versus category description"
+      ],
+      "contextSummary": "Distinguish quantitative and qualitative results using the source count/size examples.",
+      "solutionStructure": [
+        "Apply distinct source criteria to the stated duckweed experiment and table; retain source caps and qualifications."
+      ],
+      "markingMethod": "paired-distinction-one-mark",
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [],
+      "stimulusTypes": [
+        "experiment",
+        "table"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            26,
+            28
+          ]
+        }
+      ],
+      "proposedFamilyId": "4BI1.plant-minerals.9-b-i",
+      "blockers": [
+        "Candidate only; semantic recognition/custom2/4/6-mark adaptation remain uncalibrated.",
+        "Whole historical, experimental/AO and source-policy review remains incomplete."
+      ],
+      "criteria": [
+        {
+          "id": "4BI1-2024-June-1-standard.Q9.b.i:point-1",
+          "marks": 1,
+          "rule": "Quantitative uses numbers,measurement or counting,and qualitative uses type/category,words or observation."
+        }
+      ],
+      "scoringRule": {
+        "mode": "paired-distinction-one-mark",
+        "maximum": 1,
+        "eligibleCriterionIds": [
+          "4BI1-2024-June-1-standard.Q9.b.i:point-1"
+        ],
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            21
+          ]
+        }
+      },
+      "syllabusMappings": [],
+      "pairedDistinctionScoring": {
+        "requireQuantitativeAndQualitative": true,
+        "quantitativeAlternatives": [
+          "uses numbers",
+          "measured",
+          "counted"
+        ],
+        "qualitativeAlternatives": [
+          "type",
+          "category",
+          "uses words",
+          "observed",
+          "subjective",
+          "opinion"
+        ],
+        "maximum": 1,
+        "independentMarksForEachSide": false,
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            21
+          ]
+        }
+      },
+      "sourceQualification": {
+        "note": "The source explicitly joins the two sides with AND for one mark. Leaf-colour numeric category codes do not establish a calibrated continuous physical measurement; no automated qualitative/quantitative classifier is activated.",
+        "generatedUse": "blocked-until-paired-data-description-calibration",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            21
+          ]
+        }
+      },
+      "sourceDuckweedExperiment": {
+        "plant": "duckweed",
+        "solutions": [
+          {
+            "label": "A",
+            "mineralLacking": null
+          },
+          {
+            "label": "B",
+            "mineralLacking": "nitrate"
+          },
+          {
+            "label": "C",
+            "mineralLacking": "magnesium"
+          },
+          {
+            "label": "D",
+            "mineralLacking": "iron"
+          }
+        ],
+        "plantsPerJar": 5,
+        "initialPlantConditions": [
+          "same number of leaves",
+          "same size",
+          "healthy"
+        ],
+        "allJarsPlasticFilmCovered": true,
+        "lighting": "sunlight",
+        "durationWeeks": 4,
+        "solutionVolumeSpecified": null,
+        "temperatureSpecified": null,
+        "results": [
+          {
+            "solution": "A",
+            "leafCount": 13,
+            "leafSize": "large",
+            "colourScore": 4
+          },
+          {
+            "solution": "B",
+            "leafCount": 7,
+            "leafSize": "small",
+            "colourScore": 2
+          },
+          {
+            "solution": "C",
+            "leafCount": 8,
+            "leafSize": "medium",
+            "colourScore": 2
+          },
+          {
+            "solution": "D",
+            "leafCount": 9,
+            "leafSize": "medium",
+            "colourScore": 1
+          }
+        ],
+        "colourScoreEndpoints": {
+          "white": 0,
+          "darkGreen": 5
+        },
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            26,
+            28
+          ]
+        }
+      }
+    },
+    {
+      "paperId": "4BI1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "generalSchemePages": [
+        3
+      ],
+      "commandWordStatus": "source-checked-short-label",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO marks inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "taskId": "4BI1-2024-June-1-standard.Q9.b.ii",
+      "questionPath": "9.b.ii",
+      "originalMarks": 6,
+      "questionPaperPages": [
+        29
+      ],
+      "markSchemePages": [
+        22
+      ],
+      "commandWord": "Comment",
+      "requiredKnowledge": [
+        "nitrate and magnesium roles",
+        "mineral-deficiency table",
+        "limited experimental evidence"
+      ],
+      "contextSummary": "Interpret the mineral-omission growth results using the table and biological knowledge.",
+      "solutionStructure": [
+        "Apply distinct source criteria to the stated duckweed experiment and table; retain source caps and qualifications."
+      ],
+      "markingMethod": "any-distinct",
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [],
+      "stimulusTypes": [
+        "experiment",
+        "table"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            26,
+            28,
+            29
+          ]
+        }
+      ],
+      "proposedFamilyId": "4BI1.plant-minerals.9-b-ii",
+      "blockers": [
+        "Candidate only; semantic recognition/custom2/4/6-mark adaptation remain uncalibrated.",
+        "Whole historical, experimental/AO and source-policy review remains incomplete."
+      ],
+      "criteria": [
+        {
+          "id": "4BI1-2024-June-1-standard.Q9.b.ii:point-1",
+          "marks": 1,
+          "rule": "Complete solution/A has most/largest leaves."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q9.b.ii:point-2",
+          "marks": 1,
+          "rule": "Complete solution/A has dark-green or greenest leaves."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q9.b.ii:point-3",
+          "marks": 1,
+          "rule": "No nitrate/B has fewest/smaller/smallest or less-green/yellow leaves."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q9.b.ii:point-4",
+          "marks": 1,
+          "rule": "Nitrate required for amino acids,proteins,chlorophyll/chloroplasts or growth."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q9.b.ii:point-5",
+          "marks": 1,
+          "rule": "No magnesium/C has fewer/smaller or less-green/yellow leaves."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q9.b.ii:point-6",
+          "marks": 1,
+          "rule": "Magnesium required for chlorophyll,chloroplasts or photosynthesis."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q9.b.ii:point-7",
+          "marks": 1,
+          "rule": "No iron/D has fewer/smaller or less-green/least-green/yellow leaves."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q9.b.ii:point-8",
+          "marks": 1,
+          "rule": "Iron required for chlorophyll/chloroplasts/photosynthesis; respiration is a published alternative."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q9.b.ii:point-9",
+          "marks": 1,
+          "rule": "Study not repeated/not reliable/few plants used."
+        }
+      ],
+      "scoringRule": {
+        "mode": "any-distinct",
+        "maximum": 6,
+        "eligibleCriterionIds": [
+          "4BI1-2024-June-1-standard.Q9.b.ii:point-1",
+          "4BI1-2024-June-1-standard.Q9.b.ii:point-2",
+          "4BI1-2024-June-1-standard.Q9.b.ii:point-3",
+          "4BI1-2024-June-1-standard.Q9.b.ii:point-4",
+          "4BI1-2024-June-1-standard.Q9.b.ii:point-5",
+          "4BI1-2024-June-1-standard.Q9.b.ii:point-6",
+          "4BI1-2024-June-1-standard.Q9.b.ii:point-7",
+          "4BI1-2024-June-1-standard.Q9.b.ii:point-8",
+          "4BI1-2024-June-1-standard.Q9.b.ii:point-9"
+        ],
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            22
+          ]
+        },
+        "selectionLimit": 6,
+        "creditPerCriterion": 1
+      },
+      "syllabusMappings": [
+        {
+          "pointId": "4BI1:issue3:2.22",
+          "kind": "primary",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Nitrate and magnesium selected roles only; iron is outside this numbered statement.",
+          "evidenceRefs": [
+            {
+              "documentId": "4BI1-spec",
+              "pdfPages": [
+                21
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                29
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                22
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4BI1:issue3:2.18",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Selected photosynthesis/growth explanation only.",
+          "evidenceRefs": [
+            {
+              "documentId": "4BI1-spec",
+              "pdfPages": [
+                21
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                29
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                22
+              ]
+            }
+          ]
+        }
+      ],
+      "mineralDiscussionScoring": {
+        "maximum": 6,
+        "criterionPoolSize": 9,
+        "oneMarkPerDistinctCriterion": true,
+        "publishedIronAlternative": "respiration",
+        "unmappedPublishedMineralRoles": [
+          "iron"
+        ],
+        "greenestObservedScore": 4,
+        "scaleDarkGreenEndpoint": 5,
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            22
+          ]
+        }
+      },
+      "sourceQualification": {
+        "note": "The published nitrate and iron chlorophyll/chloroplast alternatives and iron respiration concession are retained for later scope/response-policy review; no claim that iron is the chlorophyll central atom is made. A is greenest at score4,not the scale endpoint5. One jar per solution and five plants do not create independent replicated jars or a calibrated causal estimate.",
+        "generatedUse": "blocked-until-mineral-role-causal-and-response-calibration",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            22
+          ]
+        }
+      },
+      "sourceDuckweedExperiment": {
+        "plant": "duckweed",
+        "solutions": [
+          {
+            "label": "A",
+            "mineralLacking": null
+          },
+          {
+            "label": "B",
+            "mineralLacking": "nitrate"
+          },
+          {
+            "label": "C",
+            "mineralLacking": "magnesium"
+          },
+          {
+            "label": "D",
+            "mineralLacking": "iron"
+          }
+        ],
+        "plantsPerJar": 5,
+        "initialPlantConditions": [
+          "same number of leaves",
+          "same size",
+          "healthy"
+        ],
+        "allJarsPlasticFilmCovered": true,
+        "lighting": "sunlight",
+        "durationWeeks": 4,
+        "solutionVolumeSpecified": null,
+        "temperatureSpecified": null,
+        "results": [
+          {
+            "solution": "A",
+            "leafCount": 13,
+            "leafSize": "large",
+            "colourScore": 4
+          },
+          {
+            "solution": "B",
+            "leafCount": 7,
+            "leafSize": "small",
+            "colourScore": 2
+          },
+          {
+            "solution": "C",
+            "leafCount": 8,
+            "leafSize": "medium",
+            "colourScore": 2
+          },
+          {
+            "solution": "D",
+            "leafCount": 9,
+            "leafSize": "medium",
+            "colourScore": 1
+          }
+        ],
+        "colourScoreEndpoints": {
+          "white": 0,
+          "darkGreen": 5
+        },
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            26,
+            28
+          ]
+        }
+      }
+    }
+  ]
+}

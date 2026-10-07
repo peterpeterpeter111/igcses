@@ -1,3 +1,27 @@
+# Current checkpoint — 7 October 2026, Biology whole-paper details
+
+Read `research/checkpoints/2026-10-07-BIOLOGY-WHOLE-DETAILED.md` first. Biology now has all45 detailed parts/110 original marks across Q1–Q10, with49 partial numbered mappings. It remains indexed with zero fully processed papers or active exam templates; historical specification, AO/experimental scope, recognition and generative calibration remain unfinished. 194 tests plus25 focused tests after diagnostic wording changes, clean types/lint,16 research checks, evidence errors=[], build and public scan124/zero findings pass. 36 partial note documents/1,056 sections unchanged. Desktop local-notes shortcut works.
+
+Commit and sync Q8–Q10 as a non-force descendant of fetch-verified GitHub2707ec2; save/publish the exact verified source through Sites. Existing live publication is earlier9e1621b until that succeeds. Then continue curriculum and template audits, keeping AI last. Preserve both histories/UI and consume no reset. Latest95% five-hour/86% weekly; the current window refreshed naturally. Continue above5% in both and checkpoint/pause at5%.
+
+# Historical preceding checkpoints
+
+# Current checkpoint — 7 October 2026, Biology Q9
+
+Read `research/checkpoints/2026-10-07-BIOLOGY-Q9.md`. Q8/Q9 are newer local descendants of fetch-verifiedced91e0/GitHub2707ec2 and need combined non-force sync. Biology now44 detailed parts/104 marks of45 indexed/110;47 partial numbered mappings,zero fully processed papers or active exam templates. Q10 is the only undetailed part.192 tests,types/lint,16 research checks,evidence reconciliation,build/public scan124/zero pass. No notes/D1 changes or curriculum promotions. Desktop local notes shortcut works.
+
+Continue Q10 and remaining source/historical/AO/curriculum/template audits; keep AI last,preserve both histories/UI andconsume no reset. Existing publication is earlier9e1621b. Latest14% five-hour/86% weekly: continue above5% in both,checkpoint/pause at5%.
+
+# Historical preceding checkpoints
+
+# Current checkpoint — 7 October 2026, Biology Q8
+
+Read `research/checkpoints/2026-10-07-BIOLOGY-Q8.md`. Source-size repairced91e0 is fetch-verified on GitHub2707ec2; Q8 is the next local descendant. Biology now38 detailed parts/90 marks of45 indexed/110 marks;42 partial numbered mappings. Zero fully processed papers/active exam templates; Q9–Q10 remain.190 tests, clean types/lint,16 research checks, evidence reconciliation, build and public scan124/zero pass. Original history, source concessions and UI retained; no notes/D1 changes.
+
+Save/sync the newer delta non-force; then Q9–Q10 and curriculum/template audits. Desktop local notes shortcut works. Existing publication is earlier9e1621b, not the Q8 delta. Keep AI last and consume no reset. Latest18% five-hour/87% weekly: continue above5% in both, checkpoint/pause at5%.
+
+# Historical preceding checkpoints
+
 # Current checkpoint — 7 October 2026, Biology source-size repair
 
 Read `research/checkpoints/2026-10-07-BIOLOGY-EXTRACTION-PARTITIONS.md`, then the Q7 checkpoint. Saved Q7 locally53d6a20; sync preparation refused its199,366-byte single-file request. The blocker is resolved with seven explicit private question partitions and a validated logical reader/typed audit aggregate. All33 records and fields are preserved; the195,000-byte request limit is unchanged.187 tests, clean types/lint,16 research checks, evidence reconciliation, build and public scan124/zero findings pass. No notes/D1 or coverage promotion.

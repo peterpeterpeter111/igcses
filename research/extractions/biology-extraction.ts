@@ -9,7 +9,13 @@ import q5 from './4BI1-2024-June-1-standard/Q5.json' with { type: 'json' };
 import q6 from './4BI1-2024-June-1-standard/Q6.json' with { type: 'json' };
 import q7 from './4BI1-2024-June-1-standard/Q7.json' with { type: 'json' };
 
-const partitions = [q1, q2, q3, q4, q5, q6, q7];
+import q8 from './4BI1-2024-June-1-standard/Q8.json' with { type: 'json' };
+
+import q9 from './4BI1-2024-June-1-standard/Q9.json' with { type: 'json' };
+
+import q10 from './4BI1-2024-June-1-standard/Q10.json' with { type: 'json' };
+
+const partitions = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10];
 type Keys<T> = T extends unknown ? keyof T : never;
 type Value<T, K extends PropertyKey> = T extends unknown ? K extends keyof T ? T[K] : undefined : never;
 type ObjectShape<T> = { [K in Keys<T> as undefined extends Value<T, K> ? never : K]: Combined<Value<T, K>> }

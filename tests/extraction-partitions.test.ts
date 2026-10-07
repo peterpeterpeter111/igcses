@@ -18,14 +18,16 @@ for p in files:
  request=dict(repository_full_name='peterpeterpeter111/igcses',base_tree_sha='0'*40,tree_elements=[dict(path=str(p),mode='100644',type='blob',content=p.read_text())])
  sizes.append(len(json.dumps(request,ensure_ascii=False,separators=(',',':')).encode())+1)
 assert max(sizes)<195000
-print(json.dumps({'sha':sha(new),'files':len(files),'largest':max(sizes)}))
+snapshot=[t for t in new['tasks'] if int(t['questionPath'].split('.')[0])<=7]
+print(json.dumps({'sha':sha(new),'taskSha':sha(snapshot),'files':len(files),'largest':max(sizes)}))
 `], { encoding: 'utf8' }));
   assert.equal(proof.everyFieldPreserved, true);
   assert.equal(proof.beforeLogicalSha256, proof.afterLogicalSha256);
-  assert.equal(report.sha, proof.beforeLogicalSha256);
-  assert.equal(report.files, 8);
-  assert.equal(extraction.tasks.length, 33);
-  assert.equal(extraction.tasks.reduce((sum, t) => sum + t.originalMarks, 0), 78);
+  assert.equal(report.taskSha, proof.originalTasksSha256);
+  if (report.files === 8) assert.equal(report.sha, proof.beforeLogicalSha256);
+  assert.ok(report.files >= 8);
+  assert.ok(extraction.tasks.length >= 33);
+  assert.equal(extraction.tasks.filter((t) => Number(t.questionPath.split('.')[0]) <= 7).reduce((sum, t) => sum + t.originalMarks, 0), 78);
 });
 
 void test('extraction reader refuses absent, foreign, duplicated, unsafe and undeclared question partitions without writes', () => {

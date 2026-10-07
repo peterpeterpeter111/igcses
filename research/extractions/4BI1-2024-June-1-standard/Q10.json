@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "paperId": "4BI1-2024-June-1-standard",
+  "question": "10",
+  "tasks": [
+    {
+      "paperId": "4BI1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "generalSchemePages": [
+        3
+      ],
+      "commandWordStatus": "source-checked-short-label",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO marks inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "taskId": "4BI1-2024-June-1-standard.Q10",
+      "questionPath": "10",
+      "originalMarks": 6,
+      "questionPaperPages": [
+        30
+      ],
+      "markSchemePages": [
+        23
+      ],
+      "commandWord": "Design",
+      "requiredKnowledge": [
+        "CO2 concentration and crop yield",
+        "controlled experiment",
+        "replication and yield measurement"
+      ],
+      "contextSummary": "Design an investigation to determine carbon-dioxide concentration for maximum crop yield,with experimental details and full sentences.",
+      "solutionStructure": [
+        "Choose three or more CO2 levels and same-species plants with repetition at each level.",
+        "Measure a stated yield outcome after a specified time while controlling relevant environmental and resource conditions.",
+        "No supplied data or numeric optimum exists; keep published source allocation separate from fresh method calibration."
+      ],
+      "markingMethod": "any-distinct",
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [],
+      "stimulusTypes": [
+        "stated-scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            30
+          ]
+        }
+      ],
+      "proposedFamilyId": "4BI1.crop-yield.co2-design",
+      "blockers": [
+        "Candidate only; semantic design/response recognition and custom2/4/6-mark adaptation remain uncalibrated.",
+        "Historical/experimental/AO and numeric-concentration/optimum interpretation remain unresolved."
+      ],
+      "criteria": [
+        {
+          "id": "4BI1-2024-June-1-standard.Q10:point-1",
+          "marks": 1,
+          "rule": "C:Use glasshouses with three or more different carbon-dioxide concentrations/levels/amounts."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q10:point-2",
+          "marks": 1,
+          "rule": "O:Use crop plants of the same species."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q10:point-3",
+          "marks": 1,
+          "rule": "R:Repeat each concentration."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q10:point-4",
+          "marks": 1,
+          "rule": "M1:Measure an accepted crop-yield quantity such as mass or seed/leaf/fruit amount/size."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q10:point-5",
+          "marks": 1,
+          "rule": "M2:Measure after a stated time."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q10:point-6",
+          "marks": 1,
+          "rule": "S1:Keep temperature,sunlight or season the same."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q10:point-7",
+          "marks": 1,
+          "rule": "S2:Keep soil,water,humidity,fertiliser,minerals orpH the same."
+        }
+      ],
+      "scoringRule": {
+        "mode": "any-distinct",
+        "maximum": 6,
+        "eligibleCriterionIds": [
+          "4BI1-2024-June-1-standard.Q10:point-1",
+          "4BI1-2024-June-1-standard.Q10:point-2",
+          "4BI1-2024-June-1-standard.Q10:point-3",
+          "4BI1-2024-June-1-standard.Q10:point-4",
+          "4BI1-2024-June-1-standard.Q10:point-5",
+          "4BI1-2024-June-1-standard.Q10:point-6",
+          "4BI1-2024-June-1-standard.Q10:point-7"
+        ],
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            23
+          ]
+        },
+        "selectionLimit": 6,
+        "creditPerCriterion": 1
+      },
+      "syllabusMappings": [
+        {
+          "pointId": "4BI1:issue3:5.1",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "One glasshouse yield-investigation context; no comparison with polythene tunnels.",
+          "evidenceRefs": [
+            {
+              "documentId": "4BI1-spec",
+              "pdfPages": [
+                31
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                30
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                23
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4BI1:issue3:5.2",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Manipulates CO2 and controls environmental factors; no complete temperature/yield response explanation or optimum data.",
+          "evidenceRefs": [
+            {
+              "documentId": "4BI1-spec",
+              "pdfPages": [
+                31
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                30
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                23
+              ]
+            }
+          ]
+        }
+      ],
+      "experimentalDesignScoring": {
+        "criterionLabels": [
+          "C",
+          "O",
+          "R",
+          "M1",
+          "M2",
+          "S1",
+          "S2"
+        ],
+        "criterionPoolSize": 7,
+        "maximum": 6,
+        "maximumPerCriterion": 1,
+        "minimumDifferentCO2Levels": 3,
+        "specificConcentrationValuesRequired": false,
+        "publishedLevelExample": [
+          "high",
+          "medium",
+          "zero"
+        ],
+        "zeroLevelMandatory": false,
+        "repeatEachConcentration": true,
+        "specificRepeatNumberRequired": false,
+        "acceptedYieldMeasurements": [
+          "mass",
+          "kg",
+          "amount of seeds",
+          "number of leaves",
+          "fruit",
+          "size of leaves"
+        ],
+        "rejectedYieldEvidence": [
+          "yield alone",
+          "height"
+        ],
+        "requireStatedMeasurementTime": true,
+        "controlCategories": [
+          [
+            "temperature",
+            "sunlight",
+            "same season"
+          ],
+          [
+            "soil",
+            "water",
+            "humidity",
+            "fertiliser",
+            "minerals",
+            "pH"
+          ]
+        ],
+        "maximumPerControlCategory": 1,
+        "mandatoryCriterionIds": [],
+        "fullSentencesRequested": true,
+        "independentFullSentenceMark": false,
+        "providedYieldDataset": null,
+        "verifiedNumericOptimum": null,
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            23
+          ]
+        }
+      },
+      "practicalDemand": {
+        "officialNumberedPracticalMapping": null,
+        "scope": "selected-crop-yield-experimental-design",
+        "wholeExperimentalScopeReview": "pending"
+      },
+      "sourceQualification": {
+        "note": "The source awards any six of seven categories,not a mandatory C gate. Three concentrations may be described without values,including high/medium/zero; zero meaning and feasible numerical ranges remain uncalibrated. Repeats must cover each concentration but no exact repeat count is prescribed. Height and yield alone are rejected. Two distinct control groups each earn at most one. No result series,optimum concentration or independent full-sentence mark is supplied.",
+        "generatedUse": "blocked-until-co2-design-source-policy-and-response-calibration",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            23
+          ]
+        }
+      }
+    }
+  ]
+}

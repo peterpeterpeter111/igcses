@@ -35,7 +35,7 @@ check('English assessment objectives have a separate partial-coverage schema', (
   const validate = ajv.compile(objectiveSchema);
   assert(validate(read('research/assessment-objectives/4EB1-issue4.json')), JSON.stringify(validate.errors));
 });
-check('Biology Q1–Q7 subset has source-bound, idempotent normalization without whole-paper promotion', () => {
+check('Biology Q1–Q10 detailed records have source-bound, idempotent normalization without whole-paper promotion', () => {
   const result = execFileSync('python3', ['-c', `
 import importlib.util,sys
 sys.path.insert(0,'scripts')
