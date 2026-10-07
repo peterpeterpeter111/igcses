@@ -1,0 +1,17 @@
+# Chemistry Q5 — 7 October 2026
+
+Continued c13e91d /GitHub02f0d15 with verified owner-private Sites version6 publishing that same exact release. The source publication record gives IDs/archive proof. This newer Q5 source needs its own sync/publication. No restart/reset/discarded work/UI change.
+
+QP10–11/MS8 were visually checked; own specification18 was already checked. Four leaves/nine marks give26 detailed Q1–Q5 parts/47marks outof56/110. Thirty parts/63marks remain. The whole structural index's counts remain56/110, but only Q1–Q5 statuses become detailed. Paperstage indexed; whole marksReconciled/fullyProcessed/humanReviewed=false. No AO allocation, active template or full curriculum promotion.
+
+Baseline above solvent prevents dye dissolution/diffusion into the base solvent and enables travel up paper; dye/spot and water/solvent alternatives retained. The same-dye explanation depends on selecting E/H. One moved spot supports the G inference; unmoved/insoluble F does not establish its number of dyes. Diagram spot levels and source dependencies are private, not an active semantic marker.
+
+Rf source M1 uses65mm solvent distance; M2 uses39mm andallows38–41inclusive; M3 source result0.6 with published0.57–0.64 range andincorrect-rounding exclusion. The source doesnot explicitly state range-endpoint inclusion, fixed decimal places or general ECF, so none is invented for a future marker. Generated physical measurements remain blocked until webscale/formatcalibration.
+
+Original PDF vector geometry was independently read using bundled pdfplumber. MediaBox651.969×898.583 and CropBox translation are retained. Baseline y356.22 minus solvent y171.968 gives65.000011mm; Gspotcentre244.4304 gives39.436887mm andratio0.606721. This corroborates the printed scheme, rather than falsely declaring a discrepancy from resized image estimates. Private printedMeasurementAudit records sourceSHA/page/coordinates andmath. Original geometryChecked=true is distinct from webScaleValidated=false. Source PDFs remain untouched/ignored.
+
+Nineteen new deliberately altered inference/dependency/range/rounding/geometry/presentation cases reject before any ledger write; prior97source/index cases stillreject. Independent spotlevel comparisons recover E/H, distinguish immobileF, andverify original distances. Exporter remains byte-idempotent andbounded; allunrelated partitions/raw history preserved. Chemistry now34partial numbered task mappings; no point/chapter completion.
+
+208 tests pass, clean types/lint,16research checks,evidence errors=[], productionbuild/public124files/zero findings. Report research/reviews/2026-10-07-chemistry-q5-evidence.json; logs work/chemistry-q5-*.log. Ledger213tasks/277mappings,19documents/six normalizedpapers/seven obtainedpairs. Notes36partialdocuments/1,056sections and796parentidentities/2,824requirements/1,354partiallinks unchanged; English6objectives/41links. Other detailedtotals: Biology45/110,Physics51/110,HumanBiology42/90,Maths38/100,English one2markpilot. Zero fullyprocessedpapers/completecurriculumitems/activeexamtemplates;seven provisionalfamilies/separatelessonpractice. No notes/schema/seed/D1 changes; priorisolatedD1 proofapplies. AIlast.
+
+Latest36% five-hour/76%weekly. Continueabove5% inboth,checkpoint/pauseat5%,noreset. Save/sync non-force; nextQ6 observation cap, independent indicator credit, flame test andhydrated-salt method/calculation, thenremainingpaper/curriculum/templatecalibration. Preservehistories/UI.

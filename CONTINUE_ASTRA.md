@@ -1,3 +1,63 @@
+# Current checkpoint — 7 October 2026, Chemistry Q10
+
+Read `research/checkpoints/2026-10-07-CHEMISTRY-Q10.md` first. Continueddb66a7f. Chemistry now has detailed source records for all56 Q1–Q10 parts /110 original marks and83 partial numbered task mappings. Whole visual index remains56/110. Detailed extraction is complete for this one obtained pair; whole processing, historical/current-scope, AO/experimental/skills and calibrated templates remain incomplete. Zero fully processed papers, complete curriculum items or active exam templates.
+
+218 tests, clean types/lint,16 research checks, evidence errors=[], production build and public scan124 files/zero findings pass. Ledger243 tasks/326 mappings. Q10 retains the source-specific metal/nitric-acid exception, bidirectional temperature ECF, heat precision and signed molar-enthalpy concessions. Notes36 partial documents/1,056 sections and all other subjects unchanged. No notes/schema/D1 changes; desktop shortcut retained.
+
+GitHub02f0d15 and owner-private Sites version6 still mirrorc13e91d; Q5–Q10 need non-force sync/exact-source publication. Latest15% five-hour/73% weekly remaining. Continue above5% in both, checkpoint/pause at5%, no reset. Next sync/publish verified delta, then curriculum/historical/skills and template calibration. Preserve both histories/raw manifests/UI. AI last.
+
+# Historical preceding checkpoints
+
+# Current checkpoint — 7 October 2026, Chemistry Q9
+
+Read `research/checkpoints/2026-10-07-CHEMISTRY-Q9.md` first. Continued2d6b223. Chemistry has51 detailed Q1–Q9 parts /99 of110 marks,76 partial numbered task mappings. Whole visual index remains56/110;Q10 has5 parts/11 marks needing detailed extraction. Zero fully processed papers, complete curriculum items or active exam templates.
+
+216 tests, clean types/lint,16 research checks, evidence errors=[], production build/public124 files/zero findings pass. Ledger238 tasks/319 mappings. Q9 preserves the linked-pair/description caps, original graph grid and collision-energy contradiction cap. Notes36 partial documents/1,056 sections and all other subjects unchanged. No notes/schema/D1 changes; desktop shortcut retained.
+
+GitHub02f0d15 and owner-private Sites version6 still mirrorc13e91d; Q5–Q9 need non-force sync/exact-source publication. Latest19% five-hour/74% weekly remaining. Continue above5% in both, checkpoint/pause at5%, no reset. NextQ10 source-specific metal/acid equation and calorimetry/enthalpy, then curriculum/template calibration. Preserve history/raw manifests/UI; AI last.
+
+# Historical preceding checkpoints
+
+# Current checkpoint — 7 October 2026, Chemistry Q8
+
+Read `research/checkpoints/2026-10-07-CHEMISTRY-Q8.md` first. Continued0a78d3b. Chemistry has46 detailed Q1–Q8 parts /88 of110 marks,67 partial numbered task mappings. Whole visual index remains56/110;10 parts/22 marks need detailed extraction. Zero fully processed papers, complete curriculum items or active exam templates.
+
+214 tests, clean types/lint,16 research checks, evidence errors=[], production build and public scan124 files/zero findings pass. Ledger233 tasks/310 mappings. Private Q8 records retain independent isomer definition, all-bonds/stereo source concessions, repeat unit, disposal exclusions, narrow combustion ECF, state alternatives and dependent product effects. Notes36 partial documents/1,056 sections and all other subjects unchanged. No notes/schema/D1 changes; desktop shortcut remains.
+
+GitHub02f0d15 and owner-private Sites version6 still mirrorc13e91d; newerQ5–Q8 need non-force sync/exact-source publication. Latest22% five-hour/74% weekly remaining; continue above5% in both, checkpoint/pause at5%, no reset. NextQ9 rate graph/pair caps, thenQ10 and curriculum/template calibration. Preserve both histories/raw manifests/UI; AI last.
+
+# Historical preceding checkpoints
+
+# Current checkpoint — 7 October 2026, Chemistry Q7
+
+Read `research/checkpoints/2026-10-07-CHEMISTRY-Q7.md` first. Continued 2f07a98. Chemistry now38 detailed Q1–Q7 parts /73 of110 marks and52 partial numbered task mappings. Whole visual index remains56/110; remaining18 parts/37 marks need detailed extraction. Zero fully processed papers, complete curriculum items or active exam templates.
+
+212 tests, clean types/lint,16 research checks, evidence errors=[], production build/public124 files/zero findings pass. Ledger225 tasks/295 mappings. Q7 preserves diagram/equation dependencies and conditional gas-test concessions; environmental-effect scope stays explicitly unmapped. Notes36 partial documents/1,056 sections and other subject counts unchanged. No notes/schema/D1 changes; desktop shortcut retained.
+
+GitHub02f0d15 and owner-private Sites version6 still mirror c13e91d; newer Q5–Q7 need non-force sync/exact-source publication. Latest25% five-hour/75% weekly remaining. Continue above5% in both, checkpoint/pause at5%; no reset. Next Q8 organic diagrams/disposal/combustion, then remaining paper, curriculum and calibrated templates. Preserve histories/raw manifests/current UI. AI last.
+
+# Historical preceding checkpoints
+
+# Current checkpoint — 7 October 2026, Chemistry Q6
+
+Read `research/checkpoints/2026-10-07-CHEMISTRY-Q6.md` first. Continued local 54e10a3 without restarting. Chemistry now has 32 detailed Q1–Q6 parts /60 of110 marks, and42 partial numbered task mappings. Whole visual index remains56/110; remaining24 parts/50 marks need detailed extraction. Zero fully processed papers, complete curriculum items or active exam templates.
+
+210 tests, types/lint,16 research checks, evidence errors=[], production build and public scan124 files/zero findings pass. Ledger219 tasks/285 mappings. Private allocation records preserve capped observations, threshold ion-table credit, independent indicator marking and narrow hydration ECF. No active marker/generator is claimed. Notes36 partial documents/1,056 sections and all other subject counts unchanged; no notes/schema/D1 changes.
+
+GitHub02f0d15 and owner-private Sites version6 mirror earlier c13e91d; Q5/Q6 need non-force sync and exact-source publication. Desktop local notes shortcut remains available. Latest29% five-hour/75% weekly remaining; continue above5% in both, checkpoint/pause at5%, no reset. Next Q7 gas-test conditional dependencies, then remaining paper, curriculum and calibrated templates. Preserve both histories/raw manifests/current UI. AI last.
+
+# Historical preceding checkpoints
+
+# Current checkpoint — 7 October 2026, Chemistry Q5
+
+Read `research/checkpoints/2026-10-07-CHEMISTRY-Q5.md` and `2026-10-07-CHEMISTRY-INVENTORY-PUBLISHED.md` first. Owner-private Sites version6 successfully publishes localc13e91d /GitHub02f0d15, exact tree523349370c614ca94857f28da0c5736da0f03940. This newer Q5 delta needs its own non-force sync and publication. Chemistry now26 detailed Q1–Q5 parts /47marks of56parts/110marks;30parts/63marks pending. Whole visual inventory is separate; zero fully processed papers oractive exam templates.
+
+208 tests, types/lint,16 research checks, evidence errors=[], build/public124/zero pass. Ledger213tasks/277mappings. Original PDF geometry corroborates the scheme's chromatography measurements; web scale, inference and response calibration remain blocked. Notes36partial documents/1,056sections, seven obtained pairs andallother subject counts unchanged. No notes/D1 changes. Desktop local notes shortcut remains available.
+
+Latest36% five-hour /76%weekly; continue above5% inboth, checkpoint/pause at5%, noreset. Next ChemistryQ6 onward, curriculum/historical/AO/skills andcalibrated templates. Keep AI last; preserveboth histories/raw manifests/current UI.
+
+# Historical preceding checkpoints
+
 # Current checkpoint — 7 October 2026, Chemistry whole visual inventory
 
 Read `research/checkpoints/2026-10-07-CHEMISTRY-WHOLE-INVENTORY.md` first. Continued Q4 commit80f0c27. Chemistry now has a separate whole visual index: 56 leaf parts /110 original marks across24QP/18MS pages. Detailed extraction remains22 Q1–Q4 parts /38marks; remaining34parts/72marks pending. No full processing, curriculum or template promotion. Stale Biology index wording repaired; its45/110 detailed totals are unchanged.

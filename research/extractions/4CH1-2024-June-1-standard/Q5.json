@@ -1,0 +1,637 @@
+{
+  "schemaVersion": 1,
+  "paperId": "4CH1-2024-June-1-standard",
+  "question": "5",
+  "tasks": [
+    {
+      "paperId": "4CH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4CH1-2024-June-1-standard.Q5.a.i",
+      "questionPath": "5.a.i",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        10
+      ],
+      "markSchemePages": [
+        8
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Explain",
+      "requiredKnowledge": [
+        "solvent position",
+        "dye transport on chromatography paper"
+      ],
+      "contextSummary": "Explain why the starting spots are above the solvent level.",
+      "solutionStructure": [
+        "Prevent the dye from dissolving/diffusing into the solvent at the base.",
+        "Keep the dye available to move up the paper."
+      ],
+      "markingMethod": "two-linked-explanation-points",
+      "criteria": [
+        {
+          "id": "4CH1-2024-June-1-standard.Q5.a.i:M1",
+          "marks": 1,
+          "rule": "Dye does not dissolve/diffuse into solvent at the base."
+        },
+        {
+          "id": "4CH1-2024-June-1-standard.Q5.a.i:M2",
+          "marks": 1,
+          "rule": "So dyes can travel up the paper."
+        }
+      ],
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4CH1:issue3:1.13",
+          "kind": "primary",
+          "currentApplicability": "partial-current-scope",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Explain a setup condition in the presented ink chromatography investigation; no performed practical is certified.",
+          "evidenceRefs": [
+            {
+              "documentId": "4CH1-spec",
+              "pdfPages": [
+                18
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                10
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                8
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:1.10",
+          "kind": "supporting",
+          "currentApplicability": "partial-current-scope",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Apply the paper-chromatography separation technique.",
+          "evidenceRefs": [
+            {
+              "documentId": "4CH1-spec",
+              "pdfPages": [
+                18
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                10
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                8
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "before-after-chromatogram"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            10
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No authoritative per-leaf AO allocation inspected.",
+      "proposedFamilyId": "4CH1.5-a-i",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generator or response recognizer; inference conditions, source rounding and web measurement scale remain unvalidated."
+      ],
+      "sourceQualification": {
+        "generatedUse": "blocked-until-chromatogram-inference-rounding-and-web-scale-calibration",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            8
+          ]
+        }
+      },
+      "sourceScoring": {
+        "M1": "avoid dissolution/diffusion into solvent at the bottom",
+        "M2": "dyes can travel up paper",
+        "allowDyeForSpot": true,
+        "allowWaterForSolvent": true,
+        "explicitM2DependencyOnM1": false,
+        "recognitionStatus": "not-implemented"
+      },
+      "scoringRule": {
+        "mode": "two-linked-explanation-points",
+        "maximum": 2,
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            8
+          ]
+        }
+      },
+      "sourceChromatogram": {
+        "labels": [
+          "E",
+          "F",
+          "G",
+          "H"
+        ],
+        "beforeAllAtBaseline": true,
+        "afterSpotCounts": {
+          "E": 2,
+          "F": 1,
+          "G": 1,
+          "H": 2
+        },
+        "fAfterAtBaseline": true,
+        "sharedLevelPair": [
+          "E",
+          "H"
+        ],
+        "gMovedAboveBaseline": true,
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            10
+          ]
+        },
+        "afterSpotCentreTops": {
+          "E": [
+            220.683,
+            264.0938
+          ],
+          "F": [
+            356.2198
+          ],
+          "G": [
+            244.4304
+          ],
+          "H": [
+            220.683,
+            301.3988
+          ]
+        },
+        "baselineTop": 356.22
+      }
+    },
+    {
+      "paperId": "4CH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4CH1-2024-June-1-standard.Q5.a.ii",
+      "questionPath": "5.a.ii",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        10
+      ],
+      "markSchemePages": [
+        8
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Explain",
+      "requiredKnowledge": [
+        "spot level as dye evidence"
+      ],
+      "contextSummary": "Identify the two pens sharing a dye and justify with the chromatogram.",
+      "solutionStructure": [
+        "Select the two correct pen labels.",
+        "Explain the shared spot level/distance/Rf."
+      ],
+      "markingMethod": "dependent-identification-explanation",
+      "criteria": [
+        {
+          "id": "4CH1-2024-June-1-standard.Q5.a.ii:M1",
+          "marks": 1,
+          "rule": "E and H."
+        },
+        {
+          "id": "4CH1-2024-June-1-standard.Q5.a.ii:M2",
+          "marks": 1,
+          "rule": "A spot is at the same level, has moved the same distance or has the same Rf; depends on M1."
+        }
+      ],
+      "acceptableAlternatives": [],
+      "dependencies": [
+        {
+          "criterionId": "4CH1-2024-June-1-standard.Q5.a.ii:M2",
+          "requiresCriterionId": "4CH1-2024-June-1-standard.Q5.a.ii:M1"
+        }
+      ],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4CH1:issue3:1.11",
+          "kind": "primary",
+          "currentApplicability": "partial-current-scope",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Use the chromatogram to identify a shared dye in mixtures.",
+          "evidenceRefs": [
+            {
+              "documentId": "4CH1-spec",
+              "pdfPages": [
+                18
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                10
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                8
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "before-after-chromatogram"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            10
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No authoritative per-leaf AO allocation inspected.",
+      "proposedFamilyId": "4CH1.5-a-ii",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generator or response recognizer; inference conditions, source rounding and web measurement scale remain unvalidated."
+      ],
+      "sourceQualification": {
+        "generatedUse": "blocked-until-chromatogram-inference-rounding-and-web-scale-calibration",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            8
+          ]
+        }
+      },
+      "sourceScoring": {
+        "pair": [
+          "E",
+          "H"
+        ],
+        "pairOrderIrrelevant": true,
+        "reasonAlternatives": [
+          "same spot level",
+          "same travelled distance",
+          "same Rf"
+        ],
+        "m2DependsOnM1": true,
+        "recognitionStatus": "not-implemented"
+      },
+      "scoringRule": {
+        "mode": "dependent-identification-explanation",
+        "maximum": 2,
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            8
+          ]
+        }
+      }
+    },
+    {
+      "paperId": "4CH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4CH1-2024-June-1-standard.Q5.a.iii",
+      "questionPath": "5.a.iii",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        11
+      ],
+      "markSchemePages": [
+        8
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Explain",
+      "requiredKnowledge": [
+        "purity inference and solvent solubility limitation"
+      ],
+      "contextSummary": "Explain why one-dye certainty is supported for only one of F and G.",
+      "solutionStructure": [
+        "G has one moved spot.",
+        "F has not moved or is insoluble, so dye count cannot be concluded."
+      ],
+      "markingMethod": "two-interpretation-points",
+      "criteria": [
+        {
+          "id": "4CH1-2024-June-1-standard.Q5.a.iii:M1",
+          "marks": 1,
+          "rule": "G alone supports one dye because there is only one spot."
+        },
+        {
+          "id": "4CH1-2024-June-1-standard.Q5.a.iii:M2",
+          "marks": 1,
+          "rule": "F is insoluble/has not moved, so its number of dyes is unknown."
+        }
+      ],
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [
+        "Treating a baseline spot from an insoluble sample as proof of one dye."
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4CH1:issue3:1.11",
+          "kind": "primary",
+          "currentApplicability": "partial-current-scope",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Interpret mixture composition with the limitation of an unmoved/insoluble sample.",
+          "evidenceRefs": [
+            {
+              "documentId": "4CH1-spec",
+              "pdfPages": [
+                18
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                10,
+                11
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                8
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "before-after-chromatogram"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            10,
+            11
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No authoritative per-leaf AO allocation inspected.",
+      "proposedFamilyId": "4CH1.5-a-iii",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generator or response recognizer; inference conditions, source rounding and web measurement scale remain unvalidated."
+      ],
+      "sourceQualification": {
+        "generatedUse": "blocked-until-chromatogram-inference-rounding-and-web-scale-calibration",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            8
+          ]
+        }
+      },
+      "sourceScoring": {
+        "certainSample": "G",
+        "evidence": "one spot",
+        "uncertainSample": "F",
+        "uncertaintyAlternatives": [
+          "insoluble",
+          "not moved"
+        ],
+        "unknownDyeCount": true,
+        "explicitM2DependencyOnM1": false,
+        "recognitionStatus": "not-implemented"
+      },
+      "scoringRule": {
+        "mode": "two-interpretation-points",
+        "maximum": 2,
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            8
+          ]
+        }
+      }
+    },
+    {
+      "paperId": "4CH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4CH1-2024-June-1-standard.Q5.b",
+      "questionPath": "5.b",
+      "originalMarks": 3,
+      "questionPaperPages": [
+        11
+      ],
+      "markSchemePages": [
+        8
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Calculate",
+      "requiredKnowledge": [
+        "baseline-relative distances",
+        "Rf ratio",
+        "correct rounding"
+      ],
+      "contextSummary": "Measure the G dye and solvent travel distances in the source chromatogram and calculate Rf.",
+      "solutionStructure": [
+        "Use distances from the same baseline.",
+        "Divide dye travel by solvent travel.",
+        "Preserve the source measurement ranges and rounding restriction."
+      ],
+      "markingMethod": "measurement-and-ratio",
+      "criteria": [
+        {
+          "id": "4CH1-2024-June-1-standard.Q5.b:M1",
+          "marks": 1,
+          "rule": "Baseline to solvent level:65mm."
+        },
+        {
+          "id": "4CH1-2024-June-1-standard.Q5.b:M2",
+          "marks": 1,
+          "rule": "Baseline to G dye:39mm;38–41mm inclusive is allowed."
+        },
+        {
+          "id": "4CH1-2024-June-1-standard.Q5.b:M3",
+          "marks": 1,
+          "rule": "39/65=0.6; published0.57–0.64 range with correct rounding."
+        }
+      ],
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [
+        "Measuring from the page bottom rather than the baseline.",
+        "Using the reciprocal ratio.",
+        "Incorrect rounding despite a value inside the published range."
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4CH1:issue3:1.12",
+          "kind": "primary",
+          "currentApplicability": "partial-current-scope",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Calculate Rf from the diagram using the two distances from the baseline.",
+          "evidenceRefs": [
+            {
+              "documentId": "4CH1-spec",
+              "pdfPages": [
+                18
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                10,
+                11
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                8
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "before-after-chromatogram"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            10,
+            11
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No authoritative per-leaf AO allocation inspected.",
+      "proposedFamilyId": "4CH1.5-b",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generator or response recognizer; inference conditions, source rounding and web measurement scale remain unvalidated."
+      ],
+      "sourceQualification": {
+        "generatedUse": "blocked-until-chromatogram-inference-rounding-and-web-scale-calibration",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            8
+          ]
+        }
+      },
+      "sourceScoring": {
+        "solventDistanceMm": 65,
+        "dyeDistanceMm": 39,
+        "dyeRangeMm": [
+          38,
+          41
+        ],
+        "dyeRangeInclusive": true,
+        "ratio": 0.6,
+        "publishedFinalRange": [
+          0.57,
+          0.64
+        ],
+        "finalEndpointInclusivityExplicit": false,
+        "m3NoCreditIfIncorrectlyRounded": true,
+        "sourceFixedDecimalPlaces": null,
+        "explicitEcfPolicy": false,
+        "recognitionStatus": "not-implemented"
+      },
+      "scoringRule": {
+        "mode": "measurement-and-ratio",
+        "maximum": 3,
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            8
+          ]
+        }
+      },
+      "printedMeasurementAudit": {
+        "questionPaperSha256": "1aec3bb887bbfaa925f35e9dd20bcb9e0890474467b43385fa37628d0efc96eb",
+        "pdfPage": 10,
+        "units": "PDF points,72 per inch",
+        "coordinateSpace": "media-box top origin; constant crop translation cancels in distances",
+        "cropBox": [
+          28.3465,
+          28.34699999999998,
+          623.622,
+          870.2365
+        ],
+        "mediaBox": [
+          0.0,
+          0.0,
+          651.969,
+          898.583
+        ],
+        "baselineTop": 356.22,
+        "solventTop": 171.968,
+        "gSpotCentreTop": 244.43040000000002,
+        "solventDistanceMm": 65.00001111111112,
+        "gDistanceMm": 39.436886666666666,
+        "ratio": 0.6067212296203025,
+        "webScaleValidated": false
+      },
+      "measurementPresentation": {
+        "originalPdfGeometryChecked": true,
+        "webScaleValidated": false,
+        "physicalMeasurementReuse": "blocked-until-scale-and-format-calibration"
+      }
+    }
+  ]
+}

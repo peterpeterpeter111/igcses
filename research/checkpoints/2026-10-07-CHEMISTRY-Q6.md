@@ -1,0 +1,15 @@
+# Current checkpoint — 7 October 2026, Chemistry Q6
+
+Read `research/checkpoints/2026-10-07-CHEMISTRY-Q6.md` first. Continued local 54e10a3 without restarting. Chemistry now has 32 detailed Q1–Q6 parts /60 of110 marks, and42 partial numbered task mappings. Whole visual index remains56/110; remaining24 parts/50 marks need detailed extraction. Zero fully processed papers, complete curriculum items or active exam templates.
+
+210 tests, types/lint,16 research checks, evidence errors=[], production build and public scan124 files/zero findings pass. Ledger219 tasks/285 mappings. Private allocation records preserve capped observations, threshold ion-table credit, independent indicator marking and narrow hydration ECF. No active marker/generator is claimed. Notes36 partial documents/1,056 sections and all other subject counts unchanged; no notes/schema/D1 changes.
+
+GitHub02f0d15 and owner-private Sites version6 mirror earlier c13e91d; Q5/Q6 need non-force sync and exact-source publication. Desktop local notes shortcut remains available. Latest29% five-hour/75% weekly remaining; continue above5% in both, checkpoint/pause at5%, no reset. Next Q7 gas-test conditional dependencies, then remaining paper, curriculum and calibrated templates. Preserve both histories/raw manifests/current UI. AI last.
+
+QP12–13 and MS9–10 visually reviewed against the obtained source PDFs. Own specification22/24/26 reviewed;19/20 already checked. Current issue3 postdates the paper, so historical amendment reconciliation remains pending.
+
+Six leaves add13 marks. Observation M1–M6 form an any-two pool; synonyms do not add credit and “moves on surface” covers movement plus floating. Heat/flame are ignored. These six eligibility records have zero additive marks, with maximum2 encoded separately. Phenolphthalein pink and hydroxide/alkaline explanation are marked independently; red/purple rejected and oxide formation ignored. Wire cleaning explanation retains contamination/removal and interference prevention without inventing a mandatory mark dependency. Lithium MCQ label C matches printed red.
+
+Three ion positions award2 for all3 correct or1 for any2; not3 additive marks. Printed alternative charge order retained for aluminium/sulfate. Hydrated salt calculation independently checks23.7−12.9=10.8g,12.9/258=0.05mol,10.8/18=0.6mol,x=12. Correct12 without working earns4; final ratio must be a whole number. Source ECF explicitly concerns incorrect water mass; no general ECF invented. Alternative methods accepted. No formula/response recognizer implemented.
+
+21 additional source drift cases reject before any ledger write;137 total source/index mutation cases across Chemistry. Exporter stays byte-idempotent, bounded, and preserves unrelated partitions and raw manifests. New links remain partial; family similarity and performed practical coverage are not inferred from these single supplied contexts. Evidence report:research/reviews/2026-10-07-chemistry-q6-evidence.json; logs:work/chemistry-q6-*.log. Previous isolated D1 proof remains applicable because no database content/schema changed.

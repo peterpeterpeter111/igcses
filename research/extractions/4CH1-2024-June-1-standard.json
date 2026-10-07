@@ -20,13 +20,19 @@
   "fullyProcessed": false,
   "wholePaperMarks": 110,
   "wholePaperLeafCount": 56,
-  "detailedLeafTasks": 22,
-  "detailedOriginalMarks": 38,
+  "detailedLeafTasks": 56,
+  "detailedOriginalMarks": 110,
   "reviewedQuestionTotals": {
     "1": 7,
     "2": 9,
     "3": 10,
-    "4": 12
+    "4": 12,
+    "5": 9,
+    "6": 13,
+    "7": 13,
+    "8": 15,
+    "9": 11,
+    "10": 11
   },
   "reviewedSubsetMarksReconciled": true,
   "marksReconciled": false,
@@ -116,8 +122,13 @@
       20,
       22,
       23,
+      24,
+      25,
       26,
       27,
+      28,
+      29,
+      30,
       32
     ],
     "wholeHistoricalAmendmentReconciliation": "pending"
@@ -141,17 +152,47 @@
       {
         "question": "4",
         "path": "4CH1-2024-June-1-standard/Q4.json"
+      },
+      {
+        "question": "5",
+        "path": "4CH1-2024-June-1-standard/Q5.json"
+      },
+      {
+        "question": "6",
+        "path": "4CH1-2024-June-1-standard/Q6.json"
+      },
+      {
+        "question": "7",
+        "path": "4CH1-2024-June-1-standard/Q7.json"
+      },
+      {
+        "question": "8",
+        "path": "4CH1-2024-June-1-standard/Q8.json"
+      },
+      {
+        "question": "9",
+        "path": "4CH1-2024-June-1-standard/Q9.json"
+      },
+      {
+        "question": "10",
+        "path": "4CH1-2024-June-1-standard/Q10.json"
       }
     ]
   },
   "blockers": [
-    "Q5–Q10:34 of56 parts /72 marks remain without detailed extraction; whole structural index is confirmed separately.",
+    "All56 leaf parts /110 marks now have detailed source records. Historical/current scope, AO/experimental/skills and template/response calibration remain; this is not a fully processed paper.",
     "Issue 3 September 2024 postdates the sitting; whole historical and current-scope reconciliation remains incomplete.",
     "Official per-leaf AO and whole experimental/mathematical skill allocation remain unreviewed.",
     "Q1 chlorine-test concessions/exclusions and alternative-path dependencies need source-policy and response calibration.",
     "No calibrated generative family, semantic marker or complete template linkage.",
     "Q3 formula notation, electron-count ECF and isotope subsumption/rounding concessions await source-policy and response calibration.",
-    "Q4 no-ECF formula mass, formula ordering, distillation rejection and criterion-specific bonding exclusions await source-policy/response calibration."
+    "Q4 no-ECF formula mass, formula ordering, distillation rejection and criterion-specific bonding exclusions await source-policy/response calibration.",
+    "Q5 dependent dye identification, immobile-sample inference, source rounding/measurement concessions and web-scale calibration remain incomplete.",
+    "Q6 capped observations, threshold ion table, independently marked indicator explanation and narrow hydration ECF remain without response/generation calibration.",
+    "Q7 drawing recognition, balanced-formula dependencies, unassigned environmental-effect scope and conditional gas-test exceptions require calibration/review.",
+    "Q8 drawing recognition, stereo-isomer source concessions, parent-summary omissions, polymer disposal alternatives and combustion ECF/states require curriculum or calibration review.",
+    "Q9 partial linked-pair scoring, graph tolerance/presentation and collision-energy contradiction cap remain uncalibrated.",
+    "Q10 nitric-acid context is not general acid/metal syllabus coverage; thermometer/temperature ECF, calorimetry precision and signed enthalpy ECF remain uncalibrated."
   ],
   "processingNotes": [
     "The existing raw indexed-only manifest and its zero extracted count remain unchanged; this dated overlay records two Q1 parts/seven original marks.",
@@ -163,7 +204,13 @@
     "Q2 adds eight leaves/nine original marks from QP4–5/MS5. The ranking is one mark for the complete sequence, not per letter. Balanced symbol-equation multiples/fractions are source concessions. Source hazard/heat exclusions, reverse reactivity and alternative redox credit partitions remain blocked for semantic/generative calibration. No reaction procedure or performed practical is claimed.",
     "Q3 adds six leaves/ten marks from QP6–7/MS6. The atom has shell populations2,8,2; Z is not an element symbol. Isotope mass numbers are derived from proton plus neutron counts, not supplied directly. M2 subsumes M1 is printed in the isotope subsection only; no such explicit electron-count subsumption is invented. Narrow division-by-12 ECF, table-dependent M4 and worked/no-working credit examples are private source records, not an implemented semantic marker.",
     "Q4 adds six leaves/twelve marks from QP8–9/MS7. The printed Periodic Table on QP2 supplies C12/H1/N14/O16; QP24 is blank and is not an insert. Correct-result credit without working and the no-ECF policy are recorded privately. Empirical atom order is unrestricted. Fractional distillation is rejected. Melting-point criterion exclusions remain source-specific and do not become invented prerequisite dependencies or a performed practical claim.",
-    "Whole visual structure now reconciles56 leaf parts/110 original marks across24QP/18MS pages. Detailed extraction remains22parts/38marks. Multi-position tables, multi-answer drawings and capped mark-point pools remain single original leaves. Original indexed-only history and zero processed status are unchanged. Full processing still requires source/curriculum/AO/skills and response/template validation."
+    "Whole visual structure now reconciles56 leaf parts/110 original marks across24QP/18MS pages. Detailed extraction remains22parts/38marks. Multi-position tables, multi-answer drawings and capped mark-point pools remain single original leaves. Original indexed-only history and zero processed status are unchanged. Full processing still requires source/curriculum/AO/skills and response/template validation.",
+    "Q5 adds four leaves/nine marks. Original printed diagram geometry is checked against the source scheme; screen/print presentation calibration remains separate and blocked. The dye-identification explanation depends on the correct pair; the unmoved sample does not establish a single dye. Source measurement ranges and rounding exclusions are private records, not a validated semantic marker.",
+    "Q6 adds six leaves/thirteen marks. Non-additive allocation and source-specific concessions remain in private partitions. No active recognizer or template is claimed.",
+    "Q7 adds six leaves/thirteen marks. Diagram, equation and conditional gas-test source policies remain in private partitions, not an active semantic marker. An environmental-effect leaf remains unmapped rather than inventing a current numbered requirement.",
+    "Q8 adds eight leaves/fifteen marks. Source-specific structure, repeat-unit, disposal and combustion policies remain private; no active generator/recognizer. Own specification4.3 includes isomerism,4.6 includes addition/combustion and4.12 includes incomplete combustion despite narrower local parent summaries; full substatement audits remain pending.",
+    "Q9 adds five leaves/eleven marks. Non-additive linked-pair allocation, graph conditions/tolerance and contradiction limits remain private, not an active semantic/drawing marker. No full practical coverage is claimed.",
+    "Q10 adds five leaves/eleven marks, completing detailed source records for all56/110 without promotion to fully processed. Temperature, precision, sign and ECF policies remain private; printed nitric-acid context does not expand current2.37. No active marker/generator."
   ],
   "sourceReactivityTable": {
     "rows": [
@@ -351,6 +398,20 @@
         7,
         8,
         9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
         24
       ],
       "wholeDocumentReviewed": false
@@ -361,7 +422,17 @@
         4,
         5,
         6,
-        7
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
       ],
       "wholeDocumentReviewed": false
     }

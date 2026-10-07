@@ -1,0 +1,980 @@
+{
+  "schemaVersion": 1,
+  "paperId": "4CH1-2024-June-1-standard",
+  "question": "7",
+  "tasks": [
+    {
+      "paperId": "4CH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4CH1-2024-June-1-standard.Q7.a",
+      "questionPath": "7.a",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        14
+      ],
+      "markSchemePages": [
+        11
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Select",
+      "requiredKnowledge": [
+        "approximate atmospheric nitrogen percentage"
+      ],
+      "contextSummary": "Choose the approximate nitrogen percentage by volume from four options.",
+      "solutionStructure": [
+        "Select D,80%, matching the source approximation."
+      ],
+      "markingMethod": "single-mcq-selection",
+      "criteria": [
+        {
+          "id": "4CH1-2024-June-1-standard.Q7.a:M1",
+          "marks": 1,
+          "rule": "D (80%)."
+        }
+      ],
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4CH1:issue3:2.9",
+          "kind": "primary",
+          "currentApplicability": "partial-current-scope",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Identify the approximate nitrogen percentage in air.",
+          "evidenceRefs": [
+            {
+              "documentId": "4CH1-spec",
+              "pdfPages": [
+                23
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                14
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                11
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "written-scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            14
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No authoritative per-leaf AO allocation inspected.",
+      "proposedFamilyId": "4CH1.7-a",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generator or response/drawing recognizer; diagram completeness, equation dependencies and conditional gas-test exceptions require validation."
+      ],
+      "sourceQualification": {
+        "generatedUse": "blocked-until-diagram-equation-and-conditional-gas-test-calibration",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            11
+          ]
+        }
+      },
+      "sourceScoring": {
+        "acceptedLabel": "D",
+        "acceptedContent": "80%",
+        "labelMustMatchPrintedChoice": true,
+        "approximationSpecified": true,
+        "recognitionStatus": "not-implemented"
+      },
+      "scoringRule": {
+        "mode": "single-mcq-selection",
+        "maximum": 1,
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            11
+          ]
+        }
+      },
+      "sourceChoices": [
+        {
+          "label": "A",
+          "text": "1%"
+        },
+        {
+          "label": "B",
+          "text": "20%"
+        },
+        {
+          "label": "C",
+          "text": "70%"
+        },
+        {
+          "label": "D",
+          "text": "80%"
+        }
+      ]
+    },
+    {
+      "paperId": "4CH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4CH1-2024-June-1-standard.Q7.b",
+      "questionPath": "7.b",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        14
+      ],
+      "markSchemePages": [
+        11
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Complete",
+      "requiredKnowledge": [
+        "nitrogen triple bond",
+        "outer-electron dot-and-cross diagram"
+      ],
+      "contextSummary": "Complete the two-atom nitrogen diagram, showing outer electrons only.",
+      "solutionStructure": [
+        "Three shared pairs between nitrogen atoms.",
+        "Rest of molecule fully correct: one lone pair on each atom; second mark depends on first."
+      ],
+      "markingMethod": "dependent-dot-cross-completion",
+      "criteria": [
+        {
+          "id": "4CH1-2024-June-1-standard.Q7.b:M1",
+          "marks": 1,
+          "rule": "Three pairs of electrons between the two nitrogen atoms."
+        },
+        {
+          "id": "4CH1-2024-June-1-standard.Q7.b:M2",
+          "marks": 1,
+          "rule": "Rest of molecule fully correct; M2 depends on M1."
+        }
+      ],
+      "acceptableAlternatives": [],
+      "dependencies": [
+        {
+          "criterionId": "4CH1-2024-June-1-standard.Q7.b:M2",
+          "requiresCriterionId": "4CH1-2024-June-1-standard.Q7.b:M1"
+        }
+      ],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4CH1:issue3:1.46",
+          "kind": "primary",
+          "currentApplicability": "partial-current-scope",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Complete the specified nitrogen covalent diagram.",
+          "evidenceRefs": [
+            {
+              "documentId": "4CH1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                14
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                11
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:1.44",
+          "kind": "supporting",
+          "currentApplicability": "partial-current-scope",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Represent shared electron pairs in covalent bonds.",
+          "evidenceRefs": [
+            {
+              "documentId": "4CH1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                14
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                11
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "incomplete-dot-cross-diagram"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            14
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No authoritative per-leaf AO allocation inspected.",
+      "proposedFamilyId": "4CH1.7-b",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generator or response/drawing recognizer; diagram completeness, equation dependencies and conditional gas-test exceptions require validation."
+      ],
+      "sourceQualification": {
+        "generatedUse": "blocked-until-diagram-equation-and-conditional-gas-test-calibration",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            11
+          ]
+        }
+      },
+      "sourceScoring": {
+        "atomLabels": [
+          "N",
+          "N"
+        ],
+        "sharedElectronPairs": 3,
+        "lonePairsPerAtom": [
+          1,
+          1
+        ],
+        "totalOuterElectrons": 10,
+        "outerElectronsOnly": true,
+        "anyCombinationOfDotsAndCrossesAllowed": true,
+        "m2DependsOnM1": true,
+        "recognitionStatus": "not-implemented"
+      },
+      "scoringRule": {
+        "mode": "dependent-dot-cross-completion",
+        "maximum": 2,
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            11
+          ]
+        }
+      }
+    },
+    {
+      "paperId": "4CH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4CH1-2024-June-1-standard.Q7.c.i",
+      "questionPath": "7.c.i",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        14
+      ],
+      "markSchemePages": [
+        11
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Give",
+      "requiredKnowledge": [
+        "formula translation",
+        "balanced reaction equation"
+      ],
+      "contextSummary": "Write the reaction equation for nitrogen dioxide, water and oxygen forming nitric acid.",
+      "solutionStructure": [
+        "All species formulas correct.",
+        "Balance the correct species:4NO2+2H2O+O2→4HNO3."
+      ],
+      "markingMethod": "dependent-formula-and-balance",
+      "criteria": [
+        {
+          "id": "4CH1-2024-June-1-standard.Q7.c.i:M1",
+          "marks": 1,
+          "rule": "All formulae correct."
+        },
+        {
+          "id": "4CH1-2024-June-1-standard.Q7.c.i:M2",
+          "marks": 1,
+          "rule": "Balance correct formulae; M2 depends on M1."
+        }
+      ],
+      "acceptableAlternatives": [],
+      "dependencies": [
+        {
+          "criterionId": "4CH1-2024-June-1-standard.Q7.c.i:M2",
+          "requiresCriterionId": "4CH1-2024-June-1-standard.Q7.c.i:M1"
+        }
+      ],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4CH1:issue3:1.25",
+          "kind": "primary",
+          "currentApplicability": "partial-current-scope",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Translate the supplied reaction information into a balanced equation.",
+          "evidenceRefs": [
+            {
+              "documentId": "4CH1-spec",
+              "pdfPages": [
+                19
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                14
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                11
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:4.16",
+          "kind": "supporting",
+          "currentApplicability": "partial-current-scope",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Relate a nitrogen oxide atmospheric reaction to acid-rain formation.",
+          "evidenceRefs": [
+            {
+              "documentId": "4CH1-spec",
+              "pdfPages": [
+                30
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                14
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                11
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "written-scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            14
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No authoritative per-leaf AO allocation inspected.",
+      "proposedFamilyId": "4CH1.7-c-i",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generator or response/drawing recognizer; diagram completeness, equation dependencies and conditional gas-test exceptions require validation."
+      ],
+      "sourceQualification": {
+        "generatedUse": "blocked-until-diagram-equation-and-conditional-gas-test-calibration",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            11
+          ]
+        }
+      },
+      "sourceScoring": {
+        "reactants": [
+          "NO2",
+          "H2O",
+          "O2"
+        ],
+        "products": [
+          "HNO3"
+        ],
+        "coefficients": [
+          4,
+          2,
+          1,
+          4
+        ],
+        "coefficientMultiplesAllowed": true,
+        "coefficientFractionsAllowed": true,
+        "ignoreStateSymbolsEvenIfIncorrect": true,
+        "m2DependsOnM1": true,
+        "recognitionStatus": "not-implemented"
+      },
+      "scoringRule": {
+        "mode": "dependent-formula-and-balance",
+        "maximum": 2,
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            11
+          ]
+        }
+      }
+    },
+    {
+      "paperId": "4CH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4CH1-2024-June-1-standard.Q7.c.ii",
+      "questionPath": "7.c.ii",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        14
+      ],
+      "markSchemePages": [
+        11
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "State",
+      "requiredKnowledge": [
+        "environmental effects of acid rain"
+      ],
+      "contextSummary": "State one environmental effect of acid rain.",
+      "solutionStructure": [
+        "Give one accepted environmental effect, preserving the source exclusions."
+      ],
+      "markingMethod": "one-environmental-effect",
+      "criteria": [
+        {
+          "id": "4CH1-2024-June-1-standard.Q7.c.ii:M1",
+          "marks": 1,
+          "rule": "Any one environmental effect of acid rain."
+        }
+      ],
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [],
+      "stimulusTypes": [
+        "written-scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            14
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No authoritative per-leaf AO allocation inspected.",
+      "proposedFamilyId": "4CH1.7-c-ii",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generator or response/drawing recognizer; diagram completeness, equation dependencies and conditional gas-test exceptions require validation."
+      ],
+      "sourceQualification": {
+        "generatedUse": "blocked-until-diagram-equation-and-conditional-gas-test-calibration",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            11
+          ]
+        },
+        "unmappedRationale": "Inspected current point4.16 concerns acid-rain formation, not an explicit named environmental-effect requirement; no invented current point mapping."
+      },
+      "sourceScoring": {
+        "namedExamples": [
+          "acidifies lakes",
+          "kills fish",
+          "deforestation",
+          "damages plants",
+          "corrodes marble statues",
+          "corrodes buildings"
+        ],
+        "otherEnvironmentalEffectsAccepted": true,
+        "reject": [
+          "ozone layer"
+        ],
+        "ignore": [
+          "climate change"
+        ],
+        "maximum": 1,
+        "recognitionStatus": "not-implemented"
+      },
+      "scoringRule": {
+        "mode": "one-environmental-effect",
+        "maximum": 1,
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            11
+          ]
+        }
+      }
+    },
+    {
+      "paperId": "4CH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4CH1-2024-June-1-standard.Q7.d.i",
+      "questionPath": "7.d.i",
+      "originalMarks": 1,
+      "questionPaperPages": [
+        14
+      ],
+      "markSchemePages": [
+        11
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Select",
+      "requiredKnowledge": [
+        "ammonium carbonate ion ratios"
+      ],
+      "contextSummary": "Choose the ammonium carbonate formula from four options.",
+      "solutionStructure": [
+        "D:(NH4)2CO3."
+      ],
+      "markingMethod": "single-mcq-selection",
+      "criteria": [
+        {
+          "id": "4CH1-2024-June-1-standard.Q7.d.i:M1",
+          "marks": 1,
+          "rule": "D ((NH4)2CO3)."
+        }
+      ],
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4CH1:issue3:1.39",
+          "kind": "primary",
+          "currentApplicability": "partial-current-scope",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Identify the ionic formula from ammonium/carbonate charges.",
+          "evidenceRefs": [
+            {
+              "documentId": "4CH1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                14
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                11
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:1.38",
+          "kind": "supporting",
+          "currentApplicability": "partial-current-scope",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Use the listed ammonium/carbonate ion charges.",
+          "evidenceRefs": [
+            {
+              "documentId": "4CH1-spec",
+              "pdfPages": [
+                20
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                14
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                11
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "written-scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            14
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No authoritative per-leaf AO allocation inspected.",
+      "proposedFamilyId": "4CH1.7-d-i",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generator or response/drawing recognizer; diagram completeness, equation dependencies and conditional gas-test exceptions require validation."
+      ],
+      "sourceQualification": {
+        "generatedUse": "blocked-until-diagram-equation-and-conditional-gas-test-calibration",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            11
+          ]
+        }
+      },
+      "sourceScoring": {
+        "acceptedLabel": "D",
+        "acceptedContent": "(NH4)2CO3",
+        "labelMustMatchPrintedChoice": true,
+        "recognitionStatus": "not-implemented"
+      },
+      "scoringRule": {
+        "mode": "single-mcq-selection",
+        "maximum": 1,
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            11
+          ]
+        }
+      },
+      "sourceChoices": [
+        {
+          "label": "A",
+          "text": "NH3CO3"
+        },
+        {
+          "label": "B",
+          "text": "(NH3)2CO3"
+        },
+        {
+          "label": "C",
+          "text": "NH4CO3"
+        },
+        {
+          "label": "D",
+          "text": "(NH4)2CO3"
+        }
+      ]
+    },
+    {
+      "paperId": "4CH1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "taskId": "4CH1-2024-June-1-standard.Q7.d.ii",
+      "questionPath": "7.d.ii",
+      "originalMarks": 6,
+      "questionPaperPages": [
+        15
+      ],
+      "markSchemePages": [
+        12
+      ],
+      "generalSchemePages": [
+        3
+      ],
+      "commandWord": "Describe",
+      "requiredKnowledge": [
+        "ammonium-ion gas test",
+        "carbonate-ion gas test",
+        "reagent versus gas testing"
+      ],
+      "contextSummary": "Describe tests confirming ammonium and carbonate ions in an unlabelled solution.",
+      "solutionStructure": [
+        "Add sodium hydroxide solution and heat, then test the gas with damp red litmus; blue supports ammonia.",
+        "Add acid only to the solution, then test the evolved gas with limewater; cloudiness supports carbon dioxide.",
+        "Retain method dependencies, independent observation exceptions and exclusions for adding indicators directly to the solution."
+      ],
+      "markingMethod": "conditional-two-ion-gas-tests",
+      "criteria": [
+        {
+          "id": "4CH1-2024-June-1-standard.Q7.d.ii:M1",
+          "marks": 1,
+          "rule": "Add sodium hydroxide solution (and heat)."
+        },
+        {
+          "id": "4CH1-2024-June-1-standard.Q7.d.ii:M2",
+          "marks": 1,
+          "rule": "Test the gas/ammonia with damp red litmus paper."
+        },
+        {
+          "id": "4CH1-2024-June-1-standard.Q7.d.ii:M3",
+          "marks": 1,
+          "rule": "Red litmus turns blue."
+        },
+        {
+          "id": "4CH1-2024-June-1-standard.Q7.d.ii:M4",
+          "marks": 1,
+          "rule": "Add hydrochloric acid only; other acids accepted."
+        },
+        {
+          "id": "4CH1-2024-June-1-standard.Q7.d.ii:M5",
+          "marks": 1,
+          "rule": "Test the gas/carbon dioxide with limewater."
+        },
+        {
+          "id": "4CH1-2024-June-1-standard.Q7.d.ii:M6",
+          "marks": 1,
+          "rule": "Limewater turns cloudy/milky/white precipitate."
+        }
+      ],
+      "acceptableAlternatives": [],
+      "dependencies": [
+        {
+          "criterionId": "4CH1-2024-June-1-standard.Q7.d.ii:M5",
+          "requiresCriterionId": "4CH1-2024-June-1-standard.Q7.d.ii:M4"
+        }
+      ],
+      "commonErrors": [
+        "Adding litmus directly to the original solution.",
+        "Adding limewater directly to the original solution.",
+        "Imposing an unconditional M2→M1 dependency and losing the printed heating/gas exception.",
+        "Imposing dependencies on independently creditable correct gas observations."
+      ],
+      "syllabusMappings": [
+        {
+          "pointId": "4CH1:issue3:2.47",
+          "kind": "primary",
+          "currentApplicability": "partial-current-scope",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Describe the ammonium-ion test; no performed practical is certified.",
+          "evidenceRefs": [
+            {
+              "documentId": "4CH1-spec",
+              "pdfPages": [
+                26
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                15
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                12
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:2.48",
+          "kind": "primary",
+          "currentApplicability": "partial-current-scope",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Describe the carbonate-ion test; no performed practical is certified.",
+          "evidenceRefs": [
+            {
+              "documentId": "4CH1-spec",
+              "pdfPages": [
+                26
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                15
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                12
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:2.44",
+          "kind": "supporting",
+          "currentApplicability": "partial-current-scope",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Recognise the ammonia and carbon-dioxide gas tests.",
+          "evidenceRefs": [
+            {
+              "documentId": "4CH1-spec",
+              "pdfPages": [
+                26
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                15
+              ]
+            },
+            {
+              "documentId": "4CH1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                12
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "written-scenario"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            15
+          ]
+        }
+      ],
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No authoritative per-leaf AO allocation inspected.",
+      "proposedFamilyId": "4CH1.7-d-ii",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "blockers": [
+        "No calibrated generator or response/drawing recognizer; diagram completeness, equation dependencies and conditional gas-test exceptions require validation."
+      ],
+      "sourceQualification": {
+        "generatedUse": "blocked-until-diagram-equation-and-conditional-gas-test-calibration",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            12
+          ]
+        }
+      },
+      "sourceScoring": {
+        "maximum": 6,
+        "ammonium": {
+          "M1": "add sodium hydroxide solution (and heat)",
+          "M2": "test gas/ammonia with damp red litmus paper",
+          "M3": "red litmus turns blue",
+          "m2CreditCondition": {
+            "anyOf": [
+              "M1 earned",
+              "heating solution and producing a gas to test"
+            ]
+          },
+          "m3IndependentIf": "ammonia gas correctly tested with correct paper colour change",
+          "indicatorAlternative": {
+            "method": "universal indicator paper",
+            "observations": [
+              "blue",
+              "purple"
+            ],
+            "covers": [
+              "M2",
+              "M3"
+            ]
+          },
+          "noM2OrM3If": "litmus paper added directly to solution"
+        },
+        "carbonate": {
+          "M4": "add hydrochloric acid only to solution",
+          "otherAcidsAccepted": true,
+          "M5": "test gas/carbon dioxide with limewater",
+          "M6Alternatives": [
+            "cloudy",
+            "milky",
+            "white precipitate"
+          ],
+          "m5DependsOnM4": true,
+          "m4AcidOnlyToSolution": true,
+          "m6IndependentIf": "correct limewater test on carbon dioxide gas carried out",
+          "noM5OrM6If": "limewater added directly to solution"
+        },
+        "recognitionStatus": "not-implemented"
+      },
+      "scoringRule": {
+        "mode": "conditional-two-ion-gas-tests",
+        "maximum": 6,
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            12
+          ]
+        }
+      },
+      "conditionalDependencies": [
+        {
+          "criterionId": "4CH1-2024-June-1-standard.Q7.d.ii:M2",
+          "anyOf": [
+            {
+              "requiresCriterionId": "4CH1-2024-June-1-standard.Q7.d.ii:M1"
+            },
+            {
+              "sourceCondition": "heating solution and producing a gas to test"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

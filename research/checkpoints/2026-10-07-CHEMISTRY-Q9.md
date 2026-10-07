@@ -1,0 +1,13 @@
+# Current checkpoint — 7 October 2026, Chemistry Q9
+
+Read `research/checkpoints/2026-10-07-CHEMISTRY-Q9.md` first. Continued2d6b223. Chemistry has51 detailed Q1–Q9 parts /99 of110 marks,76 partial numbered task mappings. Whole visual index remains56/110;Q10 has5 parts/11 marks needing detailed extraction. Zero fully processed papers, complete curriculum items or active exam templates.
+
+216 tests, clean types/lint,16 research checks, evidence errors=[], production build/public124 files/zero findings pass. Ledger238 tasks/319 mappings. Q9 preserves the linked-pair/description caps, original graph grid and collision-energy contradiction cap. Notes36 partial documents/1,056 sections and all other subjects unchanged. No notes/schema/D1 changes; desktop shortcut retained.
+
+GitHub02f0d15 and owner-private Sites version6 still mirrorc13e91d; Q5–Q9 need non-force sync/exact-source publication. Latest19% five-hour/74% weekly remaining. Continue above5% in both, checkpoint/pause at5%, no reset. NextQ10 source-specific metal/acid equation and calorimetry/enthalpy, then curriculum/template calibration. Preserve history/raw manifests/UI; AI last.
+
+QP19–21/MS15 visually checked; own specification28 checked. Five leaves add11 marks. Gas must be given off, not merely formed; marble dissolving ignored. Cotton wool stops acid spray, not solids. Graph explanation selects any two linked pairs among start/high concentration, slowing/lower concentration, plateau/acid exhausted; marble is stated in excess. Maximum4 and maximum2 graph-description marks retained. Six eligibility records use zero additive marks; source does not expressly resolve every partial-pair/standalone explanation combination, so calibration remains pending rather than inventing a marker.
+
+Half-concentration/same-volume curve must start at origin below original and level at0.27g ±half small square. Original PDF vector grid has36 horizontal lines/35 intervals from0 to0.7g, giving0.02g per square and0.01g half-square. Private originalGridAudit binds sourceSHA/page20 and grid coordinates117.1224–315.5524. No source endpoint-inclusion rule invented; web scale/drawing recognition unvalidated. Smaller-chip same-mass explanation increases rate, greater surface area, more collisions per unit time/frequency; energy/moving-faster error caps total at1, “less chance” ignored. No invented prerequisite marks.
+
+20 new drift cases reject before ledger writes;205 total Chemistry source/index mutations. Evidence report research/reviews/2026-10-07-chemistry-q9-evidence.json; logs work/chemistry-q9-*.log. All practical links are partial/supporting; source scenarios do not prove performed investigation. No raw PDF/source modification or full paper processing claim.

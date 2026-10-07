@@ -1,0 +1,15 @@
+# Current checkpoint — 7 October 2026, Chemistry Q7
+
+Read `research/checkpoints/2026-10-07-CHEMISTRY-Q7.md` first. Continued 2f07a98. Chemistry now38 detailed Q1–Q7 parts /73 of110 marks and52 partial numbered task mappings. Whole visual index remains56/110; remaining18 parts/37 marks need detailed extraction. Zero fully processed papers, complete curriculum items or active exam templates.
+
+212 tests, clean types/lint,16 research checks, evidence errors=[], production build/public124 files/zero findings pass. Ledger225 tasks/295 mappings. Q7 preserves diagram/equation dependencies and conditional gas-test concessions; environmental-effect scope stays explicitly unmapped. Notes36 partial documents/1,056 sections and other subject counts unchanged. No notes/schema/D1 changes; desktop shortcut retained.
+
+GitHub02f0d15 and owner-private Sites version6 still mirror c13e91d; newer Q5–Q7 need non-force sync/exact-source publication. Latest25% five-hour/75% weekly remaining. Continue above5% in both, checkpoint/pause at5%; no reset. Next Q8 organic diagrams/disposal/combustion, then remaining paper, curriculum and calibrated templates. Preserve histories/raw manifests/current UI. AI last.
+
+QP14–15/MS11–12 visually checked; own specification19/20/23/26/30 checked. Six leaves add13 marks. Source nitrogen MCQ uses the approximate80% optionD. Dot-cross N₂ requires3 shared pairs and a fully correct remaining diagram; M2 depends onM1, any combination of dots/crosses accepted. Private representation records10 outer electrons and one lone pair per atom; drawing recognizer absent.
+
+NO₂/H₂O/O₂→HNO₃ coefficients4:2:1:4 independently atom-balanced. M2 depends on correct formulas; multiples/fractions allowed and state symbols ignored even if wrong. Acid-rain effect allows other correct environmental effects, rejects ozone layer and ignores climate change. Inspected current4.16 covers formation rather than explicitly named effects, so no invented numbered mapping. Ammonium-carbonate MCQ optionD matches(NH₄)₂CO₃.
+
+Six-mark ion-test leaf remains one leaf. M2 gas litmus test depends onM1 OR heating the solution and producing gas; M3 correct gas/paper observation can earn independently. Universal indicator paper blue/purple accepted forM2/M3. Direct litmus into original solution blocksM2/M3. Carbonate M5 gas limewater method depends onM4 acid-only addition, with other acids accepted; correct gas/limewater observationM6 can earn independently. Direct limewater into original solution blocksM5/M6. Only unconditional M5→M4 is in dependencies; M2's alternative is separately encoded in conditionalDependencies. No active marker/generator or invented M3/M6 dependencies.
+
+23 new altered-source cases reject before ledger writes;160 total Chemistry source/index mutation cases. Private schemes stay out of public coverage. Evidence report research/reviews/2026-10-07-chemistry-q7-evidence.json; logs work/chemistry-q7-*.log. Source raw hashes/history unchanged. Historical amendment, AO/skills/experimental, current-scope and generation/response-calibration gates remain.
