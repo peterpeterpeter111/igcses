@@ -1,5 +1,7 @@
 # Resume the saved project
 
+Latest verified application release: local `9e1621b` /GitHub `a89b5a1`, exact tree `3d7b7ecc34bf869e02e877775bb756e95a6d8adc`. Owner-private Sites deployment `appgdep_6ac6295185e081918b78aeddf6af07cb` succeeded for that same local commit at https://igcses-study.peterwu2311.chatgpt.site .178 tests and final types/lint/build/public checks pass. See the whole-inventory checkpoint for full proof and remaining work. This final note is a documentation descendant; preserve both histories. Major work is paused for unavailable current allowance monitoring, not an observed5% threshold. No reset used.
+
 # Current checkpoint — 7 October 2026, Biology whole visual inventory
 
 Read `research/checkpoints/2026-10-07-BIOLOGY-WHOLE-INVENTORY.md`, then the library publication record. The existing owner-private website is published at https://igcses-study.peterwu2311.chatgpt.site. Initial release local1fb1d50 /GitHubcb1c6fb shares the verified tree; later source changes require their own non-force sync and publication.

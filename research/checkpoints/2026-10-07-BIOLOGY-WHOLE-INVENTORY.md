@@ -1,5 +1,7 @@
 # Biology whole visual inventory — 7 October 2026
 
+Verified release: local `9e1621b7b52d032ff0ef44bdf9adacde9007c457` /GitHub `a89b5a12882777f94be112a12942e23d4290d6dc` share fetch-verified tree `3d7b7ecc34bf869e02e877775bb756e95a6d8adc`. Prior remote remains an ancestor. Same local commit was pushed normally to Sites and deployed owner-private: version `appgprj_6a9fb37ec9b48191a33eada1843b3a8f~appgver_2053fce9b54881918caf2c7184f6dd87`, deployment `appgdep_6ac6295185e081918b78aeddf6af07cb`, native status succeeded at11:13:43 UTC with no failure. URL: https://igcses-study.peterwu2311.chatgpt.site . Proof: `work/github-sync/oct7-inventory-final/verified.json`. This final verification note is a documentation descendant; the deployed application code remains that verified release.
+
 This is a descendant of the published local release `1fb1d50` /GitHub `cb1c6fb`, whose exact tree and Sites URL are recorded in `2026-10-07-LIBRARY-PUBLISHED.md`. Preserve both histories and the current private audience. No reset was consumed.
 
 The full obtained Biology QP (32 pages) and matching MS (24 pages) now have a visual structural inventory. Earlier Q1–Q6 reviewed pages are retained; newly inspected pages include Q7–Q10, all outstanding blank pages, covers, publication identity and terminal page. New index: `research/paper-indexes/4BI1-2024-summer-1b.json`. Both covers/publication metadata match paper log P75813A and component1B; printed10May/filename11May conflict and unresolved legacy variant remain explicit.
