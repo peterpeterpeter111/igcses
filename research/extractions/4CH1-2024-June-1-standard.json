@@ -20,10 +20,11 @@
   "fullyProcessed": false,
   "wholePaperMarks": 110,
   "wholePaperLeafCount": null,
-  "detailedLeafTasks": 2,
-  "detailedOriginalMarks": 7,
+  "detailedLeafTasks": 10,
+  "detailedOriginalMarks": 16,
   "reviewedQuestionTotals": {
-    "1": 7
+    "1": 7,
+    "2": 9
   },
   "reviewedSubsetMarksReconciled": true,
   "marksReconciled": false,
@@ -46,13 +47,16 @@
   "pageAudit": {
     "questionPaper": {
       "visuallyReviewedPages": [
-        3
+        3,
+        4,
+        5
       ],
       "wholeDocumentReviewed": false
     },
     "markScheme": {
       "visuallyReviewedPages": [
-        4
+        4,
+        5
       ],
       "wholeDocumentReviewed": false
     }
@@ -69,9 +73,12 @@
     "publication": "September 2024",
     "reviewedPages": [
       18,
+      19,
       20,
       22,
+      23,
       26,
+      27,
       32
     ],
     "wholeHistoricalAmendmentReconciliation": "pending"
@@ -83,11 +90,15 @@
       {
         "question": "1",
         "path": "4CH1-2024-June-1-standard/Q1.json"
+      },
+      {
+        "question": "2",
+        "path": "4CH1-2024-June-1-standard/Q2.json"
       }
     ]
   },
   "blockers": [
-    "Q2 onwards remain without detailed extraction; whole-paper leaf denominator and visual inventory are unconfirmed.",
+    "Q3 onwards remain without detailed extraction; whole-paper leaf denominator and visual inventory are unconfirmed.",
     "Issue 3 September 2024 postdates the sitting; whole historical and current-scope reconciliation remains incomplete.",
     "Official per-leaf AO and whole experimental/mathematical skill allocation remain unreviewed.",
     "Q1 chlorine-test concessions/exclusions and alternative-path dependencies need source-policy and response calibration.",
@@ -99,6 +110,66 @@
     "QP page3 and MS page4 both show Q1 total7. Five table positions remain one five-mark leaf, not five fabricated paper parts.",
     "Cover identity and110-mark allocation were checked previously; whole task/rubric allocation is not reconciled.",
     "Private question partitions keep marking data out of the public metadata module.",
-    "Published chlorine-test alternatives, dependent M2, iodide rejection and red-litmus maximum-one concession are source-specific records, not general chemistry rules."
-  ]
+    "Published chlorine-test alternatives, dependent M2, iodide rejection and red-litmus maximum-one concession are source-specific records, not general chemistry rules.",
+    "Q2 adds eight leaves/nine original marks from QP4–5/MS5. The ranking is one mark for the complete sequence, not per letter. Balanced symbol-equation multiples/fractions are source concessions. Source hazard/heat exclusions, reverse reactivity and alternative redox credit partitions remain blocked for semantic/generative calibration. No reaction procedure or performed practical is claimed."
+  ],
+  "sourceReactivityTable": {
+    "rows": [
+      {
+        "metal": "P",
+        "water": "no reaction",
+        "diluteHCl": "no reaction"
+      },
+      {
+        "metal": "Q",
+        "water": "very fast reaction",
+        "diluteHCl": "not done"
+      },
+      {
+        "metal": "R",
+        "water": "no reaction",
+        "diluteHCl": "slow reaction"
+      },
+      {
+        "metal": "S",
+        "water": "slow reaction",
+        "diluteHCl": "fast reaction"
+      }
+    ],
+    "labelsAreElementSymbols": false,
+    "sourceRef": {
+      "documentId": "4CH1-2024-June-1-standard:questionPaper",
+      "pdfPages": [
+        4
+      ]
+    }
+  },
+  "sourceDisplacementEquation": {
+    "reactants": [
+      {
+        "formula": "Fe2O3",
+        "coefficient": 1
+      },
+      {
+        "formula": "Al",
+        "coefficient": 2
+      }
+    ],
+    "products": [
+      {
+        "formula": "Fe",
+        "coefficient": 2
+      },
+      {
+        "formula": "Al2O3",
+        "coefficient": 1
+      }
+    ],
+    "sourceRef": {
+      "documentId": "4CH1-2024-June-1-standard:questionPaper",
+      "pdfPages": [
+        5
+      ]
+    }
+  }
 }

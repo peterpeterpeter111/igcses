@@ -1,3 +1,19 @@
+# Current checkpoint — 7 October 2026, Chemistry Q2
+
+Read `research/checkpoints/2026-10-07-CHEMISTRY-Q2.md` and the Q1 publication record first. Chemistry now has ten detailed parts/sixteen marks across Q1–Q2 and twelve partial mappings. Its whole denominator, visual inventory, historical/AO review and template calibration remain incomplete. The ledger has197 tasks/255 mappings. All200 tests, typecheck/lint, sixteen research checks, evidence reconciliation, build and public scan124/zero pass. Notes remain36 partial documents/1,056 sections; zero fully processed papers, complete chapters/points/objectives or active exam templates.
+
+Save/sync this delta non-force from fetch-verified GitHub b3828d6, then publish the exact built source. Sites version4 currently publishes ca5bd53; do not claim Q2 is live until verification. The Desktop notes shortcut works. GitHub's normal force=false updates work after head/ancestor checks; optional lease/PR services were failing. Next: Chemistry Q3, whole visual inventory, curriculum and template calibration. Keep AI last, preserve both histories/UI and consume no reset. Latest71% five-hour /82% weekly: continue above5% in both and checkpoint/pause at5%.
+
+# Historical preceding checkpoints
+
+# Current checkpoint — 7 October 2026, Chemistry Q1 published
+
+Read `research/checkpoints/2026-10-07-CHEMISTRY-Q1-PUBLISHED.md` first. Releaseca5bd53/GitHubb3828d6 have fetch-verified identical tree4bbf06e3322cd0cbd0dc592e5d68cfe6737fcf1e. Owner-private Sites version4 successfully publishes that exactsource at https://igcses-study.peterwu2311.chatgpt.site . Source sync recovered through a guarded force=false update after optional lease/PR service errors; no PR created,no force orhistory rewrite. No remaining sync/deployment blocker.
+
+Chemistry has two detailed Q1 leaves/seven marks andfive partial mapping links, with whole denominator/inventory still unknown. Biology45 detailed/110; ledger189 tasks/248 mappings.198 tests,types/lint,16 research checks,evidence errors=[],build/public124/zero pass.36 partial notes/1,056 sections,seven obtained pairs;zero fully processed papers,complete chapters/points/objectives oractive exam templates. Desktop notes shortcut works. This documentation needs sync; next Chemistry Q2 andwhole inventory, then curriculum/template calibration. Preserve both histories/UI,keep AI last andconsume no reset. Latest74% five-hour/82% weekly; continue above5% in both,checkpoint/pause at5%.
+
+# Historical preceding checkpoints
+
 # Current checkpoint — 7 October 2026, Chemistry detailed extraction begun
 
 Read `research/checkpoints/2026-10-07-CHEMISTRY-Q1.md` and the Biology publication record first. Chemistry Q1 now has two detailed leaves/seven marks andfive partial scope links; whole-paper part count/visual inventory remain unconfirmed.189 normalized tasks/248 mappings,19 documents/six paper rows. Biology remains45 detailed parts/110 marks.198 tests,types/lint,16 research checks,evidence errors=[],build/public scan124/zero pass. Final reader wording types/lint/build/public checks also pass.36 partial note documents/1,056 sections unchanged;zero fully processed papers oractive exam templates.
