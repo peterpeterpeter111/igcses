@@ -1,3 +1,15 @@
+# Current checkpoint — 7 October 2026, verified Chemistry release and resume gate
+
+Read `research/checkpoints/2026-10-07-CHEMISTRY-HANDOFF.md`, `2026-10-07-CHEMISTRY-ORGANIC-SUMMARIES.md` and `2026-10-07-CHEMISTRY-Q10.md` first. Preserve latest local history; do not restart/reset/discard or consume a reset. Check both allowances and continue substantive work only above5% in both; pause/checkpoint at5% in either. Last read6% five-hour/72% weekly; handoff saved at the threshold approach.
+
+Application source4d6b61134c47937d2ea472cae00ba96d82b0ab2a is verified and published as owner-private Sites version8. GitHubmain59dac72c2c7f5c0be03e8a94d6c73c4bc836eea3 is a non-force descendant and matches its exact tree5e55ce268efd3bdcfd8bc8b1eb2d19278b4e8cc0. Later handoff/readiness documents are a documentation delta, not a changed application. Live URL:https://igcses-study.peterwu2311.chatgpt.site. Desktop:/Users/peterstudymac/Desktop/IGCSE Notes.command.
+
+218 application tests, clean types/lint,16 research checks, evidence errors=[], production build and public scan124 files/zero findings pass. Chemistry now all56 detailed parts/110 marks with83 partial task mappings; zero remaining detailed parts in this one obtained pair. Source extraction is not full processing. All six subject notes remain partial:36 documents/1,056 sections;796 reviewed numbered identities,2,824 local requirements,1,354 partial teaching links. English separately6 objectives/41partiallinks. Seven obtained paper/scheme pairs; ledger243tasks/326mappings/19documents/six normalized papers. Physics51/110,Maths38/100,HumanBiology42/90,Biology45/110,English one2-mark detailed pilot. Zero fully processed papers, complete chapters/points/objectives, active exam templates or live AI; seven provisional offline families and separate lesson practice.
+
+Next: whole Chemistry historical/current-scope and experimental/math-skills review, source-credit/diagram/measurement calibration, then six-subject curriculum and validated template bank. Use research/reviews/2026-10-07-chemistry-post-extraction-readiness.json. Keep AI integration last. Do not invent official per-leaf AO allocations. Preserve indexed-only raw history, UI, all source and both histories. No D1/schema/seed/notes changes in this phase; prior isolated D1 proof still applies. No new bulk discovery started.
+
+# Historical preceding checkpoints
+
 # Current checkpoint — 7 October 2026, Chemistry organic summary repair
 
 Read `research/checkpoints/2026-10-07-CHEMISTRY-ORGANIC-SUMMARIES.md` and `2026-10-07-CHEMISTRY-DETAILED-PUBLISHED.md` first. Detailed Chemistry extraction is saved atd833a00: all56 parts/110 marks,83 partial task mappings. GitHub3e404f6 exactly mirrors that tree; owner-private Sites version7 successfully publishes it. This newer three-summary repair and publication record need non-force sync/publication.
