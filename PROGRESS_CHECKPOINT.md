@@ -1,3 +1,19 @@
+# Current checkpoint — 7 October 2026, Biology source-size repair
+
+Read `research/checkpoints/2026-10-07-BIOLOGY-EXTRACTION-PARTITIONS.md`, then the Q7 checkpoint. Saved Q7 locally53d6a20; sync preparation refused its199,366-byte single-file request. The blocker is resolved with seven explicit private question partitions and a validated logical reader/typed audit aggregate. All33 records and fields are preserved; the195,000-byte request limit is unchanged.187 tests, clean types/lint,16 research checks, evidence reconciliation, build and public scan124/zero findings pass. No notes/D1 or coverage promotion.
+
+Commit/sync Q7 and this repair non-force from GitHubd0a885b; preserve both histories. Desktop local notes shortcut works. Biology remains33 detailed/45 indexed parts and78/110 marks; Q8–Q10 pending.36 partial note documents/1,056 sections unchanged; zero processed papers/active exam templates. Existing publication is earlier9e1621b. Keep AI last and UI intact; no reset. Latest25% five-hour/88% weekly: continue above5% in both, save and pause at5%.
+
+# Historical preceding checkpoints
+
+# Current checkpoint — 7 October 2026, Biology Q7
+
+Read `research/checkpoints/2026-10-07-BIOLOGY-Q7.md` first. The Desktop local-notes launcher works. Previous local3b29f70/GitHubd0a885b have fetch-verified identical trees. Q7 adds four detailed parts/13 marks: Biology now33/45 parts and78/110 marks, still indexed and zero fully processed.33 partial numbered task mappings, nine selected mathematical skills; response recognition and generated reuse remain blocked. All source concessions, raw history and UI preserved.
+
+185 tests, types/lint,16 research checks, evidence reconciliation, build and public scan124/zero findings pass. Browser coverage verifies counts and remaining gaps. No notes/D1 changes;36 partial note documents/1,056 sections unchanged.175 normalized task rows. Existing publication remains earlier9e1621b; no Q7 Sites publication yet. Commit/sync this phase non-force, then Q8–Q10 and curriculum/template calibration. Keep AI last; no reset. Latest29% five-hour/89% weekly: continue above5% in both and pause/checkpoint at5%.
+
+# Historical preceding checkpoints
+
 # Current checkpoint — 7 October 2026, local notes and task partitions
 
 Read `research/checkpoints/2026-10-07-LOCAL-NOTES-AND-TASK-PARTITIONS.md` first. Continued fbe757c without restarting or discarding the unfinished migration. Desktop `IGCSE Notes.command` now opens the local library. All171 task records and fields are preserved in six declared subject partitions; five exporters and meaningful failure/idempotence tests pass.182 application tests, types/lint,16 research checks, build and public scan124/zero findings pass. No notes/D1 or coverage promotions.

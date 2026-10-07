@@ -1,0 +1,827 @@
+{
+  "schemaVersion": 1,
+  "paperId": "4BI1-2024-June-1-standard",
+  "question": "7",
+  "tasks": [
+    {
+      "paperId": "4BI1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "generalSchemePages": [
+        3
+      ],
+      "commandWordStatus": "source-checked-short-label",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO marks inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "taskId": "4BI1-2024-June-1-standard.Q7.a",
+      "questionPath": "7.a",
+      "originalMarks": 3,
+      "questionPaperPages": [
+        21
+      ],
+      "markSchemePages": [
+        16
+      ],
+      "commandWord": "Give",
+      "requiredKnowledge": [
+        "red and white blood-cell structure"
+      ],
+      "contextSummary": "Compare three structural features of red and white blood cells.",
+      "solutionStructure": [
+        "Select three distinct comparisons from four published structural categories."
+      ],
+      "markingMethod": "any-distinct",
+      "criteria": [
+        {
+          "id": "4BI1-2024-June-1-standard.Q7.a:point-1",
+          "marks": 1,
+          "rule": "Red cells lack a nucleus; the comparison guidance states white cells have a nucleus."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q7.a:point-2",
+          "marks": 1,
+          "rule": "Red cells are biconcave discs; white-cell guidance accepts non-biconcave or irregular shape."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q7.a:point-3",
+          "marks": 1,
+          "rule": "Red cells are smaller; white cells are larger."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q7.a:point-4",
+          "marks": 1,
+          "rule": "Red cells contain haemoglobin; white cells do not."
+        }
+      ],
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4BI1:issue3:2.59",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Compares selected blood-cell constituents, not platelets or plasma.",
+          "evidenceRefs": [
+            {
+              "documentId": "4BI1-spec",
+              "pdfPages": [
+                23
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                21
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                16
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4BI1:issue3:2.61",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Selected red-cell structure only; the task does not require adaptation-to-function explanations.",
+          "evidenceRefs": [
+            {
+              "documentId": "4BI1-spec",
+              "pdfPages": [
+                23
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                21
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                16
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [],
+      "stimulusRefs": [
+        {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            21
+          ]
+        }
+      ],
+      "proposedFamilyId": "4BI1.blood.7-a",
+      "blockers": [
+        "Candidate family only; drawing/free-text recognition and custom 2/4/6-mark adaptation remain uncalibrated.",
+        "Whole historical, experimental/AO and source-policy review remain incomplete."
+      ],
+      "scoringRule": {
+        "mode": "any-distinct",
+        "maximum": 3,
+        "eligibleCriterionIds": [
+          "4BI1-2024-June-1-standard.Q7.a:point-1",
+          "4BI1-2024-June-1-standard.Q7.a:point-2",
+          "4BI1-2024-June-1-standard.Q7.a:point-3",
+          "4BI1-2024-June-1-standard.Q7.a:point-4"
+        ],
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            16
+          ]
+        },
+        "selectionLimit": 3,
+        "creditPerCriterion": 1
+      },
+      "comparisonScoring": {
+        "categories": [
+          "nucleus",
+          "shape",
+          "relative-size",
+          "haemoglobin"
+        ],
+        "maximum": 3,
+        "redCellSideAcceptedAsPublished": true,
+        "whiteCellComparisons": [
+          "has nucleus",
+          "not biconcave or irregular",
+          "larger",
+          "no haemoglobin"
+        ],
+        "mandatoryBothSidesInEverySentence": null,
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            16
+          ]
+        }
+      },
+      "sourceQualification": {
+        "note": "The scheme gives red-cell alternatives with white-cell comparisons in additional guidance. Do not invent a mandatory two-sided wording parser; scope and learner-response calibration remain pending.",
+        "generatedUse": "blocked-until-comparison-response-calibration",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            16
+          ]
+        }
+      }
+    },
+    {
+      "paperId": "4BI1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "generalSchemePages": [
+        3
+      ],
+      "commandWordStatus": "source-checked-short-label",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO marks inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "taskId": "4BI1-2024-June-1-standard.Q7.b.i",
+      "questionPath": "7.b.i",
+      "originalMarks": 3,
+      "questionPaperPages": [
+        22
+      ],
+      "markSchemePages": [
+        16
+      ],
+      "commandWord": "Calculate",
+      "requiredKnowledge": [
+        "concentration times blood volume",
+        "standard form"
+      ],
+      "contextSummary": "Calculate the red-cell count for a woman at1890m with4.3 litres of blood; present standard form.",
+      "solutionStructure": [
+        "Read5.20 ×10^12 cells per litre from the women/1890m cell.",
+        "Multiply by4.3 to obtain22.36 ×10^12 =2.236 ×10^13; preserve published rounding alternatives."
+      ],
+      "markingMethod": "standard-form-final-or-partial",
+      "criteria": [
+        {
+          "id": "4BI1-2024-June-1-standard.Q7.b.i:point-1",
+          "marks": 0,
+          "rule": "Informational calculation role: multiply by5.2."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q7.b.i:point-2",
+          "marks": 0,
+          "rule": "Informational calculation role: product and standard form."
+        }
+      ],
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [],
+      "stimulusTypes": [
+        "table"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            22
+          ]
+        }
+      ],
+      "proposedFamilyId": "4BI1.blood.7-b-i",
+      "blockers": [
+        "Candidate family only; drawing/free-text recognition and custom 2/4/6-mark adaptation remain uncalibrated.",
+        "Whole historical, experimental/AO and source-policy review remain incomplete."
+      ],
+      "scoringRule": {
+        "mode": "standard-form-final-or-partial",
+        "maximum": 3,
+        "eligibleCriterionIds": [
+          "4BI1-2024-June-1-standard.Q7.b.i:point-1",
+          "4BI1-2024-June-1-standard.Q7.b.i:point-2"
+        ],
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            16
+          ]
+        }
+      },
+      "standardFormScoring": {
+        "sourceConcentrationCoefficient": "5.20",
+        "sourceExponent": 12,
+        "bloodVolumeLitres": "4.3",
+        "exactProductCoefficient": "22.36",
+        "fullCreditStandardForms": [
+          "2.2e13",
+          "2.236e13",
+          "2.24e13"
+        ],
+        "fullCreditMarks": 3,
+        "nonstandardAcceptedForms": [
+          "22.4e12",
+          "22.36e12"
+        ],
+        "nonstandardMarks": 2,
+        "multiplyByCoefficientOnlyMarks": 1,
+        "partialBranchesAreAlternatives": true,
+        "calculationLinesAreMarkingPoints": false,
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            16
+          ]
+        }
+      },
+      "mathematicalSkillIds": [
+        "4BI1:issue3:mathematical:1A",
+        "4BI1:issue3:mathematical:1B",
+        "4BI1:issue3:mathematical:3C",
+        "4BI1:issue3:mathematical:2A"
+      ],
+      "sourceQualification": {
+        "note": "Three published full-credit standard-form outputs and two two-mark nonstandard outputs are explicit concessions. No broad decimal interval, extra method marks or arbitrary significant-figure requirement is invented.",
+        "generatedUse": "blocked-until-standard-form-and-rounding-response-calibration",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            16
+          ]
+        }
+      },
+      "sourceBloodAltitudeData": {
+        "altitudesM": [
+          0,
+          1890,
+          2270
+        ],
+        "haemoglobinGramsPerLitre": {
+          "men": [
+            148,
+            152,
+            151
+          ],
+          "women": [
+            138,
+            147,
+            142
+          ]
+        },
+        "redCellsPerLitreTimes10Power12": {
+          "men": [
+            5.15,
+            5.37,
+            5.18
+          ],
+          "women": [
+            4.84,
+            5.2,
+            4.88
+          ]
+        },
+        "sampleCounts": {
+          "men": [
+            18453,
+            2175,
+            2023
+          ],
+          "women": [
+            27559,
+            3510,
+            2943
+          ]
+        },
+        "womanAltitudeM": 1890,
+        "womanBloodVolumeLitres": 4.3,
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            22
+          ]
+        }
+      }
+    },
+    {
+      "paperId": "4BI1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "generalSchemePages": [
+        3
+      ],
+      "commandWordStatus": "source-checked-short-label",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO marks inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "taskId": "4BI1-2024-June-1-standard.Q7.b.ii",
+      "questionPath": "7.b.ii",
+      "originalMarks": 2,
+      "questionPaperPages": [
+        22
+      ],
+      "markSchemePages": [
+        16
+      ],
+      "commandWord": "Calculate",
+      "requiredKnowledge": [
+        "relative percentage difference",
+        "baseline denominator"
+      ],
+      "contextSummary": "Calculate the haemoglobin percentage difference for men at2270m relative to men at sea level.",
+      "solutionStructure": [
+        "Subtract148 from151 to obtain3.",
+        "Divide by the sea-level148 and multiply by100:75/37 percent, approximately2.027027…%."
+      ],
+      "markingMethod": "percentage-final-or-one-partial",
+      "criteria": [
+        {
+          "id": "4BI1-2024-June-1-standard.Q7.b.ii:point-1",
+          "marks": 0,
+          "rule": "Informational role: difference3 or151−148."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q7.b.ii:point-2",
+          "marks": 0,
+          "rule": "Informational role: percentage relative to148."
+        }
+      ],
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [],
+      "stimulusTypes": [
+        "table"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            22
+          ]
+        }
+      ],
+      "proposedFamilyId": "4BI1.blood.7-b-ii",
+      "blockers": [
+        "Candidate family only; drawing/free-text recognition and custom 2/4/6-mark adaptation remain uncalibrated.",
+        "Whole historical, experimental/AO and source-policy review remain incomplete."
+      ],
+      "scoringRule": {
+        "mode": "percentage-final-or-one-partial",
+        "maximum": 2,
+        "eligibleCriterionIds": [
+          "4BI1-2024-June-1-standard.Q7.b.ii:point-1",
+          "4BI1-2024-June-1-standard.Q7.b.ii:point-2"
+        ],
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            16
+          ]
+        }
+      },
+      "percentageScoring": {
+        "comparisonValue": 151,
+        "baselineValue": 148,
+        "difference": 3,
+        "exactPercentage": "75/37",
+        "publishedFinalAnswer": "2.03",
+        "publishedUnroundedExamples": [
+          "2.027",
+          "2.027027"
+        ],
+        "unroundedContinuationAccepted": true,
+        "fullCreditMarks": 2,
+        "partialDifferenceMarks": 1,
+        "partialMaximum": 1,
+        "independentMultiplyBy100Mark": false,
+        "calculationLinesAreMarkingPoints": false,
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            16
+          ]
+        }
+      },
+      "mathematicalSkillIds": [
+        "4BI1:issue3:mathematical:1A",
+        "4BI1:issue3:mathematical:1C"
+      ],
+      "sourceQualification": {
+        "note": "The scheme awards one partial mark for3 or151−148 and allows unrounded percentage values. No unprinted numerical tolerance or division/×100 mark is invented.",
+        "generatedUse": "blocked-until-percentage-precision-response-calibration",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            16
+          ]
+        }
+      },
+      "sourceBloodAltitudeData": {
+        "altitudesM": [
+          0,
+          1890,
+          2270
+        ],
+        "haemoglobinGramsPerLitre": {
+          "men": [
+            148,
+            152,
+            151
+          ],
+          "women": [
+            138,
+            147,
+            142
+          ]
+        },
+        "redCellsPerLitreTimes10Power12": {
+          "men": [
+            5.15,
+            5.37,
+            5.18
+          ],
+          "women": [
+            4.84,
+            5.2,
+            4.88
+          ]
+        },
+        "sampleCounts": {
+          "men": [
+            18453,
+            2175,
+            2023
+          ],
+          "women": [
+            27559,
+            3510,
+            2943
+          ]
+        },
+        "womanAltitudeM": 1890,
+        "womanBloodVolumeLitres": 4.3,
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            22
+          ]
+        }
+      }
+    },
+    {
+      "paperId": "4BI1-2024-June-1-standard",
+      "recordKind": "leaf",
+      "generalSchemePages": [
+        3
+      ],
+      "commandWordStatus": "source-checked-short-label",
+      "assessmentObjectives": [],
+      "assessmentObjectiveStatus": "No official per-leaf AO allocation inspected; no authoritative AO marks inferred.",
+      "templateLinkStatus": "candidate-only",
+      "extractionStatus": "source-checked",
+      "reviewDate": "2026-10-07",
+      "reviewer": "Codex visual/source review",
+      "reviewerType": "agent",
+      "humanReviewed": false,
+      "taskId": "4BI1-2024-June-1-standard.Q7.b.iii",
+      "questionPath": "7.b.iii",
+      "originalMarks": 5,
+      "questionPaperPages": [
+        23
+      ],
+      "markSchemePages": [
+        17
+      ],
+      "commandWord": "Discuss",
+      "requiredKnowledge": [
+        "blood oxygen transport",
+        "data trends",
+        "sampling limits"
+      ],
+      "contextSummary": "Discuss haemoglobin and red-cell relationships with altitude in men and women using the table and biological knowledge.",
+      "solutionStructure": [
+        "Select up to five distinct source criteria from twelve.",
+        "Separate sea-level-to-altitude increases from the1890m-to2270m declines; distinguish sample limitations from mechanisms."
+      ],
+      "markingMethod": "any-distinct",
+      "criteria": [
+        {
+          "id": "4BI1-2024-June-1-standard.Q7.b.iii:point-1",
+          "marks": 1,
+          "rule": "Large study/sample numbers can support reliability."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q7.b.iii:point-2",
+          "marks": 1,
+          "rule": "Sample sizes are lower at altitude than at sea level."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q7.b.iii:point-3",
+          "marks": 1,
+          "rule": "There are more women than men in the samples."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q7.b.iii:point-4",
+          "marks": 1,
+          "rule": "Age, health or body-mass information is absent."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q7.b.iii:point-5",
+          "marks": 1,
+          "rule": "Haemoglobin increases from sea level to1890m or2270m."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q7.b.iii:point-6",
+          "marks": 1,
+          "rule": "More red cells are produced at1890m or2270m."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q7.b.iii:point-7",
+          "marks": 1,
+          "rule": "Less oxygen partial pressure or availability; published guidance also allows lower oxygen concentration."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q7.b.iii:point-8",
+          "marks": 1,
+          "rule": "Enables oxygen transport/uptake or aerobic respiration; published guidance also allows gas exchange."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q7.b.iii:point-9",
+          "marks": 1,
+          "rule": "Little change or a slight haemoglobin decrease between1890m and2270m."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q7.b.iii:point-10",
+          "marks": 1,
+          "rule": "The second increase in altitude is smaller."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q7.b.iii:point-11",
+          "marks": 1,
+          "rule": "Red-cell counts fall between1890m and2270m."
+        },
+        {
+          "id": "4BI1-2024-June-1-standard.Q7.b.iii:point-12",
+          "marks": 1,
+          "rule": "Men have more haemoglobin or red cells than women at every altitude."
+        }
+      ],
+      "acceptableAlternatives": [],
+      "dependencies": [],
+      "commonErrors": [],
+      "syllabusMappings": [
+        {
+          "pointId": "4BI1:issue3:2.61",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Haemoglobin and oxygen transport are selected mechanisms; other red-cell adaptations are not fully assessed.",
+          "evidenceRefs": [
+            {
+              "documentId": "4BI1-spec",
+              "pdfPages": [
+                23
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                23
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                17
+              ]
+            }
+          ]
+        },
+        {
+          "pointId": "4BI1:issue3:2.37",
+          "kind": "supporting",
+          "currentApplicability": "current-specification",
+          "reviewStatus": "agent-reviewed",
+          "rationale": "Aerobic respiration appears as one allowed oxygen-use explanation; not complete respiration content.",
+          "evidenceRefs": [
+            {
+              "documentId": "4BI1-spec",
+              "pdfPages": [
+                22
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:questionPaper",
+              "pdfPages": [
+                23
+              ]
+            },
+            {
+              "documentId": "4BI1-2024-June-1-standard:markScheme",
+              "pdfPages": [
+                17
+              ]
+            }
+          ]
+        }
+      ],
+      "stimulusTypes": [
+        "table"
+      ],
+      "stimulusRefs": [
+        {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            22,
+            23
+          ]
+        }
+      ],
+      "proposedFamilyId": "4BI1.blood.7-b-iii",
+      "blockers": [
+        "Candidate family only; drawing/free-text recognition and custom 2/4/6-mark adaptation remain uncalibrated.",
+        "Whole historical, experimental/AO and source-policy review remain incomplete."
+      ],
+      "scoringRule": {
+        "mode": "any-distinct",
+        "maximum": 5,
+        "eligibleCriterionIds": [
+          "4BI1-2024-June-1-standard.Q7.b.iii:point-1",
+          "4BI1-2024-June-1-standard.Q7.b.iii:point-2",
+          "4BI1-2024-June-1-standard.Q7.b.iii:point-3",
+          "4BI1-2024-June-1-standard.Q7.b.iii:point-4",
+          "4BI1-2024-June-1-standard.Q7.b.iii:point-5",
+          "4BI1-2024-June-1-standard.Q7.b.iii:point-6",
+          "4BI1-2024-June-1-standard.Q7.b.iii:point-7",
+          "4BI1-2024-June-1-standard.Q7.b.iii:point-8",
+          "4BI1-2024-June-1-standard.Q7.b.iii:point-9",
+          "4BI1-2024-June-1-standard.Q7.b.iii:point-10",
+          "4BI1-2024-June-1-standard.Q7.b.iii:point-11",
+          "4BI1-2024-June-1-standard.Q7.b.iii:point-12"
+        ],
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            17
+          ]
+        },
+        "selectionLimit": 5,
+        "creditPerCriterion": 1
+      },
+      "discussionScoring": {
+        "maximum": 5,
+        "criterionPoolSize": 12,
+        "oneMarkPerDistinctCriterion": true,
+        "publishedConcessions": [
+          {
+            "criterionId": "4BI1-2024-June-1-standard.Q7.b.iii:point-7",
+            "accepted": "lower oxygen concentration"
+          },
+          {
+            "criterionId": "4BI1-2024-June-1-standard.Q7.b.iii:point-8",
+            "accepted": "gas exchange"
+          }
+        ],
+        "causalInferenceValidated": false,
+        "recognitionStatus": "not-implemented",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            17
+          ]
+        }
+      },
+      "mathematicalSkillIds": [
+        "4BI1:issue3:mathematical:2E"
+      ],
+      "sourceQualification": {
+        "note": "Published lower-oxygen-concentration wording is retained as a marking concession; no claim that altitude changes the oxygen fraction is made. Observational group means, uneven samples and missing confounders do not establish individual change or causation; generated response interpretation remains uncalibrated.",
+        "generatedUse": "blocked-until-altitude-causal-and-sampling-response-calibration",
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            17
+          ]
+        }
+      },
+      "sourceBloodAltitudeData": {
+        "altitudesM": [
+          0,
+          1890,
+          2270
+        ],
+        "haemoglobinGramsPerLitre": {
+          "men": [
+            148,
+            152,
+            151
+          ],
+          "women": [
+            138,
+            147,
+            142
+          ]
+        },
+        "redCellsPerLitreTimes10Power12": {
+          "men": [
+            5.15,
+            5.37,
+            5.18
+          ],
+          "women": [
+            4.84,
+            5.2,
+            4.88
+          ]
+        },
+        "sampleCounts": {
+          "men": [
+            18453,
+            2175,
+            2023
+          ],
+          "women": [
+            27559,
+            3510,
+            2943
+          ]
+        },
+        "womanAltitudeM": 1890,
+        "womanBloodVolumeLitres": 4.3,
+        "sourceRef": {
+          "documentId": "4BI1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            22
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -7,7 +7,7 @@
   "reviewer": "Codex visual/source review",
   "reviewerType": "agent",
   "humanReviewed": false,
-  "scope": "Selected Q1, Q4, Q5 and Q6 numerical/graph operations only; no full paper or experimental/AO certification.",
+  "scope": "Selected Q1,Q4,Q5,Q6 and Q7 numerical, graph and sampling operations only; no full paper or experimental/AO certification.",
   "reviewedPages": [
     49
   ],
@@ -74,6 +74,24 @@
       "summary": "Plot two variables from experimental data; source specifies the mean series and straight joins.",
       "appliesToBiology": true,
       "reviewStatus": "agent-reviewed"
+    },
+    {
+      "id": "4BI1:issue3:mathematical:1B",
+      "reference": "1B",
+      "pdfPage": 49,
+      "printedPage": 43,
+      "summary": "Recognise and use standard form; published rounding concessions require calibration.",
+      "appliesToBiology": true,
+      "reviewStatus": "agent-reviewed"
+    },
+    {
+      "id": "4BI1:issue3:mathematical:2E",
+      "reference": "2E",
+      "pdfPage": 49,
+      "printedPage": 43,
+      "summary": "Interpret selected sample-size and missing-confounder limitations; not full sampling-method certification.",
+      "appliesToBiology": true,
+      "reviewStatus": "agent-reviewed"
     }
   ],
   "taskMappings": [
@@ -114,6 +132,34 @@
       ],
       "scope": "required-operations-only",
       "humanReviewed": false
+    },
+    {
+      "taskId": "4BI1-2024-June-1-standard.Q7.b.i",
+      "skillIds": [
+        "4BI1:issue3:mathematical:1A",
+        "4BI1:issue3:mathematical:1B",
+        "4BI1:issue3:mathematical:3C",
+        "4BI1:issue3:mathematical:2A"
+      ],
+      "scope": "required-operations-only",
+      "humanReviewed": false
+    },
+    {
+      "taskId": "4BI1-2024-June-1-standard.Q7.b.ii",
+      "skillIds": [
+        "4BI1:issue3:mathematical:1A",
+        "4BI1:issue3:mathematical:1C"
+      ],
+      "scope": "required-operations-only",
+      "humanReviewed": false
+    },
+    {
+      "taskId": "4BI1-2024-June-1-standard.Q7.b.iii",
+      "skillIds": [
+        "4BI1:issue3:mathematical:2E"
+      ],
+      "scope": "required-operations-only",
+      "humanReviewed": false
     }
   ],
   "blockers": [
@@ -121,6 +167,7 @@
     "Whole-paper mathematical/experimental/AO and historical reconciliation pending.",
     "Q4 source rounding concession and broader respirometer experimental applicability pending.",
     "Q5 graphical tolerances, source partial follow-through and time-range concessions require calibration.",
-    "Q6 drawing/grid recognition and source exclusions remain uncalibrated."
+    "Q6 drawing/grid recognition and source exclusions remain uncalibrated.",
+    "Q7 standard-form response recognition, rounding and observational sampling policy remain uncalibrated."
   ]
 }

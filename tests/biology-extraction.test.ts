@@ -3,31 +3,31 @@ import { test } from 'node:test';
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
-import extraction from '../research/extractions/4BI1-2024-June-1-standard.json' with { type: 'json' };
+import extraction from '../research/extractions/biology-extraction.ts';
 import skills from '../research/syllabus-skills/4BI1-issue3-q1-selected.json' with { type: 'json' };
 import index from '../research/paper-indexes/4BI1-2024-summer-1b.json' with { type: 'json' };
 import { subjectEvidence, coverageSummary, evidenceHighlights } from '../lib/coverage.ts';
 
 void test('Biology exposes a detailed subset while keeping private rubrics and whole-paper gates separate', () => {
   const row = subjectEvidence('4BI1').find((r) => r.paperId === extraction.paperId)!;
-  assert.equal(row.extraction?.detailedTasks, 29);
-  assert.equal(row.extraction?.originalMarks, 65);
+  assert.equal(row.extraction?.detailedTasks, 33);
+  assert.equal(row.extraction?.originalMarks, 78);
   assert.equal(row.extraction?.expectedTasks, 45);
   assert.equal(row.extraction?.wholePageAudit, true);
   assert.equal(row.index?.visualTasks, 45);
   assert.equal(row.index?.reconciledMarks, 110);
-  assert.deepEqual(row.extraction?.reviewedQuestions, ['1', '2', '3', '4', '5', '6']);
+  assert.deepEqual(row.extraction?.reviewedQuestions, ['1', '2', '3', '4', '5', '6', '7']);
   assert.equal(row.extraction?.questionPaperPages, 32);
   assert.equal(row.extraction?.markSchemePages, 24);
   assert.equal(coverageSummary().find((r) => r.subject.code === '4BI1')?.fullyProcessed, 0);
-  assert.equal(evidenceHighlights.biologyDetailedParts, 29);
+  assert.equal(evidenceHighlights.biologyDetailedParts, 33);
   const summary = JSON.stringify(row);
-  for (const hidden of ['sourceChain', 'numericScoring', 'pairScoring', 'eligibleCriterionIds', 'sourceFoodWeb', 'sourceFlower', 'sourceComparisonPolicy', 'sourceTraitData', 'answerLabel', 'percentageScoring', 'sourceTemporalConcessions', 'sourceEmissionsGraph', 'graphScoring', 'directionScoring', 'sourcePondweedExperiment']) {
+  for (const hidden of ['sourceChain', 'numericScoring', 'pairScoring', 'eligibleCriterionIds', 'sourceFoodWeb', 'sourceFlower', 'sourceComparisonPolicy', 'sourceTraitData', 'answerLabel', 'percentageScoring', 'sourceTemporalConcessions', 'sourceEmissionsGraph', 'graphScoring', 'directionScoring', 'sourcePondweedExperiment', 'standardFormScoring', 'sourceBloodAltitudeData', 'discussionScoring', 'comparisonScoring']) {
     assert.ok(!summary.includes(hidden), hidden);
   }
   assert.equal(extraction.paperStage, 'indexed');
   assert.equal(extraction.marksReconciled, false);
-  assert.equal(extraction.tasks.reduce((sum, t) => sum + t.originalMarks, 0), 65);
+  assert.equal(extraction.tasks.reduce((sum, t) => sum + t.originalMarks, 0), 78);
   for (const [ref, hash] of [[extraction.rawManifestRef, extraction.rawManifestSha256], [extraction.coverReviewRef, extraction.coverReviewSha256]]) {
     assert.equal(createHash('sha256').update(readFileSync(ref)).digest('hex'), hash);
   }
@@ -50,7 +50,7 @@ void test('The food-web transcription independently gives the four-level chain a
   assert.deepEqual(levels('mouse'), [2, 3]);
   assert.deepEqual(levels('blue jay'), [4]);
   assert.deepEqual(levels('tick'), [3, 4]);
-  assert.deepEqual(extraction.tasks[2].sourceChoices?.filter((c) => 'organism' in c && levels(c.organism).length > 1), [{ label: 'D', organism: 'mouse' }]);
+  assert.deepEqual(extraction.tasks[2].sourceChoices?.filter((c) => typeof c.organism === 'string' && levels(c.organism).length > 1), [{ label: 'D', organism: 'mouse' }]);
   const chain = extraction.tasks[1];
   assert.equal(chain.sourceChain?.correctWholeChainMarks, 2);
   assert.equal(chain.sourceChain?.correctOrderOnlyMarks, 1);
@@ -106,7 +106,7 @@ from pathlib import Path
 sys.path.insert(0,'scripts')
 spec=importlib.util.spec_from_file_location('biology_export','scripts/export-biology-q1.py')
 module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
-original=json.loads(Path(module.OVERLAY).read_text())
+original=module.read_extraction(Path(module.OVERLAY))
 before={p:p.read_bytes() for p in Path('research/ledger/v1').rglob('*.csv')}
 outputs=module.prepare()
 assert all(content==p.read_text() for p,content in outputs.items()),'Saved export drift'
@@ -277,6 +277,7 @@ void test('Respirometer extraction preserves exact arithmetic, equation balance 
 void test('Emissions percentage keeps source final-credit override and two partial rules without invented calculation marks', () => {
   const t = extraction.tasks.find((task) => task.questionPath === '5.b.i')!;
   const p = t.percentageScoring!;
+  assert.ok(p.readings && p.fullCreditRange && p.partialRules);
   const values = Object.values(p.readings);
   assert.equal(values.reduce((a, b) => a + b, 0), 453);
   const exact = p.readings.energy / values.reduce((a, b) => a + b, 0) * 100;
@@ -291,8 +292,8 @@ void test('Emissions percentage keeps source final-credit override and two parti
   assert.deepEqual(t.criteria.map((c) => c.marks), [0, 0]);
   assert.deepEqual(t.syllabusMappings, []);
   assert.equal(p.recognitionStatus, 'not-implemented');
-  assert.equal(skills.skills.length, 7);
-  assert.equal(skills.taskMappings.length, 4);
+  assert.equal(skills.skills.length, 9);
+  assert.equal(skills.taskMappings.length, 7);
 });
 
 void test('Emissions commentary keeps five-of-eight source credit and after-2020 concessions without inventing the tail year', () => {
@@ -335,8 +336,8 @@ void test('The whole Biology visual index reconciles all compulsory allocations 
   assert.equal(index.tasks.reduce((sum, t) => sum + t.originalMarks, 0), 110);
   assert.deepEqual(index.questionTotals.map((q) => [q.parts, q.marks]), [[6,12],[8,14],[1,7],[5,10],[4,11],[5,11],[4,13],[5,12],[6,14],[1,6]]);
   const pending = index.tasks.filter((t) => t.detailedExtractionStatus === 'pending');
-  assert.equal(pending.length, 16);
-  assert.equal(pending.reduce((sum, t) => sum + t.originalMarks, 0), 45);
+  assert.equal(pending.length, 12);
+  assert.equal(pending.reduce((sum, t) => sum + t.originalMarks, 0), 32);
   assert.equal(index.fullyProcessed, false);
   assert.equal(extraction.marksReconciled, false);
   const proof = JSON.parse(execFileSync('python3', ['-c', `
@@ -356,7 +357,7 @@ mutations={
  'renamed-leaf':lambda m:m['tasks'][29].update(questionPath='7.c'),
  'swapped-pages':lambda m:m['tasks'][29].update(questionPaperPages=[22]),
  'private-rubric':lambda m:m['tasks'][29].update(criteria=[{'marks':3}]),
- 'remaining-promotion':lambda m:m['tasks'][29].update(detailedExtractionStatus='source-checked-subset'),
+ 'remaining-promotion':lambda m:m['tasks'][33].update(detailedExtractionStatus='source-checked-subset'),
  'date-erasure':lambda m:m['paperMatch'].update(dateConflictPreserved=False),
  'unknown-variant':lambda m:m['paperMatch'].update(variant='standard'),
 }
@@ -370,4 +371,84 @@ assert all(p.read_bytes()==v for p,v in before.items())
 print(json.dumps({'rejected':len(mutations)}))
 `], { encoding:'utf8' }));
   assert.equal(proof.rejected, 12);
+});
+
+void test('Biology altitude calculations independently select the right sex, altitude and baseline with source precision', () => {
+  const table = extraction.sourceBloodAltitudeData;
+  const row = table.altitudesM.indexOf(table.womanAltitudeM);
+  assert.equal(row, 1);
+  const exact = table.redCellsPerLitreTimes10Power12.women[row] * table.womanBloodVolumeLitres * 10 ** 12;
+  assert.equal(exact, 22_360_000_000_000);
+  const standard = extraction.tasks.find((t) => t.questionPath === '7.b.i')!.standardFormScoring!;
+  assert.equal(Number(standard.fullCreditStandardForms[1]), exact);
+  assert.ok(standard.fullCreditStandardForms.every((v) => Number(v.split('e')[0]) >= 1 && Number(v.split('e')[0]) < 10));
+  assert.ok(standard.nonstandardAcceptedForms.every((v) => Number(v.split('e')[0]) >= 10));
+  assert.equal(standard.nonstandardMarks, 2);
+  assert.equal(standard.multiplyByCoefficientOnlyMarks, 1);
+  assert.equal(standard.partialBranchesAreAlternatives, true);
+  const percentage = extraction.tasks.find((t) => t.questionPath === '7.b.ii')!.percentageScoring!;
+  assert.ok('baselineValue' in percentage);
+  const low = table.haemoglobinGramsPerLitre.men[0], high = table.haemoglobinGramsPerLitre.men[2];
+  assert.equal(percentage.baselineValue, low);
+  assert.ok(Math.abs(((high - low) / low) * 100 - 75 / 37) < 1e-12);
+  assert.equal(percentage.partialMaximum, 1);
+  assert.equal(percentage.independentMultiplyBy100Mark, false);
+});
+
+void test('Altitude discussion preserves non-monotonic data and distinct sampling limits without causal promotion', () => {
+  const table = extraction.sourceBloodAltitudeData;
+  for (const sex of ['men', 'women'] as const) {
+    const hb = table.haemoglobinGramsPerLitre[sex], cells = table.redCellsPerLitreTimes10Power12[sex];
+    assert.ok(hb[1] > hb[0] && hb[2] < hb[1] && hb[2] > hb[0]);
+    assert.ok(cells[1] > cells[0] && cells[2] < cells[1] && cells[2] > cells[0]);
+    assert.ok(table.sampleCounts[sex][0] > table.sampleCounts[sex][1]);
+  }
+  for (let i = 0; i < table.altitudesM.length; i++) {
+    assert.ok(table.sampleCounts.women[i] > table.sampleCounts.men[i]);
+    assert.ok(table.haemoglobinGramsPerLitre.men[i] > table.haemoglobinGramsPerLitre.women[i]);
+    assert.ok(table.redCellsPerLitreTimes10Power12.men[i] > table.redCellsPerLitreTimes10Power12.women[i]);
+  }
+  const task = extraction.tasks.find((t) => t.questionPath === '7.b.iii')!;
+  assert.equal(task.criteria.length, 12);
+  assert.equal(task.scoringRule.selectionLimit, 5);
+  assert.equal(task.discussionScoring?.causalInferenceValidated, false);
+  assert.equal(task.discussionScoring?.publishedConcessions.length, 2);
+  assert.equal(extraction.tasks.filter((t) => t.questionPath.startsWith('7.')).reduce((s, t) => s + t.originalMarks, 0), 13);
+  assert.equal(extraction.fullyProcessed, false);
+});
+
+void test('Q7 source changes and premature numeric/causal activation are rejected before any ledger write', () => {
+  const proof = JSON.parse(execFileSync('python3', ['-c', `
+import copy,importlib.util,json,sys
+from pathlib import Path
+sys.path.insert(0,'scripts')
+spec=importlib.util.spec_from_file_location('biology_export','scripts/export-biology-q1.py')
+module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+original=module.read_extraction(Path(module.OVERLAY))
+mutations={
+ 'sex-column':lambda m:m['sourceBloodAltitudeData']['redCellsPerLitreTimes10Power12']['women'].__setitem__(1,5.37),
+ 'exponent':lambda m:m['tasks'][30]['standardFormScoring'].update(sourceExponent=13),
+ 'sample-count':lambda m:m['tasks'][32]['sourceBloodAltitudeData']['sampleCounts']['men'].__setitem__(2,2943),
+ 'comparison-wording':lambda m:m['tasks'][29]['comparisonScoring'].update(mandatoryBothSidesInEverySentence=True),
+ 'comparison-cap':lambda m:m['tasks'][29]['scoringRule'].update(selectionLimit=4),
+ 'standard-full':lambda m:m['tasks'][30]['standardFormScoring'].update(fullCreditStandardForms=['22.36e12']),
+ 'additive-partial':lambda m:m['tasks'][30]['standardFormScoring'].update(partialBranchesAreAlternatives=False),
+ 'line-marks':lambda m:m['tasks'][30]['criteria'][0].update(marks=1),
+ 'percentage-baseline':lambda m:m['tasks'][31]['percentageScoring'].update(baselineValue=151),
+ 'percentage-extra':lambda m:m['tasks'][31]['percentageScoring'].update(independentMultiplyBy100Mark=True),
+ 'discussion-cap':lambda m:m['tasks'][32]['scoringRule'].update(selectionLimit=12),
+ 'oxygen-concession':lambda m:m['tasks'][32]['discussionScoring'].update(publishedConcessions=[]),
+ 'causality':lambda m:m['tasks'][32]['discussionScoring'].update(causalInferenceValidated=True),
+ 'activation':lambda m:m['tasks'][32]['sourceQualification'].update(generatedUse='ready'),
+}
+before={p:p.read_bytes() for p in Path('research/ledger/v1').rglob('*') if p.is_file()}
+for name,mutate in mutations.items():
+ m=copy.deepcopy(original);mutate(m)
+ try:module.prepare(overlay=m)
+ except ValueError:pass
+ else:raise AssertionError(name+' accepted')
+ assert all(p.read_bytes()==v for p,v in before.items()),name+' wrote ledger data'
+print(json.dumps({'rejected':len(mutations)}))
+`], { encoding: 'utf8' }));
+  assert.equal(proof.rejected, 14);
 });

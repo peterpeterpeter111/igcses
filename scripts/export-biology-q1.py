@@ -1,4 +1,4 @@
-"""Normalize the checked Biology Q1–Q6 subset (twenty-nine parts / 65 marks).
+"""Normalize the checked Biology Q1–Q7 subset (thirty-three parts / 78 marks).
 
 Validation and table preparation precede every write. The whole visual index
 is separate from detailed rubric coverage; raw history and source gates remain.
@@ -10,6 +10,7 @@ import io
 import json
 from pathlib import Path
 from ledger_io import read_table, table_outputs
+from extraction_io import read_extraction
 
 ROOT = Path(__file__).resolve().parents[1]
 PAPER = '4BI1-2024-June-1-standard'
@@ -46,10 +47,12 @@ EXPECTED = {
     '6.a.iii': (1, [17], [14], [('2.23', 'supporting')]),
     '6.b.i': (5, [18], [15], [('2.23', 'supporting')]),
     '6.b.ii': (3, [19], [15], [('2.20', 'primary')]),
+    '7.a': (3, [21], [16], [('2.59', 'supporting'), ('2.61', 'supporting')]),
+    '7.b.i': (3, [22], [16], []),
+    '7.b.ii': (2, [22], [16], []),
+    '7.b.iii': (5, [23], [17], [('2.61', 'supporting'), ('2.37', 'supporting')]),
 }
 INDEX_REMAINING = {
-    '7.a': (3, [21], [16]), '7.b.i': (3, [22], [16]),
-    '7.b.ii': (2, [22], [16]), '7.b.iii': (5, [23], [17]),
     '8.a': (1, [24], [18]), '8.b.i': (3, [24], [18]),
     '8.b.ii': (3, [25], [18]), '8.c.i': (3, [25], [19]), '8.c.ii': (2, [25], [19]),
     '9.a.i': (2, [26], [20]), '9.a.ii': (2, [27], [20]),
@@ -71,14 +74,14 @@ def prepare(root=ROOT, overlay=None, index_overlay=None):
     root = Path(root)
     def read(path):
         return json.loads((root / path).read_text())
-    m = read(OVERLAY) if overlay is None else overlay
+    m = read_extraction(root / OVERLAY) if overlay is None else overlay
     require(m['paperId'] == PAPER and m['qualification'] == '4BI1', 'Wrong bounded paper')
     require(m['paperStage'] == 'indexed' and m['status'] == 'partial-detailed-extraction'
             and m['fullyProcessed'] is False and m['humanReviewed'] is False
             and m['marksReconciled'] is False and m['wholePaperLeafCount'] == 45,
             'Partial subset must not promote full processing or human review, or alter the checked denominator')
-    require(m['wholePaperMarks'] == 110 and m['detailedLeafTasks'] == 29
-            and m['detailedOriginalMarks'] == 65 and m['reviewedQuestionTotals'] == {'1': 12, '2': 14, '3': 7, '4': 10, '5': 11, '6': 11}
+    require(m['wholePaperMarks'] == 110 and m['detailedLeafTasks'] == 33
+            and m['detailedOriginalMarks'] == 78 and m['reviewedQuestionTotals'] == {'1': 12, '2': 14, '3': 7, '4': 10, '5': 11, '6': 11, '7': 13}
             and m['reviewedSubsetMarksReconciled'] is True, 'Subset totals mismatch')
     require(m['rawManifestRef'] == 'research/batches/2026-09-08-cross-subject-lower-01.manifest.json'
             and m['coverReviewRef'] == 'research/reviews/2026-09-09-cover-review.json', 'Unexpected source authority')
@@ -138,15 +141,15 @@ def prepare(root=ROOT, overlay=None, index_overlay=None):
             and index['nonTaskSchemePages'] == [1, 2, 3, 24], 'Whole-paper identity or non-task allocation drift')
     source = next(s for s in read('research/sources.json') if s['id'] == '4BI1-spec')
     spec = m['currentSpecification']
-    require(spec == dict(documentId=source['id'], sha256=source['sha256'], issue='3', reviewedPages=[18, 19, 20, 21, 22, 26, 29, 30, 31, 49], wholeHistoricalAmendmentReconciliation='pending'), 'Specification scope drift')
+    require(spec == dict(documentId=source['id'], sha256=source['sha256'], issue='3', reviewedPages=[18, 19, 20, 21, 22, 23, 26, 29, 30, 31, 49], wholeHistoricalAmendmentReconciliation='pending'), 'Specification scope drift')
     skills = read(SKILLS)
     require(skills['specificationDocumentId'] == spec['documentId'] and skills['specificationSha256'] == spec['sha256']
             and skills['humanReviewed'] is False and skills['reviewedPages'] == [49]
             and [(s['id'], s['pdfPage'], s['appliesToBiology']) for s in skills['skills']]
-            == [('4BI1:issue3:mathematical:' + i, 49, True) for i in ['1A', '1C', '3C', '2A', '2B', '4A', '4C']], 'Selected mathematical skill scope drift')
+            == [('4BI1:issue3:mathematical:' + i, 49, True) for i in ['1A', '1C', '3C', '2A', '2B', '4A', '4C', '1B', '2E']], 'Selected mathematical skill scope drift')
     points = {p['point_id']: p for p in read_table(root / 'research/ledger/v1', 'syllabus-points')[1]}
     tasks = m['tasks']
-    require(len(tasks) == len(EXPECTED) and len({t['taskId'] for t in tasks}) == 29
+    require(len(tasks) == len(EXPECTED) and len({t['taskId'] for t in tasks}) == 33
             and [t['questionPath'] for t in tasks] == list(EXPECTED), 'Missing, duplicate or unexpected tasks')
     for t in tasks:
         marks, pages, scheme_pages, mappings = EXPECTED[t['questionPath']]
@@ -169,6 +172,8 @@ def prepare(root=ROOT, overlay=None, index_overlay=None):
             stimulus_pages = [14, 15]
         if t['questionPath'] == '6.b.ii':
             stimulus_pages = [17, 18, 19]
+        if t['questionPath'] == '7.b.iii':
+            stimulus_pages = [22, 23]
         require(t['stimulusRefs'] == [dict(documentId=qp['id'], pdfPages=stimulus_pages)], 'Stimulus page mismatch')
         ids = [c['id'] for c in t['criteria']]
         rule = t['scoringRule']
@@ -298,7 +303,7 @@ def prepare(root=ROOT, overlay=None, index_overlay=None):
             and [c['marks'] for c in t['criteria']] == [0, 0]
             and t['sourceQualification']['generatedUse'] == 'blocked-until-precision-policy-and-response-calibration', 'Mean precision/alternative partial credit drift')
     require(t['mathematicalSkillIds'] == ['4BI1:issue3:mathematical:2B', '4BI1:issue3:mathematical:2A']
-            and skills['taskMappings'] == [dict(taskId=by_path[path]['taskId'], skillIds=by_path[path]['mathematicalSkillIds'], scope='required-operations-only', humanReviewed=False) for path in ['1.b.i', '4.c.i', '5.b.i', '6.b.i']], 'Selected mean/magnification skill mappings drift')
+            and skills['taskMappings'] == [dict(taskId=by_path[path]['taskId'], skillIds=by_path[path]['mathematicalSkillIds'], scope='required-operations-only', humanReviewed=False) for path in ['1.b.i', '4.c.i', '5.b.i', '6.b.i', '7.b.i', '7.b.ii', '7.b.iii']], 'Selected mean/magnification skill mappings drift')
     t = by_path['4.c.ii']; rule = t['scoringRule']
     require(rule['mode'] == t['markingMethod'] == 'any-distinct' and [c['marks'] for c in t['criteria']] == [1] * 5
             and rule['maximum'] == rule['selectionLimit'] == 3 and rule['creditPerCriterion'] == 1
@@ -355,11 +360,42 @@ def prepare(root=ROOT, overlay=None, index_overlay=None):
             and t['directionScoring'] == dict(converseAcceptedCriterionIds=[t['criteria'][i]['id'] for i in [1, 2]], converseRejectedCriterionIds=[t['criteria'][i]['id'] for i in [0, 3]], lessLightAloneCredit=False, oxygenRequiredForGasPoint=True, sourceRef=dict(documentId=ms['id'], pdfPages=[15]), recognitionStatus='not-implemented')
             and t['sourceQualification']['generatedUse'] == 'blocked-until-direction-and-practical-response-calibration', 'Explanation cap/direction/oxygen policy drift')
 
-    require(sum(t['originalMarks'] for t in tasks) == 65
+
+    # Source-bound Q7 numeric branches, observed table and response-policy gates.
+    blood = {'altitudesM': [0, 1890, 2270], 'haemoglobinGramsPerLitre': {'men': [148, 152, 151], 'women': [138, 147, 142]}, 'redCellsPerLitreTimes10Power12': {'men': [5.15, 5.37, 5.18], 'women': [4.84, 5.2, 4.88]}, 'sampleCounts': {'men': [18453, 2175, 2023], 'women': [27559, 3510, 2943]}, 'womanAltitudeM': 1890, 'womanBloodVolumeLitres': 4.3, 'sourceRef': {'documentId': '4BI1-2024-June-1-standard:questionPaper', 'pdfPages': [22]}}
+    require(m['sourceBloodAltitudeData'] == blood and all(by_path[p]['sourceBloodAltitudeData'] == blood for p in ['7.b.i', '7.b.ii', '7.b.iii']), 'Blood table cell/unit/sample drift')
+    t = by_path['7.a']
+    require(t['comparisonScoring'] == {'categories': ['nucleus', 'shape', 'relative-size', 'haemoglobin'], 'maximum': 3, 'redCellSideAcceptedAsPublished': True, 'whiteCellComparisons': ['has nucleus', 'not biconcave or irregular', 'larger', 'no haemoglobin'], 'mandatoryBothSidesInEverySentence': None, 'recognitionStatus': 'not-implemented', 'sourceRef': {'documentId': '4BI1-2024-June-1-standard:markScheme', 'pdfPages': [16]}}
+            and t['markingMethod'] == t['scoringRule']['mode'] == 'any-distinct'
+            and [c['marks'] for c in t['criteria']] == [1, 1, 1, 1]
+            and t['scoringRule']['selectionLimit'] == 3 and t['scoringRule']['creditPerCriterion'] == 1
+            and t['sourceQualification']['generatedUse'] == 'blocked-until-comparison-response-calibration' and t['sourceQualification']['sourceRef'] == dict(documentId=ms['id'], pdfPages=[16]), 'Q7 source branch/cap/calibration drift')
+    t = by_path['7.b.i']
+    require(t['standardFormScoring'] == {'sourceConcentrationCoefficient': '5.20', 'sourceExponent': 12, 'bloodVolumeLitres': '4.3', 'exactProductCoefficient': '22.36', 'fullCreditStandardForms': ['2.2e13', '2.236e13', '2.24e13'], 'fullCreditMarks': 3, 'nonstandardAcceptedForms': ['22.4e12', '22.36e12'], 'nonstandardMarks': 2, 'multiplyByCoefficientOnlyMarks': 1, 'partialBranchesAreAlternatives': True, 'calculationLinesAreMarkingPoints': False, 'recognitionStatus': 'not-implemented', 'sourceRef': {'documentId': '4BI1-2024-June-1-standard:markScheme', 'pdfPages': [16]}}
+            and t['markingMethod'] == t['scoringRule']['mode'] == 'standard-form-final-or-partial'
+            and [c['marks'] for c in t['criteria']] == [0, 0]
+            and t['mathematicalSkillIds'] == ['4BI1:issue3:mathematical:1A', '4BI1:issue3:mathematical:1B', '4BI1:issue3:mathematical:3C', '4BI1:issue3:mathematical:2A']
+            and t['sourceQualification']['generatedUse'] == 'blocked-until-standard-form-and-rounding-response-calibration' and t['sourceQualification']['sourceRef'] == dict(documentId=ms['id'], pdfPages=[16]), 'Q7 source branch/cap/calibration drift')
+    t = by_path['7.b.ii']
+    require(t['percentageScoring'] == {'comparisonValue': 151, 'baselineValue': 148, 'difference': 3, 'exactPercentage': '75/37', 'publishedFinalAnswer': '2.03', 'publishedUnroundedExamples': ['2.027', '2.027027'], 'unroundedContinuationAccepted': True, 'fullCreditMarks': 2, 'partialDifferenceMarks': 1, 'partialMaximum': 1, 'independentMultiplyBy100Mark': False, 'calculationLinesAreMarkingPoints': False, 'recognitionStatus': 'not-implemented', 'sourceRef': {'documentId': '4BI1-2024-June-1-standard:markScheme', 'pdfPages': [16]}}
+            and t['markingMethod'] == t['scoringRule']['mode'] == 'percentage-final-or-one-partial'
+            and [c['marks'] for c in t['criteria']] == [0, 0]
+            and t['mathematicalSkillIds'] == ['4BI1:issue3:mathematical:1A', '4BI1:issue3:mathematical:1C']
+            and t['sourceQualification']['generatedUse'] == 'blocked-until-percentage-precision-response-calibration' and t['sourceQualification']['sourceRef'] == dict(documentId=ms['id'], pdfPages=[16]), 'Q7 source branch/cap/calibration drift')
+    t = by_path['7.b.iii']
+    require(t['discussionScoring'] == {'maximum': 5, 'criterionPoolSize': 12, 'oneMarkPerDistinctCriterion': True, 'publishedConcessions': [{'criterionId': '4BI1-2024-June-1-standard.Q7.b.iii:point-7', 'accepted': 'lower oxygen concentration'}, {'criterionId': '4BI1-2024-June-1-standard.Q7.b.iii:point-8', 'accepted': 'gas exchange'}], 'causalInferenceValidated': False, 'recognitionStatus': 'not-implemented', 'sourceRef': {'documentId': '4BI1-2024-June-1-standard:markScheme', 'pdfPages': [17]}}
+            and t['markingMethod'] == t['scoringRule']['mode'] == 'any-distinct'
+            and [c['marks'] for c in t['criteria']] == [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+            and t['scoringRule']['selectionLimit'] == 5 and t['scoringRule']['creditPerCriterion'] == 1
+            and t['mathematicalSkillIds'] == ['4BI1:issue3:mathematical:2E']
+            and t['sourceQualification']['generatedUse'] == 'blocked-until-altitude-causal-and-sampling-response-calibration' and t['sourceQualification']['sourceRef'] == dict(documentId=ms['id'], pdfPages=[17]), 'Q7 source branch/cap/calibration drift')
+
+    require(sum(t['originalMarks'] for t in tasks) == 78
             and sum(t['originalMarks'] for t in tasks if t['questionPath'].startswith('2.')) == 14
             and sum(t['originalMarks'] for t in tasks if t['questionPath'].startswith('4.')) == 10
             and sum(t['originalMarks'] for t in tasks if t['questionPath'].startswith('5.')) == 11
             and sum(t['originalMarks'] for t in tasks if t['questionPath'].startswith('6.')) == 11
+            and sum(t['originalMarks'] for t in tasks if t['questionPath'].startswith('7.')) == 13
             and m['blockers'] and m['processingNotes'], 'Subset reconciliation/gaps missing')
 
     date = m['reviewDate']
@@ -368,8 +404,8 @@ def prepare(root=ROOT, overlay=None, index_overlay=None):
     for key, doc in [('questionPaper', qp), ('markScheme', ms)]:
         reviews = [dict(page=1, mode='visual-cover', reviewer='Codex cover visual review', date='2026-09-09')]
         reviews += [dict(page=p, mode='visual-whole-structural-index', reviewer=m['reviewer'], date=date) for p in m['pageAudit'][key]['visuallyReviewedPages'] if p != 1]
-        documents.append(dict(document_id=doc['id'], qualification='4BI1', document_type=doc['type'], canonical_url=doc['url'], title='4BI1/1B Summer 2024 ' + doc['type'], publisher='Pearson', year=2024, series='June', component='1B', variant='unresolved', printed_exam_date='2024-05-10' if key == 'questionPaper' else '', filename_date='2024-05-11' if key == 'questionPaper' else '', sha256=doc['sha256'], page_count=doc['pageCount'], access_status='obtained', local_evidence_path=OVERLAY, reviewed_pages_json=compact(reviews), identity_status='agent-reviewed-whole-visual-pair', identity_notes='Whole visual structural pair match,45 indexed parts /110 allocation marks; detailed rubric review remains Q1–Q6 only. Legacy standard variant unresolved; printed/filename date conflict retained.', batch_id=common['batch_id'], updated_at=date))
-    papers = [dict(paper_id=PAPER, qualification='4BI1', year=2024, series='June', component='1B', variant='unresolved', qp_document_id=qp['id'], ms_document_id=ms['id'], insert_document_ids_json='[]', examiner_report_ids_json='[]', report_status=m['examinerReportStatus'], target_specification_id=spec['documentId'], applicability_status='partial-current-scope-review', stage='indexed', last_successful_stage='indexed', expected_leaf_tasks=45, indexed_leaf_tasks=45, extracted_leaf_tasks=29, assessed_marks=110, all_alternatives_marks='', option_rules_json=compact(dict(mode='answer-all', sourcePages=[1], wholeAllocationReviewed=True)), reconciled_marks='false', scheme_match_status='whole-visual-structural-pair-match-detailed-subset', complete_page_audit='true', template_links_complete='false', blocking_issues_json=compact(m['blockers']), reviewed_at=date, **common)]
+        documents.append(dict(document_id=doc['id'], qualification='4BI1', document_type=doc['type'], canonical_url=doc['url'], title='4BI1/1B Summer 2024 ' + doc['type'], publisher='Pearson', year=2024, series='June', component='1B', variant='unresolved', printed_exam_date='2024-05-10' if key == 'questionPaper' else '', filename_date='2024-05-11' if key == 'questionPaper' else '', sha256=doc['sha256'], page_count=doc['pageCount'], access_status='obtained', local_evidence_path=OVERLAY, reviewed_pages_json=compact(reviews), identity_status='agent-reviewed-whole-visual-pair', identity_notes='Whole visual structural pair match,45 indexed parts /110 allocation marks; detailed rubric review remains Q1–Q7 only. Legacy standard variant unresolved; printed/filename date conflict retained.', batch_id=common['batch_id'], updated_at=date))
+    papers = [dict(paper_id=PAPER, qualification='4BI1', year=2024, series='June', component='1B', variant='unresolved', qp_document_id=qp['id'], ms_document_id=ms['id'], insert_document_ids_json='[]', examiner_report_ids_json='[]', report_status=m['examinerReportStatus'], target_specification_id=spec['documentId'], applicability_status='partial-current-scope-review', stage='indexed', last_successful_stage='indexed', expected_leaf_tasks=45, indexed_leaf_tasks=45, extracted_leaf_tasks=33, assessed_marks=110, all_alternatives_marks='', option_rules_json=compact(dict(mode='answer-all', sourcePages=[1], wholeAllocationReviewed=True)), reconciled_marks='false', scheme_match_status='whole-visual-structural-pair-match-detailed-subset', complete_page_audit='true', template_links_complete='false', blocking_issues_json=compact(m['blockers']), reviewed_at=date, **common)]
     task_rows, mappings = [], []
     for t in tasks:
         status = 'agent-reviewed-partial-current-scope' if t['syllabusMappings'] else 'selected-mathematical-skills-only' if t.get('mathematicalSkillIds') else 'experimental-demand-numbered-scope-unresolved'
@@ -395,7 +431,7 @@ def export(root=ROOT):
     outputs = prepare(root)
     for path, content in outputs.items():
         path.write_text(content)
-    return dict(detailedTasks=29, detailedMarks=65, numberedMappings=29, fullyProcessedPapers=0, activeTemplates=0)
+    return dict(detailedTasks=33, detailedMarks=78, numberedMappings=33, fullyProcessedPapers=0, activeTemplates=0)
 
 
 if __name__ == '__main__':
