@@ -38,7 +38,7 @@ with tempfile.TemporaryDirectory() as d:
   assert.equal(row.extraction.printedChoices, true);
   assert.equal(row.extraction.candidateAnsweredTasks, 9);
   assert.equal(row.index, null);
-  assert.equal(row.extraction.wholePageAudit, false);
+  assert.equal(row.extraction.wholePageAudit, true);
   const publicText = JSON.stringify(row.extraction);
   assert.doesNotMatch(publicText, /:grid:|:group-\d|rubric|acceptableGroups|solutionStructure/);
 });

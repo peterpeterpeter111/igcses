@@ -30,14 +30,23 @@ export function templateContractErrors(family) {
   require(family.customQuiz.validatedMarks.every((m) => family.customQuiz.candidateMarks.includes(m)), 'Validated marks must be a subset of candidate marks');
   // This version supplies one scheme, so it cannot certify several maxima.
   require(family.customQuiz.validatedMarks.every((m) => m === family.marking.maximum), 'Every validated maximum needs its own matching scheme');
-  if (family.marking.method === 'levels') {
-    const bands = [...family.marking.levelRubric].sort((a, b) => a.minMarks - b.minMarks);
+  const checkBands = (rubric, maximum) => {
+    const bands = [...rubric].sort((a, b) => a.minMarks - b.minMarks);
     require(new Set(bands.map((b) => b.level)).size === bands.length, 'Rubric levels must be unique');
-    require(bands[0].minMarks === 0 && bands.at(-1).maxMarks === family.marking.maximum, 'Level rubric must cover zero through the maximum');
+    require(bands[0].minMarks === 0 && bands[0].maxMarks === 0 && bands.at(-1).maxMarks === maximum, 'Level rubric must cover zero through the maximum');
     for (const [index, band] of bands.entries()) {
       require(band.minMarks <= band.maxMarks, 'Level rubric has an inverted band');
       if (index > 0) require(band.minMarks === bands[index - 1].maxMarks + 1 && band.level > bands[index - 1].level, 'Level rubric has gaps, overlaps or unordered levels');
     }
+  };
+  if (family.marking.method === 'levels') {
+    checkBands(family.marking.levelRubric, family.marking.maximum);
+  } else if (family.marking.method === 'composite-levels') {
+    const components = family.marking.componentRubrics;
+    require(new Set(components.map((c) => c.objective)).size === components.length, 'Composite objective rubrics must be unique');
+    require(components.reduce((sum, c) => sum + c.maximum, 0) === family.marking.maximum, 'Composite maxima must equal the whole response maximum');
+    require(components.every((c) => family.assessmentObjectives.includes(c.objective)) && components.length === family.assessmentObjectives.length, 'Composite rubrics must match the declared assessment objectives');
+    for (const c of components) checkBands(c.levelRubric, c.maximum);
   } else {
     require(family.marking.criteria.reduce((sum, c) => sum + c.credit, 0) === family.marking.maximum, 'Criterion credits must equal the scheme maximum');
     require(family.marking.levelRubric.length === 0, 'Non-level marking must not contain an alternative level rubric');

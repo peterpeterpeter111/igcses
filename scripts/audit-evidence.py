@@ -88,6 +88,22 @@ def audit(root=ROOT):
         row = next(r for r in tables['papers'] if r['paper_id'] == english_paper['paperId'])
         if (row['extracted_leaf_tasks'], row['assessed_marks'], row['all_alternatives_marks'], row['series']) != ('11', '100', '160', 'June'):
             errors.append({'kind': 'english-may-paper-export-mismatch'})
+        processing = english_paper.get('_processingReview')
+        if processing:
+            if (row['stage'], row['complete_page_audit'], row['template_links_complete'], row['applicability_status'], row['report_status']) != (
+                    'processed', 'true', 'true', 'current-AO-and-task-demand-reviewed', 'observations-reviewed') or json.loads(row['blocking_issues_json']) != []:
+                errors.append({'kind': 'english-may-processing-export-mismatch'})
+            report = processing['examinerReport']
+            if json.loads(row['examiner_report_ids_json']) != [report['documentId']]:
+                errors.append({'kind': 'english-may-report-link-mismatch'})
+            for document in processing['documents']:
+                exported = next(d for d in tables['documents'] if d['document_id'] == document['id'])
+                if json.loads(exported['reviewed_pages_json']) != document['pages']:
+                    errors.append({'kind': 'english-may-page-audit-export-mismatch', 'id': document['id']})
+            exported = next(d for d in tables['documents'] if d['document_id'] == report['documentId'])
+            if (exported['sha256'], exported['page_count'], exported['publication_code'], exported['access_status']) != (
+                    report['sha256'], '66', report['publicationCode'], 'obtained'):
+                errors.append({'kind': 'english-may-report-export-mismatch'})
         for task in english_paper['tasks']:
             row = next(r for r in tables['tasks'] if r['task_id'] == task['id'])
             if (row['extraction_status'] != 'source-checked' or row['human_reviewed'] != 'false'
@@ -95,6 +111,10 @@ def audit(root=ROOT):
                     or json.loads(row['acceptable_alternatives_json']) != task['acceptableGroups']
                     or json.loads(row['dependencies_json']) != task['sourceCreditRules']):
                 errors.append({'kind': 'english-may-task-export-mismatch', 'id': task['id']})
+            if processing:
+                review = next(t for t in processing['taskReviews'] if t['taskId'] == task['id'])
+                if row['mapping_status'] != 'current-AO-reviewed' or row['review_status'] != 'agent-source-processed' or json.loads(row['report_refs_json']) != [review['reportObservation']]:
+                    errors.append({'kind': 'english-may-task-processing-export-mismatch', 'id': task['id']})
     except (ValueError, KeyError, StopIteration, FileNotFoundError) as exc:
         errors.append({'kind': 'english-may-contract', 'note': str(exc)})
     extractions = [read_extraction(p) for p in sorted((root / 'research/extractions').glob('*.json'))]
@@ -119,6 +139,9 @@ def audit(root=ROOT):
         documents.update({d['id']: d for d in english_paper['documents']})
     expected_documents = [{'id': s['id'], 'sha256': s['sha256']} for s in sources]
     expected_documents += [{'id': d['id'], 'sha256': d['sha256']} for d in pilot['documents']]
+    if english_paper and english_paper.get('_processingReview'):
+        report = english_paper['_processingReview']['examinerReport']
+        expected_documents.append({'id': report['documentId'], 'sha256': report['sha256']})
     for paper in batch['records']:
         for kind in ['questionPaper', 'markScheme']:
             expected_documents.append({'id': paper['paperId'] + ':' + kind, 'sha256': paper[kind]['sha256']})

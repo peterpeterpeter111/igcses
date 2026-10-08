@@ -12,6 +12,7 @@ def encode(value):
 def prepare(root):
     root = Path(root)
     m = load_paper(root)
+    processing = m.get('_processingReview')
     directory = root / 'research/ledger/v1'
     common = dict(reviewed_by=m['reviewer'], reviewer_type='agent', human_reviewed='false', batch_id=m['batchId'], updated_at=m['reviewDate'])
     docs = []
@@ -41,6 +42,27 @@ def prepare(root):
                           marking_method=t['markingMethod'], rubric_ref=str(EVIDENCE) + '#' + t['id'], acceptable_alternatives_json=encode(t['acceptableGroups']),
                           dependencies_json=encode(t['sourceCreditRules']), common_errors_json=encode(t['editorialCommonErrors']), report_refs_json='[]',
                           extraction_status='source-checked', mapping_status='official-AO-only', review_status='agent-partial-review', blocker=' '.join(t['calibrationBlockers']), **common))
+    if processing:
+        from english_processing import REF
+        for doc, reviewed in zip(docs, processing['documents']):
+            doc['reviewed_pages_json'] = encode(reviewed['pages'])
+            doc['local_evidence_path'] = REF
+        report = processing['examinerReport']
+        docs.append(dict(document_id=report['documentId'], qualification='4EB1', document_type='examiner-report',
+                         canonical_url=report['url'], title='June2024 EnglishLanguageB examiner report', publisher='Pearson',
+                         year=2024, series='June', component='01', variant='standard', publication_code=report['publicationCode'],
+                         filename_date='2024-08-22', sha256=report['sha256'], page_count=report['pageCount'], access_status='obtained',
+                         local_evidence_path=REF, identity_status='agent-reviewed', identity_notes='Official June2024 4EB1/01 report; environment/climate tasks match this obtained sitting.',
+                         reviewed_pages_json=encode([dict(page=p, mode='text', reviewer=processing['reviewer'], date=processing['reviewDate']) for p in report['textPagesReviewed']]),
+                         updated_at=processing['reviewDate']))
+        paper.update(stage='processed', last_successful_stage='processed', applicability_status='current-AO-and-task-demand-reviewed',
+                     complete_page_audit='true', template_links_complete='true', blocking_issues_json='[]',
+                     examiner_report_ids_json=encode([report['documentId']]), report_status='observations-reviewed',
+                     reviewed_by=processing['reviewer'], reviewed_at=processing['reviewDate'])
+        for row in tasks:
+            review = next(t for t in processing['taskReviews'] if t['taskId'] == row['task_id'])
+            row.update(mapping_status='current-AO-reviewed', review_status='agent-source-processed',
+                       report_refs_json=encode([review['reportObservation']]))
     pending = {}
     for name, additions, key in [('documents', docs, 'document_id'), ('papers', [paper], 'paper_id'), ('tasks', tasks, 'task_id')]:
         fields, old = read_table(directory, name)
@@ -57,7 +79,8 @@ def export(root):
     for path, content in pending.items():
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(content)
-    return dict(paper=PAPER, detailedTasks=11, printedMarks=160, assessedMarks=100, fullyProcessedPapers=0, activeTemplates=0)
+    summary = json.loads(pending[Path(root) / SUMMARY])
+    return dict(paper=PAPER, detailedTasks=11, printedMarks=160, assessedMarks=100, fullyProcessedPapers=summary['fullyProcessedPapers'], activeTemplates=0)
 
 
 if __name__ == '__main__':

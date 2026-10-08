@@ -273,7 +273,7 @@ console.log(
       pilotDocumentHashesVerified: hashesVerified,
       missingLocalEvidence: 3 - hashesVerified,
       activeTemplates: templates.filter((t) => t.status === 'active').length,
-      fullyProcessedPapers: pilot.counts.fullyProcessedPapers,
+      novemberPilotFullyProcessedPapers: pilot.counts.fullyProcessedPapers,
     },
     null,
     2,

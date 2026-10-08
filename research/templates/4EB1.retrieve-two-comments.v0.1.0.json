@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "id": "4EB1.retrieve-two-comments",
+  "version": "0.1.0",
+  "status": "provisional",
+  "subject": "4EB1",
+  "origin": "exam-derived",
+  "syllabusRefs": [
+    {
+      "pointId": "4EB1:issue4:AO1",
+      "documentId": "4EB1-spec",
+      "issue": "4",
+      "pdfPages": [
+        10,
+        18
+      ],
+      "mappingStatus": "verified"
+    }
+  ],
+  "sourceTasks": [
+    {
+      "taskId": "4EB1-2024-May-01-standard.Q5",
+      "paperId": "4EB1-2024-May-01-standard",
+      "questionPaper": {
+        "documentId": "4EB1-2024-May-01-standard:questionPaper",
+        "pdfPages": [
+          6,
+          34
+        ]
+      },
+      "markScheme": {
+        "documentId": "4EB1-2024-May-01-standard:markScheme",
+        "pdfPages": [
+          8
+        ]
+      },
+      "originalMarks": 2
+    }
+  ],
+  "answerGuideId": "4EB1.retrieve-two-comments",
+  "commandWord": "Identify",
+  "skill": "Retrieve two distinct explicit comments from a specified portion of an original text.",
+  "assessmentObjectives": [
+    "AO1"
+  ],
+  "originalMarks": [
+    2
+  ],
+  "customQuiz": {
+    "candidateMarks": [
+      2
+    ],
+    "validatedMarks": [],
+    "adaptationStatus": "pending",
+    "rationale": "Source-demand contract at the original maximum. No original10/15/30-mark demand is scaled into a custom2/4/6-mark quiz; a separate reviewed adaptation is needed."
+  },
+  "stimulus": {
+    "types": [
+      "passage"
+    ],
+    "originality": "original-generated-content",
+    "requirements": [
+      "Retrieve two distinct explicit comments from a specified portion of an original text.",
+      "Create independent age-appropriate original source material/prompt; do not reproduce or paraphrase the publisher’s source sentence by sentence.",
+      "Keep all question instructions and assessment-objective demands consistent with the frozen stimulus."
+    ],
+    "evidenceContract": [
+      "Freeze original passage/prompt, evidence spans or objective grids, and the complete private marking package before any answer.",
+      "Preserve separate objective maxima; release feedback only after the session is complete."
+    ]
+  },
+  "parameters": [
+    {
+      "id": "original-stimulus",
+      "type": "original-text",
+      "domain": {
+        "minWords": 100,
+        "maxWords": 1200,
+        "semanticRule": "Retrieve two distinct explicit comments from a specified portion of an original text."
+      },
+      "constraints": [
+        "Original stimulus quality, reading demand and difficulty remain unvalidated; this is not a runtime generator."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not serve or activate this source-demand contract before generative and response calibration.",
+    "Keep printed-choice maxima separate from compulsory candidate totals.",
+    "Do not impose an automatic400-word penalty or mechanically count rhetorical devices."
+  ],
+  "relationships": [
+    "Generated instructions and private evidence must refer to the same frozen original text/prompt.",
+    "Separate reading, communication and accuracy objectives retain independent credit."
+  ],
+  "difficultyControls": [
+    "Reading complexity, inference distance, viewpoint contrasts and writing form need source-demand review; numerical mark similarity does not prove equal difficulty."
+  ],
+  "transformations": [
+    {
+      "id": "original-context",
+      "status": "candidate",
+      "conditions": "Independent original text/prompt with the same reviewed demand; validation pending."
+    },
+    {
+      "id": "scale-original-marks",
+      "status": "forbidden",
+      "conditions": "A different maximum requires a separate calibrated contract."
+    }
+  ],
+  "solutionProcedure": [
+    "Locate the exact named section or line interval.",
+    "Select supported information with its original meaning.",
+    "Count distinct supported groups up to the task maximum."
+  ],
+  "marking": {
+    "method": "discrete-points",
+    "maximum": 2,
+    "criteria": [
+      {
+        "id": "distinct-evidence-1",
+        "credit": 1,
+        "rule": "Award for one distinct eligible information group supported by the frozen original passage; duplicates do not create new credit."
+      },
+      {
+        "id": "distinct-evidence-2",
+        "credit": 1,
+        "rule": "Award for one distinct eligible information group supported by the frozen original passage; duplicates do not create new credit."
+      }
+    ],
+    "acceptableAlternatives": [
+      "Valid explicit paraphrases count within the same evidence group; no unsupported inference."
+    ],
+    "dependencies": [],
+    "contradictionRules": [
+      "Judge the full response and source evidence; do not award a keyword merely because it appears amid contradictory claims."
+    ],
+    "units": null,
+    "tolerance": null,
+    "levelRubric": []
+  },
+  "commonErrors": [
+    {
+      "description": "Treating an unsupported assertion or a copied list as a developed, source-supported response.",
+      "origin": "editorial",
+      "sourceRefs": []
+    }
+  ],
+  "validation": {
+    "ruleIds": [
+      "source-task-identities",
+      "objective-maxima",
+      "independent-original-stimulus",
+      "private-frozen-scheme",
+      "whole-response-credit"
+    ],
+    "testPlan": [
+      "Validate original-generation boundaries and source-demand equivalence before serving.",
+      "Calibrate full, partial, unsupported, contradictory and alternative responses independently for each objective.",
+      "Do not infer learner calibration or a live implementation from source extraction."
+    ],
+    "testedSeeds": [],
+    "boundaryCoverage": "not-run",
+    "status": "not-run",
+    "runRefs": []
+  },
+  "runtime": {
+    "implemented": false,
+    "generatorId": null,
+    "seedPolicy": "No runtime generator yet; any future seed must freeze all content and objective rubrics before answers.",
+    "maxRetries": 0,
+    "publicFields": [
+      "prompt",
+      "stimulus",
+      "maximumMarks"
+    ],
+    "privateFields": [
+      "parameters",
+      "sourceTasks",
+      "solution",
+      "rubric",
+      "validationResults"
+    ],
+    "freezeBeforeAnswer": true,
+    "releaseSchemeAfter": "session-completed"
+  },
+  "review": {
+    "pedagogyStatus": "pending",
+    "reviewer": "Codex source-demand classification",
+    "reviewerType": "agent",
+    "humanReviewed": false,
+    "blockers": [
+      "Source-demand and official grids are recorded, but original-generation quality and response recognition are not calibrated.",
+      "No runtime implementation or validated custom-mark blueprint; AI remains last."
+    ]
+  }
+}

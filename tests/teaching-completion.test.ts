@@ -36,7 +36,8 @@ void test('authored teaching count is bounded to the three actually reviewed sou
     const summary = coverageSummary();
     assert.equal(summary.find((r) => r.subject.code === '4BI1')!.completePoints, 3);
     assert.equal(summary.reduce((sum, r) => sum + r.completePoints, 0), 3);
-    assert.ok(summary.every((r) => r.completeChapters === 0 && r.fullyProcessed === 0));
+    assert.ok(summary.every((r) => r.completeChapters === 0));
+    assert.equal(summary.reduce((sum, r) => sum + r.fullyProcessed, 0), 1);
   } finally { f.cleanup(); }
 });
 void test('teaching review refuses stale lessons, incomplete decisions and inflated reviewer claims', () => {

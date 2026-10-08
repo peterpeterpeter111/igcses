@@ -59,7 +59,7 @@ export default async function SubjectCoverage({
               {s.code}/{r.review?.observedComponent} · {r.review?.printedDate}
             </h3>
             <p>
-              {r.extraction
+              {r.fullyProcessed ? 'Processed source · generated exam practice still unavailable' : r.extraction
                 ? 'Detailed records available · processing checks incomplete'
                 : 'Indexed-only · covers checked by AI · full task/scheme matching pending'}
             </p>
@@ -72,8 +72,8 @@ export default async function SubjectCoverage({
                   {new Intl.ListFormat('en-GB', { style: 'long', type: 'conjunction' }).format(r.extraction.reviewedQuestions)}.
                   {r.extraction.expectedTasks === null
                     ? 'The whole-paper part count is not yet confirmed.'
-                    : `Detailed records: ${r.extraction.detailedTasks} of ${r.extraction.expectedTasks} parts.`}
-                  {' '}Zero fully processed papers.
+                    : ` Detailed records: ${r.extraction.detailedTasks} of ${r.extraction.expectedTasks} parts.`}
+                  {' '}{r.fullyProcessed ? 'This paper passed the source-processing audit.' : 'This paper is not fully processed.'}
                 </p>
                 {r.extraction.printedChoices && <p>
                   Candidates answer {r.extraction.candidateAnsweredTasks} tasks for {r.extraction.assessedMarks} marks.
@@ -82,8 +82,9 @@ export default async function SubjectCoverage({
                 {r.extraction.wholePageAudit && <p className="status">
                   The visual page review covers all {r.extraction.questionPaperPages} question-paper
                   pages and {r.extraction.markSchemePages} scheme pages, including covers and
-                  non-task pages. Detailed extraction is available; the remaining processing
-                  checks below still prevent this paper from being counted as fully processed.
+                  non-task pages. {r.fullyProcessed
+                    ? 'Current task applicability and versioned source-family links are reviewed. Generators and examiner calibration remain separate.'
+                    : 'Detailed extraction is available; the remaining processing checks below prevent this paper from being counted as fully processed.'}
                 </p>}
                 {!r.extraction.wholePageAudit && <p className="status">
                   Detailed review covers {r.extraction.questionPaperPages} question-paper {r.extraction.questionPaperPages === 1 ? 'page' : 'pages'}
@@ -91,7 +92,7 @@ export default async function SubjectCoverage({
                   is preserved. {r.index ? 'The separate whole-paper visual inventory is complete; detailed review remains incomplete.' : r.extraction.printedChoices ? 'Candidate-path marks reconcile, but the whole-paper visual inventory remains incomplete.' : 'The whole-paper visual inventory and mark reconciliation remain incomplete.'}
                 </p>}
                 <details>
-                  <summary>Remaining processing gaps</summary>
+                  <summary>{r.fullyProcessed ? 'Remaining exam-practice limitations' : 'Remaining processing gaps'}</summary>
                   <ul className="plain-list">
                     {r.extraction.blockers.map((blocker) => (
                       <li key={blocker}>{blocker}</li>

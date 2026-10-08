@@ -87,6 +87,8 @@ for name, rows, identity in [('templates', templates, 'template_id'), ('template
     writer.writeheader()
     writer.writerows(rows)
     pending.append((target, output.getvalue()))
+summary = [dict(id=f['id'], version=f['version'], qualification=f['subject'], status=f['status'], runtimeImplemented=f['runtime']['implemented']) for _, f in families]
+pending.append((root / 'research/template-summaries.json', json.dumps(summary, indent=2) + '\n'))
 if args.check:
     for target, expected in pending:
         if target.read_text() != expected:

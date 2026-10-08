@@ -120,13 +120,16 @@ def load_paper(root):
         else:
             require(not rules, 'Unexpected English source credit rule')
         require(all(e['origin'] == 'editorial-inference' and e['automaticPenalty'] is False for e in t['editorialCommonErrors']), 'English editorial trap mislabeled as publisher rule')
+    from english_processing import load_processing
+    m['_processingReview'] = load_processing(root, m)
     return m
 
 
 def public_summary(m):
-    return dict(schemaVersion=1, paperId=PAPER, qualification='4EB1', reviewedAt=m['reviewDate'],
+    processing = m.get('_processingReview')
+    return dict(schemaVersion=1, paperId=PAPER, qualification='4EB1', reviewedAt=processing['reviewDate'] if processing else m['reviewDate'],
                 detailedTasks=11, detailedOriginalMarks=160, printedTasks=11, remainingIndexedTasks=0,
                 candidateAnsweredTasks=9, assessedMarks=100, allAlternativesMarks=160,
-                questionPaperPagesReviewed=len(m['documents'][0]['visualPages']), markSchemePagesReviewed=len(m['documents'][1]['visualPages']),
-                wholePageAudit=False, fullyProcessedPapers=0, activeTemplates=0, humanReviewed=False,
-                legacySeries='May', publisherSeries='June', reportStatus=m['reportStatus'], limitations=m['limitations'])
+                questionPaperPagesReviewed=36 if processing else len(m['documents'][0]['visualPages']), markSchemePagesReviewed=21 if processing else len(m['documents'][1]['visualPages']),
+                wholePageAudit=bool(processing), fullyProcessedPapers=1 if processing else 0, activeTemplates=0, humanReviewed=False,
+                legacySeries='May', publisherSeries='June', reportStatus='observations-reviewed' if processing else m['reportStatus'], limitations=processing['limitations'] if processing else m['limitations'])

@@ -1,0 +1,360 @@
+{
+  "schemaVersion": 1,
+  "id": "4EB1.source-directed-letter",
+  "version": "0.1.0",
+  "status": "provisional",
+  "subject": "4EB1",
+  "origin": "exam-derived",
+  "syllabusRefs": [
+    {
+      "pointId": "4EB1:issue4:AO1",
+      "documentId": "4EB1-spec",
+      "issue": "4",
+      "pdfPages": [
+        10,
+        18
+      ],
+      "mappingStatus": "verified"
+    },
+    {
+      "pointId": "4EB1:issue4:AO4",
+      "documentId": "4EB1-spec",
+      "issue": "4",
+      "pdfPages": [
+        10,
+        18
+      ],
+      "mappingStatus": "verified"
+    },
+    {
+      "pointId": "4EB1:issue4:AO5",
+      "documentId": "4EB1-spec",
+      "issue": "4",
+      "pdfPages": [
+        10,
+        18
+      ],
+      "mappingStatus": "verified"
+    }
+  ],
+  "sourceTasks": [
+    {
+      "taskId": "4EB1-2024-May-01-standard.Q8",
+      "paperId": "4EB1-2024-May-01-standard",
+      "questionPaper": {
+        "documentId": "4EB1-2024-May-01-standard:questionPaper",
+        "pdfPages": [
+          15,
+          30,
+          31,
+          32,
+          33,
+          34
+        ]
+      },
+      "markScheme": {
+        "documentId": "4EB1-2024-May-01-standard:markScheme",
+        "pdfPages": [
+          14,
+          15,
+          16,
+          17
+        ]
+      },
+      "originalMarks": 30
+    }
+  ],
+  "answerGuideId": "4EB1.source-directed-letter",
+  "commandWord": "Write",
+  "skill": "Select and adapt material from two sources into a coherent letter fulfilling each specified purpose for the stated recipient.",
+  "assessmentObjectives": [
+    "AO1",
+    "AO4",
+    "AO5"
+  ],
+  "originalMarks": [
+    30
+  ],
+  "customQuiz": {
+    "candidateMarks": [],
+    "validatedMarks": [],
+    "adaptationStatus": "pending",
+    "rationale": "Source-demand contract at the original maximum. No original10/15/30-mark demand is scaled into a custom2/4/6-mark quiz; a separate reviewed adaptation is needed."
+  },
+  "stimulus": {
+    "types": [
+      "passage"
+    ],
+    "originality": "original-generated-content",
+    "requirements": [
+      "Select and adapt material from two sources into a coherent letter fulfilling each specified purpose for the stated recipient.",
+      "Create independent age-appropriate original source material/prompt; do not reproduce or paraphrase the publisher’s source sentence by sentence.",
+      "Keep all question instructions and assessment-objective demands consistent with the frozen stimulus."
+    ],
+    "evidenceContract": [
+      "Freeze original passage/prompt, evidence spans or objective grids, and the complete private marking package before any answer.",
+      "Preserve separate objective maxima; release feedback only after the session is complete."
+    ]
+  },
+  "parameters": [
+    {
+      "id": "original-stimulus",
+      "type": "original-text",
+      "domain": {
+        "minWords": 100,
+        "maxWords": 1200,
+        "semanticRule": "Select and adapt material from two sources into a coherent letter fulfilling each specified purpose for the stated recipient."
+      },
+      "constraints": [
+        "Original stimulus quality, reading demand and difficulty remain unvalidated; this is not a runtime generator."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not serve or activate this source-demand contract before generative and response calibration.",
+    "Keep printed-choice maxima separate from compulsory candidate totals.",
+    "Do not impose an automatic400-word penalty or mechanically count rhetorical devices."
+  ],
+  "relationships": [
+    "Generated instructions and private evidence must refer to the same frozen original text/prompt.",
+    "Separate reading, communication and accuracy objectives retain independent credit."
+  ],
+  "difficultyControls": [
+    "Reading complexity, inference distance, viewpoint contrasts and writing form need source-demand review; numerical mark similarity does not prove equal difficulty."
+  ],
+  "transformations": [
+    {
+      "id": "original-context",
+      "status": "candidate",
+      "conditions": "Independent original text/prompt with the same reviewed demand; validation pending."
+    },
+    {
+      "id": "scale-original-marks",
+      "status": "forbidden",
+      "conditions": "A different maximum requires a separate calibrated contract."
+    }
+  ],
+  "solutionProcedure": [
+    "Interpret the audience, purpose and objective of the task.",
+    "Develop a coherent supported response fulfilling the task.",
+    "Review the complete response against each separate source grid."
+  ],
+  "marking": {
+    "method": "composite-levels",
+    "maximum": 30,
+    "criteria": [],
+    "acceptableAlternatives": [
+      "The official indicative content is not exhaustive; defensible interpretations supported by the passage require review."
+    ],
+    "dependencies": [
+      "{\"allocations\": {\"AO1\": 10, \"AO4\": 12, \"AO5\": 8}, \"pdfPages\": [15, 16, 17], \"provenance\": \"scheme\", \"rule\": \"separate-AO-grids\"}"
+    ],
+    "contradictionRules": [
+      "Judge the full response and source evidence; do not award a keyword merely because it appears amid contradictory claims."
+    ],
+    "units": null,
+    "tolerance": null,
+    "levelRubric": [],
+    "componentRubrics": [
+      {
+        "objective": "AO1",
+        "maximum": 10,
+        "sourceRefs": [
+          {
+            "documentId": "4EB1-2024-May-01-standard:markScheme",
+            "pdfPages": [
+              15
+            ]
+          }
+        ],
+        "levelRubric": [
+          {
+            "level": 0,
+            "minMarks": 0,
+            "maxMarks": 0,
+            "descriptor": "No material meeting the assessed demand."
+          },
+          {
+            "level": 1,
+            "minMarks": 1,
+            "maxMarks": 2,
+            "descriptor": "Few relevant ideas; limited retrieval and interpretation."
+          },
+          {
+            "level": 2,
+            "minMarks": 3,
+            "maxMarks": 4,
+            "descriptor": "Relevant ideas and valid interpretation, but development is limited."
+          },
+          {
+            "level": 3,
+            "minMarks": 5,
+            "maxMarks": 6,
+            "descriptor": "Secure interpretation with relevant ideas supporting the chosen points."
+          },
+          {
+            "level": 4,
+            "minMarks": 7,
+            "maxMarks": 8,
+            "descriptor": "Detailed selection and focused interpretation that support the points fully."
+          },
+          {
+            "level": 5,
+            "minMarks": 9,
+            "maxMarks": 10,
+            "descriptor": "Discriminating selection and perceptive interpretation that clarify the points persuasively."
+          }
+        ]
+      },
+      {
+        "objective": "AO4",
+        "maximum": 12,
+        "sourceRefs": [
+          {
+            "documentId": "4EB1-2024-May-01-standard:markScheme",
+            "pdfPages": [
+              16
+            ]
+          }
+        ],
+        "levelRubric": [
+          {
+            "level": 0,
+            "minMarks": 0,
+            "maxMarks": 0,
+            "descriptor": "No material meeting the assessed demand."
+          },
+          {
+            "level": 1,
+            "minMarks": 1,
+            "maxMarks": 2,
+            "descriptor": "Limited clarity and limited attention to purpose, reader or form."
+          },
+          {
+            "level": 2,
+            "minMarks": 3,
+            "maxMarks": 4,
+            "descriptor": "Broadly suitable communication with straightforward control of purpose and form."
+          },
+          {
+            "level": 3,
+            "minMarks": 5,
+            "maxMarks": 7,
+            "descriptor": "Clear writing suited to reader and purpose, with appropriate form and register."
+          },
+          {
+            "level": 4,
+            "minMarks": 8,
+            "maxMarks": 10,
+            "descriptor": "Effective communication with secure control of purpose, form and register."
+          },
+          {
+            "level": 5,
+            "minMarks": 11,
+            "maxMarks": 12,
+            "descriptor": "Subtle, perceptive communication with sophisticated control of reader, purpose and form."
+          }
+        ]
+      },
+      {
+        "objective": "AO5",
+        "maximum": 8,
+        "sourceRefs": [
+          {
+            "documentId": "4EB1-2024-May-01-standard:markScheme",
+            "pdfPages": [
+              17
+            ]
+          }
+        ],
+        "levelRubric": [
+          {
+            "level": 0,
+            "minMarks": 0,
+            "maxMarks": 0,
+            "descriptor": "No material meeting the assessed demand."
+          },
+          {
+            "level": 1,
+            "minMarks": 1,
+            "maxMarks": 2,
+            "descriptor": "Basic vocabulary and repetitive syntax; weak control of spelling and punctuation."
+          },
+          {
+            "level": 2,
+            "minMarks": 3,
+            "maxMarks": 4,
+            "descriptor": "Ordered ideas with developing paragraphing and some accurate sentence control."
+          },
+          {
+            "level": 3,
+            "minMarks": 5,
+            "maxMarks": 6,
+            "descriptor": "Develop ideas with accurate paragraphs, varied vocabulary and punctuation; occasional spelling slips may remain."
+          },
+          {
+            "level": 4,
+            "minMarks": 7,
+            "maxMarks": 8,
+            "descriptor": "Precise, cohesive handling of complex ideas and varied structures; rare spelling slips do not obscure meaning."
+          }
+        ]
+      }
+    ]
+  },
+  "commonErrors": [
+    {
+      "description": "Treating an unsupported assertion or a copied list as a developed, source-supported response.",
+      "origin": "editorial",
+      "sourceRefs": []
+    }
+  ],
+  "validation": {
+    "ruleIds": [
+      "source-task-identities",
+      "objective-maxima",
+      "independent-original-stimulus",
+      "private-frozen-scheme",
+      "whole-response-credit"
+    ],
+    "testPlan": [
+      "Validate original-generation boundaries and source-demand equivalence before serving.",
+      "Calibrate full, partial, unsupported, contradictory and alternative responses independently for each objective.",
+      "Do not infer learner calibration or a live implementation from source extraction."
+    ],
+    "testedSeeds": [],
+    "boundaryCoverage": "not-run",
+    "status": "not-run",
+    "runRefs": []
+  },
+  "runtime": {
+    "implemented": false,
+    "generatorId": null,
+    "seedPolicy": "No runtime generator yet; any future seed must freeze all content and objective rubrics before answers.",
+    "maxRetries": 0,
+    "publicFields": [
+      "prompt",
+      "stimulus",
+      "maximumMarks"
+    ],
+    "privateFields": [
+      "parameters",
+      "sourceTasks",
+      "solution",
+      "rubric",
+      "validationResults"
+    ],
+    "freezeBeforeAnswer": true,
+    "releaseSchemeAfter": "session-completed"
+  },
+  "review": {
+    "pedagogyStatus": "pending",
+    "reviewer": "Codex source-demand classification",
+    "reviewerType": "agent",
+    "humanReviewed": false,
+    "blockers": [
+      "Source-demand and official grids are recorded, but original-generation quality and response recognition are not calibrated.",
+      "No runtime implementation or validated custom-mark blueprint; AI remains last."
+    ]
+  }
+}

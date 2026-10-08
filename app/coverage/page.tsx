@@ -18,7 +18,9 @@ export default function CoveragePage() {
         <div className="note">
           <strong>The library is incomplete.</strong>
           <p>
-            No paper has yet passed the whole-paper processing audit. The 710
+            {rows.reduce((total, row) => total + row.fullyProcessed, 0)} of the seven
+            obtained paper pairs passed the source-processing audit. The wider
+            archive remains incomplete. The 710
             numbered science references are extraction candidates, not a
             complete verified syllabus inventory. English and Mathematics skill
             inventories are unfinished.
@@ -122,7 +124,7 @@ export default function CoveragePage() {
             Wider archive discovery is incomplete.
           </li>
           <li>
-            English November has {evidenceHighlights.englishNovemberDetailedTasks} detailed tasks and May has {evidenceHighlights.englishMayDetailedTasks}. Each sitting has 160 marks across printed options, with nine answered tasks worth 100 marks. Whole-paper processing remains unfinished. Physics
+            English November has {evidenceHighlights.englishNovemberDetailedTasks} detailed tasks and May has {evidenceHighlights.englishMayDetailedTasks}. Each sitting has 160 marks across printed options, with nine answered tasks worth 100 marks. May passed source processing; November remains incomplete. English exam generators and calibrated marking remain unavailable. Physics
             Summer 2024 Paper 1P has {evidenceHighlights.physicsDetailedParts}{' '}
             detailed question parts ({evidenceHighlights.physicsDetailedMarks}{' '}
             original marks); whole-paper processing remains incomplete.

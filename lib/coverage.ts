@@ -1,9 +1,6 @@
-import cubeFamily from '../research/templates/4HB1-cube-measure.v0.1.0.json' with { type: 'json' };
 import englishNovemberSummary from '../research/pilot-summaries/4EB1-2024-November-01.json' with { type: 'json' };
 import englishMaySummary from '../research/pilot-summaries/4EB1-2024-May-01-standard.json' with { type: 'json' };
-import matrixFamily from '../research/templates/4MB1-matrix-addition.v0.1.0.json' with { type: 'json' };
 import retrievalValidation from '../research/validation/2026-10-05-retrieval-prototype.json' with { type: 'json' };
-import groupedMeanFamily from '../research/templates/4MB1-grouped-mean.v0.1.0.json' with { type: 'json' };
 import rawLinks from '../research/paper-ledger.json' with { type: 'json' };
 import candidates from '../research/coverage.json' with { type: 'json' };
 import batch from '../research/batches/2026-09-08-cross-subject-lower-01.manifest.json' with { type: 'json' };
@@ -20,10 +17,6 @@ import physicsVisualAudit from '../research/reviews/2026-09-10-physics-visual-au
 import { subjects } from '../content/catalog.ts';
 import { reviewedInventories } from './syllabus.ts';
 import { notes } from '../content/notes.ts';
-import retrievalFamily from '../research/templates/4EB1-retrieve-two-causes.v0.1.0.json' with { type: 'json' };
-import resultantFamily from '../research/templates/4PH1-collinear-resultant.v0.1.0.json' with { type: 'json' };
-import weightFamily from '../research/templates/4PH1-weight-convert-mass.v0.1.0.json' with { type: 'json' };
-import quadraticFamily from '../research/templates/4MB1-monic-quadratic.v0.1.0.json' with { type: 'json' };
 import { activeFamilies } from '../server/template-registry.ts';
 import {
   latestDiscoveryDate,
@@ -32,15 +25,7 @@ import {
   paperDetailedSummary,
 } from './paper-discovery.ts';
 
-const researchFamilies = [
-  cubeFamily,
-  retrievalFamily,
-  resultantFamily,
-  weightFamily,
-  quadraticFamily,
-  matrixFamily,
-  groupedMeanFamily,
-];
+import researchFamilies from '../research/template-summaries.json' with { type: 'json' };
 const familyNames: Record<string, string> = {
   '4HB1.cube.measure': 'Human Biology cube measures',
   '4EB1.retrieve-two-causes': 'English retrieval',
@@ -49,6 +34,14 @@ const familyNames: Record<string, string> = {
   '4MB1.factorisation.monic-quadratic': 'Maths factorisation',
   '4MB1.matrices.add-two-by-two': 'Maths matrix addition',
   '4MB1.statistics.grouped-mean': 'Maths grouped means',
+  '4EB1.explicit-fact-retrieval': 'English one-fact retrieval',
+  '4EB1.retrieve-two-comments': 'English two-comment retrieval',
+  '4EB1.language-structure-analysis': 'English language and structure',
+  '4EB1.viewpoints-comparison': 'English viewpoints comparison',
+  '4EB1.source-directed-letter': 'English source-directed letter',
+  '4EB1.argumentative-extended-writing': 'English argument writing',
+  '4EB1.future-narrative': 'English narrative writing',
+  '4EB1.place-description': 'English descriptive writing',
 };
 const mathematicsSummary = obtainedPaperCandidates('4MB1')
   .map(paperDetailedSummary)
@@ -85,7 +78,7 @@ export const evidenceHighlights = {
     (f) => f.status === 'provisional',
   ).length,
   experimentalGenerators: researchFamilies.filter(
-    (f) => f.status === 'provisional' && f.runtime.implemented,
+    (f) => f.status === 'provisional' && f.runtimeImplemented,
   ).length,
   provisionalFamilyNames: researchFamilies
     .filter((f) => f.status === 'provisional')
@@ -111,7 +104,7 @@ export function coverageSummary() {
       candidatePairs: obtainedPaperCandidates(s.code).filter(
         (record) => !paperCoverReview(record),
       ).length,
-      fullyProcessed: 0,
+      fullyProcessed: s.code === '4EB1' ? englishMaySummary.fullyProcessedPapers + englishNovemberSummary.fullyProcessedPapers : 0,
       candidatePoints: candidates.filter((x) => x.qualification === s.code)
         .length,
       completePoints: reviewedInventories.filter((i) => i.qualification === s.code).flatMap((i) => i.points).filter((p) => p.teachingCoverage === 'complete' && p.substatementAuditComplete).length,
@@ -129,6 +122,7 @@ export function subjectEvidence(code: string) {
       );
       return {
         paperId: r.paperId,
+        fullyProcessed: r.paperId === englishMaySummary.paperId && englishMaySummary.fullyProcessedPapers === 1,
         questionPaper: r.questionPaper,
         markScheme: r.markScheme,
         review: covers.records.find((c) => c.paperId === r.paperId),

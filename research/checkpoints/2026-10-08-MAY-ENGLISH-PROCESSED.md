@@ -1,0 +1,21 @@
+# May English source processing · 8 October 2026
+
+Continued local064a69f/GitHub3e335e3 without replacing either history. Its exact owner-private Sites release succeeded: deploymentappgdep_6ac7ca31fedc8191bbe9c72427bae3f2, versionappgprj_6a9fb37ec9b48191a33eada1843b3a8f~appgver_0a19855f21608191827725cbd4b1656a, native URL https://igcses-study.peterwu2311.chatgpt.site. That is the preceding publication, not this phase until a later native success.
+
+## Source processing, separate from exam practice
+
+One of seven obtained paper pairs now passes the established EXTRACTION_WORKFLOW processing gate: 4EB1-2024-May-01-standard. All36paper/21scheme pages have recorded visual audits, including20remaining answer-space pages and the publisher footer. Eleven detailed printed tasks retain160option marks; each candidate answers nine tasks/100marks. Current Issue4PDF10/18 allocations and task demands match all11source tasks. The May23printed date/May24filename/June report code remain distinct source metadata, never separate papers. Historical extraction snapshots, November pilot and raw batches remain untouched.
+
+The official June2024 examiner report (66pages, 4EB1_01_2406_ER, hash7e3aafb84a541aeafcd3cf370db4c1a085f4478c5f529962595e8f6fdac180d2) is obtained. Selected commentary for every task and general observations are reviewed and linked as short original paraphrases. Student handwriting, whole visual report review and independent marking calibration remain incomplete; no automatic penalties or calibrated model are inferred from commentary.
+
+Eight additional provisional versioned source-demand families link every May task. Total15families/19source links; seven prior offline runtimes, eight new unimplemented contracts, ZEROactive exam templates. Writing preserves independent AO1/4/5 grids10/12/8 and AO4/5 grids20/10. The composite-levels contract rejects collapsed grids, wrong sums, gaps and mismatched objectives. No10/15/30mark task is silently scaled to the custom2/4/6blueprint. Public coverage imports a safe summary instead of private marking contracts.
+
+research/processing/4EB1-2024-May-01-standard.json pins source/spec/family hashes and explicit task/page decisions. scripts/english_processing.py gates promotion before any writes. Existing export composes this sidecar over immutable historical source evidence. Twenty corruption cases reject before ledger/public-summary writes; eleven composite mutations reject. Read-only evidence audit also reconciles paper stage, page logs, report links and per-task review status.
+
+Current totals: one processed source paper, seven obtained pairs/254detailedtasks; ledger22documents/sevenpapers/326numbered task mappings.15provisional families/19links/seven implemented offline runtimes/ZEROactive exam templates or liveAI. Teaching unchanged: three complete agent-reviewed Biology statements,796numbered identities/2,826editorial requirements/1,357links,36partial chapter documents/1,058sections/664original exercises; zero complete chapters or English objectives. Archive discovery remains incomplete. Dependency findings remain22(6moderate16high0critical); not a vulnerability-free claim.
+
+241application tests pass; typecheck/lint clean,17research checks, evidenceerrors=[], isolated nonpersistent D1 source seeding/concurrent-session checks pass, production build/public scan124files/no findings. The initial D1 run was sandbox-blocked on localhost; the authorized local runtime rerun passed. Local English coverage verifies processed-source status, all57pages,9/100candidate path and remaining exam-practice limitations, with no browser error logs. Proof work/english-may-processing-proof.png. No production database writes, credential/API work or UI-animation changes.
+
+## Continue
+
+Commit and sync this verified source non-force, then save/deploy its exact built Sites source. Continue requirement-specific authored-teaching reviews and remaining six paper processing gates; broader archive inventory remains open. Complete independent examiner/response calibration and custom2/4/6demand validation before template activation. AI backend integration remains last. Preserve UI/history/raw indexes/private answers; no reset. Check both allowances and checkpoint/pause at5% in either. Last read80%five-hour/42%weekly remaining; not a usage pause.
