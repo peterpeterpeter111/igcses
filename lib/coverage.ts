@@ -1,4 +1,5 @@
 import cubeFamily from '../research/templates/4HB1-cube-measure.v0.1.0.json' with { type: 'json' };
+import englishMaySummary from '../research/pilot-summaries/4EB1-2024-May-01-standard.json' with { type: 'json' };
 import matrixFamily from '../research/templates/4MB1-matrix-addition.v0.1.0.json' with { type: 'json' };
 import retrievalValidation from '../research/validation/2026-10-05-retrieval-prototype.json' with { type: 'json' };
 import groupedMeanFamily from '../research/templates/4MB1-grouped-mean.v0.1.0.json' with { type: 'json' };
@@ -172,7 +173,20 @@ export function subjectEvidence(code: string) {
                       sourceDiscrepancies: chemistryIndex.sourceDiscrepancies.length,
                     }
                   : null,
-        extraction: detail
+        extraction: r.paperId === englishMaySummary.paperId ? {
+          detailedTasks: englishMaySummary.detailedTasks,
+          originalMarks: englishMaySummary.detailedOriginalMarks,
+          reviewedQuestions: Array.from({ length: englishMaySummary.printedTasks }, (_, i) => String(i + 1)),
+          expectedTasks: englishMaySummary.printedTasks,
+          blockers: englishMaySummary.limitations,
+          notes: ['The legacy May ID and the official June series describe one sitting, counted once.', 'All writing options are extracted; candidates answer only one Section C option.'],
+          questionPaperPages: englishMaySummary.questionPaperPagesReviewed,
+          markSchemePages: englishMaySummary.markSchemePagesReviewed,
+          wholePageAudit: englishMaySummary.wholePageAudit,
+          printedChoices: true,
+          assessedMarks: englishMaySummary.assessedMarks,
+          candidateAnsweredTasks: englishMaySummary.candidateAnsweredTasks,
+        } : detail
           ? {
               detailedTasks: detail.detailedLeafTasks,
               originalMarks: detail.detailedOriginalMarks,
@@ -187,6 +201,9 @@ export function subjectEvidence(code: string) {
               wholePageAudit:
                 detail.pageAudit.questionPaper.wholeDocumentReviewed &&
                 detail.pageAudit.markScheme.wholeDocumentReviewed,
+              printedChoices: false,
+              assessedMarks: null,
+              candidateAnsweredTasks: null,
             }
           : null,
       };

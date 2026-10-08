@@ -14,6 +14,8 @@ from extraction_io import read_extraction
 from note_io import read_note
 from assessment_objective_io import objective_tables
 from english_followup import load_followup, public_summary, PUBLIC_SUMMARY
+from english_levels import load_levels, levels_public_summary
+from english_paper_io import load_paper, public_summary as english_paper_summary, SUMMARY as ENGLISH_PAPER_SUMMARY
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -52,11 +54,13 @@ def audit(root=ROOT):
     pilot = read('research/pilot/4EB1-2024-November-01.json')
     try:
         followup = load_followup(root, pilot)
-        if followup and read(PUBLIC_SUMMARY) != public_summary(followup):
+        levels = load_levels(root, pilot, followup)
+        expected_summary = levels_public_summary(levels) if levels else public_summary(followup) if followup else None
+        if expected_summary and read(PUBLIC_SUMMARY) != expected_summary:
             errors.append({'kind': 'english-followup-summary-mismatch'})
         if followup:
             row = next(r for r in tables['papers'] if r['paper_id'] == pilot['paperId'])
-            if int(row['extracted_leaf_tasks']) != followup['combinedDetailedTasks']:
+            if int(row['extracted_leaf_tasks']) != expected_summary['detailedTasks']:
                 errors.append({'kind': 'english-followup-ledger-count-mismatch'})
             for task in followup['tasks']:
                 row = next(r for r in tables['tasks'] if r['task_id'] == task['id'])
@@ -65,8 +69,34 @@ def audit(root=ROOT):
                         or json.loads(row['acceptable_alternatives_json']) != task['acceptableGroups']
                         or json.loads(row['assessment_objectives_json']) != task['aoMarks']):
                     errors.append({'kind': 'english-followup-task-export-mismatch', 'id': task['id']})
+        if levels:
+            for task in levels['tasks']:
+                row = next(r for r in tables['tasks'] if r['task_id'] == task['id'])
+                if (row['extraction_status'] != 'source-checked' or row['mapping_status'] != 'official-AO-only'
+                        or row['human_reviewed'] != 'false' or int(row['original_marks']) != task['marks']
+                        or json.loads(row['acceptable_alternatives_json']) != task.get('acceptableGroups', [])
+                        or json.loads(row['dependencies_json']) != task['sourceCreditRules']
+                        or json.loads(row['assessment_objectives_json']) != task['aoMarks']):
+                    errors.append({'kind': 'english-levels-task-export-mismatch', 'id': task['id']})
     except (ValueError, KeyError, StopIteration, FileNotFoundError) as exc:
         errors.append({'kind': 'english-followup-contract', 'note': str(exc)})
+    english_paper = None
+    try:
+        english_paper = load_paper(root)
+        if read(ENGLISH_PAPER_SUMMARY) != english_paper_summary(english_paper):
+            errors.append({'kind': 'english-may-summary-mismatch'})
+        row = next(r for r in tables['papers'] if r['paper_id'] == english_paper['paperId'])
+        if (row['extracted_leaf_tasks'], row['assessed_marks'], row['all_alternatives_marks'], row['series']) != ('11', '100', '160', 'June'):
+            errors.append({'kind': 'english-may-paper-export-mismatch'})
+        for task in english_paper['tasks']:
+            row = next(r for r in tables['tasks'] if r['task_id'] == task['id'])
+            if (row['extraction_status'] != 'source-checked' or row['human_reviewed'] != 'false'
+                    or json.loads(row['assessment_objectives_json']) != task['aoMarks']
+                    or json.loads(row['acceptable_alternatives_json']) != task['acceptableGroups']
+                    or json.loads(row['dependencies_json']) != task['sourceCreditRules']):
+                errors.append({'kind': 'english-may-task-export-mismatch', 'id': task['id']})
+    except (ValueError, KeyError, StopIteration, FileNotFoundError) as exc:
+        errors.append({'kind': 'english-may-contract', 'note': str(exc)})
     extractions = [read_extraction(p) for p in sorted((root / 'research/extractions').glob('*.json'))]
     inventories = [json.loads(p.read_text()) for p in sorted((root / 'research/syllabus').glob('*.json'))]
     notes = [read_note(p) for p in sorted((root / 'content/notes').glob('*.json'))]
@@ -85,6 +115,8 @@ def audit(root=ROOT):
             cover_reviewed_ids.add(candidate['id'])
     documents = {s['id']: s for s in sources}
     documents.update({d['id']: d for d in pilot['documents'] + [d for e in extractions for d in e['documents']]})
+    if english_paper:
+        documents.update({d['id']: d for d in english_paper['documents']})
     expected_documents = [{'id': s['id'], 'sha256': s['sha256']} for s in sources]
     expected_documents += [{'id': d['id'], 'sha256': d['sha256']} for d in pilot['documents']]
     for paper in batch['records']:

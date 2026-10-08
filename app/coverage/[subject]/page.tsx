@@ -67,7 +67,7 @@ export default async function SubjectCoverage({
               <div>
                 <p>
                   {r.extraction.detailedTasks} question parts (
-                  {r.extraction.originalMarks} original marks) reviewed across{' '}
+                  {r.extraction.originalMarks} {r.extraction.printedChoices ? 'marks across the printed choices' : 'original marks'}) reviewed across{' '}
                   {r.extraction.reviewedQuestions.length === 1 ? 'Question' : 'Questions'}{' '}
                   {new Intl.ListFormat('en-GB', { style: 'long', type: 'conjunction' }).format(r.extraction.reviewedQuestions)}.
                   {r.extraction.expectedTasks === null
@@ -75,6 +75,10 @@ export default async function SubjectCoverage({
                     : `Detailed records: ${r.extraction.detailedTasks} of ${r.extraction.expectedTasks} parts.`}
                   {' '}Zero fully processed papers.
                 </p>
+                {r.extraction.printedChoices && <p>
+                  Candidates answer {r.extraction.candidateAnsweredTasks} tasks for {r.extraction.assessedMarks} marks.
+                  {' '}The three Section C choices are separate source records, not three compulsory questions.
+                </p>}
                 {r.extraction.wholePageAudit && <p className="status">
                   The visual page review covers all {r.extraction.questionPaperPages} question-paper
                   pages and {r.extraction.markSchemePages} scheme pages, including covers and
@@ -84,7 +88,7 @@ export default async function SubjectCoverage({
                 {!r.extraction.wholePageAudit && <p className="status">
                   Detailed review covers {r.extraction.questionPaperPages} question-paper {r.extraction.questionPaperPages === 1 ? 'page' : 'pages'}
                   {' '}and {r.extraction.markSchemePages} scheme {r.extraction.markSchemePages === 1 ? 'page' : 'pages'}. The original text index
-                  is preserved. {r.index ? 'The separate whole-paper visual inventory is complete; detailed review remains incomplete.' : 'The whole-paper visual inventory and mark reconciliation remain incomplete.'}
+                  is preserved. {r.index ? 'The separate whole-paper visual inventory is complete; detailed review remains incomplete.' : r.extraction.printedChoices ? 'Candidate-path marks reconcile, but the whole-paper visual inventory remains incomplete.' : 'The whole-paper visual inventory and mark reconciliation remain incomplete.'}
                 </p>}
                 <details>
                   <summary>Remaining processing gaps</summary>
@@ -180,12 +184,15 @@ export default async function SubjectCoverage({
             Also obtained: November 2024 paper 01, its scheme and examiner
             report. Eleven printed tasks indexed; Questions{' '}
             {englishPaperSummary.reviewedTaskNumbers.join(', ')} have partial detailed records
-            ({englishPaperSummary.detailedOriginalMarks} original marks).
+            ({englishPaperSummary.detailedOriginalMarks} original marks across the printed choices).
             {' '}{englishPaperSummary.remainingIndexedTasks} tasks remain indexed only;
             whole-paper processing is incomplete. A candidate answers nine tasks
             for 100 marks; all printed alternatives total 160 marks.
           </p>
-          <p className="status">Latest retrieval review: {englishPaperSummary.reviewedAt};
+          <p>Real-paper analysis, comparison and writing use their original
+            level grids. Directed writing keeps its separate 10/12/8 objective
+            allocations; they have not been scaled into custom quiz marks.</p>
+          <p className="status">Latest paper-record review: {englishPaperSummary.reviewedAt};
             {' '}AI review, no human certification or active examiner marker.</p>
           <h2>Selected reading and writing teaching</h2>
           <p>
@@ -210,8 +217,9 @@ export default async function SubjectCoverage({
             Writing source review: {englishWritingReview.reviewDate} against
             Issue 4, PDF pages {englishWritingReview.source.pdfPages.join(', ')}.
             Full source-text practice, independent whole-response level decisions,
-            complete objective coverage and optional spoken-language teaching remain
-            incomplete. No human certification or active marking template.
+            complete objective coverage and spoken-language delivery review remain
+            incomplete. Partial spoken-language preparation notes are available.
+            No human certification or active marking template.
           </p>
           <h2 id="english-objectives">Assessment objectives and teaching</h2>
           <p>

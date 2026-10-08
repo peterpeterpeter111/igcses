@@ -1,8 +1,7 @@
-"""Normalize the saved English pilot without claiming new paper processing.
+"""Normalize the immutable English pilot and its validated follow-up overlays.
 
-The immutable pilot JSON remains the evidence authority. Ten tasks stay indexed;
-Q5 retains its partial source-checked extraction, not a complete runnable rubric.
-No syllabus point or AO skill is invented and no template is activated.
+Later task/grid evidence composes over the original pilot without rewriting it.
+Source extraction never activates marking templates or completes processing.
 """
 import csv
 import hashlib
@@ -12,6 +11,7 @@ import re
 from pathlib import Path
 from ledger_io import read_table, table_outputs
 from english_followup import load_followup, public_summary, FOLLOWUP, PUBLIC_SUMMARY
+from english_levels import load_levels, levels_public_summary, LEVELS
 
 PILOT = Path('research/pilot/4EB1-2024-November-01.json')
 PAPER = '4EB1-2024-November-01'
@@ -148,6 +148,22 @@ def prepare(root):
                            blocker=' '.join(t['calibrationBlockers']), updated_at=followup['reviewDate'])
         paper_row.update(extracted_leaf_tasks=followup['combinedDetailedTasks'], reviewed_at=followup['reviewDate'],
                          updated_at=followup['reviewDate'], blocking_issues_json=encode(public_summary(followup)['limitations']))
+    levels = load_levels(root, m, followup)
+    if levels:
+        by_id = {t['id']: t for t in levels['tasks']}
+        for row in rows:
+            t = by_id.get(row['task_id'])
+            if t:
+                row.update(required_knowledge=t['requiredKnowledge'], context_summary=t['contextSummary'],
+                           stimulus_types_json=encode(t['stimulusTypes']), solution_structure_json=encode(t['solutionStructure']),
+                           rubric_ref=str(LEVELS)+'#'+t['id'], acceptable_alternatives_json=encode(t.get('acceptableGroups', [])),
+                           dependencies_json=encode(t['sourceCreditRules']), report_refs_json=encode(t['reportRefs']),
+                           common_errors_json=encode(t['editorialCommonErrors'] + (m['tasks'][4]['detailedExtraction']['commonErrors'] if t['number'] == 5 else [])),
+                           extraction_status='source-checked', mapping_status='official-AO-only',
+                           review_status='agent-partial-review', reviewed_by=levels['reviewedBy'],
+                           blocker=' '.join(t['calibrationBlockers']), updated_at=levels['reviewDate'])
+        paper_row.update(extracted_leaf_tasks=levels['combinedDetailedTasks'], reviewed_at=levels['reviewDate'],
+                         updated_at=levels['reviewDate'], blocking_issues_json=encode(levels_public_summary(levels)['limitations']))
     additions = {'documents':('document_id', doc_rows), 'papers':('paper_id',[paper_row]), 'tasks':('task_id', rows)}
     pending = []
     for name,(key,records) in additions.items():
@@ -161,8 +177,8 @@ def prepare(root):
         for row in records:merged[row[key]]={field:row.get(field,'') for field in fields}
         pending.extend(table_outputs(path.parent,name,fields,merged.values(),'4EB1').items())
     if followup:
-        pending.append((root/PUBLIC_SUMMARY, json.dumps(public_summary(followup), indent=2)+'\n'))
-    summary=dict(paper=PAPER, indexedTasks=11, detailedTasks=followup['combinedDetailedTasks'] if followup else 1, fullyProcessedPapers=0, activeTemplates=0,
+        pending.append((root/PUBLIC_SUMMARY, json.dumps(levels_public_summary(levels) if levels else public_summary(followup), indent=2)+'\n'))
+    summary=dict(paper=PAPER, indexedTasks=11, detailedTasks=levels['combinedDetailedTasks'] if levels else followup['combinedDetailedTasks'] if followup else 1, fullyProcessedPapers=0, activeTemplates=0,
                  normalizedDocuments=3, originalPilotSha256=hashlib.sha256((root/PILOT).read_bytes()).hexdigest())
     return pending,summary
 

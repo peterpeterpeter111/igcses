@@ -15,8 +15,9 @@ const forbidden = [
   ],
   [
     'English private retrieval answer-group identifier',
-    /4EB1-2024-November-01\.Q(?:1|2|4):group-\d/,
+    /4EB1-2024-(?:November-01|May-01-standard)\.Q\d+:group-\d/,
   ],
+  ['English private level-grid identifier', /4EB1-2024-(?:November-01|May-01-standard):grid:/],
 ];
 
 function filesIn(directory) {
