@@ -7,12 +7,12 @@ export default function QuizPage() {
       <main className="quiz-page">
         <div className="eyebrow">PRACTICE ROOM</div>
         <h1>Practise what you’ve learned</h1>
-        <p>Choose a subject for a short set of lesson exercises. Write your answer, compare with the explanation, and revisit the topics that need work.</p>
+        <p>Choose a subject, select chapters and set your practice length. Write your answers, compare with the explanations, and revisit the topics that need work.</p>
         <nav aria-label="Quiz subjects">
           {subjects.map((s) => (
             <Link className="chapter-row" href={'/revision/' + s.id} key={s.id}>
               <strong>{s.title}</strong>
-              <small>Start chapter practice →</small>
+              <small>Build custom practice →</small>
             </Link>
           ))}
         </nav>

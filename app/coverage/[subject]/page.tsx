@@ -13,6 +13,7 @@ import { reviewedInventories } from '@/lib/syllabus';
 import physicsSkills from '@/research/syllabus-skills/4PH1-issue4.json';
 import humanSkills from '@/research/syllabus-skills/4HB1-issue2-selected.json';
 import humanCubeSkills from '@/research/syllabus-skills/4HB1-issue2-q6-selected.json';
+import chemistrySkills from '@/research/syllabus-skills/4CH1-issue3-selected.json';
 import englishReadingReview from '@/research/teaching-reviews/4EB1-reading-foundations.json';
 import englishWritingReview from '@/research/teaching-reviews/4EB1-writing-foundations.json';
 import { assessmentObjectiveCoverage, assessmentObjectiveReviewDate } from '@/lib/assessment-objectives';
@@ -263,6 +264,14 @@ export default async function SubjectCoverage({
               {' '}have no separate listed skill demand. These decisions do not establish
               official assessment-objective marks or complete teaching coverage.
             </p>
+          </section>
+        )}
+        {s.code === chemistrySkills.qualification && (
+          <section>
+            <h2>Practical and mathematical skills</h2>
+            <p>{chemistrySkills.skills.filter((skill) => skill.kind === 'experimental').length} experimental skills and {chemistrySkills.skills.filter((skill) => skill.kind === 'mathematical').length} mathematical skills inventoried from the saved official specification. Rows without a Chemistry applicability tick are excluded.</p>
+            <p>{chemistrySkills.reviewedLeafCount} of 56 paper parts have a selected mathematical-demand review; {chemistrySkills.unreviewedLeafCount} remain outside this selected audit. Whole-paper experimental allocation, historical applicability and official per-part assessment-objective marks remain unverified. This does not establish complete teaching coverage or a processed paper.</p>
+            <p><a href={source.url + '#page=49'} target="_blank" rel="noreferrer">Own specification · PDF pages 34–35 and 49–50 ↗</a>{' · Checked '}{chemistrySkills.reviewDate}; AI review, no human certification.</p>
           </section>
         )}
         {s.code === humanSkills.qualification && (

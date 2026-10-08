@@ -1,0 +1,25 @@
+# Custom practice and selected Chemistry skills checkpoint · 8 October 2026
+
+Continued clean local5affefe and GitHub436064f without restart/reset/history replacement. Sites was opened at the existing project before changes. Both allowances were available; latest84% five-hour/69% weekly remaining. No reset consumed and this is not a pause threshold.
+
+## Implemented
+
+Custom lesson practice now supports any selected chapters,1–30 requested questions, mixed or original lesson order, and explanations after the whole set (default) or after each question. Written answers stay in temporary browser state and are not sent for marking. Completed sets show retained answers, on-demand lesson explanations and self-assessment; flagged topics can be revisited alone. Selection caps honestly at the available distinct questions. Invalid/empty choices cannot start. Explanation requests have a15-second timeout, retry messaging, unmount cancellation and single-request guard. This is a lesson exercise bank, not fresh generated exam questions, automated grading or an active source-based exam template.
+
+Added18 original exercises to existing sections in the nine chapters that lacked any. All36 chapter routes now offer at least two lesson exercises. Bank totals: HumanBiology127, Biology214, Chemistry55, Physics123, English19, MathsB124;662 original lesson exercises total. Existing1056 sections/36 partial note documents are unchanged; zero chapter/point/objective completion promotions. Full chapter exercise depth is uneven and these18 additions do not establish full syllabus coverage.
+
+The quiz surface was accidentally inheriting the transparent light library background while keeping pale text. Restored opaque dark quiz background, dark header and feedback panels, and readable muted crimson accents. Light library styling and existing navigation animations remain unchanged. Narrow319px preview has equal client/scroll widths and no horizontal overflow.
+
+Chemistry: saved official specification PDF34,35,49,50 visually inspected at36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362. New research/syllabus-skills/4CH1-issue3-selected.json inventories10 experimental bullets and18 Chemistry-applicable mathematical rows, explicitly excluding nine other-science-only rows. Twelve existing detailed leaves have hash-bound selected mathematical-demand decisions;44 remain outside this selected audit. Decimal-place instructions are not silently treated as significant-figure demands; qualitative curve steepness is not tagged as a required tangent construction. Coverage UI exposes the selected scope and remaining gates. No official per-leaf AO is invented, no mark allocation derived from whole-qualification percentages, and no historical applicability certification.
+
+## Counts and verification
+
+Unchanged extraction totals: Chemistry56 detailed parts/110marks/83 partial numbered mappings; Physics51/110,Maths38/100,HumanBiology42/90,Biology45/110,English one2-mark pilot. Seven obtained pairs; normalized ledger243tasks/326mappings/19documents/six paper rows. Zero fully processed papers, active exam families or live AI. Seven provisional offline families remain separate.796 reviewed numbered identities,2824 local curriculum requirements,1354 partial teaching links; English separately6 objectives/41 links. Raw indexed-only manifests and private rubric partitions unchanged.
+
+223 tests pass; typecheck/lint,16 research checks, structural evidence errors=[], isolated D1 exact content seed and concurrency/private-result checks pass. Production build and public scan124files/zero findings pass. No schema migration or live D1 mutation. Prepared ignored work/seed-content.sql contains784 bounded content rows; isolated test reads the updated current content. Browser-tested multi-chapter setup, two-question deferred review with retained answers, focused one-topic revisit, chapter preset, invalid count and one-question immediate feedback. Proof: work/custom-practice-local-proof.png. New structural evidence report: research/reviews/2026-10-08-custom-practice-evidence.json. Source hashes and twelve selected mappings have two meaningful regression checks; selection controls have three tests across all six subjects.
+
+## Release and next steps
+
+Current changed application is verified locally; commit, sync non-force and publish its exact saved source next. Previous owner-private Sites version8 publishes4d6b611; do not claim the new custom practice is live until a succeeded deployment result is recorded.
+
+Continue remaining Chemistry historical/experimental/all-leaf skills review, source-credit/measurement/drawing calibration and validated generative templates, then cross-subject curriculum. Keep AI last. Custom lesson practice still uses original stored exercises; generated past-paper-based practice and calibrated examiner-style scoring are unfinished. Keep counts honest, preserve both histories/current UI, check both allowances and checkpoint/pause at5% in either; no reset. User's Desktop/IGCSE Notes.command remains available.

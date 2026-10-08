@@ -1,3 +1,7 @@
+# Latest phase · 8 October 2026 · custom practice and selected skills
+
+Read research/checkpoints/2026-10-08-CUSTOM-PRACTICE-AND-SKILLS.md first. Continue its latest descendant without restarting. Custom lesson practice supports chapter selection,1–30 questions, mixed/lesson order and delayed feedback.662 original exercises now span every36chapter, not active generated exam templates. Chemistry inventories10 experimental/18 mathematical skills with12 selected leaf decisions and44 remaining outside that selected audit.223 tests and all checks pass. Commit/sync the verified phase non-force and publish its exact source, then continue historical/whole-paper skills, calibration and curriculum. AI last; no reset. Check both allowances and pause/checkpoint at5%. Older entries are historical.
+
 # Current checkpoint — 7 October 2026, verified Chemistry release and resume gate
 
 Read `research/checkpoints/2026-10-07-CHEMISTRY-HANDOFF.md`, `2026-10-07-CHEMISTRY-ORGANIC-SUMMARIES.md` and `2026-10-07-CHEMISTRY-Q10.md` first. Preserve latest local history; do not restart/reset/discard or consume a reset. Check both allowances and continue substantive work only above5% in both; pause/checkpoint at5% in either. Last read6% five-hour/72% weekly; handoff saved at the threshold approach.

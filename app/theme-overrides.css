@@ -103,6 +103,14 @@ body {
   background: transparent;
 }
 
+/* Quiz text uses the dark palette; keep its surface opaque over the light library. */
+.shell.dark { --primary: #b87279; background: var(--background); color: var(--foreground); color-scheme: dark; }
+.shell.dark header { background: #211619; box-shadow: 0 1px 0 #493333; }
+.shell.dark .wordmark { color: var(--foreground); text-shadow: none; }
+.shell.dark .wordmark span { color: var(--muted-foreground); }
+.shell.dark .eyebrow { color: #d2a1a6; }
+.shell.dark .note, .shell.dark details[open] { background: var(--muted); box-shadow: none; }
+
 .shell::before,
 .shell::after {
   position: fixed;
@@ -847,3 +855,20 @@ summary::marker {
 .revision-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin: 1rem 0; }
 .revision-card textarea { min-height: 9rem; width: 100%; margin: .75rem 0; }
 .revision-card .quiz-meta { flex-wrap: wrap; gap: .5rem; }
+.practice-builder { border: 1px solid #604047; padding: clamp(1rem, 3vw, 2rem); margin-top: 2rem; background: #1e1518; }
+.practice-builder fieldset { border: 0; padding: 0; margin: 1.5rem 0; min-width: 0; }
+.practice-builder legend { font-weight: 700; }
+.practice-chapters { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: .6rem; }
+.practice-chapter { display: flex; align-items: flex-start; gap: .75rem; padding: .9rem; border: 1px solid #604047; cursor: pointer; overflow-wrap: anywhere; }
+.practice-chapter:has(input:checked) { border-color: #ac6974; background: #362129; }
+.practice-chapter input { margin-top: .25rem; accent-color: #ac6974; width: 1.1rem; height: 1.1rem; flex-shrink: 0; }
+.practice-chapter small { display: block; margin-top: .25rem; color: #c8adb4; }
+.practice-chapter:has(input:disabled) { opacity: .65; cursor: default; }
+.practice-selection-status { display: block; margin: 1rem 0; }
+.practice-options { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 1rem; }
+.practice-options label { display: grid; gap: .5rem; }
+.practice-options input, .practice-options select { color: #f5e7e9; background: #281a20; border: 1px solid #8a5964; padding: .7rem; border-radius: 2px; width: 100%; min-width: 0; }
+.practice-builder input:focus-visible, .practice-builder select:focus-visible { outline: 2px solid #d5ab79; outline-offset: 3px; }
+.practice-review .note { margin-top: 1.25rem; overflow-wrap: anywhere; }
+.practice-explanation { border-left: 2px solid #ac6974; padding-left: 1rem; margin: 1rem 0; }
+.practice-review [aria-pressed="true"] { outline: 2px solid #d5ab79; outline-offset: 2px; }
