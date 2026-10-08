@@ -130,7 +130,12 @@
       "commonMistakes": [
         "A pairs with T in DNA, not with C.",
         "Hydrogen bonds join complementary bases across the two strands."
-      ]
+      ],
+      "diagram": {
+        "src": "/diagrams/human-biology-dna-model.svg",
+        "alt": "Two coiled DNA backbones and an opened fragment show sugar, phosphate, complementary A–T/C–G bases and hydrogen bonds.",
+        "caption": "Original schematic. The opened fragment separates features for study; the strands normally coil into a double helix. Not to scale or a micrograph."
+      }
     },
     {
       "id": "dna-replication",
@@ -154,9 +159,9 @@
         "explanation": "Include both the pairing rule and formation of the new strand."
       },
       "practice": {
-        "question": "After one round of replication, how many original strands are present in each new double-stranded molecule?",
-        "answer": "One original strand and one newly synthesised strand.",
-        "explanation": "The original molecule has two strands, which separate into different daughter molecules."
+        "question": "A DNA pair separates before division. Explain, in order, how each exposed strand can give a new double-stranded molecule and identify what DNA polymerase does.",
+        "answer": "Hydrogen bonds between paired bases break and the strands separate. Free DNA nucleotides pair complementarily with each original template: A–T and C–G. DNA polymerase joins added nucleotides into each new strand. Each accurate product has one original and one newly made strand, retaining the sequence information.",
+        "explanation": "Pairing selects the bases; joining makes a continuous new backbone. Neither step directly makes a protein or divides the cell."
       },
       "terms": [
         "DNA polymerase",
@@ -280,7 +285,12 @@
       "commonMistakes": [
         "Do not interchange codon and anticodon.",
         "The ribosome joins amino acids; it does not join DNA bases into a protein."
-      ]
+      ],
+      "diagram": {
+        "src": "/diagrams/human-biology-gene-flow.svg",
+        "alt": "A nuclear DNA template produces complementary mRNA, which moves to a cytoplasmic ribosome; aligned tRNA anticodons deliver methionine, alanine and aspartate.",
+        "caption": "Original short-fragment model with explicit strand directions and a supplied code key. The tRNA row represents separate matched carriers, not one continuous tRNA chain. No stop signal or complete protein is shown."
+      }
     },
     {
       "id": "mutations-and-phenotype",
@@ -316,6 +326,83 @@
       "commonMistakes": [
         "A mutation changes a base sequence, not an amino acid directly.",
         "Do not describe all mutations as harmful."
+      ]
+    },
+    {
+      "id": "organelle-function-evidence",
+      "title": "Match cell needs to structures",
+      "points": [
+        "1.2"
+      ],
+      "paragraphs": [
+        "These invented comparisons isolate different cell needs. Functions can cooperate: a cell exporting proteins requires gene expression, ribosomes and membrane processing, not just one organelle. A relative abundance is supporting evidence of a demand, not a uniquely identifying label for every cell.",
+        "A nucleus contains chromosomes carrying DNA genes. Expression of selected genes controls the proteins a cell makes. Ribosomes assemble amino-acid chains, while rough endoplasmic reticulum receives and helps process/transport proteins from attached ribosomes. A selective membrane controls exchange; mitochondria transfer energy through much of aerobic respiration."
+      ],
+      "example": {
+        "question": "A gland cell contains extensive rough ER and many attached ribosomes. A second cell repeatedly contracts and has many mitochondria. Explain the relevant functions, then distinguish a chromosome from a nucleus.",
+        "steps": [
+          "Ribosomes assemble proteins; rough ER supports processing and movement of the proteins that enter its membrane system.",
+          "Mitochondria support energy transfer through aerobic respiration for repeated contraction.",
+          "A chromosome is a DNA/protein structure carrying genes; the nucleus is the compartment containing nuclear chromosomes."
+        ],
+        "explanation": "Name each structure and the specific demand it supports."
+      },
+      "practice": {
+        "question": "A cell controls uptake of substances but does not simply block everything. Identify the structure and explain how this role differs from the nucleus controlling cell activity.",
+        "answer": "The cell membrane is a selective boundary controlling exchange. The nucleus contains genetic information whose expression helps regulate activities; it is not the cell’s outer uptake boundary.",
+        "explanation": "Both are involved in control, but at different biological levels."
+      },
+      "terms": [
+        "ribosome",
+        "rough endoplasmic reticulum",
+        "chromosome",
+        "nucleus",
+        "selective membrane"
+      ]
+    },
+    {
+      "id": "gene-flow-and-mutation-evidence",
+      "title": "Trace a defined sequence and evaluate a change",
+      "points": [
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6",
+        "1.7",
+        "1.8"
+      ],
+      "paragraphs": [
+        "Use the original diagram’s coding strand 5′ ATG GCT GAT 3′ and aligned template 3′ TAC CGA CTA 5′. Complementary transcription gives mRNA 5′ AUG GCU GAU 3′. The supplied key assigns methionine, alanine and aspartate in that order. This is a nine-base fragment encoding three amino acids, with stop and non-coding regions excluded.",
+        "The mRNA moves from the nucleus to a ribosome in the cytoplasm. Separate tRNAs present the aligned anticodons 3′ UAC, CGA and CUA 5′, delivering the matching amino acids. Hydrogen-bonded codon/anticodon matching orders the carriers; the ribosome links the amino acids into a polypeptide. The diagram’s single row of anticodons is an alignment of different tRNAs, not one tRNA molecule containing all nine bases.",
+        "Replication makes new DNA strands for DNA molecules; transcription makes an RNA copy of selected information. During replication DNA polymerase joins new DNA nucleotides. During protein synthesis mRNA and tRNA have different roles; neither RNA process turns the original DNA molecule into a protein.",
+        "For the mutation comparison, the supplied code key also gives GCC = alanine. Changing the coding triplet GCT to GCC changes the mRNA GCU to GCC but retains alanine. Changing GCT to GAT changes the corresponding mRNA codon to GAU, replacing alanine with aspartate. A changed amino acid could alter folding/function and phenotype; the sequence alone does not prove that it does, or that a disease results."
+      ],
+      "example": {
+        "question": "Trace the coding fragment ATG GCT GAT through the template, mRNA and three amino acids using the defined alignment and key. Would GCT → GCC necessarily change the amino-acid chain?",
+        "steps": [
+          "Aligned template: TAC CGA CTA; mRNA: AUG GCU GAU.",
+          "The three codons specify methionine–alanine–aspartate; the count is 9/3 = 3 amino acids.",
+          "A coding GCT → GCC change produces GCU → GCC in mRNA, both alanine in the supplied key, so this position retains its amino acid.",
+          "A DNA base changed; a changed amino-acid chain or phenotype is not compelled."
+        ],
+        "explanation": "Keep coding, template and mRNA identities explicit and use the supplied key."
+      },
+      "practice": {
+        "question": "Instead GCT changes to GAT. Identify the mRNA and chain change, then explain why the phenotype cannot be decided from this information alone. Which process makes the RNA and where does the chain form?",
+        "answer": "The mRNA changes from AUG GCU GAU to AUG GAU GAU; the short chain becomes methionine–aspartate–aspartate. Transcription makes mRNA in the nucleus, and translation forms the chain at a cytoplasmic ribosome. The replacement may affect folding/function, but functional evidence and the wider organism are needed before claiming a phenotype change.",
+        "explanation": "A possible causal chain is not a proven functional effect."
+      },
+      "terms": [
+        "coding strand",
+        "template strand",
+        "complementary",
+        "anticodon",
+        "silent mutation",
+        "phenotype"
+      ],
+      "commonMistakes": [
+        "Do not just replace T by U in a supplied template strand.",
+        "One tRNA is not the entire row of all anticodons."
       ]
     },
     {

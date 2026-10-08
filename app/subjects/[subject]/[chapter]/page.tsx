@@ -89,6 +89,17 @@ export default async function ChapterPage({
                     {section.paragraphs.map((x, i) => (
                       <p key={i}>{x}</p>
                     ))}
+                    {section.table && <div className="table-wrap">
+                      <table>
+                        <caption>{section.title} · illustrative teaching data</caption>
+                        <thead><tr>{section.table.headers.map((heading) => <th scope="col" key={heading}>{heading}</th>)}</tr></thead>
+                        <tbody>{section.table.rows.map((row, index) => <tr key={index}>
+                          {row.map((cell, column) => column === 0
+                            ? <th scope="row" key={column}>{cell}</th>
+                            : <td key={column}>{cell}</td>)}
+                        </tr>)}</tbody>
+                      </table>
+                    </div>}
                     {section.diagram && (
                       <figure className="note-diagram">
                         {/* Original local SVGs: no raster optimisation is needed. */}
@@ -100,6 +111,7 @@ export default async function ChapterPage({
                           height={350}
                         />
                         <figcaption>{section.diagram.caption}</figcaption>
+                        <a href={section.diagram.src} target="_blank" rel="noreferrer">View larger diagram ↗</a>
                       </figure>
                     )}
                     {section.practical && (

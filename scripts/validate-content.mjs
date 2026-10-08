@@ -14,7 +14,7 @@ const rows = readdirSync('content/notes')
 const checks = [];
 const sectionFields = new Set([
   'id', 'title', 'paragraphs', 'terms', 'points', 'example', 'practice',
-  'diagram', 'commonMistakes', 'practical', 'answerGuide',
+  'diagram', 'commonMistakes', 'practical', 'answerGuide', 'table',
 ]);
 for (const n of rows) {
   const s = sources.find((s) => s.id === n.sourceId);
@@ -41,6 +41,14 @@ for (const n of rows) {
           `${section.id}: practical ${field} must contain nonempty text`);
       }
     }
+    if (section.table) {
+      const { headers, rows } = section.table;
+      assert.deepEqual(Object.keys(section.table).sort(), ['headers', 'rows']);
+      assert(Array.isArray(headers) && headers.length >= 2 && headers.every((h) => typeof h === 'string' && h.trim()));
+      assert(new Set(headers).size === headers.length, `${section.id}: duplicate table headings`);
+      assert(Array.isArray(rows) && rows.length > 0 && rows.every((row) => Array.isArray(row) && row.length === headers.length && row.every((cell) => typeof cell === 'string' && cell.trim())),
+        `${section.id}: table rows must match headings and contain nonempty text`);
+    }
   }
   checks.push({
     subjectId: n.subjectId,
@@ -61,7 +69,7 @@ const report = {
   chaptersWithPartialNotes: rows.length,
   sections: rows.reduce((n, r) => n + r.sections.length, 0),
   completeChapters: 0,
-  fullyCoveredSpecificationPoints: 0,
+  completionPromotionsByThisShapeCheck: 0,
   checks,
 };
 if (args.length) writeFileSync(args[1], JSON.stringify(report, null, 2) + '\n', { flag: 'wx' });

@@ -48,6 +48,42 @@
       ]
     },
     {
+      "id": "molecule-classification-evidence",
+      "title": "Classifying molecule clues without overclaiming",
+      "points": [
+        "2.7",
+        "2.8"
+      ],
+      "paragraphs": [
+        "Carbohydrates and the fats and oils in this specification share carbon, hydrogen and oxygen. Element names alone therefore cannot distinguish those two groups. Nitrogen is a required additional element in proteins, but a nitrogen-containing sample is not automatically proven to be a protein; many other molecules contain nitrogen. Use the building units and test evidence as well.",
+        "A long chain of glucose units is consistent with starch or glycogen, whereas an amino-acid chain is a protein. One glycerol joined to three fatty acids describes a typical triglyceride. These are different structures, not interchangeable names for elements."
+      ],
+      "example": {
+        "question": "A purified large molecule breaks down to many amino acids. Name its class and four elements expected in that class. Another yields glycerol and fatty acids; identify it.",
+        "steps": [
+          "An amino-acid chain is a protein, containing carbon, hydrogen, oxygen and nitrogen.",
+          "A typical molecule yielding glycerol and fatty acids is a lipid such as a triglyceride.",
+          "Its expected elements here are carbon, hydrogen and oxygen; the fatty acids and glycerol are smaller molecules, not elements."
+        ],
+        "explanation": "Use molecular building units to identify class and atom types to answer the element question."
+      },
+      "practice": {
+        "question": "A large molecule contains carbon, hydrogen and oxygen. Is that enough to decide whether it is starch or a fat? What further building-unit evidence would distinguish them?",
+        "answer": "No, both contain these elements. Starch is built from many glucose units; a typical fat is formed from glycerol and fatty acids.",
+        "explanation": "Shared elemental composition does not uniquely identify molecular structure."
+      },
+      "terms": [
+        "element",
+        "building unit",
+        "protein",
+        "carbohydrate",
+        "lipid"
+      ],
+      "commonMistakes": [
+        "Nitrogen alone is not a protein identification test."
+      ]
+    },
+    {
       "id": "reducing-sugar-and-starch-tests",
       "title": "Testing for reducing sugars and starch",
       "points": [
@@ -261,10 +297,12 @@
         "2.12"
       ],
       "paragraphs": [
-        "To isolate temperature, repeat the amylase–starch endpoint experiment at several teacher-approved water-bath temperatures with the same buffer pH. Warm enzyme and substrate separately for the same short equilibration period; the reaction starts when they are combined, not when the tubes first enter the bath.",
+        "To isolate temperature, investigate the time taken for amylase to break down starch at several teacher-approved water-bath temperatures. Keep pH constant with the same buffer. Warm enzyme and substrate separately for the same short equilibration period; the reaction starts when they are combined, not when the tubes first enter the bath.",
+        "Place fresh iodine drops on a spotting tile. At fixed intervals after mixing, remove a small reaction sample to a fresh drop. Starch produces blue-black; the first sample that leaves the iodine yellow-brown is the defined endpoint. Never put iodine into the reaction tube or return tested samples. Use teacher-trialled dilute solutions so endpoints fall within a measurable interval. For an equal starting starch amount and detection endpoint, 1/time estimates a relative rate in s⁻¹; it is not a mass of sugar formed per second.",
         "Measure the actual reaction temperature and keep tubes in the bath during the reaction. Use equal starting concentrations and volumes, the same sampling intervals and fresh enzyme for every run. If the same enzyme portion is successively heated, earlier denaturation changes later runs as well as temperature, confounding the comparison.",
         "Plot relative rate against measured temperature and consider repeat variation. More closely spaced temperatures near a peak help locate the measured optimum. At high temperatures, denaturation can occur during equilibration and measurement, so report both exposure time and temperature.",
-        "This endpoint method does not directly distinguish every cause of a slow result. An additional experiment can pre-treat enzyme at two temperatures for equal times and then compare both at one common assay temperature. Persistent loss after heat exposure supports structural damage, whereas recovery after mild cooling supports reversible slowing. This extension needs separate controls and does not replace the basic temperature investigation."
+        "This endpoint method does not directly distinguish every cause of a slow result. An additional experiment can pre-treat enzyme at two temperatures for equal times and then compare both at one common assay temperature. Persistent loss after heat exposure supports structural damage, whereas recovery after mild cooling supports reversible slowing. This extension needs separate controls and does not replace the basic temperature investigation.",
+        "The worked times in this lesson are invented teaching data, not measurements from a performed experiment."
       ],
       "example": {
         "question": "Mean endpoint times are 120 s at 15 °C, 60 s at 25 °C and 40 s at 35 °C. Compare relative rates at 15 °C and 35 °C.",
@@ -302,7 +340,7 @@
         "method": [
           "Select several safe temperatures and use fresh equal enzyme and substrate portions in each run.",
           "Equilibrate separately for the same fixed period, combine and start timing while maintaining bath temperature.",
-          "Test removed samples with iodine at fixed intervals; record endpoint and actual temperature.",
+          "At fixed intervals after mixing, remove a small sample onto a fresh iodine drop on a tile. Record the first sample that does not become blue-black and the actual reaction temperature; never return tested samples.",
           "Repeat each temperature and include a no-enzyme control; compare relative rates and their variation."
         ],
         "variables": [
@@ -330,7 +368,8 @@
         "Change pH using buffer solutions while holding temperature and the starting amounts of starch and enzyme constant. Start timing when enzyme and substrate meet, mix consistently, and sample at fixed intervals. The first sample that no longer turns iodine blue-black is an operational endpoint: starch is below the test's detection threshold, not proven to be absolutely absent.",
         "For the same starting starch amount and endpoint, 1/time is a useful relative rate measure, with units s⁻¹ when time is in seconds. It is not a measured mass of product per second. Record each repeat time, examine the spread and state how the representative rate was calculated.",
         "An interval method only locates the endpoint between two samples. If starch is detected at 50 s but not at 60 s, the threshold was crossed sometime after 50 s and by 60 s. Smaller intervals can improve timing resolution, provided sampling and mixing remain consistent. A result still positive at the stopping time should be recorded as “endpoint not reached”, not as zero activity.",
-        "This practical is specified as 2.14B for Paper 2B. The theory of pH effects in 2.13 is shared content and is taught separately from this practical requirement."
+        "This practical is specified as 2.14B for Paper 2B. The theory of pH effects in 2.13 is shared content and is taught separately from this practical requirement.",
+        "The worked times in this lesson are invented teaching data, not measurements from a performed experiment."
       ],
       "example": {
         "question": "Three runs at one pH reach the endpoint at 50, 60 and 70 s. Calculate the mean time and a relative rate based on that mean.",
@@ -385,6 +424,154 @@
           "Never return iodine-contaminated samples to the tube. Controls check that starch is not disappearing without active enzyme."
         ]
       }
+    },
+    {
+      "id": "food-test-evidence-table",
+      "title": "Reading food-test observations",
+      "points": [
+        "2.9"
+      ],
+      "paragraphs": [
+        "The following observations are invented to practise interpretation. Each food is tested using separate portions, with the appropriate heating, clear ethanol extract and clean apparatus. The known positive controls give their expected changes and the water controls remain negative.",
+        "A test observation is evidence for a molecular group under stated conditions. Combine results independently: a mixture can contain several groups. These qualitative observations cannot establish precise amounts, calorific value or overall dietary suitability. A reducing-sugar result alone does not uniquely identify glucose."
+      ],
+      "table": {
+        "headers": [
+          "Sample",
+          "Heated Benedict’s",
+          "Iodine",
+          "Biuret",
+          "Clear ethanol extract into water"
+        ],
+        "rows": [
+          [
+            "A",
+            "Orange precipitate",
+            "Blue-black",
+            "Blue",
+            "Clear"
+          ],
+          [
+            "B",
+            "Blue",
+            "Yellow-brown",
+            "Purple",
+            "New white emulsion"
+          ],
+          [
+            "C",
+            "Blue",
+            "Yellow-brown",
+            "Blue",
+            "Clear"
+          ],
+          [
+            "D",
+            "Orange precipitate",
+            "Yellow-brown",
+            "Purple",
+            "Clear"
+          ]
+        ]
+      },
+      "example": {
+        "question": "Compare the supported contents of samples A and B. What remains unknown?",
+        "steps": [
+          "A supports starch and at least one reducing sugar; protein and lipid were not detected.",
+          "B supports protein and lipid; starch and reducing sugar were not detected.",
+          "The controls support the test procedures, but colours do not supply exact concentrations or prove absolute absence after a negative result."
+        ],
+        "explanation": "Interpret each reagent separately and retain the detection limits."
+      },
+      "practice": {
+        "question": "A student says that D contains only glucose and protein. Evaluate the word “only”.",
+        "answer": "D supports a reducing sugar and protein. Benedict’s does not identify glucose uniquely, and these four tests cannot exclude all other substances or amounts below detection.",
+        "explanation": "Positive results identify tested groups, not the complete composition."
+      },
+      "terms": [
+        "qualitative",
+        "positive control",
+        "negative control",
+        "detection limit"
+      ],
+      "commonMistakes": [
+        "Do not turn an undetected result into proof that a molecule is absent."
+      ]
+    },
+    {
+      "id": "enzyme-repeat-data-and-endpoints",
+      "title": "Enzyme repeats, rates and incomplete endpoints",
+      "points": [
+        "2.11",
+        "2.12",
+        "2.13",
+        "2.14B"
+      ],
+      "paragraphs": [
+        "These are invented amylase times to the same starch-test endpoint, sampled every 10 s. Fresh enzyme is used for every run. Compare conditions only when enzyme and starch quantities, final reaction pH or temperature as appropriate, and endpoint rules are matched. A “not reached by 180 s” observation is censored: its true endpoint time is greater than 180 s or it may never be reached.",
+        "Calculate a mean endpoint time from completed comparable repeats, state the averaging rule, then take its reciprocal for a relative-rate estimate. An entire set that does not finish cannot be assigned a mean time of 180 s or a rate of zero. With a matched endpoint, no completion by 180 s implies a reciprocal-time value below 1/180 s⁻¹ if it eventually completes; it does not distinguish very slow activity from no activity.",
+        "Plot temperature on the horizontal axis and consistently calculated relative rate on the vertical axis, with units. Connect observations as a guide without suggesting that a fitted line proves an exact optimum. Use closer temperature spacing around the best measured condition. A separate pH series needs the same logic with pH held as its independent variable and temperature controlled.",
+        "For iodine sampling at 10 s intervals, a first negative sample at 60 s after a positive one at 50 s brackets the endpoint as after 50 s and by 60 s. A timer display of hundredths of a second does not remove that sampling uncertainty. Repeats show spread but do not correct a systematically drifting bath or wrong buffer pH."
+      ],
+      "table": {
+        "headers": [
+          "Temperature / °C",
+          "Endpoint times / s",
+          "Mean completed time / s",
+          "1 / mean time / s⁻¹"
+        ],
+        "rows": [
+          [
+            "20",
+            "100, 110, 120",
+            "110",
+            "0.00909"
+          ],
+          [
+            "30",
+            "50, 60, 70",
+            "60",
+            "0.0167"
+          ],
+          [
+            "40",
+            "30, 40, 50",
+            "40",
+            "0.0250"
+          ],
+          [
+            "60",
+            "Not reached by 180 in all three",
+            "Not calculable",
+            "No exact value"
+          ]
+        ]
+      },
+      "example": {
+        "question": "What can this temperature series show, and what can it not establish?",
+        "steps": [
+          "The measured reciprocal-mean rate rises from 0.00909 to 0.0250 s⁻¹ between 20 and 40 °C.",
+          "Forty degrees gives the highest completed measured rate, but the exact optimum might lie between tested temperatures.",
+          "The 60 °C runs are incomplete, not zero-rate measurements; heat damage is a plausible explanation, not proved by this endpoint table alone."
+        ],
+        "explanation": "Separate measured patterns, bounds and proposed mechanisms."
+      },
+      "practice": {
+        "question": "In a separate pH series at fixed temperature, three endpoints are 40, 50 and 60 s at pH 5, and 80, 90 and 100 s at pH 7. Compare reciprocal-mean rates. Does this locate the exact pH optimum?",
+        "answer": "Mean times are 50 and 90 s, giving 0.0200 and about 0.0111 s⁻¹. The pH 5 rate is 1.8 times the pH 7 estimate. It is the better of these two tested conditions, not an exact optimum; more pH values and repeats are needed.",
+        "explanation": "Both calculations use the reciprocal of mean time for the same endpoint; no automatic conclusion of irreversible pH damage follows."
+      },
+      "terms": [
+        "censored observation",
+        "relative rate",
+        "mean",
+        "endpoint",
+        "sampling resolution"
+      ],
+      "commonMistakes": [
+        "Do not replace an unfinished run with the stopping time.",
+        "Do not interpret 1/time as a directly measured product mass rate."
+      ]
     }
   ]
 }

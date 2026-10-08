@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4BI1",
+  "documentId": "4BI1-spec",
+  "specificationSha256": "9f474a0ef0e93ef3c3107b568956d163454cdb476bb2017189e8dd12c0d58cef",
+  "sourceVisualPages": [
+    20
+  ],
+  "sourcePrintedPages": [
+    14
+  ],
+  "reviewDate": "2026-10-08",
+  "reviewer": "Codex source and teaching review",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "authored-teaching-coverage",
+  "policyVersion": 1,
+  "practicalTrialsPerformed": false,
+  "examTemplateCalibrationComplete": false,
+  "inventorySha256": "dbe81e114d947c506af960dee87124fdf4fbd9eba49f9f1eb053c1b4cd75beeb",
+  "auditRef": "research/curriculum-audits/4BI1-molecules-and-enzymes.json",
+  "auditSha256": "b4dc15060f908995bbfd6855d5466f4e41086b07ec71687eae99c89d45e42ff0",
+  "noteRef": "content/notes/biology-structures.json",
+  "limitations": [
+    "Eight source statements have agent-reviewed authored teaching, not whole-chapter or learner/exam certification.",
+    "Practical methods/data are illustrative; no experiments or independent examiner calibration were performed."
+  ],
+  "points": [
+    {
+      "pointId": "4BI1:issue3:2.7",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.7:r1",
+          "verdict": "approved",
+          "judgement": "Carbohydrate C/H/O correctly identified; distinction between atoms and glucose units is explicitly assessed.",
+          "assessmentSectionId": "molecule-classification-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.7:r2",
+          "verdict": "approved",
+          "judgement": "Protein C/H/O/N identified, optional sulfur qualified and nitrogen-only classification correctly rejected.",
+          "assessmentSectionId": "molecule-classification-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.7:r3",
+          "verdict": "approved",
+          "judgement": "Fats/oils C/H/O identified without treating triglycerides as repeating-chain polymers; shared element list is not a unique identity test.",
+          "assessmentSectionId": "molecule-classification-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "molecules-elements-and-units": "b4406be6f59e2502a78ad8abd97d982225242ccf6cb8b02eecffad3d2f4b1de3",
+        "molecule-classification-evidence": "4d67d6e82ef8a10493253997b400fe4cd93d313a046baefee3fa550bca51f4e9"
+      }
+    },
+    {
+      "pointId": "4BI1:issue3:2.8",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.8:r1",
+          "verdict": "approved",
+          "judgement": "Starch and glycogen described as many joined glucose units with distinct storage contexts; simple sugars not all classed as polymers.",
+          "assessmentSectionId": "molecules-elements-and-units"
+        },
+        {
+          "id": "4BI1:issue3:2.8:r2",
+          "verdict": "approved",
+          "judgement": "Protein amino-acid chains and folding explained and separately assessed from elemental nitrogen.",
+          "assessmentSectionId": "molecule-classification-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.8:r3",
+          "verdict": "approved",
+          "judgement": "Typical triglyceride one glycerol/three fatty acids is accurate and distinguished from protein or carbohydrate chains.",
+          "assessmentSectionId": "molecules-elements-and-units"
+        }
+      ],
+      "sectionSha256": {
+        "molecules-elements-and-units": "b4406be6f59e2502a78ad8abd97d982225242ccf6cb8b02eecffad3d2f4b1de3",
+        "molecule-classification-evidence": "4d67d6e82ef8a10493253997b400fe4cd93d313a046baefee3fa550bca51f4e9"
+      }
+    },
+    {
+      "pointId": "4BI1:issue3:2.9",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.9:r1",
+          "verdict": "approved",
+          "judgement": "Separate aqueous food extract, heated Benedict’s, precipitate observation and glucose/reducing-sugar specificity limits reviewed; incomplete heating cannot establish a negative.",
+          "assessmentSectionId": "reducing-sugar-and-starch-tests"
+        },
+        {
+          "id": "4BI1:issue3:2.9:r2",
+          "verdict": "approved",
+          "judgement": "Separate retained starch portion/slurry and unheated iodine blue-black observation avoid filtering out target starch.",
+          "assessmentSectionId": "food-test-evidence-table"
+        },
+        {
+          "id": "4BI1:issue3:2.9:r3",
+          "verdict": "approved",
+          "judgement": "Ready-prepared Biuret or correct alkaline-then-dilute-copper sequence gives purple, without heating; reagents and negative blue distinguished.",
+          "assessmentSectionId": "protein-and-lipid-tests"
+        },
+        {
+          "id": "4BI1:issue3:2.9:r4",
+          "verdict": "approved",
+          "judgement": "Clear ethanol extract transferred to water gives a new white emulsion, not starting solids; no ignition sources/heating and school handling/disposal stated.",
+          "assessmentSectionId": "protein-and-lipid-tests"
+        },
+        {
+          "id": "4BI1:issue3:2.9:r5",
+          "verdict": "approved",
+          "judgement": "Positive/negative controls, equal conditions, contamination and detection limits support original mixed-sample interpretations without invented concentrations.",
+          "assessmentSectionId": "food-test-evidence-table"
+        }
+      ],
+      "sectionSha256": {
+        "reducing-sugar-and-starch-tests": "483af95e5ed52e4a1676d8e60ec8c8b605e529328d43eac65eaf4d2a16b3138c",
+        "protein-and-lipid-tests": "e8103a4080623d4447f7c8c1dd07e9e7ac74f4cb2f8331081349e479d7315547",
+        "food-test-evidence-table": "e41d3f46f01cc72beb1a8402f6a32340a092163ca9f73bfe92e8b7468135150a"
+      }
+    },
+    {
+      "pointId": "4BI1:issue3:2.10",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.10:r1",
+          "verdict": "approved",
+          "judgement": "Catalytic metabolic action, active-site specificity and lower activation barrier explained without energy creation or enzyme intention.",
+          "assessmentSectionId": "enzymes-as-catalysts"
+        },
+        {
+          "id": "4BI1:issue3:2.10:r2",
+          "verdict": "approved",
+          "judgement": "Substrate/product cycle and reusable catalyst explicitly worked; irreversible damage distinguished from consumption in a reaction.",
+          "assessmentSectionId": "enzymes-as-catalysts"
+        }
+      ],
+      "sectionSha256": {
+        "enzymes-as-catalysts": "fd7a78acf4ee4b3015e10dc44e0847878943fc12d50c9f23ceb04e58dd9ec683"
+      }
+    },
+    {
+      "pointId": "4BI1:issue3:2.11",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.11:r1",
+          "verdict": "approved",
+          "judgement": "Warming increases initial successful collision frequency while other conditions comparable, not an indefinitely rising rate law.",
+          "assessmentSectionId": "temperature-and-ph-effects"
+        },
+        {
+          "id": "4BI1:issue3:2.11:r2",
+          "verdict": "approved",
+          "judgement": "Excess heat changes folded structure/active-site function; optimum is enzyme/condition-specific rather than a universal temperature.",
+          "assessmentSectionId": "temperature-and-ph-effects"
+        },
+        {
+          "id": "4BI1:issue3:2.11:r3",
+          "verdict": "approved",
+          "judgement": "Recovery assay distinguishes reversible cooling from persistent heat damage with qualified outcomes; censored endpoint evidence alone does not prove mechanism.",
+          "assessmentSectionId": "enzyme-repeat-data-and-endpoints"
+        }
+      ],
+      "sectionSha256": {
+        "temperature-and-ph-effects": "e22ce643392a98289428d57f14799b5d1e96a58e55a0584273d6f1119be6ccda",
+        "enzyme-repeat-data-and-endpoints": "381ff14fc5703ff39040f74e58b3f46bb07eb0aad369500386f8b07a88d05373"
+      }
+    },
+    {
+      "pointId": "4BI1:issue3:2.12",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.12:r1",
+          "verdict": "approved",
+          "judgement": "Stand-alone sampling/iodine endpoint procedure now complete for Paper1; temperature, pH, starting quantities, mixing and fresh enzyme controlled independently.",
+          "assessmentSectionId": "amylase-temperature-investigation"
+        },
+        {
+          "id": "4BI1:issue3:2.12:r2",
+          "verdict": "approved",
+          "judgement": "Matched-endpoint reciprocal-mean calculations, units, rate ratio and graph axes checked; no mass-product rate is invented.",
+          "assessmentSectionId": "enzyme-repeat-data-and-endpoints"
+        },
+        {
+          "id": "4BI1:issue3:2.12:r3",
+          "verdict": "approved",
+          "judgement": "Fresh portions, exposure time, actual stable temperature, repeated spread, finer peak sampling and right-censored outcomes correctly constrain inference.",
+          "assessmentSectionId": "enzyme-repeat-data-and-endpoints"
+        }
+      ],
+      "sectionSha256": {
+        "amylase-temperature-investigation": "292c068d1bccbf5181d7a4b06ded8d36b8df50bea8ca03ada1b7e62cdd4013c2",
+        "enzyme-repeat-data-and-endpoints": "381ff14fc5703ff39040f74e58b3f46bb07eb0aad369500386f8b07a88d05373"
+      }
+    },
+    {
+      "pointId": "4BI1:issue3:2.13",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.13:r1",
+          "verdict": "approved",
+          "judgement": "pH affects charges/interactions and active-site function; enzyme-specific optimum and possible extreme-pH structural disruption accurately qualified.",
+          "assessmentSectionId": "temperature-and-ph-effects"
+        },
+        {
+          "id": "4BI1:issue3:2.13:r2",
+          "verdict": "approved",
+          "judgement": "Best tested pH is distinguished from exact optimum; original pH repeat rates compare1.8-fold and require closer values, not assumed irreversible damage.",
+          "assessmentSectionId": "enzyme-repeat-data-and-endpoints"
+        }
+      ],
+      "sectionSha256": {
+        "temperature-and-ph-effects": "e22ce643392a98289428d57f14799b5d1e96a58e55a0584273d6f1119be6ccda",
+        "enzyme-repeat-data-and-endpoints": "381ff14fc5703ff39040f74e58b3f46bb07eb0aad369500386f8b07a88d05373"
+      }
+    },
+    {
+      "pointId": "4BI1:issue3:2.14B",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.14B:r1",
+          "verdict": "approved",
+          "judgement": "Own-source boldB scope retained onlyPaper2B; buffer/finalpH and constant temperature, volumes, concentration, fresh enzyme and removed-sample indicator method reviewed.",
+          "assessmentSectionId": "amylase-ph-investigation"
+        },
+        {
+          "id": "4BI1:issue3:2.14B:r2",
+          "verdict": "approved",
+          "judgement": "Mean-time60s reciprocal0.0167s⁻¹ and repeat interpretation accurate; reciprocal of mean distinguished from mean of reciprocals.",
+          "assessmentSectionId": "amylase-ph-investigation"
+        },
+        {
+          "id": "4BI1:issue3:2.14B:r3",
+          "verdict": "approved",
+          "judgement": "After50/by60s sampling bounds, detection endpoint, no-enzyme control and not-reached outcomes reviewed; timer precision does not remove interval uncertainty.",
+          "assessmentSectionId": "enzyme-repeat-data-and-endpoints"
+        }
+      ],
+      "sectionSha256": {
+        "amylase-ph-investigation": "56f87f3f3ae69662ce19081720ae66ac69b6fa0cf57ae1f2339b3aff7d05988b",
+        "enzyme-repeat-data-and-endpoints": "381ff14fc5703ff39040f74e58b3f46bb07eb0aad369500386f8b07a88d05373"
+      }
+    }
+  ],
+  "diagramSha256": {}
+}

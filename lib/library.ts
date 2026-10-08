@@ -55,6 +55,8 @@ export function searchLibrary(subject: Subject, query: string): SearchResult[] {
           s.diagram?.caption ?? '',
           ...(s.commonMistakes ?? []),
           ...Object.values(s.practical ?? {}).flat(),
+          ...(s.table?.headers ?? []),
+          ...(s.table?.rows.flat() ?? []),
           ...(s.answerGuide?.steps ?? []),
         ].join(' '),
         terms: s.terms ?? [],

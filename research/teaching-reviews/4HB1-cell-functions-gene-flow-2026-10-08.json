@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4HB1",
+  "documentId": "4HB1-spec",
+  "specificationSha256": "989c6536fa946f1361e45e3c1e0ebced240a9f4666a2c835ce9cf9724a38e30f",
+  "sourceVisualPages": [
+    17
+  ],
+  "sourcePrintedPages": [
+    11
+  ],
+  "reviewDate": "2026-10-08",
+  "reviewer": "Codex source and teaching review",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "authored-teaching-coverage",
+  "policyVersion": 1,
+  "practicalTrialsPerformed": false,
+  "examTemplateCalibrationComplete": false,
+  "inventorySha256": "64d557c62b80c4d653ba06f3a5f990056c9ed9123f8afc4c4a332be6cbdc2da9",
+  "auditRef": "research/curriculum-audits/4HB1-cells-foundations.json",
+  "auditSha256": "59e438e81b6f55ae6a3aadfd0989b9d87600a5dfbacb66f4c063845e57020ab7",
+  "noteRef": "content/notes/human-biology.json",
+  "limitations": [
+    "Seven authored-teaching source statements1.2–1.8 are reviewed, not the whole chapter.",
+    "Real light/TEM micrograph recognition1.1 and later tissue microscopy1.15 remain incomplete; original molecular diagrams are models.",
+    "No human certification, real learner or examiner response calibration is claimed."
+  ],
+  "points": [
+    {
+      "pointId": "4HB1:issue2:1.2",
+      "requirements": [
+        {
+          "id": "4HB1:issue2:1.2:r1",
+          "verdict": "approved",
+          "judgement": "Nuclear genetic information and expression control are distinguished from selective outer-membrane exchange.",
+          "assessmentSectionId": "organelle-function-evidence"
+        },
+        {
+          "id": "4HB1:issue2:1.2:r2",
+          "verdict": "approved",
+          "judgement": "Chromosomes are DNA/protein structures carrying genes, not the entire nucleus; unfamiliar gland/contractile comparisons checked.",
+          "assessmentSectionId": "organelle-function-evidence"
+        },
+        {
+          "id": "4HB1:issue2:1.2:r3",
+          "verdict": "approved",
+          "judgement": "Selectivity correctly permits regulated exchange rather than impermeability or a cell wall.",
+          "assessmentSectionId": "organelle-function-evidence"
+        },
+        {
+          "id": "4HB1:issue2:1.2:r4",
+          "verdict": "approved",
+          "judgement": "Aerobic respiratory energy transfer supports contraction, with breathing and energy creation misconceptions excluded.",
+          "assessmentSectionId": "organelle-function-evidence"
+        },
+        {
+          "id": "4HB1:issue2:1.2:r5",
+          "verdict": "approved",
+          "judgement": "Rough ER processing/transport distinguishes the network from attached ribosome chain synthesis.",
+          "assessmentSectionId": "organelle-function-evidence"
+        },
+        {
+          "id": "4HB1:issue2:1.2:r6",
+          "verdict": "approved",
+          "judgement": "Ribosomes join amino acids into proteins; role applied to unfamiliar exported-protein demand.",
+          "assessmentSectionId": "organelle-function-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "cell-structures": "b16ca7c89416b8f0108241e9d22857858d07e54d1d145ec8944e631df12ba131",
+        "organelle-function-evidence": "3abb3d803df2d044a4dd9cc66882dc3b97e39a12f0a849e44d1d75d6a836f6b4"
+      }
+    },
+    {
+      "pointId": "4HB1:issue2:1.3",
+      "requirements": [
+        {
+          "id": "4HB1:issue2:1.3:r1",
+          "verdict": "approved",
+          "judgement": "Two nucleotide chains coil as a double helix; opened model explicitly distinguished from normal coiling and microscopy.",
+          "assessmentSectionId": "gene-flow-and-mutation-evidence"
+        },
+        {
+          "id": "4HB1:issue2:1.3:r2",
+          "verdict": "approved",
+          "judgement": "Original model distinguishes phosphate, deoxyribose and base in a nucleotide from a full strand/gene/chromosome.",
+          "assessmentSectionId": "gene-flow-and-mutation-evidence"
+        },
+        {
+          "id": "4HB1:issue2:1.3:r3",
+          "verdict": "approved",
+          "judgement": "A–T/C–G pairing and equal-length aligned complementary sequences checked, with direction assumptions explicit.",
+          "assessmentSectionId": "gene-flow-and-mutation-evidence"
+        },
+        {
+          "id": "4HB1:issue2:1.3:r4",
+          "verdict": "approved",
+          "judgement": "Hydrogen bonds placed across complementary bases rather than along the sugar–phosphate backbone.",
+          "assessmentSectionId": "gene-flow-and-mutation-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "dna-structure": "670f283b1a8b5c2e148edd26db1182c930de6cac2fe603436b5f870945fa768c",
+        "gene-flow-and-mutation-evidence": "e19e6da7709ebd08f3d9091c1342f1f1d71c9a6c9491ec3c53fc7c104156bf1c"
+      }
+    },
+    {
+      "pointId": "4HB1:issue2:1.4",
+      "requirements": [
+        {
+          "id": "4HB1:issue2:1.4:r1",
+          "verdict": "approved",
+          "judgement": "Original hydrogen-bonded strands separate before division; replication is distinguished from cell division and RNA production.",
+          "assessmentSectionId": "gene-flow-and-mutation-evidence"
+        },
+        {
+          "id": "4HB1:issue2:1.4:r2",
+          "verdict": "approved",
+          "judgement": "Each original template selects complementary free DNA nucleotides; each product retains one original/new strand if copying accurate.",
+          "assessmentSectionId": "gene-flow-and-mutation-evidence"
+        },
+        {
+          "id": "4HB1:issue2:1.4:r3",
+          "verdict": "approved",
+          "judgement": "DNA polymerase joins the new nucleotides into continuous strands; no claim it translates bases into amino acids.",
+          "assessmentSectionId": "gene-flow-and-mutation-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "dna-replication": "4a1ffbd6198efbf1e8369eae904e651a966008bf16e1a1b414d232ffdf1fc7f3",
+        "gene-flow-and-mutation-evidence": "e19e6da7709ebd08f3d9091c1342f1f1d71c9a6c9491ec3c53fc7c104156bf1c"
+      }
+    },
+    {
+      "pointId": "4HB1:issue2:1.5",
+      "requirements": [
+        {
+          "id": "4HB1:issue2:1.5:r1",
+          "verdict": "approved",
+          "judgement": "Gene is a DNA length with a sequence specifying protein in the syllabus-limited model, not stored amino acids.",
+          "assessmentSectionId": "gene-flow-and-mutation-evidence"
+        },
+        {
+          "id": "4HB1:issue2:1.5:r2",
+          "verdict": "approved",
+          "judgement": "Defined coding/template/mRNA trace and supplied key show ordered amino acids; change in order can affect folding/function.",
+          "assessmentSectionId": "gene-flow-and-mutation-evidence"
+        },
+        {
+          "id": "4HB1:issue2:1.5:r3",
+          "verdict": "approved",
+          "judgement": "Nine-base fragment gives three amino acids and24-amino-acid segment72bases under explicit stop/noncoding exclusion; neither strand doubled.",
+          "assessmentSectionId": "gene-flow-and-mutation-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "genes-and-triplets": "6ac1a239c3e90957a7d234fa9765da5bfeeefc785c6a6f30fd22b8f066d493a4",
+        "gene-flow-and-mutation-evidence": "e19e6da7709ebd08f3d9091c1342f1f1d71c9a6c9491ec3c53fc7c104156bf1c"
+      }
+    },
+    {
+      "pointId": "4HB1:issue2:1.6",
+      "requirements": [
+        {
+          "id": "4HB1:issue2:1.6:r1",
+          "verdict": "approved",
+          "judgement": "RNA usually single-stranded is distinguished from the double-stranded DNA model, without asserting every RNA lacks folded regions.",
+          "assessmentSectionId": "gene-flow-and-mutation-evidence"
+        },
+        {
+          "id": "4HB1:issue2:1.6:r2",
+          "verdict": "approved",
+          "judgement": "Ribose/deoxyribose distinction explained as sugar identity, not base identity.",
+          "assessmentSectionId": "gene-flow-and-mutation-evidence"
+        },
+        {
+          "id": "4HB1:issue2:1.6:r3",
+          "verdict": "approved",
+          "judgement": "Uracil replaces thymine in RNA; complementary template exercise checked, not erroneous T→U substitution in a template.",
+          "assessmentSectionId": "gene-flow-and-mutation-evidence"
+        },
+        {
+          "id": "4HB1:issue2:1.6:r4",
+          "verdict": "approved",
+          "judgement": "mRNA carries nuclear gene information to cytoplasmic ribosomes; diagram/prompt preserve compartment and molecule roles.",
+          "assessmentSectionId": "gene-flow-and-mutation-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "rna-and-transcription": "166b789cc7eb0b41e455cb3bddb53000985e6ee6f68c392156480d5e6c0c4db3",
+        "gene-flow-and-mutation-evidence": "e19e6da7709ebd08f3d9091c1342f1f1d71c9a6c9491ec3c53fc7c104156bf1c"
+      }
+    },
+    {
+      "pointId": "4HB1:issue2:1.7",
+      "requirements": [
+        {
+          "id": "4HB1:issue2:1.7:r1",
+          "verdict": "approved",
+          "judgement": "Changed DNA base sequence is defined separately from altered amino-acid sequence or observed phenotype.",
+          "assessmentSectionId": "gene-flow-and-mutation-evidence"
+        },
+        {
+          "id": "4HB1:issue2:1.7:r2",
+          "verdict": "approved",
+          "judgement": "Supplied GCU/GCC alanine and GAU aspartate keys yield checked silent/replacement paths with explicit strand identities.",
+          "assessmentSectionId": "gene-flow-and-mutation-evidence"
+        },
+        {
+          "id": "4HB1:issue2:1.7:r3",
+          "verdict": "approved",
+          "judgement": "Protein folding/function/phenotype changes remain possible rather than inevitable; no disease or functional effect inferred from sequence alone.",
+          "assessmentSectionId": "gene-flow-and-mutation-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "mutations-and-phenotype": "f1f2283a19477df66bef5de9288b45eb63702d5ec1677e707b0bddedc6071351",
+        "gene-flow-and-mutation-evidence": "e19e6da7709ebd08f3d9091c1342f1f1d71c9a6c9491ec3c53fc7c104156bf1c"
+      }
+    },
+    {
+      "pointId": "4HB1:issue2:1.8",
+      "requirements": [
+        {
+          "id": "4HB1:issue2:1.8:r1",
+          "verdict": "approved",
+          "judgement": "Transcription generates complementary mRNA in nucleus, distinct from DNA polymerase-mediated replication.",
+          "assessmentSectionId": "gene-flow-and-mutation-evidence"
+        },
+        {
+          "id": "4HB1:issue2:1.8:r2",
+          "verdict": "approved",
+          "judgement": "Original compartment model transfers mRNA to cytoplasm while nuclear DNA stays; model is not a whole-cell micrograph.",
+          "assessmentSectionId": "gene-flow-and-mutation-evidence"
+        },
+        {
+          "id": "4HB1:issue2:1.8:r3",
+          "verdict": "approved",
+          "judgement": "Aligned tRNA anticodons3′UAC/CGA/CUA5′ complement5′AUG/GCU/GAU3′; separate tRNAs not one nine-base carrier.",
+          "assessmentSectionId": "gene-flow-and-mutation-evidence"
+        },
+        {
+          "id": "4HB1:issue2:1.8:r4",
+          "verdict": "approved",
+          "judgement": "Ribosome links delivered amino acids in order into a polypeptide; shortfragment key matches and does not claim a complete functional protein.",
+          "assessmentSectionId": "gene-flow-and-mutation-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "rna-and-transcription": "166b789cc7eb0b41e455cb3bddb53000985e6ee6f68c392156480d5e6c0c4db3",
+        "translation-at-ribosomes": "c4cad71cd263807f3c7a9f8fdd7bdc5771ae16557661eae75421f76477fd8f81",
+        "gene-flow-and-mutation-evidence": "e19e6da7709ebd08f3d9091c1342f1f1d71c9a6c9491ec3c53fc7c104156bf1c"
+      }
+    }
+  ],
+  "diagramSha256": {
+    "/diagrams/human-biology-dna-model.svg": "1b031d391b4de42dca96bcdaffc8afbc45dadac01a033c4a6fa83d1e17808820",
+    "/diagrams/human-biology-gene-flow.svg": "b75047d6fef828f0c628109367ee4afdb48ba45b38424b47782e8acaa4d7fc19"
+  }
+}

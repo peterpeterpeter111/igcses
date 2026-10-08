@@ -38,6 +38,7 @@ export type NoteSection = {
   id: string;
   title: string;
   paragraphs: string[];
+  table?: { headers: string[]; rows: string[][] };
   terms?: string[];
   points?: string[];
   example?: { question: string; steps: string[]; explanation: string };

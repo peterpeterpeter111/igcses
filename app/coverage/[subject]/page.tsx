@@ -324,9 +324,9 @@ export default async function SubjectCoverage({
               <p>
                 {inventory.points.length} {inventory.points.length === 1 ? 'statement' : 'statements'} checked against the
                 official PDF on {inventory.reviewDate}. This verifies their
-                references and paper applicability. Substatement auditing and
-                teaching coverage remain incomplete; no human review has been
-                performed.
+                references and paper applicability. Authored teaching progress
+                is recorded below; whole-chapter and examiner readiness remain
+                incomplete. No human review has been performed.
               </p>
               <p>
                 {

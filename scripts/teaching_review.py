@@ -5,6 +5,7 @@ They verify review provenance, not educational correctness by themselves.
 """
 import hashlib
 import json
+from datetime import date
 from pathlib import Path
 from note_io import read_note
 
@@ -31,6 +32,7 @@ def validate_inventory_completion(root, inventory):
     require(not target.is_symlink() and (root / 'research/teaching-reviews').resolve() in target.resolve().parents,
             'Teaching review path escaped')
     review = json.loads(target.read_text())
+    date.fromisoformat(review['reviewDate'])
     require(review['schemaVersion'] == 1 and review['qualification'] == inventory['qualification']
             and review['documentId'] == inventory['specificationDocumentId']
             and review['specificationSha256'] == inventory['specificationSha256']
@@ -46,6 +48,14 @@ def validate_inventory_completion(root, inventory):
     require(review['auditSha256'] == digest(audit) and audit['documentSha256'] == review['specificationSha256'],
             'Teaching requirements review is stale')
     note = read_note(root / review['noteRef'])
+    promoted_sections = {id for point in promoted for id in point['noteSectionIds']}
+    diagram_refs = {s['diagram']['src'] for s in note['sections'] if s['id'] in promoted_sections and s.get('diagram')}
+    require(set(review['diagramSha256']) == diagram_refs, 'Reviewed diagram inventory differs')
+    for src, sha in review['diagramSha256'].items():
+        require(src.startswith('/diagrams/') and '..' not in Path(src).parts, 'Diagram path escaped')
+        asset = root / 'public' / src.lstrip('/')
+        require(not asset.is_symlink() and (root / 'public/diagrams').resolve() in asset.resolve().parents
+                and hashlib.sha256(asset.read_bytes()).hexdigest() == sha, 'Reviewed diagram asset is stale: ' + src)
     decisions = review['points']
     require(len(decisions) == len(promoted) and {d['pointId'] for d in decisions} == {p['id'] for p in promoted},
             'Completion review point identities differ')

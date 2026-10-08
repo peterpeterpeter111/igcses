@@ -65,7 +65,7 @@ void test('cross-subject search returns each matching subject without mutating c
 void test('saved sections use the reader contract and retain structured practical material', () => {
   const fields: (keyof NoteSection)[] = [
     'id', 'title', 'paragraphs', 'terms', 'points', 'example', 'practice',
-    'diagram', 'commonMistakes', 'practical', 'answerGuide',
+    'diagram', 'commonMistakes', 'practical', 'answerGuide', 'table',
   ];
   const supported = new Set<string>(fields);
   for (const note of notes) {
@@ -77,6 +77,10 @@ void test('saved sections use the reader contract and retain structured practica
           ['apparatus', 'method', 'variables', 'safety', 'quality'].sort());
         assert.ok(Object.values(section.practical).every((items) =>
           items.length > 0 && items.every((item) => item.trim())));
+      }
+      if (section.table) {
+        assert.ok(section.table.headers.length >= 2 && section.table.rows.length > 0);
+        assert.ok(section.table.rows.every((row) => row.length === section.table!.headers.length && row.every((cell) => cell.trim())));
       }
     }
   }
