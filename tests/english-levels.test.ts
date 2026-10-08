@@ -19,7 +19,7 @@ with tempfile.TemporaryDirectory() as d:
  summary=api['export'](root);first={p:p.read_bytes() for p in (root/'research/ledger/v1').rglob('*') if p.is_file()}
  assert api['export'](root)==summary and all(p.read_bytes()==data for p,data in first.items())
  for n,old in others.items():assert old==[r for r in rows(root,n) if not (r.get('paper_id','').startswith(api['PAPER']) or r.get('document_id','').startswith('pilot-'+api['PAPER']))],n
- allowed={Path('research/ledger/v1/papers.csv'),Path('research/ledger/v1/tasks/4EB1.csv'),PUBLIC_SUMMARY}
+ allowed={Path('research/ledger/v1/documents.csv'),Path('research/ledger/v1/papers.csv'),Path('research/ledger/v1/tasks/4EB1.csv'),PUBLIC_SUMMARY}
  assert all((root/p).read_bytes()==data for p,data in before.items() if p not in allowed)
  pilot=json.loads((root/api['PILOT']).read_text());m=load_levels(root,pilot,load_followup(root,pilot))
  assert m['pilotSha256']=='1f916c911020f61f9391f74c237ab1c1b2e07857ed14f66b6799ee47c5c3471d'
@@ -34,6 +34,9 @@ with tempfile.TemporaryDirectory() as d:
  q8=next(r for r in tasks if r['question_path']=='8');assert json.loads(q8['assessment_objectives_json'])=={'AO1':10,'AO4':12,'AO5':8}
  paper=next(r for r in rows(root,'papers') if r['paper_id']==api['PAPER'])
  assert paper['extracted_leaf_tasks']=='11' and paper['assessed_marks']=='100' and paper['all_alternatives_marks']=='160'
+ docs=[r for r in rows(root,'documents') if r['document_id'].startswith('pilot-'+api['PAPER'])]
+ assert all(json.loads(r['reviewed_pages_json']) and r['identity_status']=='agent-reviewed' for r in docs)
+ assert sum('visual' in p['mode'] for p in json.loads(next(r for r in docs if r['document_type']=='question-paper')['reviewed_pages_json']))<36
  assert paper['stage']=='indexed' and paper['complete_page_audit']=='false' and paper['template_links_complete']=='false'
  print(json.dumps(summary))
 `], { encoding: 'utf8' }));

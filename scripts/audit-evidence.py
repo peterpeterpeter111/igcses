@@ -15,6 +15,7 @@ from note_io import read_note
 from assessment_objective_io import objective_tables
 from english_followup import load_followup, public_summary, PUBLIC_SUMMARY
 from english_levels import load_levels, levels_public_summary
+from english_processing import load_november_processing, november_public_summary
 from english_paper_io import load_paper, public_summary as english_paper_summary, SUMMARY as ENGLISH_PAPER_SUMMARY
 
 
@@ -55,7 +56,8 @@ def audit(root=ROOT):
     try:
         followup = load_followup(root, pilot)
         levels = load_levels(root, pilot, followup)
-        expected_summary = levels_public_summary(levels) if levels else public_summary(followup) if followup else None
+        november_processing = load_november_processing(root, pilot, followup, levels)
+        expected_summary = november_public_summary(levels, november_processing) if levels else public_summary(followup) if followup else None
         if expected_summary and read(PUBLIC_SUMMARY) != expected_summary:
             errors.append({'kind': 'english-followup-summary-mismatch'})
         if followup:
@@ -64,7 +66,7 @@ def audit(root=ROOT):
                 errors.append({'kind': 'english-followup-ledger-count-mismatch'})
             for task in followup['tasks']:
                 row = next(r for r in tables['tasks'] if r['task_id'] == task['id'])
-                if (row['extraction_status'] != 'source-checked' or row['mapping_status'] != 'official-AO-only'
+                if (row['extraction_status'] != 'source-checked' or row['mapping_status'] != ('current-AO-reviewed' if november_processing else 'official-AO-only')
                         or row['human_reviewed'] != 'false' or int(row['original_marks']) != task['marks']
                         or json.loads(row['acceptable_alternatives_json']) != task['acceptableGroups']
                         or json.loads(row['assessment_objectives_json']) != task['aoMarks']):
@@ -72,12 +74,29 @@ def audit(root=ROOT):
         if levels:
             for task in levels['tasks']:
                 row = next(r for r in tables['tasks'] if r['task_id'] == task['id'])
-                if (row['extraction_status'] != 'source-checked' or row['mapping_status'] != 'official-AO-only'
+                if (row['extraction_status'] != 'source-checked' or row['mapping_status'] != ('current-AO-reviewed' if november_processing else 'official-AO-only')
                         or row['human_reviewed'] != 'false' or int(row['original_marks']) != task['marks']
                         or json.loads(row['acceptable_alternatives_json']) != task.get('acceptableGroups', [])
                         or json.loads(row['dependencies_json']) != task['sourceCreditRules']
                         or json.loads(row['assessment_objectives_json']) != task['aoMarks']):
                     errors.append({'kind': 'english-levels-task-export-mismatch', 'id': task['id']})
+        if november_processing:
+            paper_row = next(r for r in tables['papers'] if r['paper_id'] == pilot['paperId'])
+            if (paper_row['stage'], paper_row['complete_page_audit'], paper_row['template_links_complete'], paper_row['applicability_status'], paper_row['report_status']) != (
+                    'processed', 'true', 'true', 'current-AO-and-task-demand-reviewed', 'observations-reviewed') or json.loads(paper_row['blocking_issues_json']) != []:
+                errors.append({'kind': 'english-november-processing-export-mismatch'})
+            for document in november_processing['documents']:
+                exported = next(d for d in tables['documents'] if d['document_id'] == document['id'])
+                if json.loads(exported['reviewed_pages_json']) != document['pages']:
+                    errors.append({'kind': 'english-november-page-audit-export-mismatch', 'id': document['id']})
+            report = november_processing['examinerReport']
+            exported = next(d for d in tables['documents'] if d['document_id'] == report['documentId'])
+            if (exported['sha256'], exported['page_count'], exported['publication_code'], exported['access_status']) != (report['sha256'], '16', report['publicationCode'], 'obtained') or [p['page'] for p in json.loads(exported['reviewed_pages_json'])] != report['textPagesReviewed']:
+                errors.append({'kind': 'english-november-report-export-mismatch'})
+            for review in november_processing['taskReviews']:
+                row = next(t for t in tables['tasks'] if t['task_id'] == review['taskId'])
+                if row['review_status'] != 'agent-source-processed' or json.loads(row['report_refs_json']) != [review['reportObservation']]:
+                    errors.append({'kind': 'english-november-task-processing-export-mismatch', 'id': review['taskId']})
     except (ValueError, KeyError, StopIteration, FileNotFoundError) as exc:
         errors.append({'kind': 'english-followup-contract', 'note': str(exc)})
     english_paper = None

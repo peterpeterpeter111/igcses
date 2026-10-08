@@ -184,10 +184,10 @@ export default async function SubjectCoverage({
           <p>
             Also obtained: November 2024 paper 01, its scheme and examiner
             report. Eleven printed tasks indexed; Questions{' '}
-            {englishPaperSummary.reviewedTaskNumbers.join(', ')} have partial detailed records
+            {englishPaperSummary.reviewedTaskNumbers.join(', ')} have detailed source records
             ({englishPaperSummary.detailedOriginalMarks} original marks across the printed choices).
-            {' '}{englishPaperSummary.remainingIndexedTasks} tasks remain indexed only;
-            whole-paper processing is incomplete. A candidate answers nine tasks
+            {' '}{englishPaperSummary.remainingIndexedTasks} tasks remain indexed only.{' '}
+            {englishPaperSummary.fullyProcessedPapers === 1 ? 'Source processing passed: all 36 question-paper and 20 mark-scheme pages accounted for, with current task/AO review and report observations.' : 'Whole-paper processing is incomplete.'} A candidate answers nine tasks
             for 100 marks; all printed alternatives total 160 marks.
           </p>
           <p>Real-paper analysis, comparison and writing use their original

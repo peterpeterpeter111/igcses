@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "id": "4EB1.viewpoints-comparison",
+  "version": "0.1.1",
+  "status": "provisional",
+  "subject": "4EB1",
+  "origin": "exam-derived",
+  "syllabusRefs": [
+    {
+      "pointId": "4EB1:issue4:AO3",
+      "documentId": "4EB1-spec",
+      "issue": "4",
+      "pdfPages": [
+        10,
+        18
+      ],
+      "mappingStatus": "verified"
+    }
+  ],
+  "sourceTasks": [
+    {
+      "taskId": "4EB1-2024-November-01.Q7",
+      "paperId": "4EB1-2024-November-01",
+      "questionPaper": {
+        "documentId": "pilot-4EB1-2024-November-01-qp",
+        "pdfPages": [
+          10,
+          30,
+          31,
+          32,
+          33
+        ]
+      },
+      "markScheme": {
+        "documentId": "pilot-4EB1-2024-November-01-ms",
+        "pdfPages": [
+          12,
+          13
+        ]
+      },
+      "originalMarks": 15
+    }
+  ],
+  "answerGuideId": "4EB1.viewpoints-comparison",
+  "commandWord": "Compare",
+  "skill": "Compare writers’ ideas and perspectives and the means by which both convey them, using evidence from both texts.",
+  "assessmentObjectives": [
+    "AO3"
+  ],
+  "originalMarks": [
+    15
+  ],
+  "customQuiz": {
+    "candidateMarks": [],
+    "validatedMarks": [],
+    "adaptationStatus": "pending",
+    "rationale": "Source-demand contract at the original maximum. No original10/15/30-mark demand is scaled into a custom2/4/6-mark quiz; a separate reviewed adaptation is needed."
+  },
+  "stimulus": {
+    "types": [
+      "passage"
+    ],
+    "originality": "original-generated-content",
+    "requirements": [
+      "Compare writers’ ideas and perspectives and the means by which both convey them, using evidence from both texts.",
+      "Create independent age-appropriate original source material/prompt; do not reproduce or paraphrase the publisher’s source sentence by sentence.",
+      "Keep all question instructions and assessment-objective demands consistent with the frozen stimulus."
+    ],
+    "evidenceContract": [
+      "Freeze original passage/prompt, evidence spans or objective grids, and the complete private marking package before any answer.",
+      "Preserve separate objective maxima; release feedback only after the session is complete."
+    ]
+  },
+  "parameters": [
+    {
+      "id": "original-stimulus",
+      "type": "original-text",
+      "domain": {
+        "minWords": 100,
+        "maxWords": 1200,
+        "semanticRule": "Compare writers’ ideas and perspectives and the means by which both convey them, using evidence from both texts."
+      },
+      "constraints": [
+        "Original stimulus quality, reading demand and difficulty remain unvalidated; this is not a runtime generator."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not serve or activate this source-demand contract before generative and response calibration.",
+    "Keep printed-choice maxima separate from compulsory candidate totals.",
+    "Do not impose an automatic400-word penalty or mechanically count rhetorical devices."
+  ],
+  "relationships": [
+    "Generated instructions and private evidence must refer to the same frozen original text/prompt.",
+    "Separate reading, communication and accuracy objectives retain independent credit."
+  ],
+  "difficultyControls": [
+    "Reading complexity, inference distance, viewpoint contrasts and writing form need source-demand review; numerical mark similarity does not prove equal difficulty."
+  ],
+  "transformations": [
+    {
+      "id": "original-context",
+      "status": "candidate",
+      "conditions": "Independent original text/prompt with the same reviewed demand; validation pending."
+    },
+    {
+      "id": "scale-original-marks",
+      "status": "forbidden",
+      "conditions": "A different maximum requires a separate calibrated contract."
+    }
+  ],
+  "solutionProcedure": [
+    "Interpret the audience, purpose and objective of the task.",
+    "Develop a coherent supported response fulfilling the task.",
+    "Review the complete response against each separate source grid."
+  ],
+  "marking": {
+    "method": "levels",
+    "maximum": 15,
+    "criteria": [],
+    "acceptableAlternatives": [
+      "The official indicative content is not exhaustive; defensible interpretations supported by the passage require review."
+    ],
+    "dependencies": [
+      "{\"condition\": \"Only one of the two required texts is considered.\", \"maximum\": 6, \"pdfPages\": [13], \"provenance\": \"scheme\", \"rule\": \"single-text-maximum\"}"
+    ],
+    "contradictionRules": [
+      "Judge the full response and source evidence; do not award a keyword merely because it appears amid contradictory claims."
+    ],
+    "units": null,
+    "tolerance": null,
+    "levelRubric": [
+      {
+        "level": 0,
+        "minMarks": 0,
+        "maxMarks": 0,
+        "descriptor": "No material meeting the assessed demand."
+      },
+      {
+        "level": 1,
+        "minMarks": 1,
+        "maxMarks": 3,
+        "descriptor": "Describe texts without a developed comparison."
+      },
+      {
+        "level": 2,
+        "minMarks": 4,
+        "maxMarks": 6,
+        "descriptor": "Comment on obvious connections with limited development."
+      },
+      {
+        "level": 3,
+        "minMarks": 7,
+        "maxMarks": 9,
+        "descriptor": "Explain several connections with relevant support."
+      },
+      {
+        "level": 4,
+        "minMarks": 10,
+        "maxMarks": 12,
+        "descriptor": "Explore a wide range of connections, balancing evidence from both texts."
+      },
+      {
+        "level": 5,
+        "minMarks": 13,
+        "maxMarks": 15,
+        "descriptor": "Analyse connections comprehensively with discriminating balanced evidence."
+      }
+    ]
+  },
+  "commonErrors": [
+    {
+      "description": "Treating an unsupported assertion or a copied list as a developed, source-supported response.",
+      "origin": "editorial",
+      "sourceRefs": []
+    }
+  ],
+  "validation": {
+    "ruleIds": [
+      "source-task-identities",
+      "objective-maxima",
+      "independent-original-stimulus",
+      "private-frozen-scheme",
+      "whole-response-credit"
+    ],
+    "testPlan": [
+      "Validate original-generation boundaries and source-demand equivalence before serving.",
+      "Calibrate full, partial, unsupported, contradictory and alternative responses independently for each objective.",
+      "Do not infer learner calibration or a live implementation from source extraction."
+    ],
+    "testedSeeds": [],
+    "boundaryCoverage": "not-run",
+    "status": "not-run",
+    "runRefs": []
+  },
+  "runtime": {
+    "implemented": false,
+    "generatorId": null,
+    "seedPolicy": "No runtime generator yet; any future seed must freeze all content and objective rubrics before answers.",
+    "maxRetries": 0,
+    "publicFields": [
+      "prompt",
+      "stimulus",
+      "maximumMarks"
+    ],
+    "privateFields": [
+      "parameters",
+      "sourceTasks",
+      "solution",
+      "rubric",
+      "validationResults"
+    ],
+    "freezeBeforeAnswer": true,
+    "releaseSchemeAfter": "session-completed"
+  },
+  "review": {
+    "pedagogyStatus": "pending",
+    "reviewer": "Codex November source-demand classification",
+    "reviewerType": "agent",
+    "humanReviewed": false,
+    "blockers": [
+      "Source-demand and official grids are recorded, but original-generation quality and response recognition are not calibrated.",
+      "No runtime implementation or validated custom-mark blueprint; AI remains last."
+    ]
+  }
+}

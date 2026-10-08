@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
 import { coverageSummary, subjectEvidence } from '../lib/coverage.ts';
 
-void test('one English source paper is processed while exam templates and chapters stay incomplete', () => {
+void test('two English source papers are processed while exam templates and chapters stay incomplete', () => {
   const row = subjectEvidence('4EB1').find((r) => r.paperId === '4EB1-2024-May-01-standard')!;
   assert.equal(row.fullyProcessed, true);
   assert.equal(row.extraction?.wholePageAudit, true);
@@ -12,7 +12,7 @@ void test('one English source paper is processed while exam templates and chapte
   assert.equal(row.extraction?.originalMarks, 160);
   assert.equal(row.extraction?.questionPaperPages, 36);
   assert.equal(row.extraction?.markSchemePages, 21);
-  assert.equal(coverageSummary().reduce((sum, r) => sum + r.fullyProcessed, 0), 1);
+  assert.equal(coverageSummary().reduce((sum, r) => sum + r.fullyProcessed, 0), 2);
   assert.ok(coverageSummary().every((r) => r.completeChapters === 0));
 });
 

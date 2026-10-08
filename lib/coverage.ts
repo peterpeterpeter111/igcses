@@ -38,6 +38,8 @@ const familyNames: Record<string, string> = {
   '4EB1.retrieve-two-comments': 'English two-comment retrieval',
   '4EB1.language-structure-analysis': 'English language and structure',
   '4EB1.viewpoints-comparison': 'English viewpoints comparison',
+  '4EB1.source-directed-article': 'English source-directed website article',
+  '4EB1.event-narrative': 'English event narrative',
   '4EB1.source-directed-letter': 'English source-directed letter',
   '4EB1.argumentative-extended-writing': 'English argument writing',
   '4EB1.future-narrative': 'English narrative writing',
@@ -122,7 +124,7 @@ export function subjectEvidence(code: string) {
       );
       return {
         paperId: r.paperId,
-        fullyProcessed: r.paperId === englishMaySummary.paperId && englishMaySummary.fullyProcessedPapers === 1,
+        fullyProcessed: (r.paperId === englishMaySummary.paperId && englishMaySummary.fullyProcessedPapers === 1) || (r.paperId === englishNovemberSummary.paperId && englishNovemberSummary.fullyProcessedPapers === 1),
         questionPaper: r.questionPaper,
         markScheme: r.markScheme,
         review: covers.records.find((c) => c.paperId === r.paperId),

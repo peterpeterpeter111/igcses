@@ -19,7 +19,7 @@ with tempfile.TemporaryDirectory() as d:
  first={p:p.read_bytes() for p in (root/'research/ledger/v1').rglob('*') if p.is_file()}
  assert api['export'](root)==summary and all(p.read_bytes()==data for p,data in first.items())
  assert old==[r for r in rows(root,'tasks') if r['paper_id']!=api['PAPER']]
- allowed={Path('research/ledger/v1/papers.csv'),Path('research/ledger/v1/tasks/4EB1.csv'),PUBLIC_SUMMARY}
+ allowed={Path('research/ledger/v1/documents.csv'),Path('research/ledger/v1/papers.csv'),Path('research/ledger/v1/tasks/4EB1.csv'),PUBLIC_SUMMARY}
  assert all((root/p).read_bytes()==data for p,data in before.items() if p not in allowed)
  pilot=json.loads((root/api['PILOT']).read_text());model=load_followup(root,pilot)
  assert model['pilotSha256']=='1f916c911020f61f9391f74c237ab1c1b2e07857ed14f66b6799ee47c5c3471d'
@@ -36,6 +36,9 @@ with tempfile.TemporaryDirectory() as d:
   assert len(json.loads(row['acceptable_alternatives_json']))==groups
   assert row['rubric_ref'].startswith(str(FOLLOWUP)) and row['human_reviewed']=='false'
  paper=next(r for r in rows(root,'papers') if r['paper_id']==api['PAPER'])
+ docs=[r for r in rows(root,'documents') if r['document_id'].startswith('pilot-'+api['PAPER'])]
+ assert all(json.loads(r['reviewed_pages_json']) and r['identity_status']=='agent-reviewed' for r in docs)
+ assert sum('visual' in p['mode'] for p in json.loads(next(r for r in docs if r['document_type']=='question-paper')['reviewed_pages_json']))<36
  assert paper['stage']=='indexed' and paper['complete_page_audit']=='false' and paper['template_links_complete']=='false'
  assert paper['extracted_leaf_tasks']=='4' and paper['assessed_marks']=='100' and paper['all_alternatives_marks']=='160'
  print(json.dumps(summary))

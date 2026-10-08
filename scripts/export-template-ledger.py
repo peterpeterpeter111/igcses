@@ -87,7 +87,12 @@ for name, rows, identity in [('templates', templates, 'template_id'), ('template
     writer.writeheader()
     writer.writerows(rows)
     pending.append((target, output.getvalue()))
-summary = [dict(id=f['id'], version=f['version'], qualification=f['subject'], status=f['status'], runtimeImplemented=f['runtime']['implemented']) for _, f in families]
+latest = {}
+for _, family in families:
+    previous = latest.get(family['id'])
+    if previous is None or tuple(map(int, family['version'].split('.'))) > tuple(map(int, previous['version'].split('.'))):
+        latest[family['id']] = family
+summary = [dict(id=f['id'], version=f['version'], qualification=f['subject'], status=f['status'], runtimeImplemented=f['runtime']['implemented']) for f in latest.values()]
 pending.append((root / 'research/template-summaries.json', json.dumps(summary, indent=2) + '\n'))
 if args.check:
     for target, expected in pending:
@@ -96,4 +101,4 @@ if args.check:
 else:
     for target, expected in pending:
         target.write_text(expected)
-print(json.dumps({'families': len(templates), 'sourceLinks': len(links), 'activeTemplates': sum(f['status'] == 'active' for _, f in families), 'checkOnly': args.check}))
+print(json.dumps({'families': len(templates), 'distinctFamilies': len(latest), 'sourceLinks': len(links), 'activeTemplates': sum(f['status'] == 'active' for _, f in families), 'checkOnly': args.check}))

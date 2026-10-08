@@ -124,7 +124,7 @@ export default function CoveragePage() {
             Wider archive discovery is incomplete.
           </li>
           <li>
-            English November has {evidenceHighlights.englishNovemberDetailedTasks} detailed tasks and May has {evidenceHighlights.englishMayDetailedTasks}. Each sitting has 160 marks across printed options, with nine answered tasks worth 100 marks. May passed source processing; November remains incomplete. English exam generators and calibrated marking remain unavailable. Physics
+            English November has {evidenceHighlights.englishNovemberDetailedTasks} detailed tasks and May has {evidenceHighlights.englishMayDetailedTasks}. Each sitting has 160 marks across printed options, with nine answered tasks worth 100 marks. Both obtained English sittings passed source processing. English exam generators and calibrated marking remain unavailable. Physics
             Summer 2024 Paper 1P has {evidenceHighlights.physicsDetailedParts}{' '}
             detailed question parts ({evidenceHighlights.physicsDetailedMarks}{' '}
             original marks); whole-paper processing remains incomplete.

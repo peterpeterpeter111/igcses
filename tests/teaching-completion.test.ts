@@ -39,7 +39,7 @@ void test('cell-transport review stays bounded while aggregate teaching counts i
     assert.equal(summary.find((r) => r.subject.code === '4HB1')!.completePoints, 14);
     assert.equal(summary.reduce((sum, r) => sum + r.completePoints, 0), 25);
     assert.ok(summary.every((r) => r.completeChapters === 0));
-    assert.equal(summary.reduce((sum, r) => sum + r.fullyProcessed, 0), 1);
+    assert.equal(summary.reduce((sum, r) => sum + r.fullyProcessed, 0), 2);
   } finally { f.cleanup(); }
 });
 void test('teaching review refuses stale lessons, incomplete decisions and inflated reviewer claims', () => {

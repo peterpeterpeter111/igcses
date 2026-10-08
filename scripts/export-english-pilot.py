@@ -164,6 +164,25 @@ def prepare(root):
                            blocker=' '.join(t['calibrationBlockers']), updated_at=levels['reviewDate'])
         paper_row.update(extracted_leaf_tasks=levels['combinedDetailedTasks'], reviewed_at=levels['reviewDate'],
                          updated_at=levels['reviewDate'], blocking_issues_json=encode(levels_public_summary(levels)['limitations']))
+    from english_processing import load_november_processing, november_public_summary
+    processing = load_november_processing(root, m, followup, levels)
+    if processing:
+        processing_ref = 'research/processing/' + PAPER + '.json'
+        for document, audited in zip(doc_rows[:2], processing['documents']):
+            document.update(reviewed_pages_json=encode(audited['pages']), local_evidence_path=processing_ref,
+                            updated_at=processing['reviewDate'])
+        report = processing['examinerReport']
+        doc_rows[2].update(reviewed_pages_json=encode([dict(page=p, mode='text', reviewer=processing['reviewer'], date=processing['reviewDate']) for p in report['textPagesReviewed']]),
+                          local_evidence_path=processing_ref, publication_code=report['publicationCode'],
+                          identity_notes='Official November2024 4EB1/01 report; reviewed celebration tasks match this obtained sitting.',
+                          updated_at=processing['reviewDate'])
+        paper_row.update(stage='processed', last_successful_stage='processed', applicability_status='current-AO-and-task-demand-reviewed',
+                         complete_page_audit='true', template_links_complete='true', blocking_issues_json='[]',
+                         report_status='observations-reviewed', reviewed_by=processing['reviewer'], reviewed_at=processing['reviewDate'])
+        for row in rows:
+            review = next(t for t in processing['taskReviews'] if t['taskId'] == row['task_id'])
+            row.update(mapping_status='current-AO-reviewed', review_status='agent-source-processed',
+                       report_refs_json=encode([review['reportObservation']]))
     additions = {'documents':('document_id', doc_rows), 'papers':('paper_id',[paper_row]), 'tasks':('task_id', rows)}
     pending = []
     for name,(key,records) in additions.items():
@@ -177,8 +196,8 @@ def prepare(root):
         for row in records:merged[row[key]]={field:row.get(field,'') for field in fields}
         pending.extend(table_outputs(path.parent,name,fields,merged.values(),'4EB1').items())
     if followup:
-        pending.append((root/PUBLIC_SUMMARY, json.dumps(levels_public_summary(levels) if levels else public_summary(followup), indent=2)+'\n'))
-    summary=dict(paper=PAPER, indexedTasks=11, detailedTasks=levels['combinedDetailedTasks'] if levels else followup['combinedDetailedTasks'] if followup else 1, fullyProcessedPapers=0, activeTemplates=0,
+        pending.append((root/PUBLIC_SUMMARY, json.dumps(november_public_summary(levels, processing) if levels else public_summary(followup), indent=2)+'\n'))
+    summary=dict(paper=PAPER, indexedTasks=11, detailedTasks=levels['combinedDetailedTasks'] if levels else followup['combinedDetailedTasks'] if followup else 1, fullyProcessedPapers=1 if processing else 0, activeTemplates=0,
                  normalizedDocuments=3, originalPilotSha256=hashlib.sha256((root/PILOT).read_bytes()).hexdigest())
     return pending,summary
 

@@ -1,6 +1,6 @@
 # Template bank and quiz contract — design checkpoint
 
-`schemas/template.schema.json` defines a strict JSON Schema v1. `templates/4EB1-retrieve-two-causes.v0.1.0.json` is one populated, provisional family. This is an implemented **data schema with a design example**, not a working generative quiz bank. Runtime generators, rubric validators, answer guides and model routes remain unimplemented. No active templates and no live API requests exist.
+`schemas/template.schema.json` defines the implemented data contract. The bank now has17 distinct provisional families across22 preserved versions and29 source-task links. Seven research-only offline generators exist; the remaining contracts have no runtime. Zero active exam templates or live AI calls exist. Source processing and passing structural checks do not establish calibrated question generation or examiner marking. The learner-facing custom practice uses original lesson exercises and is separate from this generative exam bank.
 
 ## Template fields
 
