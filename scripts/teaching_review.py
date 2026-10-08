@@ -33,7 +33,7 @@ def validate_inventory_completion(root, inventory):
             'Teaching review path escaped')
     review = json.loads(target.read_text())
     date.fromisoformat(review['reviewDate'])
-    require(review['schemaVersion'] == 1 and review['qualification'] == inventory['qualification']
+    require(review['schemaVersion'] in [1, 2] and review['qualification'] == inventory['qualification']
             and review['documentId'] == inventory['specificationDocumentId']
             and review['specificationSha256'] == inventory['specificationSha256']
             and review['inventorySha256'] == digest(inventory), 'Teaching review source/inventory is stale')
@@ -41,12 +41,27 @@ def validate_inventory_completion(root, inventory):
             and review['scope'] == 'authored-teaching-coverage' and review['policyVersion'] == 1
             and review['practicalTrialsPerformed'] is False and review['examTemplateCalibrationComplete'] is False,
             'Teaching review must preserve its actual reviewer and bounded scope')
-    audit_path = root / review['auditRef']
-    require((root / 'research/curriculum-audits').resolve() in audit_path.resolve().parents,
-            'Teaching audit path escaped')
-    audit = json.loads(audit_path.read_text())
-    require(review['auditSha256'] == digest(audit) and audit['documentSha256'] == review['specificationSha256'],
-            'Teaching requirements review is stale')
+    if review['schemaVersion'] == 1:
+        sources = [{'ref': review['auditRef'], 'sha256': review['auditSha256']}]
+        require('auditSources' not in review, 'Ambiguous teaching audit formats')
+    else:
+        sources = review['auditSources']
+        require('auditRef' not in review and 'auditSha256' not in review, 'Ambiguous teaching audit formats')
+    require(isinstance(sources, list) and sources and len({s['ref'] for s in sources}) == len(sources),
+            'Teaching review needs distinct requirement audits')
+    parents = []
+    for source in sources:
+        ref = source['ref']
+        require(isinstance(ref, str) and ref.startswith('research/curriculum-audits/')
+                and '..' not in Path(ref).parts, 'Teaching audit path escaped')
+        audit_path = root / ref
+        require(not audit_path.is_symlink() and (root / 'research/curriculum-audits').resolve() in audit_path.resolve().parents,
+                'Teaching audit path escaped')
+        audit = json.loads(audit_path.read_text())
+        require(source['sha256'] == digest(audit) and audit['documentSha256'] == review['specificationSha256']
+                and audit['qualification'] == inventory['qualification'], 'Teaching requirements review is stale')
+        parents.extend(audit['parents'])
+    require(len({p['parentId'] for p in parents}) == len(parents), 'Duplicate audited parent identities')
     note = read_note(root / review['noteRef'])
     promoted_sections = {id for point in promoted for id in point['noteSectionIds']}
     diagram_refs = {s['diagram']['src'] for s in note['sections'] if s['id'] in promoted_sections and s.get('diagram')}
@@ -62,9 +77,9 @@ def validate_inventory_completion(root, inventory):
     for point in promoted:
         require(point['teachingCoverage'] == 'complete' and point['substatementAuditComplete'] is True,
                 'Source audit and authored teaching completion must agree')
-        parents = [p for p in audit['parents'] if p['parentId'] == point['id']]
-        require(len(parents) == 1, 'Teaching completion lacks a unique requirements audit')
-        parent = parents[0]
+        matches = [p for p in parents if p['parentId'] == point['id']]
+        require(len(matches) == 1, 'Teaching completion lacks a unique requirements audit')
+        parent = matches[0]
         require(parent['officialReference'] == point['reference'] and parent['pdfPage'] == point['pdfPage']
                 and parent['printedPage'] == point['printedPage'] and parent['components'] == point['components'],
                 'Teaching audit differs from the exact source identity')

@@ -218,8 +218,7 @@ export default async function ChapterPage({
                 {n
                   ? 'Reviewed source PDF pages: ' + n.sourcePages.join(', ')
                   : 'Contents source: PDF page ' + c.sourcePage}
-                . The complete statement inventory and all teaching coverage
-                remain under review.
+                . Whole-chapter coverage and exam readiness remain under review.
               </p>
               {n?.supportingSources?.length ? (
                 <>

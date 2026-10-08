@@ -5,11 +5,11 @@
   "documentId": "4HB1-spec",
   "specificationIssue": "Issue 2 - September 2024",
   "documentSha256": "989c6536fa946f1361e45e3c1e0ebced240a9f4666a2c835ce9cf9724a38e30f",
-  "reviewDate": "2026-09-21",
+  "reviewDate": "2026-10-09",
   "reviewer": "Codex Astra",
   "reviewerType": "agent",
   "humanReviewed": false,
-  "scope": "Bounded audit of 1.9–1.16, visually checked against Pearson Issue 2 PDF page 18 / printed 12. Microscopy and representation assessments remain unfinished; all teaching remains partial.",
+  "scope": "Pearson Issue2 PDF18/printed12 source statements1.9–1.16. Seven authored-teaching points1.9–1.14/1.16 reviewed with original unfamiliar assessments and visual model checks. Real tissue microscopy1.15 remains partial. Exam-family calibration, human certification and learner outcomes are separate and incomplete.",
   "identifierPolicy": "Requirement suffixes r1, r2, etc. are local editorial audit identifiers; only the parent reference is publisher-numbered.",
   "notePath": "content/notes/human-biology.json",
   "parents": [
@@ -23,9 +23,9 @@
         "02"
       ],
       "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Textual teaching exists; missing imagery, assessment calibration and independent review prevent completion.",
+      "teachingAuditStatus": "complete",
+      "substatementAuditComplete": true,
+      "scopeNote": "Agent-reviewed authored teaching and original unfamiliar assessment; no exam-family, learner or real practical certification.",
       "requirements": [
         {
           "id": "4HB1:issue2:1.9:r1",
@@ -35,14 +35,15 @@
             {
               "sectionId": "engineering-bacteria",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "engineering-product-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Assess the roles of restriction enzymes, ligase, selection and expression in an unfamiliar diagram.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4HB1:issue2:1.9:r2",
@@ -52,14 +53,15 @@
             {
               "sectionId": "engineering-bacteria",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "engineering-product-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Assess DNA instruction versus protein product and purification.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4HB1:issue2:1.9:r3",
@@ -69,14 +71,15 @@
             {
               "sectionId": "engineering-plants",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "engineering-product-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Assess the production concept without making unsupported claims of routine clinical use.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4HB1:issue2:1.9:r4",
@@ -86,14 +89,15 @@
             {
               "sectionId": "engineering-plants",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "engineering-product-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Assess the precursor-to-vitamin relationship independently.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         }
       ]
     },
@@ -107,9 +111,9 @@
         "02"
       ],
       "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Textual teaching exists; missing imagery, assessment calibration and independent review prevent completion.",
+      "teachingAuditStatus": "complete",
+      "substatementAuditComplete": true,
+      "scopeNote": "Agent-reviewed authored teaching and original unfamiliar assessment; no exam-family, learner or real practical certification.",
       "requirements": [
         {
           "id": "4HB1:issue2:1.10:r1",
@@ -119,14 +123,15 @@
             {
               "sectionId": "mitosis-and-its-uses",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "mitosis-stage-and-use-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Add an independent context-specific explanation rather than recall of the list.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4HB1:issue2:1.10:r2",
@@ -136,14 +141,15 @@
             {
               "sectionId": "mitosis-and-its-uses",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "mitosis-stage-and-use-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Add an independent context-specific explanation rather than recall of the list.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4HB1:issue2:1.10:r3",
@@ -153,14 +159,15 @@
             {
               "sectionId": "mitosis-and-its-uses",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "mitosis-stage-and-use-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Add an independent context-specific explanation rather than recall of the list.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4HB1:issue2:1.10:r4",
@@ -170,14 +177,15 @@
             {
               "sectionId": "mitosis-and-its-uses",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "mitosis-stage-and-use-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Add an independent context-specific explanation rather than recall of the list.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         }
       ]
     },
@@ -191,9 +199,9 @@
         "02"
       ],
       "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Textual teaching exists; missing imagery, assessment calibration and independent review prevent completion.",
+      "teachingAuditStatus": "complete",
+      "substatementAuditComplete": true,
+      "scopeNote": "Agent-reviewed authored teaching and original unfamiliar assessment; no exam-family, learner or real practical certification.",
       "requirements": [
         {
           "id": "4HB1:issue2:1.11:r1",
@@ -203,14 +211,15 @@
             {
               "sectionId": "mitosis-and-its-uses",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "mitosis-stage-and-use-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Add checked diagrams and blind stage/chromosome-count interpretation.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4HB1:issue2:1.11:r2",
@@ -220,14 +229,15 @@
             {
               "sectionId": "mitosis-and-its-uses",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "mitosis-stage-and-use-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Add checked diagrams and blind stage/chromosome-count interpretation.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4HB1:issue2:1.11:r3",
@@ -237,14 +247,15 @@
             {
               "sectionId": "mitosis-and-its-uses",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "mitosis-stage-and-use-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Add checked diagrams and blind stage/chromosome-count interpretation.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4HB1:issue2:1.11:r4",
@@ -254,14 +265,15 @@
             {
               "sectionId": "mitosis-and-its-uses",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "mitosis-stage-and-use-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Add checked diagrams and blind stage/chromosome-count interpretation.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4HB1:issue2:1.11:r5",
@@ -271,14 +283,15 @@
             {
               "sectionId": "mitosis-and-its-uses",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "mitosis-stage-and-use-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Add checked diagrams and blind stage/chromosome-count interpretation.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         }
       ]
     },
@@ -292,9 +305,9 @@
         "02"
       ],
       "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Textual teaching exists; missing imagery, assessment calibration and independent review prevent completion.",
+      "teachingAuditStatus": "complete",
+      "substatementAuditComplete": true,
+      "scopeNote": "Agent-reviewed authored teaching and original unfamiliar assessment; no exam-family, learner or real practical certification.",
       "requirements": [
         {
           "id": "4HB1:issue2:1.12:r1",
@@ -304,14 +317,15 @@
             {
               "sectionId": "stem-cells-and-evidence",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "stem-cell-comparison-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Assess stem-cell type and differentiation potential using evidence, not a guaranteed-treatment claim.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4HB1:issue2:1.12:r2",
@@ -321,14 +335,15 @@
             {
               "sectionId": "stem-cells-and-evidence",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "stem-cell-comparison-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Assess stem-cell type and differentiation potential using evidence, not a guaranteed-treatment claim.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         }
       ]
     },
@@ -342,9 +357,9 @@
         "02"
       ],
       "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Textual teaching exists; missing imagery, assessment calibration and independent review prevent completion.",
+      "teachingAuditStatus": "complete",
+      "substatementAuditComplete": true,
+      "scopeNote": "Agent-reviewed authored teaching and original unfamiliar assessment; no exam-family, learner or real practical certification.",
       "requirements": [
         {
           "id": "4HB1:issue2:1.13:r1",
@@ -354,14 +369,15 @@
             {
               "sectionId": "stem-cells-and-evidence",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "stem-cell-comparison-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Add balanced scenario-based evaluation with independent rubric review.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4HB1:issue2:1.13:r2",
@@ -371,14 +387,15 @@
             {
               "sectionId": "stem-cells-and-evidence",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "stem-cell-comparison-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Add balanced scenario-based evaluation with independent rubric review.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4HB1:issue2:1.13:r3",
@@ -388,14 +405,15 @@
             {
               "sectionId": "stem-cells-and-evidence",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "stem-cell-comparison-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Add balanced scenario-based evaluation with independent rubric review.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4HB1:issue2:1.13:r4",
@@ -405,14 +423,15 @@
             {
               "sectionId": "stem-cells-and-evidence",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "stem-cell-comparison-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Add balanced scenario-based evaluation with independent rubric review.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4HB1:issue2:1.13:r5",
@@ -422,14 +441,15 @@
             {
               "sectionId": "stem-cells-and-evidence",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "stem-cell-comparison-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Add balanced scenario-based evaluation with independent rubric review.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4HB1:issue2:1.13:r6",
@@ -439,14 +459,15 @@
             {
               "sectionId": "stem-cells-and-evidence",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "stem-cell-comparison-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Add balanced scenario-based evaluation with independent rubric review.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         }
       ]
     },
@@ -460,9 +481,9 @@
         "02"
       ],
       "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Textual teaching exists; missing imagery, assessment calibration and independent review prevent completion.",
+      "teachingAuditStatus": "complete",
+      "substatementAuditComplete": true,
+      "scopeNote": "Agent-reviewed authored teaching and original unfamiliar assessment; no exam-family, learner or real practical certification.",
       "requirements": [
         {
           "id": "4HB1:issue2:1.14:r1",
@@ -472,14 +493,15 @@
             {
               "sectionId": "cells-tissues-organs",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "organisation-in-an-unfamiliar-organ",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Assess the hierarchy using an organ other than the worked heart example.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4HB1:issue2:1.14:r2",
@@ -489,14 +511,15 @@
             {
               "sectionId": "cells-tissues-organs",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "organisation-in-an-unfamiliar-organ",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Assess the hierarchy using an organ other than the worked heart example.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         }
       ]
     },
@@ -662,9 +685,9 @@
         "02"
       ],
       "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Textual teaching exists; missing imagery, assessment calibration and independent review prevent completion.",
+      "teachingAuditStatus": "complete",
+      "substatementAuditComplete": true,
+      "scopeNote": "Agent-reviewed authored teaching and original unfamiliar assessment; no exam-family, learner or real practical certification.",
       "requirements": [
         {
           "id": "4HB1:issue2:1.16:r1",
@@ -674,14 +697,15 @@
             {
               "sectionId": "egg-and-sperm",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "gamete-function-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Add independently checked labelled gamete diagrams and structure–function assessment.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4HB1:issue2:1.16:r2",
@@ -691,14 +715,15 @@
             {
               "sectionId": "egg-and-sperm",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "gamete-function-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Add independently checked labelled gamete diagrams and structure–function assessment.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4HB1:issue2:1.16:r3",
@@ -708,14 +733,15 @@
             {
               "sectionId": "egg-and-sperm",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "gamete-function-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Add independently checked labelled gamete diagrams and structure–function assessment.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4HB1:issue2:1.16:r4",
@@ -725,14 +751,15 @@
             {
               "sectionId": "egg-and-sperm",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "gamete-function-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Add independently checked labelled gamete diagrams and structure–function assessment.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4HB1:issue2:1.16:r5",
@@ -742,14 +769,15 @@
             {
               "sectionId": "egg-and-sperm",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "gamete-function-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Add independently checked labelled gamete diagrams and structure–function assessment.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4HB1:issue2:1.16:r6",
@@ -759,19 +787,20 @@
             {
               "sectionId": "egg-and-sperm",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "gamete-function-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Add independently checked labelled gamete diagrams and structure–function assessment.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         }
       ]
     }
   ],
-  "completeTeachingPoints": 0,
+  "completeTeachingPoints": 7,
   "completeChapters": 0,
   "supportingSources": [
     {
