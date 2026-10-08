@@ -13,6 +13,10 @@ const forbidden = [
     'Human Biology research rubric identifier',
     /4HB1-2024-May-01-standard\.Q\d+(?:\.[a-z]+)*:point-\d/,
   ],
+  [
+    'English private retrieval answer-group identifier',
+    /4EB1-2024-November-01\.Q(?:1|2|4):group-\d/,
+  ],
 ];
 
 function filesIn(directory) {

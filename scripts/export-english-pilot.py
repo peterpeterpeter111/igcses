@@ -11,6 +11,7 @@ import json
 import re
 from pathlib import Path
 from ledger_io import read_table, table_outputs
+from english_followup import load_followup, public_summary, FOLLOWUP, PUBLIC_SUMMARY
 
 PILOT = Path('research/pilot/4EB1-2024-November-01.json')
 PAPER = '4EB1-2024-November-01'
@@ -130,6 +131,23 @@ def prepare(root):
             blocker=('Partial scheme summary: two examples are not the complete equivalence list; no runnable rubric. '
                      'AO1 editorial skill stays in pilot JSON, not an invented official syllabus point; template provisional.'
                      if detail else 'Index only; detailed knowledge, solution, alternatives and template analysis pending.'), **common))
+    # A later source-checked subset composes over the immutable pilot. Validate
+    # everything before producing writes; never let this exporter downgrade it.
+    followup = load_followup(root, m)
+    if followup:
+        by_id = {t['id']: t for t in followup['tasks']}
+        for row in rows:
+            t = by_id.get(row['task_id'])
+            if t:
+                row.update(required_knowledge=t['requiredKnowledge'], context_summary=t['contextSummary'],
+                           stimulus_types_json=encode(t['stimulusTypes']), solution_structure_json=encode(t['solutionStructure']),
+                           rubric_ref=str(FOLLOWUP)+'#'+t['id'], acceptable_alternatives_json=encode(t['acceptableGroups']),
+                           common_errors_json=encode(t['editorialResponseTraps']), report_refs_json='[]',
+                           extraction_status='source-checked', mapping_status='official-AO-only',
+                           review_status='agent-partial-review', reviewed_by=followup['reviewedBy'],
+                           blocker=' '.join(t['calibrationBlockers']), updated_at=followup['reviewDate'])
+        paper_row.update(extracted_leaf_tasks=followup['combinedDetailedTasks'], reviewed_at=followup['reviewDate'],
+                         updated_at=followup['reviewDate'], blocking_issues_json=encode(public_summary(followup)['limitations']))
     additions = {'documents':('document_id', doc_rows), 'papers':('paper_id',[paper_row]), 'tasks':('task_id', rows)}
     pending = []
     for name,(key,records) in additions.items():
@@ -142,14 +160,18 @@ def prepare(root):
         merged={r[key]:r for r in old}
         for row in records:merged[row[key]]={field:row.get(field,'') for field in fields}
         pending.extend(table_outputs(path.parent,name,fields,merged.values(),'4EB1').items())
-    summary=dict(paper=PAPER, indexedTasks=11, detailedTasks=1, fullyProcessedPapers=0, activeTemplates=0,
+    if followup:
+        pending.append((root/PUBLIC_SUMMARY, json.dumps(public_summary(followup), indent=2)+'\n'))
+    summary=dict(paper=PAPER, indexedTasks=11, detailedTasks=followup['combinedDetailedTasks'] if followup else 1, fullyProcessedPapers=0, activeTemplates=0,
                  normalizedDocuments=3, originalPilotSha256=hashlib.sha256((root/PILOT).read_bytes()).hexdigest())
     return pending,summary
 
 
 def export(root):
     pending,summary=prepare(root)
-    for path,content in pending:path.write_text(content)
+    for path,content in pending:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(content)
     return summary
 
 

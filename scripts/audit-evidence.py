@@ -13,6 +13,7 @@ from ledger_io import read_table
 from extraction_io import read_extraction
 from note_io import read_note
 from assessment_objective_io import objective_tables
+from english_followup import load_followup, public_summary, PUBLIC_SUMMARY
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -49,6 +50,23 @@ def audit(root=ROOT):
     sources = read('research/sources.json')
     batch = read('research/batches/2026-09-08-cross-subject-lower-01.manifest.json')
     pilot = read('research/pilot/4EB1-2024-November-01.json')
+    try:
+        followup = load_followup(root, pilot)
+        if followup and read(PUBLIC_SUMMARY) != public_summary(followup):
+            errors.append({'kind': 'english-followup-summary-mismatch'})
+        if followup:
+            row = next(r for r in tables['papers'] if r['paper_id'] == pilot['paperId'])
+            if int(row['extracted_leaf_tasks']) != followup['combinedDetailedTasks']:
+                errors.append({'kind': 'english-followup-ledger-count-mismatch'})
+            for task in followup['tasks']:
+                row = next(r for r in tables['tasks'] if r['task_id'] == task['id'])
+                if (row['extraction_status'] != 'source-checked' or row['mapping_status'] != 'official-AO-only'
+                        or row['human_reviewed'] != 'false' or int(row['original_marks']) != task['marks']
+                        or json.loads(row['acceptable_alternatives_json']) != task['acceptableGroups']
+                        or json.loads(row['assessment_objectives_json']) != task['aoMarks']):
+                    errors.append({'kind': 'english-followup-task-export-mismatch', 'id': task['id']})
+    except (ValueError, KeyError, StopIteration, FileNotFoundError) as exc:
+        errors.append({'kind': 'english-followup-contract', 'note': str(exc)})
     extractions = [read_extraction(p) for p in sorted((root / 'research/extractions').glob('*.json'))]
     inventories = [json.loads(p.read_text()) for p in sorted((root / 'research/syllabus').glob('*.json'))]
     notes = [read_note(p) for p in sorted((root / 'content/notes').glob('*.json'))]

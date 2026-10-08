@@ -16,6 +16,7 @@ import humanCubeSkills from '@/research/syllabus-skills/4HB1-issue2-q6-selected.
 import chemistrySkills from '@/research/syllabus-skills/4CH1-issue3.json';
 import englishReadingReview from '@/research/teaching-reviews/4EB1-reading-foundations.json';
 import englishWritingReview from '@/research/teaching-reviews/4EB1-writing-foundations.json';
+import englishPaperSummary from '@/research/pilot-summaries/4EB1-2024-November-01.json';
 import { assessmentObjectiveCoverage, assessmentObjectiveReviewDate } from '@/lib/assessment-objectives';
 import { curriculumAudits } from '@/lib/curriculum';
 import { obtainedPaperCandidates, paperCoverReview, paperTaskIndex, paperDetailedSummary } from '@/lib/paper-discovery';
@@ -177,9 +178,15 @@ export default async function SubjectCoverage({
           <section>
           <p>
             Also obtained: November 2024 paper 01, its scheme and examiner
-            report. Eleven tasks indexed; Q5 detailed; whole-paper processing
-            incomplete.
+            report. Eleven printed tasks indexed; Questions{' '}
+            {englishPaperSummary.reviewedTaskNumbers.join(', ')} have partial detailed records
+            ({englishPaperSummary.detailedOriginalMarks} original marks).
+            {' '}{englishPaperSummary.remainingIndexedTasks} tasks remain indexed only;
+            whole-paper processing is incomplete. A candidate answers nine tasks
+            for 100 marks; all printed alternatives total 160 marks.
           </p>
+          <p className="status">Latest retrieval review: {englishPaperSummary.reviewedAt};
+            {' '}AI review, no human certification or active examiner marker.</p>
           <h2>Selected reading and writing teaching</h2>
           <p>
             {englishReadingReview.sections.length + englishWritingReview.sections.length}
@@ -210,7 +217,9 @@ export default async function SubjectCoverage({
           <p>
             {objectives.filter((objective) => objective.scope === 'exam').length} exam
             objectives have partial teaching links. The optional spoken-language
-            objective is separate and has no notes yet. These objectives are not
+            objective is separate and has {getNotes('english', 'spoken-language')?.sections.length ?? 0}
+            {' '}partial preparation sections; formal objective links remain unrecorded.
+            These objectives are not
             counted as numbered syllabus statements or complete coverage.
           </p>
           <div className="table-wrap">
@@ -221,7 +230,8 @@ export default async function SubjectCoverage({
                 {objectives.map((objective) => <tr key={objective.id}>
                   <th scope="row">{objective.reference}{objective.scope === 'optional-endorsement' ? ' · optional' : ''}</th>
                   <td>{objective.qualificationWeightPercent === null ? 'Separate endorsement' : `${objective.qualificationWeightPercent}%`}</td>
-                  <td>{objective.links.length ? `${objective.links.length} partial` : 'Not started'}</td>
+                  <td>{objective.links.length ? `${objective.links.length} partial` : objective.scope === 'optional-endorsement'
+                    ? 'Preparation notes; links pending' : 'Not started'}</td>
                 </tr>)}
               </tbody>
             </table>
@@ -234,7 +244,11 @@ export default async function SubjectCoverage({
                   {getNotes('english', link.chapterId)?.sections.find((section) => section.id === link.sectionId)?.title ?? link.sectionId}
                 </a>{' · partial teaching'}
               </li>)}
-            </ul> : <p>No teaching document for the optional endorsement has been added.</p>}
+            </ul> : objective.scope === 'optional-endorsement' && getNotes('english', 'spoken-language')
+              ? <p><Link href="/subjects/english/spoken-language">Optional spoken-language preparation</Link>
+                {' · '}{getNotes('english', 'spoken-language')!.sections.length} partial sections.
+                Formal objective links and independent delivery review remain incomplete.</p>
+              : <p>Formal teaching links have not been recorded.</p>}
           </details>)}
           <p className="status">
             Objective definitions and {objectives.reduce((n, objective) => n + objective.links.length, 0)} partial
