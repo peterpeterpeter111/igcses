@@ -23,7 +23,7 @@ function fixture() {
   git('add', '.');
   git('commit', '-qm', 'base fixture');
   const base = git('rev-parse', 'HEAD');
-  const prepare = () => spawnSync('python3', ['scripts/prepare-github-sync.py', '--base', base, '--output-dir', 'work/sync'], { cwd: root, env, encoding: 'utf8' });
+  const prepare = (...extra: string[]) => spawnSync('python3', ['scripts/prepare-github-sync.py', '--base', base, '--output-dir', 'work/sync', ...extra], { cwd: root, env, encoding: 'utf8' });
   return { root, git, prepare, cleanup: () => rmSync(root, { recursive: true, force: true }) };
 }
 
@@ -87,5 +87,27 @@ void test('source sync represents a rename as deletion and addition', () => {
       { path: 'source.txt', mode: '100644', type: 'blob', sha: null },
     ]);
     assert.equal(f.git('status', '--porcelain'), '');
+  } finally { f.cleanup(); }
+});
+
+void test('large committed blobs require an exact pre-uploaded hash and remain bounded tree entries', () => {
+  const f = fixture();
+  try {
+    writeFileSync(join(f.root, 'large.json'), JSON.stringify({ text: 'x'.repeat(220000) }));
+    f.git('add', '.'); f.git('commit', '-qm', 'large source');
+    assert.notEqual(f.prepare().status, 0);
+    mkdirSync(join(f.root, 'work'));
+    const map = join(f.root, 'work/blobs.json');
+    writeFileSync(map, JSON.stringify({ 'large.json': '0'.repeat(40) }));
+    assert.match(f.prepare('--blob-map', map).stderr, /does not match committed source/);
+    assert.equal(existsSync(join(f.root, 'work/sync')), false);
+    const sha = f.git('rev-parse', 'HEAD:large.json');
+    writeFileSync(map, JSON.stringify({ 'large.json': sha, 'missing.json': sha }));
+    assert.match(f.prepare('--blob-map', map).stderr, /unchanged or missing/);
+    writeFileSync(map, JSON.stringify({ 'large.json': sha }));
+    assert.equal(f.prepare('--blob-map', map).status, 0);
+    const batch = JSON.parse(readFileSync(join(f.root, 'work/sync/batch-001.json'), 'utf8'));
+    assert.deepEqual(batch.tree_elements, [{ path: 'large.json', mode: '100644', type: 'blob', sha }]);
+    assert.ok(readFileSync(join(f.root, 'work/sync/batch-001.json')).length < 1000);
   } finally { f.cleanup(); }
 });

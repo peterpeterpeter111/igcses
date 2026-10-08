@@ -25,6 +25,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--base', required=True, help='Fetched remote commit/ref')
     parser.add_argument('--head', default='HEAD', help='Committed local snapshot')
+    parser.add_argument('--blob-map', type=Path, help='JSON map of paths to previously uploaded GitHub blob SHAs')
     parser.add_argument('--output-dir', type=Path, required=True, help='New directory under work/')
     args = parser.parse_args()
     output = (ROOT / args.output_dir).resolve()
@@ -38,6 +39,10 @@ if __name__ == '__main__':
     base = git('rev-parse', args.base + '^{commit}').decode().strip()
     head = git('rev-parse', args.head + '^{commit}').decode().strip()
     tree = git('rev-parse', head + '^{tree}').decode().strip()
+    uploaded = json.loads(args.blob_map.read_text()) if args.blob_map else {}
+    if not isinstance(uploaded, dict):
+        parser.error('Blob map must contain path-to-SHA entries')
+    used_blobs = set()
     entries = {}
     for item in git('ls-tree', '-rz', head).split(b'\0'):
         if not item:
@@ -64,7 +69,13 @@ if __name__ == '__main__':
             content = git('cat-file', 'blob', sha).decode('utf-8')
             if '\0' in content:
                 raise ValueError('Manual review required for binary content: ' + path)
-            element = {'path': path, 'mode': mode, 'type': kind, 'content': content}
+            if path in uploaded:
+                if uploaded[path] != sha:
+                    raise ValueError('Uploaded blob does not match committed source: ' + path)
+                element = {'path': path, 'mode': mode, 'type': kind, 'sha': sha}
+                used_blobs.add(path)
+            else:
+                element = {'path': path, 'mode': mode, 'type': kind, 'content': content}
         if len(encode(request([element]))) > MAX_REQUEST_BYTES:
             raise ValueError('Single file exceeds reviewable request size; stop and review: ' + path)
         if current and len(encode(request(current + [element]))) > MAX_REQUEST_BYTES:
@@ -73,6 +84,8 @@ if __name__ == '__main__':
         current.append(element)
     if current:
         batches.append(request(current))
+    if used_blobs != set(uploaded):
+        raise ValueError('Blob map includes unchanged or missing source paths')
     summary = {'baseCommit': base, 'baseTree': git('rev-parse', base + '^{tree}').decode().strip(),
                'localCommit': head, 'targetTree': tree, 'maxRequestBytes': MAX_REQUEST_BYTES,
                'changedFiles': sum(len(b['tree_elements']) for b in batches),
