@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4BI1",
+  "documentId": "4BI1-spec",
+  "specificationSha256": "9f474a0ef0e93ef3c3107b568956d163454cdb476bb2017189e8dd12c0d58cef",
+  "sourceVisualPages": [
+    17
+  ],
+  "sourcePrintedPages": [
+    11
+  ],
+  "reviewDate": "2026-10-09",
+  "reviewer": "Codex source and authored-teaching review",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "authored-teaching-coverage",
+  "policyVersion": 1,
+  "practicalTrialsPerformed": false,
+  "examTemplateCalibrationComplete": false,
+  "inventorySha256": "d016dd628dedb3ff92c8950676a03a4d1d57041d02409a82966276e6b843425d",
+  "auditRef": "research/curriculum-audits/4BI1-living-organisms.json",
+  "auditSha256": "74cdef99ac339c78573571485708fa000ef64f7838bfdf7c8e994e80c88db593",
+  "noteRef": "content/notes/biology.json",
+  "diagramSha256": {},
+  "limitations": [
+    "Only1.1 authored teaching is complete by agent review; three other source identities and whole chapter remain partial.",
+    "Observations are invented original classroom cases; no practical experiments, learner or examiner certification."
+  ],
+  "points": [
+    {
+      "pointId": "4BI1:issue3:1.1",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:1.1:r1",
+          "verdict": "approved",
+          "judgement": "Plant synthesis using light versus animal digested nutrients assessed; minerals are not conflated with energy or organic food.",
+          "assessmentSectionId": "life-process-observations"
+        },
+        {
+          "id": "4BI1:issue3:1.1:r2",
+          "verdict": "approved",
+          "judgement": "Dark-grown seed/storage context distinguishes cellular respiration from lungs and photosynthesis.",
+          "assessmentSectionId": "life-process-observations"
+        },
+        {
+          "id": "4BI1:issue3:1.1:r3",
+          "verdict": "approved",
+          "judgement": "Undigested fibre versus metabolic urea assessed by origin, with carbon dioxide explanation; excretion and egestion not conflated.",
+          "assessmentSectionId": "life-process-observations"
+        },
+        {
+          "id": "4BI1:issue3:1.1:r4",
+          "verdict": "approved",
+          "judgement": "Directional seedling change linked to light without a process label cue in the practice.",
+          "assessmentSectionId": "movement-and-internal-control"
+        },
+        {
+          "id": "4BI1:issue3:1.1:r5",
+          "verdict": "approved",
+          "judgement": "Rooted organism movement demonstrated without claiming whole-organism locomotion.",
+          "assessmentSectionId": "movement-and-internal-control"
+        },
+        {
+          "id": "4BI1:issue3:1.1:r6",
+          "verdict": "approved",
+          "judgement": "Invented changing external/stable-range internal temperatures assessed; limited evidence cannot prove mechanisms or exact constancy.",
+          "assessmentSectionId": "movement-and-internal-control"
+        },
+        {
+          "id": "4BI1:issue3:1.1:r7",
+          "verdict": "approved",
+          "judgement": "Juvenile/lineage contrast assesses absence of current reproduction without diagnosing non-life.",
+          "assessmentSectionId": "growth-development-and-lineages"
+        },
+        {
+          "id": "4BI1:issue3:1.1:r8",
+          "verdict": "approved",
+          "judgement": "Dry-mass increase, new leaf function and viable offspring independently separate growth, development and reproduction.",
+          "assessmentSectionId": "growth-development-and-lineages"
+        }
+      ],
+      "sectionSha256": {
+        "characteristics-of-life": "75d6823e11ad3024fabb3c47814e31f61cb5049045c11408417ed8c883c6c05a",
+        "life-process-observations": "45a1be0faff2ab680518deb6454e3190a6f47af03f396b421591c2d6ee78d450",
+        "movement-and-internal-control": "ddf4a3917e1ccf0147bcbd545829c7868a3d18759965c83d3413a62533ad293d",
+        "growth-development-and-lineages": "621dd4b8336a7a997a2fb5ccbcb3f3cfd9b65ab93a74cbea3af09489fb8ae223"
+      }
+    }
+  ]
+}

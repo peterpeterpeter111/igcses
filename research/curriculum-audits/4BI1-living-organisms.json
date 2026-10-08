@@ -5,11 +5,11 @@
   "documentId": "4BI1-spec",
   "specificationIssue": "Issue 3 - September 2024",
   "documentSha256": "9f474a0ef0e93ef3c3107b568956d163454cdb476bb2017189e8dd12c0d58cef",
-  "reviewDate": "2026-09-20",
-  "reviewer": "Codex Astra",
+  "reviewDate": "2026-10-09",
+  "reviewer": "Codex source and authored-teaching review",
   "reviewerType": "agent",
   "humanReviewed": false,
-  "scope": "Bounded audit of 1.1–1.4 and their embedded descriptions, PDF 17–18 / printed 11–12. Explanations are present, but representation, assessment and independent review remain incomplete.",
+  "scope": "Bounded source requirements1.1–1.4; eight1.1 authored-teaching requirements complete, other26 requirements remain partial.",
   "identifierPolicy": "Requirement suffixes r1, r2, etc. are local editorial audit identifiers; only the parent reference is publisher-numbered.",
   "notePath": "content/notes/biology.json",
   "parents": [
@@ -23,9 +23,9 @@
         "2B"
       ],
       "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Embedded source descriptions retained as local requirements; familiar examples do not establish assessment completion.",
+      "teachingAuditStatus": "complete",
+      "substatementAuditComplete": true,
+      "scopeNote": "Eight source clauses have explanations and independently authored worked/unfamiliar exercises; no active exam family or learner trials claimed.",
       "requirements": [
         {
           "id": "4BI1:issue3:1.1:r1",
@@ -35,14 +35,15 @@
             {
               "sectionId": "characteristics-of-life",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "life-process-observations",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Assess nutrition in contrasting plant and animal contexts.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4BI1:issue3:1.1:r2",
@@ -52,14 +53,15 @@
             {
               "sectionId": "characteristics-of-life",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "life-process-observations",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Assess a non-animal respiration example independently.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4BI1:issue3:1.1:r3",
@@ -69,14 +71,15 @@
             {
               "sectionId": "characteristics-of-life",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "life-process-observations",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Assess excretion versus egestion with unfamiliar examples.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4BI1:issue3:1.1:r4",
@@ -86,14 +89,15 @@
             {
               "sectionId": "characteristics-of-life",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "movement-and-internal-control",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Assess a stimulus-response example without a named process cue.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4BI1:issue3:1.1:r5",
@@ -103,14 +107,15 @@
             {
               "sectionId": "characteristics-of-life",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "movement-and-internal-control",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Assess movement in a rooted organism.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4BI1:issue3:1.1:r6",
@@ -120,14 +125,15 @@
             {
               "sectionId": "characteristics-of-life",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "movement-and-internal-control",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Assess why changing surroundings require internal regulation.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4BI1:issue3:1.1:r7",
@@ -137,14 +143,15 @@
             {
               "sectionId": "characteristics-of-life",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "growth-development-and-lineages",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Assess the distinction between an individual and a lineage.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4BI1:issue3:1.1:r8",
@@ -154,14 +161,15 @@
             {
               "sectionId": "characteristics-of-life",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "growth-development-and-lineages",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Add an independent growth-versus-development comparison.",
-            "Independent assessment-family coverage is not yet validated."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         }
       ]
     },
@@ -656,6 +664,6 @@
       ]
     }
   ],
-  "completeTeachingPoints": 0,
+  "completeTeachingPoints": 1,
   "completeChapters": 0
 }

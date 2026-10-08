@@ -4,15 +4,15 @@
   "specificationIssue": "Issue 3 - September 2024",
   "specificationDocumentId": "4BI1-spec",
   "specificationSha256": "9f474a0ef0e93ef3c3107b568956d163454cdb476bb2017189e8dd12c0d58cef",
-  "reviewDate": "2026-09-20",
-  "reviewedBy": "Codex Astra",
+  "reviewDate": "2026-10-09",
+  "reviewedBy": "Codex source and authored-teaching review",
   "reviewerType": "agent",
   "reviewMethod": "Visual inspection of PDF pages 17–18 plus text comparison; matching hashes of retained specification copies.",
   "reviewedPages": [
     17,
     18
   ],
-  "scope": "Only section 1, four numbered parent identities. The many embedded clauses are audited separately; neither teaching completion nor whole-specification review is claimed.",
+  "scope": "Four source identities;1.1 has complete agent-reviewed authored teaching.1.2–1.4 and whole chapter remain partial; no exam or learner certification.",
   "points": [
     {
       "id": "4BI1:issue3:1.1",
@@ -25,14 +25,17 @@
         "2B"
       ],
       "statementVerified": true,
-      "substatementAuditComplete": false,
+      "substatementAuditComplete": true,
       "chapterId": "living-organisms",
       "noteSectionIds": [
-        "characteristics-of-life"
+        "characteristics-of-life",
+        "life-process-observations",
+        "movement-and-internal-control",
+        "growth-development-and-lineages"
       ],
-      "teachingCoverage": "partial",
+      "teachingCoverage": "complete",
       "humanReviewed": false,
-      "teachingReviewedAt": "2026-09-20"
+      "teachingReviewedAt": "2026-10-09"
     },
     {
       "id": "4BI1:issue3:1.2",
@@ -101,5 +104,6 @@
       "humanReviewed": false,
       "teachingReviewedAt": "2026-09-20"
     }
-  ]
+  ],
+  "completionReviewRef": "research/teaching-reviews/4BI1-life-characteristics-2026-10-09.json"
 }
