@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-10-09",
+  "scope": "Read-only current npm audit; no automatic fixes or runtime-exploit certification.",
+  "lockfileSha256": "d73c0af8fe524c1321e06c207ec1ab0161c57e4646192ebc8895f1825edbd070",
+  "auditOutputSha256": "deff483f38c37a0d2b0b36fb5336c8b562ce027539164ffbbf64bf2373206914",
+  "counts": {
+    "info": 0,
+    "low": 0,
+    "moderate": 6,
+    "high": 16,
+    "critical": 0,
+    "total": 22
+  },
+  "dependencyFindings": [
+    {
+      "name": "@cloudflare/vite-plugin",
+      "severity": "moderate",
+      "direct": true,
+      "affectedDependents": [],
+      "fixAvailable": {
+        "name": "@cloudflare/vite-plugin",
+        "version": "1.63.1",
+        "isSemVerMajor": false
+      },
+      "advisoryUrls": []
+    },
+    {
+      "name": "@esbuild-kit/core-utils",
+      "severity": "moderate",
+      "direct": false,
+      "affectedDependents": [
+        "@esbuild-kit/esm-loader"
+      ],
+      "fixAvailable": {
+        "name": "drizzle-kit",
+        "version": "0.18.1",
+        "isSemVerMajor": true
+      },
+      "advisoryUrls": []
+    },
+    {
+      "name": "@esbuild-kit/esm-loader",
+      "severity": "moderate",
+      "direct": false,
+      "affectedDependents": [
+        "drizzle-kit"
+      ],
+      "fixAvailable": {
+        "name": "drizzle-kit",
+        "version": "0.18.1",
+        "isSemVerMajor": true
+      },
+      "advisoryUrls": []
+    },
+    {
+      "name": "@ts-morph/common",
+      "severity": "high",
+      "direct": false,
+      "affectedDependents": [
+        "ts-morph"
+      ],
+      "fixAvailable": true,
+      "advisoryUrls": []
+    },
+    {
+      "name": "brace-expansion",
+      "severity": "high",
+      "direct": false,
+      "affectedDependents": [],
+      "fixAvailable": true,
+      "advisoryUrls": [
+        "https://github.com/advisories/GHSA-q2hr-2g5m-vwhr",
+        "https://github.com/advisories/GHSA-qhr7-859c-m2p7",
+        "https://github.com/advisories/GHSA-6j4f-fj2g-mc7p"
+      ]
+    },
+    {
+      "name": "braces",
+      "severity": "high",
+      "direct": false,
+      "affectedDependents": [
+        "micromatch"
+      ],
+      "fixAvailable": {
+        "name": "shadcn",
+        "version": "1.0.0",
+        "isSemVerMajor": true
+      },
+      "advisoryUrls": [
+        "https://github.com/advisories/GHSA-vfj7-8cjw-p6xm"
+      ]
+    },
+    {
+      "name": "drizzle-kit",
+      "severity": "moderate",
+      "direct": true,
+      "affectedDependents": [],
+      "fixAvailable": {
+        "name": "drizzle-kit",
+        "version": "0.18.1",
+        "isSemVerMajor": true
+      },
+      "advisoryUrls": []
+    },
+    {
+      "name": "esbuild",
+      "severity": "moderate",
+      "direct": false,
+      "affectedDependents": [
+        "@esbuild-kit/core-utils",
+        "wrangler"
+      ],
+      "fixAvailable": {
+        "name": "drizzle-kit",
+        "version": "0.18.1",
+        "isSemVerMajor": true
+      },
+      "advisoryUrls": [
+        "https://github.com/advisories/GHSA-67mh-4wv8-2f99",
+        "https://github.com/advisories/GHSA-g7r4-m6w7-qqqr"
+      ]
+    },
+    {
+      "name": "fast-glob",
+      "severity": "high",
+      "direct": false,
+      "affectedDependents": [
+        "@ts-morph/common",
+        "shadcn",
+        "vite-plugin-dynamic-import"
+      ],
+      "fixAvailable": {
+        "name": "shadcn",
+        "version": "1.0.0",
+        "isSemVerMajor": true
+      },
+      "advisoryUrls": []
+    },
+    {
+      "name": "image-size",
+      "severity": "high",
+      "direct": false,
+      "affectedDependents": [
+        "vinext"
+      ],
+      "fixAvailable": {
+        "name": "vinext",
+        "version": "1.0.1",
+        "isSemVerMajor": false
+      },
+      "advisoryUrls": [
+        "https://github.com/advisories/GHSA-5p2g-fcmc-qvqq",
+        "https://github.com/advisories/GHSA-w3rx-r6r6-pgpr"
+      ]
+    },
+    {
+      "name": "micromatch",
+      "severity": "high",
+      "direct": false,
+      "affectedDependents": [
+        "fast-glob"
+      ],
+      "fixAvailable": {
+        "name": "shadcn",
+        "version": "1.0.0",
+        "isSemVerMajor": true
+      },
+      "advisoryUrls": []
+    },
+    {
+      "name": "miniflare",
+      "severity": "high",
+      "direct": false,
+      "affectedDependents": [
+        "@cloudflare/vite-plugin",
+        "wrangler"
+      ],
+      "fixAvailable": {
+        "name": "@cloudflare/vite-plugin",
+        "version": "1.63.1",
+        "isSemVerMajor": false
+      },
+      "advisoryUrls": []
+    },
+    {
+      "name": "shadcn",
+      "severity": "high",
+      "direct": true,
+      "affectedDependents": [],
+      "fixAvailable": {
+        "name": "shadcn",
+        "version": "1.0.0",
+        "isSemVerMajor": true
+      },
+      "advisoryUrls": []
+    },
+    {
+      "name": "sharp",
+      "severity": "high",
+      "direct": false,
+      "affectedDependents": [
+        "miniflare"
+      ],
+      "fixAvailable": {
+        "name": "@cloudflare/vite-plugin",
+        "version": "1.63.1",
+        "isSemVerMajor": false
+      },
+      "advisoryUrls": [
+        "https://github.com/advisories/GHSA-f88m-g3jw-g9cj",
+        "https://github.com/advisories/GHSA-rgj7-g3m4-5g8c",
+        "https://github.com/advisories/GHSA-wq5f-xc86-pv6w"
+      ]
+    },
+    {
+      "name": "ts-morph",
+      "severity": "high",
+      "direct": false,
+      "affectedDependents": [],
+      "fixAvailable": true,
+      "advisoryUrls": []
+    },
+    {
+      "name": "undici",
+      "severity": "high",
+      "direct": false,
+      "affectedDependents": [
+        "miniflare"
+      ],
+      "fixAvailable": {
+        "name": "@cloudflare/vite-plugin",
+        "version": "1.63.1",
+        "isSemVerMajor": false
+      },
+      "advisoryUrls": [
+        "https://github.com/advisories/GHSA-vmh5-mc38-953g",
+        "https://github.com/advisories/GHSA-p88m-4jfj-68fv",
+        "https://github.com/advisories/GHSA-vxpw-j846-p89q",
+        "https://github.com/advisories/GHSA-hm92-r4w5-c3mj",
+        "https://github.com/advisories/GHSA-g8m3-5g58-fq7m",
+        "https://github.com/advisories/GHSA-pr7r-676h-xcf6",
+        "https://github.com/advisories/GHSA-8xcm-r25x-g524",
+        "https://github.com/advisories/GHSA-4cwx-7wf7-3272",
+        "https://github.com/advisories/GHSA-m8rv-5g2x-5cg5",
+        "https://github.com/advisories/GHSA-jr45-8vmc-qm54",
+        "https://github.com/advisories/GHSA-v3r7-h72x-cjcm",
+        "https://github.com/advisories/GHSA-35p6-xmwp-9g52",
+        "https://github.com/advisories/GHSA-pmjh-fq2x-6v4x",
+        "https://github.com/advisories/GHSA-r53p-7pc4-xj5r",
+        "https://github.com/advisories/GHSA-rfgv-xxqx-mfg5",
+        "https://github.com/advisories/GHSA-3xpg-4rpp-hhhm",
+        "https://github.com/advisories/GHSA-2jfj-6hjv-fm6j",
+        "https://github.com/advisories/GHSA-2gqq-gqf2-x968",
+        "https://github.com/advisories/GHSA-w293-vg96-wgc3",
+        "https://github.com/advisories/GHSA-8436-99hf-9mmv",
+        "https://github.com/advisories/GHSA-rx4f-c7p8-82vq"
+      ]
+    },
+    {
+      "name": "vinext",
+      "severity": "high",
+      "direct": true,
+      "affectedDependents": [],
+      "fixAvailable": {
+        "name": "vinext",
+        "version": "1.0.1",
+        "isSemVerMajor": false
+      },
+      "advisoryUrls": []
+    },
+    {
+      "name": "vite",
+      "severity": "high",
+      "direct": true,
+      "affectedDependents": [],
+      "fixAvailable": {
+        "name": "vite",
+        "version": "8.3.4",
+        "isSemVerMajor": false
+      },
+      "advisoryUrls": [
+        "https://github.com/advisories/GHSA-v6wh-96g9-6wx3",
+        "https://github.com/advisories/GHSA-fx2h-pf6j-xcff"
+      ]
+    },
+    {
+      "name": "vite-plugin-commonjs",
+      "severity": "high",
+      "direct": false,
+      "affectedDependents": [
+        "vinext"
+      ],
+      "fixAvailable": {
+        "name": "vinext",
+        "version": "1.0.1",
+        "isSemVerMajor": false
+      },
+      "advisoryUrls": []
+    },
+    {
+      "name": "vite-plugin-dynamic-import",
+      "severity": "high",
+      "direct": false,
+      "affectedDependents": [
+        "vite-plugin-commonjs"
+      ],
+      "fixAvailable": {
+        "name": "vinext",
+        "version": "1.0.1",
+        "isSemVerMajor": false
+      },
+      "advisoryUrls": []
+    },
+    {
+      "name": "wrangler",
+      "severity": "moderate",
+      "direct": true,
+      "affectedDependents": [
+        "@cloudflare/vite-plugin"
+      ],
+      "fixAvailable": {
+        "name": "@cloudflare/vite-plugin",
+        "version": "1.63.1",
+        "isSemVerMajor": false
+      },
+      "advisoryUrls": []
+    },
+    {
+      "name": "ws",
+      "severity": "high",
+      "direct": false,
+      "affectedDependents": [
+        "@cloudflare/vite-plugin",
+        "miniflare"
+      ],
+      "fixAvailable": {
+        "name": "@cloudflare/vite-plugin",
+        "version": "1.63.1",
+        "isSemVerMajor": false
+      },
+      "advisoryUrls": [
+        "https://github.com/advisories/GHSA-58qx-3vcg-4xpx",
+        "https://github.com/advisories/GHSA-96hv-2xvq-fx4p"
+      ]
+    }
+  ],
+  "fixesApplied": false,
+  "runtimeReachability": "not-fully-reviewed",
+  "limitations": [
+    "Package audit entries include build/dev tooling and transitive dependencies;22entries do not establish22exploitable production routes.",
+    "Do not apply suggested downgrades/major changes blindly. Review vinext,image handling,Vite/Cloudflare tooling,shadcn glob paths and Drizzle tooling separately, then rebuild and test."
+  ]
+}

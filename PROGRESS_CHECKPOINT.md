@@ -1,3 +1,11 @@
+# PAUSED — 9 October 2026
+
+Final allowance4%five-hour/30%weekly. Read research/checkpoints/2026-10-09-SAVED-RELEASE-AND-HANDOFF.md and its resume prompt first. Resume only above5%inbothwindows; noreset. Latest applicationb1da181 is privatelypublished; laterdocs preserve the finalhand-off.
+
+# Latest saved live release and handoff — 9 October 2026
+
+Read research/checkpoints/2026-10-09-SAVED-RELEASE-AND-HANDOFF.md first. Applicationb1da181/GitHubcb3d918 share exacttree788ff0b; native private Sitesdeployment appgdep_6ac7e1f2a83481918231c36b3c4b5f4c succeeded.26reviewedauthored-teachingpoints/36partialchapters/1,071sections/677lessonexercises;twoEnglishprocessed/sevenpairs/254detailedtasks;17provisionalfamilies/22versions/29links/sevenofflineruntimes,ZEROactiveexamtemplates/liveAI.250tests/allchecks pass; exactsource rebuild/public127files/0findings passed beforepublication. Laterhandoff/dependencyreport are docs only. Curriculum/5sourcegates/archive/examinerbank/AIunfinished; MathsQ19scope/microscopy/dependencyreachabilityexplicit. Preservehistory/UI/privateevidence; noreset. Atthreshold pause; resumeonlyabove5%inbothallowances, keepAIlast. Earlier entries historical.
+
 # Latest bounded teaching phase — 9 October 2026
 
 Read research/checkpoints/2026-10-09-LIFE-CHARACTERISTICS.md first.26authored-teachingpoints(Biology12/HumanBiology14);36partialchapters/1,071sections/677lessonexercises;1,381numberedlinks. Only Biology1.1's eightclauses newlycompleted;1.2–1.4/chapterremainpartial.250tests/types/lint/17research/evidence/isolatedD1 pass; exactsavedsource mustrebuild/publicscan before publication. Two processedEnglishsources/sevenobtainedpairs/254detailedtasks;17distinctprovisionalfamilies/22versions/29links/sevenofflineruntimes, ZEROactiveexamtemplates/liveAI. November English local79409f2/GitHub6f6c878 exacttree is privatelypublished: nativesuccess appgdep_6ac7dfa9893881918a90a0d22b0aad07. Sync/publish this newdelta non-force; then widercurriculum/paper/calibration, AIlast. Preservehistory/UI/privateevidence; noreset; checkpoint/pause at5% eitherallowance. Earlier entries historical.
