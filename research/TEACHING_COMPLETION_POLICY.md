@@ -1,0 +1,9 @@
+# Authored teaching coverage · policy version 1
+
+A numbered specification statement has complete authored teaching coverage only after its exact source issue, identity, component scope and page are checked; every source demand is decomposed into explicit local requirements; all requirements have accurate explanations; original worked and unfamiliar practice examples are checked; diagrams, practical plans, variables, controls, calculations and limitations are reviewed wherever the statement calls for them; and a named, dated reviewer records each decision.
+
+The review pins the specification hash, inventory and requirement audit, plus hashes of each linked teaching section. Edits invalidate that review until rechecked. The exporter refuses unreviewed completion flags, missing decisions, missing examples, stale content and false human-review claims. Structural validation alone cannot author the judgement.
+
+These local requirements are editorial decompositions, never extra publisher-numbered points. Agent review is labelled as agent review. Actual practical trials, learner mastery, examiner calibration, paper processing and active exam templates are separate evidence domains. A practical lesson can contain a reviewed apparatus/method/controls/data-analysis plan without claiming that a pupil or reviewer performed it. Illustrative data must be labelled as invented. Authored teaching completion does not certify exam readiness or empirical difficulty equivalence.
+
+A whole chapter remains incomplete until every applicable statement/skill and its required teaching evidence passes review, chapter dependencies and navigation are checked, and a chapter-level review is recorded. Completing three statements in a larger chapter does not complete that chapter. English assessment objectives remain a separate domain from numbered science/Mathematics identities.

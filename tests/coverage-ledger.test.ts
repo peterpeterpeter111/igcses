@@ -127,10 +127,10 @@ void test('reviewed inventories agree with source candidates and subject-specifi
         inventory.qualification === '4CH1' ? (point.reference.endsWith('C') ? ['2C'] : ['1C', '2C']) : ['4HB1', '4MB1'].includes(inventory.qualification) ? ['01', '02'] : inventory.qualification === '4BI1' ? (point.reference.endsWith('B') ? ['2B'] : ['1B', '2B']) : point.reference.endsWith('P') ? ['2P'] : ['1P', '2P'],
       );
       assert.equal(point.humanReviewed, false);
-      assert.equal(point.substatementAuditComplete, false);
+      assert.equal(point.substatementAuditComplete, point.teachingCoverage === 'complete');
       assert.equal(
         point.teachingCoverage,
-        point.noteSectionIds.length ? 'partial' : 'not-started',
+        point.substatementAuditComplete ? 'complete' : point.noteSectionIds.length ? 'partial' : 'not-started',
       );
       if (!point.noteSectionIds.length) continue;
       const note = getNotes(subjects.find((s) => s.code === inventory.qualification)!.id, point.chapterId);

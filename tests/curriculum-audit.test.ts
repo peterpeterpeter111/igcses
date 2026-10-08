@@ -12,7 +12,7 @@ void test('combined curriculum audits preserve unique source identities and real
   assert.equal(parents.length, 796);
   assert.equal(new Set(parents.map((p) => p.parentId)).size, parents.length);
   const requirements = parents.flatMap((p) => p.requirements);
-  assert.equal(requirements.length, 2824);
+  assert.equal(requirements.length, 2826);
   assert.equal(new Set(requirements.map((r) => r.id)).size, requirements.length);
   for (const a of curriculumAudits) {
     const chapterInventories = reviewedInventories.filter((i) => i.qualification === a.qualification && i.points.some((p) => p.chapterId === a.chapterId));
@@ -20,7 +20,7 @@ void test('combined curriculum audits preserve unique source identities and real
     assert.ok(chapterInventories.length);
     assert.ok(chapterNotes);
     assert.ok(chapterInventories.every((i) => i.specificationSha256 === a.documentSha256));
-    assert.equal(a.completeTeachingPoints, 0);
+    assert.equal(a.completeTeachingPoints, a.parents.filter((p) => p.teachingAuditStatus === 'complete').length);
     assert.equal(a.completeChapters, 0);
     for (const p of a.parents) {
       const source = chapterInventories.flatMap((i) => i.points).find((i) => i.id === p.parentId)!;
@@ -28,10 +28,10 @@ void test('combined curriculum audits preserve unique source identities and real
       assert.equal(p.pdfPage, source.pdfPage);
       assert.equal(p.printedPage, source.printedPage);
       assert.deepEqual(p.components, source.components);
-      assert.equal(p.substatementAuditComplete, false);
+      assert.equal(p.substatementAuditComplete, source.substatementAuditComplete);
       for (const r of p.requirements) {
-        assert.equal(r.completionStatus, 'partial');
-        assert.ok(r.remainingChecks.length);
+        assert.equal(r.completionStatus, p.teachingAuditStatus);
+        assert.equal(r.remainingChecks.length === 0, r.completionStatus === 'complete');
         for (const e of r.teachingEvidence) {
           const section = chapterNotes.sections.find((s) => s.id === e.sectionId)!;
           assert.ok(section?.points?.includes(p.officialReference));

@@ -259,6 +259,10 @@ for (const document of pilot.documents) {
   );
   hashesVerified++;
 }
+check('authored teaching completion requires current evidence and distinct readiness scope', () => {
+  const report = JSON.parse(execFileSync('python3', ['scripts/teaching_review.py'], { encoding: 'utf8' }));
+  assert.equal(report.completeAuthoredTeachingPoints, 3);
+});
 console.log(
   JSON.stringify(
     {

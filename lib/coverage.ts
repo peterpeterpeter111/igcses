@@ -1,4 +1,5 @@
 import cubeFamily from '../research/templates/4HB1-cube-measure.v0.1.0.json' with { type: 'json' };
+import englishNovemberSummary from '../research/pilot-summaries/4EB1-2024-November-01.json' with { type: 'json' };
 import englishMaySummary from '../research/pilot-summaries/4EB1-2024-May-01-standard.json' with { type: 'json' };
 import matrixFamily from '../research/templates/4MB1-matrix-addition.v0.1.0.json' with { type: 'json' };
 import retrievalValidation from '../research/validation/2026-10-05-retrieval-prototype.json' with { type: 'json' };
@@ -17,6 +18,7 @@ import chemistryExtraction from '../research/extractions/4CH1-2024-June-1-standa
 import physicsIndex from '../research/reviews/2026-09-10-physics-leaf-index.json' with { type: 'json' };
 import physicsVisualAudit from '../research/reviews/2026-09-10-physics-visual-audit.json' with { type: 'json' };
 import { subjects } from '../content/catalog.ts';
+import { reviewedInventories } from './syllabus.ts';
 import { notes } from '../content/notes.ts';
 import retrievalFamily from '../research/templates/4EB1-retrieve-two-causes.v0.1.0.json' with { type: 'json' };
 import resultantFamily from '../research/templates/4PH1-collinear-resultant.v0.1.0.json' with { type: 'json' };
@@ -53,6 +55,8 @@ const mathematicsSummary = obtainedPaperCandidates('4MB1')
   .find((row) => row !== null);
 export const evidenceHighlights = {
   updatedAt: [
+    englishNovemberSummary.reviewedAt,
+    englishMaySummary.reviewedAt,
     physicsExtraction.paperStageReviewedAt,
     latestDiscoveryDate,
     mathematicsSummary?.reviewedAt ?? latestDiscoveryDate,
@@ -63,6 +67,8 @@ export const evidenceHighlights = {
   ]
     .sort()
     .at(-1),
+  englishNovemberDetailedTasks: englishNovemberSummary.detailedTasks,
+  englishMayDetailedTasks: englishMaySummary.detailedTasks,
   humanBiologyDetailedParts: humanExtraction.detailedLeafTasks,
   humanBiologyExpectedParts: humanExtraction.wholePaperLeafCount,
   humanBiologyDetailedMarks: humanExtraction.detailedOriginalMarks,
@@ -108,7 +114,7 @@ export function coverageSummary() {
       fullyProcessed: 0,
       candidatePoints: candidates.filter((x) => x.qualification === s.code)
         .length,
-      completePoints: 0,
+      completePoints: reviewedInventories.filter((i) => i.qualification === s.code).flatMap((i) => i.points).filter((p) => p.teachingCoverage === 'complete' && p.substatementAuditComplete).length,
       completeChapters: s.chapters.filter((x) => x.complete).length,
       writtenChapters: notes.filter((n) => n.subjectId === s.id).length,
     };

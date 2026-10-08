@@ -333,8 +333,8 @@ export default async function SubjectCoverage({
                     (point) => point.noteSectionIds.length > 0,
                   ).length
                 }{' '}
-                {inventory.points.filter((point) => point.noteSectionIds.length > 0).length === 1 ? 'statement has' : 'statements have'} linked partial explanations. No statement is
-                counted as complete teaching coverage.
+                {inventory.points.filter((point) => point.noteSectionIds.length > 0).length === 1 ? 'statement has' : 'statements have'} linked explanations.{' '}
+                {inventory.points.filter((point) => point.teachingCoverage === 'complete').length} passed the agent review of authored teaching. This does not certify the whole chapter, learner mastery or examiner marking.
               </p>
               <details>
                 <summary>Inspect the reviewed statements</summary>
@@ -355,7 +355,7 @@ export default async function SubjectCoverage({
                       {' · '}
                       {point.noteSectionIds.length ? (
                         <>
-                          Partial notes:{' '}
+                          {point.teachingCoverage === 'complete' ? 'Reviewed teaching' : 'Partial notes'}:{' '}
                           {point.noteSectionIds.map((heading, i) => (
                             <span key={heading}>
                               {i > 0 ? ' · ' : ''}
@@ -391,8 +391,8 @@ export default async function SubjectCoverage({
             <p>
               {auditedParents.length} specification statements have been separated into{' '}
               {auditedParents.reduce((n, parent) => n + parent.requirements.length, 0)}
-              {' '}local teaching requirements. Their explanations are linked, but teaching
-              and assessment checks remain partial. No point or chapter is complete.
+              {' '}local teaching requirements.{' '}
+              {auditedParents.filter((parent) => parent.teachingAuditStatus === 'complete').length} statements passed the agent review of authored teaching. Whole chapters and exam-template calibration remain incomplete.
             </p>
             {s.id === 'physics' && <p>
               Examples of linked teaching include a{' '}
@@ -420,9 +420,9 @@ export default async function SubjectCoverage({
                   return (
                     <li key={parent.parentId}>
                       <strong>{parent.officialReference}</strong>: {' '}
-                      {parent.requirements.map((requirement) => requirement.remainingChecks[0]).join(' ')}
+                      {parent.teachingAuditStatus === 'complete' ? 'Authored teaching reviewed; chapter and exam readiness remain separate.' : [...new Set(parent.requirements.map((requirement) => requirement.remainingChecks[0]))].join(' ')}
                       <p>
-                        Partial teaching:{' '}
+                        {parent.teachingAuditStatus === 'complete' ? 'Reviewed teaching' : 'Partial teaching'}:{' '}
                         {sections.map((sectionId, index) => (
                           <span key={sectionId}>
                             {index > 0 ? ' · ' : ''}
@@ -442,7 +442,7 @@ export default async function SubjectCoverage({
         <h2>Raw specification candidates</h2>
         <p>
           The original extraction below is retained for comparison with reviewed
-          records. No reference is represented as complete teaching coverage.
+          records. The raw candidates do not establish teaching completion; reviewed status appears above.
           Numbered references may contain several substatements that still need
           separate auditing.
         </p>

@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4BI1",
+  "documentId": "4BI1-spec",
+  "specificationSha256": "9f474a0ef0e93ef3c3107b568956d163454cdb476bb2017189e8dd12c0d58cef",
+  "sourceVisualPages": [
+    20
+  ],
+  "sourcePrintedPages": [
+    14
+  ],
+  "reviewDate": "2026-10-08",
+  "reviewer": "Codex source and teaching review",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "authored-teaching-coverage",
+  "policyVersion": 1,
+  "practicalTrialsPerformed": false,
+  "examTemplateCalibrationComplete": false,
+  "inventorySha256": "e973f6ec495c364396ee3d1b77d5b8b505f16669fe1c0dec76b62e8b46b5062b",
+  "auditRef": "research/curriculum-audits/4BI1-cell-transport.json",
+  "auditSha256": "afd5f7f6ba071542f6f54f0d6704d3705124f129ff6e152058611c16b9f46abd",
+  "noteRef": "content/notes/biology-structures.json",
+  "limitations": [
+    "Completion covers authored teaching for these three source statements only.",
+    "The larger chapter, learner mastery, actual practical performance, examiner calibration and live exam templates remain unverified."
+  ],
+  "points": [
+    {
+      "pointId": "4BI1:issue3:2.15",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.15:r1",
+          "verdict": "approved",
+          "judgement": "Random motion and net movement distinguished; no directed intention or ATP requirement inferred.",
+          "assessmentSectionId": "diffusion-and-net-movement"
+        },
+        {
+          "id": "4BI1:issue3:2.15:r2",
+          "verdict": "approved",
+          "judgement": "Correct substance-specific inward oxygen/outward carbon-dioxide gradients; continued consumption maintains gradient.",
+          "assessmentSectionId": "diffusion-and-net-movement"
+        },
+        {
+          "id": "4BI1:issue3:2.15:r3",
+          "verdict": "approved",
+          "judgement": "Water-potential definition includes selective membrane; dilute/concentrated shortcut correctly conditioned on solute retention and pressure.",
+          "assessmentSectionId": "osmosis-and-cell-water"
+        },
+        {
+          "id": "4BI1:issue3:2.15:r4",
+          "verdict": "approved",
+          "judgement": "Plant-wall support, turgor and plasmolysis distinguished from animal swelling/lysis and shrinkage; outcomes qualified.",
+          "assessmentSectionId": "osmosis-and-cell-water"
+        },
+        {
+          "id": "4BI1:issue3:2.15:r5",
+          "verdict": "approved",
+          "judgement": "Against-gradient mineral uptake linked to protein and energy; no claim oxygen absence instantly eliminates all ATP.",
+          "assessmentSectionId": "active-transport-and-energy"
+        },
+        {
+          "id": "4BI1:issue3:2.15:r6",
+          "verdict": "approved",
+          "judgement": "Dialysis model supports selective permeability/passive diffusion only; controls prevent an unsupported active-transport inference.",
+          "assessmentSectionId": "dialysis-diffusion-model"
+        }
+      ],
+      "sectionSha256": {
+        "diffusion-and-net-movement": "1d6a5019965303aa4277fcaeb005bb89fcfbd30afce7f737543a278f49e4459e",
+        "osmosis-and-cell-water": "bca2f4e273de745c296f4d72cad29170398c84e8c317bb71f9499b67a9bfca8c",
+        "active-transport-and-energy": "3b8abe1172afc2291e97a85f7f02e6d6277b4294f5657a5efb36b40015baef19",
+        "dialysis-diffusion-model": "74bda0c9df82b953d9d92310b5a4dde448ec4c5b3d6bc99f06eaaa81ae653455",
+        "nonliving-osmosis-investigation": "12b0b97b800862982b237e7a5badb2ee0128f8abc5706e9adfb5bce077367074"
+      }
+    },
+    {
+      "pointId": "4BI1:issue3:2.16",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.16:r1",
+          "verdict": "approved",
+          "judgement": "Gradient effect qualified with comparable other variables, continual two-way motion and closed-system equilibrium.",
+          "assessmentSectionId": "transport-rate-and-sa-volume"
+        },
+        {
+          "id": "4BI1:issue3:2.16:r2",
+          "verdict": "approved",
+          "judgement": "Shorter path lowers diffusion distance; no invented exact inverse-rate law.",
+          "assessmentSectionId": "transport-rate-and-sa-volume"
+        },
+        {
+          "id": "4BI1:issue3:2.16:r3",
+          "verdict": "approved",
+          "judgement": "Temperature increases kinetic energy in the simple model; damage limits living-tissue extrapolation.",
+          "assessmentSectionId": "transport-rate-and-sa-volume"
+        },
+        {
+          "id": "4BI1:issue3:2.16:r4",
+          "verdict": "approved",
+          "judgement": "All worked cube areas/volumes and inverse-length units independently recalculated; total surface distinguished from surface per volume.",
+          "assessmentSectionId": "transport-rate-and-sa-volume"
+        },
+        {
+          "id": "4BI1:issue3:2.16:r5",
+          "verdict": "approved",
+          "judgement": "L−2d core edge and cubic volume fraction independently recalculated:48.8% and27.1% for the supplied model; indicator front not literal particle speed.",
+          "assessmentSectionId": "agar-diffusion-investigation"
+        }
+      ],
+      "sectionSha256": {
+        "transport-rate-and-sa-volume": "5d375b3fd214bfb133201d49bc033763eeb61795cdf2e01847be2c3e1de27f07",
+        "agar-diffusion-investigation": "7d34d458ee5773aaaf1ac08e11a3ac08e7f33b762a222a398ab2702d0a7c61fe"
+      }
+    },
+    {
+      "pointId": "4BI1:issue3:2.17",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.17:r1",
+          "verdict": "approved",
+          "judgement": "Agar plan includes exposed faces, repeated sizes, fixed acid/time/temperature, safe handling and uncertainty/model limits.",
+          "assessmentSectionId": "agar-diffusion-investigation"
+        },
+        {
+          "id": "4BI1:issue3:2.17:r2",
+          "verdict": "approved",
+          "judgement": "Potato plan identifies IV/DV, same tissue/dimensions/time/volume/temperature/blotting and repeated initial/final masses.",
+          "assessmentSectionId": "potato-osmosis-investigation"
+        },
+        {
+          "id": "4BI1:issue3:2.17:r3",
+          "verdict": "approved",
+          "judgement": "Signed initial-baseline changes +9% and−12% checked independently; mass observation distinguished from osmosis inference.",
+          "assessmentSectionId": "potato-osmosis-investigation"
+        },
+        {
+          "id": "4BI1:issue3:2.17:r4",
+          "verdict": "approved",
+          "judgement": "Dialysis known-mixture tests use separate start/end samples, blank/positive controls, leak inspection and rinsing; Benedict test not glucose-specific.",
+          "assessmentSectionId": "dialysis-diffusion-model"
+        },
+        {
+          "id": "4BI1:issue3:2.17:r5",
+          "verdict": "approved",
+          "judgement": "Solute/membrane/time-specific permeability and detection limits explicit; models omit living proteins and cannot establish universal absorption mechanism.",
+          "assessmentSectionId": "dialysis-diffusion-model"
+        },
+        {
+          "id": "4BI1:issue3:2.17:r6",
+          "verdict": "approved",
+          "judgement": "Non-living osmosis plan checks actual solute retention, equal-pressure initial direction and equal-concentration control; no unsupported assumption about sucrose tubing.",
+          "assessmentSectionId": "nonliving-osmosis-investigation"
+        },
+        {
+          "id": "4BI1:issue3:2.17:r7",
+          "verdict": "approved",
+          "judgement": "Invented repeats give means9,3,−2,−9%; interpolation0.32mol/dm³ independently checked and labelled estimate; ±0.02g difference uncertainty correctly bounded.",
+          "assessmentSectionId": "transport-data-and-zero-crossing"
+        }
+      ],
+      "sectionSha256": {
+        "agar-diffusion-investigation": "7d34d458ee5773aaaf1ac08e11a3ac08e7f33b762a222a398ab2702d0a7c61fe",
+        "potato-osmosis-investigation": "eb1b1848ca81bae899e80990dfa94932ea54f0861535b1bdd4de7d900ff4c0c9",
+        "dialysis-diffusion-model": "74bda0c9df82b953d9d92310b5a4dde448ec4c5b3d6bc99f06eaaa81ae653455",
+        "nonliving-osmosis-investigation": "12b0b97b800862982b237e7a5badb2ee0128f8abc5706e9adfb5bce077367074",
+        "transport-data-and-zero-crossing": "87b8d2c697504dee8e40458fc81305680b530ee7a83aaace4148d492fa8ebef0"
+      }
+    }
+  ]
+}

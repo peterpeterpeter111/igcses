@@ -34,6 +34,7 @@ export default function CoveragePage() {
                 <th>Pairs obtained</th>
                 <th>Fully processed</th>
                 <th>Candidate points</th>
+                <th>Teaching statements reviewed</th>
                 <th>Chapters complete</th>
               </tr>
             </thead>
@@ -54,6 +55,7 @@ export default function CoveragePage() {
                   </td>
                   <td>{r.fullyProcessed}</td>
                   <td>{r.candidatePoints || 'Inventory pending'}</td>
+                  <td>{r.completePoints}</td>
                   <td>
                     {r.completeChapters} / {r.subject.chapters.length}
                   </td>
@@ -80,6 +82,8 @@ export default function CoveragePage() {
             Pages and candidate labels were recorded. Later detailed analysis
             is recorded separately; it does not rewrite the original index.
           </dd>
+          <dt>Teaching statements reviewed</dt>
+          <dd>Every local teaching requirement for the stated source point passed a recorded agent review. This does not certify a whole chapter, learner mastery or examiner marking.</dd>
           <dt>Fully processed</dt>
           <dd>
             Every task and subpart, matching scheme, marks and optional-question
@@ -91,10 +95,10 @@ export default function CoveragePage() {
         <ul className="plain-list">
           <li>
             Biology: {evidenceHighlights.biologyDetailedParts} parts across Questions {evidenceHighlights.biologyReviewedQuestions}
-            ({evidenceHighlights.biologyDetailedMarks} original marks) have detailed
+            {' '}({evidenceHighlights.biologyDetailedMarks} original marks) have detailed
             records out of {evidenceHighlights.biologyExpectedParts} visually inventoried parts
             ({evidenceHighlights.biologyIndexedMarks} total allocation marks). The whole-page visual inventory
-            is checked; detailed extraction of the remaining parts, source qualifications, full skills/AO review and template
+            is checked; historical applicability, full skills/AO review and template
             calibration are pending; no fully processed Biology paper.
           </li>
           <li>
@@ -118,8 +122,7 @@ export default function CoveragePage() {
             Wider archive discovery is incomplete.
           </li>
           <li>
-            The English November 2024 pilot has 11 tasks indexed and one
-            detailed extraction. It is not a fully processed paper. Physics
+            English November has {evidenceHighlights.englishNovemberDetailedTasks} detailed tasks and May has {evidenceHighlights.englishMayDetailedTasks}. Each sitting has 160 marks across printed options, with nine answered tasks worth 100 marks. Whole-paper processing remains unfinished. Physics
             Summer 2024 Paper 1P has {evidenceHighlights.physicsDetailedParts}{' '}
             detailed question parts ({evidenceHighlights.physicsDetailedMarks}{' '}
             original marks); whole-paper processing remains incomplete.
