@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-10-08",
+  "familyId": "4PH1.weight.convert-mass",
+  "familyVersion": "0.1.0",
+  "reviewer": "Codex",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Exhaustive finite numeric candidate and repetition policy only. No live registration, source-demand equivalence, empirical difficulty, free-text parsing or examiner marking calibration.",
+  "sourceTaskId": "4PH1-2024-June-1-standard.Q10.a",
+  "policy": "Exclude original250g for all three source-permitted g values; group equal mass/g across event names and prose/table presentation. Historical prototype and source fixtures are preserved.",
+  "parameterPackagesChecked": 17982,
+  "arithmeticChecks": 17982,
+  "distinctNumericGroups": 2997,
+  "distinctMasses": 999,
+  "presentationsPerNumericGroup": 6,
+  "fields": {
+    "980": 5994,
+    "981": 5994,
+    "1000": 5994
+  },
+  "representations": {
+    "prose": 8991,
+    "table": 8991
+  },
+  "contexts": {
+    "0": 5994,
+    "1": 5994,
+    "2": 5994
+  },
+  "originalEquivalentsRejected": 18,
+  "cosmeticDuplicatesGrouped": 14985,
+  "requestedSetSize": 30,
+  "selectedSetSize": 30,
+  "previousSetKeysExcluded": 30,
+  "remainingGroupsAfterPreviousSet": 2967,
+  "legacyDiagnostic": {
+    "seedsChecked": 200,
+    "distinctMasses": 78,
+    "minimumMass": 1185,
+    "maximumMass": 1570,
+    "note": "Contiguous seed sampling is not a full parameter-domain proof; this diagnostic does not change the historical generator."
+  },
+  "finitePeriod": 17982,
+  "infiniteNoveltyClaim": false,
+  "sourceHashes": {
+    "server/generators/weight-conversion.ts": "ec7be2bafc9386d9d4254e0329600bfd1b21f57a6791d4a51588eb62fb5427cf",
+    "server/generators/weight-diversity.ts": "5ef23a2749e39f7aa21e95cd10f2a751651a66e9a43679cd92b5b00c41870f62",
+    "tests/weight-diversity.test.ts": "b584fe721bd4482b7eb839a93fa8ce3d7717a19685273fa4255d8599f1dd83ed",
+    "scripts/check-weight-diversity.ts": "94cb8e159711b2ba585e89c47097ddf4ec1e602979350eceba089d336c2b3a64"
+  },
+  "liveEligible": false,
+  "activeTemplates": 0,
+  "markingCalibrated": false,
+  "blockers": [
+    "Whole response/rounding/method-credit calibration remains incomplete.",
+    "Representation adaptations still lack complete pedagogical/assessment-demand validation.",
+    "Numerical freshness alone is not structural, semantic or difficulty variety.",
+    "No live practice session or80-mark blueprint integration."
+  ]
+}

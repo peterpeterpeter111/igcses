@@ -1,0 +1,24 @@
+# Whole Chemistry skill demand and finite weight practice · 8 October 2026
+
+Continued local 735b7d0 without restarting or discarding either history. No reset, bulk discovery, schema/D1/notes changes, AI calls or live exam-template activation. Existing owner-private Sites version9 remains live until this phase's verified exact-source publication.
+
+## Completed in this phase
+
+- Chemistry `research/syllabus-skills/4CH1-issue3.json` now records a listed-skill-demand decision for every56 extracted leaf /110 original marks, with task identity, question/scheme pages and unchanged private-partition hashes.32 leaves have skill links,24 no separate listed demand;12 mathematical and27 experimental leaves overlap and must not be added to marks.10 experimental/18 mathematical skills are inventoried; nine other-science-only rows are excluded. The original selected12-leaf audit remains unchanged historical evidence. No new paper extraction or source-page review is claimed.
+- Coverage now exposes all56 decisions, overlap and unresolved historical/official-allocation/human-review gates. Local browser confirms exact counts and narrow-screen width319/scrollWidth319; proof `work/chemistry-whole-skills-proof.png`.
+- Research-only weight freshness module enumerates17,982 finite presentations covering2,997 mass/gravity groups;999 masses exclude the original250g across all contexts and representations. Cosmetic rewordings and previous numeric groups are excluded by bounded selection. Requested sets1–30 return an honest shortfall when exhausted. The historic generator, marking rules and live registry are unchanged.
+- Exhaustive report `research/validation/2026-10-08-weight-diversity.json` independently checks every candidate's exact decimal arithmetic, frozen/private structure, source-equivalent exclusions, six presentations per numeric group and prior-group exclusion. This proves bounded arithmetic/selection, not empirical difficulty, examiner calibration or semantic novelty. The old contiguous200-seed run only covered78 masses and is explicitly not full-domain evidence.
+- Template ledger exporter preserves unchanged records' existing dates rather than dating every family anew. Only the weight family row changes; seven provisional families/eight source links/zero active. New report and blockers linked to existing family0.1.0.
+- Chemistry readiness snapshot distinguishes all-leaf demand review from official per-leaf AO/skill allocation. It still refuses whole-paper promotion.
+
+## Validation
+
+228 application tests pass, clean typecheck/lint,16 research checks, evidence errors=[], successful production build and public scan124files/no findings. Focused tests cover all56 Chemistry identities/marks/private hashes and mapping traps; weight tests cover boundary seeds, exact independent answers, source equivalence, cosmetic/history duplicates, dishonest shortfalls and corrupt trailing/sparse candidates. No content/schema migration occurred, so the prior fresh isolated D1 proof applies. Evidence snapshot is `research/reviews/2026-10-08-skills-and-diversity-evidence.json`.
+
+## Honest totals and unfinished work
+
+36 partial note documents/1,056 sections/662 original lesson exercises across36 chapters.796 reviewed numbered identities/2,824 editorial teaching requirements/1,354 partial teaching links; English separately six objectives/41 partial links. Seven obtained question-paper/scheme pairs; normalized ledger243 tasks/326 mappings/19 documents/six papers. Detailed parts: Physics51/110marks, Maths38/100, Human Biology42/90, Biology45/110, Chemistry56/110, English one2-mark pilot. Zero fully processed papers, complete chapters/points/objectives, active exam templates or live AI. Custom lesson practice remains stored original exercises and self-assessment, separate from generated examiner-marked questions.
+
+Remaining: reconcile Chemistry May17 printed date/May18 filename and historical/current specification; official per-leaf AO/skills allocations are not obtained. Diagram/physical-measurement/source-credit calibration and original criterion pools remain blocking; unmapped safety and acid-rain tasks are not assigned invented points. Weight rounding/implied-method/final-answer-only policies and adversarial marking calibration are still unresolved. Whole curriculum teaching/assessment audits, English remaining paper tasks and validated cross-subject generated bank remain incomplete. Keep AI last.
+
+Next save/sync this verified phase non-force, then open its exact Sites source and publish the built archive. Native terminal/provenance verification is required; no success is claimed ahead of it. Continue source-credit/measurement/marking calibration and curriculum from the latest descendant. Last allowance66% five-hour/66% weekly; continue only above5% in both, checkpoint/pause at5%, consume no reset.

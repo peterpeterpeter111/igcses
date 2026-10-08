@@ -72,6 +72,16 @@ for name, rows, identity in [('templates', templates, 'template_id'), ('template
         raise ValueError('Refusing to discard unmodelled ledger records: ' + name)
     if len(keys) != len(rows):
         raise ValueError('Duplicate ledger identity: ' + name)
+    # Keep the export timestamp of unchanged records. A new evidence link in
+    # one family must not make every unrelated family look newly reviewed.
+    def row_key(row):
+        return (row['template_id'], row['version']) if name == 'templates' else row[identity]
+    previous = {row_key(row): row for row in existing}
+    for row in rows:
+        old = previous.get(row_key(row))
+        if old and all(old[key] == str(value) for key, value in row.items() if key != 'updated_at'):
+            date.fromisoformat(old['updated_at'])
+            row['updated_at'] = old['updated_at']
     output = io.StringIO(newline='')
     writer = csv.DictWriter(output, fields, lineterminator='\n')
     writer.writeheader()
