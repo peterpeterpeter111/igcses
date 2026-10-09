@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4CH1",
+  "documentId": "4CH1-spec",
+  "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "sourceVisualPages": [
+    22
+  ],
+  "sourcePrintedPages": [
+    16
+  ],
+  "reviewDate": "2026-10-09",
+  "reviewer": "Codex source and authored-teaching review",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "authored-teaching-coverage",
+  "policyVersion": 1,
+  "practicalTrialsPerformed": false,
+  "examTemplateCalibrationComplete": false,
+  "noteRef": "content/notes/chemistry-inorganic.json",
+  "inventorySha256": "7cc17cc258a10fdac0ad6371b24ee96175159e64943bb3caa2d5b7f8f08c545d",
+  "auditRef": "research/curriculum-audits/4CH1-group1.json",
+  "auditSha256": "99e5f567cc7ca178a593b6651718c9d013ee465018f4540c3461fe80fca745ce",
+  "diagramSha256": {},
+  "limitations": [
+    "Six own-source identities2.1–2.6 (2.4C only2C) /23 authored-teaching requirements reviewed with original correction/transfer cases. No actual demonstrations, human examiner calibration, active template or whole Inorganic chapter completion. Displacement2.7/2.8C and later topics remain partial.",
+    "Original hypothetical comparison and symbolic prediction cases are not measured trials. Fixed exercises are not generative exam templates."
+  ],
+  "points": [
+    {
+      "pointId": "4CH1:issue3:2.1",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.1:r1",
+          "verdict": "approved",
+          "judgement": "Shared independently identified hydrogen product distinguishes gas observation from fizzing-only inference.",
+          "assessmentSectionId": "alkali-family-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.1:r2",
+          "verdict": "approved",
+          "judgement": "Corresponding MOH hydroxide and alkaline solution distinguished from hydrogen and identical compound claims.",
+          "assessmentSectionId": "alkali-family-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.1:r3",
+          "verdict": "approved",
+          "judgement": "General2M+2H2O→2MOH+H2 independently atom-balanced; invalidX(OH)2 rejected for+1 groupion.",
+          "assessmentSectionId": "alkali-family-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.1:r4",
+          "verdict": "approved",
+          "judgement": "Same producttypes and reactionpattern establish chemicalfamily without implying identicalrates.",
+          "assessmentSectionId": "alkali-family-transfer-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "group1-water-family": "c1b3561618b2efec4b55913c34a8c95d0664d51b2100bcd92d7864d1ce38288c",
+        "alkali-family-transfer-evidence": "6d293f9ae5af84289b2c02d6507d9bb06709d6f53b21a2970af63c9220fcd016"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.2",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.2:r1",
+          "verdict": "approved",
+          "judgement": "Conditional Li gentle/Na faster possiblemelt/K stillfaster possibleignition distinguish typicalreported behaviour from guaranteedflame.",
+          "assessmentSectionId": "alkali-comparison-and-shielding-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.2:r2",
+          "verdict": "approved",
+          "judgement": "Freshmatched tarnishingcomparison supplies separateair evidence; noexclusiveM2Oproduct inference.",
+          "assessmentSectionId": "alkali-comparison-and-shielding-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.2:r3",
+          "verdict": "approved",
+          "judgement": "Li<Na<K ordering compared with explicitlyuncontrolled largefreshLi/warmwater versus tinyoldK/coldwater; no reversalfromthatconfoundedresult.",
+          "assessmentSectionId": "alkali-comparison-and-shielding-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.2:r4",
+          "verdict": "approved",
+          "judgement": "Observationvsinterpretation, surfacecondition/mass/area/temperature and flameabsence limitations explicitly corrected; no actualtrial claimed.",
+          "assessmentSectionId": "alkali-comparison-and-shielding-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "group1-air-water-trend": "99acdf8bab59cf224683c619dff57fc99154727244cdbf7537caaa252fe8dd1e",
+        "alkali-comparison-and-shielding-evidence": "f6f342b93582a078de4af2b3f1239294e1e540bf5512a062474f9400ebc75e11"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.3",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.3:r1",
+          "verdict": "approved",
+          "judgement": "Unfamiliar X belowK retains+1 and XOH/H2 products; symboliccoefficientratio2:2:2:1 atom/chargechecked.",
+          "assessmentSectionId": "alkali-family-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.3:r2",
+          "verdict": "approved",
+          "judgement": "X belowK morevigorous andY aboveNa lessvigorous predictions conditional onmatchingconditions.",
+          "assessmentSectionId": "alkali-family-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.3:r3",
+          "verdict": "approved",
+          "judgement": "Exacttwo-secondtime/density/flame claims rejected; familysoftness/general meltingpattern distinguished fromnonmonotonic density and actualmeasurement.",
+          "assessmentSectionId": "alkali-family-transfer-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "group1-predicting-properties": "d6e0b87692e83e2ca130497fcae0b1ccc259e14aba18739cf966a9cbe9a9467e",
+        "alkali-family-transfer-evidence": "6d293f9ae5af84289b2c02d6507d9bb06709d6f53b21a2970af63c9220fcd016"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.4C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.4C:r1",
+          "verdict": "approved",
+          "judgement": "Actualtable2,1/2,8,1/2,8,8,1 sums3/11/19 andalloneouterelectron; explicitPaper2C scope.",
+          "assessmentSectionId": "alkali-comparison-and-shielding-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.4C:r2",
+          "verdict": "approved",
+          "judgement": "Additionaloccupiedshells mean increaseddistance/shielding; noextraouterelectronclaim.",
+          "assessmentSectionId": "alkali-comparison-and-shielding-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.4C:r3",
+          "verdict": "approved",
+          "judgement": "Nuclearprotonchargeincreases, notdecreases; strongerchargealone doesnot explainobserved direction.",
+          "assessmentSectionId": "alkali-comparison-and-shielding-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.4C:r4",
+          "verdict": "approved",
+          "judgement": "Weakerouterelectronattraction leads toeasierloss, M→M+ +e− neutralchargeconservation andgreaterreactivity; noelectron-gain model.",
+          "assessmentSectionId": "alkali-comparison-and-shielding-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "group1-electron-reactivity": "354acf6012e51b21f114311a6833b4dce86b9d532bb3339b2a12dd0fce08fa9b",
+        "alkali-comparison-and-shielding-evidence": "f6f342b93582a078de4af2b3f1239294e1e540bf5512a062474f9400ebc75e11"
+      }
+    }
+  ]
+}

@@ -95,7 +95,7 @@ export default async function ChapterPage({
                     ))}
                     {section.table && <div className="table-wrap">
                       <table>
-                        <caption>{section.title} · illustrative teaching data</caption>
+                        <caption>{section.table.caption ?? `${section.title} · illustrative teaching data`}</caption>
                         <thead><tr>{section.table.headers.map((heading) => <th scope="col" key={heading}>{heading}</th>)}</tr></thead>
                         <tbody>{section.table.rows.map((row, index) => <tr key={index}>
                           {row.map((cell, column) => column === 0

@@ -43,7 +43,13 @@ for (const n of rows) {
     }
     if (section.table) {
       const { headers, rows } = section.table;
-      assert.deepEqual(Object.keys(section.table).sort(), ['headers', 'rows']);
+      const expectedFields = Object.hasOwn(section.table, 'caption')
+        ? ['caption', 'headers', 'rows'] : ['headers', 'rows'];
+      assert.deepEqual(Object.keys(section.table).sort(), expectedFields);
+      if (Object.hasOwn(section.table, 'caption')) {
+        assert(typeof section.table.caption === 'string' && section.table.caption.trim(),
+          `${section.id}: table caption must contain nonempty text`);
+      }
       assert(Array.isArray(headers) && headers.length >= 2 && headers.every((h) => typeof h === 'string' && h.trim()));
       assert(new Set(headers).size === headers.length, `${section.id}: duplicate table headings`);
       assert(Array.isArray(rows) && rows.length > 0 && rows.every((row) => Array.isArray(row) && row.length === headers.length && row.every((cell) => typeof cell === 'string' && cell.trim())),

@@ -75,7 +75,8 @@
       "url": "https://periodic-table.rsc.org/element/17/chlorine",
       "sectionIds": [
         "halogen-colours-and-states",
-        "halogen-physical-predictions"
+        "halogen-physical-predictions",
+        "halogen-state-and-extrapolation-evidence"
       ]
     },
     {
@@ -83,7 +84,8 @@
       "url": "https://periodic-table.rsc.org/element/35/bromine",
       "sectionIds": [
         "halogen-colours-and-states",
-        "halogen-physical-predictions"
+        "halogen-physical-predictions",
+        "halogen-state-and-extrapolation-evidence"
       ]
     },
     {
@@ -91,7 +93,8 @@
       "url": "https://periodic-table.rsc.org/element/53/iodine",
       "sectionIds": [
         "halogen-colours-and-states",
-        "halogen-physical-predictions"
+        "halogen-physical-predictions",
+        "halogen-state-and-extrapolation-evidence"
       ]
     },
     {
@@ -228,14 +231,16 @@
       "title": "RSC Periodic Table: aluminium properties and alloy uses",
       "url": "https://periodic-table.rsc.org/element/13/aluminium",
       "sectionIds": [
-        "metal-uses-aluminium-copper"
+        "metal-uses-aluminium-copper",
+        "halogen-state-and-extrapolation-evidence"
       ]
     },
     {
       "title": "RSC Periodic Table: copper conductivity and wire use",
       "url": "https://periodic-table.rsc.org/element/29/copper",
       "sectionIds": [
-        "metal-uses-aluminium-copper"
+        "metal-uses-aluminium-copper",
+        "halogen-state-and-extrapolation-evidence"
       ]
     },
     {
@@ -243,7 +248,8 @@
       "url": "https://periodic-table.rsc.org/element/26/iron",
       "sectionIds": [
         "metal-extraction-carbon",
-        "metal-uses-iron-steels"
+        "metal-uses-iron-steels",
+        "halogen-state-and-extrapolation-evidence"
       ]
     },
     {
@@ -2851,6 +2857,169 @@
         "src": "/diagrams/chemistry-anion-tests.svg",
         "alt": "Original comparison: acidified silver nitrate yields white, cream or yellow halide precipitates; acidified barium chloride yields white sulfate precipitate; carbonate acid reaction produces gas that clouds limewater.",
         "caption": "Name the reagent and the solid or gas observation. White appearance alone does not identify the ion. Colours are schematic, not calibrated observations."
+      }
+    },
+    {
+      "id": "alkali-family-transfer-evidence",
+      "title": "Transfer a family pattern without inventing a measurement",
+      "points": [
+        "2.1",
+        "2.3"
+      ],
+      "paragraphs": [
+        "A supplied report identifies hydrogen and the corresponding metal hydroxide from each lithium, sodium and potassium water reaction. These shared product types are stronger evidence of a chemical family than appearance alone. They are not the same hydroxide substance, and the reactions need not proceed at the same rate.",
+        "For lithium, 2Li + 2H₂O → 2LiOH + H₂ conserves two Li atoms, two O atoms and four H atoms. The general neutral pattern is 2M + 2H₂O → 2MOH + H₂. Do not give the product MOH₂ or replace diatomic hydrogen by a single H atom.",
+        "A new Group1 metal below potassium is predicted to form a +1 ion and give its hydroxide plus hydrogen with water, generally more vigorously under comparable conditions. A member above potassium is predicted to react less vigorously in this comparison. An exact time, temperature or flame colour requires additional evidence.",
+        "Family similarities and trends are different. Group1 metals are generally soft and have a tendency towards lower melting temperatures down the group, but not every physical property changes monotonically. The density sequence of Li, Na and K is a counterexample to an unconditional steadily increasing rule. A prediction is not an observation, and no demonstration has been performed here."
+      ],
+      "example": {
+        "question": "X is a Group1 metal below potassium. A learner predicts X²⁺, X(OH)₂ and an exact two-second water reaction. Correct the justified and unjustified claims.",
+        "steps": [
+          "The simple group model predicts X⁺, and the corresponding hydroxide formula is XOH.",
+          "The reaction pattern is 2X + 2H₂O → 2XOH + H₂, with an alkaline hydroxide solution and hydrogen.",
+          "Greater vigour than potassium is a qualitative prediction under comparable conditions. The exact two-second time is unsupported."
+        ],
+        "explanation": "Separate a shared reaction pattern, a directional prediction and claims needing measurements."
+      },
+      "practice": {
+        "question": "Y is a Group1 metal above sodium. Predict its water-reaction product types and relative vigour. Is its density necessarily lower, and does fizzing alone identify the gas?",
+        "answer": "Predict the hydroxide YOH and hydrogen, with lower reactivity than sodium under comparable conditions. Group position alone does not establish a numerical density or an exception-free density trend. Fizzing shows gas formation; hydrogen identification needs supporting test evidence.",
+        "explanation": "Separate a shared reaction pattern, a directional prediction and claims needing measurements."
+      },
+      "terms": [
+        "group trend",
+        "evidence",
+        "prediction"
+      ],
+      "commonMistakes": [
+        "A qualitative trend does not provide an exact measurement or prove every property follows the same order."
+      ]
+    },
+    {
+      "id": "alkali-comparison-and-shielding-evidence",
+      "title": "Connect a controlled comparison to electron loss",
+      "points": [
+        "2.2",
+        "2.4C"
+      ],
+      "paragraphs": [
+        "A hypothetical matched demonstration report states that lithium fizzes gently, sodium reacts faster and can melt into a ball, and potassium reacts still more vigorously and can ignite. A second matched comparison reports faster tarnishing of fresh sodium and potassium surfaces than lithium. These are illustrative reported patterns, not trials obtained by this project.",
+        "Together the water and air evidence supports lithium < sodium < potassium for reactivity. An unequal mass, exposed surface, temperature or old tarnished surface would weaken the comparison. Absence of a flame in one run does not by itself reverse the order; sodium melting and potassium ignition are conditional observations.",
+        "For the Paper2C explanation, use Li 2,1; Na 2,8,1; K 2,8,8,1. All have one outer electron, but additional occupied shells increase its distance and shielding. The nucleus has more protons down the group, not fewer; the combined distance and shielding effects make the outer electron less strongly attracted and easier to remove.",
+        "The transfer is M → M⁺ + e⁻. Charge is conserved: zero on the left and +1−1=0 on the right. Easier loss of that electron explains the increased reactivity. Shell counts alone do not supply an exact reaction rate, and it is incorrect to explain these metals by electron gain."
+      ],
+      "example": {
+        "question": "A report compares a large freshly cut Li sample in warm water with a tiny old K sample in cold water. Can a slower K response overturn the Group1 trend? Give the Paper2C electronic explanation of the expected direction.",
+        "steps": [
+          "The comparison changes mass, exposed surface, surface condition and temperature, so it cannot isolate metal identity.",
+          "For a controlled comparison, K is normally more reactive than Li.",
+          "Both have one outer electron. K has more occupied shells and greater distance/shielding, so its outer electron is lost more easily despite the greater nuclear proton charge."
+        ],
+        "explanation": "The explanatory chain is configuration, distance/shielding, easier loss and greater reactivity; an uncontrolled result does not isolate that mechanism."
+      },
+      "practice": {
+        "question": "Correct: potassium has two outer electrons, fewer protons than sodium, and reacts faster because it gains an electron. Does a lack of lilac flame prove a sample is less reactive than sodium?",
+        "answer": "K has configuration 2,8,8,1 and one outer electron, while Na is 2,8,1. K has more protons, but greater distance and shielding reduce attraction to its outer electron, which is lost to form K⁺. Absence of a flame alone cannot establish the opposite reactivity ranking.",
+        "explanation": "The explanatory chain is configuration, distance/shielding, easier loss and greater reactivity; an uncontrolled result does not isolate that mechanism."
+      },
+      "terms": [
+        "group trend",
+        "evidence",
+        "prediction"
+      ],
+      "commonMistakes": [
+        "A qualitative trend does not provide an exact measurement or prove every property follows the same order."
+      ],
+      "table": {
+        "headers": [
+          "Atom",
+          "Shell configuration",
+          "Occupied shells",
+          "Outer electrons"
+        ],
+        "rows": [
+          [
+            "Li",
+            "2,1",
+            "2",
+            "1"
+          ],
+          [
+            "Na",
+            "2,8,1",
+            "3",
+            "1"
+          ],
+          [
+            "K",
+            "2,8,8,1",
+            "4",
+            "1"
+          ]
+        ],
+        "caption": "First-20 shell model · neutral lithium, sodium and potassium atoms"
+      }
+    },
+    {
+      "id": "halogen-state-and-extrapolation-evidence",
+      "title": "Read the bulk state before extending a halogen trend",
+      "points": [
+        "2.5",
+        "2.6"
+      ],
+      "paragraphs": [
+        "At 20°C and ordinary pressure, elemental chlorine is a yellow-green gas, bromine a red-brown liquid and iodine a grey-black crystalline solid. Iodine vapour is purple. Seeing vapour above a sample does not mean that the entire bulk sample is gaseous or that solid iodine is purple.",
+        "The table reproduces numerical RSC reference facts as teaching inputs, not a measured dataset from this site. Melting and boiling temperatures both rise from chlorine to iodine. Compare a temperature with both transitions at the stated pressure, rather than infer liquid from boiling temperature alone.",
+        "The larger molecules in this sequence have stronger intermolecular attractions, so more energy is needed to separate molecules. Boiling does not mean breaking every X–X covalent bond. A rising boiling temperature is a physical trend, not evidence of rising chemical displacement reactivity.",
+        "A halogen above chlorine is predicted to have lower transition temperatures and be gaseous at 20°C in this trend. A member below iodine is predicted to have higher transitions and be solid at 20°C. Appearance can be qualitatively extrapolated towards paler above and darker below, but exact colour and transition values cannot be calculated from position; label predictions and check supplied evidence.",
+        "At a transition temperature, phases can coexist during the change. For a made-up pure substance with supplied melting −12°C and boiling 75°C at the stated pressure,20°C lies in the liquid region. This invented exercise does not identify a real halogen or override reference data."
+      ],
+      "example": {
+        "question": "Using the reference table, identify each bulk state at 20°C. What is iodine’s bulk state at 120°C, and which attraction is overcome on boiling?",
+        "steps": [
+          "Chlorine is above its boiling temperature: gas. Bromine lies between its melting and boiling temperatures: liquid.",
+          "Iodine is below its melting temperature at 20°C: solid. Since 113.7<120<184.4, its stable bulk phase at 120°C is liquid at the stated pressure.",
+          "Boiling separates molecules by overcoming intermolecular attractions; the internal covalent bond is not normally broken in this phase change."
+        ],
+        "explanation": "Use phase boundaries for state, reference descriptions for colour and separate evidence for chemical reactivity."
+      },
+      "practice": {
+        "question": "A learner says purple vapour proves iodine never melts and that a halogen below iodine must have a precisely 250°C melting point and higher chemical reactivity. Correct these claims. Classify the invented−12/75°C substance at 20°C.",
+        "answer": "Iodine can melt; its solid and vapour have different appearances. A higher melting temperature and solid state at 20°C are qualitative trend predictions for a member below iodine, but 250°C is unsupported. A physical trend does not establish chemical reactivity. The invented substance is liquid because −12<20<75 at the stated pressure.",
+        "explanation": "Use phase boundaries for state, reference descriptions for colour and separate evidence for chemical reactivity."
+      },
+      "terms": [
+        "group trend",
+        "evidence",
+        "prediction"
+      ],
+      "commonMistakes": [
+        "A qualitative trend does not provide an exact measurement or prove every property follows the same order."
+      ],
+      "table": {
+        "headers": [
+          "RSC reference element",
+          "Melting / °C",
+          "Boiling / °C"
+        ],
+        "rows": [
+          [
+            "Chlorine",
+            "−101.5",
+            "−34.04"
+          ],
+          [
+            "Bromine",
+            "−7.2",
+            "58.8"
+          ],
+          [
+            "Iodine",
+            "113.7",
+            "184.4"
+          ]
+        ],
+        "caption": "RSC reference values · melting and boiling temperatures at ordinary pressure"
       }
     }
   ]

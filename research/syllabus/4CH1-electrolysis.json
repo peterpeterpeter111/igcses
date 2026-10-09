@@ -4,14 +4,14 @@
   "specificationIssue": "Issue 3",
   "specificationDocumentId": "4CH1-spec",
   "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
-  "reviewDate": "2026-10-05",
-  "reviewedBy": "Codex source/logic review",
+  "reviewDate": "2026-10-09",
+  "reviewedBy": "Codex source and authored-teaching review",
   "reviewerType": "agent",
   "reviewMethod": "Visual specification and text reconciliation; original explanatory content, product-condition checks and atom/charge balance.",
   "reviewedPages": [
     21
   ],
-  "scope": "Only own Issue3 PDF21/printed15 references1.55C–1.60C; all apply to2C only. Partial molten/aqueous interpretation and half-equations with practical controls; no physical observations or full assessment validation.",
+  "scope": "Six Paper2C-only electrolysis identities1.55C–1.60C /19 authored-teaching requirements independently reviewed with original correction, condition and practical-data cases. No physical or learner trials, human examiner calibration, active template or whole Principles chapter completion claimed;1.25 prescribed-reaction collection remains partial.",
   "points": [
     {
       "id": "4CH1:issue3:1.55C",
@@ -23,14 +23,15 @@
         "2C"
       ],
       "statementVerified": true,
-      "substatementAuditComplete": false,
+      "substatementAuditComplete": true,
       "chapterId": "principles",
       "noteSectionIds": [
-        "electrolysis-charge-carriers"
+        "electrolysis-charge-carriers",
+        "charge-mobility-comparison-evidence"
       ],
-      "teachingCoverage": "partial",
+      "teachingCoverage": "complete",
       "humanReviewed": false,
-      "teachingReviewedAt": "2026-10-05"
+      "teachingReviewedAt": "2026-10-09"
     },
     {
       "id": "4CH1:issue3:1.56C",
@@ -42,14 +43,15 @@
         "2C"
       ],
       "statementVerified": true,
-      "substatementAuditComplete": false,
+      "substatementAuditComplete": true,
       "chapterId": "principles",
       "noteSectionIds": [
-        "electrolysis-charge-carriers"
+        "electrolysis-charge-carriers",
+        "charge-mobility-comparison-evidence"
       ],
-      "teachingCoverage": "partial",
+      "teachingCoverage": "complete",
       "humanReviewed": false,
-      "teachingReviewedAt": "2026-10-05"
+      "teachingReviewedAt": "2026-10-09"
     },
     {
       "id": "4CH1:issue3:1.57C",
@@ -61,14 +63,15 @@
         "2C"
       ],
       "statementVerified": true,
-      "substatementAuditComplete": false,
+      "substatementAuditComplete": true,
       "chapterId": "principles",
       "noteSectionIds": [
-        "cations-anions-and-electrodes"
+        "cations-anions-and-electrodes",
+        "electrode-sign-and-ion-evidence"
       ],
-      "teachingCoverage": "partial",
+      "teachingCoverage": "complete",
       "humanReviewed": false,
-      "teachingReviewedAt": "2026-10-05"
+      "teachingReviewedAt": "2026-10-09"
     },
     {
       "id": "4CH1:issue3:1.58C",
@@ -80,16 +83,18 @@
         "2C"
       ],
       "statementVerified": true,
-      "substatementAuditComplete": false,
+      "substatementAuditComplete": true,
       "chapterId": "principles",
       "noteSectionIds": [
         "molten-lead-bromide",
         "aqueous-product-predictions",
-        "aqueous-electrolysis-investigation"
+        "aqueous-electrolysis-investigation",
+        "electrolysis-condition-comparison-evidence",
+        "aqueous-cell-control-evidence"
       ],
-      "teachingCoverage": "partial",
+      "teachingCoverage": "complete",
       "humanReviewed": false,
-      "teachingReviewedAt": "2026-10-05"
+      "teachingReviewedAt": "2026-10-09"
     },
     {
       "id": "4CH1:issue3:1.59C",
@@ -101,16 +106,18 @@
         "2C"
       ],
       "statementVerified": true,
-      "substatementAuditComplete": false,
+      "substatementAuditComplete": true,
       "chapterId": "principles",
       "noteSectionIds": [
         "cations-anions-and-electrodes",
         "molten-lead-bromide",
-        "electrolysis-half-equations"
+        "electrolysis-half-equations",
+        "electrode-sign-and-ion-evidence",
+        "half-equation-correction-evidence"
       ],
-      "teachingCoverage": "partial",
+      "teachingCoverage": "complete",
       "humanReviewed": false,
-      "teachingReviewedAt": "2026-10-05"
+      "teachingReviewedAt": "2026-10-09"
     },
     {
       "id": "4CH1:issue3:1.60C",
@@ -122,14 +129,16 @@
         "2C"
       ],
       "statementVerified": true,
-      "substatementAuditComplete": false,
+      "substatementAuditComplete": true,
       "chapterId": "principles",
       "noteSectionIds": [
-        "aqueous-electrolysis-investigation"
+        "aqueous-electrolysis-investigation",
+        "aqueous-cell-control-evidence"
       ],
-      "teachingCoverage": "partial",
+      "teachingCoverage": "complete",
       "humanReviewed": false,
-      "teachingReviewedAt": "2026-10-05"
+      "teachingReviewedAt": "2026-10-09"
     }
-  ]
+  ],
+  "completionReviewRef": "research/teaching-reviews/4CH1-electrolysis-2026-10-09.json"
 }

@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4CH1",
+  "documentId": "4CH1-spec",
+  "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "sourceVisualPages": [
+    21
+  ],
+  "sourcePrintedPages": [
+    15
+  ],
+  "reviewDate": "2026-10-09",
+  "reviewer": "Codex source and authored-teaching review",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "authored-teaching-coverage",
+  "policyVersion": 1,
+  "practicalTrialsPerformed": false,
+  "examTemplateCalibrationComplete": false,
+  "noteRef": "content/notes/chemistry.json",
+  "inventorySha256": "d07a553f4e8fa28ca12bc7101be4d22a5aafa5ec7ffeb61c61b5d806a0b17faa",
+  "auditRef": "research/curriculum-audits/4CH1-electrolysis.json",
+  "auditSha256": "1d00db1ab462f9825a0025e84d9afe274da402dd4d4cb523d9d5a1825aa40271",
+  "diagramSha256": {
+    "/diagrams/chemistry-electrolysis-cell.svg": "fcc20c9a355b05cb6ad376d6d719173ec6eb904820286da35e74675efc309fa3"
+  },
+  "limitations": [
+    "Six Paper2C-only electrolysis identities1.55C–1.60C /19 authored-teaching requirements independently reviewed with original correction, condition and practical-data cases. No physical or learner trials, human examiner calibration, active template or whole Principles chapter completion claimed;1.25 prescribed-reaction collection remains partial.",
+    "Original collection values are invented teaching inputs, not measured practical observations. Correct conservation is not empirical product-selection or free-response examiner calibration."
+  ],
+  "points": [
+    {
+      "pointId": "4CH1:issue3:1.55C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.55C:r1",
+          "verdict": "approved",
+          "judgement": "Independent pure ethanol correction identifies neutral mobile molecules versus absent appreciable mobile charged carriers; melting alone does not ionise molecules.",
+          "assessmentSectionId": "charge-mobility-comparison-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.55C:r2",
+          "verdict": "approved",
+          "judgement": "Graphite delocalised electrons and aqueous HCl mobile ions distinguished from ionic-solid identity; exception does not imply all covalent substances conduct.",
+          "assessmentSectionId": "charge-mobility-comparison-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "electrolysis-charge-carriers": "bd01348183038056f04dc5ccd975f579dffdb2aa78ea7fa24355bd57ef33487a",
+        "charge-mobility-comparison-evidence": "a21dbbc9a6c55376fa7cac070a95af2260ac25dbb54b33083a636c60ece57c20"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.56C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.56C:r1",
+          "verdict": "approved",
+          "judgement": "Independent solid KCl correction retains charged ions but rejects mobility through fixed lattice; absence of conduction does not mean absence of ions.",
+          "assessmentSectionId": "charge-mobility-comparison-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.56C:r2",
+          "verdict": "approved",
+          "judgement": "Molten KCl mobile K+/Cl− and dissolved salt with released mobile ions checked; insoluble material in water does not automatically become an aqueous electrolyte.",
+          "assessmentSectionId": "charge-mobility-comparison-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "electrolysis-charge-carriers": "bd01348183038056f04dc5ccd975f579dffdb2aa78ea7fa24355bd57ef33487a",
+        "charge-mobility-comparison-evidence": "a21dbbc9a6c55376fa7cac070a95af2260ac25dbb54b33083a636c60ece57c20"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.57C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.57C:r1",
+          "verdict": "approved",
+          "judgement": "Cation positive / anion negative retained independently of destination, copper product neutral after reduction.",
+          "assessmentSectionId": "electrode-sign-and-ion-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.57C:r2",
+          "verdict": "approved",
+          "judgement": "Explicit supplied-terminal reversal changes electrode roles; cathode negative in electrolysis, anode positive; position alone not electrode identity.",
+          "assessmentSectionId": "electrode-sign-and-ion-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "cations-anions-and-electrodes": "33d991e333a962d4baae39c5c53a0021e03f37761d5d700977f331e942dda774",
+        "electrode-sign-and-ion-evidence": "4afa0092a240019abb0e6df34d746f8243e9c34b814f6751baae4e6636edea12"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.58C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.58C:r1",
+          "verdict": "approved",
+          "judgement": "Teacher-controlled molten PbBr2 apparatus description retains heating until mobile ions, separated inert electrodes/DC and distinct expected Pb/Br2 products. No added water or fabricated observed demonstration.",
+          "assessmentSectionId": "electrolysis-condition-comparison-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.58C:r2",
+          "verdict": "approved",
+          "judgement": "Aqueous CuSO4 with genuinely inert anode gives copper/oxygen prediction; copper anode dissolution and graphite reaction are separately qualified systems, not sulfur deposition.",
+          "assessmentSectionId": "electrolysis-condition-comparison-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.58C:r3",
+          "verdict": "approved",
+          "judgement": "Acidified-water ideal 2H2O→2H2+O2 compared with invented12/5 and14/6 collection ratios; oxygen dissolution/collection conditions and independent product tests explicit. Inverted water-filled collectors have submerged separate openings.",
+          "assessmentSectionId": "aqueous-cell-control-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.58C:r4",
+          "verdict": "approved",
+          "judgement": "Molten versus concentrated aqueous NaCl comparison changes cathode sodium to hydrogen; concentrated chloride/chlorine, dilute competition and alkaline remaining solution qualified. No universal halide concentration claim.",
+          "assessmentSectionId": "electrolysis-condition-comparison-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.58C:r5",
+          "verdict": "approved",
+          "judgement": "Actual original circuit drawing reviewed and wire endpoints tested; fixed treatment, separated electrodes, control, repeat, school-managed gas identification, electrode suitability and disposal explicitly distinguish prediction from observation.",
+          "assessmentSectionId": "aqueous-cell-control-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "molten-lead-bromide": "5e5f93b7ba2ec2ddd89015c8afcd2933bd28d06daf6b36564fae9a1f70c78367",
+        "aqueous-product-predictions": "9aeddf49ae9f5bc65fd26edc4aad15cb36bd9e5e1b0eea6494afe14c65a59ae4",
+        "aqueous-electrolysis-investigation": "8e237767db3a16716ebe8a009d4ecadf7cb54f89dc76b5fdb24f43007d1bcb56",
+        "electrolysis-condition-comparison-evidence": "6b335365ab99d5697bde1eec7f70a7c5f4c6bbeba8ef0c25292e481a8ca01b4b",
+        "aqueous-cell-control-evidence": "67902807e3847e2df789590e813f27a6fa9feae463a7ce3528893a3f022026ac"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.59C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.59C:r1",
+          "verdict": "approved",
+          "judgement": "Cu2+ gains two electrons to neutralCu at cathode; incorrect electron-on-product-side equation rejected independently by totalcharge.",
+          "assessmentSectionId": "electrode-sign-and-ion-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.59C:r2",
+          "verdict": "approved",
+          "judgement": "Pb2+ +2e−→Pb and2Br−→Br2+2e− independently conserve atoms/charge; diatomic bromine and transfer classification explicit.",
+          "assessmentSectionId": "half-equation-correction-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.59C:r3",
+          "verdict": "approved",
+          "judgement": "Acidic and water hydrogen forms and acidic/alkaline oxygen forms independently conserve atoms/charge; mixed conditions not accepted merely for atom balance.",
+          "assessmentSectionId": "half-equation-correction-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.59C:r4",
+          "verdict": "approved",
+          "judgement": "2Cl−→Cl2+e− conserves atoms but not charge; corrected twoelectron oxidation equation verified.",
+          "assessmentSectionId": "half-equation-correction-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.59C:r5",
+          "verdict": "approved",
+          "judgement": "Two hydrogen half-equations consume four electrons from oxygen oxidation; complete coefficients multiplied before cancellation, giving2H2O→2H2+O2.",
+          "assessmentSectionId": "half-equation-correction-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "cations-anions-and-electrodes": "33d991e333a962d4baae39c5c53a0021e03f37761d5d700977f331e942dda774",
+        "molten-lead-bromide": "5e5f93b7ba2ec2ddd89015c8afcd2933bd28d06daf6b36564fae9a1f70c78367",
+        "electrolysis-half-equations": "951c09fc8b0509d6daee9a8226a6b694654becf7ac6bb094cfc3a360fbbad858",
+        "electrode-sign-and-ion-evidence": "4afa0092a240019abb0e6df34d746f8243e9c34b814f6751baae4e6636edea12",
+        "half-equation-correction-evidence": "9579b4dc341af4e4a40e2282136f7d4319ca6b441621ea9df901241b75244a1e"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.60C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.60C:r1",
+          "verdict": "approved",
+          "judgement": "Original aqueous model/method traces real supply connections, power-off handling, separated immersed electrodes, consistent area/spacing/concentration/duration/temperature, approvedgascollection and schoolcontrols; no actual experiment claimed.",
+          "assessmentSectionId": "aqueous-cell-control-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.60C:r2",
+          "verdict": "approved",
+          "judgement": "Separate expected gas/deposit evidence and school-managed hydrogen/oxygen/chlorine tests present; 20/10 ratio and bubbling without tests do not establish gas identity/purity.",
+          "assessmentSectionId": "aqueous-cell-control-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.60C:r3",
+          "verdict": "approved",
+          "judgement": "No-current control and repeats support bounded treatment comparison but not puregas proof or removalof systematic error; graphite oxygen reaction explicitly retained with correct PearsonPDF88/89 support.",
+          "assessmentSectionId": "aqueous-cell-control-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "aqueous-electrolysis-investigation": "8e237767db3a16716ebe8a009d4ecadf7cb54f89dc76b5fdb24f43007d1bcb56",
+        "aqueous-cell-control-evidence": "67902807e3847e2df789590e813f27a6fa9feae463a7ce3528893a3f022026ac"
+      }
+    }
+  ]
+}
