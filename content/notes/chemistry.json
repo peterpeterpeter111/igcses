@@ -2250,6 +2250,278 @@
       "commonMistakes": [
         "Do not compare distances from different baselines or assign units to Rf."
       ]
+    },
+    {
+      "id": "atomic-count-and-isotope-evidence",
+      "title": "Keep atom type, nuclear counts and charge separate",
+      "points": [
+        "1.14",
+        "1.15",
+        "1.16"
+      ],
+      "paragraphs": [
+        "An atom retains the chemical identity of an element but contains smaller subatomic particles. A molecule is a discrete bonded group of atoms; O₂ is molecular but not a compound, while CO₂ is both molecular and a compound. A formula for an extended ionic solid, such as NaCl, specifies a ratio rather than separate NaCl molecules.",
+        "Protons are in the nucleus with relative mass 1/charge+1; neutrons are nuclear with relative mass 1/charge 0. Electrons occupy surrounding energy levels with charge−1 and much smaller relative mass, about 1/1836. Their mass is not exactly zero. These relative masses are not grams. A neutral atom has equal proton/electron counts, whereas neutrons do not cancel charge.",
+        "Atomic number Z counts protons; mass number A counts protons plus neutrons in one nucleus. Isotopes share Z and differ in neutron count. The original carbon model compares neutral carbon-12 and carbon-14: both have 6 protons/6 electrons with 2,4 shell arrangement, but 6 versus 8 neutrons. Neither model is a measured atom or a claim about natural isotope abundance.",
+        "Relative atomic mass Ar is the weighted mean atomic mass compared with one twelfth of the mass of a carbon-12 atom. It is unitless and is not the mass number or neutron count of an individual atom. Changing the electron count changes charge; changing neutron count produces a different isotope, not a different element."
+      ],
+      "example": {
+        "question": "A neutral atom has Z=13 and A=27. Deduce the three particle counts, then predict the effect of losing one electron.",
+        "steps": [
+          "Protons 13; neutrons 27−13=14; electrons 13 while neutral.",
+          "Losing one electron leaves 12 electrons and gives charge+1; nuclear counts stay the same.",
+          "Element identity follows proton count, not charge or total mass."
+        ],
+        "explanation": "Element identity follows proton count, not charge or total mass."
+      },
+      "practice": {
+        "question": "Define atom and molecule, classify O₂/CO₂ and explain why NaCl need not consist of separate molecules. Give location, relative mass and charge for each subatomic particle. Compare the two carbon models: Z,A,p,n,e and why they are isotopes. Define Ar using carbon-12 and explain why it is not a neutron count.",
+        "answer": "Atom: smallest particle retaining element identity, with substructure. Molecule: discrete bonded atoms; O₂ is an element molecule, CO₂ a compound molecule, NaCl an extended ionic ratio. Proton: nucleus,1,+1; neutron: nucleus,1,0; electron: surrounding levels,about 1/1836,−1. Carbon-12:Z 6,A 12,p 6,n 6,e 6; carbon-14:Z 6,A 14,p 6,n 8,e 6. Same protons/different neutrons means isotopes. Ar compares weighted mean atom mass to 1/12 carbon-12, unitless; it is not one nucleus’s neutron count.",
+        "explanation": "Element identity follows proton count, not charge or total mass."
+      },
+      "terms": [
+        "atom",
+        "molecule",
+        "proton",
+        "neutron",
+        "electron",
+        "isotope",
+        "atomic number",
+        "mass number",
+        "relative atomic mass"
+      ],
+      "commonMistakes": [
+        "A model circle is not an atom-sized photograph; electron mass is small, not exactly zero."
+      ],
+      "diagram": {
+        "src": "/diagrams/chemistry-carbon-isotope-evidence.svg",
+        "alt": "Original schematic models of neutral carbon-12 and carbon-14. Each has6protons and6electrons arranged2,4. The nuclei are labelled6neutrons and8neutrons respectively. Orbits, nucleus size and electron positions are schematic, not trajectories or scale measurements.",
+        "caption": "The same electron arrangement and proton count, with different neutron counts. Original school shell model; not to scale and not actual electron trajectories."
+      }
+    },
+    {
+      "id": "weighted-isotope-abundance-evidence",
+      "title": "Choose the denominator for an isotope mean",
+      "points": [
+        "1.17"
+      ],
+      "paragraphs": [
+        "Use supplied isotope masses and relative abundances. For percentages that sum to 100, multiply mass by its percentage and divide the sum by 100. For raw counts or a ratio, divide by the sum of the counts or ratio parts. An unweighted mean assumes equal abundance, which must not be silently substituted.",
+        "Invented study sample X has isotope masses 20 and 22 in percentages 80 and 20: Ar=(20×80+22×20)/100=20.4. A separate ratio 3:2 gives(20×3+22×2)/5=20.8. The different abundance basis deliberately gives a different result; neither is asserted as a measured natural composition.",
+        "Check that the mean lies between the supplied masses and closer to the more abundant mass. At this level mass numbers may approximate isotope masses only when the problem supplies them that way. Do not report units of grams for Ar or round the average to make it an integer neutron count."
+      ],
+      "example": {
+        "question": "An invented sample contains masses 30 and 32 in a 2:3 ratio. Calculate its weighted mean and check direction.",
+        "steps": [
+          "Weighted sum 30×2+32×3=156; ratio total 5.",
+          "Ar=156/5=31.2, unitless.",
+          "It is between 30 and 32 and closer to the more abundant 32."
+        ],
+        "explanation": "It is between 30 and 32 and closer to the more abundant 32."
+      },
+      "practice": {
+        "question": "Use supplied approximate masses 24 and 26. First sample:75%/25%; second sample:raw atom counts 2/3. Calculate both means, state the denominators and explain why the simple mean 25 need not be correct.",
+        "answer": "Percentage sample:(24×75+26×25)/100=24.5. Count sample:(24×2+26×3)/5=25.2. Denominators 100 and 5 match the supplied bases; unweighted 25 would require equal abundances. Both means are unitless and between 24 and 26.",
+        "explanation": "It is between 30 and 32 and closer to the more abundant 32."
+      },
+      "terms": [
+        "weighted mean",
+        "isotopic abundance",
+        "ratio",
+        "percentage"
+      ],
+      "commonMistakes": [
+        "An illustrative isotope ratio is not a measurement of natural abundance."
+      ]
+    },
+    {
+      "id": "first-twenty-configuration-evidence",
+      "title": "Use atomic number to read groups, periods and shells",
+      "points": [
+        "1.18",
+        "1.19",
+        "1.22"
+      ],
+      "paragraphs": [
+        "Elements are ordered by increasing atomic number, not relative atomic mass. A vertical column is a group; a horizontal row is a period. For a neutral atom, atomic number gives the electron count. The table supplies all first 20 configurations for independent checking against a labelled Periodic Table.",
+        "In this limited school model fill 2 electrons in the first shell, then 8 in the second, up to 8 in the third within this range, and put potassium/calcium’s next electrons in the fourth shell. This is not a universal claim that the third shell can only hold 8 or that electrons follow fixed orbital paths.",
+        "Occupied shells give period; course main-group labels 1–7 match outer electrons. Group 0 is the full-outer-shell noble-gas group. Helium is in period 1/group 0 because its only shell is full with 2, not in group 2. Modern labels 13–17 correspond to course groups 3–7, and 18 to group 0; read the supplied table’s numbering.",
+        "The table shows neutral ground-state atoms. It must not be reused unchanged for ions or transition-metal configurations beyond this scope. A first-shell or outer-shell mistake changes the period/group interpretation and should be checked against the total electron count."
+      ],
+      "example": {
+        "question": "Neutral potassium has atomic number 19. Deduce its configuration, period and course group.",
+        "steps": [
+          "Electrons 19; limited filling gives 2,8,8,1.",
+          "Four occupied shells:period 4; one outer electron:course group 1.",
+          "The first 20 model is bounded; do not extend its third-shell limit to every element."
+        ],
+        "explanation": "The first 20 model is bounded; do not extend its third-shell limit to every element."
+      },
+      "practice": {
+        "question": "On paper deduce configurations for every atomic numbers from 1 to 20 before checking the table. State period and course group for He, B, O, Ne, Mg, Cl, Ar and Ca; explain helium’s exception. Why would ordering by atomic mass or treating these as ion configurations be wrong?",
+        "answer": "Configurations are the supplied table entries with electron sums 1–20. He:P 1/G 0; B:P 2/G 3; O:P 2/G 6; Ne:P 2/G 0; Mg:P 3/G 2; Cl:P 3/G 7; Ar:P 3/G 0; Ca:P 4/G 2. Helium’s only shell is full with 2. Elements are ordered by proton/atomic number; ions have a changed electron count, so the neutral table cannot be copied blindly.",
+        "explanation": "The first 20 model is bounded; do not extend its third-shell limit to every element."
+      },
+      "terms": [
+        "atomic number",
+        "group",
+        "period",
+        "configuration",
+        "first20",
+        "noble gas"
+      ],
+      "commonMistakes": [
+        "Use the course labels on the supplied table; do not apply the main-group rule to all transition metals."
+      ],
+      "table": {
+        "headers": [
+          "Z",
+          "Element",
+          "Neutral configuration"
+        ],
+        "rows": [
+          [
+            "1",
+            "H · Hydrogen",
+            "1"
+          ],
+          [
+            "2",
+            "He · Helium",
+            "2"
+          ],
+          [
+            "3",
+            "Li · Lithium",
+            "2,1"
+          ],
+          [
+            "4",
+            "Be · Beryllium",
+            "2,2"
+          ],
+          [
+            "5",
+            "B · Boron",
+            "2,3"
+          ],
+          [
+            "6",
+            "C · Carbon",
+            "2,4"
+          ],
+          [
+            "7",
+            "N · Nitrogen",
+            "2,5"
+          ],
+          [
+            "8",
+            "O · Oxygen",
+            "2,6"
+          ],
+          [
+            "9",
+            "F · Fluorine",
+            "2,7"
+          ],
+          [
+            "10",
+            "Ne · Neon",
+            "2,8"
+          ],
+          [
+            "11",
+            "Na · Sodium",
+            "2,8,1"
+          ],
+          [
+            "12",
+            "Mg · Magnesium",
+            "2,8,2"
+          ],
+          [
+            "13",
+            "Al · Aluminium",
+            "2,8,3"
+          ],
+          [
+            "14",
+            "Si · Silicon",
+            "2,8,4"
+          ],
+          [
+            "15",
+            "P · Phosphorus",
+            "2,8,5"
+          ],
+          [
+            "16",
+            "S · Sulfur",
+            "2,8,6"
+          ],
+          [
+            "17",
+            "Cl · Chlorine",
+            "2,8,7"
+          ],
+          [
+            "18",
+            "Ar · Argon",
+            "2,8,8"
+          ],
+          [
+            "19",
+            "K · Potassium",
+            "2,8,8,1"
+          ],
+          [
+            "20",
+            "Ca · Calcium",
+            "2,8,8,2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "metal-classification-evidence",
+      "title": "Combine position and property evidence",
+      "points": [
+        "1.20",
+        "1.21"
+      ],
+      "paragraphs": [
+        "Typical metals lie on the left/centre and non-metals towards the upper right. Hydrogen is a non-metal usually displayed at the upper left. Boundary elements can have intermediate properties, so position is evidence within the supplied context rather than an exception-free definition.",
+        "Good electrical conduction together with a basic oxide supports a metallic classification; poor conduction together with an acidic oxide supports a non-metallic one. Graphite conducts while being a form of the non-metal carbon. Some oxides are amphoteric or neutral, and a basic oxide need not dissolve to produce an alkaline solution.",
+        "If evidence conflicts, identify that conflict instead of asserting a new exception-free rule. Acid/base character describes reaction behaviour; it does not mean every oxide dissolves in water or that the element itself is an acid or base."
+      ],
+      "example": {
+        "question": "A fictional element conducts well and its oxide reacts with acid. What classification is supported, and what word should be avoided if the oxide is insoluble?",
+        "steps": [
+          "Conduction and basic oxide behaviour together support metallic classification.",
+          "Basic describes reaction with acid; insolubility means an alkaline aqueous solution has not been demonstrated.",
+          "Use combined evidence without claiming all metals or oxides have identical properties."
+        ],
+        "explanation": "Use combined evidence without claiming all metals or oxides have identical properties."
+      },
+      "practice": {
+        "question": "Classify the evidence: X conducts and has a basic oxide; Y does not conduct and has an acidic oxide. Locate typical metal/non-metal regions and explain why upper-left hydrogen and conducting graphite defeat two overly broad rules. Does an insoluble basic oxide necessarily give an alkaline solution?",
+        "answer": "X supports metal,Y supports non-metal. Metals typically occupy left/centre,non-metals upper right. Hydrogen is a left-positioned non-metal; graphite is conducting carbon, so neither left-position nor conduction alone is absolute. An insoluble basic oxide need not make an alkaline solution; compare oxide reaction character rather than assuming solubility.",
+        "explanation": "Use combined evidence without claiming all metals or oxides have identical properties."
+      },
+      "terms": [
+        "metal",
+        "non-metal",
+        "conductivity",
+        "oxide",
+        "basic",
+        "acidic",
+        "hydrogen",
+        "graphite"
+      ],
+      "commonMistakes": [
+        "A basic oxide and an alkaline solution are different claims."
+      ]
     }
   ],
   "status": "source-checked",

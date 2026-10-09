@@ -3,14 +3,15 @@ import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
 import inventory from '../research/syllabus/4CH1-states-and-mixtures.json' with { type: 'json' };
 import review from '../research/teaching-reviews/4CH1-states-mixtures-2026-10-09.json' with { type: 'json' };
+import current from '../research/teaching-reviews/4CH1-principles-foundations-2026-10-09.json' with { type: 'json' };
 import source from '../research/reviews/2026-10-09-chemistry-states-teaching-source.json' with { type: 'json' };
 import note from '../content/notes/chemistry.json' with { type: 'json' };
 
-void test('states-mixtures teaching promotes thirteen identities while preserving nine later partial rows', () => {
+void test('historical thirteen-point states review is preserved in the later combined foundations review', () => {
   assert.equal(review.points.length, 13);
   assert.equal(review.points.reduce((n,p) => n+p.requirements.length,0), 39);
-  assert.equal(inventory.points.filter((p) => p.teachingCoverage === 'complete').length,13);
-  assert.ok(inventory.points.slice(13).every((p) => p.teachingCoverage === 'partial' && !p.substatementAuditComplete));
+  assert.equal(inventory.points.filter((p) => p.teachingCoverage === 'complete').length,22);
+  assert.deepEqual(current.points.slice(0,13),review.points);
   assert.deepEqual(inventory.points.filter((p) => p.components.length===1).map((p) => p.reference), ['1.5C','1.6C','1.7C']);
   assert.deepEqual(review.sourceVisualPages,[17,18]);
   assert.equal(review.humanReviewed,false);
@@ -54,13 +55,13 @@ import json,shutil,sys,tempfile
 from pathlib import Path
 src=Path.cwd();sys.path.insert(0,str(src/'scripts'))
 from teaching_review import validate_inventory_completion
-ip='research/syllabus/4CH1-states-and-mixtures.json';rp='research/teaching-reviews/4CH1-states-mixtures-2026-10-09.json'
+ip='research/syllabus/4CH1-states-and-mixtures.json';rp='research/teaching-reviews/4CH1-principles-foundations-2026-10-09.json'
 with tempfile.TemporaryDirectory() as d:
  root=Path(d)
- for p in [ip,rp,'research/curriculum-audits/4CH1-states-and-mixtures.json','content/notes/chemistry.json']:
+ for p in [ip,rp,'research/curriculum-audits/4CH1-states-and-mixtures.json','research/curriculum-audits/4CH1-atoms-and-periodic-table.json','content/notes/chemistry.json']:
   t=root/p;t.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(src/p,t)
  shutil.copytree(src/'public/diagrams',root/'public/diagrams')
- inv=json.loads((root/ip).read_text());assert len(validate_inventory_completion(root,inv))==13
+ inv=json.loads((root/ip).read_text());assert len(validate_inventory_completion(root,inv))==22
  mutations=[
  ('public/diagrams/chemistry-particle-evidence.svg',lambda b:b.replace(b'Atom type B',b'Atom type A')),
  ('public/diagrams/chemistry-solubility-evidence.svg',lambda b:b.replace(b'cy="154.8"',b'cy="110"')),
