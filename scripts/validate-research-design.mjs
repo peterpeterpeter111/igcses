@@ -261,7 +261,7 @@ for (const document of pilot.documents) {
 }
 check('authored teaching completion requires current evidence and distinct readiness scope', () => {
   const report = JSON.parse(execFileSync('python3', ['scripts/teaching_review.py'], { encoding: 'utf8' }));
-  assert.equal(report.completeAuthoredTeachingPoints, 26);
+  assert.equal(report.completeAuthoredTeachingPoints, 29);
 });
 console.log(
   JSON.stringify(

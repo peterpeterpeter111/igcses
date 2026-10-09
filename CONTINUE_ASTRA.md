@@ -1,3 +1,7 @@
+# Latest phase — 9 October 2026: organism groups
+
+Read research/checkpoints/2026-10-09-ORGANISM-GROUPS.md first. Biology1.1–1.4 now have all34 authored-teaching clause decisions; totals29 complete agent-reviewed teaching statements,36 partial chapters,1,077 sections,683 original exercises,1,388 numbered links. Whole chapters/exam readiness remain separate.251 tests/types/lint/17research/evidence/isolatedD1/build/public130files pass. Commit/sync and publish the exact saved source, then continue curriculum, remaining five paper-source gates and examiner bank; AI last. Two processed English sources/seven pairs/254 detailed tasks;17 provisional families/22 versions/seven offline runtimes, zero active exam templates/liveAI. Preserve history/UI/private evidence; no reset; checkpoint/pause at5% in either allowance. Previous pause entries are historical.
+
 # PAUSED — 9 October 2026
 
 Final allowance4%five-hour/30%weekly. Read research/checkpoints/2026-10-09-SAVED-RELEASE-AND-HANDOFF.md and its resume prompt first. Resume only above5%inbothwindows; noreset. Latest applicationb1da181 is privatelypublished; laterdocs preserve the finalhand-off.
