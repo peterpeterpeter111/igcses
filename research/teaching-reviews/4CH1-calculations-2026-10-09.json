@@ -1,0 +1,363 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4CH1",
+  "documentId": "4CH1-spec",
+  "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "sourceVisualPages": [
+    19
+  ],
+  "sourcePrintedPages": [
+    13
+  ],
+  "reviewDate": "2026-10-09",
+  "reviewer": "Codex source and authored-teaching review",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "authored-teaching-coverage",
+  "policyVersion": 1,
+  "practicalTrialsPerformed": false,
+  "examTemplateCalibrationComplete": false,
+  "noteRef": "content/notes/chemistry.json",
+  "inventorySha256": "bba67ab6bf94dda76d53aead52dd45a8456cec333d8270cc439850012fa1fb06",
+  "auditRef": "research/curriculum-audits/4CH1-formulae-and-calculations.json",
+  "auditSha256": "6a524d4129e1eb1ec9504d7d750f9916c7d0eff3e83008cbb513401e845cebee",
+  "diagramSha256": {
+    "/diagrams/chemistry-crucible-mass-evidence.svg": "156eb59509433103f72dd24b339b8090344ddea32ed71533dba5d3d0ae447f14"
+  },
+  "limitations": [
+    "1.25 remains partial until all prescribed reaction families are audited; broader chemistry and whole Principles chapter unfinished.",
+    "Invented arithmetic/data/models, no actual experiments or learner/examiner trials; supervised combustion is one allowed1.36route.",
+    "1.34C/1.35C remainPaper2Conly; original fixed practice is not an active generative template."
+  ],
+  "points": [
+    {
+      "pointId": "4CH1:issue3:1.23",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.23:r1",
+          "verdict": "approved",
+          "judgement": "Independent unnamed X/Y/Z configuration comparison uses equal main-group outer electron count, not equal shell count; lithium/sodium/potassium behaviour and transition restriction checked.",
+          "assessmentSectionId": "group-behaviour-comparison-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.23:r2",
+          "verdict": "approved",
+          "judgement": "X/Y both commonly lose one electron but are not claimed to react at identical rates; full-shell Z comparison prevents grouping by total electron count.",
+          "assessmentSectionId": "group-behaviour-comparison-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "groups-and-noble-gases": "158ba6149a789b8ebe21ece91afae9851f183030396cc0592bfc70553a7edc6d",
+        "group-behaviour-comparison-evidence": "2f02e8ef79197ac6af3606715c628f5c14249ca78d988fb25c588a12e058cbfd"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.24",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.24:r1",
+          "verdict": "approved",
+          "judgement": "Independent helium/neon/beryllium contrast connects low ordinary reactivity to a full outer shell, with no absolute never-react claim.",
+          "assessmentSectionId": "group-behaviour-comparison-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.24:r2",
+          "verdict": "approved",
+          "judgement": "Helium first shell full at2 is distinguished from beryllium second shell2; Group0 exception checked against own source.",
+          "assessmentSectionId": "group-behaviour-comparison-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "groups-and-noble-gases": "158ba6149a789b8ebe21ece91afae9851f183030396cc0592bfc70553a7edc6d",
+        "group-behaviour-comparison-evidence": "2f02e8ef79197ac6af3606715c628f5c14249ca78d988fb25c588a12e058cbfd"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.26",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.26:r1",
+          "verdict": "approved",
+          "judgement": "Independent Al₂(SO₄)₃ counts2/3/12, Mg(OH)₂ counts1/2/2 and both relative masses342/58 reconstructed; existing hydrated formula atom-count explanation retained.",
+          "assessmentSectionId": "formula-and-amount-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.26:r2",
+          "verdict": "approved",
+          "judgement": "Supplied atomic masses yield unitless Mr342/58; no substitution of a mole mass unit into the relative quantity.",
+          "assessmentSectionId": "formula-and-amount-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "relative-formula-mass": "e8316459c34778ac81385a6533964686d1569ff4ad66a6959052ff5fdfe79a10",
+        "formula-and-amount-evidence": "d7925a54f4a2b349d701a4c7a4a1a49c300125d6e14cc25c1af483422551b097"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.27",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.27:r1",
+          "verdict": "approved",
+          "judgement": "Mole explicitly the unit of amount, independent of fixed mass; original90g water and differently-massed salt examples checked.",
+          "assessmentSectionId": "formula-and-amount-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.27:r2",
+          "verdict": "approved",
+          "judgement": "Specified formula units, water molecules and H/O atom amounts distinguished;0.0200mol aluminium sulfate contains0.240mol O atoms.",
+          "assessmentSectionId": "formula-and-amount-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "moles-and-mass": "0307b0ad716d0480da0460ec86c59f93d4a30afb262a021b1fcebf31ebcb9171",
+        "formula-and-amount-evidence": "d7925a54f4a2b349d701a4c7a4a1a49c300125d6e14cc25c1af483422551b097"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.28",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.28:r1",
+          "verdict": "approved",
+          "judgement": "Relative mass unitless versus g/mol molar mass explicitly distinguished and checked for bracketed formulae.",
+          "assessmentSectionId": "formula-and-amount-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.28:r2",
+          "verdict": "approved",
+          "judgement": "Independent0.090kg→90g→5mol H₂O reconstruction includes entity amounts10molH/5molO.",
+          "assessmentSectionId": "formula-and-amount-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.28:r3",
+          "verdict": "approved",
+          "judgement": "Independent nM yields6.84g aluminium sulfate and1.45g magnesium hydroxide;0.0500mol H atoms in latter, not mass.",
+          "assessmentSectionId": "formula-and-amount-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "moles-and-mass": "0307b0ad716d0480da0460ec86c59f93d4a30afb262a021b1fcebf31ebcb9171",
+        "formula-and-amount-evidence": "d7925a54f4a2b349d701a4c7a4a1a49c300125d6e14cc25c1af483422551b097"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.29",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.29:r1",
+          "verdict": "approved",
+          "judgement": "Independent supplied experimental carbon:oxygen mass ratio12:32 scales3:8 with11g product, only under complete reaction/identity assumptions.",
+          "assessmentSectionId": "reacting-mass-and-yield-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.29:r2",
+          "verdict": "approved",
+          "judgement": "Independent limiting capacities Al0.200/2 versus Cl₂0.150/3 give13.35g maximum,2.70g excess Al; practice exact Mg:O₂ ratio yields20g MgO.",
+          "assessmentSectionId": "reacting-mass-and-yield-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.29:r3",
+          "verdict": "approved",
+          "judgement": "Invented repeated total masses subtract identical apparatus;0.72gmetal/0.48ggain reconstructs0.030mol each with purity/retention assumptions explicit.",
+          "assessmentSectionId": "crucible-mass-and-bias-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "reacting-masses": "3931cb5932a9dea3276f028042a5d68f3bc95696bf677d97d849b6366abb2032",
+        "experimental-formula-evidence": "751d10fb38a8db02848c834b151106c5aa02bb4552ee7b0ef3454dc26caaafd1",
+        "reacting-mass-and-yield-evidence": "fe2efcc5fc3bc3ebe64639ba844982f034c409021fccdbf6ff6a8b43abb5d77e",
+        "crucible-mass-and-bias-evidence": "9c38318481d1f05da364494c70400a0e6e29e5b242955676e7f3a6795b50881f"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.30",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.30:r1",
+          "verdict": "approved",
+          "judgement": "Independent10.68/13.35=80% and18/20=90% use the same intended product numerator/denominator; neither reactant total substituted.",
+          "assessmentSectionId": "reacting-mass-and-yield-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.30:r2",
+          "verdict": "approved",
+          "judgement": "Incomplete conversion/product loss/side reactions and wet impurity distinguished;90% does not uniquely diagnose a loss cause, previous115% wet example retained.",
+          "assessmentSectionId": "reacting-mass-and-yield-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "percentage-yield": "7685875d4b41cec0349315545abaea60ad3a781f2e9ef1254abd7055a01ffdc5",
+        "reacting-mass-and-yield-evidence": "fe2efcc5fc3bc3ebe64639ba844982f034c409021fccdbf6ff6a8b43abb5d77e"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.31",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.31:r1",
+          "verdict": "approved",
+          "judgement": "Independent invented Fe oxide2.80→4.00g yieldsO1.20g and amounts0.0500:0.0750=2:3; CuO reduction10→8g identifiesO2g. No universal iron-oxide or mass-gain claim.",
+          "assessmentSectionId": "empirical-and-hydration-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.31:r2",
+          "verdict": "approved",
+          "judgement": "Independent ideal reduction with2.25g water minus2g oxide oxygen gives0.25gH; atom amounts0.25:0.125=2:1. Complete collection/no moisture assumptions explicitly required.",
+          "assessmentSectionId": "empirical-and-hydration-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.31:r3",
+          "verdict": "approved",
+          "judgement": "Independent MgSO₄4.92→2.40 giveswater2.52/18 divided bysalt2.40/120=7; practiceCuSO₄3.75→2.40 gives5, distinct salts not copied into one formula.",
+          "assessmentSectionId": "empirical-and-hydration-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "experimental-formula-evidence": "751d10fb38a8db02848c834b151106c5aa02bb4552ee7b0ef3454dc26caaafd1",
+        "water-of-crystallisation": "329dd4b5d45fa50c91110efff6cfe1a00b1fcc1a5e435ab234cb09521b9dfbc1",
+        "magnesium-oxide-investigation": "05ecf4bc3e5510c8cff19c986dfb19d882f33bb544c5c104ccfd14957b0651bd",
+        "empirical-and-hydration-evidence": "f3a49a4ff278335754c8b7c621fd3b3074ecd7c3feb261f513ff06f62d4f59ad"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.32",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.32:r1",
+          "verdict": "approved",
+          "judgement": "Independent Fe oxide2:3 and percentage80C/20H→CH₃ establish simplest whole-number atom ratios, not mass ratios.",
+          "assessmentSectionId": "empirical-and-hydration-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.32:r2",
+          "verdict": "approved",
+          "judgement": "Independent CH₃ multiplier2→C₂H₆ and CH₂ multiplier3→C₃H₆ identify actual molecule atom counts; formula-unit caveat for ionic substances retained.",
+          "assessmentSectionId": "empirical-and-hydration-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "empirical-formulae": "cc7fd58a15ed88b4333610ed0ef6108f438e531277b9a3dff4a4ebc6eac85292",
+        "molecular-formulae": "0c551e5434aa4e1724d52352c41829468020d3b6d9f03661d5aae384e90fad06",
+        "empirical-and-hydration-evidence": "f3a49a4ff278335754c8b7c621fd3b3074ecd7c3feb261f513ff06f62d4f59ad"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.33",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.33:r1",
+          "verdict": "approved",
+          "judgement": "Independent Fe ratio1:1.5 requires whole-ratio multiplication by2, not rounding1.5 alone; mass source/uncertainty assumptions explicit.",
+          "assessmentSectionId": "empirical-and-hydration-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.33:r2",
+          "verdict": "approved",
+          "judgement": "Independent80%/20% hydrocarbon with suppliedAr yields6⅔:20=1:3 on100g basis; rounded percentages not falsely exact empirical measurements.",
+          "assessmentSectionId": "empirical-and-hydration-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.33:r3",
+          "verdict": "approved",
+          "judgement": "Independent Mr30/15=2 and42/14=3 multiply every subscript; prior noninteger20/15 rejection retained.",
+          "assessmentSectionId": "empirical-and-hydration-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "empirical-formulae": "cc7fd58a15ed88b4333610ed0ef6108f438e531277b9a3dff4a4ebc6eac85292",
+        "molecular-formulae": "0c551e5434aa4e1724d52352c41829468020d3b6d9f03661d5aae384e90fad06",
+        "experimental-formula-evidence": "751d10fb38a8db02848c834b151106c5aa02bb4552ee7b0ef3454dc26caaafd1",
+        "water-of-crystallisation": "329dd4b5d45fa50c91110efff6cfe1a00b1fcc1a5e435ab234cb09521b9dfbc1",
+        "empirical-and-hydration-evidence": "f3a49a4ff278335754c8b7c621fd3b3074ecd7c3feb261f513ff06f62d4f59ad"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.34C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.34C:r1",
+          "verdict": "approved",
+          "judgement": "Independent n=cV and rearrangements c=n/V,V=n/c checked;35cm³ acid yields0.00420mol, units and total solution volume explicit.",
+          "assessmentSectionId": "solution-and-gas-quantity-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.34C:r2",
+          "verdict": "approved",
+          "judgement": "Independent cm³/1000 conversion for35/40cm³ gives0.0350/0.0400dm³; amounts0.00420/0.00600mol checked.",
+          "assessmentSectionId": "solution-and-gas-quantity-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.34C:r3",
+          "verdict": "approved",
+          "judgement": "Separate unchanged-amount dilution final140cm³ gives0.0300mol/dm³; reverse final120cm³ checked, not added solvent or consumed acid.",
+          "assessmentSectionId": "solution-and-gas-quantity-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "solution-concentration": "54e7802ad141eef4401a50fa0f72ad2c845e2f6e884bbdfec78b074b3f899cac",
+        "solution-and-gas-quantity-evidence": "7cf8f7b54b006c7e2484b8b7067f97631f2f5c28a80e784b0a7a0aa55ab6dd23"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.35C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.35C:r1",
+          "verdict": "approved",
+          "judgement": "Own source24dm³/24000cm³ at rtp preserved; matched-condition assumption explicit, no hot-gas unchanged-volume claim.",
+          "assessmentSectionId": "solution-and-gas-quantity-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.35C:r2",
+          "verdict": "approved",
+          "judgement": "Independent600cm³/24000=0.0250mol CO₂, mass1.10g and acid-derived H₂ volumes50.4/72cm³ verified.",
+          "assessmentSectionId": "solution-and-gas-quantity-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.35C:r3",
+          "verdict": "approved",
+          "judgement": "Independent2HCl:1H₂ ratio with excessMg prevents factor2 error; conditions/leakage/dissolution/water-vapour limits separated from ideal supplied data.",
+          "assessmentSectionId": "solution-and-gas-quantity-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "gas-volume-at-rtp": "4996096fb870c5a48ad85603ba9a3179f474e468984c648b8cf3dad281bb96f3",
+        "solution-and-gas-quantity-evidence": "7cf8f7b54b006c7e2484b8b7067f97631f2f5c28a80e784b0a7a0aa55ab6dd23"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.36",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.36:r1",
+          "verdict": "approved",
+          "judgement": "Own source explicitly permits combustion OR reduction. Original crucible/lid/support/heat plus separate cooled balance diagram and existing practical method checked against Pearson apparatus page; teacher controls lid/air/heating and protection, no actual trial claim.",
+          "assessmentSectionId": "crucible-mass-and-bias-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.36:r2",
+          "verdict": "approved",
+          "judgement": "Independent two table scenarios produceMg/O0.030/0.030 and0.020/0.020; same apparatus subtracted; mass resolution and source of oxygen identified.",
+          "assessmentSectionId": "crucible-mass-and-bias-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.36:r3",
+          "verdict": "approved",
+          "judgement": "First19.56 reading precedes plateau19.62/19.62; oxygen ratio0.875 not forced into a neat formula. Cool before repeat weighing; constant mass not pure-product proof.",
+          "assessmentSectionId": "crucible-mass-and-bias-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.36:r4",
+          "verdict": "approved",
+          "judgement": "Escaped oxide underestimates oxygen gain/O:Mg, sealed lid limits air, possible nitride/initial oxide qualified; repeat completion evidence cannot remove systematic bias.",
+          "assessmentSectionId": "crucible-mass-and-bias-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "magnesium-oxide-investigation": "05ecf4bc3e5510c8cff19c986dfb19d882f33bb544c5c104ccfd14957b0651bd",
+        "crucible-mass-and-bias-evidence": "9c38318481d1f05da364494c70400a0e6e29e5b242955676e7f3a6795b50881f"
+      }
+    }
+  ]
+}

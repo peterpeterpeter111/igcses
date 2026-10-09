@@ -2522,6 +2522,267 @@
       "commonMistakes": [
         "A basic oxide and an alkaline solution are different claims."
       ]
+    },
+    {
+      "id": "group-behaviour-comparison-evidence",
+      "title": "Compare outer shells before predicting group behaviour",
+      "points": [
+        "1.23",
+        "1.24"
+      ],
+      "paragraphs": [
+        "For main-group elements, a common number of outer-shell electrons helps explain similar chemical properties: reactions involve changes to those electrons. This is a pattern in behaviour, not a promise of identical rates or a rule that every element in a group forms only one ion.",
+        "Compare lithium (2,1), sodium (2,8,1) and potassium (2,8,8,1). Each has one outer electron and commonly loses it to form a +1 ion. Their different occupied shells and attraction to the outer electron help explain why their reactivities are not identical. Do not use these configurations to predict every transition-metal charge.",
+        "Helium has configuration 2, neon 2,8 and argon 2,8,8. Their outer shells are full in the model used here, so they do not readily gain, lose or share electrons in ordinary school examples. Helium belongs to Group 0 despite having two electrons; its first shell is full at two.",
+        "A comparison problem can give configurations without names. Count the outer electrons to find the main-group similarity, then check whether that shell is full. Noble gases have low reactivity; that statement does not assert that no noble-gas compound can ever exist."
+      ],
+      "example": {
+        "question": "X has 2,8,1; Y has 2,8,8,1; Z has 2,8,8. Which two have similar chemical properties, and why?",
+        "steps": [
+          "X and Y each have one outer electron, whereas Z has a full outer shell.",
+          "X and Y are main-group metals that commonly lose one electron to form +1 ions.",
+          "Z is a noble gas and does not readily react. X and Y need not react at the same rate."
+        ],
+        "explanation": "Identify the substance and counted entity, use consistent units, then test the conclusion against the stated assumptions."
+      },
+      "practice": {
+        "question": "Compare helium (2), beryllium (2,2) and neon (2,8). Which two do not readily react, and why is beryllium different?",
+        "answer": "Helium and neon each have a full outer shell. Beryllium has two electrons in a second shell that is not full; it is a Group 2 metal, not a noble gas. Counting two electrons without identifying the shell gives the wrong conclusion.",
+        "explanation": "Show the evidence that supports the conclusion and distinguish an estimate from a measured result."
+      },
+      "terms": [
+        "outer shell",
+        "main group",
+        "noble gas",
+        "similar chemical properties"
+      ],
+      "commonMistakes": [
+        "Group similarity is not identical reactivity; helium is not in Group 2."
+      ]
+    },
+    {
+      "id": "formula-and-amount-evidence",
+      "title": "Check atom counts and units before using a mole",
+      "points": [
+        "1.26",
+        "1.27",
+        "1.28"
+      ],
+      "paragraphs": [
+        "A mole is the unit of amount of substance, not the name for a particular mass. Specify whether the amount refers to molecules, atoms, ions or formula units. For example, 5 mol of water molecules contains 10 mol of hydrogen atoms and 5 mol of oxygen atoms.",
+        "Count every atom in a formula before adding supplied relative atomic masses. In Al₂(SO₄)₃ there are 2 Al, 3 S and 12 O atoms. With Al=27, S=32 and O=16, Mᵣ=2×27+3×(32+4×16)=342. The relative formula mass has no unit; the corresponding molar mass here is 342 g mol⁻¹.",
+        "Use n=m/M and m=nM with mass in grams and molar mass in g mol⁻¹. With H=1 and O=16, 0.090 kg of water is 90 g, so its amount is 90/18=5.0 mol of water molecules. Do not divide a kilogram input by a molar mass given in g mol⁻¹ without first converting the mass to grams.",
+        "A coefficient counts complete formula units or molecules; a subscript is part of the substance’s identity. Two mol of Al₂(SO₄)₃ contains 4 mol of Al atoms, 6 mol of S atoms and 24 mol of O atoms. For an ionic lattice, refer to formula units rather than separate salt molecules."
+      ],
+      "example": {
+        "question": "Using Al=27, S=32 and O=16, find the mass of 0.0200 mol of Al₂(SO₄)₃ and the amount of oxygen atoms it contains.",
+        "steps": [
+          "Mᵣ=342, so M=342 g mol⁻¹.",
+          "Mass=0.0200×342=6.84 g.",
+          "Each formula unit has 12 oxygen atoms, so their amount is 12×0.0200=0.240 mol."
+        ],
+        "explanation": "Identify the substance and counted entity, use consistent units, then test the conclusion against the stated assumptions."
+      },
+      "practice": {
+        "question": "Using Mg=24, O=16 and H=1, find the mass of 0.0250 mol Mg(OH)₂ and the amount of H atoms it contains.",
+        "answer": "Mᵣ=24+2×(16+1)=58; M=58 g mol⁻¹. Mass=0.0250×58=1.45 g. The amount of H atoms is 2×0.0250=0.0500 mol. The formula contains two O and two H atoms, not two Mg atoms.",
+        "explanation": "Show the evidence that supports the conclusion and distinguish an estimate from a measured result."
+      },
+      "terms": [
+        "relative formula mass",
+        "molar mass",
+        "formula unit",
+        "amount of substance"
+      ],
+      "commonMistakes": [
+        "Relative formula mass is unitless; molar mass in this calculation has units g mol⁻¹."
+      ]
+    },
+    {
+      "id": "reacting-mass-and-yield-evidence",
+      "title": "Choose the limiting amount before calculating yield",
+      "points": [
+        "1.29",
+        "1.30"
+      ],
+      "paragraphs": [
+        "A balanced equation specifies amount ratios. For the supplied reaction 2Al+3Cl₂→2AlCl₃, two mol Al react with three mol chlorine molecules. The coefficients do not mean that 2 g Al reacts with 3 g Cl₂. This is a calculation scenario, not a practical instruction.",
+        "When both starting amounts are given, divide each available amount by its coefficient and choose the smaller value. That reaction extent determines the maximum product amount. An excess reactant remains; its whole starting mass cannot all be counted as product.",
+        "Experimental reacting-mass ratios also work when the substances and completeness of reaction are established. A supplied complete-reaction result of 12 g carbon combining with 32 g oxygen scales to 3 g carbon and 8 g oxygen, producing 11 g carbon dioxide. These are model inputs, not measurements made here.",
+        "Percentage yield compares recovered product with the theoretical amount of that same product: actual/theoretical×100. Lost product, incomplete conversion or competing reactions can reduce recovery. An apparently excessive yield can reflect wet or impure material; the percentage alone cannot diagnose a cause."
+      ],
+      "example": {
+        "question": "A supplied reaction uses 5.40 g Al and 10.65 g Cl₂. Use Al=27 and Cl=35.5. For 2Al+3Cl₂→2AlCl₃, find the maximum product mass, unreacted Al and percentage yield if 10.68 g dry AlCl₃ is recovered.",
+        "steps": [
+          "n(Al)=5.40/27=0.200 mol; n(Cl₂)=10.65/71=0.150 mol. Compare 0.200/2=0.100 with 0.150/3=0.0500; chlorine limits.",
+          "Product amount=2×0.0500=0.100 mol. M(AlCl₃)=27+3×35.5=133.5 g mol⁻¹, giving 13.35 g theoretical product.",
+          "Al consumed=0.100 mol or 2.70 g; 2.70 g Al remains. Mass check: 2.70+10.65=13.35 g.",
+          "Percentage yield=10.68/13.35×100=80.0%."
+        ],
+        "explanation": "Identify the substance and counted entity, use consistent units, then test the conclusion against the stated assumptions."
+      },
+      "practice": {
+        "question": "For 2Mg+O₂→2MgO, use Mg=24 and O=16. A calculation starts with 12.0 g Mg and 8.00 g O₂ and recovers 18.0 g pure dry MgO. Find the theoretical mass and percentage yield. Does 90% yield prove incomplete reaction?",
+        "answer": "Amounts are 0.500 mol Mg and 0.250 mol O₂, exactly the required 2:1 ratio. Maximum MgO is 0.500 mol×40=20.0 g. Yield is 18.0/20.0×100=90.0%. No: product loss or another cause can also reduce recovery; further evidence is needed.",
+        "explanation": "Show the evidence that supports the conclusion and distinguish an estimate from a measured result."
+      },
+      "terms": [
+        "limiting reactant",
+        "coefficient ratio",
+        "theoretical yield",
+        "percentage yield"
+      ],
+      "commonMistakes": [
+        "Check which reactant limits before calculating theoretical yield; recovered product mass is not starting reactant mass."
+      ]
+    },
+    {
+      "id": "empirical-and-hydration-evidence",
+      "title": "Separate element masses from water and apparatus",
+      "points": [
+        "1.31",
+        "1.32",
+        "1.33"
+      ],
+      "paragraphs": [
+        "An empirical formula gives the simplest whole-number atom ratio; a molecular formula gives the actual atom counts in one molecule. Convert each element mass into an amount, divide by the smallest and multiply all ratios by the same factor when needed. Percentage composition can use a consistent 100 g basis.",
+        "In an invented oxide result, 2.80 g Fe gives 4.00 g oxide. Oxygen gained is 1.20 g. With Fe=56 and O=16, amounts are 0.0500 and 0.0750 mol, giving Fe:O=2:3 and empirical Fe₂O₃. This conclusion assumes the gain is oxygen and the product is pure; it is not a general rule that every iron oxide has that formula.",
+        "For a separate idealised reduction, 10.0 g CuO becomes 8.00 g Cu and 2.25 g pure water is collected. If all 2.00 g oxygen removed enters that water, hydrogen mass is 0.250 g. With H=1 and O=16, H:O amounts are 0.250:0.125=2:1, supporting H₂O. Complete collection and no initial moisture are essential assumptions; this is data analysis, not instructions for a hydrogen demonstration.",
+        "A hydrated salt calculation compares the amount of lost water with the amount of remaining anhydrous salt. A made-up MgSO₄·xH₂O sample of 4.92 g leaves 2.40 g MgSO₄ under conditions that remove only hydration water. Using Mg=24, S=32, O=16 and H=1, salt amount=2.40/120=0.0200 mol and water amount=2.52/18=0.140 mol, so x=7. Decomposition, incomplete drying, splashing or water reabsorption can invalidate the mass-loss model.",
+        "For a molecular compound containing 80.0% C and 20.0% H using C=12 and H=1, the amount ratio on a 100 g basis is (80/12):(20/1)=1:3. Its empirical formula is CH₃. With supplied Mᵣ=30, the multiplier is 30/15=2 and the molecular formula is C₂H₆. A markedly non-integer multiplier needs a data check, not an invented formula."
+      ],
+      "example": {
+        "question": "A hydrated MgSO₄ sample weighs 4.92 g and leaves 2.40 g anhydrous salt. Find x using Mg=24, S=32, O=16 and H=1, and state one condition needed for the calculation.",
+        "steps": [
+          "Water lost=4.92−2.40=2.52 g; n(H₂O)=2.52/18=0.140 mol.",
+          "M(MgSO₄)=120 g mol⁻¹; n(salt)=2.40/120=0.0200 mol.",
+          "x=0.140/0.0200=7, giving MgSO₄·7H₂O. The residue must be the intended anhydrous salt and only water should have been lost."
+        ],
+        "explanation": "Identify the substance and counted entity, use consistent units, then test the conclusion against the stated assumptions."
+      },
+      "practice": {
+        "question": "Using Cu=64, S=32, O=16 and H=1, a 3.75 g CuSO₄·xH₂O sample leaves 2.40 g pure anhydrous CuSO₄. Find x. Separately, a hydrocarbon has empirical CH₂ and supplied Mᵣ=42; find its molecular formula using C=12. Can a water mass below the real value bias x upwards?",
+        "answer": "Water lost=1.35 g, so n(water)=0.0750 mol. n(CuSO₄)=2.40/160=0.0150 mol; x=5. CH₂ has relative mass 14, so 42/14=3 and the molecular formula is C₃H₆. With the salt amount otherwise correct, an underestimated water amount biases x downwards, not upwards.",
+        "explanation": "Show the evidence that supports the conclusion and distinguish an estimate from a measured result."
+      },
+      "terms": [
+        "empirical formula",
+        "molecular formula",
+        "water of crystallisation",
+        "mass difference"
+      ],
+      "commonMistakes": [
+        "Use oxygen atom mass 16 for an oxide ratio; gas molecule mass 32 answers a different question."
+      ]
+    },
+    {
+      "id": "solution-and-gas-quantity-evidence",
+      "title": "Connect solution amount to a gas volume (Paper 2C)",
+      "points": [
+        "1.34C",
+        "1.35C"
+      ],
+      "paragraphs": [
+        "Use c=n/V with solution volume V in dm³, amount n in mol and concentration c in mol dm⁻³. Rearranging gives n=cV and V=n/c. Convert cm³ to dm³ by dividing by 1000. The volume is the total solution volume, not merely solvent added.",
+        "For dilution with no solute lost or reacting, the amount stays constant. A 35.0 cm³ portion of 0.120 mol dm⁻³ solution contains 0.00420 mol. Making it up to a final 140.0 cm³ gives c=0.00420/0.1400=0.0300 mol dm⁻³. Adding 140.0 cm³ of water would describe a different operation.",
+        "At the specified room temperature and pressure, use the syllabus gas molar volume 24 dm³ mol⁻¹ or 24 000 cm³ mol⁻¹. A dry pure gas volume of 600 cm³ at those calculation conditions corresponds to 0.0250 mol. If the gas is CO₂ with C=12 and O=16, that amount has mass 1.10 g.",
+        "For a supplied gas-producing equation, calculate the reactant amount first and then use its coefficient ratio. Check which reactant is in excess. The fixed rtp conversion cannot predict an unmatched hot or differently pressurised collected volume; leaks, dissolved gas and water vapour can complicate an actual measurement. These solution and gas calculations are Paper 2C content."
+      ],
+      "example": {
+        "question": "The supplied equation is Mg+2HCl→MgCl₂+H₂. A calculation uses excess Mg and 35.0 cm³ of 0.120 mol dm⁻³ HCl. Predict the dry hydrogen volume at rtp for complete reaction.",
+        "steps": [
+          "HCl solution volume=0.0350 dm³; n(HCl)=0.120×0.0350=0.00420 mol.",
+          "HCl:H₂ ratio=2:1, so n(H₂)=0.00210 mol.",
+          "V(H₂)=0.00210×24=0.0504 dm³=50.4 cm³ at rtp."
+        ],
+        "explanation": "Identify the substance and counted entity, use consistent units, then test the conclusion against the stated assumptions."
+      },
+      "practice": {
+        "question": "A 40.0 cm³ portion of 0.150 mol dm⁻³ HCl reacts completely with excess Mg using the same equation. Find the predicted hydrogen volume at rtp. What final solution volume would dilute the original unreacted acid portion to 0.0500 mol dm⁻³?",
+        "answer": "n(HCl)=0.150×0.0400=0.00600 mol; n(H₂)=0.00300 mol, giving 0.0720 dm³=72.0 cm³. For a separate dilution of the unchanged acid amount, V=n/c=0.00600/0.0500=0.120 dm³=120 cm³ final solution. The dilution is not performed on acid already consumed in the reaction.",
+        "explanation": "Show the evidence that supports the conclusion and distinguish an estimate from a measured result."
+      },
+      "terms": [
+        "molar concentration",
+        "solution volume",
+        "gas molar volume",
+        "rtp"
+      ],
+      "commonMistakes": [
+        "A volume calculation must retain conditions and use the correct mole ratio."
+      ]
+    },
+    {
+      "id": "crucible-mass-and-bias-evidence",
+      "title": "Read repeated crucible masses before inferring an oxide",
+      "points": [
+        "1.29",
+        "1.31",
+        "1.36"
+      ],
+      "paragraphs": [
+        "The apparatus model separates the heated crucible from the balance used after cooling. A loose lid helps retain product while controlled air admission supplies oxygen. The teacher controls the heating and handling. This is an authored explanation of the combustion route for 1.36, not a claim that a practical was performed.",
+        "The invented table uses one crucible and lid throughout. Metal mass is initial total minus empty apparatus. Oxygen gain is final cooled total minus initial total. Repeated cooled totals can show whether the mass has stabilised at the balance resolution; they cannot by themselves certify a pure product.",
+        "From 18.42 g empty apparatus and 19.14 g with Mg, metal mass is 0.72 g. The first cooled product mass of 19.56 g is not the final plateau. The last two readings are 19.62 g, giving oxygen gain 0.48 g. With Mg=24 and O=16, amounts are both 0.030 mol and support MgO under the complete-reaction, pure-product assumptions.",
+        "Escaped oxide lowers the final total, so the apparent oxygen gain and oxygen:magnesium ratio become too small. Keeping the lid sealed can restrict oxygen supply and leave incomplete reaction. Magnesium nitride formation or initial oxide can also complicate the interpretation; constant mass is not proof that all gain is oxygen.",
+        "If an instrument specification gives each reading a possible error of ±0.005 g, subtracting two readings has a worst-case error of ±0.010 g. That is a stated bound, not a statistical confidence interval or evidence that the balance is correctly calibrated. Repeat readings improve the completion check but do not remove systematic error."
+      ],
+      "example": {
+        "question": "Use the invented table to infer the final formula using Mg=24 and O=16. Why would stopping after the first heating give a different ratio?",
+        "steps": [
+          "Initial Mg=19.14−18.42=0.72 g; final oxide=19.62−18.42=1.20 g.",
+          "Oxygen gain=19.62−19.14=0.48 g. n(Mg)=0.72/24=0.030 mol; n(O)=0.48/16=0.030 mol: 1:1, supporting MgO.",
+          "After only the first heating, oxygen gain would be 0.42 g and n(O)=0.02625 mol. O:Mg=0.875:1, rather than 1:1. The later rise shows that first reading had not stabilised; an incorrect neat formula should not be forced."
+        ],
+        "explanation": "Identify the substance and counted entity, use consistent units, then test the conclusion against the stated assumptions."
+      },
+      "practice": {
+        "question": "A second invented run has empty crucible/lid 21.10 g, initial total 21.58 g and final cooled totals 21.84, 21.90, 21.90 g. Infer the formula using Mg=24 and O=16. Predict the bias if oxide escapes, and explain why constant mass is not enough to prove purity.",
+        "answer": "Mg mass=0.48 g and oxygen gain=0.32 g. Their amounts are 0.020 mol each, supporting MgO. Escaped product underestimates oxygen gain and the inferred O:Mg ratio. A stable reading can still belong to an impure or incompletely interpreted product; chemistry and retention assumptions need separate checks.",
+        "explanation": "Show the evidence that supports the conclusion and distinguish an estimate from a measured result."
+      },
+      "terms": [
+        "crucible",
+        "constant mass",
+        "balance resolution",
+        "systematic error"
+      ],
+      "commonMistakes": [
+        "Use cooled plateau readings and subtract the same apparatus; do not interpret gross totals as element masses."
+      ],
+      "table": {
+        "headers": [
+          "Measurement",
+          "Total mass / g"
+        ],
+        "rows": [
+          [
+            "Empty crucible and lid",
+            "18.42"
+          ],
+          [
+            "Crucible, lid and Mg before heating",
+            "19.14"
+          ],
+          [
+            "After heating 1, cooled",
+            "19.56"
+          ],
+          [
+            "After heating 2, cooled",
+            "19.62"
+          ],
+          [
+            "After heating 3, cooled",
+            "19.62"
+          ]
+        ]
+      },
+      "diagram": {
+        "src": "/diagrams/chemistry-crucible-mass-evidence.svg",
+        "alt": "Original schematic labels a crucible, loose lid, support and heat source separately from a balance used only after cooling.",
+        "caption": "An original apparatus model, not a measured or scale drawing. The balance is used after safe cooling; the teacher controls heating and lid handling."
+      }
     }
   ],
   "status": "source-checked",
@@ -2539,7 +2800,8 @@
       "title": "Pearson: magnesium mass-change apparatus and procedure",
       "url": "https://activeteach-prod.resource.pearson-intl.com/r00/r0035/r003582/r00358258/current/8eb2_changing_mass.pdf",
       "sectionIds": [
-        "magnesium-oxide-investigation"
+        "magnesium-oxide-investigation",
+        "crucible-mass-and-bias-evidence"
       ]
     },
     {

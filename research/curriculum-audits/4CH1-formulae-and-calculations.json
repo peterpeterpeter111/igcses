@@ -5,11 +5,11 @@
   "documentId": "4CH1-spec",
   "specificationIssue": "Issue 3",
   "documentSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
-  "reviewDate": "2026-10-05",
-  "reviewer": "Codex source/logic review",
+  "reviewDate": "2026-10-09",
+  "reviewer": "Codex source and authored-teaching review",
   "reviewerType": "agent",
   "humanReviewed": false,
-  "scope": "Only own-specification1.23–1.36 on visually inspected Issue3 PDF19/printed13. Original partial equations/calculations teaching; not all prescribed reaction families or assessed practical skills.1.34C/1.35C apply only to2C.",
+  "scope": "Only13 identities1.23/1.24 and1.26–1.36 (1.34C/1.35C2Conly),34editorialrequirements complete in authored teaching.1.25 remains partial: complete set of prescribed reactions not audited. Own Issue3PDF19/printed13 visually re-read; whole Principles/learner/exam readiness incomplete.",
   "identifierPolicy": "r suffixes are local editorial audit clauses, not publisher-numbered substatements.",
   "notePath": "content/notes/chemistry.json",
   "parents": [
@@ -23,9 +23,9 @@
         "2C"
       ],
       "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Only own-specification1.23–1.36 on visually inspected Issue3 PDF19/printed13. Original partial equations/calculations teaching; not all prescribed reaction families or assessed practical skills.1.34C/1.35C apply only to2C.",
+      "teachingAuditStatus": "complete",
+      "substatementAuditComplete": true,
+      "scopeNote": "Complete agent-reviewed authored teaching only; original idealised cases and supervised-method explanation. No whole chapter, actual practical/learner trial or examiner-template calibration claimed.",
       "requirements": [
         {
           "id": "4CH1:issue3:1.23:r1",
@@ -35,14 +35,15 @@
             {
               "sectionId": "groups-and-noble-gases",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "group-behaviour-comparison-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4CH1:issue3:1.23:r2",
@@ -52,14 +53,15 @@
             {
               "sectionId": "groups-and-noble-gases",
               "field": "example"
+            },
+            {
+              "sectionId": "group-behaviour-comparison-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         }
       ]
     },
@@ -73,9 +75,9 @@
         "2C"
       ],
       "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Only own-specification1.23–1.36 on visually inspected Issue3 PDF19/printed13. Original partial equations/calculations teaching; not all prescribed reaction families or assessed practical skills.1.34C/1.35C apply only to2C.",
+      "teachingAuditStatus": "complete",
+      "substatementAuditComplete": true,
+      "scopeNote": "Complete agent-reviewed authored teaching only; original idealised cases and supervised-method explanation. No whole chapter, actual practical/learner trial or examiner-template calibration claimed.",
       "requirements": [
         {
           "id": "4CH1:issue3:1.24:r1",
@@ -85,14 +87,15 @@
             {
               "sectionId": "groups-and-noble-gases",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "group-behaviour-comparison-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4CH1:issue3:1.24:r2",
@@ -102,14 +105,15 @@
             {
               "sectionId": "groups-and-noble-gases",
               "field": "practice"
+            },
+            {
+              "sectionId": "group-behaviour-comparison-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         }
       ]
     },
@@ -207,9 +211,9 @@
         "2C"
       ],
       "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Only own-specification1.23–1.36 on visually inspected Issue3 PDF19/printed13. Original partial equations/calculations teaching; not all prescribed reaction families or assessed practical skills.1.34C/1.35C apply only to2C.",
+      "teachingAuditStatus": "complete",
+      "substatementAuditComplete": true,
+      "scopeNote": "Complete agent-reviewed authored teaching only; original idealised cases and supervised-method explanation. No whole chapter, actual practical/learner trial or examiner-template calibration claimed.",
       "requirements": [
         {
           "id": "4CH1:issue3:1.26:r1",
@@ -219,14 +223,15 @@
             {
               "sectionId": "relative-formula-mass",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "formula-and-amount-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4CH1:issue3:1.26:r2",
@@ -236,14 +241,15 @@
             {
               "sectionId": "relative-formula-mass",
               "field": "example"
+            },
+            {
+              "sectionId": "formula-and-amount-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         }
       ]
     },
@@ -257,9 +263,9 @@
         "2C"
       ],
       "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Only own-specification1.23–1.36 on visually inspected Issue3 PDF19/printed13. Original partial equations/calculations teaching; not all prescribed reaction families or assessed practical skills.1.34C/1.35C apply only to2C.",
+      "teachingAuditStatus": "complete",
+      "substatementAuditComplete": true,
+      "scopeNote": "Complete agent-reviewed authored teaching only; original idealised cases and supervised-method explanation. No whole chapter, actual practical/learner trial or examiner-template calibration claimed.",
       "requirements": [
         {
           "id": "4CH1:issue3:1.27:r1",
@@ -269,14 +275,15 @@
             {
               "sectionId": "moles-and-mass",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "formula-and-amount-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4CH1:issue3:1.27:r2",
@@ -286,14 +293,15 @@
             {
               "sectionId": "moles-and-mass",
               "field": "example"
+            },
+            {
+              "sectionId": "formula-and-amount-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         }
       ]
     },
@@ -307,9 +315,9 @@
         "2C"
       ],
       "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Only own-specification1.23–1.36 on visually inspected Issue3 PDF19/printed13. Original partial equations/calculations teaching; not all prescribed reaction families or assessed practical skills.1.34C/1.35C apply only to2C.",
+      "teachingAuditStatus": "complete",
+      "substatementAuditComplete": true,
+      "scopeNote": "Complete agent-reviewed authored teaching only; original idealised cases and supervised-method explanation. No whole chapter, actual practical/learner trial or examiner-template calibration claimed.",
       "requirements": [
         {
           "id": "4CH1:issue3:1.28:r1",
@@ -319,14 +327,15 @@
             {
               "sectionId": "moles-and-mass",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "formula-and-amount-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4CH1:issue3:1.28:r2",
@@ -336,14 +345,15 @@
             {
               "sectionId": "moles-and-mass",
               "field": "example"
+            },
+            {
+              "sectionId": "formula-and-amount-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4CH1:issue3:1.28:r3",
@@ -353,14 +363,15 @@
             {
               "sectionId": "moles-and-mass",
               "field": "practice"
+            },
+            {
+              "sectionId": "formula-and-amount-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         }
       ]
     },
@@ -374,9 +385,9 @@
         "2C"
       ],
       "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Only own-specification1.23–1.36 on visually inspected Issue3 PDF19/printed13. Original partial equations/calculations teaching; not all prescribed reaction families or assessed practical skills.1.34C/1.35C apply only to2C.",
+      "teachingAuditStatus": "complete",
+      "substatementAuditComplete": true,
+      "scopeNote": "Complete agent-reviewed authored teaching only; original idealised cases and supervised-method explanation. No whole chapter, actual practical/learner trial or examiner-template calibration claimed.",
       "requirements": [
         {
           "id": "4CH1:issue3:1.29:r1",
@@ -386,14 +397,15 @@
             {
               "sectionId": "reacting-masses",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "reacting-mass-and-yield-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4CH1:issue3:1.29:r2",
@@ -403,14 +415,15 @@
             {
               "sectionId": "reacting-masses",
               "field": "example"
+            },
+            {
+              "sectionId": "reacting-mass-and-yield-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4CH1:issue3:1.29:r3",
@@ -420,14 +433,15 @@
             {
               "sectionId": "experimental-formula-evidence",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "crucible-mass-and-bias-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         }
       ]
     },
@@ -441,9 +455,9 @@
         "2C"
       ],
       "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Only own-specification1.23–1.36 on visually inspected Issue3 PDF19/printed13. Original partial equations/calculations teaching; not all prescribed reaction families or assessed practical skills.1.34C/1.35C apply only to2C.",
+      "teachingAuditStatus": "complete",
+      "substatementAuditComplete": true,
+      "scopeNote": "Complete agent-reviewed authored teaching only; original idealised cases and supervised-method explanation. No whole chapter, actual practical/learner trial or examiner-template calibration claimed.",
       "requirements": [
         {
           "id": "4CH1:issue3:1.30:r1",
@@ -453,14 +467,15 @@
             {
               "sectionId": "percentage-yield",
               "field": "example"
+            },
+            {
+              "sectionId": "reacting-mass-and-yield-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4CH1:issue3:1.30:r2",
@@ -470,14 +485,15 @@
             {
               "sectionId": "percentage-yield",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "reacting-mass-and-yield-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         }
       ]
     },
@@ -491,9 +507,9 @@
         "2C"
       ],
       "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Only own-specification1.23–1.36 on visually inspected Issue3 PDF19/printed13. Original partial equations/calculations teaching; not all prescribed reaction families or assessed practical skills.1.34C/1.35C apply only to2C.",
+      "teachingAuditStatus": "complete",
+      "substatementAuditComplete": true,
+      "scopeNote": "Complete agent-reviewed authored teaching only; original idealised cases and supervised-method explanation. No whole chapter, actual practical/learner trial or examiner-template calibration claimed.",
       "requirements": [
         {
           "id": "4CH1:issue3:1.31:r1",
@@ -503,14 +519,15 @@
             {
               "sectionId": "experimental-formula-evidence",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "empirical-and-hydration-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4CH1:issue3:1.31:r2",
@@ -520,14 +537,15 @@
             {
               "sectionId": "experimental-formula-evidence",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "empirical-and-hydration-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4CH1:issue3:1.31:r3",
@@ -537,14 +555,15 @@
             {
               "sectionId": "water-of-crystallisation",
               "field": "example"
+            },
+            {
+              "sectionId": "empirical-and-hydration-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         }
       ]
     },
@@ -558,9 +577,9 @@
         "2C"
       ],
       "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Only own-specification1.23–1.36 on visually inspected Issue3 PDF19/printed13. Original partial equations/calculations teaching; not all prescribed reaction families or assessed practical skills.1.34C/1.35C apply only to2C.",
+      "teachingAuditStatus": "complete",
+      "substatementAuditComplete": true,
+      "scopeNote": "Complete agent-reviewed authored teaching only; original idealised cases and supervised-method explanation. No whole chapter, actual practical/learner trial or examiner-template calibration claimed.",
       "requirements": [
         {
           "id": "4CH1:issue3:1.32:r1",
@@ -570,14 +589,15 @@
             {
               "sectionId": "empirical-formulae",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "empirical-and-hydration-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4CH1:issue3:1.32:r2",
@@ -587,14 +607,15 @@
             {
               "sectionId": "molecular-formulae",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "empirical-and-hydration-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         }
       ]
     },
@@ -608,9 +629,9 @@
         "2C"
       ],
       "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Only own-specification1.23–1.36 on visually inspected Issue3 PDF19/printed13. Original partial equations/calculations teaching; not all prescribed reaction families or assessed practical skills.1.34C/1.35C apply only to2C.",
+      "teachingAuditStatus": "complete",
+      "substatementAuditComplete": true,
+      "scopeNote": "Complete agent-reviewed authored teaching only; original idealised cases and supervised-method explanation. No whole chapter, actual practical/learner trial or examiner-template calibration claimed.",
       "requirements": [
         {
           "id": "4CH1:issue3:1.33:r1",
@@ -620,14 +641,15 @@
             {
               "sectionId": "empirical-formulae",
               "field": "example"
+            },
+            {
+              "sectionId": "empirical-and-hydration-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4CH1:issue3:1.33:r2",
@@ -637,14 +659,15 @@
             {
               "sectionId": "empirical-formulae",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "empirical-and-hydration-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4CH1:issue3:1.33:r3",
@@ -654,14 +677,15 @@
             {
               "sectionId": "molecular-formulae",
               "field": "example"
+            },
+            {
+              "sectionId": "empirical-and-hydration-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         }
       ]
     },
@@ -674,9 +698,9 @@
         "2C"
       ],
       "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Only own-specification1.23–1.36 on visually inspected Issue3 PDF19/printed13. Original partial equations/calculations teaching; not all prescribed reaction families or assessed practical skills.1.34C/1.35C apply only to2C.",
+      "teachingAuditStatus": "complete",
+      "substatementAuditComplete": true,
+      "scopeNote": "Complete agent-reviewed authored teaching only; original idealised cases and supervised-method explanation. No whole chapter, actual practical/learner trial or examiner-template calibration claimed.",
       "requirements": [
         {
           "id": "4CH1:issue3:1.34C:r1",
@@ -686,14 +710,15 @@
             {
               "sectionId": "solution-concentration",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "solution-and-gas-quantity-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4CH1:issue3:1.34C:r2",
@@ -703,14 +728,15 @@
             {
               "sectionId": "solution-concentration",
               "field": "example"
+            },
+            {
+              "sectionId": "solution-and-gas-quantity-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4CH1:issue3:1.34C:r3",
@@ -720,14 +746,15 @@
             {
               "sectionId": "solution-concentration",
               "field": "practice"
+            },
+            {
+              "sectionId": "solution-and-gas-quantity-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         }
       ]
     },
@@ -740,9 +767,9 @@
         "2C"
       ],
       "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Only own-specification1.23–1.36 on visually inspected Issue3 PDF19/printed13. Original partial equations/calculations teaching; not all prescribed reaction families or assessed practical skills.1.34C/1.35C apply only to2C.",
+      "teachingAuditStatus": "complete",
+      "substatementAuditComplete": true,
+      "scopeNote": "Complete agent-reviewed authored teaching only; original idealised cases and supervised-method explanation. No whole chapter, actual practical/learner trial or examiner-template calibration claimed.",
       "requirements": [
         {
           "id": "4CH1:issue3:1.35C:r1",
@@ -752,14 +779,15 @@
             {
               "sectionId": "gas-volume-at-rtp",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "solution-and-gas-quantity-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4CH1:issue3:1.35C:r2",
@@ -769,14 +797,15 @@
             {
               "sectionId": "gas-volume-at-rtp",
               "field": "example"
+            },
+            {
+              "sectionId": "solution-and-gas-quantity-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4CH1:issue3:1.35C:r3",
@@ -786,14 +815,15 @@
             {
               "sectionId": "gas-volume-at-rtp",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "solution-and-gas-quantity-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         }
       ]
     },
@@ -807,9 +837,9 @@
         "2C"
       ],
       "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "Only own-specification1.23–1.36 on visually inspected Issue3 PDF19/printed13. Original partial equations/calculations teaching; not all prescribed reaction families or assessed practical skills.1.34C/1.35C apply only to2C.",
+      "teachingAuditStatus": "complete",
+      "substatementAuditComplete": true,
+      "scopeNote": "Complete agent-reviewed authored teaching only; original idealised cases and supervised-method explanation. No whole chapter, actual practical/learner trial or examiner-template calibration claimed.",
       "requirements": [
         {
           "id": "4CH1:issue3:1.36:r1",
@@ -819,14 +849,15 @@
             {
               "sectionId": "magnesium-oxide-investigation",
               "field": "practical"
+            },
+            {
+              "sectionId": "crucible-mass-and-bias-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4CH1:issue3:1.36:r2",
@@ -836,14 +867,15 @@
             {
               "sectionId": "magnesium-oxide-investigation",
               "field": "example"
+            },
+            {
+              "sectionId": "crucible-mass-and-bias-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4CH1:issue3:1.36:r3",
@@ -853,14 +885,15 @@
             {
               "sectionId": "magnesium-oxide-investigation",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "crucible-mass-and-bias-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4CH1:issue3:1.36:r4",
@@ -870,18 +903,19 @@
             {
               "sectionId": "magnesium-oxide-investigation",
               "field": "practice"
+            },
+            {
+              "sectionId": "crucible-mass-and-bias-evidence",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Unfamiliar assessed data and independent response calibration pending.",
-            "Full prescribed reaction and practical coverage not complete; no actual experiments conducted."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         }
       ]
     }
   ],
-  "completeTeachingPoints": 0,
+  "completeTeachingPoints": 13,
   "completeChapters": 0
 }
