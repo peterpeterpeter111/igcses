@@ -72,6 +72,31 @@
       ]
     },
     {
+      "id": "signed-calculation-evidence",
+      "title": "Check signs and grouping before calculating",
+      "points": [
+        "1A"
+      ],
+      "paragraphs": [
+        "A fraction bar groups its complete numerator and denominator. To enter (−18 + 6)/(2 × (−3)) on a calculator, preserve both groups. The leading minus in −(7 − 11) applies to the whole bracket; subtracting a negative is addition.",
+        "Multiplication and division share one priority and are read left to right. For instance, 24 ÷ 3 × (−2) gives −16. Addition and subtraction then follow, again left to right. Rewriting a calculation into simpler steps makes an entry error easier to find."
+      ],
+      "example": {
+        "question": "Evaluate (−18 + 6)/(2 × (−3)) − (−4), showing the groups you would enter.",
+        "steps": [
+          "The numerator is −12 and the denominator is −6.",
+          "Their quotient is +2, since both signs are negative.",
+          "Subtracting −4 adds 4, giving 6. Enter both complete groups in brackets."
+        ],
+        "explanation": "Use the signs and grouping actually written; a calculator display cannot correct a different entered expression."
+      },
+      "practice": {
+        "question": "Evaluate (−9 + 3)/(−2 × 3) − (−4), then evaluate −(7 − 11) + (−12) ÷ 3. Explain why 24 ÷ 3 × (−2) is not 24 ÷ (3 × (−2)).",
+        "answer": "The fraction is (−6)/(−6)=1, then 1+4=5. The second expression is 4−4=0. Left-to-right multiplication/division gives (24÷3)×(−2)=−16; the added denominator bracket instead gives 24÷(−6)=−4 and changes the expression.",
+        "explanation": "Use the signs and grouping actually written; a calculator display cannot correct a different entered expression."
+      }
+    },
+    {
       "id": "primes-factors-multiples",
       "title": "Prime factors, HCF and LCM",
       "points": [
@@ -211,6 +236,34 @@
       ]
     },
     {
+      "id": "exact-power-and-surd-evidence",
+      "title": "Keep roots and powers exact",
+      "points": [
+        "1C",
+        "1D",
+        "1E"
+      ],
+      "paragraphs": [
+        "On a positive real base, a fractional index can mean a root followed by a power: 64^(2/3)=(³√64)²=16. A negative index means a reciprocal, so 5⁻²=1/25. A zero power is 1 only for a non-zero base; do not extend this rule to 0⁰.",
+        "For matching bases, multiplication adds indices and division subtracts them; raising a power to a power multiplies indices within its valid domain. These rules do not combine a sum such as a²+a³ into a⁵. The placement of a minus matters: (−3)²=9 but −3²=−9.",
+        "Simplify square factors before combining like surds. A surd represents an exact irrational root; √25=5 is not a surd. Rationalisation multiplies the whole numerator and denominator by the same non-zero factor. A conjugate removes cross terms for a two-term denominator."
+      ],
+      "example": {
+        "question": "Evaluate 64^(2/3), 5⁻², 3⁴×3⁻¹÷3², (2³)² and 7⁰. Simplify √45+2√20; rationalise 6/(√7−1) and 4/√3.",
+        "steps": [
+          "The powers give 16, 1/25, 3^(4−1−2)=3, 2⁶=64 and 1.",
+          "√45+2√20=3√5+4√5=7√5, kept exact.",
+          "The conjugate gives 6(√7+1)/(7−1)=√7+1. Multiplying 4/√3 by √3/√3 gives 4√3/3."
+        ],
+        "explanation": "Check the domain and brackets, then keep exact forms until any requested final approximation."
+      },
+      "practice": {
+        "question": "Evaluate 27^(2/3), 2⁻⁴, 5³×5⁻¹÷5, (3²)² and 9⁰. Compare (−4)² with −4². Which of √49 and √6 is a surd? Simplify √8+√18 and √8×√18; rationalise 8/(√5−1) and 5/√2.",
+        "answer": "The powers are 9, 1/16, 5, 81 and 1. (−4)²=16 whereas −4²=−16. √49=7 is rational; √6 is a surd. √8+√18=2√2+3√2=5√2; the product is √144=12. Rationalising gives 2(√5+1) and 5√2/2 respectively. Every multiplication factor and original denominator is non-zero.",
+        "explanation": "Check the domain and brackets, then keep exact forms until any requested final approximation."
+      }
+    },
+    {
       "id": "number-sets",
       "title": "Natural, integer, rational and irrational numbers",
       "points": [
@@ -247,6 +300,33 @@
         "A recurring decimal is rational.",
         "Not every root is irrational."
       ]
+    },
+    {
+      "id": "factor-and-number-set-evidence",
+      "title": "Choose a factor, a multiple and a number set",
+      "points": [
+        "1B",
+        "1F"
+      ],
+      "paragraphs": [
+        "A packing problem seeking the largest identical group size needs the HCF. A repeat-cycle problem seeking the first shared repeat needs the LCM. Prime factorisation records the factors needed for each purpose; 1 is not prime and a positive prime has exactly two positive factors.",
+        "Classifying a number and finding its factors are different tasks. For this exercise natural numbers mean 1, 2, 3, …; zero is an integer but not natural under this stated convention. Integers are rational, terminating and recurring decimals are rational, and roots must be simplified before classifying them.",
+        "For two positive integers, multiplying their HCF and LCM gives the product of the integers. This is a check for the two-number case, not a general rule for a larger list."
+      ],
+      "example": {
+        "question": "Find the HCF and LCM of 42 and 60. Classify 0, −6, √81 and √11 using the stated natural-number convention.",
+        "steps": [
+          "42 = 2 × 3 × 7; 60 = 2² × 3 × 5. HCF=6 and LCM=420; 6×420=42×60=2520.",
+          "0 and −6 are integers and rational; they are not natural here.",
+          "√81=9 is natural, integer and rational; √11 is irrational."
+        ],
+        "explanation": "Use a common factor for grouping, a common multiple for repetition, and all applicable set labels rather than mutually exclusive labels."
+      },
+      "practice": {
+        "question": "Find the HCF and LCM of 84 and 126. Identify the primes among 1, 2, 9 and 17; list the positive factors of 12 and two positive multiples of 42. Classify 0, −5, √36, 0.121212… and √13 using natural numbers 1, 2, 3, ….",
+        "answer": "84=2²×3×7 and 126=2×3²×7, so HCF=42 and LCM=252. The primes are 2 and 17. Factors of 12:1,2,3,4,6,12; multiples of 42 include 42 and 84. 0 and −5 are integer/rational, not natural here; √36=6 is natural/integer/rational; the stated repeating decimal is rational; √13 is irrational.",
+        "explanation": "Use a common factor for grouping, a common multiple for repetition, and all applicable set labels rather than mutually exclusive labels."
+      }
     },
     {
       "id": "metric-measures",
@@ -320,6 +400,33 @@
         "1 hour 30 minutes is not 1.30 hours.",
         "Use total distance and total time for an overall average speed."
       ]
+    },
+    {
+      "id": "metric-journey-and-currency-evidence",
+      "title": "Use compatible units throughout a delivery problem",
+      "points": [
+        "1G"
+      ],
+      "paragraphs": [
+        "Treat a length, an area and a volume differently. Changing metres to centimetres uses a factor of 100; for square units use 100² and for cubic units use 100³. A litre equals 1000 cm³; a millilitre equals 1 cm³. Mass conversion uses 1000 grams per kilogram.",
+        "A delivery journey may contain several stages and stops. Add the relevant distances and times before calculating overall speed. Sixty minutes is one hour and 3600 seconds is one hour; minutes written after an hour value are not hundredths of an hour.",
+        "The currency rate here is invented and supplied solely for arithmetic. If 1 A buys 1.6 B, multiply A to get B and divide B to get A. Add a fee only where stated and in its stated currency. No current exchange rate is claimed."
+      ],
+      "example": {
+        "question": "A carton measures 0.40 m × 0.25 m × 0.30 m. Its contents have masses 2.30 kg and 650 g. A delivery covers 90 km in 75 min. An item costs 80 B at 1 A=1.6 B, plus a 2 A fee. Find base area in cm², capacity in litres, total mass in grams, average speed and total cost in A.",
+        "steps": [
+          "Base area=0.10 m²=1000 cm²; volume=0.030 m³=30000 cm³=30 litres.",
+          "Total mass=2300+650=2950 g.",
+          "75 min=1.25 h, so average speed=90/1.25=72 km/h.",
+          "80 B/1.6=50 A; with the stated fee the cost is 52 A."
+        ],
+        "explanation": "Track the dimension, use totals for the journey, and follow the stated direction of the hypothetical currency rate."
+      },
+      "practice": {
+        "question": "A box measures 30 cm × 20 cm × 25 cm and holds masses 1250 g and 0.75 kg. Find base area in m², volume in m³ and litres, and total mass in kg. A journey covers 18 km in 20 min then 12 km in 40 min: find total time in seconds and overall speed. At 1 A=2.5 B, an item costs 87.5 B plus a 2 A fee: find the total A cost.",
+        "answer": "Base area=600 cm²=0.060 m²; volume=15000 cm³=0.015 m³=15 litres. Mass=1.250+0.750=2.000 kg. Total time=60 min=3600 s=1 h; overall speed=30/1=30 km/h, not the unweighted average of the two stage speeds. Item cost=87.5/2.5=35 A, plus fee=37 A.",
+        "explanation": "Track the dimension, use totals for the journey, and follow the stated direction of the hypothetical currency rate."
+      }
     },
     {
       "id": "fractions-and-decimals",
@@ -432,6 +539,32 @@
       ]
     },
     {
+      "id": "fraction-ratio-and-change-evidence",
+      "title": "Choose the representation that fits the problem",
+      "points": [
+        "1H"
+      ],
+      "paragraphs": [
+        "Four fraction operations have distinct rules: use a common denominator for addition/subtraction, multiply numerators and denominators for multiplication, and multiply by the reciprocal of a non-zero divisor for division. Decimal operations preserve place values; multiplying both dividend and divisor by the same power of ten preserves a division.",
+        "A three-part ratio shares a total using the sum of all parts. A part-to-part ratio is not that part's fraction of the whole. Scale proportional quantities only while the relationship, such as a fixed unit price, stays unchanged.",
+        "For percentage change, divide the change by the original value. For a reverse percentage, divide the final value by the multiplier. The final value is a different base, so subtracting the same percentage does not reverse an increase."
+      ],
+      "example": {
+        "question": "Calculate 3/8+1/4 as a decimal and percentage. Share 1.2 kg in the ratio 2:3:5. A cost rises from 45 to 54: find its percentage rise; a different final cost is 216 after a 20% rise: recover the original.",
+        "steps": [
+          "3/8+2/8=5/8=0.625=62.5%.",
+          "Ten parts give 0.12 kg per part; shares are 0.24,0.36,0.60 kg.",
+          "(54−45)/45×100=20%; reverse the other increase with 216/1.20=180."
+        ],
+        "explanation": "Choose exact fractions, place-value decimals, ratio units or percentage multipliers deliberately rather than applying one rule to every format."
+      },
+      "practice": {
+        "question": "Calculate 2/5+1/6, 3/4−1/8, (2/3)×(9/10) and (4/5)÷(2/3). Calculate 1.25+0.8, 2.4−0.65, 0.6×0.25 and 1.44÷0.12. Convert 3/8 to a decimal and percentage. Share 240 in ratio 3:4:5; if six items cost 15 at a fixed unit price, find ten items' cost. Find the rise from 80 to 100 and the original before a 15% discount left 68.",
+        "answer": "Fraction results:17/30,5/8,3/5,6/5. Decimal results:2.05,1.75,0.15,12. 3/8=0.375=37.5%. Ratio shares:60,80,100; ten items cost 25. The rise is25%; original before discount=68/0.85=80.",
+        "explanation": "Choose exact fractions, place-value decimals, ratio units or percentage multipliers deliberately rather than applying one rule to every format."
+      }
+    },
+    {
       "id": "rounding-and-accuracy",
       "title": "Decimal places and significant figures",
       "points": [
@@ -528,6 +661,34 @@
       }
     },
     {
+      "id": "rounding-and-bound-endpoints-evidence",
+      "title": "Distinguish rounding from a limiting bound",
+      "points": [
+        "1I",
+        "1J"
+      ],
+      "paragraphs": [
+        "Under the usual positive school rounding convention, a measurement given to the nearest unit lies in a half-unit interval including the lower endpoint and excluding the upper. For positive intervals, a sum and product use matching endpoints; a difference and quotient use opposite endpoints. Endpoint inclusion must be checked for the expression, not copied from an input.",
+        "If 2.5≤a<3.5 and 4.5≤b<5.5, then 7≤a+b<9, −3<a−b<−1 and 11.25≤ab<19.25. For a/b, both limiting endpoints are excluded: 5/11<a/b<7/9. The lower quotient would require b=5.5 and the upper would require a=3.5, neither allowed.",
+        "This positive-interval shortcut needs a denominator staying above zero. If a denominator can be zero or an interval changes sign, investigate the possible products/quotients separately; do not apply the shortcut automatically. A bound may be approached without being an attained minimum or maximum.",
+        "Decimal places and significant figures count from different starting positions. For 0.007865, four decimal places gives 0.0079 while three significant figures gives 0.00787. Keep unrounded intermediate calculations and the trailing zeros needed to display the requested accuracy."
+      ],
+      "example": {
+        "question": "a is recorded as 3 and b as 5, each to the nearest unit. Give intervals and bounds for a+b, a−b, ab and a/b. Explain excluded quotient endpoints.",
+        "steps": [
+          "a lies in[2.5,3.5) and b in[4.5,5.5).",
+          "Sum:[7,9); difference:(−3,−1); product:[11.25,19.25).",
+          "Quotient:(2.5/5.5,3.5/4.5)=(5/11,7/9). Each limiting quotient needs an unavailable upper input endpoint."
+        ],
+        "explanation": "Establish each input interval first, choose the correct endpoints and decide whether their limiting combination is actually attainable."
+      },
+      "practice": {
+        "question": "Positive m and n are recorded as 30 and 40 to the nearest 10. Give their intervals and bounds for m+n, m−n, mn and m/n. Round 0.007865 to four decimal places and three significant figures; write 12.995 to two decimal places. Why does a denominator interval containing zero prevent the positive-quotient shortcut?",
+        "answer": "25≤m<35 and 35≤n<45. Sum:60≤m+n<80; difference:−20<m−n<0; product:875≤mn<1575; quotient:5/9<m/n<1. Rounded values:0.0079,0.00787 and 13.00. Division may be undefined at zero and may grow without a finite bound near it, so a positive-endpoint formula cannot be used unchanged.",
+        "explanation": "Establish each input interval first, choose the correct endpoints and decide whether their limiting combination is actually attainable."
+      }
+    },
+    {
       "id": "standard-form",
       "title": "Standard form",
       "terms": [
@@ -556,6 +717,32 @@
         "question": "Calculate (3 × 10⁵) × (4 × 10⁻²), giving your answer in standard form.",
         "answer": "Multiply the coefficients to get 12 and add the indices to get 3: 12 × 10³. Normalise this to 1.2 × 10⁴.",
         "explanation": "The last step is essential because a coefficient of 12 is outside the standard-form interval."
+      }
+    },
+    {
+      "id": "standard-form-in-context-evidence",
+      "title": "Normalise after a standard-form calculation",
+      "points": [
+        "1K"
+      ],
+      "paragraphs": [
+        "These invented data quantities are mathematical inputs, not measurements of the website. A positive standard-form number has a coefficient at least 1 and below 10, with an integer power of ten. A coefficient of 10 must be changed to 1 with the exponent increased by one.",
+        "For a sum or difference, first use matching powers. For multiplication/division, operate on coefficients and use the appropriate index rule, then normalise. A negative exponent indicates a small positive value, not a negative value.",
+        "Check what the context asks for. A count of bytes divided by bytes per second gives seconds; the units help detect reversing a rate calculation. Keep exact intermediate values until the question asks for rounding."
+      ],
+      "example": {
+        "question": "A file has 6×10⁶ bytes plus 4×10⁵ bytes of metadata. Find the size of eight identical files in standard form, and the transfer time at a constant 2×10⁶ bytes/s.",
+        "steps": [
+          "One file:6×10⁶+0.4×10⁶=6.4×10⁶ bytes.",
+          "Eight files:51.2×10⁶=5.12×10⁷ bytes.",
+          "Time=(5.12/2)×10^(7−6)=25.6 s, assuming the stated constant rate and no extra overhead."
+        ],
+        "explanation": "Separate coefficient arithmetic from powers and perform the final normalisation check."
+      },
+      "practice": {
+        "question": "Calculate 7.5×10⁻⁴−2.5×10⁻⁴, (6×10⁸)/(2.4×10³) and (4×10⁻³)×(3×10²), giving standard form. A stored quantity is 10×10⁵: rewrite it in standard form and explain its positive size.",
+        "answer": "The answers are 5×10⁻⁴,2.5×10⁵ and1.2×10⁰. 10×10⁵=1×10⁶. Negative exponents in the first and third inputs still describe positive quantities; the coefficient/exponent pair determines their magnitude.",
+        "explanation": "Separate coefficient arithmetic from powers and perform the final normalisation check."
       }
     },
     {

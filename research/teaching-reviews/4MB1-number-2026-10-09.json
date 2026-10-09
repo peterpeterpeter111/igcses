@@ -1,0 +1,394 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4MB1",
+  "documentId": "4MB1-spec",
+  "specificationSha256": "62d4534ba1c0aee42ce2d3e7fd1da8083fd03216dd106da11ae590525d3187a5",
+  "sourceVisualPages": [
+    17,
+    18
+  ],
+  "sourcePrintedPages": [
+    11,
+    12
+  ],
+  "reviewDate": "2026-10-09",
+  "reviewer": "Codex source and authored-teaching review",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "authored-teaching-coverage",
+  "policyVersion": 1,
+  "practicalTrialsPerformed": false,
+  "examTemplateCalibrationComplete": false,
+  "inventorySha256": "d82d21f6af7fd6acb28024958ba58b67855f17a2b750959eba6a2c863ba79191",
+  "auditRef": "research/curriculum-audits/4MB1-number.json",
+  "auditSha256": "4632fc7cb9e73dc6788d4e878c6a9dbd96df7c679e61ddc033b8a114706a3897",
+  "noteRef": "content/notes/mathematics.json",
+  "diagramSha256": {},
+  "limitations": [
+    "Eleven section-row identities are not eleven invented publisher decimal numbers; r clauses remain editorial decompositions.",
+    "Seven new mixed lesson exercises are original fixed study practice, not generated or calibrated exam questions.",
+    "Whole number-and-algebra chapter, learner mastery and examiner-template readiness remain incomplete. Existing historical source discrepancies/mark concessions are untouched."
+  ],
+  "points": [
+    {
+      "pointId": "4MB1:issue1:1A",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:1A:r1",
+          "verdict": "approved",
+          "judgement": "Independent signed sum/subtraction evaluated with bracket negation and subtraction of a negative.",
+          "assessmentSectionId": "signed-calculation-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1A:r2",
+          "verdict": "approved",
+          "judgement": "Worked and independent signed products/quotients retain numerator/denominator grouping.",
+          "assessmentSectionId": "signed-calculation-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1A:r3",
+          "verdict": "approved",
+          "judgement": "Left-to-right division/multiplication comparison explicitly rejects adding an unwritten denominator bracket.",
+          "assessmentSectionId": "signed-calculation-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1A:r4",
+          "verdict": "approved",
+          "judgement": "Written fraction is translated into grouped numerator/denominator entry; estimate/check principle retained in original explanation.",
+          "assessmentSectionId": "signed-calculation-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "operations-and-brackets": "9c128dbe59823fd242fa9778c059718aab6d90305e802cf9f3bacecbc937692c",
+        "signed-calculation-evidence": "03eba3b31e04d8c1772f2c149591d9187b9b7fdda6f0e90d639b4d898306cc4d"
+      }
+    },
+    {
+      "pointId": "4MB1:issue1:1B",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:1B:r1",
+          "verdict": "approved",
+          "judgement": "Independent list distinguishes prime2/17 from1/9 using two positive factors.",
+          "assessmentSectionId": "factor-and-number-set-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1B:r2",
+          "verdict": "approved",
+          "judgement": "Independent positive factors of12 listed, not confused with multiples.",
+          "assessmentSectionId": "factor-and-number-set-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1B:r3",
+          "verdict": "approved",
+          "judgement": "Independent positive multiples of42 requested and supplied.",
+          "assessmentSectionId": "factor-and-number-set-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1B:r4",
+          "verdict": "approved",
+          "judgement": "HCF84/126=42 independently factorised; earlier42/60=6 provides a distinct worked comparison.",
+          "assessmentSectionId": "factor-and-number-set-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1B:r5",
+          "verdict": "approved",
+          "judgement": "LCM84/126=252 independently factorised; repeat-cycle meaning retained and two-number product check qualified.",
+          "assessmentSectionId": "factor-and-number-set-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "primes-factors-multiples": "87afca423824001ad057bfd72ce10b5cd27210e63004007a4085827cb609e18b",
+        "factor-and-number-set-evidence": "b9c01bc8bb5c79d55abdc945af4ae130c47addc45d802d40e0dd477f2f60b3da"
+      }
+    },
+    {
+      "pointId": "4MB1:issue1:1C",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:1C:r1",
+          "verdict": "approved",
+          "judgement": "Integer notation and bracketed versus leading-negative powers assessed with(-4)²/−4².",
+          "assessmentSectionId": "exact-power-and-surd-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1C:r2",
+          "verdict": "approved",
+          "judgement": "Matching-base multiply/divide exercise5³×5⁻¹÷5=5; conditions and failure on sums explained.",
+          "assessmentSectionId": "exact-power-and-surd-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1C:r3",
+          "verdict": "approved",
+          "judgement": "Positive real-domain fractional root27^(2/3)=9 independently assessed against worked64^(2/3)=16.",
+          "assessmentSectionId": "exact-power-and-surd-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1C:r4",
+          "verdict": "approved",
+          "judgement": "Independent2⁻⁴=1/16 tests reciprocal meaning rather than a negative result.",
+          "assessmentSectionId": "exact-power-and-surd-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1C:r5",
+          "verdict": "approved",
+          "judgement": "Independent9⁰=1 and(3²)²=81 assessed; nonzero/positive domain conditions and0⁰ exclusion explicit.",
+          "assessmentSectionId": "exact-power-and-surd-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "index-laws": "b15494a5c5c239868d14dc50a6ce04bfde0612cd02d61b645dcea3bc7c1b3a6c",
+        "exact-power-and-surd-evidence": "0f4bf4a1a41b08d74df001599fac4967e3263914edd76042db933b78960692b9"
+      }
+    },
+    {
+      "pointId": "4MB1:issue1:1D",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:1D:r1",
+          "verdict": "approved",
+          "judgement": "Independent√49 versus√6 recognition distinguishes a rational root from a surd, without a formal irrationality proof.",
+          "assessmentSectionId": "exact-power-and-surd-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1D:r2",
+          "verdict": "approved",
+          "judgement": "Independent like-surd sum and root product simplify to5√2 and12; exact forms and valid root domains preserved.",
+          "assessmentSectionId": "exact-power-and-surd-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "surds-and-exact-values": "7fd78c372d55e06ee3708562201868d7ca9d6ad2d59df6aa052baa50ac907387",
+        "exact-power-and-surd-evidence": "0f4bf4a1a41b08d74df001599fac4967e3263914edd76042db933b78960692b9"
+      }
+    },
+    {
+      "pointId": "4MB1:issue1:1E",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:1E:r1",
+          "verdict": "approved",
+          "judgement": "Independent5/√2 rationalises to5√2/2, with matching numerator/denominator factor.",
+          "assessmentSectionId": "exact-power-and-surd-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1E:r2",
+          "verdict": "approved",
+          "judgement": "Independent8/(√5−1) uses conjugate and simplifies to2(√5+1); worked6/(√7−1) gives a separate exact comparison.",
+          "assessmentSectionId": "exact-power-and-surd-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "rationalising-denominators": "4b198553561c2f8cbff5cacefe4692a9b6d73b5d9ae887ba9424ee6776c48ace",
+        "exact-power-and-surd-evidence": "0f4bf4a1a41b08d74df001599fac4967e3263914edd76042db933b78960692b9"
+      }
+    },
+    {
+      "pointId": "4MB1:issue1:1F",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:1F:r1",
+          "verdict": "approved",
+          "judgement": "Practice states natural numbers begin at1 and recognises simplified√36=6; zero follows the stated convention.",
+          "assessmentSectionId": "factor-and-number-set-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1F:r2",
+          "verdict": "approved",
+          "judgement": "Practice recognises0/−5 as integers and does not require positivity for integer membership.",
+          "assessmentSectionId": "factor-and-number-set-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1F:r3",
+          "verdict": "approved",
+          "judgement": "Practice recognises integers and the explicitly recurring0.121212… as rational; labels may overlap.",
+          "assessmentSectionId": "factor-and-number-set-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1F:r4",
+          "verdict": "approved",
+          "judgement": "Practice recognises√13 as irrational with no proof demanded; root recognition is not assigned from notation alone.",
+          "assessmentSectionId": "factor-and-number-set-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "number-sets": "6191d313658baa7ba6a7bec012b3dca905ce3207a941c678e37db276bea4783c",
+        "factor-and-number-set-evidence": "b9c01bc8bb5c79d55abdc945af4ae130c47addc45d802d40e0dd477f2f60b3da"
+      }
+    },
+    {
+      "pointId": "4MB1:issue1:1G",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:1G:r1",
+          "verdict": "approved",
+          "judgement": "Independent1250g+0.75kg=2kg assesses converting before adding mass.",
+          "assessmentSectionId": "metric-journey-and-currency-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1G:r2",
+          "verdict": "approved",
+          "judgement": "Carton dimensions in metres and centimetres are used consistently; linear100 factor separated from squared/cubed factors.",
+          "assessmentSectionId": "metric-journey-and-currency-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1G:r3",
+          "verdict": "approved",
+          "judgement": "Independent600cm²=0.060m² checks a squared conversion factor.",
+          "assessmentSectionId": "metric-journey-and-currency-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1G:r4",
+          "verdict": "approved",
+          "judgement": "Independent15000cm³=0.015m³ checks a cubed conversion factor.",
+          "assessmentSectionId": "metric-journey-and-currency-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1G:r5",
+          "verdict": "approved",
+          "judgement": "Independent15000cm³=15litres and explained1mL=1cm³ link capacity and volume.",
+          "assessmentSectionId": "metric-journey-and-currency-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1G:r6",
+          "verdict": "approved",
+          "judgement": "Independent60min=3600s=1h and worked75min=1.25h reject decimal-minute confusion.",
+          "assessmentSectionId": "metric-journey-and-currency-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1G:r7",
+          "verdict": "approved",
+          "judgement": "Independent multi-stage30km/1h=30km/h uses totals rather than averaging stage speeds.",
+          "assessmentSectionId": "metric-journey-and-currency-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1G:r8",
+          "verdict": "approved",
+          "judgement": "Independent invented rate87.5B/2.5=35A plus stated2A fee=37A; no current exchange rate or unstated fee.",
+          "assessmentSectionId": "metric-journey-and-currency-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "metric-measures": "cc5be8ad45f4d8c128f4c2fc76f870b6cf22f6780a4d6c520185bcec2df8edff",
+        "time-speed-and-money": "820b62e448d74d16664f6bb840c227808b985624bbbc65af9d72c280d55e65c1",
+        "metric-journey-and-currency-evidence": "1ea7dfbdd9353766c1e7ce7f4ff3fb28d31e159d73def3895ce30238e6808250"
+      }
+    },
+    {
+      "pointId": "4MB1:issue1:1H",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:1H:r1",
+          "verdict": "approved",
+          "judgement": "Independent3/8=0.375=37.5% and worked5/8 representations retain exact equivalence.",
+          "assessmentSectionId": "fraction-ratio-and-change-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1H:r2",
+          "verdict": "approved",
+          "judgement": "Independent addition/subtraction/multiplication/division of fractions checked as17/30,5/8,3/5,6/5.",
+          "assessmentSectionId": "fraction-ratio-and-change-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1H:r3",
+          "verdict": "approved",
+          "judgement": "Independent four decimal operations checked as2.05,1.75,0.15,12 with place-value/division scaling explained.",
+          "assessmentSectionId": "fraction-ratio-and-change-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1H:r4",
+          "verdict": "approved",
+          "judgement": "Independent three-part240 ratio3:4:5 gives60/80/100; ratio-unit and whole-part distinctions retained.",
+          "assessmentSectionId": "fraction-ratio-and-change-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1H:r5",
+          "verdict": "approved",
+          "judgement": "Independent fixed-price item scaling gives25 with a stated proportional condition rather than assuming discounts.",
+          "assessmentSectionId": "fraction-ratio-and-change-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1H:r6",
+          "verdict": "approved",
+          "judgement": "Independent80→100 rise25% and reverse discount68/0.85=80 check original-base/multiplier selection.",
+          "assessmentSectionId": "fraction-ratio-and-change-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "fractions-and-decimals": "d650ab76406b03c9d98605665844e970eec69f9aacb4a2cde94d4a0b89cbf5e2",
+        "ratio-and-proportion": "c0957e6e7168a2bda864d7b9ddef850b8d518f9080ea8f03ff95ae6d7fccf93b",
+        "percentage-changes": "be6f824236036ca6b8d9c7ef39743c7c173ff244a5422ab58240b4012f589c7a",
+        "fraction-ratio-and-change-evidence": "db30e1b32ffbb917f104cc19c913118805effaf243a6146cfee355f8816582dc"
+      }
+    },
+    {
+      "pointId": "4MB1:issue1:1I",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:1I:r1",
+          "verdict": "approved",
+          "judgement": "Independent0.007865 to4dp=0.0079 and12.995 to2dp=13.00 assess digit positions and carrying.",
+          "assessmentSectionId": "rounding-and-bound-endpoints-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1I:r2",
+          "verdict": "approved",
+          "judgement": "Independent0.007865 to3sf=0.00787 distinguishes significant figures from decimal places and retains meaningful zeros.",
+          "assessmentSectionId": "rounding-and-bound-endpoints-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "rounding-and-accuracy": "31edac5065655c3dc9a0dbaf8ee5b29f98113b2dcc5e5b409e450c5e09cb4939",
+        "rounding-and-bound-endpoints-evidence": "3ab37a589aabc755b8cc5b712e7b147b2e57adfd70c3aa2205ba9fd8902888d2"
+      }
+    },
+    {
+      "pointId": "4MB1:issue1:1J",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:1J:r1",
+          "verdict": "approved",
+          "judgement": "Independent measurements30/40 to nearest10 produce[25,35)/[35,45), with usual positive rounding convention explicit.",
+          "assessmentSectionId": "rounding-and-bound-endpoints-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1J:r2",
+          "verdict": "approved",
+          "judgement": "Independent sum[60,80), difference(−20,0) and product[875,1575) preserve endpoint inclusivity; worked separate3/5 case explains why.",
+          "assessmentSectionId": "rounding-and-bound-endpoints-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1J:r3",
+          "verdict": "approved",
+          "judgement": "Independent positive quotient(5/9,1) uses opposite endpoints and excludes unattained extremes; zero/sign-domain shortcuts explicitly rejected.",
+          "assessmentSectionId": "rounding-and-bound-endpoints-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "upper-and-lower-bounds": "655a950a24392e6c532d1424df45e636818e51337b4726dd8ca8ed60c8d1799e",
+        "rounding-and-bound-endpoints-evidence": "3ab37a589aabc755b8cc5b712e7b147b2e57adfd70c3aa2205ba9fd8902888d2"
+      }
+    },
+    {
+      "pointId": "4MB1:issue1:1K",
+      "requirements": [
+        {
+          "id": "4MB1:issue1:1K:r1",
+          "verdict": "approved",
+          "judgement": "Practice normalises10×10⁵ to1×10⁶; positive coefficient range/integer exponent and small positive negative-index magnitude explained.",
+          "assessmentSectionId": "standard-form-in-context-evidence"
+        },
+        {
+          "id": "4MB1:issue1:1K:r2",
+          "verdict": "approved",
+          "judgement": "Independent standard-form sum/difference/product/quotient and worked invented byte-rate problem check coefficient arithmetic, exponent operations, normalisation and context units.",
+          "assessmentSectionId": "standard-form-in-context-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "standard-form": "4a4a967c678b431a23cd2c720848880c4c85a8334c4a84f0330ddb4ce2e0bb0c",
+        "standard-form-in-context-evidence": "10b490676f53643abde32deadd6789c2ef955b18d20ba445f29097705bfe696f"
+      }
+    }
+  ]
+}
