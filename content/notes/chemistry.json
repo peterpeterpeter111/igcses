@@ -2020,6 +2020,236 @@
           "Document actual observations and control results; do not substitute expected products for measured results."
         ]
       }
+    },
+    {
+      "id": "particle-arrangement-and-change-evidence",
+      "title": "Read particle models without changing the particles",
+      "points": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.8"
+      ],
+      "paragraphs": [
+        "The original model uses equal-sized circles for particles in three states. A has a close regular arrangement about fixed positions; particles vibrate. B has close irregular spacing and particles can move past each other. C has widely spaced particles moving randomly. Positions in these snapshots do not mean movement stops, and symbols are not actual images or sizes.",
+        "Heating a single phase generally increases average kinetic energy. During a pure-substance phase change at fixed pressure, supplied energy changes arrangement/interactions without increasing temperature. Solid to liquid is melting, liquid to gas boiling; cooling gives gas to liquid condensation and liquid to solid freezing. Direct solid to gas is sublimation; gas to solid deposition. The particles do not grow or change chemical identity.",
+        "In D, E and F, connecting lines represent chemical bonds and two shapes identify atom types. D contains only A–A molecules of one element; E contains identical A–B molecules of a compound; F contains both types of molecule and is a mixture. More than one atom type is not enough to call E a mixture. Physical separation of F is conceptually different from chemically decomposing E.",
+        "For an invented dilution, 5 cm³ of dye stock made up to 25 cm³ has one fifth of the stock concentration. If a measured portion is diluted again, that portion does not contain all of the original stock dye. Dilution changes the number of coloured particles per volume, not their individual colour or size. In diffusion, random gas motion spreads particles overall from a more concentrated region; motion continues at even concentration. Air currents can mix gases too and must not be mistaken for proof that diffusion requires a fan."
+      ],
+      "example": {
+        "question": "A pure liquid boils at fixed pressure while its temperature stays constant. Explain why ongoing heating need not make the particles hotter during that change.",
+        "steps": [
+          "Energy still transfers to the substance.",
+          "It changes arrangement and particle interactions as liquid becomes gas, rather than raising average kinetic energy during the plateau.",
+          "Particles retain their chemical identity; a plateau does not mean no energy is transferred."
+        ],
+        "explanation": "Particles retain their chemical identity; a plateau does not mean no energy is transferred."
+      },
+      "practice": {
+        "question": "Identify A, B and C and give spacing/motion for each. Name all six solid/liquid/gas transitions and their heating/cooling direction. Classify D, E and F using atom types and bonds; explain physical separation versus decomposition. A 5 cm³ stock sample is made up to 25 cm³; 5 cm³ of that mixture is then made up to 25 cm³. Give each concentration relative to stock and explain paler colour. Explain diffusion and continued motion after even mixing.",
+        "answer": "A solid: close fixed arrangement with vibration; B liquid: close particles moving past one another; C gas: widely separated random motion. Heating: melting, boiling, sublimation; cooling: freezing, condensation, deposition. D element (A–A), E compound (A–B), F mixture of both; physical separation retains substances, decomposition changes the compound chemically. Concentrations are 1/5 then 1/25 of stock; fewer coloured particles per volume, not smaller particles. Random movement causes net spreading down an initial concentration gradient and continues after even mixing.",
+        "explanation": "Particles retain their chemical identity; a plateau does not mean no energy is transferred."
+      },
+      "terms": [
+        "particle model",
+        "state change",
+        "dilution",
+        "diffusion",
+        "element",
+        "compound",
+        "mixture"
+      ],
+      "commonMistakes": [
+        "The coloured circles and squares are model symbols, not microscope observations."
+      ],
+      "diagram": {
+        "src": "/diagrams/chemistry-particle-evidence.svg",
+        "alt": "Original six-panel particle model: A close regular solid, B close irregular liquid, C widely spaced gas. D identical A–A molecules of an element; E identical A–B molecules of a compound; F both molecule types in a mixture. Lines show bonds in D–F; equal symbol sizes are schematic, not measured.",
+        "caption": "Upper panels compare states; lower panels compare chemical composition. Motion is described in the text. Original model, enlarged and not to scale."
+      }
+    },
+    {
+      "id": "saturation-and-solubility-data",
+      "title": "Paper 2C: interpret a saturated solution and curve",
+      "points": [
+        "1.4",
+        "1.5C",
+        "1.6C"
+      ],
+      "paragraphs": [
+        "In an invented water/solid system, the dissolved solid is the solute, water is the solvent and the homogeneous liquid is the solution. A saturated solution contains the maximum dissolved amount at the stated temperature after equilibration. A newly added undissolved grain alone does not establish saturation without time and suitable mixing.",
+        "The supplied data and original curve are invented for study, not measured solubilities of a named chemical. Solubility is g of solute per 100 g of solvent. At 60 °C, 58 g solute with 100 g water gives 158 g saturated solution if no material is lost; 58/158 is not the prescribed solubility ratio.",
+        "Plot temperature horizontally and solubility vertically, label both units, choose suitable scales and plot all four supplied values. The illustrative smooth trend passes through them; real measured data need an appropriate curve, not an assumption of a universal straight-line increase. Reading around 30 °C gives about 30 g per 100 g water as an interpolation; the exact value is not established by the four readings. Outside 20–80 °C, extrapolation is not verified.",
+        "Crystallised mass on cooling is the fall in solubility scaled to the actual water mass, assuming no evaporation and equilibration. A temporarily supersaturated solution may not immediately produce the calculated crystals. Keep dissolved mass, water mass and total solution mass distinct."
+      ],
+      "example": {
+        "question": "A saturated sample with 25 g water cools from 80 to 40 °C without water loss. Use the invented table to predict crystals after equilibration.",
+        "steps": [
+          "Initially dissolved: 84×25/100 = 21 g.",
+          "Finally dissolved: 38×25/100 = 9.5 g.",
+          "Predicted crystals: 21−9.5 = 11.5 g, subject to unchanged water mass and equilibration."
+        ],
+        "explanation": "Predicted crystals: 21−9.5 = 11.5 g, subject to unchanged water mass and equilibration."
+      },
+      "practice": {
+        "question": "Define solute, solvent, solution and saturation. Plot the four supplied values with labelled axes and a suitable curve; estimate at 30 °C and explain why 100 °C is less secure. At 20 °C find the maximum mass dissolved in 15 g water and total solution mass. A saturated sample containing 40 g water cools from 60 to 20 °C without evaporation; calculate equilibrium crystals and state the assumptions.",
+        "answer": "Solute dissolves; solvent dissolves it; solution is the homogeneous mixture; saturation is the maximum dissolved amount at a stated temperature after equilibration. Axes: temperature/°C and g solute per100g water; plot(20,24),(40,38),(60,58),(80,84), then appropriate smooth trend. About30g/100g at30°C is interpolated;100°C is outside the data. At20°C:24×15/100=3.6g solute and18.6g solution. Cooling: (58−24)×40/100=13.6g crystals, with unchanged water mass and enough time to equilibrate.",
+        "explanation": "Predicted crystals: 21−9.5 = 11.5 g, subject to unchanged water mass and equilibration."
+      },
+      "terms": [
+        "solute",
+        "solvent",
+        "solution",
+        "saturation",
+        "solubility curve",
+        "interpolation"
+      ],
+      "commonMistakes": [
+        "The smooth curve is an illustrative trend, not a measured claim between the four invented points."
+      ],
+      "table": {
+        "headers": [
+          "Temperature / °C",
+          "Solubility / g per 100 g water"
+        ],
+        "rows": [
+          [
+            "20",
+            "24"
+          ],
+          [
+            "40",
+            "38"
+          ],
+          [
+            "60",
+            "58"
+          ],
+          [
+            "80",
+            "84"
+          ]
+        ]
+      },
+      "diagram": {
+        "src": "/diagrams/chemistry-solubility-evidence.svg",
+        "alt": "Original graph of invented study data at20°C24,40°C38,60°C58 and80°C84g solute per100g water. Horizontal temperature and vertical solubility axes; a smooth illustrative trend connects the data. No curve beyond the data range is asserted.",
+        "caption": "Invented values and an illustrative smooth curve. Interpolation is an estimate; no actual solubility experiment is claimed."
+      }
+    },
+    {
+      "id": "solubility-mass-and-error-evidence",
+      "title": "Paper 2C: derive solubility from a dry residue",
+      "points": [
+        "1.7C"
+      ],
+      "paragraphs": [
+        "A teacher-approved stable non-volatile solid is equilibrated with excess in water at a controlled temperature. Withdraw clear saturated liquid while keeping that temperature; exclude undissolved crystals. Weigh the empty dish, dish plus liquid and dish plus constant dry residue. Gentle supervised evaporation must not decompose the chosen solute or eject it.",
+        "In an invented example, empty dish40.00g, dish plus solution55.00g and dish plus dry residue43.00g give15.00g solution,3.00g solute and12.00g water. Solubility=3/12×100=25g per100g water at the stated temperature. These values are study inputs, not observations recorded by the project.",
+        "A wet residue inflates solute mass while reducing calculated water mass, so the ratio is too high. Entrained undissolved crystals also inflate the recovered solid. Loss of solute by spitting can lower its measured mass; changing sample temperature may cause crystallisation and invalidates assignment to the intended temperature.",
+        "Cool the dish before weighing and repeat drying/weighing to constant mass; independently repeated samples reveal variability but do not automatically remove systematic bias. Wear eye protection, use a teacher-approved heating arrangement and handle hot apparatus safely. Constant temperature and exclusion of crystals support validity; constant dry mass supports the residue measurement."
+      ],
+      "example": {
+        "question": "In the stated invented example, calculate solubility and explain why dividing by15.00g is wrong.",
+        "steps": [
+          "Solute=43.00−40.00=3.00g; solution=55.00−40.00=15.00g.",
+          "Water=15.00−3.00=12.00g; solubility=25g per100g water.",
+          "The15.00g sample includes solute; solvent mass is the required denominator."
+        ],
+        "explanation": "The15.00g sample includes solute; solvent mass is the required denominator."
+      },
+      "practice": {
+        "question": "A different invented sample at25°C has empty dish28.00g, dish plus clear saturated solution42.40g and dish plus constant dry residue31.60g. Calculate solute, water and solubility; explain the effects of wet residue and stray crystals, and name temperature control, repeat/constant-mass checks and safe heating measures.",
+        "answer": "Solute3.60g; solution14.40g; water10.80g; solubility3.60/10.80×100=33.3g per100g water (3sf) at25°C. Wet residue or stray undissolved crystals overestimate the intended ratio. Equilibrate and sample at25°C; exclude crystals; cool/dry/reweigh to constant mass and repeat independent samples. Use eye protection, gentle teacher-approved heating and safe hot-apparatus handling; no actual trial is claimed.",
+        "explanation": "The15.00g sample includes solute; solvent mass is the required denominator."
+      },
+      "terms": [
+        "dry residue",
+        "mass difference",
+        "solubility practical",
+        "constant mass",
+        "systematic error"
+      ],
+      "commonMistakes": [
+        "Total solution mass is not solvent mass."
+      ]
+    },
+    {
+      "id": "separation-and-purity-cases",
+      "title": "Choose separation methods from the property difference",
+      "points": [
+        "1.9",
+        "1.10"
+      ],
+      "paragraphs": [
+        "Separate insoluble solid from liquid by filtration: residue stays on the paper, while filtrate may still contain dissolved substances. Recover an appropriate dissolved solid by concentration/cooling, followed by separating and drying crystals. These are physical methods; filtering a dissolved compound does not break it into its elements.",
+        "Simple distillation recovers a volatile solvent from a non-volatile solute: vapour is cooled in a condenser and collected as distillate. Fractional distillation adds repeated vaporisation/condensation in a column to separate miscible volatile liquids more effectively. It does not ensure that only one substance ever evaporates, and separation purity depends on the mixture and apparatus.",
+        "Paper chromatography separates soluble components that travel at different rates with the chosen solvent and stationary phase. Choose it to compare components of small ink/colouring samples, rather than to collect a bulk solvent. Distillation setup must remain unsealed; teacher-approved heating and condenser placement follow the earlier apparatus explanation.",
+        "At fixed pressure a pure substance has characteristic melting/boiling temperatures. A melting range or an unexpected value can indicate impurity, but check thermometer calibration, heating rate and pressure before asserting cause. One matching temperature or one visible chromatogram spot does not prove identity and purity."
+      ],
+      "example": {
+        "question": "A fictional mixture contains insoluble sand, water and dissolved stable salt. Recover sand and obtain water, distinguishing the material remaining after each stage.",
+        "steps": [
+          "Filter: sand is residue; salt remains dissolved in the filtrate.",
+          "Simple-distil the filtrate: water vapour condenses to collected liquid; non-volatile salt remains.",
+          "Neither physical stage decomposes the salt chemically."
+        ],
+        "explanation": "Neither physical stage decomposes the salt chemically."
+      },
+      "practice": {
+        "question": "Choose and briefly describe the method for: (a) insoluble chalk in water, naming residue/filtrate; (b) water from a non-volatile salt solution; (c) two miscible volatile liquids with close boiling points; (d) dry crystals of a suitable dissolved solid; (e) components of a soluble ink. A reference melts at92°C; a sample melts88–91°C at the same pressure. Explain the evidence and two checks; does an exactly matching boiling temperature alone prove purity?",
+        "answer": "a Filtration: chalk residue, water-containing filtrate. b Simple distillation: boil solvent, condense and collect; solute stays. c Fractional distillation: repeated vaporisation/condensation enriches the more volatile component. d Concentrate/cool as appropriate, separate and dry crystals without inappropriate decomposition heating. e Paper chromatography with suitable solvent/paper separates migrating components. A shifted/broadened melting range suggests impurity; check calibration and heating/conditions. A matching boiling temperature alone is not conclusive purity/identity proof.",
+        "explanation": "Neither physical stage decomposes the salt chemically."
+      },
+      "terms": [
+        "filtration",
+        "distillation",
+        "crystallisation",
+        "chromatography",
+        "melting range"
+      ],
+      "commonMistakes": [
+        "State both the property difference and which substance is collected."
+      ]
+    },
+    {
+      "id": "chromatogram-comparison-evidence",
+      "title": "Read a chromatogram and test the strength of a match",
+      "points": [
+        "1.11",
+        "1.12",
+        "1.13"
+      ],
+      "paragraphs": [
+        "The earlier original chromatogram is a schematic of invented distances. Both reference lanes and the mixture share one baseline and solvent front, with the same paper/solvent conditions. Component distance is from the baseline to spot centre; the solvent-front distance uses that same baseline. Rf is their unitless ratio.",
+        "In a separate invented run the front moves70mm, a reference R moves28mm and S moves56mm. A sample has spots at28 and49mm, giving0.40 and0.70, while S gives0.80. The sample therefore contains at least two resolved/detected components; the first supports a possible match to R. A different reference position is not that same match. Co-migration can occur, so a matching Rf is supporting evidence rather than chemical proof.",
+        "For the supervised ink/food-colouring practical use small dried spots on a pencil baseline, initially above a suitable solvent. Develop under comparable conditions, remove before the front reaches the top and promptly mark the front. Graphite avoids a dissolved ink baseline; small spots help resolve components. Compare reference samples on the same run and repeat if the front is irregular or spots overlap.",
+        "One detected spot does not prove purity: components may overlap, remain at the baseline, be insoluble or be invisible to the method. If conditions differ, the Rf comparison is weaker. The stated water-based food-colouring procedure does not authorise tasting samples or using an unapproved flammable solvent."
+      ],
+      "example": {
+        "question": "A 4.5cm solvent-front distance and18mm spot distance are measured from the same baseline. Calculate Rf and identify an inverted-ratio error.",
+        "steps": [
+          "Convert4.5cm to45mm.",
+          "Rf=18/45=0.40, with no units.",
+          "45/18=2.5 is the wrong order and lies beyond the normal baseline-to-front range."
+        ],
+        "explanation": "45/18=2.5 is the wrong order and lies beyond the normal baseline-to-front range."
+      },
+      "practice": {
+        "question": "For the separate70mm-front run calculate R,S and the two sample Rf values; state the number of detected components and the strength of the R match. Give a baseline/spot/solvent-level setup, front-marking step and controlled comparison. Explain why one spot, or a matching Rf in another solvent, cannot prove purity/identity.",
+        "answer": "R0.40,S0.80,sample0.40/0.70; at least two detected components, one possibly matching R under these conditions. Pencil baseline with small dried spots initially above solvent; develop and promptly mark front before drying. Compare same paper/solvent/conditions and use repeats for poor resolution. One spot may conceal co-migration/non-detection; another solvent can alter Rf, so neither alone proves purity/identity.",
+        "explanation": "45/18=2.5 is the wrong order and lies beyond the normal baseline-to-front range."
+      },
+      "terms": [
+        "Rf",
+        "baseline",
+        "solvent front",
+        "co-migration",
+        "reference"
+      ],
+      "commonMistakes": [
+        "Do not compare distances from different baselines or assign units to Rf."
+      ]
     }
   ],
   "status": "source-checked",
@@ -2053,6 +2283,14 @@
       "url": "https://edu.rsc.org/experiments/electrolysis-of-copperii-sulfate-solution/476.article",
       "sectionIds": [
         "aqueous-electrolysis-investigation"
+      ]
+    },
+    {
+      "title": "Pearson International GCSE: solubility and chromatography practical support",
+      "url": "https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Biology/2017/teaching-and-learning-materials/biology-chemistry-physics-core-practical-guide.pdf",
+      "sectionIds": [
+        "solubility-mass-and-error-evidence",
+        "chromatogram-comparison-evidence"
       ]
     }
   ]

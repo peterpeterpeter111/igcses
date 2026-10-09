@@ -1,0 +1,391 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4CH1",
+  "documentId": "4CH1-spec",
+  "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "sourceVisualPages": [
+    17,
+    18
+  ],
+  "sourcePrintedPages": [
+    11,
+    12
+  ],
+  "reviewDate": "2026-10-09",
+  "reviewer": "Codex source and authored-teaching review",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "authored-teaching-coverage",
+  "policyVersion": 1,
+  "practicalTrialsPerformed": false,
+  "examTemplateCalibrationComplete": false,
+  "inventorySha256": "d1b0e5bb6a4f7b2528602d073c0b6854c6ac4cfdc8f1e62f8a7c14aaaeac8f2f",
+  "auditRef": "research/curriculum-audits/4CH1-states-and-mixtures.json",
+  "auditSha256": "ba1a7eb2f6953bba9c7503719807a3d756ab84240020b386bb946c2bbadc50e4",
+  "noteRef": "content/notes/chemistry.json",
+  "diagramSha256": {
+    "/diagrams/chemistry-particle-evidence.svg": "175a41b85c7b78ea5b897281440f71807a8c11922d2c34f6b0693d6570eccab5",
+    "/diagrams/chemistry-solubility-evidence.svg": "937dca8348f31b0461221246d6e2e9986e3a8ed4c55f2e01421d4d61c334ec24",
+    "/diagrams/chemistry-chromatogram.svg": "cf1c16100adbacff68e95c91dbb1f8a17ebb47ac8fc11b6f533c4e9cf3a363b1"
+  },
+  "limitations": [
+    "Original particle/composition models are not microscopy or measured sizes.",
+    "Solubility and chromatography values are invented study inputs; interpolated curve readings are estimates, not verified measurements.",
+    "Only1.1–1.13 complete;1.14–1.22/later Principles requirements, whole chapter and practical/learner/exam readiness remain incomplete."
+  ],
+  "points": [
+    {
+      "pointId": "4CH1:issue3:1.1",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.1:r1",
+          "verdict": "approved",
+          "judgement": "A solid independent identification: close regular fixed positions and vibration, not motionless particles.",
+          "assessmentSectionId": "particle-arrangement-and-change-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.1:r2",
+          "verdict": "approved",
+          "judgement": "B liquid independent identification: close irregular arrangement with particles moving past each other.",
+          "assessmentSectionId": "particle-arrangement-and-change-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.1:r3",
+          "verdict": "approved",
+          "judgement": "C gas independent identification: widely spaced particles and continued random motion.",
+          "assessmentSectionId": "particle-arrangement-and-change-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.1:r4",
+          "verdict": "approved",
+          "judgement": "Independent heating/phase-change explanation distinguishes average kinetic-energy rise within a phase from rearrangement during fixed-pressure pure phase transition.",
+          "assessmentSectionId": "particle-arrangement-and-change-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "states-of-matter": "61583e01c24d285baef97d70e787bda515afa8d0866f73d5a303348b440a8b42",
+        "particle-arrangement-and-change-evidence": "5404780cfa42af671163bccf8f8ba9abae713161910569e4bfde0d2430352713"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.2",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.2:r1",
+          "verdict": "approved",
+          "judgement": "Independent response names all six transitions including sublimation/deposition.",
+          "assessmentSectionId": "particle-arrangement-and-change-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.2:r2",
+          "verdict": "approved",
+          "judgement": "Independent heating/cooling direction and worked boiling plateau explain energy-transfer continuation.",
+          "assessmentSectionId": "particle-arrangement-and-change-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.2:r3",
+          "verdict": "approved",
+          "judgement": "Independent solid/liquid/gas comparison describes arrangement/motion changes without chemical-identity/particle-size change.",
+          "assessmentSectionId": "particle-arrangement-and-change-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.2:r4",
+          "verdict": "approved",
+          "judgement": "Worked plateau question rejects hotter particles as the necessary consequence during pure fixed-pressure boiling; average kinetic-energy distinction explicit.",
+          "assessmentSectionId": "particle-arrangement-and-change-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "states-of-matter": "61583e01c24d285baef97d70e787bda515afa8d0866f73d5a303348b440a8b42",
+        "particle-arrangement-and-change-evidence": "5404780cfa42af671163bccf8f8ba9abae713161910569e4bfde0d2430352713"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.3",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.3:r1",
+          "verdict": "approved",
+          "judgement": "Independent two-step dilution gives1/5 then1/25 stock, checks sampling rather than carrying whole-stock amount; paler colour from number per volume.",
+          "assessmentSectionId": "particle-arrangement-and-change-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.3:r2",
+          "verdict": "approved",
+          "judgement": "Independent gas diffusion explanation requires random motion/net spreading and continued motion after even mixing; air currents distinguished.",
+          "assessmentSectionId": "particle-arrangement-and-change-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "dilution-and-diffusion": "e5f634b6b8dfc530f6180a777daeb169de7ac5d4e4586610ac18ceaed7f0b0eb",
+        "particle-arrangement-and-change-evidence": "5404780cfa42af671163bccf8f8ba9abae713161910569e4bfde0d2430352713"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.4",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.4:r1",
+          "verdict": "approved",
+          "judgement": "Independent definition identifies the substance dissolving as solute.",
+          "assessmentSectionId": "saturation-and-solubility-data"
+        },
+        {
+          "id": "4CH1:issue3:1.4:r2",
+          "verdict": "approved",
+          "judgement": "Independent definition identifies water medium as solvent.",
+          "assessmentSectionId": "saturation-and-solubility-data"
+        },
+        {
+          "id": "4CH1:issue3:1.4:r3",
+          "verdict": "approved",
+          "judgement": "Independent definition distinguishes homogeneous resulting solution from solvent alone.",
+          "assessmentSectionId": "saturation-and-solubility-data"
+        },
+        {
+          "id": "4CH1:issue3:1.4:r4",
+          "verdict": "approved",
+          "judgement": "Independent definition states temperature/equilibration/max dissolved amount; a momentarily undissolved grain is not conclusive saturation.",
+          "assessmentSectionId": "saturation-and-solubility-data"
+        }
+      ],
+      "sectionSha256": {
+        "solutions-and-saturation": "c08ae85af63bba622014127fca132920de462c19e62a52ba2083e41b060c936b",
+        "saturation-and-solubility-data": "90e801aad50d029c46c02709f31089cc743b4e77b1524bfde17948ceaaaa86c0"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.5C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.5C:r1",
+          "verdict": "approved",
+          "judgement": "Independent15g-water example uses24g/100g-water maximum at20°C and gives3.6g dissolved; source2C-only applicability retained.",
+          "assessmentSectionId": "saturation-and-solubility-data"
+        },
+        {
+          "id": "4CH1:issue3:1.5C:r2",
+          "verdict": "approved",
+          "judgement": "Independent total solution18.6g versus15g solvent comparison and worked158g solution at60°C distinguish denominators.",
+          "assessmentSectionId": "saturation-and-solubility-data"
+        }
+      ],
+      "sectionSha256": {
+        "solubility-units": "076f51fe12e752c30b0d7f8f2ac40a934c953ced0720eaced2676822aa8ee7c1",
+        "saturation-and-solubility-data": "90e801aad50d029c46c02709f31089cc743b4e77b1524bfde17948ceaaaa86c0"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.6C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.6C:r1",
+          "verdict": "approved",
+          "judgement": "Independent plotting task requires labelled axes/units/scales, four exact invented points and suitable smooth trend; SVG coordinates and curve intersections independently checked.",
+          "assessmentSectionId": "saturation-and-solubility-data"
+        },
+        {
+          "id": "4CH1:issue3:1.6C:r2",
+          "verdict": "approved",
+          "judgement": "Independent30°C interpolation≈30g/100g versus100°C unverified extrapolation; exact unseen value not claimed.",
+          "assessmentSectionId": "saturation-and-solubility-data"
+        },
+        {
+          "id": "4CH1:issue3:1.6C:r3",
+          "verdict": "approved",
+          "judgement": "Independent40g-water cooling60→20°C predicts13.6g crystals; separate worked25g-water80→40°C predicts11.5g with no-evaporation/equilibration assumptions.",
+          "assessmentSectionId": "saturation-and-solubility-data"
+        }
+      ],
+      "sectionSha256": {
+        "solubility-curves": "d2078bc1b9e3831be15bd3a81dd320dc8c414c825b6739ee8aa1d70884b6e2f1",
+        "saturation-and-solubility-data": "90e801aad50d029c46c02709f31089cc743b4e77b1524bfde17948ceaaaa86c0"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.7C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.7C:r1",
+          "verdict": "approved",
+          "judgement": "Independent method controls25°C during equilibration/clear sampling and excludes crystals.",
+          "assessmentSectionId": "solubility-mass-and-error-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.7C:r2",
+          "verdict": "approved",
+          "judgement": "Independent mass difference gives3.60g solute/10.80g water, contrasting separate worked3g/12g and rejecting total-sample denominator.",
+          "assessmentSectionId": "solubility-mass-and-error-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.7C:r3",
+          "verdict": "approved",
+          "judgement": "Independent33.3g/100g result, wet/crystal bias, repeat versus systematic error, constant dry mass and teacher-approved safe heating evaluated; no actual trial.",
+          "assessmentSectionId": "solubility-mass-and-error-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "measuring-solubility": "f5ffa04dbc460ab3565ad6651a5f60e8e456a7ea7747be1789d1e7f7c09e4fbf",
+        "solubility-mass-and-error-evidence": "7732fb17a49f67fddd94dd2056f736a60d828529a47be79431a7d5f3c75a9c19"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.8",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.8:r1",
+          "verdict": "approved",
+          "judgement": "D original bonded A–A symbols identify a molecular element using one atom type.",
+          "assessmentSectionId": "particle-arrangement-and-change-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.8:r2",
+          "verdict": "approved",
+          "judgement": "E original identical A–B bonded molecules identify a pure compound with fixed ratio, not mixture merely because symbols differ.",
+          "assessmentSectionId": "particle-arrangement-and-change-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.8:r3",
+          "verdict": "approved",
+          "judgement": "F original A–A plus A–B types identify mixture; independent physical separation versus compound decomposition requires chemical-identity distinction.",
+          "assessmentSectionId": "particle-arrangement-and-change-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "elements-compounds-mixtures": "d308d942de24fa54a035cd3f405705dbfff8cb0569a2c17099efbfec95f16378",
+        "particle-arrangement-and-change-evidence": "5404780cfa42af671163bccf8f8ba9abae713161910569e4bfde0d2430352713"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.9",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.9:r1",
+          "verdict": "approved",
+          "judgement": "Independent matching-pressure reference and shifted range example identifies characteristic pure temperature and checks calibration/conditions.",
+          "assessmentSectionId": "separation-and-purity-cases"
+        },
+        {
+          "id": "4CH1:issue3:1.9:r2",
+          "verdict": "approved",
+          "judgement": "Independent88–91°C versus92°C reference supports impurity without certainty; one matching boiling temperature not conclusive purity.",
+          "assessmentSectionId": "separation-and-purity-cases"
+        }
+      ],
+      "sectionSha256": {
+        "purity-and-temperature": "3d86cb21a106068c00a8236f956cf1e1df66ff12c96d0c149fd77659b541b0bb",
+        "separation-and-purity-cases": "c8aeae577bf7be79a84d9c0b155c2482e207a987f7da65ca3e922aa187a38b71"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.10",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.10:r1",
+          "verdict": "approved",
+          "judgement": "Independent water/nonvolatile-salt task selects simple distillation and describes vaporisation/condensation/collection versus residue.",
+          "assessmentSectionId": "separation-and-purity-cases"
+        },
+        {
+          "id": "4CH1:issue3:1.10:r2",
+          "verdict": "approved",
+          "judgement": "Independent close-boiling miscible liquids select fractional distillation/repeated enrichment, not exclusive evaporation.",
+          "assessmentSectionId": "separation-and-purity-cases"
+        },
+        {
+          "id": "4CH1:issue3:1.10:r3",
+          "verdict": "approved",
+          "judgement": "Independent chalk/water task identifies residue/filtrate and dissolved-solute limitations.",
+          "assessmentSectionId": "separation-and-purity-cases"
+        },
+        {
+          "id": "4CH1:issue3:1.10:r4",
+          "verdict": "approved",
+          "judgement": "Independent suitable-dissolved-solid task describes concentration/cooling/crystal separation/drying without decomposing solid.",
+          "assessmentSectionId": "separation-and-purity-cases"
+        },
+        {
+          "id": "4CH1:issue3:1.10:r5",
+          "verdict": "approved",
+          "judgement": "Independent soluble-ink task chooses paper chromatography; detailed setup and molecular versus physical separation remain distinct.",
+          "assessmentSectionId": "separation-and-purity-cases"
+        }
+      ],
+      "sectionSha256": {
+        "filtration-and-crystallisation": "44f521465196a2ac78c049cd25b53e1235dcf000512314bee5095ce3c4742951",
+        "distillation": "f4d24b96b53ec4f0d83a8f81f5777926f33b08853191c81ac45290997f5fc34c",
+        "paper-chromatography": "79abb15d7e7939d00c5163392498b7d4cf502c5d5dd4b02d462e315e283afe80",
+        "separation-and-purity-cases": "c8aeae577bf7be79a84d9c0b155c2482e207a987f7da65ca3e922aa187a38b71"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.11",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.11:r1",
+          "verdict": "approved",
+          "judgement": "Independent sample28/49mm gives at least two detected components, not exhaustive purity or component count.",
+          "assessmentSectionId": "chromatogram-comparison-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.11:r2",
+          "verdict": "approved",
+          "judgement": "Independent reference R possible co-migration match versus S mismatch under same conditions; identity not proven by one Rf.",
+          "assessmentSectionId": "chromatogram-comparison-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "paper-chromatography": "79abb15d7e7939d00c5163392498b7d4cf502c5d5dd4b02d462e315e283afe80",
+        "chromatogram-comparison-evidence": "0d6e808ae577d1fdd0041559e440ec545bf37ca1c06e06b052d3343c40079f2e"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.12",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.12:r1",
+          "verdict": "approved",
+          "judgement": "Independent R/S/sample0.40/0.80/0.40/0.70 and separate worked18mm/4.5cm=0.40 use same-baseline/common-unit ratios; existing0.25/0.70 schematic rechecked.",
+          "assessmentSectionId": "chromatogram-comparison-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.12:r2",
+          "verdict": "approved",
+          "judgement": "Independent another-solvent comparison rejected as universal Rf; same paper/solvent conditions required and co-migration qualified.",
+          "assessmentSectionId": "chromatogram-comparison-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "rf-values": "369169e7bed293b7cdf8b68eb36428421c6b49eb23bf0a465d8c09e329662492",
+        "chromatogram-comparison-evidence": "0d6e808ae577d1fdd0041559e440ec545bf37ca1c06e06b052d3343c40079f2e"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.13",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.13:r1",
+          "verdict": "approved",
+          "judgement": "Independent pencil baseline/small dried spots/initial solvent-below-spots setup, with water-based suitable ink or food colouring.",
+          "assessmentSectionId": "chromatogram-comparison-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.13:r2",
+          "verdict": "approved",
+          "judgement": "Independent front marking promptly before drying and development stopped before top; avoid reservoir dissolution.",
+          "assessmentSectionId": "chromatogram-comparison-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.13:r3",
+          "verdict": "approved",
+          "judgement": "Independent same-paper/solvent conditions/reference lanes and repeat overlapping/uneven runs; no actual practical trial.",
+          "assessmentSectionId": "chromatogram-comparison-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "paper-chromatography": "79abb15d7e7939d00c5163392498b7d4cf502c5d5dd4b02d462e315e283afe80",
+        "chromatogram-comparison-evidence": "0d6e808ae577d1fdd0041559e440ec545bf37ca1c06e06b052d3343c40079f2e"
+      }
+    }
+  ]
+}
