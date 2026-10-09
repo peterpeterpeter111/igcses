@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-10-09",
+  "reviewer": "Codex",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "familyId": "4PH1.weight.convert-mass",
+  "version": "0.1.0",
+  "scope": "Offline explicit-product evidence trace. No change to the original conservative scores, question packages, rubrics or activation. Synthetic cases are not learner trials.",
+  "sourceEvidence": {
+    "taskId": "4PH1-2024-June-1-standard.Q10.a",
+    "questionPaper": {
+      "documentId": "4PH1-2024-June-1-standard-qp",
+      "pdfPages": [
+        22
+      ],
+      "sha256": "3c1e2eea09258259ce0ae86d6adf24da26a1320e297317c60f64c272839b8454",
+      "visuallyReviewed": true
+    },
+    "markScheme": {
+      "documentId": "4PH1-2024-June-1-standard-ms",
+      "pdfPages": [
+        3,
+        13
+      ],
+      "sha256": "9ca559f719b9603c62ebb2a293c5174c7082c1cf6b13aa412fc5d59fd09c181f",
+      "visuallyReviewed": true
+    }
+  },
+  "sourceObservations": [
+    "QP22 provides a 250 g load and the weight formula; no gravitational field strength is specified and no measurement from the apparatus diagram is needed for part (a).",
+    "MS13 names substitution and evaluation for two marks, ignores units, deducts one for a clear power-of-ten error in mass units, and permits g=9.8/9.81 and the corresponding source answers as well as 10.",
+    "MS3 general guidance calls for positive application of the scheme and consultation when uncertain; it does not explicitly settle this task's general rounding, contradictory-working or answer-only method policies."
+  ],
+  "editorialDecisions": [
+    "Record only observable explicit multiplicands and an exact product. The trace is private diagnostic evidence, not separately awarded marks or a source assertion about a learner.",
+    "Correct explicit multiplicands may be retained as evidence when evaluation is rounded, inconsistent, scaled or otherwise unresolved. The total remains null and needs review.",
+    "Missing multiplicands, competing additional working, unsupported expressions or an alternative to the generated stated g cannot establish this bounded substitution trace.",
+    "Recognise a mass power-of-ten ratio only from explicit working, never from the final number alone. Preserve the existing one-deduction scoring path.",
+    "Original g acceptance remains separate from the generated prompt's explicitly selected g. Do not import concessions without adaptation review.",
+    "Do not turn an evidence label into a minimum score or claim that unresolved notation has been calibrated."
+  ],
+  "implementationHashes": {
+    "server/generators/weight-conversion.ts": "ec7be2bafc9386d9d4254e0329600bfd1b21f57a6791d4a51588eb62fb5427cf",
+    "server/generators/weight-marking.ts": "dae3771f70d5a5fdba7950de0da2861781d6e4ed1d7b4dadc39df75ec9d973b9",
+    "research/validation/weight-marking-cases.json": "67ca5a5ee802581b3abbe5b0e2d0cc77506f3d9af290bcb151aba65cd9cb9f56",
+    "tests/weight-evidence.test.ts": "b9d65f59d9399a155af389aa2e08bd4cd022e7996ac29a77d1bf73c16f628dc5"
+  },
+  "baselineFixtures": {
+    "command": "node --experimental-strip-types --test tests/weight-marking.test.ts",
+    "cases": 36,
+    "passed": 36,
+    "scored": 20,
+    "deferred": 16,
+    "historicalFixtureFileUnchanged": true
+  },
+  "focusedTraceCases": 15,
+  "focusedTraceVerification": "passed-in-257-test-suite",
+  "realStudentResponses": 0,
+  "claimLimits": {
+    "roundingPolicyOfficiallyResolved": false,
+    "impliedMethodOfficiallyResolved": false,
+    "arbitraryErrorMarkingResolved": false,
+    "representationDifficultyEquivalent": false,
+    "perTaskOfficialAOAssigned": false
+  },
+  "fullPedagogicalValidation": "partial",
+  "liveEligible": false,
+  "activeTemplates": 0,
+  "blockers": [
+    "Rounding, implied method, competing working and free-text interpretation need calibrated decisions.",
+    "Explicit-g and table/prose adaptations and task difficulty remain unvalidated for live assessment.",
+    "No official per-leaf AO allocation, live 2/4/6 family blueprint or final AI provider integration."
+  ]
+}

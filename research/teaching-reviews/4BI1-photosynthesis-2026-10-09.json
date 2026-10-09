@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4BI1",
+  "documentId": "4BI1-spec",
+  "specificationSha256": "9f474a0ef0e93ef3c3107b568956d163454cdb476bb2017189e8dd12c0d58cef",
+  "sourceVisualPages": [
+    21
+  ],
+  "sourcePrintedPages": [
+    15
+  ],
+  "reviewDate": "2026-10-09",
+  "reviewer": "Codex source and authored-teaching review",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "authored-teaching-coverage",
+  "policyVersion": 1,
+  "practicalTrialsPerformed": false,
+  "examTemplateCalibrationComplete": false,
+  "inventorySha256": "9a91ba39c499693f74bd2839c069236e9c7432a8f61a9ccf68b1657fe95b3184",
+  "auditRef": "research/curriculum-audits/4BI1-photosynthesis.json",
+  "auditSha256": "7a51dfc00b6d723e69653aa266f297c85fccafc34c74aec2c049c7577b1381a7",
+  "noteRef": "content/notes/biology-structures.json",
+  "diagramSha256": {
+    "/diagrams/biology-leaf-evidence.svg": "d752aade9ee0c37da626dd6d547cb1e740eca543338fbf8f66b9d7e94d4906b4"
+  },
+  "limitations": [
+    "Leaf image is an original schematic, not a micrograph, actual specimen or common-scale measurement.",
+    "All tables and gas/starch observations are invented study inputs, not experiments conducted for this project. Actual practical/learner and independently calibrated examiner responses remain incomplete.",
+    "Only this six-point segment is complete in authored teaching; whole structures-and-functions chapter remains incomplete."
+  ],
+  "points": [
+    {
+      "pointId": "4BI1:issue3:2.18",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.18:r1",
+          "verdict": "approved",
+          "judgement": "Practice identifies carbon source separately from light-energy input and explains chemical-energy transfer without creation of energy.",
+          "assessmentSectionId": "photosynthesis-energy-matter-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.18:r2",
+          "verdict": "approved",
+          "judgement": "Worked food-chain case and practice product-use choices connect plant biomass, respiration, storage and consumer supply.",
+          "assessmentSectionId": "photosynthesis-energy-matter-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "photosynthesis-energy-and-equations": "9b87cd8bbc3c3b7bad156c9fed8dae84a0f9e313368257d662df95f67d0a2e42",
+        "photosynthesis-energy-matter-evidence": "9607f1e1b93f9a20a03ff6a7dff9ef8e7f18f6d60e54ca66ba9638722835047c"
+      }
+    },
+    {
+      "pointId": "4BI1:issue3:2.19",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.19:r1",
+          "verdict": "approved",
+          "judgement": "Worked and independent practice both require the word equation and distinguish light/chlorophyll conditions from material reactants.",
+          "assessmentSectionId": "photosynthesis-energy-matter-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.19:r2",
+          "verdict": "approved",
+          "judgement": "Both tasks require the net balanced symbol equation; six carbon, twelve hydrogen and eighteen oxygen atoms independently checked on each side.",
+          "assessmentSectionId": "photosynthesis-energy-matter-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "photosynthesis-energy-and-equations": "9b87cd8bbc3c3b7bad156c9fed8dae84a0f9e313368257d662df95f67d0a2e42",
+        "photosynthesis-energy-matter-evidence": "9607f1e1b93f9a20a03ff6a7dff9ef8e7f18f6d60e54ca66ba9638722835047c"
+      }
+    },
+    {
+      "pointId": "4BI1:issue3:2.20",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.20:r1",
+          "verdict": "approved",
+          "judgement": "Matched A/B light comparison and C/D plateau are interpreted without claiming an untested limiter.",
+          "assessmentSectionId": "photosynthesis-rate-comparisons"
+        },
+        {
+          "id": "4BI1:issue3:2.20:r2",
+          "verdict": "approved",
+          "judgement": "Matched B/C carbon-dioxide comparison is assessed with equal light/temperature; near-darkness exception retained in earlier lesson.",
+          "assessmentSectionId": "photosynthesis-rate-comparisons"
+        },
+        {
+          "id": "4BI1:issue3:2.20:r3",
+          "verdict": "approved",
+          "judgement": "Independent C/E/F rate task explains suitable warming and excessive-heat decrease without claiming the invented table proves denaturation or a universal optimum.",
+          "assessmentSectionId": "photosynthesis-rate-comparisons"
+        },
+        {
+          "id": "4BI1:issue3:2.20:r4",
+          "verdict": "approved",
+          "judgement": "Controlled-volume/time comparisons, gas-collection limits and bubble-size caveat are assessed; repeats and lamp-temperature control remain explicit.",
+          "assessmentSectionId": "photosynthesis-rate-comparisons"
+        }
+      ],
+      "sectionSha256": {
+        "photosynthesis-limiting-factors": "770696f931b81dbe6fff4a287837d8054629ec6a99f063bc9071eab7b14321cc",
+        "water-plant-oxygen-investigation": "e2fe1e6d9ce96e579daf0d14cdce33434ede95f37a374293db71be29d47fdb07",
+        "photosynthesis-rate-comparisons": "d7474b3982081e9da3a7a9e02e36d034a6bbd25d5c22cc0920ea3a7a41d8d414"
+      }
+    },
+    {
+      "pointId": "4BI1:issue3:2.21",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.21:r1",
+          "verdict": "approved",
+          "judgement": "Practice asks broad-area/thinness functional links and identifies A cuticle/B epidermis, avoiding gas exchange through the cuticle as the primary route.",
+          "assessmentSectionId": "leaf-feature-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.21:r2",
+          "verdict": "approved",
+          "judgement": "C locates palisade cells near incoming light; chloroplast symbols enlarge features without microscope or scale claims.",
+          "assessmentSectionId": "leaf-feature-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.21:r3",
+          "verdict": "approved",
+          "judgement": "D spongy tissue/E space/F pore/I guard cells are identified and linked to internal diffusion and pore control; arrow endpoints visually verified.",
+          "assessmentSectionId": "leaf-feature-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.21:r4",
+          "verdict": "approved",
+          "judgement": "G xylem and H phloem targets lie inside separate original vein tissues; practice distinguishes incoming water/minerals from organic-solute transport.",
+          "assessmentSectionId": "leaf-feature-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "leaf-adaptations-for-photosynthesis": "390ccdb575ad0680e69b15ee869d3b918fcdb9e85be91bd584900a24fd19c57b",
+        "leaf-feature-evidence": "ac49e06ffced901a44836cc1e2218fb02e7af67d9080a14ee2eb84a6181dabed"
+      }
+    },
+    {
+      "pointId": "4BI1:issue3:2.22",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.22:r1",
+          "verdict": "approved",
+          "judgement": "Invented omission case and independent claim correction connect magnesium with chlorophyll/light absorption, not glucose supply.",
+          "assessmentSectionId": "mineral-roles-from-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.22:r2",
+          "verdict": "approved",
+          "judgement": "Practice connects nitrate nitrogen with amino-acid/protein production and growth; controlled omission distinguished from symptom-only diagnosis.",
+          "assessmentSectionId": "mineral-roles-from-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "plant-mineral-requirements": "5b113ac568b4778e1b2bbb933e74cc35a32dc40433ad65aa33d02721154ced21",
+        "mineral-roles-from-evidence": "b1188b8c4f435a7609d45ebdab01529efb64daa64cb1ffea179d80f68142166e"
+      }
+    },
+    {
+      "pointId": "4BI1:issue3:2.23",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.23:r1",
+          "verdict": "approved",
+          "judgement": "O case assesses collected-volume/time rate and glowing-splint evidence for oxygen, with no-plant control/leaks/repeats and net-versus-gross limits.",
+          "assessmentSectionId": "photosynthesis-requirement-cases"
+        },
+        {
+          "id": "4BI1:issue3:2.23:r2",
+          "verdict": "approved",
+          "judgement": "Practice explains starting starch and reagent controls, teacher-managed water/ethanol/iodine preparation, pigment removal and absence of naked flames; later starch is not an instantaneous rate.",
+          "assessmentSectionId": "photosynthesis-requirement-cases"
+        },
+        {
+          "id": "4BI1:issue3:2.23:r3",
+          "verdict": "approved",
+          "judgement": "L case interprets covered versus exposed green regions and asks mask-control improvements rather than assuming the cover affects only light.",
+          "assessmentSectionId": "photosynthesis-requirement-cases"
+        },
+        {
+          "id": "4BI1:issue3:2.23:r4",
+          "verdict": "approved",
+          "judgement": "V case matches pre-recorded green/pale pattern with starch response; independent practice asks the map and repeats, retaining tissue-difference limits.",
+          "assessmentSectionId": "photosynthesis-requirement-cases"
+        },
+        {
+          "id": "4BI1:issue3:2.23:r5",
+          "verdict": "approved",
+          "judgement": "C case requires an isolated absorber and matching conditions; independent failed-positive-control case rejects an unsupported conclusion and asks leak/humidity controls.",
+          "assessmentSectionId": "photosynthesis-requirement-cases"
+        }
+      ],
+      "sectionSha256": {
+        "water-plant-oxygen-investigation": "e2fe1e6d9ce96e579daf0d14cdce33434ede95f37a374293db71be29d47fdb07",
+        "leaf-starch-test": "d1d7031ec05f0af1e48859c49e4d3537ea839385f494b0827e8f92d02b4c1b10",
+        "light-and-chlorophyll-investigations": "9fa34e60e81016016a580d2277f492342d2c750e40a82228eaf6227634436049",
+        "carbon-dioxide-requirement-investigation": "0f18f812f7c1c6446d9784b71590b6109f34b647be7d0ce626184e41aa1af572",
+        "photosynthesis-requirement-cases": "a833bcea203a5c781524c0ede197c6e2e94cf49a87be8ae4c93895c3aae82109"
+      }
+    }
+  ]
+}
