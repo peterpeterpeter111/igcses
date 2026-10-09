@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4BI1",
+  "documentId": "4BI1-spec",
+  "specificationSha256": "9f474a0ef0e93ef3c3107b568956d163454cdb476bb2017189e8dd12c0d58cef",
+  "sourceVisualPages": [
+    19
+  ],
+  "sourcePrintedPages": [
+    13
+  ],
+  "reviewDate": "2026-10-09",
+  "reviewer": "Codex source and authored-teaching review",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "authored-teaching-coverage",
+  "policyVersion": 1,
+  "practicalTrialsPerformed": false,
+  "examTemplateCalibrationComplete": false,
+  "inventorySha256": "0bee520393c2c9ce0bcbd5740728d913f54c663f502d55d5768606c9011a64b0",
+  "auditRef": "research/curriculum-audits/4BI1-cell-organisation.json",
+  "auditSha256": "1e6be238ff127a8ac15e5c94ac65f6a968f542d5a01d322feb676ae762d61f8e",
+  "noteRef": "content/notes/biology-structures.json",
+  "diagramSha256": {
+    "/diagrams/biology-cell-comparison.svg": "f3e7e03867aa472a5f222db3ed460e7cc09219a2c89ecd85a1632f7739f9f0d8",
+    "/diagrams/biology-cell-evidence.svg": "e54d5b3d8956aa576a195490a7bc5dfbed8e16946c7793b7a758ad1e9450e552"
+  },
+  "limitations": [
+    "Two cell diagrams are original schematic models, not real microscopy or common-scale images. Broader real-image/exam-response/learner calibration is not certified.",
+    "Only six source identities are complete in authored teaching. Whole structures-and-functions chapter remains incomplete.",
+    "Stem-cell cases are invented classroom proposals, not clinical trials or treatment recommendations. Clinical background and derivation distinctions rechecked against NHS/NIH."
+  ],
+  "points": [
+    {
+      "pointId": "4BI1:issue3:2.1",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.1:r1",
+          "verdict": "approved",
+          "judgement": "Unfamiliar description of an internal specialised structure assessed as organelle; hierarchy is not its development into an organ.",
+          "assessmentSectionId": "organisation-from-given-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.1:r2",
+          "verdict": "approved",
+          "judgement": "Living unit containing organelles assessed as cell, with one-cell organisms not required to have organ systems.",
+          "assessmentSectionId": "organisation-from-given-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.1:r3",
+          "verdict": "approved",
+          "judgement": "Cooperating cells assessed as tissue rather than a large single cell.",
+          "assessmentSectionId": "organisation-from-given-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.1:r4",
+          "verdict": "approved",
+          "judgement": "Combination of several tissue types assessed as organ; invented case and worked leaf example distinguish tissue from organ.",
+          "assessmentSectionId": "organisation-from-given-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.1:r5",
+          "verdict": "approved",
+          "judgement": "Cooperating organs assessed as organ system, with both plant and animal explanatory examples.",
+          "assessmentSectionId": "organisation-from-given-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "levels-of-organisation": "4af57bf4e3fd4f4350d5fc0cbcddfbaaacf51488e669bac587da9f458c1f0691",
+        "organisation-from-given-evidence": "f268afcc1d7e76185a4787c0d19948a5995ee31aa603f5330898929d22b87104"
+      }
+    },
+    {
+      "pointId": "4BI1:issue3:2.2",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.2:r1",
+          "verdict": "approved",
+          "judgement": "Round body A identified as nucleus in new original model; earlier keyed model retained and reviewed.",
+          "assessmentSectionId": "cell-features-and-functions-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.2:r2",
+          "verdict": "approved",
+          "judgement": "B locates material surrounding organelles, assessed as cytoplasm rather than vacuole contents.",
+          "assessmentSectionId": "cell-features-and-functions-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.2:r3",
+          "verdict": "approved",
+          "judgement": "C label endpoint reaches thin internal membrane, not the outer wall; visually checked.",
+          "assessmentSectionId": "cell-features-and-functions-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.2:r4",
+          "verdict": "approved",
+          "judgement": "D endpoint reaches outer cellulose wall, distinguished from the adjacent membrane.",
+          "assessmentSectionId": "cell-features-and-functions-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.2:r5",
+          "verdict": "approved",
+          "judgement": "E targets folded oval mitochondrial model; internal folds distinguish it from chloroplast model F.",
+          "assessmentSectionId": "cell-features-and-functions-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.2:r6",
+          "verdict": "approved",
+          "judgement": "F targets simplified stacked chloroplast; underground-root exception prevents universality.",
+          "assessmentSectionId": "cell-features-and-functions-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.2:r7",
+          "verdict": "approved",
+          "judgement": "G targets enlarged dots representing ribosomes; practice explicitly rejects normal light-microscope resolution inference.",
+          "assessmentSectionId": "cell-features-and-functions-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.2:r8",
+          "verdict": "approved",
+          "judgement": "H locates largest internal fluid-filled compartment as large permanent vacuole, not cytoplasm.",
+          "assessmentSectionId": "cell-features-and-functions-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "common-cell-structures": "2ed9975390c97019cd49b314537ae0a5e7115fec3ad128aebee09fa3424f826e",
+        "plant-cell-structures": "67d8b347fb950977b0e7824013b48b1229ddafa48fd2fc1078773815c3c38ae5",
+        "reading-cell-models": "69726fa87c7f5b9365af0d77988c2d3279435ffe48488cb205e84e341a5d1aa2",
+        "cell-features-and-functions-evidence": "af44ff64b522f4b51b5e85ada596668dfa89ce29598b293fc053261751c7b0f3"
+      }
+    },
+    {
+      "pointId": "4BI1:issue3:2.3",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.3:r1",
+          "verdict": "approved",
+          "judgement": "Practice requires nuclear genetic instructions and control through gene activity, not an unsupported claim of all DNA being nuclear.",
+          "assessmentSectionId": "cell-features-and-functions-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.3:r2",
+          "verdict": "approved",
+          "judgement": "Cytoplasmic role assessed as location of many enzyme-controlled reactions, not empty space or exclusively all reactions.",
+          "assessmentSectionId": "cell-features-and-functions-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.3:r3",
+          "verdict": "approved",
+          "judgement": "Membrane exchange control assessed separately from wall support.",
+          "assessmentSectionId": "cell-features-and-functions-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.3:r4",
+          "verdict": "approved",
+          "judgement": "Wall support and resistance to excessive expansion assessed separately from selectively permeable transport.",
+          "assessmentSectionId": "cell-features-and-functions-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.3:r5",
+          "verdict": "approved",
+          "judgement": "Mitochondrial later stages of aerobic respiration and energy transfer assessed; worked mismatch and plant presence corrected.",
+          "assessmentSectionId": "cell-features-and-functions-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.3:r6",
+          "verdict": "approved",
+          "judgement": "Chloroplast light absorption/photosynthesis assessed; plant respiration is not replaced.",
+          "assessmentSectionId": "cell-features-and-functions-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.3:r7",
+          "verdict": "approved",
+          "judgement": "Ribosomal protein synthesis assessed; worked interchange with mitochondrion corrected.",
+          "assessmentSectionId": "cell-features-and-functions-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.3:r8",
+          "verdict": "approved",
+          "judgement": "Vacuole cell sap/turgor role assessed in model; distinction from cellulose wall retained.",
+          "assessmentSectionId": "cell-features-and-functions-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "common-cell-structures": "2ed9975390c97019cd49b314537ae0a5e7115fec3ad128aebee09fa3424f826e",
+        "plant-cell-structures": "67d8b347fb950977b0e7824013b48b1229ddafa48fd2fc1078773815c3c38ae5",
+        "cell-features-and-functions-evidence": "af44ff64b522f4b51b5e85ada596668dfa89ce29598b293fc053261751c7b0f3"
+      }
+    },
+    {
+      "pointId": "4BI1:issue3:2.4",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.4:r1",
+          "verdict": "approved",
+          "judgement": "Five shared structures requested and answered for both typical P and Q.",
+          "assessmentSectionId": "cell-features-and-functions-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.4:r2",
+          "verdict": "approved",
+          "judgement": "Three typical differences requested and answered; root-cell chloroplast and specialised-cell exceptions retained.",
+          "assessmentSectionId": "cell-features-and-functions-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.4:r3",
+          "verdict": "approved",
+          "judgement": "New original labelled P/Q models and retained keyed model visually checked; practice locates all A–H structures and rejects shape-only inference.",
+          "assessmentSectionId": "cell-features-and-functions-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "plant-animal-comparison": "215bbffb85b809b5d6132d9a3bf2e18d026f01746a65b53a6034ee6dee02291c",
+        "reading-cell-models": "69726fa87c7f5b9365af0d77988c2d3279435ffe48488cb205e84e341a5d1aa2",
+        "cell-features-and-functions-evidence": "af44ff64b522f4b51b5e85ada596668dfa89ce29598b293fc053261751c7b0f3"
+      }
+    },
+    {
+      "pointId": "4BI1:issue3:2.5B",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.5B:r1",
+          "verdict": "approved",
+          "judgement": "Unfamiliar developing X/Y case assesses different gene activity, proteins and specialised features despite shared starting genetic information.",
+          "assessmentSectionId": "differentiation-from-cell-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.5B:r2",
+          "verdict": "approved",
+          "judgement": "Practice explains why more identical unspecialised cells cannot supply all multicellular tissue/organ functions.",
+          "assessmentSectionId": "differentiation-from-cell-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.5B:r3",
+          "verdict": "approved",
+          "judgement": "X ribosomes and Y communicating projection assessed by feature, immediate effect and supplied function; not shape-only species identification.",
+          "assessmentSectionId": "differentiation-from-cell-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "cell-differentiation": "46a931d94877f535265caa28fd33f32ce2dadc1190837fd2d1ab6cc088f93e1a",
+        "specialised-cell-adaptations": "76f1db4eb2de9a839b6e8747c721515aedec5b890f3ce3fe865f263195dae1f2",
+        "differentiation-from-cell-evidence": "8c883ca57b29a3ab580cf6a01833a7d33fc4fa8f54b094a136dcc5e5d02ea91a"
+      }
+    },
+    {
+      "pointId": "4BI1:issue3:2.6B",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.6B:r1",
+          "verdict": "approved",
+          "judgement": "Invented adult blood-forming case assesses relevant replacement potential without extrapolating to every organ; established example checked against NHS.",
+          "assessmentSectionId": "stem-cell-claims-and-source-choice"
+        },
+        {
+          "id": "4BI1:issue3:2.6B:r2",
+          "verdict": "approved",
+          "judgement": "Adult versus embryo-derived potential, intended cell function and procedure-specific safety assessed without universal risk claims.",
+          "assessmentSectionId": "stem-cell-claims-and-source-choice"
+        },
+        {
+          "id": "4BI1:issue3:2.6B:r3",
+          "verdict": "approved",
+          "judgement": "Source-choice ethical reasoning explicitly addresses embryo destruction in deriving some lines, distinguished from using an existing line; NIH source checked.",
+          "assessmentSectionId": "stem-cell-claims-and-source-choice"
+        },
+        {
+          "id": "4BI1:issue3:2.6B:r4",
+          "verdict": "approved",
+          "judgement": "Practice requires further functional/safety/delivery evidence and rejects culture division as proof of universal cure or restored organ function.",
+          "assessmentSectionId": "stem-cell-claims-and-source-choice"
+        }
+      ],
+      "sectionSha256": {
+        "stem-cells-benefits-and-limits": "6a99b44fa9be01cd4c57406e5cbc6d5680f56cfacd803f5d462cd7c6618175c1",
+        "stem-cell-claims-and-source-choice": "7ec648c0343109b525123186e5d08b5e5ff056a831754e22cb0d400a71b48b61"
+      }
+    }
+  ]
+}

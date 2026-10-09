@@ -12,7 +12,7 @@ void test('historical eight life-characteristic decisions are preserved in the f
   assert.deepEqual(current.points[0], review.points[0]);
   assert.deepEqual(inventory.points.filter((p) => p.teachingCoverage === 'complete').map((p) => p.reference), ['1.1', '1.2', '1.3', '1.4']);
   assert.equal(current.points.reduce((n, p) => n + p.requirements.length, 0), 34);
-  assert.equal(coverageSummary().find((r) => r.subject.code === '4BI1')?.completePoints, 15);
+  assert.equal(coverageSummary().find((r) => r.subject.code === '4BI1')?.completePoints, 21);
   assert.ok(coverageSummary().every((r) => r.completeChapters === 0));
   const result = execFileSync('python3', ['-c', `
 import json,shutil,sys,tempfile
