@@ -261,7 +261,7 @@ for (const document of pilot.documents) {
 }
 check('authored teaching completion requires current evidence and distinct readiness scope', () => {
   const report = JSON.parse(execFileSync('python3', ['scripts/teaching_review.py'], { encoding: 'utf8' }));
-  assert.equal(report.completeAuthoredTeachingPoints, 52);
+  assert.equal(report.completeAuthoredTeachingPoints, 62);
 });
 check('whole authored chapter projection requires source boundaries and pinned complete teaching', () => {
   const report = JSON.parse(execFileSync('python3', ['scripts/chapter_teaching_review.py'], { encoding: 'utf8' }));

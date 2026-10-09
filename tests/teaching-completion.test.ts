@@ -35,10 +35,10 @@ void test('cell-transport review stays bounded while aggregate teaching counts i
     const r = f.run(); assert.equal(r.status, 0, r.stderr);
     assert.deepEqual(JSON.parse(r.stdout), ['4BI1:issue3:2.15', '4BI1:issue3:2.16', '4BI1:issue3:2.17']);
     const summary = coverageSummary();
-    assert.equal(summary.find((r) => r.subject.code === '4BI1')!.completePoints, 27);
+    assert.equal(summary.find((r) => r.subject.code === '4BI1')!.completePoints, 37);
     assert.equal(summary.find((r) => r.subject.code === '4HB1')!.completePoints, 14);
     assert.equal(summary.find((r) => r.subject.code === '4MB1')!.completePoints, 11);
-    assert.equal(summary.reduce((sum, r) => sum + r.completePoints, 0), 52);
+    assert.equal(summary.reduce((sum, r) => sum + r.completePoints, 0), 62);
     assert.ok(summary.every((r) => r.completeChapters === 0));
     assert.equal(summary.reduce((sum, r) => sum + r.fullyProcessed, 0), 2);
   } finally { f.cleanup(); }

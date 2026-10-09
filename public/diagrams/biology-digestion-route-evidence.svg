@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="710" viewBox="0 0 600 710" role="img" aria-labelledby="title desc">
+<title id="title">Food and secretion routes</title>
+<desc id="desc">Original functional map, not an anatomical drawing. Solid arrows follow food through A mouth, B oesophagus, C stomach, D duodenum, E ileum, F colon and G rectum to the anus. H pancreas supplies the duodenum; I liver makes bile, J gall bladder stores it and supplies the duodenum. Some gut details omitted; not to scale.</desc>
+<defs>
+<marker id="food" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M1 1L7 4L1 7" fill="none" stroke="#873c44" stroke-width="1.7"/></marker>
+<marker id="juice" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M1 1L7 4L1 7" fill="none" stroke="#80613b" stroke-width="1.7"/></marker>
+</defs>
+<rect width="600" height="710" fill="#faf6ed"/>
+<g font-family="system-ui, sans-serif" fill="#312a26">
+<text x="26" y="37" font-size="23" font-weight="650">Food and secretion routes</text>
+<text x="26" y="64" font-size="14">A functional map · not anatomical or to scale</text>
+<g fill="#f3e5d8" stroke="#873c44" stroke-width="2">
+<rect x="30" y="96" width="218" height="47" rx="4"/>
+<rect x="30" y="170" width="218" height="47" rx="4"/>
+<rect x="30" y="244" width="218" height="47" rx="4"/>
+<rect x="30" y="318" width="218" height="47" rx="4"/>
+<rect x="30" y="392" width="218" height="47" rx="4"/>
+<rect x="30" y="466" width="218" height="47" rx="4"/>
+<rect x="30" y="540" width="218" height="47" rx="4"/>
+</g>
+<g font-size="19" font-weight="600">
+<text x="48" y="126">A · Mouth</text><text x="48" y="200">B · Oesophagus</text><text x="48" y="274">C · Stomach</text><text x="48" y="348">D · Duodenum</text><text x="48" y="422">E · Ileum</text><text x="48" y="496">F · Colon</text><text x="48" y="570">G · Rectum</text>
+</g>
+<g stroke="#873c44" stroke-width="2.4" fill="none" marker-end="url(#food)">
+<path d="M139 144V165"/><path d="M139 218V239"/><path d="M139 292V313"/><path d="M139 366V387"/><path d="M139 440V461"/><path d="M139 514V535"/><path d="M139 588V610"/>
+</g>
+<text x="94" y="638" font-size="18">Anus / exit</text>
+<g fill="#eee4c9" stroke="#80613b" stroke-width="2">
+<rect x="347" y="170" width="225" height="47" rx="4"/><rect x="347" y="244" width="225" height="47" rx="4"/><rect x="347" y="392" width="225" height="47" rx="4"/>
+</g>
+<g font-size="19" font-weight="600"><text x="363" y="200">I · Liver</text><text x="363" y="274">J · Gall bladder</text><text x="363" y="422">H · Pancreas</text></g>
+<g stroke="#80613b" stroke-width="2.2" stroke-dasharray="5 4" fill="none" marker-end="url(#juice)">
+<path d="M458 218V239"/><path d="M458 292V341H254"/><path d="M346 416H289V355H254"/>
+</g>
+<text x="359" y="124" font-size="15" font-weight="600">Accessory organs</text>
+<text x="371" y="320" font-size="14">Bile</text>
+<text x="340" y="462" font-size="14">Pancreatic secretions</text>
+<path d="M337 530H383" stroke="#873c44" stroke-width="2.4" marker-end="url(#food)"/>
+<text x="399" y="536" font-size="14">Food route</text>
+<path d="M337 561H383" stroke="#80613b" stroke-width="2.2" stroke-dasharray="5 4" marker-end="url(#juice)"/>
+<text x="399" y="567" font-size="14">Secretions</text>
+<text x="26" y="680" font-size="14">Food never passes through H, I or J.</text>
+</g></svg>

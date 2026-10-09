@@ -1,0 +1,381 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4BI1",
+  "documentId": "4BI1-spec",
+  "specificationSha256": "9f474a0ef0e93ef3c3107b568956d163454cdb476bb2017189e8dd12c0d58cef",
+  "sourceVisualPages": [
+    21
+  ],
+  "sourcePrintedPages": [
+    15
+  ],
+  "reviewDate": "2026-10-09",
+  "reviewer": "Codex source and authored-teaching review",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "authored-teaching-coverage",
+  "policyVersion": 1,
+  "practicalTrialsPerformed": false,
+  "examTemplateCalibrationComplete": false,
+  "inventorySha256": "17caeeea2a3b40ebd1e9de54f42579e76bdec7ec71734d7265b933b58de45dc1",
+  "auditRef": "research/curriculum-audits/4BI1-human-nutrition.json",
+  "auditSha256": "6f56c2ecae82692b3800ebd8b453bccac6f9a1ff0335dfe10dc4588e42c31fa5",
+  "noteRef": "content/notes/biology-structures.json",
+  "diagramSha256": {
+    "/diagrams/biology-digestion-route-evidence.svg": "f54f256b781df9d14d677ab635d11a2e416ad1d24d8ec0545284cfd98f034614",
+    "/diagrams/biology-villus-transfer.svg": "f27784f4da36115d16c322c2a98b04e1e68830b9bd00e0e6ea38fe6fb13e5422"
+  },
+  "limitations": [
+    "Route and villus diagrams are original functional models, not anatomy measurements or microscopy. Some gut details omitted explicitly.",
+    "Invented calorimetry readings are not practical trials or true combustion/metabolically available energy measurements.",
+    "Classroom nutrient-role comparisons do not prescribe personal dietary intake or diagnose illness. Whole chapter/learner/exam readiness remains incomplete."
+  ],
+  "points": [
+    {
+      "pointId": "4BI1:issue3:2.24",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.24:r1",
+          "verdict": "approved",
+          "judgement": "Independent case names all seven categories while distinguishing multiple vitamins/minerals from extra equal portions.",
+          "assessmentSectionId": "diet-component-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.24:r2",
+          "verdict": "approved",
+          "judgement": "Worked/independent menu questions reject equal mass as the balance criterion.",
+          "assessmentSectionId": "diet-component-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.24:r3",
+          "verdict": "approved",
+          "judgement": "Diet-over-time evaluation and amounts/context distinguish plausible source examples from demonstrated adequate intake.",
+          "assessmentSectionId": "diet-component-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "balanced-diet-and-macronutrients": "c6c2954751c71f0220185074659d12fce5f6e88a34612ad91eb8f25b2b796b78",
+        "diet-component-evidence": "d517a0f48b3d48663828f2e3da3e2bf36356ff9ed1b3a7de8b6dd22ae57015a5"
+      }
+    },
+    {
+      "pointId": "4BI1:issue3:2.25",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.25:r1",
+          "verdict": "approved",
+          "judgement": "Independent rice source identifies carbohydrate and respiration fuel.",
+          "assessmentSectionId": "diet-component-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.25:r2",
+          "verdict": "approved",
+          "judgement": "Independent protein in eggs source is linked to growth/repair, not a claim of one exclusive food constituent.",
+          "assessmentSectionId": "diet-component-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.25:r3",
+          "verdict": "approved",
+          "judgement": "Independent oil source is linked to lipid energy storage/membrane material.",
+          "assessmentSectionId": "diet-component-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.25:r4",
+          "verdict": "approved",
+          "judgement": "Independent carrot carotenoids are linked to vitamin A precursors/normal vision; current NIH A fact sheet supports source/role.",
+          "assessmentSectionId": "diet-component-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.25:r5",
+          "verdict": "approved",
+          "judgement": "Independent peppers source linked to vitamin C/collagen; NIH publisher-index text available despite direct request error, no full direct download claimed.",
+          "assessmentSectionId": "diet-component-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.25:r6",
+          "verdict": "approved",
+          "judgement": "Independent oily-fish vitamin D linked to calcium absorption/bones; direct current NIH D sheet supports role.",
+          "assessmentSectionId": "diet-component-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.25:r7",
+          "verdict": "approved",
+          "judgement": "Independent calcium-fortified drink mineral linked to bones/teeth, distinguished from vitamin D.",
+          "assessmentSectionId": "diet-component-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.25:r8",
+          "verdict": "approved",
+          "judgement": "Independent iron in pulses linked to haemoglobin/oxygen transport, not diagnosis from food or a symptom.",
+          "assessmentSectionId": "diet-component-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.25:r9",
+          "verdict": "approved",
+          "judgement": "Independent water role as solvent/transport, not an energy fuel or a digestion substrate.",
+          "assessmentSectionId": "diet-component-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.25:r10",
+          "verdict": "approved",
+          "judgement": "Independent wholegrain fibre linked to bulk/movement; cellulose is not digested by human enzymes to glucose.",
+          "assessmentSectionId": "diet-component-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "balanced-diet-and-macronutrients": "c6c2954751c71f0220185074659d12fce5f6e88a34612ad91eb8f25b2b796b78",
+        "vitamins-a-c-d": "99e39158784b7b702723735f49fd7e760c09a24c90e8d183f12fd523781ed715",
+        "minerals-water-and-fibre": "cfee8a74e05706c00d763837ada099bac48f2024d9042654818cd1a7a81cab1b",
+        "diet-component-evidence": "d517a0f48b3d48663828f2e3da3e2bf36356ff9ed1b3a7de8b6dd22ae57015a5"
+      }
+    },
+    {
+      "pointId": "4BI1:issue3:2.26",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.26:r1",
+          "verdict": "approved",
+          "judgement": "Independent otherwise-similar activity comparison connects muscle contraction with energy supplied through respiration.",
+          "assessmentSectionId": "energy-requirement-comparisons"
+        },
+        {
+          "id": "4BI1:issue3:2.26:r2",
+          "verdict": "approved",
+          "judgement": "Independent child/adult comparison rejects universal ranking and includes growth/body size/activity.",
+          "assessmentSectionId": "energy-requirement-comparisons"
+        },
+        {
+          "id": "4BI1:issue3:2.26:r3",
+          "verdict": "approved",
+          "judgement": "Independent pregnancy explanation connects developing tissues and variable stage/context, rejects double-intake prescription.",
+          "assessmentSectionId": "energy-requirement-comparisons"
+        }
+      ],
+      "sectionSha256": {
+        "varying-energy-requirements": "d454106219fefcc940b1f5035dc6131f5f82bc1c0d704989b642c7509644b2d5",
+        "energy-requirement-comparisons": "7e8d190d546bf0cd1f71d30c6bba3a3df9c03b57b96d08c90c3158031fcee66f"
+      }
+    },
+    {
+      "pointId": "4BI1:issue3:2.27",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.27:r1",
+          "verdict": "approved",
+          "judgement": "A mouth identification and independent chewing/saliva/starch role.",
+          "assessmentSectionId": "food-route-and-muscle-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.27:r2",
+          "verdict": "approved",
+          "judgement": "B oesophagus identification and peristaltic bolus movement, not digestive-gland claim.",
+          "assessmentSectionId": "food-route-and-muscle-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.27:r3",
+          "verdict": "approved",
+          "judgement": "C stomach identification and mixing/storage/acid/protease functions.",
+          "assessmentSectionId": "food-route-and-muscle-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.27:r4",
+          "verdict": "approved",
+          "judgement": "D duodenum identified as first small-intestine region receiving bile/pancreatic enzymes; solid food route separated from dashed secretions.",
+          "assessmentSectionId": "food-route-and-muscle-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.27:r5",
+          "verdict": "approved",
+          "judgement": "E ileum identified in later small intestine with digestion/absorption; omitted jejunum declared rather than depicting consecutive measured lengths.",
+          "assessmentSectionId": "food-route-and-muscle-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.27:r6",
+          "verdict": "approved",
+          "judgement": "F colon identifies remaining water/salt absorption, not sole site of all water absorption.",
+          "assessmentSectionId": "food-route-and-muscle-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.27:r7",
+          "verdict": "approved",
+          "judgement": "G rectum stores faeces before egestion; exit anus shown and distinct from excretion.",
+          "assessmentSectionId": "food-route-and-muscle-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.27:r8",
+          "verdict": "approved",
+          "judgement": "H pancreas secretes digestive enzymes to D through a duct; independent duct-block case does not reroute food through it.",
+          "assessmentSectionId": "food-route-and-muscle-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "alimentary-canal-and-accessory-organs": "a90fa48f9c04376be295bc97c87e419eed39a30d85327343d3ea6a5bded41d57",
+        "food-route-and-muscle-evidence": "7f77b41e64f88f8f04d0f412144b5987d629d314cbed3e51cdc4db5d887a3e0c"
+      }
+    },
+    {
+      "pointId": "4BI1:issue3:2.28",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.28:r1",
+          "verdict": "approved",
+          "judgement": "Independent permanent-contraction misconception requires constriction behind and receiving relaxation ahead/coordinated moving wave.",
+          "assessmentSectionId": "food-route-and-muscle-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.28:r2",
+          "verdict": "approved",
+          "judgement": "Independent horizontal-oesophagus question requires active muscle mechanism and rejects gravity as sole cause.",
+          "assessmentSectionId": "food-route-and-muscle-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "peristalsis": "ce6e1fb8f9f078f15c26275c5bdea7dba0c945d903f7b110dc39226fa787f359",
+        "food-route-and-muscle-evidence": "7f77b41e64f88f8f04d0f412144b5987d629d314cbed3e51cdc4db5d887a3e0c"
+      }
+    },
+    {
+      "pointId": "4BI1:issue3:2.29",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.29:r1",
+          "verdict": "approved",
+          "judgement": "Independent amylase step labelled starch to maltose in simplified sequence, not full direct glucose conversion.",
+          "assessmentSectionId": "digestion-and-bile-cases"
+        },
+        {
+          "id": "4BI1:issue3:2.29:r2",
+          "verdict": "approved",
+          "judgement": "Independent maltase step labelled maltose to glucose separately from absorption/respiration.",
+          "assessmentSectionId": "digestion-and-bile-cases"
+        },
+        {
+          "id": "4BI1:issue3:2.29:r3",
+          "verdict": "approved",
+          "judgement": "Independent protease correction identifies proteins to amino acids overall; intermediates qualified in earlier teaching.",
+          "assessmentSectionId": "digestion-and-bile-cases"
+        },
+        {
+          "id": "4BI1:issue3:2.29:r4",
+          "verdict": "approved",
+          "judgement": "Independent lipase correction identifies lipids to fatty acids/glycerol overall; monoglyceride intermediate qualification retained in earlier teaching.",
+          "assessmentSectionId": "digestion-and-bile-cases"
+        }
+      ],
+      "sectionSha256": {
+        "amylase-and-maltase": "f8056f522154bb41d776e67eaf4b8f722eaacbf56dadc54e34dc51ab8c52b426",
+        "proteases-and-lipases": "84f503d74f91af7b989211fca4a8834e31cfa8e58da910ead32ac9c1febf8cdc",
+        "digestion-and-bile-cases": "b7800f2720f1f737e03d9181afde51bae2a778ab6420428c071b64f5ed2ef22b"
+      }
+    },
+    {
+      "pointId": "4BI1:issue3:2.30",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.30:r1",
+          "verdict": "approved",
+          "judgement": "Independent I liver production of bile and original route labels verified.",
+          "assessmentSectionId": "food-route-and-muscle-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.30:r2",
+          "verdict": "approved",
+          "judgement": "Independent J gall-bladder storage distinct from liver production; delivery goes to D, no food route through it.",
+          "assessmentSectionId": "food-route-and-muscle-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "bile-production-and-function": "4ea9db2496faf2437058304342214d34f7e69e1b138faa6e3498e7e29289b724",
+        "food-route-and-muscle-evidence": "7f77b41e64f88f8f04d0f412144b5987d629d314cbed3e51cdc4db5d887a3e0c"
+      }
+    },
+    {
+      "pointId": "4BI1:issue3:2.31",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.31:r1",
+          "verdict": "approved",
+          "judgement": "Independent two-role answer includes contribution to acid neutralisation with other secretions; not a sole bile neutralisation claim.",
+          "assessmentSectionId": "digestion-and-bile-cases"
+        },
+        {
+          "id": "4BI1:issue3:2.31:r2",
+          "verdict": "approved",
+          "judgement": "Worked product-evidence case and independent correction distinguish physical emulsification/increased lipase surface from molecular hydrolysis; bile not enzyme.",
+          "assessmentSectionId": "digestion-and-bile-cases"
+        }
+      ],
+      "sectionSha256": {
+        "bile-production-and-function": "4ea9db2496faf2437058304342214d34f7e69e1b138faa6e3498e7e29289b724",
+        "digestion-and-bile-cases": "b7800f2720f1f737e03d9181afde51bae2a778ab6420428c071b64f5ed2ef22b"
+      }
+    },
+    {
+      "pointId": "4BI1:issue3:2.32",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.32:r1",
+          "verdict": "approved",
+          "judgement": "Independent reduced-microvilli comparison connects lost area to transfer, distinguishing cell projections from villi.",
+          "assessmentSectionId": "absorption-feature-comparisons"
+        },
+        {
+          "id": "4BI1:issue3:2.32:r2",
+          "verdict": "approved",
+          "judgement": "Independent thicker-lining comparison identifies greater crossing distance against one-cell-thick epithelium.",
+          "assessmentSectionId": "absorption-feature-comparisons"
+        },
+        {
+          "id": "4BI1:issue3:2.32:r3",
+          "verdict": "approved",
+          "judgement": "Independent slower capillary removal comparison explains onward glucose/amino-acid transport rather than claiming all products diffuse into one vessel.",
+          "assessmentSectionId": "absorption-feature-comparisons"
+        },
+        {
+          "id": "4BI1:issue3:2.32:r4",
+          "verdict": "approved",
+          "judgement": "Independent lacteal identification connects repackaged long-chain lipid products to lymph; existing original villus diagram rechecked/pinned.",
+          "assessmentSectionId": "absorption-feature-comparisons"
+        }
+      ],
+      "sectionSha256": {
+        "villi-and-absorption": "bfde8cebbccc0e72a71de7bf978b42406667e021d57f8abcd103f756532f6c7f",
+        "absorption-feature-comparisons": "ecb5d4f3956ebf2a37d6fd368ad48ec0ec9f688c0651d9e70c459ddca5491394"
+      }
+    },
+    {
+      "pointId": "4BI1:issue3:2.33B",
+      "requirements": [
+        {
+          "id": "4BI1:issue3:2.33B:r1",
+          "verdict": "approved",
+          "judgement": "Independent invented P/Q/R readings use differences in food mass/water temperature, not starting mass/final temperature.",
+          "assessmentSectionId": "food-energy-comparison-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.33B:r2",
+          "verdict": "approved",
+          "judgement": "Independent Q values2520/3528/1890J and separate worked1260J checked with exact arithmetic.",
+          "assessmentSectionId": "food-energy-comparison-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.33B:r3",
+          "verdict": "approved",
+          "judgement": "Independent per-burned-gram values6.30/5.04/6.30kJ/g and worked5.04 checked; mass/energy unit conversion explicit.",
+          "assessmentSectionId": "food-energy-comparison-evidence"
+        },
+        {
+          "id": "4BI1:issue3:2.33B:r4",
+          "verdict": "approved",
+          "judgement": "Unequal single-trial ranking rejected; independent controls/repeats/systematic loss/safety task, including teacher-approved non-nut food consistent with visually read Pearson guidePDF30/printed28.",
+          "assessmentSectionId": "food-energy-comparison-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "food-energy-investigation": "573f6c7cdcb860ef92ad529896c4370623a1831a957d4915299414706b274936",
+        "food-calorimetry-evaluation": "d83827ae14df9e794595346d5a5fbc01f43aaa5d8e220cac197e9bceff8399a1",
+        "food-energy-comparison-evidence": "c30e8a29788114067d320ac80e190e0a70ba8626eecf7b3d105936a38e356531"
+      }
+    }
+  ]
+}
