@@ -1,0 +1,357 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4CH1",
+  "documentId": "4CH1-spec",
+  "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "sourceVisualPages": [
+    20,
+    21
+  ],
+  "sourcePrintedPages": [
+    14,
+    15
+  ],
+  "reviewDate": "2026-10-09",
+  "reviewer": "Codex source and authored-teaching review",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "authored-teaching-coverage",
+  "policyVersion": 1,
+  "practicalTrialsPerformed": false,
+  "examTemplateCalibrationComplete": false,
+  "noteRef": "content/notes/chemistry.json",
+  "inventorySha256": "356f975a9acefda325103b8bf97b8d6f144dba7907856e4bc5a3fe8edb6bb698",
+  "auditRef": "research/curriculum-audits/4CH1-bonding.json",
+  "auditSha256": "ab5ca3fceb3855f094cbff68d14b40be116fce609984b0de89f414097e9f3be1",
+  "diagramSha256": {
+    "/diagrams/chemistry-bonding-ionic.svg": "363877634febac9497c10b0a35dcf8931b18bb9b224e1f1d99449972d94ae1a6",
+    "/diagrams/chemistry-lithium-nitride-transfer.svg": "9440a2b43bd5ebb2e0bd7c3922698e4f887c722ba21bc882e5457c1c5750c31e",
+    "/diagrams/chemistry-aluminium-oxide-transfer.svg": "909357b6a2d1cd769ec8f61f3280561d56f8af0c66b9306865a2873f6e11c396",
+    "/diagrams/chemistry-bonding-metallic.svg": "20e60db4969ca04df8c2b8a16eab73ee1fb21be1e9a2f2b4380375e1d3761410"
+  },
+  "limitations": [
+    "Earlier7ionic/14decisions preserved exactly;10newpropertyidentities add13decisions.",
+    "1.46fullspecifiedmolecule diagrams and1.25prescribedreactioncollection remainpartial; wholePrincipleschapter andexamreadiness incomplete.",
+    "Inventedstatecomparison/fixedoriginalexercises;monovalentmetalpatch isquantitativebookkeeping, not actualelectronpositions orlearner/practicaltrial."
+  ],
+  "points": [
+    {
+      "pointId": "4CH1:issue3:1.37",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.37:r1",
+          "verdict": "approved",
+          "judgement": "Independent Al13protons−3electrons gives10electrons/+3, Li diagram donors retain inner2; no proton change.",
+          "assessmentSectionId": "ion-charge-and-formula-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.37:r2",
+          "verdict": "approved",
+          "judgement": "Independent O8protons+2electrons gives10/−2 and practiceP15+3→18/−3; equal electron counts do not change element identity.",
+          "assessmentSectionId": "ion-charge-and-formula-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "ion-formation": "caa42b2a865efd889184e59d57333929d4740c06247d5be41266593be64cdf91",
+        "ion-charge-and-formula-evidence": "221d97ac72d468f2f2f9c294b3ddfea8e4dbc13eaee23507e8daceeffb43d8af"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.38",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.38:r1",
+          "verdict": "approved",
+          "judgement": "Course Groups1/2/3→+1/+2/+3 applied to Li/Mg/Al with restricted simple-ion model; explicit modern/group distinction remains.",
+          "assessmentSectionId": "ion-charge-and-formula-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.38:r2",
+          "verdict": "approved",
+          "judgement": "Course Groups5/6/7→−3/−2/−1 applied to N/O/Cl and P practice; no universal full-periodic ion claim.",
+          "assessmentSectionId": "ion-charge-and-formula-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.38:r3",
+          "verdict": "approved",
+          "judgement": "Own specifiedAg+/Cu2+/Fe2+/Fe3+/Pb2+/Zn2+ all verified in original text/table and mixed-formula practice.",
+          "assessmentSectionId": "ion-charge-and-formula-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.38:r4",
+          "verdict": "approved",
+          "judgement": "Own specifiedH+,OH−,NH4+,CO3²−,NO3−,SO4²− all present; whole-ion charge and ammonium no-metal counterexample retained, HCl acid bookkeeping distinguished from ionic salt.",
+          "assessmentSectionId": "ion-charge-and-formula-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "ion-formation": "caa42b2a865efd889184e59d57333929d4740c06247d5be41266593be64cdf91",
+        "ion-charges-and-formulae": "4c6fff183ea1ef397f7cd2eec4b55b150edb289b75fea8c79888584ad54e54a1",
+        "ion-charge-and-formula-evidence": "221d97ac72d468f2f2f9c294b3ddfea8e4dbc13eaee23507e8daceeffb43d8af"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.39",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.39:r1",
+          "verdict": "approved",
+          "judgement": "Independent smallest common charge ratios yieldAl₂(SO₄)₃,Ag₂O,Pb(OH)₂,(NH₄)₂SO₄;FeSO₄vsFe₂(SO₄)₃ distinction andMgO reduction checked. Polyatomic subscripts retained.",
+          "assessmentSectionId": "ion-charge-and-formula-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "ion-charges-and-formulae": "4c6fff183ea1ef397f7cd2eec4b55b150edb289b75fea8c79888584ad54e54a1",
+        "ion-charge-and-formula-evidence": "221d97ac72d468f2f2f9c294b3ddfea8e4dbc13eaee23507e8daceeffb43d8af"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.40",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.40:r1",
+          "verdict": "approved",
+          "judgement": "Independent Li₃N before3×1cross+5dots=8;after3Li+/N3−with5dots3crosses=8. Al₂O₃ independently before6crosses18dots=24;after2Al3+/3O2−each6dots2crosses=24. Charges/brackets/ratios checked visually.",
+          "assessmentSectionId": "ionic-transfer-count-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.40:r2",
+          "verdict": "approved",
+          "judgement": "New Groups1/5 and3/6 diagrams plus existing2/7MgCl₂ diagram reviewed. All six specified course groups represented;general electron/charge balance taught for other permitted combinations. Empty outer-metal brackets explicitly retain inner electrons; original model not full physical trajectory/crystal.",
+          "assessmentSectionId": "aluminium-oxide-diagram-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "ionic-dot-cross": "f668c9bf2181e24efd8962c04e9f16d1a4ee4c796359960911a525be834b57c1",
+        "ionic-transfer-count-evidence": "742947a916fbaa034b0054cc1a615faa233798d8c39f4862f99db72de179454b",
+        "aluminium-oxide-diagram-evidence": "74a768b33ca44ca04d3b08230452ac14f5973d1126d799adea72b13c3e07c40f"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.41",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.41:r1",
+          "verdict": "approved",
+          "judgement": "Independent incorrect transfer-as-bond claim corrected: attractive electrostatic interaction between resulting opposite ions in an extended lattice is the bond.",
+          "assessmentSectionId": "ionic-structure-and-conduction-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "ionic-lattice-properties": "d86976f851104676b97e6db7f0b39e128cbc611713a0719359f135a7f03ba254",
+        "ionic-structure-and-conduction-evidence": "a22a56cb3b51d6ebe6947329c12b0813a80cb9d4a932a8007da6f964b725e3ab"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.42",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.42:r1",
+          "verdict": "approved",
+          "judgement": "Independent giant 3D ion arrangement and strong attractions distinguished from simple molecules/intermolecular forces.",
+          "assessmentSectionId": "ionic-structure-and-conduction-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.42:r2",
+          "verdict": "approved",
+          "judgement": "Independent X property explanation connects overcoming strong ionic attractions to substantial energy for melting/boiling;ions remain charged on melting.",
+          "assessmentSectionId": "ionic-structure-and-conduction-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "ionic-lattice-properties": "d86976f851104676b97e6db7f0b39e128cbc611713a0719359f135a7f03ba254",
+        "ionic-structure-and-conduction-evidence": "a22a56cb3b51d6ebe6947329c12b0813a80cb9d4a932a8007da6f964b725e3ab"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.43",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.43:r1",
+          "verdict": "approved",
+          "judgement": "Independent nonconducting solid contains charged but immobile ions; fixed vibration not current transport through lattice.",
+          "assessmentSectionId": "ionic-structure-and-conduction-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.43:r2",
+          "verdict": "approved",
+          "judgement": "Independent molten versusaqueous distinctions, mobileions not electrons, dissolutioncondition and metalwire electroncarriers checked;conductivity alone not unique structural proof.",
+          "assessmentSectionId": "ionic-structure-and-conduction-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "ionic-conduction": "6b63051d7eadfde5223a14eaf2ccbad09a44fecb017da9ab4e7e7eb8494172a6",
+        "ionic-structure-and-conduction-evidence": "a22a56cb3b51d6ebe6947329c12b0813a80cb9d4a932a8007da6f964b725e3ab"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.44",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.44:r1",
+          "verdict": "approved",
+          "judgement": "Independent H₂ one-dot/one-cross counts one shared pair and two distinct electrons, not four; single/double/triple pair counts1/2/3 checked.",
+          "assessmentSectionId": "shared-pair-attraction-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "covalent-bonds": "c62315749a09fa3841cbb740cffb24d94810c7b04a8b9ad0790b8d6144b5df02",
+        "shared-pair-attraction-evidence": "f56216d2680076a85a89f8bc83bbb35df8863b6b24bb3936969a7333c3ef5bf7"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.45",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.45:r1",
+          "verdict": "approved",
+          "judgement": "Independent correction rejects electron-electron attraction and ionic transfer; both positive nuclei attract shared negative electrons, not just one nucleus.",
+          "assessmentSectionId": "shared-pair-attraction-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "covalent-bonds": "c62315749a09fa3841cbb740cffb24d94810c7b04a8b9ad0790b8d6144b5df02",
+        "shared-pair-attraction-evidence": "f56216d2680076a85a89f8bc83bbb35df8863b6b24bb3936969a7333c3ef5bf7"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.47",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.47:r1",
+          "verdict": "approved",
+          "judgement": "Independent fictional P/Q/R state inference checks melting and boiling separately. Ordinary change separates molecules while covalent bonds remain intact; inter-versus-intramolecular attractions explicit.",
+          "assessmentSectionId": "molecular-property-comparison-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "simple-molecular-properties": "9ea2d5e554a7c7a1220f702cf31b3df8bb4a08931356969902fc92c803a44170",
+        "molecular-property-comparison-evidence": "61cd6d57e5f8f312d7211c3f9ae7bad0c125f8e5396b2f196bf430da571532fc"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.48",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.48:r1",
+          "verdict": "approved",
+          "judgement": "Independent comparable invented Mr40/70/100 series supports rising boiling values−10/25/60; fourthunrelatedMr130boiling40 is not invalidated by a general trend. Shape/attraction-type scope retained.",
+          "assessmentSectionId": "molecular-property-comparison-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "simple-molecular-properties": "9ea2d5e554a7c7a1220f702cf31b3df8bb4a08931356969902fc92c803a44170",
+        "molecular-property-comparison-evidence": "61cd6d57e5f8f312d7211c3f9ae7bad0c125f8e5396b2f196bf430da571532fc"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.49",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.49:r1",
+          "verdict": "approved",
+          "judgement": "Independent network versus separatecages comparison connects extensive strong covalent bonding to large thermal disruption energy;actualcarbonpressure/sublimation qualification prevents invented phase data.",
+          "assessmentSectionId": "carbon-structure-property-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "giant-covalent-and-carbon": "f93177e3963bc29383ffcac596eea225884bbf6d7375326f2b3322ab30b5a837",
+        "carbon-structure-property-evidence": "71b906d7c91dbfdfdc75bfe6b6d1e8bdcab26086197a113aa441672af103fc4b"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.50",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.50:r1",
+          "verdict": "approved",
+          "judgement": "Independent purediamond four-neighbour rigid3D network explains hardness and ordinary insulating behaviour;not merely sameelement implies sameproperties.",
+          "assessmentSectionId": "carbon-structure-property-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.50:r2",
+          "verdict": "approved",
+          "judgement": "Independent graphite three-neighbour hexagonallayers connect strongwithin-layer thermalstability, weakerbetween-layer sliding/softness and delocalisedelectron conduction alonglayers.",
+          "assessmentSectionId": "carbon-structure-property-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.50:r3",
+          "verdict": "approved",
+          "judgement": "Independent C₆₀ discrete60carboncages contrasts giantnetwork and compound;weakerbetween-cage attractions/softerpoorconductor qualified forordinarypure undopedmaterial, nographite-like extendedlayerpath.",
+          "assessmentSectionId": "carbon-structure-property-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "giant-covalent-and-carbon": "f93177e3963bc29383ffcac596eea225884bbf6d7375326f2b3322ab30b5a837",
+        "carbon-structure-property-evidence": "71b906d7c91dbfdfdc75bfe6b6d1e8bdcab26086197a113aa441672af103fc4b"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.51",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.51:r1",
+          "verdict": "approved",
+          "judgement": "Independent ordinaryneutralmolecular lackofmobilechargecarriers, bonding electrons localised versus delocalised;aqueousacidionisation counterexample explicitly retains usually rather than absolute.",
+          "assessmentSectionId": "molecular-property-comparison-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "simple-molecular-properties": "9ea2d5e554a7c7a1220f702cf31b3df8bb4a08931356969902fc92c803a44170",
+        "giant-covalent-and-carbon": "f93177e3963bc29383ffcac596eea225884bbf6d7375326f2b3322ab30b5a837",
+        "molecular-property-comparison-evidence": "61cd6d57e5f8f312d7211c3f9ae7bad0c125f8e5396b2f196bf430da571532fc"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.52C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.52C:r1",
+          "verdict": "approved",
+          "judgement": "Actual2D originalSVG has regular3×3positivecore arrays and9electronlabels perpanel, withmiddle rowshifted34units insecond. Labels/monovalentneutralbookkeeping/model-slice andnonphysicalelectronpositions visually andnode-count checked.",
+          "assessmentSectionId": "metallic-model-and-deformation-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "metallic-bonding": "6f31c5752cb678d4f957edbec3e7fdf7b6301542be9d69859f071ba039c0df93",
+        "metallic-model-and-deformation-evidence": "7da545c1b782710f6254bf0924bddf02ba8499658c5e9796083f9af00a32f165"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.53C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.53C:r1",
+          "verdict": "approved",
+          "judgement": "Independent incorrect neutralcircle/noelectronmodel corrected to positivecores plusdelocalisedelectrons withstrong electrostaticattraction;no disappearance of charge onlayer shift.",
+          "assessmentSectionId": "metallic-model-and-deformation-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "metallic-bonding": "6f31c5752cb678d4f957edbec3e7fdf7b6301542be9d69859f071ba039c0df93",
+        "metallic-model-and-deformation-evidence": "7da545c1b782710f6254bf0924bddf02ba8499658c5e9796083f9af00a32f165"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.54C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.54C:r1",
+          "verdict": "approved",
+          "judgement": "Independent solidmetal versusmoltenNaCl contrast usesmobileelectrons inmetal andmobileions inionicmelt;solidmetal positiveions do not flow tocarry current.",
+          "assessmentSectionId": "metallic-model-and-deformation-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.54C:r2",
+          "verdict": "approved",
+          "judgement": "Independent shiftedrow explanation retainsattraction withdelocalisedelectrons whilelayersslide;malleability not caused byallbonds disappearing;typical melting qualification retained.",
+          "assessmentSectionId": "metallic-model-and-deformation-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "metallic-bonding": "6f31c5752cb678d4f957edbec3e7fdf7b6301542be9d69859f071ba039c0df93",
+        "metallic-model-and-deformation-evidence": "7da545c1b782710f6254bf0924bddf02ba8499658c5e9796083f9af00a32f165"
+      }
+    }
+  ]
+}

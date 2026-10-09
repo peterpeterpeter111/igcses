@@ -1,0 +1,815 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-09",
+  "qualification": "4CH1",
+  "reference": "1.46",
+  "scope": "Original authored outer-electron diagram fixtures, not a question generator, measured structure or calibrated mark scheme.",
+  "atomValence": {
+    "H": 1,
+    "C": 4,
+    "N": 5,
+    "O": 6,
+    "Cl": 7
+  },
+  "families": [
+    {
+      "id": "diatomic",
+      "models": [
+        "H2",
+        "O2",
+        "N2"
+      ]
+    },
+    {
+      "id": "halogen",
+      "models": [
+        "Cl2",
+        "HCl"
+      ]
+    },
+    {
+      "id": "inorganic",
+      "models": [
+        "H2O",
+        "NH3",
+        "CO2"
+      ]
+    },
+    {
+      "id": "organic",
+      "models": [
+        "CH4",
+        "C2H6",
+        "C2H4"
+      ]
+    },
+    {
+      "id": "organic-halogen",
+      "models": [
+        "CH3Cl",
+        "C2H5Cl"
+      ]
+    }
+  ],
+  "molecules": [
+    {
+      "id": "H2",
+      "title": "Hydrogen · H₂",
+      "atoms": [
+        {
+          "id": "H1",
+          "element": "H",
+          "x": 200,
+          "y": 145,
+          "mark": "dot",
+          "lonePairs": 0
+        },
+        {
+          "id": "H2",
+          "element": "H",
+          "x": 400,
+          "y": 145,
+          "mark": "cross",
+          "lonePairs": 0
+        }
+      ],
+      "edges": [
+        {
+          "a": "H1",
+          "b": "H2",
+          "order": 1
+        }
+      ],
+      "key": [
+        "• left H · × right H"
+      ]
+    },
+    {
+      "id": "O2",
+      "title": "Oxygen · O₂",
+      "atoms": [
+        {
+          "id": "O1",
+          "element": "O",
+          "x": 200,
+          "y": 145,
+          "mark": "dot",
+          "lonePairs": 2
+        },
+        {
+          "id": "O2",
+          "element": "O",
+          "x": 400,
+          "y": 145,
+          "mark": "cross",
+          "lonePairs": 2
+        }
+      ],
+      "edges": [
+        {
+          "a": "O1",
+          "b": "O2",
+          "order": 2
+        }
+      ],
+      "key": [
+        "• left O · × right O"
+      ]
+    },
+    {
+      "id": "N2",
+      "title": "Nitrogen · N₂",
+      "atoms": [
+        {
+          "id": "N1",
+          "element": "N",
+          "x": 200,
+          "y": 145,
+          "mark": "dot",
+          "lonePairs": 1
+        },
+        {
+          "id": "N2",
+          "element": "N",
+          "x": 400,
+          "y": 145,
+          "mark": "cross",
+          "lonePairs": 1
+        }
+      ],
+      "edges": [
+        {
+          "a": "N1",
+          "b": "N2",
+          "order": 3
+        }
+      ],
+      "key": [
+        "• left N · × right N"
+      ]
+    },
+    {
+      "id": "Cl2",
+      "title": "Chlorine · Cl₂",
+      "atoms": [
+        {
+          "id": "Cl1",
+          "element": "Cl",
+          "x": 200,
+          "y": 145,
+          "mark": "dot",
+          "lonePairs": 3
+        },
+        {
+          "id": "Cl2",
+          "element": "Cl",
+          "x": 400,
+          "y": 145,
+          "mark": "cross",
+          "lonePairs": 3
+        }
+      ],
+      "edges": [
+        {
+          "a": "Cl1",
+          "b": "Cl2",
+          "order": 1
+        }
+      ],
+      "key": [
+        "• left Cl · × right Cl"
+      ]
+    },
+    {
+      "id": "HCl",
+      "title": "Hydrogen chloride · HCl",
+      "atoms": [
+        {
+          "id": "H1",
+          "element": "H",
+          "x": 200,
+          "y": 145,
+          "mark": "dot",
+          "lonePairs": 0
+        },
+        {
+          "id": "Cl1",
+          "element": "Cl",
+          "x": 400,
+          "y": 145,
+          "mark": "cross",
+          "lonePairs": 3
+        }
+      ],
+      "edges": [
+        {
+          "a": "H1",
+          "b": "Cl1",
+          "order": 1
+        }
+      ],
+      "key": [
+        "• H · × Cl"
+      ]
+    },
+    {
+      "id": "H2O",
+      "title": "Water · H₂O",
+      "atoms": [
+        {
+          "id": "O1",
+          "element": "O",
+          "x": 300,
+          "y": 120,
+          "mark": "dot",
+          "lonePairs": 2
+        },
+        {
+          "id": "H1",
+          "element": "H",
+          "x": 180,
+          "y": 210,
+          "mark": "cross",
+          "lonePairs": 0
+        },
+        {
+          "id": "H2",
+          "element": "H",
+          "x": 420,
+          "y": 210,
+          "mark": "cross",
+          "lonePairs": 0
+        }
+      ],
+      "edges": [
+        {
+          "a": "O1",
+          "b": "H1",
+          "order": 1
+        },
+        {
+          "a": "O1",
+          "b": "H2",
+          "order": 1
+        }
+      ],
+      "key": [
+        "• O · × H atoms"
+      ]
+    },
+    {
+      "id": "NH3",
+      "title": "Ammonia · NH₃",
+      "atoms": [
+        {
+          "id": "N1",
+          "element": "N",
+          "x": 300,
+          "y": 145,
+          "mark": "dot",
+          "lonePairs": 1
+        },
+        {
+          "id": "H1",
+          "element": "H",
+          "x": 180,
+          "y": 145,
+          "mark": "cross",
+          "lonePairs": 0
+        },
+        {
+          "id": "H2",
+          "element": "H",
+          "x": 420,
+          "y": 145,
+          "mark": "cross",
+          "lonePairs": 0
+        },
+        {
+          "id": "H3",
+          "element": "H",
+          "x": 300,
+          "y": 235,
+          "mark": "cross",
+          "lonePairs": 0
+        }
+      ],
+      "edges": [
+        {
+          "a": "N1",
+          "b": "H1",
+          "order": 1
+        },
+        {
+          "a": "N1",
+          "b": "H2",
+          "order": 1
+        },
+        {
+          "a": "N1",
+          "b": "H3",
+          "order": 1
+        }
+      ],
+      "key": [
+        "• N · × H atoms"
+      ]
+    },
+    {
+      "id": "CO2",
+      "title": "Carbon dioxide · CO₂",
+      "atoms": [
+        {
+          "id": "O1",
+          "element": "O",
+          "x": 160,
+          "y": 145,
+          "mark": "cross",
+          "lonePairs": 2
+        },
+        {
+          "id": "C1",
+          "element": "C",
+          "x": 300,
+          "y": 145,
+          "mark": "dot",
+          "lonePairs": 0
+        },
+        {
+          "id": "O2",
+          "element": "O",
+          "x": 440,
+          "y": 145,
+          "mark": "cross",
+          "lonePairs": 2
+        }
+      ],
+      "edges": [
+        {
+          "a": "O1",
+          "b": "C1",
+          "order": 2
+        },
+        {
+          "a": "C1",
+          "b": "O2",
+          "order": 2
+        }
+      ],
+      "key": [
+        "• C · × O atoms"
+      ]
+    },
+    {
+      "id": "CH4",
+      "title": "Methane · CH₄",
+      "atoms": [
+        {
+          "id": "C1",
+          "element": "C",
+          "x": 300,
+          "y": 145,
+          "mark": "dot",
+          "lonePairs": 0
+        },
+        {
+          "id": "H1",
+          "element": "H",
+          "x": 190,
+          "y": 145,
+          "mark": "cross",
+          "lonePairs": 0
+        },
+        {
+          "id": "H2",
+          "element": "H",
+          "x": 410,
+          "y": 145,
+          "mark": "cross",
+          "lonePairs": 0
+        },
+        {
+          "id": "H3",
+          "element": "H",
+          "x": 300,
+          "y": 55,
+          "mark": "cross",
+          "lonePairs": 0
+        },
+        {
+          "id": "H4",
+          "element": "H",
+          "x": 300,
+          "y": 235,
+          "mark": "cross",
+          "lonePairs": 0
+        }
+      ],
+      "edges": [
+        {
+          "a": "C1",
+          "b": "H1",
+          "order": 1
+        },
+        {
+          "a": "C1",
+          "b": "H2",
+          "order": 1
+        },
+        {
+          "a": "C1",
+          "b": "H3",
+          "order": 1
+        },
+        {
+          "a": "C1",
+          "b": "H4",
+          "order": 1
+        }
+      ],
+      "key": [
+        "• C · × H atoms"
+      ]
+    },
+    {
+      "id": "C2H6",
+      "title": "Ethane · C₂H₆",
+      "atoms": [
+        {
+          "id": "C1",
+          "element": "C",
+          "x": 230,
+          "y": 145,
+          "mark": "dot",
+          "lonePairs": 0
+        },
+        {
+          "id": "C2",
+          "element": "C",
+          "x": 370,
+          "y": 145,
+          "mark": "cross",
+          "lonePairs": 0
+        },
+        {
+          "id": "H1",
+          "element": "H",
+          "x": 120,
+          "y": 145,
+          "mark": "cross",
+          "lonePairs": 0
+        },
+        {
+          "id": "H2",
+          "element": "H",
+          "x": 230,
+          "y": 55,
+          "mark": "cross",
+          "lonePairs": 0
+        },
+        {
+          "id": "H3",
+          "element": "H",
+          "x": 230,
+          "y": 235,
+          "mark": "cross",
+          "lonePairs": 0
+        },
+        {
+          "id": "H4",
+          "element": "H",
+          "x": 480,
+          "y": 145,
+          "mark": "dot",
+          "lonePairs": 0
+        },
+        {
+          "id": "H5",
+          "element": "H",
+          "x": 370,
+          "y": 55,
+          "mark": "dot",
+          "lonePairs": 0
+        },
+        {
+          "id": "H6",
+          "element": "H",
+          "x": 370,
+          "y": 235,
+          "mark": "dot",
+          "lonePairs": 0
+        }
+      ],
+      "edges": [
+        {
+          "a": "C1",
+          "b": "C2",
+          "order": 1
+        },
+        {
+          "a": "C1",
+          "b": "H1",
+          "order": 1
+        },
+        {
+          "a": "C1",
+          "b": "H2",
+          "order": 1
+        },
+        {
+          "a": "C1",
+          "b": "H3",
+          "order": 1
+        },
+        {
+          "a": "C2",
+          "b": "H4",
+          "order": 1
+        },
+        {
+          "a": "C2",
+          "b": "H5",
+          "order": 1
+        },
+        {
+          "a": "C2",
+          "b": "H6",
+          "order": 1
+        }
+      ],
+      "key": [
+        "• left C · × right C",
+        "Each H uses the opposite mark to its bonded C."
+      ]
+    },
+    {
+      "id": "C2H4",
+      "title": "Ethene · C₂H₄",
+      "atoms": [
+        {
+          "id": "C1",
+          "element": "C",
+          "x": 230,
+          "y": 145,
+          "mark": "dot",
+          "lonePairs": 0
+        },
+        {
+          "id": "C2",
+          "element": "C",
+          "x": 370,
+          "y": 145,
+          "mark": "cross",
+          "lonePairs": 0
+        },
+        {
+          "id": "H1",
+          "element": "H",
+          "x": 230,
+          "y": 55,
+          "mark": "cross",
+          "lonePairs": 0
+        },
+        {
+          "id": "H2",
+          "element": "H",
+          "x": 230,
+          "y": 235,
+          "mark": "cross",
+          "lonePairs": 0
+        },
+        {
+          "id": "H3",
+          "element": "H",
+          "x": 370,
+          "y": 55,
+          "mark": "dot",
+          "lonePairs": 0
+        },
+        {
+          "id": "H4",
+          "element": "H",
+          "x": 370,
+          "y": 235,
+          "mark": "dot",
+          "lonePairs": 0
+        }
+      ],
+      "edges": [
+        {
+          "a": "C1",
+          "b": "C2",
+          "order": 2
+        },
+        {
+          "a": "C1",
+          "b": "H1",
+          "order": 1
+        },
+        {
+          "a": "C1",
+          "b": "H2",
+          "order": 1
+        },
+        {
+          "a": "C2",
+          "b": "H3",
+          "order": 1
+        },
+        {
+          "a": "C2",
+          "b": "H4",
+          "order": 1
+        }
+      ],
+      "key": [
+        "• left C · × right C",
+        "Each H uses the opposite mark to its bonded C."
+      ]
+    },
+    {
+      "id": "CH3Cl",
+      "title": "Chloromethane · CH₃Cl",
+      "atoms": [
+        {
+          "id": "C1",
+          "element": "C",
+          "x": 300,
+          "y": 145,
+          "mark": "dot",
+          "lonePairs": 0
+        },
+        {
+          "id": "H1",
+          "element": "H",
+          "x": 190,
+          "y": 145,
+          "mark": "cross",
+          "lonePairs": 0
+        },
+        {
+          "id": "H2",
+          "element": "H",
+          "x": 300,
+          "y": 55,
+          "mark": "cross",
+          "lonePairs": 0
+        },
+        {
+          "id": "H3",
+          "element": "H",
+          "x": 300,
+          "y": 235,
+          "mark": "cross",
+          "lonePairs": 0
+        },
+        {
+          "id": "Cl1",
+          "element": "Cl",
+          "x": 410,
+          "y": 145,
+          "mark": "cross",
+          "lonePairs": 3
+        }
+      ],
+      "edges": [
+        {
+          "a": "C1",
+          "b": "H1",
+          "order": 1
+        },
+        {
+          "a": "C1",
+          "b": "H2",
+          "order": 1
+        },
+        {
+          "a": "C1",
+          "b": "H3",
+          "order": 1
+        },
+        {
+          "a": "C1",
+          "b": "Cl1",
+          "order": 1
+        }
+      ],
+      "key": [
+        "• C · × H and Cl atoms"
+      ]
+    },
+    {
+      "id": "C2H5Cl",
+      "title": "Chloroethane · C₂H₅Cl",
+      "atoms": [
+        {
+          "id": "C1",
+          "element": "C",
+          "x": 230,
+          "y": 145,
+          "mark": "dot",
+          "lonePairs": 0
+        },
+        {
+          "id": "C2",
+          "element": "C",
+          "x": 370,
+          "y": 145,
+          "mark": "cross",
+          "lonePairs": 0
+        },
+        {
+          "id": "H1",
+          "element": "H",
+          "x": 120,
+          "y": 145,
+          "mark": "cross",
+          "lonePairs": 0
+        },
+        {
+          "id": "H2",
+          "element": "H",
+          "x": 230,
+          "y": 55,
+          "mark": "cross",
+          "lonePairs": 0
+        },
+        {
+          "id": "H3",
+          "element": "H",
+          "x": 230,
+          "y": 235,
+          "mark": "cross",
+          "lonePairs": 0
+        },
+        {
+          "id": "H4",
+          "element": "H",
+          "x": 370,
+          "y": 55,
+          "mark": "dot",
+          "lonePairs": 0
+        },
+        {
+          "id": "H5",
+          "element": "H",
+          "x": 370,
+          "y": 235,
+          "mark": "dot",
+          "lonePairs": 0
+        },
+        {
+          "id": "Cl1",
+          "element": "Cl",
+          "x": 480,
+          "y": 145,
+          "mark": "dot",
+          "lonePairs": 3
+        }
+      ],
+      "edges": [
+        {
+          "a": "C1",
+          "b": "C2",
+          "order": 1
+        },
+        {
+          "a": "C1",
+          "b": "H1",
+          "order": 1
+        },
+        {
+          "a": "C1",
+          "b": "H2",
+          "order": 1
+        },
+        {
+          "a": "C1",
+          "b": "H3",
+          "order": 1
+        },
+        {
+          "a": "C2",
+          "b": "H4",
+          "order": 1
+        },
+        {
+          "a": "C2",
+          "b": "H5",
+          "order": 1
+        },
+        {
+          "a": "C2",
+          "b": "Cl1",
+          "order": 1
+        }
+      ],
+      "key": [
+        "• left C · × right C",
+        "H and Cl use the opposite mark to their bonded C."
+      ]
+    }
+  ],
+  "realMolecularShape": false,
+  "activeTemplates": 0
+}

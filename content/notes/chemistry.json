@@ -2783,6 +2783,647 @@
         "alt": "Original schematic labels a crucible, loose lid, support and heat source separately from a balance used only after cooling.",
         "caption": "An original apparatus model, not a measured or scale drawing. The balance is used after safe cooling; the teacher controls heating and lid handling."
       }
+    },
+    {
+      "id": "ion-charge-and-formula-evidence",
+      "title": "Check a charge before writing the smallest neutral ratio",
+      "points": [
+        "1.37",
+        "1.38",
+        "1.39"
+      ],
+      "paragraphs": [
+        "Ion formation changes the number of electrons, not protons. An aluminium atom with 13 protons losing three electrons has 10 electrons and charge +3. An oxygen atom with eight protons gaining two electrons has 10 electrons and charge −2. Equal electron counts do not make Al³⁺ and O²⁻ the same element.",
+        "For the specified simple ions, course Group 1/2/3 metals form +1/+2/+3 and Group 5/6/7 non-metals form −3/−2/−1. This is the course model, not a universal charge rule for every element or compound. The named additional ions are Ag⁺, Cu²⁺, Fe²⁺, Fe³⁺, Pb²⁺, Zn²⁺ and H⁺.",
+        "The specified polyatomic ions are OH⁻, NH₄⁺, CO₃²⁻, NO₃⁻ and SO₄²⁻. Their charge belongs to the entire ion. Keep each unit intact, using brackets when more than one is required: Cu(NO₃)₂ contains two nitrate ions; it does not contain a nitrate with a changed oxygen subscript.",
+        "Use the smallest whole-number ion ratio that gives zero total charge. Fe²⁺ with SO₄²⁻ gives FeSO₄, whereas Fe³⁺ gives Fe₂(SO₄)₃. The Roman numeral distinguishes the iron ion, not the number of iron atoms. One +2 and one −2 ion give a 1:1 ratio, not automatically two of each.",
+        "The comparison table deliberately mixes group-derived, named and polyatomic ions. Reconstruct the positive and negative charge totals instead of memorising an unexplained cross-over trick. These formulae describe ratios in ionic compounds; no discrete salt molecule is implied. The acid entry HCl uses aqueous charge bookkeeping only: pure hydrogen chloride is covalent and molecular, not an ionic salt lattice."
+      ],
+      "example": {
+        "question": "Find the ion after aluminium loses three electrons, then derive aluminium sulfate from Al³⁺ and SO₄²⁻.",
+        "steps": [
+          "The Al ion retains 13 protons and has 10 electrons: +3.",
+          "Smallest common charge magnitude is 6: two Al³⁺ give +6 and three SO₄²⁻ give −6.",
+          "Formula Al₂(SO₄)₃; atom count is 2 Al, 3 S and 12 O."
+        ],
+        "explanation": "Keep electron count, total charge and the compound ratio consistent; use the appropriate particles to explain each property."
+      },
+      "practice": {
+        "question": "Derive silver oxide, lead(II) hydroxide and ammonium sulfate. A phosphorus atom has 15 protons and gains three electrons; find its charge and electron count. Is Mg₂O₂ the smallest ionic formula?",
+        "answer": "Ag₂O balances two Ag⁺ with one O²⁻; Pb(OH)₂ balances Pb²⁺ with two OH⁻; (NH₄)₂SO₄ balances two NH₄⁺ with SO₄²⁻. The specified simple phosphorus ion is P³⁻ with 18 electrons. Mg²⁺:O²⁻ reduces to 1:1, so MgO, not Mg₂O₂.",
+        "explanation": "Check both the local ion or formula and the overall balance, then justify the inference."
+      },
+      "terms": [
+        "ion charge",
+        "polyatomic ion",
+        "neutral formula",
+        "Roman numeral"
+      ],
+      "commonMistakes": [
+        "Charges are superscripts; atom or ion counts are subscripts. A giant ionic solid is not a collection of separate molecules."
+      ],
+      "table": {
+        "headers": [
+          "Positive ion",
+          "Negative ion",
+          "Neutral formula"
+        ],
+        "rows": [
+          [
+            "Li⁺",
+            "N³⁻",
+            "Li₃N"
+          ],
+          [
+            "Mg²⁺",
+            "Cl⁻",
+            "MgCl₂"
+          ],
+          [
+            "Al³⁺",
+            "O²⁻",
+            "Al₂O₃"
+          ],
+          [
+            "Ag⁺",
+            "O²⁻",
+            "Ag₂O"
+          ],
+          [
+            "Cu²⁺",
+            "NO₃⁻",
+            "Cu(NO₃)₂"
+          ],
+          [
+            "Fe²⁺",
+            "SO₄²⁻",
+            "FeSO₄"
+          ],
+          [
+            "Fe³⁺",
+            "SO₄²⁻",
+            "Fe₂(SO₄)₃"
+          ],
+          [
+            "Pb²⁺",
+            "OH⁻",
+            "Pb(OH)₂"
+          ],
+          [
+            "Zn²⁺",
+            "CO₃²⁻",
+            "ZnCO₃"
+          ],
+          [
+            "H⁺",
+            "Cl⁻",
+            "HCl (aqueous ion ratio)"
+          ],
+          [
+            "NH₄⁺",
+            "SO₄²⁻",
+            "(NH₄)₂SO₄"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "ionic-transfer-count-evidence",
+      "title": "Read every transferred electron and product charge",
+      "points": [
+        "1.37",
+        "1.40"
+      ],
+      "paragraphs": [
+        "Dots and crosses show the original electron sources, not different physical kinds of electron. In these original outer-electron models, a cross comes from a metal and a dot from the non-metal. Inner electrons are omitted; an empty positive-ion bracket does not mean that the ion has no electrons.",
+        "For Li₃N, three lithium atoms each supply one outer electron. Nitrogen starts with five outer electrons and receives three, so its final bracket contains five dots and three crosses and has charge 3−. Each lithium bracket is labelled +. Total electron bookkeeping is 3×1+5=8 and total charge is 3×(+1)+(−3)=0.",
+        "For Al₂O₃, two aluminium atoms supply three outer electrons each. Three oxygen atoms each start with six and gain two, giving six dots and two crosses in each O²⁻ bracket. The total of represented electrons is 2×3+3×6=24 before and 3×8=24 after. Charge balances 2×(+3)+3×(−2)=0.",
+        "The earlier magnesium chloride model gives the remaining representative combination: Group 2 metal and Group 7 non-metal. Lithium/nitrogen and aluminium/oxygen add course Groups 1/5 and 3/6. For another permitted combination, first balance total electrons lost and gained, then show the right number of separate ion brackets and charges. This is a school ionic model, not a picture of an actual electron trajectory or full crystal.",
+        "Electron transfer forms the ions; their electrostatic attraction is the ionic bond. Arrows in the model represent bookkeeping, not a bond holding one exclusive pair of ions together. The final ions participate in an extended structure."
+      ],
+      "example": {
+        "question": "Explain the Li₃N diagram. Count original and transferred electrons, positive ions and total charge.",
+        "steps": [
+          "There are three Li atoms supplying one cross each and one N atom supplying five dots.",
+          "Products are three Li⁺ ions and one N³⁻ ion; nitrogen has eight represented outer electrons.",
+          "There are eight represented electrons before and after; net product charge is zero. Each Li⁺ still has its two inner electrons."
+        ],
+        "explanation": "Keep electron count, total charge and the compound ratio consistent; use the appropriate particles to explain each property."
+      },
+      "practice": {
+        "question": "Draw the outer-electron formation model for Al₂O₃ using crosses for Al electrons and dots for O electrons. Identify two errors in a drawing that has one Al³⁺ and one O²⁻ with only seven outer electrons.",
+        "answer": "Use two Al atoms with three crosses each and three O atoms with six dots each before transfer. Afterwards draw two separate [Al]³⁺ brackets and three [O]²⁻ brackets, each O containing six dots and two crosses. One Al³⁺ plus one O²⁻ has net +1 charge; an oxide ion needs eight represented outer electrons in this model, not seven.",
+        "explanation": "Check both the local ion or formula and the overall balance, then justify the inference."
+      },
+      "terms": [
+        "dot-and-cross diagram",
+        "outer electron",
+        "electron conservation",
+        "ion ratio"
+      ],
+      "commonMistakes": [
+        "Charges are superscripts; atom or ion counts are subscripts. A giant ionic solid is not a collection of separate molecules."
+      ],
+      "diagram": {
+        "src": "/diagrams/chemistry-lithium-nitride-transfer.svg",
+        "alt": "Before transfer three Li symbols each have one cross and N has five dots. Afterwards three Li positive ion brackets contain no original outer electrons and a nitrogen three-minus bracket has five dots and three crosses.",
+        "caption": "Original outer-electron bookkeeping for Li₃N. Inner electrons and the full three-dimensional solid are omitted; arrows do not trace physical electron paths."
+      }
+    },
+    {
+      "id": "aluminium-oxide-diagram-evidence",
+      "title": "Keep the aluminium and oxide ion counts consistent",
+      "points": [
+        "1.40"
+      ],
+      "paragraphs": [
+        "This second model uses course Group 3 aluminium and Group 6 oxygen. Two atoms losing three electrons each can supply the six electrons gained by three oxygen atoms. The charge-balanced product ratio is therefore 2:3.",
+        "Each positive aluminium bracket has 3+ outside it and contains none of the original outer crosses. Each oxide bracket has 2− outside it and eight represented electrons: six original dots plus two transferred crosses. Al³⁺ still has configuration 2,8; the drawing only follows the original outer electrons.",
+        "Check the entire picture as well as each ion. A locally complete oxide ion cannot repair the wrong number of positive ions. Two Al³⁺ and three O²⁻ have zero net charge and preserve all 24 represented electrons.",
+        "Real aluminium oxide has an extended structure; the isolated symbols and simple transfer accounting are a course model. They do not establish its complete geometry or imply separate Al₂O₃ molecules."
+      ],
+      "example": {
+        "question": "How many crosses should appear in the three oxide brackets altogether, and why?",
+        "steps": [
+          "Two Al atoms contribute three each, giving six crosses.",
+          "Each of three oxide brackets receives two, also giving six.",
+          "The diagram conserves the six transferred electrons and all 18 original oxygen dots."
+        ],
+        "explanation": "Keep electron count, total charge and the compound ratio consistent; use the appropriate particles to explain each property."
+      },
+      "practice": {
+        "question": "A proposed diagram contains two Al³⁺ brackets and only two O²⁻ brackets, each with six dots and two crosses. Is it valid?",
+        "answer": "No. The net charge is +6−4=+2 and only four of the six transferred crosses appear. Three oxide ions are needed for both charge and electron conservation.",
+        "explanation": "Check both the local ion or formula and the overall balance, then justify the inference."
+      },
+      "terms": [
+        "charge balance",
+        "outer electron",
+        "model limitation"
+      ],
+      "commonMistakes": [
+        "Charges are superscripts; atom or ion counts are subscripts. A giant ionic solid is not a collection of separate molecules."
+      ],
+      "diagram": {
+        "src": "/diagrams/chemistry-aluminium-oxide-transfer.svg",
+        "alt": "Two Al atoms have three crosses each and three O atoms have six dots each. After transfer two aluminium three-plus brackets are empty of original outer electrons and three oxide two-minus brackets each have six dots and two crosses.",
+        "caption": "Original outer-electron formation model for Al₂O₃: 24 represented electrons before and after, with total charge zero."
+      }
+    },
+    {
+      "id": "ionic-structure-and-conduction-evidence",
+      "title": "Use the particle and mobility evidence together",
+      "points": [
+        "1.41",
+        "1.42",
+        "1.43"
+      ],
+      "paragraphs": [
+        "An ionic bond is the strong electrostatic attraction between oppositely charged ions. A giant ionic lattice contains many ions arranged throughout a regular three-dimensional structure. It is the attraction after transfer, not the transfer itself, that defines the bond.",
+        "Strong attractions across the lattice require substantial energy to overcome during melting or boiling. This accounts for the generally high temperatures of these changes. Do not describe the explanation as strong intermolecular forces between separate salt molecules.",
+        "An invented comparison gives material X charged particles fixed in a solid, freely moving in its melt, and mobile after dissolving. It fails the conduction check as a solid and passes in the melt and aqueous solution. Those observations support the ionic model when considered together with the stated particle and structural evidence.",
+        "The conducting particles in an ordinary ionic melt or solution are ions. Electrons carry charge in the connecting metal wires. In the solid, ions are charged but cannot travel through the lattice; it is incorrect to infer that a non-conducting solid contains no ions.",
+        "Molten and aqueous are different states: melting needs no water, whereas dissolution involves a solvent. A largely insoluble ionic solid does not become wholly mobile merely because water is added. Conductivity alone does not prove a unique structure; use the full supplied evidence."
+      ],
+      "example": {
+        "question": "X is described as a giant lattice of positive and negative ions. Explain its high melting temperature and why its melt conducts but its solid does not.",
+        "steps": [
+          "Strong electrostatic attractions between opposite ions need a large energy input to overcome for melting.",
+          "In the solid, charged ions vibrate in fixed positions and cannot carry current through the lattice.",
+          "In the melt, ions can move and carry charge; melting does not make them neutral atoms."
+        ],
+        "explanation": "Keep electron count, total charge and the compound ratio consistent; use the appropriate particles to explain each property."
+      },
+      "practice": {
+        "question": "A student says that an ionic solid has no charge carriers, that its melt conducts using electrons, and that molten means dissolved. Correct each claim. What extra condition matters for an aqueous ionic sample?",
+        "answer": "The solid contains charged ions, but they are not mobile through the lattice. In an ordinary ionic melt the mobile carriers are ions; electrons carry current in the metal wires. Molten means melted by heating, not dissolved. For aqueous conduction, the compound must actually dissolve to provide mobile ions; adding an insoluble solid alone does not mobilise all its ions.",
+        "explanation": "Check both the local ion or formula and the overall balance, then justify the inference."
+      },
+      "terms": [
+        "electrostatic attraction",
+        "giant lattice",
+        "mobile ion",
+        "molten",
+        "aqueous"
+      ],
+      "commonMistakes": [
+        "Charges are superscripts; atom or ion counts are subscripts. A giant ionic solid is not a collection of separate molecules."
+      ]
+    },
+    {
+      "id": "shared-pair-attraction-evidence",
+      "title": "Explain a bond with a shared pair and two nuclei",
+      "points": [
+        "1.44",
+        "1.45"
+      ],
+      "paragraphs": [
+        "A single covalent bond is one shared pair of electrons between two bonded atoms. In H₂, each neutral hydrogen atom contributes one electron. There are two distinct electrons in the molecule, even though both atoms count the shared pair towards their first shell.",
+        "The negatively charged shared electrons are attracted to both positively charged nuclei. This electrostatic attraction holds the bonded atoms together. The bond is not an attraction between two negative electrons or a transfer that leaves one positive and one negative hydrogen ion.",
+        "A double bond has two shared pairs and a triple bond has three. Their shared electron counts are therefore four and six. A displayed line counts a pair, not a single electron. Lone pairs are non-bonding outer electrons; they are not automatically extra covalent bonds.",
+        "These examples explain the bond and counting principles. The complete specified molecule-drawing collection is audited separately under 1.46; this explanation does not certify that all required diagrams have been reviewed."
+      ],
+      "example": {
+        "question": "A sketch puts one dot and one cross between two H symbols. Explain what is shared and what attracts it.",
+        "steps": [
+          "The dot and cross represent one electron from each H atom, making a single shared pair.",
+          "That pair is attracted to both positive hydrogen nuclei.",
+          "Both atoms count the same two electrons towards their full first shell; the molecule does not contain four distinct electrons."
+        ],
+        "explanation": "Identify the particles, arrangement and relevant attraction or mobile charge carrier, then connect that feature to the observed property."
+      },
+      "practice": {
+        "question": "A student says that a triple bond contains three electrons and that two electrons attract each other to form a bond. Correct both statements.",
+        "answer": "A triple bond contains three shared pairs, or six shared electrons. The bonding explanation uses attraction between shared negative electrons and both positive nuclei, not attraction between two negative electrons.",
+        "explanation": "Name the level of structure involved; a correct observation alone does not supply its explanation."
+      },
+      "terms": [
+        "shared pair",
+        "electrostatic attraction",
+        "nucleus",
+        "bond order"
+      ],
+      "commonMistakes": [
+        "Do not interchange bonding within a molecule with attractions between molecules. Charge and mobility are separate properties."
+      ]
+    },
+    {
+      "id": "molecular-property-comparison-evidence",
+      "title": "Use the right attraction for a molecular change of state",
+      "points": [
+        "1.47",
+        "1.48",
+        "1.51"
+      ],
+      "paragraphs": [
+        "Strong covalent bonds hold atoms inside each simple molecule; intermolecular attractions act between molecules. Ordinary melting or boiling separates or rearranges molecules without generally breaking their internal bonds. A low boiling temperature therefore does not show that the covalent bonds inside the molecules are weak.",
+        "An invented comparable molecular series has supplied relative molecular masses 40, 70 and 100 and boiling temperatures −10, 25 and 60 °C. The rising temperature is consistent with generally stronger intermolecular attractions as molecular mass increases in a comparable series. These values are fictional, not an identified chemical dataset.",
+        "At 20 °C and the same pressure, the first supplied substance is above its boiling temperature and is gaseous. For the other two, their melting temperatures must also be known to distinguish liquid from solid. A boiling temperature alone cannot prove they are liquids. The table includes melting temperatures to make that comparison possible.",
+        "Molecular mass is a general trend, not a universal ordering rule between unrelated substances. Molecular shape and the kind of intermolecular attraction can change an actual comparison. More electrons or larger molecules do not justify claiming that the internal covalent bonds are being broken during boiling.",
+        "Ordinary neutral simple molecular substances lack mobile ions or delocalised charge carriers through the substance, so they usually do not conduct electricity. An aqueous molecular compound can react or ionise to provide mobile ions; hydrogen chloride in water illustrates why “every covalent substance and every solution is an insulator” is false."
+      ],
+      "example": {
+        "question": "Use the fictional table to identify the state of each material at 20 °C and explain the boiling trend.",
+        "steps": [
+          "P has boiling temperature −10 °C, so at 20 °C it is gas under the supplied conditions.",
+          "Q has melting temperature −30 °C and boiling temperature 25 °C: 20 °C lies between, so it is liquid.",
+          "R has melting temperature 35 °C, so at 20 °C it is solid.",
+          "In the supplied comparable series, generally stronger intermolecular attractions require more energy to separate the heavier molecules. This is not a claim that all unrelated molecules follow exactly that order."
+        ],
+        "explanation": "Identify the particles, arrangement and relevant attraction or mobile charge carrier, then connect that feature to the observed property."
+      },
+      "practice": {
+        "question": "A fourth substance has relative molecular mass 130 and boils at 40 °C. Does that observation contradict every molecular explanation? During boiling, which attractions are overcome? Why might a solution of a covalent acid conduct?",
+        "answer": "No. A general mass trend does not establish an exact rule for unrelated molecules; shape and attraction type can matter. Ordinary boiling overcomes intermolecular attractions, leaving internal covalent bonds intact. An acid can form mobile ions in water; those ions, rather than the original neutral molecules, carry charge.",
+        "explanation": "Name the level of structure involved; a correct observation alone does not supply its explanation."
+      },
+      "terms": [
+        "intermolecular force",
+        "relative molecular mass",
+        "boiling point",
+        "mobile ions"
+      ],
+      "commonMistakes": [
+        "Do not interchange bonding within a molecule with attractions between molecules. Charge and mobility are separate properties."
+      ],
+      "table": {
+        "headers": [
+          "Invented material",
+          "Relative molecular mass",
+          "Melting / °C",
+          "Boiling / °C"
+        ],
+        "rows": [
+          [
+            "P",
+            "40",
+            "−80",
+            "−10"
+          ],
+          [
+            "Q",
+            "70",
+            "−30",
+            "25"
+          ],
+          [
+            "R",
+            "100",
+            "35",
+            "60"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "carbon-structure-property-evidence",
+      "title": "Compare carbon networks with separate fullerene cages",
+      "points": [
+        "1.49",
+        "1.50"
+      ],
+      "paragraphs": [
+        "A giant covalent network extends through many atoms with strong covalent bonds. Disrupting that network requires a large energy input, explaining its very high thermal-change temperatures. Real carbon behaviour depends on pressure and can involve sublimation; do not invent an ordinary melting/boiling measurement from a simple classroom sketch.",
+        "Diamond has each carbon bonded to four others in a rigid three-dimensional network. Bonds act throughout the structure, making pure diamond very hard. Its electrons do not provide the mobile pathway needed for ordinary electrical conduction, so pure diamond is an insulator.",
+        "Graphite has each carbon bonded to three others in hexagonal sheets. Strong bonds within the layers give high thermal stability, while weaker attractions between layers allow sliding and explain its softness. Delocalised electrons move along the layers and carry charge. “Soft means low melting point” confuses two different structural effects.",
+        "C₆₀ consists of separate molecules with 60 carbon atoms in each cage. Strong covalent bonds hold each cage together; comparatively weak attractions join separate cages in the molecular solid. Pure solid C₆₀ is much softer and less thermally resistant than diamond and is a poor conductor compared with graphite. It is not a giant network merely because 60 is a large atom count.",
+        "The comparisons refer to the ordinary undoped materials in this teaching model. They do not claim that modified carbon materials, different pressures or every direction in graphite have identical properties. A structural explanation must specify which bonds or charge carriers matter."
+      ],
+      "example": {
+        "question": "A supplied carbon sample is soft, conducts along sheets, and resists high temperatures. Which listed allotrope best matches it, and how are these properties compatible?",
+        "steps": [
+          "Graphite fits the supplied sheet structure and mobile electrons.",
+          "Layers slide because attractions between them are much weaker than the covalent bonds within them.",
+          "Strong bonds within layers account for high thermal stability; delocalised electrons along layers account for conduction. No contradiction follows from softness."
+        ],
+        "explanation": "Identify the particles, arrangement and relevant attraction or mobile charge carrier, then connect that feature to the observed property."
+      },
+      "practice": {
+        "question": "Compare pure diamond and pure solid C₆₀ for hardness, ordinary conduction and the attraction disrupted on a thermal change. Is C₆₀ a covalent compound?",
+        "answer": "Diamond is very hard and ordinarily insulating; disrupting its giant network needs strong covalent bonds to be broken. C₆₀ is a softer molecular solid and a poor conductor; separation of intact cages mainly overcomes intermolecular attractions. C₆₀ contains only carbon, so it is an allotrope of an element, not a compound.",
+        "explanation": "Name the level of structure involved; a correct observation alone does not supply its explanation."
+      },
+      "terms": [
+        "giant covalent",
+        "diamond",
+        "graphite",
+        "C60 fullerene",
+        "allotrope"
+      ],
+      "commonMistakes": [
+        "Do not interchange bonding within a molecule with attractions between molecules. Charge and mobility are separate properties."
+      ],
+      "table": {
+        "headers": [
+          "Material",
+          "Arrangement",
+          "Key property link"
+        ],
+        "rows": [
+          [
+            "Diamond",
+            "Each C bonded to 4; giant 3D network",
+            "Hard; no ordinary mobile charge pathway"
+          ],
+          [
+            "Graphite",
+            "Each C bonded to 3 within sheets",
+            "Sheets slide; mobile electrons conduct along sheets"
+          ],
+          [
+            "C₆₀",
+            "Separate 60-carbon cage molecules",
+            "Weaker attractions between cages; soft, poor conductor"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "metallic-model-and-deformation-evidence",
+      "title": "Keep mobile electrons in a metal when its layers shift (Paper 2C)",
+      "points": [
+        "1.52C",
+        "1.53C",
+        "1.54C"
+      ],
+      "paragraphs": [
+        "A two-dimensional metallic model labels positive metal ions and delocalised electrons between them. The regular ion positions represent a slice through a three-dimensional lattice. The electrons are shared through the structure rather than attached to one ion or one isolated electron pair.",
+        "The retained drawing now represents an illustrative monovalent patch with nine positive cores and nine negative electron symbols per panel. Its finite patch and symbol positions are bookkeeping, not actual electron locations. An actual metal is overall neutral; the bond is electrostatic attraction between positive cores and delocalised electrons.",
+        "A solid metal can conduct while its ion positions remain fixed because delocalised electrons can move and carry charge. Ion movement through the solid is not required. In ordinary molten metal, mobile electrons remain charge carriers; ordinary ionic melts instead conduct through mobile ions.",
+        "Malleability means that a metal can be pressed or hammered into a different shape. When layers slide, positive ions remain surrounded by delocalised electrons and the attraction persists. It is inaccurate to say that all metallic bonding disappears or that ions become neutral as soon as the layer shifts.",
+        "Many metals have relatively high melting temperatures because overcoming strong metallic attractions requires substantial energy, but this is a typical property, not an exception-free classification test. The source requires metallic drawing, bonding and property explanations for Paper 2C only."
+      ],
+      "example": {
+        "question": "A drawing shows regular positive circles, e⁻ symbols between them and a second panel with one row shifted. Explain what each represents and why the metal can bend and still conduct.",
+        "steps": [
+          "The circles represent positive metal ions; e⁻ symbols represent delocalised electrons, not negative ions.",
+          "When a layer shifts, attraction between the positive cores and electrons continues, allowing deformation.",
+          "Mobile delocalised electrons carry current through the solid; the positive ions do not have to travel through it."
+        ],
+        "explanation": "Identify the particles, arrangement and relevant attraction or mobile charge carrier, then connect that feature to the observed property."
+      },
+      "practice": {
+        "question": "Correct a model that labels the circles as neutral atoms, places no mobile electrons between them, and says a solid metal conducts only because the circles flow. Which particle carries charge in molten sodium chloride instead?",
+        "answer": "Label the lattice particles positive metal ions and include delocalised electrons throughout the model. Electron mobility allows solid-metal conduction; the positive ions do not flow through its solid lattice. Molten sodium chloride conducts through mobile Na⁺ and Cl⁻ ions. The substances use different charge carriers.",
+        "explanation": "Name the level of structure involved; a correct observation alone does not supply its explanation."
+      },
+      "terms": [
+        "metallic bonding",
+        "delocalised electron",
+        "malleability",
+        "2D model"
+      ],
+      "commonMistakes": [
+        "Do not interchange bonding within a molecule with attractions between molecules. Charge and mobility are separate properties."
+      ],
+      "diagram": {
+        "src": "/diagrams/chemistry-bonding-metallic.svg",
+        "alt": "Two original monovalent metallic patch models each show nine positive ion symbols and nine electron labels, with one middle row shifted in the second panel.",
+        "caption": "A two-dimensional model for Paper 2C. Symbol positions are illustrative; positive ions remain attracted to delocalised electrons when a layer shifts."
+      }
+    },
+    {
+      "id": "diatomic-shared-electron-evidence",
+      "title": "Count single, double and triple shared pairs",
+      "points": [
+        "1.46"
+      ],
+      "paragraphs": [
+        "H₂ has two outer electrons, forming one shared pair and no lone pairs. Each H counts those same two electrons towards a full first shell. There are only two distinct electrons in the whole molecule.",
+        "O₂ has twelve outer electrons. Its double bond uses four electrons in two shared pairs; each O retains four non-bonding electrons as two lone pairs. Each atom counts four shared plus four non-bonding electrons locally, while the molecule total remains twelve.",
+        "N₂ has ten outer electrons. Three shared pairs use six electrons and each N retains one lone pair, supplying the other four. Each N counts six shared plus two non-bonding electrons for an octet.",
+        "Use the panel key: dots belong to the left atom and crosses to the right. A shared pair contains one from each. These planar layouts do not establish the location or orbit of an individual electron."
+      ],
+      "example": {
+        "question": "Check an N₂ drawing with a triple bond and one lone pair on each nitrogen. How many distinct outer electrons are present?",
+        "steps": [
+          "Three shared pairs contribute six electrons.",
+          "The two lone pairs contribute four more, giving ten distinct electrons.",
+          "Each N locally counts six shared electrons and its own two lone-pair electrons, giving eight."
+        ],
+        "explanation": "Count each distinct electron once, then count each shared pair around both bonded atoms. Check the formula, bond order and lone pairs."
+      },
+      "practice": {
+        "question": "An O₂ drawing has a double bond and three lone pairs on each oxygen. Is it valid? Compare its total with H₂.",
+        "answer": "No. Four bonding electrons plus twelve non-bonding electrons makes sixteen, but two O atoms supply only twelve. O₂ needs two lone pairs on each O, not three. H₂ supplies two electrons and uses them in one shared pair with no lone pairs.",
+        "explanation": "Oxygen supplies twelve outer electrons. The proposed drawing adds four electrons that neither atom supplies."
+      },
+      "terms": [
+        "single bond",
+        "double bond",
+        "triple bond",
+        "lone pair"
+      ],
+      "commonMistakes": [
+        "Shared electrons count for both shells but only once in the molecule total; a displayed bond line is a pair, not one electron."
+      ],
+      "diagram": {
+        "src": "/diagrams/chemistry-covalent-diatomic.svg",
+        "alt": "Original diatomic covalent models with each molecule named and a dot/cross source key; shared and lone pairs are shown.",
+        "caption": "Original outer-electron diagrams. The layouts are bookkeeping, not measured molecular shapes. Read the source key separately for each panel."
+      }
+    },
+    {
+      "id": "halogen-shared-electron-evidence",
+      "title": "Distinguish a halogen pair from a hydrogen halide",
+      "points": [
+        "1.46"
+      ],
+      "paragraphs": [
+        "A halogen atom supplies seven outer electrons in this model. Cl₂ therefore has fourteen, arranged as one shared pair between the atoms and three lone pairs on each chlorine. The chlorine on either side counts eight electrons locally.",
+        "HCl supplies eight outer electrons: one from H and seven from Cl. Its single shared pair counts towards H’s full first shell and Cl’s octet. Only Cl has three lone pairs; adding lone pairs to hydrogen invents electrons.",
+        "The same outer-count method applies to the other neutral diatomic halogens and hydrogen halides specified by these groups. Change the element symbol and check the formula before copying a pattern. The diagram is covalent sharing; it is not a picture of the ions present after an acid reacts with water."
+      ],
+      "example": {
+        "question": "Check the HCl panel and compare its distinct electron count with Cl₂.",
+        "steps": [
+          "HCl uses one shared pair plus three Cl lone pairs: 2 + 6 = 8 outer electrons.",
+          "Cl₂ uses one shared pair plus six lone pairs: 2 + 12 = 14.",
+          "H has a two-electron shell; each Cl has an octet. A full molecule count must not count a shared pair twice."
+        ],
+        "explanation": "Count each distinct electron once, then count each shared pair around both bonded atoms. Check the formula, bond order and lone pairs."
+      },
+      "practice": {
+        "question": "Using the same model, describe the outer-electron diagram for Br₂ and for HF. Where are the lone pairs?",
+        "answer": "Br₂ has a single shared pair and three lone pairs on each Br, fourteen distinct outer electrons. HF has one shared pair, three lone pairs on F and none on H, eight distinct outer electrons. Dots and crosses distinguish the original atom sources in each drawing.",
+        "explanation": "The group-7 atom has seven outer electrons, so one shared pair and three lone pairs supply its octet; hydrogen needs only a pair."
+      },
+      "terms": [
+        "halogen",
+        "hydrogen halide",
+        "shared pair"
+      ],
+      "commonMistakes": [
+        "Shared electrons count for both shells but only once in the molecule total; a displayed bond line is a pair, not one electron."
+      ],
+      "diagram": {
+        "src": "/diagrams/chemistry-covalent-halogen.svg",
+        "alt": "Original halogen covalent models with each molecule named and a dot/cross source key; shared and lone pairs are shown.",
+        "caption": "Original outer-electron diagrams. The layouts are bookkeeping, not measured molecular shapes. Read the source key separately for each panel."
+      }
+    },
+    {
+      "id": "inorganic-molecule-count-evidence",
+      "title": "Check water, ammonia and carbon dioxide locally and globally",
+      "points": [
+        "1.46"
+      ],
+      "paragraphs": [
+        "H₂O supplies eight outer electrons: six from O and one from each H. There are two O–H single bonds and two O lone pairs. NH₃ also supplies eight: five from N plus three from H, making three single bonds and one N lone pair.",
+        "CO₂ supplies sixteen: four from C and six from each O. Draw O=C=O with two shared pairs per double bond. Each O also has two lone pairs, while C has none in this model. The eight bonding electrons plus eight lone-pair electrons account for all sixteen.",
+        "The source key differs between panels, so read it before identifying contributions. An identical mark can be used for more than one atom; the pair’s position identifies the bond. Each of these models gives H a two-electron shell and the other atoms an octet.",
+        "Do not infer that water is linear or ammonia is flat from these page layouts. They are electron-accounting diagrams, not measurements of three-dimensional molecular shape."
+      ],
+      "example": {
+        "question": "Compare the non-bonding electrons in water and ammonia even though both have eight outer electrons in total.",
+        "steps": [
+          "Water uses four electrons in two shared pairs, leaving four as two O lone pairs.",
+          "Ammonia uses six in three shared pairs, leaving two as one N lone pair.",
+          "Both totals are eight, but their bond/lone-pair arrangements differ."
+        ],
+        "explanation": "Count each distinct electron once, then count each shared pair around both bonded atoms. Check the formula, bond order and lone pairs."
+      },
+      "practice": {
+        "question": "A CO₂ sketch has two single C–O bonds and three lone pairs on each O, with no other electrons. Does its total of sixteen make it correct?",
+        "answer": "No. The total may be sixteen, but C counts only four surrounding shared electrons rather than an octet. The course model uses two double bonds and two lone pairs on each O. Global totals and each atom’s local shell must both be checked.",
+        "explanation": "The single-bond drawing has the correct global total but leaves carbon with only four surrounding electrons. Both checks are necessary."
+      },
+      "terms": [
+        "water",
+        "ammonia",
+        "carbon dioxide",
+        "octet"
+      ],
+      "commonMistakes": [
+        "Shared electrons count for both shells but only once in the molecule total; a displayed bond line is a pair, not one electron."
+      ],
+      "diagram": {
+        "src": "/diagrams/chemistry-covalent-inorganic.svg",
+        "alt": "Original inorganic covalent models with each molecule named and a dot/cross source key; shared and lone pairs are shown.",
+        "caption": "Original outer-electron diagrams. The layouts are bookkeeping, not measured molecular shapes. Read the source key separately for each panel."
+      }
+    },
+    {
+      "id": "organic-bond-order-evidence",
+      "title": "Check each carbon when two carbons share electrons",
+      "points": [
+        "1.46"
+      ],
+      "paragraphs": [
+        "Methane has four C–H single bonds, using eight outer electrons. Ethane has six C–H single bonds and one C–C single bond: seven pairs, fourteen outer electrons. Ethene has four C–H single bonds and a C=C double bond: six pairs, twelve outer electrons.",
+        "Count a double bond as two shared pairs. In ethene, each carbon counts two hydrogen bonds plus the two pairs in the carbon–carbon double bond, giving an octet. In ethane, each carbon has three hydrogen bonds and one carbon bond.",
+        "In the two-carbon panels, the left carbon uses dots and the right uses crosses. Each H uses the opposite mark to the carbon it bonds to. Several atoms can use the same mark: it is a bookkeeping convention, not a claim that all dots come from one element.",
+        "There are no carbon lone pairs in these neutral models. Check the number of H symbols against the molecular formula before assigning electrons; a correct-looking carbon octet cannot repair an extra hydrogen atom."
+      ],
+      "example": {
+        "question": "Show why ethane has fourteen distinct shared electrons but each carbon locally counts eight.",
+        "steps": [
+          "Six C–H bonds plus one C–C bond gives seven shared pairs, or fourteen electrons.",
+          "Each C participates in four single bonds and locally counts eight shared electrons.",
+          "The C–C pair is included for each carbon’s local count but only once in the whole-molecule count."
+        ],
+        "explanation": "Count each distinct electron once, then count each shared pair around both bonded atoms. Check the formula, bond order and lone pairs."
+      },
+      "practice": {
+        "question": "A sketch labelled C₂H₄ has a single C–C bond and only four C–H bonds, with no lone pairs or charges. Is it the valid ethene model? Compare the total for CH₄.",
+        "answer": "No. That sketch has only five shared pairs (ten electrons) and each C participates in only three single bonds. Ethene needs a C=C double bond: six pairs/twelve electrons. Methane has four single bonds/eight shared electrons.",
+        "explanation": "Replacing a double bond by a single pair removes two electrons from the molecule and two from each carbon’s local shell count."
+      },
+      "terms": [
+        "methane",
+        "ethane",
+        "ethene",
+        "carbon–carbon bond"
+      ],
+      "commonMistakes": [
+        "Shared electrons count for both shells but only once in the molecule total; a displayed bond line is a pair, not one electron."
+      ],
+      "diagram": {
+        "src": "/diagrams/chemistry-covalent-organic.svg",
+        "alt": "Original organic covalent models with each molecule named and a dot/cross source key; shared and lone pairs are shown.",
+        "caption": "Original outer-electron diagrams. The layouts are bookkeeping, not measured molecular shapes. Read the source key separately for each panel."
+      }
+    },
+    {
+      "id": "organic-halogen-electron-evidence",
+      "title": "Keep halogen lone pairs when a hydrogen is replaced",
+      "points": [
+        "1.46"
+      ],
+      "paragraphs": [
+        "Replacing one hydrogen by chlorine preserves one single bond to carbon but changes the available outer-electron total. CH₃Cl supplies 4 + 3 + 7 = 14: four single bonds use eight and the chlorine’s three lone pairs use six.",
+        "C₂H₅Cl supplies 8 + 5 + 7 = 20. Its C–C bond, five C–H bonds and one C–Cl bond make seven shared pairs (fourteen electrons); the chlorine’s three lone pairs add six. Each carbon counts four bond pairs, and chlorine counts one shared pair plus three lone pairs.",
+        "Read the local key in the two-carbon panel. Each hydrogen or chlorine uses the opposite mark to its bonded carbon; its lone-pair marks retain that same original-atom source. The marks do not distinguish different physical kinds of electron.",
+        "For another neutral halogen substitution up to two carbons, retain four bonds around each carbon, one bond around each H or halogen, and three lone pairs on a single-bonded halogen. Recheck the formula and total rather than adding a halogen without removing the replaced hydrogen."
+      ],
+      "example": {
+        "question": "Explain why chloroethane has twenty outer electrons although ethane has fourteen.",
+        "steps": [
+          "Both drawings have seven shared pairs, using fourteen electrons.",
+          "The Cl atom contributes six additional non-bonding electrons in its three lone pairs.",
+          "Total 20 also agrees with two C atoms (8), five H (5) and Cl (7). Replacing H’s one electron by Cl’s seven adds six."
+        ],
+        "explanation": "Count each distinct electron once, then count each shared pair around both bonded atoms. Check the formula, bond order and lone pairs."
+      },
+      "practice": {
+        "question": "Describe a CH₂Cl₂ outer-electron model and count its distinct outer electrons. A learner leaves out both chlorine lone-pair sets: what is missing?",
+        "answer": "Carbon has two C–H and two C–Cl single bonds, giving four pairs/eight bonding electrons. Each Cl needs three lone pairs, adding twelve non-bonding electrons. Total4+2+14=20. Omitting both sets loses twelve electrons and gives each chlorine an incomplete local shell.",
+        "explanation": "Halogen lone pairs do not form extra bonds to carbon, but they must appear in a full outer-electron diagram."
+      },
+      "terms": [
+        "halogen substitution",
+        "chloromethane",
+        "chloroethane",
+        "electron total"
+      ],
+      "commonMistakes": [
+        "Shared electrons count for both shells but only once in the molecule total; a displayed bond line is a pair, not one electron."
+      ],
+      "diagram": {
+        "src": "/diagrams/chemistry-covalent-organic-halogen.svg",
+        "alt": "Original organic-halogen covalent models with each molecule named and a dot/cross source key; shared and lone pairs are shown.",
+        "caption": "Original outer-electron diagrams. The layouts are bookkeeping, not measured molecular shapes. Read the source key separately for each panel."
+      }
     }
   ],
   "status": "source-checked",
@@ -2825,6 +3466,13 @@
       "sectionIds": [
         "solubility-mass-and-error-evidence",
         "chromatogram-comparison-evidence"
+      ]
+    },
+    {
+      "title": "RSC: connecting carbon structures to properties",
+      "url": "https://edu.rsc.org/cpd/how-to-teach-structure-and-bonding-of-carbon-at-14-16/4020312.article",
+      "sectionIds": [
+        "carbon-structure-property-evidence"
       ]
     }
   ]
