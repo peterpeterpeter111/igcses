@@ -17,6 +17,7 @@ import physicsVisualAudit from '../research/reviews/2026-09-10-physics-visual-au
 import { subjects } from '../content/catalog.ts';
 import { reviewedInventories } from './syllabus.ts';
 import { notes } from '../content/notes.ts';
+import { authoredChapterReviews } from './chapter-teaching.ts';
 import { activeFamilies } from '../server/template-registry.ts';
 import {
   latestDiscoveryDate,
@@ -111,6 +112,7 @@ export function coverageSummary() {
         .length,
       completePoints: reviewedInventories.filter((i) => i.qualification === s.code).flatMap((i) => i.points).filter((p) => p.teachingCoverage === 'complete' && p.substatementAuditComplete).length,
       completeChapters: s.chapters.filter((x) => x.complete).length,
+      reviewedAuthoredChapters: authoredChapterReviews.filter((review) => review.qualification === s.code).length,
       writtenChapters: notes.filter((n) => n.subjectId === s.id).length,
     };
   });

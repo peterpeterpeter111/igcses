@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4BI1",
+  "subjectId": "biology",
+  "chapterId": "living-organisms",
+  "documentId": "4BI1-spec",
+  "specificationSha256": "9f474a0ef0e93ef3c3107b568956d163454cdb476bb2017189e8dd12c0d58cef",
+  "reviewDate": "2026-10-09",
+  "scope": "whole-authored-chapter-teaching",
+  "reviewer": "Codex source and whole authored-chapter teaching review",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "learnerTrialsPerformed": false,
+  "examReadinessCertified": false,
+  "sourceBoundary": {
+    "visuallyReviewed": true,
+    "wholeTopicPointInventoryReviewed": true,
+    "firstPdfPage": 17,
+    "lastPdfPage": 18,
+    "nextTopicPdfPage": 19,
+    "topicHeading": "1 The nature and variety of living organisms",
+    "nextTopicHeading": "2 Structure and functions in living organisms",
+    "judgement": "Visually reviewed PDF pages 17\u201318 contain the entire topic 1 point set 1.1\u20131.4; page 19 starts topic 2 at 2.1. Both 1B and 2B scope retained; local editorial requirements are not additional publisher points."
+  },
+  "sourcePointIds": [
+    "4BI1:issue3:1.1",
+    "4BI1:issue3:1.2",
+    "4BI1:issue3:1.3",
+    "4BI1:issue3:1.4"
+  ],
+  "inventorySources": [
+    {
+      "ref": "research/syllabus/4BI1-living-organisms.json",
+      "sha256": "0d282fc96954b307fd0af26a229fbe5b3f99fff28df5a133eea49d52cbb150a0"
+    }
+  ],
+  "noteRef": "content/notes/biology.json",
+  "noteSha256": "ee46716c6a9770290b019987587fed95c872fb5f1c5e5ed797776d57ecb48c61",
+  "goalDecisions": [
+    {
+      "goal": "Explain the shared life processes in context.",
+      "verdict": "approved",
+      "sectionIds": [
+        "life-process-observations",
+        "movement-and-internal-control",
+        "growth-development-and-lineages"
+      ],
+      "judgement": "Eight life characteristics assessed in original observed cases, including growth/development/reproduction distinctions."
+    },
+    {
+      "goal": "Distinguish respiration from breathing and excretion from egestion.",
+      "verdict": "approved",
+      "sectionIds": [
+        "life-process-observations"
+      ],
+      "judgement": "Respiration/breathing and metabolic excretion/egestion distinctions assessed by the origin and role of the material."
+    },
+    {
+      "goal": "Compare plants, animals, fungi and protoctists using several features.",
+      "verdict": "approved",
+      "sectionIds": [
+        "eukaryote-comparison-evidence",
+        "named-organism-comparisons",
+        "hyphae-and-external-digestion"
+      ],
+      "judgement": "Several structural/nutrition features and named examples assessed; root-cell, yeast and protoctist exceptions retained."
+    },
+    {
+      "goal": "Distinguish bacterial cells from viruses and explain what makes a pathogen.",
+      "verdict": "approved",
+      "sectionIds": [
+        "bacterial-structure-and-nutrition-evidence",
+        "viral-structure-host-and-scale",
+        "pathogen-name-and-cause-evidence"
+      ],
+      "judgement": "Cell versus particle organisation, genome/host dependence and pathogen/vector/disease distinctions assessed."
+    }
+  ],
+  "prerequisiteReview": {
+    "verdict": "approved",
+    "judgement": "One-cell/many-cell organisation is introduced as the prerequisite and revisited in eukaryote, fungus and bacterial comparisons. No unintroduced calculation technique is needed beyond stated unit conversion."
+  },
+  "coherenceReview": {
+    "verdict": "approved",
+    "judgement": "The source-order explanatory sections introduce life processes, eukaryotic groups, bacteria and pathogens/viruses, followed by labelled evidence lessons and worked/unfamiliar tasks. All 17 sections are linked to their exact reviewed source identities; invented models and data are explicitly distinguished from real microscopy."
+  },
+  "limitations": [
+    "Authored teaching only. No human examiner review, learner trials or active generative exam bank.",
+    "Source completeness is bounded to the stated publisher topic; other chapters and the past-paper archive remain incomplete."
+  ]
+}

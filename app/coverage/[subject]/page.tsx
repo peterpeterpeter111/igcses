@@ -19,6 +19,7 @@ import englishWritingReview from '@/research/teaching-reviews/4EB1-writing-found
 import englishPaperSummary from '@/research/pilot-summaries/4EB1-2024-November-01.json';
 import { assessmentObjectiveCoverage, assessmentObjectiveReviewDate } from '@/lib/assessment-objectives';
 import { curriculumAudits } from '@/lib/curriculum';
+import { authoredChapterReviews } from '@/lib/chapter-teaching';
 import { obtainedPaperCandidates, paperCoverReview, paperTaskIndex, paperDetailedSummary } from '@/lib/paper-discovery';
 export default async function SubjectCoverage({
   params,
@@ -316,6 +317,20 @@ export default async function SubjectCoverage({
             </p>
           </section>
         )}
+        <section>
+          <h2>Whole authored-chapter reviews</h2>
+          <p>These reviews cover the publisher topic and its authored lessons. They do not certify learner mastery, an active exam bank or examiner marking.</p>
+          {authoredChapterReviews.filter((review) => review.qualification === s.code).length ? (
+            <ul className="plain-list">
+              {authoredChapterReviews.filter((review) => review.qualification === s.code).map((review) => (
+                <li key={review.chapterId}>
+                  <Link href={`/subjects/${s.id}/${review.chapterId}`}>{s.chapters.find((chapter) => chapter.id === review.chapterId)?.title}</Link>
+                  {' · '}{review.reviewedPoints} source statements · agent review {review.reviewedAt} · exam bank incomplete · no human review.
+                </li>
+              ))}
+            </ul>
+          ) : <p>No whole authored chapter has passed this separate review yet.</p>}
+        </section>
         {reviewedInventories
           .filter((inventory) => inventory.qualification === s.code)
           .map((inventory) => (
@@ -325,8 +340,8 @@ export default async function SubjectCoverage({
                 {inventory.points.length} {inventory.points.length === 1 ? 'statement' : 'statements'} checked against the
                 official PDF on {inventory.reviewDate}. This verifies their
                 references and paper applicability. Authored teaching progress
-                is recorded below; whole-chapter and examiner readiness remain
-                incomplete. No human review has been performed.
+                is recorded below. Statement decisions alone do not establish
+                chapter completeness or examiner readiness. No human review has been performed.
               </p>
               <p>
                 {
@@ -335,7 +350,7 @@ export default async function SubjectCoverage({
                   ).length
                 }{' '}
                 {inventory.points.filter((point) => point.noteSectionIds.length > 0).length === 1 ? 'statement has' : 'statements have'} linked explanations.{' '}
-                {inventory.points.filter((point) => point.teachingCoverage === 'complete').length} passed the agent review of authored teaching. This does not certify the whole chapter, learner mastery or examiner marking.
+                {inventory.points.filter((point) => point.teachingCoverage === 'complete').length} passed the agent review of authored teaching. A whole authored chapter requires the separate review below; learner mastery and examiner marking are not certified.
               </p>
               <details>
                 <summary>Inspect the reviewed statements</summary>

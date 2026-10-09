@@ -37,7 +37,8 @@ export default function CoveragePage() {
                 <th>Fully processed</th>
                 <th>Candidate points</th>
                 <th>Teaching statements reviewed</th>
-                <th>Chapters complete</th>
+                <th>Authored chapters reviewed</th>
+                <th>Exam-ready chapters</th>
               </tr>
             </thead>
             <tbody>
@@ -58,6 +59,9 @@ export default function CoveragePage() {
                   <td>{r.fullyProcessed}</td>
                   <td>{r.candidatePoints || 'Inventory pending'}</td>
                   <td>{r.completePoints}</td>
+                  <td>
+                    {r.reviewedAuthoredChapters} / {r.subject.chapters.length}
+                  </td>
                   <td>
                     {r.completeChapters} / {r.subject.chapters.length}
                   </td>
@@ -86,6 +90,10 @@ export default function CoveragePage() {
           </dd>
           <dt>Teaching statements reviewed</dt>
           <dd>Every local teaching requirement for the stated source point passed a recorded agent review. This does not certify a whole chapter, learner mastery or examiner marking.</dd>
+          <dt>Authored chapters reviewed</dt>
+          <dd>The entire publisher topic and its authored lessons passed a separate agent review of source boundaries, statements, learning goals and evidence. Learner trials and examiner calibration are separate and remain unfinished.</dd>
+          <dt>Exam-ready chapters</dt>
+          <dd>Chapters with a fully validated exam-practice bank and marking. None are ready yet.</dd>
           <dt>Fully processed</dt>
           <dd>
             Every task and subpart, matching scheme, marks and optional-question

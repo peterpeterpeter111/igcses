@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getSubject, getChapter } from '@/content/catalog';
 import { getNotes } from '@/content/notes';
+import { getChapterTeachingReview } from '@/lib/chapter-teaching';
 import sources from '@/research/sources.json';
 import { SiteFrame } from '@/components/site-frame';
 import { LibrarySearch } from '@/components/library-search';
@@ -16,6 +17,7 @@ export default async function ChapterPage({
   const c = getChapter(s, p.chapter);
   if (!c) notFound();
   const n = getNotes(s.id, c.id);
+  const teachingReview = getChapterTeachingReview(s.id, c.id);
   const source = sources.find((x) => x.qualification === s.code)!;
   return (
     <SiteFrame>
@@ -64,7 +66,9 @@ export default async function ChapterPage({
                   {n.status === 'source-checked'
                     ? 'Source-checked sections'
                     : 'Draft sections'}{' '}
-                  · chapter incomplete · no human review
+                  {teachingReview
+                    ? '· whole authored teaching reviewed · exam bank incomplete · no human review'
+                    : '· chapter incomplete · no human review'}
                 </p>
                 <p><Link className="action" href={`/revision/${s.id}?chapter=${c.id}`}>Practise this chapter →</Link></p>
                 <h2>Before you begin</h2>
@@ -218,7 +222,9 @@ export default async function ChapterPage({
                 {n
                   ? 'Reviewed source PDF pages: ' + n.sourcePages.join(', ')
                   : 'Contents source: PDF page ' + c.sourcePage}
-                . Whole-chapter coverage and exam readiness remain under review.
+                {teachingReview
+                  ? `. Whole authored teaching reviewed on ${teachingReview.reviewedAt}: ${teachingReview.reviewedPoints} source statements. Exam readiness and learner trials remain incomplete.`
+                  : '. Whole-chapter coverage and exam readiness remain under review.'}
               </p>
               {n?.supportingSources?.length ? (
                 <>
