@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4CH1",
+  "documentId": "4CH1-spec",
+  "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "sourceVisualPages": [
+    23
+  ],
+  "sourcePrintedPages": [
+    17
+  ],
+  "reviewDate": "2026-10-12",
+  "reviewer": "Codex source and authored-teaching review with independent Astra source audit",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "authored-teaching-coverage",
+  "policyVersion": 1,
+  "practicalTrialsPerformed": false,
+  "examTemplateCalibrationComplete": false,
+  "noteRef": "content/notes/chemistry-inorganic.json",
+  "inventorySha256": "a5ce59fd1534eedeb2732b4a97f6c35273d1e8f52b18465908968ae6965c10c1",
+  "auditRef": "research/curriculum-audits/4CH1-reactivity-rust-redox.json",
+  "auditSha256": "031a1d9da907de62c2f9a9587ef6fb16c7f91b84f42c5d4c6bff12afa60e7e82",
+  "diagramSha256": {},
+  "limitations": [
+    "Seven own Issue3 identities2.15–2.21/all1C2C and39 editorial requirements have agent-reviewed authored explanations and unfamiliar fixed practice. Mg/Zn/Fe are examples in2.21, notexclusive requirement. Practical planning taught, no physical/human/learner/examiner certification, template activation or whole Inorganic chapter completion. Later2.22Conward and Principles1.25 remain partial.",
+    "Primary-source traps rejected: Washington generalised copper wording andPurdue balancedreversearrow do notoverride no-hydrogen/no-displacement observations. IUPACplain endpoints failed freshfetch;no freshdefinition access claimed.",
+    "Fixedexercise data original/hypothetical; optionalratemethod andpassivation extensions notnewpublisher-numbered requirements."
+  ],
+  "points": [
+    {
+      "pointId": "4CH1:issue3:2.15",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.15:r1",
+          "verdict": "approved",
+          "judgement": "Cold-water shared hydroxide/H2 pattern and conditional A above B/C; two negative water observations do not rank B/C.",
+          "assessmentSectionId": "metal-condition-ranking-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.15:r2",
+          "verdict": "approved",
+          "judgement": "SteamMg+H2O→MgO+H2 differs from cold-water hydroxide, balanced atoms and phase/temperature limits preserved.",
+          "assessmentSectionId": "metal-condition-ranking-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.15:r3",
+          "verdict": "approved",
+          "judgement": "Mg/Zn/Fe chloride/H2 with diluteHCl; copper not merely slow H2 producer.",
+          "assessmentSectionId": "metal-condition-ranking-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.15:r4",
+          "verdict": "approved",
+          "judgement": "Corresponding sulfates/H2 with diluteH2SO4; acids/conditions specified.",
+          "assessmentSectionId": "metal-condition-ranking-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.15:r5",
+          "verdict": "approved",
+          "judgement": "Original matched-rate comparison qualified by area/amount/concentration/T/time and passivation; not numerical intrinsic ranking.",
+          "assessmentSectionId": "metal-condition-ranking-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "metal-water-evidence": "ea888049b1b856ac57227d711954eefcd0f14b66f8c92280d39ee406629eada4",
+        "metal-acid-evidence": "d542f0c291ba4eb5106b39e55507011ba552b31a0b1bd203094631a2460bc91f",
+        "metal-condition-ranking-evidence": "5d501dff47c60d906536f52ab0654384c5e92d76c88ae3b03dd5dc07b6f2a38e"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.16",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.16:r1",
+          "verdict": "approved",
+          "judgement": "Unknown P displaces Q²⁺ and Q displaces R²⁺ supports P>Q>R in suitable aqueous comparisons.",
+          "assessmentSectionId": "metal-displacement-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.16:r2",
+          "verdict": "approved",
+          "judgement": "Zn+Cu²⁺→Zn²⁺+Cu distinguishesreactantion fromsolidproduct; sulfate spectator anddeposit/bluecolour evidence qualified.",
+          "assessmentSectionId": "metal-displacement-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.16:r3",
+          "verdict": "approved",
+          "judgement": "Aluminium takesoxygen fromCuO under supplied suitableconditions, distinct fromaqueoussalt test.",
+          "assessmentSectionId": "metal-displacement-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.16:r4",
+          "verdict": "approved",
+          "judgement": "2Al+3CuO→Al2O3+3Cu independentlybalances2Al/3Cu/3O; nocoldmixingguarantee.",
+          "assessmentSectionId": "metal-displacement-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.16:r5",
+          "verdict": "approved",
+          "judgement": "PredictPwithR²⁺; unsupportedS remainsunplaced; balancedreversecopper/zinc equation notproofdirection.",
+          "assessmentSectionId": "metal-displacement-transfer-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "metal-salt-displacement": "b91c63e11cd2af99fb0db3caa819ee520ce7e6313aac1e086058c1988d840618",
+        "metal-oxide-displacement": "068f82a526f8dd0690b3e0059edd132c7fd68a40b440a2de9759624c4f90eb34",
+        "metal-displacement-transfer-evidence": "d1d9214f7a4864662382b035ccf234c1e50fc79d941dde2c7e3c7b52af36417d"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.17",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.17:r1",
+          "verdict": "approved",
+          "judgement": "FullK>Na>Li>Ca>Mg>Al>Zn>Fe>Cu>Ag>Au order checked, Li/Ca andMg/Al swaps/omittedZn corrected.",
+          "assessmentSectionId": "metal-series-position-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.17:r2",
+          "verdict": "approved",
+          "judgement": "Five-metalunfamiliarselection followspositions; slowaluminium observation doesnotmoveitbelowZn.",
+          "assessmentSectionId": "metal-series-position-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.17:r3",
+          "verdict": "approved",
+          "judgement": "HydrogenFe/Cureference isnotmetal; sourceorder notatomicnumber/potential-list substitution or exactrate.",
+          "assessmentSectionId": "metal-series-position-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "metal-reactivity-order": "9e291c8be19e05e978fe10e6d60ac8b65ad434046b5d2e168c4e3d61e325c415",
+        "metal-series-position-evidence": "f3ea10c0901ae07815bd86dddc70555492fa253acfa975f150eca8cf4832cc76"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.18",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.18:r1",
+          "verdict": "approved",
+          "judgement": "MoistairA haswater+oxygen; genuineBdryair/Coxygen-depleted protectedwater missone condition.",
+          "assessmentSectionId": "rust-control-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.18:r2",
+          "verdict": "approved",
+          "judgement": "HydratedFe(III)rust/variablewater andflakingexposesmoreiron, notuniversalprotectiveoxide.",
+          "assessmentSectionId": "rust-control-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.18:r3",
+          "verdict": "approved",
+          "judgement": "Saltaccelerates underwetconditions butnotrequired, changingitdoesnotisolatewater/oxygen.",
+          "assessmentSectionId": "rust-control-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.18:r4",
+          "verdict": "approved",
+          "judgement": "Concrete dryingagentsealedtube andboiledwater/oil controls; opentubeDregainsO2; insufficienttime/failedexclusion notproofimmunity.",
+          "assessmentSectionId": "rust-control-transfer-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "rust-conditions": "48d88526fbca3259f3ea4b1d8b48cf120ab9f66e9ddcbf323fc5b762d97fd70a",
+        "rust-evidence-plan": "19df03c18f886baf0f875dc607bc267b678071f8c55e5678e315a95194c57be2",
+        "rust-control-transfer-evidence": "31a6b0ca042a55f69f1ae069c1c98507ffd26169fc56454ce19a2052e1849d7a"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.19",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.19:r1",
+          "verdict": "approved",
+          "judgement": "Paint/oil/grease exclude water/oxygen without donatingelectrons.",
+          "assessmentSectionId": "rust-protection-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.19:r2",
+          "verdict": "approved",
+          "judgement": "Scratch locallyexposesiron whileintactcoating elsewhere persists.",
+          "assessmentSectionId": "rust-protection-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.19:r3",
+          "verdict": "approved",
+          "judgement": "Galvanising applieszinc coating, notpaint or attachedcopper.",
+          "assessmentSectionId": "rust-protection-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.19:r4",
+          "verdict": "approved",
+          "judgement": "Intactzincbarrier plus preferentialZn oxidation atconnectedwet scratch qualified byenvironment/exposure.",
+          "assessmentSectionId": "rust-protection-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.19:r5",
+          "verdict": "approved",
+          "judgement": "Zn→Zn²⁺+2e− transfers electrons throughconnectedmetal; detachedZnversusconnectedZn/copper correction.",
+          "assessmentSectionId": "rust-protection-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.19:r6",
+          "verdict": "approved",
+          "judgement": "Zincconsumed andconnection/environment/damage limits; no unlimitedscratchprotection guarantee.",
+          "assessmentSectionId": "rust-protection-transfer-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "rust-barriers": "589d230a31446a4f7c704d14e88e13efb965606e336b747b68fd60d209cd6baf",
+        "rust-galvanising-sacrificial": "428cdf29d04b61fdeb6e214bf531f656147f5a12b2f63081a17ea68bc488ab26",
+        "rust-protection-transfer-evidence": "adc8cdb7ac81009d842857470463f23c62103b3dc32cc55187054f43d7addc00"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.20",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.20:r1",
+          "verdict": "approved",
+          "judgement": "Zn+CuO→ZnO+Cu: ZngainsO andoxidizes.",
+          "assessmentSectionId": "redox-agent-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.20:r2",
+          "verdict": "approved",
+          "judgement": "CuOlosesO andisreduced, notclassifiedbyweightloss alone.",
+          "assessmentSectionId": "redox-agent-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.20:r3",
+          "verdict": "approved",
+          "judgement": "Cu→Cu²⁺+2e− electronloss oxidation.",
+          "assessmentSectionId": "redox-agent-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.20:r4",
+          "verdict": "approved",
+          "judgement": "2Ag⁺+2e−→2Ag electrongain reduction.",
+          "assessmentSectionId": "redox-agent-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.20:r5",
+          "verdict": "approved",
+          "judgement": "Bothchanges simultaneousredox; halvescancel2electrons/netcharge+2 conserved.",
+          "assessmentSectionId": "redox-agent-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.20:r6",
+          "verdict": "approved",
+          "judgement": "Ag⁺acceptor/oxidizingagent isreduced, nitrate andAgproductnotassignedreactantrole.",
+          "assessmentSectionId": "redox-agent-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.20:r7",
+          "verdict": "approved",
+          "judgement": "Cu donor/reducingagent itselfoxidized; incorrectagent-own-change claim corrected.",
+          "assessmentSectionId": "redox-agent-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.20:r8",
+          "verdict": "approved",
+          "judgement": "OxygenrolesZnreducer/CuOoxidizer agreewithbothchanges; oxygen-free ionicredox distinguished fromheat/colour observations.",
+          "assessmentSectionId": "redox-agent-transfer-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "redox-oxygen-transfer": "161d185e7cb4d8a4843647746421e9e15f6869e0e931b3cdce23bd5307a71f1a",
+        "redox-electron-transfer": "1f343727002969a1e720649d2253772e5ded5a95a1f0bdd36ec7a92c746debf9",
+        "redox-agents": "484ef8e0f8a728a8aeacad8e9085335870ebf7d3e7399d95f0c48d4bef0a7b8a",
+        "redox-agent-transfer-evidence": "00eec9c43ca0425baa90f6e6f66258d396aecbaf8accdb05da523471e707c45b"
+      }
+    }
+  ]
+}

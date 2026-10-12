@@ -55,7 +55,7 @@ import json,shutil,sys,tempfile
 from pathlib import Path
 src=Path.cwd();sys.path.insert(0,str(src/'scripts'))
 from teaching_review import validate_inventory_completion
-ip='research/syllabus/4CH1-states-and-mixtures.json';rp='research/teaching-reviews/4CH1-principles-foundations-2026-10-09.json'
+ip='research/syllabus/4CH1-states-and-mixtures.json';rp=json.loads((src/ip).read_text())['completionReviewRef']
 with tempfile.TemporaryDirectory() as d:
  root=Path(d)
  for p in [ip,rp,'research/curriculum-audits/4CH1-states-and-mixtures.json','research/curriculum-audits/4CH1-atoms-and-periodic-table.json','content/notes/chemistry.json']:

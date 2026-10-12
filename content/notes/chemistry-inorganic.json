@@ -192,7 +192,8 @@
       "url": "https://chemed.chem.purdue.edu/demos/demosheets/9.11.html",
       "sectionIds": [
         "metal-salt-displacement",
-        "redox-agents"
+        "redox-agents",
+        "metal-displacement-transfer-evidence"
       ]
     },
     {
@@ -202,7 +203,9 @@
         "rust-conditions",
         "rust-evidence-plan",
         "rust-barriers",
-        "rust-galvanising-sacrificial"
+        "rust-galvanising-sacrificial",
+        "rust-control-transfer-evidence",
+        "rust-protection-transfer-evidence"
       ]
     },
     {
@@ -225,7 +228,8 @@
       "url": "https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Biology/2017/teaching-and-learning-materials/biology-chemistry-physics-core-practical-guide.pdf#page=98",
       "sectionIds": [
         "acid-metal-practical-plan",
-        "acid-metal-practical-interpretation"
+        "acid-metal-practical-interpretation",
+        "acid-metal-observation-transfer-evidence"
       ]
     },
     {
@@ -1416,7 +1420,7 @@
     },
     {
       "id": "acid-metal-practical-plan",
-      "title": "Planning the named acid–metal investigation",
+      "title": "Planning the acid–metal investigation",
       "points": [
         "2.21"
       ],
@@ -1429,7 +1433,7 @@
         "controlled variable"
       ],
       "paragraphs": [
-        "The named school investigation compares magnesium, zinc and iron with dilute hydrochloric and sulfuric acids. Keep each metal/acid combination identifiable in a results table, recording reaction evidence and whether a gas is detected. Interpret a proposed table separately from measured results: no investigation has been performed for this site.",
+        "This school plan uses the publisher examples of magnesium, zinc and iron to compare reactions with dilute hydrochloric and sulfuric acids. Keep each metal/acid combination identifiable in a results table, recording reaction evidence and whether a gas is detected. Interpret a proposed table separately from measured results: no investigation has been performed for this site.",
         "When changing the metal, keep the acid identity, concentration, volume and initial temperature comparable, and account for metal quantity, exposed surface and surface condition. Use a consistent start and observation interval. When investigating acid identity instead, hold the chosen metal and other stated conditions constant. Equal molar concentrations of different acids do not automatically mean equal available hydrogen-ion concentration, so avoid treating acid identity as an irrelevant variable.",
         "Gas evidence supports hydrogen formation, with an appropriate school hydrogen identification test providing more information than fizzing alone. Slower evolution may not give a suitable gas sample in a short observation, so a weak test result is not automatically proof of a different gas. Dilute acids and flammable hydrogen require the school’s controlled practical arrangements; the examples do not propose adding alkali metals to acid.",
         "The expected salt follows the acid: magnesium chloride, zinc chloride and iron(II) chloride with HCl; corresponding sulfates with dilute H₂SO₄. Example balanced equations are Zn + 2HCl → ZnCl₂ + H₂ and Fe + H₂SO₄ → FeSO₄ + H₂. Link a recorded observation to a justified product, then explain what the comparison can and cannot establish."
@@ -3378,6 +3382,283 @@
         "question": "At a later instant 240 W/m² enters and 240 W/m² leaves. Does this prove there was no earlier warming? Does a single cold day disprove increased CO₂ effects? Explain.",
         "answer": "Net gain at that instant is zero, but this does not establish the earlier temperature or exclude past warming. A single cold day is weather, not a long-term climate test. TheCO₂ explanation concerns infrared absorption/emission and energy transfers; it is separate from ozone protection against ultraviolet radiation.",
         "explanation": "Preserve conservation and the timescale; a zero instantaneous imbalance is not a temperature-history measurement."
+      }
+    },
+    {
+      "id": "metal-condition-ranking-evidence",
+      "title": "Rank metals from matched water and acid observations",
+      "points": [
+        "2.15"
+      ],
+      "paragraphs": [
+        "In an invented matched comparison of clean similar samples, A reacts vigorously with cold water, while B and C show no visible cold-water change during the observation. The two negative results alone do not distinguish B from C. A separate controlled comparison reports faster hydrogen production for B than C in the same dilute acid; together these stated conditions support a tentative A > B > C order, subject to surface and product evidence.",
+        "The common cold-water pattern for suitable reactive metals is hydroxide plus hydrogen. Calcium can give cloudy sparingly soluble hydroxide. Magnesium reacts slowly with cold water; with steam the equation is Mg + H₂O(g) → MgO + H₂, giving oxide rather than the cold-water hydroxide. Changing temperature or water state changes the comparison.",
+        "With dilute hydrochloric acid, the example metals Mg, Zn and Fe give their chlorides and hydrogen; with dilute sulfuric acid they give sulfates and hydrogen. Copper does not displace hydrogen from these dilute non-oxidizing acids. A different acid or surface coating can change an observation; absence of visible gas is not a universal proof that no possible reaction exists.",
+        "Match acid identity, concentration, temperature, exposed area, quantity and observation interval when interpreting rates. Aluminium oxide can delay reaction despite aluminium’s position above zinc and iron. A rate from unequal surfaces is not an intrinsic numerical reactivity measure."
+      ],
+      "terms": [
+        "matched comparison",
+        "steam",
+        "surface layer"
+      ],
+      "example": {
+        "question": "A reacts vigorously with cold water. B and C do not visibly react with it; B gives hydrogen faster than C in a matched dilute-HCl comparison. What can each comparison support?",
+        "steps": [
+          "The cold-water evidence supports A above the other two in the stated comparison but does not order B and C.",
+          "Matched acid evidence supports B above C, provided the rate/product observations are suitable.",
+          "Combine them conditionally as A > B > C; check surface and comparison limits."
+        ],
+        "explanation": "Use the actual conditions and positive evidence, separating rate, product identity and limits of a negative observation."
+      },
+      "practice": {
+        "question": "A learner ranks two metals solely because neither visibly reacts with cold water, then writes Mg + steam → Mg(OH)₂ + H₂ and expects copper to evolve hydrogen slowly in dilute HCl. Correct these conclusions and name the zinc salt with each named dilute acid.",
+        "answer": "Two negative cold-water observations do not rank the pair. Magnesium with steam gives MgO + H₂; its balanced model is Mg + H₂O → MgO + H₂. Copper does not displace hydrogen from dilute HCl in this comparison. Zinc gives zinc chloride with HCl and zinc sulfate with dilute H₂SO₄.",
+        "explanation": "Use the actual conditions and positive evidence, separating rate, product identity and limits of a negative observation."
+      }
+    },
+    {
+      "id": "metal-displacement-transfer-evidence",
+      "title": "Use products to check salt and oxide displacement",
+      "points": [
+        "2.16"
+      ],
+      "paragraphs": [
+        "A more reactive metal can displace a less reactive metal from its suitable aqueous salt. For zinc and copper(II) sulfate: Zn + CuSO₄ → ZnSO₄ + Cu. The net ionic form is Zn + Cu²⁺ → Zn²⁺ + Cu; sulfate is a spectator. A copper deposit and loss of some blue Cu²⁺ colour support the predicted conversion under stated quantities and conditions.",
+        "For an original unknown-metal model, P converts Q²⁺ into Q and Q converts R²⁺ into R under suitable matched conditions. This supports P > Q > R and predicts P with R²⁺. A fourth metal S has no supplied comparisons, so it cannot be placed uniquely. Do not turn missing evidence into a negative result.",
+        "Under supplied suitable reaction conditions, aluminium can remove oxygen from copper(II) oxide: 2Al + 3CuO → Al₂O₃ + 3Cu. This has two Al, three Cu and three O atoms on each side. It is a solid-oxide comparison, distinct from an aqueous salt reaction; merely mixing cold solids is not a guaranteed observation.",
+        "A balanced reverse equation does not override reactivity evidence. Copper is not expected to displace zinc from zinc sulfate in the ordinary aqueous comparison. Very reactive metals can react with water instead, so a salt-solution test is not automatically suitable for every metal."
+      ],
+      "terms": [
+        "metal ions",
+        "spectator",
+        "oxide displacement"
+      ],
+      "example": {
+        "question": "P displaces Q from Q²⁺ solution, and Q displaces R from R²⁺ solution. Rank the known trio, predict P with R²⁺ and place S if no comparison involving S is supplied.",
+        "steps": [
+          "P > Q and Q > R give P > Q > R.",
+          "P is predicted to displace R under suitable comparable conditions.",
+          "S remains unplaced; missing evidence is not a measured no-reaction result."
+        ],
+        "explanation": "Check conservation, correct species, suitable conditions and the independent reactivity direction."
+      },
+      "practice": {
+        "question": "Balance Al + CuO → Al₂O₃ + Cu and identify the reduced oxide. Give the reacting copper species and spectator for zinc with CuSO₄. Does balancing the reverse copper/zinc equation establish that it occurs?",
+        "answer": "2Al + 3CuO → Al₂O₃ + 3Cu; CuO loses oxygen and is reduced. In the salt reaction the reactive species is Cu²⁺, with sulfate unchanged. The balanced reverse equation alone does not establish the unsupported displacement direction.",
+        "explanation": "Check conservation, correct species, suitable conditions and the independent reactivity direction."
+      }
+    },
+    {
+      "id": "metal-series-position-evidence",
+      "title": "Use all eleven positions in Pearson’s metal series",
+      "points": [
+        "2.17"
+      ],
+      "paragraphs": [
+        "The required descending metal order is potassium, sodium, lithium, calcium, magnesium, aluminium, zinc, iron, copper, silver, gold. In symbols: K > Na > Li > Ca > Mg > Al > Zn > Fe > Cu > Ag > Au. This is the specified school reactivity order, not an order of atomic number or mass.",
+        "Lithium is above calcium and magnesium is above aluminium in this list. An aluminium surface layer can hinder visible reaction without moving aluminium below zinc in the series. Use supplied observations to discuss such limitations rather than replacing the required order with a single rate observation.",
+        "Hydrogen is a useful non-metal reference between iron and copper for the named dilute non-oxidizing acid comparisons. It is not a twelfth metal in the required list. Positions support expected displacement in suitable systems but do not give an exact reaction time or guarantee every aqueous test is uncontaminated."
+      ],
+      "terms": [
+        "reactivity series",
+        "hydrogen reference",
+        "passivation"
+      ],
+      "example": {
+        "question": "Place calcium, lithium, aluminium, magnesium and iron in the required descending order. Where does the hydrogen comparison reference fit, and is it one of the eleven metals?",
+        "steps": [
+          "Li > Ca > Mg > Al > Fe follows the specified positions.",
+          "The hydrogen reference lies between Fe and Cu for these dilute-acid comparisons.",
+          "Hydrogen is not one of the eleven required metals."
+        ],
+        "explanation": "Recall every named metal and distinguish the specified ordering from a conditional observation."
+      },
+      "practice": {
+        "question": "A proposed order swaps Li/Ca and Mg/Al, omits zinc and puts gold above silver. Correct the complete eleven-metal sequence. Does a slow aluminium start alone justify swapping its position with zinc?",
+        "answer": "K > Na > Li > Ca > Mg > Al > Zn > Fe > Cu > Ag > Au. A slow aluminium start can reflect its oxide surface layer; that isolated observation does not change its required position above zinc.",
+        "explanation": "Recall every named metal and distinguish the specified ordering from a conditional observation."
+      }
+    },
+    {
+      "id": "rust-control-transfer-evidence",
+      "title": "Identify what each rusting control actually excludes",
+      "points": [
+        "2.18"
+      ],
+      "paragraphs": [
+        "Rusting needs both water and oxygen. Rust is commonly described as hydrated iron(III) oxide with variable water content; it can flake and expose more iron. Salt can accelerate corrosion under wet conditions but is not a required third substance.",
+        "An original comparison uses similar clean iron samples: A in moist air, B in dry air maintained with an appropriate drying agent in a sealed tube, C in boiled water protected against renewed air entry by the approved oil layer, and D in boiled water left open to air. A has both requirements; properly maintained B lacks water and C lacks available oxygen. D can regain dissolved oxygen, so its label “boiled” does not establish lasting oxygen exclusion.",
+        "Keep iron surface, temperature, exposure time and observation method comparable. Report expected outcomes for a maintained control, rather than claiming perfect exclusion without checks. No rust during a short interval does not prove indefinite immunity, and these are proposed conditions rather than performed trials."
+      ],
+      "terms": [
+        "rust",
+        "control",
+        "dissolved oxygen"
+      ],
+      "example": {
+        "question": "Predict rusting evidence for A moist air, B maintained dry air, C oxygen-depleted water protected from air and D previously boiled water left open. Explain the difference between C and D.",
+        "steps": [
+          "A can rust because both requirements are available; properly maintained B and C lack one required condition.",
+          "D can take up oxygen again, so rusting remains possible.",
+          "Check the actual exclusions and time; none of these predictions is a recorded trial."
+        ],
+        "explanation": "An apparatus description must establish the missing reactant; a convenient label does not guarantee the exclusion."
+      },
+      "practice": {
+        "question": "A student leaves out liquid water but does not dry the air, leaves boiled water open and adds salt only to the comparison tube. Are these secure water/oxygen exclusion controls? Does salt become necessary for rust?",
+        "answer": "No. Moisture can remain in undried air, and open boiled water can regain oxygen. Changing salt also changes the rate conditions rather than isolating only water or oxygen. Rust requires water and oxygen; salt can accelerate it but is not required. Matched, maintained exclusions are needed.",
+        "explanation": "An apparatus description must establish the missing reactant; a convenient label does not guarantee the exclusion."
+      }
+    },
+    {
+      "id": "rust-protection-transfer-evidence",
+      "title": "Distinguish an intact barrier from connected sacrifice",
+      "points": [
+        "2.19"
+      ],
+      "paragraphs": [
+        "Paint, oil and grease protect by excluding water and oxygen when the barrier is sufficiently continuous. A scratch through paint exposes iron locally. The coating does not have to supply electrons, and intact regions can remain protected while the scratched area corrodes.",
+        "Galvanising applies zinc. Intact zinc acts as a barrier, while connected zinc can also oxidize preferentially: Zn → Zn²⁺ + 2e⁻. Its electrons help protect iron in the appropriate wet corrosive circuit. A connected more reactive metal such as magnesium can provide sacrificial protection without being a complete coating.",
+        "Compare four stated wet cases: scratched paint; scratched zinc with remaining contact; iron with a nearby disconnected zinc piece; and iron connected to copper. Paint loses its barrier at the scratch. Connected remaining zinc can sacrifice, but detached zinc lacks the necessary electron path. Copper is less reactive than iron and is not its sacrificial protector; a wet connected pair can instead increase iron corrosion.",
+        "Sacrificial metal is consumed and needs sufficient remaining material and a suitable connection/environment. Neither zinc nor paint gives an unlimited promise of protection for any damage. Check the mechanism and maintenance requirements in the supplied situation."
+      ],
+      "terms": [
+        "galvanising",
+        "barrier",
+        "sacrificial protection"
+      ],
+      "example": {
+        "question": "Why can a scratched zinc coating protect iron under suitable connected wet conditions while a similarly scratched paint coating fails at its exposed region?",
+        "steps": [
+          "Both intact coatings can exclude water/oxygen.",
+          "Remaining connected zinc can oxidize preferentially and supply electrons; ordinary paint has no sacrificial role.",
+          "Protection is conditional on the connection and available zinc, which is consumed."
+        ],
+        "explanation": "Name the contact, relative reactivity and oxidation process rather than labelling every nearby metal protective."
+      },
+      "practice": {
+        "question": "A learner places an isolated zinc fragment nearby or connects copper instead, and calls either sacrificial protection. Correct the claim and say which species oxidizes in a supported connected-zinc case.",
+        "answer": "Disconnected zinc does not provide the required electrical path. Copper is below iron and is not a suitable sacrificial donor for it. In the supported zinc case, Zn atoms lose two electrons to form Zn²⁺; zinc is consumed while helping protect the connected iron.",
+        "explanation": "Name the contact, relative reactivity and oxidation process rather than labelling every nearby metal protective."
+      }
+    },
+    {
+      "id": "redox-agent-transfer-evidence",
+      "title": "Identify both changes and the actual agent species",
+      "points": [
+        "2.20"
+      ],
+      "paragraphs": [
+        "In oxygen terms, oxidation gains oxygen and reduction loses it. Zn + CuO → ZnO + Cu has zinc gaining oxygen and CuO losing it. Zinc is the reducing agent because it removes oxygen from CuO; CuO is the oxidizing agent because it supplies oxygen to zinc. Both changes form one redox reaction.",
+        "In an unfamiliar ionic example, Cu + 2Ag⁺ → Cu²⁺ + 2Ag. Copper oxidation is Cu → Cu²⁺ + 2e⁻; silver-ion reduction is 2Ag⁺ + 2e⁻ → 2Ag. Each half conserves atoms and charge, and the two electrons cancel from the overall equation.",
+        "Cu is the electron donor and reducing agent; it is itself oxidized. Ag⁺ is the acceptor and oxidizing agent; it is itself reduced. If silver nitrate is the starting salt, nitrate is a spectator, not the oxidizing agent. Name the reactant ion rather than the silver metal product.",
+        "An agent’s name describes its effect on the other species, not its own oxidation/reduction direction. Electron transfer also describes reactions with no oxygen present. Heating, a changed colour or a lower sample mass alone is not a general definition of redox."
+      ],
+      "terms": [
+        "redox",
+        "oxidation",
+        "reduction",
+        "agents"
+      ],
+      "example": {
+        "question": "For Cu + 2Ag⁺ → Cu²⁺ + 2Ag, give balanced half-equations, both changes and both agents. Is nitrate assigned either role?",
+        "steps": [
+          "Cu → Cu²⁺ + 2e⁻ is oxidation; 2Ag⁺ + 2e⁻ → 2Ag is reduction.",
+          "Cu is the reducing agent and Ag⁺ the oxidizing agent.",
+          "Nitrate remains a spectator; atoms and total charge +2 are conserved in the net equation."
+        ],
+        "explanation": "Keep donor/acceptor roles and oxygen gain/loss consistent without naming spectators or products as the reacting agents."
+      },
+      "practice": {
+        "question": "For Zn + CuO → ZnO + Cu, use oxygen transfer to identify both changes and agents. Correct “the reducing agent must itself gain electrons and the copper product is the oxidizing agent.”",
+        "answer": "Zinc gains oxygen and is oxidized; CuO loses oxygen and is reduced. Zn removes oxygen and is the reducing agent; CuO supplies oxygen and is the oxidizing agent. A reducing agent donates electrons and is oxidized, while an oxidizing agent accepts them and is reduced. The reactant CuO, not the Cu product, has that role here.",
+        "explanation": "Keep donor/acceptor roles and oxygen gain/loss consistent without naming spectators or products as the reacting agents."
+      }
+    },
+    {
+      "id": "acid-metal-observation-transfer-evidence",
+      "title": "Make the acid–metal comparison observable",
+      "points": [
+        "2.21"
+      ],
+      "paragraphs": [
+        "Pearson names magnesium, zinc and iron as examples for investigating reactions with dilute hydrochloric and sulfuric acids; it does not restrict the practical statement to an exclusive three-metal list. These notes use the three familiar examples without recommending substitutes. The table gives predicted salts and gas, not observations from trials performed here.",
+        "A qualitative school comparison places labelled samples in separate supported test tubes with the teacher-prepared dilute acid. Observe effervescence, disappearance of metal and any temperature change, recording the metal/acid identity and observation time. A suitable small collected hydrogen sample gives a squeaky pop with a lighted splint under the approved school test. Fizzing alone is only evidence of gas; a slowly evolving sample may be insufficient for a clear identification.",
+        "A teacher-approved quantitative extension uses a delivery connection from the reaction vessel to a freely moving gas syringe, with volume recorded against elapsed time. Check the collection seal, avoid a trapped/blocked system, use a consistent start and read the scale at comparable conditions. A leak lowers collected gas and can mimic a slower rate; this is a planning explanation, not a certified trial.",
+        "An invented matched-HCl dataset starts each collection at 0 cm³ when t = 0 s and reports gas-volume increases at t = 20 s: Mg 24 cm³, Zn 10 cm³ and Fe 4 cm³. Mean rates over that interval are 1.2, 0.50 and 0.20 cm³ s⁻¹. The interval-average ranking describes those stated conditions; a final total volume instead depends on quantities and limiting reactants. Equal masses do not contain equal metal atom amounts.",
+        "An aluminium oxide layer can delay a start, and calcium sulfate coating can arrest a suitable sulfuric-acid comparison with reactants still available. These are explanatory alternatives, not extra exclusive requirements or new practical recommendations. Keep acid identity, concentration, volume, temperature, surface and timing controlled; repeated close results can still share a collection bias."
+      ],
+      "terms": [
+        "practical plan",
+        "hydrogen test",
+        "average rate",
+        "limiting reactant"
+      ],
+      "example": {
+        "question": "Each gas collection starts at zero at t = 0 s. After 20 s, invented HCl volumes are 24/10/4 cm³ for Mg/Zn/Fe. Calculate interval-average rates. Which observation identifies the gas, and can a larger final amount alone establish a faster rate?",
+        "steps": [
+          "Divide each volume by 20 s: Mg 1.2, Zn 0.50, Fe 0.20 cm³ s⁻¹ under the given conditions.",
+          "A suitable collected hydrogen sample gives a squeaky pop with a lighted splint; fizzing alone does not identify it.",
+          "Final amount depends on available reactants; it is not an interval-rate measurement."
+        ],
+        "explanation": "Distinguish prediction, actual observation, gas identification, comparison controls and the source’s example scope."
+      },
+      "practice": {
+        "question": "A leaking collection connection makes zinc seem slower; a student changes acid concentration and exposed area for iron, writes Fe(III) salts and says Mg/Zn/Fe are the only publisher-permitted metals. Correct the evidence, salt names and scope. Does a coating-stalled reaction prove all acid is gone?",
+        "answer": "The leak reduces measured gas and the changed conditions prevent isolating metal identity. The named dilute-acid models give Fe(II) chloride or Fe(II) sulfate plus hydrogen, not automatic Fe(III) salts. Mg/Zn/Fe are publisher examples. A coating can stall reaction while acid and metal remain; use further supplied evidence to identify the limiting process.",
+        "explanation": "Distinguish prediction, actual observation, gas identification, comparison controls and the source’s example scope."
+      },
+      "table": {
+        "caption": "Predicted products for the three example metals · named dilute acids",
+        "headers": [
+          "Metal",
+          "With dilute HCl",
+          "With dilute H₂SO₄",
+          "Gas"
+        ],
+        "rows": [
+          [
+            "Mg",
+            "MgCl₂ · magnesium chloride",
+            "MgSO₄ · magnesium sulfate",
+            "H₂"
+          ],
+          [
+            "Zn",
+            "ZnCl₂ · zinc chloride",
+            "ZnSO₄ · zinc sulfate",
+            "H₂"
+          ],
+          [
+            "Fe",
+            "FeCl₂ · iron(II) chloride",
+            "FeSO₄ · iron(II) sulfate",
+            "H₂"
+          ]
+        ]
+      },
+      "practical": {
+        "apparatus": [
+          "Teacher-approved labelled test tubes/support, example metal samples, prepared dilute HCl/H₂SO₄ and approved small-sample gas-test apparatus.",
+          "For the optional quantitative extension: reaction vessel, delivery connection, freely moving gas syringe and timer."
+        ],
+        "method": [
+          "Compare identified metal/acid combinations under the stated school procedure and record gas evolution and metal changes over the same interval.",
+          "Use the approved collected small gas sample for a lighted-splint hydrogen test; record the squeaky-pop result separately from fizzing.",
+          "For volume/time data, use a consistent start, read gas volume at stated intervals and repeat matched comparisons with fresh samples."
+        ],
+        "variables": [
+          "Keep chosen acid identity, concentration, volume, initial temperature, metal amount/exposed surface/condition and observation interval comparable; change the intended variable only.",
+          "Equal molar concentrations of different acids do not automatically give identical available H⁺ concentration."
+        ],
+        "safety": [
+          "Follow the school’s dilute-acid, glassware and hydrogen precautions with eye protection and approved small samples. Keep collection apparatus unblocked.",
+          "Do not replace these samples with potassium, sodium or lithium in acid; gas testing must use the teacher-approved separate small sample."
+        ],
+        "quality": [
+          "Check seals and scale readings; distinguish reaction rate from gas-collection losses.",
+          "Use product evidence and repeats without claiming that consistency removes systematic bias or proves physical practical competence."
+        ]
       }
     }
   ]

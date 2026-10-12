@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-12",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Independent read-only whole-chapter boundary audit; no promotion.",
+  "qualification": "4MB1",
+  "specificationSha256": "62d4534ba1c0aee42ce2d3e7fd1da8083fd03216dd106da11ae590525d3187a5",
+  "issue": "Issue1January2016",
+  "sourceBoundary": {
+    "topic": "1 Number",
+    "physicalPages": [
+      17,
+      18
+    ],
+    "printedPages": [
+      11,
+      12
+    ],
+    "nextTopicPhysicalPage": 19,
+    "nextTopicPrintedPage": 13,
+    "nextTopicHeading": "2 Sets",
+    "retained17and18RendersViewed": true,
+    "page19FreshlyRenderedAndViewed": true
+  },
+  "numberTeaching": {
+    "identities": 11,
+    "requirements": 43,
+    "mappedSections": 21,
+    "existingPinnedCompletionGate": "passed",
+    "omittedSourceClauseOrMathDefectFound": false
+  },
+  "currentCatalogChapter": {
+    "id": "number-and-algebra",
+    "sections": 76,
+    "goals": 18,
+    "savedUniqueIdentities": 49,
+    "completeNumberIdentities": 11,
+    "otherPartialIdentities": 38,
+    "unmappedByNumberOnlySections": 55
+  },
+  "verdict": "do-not-promote-current-combined-chapter",
+  "blockers": [
+    "The chapter includes sets/algebra/functions/matrices beyond the completed Number source boundary.",
+    "Whole-chapter gate requires all same-chapter saved identities complete, all sections mapped and every goal reviewed.",
+    "index-laws lacks its own practice field; shared practice exists but the current whole-chapter gate requires every section to have practice."
+  ],
+  "scopeLimits": [
+    "No route/catalog split implemented or authorised by this read-only audit.",
+    "Q19/Q21 historical-paper discrepancies remain separate unless they materially affect current teaching; bounds notes preserve endpoint limits/concessions.",
+    "No learner/examiner/empirical validation or exam-ready promotion."
+  ],
+  "authoredChapterPromotions": 0,
+  "examReadyPromotions": 0,
+  "activeTemplates": 0
+}

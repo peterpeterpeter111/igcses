@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Caption-origin clarity only. Existing approved requirement decisions, scientific data/answers and historical reviews retained; current source references point to pinned descendants.",
+  "sourceCommitBefore": "7f70e9a516e953f799f78e232ee0bfa48a2d065a",
+  "changedSections": [
+    {
+      "id": "saturation-and-solubility-data",
+      "beforeSha256": "90e801aad50d029c46c02709f31089cc743b4e77b1524bfde17948ceaaaa86c0",
+      "afterSha256": "7e508f1d438f6393a99f32999ed760f231af7fc4babaee5f429afb0f6f8f31c0",
+      "caption": "Invented solubility data · study inputs, not measured values"
+    },
+    {
+      "id": "first-twenty-configuration-evidence",
+      "beforeSha256": "ec3a5353d5d3f6d386d605039ef7900ddbdebd05569c56ec836995a46cb5b2c9",
+      "afterSha256": "053c45ab4f0b2ac9a3d0fb42286252efa33274c04c46abeabc7fe0be70398b73",
+      "caption": "School shell model · neutral ground-state atoms, first twenty elements"
+    },
+    {
+      "id": "crucible-mass-and-bias-evidence",
+      "beforeSha256": "9c38318481d1f05da364494c70400a0e6e29e5b242955676e7f3a6795b50881f",
+      "afterSha256": "3e4f843901a34f88ff4f7bfb8d892b8babff8d10b1e0060510f2a996347e159a",
+      "caption": "Invented crucible readings · calculation and error analysis"
+    },
+    {
+      "id": "ion-charge-and-formula-evidence",
+      "beforeSha256": "221d97ac72d468f2f2f9c294b3ddfea8e4dbc13eaee23507e8daceeffb43d8af",
+      "afterSha256": "a607ca118426ee80eea096c06e1b11623968a32a7d0b7ec075ed32408769fb20",
+      "caption": "Charge-balance model · ion ratios and neutral formulae"
+    },
+    {
+      "id": "molecular-property-comparison-evidence",
+      "beforeSha256": "61cd6d57e5f8f312d7211c3f9ae7bad0c125f8e5396b2f196bf430da571532fc",
+      "afterSha256": "345c97d590733ce9ab7fed7a051b8f845614cd9190c6a98a21bade2e241fc226",
+      "caption": "Invented molecular-series values · study inputs, not measured properties"
+    },
+    {
+      "id": "carbon-structure-property-evidence",
+      "beforeSha256": "71b906d7c91dbfdfdc75bfe6b6d1e8bdcab26086197a113aa441672af103fc4b",
+      "afterSha256": "3261b9dbaa628d8d9f706dc6e95d9df39e064b0dc8d1d0fb9977d6430b837661",
+      "caption": "School structure–property comparison · ordinary undoped carbon models"
+    },
+    {
+      "id": "electrolysis-condition-comparison-evidence",
+      "beforeSha256": "6b335365ab99d5697bde1eec7f70a7c5f4c6bbeba8ef0c25292e481a8ca01b4b",
+      "afterSha256": "4fe6e66b56b681b7f922cd2de653e96c3b6c9cd69fd84573383e1653e4983ddd",
+      "caption": "Conditional product predictions · specified solutions and electrodes"
+    },
+    {
+      "id": "aqueous-cell-control-evidence",
+      "beforeSha256": "67902807e3847e2df789590e813f27a6fa9feae463a7ce3528893a3f022026ac",
+      "afterSha256": "73bc245f9834ab04f8369a640e2346c9ef7c4e53c383f1c81761e9e4f31aaea1",
+      "caption": "Invented gas-collection readings · illustrative acidified-water model"
+    }
+  ],
+  "descendantReviews": [
+    {
+      "inventory": "research/syllabus/4CH1-bonding.json",
+      "previousReview": "research/teaching-reviews/4CH1-covalent-diagrams-2026-10-09.json",
+      "descendantReview": "research/teaching-reviews/4CH1-bonding-captions-2026-10-12.json",
+      "reviewedPoints": 18
+    },
+    {
+      "inventory": "research/syllabus/4CH1-electrolysis.json",
+      "previousReview": "research/teaching-reviews/4CH1-electrolysis-2026-10-09.json",
+      "descendantReview": "research/teaching-reviews/4CH1-electrolysis-captions-2026-10-12.json",
+      "reviewedPoints": 6
+    },
+    {
+      "inventory": "research/syllabus/4CH1-formulae-and-calculations.json",
+      "previousReview": "research/teaching-reviews/4CH1-calculations-2026-10-09.json",
+      "descendantReview": "research/teaching-reviews/4CH1-formulae-and-calculations-captions-2026-10-12.json",
+      "reviewedPoints": 13
+    },
+    {
+      "inventory": "research/syllabus/4CH1-states-and-mixtures.json",
+      "previousReview": "research/teaching-reviews/4CH1-principles-foundations-2026-10-09.json",
+      "descendantReview": "research/teaching-reviews/4CH1-states-and-mixtures-captions-2026-10-12.json",
+      "reviewedPoints": 22
+    }
+  ],
+  "sourceVerificationPromotions": 0,
+  "authoredPointPromotions": 0,
+  "wholeChapterPromotions": 0,
+  "paperPromotions": 0,
+  "templateActivations": 0,
+  "remainingLegacyCaptionSections": [
+    "biology/structures-and-functions#food-test-evidence-table",
+    "biology/structures-and-functions#enzyme-repeat-data-and-endpoints",
+    "biology/structures-and-functions#photosynthesis-rate-comparisons",
+    "biology/structures-and-functions#photosynthesis-requirement-cases",
+    "biology/structures-and-functions#food-energy-comparison-evidence",
+    "biology/living-organisms#life-process-observations",
+    "biology/living-organisms#eukaryote-comparison-evidence",
+    "human-biology/cells-and-tissues#stem-cell-comparison-evidence"
+  ],
+  "notes": "Eight remaining Biology/Human captions need their own evidence descendants. Biology living-organisms additionally needs its pinned whole-chapter review refreshed when edited. Earlier raw-metadata inventory missed five composed-part tables; new composed inventory is authoritative for table count, not scientific approval."
+}
