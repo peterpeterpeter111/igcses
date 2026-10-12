@@ -4,14 +4,15 @@ import { execFileSync } from 'node:child_process';
 import group from '../research/teaching-reviews/4CH1-group1-2026-10-09.json' with { type: 'json' };
 import halogen from '../research/teaching-reviews/4CH1-halogen-physical-2026-10-09.json' with { type: 'json' };
 import groupInventory from '../research/syllabus/4CH1-group1.json' with { type: 'json' };
-import pending from '../research/syllabus/4CH1-halogen-reactivity.json' with { type: 'json' };
+import earlierDisplacement from '../research/reviews/2026-10-06-halogen-reactivity-teaching-review.json' with { type: 'json' };
 
-void test('six group reviews are authored teaching while displacement and exam calibration remain unfinished', () => {
+void test('six group reviews retain their authored scope and the historical displacement review is unchanged', () => {
   assert.equal(group.points.length, 4); assert.equal(halogen.points.length, 2);
   assert.equal(group.points.reduce((n, p) => n + p.requirements.length, 0), 15);
   assert.equal(halogen.points.reduce((n, p) => n + p.requirements.length, 0), 8);
   assert.deepEqual(groupInventory.points.find((p) => p.reference === '2.4C')!.components, ['2C']);
-  assert.ok(pending.points.every((p) => p.teachingCoverage === 'partial'));
+  assert.equal(earlierDisplacement.completePoints, 0);
+  assert.equal(earlierDisplacement.activeTemplates, 0);
   for (const r of [group, halogen]) {
     assert.equal(r.practicalTrialsPerformed, false); assert.equal(r.examTemplateCalibrationComplete, false);
   }

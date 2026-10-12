@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4CH1",
+  "documentId": "4CH1-spec",
+  "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "sourceVisualPages": [
+    22
+  ],
+  "sourcePrintedPages": [
+    16
+  ],
+  "reviewDate": "2026-10-12",
+  "reviewer": "Codex source and authored-teaching review",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "authored-teaching-coverage",
+  "policyVersion": 1,
+  "practicalTrialsPerformed": false,
+  "examTemplateCalibrationComplete": false,
+  "noteRef": "content/notes/chemistry-inorganic.json",
+  "inventorySha256": "166cfaf2ce8b1eb38e6afaa715e8db19ce695b05ab6cc9022ac4af9a2eda94d5",
+  "auditRef": "research/curriculum-audits/4CH1-halogen-reactivity.json",
+  "auditSha256": "1c5c0f268a5d184d7f08683cbc5f8402a7803efd9e7fc7da3553c373ccfdc33f",
+  "diagramSha256": {
+    "/diagrams/chemistry-halogen-displacement.svg": "e9ed13da2a99dbdc1c0f70b543cb621174558baf25f195809570b59ffab1b891"
+  },
+  "limitations": [
+    "Two own Issue3 identities2.7 and2.8C /ten requirements have agent-reviewed authored explanations plus unfamiliar fixed practice.2.7 both1C/2C;2.8C only2C. No practical trials, learner/examiner calibration, active templates or whole Inorganic completion. Later2.9onward and Principles1.25 remain unfinished.",
+    "Fresh OklahomaState URL timed out; retained prior narrow review is historical, not a new obtained source. OpenStax18.11 was read narrowly for relative oxidation/appearance; outdated vacant-d-orbital triiodide mechanism and blanket all-halogen least-reactive claim not adopted.",
+    "Original fixed exercises and hypothetical reports are not sampled past-paper tasks, physical trials or generative exam calibration."
+  ],
+  "points": [
+    {
+      "pointId": "4CH1:issue3:2.7",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.7:r1",
+          "verdict": "approved",
+          "judgement": "Corrects elemental Cl2/reactive iodide versus Cl−; Na+ spectator removed only in net ionic form, atom/charge identity retained.",
+          "assessmentSectionId": "halogen-species-and-charge-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.7:r2",
+          "verdict": "approved",
+          "judgement": "Three positive actual pairs Cl/Br,Cl/I,Br/I agree with the original nine-cell SVG and unfamiliar P/Q/R directed evidence.",
+          "assessmentSectionId": "halogen-ranking-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.7:r3",
+          "verdict": "approved",
+          "judgement": "All six remaining matrix pairs have no expected net displacement, including identical-element diagonal; retained colour and possible equilibria are not overclaimed.",
+          "assessmentSectionId": "halogen-ranking-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.7:r4",
+          "verdict": "approved",
+          "judgement": "Independent complete/ionic and paired half-equation conservation; missing coefficients and one-electron molecular proposals fail, balanced reverse direction rejected as unsupported.",
+          "assessmentSectionId": "halogen-species-and-charge-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.7:r5",
+          "verdict": "approved",
+          "judgement": "Unfamiliar Q>P,R>Q,R>P gives R>Q>P; different P>Q>R>P cycle explicitly rejects a total ranking rather than inventing evidence.",
+          "assessmentSectionId": "halogen-ranking-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.7:r6",
+          "verdict": "approved",
+          "judgement": "Same-solvent product reference versus dilution control, vapour/aqueous mismatch, excess starting reagent and degraded-negative limits distinguish product identity from simple colour intensity.",
+          "assessmentSectionId": "halogen-observation-control-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "halogen-displacement-pattern": "f5043daf47280498142e4612485f3a7b5e5cf7d8b1669b8208f2845199e3c86e",
+        "halogen-displacement-equations": "a512fba9b497427f73d80c0d8089ff443e5d91162fc297c6a7a07cfd7125e240",
+        "halogen-displacement-evidence": "709bc31295499927809d464873d74e0a4990572d2d69c8b7da6a87e089424d46",
+        "halogen-species-and-charge-evidence": "a8e1d1a726ea04abf15cb7695e93c06f2db8abeab6d302877625b62a0924d9c0",
+        "halogen-ranking-transfer-evidence": "382c74cdbd79e0cd1f487fb32064e0763e027be2fdb3cd4f9486177c31509272",
+        "halogen-observation-control-evidence": "87fba33c3da527f7943049edf0f1338b14eed02e1cadd8a86629cf7ea5daa00a"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.8C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.8C:r1",
+          "verdict": "approved",
+          "judgement": "Neutral configurations independently sum17/35/53 with7outer electrons; bromide35protons/36electrons keeps elemental identity.",
+          "assessmentSectionId": "halogen-electron-gain-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.8C:r2",
+          "verdict": "approved",
+          "judgement": "Br2+2e−→2Br− balances2Br/charge−2 and electron totals70+2=72; oneelectron/twoions and proton-loss corrections explicit.",
+          "assessmentSectionId": "halogen-electron-gain-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.8C:r3",
+          "verdict": "approved",
+          "judgement": "More occupied shells increase distance/shielding despite greater nuclear charge; the weaker incoming-electron attraction is the stated limited school explanation.",
+          "assessmentSectionId": "halogen-electron-gain-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.8C:r4",
+          "verdict": "approved",
+          "judgement": "Weaker gain supports Cl>Br>I, contrasted with easier Group1 loss; no exact rate and only Paper2C for own2.8C.",
+          "assessmentSectionId": "halogen-electron-gain-transfer-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "halogen-electron-reactivity": "2b8ccc5aacf9199935d3d0e1436f283d8dcee1833bd5666ce6fac0c0e68ebb30",
+        "halogen-electron-gain-transfer-evidence": "2ac59c71435e0839e469cd5679c57734bbc9d23fed3c08814fd09ee0623cbcdb"
+      }
+    }
+  ]
+}

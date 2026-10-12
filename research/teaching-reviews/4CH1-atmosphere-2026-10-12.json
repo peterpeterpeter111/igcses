@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4CH1",
+  "documentId": "4CH1-spec",
+  "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "sourceVisualPages": [
+    23
+  ],
+  "sourcePrintedPages": [
+    17
+  ],
+  "reviewDate": "2026-10-12",
+  "reviewer": "Codex source and authored-teaching review",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "authored-teaching-coverage",
+  "policyVersion": 1,
+  "practicalTrialsPerformed": false,
+  "examTemplateCalibrationComplete": false,
+  "noteRef": "content/notes/chemistry-inorganic.json",
+  "inventorySha256": "1d6445873f54994a17bbcb3571f1ce27f6fdd5f94bf6943822aecf72f95626bb",
+  "auditRef": "research/curriculum-audits/4CH1-atmosphere.json",
+  "auditSha256": "9f872c4e6f350890527259d5dd2055d0c5ce6fdb99b9a558b76bddb86f037383",
+  "diagramSha256": {
+    "/diagrams/chemistry-oxygen-volume.svg": "a189c5e88f82691f62367aa18e9957d3004a22309141555756c2babc53039d63"
+  },
+  "limitations": [
+    "Six own Issue3 identities2.9–2.14/all1C2C and33 local requirements have agent-reviewed authored explanations plus unfamiliar fixed practice. Practical planning is taught; no practical performed, human competence certification, learner/examiner calibration, active template or whole Inorganic completion. Later2.15onward and1.25reactioncollection incomplete.",
+    "Fresh NOAA used only for approximate composition; universal respiration/all-heat-escape prose not adopted. Purdue unbalanced nitride side equation not adopted. NASA mechanism narrow; authoredbudgetnumbers fictional.",
+    "Pearson retained2017guide physicalPDF93/95/97 re-read visually,printed91/93/95. Older reference remains valid. No teacher-guide task/diagram copied or counted as an exam pair. Fixedpractice is not generative exam activation."
+  ],
+  "points": [
+    {
+      "pointId": "4CH1:issue3:2.9",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.9:r1",
+          "verdict": "approved",
+          "judgement": "Four rounded dry-air proportions 78/21/0.9/0.04 correctly identify N2/O2/Ar/CO2; argon exceeds CO2.",
+          "assessmentSectionId": "dry-air-volume-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.9:r2",
+          "verdict": "approved",
+          "judgement": "Dry denominator explicitly excludes variable water vapour; moist-air fraction cannot be relabelled dry.",
+          "assessmentSectionId": "dry-air-volume-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.9:r3",
+          "verdict": "approved",
+          "judgement": "Volume fraction at common T/P distinguished from mass percentage.",
+          "assessmentSectionId": "dry-air-volume-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.9:r4",
+          "verdict": "approved",
+          "judgement": "99.94% sum and 0.15 cm³ remainder in 250 cm³ qualified by rounding/trace species, not missing matter or current monitoring.",
+          "assessmentSectionId": "dry-air-volume-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.9:r5",
+          "verdict": "approved",
+          "judgement": "Independent 250 and600 cm³ transfer calculations:195/52.5/2.25/0.10 and oxygen126/argon5.4 cm³.",
+          "assessmentSectionId": "dry-air-volume-transfer-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "air-composition": "732dc8aa562b458cfc611013b69fc8cdbd94115c0294e82cc42d77868ee6f266",
+        "dry-air-volume-transfer-evidence": "0b1d6c94a280283e2f1c5e6c6bee7ca417bda9e7cfe7c5f9b314601b74c708d3"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.10",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.10:r1",
+          "verdict": "approved",
+          "judgement": "Excess moist iron/air-tight endpoint consumes oxygen into solid corrosion products; dry iron and incomplete removal rejected.",
+          "assessmentSectionId": "oxygen-total-volume-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.10:r2",
+          "verdict": "approved",
+          "judgement": "P4+5O2→P4O10 balances atoms; teacher-controlled non-metal comparison requires product outside measured gas and cooled conditions; sulfur gas is not equivalent.",
+          "assessmentSectionId": "oxygen-total-volume-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.10:r3",
+          "verdict": "approved",
+          "judgement": "Fixed95 plus initial30 gives original125 cm³; fixed76 plus24 gives100; solid/liquid not gas-space additions.",
+          "assessmentSectionId": "oxygen-total-volume-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.10:r4",
+          "verdict": "approved",
+          "judgement": "Independent25/125=20% and21/100=21%; 25/30 wrong-denominator contrast explicit.",
+          "assessmentSectionId": "oxygen-total-volume-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.10:r5",
+          "verdict": "approved",
+          "judgement": "Comparable initial/final temperature and pressure, equal-level qualification; finalhot bias differs from equallywarmer measurements.",
+          "assessmentSectionId": "oxygen-plan-and-error-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.10:r6",
+          "verdict": "approved",
+          "judgement": "Residual gas mostly nitrogen withargon/otherunreactedgases, notpureN2.",
+          "assessmentSectionId": "oxygen-total-volume-transfer-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "oxygen-air-removal": "78872d280bb92e64978adea995757b84b0c501b6501c2af786ecaab8a14c7cb3",
+        "oxygen-air-nonmetal": "52f66c70315fe5215641a6b8de069c75191334ad3634ebadd3a92578179001ff",
+        "oxygen-volume-calculation": "21a6f8161199f3c6b624a3eeed369e58dce61f923c71f3f404999d864d0b8d2b",
+        "oxygen-total-volume-transfer-evidence": "be0bace9cfc1c96953e157de3729b7bd65d1d22733c02a745cd40161c8ef5d3c",
+        "oxygen-plan-and-error-transfer-evidence": "1cc524f13a00694965bffb17826b9bd089589fc94d737b36292a62ba81660f82"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.11",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.11:r1",
+          "verdict": "approved",
+          "judgement": "Brightwhite Mg combustion and white MgO solid; actualairmayalsoyieldnitrogenproducts, no pureair-productoverclaim.",
+          "assessmentSectionId": "element-combustion-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.11:r2",
+          "verdict": "approved",
+          "judgement": "2Mg+O2→2MgO balanced and0.48/24=.020mol→.80gMgO/.32gO gain withcomplete-retentionassumptions.",
+          "assessmentSectionId": "element-combustion-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.11:r3",
+          "verdict": "approved",
+          "judgement": "H2 combusts tohotwater vapour; latercondensationphysical, productformationchemical; carbonabsent.",
+          "assessmentSectionId": "element-combustion-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.11:r4",
+          "verdict": "approved",
+          "judgement": "2H2+O2→2H2O balanced4H/2O and corrected invalidone-to-one proposal.",
+          "assessmentSectionId": "element-combustion-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.11:r5",
+          "verdict": "approved",
+          "judgement": "Sulfur producesSO2gas, contrasted withMgOsolid/watercondensation; no smelltest.",
+          "assessmentSectionId": "element-combustion-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.11:r6",
+          "verdict": "approved",
+          "judgement": "S+O2→SO2 andS8+8O2→8SO2 independentlybalanced; gasreplacement limits oxygenvolume inference.",
+          "assessmentSectionId": "element-combustion-transfer-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "magnesium-combustion": "071a847f290bd94a1f0d42e8c7c922a9f2c25275c38a0a1ae8cac2f0675c6c33",
+        "hydrogen-combustion": "7f9e19ded57b0292ebc2dddee63cf50fdb9907555f04fb6e7b8757b4cc802ad2",
+        "sulfur-combustion": "f0d500d3e51f47a774b87e4cd439277c697c7aae5099de40be84ae94e816def4",
+        "element-combustion-transfer-evidence": "8f6bfd13339a951feae0656ac3d2bb120b084f0c5c20382c0e8fdb81d84cdd3a"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.12",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.12:r1",
+          "verdict": "approved",
+          "judgement": "CuCO3→CuO+CO2 balanced1Cu/1C/3O; supplied124/80/44 masses give1.24→.80+.44 conservation.",
+          "assessmentSectionId": "carbonate-decomposition-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.12:r2",
+          "verdict": "approved",
+          "judgement": "Green-to-black typicalsolid observation distinguished fromgasidentification.",
+          "assessmentSectionId": "carbonate-decomposition-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.12:r3",
+          "verdict": "approved",
+          "judgement": "Limewatercloudiness caused byCaCO3precipitate; CO2+Ca(OH)2→CaCO3+H2O independentlybalanced.",
+          "assessmentSectionId": "carbonate-decomposition-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.12:r4",
+          "verdict": "approved",
+          "judgement": "Heatcondition doesnotrequireO2reactant; thermal decomposition distinguished fromcombustion and open-solidmass loss fromwhole-systemloss.",
+          "assessmentSectionId": "carbonate-decomposition-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.12:r5",
+          "verdict": "approved",
+          "judgement": "BasicCuCO3·Cu(OH)2 includesH andextraCu/O; 2CuO+CO2+H2O independentlybalanced, no purecarbonatecalculationforunknownbasicmaterial.",
+          "assessmentSectionId": "carbonate-decomposition-transfer-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "carbonate-decomposition": "902cec624aac1d558de86b3ff0a3964a651aa030ee3aed50f051b197b47bf3fc",
+        "carbonate-decomposition-transfer-evidence": "fcf85142654c810e9263724f1e51232e7d53c15b1fdee8776e983d1c91a4f112"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.13",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.13:r1",
+          "verdict": "approved",
+          "judgement": "OutgoingthermalIR absorption and atmosphericemissiontowardssurface distinguished fromincomingUV.",
+          "assessmentSectionId": "greenhouse-mechanism-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.13:r2",
+          "verdict": "approved",
+          "judgement": "Illustrative240−237=3W/m² imbalance illustratesenergytransfer, notheatcreation ormeasuredNASAdata.",
+          "assessmentSectionId": "greenhouse-mechanism-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.13:r3",
+          "verdict": "approved",
+          "judgement": "IncreasingCO2cancontribute tolong-termclimatechange; coldweatherday andlaterzeroimbalance do notestablishtemperaturehistory.",
+          "assessmentSectionId": "greenhouse-mechanism-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.13:r4",
+          "verdict": "approved",
+          "judgement": "Some radiationescapes; ozone/UVmechanism separate and noall-wavelength/all-energytrapping claim.",
+          "assessmentSectionId": "greenhouse-mechanism-transfer-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "carbon-dioxide-greenhouse": "01e6d11d633e03d01281453f690a79a4c24de4acdb4d9dd0f8ddf24892e74805",
+        "greenhouse-mechanism-transfer-evidence": "f0e54b8289706a719ea7792640fef62d4e97df328c8c3b2f23f4d311fa7798cb"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.14",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.14:r1",
+          "verdict": "approved",
+          "judgement": "Structuredapparatus/method plan providesexcessmoistiron, approvedgas-tightsetup andread-until-stable endpoint, noactualtrial/humancertification.",
+          "assessmentSectionId": "oxygen-plan-and-error-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.14:r2",
+          "verdict": "approved",
+          "judgement": "Entire125or100 cm³ connectedair denominator includesfixedgas spaces; no solid/liquid volumeaddition.",
+          "assessmentSectionId": "oxygen-total-volume-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.14:r3",
+          "verdict": "approved",
+          "judgement": "Verticalconsistentreadings andcross-sectionqualification; tapered/roundedgeometry requirescalibratedvolume instead ofunjustifiedlengthfraction.",
+          "assessmentSectionId": "oxygen-plan-and-error-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.14:r4",
+          "verdict": "approved",
+          "judgement": "Invented125→104→100→100 plateau:16.8% early versus20%later; stablevolume notaloneproofselectivity/seal.",
+          "assessmentSectionId": "oxygen-plan-and-error-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.14:r5",
+          "verdict": "approved",
+          "judgement": "MatchingT/P andappropriateequalwaterlevels included; finalhot versus equallywarm conditions qualified.",
+          "assessmentSectionId": "oxygen-plan-and-error-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.14:r6",
+          "verdict": "approved",
+          "judgement": "Insufficientiron/prematurestop tendlow; finalhotatfixedpressure tendlow; leakdirectionrequiresentry/escape description.",
+          "assessmentSectionId": "oxygen-plan-and-error-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.14:r7",
+          "verdict": "approved",
+          "judgement": "Independent20.6/21.0/21.4 mean21.0/range.8percentagepoints; consistency versusaccuracy/systematicerror preserved.",
+          "assessmentSectionId": "oxygen-plan-and-error-transfer-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "oxygen-volume-calculation": "21a6f8161199f3c6b624a3eeed369e58dce61f923c71f3f404999d864d0b8d2b",
+        "oxygen-measurement-practical": "4831f415b0cd12ba50d524321632efa734c7571764321678571c3630517993a7",
+        "oxygen-plan-and-error-transfer-evidence": "1cc524f13a00694965bffb17826b9bd089589fc94d737b36292a62ba81660f82",
+        "oxygen-total-volume-transfer-evidence": "be0bace9cfc1c96953e157de3729b7bd65d1d22733c02a745cd40161c8ef5d3c"
+      }
+    }
+  ]
+}

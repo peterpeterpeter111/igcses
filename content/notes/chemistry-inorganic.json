@@ -111,7 +111,11 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/18-11-occurrence-preparation-and-properties-of-halogens",
       "sectionIds": [
         "halogen-displacement-pattern",
-        "halogen-displacement-evidence"
+        "halogen-displacement-evidence",
+        "halogen-ranking-transfer-evidence",
+        "halogen-species-and-charge-evidence",
+        "halogen-observation-control-evidence",
+        "halogen-electron-gain-transfer-evidence"
       ]
     },
     {
@@ -125,7 +129,8 @@
       "title": "NOAA Jetstream: dry-air composition",
       "url": "https://www.noaa.gov/jetstream/atmosphere",
       "sectionIds": [
-        "air-composition"
+        "air-composition",
+        "dry-air-volume-transfer-evidence"
       ]
     },
     {
@@ -134,7 +139,9 @@
       "sectionIds": [
         "oxygen-air-removal",
         "oxygen-volume-calculation",
-        "oxygen-measurement-practical"
+        "oxygen-measurement-practical",
+        "oxygen-total-volume-transfer-evidence",
+        "oxygen-plan-and-error-transfer-evidence"
       ]
     },
     {
@@ -169,7 +176,8 @@
       "title": "NASA: radiation budget and greenhouse absorption",
       "url": "https://science.nasa.gov/ems/13_radiationbudget/",
       "sectionIds": [
-        "carbon-dioxide-greenhouse"
+        "carbon-dioxide-greenhouse",
+        "greenhouse-mechanism-transfer-evidence"
       ]
     },
     {
@@ -3020,6 +3028,356 @@
           ]
         ],
         "caption": "RSC reference values · melting and boiling temperatures at ordinary pressure"
+      }
+    },
+    {
+      "id": "halogen-ranking-transfer-evidence",
+      "title": "Infer a ranking from unfamiliar displacement evidence",
+      "points": [
+        "2.7"
+      ],
+      "paragraphs": [
+        "In a supplied model, elemental P, Q and R are diatomic halogens and P⁻, Q⁻ and R⁻ are their halide ions. If P₂ converts Q⁻ to Q₂, P is more reactive than Q under the comparison conditions. A reliable no-displacement result for Q₂ with P⁻ supports the opposite direction not occurring. Keep the identity of the added element and starting ion separate.",
+        "The illustrative report states that P₂ forms Q₂ from Q⁻ and R₂ from R⁻, while Q₂ forms R₂ from R⁻. These three positive outcomes support P > Q > R. The corresponding reverse comparisons are predicted to give no net displacement. Combining an element with its own halide does not displace a different element; this does not rule out solution equilibria.",
+        "For the actual chlorine–bromine–iodine sequence, chlorine forms bromine from bromide and iodine from iodide; bromine forms iodine from iodide. Iodine cannot displace chloride or bromide in the ordinary aqueous comparison. The nine-cell original matrix is a set of predictions, not measured results.",
+        "Ranking requires mutually consistent, comparable evidence. If another otherwise comparable report says R₂ displaces P⁻, it creates a cycle P > Q > R > P. Do not resolve this by inventing a strongest element: check identities, contamination, reagent condition and product evidence. A missing comparison is different from an observed negative outcome."
+      ],
+      "example": {
+        "question": "A supplied table shows Q₂ forms P₂ from P⁻, R₂ forms Q₂ from Q⁻, and R₂ forms P₂ from P⁻. Rank the elements and predict P₂ with R⁻.",
+        "steps": [
+          "Q > P follows from the first positive outcome.",
+          "R > Q and R > P follow from the other outcomes, so R > Q > P.",
+          "P₂ with R⁻ gives no expected net displacement under the same comparison conditions."
+        ],
+        "explanation": "Use the direction of each supported product conversion; distinguish contradictory evidence, missing evidence and no net displacement."
+      },
+      "practice": {
+        "question": "In a different report P₂ displaces Q⁻, Q₂ displaces R⁻ and R₂ displaces P⁻. Can you give a valid strongest-to-weakest ranking? Does a coloured same-element mixture prove displacement?",
+        "answer": "No: the three positive comparisons form a cycle, so a single consistent ranking is unsupported. Investigate the supplied evidence instead of assigning an order. A coloured same-element mixture can retain the original halogen colour without displacing a different element.",
+        "explanation": "Use the direction of each supported product conversion; distinguish contradictory evidence, missing evidence and no net displacement."
+      },
+      "terms": [
+        "halogen",
+        "halide ion",
+        "reactivity order",
+        "inconsistent evidence"
+      ]
+    },
+    {
+      "id": "halogen-species-and-charge-evidence",
+      "title": "Correct the species before checking the equation",
+      "points": [
+        "2.7"
+      ],
+      "paragraphs": [
+        "Chlorine with aqueous sodium iodide starts with Cl₂ molecules and I⁻ ions. The predicted reactive products are Cl⁻ ions and I₂ molecules. Na⁺ ions remain in solution as spectators. The complete equation is Cl₂ + 2NaI → 2NaCl + I₂; the net ionic equation is Cl₂ + 2I⁻ → 2Cl⁻ + I₂.",
+        "Each side of that ionic equation has two chlorine atoms, two iodine atoms and charge −2. The two-electron reduction Cl₂ + 2e⁻ → 2Cl⁻ combines with oxidation 2I⁻ → I₂ + 2e⁻. Electron terms cancel; chlorine is the oxidizing agent because it accepts electrons, and iodide is the reducing agent because it supplies them.",
+        "Changing only charge signs or replacing a diatomic element with one atom fails these checks. Br₂ + I⁻ → Br⁻ + I₂ is unbalanced even though both sides have charge −1. Br₂ + 2I⁻ → 2Br⁻ + I₂ conserves atoms and charge and has the supported reaction direction.",
+        "Br₂ + 2Cl⁻ → 2Br⁻ + Cl₂ also conserves atoms and charge, but bromine is less reactive than chlorine in this comparison. The written balance therefore does not establish an expected displacement. A correct equation needs the right species, conservation and source-supported direction."
+      ],
+      "example": {
+        "question": "Correct Cl⁻ + NaI → NaCl + I for chlorine added to sodium iodide, giving complete and net ionic equations and identifying the spectator.",
+        "steps": [
+          "The added element is Cl₂; elemental iodine product is I₂.",
+          "Cl₂ + 2NaI → 2NaCl + I₂, with Na⁺ unchanged.",
+          "Remove Na⁺: Cl₂ + 2I⁻ → 2Cl⁻ + I₂. Each side has charge −2 and two atoms of each halogen."
+        ],
+        "explanation": "Conservation is necessary but does not establish spontaneous direction; an elemental molecule and its negative ion play different roles."
+      },
+      "practice": {
+        "question": "A learner gives Br₂ + I⁻ → Br⁻ + I₂ and says the balanced reverse chloride reaction must happen. Correct the iodide equation and explain why the reverse chloride conclusion fails. Which iodide species loses electrons?",
+        "answer": "Use Br₂ + 2I⁻ → 2Br⁻ + I₂. The original equation has mismatched bromine and iodine atom counts. Br₂ + 2Cl⁻ → 2Br⁻ + Cl₂ is balanced but has the unsupported direction for ordinary aqueous displacement. I⁻ loses electrons: 2I⁻ → I₂ + 2e⁻.",
+        "explanation": "Conservation is necessary but does not establish spontaneous direction; an elemental molecule and its negative ion play different roles."
+      },
+      "terms": [
+        "net ionic equation",
+        "spectator ion",
+        "oxidation",
+        "reduction"
+      ]
+    },
+    {
+      "id": "halogen-observation-control-evidence",
+      "title": "Weigh product evidence against dilution and reagent limits",
+      "points": [
+        "2.7"
+      ],
+      "paragraphs": [
+        "These invented reports interpret supplied observations; they are not practical trials. Product identification needs the known starting species and a matched reference in the same solvent. A violet nonpolar layer consistent with an iodine reference differs from brown aqueous iodine or purple iodine vapour.",
+        "For bromine with iodide, a matched iodine-product observation supports displacement. Merely seeing the starting bromine colour become paler on adding chloride solution can be explained by dilution. A no-halide dilution control, reference colours and known starting reagents help distinguish these interpretations.",
+        "A mixture may retain the added halogen if it is in excess, and a degraded halogen reagent may produce an unreliable negative result. Keep solvent, concentration comparisons, observation conditions and reagent condition matched; separate samples to reduce cross-contamination. Repeat comparable trials to investigate inconsistency, without claiming repetition alone removes systematic error.",
+        "No net displacement does not require a colourless sample. A product reference is stronger than colour intensity alone, but an unmatched solvent or unknown starting species leaves the inference incomplete. This is evidence evaluation, not an operational procedure for generating halogens or handling extraction solvents."
+      ],
+      "example": {
+        "question": "An invented report adds bromine to iodide, then compares a violet nonpolar layer with iodine in that same solvent. A second report mixes iodine with bromide and sees the original iodine colour. What does each support?",
+        "steps": [
+          "Known bromine and iodide plus the matched iodine reference support I₂ formation and Br > I.",
+          "Retained iodine colour does not identify a newly displaced product.",
+          "I₂ with Br⁻ has no expected net displacement; report the limits instead of requiring colourlessness."
+        ],
+        "explanation": "Interpret product identity and controls separately from colour intensity, solvent mismatch and reagent failure."
+      },
+      "practice": {
+        "question": "Old chlorine reagent with bromide appears unchanged; fresh bromine with chloride fades exactly like a dilution control; a supposed iodine product is compared with purple vapour rather than the aqueous reference. Can these observations reverse Cl > Br > I?",
+        "answer": "No. Degraded chlorine can make the negative result unreliable. Fading that matches dilution does not establish chlorine formation. Purple iodine vapour is not a matched reference for an aqueous product. Use fresh identified reagents and same-solvent product references under comparable conditions before drawing a different ranking.",
+        "explanation": "Interpret product identity and controls separately from colour intensity, solvent mismatch and reagent failure."
+      },
+      "terms": [
+        "reference comparison",
+        "control",
+        "dilution",
+        "solvent"
+      ]
+    },
+    {
+      "id": "halogen-electron-gain-transfer-evidence",
+      "title": "Explain the trend with electron gain — Paper 2C",
+      "points": [
+        "2.8C"
+      ],
+      "paragraphs": [
+        "Chlorine, bromine and iodine have shell configurations 2,8,7; 2,8,18,7; and 2,8,18,18,7: totals 17, 35 and 53, with seven outer electrons each. Their halide ions have gained one electron per atom, without changing the proton count. Bromide therefore has 35 protons and 36 electrons, giving charge −1.",
+        "A Br₂ molecule contains two bromine atoms. Br₂ + 2e⁻ → 2Br⁻ conserves two bromine atoms and charge −2 on both sides. The electron total changes from 70 in the two neutral atoms to 72 in the two ions. A single electron cannot produce two singly negative halide ions.",
+        "Additional occupied shells down the sequence increase the distance of the incoming outer-shell electron from the nucleus and the shielding from inner electrons. Despite the increased nuclear proton charge, the attraction for that incoming electron is weaker in the school explanation. Electron gain is less readily achieved, so the displacement reactivity decreases from chlorine to bromine to iodine.",
+        "The Group 1 comparison involves losing an electron. Greater distance and shielding make loss easier for alkali metals; here the important gain becomes less readily achieved. The shared structural changes do not require the same reactivity direction. This explanation is Paper 2C only and gives a qualitative comparison, not an exact reaction rate."
+      ],
+      "example": {
+        "question": "Compare Cl 2,8,7 with I 2,8,18,18,7. Explain why greater proton number does not make iodine more reactive in this displacement sequence.",
+        "steps": [
+          "Both have seven outer electrons and gain one electron per atom to form halide ions.",
+          "Iodine has more occupied shells, greater outer-shell distance and more shielding.",
+          "These effects weaken the attraction for an incoming electron despite greater proton charge, so gain is less readily achieved and iodine is less reactive."
+        ],
+        "explanation": "Preserve atoms, proton counts and charge as well as the distance/shielding/gain causal chain."
+      },
+      "practice": {
+        "question": "Correct: Br has eight outer electrons, bromide forms by losing one proton, and Br₂ + e⁻ → 2Br⁻ is balanced. Does easier loss of an electron explain the halogen trend?",
+        "answer": "Neutral Br is 2,8,18,7 with seven outer electrons. Br⁻ forms by gaining one electron, retaining 35 protons and gaining a 36th electron. Use Br₂ + 2e⁻ → 2Br⁻, charge −2 on each side. Easier electron loss explains the Group 1 trend, not this electron-gain explanation.",
+        "explanation": "Preserve atoms, proton counts and charge as well as the distance/shielding/gain causal chain."
+      },
+      "terms": [
+        "electronic configuration",
+        "electron gain",
+        "shielding",
+        "nuclear attraction"
+      ]
+    },
+    {
+      "id": "dry-air-volume-transfer-evidence",
+      "title": "Apply approximate dry-air proportions to a new sample",
+      "points": [
+        "2.9"
+      ],
+      "paragraphs": [
+        "For dry air, recall approximate volume percentages: nitrogen 78%, oxygen 21%, argon 0.9% and carbon dioxide 0.04%. Water vapour is excluded. These rounded school values describe a mixture, not a current exact carbon-dioxide monitoring result; trace gases and rounding account for the small remainder.",
+        "At a common temperature and pressure, a hypothetical 250 cm³ dry-air sample therefore contains about 195 cm³ nitrogen, 52.5 cm³ oxygen, 2.25 cm³ argon and 0.10 cm³ carbon dioxide. The listed volumes sum to 249.85 cm³ because their rounded percentages sum to 99.94%, not because the sample has lost gas.",
+        "Argon exceeds carbon dioxide in this comparison and is the third most abundant gas of the four. Volume fraction is not mass fraction. Adding water vapour changes the mixture denominator, so moist-air volume percentages cannot simply be labelled dry-air values."
+      ],
+      "terms": [
+        "dry air",
+        "volume fraction",
+        "rounded reference"
+      ],
+      "example": {
+        "question": "Using the approximate school proportions, estimate each named gas volume in 250 cm³ dry air and explain why the four results need not sum exactly to 250 cm³.",
+        "steps": [
+          "Multiply 250 by 0.78, 0.21, 0.009 and 0.0004 to obtain 195, 52.5, 2.25 and 0.10 cm³.",
+          "The sum is 249.85 cm³, with 0.15 cm³ left by rounded values and trace components.",
+          "This is a volume estimate at common conditions, not an exact measurement or a mass-percentage calculation."
+        ],
+        "explanation": "Apply fraction times total volume, preserving the stated dry-air denominator and approximate precision."
+      },
+      "practice": {
+        "question": "Estimate oxygen and argon volumes in 600 cm³ dry air. A learner calls CO₂ the third most abundant gas, includes water vapour in dry air, and insists the four rounded percentages must total 100. Correct these statements.",
+        "answer": "About 126 cm³ oxygen and 5.4 cm³ argon. Argon is more abundant than CO₂; dry air excludes water vapour. The four rounded values total 99.94%, and rounding plus trace components account for the remainder. These are approximate volume proportions, not mass fractions.",
+        "explanation": "Apply fraction times total volume, preserving the stated dry-air denominator and approximate precision."
+      }
+    },
+    {
+      "id": "oxygen-total-volume-transfer-evidence",
+      "title": "Use the full connected gas volume before dividing",
+      "points": [
+        "2.10",
+        "2.14"
+      ],
+      "paragraphs": [
+        "Moist iron can consume oxygen into solid corrosion products while the other gases remain. Use excess moist iron, a gas-tight apparatus and sufficient time to reach a stable endpoint. The residual mixture is mainly nitrogen with argon and other unreacted gases, not chemically pure nitrogen. This is a model interpretation, not a performed practical.",
+        "A teacher-controlled non-metal comparison can use phosphorus consuming oxygen into phosphorus oxide. P₄ + 5O₂ → P₄O₁₀ conserves four phosphorus atoms and ten oxygen atoms. The product must leave the measured gas phase, and the apparatus must cool to comparable conditions before its volume loss represents oxygen removal.",
+        "In an invented connected system, fixed flask/tube gas spaces total 95 cm³ and a syringe initially reads 30 cm³. The initial gas volume is 125 cm³. After selective complete oxygen removal and matching temperature/pressure, the syringe reads 5 cm³, giving final total 100 cm³ and a decrease 25 cm³. The estimate is 25/125×100=20%.",
+        "Fixed gas spaces cancel from the difference but remain in the original denominator. Dividing 25 by 30 gives 83.3%, which is not the percentage of oxygen in the entire 125 cm³ sample. Liquid and metal volumes are not added as gas spaces. A warm final reading or an unremoved gaseous reaction product invalidates the simple comparison."
+      ],
+      "terms": [
+        "connected gas space",
+        "oxygen removal",
+        "endpoint"
+      ],
+      "example": {
+        "question": "For fixed gas spaces 95 cm³, initial syringe 30 cm³ and final syringe 5 cm³ at comparable conditions, calculate oxygen percentage and explain why the remaining gas is not pure nitrogen.",
+        "steps": [
+          "Initial total 95+30=125 cm³; final total 95+5=100 cm³.",
+          "Decrease 25 cm³; percentage 25/125×100=20%.",
+          "Argon and other unreacted gases remain alongside nitrogen."
+        ],
+        "explanation": "The calculation assumes selective gas removal, completion and comparable temperature/pressure; a balanced reaction alone is insufficient."
+      },
+      "practice": {
+        "question": "Another matched setup has fixed gas spaces 76 cm³ and a syringe changing from 24 to 3 cm³. Calculate the fraction removed. Why are dry iron, a hot final phosphorus reading, or gaseous SO₂ left after burning sulfur unsuitable for the same simple inference?",
+        "answer": "Initial total 100 cm³ and decrease 21 cm³ give 21%. Dry iron removes oxygen poorly because rusting needs water. A hot final phosphorus reading confounds gas loss with expansion. Sulfur produces another gas, SO₂, so oxygen consumption alone does not remove that amount from the gas phase unless the product is separately removed.",
+        "explanation": "The calculation assumes selective gas removal, completion and comparable temperature/pressure; a balanced reaction alone is insufficient."
+      }
+    },
+    {
+      "id": "oxygen-plan-and-error-transfer-evidence",
+      "title": "Review endpoints, geometry and conditional errors",
+      "points": [
+        "2.10",
+        "2.14"
+      ],
+      "paragraphs": [
+        "A proposed school investigation measures the original gas space, uses excess moist iron, seals the intended gas system and records repeated volumes until stable. Where a water-supported tube is used, read its gas-column length vertically and consistently. A length fraction represents a volume fraction only if the relevant cross-sectional area is constant; a curved end or changing bore can require a calibrated volume instead.",
+        "Compare the initial and final readings at the same temperature and pressure. Equal water levels, where applicable, help equalize gas and atmospheric pressure. A gas-tight seal, sufficient reactant, fresh samples for repeats and clearly recorded units all matter. The teacher controls apparatus suitability and handling; no investigation has been carried out by this project.",
+        "Insufficient iron or premature stopping generally leaves some oxygen and underestimates its percentage. At unchanged pressure a hotter final gas volume is larger and also tends to underestimate the loss. If both readings are equally warmer with comparable pressure, their ratio need not acquire that bias. An unspecified leak has no universal error direction: gas can enter or escape at different stages.",
+        "An invented 125 cm³ initial sample has total gas readings 104, 100, 100 cm³ at successive observation times under matched conditions. Stopping at 104 gives 21/125×100=16.8%; the later plateau gives 25/125×100=20%. A plateau alone does not prove selectivity or absence of leaks. Repeats 20.6%, 21.0%, 21.4% have mean 21.0% and range 0.8 percentage points; consistency does not remove a shared systematic error."
+      ],
+      "terms": [
+        "systematic error",
+        "cross-section",
+        "repeatability",
+        "pressure"
+      ],
+      "example": {
+        "question": "Use the 125 cm³ sample and 104, 100, 100 cm³ totals to compare early and stable oxygen estimates. Does a stable value prove every gas and scale assumption?",
+        "steps": [
+          "Early estimate = (125 − 104) ÷ 125 × 100 = 16.8%.",
+          "Plateau estimate = (125 − 100) ÷ 125 × 100 = 20.0%.",
+          "Stable readings support an endpoint but do not establish gas selectivity, calibration or a perfect seal."
+        ],
+        "explanation": "Name the changed condition before assigning a direction; keep endpoint, repeatability and accuracy as separate judgements."
+      },
+      "practice": {
+        "question": "A learner uses column lengths in a tapering tube, claims every leak increases the result and says three close repeats prove accuracy. Correct the claims and calculate the mean/spread of 20.6%, 21.0%, 21.4%.",
+        "answer": "A simple length ratio needs constant cross-section; use appropriate calibrated volumes for a tapering tube. Leak direction depends on the described entry/escape. Mean 21.0%, range 0.8 percentage points; repeats indicate consistency but can share systematic error. Match temperature/pressure and verify oxygen removal as well.",
+        "explanation": "Name the changed condition before assigning a direction; keep endpoint, repeatability and accuracy as separate judgements."
+      },
+      "practical": {
+        "apparatus": [
+          "Teacher-approved moist iron wool or filings, a calibrated gas space or uniform-bore tube, water support where used, and equipment for reading gas volume/length and temperature."
+        ],
+        "method": [
+          "Record the initial total gas volume or justified uniform-column length with units. Keep excess moist iron in contact with the trapped air in the approved gas-tight setup.",
+          "Record repeated readings until the gas space stabilises, allowing the teacher-specified time. Compare initial and final readings at matching temperature and pressure.",
+          "Use the decrease divided by the original total gas volume, multiplied by 100. Repeat with fresh samples to report a mean and spread."
+        ],
+        "variables": [
+          "Keep reactant condition, gas-space geometry, reading method, temperature and pressure comparable. Where water levels set pressure, compare at appropriate equal levels."
+        ],
+        "safety": [
+          "Follow the school procedure for glassware, iron handling and water-supported apparatus; secure the equipment and use the teacher-approved protective measures.",
+          "A phosphorus route is a separate trained-teacher demonstration; this plan does not provide a phosphorus-handling procedure."
+        ],
+        "quality": [
+          "Check seals, sufficient moist iron and an endpoint; do not assume a single fixed duration guarantees completion.",
+          "Use calibrated volume if a tube has a varying bore or rounded end that prevents a valid length ratio.",
+          "Close repeats can share systematic bias; no physical practical competence or trial result is claimed here."
+        ]
+      }
+    },
+    {
+      "id": "element-combustion-transfer-evidence",
+      "title": "Compare combustion products and their phases",
+      "points": [
+        "2.11"
+      ],
+      "paragraphs": [
+        "For magnesium burning in oxygen, bright white light and a white solid are the familiar observations; the intended product is magnesium oxide. 2Mg + O₂ → 2MgO conserves two Mg atoms and two O atoms. Retained oxide mass exceeds the reacting magnesium mass because oxygen from the gas is incorporated; actual air combustion can also involve nitrogen.",
+        "Hydrogen burning in oxygen produces water: 2H₂ + O₂ → 2H₂O. Hot water vapour may condense into droplets after cooling. Producing water is chemical change; changing vapour to liquid is physical. Neither starting element supplies carbon, so CO₂ is not supported by this equation.",
+        "Sulfur burning in oxygen forms sulfur dioxide gas, commonly with a blue flame: S + O₂ → SO₂. If S₈ is used, balance S₈ + 8O₂ → 8SO₂. Do not use direct smelling to identify it. Solid MgO, hot water vapour/cool droplets and gaseous SO₂ differ in product and phase even though all consume oxygen.",
+        "With supplied relative masses Mg 24 and O 16, 0.48 g Mg contains 0.020 mol and can form 0.020 mol MgO, 0.80 g, if oxygen is sufficient and all product is retained. The 0.32 g increase comes from oxygen; it does not violate conservation for the complete gas-plus-metal system."
+      ],
+      "terms": [
+        "combustion",
+        "oxide",
+        "condensation",
+        "conservation"
+      ],
+      "example": {
+        "question": "Compare magnesium, hydrogen and sulfur combustion products. For 0.48 g Mg with the supplied relative masses, calculate theoretical retained MgO mass and explain the increase.",
+        "steps": [
+          "Products are MgO solid, H₂O hot vapour/cool liquid, and SO₂ gas.",
+          "0.48/24=0.020 mol Mg, giving 0.020×40=0.80 g MgO.",
+          "0.32 g oxygen is incorporated; the whole reacting system conserves mass."
+        ],
+        "explanation": "Balance with coefficients and retain the product identity instead of inventing a new oxide formula."
+      },
+      "practice": {
+        "question": "Correct Mg + O₂ → MgO₂ and H₂ + O₂ → H₂O. Write the sulfur equation when its formula is S₈. Are droplets after hydrogen combustion evidence that a carbon-containing gas was formed?",
+        "answer": "Use 2Mg + O₂ → 2MgO and 2H₂ + O₂ → 2H₂O. For S₈, use S₈ + 8O₂ → 8SO₂. Droplets are consistent with water-vapour condensation, a physical change after water forms. No carbon source supports CO₂; flame/colour observations alone are not universal product identification.",
+        "explanation": "Balance with coefficients and retain the product identity instead of inventing a new oxide formula."
+      }
+    },
+    {
+      "id": "carbonate-decomposition-transfer-evidence",
+      "title": "Use the supplied carbonate formula and a separate gas test",
+      "points": [
+        "2.12"
+      ],
+      "paragraphs": [
+        "For a supplied pure-CuCO₃ school model, heating gives CuCO₃ → CuO + CO₂. A green starting solid becomes black as copper(II) oxide forms. Heating is the condition; the equation does not require added O₂ and is thermal decomposition rather than combustion.",
+        "The released carbon dioxide produces cloudy limewater through CO₂ + Ca(OH)₂ → CaCO₃ + H₂O. Insoluble calcium carbonate makes the cloudiness. Record gas release and the gas-test result separately: blackening alone does not establish CO₂ identity.",
+        "An actual material described as basic copper carbonate can have formula CuCO₃·Cu(OH)₂. Its balanced model is CuCO₃·Cu(OH)₂ → 2CuO + CO₂ + H₂O. The additional water follows from the supplied hydroxide-containing formula; do not silently use the pure-carbonate equation for that material.",
+        "With supplied relative masses Cu 64, C 12, O 16 and H 1, the pure-carbonate molar masses are 124 for CuCO₃, 80 for CuO and 44 for CO₂. 1.24 g pure carbonate can give 0.80 g oxide and 0.44 g CO₂ if conversion and recovery are complete. A mass loss in the open solid sample can be gas leaving while the complete reaction still conserves mass. These numbers are invented study inputs, not measured yields."
+      ],
+      "terms": [
+        "thermal decomposition",
+        "basic carbonate",
+        "limewater"
+      ],
+      "example": {
+        "question": "Use 1.24 g pure CuCO₃ with the supplied masses to predict solidCuO mass and gas mass. Describe the observation and a separate gas test.",
+        "steps": [
+          "1.24/124=0.010 mol gives 0.010×80=0.80 g black CuO and 0.010×44=0.44 g CO₂.",
+          "Typical green solid changes to black; the released gas clouds limewater.",
+          "CuCO₃ → CuO + CO₂ has noO₂ reactant; the observed solid mass falls because gas leaves."
+        ],
+        "explanation": "The specified formula determines conservation; conditions, solid appearance and gas identity are separate evidence."
+      },
+      "practice": {
+        "question": "A supplied sample is CuCO₃·Cu(OH)₂, not pure CuCO₃. A learner omits water, calls it combustion because a heater is used and says any blackening proves CO₂. Correct the equation and conclusions.",
+        "answer": "CuCO₃·Cu(OH)₂ → 2CuO + CO₂ + H₂O conserves all atoms. It is thermal decomposition; using heat does not make oxygen a reactant. Green-to-black supports a changed solid, but a separate appropriate gas test is needed for CO₂. Do not apply the pure-carbonate mass calculation to a different formula.",
+        "explanation": "The specified formula determines conservation; conditions, solid appearance and gas identity are separate evidence."
+      }
+    },
+    {
+      "id": "greenhouse-mechanism-transfer-evidence",
+      "title": "Explain a changed energy balance without inventing heat",
+      "points": [
+        "2.13"
+      ],
+      "paragraphs": [
+        "The surface absorbs energy from the Sun and emits thermal infrared radiation. Atmospheric CO₂ absorbs some outgoing infrared and the atmosphere emits radiation in several directions, including back towards the surface. The mechanism changes energy transfer; it does not create energy or make every wavelength unable to escape.",
+        "Increasing CO₂ can strengthen this effect and alter the energy balance, contributing to warming and long-term climate change alongside other influences. This differs from ozone depletion affecting incoming ultraviolet radiation. A cold day neither disproves the infrared mechanism nor establishes a long-term climate trend.",
+        "In an invented budget at one stated moment, absorbed incoming power is 240 W/m² and outgoing power is 237 W/m². The net gain is 3 W/m². If the same system later has balanced incoming/outgoing powers of 240 W/m², the net gain is zero. A balance at that later moment does not by itself say that the surface temperature equals its earlier value.",
+        "This arithmetic model illustrates conservation, not a NASA measurement or an exact forecast from CO₂ concentration. Regional weather, time evolution and the temperature response need additional evidence; avoid converting one budget example into a guaranteed temperature change."
+      ],
+      "terms": [
+        "infrared",
+        "energy balance",
+        "climate",
+        "weather"
+      ],
+      "example": {
+        "question": "For the invented 240 in / 237 out budget, find the net energy-gain rate. Improve “CO₂ creates heat by destroying ozone and traps every ray.”",
+        "steps": [
+          "Net rate 240−237=3 W/m² entering the system.",
+          "CO₂ affects some outgoing thermal infrared and atmospheric emission, rather than creating energy or requiring ozone destruction.",
+          "Some energy escapes; the altered balance can contribute to long-term climate change."
+        ],
+        "explanation": "Preserve conservation and the timescale; a zero instantaneous imbalance is not a temperature-history measurement."
+      },
+      "practice": {
+        "question": "At a later instant 240 W/m² enters and 240 W/m² leaves. Does this prove there was no earlier warming? Does a single cold day disprove increased CO₂ effects? Explain.",
+        "answer": "Net gain at that instant is zero, but this does not establish the earlier temperature or exclude past warming. A single cold day is weather, not a long-term climate test. TheCO₂ explanation concerns infrared absorption/emission and energy transfers; it is separate from ozone protection against ultraviolet radiation.",
+        "explanation": "Preserve conservation and the timescale; a zero instantaneous imbalance is not a temperature-history measurement."
       }
     }
   ]

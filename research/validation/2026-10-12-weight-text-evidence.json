@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-10-12",
+  "reviewer": "Codex implementation and independent Astra adversarial review",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Offline units-labelled product transcription into existing exact evidence marker; not general prose interpretation, operational examiner marking, pedagogical calibration or activation.",
+  "familyId": "4PH1.weight.convert-mass",
+  "version": "0.1.0",
+  "sourceTaskId": "4PH1-2024-June-1-standard.Q10.a",
+  "retainedSourceEvidence": {
+    "taskId": "4PH1-2024-June-1-standard.Q10.a",
+    "questionPaper": {
+      "documentId": "4PH1-2024-June-1-standard-qp",
+      "pdfPages": [
+        22
+      ],
+      "sha256": "3c1e2eea09258259ce0ae86d6adf24da26a1320e297317c60f64c272839b8454",
+      "visuallyReviewed": true
+    },
+    "markScheme": {
+      "documentId": "4PH1-2024-June-1-standard-ms",
+      "pdfPages": [
+        3,
+        13
+      ],
+      "sha256": "9ca559f719b9603c62ebb2a293c5174c7082c1cf6b13aa412fc5d59fd09c181f",
+      "visuallyReviewed": true
+    }
+  },
+  "sourceReuseBoundary": "Retained pinned QP/MS review reused. Independent reviewer visually inspected retained MS13 image this phase; no new source QP/full-paper visual processing or acquisition claimed.",
+  "implementationHashes": {
+    "server/generators/weight-text-evidence.ts": "1e7515dfb519c31d9bff98a60906e5bfce8b9d3539ff1ccec6985d50daae23a4",
+    "tests/weight-text-evidence.test.ts": "81a2304b9489c6f5eb836bca6431de0b13588ed8258a6a5166648dc23746e4c4"
+  },
+  "unchangedHistoricalHashes": {
+    "server/generators/weight-conversion.ts": "ec7be2bafc9386d9d4254e0329600bfd1b21f57a6791d4a51588eb62fb5427cf",
+    "server/generators/weight-marking.ts": "dae3771f70d5a5fdba7950de0da2861781d6e4ed1d7b4dadc39df75ec9d973b9",
+    "research/validation/weight-marking-cases.json": "67ca5a5ee802581b3abbe5b0e2d0cc77506f3d9af290bcb151aba65cd9cb9f56",
+    "research/validation/2026-10-09-weight-evidence-review.json": "1614369ee24d26648ed58e0c00b3bcf8ba27bcee23a28a5c80871e98c0f0533d"
+  },
+  "grammar": {
+    "maximumUTF16Length": 1024,
+    "maximumNumericLexemeLength": 200,
+    "maximumAbsoluteExponentInherited": 100,
+    "statement": "optional W/weight = prefix; explicit positive decimal/scientific mass in kg ×/* field in N/kg = optional result with conventional unscaled label",
+    "operandRoles": "fixed by written units and order; never inferred from expected answer",
+    "rawResponsePreserved": true,
+    "numericSpansPreserved": true,
+    "dynamicEvaluationUsed": false,
+    "proseOrConversionLineInterpretation": false,
+    "swappedOperandsSupported": false
+  },
+  "syntheticChecks": {
+    "originalBaselineCases": 36,
+    "originalBaselineScored": 20,
+    "originalBaselineDeferred": 16,
+    "historicalCasesUnchanged": true,
+    "newResponseChecks": 36,
+    "newScoredChecks": 14,
+    "newDeferredChecks": 22,
+    "invalidPackageCheck": 1,
+    "additionalIndependentAdversarialDeferrals": 112,
+    "privateProbePath": "work/template-gate-review-2026-10-12/adversarial.mts",
+    "privateProbeSha256": "1f8ab48597b259da033faaacf61578e78a0f6491bdee252cd32ed5826feddac5",
+    "privateReviewPath": "work/template-gate-review-2026-10-12/ADAPTER-REVIEW.md",
+    "privateReviewSha256": "0645b5559fdd816a8e6edb36190194cf8cd5918cd7c5a3316f331650ff43cd3a"
+  },
+  "independentExactProducts": [
+    {
+      "massKg": ".325",
+      "field": "9.81",
+      "weightN": "3.18825"
+    },
+    {
+      "massKg": ".245",
+      "field": "9.8",
+      "weightN": "2.401"
+    },
+    {
+      "massKg": ".005",
+      "field": "9.81",
+      "weightN": ".04905"
+    },
+    {
+      "massKg": "4.995",
+      "field": "10",
+      "weightN": "49.95"
+    }
+  ],
+  "conservativeDecisions": [
+    "Only full grammar consumption yields observable transcribed multiplicands/result; unknown prose, extra lines, competing equations, scaled units and unsafe syntax defer without invented zero marks.",
+    "Blank inherits existing zero; explicit correct substitution without evaluation inherits existing one mark; exact mass power-of-ten mistake plus corresponding product inherits one deduction.",
+    "Source policy ignores conventional unscaled final unit labels. Their acceptance does not certify dimensional correctness.",
+    "Wrong stipulated field, non-power mass error, rounded/inconsistent evaluation and malformed or excessive exponent retain needs-review/score=null; partial observed evidence does not become a minimum score.",
+    "Private package is validated before raw interpretation, exact decimal marker unchanged, no live registry import."
+  ],
+  "realStudentResponses": 0,
+  "practicalTrialsPerformed": false,
+  "examinerCalibrationComplete": false,
+  "liveEligible": false,
+  "activeTemplates": 0,
+  "blockers": [
+    "Official per-leaf AO unverified; generated AO needs separate editorial provenance.",
+    "Explicit-g/representation/adaptation/difficulty and supported transformations not fully reviewed.",
+    "General free-text, competing working, rounding, implied-method and operational review routing unresolved.",
+    "PrivateQuestion/runtime registration and 2/4/6 full blueprint unvalidated.",
+    "Secure final provider/AI/evals not configured; keep integration last."
+  ]
+}

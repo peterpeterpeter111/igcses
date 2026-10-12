@@ -4,14 +4,14 @@
   "specificationIssue": "Issue 3",
   "specificationDocumentId": "4CH1-spec",
   "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
-  "reviewDate": "2026-10-06",
-  "reviewedBy": "Codex source/logic review",
+  "reviewDate": "2026-10-12",
+  "reviewedBy": "Codex source and authored-teaching review",
   "reviewerType": "agent",
   "reviewMethod": "Visual own specification;primary teacher expected equations/observations and mechanism reconciliation;independent atom/charge and nine-pair matrix checks.",
   "reviewedPages": [
     22
   ],
-  "scope": "Only own Issue3 PDF22/printed16 references2.7 both1C/2C and2.8C only2C. Partial predicted displacement,matched-observation reasoning and electronic explanation;no performed trials or full assessment validation.",
+  "scope": "Two own Issue3 identities2.7 and2.8C /ten requirements have agent-reviewed authored explanations plus unfamiliar fixed practice.2.7 both1C/2C;2.8C only2C. No practical trials, learner/examiner calibration, active templates or whole Inorganic completion. Later2.9onward and Principles1.25 remain unfinished.",
   "points": [
     {
       "id": "4CH1:issue3:2.7",
@@ -24,16 +24,19 @@
         "2C"
       ],
       "statementVerified": true,
-      "substatementAuditComplete": false,
+      "substatementAuditComplete": true,
       "chapterId": "inorganic",
       "noteSectionIds": [
         "halogen-displacement-pattern",
         "halogen-displacement-equations",
-        "halogen-displacement-evidence"
+        "halogen-displacement-evidence",
+        "halogen-species-and-charge-evidence",
+        "halogen-ranking-transfer-evidence",
+        "halogen-observation-control-evidence"
       ],
-      "teachingCoverage": "partial",
+      "teachingCoverage": "complete",
       "humanReviewed": false,
-      "teachingReviewedAt": "2026-10-06"
+      "teachingReviewedAt": "2026-10-12"
     },
     {
       "id": "4CH1:issue3:2.8C",
@@ -45,14 +48,16 @@
         "2C"
       ],
       "statementVerified": true,
-      "substatementAuditComplete": false,
+      "substatementAuditComplete": true,
       "chapterId": "inorganic",
       "noteSectionIds": [
-        "halogen-electron-reactivity"
+        "halogen-electron-reactivity",
+        "halogen-electron-gain-transfer-evidence"
       ],
-      "teachingCoverage": "partial",
+      "teachingCoverage": "complete",
       "humanReviewed": false,
-      "teachingReviewedAt": "2026-10-06"
+      "teachingReviewedAt": "2026-10-12"
     }
-  ]
+  ],
+  "completionReviewRef": "research/teaching-reviews/4CH1-halogen-reactivity-2026-10-12.json"
 }
