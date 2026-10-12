@@ -1,3 +1,7 @@
+# Latest phase — Metal extraction and uses, 12 October 2026
+
+Read `research/checkpoints/2026-10-12-METALS-TEACHING.md` first. Continued `827977c` without reset; six Paper 2C identities and 28 requirements reviewed with seven original worked/practice lessons. 295 tests and all required checks/build/public scan pass; mobile width319/scroll319 and correct contents target verified. Totals148 authored identities (Chemistry86), one whole authored chapter, zero exam-ready chapters; 1,159 sections/765 fixed exercises/1,520 teaching links. Seven pairs/two processed English papers/17 provisional families/zero active templates or AI. New delta not yet published; prior `31ca470` remains verified live. Sync non-force and publish exact verified source, then remaining curriculum, 1.25 reaction collection, eight caption repairs, five paper gates and calibration. Preserve history/UI/private evidence, AI last, no reset; pause at5% either. Last allowances82%/82%. Older entries below historical.
+
 # PAUSED after verified release — 12 October 2026
 
 Read `research/checkpoints/2026-10-12-SAVED-RELEASE-AND-HANDOFF.md` first. Application `31ca470` and GitHub `3814006` share the verified tree and are privately deployed; native deployment `appgdep_6accc20714e48191a3a59d74485de712` succeeded. All 293 tests and required checks passed.

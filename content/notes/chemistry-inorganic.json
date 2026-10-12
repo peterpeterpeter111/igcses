@@ -236,7 +236,8 @@
       "title": "Australian Aluminium Council: molten electrolysis example",
       "url": "https://aluminium.org.au/about-aluminium/how-aluminium-is-made/aluminium-smelting/",
       "sectionIds": [
-        "metal-extraction-electrolysis"
+        "metal-extraction-electrolysis",
+        "extraction-route-transfer-evidence"
       ]
     },
     {
@@ -244,7 +245,9 @@
       "url": "https://periodic-table.rsc.org/element/13/aluminium",
       "sectionIds": [
         "metal-uses-aluminium-copper",
-        "halogen-state-and-extrapolation-evidence"
+        "halogen-state-and-extrapolation-evidence",
+        "metal-property-choice-evidence",
+        "ore-species-transfer-evidence"
       ]
     },
     {
@@ -252,7 +255,9 @@
       "url": "https://periodic-table.rsc.org/element/29/copper",
       "sectionIds": [
         "metal-uses-aluminium-copper",
-        "halogen-state-and-extrapolation-evidence"
+        "halogen-state-and-extrapolation-evidence",
+        "metal-property-choice-evidence",
+        "ore-species-transfer-evidence"
       ]
     },
     {
@@ -261,21 +266,25 @@
       "sectionIds": [
         "metal-extraction-carbon",
         "metal-uses-iron-steels",
-        "halogen-state-and-extrapolation-evidence"
+        "halogen-state-and-extrapolation-evidence",
+        "extraction-route-transfer-evidence",
+        "steel-choice-transfer-evidence"
       ]
     },
     {
       "title": "TWI: carbon and stainless steel comparison",
       "url": "https://www.twi-global.com/technical-knowledge/faqs/carbon-steel-vs-stainless-steel",
       "sectionIds": [
-        "metal-uses-iron-steels"
+        "metal-uses-iron-steels",
+        "steel-choice-transfer-evidence"
       ]
     },
     {
       "title": "MATTER materials-science teaching: alloy strengthening",
       "url": "https://www.matter.org.uk/matscicdrom/manual/as.html",
       "sectionIds": [
-        "metal-alloys-hardness"
+        "metal-alloys-hardness",
+        "alloy-model-transfer-evidence"
       ]
     },
     {
@@ -1751,6 +1760,233 @@
         "src": "/diagrams/chemistry-alloy-hardness.svg",
         "alt": "Original two-dimensional model: uniform atoms in regular rows beside an alloy region with a larger substituted atom and nearby displaced atoms; distortion hinders plastic movement.",
         "caption": "Original schematic of one alloy-hardening mechanism. Sizes and positions are illustrative, not measured; real structures and treatment can vary."
+      }
+    },
+    {
+      "id": "ore-species-transfer-evidence",
+      "title": "Separate concentration from obtaining the metal",
+      "points": [
+        "2.22C"
+      ],
+      "paragraphs": [
+        "A metal-containing rock is not necessarily pure metal or one pure compound. In an invented sample, useful iron oxide is mixed with rock containing no iron. Physical separation can remove some unwanted material and raise the oxide fraction; the iron is still chemically combined with oxygen. Reduction is a separate chemical change that forms the metal.",
+        "A native gold grain contains uncombined gold atoms. Removing surrounding rock can help collect that gold without reducing gold ions in that grain. This does not show that all gold deposits are pure gold or that an unreactive metal can never occur as a compound. Reactive aluminium is normally obtained from compounds rather than native aluminium.",
+        "For an invented concentration step, 200 kg material contains 40 kg iron oxide and 160 kg unwanted rock. Removing 100 kg of iron-free rock leaves 100 kg material containing the same 40 kg oxide: its oxide fraction rises from 20% to 40%. No iron metal has been made by that step, and “40% oxide” is not “40% iron”. Whether extraction is worthwhile also depends on process conditions and costs."
+      ],
+      "terms": [
+        "ore grade",
+        "native gold",
+        "concentration",
+        "chemical reduction"
+      ],
+      "example": {
+        "question": "An iron-oxide ore is concentrated from 200 kg to 100 kg without losing any of its original 40 kg oxide. What changes, and what chemical step is still needed?",
+        "steps": [
+          "Initially 40/200 × 100 = 20% of the mass is iron oxide.",
+          "After concentration 40/100 × 100 = 40%, but the oxide remains oxide.",
+          "Iron metal still requires reduction; separating iron-free rock has not removed chemically combined oxygen."
+        ],
+        "explanation": "Track the chemical species as well as its fraction of a mixture."
+      },
+      "practice": {
+        "question": "A second invented sample contains 30 kg iron oxide in 150 kg material. A separator removes 60 kg iron-free rock without losing oxide. Find the new oxide percentage. Contrast this with collecting native gold grains and correct “all unreactive metals occur only as elements”.",
+        "answer": "90 kg material remains; 30/90 × 100 = 33⅓% iron oxide, with no iron metal formed. Native gold grains already contain the element and may be physically collected. Unreactive metals are often found uncombined, but this is a tendency rather than an exclusive occurrence rule.",
+        "explanation": "Track the chemical species as well as its fraction of a mixture."
+      }
+    },
+    {
+      "id": "extraction-route-transfer-evidence",
+      "title": "Select the route and check the electron change",
+      "points": [
+        "2.23C"
+      ],
+      "paragraphs": [
+        "The school comparison places aluminium above carbon and iron below carbon. Carbon-based reduction of a suitable iron oxide is therefore a useful extraction example; the corresponding simple carbon route is unsuitable for aluminium oxide. The actual compound, reaction conditions and possible products still matter. A position in the series is a guide to a route, not proof that any balanced equation will work.",
+        "In the illustrated iron reaction Fe₂O₃ + 3CO → 2Fe + 3CO₂, iron oxide loses oxygen and carbon monoxide gains it. Both sides contain two Fe, three C and six O atoms. Carbon helps supply the reducing carbon monoxide in the conventional example. Memorising every furnace step is unnecessary for the supplied-process requirement.",
+        "In the conventional aluminium example, alumina is dissolved in a molten cryolite-based bath. Mobile ions carry charge through the electrolyte, and Al³⁺ gains electrons at the negative cathode: Al³⁺ + 3e⁻ → Al. Two aluminium ions require six electrons, so the doubled half-equation is 2Al³⁺ + 6e⁻ → 2Al. Electrons move in the external metal circuit; ions move in the electrolyte.",
+        "Solid ionic material with fixed ions will not conduct in the same way. An aqueous aluminium salt is not interchangeable with this molten bath because water can compete in electrode reactions. Carbon anodes conduct and are consumed in the conventional process; this does not make it simple heating of aluminium oxide with carbon. These are process explanations, not instructions to construct a smelter."
+      ],
+      "terms": [
+        "carbon boundary",
+        "molten bath",
+        "cathode reduction",
+        "mobile ions"
+      ],
+      "example": {
+        "question": "A diagram labels a molten ionic bath, a negative cathode and Al³⁺. Explain how aluminium forms, and distinguish the role of carbon from the carbon-based iron example.",
+        "steps": [
+          "The molten bath has mobile ions; the external supply drives electrolysis.",
+          "At the negative cathode Al³⁺ + 3e⁻ → Al; electron gain is reduction.",
+          "Carbon can be a consumed anode, whereas the iron example uses carbon-based chemical reduction of a suitable oxide."
+        ],
+        "explanation": "Check conditions, conserved atoms and conserved charge before transferring a process conclusion."
+      },
+      "practice": {
+        "question": "Balance Fe₂O₃ + CO → Fe + CO₂ and name the substance oxidized. Write the cathode half-equation for two Al³⁺ ions. Explain why changing the aluminium bath to solid salt or ordinary aqueous salt cannot simply preserve the same predicted result.",
+        "answer": "Fe₂O₃ + 3CO → 2Fe + 3CO₂; CO gains oxygen and is oxidized. 2Al³⁺ + 6e⁻ → 2Al conserves charge and atoms. Fixed solid ions cannot carry current through the electrolyte in the required way; aqueous salt permits competing water reactions, so it is not the stated molten process.",
+        "explanation": "Check conditions, conserved atoms and conserved charge before transferring a process conclusion."
+      }
+    },
+    {
+      "id": "extraction-comparison-transfer-evidence",
+      "title": "Compare recovered metal on the same basis",
+      "points": [
+        "2.24C"
+      ],
+      "paragraphs": [
+        "Read an unfamiliar process as a sequence of material changes. Identify the starting compound, what separates a mixture, what forms metal, and which inputs or wastes the diagram actually gives. The six named metal-extraction points do not require learning every industrial recipe; supplied information can support a reasoned comment.",
+        "Invented batch A contains 50 kg Fe₂O₃ in 250 kg ore; the remaining material contains no iron. With Fe = 56 and O = 16, iron contributes 112/160 of the oxide mass. The theoretical iron is 35 kg. Recovery of 80% of that iron gives 28 kg, not 80% of the whole ore. If the process uses 140 MJ, its supplied energy demand is 5 MJ per kg recovered iron.",
+        "Invented batch B contains 60 kg Fe₂O₃ in 200 kg ore, with iron-free remainder, and recovers 75% of its theoretical iron. It gives 31.5 kg recovered iron. At 189 MJ it uses 6 MJ per recovered kg. B has higher ore grade and makes more iron in this batch, but A uses less supplied energy per recovered kilogram. Do not compare 140 and 189 alone without their outputs.",
+        "A whole-process recommendation also needs product quality, other inputs, waste composition and treatment, energy source and comparable boundaries. Unrecovered iron is not necessarily elemental iron thrown away; it may remain in compounds. A high electrical current or low energy-per-kg number alone does not prove a particular carbon footprint. All batch values here are invented study inputs, not measured plant data."
+      ],
+      "terms": [
+        "theoretical iron",
+        "recovery",
+        "energy per kilogram",
+        "missing evidence"
+      ],
+      "example": {
+        "question": "For invented batch B, 200 kg ore contains 30% Fe₂O₃ and recovers 75% of the possible iron using 189 MJ. Find the recovered iron and energy per kilogram, using Fe = 56 and O = 16.",
+        "steps": [
+          "Oxide mass = 200 × .30 = 60 kg; its theoretical iron is 60 × 112/160 = 42 kg.",
+          "Recovered iron = 42 × .75 = 31.5 kg.",
+          "Energy per recovered kilogram = 189/31.5 = 6 MJ kg⁻¹."
+        ],
+        "explanation": "Separate ore grade, theoretical metal, recovery and normalized inputs; qualify the final recommendation."
+      },
+      "practice": {
+        "question": "Invented batch C has 80 kg ore containing 25% Fe₂O₃, iron-free remainder, 90% iron recovery and 75.6 MJ input. Find theoretical and recovered iron and energy per recovered kilogram. Compare its energy figure with A and B above, then give one reason this cannot establish the best process overall.",
+        "answer": "C contains 20 kg Fe₂O₃ and at most 14 kg iron; 90% recovery gives 12.6 kg iron. 75.6/12.6 = 6 MJ kg⁻¹, equal to B and above A’s 5. Missing comparable waste, product quality or energy-source information prevents an overall best-process claim.",
+        "explanation": "Separate ore grade, theoretical metal, recovery and normalized inputs; qualify the final recommendation."
+      }
+    },
+    {
+      "id": "metal-property-choice-evidence",
+      "title": "Explain the useful property for each job",
+      "points": [
+        "2.25C"
+      ],
+      "paragraphs": [
+        "A material answer should connect a property to the task. Copper conducts electricity and can be drawn into wire because it is ductile. Thermal conductivity instead explains rapid heat transfer in a heat exchanger. Copper’s workability and suitable corrosion resistance can support plumbing; no one property guarantees suitability in every fluid or environment.",
+        "Aluminium conducts heat and is malleable, helping a suitable utensil transfer heat and be formed. Its low density reduces mass for a given volume. Aircraft structures normally need an appropriate aluminium alloy for mechanical strength: the density of pure aluminium does not by itself establish adequate strength. A protective oxide layer helps explain corrosion resistance despite aluminium’s high reactivity.",
+        "Illustrative calculation: equal 100 cm³ samples with supplied densities 2.70 g cm⁻³ for aluminium and 8.96 g cm⁻³ for copper have masses 270 g and 896 g. The 626 g difference follows from density and equal volume. It does not compare strength, service life or the dimensions needed for a real component."
+      ],
+      "terms": [
+        "density",
+        "ductility",
+        "thermal conductivity",
+        "protective oxide"
+      ],
+      "example": {
+        "question": "For copper electrical wire, an aluminium-alloy aircraft part and an aluminium cooking utensil, give the property and the job it performs. Why is a bare claim “aluminium is strong” inadequate?",
+        "steps": [
+          "Wire: electrical conductivity carries current; ductility permits drawing into wire.",
+          "Aircraft alloy: low density reduces mass, while an appropriate alloy supplies the required strength.",
+          "Utensil: thermal conductivity transfers heat and malleability permits forming; pure aluminium is relatively soft."
+        ],
+        "explanation": "The relevant property explains the particular use; equal-volume mass arithmetic does not certify an engineering design."
+      },
+      "practice": {
+        "question": "Using the supplied densities above, calculate the masses of equal 50 cm³ aluminium and copper samples. Correct these explanations: copper wire works because it is low density; aluminium cookware works because it resists rust; aircraft parts can use any pure aluminium because all aluminium is strong.",
+        "answer": "Masses are 135 g and 448 g. Copper wire needs electrical conductivity and ductility; aluminium cookware benefits from thermal conductivity and formability, with suitable corrosion resistance as a separate advantage. Aircraft selection needs a suitable alloy and strength evidence as well as low density, not a universal pure-metal guarantee.",
+        "explanation": "The relevant property explains the particular use; equal-volume mass arithmetic does not certify an engineering design."
+      }
+    },
+    {
+      "id": "steel-choice-transfer-evidence",
+      "title": "Distinguish hardness, formability and corrosion resistance",
+      "points": [
+        "2.25C"
+      ],
+      "paragraphs": [
+        "The required steel comparison is low-carbon (mild), high-carbon and stainless. A formed panel benefits from mild steel’s relative formability and weldability. A suitably treated high-carbon cutting tool benefits from hardness and edge retention. Hardness is resistance to indentation or wear; toughness concerns resisting fracture when energy is absorbed. A harder grade is not automatically tougher or easier to shape.",
+        "Stainless steel contains chromium that supports a protective chromium-rich oxide surface layer. This provides corrosion resistance useful for cutlery or a sink in suitable conditions. The protection is not an applied sheet of pure chromium and is not immunity to all environments. Nickel occurs in many grades but is not compulsory in every stainless steel, and some stainless grades are magnetic.",
+        "For an electromagnet that must release objects when switched off, suitable soft iron is useful because it magnetizes readily and loses much of its magnetization when the field is removed. This explains a magnetic use of iron; it does not mean every iron-containing alloy behaves identically. Composition, treatment and actual operating requirements must be specified for a real choice."
+      ],
+      "terms": [
+        "mild steel",
+        "high-carbon steel",
+        "stainless steel",
+        "soft iron"
+      ],
+      "example": {
+        "question": "Select a required steel type for a bent vehicle panel, a cutting edge and a sink exposed to water, then explain why a magnet test alone cannot identify all stainless steel.",
+        "steps": [
+          "Mild steel: relative formability for the panel.",
+          "Appropriate high-carbon steel: hardness and edge retention for the tool; stainless: suitable corrosion resistance for the sink.",
+          "Some stainless grades are magnetic, so one magnet observation does not rule them all out."
+        ],
+        "explanation": "Choose by the required behaviour and qualify the grade rather than equating hardness, toughness and strength."
+      },
+      "practice": {
+        "question": "Correct “high-carbon steel must be the toughest and easiest to bend” and “a nickel-free magnetic alloy cannot be stainless”. Name a suitable iron material for an electromagnet that should release its load, and link its behaviour to that task.",
+        "answer": "High-carbon steel can be harder but usually has less ductility and may be less tough than a suitable lower-carbon grade; grade and treatment matter. Chromium-supported corrosion resistance identifies the relevant stainless feature; nickel and non-magnetism are not universal requirements. Suitable soft iron magnetizes readily and loses much of its magnetization when the field is removed, helping release the load.",
+        "explanation": "Choose by the required behaviour and qualify the grade rather than equating hardness, toughness and strength."
+      }
+    },
+    {
+      "id": "alloy-fraction-transfer-evidence",
+      "title": "Use composition without inventing a compound formula",
+      "points": [
+        "2.26C"
+      ],
+      "paragraphs": [
+        "An alloy contains a metal with one or more other elements. Steel can contain iron and non-metal carbon, so “exactly two metals” is too restrictive. Different grades may use different percentages; a single stated alloy composition does not supply a universal compound formula.",
+        "Invented composition A contains only iron and carbon, with 0.40% carbon by mass. In 3.0 kg, carbon mass is .0040 × 3.0 = .012 kg = 12 g; the remaining 2.988 kg is iron under this stated two-element assumption. Composition B at 0.80% would contain 24 g carbon in the same mass. Both are alloy compositions, not a change from mixture to compound.",
+        "Changing composition can adjust mechanical properties, but a percentage alone does not certify hardness or toughness after every heat treatment. For an invented 100 g iron-based alloy with 1 g carbon and 12 g chromium, the remaining 87 g is iron if those are its only elements. This bookkeeping example is not a recommended industrial grade."
+      ],
+      "terms": [
+        "alloy composition",
+        "mass percentage",
+        "variable grade",
+        "non-metal carbon"
+      ],
+      "example": {
+        "question": "An invented iron–carbon alloy contains 0.40% carbon by mass. Find the carbon and iron in 3.0 kg, and explain why writing one fixed “steel formula” is inappropriate.",
+        "steps": [
+          "Carbon = .0040 × 3.0 kg = .012 kg = 12 g.",
+          "With only the two stated elements, iron = 3.0 − .012 = 2.988 kg.",
+          "Grades can vary in composition; steel is an alloy mixture rather than one fixed-ratio compound."
+        ],
+        "explanation": "Percentages describe the supplied mixture; retain all named elements and the conditional property claim."
+      },
+      "practice": {
+        "question": "An invented 2.5 kg sample contains only iron, chromium and carbon: 12% chromium and 0.80% carbon by mass. Calculate each mass and the iron percentage. Does the non-metal carbon prevent it being an alloy or do these percentages guarantee a specific hardness?",
+        "answer": "Chromium = .30 kg; carbon = .020 kg = 20 g; iron = 2.18 kg or 87.2%. Carbon can be an alloying element even though it is a non-metal. Composition alone does not guarantee a particular hardness without the relevant grade, structure and treatment evidence.",
+        "explanation": "Percentages describe the supplied mixture; retain all named elements and the conditional property claim."
+      }
+    },
+    {
+      "id": "alloy-model-transfer-evidence",
+      "title": "Read the atom-size model and its limits",
+      "points": [
+        "2.27C"
+      ],
+      "paragraphs": [
+        "Read the original two-dimensional model in the preceding hardness section: the pure-metal panel has equal-sized atoms in regular rows, while one larger atom in the alloy panel shifts neighbouring positions. Different-sized atoms distort the regular arrangement, making the movement involved in plastic deformation harder. More force is needed for that movement, so the alloy can be harder in this school comparison.",
+        "An explanation needs the chain from size to distortion to hindered movement to resistance to deformation. “There are extra atoms” or “there are more electrons” does not establish that chain. Metallic bonding still exists, and atoms do not become completely immobile.",
+        "The picture illustrates a substitutional larger atom. A smaller substituted atom can also disturb regular spacing; small atoms can also occupy spaces between metal atoms. Carbon in steel is not represented by treating it as a giant replacement for iron. The school sketch illustrates a mechanism, not measured atomic coordinates or the only possible alloy structure.",
+        "Invented comparison: otherwise matched samples need 20 N and 32 N respectively to reach the same defined permanent deformation in a stated test. The second resists that particular deformation more. This is compatible with hardening, but does not measure atomic size, prove the whole mechanism or establish toughness. A changed thickness, treatment or test endpoint would confound the comparison."
+      ],
+      "terms": [
+        "lattice distortion",
+        "substitution",
+        "plastic movement",
+        "hardness versus toughness"
+      ],
+      "example": {
+        "question": "A learner labels the larger atom “another whole layer”, then says the alloy cannot deform because all metallic bonds have disappeared. Correct the explanation using the original model.",
+        "steps": [
+          "The larger atom is one substituted atom that distorts nearby regular positions, not an extra layer.",
+          "Distortion hinders plastic movement, requiring greater force; metallic bonding remains.",
+          "Movement is harder rather than impossible, and the drawing is an illustrative model rather than a microscopic measurement."
+        ],
+        "explanation": "Separate an explanatory model from observations that are merely consistent with it."
+      },
+      "practice": {
+        "question": "For otherwise matched samples reaching the same stated permanent-deformation endpoint, forces are 20 N for pure metal and 32 N for an alloy. Calculate the force ratio and explain the school atom-size mechanism. Does the result alone establish toughness, measured atom sizes or universal superiority of every alloy?",
+        "answer": "32/20 = 1.6. Different-sized alloying atoms distort the regular arrangement and hinder plastic movement, so more force is needed in the school model. This test alone does not establish toughness or atom sizes, and actual alloys depend on composition, treatment and comparison conditions.",
+        "explanation": "Separate an explanatory model from observations that are merely consistent with it."
       }
     },
     {

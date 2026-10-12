@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4CH1",
+  "documentId": "4CH1-spec",
+  "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "sourceVisualPages": [
+    24
+  ],
+  "sourcePrintedPages": [
+    18
+  ],
+  "reviewDate": "2026-10-12",
+  "reviewer": "Codex source and authored-teaching review",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "authored-teaching-coverage",
+  "policyVersion": 1,
+  "practicalTrialsPerformed": false,
+  "examTemplateCalibrationComplete": false,
+  "noteRef": "content/notes/chemistry-inorganic.json",
+  "inventorySha256": "99d3282dca2f006053fab09a93ef2319ed1e6f9fb6fd82bc097ef82f2b580df0",
+  "auditRef": "research/curriculum-audits/4CH1-metal-extraction-uses.json",
+  "auditSha256": "007c802be90b2ddc29199f8849a1b06b8fd00aeadcb3a14ea7174e55d4ff9c33",
+  "diagramSha256": {
+    "/diagrams/chemistry-alloy-hardness.svg": "53f5df0b26231c18a53c08ad58c7c169b46b9333d0c981e12a8690526fba9056"
+  },
+  "limitations": [
+    "Six Paper 2C-only own Issue 3 identities 2.22C–2.27C and 28 local editorial requirements have reviewed authored explanations and unfamiliar fixed practice. This is not whole Inorganic chapter completion, human or learner review, a performed experiment, calibrated exam readiness or template activation. Chemistry 1.25 and later inorganic topics remain unfinished.",
+    "All arithmetic and deformation data original/supplied; no actual plant, experiment or microscopic coordinates. Primary-source broad material claims narrowed to their supported school scope.",
+    "Detailed factory recipes, numeric stainless thresholds and advanced strengthening mechanisms are not new publisher requirements."
+  ],
+  "points": [
+    {
+      "pointId": "4CH1:issue3:2.22C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.22C:r1",
+          "verdict": "approved",
+          "judgement": "Ore mixture, oxide compound and metal species distinguished: concentrating 200 kg to 100 kg retains 40 kg oxide, changing 20% to 40% without making iron; independent 150−60=90 kg and 30/90=one third practice.",
+          "assessmentSectionId": "ore-species-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.22C:r2",
+          "verdict": "approved",
+          "judgement": "Native gold grains already contain uncombined element; physical collection versus oxide reduction contrasted. Often-native tendency does not exclude compound occurrences or contamination.",
+          "assessmentSectionId": "ore-species-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.22C:r3",
+          "verdict": "approved",
+          "judgement": "Physical removal of iron-free rock leaves iron chemically combined in oxide. Increased oxide fraction is neither elemental-metal yield nor chemical reduction.",
+          "assessmentSectionId": "ore-species-transfer-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "metal-ores-native": "25bca7f8569f94abdefbb39d839d92427700d96ecbf7640a7051096baa9deb1a",
+        "ore-species-transfer-evidence": "59e8a29181293c4275ab3fea6ba5abd2bdcfa90aa4d1a882b5be1baa0c2f6631"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.23C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.23C:r1",
+          "verdict": "approved",
+          "judgement": "Carbon school position below Al and above Fe supports suitable oxide method selection, not an unconditional industrial route for every compound.",
+          "assessmentSectionId": "extraction-route-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.23C:r2",
+          "verdict": "approved",
+          "judgement": "Actual Fe₂O₃ + 3CO → 2Fe + 3CO₂ independently conserves Fe2/C3/O6; iron oxide loses oxygen and CO gains it. Carbon-based route distinguished from CO product confusion.",
+          "assessmentSectionId": "extraction-route-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.23C:r3",
+          "verdict": "approved",
+          "judgement": "Aluminium above carbon uses electrolysis of alumina in the appropriate molten bath; simple carbon heating and ordinary aqueous-salt deposition explicitly not substituted.",
+          "assessmentSectionId": "extraction-route-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.23C:r4",
+          "verdict": "approved",
+          "judgement": "Mobile electrolyte ions versus external electrons and negative cathode electron gain distinguished. Actual doubled half-equation +6−6=0 conserves Al2; carbon anode conductance/consumption does not reclassify the method.",
+          "assessmentSectionId": "extraction-route-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.23C:r5",
+          "verdict": "approved",
+          "judgement": "Suitable compound and process conditions retained; fixed solid ions and competing aqueous water reactions limit transfer. Balanced formula alone is not evidence of a viable route.",
+          "assessmentSectionId": "extraction-route-transfer-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "metal-extraction-carbon": "d6b5860d26989057bf02dae211b195833d76ab7b62f7e7b5f010b38f40e04ff4",
+        "metal-extraction-electrolysis": "f93e3c48431b7686eb4ed9f49c2eab38a43a1e56fa4fa40124bfcf999ce15543",
+        "extraction-route-transfer-evidence": "353d58d7c8aca4793791b080eb68f20b5ad00369e45180ddabf7a9ede96825a8"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.24C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.24C:r1",
+          "verdict": "approved",
+          "judgement": "Interpret supplied starting oxide, physical separation, metal-forming step and inputs without requiring a factory recipe; iron-free remainder assumption prevents hidden metal-content inference.",
+          "assessmentSectionId": "extraction-comparison-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.24C:r2",
+          "verdict": "approved",
+          "judgement": "Independent rational calculations: A 250×.20×112/160=35 kg theoretical and ×.80=28 recovered; B 200×.30×112/160=42 and ×.75=31.5; unfamiliar C 80×.25×.70=14 and ×.90=12.6.",
+          "assessmentSectionId": "extraction-comparison-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.24C:r3",
+          "verdict": "approved",
+          "judgement": "Recovered-output denominator independently gives A140/28=5, B189/31.5=6, C75.6/12.6=6 MJ/kg; larger recovery per batch is not automatically lower energy per kilogram.",
+          "assessmentSectionId": "extraction-comparison-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.24C:r4",
+          "verdict": "approved",
+          "judgement": "Recommendation names product quality, waste composition/treatment and energy source with comparable boundaries. Current alone does not prove carbon footprint, and unrecovered iron need not be elemental metal waste.",
+          "assessmentSectionId": "extraction-comparison-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.24C:r5",
+          "verdict": "approved",
+          "judgement": "Own source italic 2.24C limitation explicitly preserved: detailed specific extraction processes not required. Invented unfamiliar batch practice tests interpretation rather than compulsory industrial memorization.",
+          "assessmentSectionId": "extraction-comparison-transfer-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "metal-extraction-evaluation": "3ae78d945d5290794477b0d416d2edadbaa2746036290eb8e09d81da47801f49",
+        "extraction-comparison-transfer-evidence": "07d79fe1d95e8008252269fb24e0acb9ef6c675aa865a43e403444d1d47bb27f"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.25C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.25C:r1",
+          "verdict": "approved",
+          "judgement": "Low-density aircraft benefit separated from appropriate alloy strength. Supplied equal-volume density model gives 100 cm³ masses270/896 g and unfamiliar50 cm³135/448 g; no strength certificate inferred.",
+          "assessmentSectionId": "metal-property-choice-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.25C:r2",
+          "verdict": "approved",
+          "judgement": "Aluminium utensil links thermal conductivity and malleable forming to the job; oxide-supported corrosion resistance explained separately from intrinsic chemical reactivity.",
+          "assessmentSectionId": "metal-property-choice-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.25C:r3",
+          "verdict": "approved",
+          "judgement": "Copper-wire explanation uses electrical conductivity for current and ductility for drawing; low density rejected as the conductivity mechanism.",
+          "assessmentSectionId": "metal-property-choice-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.25C:r4",
+          "verdict": "approved",
+          "judgement": "Copper heat-exchanger thermal transfer and plumbing workability/conditional corrosion resistance distinguish actual use benefits from immunity claims.",
+          "assessmentSectionId": "metal-property-choice-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.25C:r5",
+          "verdict": "approved",
+          "judgement": "Suitable soft iron magnetizes readily and releases much magnetization after field removal for a switched electromagnet; pure iron and all steel grades not interchangeable.",
+          "assessmentSectionId": "steel-choice-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.25C:r6",
+          "verdict": "approved",
+          "judgement": "Mild-steel formability versus suitably treated high-carbon edge hardness assessed. Hardness, toughness and ductility distinguished, with no universal hardest-and-toughest claim.",
+          "assessmentSectionId": "steel-choice-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.25C:r7",
+          "verdict": "approved",
+          "judgement": "Stainless chromium supports a chromium-rich oxide layer and conditional cutlery/sink corrosion resistance; neither a pure-chromium coating nor immunity asserted.",
+          "assessmentSectionId": "steel-choice-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.25C:r8",
+          "verdict": "approved",
+          "judgement": "Grade/treatment restrictions retained; nickel-free and magnetic stainless possibilities defeat blanket identification rules. All three named steel types are taught, not new compulsory grade thresholds.",
+          "assessmentSectionId": "steel-choice-transfer-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "metal-uses-aluminium-copper": "9d565bf127d64186c11b3ad273bf21246a24b1cf1ec8d6fc4492ec92006a5681",
+        "metal-uses-iron-steels": "628dc56d5149fb5ef8ab838fd9ea2c4be3647fc54879c027d5bb50ab83d25d39",
+        "metal-property-choice-evidence": "5073a3046e9c6dbed78cf703410734044fba168d79f121477227577a653f3c22",
+        "steel-choice-transfer-evidence": "86195b54480397d503f13f1e65342376b6e5f30f9a8d2806e177c55b0c324d98"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.26C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.26C:r1",
+          "verdict": "approved",
+          "judgement": "Alloy defined as metal plus one or more elements; iron/carbon qualifies despite non-metal carbon, and exactly-two-metals definition rejected.",
+          "assessmentSectionId": "alloy-fraction-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.26C:r2",
+          "verdict": "approved",
+          "judgement": "Different supplied steel percentages remain variable alloy mixtures, not one fixed compound formula. Two-element and three-element bookkeeping assumptions stated.",
+          "assessmentSectionId": "alloy-fraction-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.26C:r3",
+          "verdict": "approved",
+          "judgement": "Independent .004×3 kg=.012 kg=12 g; unfamiliar2.5 kg at12%Cr/.80%C gives.30/.020/2.18 kg and87.2%Fe. Composition alone does not certify a particular hardness after every treatment.",
+          "assessmentSectionId": "alloy-fraction-transfer-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "metal-alloys-mixtures": "6766b8464afbfbd476329e9abb5eaf2a40fe81428585af97478d1965f3cae713",
+        "alloy-fraction-transfer-evidence": "6088ba30df0f70b6065e64f0e0e50b81ae312bbfdf229e64fa9a27da8b695899"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.27C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.27C:r1",
+          "verdict": "approved",
+          "judgement": "Actual SVG pure panel has15 equal-sized atoms in three regular rows; explanation connects regularity with plastic movement rather than complete loss of metallic bonding.",
+          "assessmentSectionId": "alloy-model-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.27C:r2",
+          "verdict": "approved",
+          "judgement": "Actual alloy SVG substitutes one larger radius38 atom for a radius25 site and displaces neighbours; explanation rejects added-whole-layer and measured-coordinates claims. Smaller/substitutional versus interstitial possibilities qualified.",
+          "assessmentSectionId": "alloy-model-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.27C:r3",
+          "verdict": "approved",
+          "judgement": "Distortion hinders plastic movement, requiring more force; independent32/20=1.6 same-endpoint supplied comparison is consistent with hardening, not impossible deformation.",
+          "assessmentSectionId": "alloy-model-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.27C:r4",
+          "verdict": "approved",
+          "judgement": "2D schematic explicitly original, illustrative and non-measured; other phases/composition/treatment and matched geometry/endpoints limit mechanism/toughness and universal-alloy inferences.",
+          "assessmentSectionId": "alloy-model-transfer-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "metal-alloys-hardness": "fa0023ea6861a8c072a2874a4521d6838701ced308d19b07bd0cd1bfee4f9836",
+        "alloy-model-transfer-evidence": "1ba987b2ab0e9dc840bbd8b6b91f4d0116e69815105961e17d276b751b87a0ce"
+      }
+    }
+  ]
+}
