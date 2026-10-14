@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4CH1",
+  "documentId": "4CH1-spec",
+  "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "sourceVisualPages": [
+    29,
+    30
+  ],
+  "sourcePrintedPages": [
+    23,
+    24
+  ],
+  "reviewDate": "2026-10-14",
+  "reviewer": "Codex root source/logic review with independent bounded practice audit",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "authored-teaching-coverage",
+  "policyVersion": 1,
+  "practicalTrialsPerformed": false,
+  "examTemplateCalibrationComplete": false,
+  "noteRef": "content/notes/chemistry-organic.json",
+  "inventorySha256": "33c8949bb0e23259dc45d428511eadfbb73fd614dd01e0d8c9b5b0f516b2ea0f",
+  "auditRef": "research/curriculum-audits/4CH1-organic-foundations.json",
+  "auditSha256": "4d14611c40b5b3e1abfc5f1b77ea75dcf22af6b1c9379f57e2376e4b1c210e99",
+  "diagramSha256": {
+    "/diagrams/chemistry-fractionating-column.svg": "5e49437ceedcc7745a45fe49c2d9b6d65569121d4ef0fe301ae406cec37c1af4"
+  },
+  "limitations": [
+    "Twelveauthoredidentities4.7–4.18only;16otherfoundationsidentitiesand22laterfamiliesremainpartial. No wholeOrganicchaptercompletion.",
+    "Originalfixedexercises/inventeddata,notcalibratedgenerativeexamtemplates,actualrefinerymeasurementsorperformedpracticals.",
+    "Agentwrittenreview,notlearner/humanexaminertrial;fullpaperprocessing/credits/historicalapplicabilityseparate."
+  ],
+  "points": [
+    {
+      "pointId": "4CH1:issue3:4.7",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.7:r1",
+          "verdict": "approved",
+          "judgement": "Actual refinery-sample task explicitlyidentifies mixtureofhydrocarbons,not onecompound.",
+          "assessmentSectionId": "crude-mixture"
+        },
+        {
+          "id": "4CH1:issue3:4.7:r2",
+          "verdict": "approved",
+          "judgement": "No singlemolecularformula/fixedboilingpoint assignedtocrudeoil; rangeevidence doesnotprovepurefractions.",
+          "assessmentSectionId": "crude-mixture"
+        }
+      ],
+      "sectionSha256": {
+        "crude-mixture": "ae88b9b68b53d73dcc27a5aa43415709715cb99a1bbf59e3308e4f1c38ffc841"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.8",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.8:r1",
+          "verdict": "approved",
+          "judgement": "Learnerdraws heatedfeed enteringlowerregion; vaporizedcomponentsrising beforecondensationexplicit.",
+          "assessmentSectionId": "fractional-column"
+        },
+        {
+          "id": "4CH1:issue3:4.8:r2",
+          "verdict": "approved",
+          "judgement": "Drawnhotbottom/cooltop temperaturegradient governsoutletorder,notdensityalone.",
+          "assessmentSectionId": "fractional-column"
+        },
+        {
+          "id": "4CH1:issue3:4.8:r3",
+          "verdict": "approved",
+          "judgement": "InventedA60–90/B180–220/C300–350ranges placedhigh/middle/low,withcondensationexplanation andnonuniversalcutoffqualification.",
+          "assessmentSectionId": "fractional-column"
+        },
+        {
+          "id": "4CH1:issue3:4.8:r4",
+          "verdict": "approved",
+          "judgement": "Fractionsremainmixtures;separationpreservesmolecules anddoesnotcrackchains. Repairedillustration retainsallnamedoutlets.",
+          "assessmentSectionId": "crude-mixture"
+        }
+      ],
+      "sectionSha256": {
+        "crude-mixture": "ae88b9b68b53d73dcc27a5aa43415709715cb99a1bbf59e3308e4f1c38ffc841",
+        "fractional-column": "f33ba175164b8c51cba0bb3281dbc918a4d3a37aaf291befe76f248c0fa87c36"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.9",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.9:r1",
+          "verdict": "approved",
+          "judgement": "Allsixmatchingtaskrecallsrefinerygasesforcooking/heating.",
+          "assessmentSectionId": "fraction-uses"
+        },
+        {
+          "id": "4CH1:issue3:4.9:r2",
+          "verdict": "approved",
+          "judgement": "Gasoline/petrol ismatchedtocarpetrolengines,withnameequivalenceexplicit.",
+          "assessmentSectionId": "fraction-uses"
+        },
+        {
+          "id": "4CH1:issue3:4.9:r3",
+          "verdict": "approved",
+          "judgement": "Kerosene matchedtojetaircraft,notgasoline.",
+          "assessmentSectionId": "fraction-uses"
+        },
+        {
+          "id": "4CH1:issue3:4.9:r4",
+          "verdict": "approved",
+          "judgement": "Diesel matchedtosuitabledieselengines,notuniversalvehicleclaim.",
+          "assessmentSectionId": "fraction-uses"
+        },
+        {
+          "id": "4CH1:issue3:4.9:r5",
+          "verdict": "approved",
+          "judgement": "Fueloilmatchedtolarge-scaleheating/someships/powerstations,notallmoderninstallations.",
+          "assessmentSectionId": "fraction-uses"
+        },
+        {
+          "id": "4CH1:issue3:4.9:r6",
+          "verdict": "approved",
+          "judgement": "Bitumenheavyresiduematchedtoroadsurfacing/roofing;all sixcourse namespreserved.",
+          "assessmentSectionId": "fraction-uses"
+        }
+      ],
+      "sectionSha256": {
+        "fraction-uses": "eec415ad441830a10919ab97efc6371ae034087f64e06606b24ee49631502bdc"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.10",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.10:r1",
+          "verdict": "approved",
+          "judgement": "L→Hgenerallydarker isamixturetrend,notclaimpurelongalkanesarealldark.",
+          "assessmentSectionId": "fraction-trends"
+        },
+        {
+          "id": "4CH1:issue3:4.10:r2",
+          "verdict": "approved",
+          "judgement": "Largermoleculesgenerallystrongerintermolecularattractions/higherboilingrange;internalC–Cbondsnotbrokenbyboiling.",
+          "assessmentSectionId": "fraction-trends"
+        },
+        {
+          "id": "4CH1:issue3:4.10:r3",
+          "verdict": "approved",
+          "judgement": "Greaterliquidviscositymeansflowresistance,notdensity;matchedtemperature/isomercompositionlimits retained.",
+          "assessmentSectionId": "fraction-trends"
+        }
+      ],
+      "sectionSha256": {
+        "fraction-trends": "9874049e2ed3654f3b8798214831dd6c99f2fe0658106b0d1a43e34de378e905"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.11",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.11:r1",
+          "verdict": "approved",
+          "judgement": "Invented12kJreleasedonburning supportsfueldefinition;evaporationalonecannotestablishit.",
+          "assessmentSectionId": "fuel-energy"
+        },
+        {
+          "id": "4CH1:issue3:4.11:r2",
+          "verdict": "approved",
+          "judgement": "Ignitionspark suppliesinitialbarrierinputbutnetcombustioncanbeexo;boilingpointrankingdoesnotgiveenergypergram.",
+          "assessmentSectionId": "fuel-energy"
+        }
+      ],
+      "sectionSha256": {
+        "fuel-energy": "cc3bf6febe323cefea30cb8d115062df5c696653b17cfb76e8c3fce676ff278f"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.12",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.12:r1",
+          "verdict": "approved",
+          "judgement": "Independentethanetask2C₂H₆+7O₂→4CO₂+6H₂OconservesC4/H12/O14andnamesbothcompleteproducts.",
+          "assessmentSectionId": "hydrocarbon-complete-combustion"
+        },
+        {
+          "id": "4CH1:issue3:4.12:r2",
+          "verdict": "approved",
+          "judgement": "TwooriginalpropanemodelsconserveC6/H16/O14orC3/H8/O4;CO/carbon/waterpossibilitiesandrealmixturesretained.",
+          "assessmentSectionId": "hydrocarbon-incomplete-combustion"
+        },
+        {
+          "id": "4CH1:issue3:4.12:r3",
+          "verdict": "approved",
+          "judgement": "Oxygensupply/mixingqualifiesproductset;COisnotsootandnovisiblesootdoesnotprovenoCOorcompletecombustion.",
+          "assessmentSectionId": "hydrocarbon-incomplete-combustion"
+        }
+      ],
+      "sectionSha256": {
+        "hydrocarbon-complete-combustion": "51dd9693f40b512f56c28790de9d0501fa3e9e96694f7eb45ed5a15e1db37205",
+        "hydrocarbon-incomplete-combustion": "e6a7d4b8acadb605ac818df6fadf4b6d9f51ad27d7d5cdd89d1fe3e211085c71"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.13",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.13:r1",
+          "verdict": "approved",
+          "judgement": "Correctiontaskrequiresreducedbloodoxygentransportcapacity→lessoxygenfortissueaerobicrespiration.",
+          "assessmentSectionId": "carbon-monoxide-transport"
+        },
+        {
+          "id": "4CH1:issue3:4.13:r2",
+          "verdict": "approved",
+          "judgement": "COgasdistinguishedfromcarbonsoot/CO₂greenhousemechanism;haemoglobinterminologynotrequiredandnosafetydiagnosisinferred.",
+          "assessmentSectionId": "carbon-monoxide-transport"
+        }
+      ],
+      "sectionSha256": {
+        "carbon-monoxide-transport": "c8081f2c50d6e4a5a883a81714b8c6eeade29411938e5fedbc1c4b4200b3c30f"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.14",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.14:r1",
+          "verdict": "approved",
+          "judgement": "Actualenginecomparisontaskrequireshightemperatureallowingnitrogen/oxygenreactiontoformnitrogenoxides.",
+          "assessmentSectionId": "combustion-other-oxides"
+        },
+        {
+          "id": "4CH1:issue3:4.14:r2",
+          "verdict": "approved",
+          "judgement": "AirisidentifiedastheN₂/O₂source;removingsulfurdoesnotaloneremovethisNOxmechanism.",
+          "assessmentSectionId": "combustion-other-oxides"
+        }
+      ],
+      "sectionSha256": {
+        "combustion-other-oxides": "0336247f40fc770659b2d75e0aeae191401a02bb2cd6e0ee1d24749d426c76fd"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.15",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.15:r1",
+          "verdict": "approved",
+          "judgement": "Sulfur-bearingimpuritiescanoxidisetoSO₂;actualS+O₂→SO₂simplemodelbalances.",
+          "assessmentSectionId": "combustion-other-oxides"
+        },
+        {
+          "id": "4CH1:issue3:4.15:r2",
+          "verdict": "approved",
+          "judgement": "PurehydrocarbonC/Hformula containsnoS;mixtureimpuritiesandairnotinsertedintopureformula.",
+          "assessmentSectionId": "combustion-other-oxides"
+        }
+      ],
+      "sectionSha256": {
+        "combustion-other-oxides": "0336247f40fc770659b2d75e0aeae191401a02bb2cd6e0ee1d24749d426c76fd"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.16",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.16:r1",
+          "verdict": "approved",
+          "judgement": "BothSO₂andnitrogenoxidesnamedinatmospheric/waterchemicalpathwaytoacidicsubstances.",
+          "assessmentSectionId": "acid-rain-formation"
+        },
+        {
+          "id": "4CH1:issue3:4.16:r2",
+          "verdict": "approved",
+          "judgement": "Acidsenter rainwater;pollutantgasnotautomaticallyliquidacidfallingfromexhaust.",
+          "assessmentSectionId": "acid-rain-formation"
+        },
+        {
+          "id": "4CH1:issue3:4.16:r3",
+          "verdict": "approved",
+          "judgement": "Taskrejectsheat-trappingasacid-formationstep;multistepatmospherelimitavoidsoneuniversalnitrogenoxideequation.",
+          "assessmentSectionId": "acid-rain-formation"
+        }
+      ],
+      "sectionSha256": {
+        "acid-rain-formation": "c29261a640c57c503221fd9011a78591e5a109342de6c8ef127d18bf651a3731"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.17",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.17:r1",
+          "verdict": "approved",
+          "judgement": "Long-chainC14alkaneconvertsintoshorterC8alkaneand2C3alkenes;chemicalconversiondistinctfromdistillation.",
+          "assessmentSectionId": "cracking-process"
+        },
+        {
+          "id": "4CH1:issue3:4.17:r2",
+          "verdict": "approved",
+          "judgement": "Bothnamedalternatives silica/alumina andown600–700°Crangeexplicitlyrequired;noimportedalternateindustrialconditions.",
+          "assessmentSectionId": "cracking-process"
+        },
+        {
+          "id": "4CH1:issue3:4.17:r3",
+          "verdict": "approved",
+          "judgement": "SubtractingC8H18fromC14H30then dividingby2givesC3H6;actualC14/H30totalsbalanced,structureconditionandnonuniqueproductsetexplicit.",
+          "assessmentSectionId": "cracking-process"
+        }
+      ],
+      "sectionSha256": {
+        "cracking-process": "ce17725631f6be11e3b48a9ac3201c38c6c053d53281040b27b21e197f1f12e5"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.18",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.18:r1",
+          "verdict": "approved",
+          "judgement": "Original60−35=25heavysurplusand40−25=15lightshortfall supportssupply/demandmismatch.",
+          "assessmentSectionId": "cracking-demand"
+        },
+        {
+          "id": "4CH1:issue3:4.18:r2",
+          "verdict": "approved",
+          "judgement": "Shorteralkanescanfuelandalkenesarefeedstockforegpolymers;heavyfractionsnotdeclaredenergy-free/useless.",
+          "assessmentSectionId": "cracking-demand"
+        },
+        {
+          "id": "4CH1:issue3:4.18:r3",
+          "verdict": "approved",
+          "judgement": "Distillationcannotchangemolecularsupply;exactlighterfuelyieldneedscrackingproductdistribution/conversionratherthanallfeedmassbecomingoneproduct.",
+          "assessmentSectionId": "cracking-demand"
+        }
+      ],
+      "sectionSha256": {
+        "cracking-demand": "3d52bb66a3d72c06ed8c7e772eeadf9d22615d1f8d4a9d4be07e5e43a4ed443d"
+      }
+    }
+  ]
+}

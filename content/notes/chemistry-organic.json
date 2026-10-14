@@ -320,7 +320,12 @@
       "commonMistakes": [
         "Assigning crude oil one molecular formula.",
         "Calling fractional distillation a chemical cracking reaction."
-      ]
+      ],
+      "practice": {
+        "question": "A model refinery sample separates into several boiling ranges. A student writes one molecular formula for the entire original sample and calls each collected fraction a pure alkane. Correct both claims. Does this separation itself create shorter molecules?",
+        "answer": "Crude oil is a mixture of hydrocarbons and has no single molecular formula or one fixed boiling point. Each fraction is still a mixture containing hydrocarbons with similar boiling behaviour. Fractional distillation separates existing molecules; it does not itself break long chains into shorter ones.",
+        "explanation": "A boiling range and a useful fraction name do not establish single-compound purity. Cracking is a separate chemical conversion."
+      }
     },
     {
       "id": "fractional-column",
@@ -356,6 +361,11 @@
         "src": "/diagrams/chemistry-fractionating-column.svg",
         "alt": "Original schematic crude-oil column, hot at the bottom and cooler at the top, with the required refinery gases, gasoline, kerosene, diesel, fuel oil and bitumen in order, and their common uses.",
         "caption": "Relative order and temperature gradient only; no universal exact boiling cutoffs or single-compound purity are implied."
+      },
+      "practice": {
+        "question": "Sketch the industrial fractionating-column model: show the hot feed, the temperature direction and three hypothetical fractions with boiling ranges A = 60–90 °C, B = 180–220 °C and C = 300–350 °C. Put their outlets in relative order and explain why. The ranges are invented, not prescribed refinery cutoffs.",
+        "answer": "Show heated feed entering the lower region, a hot bottom and cooler top. From higher to lower liquid outlets put A, B, C: the lower-boiling vapours travel farther up before condensing; higher-boiling material condenses lower in the hotter column. Some light gases can leave at the top and high-boiling residue remains low down.",
+        "explanation": "The drawing must use the temperature gradient and condensation, not chain-breaking or a density-only argument. Repeated vaporization/condensation separates boiling ranges; the invented numbers do not imply each fraction is a pure compound."
       }
     },
     {
@@ -390,7 +400,12 @@
         "Calling bitumen gasoline.",
         "Replacing fuel oil with an unrelated fraction name.",
         "Treating a common use as universal for every engine."
-      ]
+      ],
+      "practice": {
+        "question": "Name the six course fractions in order from lighter to heavier, then match each to a common use: road surfacing/roofing; car petrol engines; cooking/heating gas; jet aircraft; diesel engines; large-scale heating and some ships/power stations.",
+        "answer": "Refinery gases—cooking/heating; gasoline (petrol)—car petrol engines; kerosene—jet aircraft; diesel—diesel engines; fuel oil—large-scale heating and some ships/power stations; bitumen—road surfacing/roofing. That is the lighter-to-heavier course order.",
+        "explanation": "These are common uses of mixtures, not a universal claim about every vehicle or power station. Keep all six names rather than substituting a different refinery cut."
+      }
     },
     {
       "id": "fraction-trends",
@@ -422,7 +437,12 @@
         "Equating viscosity with density.",
         "Saying longer carbon chains are broken during boiling.",
         "Applying a mixture’s colour trend to every pure compound."
-      ]
+      ],
+      "practice": {
+        "question": "Two unfamiliar liquid fractions are compared at the same temperature: L has smaller average hydrocarbon molecules and H larger ones. Give the expected broad trends in boiling range, viscosity and colour from L to H. Explain the boiling trend and identify two limits to this comparison.",
+        "answer": "From L to H, boiling range and viscosity generally increase and the mixtures generally become darker. Larger molecules usually have stronger intermolecular attractions, so separating them into vapour needs more energy; boiling does not require breaking their internal C–C bonds. These are broad mixture trends, not exact rankings for every isomer or a rule that every pure long-chain alkane is dark; viscosity depends on temperature.",
+        "explanation": "Viscosity is resistance to flow, not density. Compare liquid fractions at matched temperatures and do not assign a liquid-flow viscosity to refinery gases under ordinary gas conditions."
+      }
     },
     {
       "id": "fuel-energy",
@@ -451,7 +471,12 @@
       "commonMistakes": [
         "Defining a fuel only as a liquid hydrocarbon.",
         "Calling a high boiling point a measure of combustion energy."
-      ]
+      ],
+      "practice": {
+        "question": "A hypothetical substance releases 12 kJ of heat overall when it burns after an ignition spark. Another substance simply evaporates at a low temperature. Which observation supports the definition of a fuel, and can the boiling behaviour alone rank combustion energy per gram?",
+        "answer": "The first substance satisfies the energy part of the fuel definition: burning releases heat overall. An ignition input does not make that net combustion endothermic. Low-temperature evaporation alone does not establish heat release on burning or a combustion-energy ranking per gram.",
+        "explanation": "Separate a physical boiling change, the activation input and the net chemical energy transfer. No claim about a real fuel’s safety, emissions or universal suitability follows from this invented comparison."
+      }
     },
     {
       "id": "hydrocarbon-complete-combustion",
@@ -484,7 +509,12 @@
         "Changing C₄H₁₀ to force an oxygen balance.",
         "Omitting water from hydrocarbon combustion.",
         "Assuming a balanced model proves complete real combustion."
-      ]
+      ],
+      "practice": {
+        "question": "Balance complete combustion of ethane, C₂H₆, using the smallest whole-number coefficients. State the carbon, hydrogen and oxygen totals on each side. Does the balanced equation prove an actual burner has burned completely?",
+        "answer": "2C₂H₆ + 7O₂ → 4CO₂ + 6H₂O. Both sides contain C₄H₁₂O₁₄. Complete combustion forms carbon dioxide and water with sufficient oxygen, but the balanced model alone does not prove the conditions or products in an actual burner.",
+        "explanation": "Keep each substance’s formula unchanged and adjust coefficients. Water may be vapour near combustion and condense after cooling."
+      }
     },
     {
       "id": "hydrocarbon-incomplete-combustion",
@@ -516,7 +546,12 @@
         "Calling soot carbon monoxide.",
         "Giving only carbon dioxide as a possible incomplete product.",
         "Using clear appearance as proof of no CO."
-      ]
+      ],
+      "practice": {
+        "question": "Balance two possible incomplete-combustion models for propane: one forms only CO and water, the other carbon and water. Explain why neither is the single universal incomplete-combustion equation and why no visible soot is not proof of no CO.",
+        "answer": "CO model: 2C₃H₈ + 7O₂ → 6CO + 8H₂O, conserving C₆H₁₆O₁₄. Carbon model: C₃H₈ + 2O₂ → 3C + 4H₂O, conserving C₃H₈O₄. Real incomplete combustion can produce mixtures including CO, carbon, water and some CO₂, depending on oxygen supply and mixing. CO is a gas, not visible black soot, so absence of soot does not establish absence of CO.",
+        "explanation": "These are invented limiting product choices for balancing, not instructions to produce incomplete combustion. A model formula or appearance alone cannot certify combustion completeness."
+      }
     },
     {
       "id": "carbon-monoxide-transport",
@@ -545,7 +580,12 @@
       "commonMistakes": [
         "Confusing carbon monoxide with carbon dioxide.",
         "Explaining the danger only by soot or irritation."
-      ]
+      ],
+      "practice": {
+        "question": "Correct this explanation: “Carbon monoxide is black soot, and its danger is the same as carbon dioxide’s greenhouse effect.” Give the required blood-to-tissue chain without needing a protein name.",
+        "answer": "Carbon monoxide is a gas distinct from carbon soot and carbon dioxide. It reduces the blood’s capacity to transport oxygen, so less oxygen is delivered to tissues for aerobic respiration. This oxygen-transport effect is different from the greenhouse mechanism.",
+        "explanation": "The source requires the transport-capacity explanation; haemoglobin terminology is not required. This lesson does not diagnose an exposure or establish whether any environment is safe."
+      }
     },
     {
       "id": "combustion-other-oxides",
@@ -577,7 +617,12 @@
       "commonMistakes": [
         "Claiming sulfur is present in every pure alkane.",
         "Claiming engine nitrogen oxides must come from nitrogen atoms in the fuel."
-      ]
+      ],
+      "practice": {
+        "question": "A hypothetical engine burns a fuel mixture consisting mainly of hydrocarbons plus a small sulfur-bearing impurity, using air. Identify the separate sources and formation conditions for nitrogen oxides and SO₂. If sulfur impurities were removed, would that alone prevent nitrogen oxides?",
+        "answer": "High engine temperatures allow nitrogen and oxygen from air to react, forming nitrogen oxides. Sulfur-bearing fuel impurities can oxidise to SO₂; the simple sulfur model is S + O₂ → SO₂. Removing sulfur impurities addresses that sulfur source but does not alone prevent nitrogen/oxygen from air reacting at high temperature.",
+        "explanation": "A pure hydrocarbon contains only carbon and hydrogen; do not invent nitrogen or sulfur atoms in its formula to explain impurities or air-derived products. These are source mechanisms, not current emissions measurements."
+      }
     },
     {
       "id": "acid-rain-formation",
@@ -608,7 +653,12 @@
       "commonMistakes": [
         "Calling soot an acid gas.",
         "Giving global warming as the acid-rain mechanism."
-      ]
+      ],
+      "practice": {
+        "question": "An invented pollution report detects both SO₂ and nitrogen oxides. Explain how each can contribute to acidic rainwater and why “they trap heat, therefore the rain becomes acid” misses the chemical step. Is the exhaust itself necessarily liquid acid?",
+        "answer": "SO₂ and nitrogen oxides can undergo atmospheric reactions, including reactions involving water, that form acidic substances; those substances enter rainwater. Heat trapping is a different environmental pathway and does not supply the acid-formation explanation. The pollutant gases are not necessarily liquid acid leaving the exhaust.",
+        "explanation": "Several oxidation/water steps may be involved, so do not force every nitrogen oxide into one universal gas-plus-water equation. The lesson describes the chemical chain, not the exact composition of every rain sample."
+      }
     },
     {
       "id": "cracking-process",
@@ -641,7 +691,12 @@
         "Calling fractional distillation cracking.",
         "Ignoring a missing hydrogen in the product balance.",
         "Giving an exact product identity without enough structural information."
-      ]
+      ],
+      "practice": {
+        "question": "Complete the invented cracking model C₁₄H₃₀ → C₈H₁₈ + 2X. Give X’s formula, identify its family if each X is acyclic with one C=C bond, and state the own course’s catalytic conditions. Does this balance establish the only possible refinery products?",
+        "answer": "After subtracting C₈H₁₈, the two X molecules together contain C₆H₁₂, so each X is C₃H₆, an alkene under the stated structural condition. The model is C₁₄H₃₀ → C₈H₁₈ + 2C₃H₆, conserving C₁₄H₃₀. Use silica or alumina catalyst and 600–700 °C in the specified model. Other balanced product sets are possible; the equation does not establish a unique industrial product mixture.",
+        "explanation": "Long-chain alkane changes into shorter alkane and alkene products by chemical bond changes. Formula alone would not establish structure without the supplied acyclic/one-double-bond condition; this is not a home practical procedure."
+      }
     },
     {
       "id": "cracking-demand",
@@ -672,7 +727,12 @@
       "commonMistakes": [
         "Saying heavy fractions are always useless.",
         "Claiming separation creates new alkene molecules."
-      ]
+      ],
+      "practice": {
+        "question": "Hypothetical supply/demand data, in equal mass units, are: heavy fraction supply 60, demand 35; lighter fuel supply 25, demand 40. Find each surplus/shortfall, explain why cracking can help and give a useful role for alkene products. Can the data alone tell exactly how much extra lighter fuel any chosen cracking process will make?",
+        "answer": "Heavy surplus = 60 − 35 = 25 units; lighter-fuel shortfall = 40 − 25 = 15 units. Cracking can convert some less-demanded long-chain material into shorter fuels and alkenes useful as feedstock, for example for polymers. Distillation alone only separates existing molecules. Exact lighter-fuel yield needs the actual cracking product distribution and conversion, which are not supplied.",
+        "explanation": "Supply/demand explains the need without claiming heavy fractions contain no energy or are always useless. Do not equate all cracked feed mass with one desired product."
+      }
     },
     {
       "id": "alkane-formula",
