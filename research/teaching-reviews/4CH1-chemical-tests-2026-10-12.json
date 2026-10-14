@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4CH1",
+  "documentId": "4CH1-spec",
+  "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "sourceVisualPages": [
+    26
+  ],
+  "sourcePrintedPages": [
+    20
+  ],
+  "reviewDate": "2026-10-12",
+  "reviewer": "Codex source and authored-teaching review with independent bounded Astra audit",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "authored-teaching-coverage",
+  "policyVersion": 1,
+  "practicalTrialsPerformed": false,
+  "examTemplateCalibrationComplete": false,
+  "noteRef": "content/notes/chemistry-inorganic.json",
+  "inventorySha256": "f079cb894bbcfb81ef2191181d1cc0a767368ae0540585192a3356704aebd54c",
+  "auditRef": "research/curriculum-audits/4CH1-chemical-tests.json",
+  "auditSha256": "4f718cfa13b95f6eeb9b37a23dc93797f41959ddc00ed4095c9ae1081dd3cc02",
+  "diagramSha256": {
+    "/diagrams/chemistry-anion-tests.svg": "535556e1e3eba1757654302af1da1f85f5d668b304fd90738237fc93f140fc32"
+  },
+  "limitations": [
+    "Seven own Issue3 identities 2.44–2.50 and30 editorial requirements reviewed for authored teaching with13 original unfamiliar fixed exercises, all1C/2C. No experimental/learner/human trial, whole Inorganic chapter completion, examiner calibration or exam-template activation.",
+    "Original school scenarios and phase-change readings, not actual gas/flame/precipitation measurements. SVG colours illustrative, not calibratedspectra.",
+    "Water presence/purity and sample identity do not certify drinking safety. Evidence-link and concrete-operation repairs are bounded written-teaching changes."
+  ],
+  "points": [
+    {
+      "pointId": "4CH1:issue3:2.44",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.44:r1",
+          "verdict": "approved",
+          "judgement": "Actual two-gas practice distinguishes lighted-splint squeaky pop forH₂ from glowing-splint relight forO₂; combustible/supportscombustion roles correct.",
+          "assessmentSectionId": "test-hydrogen-oxygen"
+        },
+        {
+          "id": "4CH1:issue3:2.44:r2",
+          "verdict": "approved",
+          "judgement": "Freshlimewater cloudiness forms whiteCaCO₃; actual balancedCO₂+Ca(OH)₂→CaCO₃+H₂O and laterclearing sequence assessed, notbubblesalone.",
+          "assessmentSectionId": "test-carbon-dioxide"
+        },
+        {
+          "id": "4CH1:issue3:2.44:r3",
+          "verdict": "approved",
+          "judgement": "Dampredlitmus turnsblue in evolvedNH₃, with gaslocation andliquidNaOHfalsepositive separated.",
+          "assessmentSectionId": "test-ammonia-chlorine"
+        },
+        {
+          "id": "4CH1:issue3:2.44:r4",
+          "verdict": "approved",
+          "judgement": "Dampbluepaper canturnredthenwhite withCl₂; lastingbleach distinguisheschlorine fromacidicstage andCl⁻solution.",
+          "assessmentSectionId": "test-ammonia-chlorine"
+        },
+        {
+          "id": "4CH1:issue3:2.44:r5",
+          "verdict": "approved",
+          "judgement": "Specifiedreagents, concreteprecipitates/gasresponses, cleanfreshportions andinference limits assessed; singlepositive cannotprovecompletepurity.",
+          "assessmentSectionId": "test-observation-inference"
+        }
+      ],
+      "sectionSha256": {
+        "test-hydrogen-oxygen": "a2c157c2bcb7c8e4887a336e91f99ccda84130d6ac4cc19e1477b08a2a544896",
+        "test-carbon-dioxide": "ffbce7ffd797d9bbf7b89266c8e984ad7610a14875f94f2b4cd35a48003c326a",
+        "test-ammonia-chlorine": "b27f0888293499154dcddf9f7f2fec87251bb338ea40a55b066c7dd9ae7ce399",
+        "test-observation-inference": "d7de112c170cc770e936c0d7d6a254380649cb035b854aa2217065633ede3968"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.45",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.45:r1",
+          "verdict": "approved",
+          "judgement": "Actual reused-sodium loop scenario requires approvedcleaning andcharacteristic-colour blank beforefreshsample.",
+          "assessmentSectionId": "test-flame-method"
+        },
+        {
+          "id": "4CH1:issue3:2.45:r2",
+          "verdict": "approved",
+          "judgement": "Smallsample atedge of non-luminousblueflame under supervisedmatchedconditions; originalsamplecolour notflamecolour.",
+          "assessmentSectionId": "test-flame-method"
+        },
+        {
+          "id": "4CH1:issue3:2.45:r3",
+          "verdict": "approved",
+          "judgement": "Sodiumcontamination/masking explicitlylimitsyellowunknowninference; cleanapparatus and comparableconditions retained.",
+          "assessmentSectionId": "test-flame-method"
+        }
+      ],
+      "sectionSha256": {
+        "test-flame-method": "22b4a8c8ca589718e5633d44118959385ed40c5cbb888bfcb19e06b248df1941"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.46",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.46:r1",
+          "verdict": "approved",
+          "judgement": "Allfive sourcepairs recalled, includingLi⁺red andNa⁺yellow.",
+          "assessmentSectionId": "test-flame-colours"
+        },
+        {
+          "id": "4CH1:issue3:2.46:r2",
+          "verdict": "approved",
+          "judgement": "K⁺lilac andCa²⁺orange-red exactsource labels preserved, notalternateoverconfidenthue.",
+          "assessmentSectionId": "test-flame-colours"
+        },
+        {
+          "id": "4CH1:issue3:2.46:r3",
+          "verdict": "approved",
+          "judgement": "Cu²⁺blue-green flame separated frombluehydroxideprecipitate.",
+          "assessmentSectionId": "test-flame-colours"
+        },
+        {
+          "id": "4CH1:issue3:2.46:r4",
+          "verdict": "approved",
+          "judgement": "Lila supportsK⁺ butdoesnotprovechlorideor purepotassiumchloride;anion andmixturelimits explicit.",
+          "assessmentSectionId": "test-flame-colours"
+        }
+      ],
+      "sectionSha256": {
+        "test-flame-colours": "ba7f62caefeb020ceddda1533887d2391f007ac4b8e27e581c8d580e41a72a8e"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.47",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.47:r1",
+          "verdict": "approved",
+          "judgement": "NaOHplusapprovedgentlewarming liberatesNH₃ identifiedindependently bydamplitmusgasresponse.",
+          "assessmentSectionId": "test-ammonium"
+        },
+        {
+          "id": "4CH1:issue3:2.47:r2",
+          "verdict": "approved",
+          "judgement": "Paper keptoutofalkalineliquid/spray; bubblesor smelling notcompleteNH₄⁺test.",
+          "assessmentSectionId": "test-ammonium"
+        },
+        {
+          "id": "4CH1:issue3:2.47:r3",
+          "verdict": "approved",
+          "judgement": "Immediateblue/green/brownprecipitates supportCu²⁺/Fe²⁺/Fe³⁺; solidsnotmerelysolutioncolours.",
+          "assessmentSectionId": "test-metal-hydroxides"
+        },
+        {
+          "id": "4CH1:issue3:2.47:r4",
+          "verdict": "approved",
+          "judgement": "GreenFe(OH)₂canbrownonstanding; finalbrown notprooforiginalonlyFe³⁺. Time sequence assessed.",
+          "assessmentSectionId": "test-metal-hydroxides"
+        },
+        {
+          "id": "4CH1:issue3:2.47:r5",
+          "verdict": "approved",
+          "judgement": "ActualCu/Fe2/Fe3hydroxideequations conserveatoms andzerocharge; separateNH₄⁺+OH⁻→NH₃+H₂O practice also balanced. Evidence redirected to the actual equation paragraphs.",
+          "assessmentSectionId": "test-metal-hydroxides"
+        }
+      ],
+      "sectionSha256": {
+        "test-metal-hydroxides": "a95f521b5a6d0de3659a5b9c090f841b8a33b21f29d691c15276e28320d74ceb",
+        "test-ammonium": "4944e661ec4382eb91a2b84e1e108e30a5ae7cd21c0f8b41f4976c739e7b0226",
+        "test-observation-inference": "d7de112c170cc770e936c0d7d6a254380649cb035b854aa2217065633ede3968"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.48",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.48:r1",
+          "verdict": "approved",
+          "judgement": "Freshportion acidifiedwithdiluteHNO₃beforeAgNO₃; notHClreuse.",
+          "assessmentSectionId": "test-halide-ions"
+        },
+        {
+          "id": "4CH1:issue3:2.48:r2",
+          "verdict": "approved",
+          "judgement": "WhiteAgCl/creamAgBr/yellowAgI actualsourcecolourset assessed, precipitatesnotdyes.",
+          "assessmentSectionId": "test-halide-ions"
+        },
+        {
+          "id": "4CH1:issue3:2.48:r3",
+          "verdict": "approved",
+          "judgement": "HClintroduceschloride/falseAgCl; correctacidificationremovescarbonateinterference.",
+          "assessmentSectionId": "test-halide-ions"
+        },
+        {
+          "id": "4CH1:issue3:2.48:r4",
+          "verdict": "approved",
+          "judgement": "Freshportion diluteHClthenBaCl₂ yieldswhiteBaSO₄withcorrectionic1:1charge.",
+          "assessmentSectionId": "test-sulfate-ions"
+        },
+        {
+          "id": "4CH1:issue3:2.48:r5",
+          "verdict": "approved",
+          "judgement": "H₂SO₄introducessulfate andcompromisesoriginalsampletest;acidremovescarbonatepossiblewhiteBaCO₃.",
+          "assessmentSectionId": "test-sulfate-ions"
+        },
+        {
+          "id": "4CH1:issue3:2.48:r6",
+          "verdict": "approved",
+          "judgement": "DiluteHCl gasrelease mustbecombinedwithlimewatercloudiness; actualCO₃²⁻+2H⁺→CO₂+H₂O balanced,metalH₂notconfused.",
+          "assessmentSectionId": "test-carbonate-ions"
+        },
+        {
+          "id": "4CH1:issue3:2.48:r7",
+          "verdict": "approved",
+          "judgement": "Freshseparateportions andactualAgI/BaSO₄/carbonatebalancedexamples reviewed. Evidence links corrected to equation-bearing anion sections rather than generic inference prose.",
+          "assessmentSectionId": "test-halide-ions"
+        }
+      ],
+      "sectionSha256": {
+        "test-halide-ions": "55d1101e968594730a84cffa83d8fc7972dc7722c890e39ef7dfd10075645e0e",
+        "test-sulfate-ions": "960a6e8307c6457440cb14b17de8b5e3cda654deaa96ddfc91d146270c998c26",
+        "test-carbonate-ions": "c3c30698aef7e39413a9eebd89328a0cf9474ba7edd739f31c9c75580c0898b5",
+        "test-observation-inference": "d7de112c170cc770e936c0d7d6a254380649cb035b854aa2217065633ede3968"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.49",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.49:r1",
+          "verdict": "approved",
+          "judgement": "Concreteoperation nowcontactsuitableunknownliquid withfreshwhiteanhydrousCuSO₄ underapprovedmethod;white-to-bluechange identified.",
+          "assessmentSectionId": "test-water-presence"
+        },
+        {
+          "id": "4CH1:issue3:2.49:r2",
+          "verdict": "approved",
+          "judgement": "Dampblankcanmimicpositive;drycleanapparatus/freshreagent needed. Genuinepositive supportswaterpresence,notchemicalpurity.",
+          "assessmentSectionId": "test-water-presence"
+        }
+      ],
+      "sectionSha256": {
+        "test-water-presence": "a149aefbe412a3a9ab4cd34dd93937e43f85a85423bf4a909367546df5aeb96b"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.50",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.50:r1",
+          "verdict": "approved",
+          "judgement": "School100°Cboiling/0°Cmeltingfreezing atstandardpressure retained; compareactualphasechangewithmatchedreference.",
+          "assessmentSectionId": "test-water-purity"
+        },
+        {
+          "id": "4CH1:issue3:2.50:r2",
+          "verdict": "approved",
+          "judgement": "Samepressure, calibration, thermometermethod/position andsteadilyboilingconditions retained;98.4°Creference notuniversalimpuritysignal.",
+          "assessmentSectionId": "test-water-purity"
+        },
+        {
+          "id": "4CH1:issue3:2.50:r3",
+          "verdict": "approved",
+          "judgement": "Waterpresencechemicaltest distinctfromphysicalpurityandclearappearance;no drinking-safetycertificate.",
+          "assessmentSectionId": "test-water-purity"
+        },
+        {
+          "id": "4CH1:issue3:2.50:r4",
+          "verdict": "approved",
+          "judgement": "Actual98.4/98.5°C difference0.1below0.2resolution cannotconfidentlyestablishimpurityalone;traceimpurity andalternativeexplanationlimits explicit. Evidence redirected to actual resolution prose.",
+          "assessmentSectionId": "test-water-purity"
+        }
+      ],
+      "sectionSha256": {
+        "test-water-purity": "00bb1271ddc34920e4b1bb8beb2e3940058d5c191fb7ccf1d6b91705145eaee6",
+        "test-observation-inference": "d7de112c170cc770e936c0d7d6a254380649cb035b854aa2217065633ede3968"
+      }
+    }
+  ]
+}

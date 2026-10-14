@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4CH1",
+  "documentId": "4CH1-spec",
+  "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "sourceVisualPages": [
+    22
+  ],
+  "sourcePrintedPages": [
+    16
+  ],
+  "reviewDate": "2026-10-12",
+  "reviewer": "Codex source and authored-teaching review",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "authored-teaching-coverage",
+  "policyVersion": 1,
+  "practicalTrialsPerformed": false,
+  "examTemplateCalibrationComplete": false,
+  "noteRef": "content/notes/chemistry-inorganic.json",
+  "inventorySha256": "36cb87c91ff941d0039ea050d4e9582cbb8fa0bf82c9c671c617a4b15146019e",
+  "auditRef": "research/curriculum-audits/4CH1-halogen-physical.json",
+  "auditSha256": "626980d7359b33de17d2221a3cd939967e240d8611a03d2d1a690edfeca60886",
+  "diagramSha256": {},
+  "limitations": [
+    "Authored written teaching and original fixed practice only. No performed practical/learner trials, human examiner certification, active exam templates or calibrated equivalence.",
+    "Whole Inorganic chapter completion is recorded separately; other curricula, paper archive and examiner/AI work remain unfinished."
+  ],
+  "points": [
+    {
+      "pointId": "4CH1:issue3:2.5",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.5:r1",
+          "verdict": "approved",
+          "judgement": "Chlorineyellow-green gas at20°C matchesfreshRSCfactbox/state data.",
+          "assessmentSectionId": "halogen-state-and-extrapolation-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.5:r2",
+          "verdict": "approved",
+          "judgement": "Brominered-brown liquid at20°C distinguished fromvapouraboveit.",
+          "assessmentSectionId": "halogen-state-and-extrapolation-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.5:r3",
+          "verdict": "approved",
+          "judgement": "Iodinegrey-blacksolid versuspurplevapour; source113.7<120<184.4 supportsliquidbulk at120°C, no nevermeltsclaim.",
+          "assessmentSectionId": "halogen-state-and-extrapolation-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.5:r4",
+          "verdict": "approved",
+          "judgement": "Actualnumericreference table melting−101.5/−7.2/113.7 andboiling−34.04/58.8/184.4 independently ordered; roomtemperaturegas/liquid/solid classified withbothbounds.",
+          "assessmentSectionId": "halogen-state-and-extrapolation-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.5:r5",
+          "verdict": "approved",
+          "judgement": "Intermolecularseparation distinguished fromX-Xinternalbondbreaking; risingboiling doesnotprove higherchemicalreactivity.",
+          "assessmentSectionId": "halogen-state-and-extrapolation-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "halogen-colours-and-states": "793e2952087dc33a084b3d8d7f7171d9d218e8ee9faf815af750411bdbc832a1",
+        "halogen-physical-predictions": "a1eb21c9fec857182ca131365ad35d707e00bb2184c7218508e9653eec1c31f2",
+        "halogen-state-and-extrapolation-evidence": "09061205d349a772e05584922db0fce44c1bf45b78d1a1dcda0973acf5ee9024"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.6",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.6:r1",
+          "verdict": "approved",
+          "judgement": "Qualitativeabovechlorine lowertransition/gas/paler andbelowiodine highertransition/solid/darker extrapolations bounded as predictions, notobservations.",
+          "assessmentSectionId": "halogen-state-and-extrapolation-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.6:r2",
+          "verdict": "approved",
+          "judgement": "Independent sourceiodine120°C andinvented−12/75°C at20°C liquid inequalities;pressure specified andtransitioncoexistence retained.",
+          "assessmentSectionId": "halogen-state-and-extrapolation-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.6:r3",
+          "verdict": "approved",
+          "judgement": "Unsupported exact250°C/exactcolourclaims rejected; physicalpattern not promotedto chemicalreactivity or measurednewhalogenvalues.",
+          "assessmentSectionId": "halogen-state-and-extrapolation-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "halogen-physical-predictions": "a1eb21c9fec857182ca131365ad35d707e00bb2184c7218508e9653eec1c31f2",
+        "halogen-state-and-extrapolation-evidence": "09061205d349a772e05584922db0fce44c1bf45b78d1a1dcda0973acf5ee9024"
+      }
+    }
+  ],
+  "practiceReview": {
+    "previousReviewRef": "research/teaching-reviews/4CH1-halogen-physical-2026-10-09.json",
+    "previousReviewSha256": "9ed21e7fbf9b50c2cec0dd28d3858acfe6183900bd2407b018ea4bbdaa45d631",
+    "previousLimitationsHistorical": [
+      "Six own-source identities2.1–2.6 (2.4C only2C) /23 authored-teaching requirements reviewed with original correction/transfer cases. No actual demonstrations, human examiner calibration, active template or whole Inorganic chapter completion. Displacement2.7/2.8C and later topics remain partial.",
+      "Original hypothetical comparison and symbolic prediction cases are not measured trials. Fixed exercises are not generative exam templates."
+    ],
+    "scope": "Forty new original per-section practice additions only; existing explanations, worked examples, requirement judgements and diagrams unchanged.",
+    "changedSections": [
+      {
+        "sectionId": "halogen-colours-and-states",
+        "beforeSha256": "4381dd94e40b063c26ab72f56d03667ccd662664736333ba98e4cfdfc7aea60b",
+        "afterSha256": "793e2952087dc33a084b3d8d7f7171d9d218e8ee9faf815af750411bdbc832a1",
+        "question": "At the stated room conditions, match Cl₂, Br₂ and I₂ with colour and state. Correct “iodide ions are grey-black molecules” and “iodine’s purple vapour makes its room-temperature solid purple”."
+      },
+      {
+        "sectionId": "halogen-physical-predictions",
+        "beforeSha256": "dc5aa31dbadd82ae80f3e17fb0fc2ac59716f3a8254881e50f6d688103983c3b",
+        "afterSha256": "a1eb21c9fec857182ca131365ad35d707e00bb2184c7218508e9653eec1c31f2",
+        "question": "Using iodine’s supplied melting 113.7 °C and boiling 184.4 °C values at ordinary pressure, predict its stable bulk state at 150 °C. Can a higher boiling-point trend alone prove higher chemical reactivity?"
+      }
+    ]
+  }
+}

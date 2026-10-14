@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
 import inventory from '../research/syllabus/4BI1-human-nutrition.json' with { type: 'json' };
-import review from '../research/teaching-reviews/4BI1-human-nutrition-2026-10-09.json' with { type: 'json' };
+import review from '../research/teaching-reviews/4BI1-human-nutrition-captions-2026-10-12.json' with { type: 'json' };
 import source from '../research/reviews/2026-10-09-human-nutrition-teaching-source.json' with { type: 'json' };
 import part from '../content/note-sections/biology-structures/05-nutrition.json' with { type: 'json' };
 
@@ -49,7 +49,7 @@ import json,shutil,sys,tempfile
 from pathlib import Path
 src=Path.cwd();sys.path.insert(0,str(src/'scripts'))
 from teaching_review import validate_inventory_completion
-ip='research/syllabus/4BI1-human-nutrition.json';rp='research/teaching-reviews/4BI1-human-nutrition-2026-10-09.json'
+ip='research/syllabus/4BI1-human-nutrition.json';rp=json.loads((src/ip).read_text())['completionReviewRef']
 with tempfile.TemporaryDirectory() as d:
  root=Path(d)
  for p in [ip,rp,'research/curriculum-audits/4BI1-human-nutrition.json','content/notes/biology-structures.json']:

@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4CH1",
+  "documentId": "4CH1-spec",
+  "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "sourceVisualPages": [
+    22
+  ],
+  "sourcePrintedPages": [
+    16
+  ],
+  "reviewDate": "2026-10-12",
+  "reviewer": "Codex source and authored-teaching review",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "authored-teaching-coverage",
+  "policyVersion": 1,
+  "practicalTrialsPerformed": false,
+  "examTemplateCalibrationComplete": false,
+  "noteRef": "content/notes/chemistry-inorganic.json",
+  "inventorySha256": "53ef383dc82e6ab1390c0b19e3f5911f861fb505f936649164c0954e50cf2301",
+  "auditRef": "research/curriculum-audits/4CH1-halogen-reactivity.json",
+  "auditSha256": "d57759c4ff392067756bf6a2a922b28796a9cacca577599136b708e71a2573de",
+  "diagramSha256": {
+    "/diagrams/chemistry-halogen-displacement.svg": "e9ed13da2a99dbdc1c0f70b543cb621174558baf25f195809570b59ffab1b891"
+  },
+  "limitations": [
+    "Authored written teaching and original fixed practice only. No performed practical/learner trials, human examiner certification, active exam templates or calibrated equivalence.",
+    "Whole Inorganic chapter completion is recorded separately; other curricula, paper archive and examiner/AI work remain unfinished."
+  ],
+  "points": [
+    {
+      "pointId": "4CH1:issue3:2.7",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.7:r1",
+          "verdict": "approved",
+          "judgement": "Corrects elemental Cl2/reactive iodide versus Cl−; Na+ spectator removed only in net ionic form, atom/charge identity retained.",
+          "assessmentSectionId": "halogen-species-and-charge-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.7:r2",
+          "verdict": "approved",
+          "judgement": "Three positive actual pairs Cl/Br,Cl/I,Br/I agree with the original nine-cell SVG and unfamiliar P/Q/R directed evidence.",
+          "assessmentSectionId": "halogen-ranking-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.7:r3",
+          "verdict": "approved",
+          "judgement": "All six remaining matrix pairs have no expected net displacement, including identical-element diagonal; retained colour and possible equilibria are not overclaimed.",
+          "assessmentSectionId": "halogen-ranking-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.7:r4",
+          "verdict": "approved",
+          "judgement": "Independent complete/ionic and paired half-equation conservation; missing coefficients and one-electron molecular proposals fail, balanced reverse direction rejected as unsupported.",
+          "assessmentSectionId": "halogen-species-and-charge-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.7:r5",
+          "verdict": "approved",
+          "judgement": "Unfamiliar Q>P,R>Q,R>P gives R>Q>P; different P>Q>R>P cycle explicitly rejects a total ranking rather than inventing evidence.",
+          "assessmentSectionId": "halogen-ranking-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.7:r6",
+          "verdict": "approved",
+          "judgement": "Same-solvent product reference versus dilution control, vapour/aqueous mismatch, excess starting reagent and degraded-negative limits distinguish product identity from simple colour intensity.",
+          "assessmentSectionId": "halogen-observation-control-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "halogen-displacement-pattern": "eaefab3a7554f0a2710e0a1ba04646f262256f85a0d20dbaef52d2cc69958fee",
+        "halogen-displacement-equations": "53cefdacaf6f5e8b698ca831714fb09ba892a30ee14528fff74c3f64cceae476",
+        "halogen-displacement-evidence": "551f280813c8a4b99152f255edf73495b461db4b9715c0376d8d77c50dfcbaea",
+        "halogen-species-and-charge-evidence": "a8e1d1a726ea04abf15cb7695e93c06f2db8abeab6d302877625b62a0924d9c0",
+        "halogen-ranking-transfer-evidence": "382c74cdbd79e0cd1f487fb32064e0763e027be2fdb3cd4f9486177c31509272",
+        "halogen-observation-control-evidence": "87fba33c3da527f7943049edf0f1338b14eed02e1cadd8a86629cf7ea5daa00a"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.8C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.8C:r1",
+          "verdict": "approved",
+          "judgement": "Neutral configurations independently sum17/35/53 with7outer electrons; bromide35protons/36electrons keeps elemental identity.",
+          "assessmentSectionId": "halogen-electron-gain-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.8C:r2",
+          "verdict": "approved",
+          "judgement": "Br2+2e−→2Br− balances2Br/charge−2 and electron totals70+2=72; oneelectron/twoions and proton-loss corrections explicit.",
+          "assessmentSectionId": "halogen-electron-gain-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.8C:r3",
+          "verdict": "approved",
+          "judgement": "More occupied shells increase distance/shielding despite greater nuclear charge; the weaker incoming-electron attraction is the stated limited school explanation.",
+          "assessmentSectionId": "halogen-electron-gain-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.8C:r4",
+          "verdict": "approved",
+          "judgement": "Weaker gain supports Cl>Br>I, contrasted with easier Group1 loss; no exact rate and only Paper2C for own2.8C.",
+          "assessmentSectionId": "halogen-electron-gain-transfer-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "halogen-electron-reactivity": "24a10411eb6dc9b9e355baadb9207653c0c2504bacd5b7a24a63335cb9ac03ae",
+        "halogen-electron-gain-transfer-evidence": "2ac59c71435e0839e469cd5679c57734bbc9d23fed3c08814fd09ee0623cbcdb"
+      }
+    }
+  ],
+  "practiceReview": {
+    "previousReviewRef": "research/teaching-reviews/4CH1-halogen-reactivity-2026-10-12.json",
+    "previousReviewSha256": "748d286f5d26a8ad34099b38159fa16803469d76975da520f4c87fe8fd2caa9c",
+    "previousLimitationsHistorical": [
+      "Two own Issue3 identities2.7 and2.8C /ten requirements have agent-reviewed authored explanations plus unfamiliar fixed practice.2.7 both1C/2C;2.8C only2C. No practical trials, learner/examiner calibration, active templates or whole Inorganic completion. Later2.9onward and Principles1.25 remain unfinished.",
+      "Fresh OklahomaState URL timed out; retained prior narrow review is historical, not a new obtained source. OpenStax18.11 was read narrowly for relative oxidation/appearance; outdated vacant-d-orbital triiodide mechanism and blanket all-halogen least-reactive claim not adopted.",
+      "Original fixed exercises and hypothetical reports are not sampled past-paper tasks, physical trials or generative exam calibration."
+    ],
+    "scope": "Forty new original per-section practice additions only; existing explanations, worked examples, requirement judgements and diagrams unchanged.",
+    "changedSections": [
+      {
+        "sectionId": "halogen-displacement-pattern",
+        "beforeSha256": "f5043daf47280498142e4612485f3a7b5e5cf7d8b1669b8208f2845199e3c86e",
+        "afterSha256": "eaefab3a7554f0a2710e0a1ba04646f262256f85a0d20dbaef52d2cc69958fee",
+        "question": "Predict chlorine with iodide, bromine with chloride and iodine with bromide in the ordinary aqueous comparison. Identify the chlorine/iodide starting species and potassium’s role if KI is used."
+      },
+      {
+        "sectionId": "halogen-displacement-equations",
+        "beforeSha256": "a512fba9b497427f73d80c0d8089ff443e5d91162fc297c6a7a07cfd7125e240",
+        "afterSha256": "53cefdacaf6f5e8b698ca831714fb09ba892a30ee14528fff74c3f64cceae476",
+        "question": "Write the net ionic chlorine/iodide displacement equation and chlorine reduction half-equation. Can a balanced reverse iodide/chlorine equation establish its spontaneous direction?"
+      },
+      {
+        "sectionId": "halogen-displacement-evidence",
+        "beforeSha256": "709bc31295499927809d464873d74e0a4990572d2d69c8b7da6a87e089424d46",
+        "afterSha256": "551f280813c8a4b99152f255edf73495b461db4b9715c0376d8d77c50dfcbaea",
+        "question": "In invented evidence, a new nonpolar-layer colour matches iodine in the same solvent after chlorine meets iodide. Another mixture simply fades after dilution. Compare the strength of these inferences and name a negative-result check."
+      },
+      {
+        "sectionId": "halogen-electron-reactivity",
+        "beforeSha256": "2b8ccc5aacf9199935d3d0e1436f283d8dcee1833bd5666ce6fac0c0e68ebb30",
+        "afterSha256": "24a10411eb6dc9b9e355baadb9207653c0c2504bacd5b7a24a63335cb9ac03ae",
+        "question": "For chlorine and iodine, explain why iodine is less reactive in this displacement comparison despite more protons. Write I₂ reduction to iodide. Why is an easier-electron-loss Group 1 answer unsuitable?"
+      }
+    ]
+  }
+}

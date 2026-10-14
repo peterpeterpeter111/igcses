@@ -5,9 +5,9 @@ import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {spawnSync} from 'node:child_process';
 import {getNotes} from '../content/notes.ts';
-import review from '../research/teaching-reviews/4HB1-cells-teaching-2026-10-09.json' with {type:'json'};
+import review from '../research/teaching-reviews/4HB1-cells-foundations-captions-2026-10-12.json' with {type:'json'};
 const inventoryPath='research/syllabus/4HB1-cells-foundations.json';
-const reviewPath='research/teaching-reviews/4HB1-cells-teaching-2026-10-09.json';
+const reviewPath='research/teaching-reviews/4HB1-cells-foundations-captions-2026-10-12.json';
 function fixture(){
  const root=mkdtempSync(join(tmpdir(),'igcses-multi-teaching-'));
  for(const folder of ['scripts','research/syllabus','research/teaching-reviews','research/curriculum-audits','content/notes'])mkdirSync(join(root,folder),{recursive:true});

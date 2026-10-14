@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4CH1",
+  "documentId": "4CH1-spec",
+  "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "sourceVisualPages": [
+    24
+  ],
+  "sourcePrintedPages": [
+    18
+  ],
+  "reviewDate": "2026-10-12",
+  "reviewer": "Codex source and authored-teaching review with independent Astra source audit",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "authored-teaching-coverage",
+  "policyVersion": 1,
+  "practicalTrialsPerformed": false,
+  "examTemplateCalibrationComplete": false,
+  "noteRef": "content/notes/chemistry-inorganic.json",
+  "inventorySha256": "476352885aed78f5099d51d5920ef52eafda1227ae5a96000b697a8ac75ef5dc",
+  "auditRef": "research/curriculum-audits/4CH1-acid-metal-practical.json",
+  "auditSha256": "d44a00b7369f23d64fa40d374943c2c991e0b6fbf0d389acc8daf9b13f4f6457",
+  "diagramSha256": {},
+  "limitations": [
+    "Authored written teaching and original fixed practice only. No performed practical/learner trials, human examiner certification, active exam templates or calibrated equivalence.",
+    "Whole Inorganic chapter completion is recorded separately; other curricula, paper archive and examiner/AI work remain unfinished."
+  ],
+  "points": [
+    {
+      "pointId": "4CH1:issue3:2.21",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.21:r1",
+          "verdict": "approved",
+          "judgement": "SixpredictedMg/Zn/Fe×HCl/H2SO4 products explicitlyexamples, notexclusive set, source e.g wording corrected.",
+          "assessmentSectionId": "acid-metal-observation-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.21:r2",
+          "verdict": "approved",
+          "judgement": "Concrete testtube plan andquantitativeextension withcontrolledacid/surface/T/time; equalmolaracid notnecessarilyequalavailableH+.",
+          "assessmentSectionId": "acid-metal-observation-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.21:r3",
+          "verdict": "approved",
+          "judgement": "Effervescence/distinctmetalchange versus approvedsmallcollectedH2/lightedsplint squeakypop; weakslowgasnegative notproofdifferentgas.",
+          "assessmentSectionId": "acid-metal-observation-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.21:r4",
+          "verdict": "approved",
+          "judgement": "Sixchloride/sulfate formulae, Fe(II) andbalancedM+2HCl/M+H2SO4 equations independentlychecked.",
+          "assessmentSectionId": "acid-metal-observation-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.21:r5",
+          "verdict": "approved",
+          "judgement": "Original24/10/4cm³ at20s yields1.2/.50/.20cm³s−1; sameinterval andcollectionconditions.",
+          "assessmentSectionId": "acid-metal-observation-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.21:r6",
+          "verdict": "approved",
+          "judgement": "Totalamount differsfromrate; equalmasses differinmetal-moleamounts/limitingreactant, noendpoint ranking shortcut.",
+          "assessmentSectionId": "acid-metal-observation-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.21:r7",
+          "verdict": "approved",
+          "judgement": "Aluminiumoxidedelay/calciumsulfatearrest alternatives areeditorialextensions, notaddedexclusivepublisherclauses.",
+          "assessmentSectionId": "acid-metal-observation-transfer-evidence"
+        },
+        {
+          "id": "4CH1:issue3:2.21:r8",
+          "verdict": "approved",
+          "judgement": "Leakingcollection canmimicslowrate; repeatsandcontrols do notremoveevery systematicbias, no practicalperformed/certified.",
+          "assessmentSectionId": "acid-metal-observation-transfer-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "acid-metal-practical-plan": "fa474fbbb485a36dc10c4f98942cbf4b104853e3d53bdf226193800352d94c64",
+        "acid-metal-practical-interpretation": "5eecc8a374ae0142e15ecc30bce5936598167fbb4711183887484b8b1b51b843",
+        "acid-metal-observation-transfer-evidence": "5f6e435c9755a6e9de0e3f00dbbbc0b9fc0f97b93f41012741df236bdd594774"
+      }
+    }
+  ],
+  "practiceReview": {
+    "previousReviewRef": "research/teaching-reviews/4CH1-acid-metal-practical-2026-10-12.json",
+    "previousReviewSha256": "1e2aeab9c4a0669ac2f92878ecdd92c853fc288a0156951013b4c1a6bebdabaa",
+    "previousLimitationsHistorical": [
+      "Seven own Issue3 identities2.15–2.21/all1C2C and39 editorial requirements have agent-reviewed authored explanations and unfamiliar fixed practice. Mg/Zn/Fe are examples in2.21, notexclusive requirement. Practical planning taught, no physical/human/learner/examiner certification, template activation or whole Inorganic chapter completion. Later2.22Conward and Principles1.25 remain partial.",
+      "Primary-source traps rejected: Washington generalised copper wording andPurdue balancedreversearrow do notoverride no-hydrogen/no-displacement observations. IUPACplain endpoints failed freshfetch;no freshdefinition access claimed.",
+      "Fixedexercise data original/hypothetical; optionalratemethod andpassivation extensions notnewpublisher-numbered requirements."
+    ],
+    "scope": "Forty new original per-section practice additions only; existing explanations, worked examples, requirement judgements and diagrams unchanged.",
+    "changedSections": [
+      {
+        "sectionId": "acid-metal-practical-plan",
+        "beforeSha256": "05617d2687dea5c2e34ab3d506d0b0f0c29b8035f29bc1c34fbf8fcc63ad9b54",
+        "afterSha256": "fa474fbbb485a36dc10c4f98942cbf4b104853e3d53bdf226193800352d94c64",
+        "question": "A supplied supervised comparison changes acid concentration and exposed metal area between samples, then identifies any bubbles asH₂. Name the control repairs and gas evidence; areMg/Zn/Fe the only possible metals allowed by the source wording?"
+      },
+      {
+        "sectionId": "acid-metal-practical-interpretation",
+        "beforeSha256": "0b1f004db8dd8201e6f0b02cb09f95fdf1887f6f39d12a7bf888a23d2e3b56f8",
+        "afterSha256": "5eecc8a374ae0142e15ecc30bce5936598167fbb4711183887484b8b1b51b843",
+        "question": "Invented collections start 0 cm³ and reach 18 cm³ in 12 s and 36 s. Calculate interval-average rates. Can equal final amounts or equal masses of different metals establish equal rate or atom amounts?"
+      }
+    ]
+  }
+}

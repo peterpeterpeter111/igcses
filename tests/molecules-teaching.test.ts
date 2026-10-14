@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
 import sections from '../content/note-sections/biology-structures/02-molecules.json' with { type: 'json' };
 import inventory from '../research/syllabus/4BI1-molecules-and-enzymes.json' with { type: 'json' };
-import review from '../research/teaching-reviews/4BI1-molecules-and-enzymes-2026-10-08.json' with { type: 'json' };
+import review from '../research/teaching-reviews/4BI1-molecules-and-enzymes-captions-2026-10-12.json' with { type: 'json' };
 
 void test('molecule and enzyme review pins eight own-source statements and all twenty-four requirement decisions', () => {
   const result = JSON.parse(execFileSync('python3', ['-c', "import json,sys;from pathlib import Path;sys.path.insert(0,'scripts');from teaching_review import validate_inventory_completion;print(json.dumps(validate_inventory_completion(Path('.'),json.loads(Path('research/syllabus/4BI1-molecules-and-enzymes.json').read_text()))))"], {encoding:'utf8'}));

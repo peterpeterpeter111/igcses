@@ -4,12 +4,15 @@ import { execFileSync } from 'node:child_process';
 import { coverageSummary } from '../lib/coverage.ts';
 import inventory from '../research/syllabus/4BI1-living-organisms.json' with { type: 'json' };
 import review from '../research/teaching-reviews/4BI1-life-characteristics-2026-10-09.json' with { type: 'json' };
-import current from '../research/teaching-reviews/4BI1-organism-groups-2026-10-09.json' with { type: 'json' };
+import current from '../research/teaching-reviews/4BI1-living-organisms-captions-2026-10-12.json' with { type: 'json' };
 
 void test('historical eight life-characteristic decisions are preserved in the four-point organism review', () => {
   assert.equal(review.points.length, 1);
   assert.equal(review.points[0].requirements.length, 8);
-  assert.deepEqual(current.points[0], review.points[0]);
+  assert.equal(current.points[0].pointId, review.points[0].pointId);
+  assert.deepEqual(current.points[0].requirements, review.points[0].requirements);
+  for (const [id, hash] of Object.entries(review.points[0].sectionSha256))
+    if (id !== 'life-process-observations') assert.equal(Reflect.get(current.points[0].sectionSha256, id), hash);
   assert.deepEqual(inventory.points.filter((p) => p.teachingCoverage === 'complete').map((p) => p.reference), ['1.1', '1.2', '1.3', '1.4']);
   assert.equal(current.points.reduce((n, p) => n + p.requirements.length, 0), 34);
   assert.equal(coverageSummary().find((r) => r.subject.code === '4BI1')?.completePoints, 37);
@@ -19,7 +22,7 @@ import json,shutil,sys,tempfile
 from pathlib import Path
 src=Path.cwd();sys.path.insert(0,str(src/'scripts'))
 from teaching_review import validate_inventory_completion
-ip='research/syllabus/4BI1-living-organisms.json';rp='research/teaching-reviews/4BI1-organism-groups-2026-10-09.json'
+ip='research/syllabus/4BI1-living-organisms.json';rp=json.loads((src/ip).read_text())['completionReviewRef']
 with tempfile.TemporaryDirectory() as d:
  root=Path(d)
  for p in [ip,rp,'research/curriculum-audits/4BI1-living-organisms.json','content/notes/biology.json']:
@@ -40,7 +43,7 @@ import json,shutil,sys,tempfile
 from pathlib import Path
 src=Path.cwd();sys.path.insert(0,str(src/'scripts'))
 from teaching_review import validate_inventory_completion
-ip='research/syllabus/4BI1-living-organisms.json';rp='research/teaching-reviews/4BI1-organism-groups-2026-10-09.json'
+ip='research/syllabus/4BI1-living-organisms.json';rp=json.loads((src/ip).read_text())['completionReviewRef']
 with tempfile.TemporaryDirectory() as d:
  root=Path(d)
  for p in [ip,rp,'research/curriculum-audits/4BI1-living-organisms.json','content/notes/biology.json']:

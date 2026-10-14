@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Caption-origin clarity only. All non-caption section fields, original data/answers and historical reviews preserved.",
+  "sourceCommitBefore": "37988430b3804c0fc3345ffad2a28087546c3369",
+  "changedSections": [
+    {
+      "noteRef": "content/notes/human-biology.json",
+      "partRef": "content/notes/human-biology.json",
+      "sectionId": "stem-cell-comparison-evidence",
+      "beforeSha256": "22d122dcf47305e5bdba300630e8534d61f46ec758da81601eb391db7629d472",
+      "afterSha256": "7c2f39b03b753eda629551f53614dc08dd2030a0fce6dffb4cf26b7e247f59fa",
+      "caption": "Invented school proposals · no evidence of clinical effectiveness"
+    },
+    {
+      "noteRef": "content/notes/biology.json",
+      "partRef": "content/notes/biology.json",
+      "sectionId": "life-process-observations",
+      "beforeSha256": "45a1be0faff2ab680518deb6454e3190a6f47af03f396b421591c2d6ee78d450",
+      "afterSha256": "6ec82047fbfb893f41e9e4598ddfafb9e7d91b0957a9fbca4f131e2f6d641287",
+      "caption": "Invented life-process cases · supported evidence and its limits"
+    },
+    {
+      "noteRef": "content/notes/biology.json",
+      "partRef": "content/notes/biology.json",
+      "sectionId": "eukaryote-comparison-evidence",
+      "beforeSha256": "f7d97262461098a919007547e9b2ebc7b12cd8978e7bede7f337d88d6f73dc14",
+      "afterSha256": "2b225c7cafaad41312497e078821f222e193e0aa3f81a41c2496b4169cba2fb3",
+      "caption": "Invented organism models · feature combinations, not species identification"
+    },
+    {
+      "noteRef": "content/notes/biology-structures.json",
+      "partRef": "content/notes/../note-sections/biology-structures/02-molecules.json",
+      "sectionId": "food-test-evidence-table",
+      "beforeSha256": "e41d3f46f01cc72beb1a8402f6a32340a092163ca9f73bfe92e8b7468135150a",
+      "afterSha256": "cc22ef5137126b869cfaf3d650e0bd5a0e6136137df206f1a9e5fcfa431e7570",
+      "caption": "Invented food-test observations · separate portions and functioning controls"
+    },
+    {
+      "noteRef": "content/notes/biology-structures.json",
+      "partRef": "content/notes/../note-sections/biology-structures/02-molecules.json",
+      "sectionId": "enzyme-repeat-data-and-endpoints",
+      "beforeSha256": "381ff14fc5703ff39040f74e58b3f46bb07eb0aad369500386f8b07a88d05373",
+      "afterSha256": "080f15784b176dfea6efff685e124abd753ebd869da83d19b8bd0da224a054f2",
+      "caption": "Invented endpoint times · reciprocal-mean estimates, not measured product rates"
+    },
+    {
+      "noteRef": "content/notes/biology-structures.json",
+      "partRef": "content/notes/../note-sections/biology-structures/04-photosynthesis.json",
+      "sectionId": "photosynthesis-rate-comparisons",
+      "beforeSha256": "d7474b3982081e9da3a7a9e02e36d034a6bbd25d5c22cc0920ea3a7a41d8d414",
+      "afterSha256": "b33ce11c853cd77f04b44cfdfe812cd998232d5767cd013d330af116650c1ff8",
+      "caption": "Invented gas-volume comparisons · matched conditions, not a universal rate curve"
+    },
+    {
+      "noteRef": "content/notes/biology-structures.json",
+      "partRef": "content/notes/../note-sections/biology-structures/04-photosynthesis.json",
+      "sectionId": "photosynthesis-requirement-cases",
+      "beforeSha256": "a833bcea203a5c781524c0ede197c6e2e94cf49a87be8ae4c93895c3aae82109",
+      "afterSha256": "96c247245927a82bc5daeb377fa6ffe5d1bbdc71b21332a90951197486b25aa3",
+      "caption": "Invented starch-test cases · functioning controls, not performed trials"
+    },
+    {
+      "noteRef": "content/notes/biology-structures.json",
+      "partRef": "content/notes/../note-sections/biology-structures/05-nutrition.json",
+      "sectionId": "food-energy-comparison-evidence",
+      "beforeSha256": "c30e8a29788114067d320ac80e190e0a70ba8626eecf7b3d105936a38e356531",
+      "afterSha256": "556770486e905fc7192a3b40037aaed0940b754fa09ae106aef2b5286e2dcfbd",
+      "caption": "Invented calorimetry readings · collected heat, not exact food-energy values"
+    }
+  ],
+  "descendantReviews": [
+    {
+      "inventory": "research/syllabus/4BI1-photosynthesis.json",
+      "previousReview": "research/teaching-reviews/4BI1-photosynthesis-2026-10-09.json",
+      "descendantReview": "research/teaching-reviews/4BI1-photosynthesis-captions-2026-10-12.json",
+      "reviewedPoints": 6
+    },
+    {
+      "inventory": "research/syllabus/4HB1-cells-foundations.json",
+      "previousReview": "research/teaching-reviews/4HB1-cells-teaching-2026-10-09.json",
+      "descendantReview": "research/teaching-reviews/4HB1-cells-foundations-captions-2026-10-12.json",
+      "reviewedPoints": 14
+    },
+    {
+      "inventory": "research/syllabus/4BI1-living-organisms.json",
+      "previousReview": "research/teaching-reviews/4BI1-organism-groups-2026-10-09.json",
+      "descendantReview": "research/teaching-reviews/4BI1-living-organisms-captions-2026-10-12.json",
+      "reviewedPoints": 4
+    },
+    {
+      "inventory": "research/syllabus/4BI1-human-nutrition.json",
+      "previousReview": "research/teaching-reviews/4BI1-human-nutrition-2026-10-09.json",
+      "descendantReview": "research/teaching-reviews/4BI1-human-nutrition-captions-2026-10-12.json",
+      "reviewedPoints": 10
+    },
+    {
+      "inventory": "research/syllabus/4BI1-molecules-and-enzymes.json",
+      "previousReview": "research/teaching-reviews/4BI1-molecules-and-enzymes-2026-10-08.json",
+      "descendantReview": "research/teaching-reviews/4BI1-molecules-and-enzymes-captions-2026-10-12.json",
+      "reviewedPoints": 8
+    }
+  ],
+  "chapterReviewDescendant": {
+    "previousReview": "research/chapter-teaching-reviews/4BI1-living-organisms-2026-10-09.json",
+    "descendantReview": "research/chapter-teaching-reviews/4BI1-living-organisms-captions-2026-10-12.json"
+  },
+  "sourceVerificationPromotions": 0,
+  "authoredPointPromotions": 0,
+  "wholeChapterPromotions": 0,
+  "paperPromotions": 0,
+  "templateActivations": 0,
+  "remainingLegacyCaptionSections": []
+}

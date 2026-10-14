@@ -1,0 +1,540 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4CH1",
+  "documentId": "4CH1-spec",
+  "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "sourceVisualPages": [
+    24,
+    25
+  ],
+  "sourcePrintedPages": [
+    18,
+    19
+  ],
+  "reviewDate": "2026-10-12",
+  "reviewer": "Codex source and authored-teaching review with independent bounded Astra audit",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "authored-teaching-coverage",
+  "policyVersion": 1,
+  "practicalTrialsPerformed": false,
+  "examTemplateCalibrationComplete": false,
+  "noteRef": "content/notes/chemistry-inorganic.json",
+  "inventorySha256": "5f1aa8e953abe1e58b8d7389e975de02dd1cc3b12df1185d40e98f7974ae66ca",
+  "auditRef": "research/curriculum-audits/4CH1-acids-salts.json",
+  "auditSha256": "62f3151908bf61ed9144d03d743b437faebb14d95f5dfda9f22d7ff44cd590f4",
+  "diagramSha256": {
+    "/diagrams/chemistry-salt-methods.svg": "ea18f92e6ddddb18b5a797a63de26532a6fc2112d51877a4a29e4a61f95e4e60"
+  },
+  "limitations": [
+    "Sixteen own Issue3 identities 2.28–2.43C and61 editorial requirements reviewed for authored teaching with21 original unfamiliar fixed exercises. Paper2C-only33C/40C/41C/43C retained;42 applies toboth. No physical/human/learner trial, examiner calibration, whole Inorganic chapter completion or exam-template activation.",
+    "Fixed examples and readings are original/supplied; no empirical titration, crystal yield or purity certification. Structured practical plans describe approved supervised methods.",
+    "Existing source and indicator/equivalence/solubility/nitric-metal boundaries retained. Practical description gaps repaired without making new publisher clauses."
+  ],
+  "points": [
+    {
+      "pointId": "4CH1:issue3:2.28",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.28:r1",
+          "verdict": "approved",
+          "judgement": "Both litmus directions and unchanged-strip ambiguity assessed; no single starting colour establishes neutrality.",
+          "assessmentSectionId": "acid-indicator-colours"
+        },
+        {
+          "id": "4CH1:issue3:2.28:r2",
+          "verdict": "approved",
+          "judgement": "Colourless acidic/neutral and suitable pink alkaline phenolphthalein retained; practice rejects colourless=exactlypH7.",
+          "assessmentSectionId": "acid-indicator-colours"
+        },
+        {
+          "id": "4CH1:issue3:2.28:r3",
+          "verdict": "approved",
+          "judgement": "Actual pH7 methyl-orange yellow example rejects neutral-orange rule and retains transition limits.",
+          "assessmentSectionId": "acid-indicator-colours"
+        }
+      ],
+      "sectionSha256": {
+        "acid-indicator-colours": "9725ac8773ea7fdb0990d3bf9ffff4f684bca264b3191c328b1c152827ebe605"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.29",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.29:r1",
+          "verdict": "approved",
+          "judgement": "Original boundary-value practice covers0/3,4/6,7,8/10,11/14, matching all five exact source school bands.",
+          "assessmentSectionId": "acid-ph-classification"
+        },
+        {
+          "id": "4CH1:issue3:2.29:r2",
+          "verdict": "approved",
+          "judgement": "Solution strongly/weakly acidic labels distinguished from ionization strength and concentration; pH alone does not classify acid dissociation.",
+          "assessmentSectionId": "acid-ph-classification"
+        }
+      ],
+      "sectionSha256": {
+        "acid-ph-classification": "dbb3f293ff5fbee44e241a2791c00465d8abffbf760a6062fa8ede47aafba860"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.30",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.30:r1",
+          "verdict": "approved",
+          "judgement": "Fresh supplied8–9 chart bracket assessed with correct weakly alkaline classification and formulation-specific comparison.",
+          "assessmentSectionId": "acid-universal-indicator"
+        },
+        {
+          "id": "4CH1:issue3:2.30:r2",
+          "verdict": "approved",
+          "judgement": "Unsupported8.47precision rejected; sample colour/cloudiness, light and contamination limit approximate readings.",
+          "assessmentSectionId": "acid-universal-indicator"
+        }
+      ],
+      "sectionSha256": {
+        "acid-universal-indicator": "ce80bf04ff51eb0dd662feb5b3237bf32c0bd462bd22d5db84a8eb4ead88e678"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.31",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.31:r1",
+          "verdict": "approved",
+          "judgement": "H⁺ acidity in aqueous school shorthand identified, with water-associated-ion qualification.",
+          "assessmentSectionId": "acid-aqueous-ions"
+        },
+        {
+          "id": "4CH1:issue3:2.31:r2",
+          "verdict": "approved",
+          "judgement": "OH⁻ alkalinity identified; ammonia-water mechanism avoids requiring an OH group in each NH₃ molecule.",
+          "assessmentSectionId": "acid-aqueous-ions"
+        },
+        {
+          "id": "4CH1:issue3:2.31:r3",
+          "verdict": "approved",
+          "judgement": "Na⁺/Cl⁻ spectators distinguished from H⁺/OH⁻ without disappearing them from solution.",
+          "assessmentSectionId": "acid-aqueous-ions"
+        }
+      ],
+      "sectionSha256": {
+        "acid-aqueous-ions": "2f0016610ef5935f0624589fb1149ce87dd3efd1a67551734a5f48136a7a9429"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.32",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.32:r1",
+          "verdict": "approved",
+          "judgement": "H⁺(aq)+OH⁻(aq)→H₂O(l) has H2/O1 and netzero charge; explicit net equation assessed.",
+          "assessmentSectionId": "acid-neutralization"
+        },
+        {
+          "id": "4CH1:issue3:2.32:r2",
+          "verdict": "approved",
+          "judgement": "Actual equal-concentration10cm³ acid examples need10cm³NaOH forHCl and20for fullH₂SO₄ neutralization;1:1 versus1:2 independently checked.",
+          "assessmentSectionId": "acid-neutralization"
+        },
+        {
+          "id": "4CH1:issue3:2.32:r3",
+          "verdict": "approved",
+          "judgement": "Equal volume not a universal reacting amount orpH7 rule; excess, equivalence and chosen indicator endpoint separated.",
+          "assessmentSectionId": "acid-neutralization"
+        }
+      ],
+      "sectionSha256": {
+        "acid-neutralization": "e99c318df2c3a703fed6500f0311e14a2d32fab5d979308edf54abbf66cc1009"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.33C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.33C:r1",
+          "verdict": "approved",
+          "judgement": "Pipette/filler, clamped burette, flask and correct solution-conditioning versus distilled-water flask rinse assessed in flawed-plan correction.",
+          "assessmentSectionId": "acid-titration-method"
+        },
+        {
+          "id": "4CH1:issue3:2.33C:r2",
+          "verdict": "approved",
+          "judgement": "Few appropriate indicator drops/white tile taught; fill tip/remove funnel/initial reading retained; initialzero unnecessary.",
+          "assessmentSectionId": "acid-titration-method"
+        },
+        {
+          "id": "4CH1:issue3:2.33C:r3",
+          "verdict": "approved",
+          "judgement": "Swirling and near-endpoint dropwise acid addition toNaOH with pinkjustdisappears; overshoot rejected and reverse direction qualified.",
+          "assessmentSectionId": "acid-titration-method"
+        },
+        {
+          "id": "4CH1:issue3:2.33C:r4",
+          "verdict": "approved",
+          "judgement": "Eye-level meniscus and final-minus-initial delivery assessed; independent3.20→28.00,1.10→26.00,2.00→26.85 produce24.80/24.90/24.85.",
+          "assessmentSectionId": "acid-titration-results"
+        },
+        {
+          "id": "4CH1:issue3:2.33C:r5",
+          "verdict": "approved",
+          "judgement": "Inclusive supplied0.10cm³ spread accepted; mean24.85cm³ and rough27.40 exclusion justified, not a universal publisher tolerance.",
+          "assessmentSectionId": "acid-titration-results"
+        },
+        {
+          "id": "4CH1:issue3:2.33C:r6",
+          "verdict": "approved",
+          "judgement": "Common calibration/endpoint bias can survive concordance, so repeatability not equal accuracy.",
+          "assessmentSectionId": "acid-titration-results"
+        }
+      ],
+      "sectionSha256": {
+        "acid-titration-method": "a6b68707dfb755f9586f8d407027ee4582e7d5f60dd903e3c7110d1c26e3fe30",
+        "acid-titration-results": "550e4e1d0363f058e7d6ae92103f25dc2863f04550574b5bb2c1108f8e01c7f0"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.34",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.34:r1",
+          "verdict": "approved",
+          "judgement": "Na/K/NH₄ soluble families and all nitrate rule applied to actual five compounds including Pb(NO₃)₂.",
+          "assessmentSectionId": "salt-solubility-rules"
+        },
+        {
+          "id": "4CH1:issue3:2.34:r2",
+          "verdict": "approved",
+          "judgement": "Both AgCl andPbCl₂ insoluble exceptions assessed, not generalized to all lead compounds.",
+          "assessmentSectionId": "salt-solubility-exceptions"
+        },
+        {
+          "id": "4CH1:issue3:2.34:r3",
+          "verdict": "approved",
+          "judgement": "All three required insoluble sulfates Ba/Ca/Pb assessed; own source CaSO₄ classification not overwritten by another chart.",
+          "assessmentSectionId": "salt-solubility-exceptions"
+        },
+        {
+          "id": "4CH1:issue3:2.34:r4",
+          "verdict": "approved",
+          "judgement": "Na/K/NH₄ carbonate exceptions retained; intentional malformedNH₄₂CO₃ in correction task repaired to(NH₄)₂CO₃.",
+          "assessmentSectionId": "salt-solubility-exceptions"
+        },
+        {
+          "id": "4CH1:issue3:2.34:r5",
+          "verdict": "approved",
+          "judgement": "Na/K/Ca hydroxide exceptions taught; slightly solubleCa(OH)₂ contrasted with insolubleCu(OH)₂.",
+          "assessmentSectionId": "salt-solubility-exceptions"
+        },
+        {
+          "id": "4CH1:issue3:2.34:r6",
+          "verdict": "approved",
+          "judgement": "Complete ion-pair rules and finite solubility distinguished from zero dissolved ions in every condition.",
+          "assessmentSectionId": "salt-solubility-exceptions"
+        }
+      ],
+      "sectionSha256": {
+        "salt-solubility-rules": "9109bfbb43b7a93d8066187ac5f9ce72dd1bf67789eeb50bb2d8422db74589aa",
+        "salt-solubility-exceptions": "6d8a321f5b4d9f9b2b6c4671660629922cab8548e06c50b56690e60268939f55"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.35",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.35:r1",
+          "verdict": "approved",
+          "judgement": "Actual ammonia/water forward andreverse directions followed by proton changes, not static species labels.",
+          "assessmentSectionId": "acid-proton-transfer"
+        },
+        {
+          "id": "4CH1:issue3:2.35:r2",
+          "verdict": "approved",
+          "judgement": "H⁺ proton transfer explicitly separated from electron-transfer redox.",
+          "assessmentSectionId": "acid-proton-transfer"
+        },
+        {
+          "id": "4CH1:issue3:2.35:r3",
+          "verdict": "approved",
+          "judgement": "Water donorforward and OH⁻ acceptorreverse assessed with reaction-specific roles.",
+          "assessmentSectionId": "acid-proton-transfer"
+        }
+      ],
+      "sectionSha256": {
+        "acid-proton-transfer": "5ce730e025c4bb9d4c303fc30abee8be215c899e2ac7f9e1a27477e8015c95de"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.36",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.36:r1",
+          "verdict": "approved",
+          "judgement": "Water/NH₄⁺ proton donor roles assessed in opposite reaction directions.",
+          "assessmentSectionId": "acid-proton-transfer"
+        },
+        {
+          "id": "4CH1:issue3:2.36:r2",
+          "verdict": "approved",
+          "judgement": "NH₃/OH⁻ proton acceptance assessed, with actual gained hydrogen species.",
+          "assessmentSectionId": "acid-proton-transfer"
+        },
+        {
+          "id": "4CH1:issue3:2.36:r3",
+          "verdict": "approved",
+          "judgement": "NH₃+H⁺→NH₄⁺ independently conservesN1/H4 andcharge+1, not an electron loss half-equation.",
+          "assessmentSectionId": "acid-proton-transfer"
+        }
+      ],
+      "sectionSha256": {
+        "acid-proton-transfer": "5ce730e025c4bb9d4c303fc30abee8be215c899e2ac7f9e1a27477e8015c95de"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.37",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.37:r1",
+          "verdict": "approved",
+          "judgement": "OriginalZn diluteH₂SO₄ andMg diluteHCl products/salt formulas balance; supervised lighted-splint pop identifiesH₂ under stated conditions.",
+          "assessmentSectionId": "acid-metal-salts"
+        },
+        {
+          "id": "4CH1:issue3:2.37:r2",
+          "verdict": "approved",
+          "judgement": "Nitric-acid metal reactions expressly excluded; copper does not share the named dilute-acid hydrogen pattern.",
+          "assessmentSectionId": "acid-metal-salts"
+        },
+        {
+          "id": "4CH1:issue3:2.37:r3",
+          "verdict": "approved",
+          "judgement": "Own existingCuO with all three acids and newMg(OH)₂ withH₂SO₄/HNO₃ practice cover oxide/hydroxide transfer; saltanion/coefficients correct.",
+          "assessmentSectionId": "acid-base-salts"
+        },
+        {
+          "id": "4CH1:issue3:2.37:r4",
+          "verdict": "approved",
+          "judgement": "ExistingCa/Mg carbonate and newZnCO₃ nitricacid examples give salt/H₂O/CO₂; sulfate route qualified by reaction-layer effects.",
+          "assessmentSectionId": "acid-carbonate-salts"
+        },
+        {
+          "id": "4CH1:issue3:2.37:r5",
+          "verdict": "approved",
+          "judgement": "Cu²⁺/Mg²⁺ require charge-balanced chloride/sulfate/nitrate; actual bracketed nitrate and hydroxide equations independently checked.",
+          "assessmentSectionId": "acid-base-salts"
+        }
+      ],
+      "sectionSha256": {
+        "acid-metal-salts": "3c09596b584217bb0454f516d980e4aa4c75f512373e69ad9007890f9ac3709c",
+        "acid-base-salts": "5dcc9952ba9db0ebf2a80d8f442ed64ff57a1164a2b4be3b73ca92b325994def",
+        "acid-carbonate-salts": "5ee1ed4c4f352fd097ab125db3040430ac3552d3694d1828eb5d76ce1fbce0ee"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.38",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.38:r1",
+          "verdict": "approved",
+          "judgement": "Named oxide/hydroxide/ammonia base examples retained without all-oxides or compulsoryOHformula claims.",
+          "assessmentSectionId": "acid-base-types"
+        },
+        {
+          "id": "4CH1:issue3:2.38:r2",
+          "verdict": "approved",
+          "judgement": "CuO insolublebase versusNaOH solublebase/alkali explicitly classified.",
+          "assessmentSectionId": "acid-base-types"
+        },
+        {
+          "id": "4CH1:issue3:2.38:r3",
+          "verdict": "approved",
+          "judgement": "NH₃+H₂O⇌NH₄⁺+OH⁻ supplies aqueousOH⁻ via proton acceptance; molecularNH₄OH misconception rejected.",
+          "assessmentSectionId": "acid-base-types"
+        }
+      ],
+      "sectionSha256": {
+        "acid-base-types": "80800e7f83d773be9d4b8a22c371ee2267f0ca5751cd07419c094353ad8dbbc9",
+        "acid-base-salts": "5dcc9952ba9db0ebf2a80d8f442ed64ff57a1164a2b4be3b73ca92b325994def"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.39",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.39:r1",
+          "verdict": "approved",
+          "judgement": "Suitable soluble target selected from actual acidanion/insolublebase, with CuSO₄ example.",
+          "assessmentSectionId": "salt-insoluble-reactant"
+        },
+        {
+          "id": "4CH1:issue3:2.39:r2",
+          "verdict": "approved",
+          "judgement": "Adequate stirring/reactiontime before residual solid signals excess; insufficient base/immediate filtering rejected.",
+          "assessmentSectionId": "salt-insoluble-reactant"
+        },
+        {
+          "id": "4CH1:issue3:2.39:r3",
+          "verdict": "approved",
+          "judgement": "First filtration removes excess insoluble base and keeps dissolved-salt filtrate; dissolvedacid not filterable.",
+          "assessmentSectionId": "salt-insoluble-reactant"
+        },
+        {
+          "id": "4CH1:issue3:2.39:r4",
+          "verdict": "approved",
+          "judgement": "Controlled concentration, suitable crystallization, separation and gentle surface drying assessed; boilingcompletelydry rejected.",
+          "assessmentSectionId": "salt-insoluble-reactant"
+        },
+        {
+          "id": "4CH1:issue3:2.39:r5",
+          "verdict": "approved",
+          "judgement": "Grossmass/remainingmotherliquor impurities separated from intendedproduct recovery; dissolvedproduct/washing/transfer losses named.",
+          "assessmentSectionId": "salt-purity-recovery"
+        }
+      ],
+      "sectionSha256": {
+        "salt-insoluble-reactant": "14ba7e93f75f1fd5123b0c7ae228876b85e9fb5d672c6da92b0346f051243f5c",
+        "salt-method-choice": "6a8aadab021ac782f874ebdd2aeceb4f0ca058d776f9db2d6eb01dbdbc8511db",
+        "salt-purity-recovery": "ccc5907a09ac1f3b942843f76595bd1bcc1f23822a7d2729788e63c469b8bd6e"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.40C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.40C:r1",
+          "verdict": "approved",
+          "judgement": "Solubleacid/alkali route requires measured reacting amounts; ordinary filtering cannot remove dissolvedexcess.",
+          "assessmentSectionId": "salt-acid-alkali-preparation"
+        },
+        {
+          "id": "4CH1:issue3:2.40C:r2",
+          "verdict": "approved",
+          "judgement": "Reliable preliminary measured volumes repeatedwithoutindicator; retainingindicator contaminates finalsolution.",
+          "assessmentSectionId": "salt-acid-alkali-preparation"
+        },
+        {
+          "id": "4CH1:issue3:2.40C:r3",
+          "verdict": "approved",
+          "judgement": "Salt-appropriate concentration/crystallization/separation/drying retained; NaCl cooling limitation explained.",
+          "assessmentSectionId": "salt-acid-alkali-preparation"
+        },
+        {
+          "id": "4CH1:issue3:2.40C:r4",
+          "verdict": "approved",
+          "judgement": "Changingacidconcentration invalidates blindlyreused24.85cm³; endpoint/impurity uncertainty prevents colour-basedpurity guarantee.",
+          "assessmentSectionId": "salt-acid-alkali-preparation"
+        }
+      ],
+      "sectionSha256": {
+        "salt-acid-alkali-preparation": "49a14e3cb303df5b01babae23624198f15e62a492077b224705347776ff155d2",
+        "salt-method-choice": "6a8aadab021ac782f874ebdd2aeceb4f0ca058d776f9db2d6eb01dbdbc8511db"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.41C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.41C:r1",
+          "verdict": "approved",
+          "judgement": "Two suitable soluble ion sources required for newinsolubleproduct; precipitation depends on sufficient ionicconcentrations.",
+          "assessmentSectionId": "salt-precipitation"
+        },
+        {
+          "id": "4CH1:issue3:2.41C:r2",
+          "verdict": "approved",
+          "judgement": "Wantedprecipitate isresidue, notfiltrate; evaporatingwholemixture wouldretaindissolvedbyproducts.",
+          "assessmentSectionId": "salt-precipitation"
+        },
+        {
+          "id": "4CH1:issue3:2.41C:r3",
+          "verdict": "approved",
+          "judgement": "Washsmallwaterportions removesclinging solublecontamination; dryingisdistinct fromfiltration/washing.",
+          "assessmentSectionId": "salt-precipitation"
+        },
+        {
+          "id": "4CH1:issue3:2.41C:r4",
+          "verdict": "approved",
+          "judgement": "Finite solubility, excesswashing, incompleteformation, fineparticles andtransfer losses limitrecovery.",
+          "assessmentSectionId": "salt-precipitation"
+        }
+      ],
+      "sectionSha256": {
+        "salt-precipitation": "747ac870f1da6de0c6919247960ce19b7de51bbeffb2642b1eeec4577d9158b5",
+        "salt-method-choice": "6a8aadab021ac782f874ebdd2aeceb4f0ca058d776f9db2d6eb01dbdbc8511db"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.42",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.42:r1",
+          "verdict": "approved",
+          "judgement": "Own namedCuO/H₂SO₄ preparation with gentlesupervisedwarming, portions/stirring/time andblackexcess assessed.",
+          "assessmentSectionId": "salt-copper-hydrated"
+        },
+        {
+          "id": "4CH1:issue3:2.42:r2",
+          "verdict": "approved",
+          "judgement": "Keepbluefiltrate, sufficientlyconcentratebeforecooling andseparatecrystals; unconcentratedsolution failure explicitlyassessed.",
+          "assessmentSectionId": "salt-copper-hydrated"
+        },
+        {
+          "id": "4CH1:issue3:2.42:r3",
+          "verdict": "approved",
+          "judgement": "Blot/orgentlydrysurfaceliquid; strongheat towater-free changesintendedhydratedproduct.",
+          "assessmentSectionId": "salt-copper-hydrated"
+        },
+        {
+          "id": "4CH1:issue3:2.42:r4",
+          "verdict": "approved",
+          "judgement": "Surface/clingingmotherliquor differs fromstructural5H₂O; original12+.8 massnotpuredrycrystalmeasurement.",
+          "assessmentSectionId": "salt-copper-hydrated"
+        },
+        {
+          "id": "4CH1:issue3:2.42:r5",
+          "verdict": "approved",
+          "judgement": "Purity/hydration notprovedbycolour; approvedwarming, eyeprotection andcopperwaste specified. Structuredplan notperformedtrial.",
+          "assessmentSectionId": "salt-copper-hydrated"
+        }
+      ],
+      "sectionSha256": {
+        "salt-copper-hydrated": "a6090c200132e8c1157aff9aaf3314843fe895be9ea941a8584859ffe8cb7864",
+        "salt-purity-recovery": "ccc5907a09ac1f3b942843f76595bd1bcc1f23822a7d2729788e63c469b8bd6e"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:2.43C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:2.43C:r1",
+          "verdict": "approved",
+          "judgement": "SolublePb(NO₃)₂ andNa₂SO₄providecorrections;PbSO₄ targetisrequiredinsolublesulfateexception.",
+          "assessmentSectionId": "salt-lead-sulfate"
+        },
+        {
+          "id": "4CH1:issue3:2.43C:r2",
+          "verdict": "approved",
+          "judgement": "ActualmolecularPb(NO₃)₂+Na₂SO₄→PbSO₄+2NaNO₃andionicPb²⁺+SO₄²⁻→PbSO₄balance;Na⁺/NO₃⁻spectatorsidentified.",
+          "assessmentSectionId": "salt-lead-sulfate"
+        },
+        {
+          "id": "4CH1:issue3:2.43C:r3",
+          "verdict": "approved",
+          "judgement": "Keepprecipitate,residuewashingandconcretefilter-paperdryingunderapprovedsupervision assessed separately;nodirectflame.",
+          "assessmentSectionId": "salt-lead-sulfate"
+        },
+        {
+          "id": "4CH1:issue3:2.43C:r4",
+          "verdict": "approved",
+          "judgement": "Toxicleadhandling/separatewaste/nosink explicit;whitenessnotidentity/puritycertification;notperformedpreparation.",
+          "assessmentSectionId": "salt-lead-sulfate"
+        }
+      ],
+      "sectionSha256": {
+        "salt-lead-sulfate": "09fb9ef3152716cf1d4b19685b620a4e6f68c7421a8590c6f25b8ac7984004c8"
+      }
+    }
+  ]
+}

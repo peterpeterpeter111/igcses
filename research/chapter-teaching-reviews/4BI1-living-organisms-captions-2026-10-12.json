@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4BI1",
+  "subjectId": "biology",
+  "chapterId": "living-organisms",
+  "documentId": "4BI1-spec",
+  "specificationSha256": "9f474a0ef0e93ef3c3107b568956d163454cdb476bb2017189e8dd12c0d58cef",
+  "reviewDate": "2026-10-12",
+  "scope": "whole-authored-chapter-teaching",
+  "reviewer": "Codex source and whole authored-chapter teaching review",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "learnerTrialsPerformed": false,
+  "examReadinessCertified": false,
+  "sourceBoundary": {
+    "visuallyReviewed": true,
+    "wholeTopicPointInventoryReviewed": true,
+    "firstPdfPage": 17,
+    "lastPdfPage": 18,
+    "nextTopicPdfPage": 19,
+    "topicHeading": "1 The nature and variety of living organisms",
+    "nextTopicHeading": "2 Structure and functions in living organisms",
+    "judgement": "Visually reviewed PDF pages 17–18 contain the entire topic 1 point set 1.1–1.4; page 19 starts topic 2 at 2.1. Both 1B and 2B scope retained; local editorial requirements are not additional publisher points."
+  },
+  "sourcePointIds": [
+    "4BI1:issue3:1.1",
+    "4BI1:issue3:1.2",
+    "4BI1:issue3:1.3",
+    "4BI1:issue3:1.4"
+  ],
+  "inventorySources": [
+    {
+      "ref": "research/syllabus/4BI1-living-organisms.json",
+      "sha256": "eaa27e01d884104f9cbd10e4f850d0ddfc5182bbade4d8e02b48252aed850c3f"
+    }
+  ],
+  "noteRef": "content/notes/biology.json",
+  "noteSha256": "94cf6ea7000128dee2a6d72c15c8a77e5957058401e869666a3dd869e657fc20",
+  "goalDecisions": [
+    {
+      "goal": "Explain the shared life processes in context.",
+      "verdict": "approved",
+      "sectionIds": [
+        "life-process-observations",
+        "movement-and-internal-control",
+        "growth-development-and-lineages"
+      ],
+      "judgement": "Eight life characteristics assessed in original observed cases, including growth/development/reproduction distinctions."
+    },
+    {
+      "goal": "Distinguish respiration from breathing and excretion from egestion.",
+      "verdict": "approved",
+      "sectionIds": [
+        "life-process-observations"
+      ],
+      "judgement": "Respiration/breathing and metabolic excretion/egestion distinctions assessed by the origin and role of the material."
+    },
+    {
+      "goal": "Compare plants, animals, fungi and protoctists using several features.",
+      "verdict": "approved",
+      "sectionIds": [
+        "eukaryote-comparison-evidence",
+        "named-organism-comparisons",
+        "hyphae-and-external-digestion"
+      ],
+      "judgement": "Several structural/nutrition features and named examples assessed; root-cell, yeast and protoctist exceptions retained."
+    },
+    {
+      "goal": "Distinguish bacterial cells from viruses and explain what makes a pathogen.",
+      "verdict": "approved",
+      "sectionIds": [
+        "bacterial-structure-and-nutrition-evidence",
+        "viral-structure-host-and-scale",
+        "pathogen-name-and-cause-evidence"
+      ],
+      "judgement": "Cell versus particle organisation, genome/host dependence and pathogen/vector/disease distinctions assessed."
+    }
+  ],
+  "prerequisiteReview": {
+    "verdict": "approved",
+    "judgement": "One-cell/many-cell organisation is introduced as the prerequisite and revisited in eukaryote, fungus and bacterial comparisons. No unintroduced calculation technique is needed beyond stated unit conversion."
+  },
+  "coherenceReview": {
+    "verdict": "approved",
+    "judgement": "The source-order explanatory sections introduce life processes, eukaryotic groups, bacteria and pathogens/viruses, followed by labelled evidence lessons and worked/unfamiliar tasks. All 17 sections are linked to their exact reviewed source identities; invented models and data are explicitly distinguished from real microscopy."
+  },
+  "limitations": [
+    "Authored teaching only. No human examiner review, learner trials or active generative exam bank.",
+    "Source completeness is bounded to the stated publisher topic; other chapters and the past-paper archive remain incomplete."
+  ],
+  "captionReview": {
+    "scope": "Two origin labels only. Prior source boundaries, goals, prerequisites, sequence and readiness limitations retained unchanged.",
+    "previousReviewRef": "research/chapter-teaching-reviews/4BI1-living-organisms-2026-10-09.json",
+    "previousReviewSha256": "f7c8f56d994b4c7e1d0fa6b7adee139a08a9d8f69f56f50f712db139194571b0",
+    "changedSections": [
+      {
+        "noteRef": "content/notes/biology.json",
+        "partRef": "content/notes/biology.json",
+        "sectionId": "life-process-observations",
+        "beforeSha256": "45a1be0faff2ab680518deb6454e3190a6f47af03f396b421591c2d6ee78d450",
+        "afterSha256": "6ec82047fbfb893f41e9e4598ddfafb9e7d91b0957a9fbca4f131e2f6d641287",
+        "caption": "Invented life-process cases · supported evidence and its limits"
+      },
+      {
+        "noteRef": "content/notes/biology.json",
+        "partRef": "content/notes/biology.json",
+        "sectionId": "eukaryote-comparison-evidence",
+        "beforeSha256": "f7d97262461098a919007547e9b2ebc7b12cd8978e7bede7f337d88d6f73dc14",
+        "afterSha256": "2b225c7cafaad41312497e078821f222e193e0aa3f81a41c2496b4169cba2fb3",
+        "caption": "Invented organism models · feature combinations, not species identification"
+      }
+    ]
+  }
+}
