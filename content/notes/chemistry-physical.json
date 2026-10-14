@@ -136,8 +136,8 @@
         "Ignoring unequal initial temperatures."
       ],
       "practice": {
-        "question": "In a controlled, insulated model experiment, the reacting chemicals transfer thermal energy to the measured surroundings. Is the reaction exothermic or endothermic? Explain.",
-        "answer": "Exothermic: the reacting system transfers thermal energy to the surroundings.",
+        "question": "In a controlled, insulated model experiment, the reacting chemicals transfer thermal energy to the measured surroundings. Is the reaction exothermic or endothermic? Explain. In a separate matched-temperature model with no external cooling, the measured surroundings cool from 18 to 16 °C. Classify that change and name the transfer direction.",
+        "answer": "Exothermic: the reacting system transfers thermal energy to the surroundings. The separate cooling change supports endothermic reaction: thermal energy passes from the measured surroundings to the reacting system under the stated controls.",
         "explanation": "Classify the direction of energy transfer. Needing an initial input to start does not by itself make a reaction endothermic."
       }
     },
@@ -210,7 +210,12 @@
         "Using the final temperature instead of ΔT.",
         "Treating 1,672 J as 1,672 kJ.",
         "Assigning positive reaction ΔH to a warming solution."
-      ]
+      ],
+      "practice": {
+        "question": "An original model uses 75.0 g of solution, c = 4.00 J g⁻¹ °C⁻¹, cooling from 23.0 to 19.0 °C. Calculate the solution’s signed energy change and the reaction’s energy change if no other heat transfer occurs.",
+        "answer": "ΔT = 19.0 − 23.0 = −4.0 °C. Q(solution) = 75.0 × 4.00 × (−4.0) = −1200 J. The reaction gains +1200 J, or +1.2 kJ, under the stated model.",
+        "explanation": "Use the mass of the material whose temperature is measured. A negative solution change and positive reaction change conserve energy; cooling supports an endothermic reaction."
+      }
     },
     {
       "id": "enthalpy-amount",
@@ -242,7 +247,12 @@
         "Dividing by the amount initially added in excess.",
         "Losing the factor of 1,000.",
         "Reporting a value without specifying its molar basis."
-      ]
+      ],
+      "practice": {
+        "question": "In an invented constant-pressure calorimeter, the surroundings lose 900 J while 0.0250 mol of reactant A changes completely. Estimate ΔH per mole of A, including its sign and units. State why this is an estimate.",
+        "answer": "Q(reaction) = +900 J = +0.900 kJ. ΔH = +0.900 / 0.0250 = +36 kJ mol⁻¹ of A. This is endothermic. The estimate assumes the stated heat accounts for the reaction and neglects unmeasured heat transfers and calorimeter heat capacity.",
+        "explanation": "Convert joules to kilojoules once, use the amount that actually reacts, and specify the molar basis. These conditions alone do not establish a standard enthalpy."
+      }
     },
     {
       "id": "neutralization-calorimeter",
@@ -278,7 +288,32 @@
         "Using 30 g rather than the combined 60 g.",
         "Averaging unequal-volume initial temperatures without checking heat capacities.",
         "Calling the model result a performed practical."
-      ]
+      ],
+      "practice": {
+        "question": "A hypothetical cup receives 20.0 cm³ of 1.00 mol dm⁻³ HCl and 30.0 cm³ of 1.00 mol dm⁻³ NaOH, both initially 21.0 °C. The maximum is 25.0 °C. Assume combined density 1.00 g cm⁻³, c = 4.00 J g⁻¹ °C⁻¹ and negligible other heat transfers. Calculate ΔH per mole of water formed. Which reagent remains?",
+        "answer": "Combined mass = 50.0 g; ΔT = 4.0 °C; Q(solution) = 50.0 × 4.00 × 4.0 = +800 J. HCl provides 0.0200 mol and NaOH 0.0300 mol. The 1:1 reaction forms 0.0200 mol water and leaves 0.0100 mol NaOH. ΔH = −0.800 / 0.0200 = −40 kJ mol⁻¹ of water formed.",
+        "explanation": "Use the total warmed solution mass but the limiting reacting amount. The matched initial temperatures avoid an unsupported baseline average; real measurements also need heat-loss and apparatus assumptions."
+      },
+      "practical": {
+        "apparatus": [
+          "Insulated cup, lid with thermometer opening, thermometer, separate stirrer and suitable volume-measuring apparatus; approved dilute acid and alkali."
+        ],
+        "method": [
+          "Use an approved small-scale procedure. Measure both volumes and initial temperatures; equilibrate them to a common initial temperature before mixing.",
+          "Mix in the insulated cup, replace the lid, stir consistently and record the maximum or a suitable temperature-time series. Repeat independent runs.",
+          "Use combined solution mass with explicitly justified density/specific-heat assumptions. Calculate the reacting amount from concentration, volume and balanced stoichiometry."
+        ],
+        "variables": [
+          "For comparisons define the independent variable; hold other concentrations/volumes, initial temperature, cup, mixing and temperature-recording procedure fixed as appropriate."
+        ],
+        "safety": [
+          "Wear eye protection and use teacher-approved dilute quantities. Avoid splashes; use a separate stirrer rather than stirring with a fragile thermometer. Follow approved spill and disposal procedures."
+        ],
+        "quality": [
+          "A lid/insulation reduces but does not eliminate heat exchange. Measure rather than assume initial temperatures; unequal thermal capacities do not justify a simple average.",
+          "Account for the apparatus heat capacity and environmental loss as limitations. Repeats measure variation, not removal of a consistent bias. No practical has been performed here."
+        ]
+      }
     },
     {
       "id": "dissolving-displacement",
@@ -311,7 +346,12 @@
         "Assuming dissolving is always exothermic.",
         "Using all excess metal as though it reacted.",
         "Ignoring heat loss during a slow change."
-      ]
+      ],
+      "practice": {
+        "question": "Two independent invented experiments: (a) 4.00 g ammonium nitrate dissolves completely in 96.0 g water in a cup and cools from 22.0 to 19.0 °C. Use the 100.0 g solution mass and c = 4.00 J g⁻¹ °C⁻¹. Give the signed solution and dissolving energy changes. (b) Excess zinc reacts with 25.0 cm³ of 0.200 mol dm⁻³ CuSO₄ and the measured surroundings gain 700 J. Estimate ΔH per mole of CuSO₄ reacted.",
+        "answer": "(a) Q(solution) = 100.0 × 4.00 × (−3.0) = −1200 J; dissolving gains +1200 J = +1.2 kJ under the model. (b) Zn + CuSO₄ → ZnSO₄ + Cu. CuSO₄ amount = 0.0250 × 0.200 = 0.00500 mol, which limits the 1:1 reaction. ΔH = −0.700 / 0.00500 = −140 kJ mol⁻¹ of CuSO₄ reacted.",
+        "explanation": "These are model results, not instructions for an unsupervised experiment. Part (a) explicitly uses solution rather than solvent mass. In (b), the initial amount of excess zinc is not the amount that reacts; estimates assume the stated heat accounts for the change."
+      }
     },
     {
       "id": "fuel-calorimeter",
@@ -338,7 +378,7 @@
         "steps": [
           "ΔT = 18°C; Q(water) = 100 × 4.18 × 18 = 7,524 J.",
           "Estimated fuel amount = 0.40 ÷ 46 = 0.00870 mol.",
-          "ΔH estimate = −7.524 ÷ (0.40/46) ≈ −865 kJ mol⁻¹.",
+          "ΔH estimate = −7.524 ÷ (0.40/46) ≈ −865 kJ mol⁻¹ before rounding; about −8.7 × 10² kJ mol⁻¹ to two significant figures.",
           "This captures only the measured water heating under the assumptions."
         ],
         "explanation": "The heat recipient and burned reactant use different masses."
@@ -347,7 +387,12 @@
         "Using 0.40 g in the water Q calculation.",
         "Equating every gram of burner mass loss with burned fuel without qualification.",
         "Claiming insulation guarantees complete heat capture."
-      ]
+      ],
+      "practice": {
+        "question": "An original model burn loses 0.50 g of a fuel with molar mass 32.0 g mol⁻¹. It heats 150 g water from 20.0 to 30.0 °C; use c = 4.00 J g⁻¹ °C⁻¹. Estimate the energy change per mole of fuel and explain one reason a real open-flame result may be less negative than a complete-combustion value.",
+        "answer": "Q(water) = 150 × 4.00 × 10.0 = 6000 J = 6.0 kJ. Estimated burned amount = 0.50 / 32.0 = 0.015625 mol. ΔH estimate = −6.0 / 0.015625 = −384 kJ mol⁻¹ before rounding, about −3.8 × 10² kJ mol⁻¹ to two significant figures. Heat escaping without warming the water can reduce the captured energy per mole.",
+        "explanation": "The estimate additionally assumes mass loss represents fuel burned; evaporation can invalidate that assumption. The water mass belongs in Q = mcΔT; fuel mass determines the reacting amount."
+      }
     },
     {
       "id": "calorimetry-evaluation",
@@ -381,7 +426,12 @@
         "Using only one reading’s uncertainty for a difference.",
         "Calling the cup’s heat capacity exactly zero.",
         "Saying repeats automatically remove heat loss."
-      ]
+      ],
+      "practice": {
+        "question": "Two model experiments use thermometers with worst-case uncertainty ±0.2 °C for each temperature reading. A warms by 2.0 °C and B by 8.0 °C. Find the worst-case percentage uncertainty in each temperature rise. Would repeating measurements remove a consistent heat loss to the room?",
+        "answer": "Worst-case uncertainty in a difference = ±(0.2 + 0.2) = ±0.4 °C. A: 0.4 / 2.0 × 100 = 20%; B: 0.4 / 8.0 × 100 = 5%. Repeating can characterize random variation but does not remove a consistent heat-loss bias.",
+        "explanation": "This is the stated worst-case sum, not a statistical standard uncertainty. A larger rise reduces this percentage contribution but does not guarantee a more accurate molar enthalpy or justify unsafe heating."
+      }
     },
     {
       "id": "energy-levels",
@@ -418,6 +468,11 @@
         "src": "/diagrams/chemistry-energy-levels.svg",
         "alt": "Original paired energy-level sketches: exothermic products are lower than reactants with a downward negative delta H arrow; endothermic products are higher with an upward positive delta H arrow.",
         "caption": "Schematic levels on the same reaction basis. The vertical axis is energy; no activation barrier is shown in this level comparison."
+      },
+      "practice": {
+        "question": "On paper, draw two separate energy-level diagrams with energy on the vertical axis: X has reactants at 15 and products at 55 kJ mol⁻¹ on the stated reaction basis; Y has reactants at 90 and products at 30. Label both levels, add a vertical overall-energy-change arrow and calculate ΔH. Classify each. Do not add an activation-energy peak to these level diagrams.",
+        "answer": "X: labelled product line above reactant line; an upward arrow from 15 to 55; ΔH = +40 kJ mol⁻¹, endothermic. Y: labelled product line below reactant line; a downward arrow from 90 to 30; ΔH = −60 kJ mol⁻¹, exothermic. Each vertical axis is energy; horizontal placement separates the labelled states and is not elapsed time.",
+        "explanation": "Check the drawn geometry as well as the subtraction products minus reactants. An overall energy difference is not an activation barrier; the reverse changes have opposite signs on the same reaction basis."
       }
     },
     {
@@ -452,7 +507,12 @@
         "Saying breaking bonds releases energy.",
         "Counting three N–H bonds for two NH₃ molecules.",
         "Treating average bond-energy estimates as exact standard enthalpies."
-      ]
+      ],
+      "practice": {
+        "question": "For H₂(g) + Cl₂(g) → 2HCl(g), supplied model bond energies are H–H 436, Cl–Cl 242 and H–Cl 431 kJ mol⁻¹ of bonds. State which processes require/release energy, count bonds and estimate ΔH per equation as written and per mole of HCl formed.",
+        "answer": "Breaking one H–H and one Cl–Cl requires 436 + 242 = 678 kJ. Forming two H–Cl releases 2 × 431 = 862 kJ. ΔH = broken − formed = 678 − 862 = −184 kJ per mole of reaction as written; divide by two to give −92 kJ mol⁻¹ of HCl formed.",
+        "explanation": "Bond breaking is endothermic and bond formation exothermic. Two product molecules require two H–Cl bonds. Supplied average gas-phase bond energies provide an approximate overall enthalpy, with an explicit reaction basis."
+      }
     },
     {
       "id": "rate-measure",
@@ -484,7 +544,12 @@
         "Dividing 36 by 30 when asked for the later interval.",
         "Using a reciprocal time without a consistent endpoint.",
         "Blocking the outlet to a gas-producing flask."
-      ]
+      ],
+      "practice": {
+        "question": "Invented gas readings are 8 cm³ at 5 s and 38 cm³ at 25 s. Calculate the average rate over this interval. In separate matched runs a fixed 20 cm³ endpoint takes 10 s or 16 s: which is faster, and does 1/time itself have units mol s⁻¹?",
+        "answer": "Interval rate = (38 − 8) / (25 − 5) = 30 / 20 = 1.5 cm³ s⁻¹. The 10 s run is faster for the same endpoint and gas conditions. Its 1/time proxy is 0.10 s⁻¹, compared with 0.0625 s⁻¹ for 16 s; these are not automatically mol s⁻¹.",
+        "explanation": "Subtract both starting readings for an interval. A fixed-volume comparison requires matched gas conditions; converting to amount rate needs additional gas-amount information."
+      }
     },
     {
       "id": "rate-curves",
@@ -523,6 +588,11 @@
         "src": "/diagrams/chemistry-rate-curves.svg",
         "alt": "Original schematic gas volume versus time: a faster curve is initially steeper than a slower curve, and both approach the same final volume when limiting amounts and gas conditions match.",
         "caption": "A schematic comparison with equal final amounts under the stated assumptions. Curve slope shows rate; plateau height shows collected amount. These are not measured results."
+      },
+      "practice": {
+        "question": "A model gas-volume graph has a tangent at t = 15 s that passes through (5 s, 12 cm³) and (25 s, 52 cm³). Find the instantaneous rate there. Two matched runs with the same limiting amount and excess other reagent both plateau at 64 cm³, one sooner: compare rate and final amount. Give one apparatus fault that can create a false plateau.",
+        "answer": "Tangent gradient = (52 − 12) / (25 − 5) = 2.0 cm³ s⁻¹. The sooner-plateau run reaches the same final measured gas amount more quickly under matched gas temperature/pressure. A jammed syringe or one at its capacity could cause a false plateau.",
+        "explanation": "The two points are on the tangent, not necessarily observations on the curve. A chord through measured curve points gives an interval average. A plateau alone does not identify a limiting reactant or prove complete reaction."
       }
     },
     {
@@ -557,7 +627,12 @@
         "Saying smaller chips contain more total carbonate for equal pure masses.",
         "Claiming crushing raises every particle’s kinetic energy throughout the experiment.",
         "Failing to keep acid conditions constant."
-      ]
+      ],
+      "practice": {
+        "question": "Two 2.00 g samples of the same calcium carbonate use equal volumes of excess dilute HCl at the same concentration and temperature; one has smaller chips. Predict the initial-rate and final-CO₂ differences and explain the particle reason. Is equal mass alone enough for a fair comparison?",
+        "answer": "Smaller chips expose more surface, allowing more relevant collisions at the solid per unit time and a faster initial rate. The same carbonate amount gives the same final CO₂ amount if both react fully and gas conditions/collection are matched. Equal mass alone is insufficient: control acid volume/concentration, temperature, material, mixing and apparatus; define the chip-size ranges.",
+        "explanation": "Breaking a sample into smaller pieces changes accessible area, not its total amount or particles’ kinetic energy at the same temperature. Acid excess is a necessary stated condition for this final-yield argument."
+      }
     },
     {
       "id": "rate-concentration-pressure",
@@ -591,7 +666,12 @@
         "Using temperature reasoning for concentration.",
         "Treating inert-gas pressure as reacting-gas compression.",
         "Promising an exact rate ratio without supporting data."
-      ]
+      ],
+      "practice": {
+        "question": "At constant temperature, compare (a) doubling a reacting gas’s concentration by halving its container volume, and (b) adding an inert gas while holding the original volume fixed. Which increases the reacting particles per unit volume? Explain the expected collision effect and whether either condition proves an exact doubled reaction rate.",
+        "answer": "(a) Compression doubles the reacting particles per unit volume, increasing their collision frequency and generally increasing rate for the relevant gas reaction. (b) Inert addition at fixed volume leaves the reacting gas concentration unchanged, so raised total pressure alone does not imply that collision-rate increase. Neither statement establishes an exact factor of two for reaction rate.",
+        "explanation": "The average kinetic energy is unchanged at the same temperature. Rate law details are not supplied. A more concentrated solution likewise gives more relevant particles per unit volume, rather than necessarily more energy per particle."
+      }
     },
     {
       "id": "rate-temperature",
@@ -625,7 +705,12 @@
         "Saying activation energy itself falls when the mixture is warmed.",
         "Saying all particles gain the same energy.",
         "Ignoring gas expansion in a gas-volume comparison."
-      ]
+      ],
+      "practice": {
+        "question": "Design a fair comparison of the same solution reaction at 20 °C and 30 °C using a suitable approved water bath and a fixed gas-volume endpoint. State controls and the collision explanation. Must 30 °C give exactly twice the rate or a lower activation energy?",
+        "answer": "Bring the reactants to each chosen temperature before mixing and record the actual reaction temperature. Keep concentrations, volumes, solid surface if present, gas apparatus, mixing and endpoint/timing protocol matched; repeat independent runs. At higher temperature particles have greater average kinetic energy and a larger fraction of collisions can overcome the barrier; collision frequency can also increase. Neither exactly doubled rate nor a lower barrier follows.",
+        "explanation": "The same pathway has the same activation barrier; heating changes the particle energy distribution. Gas volume changes with temperature, so compare at common collection conditions or account for that limitation. Use approved temperatures/quantities rather than an improvised heating procedure."
+      }
     },
     {
       "id": "catalyst-model",
@@ -660,7 +745,12 @@
         "Calling every added solid a catalyst.",
         "Saying a catalyst supplies activation energy.",
         "Saying the catalyst must remain uninvolved at every intermediate step."
-      ]
+      ],
+      "practice": {
+        "question": "A solid makes peroxide produce oxygen sooner. A student says this proves the solid is a catalyst and supplies the reaction’s energy. What extra evidence and corrected explanation are needed?",
+        "answer": "A suitable catalyst provides an alternative pathway with lower activation energy at the same temperature. It can participate and be regenerated, remaining chemically unchanged overall. Faster gas production alone does not establish unchanged identity: compare against a no-solid control and investigate whether the solid was consumed or chemically changed. Recovering the same mass alone is insufficient proof of unchanged chemical identity.",
+        "explanation": "The catalyst does not supply the net reaction energy or change the reactant–product enthalpy difference. A consumed extra reactant could also change a gas trace, so separate rate evidence from catalyst identification."
+      }
     },
     {
       "id": "reaction-profile",
@@ -697,6 +787,11 @@
         "src": "/diagrams/chemistry-reaction-profile.svg",
         "alt": "Original hypothetical exothermic profile: reactants at 70, products at 25, uncatalysed peak at 120 and catalytic peak at 95 kJ per mole on the same basis. Forward barriers 50 and 25; delta H minus 45 for both.",
         "caption": "Invented scale and simplified pathways. A lower barrier changes rate while the reactant and product levels remain unchanged; progress is not elapsed time."
+      },
+      "practice": {
+        "question": "Draw two reaction-profile curves on the same energy-versus-reaction-progress axes: reactants 20, products 50, uncatalysed peak 100 and catalysed peak 70 kJ mol⁻¹ on one reaction basis. Label ΔH and both forward activation energies. Is this exothermic? Does the catalyst change the endpoints?",
+        "answer": "Both curves start at 20 and end at 50. The uncatalysed peak is 100, the catalysed peak 70. Forward Eₐ values are 100 − 20 = 80 and 70 − 20 = 50 kJ mol⁻¹; ΔH = 50 − 20 = +30 kJ mol⁻¹, endothermic. Draw ΔH upwards between endpoint levels and each Eₐ upwards from the reactant level to its peak. The endpoints and ΔH are unchanged.",
+        "explanation": "The lower catalytic peak changes the barrier, not the overall energy balance. Reaction progress is not a time axis; even an endothermic curve has a positive forward activation barrier."
       }
     },
     {
@@ -730,7 +825,33 @@
         "Writing H₂ rather than CO₂ as the product.",
         "Assuming collection over water captures every CO₂ molecule.",
         "Using different carbonate masses in a chip-size comparison."
-      ]
+      ],
+      "practice": {
+        "question": "Plan two separate marble-chip/HCl gas-syringe comparisons: one changes chip size, the other acid concentration. State what changes, what stays fixed, the gas/equation and how to avoid mistaking gas-collection faults for rate differences. When may final volumes be compared as equal?",
+        "answer": "Use CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g). In the size series vary defined chip-size range with equal carbonate mass and fixed acid concentration/volume. In the concentration series vary acid concentration with equal carbonate mass and chip-size range and fixed solution volume. Control material, temperature, mixing, apparatus and timing in both. Collect gas volume at measured times, check connections and syringe capacity/free movement, begin comparable collection at mixing, and repeat independent runs. Keep a free gas path; do not use a rigid sealed outlet. Same final volume is predicted only when the same carbonate amount reacts completely, acid is in excess in every run, and collection/gas conditions match.",
+        "explanation": "Changing size and concentration together confounds the comparison. An initial gradient or fixed-volume time compares rate; it does not by itself establish complete collection or a particular limiting reagent. These are supervised planning notes, not performed trials."
+      },
+      "practical": {
+        "apparatus": [
+          "Approved marble-chip samples, dilute HCl, flask with bung and freely moving gas syringe of adequate capacity, suitable balance/volume measures, thermometer and timer."
+        ],
+        "method": [
+          "Choose one variable per series: defined chip-size ranges at fixed acid concentration, or acid concentration with matched chip-size range.",
+          "Use equal carbonate masses, measured acid volumes and controlled temperature. Use approved mixing/collection arrangements that start timing and gas collection consistently from mixing.",
+          "Record CO₂ volume at intervals or time to a common endpoint. Repeat independent runs and compare early gradients or matched endpoint rates."
+        ],
+        "variables": [
+          "Control carbonate material/mass, acid volume, temperature, mixing, apparatus and timing; additionally fix acid concentration for the size series or chip-size range for the concentration series."
+        ],
+        "safety": [
+          "Teacher-approved dilute acid and small quantities; eye protection, secure apparatus and approved disposal. Use supplied chip sizes rather than unsafe improvised crushing.",
+          "Keep the gas route unblocked and syringe free to move with spare capacity. Never heat or operate a rigidly sealed gas-producing arrangement."
+        ],
+        "quality": [
+          "Check connections, leaks, collection delay, syringe movement and capacity. CO₂ can dissolve in water if collected over water.",
+          "Equal final yields require the same limiting carbonate amount to react completely, excess acid throughout and matched gas/collection conditions. No trial has been performed here."
+        ]
+      }
     },
     {
       "id": "peroxide-solids",
@@ -764,7 +885,33 @@
         "Writing H₂ as the decomposition gas.",
         "Using a lighted-pop test for oxygen.",
         "Ignoring changes in temperature or solid particle size."
-      ]
+      ],
+      "practice": {
+        "question": "An original model collects the same 18 cm³ oxygen endpoint in 12 s with solid A, 20 s with B and 60 s without solid. Calculate the average endpoint rates, describe a fair comparison of different solids, and state what the results cannot prove. Name the decomposition equation and gas test.",
+        "answer": "Rates to the matched endpoint are 18/12 = 1.5, 18/20 = 0.90 and 18/60 = 0.30 cm³ s⁻¹. Use matched peroxide concentration/volume/temperature, apparatus, timing and mixing, with specified equal solid mass and comparable size ranges plus independent repeats and a no-solid control. 2H₂O₂(aq) → 2H₂O(l) + O₂(g); a separate supervised oxygen sample relights a glowing splint. The results show these samples reach that endpoint at different rates, not equal active-site counts or unchanged chemical identity.",
+        "explanation": "Equal mass is not equal catalytic surface across different materials. Use approved dilute peroxide and small quantities, allow for warming and a free gas outlet; do not use concentrated peroxide or seal a rigid gas-producing vessel."
+      },
+      "practical": {
+        "apparatus": [
+          "Teacher-approved dilute peroxide, approved solid samples such as manganese(IV) oxide, flask and freely moving gas syringe, suitable mass/volume measures, timer and thermometer."
+        ],
+        "method": [
+          "Compare specified equal masses and comparable size ranges of different approved solids using matched peroxide volume/concentration and initial temperature. Include a no-solid control.",
+          "Use consistent mixing, collection and timing from the reaction start; collect oxygen volume at intervals or time a common volume endpoint. Repeat independent runs.",
+          "If required, identify a separate small oxygen sample by its supervised glowing-splint relight test, without introducing a splint into the reaction apparatus."
+        ],
+        "variables": [
+          "Vary solid identity; hold peroxide conditions, sample mass/size range, temperature, gas apparatus, mixing and timing protocol fixed."
+        ],
+        "safety": [
+          "Use only approved dilute peroxide and small quantities, with eye protection and suitable handling of oxidising solution/solid dust. The reaction can warm.",
+          "Maintain an unblocked gas path and syringe capacity/free movement. Do not use concentrated peroxide or rigidly seal a gas-producing vessel. Follow approved disposal."
+        ],
+        "quality": [
+          "Different solids of equal mass need not expose equal numbers of active sites. Compare these specified samples, not universal intrinsic catalytic activity.",
+          "Use temperature records, independent repeats and the no-solid comparison; faster gas production alone does not prove the solid remains chemically unchanged. No trial has been performed here."
+        ]
+      }
     },
     {
       "id": "rate-evidence",
@@ -798,7 +945,12 @@
         "Calling every flat curve complete reaction.",
         "Repeating a leaking setup and calling the bias removed.",
         "Claiming invented results were measured."
-      ]
+      ],
+      "practice": {
+        "question": "In a model comparison, run A is connected to its syringe 4 s after mixing, whereas B collects from mixing. Both show a later flat trace. Can the recorded traces alone rank the true initial rates or prove both reactions finished? Propose repairs.",
+        "answer": "No. A can lose early gas and miss the initial-rate interval. A flat trace may also reflect a leak, jam or collection-capacity limit rather than finished reaction. Establish comparable collection from mixing, check a free gas path and syringe movement/capacity/connections, use the same timing and mixing protocol and repeat independent runs under matched conditions.",
+        "explanation": "Do not delete an unexpected reading solely because it is inconvenient. Record the suspected fault, investigate and repeat; repeats alone do not remove a consistent delay or leak."
+      }
     },
     {
       "id": "reversible-arrow",
@@ -815,7 +967,7 @@
       ],
       "paragraphs": [
         "A reversible reaction can form products from reactants and form the original reactants again from those products under suitable conditions. The symbol ⇌ shows the two directions. When discussing the forward reaction, read the equation left to right; the reverse direction swaps those roles.",
-        "Reversibility does not mean equal amounts must be present or that the mixture instantly reaches equilibrium. It also does not mean an open demonstration must retain every product. Conditions and escape of substances affect what is observed.",
+        "Reversibility does not mean equal amounts must be present or that an open demonstration retains every product. Conditions and escape of substances affect what is observed. Optional Paper 2C connection: a reversible arrow alone also does not establish that the mixture has reached dynamic equilibrium; its conditions are taught in 3.19C–3.20C.",
         "If the forward chemical change is endothermic, the reverse change is exothermic on the corresponding basis, and vice versa. Returning a substance to its starting chemical form is different from merely recovering an unchanged solid by filtration."
       ],
       "example": {
@@ -831,7 +983,12 @@
         "Reading ⇌ as a one-way arrow.",
         "Assuming both concentrations must be equal.",
         "Calling filtration a reverse chemical reaction."
-      ]
+      ],
+      "practice": {
+        "question": "An invented chemical equation is P ⇌ Q. A student sees Q forming and claims that this arrow means equal amounts of P and Q must be present and that only P can change into Q. Correct both claims. State the reverse energy change if P → Q is +18 kJ on the stated reaction basis.",
+        "answer": "The arrow means P can form Q and Q can form P under suitable conditions. It does not specify equal amounts or describe only a one-way change. Q → P has an energy change of −18 kJ on the corresponding basis.",
+        "explanation": "Read both possible chemical directions. The reverse sign changes while the corresponding energy magnitude is the same. The separate dynamic-equilibrium rate criteria are Paper 2C extension material, not required to answer this task."
+      }
     },
     {
       "id": "copper-water-reverse",
@@ -847,22 +1004,27 @@
       "paragraphs": [
         "The required hydration example is blue hydrated copper(II) sulfate and white anhydrous copper(II) sulfate. In a supervised demonstration, controlled heating removes water of crystallisation; adding water to the cooled anhydrous material can restore the blue hydrated form and release energy.",
         "A balanced model for the pentahydrate is CuSO₄·5H₂O(s) ⇌ CuSO₄(s) + 5H₂O. Heating favours dehydration in the demonstration; the forward water may leave as vapour. The observation must not be described as simply melting blue crystals into a white liquid. The reverse involves hydration, and using a large excess of water can instead produce a blue solution.",
-        "The usual open-tube demonstration shows a reversible chemical change, not a sealed dynamic-equilibrium experiment. Copper salts require approved handling and disposal. Controlled heating is important: more severe heating can lead to other changes, so this explanation is not permission to heat an unknown indefinitely."
+        "Copper salts require approved handling and disposal. Controlled heating is important: more severe heating can lead to other changes, so this explanation is not permission to heat an unknown indefinitely. Optional Paper 2C connection: the open-tube demonstration shows reversibility but is not a sealed dynamic-equilibrium experiment; water can escape, and equal forward/reverse rates have not been established."
       ],
       "example": {
-        "question": "Why is heating hydrated copper sulfate in an open tube not by itself proof that dynamic equilibrium has been established?",
+        "question": "Why does a blue appearance after adding a large excess of water to anhydrous copper(II) sulfate not prove that pure dry hydrated crystals were obtained?",
         "steps": [
-          "Water can escape from the open tube.",
-          "The observed colour change demonstrates dehydration.",
-          "It does not show retained products and equal forward/reverse reaction rates."
+          "A large water excess can dissolve copper(II) sulfate to give a blue solution.",
+          "Blue solution is not the same observation as isolated dry hydrated crystals.",
+          "Hydration and the physical form/purity of the recovered sample must be distinguished."
         ],
-        "explanation": "Separate evidence of reversibility from evidence of equilibrium."
+        "explanation": "Use the physical state and conditions as well as the colour; the reverse chemical change can occur without establishing pure dry crystals."
       },
       "commonMistakes": [
         "Calling the white product hydrated copper sulfate.",
         "Ignoring water leaving the system.",
         "Assuming any blue appearance proves pure dry crystals."
-      ]
+      ],
+      "practice": {
+        "question": "In a teacher-controlled model demonstration blue hydrated copper(II) sulfate gives a white solid on controlled heating. After cooling, a small suitable addition of water can restore blue hydrated material. Name both solids and changes, explain why excess water complicates the blue observation, and state what can leave the open heating tube.",
+        "answer": "Blue CuSO₄·5H₂O loses water of crystallisation to form white anhydrous CuSO₄; hydration can reverse the change and release energy. A large water excess can give a blue solution rather than establishing pure dry hydrated crystals. Water vapour can leave the open heated tube.",
+        "explanation": "Use approved copper-salt handling/disposal and controlled teacher heating. Colour change is not simply melting into a white liquid; every blue sample does not establish crystal purity. No Paper 2C equilibrium-rate criterion is needed for this task."
+      }
     },
     {
       "id": "ammonium-reverse",
@@ -894,7 +1056,12 @@
         "Writing chlorine gas rather than hydrogen chloride.",
         "Calling the white deposit white ammonia gas.",
         "Heating a sealed tube to retain gases."
-      ]
+      ],
+      "practice": {
+        "question": "A teacher-controlled ammonium chloride demonstration gives a white deposit in a cooler region. Explain the chemical products in the hot region and the deposit, giving the balanced reversible equation. Why are “chlorine gas”, “white ammonia gas” and heating a rigidly sealed tube inappropriate descriptions or methods?",
+        "answer": "NH₄Cl(s) ⇌ NH₃(g) + HCl(g). The hot-region products are ammonia and hydrogen chloride; they can recombine to form white solid ammonium chloride in the cooler region. HCl is not Cl₂, and the white deposit is solid NH₄Cl, not white ammonia gas. Irritating gases and pressure build-up require an approved teacher-controlled demonstration with a suitable gas path, not a heated rigid sealed tube.",
+        "explanation": "The equation conserves N₁H₄Cl₁. Cooling and re-formation support the reverse chemical change; transport through an open apparatus is not a constant-temperature closed-equilibrium measurement."
+      }
     },
     {
       "id": "dynamic-equilibrium",
@@ -927,7 +1094,12 @@
         "Saying both reactions stop.",
         "Equating a closed system with a perfectly insulated system.",
         "Demanding equal reactant and product amounts."
-      ]
+      ],
+      "practice": {
+        "question": "At maintained temperature in a closed model system, a concentration graph levels off at [A] = 0.60 and [B] = 0.15 mol dm⁻³. A separate particle-rate model shows continuing equal forward and reverse rates. Describe the two graph types, decide whether unequal concentrations rule out equilibrium, and explain what closed means.",
+        "answer": "The concentration curves become horizontal at their different constant values. The forward/reverse rate curves approach the same continuing rate. Unequal concentrations do not rule out dynamic equilibrium: equality applies to opposing rates. Closed means relevant substances cannot escape; energy can still cross the boundary while temperature is maintained.",
+        "explanation": "The separate rate evidence establishes continuing reaction in this model. A lone plateau or unchanged appearance would not prove that both directions continue at equal rates, and the concept is not an instruction to seal a heated demonstration."
+      }
     },
     {
       "id": "equilibrium-catalyst",
@@ -959,7 +1131,12 @@
         "Saying a catalyst always increases equilibrium yield.",
         "Claiming it only accelerates the forward direction.",
         "Comparing an unfinished run with an equilibrium run."
-      ]
+      ],
+      "practice": {
+        "question": "Two otherwise matched equilibrium systems begin from the same reactants at maintained temperature. At 30 s a catalysed run contains more product; after both have reached equilibrium their product concentrations match. Explain both observations and predict the effect of adding the same catalyst to a mixture starting from products.",
+        "answer": "The catalyst enables both directions and speeds the approach to the same equilibrium position. A 30 s difference can be a rate difference before equilibrium, not a different final yield. Starting from products, the reverse approach is also faster; the final equilibrium composition remains the same under the same maintained conditions.",
+        "explanation": "A catalyst changes the route and activation barriers, not the overall reactant–product energy difference. Compare equilibrium compositions only after each system has actually reached equilibrium."
+      }
     },
     {
       "id": "equilibrium-temperature",
@@ -991,7 +1168,12 @@
         "Always choosing the exothermic direction when heating.",
         "Confusing a faster approach with a greater equilibrium yield.",
         "Claiming the shift means complete conversion."
-      ]
+      ],
+      "practice": {
+        "question": "For an invented gas equilibrium L ⇌ M with forward ΔH = +24 kJ mol⁻¹, predict the equilibrium direction on heating and on cooling at otherwise specified comparable conditions. Does faster reaction when heated prove a greater equilibrium yield for every reversible reaction? Contrast with exothermic ammonia formation.",
+        "answer": "Here heating favours the endothermic forward direction towards M; cooling favours the exothermic reverse direction towards L. Faster approach is not a general rule for final equilibrium yield. For N₂ + 3H₂ ⇌ 2NH₃ with exothermic forward formation, heating favours nitrogen/hydrogen and cooling favours ammonia at equilibrium.",
+        "explanation": "Read the supplied energy direction first and distinguish equilibrium position from rate. Cooling can favour ammonia’s equilibrium yield while slowing its formation; neither shift implies complete conversion or specifies an industrial optimum."
+      }
     },
     {
       "id": "equilibrium-pressure",
@@ -1023,7 +1205,12 @@
         "Counting solid calcium carbonate as a gas molecule.",
         "Assuming all pressure changes favour products.",
         "Ignoring equal gas coefficients or the method used to raise pressure."
-      ]
+      ],
+      "practice": {
+        "question": "At constant temperature compare compression and expansion for (a) 2SO₂(g) + O₂(g) ⇌ 2SO₃(g), and (b) H₂(g) + I₂(g) ⇌ 2HI(g). Then explain why adding inert gas at fixed volume is not the same as compression. Count only gases.",
+        "answer": "(a) There are 3 gas moles on the left and 2 on the right: compression favours SO₃; expansion favours SO₂/O₂. (b) Both sides have 2 gas moles: simple volume-induced pressure changes do not shift the equilibrium position at constant temperature. Adding inert gas at fixed volume raises total pressure but does not raise the reacting gases’ concentrations or partial pressures in this model.",
+        "explanation": "Use balanced coefficients and the method of changing pressure. A pressure change can affect rates without necessarily shifting equilibrium; solid/liquid coefficients would not count as gas moles."
+      }
     }
   ]
 }

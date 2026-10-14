@@ -1,0 +1,717 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4CH1",
+  "documentId": "4CH1-spec",
+  "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "sourceVisualPages": [
+    27,
+    28
+  ],
+  "sourcePrintedPages": [
+    21,
+    22
+  ],
+  "reviewDate": "2026-10-14",
+  "reviewer": "Codex root source/logic review with bounded independent source and new-practice audits",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "authored-teaching-coverage",
+  "policyVersion": 1,
+  "practicalTrialsPerformed": false,
+  "examTemplateCalibrationComplete": false,
+  "noteRef": "content/notes/chemistry-physical.json",
+  "inventorySha256": "4132532244c39f1f170b7a497459ba41bd1a78d994d6d89a9da96d70d770124a",
+  "auditRef": "research/curriculum-audits/4CH1-physical.json",
+  "auditSha256": "0ee600776bbe43cdfc2abf8d5613d9c334ad267c3999545031c1972e81140d43",
+  "diagramSha256": {
+    "/diagrams/chemistry-energy-levels.svg": "ec3feed5bc5d80ff6ab9cd09ee6b22d25a1951af317ac163ba3b9d74d14ab6c0",
+    "/diagrams/chemistry-rate-curves.svg": "b4366c9435264a8919667c109b992b9b8136fa05118198cd4196accf19835159",
+    "/diagrams/chemistry-reaction-profile.svg": "8f19c29dddd5321a025fd079af3df4101d4daf10edc907e9a4576c487307d54c"
+  },
+  "limitations": [
+    "Authored written teaching and original fixed practice only. No learner/human review, performed practical competence, examiner calibration or active exam templates.",
+    "Twenty-two current-source identities/78 local editorial requirements; historical-paper applicability and whole-paper processing remain separate.",
+    "Both-paper reversible tasks do not require2C equilibrium-rate criteria; optional2C connections labelled. Model measurements are invented, not trials. Whole authored chapter has a separate review."
+  ],
+  "points": [
+    {
+      "pointId": "4CH1:issue3:3.1",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:3.1:r1",
+          "verdict": "approved",
+          "judgement": "Controlled transfer-to-surroundings task correctly identifies exothermic direction; ignition and unequal starting temperatures are separated.",
+          "assessmentSectionId": "energy-system"
+        },
+        {
+          "id": "4CH1:issue3:3.1:r2",
+          "verdict": "approved",
+          "judgement": "Worked24→21cooling and unfamiliar controlled18→16cooling task support energy fromsurroundings toreacting system, endothermic direction; no unequal-start ambiguity.",
+          "assessmentSectionId": "energy-system"
+        },
+        {
+          "id": "4CH1:issue3:3.1:r3",
+          "verdict": "approved",
+          "judgement": "Worked24→21 cooling observation explicitly controls initial temperature/external cooling; the explanation does not infer heat from a single unqualified warm reading.",
+          "assessmentSectionId": "energy-system"
+        }
+      ],
+      "sectionSha256": {
+        "energy-system": "091bf9b339ba27899c0565c141c184f64d64111125937c356d0f0464f8dfb187"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:3.2",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:3.2:r1",
+          "verdict": "approved",
+          "judgement": "Distinct .50g/M32 fuel and150gwater task gives6000J and−384unrounded,−3.8×10²to2sf; evaporation and heat-loss limits retained.",
+          "assessmentSectionId": "fuel-calorimeter"
+        },
+        {
+          "id": "4CH1:issue3:3.2:r2",
+          "verdict": "approved",
+          "judgement": "20cm³acid plus30cm³alkali uses combined50g,4°C rise and limiting .0200mol; excess .0100molNaOH distinguished from total liquid mass.",
+          "assessmentSectionId": "neutralization-calorimeter"
+        },
+        {
+          "id": "4CH1:issue3:3.2:r3",
+          "verdict": "approved",
+          "judgement": "Named ammonium-nitrate model cools100gsolution by3°C; explicitly supplied solution-mass/c approximation gives−1200Jsurroundings/+1200Jdissolving.",
+          "assessmentSectionId": "dissolving-displacement"
+        },
+        {
+          "id": "4CH1:issue3:3.2:r4",
+          "verdict": "approved",
+          "judgement": "ExcessZn/CuSO₄25cm³×.200M limits at .00500mol;700Jsurroundings gives−140kJ per moleCuSO₄, not per initial excessZn.",
+          "assessmentSectionId": "dissolving-displacement"
+        },
+        {
+          "id": "4CH1:issue3:3.2:r5",
+          "verdict": "approved",
+          "judgement": "Written apparatus/methods and independent±.2°C difference task distinguish initial/extreme/time-series measurement, heat leakage and repeat limitations.",
+          "assessmentSectionId": "calorimetry-evaluation"
+        }
+      ],
+      "sectionSha256": {
+        "calorimetry-methods": "c0f718d16d74f2b91be89605fb59e0c3eb21681e5a83072ff6463146457f166d",
+        "neutralization-calorimeter": "fb03e678fd62f2ba7bb5d0921e4ed1fa330e84efb8c46015d6a8ce8d63e32144",
+        "dissolving-displacement": "6b12555e8f6c002c474f9603f27158683df0a557afdd1c87bd092a6a27707e7d",
+        "fuel-calorimeter": "4edc4406016f5e4e9f4f979d7e23f6b653cbbddd7efe3d66aa60f96c936d72bb",
+        "calorimetry-evaluation": "87b3acdf26584b9f15cc2d23b0f4cc80448f1b4ccbbb26831cdb7c8808ff86e9"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:3.3",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:3.3:r1",
+          "verdict": "approved",
+          "judgement": "Actual75g×4×−4 gives−1200J; gram/Jg⁻¹°C⁻¹ and degrees cancel consistently.",
+          "assessmentSectionId": "calorimetry-heat"
+        },
+        {
+          "id": "4CH1:issue3:3.3:r2",
+          "verdict": "approved",
+          "judgement": "Task names measured solution mass75g; the distinct fuel example separately uses water mass for captured heat.",
+          "assessmentSectionId": "calorimetry-heat"
+        },
+        {
+          "id": "4CH1:issue3:3.3:r3",
+          "verdict": "approved",
+          "judgement": "Final19minusinitial23 gives negative4°C and negative measured-materialQ, with opposite reaction sign.",
+          "assessmentSectionId": "calorimetry-heat"
+        },
+        {
+          "id": "4CH1:issue3:3.3:r4",
+          "verdict": "approved",
+          "judgement": "Density1gcm⁻³ andc4 supplied explicitly; total50cm³ becomes50g, not a hidden universal density/specific-heat claim.",
+          "assessmentSectionId": "neutralization-calorimeter"
+        }
+      ],
+      "sectionSha256": {
+        "calorimetry-heat": "3003f574121cdf8513290433a1c649451610911ba2bf90e344f5512a2c6c2649",
+        "neutralization-calorimeter": "fb03e678fd62f2ba7bb5d0921e4ed1fa330e84efb8c46015d6a8ce8d63e32144",
+        "fuel-calorimeter": "4edc4406016f5e4e9f4f979d7e23f6b653cbbddd7efe3d66aa60f96c936d72bb",
+        "calorimetry-evaluation": "87b3acdf26584b9f15cc2d23b0f4cc80448f1b4ccbbb26831cdb7c8808ff86e9"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:3.4",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:3.4:r1",
+          "verdict": "approved",
+          "judgement": "Surroundings lose900J so reaction gains900J; per-A estimate correctly positive, endothermic.",
+          "assessmentSectionId": "enthalpy-amount"
+        },
+        {
+          "id": "4CH1:issue3:3.4:r2",
+          "verdict": "approved",
+          "judgement": "900J converted once to .900kJ before dividing by .0250mol gives+36kJmol⁻¹.",
+          "assessmentSectionId": "enthalpy-amount"
+        },
+        {
+          "id": "4CH1:issue3:3.4:r3",
+          "verdict": "approved",
+          "judgement": "1:1HCl/NaOH amounts .0200/.0300mol correctly select limitingacid and water formed; initial amount of excess reagent is not divisor.",
+          "assessmentSectionId": "neutralization-calorimeter"
+        },
+        {
+          "id": "4CH1:issue3:3.4:r4",
+          "verdict": "approved",
+          "judgement": "Explicit per-mole-A constant-pressure estimate includes unmeasured transfers/apparatus assumptions and does not claim standard conditions.",
+          "assessmentSectionId": "enthalpy-amount"
+        }
+      ],
+      "sectionSha256": {
+        "enthalpy-amount": "cd89e937837c679b5c4a4477ed70f94b1b45e5a17309f8cd7cf2ee7da36f4814",
+        "neutralization-calorimeter": "fb03e678fd62f2ba7bb5d0921e4ed1fa330e84efb8c46015d6a8ce8d63e32144",
+        "fuel-calorimeter": "4edc4406016f5e4e9f4f979d7e23f6b653cbbddd7efe3d66aa60f96c936d72bb"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:3.5C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:3.5C:r1",
+          "verdict": "approved",
+          "judgement": "Learner draws Yreactants90/products30, downwardoverallarrow andΔH−60; exothermic lowerproducts geometry assessed.",
+          "assessmentSectionId": "energy-levels"
+        },
+        {
+          "id": "4CH1:issue3:3.5C:r2",
+          "verdict": "approved",
+          "judgement": "Learner draws Xreactants15/products55, upwardoverallarrow andΔH+40; endothermic higherproducts geometry assessed.",
+          "assessmentSectionId": "energy-levels"
+        },
+        {
+          "id": "4CH1:issue3:3.5C:r3",
+          "verdict": "approved",
+          "judgement": "Two independently specified level diagrams require labelledenergyaxis/reactantproductlevels/verticaldifference; no activation peak or time-axis substitution.2C-only retained.",
+          "assessmentSectionId": "energy-levels"
+        }
+      ],
+      "sectionSha256": {
+        "energy-levels": "9e07c1b7cac13b9f0f7347556e5b4c79891cddc8430e5e98b6695c56ce125b89"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:3.6C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:3.6C:r1",
+          "verdict": "approved",
+          "judgement": "Breaking oneH–H plusoneCl–Cl requires678kJ; energy-input direction explicitly assessed.",
+          "assessmentSectionId": "bond-balance"
+        },
+        {
+          "id": "4CH1:issue3:3.6C:r2",
+          "verdict": "approved",
+          "judgement": "Forming twoH–Cl releases862kJ; formation is exothermic rather than a source of breaking energy by itself.",
+          "assessmentSectionId": "bond-balance"
+        }
+      ],
+      "sectionSha256": {
+        "bond-balance": "82ace1df4ee0b0992f0fb428259e7ff6c9fc873dcd82f3ce36986b8cd79983a0"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:3.7C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:3.7C:r1",
+          "verdict": "approved",
+          "judgement": "IndependentH₂/Cl₂ task uses678−862=−184; suppliedgas-modelvalues kept distinct from actual measured enthalpy.",
+          "assessmentSectionId": "bond-balance"
+        },
+        {
+          "id": "4CH1:issue3:3.7C:r2",
+          "verdict": "approved",
+          "judgement": "OneH–H/oneCl–Cl broken and twoH–Cl formed follow balanced1:1:2coefficients; workedN₂ example also counts triple/single bonds and6N–H.",
+          "assessmentSectionId": "bond-balance"
+        },
+        {
+          "id": "4CH1:issue3:3.7C:r3",
+          "verdict": "approved",
+          "judgement": "Suppliedaverage gas-phase values are explicitly approximate; no unsupported liquid/solid exactness.",
+          "assessmentSectionId": "bond-balance"
+        },
+        {
+          "id": "4CH1:issue3:3.7C:r4",
+          "verdict": "approved",
+          "judgement": "−184per equation aswritten dividedby2 gives−92per moleHCl; basis cannot silently switch.",
+          "assessmentSectionId": "bond-balance"
+        }
+      ],
+      "sectionSha256": {
+        "bond-balance": "82ace1df4ee0b0992f0fb428259e7ff6c9fc873dcd82f3ce36986b8cd79983a0"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:3.8",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:3.8:r1",
+          "verdict": "approved",
+          "judgement": "Allfour named method types explained across chapter; named salt dissolving inwater now assessed. Source asks some changes; no claim that all trials performed.",
+          "assessmentSectionId": "dissolving-displacement"
+        },
+        {
+          "id": "4CH1:issue3:3.8:r2",
+          "verdict": "approved",
+          "judgement": "Matchedinitial21°C and maximum25°C task plus written time-series alternative establishes rise and proper initial readings.",
+          "assessmentSectionId": "neutralization-calorimeter"
+        },
+        {
+          "id": "4CH1:issue3:3.8:r3",
+          "verdict": "approved",
+          "judgement": "Uncertainty20%/5% model, written lid/insulation/stirrer controls and systematicloss distinctions assess quality; supervisedplans remain unperformed.",
+          "assessmentSectionId": "calorimetry-evaluation"
+        }
+      ],
+      "sectionSha256": {
+        "calorimetry-methods": "c0f718d16d74f2b91be89605fb59e0c3eb21681e5a83072ff6463146457f166d",
+        "neutralization-calorimeter": "fb03e678fd62f2ba7bb5d0921e4ed1fa330e84efb8c46015d6a8ce8d63e32144",
+        "dissolving-displacement": "6b12555e8f6c002c474f9603f27158683df0a557afdd1c87bd092a6a27707e7d",
+        "fuel-calorimeter": "4edc4406016f5e4e9f4f979d7e23f6b653cbbddd7efe3d66aa60f96c936d72bb",
+        "calorimetry-evaluation": "87b3acdf26584b9f15cc2d23b0f4cc80448f1b4ccbbb26831cdb7c8808ff86e9"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:3.9",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:3.9:r1",
+          "verdict": "approved",
+          "judgement": "Equal2gcarbonate size task varies defined size ranges and controls acid/material/temperature/mixing; area mechanism rather than amount change.",
+          "assessmentSectionId": "rate-area"
+        },
+        {
+          "id": "4CH1:issue3:3.9:r2",
+          "verdict": "approved",
+          "judgement": "Separate acid-concentration series controls carbonate mass/size and acidvolume; avoids simultaneous two-variable change.",
+          "assessmentSectionId": "marble-design"
+        },
+        {
+          "id": "4CH1:issue3:3.9:r3",
+          "verdict": "approved",
+          "judgement": "20/30°C plan pre-equilibrates, records actualT, matches concentrations/amounts/timing and qualifies gas-volume expansion.",
+          "assessmentSectionId": "rate-temperature"
+        },
+        {
+          "id": "4CH1:issue3:3.9:r4",
+          "verdict": "approved",
+          "judgement": "A/B/no-solid endpoint comparison includes equal specified mass/sizeranges, matched peroxide and repeat/control limits.",
+          "assessmentSectionId": "peroxide-solids"
+        },
+        {
+          "id": "4CH1:issue3:3.9:r5",
+          "verdict": "approved",
+          "judgement": "Addedcurve evidence link directly supports tangent/chord/plateau interpretation; tangent40/20=2cm³s⁻¹ and same64plateau conditionalamount assessed.",
+          "assessmentSectionId": "rate-curves"
+        }
+      ],
+      "sectionSha256": {
+        "rate-measure": "f8fd9c67bd670a6eb75f0135eab4f14c55f2762d9d65dc47cd84e79c5cd3c10c",
+        "rate-curves": "9703313e650cd469e0f466f56e9ffe5fc205fdd66cbfbfa71b8661f43c27b970",
+        "rate-area": "8d89eab014a1b763668350d29795aef9e440cbe6163400a6c6d6fa63d1ff546f",
+        "rate-concentration-pressure": "359757b4cee90c11b77428f79c8dd38a3b6cb03d9c5898d333785394211bd07d",
+        "rate-temperature": "d8b3a7d54ead29a974e249c0b6ae25c461ecb1f1fd6fd3f665495740dfd6f189",
+        "catalyst-model": "b4a6f8cdab8a9340f1ef303a8a7e3934dad35e2f8b7f5d4f15ed381781f844ae",
+        "marble-design": "2a8b62ce484782fe53d1c0d43f60d9b99e5af656440ce0fb7dea53d19d8b9085",
+        "peroxide-solids": "08c7c45de62d965244e2c86b610c93ae5d2f223e4e481f370599f448c77d67ad",
+        "rate-evidence": "d517a224205191edf2ae2ddda6263fc22ca7a9360d8d1801ea06dc5739a6e0cb"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:3.10",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:3.10:r1",
+          "verdict": "approved",
+          "judgement": "Smallerchips at fixedmass exposemorearea and fasterinitialrate under matched conditions.",
+          "assessmentSectionId": "rate-area"
+        },
+        {
+          "id": "4CH1:issue3:3.10:r2",
+          "verdict": "approved",
+          "judgement": "Higherreactingparticle concentration gives moreparticlespervolume; no unprovedexactdoubling.",
+          "assessmentSectionId": "rate-concentration-pressure"
+        },
+        {
+          "id": "4CH1:issue3:3.10:r3",
+          "verdict": "approved",
+          "judgement": "Halvedgasvolume doublesreactingconcentration at fixedT; inertadditionfixedV distinguished fromcompression.",
+          "assessmentSectionId": "rate-concentration-pressure"
+        },
+        {
+          "id": "4CH1:issue3:3.10:r4",
+          "verdict": "approved",
+          "judgement": "GreaterT increasesrate through changed energy distribution/frequency;exact2×per10°C notasserted.",
+          "assessmentSectionId": "rate-temperature"
+        },
+        {
+          "id": "4CH1:issue3:3.10:r5",
+          "verdict": "approved",
+          "judgement": "Suitablecatalyst provideslower-barrierroute and fasterreaction atsameT;fastertrace alone notproofidentity.",
+          "assessmentSectionId": "catalyst-model"
+        },
+        {
+          "id": "4CH1:issue3:3.10:r6",
+          "verdict": "approved",
+          "judgement": "Same64cm³plateau reachedsooner means fasterapproach tosameamount only under matchedlimiting/gasconditions,notuniversalyieldincrease.",
+          "assessmentSectionId": "rate-curves"
+        }
+      ],
+      "sectionSha256": {
+        "rate-curves": "9703313e650cd469e0f466f56e9ffe5fc205fdd66cbfbfa71b8661f43c27b970",
+        "rate-area": "8d89eab014a1b763668350d29795aef9e440cbe6163400a6c6d6fa63d1ff546f",
+        "rate-concentration-pressure": "359757b4cee90c11b77428f79c8dd38a3b6cb03d9c5898d333785394211bd07d",
+        "rate-temperature": "d8b3a7d54ead29a974e249c0b6ae25c461ecb1f1fd6fd3f665495740dfd6f189",
+        "catalyst-model": "b4a6f8cdab8a9340f1ef303a8a7e3934dad35e2f8b7f5d4f15ed381781f844ae"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:3.11",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:3.11:r1",
+          "verdict": "approved",
+          "judgement": "Exposedsolidarea increases accessible relevantcollisionsperunit time,not totalmolesor kineticenergy atsameT.",
+          "assessmentSectionId": "rate-area"
+        },
+        {
+          "id": "4CH1:issue3:3.11:r2",
+          "verdict": "approved",
+          "judgement": "Particlepervolume explanation coverssolutionconcentration;energyperparticle notautomaticallyraised.",
+          "assessmentSectionId": "rate-concentration-pressure"
+        },
+        {
+          "id": "4CH1:issue3:3.11:r3",
+          "verdict": "approved",
+          "judgement": "FixedTcompression raisesreactantdensity/frequency,notaveragespeed;inerttotalpressurecounterexample assessed.",
+          "assessmentSectionId": "rate-concentration-pressure"
+        },
+        {
+          "id": "4CH1:issue3:3.11:r4",
+          "verdict": "approved",
+          "judgement": "Task requires higheraverageKE and largerfractionoverbarrier,withfrequencyqualification;unchangedpathwayEa explicitly retained.",
+          "assessmentSectionId": "rate-temperature"
+        }
+      ],
+      "sectionSha256": {
+        "rate-area": "8d89eab014a1b763668350d29795aef9e440cbe6163400a6c6d6fa63d1ff546f",
+        "rate-concentration-pressure": "359757b4cee90c11b77428f79c8dd38a3b6cb03d9c5898d333785394211bd07d",
+        "rate-temperature": "d8b3a7d54ead29a974e249c0b6ae25c461ecb1f1fd6fd3f665495740dfd6f189"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:3.12",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:3.12:r1",
+          "verdict": "approved",
+          "judgement": "Rateincrease andchemicallyunchangedoverall bothrequired;same mass recovery alonecannotestablishidentity.",
+          "assessmentSectionId": "catalyst-model"
+        },
+        {
+          "id": "4CH1:issue3:3.12:r2",
+          "verdict": "approved",
+          "judgement": "Catalystmayparticipate/regenerate;consumedsolidreactant isdistinguished fromcatalyst andno-solidcontrol supportsboundedratecomparison.",
+          "assessmentSectionId": "catalyst-model"
+        }
+      ],
+      "sectionSha256": {
+        "catalyst-model": "b4a6f8cdab8a9340f1ef303a8a7e3934dad35e2f8b7f5d4f15ed381781f844ae",
+        "peroxide-solids": "08c7c45de62d965244e2c86b610c93ae5d2f223e4e481f370599f448c77d67ad"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:3.13",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:3.13:r1",
+          "verdict": "approved",
+          "judgement": "Newtaskexplicitlyrequiresalternativepathway,notnetenergysupply or extraamountofreactant.",
+          "assessmentSectionId": "catalyst-model"
+        },
+        {
+          "id": "4CH1:issue3:3.13:r2",
+          "verdict": "approved",
+          "judgement": "Loweractivationenergy atsameT is correctly separatedfrom heating andunchangedreactant-productdifference.",
+          "assessmentSectionId": "catalyst-model"
+        }
+      ],
+      "sectionSha256": {
+        "catalyst-model": "b4a6f8cdab8a9340f1ef303a8a7e3934dad35e2f8b7f5d4f15ed381781f844ae"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:3.14C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:3.14C:r1",
+          "verdict": "approved",
+          "judgement": "Newdrawnendothermicprofile20→50 contrasts existingexothermic70→25;2C-only energy/progressaxes endpoints assessed.",
+          "assessmentSectionId": "reaction-profile"
+        },
+        {
+          "id": "4CH1:issue3:3.14C:r2",
+          "verdict": "approved",
+          "judgement": "Forwardbarriers measuredfromreactant20 to100/70give80/50,notfromzero orproducts.",
+          "assessmentSectionId": "reaction-profile"
+        },
+        {
+          "id": "4CH1:issue3:3.14C:r3",
+          "verdict": "approved",
+          "judgement": "ΔH50−20=+30andupwardendpointarrow distinctfromEa;existing−45examplecoversnegativecase.",
+          "assessmentSectionId": "reaction-profile"
+        },
+        {
+          "id": "4CH1:issue3:3.14C:r4",
+          "verdict": "approved",
+          "judgement": "Bothcurvesretain20/50endpoints;lowerpeak70changesEanotΔH;drawingdemandexplicitratherthan arithmetic-only.",
+          "assessmentSectionId": "reaction-profile"
+        }
+      ],
+      "sectionSha256": {
+        "reaction-profile": "4170c2ff5a78d89c8ed2efcd1765301165a381fad07de44c1fc477b194eb1a54"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:3.15",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:3.15:r1",
+          "verdict": "approved",
+          "judgement": "CaCO₃+2HCl→CaCl₂+H₂O+CO₂conservesatoms;CO₂volume/time collectedbysyringe,solubilityoverwaterqualifiesalternatecollection.",
+          "assessmentSectionId": "marble-design"
+        },
+        {
+          "id": "4CH1:issue3:3.15:r2",
+          "verdict": "approved",
+          "judgement": "Definedchipsizerangevariedwith equalcarbonate mass andfixedacidc/V/T/mixing;approvedsizesavoidunsafecrushing.",
+          "assessmentSectionId": "marble-design"
+        },
+        {
+          "id": "4CH1:issue3:3.15:r3",
+          "verdict": "approved",
+          "judgement": "Separateconcentrationseries fixesmass/chipsize/acidvolume andtemperature;limitingacid/finalyieldconditions explicit.",
+          "assessmentSectionId": "marble-design"
+        },
+        {
+          "id": "4CH1:issue3:3.15:r4",
+          "verdict": "approved",
+          "judgement": "Addedmarble-design explanation link suppliesfreegaspath; delayed4scollection/falseplateau task demandsconnections/capacity/timingchecksandrepeatswithoutarbitraryoutlierdeletion.",
+          "assessmentSectionId": "rate-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "rate-curves": "9703313e650cd469e0f466f56e9ffe5fc205fdd66cbfbfa71b8661f43c27b970",
+        "rate-area": "8d89eab014a1b763668350d29795aef9e440cbe6163400a6c6d6fa63d1ff546f",
+        "marble-design": "2a8b62ce484782fe53d1c0d43f60d9b99e5af656440ce0fb7dea53d19d8b9085",
+        "rate-evidence": "d517a224205191edf2ae2ddda6263fc22ca7a9360d8d1801ea06dc5739a6e0cb"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:3.16",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:3.16:r1",
+          "verdict": "approved",
+          "judgement": "2H₂O₂→2H₂O+O₂balanced;separatesupervised glowing-splintrelightidentifiesoxygen ratherthan puttingflameintoperoxideapparatus.",
+          "assessmentSectionId": "peroxide-solids"
+        },
+        {
+          "id": "4CH1:issue3:3.16:r2",
+          "verdict": "approved",
+          "judgement": "Differentapprovedsolidscomparedwithsameperoxidec/V/T,apparatus,mixing andtiming;A/B/controlendpoint rates1.5/.90/.30 independently correct.",
+          "assessmentSectionId": "peroxide-solids"
+        },
+        {
+          "id": "4CH1:issue3:3.16:r3",
+          "verdict": "approved",
+          "judgement": "Equalmass/comparablesizerangespecifiedbutnotclaimedtomeanequalactivesitesorintrinsicuniversalactivity.",
+          "assessmentSectionId": "peroxide-solids"
+        },
+        {
+          "id": "4CH1:issue3:3.16:r4",
+          "verdict": "approved",
+          "judgement": "No-solidcontrol, independentrepeats,recordedwarming andapproveddiluteperoxide/freeoutletcoverpracticalqualityandsafety;notactualtrials.",
+          "assessmentSectionId": "peroxide-solids"
+        }
+      ],
+      "sectionSha256": {
+        "peroxide-solids": "08c7c45de62d965244e2c86b610c93ae5d2f223e4e481f370599f448c77d67ad",
+        "rate-evidence": "d517a224205191edf2ae2ddda6263fc22ca7a9360d8d1801ea06dc5739a6e0cb"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:3.17",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:3.17:r1",
+          "verdict": "approved",
+          "judgement": "NewP⇌Qtaskcorrectsbothone-wayandequalamountclaims;actualpractice requiresbothpossibledirections,notPaper2Cratecriteria.",
+          "assessmentSectionId": "reversible-arrow"
+        },
+        {
+          "id": "4CH1:issue3:3.17:r2",
+          "verdict": "approved",
+          "judgement": "Arrowdoesnotspecifypresentcomposition;optionalPaper2Cequilibriumconnection nowlabelledandreservedfordedicatedtasks.",
+          "assessmentSectionId": "reversible-arrow"
+        }
+      ],
+      "sectionSha256": {
+        "reversible-arrow": "da359ff215d28d22669d50bbfc0ca6c246152c75cbbae4eadfa5e931a7fd6d04"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:3.18",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:3.18:r1",
+          "verdict": "approved",
+          "judgement": "Bluehydrated/whiteanhydrouscopper(II)sulfate, controlledwaterloss/readdition andexcesswatersolutiondistinguished;openvapourescape explicitlyassessed.",
+          "assessmentSectionId": "copper-water-reverse"
+        },
+        {
+          "id": "4CH1:issue3:3.18:r2",
+          "verdict": "approved",
+          "judgement": "NH₄Cl⇌NH₃+HCl conservesN/H/Cl;hotgases ammonia/hydrogenchloride andcoolwhitesolidNH₄Cl correctlynamed.",
+          "assessmentSectionId": "ammonium-reverse"
+        },
+        {
+          "id": "4CH1:issue3:3.18:r3",
+          "verdict": "approved",
+          "judgement": "Correspondingreverse−18kJfollowsforward+18on samebasis;conditionsnecessaryforreversechanges ratherthanphysicalfiltration.",
+          "assessmentSectionId": "reversible-arrow"
+        },
+        {
+          "id": "4CH1:issue3:3.18:r4",
+          "verdict": "approved",
+          "judgement": "Openwaterescape explainedandcorepracticeassessesit; sealed/equal-rateequilibrium distinctionisclearlyoptionalPaper2C extension,notnewboth-paperdemand.",
+          "assessmentSectionId": "copper-water-reverse"
+        }
+      ],
+      "sectionSha256": {
+        "reversible-arrow": "da359ff215d28d22669d50bbfc0ca6c246152c75cbbae4eadfa5e931a7fd6d04",
+        "copper-water-reverse": "c15fd6ab8ffaeac12fc96162fa9555dd230b2775de30c2488b489e60d6ac75b5",
+        "ammonium-reverse": "d167d90fc079e27caaaf9f8d3bd9b7f5a470bb66fb9370227dc7caa49b0d5a12"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:3.19C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:3.19C:r1",
+          "verdict": "approved",
+          "judgement": "Closedconceptretainsrelevantsubstancesbutcanexchangeenergy;notaninstructiontosealandheat demonstration.",
+          "assessmentSectionId": "dynamic-equilibrium"
+        },
+        {
+          "id": "4CH1:issue3:3.19C:r2",
+          "verdict": "approved",
+          "judgement": "Modelseparaterateevidenceestablishescontinuingchangesundermaintainedconditions,notparticlesstoppingorplateaualone.",
+          "assessmentSectionId": "dynamic-equilibrium"
+        }
+      ],
+      "sectionSha256": {
+        "dynamic-equilibrium": "14e11e445be500f6787c07633c8f77f01ae017206b2d3fce9bf891c038677124"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:3.20C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:3.20C:r1",
+          "verdict": "approved",
+          "judgement": "Ratecurvesapproachthesamecontinuingrate; equalityappliestoforward/reverserates.",
+          "assessmentSectionId": "dynamic-equilibrium"
+        },
+        {
+          "id": "4CH1:issue3:3.20C:r2",
+          "verdict": "approved",
+          "judgement": "Concentrationcurvesremainatdifferentconstant .60/.15mol dm⁻³; unequalvalues do notcontradictequilibrium.",
+          "assessmentSectionId": "dynamic-equilibrium"
+        },
+        {
+          "id": "4CH1:issue3:3.20C:r3",
+          "verdict": "approved",
+          "judgement": "Taskexplicitlydistinguishestwographtypesand suppliedseparaterateevidence,notone-waygasplateau inference.",
+          "assessmentSectionId": "dynamic-equilibrium"
+        }
+      ],
+      "sectionSha256": {
+        "dynamic-equilibrium": "14e11e445be500f6787c07633c8f77f01ae017206b2d3fce9bf891c038677124"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:3.21C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:3.21C:r1",
+          "verdict": "approved",
+          "judgement": "Bothreactant-startandproduct-starttasksrequirefasterapproach;neitherdirectionisleftunaffected.",
+          "assessmentSectionId": "equilibrium-catalyst"
+        },
+        {
+          "id": "4CH1:issue3:3.21C:r2",
+          "verdict": "approved",
+          "judgement": "Short30sproductdifferencecanberateonly; oncebothreach equilibrium under matchedmaintainedconditions compositionunchanged.",
+          "assessmentSectionId": "equilibrium-catalyst"
+        }
+      ],
+      "sectionSha256": {
+        "equilibrium-catalyst": "dfeabbfb12733231e265848fdd245cc1b659130065878adac5b31ce68a5088d4"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:3.22C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:3.22C:r1",
+          "verdict": "approved",
+          "judgement": "Suppliedforward+24meansheatingfavoursM;actualexothermicammoniaforwardexamplegivestheoppositeproductprediction.",
+          "assessmentSectionId": "equilibrium-temperature"
+        },
+        {
+          "id": "4CH1:issue3:3.22C:r2",
+          "verdict": "approved",
+          "judgement": "CoolingfavoursexothermicreverseLforthegivenmodelandammoniaforexothermicformation;rate/yielddistinguished.",
+          "assessmentSectionId": "equilibrium-temperature"
+        },
+        {
+          "id": "4CH1:issue3:3.22C:r3",
+          "verdict": "approved",
+          "judgement": "2SO₂+O₂⇌2SO₃compares3versus2gasmoles;compressionfavoursSO₃atconstantT.",
+          "assessmentSectionId": "equilibrium-pressure"
+        },
+        {
+          "id": "4CH1:issue3:3.22C:r4",
+          "verdict": "approved",
+          "judgement": "Expansionfavours3-gasmoleleftside;notalwaysproducts.",
+          "assessmentSectionId": "equilibrium-pressure"
+        },
+        {
+          "id": "4CH1:issue3:3.22C:r5",
+          "verdict": "approved",
+          "judgement": "H₂+I₂⇌2HIhas2versus2/no simplecompressionshift;fixedVinertadditionnotcompression;solid/liquidcoefficientsnotgascounts.",
+          "assessmentSectionId": "equilibrium-pressure"
+        },
+        {
+          "id": "4CH1:issue3:3.22C:r6",
+          "verdict": "approved",
+          "judgement": "Neitherfasterrate norfavourableequilibriumpositionimpliescompleteconversionorindustrialoptimum;formalprinciplename notrequired.",
+          "assessmentSectionId": "equilibrium-temperature"
+        }
+      ],
+      "sectionSha256": {
+        "equilibrium-temperature": "1f88ce1a197bc6a69ad0eb65d0b1d642a0659e0869d54f214bdd2144fb3c8573",
+        "equilibrium-pressure": "eaa2c926bc024fd24f47d49132d8f4f3c64cebb334eb9f8f12ba0fd6a11f2297"
+      }
+    }
+  ]
+}

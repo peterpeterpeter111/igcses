@@ -109,7 +109,7 @@ export const reviewedInventories = [
   { title: 'Human nutrition, digestion, teeth and risk (6.1–6.11; partial teaching)', ...humanNutrition },
   { title: 'Alcohols, acids, esters and polymers (4.29C–4.50C; partial teaching)', ...chemistryOrganicFamilies },
   { title: 'Organic foundations, oil, alkanes and alkenes (4.1–4.28; partial teaching)', ...chemistryOrganic },
-  { title: 'Physical Chemistry (3.1–3.22C; partial teaching)', ...chemistryPhysical },
+  { title: 'Physical Chemistry (3.1–3.22C)', ...chemistryPhysical },
   { title: 'Chemical tests (2.44–2.50; both papers)', ...chemistryTests },
   { title: 'Acids, alkalis, titration and salts (2.28–2.43C)', ...chemistryAcidsSalts },
   { title: 'Metal extraction, uses and alloys (2.22C–2.27C; Paper 2C)', ...chemistryMetalExtraction },
