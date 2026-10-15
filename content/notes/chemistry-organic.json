@@ -116,8 +116,8 @@
         "Ignoring an oxygen or halogen at the end of a formula."
       ],
       "practice": {
-        "question": "Classify CH₄ and C₂H₅OH as hydrocarbons or non-hydrocarbons, giving the composition reason.",
-        "answer": "CH₄ is a hydrocarbon because it contains carbon and hydrogen only. C₂H₅OH is not a hydrocarbon because it also contains oxygen.",
+        "question": "Classify CH₄ and C₂H₅OH as hydrocarbons or non-hydrocarbons, giving the composition reason. Also classify C₆H₁₄, CH₃COOH and a mixture of separate carbon and hydrogen elements.",
+        "answer": "CH₄ is a hydrocarbon because it contains carbon and hydrogen only. C₂H₅OH is not a hydrocarbon because it also contains oxygen. C₆H₁₄ is a hydrocarbon; CH₃COOH is not because it includes oxygen; a physical mixture of separate C and H elements is not a hydrocarbon compound.",
         "explanation": "Being an organic compound is not sufficient to make a substance a hydrocarbon. Check every element in its formula."
       }
     },
@@ -154,8 +154,8 @@
         "Reducing a molecular formula when the question asks for actual atom counts."
       ],
       "practice": {
-        "question": "A molecule has molecular formula C₆H₁₂. Give its empirical formula and explain the reduction.",
-        "answer": "CH₂. Divide both atom counts by their greatest common factor, 6, to give the simplest whole-number ratio 1:2.",
+        "question": "A molecule has molecular formula C₆H₁₂. Give its empirical formula and explain the reduction. Separately, for supplied pent-2-ene CH₃CH=CHCH₂CH₃, give molecular, empirical and stated-family general formulas, then draw the fully displayed form and explain what its structural formula specifies.",
+        "answer": "CH₂. Divide both atom counts by their greatest common factor, 6, to give the simplest whole-number ratio 1:2. For pent-2-ene: C₅H₁₀, CH₂, and CₙH₂ₙ for the stated acyclic one-C=C family. Its structural formula fixes a five-carbon chain and the double bond between carbons2/3. In your displayed drawing show both C=C lines and every C–H bond: H counts along the chain are3,1,1,2,3, giving each carbon four bond contributions.",
         "explanation": "The empirical formula describes a ratio. It does not mean the original molecule contains only one carbon atom and two hydrogen atoms."
       }
     },
@@ -189,7 +189,12 @@
         "Calling any two compounds with C=C isomers.",
         "Calling a rotated drawing a different molecule.",
         "Assuming similar chemical properties mean identical physical properties."
-      ]
+      ],
+      "practice": {
+        "question": "Compare pentane C₅H₁₂ with hexane C₆H₁₄, and pentane with CH₃CH(CH₃)CH₂CH₃. Which pair are successive homologues and which are structural isomers? Name the alkene functional group and explain why sharing it does not make any two alkenes isomers.",
+        "answer": "Pentane/hexane are successive alkane homologues: their formulas differ by CH₂ and they have similar family chemistry. Pentane/CH₃CH(CH₃)CH₂CH₃ are structural isomers: both are C₅H₁₂ but their connections differ. The alkene group is C=C; sharing that group does not establish equal molecular formulas, which is also necessary for isomerism.",
+        "explanation": "A homologous series has a common general formula, similar chemical behaviour and a gradual physical-property trend. Same family is not the same compound; different chain length is not the same molecular formula."
+      }
     },
     {
       "id": "organic-names",
@@ -211,7 +216,9 @@
       "paragraphs": [
         "For the relevant simple chains, learn the first six carbon-count roots: meth- for one, eth- for two, prop- for three, but- for four, pent- for five and hex- for six. Methane, ethane, propane, butane, pentane and hexane are the corresponding unbranched alkanes. The specification expects relevant names up to six carbons, while individual drawing requirements have their own smaller limits.",
         "For a simple unbranched alkene, use -ene and number to give the C=C bond the lower position. CH₂=CHCH₂CH₃ is but-1-ene; CH₃CH=CHCH₃ is but-2-ene. The number names the first carbon of the double bond, not a count of double bonds.",
-        "Alcohol names use the -ol ending, carboxylic acid names the -oic acid ending, and simple ester names join the alcohol-derived alkyl name with the acid-derived alkanoate name. The later drawing and ester-naming lessons show the required named sets and how to trace both parts. The general six-carbon scope does not turn a selected four-carbon drawing requirement into a completed whole-chapter audit."
+        "For a simple branched alkane, choose the longest connected carbon chain as the parent and number it from the end giving the branch the lower position. In CH₃CH(CH₃)CH₂CH₂CH₃ the longest chain is five carbons, not six: its sixth carbon is a methyl branch, giving 2-methylpentane rather than 4-methylpentane. A straight-chain root and a total molecular carbon count are not always the same thing.",
+        "Alcohol names use the -ol ending, carboxylic acid names the -oic acid ending, and simple ester names join the alcohol-derived alkyl name with the acid-derived alkanoate name. The later drawing and ester-naming lessons show the required named sets and how to trace both parts. The general six-carbon scope does not turn a selected four-carbon drawing requirement into a completed whole-chapter audit.",
+        "Paper 2C naming extension: apply the same carbon roots to relevant alcohol and acid structures up to six carbons, counting the COOH carbon in an acid. For example, CH₃CH₂CH₂CH₂CH₂OH is pentan-1-ol and CH₃CH₂CH₂CH₂CH₂COOH is hexanoic acid. For an ester, count both acid- and alcohol-derived parts; the later ester task works in both directions within six total carbons. These extensions do not change the smaller specifically named drawing sets."
       ],
       "example": {
         "question": "Name the unbranched structure CH₃CH₂CH=CH₂ using a lower double-bond position.",
@@ -226,7 +233,12 @@
         "Counting a branch as part of a longer disconnected parent chain.",
         "Calling the locant a number of double bonds.",
         "Assuming all later naming scope is finished by learning six roots."
-      ]
+      ],
+      "practice": {
+        "question": "Write the unbranched alkane names for one through six carbons. Name CH₃CH₂CH₂CH=CH₂ and CH₃CH(CH₃)CH₂CH₂CH₃, explaining numbering and parent-chain length. Paper 2C extension: name CH₃CH₂CH₂CH₂CH₂OH and CH₃CH₂CH₂CH₂CH₂COOH.",
+        "answer": "Methane, ethane, propane, butane, pentane, hexane. CH₃CH₂CH₂CH=CH₂ is pent-1-ene: number from the double-bond end. The branched structure is 2-methylpentane: the longest connected chain has five carbons and a methyl branch at the lower position 2, with six carbons in total. Paper 2C extension: pentan-1-ol and hexanoic acid; count the COOH carbon in the latter.",
+        "explanation": "The root describes the chosen parent chain, not necessarily every carbon in a branched molecule. The relevant naming scope reaches six carbons; the specific alkane/alkene drawing sets have smaller limits. The later alcohol/acid/ester topics are Paper 2C extensions."
+      }
     },
     {
       "id": "structural-isomers",
@@ -259,7 +271,12 @@
         "Counting the same chain twice.",
         "Giving a carbon five bond contributions.",
         "Assuming CₙH₂ₙ alone proves an alkene."
-      ]
+      ],
+      "practice": {
+        "question": "Draw both structural and fully displayed formulas for every acyclic alkane with formula C₄H₁₀. Give the unbranched name, check each carbon’s valency, and explain why reversing a drawing adds no isomer. Does C₄H₈ alone prove an alkene?",
+        "answer": "The two connections are CH₃CH₂CH₂CH₃ (butane) and CH₃CH(CH₃)CH₃. In the displayed straight chain the ends each have three H and the internal carbons two. In the branched structure the central carbon bonds to three carbons and one H; each outer carbon has three H. Both total C₄H₁₀ with four bond contributions per C. Reversal preserves connections. C₄H₈ alone does not prove an alkene; a cyclic structure can have that formula.",
+        "explanation": "Expand every C–H bond, using the original straight/branched drawing sheets to check your drawing. Same atom counts are necessary but not enough: different connections and valid valencies are required. The formula’s family conditions matter."
+      }
     },
     {
       "id": "organic-reaction-classes",
@@ -289,7 +306,12 @@
       "commonMistakes": [
         "Calling addition substitution because bromine is a halogen.",
         "Classifying from the number of products alone."
-      ]
+      ],
+      "practice": {
+        "question": "Classify these supplied changes and justify from the atoms/bonds: CH₄ + Cl₂ → CH₃Cl + HCl under UV; CH₂=CH₂ + Br₂ → CH₂BrCH₂Br; CH₄ + 2O₂ → CO₂ + 2H₂O. Must you draw a reaction mechanism for these course examples?",
+        "answer": "The first is substitution: one H is replaced by Cl, with HCl formed. The second is addition: Br adds across C=C, which becomes C–C, without removing H. The third is complete combustion: methane reacts with oxygen, forming CO₂ and water and releasing energy. Reaction mechanisms are not required for these specified alkane/alkene examples.",
+        "explanation": "A halogen appearing in the reactants does not by itself distinguish addition from substitution. Follow the structural change and products, not just the number of products."
+      }
     },
     {
       "id": "crude-mixture",
@@ -764,7 +786,12 @@
       "commonMistakes": [
         "Using CₙH₂ₙ for an acyclic alkane.",
         "Confusing saturation with a saturated solution."
-      ]
+      ],
+      "practice": {
+        "question": "An unfamiliar acyclic alkane has seven carbons. Give its molecular formula and explain saturation. Would branching change that formula, and does saturated mean unable to dissolve more solute?",
+        "answer": "C₇H₁₆, from H = 2(7) + 2. It is saturated because it has no carbon–carbon multiple bond; its carbon skeleton has single bonds. Branching changes connections but not this formula for seven carbons in the acyclic alkane family. Saturated solution is a different meaning of saturated.",
+        "explanation": "This applies the supplied general formula; naming or drawing every seven-carbon isomer is not required by the named small-molecule drawing set. Ring structures need a different formula condition."
+      }
     },
     {
       "id": "alkane-drawings",
@@ -786,8 +813,9 @@
         "The original drawing sheet is a two-dimensional bond representation, not the real bond angles or a claim that the molecules are flat. The required alkane drawing range is up to five carbons; the general naming reference extends to relevant compounds with six."
       ],
       "example": {
-        "question": "How many hydrogens should the displayed unbranched pentane drawing contain?",
+        "question": "Draw fully displayed unbranched pentane and verify its hydrogens.",
         "steps": [
+          "Draw a connected five-carbon single-bond chain; expand three C–H bonds at each end and two at each of the three internal carbons, as shown on the drawing sheet.",
           "Two terminal CH₃ groups contribute six H.",
           "Three internal CH₂ groups contribute six H.",
           "Total twelve H: C₅H₁₂."
@@ -803,6 +831,11 @@
         "src": "/diagrams/chemistry-alkane-displayed.svg",
         "alt": "Original displayed formulas showing every bond in methane, ethane, propane, butane and pentane, with four bond contributions at each carbon.",
         "caption": "Expand all C–H bonds for a displayed answer. These are schematic connections, not the actual molecular angles."
+      },
+      "practice": {
+        "question": "On paper draw the structural and fully displayed formulas of methane, ethane, propane, butane and pentane. Name each, show every C–H/C–C bond, and give the molecular formula sequence. Explain why CH₃CH₃ alone is not fully displayed.",
+        "answer": "The structural sequence is CH₄; CH₃CH₃; CH₃CH₂CH₃; CH₃CH₂CH₂CH₃; CH₃CH₂CH₂CH₂CH₃. Molecular formulas are CH₄, C₂H₆, C₃H₈, C₄H₁₀, C₅H₁₂, with names methane through pentane. Draw four individual C–H bonds for methane; in each longer chain draw all single C–C bonds, three H on each terminal carbon and two on each internal carbon. Compare with the original drawing sheet: every carbon must have four bond contributions. CH₃ groups abbreviate bonds and are structural notation, not a fully displayed answer.",
+        "explanation": "Check labels, individual bonds and atom totals on the actual drawing, rather than only recalling a general formula. The flat layout shows connectivity rather than real molecular angles."
       }
     },
     {
@@ -840,6 +873,11 @@
         "src": "/diagrams/chemistry-branched-alkanes.svg",
         "alt": "Original full displayed formulas for 2-methylpropane C4H10, 2-methylbutane C5H12 and 2,2-dimethylpropane C5H12. Branch-bearing hydrogen counts satisfy carbon valency.",
         "caption": "Branch names support the general isomer explanation. The specific alkane naming reference asks for the unbranched names."
+      },
+      "practice": {
+        "question": "Draw the structural and fully displayed formulas for all three acyclic C₅H₁₂ skeletons. Explain the hydrogen count on the branch carbon in CH₃CH(CH₃)CH₂CH₃ and on the central carbon in C(CH₃)₄. Is rotating either a fourth skeleton?",
+        "answer": "The three skeletons are CH₃CH₂CH₂CH₂CH₃, CH₃CH(CH₃)CH₂CH₃ and C(CH₃)₄. Expand every H and single bond, comparing with the straight-chain and branched drawing sheets. The one-branch CH has three C neighbours and one H; the central C in C(CH₃)₄ has four C neighbours and no H. Totals are C₅H₁₂ for each. Rotations preserve the same connections and create no fourth skeleton.",
+        "explanation": "The unbranched name pentane is required in the specific naming set. The branch labels 2-methylbutane and 2,2-dimethylpropane help discuss connections; no exhaustive six-carbon isomer collection is asserted."
       }
     },
     {
@@ -873,7 +911,12 @@
         "Writing only CH₃Br and losing the replaced hydrogen.",
         "Drawing addition across a nonexistent alkane double bond.",
         "Treating UV as a consumed chemical."
-      ]
+      ],
+      "practice": {
+        "question": "Write a balanced mono-substitution model for ethane and chlorine under the required condition. Give the organic product’s structural formula and explain where both Cl atoms go. Does this mean further substitution is impossible?",
+        "answer": "CH₃CH₃ + Cl₂ → CH₃CH₂Cl + HCl, with ultraviolet radiation as a condition. One Cl replaces one H in chloroethane; the other combines with that H in HCl. Both sides contain C₂H₆Cl₂. The task is limited to mono-substitution, not a claim that further substitution cannot occur.",
+        "explanation": "UV is not a consumed chemical reactant. Ethane’s equivalent hydrogen positions give one mono-substitution connectivity here; an unsymmetrical larger alkane can have several position products. No mechanism is required."
+      }
     },
     {
       "id": "alkene-formula",
@@ -907,7 +950,12 @@
         "Giving ethene C₂H₆.",
         "Proposing a one-carbon alkene.",
         "Treating a molecular ratio as proof of a double bond."
-      ]
+      ],
+      "practice": {
+        "question": "For an acyclic hydrocarbon with one C=C and five carbons, give the general and molecular formulas and explain unsaturation. Why is C₅H₁₀ alone insufficient evidence of C=C? Could a one-carbon molecule be an alkene?",
+        "answer": "General formula CₙH₂ₙ gives C₅H₁₀. Its C=C functional group permits addition and makes it unsaturated. That atom ratio alone does not exclude a ring structure, so the stated family or actual structure is needed. One carbon cannot form a carbon–carbon double bond; ethene is the first member.",
+        "explanation": "General-formula application is distinct from the smaller required alkene drawing set. In simple addition the original two carbons remain connected, but their bond becomes single."
+      }
     },
     {
       "id": "alkene-drawings",
@@ -928,8 +976,9 @@
         "In displayed formulas, show both C=C lines and all C–H bonds. A double bond contributes two to each connected carbon’s valency. The schematic arrangements show connectivity only; orientation on the sheet is not a claim of a particular stereoisomer."
       ],
       "example": {
-        "question": "How many hydrogens are attached to each double-bond carbon in CH₃CH=CHCH₃?",
+        "question": "Draw fully displayed but-2-ene and determine each double-bond carbon’s hydrogens.",
         "steps": [
+          "Draw CH₃–CH=CH–CH₃, showing both double-bond lines and expanding every H/bond rather than leaving condensed groups.",
           "Each double-bond carbon has one single bond to a CH₃ group and the double bond to the other carbon.",
           "That gives three bond contributions before adding H.",
           "Each needs one H; total formula is C₄H₈."
@@ -945,6 +994,11 @@
         "src": "/diagrams/chemistry-alkene-displayed.svg",
         "alt": "Original fully displayed ethene, propene, but-1-ene, but-2-ene and the branched C4 alkene. Double bonds and every hydrogen are drawn without stereochemical assignments.",
         "caption": "Different double-bond positions can change connectivity. Drawing orientation does not create a new isomer; stereochemical descriptors are not required."
+      },
+      "practice": {
+        "question": "Draw structural and fully displayed formulas for ethene, propene, both unbranched C₄H₈ alkenes, and the branched acyclic C₄H₈ alkene. Name the unbranched structures and check the branch carbon’s H count. Are cis/trans or E/Z labels required?",
+        "answer": "Ethene CH₂=CH₂; propene CH₂=CHCH₃; but-1-ene CH₂=CHCH₂CH₃; but-2-ene CH₃CH=CHCH₃; branched CH₂=C(CH₃)₂. Expand all C–H bonds and both C=C lines as on the original drawing sheet. In the branched structure, the substituted double-bond carbon has two C–C single bonds plus the double bond and no H. Molecular totals are C₂H₄, C₃H₆, then C₄H₈ for the last three. No cis/trans or E/Z notation is required.",
+        "explanation": "Check connectivity and four bond contributions per carbon. Reversing but-1-ene does not add a different unbranched double-bond position; the stated naming set asks for unbranched names."
       }
     },
     {
@@ -978,7 +1032,12 @@
         "Putting both Br atoms on one carbon for this addition model.",
         "Keeping the C=C while adding too many bonds.",
         "Creating HBr as though a hydrogen were substituted."
-      ]
+      ],
+      "practice": {
+        "question": "Draw structural and fully displayed products when Br₂ adds to CH₂=CHCH₂CH₃ in the required model. Show where each Br attaches, recount atoms and decide whether HBr is a product.",
+        "answer": "CH₂=CHCH₂CH₃ + Br₂ → CH₂BrCHBrCH₂CH₃. Change the original C=C to one C–C bond; attach one Br to each of those two carbons. In the full drawing, the terminal former double-bond carbon has two H and one Br; the other has one H and one Br, in addition to its C neighbours. Both sides contain C₄H₈Br₂. No H is replaced and no HBr is produced in this addition model.",
+        "explanation": "Keep the carbon skeleton and all original hydrogens. Putting both Br on one carbon while retaining the same H counts would not represent this required across-double-bond addition."
+      }
     },
     {
       "id": "bromine-water-test",
@@ -1011,7 +1070,12 @@
         "Treating physical movement of colour between layers as proof of reaction.",
         "Using UV during the distinction and ignoring alkane substitution.",
         "Claiming every decolourising unknown must be one pure alkene."
-      ]
+      ],
+      "practice": {
+        "question": "Two specified candidates are hexane and an alkene. Under matched mixing/reagent conditions without UV, A promptly changes bromine water from orange-brown to colourless; B retains the colour. Identify the supported candidate for each. Explain a two-layer, excess-reagent or unrestricted-unknown limitation.",
+        "answer": "A supports the alkene and B hexane in this restricted comparison. Avoid UV/strong sunlight that could allow alkane substitution. Bromine moving into another liquid layer is not the same as chemical removal of its colour; excess reagent may remain coloured despite some addition. An unrestricted unknown can contain other bromine-reactive substances, so decolourisation alone does not identify a unique pure alkene.",
+        "explanation": "State the starting reagent colour and its disappearance, not merely that the sample looks clear. Use the approved dilute reagent and supervised comparison; this is a proposed interpretation, not an experiment performed here."
+      }
     },
     {
       "id": "alcohol-functional-group",
@@ -1040,7 +1104,12 @@
       "commonMistakes": [
         "Treating an alcohol’s OH as OH⁻ in solution.",
         "Calling every organic O–H an alcohol."
-      ]
+      ],
+      "practice": {
+        "question": "Compare CH₃CH₂OH, CH₃COOH and aqueous OH⁻. Which contains the alcohol functional group, which contains a carboxyl group, and which is an ion? Give the oxygen bonding and hydrocarbon classification for ethanol.",
+        "answer": "CH₃CH₂OH is an alcohol: its oxygen makes single bonds to the carbon framework and H. CH₃COOH has the complete C(=O)–OH carboxyl group, not an isolated alcohol group. OH⁻ is hydroxide, an ion, rather than the covalent –OH connection in ethanol. Ethanol contains oxygen and is not a hydrocarbon.",
+        "explanation": "Read connections around the O–H, not just the letters OH. Normal neutral alcohol oxygen has two bonds."
+      }
     },
     {
       "id": "alcohol-drawings",
@@ -1062,8 +1131,9 @@
         "The explicit 4.30C set has the OH at carbon 1 for the three- and four-carbon examples. Do not silently substitute propan-2-ol when the task asks for the named primary structure. The original diagrams show connections, not real molecular angles."
       ],
       "example": {
-        "question": "Give the structural formula of butan-1-ol and count its atoms.",
+        "question": "Draw structural and fully displayed butan-1-ol and count its atoms.",
         "steps": [
+          "Draw four connected carbons with single bonds and C–O–H at the terminal carbon. Expand H counts3,2,2,2 on the carbons and one on oxygen; use the original displayed sheet to check every bond.",
           "CH₃CH₂CH₂CH₂OH.",
           "There are four carbons, ten hydrogens including the O–H hydrogen, and one oxygen.",
           "Its molecular formula is C₄H₁₀O."
@@ -1078,6 +1148,11 @@
         "src": "/diagrams/chemistry-alcohol-displayed.svg",
         "alt": "Full displayed formulas of methanol, ethanol, propan-1-ol and butan-1-ol, showing every hydrogen including the one on oxygen.",
         "caption": "Four named primary structures. Position 1 is explicit for propanol and butanol; schematic geometry."
+      },
+      "practice": {
+        "question": "Draw and name structural and fully displayed formulas for the four specified alcohols. Give each molecular formula and distinguish the required three-carbon structure from propan-2-ol.",
+        "answer": "Methanol CH₃OH (CH₄O); ethanol CH₃CH₂OH (C₂H₆O); propan-1-ol CH₃CH₂CH₂OH (C₃H₈O); butan-1-ol CH₃CH₂CH₂CH₂OH (C₄H₁₀O). Expand every C–H, C–O and O–H bond as on the original drawing sheet. In the three-/four-carbon required structures the OH-bearing terminal carbon is CH₂, not the middle CH(OH) of propan-2-ol. Count the O–H hydrogen.",
+        "explanation": "The source accepts propanol and butanol for its specified primary structures; using -1-ol makes the position explicit. All four carbons/oxygens must satisfy their normal valencies."
       }
     },
     {
@@ -1108,7 +1183,12 @@
       "commonMistakes": [
         "Using the hydrocarbon-only oxygen count for an alcohol.",
         "Giving ethanoic acid as the complete-combustion product."
-      ]
+      ],
+      "practice": {
+        "question": "Balance complete combustion of two ethanol molecules with whole-number coefficients. Check all element totals, and contrast the organic carbon destination with controlled oxidation to ethanoic acid.",
+        "answer": "2C₂H₅OH + 6O₂ → 4CO₂ + 6H₂O. Both sides have C₄H₁₂O₁₄; include the two oxygens already present in the two alcohol molecules. Complete combustion puts the carbon into CO₂, whereas controlled acid-forming oxidation retains the two-carbon framework in each ethanoic acid molecule.",
+        "explanation": "These routes have different products and conditions even though the specified reactions are oxidation routes. Do not use a hydrocarbon-only oxygen count for an alcohol."
+      }
     },
     {
       "id": "ethanol-acid-oxidation",
@@ -1140,7 +1220,12 @@
         "Saying the acid-forming route is the same as glucose fermentation.",
         "Substituting a different oxidant for the named course reagent.",
         "Interpreting [O] as a literal gas formula."
-      ]
+      ],
+      "practice": {
+        "question": "Plan on paper two specified routes that turn ethanol into ethanoic acid: identify the biological oxygen condition and the named chemical reagent/acid/heating condition. Give balanced oxygen and [O] models and distinguish both from glucose fermentation.",
+        "answer": "Microbial oxidation uses suitable microorganisms and oxygen from air: C₂H₅OH + O₂ → CH₃COOH + H₂O. The chemical route heats ethanol with potassium dichromate(VI) in dilute sulfuric acid, with conditions/sufficient oxidant that give the acid endpoint: CH₃CH₂OH + 2[O] → CH₃COOH + H₂O. [O] represents oxidising equivalents. Anaerobic glucose fermentation instead makes ethanol and CO₂.",
+        "explanation": "Do not swap the named oxidant or confuse dilute sulfuric acid here with the concentrated catalyst example for ester preparation. No actual dichromate experiment or disposal has been performed."
+      }
     },
     {
       "id": "ethanol-steam-route",
@@ -1173,7 +1258,12 @@
       "commonMistakes": [
         "Using sulfuric acid as the named industrial catalyst.",
         "Giving fermentation’s temperature for steam hydration."
-      ]
+      ],
+      "practice": {
+        "question": "Correct a route card that says “ethene + steam → ethanol; yeast catalyst, 30 °C, atmospheric pressure”. Give the balanced formation equation, all specified industrial conditions and why the catalyst is not a consumed reactant.",
+        "answer": "C₂H₄ + H₂O → C₂H₅OH in the simplified formation equation. Use phosphoric acid catalyst, about 300 °C and about 60–70 atm. Yeast enzymes and about 30 °C belong to fermentation. A catalyst provides a faster pathway and is chemically unchanged overall, so it is written as a condition rather than consumed in this overall equation.",
+        "explanation": "This is the specified industrial route, not an instruction to pressurise a school flask or a claim of complete one-pass conversion."
+      }
     },
     {
       "id": "ethanol-fermentation",
@@ -1206,7 +1296,12 @@
         "Writing oxygen as a required reactant in this route.",
         "Calling the fermentation mixture pure ethanol.",
         "Blocking the CO₂ outlet."
-      ]
+      ],
+      "practice": {
+        "question": "Write the glucose fermentation equation and word products, state the required biological/air/temperature conditions, and calculate the ideal ethanol amount from 0.300 mol glucose converted. Is the collected liquid necessarily pure ethanol?",
+        "answer": "C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂: glucose forms ethanol and carbon dioxide. Use enzymes in yeast, absence of air and an optimum of about 30 °C. The ideal ratio gives 0.600 mol ethanol from 0.300 mol glucose converted; actual yield needs measurement. The liquid remains a mixture containing water and other substances, not automatically pure ethanol.",
+        "explanation": "Air exclusion is compatible with a suitable CO₂ outlet; it does not justify blocking a gas-producing vessel. The balanced equation conserves C₆H₁₂O₆."
+      }
     },
     {
       "id": "fermentation-conditions",
@@ -1237,7 +1332,12 @@
       "commonMistakes": [
         "Saying enzymes are killed while ignoring denaturation as the explanation.",
         "Confusing absence of air with an unsafe blocked gas outlet."
-      ]
+      ],
+      "practice": {
+        "question": "Explain two faults in an invented ethanol-fermentation plan: continuous air supply and “the hotter the better”. State the course conditions and why air exclusion must not mean a rigidly sealed gas outlet.",
+        "answer": "The intended ethanol route is anaerobic; air permits oxygen-supported pathways instead of maintaining the intended conditions. Use the specified optimum near 30 °C: low temperature slows enzyme activity, while excessive heat can denature enzymes rather than continually increase useful rate. Fermentation generates CO₂, so use approved air-excluding apparatus that still permits gas release, not a blocked rigid vessel.",
+        "explanation": "Conditions depend on the desired product and enzyme-controlled process. Microbial oxidation of ethanol to acid uses oxygen and is a different route."
+      }
     },
     {
       "id": "carboxyl-group",
@@ -1266,7 +1366,12 @@
       "commonMistakes": [
         "Drawing C–O–O–H without the required carbonyl.",
         "Counting only the hydrocarbon fragment."
-      ]
+      ],
+      "practice": {
+        "question": "Draw the complete functional group in CH₃CH₂COOH with its bonds to both oxygens. Count all carbons and explain why C–O–O–H or a free hydroxide ion would not be the same group.",
+        "answer": "Draw CH₃CH₂–C(=O)–O–H. The carbonyl carbon counts as the third carbon, so this is propanoic acid. It has a double bond to one O, a single bond to the OH oxygen and a single bond to the carbon chain. Each O has two bond contributions. C–O–O–H omits the carbonyl connection; free OH⁻ is an ion, not this covalent carboxyl group.",
+        "explanation": "Treat –C(=O)–OH as one functional group and include its carbon in the chain name."
+      }
     },
     {
       "id": "carboxylic-drawings",
@@ -1288,8 +1393,9 @@
         "The own required set ends at four carbons for these unbranched acid drawings. Do not replace an acid name with the corresponding alcohol’s -ol suffix. The drawing sheet shows connections rather than realistic bond geometry."
       ],
       "example": {
-        "question": "Write the structural formula of propanoic acid and count carbons.",
+        "question": "Draw structural and fully displayed propanoic acid and count its carbons.",
         "steps": [
+          "Draw CH₃–CH₂–C(=O)–O–H, expand the five C-bound H atoms and keep the O–H bond and carbonyl double bond.",
           "CH₃CH₂COOH.",
           "The CH₃ and CH₂ supply two carbons.",
           "The COOH carbon makes three in total."
@@ -1304,6 +1410,11 @@
         "src": "/diagrams/chemistry-carboxylic-displayed.svg",
         "alt": "Full displayed methanoic, ethanoic, propanoic and butanoic acids. Each shows C=O and C–O–H with the carboxyl carbon included in the carbon total.",
         "caption": "Count the carboxyl carbon in the name and preserve the double bond to oxygen."
+      },
+      "practice": {
+        "question": "Draw structural and fully displayed formulas and name all four required unbranched carboxylic acids. Give each molecular formula, expand all H bonds and show both oxygen connections.",
+        "answer": "Methanoic acid HCOOH (CH₂O₂); ethanoic acid CH₃COOH (C₂H₄O₂); propanoic acid CH₃CH₂COOH (C₃H₆O₂); butanoic acid CH₃CH₂CH₂COOH (C₄H₈O₂). In each displayed drawing show C=O and C–O–H, with every C–H bond as on the drawing sheet. Methanoic acid has H directly bonded to the carbonyl carbon; in the other three that position bonds to the carbon chain. Count the COOH carbon and O–H hydrogen.",
+        "explanation": "The first four named structures are not the corresponding alcohols. Check four bond contributions at each C and two at each O; an acid formula without C=O is not a correct displayed answer."
       }
     },
     {
@@ -1336,7 +1447,12 @@
         "Giving oxygen gas instead of hydrogen.",
         "Keeping the acid’s O–H in each carboxylate ion.",
         "Assuming copper behaves like magnesium in dilute acid."
-      ]
+      ],
+      "practice": {
+        "question": "For dilute aqueous propanoic acid reacting with magnesium, write word and balanced formula equations for the salt and gas. Explain the salt’s two carboxylate groups and name the gas test. Would the same observation automatically follow for copper?",
+        "answer": "Propanoic acid + magnesium → magnesium propanoate + hydrogen. 2CH₃CH₂COOH + Mg → Mg(CH₃CH₂COO)₂ + H₂. Mg²⁺ needs two singly negative propanoate ions. Both sides have C₆H₁₂O₄Mg; hydrogen gives a squeaky pop with a lighted splint in the supervised test. Copper is below hydrogen in the relevant simple acid-reactivity context, so the magnesium result cannot automatically be transferred to copper.",
+        "explanation": "The acidic O–H hydrogen is removed in each carboxylate; the organic carbon framework is retained. Weak acid does not mean no possible metal reaction."
+      }
     },
     {
       "id": "carboxylic-carbonate-reaction",
@@ -1367,7 +1483,12 @@
       "commonMistakes": [
         "Writing hydrogen for the carbonate reaction.",
         "Omitting water or using one acid molecule per carbonate."
-      ]
+      ],
+      "practice": {
+        "question": "Write the balanced reaction of ethanoic acid with calcium carbonate. Give the salt formula, all products and the appropriate gas test. Compare the gas with that made by magnesium metal and the acid.",
+        "answer": "2CH₃COOH + CaCO₃ → Ca(CH₃COO)₂ + H₂O + CO₂. The salt is calcium ethanoate; two ethanoate ions balance Ca²⁺. Both sides have C₅H₈O₇Ca. CO₂ clouds limewater in the separate supervised test, whereas a suitable magnesium-metal reaction makes H₂, tested with a lighted-splint pop.",
+        "explanation": "Bubbles alone do not identify the gas. Carbonate contributes the carbon in CO₂; this is not complete combustion of the acid’s carbon chain."
+      }
     },
     {
       "id": "vinegar-solution",
@@ -1397,7 +1518,12 @@
       "commonMistakes": [
         "Calling vinegar ethanol.",
         "Treating acidic behaviour as proof of the exact food mixture."
-      ]
+      ],
+      "practice": {
+        "question": "A sample labelled vinegar reacts with a carbonate. A student concludes that it is pure ethanoic acid of a known concentration. Correct the composition and inference without proposing a taste test.",
+        "answer": "Vinegar is an aqueous solution containing ethanoic acid, with water and potentially other dissolved substances. A carbonate response supports an acid reaction in context, but does not establish pure ethanoic acid, a unique unrestricted identity or a numerical acid concentration.",
+        "explanation": "Use supplied quantitative measurements if concentration is required. “Aqueous solution” is a mixture description, not a synonym for the pure liquid acid."
+      }
     },
     {
       "id": "ester-group",
@@ -1427,7 +1553,12 @@
       "commonMistakes": [
         "Calling every molecule with two oxygens a carboxylic acid.",
         "Giving the ester oxygen three bonds."
-      ]
+      ],
+      "practice": {
+        "question": "Draw the functional connections in CH₃COOCH₃ and CH₃COOH. Identify which is an ester and explain how the single-bond oxygen’s neighbour changes, while keeping all C/O valencies valid.",
+        "answer": "Draw CH₃–C(=O)–O–CH₃ for the ester methyl ethanoate, and CH₃–C(=O)–O–H for ethanoic acid. In the ester, the single-bond O connects carbonyl C to an organic C group; in the acid it connects carbonyl C to H. That O has two single bonds in either drawing, while the carbonyl C has four bond contributions.",
+        "explanation": "Two oxygen atoms alone do not establish an ester. Keep the carbonyl and do not give its single-bond oxygen an extra third bond."
+      }
     },
     {
       "id": "ethyl-ethanoate-formation",
@@ -1459,7 +1590,12 @@
         "Giving methanol for an ethyl ester.",
         "Treating sulfuric acid as incorporated into every ester molecule.",
         "Assuming the reversible equation means complete conversion."
-      ]
+      ],
+      "practice": {
+        "question": "Write word and balanced structural equations for ethanol plus ethanoic acid forming the named ester. Identify both name fragments, catalyst role and water product. Does a reversible mixture necessarily contain pure ester?",
+        "answer": "Ethanol + ethanoic acid ⇌ ethyl ethanoate + water, with an acid catalyst. CH₃COOH + CH₃CH₂OH ⇌ CH₃COOCH₂CH₃ + H₂O, conserving C₄H₁₀O₃. Ethanol gives the ethyl part and ethanoic acid the ethanoate part. The acid catalyst is not consumed in the overall equation; starting substances can remain in the reversible reaction mixture.",
+        "explanation": "A smell or organic layer is not proof of complete conversion or purity. This specific named reaction is required even though the practical reference allows an ester such as this one."
+      }
     },
     {
       "id": "ethyl-ethanoate-drawing",
@@ -1479,8 +1615,9 @@
         "The original drawing identifies the acid- and alcohol-derived parts without copying a source reaction figure. A shortened structural formula is useful for reading, but an explicitly displayed answer needs every bond."
       ],
       "example": {
-        "question": "How many hydrogens are on the carbonyl carbon in ethyl ethanoate?",
+        "question": "Draw fully displayed ethyl ethanoate and check its carbonyl carbon’s hydrogens.",
         "steps": [
+          "Draw CH₃–C(=O)–O–CH₂–CH₃ and expand all eight C-bound H atoms, keeping both oxygen connections as shown on the original sheet.",
           "It has one bond to CH₃, a double bond to oxygen and one bond to the other oxygen.",
           "That totals four bond contributions.",
           "It has no hydrogen."
@@ -1495,6 +1632,11 @@
         "src": "/diagrams/chemistry-ethyl-ethanoate.svg",
         "alt": "Full displayed ethyl ethanoate with CH3 connected to the carbonyl carbon and the single-bond oxygen connected to CH2CH3; every hydrogen shown.",
         "caption": "Acid-derived CH₃C(=O) and alcohol-derived OCH₂CH₃ connect through the ester link."
+      },
+      "practice": {
+        "question": "Draw ethyl ethanoate as both structural and fully displayed formulas from its name. Include every H and bond, identify the acid-derived and alcohol-derived fragments, and give molecular and empirical formulas. Does its molecular formula alone identify the structure?",
+        "answer": "Structural formula CH₃–C(=O)–O–CH₂–CH₃. In the fully displayed drawing expand the acid-side CH₃ into three C–H bonds, leave no H on the carbonyl C, show C=O and C–O–C, then two H on the O-linked CH₂ and three on the final CH₃. Compare all bonds with the original diagram. Acid-derived CH₃C(=O) joins alcohol-derived OCH₂CH₃. Molecular formula C₄H₈O₂, empirical C₂H₄O; the molecular formula alone does not specify connectivity.",
+        "explanation": "The single-bond O has exactly two connections. A condensed structural formula is not itself the fully displayed answer requested; draw and check every atom and bond."
       }
     },
     {
@@ -1527,7 +1669,12 @@
       "commonMistakes": [
         "Counting only CH₃CH₂ and calling the acid ethanoic.",
         "Swapping the alcohol-derived and acid-derived name parts."
-      ]
+      ],
+      "practice": {
+        "question": "Paper 2C: (a) from methanol and pentanoic acid, write/name the ester and draw its fully displayed structure; (b) given CH₃CH₂COOCH₂CH₂CH₃, deduce the acid/alcohol, name the ester and draw both starting structures. Check the carbon totals and say why the name parts cannot be swapped.",
+        "answer": "(a) Methyl pentanoate, CH₃CH₂CH₂CH₂C(=O)OCH₃: five carbons in the acid-derived part, one in methyl, six total. Expand every C–H bond, C=O and C–O–C in the displayed drawing. (b) Propyl propanoate, from propanoic acid CH₃CH₂C(=O)OH and propan-1-ol CH₃CH₂CH₂OH; each starting compound has three carbons, giving six in the ester. Draw the acid C=O/O–H and alcohol C–O–H plus all individual C–H bonds. The first name part comes from the alcohol and the second from the acid, including its carbonyl C.",
+        "explanation": "This works from named starting compounds to ester and back from structure to both starting compounds, within six total carbons. Equal overall formulas can still conceal different ester connections."
+      }
     },
     {
       "id": "ester-volatility-uses",
@@ -1557,7 +1704,12 @@
       "commonMistakes": [
         "Defining volatile as flammable rather than readily entering vapour.",
         "Treating smell as a unique compound-identification test."
-      ]
+      ],
+      "practice": {
+        "question": "Explain how an ester’s volatility and distinctive smell can support perfume and food-flavouring uses. Correct “volatile means flammable, and a pleasant-smelling unknown must be pure and edible”.",
+        "answer": "Volatile means readily entering the vapour phase; vapour molecules can reach smell receptors. Suitable esters therefore have uses in perfumes and food flavourings. Volatile is not the definition of flammable, and a smell does not uniquely identify a compound, prove purity or establish that an unknown is safe to eat.",
+        "explanation": "Suitability depends on the particular ester and formulation. Describe the property-to-use connection without turning a class-level course fact into a universal safety claim."
+      }
     },
     {
       "id": "ester-practical-plan",
@@ -1572,7 +1724,7 @@
         "purity"
       ],
       "paragraphs": [
-        "In the approved small-scale method, combine the named alcohol and carboxylic acid with the teacher-specified acid catalyst and warm using a controlled water bath. Ethanol and ethanoic acid are the required ethyl ethanoate example. Avoid a direct flame around the flammable organic mixture, and use eye protection and approved acid handling.",
+        "In a selected supervised example, combine ethanol and ethanoic acid with the teacher-controlled concentrated sulfuric acid catalyst used in the Pearson practical-guide example, then warm in a controlled water bath. The specification asks for an ester such as ethyl ethanoate; it does not restrict every practical to this ester. Avoid a direct flame around the flammable organic mixture, and use eye protection and approved concentrated-acid handling.",
         "After the specified heating and cooling, transfer or dilute the reaction mixture as directed to help separate or observe the ester sample. A teacher-approved sodium carbonate treatment can neutralize residual acid and make its smell less dominant; it releases CO₂, so the operation must not be sealed. Further washing/separation depends on the actual method and required sample purity.",
         "A characteristic smell or a separate organic layer supports the demonstration, not a measured yield or proof of a pure dry sample. Do not inhale directly from a tube. The method outline is source-checked but not a performed practical or a fully specified substitute for laboratory risk assessment and quantities."
       ],
@@ -1589,7 +1741,33 @@
         "Heating the flammable mixture directly over a flame.",
         "Sealing a carbonate treatment that evolves CO₂.",
         "Calling a smell proof of pure ester."
-      ]
+      ],
+      "practice": {
+        "question": "For a supervised ethyl ethanoate example, name the starting compounds and chosen acid catalyst, explain controlled water-bath heating and later carbonate treatment, and state why a separate layer or smell does not certify a pure dry product. Is ethyl ethanoate the only ester permitted by the practical wording?",
+        "answer": "Use ethanol and ethanoic acid; the selected Pearson-guide example uses concentrated sulfuric acid as acid catalyst, under approved acid handling. Warm in a controlled water bath rather than a direct flame near flammable organics. After the approved heating/cooling sequence, a suitable sodium carbonate treatment neutralises residual acid and releases CO₂, so it must not be sealed. Method-specific washing/separation may follow, but a layer or characteristic smell does not prove purity/dryness. The practical says an ester such as ethyl ethanoate, rather than excluding every alternative.",
+        "explanation": "These are proposed supervised method and interpretation steps, not a performed experiment. Warming speeds reaction; carbonate after the reaction does not replace the catalyst. Direct inhalation or tasting is not part of the method."
+      },
+      "practical": {
+        "apparatus": [
+          "Teacher-approved small-scale reaction tube, controlled water bath, suitable holders and transfer apparatus; ethanol, ethanoic acid and the selected concentrated sulfuric acid catalyst."
+        ],
+        "method": [
+          "Follow the approved quantities/order for the named alcohol, carboxylic acid and catalyst. Warm the reaction mixture using the controlled water bath rather than a flame near the organic mixture.",
+          "After the specified heating and cooling, transfer/treat the sample as directed. In the selected method, sodium carbonate solution neutralises remaining acid and releases CO₂; keep a suitable unblocked gas path.",
+          "Observe the ester sample using the approved method; further washing, separation or drying depends on the required sample purity. Do not infer measured yield from smell/layer alone."
+        ],
+        "variables": [
+          "Identify the chosen alcohol/acid and maintain the approved quantities, catalyst, heating time/temperature and transfer procedure for any comparison."
+        ],
+        "safety": [
+          "Wear eye protection; concentrated sulfuric acid is corrosive and must be handled under the approved teacher-controlled procedure. Organic liquids can be flammable: avoid direct flames.",
+          "Do not seal a carbonate neutralisation or inhale directly from the tube; follow approved handling and waste collection."
+        ],
+        "quality": [
+          "The reversible mixture can retain alcohol/acid. Neutralising acid changes the sample but does not replace the reaction catalyst or certify conversion.",
+          "A smell or layer is not proof of a pure dry product. This is a written supervised plan, with no experiment performed here."
+        ]
+      }
     },
     {
       "id": "addition-monomers",
@@ -1620,7 +1798,12 @@
       "commonMistakes": [
         "Leaving C=C in the required addition-polymer repeat unit.",
         "Adding water as a product of ethene addition polymerisation."
-      ]
+      ],
+      "practice": {
+        "question": "Draw three connected repeat units of the addition polymer from CH₂=CHCl, keeping all substituents. Describe what happens to the double bond, how the units join and whether water is removed.",
+        "answer": "A chain segment is –CH₂–CHCl–CH₂–CHCl–CH₂–CHCl–, with bonds continuing at both ends. Draw each backbone C–C single bond, each H and Cl, and the continuation bonds. Each monomer’s C=C becomes C–C while new bonds join neighbouring units; the attached atoms remain on their corresponding carbons. No water or other small molecule is removed in this addition model.",
+        "explanation": "A repeat unit is not a free molecule with uncapped valencies: its outward bonds connect neighbouring units. Many monomers form the polymer, rather than two disconnected structures."
+      }
     },
     {
       "id": "addition-repeat-drawings",
@@ -1658,6 +1841,11 @@
         "src": "/diagrams/chemistry-addition-repeats.svg",
         "alt": "Full displayed repeat units for polyethene, polypropene, polychloroethene and polytetrafluoroethene; branches, all hydrogens and halogens, bonds through both brackets and n outside.",
         "caption": "Each boundary bond joins the neighbouring unit. No C=C remains in these required repeat units."
+      },
+      "practice": {
+        "question": "Draw fully displayed bracketed repeat units, with n outside and bonds through both brackets, for poly(ethene), poly(propene), poly(chloroethene) and poly(tetrafluoroethene). Keep every H, side group and halogen and check all backbone carbon valencies.",
+        "answer": "The structural checks are [–CH₂–CH₂–]ₙ, [–CH₂–CH(CH₃)–]ₙ, [–CH₂–CHCl–]ₙ and [–CF₂–CF₂–]ₙ. Expand all H/halogen and branch bonds as on the original displayed sheet. In poly(propene) the substituted backbone C has one H and a CH₃ branch; in poly(chloroethene) it has one H and one Cl; PTFE retains four F per two-carbon unit. Count each outward boundary bond towards backbone carbon valency. The backbone C–C is single in each case.",
+        "explanation": "The printed condensed checks do not replace your fully displayed drawing. Do not put H caps inside the brackets or leave the monomer’s C=C in these repeats."
       }
     },
     {
@@ -1689,7 +1877,12 @@
       "commonMistakes": [
         "Forming C=C to the methyl branch instead of between the backbone carbons.",
         "Adding atoms not present in the repeat unit."
-      ]
+      ],
+      "practice": {
+        "question": "Draw the monomers corresponding to [–CH₂–CHCl–]ₙ and [–CF₂–CF₂–]ₙ. Then draw a bracketed repeat from CH₂=CHCH₃ and mark which carbons form the backbone. Does the methyl branch become an extra backbone carbon?",
+        "answer": "The recovered monomers are CH₂=CHCl (chloroethene) and CF₂=CF₂ (tetrafluoroethene); draw all their individual bonds. Propene gives [–CH₂–CH(CH₃)–]ₙ with the original two C=C carbons as adjacent backbone carbons, outward boundary bonds and n. Its CH₃ stays attached as a side group, not a third backbone carbon for this repeat.",
+        "explanation": "Going backward replaces the outward chain connections with a double bond between the correct two backbone carbons; going forward opens that double bond and extends both ends. This simple rule is not a reverse method for condensation polymers."
+      }
     },
     {
       "id": "addition-disposal",
@@ -1720,7 +1913,12 @@
       "commonMistakes": [
         "Calling inertness proof that burning cannot make harmful gases.",
         "Giving hydrogen chloride for a polymer containing no chlorine."
-      ]
+      ],
+      "practice": {
+        "question": "A discarded poly(ethene) object breaks into small fragments. A student calls that biodegradation and says any addition polymer can be burned harmlessly because it is inert. Correct both claims, comparing possible incomplete-combustion CO and chlorine-containing polymer products.",
+        "answer": "Physical fragmentation does not establish biological chemical breakdown of the chain; these relatively inert addition polymers do not biodegrade readily and can persist. Inert under ordinary conditions does not mean harmless combustion. Incomplete burning can form toxic CO; chlorine-containing poly(chloroethene) can also give HCl, whereas a chlorine-free polymer cannot supply chlorine atoms for that gas from itself.",
+        "explanation": "Burning products depend on polymer composition and combustion conditions. This explains disposal problems; it is not a home-burning method or a claim that every polymer yields the same toxic gases."
+      }
     },
     {
       "id": "polyester-condensation",
@@ -1753,7 +1951,12 @@
         "Removing both oxygens from the acid group.",
         "Calling any single ester molecule a polyester.",
         "Claiming no small molecule leaves in condensation."
-      ]
+      ],
+      "practice": {
+        "question": "Compare HOOC–COOH plus HO–CH₂–CH₂–OH with a monocarboxylic acid plus a monohydric alcohol. Explain which pair can repeatedly extend a polyester chain, which atoms leave at each ester link and how this differs from alkene addition.",
+        "answer": "The diacid and diol each have two reacting ends, allowing onward links to neighbouring monomers. Each ester link eliminates water from acid –OH plus H from alcohol –OH; the acid carbonyl and alcohol oxygen remain in the ester connection. A single-function acid/alcohol pair can form a small ester but cannot by itself keep extending this diacid–diol chain. Alkene addition retains its monomer atoms without eliminating water.",
+        "explanation": "Count functional ends, not just molecule size. Do not remove both acid oxygens or insert an O–O bond when making an ester link."
+      }
     },
     {
       "id": "polyester-repeat-drawing",
@@ -1790,6 +1993,11 @@
         "src": "/diagrams/chemistry-polyester-repeat.svg",
         "alt": "Original full displayed ethanedioic acid, ethanediol and their polyester repeat, retaining two carbonyls, two CH2 carbons and oxygen connections through the brackets.",
         "caption": "Read the ester link across the repeat boundary as well as the one inside it. This is schematic connectivity."
+      },
+      "practice": {
+        "question": "From ethanedioic acid and ethanediol, draw both monomers and a fully displayed bracketed polyester repeat with continuation bonds and n. Trace both carbonyls and both CH₂ carbons. Check the repeat formula by loss of water and compare the course 2n-water shorthand with one finite open chain made from n molecules of each monomer.",
+        "answer": "Draw HO–C(=O)–C(=O)–OH and HO–CH₂–CH₂–OH, expanding every H bond. The repeat is [–C(=O)–C(=O)–O–CH₂–CH₂–O–]ₙ, fully expanded as on the original diagram. Both carbonyls are diacid-derived; both CH₂ carbons and single-bond chain oxygens are diol-derived. The right boundary O links to the next unit’s carbonyl C, so an ester link crosses that boundary. C₂H₂O₄ + C₂H₆O₂ − 2H₂O gives repeat C₄H₄O₄. The repeating-unit shorthand uses 2n waters and omits ends; one finite unclosed chain of 2n monomers has 2n−1 links/waters.",
+        "explanation": "The finite-end comparison explains the shorthand and does not change the required source repeat. Every displayed carbon/oxygen must retain normal valency; outward bonds are chain continuations, not extra H atoms."
       }
     },
     {
@@ -1821,7 +2029,12 @@
       "commonMistakes": [
         "Replacing some with all.",
         "Treating bio-based and biodegradable as identical."
-      ]
+      ],
+      "practice": {
+        "question": "A label says a polyester uses bio-derived feedstock. Can that alone prove it rapidly biodegrades in seawater? State the source’s qualified biopolyester claim and what evidence would be needed for a particular breakdown claim.",
+        "answer": "No. Some polyesters, called biopolyesters in this course context, are biodegradable; this does not mean all polyesters rapidly biodegrade in every environment. Bio-derived feedstock concerns origin, whereas biodegradation concerns biological breakdown. A specific claim needs the polymer identity, organisms/environment, moisture/temperature and measured extent/rate under those conditions.",
+        "explanation": "An ester link can be susceptible to breakdown without establishing a universal useful degradation rate. Keep “some”, and do not turn feedstock origin or fragmentation into proof of biodegradation."
+      }
     }
   ]
 }

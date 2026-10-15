@@ -3,11 +3,12 @@ import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
 import inventory from '../research/syllabus/4CH1-organic-foundations.json' with { type: 'json' };
 import review from '../research/teaching-reviews/4CH1-organic-oil-2026-10-14.json' with { type: 'json' };
+import current from '../research/teaching-reviews/4CH1-organic-foundations-2026-10-15.json' with { type: 'json' };
 
-void test('oil teaching promotes twelve exact both-paper identities without claiming Organic chapter or exam completion', () => {
-  assert.deepEqual(inventory.points.filter((p) => p.teachingCoverage === 'complete').map((p) => p.reference),
-    Array.from({ length: 12 }, (_, i) => `4.${i + 7}`));
-  assert.equal(inventory.points.filter((p) => p.teachingCoverage === 'partial').length, 16);
+void test('original twelve oil decisions remain exact when the later foundations review completes authored coverage', () => {
+  assert.deepEqual(review.points.map((p) => p.pointId.split(':').at(-1)), Array.from({ length: 12 }, (_, i) => `4.${i + 7}`));
+  assert.equal(inventory.points.filter((p) => p.teachingCoverage === 'complete').length, 28);
+  assert.deepEqual(current.points.filter((p) => review.points.some((old) => old.pointId === p.pointId)), review.points);
   assert.ok(inventory.points.every((p) => p.components.join(',') === '1C,2C'));
   assert.equal(review.points.reduce((n, p) => n + p.requirements.length, 0), 35);
   assert.equal(review.humanReviewed, false); assert.equal(review.practicalTrialsPerformed, false);

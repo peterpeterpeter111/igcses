@@ -1,0 +1,776 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4CH1",
+  "documentId": "4CH1-spec",
+  "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "sourceVisualPages": [
+    29,
+    30
+  ],
+  "sourcePrintedPages": [
+    23,
+    24
+  ],
+  "reviewDate": "2026-10-15",
+  "reviewer": "Codex root authored/source review with independent bounded audits",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "authored-teaching-coverage",
+  "policyVersion": 1,
+  "practicalTrialsPerformed": false,
+  "examTemplateCalibrationComplete": false,
+  "noteRef": "content/notes/chemistry-organic.json",
+  "inventorySha256": "cd0b0ecbf340cbdd20119c8f2ece00e9300ce0ef6954c86d01282261022963f1",
+  "auditRef": "research/curriculum-audits/4CH1-organic-foundations.json",
+  "auditSha256": "feaae0c77709e356f670f5daaa0d67023d4bab5d004e549880951a42e0e38812",
+  "diagramSha256": {
+    "/diagrams/chemistry-alcohol-displayed.svg": "b67040c9f7d83bd1da2701fd461681c13eff2730037a435df5fe66f30052fdd6",
+    "/diagrams/chemistry-alkane-displayed.svg": "d2b72bdfe053f5319891679db604224cee2a79882af45f8b721b5276dafba9b3",
+    "/diagrams/chemistry-alkene-displayed.svg": "d2292cfd4cb9b510b1af056f14bb5e99cbc2d95f90250b478675ad3118a0d4d7",
+    "/diagrams/chemistry-branched-alkanes.svg": "ee3aff508561365c213a96df631e295833b7b3bf0973606cc3098a421769c91d",
+    "/diagrams/chemistry-carboxylic-displayed.svg": "a1ad72d36a0f2a91aa50d3e1ca2ac02f01802d86ce223ecfd0ad9818d913f49d",
+    "/diagrams/chemistry-ethyl-ethanoate.svg": "c51ec9d7a3c202c9e6ece2abb104e6c7425a5b0f8e617fa5256676dc15a19df6",
+    "/diagrams/chemistry-fractionating-column.svg": "5e49437ceedcc7745a45fe49c2d9b6d65569121d4ef0fe301ae406cec37c1af4"
+  },
+  "limitations": [
+    "Agent-reviewed authored written teaching and original fixed practice, not learner/human examiner certification, performed practical competence or active exam templates.",
+    "Source component/drawing/accepted-name limits retained. Illustrations are schematic connections; model values are not actual trials. Whole authored chapter reviewed separately; other curricula/paper gates/calibration unfinished."
+  ],
+  "points": [
+    {
+      "pointId": "4CH1:issue3:4.1",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.1:r1",
+          "verdict": "approved",
+          "judgement": "Original CH4/ethanol check plus unfamiliar C6H14, acid and separate-element mixture require a compound containing C/H only.",
+          "assessmentSectionId": "hydrocarbon-identity"
+        },
+        {
+          "id": "4CH1:issue3:4.1:r2",
+          "verdict": "approved",
+          "judgement": "Every element in the full formula is checked; oxygen-containing acid/alcohol and uncombined elements are explicitly excluded.",
+          "assessmentSectionId": "hydrocarbon-identity"
+        }
+      ],
+      "sectionSha256": {
+        "hydrocarbon-identity": "b861db44393e9d0307cac4366d76b1b9bc2b2b58b6794d948c14bb97109ee8e9"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.2",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.2:r1",
+          "verdict": "approved",
+          "judgement": "Supplied pent-2-ene has five carbons and hydrogen counts3/1/1/2/3, giving actual molecular C5H10.",
+          "assessmentSectionId": "organic-formula-types"
+        },
+        {
+          "id": "4CH1:issue3:4.2:r2",
+          "verdict": "approved",
+          "judgement": "Both original C6H12 and added C5H10 reduce to empirical CH2 without replacing actual molecular counts.",
+          "assessmentSectionId": "organic-formula-types"
+        },
+        {
+          "id": "4CH1:issue3:4.2:r3",
+          "verdict": "approved",
+          "judgement": "CnH2n is qualified as acyclic/one-C=C family, not a unique identity proof.",
+          "assessmentSectionId": "organic-formula-types"
+        },
+        {
+          "id": "4CH1:issue3:4.2:r4",
+          "verdict": "approved",
+          "judgement": "Structural CH3CH=CHCH2CH3 fixes connectivity and position; condensed notation is distinguished from molecular ratio.",
+          "assessmentSectionId": "organic-formula-types"
+        },
+        {
+          "id": "4CH1:issue3:4.2:r5",
+          "verdict": "approved",
+          "judgement": "Full displayed ester drawing demands every H, carbonyl and oxygen connection; supplementary core and alcohol/acid drawing tasks also exercise normal valencies, with C-only families labelled2C.",
+          "assessmentSectionId": "ethyl-ethanoate-drawing"
+        }
+      ],
+      "sectionSha256": {
+        "organic-formula-types": "2b1965ae3e5d91aeb425e7a6448e56cdc372ff06b907ec7a885ce148bcdf5d25",
+        "alcohol-drawings": "ff22fce173e7af0245c82560a6a45d32d6615c366ffa27c655926b3b266484b2",
+        "carboxylic-drawings": "c56d63360c15ad0db3cd4c2c1761ddf872e6c3942cbc25bdd6acc9c5398659e5",
+        "ethyl-ethanoate-drawing": "082d0639e49e02494d8599f73184e6da5d99ef8435068f5ce6871d9be62b9cb2"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.3",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.3:r1",
+          "verdict": "approved",
+          "judgement": "Pentane/hexane differ by CH2 and share alkane family formula/chemistry with gradual physical trends.",
+          "assessmentSectionId": "homologous-series"
+        },
+        {
+          "id": "4CH1:issue3:4.3:r2",
+          "verdict": "approved",
+          "judgement": "C=C functional group is named and characteristic addition distinguished from merely changing carbon count.",
+          "assessmentSectionId": "homologous-series"
+        },
+        {
+          "id": "4CH1:issue3:4.3:r3",
+          "verdict": "approved",
+          "judgement": "Two C4H10 connections share formula but differ in skeleton; orientation duplicates and impossible valencies rejected.",
+          "assessmentSectionId": "structural-isomers"
+        }
+      ],
+      "sectionSha256": {
+        "homologous-series": "e76dc184aadf1d70144073c7b620a51f8ebc6c5af06eb1fdd61e242a9a2e907f",
+        "structural-isomers": "e0279b17d8ea071e712a8e2e31e145a5688965fb168c69c272eec399d8749470"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.4",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.4:r1",
+          "verdict": "approved",
+          "judgement": "Practice names all six unbranched alkane roots, methane through hexane, without extending each smaller drawing set.",
+          "assessmentSectionId": "organic-names"
+        },
+        {
+          "id": "4CH1:issue3:4.4:r2",
+          "verdict": "approved",
+          "judgement": "Written reverse-oriented pentene is numbered from the double-bond end to give pent-1-ene.",
+          "assessmentSectionId": "organic-names"
+        },
+        {
+          "id": "4CH1:issue3:4.4:r3",
+          "verdict": "approved",
+          "judgement": "Explicit longest-chain/lower-branch-locant teaching and 2-methylpentane task distinguish five-carbon parent from six total carbons.",
+          "assessmentSectionId": "organic-names"
+        },
+        {
+          "id": "4CH1:issue3:4.4:r4",
+          "verdict": "approved",
+          "judgement": "Two-direction ester task reaches six total carbons; alcohol/acid root extensions and carboxyl counting are explicitly2C rather than extra both-paper demands.",
+          "assessmentSectionId": "ester-naming"
+        }
+      ],
+      "sectionSha256": {
+        "organic-names": "446717d25a864b27e34185d95ffd5824926a788da899409ae8a813a18961dd97",
+        "alcohol-drawings": "ff22fce173e7af0245c82560a6a45d32d6615c366ffa27c655926b3b266484b2",
+        "carboxylic-drawings": "c56d63360c15ad0db3cd4c2c1761ddf872e6c3942cbc25bdd6acc9c5398659e5",
+        "ester-naming": "9748aedcf45ae1de97a2c0f19c65993af4988fea348456ed87352d2a253153f5"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.5",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.5:r1",
+          "verdict": "approved",
+          "judgement": "Learner draws both C4H10 skeletons with all H and normal carbon valencies; a correct total alone is insufficient.",
+          "assessmentSectionId": "structural-isomers"
+        },
+        {
+          "id": "4CH1:issue3:4.5:r2",
+          "verdict": "approved",
+          "judgement": "Reversal/rotation preserves connections, so it cannot create a third C4H10 isomer.",
+          "assessmentSectionId": "structural-isomers"
+        },
+        {
+          "id": "4CH1:issue3:4.5:r3",
+          "verdict": "approved",
+          "judgement": "All three acyclic C5H12 skeletons must be drawn in structural/displayed form; branch CH has oneH and tetra-carbon-connected centralC none.",
+          "assessmentSectionId": "alkane-branched-isomers"
+        },
+        {
+          "id": "4CH1:issue3:4.5:r4",
+          "verdict": "approved",
+          "judgement": "C4H8 atom ratio alone cannot distinguish an acyclic alkene from possible cyclic saturation; family condition remains explicit.",
+          "assessmentSectionId": "structural-isomers"
+        }
+      ],
+      "sectionSha256": {
+        "structural-isomers": "e0279b17d8ea071e712a8e2e31e145a5688965fb168c69c272eec399d8749470",
+        "alkane-branched-isomers": "059fecbceb628eaeee3fa152d3ca083c03be3321dc2f204a105e164e47be5a3b"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.6",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.6:r1",
+          "verdict": "approved",
+          "judgement": "Actual methane/chlorine task replaces oneH and formsHCl, supporting substitution rather than addition.",
+          "assessmentSectionId": "organic-reaction-classes"
+        },
+        {
+          "id": "4CH1:issue3:4.6:r2",
+          "verdict": "approved",
+          "judgement": "Unfamiliar but-1-ene task retains allH and adds oneBr to each original double-bond carbon, giving single C–C.",
+          "assessmentSectionId": "bromine-addition"
+        },
+        {
+          "id": "4CH1:issue3:4.6:r3",
+          "verdict": "approved",
+          "judgement": "Previously reviewed ethane equation conservesC4H12O14; oxygen reaction and CO2/water complete products remain unchanged.",
+          "assessmentSectionId": "hydrocarbon-complete-combustion"
+        },
+        {
+          "id": "4CH1:issue3:4.6:r4",
+          "verdict": "approved",
+          "judgement": "No compulsory radical/curly-arrow mechanism is added to the specified classification and balancing demands.",
+          "assessmentSectionId": "organic-reaction-classes"
+        }
+      ],
+      "sectionSha256": {
+        "organic-reaction-classes": "7d463afcb70e59f265254c7f50d8c99423e713df57e94249110e3438ce306379",
+        "hydrocarbon-complete-combustion": "51dd9693f40b512f56c28790de9d0501fa3e9e96694f7eb45ed5a15e1db37205",
+        "alkane-monosubstitution": "fe86854b506847e56a0b8d755af28ca455256bc106f470cefd7e92034f6375eb",
+        "bromine-addition": "4d076197a6c5c5dbd0b8db98c6d0407c6d7ee63fa0649d61fa77b030d38143ec"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.7",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.7:r1",
+          "verdict": "approved",
+          "judgement": "Actual refinery-sample task explicitlyidentifies mixtureofhydrocarbons,not onecompound.",
+          "assessmentSectionId": "crude-mixture"
+        },
+        {
+          "id": "4CH1:issue3:4.7:r2",
+          "verdict": "approved",
+          "judgement": "No singlemolecularformula/fixedboilingpoint assignedtocrudeoil; rangeevidence doesnotprovepurefractions.",
+          "assessmentSectionId": "crude-mixture"
+        }
+      ],
+      "sectionSha256": {
+        "crude-mixture": "ae88b9b68b53d73dcc27a5aa43415709715cb99a1bbf59e3308e4f1c38ffc841"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.8",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.8:r1",
+          "verdict": "approved",
+          "judgement": "Learnerdraws heatedfeed enteringlowerregion; vaporizedcomponentsrising beforecondensationexplicit.",
+          "assessmentSectionId": "fractional-column"
+        },
+        {
+          "id": "4CH1:issue3:4.8:r2",
+          "verdict": "approved",
+          "judgement": "Drawnhotbottom/cooltop temperaturegradient governsoutletorder,notdensityalone.",
+          "assessmentSectionId": "fractional-column"
+        },
+        {
+          "id": "4CH1:issue3:4.8:r3",
+          "verdict": "approved",
+          "judgement": "InventedA60–90/B180–220/C300–350ranges placedhigh/middle/low,withcondensationexplanation andnonuniversalcutoffqualification.",
+          "assessmentSectionId": "fractional-column"
+        },
+        {
+          "id": "4CH1:issue3:4.8:r4",
+          "verdict": "approved",
+          "judgement": "Fractionsremainmixtures;separationpreservesmolecules anddoesnotcrackchains. Repairedillustration retainsallnamedoutlets.",
+          "assessmentSectionId": "crude-mixture"
+        }
+      ],
+      "sectionSha256": {
+        "crude-mixture": "ae88b9b68b53d73dcc27a5aa43415709715cb99a1bbf59e3308e4f1c38ffc841",
+        "fractional-column": "f33ba175164b8c51cba0bb3281dbc918a4d3a37aaf291befe76f248c0fa87c36"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.9",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.9:r1",
+          "verdict": "approved",
+          "judgement": "Allsixmatchingtaskrecallsrefinerygasesforcooking/heating.",
+          "assessmentSectionId": "fraction-uses"
+        },
+        {
+          "id": "4CH1:issue3:4.9:r2",
+          "verdict": "approved",
+          "judgement": "Gasoline/petrol ismatchedtocarpetrolengines,withnameequivalenceexplicit.",
+          "assessmentSectionId": "fraction-uses"
+        },
+        {
+          "id": "4CH1:issue3:4.9:r3",
+          "verdict": "approved",
+          "judgement": "Kerosene matchedtojetaircraft,notgasoline.",
+          "assessmentSectionId": "fraction-uses"
+        },
+        {
+          "id": "4CH1:issue3:4.9:r4",
+          "verdict": "approved",
+          "judgement": "Diesel matchedtosuitabledieselengines,notuniversalvehicleclaim.",
+          "assessmentSectionId": "fraction-uses"
+        },
+        {
+          "id": "4CH1:issue3:4.9:r5",
+          "verdict": "approved",
+          "judgement": "Fueloilmatchedtolarge-scaleheating/someships/powerstations,notallmoderninstallations.",
+          "assessmentSectionId": "fraction-uses"
+        },
+        {
+          "id": "4CH1:issue3:4.9:r6",
+          "verdict": "approved",
+          "judgement": "Bitumenheavyresiduematchedtoroadsurfacing/roofing;all sixcourse namespreserved.",
+          "assessmentSectionId": "fraction-uses"
+        }
+      ],
+      "sectionSha256": {
+        "fraction-uses": "eec415ad441830a10919ab97efc6371ae034087f64e06606b24ee49631502bdc"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.10",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.10:r1",
+          "verdict": "approved",
+          "judgement": "L→Hgenerallydarker isamixturetrend,notclaimpurelongalkanesarealldark.",
+          "assessmentSectionId": "fraction-trends"
+        },
+        {
+          "id": "4CH1:issue3:4.10:r2",
+          "verdict": "approved",
+          "judgement": "Largermoleculesgenerallystrongerintermolecularattractions/higherboilingrange;internalC–Cbondsnotbrokenbyboiling.",
+          "assessmentSectionId": "fraction-trends"
+        },
+        {
+          "id": "4CH1:issue3:4.10:r3",
+          "verdict": "approved",
+          "judgement": "Greaterliquidviscositymeansflowresistance,notdensity;matchedtemperature/isomercompositionlimits retained.",
+          "assessmentSectionId": "fraction-trends"
+        }
+      ],
+      "sectionSha256": {
+        "fraction-trends": "9874049e2ed3654f3b8798214831dd6c99f2fe0658106b0d1a43e34de378e905"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.11",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.11:r1",
+          "verdict": "approved",
+          "judgement": "Invented12kJreleasedonburning supportsfueldefinition;evaporationalonecannotestablishit.",
+          "assessmentSectionId": "fuel-energy"
+        },
+        {
+          "id": "4CH1:issue3:4.11:r2",
+          "verdict": "approved",
+          "judgement": "Ignitionspark suppliesinitialbarrierinputbutnetcombustioncanbeexo;boilingpointrankingdoesnotgiveenergypergram.",
+          "assessmentSectionId": "fuel-energy"
+        }
+      ],
+      "sectionSha256": {
+        "fuel-energy": "cc3bf6febe323cefea30cb8d115062df5c696653b17cfb76e8c3fce676ff278f"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.12",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.12:r1",
+          "verdict": "approved",
+          "judgement": "Independentethanetask2C₂H₆+7O₂→4CO₂+6H₂OconservesC4/H12/O14andnamesbothcompleteproducts.",
+          "assessmentSectionId": "hydrocarbon-complete-combustion"
+        },
+        {
+          "id": "4CH1:issue3:4.12:r2",
+          "verdict": "approved",
+          "judgement": "TwooriginalpropanemodelsconserveC6/H16/O14orC3/H8/O4;CO/carbon/waterpossibilitiesandrealmixturesretained.",
+          "assessmentSectionId": "hydrocarbon-incomplete-combustion"
+        },
+        {
+          "id": "4CH1:issue3:4.12:r3",
+          "verdict": "approved",
+          "judgement": "Oxygensupply/mixingqualifiesproductset;COisnotsootandnovisiblesootdoesnotprovenoCOorcompletecombustion.",
+          "assessmentSectionId": "hydrocarbon-incomplete-combustion"
+        }
+      ],
+      "sectionSha256": {
+        "hydrocarbon-complete-combustion": "51dd9693f40b512f56c28790de9d0501fa3e9e96694f7eb45ed5a15e1db37205",
+        "hydrocarbon-incomplete-combustion": "e6a7d4b8acadb605ac818df6fadf4b6d9f51ad27d7d5cdd89d1fe3e211085c71"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.13",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.13:r1",
+          "verdict": "approved",
+          "judgement": "Correctiontaskrequiresreducedbloodoxygentransportcapacity→lessoxygenfortissueaerobicrespiration.",
+          "assessmentSectionId": "carbon-monoxide-transport"
+        },
+        {
+          "id": "4CH1:issue3:4.13:r2",
+          "verdict": "approved",
+          "judgement": "COgasdistinguishedfromcarbonsoot/CO₂greenhousemechanism;haemoglobinterminologynotrequiredandnosafetydiagnosisinferred.",
+          "assessmentSectionId": "carbon-monoxide-transport"
+        }
+      ],
+      "sectionSha256": {
+        "carbon-monoxide-transport": "c8081f2c50d6e4a5a883a81714b8c6eeade29411938e5fedbc1c4b4200b3c30f"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.14",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.14:r1",
+          "verdict": "approved",
+          "judgement": "Actualenginecomparisontaskrequireshightemperatureallowingnitrogen/oxygenreactiontoformnitrogenoxides.",
+          "assessmentSectionId": "combustion-other-oxides"
+        },
+        {
+          "id": "4CH1:issue3:4.14:r2",
+          "verdict": "approved",
+          "judgement": "AirisidentifiedastheN₂/O₂source;removingsulfurdoesnotaloneremovethisNOxmechanism.",
+          "assessmentSectionId": "combustion-other-oxides"
+        }
+      ],
+      "sectionSha256": {
+        "combustion-other-oxides": "0336247f40fc770659b2d75e0aeae191401a02bb2cd6e0ee1d24749d426c76fd"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.15",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.15:r1",
+          "verdict": "approved",
+          "judgement": "Sulfur-bearingimpuritiescanoxidisetoSO₂;actualS+O₂→SO₂simplemodelbalances.",
+          "assessmentSectionId": "combustion-other-oxides"
+        },
+        {
+          "id": "4CH1:issue3:4.15:r2",
+          "verdict": "approved",
+          "judgement": "PurehydrocarbonC/Hformula containsnoS;mixtureimpuritiesandairnotinsertedintopureformula.",
+          "assessmentSectionId": "combustion-other-oxides"
+        }
+      ],
+      "sectionSha256": {
+        "combustion-other-oxides": "0336247f40fc770659b2d75e0aeae191401a02bb2cd6e0ee1d24749d426c76fd"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.16",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.16:r1",
+          "verdict": "approved",
+          "judgement": "BothSO₂andnitrogenoxidesnamedinatmospheric/waterchemicalpathwaytoacidicsubstances.",
+          "assessmentSectionId": "acid-rain-formation"
+        },
+        {
+          "id": "4CH1:issue3:4.16:r2",
+          "verdict": "approved",
+          "judgement": "Acidsenter rainwater;pollutantgasnotautomaticallyliquidacidfallingfromexhaust.",
+          "assessmentSectionId": "acid-rain-formation"
+        },
+        {
+          "id": "4CH1:issue3:4.16:r3",
+          "verdict": "approved",
+          "judgement": "Taskrejectsheat-trappingasacid-formationstep;multistepatmospherelimitavoidsoneuniversalnitrogenoxideequation.",
+          "assessmentSectionId": "acid-rain-formation"
+        }
+      ],
+      "sectionSha256": {
+        "acid-rain-formation": "c29261a640c57c503221fd9011a78591e5a109342de6c8ef127d18bf651a3731"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.17",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.17:r1",
+          "verdict": "approved",
+          "judgement": "Long-chainC14alkaneconvertsintoshorterC8alkaneand2C3alkenes;chemicalconversiondistinctfromdistillation.",
+          "assessmentSectionId": "cracking-process"
+        },
+        {
+          "id": "4CH1:issue3:4.17:r2",
+          "verdict": "approved",
+          "judgement": "Bothnamedalternatives silica/alumina andown600–700°Crangeexplicitlyrequired;noimportedalternateindustrialconditions.",
+          "assessmentSectionId": "cracking-process"
+        },
+        {
+          "id": "4CH1:issue3:4.17:r3",
+          "verdict": "approved",
+          "judgement": "SubtractingC8H18fromC14H30then dividingby2givesC3H6;actualC14/H30totalsbalanced,structureconditionandnonuniqueproductsetexplicit.",
+          "assessmentSectionId": "cracking-process"
+        }
+      ],
+      "sectionSha256": {
+        "cracking-process": "ce17725631f6be11e3b48a9ac3201c38c6c053d53281040b27b21e197f1f12e5"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.18",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.18:r1",
+          "verdict": "approved",
+          "judgement": "Original60−35=25heavysurplusand40−25=15lightshortfall supportssupply/demandmismatch.",
+          "assessmentSectionId": "cracking-demand"
+        },
+        {
+          "id": "4CH1:issue3:4.18:r2",
+          "verdict": "approved",
+          "judgement": "Shorteralkanescanfuelandalkenesarefeedstockforegpolymers;heavyfractionsnotdeclaredenergy-free/useless.",
+          "assessmentSectionId": "cracking-demand"
+        },
+        {
+          "id": "4CH1:issue3:4.18:r3",
+          "verdict": "approved",
+          "judgement": "Distillationcannotchangemolecularsupply;exactlighterfuelyieldneedscrackingproductdistribution/conversionratherthanallfeedmassbecomingoneproduct.",
+          "assessmentSectionId": "cracking-demand"
+        }
+      ],
+      "sectionSha256": {
+        "cracking-demand": "3d52bb66a3d72c06ed8c7e772eeadf9d22615d1f8d4a9d4be07e5e43a4ed443d"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.19",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.19:r1",
+          "verdict": "approved",
+          "judgement": "Acyclic alkane CnH2n+2 condition is explicit, separate from ring formulas.",
+          "assessmentSectionId": "alkane-formula"
+        },
+        {
+          "id": "4CH1:issue3:4.19:r2",
+          "verdict": "approved",
+          "judgement": "Unfamiliar n7 application givesC7H16; this does not invent a seven-carbon naming/drawing requirement.",
+          "assessmentSectionId": "alkane-formula"
+        }
+      ],
+      "sectionSha256": {
+        "alkane-formula": "e978cfa57c66707f0906f466d5e449a03382c17df83626f87aa46ba34f4bc431"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.20",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.20:r1",
+          "verdict": "approved",
+          "judgement": "Saturated molecular skeleton has no carbon–carbon multiple bond; branching does not change acyclic alkane atom totals.",
+          "assessmentSectionId": "alkane-formula"
+        },
+        {
+          "id": "4CH1:issue3:4.20:r2",
+          "verdict": "approved",
+          "judgement": "Molecular saturation is explicitly distinguished from inability to dissolve more solute in a saturated solution.",
+          "assessmentSectionId": "alkane-formula"
+        }
+      ],
+      "sectionSha256": {
+        "alkane-formula": "e978cfa57c66707f0906f466d5e449a03382c17df83626f87aa46ba34f4bc431"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.21",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.21:r1",
+          "verdict": "approved",
+          "judgement": "Learner draws/names methane through pentane and structural sequence; all five actual model diagrams support checking.",
+          "assessmentSectionId": "alkane-drawings"
+        },
+        {
+          "id": "4CH1:issue3:4.21:r2",
+          "verdict": "approved",
+          "judgement": "Every C–H and C–C bond is demanded; terminal3H/internal2H and methane4H satisfy four contributions perC.",
+          "assessmentSectionId": "alkane-drawings"
+        },
+        {
+          "id": "4CH1:issue3:4.21:r3",
+          "verdict": "approved",
+          "judgement": "C4/C5 branch sheets and all threeC5 practice skeletons retain valid valencies; specific names required are unbranched, branch labels support general isomer discussion.",
+          "assessmentSectionId": "alkane-branched-isomers"
+        }
+      ],
+      "sectionSha256": {
+        "alkane-drawings": "f25384207dbff398e9285344b6576ff533b60be1131defb6542862e8686c9f35",
+        "alkane-branched-isomers": "059fecbceb628eaeee3fa152d3ca083c03be3321dc2f204a105e164e47be5a3b"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.22",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.22:r1",
+          "verdict": "approved",
+          "judgement": "New ethane/chlorine model explicitly requires UV, not consumed radiation or a dark alkene-style addition.",
+          "assessmentSectionId": "alkane-monosubstitution"
+        },
+        {
+          "id": "4CH1:issue3:4.22:r2",
+          "verdict": "approved",
+          "judgement": "CH3CH3+Cl2→CH3CH2Cl+HCl retainsC2H6Cl2, assigning oneCl to substitutedH and one to hydrogenhalide.",
+          "assessmentSectionId": "alkane-monosubstitution"
+        },
+        {
+          "id": "4CH1:issue3:4.22:r3",
+          "verdict": "approved",
+          "judgement": "Mono scope does not assert further substitution impossible; equivalent ethane positions versus unsymmetrical larger alkane possibilities distinguished.",
+          "assessmentSectionId": "alkane-monosubstitution"
+        }
+      ],
+      "sectionSha256": {
+        "alkane-monosubstitution": "fe86854b506847e56a0b8d755af28ca455256bc106f470cefd7e92034f6375eb"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.23",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.23:r1",
+          "verdict": "approved",
+          "judgement": "Actual task names C=C as the alkene functional group and excludes a one-carbon alkene.",
+          "assessmentSectionId": "alkene-formula"
+        }
+      ],
+      "sectionSha256": {
+        "alkene-formula": "1d14746ca63083c4df5707fdf86f148d33eccc41a147ae747f06b200364115c6"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.24",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.24:r1",
+          "verdict": "approved",
+          "judgement": "Five-carbon supplied acyclic/one-double-bond case gives C5H10 fromCnH2n.",
+          "assessmentSectionId": "alkene-formula"
+        },
+        {
+          "id": "4CH1:issue3:4.24:r2",
+          "verdict": "approved",
+          "judgement": "The formula ratio alone does not prove the structural group; actual structure or family condition is required.",
+          "assessmentSectionId": "alkene-formula"
+        }
+      ],
+      "sectionSha256": {
+        "alkene-formula": "1d14746ca63083c4df5707fdf86f148d33eccc41a147ae747f06b200364115c6"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.25",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.25:r1",
+          "verdict": "approved",
+          "judgement": "Unsaturation is linked to C=C addition, not insufficient solute or an arbitrary hydrogen deficit.",
+          "assessmentSectionId": "alkene-formula"
+        }
+      ],
+      "sectionSha256": {
+        "alkene-formula": "1d14746ca63083c4df5707fdf86f148d33eccc41a147ae747f06b200364115c6"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.26",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.26:r1",
+          "verdict": "approved",
+          "judgement": "Full structural/displayed ethene and propene drawings require allH and both double-bond lines.",
+          "assessmentSectionId": "alkene-drawings"
+        },
+        {
+          "id": "4CH1:issue3:4.26:r2",
+          "verdict": "approved",
+          "judgement": "Both unbranchedC4 positions are drawn/named but-1-ene and but-2-ene; reversed orientation is not a new position.",
+          "assessmentSectionId": "alkene-drawings"
+        },
+        {
+          "id": "4CH1:issue3:4.26:r3",
+          "verdict": "approved",
+          "judgement": "Branched CH2=C(CH3)2 is included; substituted double-bond carbon has noH and four bond contributions.",
+          "assessmentSectionId": "alkene-drawings"
+        },
+        {
+          "id": "4CH1:issue3:4.26:r4",
+          "verdict": "approved",
+          "judgement": "Cis/trans/E/Z descriptors are explicitly not required, and sheet orientation does not certify a stereoisomer.",
+          "assessmentSectionId": "alkene-drawings"
+        }
+      ],
+      "sectionSha256": {
+        "alkene-drawings": "df858153819b9a00b2afbb36d455f35df22fbd387956abd3540b431ef00521b3"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.27",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.27:r1",
+          "verdict": "approved",
+          "judgement": "Br2 addition to but-1-ene gives CH2BrCHBrCH2CH3 in the required dibromoalkane model.",
+          "assessmentSectionId": "bromine-addition"
+        },
+        {
+          "id": "4CH1:issue3:4.27:r2",
+          "verdict": "approved",
+          "judgement": "OneBr attaches to each original double-bondC, with C=C changed to single and noH lost.",
+          "assessmentSectionId": "bromine-addition"
+        },
+        {
+          "id": "4CH1:issue3:4.27:r3",
+          "verdict": "approved",
+          "judgement": "Actual product drawing/answer conserves C4H8Br2 with normal valency; HBr substitution product is rejected.",
+          "assessmentSectionId": "bromine-addition"
+        }
+      ],
+      "sectionSha256": {
+        "bromine-addition": "4d076197a6c5c5dbd0b8db98c6d0407c6d7ee63fa0649d61fa77b030d38143ec"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.28",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.28:r1",
+          "verdict": "approved",
+          "judgement": "Specified alkene candidate promptly removes orange-brown bromine-water colour, rather than simply looking clear.",
+          "assessmentSectionId": "bromine-water-test"
+        },
+        {
+          "id": "4CH1:issue3:4.28:r2",
+          "verdict": "approved",
+          "judgement": "Matched hexane comparison avoidsUV/strong sunlight that can allow substitution, retaining the intended distinction.",
+          "assessmentSectionId": "bromine-water-test"
+        },
+        {
+          "id": "4CH1:issue3:4.28:r3",
+          "verdict": "approved",
+          "judgement": "Practice considers phase transfer, comparable mixing/reagent amounts and residual excessBr colour as interpretation limits.",
+          "assessmentSectionId": "bromine-water-test"
+        },
+        {
+          "id": "4CH1:issue3:4.28:r4",
+          "verdict": "approved",
+          "judgement": "Conclusion is restricted to supplied alkane/alkene choices, not exact identity or purity of any unrestricted unknown.",
+          "assessmentSectionId": "bromine-water-test"
+        }
+      ],
+      "sectionSha256": {
+        "bromine-water-test": "11bb69549f0dad08fb8f4dd3128b0c8cb935c7713e9f793e9db9a38805b80d5d"
+      }
+    }
+  ],
+  "previousReview": {
+    "ref": "research/teaching-reviews/4CH1-organic-oil-2026-10-14.json",
+    "sha256": "f157b8de33c9af7ca038a2380308d947642107adc0f1b61994e50662fdb71fdc",
+    "scope": "All12 previously reviewed oil/combustion/cracking point decisions and their lesson hashes preserved exactly; old review remains historical."
+  }
+}

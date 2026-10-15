@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4CH1",
+  "subjectId": "chemistry",
+  "chapterId": "organic",
+  "documentId": "4CH1-spec",
+  "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "reviewDate": "2026-10-15",
+  "scope": "whole-authored-chapter-teaching",
+  "reviewer": "Codex root source, goal, prerequisite and coherence review with bounded independent source and new-practice audits",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "learnerTrialsPerformed": false,
+  "examReadinessCertified": false,
+  "sourceBoundary": {
+    "visuallyReviewed": true,
+    "wholeTopicPointInventoryReviewed": true,
+    "firstPdfPage": 29,
+    "lastPdfPage": 32,
+    "nextTopicPdfPage": 33,
+    "topicHeading": "4 Organic chemistry",
+    "nextTopicHeading": "3 Assessment information",
+    "judgement": "Root visually read ownIssue3 PDF29–33: Organic topic4 spans29–32/printed23–26 with exact4.1–4.50C inventory; next document section3Assessmentinformation starts33. EighteenC-suffixed identities are2C-only;32others bothpapers. Specific drawing/naming sets, acceptedpropanol/butanol names and such-as esterpractical language retained."
+  },
+  "sourcePointIds": [
+    "4CH1:issue3:4.1",
+    "4CH1:issue3:4.2",
+    "4CH1:issue3:4.3",
+    "4CH1:issue3:4.4",
+    "4CH1:issue3:4.5",
+    "4CH1:issue3:4.6",
+    "4CH1:issue3:4.7",
+    "4CH1:issue3:4.8",
+    "4CH1:issue3:4.9",
+    "4CH1:issue3:4.10",
+    "4CH1:issue3:4.11",
+    "4CH1:issue3:4.12",
+    "4CH1:issue3:4.13",
+    "4CH1:issue3:4.14",
+    "4CH1:issue3:4.15",
+    "4CH1:issue3:4.16",
+    "4CH1:issue3:4.17",
+    "4CH1:issue3:4.18",
+    "4CH1:issue3:4.19",
+    "4CH1:issue3:4.20",
+    "4CH1:issue3:4.21",
+    "4CH1:issue3:4.22",
+    "4CH1:issue3:4.23",
+    "4CH1:issue3:4.24",
+    "4CH1:issue3:4.25",
+    "4CH1:issue3:4.26",
+    "4CH1:issue3:4.27",
+    "4CH1:issue3:4.28",
+    "4CH1:issue3:4.29C",
+    "4CH1:issue3:4.30C",
+    "4CH1:issue3:4.31C",
+    "4CH1:issue3:4.32C",
+    "4CH1:issue3:4.33C",
+    "4CH1:issue3:4.34C",
+    "4CH1:issue3:4.35C",
+    "4CH1:issue3:4.36C",
+    "4CH1:issue3:4.37C",
+    "4CH1:issue3:4.38C",
+    "4CH1:issue3:4.39C",
+    "4CH1:issue3:4.40C",
+    "4CH1:issue3:4.41C",
+    "4CH1:issue3:4.42C",
+    "4CH1:issue3:4.43C",
+    "4CH1:issue3:4.44",
+    "4CH1:issue3:4.45",
+    "4CH1:issue3:4.46",
+    "4CH1:issue3:4.47",
+    "4CH1:issue3:4.48C",
+    "4CH1:issue3:4.49C",
+    "4CH1:issue3:4.50C"
+  ],
+  "inventorySources": [
+    {
+      "ref": "research/syllabus/4CH1-organic-foundations.json",
+      "sha256": "cd0b0ecbf340cbdd20119c8f2ece00e9300ce0ef6954c86d01282261022963f1"
+    },
+    {
+      "ref": "research/syllabus/4CH1-organic-families-polymers.json",
+      "sha256": "1bdac77fc7346281f240ecd004dfd05358f03f49563d384ff22a52df9d30e395"
+    }
+  ],
+  "noteRef": "content/notes/chemistry-organic.json",
+  "noteSha256": "f6ec395f590c94f7ae5383021e09e04dae508c581e884308c16f6f68f8af2ba3",
+  "goalDecisions": [
+    {
+      "goal": "Read formula types, simple names and distinct structural connections.",
+      "verdict": "approved",
+      "sectionIds": [
+        "hydrocarbon-identity",
+        "organic-formula-types",
+        "homologous-series",
+        "organic-names",
+        "structural-isomers",
+        "alkane-branched-isomers"
+      ],
+      "judgement": "All five formula forms, normal valencies and distinct connections are taught with expanded drawing tasks. Six roots, lowest double-bond position and explicit longest-chain/branch-numbering example distinguish parent from total carbon count. Alcohol/acid/ester extensions are labelled2C; molecular ratio alone cannot establish a family."
+    },
+    {
+      "goal": "Explain oil separation, named fraction uses, combustion and the need for cracking.",
+      "verdict": "approved",
+      "sectionIds": [
+        "crude-mixture",
+        "fractional-column",
+        "fraction-uses",
+        "fraction-trends",
+        "fuel-energy",
+        "hydrocarbon-complete-combustion",
+        "hydrocarbon-incomplete-combustion",
+        "carbon-monoxide-transport",
+        "combustion-other-oxides",
+        "acid-rain-formation",
+        "cracking-process",
+        "cracking-demand"
+      ],
+      "judgement": "Earlier12 oil/combustion/cracking decisions and unchanged lesson hashes are preserved. Drawn temperature gradient, all six fraction/use pairs, independently balanced products and specific pollution mechanisms support the exact source scope. Exact600–700°C silica/alumina cracking and invented supply/demand limits remain explicit."
+    },
+    {
+      "goal": "Draw and distinguish the specified alkanes and alkenes with the stated reaction conditions.",
+      "verdict": "approved",
+      "sectionIds": [
+        "alkane-formula",
+        "alkane-drawings",
+        "alkane-branched-isomers",
+        "alkane-monosubstitution",
+        "alkene-formula",
+        "alkene-drawings",
+        "bromine-addition",
+        "bromine-water-test"
+      ],
+      "judgement": "First five alkanes and all required small alkene connectivities are drawn with full atoms/bonds; names restricted as source specifies. Actual UV substitution and across-C=C dibromide tasks conserve atoms and distinguish conditions. Controlled bromine colour comparison retains phase/excess/unknown limits; mechanisms and stereochemical descriptors not required."
+    },
+    {
+      "goal": "Explain the specified alcohol, carboxylic acid and ester routes without mixing conditions.",
+      "verdict": "approved",
+      "sectionIds": [
+        "alcohol-functional-group",
+        "alcohol-drawings",
+        "ethanol-combustion",
+        "ethanol-acid-oxidation",
+        "ethanol-steam-route",
+        "ethanol-fermentation",
+        "fermentation-conditions",
+        "carboxyl-group",
+        "carboxylic-drawings",
+        "carboxylic-metal-reaction",
+        "carboxylic-carbonate-reaction",
+        "vinegar-solution",
+        "ester-group",
+        "ethyl-ethanoate-formation",
+        "ethyl-ethanoate-drawing",
+        "ester-naming",
+        "ester-volatility-uses",
+        "ester-practical-plan"
+      ],
+      "judgement": "All four primary alcohols/acids, named oxidation and manufacture routes, acid reactions and two-way ester structure tasks are assessed. Temperature/pressure/catalyst/air conditions remain tied to exact routes. Structured written ester plan uses a concrete guide catalyst example while preserving such-as practical scope, controlled heating/gas release and purity limits. All these source identities retain2C applicability."
+    },
+    {
+      "goal": "Draw the required addition and polyester repeat units and trace each monomer fragment.",
+      "verdict": "approved",
+      "sectionIds": [
+        "addition-monomers",
+        "addition-repeat-drawings",
+        "recover-addition-monomer",
+        "addition-disposal",
+        "polyester-condensation",
+        "polyester-repeat-drawing",
+        "biopolyester-limits"
+      ],
+      "judgement": "All four addition repeat drawings preserve sidegroups and boundary valencies; monomer deduction works both ways. Diacid/diol polyester task retains both carbonyls, correct boundary O linkage and distinction between source repeat shorthand and finite end groups. Polymer disposal and some-biopolyester claims remain qualified; condensation topics retain2C-only scope."
+    }
+  ],
+  "prerequisiteReview": {
+    "verdict": "approved",
+    "judgement": "Stated carbonfour/hydrogenone bond contributions, balanced atom conservation and mixture/purecompound distinctions are used throughout and already introduced in Principles. Oxygen and halogen valencies are explained in the relevant drawing lessons. Every numerical model supplies amounts/formulas; advanced mechanisms, stereochemical labels, industrial optimisation and equilibrium constants are not prerequisites."
+  },
+  "coherenceReview": {
+    "verdict": "approved",
+    "judgement": "The51sections follow the complete source sequence from representations/naming through crudeoil, alkanes/alkenes,2Calcohols/acids/esters and polymers. Every section maps to at least one of the exact50 reviewed identities and has worked and original fixedpractice evidence. Existing12 oil reviews remain exact historical decisions. Full displayed models and construction examples support actual drawing demands; no condensed formula is mislabelled as fully displayed. All eight molecule/polymer drawing sheets received semantic checks and root rendered inspection; three irrelevant accessible descriptions repaired without changing molecular geometry."
+  },
+  "limitations": [
+    "Agent-reviewed whole authored written teaching only; not learner/human examiner certification, performed practical competence or calibrated generative exam bank.",
+    "Other32 whole authored chapters and five paper processing gates remain unfinished. Zero exam-ready chapters, active exam templates or liveAI; AI integration remains last."
+  ]
+}

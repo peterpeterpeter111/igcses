@@ -1,0 +1,632 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4CH1",
+  "documentId": "4CH1-spec",
+  "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "sourceVisualPages": [
+    31,
+    32
+  ],
+  "sourcePrintedPages": [
+    25,
+    26
+  ],
+  "reviewDate": "2026-10-15",
+  "reviewer": "Codex root authored/source review with independent bounded audits",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "authored-teaching-coverage",
+  "policyVersion": 1,
+  "practicalTrialsPerformed": false,
+  "examTemplateCalibrationComplete": false,
+  "noteRef": "content/notes/chemistry-organic.json",
+  "inventorySha256": "1bdac77fc7346281f240ecd004dfd05358f03f49563d384ff22a52df9d30e395",
+  "auditRef": "research/curriculum-audits/4CH1-organic-families-polymers.json",
+  "auditSha256": "96da1a86fd7acc3dfb91ebd234acbb44fd653d7c91325ddbd7f772ec531a7fc3",
+  "diagramSha256": {
+    "/diagrams/chemistry-addition-repeats.svg": "7eee1f502b1c0f54576a9699ddaad9094f95ac1928ef19c8b8ba02b0ff58cba8",
+    "/diagrams/chemistry-alcohol-displayed.svg": "b67040c9f7d83bd1da2701fd461681c13eff2730037a435df5fe66f30052fdd6",
+    "/diagrams/chemistry-carboxylic-displayed.svg": "a1ad72d36a0f2a91aa50d3e1ca2ac02f01802d86ce223ecfd0ad9818d913f49d",
+    "/diagrams/chemistry-ethyl-ethanoate.svg": "c51ec9d7a3c202c9e6ece2abb104e6c7425a5b0f8e617fa5256676dc15a19df6",
+    "/diagrams/chemistry-polyester-repeat.svg": "243052980fac608c203002f4e19af3880bde12dd56b9eea2d22372174c88aa7c"
+  },
+  "limitations": [
+    "Agent-reviewed authored written teaching and original fixed practice, not learner/human examiner certification, performed practical competence or active exam templates.",
+    "Source component/drawing/accepted-name limits retained. Illustrations are schematic connections; model values are not actual trials. Whole authored chapter reviewed separately; other curricula/paper gates/calibration unfinished."
+  ],
+  "points": [
+    {
+      "pointId": "4CH1:issue3:4.29C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.29C:r1",
+          "verdict": "approved",
+          "judgement": "C–O–H covalent connection and two oxygen bonds are contrasted with the complete carboxyl connection.",
+          "assessmentSectionId": "alcohol-functional-group"
+        },
+        {
+          "id": "4CH1:issue3:4.29C:r2",
+          "verdict": "approved",
+          "judgement": "Ethanol includesO and is not a hydrocarbon; freeOH− ion is not the neutral alcohol group.",
+          "assessmentSectionId": "alcohol-functional-group"
+        }
+      ],
+      "sectionSha256": {
+        "alcohol-functional-group": "59ce903f4fa4e19da9308a4f9a31570f7a58b7ec17f5c502ab022e8b7c56707b"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.30C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.30C:r1",
+          "verdict": "approved",
+          "judgement": "Actual task draws/names methanol and ethanol with molecular CH4O/C2H6O and every bond.",
+          "assessmentSectionId": "alcohol-drawings"
+        },
+        {
+          "id": "4CH1:issue3:4.30C:r2",
+          "verdict": "approved",
+          "judgement": "Propan-1-ol/butan-1-ol terminal OH structures are demanded rather than substituting propan-2-ol.",
+          "assessmentSectionId": "alcohol-drawings"
+        },
+        {
+          "id": "4CH1:issue3:4.30C:r3",
+          "verdict": "approved",
+          "judgement": "EveryC–H/C–O/O–H bond and all atom counts are assessed; accepted short names and explicit1locant scope retained.",
+          "assessmentSectionId": "alcohol-drawings"
+        }
+      ],
+      "sectionSha256": {
+        "alcohol-drawings": "ff22fce173e7af0245c82560a6a45d32d6615c366ffa27c655926b3b266484b2"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.31C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.31C:r1",
+          "verdict": "approved",
+          "judgement": "Two-ethanol equation uses6O2 and forms4CO2/6H2O; C4H12O14 includes oxygen already in alcohol.",
+          "assessmentSectionId": "ethanol-combustion"
+        },
+        {
+          "id": "4CH1:issue3:4.31C:r2",
+          "verdict": "approved",
+          "judgement": "Microbial ethanol→acid route requires oxygen fromair, distinct from anaerobic glucose fermentation.",
+          "assessmentSectionId": "ethanol-acid-oxidation"
+        },
+        {
+          "id": "4CH1:issue3:4.31C:r3",
+          "verdict": "approved",
+          "judgement": "Named potassium dichromate(VI), dilute sulfuric acid and heating are required together, not an alternate oxidant.",
+          "assessmentSectionId": "ethanol-acid-oxidation"
+        },
+        {
+          "id": "4CH1:issue3:4.31C:r4",
+          "verdict": "approved",
+          "judgement": "Acid endpoint retains carbon framework; oxygen/[O] models balance and [O] is shorthand, not literal bottled atomic oxygen or combustion product.",
+          "assessmentSectionId": "ethanol-acid-oxidation"
+        }
+      ],
+      "sectionSha256": {
+        "ethanol-combustion": "844325abc10a4ed550a1dfa3605890b7a9edaa788762a151aa6fb6ca3729e47d",
+        "ethanol-acid-oxidation": "986fd8789a82aebb64fde4c7bc9f7a0863e281f101d9e2c21b7681080eab01a7"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.32C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.32C:r1",
+          "verdict": "approved",
+          "judgement": "Correction card requires ethene+steam→ethanol and phosphoric acid as catalyst, not yeast or sulfuric acid.",
+          "assessmentSectionId": "ethanol-steam-route"
+        },
+        {
+          "id": "4CH1:issue3:4.32C:r2",
+          "verdict": "approved",
+          "judgement": "Own about300°C and about60–70atm are retained as industrial conditions, not a school sealed-flask procedure.",
+          "assessmentSectionId": "ethanol-steam-route"
+        },
+        {
+          "id": "4CH1:issue3:4.32C:r3",
+          "verdict": "approved",
+          "judgement": "Glucose, yeastenzymes, absenceofair and about30°C are specified together without importing hydration conditions.",
+          "assessmentSectionId": "ethanol-fermentation"
+        },
+        {
+          "id": "4CH1:issue3:4.32C:r4",
+          "verdict": "approved",
+          "judgement": "Balanced1:2:2 fermentation and .300→.600mol idealethanol task distinguish modelratio from measuredyield and impure aqueous mixture.",
+          "assessmentSectionId": "ethanol-fermentation"
+        }
+      ],
+      "sectionSha256": {
+        "ethanol-steam-route": "9945af8957b0dbe944ea4470e330b269d41066e2c2cfd68b39cb234e790f6257",
+        "ethanol-fermentation": "8341cc3897ca64df9da10143ea95460c5c6f7ad78fe7f50d26274ff4d3bed843"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.33C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.33C:r1",
+          "verdict": "approved",
+          "judgement": "Air supply fault is corrected using desired anaerobicethanol route, not a claim that every microbialprocess is anaerobic.",
+          "assessmentSectionId": "fermentation-conditions"
+        },
+        {
+          "id": "4CH1:issue3:4.33C:r2",
+          "verdict": "approved",
+          "judgement": "LowT slowsenzymes, suitableoptimum near30°C and excessiveheatdenaturation explain why hotterisnotalwaysbetter.",
+          "assessmentSectionId": "fermentation-conditions"
+        },
+        {
+          "id": "4CH1:issue3:4.33C:r3",
+          "verdict": "approved",
+          "judgement": "CO2 production requires an approved release route even when air isexcluded; rigidlyblocked apparatus isnot implied.",
+          "assessmentSectionId": "fermentation-conditions"
+        }
+      ],
+      "sectionSha256": {
+        "fermentation-conditions": "f26a2ca1a690b560120daaf9e79d14e8070543a87352287ad8f360f0c69fd2a2"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.34C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.34C:r1",
+          "verdict": "approved",
+          "judgement": "Actual learner drawing CH3CH2–C(=O)–O–H preserves completegroup, not C–O–O–H.",
+          "assessmentSectionId": "carboxyl-group"
+        },
+        {
+          "id": "4CH1:issue3:4.34C:r2",
+          "verdict": "approved",
+          "judgement": "Carboxyl carbon is thirdC inpropanoic; Cfour/Otwo contributions and covalentOH versusfreeion explicit.",
+          "assessmentSectionId": "carboxyl-group"
+        }
+      ],
+      "sectionSha256": {
+        "carboxyl-group": "b7521113ef91fcf4022612c1e1f620e62b5949a85be3f6f2e19e3e98b3788afc"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.35C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.35C:r1",
+          "verdict": "approved",
+          "judgement": "All four unbranched methanoic/ethanoic/propanoic/butanoic acid structures are actually drawn/named.",
+          "assessmentSectionId": "carboxylic-drawings"
+        },
+        {
+          "id": "4CH1:issue3:4.35C:r2",
+          "verdict": "approved",
+          "judgement": "Full drawings demand carbonyl, C–O–H and everyC–H; Hdirectlyon carbonyl in methanoic versuschainconnection inothers distinguished.",
+          "assessmentSectionId": "carboxylic-drawings"
+        },
+        {
+          "id": "4CH1:issue3:4.35C:r3",
+          "verdict": "approved",
+          "judgement": "Molecular CH2O2/C2H4O2/C3H6O2/C4H8O2 and names count the functional carbon; no extra chaincarbon introduced.",
+          "assessmentSectionId": "carboxylic-drawings"
+        }
+      ],
+      "sectionSha256": {
+        "carboxylic-drawings": "c56d63360c15ad0db3cd4c2c1761ddf872e6c3942cbc25bdd6acc9c5398659e5"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.36C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.36C:r1",
+          "verdict": "approved",
+          "judgement": "Unfamiliar propanoicacid/Mg word/formula task gives salt/H2 with coppertransfer qualification and supervisedgasresponse.",
+          "assessmentSectionId": "carboxylic-metal-reaction"
+        },
+        {
+          "id": "4CH1:issue3:4.36C:r2",
+          "verdict": "approved",
+          "judgement": "Mg2+ needs two propanoate ions; actual2acid+Mg→Mg(propanoate)2+H2 conserves C6H12O4Mg.",
+          "assessmentSectionId": "carboxylic-metal-reaction"
+        },
+        {
+          "id": "4CH1:issue3:4.36C:r3",
+          "verdict": "approved",
+          "judgement": "New calciumcarbonate task forms calciumethanoate/water/CO2;Ca2+needs twoethanoates.",
+          "assessmentSectionId": "carboxylic-carbonate-reaction"
+        },
+        {
+          "id": "4CH1:issue3:4.36C:r4",
+          "verdict": "approved",
+          "judgement": "Actualcarbonate equation conserves C5H8O7Ca; limewatercloudiness versusH2pop prevents bubbles-only gas inference.",
+          "assessmentSectionId": "carboxylic-carbonate-reaction"
+        }
+      ],
+      "sectionSha256": {
+        "carboxylic-metal-reaction": "d345d91c2b9fd64751b14fc43b0d8d00883f2e5d0c682cd7b4c865a04d871ea1",
+        "carboxylic-carbonate-reaction": "440b2bc7291fbf5324448f88f8e967001444505788154e8b0bcd3087a01fbf5f"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.37C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.37C:r1",
+          "verdict": "approved",
+          "judgement": "Vinegar identified as water-containing solution with ethanoicacid, not pure liquidacid.",
+          "assessmentSectionId": "vinegar-solution"
+        },
+        {
+          "id": "4CH1:issue3:4.37C:r2",
+          "verdict": "approved",
+          "judgement": "Carbonate response alone doesnot establish uniqueidentity, purity or concentration;no tastingtask.",
+          "assessmentSectionId": "vinegar-solution"
+        }
+      ],
+      "sectionSha256": {
+        "vinegar-solution": "c52ac2393fa8679308c24b2a0fe138c6f4ad2ed9b28982f204f1eb91cb342b80"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.38C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.38C:r1",
+          "verdict": "approved",
+          "judgement": "Learner draws CH3–C(=O)–O–CH3 with both carbonyl and singleoxygen connections.",
+          "assessmentSectionId": "ester-group"
+        },
+        {
+          "id": "4CH1:issue3:4.38C:r2",
+          "verdict": "approved",
+          "judgement": "SinglebondO neighbours differbetween acidH andesterC; normaltwoO/fourC contributions maintained.",
+          "assessmentSectionId": "ester-group"
+        }
+      ],
+      "sectionSha256": {
+        "ester-group": "5cfb4da0fd60aa9469c2daef45dc7737e1792fa196260d7971b5a37df6ab86df"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.39C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.39C:r1",
+          "verdict": "approved",
+          "judgement": "Namedethanol/ethanoicacid→ethylethanoate task traces ethyl andethanoate tocorrectstarting compounds.",
+          "assessmentSectionId": "ethyl-ethanoate-formation"
+        },
+        {
+          "id": "4CH1:issue3:4.39C:r2",
+          "verdict": "approved",
+          "judgement": "Acidcatalyst notconsumed andwater product retained in actualC4H10O3conserved structuralmodel.",
+          "assessmentSectionId": "ethyl-ethanoate-formation"
+        },
+        {
+          "id": "4CH1:issue3:4.39C:r3",
+          "verdict": "approved",
+          "judgement": "Reversiblemixture canretain reactants;layer/smell doesnotcertify completeconversion orpureester.",
+          "assessmentSectionId": "ethyl-ethanoate-formation"
+        }
+      ],
+      "sectionSha256": {
+        "ethyl-ethanoate-formation": "15f137b84e492aeb16ebc86fdf5e337241b5da524c5f5b2ea2e6da62999f088f"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.40C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.40C:r1",
+          "verdict": "approved",
+          "judgement": "Structural CH3C(=O)OCH2CH3 preservesacidcarbonyl/alcoholderivedOethyl connections.",
+          "assessmentSectionId": "ethyl-ethanoate-drawing"
+        },
+        {
+          "id": "4CH1:issue3:4.40C:r2",
+          "verdict": "approved",
+          "judgement": "Full drawing requires8H, noH oncarbonylC,2H onOlinkedCH2 andallbonds;correctedaccessiblemodeldescription verified.",
+          "assessmentSectionId": "ethyl-ethanoate-drawing"
+        },
+        {
+          "id": "4CH1:issue3:4.40C:r3",
+          "verdict": "approved",
+          "judgement": "MolecularC4H8O2 andempiricalC2H4O aredistinguished; molecularformula alone notuniquestructure.",
+          "assessmentSectionId": "ethyl-ethanoate-drawing"
+        }
+      ],
+      "sectionSha256": {
+        "ethyl-ethanoate-drawing": "082d0639e49e02494d8599f73184e6da5d99ef8435068f5ce6871d9be62b9cb2"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.41C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.41C:r1",
+          "verdict": "approved",
+          "judgement": "Methylpentanoate/propanopropanoate tasks keep alcoholalkylfirst andacidalkanoatesecond;carbonylCinacidcount.",
+          "assessmentSectionId": "ester-naming"
+        },
+        {
+          "id": "4CH1:issue3:4.41C:r2",
+          "verdict": "approved",
+          "judgement": "Methanol+pentanoicacid requiresnewmethylpentanoate structuralanddisplayedform within6totalC.",
+          "assessmentSectionId": "ester-naming"
+        },
+        {
+          "id": "4CH1:issue3:4.41C:r3",
+          "verdict": "approved",
+          "judgement": "SuppliedCH3CH2COOCH2CH2CH3 reversestopropanoicacid/propan-1-ol;notpartsinterchanged.",
+          "assessmentSectionId": "ester-naming"
+        },
+        {
+          "id": "4CH1:issue3:4.41C:r4",
+          "verdict": "approved",
+          "judgement": "Both directions require carbonyl/Olinks andeveryH, with sixcarbons totalandvalidvalencies, ratherthan only namingrecognition.",
+          "assessmentSectionId": "ester-naming"
+        }
+      ],
+      "sectionSha256": {
+        "ester-naming": "9748aedcf45ae1de97a2c0f19c65993af4988fea348456ed87352d2a253153f5"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.42C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.42C:r1",
+          "verdict": "approved",
+          "judgement": "Volatility definedasenteringvapour anddistinctivesmelllinked toreceptors,notflammabilitydefinition.",
+          "assessmentSectionId": "ester-volatility-uses"
+        },
+        {
+          "id": "4CH1:issue3:4.42C:r2",
+          "verdict": "approved",
+          "judgement": "Bothperfumeandfoodflavouring usesareassessed for suitableesters.",
+          "assessmentSectionId": "ester-volatility-uses"
+        },
+        {
+          "id": "4CH1:issue3:4.42C:r3",
+          "verdict": "approved",
+          "judgement": "Pleasantsmell cannotestablishidentity/purity/edibility;particularformulationlimit retained.",
+          "assessmentSectionId": "ester-volatility-uses"
+        }
+      ],
+      "sectionSha256": {
+        "ester-volatility-uses": "dc84922dca3c206e46bf31d957a7c099d2a10470d2d17be1e0949b594935c430"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.43C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.43C:r1",
+          "verdict": "approved",
+          "judgement": "Chosenethanol/ethanoic/concentratedH2SO4guideexample warmedbycontrolledbath;source sayssuchas,notexclusivepracticalester.",
+          "assessmentSectionId": "ester-practical-plan"
+        },
+        {
+          "id": "4CH1:issue3:4.43C:r2",
+          "verdict": "approved",
+          "judgement": "Postreactioncarbonateneutralizesresidualacid withCO2release,sofreegasrouteandstagepurposeexplicit.",
+          "assessmentSectionId": "ester-practical-plan"
+        },
+        {
+          "id": "4CH1:issue3:4.43C:r3",
+          "verdict": "approved",
+          "judgement": "Structuredapprovedplan coverscorrosivecatalyst/flammability/handlingandmethod-specificseparation;smell/layernotpure/dryyieldproof. Writtenplanonly.",
+          "assessmentSectionId": "ester-practical-plan"
+        }
+      ],
+      "sectionSha256": {
+        "ester-practical-plan": "ae5682d140a4691e58b964a40d1181eb0bf627ef24b0171544e15f1c6069594c"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.44",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.44:r1",
+          "verdict": "approved",
+          "judgement": "Actualthreeconnectedchloroethenerepeats showmanysmallmonomers joiningchain,notdisconnectedunits.",
+          "assessmentSectionId": "addition-monomers"
+        },
+        {
+          "id": "4CH1:issue3:4.44:r2",
+          "verdict": "approved",
+          "judgement": "C=Cbecomessinglebackbone whileallH/Clretained;threerepeatsegmentcompositionalC6H9Cl3checked.",
+          "assessmentSectionId": "addition-monomers"
+        },
+        {
+          "id": "4CH1:issue3:4.44:r3",
+          "verdict": "approved",
+          "judgement": "Continuationbondsatbothendsshowneighbours;nowaterorsmallmoleculeeliminatedinaddition.",
+          "assessmentSectionId": "addition-monomers"
+        }
+      ],
+      "sectionSha256": {
+        "addition-monomers": "b252e53550f0e99fde9c3b5bf83e1ece514777b8fe113ba78338aa2ad3649378"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.45",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.45:r1",
+          "verdict": "approved",
+          "judgement": "Polyetheneactualdisplayedtask keepsCH2/CH2andoutwardbonds.",
+          "assessmentSectionId": "addition-repeat-drawings"
+        },
+        {
+          "id": "4CH1:issue3:4.45:r2",
+          "verdict": "approved",
+          "judgement": "Polypropene keepsmethylbranchandoneHonitsbackboneCH;fourbondcontributionsincludecontinuation.",
+          "assessmentSectionId": "addition-repeat-drawings"
+        },
+        {
+          "id": "4CH1:issue3:4.45:r3",
+          "verdict": "approved",
+          "judgement": "PolychloroethenekeepseachsubstitutedClandHwithoutleavingC=C.",
+          "assessmentSectionId": "addition-repeat-drawings"
+        },
+        {
+          "id": "4CH1:issue3:4.45:r4",
+          "verdict": "approved",
+          "judgement": "PTFEretainsfourfluorinespertwo-carbonunitandnoinventedH.",
+          "assessmentSectionId": "addition-repeat-drawings"
+        },
+        {
+          "id": "4CH1:issue3:4.45:r5",
+          "verdict": "approved",
+          "judgement": "Allfourfull drawings demandindividualbonds,bracketscrossedbycontinuationsandoutside n;nocappingHinsideunit.",
+          "assessmentSectionId": "addition-repeat-drawings"
+        }
+      ],
+      "sectionSha256": {
+        "addition-repeat-drawings": "a0ad7dbefdcb6a102a710da5dd5098c296a89cdec1bbf8813cf561b14c55d8ce"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.46",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.46:r1",
+          "verdict": "approved",
+          "judgement": "ActualCH2CHCl/CF2CF2 repeatsrecoverCH2=CHCl/CF2=CF2 withnormalvalency.",
+          "assessmentSectionId": "recover-addition-monomer"
+        },
+        {
+          "id": "4CH1:issue3:4.46:r2",
+          "verdict": "approved",
+          "judgement": "Forwardpropene→CH2–CH(CH3)repeat opensdoublebondandkeepssidegroups.",
+          "assessmentSectionId": "recover-addition-monomer"
+        },
+        {
+          "id": "4CH1:issue3:4.46:r3",
+          "verdict": "approved",
+          "judgement": "Originaldoublebondcarbonsremainbackbone;CH3isnotextra backboneC andsimpledeductionnotappliedtocondensation.",
+          "assessmentSectionId": "recover-addition-monomer"
+        }
+      ],
+      "sectionSha256": {
+        "recover-addition-monomer": "b55a6117313b147e213f624459344bb322697e080c210c1c26eb511afe207652"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.47",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.47:r1",
+          "verdict": "approved",
+          "judgement": "Relativeinertnessandlackofreadybiodegradation inrequiredadditionexamples supportpersistence,notallchemicalconditionsinertness.",
+          "assessmentSectionId": "addition-disposal"
+        },
+        {
+          "id": "4CH1:issue3:4.47:r2",
+          "verdict": "approved",
+          "judgement": "Physicalfragments notproofbiologicalchainbreakdown;micropiecescanretainmaterial.",
+          "assessmentSectionId": "addition-disposal"
+        },
+        {
+          "id": "4CH1:issue3:4.47:r3",
+          "verdict": "approved",
+          "judgement": "COfromincompleteburning andHClfromchlorine-containingpolymersqualifiedbycomposition/conditions;nouniversalchlorinegasclaim.",
+          "assessmentSectionId": "addition-disposal"
+        }
+      ],
+      "sectionSha256": {
+        "addition-disposal": "72b958e3782a619714a8cdc9ec3e5496b0387f919f51d4c87204fd35e6965cc2"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.48C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.48C:r1",
+          "verdict": "approved",
+          "judgement": "Diacid/diol eachhavetworeactingends, unlike single-functionacid/alcoholsmallesterpair.",
+          "assessmentSectionId": "polyester-condensation"
+        },
+        {
+          "id": "4CH1:issue3:4.48C:r2",
+          "verdict": "approved",
+          "judgement": "Esterlink eliminatesacidOHplusalcoholH aswater,retainingcarbonylandalcoholO.",
+          "assessmentSectionId": "polyester-condensation"
+        },
+        {
+          "id": "4CH1:issue3:4.48C:r3",
+          "verdict": "approved",
+          "judgement": "Waterloss distinguishescondensationfromatom-retainingalkeneaddition;nofalseO–Oorcarbonylremoval.",
+          "assessmentSectionId": "polyester-condensation"
+        }
+      ],
+      "sectionSha256": {
+        "polyester-condensation": "b277d5ae50a9b3a68e963cba97666352b470776ede27a7013797719178d1c697"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.49C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.49C:r1",
+          "verdict": "approved",
+          "judgement": "Requiredethanedioicacid/ethanediolmonomersareactuallydrawnwithbothfunctionalends.",
+          "assessmentSectionId": "polyester-repeat-drawing"
+        },
+        {
+          "id": "4CH1:issue3:4.49C:r2",
+          "verdict": "approved",
+          "judgement": "Actualstructural/fullrepeat C(=O)–C(=O)–O–CH2–CH2–O keepsallH/bondsandboundarycontinuations.",
+          "assessmentSectionId": "polyester-repeat-drawing"
+        },
+        {
+          "id": "4CH1:issue3:4.49C:r3",
+          "verdict": "approved",
+          "judgement": "Twodiacid-derivedcarbonylsandrightboundaryO→nextcarbonylC preservelinkcontinuity;diolCsremainCH2.",
+          "assessmentSectionId": "polyester-repeat-drawing"
+        },
+        {
+          "id": "4CH1:issue3:4.49C:r4",
+          "verdict": "approved",
+          "judgement": "C2H2O4+C2H6O2−2H2O givesC4H4O4repeat;source2n shorthandseparatefrom2n−1watersforonefiniteopenchain.",
+          "assessmentSectionId": "polyester-repeat-drawing"
+        }
+      ],
+      "sectionSha256": {
+        "polyester-repeat-drawing": "0bf174fa595eb06db01fbff610a3e67ad8814d697faf17f72380171249e1f8da"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:4.50C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:4.50C:r1",
+          "verdict": "approved",
+          "judgement": "Task retains sourcequalification somebiopolyesters biodegradable,notallpolyesters.",
+          "assessmentSectionId": "biopolyester-limits"
+        },
+        {
+          "id": "4CH1:issue3:4.50C:r2",
+          "verdict": "approved",
+          "judgement": "Identity/organisms/moisture/Tandmeasuredextent/rate neededforenvironmentclaim;noinstantseawaterdegradationinference.",
+          "assessmentSectionId": "biopolyester-limits"
+        },
+        {
+          "id": "4CH1:issue3:4.50C:r3",
+          "verdict": "approved",
+          "judgement": "Bio-derivedfeedstockorigin isnotbiologicalbreakdownorfragmentationproof.",
+          "assessmentSectionId": "biopolyester-limits"
+        }
+      ],
+      "sectionSha256": {
+        "biopolyester-limits": "f581ec91eb7cefd7f26d0ebb61c38bd6a8aed1b7e206f5a9534588469584662a"
+      }
+    }
+  ]
+}
