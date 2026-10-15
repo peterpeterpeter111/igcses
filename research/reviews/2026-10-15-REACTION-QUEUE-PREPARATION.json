@@ -4,17 +4,19 @@
   "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
   "sourceVisualPages": [
     17,
-    18
+    18,
+    19
   ],
   "sourcePrintedPages": [
     11,
-    12
+    12,
+    13
   ],
   "sourceIdentityRows": 182,
   "candidateTextRows": 246,
   "verifiedUniqueReactions": 0,
-  "sourceTriageDecisions": 21,
-  "pendingSourceTriageDecisions": 161,
+  "sourceTriageDecisions": 30,
+  "pendingSourceTriageDecisions": 152,
   "decisions": [
     {
       "officialReference": "1.1",
@@ -120,12 +122,77 @@
       "officialReference": "1.22",
       "verdict": "no-separately-prescribed-reaction-in-this-statement",
       "judgement": "Main-group configurations linked toposition do not prescribe an extra chemical-reaction family."
+    },
+    {
+      "officialReference": "1.24",
+      "verdict": "no-separately-prescribed-reaction-in-this-statement",
+      "judgement": "Noble-gas lack of ready reaction is explained by electronic stability; this statement prescribes no additional reacting pair or equation."
+    },
+    {
+      "officialReference": "1.26",
+      "verdict": "no-separately-prescribed-reaction-in-this-statement",
+      "judgement": "Relative formula/molecular mass from supplied atomic masses introduces no separately named reaction."
+    },
+    {
+      "officialReference": "1.27",
+      "verdict": "no-separately-prescribed-reaction-in-this-statement",
+      "judgement": "Mole-unit definition does not prescribe a chemical-reaction case."
+    },
+    {
+      "officialReference": "1.28",
+      "verdict": "no-separately-prescribed-reaction-in-this-statement",
+      "judgement": "Amount, mass and relative formula mass calculations do not themselves prescribe an additional named reaction; any chosen reacting example still needs an equation link."
+    },
+    {
+      "officialReference": "1.30",
+      "verdict": "no-separately-prescribed-reaction-in-this-statement",
+      "judgement": "Percentage-yield calculation has no separately named reaction in this statement. Its chosen reaction and theoretical amount still require correctly balanced supplied or separately prescribed chemistry."
+    },
+    {
+      "officialReference": "1.32",
+      "verdict": "no-separately-prescribed-reaction-in-this-statement",
+      "judgement": "Empirical/molecular formula definitions do not themselves prescribe a chemical reaction."
+    },
+    {
+      "officialReference": "1.33",
+      "verdict": "no-separately-prescribed-reaction-in-this-statement",
+      "judgement": "Deriving formulas from experimental data has no separately named reaction here; reaction-based data must retain their separately justified chemical context."
+    },
+    {
+      "officialReference": "1.34C",
+      "verdict": "no-separately-prescribed-reaction-in-this-statement",
+      "judgement": "Solution amount/volume/concentration calculations name no additional reaction; any chosen acid/base or other reacting task still needs its own source/equation coverage."
+    },
+    {
+      "officialReference": "1.35C",
+      "verdict": "no-separately-prescribed-reaction-in-this-statement",
+      "judgement": "Rtp molar gas volume calculations introduce no additional named reaction; reaction ratios used in applications must still be supplied or separately covered."
     }
   ],
   "explicitlyDeferred": [
     {
       "reference": "1.20",
       "reason": "Acid-base character of oxides needs cross-topic reaction-family review; do not exclude from1.25 only because this point names no particular oxide."
+    },
+    {
+      "reference": "1.23",
+      "reason": "Shared group chemical properties need links to the specified family reactions."
+    },
+    {
+      "reference": "1.25",
+      "reason": "Global word/formula/state and unfamiliar reaction requirement remains unresolved."
+    },
+    {
+      "reference": "1.29",
+      "reason": "Reaction-mass applications need balanced supplied/model reaction evidence; do not silently exclude their chemistry."
+    },
+    {
+      "reference": "1.31",
+      "reason": "Experimental formula work names metal oxides, water and hydrated salts; preserve actual method/reacting case coverage."
+    },
+    {
+      "reference": "1.36",
+      "reason": "Named practical examples include metal-oxide combustion/reduction; required reaction cases and conditions need explicit reconciliation."
     }
   ],
   "candidateSources": [
@@ -156,7 +223,7 @@
   ],
   "limitations": [
     "Arrow-bearing rows are not unique reactions or proof of correct word/formula/state equations. Absence of an arrow is not proof of missing explanation.",
-    "Only21 statements received this limited negative-source triage; all161remaining need decisions, and chosen demonstration reactions still need links.1.25 remains partial.",
+    "Only30 statements received this limited negative-source triage;152remaining need decisions. All first36 source identities are retained; six cross-topic/reaction demands are explicitly deferred. Chosen reacting examples still need correct links.1.25 remains partial.",
     "No note, source-point completion, paper-processing, template or liveAI status changed. Private raw queue retains source/section/field/component references."
   ],
   "reviewerType": "agent",
