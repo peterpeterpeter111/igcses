@@ -1,0 +1,1209 @@
+{
+  "reviewDate": "2026-10-17",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "sourceVisualPages": [
+    18,
+    19,
+    20,
+    21,
+    27,
+    28
+  ],
+  "excludedPriorDecisionCount": 30,
+  "principlesDecisions": 30,
+  "physicalDecisions": 22,
+  "decisionCount": 52,
+  "classificationCounts": {
+    "general-example-family": 17,
+    "cross-topic-equation-skill": 11,
+    "no-separately-prescribed-reaction": 20,
+    "specifically-named-reaction-cases": 4
+  },
+  "definitions": {
+    "specifically-named-reaction-cases": "Named source examples/material systems retained with exact source scope; not every named item implies every conceivable variant.",
+    "general-example-family": "Representative family/conditional application; named editorial examples are not publisher-exclusive obligations.",
+    "cross-topic-equation-skill": "Equation, representation or calculation skill spanning justified examples, not a new reaction count.",
+    "no-separately-prescribed-reaction": "This statement concerns structures/charges/physical properties/terminology, not a separately mandated reaction."
+  },
+  "decisions": [
+    {
+      "id": "4CH1:issue3:1.20",
+      "officialReference": "1.20",
+      "classification": "general-example-family",
+      "judgement": "Oxide acid/base behaviour supports classification, but no particular oxide or acid is named.",
+      "requiredOrRepresentativeCases": [
+        "Representative basic oxide + acid; acidic oxide + base (select from studied salts/carbon-dioxide cases)."
+      ],
+      "statesConditionsLimits": "Use supplied oxide behaviour; not every metal oxide dissolves or is basic and not every non-metal oxide is acidic. Examples are not an exhaustive oxide reaction set.",
+      "noteSectionIds": [
+        "metals-and-non-metals",
+        "metal-classification-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-states-and-mixtures.json",
+      "sourcePdfPage": 18,
+      "sourcePrintedPage": 12,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:1.23",
+      "officialReference": "1.23",
+      "classification": "general-example-family",
+      "judgement": "Similar outer-shell configurations explain group chemical similarities; concrete reactions belong the group-specific identities.",
+      "requiredOrRepresentativeCases": [
+        "Representative Group1 water and halogen displacement cases cross-reference2.1–2.8C."
+      ],
+      "statesConditionsLimits": "No additional reaction pair is named here; do not multiply group-specific cases or equate similar chemistry with identical rates.",
+      "noteSectionIds": [
+        "groups-and-noble-gases",
+        "group-behaviour-comparison-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-formulae-and-calculations.json",
+      "sourcePdfPage": 19,
+      "sourcePrintedPage": 13,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:1.25",
+      "officialReference": "1.25",
+      "classification": "cross-topic-equation-skill",
+      "judgement": "Explicitly covers word/balanced chemical equations with states for studied reactions AND unfamiliar reactions given suitable information.",
+      "requiredOrRepresentativeCases": [
+        "All source-justified studied reaction cases through cross-links; separate unfamiliar information-to-equation transfer task."
+      ],
+      "statesConditionsLimits": "This is the umbrella skill, not an additional named reaction or finite memorisation list. States must follow given temperature/solvent/phase; complete cross-topic audit needed before coverage claim.",
+      "noteSectionIds": [
+        "equations-and-state-symbols"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-formulae-and-calculations.json",
+      "sourcePdfPage": 19,
+      "sourcePrintedPage": 13,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:1.29",
+      "officialReference": "1.29",
+      "classification": "cross-topic-equation-skill",
+      "judgement": "Reacting masses use experimental data and balanced chemical equations; no reagent pair prescribed.",
+      "requiredOrRepresentativeCases": [
+        "Representative supplied balanced-equation mass ratio and experimental mass analysis."
+      ],
+      "statesConditionsLimits": "Use actual reacting/limiting amount and coefficient basis; no requirement to enumerate every numerical substitution.",
+      "noteSectionIds": [
+        "reacting-masses",
+        "experimental-formula-evidence",
+        "reacting-mass-and-yield-evidence",
+        "crucible-mass-and-bias-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-formulae-and-calculations.json",
+      "sourcePdfPage": 19,
+      "sourcePrintedPage": 13,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:1.31",
+      "officialReference": "1.31",
+      "classification": "general-example-family",
+      "judgement": "Source explicitly includes metal oxides, water, and salts containing water of crystallisation, but does not name one exclusive reagent route.",
+      "requiredOrRepresentativeCases": [
+        "Metal-oxide mass gain or oxygen loss; experimental composition of water; hydrated-salt water-loss composition.",
+        "Existing examples:2Mg(s)+O2(g)→2MgO(s); CuO(s)+H2(g)→Cu(s)+H2O; CuSO4·5H2O(s)→CuSO4(s)+5H2O."
+      ],
+      "statesConditionsLimits": "Keep all three material classes represented. Water state depends on hot production versus cooled collection; hydrate loss requires no salt decomposition and no other mass loss. These named examples are editorial choices, not exclusive publisher reagents.",
+      "noteSectionIds": [
+        "experimental-formula-evidence",
+        "water-of-crystallisation",
+        "magnesium-oxide-investigation",
+        "empirical-and-hydration-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-formulae-and-calculations.json",
+      "sourcePdfPage": 19,
+      "sourcePrintedPage": 13,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:1.36",
+      "officialReference": "1.36",
+      "classification": "general-example-family",
+      "judgement": "Practical permits metal-oxide formula determination by combustion OR reduction, with MgO and CuO introduced as examples.",
+      "requiredOrRepresentativeCases": [
+        "Combustion example2Mg(s)+O2(g)→2MgO(s).",
+        "Alternative reduction exampleCuO(s)+H2(g)→Cu(s)+H2O(g), with collected water possibly(l) after cooling."
+      ],
+      "statesConditionsLimits": "Source says OR, not mandatory performed trials of both. Mass accounting needs complete intended reaction/no product loss; Mg nitrogen side-reaction is a caveat, not another prescribed practical. School-controlled heating/reduction; no home apparatus instruction.",
+      "noteSectionIds": [
+        "magnesium-oxide-investigation",
+        "crucible-mass-and-bias-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-formulae-and-calculations.json",
+      "sourcePdfPage": 19,
+      "sourcePrintedPage": 13,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:1.37",
+      "officialReference": "1.37",
+      "classification": "cross-topic-equation-skill",
+      "judgement": "Electron-loss/gain ion formation is a general balanced electron bookkeeping skill rather than a named molecular synthesis.",
+      "requiredOrRepresentativeCases": [
+        "Representative Na→Na+ +e−, Mg→Mg2+ +2e−, Cl+e−→Cl− formal atom-to-ion changes."
+      ],
+      "statesConditionsLimits": "Formal atom/ion diagrams are not automatically full reactions under ambient conditions; molecular halogen electrode equations must use X2 and correct phase when applicable.",
+      "noteSectionIds": [
+        "ion-formation",
+        "ion-charge-and-formula-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-bonding.json",
+      "sourcePdfPage": 20,
+      "sourcePrintedPage": 14,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:1.38",
+      "officialReference": "1.38",
+      "classification": "no-separately-prescribed-reaction",
+      "judgement": "A specified ion-charge list is a composition/charge obligation, not a separate chemical reaction for each listed ion.",
+      "requiredOrRepresentativeCases": [],
+      "statesConditionsLimits": "No new separately named reacting pair is prescribed by this identity.",
+      "noteSectionIds": [
+        "ion-formation",
+        "ion-charges-and-formulae",
+        "ion-charge-and-formula-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-bonding.json",
+      "sourcePdfPage": 20,
+      "sourcePrintedPage": 14,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:1.39",
+      "officialReference": "1.39",
+      "classification": "no-separately-prescribed-reaction",
+      "judgement": "Compound formulae from listed ions are charge-neutrality constructions, not mandated syntheses of every ion pair.",
+      "requiredOrRepresentativeCases": [],
+      "statesConditionsLimits": "No new separately named reacting pair is prescribed by this identity.",
+      "noteSectionIds": [
+        "ion-charges-and-formulae",
+        "ion-charge-and-formula-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-bonding.json",
+      "sourcePdfPage": 20,
+      "sourcePrintedPage": 14,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:1.40",
+      "officialReference": "1.40",
+      "classification": "no-separately-prescribed-reaction",
+      "judgement": "Outer-electron transfer drawings for permitted Group1/2/3 and5/6/7 combinations prescribe diagram skills, not independent preparation routes for every compound.",
+      "requiredOrRepresentativeCases": [],
+      "statesConditionsLimits": "No new separately named reacting pair is prescribed by this identity.",
+      "noteSectionIds": [
+        "ionic-dot-cross",
+        "ionic-transfer-count-evidence",
+        "aluminium-oxide-diagram-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-bonding.json",
+      "sourcePdfPage": 20,
+      "sourcePrintedPage": 14,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:1.41",
+      "officialReference": "1.41",
+      "classification": "no-separately-prescribed-reaction",
+      "judgement": "Ionic electrostatic attraction is bonding theory, without a new reaction pair.",
+      "requiredOrRepresentativeCases": [],
+      "statesConditionsLimits": "No new separately named reacting pair is prescribed by this identity.",
+      "noteSectionIds": [
+        "ionic-lattice-properties",
+        "ionic-structure-and-conduction-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-bonding.json",
+      "sourcePdfPage": 20,
+      "sourcePrintedPage": 14,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:1.42",
+      "officialReference": "1.42",
+      "classification": "no-separately-prescribed-reaction",
+      "judgement": "Ionic lattice melting/boiling is a physical-property explanation, not decomposition.",
+      "requiredOrRepresentativeCases": [],
+      "statesConditionsLimits": "No new separately named reacting pair is prescribed by this identity.",
+      "noteSectionIds": [
+        "ionic-lattice-properties",
+        "ionic-structure-and-conduction-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-bonding.json",
+      "sourcePdfPage": 20,
+      "sourcePrintedPage": 14,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:1.43",
+      "officialReference": "1.43",
+      "classification": "no-separately-prescribed-reaction",
+      "judgement": "Ionic conduction depends on mobile ions in molten/aqueous phases, not a named electrode discharge in this statement.",
+      "requiredOrRepresentativeCases": [],
+      "statesConditionsLimits": "No new separately named reacting pair is prescribed by this identity.",
+      "noteSectionIds": [
+        "ionic-conduction",
+        "ionic-structure-and-conduction-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-bonding.json",
+      "sourcePdfPage": 20,
+      "sourcePrintedPage": 14,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:1.44",
+      "officialReference": "1.44",
+      "classification": "no-separately-prescribed-reaction",
+      "judgement": "Shared electron-pair bond definition does not prescribe synthesis.",
+      "requiredOrRepresentativeCases": [],
+      "statesConditionsLimits": "No new separately named reacting pair is prescribed by this identity.",
+      "noteSectionIds": [
+        "covalent-bonds",
+        "shared-pair-attraction-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-bonding.json",
+      "sourcePdfPage": 20,
+      "sourcePrintedPage": 14,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:1.45",
+      "officialReference": "1.45",
+      "classification": "no-separately-prescribed-reaction",
+      "judgement": "Covalent electrostatic attraction is a bonding explanation rather than a reaction.",
+      "requiredOrRepresentativeCases": [],
+      "statesConditionsLimits": "No new separately named reacting pair is prescribed by this identity.",
+      "noteSectionIds": [
+        "covalent-bonds",
+        "shared-pair-attraction-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-bonding.json",
+      "sourcePdfPage": 20,
+      "sourcePrintedPage": 14,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:1.46",
+      "officialReference": "1.46",
+      "classification": "no-separately-prescribed-reaction",
+      "judgement": "Named diatomic/inorganic/organic molecules prescribe covalent dot-cross drawings, not their synthesis reactions.",
+      "requiredOrRepresentativeCases": [],
+      "statesConditionsLimits": "No new separately named reacting pair is prescribed by this identity.",
+      "noteSectionIds": [
+        "diatomic-dot-cross",
+        "inorganic-molecule-diagrams",
+        "organic-molecule-diagrams",
+        "diatomic-shared-electron-evidence",
+        "halogen-shared-electron-evidence",
+        "inorganic-molecule-count-evidence",
+        "organic-bond-order-evidence",
+        "organic-halogen-electron-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-bonding.json",
+      "sourcePdfPage": 20,
+      "sourcePrintedPage": 14,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:1.47",
+      "officialReference": "1.47",
+      "classification": "no-separately-prescribed-reaction",
+      "judgement": "Simple-molecular phase-change properties are intermolecular-force explanations, not chemical reactions.",
+      "requiredOrRepresentativeCases": [],
+      "statesConditionsLimits": "No new separately named reacting pair is prescribed by this identity.",
+      "noteSectionIds": [
+        "simple-molecular-properties",
+        "molecular-property-comparison-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-bonding.json",
+      "sourcePdfPage": 20,
+      "sourcePrintedPage": 14,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:1.48",
+      "officialReference": "1.48",
+      "classification": "no-separately-prescribed-reaction",
+      "judgement": "Relative-mass/thermal-property trends do not prescribe a reaction.",
+      "requiredOrRepresentativeCases": [],
+      "statesConditionsLimits": "No new separately named reacting pair is prescribed by this identity.",
+      "noteSectionIds": [
+        "simple-molecular-properties",
+        "molecular-property-comparison-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-bonding.json",
+      "sourcePdfPage": 20,
+      "sourcePrintedPage": 14,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:1.49",
+      "officialReference": "1.49",
+      "classification": "no-separately-prescribed-reaction",
+      "judgement": "Giant covalent structure and high melting/boiling are structure/property obligations, not a synthesis/decomposition collection.",
+      "requiredOrRepresentativeCases": [],
+      "statesConditionsLimits": "No new separately named reacting pair is prescribed by this identity.",
+      "noteSectionIds": [
+        "giant-covalent-and-carbon",
+        "carbon-structure-property-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-bonding.json",
+      "sourcePdfPage": 20,
+      "sourcePrintedPage": 14,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:1.50",
+      "officialReference": "1.50",
+      "classification": "no-separately-prescribed-reaction",
+      "judgement": "Diamond, graphite and C60 properties require structural comparison, not mandatory interconversion or combustion equations.",
+      "requiredOrRepresentativeCases": [],
+      "statesConditionsLimits": "No new separately named reacting pair is prescribed by this identity.",
+      "noteSectionIds": [
+        "giant-covalent-and-carbon",
+        "carbon-structure-property-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-bonding.json",
+      "sourcePdfPage": 20,
+      "sourcePrintedPage": 14,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:1.51",
+      "officialReference": "1.51",
+      "classification": "no-separately-prescribed-reaction",
+      "judgement": "Usual covalent nonconduction is a charge-carrier explanation, not a reaction.",
+      "requiredOrRepresentativeCases": [],
+      "statesConditionsLimits": "No new separately named reacting pair is prescribed by this identity.",
+      "noteSectionIds": [
+        "simple-molecular-properties",
+        "giant-covalent-and-carbon",
+        "molecular-property-comparison-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-bonding.json",
+      "sourcePdfPage": 20,
+      "sourcePrintedPage": 14,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:1.52C",
+      "officialReference": "1.52C",
+      "classification": "no-separately-prescribed-reaction",
+      "judgement": "Two-dimensional metallic lattice representation is a diagram requirement.",
+      "requiredOrRepresentativeCases": [],
+      "statesConditionsLimits": "No new separately named reacting pair is prescribed by this identity.",
+      "noteSectionIds": [
+        "metallic-bonding",
+        "metallic-model-and-deformation-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-bonding.json",
+      "sourcePdfPage": 21,
+      "sourcePrintedPage": 15,
+      "components": [
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:1.53C",
+      "officialReference": "1.53C",
+      "classification": "no-separately-prescribed-reaction",
+      "judgement": "Metallic electrostatic attraction is bonding theory.",
+      "requiredOrRepresentativeCases": [],
+      "statesConditionsLimits": "No new separately named reacting pair is prescribed by this identity.",
+      "noteSectionIds": [
+        "metallic-bonding",
+        "metallic-model-and-deformation-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-bonding.json",
+      "sourcePdfPage": 21,
+      "sourcePrintedPage": 15,
+      "components": [
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:1.54C",
+      "officialReference": "1.54C",
+      "classification": "no-separately-prescribed-reaction",
+      "judgement": "Metal conductivity/malleability are physical properties, not new reactions.",
+      "requiredOrRepresentativeCases": [],
+      "statesConditionsLimits": "No new separately named reacting pair is prescribed by this identity.",
+      "noteSectionIds": [
+        "metallic-bonding",
+        "metallic-model-and-deformation-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-bonding.json",
+      "sourcePdfPage": 21,
+      "sourcePrintedPage": 15,
+      "components": [
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:1.55C",
+      "officialReference": "1.55C",
+      "classification": "no-separately-prescribed-reaction",
+      "judgement": "Covalent nonconduction describes lack of suitable mobile charge carriers.",
+      "requiredOrRepresentativeCases": [],
+      "statesConditionsLimits": "No new separately named reacting pair is prescribed by this identity.",
+      "noteSectionIds": [
+        "electrolysis-charge-carriers",
+        "charge-mobility-comparison-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-electrolysis.json",
+      "sourcePdfPage": 21,
+      "sourcePrintedPage": 15,
+      "components": [
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:1.56C",
+      "officialReference": "1.56C",
+      "classification": "no-separately-prescribed-reaction",
+      "judgement": "Ionic mobile-charge conduction in molten/aqueous conditions is not a separate named electrolysis case.",
+      "requiredOrRepresentativeCases": [],
+      "statesConditionsLimits": "No new separately named reacting pair is prescribed by this identity.",
+      "noteSectionIds": [
+        "electrolysis-charge-carriers",
+        "charge-mobility-comparison-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-electrolysis.json",
+      "sourcePdfPage": 21,
+      "sourcePrintedPage": 15,
+      "components": [
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:1.57C",
+      "officialReference": "1.57C",
+      "classification": "no-separately-prescribed-reaction",
+      "judgement": "Anion/cation sign terminology does not prescribe a reaction.",
+      "requiredOrRepresentativeCases": [],
+      "statesConditionsLimits": "No new separately named reacting pair is prescribed by this identity.",
+      "noteSectionIds": [
+        "cations-anions-and-electrodes",
+        "electrode-sign-and-ion-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-electrolysis.json",
+      "sourcePdfPage": 21,
+      "sourcePrintedPage": 15,
+      "components": [
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:1.58C",
+      "officialReference": "1.58C",
+      "classification": "specifically-named-reaction-cases",
+      "judgement": "Inert-electrode experiments explicitly include molten lead(II)bromide and aqueous sodium chloride, dilute sulfuric acid and copper(II)sulfate, plus prediction skill.",
+      "requiredOrRepresentativeCases": [
+        "MoltenPbBr2(l)→Pb(l)+Br2(g) under hot molten-cell conditions; Pb2++2e−→Pb and2Br−→Br2+2e−.",
+        "Concentrated aqueousNaCl with inert electrodes:2NaCl(aq)+2H2O(l)→2NaOH(aq)+H2(g)+Cl2(g); cathode water reduction and chloride oxidation.",
+        "DiluteH2SO4(aq), inert electrodes: net2H2O(l)→2H2(g)+O2(g).",
+        "AqueousCuSO4, genuinely inert electrodes: copper cathode deposit and oxygen anode; net2CuSO4(aq)+2H2O(l)→2Cu(s)+O2(g)+2H2SO4(aq)."
+      ],
+      "statesConditionsLimits": "Publisher NaCl case does not specify concentration: distinguish brine chlorine from dilute-chloride oxygen competition, not universal chlorine-only. Pb product liquid in hot cell versus solid after cooling. Cu electrodes change anode reaction; graphite can react with oxygen. Half-equations must specify aqueous or molten context. Named cases do not exhaust unfamiliar prediction skill.",
+      "noteSectionIds": [
+        "molten-lead-bromide",
+        "aqueous-product-predictions",
+        "aqueous-electrolysis-investigation",
+        "electrolysis-condition-comparison-evidence",
+        "aqueous-cell-control-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-electrolysis.json",
+      "sourcePdfPage": 21,
+      "sourcePrintedPage": 15,
+      "components": [
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:1.59C",
+      "officialReference": "1.59C",
+      "classification": "cross-topic-equation-skill",
+      "judgement": "Ionic electrode half-equations and oxidation/reduction classification span electrolysis cases; no extra electrolyte named.",
+      "requiredOrRepresentativeCases": [
+        "Cross-link1.58C cathode/anode cases: Pb2+/Pb, Br−/Br2, Cu2+/Cu, H+/H2 or water/H2, water/O2 or OH−/O2, Cl−/Cl2."
+      ],
+      "statesConditionsLimits": "Conserve atoms and charge; oxidation emits electrons, reduction consumes them. Acidic and alkaline representations must be chemically/contextually consistent; do not mix phase assumptions or count alternative forms as separate required reactions.",
+      "noteSectionIds": [
+        "cations-anions-and-electrodes",
+        "molten-lead-bromide",
+        "electrolysis-half-equations",
+        "electrode-sign-and-ion-evidence",
+        "half-equation-correction-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-electrolysis.json",
+      "sourcePdfPage": 21,
+      "sourcePrintedPage": 15,
+      "components": [
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:1.60C",
+      "officialReference": "1.60C",
+      "classification": "general-example-family",
+      "judgement": "Aqueous electrolysis practical names a family, without an additional fixed electrolyte list.",
+      "requiredOrRepresentativeCases": [
+        "Aqueous investigation representativeCuSO4 with suitable inert electrodes, linked to1.58C; source named aqueous acid/NaCl cases remain separately covered there."
+      ],
+      "statesConditionsLimits": "Practical plans/observations and reaction equations are separate evidence; no obligation to claim every aqueous solution tested. Qualified graphite products, controlled DC/electrodes, separate gas identification and no performed-trial claim.",
+      "noteSectionIds": [
+        "aqueous-electrolysis-investigation",
+        "aqueous-cell-control-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-electrolysis.json",
+      "sourcePdfPage": 21,
+      "sourcePrintedPage": 15,
+      "components": [
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:3.1",
+      "officialReference": "3.1",
+      "classification": "general-example-family",
+      "judgement": "Exothermic/endothermic definitions require representative heat-transfer changes, not a named pair.",
+      "requiredOrRepresentativeCases": [
+        "Representative neutralisation exotherm and suitable dissolving endotherm from3.2/3.8."
+      ],
+      "statesConditionsLimits": "Dissolving can be physical solvation/dissociation rather than a new chemical reaction; initial heating does not establish endothermicity.",
+      "noteSectionIds": [
+        "energy-system"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-physical.json",
+      "sourcePdfPage": 27,
+      "sourcePrintedPage": 21,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:3.2",
+      "officialReference": "3.2",
+      "classification": "general-example-family",
+      "judgement": "Source names calorimetry example types: combustion, displacement, dissolving and neutralisation, without fixing reagents.",
+      "requiredOrRepresentativeCases": [
+        "Combustion representative fuel+O2→CO2+H2O; neutralisationHCl(aq)+NaOH(aq)→NaCl(aq)+H2O(l).",
+        "DisplacementZn(s)+CuSO4(aq)→ZnSO4(aq)+Cu(s); dissolving a suitable specified salt in water."
+      ],
+      "statesConditionsLimits": "Represent all four method classes; selected examples do not require every fuel/salt/acid pair. Water combustion state follows stated calorimetry basis, not arbitrary(g)/(l). Dissolving needs chosen substance/dissociation and mass assumptions.",
+      "noteSectionIds": [
+        "calorimetry-methods",
+        "neutralization-calorimeter",
+        "dissolving-displacement",
+        "fuel-calorimeter",
+        "calorimetry-evaluation"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-physical.json",
+      "sourcePdfPage": 27,
+      "sourcePrintedPage": 21,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:3.3",
+      "officialReference": "3.3",
+      "classification": "cross-topic-equation-skill",
+      "judgement": "Q=mcΔT is a cross-reaction heat calculation, not another named chemical reaction.",
+      "requiredOrRepresentativeCases": [
+        "Apply to actual selected calorimetry case."
+      ],
+      "statesConditionsLimits": "Use measured material mass and heat capacity; distinguish sign of surroundingsQ from reactionheat.",
+      "noteSectionIds": [
+        "calorimetry-heat",
+        "neutralization-calorimeter",
+        "fuel-calorimeter",
+        "calorimetry-evaluation"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-physical.json",
+      "sourcePdfPage": 27,
+      "sourcePrintedPage": 21,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:3.4",
+      "officialReference": "3.4",
+      "classification": "cross-topic-equation-skill",
+      "judgement": "Molar enthalpy calculated from heat and reacting amount uses a specified equation basis.",
+      "requiredOrRepresentativeCases": [
+        "Calorimetry case per mole of stated reactant or equation extent."
+      ],
+      "statesConditionsLimits": "Coefficient/limiting-amount basis and physical states matter; no fixed reagent list.",
+      "noteSectionIds": [
+        "enthalpy-amount",
+        "neutralization-calorimeter",
+        "fuel-calorimeter"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-physical.json",
+      "sourcePdfPage": 27,
+      "sourcePrintedPage": 21,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:3.5C",
+      "officialReference": "3.5C",
+      "classification": "cross-topic-equation-skill",
+      "judgement": "Energy-level diagrams represent exo/endothermic reactions without prescribing reagent identities.",
+      "requiredOrRepresentativeCases": [
+        "One exothermic and one endothermic supplied reaction/energy model."
+      ],
+      "statesConditionsLimits": "Represent unchanged equation basis and products-minus-reactants sign; no added named cases.",
+      "noteSectionIds": [
+        "energy-levels"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-physical.json",
+      "sourcePdfPage": 27,
+      "sourcePrintedPage": 21,
+      "components": [
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:3.6C",
+      "officialReference": "3.6C",
+      "classification": "cross-topic-equation-skill",
+      "judgement": "Bond breaking/making energy directions apply across represented chemical changes.",
+      "requiredOrRepresentativeCases": [
+        "Representative supplied bond-breaking/formation accounting."
+      ],
+      "statesConditionsLimits": "Not a requirement to isolate every bond experimentally or introduce extra named reactions.",
+      "noteSectionIds": [
+        "bond-balance"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-physical.json",
+      "sourcePdfPage": 27,
+      "sourcePrintedPage": 21,
+      "components": [
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:3.7C",
+      "officialReference": "3.7C",
+      "classification": "cross-topic-equation-skill",
+      "judgement": "Bond-energy enthalpy estimation requires balanced structures and coefficients but no named equation.",
+      "requiredOrRepresentativeCases": [
+        "Representative gas-phase reaction with supplied bond energies; existing ammonia model is editorial."
+      ],
+      "statesConditionsLimits": "Average gas-phase model; states and stoichiometric basis explicit. Supplied examples do not make ammonia synthesis a separately prescribed named case here.",
+      "noteSectionIds": [
+        "bond-balance"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-physical.json",
+      "sourcePdfPage": 27,
+      "sourcePrintedPage": 21,
+      "components": [
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:3.8",
+      "officialReference": "3.8",
+      "classification": "general-example-family",
+      "judgement": "Practical investigates SOME of salts dissolving, neutralisation, displacement and combustion.",
+      "requiredOrRepresentativeCases": [
+        "Select appropriate temperature-change practical(s) from four listed families; cross-link3.2 examples."
+      ],
+      "statesConditionsLimits": "Preserve SOME: no mandatory four performed trials, and no new fixed salt/fuel/acid list. Authored method coverage differs from empirical execution.",
+      "noteSectionIds": [
+        "calorimetry-methods",
+        "neutralization-calorimeter",
+        "dissolving-displacement",
+        "fuel-calorimeter",
+        "calorimetry-evaluation"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-physical.json",
+      "sourcePdfPage": 27,
+      "sourcePrintedPage": 21,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:3.9",
+      "officialReference": "3.9",
+      "classification": "general-example-family",
+      "judgement": "Investigations span area, solution concentration, temperature and catalyst without a new fixed reaction list.",
+      "requiredOrRepresentativeCases": [
+        "Marble/HCl for area/concentration; peroxide/solids for catalyst; approved temperature-controlled representative reaction."
+      ],
+      "statesConditionsLimits": "Four variable demands need teaching; gas pressure is added by3.10/3.11, not an extra mandated3.9 experiment. Named reactions belong3.15/3.16; avoid duplicate required-case counts.",
+      "noteSectionIds": [
+        "rate-measure",
+        "rate-curves",
+        "rate-area",
+        "rate-concentration-pressure",
+        "rate-temperature",
+        "catalyst-model",
+        "marble-design",
+        "peroxide-solids",
+        "rate-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-physical.json",
+      "sourcePdfPage": 28,
+      "sourcePrintedPage": 22,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:3.10",
+      "officialReference": "3.10",
+      "classification": "general-example-family",
+      "judgement": "Effects of area/concentration/gaspressure/temperature/catalyst are a general rate family.",
+      "requiredOrRepresentativeCases": [
+        "Use source-justified rate/catalyst examples linked3.15/3.16."
+      ],
+      "statesConditionsLimits": "Same final yield requires same fully reacted limiting amount and matched gas conditions; no universal exact rate multiplier.",
+      "noteSectionIds": [
+        "rate-curves",
+        "rate-area",
+        "rate-concentration-pressure",
+        "rate-temperature",
+        "catalyst-model"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-physical.json",
+      "sourcePdfPage": 28,
+      "sourcePrintedPage": 22,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:3.11",
+      "officialReference": "3.11",
+      "classification": "general-example-family",
+      "judgement": "Collision theory explains area/concentration/pressure/temperature effects without a new named chemical pair.",
+      "requiredOrRepresentativeCases": [
+        "Use source-justified rate/catalyst examples linked3.15/3.16."
+      ],
+      "statesConditionsLimits": "Fixed-temperature compression raises reacting concentration, not mean kinetic energy; temperature increases sufficient-energy fraction.",
+      "noteSectionIds": [
+        "rate-area",
+        "rate-concentration-pressure",
+        "rate-temperature"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-physical.json",
+      "sourcePdfPage": 28,
+      "sourcePrintedPage": 22,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:3.12",
+      "officialReference": "3.12",
+      "classification": "general-example-family",
+      "judgement": "Catalyst rate/unchanged-overall definition does not prescribe a new catalyst reaction.",
+      "requiredOrRepresentativeCases": [
+        "Use source-justified rate/catalyst examples linked3.15/3.16."
+      ],
+      "statesConditionsLimits": "Peroxide example cross-links3.16; gas acceleration alone cannot prove regenerated identity.",
+      "noteSectionIds": [
+        "catalyst-model",
+        "peroxide-solids"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-physical.json",
+      "sourcePdfPage": 28,
+      "sourcePrintedPage": 22,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:3.13",
+      "officialReference": "3.13",
+      "classification": "general-example-family",
+      "judgement": "Alternative lower-activation-energy pathway is general rather than a named reaction.",
+      "requiredOrRepresentativeCases": [
+        "Use source-justified rate/catalyst examples linked3.15/3.16."
+      ],
+      "statesConditionsLimits": "Catalyst does not change overall endpoints/enthalpy or supply net reaction energy.",
+      "noteSectionIds": [
+        "catalyst-model"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-physical.json",
+      "sourcePdfPage": 28,
+      "sourcePrintedPage": 22,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:3.14C",
+      "officialReference": "3.14C",
+      "classification": "cross-topic-equation-skill",
+      "judgement": "Profiles with ΔH and activation energy are equation-linked representations, not a fixed reaction.",
+      "requiredOrRepresentativeCases": [
+        "Exothermic/endothermic supplied profile; catalysed comparison if included."
+      ],
+      "statesConditionsLimits": "Measure barrier from reactants, ΔH between endpoints; numerical diagram does not create a prescribed molecular reaction.",
+      "noteSectionIds": [
+        "reaction-profile"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-physical.json",
+      "sourcePdfPage": 28,
+      "sourcePrintedPage": 22,
+      "components": [
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:3.15",
+      "officialReference": "3.15",
+      "classification": "specifically-named-reaction-cases",
+      "judgement": "Named marble-chip/dilute hydrochloric-acid investigation with separate area and acid-concentration changes.",
+      "requiredOrRepresentativeCases": [
+        "CaCO3(s)+2HCl(aq)→CaCl2(aq)+H2O(l)+CO2(g)."
+      ],
+      "statesConditionsLimits": "DiluteHCl, comparable carbonate mass/material/temperature; acid excess throughout if claiming same finalCO2. Collection delay/leaks/dissolution limit observations; one equation serves both variable studies.",
+      "noteSectionIds": [
+        "rate-curves",
+        "rate-area",
+        "marble-design",
+        "rate-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-physical.json",
+      "sourcePdfPage": 28,
+      "sourcePrintedPage": 22,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:3.16",
+      "officialReference": "3.16",
+      "classification": "specifically-named-reaction-cases",
+      "judgement": "Named catalytic decomposition of aqueous hydrogen peroxide compares different solids.",
+      "requiredOrRepresentativeCases": [
+        "2H2O2(aq)→2H2O(l)+O2(g)."
+      ],
+      "statesConditionsLimits": "Solids are varied; MnO2 is a representative, not the only publisher-prescribed catalyst. Matched peroxide/temperature/sample conditions, no-solid control; gas identity and catalyst regeneration distinct.",
+      "noteSectionIds": [
+        "peroxide-solids",
+        "rate-evidence"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-physical.json",
+      "sourcePdfPage": 28,
+      "sourcePrintedPage": 22,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:3.17",
+      "officialReference": "3.17",
+      "classification": "cross-topic-equation-skill",
+      "judgement": "Reversible symbol and two directions are a cross-topic equation skill.",
+      "requiredOrRepresentativeCases": [
+        "Represent reversible cases3.18 with ⇌."
+      ],
+      "statesConditionsLimits": "Reversible arrow does not establish present equilibrium/equal quantities. It does not prescribe a further chemical pair.",
+      "noteSectionIds": [
+        "reversible-arrow"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-physical.json",
+      "sourcePdfPage": 28,
+      "sourcePrintedPage": 22,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:3.18",
+      "officialReference": "3.18",
+      "classification": "specifically-named-reaction-cases",
+      "judgement": "Source explicitly gives dehydration of hydrated copper(II)sulfate and heating ammonium chloride as reversible examples.",
+      "requiredOrRepresentativeCases": [
+        "CuSO4·5H2O(s)⇌CuSO4(s)+5H2O(g) for hot dehydration; cooled hydration with added liquid water is the reverse demonstration under different conditions.",
+        "NH4Cl(s)⇌NH3(g)+HCl(g), with reformation of solid in cooler region."
+      ],
+      "statesConditionsLimits": "Source SUCH AS names examples to retain, not an exhaustive reversible-reaction universe. Pentahydrate is standard represented hydrate; state of water depends on heating/collection/addition. Blue solution with excesswater is not proof of pure hydrated crystals. Open demos not proof of dynamic equilibrium; never rigidly seal heated gas-producing tube.",
+      "noteSectionIds": [
+        "reversible-arrow",
+        "copper-water-reverse",
+        "ammonium-reverse"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-physical.json",
+      "sourcePdfPage": 28,
+      "sourcePrintedPage": 22,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:3.19C",
+      "officialReference": "3.19C",
+      "classification": "general-example-family",
+      "judgement": "Closed-system dynamic-equilibrium concept names no additional reaction.",
+      "requiredOrRepresentativeCases": [
+        "Use representative reversible model with supplied evidence; cross-link3.18 only where conditions appropriate."
+      ],
+      "statesConditionsLimits": "Retain reactants/products and maintained conditions; no need for a sealed dangerous demonstration.",
+      "noteSectionIds": [
+        "dynamic-equilibrium"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-physical.json",
+      "sourcePdfPage": 28,
+      "sourcePrintedPage": 22,
+      "components": [
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:3.20C",
+      "officialReference": "3.20C",
+      "classification": "general-example-family",
+      "judgement": "Equal opposing rates and constant concentrations describe general equilibrium behaviour.",
+      "requiredOrRepresentativeCases": [
+        "Use representative reversible model with supplied evidence; cross-link3.18 only where conditions appropriate."
+      ],
+      "statesConditionsLimits": "Concentrations need not be equal; plateau alone does not prove dynamic mechanism.",
+      "noteSectionIds": [
+        "dynamic-equilibrium"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-physical.json",
+      "sourcePdfPage": 28,
+      "sourcePrintedPage": 22,
+      "components": [
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:3.21C",
+      "officialReference": "3.21C",
+      "classification": "general-example-family",
+      "judgement": "Catalyst unchanged equilibrium position is a general equilibrium relationship.",
+      "requiredOrRepresentativeCases": [
+        "Use representative reversible model with supplied evidence; cross-link3.18 only where conditions appropriate."
+      ],
+      "statesConditionsLimits": "Compare actual equilibrium at same maintained conditions; faster approach is not changed yield.",
+      "noteSectionIds": [
+        "equilibrium-catalyst"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-physical.json",
+      "sourcePdfPage": 28,
+      "sourcePrintedPage": 22,
+      "components": [
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    },
+    {
+      "id": "4CH1:issue3:3.22C",
+      "officialReference": "3.22C",
+      "classification": "general-example-family",
+      "judgement": "Temperature and pressure directions require representative given equilibria, not a named industrial synthesis.",
+      "requiredOrRepresentativeCases": [
+        "Representative supplied reversible equation; ammonia, H2/I2/HI and carbonate equilibrium in notes are illustrative, not newly mandated named cases."
+      ],
+      "statesConditionsLimits": "Heating endothermic/cooling exothermic; fixedT compression fewergas moles, expansion more; equalgas counts and inert addition at fixedV need qualifications. Le Chatelier name not required.",
+      "noteSectionIds": [
+        "equilibrium-temperature",
+        "equilibrium-pressure"
+      ],
+      "inventoryPath": "research/syllabus/4CH1-physical.json",
+      "sourcePdfPage": 28,
+      "sourcePrintedPage": 22,
+      "components": [
+        "2C"
+      ],
+      "sourceTriageOnly": true,
+      "reactionCoverageCertified": false
+    }
+  ]
+}

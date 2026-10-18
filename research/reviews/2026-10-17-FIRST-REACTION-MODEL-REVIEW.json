@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-17",
+  "scope": "Bounded independent review of 13 named-core models and corresponding chemistry.json note sections; no new broad source audit.",
+  "verdict": "No atom-balance or practice-answer defect found; two source-reference repairs and one explicit condition clarification recommended.",
+  "modelsReviewed": 13,
+  "findings": [
+    {
+      "modelId": "molten-lead-bromide",
+      "kind": "source-reference",
+      "detail": "1.60C prescribes an aqueous-solution electrolysis practical, not molten PbBr2. Remove 1.60C from this model; 1.58C supports the molten case."
+    },
+    {
+      "modelId": "zinc-copper-displacement",
+      "kind": "source-reference",
+      "detail": "The specific salt-solution displacement requirement is 2.16. Replace 2.15 with 2.16; 2.15 concerns water/dilute-acid reactivity observations. Other references may remain as contextual skills."
+    },
+    {
+      "modelId": "molten-lead-bromide",
+      "kind": "condition-clarity",
+      "detail": "Explicitly state suitable inert electrodes in the model and matching note condition to retain the 1.58C experimental boundary. Products, polarity and stated hot phases are correct."
+    }
+  ],
+  "checked": [
+    "All 13 overall equations conserve atoms; supplied formulas and practice corrections are consistent.",
+    "Molten lead is correctly liquid in the stated hot apparatus and solid after cooling; bromine is diatomic.",
+    "Concentrated brine specifies inert electrodes and separated products; dilute-solution competition is qualified.",
+    "CuSO4 electrolysis specifies inert electrodes and distinguishes an active copper anode; acidification equation balances.",
+    "Acidified-water sulfuric acid is electrolyte, not an overall consumed reactant; 2:1 gas volumes require matched conditions.",
+    "CuSO4 dehydration uses hot-region steam and controlled heating; hydration explicitly limits the pentahydrate stoichiometric model and distinguishes excess-water solution.",
+    "NH4Cl reversal distinguishes cool deposition from closed-system equilibrium and avoids a heated sealed vessel.",
+    "Marble/peroxide gas identities, neutralization and zinc displacement answers are chemically consistent.",
+    "Paper 2C electrolysis models are labelled; wholeCollectionComplete, humanReviewed and practicalTrialsPerformed remain false."
+  ],
+  "limits": "Written chemistry/source-reference review only. No experimental trial, empirical calibration, whole-collection completion, rendered layout verification or template activation."
+}

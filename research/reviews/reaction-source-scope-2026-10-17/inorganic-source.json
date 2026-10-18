@@ -1,0 +1,1805 @@
+{
+  "reviewDate": "2026-10-17",
+  "scope": "Read-only reaction-scope decisions for Chemistry 1.25 integration; no teaching completion or exam-readiness promotion",
+  "specification": "4CH1 Issue 3 September 2024",
+  "sourcePdf": "work/spec-current-2026-09-09/4CH1.pdf",
+  "sha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "visuallyReadPdfPages": [
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "printedPages": [
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "auditFiles": [
+    "research/curriculum-audits/4CH1-halogen-physical.json",
+    "research/curriculum-audits/4CH1-acid-metal-practical.json",
+    "research/curriculum-audits/4CH1-acids-salts.json",
+    "research/curriculum-audits/4CH1-chemical-tests.json",
+    "research/curriculum-audits/4CH1-atmosphere.json",
+    "research/curriculum-audits/4CH1-halogen-reactivity.json",
+    "research/curriculum-audits/4CH1-reactivity-rust-redox.json",
+    "research/curriculum-audits/4CH1-metal-extraction-uses.json",
+    "research/curriculum-audits/4CH1-group1.json"
+  ],
+  "notesPath": "content/notes/chemistry-inorganic.json",
+  "noteSectionCount": 103,
+  "interpretation": "Required named cases identify source-prescribed chemistry/test contexts, not a claim that each identity explicitly commands a separately memorised equation. Representative cases are suitable editorial choices, not extra specification clauses. Equations are school models with stated limits. No experimental validation.",
+  "decisions": [
+    {
+      "id": "4CH1:issue3:2.1",
+      "reference": "2.1",
+      "pdfPage": 22,
+      "printedPage": 16,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "named-reaction-cases"
+      ],
+      "requiredNamedCases": [
+        "Lithium + water",
+        "Sodium + water",
+        "Potassium + water"
+      ],
+      "representativeCases": [
+        "2Li(s) + 2H2O(l) → 2LiOH(aq) + H2(g)",
+        "2Na(s) + 2H2O(l) → 2NaOH(aq) + H2(g)",
+        "2K(s) + 2H2O(l) → 2KOH(aq) + H2(g)"
+      ],
+      "statesConditionsAndScopeLimits": "Cold water; shared family products. Metal phase can change during reaction; (s) describes initial sample. Group heading names these three.",
+      "inventory": "research/syllabus/4CH1-group1.json",
+      "noteSectionIds": [
+        "group1-water-family",
+        "alkali-family-transfer-evidence"
+      ],
+      "inventoryNoteSectionIds": [
+        "group1-water-family",
+        "alkali-family-transfer-evidence"
+      ],
+      "editorialRequirementSummaries": [
+        "Shared hydrogen product",
+        "Corresponding hydroxides and alkaline solutions",
+        "Balanced reaction pattern",
+        "Chemical similarity as family evidence"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.2",
+      "reference": "2.2",
+      "pdfPage": 22,
+      "printedPage": 16,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "named-reaction-cases"
+      ],
+      "requiredNamedCases": [
+        "Li/Na/K reactions with air and water"
+      ],
+      "representativeCases": [
+        "Reuse 2.1 water equations; compare observed tarnishing in air"
+      ],
+      "statesConditionsAndScopeLimits": "Air contains oxygen and moisture; do not impose M2O on every surface film. No unique air-product equation prescribed. Matched conditions needed for rate inference.",
+      "inventory": "research/syllabus/4CH1-group1.json",
+      "noteSectionIds": [
+        "group1-air-water-trend",
+        "alkali-comparison-and-shielding-evidence"
+      ],
+      "inventoryNoteSectionIds": [
+        "group1-air-water-trend",
+        "alkali-comparison-and-shielding-evidence"
+      ],
+      "editorialRequirementSummaries": [
+        "Typical comparable water observations",
+        "Air tarnishing as supporting evidence",
+        "Lithium to sodium to potassium ordering",
+        "Observation, interpretation and comparison limitations"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.3",
+      "reference": "2.3",
+      "pdfPage": 22,
+      "printedPage": 16,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "general-reaction-family",
+        "cross-topic-skill"
+      ],
+      "requiredNamedCases": [],
+      "representativeCases": [
+        "2M + 2H2O → 2MOH + H2; Rb illustrative extension"
+      ],
+      "statesConditionsAndScopeLimits": "Prediction from Group 1 trend, not separate prescribed rubidium/caesium reaction list or exact rate.",
+      "inventory": "research/syllabus/4CH1-group1.json",
+      "noteSectionIds": [
+        "group1-predicting-properties",
+        "alkali-family-transfer-evidence"
+      ],
+      "inventoryNoteSectionIds": [
+        "group1-predicting-properties",
+        "alkali-family-transfer-evidence"
+      ],
+      "editorialRequirementSummaries": [
+        "Shared family products and +1 ion",
+        "Directional reactivity prediction from periodic position",
+        "Limits of numerical and physical-property predictions"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.4C",
+      "reference": "2.4C",
+      "pdfPage": 22,
+      "printedPage": 16,
+      "components": [
+        "2C"
+      ],
+      "classification": [
+        "cross-topic-skill"
+      ],
+      "requiredNamedCases": [],
+      "representativeCases": [
+        "M → M+ + e−; Na → Na+ + e−"
+      ],
+      "statesConditionsAndScopeLimits": "Configuration explanation of 2.1–2.3; half-equation support, not separately named reaction. C-only explanation does not make water reactions C-only.",
+      "inventory": "research/syllabus/4CH1-group1.json",
+      "noteSectionIds": [
+        "group1-electron-reactivity",
+        "alkali-comparison-and-shielding-evidence"
+      ],
+      "inventoryNoteSectionIds": [
+        "group1-electron-reactivity",
+        "alkali-comparison-and-shielding-evidence"
+      ],
+      "editorialRequirementSummaries": [
+        "One outer electron and configurations",
+        "Additional shells and shielding",
+        "Greater distance with nuclear-charge qualification",
+        "Easier electron loss linked to increased reactivity"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.5",
+      "reference": "2.5",
+      "pdfPage": 22,
+      "printedPage": 16,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "no-separately-prescribed-reaction"
+      ],
+      "requiredNamedCases": [],
+      "representativeCases": [],
+      "statesConditionsAndScopeLimits": "Physical colours/states/trends Cl2, Br2, I2; diatomic formula knowledge and phase change, not new reaction.",
+      "inventory": "research/syllabus/4CH1-halogen-physical.json",
+      "noteSectionIds": [
+        "halogen-colours-and-states",
+        "halogen-physical-predictions",
+        "halogen-state-and-extrapolation-evidence"
+      ],
+      "inventoryNoteSectionIds": [
+        "halogen-colours-and-states",
+        "halogen-physical-predictions",
+        "halogen-state-and-extrapolation-evidence"
+      ],
+      "editorialRequirementSummaries": [
+        "Chlorine colour and state",
+        "Bromine colour and state",
+        "Iodine solid versus vapour appearance",
+        "Melting/boiling trend and room-temperature phases",
+        "Physical-property trend distinguished from chemical reactivity"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.6",
+      "reference": "2.6",
+      "pdfPage": 22,
+      "printedPage": 16,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "cross-topic-skill",
+        "no-separately-prescribed-reaction"
+      ],
+      "requiredNamedCases": [],
+      "representativeCases": [],
+      "statesConditionsAndScopeLimits": "Predict halogen properties; no separate compulsory chemical case.",
+      "inventory": "research/syllabus/4CH1-halogen-physical.json",
+      "noteSectionIds": [
+        "halogen-physical-predictions",
+        "halogen-state-and-extrapolation-evidence"
+      ],
+      "inventoryNoteSectionIds": [
+        "halogen-physical-predictions",
+        "halogen-state-and-extrapolation-evidence"
+      ],
+      "editorialRequirementSummaries": [
+        "Qualitative prediction above/below known halogens",
+        "Use transition data at a specified pressure",
+        "Limits of exact-value and appearance extrapolation"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.7",
+      "reference": "2.7",
+      "pdfPage": 22,
+      "printedPage": 16,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "general-reaction-family"
+      ],
+      "requiredNamedCases": [
+        "Displacements among chlorine/bromine/iodine and their halides (named group scope)"
+      ],
+      "representativeCases": [
+        "Cl2 + 2Br− → 2Cl− + Br2",
+        "Cl2 + 2I− → 2Cl− + I2",
+        "Br2 + 2I− → 2Br− + I2",
+        "Cl2 + 2KBr → 2KCl + Br2"
+      ],
+      "statesConditionsAndScopeLimits": "Aqueous comparisons; ions aq, halogens supplied as aqueous solutions in these tests. Do not blindly assign pure-element room states to dissolved species. Reverse/self cases no displacement. Na/K spectator choices not separately prescribed salts.",
+      "inventory": "research/syllabus/4CH1-halogen-reactivity.json",
+      "noteSectionIds": [
+        "halogen-displacement-pattern",
+        "halogen-displacement-equations",
+        "halogen-displacement-evidence",
+        "halogen-ranking-transfer-evidence",
+        "halogen-species-and-charge-evidence",
+        "halogen-observation-control-evidence"
+      ],
+      "inventoryNoteSectionIds": [
+        "halogen-displacement-pattern",
+        "halogen-displacement-equations",
+        "halogen-displacement-evidence",
+        "halogen-species-and-charge-evidence",
+        "halogen-ranking-transfer-evidence",
+        "halogen-observation-control-evidence"
+      ],
+      "editorialRequirementSummaries": [
+        "Elemental molecules, halide ions and spectators distinguished",
+        "Positive pair outcomes",
+        "Negative pair outcomes without colourless/no-reaction overclaim",
+        "Balanced complete/ionic equations and electron transfer",
+        "Ranking inferred from supplied displacement evidence",
+        "Matched observations, solvent identity and dilution/reagent limits"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.8C",
+      "reference": "2.8C",
+      "pdfPage": 22,
+      "printedPage": 16,
+      "components": [
+        "2C"
+      ],
+      "classification": [
+        "cross-topic-skill"
+      ],
+      "requiredNamedCases": [],
+      "representativeCases": [
+        "X2 + 2e− → 2X−; Cl2 + 2e− → 2Cl−"
+      ],
+      "statesConditionsAndScopeLimits": "Electronic explanation; reuse 2.7. No extra named reaction requirement.",
+      "inventory": "research/syllabus/4CH1-halogen-reactivity.json",
+      "noteSectionIds": [
+        "halogen-electron-reactivity",
+        "halogen-electron-gain-transfer-evidence"
+      ],
+      "inventoryNoteSectionIds": [
+        "halogen-electron-reactivity",
+        "halogen-electron-gain-transfer-evidence"
+      ],
+      "editorialRequirementSummaries": [
+        "Seven outer electrons and named configurations",
+        "Gain one electron per atom and balanced molecular half-equation",
+        "Additional shells, distance and shielding despite greater nuclear charge",
+        "Causal reactivity decrease distinguished from Group1 electron loss"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.9",
+      "reference": "2.9",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "no-separately-prescribed-reaction"
+      ],
+      "requiredNamedCases": [],
+      "representativeCases": [],
+      "statesConditionsAndScopeLimits": "Dry-air composition physical percentages, no reaction.",
+      "inventory": "research/syllabus/4CH1-atmosphere.json",
+      "noteSectionIds": [
+        "air-composition",
+        "dry-air-volume-transfer-evidence"
+      ],
+      "inventoryNoteSectionIds": [
+        "air-composition",
+        "dry-air-volume-transfer-evidence"
+      ],
+      "editorialRequirementSummaries": [
+        "Four named gas proportions",
+        "Dry air excludes water vapour",
+        "Volume versus mass percentage",
+        "Rounded values and trace-gas limitations",
+        "Applying a supplied mixture volume"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.10",
+      "reference": "2.10",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "general-reaction-family"
+      ],
+      "requiredNamedCases": [
+        "Metal AND non-metal oxygen-removal methods; iron and phosphorus explicitly examples"
+      ],
+      "representativeCases": [
+        "Moist iron consumes O2 to rust",
+        "P4(s) + 5O2(g) → P4O10(s)"
+      ],
+      "statesConditionsAndScopeLimits": "Excess suitable reagent, closed whole gas volume, cooling/comparable pressure and temperature, product leaves measured gas phase. Rust has variable hydration: no invented exact Fe/O2/H2O equation. P2O5 empirical form requires rebalancing. Iron/phosphorus are not exclusive mandated species.",
+      "inventory": "research/syllabus/4CH1-atmosphere.json",
+      "noteSectionIds": [
+        "oxygen-air-removal",
+        "oxygen-air-nonmetal",
+        "oxygen-volume-calculation",
+        "oxygen-total-volume-transfer-evidence",
+        "oxygen-plan-and-error-transfer-evidence"
+      ],
+      "inventoryNoteSectionIds": [
+        "oxygen-air-removal",
+        "oxygen-air-nonmetal",
+        "oxygen-volume-calculation",
+        "oxygen-total-volume-transfer-evidence",
+        "oxygen-plan-and-error-transfer-evidence"
+      ],
+      "editorialRequirementSummaries": [
+        "Oxygen removal by moist iron",
+        "Non-metal oxygen-consumption principle",
+        "Whole initial connected gas volume",
+        "Removed-volume percentage calculation",
+        "Comparable temperature and pressure",
+        "Remaining gas not pure nitrogen"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.11",
+      "reference": "2.11",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "named-reaction-cases"
+      ],
+      "requiredNamedCases": [
+        "Magnesium combustion in oxygen",
+        "Hydrogen combustion in oxygen",
+        "Sulfur combustion in oxygen"
+      ],
+      "representativeCases": [
+        "2Mg(s) + O2(g) → 2MgO(s)",
+        "2H2(g) + O2(g) → 2H2O(g)",
+        "S(s) + O2(g) → SO2(g)"
+      ],
+      "statesConditionsAndScopeLimits": "Ignition suitable supervised context. H2O(g) hot, liquid after cooling. S8 + 8O2 → 8SO2 if molecular sulfur supplied. Mg in air can also react with N2; intended oxygen equation explicit.",
+      "inventory": "research/syllabus/4CH1-atmosphere.json",
+      "noteSectionIds": [
+        "magnesium-combustion",
+        "hydrogen-combustion",
+        "sulfur-combustion",
+        "element-combustion-transfer-evidence"
+      ],
+      "inventoryNoteSectionIds": [
+        "magnesium-combustion",
+        "hydrogen-combustion",
+        "sulfur-combustion",
+        "element-combustion-transfer-evidence"
+      ],
+      "editorialRequirementSummaries": [
+        "Magnesium observation and product",
+        "Balanced magnesium equation and mass",
+        "Hydrogen product and subsequent condensation",
+        "Balanced hydrogen equation",
+        "Sulfur oxide identity and gas phase",
+        "Balanced sulfur equation and product comparison"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.12",
+      "reference": "2.12",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "named-reaction-cases",
+        "general-reaction-family"
+      ],
+      "requiredNamedCases": [
+        "Copper(II) carbonate thermal decomposition"
+      ],
+      "representativeCases": [
+        "CuCO3(s) → CuO(s) + CO2(g)",
+        "Suitable metal carbonate → metal oxide + CO2",
+        "CuCO3·Cu(OH)2(s) → 2CuO(s) + CO2(g) + H2O(g)"
+      ],
+      "statesConditionsAndScopeLimits": "Heat condition; CuCO3 school model versus explicitly supplied basic carbonate. Not all carbonates decompose under identical heating. Basic-carbonate variant is supporting explanation, not extra named requirement.",
+      "inventory": "research/syllabus/4CH1-atmosphere.json",
+      "noteSectionIds": [
+        "carbonate-decomposition",
+        "carbonate-decomposition-transfer-evidence"
+      ],
+      "inventoryNoteSectionIds": [
+        "carbonate-decomposition",
+        "carbonate-decomposition-transfer-evidence"
+      ],
+      "editorialRequirementSummaries": [
+        "Thermal decomposition equation conserves atoms",
+        "Green-to-black solid observation",
+        "Carbon dioxide test and precipitate",
+        "Decomposition versus combustion",
+        "Supplied formula and basic-carbonate distinction"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.13",
+      "reference": "2.13",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "no-separately-prescribed-reaction"
+      ],
+      "requiredNamedCases": [],
+      "representativeCases": [],
+      "statesConditionsAndScopeLimits": "Greenhouse effect/climate mechanism, not equation requirement.",
+      "inventory": "research/syllabus/4CH1-atmosphere.json",
+      "noteSectionIds": [
+        "carbon-dioxide-greenhouse",
+        "greenhouse-mechanism-transfer-evidence"
+      ],
+      "inventoryNoteSectionIds": [
+        "carbon-dioxide-greenhouse",
+        "greenhouse-mechanism-transfer-evidence"
+      ],
+      "editorialRequirementSummaries": [
+        "Carbon dioxide absorbs outgoing infrared",
+        "Increased carbon dioxide alters energy balance",
+        "Long-term climate contribution",
+        "Not all radiation, not ozone depletion or heat creation"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.14",
+      "reference": "2.14",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "general-reaction-family",
+        "cross-topic-skill"
+      ],
+      "requiredNamedCases": [
+        "Oxygen-percentage practical with a metal OR a non-metal"
+      ],
+      "representativeCases": [
+        "Reuse moist iron or phosphorus removal from 2.10"
+      ],
+      "statesConditionsAndScopeLimits": "One suitable route in practical statement; do not turn OR into AND or demand new equation.",
+      "inventory": "research/syllabus/4CH1-atmosphere.json",
+      "noteSectionIds": [
+        "oxygen-volume-calculation",
+        "oxygen-measurement-practical",
+        "oxygen-total-volume-transfer-evidence",
+        "oxygen-plan-and-error-transfer-evidence"
+      ],
+      "inventoryNoteSectionIds": [
+        "oxygen-volume-calculation",
+        "oxygen-measurement-practical",
+        "oxygen-plan-and-error-transfer-evidence",
+        "oxygen-total-volume-transfer-evidence"
+      ],
+      "editorialRequirementSummaries": [
+        "Excess moist iron and airtight endpoint plan",
+        "Whole connected air sample",
+        "Reading and column-geometry limitations",
+        "Completion and stable gas volume",
+        "Temperature and pressure controls",
+        "Conditional error directions",
+        "Repeats, uncertainty and accuracy distinction"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.15",
+      "reference": "2.15",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "general-reaction-family"
+      ],
+      "requiredNamedCases": [],
+      "representativeCases": [
+        "Ca(s) + 2H2O(l) → Ca(OH)2 + H2(g)",
+        "Mg(s) + H2O(g) → MgO(s) + H2(g)",
+        "Mg(s) + 2HCl(aq) → MgCl2(aq) + H2(g)",
+        "Zn(s) + H2SO4(aq) → ZnSO4(aq) + H2(g)",
+        "Fe(s) + 2HCl(aq) → FeCl2(aq) + H2(g)"
+      ],
+      "statesConditionsAndScopeLimits": "Water and dilute HCl OR H2SO4 ranking. Ca(OH)2 can be solid suspension plus dissolved portion; Mg steam oxide versus slow cold-water hydroxide. Copper no H2 with these dilute non-oxidising acids. Passivation/sulfate coating and unequal conditions limit rate-ranking. Not every metal × reagent combination separately required.",
+      "inventory": "research/syllabus/4CH1-reactivity-rust-redox.json",
+      "noteSectionIds": [
+        "metal-water-evidence",
+        "metal-acid-evidence",
+        "metal-condition-ranking-evidence"
+      ],
+      "inventoryNoteSectionIds": [
+        "metal-water-evidence",
+        "metal-acid-evidence",
+        "metal-condition-ranking-evidence"
+      ],
+      "editorialRequirementSummaries": [
+        "Cold-water product and rate evidence",
+        "Steam versus cold-water conditions",
+        "Dilute hydrochloric-acid salt/hydrogen pattern",
+        "Dilute sulfuric-acid salt/hydrogen pattern",
+        "Fair comparisons, passivation and negative-evidence limits"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.16",
+      "reference": "2.16",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "general-reaction-family"
+      ],
+      "requiredNamedCases": [],
+      "representativeCases": [
+        "Zn(s) + CuSO4(aq) → ZnSO4(aq) + Cu(s)",
+        "Zn(s) + Cu2+(aq) → Zn2+(aq) + Cu(s)",
+        "Mg(s) + CuO(s) → MgO(s) + Cu(s)",
+        "2Al(s) + 3CuO(s) → Al2O3(s) + 3Cu(s)"
+      ],
+      "statesConditionsAndScopeLimits": "Both metal/oxide and metal/aqueous salt families. Suitable initiation for solids; aqueous solvent reactions invalidate simplistic universal series tests. Species are representative, not prescribed exhaustive pairs.",
+      "inventory": "research/syllabus/4CH1-reactivity-rust-redox.json",
+      "noteSectionIds": [
+        "metal-salt-displacement",
+        "metal-oxide-displacement",
+        "metal-displacement-transfer-evidence"
+      ],
+      "inventoryNoteSectionIds": [
+        "metal-salt-displacement",
+        "metal-oxide-displacement",
+        "metal-displacement-transfer-evidence"
+      ],
+      "editorialRequirementSummaries": [
+        "Aqueous metal-ion displacement principle",
+        "Product evidence, ionic equation and spectators",
+        "Solid metal-oxide oxygen-transfer principle",
+        "Metal-oxide equation and necessary conditions",
+        "Ranking and reverse-equation limits"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.17",
+      "reference": "2.17",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "cross-topic-skill",
+        "no-separately-prescribed-reaction"
+      ],
+      "requiredNamedCases": [],
+      "representativeCases": [],
+      "statesConditionsAndScopeLimits": "Required 11-metal order K Na Li Ca Mg Al Zn Fe Cu Ag Au supports reactions; no new equation for each metal. Hydrogen/carbon are useful references, not extra metals in this list.",
+      "inventory": "research/syllabus/4CH1-reactivity-rust-redox.json",
+      "noteSectionIds": [
+        "metal-reactivity-order",
+        "metal-series-position-evidence"
+      ],
+      "inventoryNoteSectionIds": [
+        "metal-reactivity-order",
+        "metal-series-position-evidence"
+      ],
+      "editorialRequirementSummaries": [
+        "Exact descending eleven-metal order",
+        "Using relative positions for predictions",
+        "Hydrogen reference and table-context limitations"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.18",
+      "reference": "2.18",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "named-reaction-cases"
+      ],
+      "requiredNamedCases": [
+        "Iron rusting"
+      ],
+      "representativeCases": [
+        "Iron + oxygen + water → hydrated iron oxide (word model)"
+      ],
+      "statesConditionsAndScopeLimits": "Both water and oxygen needed; variable rust composition precludes a uniquely mandated balanced hydrated formula. Salt accelerates, not mandatory reactant.",
+      "inventory": "research/syllabus/4CH1-reactivity-rust-redox.json",
+      "noteSectionIds": [
+        "rust-conditions",
+        "rust-evidence-plan",
+        "rust-control-transfer-evidence"
+      ],
+      "inventoryNoteSectionIds": [
+        "rust-conditions",
+        "rust-evidence-plan",
+        "rust-control-transfer-evidence"
+      ],
+      "editorialRequirementSummaries": [
+        "Both water and oxygen required",
+        "Rust identity and continuing corrosion",
+        "Salt affects rate, not requirement",
+        "Matched exclusion controls and evidence limits"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.19",
+      "reference": "2.19",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "general-reaction-family",
+        "cross-topic-skill"
+      ],
+      "requiredNamedCases": [
+        "Barrier methods, galvanising and sacrificial protection of iron"
+      ],
+      "representativeCases": [
+        "Zn(s) → Zn2+(aq) + 2e−; Mg(s) → Mg2+(aq) + 2e− as sacrifice example"
+      ],
+      "statesConditionsAndScopeLimits": "Barrier is not a new chemical reaction. Galvanising specifies zinc; alternative sacrifice metal is representative. Electrical contact and wet circuit needed; no nearby detached-metal protection.",
+      "inventory": "research/syllabus/4CH1-reactivity-rust-redox.json",
+      "noteSectionIds": [
+        "rust-barriers",
+        "rust-galvanising-sacrificial",
+        "rust-protection-transfer-evidence"
+      ],
+      "inventoryNoteSectionIds": [
+        "rust-barriers",
+        "rust-galvanising-sacrificial",
+        "rust-protection-transfer-evidence"
+      ],
+      "editorialRequirementSummaries": [
+        "Paint/oil/grease exclusion mechanism",
+        "Scratch exposes iron locally",
+        "Galvanising is a zinc coating",
+        "Zinc barrier and preferential oxidation",
+        "Sacrificial electron transfer and connected metal",
+        "Consumption and conditional protection limits"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.20",
+      "reference": "2.20",
+      "pdfPage": 23,
+      "printedPage": 17,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "cross-topic-skill",
+        "general-reaction-family"
+      ],
+      "requiredNamedCases": [],
+      "representativeCases": [
+        "CuO(s) + H2(g) → Cu(s) + H2O(g)",
+        "Zn(s) + Cu2+(aq) → Zn2+(aq) + Cu(s)",
+        "Cu(s) + 2Ag+(aq) → Cu2+(aq) + 2Ag(s)",
+        "Cu → Cu2+ + 2e−; 2Ag+ + 2e− → 2Ag"
+      ],
+      "statesConditionsAndScopeLimits": "Oxygen and electron definitions, both agents; representative examples may be reused. Heat for CuO/H2; water phase contextual. Agent is reactant species, not spectator/product.",
+      "inventory": "research/syllabus/4CH1-reactivity-rust-redox.json",
+      "noteSectionIds": [
+        "redox-oxygen-transfer",
+        "redox-electron-transfer",
+        "redox-agents",
+        "redox-agent-transfer-evidence"
+      ],
+      "inventoryNoteSectionIds": [
+        "redox-oxygen-transfer",
+        "redox-electron-transfer",
+        "redox-agents",
+        "redox-agent-transfer-evidence"
+      ],
+      "editorialRequirementSummaries": [
+        "Oxidation as oxygen gain",
+        "Reduction as oxygen loss",
+        "Oxidation as electron loss",
+        "Reduction as electron gain",
+        "Paired redox changes and balanced halves",
+        "Oxidizing agent accepts electrons and is reduced",
+        "Reducing agent donates electrons and is oxidized",
+        "Agent oxygen-transfer roles and actual reacting species"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.21",
+      "reference": "2.21",
+      "pdfPage": 24,
+      "printedPage": 18,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "general-reaction-family"
+      ],
+      "requiredNamedCases": [
+        "Dilute HCl AND dilute H2SO4 with metals; Mg/Zn/Fe are publisher examples"
+      ],
+      "representativeCases": [
+        "For M = Mg, Zn, Fe: M(s) + 2HCl(aq) → MCl2(aq) + H2(g)",
+        "For M = Mg, Zn, Fe: M(s) + H2SO4(aq) → MSO4(aq) + H2(g)"
+      ],
+      "statesConditionsAndScopeLimits": "These six suitable representative combinations cover both acids; not exclusive publisher-permitted metals or six separately mandated named cases. FeII salts; no unsafe extrapolation to alkali-metal acid tests. Hydrogen identification separate from effervescence.",
+      "inventory": "research/syllabus/4CH1-acid-metal-practical.json",
+      "noteSectionIds": [
+        "acid-metal-practical-plan",
+        "acid-metal-practical-interpretation",
+        "acid-metal-observation-transfer-evidence"
+      ],
+      "inventoryNoteSectionIds": [
+        "acid-metal-practical-plan",
+        "acid-metal-practical-interpretation",
+        "acid-metal-observation-transfer-evidence"
+      ],
+      "editorialRequirementSummaries": [
+        "Publisher example metals and both named dilute acids",
+        "Independent-variable and matched-condition planning",
+        "Observations versus supported hydrogen identification",
+        "Named salts and balanced equations",
+        "Gas-volume/time rate and units",
+        "Rate versus final amount and limiting reactant",
+        "Surface-coating and stopped-reaction alternatives",
+        "Repeatability, collection losses and evidence limits"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.22C",
+      "reference": "2.22C",
+      "pdfPage": 24,
+      "printedPage": 18,
+      "components": [
+        "2C"
+      ],
+      "classification": [
+        "no-separately-prescribed-reaction"
+      ],
+      "requiredNamedCases": [],
+      "representativeCases": [],
+      "statesConditionsAndScopeLimits": "Ores versus native elements; no extra extraction equation.",
+      "inventory": "research/syllabus/4CH1-metal-extraction-uses.json",
+      "noteSectionIds": [
+        "metal-ores-native",
+        "ore-species-transfer-evidence"
+      ],
+      "inventoryNoteSectionIds": [
+        "metal-ores-native",
+        "ore-species-transfer-evidence"
+      ],
+      "editorialRequirementSummaries": [
+        "Ores in crust and compounds versus mixtures",
+        "Unreactive native metals as a tendency",
+        "Concentration versus chemical reduction"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.23C",
+      "reference": "2.23C",
+      "pdfPage": 24,
+      "printedPage": 18,
+      "components": [
+        "2C"
+      ],
+      "classification": [
+        "named-reaction-cases"
+      ],
+      "requiredNamedCases": [
+        "Carbon-based extraction of iron",
+        "Electrolysis extraction of aluminium"
+      ],
+      "representativeCases": [
+        "Fe2O3(s) + 3CO(g) → 2Fe + 3CO2(g)",
+        "Al3+ + 3e− → Al"
+      ],
+      "statesConditionsAndScopeLimits": "Heated iron reduction; iron phase depends actual process stage, do not universalise (s). Al school half-equation in molten cryolite/alumina bath, metal liquid in industrial cell; ions molten electrolyte not aqueous. Detailed furnace/anode sequence not prescribed by this identity.",
+      "inventory": "research/syllabus/4CH1-metal-extraction-uses.json",
+      "noteSectionIds": [
+        "metal-extraction-carbon",
+        "metal-extraction-electrolysis",
+        "extraction-route-transfer-evidence"
+      ],
+      "inventoryNoteSectionIds": [
+        "metal-extraction-carbon",
+        "metal-extraction-electrolysis",
+        "extraction-route-transfer-evidence"
+      ],
+      "editorialRequirementSummaries": [
+        "Carbon position and suitable oxide reduction",
+        "Iron carbon-based example and redox",
+        "Aluminium reactivity and electrolysis route",
+        "Mobile ions, cathode electron gain and carbon anode role",
+        "Method-rule conditions and actual compound"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.24C",
+      "reference": "2.24C",
+      "pdfPage": 24,
+      "printedPage": 18,
+      "components": [
+        "2C"
+      ],
+      "classification": [
+        "cross-topic-skill"
+      ],
+      "requiredNamedCases": [],
+      "representativeCases": [
+        "Use supplied extraction equation/process and check balance/relative reactivity"
+      ],
+      "statesConditionsAndScopeLimits": "Detailed specific industrial extraction processes explicitly not required. Do not create a compulsory bank entry for each metal or furnace step.",
+      "inventory": "research/syllabus/4CH1-metal-extraction-uses.json",
+      "noteSectionIds": [
+        "metal-extraction-evaluation",
+        "extraction-comparison-transfer-evidence"
+      ],
+      "inventoryNoteSectionIds": [
+        "metal-extraction-evaluation",
+        "extraction-comparison-transfer-evidence"
+      ],
+      "editorialRequirementSummaries": [
+        "Interpret starting material and method from information",
+        "Ore grade, theoretical yield and recovery calculation",
+        "Comparable basis per recovered product",
+        "Evidence-based energy/waste trade-offs and missing data",
+        "Detailed specific-process memorization not required"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.25C",
+      "reference": "2.25C",
+      "pdfPage": 24,
+      "printedPage": 18,
+      "components": [
+        "2C"
+      ],
+      "classification": [
+        "no-separately-prescribed-reaction"
+      ],
+      "requiredNamedCases": [],
+      "representativeCases": [],
+      "statesConditionsAndScopeLimits": "Al/Cu/Fe/steel uses and properties. Oxide/passive-film context not demand for separate oxidation equations. Steel limited mild, high-carbon, stainless.",
+      "inventory": "research/syllabus/4CH1-metal-extraction-uses.json",
+      "noteSectionIds": [
+        "metal-uses-aluminium-copper",
+        "metal-uses-iron-steels",
+        "metal-property-choice-evidence",
+        "steel-choice-transfer-evidence"
+      ],
+      "inventoryNoteSectionIds": [
+        "metal-uses-aluminium-copper",
+        "metal-uses-iron-steels",
+        "metal-property-choice-evidence",
+        "steel-choice-transfer-evidence"
+      ],
+      "editorialRequirementSummaries": [
+        "Aluminium low density and alloy strength use",
+        "Aluminium heat transfer, forming and oxide protection",
+        "Copper electrical conductivity and ductility for wire",
+        "Copper thermal/workability/corrosion use links",
+        "Iron magnetic behaviour and steel distinctions",
+        "Mild-steel formability and high-carbon hardness trade-off",
+        "Stainless chromium corrosion-resistance use",
+        "Qualified grade/treatment and relevant-property selection"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.26C",
+      "reference": "2.26C",
+      "pdfPage": 24,
+      "printedPage": 18,
+      "components": [
+        "2C"
+      ],
+      "classification": [
+        "no-separately-prescribed-reaction"
+      ],
+      "requiredNamedCases": [],
+      "representativeCases": [],
+      "statesConditionsAndScopeLimits": "Alloy mixture, variable proportions; do not invent compound formation equation.",
+      "inventory": "research/syllabus/4CH1-metal-extraction-uses.json",
+      "noteSectionIds": [
+        "metal-alloys-mixtures",
+        "alloy-fraction-transfer-evidence"
+      ],
+      "inventoryNoteSectionIds": [
+        "metal-alloys-mixtures",
+        "alloy-fraction-transfer-evidence"
+      ],
+      "editorialRequirementSummaries": [
+        "Metal with other elements including carbon",
+        "Variable composition distinguished from fixed compound formula",
+        "Composition/property trade-offs and supplied percentage"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.27C",
+      "reference": "2.27C",
+      "pdfPage": 24,
+      "printedPage": 18,
+      "components": [
+        "2C"
+      ],
+      "classification": [
+        "no-separately-prescribed-reaction"
+      ],
+      "requiredNamedCases": [],
+      "representativeCases": [],
+      "statesConditionsAndScopeLimits": "Hardness structural model, no reaction.",
+      "inventory": "research/syllabus/4CH1-metal-extraction-uses.json",
+      "noteSectionIds": [
+        "metal-alloys-hardness",
+        "alloy-model-transfer-evidence"
+      ],
+      "inventoryNoteSectionIds": [
+        "metal-alloys-hardness",
+        "alloy-model-transfer-evidence"
+      ],
+      "editorialRequirementSummaries": [
+        "Regular pure-metal arrangement and plastic movement",
+        "Different atomic size distorts arrangement",
+        "Hindered movement requires greater force",
+        "Illustrative model and real-alloy limits"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.28",
+      "reference": "2.28",
+      "pdfPage": 24,
+      "printedPage": 18,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "no-separately-prescribed-reaction"
+      ],
+      "requiredNamedCases": [],
+      "representativeCases": [],
+      "statesConditionsAndScopeLimits": "Litmus/phenolphthalein/methyl-orange colours; indicator equilibrium equations not prescribed.",
+      "inventory": "research/syllabus/4CH1-acids-salts.json",
+      "noteSectionIds": [
+        "acid-indicator-colours"
+      ],
+      "inventoryNoteSectionIds": [
+        "acid-indicator-colours"
+      ],
+      "editorialRequirementSummaries": [
+        "Litmus acid/alkali direction",
+        "Phenolphthalein colourless/pink with transition limit",
+        "Methyl orange red/yellow, not neutral-orange"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.29",
+      "reference": "2.29",
+      "pdfPage": 24,
+      "printedPage": 18,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "no-separately-prescribed-reaction"
+      ],
+      "requiredNamedCases": [],
+      "representativeCases": [],
+      "statesConditionsAndScopeLimits": "School pH scale classification; no extra equation.",
+      "inventory": "research/syllabus/4CH1-acids-salts.json",
+      "noteSectionIds": [
+        "acid-ph-classification"
+      ],
+      "inventoryNoteSectionIds": [
+        "acid-ph-classification"
+      ],
+      "editorialRequirementSummaries": [
+        "All five exact school pH bands",
+        "Solution pH distinguished from acid ionization strength"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.30",
+      "reference": "2.30",
+      "pdfPage": 24,
+      "printedPage": 18,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "no-separately-prescribed-reaction"
+      ],
+      "requiredNamedCases": [],
+      "representativeCases": [],
+      "statesConditionsAndScopeLimits": "Universal indicator approximate pH; no extra equation.",
+      "inventory": "research/syllabus/4CH1-acids-salts.json",
+      "noteSectionIds": [
+        "acid-universal-indicator"
+      ],
+      "inventoryNoteSectionIds": [
+        "acid-universal-indicator"
+      ],
+      "editorialRequirementSummaries": [
+        "Compare universal indicator with formulation chart",
+        "Approximate value and sample/colour limitations"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.31",
+      "reference": "2.31",
+      "pdfPage": 24,
+      "printedPage": 18,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "cross-topic-skill"
+      ],
+      "requiredNamedCases": [],
+      "representativeCases": [
+        "Aqueous acids supply H+; aqueous alkalis supply OH−"
+      ],
+      "statesConditionsAndScopeLimits": "Aqueous dissociation/species skill; no separately prescribed named ionisation equation. H+ school shorthand; ammonia is not a hydroxide formula.",
+      "inventory": "research/syllabus/4CH1-acids-salts.json",
+      "noteSectionIds": [
+        "acid-aqueous-ions"
+      ],
+      "inventoryNoteSectionIds": [
+        "acid-aqueous-ions"
+      ],
+      "editorialRequirementSummaries": [
+        "Aqueous acid supplies H⁺",
+        "Aqueous alkali supplies OH⁻",
+        "Reacting versus spectator ion roles"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.32",
+      "reference": "2.32",
+      "pdfPage": 24,
+      "printedPage": 18,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "general-reaction-family"
+      ],
+      "requiredNamedCases": [],
+      "representativeCases": [
+        "H+(aq) + OH−(aq) → H2O(l)",
+        "HCl(aq) + NaOH(aq) → NaCl(aq) + H2O(l)",
+        "H2SO4(aq) + 2NaOH(aq) → Na2SO4(aq) + 2H2O(l)"
+      ],
+      "statesConditionsAndScopeLimits": "Full neutralisation stoichiometry. Endpoint not automatically equivalence/pH7; named acid/base pairs representative.",
+      "inventory": "research/syllabus/4CH1-acids-salts.json",
+      "noteSectionIds": [
+        "acid-neutralization"
+      ],
+      "inventoryNoteSectionIds": [
+        "acid-neutralization"
+      ],
+      "editorialRequirementSummaries": [
+        "Alkali neutralizes acid and net ionic equation",
+        "Balanced equation and reacting ratio",
+        "Excess, volume and endpoint limits"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.33C",
+      "reference": "2.33C",
+      "pdfPage": 24,
+      "printedPage": 18,
+      "components": [
+        "2C"
+      ],
+      "classification": [
+        "general-reaction-family",
+        "cross-topic-skill"
+      ],
+      "requiredNamedCases": [],
+      "representativeCases": [
+        "Reuse HCl/NaOH or H2SO4/NaOH"
+      ],
+      "statesConditionsAndScopeLimits": "Titration method; no additional exclusive acid/base pair. Aqueous solutions, appropriate indicator, delivered volumes and balanced stoichiometry.",
+      "inventory": "research/syllabus/4CH1-acids-salts.json",
+      "noteSectionIds": [
+        "acid-titration-method",
+        "acid-titration-results"
+      ],
+      "inventoryNoteSectionIds": [
+        "acid-titration-method",
+        "acid-titration-results"
+      ],
+      "editorialRequirementSummaries": [
+        "Pipette/filler, burette, flask and appropriate rinses",
+        "Indicator, white tile, tip and initial reading",
+        "Swirling, dropwise addition and lasting endpoint",
+        "Eye-level reading and delivered-volume difference",
+        "Rough run, concordance and justified mean",
+        "Repeatability distinguished from accuracy"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.34",
+      "reference": "2.34",
+      "pdfPage": 25,
+      "printedPage": 19,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "cross-topic-skill",
+        "no-separately-prescribed-reaction"
+      ],
+      "requiredNamedCases": [],
+      "representativeCases": [
+        "Ag+(aq) + Cl−(aq) → AgCl(s) is illustrative use of solubility"
+      ],
+      "statesConditionsAndScopeLimits": "All six solubility rules and exceptions required, not infinite salt-pair reactions. All nitrates/common Na K NH4 salts soluble; chlorides except Ag/PbII; sulfates except Ba/Ca/PbII; carbonates except Na/K/NH4; hydroxides except Na/K/Ca (Ca slightly soluble).",
+      "inventory": "research/syllabus/4CH1-acids-salts.json",
+      "noteSectionIds": [
+        "salt-solubility-rules",
+        "salt-solubility-exceptions"
+      ],
+      "inventoryNoteSectionIds": [
+        "salt-solubility-rules",
+        "salt-solubility-exceptions"
+      ],
+      "editorialRequirementSummaries": [
+        "Sodium, potassium, ammonium and nitrate rules",
+        "Chloride silver/lead exceptions",
+        "Sulfate barium/calcium/lead exceptions",
+        "Carbonate sodium/potassium/ammonium exceptions",
+        "Hydroxide exceptions and slightly soluble calcium",
+        "Finite solubility and full ion-pair classification"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.35",
+      "reference": "2.35",
+      "pdfPage": 25,
+      "printedPage": 19,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "cross-topic-skill",
+        "general-reaction-family"
+      ],
+      "requiredNamedCases": [],
+      "representativeCases": [
+        "H+ + OH− → H2O",
+        "NH3 + H+ → NH4+",
+        "NH3(aq) + H2O(l) ⇌ NH4+(aq) + OH−(aq)"
+      ],
+      "statesConditionsAndScopeLimits": "Proton-transfer principle; examples not separately prescribed. Reversible weak-base aqueous equilibrium distinct from complete neutralisation.",
+      "inventory": "research/syllabus/4CH1-acids-salts.json",
+      "noteSectionIds": [
+        "acid-proton-transfer"
+      ],
+      "inventoryNoteSectionIds": [
+        "acid-proton-transfer"
+      ],
+      "editorialRequirementSummaries": [
+        "Follow the proton between species",
+        "Proton transfer versus electron transfer",
+        "Reaction-specific roles with water"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.36",
+      "reference": "2.36",
+      "pdfPage": 25,
+      "printedPage": 19,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "cross-topic-skill"
+      ],
+      "requiredNamedCases": [],
+      "representativeCases": [
+        "Reuse 2.35 donor/acceptor cases"
+      ],
+      "statesConditionsAndScopeLimits": "No new reaction; roles assigned within particular equation.",
+      "inventory": "research/syllabus/4CH1-acids-salts.json",
+      "noteSectionIds": [
+        "acid-proton-transfer"
+      ],
+      "inventoryNoteSectionIds": [
+        "acid-proton-transfer"
+      ],
+      "editorialRequirementSummaries": [
+        "Acid donates H⁺",
+        "Base accepts H⁺",
+        "Ammonia example conserves atoms and charge"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.37",
+      "reference": "2.37",
+      "pdfPage": 25,
+      "printedPage": 19,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "general-reaction-family"
+      ],
+      "requiredNamedCases": [
+        "HCl, H2SO4, HNO3 reaction families with metals, bases and metal carbonates; nitric-acid/metal reactions excluded"
+      ],
+      "representativeCases": [
+        "Zn + 2HCl → ZnCl2 + H2; Mg + H2SO4 → MgSO4 + H2",
+        "CuO + 2HCl → CuCl2 + H2O; CuO + H2SO4 → CuSO4 + H2O; CuO + 2HNO3 → Cu(NO3)2 + H2O",
+        "Mg(OH)2 + 2HCl → MgCl2 + 2H2O; Mg(OH)2 + H2SO4 → MgSO4 + 2H2O; Mg(OH)2 + 2HNO3 → Mg(NO3)2 + 2H2O",
+        "NH3 + HCl → NH4Cl; 2NH3 + H2SO4 → (NH4)2SO4; NH3 + HNO3 → NH4NO3",
+        "CaCO3 + 2HCl → CaCl2 + H2O + CO2; MgCO3 + H2SO4 → MgSO4 + H2O + CO2; MgCO3 + 2HNO3 → Mg(NO3)2 + H2O + CO2"
+      ],
+      "statesConditionsAndScopeLimits": "Representative coverage grid, not every possible metal/base/carbonate. Dilute aqueous acids; suitable solids/aqueous bases, soluble salt aq, H2/CO2 gas, water liquid. Nitric acid + metals explicitly outside this scope. Ammonia gives no additional water. Insoluble sulfate coating can arrest some carbonate/metal reactions.",
+      "inventory": "research/syllabus/4CH1-acids-salts.json",
+      "noteSectionIds": [
+        "acid-metal-salts",
+        "acid-base-salts",
+        "acid-carbonate-salts"
+      ],
+      "inventoryNoteSectionIds": [
+        "acid-metal-salts",
+        "acid-base-salts",
+        "acid-carbonate-salts"
+      ],
+      "editorialRequirementSummaries": [
+        "HCl/H₂SO₄ metal salt and hydrogen with conditions",
+        "Nitric acid–metal exclusion",
+        "Oxide/hydroxide reactions with all three acids",
+        "Carbonate salt/water/CO₂ with all three acids",
+        "Salt anion and metal charge with balanced examples"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.38",
+      "reference": "2.38",
+      "pdfPage": 25,
+      "printedPage": 19,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "cross-topic-skill",
+        "general-reaction-family"
+      ],
+      "requiredNamedCases": [
+        "Metal oxides, metal hydroxides and ammonia as bases"
+      ],
+      "representativeCases": [
+        "Reuse oxide/hydroxide/ammonia equations in 2.37; NH3 + H+ → NH4+"
+      ],
+      "statesConditionsAndScopeLimits": "Alkali is water-soluble base. No requirement that all bases are soluble or have OH in formula.",
+      "inventory": "research/syllabus/4CH1-acids-salts.json",
+      "noteSectionIds": [
+        "acid-base-types",
+        "acid-base-salts"
+      ],
+      "inventoryNoteSectionIds": [
+        "acid-base-types",
+        "acid-base-salts"
+      ],
+      "editorialRequirementSummaries": [
+        "Oxides, hydroxides and ammonia as bases",
+        "Soluble-base alkali definition",
+        "Ammonia proton acceptance and aqueous alkalinity"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.39",
+      "reference": "2.39",
+      "pdfPage": 25,
+      "printedPage": 19,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "general-reaction-family"
+      ],
+      "requiredNamedCases": [],
+      "representativeCases": [
+        "CuO(s) + H2SO4(aq) → CuSO4(aq) + H2O(l)"
+      ],
+      "statesConditionsAndScopeLimits": "Insoluble reactant to soluble salt: excess solid then filter/concentrate/cool/dry. Choice representative, shared with named 2.42; no unique new salt demanded.",
+      "inventory": "research/syllabus/4CH1-acids-salts.json",
+      "noteSectionIds": [
+        "salt-insoluble-reactant",
+        "salt-method-choice",
+        "salt-purity-recovery"
+      ],
+      "inventoryNoteSectionIds": [
+        "salt-insoluble-reactant",
+        "salt-method-choice",
+        "salt-purity-recovery"
+      ],
+      "editorialRequirementSummaries": [
+        "Suitable acid and insoluble reactant",
+        "Excess solid and adequate mixing/reaction time",
+        "Filter excess;keep dissolved salt filtrate",
+        "Concentrate, crystallize, separate and dry",
+        "Dissolved impurities and recovery limits"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.40C",
+      "reference": "2.40C",
+      "pdfPage": 25,
+      "printedPage": 19,
+      "components": [
+        "2C"
+      ],
+      "classification": [
+        "general-reaction-family"
+      ],
+      "requiredNamedCases": [],
+      "representativeCases": [
+        "HCl(aq) + NaOH(aq) → NaCl(aq) + H2O(l)"
+      ],
+      "statesConditionsAndScopeLimits": "Acid/alkali soluble-salt preparation; titration then uncontaminated measured repeat. Salt representative, not exclusively NaCl.",
+      "inventory": "research/syllabus/4CH1-acids-salts.json",
+      "noteSectionIds": [
+        "salt-acid-alkali-preparation",
+        "salt-method-choice"
+      ],
+      "inventoryNoteSectionIds": [
+        "salt-acid-alkali-preparation",
+        "salt-method-choice"
+      ],
+      "editorialRequirementSummaries": [
+        "Use titration because soluble excess cannot be filtered",
+        "Repeat measured amounts without indicator",
+        "Suitable concentration/crystallization/drying",
+        "Concentration and endpoint uncertainty limits"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.41C",
+      "reference": "2.41C",
+      "pdfPage": 25,
+      "printedPage": 19,
+      "components": [
+        "2C"
+      ],
+      "classification": [
+        "general-reaction-family"
+      ],
+      "requiredNamedCases": [],
+      "representativeCases": [
+        "Pb2+(aq) + SO4^2−(aq) → PbSO4(s)",
+        "Ag+(aq) + Cl−(aq) → AgCl(s)"
+      ],
+      "statesConditionsAndScopeLimits": "Two soluble reagents yield insoluble salt; precipitate/filter/wash/dry. Examples not new exclusive required salts; named lead case separately 2.43C.",
+      "inventory": "research/syllabus/4CH1-acids-salts.json",
+      "noteSectionIds": [
+        "salt-precipitation",
+        "salt-method-choice"
+      ],
+      "inventoryNoteSectionIds": [
+        "salt-precipitation",
+        "salt-method-choice"
+      ],
+      "editorialRequirementSummaries": [
+        "Two soluble ion sources for insoluble target",
+        "Filter and keep precipitate residue",
+        "Wash soluble contamination then dry",
+        "Finite solubility and transfer/recovery limits"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.42",
+      "reference": "2.42",
+      "pdfPage": 25,
+      "printedPage": 19,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "named-reaction-cases"
+      ],
+      "requiredNamedCases": [
+        "Pure dry hydrated CuSO4 crystals starting CuO"
+      ],
+      "representativeCases": [
+        "CuO(s) + H2SO4(aq) → CuSO4(aq) + H2O(l)"
+      ],
+      "statesConditionsAndScopeLimits": "Warm dilute acid; excess insoluble oxide removed. Crystallisation gives CuSO4·5H2O(s) in school case; dry surface does not mean anhydrous. Separate hydration bookkeeping optional, not pretend crystal formula is aqueous product. Applies both papers.",
+      "inventory": "research/syllabus/4CH1-acids-salts.json",
+      "noteSectionIds": [
+        "salt-copper-hydrated",
+        "salt-purity-recovery"
+      ],
+      "inventoryNoteSectionIds": [
+        "salt-copper-hydrated",
+        "salt-purity-recovery"
+      ],
+      "editorialRequirementSummaries": [
+        "CuO and sulfuric acid with excess/controlled warming",
+        "Filtration and blue filtrate concentration/cooling",
+        "Separate and dry hydrated crystals gently",
+        "Surface liquid versus structural water",
+        "Purity, losses and supervised practical limits"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.43C",
+      "reference": "2.43C",
+      "pdfPage": 25,
+      "printedPage": 19,
+      "components": [
+        "2C"
+      ],
+      "classification": [
+        "named-reaction-cases"
+      ],
+      "requiredNamedCases": [
+        "Pure dry lead(II) sulfate preparation"
+      ],
+      "representativeCases": [
+        "Pb(NO3)2(aq) + Na2SO4(aq) → PbSO4(s) + 2NaNO3(aq)",
+        "Pb2+(aq) + SO4^2−(aq) → PbSO4(s)"
+      ],
+      "statesConditionsAndScopeLimits": "Named product prescribed; nitrate/sodium-sulfate reagent choice representative soluble pair. Filter, wash, dry under supervised procedure; not direct heating acid/lead chemicals.",
+      "inventory": "research/syllabus/4CH1-acids-salts.json",
+      "noteSectionIds": [
+        "salt-lead-sulfate"
+      ],
+      "inventoryNoteSectionIds": [
+        "salt-lead-sulfate"
+      ],
+      "editorialRequirementSummaries": [
+        "Soluble lead nitrate/sodium sulfate reagents",
+        "Balanced molecular/net ionic equations",
+        "Filter, wash and dry precipitate",
+        "Toxicity, lead waste and identity/purity limits"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.44",
+      "reference": "2.44",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "named-reaction-cases",
+        "cross-topic-skill"
+      ],
+      "requiredNamedCases": [
+        "Tests for H2, O2, CO2, NH3 and Cl2"
+      ],
+      "representativeCases": [
+        "H2: reuse 2H2 + O2 → 2H2O",
+        "CO2(g) + Ca(OH)2(aq) → CaCO3(s) + H2O(l)"
+      ],
+      "statesConditionsAndScopeLimits": "Named tests required; not five new compulsory equations. H2 lighted splint pop; O2 glowing splint relights; CO2 limewater cloudy; NH3 damp red litmus blue; Cl2 damp litmus bleached. Splint fuel unspecified, no unique O2 splint equation; indicator/bleaching mechanism equations optional. Water moisture essential for papers.",
+      "inventory": "research/syllabus/4CH1-chemical-tests.json",
+      "noteSectionIds": [
+        "test-hydrogen-oxygen",
+        "test-carbon-dioxide",
+        "test-ammonia-chlorine",
+        "test-observation-inference"
+      ],
+      "inventoryNoteSectionIds": [
+        "test-hydrogen-oxygen",
+        "test-carbon-dioxide",
+        "test-ammonia-chlorine",
+        "test-observation-inference"
+      ],
+      "editorialRequirementSummaries": [
+        "Hydrogen lighted-splint pop versus oxygen glowing-splint relight",
+        "CO₂ limewater cloudiness and precipitate",
+        "Ammonia damp red litmus turns blue",
+        "Chlorine damp litmus bleaching white",
+        "Test conditions, sequence and inference limits"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.45",
+      "reference": "2.45",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "cross-topic-skill",
+        "no-separately-prescribed-reaction"
+      ],
+      "requiredNamedCases": [],
+      "representativeCases": [],
+      "statesConditionsAndScopeLimits": "Flame-test procedure; clean wire and avoid sodium contamination. No combustion equation for each salt.",
+      "inventory": "research/syllabus/4CH1-chemical-tests.json",
+      "noteSectionIds": [
+        "test-flame-method"
+      ],
+      "inventoryNoteSectionIds": [
+        "test-flame-method"
+      ],
+      "editorialRequirementSummaries": [
+        "Clean loop or approved alternative and blank check",
+        "Sample in non-luminous flame and record colour",
+        "Contamination, masking and comparable conditions"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.46",
+      "reference": "2.46",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "no-separately-prescribed-reaction"
+      ],
+      "requiredNamedCases": [],
+      "representativeCases": [],
+      "statesConditionsAndScopeLimits": "Li/Na/K/Ca/Cu flame colours are excitation/emission evidence, not distinct reaction equations.",
+      "inventory": "research/syllabus/4CH1-chemical-tests.json",
+      "noteSectionIds": [
+        "test-flame-colours"
+      ],
+      "inventoryNoteSectionIds": [
+        "test-flame-colours"
+      ],
+      "editorialRequirementSummaries": [
+        "Li⁺ red and Na⁺ yellow",
+        "K⁺ lilac and Ca²⁺ orange-red",
+        "Cu²⁺ blue-green",
+        "Cation result does not identify anion or purity"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.47",
+      "reference": "2.47",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "named-reaction-cases"
+      ],
+      "requiredNamedCases": [
+        "NH4+ with NaOH and identify gas",
+        "Cu2+, Fe2+, Fe3+ with NaOH solution"
+      ],
+      "representativeCases": [
+        "NH4+(aq) + OH−(aq) → NH3(g) + H2O(l)",
+        "Cu2+(aq) + 2OH−(aq) → Cu(OH)2(s)",
+        "Fe2+(aq) + 2OH−(aq) → Fe(OH)2(s)",
+        "Fe3+(aq) + 3OH−(aq) → Fe(OH)3(s)"
+      ],
+      "statesConditionsAndScopeLimits": "Warm ammonium mixture; NH3 damp red litmus blue. Hydroxides blue/green/brown precipitates; salts supplying cations need not be individually enumerated. OH− aqueous, precipitate solid; distinguish FeII/III.",
+      "inventory": "research/syllabus/4CH1-chemical-tests.json",
+      "noteSectionIds": [
+        "test-metal-hydroxides",
+        "test-ammonium",
+        "test-observation-inference"
+      ],
+      "inventoryNoteSectionIds": [
+        "test-metal-hydroxides",
+        "test-ammonium",
+        "test-observation-inference"
+      ],
+      "editorialRequirementSummaries": [
+        "NH₄⁺ plus NaOH and warming gives identified ammonia",
+        "Gas test kept separate from alkaline liquid",
+        "Cu²⁺ blue, Fe²⁺ green and Fe³⁺ brown precipitates",
+        "Precipitate versus solution and Fe²⁺ oxidation sequence",
+        "Balanced hydroxide/ammonium examples and inference limits"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.48",
+      "reference": "2.48",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "named-reaction-cases"
+      ],
+      "requiredNamedCases": [
+        "Cl−/Br−/I− with acidified AgNO3",
+        "SO4^2− with acidified BaCl2",
+        "CO3^2− with HCl and gas test"
+      ],
+      "representativeCases": [
+        "Ag+(aq) + Cl−(aq) → AgCl(s)",
+        "Ag+(aq) + Br−(aq) → AgBr(s)",
+        "Ag+(aq) + I−(aq) → AgI(s)",
+        "Ba2+(aq) + SO4^2−(aq) → BaSO4(s)",
+        "CO3^2− + 2H+(aq) → CO2(g) + H2O(l)",
+        "CO2 + Ca(OH)2 → CaCO3 + H2O"
+      ],
+      "statesConditionsAndScopeLimits": "Halides acidify dilute HNO3 (never HCl), white/cream/yellow precipitates; sulfate acidify dilute HCl then BaCl2 (not H2SO4), white. Carbonate can be insoluble solid; net CO3 ion form is bookkeeping, do not mark all carbonate samples aq. Use suitable actual carbonate molecular example if states demanded. CO2 limewater secondary test.",
+      "inventory": "research/syllabus/4CH1-chemical-tests.json",
+      "noteSectionIds": [
+        "test-halide-ions",
+        "test-sulfate-ions",
+        "test-carbonate-ions",
+        "test-observation-inference"
+      ],
+      "inventoryNoteSectionIds": [
+        "test-halide-ions",
+        "test-sulfate-ions",
+        "test-carbonate-ions",
+        "test-observation-inference"
+      ],
+      "editorialRequirementSummaries": [
+        "Dilute nitric acid then silver nitrate halide test",
+        "Chloride white, bromide cream, iodide yellow precipitates",
+        "Avoid introduced chloride and carbonate interference",
+        "Acidified barium chloride white sulfate precipitate",
+        "Avoid introduced sulfate and carbonate interference",
+        "Carbonate hydrochloric acid release and limewater gas evidence",
+        "Separate portions and balanced charge/atom examples"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.49",
+      "reference": "2.49",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "named-reaction-cases"
+      ],
+      "requiredNamedCases": [
+        "Water presence using anhydrous CuSO4"
+      ],
+      "representativeCases": [
+        "CuSO4(s) + 5H2O(l) → CuSO4·5H2O(s) as simplified hydration model"
+      ],
+      "statesConditionsAndScopeLimits": "White to blue; test establishes water presence, not purity. Equation supports named chemical change but exact hydrate stoichiometry not separately demanded by 2.49. Excess liquid/sample may dissolve salt.",
+      "inventory": "research/syllabus/4CH1-chemical-tests.json",
+      "noteSectionIds": [
+        "test-water-presence"
+      ],
+      "inventoryNoteSectionIds": [
+        "test-water-presence"
+      ],
+      "editorialRequirementSummaries": [
+        "Fresh white anhydrous CuSO₄ turns blue with water",
+        "Moisture contamination and presence versus purity"
+      ]
+    },
+    {
+      "id": "4CH1:issue3:2.50",
+      "reference": "2.50",
+      "pdfPage": 26,
+      "printedPage": 20,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "classification": [
+        "no-separately-prescribed-reaction"
+      ],
+      "requiredNamedCases": [],
+      "representativeCases": [],
+      "statesConditionsAndScopeLimits": "Physical purity test water by boiling/freezing point at stated pressure. No new reaction; 100 °C/0 °C school values at standard atmospheric pressure.",
+      "inventory": "research/syllabus/4CH1-chemical-tests.json",
+      "noteSectionIds": [
+        "test-water-purity",
+        "test-observation-inference"
+      ],
+      "inventoryNoteSectionIds": [
+        "test-water-purity",
+        "test-observation-inference"
+      ],
+      "editorialRequirementSummaries": [
+        "Phase-change temperature with correct pure-water reference",
+        "Same pressure and appropriate apparatus/calibration",
+        "Physical purity versus chemical water-presence evidence",
+        "Measurement resolution and alternative explanations"
+      ]
+    }
+  ]
+}

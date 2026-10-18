@@ -1,0 +1,689 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4CH1",
+  "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "date": "2026-10-17",
+  "scope": "First13 finite named/example written reaction models supporting1.25; not the full prescribed collection or a processed-paper/template bank.",
+  "wholeCollectionComplete": false,
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "practicalTrialsPerformed": false,
+  "noteRef": "content/notes/chemistry.json",
+  "noteSectionIds": [
+    "equation-case-magnesium-oxide",
+    "equation-case-copper-oxide-reduction",
+    "equation-case-molten-lead-bromide",
+    "equation-case-brine-electrolysis",
+    "equation-case-copper-sulfate-electrolysis",
+    "equation-case-acidified-water-electrolysis",
+    "equation-case-marble-hydrochloric-acid",
+    "equation-case-peroxide-decomposition",
+    "equation-case-copper-sulfate-dehydration",
+    "equation-case-copper-sulfate-hydration",
+    "equation-case-ammonium-chloride-reversible",
+    "equation-case-hydrochloric-neutralization",
+    "equation-case-zinc-copper-displacement"
+  ],
+  "models": [
+    {
+      "id": "magnesium-oxide",
+      "title": "Balance magnesium combustion and its solid product",
+      "sourceReferences": [
+        "1.36",
+        "2.11"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "reactants": [
+        {
+          "coefficient": 2,
+          "formula": "Mg",
+          "state": "s",
+          "name": "magnesium"
+        },
+        {
+          "coefficient": 1,
+          "formula": "O2",
+          "state": "g",
+          "name": "oxygen"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 2,
+          "formula": "MgO",
+          "state": "s",
+          "name": "magnesium oxide"
+        }
+      ],
+      "arrow": "→",
+      "condition": "Magnesium burns in oxygen in the stated oxide-formation model; the oxide is a solid. This is a supervised experimental context, not an experiment performed here.",
+      "interpretationLimit": "Air combustion can have other contributions, including nitride formation; the named oxide model does not prove a collected sample is pure MgO. Source1.36 permits combustion or reduction, not compulsory performance of both.",
+      "practice": {
+        "question": "The supplied product is magnesium oxide MgO. Correct Mg(s) + O₂(g) → MgO₂(s) without changing the supplied product identity, then check all atoms.",
+        "answer": "2Mg(s) + O₂(g) → 2MgO(s). Magnesium oxide is MgO, not MgO₂. Two MgO units contain two O atoms, so use one O₂ and two Mg; each side has Mg₂O₂."
+      },
+      "reviewStatus": "root-reviewed-written-model",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "sectionId": "equation-case-magnesium-oxide",
+      "wordEquation": "magnesium + oxygen → magnesium oxide",
+      "formulaEquation": "2Mg(s) + O₂(g) → 2MgO(s)"
+    },
+    {
+      "id": "copper-oxide-reduction",
+      "title": "Retain oxygen when copper(II) oxide is reduced",
+      "sourceReferences": [
+        "1.36",
+        "2.20"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "CuO",
+          "state": "s",
+          "name": "copper(II) oxide"
+        },
+        {
+          "coefficient": 1,
+          "formula": "H2",
+          "state": "g",
+          "name": "hydrogen"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "Cu",
+          "state": "s",
+          "name": "copper"
+        },
+        {
+          "coefficient": 1,
+          "formula": "H2O",
+          "state": "g",
+          "name": "water"
+        }
+      ],
+      "arrow": "→",
+      "condition": "This supplied reduction model uses hydrogen over heated copper(II) oxide. Water is vapour in the hot reaction region and can condense to liquid on cooling.",
+      "interpretationLimit": "It is a written supervised model, not a direction to improvise heating hydrogen. Copper oxide loses oxygen; hydrogen gains oxygen. The source gives CuO as a reduction example, not the only possible experimental route.",
+      "practice": {
+        "question": "Correct CuO(s) + H₂(g) → Cu(s) + H₂(g) using the supplied observation of water. Why might the hot-region equation use (g), while collected cool water is (l)?",
+        "answer": "CuO(s) + H₂(g) → Cu(s) + H₂O(g). Oxygen from CuO must appear in water, not vanish. At the stated hot region water is vapour; after cooling it can be H₂O(l). The phase label follows the stated conditions."
+      },
+      "reviewStatus": "root-reviewed-written-model",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "sectionId": "equation-case-copper-oxide-reduction",
+      "wordEquation": "copper(II) oxide + hydrogen → copper + water",
+      "formulaEquation": "CuO(s) + H₂(g) → Cu(s) + H₂O(g)"
+    },
+    {
+      "id": "molten-lead-bromide",
+      "title": "Model the products of molten lead(II) bromide — Paper 2C",
+      "sourceReferences": [
+        "1.58C"
+      ],
+      "components": [
+        "2C"
+      ],
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "PbBr2",
+          "state": "l",
+          "name": "lead(II) bromide"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "Pb",
+          "state": "l",
+          "name": "lead"
+        },
+        {
+          "coefficient": 1,
+          "formula": "Br2",
+          "state": "g",
+          "name": "bromine"
+        }
+      ],
+      "arrow": "→",
+      "condition": "Electrolysis of molten PbBr₂: lead forms at the negative electrode and bromine at the positive electrode. This equation describes the hot molten apparatus, where the lead product is liquid; it becomes solid after cooling. Suitable inert electrodes are used in this model.",
+      "interpretationLimit": "Use the phase appropriate to the location and temperature stated. Solid PbBr₂ does not have the same mobile-ion conduction as its melt. Electrolysis uses electrical energy; no water-derived ions belong in this molten case.",
+      "practice": {
+        "question": "Correct the product formula in PbBr₂(l) → Pb(l) + 2Br(g). State each electrode product and explain why the hot lead and cooled lead may have different state labels.",
+        "answer": "PbBr₂(l) → Pb(l) + Br₂(g). Bromine is diatomic Br₂, not two isolated Br atoms. Lead forms at the negative electrode and bromine at the positive; hot lead is liquid in this stated model and solidifies on cooling."
+      },
+      "reviewStatus": "root-reviewed-written-model",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "sectionId": "equation-case-molten-lead-bromide",
+      "wordEquation": "lead(II) bromide → lead + bromine",
+      "formulaEquation": "PbBr₂(l) → Pb(l) + Br₂(g)"
+    },
+    {
+      "id": "brine-electrolysis",
+      "title": "Include water in an aqueous chloride model — Paper 2C",
+      "sourceReferences": [
+        "1.58C",
+        "1.59C",
+        "1.60C"
+      ],
+      "components": [
+        "2C"
+      ],
+      "reactants": [
+        {
+          "coefficient": 2,
+          "formula": "NaCl",
+          "state": "aq",
+          "name": "sodium chloride"
+        },
+        {
+          "coefficient": 2,
+          "formula": "H2O",
+          "state": "l",
+          "name": "water"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 2,
+          "formula": "NaOH",
+          "state": "aq",
+          "name": "sodium hydroxide"
+        },
+        {
+          "coefficient": 1,
+          "formula": "H2",
+          "state": "g",
+          "name": "hydrogen"
+        },
+        {
+          "coefficient": 1,
+          "formula": "Cl2",
+          "state": "g",
+          "name": "chlorine"
+        }
+      ],
+      "arrow": "→",
+      "condition": "This chosen overall model uses sufficiently concentrated aqueous NaCl, suitable inert electrodes and separated products: H₂ at the negative electrode, Cl₂ at the positive, with NaOH left in solution.",
+      "interpretationLimit": "Aqueous water participates. Chloride concentration and electrode conditions matter: oxygen can be favoured in dilute chloride conditions. The equation is not a guarantee for every aqueous NaCl setup or an undivided mixture in which products can react further.",
+      "practice": {
+        "question": "For the specified concentrated, inert-electrode, separated-product model, replace NaCl(aq) + H₂O(l) → NaOH(aq) + HCl(g) with a balanced equation and name the two electrode gases.",
+        "answer": "2NaCl(aq) + 2H₂O(l) → 2NaOH(aq) + H₂(g) + Cl₂(g). Hydrogen forms at the negative electrode and chlorine at the positive. The model does not produce HCl as the electrode gas or discharge sodium metal from the aqueous solution."
+      },
+      "reviewStatus": "root-reviewed-written-model",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "sectionId": "equation-case-brine-electrolysis",
+      "wordEquation": "sodium chloride + water → sodium hydroxide + hydrogen + chlorine",
+      "formulaEquation": "2NaCl(aq) + 2H₂O(l) → 2NaOH(aq) + H₂(g) + Cl₂(g)"
+    },
+    {
+      "id": "copper-sulfate-electrolysis",
+      "title": "Keep sulfate in the aqueous copper model — Paper 2C",
+      "sourceReferences": [
+        "1.58C",
+        "1.59C"
+      ],
+      "components": [
+        "2C"
+      ],
+      "reactants": [
+        {
+          "coefficient": 2,
+          "formula": "CuSO4",
+          "state": "aq",
+          "name": "copper(II) sulfate"
+        },
+        {
+          "coefficient": 2,
+          "formula": "H2O",
+          "state": "l",
+          "name": "water"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 2,
+          "formula": "Cu",
+          "state": "s",
+          "name": "copper"
+        },
+        {
+          "coefficient": 1,
+          "formula": "O2",
+          "state": "g",
+          "name": "oxygen"
+        },
+        {
+          "coefficient": 2,
+          "formula": "H2SO4",
+          "state": "aq",
+          "name": "sulfuric acid"
+        }
+      ],
+      "arrow": "→",
+      "condition": "Chosen overall model for aqueous CuSO₄ with suitable inert electrodes: copper is deposited at the negative electrode and oxygen forms at the positive electrode; the solution becomes more acidic.",
+      "interpretationLimit": "Water supplies the oxygen and the sulfate remains in solution. This differs from using an active copper anode, which can dissolve instead of giving this oxygen model; do not transfer inert-electrode products blindly.",
+      "practice": {
+        "question": "A student writes CuSO₄(aq) → Cu(s) + S(s) + 2O₂(g). Correct this for the specified inert-electrode aqueous model and explain why sulfate does not have to become sulfur.",
+        "answer": "2CuSO₄(aq) + 2H₂O(l) → 2Cu(s) + O₂(g) + 2H₂SO₄(aq). Cu²⁺ gives deposited copper; water-derived species give oxygen at the anode. Sulfate remains in the acid-containing solution rather than becoming sulfur in this model."
+      },
+      "reviewStatus": "root-reviewed-written-model",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "sectionId": "equation-case-copper-sulfate-electrolysis",
+      "wordEquation": "copper(II) sulfate + water → copper + oxygen + sulfuric acid",
+      "formulaEquation": "2CuSO₄(aq) + 2H₂O(l) → 2Cu(s) + O₂(g) + 2H₂SO₄(aq)"
+    },
+    {
+      "id": "acidified-water-electrolysis",
+      "title": "Distinguish electrolyte from net water decomposition — Paper 2C",
+      "sourceReferences": [
+        "1.58C",
+        "1.60C"
+      ],
+      "components": [
+        "2C"
+      ],
+      "reactants": [
+        {
+          "coefficient": 2,
+          "formula": "H2O",
+          "state": "l",
+          "name": "water"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 2,
+          "formula": "H2",
+          "state": "g",
+          "name": "hydrogen"
+        },
+        {
+          "coefficient": 1,
+          "formula": "O2",
+          "state": "g",
+          "name": "oxygen"
+        }
+      ],
+      "arrow": "→",
+      "condition": "Electrolyse water containing dilute sulfuric acid using suitable inert electrodes. Hydrogen forms at the negative electrode and oxygen at the positive; acid supplies ions for conduction but is not consumed in this overall model.",
+      "interpretationLimit": "The ideal gas amount ratio is H₂:O₂ = 2:1 under matched collection conditions. Escaping gas, dissolution and collection differences can affect measured volumes. Do not describe sulfate decomposition as the required net change.",
+      "practice": {
+        "question": "A proposed overall equation consumes H₂SO₄ and produces SO₂. Replace it with the net water equation for the stated dilute-acid inert-electrode model and give the ideal gas ratio.",
+        "answer": "2H₂O(l) → 2H₂(g) + O₂(g). Dilute sulfuric acid is the electrolyte in the stated overall model, not a consumed sulfur-containing reactant. Ideal H₂:O₂ amount ratio is 2:1; equal-temperature/pressure gas volumes have that same model ratio."
+      },
+      "reviewStatus": "root-reviewed-written-model",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "sectionId": "equation-case-acidified-water-electrolysis",
+      "wordEquation": "water → hydrogen + oxygen",
+      "formulaEquation": "2H₂O(l) → 2H₂(g) + O₂(g)"
+    },
+    {
+      "id": "marble-hydrochloric-acid",
+      "title": "Use calcium’s charge before balancing the marble reaction",
+      "sourceReferences": [
+        "3.15",
+        "2.37"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "CaCO3",
+          "state": "s",
+          "name": "calcium carbonate"
+        },
+        {
+          "coefficient": 2,
+          "formula": "HCl",
+          "state": "aq",
+          "name": "hydrochloric acid"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "CaCl2",
+          "state": "aq",
+          "name": "calcium chloride"
+        },
+        {
+          "coefficient": 1,
+          "formula": "H2O",
+          "state": "l",
+          "name": "water"
+        },
+        {
+          "coefficient": 1,
+          "formula": "CO2",
+          "state": "g",
+          "name": "carbon dioxide"
+        }
+      ],
+      "arrow": "→",
+      "condition": "Marble chips are modelled as solid CaCO₃ reacting with dilute aqueous HCl. The gas is CO₂; gas collection requires a suitable free outlet and comparable timing/conditions in a supervised plan.",
+      "interpretationLimit": "The salt identity is fixed before adjusting coefficients: Ca²⁺ needs two chloride ions. Bubble production alone does not identify CO₂. The acid-excess condition must be stated if equal carbonate amounts are used to predict equal final gas amounts.",
+      "practice": {
+        "question": "Given Ca²⁺ and Cl⁻, correct CaCO₃ + HCl → CaCl + H₂O + CO₂, include states for the stated dilute-acid model, and name the gas test.",
+        "answer": "CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g). CaCl₂ follows ion charges; then two HCl supply its chlorides and the two H for water. CO₂ clouds limewater in the appropriate separate supervised test."
+      },
+      "reviewStatus": "root-reviewed-written-model",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "sectionId": "equation-case-marble-hydrochloric-acid",
+      "wordEquation": "calcium carbonate + hydrochloric acid → calcium chloride + water + carbon dioxide",
+      "formulaEquation": "CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)"
+    },
+    {
+      "id": "peroxide-decomposition",
+      "title": "Keep the water product in peroxide decomposition",
+      "sourceReferences": [
+        "3.16"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "reactants": [
+        {
+          "coefficient": 2,
+          "formula": "H2O2",
+          "state": "aq",
+          "name": "hydrogen peroxide"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 2,
+          "formula": "H2O",
+          "state": "l",
+          "name": "water"
+        },
+        {
+          "coefficient": 1,
+          "formula": "O2",
+          "state": "g",
+          "name": "oxygen"
+        }
+      ],
+      "arrow": "→",
+      "condition": "The required investigation compares different solids in the catalytic decomposition of approved dilute hydrogen peroxide solution. A suitable catalyst is shown as a condition, not consumed in the overall equation.",
+      "interpretationLimit": "Faster gas production alone does not establish unchanged catalyst identity or equal active sites across different solids. No hydrogen gas is a product of this decomposition model.",
+      "practice": {
+        "question": "Correct H₂O₂(aq) → H₂(g) + O₂(g) using the supplied products water and oxygen. Give the balanced equation and oxygen test; should a catalyst appear as a consumed reactant?",
+        "answer": "2H₂O₂(aq) → 2H₂O(l) + O₂(g). Both sides have H₄O₄. Oxygen relights a glowing splint in the separate supervised test. A suitable catalyst belongs above the arrow/as a condition, not as a consumed overall reactant."
+      },
+      "reviewStatus": "root-reviewed-written-model",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "sectionId": "equation-case-peroxide-decomposition",
+      "wordEquation": "hydrogen peroxide → water + oxygen",
+      "formulaEquation": "2H₂O₂(aq) → 2H₂O(l) + O₂(g)"
+    },
+    {
+      "id": "copper-sulfate-dehydration",
+      "title": "Account for all five waters during dehydration",
+      "sourceReferences": [
+        "3.18"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "CuSO4.5H2O",
+          "state": "s",
+          "name": "hydrated copper(II) sulfate"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "CuSO4",
+          "state": "s",
+          "name": "anhydrous copper(II) sulfate"
+        },
+        {
+          "coefficient": 5,
+          "formula": "H2O",
+          "state": "g",
+          "name": "water"
+        }
+      ],
+      "arrow": "→",
+      "condition": "Controlled heating of blue CuSO₄·5H₂O removes water of crystallisation to give white anhydrous CuSO₄. This model represents the hot region, with water leaving as vapour.",
+      "interpretationLimit": "More severe heating can cause other changes. An open tube can lose water and does not by itself establish a sealed dynamic equilibrium. The dot-water multiplier is not a new chemical element or a coefficient on CuSO₄.",
+      "practice": {
+        "question": "Complete CuSO₄·5H₂O(s) → CuSO₄(s) + H₂O(g). Explain the coefficient and why this colour change is not simply melting blue crystals into a white liquid.",
+        "answer": "CuSO₄·5H₂O(s) → CuSO₄(s) + 5H₂O(g). The left contains five water units, so five must leave. Dehydration changes the hydrated solid into anhydrous solid; blue-to-white is not a white liquid produced by simple melting."
+      },
+      "reviewStatus": "root-reviewed-written-model",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "sectionId": "equation-case-copper-sulfate-dehydration",
+      "wordEquation": "hydrated copper(II) sulfate → anhydrous copper(II) sulfate + water",
+      "formulaEquation": "CuSO₄·5H₂O(s) → CuSO₄(s) + 5H₂O(g)"
+    },
+    {
+      "id": "copper-sulfate-hydration",
+      "title": "Model the reverse hydration with stated water conditions",
+      "sourceReferences": [
+        "3.18"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "CuSO4",
+          "state": "s",
+          "name": "anhydrous copper(II) sulfate"
+        },
+        {
+          "coefficient": 5,
+          "formula": "H2O",
+          "state": "l",
+          "name": "water"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "CuSO4.5H2O",
+          "state": "s",
+          "name": "hydrated copper(II) sulfate"
+        }
+      ],
+      "arrow": "→",
+      "condition": "This chosen stoichiometric hydration model adds water to cooled anhydrous CuSO₄ to form blue pentahydrate and release energy. It uses liquid water, unlike vapour leaving the hot dehydration model.",
+      "interpretationLimit": "A large excess of water can instead give a blue solution; the model does not guarantee isolated pure dry crystals from any addition. State labels reflect each described situation, not an unqualified reversal of the hot apparatus.",
+      "practice": {
+        "question": "Balance CuSO₄(s) + H₂O(l) → CuSO₄·5H₂O(s). Why does a blue appearance after a large water excess not establish pure dry hydrated crystals?",
+        "answer": "CuSO₄(s) + 5H₂O(l) → CuSO₄·5H₂O(s). Five water units are incorporated in the stated pentahydrate model. A large excess can dissolve the salt into a blue solution, so colour alone does not establish an isolated pure dry crystalline product."
+      },
+      "reviewStatus": "root-reviewed-written-model",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "sectionId": "equation-case-copper-sulfate-hydration",
+      "wordEquation": "anhydrous copper(II) sulfate + water → hydrated copper(II) sulfate",
+      "formulaEquation": "CuSO₄(s) + 5H₂O(l) → CuSO₄·5H₂O(s)"
+    },
+    {
+      "id": "ammonium-chloride-reversible",
+      "title": "Name both gases before balancing the reversible example",
+      "sourceReferences": [
+        "3.18"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "NH4Cl",
+          "state": "s",
+          "name": "ammonium chloride"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "NH3",
+          "state": "g",
+          "name": "ammonia"
+        },
+        {
+          "coefficient": 1,
+          "formula": "HCl",
+          "state": "g",
+          "name": "hydrogen chloride"
+        }
+      ],
+      "arrow": "⇌",
+      "condition": "Controlled heating can form ammonia and hydrogen chloride gases; those gases can recombine in a cooler region to form white solid NH₄Cl. The reversible arrow describes these possible directions.",
+      "interpretationLimit": "The white deposit is solid ammonium chloride, not white ammonia gas. An open demonstration is not a constant-temperature sealed-equilibrium measurement. It is a teacher-controlled model with irritating gases, not a sealed-heating procedure.",
+      "practice": {
+        "question": "Use the supplied products ammonia and hydrogen chloride to replace NH₄Cl(s) → N₂(g) + H₂(g) + Cl₂(g). Include states, balance and explain the white cooler-region deposit.",
+        "answer": "NH₄Cl(s) ⇌ NH₃(g) + HCl(g). Each side has N₁H₄Cl₁. The named gases can recombine to form solid NH₄Cl in a cooler region; chlorine gas and white ammonia are not the named products."
+      },
+      "reviewStatus": "root-reviewed-written-model",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "sectionId": "equation-case-ammonium-chloride-reversible",
+      "wordEquation": "ammonium chloride ⇌ ammonia + hydrogen chloride",
+      "formulaEquation": "NH₄Cl(s) ⇌ NH₃(g) + HCl(g)"
+    },
+    {
+      "id": "hydrochloric-neutralization",
+      "title": "Distinguish neutralisation from hydrogen formation",
+      "sourceReferences": [
+        "3.2",
+        "3.8",
+        "2.37"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "HCl",
+          "state": "aq",
+          "name": "hydrochloric acid"
+        },
+        {
+          "coefficient": 1,
+          "formula": "NaOH",
+          "state": "aq",
+          "name": "sodium hydroxide"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "NaCl",
+          "state": "aq",
+          "name": "sodium chloride"
+        },
+        {
+          "coefficient": 1,
+          "formula": "H2O",
+          "state": "l",
+          "name": "water"
+        }
+      ],
+      "arrow": "→",
+      "condition": "Chosen simple calorimetry example: aqueous hydrochloric acid neutralises aqueous sodium hydroxide, giving aqueous sodium chloride and liquid water under the stated dilute conditions.",
+      "interpretationLimit": "Use total solution mass for a heat estimate but the reacting limiting amount for a molar result. A warming mixture alone needs controlled initial temperatures to support a reaction-heat inference.",
+      "practice": {
+        "question": "Correct HCl(aq) + NaOH(aq) → NaCl(aq) + H₂(g), using the supplied acid/alkali products. Is this the same gas-forming pattern as a suitable metal plus acid?",
+        "answer": "HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l). Both sides have H₂ClNaO. Neutralisation forms water, whereas a suitable metal-plus-acid reaction can form hydrogen. Similar acid names do not make the product pattern identical."
+      },
+      "reviewStatus": "root-reviewed-written-model",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "sectionId": "equation-case-hydrochloric-neutralization",
+      "wordEquation": "hydrochloric acid + sodium hydroxide → sodium chloride + water",
+      "formulaEquation": "HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l)"
+    },
+    {
+      "id": "zinc-copper-displacement",
+      "title": "Keep the sulfate group intact in a displacement model",
+      "sourceReferences": [
+        "3.2",
+        "2.16",
+        "2.17",
+        "2.20"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "Zn",
+          "state": "s",
+          "name": "zinc"
+        },
+        {
+          "coefficient": 1,
+          "formula": "CuSO4",
+          "state": "aq",
+          "name": "copper(II) sulfate"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "ZnSO4",
+          "state": "aq",
+          "name": "zinc sulfate"
+        },
+        {
+          "coefficient": 1,
+          "formula": "Cu",
+          "state": "s",
+          "name": "copper"
+        }
+      ],
+      "arrow": "→",
+      "condition": "Chosen displacement/calorimetry example: zinc reacts with aqueous CuSO₄ to give aqueous ZnSO₄ and solid copper. Under the relevant conditions zinc is more reactive than copper.",
+      "interpretationLimit": "Sulfate stays as the sulfate group in this overall model; zinc is oxidised and Cu²⁺ reduced. An excess solid’s initial amount is not automatically the amount that reacts in calorimetry calculations.",
+      "practice": {
+        "question": "Given zinc sulfate and copper as the supplied products, write word and balanced formula equations with states for zinc plus aqueous copper(II) sulfate. Should sulfur appear as a product?",
+        "answer": "Zinc + copper(II) sulfate → zinc sulfate + copper. Zn(s) + CuSO₄(aq) → ZnSO₄(aq) + Cu(s). Both sides contain ZnCuSO₄; sulfate remains in solution with zinc rather than forming elemental sulfur."
+      },
+      "reviewStatus": "root-reviewed-written-model",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "sectionId": "equation-case-zinc-copper-displacement",
+      "wordEquation": "zinc + copper(II) sulfate → zinc sulfate + copper",
+      "formulaEquation": "Zn(s) + CuSO₄(aq) → ZnSO₄(aq) + Cu(s)"
+    }
+  ]
+}

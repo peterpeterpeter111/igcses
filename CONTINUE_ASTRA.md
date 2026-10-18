@@ -1,3 +1,11 @@
+# Latest verified source —18 October2026
+
+Read `research/checkpoints/2026-10-18-REACTION-REPAIRS.md` first. Continuedaf42779; all recorded reference/condition/lint defects repaired.307tests/typecheck/lint/research/evidence/D1/build/public145pass; local319px lesson/answer-disclosure verified.13 models/182source identity decisions remain partial reaction teaching. No promotion:243 authored identities/four whole authored chapters/two processed English papers/zero active templates or AI. Sync and native Sites publication pending; previous056d128 live until confirmed. Continue Organic1.25 slice then full remaining gates BEFORE AI. Both allowances initially100%; no reset, pause5%either. Older entries below historical.
+
+# PAUSED at5% — 17 October 2026
+
+Read `research/checkpoints/2026-10-17-REACTION-SCOPE-PAUSED.md` first.5%five-hour/69%weekly; no reset. Current saved delta:182 source-scope identity decisions,13 new partial reaction lessons;307 tests/typecheck/research/evidence pass, but lint has two comparator findings and independent review records three pending source/condition repairs. Build/D1/public/browser proof and new GitHub sync/Sites publication remain pending. Counts stay243 authored identities/four authored chapters/two processed English papers/zero active exam templates or liveAI. Previous application056d128 remains privately deployed. Resume above5%both, fix recorded findings, verify/sync/publish, then reaction collection/wholePrinciples/curriculum/fivepaper gates/calibrated templates BEFORE AI. Preserve history/UI; older entries below are historical.
+
 # PAUSED at5% — 15 October 2026
 
 Read `research/checkpoints/2026-10-15-SAVED-RELEASE.md` first. Final5%five-hour/85%weekly; no reset. Localfdc94f7/GitHuba44d753 exacttreed877fc3 verified; finalpause-onlydescendant needs non-force sync after resumption. Application056d128 remains native-confirmed privately deployed.304tests pass;243authoredidentities/four whole authored chapters/two processed English papers/zero active examtemplates or liveAI. Reaction queue:182identities/246textcandidates/30limited decisions/152pending; no reaction coverage certification. Resume above5%both, sync pausedocs then Chemistry1.25/wholePrinciples/remainingcurriculum/fivepapergates/templates BEFORE AI. Preservehistory/UI/privateevidence; noreset/pause5%either. Olderentrieshistorical.

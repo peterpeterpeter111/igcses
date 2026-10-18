@@ -1,0 +1,1580 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-10-17",
+  "reviewer": "Codex bounded Organic source audit",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "All fifty Organic identities 4.1–4.50C for source-constrained interpretation of cross-topic 1.25 reaction-equation coverage. Read-only research; no curriculum completion decisions or promotion.",
+  "source": {
+    "path": "work/sources/4CH1.pdf",
+    "documentId": "4CH1-spec",
+    "issue": "Issue 3 - September 2024",
+    "sha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+    "pdfPages": [
+      29,
+      30,
+      31,
+      32
+    ],
+    "printedPages": [
+      23,
+      24,
+      25,
+      26
+    ],
+    "visualInspection": true
+  },
+  "inputFiles": [
+    "research/syllabus/4CH1-organic-foundations.json",
+    "research/syllabus/4CH1-organic-families-polymers.json",
+    "research/curriculum-audits/4CH1-organic-foundations.json",
+    "research/curriculum-audits/4CH1-organic-families-polymers.json",
+    "content/notes/chemistry-organic.json"
+  ],
+  "counts": {
+    "identities": 50,
+    "paper1And2": 32,
+    "paper2Only": 18,
+    "classificationCounts": {
+      "no-separately-prescribed-reaction": 18,
+      "cross-topic-skill": 18,
+      "general-reaction-family": 9,
+      "named-reaction-or-repeat-model": 5
+    },
+    "distinctCaseRecords": 27
+  },
+  "policy": [
+    "Each source identity appears once; multiple source IDs can reuse a reaction case without creating new compulsory reactions.",
+    "Formula models here are representative proposals except where the source explicitly specifies the named reaction or repeat model. They are not copied publisher questions.",
+    "Components derive from visible C suffix/bold restriction: 4.29C–4.43C and 4.48C–4.50C are Paper 2C only; 4.44–4.47 are shared.",
+    "A standard molecular equation, structural equation, displayed diagram, practical plan, classification task and no-reaction observation prove different skills; do not collapse them.",
+    "States require actual conditions and mixtures. A deliberately state-free structural model is not automatically full state-symbol evidence under 1.25.",
+    "Do not invent compulsory mechanisms: 4.6 and 4.22 explicitly exclude mechanism knowledge; 4.26 excludes cis/trans or E/Z notation.",
+    "[O] is limited oxidation shorthand, not a chemical substance with a state; esterification has no [O] reagent.",
+    "A printed polymer repeat equation is ideal repeating-chain shorthand; finite end-group counts require separate assumptions."
+  ],
+  "identities": [
+    {
+      "id": "4CH1:issue3:4.1",
+      "reference": "4.1",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "no-separately-prescribed-reaction",
+      "sourceDecision": "Hydrocarbon definition only.",
+      "caseIds": [],
+      "noteSectionIds": [
+        "hydrocarbon-identity"
+      ],
+      "representationDemand": "No separately prescribed reaction equation or drawing in this statement.",
+      "sourceLimits": "No additional reaction conditions or state symbols are prescribed by this statement.",
+      "auditRequirementSummaries": [
+        "Carbon and hydrogen only in a compound",
+        "All elements checked rather than a partial formula"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.2",
+      "reference": "4.2",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "cross-topic-skill",
+      "sourceDecision": "Empirical, molecular, general, structural and displayed formula representations.",
+      "caseIds": [],
+      "noteSectionIds": [
+        "organic-formula-types",
+        "alcohol-drawings",
+        "carboxylic-drawings",
+        "ethyl-ethanoate-drawing"
+      ],
+      "representationDemand": "Formula/drawing skill shared by reaction representations; empirical or molecular formula alone does not replace structural/displayed connectivity.",
+      "sourceLimits": "No additional reaction conditions or state symbols are prescribed by this statement.",
+      "auditRequirementSummaries": [
+        "Molecular actual atom counts",
+        "Empirical simplest ratio",
+        "General family formula with stated conditions",
+        "Structural connectivity and condensed notation",
+        "Displayed every atom/bond and valency"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.3",
+      "reference": "4.3",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "no-separately-prescribed-reaction",
+      "sourceDecision": "Homologous series, functional group and isomerism definitions.",
+      "caseIds": [],
+      "noteSectionIds": [
+        "homologous-series",
+        "structural-isomers"
+      ],
+      "representationDemand": "Classification/connectivity concepts, no additional named conversion.",
+      "sourceLimits": "No additional reaction conditions or state symbols are prescribed by this statement.",
+      "auditRequirementSummaries": [
+        "Homologous family, formula, behaviour and CH₂ difference",
+        "Functional group associated with characteristic reactions",
+        "Isomer formula equality and different connectivity"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.4",
+      "reference": "4.4",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "cross-topic-skill",
+      "sourceDecision": "IUPAC naming within six carbon atoms.",
+      "caseIds": [],
+      "noteSectionIds": [
+        "organic-names",
+        "alcohol-drawings",
+        "carboxylic-drawings",
+        "ester-naming"
+      ],
+      "representationDemand": "Naming supports equations but does not prescribe every six-carbon compound as a separate reaction case.",
+      "sourceLimits": "Up to six carbons naming limit does not silently broaden each family’s narrower explicitly specified drawing set.",
+      "auditRequirementSummaries": [
+        "First six carbon-count roots",
+        "Appropriate parent and low double-bond locant",
+        "Branch numbering and distinction from total carbon count",
+        "Relevant alcohol, acid and ester naming within the six-carbon scope"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.5",
+      "reference": "4.5",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "cross-topic-skill",
+      "sourceDecision": "Deduce structural/displayed formulae from molecular formula.",
+      "caseIds": [],
+      "noteSectionIds": [
+        "structural-isomers",
+        "alkane-branched-isomers"
+      ],
+      "representationDemand": "Drawing and isomer enumeration, not a chemical reaction transforming one isomer into another.",
+      "sourceLimits": "No additional reaction conditions or state symbols are prescribed by this statement.",
+      "auditRequirementSummaries": [
+        "Connected skeleton and normal valencies",
+        "Different structural connections and duplicate removal",
+        "Displayed and structural C₄/C₅ examples with atom counts",
+        "Family ambiguity not resolved by formula alone"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.6",
+      "reference": "4.6",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "cross-topic-skill",
+      "sourceDecision": "Classify substitution, addition and combustion.",
+      "caseIds": [
+        "alkane-monosubstitution",
+        "alkene-bromine-addition",
+        "hydrocarbon-complete"
+      ],
+      "noteSectionIds": [
+        "organic-reaction-classes",
+        "hydrocarbon-complete-combustion",
+        "alkane-monosubstitution",
+        "bromine-addition"
+      ],
+      "representationDemand": "Reaction classification reuses later families; not an extra reaction instance.",
+      "sourceLimits": "Reaction mechanisms explicitly not required.",
+      "auditRequirementSummaries": [
+        "Substitution replaces a group",
+        "Addition across a multiple bond",
+        "Combustion and oxygen products",
+        "No mandatory mechanism detail"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.7",
+      "reference": "4.7",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "no-separately-prescribed-reaction",
+      "sourceDecision": "Crude oil is a hydrocarbon mixture.",
+      "caseIds": [],
+      "noteSectionIds": [
+        "crude-mixture"
+      ],
+      "representationDemand": "No single crude-oil molecular formula; no single crude-oil equation.",
+      "sourceLimits": "No additional reaction conditions or state symbols are prescribed by this statement.",
+      "auditRequirementSummaries": [
+        "Crude oil mixture of hydrocarbons",
+        "No unique molecular formula or fixed boiling point"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.8",
+      "reference": "4.8",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "no-separately-prescribed-reaction",
+      "sourceDecision": "Fractional distillation separates crude oil physically.",
+      "caseIds": [],
+      "noteSectionIds": [
+        "crude-mixture",
+        "fractional-column"
+      ],
+      "representationDemand": "Apparatus/process explanation; separation is not a chemical conversion.",
+      "sourceLimits": "No additional reaction conditions or state symbols are prescribed by this statement.",
+      "auditRequirementSummaries": [
+        "Heated oil and vaporized components",
+        "Hot bottom and cooler top",
+        "Different condensation heights/boiling ranges",
+        "Fractions remain mixtures and separation not cracking"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.9",
+      "reference": "4.9",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "no-separately-prescribed-reaction",
+      "sourceDecision": "Named crude-oil fractions and uses.",
+      "caseIds": [],
+      "noteSectionIds": [
+        "fraction-uses"
+      ],
+      "representationDemand": "Refinery gases, gasoline, kerosene, diesel, fuel oil and bitumen are fractions/mixtures, not six fixed molecular reagents.",
+      "sourceLimits": "No additional reaction conditions or state symbols are prescribed by this statement.",
+      "auditRequirementSummaries": [
+        "Refinery gases cooking/heating",
+        "Gasoline/petrol car engines",
+        "Kerosene aircraft fuel",
+        "Diesel suitable engine fuel",
+        "Fuel oil large-scale heating/ship/power uses",
+        "Bitumen road/roof uses"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.10",
+      "reference": "4.10",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "no-separately-prescribed-reaction",
+      "sourceDecision": "Fraction colour, boiling point and viscosity trends.",
+      "caseIds": [],
+      "noteSectionIds": [
+        "fraction-trends"
+      ],
+      "representationDemand": "No separately prescribed reaction equation or drawing in this statement.",
+      "sourceLimits": "No additional reaction conditions or state symbols are prescribed by this statement.",
+      "auditRequirementSummaries": [
+        "Colour trend in the mixtures",
+        "Boiling range and intermolecular attractions",
+        "Viscosity/flow trend at comparable temperature"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.11",
+      "reference": "4.11",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "cross-topic-skill",
+      "sourceDecision": "Fuel definition: burning releases heat.",
+      "caseIds": [
+        "hydrocarbon-complete"
+      ],
+      "noteSectionIds": [
+        "fuel-energy"
+      ],
+      "representationDemand": "Energy definition overlaps combustion; no separately named fuel reaction.",
+      "sourceLimits": "No additional reaction conditions or state symbols are prescribed by this statement.",
+      "auditRequirementSummaries": [
+        "Heat released on burning defines fuel",
+        "Ignition barrier distinct from net energy"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.12",
+      "reference": "4.12",
+      "pdfPage": 29,
+      "printedPage": 23,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "general-reaction-family",
+      "sourceDecision": "Complete and incomplete hydrocarbon combustion products.",
+      "caseIds": [
+        "hydrocarbon-complete",
+        "hydrocarbon-incomplete-co",
+        "hydrocarbon-incomplete-carbon"
+      ],
+      "noteSectionIds": [
+        "hydrocarbon-complete-combustion",
+        "hydrocarbon-incomplete-combustion"
+      ],
+      "representationDemand": "Word products plus balanced representative formula models under 1.25.",
+      "sourceLimits": "Use sufficient/insufficient oxygen distinction and conditional water states; no fixed hydrocarbon or unique incomplete equation prescribed.",
+      "auditRequirementSummaries": [
+        "Complete combustion CO₂/water and balanced counts",
+        "Incomplete CO/carbon/water possibilities and mixtures",
+        "Oxygen supply and inference limits"
+      ],
+      "decisionFor125": "Require appropriate word/formula equation evidence for the actual studied reaction cases; structural/drawing or explanatory evidence alone is not automatically full 1.25 evidence."
+    },
+    {
+      "id": "4CH1:issue3:4.13",
+      "reference": "4.13",
+      "pdfPage": 30,
+      "printedPage": 24,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "no-separately-prescribed-reaction",
+      "sourceDecision": "CO reduces blood oxygen-transport capacity.",
+      "caseIds": [],
+      "noteSectionIds": [
+        "carbon-monoxide-transport"
+      ],
+      "representationDemand": "Explanation of effect, not a compulsory CO–haemoglobin reaction equation.",
+      "sourceLimits": "Haemoglobin references explicitly not required.",
+      "auditRequirementSummaries": [
+        "Blood oxygen-transport capacity reduced",
+        "CO distinct from soot and CO₂; haemoglobin not required"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.14",
+      "reference": "4.14",
+      "pdfPage": 30,
+      "printedPage": 24,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "general-reaction-family",
+      "sourceDecision": "High-temperature air nitrogen/oxygen chemistry gives nitrogen oxides.",
+      "caseIds": [
+        "engine-nitrogen-oxides"
+      ],
+      "noteSectionIds": [
+        "combustion-other-oxides"
+      ],
+      "representationDemand": "Explain reactant sources; NO equation is representative if included.",
+      "sourceLimits": "High car-engine temperature; no required complete NOx mechanism or exact oxide mixture.",
+      "auditRequirementSummaries": [
+        "High engine temperature permits nitrogen/oxygen reaction",
+        "Air nitrogen rather than assumed fuel nitrogen source"
+      ],
+      "decisionFor125": "Require appropriate word/formula equation evidence for the actual studied reaction cases; structural/drawing or explanatory evidence alone is not automatically full 1.25 evidence."
+    },
+    {
+      "id": "4CH1:issue3:4.15",
+      "reference": "4.15",
+      "pdfPage": 30,
+      "printedPage": 24,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "general-reaction-family",
+      "sourceDecision": "Combustion of fuel impurities gives sulfur dioxide.",
+      "caseIds": [
+        "sulfur-impurity-oxidation"
+      ],
+      "noteSectionIds": [
+        "combustion-other-oxides"
+      ],
+      "representationDemand": "Word/model equation must respect actual sulfur source.",
+      "sourceLimits": "Do not imply every fuel impurity is elemental sulfur; pure hydrocarbon has no S.",
+      "auditRequirementSummaries": [
+        "Sulfur-bearing impurity oxidation to SO₂",
+        "Pure hydrocarbon formula has no sulfur"
+      ],
+      "decisionFor125": "Require appropriate word/formula equation evidence for the actual studied reaction cases; structural/drawing or explanatory evidence alone is not automatically full 1.25 evidence."
+    },
+    {
+      "id": "4CH1:issue3:4.16",
+      "reference": "4.16",
+      "pdfPage": 30,
+      "printedPage": 24,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "cross-topic-skill",
+      "sourceDecision": "Explain SO2 and nitrogen oxides contributing to acid rain.",
+      "caseIds": [
+        "acid-rain-formation"
+      ],
+      "noteSectionIds": [
+        "acid-rain-formation"
+      ],
+      "representationDemand": "Chemical explanation required; no uniquely prescribed exact acid-rain equation.",
+      "sourceLimits": "No mandatory detailed atmospheric mechanism or one universal nitrogen-oxide-plus-water equation.",
+      "auditRequirementSummaries": [
+        "SO₂ and nitrogen oxides atmospheric/water acid formation",
+        "Acidic substances enter rainwater",
+        "Acid-rain pathway distinct from warming"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.17",
+      "reference": "4.17",
+      "pdfPage": 30,
+      "printedPage": 24,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "general-reaction-family",
+      "sourceDecision": "Catalytic cracking produces alkenes and shorter alkanes.",
+      "caseIds": [
+        "cracking"
+      ],
+      "noteSectionIds": [
+        "cracking-process"
+      ],
+      "representationDemand": "Balanced family example, not every possible product set.",
+      "sourceLimits": "Silica/alumina, 600–700 °C; product structures need information beyond molecular formula.",
+      "auditRequirementSummaries": [
+        "Long-chain alkane to shorter alkanes/alkenes",
+        "Silica or alumina and 600–700°C own conditions",
+        "Atom-balanced possible product model"
+      ],
+      "decisionFor125": "Require appropriate word/formula equation evidence for the actual studied reaction cases; structural/drawing or explanatory evidence alone is not automatically full 1.25 evidence."
+    },
+    {
+      "id": "4CH1:issue3:4.18",
+      "reference": "4.18",
+      "pdfPage": 30,
+      "printedPage": 24,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "cross-topic-skill",
+      "sourceDecision": "Supply/demand reason for cracking.",
+      "caseIds": [
+        "cracking"
+      ],
+      "noteSectionIds": [
+        "cracking-demand"
+      ],
+      "representationDemand": "Contextual explanation reuses cracking; no extra conversion.",
+      "sourceLimits": "No additional reaction conditions or state symbols are prescribed by this statement.",
+      "auditRequirementSummaries": [
+        "Mismatch between fraction supply and demand",
+        "Shorter fuels and alkene feedstock uses",
+        "Chemical conversion beyond physical separation"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.19",
+      "reference": "4.19",
+      "pdfPage": 30,
+      "printedPage": 24,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "no-separately-prescribed-reaction",
+      "sourceDecision": "General formula of alkanes.",
+      "caseIds": [],
+      "noteSectionIds": [
+        "alkane-formula"
+      ],
+      "representationDemand": "CnH2n+2 family formula, not a reaction equation.",
+      "sourceLimits": "No additional reaction conditions or state symbols are prescribed by this statement.",
+      "auditRequirementSummaries": [
+        "CₙH₂ₙ₊₂ for acyclic alkanes",
+        "Correct carbon/hydrogen count substitution"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.20",
+      "reference": "4.20",
+      "pdfPage": 30,
+      "printedPage": 24,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "no-separately-prescribed-reaction",
+      "sourceDecision": "Alkane saturation explanation.",
+      "caseIds": [],
+      "noteSectionIds": [
+        "alkane-formula"
+      ],
+      "representationDemand": "No separately prescribed reaction equation or drawing in this statement.",
+      "sourceLimits": "No additional reaction conditions or state symbols are prescribed by this statement.",
+      "auditRequirementSummaries": [
+        "Saturation means no carbon-carbon multiple bond",
+        "Molecular saturation distinct from solution saturation"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.21",
+      "reference": "4.21",
+      "pdfPage": 30,
+      "printedPage": 24,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "cross-topic-skill",
+      "sourceDecision": "Structural/displayed alkane drawings and unbranched naming.",
+      "caseIds": [],
+      "noteSectionIds": [
+        "alkane-drawings",
+        "alkane-branched-isomers"
+      ],
+      "representationDemand": "Alkanes up to five C in molecule; full drawings are not reaction equations.",
+      "sourceLimits": "Name unbranched-chain isomers in this row; avoid importing mechanisms or reactions for every drawing.",
+      "auditRequirementSummaries": [
+        "First five unbranched names and structural formulas",
+        "Every C–H/C–C bond displayed with correct valency",
+        "Branched drawing examples and unbranched naming limit"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.22",
+      "reference": "4.22",
+      "pdfPage": 30,
+      "printedPage": 24,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "general-reaction-family",
+      "sourceDecision": "Alkanes react with halogens under UV; mono-substitution.",
+      "caseIds": [
+        "alkane-monosubstitution"
+      ],
+      "noteSectionIds": [
+        "alkane-monosubstitution"
+      ],
+      "representationDemand": "Word/formula and structural product models; mechanisms excluded.",
+      "sourceLimits": "UV; mono-substitution only. Source does not mandate a single alkane/halogen pair.",
+      "auditRequirementSummaries": [
+        "Halogen and ultraviolet condition",
+        "One H replaced and hydrogen halide formed",
+        "Balanced mono-substitution and scope limits"
+      ],
+      "decisionFor125": "Require appropriate word/formula equation evidence for the actual studied reaction cases; structural/drawing or explanatory evidence alone is not automatically full 1.25 evidence."
+    },
+    {
+      "id": "4CH1:issue3:4.23",
+      "reference": "4.23",
+      "pdfPage": 30,
+      "printedPage": 24,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "no-separately-prescribed-reaction",
+      "sourceDecision": "Alkene C=C functional group.",
+      "caseIds": [],
+      "noteSectionIds": [
+        "alkene-formula"
+      ],
+      "representationDemand": "No separately prescribed reaction equation or drawing in this statement.",
+      "sourceLimits": "No additional reaction conditions or state symbols are prescribed by this statement.",
+      "auditRequirementSummaries": [
+        "C=C functional group in own scope"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.24",
+      "reference": "4.24",
+      "pdfPage": 30,
+      "printedPage": 24,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "no-separately-prescribed-reaction",
+      "sourceDecision": "Alkene general formula.",
+      "caseIds": [],
+      "noteSectionIds": [
+        "alkene-formula"
+      ],
+      "representationDemand": "CnH2n family model; formula does not itself uniquely identify an alkene without structure context.",
+      "sourceLimits": "No additional reaction conditions or state symbols are prescribed by this statement.",
+      "auditRequirementSummaries": [
+        "CₙH₂ₙ for acyclic one-double-bond hydrocarbons",
+        "Formula/structure qualification"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.25",
+      "reference": "4.25",
+      "pdfPage": 30,
+      "printedPage": 24,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "no-separately-prescribed-reaction",
+      "sourceDecision": "Alkene unsaturation explanation.",
+      "caseIds": [],
+      "noteSectionIds": [
+        "alkene-formula"
+      ],
+      "representationDemand": "C=C explains ability to add; no extra individually named addition reagent.",
+      "sourceLimits": "No additional reaction conditions or state symbols are prescribed by this statement.",
+      "auditRequirementSummaries": [
+        "Unsaturation and C=C addition"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.26",
+      "reference": "4.26",
+      "pdfPage": 30,
+      "printedPage": 24,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "cross-topic-skill",
+      "sourceDecision": "Structural/displayed alkene drawings and unbranched names.",
+      "caseIds": [],
+      "noteSectionIds": [
+        "alkene-drawings"
+      ],
+      "representationDemand": "Alkenes up to four C; show bond position and connectivity.",
+      "sourceLimits": "cis/trans and E/Z notation explicitly not required; no new reactions.",
+      "auditRequirementSummaries": [
+        "Ethene/propene structural and displayed formulas",
+        "But-1-ene/but-2-ene positions and names",
+        "Branched C₄ connectivity and valency",
+        "No required E/Z or cis/trans notation"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.27",
+      "reference": "4.27",
+      "pdfPage": 30,
+      "printedPage": 24,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "general-reaction-family",
+      "sourceDecision": "Bromine addition to alkenes produces dibromoalkanes.",
+      "caseIds": [
+        "alkene-bromine-addition"
+      ],
+      "noteSectionIds": [
+        "bromine-addition"
+      ],
+      "representationDemand": "Connectivity-sensitive formula/displayed product, not just molecular atom totals.",
+      "sourceLimits": "No mandatory mechanism. Named ethene/propene/butene examples in notes illustrate family.",
+      "auditRequirementSummaries": [
+        "Br₂ across C=C to dibromoalkane",
+        "One Br on each original double-bond carbon",
+        "Product structure and balanced atom model"
+      ],
+      "decisionFor125": "Require appropriate word/formula equation evidence for the actual studied reaction cases; structural/drawing or explanatory evidence alone is not automatically full 1.25 evidence."
+    },
+    {
+      "id": "4CH1:issue3:4.28",
+      "reference": "4.28",
+      "pdfPage": 30,
+      "printedPage": 24,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "cross-topic-skill",
+      "sourceDecision": "Bromine-water alkane/alkene comparison.",
+      "caseIds": [
+        "bromine-water-comparison",
+        "alkene-bromine-addition"
+      ],
+      "noteSectionIds": [
+        "bromine-water-test"
+      ],
+      "representationDemand": "Observation/test demand reuses addition; negative alkane test is not a product equation.",
+      "sourceLimits": "Use aqueous reagent and non-UV comparison; distinguish decolourisation from partitioning.",
+      "auditRequirementSummaries": [
+        "Bromine-water orange/brown to colourless alkene response",
+        "Alkane comparison without UV and matched conditions",
+        "Mixing/phase transfer/excess reagent limits",
+        "Restricted candidates and no exact identity/purity inference"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.29C",
+      "reference": "4.29C",
+      "pdfPage": 31,
+      "printedPage": 25,
+      "components": [
+        "2C"
+      ],
+      "sourceClassification": "no-separately-prescribed-reaction",
+      "sourceDecision": "Alcohol –OH functional group.",
+      "caseIds": [],
+      "noteSectionIds": [
+        "alcohol-functional-group"
+      ],
+      "representationDemand": "Identify C–O–H connection; no separate reaction.",
+      "sourceLimits": "No additional reaction conditions or state symbols are prescribed by this statement.",
+      "auditRequirementSummaries": [
+        "Alcohol C–O–H connection and oxygen valency",
+        "Alcohol not a hydrocarbon or free hydroxide"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.30C",
+      "reference": "4.30C",
+      "pdfPage": 31,
+      "printedPage": 25,
+      "components": [
+        "2C"
+      ],
+      "sourceClassification": "cross-topic-skill",
+      "sourceDecision": "Draw and name methanol, ethanol, propan-1-ol and butan-1-ol.",
+      "caseIds": [],
+      "noteSectionIds": [
+        "alcohol-drawings"
+      ],
+      "representationDemand": "Required structural/displayed set; naming propanol/butanol accepted.",
+      "sourceLimits": "Only propan-1-ol and butan-1-ol here; this does not require oxidation/hydration of each named alcohol.",
+      "auditRequirementSummaries": [
+        "Methanol and ethanol named structures",
+        "Propan-1-ol and butan-1-ol primary connections",
+        "Full displayed bonds and alcohol naming"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.31C",
+      "reference": "4.31C",
+      "pdfPage": 31,
+      "printedPage": 25,
+      "components": [
+        "2C"
+      ],
+      "sourceClassification": "named-reaction-or-repeat-model",
+      "sourceDecision": "Three explicitly required ethanol oxidation routes.",
+      "caseIds": [
+        "ethanol-combustion",
+        "ethanol-microbial-oxidation",
+        "ethanol-dichromate-oxidation"
+      ],
+      "noteSectionIds": [
+        "ethanol-combustion",
+        "ethanol-acid-oxidation"
+      ],
+      "representationDemand": "Separate route products/conditions; word equations and valid formula model with explicit [O] caveat.",
+      "sourceLimits": "Air/oxygen combustion; microbial oxygen route; heat with potassium dichromate(VI) in dilute sulfuric acid. [O] is shorthand, not full reagent equation.",
+      "auditRequirementSummaries": [
+        "Complete ethanol combustion and atom balance",
+        "Microbial oxidation with oxygen to acid",
+        "Potassium dichromate(VI), dilute sulfuric acid and heat",
+        "Route products and controlled acid endpoint distinguished"
+      ],
+      "decisionFor125": "Require appropriate word/formula equation evidence for the actual studied reaction cases; structural/drawing or explanatory evidence alone is not automatically full 1.25 evidence."
+    },
+    {
+      "id": "4CH1:issue3:4.32C",
+      "reference": "4.32C",
+      "pdfPage": 31,
+      "printedPage": 25,
+      "components": [
+        "2C"
+      ],
+      "sourceClassification": "named-reaction-or-repeat-model",
+      "sourceDecision": "Two explicitly required ethanol manufacturing routes.",
+      "caseIds": [
+        "ethene-hydration",
+        "glucose-fermentation"
+      ],
+      "noteSectionIds": [
+        "ethanol-steam-route",
+        "ethanol-fermentation"
+      ],
+      "representationDemand": "Word and balanced formula equations for both routes; conditions not consumed reactants.",
+      "sourceLimits": "Hydration: phosphoric acid/about 300 °C/about 60–70 atm. Fermentation: glucose/yeast enzymes/no air/about 30 °C.",
+      "auditRequirementSummaries": [
+        "Ethene/steam and phosphoric acid catalyst",
+        "Own about 300°C and 60–70 atm",
+        "Glucose, yeast enzymes, absence of air and about30°C",
+        "Balanced fermentation equation and product mixture"
+      ],
+      "decisionFor125": "Require appropriate word/formula equation evidence for the actual studied reaction cases; structural/drawing or explanatory evidence alone is not automatically full 1.25 evidence."
+    },
+    {
+      "id": "4CH1:issue3:4.33C",
+      "reference": "4.33C",
+      "pdfPage": 31,
+      "printedPage": 25,
+      "components": [
+        "2C"
+      ],
+      "sourceClassification": "cross-topic-skill",
+      "sourceDecision": "Explain fermentation air exclusion and optimum temperature.",
+      "caseIds": [
+        "glucose-fermentation"
+      ],
+      "noteSectionIds": [
+        "fermentation-conditions"
+      ],
+      "representationDemand": "Conditions reasoning reuses fermentation, not a separate required aerobic-respiration equation.",
+      "sourceLimits": "No air; optimum temperature; enzyme rate/denaturation reasoning.",
+      "auditRequirementSummaries": [
+        "Absence of air supports intended ethanol route",
+        "Optimum enzyme activity and high-temperature denaturation",
+        "Gas outlet distinct from absence of air"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.34C",
+      "reference": "4.34C",
+      "pdfPage": 31,
+      "printedPage": 25,
+      "components": [
+        "2C"
+      ],
+      "sourceClassification": "no-separately-prescribed-reaction",
+      "sourceDecision": "Carboxylic acid –C(=O)OH group.",
+      "caseIds": [],
+      "noteSectionIds": [
+        "carboxyl-group"
+      ],
+      "representationDemand": "Functional-group drawing, not conversion.",
+      "sourceLimits": "No additional reaction conditions or state symbols are prescribed by this statement.",
+      "auditRequirementSummaries": [
+        "Complete C(=O)–OH functional group",
+        "Carbonyl carbon count and oxygen valencies"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.35C",
+      "reference": "4.35C",
+      "pdfPage": 31,
+      "printedPage": 25,
+      "components": [
+        "2C"
+      ],
+      "sourceClassification": "cross-topic-skill",
+      "sourceDecision": "Draw/name unbranched carboxylic acids through four carbons.",
+      "caseIds": [],
+      "noteSectionIds": [
+        "carboxylic-drawings"
+      ],
+      "representationDemand": "Methanoic, ethanoic, propanoic, butanoic acid structures; count carbonyl C.",
+      "sourceLimits": "Does not separately prescribe every acid–metal combination.",
+      "auditRequirementSummaries": [
+        "Four named unbranched acid structures",
+        "Displayed C=O/C–O–H and C–H bonds",
+        "Carboxyl carbon counted in name"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.36C",
+      "reference": "4.36C",
+      "pdfPage": 31,
+      "printedPage": 25,
+      "components": [
+        "2C"
+      ],
+      "sourceClassification": "general-reaction-family",
+      "sourceDecision": "Aqueous carboxylic acid reactions with metals and metal carbonates.",
+      "caseIds": [
+        "carboxylic-acid-metal",
+        "carboxylic-acid-carbonate"
+      ],
+      "noteSectionIds": [
+        "carboxylic-metal-reaction",
+        "carboxylic-carbonate-reaction"
+      ],
+      "representationDemand": "Two distinct family word equations plus balanced chosen examples.",
+      "sourceLimits": "Aqueous acid expressly required; suitable metals and carbonate/salt states need contextual qualification.",
+      "auditRequirementSummaries": [
+        "Suitable metal to salt/hydrogen",
+        "Carboxylate and magnesium charge balance",
+        "Metal carbonate to salt/water/carbon dioxide",
+        "Atom balance and distinct gas tests"
+      ],
+      "decisionFor125": "Require appropriate word/formula equation evidence for the actual studied reaction cases; structural/drawing or explanatory evidence alone is not automatically full 1.25 evidence."
+    },
+    {
+      "id": "4CH1:issue3:4.37C",
+      "reference": "4.37C",
+      "pdfPage": 31,
+      "printedPage": 25,
+      "components": [
+        "2C"
+      ],
+      "sourceClassification": "no-separately-prescribed-reaction",
+      "sourceDecision": "Vinegar contains aqueous ethanoic acid.",
+      "caseIds": [],
+      "noteSectionIds": [
+        "vinegar-solution"
+      ],
+      "representationDemand": "Mixture/composition fact, not extra named oxidation or neutralisation reaction.",
+      "sourceLimits": "No additional reaction conditions or state symbols are prescribed by this statement.",
+      "auditRequirementSummaries": [
+        "Vinegar aqueous solution containing ethanoic acid",
+        "Mixture and identification/concentration limits"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.38C",
+      "reference": "4.38C",
+      "pdfPage": 32,
+      "printedPage": 26,
+      "components": [
+        "2C"
+      ],
+      "sourceClassification": "no-separately-prescribed-reaction",
+      "sourceDecision": "Ester –C(=O)–O– group.",
+      "caseIds": [],
+      "noteSectionIds": [
+        "ester-group"
+      ],
+      "representationDemand": "Functional-group connectivity, not any two-oxygen molecule.",
+      "sourceLimits": "No additional reaction conditions or state symbols are prescribed by this statement.",
+      "auditRequirementSummaries": [
+        "Ester C(=O)–O–C connection",
+        "Difference from acid OH and oxygen valency"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.39C",
+      "reference": "4.39C",
+      "pdfPage": 32,
+      "printedPage": 26,
+      "components": [
+        "2C"
+      ],
+      "sourceClassification": "named-reaction-or-repeat-model",
+      "sourceDecision": "Specifically ethanol plus ethanoic acid forms ethyl ethanoate.",
+      "caseIds": [
+        "ethyl-ethanoate"
+      ],
+      "noteSectionIds": [
+        "ethyl-ethanoate-formation"
+      ],
+      "representationDemand": "Word and balanced structural equation; retain water and acid catalyst.",
+      "sourceLimits": "Acid catalyst specified; source row does not mandate temperature or a particular acid catalyst identity.",
+      "auditRequirementSummaries": [
+        "Ethanol and ethanoic acid give ethyl ethanoate",
+        "Acid catalyst and water product",
+        "Reversible mixture and reactant tracing"
+      ],
+      "decisionFor125": "Require appropriate word/formula equation evidence for the actual studied reaction cases; structural/drawing or explanatory evidence alone is not automatically full 1.25 evidence."
+    },
+    {
+      "id": "4CH1:issue3:4.40C",
+      "reference": "4.40C",
+      "pdfPage": 32,
+      "printedPage": 26,
+      "components": [
+        "2C"
+      ],
+      "sourceClassification": "cross-topic-skill",
+      "sourceDecision": "Draw structural/displayed ethyl ethanoate.",
+      "caseIds": [
+        "ethyl-ethanoate"
+      ],
+      "noteSectionIds": [
+        "ethyl-ethanoate-drawing"
+      ],
+      "representationDemand": "Drawing demand; molecular C4H8O2 alone insufficient and drawing does not by itself replace the reaction equation.",
+      "sourceLimits": "No additional reaction conditions or state symbols are prescribed by this statement.",
+      "auditRequirementSummaries": [
+        "Structural ethyl ethanoate connectivity",
+        "Full displayed atoms/bonds and valencies",
+        "C₄H₈O₂ atom count not unique identity"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.41C",
+      "reference": "4.41C",
+      "pdfPage": 32,
+      "printedPage": 26,
+      "components": [
+        "2C"
+      ],
+      "sourceClassification": "cross-topic-skill",
+      "sourceDecision": "Deduce ester structures from alcohol/acid and vice versa.",
+      "caseIds": [
+        "ester-structure-transfer"
+      ],
+      "noteSectionIds": [
+        "ester-naming"
+      ],
+      "representationDemand": "Full structural/displayed connectivity transfer; arbitrary examples not extra publisher-named compulsory reactions.",
+      "sourceLimits": "Reverse inference does not prescribe separate ester hydrolysis mechanism, reagent or equation.",
+      "auditRequirementSummaries": [
+        "Alcohol-derived alkyl and acid-derived alkanoate name",
+        "Structure from both named/formula reactants",
+        "Reverse structure to both starting compounds",
+        "Carbonyl counted and displayed valencies"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.42C",
+      "reference": "4.42C",
+      "pdfPage": 32,
+      "printedPage": 26,
+      "components": [
+        "2C"
+      ],
+      "sourceClassification": "no-separately-prescribed-reaction",
+      "sourceDecision": "Ester volatility, smells and uses.",
+      "caseIds": [],
+      "noteSectionIds": [
+        "ester-volatility-uses"
+      ],
+      "representationDemand": "Property/use explanation, no chemical conversion.",
+      "sourceLimits": "No additional reaction conditions or state symbols are prescribed by this statement.",
+      "auditRequirementSummaries": [
+        "Volatility and distinctive smells",
+        "Food flavouring and perfume uses",
+        "No universal safety or unique identity inference"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.43C",
+      "reference": "4.43C",
+      "pdfPage": 32,
+      "printedPage": 26,
+      "components": [
+        "2C"
+      ],
+      "sourceClassification": "general-reaction-family",
+      "sourceDecision": "Prepare an ester sample; ethyl ethanoate is an allowed example.",
+      "caseIds": [
+        "ester-preparation",
+        "ethyl-ethanoate"
+      ],
+      "noteSectionIds": [
+        "ester-practical-plan"
+      ],
+      "representationDemand": "Practical plan and product preparation; use selected ester equation.",
+      "sourceLimits": "Such as allows alternatives, while 4.39C independently requires ethyl ethanoate. No specified quantities/time/temperature here; carbonate work-up is selected-method support.",
+      "auditRequirementSummaries": [
+        "Named reactants, acid catalyst and controlled water bath",
+        "Carbonate acid neutralization and gas release",
+        "Method-specific separation/purity and supervision"
+      ],
+      "decisionFor125": "Require appropriate word/formula equation evidence for the actual studied reaction cases; structural/drawing or explanatory evidence alone is not automatically full 1.25 evidence."
+    },
+    {
+      "id": "4CH1:issue3:4.44",
+      "reference": "4.44",
+      "pdfPage": 32,
+      "printedPage": 26,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "cross-topic-skill",
+      "sourceDecision": "Many monomers join to form an addition polymer.",
+      "caseIds": [
+        "polyethene",
+        "polypropene",
+        "polychloroethene",
+        "polytetrafluoroethene"
+      ],
+      "noteSectionIds": [
+        "addition-monomers"
+      ],
+      "representationDemand": "Polymer formation concept; generic word equation does not replace required repeat drawings.",
+      "sourceLimits": "No eliminated water in these addition models; no required mechanism or specific industrial conditions.",
+      "auditRequirementSummaries": [
+        "Many small monomers joined in a polymer",
+        "C=C opening and preserved atoms in own examples",
+        "Repeat boundary and no water eliminated"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.45",
+      "reference": "4.45",
+      "pdfPage": 32,
+      "printedPage": 26,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "named-reaction-or-repeat-model",
+      "sourceDecision": "Four explicitly named addition-polymer repeat units.",
+      "caseIds": [
+        "polyethene",
+        "polypropene",
+        "polychloroethene",
+        "polytetrafluoroethene"
+      ],
+      "noteSectionIds": [
+        "addition-repeat-drawings"
+      ],
+      "representationDemand": "Required full repeat drawings with substituents, brackets, n and outward bonds; equation shorthand optional supporting representation under 1.25.",
+      "sourceLimits": "Ideal repeat representation, not finite isolated molecule; no mandated polymerisation conditions.",
+      "auditRequirementSummaries": [
+        "Polyethene repeat and outward bonds",
+        "Polypropene methyl branch and hydrogen count",
+        "Polychloroethene chlorine retained",
+        "PTFE four fluorines retained",
+        "Displayed every bond, brackets and outside n"
+      ],
+      "decisionFor125": "Require appropriate word/formula equation evidence for the actual studied reaction cases; structural/drawing or explanatory evidence alone is not automatically full 1.25 evidence."
+    },
+    {
+      "id": "4CH1:issue3:4.46",
+      "reference": "4.46",
+      "pdfPage": 32,
+      "printedPage": 26,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "cross-topic-skill",
+      "sourceDecision": "Monomer/repeat-unit deduction in both directions.",
+      "caseIds": [
+        "polyethene",
+        "polypropene",
+        "polychloroethene",
+        "polytetrafluoroethene"
+      ],
+      "noteSectionIds": [
+        "recover-addition-monomer"
+      ],
+      "representationDemand": "Structure conversion task reuses addition; recovering monomer on paper is not compulsory chemical depolymerisation.",
+      "sourceLimits": "Retain side groups; no universal inverse rule for all polymer types.",
+      "auditRequirementSummaries": [
+        "Repeat to double-bond monomer",
+        "Monomer to chain with preserved side groups",
+        "Backbone distinguished from branch and scope"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.47",
+      "reference": "4.47",
+      "pdfPage": 32,
+      "printedPage": 26,
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceClassification": "cross-topic-skill",
+      "sourceDecision": "Addition-polymer disposal: inertness/nonbiodegradation/toxic combustion gases.",
+      "caseIds": [
+        "polymer-disposal"
+      ],
+      "noteSectionIds": [
+        "addition-disposal"
+      ],
+      "representationDemand": "Explanatory products depend on composition; no individually prescribed complete burning equation for each polymer.",
+      "sourceLimits": "Do not assign chlorine-containing gases to chlorine-free polymers; incomplete burning can produce CO.",
+      "auditRequirementSummaries": [
+        "Inertness and inability to biodegrade in required examples",
+        "Persistence versus physical fragmentation",
+        "Toxic burning products depend on composition/conditions"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    },
+    {
+      "id": "4CH1:issue3:4.48C",
+      "reference": "4.48C",
+      "pdfPage": 32,
+      "printedPage": 26,
+      "components": [
+        "2C"
+      ],
+      "sourceClassification": "general-reaction-family",
+      "sourceDecision": "Diacid plus diol forms polyester and water.",
+      "caseIds": [
+        "polyester-general"
+      ],
+      "noteSectionIds": [
+        "polyester-condensation"
+      ],
+      "representationDemand": "Word and connectivity models; distinguish addition from condensation.",
+      "sourceLimits": "Water per ester link; no numeric process conditions prescribed.",
+      "auditRequirementSummaries": [
+        "Diacid and diol two functional ends",
+        "Polyester ester links and water eliminated",
+        "Atom fragments and difference from addition"
+      ],
+      "decisionFor125": "Require appropriate word/formula equation evidence for the actual studied reaction cases; structural/drawing or explanatory evidence alone is not automatically full 1.25 evidence."
+    },
+    {
+      "id": "4CH1:issue3:4.49C",
+      "reference": "4.49C",
+      "pdfPage": 32,
+      "printedPage": 26,
+      "components": [
+        "2C"
+      ],
+      "sourceClassification": "named-reaction-or-repeat-model",
+      "sourceDecision": "Draw polyester repeat from monomers, including named ethanedioic acid and ethanediol pair.",
+      "caseIds": [
+        "polyester-ethanedioic-ethanediol",
+        "polyester-general"
+      ],
+      "noteSectionIds": [
+        "polyester-repeat-drawing"
+      ],
+      "representationDemand": "Source explicitly prints a structural polymer reaction; full displayed/structural repeat required.",
+      "sourceLimits": "Source 2nH2O ideal repeat shorthand differs from 2n−1 waters for one finite open chain of n monomers of each type.",
+      "auditRequirementSummaries": [
+        "Required ethanedioic acid/ethanediol monomers",
+        "Structural and full displayed repeat connections",
+        "Two carbonyls and correct boundary link",
+        "Water per ester link and repeat/end-group distinction"
+      ],
+      "decisionFor125": "Require appropriate word/formula equation evidence for the actual studied reaction cases; structural/drawing or explanatory evidence alone is not automatically full 1.25 evidence."
+    },
+    {
+      "id": "4CH1:issue3:4.50C",
+      "reference": "4.50C",
+      "pdfPage": 32,
+      "printedPage": 26,
+      "components": [
+        "2C"
+      ],
+      "sourceClassification": "no-separately-prescribed-reaction",
+      "sourceDecision": "Some biopolyesters are biodegradable.",
+      "caseIds": [],
+      "noteSectionIds": [
+        "biopolyester-limits"
+      ],
+      "representationDemand": "Qualified material-property statement; no exact biodegradation/hydrolysis reaction equation prescribed.",
+      "sourceLimits": "Some, not all; no specified organism, rate, conditions or monomer-product equation.",
+      "auditRequirementSummaries": [
+        "Some biopolyesters are biodegradable",
+        "Conditions and no universal rate/environment inference",
+        "Bio-derived raw material distinct from biodegradation"
+      ],
+      "decisionFor125": "Retain this source requirement, but do not invent a separate compulsory reaction merely to allocate a 1.25 case."
+    }
+  ],
+  "reactionCases": [
+    {
+      "id": "hydrocarbon-complete",
+      "sourceDemand": "required-general-family",
+      "wordModel": "hydrocarbon + oxygen → carbon dioxide + water",
+      "formulaModel": "C3H8 + 5O2 → 3CO2 + 4H2O",
+      "conditions": "Sufficient oxygen; burning in air.",
+      "stateSymbolLimits": "O2 and CO2 gases; fuel state depends on chosen hydrocarbon/temperature. H2O(g) near flame versus H2O(l) after cooling.",
+      "representationLimits": "Propane is an authored illustration, not a uniquely prescribed named fuel. Preserve coefficients versus subscripts."
+    },
+    {
+      "id": "hydrocarbon-incomplete-co",
+      "sourceDemand": "required-general-family",
+      "wordModel": "hydrocarbon + oxygen → carbon monoxide + water (limiting model)",
+      "formulaModel": "2CH4 + 3O2 → 2CO + 4H2O",
+      "conditions": "Insufficient oxygen/poor mixing.",
+      "stateSymbolLimits": "CO gas; water state depends on temperature.",
+      "representationLimits": "One possible product set; real incomplete products can be mixtures including CO2, carbon and water. Methane is illustrative."
+    },
+    {
+      "id": "hydrocarbon-incomplete-carbon",
+      "sourceDemand": "required-general-family",
+      "wordModel": "hydrocarbon + oxygen → carbon + water (limiting model)",
+      "formulaModel": "CH4 + O2 → C + 2H2O",
+      "conditions": "Insufficient oxygen/poor mixing.",
+      "stateSymbolLimits": "Carbon soot solid; water state depends on temperature.",
+      "representationLimits": "Separate carbon model needed to avoid treating CO as the sole incomplete product; not a universal flame equation."
+    },
+    {
+      "id": "engine-nitrogen-oxides",
+      "sourceDemand": "required-general-family",
+      "wordModel": "nitrogen + oxygen → oxides of nitrogen",
+      "formulaModel": "N2 + O2 → 2NO (illustrative initial oxide model)",
+      "conditions": "High car-engine temperature; both reactants from air.",
+      "stateSymbolLimits": "Gas-phase model at engine temperature.",
+      "representationLimits": "Source requires oxides of nitrogen, not a separately enumerated NO/NO2 equation sequence. An NO equation is a justified example, not the complete exhaust."
+    },
+    {
+      "id": "sulfur-impurity-oxidation",
+      "sourceDemand": "required-general-family",
+      "wordModel": "sulfur-containing impurity + oxygen → sulfur dioxide (and other products according to impurity)",
+      "formulaModel": "S + O2 → SO2 (elemental-sulfur model)",
+      "conditions": "Combustion of sulfur-bearing fuel impurities.",
+      "stateSymbolLimits": "O2/SO2 gases in model; S(s) only if explicitly using the elemental standard-state illustrative starting material.",
+      "representationLimits": "Do not invent elemental sulfur as the composition of every impurity or put sulfur in a pure hydrocarbon formula."
+    },
+    {
+      "id": "acid-rain-formation",
+      "sourceDemand": "required-explanation-no-unique-equation",
+      "wordModel": "sulfur dioxide/nitrogen oxides undergo atmospheric and water reactions producing acidic substances",
+      "formulaModel": null,
+      "conditions": "Atmospheric reactions involving water and, where applicable, oxidation.",
+      "stateSymbolLimits": "Pollutant gases and dissolved acidic species; no unique exact species/state sequence specified.",
+      "representationLimits": "No required detailed atmospheric mechanism, one universal oxide-plus-water equation, or fixed acid mixture is prescribed in 4.16."
+    },
+    {
+      "id": "cracking",
+      "sourceDemand": "required-general-family",
+      "wordModel": "long-chain alkane → shorter-chain alkane(s) + alkene(s)",
+      "formulaModel": "C12H26 → C8H18 + 2C2H4 (one illustrative atom-balanced product set)",
+      "conditions": "Silica or alumina catalyst; 600–700 °C.",
+      "stateSymbolLimits": "Use vapour-phase feed at hot catalyst if a process equation requires states; ambient alkane states are not automatically process states.",
+      "representationLimits": "Source names classes/conditions, not this feed/product combination. Several valid product sets exist; no unique isomer follows from formula alone."
+    },
+    {
+      "id": "alkane-monosubstitution",
+      "sourceDemand": "required-general-family",
+      "wordModel": "alkane + halogen → monohalogenoalkane + hydrogen halide",
+      "formulaModel": "CH4 + Cl2 → CH3Cl + HCl; CH4 + Br2 → CH3Br + HBr (illustrations)",
+      "conditions": "Ultraviolet radiation; limited to mono-substitution.",
+      "stateSymbolLimits": "State of each chosen halogen/fuel depends on temperature and physical setup; do not infer all reactants aqueous.",
+      "representationLimits": "Mechanisms explicitly not required. Methane/chlorine is an example, not the only allowed pair. Larger unsymmetrical alkanes can yield positional products; further substitution is outside required scope, not impossible."
+    },
+    {
+      "id": "alkene-bromine-addition",
+      "sourceDemand": "required-general-family",
+      "wordModel": "alkene + bromine → dibromoalkane",
+      "formulaModel": "CH2=CH2 + Br2 → CH2BrCH2Br (ethene illustration)",
+      "conditions": "Bromine adds across C=C; UV is not the required initiation condition for this addition.",
+      "stateSymbolLimits": "Br2(aq) when explicitly bromine water; pure Br2(l) is a different reagent-state statement. Organic product phase depends on actual setup.",
+      "representationLimits": "Preserve skeleton and place one Br on each original double-bond carbon; no HBr in prescribed addition model. Aqueous test is not proof of isolating pure dibromo product. No mechanism or E/Z required."
+    },
+    {
+      "id": "bromine-water-comparison",
+      "sourceDemand": "required-test-reuse",
+      "wordModel": "alkene decolourises bromine water; alkane comparison retains colour under suitable non-UV conditions",
+      "formulaModel": "Reuse alkene-bromine-addition model; no separate alkane reaction equation for a negative test.",
+      "conditions": "Matched test without UV/strong sunlight; orange/brown to colourless for alkene.",
+      "stateSymbolLimits": "Bromine water is aqueous; phase transfer/excess reagent affect observed colour.",
+      "representationLimits": "This is an observation/comparison demand. Do not assert every unknown that decolourises bromine is uniquely an alkene or force a no-reaction into a balanced product equation."
+    },
+    {
+      "id": "ethanol-combustion",
+      "sourceDemand": "required-named-route",
+      "wordModel": "ethanol + oxygen → carbon dioxide + water",
+      "formulaModel": "C2H5OH + 3O2 → 2CO2 + 3H2O",
+      "conditions": "Complete combustion in air or oxygen.",
+      "stateSymbolLimits": "Ethanol(l) for a liquid-fuel starting model; O2(g), CO2(g); water(g) hot or (l) after cooling as stated.",
+      "representationLimits": "Include oxygen already present in ethanol; acid is not the complete-combustion product."
+    },
+    {
+      "id": "ethanol-microbial-oxidation",
+      "sourceDemand": "required-named-route",
+      "wordModel": "ethanol + oxygen → ethanoic acid + water",
+      "formulaModel": "C2H5OH + O2 → CH3COOH + H2O",
+      "conditions": "Oxygen from air with suitable microbial oxidation.",
+      "stateSymbolLimits": "In an aqueous biological mixture ethanol/ethanoic acid may be (aq), O2(g) supplied from air and H2O(l); choose states from described setup.",
+      "representationLimits": "Different starting material, oxygen condition and product from anaerobic glucose fermentation. Source does not prescribe a named organism or mechanism."
+    },
+    {
+      "id": "ethanol-dichromate-oxidation",
+      "sourceDemand": "required-named-route",
+      "wordModel": "ethanol + oxidising agent → ethanoic acid + water",
+      "formulaModel": "CH3CH2OH + 2[O] → CH3COOH + H2O (oxidising-equivalent shorthand)",
+      "conditions": "Heat with potassium dichromate(VI) in dilute sulfuric acid; acid endpoint.",
+      "stateSymbolLimits": "[O] has no ordinary reagent state symbol; it is not a bottle of monatomic oxygen. In a full reagent equation specify actual oxidant and resulting species, not [O](g).",
+      "representationLimits": "Shorthand balances organic O equivalents but is not a full K/Cr/S/H reagent equation and cannot alone discharge every full-formula-equation demand of 1.25. No compulsory aldehyde isolation, Cr half-equation or mechanism is prescribed by 4.31C."
+    },
+    {
+      "id": "ethene-hydration",
+      "sourceDemand": "required-named-route",
+      "wordModel": "ethene + steam → ethanol",
+      "formulaModel": "C2H4 + H2O → C2H5OH (simplified formation; equilibrium representation also appropriate)",
+      "conditions": "Phosphoric acid catalyst; about 300 °C and about 60–70 atm.",
+      "stateSymbolLimits": "Ethene(g), steam(g), ethanol(g) in hot process model; condensation later gives ethanol(l).",
+      "representationLimits": "Catalyst is a condition, not consumed reactant; no complete single-pass conversion claim. Do not replace industrial states by room-temperature water(l) while calling it steam."
+    },
+    {
+      "id": "glucose-fermentation",
+      "sourceDemand": "required-named-route",
+      "wordModel": "glucose → ethanol + carbon dioxide",
+      "formulaModel": "C6H12O6 → 2C2H5OH + 2CO2",
+      "conditions": "Enzymes in yeast; absence of air; optimum about 30 °C.",
+      "stateSymbolLimits": "Typical aqueous fermentation: glucose(aq), ethanol(aq), CO2(g). Product is an aqueous mixture, not automatically pure ethanol(l).",
+      "representationLimits": "No-air condition does not mean sealing a gas-producing vessel. Optimum/denaturation reasoning in 4.33C reuses route; no new separately required equation."
+    },
+    {
+      "id": "carboxylic-acid-metal",
+      "sourceDemand": "required-general-family",
+      "wordModel": "carboxylic acid + suitable metal → carboxylate salt + hydrogen",
+      "formulaModel": "2CH3COOH + Mg → Mg(CH3COO)2 + H2 (illustration)",
+      "conditions": "Source explicitly aqueous carboxylic acid; suitable reacting metal.",
+      "stateSymbolLimits": "Acid(aq), metal(s), H2(g); salt(aq) only for a soluble salt under stated conditions.",
+      "representationLimits": "No specifically named metal/acid pair in 4.36C. Magnesium/ethanoic acid illustrates charge/atom balance; do not claim copper reacts identically."
+    },
+    {
+      "id": "carboxylic-acid-carbonate",
+      "sourceDemand": "required-general-family",
+      "wordModel": "carboxylic acid + metal carbonate → carboxylate salt + water + carbon dioxide",
+      "formulaModel": "2CH3COOH + Na2CO3 → 2CH3COONa + H2O + CO2 (illustration)",
+      "conditions": "Aqueous carboxylic acid with metal carbonate.",
+      "stateSymbolLimits": "Acid(aq); carbonate(s) or (aq) as supplied; soluble salt(aq), H2O(l), CO2(g).",
+      "representationLimits": "No particular carbonate is mandated. Retain carbonate carbon in CO2 and acid carbon in salt; bubbles alone do not distinguish H2 and CO2."
+    },
+    {
+      "id": "ethyl-ethanoate",
+      "sourceDemand": "required-named-route",
+      "wordModel": "ethanol + ethanoic acid ⇌ ethyl ethanoate + water",
+      "formulaModel": "CH3CH2OH + CH3COOH ⇌ CH3COOCH2CH3 + H2O",
+      "conditions": "Acid catalyst. Controlled warming and concentrated sulfuric acid belong to the selected practical example, not an extra specified universal temperature/acid identity in 4.39C.",
+      "stateSymbolLimits": "For an explicitly neat liquid-reactant model use (l) for the organic reagents/products and water; aqueous/diluted work-up must reflect its actual phases.",
+      "representationLimits": "Water is a product; acid catalyst not consumed. [O] is inappropriate: this is esterification, not oxidation. Structural equation preserves connectivity; molecular C4H8O2 alone does not identify ester isomer."
+    },
+    {
+      "id": "ester-structure-transfer",
+      "sourceDemand": "required-general-structure-family",
+      "wordModel": "alcohol + carboxylic acid ⇌ corresponding ester + water",
+      "formulaModel": "RCOOH + R′OH ⇌ RCOOR′ + H2O (connectivity model)",
+      "conditions": "Acid-catalysed ester formation context from 4.39C; 4.41C itself requests structure deduction in both directions.",
+      "stateSymbolLimits": "States depend on selected substances/setup; R/R′ are groups, not stand-alone substances with states.",
+      "representationLimits": "Drawing required: retain carbonyl and alcohol-derived oxygen-side group; reverse inference identifies starting compounds, not a new compulsory hydrolysis procedure. Arbitrary named esters used in lessons are examples."
+    },
+    {
+      "id": "ester-preparation",
+      "sourceDemand": "required-practical-family",
+      "wordModel": "Prepare a sample of an ester, such as ethyl ethanoate",
+      "formulaModel": "Reuse ethyl-ethanoate or chosen ester structure model.",
+      "conditions": "Selected supervised practical uses controlled water bath and concentrated sulfuric acid catalyst; source row gives no mandatory exact quantities, time or temperature.",
+      "stateSymbolLimits": "States and carbonate work-up depend on selected method.",
+      "representationLimits": "Ethyl ethanoate explicitly permitted example here and required under 4.39C. Carbonate wash neutralisation is method-dependent cross-topic chemistry, not a new separately named Organic reaction; smell/layer does not prove pure dry ester."
+    },
+    {
+      "id": "polyethene",
+      "sourceDemand": "required-named-repeat-model",
+      "wordModel": "ethene → poly(ethene)",
+      "formulaModel": "n CH2=CH2 → [–CH2–CH2–]n",
+      "conditions": "No specific industrial catalyst/temperature/pressure prescribed by 4.44–4.46.",
+      "stateSymbolLimits": "Do not invent universal monomer/polymer reaction states; a structural repeat diagram can omit states while a contextual equation supplies them.",
+      "representationLimits": "Full displayed repeat, brackets, outward bonds and n required. Open C=C, retain substituents, no small molecule eliminated. Ideal repeat shorthand omits finite-chain end groups/initiator; it is not a closed isolated molecule."
+    },
+    {
+      "id": "polypropene",
+      "sourceDemand": "required-named-repeat-model",
+      "wordModel": "propene → poly(propene)",
+      "formulaModel": "n CH2=CHCH3 → [–CH2–CH(CH3)–]n",
+      "conditions": "No specific industrial catalyst/temperature/pressure prescribed by 4.44–4.46.",
+      "stateSymbolLimits": "Do not invent universal monomer/polymer reaction states; a structural repeat diagram can omit states while a contextual equation supplies them.",
+      "representationLimits": "Full displayed repeat, brackets, outward bonds and n required. Open C=C, retain substituents, no small molecule eliminated. Ideal repeat shorthand omits finite-chain end groups/initiator; it is not a closed isolated molecule."
+    },
+    {
+      "id": "polychloroethene",
+      "sourceDemand": "required-named-repeat-model",
+      "wordModel": "chloroethene → poly(chloroethene)",
+      "formulaModel": "n CH2=CHCl → [–CH2–CHCl–]n",
+      "conditions": "No specific industrial catalyst/temperature/pressure prescribed by 4.44–4.46.",
+      "stateSymbolLimits": "Do not invent universal monomer/polymer reaction states; a structural repeat diagram can omit states while a contextual equation supplies them.",
+      "representationLimits": "Full displayed repeat, brackets, outward bonds and n required. Open C=C, retain substituents, no small molecule eliminated. Ideal repeat shorthand omits finite-chain end groups/initiator; it is not a closed isolated molecule."
+    },
+    {
+      "id": "polytetrafluoroethene",
+      "sourceDemand": "required-named-repeat-model",
+      "wordModel": "tetrafluoroethene → poly(tetrafluoroethene)",
+      "formulaModel": "n CF2=CF2 → [–CF2–CF2–]n",
+      "conditions": "No specific industrial catalyst/temperature/pressure prescribed by 4.44–4.46.",
+      "stateSymbolLimits": "Do not invent universal monomer/polymer reaction states; a structural repeat diagram can omit states while a contextual equation supplies them.",
+      "representationLimits": "Full displayed repeat, brackets, outward bonds and n required. Open C=C, retain substituents, no small molecule eliminated. Ideal repeat shorthand omits finite-chain end groups/initiator; it is not a closed isolated molecule."
+    },
+    {
+      "id": "polymer-disposal",
+      "sourceDemand": "required-explanation-no-unique-equation",
+      "wordModel": "Burning an addition polymer can produce toxic gases depending on composition/conditions",
+      "formulaModel": null,
+      "conditions": "Combustion and incomplete combustion; composition-dependent.",
+      "stateSymbolLimits": "CO(g) possible in incomplete combustion; HCl(g) possible from chlorine-containing polymers only.",
+      "representationLimits": "4.47 prescribes disposal explanation, not one exact balanced incineration equation per polymer or compulsory detailed decomposition mechanisms. CO/HCl are explanatory examples in notes."
+    },
+    {
+      "id": "polyester-general",
+      "sourceDemand": "required-general-family",
+      "wordModel": "dicarboxylic acid + diol → polyester + water",
+      "formulaModel": "n HOOC–R–COOH + n HO–R′–OH → [–C(=O)–R–C(=O)–O–R′–O–]n + 2n H2O (ideal repeat shorthand)",
+      "conditions": "No specific catalyst, temperature or pressure prescribed in 4.48C.",
+      "stateSymbolLimits": "States depend on monomers and process; repeat schematic is a connectivity model.",
+      "representationLimits": "Each ester linkage releases one water. The 2n model omits finite ends; a single unclosed chain from n diacid plus n diol has 2n−1 ester links/waters if all 2n monomers are connected without cycles."
+    },
+    {
+      "id": "polyester-ethanedioic-ethanediol",
+      "sourceDemand": "required-named-repeat-model",
+      "wordModel": "ethanedioic acid + ethanediol → polyester + water",
+      "formulaModel": "n HOOC–COOH + n HO–CH2–CH2–OH → [–C(=O)–C(=O)–O–CH2–CH2–O–]n + 2n H2O (source repeat shorthand)",
+      "conditions": "No numeric reaction conditions prescribed in 4.49C.",
+      "stateSymbolLimits": "Source diagram omits states. Do not fabricate process states or exact finite end-group composition.",
+      "representationLimits": "Source explicitly names pair and prints reaction; preserve two C=O groups and both bracket continuation bonds. Repeat formula C4H4O4; 2n waters applies to source ideal repeating representation, not exact finite open-chain bookkeeping."
+    }
+  ],
+  "remainingRootChecks": [
+    "Reconcile actual chapter word-equation/formula-equation/state-symbol teaching and practice evidence against this source scope; current source identity completion flags do not by themselves certify 1.25.",
+    "Ensure 1.25 covers unfamiliar supplied reactions and state symbols in addition to these studied Organic cases; those are outside this bounded source inventory.",
+    "If full dichromate reagent equations are added, independently verify exact species, ionic charge, acid balance and states. Do not present [O] shorthand as a complete chromium/potassium/sulfate balance.",
+    "Keep structure drawing gates for 4.40C, 4.41C, 4.45, 4.46 and 4.49C alongside any equation evidence.",
+    "Review every selected representative family example as an example, not a falsely enumerated publisher-prescribed named reaction."
+  ]
+}
