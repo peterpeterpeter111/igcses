@@ -17,6 +17,8 @@ from english_followup import load_followup, public_summary, PUBLIC_SUMMARY
 from english_levels import load_levels, levels_public_summary
 from english_processing import load_november_processing, november_public_summary
 from english_paper_io import load_paper, public_summary as english_paper_summary, SUMMARY as ENGLISH_PAPER_SUMMARY
+from chemistry_report import load_report as load_chemistry_report, public_summary as chemistry_report_summary, SUMMARY as CHEMISTRY_REPORT_SUMMARY
+from chemistry_applicability import load_applicability, public_summary as applicability_summary, SUMMARY as APPLICABILITY_SUMMARY
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -137,6 +139,30 @@ def audit(root=ROOT):
     except (ValueError, KeyError, StopIteration, FileNotFoundError) as exc:
         errors.append({'kind': 'english-may-contract', 'note': str(exc)})
     extractions = [read_extraction(p) for p in sorted((root / 'research/extractions').glob('*.json'))]
+    chemistry_report = None
+    try:
+        chemistry = next(e for e in extractions if e['qualification'] == '4CH1')
+        chemistry_report = load_chemistry_report(root, chemistry)
+        applicability = load_applicability(root, chemistry)
+        if read(APPLICABILITY_SUMMARY) != applicability_summary(applicability):
+            errors.append({'kind': 'chemistry-applicability-summary-mismatch'})
+        if chemistry_report:
+            if read(CHEMISTRY_REPORT_SUMMARY) != chemistry_report_summary(chemistry_report):
+                errors.append({'kind': 'chemistry-report-summary-mismatch'})
+            report = chemistry_report['document']
+            doc = next(d for d in tables['documents'] if d['document_id'] == report['documentId'])
+            if (doc['sha256'], doc['page_count'], doc['publication_code']) != (report['sha256'], '83', report['publicationCode']):
+                errors.append({'kind': 'chemistry-report-document-mismatch'})
+            paper = next(p for p in tables['papers'] if p['paper_id'] == chemistry['paperId'])
+            if json.loads(paper['examiner_report_ids_json']) != [report['documentId']] or paper['report_status'] != 'selected-observations-reviewed' or paper['stage'] == 'processed':
+                errors.append({'kind': 'chemistry-report-paper-status-mismatch'})
+            for task in chemistry['tasks']:
+                row = next(t for t in tables['tasks'] if t['task_id'] == task['taskId'])
+                expected = [o for o in chemistry_report['observations'] if o['taskId'] == task['taskId']]
+                if json.loads(row['report_refs_json']) != expected:
+                    errors.append({'kind': 'chemistry-report-task-link-mismatch', 'id': task['taskId']})
+    except (ValueError, KeyError, StopIteration, FileNotFoundError) as exc:
+        errors.append({'kind': 'chemistry-source-review-contract', 'note': str(exc)})
     inventories = [json.loads(p.read_text()) for p in sorted((root / 'research/syllabus').glob('*.json'))]
     notes = [read_note(p) for p in sorted((root / 'content/notes').glob('*.json'))]
     audits = [json.loads(p.read_text()) for p in sorted((root / 'research/curriculum-audits').glob('*.json'))]
@@ -161,6 +187,8 @@ def audit(root=ROOT):
     if english_paper and english_paper.get('_processingReview'):
         report = english_paper['_processingReview']['examinerReport']
         expected_documents.append({'id': report['documentId'], 'sha256': report['sha256']})
+    if chemistry_report:
+        expected_documents.append({'id': chemistry_report['document']['documentId'], 'sha256': chemistry_report['document']['sha256']})
     for paper in batch['records']:
         for kind in ['questionPaper', 'markScheme']:
             expected_documents.append({'id': paper['paperId'] + ':' + kind, 'sha256': paper[kind]['sha256']})

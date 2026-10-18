@@ -1,0 +1,4172 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-19",
+  "paperId": "4CH1-2024-June-1-standard",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Current Issue3 task-demand review only; not historical-amendment, processed-paper, calibrated-family or active-template certification.",
+  "workflowRead": "research/EXTRACTION_WORKFLOW.md",
+  "processedGateInterpretation": "This supplies applicability decisions only. Identity, full source-page accounting, complete analyses, totals, versioned family links/exclusions and review gates remain separate. Runtime-active families not required for processed status.",
+  "specification": {
+    "path": "work/sources/4CH1.pdf",
+    "sha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+    "issue": "Issue3 September2024",
+    "auditedIdentitiesLoaded": 182,
+    "access": "Read official retained PDF text17–20,27–30,32,34 and assessment context13–14/33–35. Visually checked retained current renders25,30,34; earlier22–26 review and182point audits support other mappings. Read all56 extracted demands/criteria/mappings; targeted raw QP14,22–23 text. This is not a new full paper/scheme visual audit."
+  },
+  "sourcePartitions": [
+    {
+      "path": "research/extractions/4CH1-2024-June-1-standard/Q1.json",
+      "sha256": "13a11c0ce991f6a3c6595e6bf6b578d4339931c735386de5c37c96035966843d"
+    },
+    {
+      "path": "research/extractions/4CH1-2024-June-1-standard/Q2.json",
+      "sha256": "f89cd94c88bdd7e96efb7443af0ae497caf8e41e8c7733808848332876f3fece"
+    },
+    {
+      "path": "research/extractions/4CH1-2024-June-1-standard/Q3.json",
+      "sha256": "389ea92459ea6f8fef904822f52fbfa1211ba9a4511cb13c3194aa4491aff64d"
+    },
+    {
+      "path": "research/extractions/4CH1-2024-June-1-standard/Q4.json",
+      "sha256": "2060cd915e2b7940c00a009570398367506a5c28b0a584846933436f55da898e"
+    },
+    {
+      "path": "research/extractions/4CH1-2024-June-1-standard/Q5.json",
+      "sha256": "5904852262623446245f499173739e7cba855de05d016466b4255154694cf728"
+    },
+    {
+      "path": "research/extractions/4CH1-2024-June-1-standard/Q6.json",
+      "sha256": "00fd410d4879e23733211e6f62a509654a7c5c5adbb71b1736899aa31daafbec"
+    },
+    {
+      "path": "research/extractions/4CH1-2024-June-1-standard/Q7.json",
+      "sha256": "ddce96465ce290ea1c59763e2eb301bf74bab5e025a65b4d69ddcda9c320e490"
+    },
+    {
+      "path": "research/extractions/4CH1-2024-June-1-standard/Q8.json",
+      "sha256": "00eec1aabf52993ad889a39c9fe05a062e891a8212c24f8fcf51287da95ad675"
+    },
+    {
+      "path": "research/extractions/4CH1-2024-June-1-standard/Q9.json",
+      "sha256": "c3f9a4aa630b5f2e59e75a03057967c778bdb268760149ef776bdeb55a728fda"
+    },
+    {
+      "path": "research/extractions/4CH1-2024-June-1-standard/Q10.json",
+      "sha256": "7ca68ebf27aeb7cc4b3661e8a542ddc9ce3da33cc0d16102e92ed709da957d47"
+    }
+  ],
+  "counts": {
+    "leafTasks": 56,
+    "marks": 110,
+    "decisions": {
+      "current-partial-point-demand": 53,
+      "current-skill-only": 1,
+      "contextual-extension-not-explicit-numbered-demand": 1,
+      "contextual-source-exception-partial-skill-overlap": 1
+    }
+  },
+  "tasks": [
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q1.a",
+      "questionPath": "1.a",
+      "originalMarks": 5,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:1.20",
+          "role": "partial-current-point-demand",
+          "reviewReason": "The conductor/basic-oxide rows use two metal-classification properties.",
+          "auditRef": "research/curriculum-audits/4CH1-atoms-and-periodic-table.json",
+          "pdfPage": 18,
+          "printedPage": 12,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Use electrical conductivity as classification evidence with appropriate exceptions.",
+            "Use acid-base character of oxides as classification evidence."
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:2.5",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Only the room-temperature state of one listed halogen is assessed.",
+          "auditRef": "research/curriculum-audits/4CH1-halogen-physical.json",
+          "pdfPage": 22,
+          "printedPage": 16,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Chlorine colour and state",
+            "Bromine colour and state",
+            "Iodine solid versus vapour appearance",
+            "Melting/boiling trend and room-temperature phases",
+            "Physical-property trend distinguished from chemical reactivity"
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:1.49",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Giant covalent structure is identified; its melting/boiling explanation is not assessed.",
+          "auditRef": "research/curriculum-audits/4CH1-bonding.json",
+          "pdfPage": 20,
+          "printedPage": 14,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Extensive strong covalent network and energy requirement."
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:4.44",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Identify the listed addition-polymer monomer; full joining/structure demand is not assessed.",
+          "auditRef": "research/curriculum-audits/4CH1-organic-families-polymers.json",
+          "pdfPage": 32,
+          "printedPage": 26,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Many small monomers joined in a polymer",
+            "C=C opening and preserved atoms in own examples",
+            "Repeat boundary and no water eliminated"
+          ]
+        }
+      ],
+      "independentReasoning": "Five independent rows sample four content areas; repeated lithium allowed. No whole-point completion inferred.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            18,
+            20,
+            22,
+            32
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            3
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            4
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q1.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q1.b",
+      "questionPath": "1.b",
+      "originalMarks": 2,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:2.44",
+          "role": "partial-current-point-demand",
+          "reviewReason": "One specified gas-test description is assessed, with source-specific alternatives requiring calibration.",
+          "auditRef": "research/curriculum-audits/4CH1-chemical-tests.json",
+          "pdfPage": 26,
+          "printedPage": 20,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Hydrogen lighted-splint pop versus oxygen glowing-splint relight",
+            "CO₂ limewater cloudiness and precipitate",
+            "Ammonia damp red litmus turns blue",
+            "Chlorine damp litmus bleaching white",
+            "Test conditions, sequence and inference limits"
+          ]
+        }
+      ],
+      "independentReasoning": "Current chlorine test, but red-to-blue-to-white is only a source one-mark concession; source rejection of iodide is not a chemical prohibition on its oxidation.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            26
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            3
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            4
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q1.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q2.a.i",
+      "questionPath": "2.a.i",
+      "originalMarks": 1,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:2.15",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Infer a ranking from water and dilute-acid observations.",
+          "auditRef": "research/curriculum-audits/4CH1-reactivity-rust-redox.json",
+          "pdfPage": 23,
+          "printedPage": 17,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Cold-water product and rate evidence",
+            "Steam versus cold-water conditions",
+            "Dilute hydrochloric-acid salt/hydrogen pattern",
+            "Dilute sulfuric-acid salt/hydrogen pattern",
+            "Fair comparisons, passivation and negative-evidence limits"
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Rank P,Q,R,S using the supplied observations. — matches the verified current clauses listed below. Infer a ranking from water and dilute-acid observations. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            23
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            4
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            5
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q2.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q2.a.ii",
+      "questionPath": "2.a.ii",
+      "originalMarks": 1,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:2.17",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Known zinc reactivity supports identifying its anonymous table row.",
+          "auditRef": "research/curriculum-audits/4CH1-reactivity-rust-redox.json",
+          "pdfPage": 23,
+          "printedPage": 17,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Exact descending eleven-metal order",
+            "Using relative positions for predictions",
+            "Hydrogen reference and table-context limitations"
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:2.15",
+          "role": "additional-supporting-context",
+          "auditRef": "research/curriculum-audits/4CH1-reactivity-rust-redox.json",
+          "pdfPage": 23,
+          "printedPage": 17,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Cold-water product and rate evidence",
+            "Steam versus cold-water conditions",
+            "Dilute hydrochloric-acid salt/hydrogen pattern",
+            "Dilute sulfuric-acid salt/hydrogen pattern",
+            "Fair comparisons, passivation and negative-evidence limits"
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Select the letter consistent with zinc. — matches the verified current clauses listed below. Known zinc reactivity supports identifying its anonymous table row. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            23
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            4
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            5
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q2.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q2.a.iii",
+      "questionPath": "2.a.iii",
+      "originalMarks": 1,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:1.25",
+          "role": "partial-current-point-demand",
+          "reviewReason": "The word equation is demanded; a balanced symbol equivalent is a source concession.",
+          "auditRef": "research/curriculum-audits/4CH1-formulae-and-calculations.json",
+          "pdfPage": 19,
+          "printedPage": 13,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Word and formula translation.",
+            "Atom conservation through coefficients.",
+            "State symbols from stated conditions.",
+            "Use unfamiliar supplied reaction identities with sufficient formula and state information."
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:2.37",
+          "role": "additional-supporting-context",
+          "auditRef": "research/curriculum-audits/4CH1-acids-salts.json",
+          "pdfPage": 25,
+          "printedPage": 19,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "HCl/H₂SO₄ metal salt and hydrogen with conditions",
+            "Nitric acid–metal exclusion",
+            "Oxide/hydroxide reactions with all three acids",
+            "Carbonate salt/water/CO₂ with all three acids",
+            "Salt anion and metal charge with balanced examples"
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Write the aluminium/hydrochloric-acid reaction equation. — matches the verified current clauses listed below. The word equation is demanded; a balanced symbol equivalent is a source concession. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            19,
+            25
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            4
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            5
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q2.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q2.a.iv",
+      "questionPath": "2.a.iv",
+      "originalMarks": 1,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:2.15",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Lack of reaction with dilute acid constrains the identity of P.",
+          "auditRef": "research/curriculum-audits/4CH1-reactivity-rust-redox.json",
+          "pdfPage": 23,
+          "printedPage": 17,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Cold-water product and rate evidence",
+            "Steam versus cold-water conditions",
+            "Dilute hydrochloric-acid salt/hydrogen pattern",
+            "Dilute sulfuric-acid salt/hydrogen pattern",
+            "Fair comparisons, passivation and negative-evidence limits"
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Name a metal compatible with row P. — matches the verified current clauses listed below. Lack of reaction with dilute acid constrains the identity of P. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            23
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            4
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            5
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q2.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q2.a.v",
+      "questionPath": "2.a.v",
+      "originalMarks": 1,
+      "applicabilityDecision": "current-skill-only",
+      "verifiedCurrentPointMappings": [],
+      "independentReasoning": "Current unnumbered Experimental skills safe-techniques clause PDF34/printed28 supports risk-based exclusion. Reactivity2.15 is contextual; no numbered hazard clause or official AO invented.",
+      "contextualOnlyPointIds": [
+        "4CH1:issue3:2.15"
+      ],
+      "unnumberedSkillReference": {
+        "heading": "Experimental skills",
+        "pdfPage": 34,
+        "printedPage": 28,
+        "clause": "safe and skilful practical techniques"
+      },
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            34
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            4
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            5
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q2.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q2.b.i",
+      "questionPath": "2.b.i",
+      "originalMarks": 1,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:3.1",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Identify release of heat energy as exothermic.",
+          "auditRef": "research/curriculum-audits/4CH1-physical.json",
+          "pdfPage": 27,
+          "printedPage": 21,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Exothermic transfer to surroundings",
+            "Endothermic transfer from surroundings",
+            "Temperature evidence with controlled starting conditions"
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Define exothermic for the stated displacement reaction. — matches the verified current clauses listed below. Identify release of heat energy as exothermic. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            27
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            5
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            5
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q2.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q2.b.ii",
+      "questionPath": "2.b.ii",
+      "originalMarks": 1,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:2.16",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Compare metal displacement behaviour.",
+          "auditRef": "research/curriculum-audits/4CH1-reactivity-rust-redox.json",
+          "pdfPage": 23,
+          "printedPage": 17,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Aqueous metal-ion displacement principle",
+            "Product evidence, ionic equation and spectators",
+            "Solid metal-oxide oxygen-transfer principle",
+            "Metal-oxide equation and necessary conditions",
+            "Ranking and reverse-equation limits"
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Explain why aluminium displaces iron. — matches the verified current clauses listed below. Compare metal displacement behaviour. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            23
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            5
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            5
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q2.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q2.b.iii",
+      "questionPath": "2.b.iii",
+      "originalMarks": 2,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:2.20",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Apply oxygen/electron definitions of oxidation and reduction to this reaction.",
+          "auditRef": "research/curriculum-audits/4CH1-reactivity-rust-redox.json",
+          "pdfPage": 23,
+          "printedPage": 17,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Oxidation as oxygen gain",
+            "Reduction as oxygen loss",
+            "Oxidation as electron loss",
+            "Reduction as electron gain",
+            "Paired redox changes and balanced halves",
+            "Oxidizing agent accepts electrons and is reduced",
+            "Reducing agent donates electrons and is oxidized",
+            "Agent oxygen-transfer roles and actual reacting species"
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Explain the redox character of the given Fe2O3/Al displacement. — matches the verified current clauses listed below. Apply oxygen/electron definitions of oxidation and reduction to this reaction. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            23
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            5
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            5
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q2.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q3.a.i",
+      "questionPath": "3.a.i",
+      "originalMarks": 1,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:1.22",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Relate the outer electron configuration to the group.",
+          "auditRef": "research/curriculum-audits/4CH1-atoms-and-periodic-table.json",
+          "pdfPage": 18,
+          "printedPage": 12,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Relate occupied shells to period.",
+            "Relate outer electrons to the main-group label.",
+            "Explain noble-gas full shells including helium."
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Identify the group from the supplied neutral-atom diagram. — matches the verified current clauses listed below. Relate the outer electron configuration to the group. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            18
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            6
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            6
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q3.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q3.a.ii",
+      "questionPath": "3.a.ii",
+      "originalMarks": 1,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:1.22",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Relate the occupied electronic shells to the period.",
+          "auditRef": "research/curriculum-audits/4CH1-atoms-and-periodic-table.json",
+          "pdfPage": 18,
+          "printedPage": 12,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Relate occupied shells to period.",
+            "Relate outer electrons to the main-group label.",
+            "Explain noble-gas full shells including helium."
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Identify the period from the supplied atom diagram. — matches the verified current clauses listed below. Relate the occupied electronic shells to the period. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            18
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            6
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            6
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q3.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q3.a.iii",
+      "questionPath": "3.a.iii",
+      "originalMarks": 1,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:1.39",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Write the formula for a group-2/group-7 ionic compound.",
+          "auditRef": "research/curriculum-audits/4CH1-bonding.json",
+          "pdfPage": 20,
+          "printedPage": 14,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Balance smallest ion ratio and polyatomic units."
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:1.38",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Use the group-2 and fluoride ion charges.",
+          "auditRef": "research/curriculum-audits/4CH1-bonding.json",
+          "pdfPage": 20,
+          "printedPage": 14,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Group 1, 2 and 3 metal charges.",
+            "Group 5, 6 and 7 non-metal charges.",
+            "Ag, Cu, Fe, Pb and Zn specified charges.",
+            "Hydrogen, hydroxide, ammonium, carbonate, nitrate and sulfate charges."
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Give the compound formula for Z and fluorine; Z is a placeholder. — matches the verified current clauses listed below. Write the formula for a group-2/group-7 ionic compound. Use the group-2 and fluoride ion charges. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            20
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            6
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            6
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q3.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q3.b",
+      "questionPath": "3.b",
+      "originalMarks": 2,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:1.15",
+          "role": "partial-current-point-demand",
+          "reviewReason": "The diagram supplies the electron population to count.",
+          "auditRef": "research/curriculum-audits/4CH1-atoms-and-periodic-table.json",
+          "pdfPage": 18,
+          "printedPage": 12,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Describe nuclear protons with relative mass 1 and charge +1.",
+            "Describe nuclear neutrons with relative mass 1 and zero charge.",
+            "Describe surrounding electrons with very small relative mass and charge −1."
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:1.27",
+          "role": "partial-current-point-demand",
+          "reviewReason": "The stated mole context supports counting atoms; no mass/mole conversion or solution concentration is assessed.",
+          "auditRef": "research/curriculum-audits/4CH1-formulae-and-calculations.json",
+          "pdfPage": 19,
+          "printedPage": 13,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Mole as amount unit.",
+            "Identify counted entities."
+          ]
+        }
+      ],
+      "independentReasoning": "Electron count applies1.15; mole/entity context1.27 is supporting only. Supplied6.0×10^23 supports arithmetic, not a claim1.27 explicitly requires Avogadro-constant recall.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            18,
+            19
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            6
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            6
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q3.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q3.c",
+      "questionPath": "3.c",
+      "originalMarks": 4,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:1.17",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Compute relative atomic mass using isotope percentage abundances.",
+          "auditRef": "research/curriculum-audits/4CH1-atoms-and-periodic-table.json",
+          "pdfPage": 18,
+          "printedPage": 12,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Calculate a weighted mean from percentage abundances.",
+            "Calculate a weighted mean from non-percentage relative abundances."
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:1.16",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Infer isotope mass numbers from nuclear proton and neutron counts.",
+          "auditRef": "research/curriculum-audits/4CH1-atoms-and-periodic-table.json",
+          "pdfPage": 18,
+          "printedPage": 12,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Define atomic number by proton count.",
+            "Define mass number by proton-plus-neutron count.",
+            "Define isotopes by same proton and different neutron numbers.",
+            "Define relative atomic mass against one twelfth of carbon-12."
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Calculate relative atomic mass from the proton/neutron/percentage table; give one decimal place. — matches the verified current clauses listed below. Compute relative atomic mass using isotope percentage abundances. Infer isotope mass numbers from nuclear proton and neutron counts. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            18
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            7
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            6
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q3.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q3.d",
+      "questionPath": "3.d",
+      "originalMarks": 1,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:1.18",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Atomic number 12 identifies the element in the Periodic Table.",
+          "auditRef": "research/curriculum-audits/4CH1-atoms-and-periodic-table.json",
+          "pdfPage": 18,
+          "printedPage": 12,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Use increasing atomic number for element ordering.",
+            "Identify vertical groups.",
+            "Identify horizontal periods."
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:1.16",
+          "role": "additional-supporting-context",
+          "auditRef": "research/curriculum-audits/4CH1-atoms-and-periodic-table.json",
+          "pdfPage": 18,
+          "printedPage": 12,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Define atomic number by proton count.",
+            "Define mass number by proton-plus-neutron count.",
+            "Define isotopes by same proton and different neutron numbers.",
+            "Define relative atomic mass against one twelfth of carbon-12."
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Deduce the identity of Z from the neutral configuration or table proton number. — matches the verified current clauses listed below. Atomic number 12 identifies the element in the Periodic Table. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            18
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            6,
+            7
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            6
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q3.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q4.a.i",
+      "questionPath": "4.a.i",
+      "originalMarks": 1,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:1.32",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Read the molecular formula to determine the number of atoms; only partial definition/application scope.",
+          "auditRef": "research/curriculum-audits/4CH1-formulae-and-calculations.json",
+          "pdfPage": 19,
+          "printedPage": 13,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Empirical simplest ratio.",
+            "Molecular actual atom counts."
+          ]
+        }
+      ],
+      "independentReasoning": "Molecular-formula atom counts apply1.32; caffeine is supplied context, not required compound recall.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            19
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            8
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            7
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q4.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q4.a.ii",
+      "questionPath": "4.a.ii",
+      "originalMarks": 2,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:1.26",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Calculate relative formula mass from relative atomic masses.",
+          "auditRef": "research/curriculum-audits/4CH1-formulae-and-calculations.json",
+          "pdfPage": 19,
+          "printedPage": 13,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Count bracket and hydration atoms.",
+            "Calculate a formula mass."
+          ]
+        }
+      ],
+      "independentReasoning": "Mr from supplied caffeine formula and atomic masses applies1.26, no caffeine-specific syllabus clause.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            19
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            8
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            7
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q4.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q4.a.iii",
+      "questionPath": "4.a.iii",
+      "originalMarks": 1,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:1.32",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Infer simplest atomic ratio from the given molecular formula; not an experimental empirical-formula determination.",
+          "auditRef": "research/curriculum-audits/4CH1-formulae-and-calculations.json",
+          "pdfPage": 19,
+          "printedPage": 13,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Empirical simplest ratio.",
+            "Molecular actual atom counts."
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Give the empirical formula of caffeine. — matches the verified current clauses listed below. Infer simplest atomic ratio from the given molecular formula; not an experimental empirical-formula determination. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            19
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            8
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            7
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q4.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q4.b.i",
+      "questionPath": "4.b.i",
+      "originalMarks": 1,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:1.10",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Identify the simple-distillation technique from a diagram; not a performed practical.",
+          "auditRef": "research/curriculum-audits/4CH1-states-and-mixtures.json",
+          "pdfPage": 18,
+          "printedPage": 12,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Describe simple distillation to recover a volatile solvent.",
+            "Describe fractional distillation and repeated separation in a column.",
+            "Describe filtration and identify residue and filtrate.",
+            "Describe crystallisation and appropriate recovery/drying.",
+            "Describe separation by paper chromatography."
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Name the separation method illustrated. — matches the verified current clauses listed below. Identify the simple-distillation technique from a diagram; not a performed practical. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            18
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            8
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            7
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q4.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q4.b.ii",
+      "questionPath": "4.b.ii",
+      "originalMarks": 2,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:1.10",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Describe the condensation stage of simple distillation.",
+          "auditRef": "research/curriculum-audits/4CH1-states-and-mixtures.json",
+          "pdfPage": 18,
+          "printedPage": 12,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Describe simple distillation to recover a volatile solvent.",
+            "Describe fractional distillation and repeated separation in a column.",
+            "Describe filtration and identify residue and filtrate.",
+            "Describe crystallisation and appropriate recovery/drying.",
+            "Describe separation by paper chromatography."
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:1.2",
+          "role": "additional-supporting-context",
+          "auditRef": "research/curriculum-audits/4CH1-states-and-mixtures.json",
+          "pdfPage": 17,
+          "printedPage": 11,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Name melting, freezing, boiling, condensation, sublimation and deposition.",
+            "Explain heating or cooling to bring about state changes.",
+            "Explain arrangement and movement changes.",
+            "Distinguish energy during a phase change from rising average kinetic energy."
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Describe the ethanol vapour behaviour in the labelled apparatus X. — matches the verified current clauses listed below. Describe the condensation stage of simple distillation. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            17,
+            18
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            8
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            7
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q4.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q4.c",
+      "questionPath": "4.c",
+      "originalMarks": 5,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:1.42",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Explain high ionic melting point through attractions and energy.",
+          "auditRef": "research/curriculum-audits/4CH1-bonding.json",
+          "pdfPage": 20,
+          "printedPage": 14,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Giant arrangement and strong attractions.",
+            "Energy required to overcome attractions."
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:1.41",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Use electrostatic attractions between opposite ions.",
+          "auditRef": "research/curriculum-audits/4CH1-bonding.json",
+          "pdfPage": 20,
+          "printedPage": 14,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Attraction of opposite ions distinguishes bonding from transfer."
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:1.47",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Contrast weaker intermolecular attractions in a simple molecular substance.",
+          "auditRef": "research/curriculum-audits/4CH1-bonding.json",
+          "pdfPage": 20,
+          "printedPage": 14,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Intermolecular forces and energy of separation."
+          ]
+        }
+      ],
+      "independentReasoning": "Compare ionic lattice attractions with intermolecular forces using1.41/42/47; unfamiliar caffeine is a supplied application.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            20
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            9
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            7
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q4.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q5.a.i",
+      "questionPath": "5.a.i",
+      "originalMarks": 2,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:1.13",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Explain a setup condition in the presented ink chromatography investigation; no performed practical is certified.",
+          "auditRef": "research/curriculum-audits/4CH1-states-and-mixtures.json",
+          "pdfPage": 18,
+          "printedPage": 12,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Set up a pencil baseline with small dried sample spots above solvent.",
+            "Develop the chromatogram and promptly mark the solvent front.",
+            "Record and compare sample components under controlled conditions."
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:1.10",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Apply the paper-chromatography separation technique.",
+          "auditRef": "research/curriculum-audits/4CH1-states-and-mixtures.json",
+          "pdfPage": 18,
+          "printedPage": 12,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Describe simple distillation to recover a volatile solvent.",
+            "Describe fractional distillation and repeated separation in a column.",
+            "Describe filtration and identify residue and filtrate.",
+            "Describe crystallisation and appropriate recovery/drying.",
+            "Describe separation by paper chromatography."
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Explain why the starting spots are above the solvent level. — matches the verified current clauses listed below. Explain a setup condition in the presented ink chromatography investigation; no performed practical is certified. Apply the paper-chromatography separation technique. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            18
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            10
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            8
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q5.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q5.a.ii",
+      "questionPath": "5.a.ii",
+      "originalMarks": 2,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:1.11",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Use the chromatogram to identify a shared dye in mixtures.",
+          "auditRef": "research/curriculum-audits/4CH1-states-and-mixtures.json",
+          "pdfPage": 18,
+          "printedPage": 12,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Use separated spots to infer detected mixture components.",
+            "Compare reference spots under the same conditions without overclaiming identity."
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Identify the two pens sharing a dye and justify with the chromatogram. — matches the verified current clauses listed below. Use the chromatogram to identify a shared dye in mixtures. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            18
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            10
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            8
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q5.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q5.a.iii",
+      "questionPath": "5.a.iii",
+      "originalMarks": 2,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:1.11",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Interpret mixture composition with the limitation of an unmoved/insoluble sample.",
+          "auditRef": "research/curriculum-audits/4CH1-states-and-mixtures.json",
+          "pdfPage": 18,
+          "printedPage": 12,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Use separated spots to infer detected mixture components.",
+            "Compare reference spots under the same conditions without overclaiming identity."
+          ]
+        }
+      ],
+      "independentReasoning": "One moving spot versus unmoved insoluble material tests1.11 inference limits; a single spot is not unconditional proof of purity.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            18
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            11
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            8
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q5.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q5.b",
+      "questionPath": "5.b",
+      "originalMarks": 3,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:1.12",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Calculate Rf from the diagram using the two distances from the baseline.",
+          "auditRef": "research/curriculum-audits/4CH1-states-and-mixtures.json",
+          "pdfPage": 18,
+          "printedPage": 12,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Calculate component distance divided by solvent-front distance from the baseline.",
+            "Use matched-condition Rf comparisons as identification evidence."
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Measure the G dye and solvent travel distances in the source chromatogram and calculate Rf. — matches the verified current clauses listed below. Calculate Rf from the diagram using the two distances from the baseline. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            18
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            11
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            8
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q5.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q6.a.i",
+      "questionPath": "6.a.i",
+      "originalMarks": 2,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:2.1",
+          "role": "partial-current-point-demand",
+          "reviewReason": "A single sodium reaction supports Group 1 water-reaction knowledge; it does not establish family similarities or performed practical coverage.",
+          "auditRef": "research/curriculum-audits/4CH1-group1.json",
+          "pdfPage": 22,
+          "printedPage": 16,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Shared hydrogen product",
+            "Corresponding hydroxides and alkaline solutions",
+            "Balanced reaction pattern",
+            "Chemical similarity as family evidence"
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:2.2",
+          "role": "additional-supporting-context",
+          "auditRef": "research/curriculum-audits/4CH1-group1.json",
+          "pdfPage": 22,
+          "printedPage": 16,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Typical comparable water observations",
+            "Air tarnishing as supporting evidence",
+            "Lithium to sodium to potassium ordering",
+            "Observation, interpretation and comparison limitations"
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Give two observations when a teacher adds sodium to water. — matches the verified current clauses listed below. A single sodium reaction supports Group 1 water-reaction knowledge; it does not establish family similarities or performed practical coverage. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            22
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            12
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            9
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q6.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q6.a.ii",
+      "questionPath": "6.a.ii",
+      "originalMarks": 2,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:2.28",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Explain the phenolphthalein colour in an alkaline solution.",
+          "auditRef": "research/curriculum-audits/4CH1-acids-salts.json",
+          "pdfPage": 24,
+          "printedPage": 18,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Litmus acid/alkali direction",
+            "Phenolphthalein colourless/pink with transition limit",
+            "Methyl orange red/yellow, not neutral-orange"
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:2.31",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Relate the alkaline solution to hydroxide ions.",
+          "auditRef": "research/curriculum-audits/4CH1-acids-salts.json",
+          "pdfPage": 24,
+          "printedPage": 18,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Aqueous acid supplies H⁺",
+            "Aqueous alkali supplies OH⁻",
+            "Reacting versus spectator ion roles"
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Explain phenolphthalein colour in the solution after sodium has reacted with water. — matches the verified current clauses listed below. Explain the phenolphthalein colour in an alkaline solution. Relate the alkaline solution to hydroxide ions. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            24
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            12
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            9
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q6.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q6.b.i",
+      "questionPath": "6.b.i",
+      "originalMarks": 2,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:2.45",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Explain wire preparation for a flame test; no performed investigation is certified.",
+          "auditRef": "research/curriculum-audits/4CH1-chemical-tests.json",
+          "pdfPage": 26,
+          "printedPage": 20,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Clean loop or approved alternative and blank check",
+            "Sample in non-luminous flame and record colour",
+            "Contamination, masking and comparable conditions"
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Explain why a student cleans a platinum wire before a flame test. — matches the verified current clauses listed below. Explain wire preparation for a flame test; no performed investigation is certified. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            26
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            12
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            9
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q6.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q6.b.ii",
+      "questionPath": "6.b.ii",
+      "originalMarks": 1,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:2.46",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Identify the lithium-ion flame-test colour.",
+          "auditRef": "research/curriculum-audits/4CH1-chemical-tests.json",
+          "pdfPage": 26,
+          "printedPage": 20,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Li⁺ red and Na⁺ yellow",
+            "K⁺ lilac and Ca²⁺ orange-red",
+            "Cu²⁺ blue-green",
+            "Cation result does not identify anion or purity"
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Select the flame colour for lithium ions from four labelled choices. — matches the verified current clauses listed below. Identify the lithium-ion flame-test colour. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            26
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            12
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            9
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q6.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q6.c.i",
+      "questionPath": "6.c.i",
+      "originalMarks": 2,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:1.38",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Recall the listed common-ion charges/formulas; no whole compound-formula construction is claimed.",
+          "auditRef": "research/curriculum-audits/4CH1-bonding.json",
+          "pdfPage": 20,
+          "printedPage": 14,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Group 1, 2 and 3 metal charges.",
+            "Group 5, 6 and 7 non-metal charges.",
+            "Ag, Cu, Fe, Pb and Zn specified charges.",
+            "Hydrogen, hydroxide, ammonium, carbonate, nitrate and sulfate charges."
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Give the three ion formulas in the given potassium aluminium sulfate. — matches the verified current clauses listed below. Recall the listed common-ion charges/formulas; no whole compound-formula construction is claimed. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            20
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            13
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            9
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q6.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q6.c.ii",
+      "questionPath": "6.c.ii",
+      "originalMarks": 4,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:1.28",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Use mass and relative formula mass to calculate mole amounts.",
+          "auditRef": "research/curriculum-audits/4CH1-formulae-and-calculations.json",
+          "pdfPage": 19,
+          "printedPage": 13,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Relative mass versus molar mass units.",
+            "Mass to amount.",
+            "Amount to mass."
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:1.31",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Determine water of crystallisation from supplied experimental masses; no performed practical is certified.",
+          "auditRef": "research/curriculum-audits/4CH1-formulae-and-calculations.json",
+          "pdfPage": 19,
+          "printedPage": 13,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Oxide element masses by gain or reduction.",
+            "Water formula from element masses.",
+            "Hydrated-salt water ratio."
+          ]
+        }
+      ],
+      "independentReasoning": "Mass/amount and experimental hydrate formula1.28/31 apply to supplied alum data; no new named-hydrate recall requirement.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            19
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            13
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            10
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q6.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q7.a",
+      "questionPath": "7.a",
+      "originalMarks": 1,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:2.9",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Identify the approximate nitrogen percentage in air.",
+          "auditRef": "research/curriculum-audits/4CH1-atmosphere.json",
+          "pdfPage": 23,
+          "printedPage": 17,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Four named gas proportions",
+            "Dry air excludes water vapour",
+            "Volume versus mass percentage",
+            "Rounded values and trace-gas limitations",
+            "Applying a supplied mixture volume"
+          ]
+        }
+      ],
+      "independentReasoning": "Approximate source option80% is consistent with2.9; does not replace usual78% reference value.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            23
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            14
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            11
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q7.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q7.b",
+      "questionPath": "7.b",
+      "originalMarks": 2,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:1.46",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Complete the specified nitrogen covalent diagram.",
+          "auditRef": "research/curriculum-audits/4CH1-bonding.json",
+          "pdfPage": 20,
+          "printedPage": 14,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Hydrogen, halogen and hydrogen-halide pairs and lone pairs.",
+            "Oxygen double and nitrogen triple bonds.",
+            "Water, ammonia and carbon dioxide electron accounting.",
+            "Water and carbon dioxide dot-and-cross representations.",
+            "Methane, ethane and ethene accounting.",
+            "Halogen-containing one- and two-carbon diagram convention."
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:1.44",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Represent shared electron pairs in covalent bonds.",
+          "auditRef": "research/curriculum-audits/4CH1-bonding.json",
+          "pdfPage": 20,
+          "printedPage": 14,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "One shared pair forms a single bond."
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Complete the two-atom nitrogen diagram, showing outer electrons only. — matches the verified current clauses listed below. Complete the specified nitrogen covalent diagram. Represent shared electron pairs in covalent bonds. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            20
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            14
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            11
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q7.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q7.c.i",
+      "questionPath": "7.c.i",
+      "originalMarks": 2,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:1.25",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Translate the supplied reaction information into a balanced equation.",
+          "auditRef": "research/curriculum-audits/4CH1-formulae-and-calculations.json",
+          "pdfPage": 19,
+          "printedPage": 13,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Word and formula translation.",
+            "Atom conservation through coefficients.",
+            "State symbols from stated conditions.",
+            "Use unfamiliar supplied reaction identities with sufficient formula and state information."
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:4.16",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Relate a nitrogen oxide atmospheric reaction to acid-rain formation.",
+          "auditRef": "research/curriculum-audits/4CH1-organic-foundations.json",
+          "pdfPage": 30,
+          "printedPage": 24,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "SO₂ and nitrogen oxides atmospheric/water acid formation",
+            "Acidic substances enter rainwater",
+            "Acid-rain pathway distinct from warming"
+          ]
+        }
+      ],
+      "independentReasoning": "Reactants AND nitric-acid product are supplied in the stem, so1.25 unfamiliar balancing is applicable;4.16 supplies formation context.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            19,
+            30
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            14
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            11
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q7.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q7.c.ii",
+      "questionPath": "7.c.ii",
+      "originalMarks": 1,
+      "applicabilityDecision": "contextual-extension-not-explicit-numbered-demand",
+      "verifiedCurrentPointMappings": [],
+      "independentReasoning": "4.16 explicitly describes SO2/NOx contribution to acid-rain formation, not a separately prescribed environmental-effects recall list. Retain task as contextual extension,4.16 contextual-only, with source effects/reject/ignore policies unchanged.",
+      "contextualOnlyPointIds": [
+        "4CH1:issue3:4.16"
+      ],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            30
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            14
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            11
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q7.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q7.d.i",
+      "questionPath": "7.d.i",
+      "originalMarks": 1,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:1.39",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Identify the ionic formula from ammonium/carbonate charges.",
+          "auditRef": "research/curriculum-audits/4CH1-bonding.json",
+          "pdfPage": 20,
+          "printedPage": 14,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Balance smallest ion ratio and polyatomic units."
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:1.38",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Use the listed ammonium/carbonate ion charges.",
+          "auditRef": "research/curriculum-audits/4CH1-bonding.json",
+          "pdfPage": 20,
+          "printedPage": 14,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Group 1, 2 and 3 metal charges.",
+            "Group 5, 6 and 7 non-metal charges.",
+            "Ag, Cu, Fe, Pb and Zn specified charges.",
+            "Hydrogen, hydroxide, ammonium, carbonate, nitrate and sulfate charges."
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Choose the ammonium carbonate formula from four options. — matches the verified current clauses listed below. Identify the ionic formula from ammonium/carbonate charges. Use the listed ammonium/carbonate ion charges. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            20
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            14
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            11
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q7.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q7.d.ii",
+      "questionPath": "7.d.ii",
+      "originalMarks": 6,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:2.47",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Describe the ammonium-ion test; no performed practical is certified.",
+          "auditRef": "research/curriculum-audits/4CH1-chemical-tests.json",
+          "pdfPage": 26,
+          "printedPage": 20,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "NH₄⁺ plus NaOH and warming gives identified ammonia",
+            "Gas test kept separate from alkaline liquid",
+            "Cu²⁺ blue, Fe²⁺ green and Fe³⁺ brown precipitates",
+            "Precipitate versus solution and Fe²⁺ oxidation sequence",
+            "Balanced hydroxide/ammonium examples and inference limits"
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:2.48",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Describe the carbonate-ion test; no performed practical is certified.",
+          "auditRef": "research/curriculum-audits/4CH1-chemical-tests.json",
+          "pdfPage": 26,
+          "printedPage": 20,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Dilute nitric acid then silver nitrate halide test",
+            "Chloride white, bromide cream, iodide yellow precipitates",
+            "Avoid introduced chloride and carbonate interference",
+            "Acidified barium chloride white sulfate precipitate",
+            "Avoid introduced sulfate and carbonate interference",
+            "Carbonate hydrochloric acid release and limewater gas evidence",
+            "Separate portions and balanced charge/atom examples"
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:2.44",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Recognise the ammonia and carbon-dioxide gas tests.",
+          "auditRef": "research/curriculum-audits/4CH1-chemical-tests.json",
+          "pdfPage": 26,
+          "printedPage": 20,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Hydrogen lighted-splint pop versus oxygen glowing-splint relight",
+            "CO₂ limewater cloudiness and precipitate",
+            "Ammonia damp red litmus turns blue",
+            "Chlorine damp litmus bleaching white",
+            "Test conditions, sequence and inference limits"
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Describe tests confirming ammonium and carbonate ions in an unlabelled solution. — matches the verified current clauses listed below. Describe the ammonium-ion test; no performed practical is certified. Describe the carbonate-ion test; no performed practical is certified. Recognise the ammonia and carbon-dioxide gas tests. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            26
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            15
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            12
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q7.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q8.a.i",
+      "questionPath": "8.a.i",
+      "originalMarks": 2,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:4.3",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Define isomerism explicitly named in the own specification, despite the local parent summary not enumerating every term.",
+          "auditRef": "research/curriculum-audits/4CH1-organic-foundations.json",
+          "pdfPage": 29,
+          "printedPage": 23,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Homologous family, formula, behaviour and CH₂ difference",
+            "Functional group associated with characteristic reactions",
+            "Isomer formula equality and different connectivity"
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Explain isomers for the given alkene molecular formula. — matches the verified current clauses listed below. Define isomerism explicitly named in the own specification, despite the local parent summary not enumerating every term. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            29
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            16
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            13
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q8.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q8.a.ii",
+      "questionPath": "8.a.ii",
+      "originalMarks": 2,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:4.5",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Write possible structural/displayed formulas from a molecular formula.",
+          "auditRef": "research/curriculum-audits/4CH1-organic-foundations.json",
+          "pdfPage": 29,
+          "printedPage": 23,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Connected skeleton and normal valencies",
+            "Different structural connections and duplicate removal",
+            "Displayed and structural C₄/C₅ examples with atom counts",
+            "Family ambiguity not resolved by formula alone"
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:4.26",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Use up-to-four-carbon alkene displayed formulas; current cis/trans knowledge is explicitly not required.",
+          "auditRef": "research/curriculum-audits/4CH1-organic-foundations.json",
+          "pdfPage": 30,
+          "printedPage": 24,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Ethene/propene structural and displayed formulas",
+            "But-1-ene/but-2-ene positions and names",
+            "Branched C₄ connectivity and valency",
+            "No required E/Z or cis/trans notation"
+          ]
+        }
+      ],
+      "independentReasoning": "4.5 and4.26 cover constitutional/displayed C4 alkene structures. Source cis/trans concession remains valid for this paper only;4.26 explicitly excludes required cis/trans or E/Z notation. No stereo curriculum requirement added.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            29,
+            30
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            16
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            13
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q8.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q8.b",
+      "questionPath": "8.b",
+      "originalMarks": 1,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:4.6",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Classify the organic reaction as addition.",
+          "auditRef": "research/curriculum-audits/4CH1-organic-foundations.json",
+          "pdfPage": 29,
+          "printedPage": 23,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Substitution replaces a group",
+            "Addition across a multiple bond",
+            "Combustion and oxygen products",
+            "No mandatory mechanism detail"
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:4.27",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Identify addition of bromine across the alkene double bond.",
+          "auditRef": "research/curriculum-audits/4CH1-organic-foundations.json",
+          "pdfPage": 30,
+          "printedPage": 24,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Br₂ across C=C to dibromoalkane",
+            "One Br on each original double-bond carbon",
+            "Product structure and balanced atom model"
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Classify but-1-ene reacting with bromine from four choices. — matches the verified current clauses listed below. Classify the organic reaction as addition. Identify addition of bromine across the alkene double bond. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            29,
+            30
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            16
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            13
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q8.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q8.c.i",
+      "questionPath": "8.c.i",
+      "originalMarks": 1,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:4.45",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Draw the specified poly(propene) repeat unit.",
+          "auditRef": "research/curriculum-audits/4CH1-organic-families-polymers.json",
+          "pdfPage": 32,
+          "printedPage": 26,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Polyethene repeat and outward bonds",
+            "Polypropene methyl branch and hydrogen count",
+            "Polychloroethene chlorine retained",
+            "PTFE four fluorines retained",
+            "Displayed every bond, brackets and outside n"
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:4.46",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Deduce the repeat unit from the monomer.",
+          "auditRef": "research/curriculum-audits/4CH1-organic-families-polymers.json",
+          "pdfPage": 32,
+          "printedPage": 26,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Repeat to double-bond monomer",
+            "Monomer to chain with preserved side groups",
+            "Backbone distinguished from branch and scope"
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Draw the repeat unit for poly(propene) from the given alkene. — matches the verified current clauses listed below. Draw the specified poly(propene) repeat unit. Deduce the repeat unit from the monomer. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            32
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            17
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            13
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q8.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q8.c.ii",
+      "questionPath": "8.c.ii",
+      "originalMarks": 2,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:4.47",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Describe polymer disposal problems from the two supplied methods.",
+          "auditRef": "research/curriculum-audits/4CH1-organic-families-polymers.json",
+          "pdfPage": 32,
+          "printedPage": 26,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Inertness and inability to biodegrade in required examples",
+            "Persistence versus physical fragmentation",
+            "Toxic burning products depend on composition/conditions"
+          ]
+        }
+      ],
+      "independentReasoning": "4.47 directly covers persistence/nonbiodegradability and toxic burning products. Greenhouse-gas alternative is contextual source allowance, not an extra explicit4.47 clause.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            32
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            17
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            14
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q8.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q8.d",
+      "questionPath": "8.d",
+      "originalMarks": 3,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:1.28",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Convert product masses and relative formula masses to mole amounts.",
+          "auditRef": "research/curriculum-audits/4CH1-formulae-and-calculations.json",
+          "pdfPage": 19,
+          "printedPage": 13,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Relative mass versus molar mass units.",
+            "Mass to amount.",
+            "Amount to mass."
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:1.25",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Balance the oxygen atoms to obtain the missing coefficient.",
+          "auditRef": "research/curriculum-audits/4CH1-formulae-and-calculations.json",
+          "pdfPage": 19,
+          "printedPage": 13,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Word and formula translation.",
+            "Atom conservation through coefficients.",
+            "State symbols from stated conditions.",
+            "Use unfamiliar supplied reaction identities with sufficient formula and state information."
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:4.12",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Use carbon dioxide/water products of complete combustion.",
+          "auditRef": "research/curriculum-audits/4CH1-organic-foundations.json",
+          "pdfPage": 29,
+          "printedPage": 23,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Complete combustion CO₂/water and balanced counts",
+            "Incomplete CO/carbon/water possibilities and mixtures",
+            "Oxygen supply and inference limits"
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Find coefficients x,y,z for complete combustion of one mole of an unknown alkane using product masses. — matches the verified current clauses listed below. Convert product masses and relative formula masses to mole amounts. Balance the oxygen atoms to obtain the missing coefficient. Use carbon dioxide/water products of complete combustion. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            19,
+            29
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            18
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            14
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q8.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q8.e.i",
+      "questionPath": "8.e.i",
+      "originalMarks": 2,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:1.25",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Complete the balanced equation with state symbols.",
+          "auditRef": "research/curriculum-audits/4CH1-formulae-and-calculations.json",
+          "pdfPage": 19,
+          "printedPage": 13,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Word and formula translation.",
+            "Atom conservation through coefficients.",
+            "State symbols from stated conditions.",
+            "Use unfamiliar supplied reaction identities with sufficient formula and state information."
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:4.12",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Identify the supplied carbon monoxide/carbon/water incomplete-combustion products.",
+          "auditRef": "research/curriculum-audits/4CH1-organic-foundations.json",
+          "pdfPage": 29,
+          "printedPage": 23,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Complete combustion CO₂/water and balanced counts",
+            "Incomplete CO/carbon/water possibilities and mixtures",
+            "Oxygen supply and inference limits"
+          ]
+        }
+      ],
+      "independentReasoning": "1.25 and4.12 cover balancing/states/incomplete products; preserve fixed3C and paper water(g) allowance instead of replacing supplied equation.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            19,
+            29
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            18
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            14
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q8.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q8.e.ii",
+      "questionPath": "8.e.ii",
+      "originalMarks": 2,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:4.13",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Explain carbon monoxide effects on blood oxygen carrying, with a source carbon/soot alternative that does not expand this point.",
+          "auditRef": "research/curriculum-audits/4CH1-organic-foundations.json",
+          "pdfPage": 30,
+          "printedPage": 24,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Blood oxygen-transport capacity reduced",
+            "CO distinct from soot and CO₂; haemoglobin not required"
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:4.12",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Identify incomplete-combustion products.",
+          "auditRef": "research/curriculum-audits/4CH1-organic-foundations.json",
+          "pdfPage": 29,
+          "printedPage": 23,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Complete combustion CO₂/water and balanced counts",
+            "Incomplete CO/carbon/water possibilities and mixtures",
+            "Oxygen supply and inference limits"
+          ]
+        }
+      ],
+      "independentReasoning": "CO harm is explicit4.13 with4.12 product context. Soot respiratory harm is an accepted contextual source alternative, not separately explicit4.13 content.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            29,
+            30
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            18
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            14
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q8.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q9.a.i",
+      "questionPath": "9.a.i",
+      "originalMarks": 1,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:3.15",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Interpret measured mass loss in the supplied marble/acid rate apparatus; no performed investigation is certified.",
+          "auditRef": "research/curriculum-audits/4CH1-physical.json",
+          "pdfPage": 28,
+          "printedPage": 22,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Named carbonate/acid equation and CO₂ measurement",
+            "Surface area varied with mass and other controls",
+            "Acid concentration varied with chip and other controls",
+            "Repeats, timing, collection limits and safe gas path"
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Explain the mass loss during marble chips reacting with hydrochloric acid. — matches the verified current clauses listed below. Interpret measured mass loss in the supplied marble/acid rate apparatus; no performed investigation is certified. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            28
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            19
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            15
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q9.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q9.a.ii",
+      "questionPath": "9.a.ii",
+      "originalMarks": 1,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:3.15",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Explain an apparatus control in the supplied practical context.",
+          "auditRef": "research/curriculum-audits/4CH1-physical.json",
+          "pdfPage": 28,
+          "printedPage": 22,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Named carbonate/acid equation and CO₂ measurement",
+            "Surface area varied with mass and other controls",
+            "Acid concentration varied with chip and other controls",
+            "Repeats, timing, collection limits and safe gas path"
+          ]
+        }
+      ],
+      "independentReasoning": "Cotton-wool spray control is practical-method skill within3.15; outlet must still permit gas escape.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            28,
+            34
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            19
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            15
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q9.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q9.b.i",
+      "questionPath": "9.b.i",
+      "originalMarks": 4,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:3.10",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Relate the graph to changing acid concentration.",
+          "auditRef": "research/curriculum-audits/4CH1-physical.json",
+          "pdfPage": 28,
+          "printedPage": 22,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Larger exposed area effect",
+            "Higher solution concentration effect",
+            "Reacting gas compression at fixed temperature effect",
+            "Higher temperature effect",
+            "Suitable catalyst effect",
+            "Rate effect distinguished from final amount"
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:3.15",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Interpret supplied marble/acid investigation results.",
+          "auditRef": "research/curriculum-audits/4CH1-physical.json",
+          "pdfPage": 28,
+          "printedPage": 22,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Named carbonate/acid equation and CO₂ measurement",
+            "Surface area varied with mass and other controls",
+            "Acid concentration varied with chip and other controls",
+            "Repeats, timing, collection limits and safe gas path"
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Explain the mass-loss graph with marble chips in excess. — matches the verified current clauses listed below. Relate the graph to changing acid concentration. Interpret supplied marble/acid investigation results. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            28
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            20
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            15
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q9.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q9.b.ii",
+      "questionPath": "9.b.ii",
+      "originalMarks": 2,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:3.10",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Predict the concentration-change curve in the supplied acid-limited context.",
+          "auditRef": "research/curriculum-audits/4CH1-physical.json",
+          "pdfPage": 28,
+          "printedPage": 22,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Larger exposed area effect",
+            "Higher solution concentration effect",
+            "Reacting gas compression at fixed temperature effect",
+            "Higher temperature effect",
+            "Suitable catalyst effect",
+            "Rate effect distinguished from final amount"
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:3.15",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Use the marble/acid practical context without claiming performed experimental coverage.",
+          "auditRef": "research/curriculum-audits/4CH1-physical.json",
+          "pdfPage": 28,
+          "printedPage": 22,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Named carbonate/acid equation and CO₂ measurement",
+            "Surface area varied with mass and other controls",
+            "Acid concentration varied with chip and other controls",
+            "Repeats, timing, collection limits and safe gas path"
+          ]
+        }
+      ],
+      "independentReasoning": "Concentration3.10/3.15 supports slower initial rate and half final loss with same acid volume/excess chips. No need to invent C-only mol/dm3 demand for this qualitative comparison.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            28
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            20
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            15
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q9.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q9.c",
+      "questionPath": "9.c",
+      "originalMarks": 3,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:3.11",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Explain surface-area effect using collision theory.",
+          "auditRef": "research/curriculum-audits/4CH1-physical.json",
+          "pdfPage": 28,
+          "printedPage": 22,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Area increases accessible collisions per time",
+            "Concentration increases relevant particles per volume",
+            "Gas compression increases collision frequency",
+            "Temperature and sufficient-energy successful collisions"
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:3.10",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Predict the rate change when chip surface area increases.",
+          "auditRef": "research/curriculum-audits/4CH1-physical.json",
+          "pdfPage": 28,
+          "printedPage": 22,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Larger exposed area effect",
+            "Higher solution concentration effect",
+            "Reacting gas compression at fixed temperature effect",
+            "Higher temperature effect",
+            "Suitable catalyst effect",
+            "Rate effect distinguished from final amount"
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:3.15",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Apply the supplied same-mass marble-chip comparison; no performed investigation is certified.",
+          "auditRef": "research/curriculum-audits/4CH1-physical.json",
+          "pdfPage": 28,
+          "printedPage": 22,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Named carbonate/acid equation and CO₂ measurement",
+            "Surface area varied with mass and other controls",
+            "Acid concentration varied with chip and other controls",
+            "Repeats, timing, collection limits and safe gas path"
+          ]
+        }
+      ],
+      "independentReasoning": "The assessed demand — Explain how smaller marble chips of the same mass affect rate, other conditions unchanged. — matches the verified current clauses listed below. Explain surface-area effect using collision theory. Predict the rate change when chip surface area increases. Apply the supplied same-mass marble-chip comparison; no performed investigation is certified. This samples the stated skill/content, not complete coverage of each parent point; original scoring alternatives/dependencies remain unchanged.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            28
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            21
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            15
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q9.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q10.a",
+      "questionPath": "10.a",
+      "originalMarks": 1,
+      "applicabilityDecision": "contextual-source-exception-partial-skill-overlap",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:1.25",
+          "role": "partial-skill-overlap-only",
+          "reviewReason": "Complete the supplied chemical equation. Nitric-acid metal reactions are excluded from current2.37 general acid-reaction scope.",
+          "auditRef": "research/curriculum-audits/4CH1-formulae-and-calculations.json",
+          "pdfPage": 19,
+          "printedPage": 13,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Word and formula translation.",
+            "Atom conservation through coefficients.",
+            "State symbols from stated conditions.",
+            "Use unfamiliar supplied reaction identities with sufficient formula and state information."
+          ]
+        }
+      ],
+      "independentReasoning": "Printed QP22 supplies Mg+2HNO3 but leaves both products blank. Preserve exact scheme Mg(NO3)2/H2 as source-specific exception.1.25 is limited equation-completion skill overlap; reactants alone do not establish sufficient unfamiliar product information.2.37 explicitly excludes nitric-acid/metal reactions. Do not call this ordinary current acid-metal coverage.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            19,
+            25
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            22
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            16
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q10.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q10.b",
+      "questionPath": "10.b",
+      "originalMarks": 2,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:3.2",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Read and relate temperatures in the supplied calorimetry context; named experiments/performed work are not certified.",
+          "auditRef": "research/curriculum-audits/4CH1-physical.json",
+          "pdfPage": 27,
+          "printedPage": 21,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Combustion water calorimetry and fuel amount",
+            "Neutralization cup calorimetry and combined mass",
+            "Dissolving calorimetry with stated mass assumption",
+            "Displacement calorimetry and limiting amount",
+            "Appropriate temperature measurements and apparatus assumptions"
+          ]
+        }
+      ],
+      "independentReasoning": "Temperature/precision skill within calorimetry3.2 and unnumbered PDF34 remains current independently of excluded nitric-acid/metal recall; preserve source ECF.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            27,
+            34
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            22
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            16
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q10.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q10.c.i",
+      "questionPath": "10.c.i",
+      "originalMarks": 2,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:3.3",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Evaluate Q=mcΔT from the supplied volume, density, heat capacity and rise.",
+          "auditRef": "research/curriculum-audits/4CH1-physical.json",
+          "pdfPage": 27,
+          "printedPage": 21,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Q = mcΔT and consistent units",
+            "Correct heated/cooled material mass",
+            "Final-minus-initial change and material heat sign",
+            "Stated density and specific heat approximations"
+          ]
+        }
+      ],
+      "independentReasoning": "Q=mcΔT3.3 applies directly to given solution mass/density/temperature; no nitric reaction knowledge needed.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            27
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            23
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            16
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q10.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q10.c.ii",
+      "questionPath": "10.c.ii",
+      "originalMarks": 4,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:3.4",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Calculate molar enthalpy with amount, unit conversion and sign.",
+          "auditRef": "research/curriculum-audits/4CH1-physical.json",
+          "pdfPage": 27,
+          "printedPage": 21,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Opposite reaction sign to measured surroundings",
+            "Joule-to-kilojoule conversion",
+            "Reacting amount from stoichiometry and limiting reagent",
+            "Explicit molar basis and estimated result"
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:1.28",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Find magnesium amount from the paper atomic mass.",
+          "auditRef": "research/curriculum-audits/4CH1-formulae-and-calculations.json",
+          "pdfPage": 19,
+          "printedPage": 13,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Relative mass versus molar mass units.",
+            "Mass to amount.",
+            "Amount to mass."
+          ]
+        },
+        {
+          "pointId": "4CH1:issue3:3.1",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Relate the temperature rise to the negative enthalpy sign.",
+          "auditRef": "research/curriculum-audits/4CH1-physical.json",
+          "pdfPage": 27,
+          "printedPage": 21,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Exothermic transfer to surroundings",
+            "Endothermic transfer from surroundings",
+            "Temperature evidence with controlled starting conditions"
+          ]
+        }
+      ],
+      "independentReasoning": "3.4 molar heat,1.28 amount and3.1 sign apply independently of unusual nitric-acid context. Source ECF/sign/2sf preserved.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            19,
+            27
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            23
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            16
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q10.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    },
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q10.d",
+      "questionPath": "10.d",
+      "originalMarks": 2,
+      "applicabilityDecision": "current-partial-point-demand",
+      "verifiedCurrentPointMappings": [
+        {
+          "pointId": "4CH1:issue3:3.2",
+          "role": "partial-current-point-demand",
+          "reviewReason": "Explain insulation in the supplied calorimetry apparatus; no performed/named experiment completion is claimed.",
+          "auditRef": "research/curriculum-audits/4CH1-physical.json",
+          "pdfPage": 27,
+          "printedPage": 21,
+          "components": [
+            "1C",
+            "2C"
+          ],
+          "verifiedRequirementSummaries": [
+            "Combustion water calorimetry and fuel amount",
+            "Neutralization cup calorimetry and combined mass",
+            "Dissolving calorimetry with stated mass assumption",
+            "Displacement calorimetry and limiting amount",
+            "Appropriate temperature measurements and apparatus assumptions"
+          ]
+        }
+      ],
+      "independentReasoning": "3.2 calorimetry insulation and PDF34 method-accuracy evaluation current; nitric-acid context does not exclude generic heat-loss reasoning.",
+      "contextualOnlyPointIds": [],
+      "unnumberedSkillReference": null,
+      "evidenceRefs": [
+        {
+          "documentRef": "work/sources/4CH1.pdf",
+          "pdfPages": [
+            27,
+            34
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:questionPaper",
+          "pdfPages": [
+            23
+          ]
+        },
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            17
+          ]
+        }
+      ],
+      "sourcePartitionRef": "research/extractions/4CH1-2024-June-1-standard/Q10.json",
+      "sourcePolicyPreserved": true,
+      "sourcePolicyFields": [
+        "criteria",
+        "acceptableAlternatives",
+        "dependencies",
+        "sourceScoring",
+        "scoringRule",
+        "sourceQualification"
+      ],
+      "officialPerLeafAO": null,
+      "officialPerLeafAOStatus": "No authoritative allocation inspected; not inferred.",
+      "currentApplicabilityReviewComplete": true,
+      "historicalAmendmentCertification": false
+    }
+  ],
+  "finalBlockers": [],
+  "integrationConditions": [
+    "Q2.a.v: retain current unnumbered safe-technique skill; no invented hazard point.",
+    "Q7.c.ii: document contextual effects extension, not direct4.16 effects coverage.",
+    "Q8.a.ii: preserve stereo concession without creating current compulsory cis/trans demand.",
+    "Q10.a: limited1.25 overlap/source-specific exception;2.37 exclusion and insufficient supplied products prevent unconditional ordinary current-content certification.",
+    "All source-policy and broader calibration/template/extraction blockers remain unchanged."
+  ],
+  "broaderReadiness": "Undetermined; zero unresolved applicability decisions because contextual exceptions are explicitly classified, not promoted to direct coverage.",
+  "trackedRecordsOtherThanThisReportChanged": false
+}

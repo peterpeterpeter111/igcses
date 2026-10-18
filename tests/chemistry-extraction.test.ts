@@ -95,7 +95,7 @@ spec=importlib.util.spec_from_file_location('chem','scripts/export-chemistry-q1.
 module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
 with tempfile.TemporaryDirectory() as d:
  root=Path(d)
- for p in ['research/ledger/v1','research/extractions/4CH1-2024-June-1-standard','research/batches','research/reviews','research/paper-indexes']:
+ for p in ['research/ledger/v1','research/extractions/4CH1-2024-June-1-standard','research/batches','research/reviews','research/paper-indexes','research/examiner-reports']:
   shutil.copytree(p,root/p)
  p=Path(module.OVERLAY);shutil.copy2(p,root/p)
  before={p:p.read_bytes() for p in (root/'research/ledger/v1').rglob('*.csv')}

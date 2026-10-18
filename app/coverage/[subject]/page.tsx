@@ -93,6 +93,21 @@ export default async function SubjectCoverage({
                   {' '}and {r.extraction.markSchemePages} scheme {r.extraction.markSchemePages === 1 ? 'page' : 'pages'}. The original text index
                   is preserved. {r.index ? 'The separate whole-paper visual inventory is complete; detailed review remains incomplete.' : r.extraction.printedChoices ? 'Candidate-path marks reconcile, but the whole-paper visual inventory remains incomplete.' : 'The whole-paper visual inventory and mark reconciliation remain incomplete.'}
                 </p>}
+                {r.examinerReport && <p className="status">
+                  <a href={r.examinerReport.url} target="_blank" rel="noreferrer">Official examiner report ↗</a>
+                  {' '}({r.examinerReport.pageCount} pages): {r.examinerReport.taskObservations} task observations
+                  reviewed across {r.examinerReport.ocrTextReviewedPages} selected pages using OCR,
+                  with {r.examinerReport.visuallyReviewedPages} pages visually checked.
+                  {' '}{r.examinerReport.tasksWithoutDirectObservation} tasks have no direct report observation recorded.
+                  This is a selected-page review; example marking and the whole visual report remain uncalibrated.
+                </p>}
+                {r.currentApplicability && <p className="status">
+                  Current-demand review: all {r.currentApplicability.reviewedTasks} parts reviewed;
+                  {' '}{r.currentApplicability.numberedPartialDemands} assess parts of numbered content,
+                  {' '}{r.currentApplicability.skillOnlyDemands} assesses a practical-safety skill and
+                  {' '}{r.currentApplicability.contextualExceptions} retain explicit contextual exceptions.
+                  This does not certify every historical amendment, official per-part AO marks or full paper processing.
+                </p>}
                 <details>
                   <summary>{r.fullyProcessed ? 'Remaining exam-practice limitations' : 'Remaining processing gaps'}</summary>
                   <ul className="plain-list">
@@ -102,7 +117,7 @@ export default async function SubjectCoverage({
                   </ul>
                 </details>
                 <details>
-                  <summary>Processing status notes</summary>
+                  <summary>{r.currentApplicability ? 'Historical extraction notes · later reviews shown above' : 'Processing status notes'}</summary>
                   <ul className="plain-list">
                     {r.extraction.notes.map((note) => (
                       <li key={note}>{note}</li>

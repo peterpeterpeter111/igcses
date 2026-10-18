@@ -12,6 +12,8 @@ import biologyIndex from '../research/paper-indexes/4BI1-2024-summer-1b.json' wi
 import humanExtraction from '../research/extractions/4HB1-2024-May-01-standard.json' with { type: 'json' };
 import biologyExtraction from '../research/extractions/4BI1-2024-June-1-standard.json' with { type: 'json' };
 import chemistryExtraction from '../research/extractions/4CH1-2024-June-1-standard.json' with { type: 'json' };
+import chemistryReport from '../research/paper-report-summaries/4CH1-2024-June-1-standard.json' with { type: 'json' };
+import chemistryApplicability from '../research/paper-report-summaries/4CH1-current-task-applicability.json' with { type: 'json' };
 import physicsIndex from '../research/reviews/2026-09-10-physics-leaf-index.json' with { type: 'json' };
 import physicsVisualAudit from '../research/reviews/2026-09-10-physics-visual-audit.json' with { type: 'json' };
 import { subjects } from '../content/catalog.ts';
@@ -126,6 +128,8 @@ export function subjectEvidence(code: string) {
       );
       return {
         paperId: r.paperId,
+        examinerReport: r.paperId === chemistryReport.paperId ? chemistryReport : null,
+        currentApplicability: r.paperId === chemistryApplicability.paperId ? chemistryApplicability : null,
         fullyProcessed: (r.paperId === englishMaySummary.paperId && englishMaySummary.fullyProcessedPapers === 1) || (r.paperId === englishNovemberSummary.paperId && englishNovemberSummary.fullyProcessedPapers === 1),
         questionPaper: r.questionPaper,
         markScheme: r.markScheme,
@@ -196,7 +200,7 @@ export function subjectEvidence(code: string) {
               originalMarks: detail.detailedOriginalMarks,
               expectedTasks: detail.wholePaperLeafCount,
               reviewedQuestions: Object.keys(detail.reviewedQuestionTotals),
-              blockers: detail.blockers,
+              blockers: r.paperId === chemistryApplicability.paperId ? chemistryApplicability.remainingProcessingGaps : detail.blockers,
               notes: detail.processingNotes,
               questionPaperPages:
                 detail.pageAudit.questionPaper.visuallyReviewedPages.length,

@@ -8,6 +8,7 @@ import json
 from pathlib import Path
 from extraction_io import read_extraction
 from ledger_io import read_table, table_outputs
+from chemistry_report import load_report
 
 ROOT = Path(__file__).resolve().parents[1]
 PAPER = '4CH1-2024-June-1-standard'
@@ -394,6 +395,26 @@ def prepare(root=ROOT, overlay=None, index_overlay=None):
             mappings.append(dict(mapping_id=t['taskId'] + ':' + x['pointId'], task_id=t['taskId'], point_id=x['pointId'], mapping_kind=x['kind'],
                 current_applicability=x['currentApplicability'], evidence_refs_json=compact(x['evidenceRefs']), rationale=x['rationale'], review_status='agent-reviewed',
                 reviewed_by=m['reviewer'], reviewer_type='agent', updated_at=date))
+    report = load_report(root, m)
+    if report:
+        doc = report['document']
+        method = report['method']
+        review_pages = sorted(set(method['ocrTextReviewedPages']) | set(method['visuallyReviewedPages']))
+        documents.append(dict(document_id=doc['documentId'], qualification='4CH1', document_type='examiner-report',
+            canonical_url=doc['url'], title='4CH1/1C June 2024 examiner report', publisher='Pearson', year=2024,
+            series='June', component='1C', variant='unresolved', publication_code=doc['publicationCode'],
+            sha256=doc['sha256'], page_count=doc['pageCount'], access_status='obtained',
+            local_evidence_path='research/examiner-reports/' + PAPER + '.json',
+            reviewed_pages_json=compact([dict(page=p, mode='visual-and-ocr' if p in method['visuallyReviewedPages'] and p in method['ocrTextReviewedPages'] else 'visual' if p in method['visuallyReviewedPages'] else 'ocr-text',
+                reviewer=report['reviewer'], date=report['reviewDate']) for p in review_pages]),
+            identity_status='agent-reviewed-selected-report-observations',
+            identity_notes='83 pages OCR-indexed; selected commentary reviewed, not a whole visual/text audit or calibration. Report cautions retained; official scheme remains authoritative.',
+            batch_id='chemistry-report-' + report['reviewDate'], updated_at=report['reviewDate']))
+        papers[0].update(examiner_report_ids_json=compact([doc['documentId']]), report_status='selected-observations-reviewed',
+            updated_at=report['reviewDate'])
+        for row in task_rows:
+            observations = [o for o in report['observations'] if o['taskId'] == row['task_id']]
+            row['report_refs_json'] = compact(observations)
     outputs = {}
     for name, key, incoming in [('documents', 'document_id', documents), ('papers', 'paper_id', papers), ('tasks', 'task_id', task_rows), ('task-mappings', 'mapping_id', mappings)]:
         folder = root / 'research/ledger/v1'
@@ -406,7 +427,7 @@ def prepare(root=ROOT, overlay=None, index_overlay=None):
         for row in incoming:
             require(not set(row) - set(fields), 'Unknown output columns')
             saved[row[key]] = {field: row.get(field, '') for field in fields}
-        outputs.update(table_outputs(folder, name, fields, saved.values(), '4CH1'))
+        outputs.update(table_outputs(folder, name, fields, sorted(saved.values(), key=lambda row: row[key]), '4CH1'))
     return outputs
 
 
