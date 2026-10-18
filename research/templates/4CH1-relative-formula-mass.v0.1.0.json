@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "id": "4CH1.relative-formula-mass",
+  "version": "0.1.0",
+  "status": "provisional",
+  "subject": "4CH1",
+  "origin": "exam-derived",
+  "syllabusRefs": [
+    {
+      "pointId": "4CH1:issue3:1.26",
+      "documentId": "4CH1-spec",
+      "issue": "3",
+      "pdfPages": [
+        19
+      ],
+      "mappingStatus": "verified"
+    }
+  ],
+  "sourceTasks": [
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q4.a.ii",
+      "paperId": "4CH1-2024-June-1-standard",
+      "questionPaper": {
+        "documentId": "4CH1-2024-June-1-standard:questionPaper",
+        "pdfPages": [
+          2,
+          8
+        ]
+      },
+      "markScheme": {
+        "documentId": "4CH1-2024-June-1-standard:markScheme",
+        "pdfPages": [
+          7
+        ]
+      },
+      "originalMarks": 2
+    }
+  ],
+  "answerGuideId": "chemistry:principles:relative-formula-mass",
+  "commandWord": "Calculate",
+  "skill": "Count atoms in a supplied molecular formula, multiply by supplied relative atomic masses and add the contributions.",
+  "assessmentObjectives": [
+    "unassigned-pending-official-AO-review"
+  ],
+  "originalMarks": [
+    2
+  ],
+  "customQuiz": {
+    "candidateMarks": [
+      2
+    ],
+    "validatedMarks": [],
+    "adaptationStatus": "pending",
+    "rationale": "Retain two original marks only. Four distinct element contributions are retained, but easier counts, structure context and presentation require independent difficulty and response calibration. No four/six-mark adaptation."
+  },
+  "stimulus": {
+    "types": [
+      "scenario",
+      "table"
+    ],
+    "originality": "original-generated-content",
+    "requirements": [
+      "Supply a neutral aminoalkanoic-acid molecular formula derived privately from H2N-(CH2)n-C(=O)-OH, integer n1..10. The learner need not recall this substance or the homologous relationship.",
+      "Show every C/H/N/O subscript clearly and provide C12,H1,N14,O16 in an explicit relative-atomic-mass table.",
+      "Ask for dimensionless relative formula mass, with space for working. No molar-mass unit, empirical-formula, percentage-composition or unknown product demand."
+    ],
+    "evidenceContract": [
+      "Freeze atom counts, atomic-mass table, exact sum, source-specific credit policy and original prompt before any answer.",
+      "Do not expose answer, seed, parameters, solution or marking criteria in a public question.",
+      "This contract is research only: no generator or semantic marker is implemented."
+    ]
+  },
+  "parameters": [
+    {
+      "id": "methyleneCount",
+      "type": "integer",
+      "domain": {
+        "minimum": 1,
+        "maximum": 10,
+        "step": 1
+      },
+      "constraints": [
+        "The neutral open-chain structure fixes all atom counts; do not sample arbitrary impossible CHNO formulas.",
+        "This deliberately bounded domain contains ten formula variants, not an unlimited bank."
+      ]
+    }
+  ],
+  "constraints": [
+    "Use C=n+1,H=2n+3,N=1,O=2; nitrogen is a neutral NH2 end group and COOH is the other end group.",
+    "Never substitute original caffeine C8H10N4O2 as a fresh generated item.",
+    "Four element terms do not prove equal difficulty to the caffeine source. Ten candidate variants require further breadth before live practice.",
+    "No active or validated status before generator, notation, response and mark-adaptation calibration."
+  ],
+  "relationships": [
+    "Mr = 12(n+1) + (2n+3) + 14 + 2×16 = 14n+61.",
+    "Correct final result can receive both source marks without working; no source ECF from a wrong formula or atomic mass."
+  ],
+  "difficultyControls": [
+    "Single N and fixed O2 make some terms easier than the source; empirical demand equivalence remains unverified.",
+    "Subscript typography, atomic-mass lookup and arithmetic size require learner trials."
+  ],
+  "transformations": [
+    {
+      "id": "change-chain-length",
+      "status": "candidate",
+      "conditions": "n1..10 preserves neutral valence and CHNO contributions; difficulty and response calibration pending."
+    },
+    {
+      "id": "add-brackets-charge-isotopes-or-marks",
+      "status": "forbidden",
+      "conditions": "Each added demand or different maximum needs a separately reviewed contract."
+    }
+  ],
+  "solutionProcedure": [
+    "Read the supplied atom counts and supplied relative atomic masses.",
+    "Write the sum of atom-count × relative-mass products for all four elements.",
+    "Evaluate the exact integer sum; relative formula mass is dimensionless."
+  ],
+  "marking": {
+    "method": "discrete-points",
+    "maximum": 2,
+    "criteria": [
+      {
+        "id": "correct-mass-expression",
+        "credit": 1,
+        "rule": "One mark for the complete correct numerical substitution of all atom counts and supplied relative atomic masses."
+      },
+      {
+        "id": "correct-mass-result",
+        "credit": 1,
+        "rule": "One further mark for the correct sum. The source awards both marks for a correct final answer without working; preserve that concession."
+      }
+    ],
+    "acceptableAlternatives": [
+      "Reordered additions/products and equivalent unambiguous arithmetic forms.",
+      "Correct final result alone receives two marks under the source concession; ambiguous or contradictory additional evidence needs review."
+    ],
+    "dependencies": [
+      "The correct-answer-without-working concession is not a generic automatic M2-subsumes-M1 dependency.",
+      "No ECF from incorrect formula or relative atomic masses. A correct substitution with evaluation error can retain the method mark."
+    ],
+    "contradictionRules": [
+      "No universal extra-answer, unit or working penalty is invented from examiner advice. Conflicting evidence requires source-policy review before automated marking."
+    ],
+    "units": null,
+    "tolerance": null,
+    "levelRubric": []
+  },
+  "commonErrors": [
+    {
+      "description": "Omitting an atom contribution, using atomic numbers, or applying an unnecessary further operation.",
+      "origin": "examiner-report",
+      "sourceRefs": [
+        {
+          "documentId": "4CH1-2024-June-1-standard:examinerReport",
+          "pdfPages": [
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Treating Mr as a mass in grams rather than a relative quantity.",
+      "origin": "editorial",
+      "sourceRefs": []
+    }
+  ],
+  "validation": {
+    "ruleIds": [
+      "source-policy",
+      "atom-conservation",
+      "neutral-valence",
+      "integer-mass-sum",
+      "source-exclusion",
+      "two-mark-credit",
+      "private-scheme",
+      "no-live-activation"
+    ],
+    "testPlan": [
+      "Check all ten proposed parameter values against independent atom counting and exact arithmetic.",
+      "Before implementation, calibrate method-only, result-only, alternative notation, contradictory responses, typography and difficulty."
+    ],
+    "testedSeeds": [],
+    "boundaryCoverage": "not-run",
+    "status": "not-run",
+    "runRefs": [
+      "research/validation/2026-10-19-chemistry-mass-contract.json"
+    ]
+  },
+  "runtime": {
+    "implemented": false,
+    "generatorId": null,
+    "seedPolicy": "No runtime or seed mapping implemented. Future mapping must preserve the finite candidate domain and source exclusion.",
+    "maxRetries": 0,
+    "publicFields": [
+      "prompt",
+      "stimulus",
+      "maximumMarks"
+    ],
+    "privateFields": [
+      "seed",
+      "parameters",
+      "solution",
+      "rubric",
+      "sourceTasks",
+      "validationResults"
+    ],
+    "freezeBeforeAnswer": true,
+    "releaseSchemeAfter": "session-completed"
+  },
+  "review": {
+    "pedagogyStatus": "pending",
+    "reviewer": "Codex",
+    "reviewerType": "agent",
+    "humanReviewed": false,
+    "blockers": [
+      "Candidate domain is intentionally small and not difficulty-calibrated.",
+      "No runtime generator, response recognizer, layout validation or live registration.",
+      "Official source per-leaf AO allocation is unverified.",
+      "Source credit contract is pinned, but generated variants and custom two-mark adaptation have not passed the activation gate."
+    ]
+  }
+}

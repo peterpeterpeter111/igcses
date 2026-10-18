@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-10-19",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Source-credit contract and independently counted finite candidate arithmetic only; no generated questions, response calibration or activation.",
+  "familyId": "4CH1.relative-formula-mass",
+  "familyVersion": "0.1.0",
+  "sourceTaskId": "4CH1-2024-June-1-standard.Q4.a.ii",
+  "sourcePartition": {
+    "path": "research/extractions/4CH1-2024-June-1-standard/Q4.json",
+    "sha256": "2060cd915e2b7940c00a009570398367506a5c28b0a584846933436f55da898e"
+  },
+  "sourcePolicy": {
+    "atomCounts": {
+      "C": 8,
+      "H": 10,
+      "N": 4,
+      "O": 2
+    },
+    "relativeAtomicMasses": {
+      "C": 12,
+      "H": 1,
+      "N": 14,
+      "O": 16
+    },
+    "result": 194,
+    "correctAnswerCredit": 2,
+    "correctAnswerWorkingRequired": false,
+    "ecfAllowed": false,
+    "recognitionStatus": "not-implemented"
+  },
+  "sourceCriterionIds": [
+    "4CH1-2024-June-1-standard.Q4.a.ii:M1",
+    "4CH1-2024-June-1-standard.Q4.a.ii:M2"
+  ],
+  "sourceFixture": {
+    "atomCounts": {
+      "C": 8,
+      "H": 10,
+      "N": 4,
+      "O": 2
+    },
+    "relativeFormulaMass": 194,
+    "correctAnswerNoWorkingCredit": 2,
+    "correctSubstitutionWrongEvaluationCredit": 1,
+    "wrongFormulaEcfAllowed": false
+  },
+  "neutralStructureReasoning": "Each internal CH2 carbon has two chain bonds and two hydrogens. Terminal amino N has one chain bond and two H. Carboxyl C has one chain bond, C=O and C-OH. Oxygen valences are two. Thus all proposed chains have a neutral saturated open-chain representation; no named isomer recall is assessed.",
+  "candidateCases": [
+    {
+      "n": 1,
+      "atomCounts": {
+        "C": 2,
+        "H": 5,
+        "N": 1,
+        "O": 2
+      },
+      "relativeFormulaMass": 75,
+      "calibrated": false
+    },
+    {
+      "n": 2,
+      "atomCounts": {
+        "C": 3,
+        "H": 7,
+        "N": 1,
+        "O": 2
+      },
+      "relativeFormulaMass": 89,
+      "calibrated": false
+    },
+    {
+      "n": 3,
+      "atomCounts": {
+        "C": 4,
+        "H": 9,
+        "N": 1,
+        "O": 2
+      },
+      "relativeFormulaMass": 103,
+      "calibrated": false
+    },
+    {
+      "n": 4,
+      "atomCounts": {
+        "C": 5,
+        "H": 11,
+        "N": 1,
+        "O": 2
+      },
+      "relativeFormulaMass": 117,
+      "calibrated": false
+    },
+    {
+      "n": 5,
+      "atomCounts": {
+        "C": 6,
+        "H": 13,
+        "N": 1,
+        "O": 2
+      },
+      "relativeFormulaMass": 131,
+      "calibrated": false
+    },
+    {
+      "n": 6,
+      "atomCounts": {
+        "C": 7,
+        "H": 15,
+        "N": 1,
+        "O": 2
+      },
+      "relativeFormulaMass": 145,
+      "calibrated": false
+    },
+    {
+      "n": 7,
+      "atomCounts": {
+        "C": 8,
+        "H": 17,
+        "N": 1,
+        "O": 2
+      },
+      "relativeFormulaMass": 159,
+      "calibrated": false
+    },
+    {
+      "n": 8,
+      "atomCounts": {
+        "C": 9,
+        "H": 19,
+        "N": 1,
+        "O": 2
+      },
+      "relativeFormulaMass": 173,
+      "calibrated": false
+    },
+    {
+      "n": 9,
+      "atomCounts": {
+        "C": 10,
+        "H": 21,
+        "N": 1,
+        "O": 2
+      },
+      "relativeFormulaMass": 187,
+      "calibrated": false
+    },
+    {
+      "n": 10,
+      "atomCounts": {
+        "C": 11,
+        "H": 23,
+        "N": 1,
+        "O": 2
+      },
+      "relativeFormulaMass": 201,
+      "calibrated": false
+    }
+  ],
+  "generatorImplemented": false,
+  "automatedMarkerImplemented": false,
+  "difficultyEquivalenceValidated": false,
+  "validatedCustomMarks": [],
+  "activeTemplates": 0
+}

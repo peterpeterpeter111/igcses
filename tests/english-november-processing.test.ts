@@ -14,7 +14,7 @@ void test('November source completion preserves optional paths, version history 
   assert.equal(summary.assessedMarks, 100);
   assert.equal(summary.allAlternativesMarks, 160);
   assert.equal(coverageSummary().find((r) => r.subject.code === '4EB1')?.fullyProcessed, 2);
-  assert.equal(evidenceHighlights.provisionalFamilies, 17);
+  assert.equal(evidenceHighlights.provisionalFamilies, 18);
   assert.equal(evidenceHighlights.experimentalGenerators, 7);
   assert.equal(evidenceHighlights.activeFamilies, 0);
   const result = JSON.parse(execFileSync('python3', ['-c', `

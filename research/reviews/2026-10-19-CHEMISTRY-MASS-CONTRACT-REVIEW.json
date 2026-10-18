@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-19",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Bounded source-credit, current1.26 and finite neutral-structure/arithmetic contract review; no runtime execution, source-processing status or active-template promotion.",
+  "verdict": "adequate-provisional-contract-with-calibration-limits",
+  "reviewedFiles": [
+    {
+      "path": "research/templates/4CH1-relative-formula-mass.v0.1.0.json",
+      "sha256": "a6c42a40921f418399bfbf7618733e78f0cfba403856466d2ddd1eceeae91c9d"
+    },
+    {
+      "path": "research/validation/2026-10-19-chemistry-mass-contract.json",
+      "sha256": "d60be729711d97b230a36b1bcdd60c32bb533924032b1e90263d218244a0fdd2"
+    },
+    {
+      "path": "research/extractions/4CH1-2024-June-1-standard/Q4.json",
+      "sha256": "2060cd915e2b7940c00a009570398367506a5c28b0a584846933436f55da898e"
+    }
+  ],
+  "sourcePartitionHashMatchesValidation": true,
+  "sourceEvidence": [
+    {
+      "path": "work/batches/2026-09-08-cross-subject-lower-01/4CH1-2024-June-1-standard/4ch1-1c-rms-20240822.pdf",
+      "pdfPage": 7,
+      "access": "Exact retained source-page text read: M1 correct four-term substitution, M2=194, correct194 scores2, No ECF."
+    },
+    {
+      "path": "work/sources/4CH1.pdf",
+      "pdfPage": 19,
+      "printedPage": 13,
+      "pointId": "4CH1:issue3:1.26",
+      "access": "Exact retained current wording read; calculate relative formula/molecular masses from relative atomic masses."
+    }
+  ],
+  "sourceCreditReview": {
+    "sourceMaximum": 2,
+    "correctAnswerAlone": 2,
+    "correctSubstitutionWrongAddition": 1,
+    "wrongFormulaOrAtomicMassECF": false,
+    "preserved": true,
+    "limits": "Method-only credit follows explicit M1 independent of M2 arithmetic. Correct-answer-alone concession is preserved; contradictory working remains pending, with no invented automatic penalty or M2 dependency. No extra units or alternative-answer penalties authorised."
+  },
+  "chemistryReview": {
+    "structure": "H2N-(CH2)n-C(=O)-OH",
+    "domain": "integer n1..10",
+    "atomReasoning": "NH2 contributes H2N; n methylene units contribute CnH2n; COOH contributes CHO2. Total C(n+1)H(2n+3)NO2. Carbon/nitrogen/oxygen normal valences satisfied in the neutral structural representation.",
+    "massReasoning": "12(n+1)+(2n+3)+14+32 =14n+61.",
+    "allTenMatch": true,
+    "representationLimit": "Neutral drawing is valid bookkeeping, not a claim these amino acids predominantly exist as uncharged molecules in every physical phase or pH. Zwitterionic/protonation forms do not change the supplied neutral molecular atom inventory for this Mr task. No added ionic-state demand is needed."
+  },
+  "independentCandidateChecks": [
+    {
+      "n": 1,
+      "independentlyCountedAtoms": {
+        "C": 2,
+        "H": 5,
+        "N": 1,
+        "O": 2
+      },
+      "independentMr": 75,
+      "matchesCandidate": true
+    },
+    {
+      "n": 2,
+      "independentlyCountedAtoms": {
+        "C": 3,
+        "H": 7,
+        "N": 1,
+        "O": 2
+      },
+      "independentMr": 89,
+      "matchesCandidate": true
+    },
+    {
+      "n": 3,
+      "independentlyCountedAtoms": {
+        "C": 4,
+        "H": 9,
+        "N": 1,
+        "O": 2
+      },
+      "independentMr": 103,
+      "matchesCandidate": true
+    },
+    {
+      "n": 4,
+      "independentlyCountedAtoms": {
+        "C": 5,
+        "H": 11,
+        "N": 1,
+        "O": 2
+      },
+      "independentMr": 117,
+      "matchesCandidate": true
+    },
+    {
+      "n": 5,
+      "independentlyCountedAtoms": {
+        "C": 6,
+        "H": 13,
+        "N": 1,
+        "O": 2
+      },
+      "independentMr": 131,
+      "matchesCandidate": true
+    },
+    {
+      "n": 6,
+      "independentlyCountedAtoms": {
+        "C": 7,
+        "H": 15,
+        "N": 1,
+        "O": 2
+      },
+      "independentMr": 145,
+      "matchesCandidate": true
+    },
+    {
+      "n": 7,
+      "independentlyCountedAtoms": {
+        "C": 8,
+        "H": 17,
+        "N": 1,
+        "O": 2
+      },
+      "independentMr": 159,
+      "matchesCandidate": true
+    },
+    {
+      "n": 8,
+      "independentlyCountedAtoms": {
+        "C": 9,
+        "H": 19,
+        "N": 1,
+        "O": 2
+      },
+      "independentMr": 173,
+      "matchesCandidate": true
+    },
+    {
+      "n": 9,
+      "independentlyCountedAtoms": {
+        "C": 10,
+        "H": 21,
+        "N": 1,
+        "O": 2
+      },
+      "independentMr": 187,
+      "matchesCandidate": true
+    },
+    {
+      "n": 10,
+      "independentlyCountedAtoms": {
+        "C": 11,
+        "H": 23,
+        "N": 1,
+        "O": 2
+      },
+      "independentMr": 201,
+      "matchesCandidate": true
+    }
+  ],
+  "pedagogyReview": {
+    "currentScope": "All variants are supplied-formula1.26 calculations. Longer chains do not create a prohibited naming demand because names/structures are not required of the learner.",
+    "sourceIndependence": "No candidate duplicates caffeine C8H10N4O2; n7 gives C8H17NO2 instead.",
+    "explanationQuality": "Read counts, multiply each by supplied Ar, sum, report dimensionless Mr is clear and correct. Atomic masses explicitly provided; no compound recall required.",
+    "generalizationLimit": "Ten related formulas with fixed N1/O2 are materially narrower/easier in some terms than source caffeine. Equal four-element count is not evidence of equal difficulty. Template explicitly acknowledges this and leaves adaptation/calibration pending."
+  },
+  "blockingContractDefects": [],
+  "nonblockingClarifications": [
+    "Retain neutral representation qualification; do not extend it into an experimental speciation claim.",
+    "Validation status not-run in template concerns generation/calibration; the companion arithmetic-only review must remain distinguished from tested seeds or validated custom marks."
+  ],
+  "activationBlockersRemain": [
+    "No implemented generator or semantic marker.",
+    "No rendering/notation/contradictory-response calibration.",
+    "No empirical difficulty equivalence or validated two-mark adaptation.",
+    "No official per-leaf AO allocation inspected."
+  ],
+  "promotionAuthorised": false
+}

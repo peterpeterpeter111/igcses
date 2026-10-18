@@ -30,6 +30,7 @@ import {
 
 import researchFamilies from '../research/template-summaries.json' with { type: 'json' };
 const familyNames: Record<string, string> = {
+  '4CH1.relative-formula-mass': 'Chemistry relative formula mass',
   '4HB1.cube.measure': 'Human Biology cube measures',
   '4EB1.retrieve-two-causes': 'English retrieval',
   '4PH1.collinear-resultant': 'Physics resultant force',
