@@ -1,0 +1,1731 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4CH1",
+  "date": "2026-10-18",
+  "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "sourceScopeReviewRef": "research/reviews/reaction-source-scope-2026-10-17/inorganic-source.json",
+  "scope": "Thirty-two finite molecular models grouped into twelve partial1.25 family lessons; named contexts and selected reagents remain distinct. No full collection, practical trial or activated exam template.",
+  "wholeCollectionComplete": false,
+  "humanReviewed": false,
+  "practicalTrialsPerformed": false,
+  "noteRef": "content/notes/chemistry.json",
+  "noteSectionIds": [
+    "equation-family-inorganic-group1-water",
+    "equation-family-inorganic-halogen-displacement",
+    "equation-family-inorganic-combustion",
+    "equation-family-inorganic-thermal-carbonate",
+    "equation-family-inorganic-metal-water-acid",
+    "equation-family-inorganic-extraction",
+    "equation-family-inorganic-salt-preparation",
+    "equation-family-inorganic-gas-tests",
+    "equation-family-inorganic-metal-hydroxide-tests",
+    "equation-family-inorganic-anion-tests",
+    "equation-family-inorganic-oxygen-redox",
+    "equation-family-inorganic-acid-breadth"
+  ],
+  "models": [
+    {
+      "id": "lithium-water",
+      "sourceIds": [
+        "4CH1:issue3:2.1",
+        "4CH1:issue3:2.2"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "named-group-member",
+      "existingSectionIds": [
+        "group1-water-family",
+        "group1-air-water-trend",
+        "alkali-family-transfer-evidence",
+        "alkali-comparison-and-shielding-evidence"
+      ],
+      "conditions": "Cold-water school model; state of metal describes initial sample.",
+      "limits": "No uniform air-tarnish equation inferred; comparison is supervised context, no practical trial.",
+      "reactants": [
+        {
+          "coefficient": 2,
+          "formula": "Li",
+          "state": "s",
+          "name": "lithium"
+        },
+        {
+          "coefficient": 2,
+          "formula": "H2O",
+          "state": "l",
+          "name": "water"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 2,
+          "formula": "LiOH",
+          "state": "aq",
+          "name": "lithium hydroxide"
+        },
+        {
+          "coefficient": 1,
+          "formula": "H2",
+          "state": "g",
+          "name": "hydrogen"
+        }
+      ],
+      "formulaEquation": "2Li(s) + 2H₂O(l) → 2LiOH(aq) + H₂(g)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "lithium + water → lithium hydroxide + hydrogen",
+      "sectionId": "equation-family-inorganic-group1-water"
+    },
+    {
+      "id": "sodium-water",
+      "sourceIds": [
+        "4CH1:issue3:2.1",
+        "4CH1:issue3:2.2"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "named-group-member",
+      "existingSectionIds": [
+        "group1-water-family",
+        "group1-air-water-trend",
+        "alkali-family-transfer-evidence",
+        "alkali-comparison-and-shielding-evidence"
+      ],
+      "conditions": "Cold-water school model; state of metal describes initial sample.",
+      "limits": "No uniform air-tarnish equation inferred; comparison is supervised context, no practical trial.",
+      "reactants": [
+        {
+          "coefficient": 2,
+          "formula": "Na",
+          "state": "s",
+          "name": "sodium"
+        },
+        {
+          "coefficient": 2,
+          "formula": "H2O",
+          "state": "l",
+          "name": "water"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 2,
+          "formula": "NaOH",
+          "state": "aq",
+          "name": "sodium hydroxide"
+        },
+        {
+          "coefficient": 1,
+          "formula": "H2",
+          "state": "g",
+          "name": "hydrogen"
+        }
+      ],
+      "formulaEquation": "2Na(s) + 2H₂O(l) → 2NaOH(aq) + H₂(g)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "sodium + water → sodium hydroxide + hydrogen",
+      "sectionId": "equation-family-inorganic-group1-water"
+    },
+    {
+      "id": "potassium-water",
+      "sourceIds": [
+        "4CH1:issue3:2.1",
+        "4CH1:issue3:2.2"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "named-group-member",
+      "existingSectionIds": [
+        "group1-water-family",
+        "group1-air-water-trend",
+        "alkali-family-transfer-evidence",
+        "alkali-comparison-and-shielding-evidence"
+      ],
+      "conditions": "Cold-water school model; state of metal describes initial sample.",
+      "limits": "No uniform air-tarnish equation inferred; comparison is supervised context, no practical trial.",
+      "reactants": [
+        {
+          "coefficient": 2,
+          "formula": "K",
+          "state": "s",
+          "name": "potassium"
+        },
+        {
+          "coefficient": 2,
+          "formula": "H2O",
+          "state": "l",
+          "name": "water"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 2,
+          "formula": "KOH",
+          "state": "aq",
+          "name": "potassium hydroxide"
+        },
+        {
+          "coefficient": 1,
+          "formula": "H2",
+          "state": "g",
+          "name": "hydrogen"
+        }
+      ],
+      "formulaEquation": "2K(s) + 2H₂O(l) → 2KOH(aq) + H₂(g)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "potassium + water → potassium hydroxide + hydrogen",
+      "sectionId": "equation-family-inorganic-group1-water"
+    },
+    {
+      "id": "cl-displaces-br",
+      "sourceIds": [
+        "4CH1:issue3:2.7"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "named-group-family-representative-sodium-salt",
+      "existingSectionIds": [
+        "halogen-displacement-pattern",
+        "halogen-displacement-equations",
+        "halogen-displacement-evidence",
+        "halogen-ranking-transfer-evidence",
+        "halogen-species-and-charge-evidence",
+        "halogen-observation-control-evidence"
+      ],
+      "conditions": "Dilute aqueous displacement model; product concentration chosen within solubility.",
+      "limits": "Na+ spectator is editorial choice. Iodine can precipitate or form other dissolved species at other concentrations; do not transfer room-temperature pure-element states. Reverse displacement unsupported.",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "Cl2",
+          "state": "aq",
+          "name": "chlorine"
+        },
+        {
+          "coefficient": 2,
+          "formula": "NaBr",
+          "state": "aq",
+          "name": "sodium bromide"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 2,
+          "formula": "NaCl",
+          "state": "aq",
+          "name": "sodium chloride"
+        },
+        {
+          "coefficient": 1,
+          "formula": "Br2",
+          "state": "aq",
+          "name": "bromine"
+        }
+      ],
+      "formulaEquation": "Cl₂(aq) + 2NaBr(aq) → 2NaCl(aq) + Br₂(aq)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "chlorine + sodium bromide → sodium chloride + bromine",
+      "sectionId": "equation-family-inorganic-halogen-displacement"
+    },
+    {
+      "id": "cl-displaces-i",
+      "sourceIds": [
+        "4CH1:issue3:2.7"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "named-group-family-representative-sodium-salt",
+      "existingSectionIds": [
+        "halogen-displacement-pattern",
+        "halogen-displacement-equations",
+        "halogen-displacement-evidence",
+        "halogen-ranking-transfer-evidence",
+        "halogen-species-and-charge-evidence",
+        "halogen-observation-control-evidence"
+      ],
+      "conditions": "Dilute aqueous displacement model; product concentration chosen within solubility.",
+      "limits": "Na+ spectator is editorial choice. Iodine can precipitate or form other dissolved species at other concentrations; do not transfer room-temperature pure-element states. Reverse displacement unsupported.",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "Cl2",
+          "state": "aq",
+          "name": "chlorine"
+        },
+        {
+          "coefficient": 2,
+          "formula": "NaI",
+          "state": "aq",
+          "name": "sodium iodide"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 2,
+          "formula": "NaCl",
+          "state": "aq",
+          "name": "sodium chloride"
+        },
+        {
+          "coefficient": 1,
+          "formula": "I2",
+          "state": "aq",
+          "name": "iodine"
+        }
+      ],
+      "formulaEquation": "Cl₂(aq) + 2NaI(aq) → 2NaCl(aq) + I₂(aq)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "chlorine + sodium iodide → sodium chloride + iodine",
+      "sectionId": "equation-family-inorganic-halogen-displacement"
+    },
+    {
+      "id": "br-displaces-i",
+      "sourceIds": [
+        "4CH1:issue3:2.7"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "named-group-family-representative-sodium-salt",
+      "existingSectionIds": [
+        "halogen-displacement-pattern",
+        "halogen-displacement-equations",
+        "halogen-displacement-evidence",
+        "halogen-ranking-transfer-evidence",
+        "halogen-species-and-charge-evidence",
+        "halogen-observation-control-evidence"
+      ],
+      "conditions": "Dilute aqueous displacement model; product concentration chosen within solubility.",
+      "limits": "Na+ spectator is editorial choice. Iodine can precipitate or form other dissolved species at other concentrations; do not transfer room-temperature pure-element states. Reverse displacement unsupported.",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "Br2",
+          "state": "aq",
+          "name": "bromine"
+        },
+        {
+          "coefficient": 2,
+          "formula": "NaI",
+          "state": "aq",
+          "name": "sodium iodide"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 2,
+          "formula": "NaBr",
+          "state": "aq",
+          "name": "sodium bromide"
+        },
+        {
+          "coefficient": 1,
+          "formula": "I2",
+          "state": "aq",
+          "name": "iodine"
+        }
+      ],
+      "formulaEquation": "Br₂(aq) + 2NaI(aq) → 2NaBr(aq) + I₂(aq)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "bromine + sodium iodide → sodium bromide + iodine",
+      "sectionId": "equation-family-inorganic-halogen-displacement"
+    },
+    {
+      "id": "hydrogen-combustion",
+      "sourceIds": [
+        "4CH1:issue3:2.11",
+        "4CH1:issue3:2.44"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "required-named",
+      "existingSectionIds": [
+        "magnesium-combustion",
+        "hydrogen-combustion",
+        "sulfur-combustion",
+        "test-hydrogen-oxygen",
+        "test-carbon-dioxide",
+        "test-ammonia-chlorine",
+        "test-observation-inference",
+        "element-combustion-transfer-evidence"
+      ],
+      "conditions": "Burning hydrogen; hot product region.",
+      "limits": "Condensation later yields liquid water; same model supports pop test without a duplicate entry.",
+      "reactants": [
+        {
+          "coefficient": 2,
+          "formula": "H2",
+          "state": "g",
+          "name": "hydrogen"
+        },
+        {
+          "coefficient": 1,
+          "formula": "O2",
+          "state": "g",
+          "name": "oxygen"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 2,
+          "formula": "H2O",
+          "state": "g",
+          "name": "water"
+        }
+      ],
+      "formulaEquation": "2H₂(g) + O₂(g) → 2H₂O(g)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "hydrogen + oxygen → water",
+      "sectionId": "equation-family-inorganic-combustion"
+    },
+    {
+      "id": "sulfur-combustion",
+      "sourceIds": [
+        "4CH1:issue3:2.11"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "required-named",
+      "existingSectionIds": [
+        "magnesium-combustion",
+        "hydrogen-combustion",
+        "sulfur-combustion",
+        "element-combustion-transfer-evidence"
+      ],
+      "conditions": "Ignited sulfur in oxygen; atomic S school representation.",
+      "limits": "If S8 supplied use S8 + 8O2 → 8SO2; not another required case.",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "S",
+          "state": "s",
+          "name": "sulfur"
+        },
+        {
+          "coefficient": 1,
+          "formula": "O2",
+          "state": "g",
+          "name": "oxygen"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "SO2",
+          "state": "g",
+          "name": "sulfur dioxide"
+        }
+      ],
+      "formulaEquation": "S(s) + O₂(g) → SO₂(g)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "sulfur + oxygen → sulfur dioxide",
+      "sectionId": "equation-family-inorganic-combustion"
+    },
+    {
+      "id": "copper-carbonate-decomposition",
+      "sourceIds": [
+        "4CH1:issue3:2.12"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "required-named",
+      "existingSectionIds": [
+        "carbonate-decomposition",
+        "carbonate-decomposition-transfer-evidence"
+      ],
+      "conditions": "Heating specified pure-CuCO3 model.",
+      "limits": "Basic copper carbonate differs: supplied CuCO3·Cu(OH)2 gives 2CuO + CO2 + H2O; not silently interchangeable.",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "CuCO3",
+          "state": "s",
+          "name": "copper(II) carbonate"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "CuO",
+          "state": "s",
+          "name": "copper(II) oxide"
+        },
+        {
+          "coefficient": 1,
+          "formula": "CO2",
+          "state": "g",
+          "name": "carbon dioxide"
+        }
+      ],
+      "formulaEquation": "CuCO₃(s) → CuO(s) + CO₂(g)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "copper(II) carbonate → copper(II) oxide + carbon dioxide",
+      "sectionId": "equation-family-inorganic-thermal-carbonate"
+    },
+    {
+      "id": "magnesium-steam",
+      "sourceIds": [
+        "4CH1:issue3:2.15"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "representative-family",
+      "existingSectionIds": [
+        "metal-water-evidence",
+        "metal-acid-evidence",
+        "metal-condition-ranking-evidence"
+      ],
+      "conditions": "Heated magnesium and steam.",
+      "limits": "Cold-water reaction is very slow and gives hydroxide; not universal water product.",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "Mg",
+          "state": "s",
+          "name": "magnesium"
+        },
+        {
+          "coefficient": 1,
+          "formula": "H2O",
+          "state": "g",
+          "name": "water"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "MgO",
+          "state": "s",
+          "name": "magnesium oxide"
+        },
+        {
+          "coefficient": 1,
+          "formula": "H2",
+          "state": "g",
+          "name": "hydrogen"
+        }
+      ],
+      "formulaEquation": "Mg(s) + H₂O(g) → MgO(s) + H₂(g)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "magnesium + water → magnesium oxide + hydrogen",
+      "sectionId": "equation-family-inorganic-metal-water-acid"
+    },
+    {
+      "id": "magnesium-hydrochloric",
+      "sourceIds": [
+        "4CH1:issue3:2.15",
+        "4CH1:issue3:2.21",
+        "4CH1:issue3:2.37"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "publisher-example-representative",
+      "existingSectionIds": [
+        "metal-water-evidence",
+        "metal-acid-evidence",
+        "acid-metal-practical-plan",
+        "acid-metal-practical-interpretation",
+        "acid-metal-salts",
+        "acid-base-salts",
+        "acid-carbonate-salts",
+        "metal-condition-ranking-evidence",
+        "acid-metal-observation-transfer-evidence"
+      ],
+      "conditions": "Dilute hydrochloric acid.",
+      "limits": "Mg/Zn/Fe in 2.21 are examples, not exclusive mandatory cases.",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "Mg",
+          "state": "s",
+          "name": "magnesium"
+        },
+        {
+          "coefficient": 2,
+          "formula": "HCl",
+          "state": "aq",
+          "name": "hydrochloric acid"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "MgCl2",
+          "state": "aq",
+          "name": "magnesium chloride"
+        },
+        {
+          "coefficient": 1,
+          "formula": "H2",
+          "state": "g",
+          "name": "hydrogen"
+        }
+      ],
+      "formulaEquation": "Mg(s) + 2HCl(aq) → MgCl₂(aq) + H₂(g)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "magnesium + hydrochloric acid → magnesium chloride + hydrogen",
+      "sectionId": "equation-family-inorganic-metal-water-acid"
+    },
+    {
+      "id": "iron-sulfuric",
+      "sourceIds": [
+        "4CH1:issue3:2.15",
+        "4CH1:issue3:2.21",
+        "4CH1:issue3:2.37"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "publisher-example-representative",
+      "existingSectionIds": [
+        "metal-water-evidence",
+        "metal-acid-evidence",
+        "acid-metal-practical-plan",
+        "acid-metal-practical-interpretation",
+        "acid-metal-salts",
+        "acid-base-salts",
+        "acid-carbonate-salts",
+        "metal-condition-ranking-evidence",
+        "acid-metal-observation-transfer-evidence"
+      ],
+      "conditions": "Dilute sulfuric acid, suitable exposed iron surface.",
+      "limits": "Iron(II), not iron(III); concentrated/oxidising-acid behaviour not represented. This and preceding case cover both practical acid types without six compulsory combinations.",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "Fe",
+          "state": "s",
+          "name": "iron"
+        },
+        {
+          "coefficient": 1,
+          "formula": "H2SO4",
+          "state": "aq",
+          "name": "sulfuric acid"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "FeSO4",
+          "state": "aq",
+          "name": "iron(II) sulfate"
+        },
+        {
+          "coefficient": 1,
+          "formula": "H2",
+          "state": "g",
+          "name": "hydrogen"
+        }
+      ],
+      "formulaEquation": "Fe(s) + H₂SO₄(aq) → FeSO₄(aq) + H₂(g)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "iron + sulfuric acid → iron(II) sulfate + hydrogen",
+      "sectionId": "equation-family-inorganic-metal-water-acid"
+    },
+    {
+      "id": "iron-oxide-carbon-monoxide",
+      "sourceIds": [
+        "4CH1:issue3:2.23C"
+      ],
+      "components": [
+        "2C"
+      ],
+      "sourceDemand": "required-named-route-representative-equation",
+      "existingSectionIds": [
+        "metal-extraction-carbon",
+        "metal-extraction-electrolysis",
+        "extraction-route-transfer-evidence"
+      ],
+      "conditions": "Explicit heated solid-oxide reduction stage below iron melting point.",
+      "limits": "Carbon supplies reducing CO in conventional extraction; later furnace melting not modelled. Do not claim iron(s) throughout furnace or mandate every furnace equation.",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "Fe2O3",
+          "state": "s",
+          "name": "iron(III) oxide"
+        },
+        {
+          "coefficient": 3,
+          "formula": "CO",
+          "state": "g",
+          "name": "carbon monoxide"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 2,
+          "formula": "Fe",
+          "state": "s",
+          "name": "iron"
+        },
+        {
+          "coefficient": 3,
+          "formula": "CO2",
+          "state": "g",
+          "name": "carbon dioxide"
+        }
+      ],
+      "formulaEquation": "Fe₂O₃(s) + 3CO(g) → 2Fe(s) + 3CO₂(g)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "iron(III) oxide + carbon monoxide → iron + carbon dioxide",
+      "sectionId": "equation-family-inorganic-extraction"
+    },
+    {
+      "id": "copper-oxide-sulfate",
+      "sourceIds": [
+        "4CH1:issue3:2.37",
+        "4CH1:issue3:2.39",
+        "4CH1:issue3:2.42"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "required-named-preparation",
+      "existingSectionIds": [
+        "acid-metal-salts",
+        "acid-base-salts",
+        "acid-carbonate-salts",
+        "salt-insoluble-reactant",
+        "salt-copper-hydrated",
+        "salt-method-choice",
+        "salt-purity-recovery"
+      ],
+      "conditions": "Warm dilute acid, excess oxide filtered off; concentrate filtrate and cool.",
+      "limits": "Crystallisation gives hydrated CuSO4·5H2O, not directly anhydrous solid from this aqueous equation. Shared preparation context avoids duplicate equation.",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "CuO",
+          "state": "s",
+          "name": "copper(II) oxide"
+        },
+        {
+          "coefficient": 1,
+          "formula": "H2SO4",
+          "state": "aq",
+          "name": "sulfuric acid"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "CuSO4",
+          "state": "aq",
+          "name": "copper(II) sulfate"
+        },
+        {
+          "coefficient": 1,
+          "formula": "H2O",
+          "state": "l",
+          "name": "water"
+        }
+      ],
+      "formulaEquation": "CuO(s) + H₂SO₄(aq) → CuSO₄(aq) + H₂O(l)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "copper(II) oxide + sulfuric acid → copper(II) sulfate + water",
+      "sectionId": "equation-family-inorganic-salt-preparation"
+    },
+    {
+      "id": "lead-sulfate-precipitation",
+      "sourceIds": [
+        "4CH1:issue3:2.41C",
+        "4CH1:issue3:2.43C"
+      ],
+      "components": [
+        "2C"
+      ],
+      "sourceDemand": "required-named-product-representative-reagents",
+      "existingSectionIds": [
+        "salt-precipitation",
+        "salt-lead-sulfate",
+        "salt-method-choice"
+      ],
+      "conditions": "Mix suitable soluble solutions; filter, wash, dry under supervised procedure.",
+      "limits": "Nitrate and sodium sulfate are choices, not the sole prescribed reagents. Net Pb2+ + SO4^2− → PbSO4.",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "Pb(NO3)2",
+          "state": "aq",
+          "name": "lead(II) nitrate"
+        },
+        {
+          "coefficient": 1,
+          "formula": "Na2SO4",
+          "state": "aq",
+          "name": "sodium sulfate"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "PbSO4",
+          "state": "s",
+          "name": "lead(II) sulfate"
+        },
+        {
+          "coefficient": 2,
+          "formula": "NaNO3",
+          "state": "aq",
+          "name": "sodium nitrate"
+        }
+      ],
+      "formulaEquation": "Pb(NO₃)₂(aq) + Na₂SO₄(aq) → PbSO₄(s) + 2NaNO₃(aq)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "lead(II) nitrate + sodium sulfate → lead(II) sulfate + sodium nitrate",
+      "sectionId": "equation-family-inorganic-salt-preparation"
+    },
+    {
+      "id": "limewater-carbon-dioxide",
+      "sourceIds": [
+        "4CH1:issue3:2.44",
+        "4CH1:issue3:2.48"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "required-named-test",
+      "existingSectionIds": [
+        "test-hydrogen-oxygen",
+        "test-carbon-dioxide",
+        "test-ammonia-chlorine",
+        "test-halide-ions",
+        "test-sulfate-ions",
+        "test-carbonate-ions",
+        "test-observation-inference"
+      ],
+      "conditions": "Carbon dioxide feed into limewater; initial cloudy precipitate.",
+      "limits": "Excess CO2 can clear cloudiness; further hydrogencarbonate model is not a new compulsory bank case.",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "CO2",
+          "state": "g",
+          "name": "carbon dioxide"
+        },
+        {
+          "coefficient": 1,
+          "formula": "Ca(OH)2",
+          "state": "aq",
+          "name": "calcium hydroxide"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "CaCO3",
+          "state": "s",
+          "name": "calcium carbonate"
+        },
+        {
+          "coefficient": 1,
+          "formula": "H2O",
+          "state": "l",
+          "name": "water"
+        }
+      ],
+      "formulaEquation": "CO₂(g) + Ca(OH)₂(aq) → CaCO₃(s) + H₂O(l)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "carbon dioxide + calcium hydroxide → calcium carbonate + water",
+      "sectionId": "equation-family-inorganic-gas-tests"
+    },
+    {
+      "id": "ammonium-hydroxide-test",
+      "sourceIds": [
+        "4CH1:issue3:2.47"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "required-named-test-representative-ammonium-salt",
+      "existingSectionIds": [
+        "test-metal-hydroxides",
+        "test-ammonium",
+        "test-observation-inference"
+      ],
+      "conditions": "Warm ammonium solution with sodium hydroxide; identify evolved NH3 using damp red litmus.",
+      "limits": "NH4Cl choice representative; net NH4+ + OH− → NH3 + H2O. Not hypothetical NH4OH isolated product.",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "NH4Cl",
+          "state": "aq",
+          "name": "ammonium chloride"
+        },
+        {
+          "coefficient": 1,
+          "formula": "NaOH",
+          "state": "aq",
+          "name": "sodium hydroxide"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "NH3",
+          "state": "g",
+          "name": "ammonia"
+        },
+        {
+          "coefficient": 1,
+          "formula": "NaCl",
+          "state": "aq",
+          "name": "sodium chloride"
+        },
+        {
+          "coefficient": 1,
+          "formula": "H2O",
+          "state": "l",
+          "name": "water"
+        }
+      ],
+      "formulaEquation": "NH₄Cl(aq) + NaOH(aq) → NH₃(g) + NaCl(aq) + H₂O(l)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "ammonium chloride + sodium hydroxide → ammonia + sodium chloride + water",
+      "sectionId": "equation-family-inorganic-gas-tests"
+    },
+    {
+      "id": "cu2-hydroxide-test",
+      "sourceIds": [
+        "4CH1:issue3:2.47"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "required-named-ion-test-representative-chloride",
+      "existingSectionIds": [
+        "test-metal-hydroxides",
+        "test-ammonium",
+        "test-observation-inference"
+      ],
+      "conditions": "Aqueous sodium hydroxide gives the named precipitate.",
+      "limits": "Chloride is representative soluble source. CuII blue, FeII green, FeIII brown; net ion charge balance zero. FeII precipitate can oxidise on standing.",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "CuCl2",
+          "state": "aq",
+          "name": "copper(II) chloride"
+        },
+        {
+          "coefficient": 2,
+          "formula": "NaOH",
+          "state": "aq",
+          "name": "sodium hydroxide"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "Cu(OH)2",
+          "state": "s",
+          "name": "copper(II) hydroxide"
+        },
+        {
+          "coefficient": 2,
+          "formula": "NaCl",
+          "state": "aq",
+          "name": "sodium chloride"
+        }
+      ],
+      "formulaEquation": "CuCl₂(aq) + 2NaOH(aq) → Cu(OH)₂(s) + 2NaCl(aq)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "copper(II) chloride + sodium hydroxide → copper(II) hydroxide + sodium chloride",
+      "sectionId": "equation-family-inorganic-metal-hydroxide-tests"
+    },
+    {
+      "id": "fe2-hydroxide-test",
+      "sourceIds": [
+        "4CH1:issue3:2.47"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "required-named-ion-test-representative-chloride",
+      "existingSectionIds": [
+        "test-metal-hydroxides",
+        "test-ammonium",
+        "test-observation-inference"
+      ],
+      "conditions": "Aqueous sodium hydroxide gives the named precipitate.",
+      "limits": "Chloride is representative soluble source. CuII blue, FeII green, FeIII brown; net ion charge balance zero. FeII precipitate can oxidise on standing.",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "FeCl2",
+          "state": "aq",
+          "name": "iron(II) chloride"
+        },
+        {
+          "coefficient": 2,
+          "formula": "NaOH",
+          "state": "aq",
+          "name": "sodium hydroxide"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "Fe(OH)2",
+          "state": "s",
+          "name": "iron(II) hydroxide"
+        },
+        {
+          "coefficient": 2,
+          "formula": "NaCl",
+          "state": "aq",
+          "name": "sodium chloride"
+        }
+      ],
+      "formulaEquation": "FeCl₂(aq) + 2NaOH(aq) → Fe(OH)₂(s) + 2NaCl(aq)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "iron(II) chloride + sodium hydroxide → iron(II) hydroxide + sodium chloride",
+      "sectionId": "equation-family-inorganic-metal-hydroxide-tests"
+    },
+    {
+      "id": "fe3-hydroxide-test",
+      "sourceIds": [
+        "4CH1:issue3:2.47"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "required-named-ion-test-representative-chloride",
+      "existingSectionIds": [
+        "test-metal-hydroxides",
+        "test-ammonium",
+        "test-observation-inference"
+      ],
+      "conditions": "Aqueous sodium hydroxide gives the named precipitate.",
+      "limits": "Chloride is representative soluble source. CuII blue, FeII green, FeIII brown; net ion charge balance zero. FeII precipitate can oxidise on standing.",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "FeCl3",
+          "state": "aq",
+          "name": "iron(III) chloride"
+        },
+        {
+          "coefficient": 3,
+          "formula": "NaOH",
+          "state": "aq",
+          "name": "sodium hydroxide"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "Fe(OH)3",
+          "state": "s",
+          "name": "iron(III) hydroxide"
+        },
+        {
+          "coefficient": 3,
+          "formula": "NaCl",
+          "state": "aq",
+          "name": "sodium chloride"
+        }
+      ],
+      "formulaEquation": "FeCl₃(aq) + 3NaOH(aq) → Fe(OH)₃(s) + 3NaCl(aq)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "iron(III) chloride + sodium hydroxide → iron(III) hydroxide + sodium chloride",
+      "sectionId": "equation-family-inorganic-metal-hydroxide-tests"
+    },
+    {
+      "id": "silver-cl-test",
+      "sourceIds": [
+        "4CH1:issue3:2.48"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "required-named-test-representative-sodium-halide",
+      "existingSectionIds": [
+        "test-halide-ions",
+        "test-sulfate-ions",
+        "test-carbonate-ions",
+        "test-observation-inference"
+      ],
+      "conditions": "Acidify sample with dilute nitric acid, then add silver nitrate.",
+      "limits": "Never acidify with HCl; Na+ spectator choice not mandatory. AgCl white, AgBr cream, AgI yellow; net Ag+ + X− → AgX.",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "AgNO3",
+          "state": "aq",
+          "name": "silver nitrate"
+        },
+        {
+          "coefficient": 1,
+          "formula": "NaCl",
+          "state": "aq",
+          "name": "sodium chloride"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "AgCl",
+          "state": "s",
+          "name": "silver chloride"
+        },
+        {
+          "coefficient": 1,
+          "formula": "NaNO3",
+          "state": "aq",
+          "name": "sodium nitrate"
+        }
+      ],
+      "formulaEquation": "AgNO₃(aq) + NaCl(aq) → AgCl(s) + NaNO₃(aq)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "silver nitrate + sodium chloride → silver chloride + sodium nitrate",
+      "sectionId": "equation-family-inorganic-anion-tests"
+    },
+    {
+      "id": "silver-br-test",
+      "sourceIds": [
+        "4CH1:issue3:2.48"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "required-named-test-representative-sodium-halide",
+      "existingSectionIds": [
+        "test-halide-ions",
+        "test-sulfate-ions",
+        "test-carbonate-ions",
+        "test-observation-inference"
+      ],
+      "conditions": "Acidify sample with dilute nitric acid, then add silver nitrate.",
+      "limits": "Never acidify with HCl; Na+ spectator choice not mandatory. AgCl white, AgBr cream, AgI yellow; net Ag+ + X− → AgX.",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "AgNO3",
+          "state": "aq",
+          "name": "silver nitrate"
+        },
+        {
+          "coefficient": 1,
+          "formula": "NaBr",
+          "state": "aq",
+          "name": "sodium bromide"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "AgBr",
+          "state": "s",
+          "name": "silver bromide"
+        },
+        {
+          "coefficient": 1,
+          "formula": "NaNO3",
+          "state": "aq",
+          "name": "sodium nitrate"
+        }
+      ],
+      "formulaEquation": "AgNO₃(aq) + NaBr(aq) → AgBr(s) + NaNO₃(aq)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "silver nitrate + sodium bromide → silver bromide + sodium nitrate",
+      "sectionId": "equation-family-inorganic-anion-tests"
+    },
+    {
+      "id": "silver-i-test",
+      "sourceIds": [
+        "4CH1:issue3:2.48"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "required-named-test-representative-sodium-halide",
+      "existingSectionIds": [
+        "test-halide-ions",
+        "test-sulfate-ions",
+        "test-carbonate-ions",
+        "test-observation-inference"
+      ],
+      "conditions": "Acidify sample with dilute nitric acid, then add silver nitrate.",
+      "limits": "Never acidify with HCl; Na+ spectator choice not mandatory. AgCl white, AgBr cream, AgI yellow; net Ag+ + X− → AgX.",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "AgNO3",
+          "state": "aq",
+          "name": "silver nitrate"
+        },
+        {
+          "coefficient": 1,
+          "formula": "NaI",
+          "state": "aq",
+          "name": "sodium iodide"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "AgI",
+          "state": "s",
+          "name": "silver iodide"
+        },
+        {
+          "coefficient": 1,
+          "formula": "NaNO3",
+          "state": "aq",
+          "name": "sodium nitrate"
+        }
+      ],
+      "formulaEquation": "AgNO₃(aq) + NaI(aq) → AgI(s) + NaNO₃(aq)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "silver nitrate + sodium iodide → silver iodide + sodium nitrate",
+      "sectionId": "equation-family-inorganic-anion-tests"
+    },
+    {
+      "id": "barium-sulfate-test",
+      "sourceIds": [
+        "4CH1:issue3:2.48"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "required-named-test-representative-sodium-sulfate",
+      "existingSectionIds": [
+        "test-halide-ions",
+        "test-sulfate-ions",
+        "test-carbonate-ions",
+        "test-observation-inference"
+      ],
+      "conditions": "Acidify separate aqueous sample with dilute HCl then add BaCl2.",
+      "limits": "Not sulfuric acid acidification; white precipitate. Na+ source representative; net Ba2+ + SO4^2− → BaSO4.",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "BaCl2",
+          "state": "aq",
+          "name": "barium chloride"
+        },
+        {
+          "coefficient": 1,
+          "formula": "Na2SO4",
+          "state": "aq",
+          "name": "sodium sulfate"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "BaSO4",
+          "state": "s",
+          "name": "barium sulfate"
+        },
+        {
+          "coefficient": 2,
+          "formula": "NaCl",
+          "state": "aq",
+          "name": "sodium chloride"
+        }
+      ],
+      "formulaEquation": "BaCl₂(aq) + Na₂SO₄(aq) → BaSO₄(s) + 2NaCl(aq)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "barium chloride + sodium sulfate → barium sulfate + sodium chloride",
+      "sectionId": "equation-family-inorganic-anion-tests"
+    },
+    {
+      "id": "aluminium-carbon-anode",
+      "sourceIds": [
+        "4CH1:issue3:2.23C"
+      ],
+      "components": [
+        "2C"
+      ],
+      "sourceDemand": "required-route-selected-overall-process-model",
+      "existingSectionIds": [
+        "metal-extraction-electrolysis",
+        "extraction-route-transfer-evidence"
+      ],
+      "conditions": "Idealised hot molten-electrolyte overall process with carbon anodes; alumina is dissolved in the cryolite bath. The (l) shorthand denotes its molten-electrolyte context, not an assertion of pure liquid alumina.",
+      "limits": "Carbon anodes are consumed in this CO2-only overall model. Do not combine consumed carbon with oxygen as the sole final anode gas. An inert-anode model has a different overall equation; actual process gases can be mixed.",
+      "reactants": [
+        {
+          "coefficient": 2,
+          "formula": "Al2O3",
+          "state": "l",
+          "name": "aluminium oxide"
+        },
+        {
+          "coefficient": 3,
+          "formula": "C",
+          "state": "s",
+          "name": "carbon"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 4,
+          "formula": "Al",
+          "state": "l",
+          "name": "aluminium"
+        },
+        {
+          "coefficient": 3,
+          "formula": "CO2",
+          "state": "g",
+          "name": "carbon dioxide"
+        }
+      ],
+      "formulaEquation": "2Al₂O₃(l) + 3C(s) → 4Al(l) + 3CO₂(g)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "aluminium oxide + carbon → aluminium + carbon dioxide",
+      "sectionId": "equation-family-inorganic-extraction"
+    },
+    {
+      "id": "phosphorus-oxygen",
+      "sourceIds": [
+        "4CH1:issue3:2.10",
+        "4CH1:issue3:2.14"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "publisher-example-selected-nonmetal",
+      "existingSectionIds": [
+        "oxygen-air-nonmetal",
+        "oxygen-plan-and-error-transfer-evidence"
+      ],
+      "conditions": "Supervised oxygen-removal illustration with white phosphorus represented as P4. State labels refer to the initial solid sample and subsequently cooled collected solid oxide, rather than all phases at the flame.",
+      "limits": "Iron and phosphorus are publisher examples, not the only permitted substances. Hot oxide vapour must cool and products must be removed/absorbed as appropriate before interpreting gas volume; not an unsupervised procedure. P2O5 is the empirical formula, not another atom-balanced P4 product with coefficient one.",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "P4",
+          "state": "s",
+          "name": "phosphorus"
+        },
+        {
+          "coefficient": 5,
+          "formula": "O2",
+          "state": "g",
+          "name": "oxygen"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "P4O10",
+          "state": "s",
+          "name": "phosphorus(V) oxide"
+        }
+      ],
+      "formulaEquation": "P₄(s) + 5O₂(g) → P₄O₁₀(s)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "phosphorus + oxygen → phosphorus(V) oxide",
+      "sectionId": "equation-family-inorganic-oxygen-redox"
+    },
+    {
+      "id": "magnesium-copper-oxide",
+      "sourceIds": [
+        "4CH1:issue3:2.16",
+        "4CH1:issue3:2.20"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "representative-solid-oxide-displacement",
+      "existingSectionIds": [
+        "metal-oxide-displacement",
+        "redox-agent-transfer-evidence"
+      ],
+      "conditions": "Selected heated displacement model using supplied solid reactants and cooled solid products; appropriate initiation is needed in a supervised demonstration.",
+      "limits": "Magnesium gains oxygen and is oxidised; copper(II) oxide loses oxygen and is reduced. State labels are not a claim that every material remains solid at every instant of a vigorous hot reaction.",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "Mg",
+          "state": "s",
+          "name": "magnesium"
+        },
+        {
+          "coefficient": 1,
+          "formula": "CuO",
+          "state": "s",
+          "name": "copper(II) oxide"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "MgO",
+          "state": "s",
+          "name": "magnesium oxide"
+        },
+        {
+          "coefficient": 1,
+          "formula": "Cu",
+          "state": "s",
+          "name": "copper"
+        }
+      ],
+      "formulaEquation": "Mg(s) + CuO(s) → MgO(s) + Cu(s)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "magnesium + copper(II) oxide → magnesium oxide + copper",
+      "sectionId": "equation-family-inorganic-oxygen-redox"
+    },
+    {
+      "id": "sulfuric-full-neutralization",
+      "sourceIds": [
+        "4CH1:issue3:2.32",
+        "4CH1:issue3:2.37",
+        "4CH1:issue3:2.38"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "representative-full-neutralization",
+      "existingSectionIds": [
+        "acid-neutralization",
+        "acid-base-salts"
+      ],
+      "conditions": "Dilute aqueous sulfuric acid fully neutralised by the stoichiometric amount of aqueous sodium hydroxide; sodium sulfate remains dissolved.",
+      "limits": "Two hydroxide equivalents per sulfuric acid are required for this normal sulfate product. Partial neutralisation can give a different salt; the complete equation is not a claim about every mixing ratio.",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "H2SO4",
+          "state": "aq",
+          "name": "sulfuric acid"
+        },
+        {
+          "coefficient": 2,
+          "formula": "NaOH",
+          "state": "aq",
+          "name": "sodium hydroxide"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "Na2SO4",
+          "state": "aq",
+          "name": "sodium sulfate"
+        },
+        {
+          "coefficient": 2,
+          "formula": "H2O",
+          "state": "l",
+          "name": "water"
+        }
+      ],
+      "formulaEquation": "H₂SO₄(aq) + 2NaOH(aq) → Na₂SO₄(aq) + 2H₂O(l)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "sulfuric acid + sodium hydroxide → sodium sulfate + water",
+      "sectionId": "equation-family-inorganic-acid-breadth"
+    },
+    {
+      "id": "nitric-magnesium-hydroxide",
+      "sourceIds": [
+        "4CH1:issue3:2.37"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "representative-nitric-acid-base",
+      "existingSectionIds": [
+        "acid-base-salts",
+        "salt-method-choice"
+      ],
+      "conditions": "Dilute nitric acid reacts with the solid hydroxide base; the magnesium nitrate product remains in dilute solution.",
+      "limits": "This is an acid/base model, not a nitric-acid/metal hydrogen prediction. One Mg2+ requires two nitrate ions; both hydroxide groups form water.",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "Mg(OH)2",
+          "state": "s",
+          "name": "magnesium hydroxide"
+        },
+        {
+          "coefficient": 2,
+          "formula": "HNO3",
+          "state": "aq",
+          "name": "nitric acid"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "Mg(NO3)2",
+          "state": "aq",
+          "name": "magnesium nitrate"
+        },
+        {
+          "coefficient": 2,
+          "formula": "H2O",
+          "state": "l",
+          "name": "water"
+        }
+      ],
+      "formulaEquation": "Mg(OH)₂(s) + 2HNO₃(aq) → Mg(NO₃)₂(aq) + 2H₂O(l)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "magnesium hydroxide + nitric acid → magnesium nitrate + water",
+      "sectionId": "equation-family-inorganic-acid-breadth"
+    },
+    {
+      "id": "aqueous-ammonia-hydrochloric",
+      "sourceIds": [
+        "4CH1:issue3:2.35",
+        "4CH1:issue3:2.36"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "representative-proton-acceptance",
+      "existingSectionIds": [
+        "acid-proton-transfer",
+        "acid-base-types"
+      ],
+      "conditions": "Aqueous ammonia accepts a proton from dilute hydrochloric acid; the resulting ammonium salt stays dissolved.",
+      "limits": "A base need not contain an OH group. This is different from the cool gas-recombination NH3/HCl demonstration forming solid ammonium chloride; do not copy (s) from that other context.",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "NH3",
+          "state": "aq",
+          "name": "ammonia"
+        },
+        {
+          "coefficient": 1,
+          "formula": "HCl",
+          "state": "aq",
+          "name": "hydrochloric acid"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "NH4Cl",
+          "state": "aq",
+          "name": "ammonium chloride"
+        }
+      ],
+      "formulaEquation": "NH₃(aq) + HCl(aq) → NH₄Cl(aq)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "ammonia + hydrochloric acid → ammonium chloride",
+      "sectionId": "equation-family-inorganic-acid-breadth"
+    },
+    {
+      "id": "nitric-magnesium-carbonate",
+      "sourceIds": [
+        "4CH1:issue3:2.37"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "representative-nitric-acid-carbonate",
+      "existingSectionIds": [
+        "acid-carbonate-salts"
+      ],
+      "conditions": "Dilute nitric acid reacts with magnesium carbonate; nitrate stays dissolved.",
+      "limits": "Carbonate gives CO2 and water, not hydrogen. The chosen acid/carbonate pair is a family illustration, not an extra prescribed named practical.",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "MgCO3",
+          "state": "s",
+          "name": "magnesium carbonate"
+        },
+        {
+          "coefficient": 2,
+          "formula": "HNO3",
+          "state": "aq",
+          "name": "nitric acid"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "Mg(NO3)2",
+          "state": "aq",
+          "name": "magnesium nitrate"
+        },
+        {
+          "coefficient": 1,
+          "formula": "H2O",
+          "state": "l",
+          "name": "water"
+        },
+        {
+          "coefficient": 1,
+          "formula": "CO2",
+          "state": "g",
+          "name": "carbon dioxide"
+        }
+      ],
+      "formulaEquation": "MgCO₃(s) + 2HNO₃(aq) → Mg(NO₃)₂(aq) + H₂O(l) + CO₂(g)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "magnesium carbonate + nitric acid → magnesium nitrate + water + carbon dioxide",
+      "sectionId": "equation-family-inorganic-acid-breadth"
+    },
+    {
+      "id": "sulfuric-magnesium-carbonate",
+      "sourceIds": [
+        "4CH1:issue3:2.37"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "representative-sulfuric-acid-carbonate",
+      "existingSectionIds": [
+        "acid-carbonate-salts"
+      ],
+      "conditions": "Dilute sulfuric acid reacts with magnesium carbonate; magnesium sulfate remains in dilute solution.",
+      "limits": "This selected soluble-product case is not a universal claim that every carbonate reacts fully with every acid. An insoluble surface product can inhibit other combinations.",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "MgCO3",
+          "state": "s",
+          "name": "magnesium carbonate"
+        },
+        {
+          "coefficient": 1,
+          "formula": "H2SO4",
+          "state": "aq",
+          "name": "sulfuric acid"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "MgSO4",
+          "state": "aq",
+          "name": "magnesium sulfate"
+        },
+        {
+          "coefficient": 1,
+          "formula": "H2O",
+          "state": "l",
+          "name": "water"
+        },
+        {
+          "coefficient": 1,
+          "formula": "CO2",
+          "state": "g",
+          "name": "carbon dioxide"
+        }
+      ],
+      "formulaEquation": "MgCO₃(s) + H₂SO₄(aq) → MgSO₄(aq) + H₂O(l) + CO₂(g)",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "magnesium carbonate + sulfuric acid → magnesium sulfate + water + carbon dioxide",
+      "sectionId": "equation-family-inorganic-acid-breadth"
+    }
+  ],
+  "remainingBoundaries": [
+    "Rust has no fabricated fixed hydration formula; existing variable-composition teaching remains applicable.",
+    "Calcium/cold-water optional family example needs a deliberately chosen dissolved/precipitated hydroxide context; not every reagent combination is compulsory.",
+    "Aluminium cathode/charge half-equation is separate supporting evidence, not a full overall molecule model.",
+    "Reconcile all remaining source families, polymer representations and unfamiliar supplied-reaction tasks before any1.25 completion decision."
+  ]
+}

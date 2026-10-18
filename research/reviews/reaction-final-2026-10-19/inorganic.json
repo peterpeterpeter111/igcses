@@ -1,0 +1,1885 @@
+{
+  "date": "2026-10-18",
+  "reviewScope": "Inorganic 50 identities only: source-family adequacy for 1.25; not entire-qualification completion, empirical assessment, or authorisation to promote",
+  "basis": "Saved own Issue3 source review PDF22–26; current evidence matrix, current composed linked notes and banks. No new external retrieval.",
+  "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "matrixRef": "research/reaction-models/4CH1-source-evidence-matrix-2026-10-18.json",
+  "matrixSha256": "454b35391d069a7ea958a7aaf734cd528b2248ddf98ebe9402a979de9d6f54b1",
+  "bankHashesMatchMatrix": {
+    "research/reaction-models/4CH1-inorganic-families-2026-10-18.json": false,
+    "research/reaction-models/4CH1-named-core-2026-10-17.json": false,
+    "research/reaction-models/4CH1-organic-slice-2026-10-18.json": false,
+    "research/reaction-models/4CH1-reconciliation-2026-10-18.json": false
+  },
+  "allReferencedSectionsResolved": true,
+  "verdictSummary": {
+    "adequateWithScope": 34,
+    "notSeparateReaction": 16,
+    "gap": 0
+  },
+  "materialFindings": [],
+  "limitsToPreserve": [
+    "Al2O3(l) is expressly a molten-electrolyte process shorthand for dissolved alumina, not pure molten alumina; do not remove that qualifier or present it as strict species-level phase evidence.",
+    "Do not treat absence of a direct matrix model link as absence of teaching: 2.33C/2.40C/2.49 reuse explicit neutralisation/hydration records; supplemental reuse links recorded here.",
+    "Rust/air-tarnish variable composition and physical tests need truthful representation boundaries, not fabricated fixed formulae.",
+    "Family coverage is source-constrained. No universal acid×metal/base/carbonate matrix, no extra required industrial steps and no physical trials inferred."
+  ],
+  "reviewMethod": "Read new Inorganic model word/formula/condition/limit records and their composed lessons, calcium/rust reconciliation lessons, saved scope decisions and linked existing note evidence. Checked actual link resolution and current bank hashes. Existing source-note teaching uses earlier reviewed evidence; this final pass is reaction-family reconciliation, not a fresh line-by-line review of all 103 practices/diagrams.",
+  "rows": [
+    {
+      "sourceId": "4CH1:issue3:2.1",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "All Li/Na/K water models provide words, balanced formulas and initial/dissolved/gas states.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "group1-water-family",
+          "sectionSha256": "c1b3561618b2efec4b55913c34a8c95d0664d51b2100bcd92d7864d1ce38288c"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "alkali-family-transfer-evidence",
+          "sectionSha256": "6d293f9ae5af84289b2c02d6507d9bb06709d6f53b21a2970af63c9220fcd016"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "lithium-water",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-group1-water"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "sodium-water",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-group1-water"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "potassium-water",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-group1-water"
+        }
+      ],
+      "sourceScopeLimits": "Cold water; shared family products. Metal phase can change during reaction; (s) describes initial sample. Group heading names these three.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.2",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "Reuses all three water models; actual air-tarnishing notes and nonunique representation explicitly avoid a universal monoxide product.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "group1-air-water-trend",
+          "sectionSha256": "99acdf8bab59cf224683c619dff57fc99154727244cdbf7537caaa252fe8dd1e"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "alkali-comparison-and-shielding-evidence",
+          "sectionSha256": "f6f342b93582a078de4af2b3f1239294e1e540bf5512a062474f9400ebc75e11"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "lithium-water",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-group1-water"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "sodium-water",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-group1-water"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "potassium-water",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-group1-water"
+        }
+      ],
+      "sourceScopeLimits": "Air contains oxygen and moisture; do not impose M2O on every surface film. No unique air-product equation prescribed. Matched conditions needed for rate inference.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.3",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "Original prediction lesson supplies general 2M/water and Rb illustration; named water bank gives concrete state transfer. No separately compulsory Rb case.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "group1-predicting-properties",
+          "sectionSha256": "482053a8f865ac2195338f1cc23d45d12fb56a77ac3040f2433b2a181fc6ce1b"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "alkali-family-transfer-evidence",
+          "sectionSha256": "6d293f9ae5af84289b2c02d6507d9bb06709d6f53b21a2970af63c9220fcd016"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "lithium-water",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-group1-water"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "sodium-water",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-group1-water"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "potassium-water",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-group1-water"
+        }
+      ],
+      "sourceScopeLimits": "Prediction from Group 1 trend, not separate prescribed rubidium/caesium reaction list or exact rate.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.4C",
+      "components": [
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "Configuration and M → M+ + e− explanation in linked notes; water family reused; no new molecular reaction demanded.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "group1-electron-reactivity",
+          "sectionSha256": "18f253cefa7cdbbdcfb6a7c70a3e19dd4e2866e1b0d62b23ced7c283502bcf8d"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "alkali-comparison-and-shielding-evidence",
+          "sectionSha256": "f6f342b93582a078de4af2b3f1239294e1e540bf5512a062474f9400ebc75e11"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "sodium-water",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-group1-water"
+        }
+      ],
+      "sourceScopeLimits": "Configuration explanation of 2.1–2.3; half-equation support, not separately named reaction. C-only explanation does not make water reactions C-only.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.5",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "not-separate-reaction",
+      "reasoning": "Halogen physical colour/state properties, no reaction.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "halogen-colours-and-states",
+          "sectionSha256": "793e2952087dc33a084b3d8d7f7171d9d218e8ee9faf815af750411bdbc832a1"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "halogen-physical-predictions",
+          "sectionSha256": "a1eb21c9fec857182ca131365ad35d707e00bb2184c7218508e9653eec1c31f2"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "halogen-state-and-extrapolation-evidence",
+          "sectionSha256": "09061205d349a772e05584922db0fce44c1bf45b78d1a1dcda0973acf5ee9024"
+        }
+      ],
+      "modelOrRepresentationEvidence": [],
+      "sourceScopeLimits": "Physical colours/states/trends Cl2, Br2, I2; diatomic formula knowledge and phase change, not new reaction.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.6",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "not-separate-reaction",
+      "reasoning": "Physical-property extrapolation, no separate reaction.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "halogen-physical-predictions",
+          "sectionSha256": "a1eb21c9fec857182ca131365ad35d707e00bb2184c7218508e9653eec1c31f2"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "halogen-state-and-extrapolation-evidence",
+          "sectionSha256": "09061205d349a772e05584922db0fce44c1bf45b78d1a1dcda0973acf5ee9024"
+        }
+      ],
+      "modelOrRepresentationEvidence": [],
+      "sourceScopeLimits": "Predict halogen properties; no separate compulsory chemical case.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.7",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "All three positive Cl/Br/I displacement directions represented with words, molecular and ionic forms; aqueous states explicitly conditional; reverse cases excluded.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "halogen-displacement-pattern",
+          "sectionSha256": "eaefab3a7554f0a2710e0a1ba04646f262256f85a0d20dbaef52d2cc69958fee"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "halogen-displacement-equations",
+          "sectionSha256": "53cefdacaf6f5e8b698ca831714fb09ba892a30ee14528fff74c3f64cceae476"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "halogen-displacement-evidence",
+          "sectionSha256": "551f280813c8a4b99152f255edf73495b461db4b9715c0376d8d77c50dfcbaea"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "halogen-species-and-charge-evidence",
+          "sectionSha256": "a8e1d1a726ea04abf15cb7695e93c06f2db8abeab6d302877625b62a0924d9c0"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "halogen-ranking-transfer-evidence",
+          "sectionSha256": "382c74cdbd79e0cd1f487fb32064e0763e027be2fdb3cd4f9486177c31509272"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "halogen-observation-control-evidence",
+          "sectionSha256": "87fba33c3da527f7943049edf0f1338b14eed02e1cadd8a86629cf7ea5daa00a"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "cl-displaces-br",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-halogen-displacement"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "cl-displaces-i",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-halogen-displacement"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "br-displaces-i",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-halogen-displacement"
+        }
+      ],
+      "sourceScopeLimits": "Aqueous comparisons; ions aq, halogens supplied as aqueous solutions in these tests. Do not blindly assign pure-element room states to dissolved species. Reverse/self cases no displacement. Na/K spectator choices not separately prescribed salts.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.8C",
+      "components": [
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "Electron-gain explanation and X2/halide half-equations in linked notes reuse displacement contexts.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "halogen-electron-reactivity",
+          "sectionSha256": "24a10411eb6dc9b9e355baadb9207653c0c2504bacd5b7a24a63335cb9ac03ae"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "halogen-electron-gain-transfer-evidence",
+          "sectionSha256": "2ac59c71435e0839e469cd5679c57734bbc9d23fed3c08814fd09ee0623cbcdb"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "cl-displaces-br",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-halogen-displacement"
+        }
+      ],
+      "sourceScopeLimits": "Electronic explanation; reuse 2.7. No extra named reaction requirement.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.9",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "not-separate-reaction",
+      "reasoning": "Air composition percentages, no chemical change.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "air-composition",
+          "sectionSha256": "44176d0f9566cdd0cd1682bdef8c4e466fb6550a0ffca2ea1322056ef73afdfa"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "dry-air-volume-transfer-evidence",
+          "sectionSha256": "0b1d6c94a280283e2f1c5e6c6bee7ca417bda9e7cfe7c5f9b314601b74c708d3"
+        }
+      ],
+      "modelOrRepresentationEvidence": [],
+      "sourceScopeLimits": "Dry-air composition physical percentages, no reaction.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.10",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "Metal oxygen removal explained by iron/rust with variable-composition word model; phosphorus non-metal has balanced P4 model and cooling/product-removal limits. Both families covered, species are examples.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "oxygen-air-removal",
+          "sectionSha256": "4e971f1f08ee2247630d4fbe91042f2059f5d7e2e6beafe7f079da140d7f9547"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "oxygen-air-nonmetal",
+          "sectionSha256": "196908f63cf11c5a946e386e7b875cca7b85e0f8ddd40de80485a552e6ad8e4e"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "oxygen-volume-calculation",
+          "sectionSha256": "dbfb09b3b932fa97c9ac7f75551f3aa3fb21b58c15346736cf48a6372053e1e9"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "oxygen-total-volume-transfer-evidence",
+          "sectionSha256": "be0bace9cfc1c96953e157de3729b7bd65d1d22733c02a745cd40161c8ef5d3c"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "oxygen-plan-and-error-transfer-evidence",
+          "sectionSha256": "1cc524f13a00694965bffb17826b9bd089589fc94d737b36292a62ba81660f82"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "phosphorus-oxygen",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-oxygen-redox"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-reconciliation-2026-10-18.json",
+          "recordId": "rust-variable-composition",
+          "recordType": "word-model-variable-composition",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-reconciliation-nonunique"
+        }
+      ],
+      "sourceScopeLimits": "Excess suitable reagent, closed whole gas volume, cooling/comparable pressure and temperature, product leaves measured gas phase. Rust has variable hydration: no invented exact Fe/O2/H2O equation. P2O5 empirical form requires rebalancing. Iron/phosphorus are not exclusive mandated species.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.11",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "Shared core Mg model plus H2 and S models cover every named combustion; hot/cooled water and S/S8 limits explicit.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "magnesium-combustion",
+          "sectionSha256": "6c5361a22494bf268a7324528d2f2e0980dbcfc497cb9651698a885ae9f34758"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "hydrogen-combustion",
+          "sectionSha256": "348bec4d69c030dd8feb7fbbb21a7a165d1b2e8193b4e823062d591b6c97f11a"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "sulfur-combustion",
+          "sectionSha256": "440c1d0c2c70db9a1e33cba85647bd164fc99bab7e41b2f1e549d9458709783f"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "element-combustion-transfer-evidence",
+          "sectionSha256": "8f6bfd13339a951feae0656ac3d2bb120b084f0c5c20382c0e8fdb81d84cdd3a"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "hydrogen-combustion",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-combustion"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "sulfur-combustion",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-combustion"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-named-core-2026-10-17.json",
+          "recordId": "magnesium-oxide",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-magnesium-oxide"
+        }
+      ],
+      "sourceScopeLimits": "Ignition suitable supervised context. H2O(g) hot, liquid after cooling. S8 + 8O2 → 8SO2 if molecular sulfur supplied. Mg in air can also react with N2; intended oxygen equation explicit.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.12",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "Named CuCO3 thermal decomposition and supplied basic-carbonate variant differentiated; heating and gas/solid states explicit.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "carbonate-decomposition",
+          "sectionSha256": "6bfc2e6cd9df44df3cd1a4a82bc5eaec41118191a07e70aeeec524e03356f5b9"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "carbonate-decomposition-transfer-evidence",
+          "sectionSha256": "fcf85142654c810e9263724f1e51232e7d53c15b1fdee8776e983d1c91a4f112"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "copper-carbonate-decomposition",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-thermal-carbonate"
+        }
+      ],
+      "sourceScopeLimits": "Heat condition; CuCO3 school model versus explicitly supplied basic carbonate. Not all carbonates decompose under identical heating. Basic-carbonate variant is supporting explanation, not extra named requirement.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.13",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "not-separate-reaction",
+      "reasoning": "Greenhouse absorption mechanism, no separately prescribed equation.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "carbon-dioxide-greenhouse",
+          "sectionSha256": "db4cd1d7f8f69bd68ee840351f1b5d68f3f0833cb1904cb42191debdbbc4173a"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "greenhouse-mechanism-transfer-evidence",
+          "sectionSha256": "f0e54b8289706a719ea7792640fef62d4e97df328c8c3b2f23f4d311fa7798cb"
+        }
+      ],
+      "modelOrRepresentationEvidence": [],
+      "sourceScopeLimits": "Greenhouse effect/climate mechanism, not equation requirement.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.14",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "Practical permits metal OR non-metal; existing practical lesson plus phosphorus model and iron explanation adequate; no second compulsory performed trial.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "oxygen-volume-calculation",
+          "sectionSha256": "dbfb09b3b932fa97c9ac7f75551f3aa3fb21b58c15346736cf48a6372053e1e9"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "oxygen-measurement-practical",
+          "sectionSha256": "3a73931faca42392336a8313372101066203d3f8f196658c4cd7c31257bb6563"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "oxygen-plan-and-error-transfer-evidence",
+          "sectionSha256": "1cc524f13a00694965bffb17826b9bd089589fc94d737b36292a62ba81660f82"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "oxygen-total-volume-transfer-evidence",
+          "sectionSha256": "be0bace9cfc1c96953e157de3729b7bd65d1d22733c02a745cd40161c8ef5d3c"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "phosphorus-oxygen",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-oxygen-redox"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-reconciliation-2026-10-18.json",
+          "recordId": "rust-variable-composition",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-reconciliation-nonunique"
+        }
+      ],
+      "sourceScopeLimits": "One suitable route in practical statement; do not turn OR into AND or demand new equation.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.15",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "Cold-water Group1/Ca, hot Mg/steam, dilute HCl/Mg and H2SO4/Fe provide distinct condition-dependent families. Ca solubility qualification, passivation and negative-evidence limits retained.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "metal-water-evidence",
+          "sectionSha256": "21cbac6a50d9b22e9c65ab3fd5848770a1b91ef4dc740a25b724e3901c097df6"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "metal-acid-evidence",
+          "sectionSha256": "662cdea3d109069ad7575d676191e77bb670972269efb401834496a04c4f19c6"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "metal-condition-ranking-evidence",
+          "sectionSha256": "5d501dff47c60d906536f52ab0654384c5e92d76c88ae3b03dd5dc07b6f2a38e"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "magnesium-steam",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-metal-water-acid"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "magnesium-hydrochloric",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-metal-water-acid"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "iron-sulfuric",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-metal-water-acid"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-reconciliation-2026-10-18.json",
+          "recordId": "calcium-dilute-water",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-reconciliation-calcium-water"
+        }
+      ],
+      "sourceScopeLimits": "Water and dilute HCl OR H2SO4 ranking. Ca(OH)2 can be solid suspension plus dissolved portion; Mg steam oxide versus slow cold-water hydroxide. Copper no H2 with these dilute non-oxidising acids. Passivation/sulfate coating and unequal conditions limit rate-ranking. Not every metal × reagent combination separately required.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.16",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "Mg/CuO solid oxide displacement and shared Zn/CuSO4 aqueous displacement cover both families; initiation and aqueous solvent limits explicit.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "metal-salt-displacement",
+          "sectionSha256": "23f1fc8ec363879f813cb18fe8d26307fee5d4c7d4cb1dff49ee55cdba06d849"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "metal-oxide-displacement",
+          "sectionSha256": "a71d3ca1f815d2e95a73630e943d5cc38d4da4805981161b38c6097923f7949e"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "metal-displacement-transfer-evidence",
+          "sectionSha256": "d1d9214f7a4864662382b035ccf234c1e50fc79d941dde2c7e3c7b52af36417d"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "magnesium-copper-oxide",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-oxygen-redox"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-named-core-2026-10-17.json",
+          "recordId": "zinc-copper-displacement",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-zinc-copper-displacement"
+        }
+      ],
+      "sourceScopeLimits": "Both metal/oxide and metal/aqueous salt families. Suitable initiation for solids; aqueous solvent reactions invalidate simplistic universal series tests. Species are representative, not prescribed exhaustive pairs.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.17",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "not-separate-reaction",
+      "reasoning": "Eleven-metal series is ordering knowledge; shared displacement supports application, not eleven mandatory reactions.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "metal-reactivity-order",
+          "sectionSha256": "794d111cea7e239891233d204765242a52c1cec5d751674f533de6a024325ff4"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "metal-series-position-evidence",
+          "sectionSha256": "f3ea10c0901ae07815bd86dddc70555492fa253acfa975f150eca8cf4832cc76"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-named-core-2026-10-17.json",
+          "recordId": "zinc-copper-displacement",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-zinc-copper-displacement"
+        }
+      ],
+      "sourceScopeLimits": "Required 11-metal order K Na Li Ca Mg Al Zn Fe Cu Ag Au supports reactions; no new equation for each metal. Hydrogen/carbon are useful references, not extra metals in this list.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.18",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "Variable rust word model and both-water-and-oxygen controls cover named process. No unique hydrated formula is prescribed or chemically justified.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "rust-conditions",
+          "sectionSha256": "6d65a2327a60814a48b30cdf91a07250fbe9ed20712702a8f02fd165ba4b99d6"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "rust-evidence-plan",
+          "sectionSha256": "1f762e524f1273d6ab5a8c765d88203b99ab457f461e4aa2b87b7f5179b4827b"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "rust-control-transfer-evidence",
+          "sectionSha256": "31a6b0ca042a55f69f1ae069c1c98507ffd26169fc56454ce19a2052e1849d7a"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-reconciliation-2026-10-18.json",
+          "recordId": "rust-variable-composition",
+          "recordType": "word-model-variable-composition",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-reconciliation-nonunique"
+        }
+      ],
+      "sourceScopeLimits": "Both water and oxygen needed; variable rust composition precludes a uniquely mandated balanced hydrated formula. Salt accelerates, not mandatory reactant.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.19",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "Barrier/galvanising/sacrificial lessons plus Zn oxidation half-equation and wet electrical-contact limit cover mechanisms. Paint needs no reaction equation.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "rust-barriers",
+          "sectionSha256": "cc43ca2a8f54ed812a1d6997b8e8f01c898cbdec4eb74c4d72c94db90509a6dd"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "rust-galvanising-sacrificial",
+          "sectionSha256": "7b28da8d565fe0b77129f0daac6309bc3222164c9c254b6515fa19d5c12bb401"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "rust-protection-transfer-evidence",
+          "sectionSha256": "adc8cdb7ac81009d842857470463f23c62103b3dc32cc55187054f43d7addc00"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-reconciliation-2026-10-18.json",
+          "recordId": "rust-variable-composition",
+          "recordType": "word-model-variable-composition",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-reconciliation-nonunique"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-reconciliation-2026-10-18.json",
+          "recordId": "rust-variable-composition",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-reconciliation-nonunique"
+        }
+      ],
+      "sourceScopeLimits": "Barrier is not a new chemical reaction. Galvanising specifies zinc; alternative sacrifice metal is representative. Electrical contact and wet circuit needed; no nearby detached-metal protection.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.20",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "Shared CuO/H2, Mg/CuO, Zn/Cu2+ and existing Cu/Ag+ teaching cover oxygen/electron definitions and both agents. Spectator/product distinctions retained.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "redox-oxygen-transfer",
+          "sectionSha256": "96ef78d029927c291180beaee8c77a90e031df10fbb5b50e1909a910368ce196"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "redox-electron-transfer",
+          "sectionSha256": "98c7d028c83e374cb24a194531af5def482855e9ebed9c1c734e23f875893b9e"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "redox-agents",
+          "sectionSha256": "1ff1247900e03d5bdac5b155821078a3dff6d72cd695c00a595f1b9e8b40b5ef"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "redox-agent-transfer-evidence",
+          "sectionSha256": "00eec9c43ca0425baa90f6e6f66258d396aecbaf8accdb05da523471e707c45b"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "magnesium-copper-oxide",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-oxygen-redox"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-named-core-2026-10-17.json",
+          "recordId": "copper-oxide-reduction",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-copper-oxide-reduction"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-named-core-2026-10-17.json",
+          "recordId": "zinc-copper-displacement",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-zinc-copper-displacement"
+        }
+      ],
+      "sourceScopeLimits": "Oxygen and electron definitions, both agents; representative examples may be reused. Heat for CuO/H2; water phase contextual. Agent is reactant species, not spectator/product.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.21",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "Both named dilute acids represented, with existing Mg/Zn/Fe product table and equations. Publisher e.g. metals do not require an exclusive six-equation bank.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "acid-metal-practical-plan",
+          "sectionSha256": "fa474fbbb485a36dc10c4f98942cbf4b104853e3d53bdf226193800352d94c64"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "acid-metal-practical-interpretation",
+          "sectionSha256": "5eecc8a374ae0142e15ecc30bce5936598167fbb4711183887484b8b1b51b843"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "acid-metal-observation-transfer-evidence",
+          "sectionSha256": "5f6e435c9755a6e9de0e3f00dbbbc0b9fc0f97b93f41012741df236bdd594774"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "magnesium-hydrochloric",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-metal-water-acid"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "iron-sulfuric",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-metal-water-acid"
+        }
+      ],
+      "sourceScopeLimits": "These six suitable representative combinations cover both acids; not exclusive publisher-permitted metals or six separately mandated named cases. FeII salts; no unsafe extrapolation to alkali-metal acid tests. Hydrogen identification separate from effervescence.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.22C",
+      "components": [
+        "2C"
+      ],
+      "verdict": "not-separate-reaction",
+      "reasoning": "Ores/native occurrence, no separate equation.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "metal-ores-native",
+          "sectionSha256": "4d626394fe9ca342c87a9b14ecf601bbfbc5a515ec8c46baae3525877dafb10e"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "ore-species-transfer-evidence",
+          "sectionSha256": "59e8a29181293c4275ab3fea6ba5abd2bdcfa90aa4d1a882b5be1baa0c2f6631"
+        }
+      ],
+      "modelOrRepresentationEvidence": [],
+      "sourceScopeLimits": "Ores versus native elements; no extra extraction equation.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.23C",
+      "components": [
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "Fe CO reduction and carbon-anode Al overall equation plus existing cathode half-equation cover both named routes. Solid iron stage and molten-bath shorthand expressly limited; no industrial-step memorisation.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "metal-extraction-carbon",
+          "sectionSha256": "00e744dcdaf520b2b406d37c3d0e84a0bd553f63e62b23b6057b4120cb4599ae"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "metal-extraction-electrolysis",
+          "sectionSha256": "83a74fad64bb98eccaa1412585c00e7e937fa2f4ced72b3ed709482022a8eac6"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "extraction-route-transfer-evidence",
+          "sectionSha256": "353d58d7c8aca4793791b080eb68f20b5ad00369e45180ddabf7a9ede96825a8"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "iron-oxide-carbon-monoxide",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-extraction"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "aluminium-carbon-anode",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-extraction"
+        }
+      ],
+      "sourceScopeLimits": "Heated iron reduction; iron phase depends actual process stage, do not universalise (s). Al school half-equation in molten cryolite/alumina bath, metal liquid in industrial cell; ions molten electrolyte not aqueous. Detailed furnace/anode sequence not prescribed by this identity.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.24C",
+      "components": [
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "Supplied-process evaluation reuses extraction models; no compulsory equation for every metal/process.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "metal-extraction-evaluation",
+          "sectionSha256": "712000ddd0e6c52a36c0c35c152f7b28b304a03816f99523dee8ae75738edee9"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "extraction-comparison-transfer-evidence",
+          "sectionSha256": "07d79fe1d95e8008252269fb24e0acb9ef6c675aa865a43e403444d1d47bb27f"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "iron-oxide-carbon-monoxide",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-extraction"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "aluminium-carbon-anode",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-extraction"
+        }
+      ],
+      "sourceScopeLimits": "Detailed specific industrial extraction processes explicitly not required. Do not create a compulsory bank entry for each metal or furnace step.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.25C",
+      "components": [
+        "2C"
+      ],
+      "verdict": "not-separate-reaction",
+      "reasoning": "Metal/steel use-property links, no separate reaction requirement.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "metal-uses-aluminium-copper",
+          "sectionSha256": "21d5ef0e34abbf312685c10a31d5f216e80af9a458f3e0cd11373856d012e569"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "metal-uses-iron-steels",
+          "sectionSha256": "54623f9459faa291c82b17ae850dc967ddb42009a5e4b2cf967ff06e842b60d0"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "metal-property-choice-evidence",
+          "sectionSha256": "5073a3046e9c6dbed78cf703410734044fba168d79f121477227577a653f3c22"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "steel-choice-transfer-evidence",
+          "sectionSha256": "86195b54480397d503f13f1e65342376b6e5f30f9a8d2806e177c55b0c324d98"
+        }
+      ],
+      "modelOrRepresentationEvidence": [],
+      "sourceScopeLimits": "Al/Cu/Fe/steel uses and properties. Oxide/passive-film context not demand for separate oxidation equations. Steel limited mild, high-carbon, stainless.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.26C",
+      "components": [
+        "2C"
+      ],
+      "verdict": "not-separate-reaction",
+      "reasoning": "Alloy composition as mixture, not fixed compound synthesis.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "metal-alloys-mixtures",
+          "sectionSha256": "d88044f0a3ab13cc0b32e0ae56921711c4502d103624f1d270d6945e49958d0c"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "alloy-fraction-transfer-evidence",
+          "sectionSha256": "6088ba30df0f70b6065e64f0e0e50b81ae312bbfdf229e64fa9a27da8b695899"
+        }
+      ],
+      "modelOrRepresentationEvidence": [],
+      "sourceScopeLimits": "Alloy mixture, variable proportions; do not invent compound formation equation.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.27C",
+      "components": [
+        "2C"
+      ],
+      "verdict": "not-separate-reaction",
+      "reasoning": "Hardness structural explanation, no chemical reaction.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "metal-alloys-hardness",
+          "sectionSha256": "bebd0bcc577446e69fdd5ac59d61b970f32cd083cbb0867fc4482b52cdbb7b67"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "alloy-model-transfer-evidence",
+          "sectionSha256": "1ba987b2ab0e9dc840bbd8b6b91f4d0116e69815105961e17d276b751b87a0ce"
+        }
+      ],
+      "modelOrRepresentationEvidence": [],
+      "sourceScopeLimits": "Hardness structural model, no reaction.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.28",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "not-separate-reaction",
+      "reasoning": "Named indicator colours, no compulsory indicator mechanism equation.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "acid-indicator-colours",
+          "sectionSha256": "9725ac8773ea7fdb0990d3bf9ffff4f684bca264b3191c328b1c152827ebe605"
+        }
+      ],
+      "modelOrRepresentationEvidence": [],
+      "sourceScopeLimits": "Litmus/phenolphthalein/methyl-orange colours; indicator equilibrium equations not prescribed.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.29",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "not-separate-reaction",
+      "reasoning": "pH classification, no separate reaction.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "acid-ph-classification",
+          "sectionSha256": "dbb3f293ff5fbee44e241a2791c00465d8abffbf760a6062fa8ede47aafba860"
+        }
+      ],
+      "modelOrRepresentationEvidence": [],
+      "sourceScopeLimits": "School pH scale classification; no extra equation.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.30",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "not-separate-reaction",
+      "reasoning": "Universal indicator approximate pH method, no separate reaction.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "acid-universal-indicator",
+          "sectionSha256": "ce80bf04ff51eb0dd662feb5b3237bf32c0bd462bd22d5db84a8eb4ead88e678"
+        }
+      ],
+      "modelOrRepresentationEvidence": [],
+      "sourceScopeLimits": "Universal indicator approximate pH; no extra equation.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.31",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "Aqueous H+/OH− species and spectator teaching support neutralisation; no additional named dissociation mandated.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "acid-aqueous-ions",
+          "sectionSha256": "2f0016610ef5935f0624589fb1149ce87dd3efd1a67551734a5f48136a7a9429"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-named-core-2026-10-17.json",
+          "recordId": "hydrochloric-neutralization",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-hydrochloric-neutralization"
+        }
+      ],
+      "sourceScopeLimits": "Aqueous dissociation/species skill; no separately prescribed named ionisation equation. H+ school shorthand; ammonia is not a hydroxide formula.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.32",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "Sulfuric full neutralisation plus shared HCl/NaOH and net H+/OH− equation cover family, stoichiometry and endpoint limits.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "acid-neutralization",
+          "sectionSha256": "e99c318df2c3a703fed6500f0311e14a2d32fab5d979308edf54abbf66cc1009"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "sulfuric-full-neutralization",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-acid-breadth"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-named-core-2026-10-17.json",
+          "recordId": "hydrochloric-neutralization",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-hydrochloric-neutralization"
+        }
+      ],
+      "sourceScopeLimits": "Full neutralisation stoichiometry. Endpoint not automatically equivalence/pH7; named acid/base pairs representative.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.33C",
+      "components": [
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "Existing titration method/results reuse neutralisation equations; no exclusive titrant/analyte required.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "acid-titration-method",
+          "sectionSha256": "a6b68707dfb755f9586f8d407027ee4582e7d5f60dd903e3c7110d1c26e3fe30"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "acid-titration-results",
+          "sectionSha256": "550e4e1d0363f058e7d6ae92103f25dc2863f04550574b5bb2c1108f8e01c7f0"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-named-core-2026-10-17.json",
+          "recordId": "hydrochloric-neutralization",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-hydrochloric-neutralization"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "sulfuric-full-neutralization",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-acid-breadth"
+        }
+      ],
+      "sourceScopeLimits": "Titration method; no additional exclusive acid/base pair. Aqueous solutions, appropriate indicator, delivered volumes and balanced stoichiometry.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.34",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "not-separate-reaction",
+      "reasoning": "Six solubility families and exceptions support state choice; salt examples/precipitations reuse this skill, not an exhaustive salt matrix.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "salt-solubility-rules",
+          "sectionSha256": "9109bfbb43b7a93d8066187ac5f9ce72dd1bf67789eeb50bb2d8422db74589aa"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "salt-solubility-exceptions",
+          "sectionSha256": "6d8a321f5b4d9f9b2b6c4671660629922cab8548e06c50b56690e60268939f55"
+        }
+      ],
+      "modelOrRepresentationEvidence": [],
+      "sourceScopeLimits": "All six solubility rules and exceptions required, not infinite salt-pair reactions. All nitrates/common Na K NH4 salts soluble; chlorides except Ag/PbII; sulfates except Ba/Ca/PbII; carbonates except Na/K/NH4; hydroxides except Na/K/Ca (Ca slightly soluble).",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.35",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "Aqueous NH3/HCl full model plus NH3/H+/OH− and reversible NH3/water notes cover proton transfer without invented water product.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "acid-proton-transfer",
+          "sectionSha256": "5ce730e025c4bb9d4c303fc30abee8be215c899e2ac7f9e1a27477e8015c95de"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "aqueous-ammonia-hydrochloric",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-acid-breadth"
+        }
+      ],
+      "sourceScopeLimits": "Proton-transfer principle; examples not separately prescribed. Reversible weak-base aqueous equilibrium distinct from complete neutralisation.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.36",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "Same proton-transfer evidence identifies donor/acceptor; no independent equation inventory needed.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "acid-proton-transfer",
+          "sectionSha256": "5ce730e025c4bb9d4c303fc30abee8be215c899e2ac7f9e1a27477e8015c95de"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "aqueous-ammonia-hydrochloric",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-acid-breadth"
+        }
+      ],
+      "sourceScopeLimits": "No new reaction; roles assigned within particular equation.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.37",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "Named acids covered across suitable metal, oxide/hydroxide/ammonia base and carbonate families. HNO3/metal exclusion explicit. Shared HCl carbonate plus nitric/sulfuric MgCO3 models give breadth without every combination.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "acid-metal-salts",
+          "sectionSha256": "3c09596b584217bb0454f516d980e4aa4c75f512373e69ad9007890f9ac3709c"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "acid-base-salts",
+          "sectionSha256": "5dcc9952ba9db0ebf2a80d8f442ed64ff57a1164a2b4be3b73ca92b325994def"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "acid-carbonate-salts",
+          "sectionSha256": "5ee1ed4c4f352fd097ab125db3040430ac3552d3694d1828eb5d76ce1fbce0ee"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "magnesium-hydrochloric",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-metal-water-acid"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "iron-sulfuric",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-metal-water-acid"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "copper-oxide-sulfate",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-salt-preparation"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "sulfuric-full-neutralization",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-acid-breadth"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "nitric-magnesium-hydroxide",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-acid-breadth"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "nitric-magnesium-carbonate",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-acid-breadth"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "sulfuric-magnesium-carbonate",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-acid-breadth"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-named-core-2026-10-17.json",
+          "recordId": "marble-hydrochloric-acid",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-marble-hydrochloric-acid"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-named-core-2026-10-17.json",
+          "recordId": "hydrochloric-neutralization",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-hydrochloric-neutralization"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "aqueous-ammonia-hydrochloric",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-acid-breadth"
+        }
+      ],
+      "sourceScopeLimits": "Representative coverage grid, not every possible metal/base/carbonate. Dilute aqueous acids; suitable solids/aqueous bases, soluble salt aq, H2/CO2 gas, water liquid. Nitric acid + metals explicitly outside this scope. Ammonia gives no additional water. Insoluble sulfate coating can arrest some carbonate/metal reactions.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.38",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "Original base-type/acid-base notes and oxide, hydroxide, ammonia models distinguish soluble alkalis and bases without OH formula.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "acid-base-types",
+          "sectionSha256": "80800e7f83d773be9d4b8a22c371ee2267f0ca5751cd07419c094353ad8dbbc9"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "acid-base-salts",
+          "sectionSha256": "5dcc9952ba9db0ebf2a80d8f442ed64ff57a1164a2b4be3b73ca92b325994def"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "sulfuric-full-neutralization",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-acid-breadth"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "copper-oxide-sulfate",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-salt-preparation"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "nitric-magnesium-hydroxide",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-acid-breadth"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "aqueous-ammonia-hydrochloric",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-acid-breadth"
+        }
+      ],
+      "sourceScopeLimits": "Alkali is water-soluble base. No requirement that all bases are soluble or have OH in formula.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.39",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "CuO/H2SO4 example and method notes cover insoluble-reactant soluble-salt route; shared with 2.42.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "salt-insoluble-reactant",
+          "sectionSha256": "14ba7e93f75f1fd5123b0c7ae228876b85e9fb5d672c6da92b0346f051243f5c"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "salt-method-choice",
+          "sectionSha256": "6a8aadab021ac782f874ebdd2aeceb4f0ca058d776f9db2d6eb01dbdbc8511db"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "salt-purity-recovery",
+          "sectionSha256": "ccc5907a09ac1f3b942843f76595bd1bcc1f23822a7d2729788e63c469b8bd6e"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "copper-oxide-sulfate",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-salt-preparation"
+        }
+      ],
+      "sourceScopeLimits": "Insoluble reactant to soluble salt: excess solid then filter/concentrate/cool/dry. Choice representative, shared with named 2.42; no unique new salt demanded.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.40C",
+      "components": [
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "Shared HCl/NaOH state-labelled model plus uncontaminated measured-repeat preparation notes cover acid/alkali soluble-salt method.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "salt-acid-alkali-preparation",
+          "sectionSha256": "49a14e3cb303df5b01babae23624198f15e62a492077b224705347776ff155d2"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "salt-method-choice",
+          "sectionSha256": "6a8aadab021ac782f874ebdd2aeceb4f0ca058d776f9db2d6eb01dbdbc8511db"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-named-core-2026-10-17.json",
+          "recordId": "hydrochloric-neutralization",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-hydrochloric-neutralization"
+        }
+      ],
+      "sourceScopeLimits": "Acid/alkali soluble-salt preparation; titration then uncontaminated measured repeat. Salt representative, not exclusively NaCl.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.41C",
+      "components": [
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "Pb(NO3)2/Na2SO4 molecular and net ionic precipitation models cover two-soluble-reactant family; reagent choice representative.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "salt-precipitation",
+          "sectionSha256": "747ac870f1da6de0c6919247960ce19b7de51bbeffb2642b1eeec4577d9158b5"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "salt-method-choice",
+          "sectionSha256": "6a8aadab021ac782f874ebdd2aeceb4f0ca058d776f9db2d6eb01dbdbc8511db"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "lead-sulfate-precipitation",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-salt-preparation"
+        }
+      ],
+      "sourceScopeLimits": "Two soluble reagents yield insoluble salt; precipitate/filter/wash/dry. Examples not new exclusive required salts; named lead case separately 2.43C.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.42",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "Named CuO reaction forms aqueous CuSO4; preparation notes explicitly recover dry hydrated crystals. Surface drying versus dehydration retained.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "salt-copper-hydrated",
+          "sectionSha256": "a6090c200132e8c1157aff9aaf3314843fe895be9ea941a8584859ffe8cb7864"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "salt-purity-recovery",
+          "sectionSha256": "ccc5907a09ac1f3b942843f76595bd1bcc1f23822a7d2729788e63c469b8bd6e"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "copper-oxide-sulfate",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-salt-preparation"
+        }
+      ],
+      "sourceScopeLimits": "Warm dilute acid; excess insoluble oxide removed. Crystallisation gives CuSO4·5H2O(s) in school case; dry surface does not mean anhydrous. Separate hydration bookkeeping optional, not pretend crystal formula is aqueous product. Applies both papers.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.43C",
+      "components": [
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "Named PbSO4 precipitation, soluble reagent choices, filtration/washing/supervised drying adequate; no extra mandatory reagent choice.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "salt-lead-sulfate",
+          "sectionSha256": "09fb9ef3152716cf1d4b19685b620a4e6f68c7421a8590c6f25b8ac7984004c8"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "lead-sulfate-precipitation",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-salt-preparation"
+        }
+      ],
+      "sourceScopeLimits": "Named product prescribed; nitrate/sodium-sulfate reagent choice representative soluble pair. Filter, wash, dry under supervised procedure; not direct heating acid/lead chemicals.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.44",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "All five gas-test contexts in original notes; hydrogen combustion/limewater provide applicable equations. Oxygen splint, ammonia litmus and chlorine bleaching do not prescribe unique full reagent formulas.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "test-hydrogen-oxygen",
+          "sectionSha256": "a2c157c2bcb7c8e4887a336e91f99ccda84130d6ac4cc19e1477b08a2a544896"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "test-carbon-dioxide",
+          "sectionSha256": "ffbce7ffd797d9bbf7b89266c8e984ad7610a14875f94f2b4cd35a48003c326a"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "test-ammonia-chlorine",
+          "sectionSha256": "b27f0888293499154dcddf9f7f2fec87251bb338ea40a55b066c7dd9ae7ce399"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "test-observation-inference",
+          "sectionSha256": "d7de112c170cc770e936c0d7d6a254380649cb035b854aa2217065633ede3968"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "hydrogen-combustion",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-combustion"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "limewater-carbon-dioxide",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-gas-tests"
+        }
+      ],
+      "sourceScopeLimits": "Named tests required; not five new compulsory equations. H2 lighted splint pop; O2 glowing splint relights; CO2 limewater cloudy; NH3 damp red litmus blue; Cl2 damp litmus bleached. Splint fuel unspecified, no unique O2 splint equation; indicator/bleaching mechanism equations optional. Water moisture essential for papers.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.45",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "not-separate-reaction",
+      "reasoning": "Flame-test procedure is not a separate reaction equation.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "test-flame-method",
+          "sectionSha256": "22b4a8c8ca589718e5633d44118959385ed40c5cbb888bfcb19e06b248df1941"
+        }
+      ],
+      "modelOrRepresentationEvidence": [],
+      "sourceScopeLimits": "Flame-test procedure; clean wire and avoid sodium contamination. No combustion equation for each salt.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.46",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "not-separate-reaction",
+      "reasoning": "Five named ion flame colours are excitation/emission evidence, not five reactions.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "test-flame-colours",
+          "sectionSha256": "ba7f62caefeb020ceddda1533887d2391f007ac4b8e27e581c8d580e41a72a8e"
+        }
+      ],
+      "modelOrRepresentationEvidence": [],
+      "sourceScopeLimits": "Li/Na/K/Ca/Cu flame colours are excitation/emission evidence, not distinct reaction equations.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.47",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "NH4+ gas evolution and CuII/FeII/FeIII hydroxide tests all have molecular/ionic forms, states and observations; chloride salt choices representative.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "test-metal-hydroxides",
+          "sectionSha256": "a95f521b5a6d0de3659a5b9c090f841b8a33b21f29d691c15276e28320d74ceb"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "test-ammonium",
+          "sectionSha256": "4944e661ec4382eb91a2b84e1e108e30a5ae7cd21c0f8b41f4976c739e7b0226"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "test-observation-inference",
+          "sectionSha256": "d7de112c170cc770e936c0d7d6a254380649cb035b854aa2217065633ede3968"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "ammonium-hydroxide-test",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-gas-tests"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "cu2-hydroxide-test",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-metal-hydroxide-tests"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "fe2-hydroxide-test",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-metal-hydroxide-tests"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "fe3-hydroxide-test",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-metal-hydroxide-tests"
+        }
+      ],
+      "sourceScopeLimits": "Warm ammonium mixture; NH3 damp red litmus blue. Hydroxides blue/green/brown precipitates; salts supplying cations need not be individually enumerated. OH− aqueous, precipitate solid; distinguish FeII/III.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.48",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "Three Ag-halides and BaSO4 models plus shared marble/HCl and limewater cover all named anion tests. Correct acidification and actual carbonate-phase limits retained.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "test-halide-ions",
+          "sectionSha256": "55d1101e968594730a84cffa83d8fc7972dc7722c890e39ef7dfd10075645e0e"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "test-sulfate-ions",
+          "sectionSha256": "960a6e8307c6457440cb14b17de8b5e3cda654deaa96ddfc91d146270c998c26"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "test-carbonate-ions",
+          "sectionSha256": "c3c30698aef7e39413a9eebd89328a0cf9474ba7edd739f31c9c75580c0898b5"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "test-observation-inference",
+          "sectionSha256": "d7de112c170cc770e936c0d7d6a254380649cb035b854aa2217065633ede3968"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "limewater-carbon-dioxide",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-gas-tests"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "silver-cl-test",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-anion-tests"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "silver-br-test",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-anion-tests"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "silver-i-test",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-anion-tests"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "barium-sulfate-test",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-anion-tests"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-named-core-2026-10-17.json",
+          "recordId": "marble-hydrochloric-acid",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-marble-hydrochloric-acid"
+        }
+      ],
+      "sourceScopeLimits": "Halides acidify dilute HNO3 (never HCl), white/cream/yellow precipitates; sulfate acidify dilute HCl then BaCl2 (not H2SO4), white. Carbonate can be insoluble solid; net CO3 ion form is bookkeeping, do not mark all carbonate samples aq. Use suitable actual carbonate molecular example if states demanded. CO2 limewater secondary test.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.49",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "adequate-with-scope",
+      "reasoning": "Existing water-presence lesson and shared CuSO4 hydration model cover white-to-blue test; pentahydrate model conditional, excess-water dissolution and no purity inference explicit.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "test-water-presence",
+          "sectionSha256": "a149aefbe412a3a9ab4cd34dd93937e43f85a85423bf4a909367546df5aeb96b"
+        }
+      ],
+      "modelOrRepresentationEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-named-core-2026-10-17.json",
+          "recordId": "copper-sulfate-hydration",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-copper-sulfate-hydration"
+        }
+      ],
+      "sourceScopeLimits": "White to blue; test establishes water presence, not purity. Equation supports named chemical change but exact hydrate stoichiometry not separately demanded by 2.49. Excess liquid/sample may dissolve salt.",
+      "materialGap": null
+    },
+    {
+      "sourceId": "4CH1:issue3:2.50",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "verdict": "not-separate-reaction",
+      "reasoning": "Water purity by physical transition temperature at stated pressure; no reaction.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "test-water-purity",
+          "sectionSha256": "00bb1271ddc34920e4b1bb8beb2e3940058d5c191fb7ccf1d6b91705145eaee6"
+        },
+        {
+          "noteRef": "content/notes/chemistry-inorganic.json",
+          "sectionId": "test-observation-inference",
+          "sectionSha256": "d7de112c170cc770e936c0d7d6a254380649cb035b854aa2217065633ede3968"
+        }
+      ],
+      "modelOrRepresentationEvidence": [],
+      "sourceScopeLimits": "Physical purity test water by boiling/freezing point at stated pressure. No new reaction; 100 °C/0 °C school values at standard atmospheric pressure.",
+      "materialGap": null
+    }
+  ],
+  "trackedFlagsChanged": false,
+  "promotionDecision": "reserved-to-root"
+}

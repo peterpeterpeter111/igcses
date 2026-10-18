@@ -5,11 +5,11 @@
   "documentId": "4CH1-spec",
   "specificationIssue": "Issue 3",
   "documentSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
-  "reviewDate": "2026-10-09",
+  "reviewDate": "2026-10-19",
   "reviewer": "Codex source and authored-teaching review",
   "reviewerType": "agent",
   "humanReviewed": false,
-  "scope": "Only13 identities1.23/1.24 and1.26–1.36 (1.34C/1.35C2Conly),34editorialrequirements complete in authored teaching.1.25 remains partial: complete set of prescribed reactions not audited. Own Issue3PDF19/printed13 visually re-read; whole Principles/learner/exam readiness incomplete.",
+  "scope": "All14 formula/calculation identities1.23–1.36 have complete agent-reviewed authored teaching.1.25 was completed after182source-identity reaction-family reconciliation plus original supplied-identity/state tasks.1.34C/1.35C retain Paper2C-only scope. Whole chapter review is separately recorded; no learner/practical/examiner certification.",
   "identifierPolicy": "r suffixes are local editorial audit clauses, not publisher-numbered substatements.",
   "notePath": "content/notes/chemistry.json",
   "parents": [
@@ -127,9 +127,9 @@
         "2C"
       ],
       "sourceDecompositionStatus": "source-checked",
-      "teachingAuditStatus": "partial",
-      "substatementAuditComplete": false,
-      "scopeNote": "First13 condition-qualified written reaction models added after the cross-topic source-scope review. This is a bounded authored slice, not full reaction-family coverage, practical performance or examiner calibration.",
+      "teachingAuditStatus": "complete",
+      "substatementAuditComplete": true,
+      "scopeNote": "Complete agent-reviewed authored equation teaching after all182source-identity family decisions were reconciled.69modelrecords and7typed representations support the studied collection, contextual states and supplied unfamiliar transfer. This does not certify practical execution, learner achievement or examiner templates.",
       "requirements": [
         {
           "id": "4CH1:issue3:1.25:r1",
@@ -191,14 +191,151 @@
             {
               "sectionId": "equation-case-zinc-copper-displacement",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-ethanol-combustion",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-ethanol-microbial-oxidation",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-ethanol-dichromate-oxidation",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-ethene-hydration",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-glucose-fermentation",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-ethyl-ethanoate",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-hydrocarbon-complete",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-hydrocarbon-incomplete-co",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-hydrocarbon-incomplete-carbon",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-cracking",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-alkane-monosubstitution",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-alkene-bromine-addition",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-carboxylic-acid-metal",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-carboxylic-acid-carbonate",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-group1-water",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-halogen-displacement",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-combustion",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-thermal-carbonate",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-metal-water-acid",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-extraction",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-salt-preparation",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-gas-tests",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-metal-hydroxide-tests",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-anion-tests",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-oxygen-redox",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-acid-breadth",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-reconciliation-equilibria",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-reconciliation-bond-model",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-reconciliation-engine",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-reconciliation-calcium-water",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-reconciliation-unfamiliar",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-reconciliation-actual-oxidant",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-reconciliation-nonunique",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-reconciliation-addition-polymers",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-reconciliation-polyester",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Complete the remaining source-constrained named and representative reaction families, including Organic models.",
-            "Review wider unfamiliar reaction-identity practice and state/condition choices; this first13-model slice is not the whole collection."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4CH1:issue3:1.25:r2",
@@ -260,14 +397,151 @@
             {
               "sectionId": "equation-case-zinc-copper-displacement",
               "field": "example"
+            },
+            {
+              "sectionId": "equation-case-organic-ethanol-combustion",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-case-organic-ethanol-microbial-oxidation",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-case-organic-ethanol-dichromate-oxidation",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-case-organic-ethene-hydration",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-case-organic-glucose-fermentation",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-case-organic-ethyl-ethanoate",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-case-organic-hydrocarbon-complete",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-case-organic-hydrocarbon-incomplete-co",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-case-organic-hydrocarbon-incomplete-carbon",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-case-organic-cracking",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-case-organic-alkane-monosubstitution",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-case-organic-alkene-bromine-addition",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-case-organic-carboxylic-acid-metal",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-case-organic-carboxylic-acid-carbonate",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-family-inorganic-group1-water",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-family-inorganic-halogen-displacement",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-family-inorganic-combustion",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-family-inorganic-thermal-carbonate",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-family-inorganic-metal-water-acid",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-family-inorganic-extraction",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-family-inorganic-salt-preparation",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-family-inorganic-gas-tests",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-family-inorganic-metal-hydroxide-tests",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-family-inorganic-anion-tests",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-family-inorganic-oxygen-redox",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-family-inorganic-acid-breadth",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-reconciliation-equilibria",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-reconciliation-bond-model",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-reconciliation-engine",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-reconciliation-calcium-water",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-reconciliation-unfamiliar",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-reconciliation-actual-oxidant",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-reconciliation-nonunique",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-reconciliation-addition-polymers",
+              "field": "example"
+            },
+            {
+              "sectionId": "equation-reconciliation-polyester",
+              "field": "example"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Complete the remaining source-constrained named and representative reaction families, including Organic models.",
-            "Review wider unfamiliar reaction-identity practice and state/condition choices; this first13-model slice is not the whole collection."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4CH1:issue3:1.25:r3",
@@ -329,19 +603,156 @@
             {
               "sectionId": "equation-case-zinc-copper-displacement",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-ethanol-combustion",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-ethanol-microbial-oxidation",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-ethanol-dichromate-oxidation",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-ethene-hydration",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-glucose-fermentation",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-ethyl-ethanoate",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-hydrocarbon-complete",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-hydrocarbon-incomplete-co",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-hydrocarbon-incomplete-carbon",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-cracking",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-alkane-monosubstitution",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-alkene-bromine-addition",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-carboxylic-acid-metal",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-carboxylic-acid-carbonate",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-group1-water",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-halogen-displacement",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-combustion",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-thermal-carbonate",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-metal-water-acid",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-extraction",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-salt-preparation",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-gas-tests",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-metal-hydroxide-tests",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-anion-tests",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-oxygen-redox",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-acid-breadth",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-reconciliation-equilibria",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-reconciliation-bond-model",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-reconciliation-engine",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-reconciliation-calcium-water",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-reconciliation-unfamiliar",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-reconciliation-actual-oxidant",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-reconciliation-nonunique",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-reconciliation-addition-polymers",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-reconciliation-polyester",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Complete the remaining source-constrained named and representative reaction families, including Organic models.",
-            "Review wider unfamiliar reaction-identity practice and state/condition choices; this first13-model slice is not the whole collection."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         },
         {
           "id": "4CH1:issue3:1.25:r4",
           "origin": "editorial-decomposition",
-          "summary": "Use unfamiliar supplied reaction identities; full prescribed-reaction set pending.",
+          "summary": "Use unfamiliar supplied reaction identities with sufficient formula and state information.",
           "teachingEvidence": [
             {
               "sectionId": "equations-and-state-symbols",
@@ -398,14 +809,151 @@
             {
               "sectionId": "equation-case-zinc-copper-displacement",
               "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-ethanol-combustion",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-ethanol-microbial-oxidation",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-ethanol-dichromate-oxidation",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-ethene-hydration",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-glucose-fermentation",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-ethyl-ethanoate",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-hydrocarbon-complete",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-hydrocarbon-incomplete-co",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-hydrocarbon-incomplete-carbon",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-cracking",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-alkane-monosubstitution",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-alkene-bromine-addition",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-carboxylic-acid-metal",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-case-organic-carboxylic-acid-carbonate",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-group1-water",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-halogen-displacement",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-combustion",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-thermal-carbonate",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-metal-water-acid",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-extraction",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-salt-preparation",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-gas-tests",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-metal-hydroxide-tests",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-anion-tests",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-oxygen-redox",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-family-inorganic-acid-breadth",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-reconciliation-equilibria",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-reconciliation-bond-model",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-reconciliation-engine",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-reconciliation-calcium-water",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-reconciliation-unfamiliar",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-reconciliation-actual-oxidant",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-reconciliation-nonunique",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-reconciliation-addition-polymers",
+              "field": "paragraphs"
+            },
+            {
+              "sectionId": "equation-reconciliation-polyester",
+              "field": "paragraphs"
             }
           ],
           "explanationStatus": "present",
-          "completionStatus": "partial",
-          "remainingChecks": [
-            "Complete the remaining source-constrained named and representative reaction families, including Organic models.",
-            "Review wider unfamiliar reaction-identity practice and state/condition choices; this first13-model slice is not the whole collection."
-          ]
+          "completionStatus": "complete",
+          "remainingChecks": []
         }
       ]
     },
@@ -1124,6 +1672,6 @@
       ]
     }
   ],
-  "completeTeachingPoints": 13,
+  "completeTeachingPoints": 14,
   "completeChapters": 0
 }

@@ -1,0 +1,634 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-18",
+  "reviewer": "Codex independent bounded model/answer reviewer",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "result": "pass-with-nonblocking-notes",
+  "scope": "All32 new inorganic models and all12 matching worked/practice answers. Compared saved Inorganic source-scope decisions only; no broad retrieval or tracked edits.",
+  "inputs": [
+    {
+      "path": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+      "sha256": "9dfabb4cc3e26f26957c2b2745ce7b542f0f4ff898dcbe7892000c77e17eab87"
+    },
+    {
+      "path": "content/notes/chemistry.json",
+      "sha256": "11af2008f81517cbf0ed949c26b74365224f66e4314c31a9b3313eaf49272300"
+    },
+    {
+      "path": "research/reviews/reaction-source-scope-2026-10-17/inorganic-source.json",
+      "sha256": "80e9e9b1ba73925ac1f126b2989cf2b26a2b88b8e11d7b6882eeeeebcb0aab7b"
+    }
+  ],
+  "sourceChecksumMatches": true,
+  "counts": {
+    "models": 32,
+    "workedExamples": 12,
+    "practiceAnswers": 12,
+    "blockingFindings": 0,
+    "nonblockingFindings": 2
+  },
+  "modelChecks": [
+    {
+      "id": "lithium-water",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "H": 4,
+        "Li": 2,
+        "O": 2
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    },
+    {
+      "id": "sodium-water",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "H": 4,
+        "Na": 2,
+        "O": 2
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    },
+    {
+      "id": "potassium-water",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "H": 4,
+        "K": 2,
+        "O": 2
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    },
+    {
+      "id": "cl-displaces-br",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "Br": 2,
+        "Cl": 2,
+        "Na": 2
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    },
+    {
+      "id": "cl-displaces-i",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "Cl": 2,
+        "I": 2,
+        "Na": 2
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    },
+    {
+      "id": "br-displaces-i",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "Br": 2,
+        "I": 2,
+        "Na": 2
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    },
+    {
+      "id": "hydrogen-combustion",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "H": 4,
+        "O": 2
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    },
+    {
+      "id": "sulfur-combustion",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "O": 2,
+        "S": 1
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    },
+    {
+      "id": "copper-carbonate-decomposition",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "C": 1,
+        "Cu": 1,
+        "O": 3
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    },
+    {
+      "id": "magnesium-steam",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "H": 2,
+        "Mg": 1,
+        "O": 1
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    },
+    {
+      "id": "magnesium-hydrochloric",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "Cl": 2,
+        "H": 2,
+        "Mg": 1
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    },
+    {
+      "id": "iron-sulfuric",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "Fe": 1,
+        "H": 2,
+        "O": 4,
+        "S": 1
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    },
+    {
+      "id": "iron-oxide-carbon-monoxide",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "C": 3,
+        "Fe": 2,
+        "O": 6
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    },
+    {
+      "id": "copper-oxide-sulfate",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "Cu": 1,
+        "H": 2,
+        "O": 5,
+        "S": 1
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    },
+    {
+      "id": "lead-sulfate-precipitation",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "N": 2,
+        "Na": 2,
+        "O": 10,
+        "Pb": 1,
+        "S": 1
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    },
+    {
+      "id": "limewater-carbon-dioxide",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "C": 1,
+        "Ca": 1,
+        "H": 2,
+        "O": 4
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    },
+    {
+      "id": "ammonium-hydroxide-test",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "Cl": 1,
+        "H": 5,
+        "N": 1,
+        "Na": 1,
+        "O": 1
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    },
+    {
+      "id": "cu2-hydroxide-test",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "Cl": 2,
+        "Cu": 1,
+        "H": 2,
+        "Na": 2,
+        "O": 2
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    },
+    {
+      "id": "fe2-hydroxide-test",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "Cl": 2,
+        "Fe": 1,
+        "H": 2,
+        "Na": 2,
+        "O": 2
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    },
+    {
+      "id": "fe3-hydroxide-test",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "Cl": 3,
+        "Fe": 1,
+        "H": 3,
+        "Na": 3,
+        "O": 3
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    },
+    {
+      "id": "silver-cl-test",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "Ag": 1,
+        "Cl": 1,
+        "N": 1,
+        "Na": 1,
+        "O": 3
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    },
+    {
+      "id": "silver-br-test",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "Ag": 1,
+        "Br": 1,
+        "N": 1,
+        "Na": 1,
+        "O": 3
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    },
+    {
+      "id": "silver-i-test",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "Ag": 1,
+        "I": 1,
+        "N": 1,
+        "Na": 1,
+        "O": 3
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    },
+    {
+      "id": "barium-sulfate-test",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "Ba": 1,
+        "Cl": 2,
+        "Na": 2,
+        "O": 4,
+        "S": 1
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    },
+    {
+      "id": "aluminium-carbon-anode",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "Al": 4,
+        "C": 3,
+        "O": 6
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    },
+    {
+      "id": "phosphorus-oxygen",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "O": 10,
+        "P": 4
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    },
+    {
+      "id": "magnesium-copper-oxide",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "Cu": 1,
+        "Mg": 1,
+        "O": 1
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    },
+    {
+      "id": "sulfuric-full-neutralization",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "H": 4,
+        "Na": 2,
+        "O": 6,
+        "S": 1
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    },
+    {
+      "id": "nitric-magnesium-hydroxide",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "H": 4,
+        "Mg": 1,
+        "N": 2,
+        "O": 8
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    },
+    {
+      "id": "aqueous-ammonia-hydrochloric",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "Cl": 1,
+        "H": 4,
+        "N": 1
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    },
+    {
+      "id": "nitric-magnesium-carbonate",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "C": 1,
+        "H": 2,
+        "Mg": 1,
+        "N": 2,
+        "O": 9
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    },
+    {
+      "id": "sulfuric-magnesium-carbonate",
+      "status": "pass-with-stated-context",
+      "atomTotals": {
+        "C": 1,
+        "H": 2,
+        "Mg": 1,
+        "O": 7,
+        "S": 1
+      },
+      "wordFormulaAgreement": true,
+      "renderedEquationMatchesStructuredSpecies": true,
+      "componentsMatchSavedSource": true,
+      "existingAndNewLinksResolve": true,
+      "manualConditionsAndScopeReviewed": true
+    }
+  ],
+  "sectionChecks": [
+    {
+      "sectionId": "equation-family-inorganic-group1-water",
+      "workedExampleReviewed": true,
+      "practiceReviewed": true,
+      "status": "pass",
+      "finding": "Example conserves Na/H/O. Practice 0.060 mol K × 1/2 = 0.030 mol H2; initial metal phase and air-film limits correct."
+    },
+    {
+      "sectionId": "equation-family-inorganic-halogen-displacement",
+      "workedExampleReviewed": true,
+      "practiceReviewed": true,
+      "status": "pass",
+      "finding": "Net chlorine/bromide charge and atom counts correct. Bromine/iodide practice balanced; negative iodine/chloride and stipulated dissolved iodine states correct."
+    },
+    {
+      "sectionId": "equation-family-inorganic-combustion",
+      "workedExampleReviewed": true,
+      "practiceReviewed": true,
+      "status": "pass",
+      "finding": "H2/O2 and S/S8 coefficients correct. Hot steam versus cooled liquid is explicit; no sulfur product from pure H2/O2. Separate S8 practice asks balance, so state omission there does not contradict its prompt."
+    },
+    {
+      "sectionId": "equation-family-inorganic-thermal-carbonate",
+      "workedExampleReviewed": true,
+      "practiceReviewed": true,
+      "status": "pass",
+      "finding": "Pure CuCO3 and basic CuCO3·Cu(OH)2 models distinguished. Basic-carbonate practice conserves Cu2 C1 O5 H2 and correctly includes hot H2O(g)."
+    },
+    {
+      "sectionId": "equation-family-inorganic-metal-water-acid",
+      "workedExampleReviewed": true,
+      "practiceReviewed": true,
+      "status": "pass",
+      "finding": "Mg/steam oxide and slow cold-water hydroxide distinguished. Iron dilute-H2SO4 practice gives FeII, not FeIII; oxidising/concentrated acid extrapolation excluded."
+    },
+    {
+      "sectionId": "equation-family-inorganic-extraction",
+      "workedExampleReviewed": true,
+      "practiceReviewed": true,
+      "status": "pass",
+      "finding": "Carbon-anode overall balance Al4 C3 O6 correct and electric-energy role explicit. Al liquid, alumina bath shorthand disclosed; CO reduction is explicitly a solid-iron stage, with later melting allowed. Inert-anode comparison does not consume carbon."
+    },
+    {
+      "sectionId": "equation-family-inorganic-salt-preparation",
+      "workedExampleReviewed": true,
+      "practiceReviewed": true,
+      "status": "pass",
+      "finding": "CuO reaction produces CuSO4(aq), not immediate anhydrous solid; excess oxide removed then hydrated crystal recovery. PbSO4 practice balances two nitrates and sodium; Paper2C labelled locally and representative precursor choice retained."
+    },
+    {
+      "sectionId": "equation-family-inorganic-gas-tests",
+      "workedExampleReviewed": true,
+      "practiceReviewed": true,
+      "status": "pass",
+      "finding": "Limewater precipitate and warmed NH4Cl/NaOH balances and gas identification correct. NH4OH is explicitly rejected as isolated product; minor subheading label noted below."
+    },
+    {
+      "sectionId": "equation-family-inorganic-metal-hydroxide-tests",
+      "workedExampleReviewed": true,
+      "practiceReviewed": true,
+      "status": "pass",
+      "finding": "FeII requires2OH, FeIII3OH, CuII2OH. All practice formulae/states and green/brown/blue precipitate colours correct, with FeII oxidation on standing caveat."
+    },
+    {
+      "sectionId": "equation-family-inorganic-anion-tests",
+      "workedExampleReviewed": true,
+      "practiceReviewed": true,
+      "status": "pass",
+      "finding": "AgBr cream and BaSO4 white equations correct; nitric-acid halide versus hydrochloric-acid sulfate preparation avoids target-ion contamination. Practice answers match questions."
+    },
+    {
+      "sectionId": "equation-family-inorganic-oxygen-redox",
+      "workedExampleReviewed": true,
+      "practiceReviewed": true,
+      "status": "pass",
+      "finding": "P4+5O2→P4O10 balances; cooled product versus hot vapour qualified. Mg/CuO model and agent assignments correct: CuO oxidising, Mg reducing. Rust hydration not fabricated."
+    },
+    {
+      "sectionId": "equation-family-inorganic-acid-breadth",
+      "workedExampleReviewed": true,
+      "practiceReviewed": true,
+      "status": "pass",
+      "finding": "Full H2SO4 neutralisation needs2NaOH:0.0250 mol acid→0.0500 mol base. Mg(OH)2/HNO3 and MgCO3/HNO3 equations correct; CO2 versus H2 and aqueous-ammonia/no-OH base distinction sound."
+    }
+  ],
+  "findings": [
+    {
+      "id": "ammonium-test-label",
+      "priority": "low",
+      "blocking": false,
+      "file": "content/notes/chemistry.json",
+      "sectionId": "equation-family-inorganic-gas-tests",
+      "field": "paragraphs",
+      "currentText": "Ammonium hydroxide test: ammonium chloride + sodium hydroxide → ammonia + sodium chloride + water.",
+      "finding": "The lead-in can be read as naming an ammonium-hydroxide substance, even though the equation and following text correctly identify the ammonium-ion test and reject isolated NH4OH.",
+      "recommendation": "Rename the lead-in to “Ammonium-ion test” or “Ammonium with sodium hydroxide”. No equation or answer change needed."
+    },
+    {
+      "id": "alumina-state-shorthand-retention",
+      "priority": "informational",
+      "blocking": false,
+      "file": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+      "modelId": "aluminium-carbon-anode",
+      "finding": "Al2O3(l) is explicitly qualified as molten-bath bookkeeping, not pure liquid alumina. It is acceptable only as this disclosed overall-process shorthand; the coefficients are sound and the lesson explains electrical reduction.",
+      "recommendation": "Keep the adjacent bath explanation and do not reuse this record as an unqualified exact-pure-phase state-symbol question or as evidence that carbon thermally reduces alumina. An export that strips the qualification should instead retain a phase-free process equation plus the bath description."
+    }
+  ],
+  "boundaryChecks": {
+    "p4CooledOxide": true,
+    "mgCuOInitialCooledStateModel": true,
+    "solidIronReductionStage": true,
+    "aluminiumLiquidAndBathShorthandDisclosed": true,
+    "carbonAnodeConsumedAndCO2OnlyModelQualified": true,
+    "noFixedRustFormula": true,
+    "nitricMetalExclusionPreserved": true,
+    "partialFullSulfuricNeutralizationDistinguished": true,
+    "paper2OnlyExtractionAndLeadSaltContextsLabelled": true,
+    "representativeSpectatorAndSaltChoicesNotCompulsory": true
+  },
+  "remainingLimits": [
+    "This review verifies only this finite authored slice, not all1.25 source families or unfamiliar-reaction transfer.",
+    "No practical trials, learner calibration or examiner validation.",
+    "The section’s1.25 point is shared, but extraction models and lead sulfate subcase must retain visible Paper2C qualifiers.",
+    "No requirement to add a fixed rust formula, every metal/acid permutation, every furnace/anode detail or every indicator mechanism follows from this saved source scope."
+  ],
+  "trackedFilesEdited": false,
+  "promote125": false,
+  "rootResolution": "Changed the visible Ammonium hydroxide test lead-in to Ammonium-ion test. The existing equation and explanation already reject isolatedNH4OH. Retained all stated phase/process qualifications."
+}

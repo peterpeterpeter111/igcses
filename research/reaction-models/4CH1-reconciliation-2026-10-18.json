@@ -1,0 +1,632 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4CH1",
+  "date": "2026-10-18",
+  "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "scope": "Ten additional finite written models plus seven separately typed physical/variable/open-repeat representations; supports still-partial1.25 and original unfamiliar transfer, not exhaustive collection certification.",
+  "wholeCollectionComplete": false,
+  "humanReviewed": false,
+  "practicalTrialsPerformed": false,
+  "noteRef": "content/notes/chemistry.json",
+  "noteSectionIds": [
+    "equation-reconciliation-equilibria",
+    "equation-reconciliation-bond-model",
+    "equation-reconciliation-engine",
+    "equation-reconciliation-calcium-water",
+    "equation-reconciliation-unfamiliar",
+    "equation-reconciliation-actual-oxidant",
+    "equation-reconciliation-nonunique",
+    "equation-reconciliation-addition-polymers",
+    "equation-reconciliation-polyester"
+  ],
+  "models": [
+    {
+      "id": "ammonia-equilibrium",
+      "sourceIds": [
+        "4CH1:issue3:3.19C",
+        "4CH1:issue3:3.20C",
+        "4CH1:issue3:3.21C",
+        "4CH1:issue3:3.22C"
+      ],
+      "components": [
+        "2C"
+      ],
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "N2",
+          "state": "g",
+          "name": "nitrogen"
+        },
+        {
+          "coefficient": 3,
+          "formula": "H2",
+          "state": "g",
+          "name": "hydrogen"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 2,
+          "formula": "NH3",
+          "state": "g",
+          "name": "ammonia"
+        }
+      ],
+      "formulaEquation": "N₂(g) + 3H₂(g) ⇌ 2NH₃(g)",
+      "arrow": "⇌",
+      "conditions": "A supplied closed gas-phase equilibrium model; all species are stipulated gaseous. Forward formation is exothermic in the accompanying equilibrium teaching. Pressure comparisons here mean compression/decreasing volume at fixed temperature.",
+      "limits": "This is a representative equation, not a new requirement to memorise a complete Haber industrial process. Pressure arguments count four gaseous reactant molecules versus two product molecules.",
+      "existingSectionId": "equilibrium-temperature",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "nitrogen + hydrogen ⇌ ammonia",
+      "sectionId": "equation-reconciliation-equilibria"
+    },
+    {
+      "id": "hydrogen-iodide-equilibrium",
+      "sourceIds": [
+        "4CH1:issue3:3.19C",
+        "4CH1:issue3:3.20C"
+      ],
+      "components": [
+        "2C"
+      ],
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "H2",
+          "state": "g",
+          "name": "hydrogen"
+        },
+        {
+          "coefficient": 1,
+          "formula": "I2",
+          "state": "g",
+          "name": "iodine"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 2,
+          "formula": "HI",
+          "state": "g",
+          "name": "hydrogen iodide"
+        }
+      ],
+      "formulaEquation": "H₂(g) + I₂(g) ⇌ 2HI(g)",
+      "arrow": "⇌",
+      "conditions": "A supplied hot closed-system gas-phase model, including iodine vapour. Pressure comparisons here mean compression/decreasing volume at fixed temperature.",
+      "limits": "One plus one gaseous molecule versus two means no side is favoured solely by changing pressure at fixed temperature in the ideal gas-count comparison. Room-temperature iodine(s) is a different state context.",
+      "existingSectionId": "dynamic-equilibrium",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "hydrogen + iodine ⇌ hydrogen iodide",
+      "sectionId": "equation-reconciliation-equilibria"
+    },
+    {
+      "id": "sulfur-trioxide-equilibrium",
+      "sourceIds": [
+        "4CH1:issue3:3.20C",
+        "4CH1:issue3:3.21C",
+        "4CH1:issue3:3.22C"
+      ],
+      "components": [
+        "2C"
+      ],
+      "reactants": [
+        {
+          "coefficient": 2,
+          "formula": "SO2",
+          "state": "g",
+          "name": "sulfur dioxide"
+        },
+        {
+          "coefficient": 1,
+          "formula": "O2",
+          "state": "g",
+          "name": "oxygen"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 2,
+          "formula": "SO3",
+          "state": "g",
+          "name": "sulfur trioxide"
+        }
+      ],
+      "formulaEquation": "2SO₂(g) + O₂(g) ⇌ 2SO₃(g)",
+      "arrow": "⇌",
+      "conditions": "A supplied hot gas-phase equilibrium model; SO3 is stipulated gaseous. Pressure comparisons here mean compression/decreasing volume at fixed temperature.",
+      "limits": "Three gaseous reactant molecules versus two product molecules support the pressure comparison. This representative equation does not add an industrial catalyst/temperature memorisation requirement.",
+      "existingSectionId": "equilibrium-pressure",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "sulfur dioxide + oxygen ⇌ sulfur trioxide",
+      "sectionId": "equation-reconciliation-equilibria"
+    },
+    {
+      "id": "calcium-carbonate-equilibrium",
+      "sourceIds": [
+        "4CH1:issue3:3.19C",
+        "4CH1:issue3:3.20C"
+      ],
+      "components": [
+        "2C"
+      ],
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "CaCO3",
+          "state": "s",
+          "name": "calcium carbonate"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "CaO",
+          "state": "s",
+          "name": "calcium oxide"
+        },
+        {
+          "coefficient": 1,
+          "formula": "CO2",
+          "state": "g",
+          "name": "carbon dioxide"
+        }
+      ],
+      "formulaEquation": "CaCO₃(s) ⇌ CaO(s) + CO₂(g)",
+      "arrow": "⇌",
+      "conditions": "A supplied heated closed-system carbonate/oxide/CO2 equilibrium model. Pressure comparisons here mean compression/decreasing volume at fixed temperature.",
+      "limits": "Solids are excluded from gaseous-molecule counts: zero gas on the left versus one on the right. An open tube losing CO2 does not demonstrate the same established closed equilibrium.",
+      "existingSectionId": "equilibrium-pressure",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "calcium carbonate ⇌ calcium oxide + carbon dioxide",
+      "sectionId": "equation-reconciliation-equilibria"
+    },
+    {
+      "id": "hydrogen-chlorine-bond-model",
+      "sourceIds": [
+        "4CH1:issue3:3.6C",
+        "4CH1:issue3:3.7C"
+      ],
+      "components": [
+        "2C"
+      ],
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "H2",
+          "state": "g",
+          "name": "hydrogen"
+        },
+        {
+          "coefficient": 1,
+          "formula": "Cl2",
+          "state": "g",
+          "name": "chlorine"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 2,
+          "formula": "HCl",
+          "state": "g",
+          "name": "hydrogen chloride"
+        }
+      ],
+      "formulaEquation": "H₂(g) + Cl₂(g) → 2HCl(g)",
+      "arrow": "→",
+      "conditions": "Supplied gas-phase bond-accounting reaction: break one H–H and one Cl–Cl, form two H–Cl bonds.",
+      "limits": "Bond energies refer to the stated gas-phase model; HCl(g) is hydrogen chloride, not already aqueous hydrochloric acid. This written calculation is not a procedure for mixing/igniting these gases.",
+      "existingSectionId": "bond-balance",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "hydrogen + chlorine → hydrogen chloride",
+      "sectionId": "equation-reconciliation-bond-model"
+    },
+    {
+      "id": "engine-nitrogen-monoxide",
+      "sourceIds": [
+        "4CH1:issue3:4.14"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "N2",
+          "state": "g",
+          "name": "nitrogen"
+        },
+        {
+          "coefficient": 1,
+          "formula": "O2",
+          "state": "g",
+          "name": "oxygen"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 2,
+          "formula": "NO",
+          "state": "g",
+          "name": "nitrogen monoxide"
+        }
+      ],
+      "formulaEquation": "N₂(g) + O₂(g) → 2NO(g)",
+      "arrow": "→",
+      "conditions": "A representative initial nitrogen-oxide formation model at high engine temperatures, with both reactants supplied by air.",
+      "limits": "NO is one oxide model, not the full exhaust or a unique atmospheric acid-rain mechanism. Nitrogen need not be present in the hydrocarbon formula.",
+      "existingSectionId": "combustion-other-oxides",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "nitrogen + oxygen → nitrogen monoxide",
+      "sectionId": "equation-reconciliation-engine"
+    },
+    {
+      "id": "calcium-dilute-water",
+      "sourceIds": [
+        "4CH1:issue3:2.15"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "Ca",
+          "state": "s",
+          "name": "calcium"
+        },
+        {
+          "coefficient": 2,
+          "formula": "H2O",
+          "state": "l",
+          "name": "water"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "Ca(OH)2",
+          "state": "aq",
+          "name": "calcium hydroxide"
+        },
+        {
+          "coefficient": 1,
+          "formula": "H2",
+          "state": "g",
+          "name": "hydrogen"
+        }
+      ],
+      "formulaEquation": "Ca(s) + 2H₂O(l) → Ca(OH)₂(aq) + H₂(g)",
+      "arrow": "→",
+      "conditions": "A supplied calcium/cold-water example with enough excess water for the calcium hydroxide amount to remain below its solubility limit.",
+      "limits": "The (aq) hydroxide is conditional. With more product per volume, undissolved hydroxide can appear; do not copy this phase label to every calcium-water mixture.",
+      "existingSectionId": "metal-water-evidence",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "calcium + water → calcium hydroxide + hydrogen",
+      "sectionId": "equation-reconciliation-calcium-water"
+    },
+    {
+      "id": "unfamiliar-phosphate",
+      "sourceIds": [
+        "4CH1:issue3:1.25"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "reactants": [
+        {
+          "coefficient": 3,
+          "formula": "BaCl2",
+          "state": "aq",
+          "name": "barium chloride"
+        },
+        {
+          "coefficient": 2,
+          "formula": "Na3PO4",
+          "state": "aq",
+          "name": "sodium phosphate"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "formula": "Ba3(PO4)2",
+          "state": "s",
+          "name": "barium phosphate"
+        },
+        {
+          "coefficient": 6,
+          "formula": "NaCl",
+          "state": "aq",
+          "name": "sodium chloride"
+        }
+      ],
+      "formulaEquation": "3BaCl₂(aq) + 2Na₃PO₄(aq) → Ba₃(PO₄)₂(s) + 6NaCl(aq)",
+      "arrow": "→",
+      "conditions": "Original supplied-identity written task: dilute barium chloride and sodium phosphate solutions give the stated barium phosphate precipitate and dissolved sodium chloride. All formulas and phases are supplied.",
+      "limits": "The learner balances and translates given information; predicting this unfamiliar product from memory is not required. This is an illustrative task, not an additional publisher-named reaction or performed test.",
+      "existingSectionId": "",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "barium chloride + sodium phosphate → barium phosphate + sodium chloride",
+      "sectionId": "equation-reconciliation-unfamiliar"
+    },
+    {
+      "id": "unfamiliar-sulfite",
+      "sourceIds": [
+        "4CH1:issue3:1.25"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "reactants": [
+        {
+          "coefficient": 1,
+          "formula": "Na2SO3",
+          "state": "aq",
+          "name": "sodium sulfite"
+        },
+        {
+          "coefficient": 2,
+          "formula": "HCl",
+          "state": "aq",
+          "name": "hydrochloric acid"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 2,
+          "formula": "NaCl",
+          "state": "aq",
+          "name": "sodium chloride"
+        },
+        {
+          "coefficient": 1,
+          "formula": "SO2",
+          "state": "g",
+          "name": "sulfur dioxide"
+        },
+        {
+          "coefficient": 1,
+          "formula": "H2O",
+          "state": "l",
+          "name": "water"
+        }
+      ],
+      "formulaEquation": "Na₂SO₃(aq) + 2HCl(aq) → 2NaCl(aq) + SO₂(g) + H₂O(l)",
+      "arrow": "→",
+      "conditions": "Original supplied-identity written task: sodium sulfite solution and dilute hydrochloric acid form the explicitly given products sodium chloride solution, sulfur dioxide gas and water.",
+      "limits": "Here HCl(aq) is hydrochloric acid. Products and states are provided, not guessed from bubbles or an unsupervised procedure. Sulfite SO3 is not sulfate SO4.",
+      "existingSectionId": "",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "sodium sulfite + hydrochloric acid → sodium chloride + sulfur dioxide + water",
+      "sectionId": "equation-reconciliation-unfamiliar"
+    },
+    {
+      "id": "ethanol-full-dichromate-model",
+      "sourceIds": [
+        "4CH1:issue3:4.31C"
+      ],
+      "components": [
+        "2C"
+      ],
+      "reactants": [
+        {
+          "coefficient": 3,
+          "formula": "CH3CH2OH",
+          "state": "aq",
+          "name": "ethanol"
+        },
+        {
+          "coefficient": 2,
+          "formula": "K2Cr2O7",
+          "state": "aq",
+          "name": "potassium dichromate(VI)"
+        },
+        {
+          "coefficient": 8,
+          "formula": "H2SO4",
+          "state": "aq",
+          "name": "sulfuric acid"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 3,
+          "formula": "CH3COOH",
+          "state": "aq",
+          "name": "ethanoic acid"
+        },
+        {
+          "coefficient": 2,
+          "formula": "Cr2(SO4)3",
+          "state": "aq",
+          "name": "chromium(III) sulfate"
+        },
+        {
+          "coefficient": 2,
+          "formula": "K2SO4",
+          "state": "aq",
+          "name": "potassium sulfate"
+        },
+        {
+          "coefficient": 11,
+          "formula": "H2O",
+          "state": "l",
+          "name": "water"
+        }
+      ],
+      "formulaEquation": "3CH₃CH₂OH(aq) + 2K₂Cr₂O₇(aq) + 8H₂SO₄(aq) → 3CH₃COOH(aq) + 2Cr₂(SO₄)₃(aq) + 2K₂SO₄(aq) + 11H₂O(l)",
+      "arrow": "→",
+      "conditions": "Optional full-reagent expansion for the named ethanol-to-ethanoic-acid route: heated aqueous acidified dichromate with sufficient oxidant towards the acid endpoint; all listed salts remain dissolved in this stipulated mixture.",
+      "limits": "This authored molecular bookkeeping expands the actual supplied species; it is not an extra requirement to memorise chromium half-reactions or an experimental recipe. [O] remains useful shorthand but does not itself account for K, Cr or sulfate.",
+      "existingSectionId": "ethanol-acid-oxidation",
+      "representation": "finite-molecular",
+      "humanReviewed": false,
+      "practicalTrial": false,
+      "wordEquation": "ethanol + potassium dichromate(VI) + sulfuric acid → ethanoic acid + chromium(III) sulfate + potassium sulfate + water",
+      "sectionId": "equation-reconciliation-actual-oxidant"
+    }
+  ],
+  "representations": [
+    {
+      "id": "ammonium-nitrate-dissociation",
+      "kind": "physical-dissociation",
+      "sourceIds": [
+        "4CH1:issue3:3.2"
+      ],
+      "reactants": [
+        {
+          "formula": "NH4NO3",
+          "coefficient": 1,
+          "charge": 0,
+          "state": "s"
+        }
+      ],
+      "products": [
+        {
+          "formula": "NH4",
+          "coefficient": 1,
+          "charge": 1,
+          "state": "aq"
+        },
+        {
+          "formula": "NO3",
+          "coefficient": 1,
+          "charge": -1,
+          "state": "aq"
+        }
+      ],
+      "formulaEquation": "NH₄NO₃(s) → NH₄⁺(aq) + NO₃⁻(aq)",
+      "newCompoundSynthesis": false,
+      "sectionId": "equation-reconciliation-nonunique"
+    },
+    {
+      "id": "rust-variable-composition",
+      "kind": "word-model-variable-composition",
+      "sourceIds": [
+        "4CH1:issue3:2.10",
+        "4CH1:issue3:2.18",
+        "4CH1:issue3:2.19"
+      ],
+      "wordEquation": "iron + oxygen + water → rust (variable hydrated iron oxides/oxyhydroxides)",
+      "fixedFormulaSpecified": false,
+      "sectionId": "equation-reconciliation-nonunique"
+    },
+    {
+      "id": "repeat-ethene",
+      "kind": "open-addition-repeat",
+      "sourceIds": [
+        "4CH1:issue3:4.44",
+        "4CH1:issue3:4.45",
+        "4CH1:issue3:4.46"
+      ],
+      "sectionId": "equation-reconciliation-addition-polymers",
+      "monomerFormula": "C2H4",
+      "repeatUnitFormula": "C2H4",
+      "repeatStructure": "[–CH₂–CH₂–]ₙ",
+      "finiteClosedMolecule": false,
+      "waterUnitsPerIdealRepeat": 0
+    },
+    {
+      "id": "repeat-propene",
+      "kind": "open-addition-repeat",
+      "sourceIds": [
+        "4CH1:issue3:4.44",
+        "4CH1:issue3:4.45",
+        "4CH1:issue3:4.46"
+      ],
+      "sectionId": "equation-reconciliation-addition-polymers",
+      "monomerFormula": "C3H6",
+      "repeatUnitFormula": "C3H6",
+      "repeatStructure": "[–CH₂–CH(CH₃)–]ₙ",
+      "finiteClosedMolecule": false,
+      "waterUnitsPerIdealRepeat": 0
+    },
+    {
+      "id": "repeat-chloroethene",
+      "kind": "open-addition-repeat",
+      "sourceIds": [
+        "4CH1:issue3:4.44",
+        "4CH1:issue3:4.45",
+        "4CH1:issue3:4.46"
+      ],
+      "sectionId": "equation-reconciliation-addition-polymers",
+      "monomerFormula": "C2H3Cl",
+      "repeatUnitFormula": "C2H3Cl",
+      "repeatStructure": "[–CH₂–CHCl–]ₙ",
+      "finiteClosedMolecule": false,
+      "waterUnitsPerIdealRepeat": 0
+    },
+    {
+      "id": "repeat-tetrafluoroethene",
+      "kind": "open-addition-repeat",
+      "sourceIds": [
+        "4CH1:issue3:4.44",
+        "4CH1:issue3:4.45",
+        "4CH1:issue3:4.46"
+      ],
+      "sectionId": "equation-reconciliation-addition-polymers",
+      "monomerFormula": "C2F4",
+      "repeatUnitFormula": "C2F4",
+      "repeatStructure": "[–CF₂–CF₂–]ₙ",
+      "finiteClosedMolecule": false,
+      "waterUnitsPerIdealRepeat": 0
+    },
+    {
+      "id": "repeat-ethanedioic-ethanediol",
+      "kind": "open-condensation-repeat",
+      "sourceIds": [
+        "4CH1:issue3:4.48C",
+        "4CH1:issue3:4.49C"
+      ],
+      "sectionId": "equation-reconciliation-polyester",
+      "components": [
+        "2C"
+      ],
+      "monomerFormulae": [
+        "C2H2O4",
+        "C2H6O2"
+      ],
+      "repeatUnitFormula": "C4H4O4",
+      "finiteClosedMolecule": false,
+      "waterUnitsPerIdealRepeat": 2,
+      "finiteOpenChainWaterCount": "2n-1"
+    }
+  ],
+  "supplementarySources": [
+    {
+      "url": "https://www.chemguide.co.uk/inorganic/redox/equations.html",
+      "accessDate": "2026-10-18",
+      "scope": "Original author ionic ethanol/dichromate equation, Example3; molecular spectator-ion and state extension authored independently. Pearson remains authoritative for required route/scope."
+    },
+    {
+      "url": "https://edu.rsc.org/download?ac=12042",
+      "accessDate": "2026-10-18",
+      "scope": "Indexed-only RSC oxidation-equation prompt visible; full retrieval returned405, not claimed read."
+    }
+  ]
+}

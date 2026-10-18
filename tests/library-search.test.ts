@@ -35,3 +35,12 @@ void test('empty and punctuation-only queries are deterministic no-ops', () => {
   assert.deepEqual(searchLibrary(physics, ''), []);
   assert.deepEqual(searchLibrary(physics, '!!!'), []);
 });
+
+void test('search distinguishes reviewed authored Chemistry chapters from unfinished exam practice', () => {
+  const chemistry = subjects.find((s) => s.id === 'chemistry')!;
+  const result = searchLibrary(chemistry, 'phosphate').find((r) => r.href.endsWith('#equation-reconciliation-unfamiliar'));
+  assert.ok(result);
+  assert.match(result.status, /whole authored teaching reviewed/);
+  assert.match(result.status, /exam bank incomplete/);
+  assert.doesNotMatch(result.status, /chapter incomplete/);
+});

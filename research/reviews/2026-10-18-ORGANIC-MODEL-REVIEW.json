@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-18",
+  "scope": "14 Organic models, matching Principles note sections, all worked examples and practice answers; component/source comparison against saved organic-source.json only.",
+  "verdict": "Equation-formatting defect resolved; one small cracking-answer clarification remains. Underlying equations, arithmetic and source/component classification pass.",
+  "findings": [
+    {
+      "severity": "medium",
+      "location": "content/notes/chemistry.json: new Organic equation paragraphs",
+      "detail": "Formula conversion subscripts leading stoichiometric coefficients, e.g. + ₃O₂ → ₂CO₂ + ₃H₂O, + ₂[O], fermentation → ₂C₂H₅OH. Coefficients must stay baseline; only formula atom counts should be subscripted. Practice answers and model JSON retain correct coefficients.",
+      "repair": "Correct all affected new equation paragraphs and verify the conversion preserves leading coefficients.",
+      "status": "Resolved by root during review; all 14 corrected paragraphs inspected and baseline coefficients verified."
+    },
+    {
+      "severity": "low",
+      "location": "cracking.practice.answer in model JSON and matching note",
+      "detail": "Prompt asks whether exact X identity is established and supplies C3H6, acyclic, one C=C. Those supplied conditions uniquely identify propene CH2=CHCH3. Current answer gives only alkene and says identity needs structural conditions, without acknowledging those conditions are already supplied.",
+      "repair": "Explicitly identify propene under the supplied constraints, while retaining that atom balance alone cannot establish the actual refinery product mixture."
+    }
+  ],
+  "verified": [
+    "All 14 formal atom inventories balance, including the explicitly limited [O] bookkeeping; no claim of complete dichromate reagent balance.",
+    "All 14 note practice questions/answers match their models; all component lists match saved source-scope identities.",
+    "All worked examples checked: ester totals C4H10O3; propane complete combustion oxygen 5; methane incomplete CO totals C2H8O6; carbonate carbon partition correct.",
+    "Practice arithmetic: 0.200 mol ethanol needs 0.600 mol O2 and forms 0.400 mol CO2; 0.150 mol glucose gives 0.300 mol each ethanol/CO2.",
+    "Butane combustion 2:13:8:10; propane-to-CO 2:7:6:8; ethane-to-carbon 2:3:4:6 are balanced.",
+    "Ethane bromination, propene dibromide connectivity, magnesium propanoate and calcium ethanoate equations are correct.",
+    "Hot process states, dissolved fermentation products, conditional neat ester model, bromine-water versus nonaqueous bromine and catalyst roles are appropriately qualified.",
+    "Six named routes/eight family examples remain bounded; no whole-collection, empirical trial, human calibration or active-template claim."
+  ],
+  "limits": "No new source-page audit, live experiment or rendered diagram/layout review; source comparison uses the retained saved audit. No tracked edits.",
+  "rootResolutions": [
+    {
+      "finding": "Baseline coefficients",
+      "resolution": "Corrected all14 note equation paragraphs; formula subscripts alone are lowered. Rendered-text regression guard added."
+    },
+    {
+      "finding": "Cracking identity",
+      "resolution": "Practice answer now explicitly identifies propene uniquely under the supplied acyclic/one-C=C/three-carbon constraints, while distinguishing uncertain actual refinery mixtures."
+    }
+  ]
+}

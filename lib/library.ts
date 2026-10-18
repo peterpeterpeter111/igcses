@@ -1,5 +1,6 @@
 import { subjects, type Subject } from '../content/catalog.ts';
 import { getNotes } from '../content/notes.ts';
+import { getChapterTeachingReview } from './chapter-teaching.ts';
 import type { SearchResult } from './library-search-contract.ts';
 export type { SearchResult } from './library-search-contract.ts';
 export function normalise(text: string) {
@@ -93,7 +94,9 @@ export function searchLibrary(subject: Subject, query: string): SearchResult[] {
           (e.text.length > start + 190 ? '…' : ''),
         status: note
           ? note.status === 'source-checked'
-            ? 'Source-checked note · chapter incomplete'
+            ? getChapterTeachingReview(subject.id, chapter.id)
+              ? 'Source-checked note · whole authored teaching reviewed · exam bank incomplete'
+              : 'Source-checked note · chapter incomplete'
             : 'Draft note'
           : 'Chapter planned · notes not written',
         score,

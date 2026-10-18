@@ -1,0 +1,461 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4CH1",
+  "documentId": "4CH1-spec",
+  "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "sourceVisualPages": [
+    19
+  ],
+  "sourcePrintedPages": [
+    13
+  ],
+  "reviewDate": "2026-10-19",
+  "reviewer": "Codex root authored teaching decision with three independent182-identity source-family reconciliations",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "authored-teaching-coverage",
+  "policyVersion": 1,
+  "practicalTrialsPerformed": false,
+  "examTemplateCalibrationComplete": false,
+  "noteRef": "content/notes/chemistry.json",
+  "inventorySha256": "d2c1b0a44baade17e193d6ff37779c10d1da2a996870288f79556cf5d677c7e2",
+  "auditRef": "research/curriculum-audits/4CH1-formulae-and-calculations.json",
+  "auditSha256": "b0143b2754a2edb142641ed93209be8a995c45d2c3895b77d8d3c2a19cde3990",
+  "diagramSha256": {
+    "/diagrams/chemistry-crucible-mass-evidence.svg": "156eb59509433103f72dd24b339b8090344ddea32ed71533dba5d3d0ae447f14",
+    "/diagrams/chemistry-ethyl-ethanoate.svg": "c51ec9d7a3c202c9e6ece2abb104e6c7425a5b0f8e617fa5256676dc15a19df6",
+    "/diagrams/chemistry-addition-repeats.svg": "7eee1f502b1c0f54576a9699ddaad9094f95ac1928ef19c8b8ba02b0ff58cba8",
+    "/diagrams/chemistry-polyester-repeat.svg": "243052980fac608c203002f4e19af3880bde12dd56b9eea2d22372174c88aa7c"
+  },
+  "limitations": [
+    "Complete authored explanations/worked examples/original fixed practice only; no performed practical, learner trial or examiner-calibrated template.",
+    "The reaction collection is source-constrained; representative choices, nonunique compositions and structural/physical representations retain their explicit limits.",
+    "Historical complete-point decisions/hashes are preserved unchanged; only1.25 is newly completed.1.34C/1.35C remainPaper2Conly."
+  ],
+  "points": [
+    {
+      "pointId": "4CH1:issue3:1.23",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.23:r1",
+          "verdict": "approved",
+          "judgement": "Independent unnamed X/Y/Z configuration comparison uses equal main-group outer electron count, not equal shell count; lithium/sodium/potassium behaviour and transition restriction checked.",
+          "assessmentSectionId": "group-behaviour-comparison-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.23:r2",
+          "verdict": "approved",
+          "judgement": "X/Y both commonly lose one electron but are not claimed to react at identical rates; full-shell Z comparison prevents grouping by total electron count.",
+          "assessmentSectionId": "group-behaviour-comparison-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "groups-and-noble-gases": "158ba6149a789b8ebe21ece91afae9851f183030396cc0592bfc70553a7edc6d",
+        "group-behaviour-comparison-evidence": "2f02e8ef79197ac6af3606715c628f5c14249ca78d988fb25c588a12e058cbfd"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.24",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.24:r1",
+          "verdict": "approved",
+          "judgement": "Independent helium/neon/beryllium contrast connects low ordinary reactivity to a full outer shell, with no absolute never-react claim.",
+          "assessmentSectionId": "group-behaviour-comparison-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.24:r2",
+          "verdict": "approved",
+          "judgement": "Helium first shell full at2 is distinguished from beryllium second shell2; Group0 exception checked against own source.",
+          "assessmentSectionId": "group-behaviour-comparison-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "groups-and-noble-gases": "158ba6149a789b8ebe21ece91afae9851f183030396cc0592bfc70553a7edc6d",
+        "group-behaviour-comparison-evidence": "2f02e8ef79197ac6af3606715c628f5c14249ca78d988fb25c588a12e058cbfd"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.26",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.26:r1",
+          "verdict": "approved",
+          "judgement": "Independent Al₂(SO₄)₃ counts2/3/12, Mg(OH)₂ counts1/2/2 and both relative masses342/58 reconstructed; existing hydrated formula atom-count explanation retained.",
+          "assessmentSectionId": "formula-and-amount-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.26:r2",
+          "verdict": "approved",
+          "judgement": "Supplied atomic masses yield unitless Mr342/58; no substitution of a mole mass unit into the relative quantity.",
+          "assessmentSectionId": "formula-and-amount-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "relative-formula-mass": "e8316459c34778ac81385a6533964686d1569ff4ad66a6959052ff5fdfe79a10",
+        "formula-and-amount-evidence": "d7925a54f4a2b349d701a4c7a4a1a49c300125d6e14cc25c1af483422551b097"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.27",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.27:r1",
+          "verdict": "approved",
+          "judgement": "Mole explicitly the unit of amount, independent of fixed mass; original90g water and differently-massed salt examples checked.",
+          "assessmentSectionId": "formula-and-amount-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.27:r2",
+          "verdict": "approved",
+          "judgement": "Specified formula units, water molecules and H/O atom amounts distinguished;0.0200mol aluminium sulfate contains0.240mol O atoms.",
+          "assessmentSectionId": "formula-and-amount-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "moles-and-mass": "0307b0ad716d0480da0460ec86c59f93d4a30afb262a021b1fcebf31ebcb9171",
+        "formula-and-amount-evidence": "d7925a54f4a2b349d701a4c7a4a1a49c300125d6e14cc25c1af483422551b097"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.28",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.28:r1",
+          "verdict": "approved",
+          "judgement": "Relative mass unitless versus g/mol molar mass explicitly distinguished and checked for bracketed formulae.",
+          "assessmentSectionId": "formula-and-amount-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.28:r2",
+          "verdict": "approved",
+          "judgement": "Independent0.090kg→90g→5mol H₂O reconstruction includes entity amounts10molH/5molO.",
+          "assessmentSectionId": "formula-and-amount-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.28:r3",
+          "verdict": "approved",
+          "judgement": "Independent nM yields6.84g aluminium sulfate and1.45g magnesium hydroxide;0.0500mol H atoms in latter, not mass.",
+          "assessmentSectionId": "formula-and-amount-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "moles-and-mass": "0307b0ad716d0480da0460ec86c59f93d4a30afb262a021b1fcebf31ebcb9171",
+        "formula-and-amount-evidence": "d7925a54f4a2b349d701a4c7a4a1a49c300125d6e14cc25c1af483422551b097"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.29",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.29:r1",
+          "verdict": "approved",
+          "judgement": "Independent supplied experimental carbon:oxygen mass ratio12:32 scales3:8 with11g product, only under complete reaction/identity assumptions.",
+          "assessmentSectionId": "reacting-mass-and-yield-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.29:r2",
+          "verdict": "approved",
+          "judgement": "Independent limiting capacities Al0.200/2 versus Cl₂0.150/3 give13.35g maximum,2.70g excess Al; practice exact Mg:O₂ ratio yields20g MgO.",
+          "assessmentSectionId": "reacting-mass-and-yield-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.29:r3",
+          "verdict": "approved",
+          "judgement": "Invented repeated total masses subtract identical apparatus;0.72gmetal/0.48ggain reconstructs0.030mol each with purity/retention assumptions explicit.",
+          "assessmentSectionId": "crucible-mass-and-bias-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "reacting-masses": "3931cb5932a9dea3276f028042a5d68f3bc95696bf677d97d849b6366abb2032",
+        "experimental-formula-evidence": "751d10fb38a8db02848c834b151106c5aa02bb4552ee7b0ef3454dc26caaafd1",
+        "reacting-mass-and-yield-evidence": "fe2efcc5fc3bc3ebe64639ba844982f034c409021fccdbf6ff6a8b43abb5d77e",
+        "crucible-mass-and-bias-evidence": "3e4f843901a34f88ff4f7bfb8d892b8babff8d10b1e0060510f2a996347e159a"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.30",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.30:r1",
+          "verdict": "approved",
+          "judgement": "Independent10.68/13.35=80% and18/20=90% use the same intended product numerator/denominator; neither reactant total substituted.",
+          "assessmentSectionId": "reacting-mass-and-yield-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.30:r2",
+          "verdict": "approved",
+          "judgement": "Incomplete conversion/product loss/side reactions and wet impurity distinguished;90% does not uniquely diagnose a loss cause, previous115% wet example retained.",
+          "assessmentSectionId": "reacting-mass-and-yield-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "percentage-yield": "7685875d4b41cec0349315545abaea60ad3a781f2e9ef1254abd7055a01ffdc5",
+        "reacting-mass-and-yield-evidence": "fe2efcc5fc3bc3ebe64639ba844982f034c409021fccdbf6ff6a8b43abb5d77e"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.31",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.31:r1",
+          "verdict": "approved",
+          "judgement": "Independent invented Fe oxide2.80→4.00g yieldsO1.20g and amounts0.0500:0.0750=2:3; CuO reduction10→8g identifiesO2g. No universal iron-oxide or mass-gain claim.",
+          "assessmentSectionId": "empirical-and-hydration-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.31:r2",
+          "verdict": "approved",
+          "judgement": "Independent ideal reduction with2.25g water minus2g oxide oxygen gives0.25gH; atom amounts0.25:0.125=2:1. Complete collection/no moisture assumptions explicitly required.",
+          "assessmentSectionId": "empirical-and-hydration-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.31:r3",
+          "verdict": "approved",
+          "judgement": "Independent MgSO₄4.92→2.40 giveswater2.52/18 divided bysalt2.40/120=7; practiceCuSO₄3.75→2.40 gives5, distinct salts not copied into one formula.",
+          "assessmentSectionId": "empirical-and-hydration-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "experimental-formula-evidence": "751d10fb38a8db02848c834b151106c5aa02bb4552ee7b0ef3454dc26caaafd1",
+        "water-of-crystallisation": "329dd4b5d45fa50c91110efff6cfe1a00b1fcc1a5e435ab234cb09521b9dfbc1",
+        "magnesium-oxide-investigation": "05ecf4bc3e5510c8cff19c986dfb19d882f33bb544c5c104ccfd14957b0651bd",
+        "empirical-and-hydration-evidence": "f3a49a4ff278335754c8b7c621fd3b3074ecd7c3feb261f513ff06f62d4f59ad"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.32",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.32:r1",
+          "verdict": "approved",
+          "judgement": "Independent Fe oxide2:3 and percentage80C/20H→CH₃ establish simplest whole-number atom ratios, not mass ratios.",
+          "assessmentSectionId": "empirical-and-hydration-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.32:r2",
+          "verdict": "approved",
+          "judgement": "Independent CH₃ multiplier2→C₂H₆ and CH₂ multiplier3→C₃H₆ identify actual molecule atom counts; formula-unit caveat for ionic substances retained.",
+          "assessmentSectionId": "empirical-and-hydration-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "empirical-formulae": "cc7fd58a15ed88b4333610ed0ef6108f438e531277b9a3dff4a4ebc6eac85292",
+        "molecular-formulae": "0c551e5434aa4e1724d52352c41829468020d3b6d9f03661d5aae384e90fad06",
+        "empirical-and-hydration-evidence": "f3a49a4ff278335754c8b7c621fd3b3074ecd7c3feb261f513ff06f62d4f59ad"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.33",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.33:r1",
+          "verdict": "approved",
+          "judgement": "Independent Fe ratio1:1.5 requires whole-ratio multiplication by2, not rounding1.5 alone; mass source/uncertainty assumptions explicit.",
+          "assessmentSectionId": "empirical-and-hydration-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.33:r2",
+          "verdict": "approved",
+          "judgement": "Independent80%/20% hydrocarbon with suppliedAr yields6⅔:20=1:3 on100g basis; rounded percentages not falsely exact empirical measurements.",
+          "assessmentSectionId": "empirical-and-hydration-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.33:r3",
+          "verdict": "approved",
+          "judgement": "Independent Mr30/15=2 and42/14=3 multiply every subscript; prior noninteger20/15 rejection retained.",
+          "assessmentSectionId": "empirical-and-hydration-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "empirical-formulae": "cc7fd58a15ed88b4333610ed0ef6108f438e531277b9a3dff4a4ebc6eac85292",
+        "molecular-formulae": "0c551e5434aa4e1724d52352c41829468020d3b6d9f03661d5aae384e90fad06",
+        "experimental-formula-evidence": "751d10fb38a8db02848c834b151106c5aa02bb4552ee7b0ef3454dc26caaafd1",
+        "water-of-crystallisation": "329dd4b5d45fa50c91110efff6cfe1a00b1fcc1a5e435ab234cb09521b9dfbc1",
+        "empirical-and-hydration-evidence": "f3a49a4ff278335754c8b7c621fd3b3074ecd7c3feb261f513ff06f62d4f59ad"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.34C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.34C:r1",
+          "verdict": "approved",
+          "judgement": "Independent n=cV and rearrangements c=n/V,V=n/c checked;35cm³ acid yields0.00420mol, units and total solution volume explicit.",
+          "assessmentSectionId": "solution-and-gas-quantity-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.34C:r2",
+          "verdict": "approved",
+          "judgement": "Independent cm³/1000 conversion for35/40cm³ gives0.0350/0.0400dm³; amounts0.00420/0.00600mol checked.",
+          "assessmentSectionId": "solution-and-gas-quantity-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.34C:r3",
+          "verdict": "approved",
+          "judgement": "Separate unchanged-amount dilution final140cm³ gives0.0300mol/dm³; reverse final120cm³ checked, not added solvent or consumed acid.",
+          "assessmentSectionId": "solution-and-gas-quantity-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "solution-concentration": "54e7802ad141eef4401a50fa0f72ad2c845e2f6e884bbdfec78b074b3f899cac",
+        "solution-and-gas-quantity-evidence": "7cf8f7b54b006c7e2484b8b7067f97631f2f5c28a80e784b0a7a0aa55ab6dd23"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.35C",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.35C:r1",
+          "verdict": "approved",
+          "judgement": "Own source24dm³/24000cm³ at rtp preserved; matched-condition assumption explicit, no hot-gas unchanged-volume claim.",
+          "assessmentSectionId": "solution-and-gas-quantity-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.35C:r2",
+          "verdict": "approved",
+          "judgement": "Independent600cm³/24000=0.0250mol CO₂, mass1.10g and acid-derived H₂ volumes50.4/72cm³ verified.",
+          "assessmentSectionId": "solution-and-gas-quantity-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.35C:r3",
+          "verdict": "approved",
+          "judgement": "Independent2HCl:1H₂ ratio with excessMg prevents factor2 error; conditions/leakage/dissolution/water-vapour limits separated from ideal supplied data.",
+          "assessmentSectionId": "solution-and-gas-quantity-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "gas-volume-at-rtp": "4996096fb870c5a48ad85603ba9a3179f474e468984c648b8cf3dad281bb96f3",
+        "solution-and-gas-quantity-evidence": "7cf8f7b54b006c7e2484b8b7067f97631f2f5c28a80e784b0a7a0aa55ab6dd23"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.36",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.36:r1",
+          "verdict": "approved",
+          "judgement": "Own source explicitly permits combustion OR reduction. Original crucible/lid/support/heat plus separate cooled balance diagram and existing practical method checked against Pearson apparatus page; teacher controls lid/air/heating and protection, no actual trial claim.",
+          "assessmentSectionId": "crucible-mass-and-bias-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.36:r2",
+          "verdict": "approved",
+          "judgement": "Independent two table scenarios produceMg/O0.030/0.030 and0.020/0.020; same apparatus subtracted; mass resolution and source of oxygen identified.",
+          "assessmentSectionId": "crucible-mass-and-bias-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.36:r3",
+          "verdict": "approved",
+          "judgement": "First19.56 reading precedes plateau19.62/19.62; oxygen ratio0.875 not forced into a neat formula. Cool before repeat weighing; constant mass not pure-product proof.",
+          "assessmentSectionId": "crucible-mass-and-bias-evidence"
+        },
+        {
+          "id": "4CH1:issue3:1.36:r4",
+          "verdict": "approved",
+          "judgement": "Escaped oxide underestimates oxygen gain/O:Mg, sealed lid limits air, possible nitride/initial oxide qualified; repeat completion evidence cannot remove systematic bias.",
+          "assessmentSectionId": "crucible-mass-and-bias-evidence"
+        }
+      ],
+      "sectionSha256": {
+        "magnesium-oxide-investigation": "05ecf4bc3e5510c8cff19c986dfb19d882f33bb544c5c104ccfd14957b0651bd",
+        "crucible-mass-and-bias-evidence": "3e4f843901a34f88ff4f7bfb8d892b8babff8d10b1e0060510f2a996347e159a"
+      }
+    },
+    {
+      "pointId": "4CH1:issue3:1.25",
+      "requirements": [
+        {
+          "id": "4CH1:issue3:1.25:r1",
+          "verdict": "approved",
+          "judgement": "Word equations identify substances before formula translation across named contexts and selected source families;182source-identity scope decisions distinguish named obligations from representative choices. The unfamiliar supplied phosphate/sulfite tasks require actual names and formula equations, not guessed products.",
+          "assessmentSectionId": "equation-reconciliation-unfamiliar"
+        },
+        {
+          "id": "4CH1:issue3:1.25:r2",
+          "verdict": "approved",
+          "judgement": "Typed models conserve atoms, including bracketed salts, hydrates, actual oxidant/spectator bookkeeping and distinct open-repeat representations. Independent review checked every new worked/practice answer; baseline coefficients remain distinct from formula subscripts.",
+          "assessmentSectionId": "equation-reconciliation-actual-oxidant"
+        },
+        {
+          "id": "4CH1:issue3:1.25:r3",
+          "verdict": "approved",
+          "judgement": "Authored phase tasks distinguish molten/aqueous, hot/cooled products, stated dilution, inert/active electrodes and physical/open-repeat representations where no unique phase or fixed formula is supplied. Calcium-water transfer changes the justified hydroxide label with its supplied solubility context.",
+          "assessmentSectionId": "equation-reconciliation-calcium-water"
+        },
+        {
+          "id": "4CH1:issue3:1.25:r4",
+          "verdict": "approved",
+          "judgement": "Original unfamiliar tasks explicitly supply product identities, formulas and states; the learner constructs words and coefficients and checks every atom. A malformed formula/product change is rejected rather than fabricated chemistry.",
+          "assessmentSectionId": "equation-reconciliation-unfamiliar"
+        }
+      ],
+      "sectionSha256": {
+        "equations-and-state-symbols": "c0935b7d1b6e1ca00cc8e08567e11e49deec53db88491c3da32cb8e5fde0d07e",
+        "equation-case-magnesium-oxide": "c98c4a41f241788cc36b717476afbe7c7ccef9ff7c0af174de36929c8938be4e",
+        "equation-case-copper-oxide-reduction": "6fe417b4698f740caca80e161d87d5ac7d3ed831a867b1f0094fa7960fe280cd",
+        "equation-case-molten-lead-bromide": "b1b194afdbbded61b6db0680d46ecae35f4547683ab9d4754e8c7be696ce0dd3",
+        "equation-case-brine-electrolysis": "bb1a4cbd92c58a1fc82a34c2c4f9d9617a65c3ab6bc79b7f9828dc8f9b618b39",
+        "equation-case-copper-sulfate-electrolysis": "6b4707edd0cb011c0b8465685f3d940a66ac70e3b1fb05be8ff2996db8386555",
+        "equation-case-acidified-water-electrolysis": "d80aa8af97c4931ae9e4ae4c91822fdd8f000c484840d999fb518d3e8929b0c5",
+        "equation-case-marble-hydrochloric-acid": "ee2da2ffb334b18b51f29cb7f7a6d7687c914a53664639589ee430e226726a72",
+        "equation-case-peroxide-decomposition": "e16d107bbb65270814107e5174b5b1c35f38eb2a2dd595d961c2bfb87fe9a230",
+        "equation-case-copper-sulfate-dehydration": "70125124d193c5d665cbd4c3f514b104f83cc8bee321b78c9945faca0347903d",
+        "equation-case-copper-sulfate-hydration": "b87f59299dfa83d9413097c75918963fc823f02da52bf84e30ce5a78c0d83614",
+        "equation-case-ammonium-chloride-reversible": "84a10dc5945b6ed8910a8f86875e3a84080d1d617e7c5c6d7014f2e1b507292a",
+        "equation-case-hydrochloric-neutralization": "5ba2e24bc620bfc5dd5afbdb3ccaab41403427632ee3396a402500433642aa8e",
+        "equation-case-zinc-copper-displacement": "19220b6dfffdc8986640ee53b3a490afcb535da8c7597e67e3dc07fd764a66ec",
+        "equation-case-organic-ethanol-combustion": "031659cde646af51a0e04c540b4fbc006489759247a6f5e60e27d86dcac0b368",
+        "equation-case-organic-ethanol-microbial-oxidation": "78d81d59a28bdda5956a281b9fc6b0ff43b2318c7f98a8bcd009ec55c71c7db3",
+        "equation-case-organic-ethanol-dichromate-oxidation": "ee1bf8b7ba77a3ee6f38fd2d81c9797e9f1cba4008788203cede446a039a232b",
+        "equation-case-organic-ethene-hydration": "6452a272535d661d0b75db14fba880d9156d4df0ecc1d3b494b69eccbed73bd6",
+        "equation-case-organic-glucose-fermentation": "75f206259ce61d8e140874caab481fcb5ed2135d7849032621cd3e4b3c6134ef",
+        "equation-case-organic-ethyl-ethanoate": "9453c931bc1d039a6da7d9952a85d97fe0f9de7a5a72f0392271faa37f52fed1",
+        "equation-case-organic-hydrocarbon-complete": "f9c2c88e0ac9452136ba6ced4f43e4ac17561e410190f02713114794bd8aab8b",
+        "equation-case-organic-hydrocarbon-incomplete-co": "d58433b779b9a517cb5c746758a5fc5af33dc8f8da68653d8ac92bf8296c3716",
+        "equation-case-organic-hydrocarbon-incomplete-carbon": "1f9a5c5715848a45563d6e987bb54ce6fb557d06dae9132e35c50eb7d5de9381",
+        "equation-case-organic-cracking": "bd5c94c459f23bfff9e553dbc97d67932cdd249d262d9f07784ee4721f6bcda5",
+        "equation-case-organic-alkane-monosubstitution": "53077b376e0d15beaca299574be7351d101ff7e6d99c8621b3912295222a5fb4",
+        "equation-case-organic-alkene-bromine-addition": "3448c538ca4d1f1b8e3f308bbdbf98ec5c1bcff6309168f286298fc4a10b8aa7",
+        "equation-case-organic-carboxylic-acid-metal": "f37ae79d645c8ae9205b618d435e23b35257eece68abd39a95173b8d6a042f9d",
+        "equation-case-organic-carboxylic-acid-carbonate": "5a54a821f006a77ca35b73cb2dc4801c91c87605ebfc9df0e8f1b4c37939876b",
+        "equation-family-inorganic-group1-water": "f16ccf8bb17698259dda272c9bbcd95a827d9b4d75005e2f7f87ca535685f502",
+        "equation-family-inorganic-halogen-displacement": "0585ef7b9f44d0b39d03572b9c0cadcde39ed698ac5d341bc2134d1f8cda8147",
+        "equation-family-inorganic-combustion": "0503b31da333c5d24bcc38345ba66b416b2245f4c8d2f8f5322427baad08550f",
+        "equation-family-inorganic-thermal-carbonate": "af3e06d08fda77e5043030ad54d3dd8a1034499ef1cc13df8ea839df19d0f039",
+        "equation-family-inorganic-metal-water-acid": "9825e6e362cc6e542dfba803e4e14fcb9976c4d4ebf66fc48bd9d23f345cefb5",
+        "equation-family-inorganic-extraction": "16f887f27b7d098de3c7f284e6d1ef859450b133cea828e6ae222ddefff8cd0d",
+        "equation-family-inorganic-salt-preparation": "98f5f0160a47203e2fd832e77191c894f8203ea6a56eb53e052273bf3704b390",
+        "equation-family-inorganic-gas-tests": "54ce2021f202fa8bbaf9e73d6b6f992c59a453618a0074ba610ba29d32f6843c",
+        "equation-family-inorganic-metal-hydroxide-tests": "a2179c3c35abde66cea73539445ee7e05e658bfee2adbb571ae052b22e583e55",
+        "equation-family-inorganic-anion-tests": "a68f1ff9528f4fb5fcd45cac348f52b9086b476fe26706edca7fbbccb0273f5c",
+        "equation-family-inorganic-oxygen-redox": "87b285af02f1f7babee92b1134ab29fa4e9dfe768a08e35b9499179c65922a47",
+        "equation-family-inorganic-acid-breadth": "f29983e599d69f3d049d1f0eb61356f06c38fd031c58cc271f47ed2d63bf9f4b",
+        "equation-reconciliation-equilibria": "a8d82937470691013211e7f37edb8a2b5b227cc3f5e1eaf11be92fead9964ee8",
+        "equation-reconciliation-bond-model": "09fd2e1da8eb8746cbddcab78996e8ac3569319a1d4441ffa7623e358d2dcbfe",
+        "equation-reconciliation-engine": "316d05b6e20474101eec2de498b76ab350bcbd2c09f4b2b12dcf7ba87e798818",
+        "equation-reconciliation-calcium-water": "ad2ff46d0a6b710f87ac6ce48008e743343f6cec448df2dc754d6e32ddc7916d",
+        "equation-reconciliation-unfamiliar": "6790e876dfdc53f85cd6057d3a3e6b52c0124c5b2dc3d0f06c8482f08bae1309",
+        "equation-reconciliation-actual-oxidant": "053849cba4fa7a8643219145fc859771e531c72d59a3fb0955c8d9a98a92d147",
+        "equation-reconciliation-nonunique": "8974b7629cb26b9995963a9f58ca30638dd8e330ab77375bbac505def1eb5940",
+        "equation-reconciliation-addition-polymers": "716fd910ad7ee7578cc4aa0067298961b14c175d2ced8955929c4de1740bf31f",
+        "equation-reconciliation-polyester": "c666903ad59fb62aa56b13f26b36c03d0229ec30393e958517d8a9bed69321dd"
+      }
+    }
+  ],
+  "captionReview": {
+    "scope": "Only eight explicit origin labels added. All prior scientific prose, examples, practice answers, numbers, diagrams and requirement verdicts preserved. No new source/paper/learner/exam certification.",
+    "previousReviewRef": "research/teaching-reviews/4CH1-calculations-2026-10-09.json",
+    "previousReviewSha256": "125ae6b43421a8a51d516e8304bf4185007cf09e4b772833ae49e09f30c0ae28",
+    "changes": [
+      {
+        "sectionId": "crucible-mass-and-bias-evidence",
+        "tableBeforeSha256": "47e691123b8caf8b7d5b15f4a178ddda24de981b75eb2c073c9f56c395eb1870",
+        "tableAfterSha256": "cfe3532574ee5b1928a763754db7ff6d49c716ca718c3aec3daf75ad55813962",
+        "caption": "Invented crucible readings · calculation and error analysis"
+      }
+    ]
+  },
+  "priorReviewRef": "research/teaching-reviews/4CH1-formulae-and-calculations-reconciliation-reference-2026-10-18.json",
+  "collectionReviewRef": "research/reviews/2026-10-19-CHEMISTRY-REACTION-COLLECTION.json"
+}

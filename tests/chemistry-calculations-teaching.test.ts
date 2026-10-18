@@ -5,12 +5,12 @@ import inventory from '../research/syllabus/4CH1-formulae-and-calculations.json'
 import review from '../research/teaching-reviews/4CH1-calculations-2026-10-09.json' with { type: 'json' };
 import source from '../research/reviews/2026-10-09-chemistry-calculations-teaching-source.json' with { type: 'json' };
 
-void test('calculation teaching completion excludes the unaudited full reaction collection and preserves Paper 2 scope', () => {
+void test('historical calculation review stays limited while the later reaction review completes authored coverage', () => {
   assert.equal(review.points.length,13);
   assert.equal(review.points.reduce((n,p)=>n+p.requirements.length,0),34);
   const pending=inventory.points.find((p)=>p.reference==='1.25')!;
-  assert.equal(pending.teachingCoverage,'partial');
-  assert.equal(pending.substatementAuditComplete,false);
+  assert.equal(pending.teachingCoverage,'complete');
+  assert.equal(pending.substatementAuditComplete,true);
   assert.equal(review.points.some((p)=>p.pointId===pending.id),false);
   for(const ref of ['1.34C','1.35C']) assert.deepEqual(inventory.points.find((p)=>p.reference===ref)!.components,['2C']);
   assert.equal(review.practicalTrialsPerformed,false);

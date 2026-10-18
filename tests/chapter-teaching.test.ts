@@ -17,7 +17,7 @@ function fixture() {
   const root = mkdtempSync(join(tmpdir(), 'igcses-chapter-review-'));
   for (const directory of ['research/syllabus', 'research/teaching-reviews', 'research/chapter-teaching-reviews', 'research/curriculum-audits', 'public/diagrams'])
     cpSync(directory, join(root, directory), { recursive: true });
-  for (const path of ['scripts/chapter_teaching_review.py', 'scripts/teaching_review.py', 'scripts/note_io.py', 'content/notes/biology.json', 'content/notes/chemistry-inorganic.json', 'content/notes/chemistry-physical.json', 'content/notes/chemistry-organic.json', 'content/chapter-teaching-reviews.json']) {
+  for (const path of ['scripts/chapter_teaching_review.py', 'scripts/teaching_review.py', 'scripts/note_io.py', 'content/notes/biology.json', 'content/notes/chemistry.json', 'content/notes/chemistry-inorganic.json', 'content/notes/chemistry-physical.json', 'content/notes/chemistry-organic.json', 'content/chapter-teaching-reviews.json']) {
     mkdirSync(join(root, path, '..'), { recursive: true }); cpSync(path, join(root, path));
   }
   const run = () => spawnSync('python3', ['scripts/chapter_teaching_review.py'], { cwd: root, encoding: 'utf8' });
@@ -31,15 +31,16 @@ void test('whole authored chapter review is distinct from source-point, exam and
   const f = fixture();
   try {
     const r = f.run(); assert.equal(r.status, 0, r.stderr);
-    assert.deepEqual(JSON.parse(r.stdout), { completeAuthoredChapters: 4, examReadyChapters: 0 });
+    assert.deepEqual(JSON.parse(r.stdout), { completeAuthoredChapters: 5, examReadyChapters: 0 });
     const review = getChapterTeachingReview('biology', 'living-organisms')!;
     assert.equal(review.reviewedPoints, 4); assert.equal(review.humanReviewed, false);
     assert.equal(review.examReadinessCertified, false);
     assert.equal(getChapterTeachingReview('human-biology', 'cells-and-tissues'), undefined);
+    assert.equal(getChapterTeachingReview('chemistry', 'principles')?.reviewedPoints, 60);
     assert.equal(getChapterTeachingReview('chemistry', 'inorganic')?.reviewedPoints, 50);
     assert.equal(getChapterTeachingReview('chemistry', 'physical')?.reviewedPoints, 22);
     assert.equal(getChapterTeachingReview('chemistry', 'organic')?.reviewedPoints, 50);
-    assert.equal(coverageSummary().reduce((n, row) => n + row.reviewedAuthoredChapters, 0), 4);
+    assert.equal(coverageSummary().reduce((n, row) => n + row.reviewedAuthoredChapters, 0), 5);
     assert.equal(coverageSummary().reduce((n, row) => n + row.completeChapters, 0), 0);
   } finally { f.cleanup(); }
 });

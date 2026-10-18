@@ -1,0 +1,301 @@
+{
+  "reviewDate": "2026-10-18",
+  "scope": "Bounded reconciliation of saved182 identity decisions (30 prior+52 Principles/Physical+50 Inorganic+50 Organic), three written banks (13+14+32), and selected existing notes.",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "wholeCollectionComplete": false,
+  "countsAreNotCoverage": true,
+  "conclusion": "Remaining work is principally explicit evidence mapping and representation decisions, plus bounded unfamiliar transfer and selected studied Physical/NO examples. Existing authored chapter completion and59 bank entries do not certify1.25. No claim of exhaustive reaction variants or teaching certification.",
+  "items": [
+    {
+      "id": "unfamiliar-equation-transfer",
+      "sourceIds": [
+        "4CH1:issue3:1.25"
+      ],
+      "obligation": "Compulsory cross-topic skill; no compulsory reagent pair",
+      "existingEvidence": [
+        {
+          "path": "content/notes/chemistry.json",
+          "sectionId": "equations-and-state-symbols",
+          "jsonPointer": "/sections/19"
+        }
+      ],
+      "assessment": "General lesson has a supplied Al/O2 balance and a subscript question, not a complete names-to-word/formula/state transfer task. New bank practices supply identities within taught families and provide useful transfer, but do not alone demonstrate broad unfamiliar supplied-information handling.",
+      "nextAction": "Add a bounded genuinely unfamiliar supplied-identity task with formulas or sufficient charge information and explicit phases; ask word and balanced state-labelled equations. Do not require invented product prediction or infinite variants."
+    },
+    {
+      "id": "physical-studied-equations",
+      "sourceIds": [
+        "4CH1:issue3:3.6C",
+        "4CH1:issue3:3.7C",
+        "4CH1:issue3:3.19C",
+        "4CH1:issue3:3.20C",
+        "4CH1:issue3:3.21C",
+        "4CH1:issue3:3.22C"
+      ],
+      "obligation": "General representative choices, not prescribed Haber/Contact/HI synthesis cases",
+      "existingEvidence": [
+        {
+          "path": "content/notes/chemistry-physical.json",
+          "sectionId": "bond-balance",
+          "jsonPointer": "/sections/9"
+        },
+        {
+          "path": "content/notes/chemistry-physical.json",
+          "sectionId": "equilibrium-temperature",
+          "jsonPointer": "/sections/25"
+        },
+        {
+          "path": "content/notes/chemistry-physical.json",
+          "sectionId": "equilibrium-pressure",
+          "jsonPointer": "/sections/26"
+        },
+        {
+          "path": "content/notes/chemistry-physical.json",
+          "sectionId": "dynamic-equilibrium",
+          "jsonPointer": "/sections/23"
+        },
+        {
+          "path": "content/notes/chemistry-physical.json",
+          "sectionId": "equilibrium-catalyst",
+          "jsonPointer": "/sections/24"
+        }
+      ],
+      "assessment": "Existing studied equations include N2/H2/NH3, H2/Cl2/HCl, H2/I2/HI, CaCO3/CaO/CO2, SO2/O2/SO3. Balanced equations and interpretation tasks already exist, but these are absent from the three finite banks and generally lack paired word-equation production evidence.",
+      "nextAction": "Reconcile existing cases into collection evidence with word names and contextual states; reuse existing teaching. Do not invent industrial catalysts/conditions as compulsory demands. Distinguish supplied gas-phase bond model and equilibrium conditions."
+    },
+    {
+      "id": "dissolving-representation",
+      "sourceIds": [
+        "4CH1:issue3:3.1",
+        "4CH1:issue3:3.2",
+        "4CH1:issue3:3.8"
+      ],
+      "obligation": "Dissolving method class required under3.2;3.8 says SOME practicals; salt identity optional",
+      "existingEvidence": [
+        {
+          "path": "content/notes/chemistry-physical.json",
+          "sectionId": "dissolving-displacement",
+          "jsonPointer": "/sections/5"
+        },
+        {
+          "path": "content/notes/chemistry-physical.json",
+          "sectionId": "calorimetry-methods",
+          "jsonPointer": "/sections/1"
+        }
+      ],
+      "assessment": "Ammonium nitrate dissolving is an actual fixed practice with calorimetry, but no written dissolution representation or explicit physical-versus-reaction collection disposition. The other three calorimetry classes have bank examples.",
+      "nextAction": "Record dissolution explicitly as physical solvation/dissociation, optionally NH4NO3(s) → NH4+(aq)+NO3−(aq), with conservation and states; do not count it as a new synthesis or require four performed trials."
+    },
+    {
+      "id": "rust-variable-composition",
+      "sourceIds": [
+        "4CH1:issue3:2.10",
+        "4CH1:issue3:2.18",
+        "4CH1:issue3:2.19"
+      ],
+      "obligation": "Iron rusting named; iron oxygen-removal example; zinc galvanising specified",
+      "existingEvidence": [
+        {
+          "path": "content/notes/chemistry-inorganic.json",
+          "sectionId": "rust-conditions",
+          "jsonPointer": "/sections/25"
+        },
+        {
+          "path": "content/notes/chemistry-inorganic.json",
+          "sectionId": "rust-evidence-plan",
+          "jsonPointer": "/sections/26"
+        },
+        {
+          "path": "content/notes/chemistry-inorganic.json",
+          "sectionId": "oxygen-air-removal",
+          "jsonPointer": "/sections/11"
+        },
+        {
+          "path": "content/notes/chemistry-inorganic.json",
+          "sectionId": "rust-galvanising-sacrificial",
+          "jsonPointer": "/sections/28"
+        }
+      ],
+      "assessment": "Correct water/oxygen and variable-hydration teaching exists; banks omit rust. No fixed Fe/O2/H2O molecular balance is warranted. Sacrificial zinc half-equation already exists.",
+      "nextAction": "Add a collection disposition/word model iron + oxygen + water → hydrated iron(III) oxide, explaining variable composition prevents one unique hydrated formula. Link existing zinc electron equation; barriers are not separate chemical reactions."
+    },
+    {
+      "id": "addition-polymer-representation",
+      "sourceIds": [
+        "4CH1:issue3:4.44",
+        "4CH1:issue3:4.45",
+        "4CH1:issue3:4.46"
+      ],
+      "obligation": "Four named repeat structures compulsory; no fixed industrial conditions",
+      "existingEvidence": [
+        {
+          "path": "content/notes/chemistry-organic.json",
+          "sectionId": "addition-monomers",
+          "jsonPointer": "/sections/44"
+        },
+        {
+          "path": "content/notes/chemistry-organic.json",
+          "sectionId": "addition-repeat-drawings",
+          "jsonPointer": "/sections/45"
+        },
+        {
+          "path": "content/notes/chemistry-organic.json",
+          "sectionId": "recover-addition-monomer",
+          "jsonPointer": "/sections/46"
+        }
+      ],
+      "assessment": "All four repeats and displayed drawing tasks already exist, including continuation bonds and n. Finite model banks intentionally defer them. This is a collection representation/linkage gap, not missing repeat teaching.",
+      "nextAction": "Link or add structure-aware monomer→polymer equations for ethene, propene, chloroethene, tetrafluoroethene alongside existing diagrams. Do not validate open repeats as closed molecules or infer depolymerisation chemistry from reverse drawing."
+    },
+    {
+      "id": "polyester-representation",
+      "sourceIds": [
+        "4CH1:issue3:4.48C",
+        "4CH1:issue3:4.49C"
+      ],
+      "obligation": "Diacid/diol family and named ethanedioic acid/ethanediol structure compulsory; Paper2C",
+      "existingEvidence": [
+        {
+          "path": "content/notes/chemistry-organic.json",
+          "sectionId": "polyester-condensation",
+          "jsonPointer": "/sections/48"
+        },
+        {
+          "path": "content/notes/chemistry-organic.json",
+          "sectionId": "polyester-repeat-drawing",
+          "jsonPointer": "/sections/49"
+        }
+      ],
+      "assessment": "Named monomers, displayed repeat, C4H4O4,2n versus2n−1 water distinction are already taught. Finite banks defer structural equation representation.",
+      "nextAction": "Integrate existing structure evidence with explicit word/structural equation and repeat-aware accounting. Preserve ideal2n-water shorthand versus one finite open chain; no invented universal state/catalyst conditions."
+    },
+    {
+      "id": "nitrogen-oxide-context",
+      "sourceIds": [
+        "4CH1:issue3:4.14",
+        "4CH1:issue3:4.15",
+        "4CH1:issue3:4.16"
+      ],
+      "obligation": "Engine nitrogen-oxide context and sulfur-impurity oxidation required; exact oxide sequence representative",
+      "existingEvidence": [
+        {
+          "path": "content/notes/chemistry-organic.json",
+          "sectionId": "combustion-other-oxides",
+          "jsonPointer": "/sections/14"
+        },
+        {
+          "path": "content/notes/chemistry-organic.json",
+          "sectionId": "acid-rain-formation",
+          "jsonPointer": "/sections/15"
+        }
+      ],
+      "assessment": "Engine N2/O2 origin is explained but lacks a chosen balanced formula model. Sulfur S+O2→SO2 already appears and can reuse Inorganic sulfur-combustion, qualified as elemental illustration. Acid-rain explanation does not prescribe a unique complete equation.",
+      "nextAction": "Add/reconcile one justified N2(g)+O2(g)→2NO(g) initial-oxide example with high-temperature condition and word names. Do not claim NO is all exhaust or elemental sulfur every impurity; explicitly disposition acid-rain as explanation without one universal mechanism."
+    },
+    {
+      "id": "oxidation-shorthand-boundary",
+      "sourceIds": [
+        "4CH1:issue3:4.31C"
+      ],
+      "obligation": "Named dichromate oxidation route compulsory; current representation incomplete for full-reagent claims",
+      "existingEvidence": [
+        {
+          "path": "content/notes/chemistry.json",
+          "sectionId": "equation-case-organic-ethanol-dichromate-oxidation",
+          "jsonPointer": "/sections/97"
+        }
+      ],
+      "assessment": "[O] model correctly disclaims full reagent balance and has no state-symbol evidence. Its presence cannot silently certify every full-formula demand under1.25.",
+      "nextAction": "Root must explicitly decide adequacy of syllabus-appropriate shorthand and retain limitation, or independently validate an actual ionic/molecular reagent equation if needed. No need to invent mechanistic or aldehyde isolation obligations."
+    },
+    {
+      "id": "group1-air-and-metal-water",
+      "sourceIds": [
+        "4CH1:issue3:2.2",
+        "4CH1:issue3:2.15"
+      ],
+      "obligation": "Li/Na/K air comparison compulsory; calcium/cold-water and particular acid pairs representative",
+      "existingEvidence": [
+        {
+          "path": "content/notes/chemistry-inorganic.json",
+          "sectionId": "group1-air-water-trend",
+          "jsonPointer": "/sections/1"
+        },
+        {
+          "path": "content/notes/chemistry-inorganic.json",
+          "sectionId": "metal-water-evidence",
+          "jsonPointer": "/sections/20"
+        }
+      ],
+      "assessment": "Air tarnishing and multiple products correctly qualified; no unique simple oxide equation. Calcium-water is studied in prose but not in current banks. Mg steam and Group1 cold-water cases already covered.",
+      "nextAction": "Disposition air comparison as no uniquely specified product equation; do not fabricate all M2O. Consider one supplied calcium hydroxide phase-context equation only to cover the actually studied additional example, not a required full metal-by-reagent matrix."
+    },
+    {
+      "id": "physical-change-non-gaps",
+      "sourceIds": [
+        "4CH1:issue3:1.2",
+        "4CH1:issue3:1.3",
+        "4CH1:issue3:1.8",
+        "4CH1:issue3:1.42",
+        "4CH1:issue3:1.47"
+      ],
+      "obligation": "Physical changes and bonding explanations, not separately prescribed reactions",
+      "existingEvidence": [
+        {
+          "path": "content/notes/chemistry.json",
+          "sectionId": "states-of-matter",
+          "jsonPointer": "/sections/0"
+        },
+        {
+          "path": "content/notes/chemistry.json",
+          "sectionId": "particle-arrangement-and-change-evidence",
+          "jsonPointer": "/sections/49"
+        }
+      ],
+      "assessment": "Saved30 early decisions correctly exclude state changes/mixture separation from mandatory new reaction enumeration.",
+      "nextAction": "Keep state-change/unchanged-substance distinctions and do not manufacture decomposition equations for melting, boiling, dissolution or separation."
+    },
+    {
+      "id": "existing-cross-topic-reuse",
+      "sourceIds": [
+        "4CH1:issue3:1.31",
+        "4CH1:issue3:1.36",
+        "4CH1:issue3:1.58C",
+        "4CH1:issue3:1.59C",
+        "4CH1:issue3:1.60C"
+      ],
+      "obligation": "Material classes and named electrolysis contexts, plus cross-topic half-equation skill",
+      "existingEvidence": [
+        {
+          "path": "content/notes/chemistry.json",
+          "sectionId": "experimental-formula-evidence",
+          "jsonPointer": "/sections/26"
+        },
+        {
+          "path": "content/notes/chemistry.json",
+          "sectionId": "water-of-crystallisation",
+          "jsonPointer": "/sections/27"
+        },
+        {
+          "path": "content/notes/chemistry.json",
+          "sectionId": "electrolysis-half-equations",
+          "jsonPointer": "/sections/47"
+        },
+        {
+          "path": "content/notes/chemistry.json",
+          "sectionId": "half-equation-correction-evidence",
+          "jsonPointer": "/sections/80"
+        }
+      ],
+      "assessment": "Core banks already cover MgO/CuO, hydrated-salt change and four named electrolysis contexts; Inorganic hydrogen combustion supports water composition. Existing half-equation teaching must remain linked rather than replaced by overall balances.",
+      "nextAction": "Map existing evidence before adding cases:1.36 allows combustion OR reduction and1.60C aqueous only. Do not require actual trials or multiply every reagent combination."
+    }
+  ],
+  "limits": [
+    "No new publisher-source research; saved source decisions used.",
+    "Existing diagram references and textual drawing requirements checked; no new rendered SVG/layout review.",
+    "Not all chapter equations were exhaustively re-enumerated; this is a material-gap reconciliation, not a final collection sign-off.",
+    "No tracked edits, promotion, practical trials, paper processing or activation."
+  ]
+}

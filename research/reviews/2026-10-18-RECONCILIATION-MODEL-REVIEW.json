@@ -1,0 +1,339 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-18",
+  "reviewer": "Codex bounded independent chemistry model reviewer",
+  "humanReviewed": false,
+  "status": "pass-with-one-wording-clarification",
+  "scope": "All10 finite models,7 typed representations,9 worked examples and9 practice answers. No tracked edits or completion promotion.",
+  "inputs": [
+    {
+      "path": "research/reaction-models/4CH1-reconciliation-2026-10-18.json",
+      "sha256": "eb12287b611f03c8b016b07d9288635c8692150c5d8e95087d362a309ea31c92"
+    },
+    {
+      "path": "content/notes/chemistry.json",
+      "sha256": "73c868b19d9ed125fb013dc5c7b1af5b97c8fcb51c57ccadc2c66cf968b20704"
+    }
+  ],
+  "counts": {
+    "finiteModels": 10,
+    "typedRepresentations": 7,
+    "workedExamples": 9,
+    "practiceAnswers": 9,
+    "balanceOrAnswerErrors": 0,
+    "wordingClarifications": 1
+  },
+  "finiteModelChecks": [
+    {
+      "id": "ammonia-equilibrium",
+      "status": "pass",
+      "atomTotals": {
+        "H": 6,
+        "N": 2
+      },
+      "wordFormulaAgreement": true,
+      "structuredRenderedEquationAgreement": true,
+      "componentSuffixAgreement": true,
+      "conditionalStatesReviewed": true
+    },
+    {
+      "id": "hydrogen-iodide-equilibrium",
+      "status": "pass",
+      "atomTotals": {
+        "H": 2,
+        "I": 2
+      },
+      "wordFormulaAgreement": true,
+      "structuredRenderedEquationAgreement": true,
+      "componentSuffixAgreement": true,
+      "conditionalStatesReviewed": true
+    },
+    {
+      "id": "sulfur-trioxide-equilibrium",
+      "status": "pass",
+      "atomTotals": {
+        "O": 6,
+        "S": 2
+      },
+      "wordFormulaAgreement": true,
+      "structuredRenderedEquationAgreement": true,
+      "componentSuffixAgreement": true,
+      "conditionalStatesReviewed": true
+    },
+    {
+      "id": "calcium-carbonate-equilibrium",
+      "status": "pass",
+      "atomTotals": {
+        "C": 1,
+        "Ca": 1,
+        "O": 3
+      },
+      "wordFormulaAgreement": true,
+      "structuredRenderedEquationAgreement": true,
+      "componentSuffixAgreement": true,
+      "conditionalStatesReviewed": true
+    },
+    {
+      "id": "hydrogen-chlorine-bond-model",
+      "status": "pass",
+      "atomTotals": {
+        "Cl": 2,
+        "H": 2
+      },
+      "wordFormulaAgreement": true,
+      "structuredRenderedEquationAgreement": true,
+      "componentSuffixAgreement": true,
+      "conditionalStatesReviewed": true
+    },
+    {
+      "id": "engine-nitrogen-monoxide",
+      "status": "pass",
+      "atomTotals": {
+        "N": 2,
+        "O": 2
+      },
+      "wordFormulaAgreement": true,
+      "structuredRenderedEquationAgreement": true,
+      "componentSuffixAgreement": true,
+      "conditionalStatesReviewed": true
+    },
+    {
+      "id": "calcium-dilute-water",
+      "status": "pass",
+      "atomTotals": {
+        "Ca": 1,
+        "H": 4,
+        "O": 2
+      },
+      "wordFormulaAgreement": true,
+      "structuredRenderedEquationAgreement": true,
+      "componentSuffixAgreement": true,
+      "conditionalStatesReviewed": true
+    },
+    {
+      "id": "unfamiliar-phosphate",
+      "status": "pass",
+      "atomTotals": {
+        "Ba": 3,
+        "Cl": 6,
+        "Na": 6,
+        "O": 8,
+        "P": 2
+      },
+      "wordFormulaAgreement": true,
+      "structuredRenderedEquationAgreement": true,
+      "componentSuffixAgreement": true,
+      "conditionalStatesReviewed": true
+    },
+    {
+      "id": "unfamiliar-sulfite",
+      "status": "pass",
+      "atomTotals": {
+        "Cl": 2,
+        "H": 2,
+        "Na": 2,
+        "O": 3,
+        "S": 1
+      },
+      "wordFormulaAgreement": true,
+      "structuredRenderedEquationAgreement": true,
+      "componentSuffixAgreement": true,
+      "conditionalStatesReviewed": true
+    },
+    {
+      "id": "ethanol-full-dichromate-model",
+      "status": "pass",
+      "atomTotals": {
+        "C": 6,
+        "Cr": 4,
+        "H": 34,
+        "K": 4,
+        "O": 49,
+        "S": 8
+      },
+      "wordFormulaAgreement": true,
+      "structuredRenderedEquationAgreement": true,
+      "componentSuffixAgreement": true,
+      "conditionalStatesReviewed": true
+    }
+  ],
+  "representationChecks": [
+    {
+      "id": "ammonium-nitrate-dissociation",
+      "kind": "physical-dissociation",
+      "status": "pass",
+      "finding": "N2 H4 O3 conserved; +1 and −1 aqueous ion charges sum to zero. Dissolution correctly distinguished from nitrate decomposition."
+    },
+    {
+      "id": "rust-variable-composition",
+      "kind": "word-model-variable-composition",
+      "status": "pass",
+      "finding": "Variable hydrated oxide/oxyhydroxide rust word model avoids inventing a fixed hydration coefficient; water and oxygen requirements retained."
+    },
+    {
+      "id": "repeat-ethene",
+      "kind": "open-addition-repeat",
+      "status": "pass",
+      "finding": "Monomer/repeat atom inventories agree; supplied condensed open repeat has correct backbone/side-group valencies, no residual C=C and no water product."
+    },
+    {
+      "id": "repeat-propene",
+      "kind": "open-addition-repeat",
+      "status": "pass",
+      "finding": "Monomer/repeat atom inventories agree; supplied condensed open repeat has correct backbone/side-group valencies, no residual C=C and no water product."
+    },
+    {
+      "id": "repeat-chloroethene",
+      "kind": "open-addition-repeat",
+      "status": "pass",
+      "finding": "Monomer/repeat atom inventories agree; supplied condensed open repeat has correct backbone/side-group valencies, no residual C=C and no water product."
+    },
+    {
+      "id": "repeat-tetrafluoroethene",
+      "kind": "open-addition-repeat",
+      "status": "pass",
+      "finding": "Monomer/repeat atom inventories agree; supplied condensed open repeat has correct backbone/side-group valencies, no residual C=C and no water product."
+    },
+    {
+      "id": "repeat-ethanedioic-ethanediol",
+      "kind": "open-condensation-repeat",
+      "status": "pass",
+      "finding": "C4H8O6 minus2H2O gives ideal repeat C4H4O4. One finite open chain of2n monomers has2n−1 links/waters; n=3 gives5 and n=4 gives7."
+    }
+  ],
+  "sectionChecks": [
+    {
+      "sectionId": "equation-reconciliation-equilibria",
+      "workedExampleReviewed": true,
+      "practiceAnswerReviewed": true,
+      "status": "pass-with-wording-clarification",
+      "finding": "Word/formula equations and gas counts agree: ammonia4→2, HI2→2, SO3 3→2, carbonate0→1. Practice directions right/left correct for isothermal compression; clarify how pressure changes (finding R1). Solids correctly excluded."
+    },
+    {
+      "sectionId": "equation-reconciliation-bond-model",
+      "workedExampleReviewed": true,
+      "practiceAnswerReviewed": true,
+      "status": "pass",
+      "finding": "One H–H plus one Cl–Cl broken; two H–Cl formed.436+243−2×431=−183kJ per reaction as written. Gas HCl versus aqueous-acid formation enthalpy distinction correct."
+    },
+    {
+      "sectionId": "equation-reconciliation-engine",
+      "workedExampleReviewed": true,
+      "practiceAnswerReviewed": true,
+      "status": "pass",
+      "finding": "N2+O2→2NO balanced; source from air, high-temperature representative route and incomplete exhaust inventory correctly qualified."
+    },
+    {
+      "sectionId": "equation-reconciliation-calcium-water",
+      "workedExampleReviewed": true,
+      "practiceAnswerReviewed": true,
+      "status": "pass",
+      "finding": "Ca: H2=1:1, so0.040mol gives0.040mol H2. Hydroxide(aq) explicitly below solubility; solid suspension alternative distinguished."
+    },
+    {
+      "sectionId": "equation-reconciliation-unfamiliar",
+      "workedExampleReviewed": true,
+      "practiceAnswerReviewed": true,
+      "status": "pass",
+      "finding": "All products/formulae/states supplied. Phosphate balances3:2:1:6 with Ba3 P2 O8 Na6 Cl6. Sulfite1:2:2:1:1 conserves Na2 H2 Cl2 S1 O3; identities not silently changed."
+    },
+    {
+      "sectionId": "equation-reconciliation-actual-oxidant",
+      "workedExampleReviewed": true,
+      "practiceAnswerReviewed": true,
+      "status": "pass",
+      "finding": "Molecular and ionic totals correct; ionic charge+12 both sides. Three×4electron oxidation balances two×6electron reduction.0.0300mol ethanol gives0.0200mol dichromate and0.0800mol H2SO4. Full species supplied; no new memorisation mandate or [O](g) claim."
+    },
+    {
+      "sectionId": "equation-reconciliation-nonunique",
+      "workedExampleReviewed": true,
+      "practiceAnswerReviewed": true,
+      "status": "pass",
+      "finding": "Ammonium nitrate dissolution preserves N2 H4 O3 and netzero charge. Cooling alone does not imply decomposition; variable rust formula limitation and nonreaction paint barrier correct."
+    },
+    {
+      "sectionId": "equation-reconciliation-addition-polymers",
+      "workedExampleReviewed": true,
+      "practiceAnswerReviewed": true,
+      "status": "pass",
+      "finding": "Four words and condensed structures correct: C2H4,C3H6,C2H3Cl,C2F4 retained. Outward bonds/n, sidegroups, no removed water and no universal state assumptions correct. Practice explicitly directs full displayed expansion using existing sheet."
+    },
+    {
+      "sectionId": "equation-reconciliation-polyester",
+      "workedExampleReviewed": true,
+      "practiceAnswerReviewed": true,
+      "status": "pass",
+      "finding": "Monomer pair C4H8O6−2H2O yields ideal C4H4O4 repeat. Both carbonyls and ester boundary correct. Six monomers/five links and eight monomers/seven links answers correct; ideal2n versus finite2n−1 distinction preserved."
+    }
+  ],
+  "dichromateIndependentChecks": {
+    "ionicAtomTotals": {
+      "C": 6,
+      "Cr": 4,
+      "H": 34,
+      "O": 17
+    },
+    "ionicChargeEachSide": 12,
+    "oxidationElectronsPerEthanol": 4,
+    "reductionElectronsPerDichromate": 6,
+    "totalElectrons": 12,
+    "molecularAtomTotals": {
+      "C": 6,
+      "Cr": 4,
+      "H": 34,
+      "K": 4,
+      "O": 49,
+      "S": 8
+    },
+    "stoichiometricExample": {
+      "ethanolMol": 0.03,
+      "dichromateMol": 0.02,
+      "sulfuricAcidMol": 0.08
+    },
+    "scope": "Independent algebra/charge/species check; no claim of independent supplementary-web retrieval. Retained provenance credits original Chemguide Example3 ionic core, authored spectator/state extension and RSC indexed-only405 limit."
+  },
+  "findings": [
+    {
+      "id": "R1",
+      "priority": "low",
+      "blocking": false,
+      "file": "content/notes/chemistry.json",
+      "sectionId": "equation-reconciliation-equilibria",
+      "fields": [
+        "example.question",
+        "example.steps",
+        "practice.question",
+        "practice.answer"
+      ],
+      "finding": "“Increasing pressure at fixed temperature” does not identify the operation. The supplied answers are correct for compression, but an inert gas added at constant volume can raise total pressure without changing reacting partial pressures or causing these shifts.",
+      "recommendation": "Say “increase pressure by decreasing the mixture volume at fixed temperature” in the example and practice prompt, and qualify their answers/model limits as compression comparisons. No coefficient or gas-count change is needed."
+    }
+  ],
+  "artifactChecks": [
+    {
+      "path": "public/diagrams/chemistry-addition-repeats.svg",
+      "sha256": "7eee1f502b1c0f54576a9699ddaad9094f95ac1928ef19c8b8ba02b0ff58cba8",
+      "xmlParsed": true,
+      "existingDisplayedDiagram": true,
+      "freshRasterVisualReview": false
+    },
+    {
+      "path": "public/diagrams/chemistry-polyester-repeat.svg",
+      "sha256": "243052980fac608c203002f4e19af3880bde12dd56b9eea2d22372174c88aa7c",
+      "xmlParsed": true,
+      "existingDisplayedDiagram": true,
+      "freshRasterVisualReview": false
+    }
+  ],
+  "boundaryNotes": [
+    "Full dichromate salt equations are formal aqueous bookkeeping, not a claim that all chromium/sulfate occurs as neutral molecules; conditional dissolved-salt context is stated.",
+    "[O] remains separately labelled shorthand; none is a monatomic oxygen reagent with a gas state.",
+    "The source names the ethanol acid-oxidation route, not a compulsory chromium mechanism or every full-reagent equation.",
+    "Equilibrium gases are explicitly stipulated, especially hot I2/SO3; carbonate requires the closed solid/gas context.",
+    "Finite addition repeats omit actual chain-end chemistry; polyester water counts require the stated single open chain rather than cycles or multiple chains.",
+    "No fresh external retrieval, practical trial, learner calibration, full1.25 certification or image redraw performed."
+  ],
+  "trackedFilesEdited": false,
+  "promote125": false,
+  "rootResolution": "R1 resolved: the lesson/example/practice and allfour reversible-model condition fields now explicitly specify compression/decreasingvolume at fixedtemperature, with inertgas-at-fixedvolume distinction. No other reviewed content changed."
+}

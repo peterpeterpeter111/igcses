@@ -1,0 +1,11 @@
+# Inorganic equation families —18 October2026
+
+Continued0f7deaf and preserved all completed point decisions/UI/history. Added32 finite molecular models in12 original family lessons supporting still-partial1.25. Group1 and named reaction/test contexts remain distinct from representative salts/reagents. Root selected explicitly qualified P4/cooledoxide, Mg/CuO, carbon-anodealuminium, full-neutralisation/nitric-base/ammonia/carbonate models. No performed practical or active template claimed.
+
+Independent review checked32model balances/word-formula agreement/sourcecomponents, all12 worked examples and12practice answers; no blocking defect. Renamed the misleading visible Ammonium hydroxide test lead-in to Ammonium-ion test; equation already excluded isolatedNH4OH. Review saved in research/reviews/2026-10-18-INORGANIC-MODEL-REVIEW.json. Phase bounds retained: alumina(l) is an explicit molten-bath process shorthand, iron(s) belongs only to the stated sub-melting reductionstage, phosphorus oxide is cooled collected product; other conditions require other states. No fixed rust hydration formula invented.
+
+309tests/typecheck/lint/18research/evidence pass before the final minor label correction; final full validation/build/D1/public/browser proof still required before syncing/publishing this source delta. New test covers32 balances,59 unique model IDs across allthreebanks, preserved states/conditions/components and no premature completion.
+
+Totals36notes/1,198sections/952fixedexercises/1,559numberedteachinglinks.59writtenmodelrecords (58finite molecular/structural andone[O]shorthand), not exhaustive unique-reaction counts. All completion counts unchanged:243/796 authoredpoints,867/2,826requirements,fourwholeauthoredchapters,twoEnglishprocessedpapers,fivenon-Englishgatespending,zeroactiveexamtemplates orliveAI.1.25/wholePrinciples unfinished.
+
+Next bounded step: reconcile the remaining source-family gaps, polymer repeat/drawing representations and unfamiliar supplied identities/conditions; then complete required validation and non-force GitHub/Sites publication of the exact saved source. Current live applicatione184dd0 is native-confirmed; the Organic/Inorganic additions are not yet deployed. Keep AI after fullcurriculum/paper/examtemplategates, preservehistory/privateevidence, noreset, pause5%either allowance.

@@ -35,6 +35,7 @@ export default async function SubjectCoverage({
   const points = pointCandidates.filter((x) => x.qualification === s.code),
     source = sources.find((x) => x.qualification === s.code)!;
   const objectives = assessmentObjectiveCoverage(s.code);
+  const chapterReviews = authoredChapterReviews.filter((review) => review.qualification === s.code);
   return (
     <SiteFrame>
       <main className="page">
@@ -49,9 +50,9 @@ export default async function SubjectCoverage({
           </a>
         </p>
         <p className="status">
-          Pearson’s current qualification page links to this exact
-          specification; its hash was rechecked on 9 September 2026. Full
-          amendment and substatement audits remain incomplete.
+          The saved Pearson qualification-page link and specification hash were
+          checked on 9 September 2026. Later amendments have not been
+          exhaustively audited; authored teaching and paper status are reported separately below.
         </p>
         <h2>Downloaded paper pairs</h2>
         {subjectEvidence(s.code).map((r) => (
@@ -350,7 +351,7 @@ export default async function SubjectCoverage({
                   ).length
                 }{' '}
                 {inventory.points.filter((point) => point.noteSectionIds.length > 0).length === 1 ? 'statement has' : 'statements have'} linked explanations.{' '}
-                {inventory.points.filter((point) => point.teachingCoverage === 'complete').length} passed the agent review of authored teaching. A whole authored chapter requires the separate review below; learner mastery and examiner marking are not certified.
+                {inventory.points.filter((point) => point.teachingCoverage === 'complete').length} passed the agent review of authored teaching. A whole authored chapter requires its separate review; learner mastery and examiner marking are not certified.
               </p>
               <details>
                 <summary>Inspect the reviewed statements</summary>
@@ -408,7 +409,10 @@ export default async function SubjectCoverage({
               {auditedParents.length} specification statements have been separated into{' '}
               {auditedParents.reduce((n, parent) => n + parent.requirements.length, 0)}
               {' '}local teaching requirements.{' '}
-              {auditedParents.filter((parent) => parent.teachingAuditStatus === 'complete').length} statements passed the agent review of authored teaching. Whole chapters and exam-template calibration remain incomplete.
+              {auditedParents.filter((parent) => parent.teachingAuditStatus === 'complete').length} statements passed the agent review of authored teaching.{' '}
+              {chapterReviews.length === s.chapters.length
+                ? 'All whole authored chapters have separate reviews above; exam-template calibration remains incomplete.'
+                : 'Whole authored-chapter reviews are listed above; unfinished chapters and exam-template calibration remain separate.'}
             </p>
             {s.id === 'physics' && <p>
               Examples of linked teaching include a{' '}

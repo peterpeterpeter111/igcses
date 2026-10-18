@@ -1,0 +1,1976 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-18",
+  "reviewer": "Codex independent final Organic source-family reviewer",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Exactly50 Organic source identities for bounded1.25 source-family adequacy, using saved own-Issue3 audit and actual current note/model/representation evidence. Not whole-specification or human/learner/practical certification.",
+  "status": "bounded-organic-review-finished-no-material-source-family-gap-identified",
+  "inputs": [
+    {
+      "path": "research/reaction-models/4CH1-source-evidence-matrix-2026-10-18.json",
+      "canonicalSha256": "01765011c4b5cd89cd4decd01496df5f26f691543fd9561fc41649ea9ad90628"
+    },
+    {
+      "path": "research/reviews/reaction-source-scope-2026-10-17/organic-source.json",
+      "canonicalSha256": "89bf07e1ed3a014dd138e3b105c856906829289cbfce56fe6ee03690c152d4b9"
+    }
+  ],
+  "bankHashes": {
+    "research/reaction-models/4CH1-inorganic-families-2026-10-18.json": "ed0fca1b2e574e7b99584b1bfb75cd5898390b0607f72fc33b4289c3af00d8f7",
+    "research/reaction-models/4CH1-named-core-2026-10-17.json": "2efd026854e731148edcf6e4a844d1ab01d4d4ac7704b0187e9d9ada56fa2fb6",
+    "research/reaction-models/4CH1-organic-slice-2026-10-18.json": "352ef96a3b18da7d368d7d41c042d46a5868c9a63fc6a55cef6661288c889d1f",
+    "research/reaction-models/4CH1-reconciliation-2026-10-18.json": "7c06498480ac610649290269b34d07d645f53fc478264bdc95758b79f702605d"
+  },
+  "noteHashes": {
+    "content/notes/chemistry-organic.json": "f6ec395f590c94f7ae5383021e09e04dae508c581e884308c16f6f68f8af2ba3",
+    "content/notes/chemistry.json": "bb4286a265941624d4df960230fb648a659f62316215885bde3d7a163a9e5a70"
+  },
+  "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "counts": {
+    "sourceIdentities": 50,
+    "verdicts": {
+      "not-separate-reaction": 18,
+      "adequate-with-scope": 32
+    },
+    "materialGaps": 0,
+    "uniqueAuthoredSectionsReferenced": 70,
+    "uniqueBankRecordsReferenced": 22,
+    "diagramArtifactsReferenced": 9
+  },
+  "verdictMeaning": {
+    "adequate-with-scope": "Actual authored evidence adequately represents this source requirement/family in this bounded review, with the stated conditions and representational limits. Not an automatic1.25 completion approval.",
+    "not-separate-reaction": "The reviewed identity does not create an additional chemical reaction requirement; its actual concept/property/drawing evidence is identified.",
+    "gap": "A material prescribed Organic context or required representation lacks adequate evidence; none identified in this bounded review."
+  },
+  "method": [
+    "Reviewed saved official Organic scope against all50 current matrix rows and actual existing sections, not inferred adequacy from record counts.",
+    "Read named route/family word equations, structural/formula models, conditions, relevant worked/practice answers and conditional-state qualifications.",
+    "Used independently checked reconciliation full-dichromate and typed-polymer evidence; structural directions and linked original displayed diagrams are retained as distinct evidence. No new raster audit is claimed.",
+    "Resolved shared reaction evidence explicitly where direct ID links are absent, especially4.15 sulfur impurity context plus the existing sulfur-combustion word/state model.",
+    "Checked matrix canonical hashes using its own sorted-key UTF8 JSON digest convention; all referenced banks and all existing Organic section hashes match.",
+    "No broad retrieval, new practical trial, learner calibration or tracked edit."
+  ],
+  "sourceVerdicts": [
+    {
+      "sourceId": "4CH1:issue3:4.1",
+      "officialReference": "4.1",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 29,
+      "printedPage": 23,
+      "verdict": "not-separate-reaction",
+      "sourceDemand": "definition only",
+      "reasoning": "Whole-formula C/H-only classification is taught and practised. No equation for every hydrocarbon is prescribed; this identity supplies composition vocabulary.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "hydrocarbon-identity",
+          "sectionSha256": "b861db44393e9d0307cac4366d76b1b9bc2b2b58b6794d948c14bb97109ee8e9",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.2",
+      "officialReference": "4.2",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 29,
+      "printedPage": 23,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "formula representation; not a new reaction family",
+      "reasoning": "Molecular/empirical/general/structural/displayed differences and a pent-2-ene transfer are explicit. Connected alcohol/acid/ester drawings supply the appropriate later Paper2C contexts. Condensed formula is explicitly not accepted as fully displayed.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "organic-formula-types",
+          "sectionSha256": "2b1965ae3e5d91aeb425e7a6448e56cdc372ff06b907ec7a885ce148bcdf5d25",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        },
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "alcohol-drawings",
+          "sectionSha256": "ff22fce173e7af0245c82560a6a45d32d6615c366ffa27c655926b3b266484b2",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true,
+          "diagramRef": "public/diagrams/chemistry-alcohol-displayed.svg"
+        },
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "carboxylic-drawings",
+          "sectionSha256": "c56d63360c15ad0db3cd4c2c1761ddf872e6c3942cbc25bdd6acc9c5398659e5",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true,
+          "diagramRef": "public/diagrams/chemistry-carboxylic-displayed.svg"
+        },
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "ethyl-ethanoate-drawing",
+          "sectionSha256": "082d0639e49e02494d8599f73184e6da5d99ef8435068f5ce6871d9be62b9cb2",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true,
+          "diagramRef": "public/diagrams/chemistry-ethyl-ethanoate.svg"
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.3",
+      "officialReference": "4.3",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 29,
+      "printedPage": 23,
+      "verdict": "not-separate-reaction",
+      "sourceDemand": "definitions and structural identity",
+      "reasoning": "Homologues, functional group and same-formula/different-connectivity isomers are explained and contrasted in practice. Definitions do not prescribe additional chemical interconversions.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "homologous-series",
+          "sectionSha256": "e76dc184aadf1d70144073c7b620a51f8ebc6c5af06eb1fdd61e242a9a2e907f",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        },
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "structural-isomers",
+          "sectionSha256": "e0279b17d8ea071e712a8e2e31e145a5688965fb168c69c272eec399d8749470",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.4",
+      "officialReference": "4.4",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 29,
+      "printedPage": 23,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "naming supports equations",
+      "reasoning": "Relevant first-six carbon roots, branch/alkene numbering and alcohol/acid/ester names are supported by practice. Later-family Paper2C limits are preserved; six-carbon naming does not mandate a new reaction for every compound or expand smaller drawing sets.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "organic-names",
+          "sectionSha256": "446717d25a864b27e34185d95ffd5824926a788da899409ae8a813a18961dd97",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        },
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "alcohol-drawings",
+          "sectionSha256": "ff22fce173e7af0245c82560a6a45d32d6615c366ffa27c655926b3b266484b2",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true,
+          "diagramRef": "public/diagrams/chemistry-alcohol-displayed.svg"
+        },
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "carboxylic-drawings",
+          "sectionSha256": "c56d63360c15ad0db3cd4c2c1761ddf872e6c3942cbc25bdd6acc9c5398659e5",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true,
+          "diagramRef": "public/diagrams/chemistry-carboxylic-displayed.svg"
+        },
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "ester-naming",
+          "sectionSha256": "9748aedcf45ae1de97a2c0f19c65993af4988fea348456ed87352d2a253153f5",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.5",
+      "officialReference": "4.5",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 29,
+      "printedPage": 23,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "structural/displayed deduction",
+      "reasoning": "Both C4H10 connectivities and all three C5H12 skeletons have structural/displayed directions and original sheets; practice checks atoms/valency and duplicate rotations. This is structure deduction, not an isomerisation-reaction requirement.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "structural-isomers",
+          "sectionSha256": "e0279b17d8ea071e712a8e2e31e145a5688965fb168c69c272eec399d8749470",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        },
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "alkane-branched-isomers",
+          "sectionSha256": "059fecbceb628eaeee3fa152d3ca083c03be3321dc2f204a105e164e47be5a3b",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true,
+          "diagramRef": "public/diagrams/chemistry-branched-alkanes.svg"
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.6",
+      "officialReference": "4.6",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 29,
+      "printedPage": 23,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "reaction classification reuses prescribed families",
+      "reasoning": "Substitution, addition and combustion each have actual equations, structural change explanations and classification practice. UV and retained hydrogens distinguish halogen substitution from addition. Mechanisms are explicitly not required.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "organic-reaction-classes",
+          "sectionSha256": "7d463afcb70e59f265254c7f50d8c99423e713df57e94249110e3438ce306379",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        },
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "hydrocarbon-complete-combustion",
+          "sectionSha256": "51dd9693f40b512f56c28790de9d0501fa3e9e96694f7eb45ed5a15e1db37205",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        },
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "alkane-monosubstitution",
+          "sectionSha256": "fe86854b506847e56a0b8d755af28ca455256bc106f470cefd7e92034f6375eb",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        },
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "bromine-addition",
+          "sectionSha256": "4d076197a6c5c5dbd0b8db98c6d0407c6d7ee63fa0649d61fa77b030d38143ec",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-organic-slice-2026-10-18.json",
+          "recordId": "alkane-monosubstitution",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-organic-alkane-monosubstitution"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-organic-slice-2026-10-18.json",
+          "recordId": "alkene-bromine-addition",
+          "recordType": "structural-addition",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-organic-alkene-bromine-addition"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-organic-slice-2026-10-18.json",
+          "recordId": "hydrocarbon-complete",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-organic-hydrocarbon-complete"
+        }
+      ],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.7",
+      "officialReference": "4.7",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 29,
+      "printedPage": 23,
+      "verdict": "not-separate-reaction",
+      "sourceDemand": "mixture identity",
+      "reasoning": "Crude oil composition is a mixture, with no single molecular formula or compulsory crude-oil reaction equation.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "crude-mixture",
+          "sectionSha256": "ae88b9b68b53d73dcc27a5aa43415709715cb99a1bbf59e3308e4f1c38ffc841",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.8",
+      "officialReference": "4.8",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 29,
+      "printedPage": 23,
+      "verdict": "not-separate-reaction",
+      "sourceDemand": "physical separation",
+      "reasoning": "Fractionating-column teaching and practice distinguish physical separation from cracking, with temperature gradient/condensation and an original diagram. No new chemical equation is appropriate.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "crude-mixture",
+          "sectionSha256": "ae88b9b68b53d73dcc27a5aa43415709715cb99a1bbf59e3308e4f1c38ffc841",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        },
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "fractional-column",
+          "sectionSha256": "f33ba175164b8c51cba0bb3281dbc918a4d3a37aaf291befe76f248c0fa87c36",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true,
+          "diagramRef": "public/diagrams/chemistry-fractionating-column.svg"
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.9",
+      "officialReference": "4.9",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 29,
+      "printedPage": 23,
+      "verdict": "not-separate-reaction",
+      "sourceDemand": "fraction names/uses",
+      "reasoning": "All six named fractions and uses are supplied and practised. Fractions remain mixtures, not six extra single-compound reaction requirements.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "fraction-uses",
+          "sectionSha256": "eec415ad441830a10919ab97efc6371ae034087f64e06606b24ee49631502bdc",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.10",
+      "officialReference": "4.10",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 29,
+      "printedPage": 23,
+      "verdict": "not-separate-reaction",
+      "sourceDemand": "physical properties",
+      "reasoning": "Colour, boiling range and viscosity trends and their temperature/mixture limitations are explained. Boiling does not break C–C bonds.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "fraction-trends",
+          "sectionSha256": "9874049e2ed3654f3b8798214831dd6c99f2fe0658106b0d1a43e34de378e905",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.11",
+      "officialReference": "4.11",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 29,
+      "printedPage": 23,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "energy definition with combustion reuse",
+      "reasoning": "Fuel-energy lesson defines heat-releasing burning and separates ignition input from overall transfer. Existing combustion word/formula models support the context; it does not require an additional fuel species.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "fuel-energy",
+          "sectionSha256": "cc3bf6febe323cefea30cb8d115062df5c696653b17cfb76e8c3fce676ff278f",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-organic-slice-2026-10-18.json",
+          "recordId": "hydrocarbon-complete",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-organic-hydrocarbon-complete"
+        }
+      ],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.12",
+      "officialReference": "4.12",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 29,
+      "printedPage": 23,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "complete/incomplete combustion family",
+      "reasoning": "Complete combustion and both limiting incomplete CO/water and carbon/water models have word, balanced and condition-labelled state equations, with different-fuel practice. Hot water versus cooled liquid and real mixed products are explicit; no unique incomplete flame or mandatory particular fuel is invented.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "hydrocarbon-complete-combustion",
+          "sectionSha256": "51dd9693f40b512f56c28790de9d0501fa3e9e96694f7eb45ed5a15e1db37205",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        },
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "hydrocarbon-incomplete-combustion",
+          "sectionSha256": "e6a7d4b8acadb605ac818df6fadf4b6d9f51ad27d7d5cdd89d1fe3e211085c71",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-organic-slice-2026-10-18.json",
+          "recordId": "hydrocarbon-complete",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-organic-hydrocarbon-complete"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-organic-slice-2026-10-18.json",
+          "recordId": "hydrocarbon-incomplete-co",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-organic-hydrocarbon-incomplete-co"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-organic-slice-2026-10-18.json",
+          "recordId": "hydrocarbon-incomplete-carbon",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-organic-hydrocarbon-incomplete-carbon"
+        }
+      ],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.13",
+      "officialReference": "4.13",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 30,
+      "printedPage": 24,
+      "verdict": "not-separate-reaction",
+      "sourceDemand": "physiological explanation",
+      "reasoning": "CO oxygen-transport impairment is taught and distinguished from soot/CO2. No haemoglobin equation is required; haemoglobin references are explicitly optional.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "carbon-monoxide-transport",
+          "sectionSha256": "c8081f2c50d6e4a5a883a81714b8c6eeade29411938e5fedbc1c4b4200b3c30f",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.14",
+      "officialReference": "4.14",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 30,
+      "printedPage": 24,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "engine nitrogen-oxide formation family",
+      "reasoning": "Original organic lesson identifies high-temperature air nitrogen/oxygen; reconciliation supplies nitrogen + oxygen → nitrogen monoxide and N2(g)+O2(g)→2NO(g), plus practice and limitations. NO is representative of the required oxide family, not the entire exhaust or an imported detailed NOx mechanism.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "combustion-other-oxides",
+          "sectionSha256": "0336247f40fc770659b2d75e0aeae191401a02bb2cd6e0ee1d24749d426c76fd",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-reconciliation-2026-10-18.json",
+          "recordId": "engine-nitrogen-monoxide",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-reconciliation-engine"
+        }
+      ],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.15",
+      "officialReference": "4.15",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 30,
+      "printedPage": 24,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "sulfur-impurity oxidation; shared sulfur model",
+      "reasoning": "Organic note explains sulfur-bearing impurities and explicitly uses S+O2→SO2 as a simple elemental-sulfur model. Existing inorganic combustion lesson supplies the matching word/state equation and S8 alternative when supplied. These shared references support1.25 without pretending every impurity is elemental S or every pure hydrocarbon contains sulfur.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "combustion-other-oxides",
+          "sectionSha256": "0336247f40fc770659b2d75e0aeae191401a02bb2cd6e0ee1d24749d426c76fd",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-inorganic-families-2026-10-18.json",
+          "recordId": "sulfur-combustion",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-family-inorganic-combustion"
+        }
+      ],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.16",
+      "officialReference": "4.16",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 30,
+      "printedPage": 24,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "explanatory chemical pathway, no unique exact sequence",
+      "reasoning": "Acid-rain lesson supplies the required SO2/NOx→atmospheric/water reactions→acidic rainwater explanation and transfer. Source does not prescribe a unique acid mixture or detailed atmospheric mechanism, so no missing universal balanced equation is inferred.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "acid-rain-formation",
+          "sectionSha256": "c29261a640c57c503221fd9011a78591e5a109342de6c8ef127d18bf651a3731",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.17",
+      "officialReference": "4.17",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 30,
+      "printedPage": 24,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "catalytic cracking family",
+      "reasoning": "Cracking has general word products, one balanced hot-vapour feed/product model, silica/alumina and600–700°C, and atom-conservation transfer practice. C3H6 under the supplied acyclic one-C=C condition is correctly identified as propene; the example does not assert unique industrial products.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "cracking-process",
+          "sectionSha256": "ce17725631f6be11e3b48a9ac3201c38c6c053d53281040b27b21e197f1f12e5",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-organic-slice-2026-10-18.json",
+          "recordId": "cracking",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-organic-cracking"
+        }
+      ],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.18",
+      "officialReference": "4.18",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 30,
+      "printedPage": 24,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "reason for existing reaction family",
+      "reasoning": "Cracking-demand teaching uses actual hypothetical supply/demand arithmetic and distinguishes molecular conversion from distillation. Reuses4.17 rather than prescribing extra feed/product equations.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "cracking-demand",
+          "sectionSha256": "3d52bb66a3d72c06ed8c7e772eeadf9d22615d1f8d4a9d4be07e5e43a4ed443d",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-organic-slice-2026-10-18.json",
+          "recordId": "cracking",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-organic-cracking"
+        }
+      ],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.19",
+      "officialReference": "4.19",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 30,
+      "printedPage": 24,
+      "verdict": "not-separate-reaction",
+      "sourceDemand": "general formula",
+      "reasoning": "CnH2n+2 and its acyclic-alkane restriction are taught; seven-carbon formula transfer does not impose naming/drawing or reaction demands beyond source scope.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "alkane-formula",
+          "sectionSha256": "e978cfa57c66707f0906f466d5e449a03382c17df83626f87aa46ba34f4bc431",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.20",
+      "officialReference": "4.20",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 30,
+      "printedPage": 24,
+      "verdict": "not-separate-reaction",
+      "sourceDemand": "bonding classification",
+      "reasoning": "Saturation is explained as molecular bonding, distinct from saturated solution. No separately prescribed chemical reaction.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "alkane-formula",
+          "sectionSha256": "e978cfa57c66707f0906f466d5e449a03382c17df83626f87aa46ba34f4bc431",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.21",
+      "officialReference": "4.21",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 30,
+      "printedPage": 24,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "named alkane drawing set",
+      "reasoning": "Methane through pentane structural/displayed forms and all required small branched connectivities are supported by drawings and checking practice. Unbranched names and five-carbon drawing limit are retained; no equation for each drawing is required.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "alkane-drawings",
+          "sectionSha256": "f25384207dbff398e9285344b6576ff533b60be1131defb6542862e8686c9f35",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true,
+          "diagramRef": "public/diagrams/chemistry-alkane-displayed.svg"
+        },
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "alkane-branched-isomers",
+          "sectionSha256": "059fecbceb628eaeee3fa152d3ca083c03be3321dc2f204a105e164e47be5a3b",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true,
+          "diagramRef": "public/diagrams/chemistry-branched-alkanes.svg"
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.22",
+      "officialReference": "4.22",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 30,
+      "printedPage": 24,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "alkane/halogen mono-substitution family",
+      "reasoning": "UV mono-substitution family has methane/chlorine word/state equation, methane/bromine illustration and ethane transfer. Organic product plus hydrogen halide, equivalent versus nonequivalent positions and further-substitution scope are explicit. No mechanism, all possible alkane–halogen combinations or invented phase is demanded.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "alkane-monosubstitution",
+          "sectionSha256": "fe86854b506847e56a0b8d755af28ca455256bc106f470cefd7e92034f6375eb",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-organic-slice-2026-10-18.json",
+          "recordId": "alkane-monosubstitution",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-organic-alkane-monosubstitution"
+        }
+      ],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.23",
+      "officialReference": "4.23",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 30,
+      "printedPage": 24,
+      "verdict": "not-separate-reaction",
+      "sourceDemand": "functional group",
+      "reasoning": "C=C functional group is identified; actual bromine addition is assessed under4.27.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "alkene-formula",
+          "sectionSha256": "1d14746ca63083c4df5707fdf86f148d33eccc41a147ae747f06b200364115c6",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.24",
+      "officialReference": "4.24",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 30,
+      "printedPage": 24,
+      "verdict": "not-separate-reaction",
+      "sourceDemand": "general formula",
+      "reasoning": "CnH2n restricted to the stated acyclic one-double-bond family is taught and practised; formula alone does not prove connectivity.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "alkene-formula",
+          "sectionSha256": "1d14746ca63083c4df5707fdf86f148d33eccc41a147ae747f06b200364115c6",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.25",
+      "officialReference": "4.25",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 30,
+      "printedPage": 24,
+      "verdict": "not-separate-reaction",
+      "sourceDemand": "unsaturation explanation",
+      "reasoning": "Unsaturation and ability to add are explained using C=C; no additional named reagent is prescribed here beyond the later addition family.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "alkene-formula",
+          "sectionSha256": "1d14746ca63083c4df5707fdf86f148d33eccc41a147ae747f06b200364115c6",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.26",
+      "officialReference": "4.26",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 30,
+      "printedPage": 24,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "named small-alkene drawing set",
+      "reasoning": "Ethene, propene, but-1-ene, but-2-ene and branched C4 alkene have structural/displayed support and practice; unbranched naming and no compulsory E/Z or cis/trans are retained. These are drawing demands, not new reaction cases.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "alkene-drawings",
+          "sectionSha256": "df858153819b9a00b2afbb36d455f35df22fbd387956abd3540b431ef00521b3",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true,
+          "diagramRef": "public/diagrams/chemistry-alkene-displayed.svg"
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.27",
+      "officialReference": "4.27",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 30,
+      "printedPage": 24,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "alkene bromine-addition family",
+      "reasoning": "Word products and structural bromine addition across C=C are given and checked using ethene plus propene/butene transfer. Skeleton/H atoms retained, one Br per original C=C carbon and no HBr. State-free connectivity plus expressly conditional nonaqueous state model avoids falsely treating bromine water as pure Br2(l) or guaranteeing a pure isolated product.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "bromine-addition",
+          "sectionSha256": "4d076197a6c5c5dbd0b8db98c6d0407c6d7ee63fa0649d61fa77b030d38143ec",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-organic-slice-2026-10-18.json",
+          "recordId": "alkene-bromine-addition",
+          "recordType": "structural-addition",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-organic-alkene-bromine-addition"
+        }
+      ],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.28",
+      "officialReference": "4.28",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 30,
+      "printedPage": 24,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "test observation; related addition model",
+      "reasoning": "Bromine-water observation and alkane/alkene comparison are practised with no-UV, mixing, partitioning and excess-reagent limits. Reuses4.27 chemistry; the negative alkane test does not need a fictitious product equation.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "bromine-water-test",
+          "sectionSha256": "11bb69549f0dad08fb8f4dd3128b0c8cb935c7713e9f793e9db9a38805b80d5d",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-organic-slice-2026-10-18.json",
+          "recordId": "alkene-bromine-addition",
+          "recordType": "structural-addition",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-organic-alkene-bromine-addition"
+        }
+      ],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.29C",
+      "officialReference": "4.29C",
+      "components": [
+        "2C"
+      ],
+      "pdfPage": 31,
+      "printedPage": 25,
+      "verdict": "not-separate-reaction",
+      "sourceDemand": "functional group",
+      "reasoning": "Alcohol C–O–H group is distinguished from free OH− and carboxyl group. No additional conversion required.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "alcohol-functional-group",
+          "sectionSha256": "59ce903f4fa4e19da9308a4f9a31570f7a58b7ec17f5c502ab022e8b7c56707b",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.30C",
+      "officialReference": "4.30C",
+      "components": [
+        "2C"
+      ],
+      "pdfPage": 31,
+      "printedPage": 25,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "named alcohol drawing set",
+      "reasoning": "All four required alcohols have structural and fully displayed sheets/practice: methanol, ethanol, propan-1-ol, butan-1-ol. Accepted short names and primary-only three/four-carbon limit retained. No requirement to oxidise every listed alcohol is inferred.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "alcohol-drawings",
+          "sectionSha256": "ff22fce173e7af0245c82560a6a45d32d6615c366ffa27c655926b3b266484b2",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true,
+          "diagramRef": "public/diagrams/chemistry-alcohol-displayed.svg"
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.31C",
+      "officialReference": "4.31C",
+      "components": [
+        "2C"
+      ],
+      "pdfPage": 31,
+      "printedPage": 25,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "three explicitly named oxidation routes",
+      "reasoning": "All three ethanol oxidation routes are separate: complete combustion, microbial oxygen-to-acid route, and heat with K2Cr2O7 in dilute H2SO4 to acid. Word/formula/conditional-state evidence exists; [O] is explicitly limited, and optional full molecular/ionic expansion separately balances actual species with12electrons. Route conditions/product endpoints remain distinct; no new mechanism/half-equation memorisation mandate.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "ethanol-combustion",
+          "sectionSha256": "844325abc10a4ed550a1dfa3605890b7a9edaa788762a151aa6fb6ca3729e47d",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        },
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "ethanol-acid-oxidation",
+          "sectionSha256": "986fd8789a82aebb64fde4c7bc9f7a0863e281f101d9e2c21b7681080eab01a7",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-organic-slice-2026-10-18.json",
+          "recordId": "ethanol-combustion",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-organic-ethanol-combustion"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-organic-slice-2026-10-18.json",
+          "recordId": "ethanol-microbial-oxidation",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-organic-ethanol-microbial-oxidation"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-organic-slice-2026-10-18.json",
+          "recordId": "ethanol-dichromate-oxidation",
+          "recordType": "oxidant-shorthand",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-organic-ethanol-dichromate-oxidation"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-reconciliation-2026-10-18.json",
+          "recordId": "ethanol-full-dichromate-model",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-reconciliation-actual-oxidant"
+        }
+      ],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.32C",
+      "officialReference": "4.32C",
+      "components": [
+        "2C"
+      ],
+      "pdfPage": 31,
+      "printedPage": 25,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "two explicitly named manufacturing routes",
+      "reasoning": "Both named manufacture routes have word/balanced/state equations and correction/amount practice: steam hydration with phosphoric acid/about300°C/60–70atm; aqueous glucose fermentation with yeast enzymes/no air/about30°C. Hot ethanol gas versus later condensation, dissolved fermentation ethanol and ideal versus measured yield are explicit.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "ethanol-steam-route",
+          "sectionSha256": "9945af8957b0dbe944ea4470e330b269d41066e2c2cfd68b39cb234e790f6257",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        },
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "ethanol-fermentation",
+          "sectionSha256": "8341cc3897ca64df9da10143ea95460c5c6f7ad78fe7f50d26274ff4d3bed843",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-organic-slice-2026-10-18.json",
+          "recordId": "ethene-hydration",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-organic-ethene-hydration"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-organic-slice-2026-10-18.json",
+          "recordId": "glucose-fermentation",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-organic-glucose-fermentation"
+        }
+      ],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.33C",
+      "officialReference": "4.33C",
+      "components": [
+        "2C"
+      ],
+      "pdfPage": 31,
+      "printedPage": 25,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "conditions explanation reuses fermentation",
+      "reasoning": "Air exclusion and enzyme optimum/denaturation are causally explained and practised, using existing glucose-fermentation model. No extra required aerobic-respiration reaction is created.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "fermentation-conditions",
+          "sectionSha256": "f26a2ca1a690b560120daaf9e79d14e8070543a87352287ad8f360f0c69fd2a2",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-organic-slice-2026-10-18.json",
+          "recordId": "glucose-fermentation",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-organic-glucose-fermentation"
+        }
+      ],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.34C",
+      "officialReference": "4.34C",
+      "components": [
+        "2C"
+      ],
+      "pdfPage": 31,
+      "printedPage": 25,
+      "verdict": "not-separate-reaction",
+      "sourceDemand": "functional group",
+      "reasoning": "Full C(=O)–OH connectivity and carbonyl-carbon counting are explained and drawn in practice. No separate reaction.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "carboxyl-group",
+          "sectionSha256": "b7521113ef91fcf4022612c1e1f620e62b5949a85be3f6f2e19e3e98b3788afc",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.35C",
+      "officialReference": "4.35C",
+      "components": [
+        "2C"
+      ],
+      "pdfPage": 31,
+      "printedPage": 25,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "named carboxylic-acid drawing set",
+      "reasoning": "Methanoic through butanoic acid structural/displayed forms, names, formulas and every oxygen/H connection are supported by original diagram and practice. Drawing set does not imply every possible acid/reagent combination.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "carboxylic-drawings",
+          "sectionSha256": "c56d63360c15ad0db3cd4c2c1761ddf872e6c3942cbc25bdd6acc9c5398659e5",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true,
+          "diagramRef": "public/diagrams/chemistry-carboxylic-displayed.svg"
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.36C",
+      "officialReference": "4.36C",
+      "components": [
+        "2C"
+      ],
+      "pdfPage": 31,
+      "printedPage": 25,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "two general carboxylic-acid reaction families",
+      "reasoning": "Both prescribed aqueous-acid families have word/balanced/state equations: suitable metal→carboxylate+H2 and carbonate→carboxylate+CO2+water. Ethanoic/Mg and sodium-carbonate examples plus propanoic/Mg and calcium-carbonate practice preserve charge balance and soluble-product assumptions. No particular pairing is mislabelled mandatory; copper and gas-inference limits are explicit.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "carboxylic-metal-reaction",
+          "sectionSha256": "d345d91c2b9fd64751b14fc43b0d8d00883f2e5d0c682cd7b4c865a04d871ea1",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        },
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "carboxylic-carbonate-reaction",
+          "sectionSha256": "440b2bc7291fbf5324448f88f8e967001444505788154e8b0bcd3087a01fbf5f",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-organic-slice-2026-10-18.json",
+          "recordId": "carboxylic-acid-metal",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-organic-carboxylic-acid-metal"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-organic-slice-2026-10-18.json",
+          "recordId": "carboxylic-acid-carbonate",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-organic-carboxylic-acid-carbonate"
+        }
+      ],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.37C",
+      "officialReference": "4.37C",
+      "components": [
+        "2C"
+      ],
+      "pdfPage": 31,
+      "printedPage": 25,
+      "verdict": "not-separate-reaction",
+      "sourceDemand": "mixture identity",
+      "reasoning": "Vinegar is aqueous ethanoic-acid-containing mixture with concentration/inference limits. It does not add a new uniquely named reaction.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "vinegar-solution",
+          "sectionSha256": "c52ac2393fa8679308c24b2a0fe138c6f4ad2ed9b28982f204f1eb91cb342b80",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.38C",
+      "officialReference": "4.38C",
+      "components": [
+        "2C"
+      ],
+      "pdfPage": 32,
+      "printedPage": 26,
+      "verdict": "not-separate-reaction",
+      "sourceDemand": "functional group",
+      "reasoning": "Ester C(=O)–O–C connectivity versus acid OH is supplied and practised. Functional-group demand is not an additional conversion.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "ester-group",
+          "sectionSha256": "5cfb4da0fd60aa9469c2daef45dc7737e1792fa196260d7971b5a37df6ab86df",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.39C",
+      "officialReference": "4.39C",
+      "components": [
+        "2C"
+      ],
+      "pdfPage": 32,
+      "printedPage": 26,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "explicitly named esterification",
+      "reasoning": "The exact required ethanol+ethanoic-acid→ethyl-ethanoate+water case has word, balanced structural and conditional liquid-state equations, catalyst/reversibility explanation and transfer. [O] is rejected; both name fragments retained. No universal catalyst identity/temperature or pure isolated-product claim is added.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "ethyl-ethanoate-formation",
+          "sectionSha256": "15f137b84e492aeb16ebc86fdf5e337241b5da524c5f5b2ea2e6da62999f088f",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-organic-slice-2026-10-18.json",
+          "recordId": "ethyl-ethanoate",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-organic-ethyl-ethanoate"
+        }
+      ],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.40C",
+      "officialReference": "4.40C",
+      "components": [
+        "2C"
+      ],
+      "pdfPage": 32,
+      "printedPage": 26,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "named ester structure",
+      "reasoning": "Ethyl ethanoate has an actual fully displayed diagram and construction/checking practice, including carbonyl, O–CH2 and all H. Molecular C4H8O2 alone is explicitly insufficient; linked formation equation supports but does not replace this drawing.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "ethyl-ethanoate-drawing",
+          "sectionSha256": "082d0639e49e02494d8599f73184e6da5d99ef8435068f5ce6871d9be62b9cb2",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true,
+          "diagramRef": "public/diagrams/chemistry-ethyl-ethanoate.svg"
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-organic-slice-2026-10-18.json",
+          "recordId": "ethyl-ethanoate",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-organic-ethyl-ethanoate"
+        }
+      ],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.41C",
+      "officialReference": "4.41C",
+      "components": [
+        "2C"
+      ],
+      "pdfPage": 32,
+      "printedPage": 26,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "general ester structure/name transfer",
+      "reasoning": "General ester formation/connectivity rule and both-direction practice identify alcohol/acid fragments, preserve carbonyl and display structures within six carbons. Examples include methyl pentanoate and propyl propanoate; reverse deduction is not falsely promoted to compulsory hydrolysis chemistry.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "ester-naming",
+          "sectionSha256": "9748aedcf45ae1de97a2c0f19c65993af4988fea348456ed87352d2a253153f5",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-organic-slice-2026-10-18.json",
+          "recordId": "ethyl-ethanoate",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-organic-ethyl-ethanoate"
+        }
+      ],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.42C",
+      "officialReference": "4.42C",
+      "components": [
+        "2C"
+      ],
+      "pdfPage": 32,
+      "printedPage": 26,
+      "verdict": "not-separate-reaction",
+      "sourceDemand": "physical properties/uses",
+      "reasoning": "Volatility, distinctive smell and perfume/flavouring uses with inference limitations are taught. No chemical conversion or unique smell-identification equation is needed.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "ester-volatility-uses",
+          "sectionSha256": "dc84922dca3c206e46bf31d957a7c099d2a10470d2d17be1e0949b594935c430",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.43C",
+      "officialReference": "4.43C",
+      "components": [
+        "2C"
+      ],
+      "pdfPage": 32,
+      "printedPage": 26,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "practical family with permitted named example",
+      "reasoning": "A supervised ester-preparation plan with ethanol/ethanoic acid, selected acid catalyst, controlled warming and method-dependent work-up is provided and practised. Exact formation equation is linked from4.39C. The source allows an ester such as ethyl ethanoate; alternative ester recipes are not an unfilled exhaustive list. Product purity/performed-practical claims are avoided.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "ester-practical-plan",
+          "sectionSha256": "ae5682d140a4691e58b964a40d1181eb0bf627ef24b0171544e15f1c6069594c",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice",
+            "practical"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-organic-slice-2026-10-18.json",
+          "recordId": "ethyl-ethanoate",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-organic-ethyl-ethanoate"
+        }
+      ],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.44",
+      "officialReference": "4.44",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 32,
+      "printedPage": 26,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "addition-polymer formation model",
+      "reasoning": "Many monomers joining, C=C opening, atom retention, no removed small molecule and open-chain meaning are explained; new word/repeat models link all four required later examples. This is not misrepresented as a finite isolated molecule.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "addition-monomers",
+          "sectionSha256": "b252e53550f0e99fde9c3b5bf83e1ece514777b8fe113ba78338aa2ad3649378",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-reconciliation-2026-10-18.json",
+          "recordId": "repeat-ethene",
+          "recordType": "open-addition-repeat",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-reconciliation-addition-polymers"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-reconciliation-2026-10-18.json",
+          "recordId": "repeat-propene",
+          "recordType": "open-addition-repeat",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-reconciliation-addition-polymers"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-reconciliation-2026-10-18.json",
+          "recordId": "repeat-chloroethene",
+          "recordType": "open-addition-repeat",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-reconciliation-addition-polymers"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-reconciliation-2026-10-18.json",
+          "recordId": "repeat-tetrafluoroethene",
+          "recordType": "open-addition-repeat",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-reconciliation-addition-polymers"
+        }
+      ],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.45",
+      "officialReference": "4.45",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 32,
+      "printedPage": 26,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "four explicitly required repeat drawings",
+      "reasoning": "All four named repeats—poly(ethene), poly(propene), poly(chloroethene), poly(tetrafluoroethene)—have word models, correct open condensed repeats and the full displayed sheet; practice retains all substituents/outward bonds/n. State/industrial conditions are not fabricated for drawing requirements; no water removed.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "addition-repeat-drawings",
+          "sectionSha256": "a0ad7dbefdcb6a102a710da5dd5098c296a89cdec1bbf8813cf561b14c55d8ce",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true,
+          "diagramRef": "public/diagrams/chemistry-addition-repeats.svg"
+        }
+      ],
+      "directBankEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-reconciliation-2026-10-18.json",
+          "recordId": "repeat-ethene",
+          "recordType": "open-addition-repeat",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-reconciliation-addition-polymers"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-reconciliation-2026-10-18.json",
+          "recordId": "repeat-propene",
+          "recordType": "open-addition-repeat",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-reconciliation-addition-polymers"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-reconciliation-2026-10-18.json",
+          "recordId": "repeat-chloroethene",
+          "recordType": "open-addition-repeat",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-reconciliation-addition-polymers"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-reconciliation-2026-10-18.json",
+          "recordId": "repeat-tetrafluoroethene",
+          "recordType": "open-addition-repeat",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-reconciliation-addition-polymers"
+        }
+      ],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.46",
+      "officialReference": "4.46",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 32,
+      "printedPage": 26,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "addition monomer/repeat transfer",
+      "reasoning": "Forward and reverse monomer/repeat deduction are taught and practised with chloroethene, tetrafluoroethene and propene, preserving branch/backbone identity. Typed open-repeat models supplement actual structure teaching. Reverse drawing is not a required depolymerisation experiment.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "recover-addition-monomer",
+          "sectionSha256": "b55a6117313b147e213f624459344bb322697e080c210c1c26eb511afe207652",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-reconciliation-2026-10-18.json",
+          "recordId": "repeat-ethene",
+          "recordType": "open-addition-repeat",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-reconciliation-addition-polymers"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-reconciliation-2026-10-18.json",
+          "recordId": "repeat-propene",
+          "recordType": "open-addition-repeat",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-reconciliation-addition-polymers"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-reconciliation-2026-10-18.json",
+          "recordId": "repeat-chloroethene",
+          "recordType": "open-addition-repeat",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-reconciliation-addition-polymers"
+        },
+        {
+          "bankRef": "research/reaction-models/4CH1-reconciliation-2026-10-18.json",
+          "recordId": "repeat-tetrafluoroethene",
+          "recordType": "open-addition-repeat",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-reconciliation-addition-polymers"
+        }
+      ],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.47",
+      "officialReference": "4.47",
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "pdfPage": 32,
+      "printedPage": 26,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "disposal explanation with composition-dependent examples",
+      "reasoning": "Persistence/nonbiodegradation and toxic combustion-product dependence are explained and practised: possible CO from incomplete burning and HCl from chlorine-containing polymer, without claiming all polymers contain chlorine. Source prescribes disposal explanation, not one exact universal incineration equation or detailed decomposition mechanism; shared CO limiting model supports the chemistry.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "addition-disposal",
+          "sectionSha256": "72b958e3782a619714a8cdc9ec3e5496b0387f919f51d4c87204fd35e6965cc2",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-organic-slice-2026-10-18.json",
+          "recordId": "hydrocarbon-incomplete-co",
+          "recordType": "finite-molecular",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-case-organic-hydrocarbon-incomplete-co"
+        }
+      ],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.48C",
+      "officialReference": "4.48C",
+      "components": [
+        "2C"
+      ],
+      "pdfPage": 32,
+      "printedPage": 26,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "general condensation-polymer family",
+      "reasoning": "Diacid+diol→polyester+water family is explained via two functional ends and atom tracing; new word/ideal structural model distinguishes addition from condensation and identifies one water per link. No universal state/catalyst/temperature is prescribed.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "polyester-condensation",
+          "sectionSha256": "b277d5ae50a9b3a68e963cba97666352b470776ede27a7013797719178d1c697",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-reconciliation-2026-10-18.json",
+          "recordId": "repeat-ethanedioic-ethanediol",
+          "recordType": "open-condensation-repeat",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-reconciliation-polyester"
+        }
+      ],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.49C",
+      "officialReference": "4.49C",
+      "components": [
+        "2C"
+      ],
+      "pdfPage": 32,
+      "printedPage": 26,
+      "verdict": "adequate-with-scope",
+      "sourceDemand": "named polyester repeat plus monomer-to-repeat method",
+      "reasoning": "Specifically required ethanedioic-acid/ethanediol pair has both monomer structures, a correct fully displayed polyester sheet, ideal structural equation and transfer/check practice. Both carbonyls and the ester link across the bracket boundary retained. C4H4O4 and2n-water ideal shorthand are distinguished from2n−1waters in one finite open chain; no phase invented.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "polyester-repeat-drawing",
+          "sectionSha256": "0bf174fa595eb06db01fbff610a3e67ad8814d697faf17f72380171249e1f8da",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true,
+          "diagramRef": "public/diagrams/chemistry-polyester-repeat.svg"
+        }
+      ],
+      "directBankEvidence": [
+        {
+          "bankRef": "research/reaction-models/4CH1-reconciliation-2026-10-18.json",
+          "recordId": "repeat-ethanedioic-ethanediol",
+          "recordType": "open-condensation-repeat",
+          "noteRef": "content/notes/chemistry.json",
+          "sectionId": "equation-reconciliation-polyester"
+        }
+      ],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    },
+    {
+      "sourceId": "4CH1:issue3:4.50C",
+      "officialReference": "4.50C",
+      "components": [
+        "2C"
+      ],
+      "pdfPage": 32,
+      "printedPage": 26,
+      "verdict": "not-separate-reaction",
+      "sourceDemand": "qualified property statement",
+      "reasoning": "Some biopolyesters biodegradable and condition-dependent interpretation are taught/practised. This does not prescribe an exact hydrolysis/degradation equation, all-polyester claim or universal degradation rate.",
+      "actualAuthoredEvidence": [
+        {
+          "noteRef": "content/notes/chemistry-organic.json",
+          "sectionId": "biopolyester-limits",
+          "sectionSha256": "f581ec91eb7cefd7f26d0ebb61c38bd6a8aed1b7e206f5a9534588469584662a",
+          "fieldsReviewed": [
+            "paragraphs",
+            "practice"
+          ],
+          "workedExamplePresent": true
+        }
+      ],
+      "directBankEvidence": [],
+      "additionalSharedEvidence": [],
+      "materialMissingScope": []
+    }
+  ],
+  "importantScopeFindings": [
+    "4.31C retains all three required routes; [O] alone is not counted as full actual reagent/state evidence. Optional full dichromate expansion now provides explicit molecular/ionic species and condition-labelled states without inventing extra syllabus memorisation.",
+    "4.32C retains both required manufacture routes and their different specified catalyst/air/temperature/pressure conditions; hot hydration gas and aqueous fermentation product states are conditional.",
+    "4.39C specifically requires ethyl ethanoate;4.43C allows an ester such as it. The chosen preparation reuses that chemistry and does not imply every alternative ester is a missing mandatory case.",
+    "4.27 structural bromine addition and4.28 bromine-water observation are related but distinct evidence. Conditional phases and aqueous-product limits are explicit; molecular counts alone do not prove connectivity or purity.",
+    "4.45 four open addition repeats and4.49C named polyester are present as typed structural models with full displayed-sheet links, not treated as finite closed molecules or forced into universal state labels.",
+    "No detailed acid-rain mechanism, complete polymer-incineration equation set, reverse-deduction hydrolysis procedure, depolymerisation reaction or full family Cartesian product is prescribed by these50 identities.",
+    "A missing direct model link is not automatically missing teaching:4.15 is supported by the original impurity explanation and shared sulfur combustion. This review records that cross-link explicitly."
+  ],
+  "nonblockingMetadataSuggestions": [
+    {
+      "sourceId": "4CH1:issue3:4.15",
+      "suggestion": "If a future matrix supports explicit shared-evidence edges, link sulfur-combustion as representative equation support while retaining the organic impurity-context note. Do not change its sourceDemand to claim every impurity is elemental sulfur."
+    }
+  ],
+  "remainingOutsideDecision": [
+    "Other Principles/Inorganic/Physical source-family judgments and overall1.25 studied/unfamiliar-reaction adequacy belong to root.",
+    "Original diagrams were previously reviewed; this pass verifies their retained links and structural teaching without claiming a new visual rendering review.",
+    "Authored adequacy is not human validation, measured practical performance, examiner calibration, learner mastery, activated-template readiness or complete-subject certification."
+  ],
+  "diagramArtifacts": [
+    "public/diagrams/chemistry-addition-repeats.svg",
+    "public/diagrams/chemistry-alcohol-displayed.svg",
+    "public/diagrams/chemistry-alkane-displayed.svg",
+    "public/diagrams/chemistry-alkene-displayed.svg",
+    "public/diagrams/chemistry-branched-alkanes.svg",
+    "public/diagrams/chemistry-carboxylic-displayed.svg",
+    "public/diagrams/chemistry-ethyl-ethanoate.svg",
+    "public/diagrams/chemistry-fractionating-column.svg",
+    "public/diagrams/chemistry-polyester-repeat.svg"
+  ],
+  "trackedFilesEdited": false,
+  "promotionApprovedByThisReview": false,
+  "promote125": false
+}

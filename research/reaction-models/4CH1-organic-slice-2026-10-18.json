@@ -1,0 +1,911 @@
+{
+  "schemaVersion": 1,
+  "qualification": "4CH1",
+  "date": "2026-10-18",
+  "specificationSha256": "36e2080d2e99f060bcc18f2a9d0bbd8b29498b45e007fa232e3befcd89b73362",
+  "sourceScopeReviewRef": "research/reviews/reaction-source-scope-2026-10-17/organic-source.json",
+  "scope": "Six named routes and eight representative family models supporting the still-partial1.25 collection. Thirteen finite molecular/structural models plus one explicitly limited oxidising-equivalent shorthand; not an activated template bank.",
+  "wholeCollectionComplete": false,
+  "humanReviewed": false,
+  "practicalTrialsPerformed": false,
+  "noteRef": "content/notes/chemistry.json",
+  "noteSectionIds": [
+    "equation-case-organic-ethanol-combustion",
+    "equation-case-organic-ethanol-microbial-oxidation",
+    "equation-case-organic-ethanol-dichromate-oxidation",
+    "equation-case-organic-ethene-hydration",
+    "equation-case-organic-glucose-fermentation",
+    "equation-case-organic-ethyl-ethanoate",
+    "equation-case-organic-hydrocarbon-complete",
+    "equation-case-organic-hydrocarbon-incomplete-co",
+    "equation-case-organic-hydrocarbon-incomplete-carbon",
+    "equation-case-organic-cracking",
+    "equation-case-organic-alkane-monosubstitution",
+    "equation-case-organic-alkene-bromine-addition",
+    "equation-case-organic-carboxylic-acid-metal",
+    "equation-case-organic-carboxylic-acid-carbonate"
+  ],
+  "models": [
+    {
+      "id": "ethanol-combustion",
+      "sourceIds": [
+        "4CH1:issue3:4.31C"
+      ],
+      "components": [
+        "2C"
+      ],
+      "sourceDemand": "required-named-route",
+      "wordEquation": "ethanol + oxygen → carbon dioxide + water",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "atomFormula": "C2H6O",
+          "formulaLabel": "C2H5OH",
+          "state": "l"
+        },
+        {
+          "coefficient": 3,
+          "atomFormula": "O2",
+          "formulaLabel": "O2",
+          "state": "g"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 2,
+          "atomFormula": "CO2",
+          "formulaLabel": "CO2",
+          "state": "g"
+        },
+        {
+          "coefficient": 3,
+          "atomFormula": "H2O",
+          "formulaLabel": "H2O",
+          "state": "g"
+        }
+      ],
+      "stateContext": "Liquid fuel supplied to combustion; products represented hot, before water condenses.",
+      "conditionalStateEquation": "C2H5OH(l) + 3O2(g) → 2CO2(g) + 3H2O(g)",
+      "conditions": "Complete combustion in air or oxygen.",
+      "representationLimits": [
+        "Include oxygen already present in ethanol; acid is not the complete-combustion product.",
+        "Ethanol(l) for a liquid-fuel starting model; O2(g), CO2(g); water(g) hot or (l) after cooling as stated."
+      ],
+      "sectionId": "equation-case-organic-ethanol-combustion",
+      "title": "Count ethanol’s oxygen before balancing combustion — Paper 2C",
+      "representation": "finite-molecular",
+      "formulaEquation": "C2H5OH + 3O2 → 2CO2 + 3H2O",
+      "existingOrganicSections": [
+        "ethanol-combustion"
+      ],
+      "practice": {
+        "question": "In the complete-combustion model, 0.200 mol liquid ethanol burns and the products are considered hot. Give word and balanced formula equations with states, the required O₂ amount and the CO₂ amount. What changes in the water state label after cooling?",
+        "answer": "Ethanol + oxygen → carbon dioxide + water. C₂H₅OH(l) + 3O₂(g) → 2CO₂(g) + 3H₂O(g). O₂ required = 0.600 mol and CO₂ formed = 0.400 mol in the stated ideal model. Water may condense to H₂O(l) after cooling; the atom coefficients do not change."
+      },
+      "humanReviewed": false,
+      "practicalTrial": false
+    },
+    {
+      "id": "ethanol-microbial-oxidation",
+      "sourceIds": [
+        "4CH1:issue3:4.31C"
+      ],
+      "components": [
+        "2C"
+      ],
+      "sourceDemand": "required-named-route",
+      "wordEquation": "ethanol + oxygen → ethanoic acid + water",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "atomFormula": "C2H6O",
+          "formulaLabel": "C2H5OH",
+          "state": "aq"
+        },
+        {
+          "coefficient": 1,
+          "atomFormula": "O2",
+          "formulaLabel": "O2",
+          "state": "g"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "atomFormula": "C2H4O2",
+          "formulaLabel": "CH3COOH",
+          "state": "aq"
+        },
+        {
+          "coefficient": 1,
+          "atomFormula": "H2O",
+          "formulaLabel": "H2O",
+          "state": "l"
+        }
+      ],
+      "stateContext": "Aqueous ethanol mixture exposed to oxygen from air; overall gas-feed model, not a claim that O2 remains gaseous at the cellular reaction site.",
+      "conditionalStateEquation": "C2H5OH(aq) + O2(g) → CH3COOH(aq) + H2O(l)",
+      "conditions": "Oxygen from air with suitable microbial oxidation.",
+      "representationLimits": [
+        "Different starting material, oxygen condition and product from anaerobic glucose fermentation. Source does not prescribe a named organism or mechanism.",
+        "In an aqueous biological mixture ethanol/ethanoic acid may be (aq), O2(g) supplied from air and H2O(l); choose states from described setup."
+      ],
+      "sectionId": "equation-case-organic-ethanol-microbial-oxidation",
+      "title": "Keep microbial ethanol oxidation separate from fermentation — Paper 2C",
+      "representation": "finite-molecular",
+      "formulaEquation": "C2H5OH + O2 → CH3COOH + H2O",
+      "existingOrganicSections": [
+        "ethanol-acid-oxidation"
+      ],
+      "practice": {
+        "question": "A route card for microbial conversion of aqueous ethanol to aqueous ethanoic acid reads “glucose → ethanol + CO₂; exclude air”. Replace the word and balanced equations, state the air condition and explain how your chosen O₂ state relates to the gas feed.",
+        "answer": "Ethanol + oxygen → ethanoic acid + water. For the stated aqueous-mixture/gas-feed model: C₂H₅OH(aq) + O₂(g) → CH₃COOH(aq) + H₂O(l), with suitable microbial oxidation and access to oxygen from air. O₂(g) labels the supplied gas; an explicitly dissolved-oxygen context can instead justify O₂(aq). Anaerobic glucose fermentation is a different route."
+      },
+      "humanReviewed": false,
+      "practicalTrial": false
+    },
+    {
+      "id": "ethanol-dichromate-oxidation",
+      "sourceIds": [
+        "4CH1:issue3:4.31C"
+      ],
+      "components": [
+        "2C"
+      ],
+      "sourceDemand": "required-named-route",
+      "wordEquation": "ethanol + oxidising agent → ethanoic acid + water",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "atomFormula": "C2H6O",
+          "formulaLabel": "CH3CH2OH",
+          "state": null
+        },
+        {
+          "coefficient": 2,
+          "atomFormula": "O",
+          "formulaLabel": "[O]",
+          "state": null
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "atomFormula": "C2H4O2",
+          "formulaLabel": "CH3COOH",
+          "state": null
+        },
+        {
+          "coefficient": 1,
+          "atomFormula": "H2O",
+          "formulaLabel": "H2O",
+          "state": null
+        }
+      ],
+      "stateContext": "Oxidising-equivalent bookkeeping only. No complete reagent equation or state-symbol evidence is claimed.",
+      "conditionalStateEquation": null,
+      "conditions": "Heat with potassium dichromate(VI) in dilute sulfuric acid; acid endpoint.",
+      "representationLimits": [
+        "Shorthand balances organic O equivalents but is not a full K/Cr/S/H reagent equation and cannot alone discharge every full-formula-equation demand of 1.25. No compulsory aldehyde isolation, Cr half-equation or mechanism is prescribed by 4.31C.",
+        "[O] has no ordinary reagent state symbol; it is not a bottle of monatomic oxygen. In a full reagent equation specify actual oxidant and resulting species, not [O](g)."
+      ],
+      "sectionId": "equation-case-organic-ethanol-dichromate-oxidation",
+      "title": "Read [O] as oxidising-equivalent shorthand — Paper 2C",
+      "representation": "oxidant-shorthand",
+      "formulaEquation": "CH3CH2OH + 2[O] → CH3COOH + H2O (oxidising-equivalent shorthand)",
+      "existingOrganicSections": [
+        "ethanol-acid-oxidation"
+      ],
+      "practice": {
+        "question": "Correct “CH₃CH₂OH + 2[O](g) → CH₃COOH + H₂O is a complete reagent equation”. Give the word-model products and specified chemical conditions. Which evidence is still missing if a task asks for the full actual reagent equation?",
+        "answer": "Ethanol reacts with the oxidising agent to form ethanoic acid and water. Heat with potassium dichromate(VI) in dilute sulfuric acid towards the acid endpoint. Write CH₃CH₂OH + 2[O] → CH₃COOH + H₂O only as oxidising-equivalent shorthand, without a state on [O]. A full reagent equation must identify and balance the actual oxidant and its resulting species, including omitted K/Cr/S where molecular reagents are used; this shorthand does not supply that evidence."
+      },
+      "humanReviewed": false,
+      "practicalTrial": false
+    },
+    {
+      "id": "ethene-hydration",
+      "sourceIds": [
+        "4CH1:issue3:4.32C"
+      ],
+      "components": [
+        "2C"
+      ],
+      "sourceDemand": "required-named-route",
+      "wordEquation": "ethene + steam → ethanol",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "atomFormula": "C2H4",
+          "formulaLabel": "C2H4",
+          "state": "g"
+        },
+        {
+          "coefficient": 1,
+          "atomFormula": "H2O",
+          "formulaLabel": "H2O",
+          "state": "g"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "atomFormula": "C2H6O",
+          "formulaLabel": "C2H5OH",
+          "state": "g"
+        }
+      ],
+      "stateContext": "Hot industrial gas-phase formation model; subsequent ethanol condensation is a separate physical step.",
+      "conditionalStateEquation": "C2H4(g) + H2O(g) ⇌ C2H5OH(g)",
+      "conditions": "Phosphoric acid catalyst; about 300 °C and about 60–70 atm.",
+      "representationLimits": [
+        "Catalyst is a condition, not consumed reactant; no complete single-pass conversion claim. Do not replace industrial states by room-temperature water(l) while calling it steam.",
+        "Ethene(g), steam(g), ethanol(g) in hot process model; condensation later gives ethanol(l)."
+      ],
+      "sectionId": "equation-case-organic-ethene-hydration",
+      "title": "Assign steam and ethanol states at the hot catalyst — Paper 2C",
+      "representation": "finite-molecular",
+      "formulaEquation": "C2H4 + H2O → C2H5OH (simplified formation; equilibrium representation also appropriate)",
+      "existingOrganicSections": [
+        "ethanol-steam-route"
+      ],
+      "practice": {
+        "question": "A card says “C₂H₄(g) + H₂O(l) → C₂H₅OH(l), yeast, 30°C” for industrial steam hydration. Replace the word and balanced hot-process equations and all specified conditions. Does the equation prove complete single-pass conversion?",
+        "answer": "Ethene + steam ⇌ ethanol. C₂H₄(g) + H₂O(g) ⇌ C₂H₅OH(g) in the chosen hot process model, with phosphoric acid catalyst, about 300°C and about 60–70 atm. Yeast/30°C belong to fermentation. Reversibility means the equation does not prove complete single-pass conversion; cooling can later condense ethanol."
+      },
+      "humanReviewed": false,
+      "practicalTrial": false
+    },
+    {
+      "id": "glucose-fermentation",
+      "sourceIds": [
+        "4CH1:issue3:4.32C"
+      ],
+      "components": [
+        "2C"
+      ],
+      "sourceDemand": "required-named-route",
+      "wordEquation": "glucose → ethanol + carbon dioxide",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "atomFormula": "C6H12O6",
+          "formulaLabel": "C6H12O6",
+          "state": "aq"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 2,
+          "atomFormula": "C2H6O",
+          "formulaLabel": "C2H5OH",
+          "state": "aq"
+        },
+        {
+          "coefficient": 2,
+          "atomFormula": "CO2",
+          "formulaLabel": "CO2",
+          "state": "g"
+        }
+      ],
+      "stateContext": "Aqueous glucose/yeast mixture; ethanol remains dissolved and CO2 escapes.",
+      "conditionalStateEquation": "C6H12O6(aq) → 2C2H5OH(aq) + 2CO2(g)",
+      "conditions": "Enzymes in yeast; absence of air; optimum about 30 °C.",
+      "representationLimits": [
+        "No-air condition does not mean sealing a gas-producing vessel. Optimum/denaturation reasoning in 4.33C reuses route; no new separately required equation.",
+        "Typical aqueous fermentation: glucose(aq), ethanol(aq), CO2(g). Product is an aqueous mixture, not automatically pure ethanol(l)."
+      ],
+      "sectionId": "equation-case-organic-glucose-fermentation",
+      "title": "Balance a dissolved fermentation mixture — Paper 2C",
+      "representation": "finite-molecular",
+      "formulaEquation": "C6H12O6 → 2C2H5OH + 2CO2",
+      "existingOrganicSections": [
+        "ethanol-fermentation"
+      ],
+      "practice": {
+        "question": "Give word and state-labelled formula equations for aqueous glucose fermentation. From 0.150 mol glucose converted, calculate the ideal ethanol and CO₂ amounts. State the biological/air/temperature conditions and whether pure ethanol(l) has been obtained.",
+        "answer": "Glucose → ethanol + carbon dioxide. C₆H₁₂O₆(aq) → 2C₂H₅OH(aq) + 2CO₂(g). Each product amount is 0.300 mol in the ideal conversion model. Use enzymes in yeast, absence of air and an optimum about 30°C, with a suitable unblocked gas outlet. The liquid remains a mixture; this is not proof of pure liquid ethanol or a measured yield."
+      },
+      "humanReviewed": false,
+      "practicalTrial": false
+    },
+    {
+      "id": "ethyl-ethanoate",
+      "sourceIds": [
+        "4CH1:issue3:4.39C"
+      ],
+      "components": [
+        "2C"
+      ],
+      "sourceDemand": "required-named-route",
+      "wordEquation": "ethanol + ethanoic acid ⇌ ethyl ethanoate + water",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "atomFormula": "C2H6O",
+          "formulaLabel": "CH3CH2OH",
+          "state": "l"
+        },
+        {
+          "coefficient": 1,
+          "atomFormula": "C2H4O2",
+          "formulaLabel": "CH3COOH",
+          "state": "l"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "atomFormula": "C4H8O2",
+          "formulaLabel": "CH3COOCH2CH3",
+          "state": "l"
+        },
+        {
+          "coefficient": 1,
+          "atomFormula": "H2O",
+          "formulaLabel": "H2O",
+          "state": "l"
+        }
+      ],
+      "stateContext": "Explicit liquid-reactant esterification model before aqueous work-up; (l) describes phase and does not certify four separate pure layers.",
+      "conditionalStateEquation": "CH3CH2OH(l) + CH3COOH(l) ⇌ CH3COOCH2CH3(l) + H2O(l)",
+      "conditions": "Acid catalyst. Controlled warming and concentrated sulfuric acid belong to the selected practical example, not an extra specified universal temperature/acid identity in 4.39C.",
+      "representationLimits": [
+        "Water is a product; acid catalyst not consumed. [O] is inappropriate: this is esterification, not oxidation. Structural equation preserves connectivity; molecular C4H8O2 alone does not identify ester isomer.",
+        "For an explicitly neat liquid-reactant model use (l) for the organic reagents/products and water; aqueous/diluted work-up must reflect its actual phases."
+      ],
+      "sectionId": "equation-case-organic-ethyl-ethanoate",
+      "title": "Retain both ester fragments and the water product — Paper 2C",
+      "representation": "finite-molecular",
+      "formulaEquation": "CH3CH2OH + CH3COOH ⇌ CH3COOCH2CH3 + H2O",
+      "existingOrganicSections": [
+        "ethyl-ethanoate-formation"
+      ],
+      "practice": {
+        "question": "For the stipulated liquid-reactant model, write word and structural equations with states for ethyl ethanoate formation. Identify the acid/alcohol-derived name parts, water and catalyst role. Explain why C₄H₈O₂ alone is insufficient to identify this ester.",
+        "answer": "Ethanol + ethanoic acid ⇌ ethyl ethanoate + water. CH₃CH₂OH(l) + CH₃COOH(l) ⇌ CH₃COOCH₂CH₃(l) + H₂O(l), with an acid catalyst. Ethyl comes from ethanol; ethanoate from ethanoic acid. The catalyst is not a consumed overall reactant. C₄H₈O₂ records atom counts but not the CH₃C(=O)OCH₂CH₃ connectivity or a pure isolated sample."
+      },
+      "humanReviewed": false,
+      "practicalTrial": false
+    },
+    {
+      "id": "hydrocarbon-complete",
+      "sourceIds": [
+        "4CH1:issue3:4.12"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "required-general-family",
+      "wordEquation": "hydrocarbon + oxygen → carbon dioxide + water",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "atomFormula": "C3H8",
+          "formulaLabel": "C3H8",
+          "state": "g"
+        },
+        {
+          "coefficient": 5,
+          "atomFormula": "O2",
+          "formulaLabel": "O2",
+          "state": "g"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 3,
+          "atomFormula": "CO2",
+          "formulaLabel": "CO2",
+          "state": "g"
+        },
+        {
+          "coefficient": 4,
+          "atomFormula": "H2O",
+          "formulaLabel": "H2O",
+          "state": "g"
+        }
+      ],
+      "stateContext": "Illustrative propane gas burned completely; hot products before condensation.",
+      "conditionalStateEquation": "C3H8(g) + 5O2(g) → 3CO2(g) + 4H2O(g)",
+      "conditions": "Sufficient oxygen; burning in air.",
+      "representationLimits": [
+        "Propane is an authored illustration, not a uniquely prescribed named fuel. Preserve coefficients versus subscripts.",
+        "O2 and CO2 gases; fuel state depends on chosen hydrocarbon/temperature. H2O(g) near flame versus H2O(l) after cooling."
+      ],
+      "sectionId": "equation-case-organic-hydrocarbon-complete",
+      "title": "Balance a chosen complete-combustion family example",
+      "representation": "finite-molecular",
+      "formulaEquation": "C3H8 + 5O2 → 3CO2 + 4H2O",
+      "existingOrganicSections": [
+        "hydrocarbon-complete-combustion"
+      ],
+      "practice": {
+        "question": "Use a stated butane-vapour/hot-product model to write word and smallest-whole-number formula equations for complete combustion of C₄H₁₀. Give C/H/O totals and the oxygen condition. Does balance prove an actual burner burns completely?",
+        "answer": "Butane + oxygen → carbon dioxide + water. 2C₄H₁₀(g) + 13O₂(g) → 8CO₂(g) + 10H₂O(g), with sufficient oxygen and appropriate mixing. Totals are C₈, H₂₀ and O₂₆ on each side. Balance verifies the stated product model; it does not measure the performance of an actual burner."
+      },
+      "humanReviewed": false,
+      "practicalTrial": false
+    },
+    {
+      "id": "hydrocarbon-incomplete-co",
+      "sourceIds": [
+        "4CH1:issue3:4.12"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "required-general-family",
+      "wordEquation": "hydrocarbon + oxygen → carbon monoxide + water (limiting model)",
+      "reactants": [
+        {
+          "coefficient": 2,
+          "atomFormula": "CH4",
+          "formulaLabel": "CH4",
+          "state": "g"
+        },
+        {
+          "coefficient": 3,
+          "atomFormula": "O2",
+          "formulaLabel": "O2",
+          "state": "g"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 2,
+          "atomFormula": "CO",
+          "formulaLabel": "CO",
+          "state": "g"
+        },
+        {
+          "coefficient": 4,
+          "atomFormula": "H2O",
+          "formulaLabel": "H2O",
+          "state": "g"
+        }
+      ],
+      "stateContext": "Illustrative limiting methane model in which only CO and water are specified products; hot products.",
+      "conditionalStateEquation": "2CH4(g) + 3O2(g) → 2CO(g) + 4H2O(g)",
+      "conditions": "Insufficient oxygen/poor mixing.",
+      "representationLimits": [
+        "One possible product set; real incomplete products can be mixtures including CO2, carbon and water. Methane is illustrative.",
+        "CO gas; water state depends on temperature."
+      ],
+      "sectionId": "equation-case-organic-hydrocarbon-incomplete-co",
+      "title": "Balance the specified carbon-monoxide product model",
+      "representation": "finite-molecular",
+      "formulaEquation": "2CH4 + 3O2 → 2CO + 4H2O",
+      "existingOrganicSections": [
+        "hydrocarbon-incomplete-combustion"
+      ],
+      "practice": {
+        "question": "For a stipulated propane-gas model giving only CO and hot water vapour, write word and smallest-whole-number formula equations with states. Explain why a flame without visible soot does not prove absence of CO.",
+        "answer": "Propane + oxygen → carbon monoxide + water for the stipulated limiting model. 2C₃H₈(g) + 7O₂(g) → 6CO(g) + 8H₂O(g). Carbon monoxide is an invisible gas, not soot, so the absence of visible solid carbon is not evidence of no CO. Real incomplete product mixtures need not follow this one limiting equation."
+      },
+      "humanReviewed": false,
+      "practicalTrial": false
+    },
+    {
+      "id": "hydrocarbon-incomplete-carbon",
+      "sourceIds": [
+        "4CH1:issue3:4.12"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "required-general-family",
+      "wordEquation": "hydrocarbon + oxygen → carbon + water (limiting model)",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "atomFormula": "CH4",
+          "formulaLabel": "CH4",
+          "state": "g"
+        },
+        {
+          "coefficient": 1,
+          "atomFormula": "O2",
+          "formulaLabel": "O2",
+          "state": "g"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "atomFormula": "C",
+          "formulaLabel": "C",
+          "state": "s"
+        },
+        {
+          "coefficient": 2,
+          "atomFormula": "H2O",
+          "formulaLabel": "H2O",
+          "state": "g"
+        }
+      ],
+      "stateContext": "Alternative limiting methane model giving solid carbon and hot water vapour.",
+      "conditionalStateEquation": "CH4(g) + O2(g) → C(s) + 2H2O(g)",
+      "conditions": "Insufficient oxygen/poor mixing.",
+      "representationLimits": [
+        "Separate carbon model needed to avoid treating CO as the sole incomplete product; not a universal flame equation.",
+        "Carbon soot solid; water state depends on temperature."
+      ],
+      "sectionId": "equation-case-organic-hydrocarbon-incomplete-carbon",
+      "title": "Keep solid soot separate from gaseous carbon monoxide",
+      "representation": "finite-molecular",
+      "formulaEquation": "CH4 + O2 → C + 2H2O",
+      "existingOrganicSections": [
+        "hydrocarbon-incomplete-combustion"
+      ],
+      "practice": {
+        "question": "Balance ethane gas forming only solid carbon and hot water vapour, using whole-number coefficients and state symbols. Give the word equation and compare the carbon product with CO.",
+        "answer": "Ethane + oxygen → carbon + water in the stated limiting model. 2C₂H₆(g) + 3O₂(g) → 4C(s) + 6H₂O(g). Carbon is the solid soot product; CO is a different gaseous compound. Product choice and conditions must be supplied; a real flame can give mixtures."
+      },
+      "humanReviewed": false,
+      "practicalTrial": false
+    },
+    {
+      "id": "cracking",
+      "sourceIds": [
+        "4CH1:issue3:4.17"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "required-general-family",
+      "wordEquation": "long-chain alkane → shorter-chain alkane(s) + alkene(s)",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "atomFormula": "C12H26",
+          "formulaLabel": "C12H26",
+          "state": "g"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "atomFormula": "C8H18",
+          "formulaLabel": "C8H18",
+          "state": "g"
+        },
+        {
+          "coefficient": 2,
+          "atomFormula": "C2H4",
+          "formulaLabel": "C2H4",
+          "state": "g"
+        }
+      ],
+      "stateContext": "Specified illustrative dodecane vapour → octane vapour + ethene model at a hot catalyst; products before cooling.",
+      "conditionalStateEquation": "C12H26(g) → C8H18(g) + 2C2H4(g)",
+      "conditions": "Silica or alumina catalyst; 600–700 °C.",
+      "representationLimits": [
+        "Source names classes/conditions, not this feed/product combination. Several valid product sets exist; no unique isomer follows from formula alone.",
+        "Use vapour-phase feed at hot catalyst if a process equation requires states; ambient alkane states are not automatically process states."
+      ],
+      "sectionId": "equation-case-organic-cracking",
+      "title": "Use hot process states without claiming unique cracking products",
+      "representation": "finite-molecular",
+      "formulaEquation": "C12H26 → C8H18 + 2C2H4 (one illustrative atom-balanced product set)",
+      "existingOrganicSections": [
+        "cracking-process"
+      ],
+      "practice": {
+        "question": "Complete the invented hot-vapour cracking model C₁₄H₃₀(g) → C₈H₁₈(g) + 2X(g). Give X’s formula, its family if acyclic with one C=C, the word-product classes and course catalyst/temperature. Is the exact X isomer or only possible product mixture established?",
+        "answer": "X has C₃H₆ because the remaining C₆H₁₂ is shared by two molecules. With the supplied acyclic one-C=C condition and only three carbons, X is uniquely propene, CH₂=CHCH₃; reversing its drawing does not make another positional isomer. Long-chain alkane → shorter-chain alkane + alkene; use silica or alumina at 600–700°C. The stipulated exercise identifies X, but a balanced illustrative model does not prove that a real refinery produces only this mixture."
+      },
+      "humanReviewed": false,
+      "practicalTrial": false
+    },
+    {
+      "id": "alkane-monosubstitution",
+      "sourceIds": [
+        "4CH1:issue3:4.22"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "required-general-family",
+      "wordEquation": "alkane + halogen → monohalogenoalkane + hydrogen halide",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "atomFormula": "CH4",
+          "formulaLabel": "CH4",
+          "state": "g"
+        },
+        {
+          "coefficient": 1,
+          "atomFormula": "Cl2",
+          "formulaLabel": "Cl2",
+          "state": "g"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "atomFormula": "CH3Cl",
+          "formulaLabel": "CH3Cl",
+          "state": "g"
+        },
+        {
+          "coefficient": 1,
+          "atomFormula": "HCl",
+          "formulaLabel": "HCl",
+          "state": "g"
+        }
+      ],
+      "stateContext": "Methane/chlorine gas-phase mono-substitution model under UV; no aqueous dissolution stage.",
+      "conditionalStateEquation": "CH4(g) + Cl2(g) → CH3Cl(g) + HCl(g)",
+      "conditions": "Ultraviolet radiation; limited to mono-substitution.",
+      "representationLimits": [
+        "Mechanisms explicitly not required. Methane/chlorine is an example, not the only allowed pair. Larger unsymmetrical alkanes can yield positional products; further substitution is outside required scope, not impossible.",
+        "State of each chosen halogen/fuel depends on temperature and physical setup; do not infer all reactants aqueous."
+      ],
+      "sectionId": "equation-case-organic-alkane-monosubstitution",
+      "title": "Replace one hydrogen and retain the hydrogen halide",
+      "representation": "finite-molecular",
+      "formulaEquation": "CH4 + Cl2 → CH3Cl + HCl; CH4 + Br2 → CH3Br + HBr (illustrations)",
+      "existingOrganicSections": [
+        "alkane-monosubstitution"
+      ],
+      "practice": {
+        "question": "For the supplied ethane mono-bromination example, write word and balanced structural equations, name the condition and classify the change. Must every formula be labelled (aq), and is further substitution physically impossible?",
+        "answer": "Ethane + bromine → bromoethane + hydrogen bromide; CH₃CH₃ + Br₂ → CH₃CH₂Br + HBr under ultraviolet radiation. This is substitution. The question does not fix phase/solvent, so do not automatically assign (aq). Further substitution can occur; it is outside this chosen mono-substitution equation and course requirement."
+      },
+      "humanReviewed": false,
+      "practicalTrial": false
+    },
+    {
+      "id": "alkene-bromine-addition",
+      "sourceIds": [
+        "4CH1:issue3:4.27"
+      ],
+      "components": [
+        "1C",
+        "2C"
+      ],
+      "sourceDemand": "required-general-family",
+      "wordEquation": "alkene + bromine → dibromoalkane",
+      "reactants": [
+        {
+          "coefficient": 1,
+          "atomFormula": "C2H4",
+          "formulaLabel": "CH2=CH2",
+          "state": null
+        },
+        {
+          "coefficient": 1,
+          "atomFormula": "Br2",
+          "formulaLabel": "Br2",
+          "state": null
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "atomFormula": "C2H4Br2",
+          "formulaLabel": "CH2BrCH2Br",
+          "state": null
+        }
+      ],
+      "stateContext": "Primary lesson remains state-free structural addition because the note does not fix solvent or isolation conditions. A separately stipulated nonaqueous liquid-bromine/gaseous-ethene model could use the state variant below; it is not the bromine-water practical.",
+      "conditionalStateEquation": "CH2=CH2(g) + Br2(l) → CH2BrCH2Br(l) [only for the explicitly stipulated nonaqueous model]",
+      "conditions": "Bromine adds across C=C; UV is not the required initiation condition for this addition.",
+      "representationLimits": [
+        "Preserve skeleton and place one Br on each original double-bond carbon; no HBr in prescribed addition model. Aqueous test is not proof of isolating pure dibromo product. No mechanism or E/Z required.",
+        "Br2(aq) when explicitly bromine water; pure Br2(l) is a different reagent-state statement. Organic product phase depends on actual setup."
+      ],
+      "sectionId": "equation-case-organic-alkene-bromine-addition",
+      "title": "Preserve the alkene skeleton when bromine adds",
+      "representation": "structural-addition",
+      "formulaEquation": "CH2=CH2 + Br2 → CH2BrCH2Br (ethene illustration)",
+      "existingOrganicSections": [
+        "bromine-addition"
+      ],
+      "practice": {
+        "question": "Draw the structural equation for Br₂ adding to propene CH₂=CHCH₃ and classify the change. Explain why replacing a hydrogen or making HBr is wrong for this model. If the reagent is bromine water, may you automatically write Br₂(l) and claim an isolated pure dibromo liquid?",
+        "answer": "CH₂=CHCH₃ + Br₂ → CH₂BrCHBrCH₃, an addition reaction across the original C=C. No hydrogen is replaced and no HBr is a product of the stated addition model. Bromine water is Br₂(aq), not pure Br₂(l); decolourisation alone does not prove isolation of a pure dibromo product or uniquely identify any unrestricted unknown."
+      },
+      "humanReviewed": false,
+      "practicalTrial": false
+    },
+    {
+      "id": "carboxylic-acid-metal",
+      "sourceIds": [
+        "4CH1:issue3:4.36C"
+      ],
+      "components": [
+        "2C"
+      ],
+      "sourceDemand": "required-general-family",
+      "wordEquation": "carboxylic acid + suitable metal → carboxylate salt + hydrogen",
+      "reactants": [
+        {
+          "coefficient": 2,
+          "atomFormula": "C2H4O2",
+          "formulaLabel": "CH3COOH",
+          "state": "aq"
+        },
+        {
+          "coefficient": 1,
+          "atomFormula": "Mg",
+          "formulaLabel": "Mg",
+          "state": "s"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 1,
+          "atomFormula": "C4H6O4Mg",
+          "formulaLabel": "Mg(CH3COO)2",
+          "state": "aq"
+        },
+        {
+          "coefficient": 1,
+          "atomFormula": "H2",
+          "formulaLabel": "H2",
+          "state": "g"
+        }
+      ],
+      "stateContext": "Dilute aqueous ethanoic acid with magnesium; solution remains sufficiently dilute that magnesium ethanoate is dissolved.",
+      "conditionalStateEquation": "2CH3COOH(aq) + Mg(s) → Mg(CH3COO)2(aq) + H2(g)",
+      "conditions": "Source explicitly aqueous carboxylic acid; suitable reacting metal.",
+      "representationLimits": [
+        "No specifically named metal/acid pair in 4.36C. Magnesium/ethanoic acid illustrates charge/atom balance; do not claim copper reacts identically.",
+        "Acid(aq), metal(s), H2(g); salt(aq) only for a soluble salt under stated conditions."
+      ],
+      "sectionId": "equation-case-organic-carboxylic-acid-metal",
+      "title": "Use two carboxylate groups for a divalent metal — Paper 2C",
+      "representation": "finite-molecular",
+      "formulaEquation": "2CH3COOH + Mg → Mg(CH3COO)2 + H2 (illustration)",
+      "existingOrganicSections": [
+        "carboxylic-metal-reaction"
+      ],
+      "practice": {
+        "question": "For dilute aqueous propanoic acid and magnesium, write word and balanced structural formula equations with states, assuming the magnesium salt remains dissolved. Name the gas and explain why copper cannot automatically replace magnesium.",
+        "answer": "Propanoic acid + magnesium → magnesium propanoate + hydrogen. 2CH₃CH₂COOH(aq) + Mg(s) → Mg(CH₃CH₂COO)₂(aq) + H₂(g) for the stipulated dissolved-salt model. Hydrogen gives the supervised lighted-splint pop test. Magnesium lies above hydrogen in the relevant reactivity context; copper does not behave identically in this dilute non-oxidising acid example."
+      },
+      "humanReviewed": false,
+      "practicalTrial": false
+    },
+    {
+      "id": "carboxylic-acid-carbonate",
+      "sourceIds": [
+        "4CH1:issue3:4.36C"
+      ],
+      "components": [
+        "2C"
+      ],
+      "sourceDemand": "required-general-family",
+      "wordEquation": "carboxylic acid + metal carbonate → carboxylate salt + water + carbon dioxide",
+      "reactants": [
+        {
+          "coefficient": 2,
+          "atomFormula": "C2H4O2",
+          "formulaLabel": "CH3COOH",
+          "state": "aq"
+        },
+        {
+          "coefficient": 1,
+          "atomFormula": "Na2CO3",
+          "formulaLabel": "Na2CO3",
+          "state": "aq"
+        }
+      ],
+      "products": [
+        {
+          "coefficient": 2,
+          "atomFormula": "C2H3O2Na",
+          "formulaLabel": "CH3COONa",
+          "state": "aq"
+        },
+        {
+          "coefficient": 1,
+          "atomFormula": "H2O",
+          "formulaLabel": "H2O",
+          "state": "l"
+        },
+        {
+          "coefficient": 1,
+          "atomFormula": "CO2",
+          "formulaLabel": "CO2",
+          "state": "g"
+        }
+      ],
+      "stateContext": "Dilute aqueous ethanoic acid mixed with sodium carbonate solution; sodium ethanoate remains dissolved.",
+      "conditionalStateEquation": "2CH3COOH(aq) + Na2CO3(aq) → 2CH3COONa(aq) + H2O(l) + CO2(g)",
+      "conditions": "Aqueous carboxylic acid with metal carbonate.",
+      "representationLimits": [
+        "No particular carbonate is mandated. Retain carbonate carbon in CO2 and acid carbon in salt; bubbles alone do not distinguish H2 and CO2.",
+        "Acid(aq); carbonate(s) or (aq) as supplied; soluble salt(aq), H2O(l), CO2(g)."
+      ],
+      "sectionId": "equation-case-organic-carboxylic-acid-carbonate",
+      "title": "Conserve the carbonate carbon in carbon dioxide — Paper 2C",
+      "representation": "finite-molecular",
+      "formulaEquation": "2CH3COOH + Na2CO3 → 2CH3COONa + H2O + CO2 (illustration)",
+      "existingOrganicSections": [
+        "carboxylic-carbonate-reaction"
+      ],
+      "practice": {
+        "question": "Dilute ethanoic acid reacts with solid calcium carbonate and the calcium salt stays dissolved. Write word and balanced structural equations with states, give the appropriate gas test and distinguish this from the metal/acid gas.",
+        "answer": "Ethanoic acid + calcium carbonate → calcium ethanoate + water + carbon dioxide. 2CH₃COOH(aq) + CaCO₃(s) → Ca(CH₃COO)₂(aq) + H₂O(l) + CO₂(g). CO₂ clouds limewater in the appropriate supervised gas test; a suitable metal with the acid gives hydrogen instead. Bubbles alone do not identify either gas."
+      },
+      "humanReviewed": false,
+      "practicalTrial": false
+    }
+  ],
+  "representationGates": [
+    {
+      "id": "oxidation-shorthand",
+      "sourceIds": [
+        "4CH1:issue3:4.31C"
+      ],
+      "noteSectionIds": [
+        "ethanol-acid-oxidation"
+      ],
+      "decision": "[O] is an oxidising equivalent; no state symbol, no free-oxygen claim, and not a complete dichromate reagent equation. Formal atom accounting above cannot verify omitted K/Cr/S species. Do not add [O] to esterification."
+    },
+    {
+      "id": "polymer-deferred",
+      "sourceIds": [
+        "4CH1:issue3:4.44",
+        "4CH1:issue3:4.45",
+        "4CH1:issue3:4.46",
+        "4CH1:issue3:4.48C",
+        "4CH1:issue3:4.49C"
+      ],
+      "noteSectionIds": [
+        "addition-monomers",
+        "addition-repeat-drawings",
+        "recover-addition-monomer",
+        "polyester-condensation",
+        "polyester-repeat-drawing"
+      ],
+      "decision": "Defer from this finite ordinary-molecule slice. Four source-named addition repeats and the ethanedioic-acid/ethanediol polyester demand structural/displayed models with outward bonds and n; simple word/formula equations do not replace these drawings. Addition repeat notation omits initiator/end groups. Source polyester +2nH2O is ideal repeating-chain shorthand; one finite unclosed chain using n diacid and n diol has 2n−1 ester links/waters. No universal industrial conditions or states prescribed."
+    },
+    {
+      "id": "phase-concentration",
+      "sourceIds": [
+        "4CH1:issue3:1.25"
+      ],
+      "noteSectionIds": [
+        "ethanol-combustion",
+        "ethanol-acid-oxidation",
+        "ethanol-steam-route",
+        "ethanol-fermentation",
+        "ethyl-ethanoate-formation",
+        "hydrocarbon-complete-combustion",
+        "hydrocarbon-incomplete-combustion",
+        "cracking-process",
+        "alkane-monosubstitution",
+        "bromine-addition",
+        "carboxylic-metal-reaction",
+        "carboxylic-carbonate-reaction"
+      ],
+      "decision": "(aq) means dissolved in water, not concentrated or weak; (l) means liquid phase, not automatically pure. Concentration, temperature, pressure, solvent, mixing and collection stage can change valid states. Do not append a default state set to an unspecified equation. Equations with conditional alternatives need an explicit prompt context."
+    },
+    {
+      "id": "test-practical-reuse",
+      "sourceIds": [
+        "4CH1:issue3:4.28",
+        "4CH1:issue3:4.40C",
+        "4CH1:issue3:4.41C",
+        "4CH1:issue3:4.43C"
+      ],
+      "noteSectionIds": [
+        "bromine-water-test",
+        "ethyl-ethanoate-drawing",
+        "ester-naming",
+        "ester-practical-plan"
+      ],
+      "decision": "Bromine-water observations, ester structure drawing and chosen sample-preparation method remain their own evidence types. 4.43C allows an ester such as ethyl ethanoate; 4.39C specifically requires ethyl ethanoate. Do not count their shared chemistry as separate mandatory named routes or imply reverse ester deduction prescribes a hydrolysis mechanism."
+    }
+  ]
+}

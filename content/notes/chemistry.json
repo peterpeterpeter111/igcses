@@ -7,7 +7,18 @@
     18,
     19,
     20,
-    21
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
   ],
   "prerequisites": [
     "Matter is made of particles; a model represents selected features of reality."
@@ -26,7 +37,8 @@
     "Connect amount, mass and equation ratios, and calculate yield and formulae from evidence.",
     "Use solution and gas-volume calculations with exact units and Paper2C applicability.",
     "Explain charge carriers, predict molten/aqueous electrolysis products and balance half-equations for Paper 2C.",
-    "Evaluate electrolysis observations without treating graphite as universally inert."
+    "Evaluate electrolysis observations without treating graphite as universally inert.",
+    "Translate studied and supplied unfamiliar reaction identities into word, balanced formula or structural equations with justified state symbols and representation limits."
   ],
   "sections": [
     {
@@ -4154,6 +4166,1440 @@
         "Changing a substance formula to force a balance rather than changing coefficients.",
         "Treating every liquid as aqueous or ignoring the stated temperature/electrode conditions."
       ]
+    },
+    {
+      "id": "equation-case-organic-ethanol-combustion",
+      "title": "Count ethanol’s oxygen before balancing combustion — Paper 2C",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "ethanol combustion",
+        "word equation",
+        "state symbols"
+      ],
+      "paragraphs": [
+        "Word model: ethanol + oxygen → carbon dioxide + water.",
+        "Equation for the explicitly stated model: C₂H₅OH(l) + 3O₂(g) → 2CO₂(g) + 3H₂O(g).",
+        "Complete combustion in air or oxygen.",
+        "Liquid fuel supplied to combustion; products represented hot, before water condenses.",
+        "Include oxygen already present in ethanol; acid is not the complete-combustion product.",
+        "Ethanol(l) for a liquid-fuel starting model; O2(g), CO2(g); water(g) hot or (l) after cooling as stated."
+      ],
+      "example": {
+        "question": "Why does one ethanol need three O₂ rather than the amount for ethane?",
+        "steps": [
+          "Two carbon atoms require 2CO₂; six hydrogen atoms require 3H₂O.",
+          "The products contain seven oxygen atoms. Ethanol already supplies one, leaving six from 3O₂.",
+          "For a liquid-fuel/hot-product model, use ethanol(l), O₂(g), CO₂(g) and H₂O(g); condensed collected water is H₂O(l)."
+        ],
+        "explanation": "Check product identities, conserved atoms and the stated representation/conditions together. This authored model does not certify a measured reaction or activate an exam template."
+      },
+      "practice": {
+        "question": "In the complete-combustion model, 0.200 mol liquid ethanol burns and the products are considered hot. Give word and balanced formula equations with states, the required O₂ amount and the CO₂ amount. What changes in the water state label after cooling?",
+        "answer": "Ethanol + oxygen → carbon dioxide + water. C₂H₅OH(l) + 3O₂(g) → 2CO₂(g) + 3H₂O(g). O₂ required = 0.600 mol and CO₂ formed = 0.400 mol in the stated ideal model. Water may condense to H₂O(l) after cooling; the atom coefficients do not change.",
+        "explanation": "A transfer or correction exercise for the supplied context; alternative valid phase labels require their own stated physical conditions."
+      },
+      "commonMistakes": [
+        "Changing a formula subscript instead of a coefficient.",
+        "Treating a representative reaction or one phase model as the only permitted chemistry."
+      ]
+    },
+    {
+      "id": "equation-case-organic-ethanol-microbial-oxidation",
+      "title": "Keep microbial ethanol oxidation separate from fermentation — Paper 2C",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "ethanol microbial oxidation",
+        "word equation",
+        "state symbols"
+      ],
+      "paragraphs": [
+        "Word model: ethanol + oxygen → ethanoic acid + water.",
+        "Equation for the explicitly stated model: C₂H₅OH(aq) + O₂(g) → CH₃COOH(aq) + H₂O(l).",
+        "Oxygen from air with suitable microbial oxidation.",
+        "Aqueous ethanol mixture exposed to oxygen from air; overall gas-feed model, not a claim that O2 remains gaseous at the cellular reaction site.",
+        "Different starting material, oxygen condition and product from anaerobic glucose fermentation. Source does not prescribe a named organism or mechanism.",
+        "In an aqueous biological mixture ethanol/ethanoic acid may be (aq), O2(g) supplied from air and H2O(l); choose states from described setup."
+      ],
+      "example": {
+        "question": "Why does oxygen belong in this acid-forming route but not in the glucose-fermentation equation?",
+        "steps": [
+          "This route starts with ethanol and oxygen from air, not glucose.",
+          "The overall acid-forming model gives ethanoic acid and water, conserving C₂, H₆ and O₃.",
+          "Use (aq) for the ethanol and acid in the specified aqueous mixture; O₂(g) describes the air feed, not its microscopic dissolved state."
+        ],
+        "explanation": "Check product identities, conserved atoms and the stated representation/conditions together. This authored model does not certify a measured reaction or activate an exam template."
+      },
+      "practice": {
+        "question": "A route card for microbial conversion of aqueous ethanol to aqueous ethanoic acid reads “glucose → ethanol + CO₂; exclude air”. Replace the word and balanced equations, state the air condition and explain how your chosen O₂ state relates to the gas feed.",
+        "answer": "Ethanol + oxygen → ethanoic acid + water. For the stated aqueous-mixture/gas-feed model: C₂H₅OH(aq) + O₂(g) → CH₃COOH(aq) + H₂O(l), with suitable microbial oxidation and access to oxygen from air. O₂(g) labels the supplied gas; an explicitly dissolved-oxygen context can instead justify O₂(aq). Anaerobic glucose fermentation is a different route.",
+        "explanation": "A transfer or correction exercise for the supplied context; alternative valid phase labels require their own stated physical conditions."
+      },
+      "commonMistakes": [
+        "Changing a formula subscript instead of a coefficient.",
+        "Treating a representative reaction or one phase model as the only permitted chemistry."
+      ]
+    },
+    {
+      "id": "equation-case-organic-ethanol-dichromate-oxidation",
+      "title": "Read [O] as oxidising-equivalent shorthand — Paper 2C",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "ethanol dichromate oxidation",
+        "word equation",
+        "state symbols"
+      ],
+      "paragraphs": [
+        "Word model: ethanol + oxidising agent → ethanoic acid + water.",
+        "Oxidising-equivalent shorthand, not a full reagent equation: CH₃CH₂OH + 2[O] → CH₃COOH + H₂O (oxidising-equivalent shorthand).",
+        "Heat with potassium dichromate(VI) in dilute sulfuric acid; acid endpoint.",
+        "Oxidising-equivalent bookkeeping only. No complete reagent equation or state-symbol evidence is claimed.",
+        "Shorthand balances organic O equivalents but is not a full K/Cr/S/H reagent equation and cannot alone discharge every full-formula-equation demand of 1.25. No compulsory aldehyde isolation, Cr half-equation or mechanism is prescribed by 4.31C.",
+        "[O] has no ordinary reagent state symbol; it is not a bottle of monatomic oxygen. In a full reagent equation specify actual oxidant and resulting species, not [O](g)."
+      ],
+      "example": {
+        "question": "Does CH₃CH₂OH + 2[O] → CH₃COOH + H₂O describe every chromium-containing product?",
+        "steps": [
+          "The shorthand has C₂, H₆ and three oxygen equivalents on both sides.",
+          "[O] represents oxidising equivalents supplied here by acidified potassium dichromate(VI), with heating towards the acid product.",
+          "It omits potassium, chromium and sulfate species; it is not the full reagent equation or a gaseous atomic-oxygen reactant."
+        ],
+        "explanation": "Check product identities, conserved atoms and the stated representation/conditions together. This authored model does not certify a measured reaction or activate an exam template."
+      },
+      "practice": {
+        "question": "Correct “CH₃CH₂OH + 2[O](g) → CH₃COOH + H₂O is a complete reagent equation”. Give the word-model products and specified chemical conditions. Which evidence is still missing if a task asks for the full actual reagent equation?",
+        "answer": "Ethanol reacts with the oxidising agent to form ethanoic acid and water. Heat with potassium dichromate(VI) in dilute sulfuric acid towards the acid endpoint. Write CH₃CH₂OH + 2[O] → CH₃COOH + H₂O only as oxidising-equivalent shorthand, without a state on [O]. A full reagent equation must identify and balance the actual oxidant and its resulting species, including omitted K/Cr/S where molecular reagents are used; this shorthand does not supply that evidence.",
+        "explanation": "A transfer or correction exercise for the supplied context; alternative valid phase labels require their own stated physical conditions."
+      },
+      "commonMistakes": [
+        "Changing a formula subscript instead of a coefficient.",
+        "Treating a representative reaction or one phase model as the only permitted chemistry."
+      ]
+    },
+    {
+      "id": "equation-case-organic-ethene-hydration",
+      "title": "Assign steam and ethanol states at the hot catalyst — Paper 2C",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "ethene hydration",
+        "word equation",
+        "state symbols"
+      ],
+      "paragraphs": [
+        "Word model: ethene + steam → ethanol.",
+        "Equation for the explicitly stated model: C₂H₄(g) + H₂O(g) ⇌ C₂H₅OH(g).",
+        "Phosphoric acid catalyst; about 300 °C and about 60–70 atm.",
+        "Hot industrial gas-phase formation model; subsequent ethanol condensation is a separate physical step.",
+        "Catalyst is a condition, not consumed reactant; no complete single-pass conversion claim. Do not replace industrial states by room-temperature water(l) while calling it steam.",
+        "Ethene(g), steam(g), ethanol(g) in hot process model; condensation later gives ethanol(l)."
+      ],
+      "example": {
+        "question": "Why is writing water(l) inconsistent with the supplied steam-fed industrial model?",
+        "steps": [
+          "One ethene combines with one water to give one ethanol: C₂H₄ + H₂O ⇌ C₂H₅OH.",
+          "The specified process uses steam and hot gas-phase products; subsequent condensation is a separate physical stage.",
+          "Retain phosphoric acid, about 300°C and about 60–70 atm as conditions; the catalyst is not consumed in the overall equation."
+        ],
+        "explanation": "Check product identities, conserved atoms and the stated representation/conditions together. This authored model does not certify a measured reaction or activate an exam template."
+      },
+      "practice": {
+        "question": "A card says “C₂H₄(g) + H₂O(l) → C₂H₅OH(l), yeast, 30°C” for industrial steam hydration. Replace the word and balanced hot-process equations and all specified conditions. Does the equation prove complete single-pass conversion?",
+        "answer": "Ethene + steam ⇌ ethanol. C₂H₄(g) + H₂O(g) ⇌ C₂H₅OH(g) in the chosen hot process model, with phosphoric acid catalyst, about 300°C and about 60–70 atm. Yeast/30°C belong to fermentation. Reversibility means the equation does not prove complete single-pass conversion; cooling can later condense ethanol.",
+        "explanation": "A transfer or correction exercise for the supplied context; alternative valid phase labels require their own stated physical conditions."
+      },
+      "commonMistakes": [
+        "Changing a formula subscript instead of a coefficient.",
+        "Treating a representative reaction or one phase model as the only permitted chemistry."
+      ]
+    },
+    {
+      "id": "equation-case-organic-glucose-fermentation",
+      "title": "Balance a dissolved fermentation mixture — Paper 2C",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "glucose fermentation",
+        "word equation",
+        "state symbols"
+      ],
+      "paragraphs": [
+        "Word model: glucose → ethanol + carbon dioxide.",
+        "Equation for the explicitly stated model: C₆H₁₂O₆(aq) → 2C₂H₅OH(aq) + 2CO₂(g).",
+        "Enzymes in yeast; absence of air; optimum about 30 °C.",
+        "Aqueous glucose/yeast mixture; ethanol remains dissolved and CO2 escapes.",
+        "No-air condition does not mean sealing a gas-producing vessel. Optimum/denaturation reasoning in 4.33C reuses route; no new separately required equation.",
+        "Typical aqueous fermentation: glucose(aq), ethanol(aq), CO2(g). Product is an aqueous mixture, not automatically pure ethanol(l)."
+      ],
+      "example": {
+        "question": "What does one mole of converted glucose give in the ideal fermentation equation?",
+        "steps": [
+          "C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂ has C₆, H₁₂ and O₆ on each side.",
+          "Dissolved glucose forms dissolved ethanol and gaseous carbon dioxide in this aqueous-mixture model.",
+          "Use yeast enzymes, absence of air and an optimum about 30°C; a safe gas outlet is compatible with air exclusion."
+        ],
+        "explanation": "Check product identities, conserved atoms and the stated representation/conditions together. This authored model does not certify a measured reaction or activate an exam template."
+      },
+      "practice": {
+        "question": "Give word and state-labelled formula equations for aqueous glucose fermentation. From 0.150 mol glucose converted, calculate the ideal ethanol and CO₂ amounts. State the biological/air/temperature conditions and whether pure ethanol(l) has been obtained.",
+        "answer": "Glucose → ethanol + carbon dioxide. C₆H₁₂O₆(aq) → 2C₂H₅OH(aq) + 2CO₂(g). Each product amount is 0.300 mol in the ideal conversion model. Use enzymes in yeast, absence of air and an optimum about 30°C, with a suitable unblocked gas outlet. The liquid remains a mixture; this is not proof of pure liquid ethanol or a measured yield.",
+        "explanation": "A transfer or correction exercise for the supplied context; alternative valid phase labels require their own stated physical conditions."
+      },
+      "commonMistakes": [
+        "Changing a formula subscript instead of a coefficient.",
+        "Treating a representative reaction or one phase model as the only permitted chemistry."
+      ]
+    },
+    {
+      "id": "equation-case-organic-ethyl-ethanoate",
+      "title": "Retain both ester fragments and the water product — Paper 2C",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "ethyl ethanoate",
+        "word equation",
+        "state symbols"
+      ],
+      "paragraphs": [
+        "Word model: ethanol + ethanoic acid ⇌ ethyl ethanoate + water.",
+        "Equation for the explicitly stated model: CH₃CH₂OH(l) + CH₃COOH(l) ⇌ CH₃COOCH₂CH₃(l) + H₂O(l).",
+        "Acid catalyst. Controlled warming and concentrated sulfuric acid belong to the selected practical example, not an extra specified universal temperature/acid identity in 4.39C.",
+        "Explicit liquid-reactant esterification model before aqueous work-up; (l) describes phase and does not certify four separate pure layers.",
+        "Water is a product; acid catalyst not consumed. [O] is inappropriate: this is esterification, not oxidation. Structural equation preserves connectivity; molecular C4H8O2 alone does not identify ester isomer.",
+        "For an explicitly neat liquid-reactant model use (l) for the organic reagents/products and water; aqueous/diluted work-up must reflect its actual phases."
+      ],
+      "example": {
+        "question": "Which part of CH₃COOCH₂CH₃ comes from each starting molecule?",
+        "steps": [
+          "Ethanol supplies the oxygen-side ethyl group; ethanoic acid supplies the ethanoate part including its carbonyl carbon.",
+          "CH₃CH₂OH + CH₃COOH ⇌ CH₃COOCH₂CH₃ + H₂O conserves C₄, H₁₀ and O₃.",
+          "An acid catalyst assists the reversible formation; the chosen liquid-phase model does not imply separate pure layers or complete conversion."
+        ],
+        "explanation": "Check product identities, conserved atoms and the stated representation/conditions together. This authored model does not certify a measured reaction or activate an exam template."
+      },
+      "practice": {
+        "question": "For the stipulated liquid-reactant model, write word and structural equations with states for ethyl ethanoate formation. Identify the acid/alcohol-derived name parts, water and catalyst role. Explain why C₄H₈O₂ alone is insufficient to identify this ester.",
+        "answer": "Ethanol + ethanoic acid ⇌ ethyl ethanoate + water. CH₃CH₂OH(l) + CH₃COOH(l) ⇌ CH₃COOCH₂CH₃(l) + H₂O(l), with an acid catalyst. Ethyl comes from ethanol; ethanoate from ethanoic acid. The catalyst is not a consumed overall reactant. C₄H₈O₂ records atom counts but not the CH₃C(=O)OCH₂CH₃ connectivity or a pure isolated sample.",
+        "explanation": "A transfer or correction exercise for the supplied context; alternative valid phase labels require their own stated physical conditions."
+      },
+      "commonMistakes": [
+        "Changing a formula subscript instead of a coefficient.",
+        "Treating a representative reaction or one phase model as the only permitted chemistry."
+      ],
+      "diagram": {
+        "src": "/diagrams/chemistry-ethyl-ethanoate.svg",
+        "alt": "Full displayed ethyl ethanoate with CH3 connected to the carbonyl carbon and the single-bond oxygen connected to CH2CH3; every hydrogen shown.",
+        "caption": "Acid-derived CH₃C(=O) and alcohol-derived OCH₂CH₃ connect through the ester link."
+      }
+    },
+    {
+      "id": "equation-case-organic-hydrocarbon-complete",
+      "title": "Balance a chosen complete-combustion family example",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "hydrocarbon complete",
+        "word equation",
+        "state symbols"
+      ],
+      "paragraphs": [
+        "Word model: hydrocarbon + oxygen → carbon dioxide + water.",
+        "Equation for the explicitly stated model: C₃H₈(g) + 5O₂(g) → 3CO₂(g) + 4H₂O(g).",
+        "Sufficient oxygen; burning in air.",
+        "Illustrative propane gas burned completely; hot products before condensation.",
+        "Propane is an authored illustration, not a uniquely prescribed named fuel. Preserve coefficients versus subscripts.",
+        "O2 and CO2 gases; fuel state depends on chosen hydrocarbon/temperature. H2O(g) near flame versus H2O(l) after cooling."
+      ],
+      "example": {
+        "question": "How do carbon, hydrogen and then oxygen determine the propane coefficients?",
+        "steps": [
+          "C₃H₈ supplies three carbons for 3CO₂ and eight hydrogens for 4H₂O.",
+          "The products need ten oxygen atoms, supplied by 5O₂.",
+          "The gas-fuel/hot-product model uses (g) throughout; propane is a chosen family example, not the only prescribed fuel."
+        ],
+        "explanation": "Check product identities, conserved atoms and the stated representation/conditions together. This authored model does not certify a measured reaction or activate an exam template."
+      },
+      "practice": {
+        "question": "Use a stated butane-vapour/hot-product model to write word and smallest-whole-number formula equations for complete combustion of C₄H₁₀. Give C/H/O totals and the oxygen condition. Does balance prove an actual burner burns completely?",
+        "answer": "Butane + oxygen → carbon dioxide + water. 2C₄H₁₀(g) + 13O₂(g) → 8CO₂(g) + 10H₂O(g), with sufficient oxygen and appropriate mixing. Totals are C₈, H₂₀ and O₂₆ on each side. Balance verifies the stated product model; it does not measure the performance of an actual burner.",
+        "explanation": "A transfer or correction exercise for the supplied context; alternative valid phase labels require their own stated physical conditions."
+      },
+      "commonMistakes": [
+        "Changing a formula subscript instead of a coefficient.",
+        "Treating a representative reaction or one phase model as the only permitted chemistry."
+      ]
+    },
+    {
+      "id": "equation-case-organic-hydrocarbon-incomplete-co",
+      "title": "Balance the specified carbon-monoxide product model",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "hydrocarbon incomplete co",
+        "word equation",
+        "state symbols"
+      ],
+      "paragraphs": [
+        "Word model: hydrocarbon + oxygen → carbon monoxide + water (limiting model).",
+        "Equation for the explicitly stated model: 2CH₄(g) + 3O₂(g) → 2CO(g) + 4H₂O(g).",
+        "Insufficient oxygen/poor mixing.",
+        "Illustrative limiting methane model in which only CO and water are specified products; hot products.",
+        "One possible product set; real incomplete products can be mixtures including CO2, carbon and water. Methane is illustrative.",
+        "CO gas; water state depends on temperature."
+      ],
+      "example": {
+        "question": "Why is 2CH₄ + 3O₂ → 2CO + 4H₂O a limiting incomplete-combustion model?",
+        "steps": [
+          "The supplied products are carbon monoxide and water, not carbon dioxide.",
+          "Their totals are C₂, H₈ and O₆, matching two methane and three oxygen molecules.",
+          "Real incomplete combustion can give mixed products; CO is a gas and is not black soot."
+        ],
+        "explanation": "Check product identities, conserved atoms and the stated representation/conditions together. This authored model does not certify a measured reaction or activate an exam template."
+      },
+      "practice": {
+        "question": "For a stipulated propane-gas model giving only CO and hot water vapour, write word and smallest-whole-number formula equations with states. Explain why a flame without visible soot does not prove absence of CO.",
+        "answer": "Propane + oxygen → carbon monoxide + water for the stipulated limiting model. 2C₃H₈(g) + 7O₂(g) → 6CO(g) + 8H₂O(g). Carbon monoxide is an invisible gas, not soot, so the absence of visible solid carbon is not evidence of no CO. Real incomplete product mixtures need not follow this one limiting equation.",
+        "explanation": "A transfer or correction exercise for the supplied context; alternative valid phase labels require their own stated physical conditions."
+      },
+      "commonMistakes": [
+        "Changing a formula subscript instead of a coefficient.",
+        "Treating a representative reaction or one phase model as the only permitted chemistry."
+      ]
+    },
+    {
+      "id": "equation-case-organic-hydrocarbon-incomplete-carbon",
+      "title": "Keep solid soot separate from gaseous carbon monoxide",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "hydrocarbon incomplete carbon",
+        "word equation",
+        "state symbols"
+      ],
+      "paragraphs": [
+        "Word model: hydrocarbon + oxygen → carbon + water (limiting model).",
+        "Equation for the explicitly stated model: CH₄(g) + O₂(g) → C(s) + 2H₂O(g).",
+        "Insufficient oxygen/poor mixing.",
+        "Alternative limiting methane model giving solid carbon and hot water vapour.",
+        "Separate carbon model needed to avoid treating CO as the sole incomplete product; not a universal flame equation.",
+        "Carbon soot solid; water state depends on temperature."
+      ],
+      "example": {
+        "question": "What changes if the chosen methane products are carbon and water rather than CO and water?",
+        "steps": [
+          "CH₄ + O₂ → C + 2H₂O conserves C₁, H₄ and O₂.",
+          "Carbon soot is labelled (s); water is (g) for the hot-product model.",
+          "Different supplied products require different oxygen coefficients; neither incomplete model is universal."
+        ],
+        "explanation": "Check product identities, conserved atoms and the stated representation/conditions together. This authored model does not certify a measured reaction or activate an exam template."
+      },
+      "practice": {
+        "question": "Balance ethane gas forming only solid carbon and hot water vapour, using whole-number coefficients and state symbols. Give the word equation and compare the carbon product with CO.",
+        "answer": "Ethane + oxygen → carbon + water in the stated limiting model. 2C₂H₆(g) + 3O₂(g) → 4C(s) + 6H₂O(g). Carbon is the solid soot product; CO is a different gaseous compound. Product choice and conditions must be supplied; a real flame can give mixtures.",
+        "explanation": "A transfer or correction exercise for the supplied context; alternative valid phase labels require their own stated physical conditions."
+      },
+      "commonMistakes": [
+        "Changing a formula subscript instead of a coefficient.",
+        "Treating a representative reaction or one phase model as the only permitted chemistry."
+      ]
+    },
+    {
+      "id": "equation-case-organic-cracking",
+      "title": "Use hot process states without claiming unique cracking products",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "cracking",
+        "word equation",
+        "state symbols"
+      ],
+      "paragraphs": [
+        "Word model: long-chain alkane → shorter-chain alkane(s) + alkene(s).",
+        "Equation for the explicitly stated model: C₁₂H₂₆(g) → C₈H₁₈(g) + 2C₂H₄(g).",
+        "Silica or alumina catalyst; 600–700 °C.",
+        "Specified illustrative dodecane vapour → octane vapour + ethene model at a hot catalyst; products before cooling.",
+        "Source names classes/conditions, not this feed/product combination. Several valid product sets exist; no unique isomer follows from formula alone.",
+        "Use vapour-phase feed at hot catalyst if a process equation requires states; ambient alkane states are not automatically process states."
+      ],
+      "example": {
+        "question": "How does C₁₂H₂₆ → C₈H₁₈ + 2C₂H₄ preserve every atom?",
+        "steps": [
+          "Carbon: 12 = 8 + 2×2; hydrogen: 26 = 18 + 2×4.",
+          "For the stipulated hot catalyst region, the feed and these products are vapours; cooled octane need not retain (g).",
+          "Use silica or alumina and 600–700°C for the own catalytic model; the equation is one possible product set."
+        ],
+        "explanation": "Check product identities, conserved atoms and the stated representation/conditions together. This authored model does not certify a measured reaction or activate an exam template."
+      },
+      "practice": {
+        "question": "Complete the invented hot-vapour cracking model C₁₄H₃₀(g) → C₈H₁₈(g) + 2X(g). Give X’s formula, its family if acyclic with one C=C, the word-product classes and course catalyst/temperature. Is the exact X isomer or only possible product mixture established?",
+        "answer": "X has C₃H₆ because the remaining C₆H₁₂ is shared by two molecules. With the supplied acyclic one-C=C condition and only three carbons, X is uniquely propene, CH₂=CHCH₃; reversing its drawing does not make another positional isomer. Long-chain alkane → shorter-chain alkane + alkene; use silica or alumina at 600–700°C. The stipulated exercise identifies X, but a balanced illustrative model does not prove that a real refinery produces only this mixture.",
+        "explanation": "A transfer or correction exercise for the supplied context; alternative valid phase labels require their own stated physical conditions."
+      },
+      "commonMistakes": [
+        "Changing a formula subscript instead of a coefficient.",
+        "Treating a representative reaction or one phase model as the only permitted chemistry."
+      ]
+    },
+    {
+      "id": "equation-case-organic-alkane-monosubstitution",
+      "title": "Replace one hydrogen and retain the hydrogen halide",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "alkane monosubstitution",
+        "word equation",
+        "state symbols"
+      ],
+      "paragraphs": [
+        "Word model: alkane + halogen → monohalogenoalkane + hydrogen halide.",
+        "Equation for the explicitly stated model: CH₄(g) + Cl₂(g) → CH₃Cl(g) + HCl(g).",
+        "Ultraviolet radiation; limited to mono-substitution.",
+        "Methane/chlorine gas-phase mono-substitution model under UV; no aqueous dissolution stage.",
+        "Mechanisms explicitly not required. Methane/chlorine is an example, not the only allowed pair. Larger unsymmetrical alkanes can yield positional products; further substitution is outside required scope, not impossible.",
+        "State of each chosen halogen/fuel depends on temperature and physical setup; do not infer all reactants aqueous."
+      ],
+      "example": {
+        "question": "Why does methane chlorination form both CH₃Cl and HCl in the mono-substitution model?",
+        "steps": [
+          "One chlorine replaces one methane hydrogen.",
+          "The removed hydrogen combines with the other chlorine atom: CH₄ + Cl₂ → CH₃Cl + HCl.",
+          "UV is the required condition for this alkane model; mono-substitution is the course scope, not proof that further substitution is impossible."
+        ],
+        "explanation": "Check product identities, conserved atoms and the stated representation/conditions together. This authored model does not certify a measured reaction or activate an exam template."
+      },
+      "practice": {
+        "question": "For the supplied ethane mono-bromination example, write word and balanced structural equations, name the condition and classify the change. Must every formula be labelled (aq), and is further substitution physically impossible?",
+        "answer": "Ethane + bromine → bromoethane + hydrogen bromide; CH₃CH₃ + Br₂ → CH₃CH₂Br + HBr under ultraviolet radiation. This is substitution. The question does not fix phase/solvent, so do not automatically assign (aq). Further substitution can occur; it is outside this chosen mono-substitution equation and course requirement.",
+        "explanation": "A transfer or correction exercise for the supplied context; alternative valid phase labels require their own stated physical conditions."
+      },
+      "commonMistakes": [
+        "Changing a formula subscript instead of a coefficient.",
+        "Treating a representative reaction or one phase model as the only permitted chemistry."
+      ]
+    },
+    {
+      "id": "equation-case-organic-alkene-bromine-addition",
+      "title": "Preserve the alkene skeleton when bromine adds",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "alkene bromine addition",
+        "word equation",
+        "state symbols"
+      ],
+      "paragraphs": [
+        "Word model: alkene + bromine → dibromoalkane.",
+        "Structural addition model: CH₂=CH₂ + Br₂ → CH₂BrCH₂Br (ethene illustration).",
+        "Only for an explicitly stipulated nonaqueous ethene-gas/liquid-bromine model: CH₂=CH₂(g) + Br₂(l) → CH₂BrCH₂Br(l) [only for the explicitly stipulated nonaqueous model]. This is not the aqueous bromine-water test.",
+        "Bromine adds across C=C; UV is not the required initiation condition for this addition.",
+        "Primary lesson remains state-free structural addition because the note does not fix solvent or isolation conditions. A separately stipulated nonaqueous liquid-bromine/gaseous-ethene model could use the state variant below; it is not the bromine-water practical.",
+        "Preserve skeleton and place one Br on each original double-bond carbon; no HBr in prescribed addition model. Aqueous test is not proof of isolating pure dibromo product. No mechanism or E/Z required.",
+        "Br2(aq) when explicitly bromine water; pure Br2(l) is a different reagent-state statement. Organic product phase depends on actual setup."
+      ],
+      "example": {
+        "question": "Where do the two bromine atoms go when ethene becomes a dibromo product?",
+        "steps": [
+          "Open the C=C to a single C–C bond while retaining the four hydrogens.",
+          "Add one Br to each carbon: CH₂=CH₂ + Br₂ → CH₂BrCH₂Br.",
+          "This is addition, with no HBr by-product in the stated model. Solvent and collection conditions determine valid phase labels."
+        ],
+        "explanation": "Check product identities, conserved atoms and the stated representation/conditions together. This authored model does not certify a measured reaction or activate an exam template."
+      },
+      "practice": {
+        "question": "Draw the structural equation for Br₂ adding to propene CH₂=CHCH₃ and classify the change. Explain why replacing a hydrogen or making HBr is wrong for this model. If the reagent is bromine water, may you automatically write Br₂(l) and claim an isolated pure dibromo liquid?",
+        "answer": "CH₂=CHCH₃ + Br₂ → CH₂BrCHBrCH₃, an addition reaction across the original C=C. No hydrogen is replaced and no HBr is a product of the stated addition model. Bromine water is Br₂(aq), not pure Br₂(l); decolourisation alone does not prove isolation of a pure dibromo product or uniquely identify any unrestricted unknown.",
+        "explanation": "A transfer or correction exercise for the supplied context; alternative valid phase labels require their own stated physical conditions."
+      },
+      "commonMistakes": [
+        "Changing a formula subscript instead of a coefficient.",
+        "Treating a representative reaction or one phase model as the only permitted chemistry."
+      ]
+    },
+    {
+      "id": "equation-case-organic-carboxylic-acid-metal",
+      "title": "Use two carboxylate groups for a divalent metal — Paper 2C",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "carboxylic acid metal",
+        "word equation",
+        "state symbols"
+      ],
+      "paragraphs": [
+        "Word model: carboxylic acid + suitable metal → carboxylate salt + hydrogen.",
+        "Equation for the explicitly stated model: 2CH₃COOH(aq) + Mg(s) → Mg(CH₃COO)₂(aq) + H₂(g).",
+        "Source explicitly aqueous carboxylic acid; suitable reacting metal.",
+        "Dilute aqueous ethanoic acid with magnesium; solution remains sufficiently dilute that magnesium ethanoate is dissolved.",
+        "No specifically named metal/acid pair in 4.36C. Magnesium/ethanoic acid illustrates charge/atom balance; do not claim copper reacts identically.",
+        "Acid(aq), metal(s), H2(g); salt(aq) only for a soluble salt under stated conditions."
+      ],
+      "example": {
+        "question": "Why does magnesium ethanoate need two CH₃COO groups?",
+        "steps": [
+          "Mg²⁺ requires two singly charged ethanoate ions for an electrically neutral salt.",
+          "Two acidic O–H hydrogens form H₂ while the carbon skeletons remain: 2CH₃COOH + Mg → Mg(CH₃COO)₂ + H₂.",
+          "For the specified dilute aqueous model, the acid/salt are (aq), magnesium (s) and hydrogen (g)."
+        ],
+        "explanation": "Check product identities, conserved atoms and the stated representation/conditions together. This authored model does not certify a measured reaction or activate an exam template."
+      },
+      "practice": {
+        "question": "For dilute aqueous propanoic acid and magnesium, write word and balanced structural formula equations with states, assuming the magnesium salt remains dissolved. Name the gas and explain why copper cannot automatically replace magnesium.",
+        "answer": "Propanoic acid + magnesium → magnesium propanoate + hydrogen. 2CH₃CH₂COOH(aq) + Mg(s) → Mg(CH₃CH₂COO)₂(aq) + H₂(g) for the stipulated dissolved-salt model. Hydrogen gives the supervised lighted-splint pop test. Magnesium lies above hydrogen in the relevant reactivity context; copper does not behave identically in this dilute non-oxidising acid example.",
+        "explanation": "A transfer or correction exercise for the supplied context; alternative valid phase labels require their own stated physical conditions."
+      },
+      "commonMistakes": [
+        "Changing a formula subscript instead of a coefficient.",
+        "Treating a representative reaction or one phase model as the only permitted chemistry."
+      ]
+    },
+    {
+      "id": "equation-case-organic-carboxylic-acid-carbonate",
+      "title": "Conserve the carbonate carbon in carbon dioxide — Paper 2C",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "carboxylic acid carbonate",
+        "word equation",
+        "state symbols"
+      ],
+      "paragraphs": [
+        "Word model: carboxylic acid + metal carbonate → carboxylate salt + water + carbon dioxide.",
+        "Equation for the explicitly stated model: 2CH₃COOH(aq) + Na₂CO₃(aq) → 2CH₃COONa(aq) + H₂O(l) + CO₂(g).",
+        "Aqueous carboxylic acid with metal carbonate.",
+        "Dilute aqueous ethanoic acid mixed with sodium carbonate solution; sodium ethanoate remains dissolved.",
+        "No particular carbonate is mandated. Retain carbonate carbon in CO2 and acid carbon in salt; bubbles alone do not distinguish H2 and CO2.",
+        "Acid(aq); carbonate(s) or (aq) as supplied; soluble salt(aq), H2O(l), CO2(g)."
+      ],
+      "example": {
+        "question": "Where do the five carbons go in the sodium-carbonate/ethanoic-acid example?",
+        "steps": [
+          "Two CH₃COOH molecules supply four carbons that stay in two ethanoate ions.",
+          "The carbonate’s one carbon leaves as CO₂; water is also formed.",
+          "2CH₃COOH + Na₂CO₃ → 2CH₃COONa + H₂O + CO₂ needs two acidic hydrogen equivalents per carbonate."
+        ],
+        "explanation": "Check product identities, conserved atoms and the stated representation/conditions together. This authored model does not certify a measured reaction or activate an exam template."
+      },
+      "practice": {
+        "question": "Dilute ethanoic acid reacts with solid calcium carbonate and the calcium salt stays dissolved. Write word and balanced structural equations with states, give the appropriate gas test and distinguish this from the metal/acid gas.",
+        "answer": "Ethanoic acid + calcium carbonate → calcium ethanoate + water + carbon dioxide. 2CH₃COOH(aq) + CaCO₃(s) → Ca(CH₃COO)₂(aq) + H₂O(l) + CO₂(g). CO₂ clouds limewater in the appropriate supervised gas test; a suitable metal with the acid gives hydrogen instead. Bubbles alone do not identify either gas.",
+        "explanation": "A transfer or correction exercise for the supplied context; alternative valid phase labels require their own stated physical conditions."
+      },
+      "commonMistakes": [
+        "Changing a formula subscript instead of a coefficient.",
+        "Treating a representative reaction or one phase model as the only permitted chemistry."
+      ]
+    },
+    {
+      "id": "equation-family-inorganic-group1-water",
+      "title": "Balance the three named alkali-metal water models",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "group1 water",
+        "word equation",
+        "balanced equation",
+        "state symbols"
+      ],
+      "paragraphs": [
+        "These are specified named contexts or explicitly selected family examples. Match the reactants, products and physical conditions; a balanced model alone does not establish a measured practical result.",
+        "Lithium water: lithium + water → lithium hydroxide + hydrogen.",
+        "2Li(s) + 2H₂O(l) → 2LiOH(aq) + H₂(g).",
+        "Cold-water school model; state of metal describes initial sample.",
+        "No uniform air-tarnish equation inferred; comparison is supervised context, no practical trial.",
+        "Sodium water: sodium + water → sodium hydroxide + hydrogen.",
+        "2Na(s) + 2H₂O(l) → 2NaOH(aq) + H₂(g).",
+        "Cold-water school model; state of metal describes initial sample.",
+        "No uniform air-tarnish equation inferred; comparison is supervised context, no practical trial.",
+        "Potassium water: potassium + water → potassium hydroxide + hydrogen.",
+        "2K(s) + 2H₂O(l) → 2KOH(aq) + H₂(g).",
+        "Cold-water school model; state of metal describes initial sample.",
+        "No uniform air-tarnish equation inferred; comparison is supervised context, no practical trial."
+      ],
+      "example": {
+        "question": "Why does the sodium equation require two waters and produce H2 rather than H?",
+        "steps": [
+          "Two sodium atoms form two sodium hydroxide units. Two waters supply their two oxygen atoms and four hydrogens.",
+          "Two hydrogens remain in two NaOH units; the other two form one H₂ molecule.",
+          "The solid-metal labels describe the initial samples; this is not a fixed-phase description of every moment of the vigorous reaction."
+        ],
+        "explanation": "Conserve every element, retain the actual chemical identities and distinguish the chosen state model from other conditions."
+      },
+      "practice": {
+        "question": "Write word and balanced state-labelled equations for potassium and cold water in the selected school model. From 0.060 mol potassium reacting completely, give the ideal H₂ amount. May you copy this water equation to claim every air-tarnish product is K₂O?",
+        "answer": "Potassium + water → potassium hydroxide + hydrogen. 2K(s) + 2H₂O(l) → 2KOH(aq) + H₂(g); the ideal H₂ amount is 0.030 mol. The metal state labels its initial sample. Air oxidation is a different context and can involve different products; this water equation does not establish a universal K₂O tarnish equation.",
+        "explanation": "Original fixed lesson exercise. It is not an examiner-calibrated generative template, practical trial or unrestricted unknown-identification claim."
+      },
+      "commonMistakes": [
+        "Treating a suitable representative reagent as the only reagent permitted by the specification.",
+        "Using the pure element’s room-temperature state for a dissolved, heated or collected-product context."
+      ]
+    },
+    {
+      "id": "equation-family-inorganic-halogen-displacement",
+      "title": "Keep dissolved halogens and spectator ions distinct",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "halogen displacement",
+        "word equation",
+        "balanced equation",
+        "state symbols"
+      ],
+      "paragraphs": [
+        "These are specified named contexts or explicitly selected family examples. Match the reactants, products and physical conditions; a balanced model alone does not establish a measured practical result.",
+        "Cl displaces br: chlorine + sodium bromide → sodium chloride + bromine.",
+        "Cl₂(aq) + 2NaBr(aq) → 2NaCl(aq) + Br₂(aq).",
+        "Dilute aqueous displacement model; product concentration chosen within solubility.",
+        "Na+ spectator is editorial choice. Iodine can precipitate or form other dissolved species at other concentrations; do not transfer room-temperature pure-element states. Reverse displacement unsupported.",
+        "Cl displaces i: chlorine + sodium iodide → sodium chloride + iodine.",
+        "Cl₂(aq) + 2NaI(aq) → 2NaCl(aq) + I₂(aq).",
+        "Dilute aqueous displacement model; product concentration chosen within solubility.",
+        "Na+ spectator is editorial choice. Iodine can precipitate or form other dissolved species at other concentrations; do not transfer room-temperature pure-element states. Reverse displacement unsupported.",
+        "Br displaces i: bromine + sodium iodide → sodium bromide + iodine.",
+        "Br₂(aq) + 2NaI(aq) → 2NaBr(aq) + I₂(aq).",
+        "Dilute aqueous displacement model; product concentration chosen within solubility.",
+        "Na+ spectator is editorial choice. Iodine can precipitate or form other dissolved species at other concentrations; do not transfer room-temperature pure-element states. Reverse displacement unsupported."
+      ],
+      "example": {
+        "question": "What changes in chlorine plus aqueous sodium bromide, and which sodium ions are spectators?",
+        "steps": [
+          "Chlorine displaces bromide: Cl₂ + 2Br⁻ → 2Cl⁻ + Br₂.",
+          "The molecular salt model uses two NaBr and two NaCl; sodium does not become a metal.",
+          "All (aq) labels refer to the stipulated dilute dissolved system, not the pure elements at room temperature."
+        ],
+        "explanation": "Conserve every element, retain the actual chemical identities and distinguish the chosen state model from other conditions."
+      },
+      "practice": {
+        "question": "Write word and balanced equations for bromine displacing iodide from dilute sodium iodide, with iodine remaining dissolved. Can iodine instead displace chloride under the same simple model? Explain the state of the produced iodine.",
+        "answer": "Bromine + sodium iodide → sodium bromide + iodine. Br₂(aq) + 2NaI(aq) → 2NaBr(aq) + I₂(aq). Iodine is less reactive than chlorine, so it does not displace chloride in this model. I₂(aq) is justified by the stated dilute dissolved-product context; pure iodine at room temperature is solid, and other concentrations can give precipitate or additional dissolved iodine species.",
+        "explanation": "Original fixed lesson exercise. It is not an examiner-calibrated generative template, practical trial or unrestricted unknown-identification claim."
+      },
+      "commonMistakes": [
+        "Treating a suitable representative reagent as the only reagent permitted by the specification.",
+        "Using the pure element’s room-temperature state for a dissolved, heated or collected-product context."
+      ]
+    },
+    {
+      "id": "equation-family-inorganic-combustion",
+      "title": "Distinguish hot water from the sulfur dioxide product",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "combustion",
+        "word equation",
+        "balanced equation",
+        "state symbols"
+      ],
+      "paragraphs": [
+        "These are specified named contexts or explicitly selected family examples. Match the reactants, products and physical conditions; a balanced model alone does not establish a measured practical result.",
+        "Hydrogen combustion: hydrogen + oxygen → water.",
+        "2H₂(g) + O₂(g) → 2H₂O(g).",
+        "Burning hydrogen; hot product region.",
+        "Condensation later yields liquid water; same model supports pop test without a duplicate entry.",
+        "Sulfur combustion: sulfur + oxygen → sulfur dioxide.",
+        "S(s) + O₂(g) → SO₂(g).",
+        "Ignited sulfur in oxygen; atomic S school representation.",
+        "If S8 supplied use S8 + 8O2 → 8SO2; not another required case."
+      ],
+      "example": {
+        "question": "Why does burning H2 require a coefficient2, while S + O2 → SO2 already balances?",
+        "steps": [
+          "Hydrogen and oxygen are diatomic: 2H₂ + O₂ gives 2H₂O, with four H and two O atoms.",
+          "The chosen atomic-S school model uses S + O₂ → SO₂.",
+          "If the supplied starting formula is S₈, the balanced version is S₈ + 8O₂ → 8SO₂; never change the given formula silently."
+        ],
+        "explanation": "Conserve every element, retain the actual chemical identities and distinguish the chosen state model from other conditions."
+      },
+      "practice": {
+        "question": "Write word and balanced state-labelled equations for hydrogen burning, considering the product hot. State the water label after cooling. Separately balance a supplied S₈ sample burning to SO₂. Is SO₂ a product of pure hydrogen combustion?",
+        "answer": "Hydrogen + oxygen → water; 2H₂(g) + O₂(g) → 2H₂O(g) for hot steam, with H₂O(l) possible after cooling. S₈ + 8O₂ → 8SO₂ conserves the supplied sulfur molecule. SO₂ requires sulfur in the reacting materials and is not a product of pure H₂/O₂ combustion.",
+        "explanation": "Original fixed lesson exercise. It is not an examiner-calibrated generative template, practical trial or unrestricted unknown-identification claim."
+      },
+      "commonMistakes": [
+        "Treating a suitable representative reagent as the only reagent permitted by the specification.",
+        "Using the pure element’s room-temperature state for a dissolved, heated or collected-product context."
+      ]
+    },
+    {
+      "id": "equation-family-inorganic-thermal-carbonate",
+      "title": "Do not exchange pure and basic copper carbonate formulae",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "thermal carbonate",
+        "word equation",
+        "balanced equation",
+        "state symbols"
+      ],
+      "paragraphs": [
+        "These are specified named contexts or explicitly selected family examples. Match the reactants, products and physical conditions; a balanced model alone does not establish a measured practical result.",
+        "Copper carbonate decomposition: copper(II) carbonate → copper(II) oxide + carbon dioxide.",
+        "CuCO₃(s) → CuO(s) + CO₂(g).",
+        "Heating specified pure-CuCO3 model.",
+        "Basic copper carbonate differs: supplied CuCO3·Cu(OH)2 gives 2CuO + CO2 + H2O; not silently interchangeable."
+      ],
+      "example": {
+        "question": "How do the atom counts support CuCO3 → CuO + CO2?",
+        "steps": [
+          "The one copper remains in CuO and the carbonate carbon forms CO₂.",
+          "The three oxygen atoms become one in CuO and two in CO₂.",
+          "A basic carbonate sample has additional copper/hydroxide atoms and cannot use this pure-CuCO₃ equation unchanged."
+        ],
+        "explanation": "Conserve every element, retain the actual chemical identities and distinguish the chosen state model from other conditions."
+      },
+      "practice": {
+        "question": "Write word and balanced state-labelled equations for heating the stated pure CuCO₃ model. Then, if a different supplied sample is CuCO₃·Cu(OH)₂, balance its decomposition to CuO, CO₂ and hot water vapour. Explain why both samples cannot use the first equation unchanged.",
+        "answer": "Copper(II) carbonate → copper(II) oxide + carbon dioxide; CuCO₃(s) → CuO(s) + CO₂(g). For the explicitly different basic carbonate: CuCO₃·Cu(OH)₂(s) → 2CuO(s) + CO₂(g) + H₂O(g) in the hot-water-product model. The basic formula contains two Cu atoms and hydroxide; the pure-carbonate formula does not.",
+        "explanation": "Original fixed lesson exercise. It is not an examiner-calibrated generative template, practical trial or unrestricted unknown-identification claim."
+      },
+      "commonMistakes": [
+        "Treating a suitable representative reagent as the only reagent permitted by the specification.",
+        "Using the pure element’s room-temperature state for a dissolved, heated or collected-product context."
+      ]
+    },
+    {
+      "id": "equation-family-inorganic-metal-water-acid",
+      "title": "Choose products from the water and acid conditions",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "metal water acid",
+        "word equation",
+        "balanced equation",
+        "state symbols"
+      ],
+      "paragraphs": [
+        "These are specified named contexts or explicitly selected family examples. Match the reactants, products and physical conditions; a balanced model alone does not establish a measured practical result.",
+        "Magnesium steam: magnesium + water → magnesium oxide + hydrogen.",
+        "Mg(s) + H₂O(g) → MgO(s) + H₂(g).",
+        "Heated magnesium and steam.",
+        "Cold-water reaction is very slow and gives hydroxide; not universal water product.",
+        "Magnesium hydrochloric: magnesium + hydrochloric acid → magnesium chloride + hydrogen.",
+        "Mg(s) + 2HCl(aq) → MgCl₂(aq) + H₂(g).",
+        "Dilute hydrochloric acid.",
+        "Mg/Zn/Fe in 2.21 are examples, not exclusive mandatory cases.",
+        "Iron sulfuric: iron + sulfuric acid → iron(II) sulfate + hydrogen.",
+        "Fe(s) + H₂SO₄(aq) → FeSO₄(aq) + H₂(g).",
+        "Dilute sulfuric acid, suitable exposed iron surface.",
+        "Iron(II), not iron(III); concentrated/oxidising-acid behaviour not represented. This and preceding case cover both practical acid types without six compulsory combinations."
+      ],
+      "example": {
+        "question": "Why is MgO appropriate for magnesium with steam but not a universal cold-water product?",
+        "steps": [
+          "The hot steam model is Mg + H₂O → MgO + H₂.",
+          "Very slow cold-water behaviour can instead involve hydroxide; changing the condition changes the product model.",
+          "Dilute non-oxidising acid reactions supply soluble salts and H₂; iron with dilute sulfuric acid gives iron(II) sulfate."
+        ],
+        "explanation": "Conserve every element, retain the actual chemical identities and distinguish the chosen state model from other conditions."
+      },
+      "practice": {
+        "question": "Write balanced equations with states for heated magnesium and steam, and exposed iron with dilute sulfuric acid. Give word products and iron’s oxidation state in the salt. May you assume concentrated sulfuric acid or nitric acid gives the same hydrogen result?",
+        "answer": "Magnesium + steam → magnesium oxide + hydrogen: Mg(s) + H₂O(g) → MgO(s) + H₂(g). Iron + sulfuric acid → iron(II) sulfate + hydrogen: Fe(s) + H₂SO₄(aq) → FeSO₄(aq) + H₂(g) under the supplied dilute-acid conditions. Iron is +2 in the salt. Oxidising/concentrated acid behaviour is outside this model; do not transfer a hydrogen prediction automatically.",
+        "explanation": "Original fixed lesson exercise. It is not an examiner-calibrated generative template, practical trial or unrestricted unknown-identification claim."
+      },
+      "commonMistakes": [
+        "Treating a suitable representative reagent as the only reagent permitted by the specification.",
+        "Using the pure element’s room-temperature state for a dissolved, heated or collected-product context."
+      ]
+    },
+    {
+      "id": "equation-family-inorganic-extraction",
+      "title": "Separate a reduction stage from an overall carbon-anode model — Paper 2C",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "extraction",
+        "word equation",
+        "balanced equation",
+        "state symbols"
+      ],
+      "paragraphs": [
+        "These are specified named contexts or explicitly selected family examples. Match the reactants, products and physical conditions; a balanced model alone does not establish a measured practical result.",
+        "Iron oxide carbon monoxide — Paper 2C: iron(III) oxide + carbon monoxide → iron + carbon dioxide.",
+        "Fe₂O₃(s) + 3CO(g) → 2Fe(s) + 3CO₂(g).",
+        "Explicit heated solid-oxide reduction stage below iron melting point.",
+        "Carbon supplies reducing CO in conventional extraction; later furnace melting not modelled. Do not claim iron(s) throughout furnace or mandate every furnace equation.",
+        "Aluminium carbon anode — Paper 2C: aluminium oxide + carbon → aluminium + carbon dioxide.",
+        "2Al₂O₃(l) + 3C(s) → 4Al(l) + 3CO₂(g).",
+        "Idealised hot molten-electrolyte overall process with carbon anodes; alumina is dissolved in the cryolite bath. The (l) shorthand denotes its molten-electrolyte context, not an assertion of pure liquid alumina.",
+        "Carbon anodes are consumed in this CO2-only overall model. Do not combine consumed carbon with oxygen as the sole final anode gas. An inert-anode model has a different overall equation; actual process gases can be mixed."
+      ],
+      "example": {
+        "question": "Why are carbon and CO2 present in the selected overall aluminium equation?",
+        "steps": [
+          "The cathode reduces aluminium ions; the process uses electrical energy and a molten electrolyte.",
+          "In this selected overall model, the carbon anodes are consumed and oxygen from the oxide ends in CO₂.",
+          "2Al₂O₃ + 3C → 4Al + 3CO₂ conserves Al₄, O₆ and C₃; an inert-anode oxygen-output model is different."
+        ],
+        "explanation": "Conserve every element, retain the actual chemical identities and distinguish the chosen state model from other conditions."
+      },
+      "practice": {
+        "question": "For the selected CO₂-only carbon-anode aluminium process, write word and balanced formula equations, including the stated phase context, and explain why adding O₂ as the sole final gas while still consuming3C is wrong. Separately give the CO reduction equation for Fe₂O₃ in a heated stage where the formed iron remains solid.",
+        "answer": "Aluminium oxide + carbon → aluminium + carbon dioxide. 2Al₂O₃(l) + 3C(s) → 4Al(l) + 3CO₂(g) in the stipulated hot molten-electrolyte process shorthand; alumina is dissolved in the bath, not claimed pure liquid. An inert-anode model 2Al₂O₃ → 4Al + 3O₂ does not consume carbon; do not silently combine the two. For the specified solid-iron reduction stage: Fe₂O₃(s) + 3CO(g) → 2Fe(s) + 3CO₂(g). The iron can melt later elsewhere in a furnace.",
+        "explanation": "Original fixed lesson exercise. It is not an examiner-calibrated generative template, practical trial or unrestricted unknown-identification claim."
+      },
+      "commonMistakes": [
+        "Treating a suitable representative reagent as the only reagent permitted by the specification.",
+        "Using the pure element’s room-temperature state for a dissolved, heated or collected-product context."
+      ]
+    },
+    {
+      "id": "equation-family-inorganic-salt-preparation",
+      "title": "Use the solution product before crystallising or precipitating",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "salt preparation",
+        "word equation",
+        "balanced equation",
+        "state symbols"
+      ],
+      "paragraphs": [
+        "These are specified named contexts or explicitly selected family examples. Match the reactants, products and physical conditions; a balanced model alone does not establish a measured practical result.",
+        "Copper oxide sulfate: copper(II) oxide + sulfuric acid → copper(II) sulfate + water.",
+        "CuO(s) + H₂SO₄(aq) → CuSO₄(aq) + H₂O(l).",
+        "Warm dilute acid, excess oxide filtered off; concentrate filtrate and cool.",
+        "Crystallisation gives hydrated CuSO4·5H2O, not directly anhydrous solid from this aqueous equation. Shared preparation context avoids duplicate equation.",
+        "Lead sulfate precipitation — Paper 2C: lead(II) nitrate + sodium sulfate → lead(II) sulfate + sodium nitrate.",
+        "Pb(NO₃)₂(aq) + Na₂SO₄(aq) → PbSO₄(s) + 2NaNO₃(aq).",
+        "Mix suitable soluble solutions; filter, wash, dry under supervised procedure.",
+        "Nitrate and sodium sulfate are choices, not the sole prescribed reagents. Net Pb2+ + SO4^2− → PbSO4."
+      ],
+      "example": {
+        "question": "Why do the copper-sulfate and lead-sulfate preparations use different separations?",
+        "steps": [
+          "CuO reacts with dilute sulfuric acid to form dissolved CuSO₄ and water; excess oxide is filtered off.",
+          "The filtrate can be concentrated and cooled to form hydrated crystals; the reaction equation does not already give isolated anhydrous solid.",
+          "Mixing soluble lead(II) nitrate and sodium sulfate instead directly precipitates PbSO₄, which is filtered, washed and dried."
+        ],
+        "explanation": "Conserve every element, retain the actual chemical identities and distinguish the chosen state model from other conditions."
+      },
+      "practice": {
+        "question": "Write word and balanced equations with states for CuO with dilute H₂SO₄ and, for Paper2C, Pb(NO₃)₂ solution mixed with Na₂SO₄ solution. Identify what is filtered off in each preparation, and whether sodium/nitrate are the only permitted reagents for the lead product.",
+        "answer": "Copper(II) oxide + sulfuric acid → copper(II) sulfate + water; CuO(s) + H₂SO₄(aq) → CuSO₄(aq) + H₂O(l). Filter off excess oxide and recover hydrated crystals from the filtrate. Paper2C: lead(II) nitrate + sodium sulfate → lead(II) sulfate + sodium nitrate; Pb(NO₃)₂(aq) + Na₂SO₄(aq) → PbSO₄(s) + 2NaNO₃(aq). Filter/wash/dry the desired PbSO₄ precipitate under the supervised method. These soluble reactants are suitable examples, not the only possible pair.",
+        "explanation": "Original fixed lesson exercise. It is not an examiner-calibrated generative template, practical trial or unrestricted unknown-identification claim."
+      },
+      "commonMistakes": [
+        "Treating a suitable representative reagent as the only reagent permitted by the specification.",
+        "Using the pure element’s room-temperature state for a dissolved, heated or collected-product context."
+      ]
+    },
+    {
+      "id": "equation-family-inorganic-gas-tests",
+      "title": "Link carbonate cloudiness and ammonium gas to different products",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "gas tests",
+        "word equation",
+        "balanced equation",
+        "state symbols"
+      ],
+      "paragraphs": [
+        "These are specified named contexts or explicitly selected family examples. Match the reactants, products and physical conditions; a balanced model alone does not establish a measured practical result.",
+        "Limewater carbon dioxide: carbon dioxide + calcium hydroxide → calcium carbonate + water.",
+        "CO₂(g) + Ca(OH)₂(aq) → CaCO₃(s) + H₂O(l).",
+        "Carbon dioxide feed into limewater; initial cloudy precipitate.",
+        "Excess CO2 can clear cloudiness; further hydrogencarbonate model is not a new compulsory bank case.",
+        "Ammonium-ion test: ammonium chloride + sodium hydroxide → ammonia + sodium chloride + water.",
+        "NH₄Cl(aq) + NaOH(aq) → NH₃(g) + NaCl(aq) + H₂O(l).",
+        "Warm ammonium solution with sodium hydroxide; identify evolved NH3 using damp red litmus.",
+        "NH4Cl choice representative; net NH4+ + OH− → NH3 + H2O. Not hypothetical NH4OH isolated product."
+      ],
+      "example": {
+        "question": "Why is cloudy limewater evidence of solid CaCO3 rather than solid CO2?",
+        "steps": [
+          "CO₂ reacts with dissolved calcium hydroxide to give CaCO₃(s) and water.",
+          "The suspended solid causes the cloudiness; the incoming CO₂ is a gas.",
+          "Excess CO₂ can change the result further; a test observation is not an unrestricted identity proof."
+        ],
+        "explanation": "Conserve every element, retain the actual chemical identities and distinguish the chosen state model from other conditions."
+      },
+      "practice": {
+        "question": "Write balanced molecular equations with states for initial limewater cloudiness and for warming NH₄Cl solution with NaOH. Give the word products and appropriate gas identification in the ammonium test. Should you write NH₄OH as the isolated product?",
+        "answer": "Carbon dioxide + calcium hydroxide → calcium carbonate + water; CO₂(g) + Ca(OH)₂(aq) → CaCO₃(s) + H₂O(l). Ammonium chloride + sodium hydroxide → ammonia + sodium chloride + water; NH₄Cl(aq) + NaOH(aq) → NH₃(g) + NaCl(aq) + H₂O(l) when warmed. Evolved ammonia turns damp red litmus blue. NH₄OH is not the isolated product in this model.",
+        "explanation": "Original fixed lesson exercise. It is not an examiner-calibrated generative template, practical trial or unrestricted unknown-identification claim."
+      },
+      "commonMistakes": [
+        "Treating a suitable representative reagent as the only reagent permitted by the specification.",
+        "Using the pure element’s room-temperature state for a dissolved, heated or collected-product context."
+      ]
+    },
+    {
+      "id": "equation-family-inorganic-metal-hydroxide-tests",
+      "title": "Keep metal-ion charges and precipitate colours separate",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "metal hydroxide tests",
+        "word equation",
+        "balanced equation",
+        "state symbols"
+      ],
+      "paragraphs": [
+        "These are specified named contexts or explicitly selected family examples. Match the reactants, products and physical conditions; a balanced model alone does not establish a measured practical result.",
+        "Cu2 hydroxide test: copper(II) chloride + sodium hydroxide → copper(II) hydroxide + sodium chloride.",
+        "CuCl₂(aq) + 2NaOH(aq) → Cu(OH)₂(s) + 2NaCl(aq).",
+        "Aqueous sodium hydroxide gives the named precipitate.",
+        "Chloride is representative soluble source. CuII blue, FeII green, FeIII brown; net ion charge balance zero. FeII precipitate can oxidise on standing.",
+        "Fe2 hydroxide test: iron(II) chloride + sodium hydroxide → iron(II) hydroxide + sodium chloride.",
+        "FeCl₂(aq) + 2NaOH(aq) → Fe(OH)₂(s) + 2NaCl(aq).",
+        "Aqueous sodium hydroxide gives the named precipitate.",
+        "Chloride is representative soluble source. CuII blue, FeII green, FeIII brown; net ion charge balance zero. FeII precipitate can oxidise on standing.",
+        "Fe3 hydroxide test: iron(III) chloride + sodium hydroxide → iron(III) hydroxide + sodium chloride.",
+        "FeCl₃(aq) + 3NaOH(aq) → Fe(OH)₃(s) + 3NaCl(aq).",
+        "Aqueous sodium hydroxide gives the named precipitate.",
+        "Chloride is representative soluble source. CuII blue, FeII green, FeIII brown; net ion charge balance zero. FeII precipitate can oxidise on standing."
+      ],
+      "example": {
+        "question": "Why do FeCl2 and FeCl3 require different NaOH coefficients?",
+        "steps": [
+          "Fe²⁺ needs two OH⁻ for Fe(OH)₂; Fe³⁺ needs three for Fe(OH)₃.",
+          "The supplied soluble chlorides lead to two or three NaCl units respectively.",
+          "Cu(OH)₂ is blue, Fe(OH)₂ initially green and Fe(OH)₃ brown; Fe(II) precipitate can change on standing through oxidation."
+        ],
+        "explanation": "Conserve every element, retain the actual chemical identities and distinguish the chosen state model from other conditions."
+      },
+      "practice": {
+        "question": "Write balanced state-labelled molecular equations for FeCl₂ and FeCl₃ with NaOH, state the initial precipitate colours, and compare CuCl₂. Why must the salt charge/oxidation state be specified before choosing the hydroxide formula?",
+        "answer": "FeCl₂(aq) + 2NaOH(aq) → Fe(OH)₂(s) + 2NaCl(aq), initially green; FeCl₃(aq) + 3NaOH(aq) → Fe(OH)₃(s) + 3NaCl(aq), brown. CuCl₂(aq) + 2NaOH(aq) → Cu(OH)₂(s) + 2NaCl(aq), blue. Each OH⁻ has charge−1, so the cation charge sets its count; Fe(II) and Fe(III) are not interchangeable. Chloride is a chosen soluble source, not an exclusive requirement.",
+        "explanation": "Original fixed lesson exercise. It is not an examiner-calibrated generative template, practical trial or unrestricted unknown-identification claim."
+      },
+      "commonMistakes": [
+        "Treating a suitable representative reagent as the only reagent permitted by the specification.",
+        "Using the pure element’s room-temperature state for a dissolved, heated or collected-product context."
+      ]
+    },
+    {
+      "id": "equation-family-inorganic-anion-tests",
+      "title": "Avoid adding the ion being tested for during acidification",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "anion tests",
+        "word equation",
+        "balanced equation",
+        "state symbols"
+      ],
+      "paragraphs": [
+        "These are specified named contexts or explicitly selected family examples. Match the reactants, products and physical conditions; a balanced model alone does not establish a measured practical result.",
+        "Silver cl test: silver nitrate + sodium chloride → silver chloride + sodium nitrate.",
+        "AgNO₃(aq) + NaCl(aq) → AgCl(s) + NaNO₃(aq).",
+        "Acidify sample with dilute nitric acid, then add silver nitrate.",
+        "Never acidify with HCl; Na+ spectator choice not mandatory. AgCl white, AgBr cream, AgI yellow; net Ag+ + X− → AgX.",
+        "Silver br test: silver nitrate + sodium bromide → silver bromide + sodium nitrate.",
+        "AgNO₃(aq) + NaBr(aq) → AgBr(s) + NaNO₃(aq).",
+        "Acidify sample with dilute nitric acid, then add silver nitrate.",
+        "Never acidify with HCl; Na+ spectator choice not mandatory. AgCl white, AgBr cream, AgI yellow; net Ag+ + X− → AgX.",
+        "Silver i test: silver nitrate + sodium iodide → silver iodide + sodium nitrate.",
+        "AgNO₃(aq) + NaI(aq) → AgI(s) + NaNO₃(aq).",
+        "Acidify sample with dilute nitric acid, then add silver nitrate.",
+        "Never acidify with HCl; Na+ spectator choice not mandatory. AgCl white, AgBr cream, AgI yellow; net Ag+ + X− → AgX.",
+        "Barium sulfate test: barium chloride + sodium sulfate → barium sulfate + sodium chloride.",
+        "BaCl₂(aq) + Na₂SO₄(aq) → BaSO₄(s) + 2NaCl(aq).",
+        "Acidify separate aqueous sample with dilute HCl then add BaCl2.",
+        "Not sulfuric acid acidification; white precipitate. Na+ source representative; net Ba2+ + SO4^2− → BaSO4."
+      ],
+      "example": {
+        "question": "Why do the halide and sulfate tests use different acid/reagent choices?",
+        "steps": [
+          "The selected halide method uses dilute nitric acid then silver nitrate; HCl would itself add chloride.",
+          "AgCl, AgBr and AgI precipitates are white, cream and yellow respectively in the stated tests.",
+          "The selected sulfate method uses dilute HCl then BaCl₂; sulfuric acid would introduce the very sulfate being tested."
+        ],
+        "explanation": "Conserve every element, retain the actual chemical identities and distinguish the chosen state model from other conditions."
+      },
+      "practice": {
+        "question": "Give word and balanced molecular equations with states for NaBr with AgNO₃, and Na₂SO₄ with BaCl₂, including expected precipitate colours. Name each selected acidification reagent and explain the false-positive risk of HCl in the halide test or H₂SO₄ in the sulfate test.",
+        "answer": "Silver nitrate + sodium bromide → silver bromide + sodium nitrate; AgNO₃(aq) + NaBr(aq) → AgBr(s) + NaNO₃(aq), cream. Acidify the halide sample with dilute nitric acid first. Barium chloride + sodium sulfate → barium sulfate + sodium chloride; BaCl₂(aq) + Na₂SO₄(aq) → BaSO₄(s) + 2NaCl(aq), white; use a separate sample acidified with dilute HCl. HCl adds chloride to the halide test and H₂SO₄ adds sulfate to the sulfate test, creating misleading positive evidence.",
+        "explanation": "Original fixed lesson exercise. It is not an examiner-calibrated generative template, practical trial or unrestricted unknown-identification claim."
+      },
+      "commonMistakes": [
+        "Treating a suitable representative reagent as the only reagent permitted by the specification.",
+        "Using the pure element’s room-temperature state for a dissolved, heated or collected-product context."
+      ]
+    },
+    {
+      "id": "equation-family-inorganic-oxygen-redox",
+      "title": "Do not force every oxygen experiment into one product formula",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "oxygen redox",
+        "word equation",
+        "balanced equation",
+        "state symbols"
+      ],
+      "paragraphs": [
+        "These are specified named contexts or explicitly selected family examples. Match the reactants, products and physical conditions; a balanced model alone does not establish a measured practical result.",
+        "Phosphorus oxygen: phosphorus + oxygen → phosphorus(V) oxide.",
+        "P₄(s) + 5O₂(g) → P₄O₁₀(s).",
+        "Supervised oxygen-removal illustration with white phosphorus represented as P4. State labels refer to the initial solid sample and subsequently cooled collected solid oxide, rather than all phases at the flame.",
+        "Iron and phosphorus are publisher examples, not the only permitted substances. Hot oxide vapour must cool and products must be removed/absorbed as appropriate before interpreting gas volume; not an unsupervised procedure. P2O5 is the empirical formula, not another atom-balanced P4 product with coefficient one.",
+        "Magnesium copper oxide: magnesium + copper(II) oxide → magnesium oxide + copper.",
+        "Mg(s) + CuO(s) → MgO(s) + Cu(s).",
+        "Selected heated displacement model using supplied solid reactants and cooled solid products; appropriate initiation is needed in a supervised demonstration.",
+        "Magnesium gains oxygen and is oxidised; copper(II) oxide loses oxygen and is reduced. State labels are not a claim that every material remains solid at every instant of a vigorous hot reaction."
+      ],
+      "example": {
+        "question": "How are P4O10 formation and Mg/CuO displacement different oxygen-transfer contexts?",
+        "steps": [
+          "P₄ + 5O₂ → P₄O₁₀ consumes oxygen from the gas supply in the selected non-metal example.",
+          "Mg + CuO → MgO + Cu transfers oxygen between a solid oxide and a more reactive metal in the selected model.",
+          "The first needs product removal/cooling when interpreting gas volumes; the second identifies reduction and oxidation rather than an air-percentage measurement."
+        ],
+        "explanation": "Conserve every element, retain the actual chemical identities and distinguish the chosen state model from other conditions."
+      },
+      "practice": {
+        "question": "Balance supplied P₄ reacting with oxygen to form P₄O₁₀, then write word and balanced equations for Mg displacing Cu from CuO. Name the oxidising and reducing agents in the second model. May rust simply be assumed to have a unique fixed water content for balancing an air-removal experiment?",
+        "answer": "Phosphorus + oxygen → phosphorus(V) oxide; P₄(s) + 5O₂(g) → P₄O₁₀(s) when labels refer to initial phosphorus and cooled collected oxide. Magnesium + copper(II) oxide → magnesium oxide + copper; Mg(s) + CuO(s) → MgO(s) + Cu(s) for the stated initial/cooled solid model. CuO is the oxidising agent and Mg the reducing agent. Rust has variable composition/hydration; a unique full formula cannot be fabricated without a supplied composition model.",
+        "explanation": "Original fixed lesson exercise. It is not an examiner-calibrated generative template, practical trial or unrestricted unknown-identification claim."
+      },
+      "commonMistakes": [
+        "Treating a suitable representative reagent as the only reagent permitted by the specification.",
+        "Using the pure element’s room-temperature state for a dissolved, heated or collected-product context."
+      ]
+    },
+    {
+      "id": "equation-family-inorganic-acid-breadth",
+      "title": "Use the acid, base and carbonate identities actually supplied",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "acid breadth",
+        "word equation",
+        "balanced equation",
+        "state symbols"
+      ],
+      "paragraphs": [
+        "These are specified named contexts or explicitly selected family examples. Match the reactants, products and physical conditions; a balanced model alone does not establish a measured practical result.",
+        "Sulfuric full neutralization: sulfuric acid + sodium hydroxide → sodium sulfate + water.",
+        "H₂SO₄(aq) + 2NaOH(aq) → Na₂SO₄(aq) + 2H₂O(l).",
+        "Dilute aqueous sulfuric acid fully neutralised by the stoichiometric amount of aqueous sodium hydroxide; sodium sulfate remains dissolved.",
+        "Two hydroxide equivalents per sulfuric acid are required for this normal sulfate product. Partial neutralisation can give a different salt; the complete equation is not a claim about every mixing ratio.",
+        "Nitric magnesium hydroxide: magnesium hydroxide + nitric acid → magnesium nitrate + water.",
+        "Mg(OH)₂(s) + 2HNO₃(aq) → Mg(NO₃)₂(aq) + 2H₂O(l).",
+        "Dilute nitric acid reacts with the solid hydroxide base; the magnesium nitrate product remains in dilute solution.",
+        "This is an acid/base model, not a nitric-acid/metal hydrogen prediction. One Mg2+ requires two nitrate ions; both hydroxide groups form water.",
+        "Aqueous ammonia hydrochloric: ammonia + hydrochloric acid → ammonium chloride.",
+        "NH₃(aq) + HCl(aq) → NH₄Cl(aq).",
+        "Aqueous ammonia accepts a proton from dilute hydrochloric acid; the resulting ammonium salt stays dissolved.",
+        "A base need not contain an OH group. This is different from the cool gas-recombination NH3/HCl demonstration forming solid ammonium chloride; do not copy (s) from that other context.",
+        "Nitric magnesium carbonate: magnesium carbonate + nitric acid → magnesium nitrate + water + carbon dioxide.",
+        "MgCO₃(s) + 2HNO₃(aq) → Mg(NO₃)₂(aq) + H₂O(l) + CO₂(g).",
+        "Dilute nitric acid reacts with magnesium carbonate; nitrate stays dissolved.",
+        "Carbonate gives CO2 and water, not hydrogen. The chosen acid/carbonate pair is a family illustration, not an extra prescribed named practical.",
+        "Sulfuric magnesium carbonate: magnesium carbonate + sulfuric acid → magnesium sulfate + water + carbon dioxide.",
+        "MgCO₃(s) + H₂SO₄(aq) → MgSO₄(aq) + H₂O(l) + CO₂(g).",
+        "Dilute sulfuric acid reacts with magnesium carbonate; magnesium sulfate remains in dilute solution.",
+        "This selected soluble-product case is not a universal claim that every carbonate reacts fully with every acid. An insoluble surface product can inhibit other combinations."
+      ],
+      "example": {
+        "question": "How does the full-neutralisation amount differ between HCl and H2SO4?",
+        "steps": [
+          "HCl supplies one acidic proton equivalent per formula unit; H₂SO₄ supplies two for full normal-sulfate neutralisation.",
+          "One H₂SO₄ therefore requires two NaOH, giving Na₂SO₄ and two waters in this dilute model.",
+          "Aqueous ammonia is a proton-accepting base without an OH group; it forms an ammonium salt rather than a metal hydroxide."
+        ],
+        "explanation": "Conserve every element, retain the actual chemical identities and distinguish the chosen state model from other conditions."
+      },
+      "practice": {
+        "question": "For 0.0250 mol H₂SO₄ fully neutralised to Na₂SO₄, write word/state-labelled formula equations and calculate the NaOH amount. Then write a balanced molecular equation for Mg(OH)₂ plus dilute HNO₃, and identify the gas from MgCO₃ plus the same acid. Does the nitric-acid/base equation justify a nitric-acid/metal hydrogen prediction?",
+        "answer": "Sulfuric acid + sodium hydroxide → sodium sulfate + water; H₂SO₄(aq) + 2NaOH(aq) → Na₂SO₄(aq) + 2H₂O(l), requiring0.0500 mol NaOH. Mg(OH)₂(s) + 2HNO₃(aq) → Mg(NO₃)₂(aq) + 2H₂O(l). MgCO₃(s) + 2HNO₃(aq) → Mg(NO₃)₂(aq) + H₂O(l) + CO₂(g), giving carbon dioxide. These base/carbonate models do not justify treating nitric acid as a generic hydrogen-producing metal/acid case.",
+        "explanation": "Original fixed lesson exercise. It is not an examiner-calibrated generative template, practical trial or unrestricted unknown-identification claim."
+      },
+      "commonMistakes": [
+        "Treating a suitable representative reagent as the only reagent permitted by the specification.",
+        "Using the pure element’s room-temperature state for a dissolved, heated or collected-product context."
+      ]
+    },
+    {
+      "id": "equation-reconciliation-equilibria",
+      "title": "Read the gas counts in the supplied reversible models — Paper 2C",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "word equations",
+        "state symbols",
+        "equilibria"
+      ],
+      "paragraphs": [
+        "These equations support the existing equilibrium lessons. Their chosen gases/solids and forward thermal information are part of the supplied models, not universal industrial operating instructions.",
+        "Pressure shifts discussed here mean compressing the reacting mixture at fixed temperature. Merely adding an inert gas at fixed volume changes total pressure without changing the reacting gases’ partial pressures in the ideal model; it is not the same operation.",
+        "nitrogen + hydrogen ⇌ ammonia.",
+        "N₂(g) + 3H₂(g) ⇌ 2NH₃(g).",
+        "A supplied closed gas-phase equilibrium model; all species are stipulated gaseous. Forward formation is exothermic in the accompanying equilibrium teaching. Pressure comparisons here mean compression/decreasing volume at fixed temperature.",
+        "This is a representative equation, not a new requirement to memorise a complete Haber industrial process. Pressure arguments count four gaseous reactant molecules versus two product molecules.",
+        "hydrogen + iodine ⇌ hydrogen iodide.",
+        "H₂(g) + I₂(g) ⇌ 2HI(g).",
+        "A supplied hot closed-system gas-phase model, including iodine vapour. Pressure comparisons here mean compression/decreasing volume at fixed temperature.",
+        "One plus one gaseous molecule versus two means no side is favoured solely by changing pressure at fixed temperature in the ideal gas-count comparison. Room-temperature iodine(s) is a different state context.",
+        "sulfur dioxide + oxygen ⇌ sulfur trioxide.",
+        "2SO₂(g) + O₂(g) ⇌ 2SO₃(g).",
+        "A supplied hot gas-phase equilibrium model; SO3 is stipulated gaseous. Pressure comparisons here mean compression/decreasing volume at fixed temperature.",
+        "Three gaseous reactant molecules versus two product molecules support the pressure comparison. This representative equation does not add an industrial catalyst/temperature memorisation requirement.",
+        "calcium carbonate ⇌ calcium oxide + carbon dioxide.",
+        "CaCO₃(s) ⇌ CaO(s) + CO₂(g).",
+        "A supplied heated closed-system carbonate/oxide/CO2 equilibrium model. Pressure comparisons here mean compression/decreasing volume at fixed temperature.",
+        "Solids are excluded from gaseous-molecule counts: zero gas on the left versus one on the right. An open tube losing CO2 does not demonstrate the same established closed equilibrium."
+      ],
+      "example": {
+        "question": "Why does compression at fixed temperature favour ammonia in one model but not either side in the all-gas H₂/I₂ model?",
+        "steps": [
+          "N₂(g) + 3H₂(g) ⇌ 2NH₃(g) has four gas molecules on the left and two on the right.",
+          "H₂(g) + I₂(g) ⇌ 2HI(g) has two on each side.",
+          "At fixed temperature, compression favours the fewer-gas side only when the sides differ; solids do not contribute gas counts."
+        ],
+        "explanation": "Keep the supplied identities, coefficients and representation conditions together; conservation alone cannot identify unknown products."
+      },
+      "practice": {
+        "question": "Give word and balanced equations for the supplied SO₂/O₂/SO₃ gas model and CaCO₃/CaO/CO₂ solid/gas model. Which direction does compression favour at fixed temperature, and why is counting solid formula units as gas molecules wrong?",
+        "answer": "Sulfur dioxide + oxygen ⇌ sulfur trioxide: 2SO₂(g) + O₂(g) ⇌ 2SO₃(g), with compression at fixed temperature favouring the right, three gaseous molecules to two. Calcium carbonate ⇌ calcium oxide + carbon dioxide: CaCO₃(s) ⇌ CaO(s) + CO₂(g), with compression at fixed temperature favouring the left, zero gaseous molecules versus one. The solids are not gaseous particles; their written coefficients cannot be included in a gas-molecule total.",
+        "explanation": "Original fixed lesson task, not an activated generative exam template or a performed practical."
+      },
+      "commonMistakes": [
+        "Inventing a product or a state that the supplied information does not justify.",
+        "Counting a structural repeat or incomplete shorthand as a complete isolated molecule."
+      ]
+    },
+    {
+      "id": "equation-reconciliation-bond-model",
+      "title": "Keep hydrogen chloride gas distinct from its aqueous acid — Paper 2C",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "word equations",
+        "state symbols",
+        "bond model"
+      ],
+      "paragraphs": [
+        "hydrogen + chlorine → hydrogen chloride.",
+        "H₂(g) + Cl₂(g) → 2HCl(g).",
+        "Supplied gas-phase bond-accounting reaction: break one H–H and one Cl–Cl, form two H–Cl bonds.",
+        "Bond energies refer to the stated gas-phase model; HCl(g) is hydrogen chloride, not already aqueous hydrochloric acid. This written calculation is not a procedure for mixing/igniting these gases."
+      ],
+      "example": {
+        "question": "Which bonds are counted in H2(g) + Cl2(g) → 2HCl(g)?",
+        "steps": [
+          "Break one H–H and one Cl–Cl bond.",
+          "Form two H–Cl bonds, not one.",
+          "With the supplied gas-phase mean energies, estimate ΔH as energy to break minus energy released on forming bonds."
+        ],
+        "explanation": "Keep the supplied identities, coefficients and representation conditions together; conservation alone cannot identify unknown products."
+      },
+      "practice": {
+        "question": "For the supplied gas model, write word and state-labelled formula equations and estimate ΔH using H–H436, Cl–Cl243 and H–Cl431 kJ/mol. Are these invented exercise values enough to claim the enthalpy of making aqueous hydrochloric acid?",
+        "answer": "Hydrogen + chlorine → hydrogen chloride; H₂(g) + Cl₂(g) → 2HCl(g). ΔH ≈436 +243 −2×431 =−183 kJ per equation reaction as written. The negative sign is exothermic. These supplied illustrative gas-phase bond energies do not include dissolving HCl into water, so they do not by themselves give an aqueous-acid formation enthalpy.",
+        "explanation": "Original fixed lesson task, not an activated generative exam template or a performed practical."
+      },
+      "commonMistakes": [
+        "Inventing a product or a state that the supplied information does not justify.",
+        "Counting a structural repeat or incomplete shorthand as a complete isolated molecule."
+      ]
+    },
+    {
+      "id": "equation-reconciliation-engine",
+      "title": "Use one nitrogen-oxide model without claiming all exhaust",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "word equations",
+        "state symbols",
+        "engine"
+      ],
+      "paragraphs": [
+        "The named engine context supplies nitrogen and oxygen from air. Sulfur-dioxide chemistry can reuse the separately qualified sulfur-impurity/elemental-sulfur illustration; no single complete acid-rain mechanism is prescribed.",
+        "nitrogen + oxygen → nitrogen monoxide.",
+        "N₂(g) + O₂(g) → 2NO(g).",
+        "A representative initial nitrogen-oxide formation model at high engine temperatures, with both reactants supplied by air.",
+        "NO is one oxide model, not the full exhaust or a unique atmospheric acid-rain mechanism. Nitrogen need not be present in the hydrocarbon formula."
+      ],
+      "example": {
+        "question": "Why can nitrogen monoxide form when the fuel molecule contains only C and H?",
+        "steps": [
+          "Nitrogen is present in the incoming air.",
+          "At high engine temperatures, some N₂ and O₂ can react in the selected model.",
+          "N₂ + O₂ → 2NO balances two nitrogen and two oxygen atoms; it is not an inventory of every exhaust component."
+        ],
+        "explanation": "Keep the supplied identities, coefficients and representation conditions together; conservation alone cannot identify unknown products."
+      },
+      "practice": {
+        "question": "Write word and balanced state-labelled equations for the supplied initial NO model. Does removing sulfur impurities alone rule out nitrogen oxides, or does this equation prove that all exhaust is NO?",
+        "answer": "Nitrogen + oxygen → nitrogen monoxide; N₂(g) + O₂(g) → 2NO(g) in the stipulated high-temperature initial-oxide model. Removing sulfur does not remove the nitrogen and oxygen supplied by air. Actual exhaust can contain other components and oxides; this one equation does not establish its complete composition.",
+        "explanation": "Original fixed lesson task, not an activated generative exam template or a performed practical."
+      },
+      "commonMistakes": [
+        "Inventing a product or a state that the supplied information does not justify.",
+        "Counting a structural repeat or incomplete shorthand as a complete isolated molecule."
+      ]
+    },
+    {
+      "id": "equation-reconciliation-calcium-water",
+      "title": "Choose a dissolved hydroxide state from the supplied dilution",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "word equations",
+        "state symbols",
+        "calcium water"
+      ],
+      "paragraphs": [
+        "calcium + water → calcium hydroxide + hydrogen.",
+        "Ca(s) + 2H₂O(l) → Ca(OH)₂(aq) + H₂(g).",
+        "A supplied calcium/cold-water example with enough excess water for the calcium hydroxide amount to remain below its solubility limit.",
+        "The (aq) hydroxide is conditional. With more product per volume, undissolved hydroxide can appear; do not copy this phase label to every calcium-water mixture."
+      ],
+      "example": {
+        "question": "Why can the same calcium-water chemistry be written with an aqueous hydroxide in one task and visible solid in another?",
+        "steps": [
+          "The supplied task specifies enough water for the hydroxide amount to remain dissolved.",
+          "Then Ca(s) + 2H₂O(l) → Ca(OH)₂(aq) + H₂(g) is the selected molecular state model.",
+          "If the solubility limit is exceeded, suspended solid hydroxide can form; (aq) is not an automatic tag for every product in contact with water."
+        ],
+        "explanation": "Keep the supplied identities, coefficients and representation conditions together; conservation alone cannot identify unknown products."
+      },
+      "practice": {
+        "question": "Write the word and balanced state-labelled equation for the explicitly dilute calcium-water model. Give the ideal H₂ amount from0.040 mol Ca reacting completely. Is Ca(OH)₂(aq) justified if the task instead says the product is a visible undissolved suspension?",
+        "answer": "Calcium + water → calcium hydroxide + hydrogen; Ca(s) + 2H₂O(l) → Ca(OH)₂(aq) + H₂(g) for the supplied dissolved-product context. The ideal H₂ amount is0.040 mol. If the task specifies undissolved hydroxide, represent that product fraction as Ca(OH)₂(s), with any dissolved fraction distinguished; do not retain an unjustified all-aqueous description.",
+        "explanation": "Original fixed lesson task, not an activated generative exam template or a performed practical."
+      },
+      "commonMistakes": [
+        "Inventing a product or a state that the supplied information does not justify.",
+        "Counting a structural repeat or incomplete shorthand as a complete isolated molecule."
+      ]
+    },
+    {
+      "id": "equation-reconciliation-unfamiliar",
+      "title": "Translate unfamiliar supplied identities without guessing products",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "word equations",
+        "state symbols",
+        "unfamiliar"
+      ],
+      "paragraphs": [
+        "For an unfamiliar reaction, the question must provide product identities and enough formula/state information, or sufficient chemical information to derive them. Balancing is a conservation task, not permission to invent the chemistry.",
+        "Supplied case A: barium chloride BaCl₂ and sodium phosphate Na₃PO₄ are aqueous; the named products are solid barium phosphate Ba₃(PO₄)₂ and aqueous sodium chloride NaCl.",
+        "Supplied case B: aqueous sodium sulfite Na₂SO₃ reacts with dilute hydrochloric acid HCl(aq); the given products are NaCl(aq), SO₂(g) and H₂O(l). These written examples are not additional prescribed practicals.",
+        "barium chloride + sodium phosphate → barium phosphate + sodium chloride.",
+        "3BaCl₂(aq) + 2Na₃PO₄(aq) → Ba₃(PO₄)₂(s) + 6NaCl(aq).",
+        "Original supplied-identity written task: dilute barium chloride and sodium phosphate solutions give the stated barium phosphate precipitate and dissolved sodium chloride. All formulas and phases are supplied.",
+        "The learner balances and translates given information; predicting this unfamiliar product from memory is not required. This is an illustrative task, not an additional publisher-named reaction or performed test.",
+        "sodium sulfite + hydrochloric acid → sodium chloride + sulfur dioxide + water.",
+        "Na₂SO₃(aq) + 2HCl(aq) → 2NaCl(aq) + SO₂(g) + H₂O(l).",
+        "Original supplied-identity written task: sodium sulfite solution and dilute hydrochloric acid form the explicitly given products sodium chloride solution, sulfur dioxide gas and water.",
+        "Here HCl(aq) is hydrochloric acid. Products and states are provided, not guessed from bubbles or an unsupervised procedure. Sulfite SO3 is not sulfate SO4."
+      ],
+      "example": {
+        "question": "How do the supplied phosphate groups determine the smallest whole-number coefficients in case A?",
+        "steps": [
+          "Ba₃(PO₄)₂ requires three BaCl₂ and two Na₃PO₄.",
+          "Those reactants contain six sodium and six chlorine atoms, requiring six NaCl.",
+          "The resulting totals are Ba₃, P₂, O₈, Na₆ and Cl₆ on each side; every supplied state is retained."
+        ],
+        "explanation": "Keep the supplied identities, coefficients and representation conditions together; conservation alone cannot identify unknown products."
+      },
+      "practice": {
+        "question": "Using supplied case B only, write the word equation and smallest-whole-number state-labelled formula equation. Check Na/H/Cl/S/O totals. Explain why changing SO₃ in the supplied sulfite to SO₄, or replacing the supplied SO₂ gas by H₂, is not balancing.",
+        "answer": "Sodium sulfite + hydrochloric acid → sodium chloride + sulfur dioxide + water. Na₂SO₃(aq) + 2HCl(aq) → 2NaCl(aq) + SO₂(g) + H₂O(l). Totals are Na₂, H₂, Cl₂, S₁ and O₃ on each side. Changing a formula or the given product identity changes the supplied reaction; adjust coefficients instead. Without given/derivable product information, atom conservation alone cannot choose the products.",
+        "explanation": "Original fixed lesson task, not an activated generative exam template or a performed practical."
+      },
+      "commonMistakes": [
+        "Inventing a product or a state that the supplied information does not justify.",
+        "Counting a structural repeat or incomplete shorthand as a complete isolated molecule."
+      ]
+    },
+    {
+      "id": "equation-reconciliation-actual-oxidant",
+      "title": "Expand [O] only when the actual reagent species are supplied — Paper 2C",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "word equations",
+        "state symbols",
+        "actual oxidant"
+      ],
+      "paragraphs": [
+        "Optional expansion: the named ethanol oxidation route is already taught using2[O]. Here actual reagent and product identities are supplied so potassium, chromium, sulfate and water can also be accounted for. This full equation is a worked representation extension, not an extra memorisation requirement.",
+        "For checking the derived stoichiometry, the ionic core is3CH₃CH₂OH +2Cr₂O₇²⁻ +16H⁺ →3CH₃COOH +4Cr³⁺ +11H₂O. Both sides have net charge+12; potassium/sulfate supply the chosen molecular salt bookkeeping.",
+        "ethanol + potassium dichromate(VI) + sulfuric acid → ethanoic acid + chromium(III) sulfate + potassium sulfate + water.",
+        "3CH₃CH₂OH(aq) + 2K₂Cr₂O₇(aq) + 8H₂SO₄(aq) → 3CH₃COOH(aq) + 2Cr₂(SO₄)₃(aq) + 2K₂SO₄(aq) + 11H₂O(l).",
+        "Optional full-reagent expansion for the named ethanol-to-ethanoic-acid route: heated aqueous acidified dichromate with sufficient oxidant towards the acid endpoint; all listed salts remain dissolved in this stipulated mixture.",
+        "This authored molecular bookkeeping expands the actual supplied species; it is not an extra requirement to memorise chromium half-reactions or an experimental recipe. [O] remains useful shorthand but does not itself account for K, Cr or sulfate."
+      ],
+      "example": {
+        "question": "How can the full equation be checked independently of the2[O] shorthand?",
+        "steps": [
+          "Three ethanol molecules each lose four electrons on oxidation to the acid; two dichromate ions each gain six, so twelve electrons cancel.",
+          "The net ionic core conserves C₆, H₃₄, O₁₇ and Cr₄, with charge+12 on both sides.",
+          "Adding the supplied spectator-ion salt bookkeeping gives the shown full molecular model, whose totals are C₆, H₃₄, O₄₉, K₄, Cr₄ and S₈ on each side."
+        ],
+        "explanation": "Keep the supplied identities, coefficients and representation conditions together; conservation alone cannot identify unknown products."
+      },
+      "practice": {
+        "question": "The supplied full molecular model converts0.0300 mol ethanol completely to the acid. Give the stoichiometric K₂Cr₂O₇ and H₂SO₄ amounts and explain why2[O](g) cannot replace the actual reagent identities in a full state-labelled equation.",
+        "answer": "For the equation as written, dichromate:ethanol =2:3 and sulfuric-acid:ethanol =8:3. The stoichiometric amounts are0.0200 mol K₂Cr₂O₇ and0.0800 mol H₂SO₄ in the stated full-reagent model; a practical may use excess and is not specified here. [O] is an oxidising equivalent, not monatomic oxygen gas, and omits K/Cr/sulfate products. Use shorthand only as labelled shorthand, not a full reagent-state equation.",
+        "explanation": "Original fixed lesson task, not an activated generative exam template or a performed practical."
+      },
+      "commonMistakes": [
+        "Inventing a product or a state that the supplied information does not justify.",
+        "Counting a structural repeat or incomplete shorthand as a complete isolated molecule."
+      ]
+    },
+    {
+      "id": "equation-reconciliation-nonunique",
+      "title": "Separate dissolved ions and variable rust from a fixed molecular formula",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "word equations",
+        "state symbols",
+        "nonunique"
+      ],
+      "paragraphs": [
+        "A temperature change does not by itself prove formation of a new compound. In the selected ammonium-nitrate dissolution model, a solid ionic lattice separates into hydrated ions: NH₄NO₃(s) → NH₄⁺(aq) + NO₃⁻(aq).",
+        "Nitrogen2, hydrogen4 and oxygen3 are conserved; net charge is0 on both sides. This physical dissolution/solvation representation is distinct from making ammonia gas or decomposing the nitrate.",
+        "A word model for rusting is iron + oxygen + water → rust. Rust contains variable hydrated iron oxides/oxyhydroxides; a fixed water count and one uniquely balanced hydrated molecular formula cannot be invented without a supplied composition model.",
+        "Existing sacrificial-zinc teaching uses Zn → Zn²⁺ +2e⁻ with the appropriate contact/wet circuit. A paint barrier does not require a newly invented reaction equation. Group1 air tarnishing likewise does not justify assigning one universal M₂O product to every sample."
+      ],
+      "example": {
+        "question": "Why are charges written on the dissolution ions but not converted into new subscripts to force neutrality?",
+        "steps": [
+          "One NH₄⁺ and one NO₃⁻ cancel their charges to total0.",
+          "The ion formulas retain their supplied atom counts; changing NH₄ into NH₃ would describe different chemistry.",
+          "The state changes from a solid lattice to dissolved ions, not an isolated bottle of new neutral NH₄NO₃ molecules in a gas."
+        ],
+        "explanation": "Keep the supplied identities, coefficients and representation conditions together; conservation alone cannot identify unknown products."
+      },
+      "practice": {
+        "question": "Write the selected ammonium-nitrate dissolution equation, checking atoms and total charge. Explain why an observed cooling does not alone justify a decomposition equation, and why rust cannot automatically be assigned one fixed hydration formula.",
+        "answer": "NH₄NO₃(s) → NH₄⁺(aq) + NO₃⁻(aq): N₂, H₄ and O₃ are conserved; charges0 →(+1)+(−1)=0. Dissolving can absorb heat without this being nitrate decomposition. Rust composition/hydration varies; exact balancing needs an explicitly supplied chemical composition. State the word model and the information limit instead of inventing a unique formula.",
+        "explanation": "Original fixed lesson task, not an activated generative exam template or a performed practical."
+      },
+      "commonMistakes": [
+        "Inventing a product or a state that the supplied information does not justify.",
+        "Counting a structural repeat or incomplete shorthand as a complete isolated molecule."
+      ]
+    },
+    {
+      "id": "equation-reconciliation-addition-polymers",
+      "title": "Write addition-polymer equations as open repeat structures",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "word equations",
+        "state symbols",
+        "addition polymers"
+      ],
+      "paragraphs": [
+        "In the required addition examples, many alkene monomers join while their C=C becomes a single backbone connection. The repeat’s two outward bonds join neighbouring units; it is not a free molecule with unfinished valencies.",
+        "ethene → poly(ethene): n monomers → [–CH₂–CH₂–]ₙ. The repeat has the same C₂H₄ atom inventory per monomer; no water is removed.",
+        "propene → poly(propene): n monomers → [–CH₂–CH(CH₃)–]ₙ. The repeat has the same C₃H₆ atom inventory per monomer; no water is removed.",
+        "chloroethene → poly(chloroethene): n monomers → [–CH₂–CHCl–]ₙ. The repeat has the same C₂H₃Cl atom inventory per monomer; no water is removed.",
+        "tetrafluoroethene → poly(tetrafluoroethene): n monomers → [–CF₂–CF₂–]ₙ. The repeat has the same C₂F₄ atom inventory per monomer; no water is removed.",
+        "No universal industrial state/catalyst/temperature is specified for these four drawing requirements. Supply state symbols only when the actual process context gives them. An open repeat cannot be validated as a complete isolated molecular formula."
+      ],
+      "example": {
+        "question": "What does the n outside the brackets mean, and why must the outward bonds remain?",
+        "steps": [
+          "n denotes many repeated units.",
+          "The outward bonds connect to adjacent repeats and complete the backbone carbon valencies.",
+          "An ideal repeat omits initiator/end-group details; it is a representation of a continuing chain, not one isolated molecule."
+        ],
+        "explanation": "Keep the supplied identities, coefficients and representation conditions together; conservation alone cannot identify unknown products."
+      },
+      "practice": {
+        "question": "Give word equations for the four named addition polymers and draw their fully displayed bracketed repeats with n and both continuation bonds. State whether water is removed, whether C=C remains in these repeats and whether room-temperature states can be assigned without a process context.",
+        "answer": "Ethene → poly(ethene), propene → poly(propene), chloroethene → poly(chloroethene), tetrafluoroethene → poly(tetrafluoroethene). The condensed repeat patterns are[–CH₂–CH₂–]ₙ,[–CH₂–CH(CH₃)–]ₙ,[–CH₂–CHCl–]ₙ and[–CF₂–CF₂–]ₙ; expand every atom/bond as in the displayed sheet and retain bonds through both brackets. C=C opens to a single backbone connection, no water is removed, and states require the supplied physical process. Do not cap the repeat as a free molecule.",
+        "explanation": "Original fixed lesson task, not an activated generative exam template or a performed practical."
+      },
+      "commonMistakes": [
+        "Inventing a product or a state that the supplied information does not justify.",
+        "Counting a structural repeat or incomplete shorthand as a complete isolated molecule."
+      ],
+      "diagram": {
+        "src": "/diagrams/chemistry-addition-repeats.svg",
+        "alt": "Full displayed repeat units for polyethene, polypropene, polychloroethene and polytetrafluoroethene; branches, all hydrogens and halogens, bonds through both brackets and n outside.",
+        "caption": "Each boundary bond joins the neighbouring unit. No C=C remains in these required repeat units."
+      }
+    },
+    {
+      "id": "equation-reconciliation-polyester",
+      "title": "Retain both monomer fragments in the polyester equation — Paper 2C",
+      "points": [
+        "1.25"
+      ],
+      "terms": [
+        "word equations",
+        "state symbols",
+        "polyester"
+      ],
+      "paragraphs": [
+        "Word equation: ethanedioic acid + ethanediol → polyester + water. Both monomers have two reacting functional ends, allowing repeated linking rather than just one small ester.",
+        "The ideal structural equation is n HOOC–COOH +n HO–CH₂–CH₂–OH →[–C(=O)–C(=O)–O–CH₂–CH₂–O–]ₙ +2n H₂O. Keep both carbonyls, the two CH₂ carbons and continuation bonds through both brackets.",
+        "One combined monomer pair has C₄H₈O₆. Removing two waters in the ideal repeat bookkeeping gives C₄H₄O₄. The repeat boundary can cut across an ester link; it does not create a loose atom or additional hydrogen.",
+        "The source2n-water shorthand omits finite ends. A single unclosed chain connecting n diacid and n diol molecules has2n−1 joining links and waters. These are different representation scopes; neither supplies a universal process temperature, catalyst or phase state."
+      ],
+      "example": {
+        "question": "Why does one finite open chain of three diacids and three diols lose five waters rather than the ideal repeat shorthand’s six?",
+        "steps": [
+          "There are six monomer molecules to connect.",
+          "A single unclosed connected chain of six units needs five joining links.",
+          "One water per ester link gives five waters; the ideal repeat shorthand2n treats a continuing chain and omits the finite end groups."
+        ],
+        "explanation": "Keep the supplied identities, coefficients and representation conditions together; conservation alone cannot identify unknown products."
+      },
+      "practice": {
+        "question": "From the named monomers, write word and ideal structural equations and draw the fully displayed repeat. Check its atom formula, then compare the water count for one unclosed chain made from four molecules of each monomer with the ideal2n shorthand. Can you assign all species(aq) merely because water is produced?",
+        "answer": "Ethanedioic acid + ethanediol → polyester + water; n HOOC–COOH +n HO–CH₂–CH₂–OH →[–C(=O)–C(=O)–O–CH₂–CH₂–O–]ₙ +2nH₂O in the source ideal repeating representation. C₂H₂O₄ +C₂H₆O₂ minus2H₂O gives repeat C₄H₄O₄. For one unclosed chain of eight monomer molecules, seven links/waters form;2n would give eight only in the ideal repeat bookkeeping. Fully display every bond and retain continuation bonds. Water as a product does not mean every material is dissolved in water.",
+        "explanation": "Original fixed lesson task, not an activated generative exam template or a performed practical."
+      },
+      "commonMistakes": [
+        "Inventing a product or a state that the supplied information does not justify.",
+        "Counting a structural repeat or incomplete shorthand as a complete isolated molecule."
+      ],
+      "diagram": {
+        "src": "/diagrams/chemistry-polyester-repeat.svg",
+        "alt": "Original full displayed ethanedioic acid, ethanediol and their polyester repeat, retaining two carbonyls, two CH2 carbons and oxygen connections through the brackets.",
+        "caption": "Read the ester link across the repeat boundary as well as the one inside it. This is schematic connectivity."
+      }
     }
   ],
   "status": "source-checked",
