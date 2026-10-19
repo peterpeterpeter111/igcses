@@ -4,6 +4,8 @@ import { join } from 'node:path';
 const root = 'dist/client';
 const forbidden = [
   ['OpenAI API key environment name', /OPENAI_API_KEY/],
+  ['DeepSeek API key environment name', /DEEPSEEK_API_KEY/],
+  ['DeepSeek calibration transport endpoint', /api\.deepseek\.com/],
   ['OpenAI secret token pattern', /\bsk-(?:proj-)?[A-Za-z0-9_-]{20,}\b/],
   [
     'synthetic private solution fixture',

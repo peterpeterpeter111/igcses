@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-19",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Runner/test delta only; prior review unmodified; no API calls or real credential inspection.",
+  "priorReview": "research/reviews/2026-10-19-CHEMISTRY-MASS-RUNTIME-REVIEW.json",
+  "files": [
+    {
+      "path": "scripts/deepseek_calibration.py",
+      "rawSha256": "5578641c14a2247a30a2a7b3b85eeed6923c28ce6a459c8960171b1b8de619f1"
+    },
+    {
+      "path": "tests/formula-mass-prototype.test.ts",
+      "rawSha256": "9b45e56221a9963f346a7612512c89e2399f317c6c2ed72b9499d8c517a20d24"
+    }
+  ],
+  "verdict": "acceptable-bounded-offline-delta",
+  "blockingFindings": [],
+  "checks": {
+    "focusedTestsPassed": 4,
+    "focusedTestsFailed": 0,
+    "apiCalls": 0,
+    "actualSavedDatasetCursorCheck": {
+      "offsets": [
+        0,
+        16,
+        32,
+        48,
+        64
+      ],
+      "casesPerSlice": 16,
+      "formulaVariantsPerSlice": 10,
+      "responsePatternsPerSlice": 8,
+      "totalUniqueCaseIds": 80,
+      "overlap": false
+    },
+    "credentialFile": "Reads exactly one named DEEPSEEK_API_KEY assignment, optional export and matching quotes; no sourcing, execution, interpolation or content printing. Other assignments are ignored. Only dummy temporary credentials exercised by tests.",
+    "nestedAllowlist": "Public question/stimulus and response/term field sets checked; formula restricted to ten reviewed variants and exact Ar table. Expected labels remain omitted from outbound payload; semantic IDs hashed.",
+    "privateReasons": "Model reasons now stored under private outcomes and omitted from printed aggregate summary. They remain untrusted provider text, not instructions or evidence of examiner calibration.",
+    "cursor": "Deterministic permutation plus slice cursor; five selected offsets independently verified on actual80case fixture, not only the one-formula stub."
+  },
+  "remainingNonblockingLimits": [
+    "The origin field remains a declaration; allowed prompt/additionalEvidence strings can still carry arbitrary text. This remains a trusted local synthetic-dataset runner, not a general student-data ingress.",
+    "Provider POLICY still does not enumerate the local exact numeric regex; future notation-boundary evaluation needs explicit policy alignment.",
+    "Top docstring says credentials are not loaded, while optional env-file necessarily reads the selected credential; wording should eventually distinguish secure credential loading from credential transmission as task data.",
+    "No external model-version claim was independently verified in this delta. No synthetic result establishes examiner calibration or live-template eligibility."
+  ],
+  "promotionAuthorised": false
+}

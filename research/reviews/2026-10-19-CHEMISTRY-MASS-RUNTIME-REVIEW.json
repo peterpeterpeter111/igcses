@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-19",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Independent bounded offline prototype/source-policy/security review; no external API or runtime promotion.",
+  "verdict": "acceptable-offline-prototype-with-explicit-limits",
+  "reviewedFiles": [
+    {
+      "path": "server/generators/relative-formula-mass.ts",
+      "rawSha256": "032d0d04f14cfec579b87792ef4f82383d2979e41b650d69c9ae8dc319f96034"
+    },
+    {
+      "path": "server/generators/formula-mass-marking.ts",
+      "rawSha256": "9ed44509ac1a5e02ac5236b4aff1bddac0faee4423512d4ad2e2e510f040bb8d"
+    },
+    {
+      "path": "server/generators/formula-mass-calibration.ts",
+      "rawSha256": "51f02880449cf36b2d18b905f73dec9758dc8cbed03faccac1bcd74c7d2beb7b"
+    },
+    {
+      "path": "scripts/deepseek_calibration.py",
+      "rawSha256": "03edfcc9e1607b98b365e036e007e269da74bbf81986897e390825074df054a1"
+    },
+    {
+      "path": "scripts/check-formula-mass-prototype.ts",
+      "rawSha256": "36d3ce8b58bc837a96358afeb765d5adc009b682b4255f57a65e9defc6165eb1"
+    },
+    {
+      "path": "tests/formula-mass-prototype.test.ts",
+      "rawSha256": "914a182f8d2151b4dd61cefd8fbf4170a50b7e784b5e811f8a08953aa5970a62"
+    },
+    {
+      "path": "research/templates/4CH1-relative-formula-mass.v0.2.0.json",
+      "rawSha256": "5851aba84c830cc50cc6140c6fc328ab201951ba5f2f04d2365d595dc17486f0"
+    },
+    {
+      "path": "research/validation/2026-10-19-chemistry-mass-prototype.json",
+      "rawSha256": "c116a0623ca534c1fcdc43a3b5ef69997a3b8c387abffc9db09f23f418c5f9ff"
+    }
+  ],
+  "recordedImplementationHashes": [
+    {
+      "path": "server/generators/relative-formula-mass.ts",
+      "matchesRecordedHash": true
+    },
+    {
+      "path": "server/generators/formula-mass-marking.ts",
+      "matchesRecordedHash": true
+    },
+    {
+      "path": "server/generators/formula-mass-calibration.ts",
+      "matchesRecordedHash": true
+    },
+    {
+      "path": "scripts/deepseek_calibration.py",
+      "matchesRecordedHash": true
+    },
+    {
+      "path": "tests/formula-mass-prototype.test.ts",
+      "matchesRecordedHash": true
+    }
+  ],
+  "sourcePolicy": {
+    "basis": "Previously independently read exact Q4.a.ii scheme PDF7 and current1.26 PDF19; source contract0.1.0 preserved.",
+    "correctFinalAlone": 2,
+    "completeCorrectSubstitutionWithWrongAddition": 1,
+    "methodOnly": 1,
+    "wrongFormulaOrAtomicMassNoECF": true,
+    "contradictoryCorrectAnswer": "needs-review, score null",
+    "unsupportedNotationOrUnits": "needs-review, no invented penalty",
+    "review": "Actual structured scorer preserves these bounded rules. Zero with incomplete/wrong terms and wrong/blank final is appropriate within the explicit transcription contract; no natural-language recognition is claimed."
+  },
+  "chemistryAndGeneration": {
+    "formula": "C(n+1)H(2n+3)NO2",
+    "relativeFormulaMass": "14n+61",
+    "domain": 10,
+    "review": "Atom counts and sums correct. Unsigned32-bit seed repeats modulo10; no1000-unique-question claim. Public projection contains prompt/formula/Ar/marks, no private solution. Deep freezing protects constructed packages; validator checks consistency, not authenticity or live eligibility."
+  },
+  "testRun": {
+    "command": "node --experimental-strip-types --test tests/formula-mass-prototype.test.ts",
+    "passed": 4,
+    "failed": 0,
+    "networkCalls": 0,
+    "observations": "1000 seeded packages test ten unique public questions;80 authored synthetic cases test50 scored and30 deferred outcomes. Transport is stubbed for provider evaluation; no API credential used or inspected."
+  },
+  "hiddenGoldReview": {
+    "expectedLabelsExcluded": true,
+    "semanticCaseSuffixesExcluded": true,
+    "review": "Provider receives hashed identifiers, public question and submitted response only; private expected labels remain local. Correct learner responses naturally contain an answer and are not gold-label leakage. Evaluation checks exact ID set, completion status, JSON schema, integer scores and null abstentions; malformed results count invalid rather than passing review. Synthetic gold is authored from source policy, not examiner-labelled evidence."
+  },
+  "networkAndSecrets": {
+    "review": "Explicit --execute gate; dry-run sends zero requests. Fixed HTTPS endpoint, disabled redirects, environment-only key with validation, redacted transport errors, no retries after transport/auth failure. Maximum two requests/eight cases each, response size cap and30s timeout. Output constrained to a new resolved path below work/. No activation path.",
+    "limits": "Dataset origin marker is a self-declaration, not proof of provenance; nested publicQuestion/response fields are not deeply allowlisted. Safe for the locally generated fixture dataset inspected, not authorised for arbitrary student/source payloads. Model-version/latest documentation claim was not independently checked because this review prohibited external calls."
+  },
+  "blockingOfflineDefects": [],
+  "nonblockingFindings": [
+    {
+      "id": "bounded-provider-sample",
+      "detail": "packets selects first16 cases: with current ordering this covers only n1/n2 and eight response patterns each. A later provider result must report16/80 and two formula variants, never coverage of all10. No shuffle/offset currently available."
+    },
+    {
+      "id": "provider-format-policy",
+      "detail": "Provider POLICY names unsupported notation but does not specify the exact local numeric regex or structured integer bounds. Current eight patterns are clear; future scientific-notation/oversized/malformed cases need explicit agreement criteria before interpreting provider disagreements as marking errors."
+    },
+    {
+      "id": "validation-status-wording",
+      "detail": "v0.2.0 validation.status remains not-run although synthetic tests have run. This is conservative rather than an overclaim, but distinguish synthetic run completed from calibration/activation not run when presenting status."
+    },
+    {
+      "id": "no-empirical-calibration",
+      "detail": "Synthetic cases closely mirror implementation branches and exercise only a finite related family. Passing them does not establish free-text/handwriting recognition, source difficulty equivalence, student layout quality or examiner calibration."
+    }
+  ],
+  "activationBlockersRemain": [
+    "No empirical response or difficulty calibration.",
+    "No validated custom marks or live registry activation.",
+    "No official per-leaf AO allocation.",
+    "No provider performance claim: actual calls zero."
+  ],
+  "promotionAuthorised": false
+}

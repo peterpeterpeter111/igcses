@@ -63,6 +63,9 @@ export const evidenceHighlights = {
     humanExtraction.reviewDate,
     biologyExtraction.reviewDate,
     chemistryExtraction.reviewDate,
+    chemistryReport.reviewedAt,
+    chemistryApplicability.reviewedAt,
+    ...authoredChapterReviews.map((review) => review.reviewedAt),
   ]
     .sort()
     .at(-1),

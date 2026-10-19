@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-19",
+  "familyId": "4CH1.relative-formula-mass",
+  "version": "0.2.0",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "sourceContractRef": "research/templates/4CH1-relative-formula-mass.v0.1.0.json",
+  "sourceContractSha256": "a6c42a40921f418399bfbf7618733e78f0cfba403856466d2ddd1eceeae91c9d",
+  "scope": "Offline formula generation, bounded structured-transcription scoring and synthetic regression only. Not empirical examiner calibration or activation.",
+  "implementationFiles": [
+    {
+      "path": "server/generators/relative-formula-mass.ts",
+      "sha256": "032d0d04f14cfec579b87792ef4f82383d2979e41b650d69c9ae8dc319f96034"
+    },
+    {
+      "path": "server/generators/formula-mass-marking.ts",
+      "sha256": "9ed44509ac1a5e02ac5236b4aff1bddac0faee4423512d4ad2e2e510f040bb8d"
+    },
+    {
+      "path": "server/generators/formula-mass-calibration.ts",
+      "sha256": "51f02880449cf36b2d18b905f73dec9758dc8cbed03faccac1bcd74c7d2beb7b"
+    },
+    {
+      "path": "scripts/deepseek_calibration.py",
+      "sha256": "7d658621c5ee53b49ddb2b9d60744038684bab74ca8098b2113c398644051810"
+    },
+    {
+      "path": "tests/formula-mass-prototype.test.ts",
+      "sha256": "9b45e56221a9963f346a7612512c89e2399f317c6c2ed72b9499d8c517a20d24"
+    }
+  ],
+  "generation": {
+    "sampledSeeds": 1000,
+    "distinctFormulas": 10,
+    "finiteParameterDomain": 10,
+    "sourceFormulaExcluded": true,
+    "deterministic": true,
+    "frozenPackages": true
+  },
+  "syntheticScoring": {
+    "cases": 80,
+    "passed": 80,
+    "scoredCases": 50,
+    "deferredCases": 30,
+    "goldOrigin": "original agent-authored synthetic boundary cases",
+    "realLearnerResponses": 0,
+    "examinerLabelledResponses": 0
+  },
+  "deepseek": {
+    "configured": false,
+    "apiCalls": 0,
+    "mode": "dry-run-only",
+    "requestedModel": "deepseek-flash",
+    "documentedModelVersion": "DeepSeek-V4.1-Flash-1017",
+    "documentationCheckedAt": "2026-10-19",
+    "documentationUrl": "https://api-docs.deepseek.com/quick_start/pricing/",
+    "maxRequestsPerRun": 2,
+    "maxCasesPerRequest": 8,
+    "maxOutputTokensPerRequest": 2048,
+    "goldLabelsSent": false,
+    "resultsCanActivateTemplates": false,
+    "interleavedQuestionVariantsPerSlice": 10,
+    "resumeOffsets": [
+      0,
+      16,
+      32,
+      48,
+      64
+    ],
+    "allSyntheticCasesReachableWithoutOverlap": true
+  },
+  "runtimeImplemented": true,
+  "runtimeLive": false,
+  "calibrationStatus": "synthetic-regression-only",
+  "officialPerLeafAoVerified": false,
+  "difficultyEquivalenceValidated": false,
+  "validatedCustomMarks": [],
+  "activeTemplates": 0,
+  "independentReviewRefs": [
+    "research/reviews/2026-10-19-CHEMISTRY-MASS-RUNTIME-REVIEW.json",
+    "research/reviews/2026-10-19-DEEPSEEK-RUNNER-DELTA.json"
+  ],
+  "postReviewOwnerChanges": [
+    "Clarified runner docstring only: configured credential is read for authentication, never task data. No behavior changed after the final runner delta review."
+  ]
+}
