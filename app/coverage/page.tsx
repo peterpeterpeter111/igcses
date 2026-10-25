@@ -147,6 +147,9 @@ export default function CoveragePage() {
             {evidenceHighlights.provisionalFamilyNames.join(', ')}).{' '}
             Experimental generators: {evidenceHighlights.experimentalGenerators}.
             Mechanical checks do not establish assessment or marking readiness.
+            Chemistry source-policy checks include {evidenceHighlights.sourcePolicyCalibration.examinerLabelledResponses} published examiner-labelled responses
+            and {evidenceHighlights.sourcePolicyCalibration.explicitSchemeConcessions} explicit mark-scheme concessions.
+            These development examples do not establish general marking accuracy or calibrated difficulty.
             The English prototype uses a finite original word bank and defers unfamiliar paraphrases for review.
             The one-mark matrix prototype has no validated 2/4/6-mark quiz adaptation. Live AI remains deferred.
           </li>

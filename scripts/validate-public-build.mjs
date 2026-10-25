@@ -6,6 +6,7 @@ const forbidden = [
   ['OpenAI API key environment name', /OPENAI_API_KEY/],
   ['DeepSeek API key environment name', /DEEPSEEK_API_KEY/],
   ['DeepSeek calibration transport endpoint', /api\.deepseek\.com/],
+  ['Private Chemistry examiner-response fixture', /published-(?:mr-evaluation-error|isotope-wrong-masses)/],
   ['OpenAI secret token pattern', /\bsk-(?:proj-)?[A-Za-z0-9_-]{20,}\b/],
   [
     'synthetic private solution fixture',

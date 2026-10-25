@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-25",
+  "reviewer": "independent template_gate_review_oct12 agent",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Bounded offline implementation and Q3 source images. Owner additionally visually inspected Q4 scheme7/report18; independent reviewer did not recheck Q4 images in this pass.",
+  "verdict": "No blocking defect found within the declared structured format.",
+  "implementationFiles": [
+    {
+      "path": "server/generators/isotope-mass.ts",
+      "sha256": "ba2987a2c0e8b1806cfde1fe460b3fb3562adfc1309d56b63632fe0ed6fcadae"
+    },
+    {
+      "path": "server/generators/isotope-mass-marking.ts",
+      "sha256": "643e687f78269bdd6e2490daccebb00bbe221fd519dc2f9fbdf73c855f640707"
+    },
+    {
+      "path": "server/generators/chemistry-source-calibration.ts",
+      "sha256": "13c5b26cbb722a6681f9ff876e9efa137340c1cc809402946afac1012c310a53"
+    },
+    {
+      "path": "server/generators/formula-mass-marking.ts",
+      "sha256": "f8b951093775a7ce33447eab469b55d00c0d3fa739dd14b2248135d2d1025842"
+    },
+    {
+      "path": "research/calibration/4CH1-2024-June-1-standard.json",
+      "sha256": "8cfd148fddbdf25beba7c64e646c77ee75e29b1af00e2daf51523aabe6547fd7"
+    }
+  ],
+  "findings": [
+    "Exact published wrong-mass aggregate3/4 is available only in the historical source wrapper; generated wrong-mass evidence defers.",
+    "Finite60-table domain preserves percentage total100, known nucleus triplets and exact non-tie rounding.",
+    "Two actual examiner-labelled examples are separated from three scheme concessions and480 synthetic cases.",
+    "No human review, held-out accuracy, empirical demand equivalence, free-text support or live activation is claimed."
+  ],
+  "limits": [
+    "Read-only agent review is not independent examiner or learner validation.",
+    "Final owner added safe-projection/hash regression after this review; scoring code unchanged."
+  ]
+}

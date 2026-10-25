@@ -1,0 +1,275 @@
+{
+  "schemaVersion": 1,
+  "id": "4CH1.weighted-isotope-mass",
+  "version": "0.1.0",
+  "status": "provisional",
+  "subject": "4CH1",
+  "origin": "exam-derived",
+  "syllabusRefs": [
+    {
+      "pointId": "4CH1:issue3:1.17",
+      "documentId": "4CH1-spec",
+      "issue": "3",
+      "pdfPages": [
+        18
+      ],
+      "mappingStatus": "verified"
+    },
+    {
+      "pointId": "4CH1:issue3:1.16",
+      "documentId": "4CH1-spec",
+      "issue": "3",
+      "pdfPages": [
+        18
+      ],
+      "mappingStatus": "verified"
+    }
+  ],
+  "sourceTasks": [
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q3.c",
+      "paperId": "4CH1-2024-June-1-standard",
+      "questionPaper": {
+        "documentId": "4CH1-2024-June-1-standard:questionPaper",
+        "pdfPages": [
+          7
+        ]
+      },
+      "markScheme": {
+        "documentId": "4CH1-2024-June-1-standard:markScheme",
+        "pdfPages": [
+          6
+        ]
+      },
+      "originalMarks": 4
+    }
+  ],
+  "answerGuideId": "chemistry:principles:isotope-weighted-mean",
+  "commandWord": "Calculate",
+  "skill": "Derive three isotope mass numbers from proton/neutron counts; calculate an abundance-weighted mean and round to one decimal place.",
+  "assessmentObjectives": [
+    "unassigned-pending-official-AO-review"
+  ],
+  "originalMarks": [
+    4
+  ],
+  "customQuiz": {
+    "candidateMarks": [
+      4
+    ],
+    "validatedMarks": [],
+    "adaptationStatus": "pending",
+    "rationale": "Preserve four source marks and three isotope rows. Transfer of the historical result-only concessions is an authored candidate policy, not empirical validation. No two/six-mark adaptation."
+  },
+  "stimulus": {
+    "types": [
+      "table"
+    ],
+    "originality": "original-generated-content",
+    "requirements": [
+      "Supply three isotope rows with equal proton number and explicit neutron counts and percentage abundances.",
+      "Use genuine Mg24/25/26, Si28/29/30 or S32/33/34 nuclei, but clearly state an enriched sample: these are authored proportions, not claims of natural abundances.",
+      "Keep all three positive whole-number percentages summing to100. Require one decimal place. Initial domain excludes exact-tenth results and rounding ties."
+    ],
+    "evidenceContract": [
+      "Freeze the original table, private exact numerator and rounded/unrounded results before answers.",
+      "Public projection contains only prompt, stimulus and maximumMarks; no seed, solution or calibration fixtures.",
+      "Keep the source table out of fresh generation. The source-specific wrong-mass aggregate concession is not a generated-response scoring rule."
+    ]
+  },
+  "parameters": [
+    {
+      "id": "tableVariant",
+      "type": "integer",
+      "domain": {
+        "minimum": 0,
+        "maximum": 59,
+        "step": 1
+      },
+      "constraints": [
+        "Seed modulo60 selects one of3 nuclear triplets and20 bounded abundance triples. Seed diversity does not imply unlimited item diversity."
+      ]
+    }
+  ],
+  "constraints": [
+    "All rows in one item represent the same element; mass number equals protons plus neutrons.",
+    "Use exact integer weighted numerators and denominator100. Filter zero abundances, exact tenths and half-way rounding ties.",
+    "No historical source table, nuclear decay, isotope notation recall or natural-abundance claim.",
+    "No live registration or validated mark maximum before independent demand, rendering and response calibration."
+  ],
+  "relationships": [
+    "For each isotope A=Z+N; weighted numerator=sum(A_i \u00d7 percentage_i); relative atomic mass=numerator/100.",
+    "Round the exact hundredths result to one decimal place.",
+    "The source M2 for a correct numerator subsumes M1; the source result-only concessions are four marks rounded and three marks unrounded."
+  ],
+  "difficultyControls": [
+    "Three explicit rows preserve mass-number inference, weighting, normalization and rounding demands.",
+    "Element/proportion variation, integer presentation and enriched context need empirical difficulty review.",
+    "No claim of learner-calibrated or examiner-approved equivalence."
+  ],
+  "transformations": [
+    {
+      "id": "bounded-nucleus-and-proportion-change",
+      "status": "candidate",
+      "conditions": "Only the60 reviewed finite inputs; source policy transfer and difficulty are unvalidated."
+    },
+    {
+      "id": "extra-isotopes-or-precision-or-marks",
+      "status": "forbidden",
+      "conditions": "Different isotope counts, percentage formats, rounding ties and mark maxima require separate review."
+    }
+  ],
+  "solutionProcedure": [
+    "Add protons and neutrons for each mass number.",
+    "Multiply each mass number by its corresponding abundance and sum.",
+    "Divide the exact sum by100.",
+    "Round to one decimal place."
+  ],
+  "marking": {
+    "method": "discrete-points",
+    "maximum": 4,
+    "criteria": [
+      {
+        "id": "mass-numbers",
+        "credit": 1,
+        "rule": "Derive all three correct mass numbers."
+      },
+      {
+        "id": "weighted-numerator",
+        "credit": 1,
+        "rule": "Obtain the correct weighted numerator; this correct M2 subsumes M1."
+      },
+      {
+        "id": "normalize",
+        "credit": 1,
+        "rule": "Correct numerator divided by100 or the exact unrounded mean."
+      },
+      {
+        "id": "round",
+        "credit": 1,
+        "rule": "Give the correct one-decimal result using the supplied table."
+      }
+    ],
+    "acceptableAlternatives": [
+      "Source explicitly awards4 for24.3 alone and3 for24.32 alone. Equivalent generated concessions remain an authored provisional transfer.",
+      "Equivalent numerical expressions need full transcription; the bounded marker supports only exact mass lists, numerator, denominator and result."
+    ],
+    "dependencies": [
+      "Correct M2 subsumes M1.",
+      "Source wrong masses12,13,14 with working1232/100 and final12.3 score3 as an aggregate concession. Do not invent per-mark allocation.",
+      "General wrong-mass ECF is explicitly allowed by the scheme but not implemented by the bounded recognizer; defer except the exact historical calibration example."
+    ],
+    "contradictionRules": [
+      "Conflicting values, wrong denominators, incorrect numerators, unsupported precision and extra evidence defer; no invented universal penalty."
+    ],
+    "units": null,
+    "tolerance": null,
+    "levelRubric": []
+  },
+  "commonErrors": [
+    {
+      "description": "Using the neutron column instead of adding protons and neutrons; source photographed working uses12,13,14 despite nearby prose describing protons/atomic numbers.",
+      "origin": "examiner-report",
+      "sourceRefs": [
+        {
+          "documentId": "4CH1-2024-June-1-standard:examinerReport",
+          "pdfPages": [
+            16,
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Leaving the result unrounded; source scheme distinguishes24.32 from24.3.",
+      "origin": "scheme",
+      "sourceRefs": [
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            6
+          ]
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ruleIds": [
+      "same-element",
+      "nucleon-sum",
+      "positive-percentages-total100",
+      "exact-arithmetic",
+      "rounding-no-ties",
+      "finite60",
+      "private-scheme",
+      "source-exclusion",
+      "explicit-ecf-deferral",
+      "no-live-activation"
+    ],
+    "testPlan": [
+      "Enumerate all60 tables, verify independent arithmetic and source exclusion.",
+      "Run480 synthetic response/deferral checks separately from five source-policy fixtures.",
+      "Obtain independent stimulus, notation, demand and response calibration before promotion."
+    ],
+    "testedSeeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      59,
+      999
+    ],
+    "boundaryCoverage": "partial",
+    "status": "not-run",
+    "runRefs": [
+      "research/validation/2026-10-25-chemistry-isotope-prototype.json"
+    ]
+  },
+  "runtime": {
+    "implemented": true,
+    "generatorId": "isotope-mass-prototype-v1",
+    "seedPolicy": "Unsigned32-bit seed modulo60; only60 distinct tables. No retries or infinite uniqueness claim.",
+    "maxRetries": 0,
+    "publicFields": [
+      "prompt",
+      "stimulus",
+      "maximumMarks"
+    ],
+    "privateFields": [
+      "seed",
+      "privateSolution",
+      "family",
+      "validation"
+    ],
+    "freezeBeforeAnswer": true,
+    "releaseSchemeAfter": "session-completed"
+  },
+  "review": {
+    "pedagogyStatus": "pending",
+    "reviewer": "Codex",
+    "reviewerType": "agent",
+    "humanReviewed": false,
+    "blockers": [
+      "Only60 related candidate tables; no empirical difficulty or learner-rendering calibration.",
+      "Historical result-only policy transfer remains provisional; free-text and general wrong-mass ECF unimplemented.",
+      "Two examiner-labelled response regressions are development fixtures, not held-out accuracy evidence.",
+      "Official per-leaf AO allocation and validated custom marks remain unverified. No live registry entry."
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-25",
+  "familyId": "4CH1.weighted-isotope-mass",
+  "version": "0.1.0",
+  "reviewerType": "agent",
+  "humanReviewed": false,
+  "scope": "Finite offline isotope generator, bounded structured transcription, two published examiner-labelled development responses and three explicit scheme concessions. Not held-out accuracy, empirical difficulty or active exam readiness.",
+  "implementationFiles": [
+    {
+      "path": "server/generators/isotope-mass.ts",
+      "sha256": "ba2987a2c0e8b1806cfde1fe460b3fb3562adfc1309d56b63632fe0ed6fcadae"
+    },
+    {
+      "path": "server/generators/isotope-mass-marking.ts",
+      "sha256": "643e687f78269bdd6e2490daccebb00bbe221fd519dc2f9fbdf73c855f640707"
+    },
+    {
+      "path": "server/generators/chemistry-source-calibration.ts",
+      "sha256": "13c5b26cbb722a6681f9ff876e9efa137340c1cc809402946afac1012c310a53"
+    },
+    {
+      "path": "server/generators/formula-mass-marking.ts",
+      "sha256": "f8b951093775a7ce33447eab469b55d00c0d3fa739dd14b2248135d2d1025842"
+    },
+    {
+      "path": "research/calibration/4CH1-2024-June-1-standard.json",
+      "sha256": "8cfd148fddbdf25beba7c64e646c77ee75e29b1af00e2daf51523aabe6547fd7"
+    },
+    {
+      "path": "tests/isotope-calibration.test.ts",
+      "sha256": "9cb869c0f39c50c361b663f163139180e283cfe35de0ca74f2be51d3870e56ad"
+    }
+  ],
+  "generation": {
+    "sampledSeeds": 1000,
+    "finiteTableVariants": 60,
+    "distinctTables": 60,
+    "sourceTableExcluded": true,
+    "roundingTiesExcluded": true,
+    "exactTenthsExcluded": true,
+    "deterministic": true,
+    "frozenPackages": true
+  },
+  "syntheticScoring": {
+    "cases": 480,
+    "scoredCases": 420,
+    "deferredCases": 60,
+    "goldOrigin": "agent-authored synthetic cases",
+    "passed": 480
+  },
+  "sourcePolicyRegression": {
+    "fixtureRef": "research/calibration/4CH1-2024-June-1-standard.json",
+    "examinerLabelledResponses": 2,
+    "explicitSchemeConcessions": 3,
+    "unlabelledExamplesExcluded": 1,
+    "passed": 5,
+    "heldOut": false,
+    "independentHumanReview": false,
+    "sourceOnlyAggregateEcf": true
+  },
+  "runtimeImplemented": true,
+  "runtimeLive": false,
+  "activeTemplates": 0,
+  "validatedCustomMarks": [],
+  "calibrationStatus": "source-policy-development-regression-only",
+  "difficultyEquivalenceValidated": false,
+  "officialPerLeafAoVerified": false,
+  "providerCalls": 0,
+  "independentReviewRefs": [
+    "research/reviews/2026-10-25-ISOTOPE-CALIBRATION-REVIEW.json"
+  ],
+  "postReviewOwnerChanges": [
+    "Added safe-summary/hash/no-activation and ambiguity regression; scoring behavior unchanged."
+  ]
+}

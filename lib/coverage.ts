@@ -28,8 +28,10 @@ import {
   paperDetailedSummary,
 } from './paper-discovery.ts';
 
+import calibrationSummary from '../research/calibration-summary.json' with { type: 'json' };
 import researchFamilies from '../research/template-summaries.json' with { type: 'json' };
 const familyNames: Record<string, string> = {
+  '4CH1.weighted-isotope-mass': 'Chemistry isotope weighted mean',
   '4CH1.relative-formula-mass': 'Chemistry relative formula mass',
   '4HB1.cube.measure': 'Human Biology cube measures',
   '4EB1.retrieve-two-causes': 'English retrieval',
@@ -60,6 +62,7 @@ export const evidenceHighlights = {
     latestDiscoveryDate,
     mathematicsSummary?.reviewedAt ?? latestDiscoveryDate,
     retrievalValidation.date,
+    calibrationSummary.reviewedAt,
     humanExtraction.reviewDate,
     biologyExtraction.reviewDate,
     chemistryExtraction.reviewDate,
@@ -92,6 +95,7 @@ export const evidenceHighlights = {
   provisionalFamilyNames: researchFamilies
     .filter((f) => f.status === 'provisional')
     .map((f) => familyNames[f.id] ?? f.id),
+  sourcePolicyCalibration: calibrationSummary,
   activeFamilies: activeFamilies.length,
 };
 export function coverageSummary() {

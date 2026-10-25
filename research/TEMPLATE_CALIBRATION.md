@@ -1,3 +1,19 @@
+# Current source-policy calibration — 25 October 2026
+
+Chemistry isotope-mass v0.1.0 is now an offline four-mark generator and bounded structured-transcription marker. It enumerates60 original tables from three genuine isotope triplets with clearly authored enriched-sample proportions. There are60 tables, not an unlimited bank. Exact-tenth results, rounding ties and the source table are excluded initially. Four source marks are retained, but no validated custom maximum or live template is claimed.
+
+480 synthetic cases (420 scored/60 deferred) test all60 tables separately from five source-policy fixtures. The fixture set contains TWO actual publisher examiner-labelled responses and THREE explicit mark-scheme concessions, not five independent learner responses. They are development examples used to shape the implementation, not a held-out accuracy estimate. Transcriptions and review are by agents, not a human examiner.
+
+The pictured Q3.c response uses neutron values12,13,14, obtains1232/100 and rounds12.32 to12.3. Pearson explicitly awards3/4. Nearby prose calls the inputs protons/atomic numbers; preserve this discrepancy. The exact historical response receives an aggregate3/4 in a source-only adapter. Individual mark attribution is not invented, and this exception is NOT transferred to generated responses. General wrong-mass ECF, conflicting work, unsupported notation and precision defer for fuller review.
+
+The Q4.a.ii response with complete correct caffeine substitution but final196 receives1/2, matching the examiner label. A different example with intermediate194 then unnecessary division to0.123 has no unambiguous numeric label: excluded from gold counts. The formula-mass shared scoring core was refactored without changing its existing generated-response policy; all80 prior synthetic cases remain required.
+
+Evidence: research/calibration/4CH1-2024-June-1-standard.json, research/validation/2026-10-25-chemistry-isotope-prototype.json and research/reviews/2026-10-25-ISOTOPE-CALIBRATION-REVIEW.json. Public coverage receives only an explicit counts/limits projection. No response fixture, source scan or private solution is imported into student code.
+
+Current bank:19 provisional families,25 versions,32 versioned source links,NINE offline runtimes,ZERO active exam templates. Curriculum and paper counts unchanged. Further response breadth, rendering/demand calibration, official AO review and all remaining blueprint/source/curriculum gates are unfinished. DeepSeek remains optional offline research; no key has been configured and no provider call has occurred. Student AI stays last.
+
+The 19 October record below is historical and remains useful for the runner and earlier synthetic prototype.
+
 # Template development and calibration
 
 The 19 October priority is to accelerate exam-template implementation and testing. DeepSeek may assist with offline research evaluations; this does not enable student-facing AI early. The production registry stays empty until source, generation, marking and blueprint gates are satisfied. A single reviewed family may cover multiple genuinely equivalent source tasks; a separate family per task is not required.

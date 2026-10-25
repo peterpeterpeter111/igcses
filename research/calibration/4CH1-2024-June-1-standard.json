@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "paperId": "4CH1-2024-June-1-standard",
+  "purpose": "Offline source-policy regression, not population accuracy or examiner qualification.",
+  "reviewDate": "2026-10-25",
+  "formulaMassReference": {
+    "terms": [
+      {
+        "symbol": "C",
+        "count": 8,
+        "relativeAtomicMass": 12
+      },
+      {
+        "symbol": "H",
+        "count": 10,
+        "relativeAtomicMass": 1
+      },
+      {
+        "symbol": "N",
+        "count": 4,
+        "relativeAtomicMass": 14
+      },
+      {
+        "symbol": "O",
+        "count": 2,
+        "relativeAtomicMass": 16
+      }
+    ],
+    "relativeFormulaMass": 194
+  },
+  "sourceHashes": {
+    "examinerReport": "921da18056ed5b629bd0c9f173d34cdcfd85fad369862585a8753d3256a0042c",
+    "markScheme": "204e6528094f3cd69b0eb8e06943fe5c73f7dd581943d62c57be7383d5c4a10b"
+  },
+  "cases": [
+    {
+      "id": "published-mr-evaluation-error",
+      "taskId": "4CH1-2024-June-1-standard.Q4.a.ii",
+      "labelOrigin": "examiner-report",
+      "sourceRefs": [
+        {
+          "documentId": "4CH1-2024-June-1-standard:examinerReport",
+          "pdfPages": [
+            18
+          ]
+        }
+      ],
+      "response": {
+        "finalAnswer": "196",
+        "terms": [
+          {
+            "symbol": "C",
+            "count": 8,
+            "relativeAtomicMass": 12
+          },
+          {
+            "symbol": "H",
+            "count": 10,
+            "relativeAtomicMass": 1
+          },
+          {
+            "symbol": "N",
+            "count": 4,
+            "relativeAtomicMass": 14
+          },
+          {
+            "symbol": "O",
+            "count": 2,
+            "relativeAtomicMass": 16
+          }
+        ],
+        "additionalEvidence": ""
+      },
+      "expectedScore": 1,
+      "reviewDate": "2026-10-25",
+      "reviewerType": "agent",
+      "humanReviewed": false
+    },
+    {
+      "id": "published-isotope-wrong-masses",
+      "taskId": "4CH1-2024-June-1-standard.Q3.c",
+      "labelOrigin": "examiner-report",
+      "sourceRefs": [
+        {
+          "documentId": "4CH1-2024-June-1-standard:examinerReport",
+          "pdfPages": [
+            16,
+            17
+          ]
+        }
+      ],
+      "response": {
+        "massNumbers": [
+          12,
+          13,
+          14
+        ],
+        "weightedNumerator": 1232,
+        "denominator": 100,
+        "finalAnswer": "12.3",
+        "additionalEvidence": ""
+      },
+      "expectedScore": 3,
+      "reviewDate": "2026-10-25",
+      "reviewerType": "agent",
+      "humanReviewed": false
+    },
+    {
+      "id": "scheme-rounded-result-only",
+      "taskId": "4CH1-2024-June-1-standard.Q3.c",
+      "labelOrigin": "mark-scheme-concession",
+      "sourceRefs": [
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            6
+          ]
+        }
+      ],
+      "response": {
+        "massNumbers": [],
+        "weightedNumerator": null,
+        "denominator": null,
+        "finalAnswer": "24.3",
+        "additionalEvidence": ""
+      },
+      "expectedScore": 4,
+      "reviewDate": "2026-10-25",
+      "reviewerType": "agent",
+      "humanReviewed": false
+    },
+    {
+      "id": "scheme-unrounded-result-only",
+      "taskId": "4CH1-2024-June-1-standard.Q3.c",
+      "labelOrigin": "mark-scheme-concession",
+      "sourceRefs": [
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            6
+          ]
+        }
+      ],
+      "response": {
+        "massNumbers": [],
+        "weightedNumerator": null,
+        "denominator": null,
+        "finalAnswer": "24.32",
+        "additionalEvidence": ""
+      },
+      "expectedScore": 3,
+      "reviewDate": "2026-10-25",
+      "reviewerType": "agent",
+      "humanReviewed": false
+    },
+    {
+      "id": "scheme-mr-result-only",
+      "taskId": "4CH1-2024-June-1-standard.Q4.a.ii",
+      "labelOrigin": "mark-scheme-concession",
+      "sourceRefs": [
+        {
+          "documentId": "4CH1-2024-June-1-standard:markScheme",
+          "pdfPages": [
+            7
+          ]
+        }
+      ],
+      "response": {
+        "finalAnswer": "194",
+        "terms": [],
+        "additionalEvidence": ""
+      },
+      "expectedScore": 2,
+      "reviewDate": "2026-10-25",
+      "reviewerType": "agent",
+      "humanReviewed": false
+    }
+  ],
+  "excludedCases": [
+    {
+      "taskId": "4CH1-2024-June-1-standard.Q4.a.ii",
+      "sourceRefs": [
+        {
+          "documentId": "4CH1-2024-June-1-standard:examinerReport",
+          "pdfPages": [
+            18
+          ]
+        }
+      ],
+      "summary": "Correct intermediate 194 followed by an unnecessary division and final 0.123.",
+      "expectedScore": null,
+      "reason": "No unambiguous numeric score attached to this individual example; do not invent a gold label."
+    }
+  ],
+  "sourceCautions": [
+    "The Q3.c pictured working uses 12,13,14: the neutron column. Nearby report prose calls these protons/atomic numbers. Preserve numeric evidence and the discrepancy.",
+    "The published 3-mark ECF example is an aggregate concession, not a justified allocation of its individual M1-M4 points.",
+    "Five fixtures include only two actual examiner-labelled responses. Three explicit scheme concessions are not three additional learner responses.",
+    "All transcriptions are agent-reviewed, not independently human-reviewed. Reusing these development cases is not a held-out evaluation."
+  ]
+}
