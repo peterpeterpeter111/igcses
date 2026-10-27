@@ -192,7 +192,7 @@ export const packages = sqliteTable(
   },
   (t) => [
     uniqueIndex('packages_session_position').on(t.sessionId, t.position),
-    check('package_marks_allowed', sql`${t.maxMarks} IN (2,4,6)`),
+    check('package_marks_allowed', sql`${t.maxMarks} IN (2,3,4,6)`),
   ],
 );
 export const answers = sqliteTable('answers', {
@@ -257,3 +257,15 @@ export const auditEvents = sqliteTable('audit_events', {
   detailsJson: text('details_json').notNull(),
   createdAt: text('created_at').notNull(),
 });
+
+export const studentProfiles = sqliteTable('student_profiles', {
+  ownerId: text('owner_id').primaryKey(),
+  pseudonym: text('pseudonym').notNull(),
+  updatedAt: text('updated_at').notNull(),
+});
+export const practiceSummaries = sqliteTable('practice_summaries', {
+  ownerId: text('owner_id').notNull(),
+  id: text('id').notNull(),
+  recordJson: text('record_json').notNull(),
+  updatedAt: text('updated_at').notNull(),
+}, (t) => [primaryKey({ columns: [t.ownerId, t.id] }), index('practice_owner_updated').on(t.ownerId, t.updatedAt)]);

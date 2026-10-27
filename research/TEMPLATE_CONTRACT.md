@@ -23,7 +23,7 @@ The same stable family ID links source tasks, chapter answer guides and generato
 
 Selection → parameter seed → original stimulus/question → independently checked solution and rubric → bounded validation/retry → immutable stored package → serve public fields only. Do not use a finite fixed-question list as the main generator. Record meaningful context/data/representation variation, structural signatures and recent served fingerprints to reject exact and near repeats.
 
-The server selects the blueprint once: **8 × 2 + 10 × 4 + 4 × 6 = 80 marks, 22 questions**. Maximum marks are only 2, 4 or 6; earned marks may be odd. Balance eligible topics, skills and difficulty before starting. If there are insufficient validated families, report the coverage gap rather than filling the session with unvalidated questions.
+The server selects the blueprint once: **8 × 3 + 8 × 4 + 4 × 6 = 80 marks, 20 questions** (27 October user revision). Current exam maxima are 3, 4 or 6; historical two-mark research families remain preserved and inactive; earned marks may be odd. Balance eligible topics, skills and difficulty before starting. If there are insufficient validated families, report the coverage gap rather than filling the session with unvalidated questions.
 
 Public response allowlist: instance ID, position, prompt, complete stimulus, maximum marks and progress. Server-only package: template/version/seed, sampled parameters, provenance, model and validator versions, solution, rubric, accepted alternatives, evidence spans, package hash and validation record. Never import research/template files containing solutions into a client bundle. Hidden HTML and pre-completion network responses count as disclosure.
 

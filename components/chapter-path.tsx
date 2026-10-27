@@ -1,6 +1,7 @@
 'use client';
 
 import { useId, useLayoutEffect, useRef, useState } from 'react';
+import { useBrowserReady } from '@/lib/use-browser-ready';
 import { ChapterOpenLink } from '@/components/subject-book-link';
 
 type Chapter = {
@@ -18,6 +19,7 @@ export function ChapterPath({
   subjectId: string;
   chapters: Chapter[];
 }) {
+  const ready = useBrowserReady();
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const clipId = useId();
@@ -97,6 +99,7 @@ export function ChapterPath({
           >
             <span className="chapter-stop-anchor" aria-hidden="true" />
             <button
+              disabled={!ready}
               type="button"
               className="chapter-card"
               aria-expanded={selected}

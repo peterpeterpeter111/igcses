@@ -1,5 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { BLUEPRINT } from '../server/quiz-contract.ts';
 import { SessionStore } from '../server/session-store.ts';
 import { setup } from './quiz-fixture.ts';
 void test('D1 migration and store preserve owner isolation and private packages', async () => {
@@ -125,7 +126,7 @@ void test('retry after reload does not advance or overwrite twice', async () => 
 });
 void test('all answers and marking persist before schemes become accessible', async () => {
   const { store, q, sqlite } = await setup();
-  for (let i = 0; i < 22; i++)
+  for (let i = 0; i < BLUEPRINT.length; i++)
     await store.submit('attempt', 'owner', 'q' + i, 'answer', 'k' + i);
   await assert.rejects(() => store.results('attempt', 'owner'));
   const grades = q.map((x) => ({
@@ -136,7 +137,7 @@ void test('all answers and marking persist before schemes become accessible', as
     revision: 1,
   }));
   await store.complete('attempt', 'owner', grades, 'synthetic');
-  assert.equal((await store.results('attempt', 'owner')).total, 22);
+  assert.equal((await store.results('attempt', 'owner')).total, BLUEPRINT.length);
   assert.equal((await store.history('owner')).length, 1);
   await assert.rejects(() => store.remove('attempt', 'other'));
   await store.remove('attempt', 'owner');

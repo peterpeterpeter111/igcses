@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { PracticeHistory } from '@/components/practice-history';
 import { SiteFrame } from '@/components/site-frame';
 import { getChatGPTUser, chatGPTSignInPath } from '@/app/chatgpt-auth';
 import { getDatabase } from '@/db';
@@ -20,8 +21,10 @@ export default async function History() {
     <SiteFrame>
       <main className="page">
         <h1>History</h1>
+        <PracticeHistory />
+        <h2>Account exam attempts</h2>
         {user ? (
-          <p>Signed in as {user.displayName}.</p>
+          <p>Your exam attempts are private to this signed-in account.</p>
         ) : (
           <p>
             <a href={chatGPTSignInPath('/history')} target="_top">
@@ -82,13 +85,6 @@ export default async function History() {
             </p>
           </div>
         )}
-        <button className="action" disabled>
-          Generate overall improvement summary
-        </button>
-        <p className="status">
-          Improvement summaries need saved attempts and the final AI
-          integration.
-        </p>
         <Link href="/">Return to the library →</Link>
       </main>
     </SiteFrame>

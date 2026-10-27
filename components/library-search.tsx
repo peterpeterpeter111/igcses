@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
+import { useBrowserReady } from '@/lib/use-browser-ready';
 import { Input } from '@/components/ui/input';
 import { getSubject } from '@/content/catalog';
 import { queueLibrarySearch, type SearchState } from '@/lib/library-search-client';
@@ -22,6 +23,7 @@ export function LibrarySearch({
   subjectId: string;
   className?: string;
 }) {
+  const ready = useBrowserReady();
   const [query, setQuery] = useState('');
   const [retry, setRetry] = useState(0);
   const [response, setResponse] = useState<SearchState & { query: string; subjectId: string }>({ status: 'ready', results: [], query: '', subjectId });
@@ -44,6 +46,7 @@ export function LibrarySearch({
         Search {subject.title}
       </label>
       <Input
+        disabled={!ready}
         id={inputId}
         type="search"
         className="search-input"

@@ -18,7 +18,7 @@ export default async function RevisionPage({ params, searchParams }: {
     <div className="eyebrow">RECALL · EXPLAIN · CHECK</div>
     <h1>{subject.title} practice</h1>
     <p>Choose chapters and build a set of original lesson exercises. Write your answers, then compare them with the explanations.</p>
-    <p className="status">Self-assessment · no exam score · this temporary session resets when you leave or reload. Your written answers stay on this page.</p>
+    <p className="status">Self-assessment · no exam score. Practice summaries are saved on this browser for History. Written answers stay on this page and reset when you leave or reload.</p>
     <RevisionSession key={`${id}/${chapter ?? ''}`} subjectId={id} questions={questions} chapterOptions={subject.chapters.map(({ id: chapterId, title }) => ({ id: chapterId, title }))} initialChapter={chapter} />
   </main></SiteFrame>;
 }

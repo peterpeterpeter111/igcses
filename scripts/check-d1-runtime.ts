@@ -94,7 +94,7 @@ try {
       'SECRET',
     ),
   );
-  for (let i = 2; i < 22; i++)
+  for (let i = 2; i < BLUEPRINT.length; i++)
     await store.submit(
       'runtime-test',
       'owner',
@@ -114,7 +114,7 @@ try {
     store.complete('runtime-test', 'owner', grades, 'test'),
   ]);
   assert.equal(marked.filter((r) => r.status === 'fulfilled').length, 1);
-  assert.equal((await store.results('runtime-test', 'owner')).total, 22);
+  assert.equal((await store.results('runtime-test', 'owner')).total, BLUEPRINT.length);
   await store.remove('runtime-test', 'owner');
   assert.equal(
     (

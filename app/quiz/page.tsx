@@ -24,13 +24,12 @@ export default function QuizPage() {
             checks pass.
           </p>
           <p>
-            The fixed blueprint is 8 two-mark questions, 10 four-mark questions
-            and 4 six-mark questions: 22 questions and 80 marks. Mark schemes
+            The exam blueprint is 8 three-mark questions, 8 four-mark questions
+            and 4 six-mark questions: 20 questions and 80 marks. Mark schemes
             stay private until the quiz is complete.
           </p>
           <p>
-            AI generation and examiner-style marking will be connected in the
-            final phase. No live AI call is made here.
+            AI marking, model review and the post-exam summary are not available yet. No live AI call is made here.
           </p>
         </div>
         <Link className="action" href="/">

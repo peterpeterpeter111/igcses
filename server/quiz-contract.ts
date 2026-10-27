@@ -1,7 +1,7 @@
-export type Marks = 2 | 4 | 6;
+export type Marks = 2 | 3 | 4 | 6;
 export const BLUEPRINT: readonly Marks[] = Object.freeze([
-  ...Array<Marks>(8).fill(2),
-  ...Array<Marks>(10).fill(4),
+  ...Array<Marks>(8).fill(3),
+  ...Array<Marks>(8).fill(4),
   ...Array<Marks>(4).fill(6),
 ]);
 export type PublicQuestion = {
@@ -48,15 +48,15 @@ export class QuizError extends Error {
 }
 export function validateBlueprint(values: readonly number[]) {
   if (
-    values.length !== 22 ||
+    values.length !== BLUEPRINT.length ||
     values.reduce((a, b) => a + b, 0) !== 80 ||
-    values.filter((v) => v === 2).length !== 8 ||
-    values.filter((v) => v === 4).length !== 10 ||
+    values.filter((v) => v === 3).length !== 8 ||
+    values.filter((v) => v === 4).length !== 8 ||
     values.filter((v) => v === 6).length !== 4
   )
     throw new QuizError(
       'BLUEPRINT',
-      'A quiz requires 8 × 2, 10 × 4 and 4 × 6 marks.',
+      'A quiz requires 8 × 3, 8 × 4 and 4 × 6 marks.',
     );
 }
 function publicFields(q: PublicQuestion): PublicQuestion {
@@ -158,7 +158,7 @@ export function submitAnswer(
   const next = structuredClone(attempt);
   next.answers[questionId] = { text, key, skipped: !text.trim() };
   next.position++;
-  if (next.position === 22) next.status = 'marking';
+  if (next.position === next.questions.length) next.status = 'marking';
   return next;
 }
 export function finishMarking(
@@ -169,15 +169,15 @@ export function finishMarking(
   assertOwner(attempt, ownerId);
   if (
     attempt.status !== 'marking' ||
-    grades.length !== 22 ||
-    Object.keys(attempt.answers).length !== 22
+    grades.length !== attempt.questions.length ||
+    Object.keys(attempt.answers).length !== attempt.questions.length
   )
     throw new QuizError(
       'INCOMPLETE',
       'All answers must be saved before marking completes.',
     );
   const byId = new Map(grades.map((g) => [g.questionId, g]));
-  if (byId.size !== 22) throw new QuizError('GRADE', 'Duplicate grades.');
+  if (byId.size !== attempt.questions.length) throw new QuizError('GRADE', 'Duplicate grades.');
   for (const q of attempt.questions) {
     const g = byId.get(q.public.id);
     if (
@@ -204,7 +204,7 @@ export function publicAttempt(attempt: Attempt, ownerId: string) {
     subjectId: attempt.subjectId,
     status: attempt.status,
     position: attempt.position,
-    totalQuestions: 22,
+    totalQuestions: attempt.questions.length,
     totalMarks: 80,
     question:
       attempt.status === 'answering'

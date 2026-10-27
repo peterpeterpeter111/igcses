@@ -3,6 +3,7 @@ export type QuizView = {
   id: string;
   status: 'answering' | 'marking' | 'complete';
   position: number;
+  totalQuestions?: number;
   question: {
     id: string;
     position: number;

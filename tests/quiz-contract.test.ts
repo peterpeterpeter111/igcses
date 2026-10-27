@@ -65,10 +65,10 @@ void test('identical retries are idempotent; changed repeats conflict', () => {
   assert.equal(submitAnswer(a, 'owner', 'q0', 'hello', 'key').position, 1);
   assert.throws(() => submitAnswer(a, 'owner', 'q0', 'changed', 'key'));
 });
-void test('marking begins only after all 22 answers; schemes stay locked until completed marking', () => {
+void test('marking begins only after all 20 answers; schemes stay locked until completed marking', () => {
   let a = fixture();
   assert.throws(() => releaseResults(a, 'owner'));
-  for (let i = 0; i < 22; i++)
+  for (let i = 0; i < BLUEPRINT.length; i++)
     a = submitAnswer(a, 'owner', 'q' + i, 'student answer', 'k' + i);
   assert.equal(a.status, 'marking');
   assert.throws(() => releaseResults(a, 'owner'));
@@ -80,8 +80,8 @@ void test('marking begins only after all 22 answers; schemes stay locked until c
     revision: 1,
   }));
   const result = releaseResults(finishMarking(a, 'owner', grades), 'owner');
-  assert.equal(result.total, 22);
-  assert.equal(result.percentage, 27.5);
+  assert.equal(result.total, BLUEPRINT.length);
+  assert.equal(result.percentage, 25);
   assert.equal(result.questions[0].solution, 'PRIVATE_SOLUTION');
   assert.throws(() =>
     finishMarking(

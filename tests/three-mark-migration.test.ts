@@ -1,0 +1,26 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { DatabaseSync } from 'node:sqlite';
+import { readFileSync } from 'node:fs';
+void test('three-mark migration preserves legacy questions, submitted answers, grades and enforced foreign keys', () => {
+ const db = new DatabaseSync(':memory:'); db.exec('PRAGMA foreign_keys=ON');
+ for (const file of ['0000_dapper_omega_sentinel.sql', '0001_young_exiles.sql']) db.exec(readFileSync('drizzle/' + file, 'utf8'));
+ db.exec(`INSERT INTO users(id,created_at) VALUES('owner','date');
+ INSERT INTO subjects(id,code,title) VALUES('physics','4PH1','Physics');
+ INSERT INTO quiz_sessions(id,owner_id,subject_id,status,blueprint_json,created_at,updated_at) VALUES('old','owner','physics','complete','[]','date','date');
+ INSERT INTO question_packages VALUES('q','old',0,2,'{"prompt":"original"}','{"solution":"retained"}','hash','date');
+ INSERT INTO answers VALUES('q','original answer','submitted',1,'key','date');
+ INSERT INTO grading_revisions VALUES('g','q',1,1,'hash','synthetic','{"feedback":"retained"}','date');`);
+ const names = ['question_packages', 'answers', 'grading_revisions'];
+ const before = names.map((n) => db.prepare('SELECT * FROM ' + n).all());
+ db.exec(readFileSync('drizzle/0002_solid_hemingway.sql', 'utf8'));
+ assert.deepEqual(names.map((n) => db.prepare('SELECT * FROM ' + n).all()), before);
+ assert.deepEqual(db.prepare('PRAGMA foreign_key_check').all(), []);
+ assert.equal(db.prepare('PRAGMA foreign_keys').get()?.foreign_keys, 1);
+ db.exec(`INSERT INTO question_packages VALUES('new','old',1,3,'{}','{}','h','date')`);
+ assert.throws(() => db.exec(`INSERT INTO question_packages VALUES('bad','old',2,5,'{}','{}','h','date')`));
+ db.exec(`DELETE FROM question_packages WHERE id='q'`);
+ assert.equal(db.prepare('SELECT COUNT(*) AS n FROM answers').get()?.n, 0);
+ assert.equal(db.prepare('SELECT COUNT(*) AS n FROM grading_revisions').get()?.n, 0);
+ db.close();
+});

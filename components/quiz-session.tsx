@@ -99,7 +99,7 @@ export function QuizSession({ sessionId }: { sessionId: string }) {
       {view?.status === 'answering' && view.question && (
         <>
           <div className="quiz-meta">
-            <span>Question {view.position + 1} of 22</span>
+            <span>Question {view.position + 1} of {view.totalQuestions ?? '—'}</span>
             <strong>{view.question.maxMarks} marks</strong>
           </div>
           {view.question.stimulus && (
@@ -109,6 +109,8 @@ export function QuizSession({ sessionId }: { sessionId: string }) {
           <label htmlFor="answer">Your answer and working</label>
           <Textarea
             id="answer"
+            rows={10}
+            placeholder="Write your answer in paragraphs where appropriate. For calculations, show your working."
             value={answer}
             onChange={(e) => client.edit(e.target.value)}
             disabled={busy || uncertain || conflict}

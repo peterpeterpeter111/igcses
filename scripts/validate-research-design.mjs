@@ -114,11 +114,13 @@ check('Untested family cannot be promoted to active', () => {
   assert.equal(validateTemplate(candidate), false);
 });
 check(
-  'Custom maximum of three is rejected; source marks are preserved separately',
+  'Three-mark candidates are allowed without inventing validated credit; source marks remain separate',
   () => {
     const candidate = structuredClone(template);
     candidate.customQuiz.candidateMarks = [3];
-    assert.equal(validateTemplate(candidate), false);
+    assert.equal(validateTemplate(candidate), true);
+    candidate.customQuiz.validatedMarks = [3];
+    assert(templateContractErrors(candidate).length > 0);
     assert.deepEqual(template.originalMarks, [2]);
     assert(pilot.tasks.some((t) => t.marks === 15));
   },
@@ -226,11 +228,11 @@ check(
   },
 );
 check(
-  'Custom blueprint arithmetic: 22 tasks, 80 marks, only allowed maxima',
+  'Custom blueprint arithmetic: 20 tasks, 80 marks, three/four/six maxima',
   () => {
     const plan = [
-      [8, 2],
-      [10, 4],
+      [8, 3],
+      [8, 4],
       [4, 6],
     ];
     assert.equal(
@@ -239,9 +241,9 @@ check(
     );
     assert.equal(
       plan.reduce((s, [n]) => s + n, 0),
-      22,
+      20,
     );
-    assert(plan.every(([, m]) => [2, 4, 6].includes(m)));
+    assert(plan.every(([, m]) => [3, 4, 6].includes(m)));
   },
 );
 

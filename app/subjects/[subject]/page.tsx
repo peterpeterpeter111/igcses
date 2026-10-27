@@ -41,7 +41,7 @@ export default async function SubjectPage({
               <p className="status">Papers {s.papers}</p>
               <p className="status">Specification issue {s.issue}</p>
               <Link href={'/coverage/' + s.id}>Syllabus & source audit →</Link>
-              <Link href={'/quiz?subject=' + s.id}>Custom practice →</Link>
+              <Link href={'/revision/' + s.id}>Custom practice →</Link>
             </aside>
             <article>
               <LibrarySearch subjectId={s.id} />

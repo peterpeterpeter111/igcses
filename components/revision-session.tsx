@@ -7,8 +7,16 @@ import { Progress } from '@/components/ui/progress';
 import type { RevisionAnswer, RevisionQuestion } from '@/lib/revision-contract';
 import { MAX_PRACTICE_QUESTIONS, practiceChapters, selectPractice } from '@/lib/revision-selection';
 
+import { useBrowserReady } from '@/lib/use-browser-ready';
+import { accountPractice } from '@/lib/account-practice';
+
 type Confidence = 'understood' | 'revisit';
-export function RevisionSession({ subjectId, questions, chapterOptions, initialChapter }: { subjectId: string; questions: RevisionQuestion[]; chapterOptions: { id: string; title: string }[]; initialChapter?: string }) {
+type Props = { subjectId: string; questions: RevisionQuestion[]; chapterOptions: { id: string; title: string }[]; initialChapter?: string };
+export function RevisionSession(props: Props) {
+  const ready = useBrowserReady();
+  return ready ? <ReadyRevisionSession {...props} /> : <section aria-busy="true"><p>Loading practice controls…</p><noscript>Custom practice needs JavaScript. The lesson notes remain available.</noscript></section>;
+}
+function ReadyRevisionSession({ subjectId, questions, chapterOptions, initialChapter }: Props) {
   const availableChapters = practiceChapters(questions);
   const chapters = chapterOptions.map((chapter) => ({ ...chapter, count: availableChapters.find((c) => c.id === chapter.id)?.count ?? 0 }));
   const [selected, setSelected] = useState(() => initialChapter ? [initialChapter] : availableChapters.map((c) => c.id));
@@ -23,10 +31,22 @@ export function RevisionSession({ subjectId, questions, chapterOptions, initialC
   const [confidence, setConfidence] = useState<Record<string, Confidence>>({});
   const [busyId, setBusyId] = useState<string | null>(null);
   const [error, setError] = useState('');
+  const [record, setRecord] = useState<{ id: string; startedAt: string } | null>(null);
+  const [saveFailed, setSaveFailed] = useState(false);
   const controller = useRef<AbortController | null>(null);
   const heading = useRef<HTMLHeadingElement>(null);
   useEffect(() => () => { controller.current?.abort(); controller.current = null; }, []);
   useEffect(() => { if (phase !== 'setup') heading.current?.focus(); }, [position, phase]);
+  useEffect(() => {
+    if (!record || phase === 'setup' || !set.length) return;
+    const completed = phase === 'review' ? set.length : position;
+    const summary = { ...record, subject: subjectId, updatedAt: new Date().toISOString(), questions: set.length, completed,
+      understood: Object.values(confidence).filter((v) => v === 'understood').length,
+      revisit: Object.values(confidence).filter((v) => v === 'revisit').length, finished: phase === 'review' };
+    let mounted = true;
+    void accountPractice('POST', summary).then(() => { if (mounted) setSaveFailed(false); }).catch(() => { if (mounted) setSaveFailed(true); });
+    return () => { mounted = false; };
+  }, [record, phase, set, position, confidence, subjectId]);
   const available = questions.filter((q) => selected.includes(q.id.split('/')[0])).length;
   const validCount = Number.isInteger(Number(count)) && Number(count) >= 1 && Number(count) <= MAX_PRACTICE_QUESTIONS;
   const target = validCount ? Math.min(Number(count), available) : 0;
@@ -53,6 +73,8 @@ export function RevisionSession({ subjectId, questions, chapterOptions, initialC
     const nextSet = selectPractice(candidates, { chapters: selected, count: Number(count), order });
     if (!nextSet.length) return;
     controller.current?.abort(); controller.current = null;
+    setRecord({ id: crypto.randomUUID(), startedAt: new Date().toISOString() });
+    setSaveFailed(false);
     setSet(nextSet); setPosition(0); setAnswers({}); setGuides({}); setConfidence({}); setError(''); setBusyId(null); setPhase('practice');
   }
   function next(assessment?: Confidence) {
@@ -85,7 +107,9 @@ export function RevisionSession({ subjectId, questions, chapterOptions, initialC
     const revisits = set.filter((q) => confidence[q.id] === 'revisit').length;
     return <section className="practice-review">
       <h2 ref={heading} tabIndex={-1}>Practice complete</h2>
-      <p>{set.length} questions finished. You marked {understood} as understood and {revisits} to revisit; {set.length - understood - revisits} are awaiting your review. These are your own assessments, not awarded marks.</p>
+      <p>{set.length} {set.length === 1 ? 'question' : 'questions'} finished. You marked {understood} as understood and {revisits} to revisit; {set.length - understood - revisits} are awaiting your review. These are your own assessments, not awarded marks.</p>
+      <p><Link href="/history">View practice history →</Link></p>
+      {saveFailed && <p role="alert">Your account could not save the practice summary. Your answers remain on this page.</p>}
       {error && <p role="alert" className="error">{error}</p>}
       {set.map((question, index) => <article className="note" key={question.id}>
         <small>Question {index + 1} · {question.chapter}</small><h3>{question.prompt}</h3>
@@ -103,7 +127,7 @@ export function RevisionSession({ subjectId, questions, chapterOptions, initialC
     <Progress value={position} max={set.length} aria-label="Practice progress" />
     <h2 className="quiz-question" ref={heading} tabIndex={-1}>{current.prompt}</h2>
     <label htmlFor="revision-answer">Your answer or working</label>
-    <Textarea id="revision-answer" value={answers[current.id] ?? ''} onChange={(e) => setAnswers((previous) => ({ ...previous, [current.id]: e.target.value }))} maxLength={8000} readOnly={!!guide} placeholder="Try explaining it in your own words…" />
+    <Textarea id="revision-answer" value={answers[current.id] ?? ''} onChange={(e) => setAnswers((previous) => ({ ...previous, [current.id]: e.target.value }))} maxLength={8000} readOnly={!!guide} rows={8} placeholder="Write your explanation in paragraphs, or show your calculation and working…" />
     {error && <p role="alert" className="error">{error}</p>}
     {feedback === 'end' ? <><p className="status">Explanations stay hidden until you finish this set.</p><Button onClick={() => next()}>{position + 1 === set.length ? 'Finish set and review' : answers[current.id]?.trim() ? 'Next question' : 'Leave blank and continue'}</Button></> : !guide ? explanation(current) : <div className="note" aria-live="polite">
       {explanation(current)}<p>How confident are you in your explanation?</p><div className="revision-actions"><Button onClick={() => next('understood')}>I understand this</Button><Button variant="outline" onClick={() => next('revisit')}>I need to revisit this</Button></div>
