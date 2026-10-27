@@ -28,19 +28,20 @@ export default function QuizPage() {
         <div className="note">
           <h2>80-mark exam quizzes</h2>
           <p>
-            No validated family is active yet. Quizzes will become available
-            after the source-linked templates, generated solutions and marking
-            checks pass.
+            Written-answer exams and AI feedback are still under review. Use
+            custom practice above to study now, write answers and compare them
+            with the lesson explanations.
           </p>
           <p>
-            The exam blueprint is 8 three-mark questions, 8 four-mark questions
+            The planned exam contains 8 three-mark questions, 8 four-mark questions
             and 4 six-mark questions: 20 questions and 80 marks. Mark schemes
             stay private until the quiz is complete.
           </p>
           <p>
-            Live AI marking and exam summaries remain unavailable until provider setup, educational evaluation and the subject’s validated bank are ready. The review workflow keeps all marking and explanations until after submission.
+            AI marking and exam summaries are not available yet. When exams
+            launch, marking and explanations will begin after every answer has
+            been submitted.
           </p>
-          {setup.missing.length > 0 && <details><summary>AI setup still required</summary><ul>{setup.missing.map((item) => <li key={item}>{item}</li>)}</ul></details>}
         </div>
         <Link className="action" href="/">
           Return to the library
