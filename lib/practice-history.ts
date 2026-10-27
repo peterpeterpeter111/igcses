@@ -1,5 +1,6 @@
 import { subjects } from '../content/catalog.ts';
 export const PRACTICE_HISTORY_KEY = 'igcses.practice-history.v1';
+export function practiceHistoryKey(name: string | null): string { return name ? `${PRACTICE_HISTORY_KEY}.${encodeURIComponent(name.normalize('NFC').trim().toLocaleLowerCase())}` : PRACTICE_HISTORY_KEY; }
 export type PracticeRecord = { id: string; subject: string; startedAt: string; updatedAt: string; questions: number; completed: number; understood: number; revisit: number; finished: boolean };
 type Reader = Pick<Storage, 'getItem'>;
 type Writer = Reader & Pick<Storage, 'setItem'>;
@@ -13,21 +14,22 @@ export function validPracticeRecord(value: unknown): value is PracticeRecord {
     r.completed >= 0 && r.completed <= r.questions && r.understood >= 0 && r.revisit >= 0 && r.understood + r.revisit <= r.completed &&
     typeof r.finished === 'boolean' && (!r.finished || r.completed === r.questions);
 }
-export function readPracticeHistory(storage: Reader): PracticeRecord[] {
-  const raw = storage.getItem(PRACTICE_HISTORY_KEY);
+export function readPracticeHistory(storage: Reader, name: string | null = null): PracticeRecord[] {
+  const raw = storage.getItem(practiceHistoryKey(name));
   if (!raw) return [];
   if (raw.length > 100000) throw new Error('Saved practice data is too large.');
   const data: unknown = JSON.parse(raw);
   if (!Array.isArray(data) || !data.every(validPracticeRecord) || new Set(data.map((r) => r.id)).size !== data.length) throw new Error('Saved practice data could not be read.');
   return data.sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)).slice(0, 30);
 }
-export function savePracticeRecord(storage: Writer, record: PracticeRecord): boolean {
+export function savePracticeRecord(storage: Writer, record: PracticeRecord, name: string | null = null): boolean {
   if (!validPracticeRecord(record)) return false;
   try {
-    const rows = readPracticeHistory(storage).filter((r) => r.id !== record.id);
+    const key = practiceHistoryKey(name);
+    const rows = readPracticeHistory(storage, name).filter((r) => r.id !== record.id);
     rows.push(record);
     rows.sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
-    storage.setItem(PRACTICE_HISTORY_KEY, JSON.stringify(rows.slice(0, 30)));
+    storage.setItem(key, JSON.stringify(rows.slice(0, 30)));
     return true;
   } catch { return false; }
 }

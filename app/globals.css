@@ -6,3 +6,5 @@
 @import './theme-overrides.css';
 
 .student-bar { display:flex; justify-content:space-between; gap:1rem; padding:.7rem max(1rem, calc((100vw - 1120px)/2)); border-bottom:1px solid #d4c2ae; background:#f4ede3; color:#4c2026; font-size:.85rem; }
+
+.student-signout { border:0; padding:0; background:transparent; color:#852d37; text-decoration:underline; cursor:pointer; font:inherit; }
