@@ -3,6 +3,8 @@ import { join } from 'node:path';
 
 const root = 'dist/client';
 const forbidden = [
+  ['Composio backend credential environment name', /COMPOSIO_API_KEY/],
+  ['Composio backend transport', /backend\.composio\.dev/],
   ['OpenAI API key environment name', /OPENAI_API_KEY/],
   ['DeepSeek API key environment name', /DEEPSEEK_API_KEY/],
   ['DeepSeek calibration transport endpoint', /api\.deepseek\.com/],

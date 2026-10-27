@@ -10,9 +10,9 @@ import {
 } from '@/server/http';
 type Context = { params: Promise<{ session: string }> };
 export const dynamic = 'force-dynamic';
-export function GET(_request: Request, { params }: Context) {
+export function GET(request: Request, { params }: Context) {
   return handle(async () => {
-    const who = await owner();
+    const who = await owner(request);
     return json(
       await new SessionStore(getDatabase()).current(
         (await params).session,
@@ -24,7 +24,7 @@ export function GET(_request: Request, { params }: Context) {
 export function PATCH(request: Request, { params }: Context) {
   return handle(async () => {
     sameOrigin(request);
-    const who = await owner(),
+    const who = await owner(request),
       body = await readJson(request),
       id = (await params).session;
     if (typeof body.questionId !== 'string' || typeof body.answer !== 'string')
@@ -59,7 +59,7 @@ export function PATCH(request: Request, { params }: Context) {
 export function DELETE(request: Request, { params }: Context) {
   return handle(async () => {
     sameOrigin(request);
-    const who = await owner();
+    const who = await owner(request);
     return json(
       await new SessionStore(getDatabase()).remove((await params).session, who),
     );

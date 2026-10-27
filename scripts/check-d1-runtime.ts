@@ -8,6 +8,7 @@ import { notes } from '../content/notes.ts';
 import { SessionStore } from '../server/session-store.ts';
 import { freezeQuestion } from '../server/question-package.ts';
 import { BLUEPRINT } from '../server/quiz-contract.ts';
+import { ReviewStore } from '../server/ai/review-store.ts';
 const runtime = new Miniflare({
   modules: true,
   script: 'export default {fetch(){return new Response("test-only")}}',
@@ -109,6 +110,15 @@ try {
     rubricHash: q.packageHash,
     revision: 1,
   }));
+  const attempt = (await store.load('runtime-test', 'owner')).attempt;
+  const reviewStore = new ReviewStore(db as unknown as D1Database);
+  const lease = await reviewStore.claim(attempt, 'synthetic-config');
+  await assert.rejects(() => reviewStore.claim(attempt, 'synthetic-config'));
+  await reviewStore.save(attempt.id, attempt.ownerId, lease.token, { ...lease.state, records: { fixture: { model: 'test-only', generationId: 'test-only', completedAt: new Date().toISOString(), value: { synthetic: true } } } });
+  const resumed = await reviewStore.claim(attempt, 'synthetic-config');
+  assert.equal(Object.keys(resumed.state.records).length, 1);
+  await assert.rejects(() => reviewStore.save(attempt.id, attempt.ownerId, lease.token, lease.state));
+  await reviewStore.save(attempt.id, attempt.ownerId, resumed.token, resumed.state);
   const marked = await Promise.allSettled([
     store.complete('runtime-test', 'owner', grades, 'test'),
     store.complete('runtime-test', 'owner', grades, 'test'),
@@ -116,6 +126,8 @@ try {
   assert.equal(marked.filter((r) => r.status === 'fulfilled').length, 1);
   assert.equal((await store.results('runtime-test', 'owner')).total, BLUEPRINT.length);
   await store.remove('runtime-test', 'owner');
+  assert.equal((await db.prepare('SELECT COUNT(*) n FROM ai_review_jobs').first<{ n: number }>())?.n, 0);
+  assert.equal((await db.prepare('SELECT COUNT(*) n FROM ai_review_records').first<{ n: number }>())?.n, 0);
   assert.equal(
     (
       await db

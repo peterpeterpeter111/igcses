@@ -1,0 +1,31 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { browserOwner, browserSessionResponse, examRequestId } from '../server/browser-identity.ts';
+const origin = 'https://study.example';
+const req = (name: string, cookie = '') => new Request(origin + '/api/student/session', { method: 'POST', headers: { Origin: origin, Cookie: cookie }, body: JSON.stringify({ pseudonym: name }) });
+const cookies = (response: Response) => response.headers.getSetCookie().map((s) => s.split(';')[0]).join('; ');
+void test('Study names use secure browser capabilities without ChatGPT login or cross-device name impersonation', async () => {
+  const a = await browserSessionResponse(req('CrimsonFox')), b = await browserSessionResponse(req('CrimsonFox'));
+  assert.equal(a.status, 200);
+  assert.ok(a.headers.getSetCookie().every((c) => c.includes('Secure') && c.includes('HttpOnly') && c.includes('SameSite=Strict') && c.includes('Path=/')));
+  const ownerA = await browserOwner(req('CrimsonFox', cookies(a))), ownerB = await browserOwner(req('CrimsonFox', cookies(b)));
+  assert.ok(ownerA?.startsWith('browser:')); assert.notEqual(ownerA, ownerB);
+  const key = crypto.randomUUID();
+  assert.equal(await examRequestId(ownerA!, 'physics', key), await examRequestId(ownerA!, 'physics', key));
+  assert.notEqual(await examRequestId(ownerA!, 'physics', key), await examRequestId(ownerB!, 'physics', key));
+  assert.notEqual(await examRequestId(ownerA!, 'physics', key), await examRequestId(ownerA!, 'biology', key));
+  const same = await browserSessionResponse(req('crimsonfox', cookies(a)));
+  assert.equal(await browserOwner(req('crimsonfox', cookies(same))), ownerA);
+  const different = await browserSessionResponse(req('AnotherName', cookies(a)));
+  assert.notEqual(await browserOwner(req('AnotherName', cookies(different))), ownerA);
+  assert.equal(await browserOwner(req('CrimsonFox')), null);
+  assert.equal(await browserOwner(req('CrimsonFox', cookies(a) + '; ' + cookies(a))), null);
+});
+void test('Browser session rejects cross-origin and oversized input, and logout expires only the selected profile', async () => {
+  const cross = new Request(origin + '/api/student/session', { method: 'POST', headers: { Origin: 'https://elsewhere.example' }, body: '{}' });
+  assert.equal((await browserSessionResponse(cross)).status, 403);
+  assert.equal((await browserSessionResponse(req('x'.repeat(800)))).status, 413);
+  const logout = await browserSessionResponse(new Request(origin + '/api/student/session', { method: 'DELETE', headers: { Origin: origin } }));
+  assert.equal(logout.headers.getSetCookie().length, 1); assert.match(logout.headers.get('set-cookie')!, /Max-Age=0/);
+  assert.doesNotMatch(logout.headers.get('set-cookie')!, /device/);
+});

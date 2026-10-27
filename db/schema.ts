@@ -269,3 +269,20 @@ export const practiceSummaries = sqliteTable('practice_summaries', {
   recordJson: text('record_json').notNull(),
   updatedAt: text('updated_at').notNull(),
 }, (t) => [primaryKey({ columns: [t.ownerId, t.id] }), index('practice_owner_updated').on(t.ownerId, t.updatedAt)]);
+
+export const aiReviewJobs = sqliteTable('ai_review_jobs', {
+  sessionId: text('session_id').primaryKey().notNull().references(() => sessions.id, { onDelete: 'cascade' }),
+  ownerId: text('owner_id').notNull(),
+  configHash: text('config_hash').notNull(),
+  stateJson: text('state_json').notNull(),
+  revision: integer('revision').notNull().default(0),
+  leaseToken: text('lease_token'),
+  leaseUntil: integer('lease_until'),
+  errorCode: text('error_code'),
+  updatedAt: text('updated_at').notNull(),
+});
+export const aiReviewRecords = sqliteTable('ai_review_records', {
+  sessionId: text('session_id').notNull().references(() => aiReviewJobs.sessionId, { onDelete: 'cascade' }),
+  stepKey: text('step_key').notNull(),
+  recordJson: text('record_json').notNull(),
+}, (t) => [primaryKey({ columns: [t.sessionId, t.stepKey] })]);

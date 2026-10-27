@@ -4,6 +4,7 @@ import { QuizClient } from '@/lib/quiz-client';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
+import { ExaminerReview } from '@/components/examiner-review';
 import {
   AlertDialog,
   AlertDialogContent,
@@ -163,6 +164,7 @@ export function QuizSession({ sessionId }: { sessionId: string }) {
             Your complete attempt is awaiting marking. Question packages and
             answers remain frozen.
           </p>
+          <ExaminerReview sessionId={sessionId} onComplete={() => void client.load()} />
           <Button className="action" onClick={() => client.load()}>
             Check marking status
           </Button>
@@ -197,6 +199,7 @@ export function QuizSession({ sessionId }: { sessionId: string }) {
               <p>{q.grade.rationale}</p>
             </section>
           ))}
+          <ExaminerReview sessionId={sessionId} summary />
         </>
       )}
       <p>

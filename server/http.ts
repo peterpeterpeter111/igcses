@@ -1,5 +1,6 @@
 import { getChatGPTUser } from '../app/chatgpt-auth';
 import { QuizError } from './quiz-contract';
+import { browserOwner } from './browser-identity';
 export class HttpError extends Error {
   status: number;
   constructor(status: number, message: string) {
@@ -12,10 +13,12 @@ export const json = (body: unknown, status = 200) =>
     status,
     headers: { 'Cache-Control': 'private, no-store', Vary: 'Cookie' },
   });
-export async function owner() {
+export async function owner(request?: Request) {
+  const browser = request ? await browserOwner(request) : null;
+  if (browser) return browser;
   const user = await getChatGPTUser();
-  if (!user) throw new HttpError(401, 'Sign in to access account history.');
-  return user.userId;
+  if (user) return user.userId;
+  throw new HttpError(401, 'Open the library with your study name on this browser first.');
 }
 export function sameOrigin(request: Request) {
   if (request.headers.get('origin') !== new URL(request.url).origin)
