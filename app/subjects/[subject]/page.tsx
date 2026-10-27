@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/navigation-link';
 import { notFound } from 'next/navigation';
 import { getSubject } from '@/content/catalog';
 import { SiteFrame } from '@/components/site-frame';

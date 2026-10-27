@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/navigation-link';
 import { PracticeHistory } from '@/components/practice-history';
 import { SiteFrame } from '@/components/site-frame';
 import { ExamHistory } from '@/components/exam-history';

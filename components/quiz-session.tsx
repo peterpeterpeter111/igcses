@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useState, useSyncExternalStore } from 'react';
 import { QuizClient } from '@/lib/quiz-client';
-import Link from 'next/link';
+import Link from '@/components/navigation-link';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { ExaminerReview } from '@/components/examiner-review';

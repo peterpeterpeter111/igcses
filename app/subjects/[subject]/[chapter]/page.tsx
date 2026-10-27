@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/navigation-link';
 import { notFound } from 'next/navigation';
 import { getSubject, getChapter } from '@/content/catalog';
 import { getNotes } from '@/content/notes';

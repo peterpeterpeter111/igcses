@@ -1,6 +1,6 @@
 'use client';
 import { useRef, useState } from 'react';
-import Link from 'next/link';
+import Link from '@/components/navigation-link';
 import { subjects } from '@/content/catalog';
 type Row = { id: string; subject_id: string; status: string; created_at: string; score: number | null };
 export function ExamHistory() {

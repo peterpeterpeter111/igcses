@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/navigation-link';
 import { SiteFrame } from '@/components/site-frame';
 import { subjects } from '@/content/catalog';
 import { env } from 'cloudflare:workers';

@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/navigation-link';
 export function SiteFrame({
   children,
   quiz = false,

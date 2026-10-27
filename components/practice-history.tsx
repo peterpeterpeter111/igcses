@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
+import Link from '@/components/navigation-link';
 import { subjects } from '@/content/catalog';
 import { practicePlan, type PracticeRecord } from '@/lib/practice-history';
 import { accountPractice } from '@/lib/account-practice';

@@ -1,7 +1,6 @@
 'use client';
 
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import Link from '@/components/navigation-link';
 import { useEffect, useRef, type MouseEvent, type ReactNode } from 'react';
 import { createNavigationTransition } from '../lib/navigation-transition';
 
@@ -12,7 +11,6 @@ export function SubjectBookLink({
   href: string;
   children: ReactNode;
 }) {
-  const router = useRouter();
   const transition = useRef(createNavigationTransition());
   useEffect(() => {
     const reset = () => transition.current.cancel();
@@ -112,7 +110,7 @@ export function SubjectBookLink({
           ),
         );
       },
-      () => router.push(href),
+      () => window.location.assign(href),
       () => {
         delete shelf.dataset.opening;
       },
@@ -138,7 +136,6 @@ export function ChapterOpenLink({
   href: string;
   chapterTitle: string;
 }) {
-  const router = useRouter();
   const transition = useRef(createNavigationTransition());
 
   useEffect(() => {
@@ -202,7 +199,7 @@ export function ChapterOpenLink({
           ),
         );
       },
-      () => router.push(href),
+      () => window.location.assign(href),
       () => {
         delete book.dataset.transitioning;
       },

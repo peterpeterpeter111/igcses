@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/navigation-link';
 import { SubjectBookLink } from '@/components/subject-book-link';
 const subjects = [
   ['human-biology', 'Human Biology', '4HB1'],
