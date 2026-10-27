@@ -8,3 +8,5 @@
 .student-bar { display:flex; justify-content:space-between; gap:1rem; padding:.7rem max(1rem, calc((100vw - 1120px)/2)); border-bottom:1px solid #d4c2ae; background:#f4ede3; color:#4c2026; font-size:.85rem; }
 
 .student-signout { border:0; padding:0; background:transparent; color:#852d37; text-decoration:underline; cursor:pointer; font:inherit; }
+.student-name-input { display:block; width:min(100%, 28rem); min-height:3rem; margin:.55rem 0 1rem; padding:.65rem .8rem; border:1.5px solid #8b5150; border-radius:4px; background:#fffaf2; color:#2d2420; font:inherit; box-shadow:0 0 0 1px #8b51501a; }
+.student-name-input:focus-visible { outline:3px solid #b68250; outline-offset:2px; border-color:#682b32; }

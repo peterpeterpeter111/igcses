@@ -12,9 +12,11 @@ export default function Home() {
   return (
     <>
       <header>
-        <Link className="quiz-link" href="/quiz">
+        {/* Use a native link for immediate single-click navigation, including before client routing hydrates. */}
+        {/* oxlint-disable-next-line next/no-html-link-for-pages -- keep the primary Quiz mode action responsive on the first click. */}
+        <a className="quiz-link" href="/quiz">
           😈 Quiz mode
-        </Link>
+        </a>
         <Link className="wordmark" href="/">
           igcses<span>THE STUDY LIBRARY</span>
         </Link>
