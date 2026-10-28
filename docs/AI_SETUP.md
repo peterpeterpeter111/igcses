@@ -4,9 +4,27 @@
 
 The server adapter, five-role review engine, persisted step/lease store, post-exam review controls and Generate summary action are implemented. Automated tests use synthetic responses and mocked HTTP; they are not a live provider test, independent examiner calibration or educational accuracy evidence.
 
-At this implementation checkpoint there is no active OpenRouter connection, no configured Sites runtime AI credential, no approved live model-team calibration and no active exam template. The live examiner remains disabled. The academic ledger and all provisional template statuses are unchanged. Setting an environment flag cannot turn a provisional template or unreviewed model team into an approved one.
+On 2026-10-28 the chat's OpenRouter connection was verified Active and its authenticated key-metadata request succeeded. This is not a configured Sites runtime AI credential. There is still no approved live model-team calibration or active exam template, so the live examiner remains disabled. The academic ledger and all provisional template statuses are unchanged. Setting an environment flag cannot turn a provisional template or unreviewed model team into an approved one.
+
+Both catalog operations returned only three model records despite reporting totals of 464 (general catalog) and 460 (user catalog), with no next-page link. Exact official model-page discovery followed by per-model endpoint queries resolved the five requested identities. Gemma 4 31B, Nemotron 3 Ultra, Nemotron 3.5 Super VL and Xing4.0 29B A4B returned explicitly free routes. Nemotron 3 Super returned an empty endpoint list. This is a serving-availability blocker, not a claim that the model does not exist. The backend now verifies each configured model directly and requires every returned route to be available, identity-matched and explicitly free.
+
+Four original synthetic development requests were attempted: Ultra, Super VL and Xing completed with reported zero cost; Gemma returned upstream 429 and was not retried. No learner data was used. This simplified smoke test is not production-format validation, full council execution, held-out marking accuracy or examiner calibration. Two outputs omitted zero-mark criteria under the smoke prompt; the production validator still requires all criteria. No paid model was invoked or substituted.
+
+The key metadata reported 50 remaining free model requests per day at connection time. The current twenty-question review needs 61 model calls before summary; an accepted first-round summary adds five (66 total), or ten if revision is needed (71 total). A fresh twenty-question run therefore exceeds that observed daily allowance. Capacity, bounded review batching and interruption/resume must be evaluated before release; the key's spending-limit field is not a free-request quota or purchased credit balance.
 
 ## Secure activation steps
+
+Exact identities discovered on 28 October 2026 (availability must be rechecked):
+
+| Role | Exact model ID | Observed endpoint result |
+| --- | --- | --- |
+| Primary | `nvidia/nemotron-3-ultra-550b-a55b:free` | Free route; development request completed |
+| Second | `nvidia/nemotron-3-super-120b-a12b:free` | No serving endpoint returned; no generation attempted |
+| Evidence | `nvidia/nemotron-3.5-super-vl:free` | Free route; text-only development request completed |
+| Patterns | `xingchen-agi/xing4.0-29b-a4b:free` | Free route; development request completed |
+| Tutor | `google/gemma-4-31b-it:free` | Free route; development request rate-limited |
+
+Identity references: [Ultra](https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free), [Super](https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free), [Super VL](https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free), [Xing](https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free), [Gemma](https://openrouter.ai/google/gemma-4-31b-it:free). Official model pages establish identities, not account-specific serving success or educational accuracy. No alternative model has been substituted.
 
 1. Finish the owner's OpenRouter connection in the Composio secure form and verify Active status. The chat connector's connection is not a deployable backend credential.
 2. Use a dedicated Composio developer project with its own OpenRouter connected account. Store `COMPOSIO_API_KEY` as a Sites runtime secret, plus the exact `COMPOSIO_OPENROUTER_ACCOUNT_ID` and a pinned `COMPOSIO_OPENROUTER_TOOL_VERSION`. The chat connector does not expose a reusable project key. Never copy chat/session credentials, paste secrets in chat, put them in source or use a public-prefixed environment value.
@@ -34,4 +52,4 @@ Pseudonyms remain labels, not passwords. A random HttpOnly/Secure/SameSite brows
 - [OpenRouter API reference](https://openrouter.ai/docs/api_reference/overview)
 - [OpenRouter rate limits](https://openrouter.ai/docs/api_reference/limits)
 
-The adapter uses only the discovered `OPENROUTER_LIST_AVAILABLE_MODELS` and `OPENROUTER_CREATE_CHAT_COMPLETION` operations with a pinned version. Its credentials and transport live exclusively on the server. The discovered completion schema accepts plain messages, so strict JSON output is prompted and then validated; unsupported structured-output arguments are not invented.
+The adapter uses only the discovered `OPENROUTER_LIST_MODEL_ENDPOINTS` and `OPENROUTER_CREATE_CHAT_COMPLETION` operations with a pinned version. Its credentials and transport live exclusively on the server. The discovered completion schema accepts plain messages, so strict JSON output is prompted and then validated; unsupported structured-output arguments are not invented. Structured upstream 429 errors inside HTTP-200 Composio envelopes also receive a cooldown; private provider error bodies are not shown to students.

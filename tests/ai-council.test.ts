@@ -130,14 +130,14 @@ void test('Persisted review service resumes one model step at a time and finalis
   sqlite.close();
 });
 void test('Composio transport requires Active OpenRouter, explicit free pricing, exact identities and completed final JSON', async () => {
-  const catalog = ROLES.map((role) => ({ id: models[role], name: REQUESTED_MODELS[role] + ' (free)', context_length: 100_000, pricing: { prompt: '0', completion: '0' } }));
-  type FixtureBody = { version: string; arguments: { model: string; models?: string[] } };
+  const catalog = ROLES.map((role) => ({ id: models[role], name: REQUESTED_MODELS[role] + ' (free)', endpoints: [{ model_id: models[role], status: 0, context_length: 100_000, pricing: { prompt: '0', completion: '0' } }] }));
+  type FixtureBody = { version: string; arguments: { model: string; author?: string; slug?: string; models?: string[] } };
   const requests: { url: string; body: FixtureBody | null }[] = [];
   const send = (async (url: string | URL | Request, init?: RequestInit) => {
     const endpoint = typeof url === 'string' ? url : url instanceof URL ? url.href : url.url;
     const body = typeof init?.body === 'string' ? JSON.parse(init.body) as FixtureBody : null; requests.push({ url: endpoint, body });
     if (endpoint.includes('connected_accounts')) return Response.json({ status: 'ACTIVE', toolkit: { slug: 'openrouter' } });
-    if (endpoint.endsWith('LIST_AVAILABLE_MODELS')) return Response.json({ successful: true, data: { data: catalog } });
+    if (endpoint.endsWith('LIST_MODEL_ENDPOINTS')) return Response.json({ successful: true, data: { data: catalog.find((m) => m.id === `${body?.arguments.author}/${body?.arguments.slug}`) } });
     assert.ok(body);
     return Response.json({ successful: true, data: { model: body.arguments.model, id: 'synthetic-provider-fixture', choices: [{ finish_reason: 'stop', message: { content: '{"ok":true}' } }] } });
   }) as typeof fetch;
@@ -145,8 +145,36 @@ void test('Composio transport requires Active OpenRouter, explicit free pricing,
   assert.deepEqual((await transport('tutor', 'JSON only', { fixture: true })).value, { ok: true });
   assert.equal(requests.at(-1)!.body!.version, config.toolVersion); assert.equal(requests.at(-1)!.body!.arguments.model, models.tutor);
   assert.equal(requests.at(-1)!.body!.arguments.models, undefined);
-  catalog[0].pricing.prompt = '0.01';
+  assert.equal(requests.filter((r) => r.url.endsWith('LIST_MODEL_ENDPOINTS')).length, 5);
+  assert.equal(requests.some((r) => r.url.endsWith('LIST_AVAILABLE_MODELS')), false);
+  catalog[0].endpoints[0].pricing.prompt = '0.01';
   await assert.rejects(composioCouncil(config, send), /free pricing/);
+  catalog[0].endpoints[0].pricing.prompt = '0';
+  catalog[0].endpoints.push({ ...catalog[0].endpoints[0], pricing: { prompt: '0', completion: '0.01' } });
+  await assert.rejects(composioCouncil(config, send), /free pricing/);
+  catalog[0].endpoints.pop();
+  catalog[0].endpoints[0].status = 1;
+  await assert.rejects(composioCouncil(config, send), /availability/);
+  catalog[0].endpoints[0].status = 0;
+  const savedEndpoints = catalog[0].endpoints;
+  catalog[0].endpoints = [];
+  await assert.rejects(composioCouncil(config, send), /unavailable/);
+  catalog[0].endpoints = savedEndpoints;
+  catalog[0].endpoints[0].model_id = 'wrong/model:free';
+  await assert.rejects(composioCouncil(config, send), /availability/);
+  catalog[0].endpoints[0].model_id = models.primary;
+  const rateLimited = (async (url: string | URL | Request, init?: RequestInit) => {
+    const endpoint = typeof url === 'string' ? url : url instanceof URL ? url.href : url.url;
+    if (endpoint.endsWith('CREATE_CHAT_COMPLETION')) return Response.json({ successful: false, data: { status_code: 429 }, error: 'PRIVATE_PROVIDER_BODY_NOT_FOR_STUDENTS' });
+    return send(url, init);
+  }) as typeof fetch;
+  const limitedTransport = await composioCouncil(config, rateLimited);
+  await assert.rejects(limitedTransport('tutor', 'JSON only', {}), (error: unknown) => {
+    const e = error as { code: string; retryAfter: number; message: string };
+    return e.code === 'RATE_LIMIT' && e.retryAfter === 60 && !e.message.includes('PRIVATE_PROVIDER');
+  });
+  catalog[0].id = 'wrong/model:free';
+  await assert.rejects(composioCouncil(config, send));
   const inactive = (async () => Response.json({ status: 'INITIATED', toolkit: { slug: 'openrouter' } })) as typeof fetch;
   await assert.rejects(composioCouncil(config, inactive), /not active/);
 });

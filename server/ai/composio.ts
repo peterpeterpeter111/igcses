@@ -37,20 +37,37 @@ export async function composioCouncil(config: AiConfig, send: typeof fetch = fet
   }
   const account = await call(`connected_accounts/${encodeURIComponent(config.accountId)}`);
   if (account.status !== 'ACTIVE' || object(account.toolkit).slug !== 'openrouter') throw new AiError('SETUP', 'The configured OpenRouter connection is not active.');
-  async function execute(tool: 'OPENROUTER_LIST_AVAILABLE_MODELS' | 'OPENROUTER_CREATE_CHAT_COMPLETION', args: unknown) {
+  async function execute(tool: 'OPENROUTER_LIST_MODEL_ENDPOINTS' | 'OPENROUTER_CREATE_CHAT_COMPLETION', args: unknown) {
     const result = await call(`tools/execute/${tool}`, { connected_account_id: config.accountId, version: config.toolVersion, arguments: args });
-    if (result.successful !== true) throw new AiError('PROVIDER', 'Composio did not confirm a successful AI request.');
+    if (result.successful !== true) {
+      // Composio may accept the transport request (HTTP 200) while its
+      // upstream model returns 429. Preserve cooldowns for that case too.
+      const detail = result.data && typeof result.data === 'object' && !Array.isArray(result.data) ? result.data as JsonObject : null;
+      if (detail?.status_code === 429) throw new AiError('RATE_LIMIT', 'The free AI service is busy. Try again later.', 60);
+      throw new AiError('PROVIDER', 'Composio did not confirm a successful AI request.');
+    }
     return object(result.data);
   }
-  const catalog = await execute('OPENROUTER_LIST_AVAILABLE_MODELS', {});
-  if (!Array.isArray(catalog.data)) throw new AiError('SETUP', 'The OpenRouter model catalogue could not be verified.');
   const selected = new Map<Role, Model>();
   for (const role of ROLES) {
-    const raw = catalog.data.find((m: unknown) => object(m).id === config.models[role]);
-    if (!raw) throw new AiError('SETUP', `The requested ${REQUESTED_MODELS[role]} endpoint is unavailable.`);
-    const m = object(raw), pricing = object(m.pricing);
-    if (typeof m.name !== 'string' || !normal(m.name).includes(normal(REQUESTED_MODELS[role])) || typeof m.context_length !== 'number' || !Number.isFinite(m.context_length) || m.context_length <= 0 || pricing.prompt === undefined || pricing.completion === undefined || !Object.values(pricing).every((price) => (typeof price === 'string' && price.trim() !== '' && Number(price) === 0) || (typeof price === 'number' && price === 0))) throw new AiError('SETUP', `The identity or free pricing of ${REQUESTED_MODELS[role]} could not be verified.`);
-    selected.set(role, m as unknown as Model);
+    const [author, slug, extra] = config.models[role].split('/');
+    if (!author || !slug || extra || !slug.endsWith(':free')) throw new AiError('SETUP', 'The configured model identity is invalid.');
+    // Model-list tools can return a partial catalogue without a pagination link.
+    // Verify the exact configured model and all its serving routes instead.
+    const detail = await execute('OPENROUTER_LIST_MODEL_ENDPOINTS', { author, slug });
+    const m = object(detail.data);
+    if (m.id !== config.models[role] || typeof m.name !== 'string' || !normal(m.name).includes(normal(REQUESTED_MODELS[role]))) throw new AiError('SETUP', `The identity of ${REQUESTED_MODELS[role]} could not be verified.`);
+    if (!Array.isArray(m.endpoints) || m.endpoints.length === 0) throw new AiError('SETUP', `The requested ${REQUESTED_MODELS[role]} endpoint is unavailable.`);
+    const contexts: number[] = [];
+    for (const raw of m.endpoints) {
+      const endpoint = object(raw), pricing = object(endpoint.pricing);
+      // No provider override is exposed by the discovered completion tool.
+      // Every routable endpoint must therefore be explicitly free; never rely
+      // on the cheapest provider or silently fall back to a paid route.
+      if (endpoint.model_id !== m.id || endpoint.status !== 0 || typeof endpoint.context_length !== 'number' || !Number.isFinite(endpoint.context_length) || endpoint.context_length <= 0 || pricing.prompt === undefined || pricing.completion === undefined || !Object.values(pricing).every((price) => (typeof price === 'string' && price.trim() !== '' && Number(price) === 0) || (typeof price === 'number' && price === 0))) throw new AiError('SETUP', `The availability or free pricing of ${REQUESTED_MODELS[role]} could not be verified.`);
+      contexts.push(endpoint.context_length);
+    }
+    selected.set(role, { id: m.id as string, name: m.name, context_length: Math.min(...contexts), pricing: { prompt: '0', completion: '0' } });
   }
   return async (role, instruction, input) => {
     const model = selected.get(role)!;
